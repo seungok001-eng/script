@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Search, FileText, Sparkles, Link2 } from "lucide-react";
+import { Search, FileText, Sparkles, Link2, CheckCircle2 } from "lucide-react";
 import StepShell from "../StepShell";
 import { useProject } from "../providers/ProjectProvider";
 import { useToast } from "../providers/ToastProvider";
 import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep1Prompt, type TopicMode } from "@/lib/prompts";
+import { parseTopicCards } from "@/lib/topics";
 import { tempFor } from "@/lib/phases";
 
 const MODES: { id: TopicMode; label: string; icon: typeof Search; hint: string }[] = [
@@ -25,6 +26,10 @@ export default function Step1Topic() {
   const [reference, setReference] = useState("");
   const [output, setOutput] = useState(state.topic);
   const [guide, setGuide] = useState("");
+  const [recommendations, setRecommendations] = useState("");
+  const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
+
+  const cards = parseTopicCards(recommendations);
 
   const handleGenerate = async () => {
     let input = "";
@@ -46,7 +51,15 @@ export default function Step1Topic() {
       temperature: tempFor(1),
       enableSearch: true,
     });
-    if (text) setOutput(text);
+    if (text) {
+      setRecommendations(text);
+      setSelectedIdx(null);
+    }
+  };
+
+  const handleSelectCard = (idx: number, full: string) => {
+    setSelectedIdx(idx);
+    setOutput(full);
   };
 
   const handleConfirm = () => {
@@ -66,7 +79,7 @@ export default function Step1Topic() {
       subtitle="키워드·레퍼런스·AI 자율 세 가지 루트로, 국내외 최신 자료를 웹 검색으로 조사해 조회수 터질 주제를 5가지 이상 추천합니다. 마음에 드는 주제만 남기고 다듬어 확정하세요."
       aiOutput={output}
       onAiOutputChange={setOutput}
-      aiPlaceholder="AI가 추천한 주제 5가지 이상이 여기에 표시됩니다. 최종 확정할 주제만 남기도록 편집하세요."
+      aiPlaceholder="위에서 주제 카드를 클릭하면 선택한 주제가 여기에 표시됩니다. 직접 다듬어 확정하세요."
       userInput={guide}
       onUserInputChange={setGuide}
       userPlaceholder="예: B2B 반도체 장비 쪽으로, 너무 자극적이지 않게"
@@ -143,6 +156,49 @@ export default function Step1Topic() {
             별도 입력 없이 <span className="text-accent">주제 5가지 이상 추천</span> 버튼을 누르면, AI가
             웹 검색으로 지금 가장 시의성 있고 조회수 폭발력이 큰 주제를 직접 발굴합니다. 방향만 좁히고
             싶다면 아래 작업자 가이드에 분야를 적어주세요.
+          </div>
+        )}
+
+        {/* 추천 주제 카드 — 클릭해서 선택 */}
+        {cards.length > 0 && (
+          <div>
+            <label className="mb-2 block text-xs font-medium uppercase tracking-wide text-slate-500">
+              추천 주제 {cards.length}개 · 카드를 클릭해 선택하세요
+            </label>
+            <div className="grid gap-3 md:grid-cols-2">
+              {cards.map((c, i) => {
+                const active = selectedIdx === i;
+                return (
+                  <button
+                    key={i}
+                    onClick={() => handleSelectCard(i, c.full)}
+                    className={`flex flex-col rounded-xl border p-4 text-left transition ${
+                      active
+                        ? "border-accent bg-accent/10 ring-1 ring-accent"
+                        : "border-base-600 bg-base-800/60 hover:border-accent/60 hover:bg-base-800"
+                    }`}
+                  >
+                    <div className="mb-2 flex items-center justify-between gap-2">
+                      <span className="rounded bg-accent/15 px-1.5 py-0.5 text-[11px] font-semibold text-accent">
+                        주제 {c.n}
+                      </span>
+                      {active && (
+                        <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-accent">
+                          <CheckCircle2 className="h-3.5 w-3.5" />
+                          선택됨
+                        </span>
+                      )}
+                    </div>
+                    <h4 className="mb-2 text-sm font-bold leading-snug text-slate-50">
+                      {c.title}
+                    </h4>
+                    <div className="preserve-breaks max-h-48 overflow-auto text-xs leading-relaxed text-slate-400">
+                      {c.body}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         )}
 
