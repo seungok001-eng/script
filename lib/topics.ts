@@ -45,3 +45,36 @@ export function parseTopicCards(text: string): Card[] {
 export function parseProfileCards(text: string): Card[] {
   return parseCards(text, /^프로필\s*[A-Za-z0-9]*/);
 }
+
+export interface ProfileRanks {
+  first?: number; // 1순위 프로필 번호
+  second?: number; // 2순위 프로필 번호
+  reasons: Record<number, string>; // 프로필 번호 → 추천 이유
+}
+
+/**
+ * '## 몰입 추천' 섹션에서 1·2순위 프로필 번호와 이유를 추출한다.
+ *   1순위: 프로필 3 - 이유
+ *   2순위: 프로필 1 - 이유
+ */
+export function parseProfileRanks(text: string): ProfileRanks {
+  const res: ProfileRanks = { reasons: {} };
+  if (!text?.trim()) return res;
+  const lines = text.split("\n");
+  const grab = (label: string): number | undefined => {
+    const line = lines.find((l) => l.includes(label));
+    if (!line) return undefined;
+    const m = line.match(/프로필\s*(\d+)/);
+    if (!m) return undefined;
+    const n = parseInt(m[1], 10);
+    const reason = line
+      .slice(line.indexOf(m[0]) + m[0].length)
+      .replace(/^[\s:：.\-–—()]+/, "")
+      .trim();
+    if (reason) res.reasons[n] = reason;
+    return n;
+  };
+  res.first = grab("1순위");
+  res.second = grab("2순위");
+  return res;
+}

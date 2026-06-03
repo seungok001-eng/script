@@ -1,6 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { parseTopicCards, parseProfileCards } from "../lib/topics.ts";
+import {
+  parseTopicCards,
+  parseProfileCards,
+  parseProfileRanks,
+} from "../lib/topics.ts";
 
 const topicSample = `리서치 결과 아래와 같이 추천합니다.
 
@@ -50,4 +54,19 @@ test("parseProfileCards: 프로필을 카드로 분리", () => {
   assert.equal(cards[0].badge, "프로필 1");
   assert.equal(cards[0].title, "패권주의 전략가");
   assert.match(cards[1].body, /월가/);
+});
+
+test("parseProfileRanks: 몰입 추천 1·2순위와 이유 추출", () => {
+  const text = `## 프로필 1: A\n## 프로필 2: B\n\n## 몰입 추천\n1순위: 프로필 2 - 외국인 시점이 강렬\n2순위: 프로필 1 - 안정적 신뢰감`;
+  const r = parseProfileRanks(text);
+  assert.equal(r.first, 2);
+  assert.equal(r.second, 1);
+  assert.match(r.reasons[2], /외국인 시점/);
+  assert.match(r.reasons[1], /신뢰감/);
+});
+
+test("parseProfileRanks: 추천 섹션 없으면 빈 결과", () => {
+  const r = parseProfileRanks("## 프로필 1: A");
+  assert.equal(r.first, undefined);
+  assert.deepEqual(r.reasons, {});
 });
