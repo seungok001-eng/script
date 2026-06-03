@@ -89,7 +89,7 @@ export function totalChars(chapters: { [key: number]: string }): number {
  * "### 세트 N / 제목: / 썸네일: / 인트로:" 형식을 카드 객체 배열로 변환.
  */
 export function parseIntroSets(text: string): IntroSet[] {
-  const blocks = text.split(/###\s*세트\s*\d+/g).map((b) => b.trim());
+  const blocks = text.split(/#{2,4}\s*세트\s*\d+/g).map((b) => b.trim());
   const sets: IntroSet[] = [];
   for (const block of blocks) {
     if (!block) continue;

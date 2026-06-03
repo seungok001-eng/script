@@ -26,9 +26,10 @@ export default function Step5Intro() {
   const sets = useMemo(() => parseIntroSets(output), [output]);
 
   const handleGenerate = async () => {
+    // 5단계는 실제 인트로 '대사'를 집필하므로 작가용 시스템 인스트럭션을 사용한다.
+    // (기획용 instruction은 인트로 문장 작성을 금지하므로 planning을 켜면 안 됨)
     const text = await run(buildStep5Prompt(state, guide), {
       temperature: tempFor(5),
-      planning: true,
     });
     if (text) {
       setOutput(text);
@@ -85,17 +86,26 @@ export default function Step5Intro() {
                     <Check className="h-3 w-3" />
                   </span>
                 )}
-                <div className="mb-1.5 flex items-center gap-1.5 text-xs font-semibold text-accent">
-                  <Clapperboard className="h-3.5 w-3.5" />
-                  세트 {i + 1}
+                <div className="mb-1.5 flex items-center justify-between gap-2">
+                  <span className="flex items-center gap-1.5 text-xs font-semibold text-accent">
+                    <Clapperboard className="h-3.5 w-3.5" />
+                    세트 {i + 1}
+                  </span>
+                  <span
+                    className={`text-[11px] font-medium ${
+                      s.text.length >= 300 ? "text-emerald-400" : "text-gold"
+                    }`}
+                  >
+                    인트로 {s.text.length.toLocaleString("ko-KR")}자
+                  </span>
                 </div>
                 <p className="text-sm font-bold leading-snug text-slate-50">
                   {s.title || "(제목 없음)"}
                 </p>
                 <p className="mt-1 text-xs text-gold">🖼 {s.thumbnail || "—"}</p>
-                <p className="preserve-breaks mt-2 line-clamp-4 text-xs leading-relaxed text-slate-400">
-                  {s.text}
-                </p>
+                <div className="preserve-breaks mt-2 max-h-56 overflow-auto whitespace-pre-wrap rounded-lg bg-base-900/50 p-2.5 text-xs leading-relaxed text-slate-300">
+                  {s.text || "—"}
+                </div>
               </button>
             );
           })}
