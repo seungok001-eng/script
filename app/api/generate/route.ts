@@ -4,20 +4,17 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { SYSTEM_INSTRUCTION } from "@/lib/prompts";
-import {
-  buildModel,
-  parseUsage,
-  mapErrorStatus,
-  errorMessageFor,
-} from "@/lib/gemini";
+import { generateComplete, mapErrorStatus, errorMessageFor } from "@/lib/gemini";
 
 export const runtime = "nodejs";
-export const maxDuration = 60;
+export const maxDuration = 120;
 
 interface GenerateBody {
   modelId: string;
   isExtendedMode: boolean;
   prompt: string;
+  temperature?: number;
+  enableSearch?: boolean;
 }
 
 export async function POST(req: NextRequest) {
@@ -42,24 +39,20 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const model = buildModel({
+    const { text, usage, sources } = await generateComplete({
       apiKey,
       modelId: body.modelId,
       isExtendedMode: body.isExtendedMode,
+      temperature: body.temperature,
+      enableSearch: body.enableSearch,
       systemInstruction: SYSTEM_INSTRUCTION,
+      prompt: body.prompt,
     });
 
-    const result = await model.generateContent(body.prompt);
-    const text = result.response.text();
-    const usage = parseUsage(result.response.usageMetadata);
-
-    return NextResponse.json({ text, usage });
+    return NextResponse.json({ text, usage, sources });
   } catch (error) {
     const status = mapErrorStatus(error);
     console.error("[/api/generate] error:", error);
-    return NextResponse.json(
-      { message: errorMessageFor(status) },
-      { status },
-    );
+    return NextResponse.json({ message: errorMessageFor(status) }, { status });
   }
 }

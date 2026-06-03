@@ -5,16 +5,24 @@ import { useProject } from "@/components/providers/ProjectProvider";
 import { useToast } from "@/components/providers/ToastProvider";
 import { ApiError, generate, stream } from "@/lib/client";
 import { errorMessageFor } from "@/lib/gemini";
+import type { Source } from "@/lib/types";
+
+export interface GenOpts {
+  temperature?: number;
+  enableSearch?: boolean;
+}
 
 /**
  * 단계별 생성 호출을 감싸는 공용 훅.
  * - API 키 누락/오류(401·403) 시 토스트를 띄우고 로딩을 무조건 해제한다.
  * - usageMetadata는 완료 시점에만 누적 트래커에 반영한다.
+ * - 마지막 호출의 그라운딩 출처는 lastSources로 노출한다.
  */
 export function useGenerate() {
   const { state, addUsage } = useProject();
   const { toast } = useToast();
   const [running, setRunning] = useState(false);
+  const [lastSources, setLastSources] = useState<Source[]>([]);
   const abortRef = useRef<AbortController | null>(null);
 
   const ensureKey = useCallback((): boolean => {
@@ -40,7 +48,7 @@ export function useGenerate() {
 
   /** 비스트리밍 생성 — 결과 텍스트를 반환(실패 시 null) */
   const run = useCallback(
-    async (prompt: string): Promise<string | null> => {
+    async (prompt: string, opts: GenOpts = {}): Promise<string | null> => {
       if (!ensureKey()) return null;
       setRunning(true);
       try {
@@ -49,14 +57,16 @@ export function useGenerate() {
           modelId: state.config.selectedModel,
           isExtendedMode: state.config.isExtendedMode,
           prompt,
+          temperature: opts.temperature,
+          enableSearch: opts.enableSearch,
         });
         addUsage(res.usage);
+        setLastSources(res.sources ?? []);
         return res.text;
       } catch (err) {
         handleError(err);
         return null;
       } finally {
-        // 로딩 상태는 어떤 경우에도 안전하게 해제된다.
         setRunning(false);
       }
     },
@@ -68,6 +78,7 @@ export function useGenerate() {
     async (
       prompt: string,
       onChunk: (text: string) => void,
+      opts: GenOpts = {},
     ): Promise<boolean> => {
       if (!ensureKey()) return false;
       setRunning(true);
@@ -80,10 +91,15 @@ export function useGenerate() {
             modelId: state.config.selectedModel,
             isExtendedMode: state.config.isExtendedMode,
             prompt,
+            temperature: opts.temperature,
+            enableSearch: opts.enableSearch,
           },
           {
             onChunk,
-            onDone: (usage) => addUsage(usage),
+            onDone: (usage, sources) => {
+              addUsage(usage);
+              setLastSources(sources ?? []);
+            },
             signal: controller.signal,
           },
         );
@@ -103,5 +119,5 @@ export function useGenerate() {
     abortRef.current?.abort();
   }, []);
 
-  return { run, runStream, abort, running };
+  return { run, runStream, abort, running, lastSources };
 }

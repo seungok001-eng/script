@@ -6,6 +6,7 @@ import { useProject } from "../providers/ProjectProvider";
 import { useToast } from "../providers/ToastProvider";
 import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep1Prompt } from "@/lib/prompts";
+import { tempFor } from "@/lib/phases";
 
 export default function Step1Topic() {
   const { state, update, setStep } = useProject();
@@ -21,7 +22,9 @@ export default function Step1Topic() {
       toast("먼저 키워드를 입력해 주세요.", "error");
       return;
     }
-    const text = await run(buildStep1Prompt(keyword.trim(), guide));
+    const text = await run(buildStep1Prompt(keyword.trim(), guide), {
+      temperature: tempFor(1),
+    });
     if (text) setOutput(text);
   };
 

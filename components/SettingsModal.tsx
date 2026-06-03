@@ -1,9 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { X, KeyRound, Save, Eye, EyeOff, Trash2, ExternalLink } from "lucide-react";
+import {
+  X,
+  KeyRound,
+  Save,
+  Eye,
+  EyeOff,
+  Trash2,
+  ExternalLink,
+  ShieldCheck,
+  Loader2,
+} from "lucide-react";
 import { useProject } from "./providers/ProjectProvider";
 import { useToast } from "./providers/ToastProvider";
+import { validateKey } from "@/lib/client";
 
 interface SettingsModalProps {
   open: boolean;
@@ -15,6 +26,7 @@ export default function SettingsModal({ open, onClose }: SettingsModalProps) {
   const { toast } = useToast();
   const [draftKey, setDraftKey] = useState("");
   const [reveal, setReveal] = useState(false);
+  const [validating, setValidating] = useState(false);
 
   // 모달이 열릴 때마다 저장된 키를 입력란에 동기화
   useEffect(() => {
@@ -27,6 +39,21 @@ export default function SettingsModal({ open, onClose }: SettingsModalProps) {
     updateConfig({ apiKey: draftKey.trim() });
     toast("API 키를 저장했습니다. (이 브라우저에만 보관)", "success");
     onClose();
+  };
+
+  const handleValidate = async () => {
+    if (!draftKey.trim()) {
+      toast("먼저 키를 입력해 주세요.", "error");
+      return;
+    }
+    setValidating(true);
+    const result = await validateKey(draftKey.trim(), state.config.selectedModel);
+    setValidating(false);
+    if (result.ok) {
+      toast("유효한 API 키입니다.", "success");
+    } else {
+      toast(result.message ?? "키 검증에 실패했습니다.", "error");
+    }
   };
 
   const handleReset = () => {
@@ -95,6 +122,19 @@ export default function SettingsModal({ open, onClose }: SettingsModalProps) {
             키 발급 <ExternalLink className="h-3 w-3" />
           </a>
         </p>
+
+        <button
+          onClick={handleValidate}
+          disabled={validating}
+          className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-base-600 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:border-accent hover:text-accent disabled:opacity-50"
+        >
+          {validating ? (
+            <Loader2 className="h-3.5 w-3.5 animate-spin" />
+          ) : (
+            <ShieldCheck className="h-3.5 w-3.5" />
+          )}
+          {validating ? "검증 중…" : "키 유효성 검증"}
+        </button>
 
         <div className="mt-6 flex items-center justify-between gap-3">
           <button

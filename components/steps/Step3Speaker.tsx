@@ -6,6 +6,7 @@ import { useProject } from "../providers/ProjectProvider";
 import { useToast } from "../providers/ToastProvider";
 import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep3Prompt } from "@/lib/prompts";
+import { tempFor } from "@/lib/phases";
 
 export default function Step3Speaker() {
   const { state, update, setStep } = useProject();
@@ -16,7 +17,9 @@ export default function Step3Speaker() {
   const [guide, setGuide] = useState("");
 
   const handleGenerate = async () => {
-    const text = await run(buildStep3Prompt(state, guide));
+    const text = await run(buildStep3Prompt(state, guide), {
+      temperature: tempFor(3),
+    });
     if (text) setOutput(text);
   };
 

@@ -1,17 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { ShieldCheck } from "lucide-react";
+import { ShieldCheck, Link2 } from "lucide-react";
 import StepShell from "../StepShell";
 import { useProject } from "../providers/ProjectProvider";
 import { useToast } from "../providers/ToastProvider";
 import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep2Prompt } from "@/lib/prompts";
+import { tempFor } from "@/lib/phases";
 
 export default function Step2Research() {
   const { state, update, setStep } = useProject();
   const { toast } = useToast();
-  const { run, running } = useGenerate();
+  const { run, running, lastSources } = useGenerate();
 
   const [output, setOutput] = useState(state.factReport);
   const [guide, setGuide] = useState("");
@@ -20,7 +21,11 @@ export default function Step2Research() {
 
   const handleGenerate = async () => {
     setFactConfirmed(false);
-    const text = await run(buildStep2Prompt(state.topic, guide));
+    // 실제 웹 검색 그라운딩 활성화 + 낮은 temperature로 팩트 정확성 확보
+    const text = await run(buildStep2Prompt(state.topic, guide), {
+      temperature: tempFor(2),
+      enableSearch: true,
+    });
     if (text) setOutput(text);
   };
 
@@ -51,6 +56,28 @@ export default function Step2Research() {
       canConfirm={factConfirmed && !!output.trim()}
       confirmLabel="화자 프로필 설정 · 3단계로"
     >
+      {lastSources.length > 0 && (
+        <div className="mb-3 rounded-xl border border-base-600 bg-base-800/50 p-4">
+          <p className="mb-2 flex items-center gap-1.5 text-xs font-semibold text-accent">
+            <Link2 className="h-3.5 w-3.5" />
+            웹 검색 그라운딩 출처 {lastSources.length}건
+          </p>
+          <ul className="space-y-1">
+            {lastSources.map((s, i) => (
+              <li key={i} className="truncate text-xs">
+                <a
+                  href={s.uri}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-slate-400 hover:text-accent hover:underline"
+                >
+                  {i + 1}. {s.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <div className="flex items-center justify-between rounded-xl border border-base-600 bg-base-800/50 px-4 py-3">
         <p className="text-sm text-slate-400">
           모든 수치를 검수하셨다면 팩트를 컨펌하세요. 컨펌 전에는 다음 단계로

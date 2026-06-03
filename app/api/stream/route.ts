@@ -3,22 +3,17 @@
 // ─────────────────────────────────────────────────────────────
 //
 // 프로토콜: NDJSON 스트림. 각 줄은 하나의 StreamFrame(JSON).
-//   { "type": "chunk", "text": "..." }   ← 실시간 텍스트 청크
-//   { "type": "done",  "usage": {...} }  ← 스트림 완료 + usageMetadata
+//   { "type": "chunk", "text": "..." }                 ← 실시간 텍스트 청크
+//   { "type": "done",  "usage": {...}, "sources": [] }  ← 완료 + usageMetadata
 //   { "type": "error", "status": n, "message": "..." }
 //
-// 핵심: 구글 서버는 usageMetadata를 스트림의 가장 마지막 순간에만 보낸다.
-// 따라서 토큰 계산은 반드시 스트림 종료 후 마지막 'done' 프레임에서만 수행한다.
+// 핵심: usageMetadata는 스트림 종료 시점에만 확정되므로 토큰 계산은
+// 마지막 'done' 프레임에서만 수행한다. (MAX_TOKENS 시 서버가 자동 이어쓰기)
 
 import { NextRequest } from "next/server";
 import { SYSTEM_INSTRUCTION } from "@/lib/prompts";
-import {
-  buildModel,
-  parseUsage,
-  mapErrorStatus,
-  errorMessageFor,
-} from "@/lib/gemini";
-import type { StreamFrame, UsageMetadata } from "@/lib/types";
+import { streamComplete, mapErrorStatus, errorMessageFor } from "@/lib/gemini";
+import type { StreamFrame } from "@/lib/types";
 
 export const runtime = "nodejs";
 export const maxDuration = 300;
@@ -27,6 +22,8 @@ interface StreamBody {
   modelId: string;
   isExtendedMode: boolean;
   prompt: string;
+  temperature?: number;
+  enableSearch?: boolean;
 }
 
 function frame(obj: StreamFrame): Uint8Array {
@@ -62,39 +59,20 @@ export async function POST(req: NextRequest) {
   const stream = new ReadableStream<Uint8Array>({
     async start(controller) {
       try {
-        const model = buildModel({
-          apiKey,
-          modelId: body.modelId,
-          isExtendedMode: body.isExtendedMode,
-          systemInstruction: SYSTEM_INSTRUCTION,
-        });
+        const { usage, sources } = await streamComplete(
+          {
+            apiKey,
+            modelId: body.modelId,
+            isExtendedMode: body.isExtendedMode,
+            temperature: body.temperature,
+            enableSearch: body.enableSearch,
+            systemInstruction: SYSTEM_INSTRUCTION,
+            prompt: body.prompt,
+          },
+          (text) => controller.enqueue(frame({ type: "chunk", text })),
+        );
 
-        const result = await model.generateContentStream(body.prompt);
-
-        let lastUsage: UsageMetadata = {
-          promptTokens: 0,
-          candidatesTokens: 0,
-          totalTokens: 0,
-        };
-
-        for await (const chunk of result.stream) {
-          // 일부 청크에는 usageMetadata가 동봉되며, 보통 마지막 청크가 최종값이다.
-          if (chunk.usageMetadata) {
-            lastUsage = parseUsage(chunk.usageMetadata);
-          }
-          const text = chunk.text();
-          if (text) {
-            controller.enqueue(frame({ type: "chunk", text }));
-          }
-        }
-
-        // 스트림이 완전히 끝난 뒤 집계된 응답에서 최종 usageMetadata를 재확인한다.
-        const aggregated = await result.response;
-        if (aggregated.usageMetadata) {
-          lastUsage = parseUsage(aggregated.usageMetadata);
-        }
-
-        controller.enqueue(frame({ type: "done", usage: lastUsage }));
+        controller.enqueue(frame({ type: "done", usage, sources }));
         controller.close();
       } catch (error) {
         const status = mapErrorStatus(error);

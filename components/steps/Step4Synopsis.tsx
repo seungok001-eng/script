@@ -6,6 +6,7 @@ import { useProject } from "../providers/ProjectProvider";
 import { useToast } from "../providers/ToastProvider";
 import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep4Prompt } from "@/lib/prompts";
+import { tempFor } from "@/lib/phases";
 
 export default function Step4Synopsis() {
   const { state, update, setStep } = useProject();
@@ -16,7 +17,9 @@ export default function Step4Synopsis() {
   const [guide, setGuide] = useState("");
 
   const handleGenerate = async () => {
-    const text = await run(buildStep4Prompt(state, guide));
+    const text = await run(buildStep4Prompt(state, guide), {
+      temperature: tempFor(4),
+    });
     if (text) setOutput(text);
   };
 

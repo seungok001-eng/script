@@ -7,6 +7,7 @@ import { useProject } from "../providers/ProjectProvider";
 import { useToast } from "../providers/ToastProvider";
 import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep5Prompt } from "@/lib/prompts";
+import { tempFor } from "@/lib/phases";
 import { parseIntroSets } from "@/lib/chapters";
 import type { IntroSet } from "@/lib/types";
 
@@ -15,7 +16,8 @@ export default function Step5Intro() {
   const { toast } = useToast();
   const { run, running } = useGenerate();
 
-  const [output, setOutput] = useState("");
+  // 생성된 인트로 원문을 영속화하여 이동/새로고침 시에도 카드가 보존된다.
+  const [output, setOutput] = useState(state.introRaw);
   const [guide, setGuide] = useState("");
   const [selected, setSelected] = useState<IntroSet | null>(
     state.introSet.text ? state.introSet : null,
@@ -24,9 +26,12 @@ export default function Step5Intro() {
   const sets = useMemo(() => parseIntroSets(output), [output]);
 
   const handleGenerate = async () => {
-    const text = await run(buildStep5Prompt(state, guide));
+    const text = await run(buildStep5Prompt(state, guide), {
+      temperature: tempFor(5),
+    });
     if (text) {
       setOutput(text);
+      update({ introRaw: text });
       setSelected(null);
     }
   };
@@ -36,7 +41,7 @@ export default function Step5Intro() {
       toast("인트로 세트를 하나 선택해 주세요.", "error");
       return;
     }
-    update({ introSet: selected });
+    update({ introSet: selected, introRaw: output });
     toast("인트로 세트를 선택했습니다.", "success");
     setStep(6);
   };

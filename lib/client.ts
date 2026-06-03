@@ -2,7 +2,7 @@
 // 프론트엔드 → 백엔드 API 호출 래퍼 (클라이언트 전용)
 // ─────────────────────────────────────────────────────────────
 
-import type { GenerateResponse, StreamFrame, UsageMetadata } from "./types";
+import type { GenerateResponse, Source, StreamFrame, UsageMetadata } from "./types";
 
 export class ApiError extends Error {
   status: number;
@@ -18,21 +18,46 @@ interface CallArgs {
   modelId: string;
   isExtendedMode: boolean;
   prompt: string;
+  temperature?: number;
+  enableSearch?: boolean;
+}
+
+function payload(args: CallArgs) {
+  return JSON.stringify({
+    modelId: args.modelId,
+    isExtendedMode: args.isExtendedMode,
+    prompt: args.prompt,
+    temperature: args.temperature,
+    enableSearch: args.enableSearch,
+  });
+}
+
+/** API 키 유효성 즉시 검증 (설정창) */
+export async function validateKey(
+  apiKey: string,
+  modelId: string,
+): Promise<{ ok: boolean; message?: string }> {
+  try {
+    const res = await fetch("/api/validate", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-api-key": apiKey },
+      body: JSON.stringify({ modelId }),
+    });
+    return (await res.json().catch(() => ({ ok: false }))) as {
+      ok: boolean;
+      message?: string;
+    };
+  } catch {
+    return { ok: false, message: "네트워크 오류로 검증에 실패했습니다." };
+  }
 }
 
 /** 비스트리밍 호출 (1~5, 8단계) */
 export async function generate(args: CallArgs): Promise<GenerateResponse> {
   const res = await fetch("/api/generate", {
     method: "POST",
-    headers: {
-      "content-type": "application/json",
-      "x-api-key": args.apiKey,
-    },
-    body: JSON.stringify({
-      modelId: args.modelId,
-      isExtendedMode: args.isExtendedMode,
-      prompt: args.prompt,
-    }),
+    headers: { "content-type": "application/json", "x-api-key": args.apiKey },
+    body: payload(args),
   });
 
   if (!res.ok) {
@@ -45,7 +70,7 @@ export async function generate(args: CallArgs): Promise<GenerateResponse> {
 
 interface StreamCallbacks {
   onChunk: (text: string) => void;
-  onDone: (usage: UsageMetadata) => void;
+  onDone: (usage: UsageMetadata, sources: Source[]) => void;
   signal?: AbortSignal;
 }
 
@@ -53,21 +78,11 @@ interface StreamCallbacks {
  * 스트리밍 호출 (6, 7단계). NDJSON 프레임을 파싱하여 콜백으로 전달한다.
  * 토큰 사용량은 마지막 'done' 프레임에서만 확정된다.
  */
-export async function stream(
-  args: CallArgs,
-  cb: StreamCallbacks,
-): Promise<void> {
+export async function stream(args: CallArgs, cb: StreamCallbacks): Promise<void> {
   const res = await fetch("/api/stream", {
     method: "POST",
-    headers: {
-      "content-type": "application/json",
-      "x-api-key": args.apiKey,
-    },
-    body: JSON.stringify({
-      modelId: args.modelId,
-      isExtendedMode: args.isExtendedMode,
-      prompt: args.prompt,
-    }),
+    headers: { "content-type": "application/json", "x-api-key": args.apiKey },
+    body: payload(args),
     signal: cb.signal,
   });
 
@@ -106,7 +121,7 @@ export async function stream(
       if (f.type === "chunk") {
         cb.onChunk(f.text);
       } else if (f.type === "done") {
-        cb.onDone(f.usage);
+        cb.onDone(f.usage, f.sources);
       } else if (f.type === "error") {
         throw new ApiError(f.status, f.message);
       }

@@ -6,6 +6,7 @@ import { useProject } from "../providers/ProjectProvider";
 import { useToast } from "../providers/ToastProvider";
 import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep8Prompt } from "@/lib/prompts";
+import { tempFor } from "@/lib/phases";
 import { joinAllChapters, totalChars } from "@/lib/chapters";
 
 export default function Step8Metadata() {
@@ -20,7 +21,9 @@ export default function Step8Metadata() {
   const chars = totalChars(state.finalChapters);
 
   const handleGenerate = async () => {
-    const text = await run(buildStep8Prompt(state, guide));
+    const text = await run(buildStep8Prompt(state, guide), {
+      temperature: tempFor(8),
+    });
     if (text) setOutput(text);
   };
 

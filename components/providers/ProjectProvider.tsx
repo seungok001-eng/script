@@ -35,6 +35,7 @@ const DEFAULT_STATE: ScriptProjectState = {
   factReport: "",
   speakerProfile: "",
   synopsis: "",
+  introRaw: "",
   introSet: { title: "", thumbnail: "", text: "" },
   draftChapters: {},
   finalChapters: {},

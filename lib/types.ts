@@ -26,6 +26,7 @@ export interface ScriptProjectState {
   factReport: string; // 2단계 승인된 팩트 리포트
   speakerProfile: string; // 3단계 선택된 화자 프로필
   synopsis: string; // 4단계 확정된 8챕터 시놉시스
+  introRaw: string; // 5단계 AI가 생성한 인트로 세트 원문(카드 영속화용)
   introSet: IntroSet; // 5단계 선택 인트로 세트
   draftChapters: { [key: number]: string }; // 6단계 생성된 1~8챕터 초안
   finalChapters: { [key: number]: string }; // 7단계 퇴고 완료된 1~8챕터 최종본
@@ -39,23 +40,33 @@ export interface UsageState {
   totalTokens: number;
 }
 
-/** Gemini 응답에서 안전 파싱한 사용량 메타데이터 */
+/**
+ * Gemini 응답에서 안전 파싱한 사용량 메타데이터.
+ * candidatesTokens에는 사고(thinking) 토큰이 합산된다(둘 다 출력 요금으로 과금).
+ */
 export interface UsageMetadata {
   promptTokens: number;
   candidatesTokens: number;
   totalTokens: number;
 }
 
+/** 웹 검색 그라운딩 출처 */
+export interface Source {
+  title: string;
+  uri: string;
+}
+
 /** 비스트리밍 API 응답 형태 */
 export interface GenerateResponse {
   text: string;
   usage: UsageMetadata;
+  sources: Source[];
 }
 
 /** 스트리밍 NDJSON 프레임 */
 export type StreamFrame =
   | { type: "chunk"; text: string }
-  | { type: "done"; usage: UsageMetadata }
+  | { type: "done"; usage: UsageMetadata; sources: Source[] }
   | { type: "error"; status: number; message: string };
 
 export const STEP_TITLES = [
