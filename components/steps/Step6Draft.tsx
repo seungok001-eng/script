@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Loader2,
   Sparkles,
@@ -48,6 +48,19 @@ export default function Step6Draft() {
   const [auto, setAuto] = useState(false);
 
   const busy = running || auto;
+
+  // 에디터 내용 자동 저장: 생성·편집분을 draftChapters에 반영해 수동 저장 없이도
+  // 다음 단계로 진행 가능하게 한다. (떡밥 원장은 생성/명시 저장 때만 갱신)
+  useEffect(() => {
+    if (auto || !buffer.trim()) return;
+    const id = setTimeout(() => {
+      update({
+        draftChapters: { ...state.draftChapters, ...splitChapters(buffer, pair[0]) },
+      });
+    }, 800);
+    return () => clearTimeout(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [buffer, moduleIdx, auto]);
 
   const switchModule = (idx: number) => {
     if (busy) return;

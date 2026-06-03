@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Loader2,
   Wand2,
@@ -50,6 +50,19 @@ export default function Step7Revise() {
       .filter(Boolean)
       .join("\n\n") || draftPairText(pair),
   );
+
+  // 에디터 내용 자동 저장: 퇴고·편집분을 finalChapters에 반영해 수동 저장 없이도
+  // 다음 단계로 진행 가능하게 한다. (퇴고하지 않은 모듈은 초안이 최종본으로 채워짐)
+  useEffect(() => {
+    if (auto || !buffer.trim()) return;
+    const id = setTimeout(() => {
+      update({
+        finalChapters: { ...state.finalChapters, ...splitChapters(buffer, pair[0]) },
+      });
+    }, 800);
+    return () => clearTimeout(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [buffer, moduleIdx, auto]);
 
   const switchModule = (idx: number) => {
     if (busy) return;
