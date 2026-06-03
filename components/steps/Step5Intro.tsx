@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Clapperboard, Check } from "lucide-react";
+import { Clapperboard, Check, Trophy } from "lucide-react";
 import StepShell from "../StepShell";
 import { useProject } from "../providers/ProjectProvider";
 import { useToast } from "../providers/ToastProvider";
@@ -9,6 +9,7 @@ import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep5Prompt } from "@/lib/prompts";
 import { tempFor } from "@/lib/phases";
 import { parseIntroSets } from "@/lib/chapters";
+import { parseSetRanks } from "@/lib/topics";
 import type { IntroSet } from "@/lib/types";
 
 export default function Step5Intro() {
@@ -24,6 +25,7 @@ export default function Step5Intro() {
   );
 
   const sets = useMemo(() => parseIntroSets(output), [output]);
+  const ranks = useMemo(() => parseSetRanks(output), [output]);
 
   const handleGenerate = async () => {
     // 5단계는 실제 인트로 '대사'를 집필하므로 작가용 시스템 인스트럭션을 사용한다.
@@ -71,6 +73,10 @@ export default function Step5Intro() {
           {sets.map((s, i) => {
             const isSel =
               selected?.text === s.text && selected?.title === s.title;
+            const setNum = i + 1;
+            const rank =
+              setNum === ranks.first ? 1 : setNum === ranks.second ? 2 : 0;
+            const reason = rank ? ranks.reasons[setNum] : "";
             return (
               <button
                 key={i}
@@ -78,7 +84,9 @@ export default function Step5Intro() {
                 className={`relative rounded-xl border p-4 text-left transition ${
                   isSel
                     ? "border-accent bg-accent/10 shadow-glow"
-                    : "border-base-600 bg-base-800/60 hover:border-base-600/80 hover:bg-base-700/60"
+                    : rank
+                      ? "border-gold/50 bg-base-800/60 hover:bg-base-700/60"
+                      : "border-base-600 bg-base-800/60 hover:border-base-600/80 hover:bg-base-700/60"
                 }`}
               >
                 {isSel && (
@@ -87,10 +95,18 @@ export default function Step5Intro() {
                   </span>
                 )}
                 <div className="mb-1.5 flex items-center justify-between gap-2">
-                  <span className="flex items-center gap-1.5 text-xs font-semibold text-accent">
-                    <Clapperboard className="h-3.5 w-3.5" />
-                    세트 {i + 1}
-                  </span>
+                  <div className="flex items-center gap-1.5">
+                    <span className="flex items-center gap-1.5 text-xs font-semibold text-accent">
+                      <Clapperboard className="h-3.5 w-3.5" />
+                      세트 {setNum}
+                    </span>
+                    {rank > 0 && (
+                      <span className="inline-flex items-center gap-1 rounded bg-gold/15 px-1.5 py-0.5 text-[11px] font-bold text-gold">
+                        <Trophy className="h-3 w-3" />
+                        AI {rank}순위
+                      </span>
+                    )}
+                  </div>
                   <span
                     className={`text-[11px] font-medium ${
                       s.text.length >= 300 ? "text-emerald-400" : "text-gold"
@@ -103,6 +119,11 @@ export default function Step5Intro() {
                   {s.title || "(제목 없음)"}
                 </p>
                 <p className="mt-1 text-xs text-gold">🖼 {s.thumbnail || "—"}</p>
+                {reason && (
+                  <p className="mt-2 rounded-lg border border-gold/30 bg-gold/5 px-2.5 py-1.5 text-[11px] leading-relaxed text-gold/90">
+                    AI 추천 이유: {reason}
+                  </p>
+                )}
                 <div className="preserve-breaks mt-2 max-h-56 overflow-auto whitespace-pre-wrap rounded-lg bg-base-900/50 p-2.5 text-xs leading-relaxed text-slate-300">
                   {s.text || "—"}
                 </div>

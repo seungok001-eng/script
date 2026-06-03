@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Search, FileText, Sparkles, Link2, CheckCircle2 } from "lucide-react";
+import { Search, FileText, Sparkles, Link2, CheckCircle2, Trophy } from "lucide-react";
 import StepShell from "../StepShell";
 import { useProject } from "../providers/ProjectProvider";
 import { useToast } from "../providers/ToastProvider";
 import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep1Prompt, type TopicMode } from "@/lib/prompts";
-import { parseTopicCards } from "@/lib/topics";
+import { parseTopicCards, parseTopicRanks } from "@/lib/topics";
 import { tempFor } from "@/lib/phases";
 
 const MODES: { id: TopicMode; label: string; icon: typeof Search; hint: string }[] = [
@@ -30,6 +30,7 @@ export default function Step1Topic() {
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
 
   const cards = parseTopicCards(recommendations);
+  const ranks = parseTopicRanks(recommendations);
 
   const handleGenerate = async () => {
     let input = "";
@@ -169,6 +170,9 @@ export default function Step1Topic() {
             <div className="grid gap-3 md:grid-cols-2">
               {cards.map((c, i) => {
                 const active = selectedIdx === i;
+                const num = parseInt(c.badge.match(/\d+/)?.[0] ?? "", 10);
+                const rank = num === ranks.first ? 1 : num === ranks.second ? 2 : 0;
+                const reason = rank ? ranks.reasons[num] : "";
                 return (
                   <button
                     key={i}
@@ -176,13 +180,23 @@ export default function Step1Topic() {
                     className={`flex flex-col rounded-xl border p-4 text-left transition ${
                       active
                         ? "border-accent bg-accent/10 ring-1 ring-accent"
-                        : "border-base-600 bg-base-800/60 hover:border-accent/60 hover:bg-base-800"
+                        : rank
+                          ? "border-gold/50 bg-base-800/60 hover:bg-base-800"
+                          : "border-base-600 bg-base-800/60 hover:border-accent/60 hover:bg-base-800"
                     }`}
                   >
                     <div className="mb-2 flex items-center justify-between gap-2">
-                      <span className="rounded bg-accent/15 px-1.5 py-0.5 text-[11px] font-semibold text-accent">
-                        {c.badge}
-                      </span>
+                      <div className="flex items-center gap-1.5">
+                        <span className="rounded bg-accent/15 px-1.5 py-0.5 text-[11px] font-semibold text-accent">
+                          {c.badge}
+                        </span>
+                        {rank > 0 && (
+                          <span className="inline-flex items-center gap-1 rounded bg-gold/15 px-1.5 py-0.5 text-[11px] font-bold text-gold">
+                            <Trophy className="h-3 w-3" />
+                            AI {rank}순위
+                          </span>
+                        )}
+                      </div>
                       {active && (
                         <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-accent">
                           <CheckCircle2 className="h-3.5 w-3.5" />
@@ -193,6 +207,11 @@ export default function Step1Topic() {
                     <h4 className="mb-2 text-sm font-bold leading-snug text-slate-50">
                       {c.title}
                     </h4>
+                    {reason && (
+                      <p className="mb-2 rounded-lg border border-gold/30 bg-gold/5 px-2.5 py-1.5 text-[11px] leading-relaxed text-gold/90">
+                        AI 추천 이유: {reason}
+                      </p>
+                    )}
                     <div className="preserve-breaks max-h-48 overflow-auto text-xs leading-relaxed text-slate-400">
                       {c.body}
                     </div>

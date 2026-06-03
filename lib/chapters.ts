@@ -95,7 +95,8 @@ export function parseIntroSets(text: string): IntroSet[] {
     if (!block) continue;
     const title = block.match(/제목\s*[:：]\s*(.+)/)?.[1]?.trim() ?? "";
     const thumbnail = block.match(/썸네일\s*[:：]\s*(.+)/)?.[1]?.trim() ?? "";
-    const introMatch = block.match(/인트로\s*[:：]\s*([\s\S]+)/);
+    // 인트로 본문은 다음 마크다운 헤더(예: 트레일링 '## 몰입 추천') 직전까지만 캡처
+    const introMatch = block.match(/인트로\s*[:：]\s*([\s\S]+?)(?=\n#{1,4}\s|$)/);
     const introText = introMatch?.[1]?.trim() ?? "";
     if (title || thumbnail || introText) {
       sets.push({ title, thumbnail, text: introText });

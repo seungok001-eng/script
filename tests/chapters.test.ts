@@ -47,6 +47,21 @@ test("parseIntroSets: 세트 카드 파싱", () => {
   assert.equal(sets[1].title, "둘째 제목");
 });
 
+test("parseIntroSets: 트레일링 '## 몰입 추천'이 마지막 세트 본문을 오염시키지 않음", () => {
+  const text = `### 세트 1
+제목: 첫 제목
+썸네일: 첫 썸네일
+인트로:
+인트로 본문 1
+
+## 몰입 추천
+1순위: 세트 1 - 강렬함`;
+  const sets = parseIntroSets(text);
+  assert.equal(sets.length, 1);
+  assert.equal(sets[0].text.trim(), "인트로 본문 1");
+  assert.doesNotMatch(sets[0].text, /몰입 추천|1순위/);
+});
+
 test("previousModuleText: 직전 모듈 2챕터만 반환(컨텍스트 바운딩)", () => {
   const chapters = { 1: "ch1", 2: "ch2", 3: "ch3", 4: "ch4", 5: "ch5", 6: "ch6" };
   // moduleIdx 0 → 직전 없음
