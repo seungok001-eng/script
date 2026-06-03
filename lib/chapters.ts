@@ -15,10 +15,16 @@ export const CHAPTER_PAIRS: [number, number][] = [
  * "[챕터 N]" 마커 기준으로 본문을 개별 챕터로 분리한다.
  * 마커가 없으면 fallbackChapter 키 하나에 통째로 담는다.
  */
+/** 모델이 지시어를 그대로 받아써 본문에 남는 '줄바꿈' 등 군더더기 라인 제거 */
+export function sanitizeScript(text: string): string {
+  return text.replace(/^[\s>*-]*줄바꿈[\s.!]*$/gm, "").replace(/\n{3,}/g, "\n\n");
+}
+
 export function splitChapters(
   text: string,
   fallbackChapter: number,
 ): Record<number, string> {
+  text = sanitizeScript(text);
   const result: Record<number, string> = {};
   const regex = /\[\s*챕터\s*(\d+)\s*\]/g;
   const matches: { num: number; index: number }[] = [];

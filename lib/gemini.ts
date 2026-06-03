@@ -21,6 +21,8 @@ export interface GenArgs {
   isExtendedMode: boolean;
   temperature?: number;
   enableSearch?: boolean;
+  /** 장문(6·7단계 챕터) 생성 여부 — 출력 토큰 상한을 크게 잡는다 */
+  longForm?: boolean;
   systemInstruction: string;
   prompt: string;
 }
@@ -37,8 +39,13 @@ function buildConfig(args: GenArgs): GenerateContentConfig {
     systemInstruction: args.systemInstruction,
     temperature: args.temperature ?? 0.9,
     topP: 0.95,
-    // 비확장 모드 기본 상한. 한 번의 호출로 끝내 이어쓰기 루프(→타임아웃)를 줄인다.
-    maxOutputTokens: args.isExtendedMode ? preset.maxOutputTokens : 8192,
+    // 출력 상한. 3.x 모델은 사고(thinking) 토큰도 이 한도를 함께 쓰므로,
+    // 너무 낮으면 본문이 중간에서 MAX_TOKENS로 잘린다. 장문(챕터)은 더 크게.
+    maxOutputTokens: args.isExtendedMode
+      ? preset.maxOutputTokens
+      : args.longForm
+        ? 32768
+        : 16384,
   };
   // 익스텐디드 모드 + Thinking 지원 모델에 한해 추론 버퍼 활성화
   if (args.isExtendedMode && preset.supportsThinking) {

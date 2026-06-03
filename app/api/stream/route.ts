@@ -69,6 +69,7 @@ export async function POST(req: NextRequest) {
             isExtendedMode: body.isExtendedMode,
             temperature: body.temperature,
             enableSearch: body.enableSearch,
+            longForm: true, // 6·7단계 챕터: 출력 상한을 크게(중간 잘림 방지)
             systemInstruction: body.planning
               ? PLANNING_SYSTEM_INSTRUCTION
               : SYSTEM_INSTRUCTION,

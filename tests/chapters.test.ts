@@ -22,6 +22,13 @@ test("splitChapters: 마커 없으면 fallback 챕터에 통째로", () => {
   assert.match(r[3], /마커 없는/);
 });
 
+test("splitChapters: 본문에 박힌 '줄바꿈' 지시어 라인 제거", () => {
+  const r = splitChapters("[챕터 1]\n첫 챕터\n줄바꿈\n\n줄바꿈\n[챕터 2]\n둘째", 1);
+  assert.doesNotMatch(r[1], /줄바꿈/);
+  assert.match(r[1], /첫 챕터/);
+  assert.match(r[2], /둘째/);
+});
+
 test("splitChapters: 공백 허용 마커도 인식", () => {
   const r = splitChapters("[ 챕터  5 ] 내용", 5);
   assert.ok(r[5]);
