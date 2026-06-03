@@ -16,7 +16,8 @@ export function loadProject(): ScriptProjectState | null {
   if (!isBrowser()) return null;
   try {
     const raw = window.localStorage.getItem(STORAGE_KEYS.project);
-    return raw ? (JSON.parse(raw) as ScriptProjectState) : null;
+    // 구버전 백업에 없던 신규 필드(sources 등)를 채워 렌더 크래시를 방지
+    return raw ? normalizeState(JSON.parse(raw)) : null;
   } catch {
     return null;
   }

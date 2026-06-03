@@ -64,10 +64,11 @@ export default function Step8Metadata() {
   }, [state.introSet.text, state.finalChapters, state.synopsis]);
 
   const sourcesText = useMemo(() => {
-    if (!state.sources.length) return "";
+    const list = state.sources ?? [];
+    if (!list.length) return "";
     return (
       "📚 참고 자료 및 출처\n" +
-      state.sources.map((s, i) => `${i + 1}. ${s.title} - ${s.uri}`).join("\n")
+      list.map((s, i) => `${i + 1}. ${s.title} - ${s.uri}`).join("\n")
     );
   }, [state.sources]);
 
@@ -219,7 +220,7 @@ export default function Step8Metadata() {
             <div className="mb-1 flex items-center justify-between">
               <span className="flex items-center gap-1 text-xs font-medium text-slate-400">
                 <Link2 className="h-3 w-3" />
-                출처 {state.sources.length}건
+                출처 {(state.sources ?? []).length}건
               </span>
               <CopyButton text={sourcesText} />
             </div>
