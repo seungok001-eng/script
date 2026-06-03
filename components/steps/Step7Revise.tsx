@@ -27,7 +27,7 @@ import {
   totalChars,
 } from "@/lib/chapters";
 
-const QA_OPTS = { minChars: 5000, maxChars: 7000 };
+const QA_OPTS = { minChars: 5000, maxChars: 8000 }; // 2챕터 합산(전체 최소 ~2만자)
 
 export default function Step7Revise() {
   const { state, update, setStep } = useProject();
@@ -170,7 +170,7 @@ export default function Step7Revise() {
       </header>
 
       <div className="mb-4">
-        <ProgressGauge current={written} label="최종본 누적 분량" />
+        <ProgressGauge current={written} target={20000} label="최종본 누적 분량 (최소 20,000자)" />
       </div>
 
       <div className="mb-4 flex flex-wrap gap-2">

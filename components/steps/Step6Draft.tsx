@@ -28,8 +28,8 @@ import {
   totalChars,
 } from "@/lib/chapters";
 
-const MODULE_MIN = 5000; // 2챕터 합산 타깃 하한 (2,500 × 2)
-const MODULE_MAX = 7000; // 2챕터 합산 타깃 상한 (3,500 × 2)
+const MODULE_MIN = 6000; // 2챕터 합산 하한 (공백 포함 3,000 × 2 → 전체 ~24,000)
+const MODULE_MAX = 8000; // 2챕터 합산 상한
 const QA_OPTS = { minChars: MODULE_MIN, maxChars: MODULE_MAX };
 
 export default function Step6Draft() {
@@ -198,7 +198,7 @@ export default function Step6Draft() {
       </header>
 
       <div className="mb-4">
-        <ProgressGauge current={written} label="초안 누적 분량" />
+        <ProgressGauge current={written} target={24000} label="초안 누적 분량 (목표 24,000자)" />
       </div>
 
       {/* 모듈 탭 */}
