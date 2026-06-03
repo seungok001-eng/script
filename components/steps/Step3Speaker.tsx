@@ -38,6 +38,10 @@ export default function Step3Speaker() {
     setOutput(full);
   };
 
+  // 본문 불릿에서 라벨 값 추출 (국적/나이 칩 표시용)
+  const field = (body: string, label: string) =>
+    body.match(new RegExp(`${label}\\s*[:：]\\s*(.+)`))?.[1]?.trim() ?? "";
+
   const handleConfirm = () => {
     if (!output.trim()) {
       toast("선택한 화자 프로필 내용이 비어 있습니다.", "error");
@@ -98,6 +102,25 @@ export default function Step3Speaker() {
                   <h4 className="mb-2 text-sm font-bold leading-snug text-slate-50">
                     {c.title}
                   </h4>
+                  {(() => {
+                    const nat = field(c.body, "국적");
+                    const age = field(c.body, "나이");
+                    if (!nat && !age) return null;
+                    return (
+                      <div className="mb-2 flex flex-wrap gap-1.5">
+                        {nat && (
+                          <span className="rounded-full border border-base-600 bg-base-900/60 px-2 py-0.5 text-[11px] text-slate-300">
+                            🌐 {nat}
+                          </span>
+                        )}
+                        {age && (
+                          <span className="rounded-full border border-base-600 bg-base-900/60 px-2 py-0.5 text-[11px] text-slate-300">
+                            🎂 {age}
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })()}
                   <div className="preserve-breaks max-h-48 overflow-auto text-xs leading-relaxed text-slate-400">
                     {c.body}
                   </div>
