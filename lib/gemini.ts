@@ -37,7 +37,8 @@ function buildConfig(args: GenArgs): GenerateContentConfig {
     systemInstruction: args.systemInstruction,
     temperature: args.temperature ?? 0.9,
     topP: 0.95,
-    maxOutputTokens: args.isExtendedMode ? preset.maxOutputTokens : 4096,
+    // 비확장 모드 기본 상한. 한 번의 호출로 끝내 이어쓰기 루프(→타임아웃)를 줄인다.
+    maxOutputTokens: args.isExtendedMode ? preset.maxOutputTokens : 8192,
   };
   // 익스텐디드 모드 + Thinking 지원 모델에 한해 추론 버퍼 활성화
   if (args.isExtendedMode && preset.supportsThinking) {

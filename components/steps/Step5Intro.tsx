@@ -54,16 +54,16 @@ export default function Step5Intro() {
     <StepShell
       step={5}
       title="인트로 및 클릭률 폭발 세트 제안"
-      subtitle="시놉시스를 바탕으로 300자+ 인트로 10가지를 [제목 + 썸네일 카피]와 한 세트로 묶어 제안합니다. 카드에서 하나를 선택하세요."
+      subtitle="시놉시스를 바탕으로 300자+ 인트로 5가지를 [제목 + 썸네일 카피]와 한 세트로 묶어 제안합니다. 카드에서 하나를 선택하고, 5개가 모두 마음에 안 들면 버튼을 다시 눌러 새 5개를 받으세요."
       aiOutput={output}
       onAiOutputChange={setOutput}
-      aiPlaceholder="인트로 세트 10가지가 생성되면 아래 카드로 표시됩니다."
+      aiPlaceholder="인트로 세트 5가지가 생성되면 아래 카드로 표시됩니다."
       userInput={guide}
       onUserInputChange={setGuide}
       userPlaceholder="예: 도발적인 질문형 제목 위주로, 숫자를 넣어서"
       onGenerate={handleGenerate}
       generating={running}
-      generateLabel="인트로 세트 10가지 제안"
+      generateLabel="인트로 세트 5가지 제안"
       onConfirm={handleConfirm}
       canConfirm={!!selected}
       confirmLabel="초안 작성 · 6단계로"
