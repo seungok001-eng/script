@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        width: 260px;
+        margin: 0;
+        padding: 14px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #1b1b1f;
+        color: #e7e7ea;
+      }
+      h1 { font-size: 14px; margin: 0 0 10px; }
+      label { font-size: 12px; color: #a8a8b3; display: block; margin-bottom: 4px; }
+      input[type="number"] {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px 10px;
+        border: 1px solid #3a3a42;
+        border-radius: 8px;
+        background: #111114;
+        color: #fff;
+        font-size: 14px;
+        outline: none;
+      }
+      input[type="number"]:focus { border-color: #c96442; }
+      .row { display: flex; gap: 8px; margin-top: 12px; }
+      button {
+        flex: 1;
+        padding: 9px 10px;
+        border: none;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      #start { background: #c96442; color: #fff; }
+      #stop { background: #2b2b31; color: #e7e7ea; border: 1px solid #3a3a42; }
+      button:hover { filter: brightness(1.08); }
+      #msg { margin-top: 10px; font-size: 12px; color: #a8a8b3; min-height: 16px; }
+      .hint { margin-top: 10px; font-size: 11px; color: #76767f; line-height: 1.5; }
+    </style>
+  </head>
+  <body>
+    <h1>Claude 자동 다음 단계</h1>
+    <label for="count">자동 전송 횟수</label>
+    <input id="count" type="number" min="1" max="50" value="4" />
+    <div class="row">
+      <button id="start">시작</button>
+      <button id="stop">중지</button>
+    </div>
+    <div id="msg"></div>
+    <div class="hint">
+      claude.ai 대화 탭에서 실행하세요. 응답이 끝날 때마다 "다음 단계 진행해"를
+      입력·전송하고, 지정 횟수가 끝나면 멈춥니다.
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

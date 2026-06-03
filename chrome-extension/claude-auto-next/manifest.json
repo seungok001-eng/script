@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Claude 자동 다음 단계",
+  "version": "1.0.0",
+  "description": "클로드(claude.ai) 대화에서 응답이 끝날 때마다 '다음 단계 진행해'를 지정한 횟수만큼 자동으로 전송합니다.",
+  "permissions": ["activeTab", "tabs"],
+  "host_permissions": ["https://claude.ai/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Claude 자동 다음 단계"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
