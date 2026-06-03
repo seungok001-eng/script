@@ -97,6 +97,7 @@ export function normalizeState(
     draftChapters: s.draftChapters ?? {},
     finalChapters: s.finalChapters ?? {},
     foreshadowLedger: s.foreshadowLedger ?? "",
+    sources: s.sources ?? [],
     metadata: s.metadata ?? "",
   };
 }

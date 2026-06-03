@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ShieldCheck, Link2 } from "lucide-react";
 import StepShell from "../StepShell";
 import { useProject } from "../providers/ProjectProvider";
@@ -18,6 +18,12 @@ export default function Step2Research() {
   const [guide, setGuide] = useState("");
   // 사용자가 '팩트 컨펌'을 누르기 전까지 다음 단계 진입을 원천 차단
   const [factConfirmed, setFactConfirmed] = useState(!!state.factReport);
+
+  // 그라운딩 출처를 상태에 보존 → 8단계 설명란 '출처'에 그대로 사용
+  useEffect(() => {
+    if (lastSources.length) update({ sources: lastSources });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lastSources]);
 
   const handleGenerate = async () => {
     setFactConfirmed(false);

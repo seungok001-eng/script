@@ -40,6 +40,7 @@ const DEFAULT_STATE: ScriptProjectState = {
   draftChapters: {},
   finalChapters: {},
   foreshadowLedger: "",
+  sources: [],
   metadata: "",
 };
 
