@@ -100,6 +100,9 @@ export default function Step5Intro() {
                       <Clapperboard className="h-3.5 w-3.5" />
                       세트 {setNum}
                     </span>
+                    <span className="rounded bg-base-700 px-1.5 py-0.5 text-[10px] font-medium text-slate-300">
+                      {setNum <= 2 ? "대사 훅형" : "차분 도입형"}
+                    </span>
                     {rank > 0 && (
                       <span className="inline-flex items-center gap-1 rounded bg-gold/15 px-1.5 py-0.5 text-[11px] font-bold text-gold">
                         <Trophy className="h-3 w-3" />
