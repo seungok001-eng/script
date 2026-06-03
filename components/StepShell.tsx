@@ -2,6 +2,7 @@
 
 import { type ReactNode } from "react";
 import { Sparkles, ArrowRight, Loader2, StopCircle } from "lucide-react";
+import CopyButton from "./CopyButton";
 
 interface StepShellProps {
   step: number;
@@ -93,9 +94,12 @@ export default function StepShell(props: StepShellProps) {
       {!hideEditor && (
         <div className="grid gap-4 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <label className="mb-1.5 block text-xs font-medium uppercase tracking-wide text-slate-500">
-              AI Output 에디터
-            </label>
+            <div className="mb-1.5 flex items-center justify-between">
+              <label className="block text-xs font-medium uppercase tracking-wide text-slate-500">
+                AI Output 에디터
+              </label>
+              <CopyButton text={aiOutput} />
+            </div>
             <textarea
               value={aiOutput}
               onChange={(e) => onAiOutputChange(e.target.value)}

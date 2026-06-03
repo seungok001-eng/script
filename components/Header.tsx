@@ -1,14 +1,15 @@
 "use client";
 
-import { Settings, Zap, Factory } from "lucide-react";
+import { Settings, Zap, Factory, FolderOpen } from "lucide-react";
 import { useProject } from "./providers/ProjectProvider";
 import { MODEL_PRESETS } from "@/lib/models";
 
 interface HeaderProps {
   onOpenSettings: () => void;
+  onOpenProjects: () => void;
 }
 
-export default function Header({ onOpenSettings }: HeaderProps) {
+export default function Header({ onOpenSettings, onOpenProjects }: HeaderProps) {
   const { state, updateConfig, hydrated } = useProject();
   const { selectedModel, isExtendedMode } = state.config;
 
@@ -65,6 +66,15 @@ export default function Header({ onOpenSettings }: HeaderProps) {
                 }`}
               />
             </span>
+          </button>
+
+          {/* 프로젝트 슬롯 */}
+          <button
+            onClick={onOpenProjects}
+            className="grid h-9 w-9 place-items-center rounded-lg border border-base-600 bg-base-800 text-slate-300 transition hover:text-accent"
+            aria-label="프로젝트 슬롯 열기"
+          >
+            <FolderOpen className="h-5 w-5" />
           </button>
 
           {/* 설정 모달 */}

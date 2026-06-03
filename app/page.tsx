@@ -5,6 +5,7 @@ import { Loader2 } from "lucide-react";
 import Header from "@/components/Header";
 import Stepper from "@/components/Stepper";
 import SettingsModal from "@/components/SettingsModal";
+import ProjectsModal from "@/components/ProjectsModal";
 import CostTracker from "@/components/CostTracker";
 import RecoveryModal from "@/components/RecoveryModal";
 import { useProject } from "@/components/providers/ProjectProvider";
@@ -32,13 +33,17 @@ const STEP_COMPONENTS = [
 export default function Page() {
   const { state, hydrated } = useProject();
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
 
   const idx = Math.min(Math.max(state.currentStep - 1, 0), STEP_COMPONENTS.length - 1);
   const CurrentStep = STEP_COMPONENTS[idx];
 
   return (
     <div className="min-h-screen">
-      <Header onOpenSettings={() => setSettingsOpen(true)} />
+      <Header
+        onOpenSettings={() => setSettingsOpen(true)}
+        onOpenProjects={() => setProjectsOpen(true)}
+      />
 
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
         {!hydrated ? (
@@ -55,6 +60,7 @@ export default function Page() {
       </main>
 
       <SettingsModal open={settingsOpen} onClose={() => setSettingsOpen(false)} />
+      <ProjectsModal open={projectsOpen} onClose={() => setProjectsOpen(false)} />
       <RecoveryModal />
       {hydrated && <CostTracker />}
     </div>

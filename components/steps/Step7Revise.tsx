@@ -18,6 +18,7 @@ import { tempFor } from "@/lib/phases";
 import { analyzeScript } from "@/lib/qa";
 import QAPanel from "../QAPanel";
 import ProgressGauge from "../ProgressGauge";
+import CopyButton from "../CopyButton";
 import {
   CHAPTER_PAIRS,
   pairFilled,
@@ -225,9 +226,12 @@ export default function Step7Revise() {
 
       <div className="grid gap-4 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          <label className="mb-1.5 block text-xs font-medium uppercase tracking-wide text-slate-500">
-            AI Output 에디터 · 챕터 {pair[0]}–{pair[1]} 최종본
-          </label>
+          <div className="mb-1.5 flex items-center justify-between">
+            <label className="block text-xs font-medium uppercase tracking-wide text-slate-500">
+              AI Output 에디터 · 챕터 {pair[0]}–{pair[1]} 최종본
+            </label>
+            <CopyButton text={buffer} />
+          </div>
           <textarea
             value={buffer}
             onChange={(e) => setBuffer(e.target.value)}

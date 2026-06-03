@@ -57,6 +57,7 @@ interface ProjectContextValue {
   update: (partial: Partial<ScriptProjectState>) => void;
   updateConfig: (partial: Partial<AppConfig>) => void;
   setStep: (step: number) => void;
+  replaceState: (next: ScriptProjectState) => void;
   addUsage: (usage: UsageMetadata) => void;
   resetUsage: () => void;
   resetProject: () => void;
@@ -144,6 +145,13 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
     setState((s) => ({ ...s, currentStep: step }));
   }, []);
 
+  /** 스냅샷/가져오기로 전체 상태 교체 (현재 API 키는 유지) */
+  const replaceState = useCallback((next: ScriptProjectState) => {
+    setRecoverable(false);
+    pendingBackup.current = null;
+    setState((s) => ({ ...next, config: { ...next.config, apiKey: s.config.apiKey } }));
+  }, []);
+
   const addUsage = useCallback((u: UsageMetadata) => {
     setUsage((prev) => ({
       promptTokens: prev.promptTokens + u.promptTokens,
@@ -187,6 +195,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       update,
       updateConfig,
       setStep,
+      replaceState,
       addUsage,
       resetUsage,
       resetProject,
@@ -201,6 +210,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       update,
       updateConfig,
       setStep,
+      replaceState,
       addUsage,
       resetUsage,
       resetProject,
