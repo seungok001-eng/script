@@ -110,13 +110,31 @@ export default function Step8Metadata() {
     toast("메타데이터를 저장했습니다. 프로젝트 완성!", "success");
   };
 
+  const buildExport = () => {
+    const meta = (output || state.metadata).trim();
+    return [
+      `[주제] ${state.topic}`,
+      `[본문 분량] ${chars.toLocaleString("ko-KR")}자`,
+      "",
+      "===== 대본 =====",
+      "",
+      fullScript,
+      "",
+      "",
+      "===== 메타데이터 / 설명란 =====",
+      "",
+      meta || "(메타데이터가 아직 생성되지 않았습니다.)",
+      "",
+    ].join("\n");
+  };
+
   const copyScript = async () => {
-    await navigator.clipboard.writeText(fullScript);
-    toast("최종 대본 전체를 클립보드에 복사했습니다.", "success");
+    await navigator.clipboard.writeText(buildExport());
+    toast("대본 + 메타데이터 전체를 클립보드에 복사했습니다.", "success");
   };
 
   const downloadScript = () => {
-    const blob = new Blob([fullScript], { type: "text/plain;charset=utf-8" });
+    const blob = new Blob([buildExport()], { type: "text/plain;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
@@ -157,14 +175,14 @@ export default function Step8Metadata() {
           className="inline-flex items-center gap-2 rounded-lg border border-base-600 px-3 py-2 text-sm text-slate-300 transition hover:text-accent"
         >
           <Copy className="h-4 w-4" />
-          대본 전체 복사
+          대본+메타 전체 복사
         </button>
         <button
           onClick={downloadScript}
           className="inline-flex items-center gap-2 rounded-lg border border-base-600 px-3 py-2 text-sm text-slate-300 transition hover:text-accent"
         >
           <Download className="h-4 w-4" />
-          대본 .txt 저장
+          대본+메타 .txt 저장
         </button>
       </div>
 
