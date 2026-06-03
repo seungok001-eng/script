@@ -2,11 +2,13 @@
 // 모델 프리셋 + 토큰 요율(Pricing) 매핑 테이블
 // ─────────────────────────────────────────────────────────────
 //
-// 주의: 아래 모델 ID와 단가는 명세서에 기재된 프리셋을 따른 것이며,
-// 일부(gemini-3.x 라인업)는 향후/가상 모델 ID일 수 있습니다.
-// 실제 배포 시에는 Google AI Studio에서 사용 가능한 모델 ID와
-// 최신 공식 요금표(https://ai.google.dev/pricing)로 갱신하세요.
-// 단가는 USD / 1,000,000 토큰 기준입니다.
+// 2026-06 기준 Google Gemini API에서 호출 가능한 실제 모델 ID로 검증·갱신.
+//  · gemini-3.5-flash       : GA (2026-05-19), 1M 컨텍스트 / 65,536 출력
+//  · gemini-3.1-pro-preview : 프리뷰 단계 (현재 호출 ID에 -preview 접미사 유지)
+//  · gemini-3.1-flash-lite  : GA, 최저가 고속
+//  · gemini-2.5-pro / flash : 스테이블
+// 단가는 USD / 1,000,000 토큰 기준이며, 200K 토큰 초과 구간 가산은 무시한 기본가.
+// 최신 공식 요금표: https://ai.google.dev/gemini-api/docs/pricing
 
 export interface ModelPreset {
   id: string;
@@ -26,33 +28,33 @@ export const MODEL_PRESETS: ModelPreset[] = [
   {
     id: "gemini-3.5-flash",
     label: "Gemini 3.5 Flash",
-    description: "기본 추천 · 속도/에이전틱 최적화",
+    description: "기본 추천 · GA · 에이전틱/속도 최적 (1M 컨텍스트)",
     supportsThinking: true,
-    maxOutputTokens: 8192,
-    pricing: { inputPerMillion: 0.3, outputPerMillion: 2.5 },
+    maxOutputTokens: 65536,
+    pricing: { inputPerMillion: 1.5, outputPerMillion: 9.0 },
   },
   {
-    id: "gemini-3.1-pro",
-    label: "Gemini 3.1 Pro",
-    description: "고난도 심층 추론 · 작가 모드",
+    id: "gemini-3.1-pro-preview",
+    label: "Gemini 3.1 Pro (Preview)",
+    description: "고난도 심층 추론 · 작가 모드 (프리뷰)",
     supportsThinking: true,
-    maxOutputTokens: 8192,
-    pricing: { inputPerMillion: 1.25, outputPerMillion: 10.0 },
+    maxOutputTokens: 65536,
+    pricing: { inputPerMillion: 2.0, outputPerMillion: 12.0 },
   },
   {
     id: "gemini-3.1-flash-lite",
     label: "Gemini 3.1 Flash-Lite",
-    description: "초고속 · 비용 절감형",
+    description: "GA · 초고속 · 비용 절감형",
     supportsThinking: false,
-    maxOutputTokens: 8192,
-    pricing: { inputPerMillion: 0.1, outputPerMillion: 0.4 },
+    maxOutputTokens: 65536,
+    pricing: { inputPerMillion: 0.25, outputPerMillion: 1.5 },
   },
   {
     id: "gemini-2.5-pro",
     label: "Gemini 2.5 Pro (Stable)",
     description: "기존 스테이블 · 심층 추론",
     supportsThinking: true,
-    maxOutputTokens: 8192,
+    maxOutputTokens: 65536,
     pricing: { inputPerMillion: 1.25, outputPerMillion: 10.0 },
   },
   {
@@ -60,7 +62,7 @@ export const MODEL_PRESETS: ModelPreset[] = [
     label: "Gemini 2.5 Flash (Stable)",
     description: "기존 스테이블 · 범용 고속",
     supportsThinking: true,
-    maxOutputTokens: 8192,
+    maxOutputTokens: 65536,
     pricing: { inputPerMillion: 0.3, outputPerMillion: 2.5 },
   },
 ];
