@@ -1,17 +1,32 @@
 "use client";
 
 import { useState } from "react";
-import { Loader2, Wand2, StopCircle, Save, ArrowRight, CheckCircle2 } from "lucide-react";
+import {
+  Loader2,
+  Wand2,
+  StopCircle,
+  Save,
+  ArrowRight,
+  CheckCircle2,
+  Rocket,
+} from "lucide-react";
 import { useProject } from "../providers/ProjectProvider";
 import { useToast } from "../providers/ToastProvider";
 import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep7Prompt } from "@/lib/prompts";
+import { tempFor } from "@/lib/phases";
+import { analyzeScript } from "@/lib/qa";
+import QAPanel from "../QAPanel";
+import ProgressGauge from "../ProgressGauge";
 import {
   CHAPTER_PAIRS,
   pairFilled,
   splitChapters,
   allChaptersReady,
+  totalChars,
 } from "@/lib/chapters";
+
+const QA_OPTS = { minChars: 5000, maxChars: 7000 };
 
 export default function Step7Revise() {
   const { state, update, setStep } = useProject();
@@ -20,36 +35,49 @@ export default function Step7Revise() {
 
   const [moduleIdx, setModuleIdx] = useState(0);
   const pair = CHAPTER_PAIRS[moduleIdx];
+  const [auto, setAuto] = useState(false);
+  const [guide, setGuide] = useState("");
+  const busy = running || auto;
 
-  const draftPair = () =>
-    [state.draftChapters[pair[0]], state.draftChapters[pair[1]]]
+  const draftPairText = (p: [number, number]) =>
+    [state.draftChapters[p[0]], state.draftChapters[p[1]]]
       .filter(Boolean)
       .join("\n\n");
 
   const [buffer, setBuffer] = useState(
     [state.finalChapters[pair[0]], state.finalChapters[pair[1]]]
       .filter(Boolean)
-      .join("\n\n") || draftPair(),
+      .join("\n\n") || draftPairText(pair),
   );
-  const [guide, setGuide] = useState("");
 
   const switchModule = (idx: number) => {
-    if (running) return;
+    if (busy) return;
     setModuleIdx(idx);
     const p = CHAPTER_PAIRS[idx];
     const final = [state.finalChapters[p[0]], state.finalChapters[p[1]]]
       .filter(Boolean)
       .join("\n\n");
-    const draft = [state.draftChapters[p[0]], state.draftChapters[p[1]]]
-      .filter(Boolean)
-      .join("\n\n");
-    setBuffer(final || draft);
+    setBuffer(final || draftPairText(p));
   };
 
   const handleStream = async () => {
-    const prompt = buildStep7Prompt(state, pair, draftPair(), guide);
+    const prompt = buildStep7Prompt(state, pair, draftPairText(pair), guide);
+    let acc = "";
     setBuffer("");
-    await runStream(prompt, (text) => setBuffer((prev) => prev + text));
+    const ok = await runStream(
+      prompt,
+      (t) => {
+        acc += t;
+        setBuffer((prev) => prev + t);
+      },
+      { temperature: tempFor(7) },
+    );
+    if (ok && acc.trim()) {
+      update({
+        finalChapters: { ...state.finalChapters, ...splitChapters(acc, pair[0]) },
+      });
+      toast(`챕터 ${pair[0]}–${pair[1]} 최종본을 갱신했습니다.`, "success");
+    }
   };
 
   const handleSaveModule = () => {
@@ -57,12 +85,60 @@ export default function Step7Revise() {
       toast("저장할 본문이 없습니다.", "error");
       return;
     }
-    const parsed = splitChapters(buffer, pair[0]);
-    update({ finalChapters: { ...state.finalChapters, ...parsed } });
+    update({
+      finalChapters: { ...state.finalChapters, ...splitChapters(buffer, pair[0]) },
+    });
     toast(`챕터 ${pair[0]}–${pair[1]} 최종본을 저장했습니다.`, "success");
   };
 
+  /** QA 가드형 전체 자동 퇴고 */
+  const handleAutoAll = async () => {
+    setAuto(true);
+    let finalMap = { ...state.finalChapters };
+    const warns: string[] = [];
+
+    for (let i = 0; i < CHAPTER_PAIRS.length; i++) {
+      const p = CHAPTER_PAIRS[i];
+      setModuleIdx(i);
+      const draft = draftPairText(p);
+      if (!draft.trim()) {
+        warns.push(`모듈 ${i + 1} 초안 없음 — 건너뜀`);
+        continue;
+      }
+      const prompt = buildStep7Prompt(state, p, draft, "");
+      let acc = "";
+      setBuffer("");
+      const ok = await runStream(
+        prompt,
+        (t) => {
+          acc += t;
+          setBuffer((prev) => prev + t);
+        },
+        { temperature: tempFor(7) },
+      );
+      if (!ok || !acc.trim()) {
+        warns.push(`모듈 ${i + 1} 중단/실패 — 이후 중단`);
+        break;
+      }
+      finalMap = { ...finalMap, ...splitChapters(acc, p[0]) };
+      const qa = analyzeScript(acc, QA_OPTS);
+      if (qa.warnings.length) {
+        warns.push(`챕터 ${p[0]}–${p[1]}: ${qa.warnings.slice(0, 3).join(" / ")}`);
+      }
+      update({ finalChapters: finalMap });
+    }
+
+    setAuto(false);
+    toast(
+      warns.length
+        ? `자동 퇴고 완료 · 검수 권장 ${warns.length}건.`
+        : "전체 자동 퇴고 완료! 모든 모듈 QA 통과.",
+      warns.length ? "info" : "success",
+    );
+  };
+
   const ready = allChaptersReady(state, "final");
+  const written = totalChars(state.finalChapters);
 
   return (
     <section className="animate-slide-in">
@@ -74,10 +150,14 @@ export default function Step7Revise() {
           시청지속시간 극대화 정밀 퇴고
         </h2>
         <p className="mt-1 text-sm text-slate-400">
-          초안을 2개 챕터씩 불러와 정밀 퇴고합니다. 늘어지는 설명은 비유로
-          압축하되, 고품질 구간은 억지로 줄이지 않고 보존합니다.
+          초안을 2개 챕터씩 정밀 퇴고합니다. 늘어지는 설명은 비유로 압축하되,
+          고품질 구간은 억지로 줄이지 않고 보존합니다.
         </p>
       </header>
+
+      <div className="mb-4">
+        <ProgressGauge current={written} label="최종본 누적 분량" />
+      </div>
 
       <div className="mb-4 flex flex-wrap gap-2">
         {CHAPTER_PAIRS.map((p, i) => {
@@ -87,7 +167,8 @@ export default function Step7Revise() {
             <button
               key={i}
               onClick={() => switchModule(i)}
-              className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 text-sm font-medium transition ${
+              disabled={busy}
+              className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 text-sm font-medium transition disabled:opacity-50 ${
                 active
                   ? "border-accent bg-accent/10 text-slate-50"
                   : "border-base-600 bg-base-800 text-slate-400 hover:text-slate-200"
@@ -103,17 +184,27 @@ export default function Step7Revise() {
       <div className="mb-4 flex flex-wrap items-center gap-3">
         <button
           onClick={handleStream}
-          disabled={running}
+          disabled={busy}
           className="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-base-900 transition hover:brightness-110 disabled:opacity-50"
         >
-          {running ? (
+          {running && !auto ? (
             <Loader2 className="h-4 w-4 animate-spin" />
           ) : (
             <Wand2 className="h-4 w-4" />
           )}
-          {running ? "퇴고 중…" : `챕터 ${pair[0]}–${pair[1]} 퇴고`}
+          {running && !auto ? "퇴고 중…" : `챕터 ${pair[0]}–${pair[1]} 퇴고`}
         </button>
-        {running && (
+
+        <button
+          onClick={handleAutoAll}
+          disabled={busy}
+          className="inline-flex items-center gap-2 rounded-lg border border-gold/50 bg-gold/10 px-4 py-2 text-sm font-semibold text-gold transition hover:bg-gold/20 disabled:opacity-50"
+        >
+          {auto ? <Loader2 className="h-4 w-4 animate-spin" /> : <Rocket className="h-4 w-4" />}
+          {auto ? "전체 자동 퇴고 중…" : "전체 자동 퇴고 (QA 가드)"}
+        </button>
+
+        {busy && (
           <button
             onClick={abort}
             className="inline-flex items-center gap-2 rounded-lg border border-base-600 px-3 py-2 text-sm text-slate-300 transition hover:border-red-500 hover:text-red-400"
@@ -124,7 +215,7 @@ export default function Step7Revise() {
         )}
         <button
           onClick={handleSaveModule}
-          disabled={running || !buffer.trim()}
+          disabled={busy || !buffer.trim()}
           className="inline-flex items-center gap-2 rounded-lg border border-emerald-600/50 bg-emerald-500/10 px-3 py-2 text-sm font-medium text-emerald-400 transition hover:bg-emerald-500/20 disabled:opacity-40"
         >
           <Save className="h-4 w-4" />
@@ -142,11 +233,14 @@ export default function Step7Revise() {
             onChange={(e) => setBuffer(e.target.value)}
             spellCheck={false}
             placeholder="초안이 로드되어 있습니다. 퇴고 버튼을 누르면 정밀 수정본이 스트리밍됩니다."
-            className="preserve-breaks h-[520px] w-full resize-none rounded-xl border border-base-600 bg-base-800/70 p-4 font-mono text-sm leading-relaxed text-slate-100 outline-none transition focus:border-accent/70"
+            className="preserve-breaks h-[420px] w-full resize-none rounded-xl border border-base-600 bg-base-800/70 p-4 font-mono text-sm leading-relaxed text-slate-100 outline-none transition focus:border-accent/70"
           />
           <p className="mt-1 text-right text-xs text-slate-500">
             {buffer.length.toLocaleString("ko-KR")}자
           </p>
+          <div className="mt-2">
+            <QAPanel text={buffer} opts={QA_OPTS} />
+          </div>
         </div>
         <div>
           <label className="mb-1.5 block text-xs font-medium uppercase tracking-wide text-slate-500">
@@ -155,8 +249,8 @@ export default function Step7Revise() {
           <textarea
             value={guide}
             onChange={(e) => setGuide(e.target.value)}
-            placeholder="예: 챕터 도입부의 호흡을 더 짧게, 통계 인용은 그대로 유지"
-            className="preserve-breaks h-[520px] w-full resize-none rounded-xl border border-base-600 bg-base-800/70 p-4 text-sm leading-relaxed text-slate-200 outline-none transition focus:border-accent/70"
+            placeholder="예: 챕터 도입부 호흡을 더 짧게, 통계 인용은 그대로 유지 (개별 퇴고에 적용)"
+            className="preserve-breaks h-[420px] w-full resize-none rounded-xl border border-base-600 bg-base-800/70 p-4 text-sm leading-relaxed text-slate-200 outline-none transition focus:border-accent/70"
           />
         </div>
       </div>
@@ -169,7 +263,7 @@ export default function Step7Revise() {
         )}
         <button
           onClick={() => setStep(8)}
-          disabled={!ready || running}
+          disabled={!ready || busy}
           className="inline-flex items-center gap-2 rounded-lg bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-emerald-950 transition hover:brightness-110 disabled:opacity-40"
         >
           메타데이터 출력 · 8단계로

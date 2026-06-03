@@ -39,6 +39,7 @@ const DEFAULT_STATE: ScriptProjectState = {
   introSet: { title: "", thumbnail: "", text: "" },
   draftChapters: {},
   finalChapters: {},
+  foreshadowLedger: "",
   metadata: "",
 };
 

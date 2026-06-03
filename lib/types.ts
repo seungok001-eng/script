@@ -30,6 +30,7 @@ export interface ScriptProjectState {
   introSet: IntroSet; // 5단계 선택 인트로 세트
   draftChapters: { [key: number]: string }; // 6단계 생성된 1~8챕터 초안
   finalChapters: { [key: number]: string }; // 7단계 퇴고 완료된 1~8챕터 최종본
+  foreshadowLedger: string; // 6단계 러닝 떡밥(복선) 원장 — 전 챕터 회수 추적
   metadata: string; // 8단계 메타데이터
 }
 

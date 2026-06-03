@@ -53,6 +53,20 @@ export function joinChaptersBelow(
     .join("\n\n");
 }
 
+/**
+ * 직전 모듈(2챕터)의 본문만 반환한다.
+ * 컨텍스트가 누적되지 않도록 본문은 항상 직전 모듈로 바운딩한다.
+ * (전 챕터에 걸친 떡밥 회수는 별도의 '떡밥 원장'이 담당한다.)
+ */
+export function previousModuleText(
+  chapters: { [key: number]: string },
+  moduleIdx: number,
+): string {
+  if (moduleIdx <= 0) return "";
+  const p = CHAPTER_PAIRS[moduleIdx - 1];
+  return [chapters[p[0]], chapters[p[1]]].filter(Boolean).join("\n\n");
+}
+
 /** 챕터 맵 → 전체 대본 문자열 */
 export function joinAllChapters(chapters: { [key: number]: string }): string {
   return Object.keys(chapters)
