@@ -27,6 +27,23 @@ Google Gemini API를 활용해 유튜브 상위 0.1% 채널의 워크플로우�
 
 `@google/genai@2.7.0`은 게시 패키지에 `prepare`(rollup 재빌드) 스크립트가 포함된 패키징 버그가 있어, 일반 `npm install` 시 빌드가 실패합니다. 이를 회피하기 위해 저장소에 `.npmrc`(`ignore-scripts=true`)가 포함되어 있습니다. 이 프로젝트는 별도의 install/postinstall 스크립트가 필요하지 않습니다.
 
+## Vercel 배포
+
+이 앱은 **API 키를 사용자가 화면에서 직접 입력**하므로 Vercel에 설정할 환경변수가 없습니다. 저장소를 가져와 배포 버튼만 누르면 됩니다.
+
+1. https://vercel.com 접속 → **Continue with GitHub**로 로그인(가입).
+2. 대시보드 → **Add New… → Project**.
+3. **Import Git Repository**에서 `seungok001-eng/script` 선택. (처음이면 GitHub 연동 권한 승인)
+4. **Branch**를 배포할 브랜치로 선택(현재 작업본은 `claude/amazing-pasteur-583zj`, 또는 `main` 병합 후 `main`).
+5. Framework는 **Next.js**로 자동 인식됨. Build/Install 설정은 그대로 두면 됨(저장소의 `.npmrc`·`vercel.json` 자동 적용).
+6. **Deploy** 클릭 → 1~2분 후 `https://<프로젝트명>.vercel.app` 주소 발급.
+7. 발급된 주소 접속 → 우상단 ⚙️에서 본인 Gemini API 키 저장 → 사용.
+
+설정 메모:
+- `vercel.json`은 함수 리전을 **서울(icn1)** 로 지정해 한국 사용자 지연을 낮춥니다.
+- API 라우트 `maxDuration`은 무료(Hobby) 플랜 상한인 **60초**로 맞춰져 있습니다. Pro 플랜이면 `app/api/*/route.ts`의 값을 300까지 올릴 수 있습니다.
+- 이후 해당 브랜치에 푸시하면 Vercel이 **자동 재배포**합니다.
+
 ## 테스트
 
 순수 로직(챕터 분할·인트로 파싱·QA 분석)에 대한 단위 테스트를 Node 내장 테스트 러너로 실행합니다(추가 의존성 없음).

@@ -16,7 +16,9 @@ import { streamComplete, mapErrorStatus, errorMessageFor } from "@/lib/gemini";
 import type { StreamFrame } from "@/lib/types";
 
 export const runtime = "nodejs";
-export const maxDuration = 300;
+// Vercel Hobby(무료) 플랜의 함수 최대 실행시간은 60초입니다.
+// Pro 플랜이라면 300까지 올려도 됩니다(긴 추론 모델에 유리).
+export const maxDuration = 60;
 
 interface StreamBody {
   modelId: string;

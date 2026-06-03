@@ -7,7 +7,8 @@ import { SYSTEM_INSTRUCTION } from "@/lib/prompts";
 import { generateComplete, mapErrorStatus, errorMessageFor } from "@/lib/gemini";
 
 export const runtime = "nodejs";
-export const maxDuration = 120;
+// Vercel Hobby(무료) 플랜 상한 60초에 맞춤. Pro면 300까지 상향 가능.
+export const maxDuration = 60;
 
 interface GenerateBody {
   modelId: string;
