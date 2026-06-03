@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: ui-sans-serif, system-ui, "Apple SD Gothic Neo", "Noto Sans KR",
+    sans-serif;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-base-900 text-slate-200 antialiased;
+  background-image:
+    radial-gradient(60rem 40rem at 110% -10%, rgba(34, 211, 238, 0.08), transparent),
+    radial-gradient(50rem 35rem at -10% 0%, rgba(56, 189, 248, 0.06), transparent);
+  min-height: 100vh;
+}
+
+/* AI 출력/입력 영역: 줄바꿈 호흡(\n\n)을 완벽 보존 (TTS 최적화 핵심) */
+.preserve-breaks {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-base-600;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}

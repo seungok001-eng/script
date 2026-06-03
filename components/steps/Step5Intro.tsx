@@ -1,0 +1,100 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import { Clapperboard, Check } from "lucide-react";
+import StepShell from "../StepShell";
+import { useProject } from "../providers/ProjectProvider";
+import { useToast } from "../providers/ToastProvider";
+import { useGenerate } from "@/hooks/useGenerate";
+import { buildStep5Prompt } from "@/lib/prompts";
+import { parseIntroSets } from "@/lib/chapters";
+import type { IntroSet } from "@/lib/types";
+
+export default function Step5Intro() {
+  const { state, update, setStep } = useProject();
+  const { toast } = useToast();
+  const { run, running } = useGenerate();
+
+  const [output, setOutput] = useState("");
+  const [guide, setGuide] = useState("");
+  const [selected, setSelected] = useState<IntroSet | null>(
+    state.introSet.text ? state.introSet : null,
+  );
+
+  const sets = useMemo(() => parseIntroSets(output), [output]);
+
+  const handleGenerate = async () => {
+    const text = await run(buildStep5Prompt(state, guide));
+    if (text) {
+      setOutput(text);
+      setSelected(null);
+    }
+  };
+
+  const handleConfirm = () => {
+    if (!selected) {
+      toast("인트로 세트를 하나 선택해 주세요.", "error");
+      return;
+    }
+    update({ introSet: selected });
+    toast("인트로 세트를 선택했습니다.", "success");
+    setStep(6);
+  };
+
+  return (
+    <StepShell
+      step={5}
+      title="인트로 및 클릭률 폭발 세트 제안"
+      subtitle="시놉시스를 바탕으로 300자+ 인트로 10가지를 [제목 + 썸네일 카피]와 한 세트로 묶어 제안합니다. 카드에서 하나를 선택하세요."
+      aiOutput={output}
+      onAiOutputChange={setOutput}
+      aiPlaceholder="인트로 세트 10가지가 생성되면 아래 카드로 표시됩니다."
+      userInput={guide}
+      onUserInputChange={setGuide}
+      userPlaceholder="예: 도발적인 질문형 제목 위주로, 숫자를 넣어서"
+      onGenerate={handleGenerate}
+      generating={running}
+      generateLabel="인트로 세트 10가지 제안"
+      onConfirm={handleConfirm}
+      canConfirm={!!selected}
+      confirmLabel="초안 작성 · 6단계로"
+    >
+      {sets.length > 0 && (
+        <div className="grid gap-3 sm:grid-cols-2">
+          {sets.map((s, i) => {
+            const isSel =
+              selected?.text === s.text && selected?.title === s.title;
+            return (
+              <button
+                key={i}
+                onClick={() => setSelected(s)}
+                className={`relative rounded-xl border p-4 text-left transition ${
+                  isSel
+                    ? "border-accent bg-accent/10 shadow-glow"
+                    : "border-base-600 bg-base-800/60 hover:border-base-600/80 hover:bg-base-700/60"
+                }`}
+              >
+                {isSel && (
+                  <span className="absolute right-3 top-3 grid h-5 w-5 place-items-center rounded-full bg-accent text-base-900">
+                    <Check className="h-3 w-3" />
+                  </span>
+                )}
+                <div className="mb-1.5 flex items-center gap-1.5 text-xs font-semibold text-accent">
+                  <Clapperboard className="h-3.5 w-3.5" />
+                  세트 {i + 1}
+                </div>
+                <p className="text-sm font-bold leading-snug text-slate-50">
+                  {s.title || "(제목 없음)"}
+                </p>
+                <p className="mt-1 text-xs text-gold">🖼 {s.thumbnail || "—"}</p>
+                <p className="preserve-breaks mt-2 line-clamp-4 text-xs leading-relaxed text-slate-400">
+                  {s.text}
+                </p>
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </StepShell>
+  );
+}
