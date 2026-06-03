@@ -23,6 +23,7 @@ export default function Step8Metadata() {
   const handleGenerate = async () => {
     const text = await run(buildStep8Prompt(state, guide), {
       temperature: tempFor(8),
+      planning: true,
     });
     if (text) setOutput(text);
   };

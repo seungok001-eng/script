@@ -50,6 +50,7 @@ export default function Step1Topic() {
     const text = await run(buildStep1Prompt(mode, input, guide), {
       temperature: tempFor(1),
       enableSearch: true,
+      planning: true,
     });
     if (text) {
       setRecommendations(text);
@@ -180,7 +181,7 @@ export default function Step1Topic() {
                   >
                     <div className="mb-2 flex items-center justify-between gap-2">
                       <span className="rounded bg-accent/15 px-1.5 py-0.5 text-[11px] font-semibold text-accent">
-                        주제 {c.n}
+                        {c.badge}
                       </span>
                       {active && (
                         <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-accent">

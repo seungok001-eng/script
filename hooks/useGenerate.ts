@@ -10,6 +10,8 @@ import type { Source } from "@/lib/types";
 export interface GenOpts {
   temperature?: number;
   enableSearch?: boolean;
+  /** 기획·리서치 단계(1~5,8) 여부 — 기획용 시스템 인스트럭션 사용 */
+  planning?: boolean;
 }
 
 /**
@@ -59,6 +61,7 @@ export function useGenerate() {
           prompt,
           temperature: opts.temperature,
           enableSearch: opts.enableSearch,
+          planning: opts.planning,
         });
         addUsage(res.usage);
         setLastSources(res.sources ?? []);
@@ -93,6 +96,7 @@ export function useGenerate() {
             prompt,
             temperature: opts.temperature,
             enableSearch: opts.enableSearch,
+            planning: opts.planning,
           },
           {
             onChunk,

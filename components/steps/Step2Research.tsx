@@ -25,6 +25,7 @@ export default function Step2Research() {
     const text = await run(buildStep2Prompt(state.topic, guide), {
       temperature: tempFor(2),
       enableSearch: true,
+      planning: true,
     });
     if (text) setOutput(text);
   };

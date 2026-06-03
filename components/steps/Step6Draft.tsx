@@ -68,7 +68,7 @@ export default function Step6Draft() {
   ): Promise<string> => {
     const updated = await run(
       buildLedgerUpdatePrompt(baseLedger, chapterText, p),
-      { temperature: 0.2 },
+      { temperature: 0.2, planning: true },
     );
     return updated ?? baseLedger;
   };

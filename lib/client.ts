@@ -20,6 +20,8 @@ interface CallArgs {
   prompt: string;
   temperature?: number;
   enableSearch?: boolean;
+  /** 기획·리서치 단계(1~5,8) 여부 — 집필용 시스템 인스트럭션 대신 기획용을 사용 */
+  planning?: boolean;
 }
 
 function payload(args: CallArgs) {
@@ -29,6 +31,7 @@ function payload(args: CallArgs) {
     prompt: args.prompt,
     temperature: args.temperature,
     enableSearch: args.enableSearch,
+    planning: args.planning,
   });
 }
 

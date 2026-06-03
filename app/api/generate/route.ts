@@ -3,7 +3,7 @@
 // ─────────────────────────────────────────────────────────────
 
 import { NextRequest, NextResponse } from "next/server";
-import { SYSTEM_INSTRUCTION } from "@/lib/prompts";
+import { SYSTEM_INSTRUCTION, PLANNING_SYSTEM_INSTRUCTION } from "@/lib/prompts";
 import { generateComplete, mapErrorStatus, errorMessageFor } from "@/lib/gemini";
 
 export const runtime = "nodejs";
@@ -16,6 +16,7 @@ interface GenerateBody {
   prompt: string;
   temperature?: number;
   enableSearch?: boolean;
+  planning?: boolean;
 }
 
 export async function POST(req: NextRequest) {
@@ -46,7 +47,9 @@ export async function POST(req: NextRequest) {
       isExtendedMode: body.isExtendedMode,
       temperature: body.temperature,
       enableSearch: body.enableSearch,
-      systemInstruction: SYSTEM_INSTRUCTION,
+      systemInstruction: body.planning
+        ? PLANNING_SYSTEM_INSTRUCTION
+        : SYSTEM_INSTRUCTION,
       prompt: body.prompt,
     });
 

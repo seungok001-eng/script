@@ -28,6 +28,7 @@ export default function Step5Intro() {
   const handleGenerate = async () => {
     const text = await run(buildStep5Prompt(state, guide), {
       temperature: tempFor(5),
+      planning: true,
     });
     if (text) {
       setOutput(text);

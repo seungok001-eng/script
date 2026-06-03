@@ -1,8 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { parseTopicCards } from "../lib/topics.ts";
+import { parseTopicCards, parseProfileCards } from "../lib/topics.ts";
 
-const sample = `리서치 결과 아래와 같이 추천합니다.
+const topicSample = `리서치 결과 아래와 같이 추천합니다.
 
 ## 주제 1: 한국 방산 수출 신기록
 - 시의성: 2026년 폴란드 2차 계약 임박
@@ -15,13 +15,13 @@ const sample = `리서치 결과 아래와 같이 추천합니다.
 ## 추천 종합
 1순위는 주제 1입니다. 이유는 ...`;
 
-test("parseTopicCards: 주제만 카드로 분리하고 추천 종합은 제외", () => {
-  const cards = parseTopicCards(sample);
+test("parseTopicCards: 주제만 카드로 분리하고 추천 종합/프리앰블은 제외", () => {
+  const cards = parseTopicCards(topicSample);
   assert.equal(cards.length, 2);
-  assert.equal(cards[0].n, 1);
+  assert.equal(cards[0].badge, "주제 1");
   assert.equal(cards[0].title, "한국 방산 수출 신기록");
   assert.match(cards[0].body, /시의성/);
-  assert.equal(cards[1].n, 2);
+  assert.equal(cards[1].badge, "주제 2");
   assert.match(cards[1].full, /엔비디아 HBM/);
 });
 
@@ -34,4 +34,20 @@ test("parseTopicCards: 헤더 변형(### / 전각 콜론) 허용", () => {
   const cards = parseTopicCards("### 주제 1： 제목입니다\n- 내용");
   assert.equal(cards.length, 1);
   assert.equal(cards[0].title, "제목입니다");
+});
+
+const profileSample = `## 프로필 1: 패권주의 전략가
+- 시점: 워싱턴 인사이더
+- 말투: 단호하고 냉소적
+
+## 프로필 2: 냉철한 글로벌 자본가
+- 시점: 월가 헤지펀드 매니저
+- 말투: 숫자로 말함`;
+
+test("parseProfileCards: 프로필을 카드로 분리", () => {
+  const cards = parseProfileCards(profileSample);
+  assert.equal(cards.length, 2);
+  assert.equal(cards[0].badge, "프로필 1");
+  assert.equal(cards[0].title, "패권주의 전략가");
+  assert.match(cards[1].body, /월가/);
 });

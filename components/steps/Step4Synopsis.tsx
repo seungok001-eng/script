@@ -19,6 +19,7 @@ export default function Step4Synopsis() {
   const handleGenerate = async () => {
     const text = await run(buildStep4Prompt(state, guide), {
       temperature: tempFor(4),
+      planning: true,
     });
     if (text) setOutput(text);
   };

@@ -11,7 +11,7 @@
 // 마지막 'done' 프레임에서만 수행한다. (MAX_TOKENS 시 서버가 자동 이어쓰기)
 
 import { NextRequest } from "next/server";
-import { SYSTEM_INSTRUCTION } from "@/lib/prompts";
+import { SYSTEM_INSTRUCTION, PLANNING_SYSTEM_INSTRUCTION } from "@/lib/prompts";
 import { streamComplete, mapErrorStatus, errorMessageFor } from "@/lib/gemini";
 import type { StreamFrame } from "@/lib/types";
 
@@ -26,6 +26,7 @@ interface StreamBody {
   prompt: string;
   temperature?: number;
   enableSearch?: boolean;
+  planning?: boolean;
 }
 
 function frame(obj: StreamFrame): Uint8Array {
@@ -68,7 +69,9 @@ export async function POST(req: NextRequest) {
             isExtendedMode: body.isExtendedMode,
             temperature: body.temperature,
             enableSearch: body.enableSearch,
-            systemInstruction: SYSTEM_INSTRUCTION,
+            systemInstruction: body.planning
+              ? PLANNING_SYSTEM_INSTRUCTION
+              : SYSTEM_INSTRUCTION,
             prompt: body.prompt,
           },
           (text) => controller.enqueue(frame({ type: "chunk", text })),
