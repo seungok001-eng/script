@@ -16,7 +16,7 @@ import { useToast } from "../providers/ToastProvider";
 import { useGenerate } from "@/hooks/useGenerate";
 import { buildStep8Prompt } from "@/lib/prompts";
 import { tempFor } from "@/lib/phases";
-import { joinAllChapters, totalChars } from "@/lib/chapters";
+import { joinAllChapters } from "@/lib/chapters";
 import {
   parseDurationToSeconds,
   buildTimestamps,
@@ -35,7 +35,8 @@ export default function Step8Metadata() {
   const [tsText, setTsText] = useState("");
 
   const fullScript = joinAllChapters(state.finalChapters);
-  const chars = totalChars(state.finalChapters);
+  const charsInclSpaces = fullScript.length;
+  const charsExclSpaces = fullScript.replace(/\s/g, "").length;
 
   // 시놉시스에서 챕터 N의 짧은 제목 추출 (실패 시 '챕터 N')
   const chapterTitle = (n: number): string => {
@@ -114,7 +115,7 @@ export default function Step8Metadata() {
     const meta = (output || state.metadata).trim();
     return [
       `[주제] ${state.topic}`,
-      `[본문 분량] ${chars.toLocaleString("ko-KR")}자`,
+      `[본문 분량] 공백 포함 ${charsInclSpaces.toLocaleString("ko-KR")}자 · 공백 제외 ${charsExclSpaces.toLocaleString("ko-KR")}자`,
       "",
       "===== 대본 =====",
       "",
@@ -151,9 +152,10 @@ export default function Step8Metadata() {
         </div>
         <h2 className="mt-2 text-2xl font-bold text-slate-50">메타데이터 출력</h2>
         <p className="mt-1 text-sm text-slate-400">
-          최종 대본({chars.toLocaleString("ko-KR")}자) 기반 메타데이터(설명·학습
-          포인트·핵심 요약·키워드·해시태그·제목/썸네일·고정 댓글·퀴즈)와, 영상 길이로
-          만든 타임스탬프·출처를 설명란에 삽입합니다.
+          최종 대본 분량 공백 포함 {charsInclSpaces.toLocaleString("ko-KR")}자 · 공백 제외{" "}
+          {charsExclSpaces.toLocaleString("ko-KR")}자. 메타데이터(설명·학습 포인트·핵심
+          요약·키워드·해시태그·제목/썸네일·고정 댓글·퀴즈)와 영상 길이 기반 타임스탬프·출처를
+          설명란에 삽입합니다.
         </p>
       </header>
 
