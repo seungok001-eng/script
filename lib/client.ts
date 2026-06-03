@@ -71,8 +71,9 @@ export async function stream(
     signal: cb.signal,
   });
 
-  // 키 오류 등은 스트림 시작 전 일반 JSON으로 떨어진다.
-  if (!res.ok && !res.body) {
+  // 스트림이 성공적으로 시작되면 항상 200이다.
+  // 그 외 상태(키 오류 등)는 스트림 시작 전 일반 JSON 에러로 떨어지므로 즉시 throw.
+  if (!res.ok) {
     const data = await res.json().catch(() => ({}));
     throw new ApiError(res.status, data.message ?? "요청 실패");
   }

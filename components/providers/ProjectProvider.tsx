@@ -112,11 +112,13 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
     setHydrated(true);
   }, []);
 
-  // 상태 변경 시 디바운스 백업
+  // 상태 변경 시 디바운스 백업.
+  // 복구 모달이 떠 있는 동안(recoverable)에는 저장하지 않는다.
+  // 그렇지 않으면 기본 빈 상태가 디스크의 백업을 덮어써 복구 대상이 사라진다.
   useEffect(() => {
-    if (!hydrated) return;
+    if (!hydrated || recoverable) return;
     debouncedSave(state);
-  }, [state, hydrated, debouncedSave]);
+  }, [state, hydrated, recoverable, debouncedSave]);
 
   // 사용량 변경 시 즉시 백업
   useEffect(() => {
