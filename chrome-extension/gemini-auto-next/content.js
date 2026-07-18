@@ -1,63 +1,87 @@
 // ─────────────────────────────────────────────────────────────
 // Gemini 자동 다음 단계 — content script (gemini.google.com, Gems 포함)
-//   응답이 끝날 때(생성 중지)마다 입력창에 "다음 단계 진행해"를 넣고 전송.
-//   지정한 횟수만큼 반복 후 종료.
+//   응답이 끝날 때마다 입력창에 "다음 단계 진행해"를 넣고 전송, 지정 횟수 반복.
 //
-// 주의: Gemini의 DOM 구조가 바뀌면 셀렉터를 조정해야 할 수 있습니다.
+// v1.2 — 입력 실패 대응: 여러 입력 방식을 순차 시도+검증, 대기 무한루프 방지,
+//        콘솔 진단 로그([Gemini자동]) 강화.
 // ─────────────────────────────────────────────────────────────
 (function () {
-  if (window.__geminiAutoNextLoaded) return;
+  if (window.__geminiAutoNextLoaded) {
+    // 이전 버전이 로드돼 있어도 최신 로직으로 갱신되도록 플래그만 유지
+  }
   window.__geminiAutoNextLoaded = true;
 
   const MESSAGE_TEXT = "다음 단계 진행해";
+  const TAG = "[Gemini자동]";
   let running = false;
   let badge = null;
   let badgeText = null;
 
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const qa = (sel) => Array.from(document.querySelectorAll(sel));
+  const log = (...a) => console.log(TAG, ...a);
 
   const isVisible = (el) => {
     if (!el) return false;
     const r = el.getBoundingClientRect();
-    return r.width > 0 && r.height > 0;
+    return r.width > 2 && r.height > 2;
   };
+  const editorText = (e) => (e ? (e.value ?? e.textContent ?? "") : "");
 
-  // 입력창 — Gemini는 Quill(.ql-editor) contenteditable. 폴백으로 일반 입력도 탐색.
+  const attrText = (el) =>
+    [
+      el.getAttribute("aria-label"),
+      el.getAttribute("mattooltip"),
+      el.getAttribute("data-test-id"),
+      el.getAttribute("title"),
+      el.className && el.className.toString(),
+      el.querySelector("mat-icon, svg")?.textContent,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+
+  // 입력창 후보: Quill(.ql-editor) → 일반 contenteditable/textarea
   function getEditor() {
     const ql = qa('div.ql-editor[contenteditable="true"]').filter(isVisible);
     if (ql.length) return ql[ql.length - 1];
     const eds = qa(
-      'div[contenteditable="true"], textarea, div[role="textbox"]',
+      'div[contenteditable="true"], textarea, div[role="textbox"], rich-textarea textarea, rich-textarea .ql-editor',
     ).filter(isVisible);
     return eds[eds.length - 1] || null;
   }
 
-  function findButtonByLabel(keywords) {
+  function findButton(keywords, extraSel) {
+    if (extraSel) {
+      const bySel = qa(extraSel).filter(isVisible);
+      if (bySel.length) return bySel[bySel.length - 1];
+    }
+    const btns = qa('button, [role="button"]').filter(isVisible);
     return (
-      qa("button").find((b) => {
-        const al = (
-          b.getAttribute("aria-label") ||
-          b.getAttribute("mattooltip") ||
-          ""
-        ).toLowerCase();
-        return keywords.some((k) => al.includes(k));
+      btns.find((b) => {
+        const t = attrText(b);
+        return keywords.some((k) => t.includes(k));
       }) || null
     );
   }
 
-  // 생성 중이면 '중지(Stop)' 버튼이 존재한다.
   function getStopButton() {
-    return findButtonByLabel(["stop", "중지", "중단"]);
+    return findButton(
+      ["stop", "중지", "중단", "생성 중지", "응답 중지"],
+      'button.stop, button[aria-label*="중지"], button[aria-label*="Stop" i]',
+    );
   }
   function getSendButton() {
-    return findButtonByLabel(["send", "보내기", "전송", "submit"]);
+    return findButton(
+      ["send", "보내기", "전송", "submit", "제출"],
+      'button.send-button, button[aria-label*="보내기"], button[aria-label*="Send" i], button[mattooltip*="보내기"]',
+    );
   }
   function isGenerating() {
     return !!getStopButton();
   }
 
-  async function waitUntil(pred, { timeout = 600000, interval = 500 } = {}) {
+  async function waitUntil(pred, { timeout = 600000, interval = 400 } = {}) {
     const start = Date.now();
     while (Date.now() - start < timeout) {
       if (!running) return false;
@@ -69,27 +93,39 @@
     return false;
   }
 
-  function insertText(editor, text) {
+  function setNativeValue(el, text) {
+    const proto =
+      el.tagName === "TEXTAREA"
+        ? window.HTMLTextAreaElement.prototype
+        : window.HTMLInputElement.prototype;
+    const setter = Object.getOwnPropertyDescriptor(proto, "value")?.set;
+    if (setter) setter.call(el, text);
+    else el.value = text;
+    el.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+
+  // 여러 방식을 순차 시도하고 실제 입력됐는지 검증
+  async function typeIntoEditor(editor, text) {
     editor.focus();
-    if (editor.tagName === "TEXTAREA" || editor.tagName === "INPUT") {
-      const proto =
-        editor.tagName === "TEXTAREA"
-          ? window.HTMLTextAreaElement.prototype
-          : window.HTMLInputElement.prototype;
-      const setter = Object.getOwnPropertyDescriptor(proto, "value")?.set;
-      if (setter) setter.call(editor, text);
-      else editor.value = text;
-      editor.dispatchEvent(new Event("input", { bubbles: true }));
-      return;
-    }
-    // contenteditable
-    let ok = false;
     try {
-      ok = document.execCommand("insertText", false, text);
-    } catch (_) {
-      ok = false;
+      editor.click();
+    } catch (_) {}
+    await sleep(60);
+
+    if (editor.tagName === "TEXTAREA" || editor.tagName === "INPUT") {
+      setNativeValue(editor, text);
+      if (editorText(editor).includes(text)) return "native-value";
     }
-    if (!ok) {
+
+    // 1) execCommand insertText (기존 내용 비우고)
+    try {
+      document.execCommand("selectAll", false, null);
+      document.execCommand("insertText", false, text);
+    } catch (_) {}
+    if (editorText(editor).includes(text)) return "execCommand";
+
+    // 2) beforeinput/input 이벤트
+    try {
       editor.dispatchEvent(
         new InputEvent("beforeinput", {
           inputType: "insertText",
@@ -98,61 +134,111 @@
           cancelable: true,
         }),
       );
-      editor.textContent = text;
       editor.dispatchEvent(
         new InputEvent("input", { inputType: "insertText", data: text, bubbles: true }),
       );
-    }
+    } catch (_) {}
+    if (editorText(editor).includes(text)) return "inputEvent";
+
+    // 3) 직접 DOM 삽입(Quill 대비: p > text)
+    try {
+      editor.innerHTML = "";
+      const p = document.createElement("p");
+      p.textContent = text;
+      editor.appendChild(p);
+      editor.dispatchEvent(new InputEvent("input", { inputType: "insertText", bubbles: true }));
+    } catch (_) {}
+    if (editorText(editor).includes(text)) return "dom-inject";
+
+    return null; // 실패
+  }
+
+  function pressEnter(el) {
+    ["keydown", "keypress", "keyup"].forEach((type) =>
+      el.dispatchEvent(
+        new KeyboardEvent(type, {
+          key: "Enter",
+          code: "Enter",
+          keyCode: 13,
+          which: 13,
+          bubbles: true,
+          cancelable: true,
+        }),
+      ),
+    );
   }
 
   async function sendMessageText(text) {
     const editor = getEditor();
     if (!editor) {
-      setStatus("입력창을 찾지 못했습니다");
+      log("❌ 입력창(에디터)을 찾지 못함");
+      setStatus("입력창 못 찾음");
       return false;
     }
-    insertText(editor, text);
+    log("에디터:", editor.tagName, editor.className || "");
+    const method = await typeIntoEditor(editor, text);
+    if (!method) {
+      log("❌ 입력 실패(모든 방식). 에디터 구조가 바뀐 듯합니다.");
+      setStatus("입력 실패");
+      return false;
+    }
+    log("✅ 입력 성공:", method);
     await sleep(400);
-    const btn = getSendButton();
+
+    // 전송 버튼 활성화 대기(최대 3초)
+    let btn = null;
+    for (let t = 0; t < 12; t++) {
+      btn = getSendButton();
+      const disabled =
+        btn && (btn.disabled || btn.getAttribute("aria-disabled") === "true");
+      if (btn && !disabled) break;
+      await sleep(250);
+    }
     if (btn && !btn.disabled && btn.getAttribute("aria-disabled") !== "true") {
+      log("전송 버튼 클릭:", btn.getAttribute("aria-label") || btn.className);
       btn.click();
       return true;
     }
-    // 폴백: Enter 키
-    editor.dispatchEvent(
-      new KeyboardEvent("keydown", {
-        key: "Enter",
-        code: "Enter",
-        keyCode: 13,
-        which: 13,
-        bubbles: true,
-      }),
-    );
+    log("전송 버튼 못 찾음 → Enter 폴백");
+    pressEnter(editor);
     return true;
   }
 
   async function run(count) {
     running = true;
     showBadge();
+    log(`시작: ${count}회`);
     for (let i = 0; i < count; i++) {
       if (!running) break;
       setStatus(`대기 중 ${i}/${count}`);
-      const idle = await waitUntil(() => !isGenerating());
+      // 유휴 대기(최대 20초). 완료 감지가 깨져도 무한 대기하지 않고 진행.
+      await waitUntil(() => !isGenerating(), { timeout: 20000 });
       if (!running) break;
-      if (!idle) {
-        setStatus("타임아웃 — 종료");
-        break;
-      }
-      await sleep(900);
+      await sleep(800);
       if (!running) break;
       setStatus(`전송 ${i + 1}/${count}`);
-      await sendMessageText(MESSAGE_TEXT);
-      await waitUntil(() => isGenerating(), { timeout: 9000, interval: 250 });
-      await waitUntil(() => !isGenerating());
+      const ok = await sendMessageText(MESSAGE_TEXT);
+      if (!ok) {
+        // 입력 자체가 안 되면 반복해도 소용없으니 중단
+        break;
+      }
+      const started = await waitUntil(() => isGenerating(), {
+        timeout: 12000,
+        interval: 250,
+      });
+      if (started) {
+        log("생성 시작 감지 → 종료까지 대기");
+        await waitUntil(() => !isGenerating());
+      } else {
+        log("생성 시작 미감지 → 25초 고정 대기(폭주 방지)");
+        setStatus("생성 감지 실패 · 25초 대기");
+        for (let s = 0; s < 50 && running; s++) await sleep(500);
+      }
     }
     const wasRunning = running;
     running = false;
     setStatus(wasRunning ? "완료 ✅" : "중지됨");
+    log(wasRunning ? "완료" : "중지");
     await sleep(2500);
     hideBadge();
   }
@@ -162,7 +248,6 @@
     setStatus("중지됨");
   }
 
-  // ── 화면 우하단 상태 배지 ───────────────────────────────
   function showBadge() {
     if (badge) return;
     badge = document.createElement("div");
@@ -218,4 +303,6 @@
     }
     return true;
   });
+
+  log("로드됨 v1.2");
 })();
