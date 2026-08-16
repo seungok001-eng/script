@@ -2,17 +2,15 @@
 // Gemini 자동 다음 단계 — content script (gemini.google.com, Gems 포함)
 //   응답이 끝날 때마다 입력창에 "다음 단계 진행해"를 넣고 전송, 지정 횟수 반복.
 //
-// v1.2 — 입력 실패 대응: 여러 입력 방식을 순차 시도+검증, 대기 무한루프 방지,
-//        콘솔 진단 로그([Gemini자동]) 강화.
+// v1.3 — 완료 감지를 '콘텐츠 안정화'로 변경(버튼 탐지에 의존하지 않음).
+//        응답 텍스트가 멈추면 ~1.5초 내 다음 입력 → 지연 문제 해결.
 // ─────────────────────────────────────────────────────────────
 (function () {
-  if (window.__geminiAutoNextLoaded) {
-    // 이전 버전이 로드돼 있어도 최신 로직으로 갱신되도록 플래그만 유지
-  }
   window.__geminiAutoNextLoaded = true;
 
   const MESSAGE_TEXT = "다음 단계 진행해";
   const TAG = "[Gemini자동]";
+  const STABLE_MS = 1500; // 이 시간 동안 텍스트 변화 없으면 '완료'
   let running = false;
   let badge = null;
   let badgeText = null;
@@ -41,7 +39,6 @@
       .join(" ")
       .toLowerCase();
 
-  // 입력창 후보: Quill(.ql-editor) → 일반 contenteditable/textarea
   function getEditor() {
     const ql = qa('div.ql-editor[contenteditable="true"]').filter(isVisible);
     if (ql.length) return ql[ql.length - 1];
@@ -64,7 +61,6 @@
       }) || null
     );
   }
-
   function getStopButton() {
     return findButton(
       ["stop", "중지", "중단", "생성 중지", "응답 중지"],
@@ -81,6 +77,15 @@
     return !!getStopButton();
   }
 
+  // 대화 본문 영역의 텍스트 길이(스트리밍 감지용)
+  function mainTextLen() {
+    const main =
+      document.querySelector(
+        'main, [role="main"], chat-window, .conversation-container, infinite-scroller',
+      ) || document.body;
+    return (main.innerText || "").length;
+  }
+
   async function waitUntil(pred, { timeout = 600000, interval = 400 } = {}) {
     const start = Date.now();
     while (Date.now() - start < timeout) {
@@ -91,6 +96,33 @@
       await sleep(interval);
     }
     return false;
+  }
+
+  // 전송 후: 생성이 시작되고(텍스트 증가/중지버튼) → 멈출 때까지 대기.
+  // 버튼 탐지가 안 돼도 '텍스트가 STABLE_MS 동안 안 늘면 완료'로 판단.
+  async function waitForResponseComplete() {
+    const t0 = Date.now();
+    let baseLen = mainTextLen();
+
+    // Phase 1: 생성 시작 대기(최대 12초) — 텍스트 증가 또는 중지 버튼
+    while (running && Date.now() - t0 < 12000) {
+      await sleep(300);
+      if (isGenerating() || mainTextLen() > baseLen + 2) break;
+    }
+
+    // Phase 2: 안정화 대기 — 변화가 STABLE_MS 동안 없으면 완료
+    let lastLen = mainTextLen();
+    let lastChange = Date.now();
+    while (running && Date.now() - t0 < 600000) {
+      await sleep(400);
+      const len = mainTextLen();
+      if (isGenerating() || len > lastLen + 2) {
+        lastChange = Date.now();
+      }
+      if (len > lastLen) lastLen = len;
+      if (!isGenerating() && Date.now() - lastChange > STABLE_MS) return true;
+    }
+    return true;
   }
 
   function setNativeValue(el, text) {
@@ -104,27 +136,21 @@
     el.dispatchEvent(new Event("input", { bubbles: true }));
   }
 
-  // 여러 방식을 순차 시도하고 실제 입력됐는지 검증
   async function typeIntoEditor(editor, text) {
     editor.focus();
     try {
       editor.click();
     } catch (_) {}
     await sleep(60);
-
     if (editor.tagName === "TEXTAREA" || editor.tagName === "INPUT") {
       setNativeValue(editor, text);
       if (editorText(editor).includes(text)) return "native-value";
     }
-
-    // 1) execCommand insertText (기존 내용 비우고)
     try {
       document.execCommand("selectAll", false, null);
       document.execCommand("insertText", false, text);
     } catch (_) {}
     if (editorText(editor).includes(text)) return "execCommand";
-
-    // 2) beforeinput/input 이벤트
     try {
       editor.dispatchEvent(
         new InputEvent("beforeinput", {
@@ -139,8 +165,6 @@
       );
     } catch (_) {}
     if (editorText(editor).includes(text)) return "inputEvent";
-
-    // 3) 직접 DOM 삽입(Quill 대비: p > text)
     try {
       editor.innerHTML = "";
       const p = document.createElement("p");
@@ -149,8 +173,7 @@
       editor.dispatchEvent(new InputEvent("input", { inputType: "insertText", bubbles: true }));
     } catch (_) {}
     if (editorText(editor).includes(text)) return "dom-inject";
-
-    return null; // 실패
+    return null;
   }
 
   function pressEnter(el) {
@@ -171,36 +194,33 @@
   async function sendMessageText(text) {
     const editor = getEditor();
     if (!editor) {
-      log("❌ 입력창(에디터)을 찾지 못함");
+      log("❌ 입력창을 찾지 못함");
       setStatus("입력창 못 찾음");
       return false;
     }
-    log("에디터:", editor.tagName, editor.className || "");
     const method = await typeIntoEditor(editor, text);
     if (!method) {
-      log("❌ 입력 실패(모든 방식). 에디터 구조가 바뀐 듯합니다.");
+      log("❌ 입력 실패(모든 방식)");
       setStatus("입력 실패");
       return false;
     }
     log("✅ 입력 성공:", method);
-    await sleep(400);
-
-    // 전송 버튼 활성화 대기(최대 3초)
+    await sleep(350);
     let btn = null;
     for (let t = 0; t < 12; t++) {
       btn = getSendButton();
       const disabled =
         btn && (btn.disabled || btn.getAttribute("aria-disabled") === "true");
       if (btn && !disabled) break;
-      await sleep(250);
+      await sleep(200);
     }
     if (btn && !btn.disabled && btn.getAttribute("aria-disabled") !== "true") {
-      log("전송 버튼 클릭:", btn.getAttribute("aria-label") || btn.className);
       btn.click();
-      return true;
+      log("전송(버튼)");
+    } else {
+      pressEnter(editor);
+      log("전송(Enter 폴백)");
     }
-    log("전송 버튼 못 찾음 → Enter 폴백");
-    pressEnter(editor);
     return true;
   }
 
@@ -210,30 +230,19 @@
     log(`시작: ${count}회`);
     for (let i = 0; i < count; i++) {
       if (!running) break;
-      setStatus(`대기 중 ${i}/${count}`);
-      // 유휴 대기(최대 20초). 완료 감지가 깨져도 무한 대기하지 않고 진행.
-      await waitUntil(() => !isGenerating(), { timeout: 20000 });
+      // 지금 생성 중이면(=이전 응답 진행 중) 먼저 끝날 때까지 대기
+      if (isGenerating()) {
+        setStatus(`이전 응답 대기 ${i}/${count}`);
+        await waitForResponseComplete();
+      }
       if (!running) break;
-      await sleep(800);
-      if (!running) break;
+      await sleep(500);
       setStatus(`전송 ${i + 1}/${count}`);
       const ok = await sendMessageText(MESSAGE_TEXT);
-      if (!ok) {
-        // 입력 자체가 안 되면 반복해도 소용없으니 중단
-        break;
-      }
-      const started = await waitUntil(() => isGenerating(), {
-        timeout: 12000,
-        interval: 250,
-      });
-      if (started) {
-        log("생성 시작 감지 → 종료까지 대기");
-        await waitUntil(() => !isGenerating());
-      } else {
-        log("생성 시작 미감지 → 25초 고정 대기(폭주 방지)");
-        setStatus("생성 감지 실패 · 25초 대기");
-        for (let s = 0; s < 50 && running; s++) await sleep(500);
-      }
+      if (!ok) break;
+      // 이번 응답이 끝날 때까지(콘텐츠 안정화) 대기 → 끝나면 즉시 다음 루프
+      setStatus(`응답 대기 ${i + 1}/${count}`);
+      await waitForResponseComplete();
     }
     const wasRunning = running;
     running = false;
@@ -304,5 +313,5 @@
     return true;
   });
 
-  log("로드됨 v1.2");
+  log("로드됨 v1.3");
 })();
