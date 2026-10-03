@@ -306,7 +306,7 @@
   "ant": "",
   "tip": "Part 1 사진 묘사 빈출어로 'A woman is holding onto a handrail.'처럼 나오며 railing과 바꿔 쓸 수 있다.",
   "q": {
-   "s": "To avoid falls, please hold on to the ------- while riding the escalator.",
+   "s": "As part of the accessibility upgrade, a sturdy ------- was added along the ramp at the main entrance.",
    "o": [
     "handrail",
     "handout",
@@ -314,7 +314,7 @@
     "handbook"
    ],
    "a": 0,
-   "k": "에스컬레이터를 탈 때 넘어지지 않도록 잡는 것은 '손잡이, 난간'이므로 handrail이 정답이다. handout(유인물), handbook(안내서), handshake(악수)는 잡고 탈 수 있는 것이 아니다."
+   "k": "정문 경사로를 따라 설치되는 것은 '난간'이므로 handrail이 정답이다. handout(유인물), handbook(안내서), handshake(악수)는 경사로에 설치할 수 있는 것이 아니다."
   }
  },
  {
@@ -630,7 +630,7 @@
   "ant": "danger",
   "tip": "명사 safety와 형용사 safe, 부사 safely를 구분하는 품사 문제가 자주 나오며 safety regulations처럼 복합명사로 쓰인다.",
   "q": {
-   "s": "For ------- reasons, the elevator will be out of service until the inspection is complete.",
+   "s": "The new guidelines are intended to improve workplace ------- at all of our factories.",
    "o": [
     "safe",
     "safely",
@@ -638,7 +638,7 @@
     "safety"
    ],
    "a": 3,
-   "k": "for safety reasons는 '안전상의 이유로'라는 고정 표현이므로 명사 safety가 정답이다. safe와 safer는 형용사로 '안전한 이유'라는 어색한 뜻이 되고, safely는 부사라 명사를 수식할 수 없다."
+   "k": "workplace와 함께 improve의 목적어가 되어 '작업장 안전'을 이루는 명사 자리이므로 safety가 정답이다. safe와 safer는 형용사, safely는 부사라 목적어 자리에 올 수 없다."
   }
  },
  {
@@ -670,7 +670,7 @@
   "ant": "",
   "tip": "지진·홍수·태풍 등을 포괄하는 말로 Part 7 보험 안내와 재난 대비 공지에서 자주 쓰인다.",
   "q": {
-   "s": "The company keeps backup copies of all data offsite in case of a ------- such as an earthquake.",
+   "s": "The company has an emergency plan to keep operating in the event of a ------- such as an earthquake.",
    "o": [
     "natural resource",
     "natural light",
@@ -678,7 +678,7 @@
     "natural ingredient"
    ],
    "a": 2,
-   "k": "지진 같은 상황에 대비해 데이터를 보관한다는 뜻이므로 natural disaster가 정답이다. natural resource(천연자원), natural light(자연광), natural ingredient(천연 재료)는 지진의 상위 개념이 아니다."
+   "k": "지진 같은 비상 상황에 대비한 계획이므로 '자연재해'를 뜻하는 natural disaster가 정답이다. natural resource(천연자원), natural light(자연광), natural ingredient(천연 재료)는 지진의 상위 개념이 아니다."
   }
  },
  {
@@ -1354,7 +1354,7 @@
   "ant": "",
   "tip": "environmentally friendly(Day 23), green과 같은 뜻으로 Part 7에서 서로 바꿔 표현된다.",
   "q": {
-   "s": "Customers can receive a discount by choosing ------- packaging made from recycled paper.",
+   "s": "Our new office building is fully -------, with rooftop solar panels and a rainwater collection system.",
    "o": [
     "family-run",
     "short-term",
@@ -1362,7 +1362,7 @@
     "last-minute"
    ],
    "a": 2,
-   "k": "재활용 종이로 만든 포장을 수식하므로 '친환경적인'이라는 eco-friendly가 정답이다. family-run(가족이 운영하는), short-term(단기의), last-minute(막바지의)은 packaging과 어울리지 않는다."
+   "k": "태양광 패널과 빗물 수집 시설을 갖춘 건물을 설명하므로 '친환경적인'이라는 eco-friendly가 정답이다. family-run(가족이 운영하는), short-term(단기의), last-minute(막바지의)은 건물의 특징을 나타내지 못한다."
   }
  },
  {
@@ -1396,8 +1396,7 @@
    }
   ],
   "para": [
-   "use again",
-   "recycle"
+   "use again"
   ],
   "ant": "",
   "tip": "형용사 reusable(Day 23)과 품사를 구분하며 reduce, reuse, recycle이 함께 나온다. 명사로도 쓰이는데 이때는 발음이 [riːjúːs]로 달라진다.",

@@ -399,7 +399,7 @@
   "ant": "",
   "tip": "'재료'뿐 아니라 training materials(교육 자료), promotional materials(홍보물)처럼 '자료'라는 뜻으로도 자주 쓰인다. 동사 materialize는 '(계획 등이) 실현되다'라는 뜻이다.",
   "q": {
-   "s": "All workshop participants will receive training ------- at the registration desk on Monday morning.",
+   "s": "New hires should review the training ------- that were e-mailed to them last week.",
    "o": [
     "matters",
     "measures",
@@ -407,7 +407,7 @@
     "materials"
    ],
    "a": 3,
-   "k": "training materials는 '교육 자료'라는 뜻의 복합명사로, 등록 데스크에서 받을 수 있는 것은 materials이다. matters(문제), measures(조치), motives(동기)는 의미가 맞지 않는다."
+   "k": "training materials는 '교육 자료'라는 뜻의 복합명사로, 신입 사원이 검토하도록 이메일로 받은 것은 materials이다. matters(문제), measures(조치), motives(동기)는 의미가 맞지 않는다."
   }
  },
  {
@@ -424,8 +424,8 @@
    5,
    7
   ],
-  "ex": "The restaurant uses only locally grown vegetables to guarantee the *quality* of its dishes.",
-  "exKo": "그 식당은 요리의 품질을 보장하기 위해 현지에서 재배한 채소만 사용한다.",
+  "ex": "Every item is inspected by hand to ensure the *quality* of our products before shipping.",
+  "exKo": "모든 제품은 출고 전에 품질을 보장하기 위해 일일이 직접 검사를 거친다.",
   "col": [
    {
     "e": "high-quality",
@@ -480,8 +480,8 @@
    5,
    7
   ],
-  "ex": "Our plumber was able to *repair* the leaking pipe under the kitchen sink in less than an hour.",
-  "exKo": "배관공은 한 시간도 안 되어 주방 싱크대 아래의 새는 배관을 수리했다.",
+  "ex": "The city will *repair* the damaged section of Elm Street before the parade next month.",
+  "exKo": "시는 다음 달 퍼레이드 전에 Elm 가의 파손된 구간을 보수할 것이다.",
   "col": [
    {
     "e": "be under repair",
@@ -649,8 +649,7 @@
   "der": [],
   "para": [
    "factory floor",
-   "production floor",
-   "workshop"
+   "production floor"
   ],
   "ant": "",
   "tip": "토익에서는 상점 매장보다 공장의 '작업 현장'이라는 뜻으로 주로 쓰이며 on the shop floor처럼 전치사 on과 함께 쓴다. Part 7에서 factory floor, production area로 바꿔 표현된다.",
@@ -721,7 +720,7 @@
   "ant": "whole",
   "tip": "'부품'이라는 뜻 외에 take part in(~에 참가하다), play a part in(~에서 역할을 하다), in part(부분적으로) 같은 숙어로 Part 5에 출제된다. 부사 partly, partially와 함께 알아 둔다.",
   "q": {
-   "s": "Ms. Ramos played a key ------- in negotiating the new contract with the supplier.",
+   "s": "Ms. Ramos played a key ------- in organizing this year's charity fun run.",
    "o": [
     "place",
     "point",
@@ -790,8 +789,8 @@
    5,
    7
   ],
-  "ex": "A software *engineer* from the IT department will install the new accounting program tomorrow.",
-  "exKo": "IT 부서의 소프트웨어 엔지니어가 내일 새 회계 프로그램을 설치할 것이다.",
+  "ex": "Mr. Novak works as a software *engineer* at a start-up that develops mobile games.",
+  "exKo": "Novak 씨는 모바일 게임을 개발하는 신생 기업에서 소프트웨어 엔지니어로 일한다.",
   "col": [
    {
     "e": "software engineer",
@@ -894,7 +893,7 @@
   "pos": "adj",
   "m": [
    "기계의, 기계적인",
-   "기계적인, 습관적인"
+   "(행동이) 기계적인, 무의식적인"
   ],
   "tier": 2,
   "parts": [
@@ -902,8 +901,8 @@
    5,
    7
   ],
-  "ex": "The flight was delayed for two hours because of a minor *mechanical* problem.",
-  "exKo": "경미한 기계 결함 때문에 항공편이 두 시간 지연되었다.",
+  "ex": "Ms. Patel studied *mechanical* engineering before joining the robotics firm.",
+  "exKo": "Patel 씨는 그 로봇 회사에 입사하기 전에 기계 공학을 공부했다.",
   "col": [
    {
     "e": "mechanical problem",
@@ -942,7 +941,7 @@
   "ant": "",
   "tip": "Part 4 공항·교통 안내 방송에서 지연 사유로 mechanical problem(기계 결함)이 자주 나온다. 사람명사 mechanic(정비공)과 형용사 mechanical의 품사 구별에 주의한다.",
   "q": {
-   "s": "The train to Boston has been canceled due to a ------- failure in one of the engines.",
+   "s": "Production at the plant was halted for three hours because of a ------- problem with one of the presses.",
    "o": [
     "mechanic",
     "mechanical",
@@ -950,7 +949,7 @@
     "mechanically"
    ],
    "a": 1,
-   "k": "관사 a와 명사 failure 사이에서 명사를 수식하는 형용사 mechanical이 정답이다. mechanic은 '정비공'이라는 사람명사, mechanize는 동사, mechanically는 부사다."
+   "k": "관사 a와 명사 problem 사이에서 명사를 수식하는 형용사 자리이므로 '기계적인 결함'을 뜻하는 mechanical이 정답이다. mechanic은 '정비공'이라는 사람명사, mechanize는 동사, mechanically는 부사다."
   }
  },
  {
@@ -1054,7 +1053,7 @@
   ],
   "para": [
    "manufacturing",
-   "commercial"
+   "factory"
   ],
   "ant": "",
   "tip": "industrial(산업의)과 industrious(근면한)는 뜻이 전혀 다른 혼동어로 Part 5 어휘 문제에 함께 나온다. industrial park(산업 단지), industrial zone(공업 지역) 같은 복합어로 자주 쓰인다.",
@@ -1571,8 +1570,7 @@
   "der": [],
   "para": [
    "withdraw",
-   "call back",
-   "remember"
+   "call back"
   ],
   "ant": "",
   "tip": "명사로도 쓰여 issue a recall(리콜을 실시하다), product recall(제품 리콜) 형태로 나온다. '기억해 내다'라는 뜻일 때는 recall -ing(~한 것을 기억하다) 구조를 쓴다.",
@@ -1686,7 +1684,7 @@
   "ant": "",
   "tip": "동사 automate, 형용사 automated/automatic과 구별하는 품사 문제가 나온다. automated는 '자동화된 (시스템)', automatic은 '자동으로 작동하는'이라는 뜻으로 쓰인다.",
   "q": {
-   "s": "The factory's investment in ------- has reduced production errors by nearly 40 percent.",
+   "s": "The factory's investment in ------- has cut its production errors in half.",
    "o": [
     "automate",
     "automated",
@@ -1781,8 +1779,7 @@
    }
   ],
   "para": [
-   "moving belt",
-   "carousel"
+   "moving belt"
   ],
   "ant": "",
   "tip": "Part 1 사진 문제에서 'Boxes are being placed on a conveyor belt.'처럼 공장·공항 수하물 장면 묘사로 나온다. 동사 convey는 '운반하다, (생각을) 전달하다'라는 뜻이다.",
@@ -1910,7 +1907,7 @@
   "ant": "uncertified",
   "tip": "certified public accountant(공인 회계사), certified mail(배달 증명 우편)처럼 명사 앞에서 수식하는 형태로 자주 나온다. 명사 certificate(증명서)와 certification(인증)의 구별도 출제된다.",
   "q": {
-   "s": "Only ------- technicians are permitted to service the elevators in this building.",
+   "s": "Ms. Hale became a ------- public accountant after passing the state examination.",
    "o": [
     "certificate",
     "certified",
@@ -1918,7 +1915,7 @@
     "certify"
    ],
    "a": 1,
-   "k": "명사 technicians를 수식하는 형용사 자리이므로 '자격증을 소지한'이라는 뜻의 certified가 정답이다. certificate, certification은 명사, certify는 동사다."
+   "k": "관사 a 뒤에서 public accountant를 수식하는 형용사 자리이며 certified public accountant는 '공인 회계사'라는 뜻이므로 certified가 정답이다. certificate, certification은 명사, certify는 동사다."
   }
  },
  {
@@ -1962,7 +1959,6 @@
    }
   ],
   "para": [
-   "regularize",
    "make uniform",
    "unify"
   ],
@@ -2081,7 +2077,7 @@
   "ant": "",
   "tip": "이미 있는 것을 조금씩 고쳐 더 좋게 만든다는 뜻으로 Part 7에서 improve, polish로 바꿔 표현된다. 형용사 refined는 '세련된'이라는 뜻으로 고급 식당·호텔 광고에 나온다.",
   "q": {
-   "s": "Based on comments from the test group, the engineers will further ------- the software before its official launch.",
+   "s": "The chef spent several months trying to ------- the recipe before adding the dish to the menu.",
    "o": [
     "refine",
     "refund",
@@ -2089,7 +2085,7 @@
     "refrain"
    ],
    "a": 0,
-   "k": "시험 사용자들의 의견을 바탕으로 정식 출시 전에 소프트웨어를 '더 다듬는' 것이므로 refine이 정답이다. refund(환불하다)는 의미가 맞지 않고, reside(거주하다), refrain(삼가다)은 자동사라 목적어를 취하지 못한다."
+   "k": "요리를 메뉴에 올리기 전에 몇 달 동안 조리법을 '다듬은' 것이므로 refine이 정답이다. refund(환불하다)는 의미가 맞지 않고, reside(거주하다), refrain(삼가다)은 자동사라 목적어를 취하지 못한다."
   }
  },
  {
@@ -2211,8 +2207,8 @@
    5,
    7
   ],
-  "ex": "Cleaning staff must wear gloves when handling strong *chemicals* such as bleach.",
-  "exKo": "청소 직원은 표백제 같은 독한 화학 물질을 다룰 때 장갑을 착용해야 한다.",
+  "ex": "The plant now uses far fewer harmful *chemicals* than it did ten years ago.",
+  "exKo": "그 공장은 이제 10년 전보다 유해 화학 물질을 훨씬 적게 사용한다.",
   "col": [
    {
     "e": "hazardous chemicals",
@@ -2251,7 +2247,7 @@
   "ant": "",
   "tip": "명사(화학 물질)와 형용사(화학의)로 모두 쓰여 chemical plant(화학 공장)처럼 명사를 수식하기도 한다. 사람명사 chemist(화학자, 영국에서는 약사)와 학문명사 chemistry의 구별이 출제된다.",
   "q": {
-   "s": "Hazardous ------- must be stored in locked cabinets away from heat and direct sunlight.",
+   "s": "The company was fined for dumping ------- into the river behind its factory.",
    "o": [
     "chemistry",
     "chemicals",
@@ -2259,7 +2255,7 @@
     "chemically"
    ],
    "a": 1,
-   "k": "형용사 Hazardous의 수식을 받으며 잠긴 보관함에 보관해야 하는 대상은 '화학 물질'이므로 chemicals가 정답이다. chemistry(화학)는 학문, chemists(화학자)는 사람이라 의미가 맞지 않고, chemically는 부사다."
+   "k": "동명사 dumping의 목적어로 강에 버려진 대상은 '화학 물질'이므로 chemicals가 정답이다. chemistry(화학)는 학문, chemists(화학자)는 사람이라 의미가 맞지 않고, chemically는 부사다."
   }
  }
 ]

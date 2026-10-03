@@ -128,8 +128,8 @@
    5,
    7
   ],
-  "ex": "Mr. Silva *applied for* a government grant to expand his bakery.",
-  "exKo": "Silva 씨는 제과점을 확장하기 위해 정부 보조금을 신청했다.",
+  "ex": "Mr. Silva *applied for* a transfer to the company's Lisbon office.",
+  "exKo": "Silva 씨는 회사의 리스본 지사로 전근을 신청했다.",
   "col": [
    {
     "e": "apply for a job",
@@ -1973,7 +1973,7 @@
   "ant": "",
   "tip": "'rule out the possibility of(~의 가능성을 배제하다)'가 빈출이며, exclude, eliminate로 패러프레이즈된다.",
   "q": {
-   "s": "Investigators have ruled ------- faulty wiring as the cause of the warehouse fire.",
+   "s": "Technicians have ruled ------- a software error as the reason for the system crash.",
    "o": [
     "off",
     "over",
@@ -1981,7 +1981,7 @@
     "away"
    ],
    "a": 2,
-   "k": "'rule out(배제하다)'이므로 out이 정답. 조사관들이 창고 화재의 원인에서 배선 결함을 배제했다는 뜻이며, off, over, away는 rule과 결합해 '배제하다'라는 뜻을 만들지 않는다."
+   "k": "'rule out(배제하다)'이므로 out이 정답. 기술자들이 시스템 고장의 원인에서 소프트웨어 오류를 배제했다는 뜻이며, off, over, away는 rule과 결합해 '배제하다'라는 뜻을 만들지 않는다."
   }
  }
 ]

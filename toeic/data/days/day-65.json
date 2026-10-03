@@ -597,7 +597,7 @@
    "online personality"
   ],
   "ant": "",
-  "tip": "사람명사 influencer와 influence(영향), influential(영향력 있는)을 구별하는 품사 문제가 나온다. 소유격 관계대명사 whose의 선행사가 사람이면 influencer가 정답이다.",
+  "tip": "사람명사 influencer와 influence(영향), influential(영향력 있는)을 구별하는 품사 문제가 나온다. 관사 a 뒤에서 '영향력을 가진 사람'을 가리키는 가산명사 자리면 influencer가 정답이다.",
   "q": {
    "s": "The company partnered with a fitness ------- whose videos attract millions of viewers.",
    "o": [
@@ -1346,9 +1346,9 @@
     "m": "개인에게 맞추다"
    },
    {
-    "w": "personally",
-    "pos": "adv",
-    "m": "직접, 개인적으로"
+    "w": "personalization",
+    "pos": "n",
+    "m": "개인 맞춤화"
    }
   ],
   "para": [
