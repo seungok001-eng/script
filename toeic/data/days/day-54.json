@@ -1228,8 +1228,7 @@
    }
   ],
   "para": [
-   "observer",
-   "bystander"
+   "observer"
   ],
   "ant": "",
   "tip": "명사(증인, 목격자)와 동사(목격하다, 증인으로 서명하다)로 모두 쓰이며, '(지역·업계가 변화를) 겪다'라는 비유적 동사 의미도 Part 7에 나온다.",
@@ -1313,8 +1312,8 @@
   "parts": [
    7
   ],
-  "ex": "All employees must sign a *confidentiality* agreement on their first day.",
-  "exKo": "모든 직원은 첫 출근일에 비밀 유지 계약서에 서명해야 한다.",
+  "ex": "Staff who handle salary information must maintain strict *confidentiality* at all times.",
+  "exKo": "급여 정보를 다루는 직원은 항상 엄격하게 비밀을 유지해야 한다.",
   "col": [
    {
     "e": "confidentiality agreement",
@@ -1417,8 +1416,8 @@
   "parts": [
    7
   ],
-  "ex": "The city council passed an *ordinance* limiting construction noise after 8 P.M.",
-  "exKo": "시의회는 오후 8시 이후의 공사 소음을 제한하는 조례를 통과시켰다.",
+  "ex": "A new city *ordinance* bans the use of leaf blowers in residential areas before 8 A.M.",
+  "exKo": "새 시 조례는 주거 지역에서 오전 8시 이전에 낙엽 송풍기를 사용하는 것을 금지한다.",
   "col": [
    {
     "e": "city ordinance",
@@ -1573,8 +1572,8 @@
   "parts": [
    7
   ],
-  "ex": "The city council voted to *repeal* the tax on small businesses.",
-  "exKo": "시의회는 소규모 업체에 부과하던 세금을 폐지하기로 의결했다.",
+  "ex": "After strong protests from local farmers, the government agreed to *repeal* the new fuel tax.",
+  "exKo": "지역 농민들의 거센 항의 끝에 정부는 새 유류세를 폐지하기로 했다.",
   "col": [
    {
     "e": "repeal a law",
@@ -2013,7 +2012,7 @@
    },
    {
     "e": "compulsory retirement",
-    "k": "정년 퇴직"
+    "k": "의무 정년퇴직"
    }
   ],
   "der": [

@@ -424,8 +424,8 @@
    5,
    7
   ],
-  "ex": "Every item is inspected by hand to ensure the *quality* of our products before shipping.",
-  "exKo": "모든 제품은 출고 전에 품질을 보장하기 위해 일일이 직접 검사를 거친다.",
+  "ex": "Every item is inspected by hand before shipping to make sure its *quality* meets our standards.",
+  "exKo": "모든 제품은 품질이 기준을 충족하는지 확인하기 위해 출고 전에 일일이 직접 검사를 거친다.",
   "col": [
    {
     "e": "high-quality",
@@ -720,7 +720,7 @@
   "ant": "whole",
   "tip": "'부품'이라는 뜻 외에 take part in(~에 참가하다), play a part in(~에서 역할을 하다), in part(부분적으로) 같은 숙어로 Part 5에 출제된다. 부사 partly, partially와 함께 알아 둔다.",
   "q": {
-   "s": "Ms. Ramos played a key ------- in organizing this year's charity fun run.",
+   "s": "Ms. Ramos played a key ------- in organizing the company's first international trade fair.",
    "o": [
     "place",
     "point",
@@ -2247,7 +2247,7 @@
   "ant": "",
   "tip": "명사(화학 물질)와 형용사(화학의)로 모두 쓰여 chemical plant(화학 공장)처럼 명사를 수식하기도 한다. 사람명사 chemist(화학자, 영국에서는 약사)와 학문명사 chemistry의 구별이 출제된다.",
   "q": {
-   "s": "The company was fined for dumping ------- into the river behind its factory.",
+   "s": "Investigators found that the factory had been dumping ------- into the nearby river.",
    "o": [
     "chemistry",
     "chemicals",
@@ -2255,7 +2255,7 @@
     "chemically"
    ],
    "a": 1,
-   "k": "동명사 dumping의 목적어로 강에 버려진 대상은 '화학 물질'이므로 chemicals가 정답이다. chemistry(화학)는 학문, chemists(화학자)는 사람이라 의미가 맞지 않고, chemically는 부사다."
+   "k": "dumping의 목적어로 강에 버려진 대상은 '화학 물질'이므로 chemicals가 정답이다. chemistry(화학)는 학문, chemists(화학자)는 사람이라 의미가 맞지 않고, chemically는 부사다."
   }
  }
 ]

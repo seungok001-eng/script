@@ -283,14 +283,14 @@
   "ant": "",
   "tip": "목적어가 대명사면 figure it out처럼 동사와 부사 사이에 넣는다. Part 3에서는 '문제를 파악하다'를 determine, identify로 바꿔 말하는 경우가 많다.",
   "q": {
-   "s": "Can you help me figure ------- how to use the new expense reporting system?",
+   "s": "Can you help me figure ------- why the printer keeps jamming?",
    "o": [
     "up",
     "off",
     "out",
     "in"
    ],
-   "k": "figure와 결합해 '알아내다'라는 뜻을 만드는 out이 정답. figure in(계산에 넣다)을 비롯해 나머지 보기는 how to를 목적어로 받아 '알아내다'라는 뜻을 만들지 못한다.",
+   "k": "figure와 결합해 '알아내다'라는 뜻을 만드는 out이 정답. figure in(계산에 넣다)을 비롯해 나머지 보기는 why절을 목적어로 받아 '알아내다'라는 뜻을 만들지 못한다.",
    "a": 2
   }
  },
@@ -356,8 +356,8 @@
   "exKo": "그 회사는 가까운 장래에 부산에 두 번째 매장을 열 계획이다.",
   "col": [
    {
-    "e": "in the near future",
-    "k": "가까운 장래에"
+    "e": "announce ~ in the near future",
+    "k": "가까운 장래에 ~을 발표하다"
    },
    {
     "e": "in the foreseeable future",
@@ -441,8 +441,8 @@
    5,
    7
   ],
-  "ex": "The construction crew finished the bridge two weeks *ahead of* schedule.",
-  "exKo": "건설팀은 예정보다 2주 앞당겨 다리 공사를 마쳤다.",
+  "ex": "The quarterly report was submitted three days *ahead of* the deadline.",
+  "exKo": "분기 보고서는 마감일보다 사흘 앞서 제출되었다.",
   "col": [
    {
     "e": "ahead of schedule",
@@ -710,8 +710,8 @@
    5,
    7
   ],
-  "ex": "Survey participants will receive a $20 gift card *in exchange for* their time.",
-  "exKo": "설문 참가자들은 시간을 내준 대가로 20달러짜리 상품권을 받는다.",
+  "ex": "Volunteers who help at the festival receive free meals *in exchange for* their time.",
+  "exKo": "축제를 돕는 자원봉사자들은 시간을 내준 대가로 무료 식사를 받는다.",
   "col": [
    {
     "e": "in exchange for + 명사",
@@ -1448,8 +1448,8 @@
     "k": "~해야 한다"
    },
    {
-    "e": "require A to B",
-    "k": "A에게 B하도록 요구하다"
+    "e": "require A to do",
+    "k": "A에게 ~하도록 요구하다"
    }
   ],
   "der": [
@@ -1549,8 +1549,8 @@
    5,
    7
   ],
-  "ex": "The new delivery vans *are equipped with* GPS tracking devices.",
-  "exKo": "새 배송 차량에는 GPS 위치 추적 장치가 장착되어 있다.",
+  "ex": "Every vehicle in our rental fleet *is equipped with* a GPS navigation system.",
+  "exKo": "당사 렌터카의 모든 차량에는 GPS 내비게이션 시스템이 장착되어 있다.",
   "col": [
    {
     "e": "be equipped with + 장비",
@@ -1890,7 +1890,7 @@
    3,
    4
   ],
-  "ex": "Feel free to *stop by* the front desk if you need extra towels.",
+  "ex": "Feel free to *stop by* the front desk if you need more towels.",
   "exKo": "수건이 더 필요하면 언제든 프런트에 들르기 바란다.",
   "col": [
    {

@@ -47,7 +47,7 @@
    "workforce"
   ],
   "ant": "",
-  "tip": "staff는 직원 전체를 가리키는 집합명사라 a staff, staffs로 쓰지 않고, 한 명은 a staff member라고 한다. 동사로 '직원을 배치하다(be staffed by)'라는 뜻도 있다.",
+  "tip": "staff는 직원 전체를 가리키는 집합명사로 보통 복수 취급하며(The staff are ~), 직원 한 명은 a staff member라고 한다. 동사로 '직원을 배치하다(be staffed by)'라는 뜻도 있다.",
   "q": {
    "s": "All ------- are asked to park in the rear lot while the front entrance is being repaved.",
    "o": [
@@ -209,7 +209,7 @@
   "ant": "incoming",
   "tip": "직책 앞에서는 '퇴임하는'(반의어 incoming), 성격을 말할 때는 '외향적인', mail·calls 앞에서는 '발송되는, 발신의'라는 뜻이다. 문맥에 따라 뜻을 고르는 Part 7 동의어 문제로 나온다.",
   "q": {
-   "s": "The board held a dinner to thank the ------- chairman, who will step down at the end of the month.",
+   "s": "The board held a dinner to thank the ------- chairman for his eight years of service.",
    "o": [
     "outdated",
     "outlying",
@@ -217,7 +217,7 @@
     "outgoing"
    ],
    "a": 3,
-   "k": "이달 말 물러날 회장이므로 '퇴임하는'이라는 뜻의 outgoing이 정답이다. outdated(구식의), outlying(외딴), outbound(밖으로 향하는)는 사람을 수식하기에 의미가 맞지 않는다."
+   "k": "8년간의 재임에 감사하는 만찬을 연 대상이므로 '퇴임하는'이라는 뜻의 outgoing이 정답이다. outdated(구식의), outlying(외딴), outbound(밖으로 향하는)는 사람을 수식하기에 의미가 맞지 않는다."
   }
  },
  {
@@ -425,7 +425,7 @@
   "ant": "",
   "tip": "vice president of sales/marketing처럼 담당 분야를 of로 밝히며 줄여서 VP라고 쓴다. Part 7 인물 소개에서 직책을 묻는 문제로 나온다.",
   "q": {
-   "s": "As ------- of operations, Mr. Lam oversees all of the company's manufacturing plants.",
+   "s": "As ------- of finance, Mr. Lam approves all major spending decisions.",
    "o": [
     "vice president",
     "assembly line",
@@ -564,8 +564,8 @@
    5,
    7
   ],
-  "ex": "The committee *awarded* first prize to a young architect from Lisbon.",
-  "exKo": "위원회는 리스본 출신의 젊은 건축가에게 1등 상을 수여했다.",
+  "ex": "The foundation *awarded* scholarships to twenty students from low-income families.",
+  "exKo": "그 재단은 저소득 가정 학생 20명에게 장학금을 수여했다.",
   "col": [
    {
     "e": "award a contract",
@@ -599,7 +599,7 @@
   "ant": "",
   "tip": "award A B / award B to A(A에게 B를 수여하다) 구조이며, 입찰에서 '계약을 따내게 해 주다(award a contract)'라는 뜻으로 자주 나온다. reward는 보답으로 사람에게 주는 것이라 구별한다.",
   "q": {
-   "s": "The contract was ------- to Linwood Construction because it submitted the lowest bid.",
+   "s": "The contract was ------- to Linwood Construction because of its strong safety record.",
    "o": [
     "won",
     "earned",
@@ -641,7 +641,7 @@
   "ant": "",
   "tip": "회사의 '직원 수'를 뜻하며 reduce/increase headcount 형태로 인력 감축·증원 기사에 나온다. Part 7에서 the number of employees로 바꿔 표현된다.",
   "q": {
-   "s": "Despite strong sales, the firm has kept its ------- unchanged in order to control labor costs.",
+   "s": "Despite strong sales, the firm has kept its ------- flat this year to control labor costs.",
    "o": [
     "headline",
     "headquarters",
@@ -912,8 +912,8 @@
    5,
    7
   ],
-  "ex": "After thirty years at the bank, Mr. Olsen is looking forward to his *retirement*.",
-  "exKo": "은행에서 30년을 일한 Olsen 씨는 은퇴를 고대하고 있다.",
+  "ex": "After thirty years at the bank, Mr. Olsen plans to spend his *retirement* traveling in South America.",
+  "exKo": "은행에서 30년을 일한 Olsen 씨는 은퇴 후 남미를 여행하며 지낼 계획이다.",
   "col": [
    {
     "e": "retirement party",
@@ -972,8 +972,8 @@
    5,
    7
   ],
-  "ex": "Mr. Kemp submitted his *resignation* to accept a position at a rival firm.",
-  "exKo": "Kemp 씨는 경쟁사의 직책을 받아들이기 위해 사직서를 제출했다.",
+  "ex": "Mr. Kemp handed in his *resignation* so that he could return to graduate school.",
+  "exKo": "Kemp 씨는 대학원에 복학하기 위해 사직서를 제출했다.",
   "col": [
    {
     "e": "submit one's resignation",
@@ -1116,7 +1116,7 @@
   "ant": "",
   "tip": "take responsibility for(~에 대한 책임을 지다), job responsibilities(직무)가 빈출이다. '업무'의 뜻으로는 가산명사 복수형으로 자주 쓰인다.",
   "q": {
-   "s": "Mr. Grady will take on additional ------- after his promotion to team leader.",
+   "s": "After his promotion to team leader, Mr. Grady will have several new -------, including training new staff.",
    "o": [
     "responsible",
     "responsibly",
@@ -1124,7 +1124,7 @@
     "responsive"
    ],
    "a": 2,
-   "k": "타동사 take on의 목적어이자 형용사 additional의 수식을 받는 명사 자리이므로 responsibilities가 정답이다."
+   "k": "형용사 several new의 수식을 받는 복수명사 자리이므로 responsibilities(업무, 책무)가 정답이다. responsible, responsive는 형용사, responsibly는 부사다."
   }
  },
  {
@@ -1288,7 +1288,7 @@
   "ant": "discourage",
   "tip": "encourage A to do 구조이며 공지문의 수동태 be encouraged to do(~하는 것이 권장된다)가 매우 자주 나온다. encouraging(고무적인)과 encouraged의 구별도 출제된다.",
   "q": {
-   "s": "Employees are ------- to use public transportation while the parking garage is closed for repairs.",
+   "s": "Team members are ------- to submit suggestions for improving the office layout by Friday.",
    "o": [
     "encouraged",
     "encouragement",
@@ -1296,7 +1296,7 @@
     "encourages"
    ],
    "a": 0,
-   "k": "주차장이 수리로 폐쇄된 동안 직원들이 대중교통 이용을 '권장받는' 것이므로 수동태 be encouraged to do의 encouraged가 정답이다. encouraging은 능동이라 목적어가 필요하며 의미도 맞지 않는다."
+   "k": "팀원들이 사무실 배치 개선안을 내도록 '권장받는' 것이므로 수동태 be encouraged to do의 encouraged가 정답이다. encouragement는 명사, encourages는 능동태 동사라 be동사 뒤에 올 수 없고, encouraging은 '고무적인'이라 의미가 맞지 않는다."
   }
  },
  {
@@ -1379,7 +1379,7 @@
   "ant": "",
   "tip": "집합명사 staff와 달리 staff member는 한 사람을 가리키는 가산명사라 a staff member, staff members로 쓴다. 듣기에서 employee로 바꿔 표현된다.",
   "q": {
-   "s": "Any ------- who wishes to work from home must first get approval from a supervisor.",
+   "s": "Any ------- who wishes to work from home must first speak with a supervisor.",
    "o": [
     "staff room",
     "staff meeting",
@@ -1807,8 +1807,8 @@
    5,
    7
   ],
-  "ex": "The new parking policy has drawn *criticism* from employees who drive to work.",
-  "exKo": "새 주차 정책은 차로 출근하는 직원들의 비판을 받았다.",
+  "ex": "The proposed changes to the bonus system drew sharp *criticism* from the sales staff.",
+  "exKo": "보너스 제도 변경안은 영업 직원들로부터 거센 비판을 받았다.",
   "col": [
    {
     "e": "constructive criticism",
@@ -1927,7 +1927,7 @@
   "pos": "n",
   "m": [
    "능력, 역량",
-   "적성"
+   "능숙함"
   ],
   "tier": 3,
   "parts": [
