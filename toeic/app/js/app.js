@@ -29,13 +29,55 @@
   function load() {
     try {
       const raw = localStorage.getItem(STORE_KEY);
-      if (raw) {
-        const s = JSON.parse(raw);
-        const d = DEFAULT_STATE();
-        return Object.assign(d, s, { settings: Object.assign(d.settings, s.settings || {}) });
-      }
+      if (raw) return sanitize(JSON.parse(raw));
     } catch (e) { /* 저장소를 못 쓰면 새로 시작 */ }
     return DEFAULT_STATE();
+  }
+  // 숫자·날짜·설정을 정해진 형태로만 받아들인다 (손상된 저장값이나 조작된 백업 대비)
+  function sanitize(src) {
+    const d = DEFAULT_STATE();
+    const num = (v, def, lo, hi) => { const n = Number(v); return Number.isFinite(n) ? Math.min(hi, Math.max(lo, Math.round(n))) : def; };
+    if (src && src.profile && typeof src.profile === "object") {
+      const p = src.profile;
+      d.profile = {
+        target: C.SCORE_OPTIONS.includes(+p.target) ? +p.target : 800,
+        examDate: C.parseYmd(p.examDate) != null ? p.examDate : null,
+        daily: num(p.daily, 30, 5, 200),
+        start: num(p.start, C.dayNum(), 0, 1e6),
+      };
+    }
+    const ss = (src && src.settings) || {};
+    for (const k of Object.keys(d.settings)) {
+      if (typeof d.settings[k] === "boolean" && typeof ss[k] === "boolean") d.settings[k] = ss[k];
+    }
+    if (["system", "light", "dark"].includes(ss.theme)) d.settings.theme = ss.theme;
+    if ([0.8, 1, 1.2].includes(+ss.rate)) d.settings.rate = +ss.rate;
+    if (/^\d{2}:\d{2}$/.test(ss.remindAt || "")) d.settings.remindAt = ss.remindAt;
+    const ws = (src && src.words) || {};
+    for (const id of Object.keys(ws)) {
+      if (!BY_ID.has(id) || !ws[id] || typeof ws[id] !== "object") continue;
+      const w = ws[id];
+      const o = { b: num(w.b, 0, 0, C.INTERVALS.length - 1), due: num(w.due, 0, 0, 1e6), n: num(w.n, 0, 0, 1e6), ok: num(w.ok, 0, 0, 1e6), ng: num(w.ng, 0, 0, 1e6), last: num(w.last, 0, 0, 1e6) };
+      if (w.first != null) o.first = num(w.first, 0, 0, 1e6);
+      if (w.star) o.star = true;
+      if (w.wrong) o.wrong = true;
+      d.words[id] = o;
+    }
+    const lg = (src && src.log) || {};
+    for (const k of Object.keys(lg)) {
+      if (!/^\d+$/.test(k) || !lg[k]) continue;
+      const l = lg[k];
+      d.log[k] = { new: num(l.new, 0, 0, 1e5), rev: num(l.rev, 0, 0, 1e5), q: num(l.q, 0, 0, 1e5), ok: num(l.ok, 0, 0, 1e5), sec: num(l.sec, 0, 0, 1e6) };
+      if (l.done) d.log[k].done = true;
+    }
+    const ts = (src && src.tests) || {};
+    for (const k of Object.keys(ts)) {
+      const dn = +k;
+      if (!(dn >= 1 && dn <= 30) || !ts[k]) continue;
+      d.tests[dn] = { best: num(ts[k].best, 0, 0, 100), last: num(ts[k].last, 0, 0, 100), at: num(ts[k].at, 0, 0, 1e6) };
+    }
+    d.premium = !!(src && src.premium);
+    return d;
   }
   let saveTimer = 0;
   function save(now) {
@@ -70,6 +112,8 @@
   function pool() { return C.poolFor(WORDS, target()); }
   function inPool(w) { return C.tiersFor(target()).includes(w.tier); }
   function dayWords(d, all) { return WORDS.filter((w) => w.d === d && (all || inPool(w))); }
+  // 복습할 단어: 범위와 상관없이 이미 배운 단어 중 복습일이 된 것 (오늘 처음 본 단어는 제외), 오래된 순
+  function dueWords(t) { return C.todayPlan(WORDS, S.words, 0, t).due; }
   function canAccessDay(d) { return !CONFIG.premium.enabled || S.premium || d <= CONFIG.premium.freeDays; }
 
   // ═════════════ 유틸 ═════════════
@@ -88,6 +132,10 @@
     const d = C.dayToDate(n);
     return `${d.getMonth() + 1}월 ${d.getDate()}일`;
   }
+  function dueLabel(days) { return days <= 1 ? "내일 복습" : `${days}일 뒤`; }
+  // 버튼·입력칸에 포커스가 있을 때 Space/Enter 는 그 컨트롤의 기본 동작에 맡긴다
+  function onControl(e) { return (e.key === " " || e.key === "Enter") && e.target && e.target.closest && !!e.target.closest("button,input,a,select,textarea,[role=link]"); }
+  function capPlugins() { return window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform() ? window.Capacitor.Plugins : null; }
   function vibrate(ms) { try { if (navigator.vibrate) navigator.vibrate(ms); } catch (e) { /* 무시 */ } }
 
   // ═════════════ 아이콘 (Lucide 스타일, ISC) ═════════════
@@ -182,6 +230,10 @@
     let pendingFin = null;
     let koVoice = null;
     let enVoice = null;
+    // 네이티브 앱: @capacitor-community/text-to-speech (기기 TTS 엔진)
+    const NT = () => { const P = capPlugins(); return P && P.TextToSpeech; };
+    let nativeKo = false;
+    if (NT()) NT().getSupportedLanguages().then((r) => { nativeKo = (r.languages || []).some((l) => /^ko/i.test(l)); }).catch(() => {});
     function pickVoices() {
       if (!("speechSynthesis" in window)) return;
       const vs = speechSynthesis.getVoices();
@@ -196,10 +248,16 @@
       token += 1;
       if (pendingFin) { const f = pendingFin; pendingFin = null; f(false); }
       try { el.pause(); } catch (e) { /* 무시 */ }
-      if ("speechSynthesis" in window) speechSynthesis.cancel();
+      if (NT()) NT().stop().catch(() => {});
+      else if ("speechSynthesis" in window) speechSynthesis.cancel();
       document.querySelectorAll(".play.playing").forEach((b) => b.classList.remove("playing"));
     }
     function tts(text, lang, my) {
+      if (NT()) {
+        if (my !== token) return Promise.resolve(false);
+        return NT().speak({ text, lang: lang || "en-US", rate: lang === "ko-KR" ? 1.0 : 0.95 * S.settings.rate, volume: 1, category: "playback" })
+          .then(() => my === token, () => false);
+      }
       return new Promise((res) => {
         if (!("speechSynthesis" in window) || my !== token) return res(false);
         const u = new SpeechSynthesisUtterance(text);
@@ -245,8 +303,8 @@
     }
     function word(w, btn) { return play(w.au ? `audio/w/${w.id}.mp3` : null, w.w, { btn }); }
     function example(w, btn) { return play(w.exAu ? `audio/s/${w.id}.mp3` : null, C.plainEx(w.ex), { btn }); }
-    function ko(text) { const my = token; return koVoice ? tts(text, "ko-KR", my) : Promise.resolve(false); }
-    function hasKo() { return !!koVoice; }
+    function ko(text) { const my = token; return hasKo() ? tts(text, "ko-KR", my) : Promise.resolve(false); }
+    function hasKo() { return NT() ? nativeKo : !!koVoice; }
     function current() { return token; }
     return { play, word, example, ko, stop, hasKo, current };
   })();
@@ -299,6 +357,11 @@
   // ═════════════ 라우터 ═════════════
   let session = null; // 진행 중인 학습
   let seqId = 0; // 목록 연속 재생 취소용
+  let studyPushed = false; // 학습 화면을 기록(history)에 쌓았는지 — 나갈 때 history.back()으로 돌아간다
+  function enterStudy() {
+    if (location.hash === "#/study") render();
+    else { studyPushed = true; location.hash = "#/study"; }
+  }
   let keyHandler = null;
   let ui = { dayFilter: "all", dayAll: false, p1g: "all", reviewTab: "due", searchQ: "" };
   function go(hash) {
@@ -313,7 +376,13 @@
     (qs || "").split("&").filter(Boolean).forEach((kv) => { const [k, v] = kv.split("="); q[k] = decodeURIComponent(v || ""); });
     return { name: parts[0] || "home", arg: parts[1], q };
   }
-  window.addEventListener("hashchange", () => { seqId += 1; Sound.stop(); render(); });
+  window.addEventListener("hashchange", () => {
+    seqId += 1;
+    Sound.stop();
+    // 뒤로가기 등으로 학습 화면을 벗어나면 진행 중이던 세션을 끝낸다 (기록은 이미 저장됨)
+    if (route().name !== "study") { session = null; studyPushed = false; }
+    render();
+  });
 
   function render() {
     closeModal();
@@ -378,6 +447,7 @@
     if (act === "open-word") return go(`#/word/${id}`);
   });
   document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && e.target && e.target.matches && e.target.matches('[data-act="open-word"]')) return go(`#/word/${e.target.dataset.id}`);
     if (document.getElementById("modal")) {
       if (e.key === "Escape") closeModal();
       return;
@@ -472,7 +542,8 @@
   function vHome() {
     const t = today();
     const P = pool();
-    const plan = C.todayPlan(P, S.words, S.profile.daily, t);
+    const plan = C.todayPlan(P.filter((w) => canAccessDay(w.d)), S.words, S.profile.daily, t);
+    plan.due = dueWords(t);
     const sum = C.summarize(P, S.words);
     const pct = P.length ? Math.round((sum.mastered / P.length) * 100) : 0;
     const streak = C.streak(S.log, t);
@@ -659,7 +730,7 @@
   }
   function wordItem(w) {
     const s = st(w.id);
-    return `<div class="witem ${S.settings.hideMeaning ? "hide-m" : ""}" data-act="open-word" data-id="${w.id}">
+    return `<div class="witem ${S.settings.hideMeaning ? "hide-m" : ""}" data-act="open-word" data-id="${w.id}" role="link" tabindex="0" aria-label="${esc(w.w)} 상세 보기">
       <span class="dot ${C.status(s)}" title="${{ new: "안 봄", learning: "학습 중", mastered: "암기 완료" }[C.status(s)]}"></span>
       <div class="wbody"><div class="row" style="gap:8px"><span class="ww en">${esc(w.w)}</span><span class="badge tier-${w.tier}">${C.TIER_NAMES[w.tier]}</span></div>
       <div class="wm"><span class="muted">${POS_SHORT[w.pos] || ""}</span> ${esc(C.meaningText(w, 3))}</div></div>
@@ -709,6 +780,7 @@
   function vWord(r) {
     const w = BY_ID.get(r.arg);
     if (!w) return go("#/days");
+    if (!canAccessDay(w.d)) return go("#/premium");
     const siblings = dayWords(w.d, true);
     const i = siblings.indexOf(w);
     const prev = siblings[i - 1];
@@ -728,10 +800,9 @@
   // ═════════════ 학습 세션 공통 ═════════════
   function exitStudy() {
     Sound.stop();
-    const s = session;
     session = null;
-    if (s && s.from) go(s.from);
-    else back("#/home");
+    if (studyPushed) { studyPushed = false; history.back(); }
+    else location.replace("#/home");
   }
   function askExit() {
     if (!session || session.done) return exitStudy();
@@ -751,10 +822,10 @@
   function startCard(words, opt) {
     if (!words.length) return toast("학습할 단어가 없어요");
     session = { kind: "card", title: opt.title, src: opt.src, queue: words.slice(), i: 0, flipped: false, round: 1, again: [], res: { 0: 0, 1: 0, 2: 0 }, seenIds: new Set(), from: location.hash, startedAt: Date.now() };
-    go("#/study");
+    enterStudy();
   }
   function vStudy() {
-    if (!session) return go("#/home");
+    if (!session) return location.replace("#/home");
     if (session.done) return vResult();
     if (session.kind === "card") return vCard();
     if (session.kind === "quiz") return vQuiz();
@@ -778,7 +849,7 @@
           ${w.tip ? `<div class="small" style="margin-top:10px;color:var(--text-2)"><b style="color:var(--warn)">출제 포인트</b> ${esc(w.tip)}</div>` : ""}</div>` : `<div class="f-hint">뜻을 떠올린 뒤 카드를 눌러 확인하세요</div>`}
       </div></div>
       <div class="study-foot">${s.flipped
-        ? `<div class="grade3"><button class="btn g-no" data-g="0">모르겠어요<small>다시 보기</small></button><button class="btn g-mid" data-g="1">헷갈려요<small>내일 복습</small></button><button class="btn g-yes" data-g="2">알아요<small>${C.INTERVALS[Math.min(((st0 && st0.b) || 0) + 1, 6)]}일 뒤</small></button></div>`
+        ? `<div class="grade3"><button class="btn g-no" data-g="0">모르겠어요<small>다시 보기</small></button><button class="btn g-mid" data-g="1">헷갈려요<small>${dueLabel(C.INTERVALS[Math.max(1, ((st0 && st0.b) || 0) - 1)])}</small></button><button class="btn g-yes" data-g="2">알아요<small>${s.seenIds.has(w.id) ? "내일 복습" : dueLabel(C.INTERVALS[Math.min(((st0 && st0.b) || 0) + 1, 6)])}</small></button></div>`
         : `<button class="btn block" data-flip>뜻 확인하기</button>`}
         <div class="kbd-hint"><kbd>Space</kbd> 뒤집기 · <kbd>1</kbd> 모름 <kbd>2</kbd> 헷갈림 <kbd>3</kbd> 알아요 · <kbd>P</kbd> 발음 <kbd>E</kbd> 예문 · 카드를 좌우로 밀어도 돼요</div></div></div>`;
     bindExit();
@@ -789,13 +860,19 @@
       vCard();
       if (S.settings.autoEx) setTimeout(() => Sound.example(w), 50);
     };
-    flash.addEventListener("click", (e) => { if (!e.target.closest("button")) flip(); });
+    flash.addEventListener("click", (e) => { if (flash.dataset.swiped || s.animating) return; if (!e.target.closest("button")) flip(); });
     const fb = $app.querySelector("[data-flip]");
     if (fb) fb.addEventListener("click", flip);
-    $app.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => gradeCard(+b.dataset.g)));
-    bindSwipe(flash, (dir) => { if (!s.flipped) { s.flipped = true; } gradeCard(dir > 0 ? 2 : 0, dir); });
+    $app.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => { if (!s.animating) gradeCard(+b.dataset.g); }));
+    bindSwipe(flash, () => { s.animating = true; }, (dir) => {
+      s.animating = false;
+      if (session !== s || route().name !== "study") return;
+      s.flipped = true;
+      gradeCard(dir > 0 ? 2 : 0);
+    });
     if (!s.flipped && S.settings.autoWord) Sound.word(w);
     keyHandler = (e) => {
+      if (onControl(e) || s.animating) return;
       if (e.key === " " || e.key === "Enter") { e.preventDefault(); if (!s.flipped) flip(); }
       else if (s.flipped && ["1", "2", "3"].includes(e.key)) gradeCard(+e.key - 1);
       else if (e.key === "ArrowLeft" && s.flipped) gradeCard(0);
@@ -805,7 +882,7 @@
       else if (e.key === "Escape") askExit();
     };
   }
-  function bindSwipe(el, cb) {
+  function bindSwipe(el, onStart, cb) {
     let x0 = null, y0 = 0, dx = 0, id = null;
     el.addEventListener("pointerdown", (e) => { if (e.target.closest("button")) return; x0 = e.clientX; y0 = e.clientY; dx = 0; id = e.pointerId; });
     el.addEventListener("pointermove", (e) => {
@@ -821,11 +898,14 @@
       if (x0 == null) return;
       x0 = null;
       el.style.transition = "";
+      if (Math.abs(dx) > 8) el.dataset.swiped = "1"; // 끌기 끝의 click 이 카드를 뒤집지 않게
       if (Math.abs(dx) > 100) {
         el.classList.add(dx > 0 ? "swipe-r" : "swipe-l");
         const d = dx;
+        onStart();
         setTimeout(() => cb(d > 0 ? 1 : -1), 180);
       } else {
+        setTimeout(() => { delete el.dataset.swiped; }, 0);
         el.style.transform = "";
         el.querySelectorAll(".swipe-label").forEach((l) => { l.style.opacity = 0; });
       }
@@ -840,7 +920,12 @@
     const t = today();
     introduceIfNew(w);
     const before = st(w.id);
-    const ns = C.grade(before, g, t);
+    let ns = C.grade(before, g, t);
+    // 같은 세션에서 다시 나온 단어는 승급하지 않는다 (모름→알아요가 한 번에 맞힌 것보다 높아지지 않게)
+    if (g === 2 && s.seenIds.has(w.id) && before) {
+      const b = Math.max(1, before.b);
+      ns = Object.assign({}, before, { b, due: t + C.INTERVALS[b], n: before.n + 1, last: t });
+    }
     if (before && before.star) ns.star = true;
     // 오답노트: '알아요'로 다시 맞히면 빼 준다 (오늘 처음 틀린 경우는 남긴다)
     if (g === 2 && before && before.wrong && s.round > 1) ns.wrong = before.wrong;
@@ -886,13 +971,15 @@
       if (type === "cloze") ws = ws.filter((w) => C.starred(w.ex).length === 1);
       qs = ws.slice(0, 30).map((w) => C.makeQuestion(type, w, all));
     }
+    if (!qs.length) return toast(type === "cloze" ? "예문 빈칸 문제를 만들 수 있는 단어가 없어요" : "문제를 만들 단어가 없어요");
     session = { kind: "quiz", type, title: opt.title, qs, i: 0, answered: null, results: [], day: opt.day, wrongNote: opt.wrongNote, from: location.hash, hint: 0 };
-    go("#/study");
+    enterStudy();
   }
   function startConfQuiz(sets) {
+    if (!sets.length) return toast("문제가 없어요");
     const qs = C.shuffle(sets).map((c) => ({ type: "conf", conf: c, prompt: c.q.s, options: c.q.o, answer: c.q.a, explain: c.q.k }));
     session = { kind: "conf", type: "conf", title: "혼동 어휘 퀴즈", qs, i: 0, answered: null, results: [], from: location.hash };
-    go("#/study");
+    enterStudy();
   }
   function vQuiz() {
     const s = session;
@@ -967,6 +1054,7 @@
     if (!ans && q.type === "meaning" && S.settings.autoWord) Sound.word(w);
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
+      if (onControl(e)) return;
       if (s.answered && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); return nextQuiz(); }
       if (!s.answered && q.type !== "spell" && /^[1-4]$/.test(e.key)) pick(+e.key - 1);
       if ((e.key === "p" || e.key === "P") && w && q.type !== "spell") Sound.word(w);
@@ -1014,7 +1102,7 @@
   function startListen(words, opt) {
     if (!words.length) return toast("들을 단어가 없어요");
     session = { kind: "listen", title: opt.title, list: words.slice(), i: 0, playing: false, phase: "", from: location.hash, showMean: true, withEx: true, readKo: S.settings.readKo };
-    go("#/study");
+    enterStudy();
   }
   function vListen() {
     const s = session;
@@ -1042,6 +1130,7 @@
       vListen();
     }));
     keyHandler = (e) => {
+      if (onControl(e)) return;
       if (e.key === " ") { e.preventDefault(); s.playing ? pauseListen() : playListen(); }
       if (e.key === "ArrowRight" && s.i + 1 < s.list.length) { s.i += 1; restartListen(); }
       if (e.key === "ArrowLeft") { s.i = Math.max(0, s.i - 1); restartListen(); }
@@ -1051,12 +1140,14 @@
   function restartListen() {
     const s = session;
     const was = s.playing;
+    s.run = (s.run || 0) + 1;
     Sound.stop();
     s.playing = false;
     vListen();
     if (was) playListen();
   }
   function pauseListen() {
+    session.run = (session.run || 0) + 1;
     Sound.stop();
     session.playing = false;
     vListen();
@@ -1064,28 +1155,32 @@
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
   async function playListen() {
     const s = session;
+    const run = (s.run = (s.run || 0) + 1);
     s.playing = true;
     vListen();
-    while (session === s && s.playing) {
+    // 다음/이전/일시정지를 누르면 run 이 바뀌어 이전 반복이 즉시 멈춘다
+    const alive = () => session === s && s.playing && s.run === run;
+    while (alive()) {
       const w = s.list[s.i];
       await Sound.word(w);
-      const tk = Sound.current();
-      if (!s.playing || session !== s) break;
+      if (!alive()) break;
       await wait(500);
-      if (Sound.current() !== tk || !s.playing) break;
+      if (!alive()) break;
       await Sound.word(w);
-      if (!s.playing || session !== s) break;
+      if (!alive()) break;
       await wait(400);
+      if (!alive()) break;
       if (s.readKo && Sound.hasKo()) await Sound.ko(w.m.slice(0, 2).join(", "));
       else await wait(1200);
-      if (!s.playing || session !== s) break;
+      if (!alive()) break;
       if (s.withEx) {
         await wait(400);
+        if (!alive()) break;
         await Sound.example(w);
-        if (!s.playing || session !== s) break;
+        if (!alive()) break;
       }
       await wait(1100);
-      if (!s.playing || session !== s) break;
+      if (!alive()) break;
       if (s.i + 1 >= s.list.length) {
         s.playing = false;
         markDone();
@@ -1151,19 +1246,17 @@
     $app.innerHTML = `<div class="study"><div class="study-top"><button class="icon-btn back" data-home aria-label="닫기">${ico("x")}</button><span class="spacer"></span></div>
       ${hero}${actions}
       ${list ? `<div class="section"><div class="section-h"><h2>${s.kind === "card" ? "학습한 단어" : "틀린 문제"}</h2></div><div class="wlist">${list}</div></div>` : ""}</div>`;
-    $app.querySelectorAll("[data-home]").forEach((b) => b.addEventListener("click", () => { const from = s.from; session = null; go(from && !from.includes("study") ? from : "#/home"); }));
+    $app.querySelectorAll("[data-home]").forEach((b) => b.addEventListener("click", exitStudy));
     const q = $app.querySelector("[data-quiz]");
-    if (q) q.addEventListener("click", () => { const from = s.from; startQuiz(s._words, "mix", { title: "확인 퀴즈" }); session.from = from; });
+    if (q) q.addEventListener("click", () => startQuiz(s._words, "mix", { title: "확인 퀴즈" }));
     const c = $app.querySelector("[data-card]");
-    if (c) c.addEventListener("click", () => { const from = s.from; startCard(s._words, { title: "틀린 단어 복습" }); session.from = from; });
+    if (c) c.addEventListener("click", () => startCard(s._words, { title: "틀린 단어 복습" }));
     const rt = $app.querySelector("[data-retry]");
     if (rt) rt.addEventListener("click", () => {
-      const from = s.from;
       if (s.kind === "conf") startConfQuiz(s.qs.map((x) => x.conf));
       else startQuiz(s.qs.map((x) => x.word), s.type, { title: s.title, day: s.day, wrongNote: s.wrongNote });
-      session.from = from;
     });
-    keyHandler = (e) => { if (e.key === "Escape" || e.key === "Enter") { const b = $app.querySelector("[data-home]"); if (b) b.click(); } };
+    keyHandler = (e) => { if (onControl(e)) return; if (e.key === "Escape" || e.key === "Enter") exitStudy(); };
   }
 
   // ═════════════ 복습 허브 ═════════════
@@ -1171,7 +1264,7 @@
     if (r.q.tab) ui.reviewTab = r.q.tab;
     const t = today();
     const P = pool();
-    const due = WORDS.filter((w) => C.isDue(st(w.id), t));
+    const due = dueWords(t);
     const wrong = WORDS.filter((w) => st(w.id) && st(w.id).wrong);
     const star = WORDS.filter((w) => st(w.id) && st(w.id).star);
     const learned = P.filter((w) => st(w.id) && st(w.id).n);
@@ -1189,7 +1282,7 @@
     shell("review", body);
     $app.querySelectorAll("[data-tab]").forEach((b) => b.addEventListener("click", () => { ui.reviewTab = b.dataset.tab; history.replaceState(null, "", "#/review"); vReview({ q: {} }); }));
     $app.querySelectorAll("[data-start]").forEach((b) => b.addEventListener("click", () => {
-      const ws = tab === "due" ? cur.sort((a, b2) => st(a.id).due - st(b2.id).due).slice(0, 100) : cur.slice(0, 60);
+      const ws = tab === "due" ? cur.slice(0, 100) : cur.slice(0, 60);
       const title = { due: "복습", wrong: "오답노트", star: "중요 단어" }[tab];
       if (b.dataset.start === "card") startCard(ws, { title });
       else startQuiz(ws, "mix", { title, wrongNote: tab === "wrong" });
@@ -1391,11 +1484,24 @@
     if (t === "system") document.documentElement.removeAttribute("data-theme");
     else document.documentElement.setAttribute("data-theme", t);
   }
-  function exportData() {
-    const blob = new Blob([JSON.stringify({ app: "vocafit-toeic", exportedAt: new Date().toISOString(), state: S })], { type: "application/json" });
+  async function exportData() {
+    const json = JSON.stringify({ app: "vocafit-toeic", exportedAt: new Date().toISOString(), state: S });
+    const name = `vocafit-toeic-backup-${C.ymd(today())}.json`;
+    const P = capPlugins();
+    if (P && P.Filesystem && P.Share) {
+      try {
+        const r = await P.Filesystem.writeFile({ path: name, data: json, directory: "CACHE", encoding: "utf8" });
+        await P.Share.share({ title: "보카핏 토익 백업", text: "학습 기록 백업 파일", url: r.uri, dialogTitle: "백업 파일 저장·보내기" });
+        toast("백업 파일을 만들었어요");
+      } catch (e) {
+        if (!/cancel/i.test(String(e && e.message))) toast("백업 파일을 만들지 못했어요");
+      }
+      return;
+    }
+    const blob = new Blob([json], { type: "application/json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = `vocafit-toeic-backup-${C.ymd(today())}.json`;
+    a.download = name;
     document.body.appendChild(a);
     a.click();
     setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
@@ -1409,7 +1515,9 @@
         const j = JSON.parse(rd.result);
         if (j.app !== "vocafit-toeic" || !j.state || !j.state.words) throw new Error("bad");
         if (!(await confirmBox("백업을 불러올까요?", "지금 기기의 학습 기록을 백업 파일 내용으로 바꿔요.", "불러오기"))) return;
-        S = Object.assign(DEFAULT_STATE(), j.state, { settings: Object.assign(DEFAULT_STATE().settings, j.state.settings || {}) });
+        const keepPremium = S.premium; // 구매 여부는 백업 파일로 바꿀 수 없다
+        S = sanitize(j.state);
+        S.premium = keepPremium;
         save(true);
         applyTheme();
         toast("백업을 불러왔어요");
@@ -1440,7 +1548,18 @@
       <button class="btn ghost block" style="margin-top:10px" data-restore>구매 복원</button>`;
     shell("settings", body);
     $app.querySelector("[data-buy]").addEventListener("click", purchasePremium);
-    $app.querySelector("[data-restore]").addEventListener("click", purchasePremium);
+    $app.querySelector("[data-restore]").addEventListener("click", restorePremium);
+  }
+  async function restorePremium() {
+    try {
+      if (window.VocafitIAP && window.VocafitIAP.restore) {
+        const ok = await window.VocafitIAP.restore();
+        S.premium = !!ok;
+        save(true);
+        toast(ok ? "구매 내역을 복원했어요" : "복원할 구매 내역이 없어요");
+        if (ok) go("#/days");
+      } else toast("스토어 앱에서 복원할 수 있어요");
+    } catch (e) { toast("구매 내역을 확인하지 못했어요"); }
   }
   // 인앱결제 연결 지점: 네이티브 앱에서 window.VocafitIAP.purchase() 가 있으면 사용
   async function purchasePremium() {
@@ -1458,12 +1577,24 @@
     const mq = window.matchMedia("(prefers-color-scheme: dark)");
     if (mq.addEventListener) mq.addEventListener("change", () => { if (S.settings.theme === "system") render(); });
   }
-  if ("serviceWorker" in navigator && location.protocol === "https:") {
+  if ("serviceWorker" in navigator && location.protocol === "https:" && !window.Capacitor) {
     window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
   }
   // 학습 시간 기록 (화면이 보일 때만, 1분 단위)
   setInterval(() => { if (!document.hidden && S.profile) { logToday().sec += 60; save(); } }, 60000);
+  // 안드로이드 하드웨어 뒤로가기 (@capacitor/app)
+  (function () {
+    const P = capPlugins();
+    if (!P || !P.App) return;
+    P.App.addListener("backButton", ({ canGoBack }) => {
+      if (document.getElementById("modal")) return closeModal();
+      if (session && !session.done) return askExit();
+      if (session && session.done) return exitStudy();
+      if (route().name === "home" || !canGoBack) return P.App.minimizeApp ? P.App.minimizeApp() : P.App.exitApp();
+      history.back();
+    });
+  })();
   // 개발·테스트용 훅
-  window.__vocafit = { get state() { return S; }, Core: C, render };
+  window.__vocafit = { get state() { return S; }, Core: C, render, sanitize };
   render();
 })();

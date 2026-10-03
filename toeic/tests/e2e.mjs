@@ -1,0 +1,74 @@
+const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
+const base = process.env.BASE_URL || "http://localhost:8765/index.html";
+const out = (process.env.SHOT_DIR || "/tmp/") + "vocafit-";
+const errors = [], fails = [];
+const ok = (c, m) => { if (!c) fails.push(m); };
+const b = await chromium.launch();
+const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+const p = await ctx.newPage();
+p.on("pageerror", (e) => errors.push("pageerror " + e.message));
+p.on("console", (m) => { if (m.type() === "error") errors.push("console " + m.text()); });
+await p.goto(base);
+await p.click("[data-next]"); await p.click('[data-score="700"]'); await p.click("[data-next]"); await p.click("[data-next]"); await p.click("[data-next]");
+await p.waitForTimeout(300);
+ok(p.url().endsWith("#/home"), "onboarding → home");
+// 1) 카드 3장 학습 후 새로고침해도 기록 유지
+await p.click('.hero [data-go="new"]');
+for (let i = 0; i < 3; i++) { await p.click("[data-flip]"); await p.click('[data-g="2"]'); }
+const seen1 = await p.evaluate(() => Object.keys(window.__vocafit.state.words).length);
+await p.waitForTimeout(400);
+await p.reload(); await p.waitForTimeout(400);
+const seen2 = await p.evaluate(() => Object.keys(window.__vocafit.state.words).length);
+ok(seen1 === 3 && seen2 === 3, `persist after reload ${seen1}/${seen2}`);
+ok(p.url().endsWith("#/home"), "reload on #/study → home: " + p.url());
+// 2) 듣기 모드 → 뒤로가기 → 세션 종료
+await p.goto(base + "#/day/1"); await p.waitForTimeout(200);
+await p.click('[data-mode="listen"]'); await p.click("[data-toggle]"); await p.waitForTimeout(300);
+await p.goBack(); await p.waitForTimeout(3500);
+ok(p.url().endsWith("#/day/1"), "back from listen → day1: " + p.url());
+ok(await p.$(".tabbar"), "listen did not overwrite page");
+// 3) 퀴즈 나가기 후 뒤로가기 함정 없음
+await p.click('[data-mode="meaning"]'); await p.waitForTimeout(200);
+await p.click("[data-exit]"); await p.click('[data-r="1"]'); await p.waitForTimeout(300);
+ok(p.url().endsWith("#/day/1"), "exit quiz → day1: " + p.url());
+await p.goBack(); await p.waitForTimeout(300);
+ok(!p.url().includes("study"), "back after exit not study: " + p.url());
+// 4) 정답 직후 뒤로가기 → 자동 넘김이 다른 화면을 덮지 않음
+await p.goto(base + "#/day/2"); await p.waitForTimeout(200);
+await p.click('[data-mode="meaning"]'); await p.waitForTimeout(200);
+const ans = await p.evaluate(() => { const q = document.querySelectorAll("[data-pick]"); return q.length; });
+await p.click('[data-pick="0"]'); await p.goBack(); await p.waitForTimeout(1300);
+ok(await p.$(".tabbar"), "quiz timer did not overwrite page");
+// 5) 설정 화면 레이아웃 (가로 스크롤 없음)
+for (const r of ["#/settings", "#/review", "#/stats", "#/home", "#/days", "#/part1", "#/conf", "#/search"]) {
+  await p.goto(base + r); await p.waitForTimeout(250);
+  const w = await p.evaluate(() => document.documentElement.scrollWidth);
+  ok(w <= 390, `no h-scroll ${r}: ${w}`);
+}
+await p.goto(base + "#/settings"); await p.waitForTimeout(250); await p.screenshot({ path: out + "settings.png", fullPage: true });
+await p.goto(base + "#/review"); await p.waitForTimeout(250); await p.screenshot({ path: out + "review.png", fullPage: true });
+// 6) 조작된 저장값 정리
+const st = await p.evaluate(() => window.__vocafit.sanitize({ profile: { target: "<img src=x onerror=alert(1)>", daily: "9999", examDate: "x" }, words: { "01-01": { b: 99, n: "3" }, "zz": {} }, tests: { "5": { best: "<b>" } }, settings: { theme: "<x>", rate: 5, autoWord: "yes" }, premium: true }));
+ok(st.profile.target === 800 && st.profile.daily === 200 && st.words["01-01"].b === 6 && st.words["01-01"].n === 3 && !st.words.zz && st.tests[5].best === 0 && st.settings.theme === "system" && st.settings.rate === 1 && st.settings.autoWord === true, "sanitize " + JSON.stringify(st));
+await b.close();
+// 7) 데스크톱: 마우스 드래그 스와이프가 카드를 뒤집지 않고 한 번만 채점 / Enter 키 버튼
+const b2 = await chromium.launch();
+const p2 = await (await b2.newContext({ viewport: { width: 1280, height: 860 } })).newPage();
+p2.on("pageerror", (e) => errors.push("d pageerror " + e.message));
+await p2.goto(base);
+await p2.click("[data-next]"); await p2.click("[data-next]"); await p2.click("[data-next]"); await p2.click("[data-next]");
+await p2.click('.hero [data-go="new"]'); await p2.waitForTimeout(200);
+const box = await (await p2.$("#flash")).boundingBox();
+await p2.mouse.move(box.x + box.width / 2, box.y + 100); await p2.mouse.down();
+await p2.mouse.move(box.x + box.width / 2 + 200, box.y + 100, { steps: 8 }); await p2.mouse.up();
+await p2.waitForTimeout(500);
+const after = await p2.evaluate(() => ({ n: Object.keys(window.__vocafit.state.words).length, cnt: document.querySelector(".cnt").textContent }));
+ok(after.n === 1 && after.cnt.startsWith("2"), "swipe graded once " + JSON.stringify(after));
+await p2.keyboard.press("Space"); await p2.waitForTimeout(150);
+await p2.focus('[data-g="0"]'); await p2.keyboard.press("Enter"); await p2.waitForTimeout(200);
+const c3 = await p2.evaluate(() => document.querySelector(".cnt").textContent);
+ok(c3.startsWith("3"), "enter on focused grade button: " + c3);
+await p2.goto(base + "#/settings"); await p2.waitForTimeout(250); await p2.screenshot({ path: out + "d-settings.png" });
+await b2.close();
+console.log("FAILS:", fails.length ? "\n - " + fails.join("\n - ") : "none");
+console.log("ERRORS:", errors.length ? errors.join("\n") : "none");

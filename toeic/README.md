@@ -53,7 +53,8 @@ python3 toeic/scripts/validate_day.py            # 1) 검증
 python3 toeic/scripts/build_ipa.py               # 2) (표제어가 바뀌었으면) 발음기호
 venv/bin/python toeic/scripts/build_audio.py     # 3) 바뀐 문장만 음성 다시 생성
 node toeic/scripts/build_data.mjs                # 4) app/js/data.js 다시 만들기
-npm test                                         # 5) 로직·데이터 테스트
+npm test                                         # 5) 로직·데이터 테스트 (저장소 루트)
+BASE_URL=http://localhost:8080/index.html node toeic/tests/e2e.mjs   # 6) 화면 회귀 테스트 (Playwright)
 ```
 
 ### 음성
@@ -65,16 +66,27 @@ npm test                                         # 5) 로직·데이터 테스�
 - 준비: `python3 -m venv venv && venv/bin/pip install kokoro-onnx soundfile`, 모델·목소리는 npm 패키지 `expo-kokoro`(`build/kokoro-quantized.onnx`, `build/voices/*.bin`)를 풀어 `KOKORO_DIR`로 지정.
 - 문장을 고치면 `audio-manifest.json`과 비교해 **바뀐 문장만** 다시 만듭니다. 음성 파일이 없거나 옛 문장이면 앱은 기기 음성(TTS)으로 대신 읽습니다.
 
-## 스토어 출시 (Capacitor)
+## 스토어 출시 (Capacitor 8)
+
+`android/`, `ios/` 네이티브 프로젝트와 아이콘·스플래시는 이미 만들어져 있습니다.
 
 ```bash
 cd toeic
 npm install
-npx cap add android && npx cap add ios      # 최초 1회 (android/, ios/ 폴더 생성)
-npx cap sync                                # app/ 변경 사항 반영
-npx cap open android                        # Android Studio → Build > Generate Signed Bundle (AAB)
-npx cap open ios                            # Xcode(맥 필요) → Archive → App Store Connect 업로드
+npx cap sync                                # app/ 변경 사항을 android/ios 로 복사 (웹 파일을 고칠 때마다)
+npx cap open android                        # Android Studio(JDK 21) → Build > Generate Signed Bundle (AAB)
+npx cap open ios                            # Xcode 16+(맥) → Signing 팀 선택 → Product > Archive → 업로드
+npm run assets                              # (아이콘을 바꿨을 때) assets/*.png → 네이티브 아이콘·스플래시 재생성
 ```
+
+포함된 네이티브 플러그인
+
+| 플러그인 | 용도 |
+|---|---|
+| `@capacitor/app` | 안드로이드 뒤로가기(학습 중이면 '그만할까요?', 홈이면 앱 최소화) |
+| `@capacitor/local-notifications` | 매일 학습 알림 (설정 화면에서 켜기·시간 지정) |
+| `@capacitor/filesystem` + `@capacitor/share` | 학습 기록 백업 파일 저장·공유 |
+| `@capacitor-community/text-to-speech` | 기기 TTS — 듣기 모드의 '한국어 뜻 읽어 주기', 음성 파일이 없을 때 대체 |
 
 체크리스트
 - 앱 ID `com.vocafit.toeic`, 이름 `보카핏 토익` — `capacitor.config.json`, `app/js/app.js`의 `BRAND`, `manifest.webmanifest`에서 바꿀 수 있습니다.

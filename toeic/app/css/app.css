@@ -109,6 +109,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; border: 0; background: none; padding: 0; }
 a { color: inherit; text-decoration: none; }
 svg { flex-shrink: 0; }
+.ico { width: 20px; height: 20px; }
+.result-hero .ico { width: 44px; height: 44px; color: var(--ok); }
 .en { font-feature-settings: "ss01" 0; letter-spacing: -0.01em; }
 :focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 8px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -542,3 +544,5 @@ mark { background: none; color: var(--brand); font-weight: 800; }
   .quiz-q .qw { font-size: 28px; }
   .grade3 .btn { height: 56px; font-size: 14px; }
 }
+.switch input:focus-visible + span { outline: 2px solid var(--brand); outline-offset: 2px; }
+.witem:focus-visible { outline: 2px solid var(--brand); outline-offset: -2px; border-radius: 0; }

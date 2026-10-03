@@ -9,15 +9,21 @@
     "serve": "cd app && python3 -m http.server 8080",
     "cap:add:android": "npx cap add android",
     "cap:add:ios": "npx cap add ios",
-    "cap:sync": "npx cap sync"
+    "cap:sync": "npx cap sync",
+    "assets": "npx capacitor-assets generate --ios --android --iconBackgroundColor '#2b59f0' --iconBackgroundColorDark '#1a3bb8' --splashBackgroundColor '#f4f6fb' --splashBackgroundColorDark '#0d1117'"
   },
   "devDependencies": {
-    "@capacitor/cli": "^7.0.0"
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.0.0"
   },
   "dependencies": {
-    "@capacitor/android": "^7.0.0",
-    "@capacitor/core": "^7.0.0",
-    "@capacitor/ios": "^7.0.0",
-    "@capacitor/local-notifications": "^7.0.0"
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "@capacitor/local-notifications": "^8.0.0",
+    "@capacitor/app": "^8.0.0",
+    "@capacitor/filesystem": "^8.0.0",
+    "@capacitor/share": "^8.0.0",
+    "@capacitor-community/text-to-speech": "^8.0.0"
   }
 }

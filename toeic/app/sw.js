@@ -14,10 +14,12 @@ self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
   if (url.pathname.includes("/audio/")) {
     e.respondWith(caches.open("vocafit-audio").then(async (c) => {
-      const hit = await c.match(e.request);
+      const key = url.pathname;
+      const hit = await c.match(key);
       if (hit) return hit;
-      const res = await fetch(e.request);
-      if (res.ok && res.status === 200) c.put(e.request, res.clone());
+      // 오디오 태그는 Range 요청(206)을 보낸다 → 파일 전체를 따로 받아 저장해야 오프라인에서도 재생된다
+      const res = await fetch(url.href, { credentials: "same-origin" });
+      if (res.ok && res.status === 200) c.put(key, res.clone());
       return res;
     }));
     return;
