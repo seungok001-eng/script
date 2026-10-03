@@ -981,7 +981,7 @@
   "ant": "",
   "tip": "길 안내(Part 2·3)에서 turn left at the traffic light처럼 전치사 at과 함께 쓰인다. Part 7에서는 traffic signal로 바꿔 표현된다.",
   "q": {
-   "s": "Residents have asked the city to install a ------- near the school because cars often drive too fast there.",
+   "s": "Following several accidents, the city will put a ------- at the corner of Pine Street and Elm Road.",
    "o": [
     "traffic jam",
     "traffic light",
@@ -989,7 +989,7 @@
     "traffic flow"
    ],
    "a": 1,
-   "k": "학교 근처에 '설치하는(install)' 것은 신호등이므로 traffic light가 정답이다. traffic jam(교통 체증), traffic report(교통 정보), traffic flow(교통 흐름)는 설치할 수 있는 대상이 아니다."
+   "k": "사고가 잇따른 뒤 시가 모퉁이에 설치하는(put) 것은 신호등이므로 traffic light가 정답이다. traffic jam(교통 체증), traffic report(교통 정보), traffic flow(교통 흐름)는 길모퉁이에 설치할 수 있는 대상이 아니다."
   }
  },
  {
@@ -1092,8 +1092,8 @@
    1,
    4
   ],
-  "ex": "A porter is pushing a *trolley* loaded with suitcases toward the hotel entrance.",
-  "exKo": "짐꾼이 여행 가방을 실은 카트를 호텔 입구 쪽으로 밀고 있다.",
+  "ex": "Shoppers can borrow a *trolley* at the store entrance to carry heavy items.",
+  "exKo": "쇼핑객들은 무거운 물건을 옮기기 위해 매장 입구에서 카트를 빌릴 수 있다.",
   "col": [
    {
     "e": "luggage trolley",
@@ -1134,8 +1134,8 @@
    4,
    7
   ],
-  "ex": "The new *expressway* will cut travel time between the two cities in half.",
-  "exKo": "새 고속도로는 두 도시 간 이동 시간을 절반으로 줄여 줄 것이다.",
+  "ex": "Two lanes of the *expressway* will be closed overnight for resurfacing.",
+  "exKo": "고속도로의 두 개 차로가 재포장 공사로 밤새 폐쇄된다.",
   "col": [
    {
     "e": "on the expressway",
@@ -1161,7 +1161,7 @@
   "ant": "",
   "tip": "highway, freeway와 같은 뜻으로 교통 방송(Part 4)에 자주 나온다. 형태가 비슷한 expression(표현), expressly(명확히)와 구분하자.",
   "q": {
-   "s": "Construction of the ------- linking the port to the airport is scheduled to finish next year.",
+   "s": "Tolls on the ------- will increase by ten percent starting in January.",
    "o": [
     "expression",
     "expressive",
@@ -1169,7 +1169,7 @@
     "expressway"
    ],
    "a": 3,
-   "k": "관사 the 뒤에 오며 항구와 공항을 잇는 도로를 나타내는 명사 expressway가 정답이다. expression(표현)은 의미가 맞지 않고, expressive는 형용사, expressly는 부사다."
+   "k": "전치사 on과 관사 the 뒤에 오며 통행료(tolls)가 부과되는 도로를 나타내는 명사 expressway가 정답이다. expression(표현)은 의미가 맞지 않고, expressive는 형용사, expressly는 부사다."
   }
  },
  {
@@ -1916,7 +1916,7 @@
   "ant": "pick up",
   "tip": "drop off는 사람을 '내려 주다'와 물건을 '갖다 두다, 반납하다'의 뜻으로 쓰인다. 반의어 pick up과 짝으로 Part 2·3에 자주 나온다.",
   "q": {
-   "s": "Guests who check out early may ------- their room keys at the front desk.",
+   "s": "Parents can ------- their children at the main gate of the school before 8:30 A.M.",
    "o": [
     "drop out",
     "drop off",
@@ -1924,7 +1924,7 @@
     "drop in"
    ],
    "a": 1,
-   "k": "일찍 퇴실하는 손님이 객실 열쇠를 프런트에 '맡기다(두고 가다)'라는 의미이므로 drop off가 정답이다. drop out(중퇴하다), drop by(잠깐 들르다), drop in(불쑥 방문하다)은 목적어 their room keys와 어울리지 않는다."
+   "k": "학부모가 아이들을 학교 정문에서 '내려 주다'라는 의미이므로 drop off가 정답이다. drop out(중퇴하다), drop by(잠깐 들르다), drop in(불쑥 방문하다)은 목적어 their children을 바로 취하지 않는다."
   }
  }
 ]
