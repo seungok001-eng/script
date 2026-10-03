@@ -210,7 +210,7 @@
   "ant": "",
   "tip": "명사로 job offer(채용 제의), special offer(특가 판매)가 빈출이고, 동사로는 offer A B / offer B to A(A에게 B를 제공하다)의 4형식 구조가 출제된다.",
   "q": {
-   "s": "After weeks of talks, the owners accepted an ------- of $2 million for the building.",
+   "s": "The owners agreed to sell the building after the buyer raised its ------- to $2 million.",
    "o": [
     "opening",
     "offer",
@@ -218,7 +218,7 @@
     "origin"
    ],
    "a": 1,
-   "k": "건물에 대해 200만 달러를 내겠다는 '제안'을 수락했다는 의미이므로 offer가 정답이다(accept an offer: 제안을 받아들이다). opening(공석, 개장), outlet(판매점), origin(기원)은 accept의 대상으로 금액과 어울리지 않는다."
+   "k": "구매자가 금액을 200만 달러로 올린 대상은 매입 '제안(가)'이므로 offer가 정답이다(raise an offer: 제시가를 올리다). opening(공석, 개장), outlet(판매점), origin(기원)은 금액을 올리는 대상이 아니다."
   }
  },
  {
@@ -848,7 +848,7 @@
   "ant": "disagreeable",
   "tip": "be agreeable to(~에 동의하다, ~에게 받아들여지다)의 전치사 to와 mutually agreeable(서로 만족하는) 표현이 출제된다. '상냥한'이라는 뜻만 알면 협상 문맥에서 해석이 막힌다.",
   "q": {
-   "s": "If the proposed delivery date is ------- to you, please sign and return the attached form.",
+   "s": "If the proposed delivery date is ------- to you, please let us know by Friday.",
    "o": [
     "agreement",
     "agreeable",
@@ -1784,8 +1784,8 @@
    4,
    7
   ],
-  "ex": "A management *consultant* was hired to help streamline the company's sales process.",
-  "exKo": "회사의 영업 절차를 간소화하는 것을 돕기 위해 경영 컨설턴트가 고용되었다.",
+  "ex": "A management *consultant* was hired to help streamline the firm's ordering process.",
+  "exKo": "회사의 주문 절차를 간소화하는 것을 돕기 위해 경영 컨설턴트가 고용되었다.",
   "col": [
    {
     "e": "management consultant",
