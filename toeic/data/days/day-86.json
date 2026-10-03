@@ -1,0 +1,1897 @@
+[
+ {
+  "w": "viewer",
+  "pos": "n",
+  "m": [
+   "시청자, 보는 사람"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The cooking show attracts more than two million *viewers* every Sunday evening.",
+  "exKo": "그 요리 프로그램은 매주 일요일 저녁 200만 명이 넘는 시청자를 끌어모은다.",
+  "col": [
+   {
+    "e": "TV viewers",
+    "k": "TV 시청자"
+   },
+   {
+    "e": "attract viewers",
+    "k": "시청자를 끌어모으다"
+   }
+  ],
+  "der": [
+   {
+    "w": "view",
+    "pos": "v",
+    "m": "보다, 여기다"
+   },
+   {
+    "w": "viewership",
+    "pos": "n",
+    "m": "시청자 수"
+   }
+  ],
+  "para": [
+   "audience"
+  ],
+  "ant": "",
+  "tip": "가산명사 viewer(시청자 한 명)와 시청자 규모를 뜻하는 viewership, 집합명사 audience를 구분한다.",
+  "q": {
+   "s": "The station asked ------- to vote online for their favorite performer.",
+   "o": [
+    "viewing",
+    "viewers",
+    "views",
+    "viewed"
+   ],
+   "a": 1,
+   "k": "asked의 목적어로 투표할 수 있는 '사람'이 필요하므로 viewers가 정답이다. viewing(시청), views(견해, 경치)는 사람이 아니고, viewed는 동사 형태다."
+  }
+ },
+ {
+  "w": "documentary",
+  "pos": "n",
+  "m": [
+   "다큐멘터리, 기록 영화"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *documentary* follows three small business owners as they rebuild after a flood.",
+  "exKo": "그 다큐멘터리는 홍수 이후 사업을 재건하는 소상공인 세 명의 모습을 따라간다.",
+  "col": [
+   {
+    "e": "make a documentary",
+    "k": "다큐멘터리를 제작하다"
+   },
+   {
+    "e": "documentary film",
+    "k": "기록 영화"
+   }
+  ],
+  "der": [
+   {
+    "w": "document",
+    "pos": "n",
+    "m": "문서, 서류"
+   },
+   {
+    "w": "documentation",
+    "pos": "n",
+    "m": "서류, 증빙 자료"
+   }
+  ],
+  "para": [
+   "nonfiction film"
+  ],
+  "ant": "",
+  "tip": "명사 외에 형용사로 documentary evidence(서면 증거)처럼 '문서로 된'이라는 뜻도 있다. documentation(서류)과 혼동하지 않는다.",
+  "q": {
+   "s": "The award-winning ------- examines how climate change is affecting coastal fishing towns.",
+   "o": [
+    "documenting",
+    "documentation",
+    "documented",
+    "documentary"
+   ],
+   "a": 3,
+   "k": "관사 The와 형용사 award-winning 뒤에서 주어가 되는 명사이며 '상을 받은' 작품이므로 documentary가 정답이다. documentation(서류)은 상을 받는 작품이 아니고, documented, documenting은 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "clarification",
+  "pos": "n",
+  "m": [
+   "해명, 설명, 명확화"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The editor asked the reporter for *clarification* on several points in the article.",
+  "exKo": "편집자는 기자에게 기사의 몇 가지 내용에 대한 설명을 요청했다.",
+  "col": [
+   {
+    "e": "ask for clarification",
+    "k": "설명을 요청하다"
+   },
+   {
+    "e": "seek clarification on",
+    "k": "~에 대한 해명을 구하다"
+   },
+   {
+    "e": "issue a clarification",
+    "k": "해명을 내놓다"
+   }
+  ],
+  "der": [
+   {
+    "w": "clarify",
+    "pos": "v",
+    "m": "명확히 하다, 해명하다"
+   }
+  ],
+  "para": [
+   "explanation"
+  ],
+  "ant": "",
+  "tip": "ask for/seek clarification on(~에 대한 설명을 요청하다)이 대표 표현이다. 동사 clarify와의 품사 구분이 Part 5에 나온다.",
+  "q": {
+   "s": "Several employees asked for ------- of the new travel reimbursement rules.",
+   "o": [
+    "clarified",
+    "clarify",
+    "clarification",
+    "clarifying"
+   ],
+   "a": 2,
+   "k": "전치사 for의 목적어이면서 of의 수식을 받는 명사 자리이므로 clarification이 정답이다. clarify는 동사이고, clarified, clarifying은 이 자리에서 명사 역할을 할 수 없다."
+  }
+ },
+ {
+  "w": "viewership",
+  "pos": "n",
+  "m": [
+   "시청자 수, 시청률"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "*Viewership* of the evening news has declined as more people get information online.",
+  "exKo": "더 많은 사람이 온라인으로 정보를 얻으면서 저녁 뉴스의 시청자 수가 감소했다.",
+  "col": [
+   {
+    "e": "viewership ratings",
+    "k": "시청률"
+   },
+   {
+    "e": "boost viewership",
+    "k": "시청자 수를 늘리다"
+   }
+  ],
+  "der": [
+   {
+    "w": "viewer",
+    "pos": "n",
+    "m": "시청자"
+   }
+  ],
+  "para": [
+   "audience",
+   "ratings"
+  ],
+  "ant": "",
+  "tip": "불가산명사로 시청자 '규모'를 나타내며 increase/decline과 함께 쓰인다. 사람 한 명을 뜻하는 가산명사 viewer와 구분한다.",
+  "q": {
+   "s": "The network moved the series to Thursday nights in hopes of increasing its -------.",
+   "o": [
+    "viewfinder",
+    "viewpoint",
+    "viewership",
+    "overview"
+   ],
+   "a": 2,
+   "k": "방송 시간을 옮겨 늘리려는 것은 '시청자 수'이므로 viewership이 정답이다. viewpoint(관점), viewfinder(카메라 뷰파인더), overview(개요)는 늘리려는 대상이 아니다."
+  }
+ },
+ {
+  "w": "media outlet",
+  "pos": "phr",
+  "m": [
+   "언론 매체, 언론사"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The press release was sent to over fifty *media outlets* across the country.",
+  "exKo": "그 보도 자료는 전국 50곳이 넘는 언론 매체에 배포되었다.",
+  "col": [
+   {
+    "e": "major media outlets",
+    "k": "주요 언론사"
+   },
+   {
+    "e": "local media outlets",
+    "k": "지역 언론 매체"
+   }
+  ],
+  "der": [],
+  "para": [
+   "news organization",
+   "press"
+  ],
+  "ant": "",
+  "tip": "outlet은 '판로, 직판점'이라는 뜻도 있어 retail outlet(소매점)과 구분해야 한다. Part 7에서 news organization으로 바꿔 쓰인다.",
+  "q": {
+   "s": "Several major media ------- have requested interviews with the company's new CEO.",
+   "o": [
+    "outlets",
+    "outlines",
+    "outputs",
+    "outcomes"
+   ],
+   "a": 0,
+   "k": "인터뷰를 요청한 주체는 언론사이므로 media outlets를 이루는 outlets가 정답이다. outlines(개요), outputs(생산량), outcomes(결과)는 인터뷰를 요청할 수 없다."
+  }
+ },
+ {
+  "w": "newsroom",
+  "pos": "n",
+  "m": [
+   "(신문사·방송국의) 편집국, 보도국"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The *newsroom* was busy as reporters rushed to finish their stories before the deadline.",
+  "exKo": "기자들이 마감 전에 기사를 끝내려고 서두르면서 편집국은 분주했다.",
+  "col": [
+   {
+    "e": "in the newsroom",
+    "k": "편집국에서"
+   },
+   {
+    "e": "newsroom staff",
+    "k": "편집국 직원"
+   }
+  ],
+  "der": [],
+  "para": [
+   "editorial office"
+  ],
+  "ant": "",
+  "tip": "기자와 편집자가 일하는 공간으로, Part 7 언론사 채용 공고나 기사에 자주 나온다. showroom(전시실), storeroom(창고)과 구분한다.",
+  "q": {
+   "s": "Ms. Novak spent ten years working in the ------- of a national newspaper before becoming an editor.",
+   "o": [
+    "showroom",
+    "newsroom",
+    "storeroom",
+    "classroom"
+   ],
+   "a": 1,
+   "k": "전국 일간지에서 편집자가 되기 전에 일한 곳은 '편집국'이므로 newsroom이 정답이다. showroom(전시실), storeroom(창고), classroom(교실)은 신문사에서 기자가 일하는 곳이 아니다."
+  }
+ },
+ {
+  "w": "breaking news",
+  "pos": "phr",
+  "m": [
+   "속보"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The station interrupted its regular programming to report *breaking news* about the merger.",
+  "exKo": "방송국은 합병 관련 속보를 전하기 위해 정규 방송을 중단했다.",
+  "col": [
+   {
+    "e": "breaking news story",
+    "k": "속보 기사"
+   },
+   {
+    "e": "report breaking news",
+    "k": "속보를 전하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "latest news",
+   "news flash"
+  ],
+  "ant": "",
+  "tip": "현재분사 breaking이 '막 터진'이라는 뜻으로 news를 수식한다. news는 불가산명사라 a breaking news로 쓰지 않는다.",
+  "q": {
+   "s": "Subscribers to the app receive alerts whenever there is ------- news in their area.",
+   "o": [
+    "breaking",
+    "broken",
+    "breakable",
+    "breakdown"
+   ],
+   "a": 0,
+   "k": "'막 들어온 뉴스'라는 뜻의 breaking news를 이루는 breaking이 정답이다. broken(고장 난), breakable(깨지기 쉬운)은 뉴스를 수식하기에 의미가 맞지 않고, breakdown은 명사다."
+  }
+ },
+ {
+  "w": "op-ed",
+  "pos": "n",
+  "m": [
+   "(신문의) 외부 기고문, 오피니언 칼럼"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The CEO wrote an *op-ed* explaining why the company supports the new trade policy.",
+  "exKo": "그 CEO는 회사가 새 무역 정책을 지지하는 이유를 설명하는 기고문을 썼다.",
+  "col": [
+   {
+    "e": "write an op-ed",
+    "k": "기고문을 쓰다"
+   },
+   {
+    "e": "op-ed page",
+    "k": "오피니언 면"
+   }
+  ],
+  "der": [],
+  "para": [
+   "opinion piece",
+   "guest column"
+  ],
+  "ant": "",
+  "tip": "'opposite the editorial page'(사설 맞은편 면)에서 온 말로 외부 필자가 쓴 의견 기사를 뜻한다. Part 7에서 opinion piece로 바꿔 쓰인다.",
+  "q": {
+   "s": "Dr. Moreno's ------- about rising housing costs appeared in Sunday's edition of the Tribune.",
+   "o": [
+    "upkeep",
+    "opt-out",
+    "op-ed",
+    "outset"
+   ],
+   "a": 2,
+   "k": "신문 일요일판에 실린 Moreno 박사의 글이므로 op-ed(기고문)가 정답이다. opt-out(탈퇴), upkeep(유지비), outset(시초)은 신문에 실리는 글이 아니다."
+  }
+ },
+ {
+  "w": "commentary",
+  "pos": "n",
+  "m": [
+   "논평, 해설",
+   "실황 중계"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The magazine offers expert *commentary* on the latest trends in the housing market.",
+  "exKo": "그 잡지는 주택 시장의 최신 동향에 대한 전문가 논평을 제공한다.",
+  "col": [
+   {
+    "e": "expert commentary",
+    "k": "전문가 논평"
+   },
+   {
+    "e": "live commentary",
+    "k": "실황 해설"
+   },
+   {
+    "e": "commentary on",
+    "k": "~에 대한 논평"
+   }
+  ],
+  "der": [
+   {
+    "w": "comment",
+    "pos": "n",
+    "m": "의견, 논평"
+   },
+   {
+    "w": "commentator",
+    "pos": "n",
+    "m": "해설자, 논평가"
+   }
+  ],
+  "para": [
+   "analysis",
+   "remarks"
+  ],
+  "ant": "",
+  "tip": "불가산명사로 주로 쓰이며 commentary on(~에 대한 해설)처럼 on과 짝을 이룬다. 사람명사 commentator와 구분한다.",
+  "q": {
+   "s": "The website features daily ------- on economic news from leading financial analysts.",
+   "o": [
+    "commentate",
+    "commentator",
+    "commented",
+    "commentary"
+   ],
+   "a": 3,
+   "k": "daily의 수식을 받고 관사 없이 쓰이는 불가산명사 commentary가 정답이다. commentator는 가산명사라 관사나 복수형이 필요하고, commented, commentate는 동사 형태다."
+  }
+ },
+ {
+  "w": "commentator",
+  "pos": "n",
+  "m": [
+   "해설자, 논평가"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Political *commentators* expect the new tax plan to face strong opposition.",
+  "exKo": "정치 평론가들은 새 세금 정책이 강한 반대에 부딪힐 것으로 예상한다.",
+  "col": [
+   {
+    "e": "sports commentator",
+    "k": "스포츠 해설자"
+   },
+   {
+    "e": "political commentator",
+    "k": "정치 평론가"
+   }
+  ],
+  "der": [
+   {
+    "w": "commentary",
+    "pos": "n",
+    "m": "논평, 해설"
+   },
+   {
+    "w": "commentate",
+    "pos": "v",
+    "m": "해설하다"
+   }
+  ],
+  "para": [
+   "analyst",
+   "pundit"
+  ],
+  "ant": "",
+  "tip": "사람명사 commentator와 논평 자체를 뜻하는 commentary를 구분하는 품사 문제가 나온다.",
+  "q": {
+   "s": "Former player Tom Reyes now works as a ------- for televised basketball games.",
+   "o": [
+    "commentator",
+    "commentary",
+    "commentate",
+    "commented"
+   ],
+   "a": 0,
+   "k": "works as a 뒤에는 직업을 나타내는 사람명사가 와야 하므로 commentator가 정답이다. commentary는 사람이 아니고, commentate, commented는 동사 형태다."
+  }
+ },
+ {
+  "w": "photojournalist",
+  "pos": "n",
+  "m": [
+   "사진 기자"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The *photojournalist* spent months documenting daily life in the remote village.",
+  "exKo": "그 사진 기자는 외딴 마을의 일상을 기록하는 데 몇 달을 보냈다.",
+  "col": [
+   {
+    "e": "award-winning photojournalist",
+    "k": "수상 경력이 있는 사진 기자"
+   },
+   {
+    "e": "freelance photojournalist",
+    "k": "프리랜서 사진 기자"
+   }
+  ],
+  "der": [
+   {
+    "w": "photojournalism",
+    "pos": "n",
+    "m": "보도 사진(분야)"
+   }
+  ],
+  "para": [
+   "news photographer"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 news photographer로 바꿔 쓰이며, 분야명 photojournalism과 사람명사 photojournalist를 구분한다.",
+  "q": {
+   "s": "An exhibition of works by the award-winning ------- Leila Haddad opens at the gallery next week.",
+   "o": [
+    "photojournalist",
+    "photojournalism",
+    "photogenic",
+    "photocopy"
+   ],
+   "a": 0,
+   "k": "Leila Haddad와 동격을 이루는 사람명사가 필요하므로 photojournalist가 정답이다. photojournalism은 분야, photocopy는 복사본이고, photogenic(사진이 잘 받는)은 형용사다."
+  }
+ },
+ {
+  "w": "producer",
+  "pos": "n",
+  "m": [
+   "(영화·방송) 제작자, 프로듀서",
+   "생산자, 생산업체"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *producer* of the radio program is looking for guests to discuss local business issues.",
+  "exKo": "그 라디오 프로그램의 제작자는 지역 경제 문제를 논의할 출연자를 찾고 있다.",
+  "col": [
+   {
+    "e": "film producer",
+    "k": "영화 제작자"
+   },
+   {
+    "e": "leading producer of",
+    "k": "~의 선도적인 생산업체"
+   }
+  ],
+  "der": [
+   {
+    "w": "produce",
+    "pos": "v",
+    "m": "생산하다, 제작하다"
+   },
+   {
+    "w": "production",
+    "pos": "n",
+    "m": "생산, 제작"
+   },
+   {
+    "w": "productive",
+    "pos": "adj",
+    "m": "생산적인"
+   }
+  ],
+  "para": [
+   "maker",
+   "manufacturer"
+  ],
+  "ant": "",
+  "tip": "'(방송) 제작자'와 '생산업체'라는 두 뜻이 모두 나온다. leading producer of(~의 선도 생산업체)가 Part 7 단골 표현이다.",
+  "q": {
+   "s": "Delgado Farms is the region's largest ------- of organic dairy products.",
+   "o": [
+    "produced",
+    "produce",
+    "productive",
+    "producer"
+   ],
+   "a": 3,
+   "k": "소유격과 최상급 형용사 뒤에서 회사를 가리키는 명사가 필요하므로 producer(생산업체)가 정답이다. produce는 명사일 때 '농산물'이라 의미가 맞지 않고, productive는 형용사, produced는 분사다."
+  }
+ },
+ {
+  "w": "on air",
+  "pos": "phr",
+  "m": [
+   "방송 중인, 방송되는"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The new morning show will go *on air* next Monday at 7 a.m.",
+  "exKo": "새 아침 프로그램은 다음 주 월요일 오전 7시에 방송을 시작한다.",
+  "col": [
+   {
+    "e": "go on air",
+    "k": "방송을 시작하다"
+   },
+   {
+    "e": "be on air",
+    "k": "방송 중이다"
+   },
+   {
+    "e": "on-air personality",
+    "k": "방송인"
+   }
+  ],
+  "der": [
+   {
+    "w": "airtime",
+    "pos": "n",
+    "m": "방송 시간"
+   }
+  ],
+  "para": [
+   "on the air",
+   "broadcasting"
+  ],
+  "ant": "off air",
+  "tip": "go on air(방송을 시작하다)가 대표 표현이며, 명사 앞에서는 on-air host처럼 하이픈을 붙인다. 동사 air는 '방송하다'라는 뜻이다.",
+  "q": {
+   "s": "Callers must wait until the host says they are on ------- before asking their questions.",
+   "o": [
+    "wave",
+    "sky",
+    "air",
+    "stage"
+   ],
+   "a": 2,
+   "k": "라디오 청취자가 '방송에 연결되었다'는 뜻은 on air로 표현하므로 air가 정답이다. on sky, on wave는 쓰이지 않는 표현이고, on stage(무대 위에)는 전화 연결 상황에 맞지 않는다."
+  }
+ },
+ {
+  "w": "prime time",
+  "pos": "phr",
+  "m": [
+   "(방송의) 황금 시간대"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The network will air the final episode during *prime time* on Saturday.",
+  "exKo": "그 방송사는 토요일 황금 시간대에 마지막 회를 방영할 예정이다.",
+  "col": [
+   {
+    "e": "prime-time slot",
+    "k": "황금 시간대"
+   },
+   {
+    "e": "during prime time",
+    "k": "황금 시간대에"
+   }
+  ],
+  "der": [],
+  "para": [
+   "peak viewing hours"
+  ],
+  "ant": "",
+  "tip": "명사 앞에서는 prime-time commercial(황금 시간대 광고)처럼 하이픈을 붙여 형용사로 쓴다.",
+  "q": {
+   "s": "Advertising slots during ------- time are the most expensive because the largest audiences are watching.",
+   "o": [
+    "primitive",
+    "primary",
+    "premier",
+    "prime"
+   ],
+   "a": 3,
+   "k": "시청자가 가장 많은 '황금 시간대'는 prime time이므로 prime이 정답이다. primary(주요한), premier(최고의), primitive(원시적인)는 time과 결합해 이 뜻을 만들지 못한다."
+  }
+ },
+ {
+  "w": "rerun",
+  "pos": "n",
+  "m": [
+   "재방송"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "During the summer, the channel shows *reruns* of its most popular dramas.",
+  "exKo": "여름 동안 그 채널은 가장 인기 있는 드라마들의 재방송을 내보낸다.",
+  "col": [
+   {
+    "e": "watch reruns",
+    "k": "재방송을 보다"
+   },
+   {
+    "e": "rerun of",
+    "k": "~의 재방송"
+   }
+  ],
+  "der": [
+   {
+    "w": "run",
+    "pos": "v",
+    "m": "(프로그램을) 방송하다, 게재하다"
+   }
+  ],
+  "para": [
+   "repeat",
+   "rebroadcast"
+  ],
+  "ant": "",
+  "tip": "명사(재방송)와 동사(재방송하다)로 모두 쓰인다. Part 7에서 rebroadcast로 바꿔 쓰이며, run이 '방송하다, 게재하다'라는 뜻임도 알아 두자.",
+  "q": {
+   "s": "The network is airing ------- of the cooking competition while the new season is being filmed.",
+   "o": [
+    "rebates",
+    "refunds",
+    "reruns",
+    "rebounds"
+   ],
+   "a": 2,
+   "k": "새 시즌을 촬영하는 동안 방송하는 것은 '재방송'이므로 reruns가 정답이다. refunds(환불), rebates(할인 환급), rebounds(반등)는 방송할 수 있는 대상이 아니다."
+  }
+ },
+ {
+  "w": "infographic",
+  "pos": "n",
+  "m": [
+   "인포그래픽, 정보 그래픽"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The report includes an *infographic* that shows how consumer spending has changed.",
+  "exKo": "그 보고서에는 소비자 지출이 어떻게 변해 왔는지 보여 주는 인포그래픽이 들어 있다.",
+  "col": [
+   {
+    "e": "create an infographic",
+    "k": "인포그래픽을 만들다"
+   },
+   {
+    "e": "interactive infographic",
+    "k": "대화형 인포그래픽"
+   }
+  ],
+  "der": [
+   {
+    "w": "graphic",
+    "pos": "n",
+    "m": "그래픽, 도표"
+   }
+  ],
+  "para": [
+   "chart",
+   "visual"
+  ],
+  "ant": "",
+  "tip": "information과 graphic을 합친 말로, Part 7 복수 지문에서 도표나 그래픽 자료를 가리킬 때 쓰인다.",
+  "q": {
+   "s": "Each chapter of the annual report includes an ------- that presents key data in a simple visual format.",
+   "o": [
+    "infrastructure",
+    "infographic",
+    "influx",
+    "infringement"
+   ],
+   "a": 1,
+   "k": "핵심 데이터를 간단한 시각 자료로 보여 주는 것은 infographic이다. infrastructure(사회 기반 시설), influx(유입), infringement(침해)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "critique",
+  "pos": "n",
+  "m": [
+   "비평, 평론"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The professor gave a detailed *critique* of each student's business plan.",
+  "exKo": "교수는 학생 한 명 한 명의 사업 계획서에 대해 상세한 비평을 해 주었다.",
+  "col": [
+   {
+    "e": "detailed critique",
+    "k": "상세한 비평"
+   },
+   {
+    "e": "write a critique",
+    "k": "비평을 쓰다"
+   }
+  ],
+  "der": [
+   {
+    "w": "critic",
+    "pos": "n",
+    "m": "비평가"
+   },
+   {
+    "w": "critical",
+    "pos": "adj",
+    "m": "비판적인, 중요한"
+   },
+   {
+    "w": "criticize",
+    "pos": "v",
+    "m": "비판하다"
+   }
+  ],
+  "para": [
+   "review",
+   "evaluation"
+  ],
+  "ant": "",
+  "tip": "critic(비평가, 사람), critique(비평, 글), criticism(비판)을 구분한다. 동사로 critique a design(디자인을 평가하다)처럼 쓰기도 한다.",
+  "q": {
+   "s": "The art magazine published a thoughtful ------- of the museum's new exhibition.",
+   "o": [
+    "critic",
+    "critique",
+    "critical",
+    "critically"
+   ],
+   "a": 1,
+   "k": "잡지가 '게재한' 대상은 글이므로 critique가 정답이다. critic(비평가)은 사람이라 게재할 수 없고, critical은 형용사, critically는 부사다."
+  }
+ },
+ {
+  "w": "memoir",
+  "pos": "n",
+  "m": [
+   "회고록"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The famous chef's *memoir* includes stories from the years she ran a small diner in Ohio.",
+  "exKo": "그 유명 셰프의 회고록에는 그녀가 오하이오에서 작은 식당을 운영하던 시절의 이야기가 담겨 있다.",
+  "col": [
+   {
+    "e": "publish a memoir",
+    "k": "회고록을 출간하다"
+   },
+   {
+    "e": "best-selling memoir",
+    "k": "베스트셀러 회고록"
+   }
+  ],
+  "der": [],
+  "para": [
+   "autobiography"
+  ],
+  "ant": "",
+  "tip": "주로 유명인이 자신의 경험을 쓴 책으로, Part 7에서 autobiography로 바꿔 쓰인다. 끝 철자 -oir에 주의한다.",
+  "q": {
+   "s": "In her new -------, the retired diplomat recalls her years working in embassies around the world.",
+   "o": [
+    "memoir",
+    "memorial",
+    "memorandum",
+    "memorabilia"
+   ],
+   "a": 0,
+   "k": "은퇴한 외교관이 자신의 경험을 회상하는 책은 memoir(회고록)이다. memorial(기념비), memorandum(회람), memorabilia(기념품)는 경험을 회상하는 책이 아니다."
+  }
+ },
+ {
+  "w": "bulletin",
+  "pos": "n",
+  "m": [
+   "게시, 공고, 소식지",
+   "뉴스 단신"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "The latest company *bulletin* lists the winners of this year's service awards.",
+  "exKo": "최신 사내 소식지에 올해 공로상 수상자 명단이 실려 있다.",
+  "col": [
+   {
+    "e": "bulletin board",
+    "k": "게시판"
+   },
+   {
+    "e": "news bulletin",
+    "k": "뉴스 단신"
+   }
+  ],
+  "der": [],
+  "para": [
+   "newsletter",
+   "announcement",
+   "notice"
+  ],
+  "ant": "",
+  "tip": "bulletin board(게시판)는 Part 1·3 사무실 장면에 자주 나오며, Part 7에서 notice나 announcement로 바꿔 쓰인다.",
+  "q": {
+   "s": "Details of the upcoming staff picnic have been posted on the ------- board in the break room.",
+   "o": [
+    "blueprint",
+    "ballot",
+    "budget",
+    "bulletin"
+   ],
+   "a": 3,
+   "k": "휴게실에서 공지를 붙이는 곳은 bulletin board(게시판)이므로 bulletin이 정답이다. ballot(투표용지), budget(예산), blueprint(청사진)는 board와 결합해 게시판을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "blurb",
+  "pos": "n",
+  "m": [
+   "(책 표지의) 짧은 소개글, 추천 문구"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The *blurb* on the back cover describes the novel as a gripping mystery.",
+  "exKo": "책 뒤표지의 소개글은 그 소설을 흥미진진한 미스터리라고 소개한다.",
+  "col": [
+   {
+    "e": "book blurb",
+    "k": "책 소개글"
+   },
+   {
+    "e": "write a blurb",
+    "k": "소개글을 쓰다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "summary",
+   "description"
+  ],
+  "ant": "",
+  "tip": "책 뒤표지나 광고에 실리는 짧은 홍보 문구로, Part 7 출판 지문에서 short description으로 바꿔 쓰인다.",
+  "q": {
+   "s": "A glowing ------- from a best-selling novelist appears on the back cover of the debut book.",
+   "o": [
+    "blur",
+    "blurb",
+    "bluff",
+    "blunder"
+   ],
+   "a": 1,
+   "k": "책 뒤표지에 실린 유명 작가의 호평 글은 blurb(추천 문구)이다. blur(흐릿한 것), bluff(허세), blunder(큰 실수)는 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "hard copy",
+  "pos": "phr",
+  "m": [
+   "출력본, 인쇄본"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Candidates should bring a *hard copy* of their portfolio to the interview.",
+  "exKo": "지원자는 면접에 포트폴리오 출력본을 가져와야 한다.",
+  "col": [
+   {
+    "e": "print a hard copy",
+    "k": "출력본을 인쇄하다"
+   },
+   {
+    "e": "hard copy of",
+    "k": "~의 출력본"
+   }
+  ],
+  "der": [],
+  "para": [
+   "printed copy",
+   "printout"
+  ],
+  "ant": "electronic copy",
+  "tip": "종이에 인쇄한 문서를 뜻하며 electronic copy, digital version과 대비된다. Part 3에서 'Could you print a hard copy?' 같은 요청으로 나온다.",
+  "q": {
+   "s": "In addition to the electronic version, please submit one hard ------- of the signed contract.",
+   "o": [
+    "coat",
+    "cover",
+    "case",
+    "copy"
+   ],
+   "a": 3,
+   "k": "전자 문서 외에 제출하는 종이 문서는 hard copy(출력본)이므로 copy가 정답이다. hard cover(양장 표지), hard case(단단한 케이스), hard coat는 계약서의 출력본을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "e-book",
+  "pos": "n",
+  "m": [
+   "전자책"
+  ],
+  "tier": 1,
+  "parts": [
+   7
+  ],
+  "ex": "The novel sold more *e-books* than printed copies during its first month.",
+  "exKo": "그 소설은 출간 첫 달에 종이책보다 전자책이 더 많이 팔렸다.",
+  "col": [
+   {
+    "e": "e-book reader",
+    "k": "전자책 단말기"
+   },
+   {
+    "e": "download an e-book",
+    "k": "전자책을 내려받다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "digital book",
+   "electronic book"
+  ],
+  "ant": "",
+  "tip": "가산명사로 an e-book, e-books처럼 쓴다. Part 7에서 digital edition, electronic version으로 바꿔 표현되기도 한다.",
+  "q": {
+   "s": "Library members can borrow an ------- online and read it on any tablet or smartphone.",
+   "o": [
+    "e-ticket",
+    "e-mail",
+    "e-book",
+    "e-commerce"
+   ],
+   "a": 2,
+   "k": "도서관에서 빌려 태블릿으로 읽는 것은 e-book(전자책)이다. e-mail(이메일), e-ticket(전자 항공권), e-commerce(전자 상거래)는 빌려서 읽는 대상이 아니다."
+  }
+ },
+ {
+  "w": "audiobook",
+  "pos": "n",
+  "m": [
+   "오디오북"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Many commuters listen to *audiobooks* during their daily train ride.",
+  "exKo": "많은 통근자가 매일 기차를 타고 가는 동안 오디오북을 듣는다.",
+  "col": [
+   {
+    "e": "listen to an audiobook",
+    "k": "오디오북을 듣다"
+   },
+   {
+    "e": "audiobook version",
+    "k": "오디오북판"
+   }
+  ],
+  "der": [
+   {
+    "w": "audio",
+    "pos": "adj",
+    "m": "음성의, 오디오의"
+   }
+  ],
+  "para": [
+   "recorded book"
+  ],
+  "ant": "",
+  "tip": "책을 소리 내어 읽은 녹음본으로, narrate(낭독하다), narrator(낭독자)와 함께 출판 지문에 나온다.",
+  "q": {
+   "s": "The author herself narrated the ------- version of her best-selling travel guide.",
+   "o": [
+    "auditorium",
+    "audience",
+    "audiobook",
+    "audit"
+   ],
+   "a": 2,
+   "k": "작가가 직접 '낭독한' 판본은 오디오북이므로 audiobook이 정답이다. audience(청중), auditorium(강당), audit(회계 감사)은 version과 결합해 의미를 이루지 못한다."
+  }
+ },
+ {
+  "w": "hardcover",
+  "pos": "n",
+  "m": [
+   "양장본"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The cookbook is available in *hardcover* and paperback editions.",
+  "exKo": "그 요리책은 양장본과 페이퍼백판으로 구입할 수 있다.",
+  "col": [
+   {
+    "e": "hardcover edition",
+    "k": "양장본"
+   },
+   {
+    "e": "in hardcover",
+    "k": "양장본으로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "hardback"
+  ],
+  "ant": "paperback",
+  "tip": "명사와 형용사(hardcover edition)로 모두 쓰이며 paperback(종이 표지본)과 대비된다. 영국식으로는 hardback이라고 한다.",
+  "q": {
+   "s": "The ------- edition costs $30, while the paperback version sells for just $15.",
+   "o": [
+    "hardcover",
+    "hardware",
+    "hardship",
+    "hardwood"
+   ],
+   "a": 0,
+   "k": "paperback과 대비되는 책의 판형은 hardcover(양장본)이다. hardware(하드웨어, 철물), hardship(고난), hardwood(단단한 목재)는 책의 판형이 아니다."
+  }
+ },
+ {
+  "w": "defamation",
+  "pos": "n",
+  "m": [
+   "명예 훼손"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The actor filed a *defamation* lawsuit against the magazine over a false report.",
+  "exKo": "그 배우는 허위 보도를 이유로 잡지사를 상대로 명예 훼손 소송을 제기했다.",
+  "col": [
+   {
+    "e": "defamation lawsuit",
+    "k": "명예 훼손 소송"
+   },
+   {
+    "e": "sue for defamation",
+    "k": "명예 훼손으로 고소하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "defame",
+    "pos": "v",
+    "m": "명예를 훼손하다"
+   },
+   {
+    "w": "defamatory",
+    "pos": "adj",
+    "m": "명예를 훼손하는"
+   }
+  ],
+  "para": [
+   "libel",
+   "slander"
+  ],
+  "ant": "",
+  "tip": "글로 된 명예 훼손은 libel, 말로 된 것은 slander라고 한다. sue for defamation(명예 훼손으로 고소하다) 형태로 기사에 나온다.",
+  "q": {
+   "s": "The newspaper was sued for ------- after it published inaccurate claims about a local business owner.",
+   "o": [
+    "deformation",
+    "defamation",
+    "declaration",
+    "delegation"
+   ],
+   "a": 1,
+   "k": "부정확한 주장을 실어 고소당한 이유는 '명예 훼손'이므로 defamation이 정답이다. deformation(변형), declaration(선언), delegation(대표단, 위임)은 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "publishing house",
+  "pos": "phr",
+  "m": [
+   "출판사"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The manuscript was rejected by several *publishing houses* before it became a bestseller.",
+  "exKo": "그 원고는 베스트셀러가 되기 전에 여러 출판사로부터 거절당했다.",
+  "col": [
+   {
+    "e": "major publishing house",
+    "k": "대형 출판사"
+   },
+   {
+    "e": "independent publishing house",
+    "k": "독립 출판사"
+   }
+  ],
+  "der": [
+   {
+    "w": "publisher",
+    "pos": "n",
+    "m": "출판사, 발행인"
+   },
+   {
+    "w": "publication",
+    "pos": "n",
+    "m": "출판(물)"
+   }
+  ],
+  "para": [
+   "publisher"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 publisher로 바꿔 쓰인다. 사람·회사를 뜻하는 publisher와 출판물을 뜻하는 publication을 구분한다.",
+  "q": {
+   "s": "Ms. Abe founded a small publishing ------- that specializes in children's books.",
+   "o": [
+    "field",
+    "room",
+    "place",
+    "house"
+   ],
+   "a": 3,
+   "k": "아동 도서를 전문으로 하는 회사이므로 publishing house(출판사)를 이루는 house가 정답이다. publishing room, publishing place는 쓰이지 않고, publishing field(출판 분야)는 설립하는 회사가 아니다."
+  }
+ },
+ {
+  "w": "literary",
+  "pos": "adj",
+  "m": [
+   "문학의, 문학적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The festival brings together *literary* agents, editors, and first-time writers.",
+  "exKo": "그 축제에는 출판 에이전트, 편집자, 신인 작가들이 함께 모인다.",
+  "col": [
+   {
+    "e": "literary agent",
+    "k": "출판 에이전트"
+   },
+   {
+    "e": "literary award",
+    "k": "문학상"
+   },
+   {
+    "e": "literary work",
+    "k": "문학 작품"
+   }
+  ],
+  "der": [
+   {
+    "w": "literature",
+    "pos": "n",
+    "m": "문학, (홍보용) 인쇄물"
+   },
+   {
+    "w": "literate",
+    "pos": "adj",
+    "m": "읽고 쓸 줄 아는"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "literary(문학의), literal(문자 그대로의), literate(글을 아는)는 철자가 비슷한 혼동어로 출제된다.",
+  "q": {
+   "s": "The novel received the nation's most prestigious ------- prize last month.",
+   "o": [
+    "literal",
+    "literary",
+    "literate",
+    "literally"
+   ],
+   "a": 1,
+   "k": "소설이 받은 '문학상'이므로 prize를 수식하는 literary가 정답이다. literal(문자 그대로의), literate(글을 아는)는 의미가 맞지 않고, literally는 부사다."
+  }
+ },
+ {
+  "w": "copy editor",
+  "pos": "phr",
+  "m": [
+   "교열 담당자, 교열 기자"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "A *copy editor* checks each article for spelling and grammar errors before publication.",
+  "exKo": "교열 담당자는 출간 전에 각 기사의 철자와 문법 오류를 확인한다.",
+  "col": [
+   {
+    "e": "work as a copy editor",
+    "k": "교열 담당자로 일하다"
+   },
+   {
+    "e": "senior copy editor",
+    "k": "선임 교열 기자"
+   }
+  ],
+  "der": [
+   {
+    "w": "copyedit",
+    "pos": "v",
+    "m": "교열하다"
+   }
+  ],
+  "para": [
+   "proofreader"
+  ],
+  "ant": "",
+  "tip": "여기서 copy는 '원고'라는 뜻이다. Part 7 출판사 채용 공고에서 proofreader와 비슷한 직무로 나온다.",
+  "q": {
+   "s": "The magazine is hiring a copy ------- to check articles for errors in spelling, grammar, and style.",
+   "o": [
+    "editorial",
+    "edition",
+    "edit",
+    "editor"
+   ],
+   "a": 3,
+   "k": "채용하는 대상은 사람이므로 copy editor(교열 담당자)를 이루는 editor가 정답이다. edition(판), editorial(사설)은 사람이 아니고, edit는 동사다."
+  }
+ },
+ {
+  "w": "fact-check",
+  "pos": "v",
+  "m": [
+   "사실 여부를 확인하다, 팩트 체크하다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Reporters must *fact-check* every statistic before the story goes to print.",
+  "exKo": "기자는 기사가 인쇄되기 전에 모든 통계 수치의 사실 여부를 확인해야 한다.",
+  "col": [
+   {
+    "e": "fact-check a claim",
+    "k": "주장의 사실 여부를 확인하다"
+   },
+   {
+    "e": "fact-check an article",
+    "k": "기사를 팩트 체크하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "fact-checker",
+    "pos": "n",
+    "m": "사실 확인 담당자"
+   }
+  ],
+  "para": [
+   "verify",
+   "confirm"
+  ],
+  "ant": "",
+  "tip": "하이픈으로 연결된 동사로 fact-checked, fact-checking처럼 활용한다. Part 7에서 verify로 바꿔 쓰인다.",
+  "q": {
+   "s": "Before publishing the interview, the editor asked an intern to ------- the quotes and dates.",
+   "o": [
+    "fact-check",
+    "check-in",
+    "checkup",
+    "fact sheet"
+   ],
+   "a": 0,
+   "k": "to 뒤에 동사원형이 필요하고 인용문과 날짜를 '사실 확인'하는 것이므로 fact-check가 정답이다. check-in(투숙 수속), checkup(건강 검진), fact sheet(자료표)는 명사다."
+  }
+ },
+ {
+  "w": "credible",
+  "pos": "adj",
+  "m": [
+   "믿을 만한, 신뢰할 수 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Journalists must rely on *credible* sources when reporting on financial matters.",
+  "exKo": "기자는 금융 문제를 보도할 때 믿을 만한 출처에 의존해야 한다.",
+  "col": [
+   {
+    "e": "credible source",
+    "k": "믿을 만한 출처"
+   },
+   {
+    "e": "credible evidence",
+    "k": "신뢰할 수 있는 증거"
+   }
+  ],
+  "der": [
+   {
+    "w": "credibility",
+    "pos": "n",
+    "m": "신뢰성"
+   },
+   {
+    "w": "credibly",
+    "pos": "adv",
+    "m": "믿을 수 있게"
+   }
+  ],
+  "para": [
+   "reliable",
+   "trustworthy"
+  ],
+  "ant": "",
+  "tip": "credible(믿을 만한), credulous(잘 속는), creditable(칭찬할 만한)은 혼동어다. 명사 credibility는 gain/lose credibility로 쓴다.",
+  "q": {
+   "s": "The report's conclusions were questioned because it did not cite any ------- sources.",
+   "o": [
+    "credibly",
+    "credibility",
+    "credible",
+    "credit"
+   ],
+   "a": 2,
+   "k": "명사 sources를 수식하는 형용사 자리이므로 credible이 정답이다. credibility, credit은 명사이고, credibly는 부사다."
+  }
+ },
+ {
+  "w": "biased",
+  "pos": "adj",
+  "m": [
+   "편향된, 치우친"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Some readers complained that the article was *biased* in favor of the developer.",
+  "exKo": "일부 독자는 그 기사가 개발업체에 유리하게 편향되었다고 불평했다.",
+  "col": [
+   {
+    "e": "biased against",
+    "k": "~에 불리하게 편향된"
+   },
+   {
+    "e": "biased in favor of",
+    "k": "~에 유리하게 편향된"
+   }
+  ],
+  "der": [
+   {
+    "w": "bias",
+    "pos": "n",
+    "m": "편견, 편향"
+   }
+  ],
+  "para": [
+   "one-sided",
+   "partial"
+  ],
+  "ant": "impartial",
+  "tip": "be biased against/in favor of 형태로 쓰인다. 명사 bias(편견)와 형용사 biased의 품사 구분이 Part 5에 나온다.",
+  "q": {
+   "s": "Critics argued that the survey results were ------- because only existing customers were asked to participate.",
+   "o": [
+    "biased",
+    "biases",
+    "biasing",
+    "bias"
+   ],
+   "a": 0,
+   "k": "be동사 뒤에서 결과가 '편향된' 상태를 나타내는 형용사 biased가 정답이다. bias, biases는 명사이고, biasing은 결과가 편향시키는 주체가 되므로 맞지 않는다."
+  }
+ },
+ {
+  "w": "impartial",
+  "pos": "adj",
+  "m": [
+   "공정한, 치우치지 않은"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The committee hired an *impartial* expert to review the competing proposals.",
+  "exKo": "위원회는 경쟁하는 제안서들을 검토할 공정한 전문가를 고용했다.",
+  "col": [
+   {
+    "e": "impartial advice",
+    "k": "공정한 조언"
+   },
+   {
+    "e": "remain impartial",
+    "k": "중립을 지키다"
+   }
+  ],
+  "der": [
+   {
+    "w": "impartiality",
+    "pos": "n",
+    "m": "공정성"
+   },
+   {
+    "w": "impartially",
+    "pos": "adv",
+    "m": "공정하게"
+   }
+  ],
+  "para": [
+   "neutral",
+   "unbiased",
+   "fair"
+  ],
+  "ant": "biased",
+  "tip": "partial(편파적인, 부분적인)에 부정 접두사 im-이 붙은 말이다. remain impartial(중립을 지키다)처럼 2형식 동사 뒤에 형용사로 쓰인다.",
+  "q": {
+   "s": "A good moderator remains ------- and gives each panelist equal time to speak.",
+   "o": [
+    "impartial",
+    "impartially",
+    "impartiality",
+    "partially"
+   ],
+   "a": 0,
+   "k": "2형식 동사 remains 뒤 보어 자리이므로 형용사 impartial이 정답이다. impartiality는 명사이고, impartially, partially는 부사다."
+  }
+ },
+ {
+  "w": "tabloid",
+  "pos": "n",
+  "m": [
+   "타블로이드 신문, 대중지"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The singer's private life is a frequent topic in the *tabloids*.",
+  "exKo": "그 가수의 사생활은 타블로이드 신문의 단골 화제다.",
+  "col": [
+   {
+    "e": "tabloid newspaper",
+    "k": "타블로이드 신문"
+   },
+   {
+    "e": "tabloid press",
+    "k": "대중 신문"
+   },
+   {
+    "e": "tabloid journalism",
+    "k": "선정적 저널리즘"
+   }
+  ],
+  "der": [],
+  "para": [
+   "gossip magazine"
+  ],
+  "ant": "",
+  "tip": "유명인 소문과 선정적인 기사를 주로 다루는 신문으로, Part 7에서 serious newspaper, broadsheet(일반 대판 신문)와 대비된다.",
+  "q": {
+   "s": "Unlike serious newspapers, the ------- focuses mainly on celebrity news and scandals.",
+   "o": [
+    "tablet",
+    "tabloid",
+    "tableau",
+    "tabletop"
+   ],
+   "a": 1,
+   "k": "유명인 소식과 스캔들을 주로 다루는 신문은 tabloid이다. tablet(태블릿, 알약), tableau(장면, 활인화), tabletop(탁상)은 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "gossip",
+  "pos": "n",
+  "m": [
+   "소문, 험담"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Managers should discourage office *gossip* because it can damage team morale.",
+  "exKo": "관리자는 팀의 사기를 떨어뜨릴 수 있는 사내 험담을 자제시켜야 한다.",
+  "col": [
+   {
+    "e": "office gossip",
+    "k": "사내 험담"
+   },
+   {
+    "e": "celebrity gossip",
+    "k": "연예계 소문"
+   },
+   {
+    "e": "gossip column",
+    "k": "가십난"
+   }
+  ],
+  "der": [
+   {
+    "w": "gossipy",
+    "pos": "adj",
+    "m": "험담을 좋아하는"
+   }
+  ],
+  "para": [
+   "rumor"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 a gossip이 아닌 a piece of gossip으로 세며, 동사로는 gossip about(~에 대해 험담하다)으로 쓴다.",
+  "q": {
+   "s": "The magazine's ------- column is filled with rumors about famous actors and musicians.",
+   "o": [
+    "gossamer",
+    "gospel",
+    "gossip",
+    "gusto"
+   ],
+   "a": 2,
+   "k": "유명 배우와 음악가에 관한 소문으로 채워진 지면은 gossip column(가십난)이다. gospel(복음), gossamer(거미줄), gusto(열정)는 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "scoop",
+  "pos": "n",
+  "m": [
+   "특종"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The young reporter got the *scoop* on the company's plans to relocate its headquarters.",
+  "exKo": "그 젊은 기자는 회사의 본사 이전 계획에 관한 특종을 잡았다.",
+  "col": [
+   {
+    "e": "get a scoop",
+    "k": "특종을 잡다"
+   },
+   {
+    "e": "exclusive scoop",
+    "k": "단독 특종"
+   }
+  ],
+  "der": [],
+  "para": [
+   "exclusive",
+   "exclusive story"
+  ],
+  "ant": "",
+  "tip": "'(아이스크림) 한 숟갈'이라는 뜻 외에 기사에서는 '특종'을 뜻한다. get/land a scoop(특종을 잡다)이 대표 표현이다.",
+  "q": {
+   "s": "The Daily Herald landed a major ------- by revealing the merger a day before it was officially announced.",
+   "o": [
+    "scope",
+    "scoop",
+    "scheme",
+    "scale"
+   ],
+   "a": 1,
+   "k": "공식 발표 하루 전에 합병 소식을 보도한 것은 '특종'이므로 scoop이 정답이다. scope(범위), scheme(계획), scale(규모)은 land와 결합해 특종을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "off the record",
+  "pos": "phr",
+  "m": [
+   "비공식적으로, 비보도를 전제로"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The official spoke *off the record* because he was not authorized to comment.",
+  "exKo": "그 관계자는 논평할 권한이 없었기 때문에 비공식적으로 말했다.",
+  "col": [
+   {
+    "e": "speak off the record",
+    "k": "비공식적으로 말하다"
+   },
+   {
+    "e": "off-the-record comments",
+    "k": "비공식 발언"
+   }
+  ],
+  "der": [],
+  "para": [
+   "unofficially",
+   "confidentially"
+  ],
+  "ant": "on the record",
+  "tip": "기사에 이름을 밝히지 않는다는 조건으로 하는 발언을 뜻하며, 명사 앞에서는 off-the-record remarks처럼 하이픈을 붙인다.",
+  "q": {
+   "s": "The spokesperson agreed to answer questions only if her comments were kept off the -------.",
+   "o": [
+    "register",
+    "report",
+    "recorder",
+    "record"
+   ],
+   "a": 3,
+   "k": "'비공식 발언으로 하다'는 off the record로 표현하므로 record가 정답이다. off the report, off the recorder, off the register는 이 의미로 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "insider",
+  "pos": "n",
+  "m": [
+   "내부자, 내부 관계자"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "According to an industry *insider*, the two airlines are close to finalizing a merger.",
+  "exKo": "한 업계 관계자에 따르면, 두 항공사는 합병 마무리 단계에 와 있다.",
+  "col": [
+   {
+    "e": "industry insider",
+    "k": "업계 관계자"
+   },
+   {
+    "e": "insider trading",
+    "k": "내부자 거래"
+   },
+   {
+    "e": "insider information",
+    "k": "내부 정보"
+   }
+  ],
+  "der": [
+   {
+    "w": "inside",
+    "pos": "adv",
+    "m": "안에, 내부에"
+   }
+  ],
+  "para": [
+   "source"
+  ],
+  "ant": "outsider",
+  "tip": "industry insider(업계 관계자)는 기사의 정보원으로 자주 등장하며, insider trading(내부자 거래)은 금융 지문에 나온다.",
+  "q": {
+   "s": "An industry ------- revealed that the electronics maker will launch a new tablet next month.",
+   "o": [
+    "insides",
+    "insight",
+    "inside",
+    "insider"
+   ],
+   "a": 3,
+   "k": "정보를 '밝힌' 주체는 사람이어야 하므로 insider(업계 관계자)가 정답이다. insight(통찰력)는 사람이 아니고, inside, insides는 '안쪽, 내부'를 뜻한다."
+  }
+ },
+ {
+  "w": "retract",
+  "pos": "v",
+  "m": [
+   "(발언·기사를) 철회하다, 취소하다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The newspaper *retracted* the story after learning that its main source was unreliable.",
+  "exKo": "그 신문사는 주요 출처를 신뢰할 수 없다는 사실을 알고 나서 기사를 철회했다.",
+  "col": [
+   {
+    "e": "retract a statement",
+    "k": "발언을 철회하다"
+   },
+   {
+    "e": "retract an offer",
+    "k": "제안을 철회하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "retraction",
+    "pos": "n",
+    "m": "철회, 정정 기사"
+   },
+   {
+    "w": "retractable",
+    "pos": "adj",
+    "m": "접어 넣을 수 있는"
+   }
+  ],
+  "para": [
+   "withdraw",
+   "take back"
+  ],
+  "ant": "",
+  "tip": "retract a statement/claim(발언·주장을 철회하다) 형태로 쓰인다. retractable(접이식의)은 retractable awning(접이식 차양)처럼 제품 설명에도 나온다.",
+  "q": {
+   "s": "The company was forced to ------- its earlier statement after new evidence came to light.",
+   "o": [
+    "extract",
+    "attract",
+    "retract",
+    "distract"
+   ],
+   "a": 2,
+   "k": "새로운 증거가 드러나 이전 발언을 '철회하다'라는 의미이므로 retract가 정답이다. attract(끌어들이다), extract(추출하다), distract(산만하게 하다)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "retraction",
+  "pos": "n",
+  "m": [
+   "철회, 정정 기사"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The magazine published a *retraction* and apologized for the error.",
+  "exKo": "그 잡지는 정정 기사를 싣고 오류에 대해 사과했다.",
+  "col": [
+   {
+    "e": "issue a retraction",
+    "k": "철회 성명을 내다"
+   },
+   {
+    "e": "demand a retraction",
+    "k": "정정 보도를 요구하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "retract",
+    "pos": "v",
+    "m": "철회하다"
+   }
+  ],
+  "para": [
+   "correction",
+   "withdrawal"
+  ],
+  "ant": "",
+  "tip": "동사 retract의 명사형으로 issue/publish a retraction 형태로 쓰인다. Part 7에서 correction(정정)으로 바꿔 쓰인다.",
+  "q": {
+   "s": "After the lawsuit was filed, the magazine agreed to print a ------- of the false claims.",
+   "o": [
+    "retract",
+    "retraction",
+    "retracted",
+    "retractable"
+   ],
+   "a": 1,
+   "k": "관사 a 뒤 명사 자리이므로 retraction이 정답이다. retract는 동사, retracted는 분사이고, retractable(접을 수 있는)은 형용사다."
+  }
+ },
+ {
+  "w": "excerpt",
+  "pos": "n",
+  "m": [
+   "발췌(문), 인용구"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The newsletter includes an *excerpt* from the author's upcoming book.",
+  "exKo": "그 소식지에는 그 작가의 곧 출간될 책에서 발췌한 글이 실려 있다.",
+  "col": [
+   {
+    "e": "excerpt from",
+    "k": "~에서 발췌한 부분"
+   },
+   {
+    "e": "read an excerpt",
+    "k": "발췌문을 낭독하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "extract",
+   "passage"
+  ],
+  "ant": "",
+  "tip": "excerpt from(~에서 발췌한 글)처럼 from과 함께 쓰며, Part 7에서 extract, passage로 바꿔 쓰인다. except(~을 제외하고)와 철자를 혼동하지 않는다.",
+  "q": {
+   "s": "At the event, the author will read an ------- from her latest novel and sign copies.",
+   "o": [
+    "excerpt",
+    "except",
+    "exempt",
+    "expert"
+   ],
+   "a": 0,
+   "k": "작가가 신작 소설에서 '발췌한 부분'을 낭독하는 것이므로 excerpt가 정답이다. except는 전치사, exempt는 형용사이고, expert(전문가)는 낭독할 대상이 아니다."
+  }
+ }
+]

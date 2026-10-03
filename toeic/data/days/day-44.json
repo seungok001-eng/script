@@ -1,0 +1,1947 @@
+[
+ {
+  "w": "boarding gate",
+  "pos": "phr",
+  "m": [
+   "탑승구"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "Passengers for Flight 815 should arrive at the *boarding gate* by 10:20 A.M.",
+  "exKo": "815편 승객은 오전 10시 20분까지 탑승구에 도착해야 한다.",
+  "col": [
+   {
+    "e": "proceed to the boarding gate",
+    "k": "탑승구로 이동하다"
+   },
+   {
+    "e": "boarding gate number",
+    "k": "탑승구 번호"
+   }
+  ],
+  "der": [
+   {
+    "w": "board",
+    "pos": "v",
+    "m": "탑승하다"
+   }
+  ],
+  "para": [
+   "gate",
+   "departure gate"
+  ],
+  "ant": "",
+  "tip": "공항 안내 방송(Part 4)에서 boarding gate가 변경되었다는 내용이 자주 출제된다. 탑승권인 boarding pass와 구분하자.",
+  "q": {
+   "s": "Travelers should check the departure screens, as the ------- for some flights may change at short notice.",
+   "o": [
+    "boarding pass",
+    "baggage allowance",
+    "flight attendant",
+    "boarding gate"
+   ],
+   "a": 3,
+   "k": "출발 안내 화면에서 확인해야 하고 갑자기 바뀔 수 있는 것은 '탑승구'이므로 boarding gate가 정답이다. boarding pass(탑승권), baggage allowance(수하물 허용량), flight attendant(승무원)는 출발 안내 화면으로 확인하는 정보가 아니다."
+  }
+ },
+ {
+  "w": "departure lounge",
+  "pos": "phr",
+  "m": [
+   "출발 라운지, 출국 대합실"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Several passengers were charging their phones while waiting in the *departure lounge*.",
+  "exKo": "여러 승객이 출발 라운지에서 기다리며 휴대 전화를 충전하고 있었다.",
+  "col": [
+   {
+    "e": "wait in the departure lounge",
+    "k": "출발 라운지에서 기다리다"
+   },
+   {
+    "e": "departure lounge at Terminal 2",
+    "k": "2터미널 출발 라운지"
+   }
+  ],
+  "der": [
+   {
+    "w": "depart",
+    "pos": "v",
+    "m": "출발하다"
+   },
+   {
+    "w": "departure",
+    "pos": "n",
+    "m": "출발"
+   }
+  ],
+  "para": [
+   "waiting area",
+   "gate area"
+  ],
+  "ant": "arrivals hall",
+  "tip": "보안 검색 후 탑승 전까지 머무는 공간으로, 안내 방송의 장소를 묻는 Part 3·4 문제에 나온다. 도착 구역은 arrivals hall이라고 한다.",
+  "q": {
+   "s": "Free Wi-Fi and charging stations are available to all travelers in the ------- at Terminal 2.",
+   "o": [
+    "arrival time",
+    "travel itinerary",
+    "round trip",
+    "departure lounge"
+   ],
+   "a": 3,
+   "k": "여행객이 무료 와이파이와 충전 시설을 이용하는 '장소'이므로 departure lounge가 정답이다. arrival time(도착 시각), travel itinerary(여행 일정표), round trip(왕복 여행)은 장소가 아니다."
+  }
+ },
+ {
+  "w": "travel expenses",
+  "pos": "phr",
+  "m": [
+   "출장비, 여행 경비"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Employees must submit receipts for all *travel expenses* within two weeks of returning.",
+  "exKo": "직원들은 복귀 후 2주 이내에 모든 출장비 영수증을 제출해야 한다.",
+  "col": [
+   {
+    "e": "reimburse travel expenses",
+    "k": "출장비를 환급하다"
+   },
+   {
+    "e": "cover travel expenses",
+    "k": "여행 경비를 부담하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "expense",
+    "pos": "n",
+    "m": "비용, 경비"
+   },
+   {
+    "w": "expensive",
+    "pos": "adj",
+    "m": "비싼"
+   }
+  ],
+  "para": [
+   "travel costs",
+   "trip expenses"
+  ],
+  "ant": "",
+  "tip": "reimburse(환급하다), cover(부담하다), submit receipts(영수증을 제출하다)와 함께 Part 7 사내 규정 지문에 자주 나온다. expenses는 보통 복수형으로 쓴다.",
+  "q": {
+   "s": "The company will reimburse ------- such as hotel stays, meals, and taxi fares.",
+   "o": [
+    "travel agents",
+    "travel expenses",
+    "travel guides",
+    "travel destinations"
+   ],
+   "a": 1,
+   "k": "호텔 숙박, 식사, 택시 요금을 예로 드는 환급 대상은 '출장비'이므로 travel expenses가 정답이다. travel agents(여행사 직원), travel guides(여행 안내서), travel destinations(여행지)는 환급 대상이 아니다."
+  }
+ },
+ {
+  "w": "hostel",
+  "pos": "n",
+  "m": [
+   "호스텔, (저렴한) 숙소"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The students stayed at a budget *hostel* near the central train station.",
+  "exKo": "학생들은 중앙 기차역 근처의 저렴한 호스텔에 묵었다.",
+  "col": [
+   {
+    "e": "youth hostel",
+    "k": "유스호스텔"
+   },
+   {
+    "e": "budget hostel",
+    "k": "저렴한 호스텔"
+   }
+  ],
+  "der": [],
+  "para": [
+   "inexpensive lodging",
+   "guesthouse"
+  ],
+  "ant": "",
+  "tip": "hostel(저렴한 숙소)과 hostess(여주인, 안내 직원), hospital(병원)처럼 철자가 비슷한 단어를 고르는 어휘 문제에 유의하자.",
+  "q": {
+   "s": "Budget travelers often choose a ------- because it offers shared rooms at low prices.",
+   "o": [
+    "hostess",
+    "hostile",
+    "hostel",
+    "hospital"
+   ],
+   "a": 2,
+   "k": "공용 객실을 저렴하게 제공하는 숙소는 hostel이다. hostess(여주인, 안내 직원)와 hospital(병원)은 객실을 제공하는 숙소가 아니고, hostile(적대적인)은 형용사다."
+  }
+ },
+ {
+  "w": "rebook",
+  "pos": "v",
+  "m": [
+   "다시 예약하다, 예약을 변경하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5
+  ],
+  "ex": "After the storm canceled her flight, Ms. Sato was *rebooked* on an evening departure.",
+  "exKo": "폭풍으로 항공편이 취소되자 Sato 씨는 저녁 출발편으로 다시 예약되었다.",
+  "col": [
+   {
+    "e": "rebook a flight",
+    "k": "항공편을 다시 예약하다"
+   },
+   {
+    "e": "be rebooked on",
+    "k": "~편으로 재예약되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "book",
+    "pos": "v",
+    "m": "예약하다"
+   },
+   {
+    "w": "rebooking",
+    "pos": "n",
+    "m": "재예약"
+   }
+  ],
+  "para": [
+   "reschedule",
+   "change a reservation"
+  ],
+  "ant": "",
+  "tip": "rebook A on/onto B(A를 B편으로 다시 예약해 주다) 형태로 항공편 취소 안내 방송(Part 4)에 자주 나온다. reconfirm(재확인하다)과 의미를 구분하자.",
+  "q": {
+   "s": "Passengers whose flights are canceled may ------- at no extra charge through the airline's app.",
+   "o": [
+    "rebooking",
+    "rebooked",
+    "rebook",
+    "rebooks"
+   ],
+   "a": 2,
+   "k": "조동사 may 뒤에는 동사원형이 와야 하므로 rebook이 정답이다. rebooking은 명사·동명사, rebooked와 rebooks는 동사원형이 아니다."
+  }
+ },
+ {
+  "w": "airline",
+  "pos": "n",
+  "m": [
+   "항공사"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "The *airline* added three new direct routes to Southeast Asia this summer.",
+  "exKo": "그 항공사는 올여름 동남아시아행 신규 직항 노선 세 개를 추가했다.",
+  "col": [
+   {
+    "e": "airline ticket",
+    "k": "항공권"
+   },
+   {
+    "e": "budget airline",
+    "k": "저가 항공사"
+   },
+   {
+    "e": "airline industry",
+    "k": "항공 업계"
+   }
+  ],
+  "der": [
+   {
+    "w": "air",
+    "pos": "n",
+    "m": "공기, 항공"
+   }
+  ],
+  "para": [
+   "carrier",
+   "air carrier"
+  ],
+  "ant": "",
+  "tip": "airline은 '항공사'라는 회사를 뜻하고 비행기 자체는 aircraft/plane이다. Part 7에서는 carrier로 바꿔 표현되는 경우가 많다.",
+  "q": {
+   "s": "Skyway Air was named the best ------- in the region for on-time performance and customer service.",
+   "o": [
+    "airline",
+    "aisle",
+    "airfare",
+    "airmail"
+   ],
+   "a": 0,
+   "k": "정시 운항과 고객 서비스로 최고로 선정된 대상은 '항공사'이므로 airline이 정답이다. aisle(통로), airfare(항공 요금), airmail(항공 우편)은 이런 평가를 받는 대상이 아니다."
+  }
+ },
+ {
+  "w": "inbound",
+  "pos": "adj",
+  "m": [
+   "(공항·도시로) 들어오는, 도착하는",
+   "입국의"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "*Inbound* flights from Chicago are delayed because of heavy snow.",
+  "exKo": "시카고발 도착 항공편들이 폭설 때문에 지연되고 있다.",
+  "col": [
+   {
+    "e": "inbound flight",
+    "k": "도착 항공편"
+   },
+   {
+    "e": "inbound tourism",
+    "k": "외국인 관광객 유치, 인바운드 관광"
+   }
+  ],
+  "der": [],
+  "para": [
+   "arriving",
+   "incoming"
+  ],
+  "ant": "outbound",
+  "tip": "inbound(들어오는)와 outbound(나가는)는 반의어로 짝지어 출제된다. Part 7에서는 arriving, incoming으로 바꿔 표현된다.",
+  "q": {
+   "s": "The airport has added extra staff to process ------- passengers arriving from overseas.",
+   "o": [
+    "outbound",
+    "indoor",
+    "inborn",
+    "inbound"
+   ],
+   "a": 3,
+   "k": "해외에서 '도착하는' 승객을 처리한다는 의미이므로 inbound가 정답이다. outbound(떠나는)는 arriving과 모순되고, indoor(실내의), inborn(타고난)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "reconfirm",
+  "pos": "v",
+  "m": [
+   "재확인하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5
+  ],
+  "ex": "You should *reconfirm* your flight with the airline at least two days before you leave.",
+  "exKo": "출발 최소 이틀 전에 항공사에 항공편을 재확인해야 한다.",
+  "col": [
+   {
+    "e": "reconfirm a reservation",
+    "k": "예약을 재확인하다"
+   },
+   {
+    "e": "reconfirm a flight",
+    "k": "항공편을 재확인하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "confirm",
+    "pos": "v",
+    "m": "확인하다"
+   },
+   {
+    "w": "reconfirmation",
+    "pos": "n",
+    "m": "재확인"
+   }
+  ],
+  "para": [
+   "verify",
+   "double-check"
+  ],
+  "ant": "",
+  "tip": "reconfirm은 타동사로 a reservation, an appointment 같은 목적어를 바로 취한다. 동사원형 자리에 명사 reconfirmation을 넣는 오답에 주의하자.",
+  "q": {
+   "s": "Guests are asked to ------- their arrival time with the front desk a day in advance.",
+   "o": [
+    "reconfirmation",
+    "reconfirmed",
+    "reconfirm",
+    "reconfirming"
+   ],
+   "a": 2,
+   "k": "be asked to 뒤에는 동사원형이 와야 하므로 reconfirm이 정답이다. reconfirmation은 명사이고, reconfirmed와 reconfirming은 동사원형이 아니다."
+  }
+ },
+ {
+  "w": "standby",
+  "pos": "n",
+  "m": [
+   "대기(자)",
+   "대기 상태"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Mr. Novak was put on *standby* for the next flight to Seattle.",
+  "exKo": "Novak 씨는 시애틀행 다음 항공편의 대기자로 올라갔다.",
+  "col": [
+   {
+    "e": "on standby",
+    "k": "대기 중인"
+   },
+   {
+    "e": "standby list",
+    "k": "대기자 명단"
+   },
+   {
+    "e": "standby passenger",
+    "k": "대기 승객"
+   }
+  ],
+  "der": [
+   {
+    "w": "stand by",
+    "pos": "phr",
+    "m": "대기하다"
+   }
+  ],
+  "para": [
+   "waiting list",
+   "reserve"
+  ],
+  "ant": "",
+  "tip": "on standby(대기 중인)와 standby list(대기자 명단)가 공항 안내 방송에 자주 나온다. 동사로 쓸 때는 띄어 써서 stand by(대기하다)라고 한다.",
+  "q": {
+   "s": "Since the morning flight was full, Ms. Diaz waited on the ------- list for an open seat.",
+   "o": [
+    "standpoint",
+    "standstill",
+    "standby",
+    "standout"
+   ],
+   "a": 2,
+   "k": "만석이라 빈자리를 기다리는 명단은 '대기자 명단(standby list)'이므로 standby가 정답이다. standpoint(관점), standstill(정지), standout(두드러진 사람·것)은 list와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "reserve",
+  "pos": "v",
+  "m": [
+   "예약하다",
+   "(권리 등을) 보유하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "You can *reserve* a rental car online and pick it up at the airport.",
+  "exKo": "온라인으로 렌터카를 예약하고 공항에서 차를 받을 수 있다.",
+  "col": [
+   {
+    "e": "reserve a room",
+    "k": "방을 예약하다"
+   },
+   {
+    "e": "reserve the right to",
+    "k": "~할 권리를 보유하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "reservation",
+    "pos": "n",
+    "m": "예약"
+   },
+   {
+    "w": "reserved",
+    "pos": "adj",
+    "m": "예약된, 내성적인"
+   }
+  ],
+  "para": [
+   "book"
+  ],
+  "ant": "cancel",
+  "tip": "reserve는 book과 같은 뜻의 타동사이며, 공지문의 reserve the right to(~할 권리를 보유하다)도 빈출이다. 명사 reservation과의 품사 구분 문제가 자주 나온다.",
+  "q": {
+   "s": "Attendees are advised to ------- their hotel rooms early, as the conference is expected to sell out.",
+   "o": [
+    "reservation",
+    "reserve",
+    "reserved",
+    "reservedly"
+   ],
+   "a": 1,
+   "k": "be advised to 뒤에는 동사원형이 와야 하므로 reserve가 정답이다. reservation은 명사, reserved는 형용사·과거분사, reservedly는 부사다."
+  }
+ },
+ {
+  "w": "unattended",
+  "pos": "adj",
+  "m": [
+   "방치된, 주인 없는",
+   "지켜보는 사람이 없는"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5
+  ],
+  "ex": "Passengers were reminded never to leave their belongings *unattended* on the platform.",
+  "exKo": "승객들은 승강장에서 절대 소지품을 방치하지 말라는 안내를 받았다.",
+  "col": [
+   {
+    "e": "leave something unattended",
+    "k": "~을 방치하다"
+   },
+   {
+    "e": "unattended baggage",
+    "k": "주인 없는 수하물"
+   }
+  ],
+  "der": [
+   {
+    "w": "attend",
+    "pos": "v",
+    "m": "참석하다, 돌보다"
+   },
+   {
+    "w": "attendant",
+    "pos": "n",
+    "m": "안내원, 승무원"
+   }
+  ],
+  "para": [
+   "left alone",
+   "abandoned"
+  ],
+  "ant": "",
+  "tip": "공항·역 안내 방송의 do not leave your belongings unattended(소지품을 방치하지 마십시오)가 대표 표현이다. leave + 목적어 + unattended 구조를 기억하자.",
+  "q": {
+   "s": "For security reasons, any ------- luggage will be removed by airport staff.",
+   "o": [
+    "unaware",
+    "unattended",
+    "untimely",
+    "unemployed"
+   ],
+   "a": 1,
+   "k": "보안상 공항 직원이 치우는 것은 '주인 없이 방치된' 짐이므로 unattended가 정답이다. unaware(알지 못하는), untimely(때 이른), unemployed(실직한)는 luggage를 꾸미기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "tour",
+  "pos": "v",
+  "m": [
+   "둘러보다, 견학하다",
+   "순회하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "Members of the press *toured* the new terminal a week before it opened.",
+  "exKo": "기자단은 새 터미널이 문을 열기 일주일 전에 그곳을 둘러보았다.",
+  "col": [
+   {
+    "e": "tour a facility",
+    "k": "시설을 둘러보다"
+   },
+   {
+    "e": "take a tour of",
+    "k": "~을 견학하다"
+   },
+   {
+    "e": "factory tour",
+    "k": "공장 견학"
+   }
+  ],
+  "der": [
+   {
+    "w": "tourist",
+    "pos": "n",
+    "m": "관광객"
+   },
+   {
+    "w": "tourism",
+    "pos": "n",
+    "m": "관광업"
+   }
+  ],
+  "para": [
+   "visit",
+   "look around"
+  ],
+  "ant": "",
+  "tip": "tour는 명사(take a tour of)와 타동사(tour the factory)로 모두 쓰이며, 동사일 때는 전치사 없이 장소를 목적어로 취한다. 사람명사 tourist와 구분하자.",
+  "q": {
+   "s": "Prospective buyers will have the chance to ------- the model apartments this weekend.",
+   "o": [
+    "tourist",
+    "tourism",
+    "toured",
+    "tour"
+   ],
+   "a": 3,
+   "k": "to부정사 to 뒤에는 동사원형이 와야 하므로 '둘러보다'라는 뜻의 tour가 정답이다. tourist와 tourism은 명사이고, toured는 동사원형이 아니다."
+  }
+ },
+ {
+  "w": "aviation",
+  "pos": "n",
+  "m": [
+   "항공(업)",
+   "비행"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Kowalski is studying *aviation* management at a technical college in Ohio.",
+  "exKo": "Kowalski 씨는 오하이오의 한 기술 대학에서 항공 경영을 공부하고 있다.",
+  "col": [
+   {
+    "e": "aviation industry",
+    "k": "항공 업계"
+   },
+   {
+    "e": "civil aviation",
+    "k": "민간 항공"
+   }
+  ],
+  "der": [
+   {
+    "w": "aviator",
+    "pos": "n",
+    "m": "비행사"
+   }
+  ],
+  "para": [
+   "air travel",
+   "flight"
+  ],
+  "ant": "",
+  "tip": "aviation은 항공기 운항·제조 등 항공 분야 전체를 가리키는 불가산명사로, aviation industry, aviation safety 같은 복합명사로 쓰인다.",
+  "q": {
+   "s": "The conference will bring together experts from across the ------- industry, including pilots and aircraft engineers.",
+   "o": [
+    "aviation",
+    "avenue",
+    "aversion",
+    "availability"
+   ],
+   "a": 0,
+   "k": "조종사와 항공기 엔지니어가 속한 분야는 '항공' 업계이므로 aviation이 정답이다. avenue(거리, 방안), aversion(혐오), availability(이용 가능성)는 industry와 어울려 이런 전문가 집단을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "visa",
+  "pos": "n",
+  "m": [
+   "비자, 사증"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Ms. Chen applied for a business *visa* two months before her trip to Brazil.",
+  "exKo": "Chen 씨는 브라질 출장 두 달 전에 상용 비자를 신청했다.",
+  "col": [
+   {
+    "e": "apply for a visa",
+    "k": "비자를 신청하다"
+   },
+   {
+    "e": "business visa",
+    "k": "상용 비자"
+   },
+   {
+    "e": "work visa",
+    "k": "취업 비자"
+   }
+  ],
+  "der": [],
+  "para": [
+   "entry permit"
+  ],
+  "ant": "",
+  "tip": "apply for a visa(비자를 신청하다), obtain a visa(비자를 받다)가 해외 출장 관련 Part 7 지문에 나온다. passport(여권)와 구분하자.",
+  "q": {
+   "s": "Travelers from some countries must obtain a ------- before they are allowed to enter Australia.",
+   "o": [
+    "vista",
+    "visitor",
+    "vision",
+    "visa"
+   ],
+   "a": 3,
+   "k": "입국 전에 받아야 하는 것은 '비자'이므로 visa가 정답이다. vista(경치), visitor(방문객), vision(비전, 시력)은 obtain의 목적어로 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "concourse",
+  "pos": "n",
+  "m": [
+   "(공항·역의) 중앙 홀, 탑승동"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The airport's renovated *concourse* now features a food court and a children's play area.",
+  "exKo": "새로 단장한 공항 중앙 홀에는 이제 푸드코트와 어린이 놀이 공간이 있다.",
+  "col": [
+   {
+    "e": "main concourse",
+    "k": "중앙 홀"
+   },
+   {
+    "e": "Concourse B",
+    "k": "B 탑승동"
+   }
+  ],
+  "der": [],
+  "para": [
+   "hall",
+   "terminal area"
+  ],
+  "ant": "",
+  "tip": "공항에서 탑승구들이 모여 있는 구역을 Concourse A, B처럼 부르며, Part 4 공항 안내 방송에서 장소를 묻는 문제로 출제된다.",
+  "q": {
+   "s": "Gates 20 through 35 are located in ------- B, a short walk from the security checkpoint.",
+   "o": [
+    "Concourse",
+    "Concord",
+    "Concern",
+    "Concept"
+   ],
+   "a": 0,
+   "k": "탑승구 20~35번이 있는 공항 구역을 가리키므로 Concourse가 정답이다. Concord(일치), Concern(우려), Concept(개념)는 장소를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "chauffeur",
+  "pos": "n",
+  "m": [
+   "(전속) 운전기사"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "A *chauffeur* will meet the visiting executives at the airport and drive them to their hotel.",
+  "exKo": "운전기사가 공항에서 방문 임원들을 맞이해 호텔까지 태워 줄 것이다.",
+  "col": [
+   {
+    "e": "private chauffeur",
+    "k": "전속 운전기사"
+   },
+   {
+    "e": "chauffeur service",
+    "k": "운전기사 서비스"
+   }
+  ],
+  "der": [
+   {
+    "w": "chauffeured",
+    "pos": "adj",
+    "m": "운전기사가 딸린"
+   }
+  ],
+  "para": [
+   "driver"
+  ],
+  "ant": "",
+  "tip": "프랑스어에서 온 단어로 발음([ʃóufər])과 철자에 유의하자. Part 7에서는 driver, car service로 바꿔 표현된다.",
+  "q": {
+   "s": "Ms. Wong's company hired a ------- to drive the visiting investors around the city during their stay.",
+   "o": [
+    "chauffeur",
+    "cashier",
+    "curator",
+    "custodian"
+   ],
+   "a": 0,
+   "k": "방문 투자자들을 태우고 시내를 다니도록 고용한 사람이므로 chauffeur(운전기사)가 정답이다. cashier(계산원), curator(큐레이터), custodian(관리인)은 운전 서비스와 관련이 없다."
+  }
+ },
+ {
+  "w": "suitcase",
+  "pos": "n",
+  "m": [
+   "여행 가방"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "A man is lifting a *suitcase* into the trunk of a taxi.",
+  "exKo": "한 남자가 여행 가방을 택시 트렁크에 싣고 있다.",
+  "col": [
+   {
+    "e": "pack a suitcase",
+    "k": "여행 가방을 싸다"
+   },
+   {
+    "e": "roll a suitcase",
+    "k": "여행 가방을 끌다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "bag",
+   "luggage"
+  ],
+  "ant": "",
+  "tip": "Part 1 사진 묘사에서 is pulling a suitcase(가방을 끌고 있다), is unpacking a suitcase(가방에서 짐을 꺼내고 있다) 같은 동작 표현으로 출제된다. 가산명사라 luggage(불가산)와 구분한다.",
+  "q": {
+   "s": "Mr. Hall packed his ------- the night before so that he could leave for the airport early.",
+   "o": [
+    "showcase",
+    "staircase",
+    "suitcase",
+    "casework"
+   ],
+   "a": 2,
+   "k": "공항에 일찍 출발하기 위해 전날 밤 싼 것은 '여행 가방'이므로 suitcase가 정답이다. showcase(진열장), staircase(계단), casework(사례 연구)는 pack(짐을 싸다)의 목적어로 맞지 않는다."
+  }
+ },
+ {
+  "w": "take off",
+  "pos": "phr",
+  "m": [
+   "이륙하다",
+   "(옷 등을) 벗다",
+   "(휴가를) 내다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "Our plane *took off* an hour late because of thick fog.",
+  "exKo": "우리 비행기는 짙은 안개 때문에 한 시간 늦게 이륙했다.",
+  "col": [
+   {
+    "e": "take off on time",
+    "k": "정시에 이륙하다"
+   },
+   {
+    "e": "take a day off",
+    "k": "하루 휴가를 내다"
+   }
+  ],
+  "der": [
+   {
+    "w": "takeoff",
+    "pos": "n",
+    "m": "이륙"
+   }
+  ],
+  "para": [
+   "depart",
+   "leave the ground"
+  ],
+  "ant": "land",
+  "tip": "take off는 '이륙하다' 외에 take time off(휴가를 내다)로도 자주 쓰인다. 명사형은 붙여 쓴 takeoff다.",
+  "q": {
+   "s": "The plane is scheduled to ------- at 9:40 A.M., so passengers should be at the gate by 9:10.",
+   "o": [
+    "take off",
+    "take on",
+    "take after",
+    "take over"
+   ],
+   "a": 0,
+   "k": "비행기가 오전 9시 40분에 '이륙하다'라는 의미이므로 take off가 정답이다. take on(떠맡다), take after(닮다), take over(인수하다)는 목적어가 필요하거나 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "outbound",
+  "pos": "adj",
+  "m": [
+   "(밖으로) 떠나는, 출국하는"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "All *outbound* flights were grounded for two hours during the thunderstorm.",
+  "exKo": "뇌우가 치는 동안 모든 출발 항공편이 두 시간 동안 이륙하지 못했다.",
+  "col": [
+   {
+    "e": "outbound flight",
+    "k": "출발 항공편"
+   },
+   {
+    "e": "outbound shipment",
+    "k": "출고 화물"
+   }
+  ],
+  "der": [],
+  "para": [
+   "departing",
+   "outgoing"
+  ],
+  "ant": "inbound",
+  "tip": "outbound는 공항뿐 아니라 물류에서도 outbound shipments(출고 화물)처럼 쓰인다. 반의어 inbound(들어오는)와 짝으로 기억하자.",
+  "q": {
+   "s": "Security lines for ------- international flights tend to be longest in the early morning.",
+   "o": [
+    "outdated",
+    "outspoken",
+    "outlying",
+    "outbound"
+   ],
+   "a": 3,
+   "k": "보안 검색 줄이 생기는 것은 '출발하는' 국제선이므로 outbound가 정답이다. outdated(구식의), outspoken(거침없이 말하는), outlying(외딴)은 flights를 꾸미기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "runway",
+  "pos": "n",
+  "m": [
+   "활주로"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "The plane waited on the *runway* for nearly an hour before it was cleared for departure.",
+  "exKo": "그 비행기는 출발 허가를 받기 전까지 활주로에서 거의 한 시간을 기다렸다.",
+  "col": [
+   {
+    "e": "on the runway",
+    "k": "활주로에서"
+   },
+   {
+    "e": "runway closure",
+    "k": "활주로 폐쇄"
+   }
+  ],
+  "der": [],
+  "para": [
+   "airstrip"
+  ],
+  "ant": "",
+  "tip": "Part 4 기장 안내 방송에서 활주로 혼잡이나 폐쇄로 인한 지연 사유로 자주 나온다. runway는 패션쇼 무대라는 뜻도 있다.",
+  "q": {
+   "s": "One ------- will be closed for repairs next week, so some flights may experience delays.",
+   "o": [
+    "railway",
+    "runway",
+    "rundown",
+    "runoff"
+   ],
+   "a": 1,
+   "k": "보수 공사로 폐쇄되어 항공편이 지연될 수 있는 것은 '활주로'이므로 runway가 정답이다. railway(철도)는 항공편 지연과 관련이 없고, rundown(요약), runoff(유출수)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "aircraft",
+  "pos": "n",
+  "m": [
+   "항공기"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The airline plans to replace its older *aircraft* with more fuel-efficient models.",
+  "exKo": "그 항공사는 오래된 항공기를 연비가 더 좋은 기종으로 교체할 계획이다.",
+  "col": [
+   {
+    "e": "commercial aircraft",
+    "k": "민간 항공기"
+   },
+   {
+    "e": "aircraft maintenance",
+    "k": "항공기 정비"
+   }
+  ],
+  "der": [
+   {
+    "w": "airplane",
+    "pos": "n",
+    "m": "비행기"
+   }
+  ],
+  "para": [
+   "plane",
+   "jet"
+  ],
+  "ant": "",
+  "tip": "aircraft는 단수와 복수의 형태가 같아 aircrafts로 쓰지 않는다. several aircraft처럼 복수 수식어 뒤에도 그대로 쓰는 점이 출제 포인트다.",
+  "q": {
+   "s": "Several of the airline's ------- are being inspected after a software problem was reported.",
+   "o": [
+    "aircrafts",
+    "airliner",
+    "aircraft",
+    "airborne"
+   ],
+   "a": 2,
+   "k": "aircraft는 단복수 동형 명사이므로 Several of 뒤에서도 aircraft가 정답이다. aircrafts는 틀린 형태이고, airliner는 단수형이라 Several of와 맞지 않으며, airborne(공중에 떠 있는)은 형용사다."
+  }
+ },
+ {
+  "w": "cabin",
+  "pos": "n",
+  "m": [
+   "(비행기·배의) 객실, 선실",
+   "오두막"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The flight attendants checked the *cabin* before the plane began its descent.",
+  "exKo": "승무원들은 비행기가 하강을 시작하기 전에 객실을 점검했다.",
+  "col": [
+   {
+    "e": "cabin crew",
+    "k": "객실 승무원"
+   },
+   {
+    "e": "business class cabin",
+    "k": "비즈니스석 객실"
+   }
+  ],
+  "der": [],
+  "para": [
+   "passenger compartment"
+  ],
+  "ant": "",
+  "tip": "cabin crew(객실 승무원), cabin baggage(기내 수하물)처럼 복합명사로 자주 쓰인다. cabinet(보관장)과 철자를 혼동하지 말자.",
+  "q": {
+   "s": "Business class passengers enjoy a quieter ------- with more legroom and larger seats.",
+   "o": [
+    "cabin",
+    "cable",
+    "cabinet",
+    "capital"
+   ],
+   "a": 0,
+   "k": "비즈니스석 승객이 이용하는 더 조용하고 다리 공간이 넓은 곳은 '객실'이므로 cabin이 정답이다. cable(전선), cabinet(보관장), capital(자본, 수도)은 좌석이 있는 공간이 아니다."
+  }
+ },
+ {
+  "w": "crew",
+  "pos": "n",
+  "m": [
+   "승무원(단)",
+   "(작업) 팀, 반"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4,
+   7
+  ],
+  "ex": "A maintenance *crew* is repairing the moving walkway near Gate 12.",
+  "exKo": "정비반이 12번 탑승구 근처의 무빙워크를 수리하고 있다.",
+  "col": [
+   {
+    "e": "cabin crew",
+    "k": "객실 승무원"
+   },
+   {
+    "e": "maintenance crew",
+    "k": "정비반"
+   },
+   {
+    "e": "film crew",
+    "k": "촬영진"
+   }
+  ],
+  "der": [
+   {
+    "w": "crew member",
+    "pos": "n",
+    "m": "승무원, 팀원"
+   }
+  ],
+  "para": [
+   "staff",
+   "team"
+  ],
+  "ant": "",
+  "tip": "crew는 집합명사로 한 팀 전체를 가리키며, 개인은 a crew member라고 한다. 비행기뿐 아니라 공사·청소·촬영 팀에도 쓰인다.",
+  "q": {
+   "s": "The cabin ------- will be serving light refreshments shortly after takeoff.",
+   "o": [
+    "crowd",
+    "clue",
+    "crew",
+    "cue"
+   ],
+   "a": 2,
+   "k": "이륙 직후 다과를 제공하는 사람들은 '객실 승무원(cabin crew)'이므로 crew가 정답이다. crowd(군중), clue(단서), cue(신호)는 cabin과 어울려 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "nonstop",
+  "pos": "adj",
+  "m": [
+   "직항의, 도중에 서지 않는",
+   "쉬지 않는"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Coastal Air now offers *nonstop* flights between Busan and Singapore.",
+  "exKo": "Coastal Air는 이제 부산과 싱가포르를 잇는 직항편을 운항한다.",
+  "col": [
+   {
+    "e": "nonstop flight",
+    "k": "직항편"
+   },
+   {
+    "e": "fly nonstop",
+    "k": "직항으로 가다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "direct"
+  ],
+  "ant": "connecting",
+  "tip": "nonstop은 형용사(nonstop flight)와 부사(fly nonstop)로 모두 쓰인다. Part 7에서는 direct flight로 바꿔 표현되며 반대 개념은 connecting flight(연결편)다.",
+  "q": {
+   "s": "To save time, Mr. Park booked a ------- flight instead of one with a layover in Tokyo.",
+   "o": [
+    "nonprofit",
+    "nonstop",
+    "nonsense",
+    "nonetheless"
+   ],
+   "a": 1,
+   "k": "도쿄 경유편 대신 시간을 아끼기 위해 예약한 것은 '직항' 항공편이므로 nonstop이 정답이다. nonprofit(비영리의), nonsense(터무니없는 말), nonetheless(그럼에도 불구하고)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "one-way",
+  "pos": "adj",
+  "m": [
+   "편도의",
+   "일방통행의"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   7
+  ],
+  "ex": "A *one-way* ticket to Osaka costs about half the price of a return ticket.",
+  "exKo": "오사카행 편도 항공권은 왕복 항공권의 약 절반 가격이다.",
+  "col": [
+   {
+    "e": "one-way ticket",
+    "k": "편도표"
+   },
+   {
+    "e": "one-way street",
+    "k": "일방통행로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "single"
+  ],
+  "ant": "round-trip",
+  "tip": "one-way ticket(편도표)과 round-trip ticket(왕복표)을 구분하는 듣기 문제가 나온다. one-way street(일방통행로)처럼 교통 맥락에서도 쓰인다.",
+  "q": {
+   "s": "Because Ms. Lopez will drive back with a colleague, she only needs a ------- ticket.",
+   "o": [
+    "round-trip",
+    "first-aid",
+    "full-time",
+    "one-way"
+   ],
+   "a": 3,
+   "k": "돌아올 때는 동료와 차로 오므로 '편도' 표만 필요하다. 따라서 one-way가 정답이다. round-trip(왕복의)은 문맥과 모순되고, first-aid(응급 처치의), full-time(정규직의)은 ticket과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "economy class",
+  "pos": "phr",
+  "m": [
+   "일반석, 이코노미석"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Company policy requires employees to fly *economy class* on flights shorter than six hours.",
+  "exKo": "회사 규정상 직원들은 6시간 미만 비행에서는 일반석을 이용해야 한다.",
+  "col": [
+   {
+    "e": "fly economy class",
+    "k": "일반석으로 비행하다"
+   },
+   {
+    "e": "upgrade from economy class",
+    "k": "일반석에서 업그레이드하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "economical",
+    "pos": "adj",
+    "m": "경제적인, 절약하는"
+   }
+  ],
+  "para": [
+   "coach"
+  ],
+  "ant": "business class",
+  "tip": "fly economy (class)처럼 부사적으로 전치사 없이 쓰기도 한다. 출장 규정 지문에서 business class, first class와 함께 비교된다.",
+  "q": {
+   "s": "To reduce costs, all staff members will travel in ------- on domestic business trips.",
+   "o": [
+    "economic policy",
+    "economist",
+    "economy class",
+    "economical"
+   ],
+   "a": 2,
+   "k": "비용 절감을 위해 직원들이 이용하는 좌석 등급이므로 economy class가 정답이다. economic policy(경제 정책), economist(경제학자)는 travel in의 목적어로 맞지 않고, economical(경제적인)은 형용사다."
+  }
+ },
+ {
+  "w": "frequent flyer",
+  "pos": "phr",
+  "m": [
+   "(항공사) 상용 고객",
+   "마일리지 회원"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "As a *frequent flyer*, Mr. Baker often receives free upgrades to business class.",
+  "exKo": "상용 고객인 Baker 씨는 비즈니스석으로 무료 업그레이드를 자주 받는다.",
+  "col": [
+   {
+    "e": "frequent flyer program",
+    "k": "마일리지 프로그램"
+   },
+   {
+    "e": "frequent flyer miles",
+    "k": "항공 마일리지"
+   }
+  ],
+  "der": [
+   {
+    "w": "frequently",
+    "pos": "adv",
+    "m": "자주"
+   }
+  ],
+  "para": [
+   "loyalty member"
+  ],
+  "ant": "",
+  "tip": "frequent flyer program(마일리지 프로그램)의 형태로 Part 7 항공사 광고·이메일에 자주 나온다. frequent는 여기서 '자주 이용하는'이라는 형용사다.",
+  "q": {
+   "s": "Members of our ------- program can use their miles to book flights to over 200 destinations.",
+   "o": [
+    "frequently",
+    "frequency",
+    "frequent flyer",
+    "frequented"
+   ],
+   "a": 2,
+   "k": "마일리지로 항공권을 예약할 수 있는 '상용 고객(마일리지) 프로그램'이므로 frequent flyer가 정답이다. frequently는 부사, frequency(빈도)는 의미가 맞지 않으며, frequented(사람들이 자주 찾는)는 program을 꾸미기에 어색하다."
+  }
+ },
+ {
+  "w": "airfare",
+  "pos": "n",
+  "m": [
+   "항공 요금"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Booking two months ahead helped the team save nearly 30 percent on *airfare*.",
+  "exKo": "두 달 앞서 예약한 덕분에 팀은 항공 요금을 30퍼센트 가까이 절약했다.",
+  "col": [
+   {
+    "e": "discounted airfare",
+    "k": "할인 항공 요금"
+   },
+   {
+    "e": "round-trip airfare",
+    "k": "왕복 항공 요금"
+   }
+  ],
+  "der": [
+   {
+    "w": "fare",
+    "pos": "n",
+    "m": "(교통) 요금"
+   }
+  ],
+  "para": [
+   "ticket price",
+   "flight cost"
+  ],
+  "ant": "",
+  "tip": "airfare는 항공권 가격을 뜻하며 Part 7 출장 경비·여행 패키지 지문에 자주 나온다. 패키지 포함 내역 문제에서 includes airfare가 단서가 되는 경우가 많다.",
+  "q": {
+   "s": "The cost of ------- has risen so much that many employees now take the train to regional meetings.",
+   "o": [
+    "airflow",
+    "airspace",
+    "airtime",
+    "airfare"
+   ],
+   "a": 3,
+   "k": "많은 직원이 대신 기차를 타게 될 만큼 많이 오른 비용은 '항공 요금'이므로 airfare가 정답이다. airflow(공기 흐름), airspace(영공), airtime(방송 시간)은 cost of와 어울려 교통비를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "baggage claim",
+  "pos": "phr",
+  "m": [
+   "수하물 찾는 곳"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Our driver will be waiting for you at *baggage claim* with a sign showing your name.",
+  "exKo": "저희 기사가 이름이 적힌 팻말을 들고 수하물 찾는 곳에서 기다리고 있을 것이다.",
+  "col": [
+   {
+    "e": "baggage claim area",
+    "k": "수하물 찾는 곳"
+   },
+   {
+    "e": "at baggage claim",
+    "k": "수하물 찾는 곳에서"
+   }
+  ],
+  "der": [
+   {
+    "w": "claim",
+    "pos": "v",
+    "m": "(권리로서) 요구하다, 찾아가다"
+   }
+  ],
+  "para": [
+   "luggage pickup"
+  ],
+  "ant": "",
+  "tip": "Part 2·3에서 만나는 장소로 at baggage claim이 자주 나온다. claim은 여기서 '(자기 물건을) 찾아가다'라는 뜻이다.",
+  "q": {
+   "s": "After landing, passengers can collect their checked bags at ------- area C.",
+   "o": [
+    "baggage allowance",
+    "baggage claim",
+    "check-in desk",
+    "boarding gate"
+   ],
+   "a": 1,
+   "k": "도착 후 부친 짐을 찾는 장소는 '수하물 찾는 곳'이므로 baggage claim이 정답이다. baggage allowance(수하물 허용량)는 장소가 아니고, check-in desk(탑승 수속대)와 boarding gate(탑승구)는 출발할 때 이용하는 곳이다."
+  }
+ },
+ {
+  "w": "overhead compartment",
+  "pos": "phr",
+  "m": [
+   "(기내) 머리 위 짐칸"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4
+  ],
+  "ex": "Please place your carry-on bags in the *overhead compartment* or under the seat in front of you.",
+  "exKo": "기내용 가방은 머리 위 짐칸이나 앞 좌석 아래에 두시기 바란다.",
+  "col": [
+   {
+    "e": "store bags in the overhead compartment",
+    "k": "머리 위 짐칸에 가방을 넣다"
+   }
+  ],
+  "der": [
+   {
+    "w": "compartment",
+    "pos": "n",
+    "m": "칸, 구획"
+   }
+  ],
+  "para": [
+   "overhead bin",
+   "storage bin"
+  ],
+  "ant": "",
+  "tip": "기내 안내 방송(Part 4)의 빈출 표현이며 overhead bin으로도 쓴다. 사진 묘사에서 is putting a bag into an overhead compartment 형태로 나온다.",
+  "q": {
+   "s": "Large items that do not fit in the ------- must be checked at the gate before boarding.",
+   "o": [
+    "overhead compartment",
+    "overhead projector",
+    "overtime pay",
+    "overview"
+   ],
+   "a": 0,
+   "k": "기내에 들어가지 않는 큰 짐을 탑승구에서 부쳐야 한다는 내용이므로 overhead compartment가 정답이다. overhead projector(오버헤드 프로젝터), overtime pay(초과 근무 수당), overview(개요)는 짐을 넣는 곳이 아니다."
+  }
+ },
+ {
+  "w": "duty-free",
+  "pos": "adj",
+  "m": [
+   "면세의"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Travelers can buy *duty-free* perfume and cosmetics after passing through security.",
+  "exKo": "여행객은 보안 검색을 통과한 후 면세 향수와 화장품을 살 수 있다.",
+  "col": [
+   {
+    "e": "duty-free shop",
+    "k": "면세점"
+   },
+   {
+    "e": "duty-free allowance",
+    "k": "면세 한도"
+   }
+  ],
+  "der": [
+   {
+    "w": "duty",
+    "pos": "n",
+    "m": "관세, 의무"
+   }
+  ],
+  "para": [
+   "tax-free"
+  ],
+  "ant": "",
+  "tip": "duty는 '의무' 외에 '관세'라는 뜻이 있어 duty-free는 '면세의'가 된다. toll-free(수신자 부담의)와 혼동하지 말자.",
+  "q": {
+   "s": "Passengers can purchase ------- goods at the shops located near the departure gates.",
+   "o": [
+    "toll-free",
+    "duty-free",
+    "carefree",
+    "hands-free"
+   ],
+   "a": 1,
+   "k": "출국 게이트 근처 상점에서 사는 상품이므로 '면세' 상품, 즉 duty-free가 정답이다. toll-free(수신자 부담의), carefree(근심 없는), hands-free(손을 쓰지 않는)는 goods와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "immigration",
+  "pos": "n",
+  "m": [
+   "출입국 관리(소), 입국 심사",
+   "이민"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Long lines formed at *immigration* after three international flights landed at once.",
+  "exKo": "국제선 세 편이 한꺼번에 착륙한 뒤 입국 심사대에 긴 줄이 생겼다.",
+  "col": [
+   {
+    "e": "go through immigration",
+    "k": "입국 심사를 받다"
+   },
+   {
+    "e": "immigration form",
+    "k": "입국 신고서"
+   }
+  ],
+  "der": [
+   {
+    "w": "immigrant",
+    "pos": "n",
+    "m": "이민자"
+   },
+   {
+    "w": "immigrate",
+    "pos": "v",
+    "m": "이주해 오다"
+   }
+  ],
+  "para": [
+   "passport control",
+   "border control"
+  ],
+  "ant": "emigration",
+  "tip": "공항에서는 '이민'보다 '출입국 심사(대)'라는 뜻으로 쓰여 go through immigration 형태로 나온다. 사람명사 immigrant와 구분하자.",
+  "q": {
+   "s": "Visitors arriving from abroad should have their passports ready for the ------- officers.",
+   "o": [
+    "immigrant",
+    "immigration",
+    "immigrate",
+    "immigrated"
+   ],
+   "a": 1,
+   "k": "여권을 보여 줄 대상은 '출입국 관리' 직원이므로 명사 officers를 앞에서 꾸미는 immigration이 정답이다. immigrant officers는 '이민자인 직원'이라는 뜻이 되어 맞지 않고, immigrate와 immigrated는 동사다."
+  }
+ },
+ {
+  "w": "disembark",
+  "pos": "v",
+  "m": [
+   "(배·비행기에서) 내리다"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Passengers may *disembark* once the captain has turned off the seat belt sign.",
+  "exKo": "기장이 좌석 벨트 표시등을 끈 후에 승객들은 내릴 수 있다.",
+  "col": [
+   {
+    "e": "disembark from",
+    "k": "~에서 내리다"
+   },
+   {
+    "e": "disembark at",
+    "k": "~에서 하선하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "disembarkation",
+    "pos": "n",
+    "m": "하선, 하기"
+   }
+  ],
+  "para": [
+   "get off",
+   "deplane"
+  ],
+  "ant": "embark",
+  "tip": "disembark는 get off의 격식 표현으로 기내·선상 안내 방송에 나온다. 반의어 embark, board와 짝으로 기억하자.",
+  "q": {
+   "s": "Passengers seated in the front rows will ------- first when the plane reaches the gate.",
+   "o": [
+    "embark",
+    "dismiss",
+    "disembark",
+    "dispatch"
+   ],
+   "a": 2,
+   "k": "비행기가 게이트에 도착하면 앞줄 승객부터 '내린다'는 의미이므로 disembark가 정답이다. embark(탑승하다)는 도착 상황과 맞지 않고, dismiss(해산시키다), dispatch(발송하다)는 목적어가 필요한 타동사다."
+  }
+ },
+ {
+  "w": "embark",
+  "pos": "v",
+  "m": [
+   "(배·비행기에) 타다",
+   "(on) ~에 착수하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company is about to *embark* on a major expansion into Latin America.",
+  "exKo": "그 회사는 중남미로의 대규모 확장에 막 착수하려 하고 있다.",
+  "col": [
+   {
+    "e": "embark on",
+    "k": "~에 착수하다"
+   },
+   {
+    "e": "embark on a journey",
+    "k": "여정에 나서다"
+   }
+  ],
+  "der": [
+   {
+    "w": "embarkation",
+    "pos": "n",
+    "m": "승선, 탑승"
+   }
+  ],
+  "para": [
+   "begin",
+   "undertake",
+   "launch"
+  ],
+  "ant": "disembark",
+  "tip": "토익에서는 '타다'보다 embark on(~에 착수하다, 시작하다)의 형태로 더 많이 출제되며 전치사 on이 짝이다.",
+  "q": {
+   "s": "Next year, Fernhill Motors will ------- on an ambitious plan to open 50 new dealerships.",
+   "o": [
+    "embark",
+    "engage",
+    "enlist",
+    "endure"
+   ],
+   "a": 0,
+   "k": "전치사 on과 함께 '~에 착수하다'라는 뜻을 이루는 embark가 정답이다. engage는 in과, enlist는 in 또는 목적어와 함께 쓰이며, endure(견디다)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "resort",
+  "pos": "n",
+  "m": [
+   "휴양지, 리조트",
+   "(last resort) 최후의 수단"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The beach *resort* offers yoga classes and snorkeling trips for its guests.",
+  "exKo": "그 해변 리조트는 투숙객에게 요가 수업과 스노클링 여행을 제공한다.",
+  "col": [
+   {
+    "e": "beach resort",
+    "k": "해변 휴양지"
+   },
+   {
+    "e": "ski resort",
+    "k": "스키장"
+   },
+   {
+    "e": "as a last resort",
+    "k": "최후의 수단으로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "retreat",
+   "vacation spot"
+  ],
+  "ant": "",
+  "tip": "명사 resort 외에 resort to(~에 의지하다)라는 동사 용법과 as a last resort(최후의 수단으로)도 출제된다.",
+  "q": {
+   "s": "The annual sales retreat will be held at a mountain ------- with a spa and golf course.",
+   "o": [
+    "report",
+    "resort",
+    "record",
+    "retort"
+   ],
+   "a": 1,
+   "k": "스파와 골프장을 갖춘 산속 '휴양지'이므로 resort가 정답이다. report(보고서), record(기록), retort(반박)는 행사 장소가 될 수 없다."
+  }
+ },
+ {
+  "w": "cruise",
+  "pos": "n",
+  "m": [
+   "유람선 여행, 크루즈"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The travel agency is offering discounts on Mediterranean *cruises* booked before March.",
+  "exKo": "그 여행사는 3월 전에 예약된 지중해 크루즈 여행을 할인해 주고 있다.",
+  "col": [
+   {
+    "e": "cruise ship",
+    "k": "유람선"
+   },
+   {
+    "e": "go on a cruise",
+    "k": "크루즈 여행을 가다"
+   }
+  ],
+  "der": [
+   {
+    "w": "cruiser",
+    "pos": "n",
+    "m": "순양함, 대형 유람선"
+   }
+  ],
+  "para": [
+   "voyage",
+   "sea trip"
+  ],
+  "ant": "",
+  "tip": "cruise는 명사(go on a cruise)와 동사(cruise along the coast)로 모두 쓰인다. 철자가 비슷한 crew(승무원)와 구분하자.",
+  "q": {
+   "s": "Guests on the seven-day ------- will stop at four different ports along the coast.",
+   "o": [
+    "crew",
+    "cruise",
+    "crisis",
+    "credit"
+   ],
+   "a": 1,
+   "k": "7일 동안 해안을 따라 네 곳의 항구에 들르는 것은 '크루즈 여행'이므로 cruise가 정답이다. crew(승무원), crisis(위기), credit(신용)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "ferry",
+  "pos": "n",
+  "m": [
+   "연락선, 페리"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "Passengers are boarding a *ferry* at the end of the pier.",
+  "exKo": "승객들이 부두 끝에서 연락선에 오르고 있다.",
+  "col": [
+   {
+    "e": "take a ferry",
+    "k": "페리를 타다"
+   },
+   {
+    "e": "ferry terminal",
+    "k": "여객선 터미널"
+   }
+  ],
+  "der": [],
+  "para": [
+   "boat",
+   "passenger boat"
+  ],
+  "ant": "",
+  "tip": "ferry는 '연락선' 외에 동사로 '(사람·물건을) 실어 나르다'라는 뜻도 있다. 철자가 비슷한 fairy(요정), fare(요금)와 구분하자.",
+  "q": {
+   "s": "Commuters can take a ------- across the bay, which is faster than driving around it.",
+   "o": [
+    "fairy",
+    "fare",
+    "fury",
+    "ferry"
+   ],
+   "a": 3,
+   "k": "만을 가로질러 건너가는 교통수단이므로 ferry가 정답이다. fairy(요정), fare(요금), fury(분노)는 take a ~ across the bay와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "voyage",
+  "pos": "n",
+  "m": [
+   "항해, (긴) 여행"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The ship's first *voyage* from Southampton to New York took eight days.",
+  "exKo": "그 배의 사우샘프턴발 뉴욕행 첫 항해는 8일이 걸렸다.",
+  "col": [
+   {
+    "e": "maiden voyage",
+    "k": "처녀항해"
+   },
+   {
+    "e": "ocean voyage",
+    "k": "대양 항해"
+   }
+  ],
+  "der": [
+   {
+    "w": "voyager",
+    "pos": "n",
+    "m": "항해자"
+   }
+  ],
+  "para": [
+   "journey",
+   "trip",
+   "crossing"
+  ],
+  "ant": "",
+  "tip": "voyage는 주로 배를 타고 하는 긴 여행을 뜻하며 maiden voyage(처녀항해)가 대표 연어다. Part 7에서 journey, trip으로 바꿔 표현된다.",
+  "q": {
+   "s": "The research vessel returned to port after a three-month ------- across the Pacific.",
+   "o": [
+    "vantage",
+    "verdict",
+    "venue",
+    "voyage"
+   ],
+   "a": 3,
+   "k": "연구선이 태평양을 건너 석 달간 한 것은 '항해'이므로 voyage가 정답이다. vantage(유리한 위치), verdict(평결), venue(장소)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "tourism",
+  "pos": "n",
+  "m": [
+   "관광업, 관광"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The provincial government has launched a campaign to promote *tourism* in rural areas.",
+  "exKo": "주 정부는 농촌 지역의 관광을 활성화하기 위한 캠페인을 시작했다.",
+  "col": [
+   {
+    "e": "tourism industry",
+    "k": "관광 산업"
+   },
+   {
+    "e": "boost tourism",
+    "k": "관광을 활성화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "tourist",
+    "pos": "n",
+    "m": "관광객"
+   },
+   {
+    "w": "tour",
+    "pos": "n",
+    "m": "관광, 견학"
+   }
+  ],
+  "para": [
+   "travel industry",
+   "hospitality"
+  ],
+  "ant": "",
+  "tip": "tourism은 불가산명사로 '관광업'을 뜻하고, 사람은 tourist(가산명사)다. boost/promote tourism(관광을 활성화하다)이 빈출 연어다.",
+  "q": {
+   "s": "The opening of the new high-speed rail line is expected to boost ------- along the coast.",
+   "o": [
+    "tourism",
+    "tourist",
+    "toured",
+    "tour"
+   ],
+   "a": 0,
+   "k": "boost의 목적어로 관사 없이 쓸 수 있는 불가산명사 tourism이 정답이다. tourist와 tour는 가산명사 단수라 관사가 필요하고, toured는 동사다."
+  }
+ },
+ {
+  "w": "expedition",
+  "pos": "n",
+  "m": [
+   "탐험(대), 원정"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The museum is funding a scientific *expedition* to study glaciers in Greenland.",
+  "exKo": "그 박물관은 그린란드의 빙하를 연구하는 과학 탐사대에 자금을 지원하고 있다.",
+  "col": [
+   {
+    "e": "go on an expedition",
+    "k": "탐험을 떠나다"
+   },
+   {
+    "e": "research expedition",
+    "k": "연구 탐사"
+   }
+  ],
+  "der": [
+   {
+    "w": "expedite",
+    "pos": "v",
+    "m": "신속히 처리하다"
+   }
+  ],
+  "para": [
+   "journey",
+   "exploration"
+  ],
+  "ant": "",
+  "tip": "expedition(탐험)과 철자가 비슷한 expedite(신속히 처리하다), expeditious(신속한)를 품사·의미로 구분하는 문제에 유의하자.",
+  "q": {
+   "s": "Participants in the Arctic ------- must complete a safety training course before departure.",
+   "o": [
+    "expedition",
+    "expedite",
+    "expeditious",
+    "expeditiously"
+   ],
+   "a": 0,
+   "k": "정관사 the와 형용사 Arctic 뒤 명사 자리이므로 expedition이 정답이다. expedite는 동사, expeditious는 형용사, expeditiously는 부사다."
+  }
+ }
+]

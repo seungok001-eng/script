@@ -1,0 +1,2099 @@
+[
+ {
+  "w": "customer",
+  "pos": "n",
+  "m": [
+   "고객, 손님"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The bakery gives a free cookie to every *customer* who brings a reusable bag.",
+  "exKo": "그 빵집은 장바구니를 가져오는 모든 고객에게 쿠키 하나를 무료로 준다.",
+  "col": [
+   {
+    "e": "regular customer",
+    "k": "단골 고객"
+   },
+   {
+    "e": "customer satisfaction",
+    "k": "고객 만족"
+   },
+   {
+    "e": "customer feedback",
+    "k": "고객 의견"
+   }
+  ],
+  "der": [
+   {
+    "w": "custom",
+    "pos": "n",
+    "m": "관습; (pl.) 세관"
+   }
+  ],
+  "para": [
+   "client",
+   "patron",
+   "shopper"
+  ],
+  "ant": "",
+  "tip": "custom(관습), customs(세관), costume(의상)과 철자가 비슷해 어휘 문제의 오답으로 자주 함께 나온다. Part 7에서는 patron, client로 바꿔 표현된다.",
+  "q": {
+   "s": "Regular ------- of the café receive a free drink after every tenth purchase.",
+   "o": [
+    "customs",
+    "costumes",
+    "customers",
+    "custodians"
+   ],
+   "a": 2,
+   "k": "카페의 '단골 고객'이 열 번째 구매마다 무료 음료를 받는다는 의미이므로 customers가 정답이다. customs(세관), costumes(의상), custodians(관리인)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "service",
+  "pos": "n",
+  "m": [
+   "서비스, 응대",
+   "근무, 봉사",
+   "(교통편의) 운행"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The new bus *service* connects the airport to the city center every twenty minutes.",
+  "exKo": "새 버스 노선은 20분마다 공항과 도심을 연결한다.",
+  "col": [
+   {
+    "e": "years of service",
+    "k": "근속 연수"
+   },
+   {
+    "e": "delivery service",
+    "k": "배달 서비스"
+   },
+   {
+    "e": "out of service",
+    "k": "운행 중지된, 고장 난"
+   }
+  ],
+  "der": [
+   {
+    "w": "serve",
+    "pos": "v",
+    "m": "(음식을) 제공하다, 근무하다"
+   },
+   {
+    "w": "server",
+    "pos": "n",
+    "m": "종업원, 서버"
+   }
+  ],
+  "para": [
+   "assistance",
+   "help"
+  ],
+  "ant": "",
+  "tip": "'서비스' 외에 '근무'(20 years of service)와 '(교통편) 운행'(bus service)의 뜻이 Part 4·7에 나온다. out of service는 '고장 난, 운행하지 않는'이라는 뜻이다.",
+  "q": {
+   "s": "Ferry ------- to the island will be suspended tomorrow because of strong winds.",
+   "o": [
+    "service",
+    "serve",
+    "server",
+    "served"
+   ],
+   "a": 0,
+   "k": "Ferry와 복합명사를 이루어 문장의 주어가 되는 명사 자리이며 '여객선 운행'이 중단된다는 의미이므로 service가 정답이다. server는 '종업원'이라 의미가 맞지 않고, serve와 served는 동사 형태다."
+  }
+ },
+ {
+  "w": "customer service",
+  "pos": "phr",
+  "m": [
+   "고객 서비스, 고객 응대 (부서)"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "Ms. Ruiz has worked in *customer service* at the airline for six years.",
+  "exKo": "Ruiz 씨는 그 항공사의 고객 서비스 부서에서 6년째 일하고 있다.",
+  "col": [
+   {
+    "e": "customer service representative",
+    "k": "고객 서비스 상담원"
+   },
+   {
+    "e": "customer service department",
+    "k": "고객 서비스 부서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "customer support",
+   "client services"
+  ],
+  "ant": "",
+  "tip": "Part 3·4에서 화자의 근무 부서나 문제 해결 방법을 묻는 문제에 자주 나온다. customer service representative(상담원)가 화자의 신분으로 자주 등장한다.",
+  "q": {
+   "s": "The online retailer is known for its excellent customer ------- and fast delivery.",
+   "o": [
+    "servant",
+    "serving",
+    "server",
+    "service"
+   ],
+   "a": 3,
+   "k": "형용사 excellent의 수식을 받으며 customer와 복합명사를 이루는 service가 정답이다(customer service: 고객 서비스). servant(하인), serving(1인분), server(종업원)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "patronage",
+  "pos": "n",
+  "m": [
+   "(고객의) 애용, 거래",
+   "후원"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "We thank you for your *patronage* over the past twenty years.",
+  "exKo": "지난 20년간 저희를 애용해 주신 데 감사드린다.",
+  "col": [
+   {
+    "e": "thank you for your patronage",
+    "k": "애용해 주셔서 감사합니다"
+   },
+   {
+    "e": "continued patronage",
+    "k": "지속적인 애용"
+   }
+  ],
+  "der": [
+   {
+    "w": "patron",
+    "pos": "n",
+    "m": "고객, 후원자"
+   },
+   {
+    "w": "patronize",
+    "pos": "v",
+    "m": "애용하다, 단골로 다니다"
+   }
+  ],
+  "para": [
+   "business",
+   "support",
+   "loyalty"
+  ],
+  "ant": "",
+  "tip": "상점·업체를 꾸준히 이용해 주는 것을 뜻하는 불가산명사로, 공지문의 Thank you for your patronage(애용해 주셔서 감사합니다)가 대표 표현이다. 사람명사 patron과의 구분이 출제된다.",
+  "q": {
+   "s": "To thank customers for their continued -------, the bookstore is offering a 20 percent discount this week.",
+   "o": [
+    "patronage",
+    "patron",
+    "patronize",
+    "patronizing"
+   ],
+   "a": 0,
+   "k": "소유격 their와 형용사 continued 뒤 명사 자리이며 '지속적인 애용'이라는 의미이므로 patronage가 정답이다. patron은 가산명사 단수라 의미와 수가 맞지 않고, patronize는 동사, patronizing은 '거들먹거리는'이라는 형용사다."
+  }
+ },
+ {
+  "w": "dissatisfaction",
+  "pos": "n",
+  "m": [
+   "불만, 불만족"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The survey revealed widespread *dissatisfaction* with the new booking system.",
+  "exKo": "설문 조사 결과 새 예약 시스템에 대한 불만이 널리 퍼져 있는 것으로 드러났다.",
+  "col": [
+   {
+    "e": "dissatisfaction with",
+    "k": "~에 대한 불만"
+   },
+   {
+    "e": "express dissatisfaction",
+    "k": "불만을 표하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "dissatisfied",
+    "pos": "adj",
+    "m": "불만족한"
+   },
+   {
+    "w": "satisfaction",
+    "pos": "n",
+    "m": "만족"
+   }
+  ],
+  "para": [
+   "discontent",
+   "displeasure",
+   "unhappiness"
+  ],
+  "ant": "satisfaction",
+  "tip": "전치사 with와 함께 dissatisfaction with(~에 대한 불만)로 쓰이며, express/voice dissatisfaction(불만을 표하다) 형태로 Part 7에 나온다.",
+  "q": {
+   "s": "Several guests expressed ------- with the slow room service at the hotel.",
+   "o": [
+    "dissatisfied",
+    "dissatisfy",
+    "dissatisfying",
+    "dissatisfaction"
+   ],
+   "a": 3,
+   "k": "동사 expressed의 목적어가 되는 명사 자리이므로 dissatisfaction이 정답이다(express dissatisfaction with: ~에 불만을 표하다). dissatisfied와 dissatisfying은 형용사, dissatisfy는 동사다."
+  }
+ },
+ {
+  "w": "unsatisfactory",
+  "pos": "adj",
+  "m": [
+   "불만족스러운, 만족스럽지 못한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The inspector rated the cleanliness of the kitchen as *unsatisfactory*.",
+  "exKo": "점검관은 주방의 청결 상태를 불만족스럽다고 평가했다.",
+  "col": [
+   {
+    "e": "unsatisfactory performance",
+    "k": "불만족스러운 성과"
+   },
+   {
+    "e": "unsatisfactory results",
+    "k": "불만족스러운 결과"
+   }
+  ],
+  "der": [
+   {
+    "w": "satisfactory",
+    "pos": "adj",
+    "m": "만족스러운"
+   },
+   {
+    "w": "satisfy",
+    "pos": "v",
+    "m": "만족시키다"
+   }
+  ],
+  "para": [
+   "inadequate",
+   "poor",
+   "substandard"
+  ],
+  "ant": "satisfactory",
+  "tip": "사물(결과·품질·성과)을 평가할 때 쓰는 형용사다. 사람의 감정을 나타내는 unsatisfied/dissatisfied(불만인)와 구분하는 문제가 출제된다.",
+  "q": {
+   "s": "The quality of the fabric samples was -------, so the client asked the supplier for a new batch.",
+   "o": [
+    "unsatisfied",
+    "satisfaction",
+    "satisfy",
+    "unsatisfactory"
+   ],
+   "a": 3,
+   "k": "주어가 사물(The quality)이므로 '불만족스러운'이라는 뜻의 unsatisfactory가 정답이다. unsatisfied는 사람의 감정을 나타내므로 사물 주어와 어울리지 않고, satisfaction은 명사, satisfy는 동사다."
+  }
+ },
+ {
+  "w": "inexpensive",
+  "pos": "adj",
+  "m": [
+   "비싸지 않은, 저렴한"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The hostel offers clean and *inexpensive* rooms for students and backpackers.",
+  "exKo": "그 호스텔은 학생과 배낭여행객에게 깨끗하고 저렴한 방을 제공한다.",
+  "col": [
+   {
+    "e": "relatively inexpensive",
+    "k": "비교적 저렴한"
+   },
+   {
+    "e": "inexpensive alternative",
+    "k": "저렴한 대안"
+   }
+  ],
+  "der": [
+   {
+    "w": "expensive",
+    "pos": "adj",
+    "m": "비싼"
+   },
+   {
+    "w": "inexpensively",
+    "pos": "adv",
+    "m": "저렴하게"
+   }
+  ],
+  "para": [
+   "affordable",
+   "reasonably priced",
+   "cheap"
+  ],
+  "ant": "expensive",
+  "tip": "cheap과 달리 '품질은 괜찮은데 저렴한'이라는 긍정적 뉘앙스다. Part 7에서 affordable, reasonably priced로 바꿔 표현된다.",
+  "q": {
+   "s": "The café near our office offers healthy and ------- lunch options for busy workers.",
+   "o": [
+    "inexpensive",
+    "insistent",
+    "inevitable",
+    "inaccessible"
+   ],
+   "a": 0,
+   "k": "바쁜 직장인을 위한 건강하고 '저렴한' 점심 메뉴라는 의미이므로 inexpensive가 정답이다. insistent(고집하는), inevitable(불가피한), inaccessible(접근할 수 없는)은 lunch options와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "store",
+  "pos": "n",
+  "m": [
+   "가게, 상점",
+   "비축, 저장"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "The hardware *store* on Maple Avenue will close early on Sunday for inventory.",
+  "exKo": "Maple 가에 있는 철물점은 재고 조사로 일요일에 일찍 문을 닫는다.",
+  "col": [
+   {
+    "e": "department store",
+    "k": "백화점"
+   },
+   {
+    "e": "convenience store",
+    "k": "편의점"
+   },
+   {
+    "e": "store manager",
+    "k": "매장 관리자"
+   }
+  ],
+  "der": [
+   {
+    "w": "storage",
+    "pos": "n",
+    "m": "저장, 보관"
+   },
+   {
+    "w": "storeroom",
+    "pos": "n",
+    "m": "창고, 저장실"
+   }
+  ],
+  "para": [
+   "shop",
+   "outlet"
+  ],
+  "ant": "",
+  "tip": "명사 외에 동사로 '보관하다, 저장하다'(store files in a cabinet)라는 뜻이 Part 1·5에 자주 나온다. 명사 storage(보관)와의 구분도 출제된다.",
+  "q": {
+   "s": "The ------- across the street from our office sells sandwiches and fresh salads.",
+   "o": [
+    "storage",
+    "stored",
+    "storing",
+    "store"
+   ],
+   "a": 3,
+   "k": "관사 The 뒤 주어 자리이며 샌드위치와 샐러드를 '판매하는' 주체는 상점이므로 store가 정답이다. storage는 '보관'이라 판매의 주체가 될 수 없고, stored와 storing은 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "business hours",
+  "pos": "phr",
+  "m": [
+   "영업시간, 업무 시간"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "Our *business hours* are 9 A.M. to 6 P.M., Monday through Friday.",
+  "exKo": "저희 영업시간은 월요일부터 금요일까지 오전 9시부터 오후 6시까지다.",
+  "col": [
+   {
+    "e": "during business hours",
+    "k": "영업시간 중에"
+   },
+   {
+    "e": "regular business hours",
+    "k": "정규 영업시간"
+   },
+   {
+    "e": "extended business hours",
+    "k": "연장된 영업시간"
+   }
+  ],
+  "der": [],
+  "para": [
+   "opening hours",
+   "office hours"
+  ],
+  "ant": "",
+  "tip": "Part 4 녹음 메시지에서 영업시간 안내와 함께 자주 나오며, 영업시간 외에 전화한 상황을 묻는 문제가 출제된다. hours는 항상 복수형으로 쓴다.",
+  "q": {
+   "s": "Our customer support center can be reached by phone during regular business -------.",
+   "o": [
+    "hours",
+    "hourly",
+    "houses",
+    "holds"
+   ],
+   "a": 0,
+   "k": "during regular business hours(정규 영업시간 중에)라는 표현이 되어야 하므로 hours가 정답이다. hourly는 형용사·부사이며, houses(집), holds(보류, 통화 대기)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "inquire",
+  "pos": "v",
+  "m": [
+   "문의하다, 묻다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Mr. Delgado called the store to *inquire* about the status of his repair.",
+  "exKo": "Delgado 씨는 수리 진행 상황을 문의하려고 매장에 전화했다.",
+  "col": [
+   {
+    "e": "inquire about",
+    "k": "~에 대해 문의하다"
+   },
+   {
+    "e": "inquire into",
+    "k": "~을 조사하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "inquiry",
+    "pos": "n",
+    "m": "문의, 조사"
+   }
+  ],
+  "para": [
+   "ask",
+   "request information"
+  ],
+  "ant": "",
+  "tip": "자동사로 inquire about(~에 대해 문의하다) 형태가 빈출이며, 명사 inquiry(문의)와의 품사 구분도 출제된다. 영국식 철자는 enquire이다.",
+  "q": {
+   "s": "Several customers called this morning to ------- about the availability of the new tablet.",
+   "o": [
+    "require",
+    "acquire",
+    "inquiry",
+    "inquire"
+   ],
+   "a": 3,
+   "k": "to부정사 자리에 동사원형이 오며, 신제품 재고 여부에 대해 '문의하다'라는 뜻으로 about과 어울리는 inquire가 정답이다. require(요구하다), acquire(획득하다)는 about과 함께 쓰지 않고, inquiry는 명사다."
+  }
+ },
+ {
+  "w": "shopper",
+  "pos": "n",
+  "m": [
+   "쇼핑객, 구매자"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "ex": "Holiday *shoppers* filled the mall from the moment its doors opened.",
+  "exKo": "연휴 쇼핑객들이 문이 열리자마자 쇼핑몰을 가득 메웠다.",
+  "col": [
+   {
+    "e": "holiday shoppers",
+    "k": "연휴 쇼핑객"
+   },
+   {
+    "e": "online shopper",
+    "k": "온라인 쇼핑객"
+   }
+  ],
+  "der": [
+   {
+    "w": "shop",
+    "pos": "v",
+    "m": "쇼핑하다"
+   },
+   {
+    "w": "shopping",
+    "pos": "n",
+    "m": "쇼핑"
+   }
+  ],
+  "para": [
+   "customer",
+   "consumer",
+   "buyer"
+  ],
+  "ant": "",
+  "tip": "사람명사 shopper와 행위명사 shopping을 구분하는 품사 문제가 나온다. Part 1에서는 shoppers are browsing/waiting in line 같은 묘사가 자주 쓰인다.",
+  "q": {
+   "s": "Weekend ------- often have trouble finding parking spaces near the mall.",
+   "o": [
+    "shopping",
+    "shoppers",
+    "shops",
+    "shopped"
+   ],
+   "a": 1,
+   "k": "복수 동사 have의 주어로, 주차 공간을 찾느라 애를 먹는 '사람'이 와야 하므로 shoppers가 정답이다. shopping은 단수 취급하는 행위명사이고, shops(상점)는 주차 공간을 찾을 수 없으며, shopped는 동사 형태다."
+  }
+ },
+ {
+  "w": "goods",
+  "pos": "n",
+  "m": [
+   "상품, 물품"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The warehouse stores imported *goods* until they are sent to stores.",
+  "exKo": "그 창고는 수입 상품을 매장으로 보내기 전까지 보관한다.",
+  "col": [
+   {
+    "e": "household goods",
+    "k": "가정용품"
+   },
+   {
+    "e": "consumer goods",
+    "k": "소비재"
+   },
+   {
+    "e": "sporting goods",
+    "k": "스포츠 용품"
+   }
+  ],
+  "der": [],
+  "para": [
+   "merchandise",
+   "products",
+   "items"
+  ],
+  "ant": "",
+  "tip": "'상품'의 뜻일 때는 항상 복수형 goods로 쓰며 a good이나 수사와 함께 쓰지 않는다. Part 7에서는 merchandise, products로 바꿔 표현된다.",
+  "q": {
+   "s": "The store sells a wide range of household -------, from cleaning supplies to kitchen tools.",
+   "o": [
+    "goodness",
+    "goodwill",
+    "good",
+    "goods"
+   ],
+   "a": 3,
+   "k": "household와 결합해 '가정용품'을 뜻하는 복수명사 goods가 정답이다. goodness(선량함), goodwill(호의)은 의미가 맞지 않고, 단수 good은 '상품'이라는 뜻으로 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "cashier",
+  "pos": "n",
+  "m": [
+   "계산원, 출납원"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "The *cashier* is handing a receipt to a customer at the checkout.",
+  "exKo": "계산원이 계산대에서 손님에게 영수증을 건네고 있다.",
+  "col": [
+   {
+    "e": "cashier's desk",
+    "k": "계산대"
+   },
+   {
+    "e": "pay the cashier",
+    "k": "계산원에게 돈을 내다"
+   }
+  ],
+  "der": [
+   {
+    "w": "cash",
+    "pos": "n",
+    "m": "현금"
+   },
+   {
+    "w": "cashless",
+    "pos": "adj",
+    "m": "현금이 필요 없는"
+   }
+  ],
+  "para": [
+   "clerk",
+   "checkout clerk"
+  ],
+  "ant": "",
+  "tip": "Part 1 사진 묘사에서 계산대 장면(The cashier is scanning/bagging items)으로 자주 나온다. Part 3에서는 화자의 직업을 묻는 문제의 정답이 되기도 한다.",
+  "q": {
+   "s": "Please show your membership card to the ------- before your items are scanned.",
+   "o": [
+    "cash",
+    "cashier",
+    "cashed",
+    "cashless"
+   ],
+   "a": 1,
+   "k": "회원 카드를 보여 주는 대상이자 물건을 스캔하는 사람이 와야 하므로 cashier가 정답이다. cash는 '현금'이라 의미가 맞지 않고, cashed와 cashless는 명사가 아니다."
+  }
+ },
+ {
+  "w": "counter",
+  "pos": "n",
+  "m": [
+   "계산대, 카운터",
+   "조리대"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "Several jars of spices have been placed on the kitchen *counter*.",
+  "exKo": "향신료 병 몇 개가 주방 조리대 위에 놓여 있다.",
+  "col": [
+   {
+    "e": "service counter",
+    "k": "서비스 카운터"
+   },
+   {
+    "e": "check-in counter",
+    "k": "탑승 수속 창구"
+   },
+   {
+    "e": "over the counter",
+    "k": "(약을) 처방전 없이"
+   }
+  ],
+  "der": [],
+  "para": [
+   "desk"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 Items have been placed on the counter(물건들이 조리대 위에 놓여 있다) 같은 묘사로 자주 나온다. over the counter(처방전 없이)라는 표현도 있다.",
+  "q": {
+   "s": "The pharmacist placed the medicine on the ------- and explained how often to take it.",
+   "o": [
+    "counter",
+    "counsel",
+    "council",
+    "country"
+   ],
+   "a": 0,
+   "k": "약사가 약을 올려놓고 복용법을 설명한 곳은 '카운터'이므로 counter가 정답이다. counsel(조언), council(의회), country(나라)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "shelf",
+  "pos": "n",
+  "m": [
+   "선반, (상점의) 진열대"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   5
+  ],
+  "ex": "Some books are being arranged on a *shelf* near the window.",
+  "exKo": "책 몇 권이 창가 근처의 선반 위에 정리되고 있다.",
+  "col": [
+   {
+    "e": "top shelf",
+    "k": "맨 위 선반"
+   },
+   {
+    "e": "stock shelves",
+    "k": "선반에 물건을 채우다"
+   },
+   {
+    "e": "on the shelf",
+    "k": "선반 위에, 판매 중인"
+   }
+  ],
+  "der": [
+   {
+    "w": "shelve",
+    "pos": "v",
+    "m": "선반에 얹다, (계획을) 보류하다"
+   },
+   {
+    "w": "shelving",
+    "pos": "n",
+    "m": "선반, 선반 설치"
+   }
+  ],
+  "para": [
+   "rack"
+  ],
+  "ant": "",
+  "tip": "복수형은 shelves이며 Part 1에서 stock the shelves(선반에 물건을 채우다)가 자주 나온다. 동사 shelve는 '(계획을) 보류하다'라는 뜻으로도 쓰인다.",
+  "q": {
+   "s": "The new cereal will be placed on the top ------- so that shoppers can see it easily.",
+   "o": [
+    "shelve",
+    "shelved",
+    "shelter",
+    "shelf"
+   ],
+   "a": 3,
+   "k": "관사 the와 형용사 top 뒤 명사 자리이며 시리얼을 올려놓는 '맨 위 선반'이라는 의미이므로 shelf가 정답이다. shelve와 shelved는 동사 형태이고, shelter(보호소)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "display",
+  "pos": "n",
+  "m": [
+   "진열, 전시",
+   "(화면) 표시 장치"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   5,
+   7
+  ],
+  "ex": "Various leather handbags are on *display* in the shop window.",
+  "exKo": "다양한 가죽 핸드백이 상점 진열창에 진열되어 있다.",
+  "col": [
+   {
+    "e": "on display",
+    "k": "진열된, 전시 중인"
+   },
+   {
+    "e": "window display",
+    "k": "진열창 전시"
+   }
+  ],
+  "der": [],
+  "para": [
+   "exhibition",
+   "showcase",
+   "presentation"
+  ],
+  "ant": "",
+  "tip": "on display(진열된, 전시 중인)는 Part 1에서 매우 자주 나오는 표현이다. 동사로도 쓰여 be displayed(진열되어 있다)의 수동태 묘사가 빈출이다.",
+  "q": {
+   "s": "Prototypes of the company's new electric scooters are currently on ------- in the lobby.",
+   "o": [
+    "demand",
+    "duty",
+    "display",
+    "deposit"
+   ],
+   "a": 2,
+   "k": "be on display(전시 중이다) 표현으로 전동 스쿠터 시제품이 로비에 전시되어 있다는 의미이므로 display가 정답이다. on demand(요청 시), on duty(근무 중인), on deposit(예치된)은 시제품 전시와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "aisle",
+  "pos": "n",
+  "m": [
+   "통로, 복도"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "Customers are walking along an *aisle* lined with fresh vegetables.",
+  "exKo": "손님들이 신선한 채소가 늘어선 통로를 따라 걷고 있다.",
+  "col": [
+   {
+    "e": "aisle seat",
+    "k": "통로 쪽 좌석"
+   },
+   {
+    "e": "in aisle 5",
+    "k": "5번 통로에"
+   }
+  ],
+  "der": [],
+  "para": [
+   "passage",
+   "walkway"
+  ],
+  "ant": "",
+  "tip": "s가 묵음이라 Part 1·2 듣기에서 I'll(아일)과 발음이 같아 혼동하기 쉽다. 상점에서는 in aisle 3(3번 통로에), 항공편에서는 aisle seat(통로 쪽 좌석)로 나온다.",
+  "q": {
+   "s": "Paper towels and other cleaning supplies can be found in ------- seven.",
+   "o": [
+    "isle",
+    "aisle",
+    "idle",
+    "ideal"
+   ],
+   "a": 1,
+   "k": "상점에서 물건이 있는 위치를 알려 주는 '7번 통로'라는 의미이므로 aisle이 정답이다. 발음이 같은 isle(작은 섬)과 철자가 비슷한 idle(한가한), ideal(이상적인)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "on sale",
+  "pos": "phr",
+  "m": [
+   "할인 중인",
+   "판매 중인, 시판되는"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "All summer sandals are *on sale* at half price through Sunday.",
+  "exKo": "모든 여름 샌들이 일요일까지 반값에 할인 판매된다.",
+  "col": [
+   {
+    "e": "go on sale",
+    "k": "판매에 들어가다, 할인 판매되다"
+   },
+   {
+    "e": "be on sale for",
+    "k": "~의 가격에 할인 판매되다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "discounted",
+   "marked down",
+   "available"
+  ],
+  "ant": "",
+  "tip": "미국 영어에서 on sale은 주로 '할인 중인'이라는 뜻이고 '판매 중인'이라는 뜻도 있다. for sale(팔려고 내놓은)과 구분해야 한다.",
+  "q": {
+   "s": "Tickets for the jazz festival will go ------- sale next Friday at noon.",
+   "o": [
+    "for",
+    "in",
+    "on",
+    "at"
+   ],
+   "a": 2,
+   "k": "go on sale(판매에 들어가다)라는 표현이므로 on이 정답이다. for sale은 be/put up for sale(팔려고 내놓다)처럼 쓰이며 go와 결합하지 않고, in, at은 sale과 이런 의미로 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "return",
+  "pos": "v",
+  "m": [
+   "반품하다, 돌려주다",
+   "돌아오다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Mr. Chen *returned* the blender because it made a loud noise.",
+  "exKo": "Chen 씨는 믹서기가 시끄러운 소리를 내서 반품했다.",
+  "col": [
+   {
+    "e": "return an item",
+    "k": "물건을 반품하다"
+   },
+   {
+    "e": "return A to B",
+    "k": "A를 B에 돌려주다"
+   },
+   {
+    "e": "return a call",
+    "k": "회신 전화를 하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "returnable",
+    "pos": "adj",
+    "m": "반품 가능한"
+   }
+  ],
+  "para": [
+   "send back",
+   "give back"
+  ],
+  "ant": "",
+  "tip": "return A to B(A를 B에 돌려주다), return a call(회신 전화를 하다) 표현이 빈출이다. '돌아오다'의 뜻일 때는 return back이라고 하지 않고 return to로 쓴다.",
+  "q": {
+   "s": "Items purchased online may be ------- to any of our stores within 30 days.",
+   "o": [
+    "retained",
+    "returned",
+    "renewed",
+    "reversed"
+   ],
+   "a": 1,
+   "k": "온라인으로 구매한 물건을 30일 이내에 매장으로 '반품할' 수 있다는 의미로 to와 어울리는 returned가 정답이다. retained(보유된), renewed(갱신된), reversed(뒤바뀐)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "clerk",
+  "pos": "n",
+  "m": [
+   "점원, 직원",
+   "사무원"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "A sales *clerk* helped Ms. Patel find a jacket in her size.",
+  "exKo": "판매 직원이 Patel 씨가 자기 사이즈의 재킷을 찾는 것을 도와주었다.",
+  "col": [
+   {
+    "e": "sales clerk",
+    "k": "판매 직원"
+   },
+   {
+    "e": "front desk clerk",
+    "k": "프런트 직원"
+   },
+   {
+    "e": "file clerk",
+    "k": "문서 정리 사무원"
+   }
+  ],
+  "der": [
+   {
+    "w": "clerical",
+    "pos": "adj",
+    "m": "사무직의"
+   }
+  ],
+  "para": [
+   "salesperson",
+   "assistant",
+   "attendant"
+  ],
+  "ant": "",
+  "tip": "Part 3 직업 문제에서 sales clerk, desk clerk가 자주 나온다. 형용사 clerical(사무의)은 clerical work, clerical error(사무 착오) 형태로 Part 5에 나온다.",
+  "q": {
+   "s": "The hotel desk ------- handed Ms. Dubois her room key and a map of the area.",
+   "o": [
+    "clerical",
+    "clerk",
+    "clearance",
+    "clarity"
+   ],
+   "a": 1,
+   "k": "Ms. Dubois에게 객실 열쇠와 지도를 건넨 '사람'이 와야 하므로 desk와 결합해 '프런트 직원'을 뜻하는 clerk가 정답이다. clerical은 형용사이고, clearance(정리, 허가), clarity(명확성)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "try on",
+  "pos": "phr",
+  "m": [
+   "(옷·신발 등을) 입어 보다, 신어 보다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "Customers may *try on* up to three items at a time in the fitting room.",
+  "exKo": "고객은 탈의실에서 한 번에 최대 세 벌까지 입어 볼 수 있다.",
+  "col": [
+   {
+    "e": "try on a jacket",
+    "k": "재킷을 입어 보다"
+   },
+   {
+    "e": "try it on",
+    "k": "그것을 입어 보다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "fit"
+  ],
+  "ant": "",
+  "tip": "목적어가 대명사이면 try it on 어순이 된다. Part 1에서 A woman is trying on a hat 같은 묘사로 자주 나오며, try out(시험해 보다)과 구분해야 한다.",
+  "q": {
+   "s": "Shoppers are welcome to try ------- any of the jackets before making a purchase.",
+   "o": [
+    "in",
+    "at",
+    "on",
+    "by"
+   ],
+   "a": 2,
+   "k": "옷을 사기 전에 '입어 보다'라는 뜻의 try on이 되어야 하므로 on이 정답이다. try in, try at, try by는 이런 의미로 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "gift certificate",
+  "pos": "phr",
+  "m": [
+   "상품권"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Ms. Novak received a fifty-dollar *gift certificate* for a local spa.",
+  "exKo": "Novak 씨는 지역 스파에서 쓸 수 있는 50달러짜리 상품권을 받았다.",
+  "col": [
+   {
+    "e": "redeem a gift certificate",
+    "k": "상품권을 사용하다"
+   },
+   {
+    "e": "gift certificate for",
+    "k": "~용 상품권"
+   }
+  ],
+  "der": [
+   {
+    "w": "certify",
+    "pos": "v",
+    "m": "증명하다"
+   }
+  ],
+  "para": [
+   "gift card",
+   "voucher"
+  ],
+  "ant": "",
+  "tip": "Part 4·7에서 경품이나 사은품으로 자주 나오며 gift card, voucher로 바꿔 표현된다. '상품권을 사용하다'는 redeem a gift certificate라고 한다.",
+  "q": {
+   "s": "Customers who spend more than $100 will receive a $10 gift ------- for their next visit.",
+   "o": [
+    "certification",
+    "certificate",
+    "certify",
+    "certified"
+   ],
+   "a": 1,
+   "k": "관사 a와 함께 gift와 복합명사를 이뤄 '상품권'을 뜻하는 certificate가 정답이다. certification은 '인증 (과정)'이라 의미가 맞지 않고, certify는 동사, certified는 형용사다."
+  }
+ },
+ {
+  "w": "wrap",
+  "pos": "v",
+  "m": [
+   "포장하다, 싸다"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "A clerk is *wrapping* a vase in several sheets of paper.",
+  "exKo": "점원이 꽃병을 종이 여러 장으로 싸고 있다.",
+  "col": [
+   {
+    "e": "wrap a gift",
+    "k": "선물을 포장하다"
+   },
+   {
+    "e": "gift-wrap",
+    "k": "선물 포장하다"
+   },
+   {
+    "e": "wrap up",
+    "k": "마무리하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "wrapping",
+    "pos": "n",
+    "m": "포장지, 포장"
+   },
+   {
+    "w": "wrapper",
+    "pos": "n",
+    "m": "포장지, 포장 용기"
+   }
+  ],
+  "para": [
+   "pack",
+   "cover"
+  ],
+  "ant": "unwrap",
+  "tip": "Part 1에서 is wrapping/has been wrapped 같은 진행형·완료형 묘사로 나온다. wrap up은 '(회의 등을) 마무리하다'라는 뜻으로 Part 3·4에 자주 쓰인다.",
+  "q": {
+   "s": "For a small fee, our staff will ------- your purchase in decorative paper.",
+   "o": [
+    "wrapped",
+    "wrapper",
+    "wrapping",
+    "wrap"
+   ],
+   "a": 3,
+   "k": "조동사 will 뒤에는 동사원형이 오므로 wrap이 정답이다. wrapped는 과거형·과거분사, wrapper와 wrapping은 명사다."
+  }
+ },
+ {
+  "w": "cash register",
+  "pos": "phr",
+  "m": [
+   "금전 등록기, 계산대"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "A woman is counting money behind the *cash register*.",
+  "exKo": "한 여자가 금전 등록기 뒤에서 돈을 세고 있다.",
+  "col": [
+   {
+    "e": "behind the cash register",
+    "k": "계산대 뒤에서"
+   },
+   {
+    "e": "operate a cash register",
+    "k": "금전 등록기를 다루다"
+   }
+  ],
+  "der": [
+   {
+    "w": "register",
+    "pos": "v",
+    "m": "등록하다"
+   }
+  ],
+  "para": [
+   "till",
+   "checkout"
+  ],
+  "ant": "",
+  "tip": "Part 1 사진 묘사에서 계산대 장면을 설명할 때 자주 나온다. 줄여서 register라고도 하며, 동사 register(등록하다)와 문맥으로 구분한다.",
+  "q": {
+   "s": "The supermarket recently replaced all of its old cash ------- with self-service machines.",
+   "o": [
+    "registrations",
+    "registries",
+    "registers",
+    "registrants"
+   ],
+   "a": 2,
+   "k": "셀프 계산기로 교체된 대상은 구형 '금전 등록기'이므로 cash와 결합하는 registers가 정답이다. registrations(등록), registries(등기소), registrants(등록자)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "return policy",
+  "pos": "phr",
+  "m": [
+   "반품 규정, 환불 정책"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Under our *return policy*, unused items can be refunded within thirty days.",
+  "exKo": "저희 반품 규정에 따르면 사용하지 않은 물건은 30일 이내에 환불받을 수 있다.",
+  "col": [
+   {
+    "e": "strict return policy",
+    "k": "엄격한 반품 규정"
+   },
+   {
+    "e": "according to the return policy",
+    "k": "반품 규정에 따라"
+   }
+  ],
+  "der": [],
+  "para": [
+   "refund policy",
+   "exchange policy"
+  ],
+  "ant": "",
+  "tip": "Part 7 영수증·공지 지문에서 반품 기한, 영수증 필요 여부 등 세부 조건을 묻는 문제로 자주 나온다. refund policy로 바꿔 표현되기도 한다.",
+  "q": {
+   "s": "Please read our return ------- carefully before sending any items back for a refund.",
+   "o": [
+    "politics",
+    "policy",
+    "police",
+    "polish"
+   ],
+   "a": 1,
+   "k": "환불을 위해 물건을 보내기 전에 읽어야 하는 것은 '반품 규정'이므로 return과 복합명사를 이루는 policy가 정답이다. politics(정치), police(경찰), polish(광택제)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "satisfied",
+  "pos": "adj",
+  "m": [
+   "만족한"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Most guests were *satisfied* with the room but complained about breakfast.",
+  "exKo": "대부분의 투숙객은 객실에는 만족했지만 아침 식사에 대해서는 불만을 제기했다.",
+  "col": [
+   {
+    "e": "be satisfied with",
+    "k": "~에 만족하다"
+   },
+   {
+    "e": "satisfied customer",
+    "k": "만족한 고객"
+   }
+  ],
+  "der": [
+   {
+    "w": "satisfy",
+    "pos": "v",
+    "m": "만족시키다"
+   },
+   {
+    "w": "satisfaction",
+    "pos": "n",
+    "m": "만족"
+   },
+   {
+    "w": "satisfactory",
+    "pos": "adj",
+    "m": "만족스러운"
+   }
+  ],
+  "para": [
+   "pleased",
+   "content",
+   "happy"
+  ],
+  "ant": "dissatisfied",
+  "tip": "사람이 만족을 '느끼는' 경우에는 satisfied, 사물이 만족을 '주는' 경우에는 satisfying/satisfactory를 쓴다. be satisfied with의 전치사 with도 출제 포인트다.",
+  "q": {
+   "s": "If you are not completely ------- with your purchase, you may return it for a full refund.",
+   "o": [
+    "satisfying",
+    "satisfaction",
+    "satisfied",
+    "satisfactorily"
+   ],
+   "a": 2,
+   "k": "주어 you(사람)가 만족을 느끼는 것이고 be satisfied with(~에 만족하다) 구문이므로 satisfied가 정답이다. satisfying은 만족을 주는 사물에 쓰고, satisfaction은 명사, satisfactorily는 부사다."
+  }
+ },
+ {
+  "w": "dissatisfied",
+  "pos": "adj",
+  "m": [
+   "불만스러운, 불만족한"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "*Dissatisfied* customers are encouraged to fill out the online feedback form.",
+  "exKo": "불만이 있는 고객은 온라인 의견 양식을 작성할 것을 권장한다.",
+  "col": [
+   {
+    "e": "be dissatisfied with",
+    "k": "~에 불만이다"
+   },
+   {
+    "e": "dissatisfied customer",
+    "k": "불만족한 고객"
+   }
+  ],
+  "der": [
+   {
+    "w": "dissatisfaction",
+    "pos": "n",
+    "m": "불만"
+   },
+   {
+    "w": "satisfied",
+    "pos": "adj",
+    "m": "만족한"
+   }
+  ],
+  "para": [
+   "unhappy",
+   "displeased",
+   "discontented"
+  ],
+  "ant": "satisfied",
+  "tip": "사람의 감정을 나타내므로 주로 사람을 수식하거나 사람 주어의 보어로 쓰며, be dissatisfied with(~에 불만이다)로 쓴다. 사물에 쓰는 unsatisfactory와 구분하자.",
+  "q": {
+   "s": "Customers who are ------- with the repair work can request a free second visit by a technician.",
+   "o": [
+    "dissatisfied",
+    "disorganized",
+    "discontinued",
+    "disposable"
+   ],
+   "a": 0,
+   "k": "수리 작업에 '불만이 있는' 고객은 기술자의 무료 재방문을 요청할 수 있다는 의미로 be dissatisfied with를 이루는 dissatisfied가 정답이다. disorganized(체계적이지 못한), discontinued(단종된), disposable(일회용의)은 with the repair work와 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "stock up on",
+  "pos": "phr",
+  "m": [
+   "~을 많이 사 두다, 비축하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Many families *stock up on* bottled water before the typhoon season begins.",
+  "exKo": "많은 가정이 태풍 철이 시작되기 전에 생수를 사재기해 둔다.",
+  "col": [
+   {
+    "e": "stock up on supplies",
+    "k": "물품을 비축하다"
+   },
+   {
+    "e": "stock up on groceries",
+    "k": "식료품을 사 두다"
+   }
+  ],
+  "der": [
+   {
+    "w": "stock",
+    "pos": "n",
+    "m": "재고, 비축물"
+   }
+  ],
+  "para": [
+   "buy in bulk",
+   "store up"
+  ],
+  "ant": "",
+  "tip": "전치사 on까지 포함해 '~을 비축하다'라는 구동사로 외워야 한다. Part 4 할인 광고에서 Now is the time to stock up on ~ 형태로 자주 나온다.",
+  "q": {
+   "s": "Customers rushed to stock up ------- canned goods during the three-day sale.",
+   "o": [
+    "at",
+    "by",
+    "on",
+    "off"
+   ],
+   "a": 2,
+   "k": "stock up on(~을 비축하다, 사 두다)이라는 구동사이므로 on이 정답이다. at, by, off는 stock up과 결합해 이런 의미를 만들지 않는다."
+  }
+ },
+ {
+  "w": "overpriced",
+  "pos": "adj",
+  "m": [
+   "값이 너무 비싼, 가격이 과하게 매겨진"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Some reviewers felt the hotel's restaurant was *overpriced* for the quality of its food.",
+  "exKo": "일부 평가자들은 그 호텔 식당이 음식의 질에 비해 가격이 지나치게 비싸다고 느꼈다.",
+  "col": [
+   {
+    "e": "overpriced for",
+    "k": "~에 비해 비싼"
+   },
+   {
+    "e": "grossly overpriced",
+    "k": "터무니없이 비싼"
+   }
+  ],
+  "der": [
+   {
+    "w": "price",
+    "pos": "n",
+    "m": "가격"
+   }
+  ],
+  "para": [
+   "too expensive",
+   "overcharged"
+  ],
+  "ant": "reasonably priced",
+  "tip": "가격이 가치에 비해 지나치게 비싸다는 부정적인 평가로, Part 7 후기에서 too expensive로 바꿔 표현된다. 반대 개념은 reasonably priced, affordable이다.",
+  "q": {
+   "s": "Many travelers think the souvenirs sold at the airport are -------.",
+   "o": [
+    "overpriced",
+    "overdue",
+    "overseas",
+    "overall"
+   ],
+   "a": 0,
+   "k": "공항에서 파는 기념품이 '너무 비싸다'는 의미이므로 overpriced가 정답이다. overdue(기한이 지난), overseas(해외의), overall(전반적인)은 souvenirs를 서술하기에 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "apology",
+  "pos": "n",
+  "m": [
+   "사과"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The airline sent each passenger a letter of *apology* and a travel voucher.",
+  "exKo": "그 항공사는 각 승객에게 사과 편지와 여행 상품권을 보냈다.",
+  "col": [
+   {
+    "e": "accept an apology",
+    "k": "사과를 받아들이다"
+   },
+   {
+    "e": "sincere apologies",
+    "k": "진심 어린 사과"
+   },
+   {
+    "e": "apology for",
+    "k": "~에 대한 사과"
+   }
+  ],
+  "der": [
+   {
+    "w": "apologize",
+    "pos": "v",
+    "m": "사과하다"
+   },
+   {
+    "w": "apologetic",
+    "pos": "adj",
+    "m": "미안해하는"
+   }
+  ],
+  "para": [
+   "regret"
+  ],
+  "ant": "",
+  "tip": "Please accept our sincere apologies for ~는 사과문의 정형 표현이다. 동사 apologize는 자동사라 apologize for/to처럼 전치사가 필요하다.",
+  "q": {
+   "s": "The store manager offered Ms. Kim a written ------- after she was charged twice for the same item.",
+   "o": [
+    "apologize",
+    "apology",
+    "apologetic",
+    "apologetically"
+   ],
+   "a": 1,
+   "k": "관사 a와 형용사 written 뒤 명사 자리이며 '서면 사과'라는 의미이므로 apology가 정답이다. apologize는 동사, apologetic은 형용사, apologetically는 부사다."
+  }
+ },
+ {
+  "w": "affordability",
+  "pos": "n",
+  "m": [
+   "(가격의) 적정성, 감당할 수 있는 비용"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Housing *affordability* has become a major concern for young workers in the city.",
+  "exKo": "주택 가격 부담은 그 도시의 젊은 직장인들에게 주요 관심사가 되었다.",
+  "col": [
+   {
+    "e": "affordability of",
+    "k": "~의 가격 적정성"
+   },
+   {
+    "e": "housing affordability",
+    "k": "주택 구매 여력"
+   }
+  ],
+  "der": [
+   {
+    "w": "affordable",
+    "pos": "adj",
+    "m": "(가격이) 적당한"
+   },
+   {
+    "w": "afford",
+    "pos": "v",
+    "m": "~할 여유가 있다"
+   }
+  ],
+  "para": [
+   "low cost",
+   "reasonable price"
+  ],
+  "ant": "",
+  "tip": "affordable(가격이 적당한)의 명사형으로, 관사 the 뒤 명사 자리 문제로 나온다. Part 7에서 낮은 가격이 장점이라는 내용을 the affordability of로 표현하기도 한다.",
+  "q": {
+   "s": "The ------- of the new compact car has made it especially popular among first-time buyers.",
+   "o": [
+    "affordability",
+    "affordable",
+    "afford",
+    "affordably"
+   ],
+   "a": 0,
+   "k": "관사 The 뒤, 전치사 of 앞 명사 자리이며 '저렴한 가격'이 인기의 원인이라는 의미이므로 affordability가 정답이다. affordable은 형용사, afford는 동사, affordably는 부사다."
+  }
+ },
+ {
+  "w": "assortment",
+  "pos": "n",
+  "m": [
+   "(여러 가지의) 모음, 구색"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The welcome basket contains an *assortment* of fruit, cheese, and chocolates.",
+  "exKo": "환영 바구니에는 과일, 치즈, 초콜릿이 골고루 들어 있다.",
+  "col": [
+   {
+    "e": "a wide assortment of",
+    "k": "다양한 종류의"
+   },
+   {
+    "e": "an assortment of",
+    "k": "여러 가지의"
+   }
+  ],
+  "der": [
+   {
+    "w": "assorted",
+    "pos": "adj",
+    "m": "여러 가지의, 갖은"
+   }
+  ],
+  "para": [
+   "variety",
+   "selection",
+   "range"
+  ],
+  "ant": "",
+  "tip": "a wide assortment of(매우 다양한)가 a wide variety/selection/range of와 같은 뜻으로 쓰인다. 형용사 assorted(여러 가지의)도 assorted cookies처럼 출제된다.",
+  "q": {
+   "s": "The gift shop carries a wide ------- of handmade jewelry and local crafts.",
+   "o": [
+    "assignment",
+    "assessment",
+    "assortment",
+    "attachment"
+   ],
+   "a": 2,
+   "k": "a wide assortment of(다양한 종류의)라는 표현으로 수제 장신구와 공예품을 다양하게 갖추고 있다는 의미이므로 assortment가 정답이다. assignment(과제), assessment(평가), attachment(첨부 파일)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "solution",
+  "pos": "n",
+  "m": [
+   "해결책, 해법",
+   "용액"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The new app offers a simple *solution* for tracking business expenses.",
+  "exKo": "새 앱은 업무 경비를 기록하는 간단한 해결책을 제공한다.",
+  "col": [
+   {
+    "e": "solution to",
+    "k": "~에 대한 해결책"
+   },
+   {
+    "e": "find a solution",
+    "k": "해결책을 찾다"
+   },
+   {
+    "e": "practical solution",
+    "k": "실용적인 해결책"
+   }
+  ],
+  "der": [
+   {
+    "w": "solve",
+    "pos": "v",
+    "m": "해결하다"
+   }
+  ],
+  "para": [
+   "answer",
+   "remedy",
+   "fix"
+  ],
+  "ant": "",
+  "tip": "solution to the problem(문제의 해결책)처럼 전치사 to를 쓴다는 점이 자주 출제된다. 업체 광고에서는 storage solutions(보관 솔루션)처럼 '제품, 서비스'를 가리키기도 한다.",
+  "q": {
+   "s": "Our technicians will work with you to find a ------- to the problem with your network.",
+   "o": [
+    "solve",
+    "solvent",
+    "solved",
+    "solution"
+   ],
+   "a": 3,
+   "k": "관사 a 뒤 명사 자리이며 solution to(~에 대한 해결책) 구문을 이루는 solution이 정답이다. solve는 동사, solvent는 '지불 능력이 있는' 또는 '용제'로 의미가 맞지 않으며, solved는 분사다."
+  }
+ },
+ {
+  "w": "assist",
+  "pos": "v",
+  "m": [
+   "돕다, 지원하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Staff members are available at the information desk to *assist* visitors.",
+  "exKo": "직원들이 안내 데스크에서 방문객을 돕기 위해 대기하고 있다.",
+  "col": [
+   {
+    "e": "assist A with B",
+    "k": "A가 B 하는 것을 돕다"
+   },
+   {
+    "e": "assist in -ing",
+    "k": "~하는 것을 돕다"
+   }
+  ],
+  "der": [
+   {
+    "w": "assistance",
+    "pos": "n",
+    "m": "도움, 지원"
+   },
+   {
+    "w": "assistant",
+    "pos": "n",
+    "m": "조수, 보조"
+   }
+  ],
+  "para": [
+   "help",
+   "aid",
+   "support"
+  ],
+  "ant": "",
+  "tip": "assist A with B, assist (A) in -ing 구조가 출제된다. 명사 assistance(불가산, 도움)와 assistant(가산, 조수)를 구분하는 품사 문제도 자주 나온다.",
+  "q": {
+   "s": "Ms. Herrera will ------- new employees with the registration process on their first day.",
+   "o": [
+    "assistance",
+    "assistant",
+    "assisting",
+    "assist"
+   ],
+   "a": 3,
+   "k": "조동사 will 뒤에는 동사원형이 오며 assist A with B(A가 B 하는 것을 돕다) 구조를 이루는 assist가 정답이다. assistance와 assistant는 명사이고, assisting은 will 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "hotline",
+  "pos": "n",
+  "m": [
+   "상담 전화, 직통 전화"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Call our customer support *hotline* if you have any trouble installing the software.",
+  "exKo": "소프트웨어 설치에 문제가 있으면 저희 고객 지원 상담 전화로 연락하라.",
+  "col": [
+   {
+    "e": "24-hour hotline",
+    "k": "24시간 상담 전화"
+   },
+   {
+    "e": "customer hotline",
+    "k": "고객 상담 전화"
+   },
+   {
+    "e": "call a hotline",
+    "k": "상담 전화에 전화하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "helpline",
+   "help desk"
+  ],
+  "ant": "",
+  "tip": "Part 4 녹음 메시지와 Part 7 안내문에서 문의 방법으로 자주 나오며, helpline, support line으로 바꿔 표현된다.",
+  "q": {
+   "s": "Customers with urgent technical problems can call our 24-hour ------- for help.",
+   "o": [
+    "headline",
+    "deadline",
+    "hotline",
+    "guideline"
+   ],
+   "a": 2,
+   "k": "긴급한 기술 문제가 있을 때 '전화할 수 있는' 24시간 상담 창구이므로 hotline이 정답이다. headline(헤드라인), deadline(마감), guideline(지침)은 전화할 대상이 아니다."
+  }
+ },
+ {
+  "w": "responsive",
+  "pos": "adj",
+  "m": [
+   "(요구 등에) 즉각 반응하는, 호응하는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Clients praised the agency for being *responsive* and easy to work with.",
+  "exKo": "고객들은 그 대행사가 응대가 빠르고 함께 일하기 쉽다고 칭찬했다.",
+  "col": [
+   {
+    "e": "responsive to",
+    "k": "~에 즉각 반응하는"
+   },
+   {
+    "e": "highly responsive",
+    "k": "매우 신속하게 대응하는"
+   }
+  ],
+  "der": [
+   {
+    "w": "respond",
+    "pos": "v",
+    "m": "응답하다"
+   },
+   {
+    "w": "response",
+    "pos": "n",
+    "m": "응답, 반응"
+   },
+   {
+    "w": "responsiveness",
+    "pos": "n",
+    "m": "반응성, 신속한 대응"
+   }
+  ],
+  "para": [
+   "quick to respond",
+   "attentive"
+  ],
+  "ant": "unresponsive",
+  "tip": "be responsive to(~에 신속히 대응하다)의 전치사 to가 출제 포인트다. responsible(책임 있는)과 철자가 비슷해 어휘 문제 오답으로 함께 나온다.",
+  "q": {
+   "s": "The company is highly ------- to customer feedback and updates its app every month.",
+   "o": [
+    "response",
+    "responsive",
+    "respond",
+    "responsively"
+   ],
+   "a": 1,
+   "k": "be동사 is 뒤 보어 자리이며 부사 highly의 수식을 받는 형용사로, be responsive to(~에 신속히 대응하다)를 이루는 responsive가 정답이다. response는 명사, respond는 동사, responsively는 부사다."
+  }
+ },
+ {
+  "w": "attentive",
+  "pos": "adj",
+  "m": [
+   "세심한, 배려하는",
+   "주의 깊은"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The flight attendants were *attentive* to the needs of every passenger.",
+  "exKo": "승무원들은 모든 승객의 요구에 세심하게 신경 썼다.",
+  "col": [
+   {
+    "e": "attentive to",
+    "k": "~에 세심한, 주의를 기울이는"
+   },
+   {
+    "e": "attentive service",
+    "k": "세심한 서비스"
+   },
+   {
+    "e": "attentive staff",
+    "k": "친절하고 세심한 직원"
+   }
+  ],
+  "der": [
+   {
+    "w": "attention",
+    "pos": "n",
+    "m": "주의, 관심"
+   },
+   {
+    "w": "attend",
+    "pos": "v",
+    "m": "참석하다, 돌보다"
+   },
+   {
+    "w": "attentively",
+    "pos": "adv",
+    "m": "주의 깊게"
+   }
+  ],
+  "para": [
+   "considerate",
+   "thoughtful",
+   "helpful"
+  ],
+  "ant": "inattentive",
+  "tip": "서비스 후기에서 attentive staff(세심한 직원)가 자주 나오며 be attentive to(~에 주의를 기울이다)의 전치사 to가 출제된다. 명사 attention, 부사 attentively와의 품사 구분도 자주 묻는다.",
+  "q": {
+   "s": "The waitstaff at the restaurant were friendly and ------- throughout the meal.",
+   "o": [
+    "attention",
+    "attentive",
+    "attend",
+    "attentively"
+   ],
+   "a": 1,
+   "k": "be동사 were 뒤에서 형용사 friendly와 and로 연결되는 형용사 자리이므로 attentive가 정답이다. attention은 명사, attend는 동사, attentively는 부사다."
+  }
+ },
+ {
+  "w": "accommodating",
+  "pos": "adj",
+  "m": [
+   "친절한, (요구를) 잘 들어주는, 협조적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The manager was very *accommodating* when we asked to change our reservation.",
+  "exKo": "우리가 예약 변경을 요청하자 관리자는 매우 흔쾌히 들어주었다.",
+  "col": [
+   {
+    "e": "very accommodating",
+    "k": "매우 협조적인"
+   },
+   {
+    "e": "accommodating staff",
+    "k": "친절한 직원"
+   }
+  ],
+  "der": [
+   {
+    "w": "accommodate",
+    "pos": "v",
+    "m": "수용하다, (요구를) 들어주다"
+   },
+   {
+    "w": "accommodation",
+    "pos": "n",
+    "m": "숙박 시설, 편의"
+   }
+  ],
+  "para": [
+   "helpful",
+   "obliging",
+   "cooperative"
+  ],
+  "ant": "",
+  "tip": "accommodate(수용하다, 요구를 들어주다)에서 나온 형용사로 '고객의 요구를 잘 들어주는'이라는 뜻이다. 숙박 시설을 뜻하는 accommodations와 혼동하지 말 것.",
+  "q": {
+   "s": "The hotel staff were very ------- and arranged an early check-in for our entire group.",
+   "o": [
+    "accommodating",
+    "accommodation",
+    "accommodate",
+    "accommodated"
+   ],
+   "a": 0,
+   "k": "be동사 were 뒤에서 부사 very의 수식을 받는 형용사 자리이며, '요구를 잘 들어주는'이라는 의미이므로 accommodating이 정답이다. accommodation은 명사, accommodate는 동사이고, accommodated는 '수용된'이라는 의미라 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "browse",
+  "pos": "v",
+  "m": [
+   "(상품을) 둘러보다",
+   "(책·웹사이트 등을) 훑어보다"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   5,
+   7
+  ],
+  "ex": "Visitors can *browse* our full collection online before coming to the showroom.",
+  "exKo": "방문객은 전시장에 오기 전에 온라인으로 저희 전체 상품을 둘러볼 수 있다.",
+  "col": [
+   {
+    "e": "browse through",
+    "k": "~을 훑어보다"
+   },
+   {
+    "e": "browse the Internet",
+    "k": "인터넷을 검색하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "browser",
+    "pos": "n",
+    "m": "(인터넷) 브라우저, 둘러보는 사람"
+   }
+  ],
+  "para": [
+   "look around",
+   "look through",
+   "scan"
+  ],
+  "ant": "",
+  "tip": "자동사·타동사 모두로 쓰여 browse (through) a catalog 형태가 가능하다. Part 1에서 Some people are browsing in a store(사람들이 상점에서 둘러보고 있다)처럼 쓰인다.",
+  "q": {
+   "s": "Many people visit the bookstore just to ------- without any intention of buying anything.",
+   "o": [
+    "browse",
+    "bloom",
+    "boast",
+    "brew"
+   ],
+   "a": 0,
+   "k": "살 생각 없이 서점에 와서 '둘러보기만' 한다는 의미이므로 browse가 정답이다. bloom(꽃이 피다), boast(자랑하다), brew(끓이다, 양조하다)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "upscale",
+  "pos": "adj",
+  "m": [
+   "고급의, 부유층 대상의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company plans to open an *upscale* restaurant in the financial district.",
+  "exKo": "그 회사는 금융 지구에 고급 레스토랑을 열 계획이다.",
+  "col": [
+   {
+    "e": "upscale restaurant",
+    "k": "고급 레스토랑"
+   },
+   {
+    "e": "upscale neighborhood",
+    "k": "부촌, 고급 주택가"
+   },
+   {
+    "e": "upscale market",
+    "k": "고급 시장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "high-end",
+   "luxury",
+   "exclusive"
+  ],
+  "ant": "low-end",
+  "tip": "Part 7에서 high-end, luxury로 바꿔 표현되는 경우가 많다. 반대 개념으로는 budget, low-end가 쓰인다.",
+  "q": {
+   "s": "The ------- department store sells designer brands that are not available elsewhere in the city.",
+   "o": [
+    "upset",
+    "upward",
+    "upscale",
+    "uphill"
+   ],
+   "a": 2,
+   "k": "명품 브랜드를 판매하는 '고급' 백화점이라는 의미이므로 upscale이 정답이다. upset(속상한), upward(위쪽을 향한), uphill(오르막의)은 department store를 수식하기에 의미가 맞지 않는다."
+  }
+ }
+]

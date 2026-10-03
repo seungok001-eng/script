@@ -1,0 +1,2253 @@
+[
+ {
+  "w": "influence",
+  "pos": "n",
+  "m": [
+   "영향(력)",
+   "영향을 미치다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Social media has a growing *influence* on how consumers choose restaurants.",
+  "exKo": "소셜 미디어는 소비자들이 식당을 고르는 방식에 점점 더 큰 영향을 미치고 있다.",
+  "col": [
+   {
+    "e": "have an influence on",
+    "k": "~에 영향을 미치다"
+   },
+   {
+    "e": "under the influence of",
+    "k": "~의 영향을 받아"
+   },
+   {
+    "e": "considerable influence",
+    "k": "상당한 영향력"
+   }
+  ],
+  "der": [
+   {
+    "w": "influential",
+    "pos": "adj",
+    "m": "영향력 있는"
+   },
+   {
+    "w": "influencer",
+    "pos": "n",
+    "m": "영향력 있는 사람"
+   }
+  ],
+  "para": [
+   "impact",
+   "effect",
+   "sway"
+  ],
+  "ant": "",
+  "tip": "'have an influence on/over'의 전치사 on이 출제되며, 형용사 influential(영향력 있는)과의 품사 구분 문제가 자주 나온다. 동사로 쓰면 전치사 없이 목적어를 바로 취한다.",
+  "q": {
+   "s": "The new regulations will have a significant ------- on how banks lend money to small businesses.",
+   "o": [
+    "influence",
+    "influential",
+    "influenced",
+    "influentially"
+   ],
+   "a": 0,
+   "k": "형용사 significant의 수식을 받는 명사 자리이고 'have an influence on' 구조이므로 influence가 정답. influential은 형용사, influenced는 과거분사, influentially는 부사다."
+  }
+ },
+ {
+  "w": "range",
+  "pos": "n",
+  "m": [
+   "범위, 폭",
+   "(제품) 종류, 제품군"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our store carries a wide *range* of office furniture at affordable prices.",
+  "exKo": "우리 매장은 다양한 사무용 가구를 저렴한 가격에 판매한다.",
+  "col": [
+   {
+    "e": "a wide range of",
+    "k": "다양한 ~"
+   },
+   {
+    "e": "price range",
+    "k": "가격대"
+   },
+   {
+    "e": "range from A to B",
+    "k": "A에서 B에 이르다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "variety",
+   "selection",
+   "assortment"
+  ],
+  "ant": "",
+  "tip": "'a wide/broad range of + 복수 명사(다양한 ~)'가 빈출이며, 동사로는 'range from A to B(A에서 B에 이르다)' 구조로 출제된다.",
+  "q": {
+   "s": "The hotel offers a broad ------- of services, including airport transfers and dry cleaning.",
+   "o": [
+    "level",
+    "degree",
+    "range",
+    "rate"
+   ],
+   "a": 2,
+   "k": "'a broad range of(다양한 ~)'를 이루는 range가 정답. level(수준), degree(정도), rate(비율)는 'a broad ~ of services' 형태로 '다양한 서비스'라는 뜻이 되지 않는다."
+  }
+ },
+ {
+  "w": "status",
+  "pos": "n",
+  "m": [
+   "상태, 현황",
+   "지위, 신분"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Customers can check the *status* of their orders online at any time.",
+  "exKo": "고객은 언제든지 온라인으로 주문 처리 현황을 확인할 수 있다.",
+  "col": [
+   {
+    "e": "check the status of",
+    "k": "~의 현황을 확인하다"
+   },
+   {
+    "e": "order status",
+    "k": "주문 처리 현황"
+   },
+   {
+    "e": "status report",
+    "k": "현황 보고서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "progress",
+   "condition",
+   "standing"
+  ],
+  "ant": "",
+  "tip": "'check the status of an order/application'처럼 진행 현황을 묻는 문맥에서 빈출이며, 'status update(현황 업데이트)', 'status report'처럼 복합 명사로도 쓰인다.",
+  "q": {
+   "s": "Applicants can track the ------- of their visa applications through the embassy's website.",
+   "o": [
+    "stature",
+    "statue",
+    "statute",
+    "status"
+   ],
+   "a": 3,
+   "k": "비자 신청서의 '처리 현황'을 추적한다는 뜻이므로 status가 정답. stature(키, 위상), statue(조각상), statute(법령)는 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "active",
+  "pos": "adj",
+  "m": [
+   "활동적인, 적극적인",
+   "활성화된, 유효한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Durand has been an *active* member of the local business association for ten years.",
+  "exKo": "Durand 씨는 10년 동안 지역 상공인 협회에서 적극적인 회원으로 활동해 왔다.",
+  "col": [
+   {
+    "e": "take an active role in",
+    "k": "~에서 적극적인 역할을 하다"
+   },
+   {
+    "e": "active participation",
+    "k": "적극적인 참여"
+   },
+   {
+    "e": "remain active",
+    "k": "활동을 계속하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "actively",
+    "pos": "adv",
+    "m": "적극적으로"
+   },
+   {
+    "w": "activity",
+    "pos": "n",
+    "m": "활동"
+   },
+   {
+    "w": "activate",
+    "pos": "v",
+    "m": "활성화하다"
+   }
+  ],
+  "para": [
+   "involved",
+   "engaged"
+  ],
+  "ant": "inactive",
+  "tip": "'take an active part/role in(~에 적극 참여하다)'이 빈출이며, 부사 actively는 'actively participate'처럼 동사를 수식하는 자리에 온다.",
+  "q": {
+   "s": "Employees are encouraged to take an ------- role in planning the company's charity events.",
+   "o": [
+    "activity",
+    "actively",
+    "activate",
+    "active"
+   ],
+   "a": 3,
+   "k": "관사 an과 명사 role 사이의 형용사 자리이므로 active가 정답. activity는 명사, actively는 부사, activate는 동사다."
+  }
+ },
+ {
+  "w": "provisional",
+  "pos": "adj",
+  "m": [
+   "임시의, 잠정적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The committee approved a *provisional* budget until the final figures are confirmed.",
+  "exKo": "위원회는 최종 수치가 확정될 때까지 임시 예산을 승인했다.",
+  "col": [
+   {
+    "e": "provisional agreement",
+    "k": "잠정 합의"
+   },
+   {
+    "e": "provisional schedule",
+    "k": "잠정 일정"
+   },
+   {
+    "e": "on a provisional basis",
+    "k": "임시로"
+   }
+  ],
+  "der": [
+   {
+    "w": "provisionally",
+    "pos": "adv",
+    "m": "임시로, 잠정적으로"
+   },
+   {
+    "w": "provision",
+    "pos": "n",
+    "m": "공급, (계약서의) 조항"
+   }
+  ],
+  "para": [
+   "temporary",
+   "tentative",
+   "interim"
+  ],
+  "ant": "permanent",
+  "tip": "확정 전의 '잠정적인' 상태를 뜻해 temporary, tentative로 패러프레이즈되며, 명사 provision(공급, 조항)과 뜻이 달라 주의해야 한다.",
+  "q": {
+   "s": "The dates listed in the brochure are ------- and may change once the venue is confirmed.",
+   "o": [
+    "punctual",
+    "proficient",
+    "provisional",
+    "prosperous"
+   ],
+   "a": 2,
+   "k": "장소가 확정되면 바뀔 수 있다고 했으므로 '잠정적인'이라는 뜻의 provisional이 정답. punctual(시간을 지키는), proficient(능숙한), prosperous(번영하는)는 날짜를 설명하는 말로 맞지 않는다."
+  }
+ },
+ {
+  "w": "broad",
+  "pos": "adj",
+  "m": [
+   "넓은, 폭넓은",
+   "광범위한, 대략적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new online course provides a *broad* overview of international trade law.",
+  "exKo": "새 온라인 강좌는 국제 무역법을 폭넓게 개관한다.",
+  "col": [
+   {
+    "e": "a broad selection of",
+    "k": "폭넓은 종류의 ~"
+   },
+   {
+    "e": "broad experience",
+    "k": "폭넓은 경험"
+   },
+   {
+    "e": "in broad terms",
+    "k": "대략적으로"
+   }
+  ],
+  "der": [
+   {
+    "w": "broaden",
+    "pos": "v",
+    "m": "넓히다"
+   },
+   {
+    "w": "broadly",
+    "pos": "adv",
+    "m": "대체로, 폭넓게"
+   },
+   {
+    "w": "breadth",
+    "pos": "n",
+    "m": "폭, 너비"
+   }
+  ],
+  "para": [
+   "wide",
+   "extensive",
+   "general"
+  ],
+  "ant": "narrow",
+  "tip": "'a broad range/selection of'가 빈출이며, 동사 broaden(넓히다)과 부사 broadly(대체로)가 품사 문제에 나온다.",
+  "q": {
+   "s": "Candidates should have ------- experience in project management and client relations.",
+   "o": [
+    "broadly",
+    "broaden",
+    "broad",
+    "breadth"
+   ],
+   "a": 2,
+   "k": "동사 have의 목적어인 명사 experience를 수식하는 형용사 자리이므로 broad가 정답. broadly는 부사, broaden은 동사, breadth는 명사다."
+  }
+ },
+ {
+  "w": "stringent",
+  "pos": "adj",
+  "m": [
+   "엄격한, 엄중한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Food suppliers must meet *stringent* hygiene standards set by the health department.",
+  "exKo": "식품 공급업체는 보건 당국이 정한 엄격한 위생 기준을 충족해야 한다.",
+  "col": [
+   {
+    "e": "stringent requirements",
+    "k": "엄격한 요건"
+   },
+   {
+    "e": "stringent regulations",
+    "k": "엄격한 규제"
+   },
+   {
+    "e": "stringent quality control",
+    "k": "엄격한 품질 관리"
+   }
+  ],
+  "der": [
+   {
+    "w": "stringently",
+    "pos": "adv",
+    "m": "엄격하게"
+   }
+  ],
+  "para": [
+   "strict",
+   "rigorous",
+   "tough"
+  ],
+  "ant": "lenient",
+  "tip": "strict, rigorous의 격식어로 regulations, standards, requirements와 짝을 이루며, 사람보다는 규정·기준을 수식한다.",
+  "q": {
+   "s": "All products undergo ------- testing before they are approved for sale in the European market.",
+   "o": [
+    "reluctant",
+    "eligible",
+    "abundant",
+    "stringent"
+   ],
+   "a": 3,
+   "k": "판매 승인 전에 거치는 '엄격한' 테스트라는 뜻이므로 stringent가 정답. reluctant(꺼리는), eligible(자격이 있는), abundant(풍부한)는 testing을 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "subtle",
+  "pos": "adj",
+  "m": [
+   "미묘한, 섬세한",
+   "은은한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The designers made *subtle* changes to the logo to give it a more modern look.",
+  "exKo": "디자이너들은 로고에 미묘한 변화를 주어 더 현대적인 느낌을 냈다.",
+  "col": [
+   {
+    "e": "subtle difference",
+    "k": "미묘한 차이"
+   },
+   {
+    "e": "subtle changes",
+    "k": "미묘한 변화"
+   },
+   {
+    "e": "subtle color",
+    "k": "은은한 색"
+   }
+  ],
+  "der": [
+   {
+    "w": "subtly",
+    "pos": "adv",
+    "m": "미묘하게"
+   },
+   {
+    "w": "subtlety",
+    "pos": "n",
+    "m": "미묘함"
+   }
+  ],
+  "para": [
+   "slight",
+   "delicate",
+   "understated"
+  ],
+  "ant": "obvious",
+  "tip": "b가 묵음인 철자(subtle, subtly)에 주의하며, '눈에 잘 띄지 않을 정도로 작은' 변화나 차이를 묘사할 때 slight로 패러프레이즈된다.",
+  "q": {
+   "s": "There are only ------- differences between the standard and deluxe versions of the printer.",
+   "o": [
+    "subtly",
+    "subtle",
+    "subtlety",
+    "subtleties"
+   ],
+   "a": 1,
+   "k": "명사 differences를 수식하는 형용사 자리이므로 subtle이 정답. subtly는 부사이고, subtlety와 subtleties는 명사다."
+  }
+ },
+ {
+  "w": "current",
+  "pos": "adj",
+  "m": [
+   "현재의, 현행의",
+   "최신의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *current* lease on our office space expires at the end of September.",
+  "exKo": "현재 사무실 임대 계약은 9월 말에 만료된다.",
+  "col": [
+   {
+    "e": "current address",
+    "k": "현 주소"
+   },
+   {
+    "e": "current employees",
+    "k": "현 직원"
+   },
+   {
+    "e": "current market conditions",
+    "k": "현재 시장 상황"
+   }
+  ],
+  "der": [
+   {
+    "w": "currently",
+    "pos": "adv",
+    "m": "현재"
+   },
+   {
+    "w": "currency",
+    "pos": "n",
+    "m": "통화"
+   }
+  ],
+  "para": [
+   "present",
+   "existing",
+   "up-to-date"
+  ],
+  "ant": "former",
+  "tip": "형용사 current는 명사 앞, 부사 currently는 동사·형용사를 수식하는 자리에 오는 품사 구분 문제가 빈출이다. 명사로는 '흐름, 해류'의 뜻이 있다.",
+  "q": {
+   "s": "Please make sure your ------- contact information is listed on the registration form.",
+   "o": [
+    "currently",
+    "currency",
+    "current",
+    "currents"
+   ],
+   "a": 2,
+   "k": "소유격 your와 명사구 contact information 사이의 형용사 자리이므로 current가 정답. currently는 부사, currency와 currents는 명사다."
+  }
+ },
+ {
+  "w": "direct",
+  "pos": "adj",
+  "m": [
+   "직접적인",
+   "직행의",
+   "솔직한"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The hotel offers *direct* access to the convention center through an underground walkway.",
+  "exKo": "그 호텔에서는 지하 통로를 통해 컨벤션 센터로 곧바로 갈 수 있다.",
+  "col": [
+   {
+    "e": "direct flight",
+    "k": "직항편"
+   },
+   {
+    "e": "direct access to",
+    "k": "~로의 직접 연결"
+   },
+   {
+    "e": "direct supervisor",
+    "k": "직속 상사"
+   }
+  ],
+  "der": [
+   {
+    "w": "directly",
+    "pos": "adv",
+    "m": "직접, 곧장"
+   },
+   {
+    "w": "direction",
+    "pos": "n",
+    "m": "방향, 지시"
+   },
+   {
+    "w": "director",
+    "pos": "n",
+    "m": "이사, 감독"
+   }
+  ],
+  "para": [
+   "nonstop",
+   "immediate",
+   "straight"
+  ],
+  "ant": "indirect",
+  "tip": "형용사 direct와 부사 directly의 자리 구분이 빈출이며, 동사로는 '지시하다, (문의를) ~에게 보내다(direct inquiries to)'의 뜻으로 쓰인다.",
+  "q": {
+   "s": "Travelers who prefer not to change planes should book a ------- flight to Vancouver.",
+   "o": [
+    "directly",
+    "direction",
+    "director",
+    "direct"
+   ],
+   "a": 3,
+   "k": "관사 a와 명사 flight 사이의 형용사 자리이고 비행기를 갈아타지 않는 '직항'이라는 뜻이므로 direct가 정답. directly는 부사, direction과 director는 명사다."
+  }
+ },
+ {
+  "w": "external",
+  "pos": "adj",
+  "m": [
+   "외부의",
+   "대외적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company hired an *external* auditor to review its financial records.",
+  "exKo": "그 회사는 재무 기록을 검토하기 위해 외부 감사인을 고용했다.",
+  "col": [
+   {
+    "e": "external auditor",
+    "k": "외부 감사인"
+   },
+   {
+    "e": "external candidates",
+    "k": "외부 지원자"
+   },
+   {
+    "e": "external factors",
+    "k": "외부 요인"
+   }
+  ],
+  "der": [
+   {
+    "w": "externally",
+    "pos": "adv",
+    "m": "외부에서"
+   }
+  ],
+  "para": [
+   "outside",
+   "independent"
+  ],
+  "ant": "internal",
+  "tip": "internal(내부의)과 짝을 이루는 반의어로, 'external candidates(외부 지원자)', 'external consultants(외부 컨설턴트)' 같은 결합이 나온다.",
+  "q": {
+   "s": "The position is open to both internal and ------- candidates.",
+   "o": [
+    "extensive",
+    "external",
+    "extended",
+    "exterior"
+   ],
+   "a": 1,
+   "k": "both A and B 구조에서 internal(내부의)과 대비되는 '외부의'라는 뜻이 필요하므로 external이 정답. extensive(광범위한), extended(연장된), exterior(건물 등의 바깥쪽의)는 지원자를 수식하기에 맞지 않는다."
+  }
+ },
+ {
+  "w": "internal",
+  "pos": "adj",
+  "m": [
+   "내부의",
+   "사내의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The results of the *internal* survey will be shared with all staff next week.",
+  "exKo": "사내 설문 조사 결과는 다음 주에 전 직원과 공유될 것이다.",
+  "col": [
+   {
+    "e": "internal memo",
+    "k": "사내 메모"
+   },
+   {
+    "e": "internal audit",
+    "k": "내부 감사"
+   },
+   {
+    "e": "for internal use only",
+    "k": "사내용"
+   }
+  ],
+  "der": [
+   {
+    "w": "internally",
+    "pos": "adv",
+    "m": "내부적으로"
+   }
+  ],
+  "para": [
+   "in-house"
+  ],
+  "ant": "external",
+  "tip": "'internal memo/communication'처럼 사내 문서 문맥에 자주 나오며, 'be filled internally(내부 인사로 충원되다)'처럼 부사 internally도 출제된다.",
+  "q": {
+   "s": "This document is for ------- use only and should not be shared with clients.",
+   "o": [
+    "initial",
+    "intensive",
+    "intentional",
+    "internal"
+   ],
+   "a": 3,
+   "k": "고객과 공유하면 안 되는 문서이므로 'for internal use only(사내용)'의 internal이 정답. initial(처음의), intensive(집중적인), intentional(의도적인)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "detail",
+  "pos": "n",
+  "m": [
+   "세부 사항",
+   "상세 정보"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Further *details* about the job fair will be posted on our website next week.",
+  "exKo": "취업 박람회에 관한 자세한 사항은 다음 주에 웹사이트에 게시될 예정이다.",
+  "col": [
+   {
+    "e": "in detail",
+    "k": "자세히"
+   },
+   {
+    "e": "attention to detail",
+    "k": "꼼꼼함, 세심함"
+   },
+   {
+    "e": "for further details",
+    "k": "자세한 사항은"
+   }
+  ],
+  "der": [
+   {
+    "w": "detailed",
+    "pos": "adj",
+    "m": "상세한"
+   }
+  ],
+  "para": [
+   "specifics",
+   "particulars",
+   "information"
+  ],
+  "ant": "",
+  "tip": "'in detail(자세히)', 'attention to detail(세심함)'이 빈출이며, 형용사 detailed(상세한)와의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "The contract explains the terms of the partnership in -------.",
+   "o": [
+    "detail",
+    "detailed",
+    "detailing",
+    "detailer"
+   ],
+   "a": 0,
+   "k": "전치사 in과 함께 '자세히'라는 뜻을 이루는 명사 detail이 정답. detailed는 형용사, detailing은 동명사·현재분사, detailer는 사람명사라 in과 결합하지 않는다."
+  }
+ },
+ {
+  "w": "generous",
+  "pos": "adj",
+  "m": [
+   "후한, 넉넉한",
+   "관대한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company offers a *generous* benefits package, including four weeks of paid vacation.",
+  "exKo": "그 회사는 4주간의 유급 휴가를 포함한 넉넉한 복리후생 제도를 제공한다.",
+  "col": [
+   {
+    "e": "generous donation",
+    "k": "후한 기부"
+   },
+   {
+    "e": "generous discount",
+    "k": "큰 폭의 할인"
+   },
+   {
+    "e": "thanks to the generosity of",
+    "k": "~의 후원 덕분에"
+   }
+  ],
+  "der": [
+   {
+    "w": "generously",
+    "pos": "adv",
+    "m": "후하게"
+   },
+   {
+    "w": "generosity",
+    "pos": "n",
+    "m": "관대함, 너그러움"
+   }
+  ],
+  "para": [
+   "ample",
+   "substantial",
+   "lavish"
+  ],
+  "ant": "stingy",
+  "tip": "'generous donation/discount/benefits'처럼 금액·혜택을 수식하며, 부사 generously는 'generously donated'처럼 동사를 수식하는 자리에 온다.",
+  "q": {
+   "s": "The hospital's new wing was built thanks to a ------- donation from a local business owner.",
+   "o": [
+    "generously",
+    "generous",
+    "generosity",
+    "generation"
+   ],
+   "a": 1,
+   "k": "관사 a와 명사 donation 사이의 형용사 자리이므로 generous가 정답. generously는 부사, generosity와 generation은 명사다."
+  }
+ },
+ {
+  "w": "intermittent",
+  "pos": "adj",
+  "m": [
+   "간헐적인, 단속적인"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Forecasters are predicting *intermittent* showers throughout the weekend, so bring an umbrella.",
+  "exKo": "주말 내내 간간이 소나기가 내릴 것으로 예보되었으니 우산을 챙기는 것이 좋다.",
+  "col": [
+   {
+    "e": "intermittent rain",
+    "k": "간간이 내리는 비"
+   },
+   {
+    "e": "intermittent delays",
+    "k": "간헐적인 지연"
+   },
+   {
+    "e": "intermittent problems",
+    "k": "간헐적인 문제"
+   }
+  ],
+  "der": [
+   {
+    "w": "intermittently",
+    "pos": "adv",
+    "m": "간헐적으로"
+   }
+  ],
+  "para": [
+   "occasional",
+   "sporadic",
+   "on and off"
+  ],
+  "ant": "continuous",
+  "tip": "일기 예보(intermittent showers)와 기술 문제(intermittent connection problems) 문맥에 나오며, 반대말 continuous, constant와 대비된다.",
+  "q": {
+   "s": "Users have reported ------- connection problems since the network upgrade last week.",
+   "o": [
+    "intermittent",
+    "impending",
+    "inquisitive",
+    "ineligible"
+   ],
+   "a": 0,
+   "k": "업그레이드 이후 '간헐적인' 접속 문제가 보고되었다는 뜻이므로 intermittent가 정답. impending(임박한)은 이미 발생한 문제와 맞지 않고, inquisitive(호기심 많은), ineligible(자격이 없는)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "individual",
+  "pos": "adj",
+  "m": [
+   "개인의, 개별의",
+   "개인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Each team member will receive *individual* feedback from the manager after the review.",
+  "exKo": "각 팀원은 평가가 끝난 뒤 관리자에게서 개별 피드백을 받는다.",
+  "col": [
+   {
+    "e": "individual needs",
+    "k": "개인별 요구"
+   },
+   {
+    "e": "individual attention",
+    "k": "개별적인 관심"
+   },
+   {
+    "e": "individually wrapped",
+    "k": "개별 포장된"
+   }
+  ],
+  "der": [
+   {
+    "w": "individually",
+    "pos": "adv",
+    "m": "개별적으로"
+   },
+   {
+    "w": "individualize",
+    "pos": "v",
+    "m": "개별화하다"
+   }
+  ],
+  "para": [
+   "personal",
+   "separate",
+   "single"
+  ],
+  "ant": "",
+  "tip": "형용사(개별의)와 명사(개인) 모두로 쓰이며, 'individually wrapped(개별 포장된)'처럼 부사 individually를 묻는 문제가 나온다.",
+  "q": {
+   "s": "Our tutors design lessons around the ------- needs of each student.",
+   "o": [
+    "individually",
+    "individual",
+    "individualize",
+    "individualism"
+   ],
+   "a": 1,
+   "k": "관사 the와 명사 needs 사이의 형용사 자리이므로 individual이 정답. individually는 부사, individualize는 동사, individualism은 명사다."
+  }
+ },
+ {
+  "w": "limit",
+  "pos": "n",
+  "m": [
+   "한도, 제한",
+   "제한하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "There is a *limit* of two free drinks per guest at the reception.",
+  "exKo": "환영회에서 무료 음료는 손님 한 명당 두 잔으로 제한된다.",
+  "col": [
+   {
+    "e": "weight limit",
+    "k": "중량 제한"
+   },
+   {
+    "e": "time limit",
+    "k": "제한 시간"
+   },
+   {
+    "e": "limit A to B",
+    "k": "A를 B로 제한하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "limited",
+    "pos": "adj",
+    "m": "제한된"
+   },
+   {
+    "w": "limitation",
+    "pos": "n",
+    "m": "한계, 제약"
+   },
+   {
+    "w": "unlimited",
+    "pos": "adj",
+    "m": "무제한의"
+   }
+  ],
+  "para": [
+   "cap",
+   "restriction",
+   "maximum"
+  ],
+  "ant": "",
+  "tip": "'a limit on/of + 명사'와 동사 'limit A to B' 구조가 나오며, limited(제한된), limitation(제약)과의 품사 구분 문제가 빈출이다.",
+  "q": {
+   "s": "Each passenger is allowed one carry-on bag, which must not exceed the weight ------- of 10 kilograms.",
+   "o": [
+    "limit",
+    "limited",
+    "limiting",
+    "limitless"
+   ],
+   "a": 0,
+   "k": "the weight와 함께 '중량 제한'이라는 복합 명사를 이루는 명사 자리이므로 limit이 정답. limited, limiting, limitless는 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "rigid",
+  "pos": "adj",
+  "m": [
+   "엄격한, 융통성 없는",
+   "단단한, 딱딱한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Some employees find the company's *rigid* dress code uncomfortable in summer.",
+  "exKo": "일부 직원은 여름철에 회사의 엄격한 복장 규정이 불편하다고 느낀다.",
+  "col": [
+   {
+    "e": "rigid rules",
+    "k": "엄격한 규칙"
+   },
+   {
+    "e": "rigid schedule",
+    "k": "융통성 없는 일정"
+   },
+   {
+    "e": "rigid packaging",
+    "k": "단단한 포장"
+   }
+  ],
+  "der": [
+   {
+    "w": "rigidly",
+    "pos": "adv",
+    "m": "엄격하게"
+   },
+   {
+    "w": "rigidity",
+    "pos": "n",
+    "m": "경직성"
+   }
+  ],
+  "para": [
+   "inflexible",
+   "strict",
+   "fixed"
+  ],
+  "ant": "flexible",
+  "tip": "규칙·일정에 쓰면 '융통성 없는'이라는 부정적 의미가 강해 flexible(유연한)의 반의어로 출제되며, 포장재 문맥에서는 '단단한(rigid packaging)'의 뜻이 된다.",
+  "q": {
+   "s": "Many workers prefer flexible hours to a ------- nine-to-five schedule.",
+   "o": [
+    "fragile",
+    "vacant",
+    "hollow",
+    "rigid"
+   ],
+   "a": 3,
+   "k": "'prefer A to B' 구조에서 flexible(유연한)과 대비되는 '융통성 없는'이라는 뜻이 필요하므로 rigid가 정답. fragile(깨지기 쉬운), vacant(비어 있는), hollow(속이 빈)는 일정을 수식하기에 맞지 않는다."
+  }
+ },
+ {
+  "w": "strict",
+  "pos": "adj",
+  "m": [
+   "엄격한, 엄한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The laboratory has *strict* rules about who may enter the storage room.",
+  "exKo": "그 실험실에는 저장실 출입 가능 인원에 관한 엄격한 규칙이 있다.",
+  "col": [
+   {
+    "e": "strict rules",
+    "k": "엄격한 규칙"
+   },
+   {
+    "e": "strict deadline",
+    "k": "엄격한 마감 기한"
+   },
+   {
+    "e": "strictly prohibited",
+    "k": "엄격히 금지된"
+   }
+  ],
+  "der": [
+   {
+    "w": "strictly",
+    "pos": "adv",
+    "m": "엄격히"
+   },
+   {
+    "w": "strictness",
+    "pos": "n",
+    "m": "엄격함"
+   }
+  ],
+  "para": [
+   "rigorous",
+   "stringent",
+   "firm"
+  ],
+  "ant": "lenient",
+  "tip": "형용사 strict는 명사 앞, 부사 strictly는 'Smoking is strictly prohibited.'처럼 과거분사 앞에 오는 품사 자리 문제가 빈출이다.",
+  "q": {
+   "s": "Visitors must follow ------- safety procedures while touring the manufacturing plant.",
+   "o": [
+    "strictly",
+    "strict",
+    "strictness",
+    "stricture"
+   ],
+   "a": 1,
+   "k": "명사구 safety procedures를 수식하는 형용사 자리이므로 strict가 정답. strictly는 부사, strictness와 stricture는 명사다."
+  }
+ },
+ {
+  "w": "typical",
+  "pos": "adj",
+  "m": [
+   "전형적인, 일반적인",
+   "보통의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "On a *typical* weekday, the café serves more than 300 customers.",
+  "exKo": "평일이면 그 카페는 보통 300명이 넘는 손님을 받는다.",
+  "col": [
+   {
+    "e": "typical day",
+    "k": "평소의 하루"
+   },
+   {
+    "e": "be typical of",
+    "k": "~의 특징이다, ~에게 흔한 일이다"
+   },
+   {
+    "e": "typical customer",
+    "k": "일반적인 고객"
+   }
+  ],
+  "der": [
+   {
+    "w": "typically",
+    "pos": "adv",
+    "m": "일반적으로, 보통"
+   },
+   {
+    "w": "typify",
+    "pos": "v",
+    "m": "~의 전형이 되다"
+   }
+  ],
+  "para": [
+   "usual",
+   "normal",
+   "standard"
+  ],
+  "ant": "unusual",
+  "tip": "'be typical of(~의 전형적인 특징이다)'의 전치사 of가 출제되며, 부사 typically(보통)는 'typically takes two days'처럼 동사를 수식한다.",
+  "q": {
+   "s": "Delays like these are ------- of the holiday travel season.",
+   "o": [
+    "typically",
+    "typical",
+    "typify",
+    "type"
+   ],
+   "a": 1,
+   "k": "be동사 뒤 보어 자리이고 전치사 of와 함께 '~의 전형적인 특징이다'라는 뜻을 이루는 형용사 typical이 정답. typically는 부사, typify는 동사, type은 명사다."
+  }
+ },
+ {
+  "w": "arrangement",
+  "pos": "n",
+  "m": [
+   "준비, 마련",
+   "배치, 배열",
+   "합의, 협정"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Ms. Fischer is making travel *arrangements* for the sales team's visit to Singapore.",
+  "exKo": "Fischer 씨는 영업팀의 싱가포르 방문을 위한 출장 준비를 하고 있다.",
+  "col": [
+   {
+    "e": "make arrangements for",
+    "k": "~을 준비하다"
+   },
+   {
+    "e": "travel arrangements",
+    "k": "출장·여행 준비"
+   },
+   {
+    "e": "floral arrangement",
+    "k": "꽃꽂이"
+   }
+  ],
+  "der": [
+   {
+    "w": "arrange",
+    "pos": "v",
+    "m": "준비하다, 배치하다"
+   }
+  ],
+  "para": [
+   "preparations",
+   "plans",
+   "setup"
+  ],
+  "ant": "",
+  "tip": "'make arrangements for(~을 준비하다)'처럼 준비의 뜻일 때는 주로 복수형으로 쓰며, 동사 arrange와의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "Please contact the front desk if you need to make ------- for airport transportation.",
+   "o": [
+    "arranges",
+    "arranged",
+    "arranging",
+    "arrangements"
+   ],
+   "a": 3,
+   "k": "동사 make의 목적어인 명사 자리이고 'make arrangements for(~을 준비하다)'를 이루므로 arrangements가 정답. arranges, arranged, arranging은 동사 형태다."
+  }
+ },
+ {
+  "w": "availability",
+  "pos": "n",
+  "m": [
+   "이용 가능성, 가용성",
+   "(재고·좌석) 확보 여부",
+   "(시간) 여유"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Please let me know your *availability* for a follow-up meeting next week.",
+  "exKo": "다음 주 후속 회의에 참석 가능한 시간을 알려 주기 바란다.",
+  "col": [
+   {
+    "e": "subject to availability",
+    "k": "재고·좌석 상황에 따라"
+   },
+   {
+    "e": "check availability",
+    "k": "이용 가능 여부를 확인하다"
+   },
+   {
+    "e": "room availability",
+    "k": "객실 이용 가능 여부"
+   }
+  ],
+  "der": [
+   {
+    "w": "available",
+    "pos": "adj",
+    "m": "이용 가능한, 시간이 있는"
+   },
+   {
+    "w": "unavailable",
+    "pos": "adj",
+    "m": "이용할 수 없는"
+   }
+  ],
+  "para": [
+   "free time",
+   "schedule",
+   "stock"
+  ],
+  "ant": "",
+  "tip": "'subject to availability(재고·좌석 상황에 따라)'가 공지문에 빈출이며, 형용사 available과 명사 availability의 품사 구분 문제가 자주 나온다.",
+  "q": {
+   "s": "Discounted hotel rates are limited and subject to -------.",
+   "o": [
+    "availability",
+    "available",
+    "availably",
+    "avail"
+   ],
+   "a": 0,
+   "k": "'subject to + 명사' 구조에서 '이용 가능 여부에 따라'라는 뜻을 이루는 availability가 정답. available은 형용사, availably는 부사이며, avail은 'to no avail(보람 없이)' 같은 고정 표현으로만 쓴다."
+  }
+ },
+ {
+  "w": "circumstance",
+  "pos": "n",
+  "m": [
+   "상황, 사정",
+   "(경제적) 형편"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Refunds are not available except in extraordinary *circumstances*, such as a medical emergency.",
+  "exKo": "응급 의료 상황 같은 특별한 사정이 아니면 환불되지 않는다.",
+  "col": [
+   {
+    "e": "under no circumstances",
+    "k": "어떤 경우에도 ~않다"
+   },
+   {
+    "e": "under the circumstances",
+    "k": "이런 상황에서"
+   },
+   {
+    "e": "due to unforeseen circumstances",
+    "k": "예기치 못한 사정으로"
+   }
+  ],
+  "der": [
+   {
+    "w": "circumstantial",
+    "pos": "adj",
+    "m": "상황에 따른, 정황상의"
+   }
+  ],
+  "para": [
+   "situation",
+   "condition",
+   "case"
+  ],
+  "ant": "",
+  "tip": "'under no circumstances(어떤 경우에도 ~하지 않다)'와 'due to unforeseen circumstances(예기치 못한 사정으로)'가 빈출이며, 주로 복수형으로 쓰고 전치사 under와 짝을 이룬다.",
+  "q": {
+   "s": "Under no ------- should employees share their passwords with anyone outside the company.",
+   "o": [
+    "occasions",
+    "situations",
+    "incidents",
+    "circumstances"
+   ],
+   "a": 3,
+   "k": "'Under no circumstances(어떤 경우에도 ~않다)'라는 고정 표현이므로 circumstances가 정답. 이 표현은 부정어구라 뒤에 should employees처럼 도치가 일어난다. occasions, situations, incidents는 under no와 고정 표현을 이루지 않는다."
+  }
+ },
+ {
+  "w": "consequence",
+  "pos": "n",
+  "m": [
+   "결과",
+   "중요성"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Failure to follow the safety guidelines may have serious *consequences* for workers.",
+  "exKo": "안전 지침을 따르지 않으면 작업자에게 심각한 결과를 초래할 수 있다.",
+  "col": [
+   {
+    "e": "as a consequence of",
+    "k": "~의 결과로"
+   },
+   {
+    "e": "serious consequences",
+    "k": "심각한 결과"
+   },
+   {
+    "e": "of little consequence",
+    "k": "별로 중요하지 않은"
+   }
+  ],
+  "der": [
+   {
+    "w": "consequently",
+    "pos": "adv",
+    "m": "그 결과"
+   },
+   {
+    "w": "consequent",
+    "pos": "adj",
+    "m": "~의 결과로 일어나는"
+   }
+  ],
+  "para": [
+   "result",
+   "outcome",
+   "effect"
+  ],
+  "ant": "cause",
+  "tip": "'as a consequence of(~의 결과로)' 구문과 접속부사 consequently(그 결과)를 구분하는 품사 문제가 출제된다.",
+  "q": {
+   "s": "As a ------- of the merger, several departments will be relocated to the Chicago office.",
+   "o": [
+    "consequently",
+    "consequent",
+    "consequence",
+    "consequential"
+   ],
+   "a": 2,
+   "k": "관사 a 뒤 명사 자리이고 'as a consequence of(~의 결과로)'를 이루므로 consequence가 정답. consequently는 부사, consequent와 consequential은 형용사다."
+  }
+ },
+ {
+  "w": "extent",
+  "pos": "n",
+  "m": [
+   "정도, 범위"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Engineers are still assessing the *extent* of the damage caused by the flood.",
+  "exKo": "엔지니어들은 홍수로 인한 피해 규모를 아직 평가하고 있다.",
+  "col": [
+   {
+    "e": "to some extent",
+    "k": "어느 정도"
+   },
+   {
+    "e": "to a large extent",
+    "k": "상당 부분"
+   },
+   {
+    "e": "the full extent of",
+    "k": "~의 전체 규모"
+   }
+  ],
+  "der": [
+   {
+    "w": "extend",
+    "pos": "v",
+    "m": "연장하다, 확대하다"
+   },
+   {
+    "w": "extensive",
+    "pos": "adj",
+    "m": "광범위한"
+   },
+   {
+    "w": "extension",
+    "pos": "n",
+    "m": "연장, 내선"
+   }
+  ],
+  "para": [
+   "degree",
+   "scale",
+   "scope"
+  ],
+  "ant": "",
+  "tip": "'to some/a certain extent(어느 정도)'처럼 전치사 to와 짝을 이루며, 동사 extend, 형용사 extensive와 혼동시키는 품사 문제가 나온다.",
+  "q": {
+   "s": "The new policy has, to a large -------, reduced the number of customer complaints.",
+   "o": [
+    "extent",
+    "extend",
+    "extensive",
+    "extension"
+   ],
+   "a": 0,
+   "k": "'to a large extent(상당 부분, 대체로)'를 이루는 명사 extent가 정답. extend는 동사, extensive는 형용사이고, extension(연장)은 이 표현에 쓰지 않는다."
+  }
+ },
+ {
+  "w": "framework",
+  "pos": "n",
+  "m": [
+   "(기본) 틀, 체계",
+   "구조"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The two companies signed an agreement that provides a *framework* for future cooperation.",
+  "exKo": "두 회사는 향후 협력의 틀을 마련하는 협정에 서명했다.",
+  "col": [
+   {
+    "e": "a framework for",
+    "k": "~을 위한 틀"
+   },
+   {
+    "e": "legal framework",
+    "k": "법적 체계"
+   },
+   {
+    "e": "within the framework of",
+    "k": "~의 틀 안에서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "structure",
+   "system",
+   "basis"
+  ],
+  "ant": "",
+  "tip": "'a framework for + 명사(~을 위한 틀)'와 'within the framework of'처럼 전치사 for, within과 함께 쓰이며, 정책·협정 문맥에서 structure, basis로 패러프레이즈된다.",
+  "q": {
+   "s": "The guidelines provide a clear ------- for evaluating new investment proposals.",
+   "o": [
+    "workforce",
+    "workload",
+    "framework",
+    "frequency"
+   ],
+   "a": 2,
+   "k": "신규 투자 제안을 평가하기 위한 명확한 '틀'을 제공한다는 뜻이므로 framework가 정답. workforce(인력), workload(업무량), frequency(빈도)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "obstacle",
+  "pos": "n",
+  "m": [
+   "장애(물)",
+   "방해물"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "High shipping costs remain the biggest *obstacle* to expanding into overseas markets.",
+  "exKo": "높은 운송비는 여전히 해외 시장 진출의 가장 큰 걸림돌이다.",
+  "col": [
+   {
+    "e": "an obstacle to",
+    "k": "~에 대한 장애물"
+   },
+   {
+    "e": "overcome obstacles",
+    "k": "장애물을 극복하다"
+   },
+   {
+    "e": "major obstacle",
+    "k": "큰 장애물"
+   }
+  ],
+  "der": [],
+  "para": [
+   "barrier",
+   "hurdle",
+   "impediment"
+  ],
+  "ant": "",
+  "tip": "'an obstacle to + 명사/동명사'에서 to는 전치사라 동명사가 온다. overcome, remove와 짝을 이루며 barrier, hurdle로 패러프레이즈된다.",
+  "q": {
+   "s": "A lack of reliable data is the main ------- to improving the delivery schedule.",
+   "o": [
+    "obstacle",
+    "obstruct",
+    "obstinate",
+    "obsolete"
+   ],
+   "a": 0,
+   "k": "관사 the와 형용사 main 뒤의 명사 자리이고 '~에 대한 장애물'이라는 뜻이므로 obstacle이 정답. obstruct는 동사, obstinate(고집 센)와 obsolete(구식의)는 형용사다."
+  }
+ },
+ {
+  "w": "persistent",
+  "pos": "adj",
+  "m": [
+   "끈질긴, 집요한",
+   "지속적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Persistent* complaints about noise led the building manager to install new windows.",
+  "exKo": "소음에 대한 불만이 계속되자 건물 관리인은 새 창문을 설치했다.",
+  "col": [
+   {
+    "e": "persistent problem",
+    "k": "계속되는 문제"
+   },
+   {
+    "e": "persistent efforts",
+    "k": "끈질긴 노력"
+   },
+   {
+    "e": "persistent demand",
+    "k": "지속적인 수요"
+   }
+  ],
+  "der": [
+   {
+    "w": "persist",
+    "pos": "v",
+    "m": "지속되다, 고집하다"
+   },
+   {
+    "w": "persistence",
+    "pos": "n",
+    "m": "끈기"
+   },
+   {
+    "w": "persistently",
+    "pos": "adv",
+    "m": "끈질기게"
+   }
+  ],
+  "para": [
+   "continuing",
+   "ongoing",
+   "constant"
+  ],
+  "ant": "",
+  "tip": "문제·불만이 '계속되는'의 뜻과 사람·노력이 '끈질긴'의 뜻이 있으며, 동사 persist는 'persist in -ing'처럼 전치사 in과 쓰인다.",
+  "q": {
+   "s": "Thanks to her ------- efforts, Ms. Tanaka finally secured a meeting with the investors.",
+   "o": [
+    "persistent",
+    "persist",
+    "persistence",
+    "persistently"
+   ],
+   "a": 0,
+   "k": "소유격 her와 명사 efforts 사이의 형용사 자리이므로 persistent가 정답. persist는 동사, persistence는 명사, persistently는 부사다."
+  }
+ },
+ {
+  "w": "excessive",
+  "pos": "adj",
+  "m": [
+   "지나친, 과도한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Customers complained about *excessive* fees for changing their flight dates.",
+  "exKo": "고객들은 항공편 날짜 변경에 붙는 과도한 수수료에 불만을 제기했다.",
+  "col": [
+   {
+    "e": "excessive noise",
+    "k": "지나친 소음"
+   },
+   {
+    "e": "excessive use",
+    "k": "과도한 사용"
+   },
+   {
+    "e": "excessive fees",
+    "k": "과도한 수수료"
+   }
+  ],
+  "der": [
+   {
+    "w": "excess",
+    "pos": "n",
+    "m": "초과, 과잉"
+   },
+   {
+    "w": "exceed",
+    "pos": "v",
+    "m": "초과하다"
+   },
+   {
+    "w": "excessively",
+    "pos": "adv",
+    "m": "지나치게"
+   }
+  ],
+  "para": [
+   "too much",
+   "unreasonable",
+   "extreme"
+  ],
+  "ant": "moderate",
+  "tip": "명사 excess('in excess of ~을 초과하여')와 동사 exceed를 함께 묻는 품사 문제가 나오며, noise, fees, use 등과 결합한다.",
+  "q": {
+   "s": "------- use of the office printer for personal documents is discouraged.",
+   "o": [
+    "Exceed",
+    "Excessively",
+    "Excesses",
+    "Excessive"
+   ],
+   "a": 3,
+   "k": "명사 use를 수식하는 형용사 자리이므로 Excessive가 정답. Exceed는 동사, Excessively는 부사, Excesses는 복수 명사다."
+  }
+ },
+ {
+  "w": "invaluable",
+  "pos": "adj",
+  "m": [
+   "매우 귀중한, 값을 매길 수 없는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Your feedback has been *invaluable* in helping us improve our customer service.",
+  "exKo": "여러분의 의견은 우리가 고객 서비스를 개선하는 데 매우 귀중한 도움이 되었다.",
+  "col": [
+   {
+    "e": "invaluable assistance",
+    "k": "매우 귀중한 도움"
+   },
+   {
+    "e": "invaluable experience",
+    "k": "소중한 경험"
+   },
+   {
+    "e": "prove invaluable",
+    "k": "매우 귀중한 것으로 드러나다"
+   }
+  ],
+  "der": [
+   {
+    "w": "value",
+    "pos": "n",
+    "m": "가치"
+   },
+   {
+    "w": "valuable",
+    "pos": "adj",
+    "m": "귀중한"
+   }
+  ],
+  "para": [
+   "extremely useful",
+   "priceless",
+   "precious"
+  ],
+  "ant": "worthless",
+  "tip": "in-이 붙었지만 '가치 없는'이 아니라 '매우 귀중한'이라는 뜻이라 함정이 된다. 반의어는 worthless, valueless다.",
+  "q": {
+   "s": "The volunteers' assistance proved ------- during the relocation of the library's collection.",
+   "o": [
+    "invalid",
+    "inevitable",
+    "invaluable",
+    "inaccessible"
+   ],
+   "a": 2,
+   "k": "자원봉사자들의 도움이 '매우 귀중한' 것으로 드러났다는 뜻이므로 invaluable이 정답. invalid(무효인), inevitable(불가피한), inaccessible(접근할 수 없는)은 assistance를 설명하기에 맞지 않는다."
+  }
+ },
+ {
+  "w": "ample",
+  "pos": "adj",
+  "m": [
+   "충분한, 넉넉한",
+   "풍부한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new venue offers *ample* parking for attendees, so carpooling is not necessary.",
+  "exKo": "새 행사장에는 참석자를 위한 주차 공간이 넉넉해서 카풀할 필요가 없다.",
+  "col": [
+   {
+    "e": "ample time",
+    "k": "충분한 시간"
+   },
+   {
+    "e": "ample space",
+    "k": "넉넉한 공간"
+   },
+   {
+    "e": "ample opportunity",
+    "k": "충분한 기회"
+   }
+  ],
+  "der": [
+   {
+    "w": "amply",
+    "pos": "adv",
+    "m": "충분히"
+   }
+  ],
+  "para": [
+   "plenty of",
+   "sufficient",
+   "abundant"
+  ],
+  "ant": "insufficient",
+  "tip": "'ample + 불가산명사(ample time, ample parking)'로 자주 쓰여 plenty of, enough로 패러프레이즈되며, Part 7에서 '주차 공간이 충분하다' 같은 시설 장점 문제에 나온다.",
+  "q": {
+   "s": "Participants will have ------- time to ask questions after each presentation.",
+   "o": [
+    "numerous",
+    "many",
+    "ample",
+    "several"
+   ],
+   "a": 2,
+   "k": "불가산명사 time을 수식할 수 있는 ample이 정답. numerous, many, several은 복수 가산명사와 쓰므로 '시간'이라는 뜻의 불가산명사 time 앞에 올 수 없다."
+  }
+ },
+ {
+  "w": "consecutive",
+  "pos": "adj",
+  "m": [
+   "연속적인, 연이은"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hotel has won the regional service award for five *consecutive* years.",
+  "exKo": "그 호텔은 5년 연속 지역 서비스상을 받았다.",
+  "col": [
+   {
+    "e": "for three consecutive years",
+    "k": "3년 연속"
+   },
+   {
+    "e": "consecutive days",
+    "k": "연속된 날들"
+   },
+   {
+    "e": "for the third consecutive quarter",
+    "k": "3분기 연속"
+   }
+  ],
+  "der": [
+   {
+    "w": "consecutively",
+    "pos": "adv",
+    "m": "연속적으로"
+   }
+  ],
+  "para": [
+   "successive",
+   "in a row",
+   "straight"
+  ],
+  "ant": "",
+  "tip": "'숫자 + consecutive + 복수 명사(three consecutive years)' 또는 'for the third consecutive year' 형태로 쓰이며 in a row로 패러프레이즈된다.",
+  "q": {
+   "s": "Sales have increased for the fourth ------- quarter, according to the company's latest report.",
+   "o": [
+    "consecutive",
+    "constant",
+    "considerable",
+    "conservative"
+   ],
+   "a": 0,
+   "k": "'for the fourth consecutive quarter(4분기 연속)'를 이루는 consecutive가 정답. constant(끊임없는), considerable(상당한), conservative(보수적인)는 서수와 함께 '연속'의 뜻을 만들지 못한다."
+  }
+ },
+ {
+  "w": "foreseeable",
+  "pos": "adj",
+  "m": [
+   "예측 가능한",
+   "가까운 장래의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The museum will remain closed for the *foreseeable* future due to structural repairs.",
+  "exKo": "그 박물관은 구조 보수 공사로 인해 당분간 문을 닫는다.",
+  "col": [
+   {
+    "e": "for the foreseeable future",
+    "k": "당분간"
+   },
+   {
+    "e": "in the foreseeable future",
+    "k": "가까운 장래에"
+   },
+   {
+    "e": "foreseeable risks",
+    "k": "예측 가능한 위험"
+   }
+  ],
+  "der": [
+   {
+    "w": "foresee",
+    "pos": "v",
+    "m": "예견하다"
+   },
+   {
+    "w": "unforeseen",
+    "pos": "adj",
+    "m": "예기치 못한"
+   }
+  ],
+  "para": [
+   "predictable"
+  ],
+  "ant": "unforeseeable",
+  "tip": "'for the foreseeable future(당분간)'와 'in the foreseeable future(가까운 장래에)'의 고정 표현으로 나오며, 반대 개념의 unforeseen(예기치 못한)과 구분해야 한다.",
+  "q": {
+   "s": "Interest rates are expected to remain stable for the ------- future.",
+   "o": [
+    "foreseen",
+    "foresee",
+    "foreseeable",
+    "foresight"
+   ],
+   "a": 2,
+   "k": "'for the foreseeable future(당분간)'라는 고정 표현이므로 foreseeable이 정답. foreseen은 '예견된'이라는 과거분사로 future와 쓰지 않고, foresee는 동사, foresight는 명사다."
+  }
+ },
+ {
+  "w": "imminent",
+  "pos": "adj",
+  "m": [
+   "임박한, 곧 닥칠"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Investors reacted positively to reports that a merger was *imminent*.",
+  "exKo": "투자자들은 합병이 임박했다는 보도에 긍정적으로 반응했다.",
+  "col": [
+   {
+    "e": "be imminent",
+    "k": "임박하다"
+   },
+   {
+    "e": "imminent arrival",
+    "k": "곧 있을 도착"
+   },
+   {
+    "e": "imminent danger",
+    "k": "임박한 위험"
+   }
+  ],
+  "der": [
+   {
+    "w": "imminently",
+    "pos": "adv",
+    "m": "임박하여"
+   }
+  ],
+  "para": [
+   "impending",
+   "about to happen",
+   "upcoming"
+  ],
+  "ant": "",
+  "tip": "철자가 비슷한 eminent(저명한), prominent(두드러진)와 혼동시키는 어휘 문제가 나오며, impending, upcoming으로 패러프레이즈된다.",
+  "q": {
+   "s": "With the product launch -------, the marketing team is working overtime to finalize the campaign.",
+   "o": [
+    "eminent",
+    "imminent",
+    "prominent",
+    "permanent"
+   ],
+   "a": 1,
+   "k": "제품 출시가 '임박해서' 마케팅팀이 초과 근무를 한다는 뜻이므로 imminent가 정답. eminent(저명한), prominent(두드러진), permanent(영구적인)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "indispensable",
+  "pos": "adj",
+  "m": [
+   "없어서는 안 될, 필수적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Novak's knowledge of local regulations makes her *indispensable* to the project team.",
+  "exKo": "Novak 씨는 현지 규정에 대한 지식 덕분에 프로젝트팀에 없어서는 안 될 인물이다.",
+  "col": [
+   {
+    "e": "indispensable to",
+    "k": "~에 없어서는 안 될"
+   },
+   {
+    "e": "indispensable for",
+    "k": "~에 필수적인"
+   },
+   {
+    "e": "an indispensable tool",
+    "k": "필수 도구"
+   }
+  ],
+  "der": [
+   {
+    "w": "dispensable",
+    "pos": "adj",
+    "m": "없어도 되는"
+   }
+  ],
+  "para": [
+   "essential",
+   "vital",
+   "crucial"
+  ],
+  "ant": "dispensable",
+  "tip": "'indispensable to/for'처럼 전치사 to, for와 함께 쓰이며 essential, vital로 패러프레이즈된다. in-이 붙어 '없어도 되는'으로 오해하기 쉬운 단어다.",
+  "q": {
+   "s": "A reliable internet connection is ------- to employees who work from home.",
+   "o": [
+    "unavoidable",
+    "incapable",
+    "indifferent",
+    "indispensable"
+   ],
+   "a": 3,
+   "k": "재택근무자에게 안정적인 인터넷 연결은 '없어서는 안 될' 것이라는 뜻이므로 indispensable이 정답. unavoidable(불가피한), incapable(~할 수 없는), indifferent(무관심한)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "proactive",
+  "pos": "adj",
+  "m": [
+   "(사전에) 대비하는, 선제적인",
+   "적극적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We take a *proactive* approach to maintenance by inspecting all vehicles every month.",
+  "exKo": "우리는 매달 모든 차량을 점검하여 정비에 선제적으로 대응한다.",
+  "col": [
+   {
+    "e": "take a proactive approach",
+    "k": "선제적으로 대응하다"
+   },
+   {
+    "e": "take proactive steps",
+    "k": "사전 조치를 취하다"
+   },
+   {
+    "e": "proactive measures",
+    "k": "예방 조치"
+   }
+  ],
+  "der": [
+   {
+    "w": "proactively",
+    "pos": "adv",
+    "m": "선제적으로"
+   }
+  ],
+  "para": [
+   "preventive",
+   "forward-thinking",
+   "anticipatory"
+  ],
+  "ant": "reactive",
+  "tip": "문제가 생긴 뒤 대응하는 reactive와 반대로 '미리 대비하는'이라는 뜻이며 'take a proactive approach/steps' 형태로 자주 쓰인다.",
+  "q": {
+   "s": "Rather than waiting for complaints, the support team takes a ------- approach to resolving customer issues.",
+   "o": [
+    "reactive",
+    "proactive",
+    "passive",
+    "retroactive"
+   ],
+   "a": 1,
+   "k": "불만이 접수되기를 기다리지 않는다고 했으므로 '선제적인'이라는 뜻의 proactive가 정답. reactive(사후 대응의)와 passive(수동적인)는 문맥과 반대이고, retroactive(소급 적용되는)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "underlying",
+  "pos": "adj",
+  "m": [
+   "근본적인, 근원적인",
+   "기저의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The consultant was hired to identify the *underlying* causes of the drop in sales.",
+  "exKo": "그 컨설턴트는 매출 하락의 근본 원인을 찾기 위해 고용되었다.",
+  "col": [
+   {
+    "e": "underlying cause",
+    "k": "근본 원인"
+   },
+   {
+    "e": "underlying problem",
+    "k": "근본적인 문제"
+   },
+   {
+    "e": "underlying assumption",
+    "k": "기본 전제"
+   }
+  ],
+  "der": [
+   {
+    "w": "underlie",
+    "pos": "v",
+    "m": "~의 기저를 이루다"
+   }
+  ],
+  "para": [
+   "fundamental",
+   "root",
+   "basic"
+  ],
+  "ant": "",
+  "tip": "'underlying cause/problem/issue'처럼 명사 앞에서만 쓰이는 형용사로, root, fundamental로 패러프레이즈된다.",
+  "q": {
+   "s": "Replacing the cables fixed the symptoms, but the ------- problem with the server remains unsolved.",
+   "o": [
+    "underlying",
+    "undergoing",
+    "understanding",
+    "undertaking"
+   ],
+   "a": 0,
+   "k": "겉으로 드러난 증상은 고쳤지만 '근본적인' 문제는 남아 있다는 뜻이므로 underlying이 정답. undergoing(겪고 있는), understanding(이해심 있는), undertaking(착수하는; 사업)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "widespread",
+  "pos": "adj",
+  "m": [
+   "널리 퍼진, 광범위한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new mobile banking app has won *widespread* acceptance among older customers.",
+  "exKo": "새 모바일 뱅킹 앱은 고령 고객층에게도 폭넓게 받아들여졌다.",
+  "col": [
+   {
+    "e": "widespread support",
+    "k": "폭넓은 지지"
+   },
+   {
+    "e": "widespread use",
+    "k": "광범위한 사용"
+   },
+   {
+    "e": "widespread concern",
+    "k": "널리 퍼진 우려"
+   }
+  ],
+  "der": [],
+  "para": [
+   "extensive",
+   "common",
+   "prevalent"
+  ],
+  "ant": "rare",
+  "tip": "support, use, concern 같은 명사를 수식하는 형용사로, 동사·분사를 수식하는 부사 widely와 혼동시키는 품사 문제가 나온다.",
+  "q": {
+   "s": "The proposal to extend library hours received ------- support from local residents.",
+   "o": [
+    "widely",
+    "widespread",
+    "width",
+    "widen"
+   ],
+   "a": 1,
+   "k": "명사 support를 수식하는 형용사 자리이므로 widespread가 정답. widely는 부사, width는 명사, widen은 동사다."
+  }
+ },
+ {
+  "w": "proximity",
+  "pos": "n",
+  "m": [
+   "가까움, 근접"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hotel's *proximity* to the airport makes it popular with business travelers.",
+  "exKo": "그 호텔은 공항과 가까워서 출장객에게 인기가 많다.",
+  "col": [
+   {
+    "e": "proximity to",
+    "k": "~와 가까움"
+   },
+   {
+    "e": "in close proximity to",
+    "k": "~에 아주 가까이"
+   },
+   {
+    "e": "in the proximity of",
+    "k": "~의 부근에"
+   }
+  ],
+  "der": [],
+  "para": [
+   "closeness",
+   "nearness",
+   "convenient location"
+  ],
+  "ant": "",
+  "tip": "'proximity to + 장소'와 'in close proximity to(~에 아주 가까이)'의 전치사 to가 출제 포인트이며, Part 7에서 close to, conveniently located로 패러프레이즈된다.",
+  "q": {
+   "s": "Many tenants chose the building because of its close ------- to the subway station.",
+   "o": [
+    "location",
+    "proximity",
+    "surroundings",
+    "approach"
+   ],
+   "a": 1,
+   "k": "전치사 to와 함께 '~와의 근접성'이라는 뜻을 이루는 proximity가 정답. location(위치), surroundings(주변 환경), approach(접근법)는 'close ~ to'와 결합해 '가까움'의 뜻이 되지 않는다."
+  }
+ },
+ {
+  "w": "challenging",
+  "pos": "adj",
+  "m": [
+   "힘든, 도전적인",
+   "(어렵지만) 해 볼 만한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Meeting the tight deadline was *challenging*, but the team delivered the report on time.",
+  "exKo": "촉박한 마감일을 맞추기는 힘들었지만 팀은 보고서를 제때 제출했다.",
+  "col": [
+   {
+    "e": "challenging task",
+    "k": "힘든 업무"
+   },
+   {
+    "e": "challenging environment",
+    "k": "어려운 환경"
+   },
+   {
+    "e": "find A challenging",
+    "k": "A가 힘들다고 느끼다"
+   }
+  ],
+  "der": [
+   {
+    "w": "challenge",
+    "pos": "n",
+    "m": "도전, 난제"
+   }
+  ],
+  "para": [
+   "difficult",
+   "demanding",
+   "tough"
+  ],
+  "ant": "easy",
+  "tip": "사물이 '힘들게 만드는'이라는 능동 의미라 현재분사형 challenging을 쓰며, 'find + 목적어 + challenging' 구조에서 challenged와 구분하는 분사 문제가 나온다.",
+  "q": {
+   "s": "Many new managers find the first few months in their role particularly -------.",
+   "o": [
+    "challenged",
+    "challenge",
+    "challenging",
+    "challenges"
+   ],
+   "a": 2,
+   "k": "'find + 목적어 + 형용사' 구조에서 처음 몇 달이 '힘든' 것이므로 능동 의미의 challenging이 정답. challenged는 사람이 어려움을 겪는다는 수동 의미이고, challenge와 challenges는 명사·동사다."
+  }
+ }
+]

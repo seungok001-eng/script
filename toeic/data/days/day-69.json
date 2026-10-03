@@ -1,0 +1,1986 @@
+[
+ {
+  "w": "assembly",
+  "pos": "n",
+  "m": [
+   "조립",
+   "의회, 집회"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "Final *assembly* of the engines takes place at our plant in Ohio.",
+  "exKo": "엔진의 최종 조립은 오하이오에 있는 우리 공장에서 이루어진다.",
+  "col": [
+   {
+    "e": "assembly line",
+    "k": "조립 라인"
+   },
+   {
+    "e": "assembly instructions",
+    "k": "조립 설명서"
+   },
+   {
+    "e": "assembly required",
+    "k": "조립 필요"
+   }
+  ],
+  "der": [
+   {
+    "w": "assemble",
+    "pos": "v",
+    "m": "조립하다, 모으다"
+   },
+   {
+    "w": "assembler",
+    "pos": "n",
+    "m": "조립공"
+   }
+  ],
+  "para": [
+   "construction",
+   "putting together"
+  ],
+  "ant": "disassembly",
+  "tip": "assembly는 '조립'과 '집회, 의회' 두 뜻이 모두 쓰인다. 동사 assemble, 사람명사 assembler와 구분하는 품사 문제가 나오며, 가구 광고의 Some assembly required.(일부 조립 필요)도 자주 보인다.",
+  "q": {
+   "s": "The instructions explain how to complete the ------- of the bookshelf in under an hour.",
+   "o": [
+    "assemble",
+    "assembly",
+    "assembled",
+    "assembler"
+   ],
+   "a": 1,
+   "k": "관사 the 뒤, 전치사 of 앞의 명사 자리이고 책장을 '조립하는 일'을 뜻하므로 assembly가 정답이다. assembler(조립공)는 사람이라 complete의 목적어로 맞지 않고, assemble은 동사, assembled는 분사다."
+  }
+ },
+ {
+  "w": "packing",
+  "pos": "n",
+  "m": [
+   "포장 (작업)",
+   "짐 싸기"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "Our new *packing* machine can wrap up to 300 boxes an hour.",
+  "exKo": "우리의 새 포장 기계는 시간당 최대 300상자를 포장할 수 있다.",
+  "col": [
+   {
+    "e": "packing material",
+    "k": "포장재"
+   },
+   {
+    "e": "packing list",
+    "k": "포장 명세서"
+   },
+   {
+    "e": "packing area",
+    "k": "포장 구역"
+   }
+  ],
+  "der": [
+   {
+    "w": "pack",
+    "pos": "v",
+    "m": "포장하다, 짐을 싸다"
+   },
+   {
+    "w": "package",
+    "pos": "n",
+    "m": "소포, 포장물"
+   }
+  ],
+  "para": [
+   "packaging",
+   "wrapping"
+  ],
+  "ant": "unpacking",
+  "tip": "packing은 '포장하는 작업', packaging은 '제품 포장재·포장 디자인'에 초점이 있다. 불가산명사라 a packing, packings로 쓰지 않는다.",
+  "q": {
+   "s": "Fragile items require careful ------- to ensure that they are not damaged in transit.",
+   "o": [
+    "packed",
+    "packs",
+    "packer",
+    "packing"
+   ],
+   "a": 3,
+   "k": "형용사 careful의 수식을 받는 명사 자리이며 관사가 없으므로 불가산명사 packing이 정답이다. packer는 가산명사라 관사가 필요하고, packed는 분사, packs는 '꾸러미'라는 복수명사나 동사여서 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "workmanship",
+  "pos": "n",
+  "m": [
+   "솜씨, 기술",
+   "만듦새, 마감 상태"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The furniture maker is known for its fine *workmanship* and long-lasting materials.",
+  "exKo": "그 가구 제조사는 훌륭한 만듦새와 오래가는 소재로 유명하다.",
+  "col": [
+   {
+    "e": "quality workmanship",
+    "k": "훌륭한 솜씨"
+   },
+   {
+    "e": "defects in materials and workmanship",
+    "k": "재료 및 제작상의 결함"
+   },
+   {
+    "e": "poor workmanship",
+    "k": "조잡한 만듦새"
+   }
+  ],
+  "der": [],
+  "para": [
+   "craftsmanship",
+   "skill",
+   "quality"
+  ],
+  "ant": "",
+  "tip": "보증서의 defects in materials and workmanship(재료 및 제작상의 결함)이 대표 표현이다. 불가산명사로 craftsmanship과 패러프레이징된다.",
+  "q": {
+   "s": "All of our handcrafted cabinets are guaranteed against defects in materials and -------.",
+   "o": [
+    "workplace",
+    "workload",
+    "workmanship",
+    "workforce"
+   ],
+   "a": 2,
+   "k": "보증 문구의 defects in materials and workmanship(재료와 제작 솜씨의 결함)을 완성하는 workmanship이 정답이다. workplace(직장), workload(업무량), workforce(인력)는 제품 결함의 원인이 될 수 없다."
+  }
+ },
+ {
+  "w": "quality assurance",
+  "pos": "phr",
+  "m": [
+   "품질 보증",
+   "품질 관리"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Kim leads the *quality assurance* team at our Busan facility.",
+  "exKo": "Kim 씨는 부산 시설의 품질 보증 팀을 이끈다.",
+  "col": [
+   {
+    "e": "quality assurance team",
+    "k": "품질 보증 팀"
+   },
+   {
+    "e": "quality assurance testing",
+    "k": "품질 보증 테스트"
+   }
+  ],
+  "der": [
+   {
+    "w": "assure",
+    "pos": "v",
+    "m": "보장하다, 확신시키다"
+   }
+  ],
+  "para": [
+   "quality control",
+   "QA"
+  ],
+  "ant": "",
+  "tip": "줄여서 QA라고 하며 quality control(품질 관리)과 바꿔 쓰인다. 부서명으로 the quality assurance department처럼 Part 7 사내 공지에 자주 나온다.",
+  "q": {
+   "s": "Before release, all software updates are reviewed by the ------- department to ensure they meet our standards.",
+   "o": [
+    "quality time",
+    "quality assurance",
+    "customer base",
+    "press release"
+   ],
+   "a": 1,
+   "k": "출시 전에 기준을 충족하는지 검토하는 부서는 '품질 보증' 부서이므로 quality assurance가 정답이다. quality time(소중한 시간), customer base(고객층), press release(보도 자료)는 부서명이 될 수 없다."
+  }
+ },
+ {
+  "w": "spot check",
+  "pos": "phr",
+  "m": [
+   "불시 점검, 무작위 검사"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Supervisors conduct random *spot checks* to make sure safety rules are followed.",
+  "exKo": "관리자들은 안전 수칙이 지켜지는지 확인하기 위해 무작위로 불시 점검을 실시한다.",
+  "col": [
+   {
+    "e": "conduct a spot check",
+    "k": "불시 점검을 하다"
+   },
+   {
+    "e": "random spot check",
+    "k": "무작위 점검"
+   }
+  ],
+  "der": [],
+  "para": [
+   "random inspection",
+   "sample check"
+  ],
+  "ant": "",
+  "tip": "일부만 무작위로 골라 검사하는 것으로 carry out/conduct a spot check 형태로 쓴다. 동사로도 쓰여 spot-check the products(제품을 불시 점검하다)가 가능하다.",
+  "q": {
+   "s": "Inspectors from the health department carried out an unannounced ------- of the kitchen yesterday.",
+   "o": [
+    "spot check",
+    "checkpoint",
+    "check-in",
+    "paycheck"
+   ],
+   "a": 0,
+   "k": "보건 당국 조사관이 예고 없이 주방을 '불시 점검'했다는 의미이므로 spot check가 정답이다. checkpoint(검문소), check-in(입실 수속), paycheck(급여)은 carry out과 of the kitchen에 어울리지 않는다."
+  }
+ },
+ {
+  "w": "sampling",
+  "pos": "n",
+  "m": [
+   "표본 추출, 샘플링",
+   "시음, 시식"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Random *sampling* of finished goods helps the plant detect defects at an early stage.",
+  "exKo": "완제품의 무작위 표본 추출은 공장이 결함을 초기에 발견하는 데 도움이 된다.",
+  "col": [
+   {
+    "e": "random sampling",
+    "k": "무작위 표본 추출"
+   },
+   {
+    "e": "product sampling",
+    "k": "제품 시식·시음 행사"
+   },
+   {
+    "e": "sampling method",
+    "k": "표본 추출 방법"
+   }
+  ],
+  "der": [
+   {
+    "w": "sample",
+    "pos": "n",
+    "m": "견본, 표본"
+   },
+   {
+    "w": "sample",
+    "pos": "v",
+    "m": "시식하다, 표본을 뽑다"
+   }
+  ],
+  "para": [
+   "testing",
+   "tasting"
+  ],
+  "ant": "",
+  "tip": "품질 관리에서는 '표본 추출', 마케팅에서는 '시식·시음 행사'를 뜻한다. 불가산명사로 쓰이는 점이 가산명사 sample과 다르다.",
+  "q": {
+   "s": "Product ------- events at the supermarket allow shoppers to taste new snacks before buying them.",
+   "o": [
+    "sampling",
+    "sampled",
+    "sampler",
+    "samples"
+   ],
+   "a": 0,
+   "k": "쇼핑객이 새 과자를 맛볼 수 있는 행사는 '시식 행사'이므로 product sampling events를 만드는 sampling이 정답이다. sampled는 분사, sampler(견본 모음, 표본 추출기)와 samples는 이 복합명사를 만들지 못한다."
+  }
+ },
+ {
+  "w": "precision",
+  "pos": "n",
+  "m": [
+   "정밀(성), 정확(성)"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our machines cut each metal part with remarkable *precision*.",
+  "exKo": "우리 기계는 각 금속 부품을 놀라울 만큼 정밀하게 절단한다.",
+  "col": [
+   {
+    "e": "with precision",
+    "k": "정밀하게"
+   },
+   {
+    "e": "precision instruments",
+    "k": "정밀 기기"
+   },
+   {
+    "e": "precision engineering",
+    "k": "정밀 공학"
+   }
+  ],
+  "der": [
+   {
+    "w": "precise",
+    "pos": "adj",
+    "m": "정밀한, 정확한"
+   },
+   {
+    "w": "precisely",
+    "pos": "adv",
+    "m": "정확히"
+   }
+  ],
+  "para": [
+   "accuracy",
+   "exactness"
+  ],
+  "ant": "imprecision",
+  "tip": "with precision(정밀하게)은 precisely와 같은 뜻이다. precision instruments처럼 명사 앞 수식어로도 쓰이며, 전치사 뒤 명사 자리를 묻는 품사 문제가 나온다.",
+  "q": {
+   "s": "Surgeons rely on instruments that are manufactured with extreme -------.",
+   "o": [
+    "precise",
+    "precisely",
+    "precision",
+    "imprecise"
+   ],
+   "a": 2,
+   "k": "전치사 with와 형용사 extreme 뒤 명사 자리이므로 precision이 정답이다. precise와 imprecise는 형용사, precisely는 부사다."
+  }
+ },
+ {
+  "w": "tolerance",
+  "pos": "n",
+  "m": [
+   "허용 오차, 공차",
+   "내성, 관용"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Each component must be machined to a *tolerance* of 0.01 millimeters.",
+  "exKo": "각 부품은 0.01밀리미터의 허용 오차 이내로 가공되어야 한다.",
+  "col": [
+   {
+    "e": "tight tolerances",
+    "k": "엄격한 허용 오차"
+   },
+   {
+    "e": "tolerance for",
+    "k": "~에 대한 내성, 관용"
+   },
+   {
+    "e": "zero tolerance",
+    "k": "무관용"
+   }
+  ],
+  "der": [
+   {
+    "w": "tolerate",
+    "pos": "v",
+    "m": "참다, 용인하다"
+   },
+   {
+    "w": "tolerant",
+    "pos": "adj",
+    "m": "관대한, 내성이 있는"
+   }
+  ],
+  "para": [
+   "allowance",
+   "margin"
+  ],
+  "ant": "",
+  "tip": "제조 지문에서는 '허용 오차', 일반 지문에서는 '관용, 내성'이다. zero tolerance policy(무관용 정책)도 사내 규정에 나온다.",
+  "q": {
+   "s": "These bearings are manufactured to very tight -------, so even small variations are rejected.",
+   "o": [
+    "tolerant",
+    "tolerate",
+    "tolerable",
+    "tolerances"
+   ],
+   "a": 3,
+   "k": "형용사 tight 뒤 명사 자리이며 '엄격한 허용 오차'를 뜻하는 tolerances가 정답이다. tolerant와 tolerable은 형용사, tolerate는 동사다."
+  }
+ },
+ {
+  "w": "deviation",
+  "pos": "n",
+  "m": [
+   "벗어남, 일탈",
+   "편차"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Any *deviation* from the approved design must be reported to the project engineer.",
+  "exKo": "승인된 설계에서 벗어나는 모든 사항은 프로젝트 엔지니어에게 보고되어야 한다.",
+  "col": [
+   {
+    "e": "deviation from",
+    "k": "~에서 벗어남"
+   },
+   {
+    "e": "standard deviation",
+    "k": "표준 편차"
+   },
+   {
+    "e": "slight deviation",
+    "k": "약간의 차이"
+   }
+  ],
+  "der": [
+   {
+    "w": "deviate",
+    "pos": "v",
+    "m": "벗어나다"
+   }
+  ],
+  "para": [
+   "departure",
+   "variation"
+  ],
+  "ant": "conformity",
+  "tip": "deviation from(~에서 벗어남)과 동사 deviate from의 전치사 from을 묻는 문제가 나온다. Part 7에서 departure, change로 패러프레이징된다.",
+  "q": {
+   "s": "Even a slight ------- from the recipe can change the taste of the final product.",
+   "o": [
+    "deviate",
+    "deviation",
+    "deviant",
+    "devious"
+   ],
+   "a": 1,
+   "k": "관사 a와 형용사 slight 뒤 명사 자리이므로 deviation이 정답이다. deviate는 동사, deviant(일탈적인)와 devious(교활한)는 형용사다."
+  }
+ },
+ {
+  "w": "anomaly",
+  "pos": "n",
+  "m": [
+   "이상, 변칙",
+   "이례적인 것"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The monitoring software flagged an *anomaly* in the temperature data from Line 3.",
+  "exKo": "모니터링 소프트웨어가 3번 라인의 온도 데이터에서 이상 징후를 표시했다.",
+  "col": [
+   {
+    "e": "an anomaly in",
+    "k": "~의 이상"
+   },
+   {
+    "e": "detect an anomaly",
+    "k": "이상을 감지하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "anomalous",
+    "pos": "adj",
+    "m": "이례적인, 비정상적인"
+   }
+  ],
+  "para": [
+   "irregularity",
+   "abnormality"
+  ],
+  "ant": "norm",
+  "tip": "정상 범위를 벗어난 결과를 뜻하며 an anomaly in the data처럼 쓴다. 철자가 비슷한 analogy(비유), anatomy(해부학)와 혼동시키는 어휘 문제가 나온다.",
+  "q": {
+   "s": "Engineers are investigating an ------- in the test results that cannot be explained by human error.",
+   "o": [
+    "analogy",
+    "anomaly",
+    "anatomy",
+    "autonomy"
+   ],
+   "a": 1,
+   "k": "사람의 실수로 설명되지 않는 시험 결과의 '이상'을 조사한다는 의미이므로 anomaly가 정답이다. analogy(비유), anatomy(해부학), autonomy(자율성)는 in the test results와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "irregularity",
+  "pos": "n",
+  "m": [
+   "불규칙, 이상",
+   "부정, 비리"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The inspector found minor *irregularities* in the stitching of several jackets.",
+  "exKo": "검사관은 재킷 몇 벌의 바느질에서 사소한 이상을 발견했다.",
+  "col": [
+   {
+    "e": "irregularities in",
+    "k": "~의 이상, 부정"
+   },
+   {
+    "e": "financial irregularities",
+    "k": "회계 부정"
+   }
+  ],
+  "der": [
+   {
+    "w": "irregular",
+    "pos": "adj",
+    "m": "불규칙한, 비정상적인"
+   },
+   {
+    "w": "irregularly",
+    "pos": "adv",
+    "m": "불규칙하게"
+   }
+  ],
+  "para": [
+   "anomaly",
+   "inconsistency"
+  ],
+  "ant": "regularity",
+  "tip": "제조 지문에서는 '결함, 이상', 회계 지문에서는 financial irregularities(회계 부정)로 쓰인다. 가산명사로 several, minor와 함께 복수형이 자주 나온다.",
+  "q": {
+   "s": "Auditors reported several ------- in the plant's maintenance records.",
+   "o": [
+    "irregular",
+    "irregularly",
+    "irregularities",
+    "regularity"
+   ],
+   "a": 2,
+   "k": "수량 형용사 several 뒤에는 복수명사가 와야 하므로 irregularities가 정답이다. irregular는 형용사, irregularly는 부사이고, regularity는 단수 명사라 several과 쓸 수 없다."
+  }
+ },
+ {
+  "w": "wear and tear",
+  "pos": "phr",
+  "m": [
+   "(정상적 사용에 따른) 마모, 노후"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The warranty does not cover damage caused by normal *wear and tear*.",
+  "exKo": "보증은 정상적인 사용에 따른 마모로 인한 손상은 보상하지 않는다.",
+  "col": [
+   {
+    "e": "normal wear and tear",
+    "k": "정상적인 마모"
+   },
+   {
+    "e": "signs of wear and tear",
+    "k": "마모의 흔적"
+   }
+  ],
+  "der": [],
+  "para": [
+   "deterioration",
+   "wear"
+  ],
+  "ant": "",
+  "tip": "보증서·임대 계약서에서 normal wear and tear는 보상 제외 항목으로 단골 등장한다. 불가산 표현이라 a를 붙이지 않는다.",
+  "q": {
+   "s": "Carpets in high-traffic areas show signs of ------- after only a few years.",
+   "o": [
+    "wait and see",
+    "rise and fall",
+    "give and take",
+    "wear and tear"
+   ],
+   "a": 3,
+   "k": "사람이 많이 다니는 곳의 카펫에 생기는 것은 '마모'의 흔적이므로 wear and tear가 정답이다. wait and see(관망), rise and fall(흥망, 오르내림), give and take(타협)는 카펫의 상태를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "wear out",
+  "pos": "phr",
+  "m": [
+   "닳다, 닳아 없어지다",
+   "지치게 하다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "The belts on this machine *wear out* quickly and should be replaced every six months.",
+  "exKo": "이 기계의 벨트는 빨리 닳기 때문에 6개월마다 교체해야 한다.",
+  "col": [
+   {
+    "e": "wear out quickly",
+    "k": "빨리 닳다"
+   },
+   {
+    "e": "worn-out parts",
+    "k": "닳은 부품"
+   }
+  ],
+  "der": [
+   {
+    "w": "worn-out",
+    "pos": "adj",
+    "m": "닳아 해진, 지친"
+   }
+  ],
+  "para": [
+   "deteriorate",
+   "break down"
+  ],
+  "ant": "",
+  "tip": "자동사(닳다)와 타동사(닳게 하다) 모두로 쓰이며 형용사 worn-out(낡은, 녹초가 된)도 자주 나온다. 효과·약기운이 '서서히 사라지다'인 wear off와 구분한다.",
+  "q": {
+   "s": "Running the motor at full speed for long periods can cause its parts to ------- sooner.",
+   "o": [
+    "give in",
+    "wear out",
+    "show up",
+    "fill out"
+   ],
+   "a": 1,
+   "k": "모터를 장시간 최고 속도로 돌리면 부품이 더 빨리 '닳는다'는 의미이므로 wear out이 정답이다. give in(굴복하다), show up(나타나다), fill out(작성하다)은 부품과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "start up",
+  "pos": "phr",
+  "m": [
+   "(기계를) 가동하다, 시동을 걸다",
+   "(사업을) 시작하다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "It takes about ten minutes to *start up* the printing press each morning.",
+  "exKo": "매일 아침 인쇄기를 가동하는 데 약 10분이 걸린다.",
+  "col": [
+   {
+    "e": "start up a machine",
+    "k": "기계를 가동하다"
+   },
+   {
+    "e": "start up a business",
+    "k": "사업을 시작하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "startup",
+    "pos": "n",
+    "m": "신생 기업, 가동"
+   }
+  ],
+  "para": [
+   "turn on",
+   "launch"
+  ],
+  "ant": "shut down",
+  "tip": "기계·컴퓨터를 '가동하다'와 사업을 '시작하다' 두 뜻으로 쓰이며 반대말은 shut down이다. 붙여 쓴 명사 startup(신생 기업)과 구분한다.",
+  "q": {
+   "s": "Please wait until the system has finished ------- before entering your password.",
+   "o": [
+    "turning down",
+    "holding up",
+    "filling in",
+    "starting up"
+   ],
+   "a": 3,
+   "k": "비밀번호를 입력하기 전에 시스템이 '가동을 마칠' 때까지 기다리라는 의미이므로 starting up이 정답이다. turning down(거절하기, 낮추기), holding up(지연시키기), filling in(작성하기, 대신하기)은 시스템과 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "idle",
+  "pos": "adj",
+  "m": [
+   "(기계 등이) 가동되지 않는, 놀고 있는",
+   "한가한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Two production lines stood *idle* while the new software was being installed.",
+  "exKo": "새 소프트웨어가 설치되는 동안 생산 라인 두 개가 가동되지 않았다.",
+  "col": [
+   {
+    "e": "stand idle",
+    "k": "가동되지 않다, 놀고 있다"
+   },
+   {
+    "e": "idle machinery",
+    "k": "유휴 기계"
+   }
+  ],
+  "der": [
+   {
+    "w": "idly",
+    "pos": "adv",
+    "m": "하는 일 없이"
+   },
+   {
+    "w": "idleness",
+    "pos": "n",
+    "m": "놀고 있음, 나태"
+   }
+  ],
+  "para": [
+   "inactive",
+   "unused"
+  ],
+  "ant": "operational",
+  "tip": "stand/sit/lie idle처럼 2형식 동사 뒤 보어로 자주 쓰이며 leave A idle(A를 놀려 두다)도 나온다. 보어 자리에 부사 idly를 고르지 않도록 주의한다.",
+  "q": {
+   "s": "The factory lost money because several expensive machines were left ------- for months.",
+   "o": [
+    "idly",
+    "idleness",
+    "idle",
+    "idolize"
+   ],
+   "a": 2,
+   "k": "be left 뒤에는 목적격 보어였던 형용사가 와야 하므로 '가동되지 않는' idle이 정답이다. idly는 부사라 보어가 될 수 없고, idleness는 명사, idolize(우상화하다)는 동사다."
+  }
+ },
+ {
+  "w": "overhaul",
+  "pos": "v",
+  "m": [
+   "정밀 점검하다, 분해 수리하다",
+   "전면 개편하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The airline *overhauls* each of its engines after 3,000 hours of flight time.",
+  "exKo": "그 항공사는 비행시간 3,000시간마다 엔진을 하나하나 정밀 점검한다.",
+  "col": [
+   {
+    "e": "overhaul an engine",
+    "k": "엔진을 분해 수리하다"
+   },
+   {
+    "e": "overhaul a system",
+    "k": "시스템을 전면 개편하다"
+   },
+   {
+    "e": "a complete overhaul",
+    "k": "전면 점검, 전면 개편"
+   }
+  ],
+  "der": [],
+  "para": [
+   "revamp",
+   "renovate",
+   "service"
+  ],
+  "ant": "",
+  "tip": "기계의 '정밀 점검'뿐 아니라 제도·시스템의 '전면 개편'에도 쓰여 revamp, restructure로 패러프레이징된다. 명사로도 쓰여 a major overhaul이 가능하다.",
+  "q": {
+   "s": "Management has hired a consultant to ------- the plant's outdated inventory procedures.",
+   "o": [
+    "overhaul",
+    "overhear",
+    "overlook",
+    "overdo"
+   ],
+   "a": 0,
+   "k": "컨설턴트를 고용해 낡은 재고 관리 절차를 '전면 개편하려는' 것이므로 overhaul이 정답이다. overhear(우연히 듣다), overlook(간과하다), overdo(지나치게 하다)는 컨설턴트를 고용한 목적과 맞지 않는다."
+  }
+ },
+ {
+  "w": "lubricate",
+  "pos": "v",
+  "m": [
+   "윤활유를 바르다, 기름을 치다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Technicians *lubricate* the moving parts of the conveyor once a week.",
+  "exKo": "기술자들은 일주일에 한 번 컨베이어의 움직이는 부품에 윤활유를 바른다.",
+  "col": [
+   {
+    "e": "lubricate the gears",
+    "k": "기어에 윤활유를 바르다"
+   },
+   {
+    "e": "well lubricated",
+    "k": "윤활이 잘 된"
+   }
+  ],
+  "der": [
+   {
+    "w": "lubricant",
+    "pos": "n",
+    "m": "윤활유"
+   },
+   {
+    "w": "lubrication",
+    "pos": "n",
+    "m": "윤활 (작업)"
+   }
+  ],
+  "para": [
+   "oil",
+   "grease"
+  ],
+  "ant": "",
+  "tip": "기계 정비 지문에서 lubricate moving parts가 정기 점검 항목으로 나온다. 명사 lubricant(윤활유)와 lubrication(윤활 작업)을 구분하는 품사 문제가 출제된다.",
+  "q": {
+   "s": "To prevent rust and friction, all gears should be ------- regularly.",
+   "o": [
+    "lubricant",
+    "lubrication",
+    "lubricated",
+    "lubricate"
+   ],
+   "a": 2,
+   "k": "should be 뒤에서 '윤활유가 칠해져야' 한다는 수동태를 만드는 과거분사 lubricated가 정답이다. lubricant와 lubrication은 명사, lubricate는 동사원형이라 be 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "weld",
+  "pos": "v",
+  "m": [
+   "용접하다"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "A worker is *welding* two steel beams together.",
+  "exKo": "한 작업자가 철골 두 개를 용접하고 있다.",
+  "col": [
+   {
+    "e": "weld together",
+    "k": "용접해 붙이다"
+   },
+   {
+    "e": "welding equipment",
+    "k": "용접 장비"
+   }
+  ],
+  "der": [
+   {
+    "w": "welder",
+    "pos": "n",
+    "m": "용접공"
+   },
+   {
+    "w": "welding",
+    "pos": "n",
+    "m": "용접"
+   }
+  ],
+  "para": [
+   "join",
+   "fuse"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 작업자가 보호 마스크를 쓰고 용접하는 장면으로 나온다. 사람명사 welder(용접공)도 직업을 묻는 문제에 등장한다.",
+  "q": {
+   "s": "The frame is made of aluminum tubes that are ------- together for extra strength.",
+   "o": [
+    "welded",
+    "wielded",
+    "weeded",
+    "wedded"
+   ],
+   "a": 0,
+   "k": "강도를 높이기 위해 알루미늄 관을 '용접해서' 붙인다는 의미이므로 welded가 정답이다. wielded(휘두른), weeded(잡초를 뽑은), wedded(결혼한)는 금속 관을 결합하는 의미가 아니다."
+  }
+ },
+ {
+  "w": "mold",
+  "pos": "n",
+  "m": [
+   "(주조용) 틀, 거푸집",
+   "곰팡이"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Molten plastic is poured into a *mold* to form each bottle cap.",
+  "exKo": "녹인 플라스틱을 틀에 부어 병뚜껑을 하나하나 만든다.",
+  "col": [
+   {
+    "e": "injection mold",
+    "k": "사출 금형"
+   },
+   {
+    "e": "pour into a mold",
+    "k": "틀에 붓다"
+   }
+  ],
+  "der": [
+   {
+    "w": "molding",
+    "pos": "n",
+    "m": "주형 작업, 몰딩"
+   }
+  ],
+  "para": [
+   "cast",
+   "form"
+  ],
+  "ant": "",
+  "tip": "제조 지문에서는 '틀, 거푸집', 건물 관리 지문에서는 '곰팡이'로 나온다. 동사로는 '(틀에 넣어) 만들다'라는 뜻이며 영국식 철자는 mould다.",
+  "q": {
+   "s": "The bakery uses silicone ------- to give its chocolates their distinctive shape.",
+   "o": [
+    "modes",
+    "molds",
+    "moods",
+    "motels"
+   ],
+   "a": 1,
+   "k": "초콜릿에 독특한 모양을 내기 위해 쓰는 실리콘 도구는 '틀'이므로 molds가 정답이다. modes(방식), moods(기분), motels(모텔)는 모양을 만드는 도구가 아니다."
+  }
+ },
+ {
+  "w": "alloy",
+  "pos": "n",
+  "m": [
+   "합금"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bike frame is made from a lightweight aluminum *alloy*.",
+  "exKo": "그 자전거 프레임은 가벼운 알루미늄 합금으로 만들어진다.",
+  "col": [
+   {
+    "e": "aluminum alloy",
+    "k": "알루미늄 합금"
+   },
+   {
+    "e": "alloy wheels",
+    "k": "합금 휠"
+   }
+  ],
+  "der": [],
+  "para": [
+   "metal blend"
+  ],
+  "ant": "",
+  "tip": "두 가지 이상의 금속을 섞은 것으로 제품 사양 설명에 나온다. alloy wheels처럼 명사 앞 수식어로도 쓰인다.",
+  "q": {
+   "s": "Bronze is an ------- of copper and tin that has been used for thousands of years.",
+   "o": [
+    "ally",
+    "alloy",
+    "allay",
+    "alley"
+   ],
+   "a": 1,
+   "k": "구리와 주석을 섞은 청동은 '합금'이므로 alloy가 정답이다. ally(동맹국), allay(가라앉히다), alley(골목)는 금속의 혼합물을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "phase out",
+  "pos": "phr",
+  "m": [
+   "단계적으로 폐지하다",
+   "점차 없애다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Paper invoices will be *phased out* gradually as more clients switch to online billing.",
+  "exKo": "더 많은 고객이 온라인 청구로 전환함에 따라 종이 송장은 단계적으로 폐지될 것이다.",
+  "col": [
+   {
+    "e": "phase out a product",
+    "k": "제품을 단계적으로 단종하다"
+   },
+   {
+    "e": "be phased out",
+    "k": "단계적으로 폐지되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "phase",
+    "pos": "n",
+    "m": "단계"
+   }
+  ],
+  "para": [
+   "discontinue",
+   "eliminate gradually"
+  ],
+  "ant": "phase in",
+  "tip": "phase out(단계적으로 없애다)과 반대말 phase in(단계적으로 도입하다)을 혼동시키는 문제가 나온다. Part 7에서 discontinue로 패러프레이징된다.",
+  "q": {
+   "s": "The city plans to gradually ------- its diesel buses and replace them with electric ones.",
+   "o": [
+    "phase in",
+    "carry out",
+    "check out",
+    "phase out"
+   ],
+   "a": 3,
+   "k": "디젤 버스를 전기 버스로 교체한다고 했으므로 '단계적으로 없애다'인 phase out이 정답이다. phase in(단계적으로 도입하다)은 교체 내용과 반대이고, carry out(수행하다), check out(확인하다)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "modernize",
+  "pos": "v",
+  "m": [
+   "현대화하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The plant spent two million dollars to *modernize* its packaging equipment.",
+  "exKo": "그 공장은 포장 장비를 현대화하는 데 200만 달러를 썼다.",
+  "col": [
+   {
+    "e": "modernize facilities",
+    "k": "시설을 현대화하다"
+   },
+   {
+    "e": "modernize operations",
+    "k": "운영을 현대화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "modernization",
+    "pos": "n",
+    "m": "현대화"
+   },
+   {
+    "w": "modern",
+    "pos": "adj",
+    "m": "현대의"
+   }
+  ],
+  "para": [
+   "update",
+   "upgrade"
+  ],
+  "ant": "",
+  "tip": "-ize로 끝나는 동사로, to부정사·조동사 뒤 동사원형 자리를 묻는다. Part 7에서 update, upgrade로 패러프레이징된다.",
+  "q": {
+   "s": "Funds from the grant will be used to ------- the factory's outdated heating system.",
+   "o": [
+    "modernize",
+    "modernization",
+    "modern",
+    "modernity"
+   ],
+   "a": 0,
+   "k": "to부정사 to 뒤에는 동사원형이 와야 하므로 modernize가 정답이다. modernization과 modernity는 명사, modern은 형용사다."
+  }
+ },
+ {
+  "w": "retool",
+  "pos": "v",
+  "m": [
+   "(공장의) 설비를 교체하다",
+   "재정비하다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The factory was *retooled* to produce electric vehicle batteries instead of engines.",
+  "exKo": "그 공장은 엔진 대신 전기차 배터리를 생산하도록 설비를 교체했다.",
+  "col": [
+   {
+    "e": "retool a factory",
+    "k": "공장 설비를 바꾸다"
+   },
+   {
+    "e": "retool a strategy",
+    "k": "전략을 재정비하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "tool",
+    "pos": "n",
+    "m": "도구, 공구"
+   }
+  ],
+  "para": [
+   "re-equip",
+   "reorganize"
+  ],
+  "ant": "",
+  "tip": "새 제품을 만들기 위해 기계·설비를 바꾸는 것을 뜻하며, 비유적으로 전략·조직을 '재정비하다'에도 쓰인다. 자동차·제조업 기사에 자주 나온다.",
+  "q": {
+   "s": "The automaker will need to ------- several of its plants before it can begin producing the new model.",
+   "o": [
+    "retell",
+    "retort",
+    "retool",
+    "retreat"
+   ],
+   "a": 2,
+   "k": "새 모델 생산을 시작하기 전에 공장 '설비를 교체해야' 한다는 의미이므로 retool이 정답이다. retell(다시 말하다), retort(쏘아붙이다), retreat(후퇴하다)는 plants를 목적어로 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "waterproof",
+  "pos": "adj",
+  "m": [
+   "방수의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "This *waterproof* jacket is ideal for hiking and other outdoor work.",
+  "exKo": "이 방수 재킷은 등산과 기타 야외 작업에 이상적이다.",
+  "col": [
+   {
+    "e": "waterproof material",
+    "k": "방수 소재"
+   },
+   {
+    "e": "waterproof to a depth of",
+    "k": "~ 깊이까지 방수되는"
+   }
+  ],
+  "der": [
+   {
+    "w": "water-resistant",
+    "pos": "adj",
+    "m": "내수성의, 생활 방수의"
+   }
+  ],
+  "para": [
+   "water-resistant",
+   "watertight"
+  ],
+  "ant": "",
+  "tip": "제품 광고에서 waterproof(완전 방수의)와 water-resistant(생활 방수의)가 비교되어 나온다. 동사로 쓰여 '방수 처리하다'라는 뜻도 있다.",
+  "q": {
+   "s": "The watch is ------- to a depth of 50 meters, making it suitable for swimming.",
+   "o": [
+    "waterfront",
+    "waterproof",
+    "watercolor",
+    "waterfall"
+   ],
+   "a": 1,
+   "k": "수심 50미터까지 수영에 적합하다고 했으므로 '방수의' waterproof가 정답이다. waterfront(해안가), watercolor(수채화), waterfall(폭포)은 시계의 성능을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "lumber",
+  "pos": "n",
+  "m": [
+   "목재, 재목"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "Stacks of *lumber* have been piled up near the construction site.",
+  "exKo": "공사 현장 근처에 목재 더미가 쌓여 있다.",
+  "col": [
+   {
+    "e": "a stack of lumber",
+    "k": "목재 더미"
+   },
+   {
+    "e": "lumber yard",
+    "k": "목재 하치장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "timber",
+   "wood"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 Some lumber is stacked.(목재가 쌓여 있다) 같은 묘사로 나온다. 불가산명사라 a lumber, lumbers로 쓰지 않으며 영국 영어에서는 timber라고 한다.",
+  "q": {
+   "s": "The hardware store sells ------- cut to size for customers building decks and fences.",
+   "o": [
+    "lumber",
+    "plumber",
+    "slumber",
+    "lumbar"
+   ],
+   "a": 0,
+   "k": "데크와 울타리를 만드는 고객에게 치수대로 잘라 파는 것은 '목재'이므로 lumber가 정답이다. plumber(배관공), slumber(잠), lumbar(허리의)는 판매하는 자재가 아니다."
+  }
+ },
+ {
+  "w": "fabric",
+  "pos": "n",
+  "m": [
+   "직물, 천",
+   "(사회·조직의) 구조"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The curtains are made from a fire-resistant *fabric* that is suitable for hotels.",
+  "exKo": "그 커튼은 호텔에 적합한 방염 직물로 만들어진다.",
+  "col": [
+   {
+    "e": "cotton fabric",
+    "k": "면직물"
+   },
+   {
+    "e": "fabric softener",
+    "k": "섬유 유연제"
+   }
+  ],
+  "der": [
+   {
+    "w": "fabricate",
+    "pos": "v",
+    "m": "제작하다, 조작하다"
+   },
+   {
+    "w": "fabrication",
+    "pos": "n",
+    "m": "제작, 조작"
+   }
+  ],
+  "para": [
+   "material",
+   "cloth",
+   "textile"
+  ],
+  "ant": "",
+  "tip": "fabric은 '천'이고 동사 fabricate는 '제작하다, (거짓을) 꾸며내다'라는 뜻이라 품사 문제로 함께 나온다. Part 7에서 material, textile로 패러프레이징된다.",
+  "q": {
+   "s": "Customers can choose from over 40 colors of ------- for the sofa's cushions.",
+   "o": [
+    "fabricate",
+    "fabrication",
+    "fabric",
+    "fabricated"
+   ],
+   "a": 2,
+   "k": "전치사 of 뒤 명사 자리이며 소파 쿠션의 '천'을 뜻하므로 fabric이 정답이다. fabrication은 '제작, 조작'이라 의미가 맞지 않고, fabricate는 동사, fabricated는 분사다."
+  }
+ },
+ {
+  "w": "schematic",
+  "pos": "n",
+  "m": [
+   "개략도, 배선도",
+   "도식"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The technician checked the wiring *schematic* before replacing the circuit board.",
+  "exKo": "기술자는 회로 기판을 교체하기 전에 배선도를 확인했다.",
+  "col": [
+   {
+    "e": "wiring schematic",
+    "k": "배선도"
+   },
+   {
+    "e": "schematic diagram",
+    "k": "개략도"
+   }
+  ],
+  "der": [],
+  "para": [
+   "diagram",
+   "blueprint",
+   "layout"
+  ],
+  "ant": "",
+  "tip": "전기·기계의 구조를 단순화해 그린 그림으로 Part 7에서 diagram, drawing으로 패러프레이징된다. 형용사로도 쓰여 schematic diagram(개략도)이 된다.",
+  "q": {
+   "s": "Please refer to the electrical ------- on page 12 before attempting any repairs.",
+   "o": [
+    "systematic",
+    "symptomatic",
+    "dramatic",
+    "schematic"
+   ],
+   "a": 3,
+   "k": "수리 전에 참고하는 12페이지의 전기 '배선도'를 뜻하므로 명사로 쓰이는 schematic이 정답이다. systematic(체계적인), symptomatic(증상을 보이는), dramatic(극적인)은 형용사라 관사 the와 형용사 electrical 뒤 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "diagram",
+  "pos": "n",
+  "m": [
+   "도표, 도해",
+   "그림"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *diagram* on the back of the box shows how to connect the speakers.",
+  "exKo": "상자 뒷면의 도해는 스피커를 연결하는 방법을 보여 준다.",
+  "col": [
+   {
+    "e": "a diagram of",
+    "k": "~의 도해"
+   },
+   {
+    "e": "draw a diagram",
+    "k": "도표를 그리다"
+   }
+  ],
+  "der": [
+   {
+    "w": "diagrammatic",
+    "pos": "adj",
+    "m": "도표의, 도식적인"
+   }
+  ],
+  "para": [
+   "chart",
+   "drawing",
+   "illustration"
+  ],
+  "ant": "",
+  "tip": "설명서·안내문 지문에서 see the diagram below처럼 나오며 Part 7에서 illustration, drawing으로 패러프레이징된다. 그래프 형태의 chart와 의미가 겹친다.",
+  "q": {
+   "s": "The safety manual includes a ------- showing the location of every emergency exit.",
+   "o": [
+    "dialogue",
+    "diameter",
+    "dialect",
+    "diagram"
+   ],
+   "a": 3,
+   "k": "모든 비상구의 위치를 보여 주는 것은 '도해'이므로 diagram이 정답이다. dialogue(대화), diameter(지름), dialect(방언)는 위치를 보여 줄 수 없다."
+  }
+ },
+ {
+  "w": "gauge",
+  "pos": "n",
+  "m": [
+   "계기, 측정기",
+   "척도"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "The driver noticed that the fuel *gauge* was showing close to empty.",
+  "exKo": "운전자는 연료 계기판이 거의 바닥을 가리키고 있는 것을 알아차렸다.",
+  "col": [
+   {
+    "e": "fuel gauge",
+    "k": "연료 계기"
+   },
+   {
+    "e": "pressure gauge",
+    "k": "압력계"
+   }
+  ],
+  "der": [],
+  "para": [
+   "meter",
+   "indicator"
+  ],
+  "ant": "",
+  "tip": "명사로는 '계기, 측정기', 동사로는 gauge customer interest(고객 관심을 가늠하다)처럼 '측정하다, 판단하다'로 쓰여 assess, measure로 패러프레이징된다. 철자 gauge(au)에 주의한다.",
+  "q": {
+   "s": "Check the pressure ------- regularly to make sure the boiler is operating safely.",
+   "o": [
+    "gaze",
+    "grudge",
+    "gorge",
+    "gauge"
+   ],
+   "a": 3,
+   "k": "보일러가 안전하게 작동하는지 확인하려면 '압력계'를 점검해야 하므로 gauge가 정답이다. gaze(응시), grudge(원한), gorge(협곡)는 측정 장치가 아니다."
+  }
+ },
+ {
+  "w": "sensor",
+  "pos": "n",
+  "m": [
+   "센서, 감지기"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Motion *sensors* turn the lights off automatically when the room is empty.",
+  "exKo": "동작 감지 센서가 방이 비면 자동으로 조명을 끈다.",
+  "col": [
+   {
+    "e": "motion sensor",
+    "k": "동작 감지기"
+   },
+   {
+    "e": "temperature sensor",
+    "k": "온도 센서"
+   }
+  ],
+  "der": [
+   {
+    "w": "sense",
+    "pos": "v",
+    "m": "감지하다"
+   }
+  ],
+  "para": [
+   "detector"
+  ],
+  "ant": "",
+  "tip": "자동화·스마트 기기 지문에서 detect(감지하다)와 함께 쓰인다. 발음이 같은 censor(검열관)와 철자를 혼동하지 않는다.",
+  "q": {
+   "s": "A ------- on the conveyor detects any package that exceeds the weight limit.",
+   "o": [
+    "sensor",
+    "censor",
+    "censure",
+    "sensation"
+   ],
+   "a": 0,
+   "k": "중량 한도를 넘는 소포를 '감지하는' 장치는 sensor이므로 정답이다. censor(검열관), censure(비난), sensation(감각, 돌풍)은 감지 장치가 아니다."
+  }
+ },
+ {
+  "w": "robotic",
+  "pos": "adj",
+  "m": [
+   "로봇의, 로봇에 의한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Robotic* arms now handle most of the heavy lifting on our production line.",
+  "exKo": "이제 로봇 팔이 우리 생산 라인에서 무거운 물건을 드는 작업 대부분을 맡는다.",
+  "col": [
+   {
+    "e": "robotic arm",
+    "k": "로봇 팔"
+   },
+   {
+    "e": "robotic technology",
+    "k": "로봇 기술"
+   }
+  ],
+  "der": [
+   {
+    "w": "robot",
+    "pos": "n",
+    "m": "로봇"
+   },
+   {
+    "w": "robotics",
+    "pos": "n",
+    "m": "로봇 공학"
+   }
+  ],
+  "para": [
+   "automated"
+  ],
+  "ant": "manual",
+  "tip": "공장 자동화 지문에서 automated와 함께 나온다. 형용사 robotic, 학문명 robotics(로봇 공학, 단수 취급)를 구분한다.",
+  "q": {
+   "s": "The hospital recently purchased a ------- system that assists surgeons during delicate operations.",
+   "o": [
+    "romantic",
+    "robotic",
+    "rustic",
+    "hectic"
+   ],
+   "a": 1,
+   "k": "정교한 수술 중에 외과의를 보조하는 시스템은 '로봇' 시스템이므로 robotic이 정답이다. romantic(낭만적인), rustic(시골풍의), hectic(정신없이 바쁜)은 수술 보조 시스템을 꾸미기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "crane",
+  "pos": "n",
+  "m": [
+   "크레인, 기중기"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "A *crane* is lifting steel beams to the top of the building.",
+  "exKo": "크레인이 철골을 건물 꼭대기로 들어 올리고 있다.",
+  "col": [
+   {
+    "e": "construction crane",
+    "k": "건설용 크레인"
+   },
+   {
+    "e": "operate a crane",
+    "k": "크레인을 조종하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "hoist"
+  ],
+  "ant": "",
+  "tip": "Part 1 공사 현장 사진에서 A crane is lifting ~ 형태로 나온다. 동사 crane은 '(보려고) 목을 길게 빼다'라는 뜻이다.",
+  "q": {
+   "s": "Workers used a ------- to lower the heavy generator onto the roof.",
+   "o": [
+    "crayon",
+    "cradle",
+    "crater",
+    "crane"
+   ],
+   "a": 3,
+   "k": "무거운 발전기를 지붕 위로 내리는 데 쓴 장비는 '크레인'이므로 crane이 정답이다. crayon(크레용), cradle(요람), crater(분화구)는 물건을 들어 옮기는 장비가 아니다."
+  }
+ },
+ {
+  "w": "mill",
+  "pos": "n",
+  "m": [
+   "공장, 제작소",
+   "제분소, 방앗간"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The old textile *mill* has been converted into apartments and art studios.",
+  "exKo": "오래된 직물 공장은 아파트와 예술 작업실로 개조되었다.",
+  "col": [
+   {
+    "e": "steel mill",
+    "k": "제철소"
+   },
+   {
+    "e": "paper mill",
+    "k": "제지 공장"
+   },
+   {
+    "e": "textile mill",
+    "k": "방직 공장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "factory",
+   "plant"
+  ],
+  "ant": "",
+  "tip": "steel mill, paper mill처럼 특정 원료를 가공하는 공장을 뜻하며 factory, plant로 패러프레이징된다. 동사로는 '갈다, 빻다'라는 뜻이다.",
+  "q": {
+   "s": "The steel ------- employs nearly 800 people and is the largest employer in the town.",
+   "o": [
+    "mall",
+    "mile",
+    "meal",
+    "mill"
+   ],
+   "a": 3,
+   "k": "약 800명을 고용하는 '제철소'를 뜻하는 steel mill을 완성하는 mill이 정답이다. mall(쇼핑몰), mile(마일), meal(식사)은 steel과 결합해 고용 주체를 만들지 못한다."
+  }
+ },
+ {
+  "w": "foreman",
+  "pos": "n",
+  "m": [
+   "(현장) 감독, 작업반장"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The *foreman* assigned each crew member a task before the shift began.",
+  "exKo": "작업반장은 교대 근무가 시작되기 전에 작업자 한 명 한 명에게 업무를 배정했다.",
+  "col": [
+   {
+    "e": "construction foreman",
+    "k": "건설 현장 감독"
+   },
+   {
+    "e": "report to the foreman",
+    "k": "현장 감독에게 보고하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "supervisor",
+   "crew leader"
+  ],
+  "ant": "",
+  "tip": "공사 현장·공장의 작업자들을 감독하는 사람으로 Part 7에서 supervisor로 패러프레이징된다. LC에서 화자의 직업을 묻는 문제로도 나온다.",
+  "q": {
+   "s": "Any safety concerns on the construction site should be reported to the ------- immediately.",
+   "o": [
+    "forerunner",
+    "foreman",
+    "forecast",
+    "forehead"
+   ],
+   "a": 1,
+   "k": "공사 현장의 안전 문제를 즉시 보고해야 할 대상은 '현장 감독'이므로 foreman이 정답이다. forerunner(선구자), forecast(예보), forehead(이마)는 보고 대상이 아니다."
+  }
+ },
+ {
+  "w": "ventilation",
+  "pos": "n",
+  "m": [
+   "환기, 통풍"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Good *ventilation* is essential in areas where paint and solvents are used.",
+  "exKo": "페인트와 용제를 사용하는 구역에서는 환기가 잘 되는 것이 필수다.",
+  "col": [
+   {
+    "e": "ventilation system",
+    "k": "환기 시스템"
+   },
+   {
+    "e": "poor ventilation",
+    "k": "나쁜 환기 상태"
+   }
+  ],
+  "der": [
+   {
+    "w": "ventilate",
+    "pos": "v",
+    "m": "환기하다"
+   },
+   {
+    "w": "vent",
+    "pos": "n",
+    "m": "통풍구"
+   }
+  ],
+  "para": [
+   "airflow",
+   "air circulation"
+  ],
+  "ant": "",
+  "tip": "ventilation system(환기 시스템)이 시설 점검·공사 공지에 자주 나온다. 동사 ventilate(환기시키다)와 품사를 구분한다.",
+  "q": {
+   "s": "The workshop's ------- system was upgraded to remove dust from the air more effectively.",
+   "o": [
+    "vacation",
+    "validation",
+    "ventilation",
+    "variation"
+   ],
+   "a": 2,
+   "k": "공기 중 먼지를 더 효과적으로 제거하도록 개선된 것은 '환기' 시스템이므로 ventilation이 정답이다. vacation(휴가), validation(검증), variation(변화)은 먼지 제거와 관련이 없다."
+  }
+ },
+ {
+  "w": "fumes",
+  "pos": "n",
+  "m": [
+   "(유해한) 연기, 가스, 매연"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Workers must wear masks to avoid breathing in *fumes* from the cleaning chemicals.",
+  "exKo": "작업자들은 세척용 화학 약품에서 나오는 유독 가스를 들이마시지 않도록 마스크를 착용해야 한다.",
+  "col": [
+   {
+    "e": "toxic fumes",
+    "k": "유독 가스"
+   },
+   {
+    "e": "exhaust fumes",
+    "k": "배기가스"
+   }
+  ],
+  "der": [
+   {
+    "w": "fume",
+    "pos": "v",
+    "m": "연기를 내뿜다, 몹시 화내다"
+   }
+  ],
+  "para": [
+   "gas",
+   "smoke",
+   "vapor"
+  ],
+  "ant": "",
+  "tip": "보통 복수형 fumes로 쓰이며 toxic/exhaust fumes가 안전 수칙 지문에 나온다. 환기(ventilation)와 함께 짝지어 출제된다.",
+  "q": {
+   "s": "Exhaust ------- from the delivery trucks were drifting into the office building.",
+   "o": [
+    "fuses",
+    "funds",
+    "fumes",
+    "flutes"
+   ],
+   "a": 2,
+   "k": "배송 트럭에서 나와 건물 안으로 흘러든 것은 '배기가스'이므로 exhaust fumes를 완성하는 fumes가 정답이다. fuses(퓨즈), funds(자금), flutes(플루트)는 흘러들 수 없다."
+  }
+ },
+ {
+  "w": "byproduct",
+  "pos": "n",
+  "m": [
+   "부산물",
+   "부수적 결과"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Sawdust, a *byproduct* of furniture making, is sold to local farms.",
+  "exKo": "가구 제작의 부산물인 톱밥은 지역 농장에 판매된다.",
+  "col": [
+   {
+    "e": "a byproduct of",
+    "k": "~의 부산물"
+   },
+   {
+    "e": "industrial byproduct",
+    "k": "산업 부산물"
+   }
+  ],
+  "der": [
+   {
+    "w": "product",
+    "pos": "n",
+    "m": "제품"
+   }
+  ],
+  "para": [
+   "side effect",
+   "spin-off"
+  ],
+  "ant": "",
+  "tip": "a byproduct of + 공정 형태로 쓰이며, 비유적으로 '부수적 결과'라는 뜻도 있다. by-product처럼 하이픈을 넣어 쓰기도 한다.",
+  "q": {
+   "s": "Heat generated as a ------- of the manufacturing process is used to warm the offices.",
+   "o": [
+    "byproduct",
+    "bystander",
+    "bypass",
+    "bylaw"
+   ],
+   "a": 0,
+   "k": "제조 공정에서 부수적으로 생긴 열을 사무실 난방에 쓴다는 의미이므로 byproduct가 정답이다. bystander(구경꾼), bypass(우회로), bylaw(내규)는 공정에서 생기는 것이 아니다."
+  }
+ },
+ {
+  "w": "utilization",
+  "pos": "n",
+  "m": [
+   "활용, 이용(률)"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Better route planning has increased the *utilization* of our delivery fleet.",
+  "exKo": "경로 계획을 개선하자 우리 배송 차량의 활용도가 높아졌다.",
+  "col": [
+   {
+    "e": "capacity utilization",
+    "k": "설비 가동률"
+   },
+   {
+    "e": "utilization rate",
+    "k": "이용률"
+   }
+  ],
+  "der": [
+   {
+    "w": "utilize",
+    "pos": "v",
+    "m": "활용하다"
+   },
+   {
+    "w": "utility",
+    "pos": "n",
+    "m": "유용성, 공익 설비"
+   }
+  ],
+  "para": [
+   "use",
+   "usage"
+  ],
+  "ant": "",
+  "tip": "capacity utilization(설비 가동률)이 제조·경제 기사에 나온다. 동사 utilize와 utility(공공요금, 유용성)를 구분하는 품사·어휘 문제가 출제된다.",
+  "q": {
+   "s": "Plant managers track capacity ------- to see how much of the factory's potential is being used.",
+   "o": [
+    "utilization",
+    "utilize",
+    "utility",
+    "utilitarian"
+   ],
+   "a": 0,
+   "k": "공장 역량 중 얼마나 쓰이고 있는지를 나타내는 '설비 가동률(capacity utilization)'이므로 utilization이 정답이다. utilize는 동사, utilitarian(실용적인)은 형용사이고, utility(유용성, 공익 설비)는 capacity와 이런 뜻을 만들지 못한다."
+  }
+ },
+ {
+  "w": "ramp up",
+  "pos": "phr",
+  "m": [
+   "(생산·활동을) 늘리다, 증가시키다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The factory is *ramping up* production ahead of the holiday shopping season.",
+  "exKo": "그 공장은 연말 쇼핑 시즌을 앞두고 생산을 늘리고 있다.",
+  "col": [
+   {
+    "e": "ramp up production",
+    "k": "생산을 늘리다"
+   },
+   {
+    "e": "ramp up efforts",
+    "k": "노력을 강화하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "increase",
+   "boost",
+   "step up"
+  ],
+  "ant": "ramp down",
+  "tip": "생산량·활동을 점차 늘리는 것을 뜻하며 Part 7에서 increase, boost로 패러프레이징된다. 반대말 ramp down, cut back과 함께 문맥으로 구분하는 문제가 나온다.",
+  "q": {
+   "s": "To meet growing demand, the manufacturer will ------- production of its electric scooters next month.",
+   "o": [
+    "ramp down",
+    "cut back",
+    "ramp up",
+    "wind down"
+   ],
+   "a": 2,
+   "k": "늘어나는 수요를 충족하려면 생산을 '늘려야' 하므로 ramp up이 정답이다. ramp down(줄이다), cut back(삭감하다), wind down(점차 축소하다)은 모두 수요 증가와 반대되는 조치다."
+  }
+ },
+ {
+  "w": "scale up",
+  "pos": "phr",
+  "m": [
+   "(규모를) 확대하다, 늘리다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "After a successful pilot, the company plans to *scale up* its recycling program nationwide.",
+  "exKo": "시범 운영에 성공한 뒤 그 회사는 재활용 프로그램을 전국으로 확대할 계획이다.",
+  "col": [
+   {
+    "e": "scale up operations",
+    "k": "사업을 확장하다"
+   },
+   {
+    "e": "scale up production",
+    "k": "생산 규모를 늘리다"
+   }
+  ],
+  "der": [
+   {
+    "w": "scale",
+    "pos": "n",
+    "m": "규모"
+   }
+  ],
+  "para": [
+   "expand",
+   "enlarge"
+  ],
+  "ant": "scale down",
+  "tip": "scale up(규모를 키우다)과 scale down(규모를 줄이다)은 반대 의미로 문맥상 구분이 필요하다. 사업 확장 기사에서 expand로 패러프레이징된다.",
+  "q": {
+   "s": "The startup needs more investors before it can ------- its operations to serve international markets.",
+   "o": [
+    "scale up",
+    "scale down",
+    "break up",
+    "hang up"
+   ],
+   "a": 0,
+   "k": "해외 시장에 진출하려면 사업 '규모를 확대해야' 하므로 scale up이 정답이다. scale down(축소하다)은 반대 의미이고, break up(해체하다), hang up(전화를 끊다)은 의미가 맞지 않는다."
+  }
+ }
+]

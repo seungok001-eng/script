@@ -1,0 +1,1984 @@
+[
+ {
+  "w": "however",
+  "pos": "adv",
+  "m": [
+   "그러나",
+   "하지만",
+   "아무리 ~해도"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Sales rose in the first quarter. *However*, profits fell because of higher shipping costs.",
+  "exKo": "1분기에 매출은 증가했다. 그러나 운송비 상승 때문에 수익은 감소했다.",
+  "col": [
+   {
+    "e": "However, S + V",
+    "k": "그러나 ~하다"
+   },
+   {
+    "e": "however + 형용사 + S + V",
+    "k": "아무리 ~하더라도"
+   }
+  ],
+  "der": [],
+  "para": [
+   "nevertheless",
+   "on the other hand"
+  ],
+  "ant": "",
+  "tip": "however는 접속부사라서 but과 달리 콤마만으로 두 절을 잇지 못한다. 마침표나 세미콜론 뒤, 또는 문장 중간에 콤마와 함께 삽입해 쓴다.",
+  "q": {
+   "s": "The new software was expected to launch in May. -------, testing revealed several problems that delayed its release.",
+   "o": [
+    "Although",
+    "Despite",
+    "Unless",
+    "However"
+   ],
+   "k": "앞 문장의 기대와 상반되는 내용을 이끄는 접속부사 자리이므로 However가 정답. Although와 Unless는 접속사라 뒤에 콤마만 두고 쓸 수 없고, Despite는 뒤에 명사가 와야 하는 전치사다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "although",
+  "pos": "conj",
+  "m": [
+   "비록 ~이지만",
+   "~에도 불구하고"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "*Although* the conference room is small, it has excellent video equipment.",
+  "exKo": "그 회의실은 작지만 훌륭한 화상 장비를 갖추고 있다.",
+  "col": [
+   {
+    "e": "although + S + V",
+    "k": "비록 ~이지만"
+   },
+   {
+    "e": "although expensive",
+    "k": "비싸긴 하지만"
+   }
+  ],
+  "der": [],
+  "para": [
+   "even though",
+   "though"
+  ],
+  "ant": "",
+  "tip": "although는 접속사라 뒤에 주어+동사가 온다. 같은 뜻이지만 뒤에 명사(구)가 오는 전치사 despite, in spite of와 구분하는 문제가 대표적이다.",
+  "q": {
+   "s": "------- the train arrived 20 minutes late, Ms. Kowalski still made it to the client meeting on time.",
+   "o": [
+    "Despite",
+    "However",
+    "Although",
+    "Because of"
+   ],
+   "k": "뒤에 주어+동사(the train arrived)가 이어지고 '늦었지만 제시간에 갔다'는 양보 관계이므로 접속사 Although가 정답. Despite와 Because of는 전치사, However는 접속부사라 절을 이끌 수 없다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "though",
+  "pos": "conj",
+  "m": [
+   "~이지만",
+   "그렇지만(문장 끝)"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   6
+  ],
+  "ex": "The workshop was useful, *though* it ran much longer than scheduled.",
+  "exKo": "그 워크숍은 예정보다 훨씬 길어지긴 했지만 유익했다.",
+  "col": [
+   {
+    "e": "though + S + V",
+    "k": "~이지만"
+   },
+   {
+    "e": "..., though.",
+    "k": "그렇긴 하지만(문장 끝)"
+   },
+   {
+    "e": "even though",
+    "k": "비록 ~일지라도"
+   }
+  ],
+  "der": [],
+  "para": [
+   "although",
+   "even though"
+  ],
+  "ant": "",
+  "tip": "though는 although처럼 양보 접속사로 쓰이고, 회화에서는 문장 끝에 붙어 '그렇지만'이라는 부사로도 쓰인다. 문장 끝 부사 용법은 although에는 없다.",
+  "q": {
+   "s": "The new printer is a bit expensive; it is very reliable, -------.",
+   "o": [
+    "although",
+    "despite",
+    "whereas",
+    "though"
+   ],
+   "k": "문장 끝에서 '그렇지만'이라는 뜻의 부사로 쓰일 수 있는 것은 though뿐이다. although와 whereas는 뒤에 절이 와야 하는 접속사이고, despite는 목적어가 필요한 전치사다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "consistently",
+  "pos": "adv",
+  "m": [
+   "일관되게",
+   "한결같이",
+   "꾸준히"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Ms. Ramos has *consistently* exceeded her monthly sales targets this year.",
+  "exKo": "Ramos 씨는 올해 월간 판매 목표를 꾸준히 초과 달성해 왔다.",
+  "col": [
+   {
+    "e": "consistently high",
+    "k": "한결같이 높은"
+   },
+   {
+    "e": "consistently exceed",
+    "k": "꾸준히 초과하다"
+   },
+   {
+    "e": "perform consistently",
+    "k": "꾸준한 성과를 내다"
+   }
+  ],
+  "der": [
+   {
+    "w": "consistent",
+    "pos": "adj",
+    "m": "일관된, 한결같은"
+   },
+   {
+    "w": "consistency",
+    "pos": "n",
+    "m": "일관성"
+   }
+  ],
+  "para": [
+   "steadily",
+   "reliably",
+   "regularly"
+  ],
+  "ant": "inconsistently",
+  "tip": "have와 과거분사 사이나 형용사 앞(consistently high)의 부사 자리를 묻는 품사 문제로 나온다. be consistent with(~와 일치하다)도 함께 알아 둔다.",
+  "q": {
+   "s": "Customer reviews of the Harbor View Hotel have been ------- positive since its renovation last year.",
+   "o": [
+    "consistent",
+    "consistency",
+    "consistently",
+    "consist"
+   ],
+   "k": "형용사 positive를 앞에서 수식하는 부사 자리이므로 consistently가 정답. consistent는 형용사, consistency는 명사, consist는 동사다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "adequately",
+  "pos": "adv",
+  "m": [
+   "적절히",
+   "충분히"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new hires were not *adequately* trained to use the inventory system.",
+  "exKo": "신입 직원들은 재고 관리 시스템 사용법을 충분히 교육받지 못했다.",
+  "col": [
+   {
+    "e": "adequately trained",
+    "k": "충분히 교육받은"
+   },
+   {
+    "e": "adequately prepared",
+    "k": "적절히 준비된"
+   },
+   {
+    "e": "adequately address",
+    "k": "적절히 다루다"
+   }
+  ],
+  "der": [
+   {
+    "w": "adequate",
+    "pos": "adj",
+    "m": "적절한, 충분한"
+   },
+   {
+    "w": "adequacy",
+    "pos": "n",
+    "m": "적절성, 충분함"
+   },
+   {
+    "w": "inadequate",
+    "pos": "adj",
+    "m": "불충분한, 부적절한"
+   }
+  ],
+  "para": [
+   "sufficiently",
+   "properly"
+  ],
+  "ant": "inadequately",
+  "tip": "be동사와 과거분사 사이(be adequately trained)의 부사 자리 문제로 출제된다. 형용사 adequate와 반의어 inadequate도 어휘 문제에 자주 나온다.",
+  "q": {
+   "s": "All fragile items must be ------- packed to prevent damage during shipping.",
+   "o": [
+    "adequate",
+    "adequately",
+    "adequacy",
+    "more adequate"
+   ],
+   "k": "be동사와 과거분사 packed 사이에서 동사를 수식하는 부사 자리이므로 adequately가 정답. adequate와 more adequate는 형용사, adequacy는 명사다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "unless",
+  "pos": "conj",
+  "m": [
+   "~하지 않는 한",
+   "~이 아니라면"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   6
+  ],
+  "ex": "The order will ship on Monday *unless* the customer requests a change.",
+  "exKo": "고객이 변경을 요청하지 않는 한 그 주문품은 월요일에 발송될 것이다.",
+  "col": [
+   {
+    "e": "unless otherwise noted",
+    "k": "별도 표기가 없는 한"
+   },
+   {
+    "e": "unless otherwise specified",
+    "k": "달리 명시되지 않는 한"
+   }
+  ],
+  "der": [],
+  "para": [
+   "if not",
+   "except if"
+  ],
+  "ant": "",
+  "tip": "unless는 'if ~ not'의 의미라 뒤에 다시 not을 쓰지 않는다. 조건절이므로 미래의 일이라도 현재 시제를 쓴다.",
+  "q": {
+   "s": "Employees may not enter the server room ------- they have received written permission from the IT department.",
+   "o": [
+    "if",
+    "because",
+    "unless",
+    "whether"
+   ],
+   "k": "'서면 허가를 받지 않는 한 출입할 수 없다'는 의미이므로 unless가 정답. if와 because를 넣으면 '허가를 받았으면/받았기 때문에 출입할 수 없다'는 모순된 뜻이 되고, whether는 '~인지'라는 명사절을 이끈다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "whereas",
+  "pos": "conj",
+  "m": [
+   "~인 반면에",
+   "~이지만"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The old model weighed three kilograms, *whereas* the new one weighs less than two.",
+  "exKo": "구형 모델은 무게가 3킬로그램이었던 반면, 신형은 2킬로그램도 되지 않는다.",
+  "col": [
+   {
+    "e": "A, whereas B",
+    "k": "A인 반면에 B"
+   }
+  ],
+  "der": [],
+  "para": [
+   "while"
+  ],
+  "ant": "",
+  "tip": "두 절을 대조하는 접속사로 while과 바꿔 쓸 수 있다. 뒤에 명사만 오면 전치사 unlike를, 마침표 뒤 단독 연결이면 접속부사 however를 쓴다.",
+  "q": {
+   "s": "Online sales increased by 15 percent last quarter, ------- in-store sales remained flat.",
+   "o": [
+    "despite",
+    "however",
+    "whereas",
+    "unlike"
+   ],
+   "k": "콤마 뒤에 절(in-store sales remained flat)을 이어 대조를 나타내는 접속사 자리이므로 whereas가 정답. despite와 unlike는 전치사이고, however는 접속부사라 콤마만으로 두 절을 이을 수 없다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "despite",
+  "pos": "prep",
+  "m": [
+   "~에도 불구하고"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The outdoor concert went ahead as planned *despite* the light rain.",
+  "exKo": "약간의 비에도 불구하고 야외 콘서트는 계획대로 진행되었다.",
+  "col": [
+   {
+    "e": "despite the fact that",
+    "k": "~라는 사실에도 불구하고"
+   },
+   {
+    "e": "despite efforts",
+    "k": "노력에도 불구하고"
+   }
+  ],
+  "der": [],
+  "para": [
+   "in spite of",
+   "notwithstanding"
+  ],
+  "ant": "",
+  "tip": "despite는 전치사라 뒤에 명사(구)나 동명사가 온다. despite of는 틀린 표현이며, 뒤에 절이 오면 although나 even though를 쓴다.",
+  "q": {
+   "s": "------- rising fuel costs, the airline has decided not to increase its ticket prices this year.",
+   "o": [
+    "Although",
+    "In spite",
+    "Even though",
+    "Despite"
+   ],
+   "k": "뒤에 명사구(rising fuel costs)가 오므로 전치사 Despite가 정답. Although와 Even though는 절을 이끄는 접속사이고, In spite는 of가 있어야 전치사가 된다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "whether",
+  "pos": "conj",
+  "m": [
+   "~인지 (아닌지)",
+   "~이든 아니든"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "Please let us know *whether* you will attend the awards dinner on Friday.",
+  "exKo": "금요일 시상식 만찬에 참석할지 여부를 알려 주기 바란다.",
+  "col": [
+   {
+    "e": "whether or not",
+    "k": "~인지 아닌지"
+   },
+   {
+    "e": "whether A or B",
+    "k": "A이든 B이든"
+   },
+   {
+    "e": "decide whether to",
+    "k": "~할지 결정하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "if"
+  ],
+  "ant": "",
+  "tip": "whether는 명사절(~인지)과 양보 부사절(~이든 아니든)을 이끌며 or (not)과 짝을 이룬다. whether to부정사는 가능하지만 if to부정사는 쓸 수 없다.",
+  "q": {
+   "s": "The committee has not yet decided ------- to hold next year's conference in Boston or in Denver.",
+   "o": [
+    "if",
+    "that",
+    "whether",
+    "what"
+   ],
+   "k": "뒤에 to부정사와 'A or B'가 이어지므로 whether가 정답. if는 to부정사와 함께 쓸 수 없고, that과 what은 뒤의 or 구조와 맞지 않는다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "once",
+  "pos": "conj",
+  "m": [
+   "일단 ~하면",
+   "~하자마자",
+   "한 번"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "ex": "*Once* the contract is signed, we will begin work on the new warehouse.",
+  "exKo": "계약서에 서명이 끝나면 우리는 새 창고 공사를 시작할 것이다.",
+  "col": [
+   {
+    "e": "once + S + V(현재 시제)",
+    "k": "일단 ~하면"
+   },
+   {
+    "e": "once completed",
+    "k": "완료되면"
+   },
+   {
+    "e": "once again",
+    "k": "다시 한번"
+   }
+  ],
+  "der": [],
+  "para": [
+   "as soon as",
+   "after"
+  ],
+  "ant": "",
+  "tip": "접속사 once는 '일단 ~하면'이라는 시간·조건절을 이끌며 미래의 일도 현재 시제로 쓴다. once completed처럼 주어와 be동사를 생략한 형태도 자주 나온다.",
+  "q": {
+   "s": "------- the renovation is complete, the café will offer extended evening hours.",
+   "o": [
+    "During",
+    "Although",
+    "Upon",
+    "Once"
+   ],
+   "k": "'보수 공사가 끝나면 영업시간을 연장한다'는 시간·조건 관계의 접속사 자리이므로 Once가 정답. During과 Upon은 전치사라 절을 이끌 수 없고, Although는 양보의 뜻이라 문맥에 맞지 않는다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "even though",
+  "pos": "phr",
+  "m": [
+   "비록 ~이지만",
+   "~인데도"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "*Even though* the flight was delayed, the team arrived in time for the presentation.",
+  "exKo": "항공편이 지연되었는데도 팀은 발표 시간에 맞춰 도착했다.",
+  "col": [
+   {
+    "e": "even though + S + V",
+    "k": "비록 ~이지만"
+   },
+   {
+    "e": "even though it is",
+    "k": "비록 ~이긴 하지만"
+   }
+  ],
+  "der": [],
+  "para": [
+   "although",
+   "though"
+  ],
+  "ant": "",
+  "tip": "even though는 사실인 일을 양보할 때 쓰는 접속사로, 가정의 의미인 even if와 구분한다. 뒤에 명사만 오면 despite나 in spite of를 쓴다.",
+  "q": {
+   "s": "Mr. Chen kept working on the proposal even ------- most of his colleagues had already gone home.",
+   "o": [
+    "though",
+    "despite",
+    "however",
+    "therefore"
+   ],
+   "k": "even과 결합해 절을 이끄는 양보 접속사가 되는 것은 though뿐이다. despite는 전치사, however와 therefore는 접속부사라 even 뒤에서 절을 이끌 수 없다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "as soon as",
+  "pos": "phr",
+  "m": [
+   "~하자마자",
+   "~하는 대로 곧"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "I'll send you the revised floor plan *as soon as* I get back to the office.",
+  "exKo": "사무실에 돌아가는 대로 수정된 평면도를 보내 주겠다.",
+  "col": [
+   {
+    "e": "as soon as possible",
+    "k": "가능한 한 빨리"
+   },
+   {
+    "e": "as soon as + S + V(현재 시제)",
+    "k": "~하자마자"
+   }
+  ],
+  "der": [],
+  "para": [
+   "once",
+   "immediately after"
+  ],
+  "ant": "",
+  "tip": "시간 접속사라 미래의 일도 현재 시제로 쓴다(as soon as I get back). as soon as possible은 듣기 파트에서 매우 자주 들리는 표현이다.",
+  "q": {
+   "s": "The maintenance crew will repair the elevator ------- the replacement parts are delivered.",
+   "o": [
+    "as well as",
+    "as soon as",
+    "in order to",
+    "so as to"
+   ],
+   "k": "뒤에 절(the replacement parts are delivered)이 오는 시간 접속사 자리이므로 as soon as가 정답. as well as는 명사·구를 연결하고, in order to와 so as to는 뒤에 동사원형이 와야 한다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "provided that",
+  "pos": "phr",
+  "m": [
+   "~라는 조건으로",
+   "만약 ~라면"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Employees may work from home on Fridays, *provided that* their projects are on schedule.",
+  "exKo": "직원들은 프로젝트가 일정대로 진행된다는 조건으로 금요일에 재택근무를 할 수 있다.",
+  "col": [
+   {
+    "e": "provided (that) + S + V",
+    "k": "~라는 조건이면"
+   },
+   {
+    "e": "providing (that)",
+    "k": "~라면"
+   }
+  ],
+  "der": [
+   {
+    "w": "provide",
+    "pos": "v",
+    "m": "제공하다"
+   },
+   {
+    "w": "provision",
+    "pos": "n",
+    "m": "조항, 공급"
+   }
+  ],
+  "para": [
+   "as long as",
+   "on condition that",
+   "if"
+  ],
+  "ant": "",
+  "tip": "provided (that)는 if와 같은 조건 접속사로 that을 생략할 수 있고 providing (that)도 같은 뜻이다. 동사 provide의 과거형으로 착각해 오답을 고르지 않도록 주의한다.",
+  "q": {
+   "s": "Customers can return any item for a full refund, ------- that it is unused and in its original packaging.",
+   "o": [
+    "provided",
+    "provide",
+    "provision",
+    "providers"
+   ],
+   "k": "that과 결합해 '~라는 조건으로'라는 조건 접속사를 만드는 provided가 정답. provide는 동사원형, provision과 providers는 명사라 that절을 이어 조건을 나타낼 수 없다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "so that",
+  "pos": "phr",
+  "m": [
+   "~하도록",
+   "~하기 위해"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "Please arrive early *so that* we can start the training session on time.",
+  "exKo": "교육을 제시간에 시작할 수 있도록 일찍 도착하기 바란다.",
+  "col": [
+   {
+    "e": "so that + S + can/will",
+    "k": "~할 수 있도록"
+   }
+  ],
+  "der": [],
+  "para": [
+   "in order that"
+  ],
+  "ant": "",
+  "tip": "so that 뒤에는 주어+can/will/could 등 조동사가 있는 절이 온다. 뒤에 동사원형이 오는 in order to, so as to와 구분하는 문제가 자주 나온다.",
+  "q": {
+   "s": "The sales report was sent out a day early ------- managers would have time to review it before the meeting.",
+   "o": [
+    "so that",
+    "in order to",
+    "as if",
+    "now that"
+   ],
+   "k": "뒤에 주어+would가 있는 절이 오고 '검토할 시간을 갖도록'이라는 목적을 나타내므로 so that이 정답. in order to는 뒤에 동사원형이 오고, as if(마치 ~처럼)와 now that(~이니까)은 문맥에 맞지 않는다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "in order to",
+  "pos": "phr",
+  "m": [
+   "~하기 위해"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "*In order to* reduce costs, the company switched to a cheaper packaging supplier.",
+  "exKo": "비용을 줄이기 위해 그 회사는 더 저렴한 포장재 공급업체로 바꾸었다.",
+  "col": [
+   {
+    "e": "in order to + 동사원형",
+    "k": "~하기 위해"
+   },
+   {
+    "e": "in order not to",
+    "k": "~하지 않기 위해"
+   }
+  ],
+  "der": [],
+  "para": [
+   "so as to",
+   "to"
+  ],
+  "ant": "",
+  "tip": "in order to 뒤에는 동사원형이 온다. 절이 오면 so that을 써야 하고, 부정형은 in order not to다.",
+  "q": {
+   "s": "In ------- to qualify for the discount, customers must place their orders before midnight on Friday.",
+   "o": [
+    "case",
+    "order",
+    "addition",
+    "spite"
+   ],
+   "k": "In과 to 사이에 들어가 '~하기 위해'라는 목적을 나타내는 order가 정답. in case는 to부정사와 쓰지 않고, in addition to와 in spite of는 뒤에 명사나 동명사가 온다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "as long as",
+  "pos": "phr",
+  "m": [
+   "~하는 한",
+   "~하기만 하면"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "You can use the meeting room *as long as* you book it a day in advance.",
+  "exKo": "하루 전에 예약하기만 하면 그 회의실을 사용할 수 있다.",
+  "col": [
+   {
+    "e": "as long as + S + V",
+    "k": "~하기만 하면"
+   }
+  ],
+  "der": [],
+  "para": [
+   "provided that",
+   "if"
+  ],
+  "ant": "",
+  "tip": "'~하는 한, ~하기만 하면'이라는 조건 접속사로 provided that과 바꿔 쓸 수 있다. 조건절이므로 미래의 일도 현재 시제로 쓴다.",
+  "q": {
+   "s": "Visitors may park in the north lot as ------- as they display a valid parking permit.",
+   "o": [
+    "well",
+    "long",
+    "much",
+    "far"
+   ],
+   "k": "'유효한 주차증을 부착하기만 하면'이라는 조건이 필요하므로 as long as를 만드는 long이 정답. as well as는 명사나 구를 연결하고, as much as와 as far as는 이 문맥의 조건 의미를 나타내지 못한다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "rather than",
+  "pos": "phr",
+  "m": [
+   "~보다는",
+   "~ 대신에"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Many employees now commute by bicycle *rather than* by car.",
+  "exKo": "현재 많은 직원이 자동차 대신 자전거로 출퇴근한다.",
+  "col": [
+   {
+    "e": "A rather than B",
+    "k": "B보다는 A"
+   },
+   {
+    "e": "rather than + 동사원형/-ing",
+    "k": "~하는 대신"
+   }
+  ],
+  "der": [],
+  "para": [
+   "instead of"
+  ],
+  "ant": "",
+  "tip": "rather than은 앞뒤에 같은 형태(명사-명사, 전치사구-전치사구)를 연결한다. would rather A than B(B하느니 차라리 A하겠다)도 함께 알아 둔다.",
+  "q": {
+   "s": "The manager suggested holding the meeting online ------- than renting a conference room.",
+   "o": [
+    "other",
+    "better",
+    "more",
+    "rather"
+   ],
+   "k": "'회의실을 빌리는 대신 온라인으로'라는 뜻의 rather than이 정답. other than은 '~ 이외에', better than과 more than은 비교 대상이 맞지 않아 문맥이 성립하지 않는다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "as a result",
+  "pos": "phr",
+  "m": [
+   "그 결과",
+   "결과적으로"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "ex": "The highway was closed for repairs. *As a result*, many deliveries arrived late.",
+  "exKo": "고속도로가 보수 공사로 폐쇄되었다. 그 결과 많은 배송이 늦게 도착했다.",
+  "col": [
+   {
+    "e": "as a result of + 명사",
+    "k": "~의 결과로"
+   }
+  ],
+  "der": [
+   {
+    "w": "result",
+    "pos": "v",
+    "m": "(결과로) 생기다, 초래하다"
+   }
+  ],
+  "para": [
+   "consequently",
+   "therefore"
+  ],
+  "ant": "",
+  "tip": "As a result는 뒤에 콤마와 절이 오는 접속부사구이고, as a result of는 뒤에 명사가 오는 전치사구다. 두 형태를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Profits rose sharply in the third quarter. -------, the company will pay all employees a year-end bonus.",
+   "o": [
+    "Due to",
+    "Because",
+    "As a result",
+    "Even though"
+   ],
+   "k": "앞 문장의 결과를 이끄는 접속부사 자리이므로 As a result가 정답. Due to는 뒤에 명사가 와야 하는 전치사구이고, Because와 Even though는 접속사라 콤마만 두고 단독으로 쓸 수 없다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "conveniently",
+  "pos": "adv",
+  "m": [
+   "편리하게"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The hotel is *conveniently* located just five minutes from the convention center.",
+  "exKo": "그 호텔은 컨벤션 센터에서 불과 5분 거리의 편리한 곳에 위치해 있다.",
+  "col": [
+   {
+    "e": "conveniently located",
+    "k": "편리한 곳에 위치한"
+   },
+   {
+    "e": "conveniently situated",
+    "k": "편리한 위치에 있는"
+   }
+  ],
+  "der": [
+   {
+    "w": "convenient",
+    "pos": "adj",
+    "m": "편리한"
+   },
+   {
+    "w": "convenience",
+    "pos": "n",
+    "m": "편리, 편의 (시설)"
+   }
+  ],
+  "para": [
+   "ideally",
+   "handily"
+  ],
+  "ant": "inconveniently",
+  "tip": "conveniently located(교통이 편리한 곳에 위치한)는 Part 4·7 광고에 단골로 나오는 표현이다. be동사와 과거분사 사이는 부사 자리다.",
+  "q": {
+   "s": "Our new branch is ------- situated near several bus and subway lines.",
+   "o": [
+    "convenient",
+    "convenience",
+    "conveniences",
+    "conveniently"
+   ],
+   "k": "be동사와 과거분사 situated 사이의 부사 자리이므로 conveniently가 정답. convenient는 형용사, convenience와 conveniences는 명사다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "sufficiently",
+  "pos": "adv",
+  "m": [
+   "충분히"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The paint must dry *sufficiently* before the furniture is moved back in.",
+  "exKo": "가구를 다시 들여놓기 전에 페인트가 충분히 말라야 한다.",
+  "col": [
+   {
+    "e": "sufficiently large",
+    "k": "충분히 큰"
+   },
+   {
+    "e": "sufficiently qualified",
+    "k": "충분한 자격을 갖춘"
+   }
+  ],
+  "der": [
+   {
+    "w": "sufficient",
+    "pos": "adj",
+    "m": "충분한"
+   },
+   {
+    "w": "insufficient",
+    "pos": "adj",
+    "m": "불충분한"
+   },
+   {
+    "w": "suffice",
+    "pos": "v",
+    "m": "충분하다"
+   }
+  ],
+  "para": [
+   "adequately",
+   "enough"
+  ],
+  "ant": "insufficiently",
+  "tip": "형용사 앞에서 정도를 나타내는 부사로 쓰인다(sufficiently large). 같은 뜻의 enough는 형용사 뒤에 온다(large enough)는 점에 주의한다.",
+  "q": {
+   "s": "The new storage room is not ------- large to hold all of the company's archived files.",
+   "o": [
+    "sufficiently",
+    "sufficient",
+    "sufficiency",
+    "suffice"
+   ],
+   "k": "형용사 large를 앞에서 수식하는 부사 자리이므로 sufficiently가 정답. sufficient는 형용사, sufficiency는 명사, suffice는 동사다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "reasonably",
+  "pos": "adv",
+  "m": [
+   "적당히",
+   "합리적으로",
+   "상당히"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The café near our office serves *reasonably* priced lunches every weekday.",
+  "exKo": "우리 사무실 근처 카페는 평일마다 적당한 가격의 점심을 제공한다.",
+  "col": [
+   {
+    "e": "reasonably priced",
+    "k": "가격이 적당한"
+   },
+   {
+    "e": "reasonably well",
+    "k": "상당히 잘"
+   }
+  ],
+  "der": [
+   {
+    "w": "reasonable",
+    "pos": "adj",
+    "m": "합리적인, (가격이) 적당한"
+   },
+   {
+    "w": "reason",
+    "pos": "n",
+    "m": "이유"
+   }
+  ],
+  "para": [
+   "affordably",
+   "moderately"
+  ],
+  "ant": "",
+  "tip": "reasonably priced(가격이 적당한)는 광고문에 매우 자주 나오는 연어로, 과거분사 priced 앞 부사 자리 문제로 출제된다.",
+  "q": {
+   "s": "The Pinewood Inn offers comfortable rooms that are ------- priced for business travelers.",
+   "o": [
+    "reasonably",
+    "reasonable",
+    "reason",
+    "reasoning"
+   ],
+   "k": "과거분사 priced를 수식하는 부사 자리이므로 reasonably가 정답. reasonable은 형용사, reason과 reasoning은 명사다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "inevitably",
+  "pos": "adv",
+  "m": [
+   "불가피하게",
+   "필연적으로"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Large construction projects *inevitably* face some delays caused by bad weather.",
+  "exKo": "대규모 건설 프로젝트는 악천후로 인한 지연을 어느 정도 겪을 수밖에 없다.",
+  "col": [
+   {
+    "e": "inevitably lead to",
+    "k": "필연적으로 ~로 이어지다"
+   },
+   {
+    "e": "almost inevitably",
+    "k": "거의 불가피하게"
+   }
+  ],
+  "der": [
+   {
+    "w": "inevitable",
+    "pos": "adj",
+    "m": "불가피한"
+   },
+   {
+    "w": "inevitability",
+    "pos": "n",
+    "m": "불가피함"
+   }
+  ],
+  "para": [
+   "unavoidably",
+   "necessarily"
+  ],
+  "ant": "",
+  "tip": "형용사 inevitable(불가피한)과 부사 inevitably의 품사 자리 문제로 출제된다. lead to, result in 같은 결과 동사와 자주 어울린다.",
+  "q": {
+   "s": "Rapid expansion into new markets ------- requires additional staff and resources.",
+   "o": [
+    "inevitable",
+    "inevitability",
+    "inevitably",
+    "more inevitable"
+   ],
+   "k": "주어와 동사 requires 사이에서 동사를 수식하는 부사 자리이므로 inevitably가 정답. inevitable과 more inevitable은 형용사, inevitability는 명사다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "extremely",
+  "pos": "adv",
+  "m": [
+   "극도로",
+   "매우"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Our clients were *extremely* pleased with the design of the new website.",
+  "exKo": "고객들은 새 웹사이트 디자인에 매우 만족했다.",
+  "col": [
+   {
+    "e": "extremely busy",
+    "k": "매우 바쁜"
+   },
+   {
+    "e": "extremely important",
+    "k": "극히 중요한"
+   }
+  ],
+  "der": [
+   {
+    "w": "extreme",
+    "pos": "adj",
+    "m": "극도의, 극단적인"
+   }
+  ],
+  "para": [
+   "exceptionally",
+   "very"
+  ],
+  "ant": "",
+  "tip": "형용사 앞에서 의미를 강조하는 부사로, 형용사 extreme과 구분하는 품사 문제로 출제된다. extremely는 비교급이 아닌 원급 형용사를 수식한다.",
+  "q": {
+   "s": "The training manual is ------- useful for employees who are new to the accounting software.",
+   "o": [
+    "extreme",
+    "extremes",
+    "extremely",
+    "extremity"
+   ],
+   "k": "형용사 useful을 앞에서 수식하는 부사 자리이므로 extremely가 정답. extreme은 형용사, extremes와 extremity는 명사다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "highly",
+  "pos": "adv",
+  "m": [
+   "매우",
+   "대단히",
+   "높이 (평가하여)"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Dr. Mendez is a *highly* respected expert in renewable energy.",
+  "exKo": "Mendez 박사는 재생 에너지 분야에서 매우 존경받는 전문가다.",
+  "col": [
+   {
+    "e": "highly recommended",
+    "k": "강력히 추천되는"
+   },
+   {
+    "e": "highly qualified",
+    "k": "자격이 매우 뛰어난"
+   },
+   {
+    "e": "highly competitive",
+    "k": "경쟁이 매우 치열한"
+   }
+  ],
+  "der": [
+   {
+    "w": "high",
+    "pos": "adj",
+    "m": "높은"
+   }
+  ],
+  "para": [
+   "very",
+   "greatly"
+  ],
+  "ant": "",
+  "tip": "highly는 '매우'(정도), high는 '높이'(물리적 높이)라는 뜻으로 구분된다. highly recommended, highly qualified처럼 과거분사·형용사 앞 연어로 자주 나온다.",
+  "q": {
+   "s": "Ms. Lindqvist comes ------- recommended by her former employer.",
+   "o": [
+    "high",
+    "height",
+    "heighten",
+    "highly"
+   ],
+   "k": "과거분사 recommended를 수식해 '강력히 추천받은'이라는 뜻을 만드는 부사 highly가 정답. high는 물리적 높이를 나타내므로 recommended와 어울리지 않고, height는 명사, heighten은 동사다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "markedly",
+  "pos": "adv",
+  "m": [
+   "현저하게",
+   "눈에 띄게"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Customer complaints have decreased *markedly* since the new return policy took effect.",
+  "exKo": "새 반품 정책이 시행된 이후 고객 불만이 눈에 띄게 줄었다.",
+  "col": [
+   {
+    "e": "differ markedly",
+    "k": "현저하게 다르다"
+   },
+   {
+    "e": "improve markedly",
+    "k": "눈에 띄게 개선되다"
+   },
+   {
+    "e": "markedly different",
+    "k": "현저히 다른"
+   }
+  ],
+  "der": [
+   {
+    "w": "marked",
+    "pos": "adj",
+    "m": "뚜렷한, 현저한"
+   },
+   {
+    "w": "mark",
+    "pos": "v",
+    "m": "표시하다"
+   }
+  ],
+  "para": [
+   "significantly",
+   "noticeably",
+   "considerably"
+  ],
+  "ant": "slightly",
+  "tip": "increase, decline, improve 같은 증감 동사 뒤에서 변화의 정도를 나타내는 부사 어휘 문제로 출제된다. 형용사 marked도 a marked increase처럼 쓰인다.",
+  "q": {
+   "s": "Since the company began offering flexible schedules, employee satisfaction has improved -------.",
+   "o": [
+    "closely",
+    "firmly",
+    "markedly",
+    "densely"
+   ],
+   "k": "증감 동사 improved 뒤에서 변화 정도를 나타내는 markedly(눈에 띄게)가 정답. closely(면밀히), firmly(단호히), densely(빽빽하게)는 improve의 정도를 나타내지 못한다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "roughly",
+  "pos": "adv",
+  "m": [
+   "대략",
+   "거의"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The renovation will take *roughly* three weeks to complete.",
+  "exKo": "보수 공사를 마치는 데 대략 3주가 걸릴 것이다.",
+  "col": [
+   {
+    "e": "roughly half",
+    "k": "대략 절반"
+   },
+   {
+    "e": "roughly + 숫자",
+    "k": "대략 ~"
+   },
+   {
+    "e": "roughly speaking",
+    "k": "대략적으로 말하면"
+   }
+  ],
+  "der": [
+   {
+    "w": "rough",
+    "pos": "adj",
+    "m": "대략적인, 거친"
+   }
+  ],
+  "para": [
+   "approximately",
+   "about",
+   "around"
+  ],
+  "ant": "exactly",
+  "tip": "숫자 앞에서 approximately, about과 같은 뜻으로 쓰여 Part 7 패러프레이징에 자주 나온다. a rough estimate(대략적인 견적)처럼 형용사 rough도 함께 알아 둔다.",
+  "q": {
+   "s": "The new factory will create ------- 300 jobs in the local area.",
+   "o": [
+    "roughly",
+    "highly",
+    "mostly",
+    "widely"
+   ],
+   "k": "숫자 300 앞에서 '대략'을 뜻하는 roughly가 정답. highly(매우), mostly(주로), widely(널리)는 수량 표현을 수식하지 않는다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "generally",
+  "pos": "adv",
+  "m": [
+   "일반적으로",
+   "대체로"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Packages sent by express mail *generally* arrive within two business days.",
+  "exKo": "속달 우편으로 보낸 소포는 대체로 영업일 기준 이틀 안에 도착한다.",
+  "col": [
+   {
+    "e": "generally speaking",
+    "k": "일반적으로 말해서"
+   },
+   {
+    "e": "generally accepted",
+    "k": "일반적으로 인정되는"
+   }
+  ],
+  "der": [
+   {
+    "w": "general",
+    "pos": "adj",
+    "m": "일반적인"
+   },
+   {
+    "w": "generalize",
+    "pos": "v",
+    "m": "일반화하다"
+   }
+  ],
+  "para": [
+   "usually",
+   "typically",
+   "as a rule"
+  ],
+  "ant": "",
+  "tip": "현재 시제와 함께 일반적인 사실이나 관행을 나타낸다. be동사와 과거분사 사이, 주어와 동사 사이의 부사 자리를 묻는 품사 문제로 출제된다.",
+  "q": {
+   "s": "Refund requests are ------- processed within five business days of receipt.",
+   "o": [
+    "general",
+    "generally",
+    "generalize",
+    "generality"
+   ],
+   "k": "be동사와 과거분사 processed 사이의 부사 자리이므로 generally가 정답. general은 형용사, generalize는 동사, generality는 명사다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "typically",
+  "pos": "adv",
+  "m": [
+   "보통",
+   "일반적으로",
+   "전형적으로"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Our technicians *typically* respond to service calls within an hour.",
+  "exKo": "우리 기술자들은 보통 한 시간 안에 서비스 요청에 응대한다.",
+  "col": [
+   {
+    "e": "typically take",
+    "k": "보통 (시간이) 걸리다"
+   },
+   {
+    "e": "typically used",
+    "k": "일반적으로 사용되는"
+   }
+  ],
+  "der": [
+   {
+    "w": "typical",
+    "pos": "adj",
+    "m": "전형적인, 일반적인"
+   },
+   {
+    "w": "type",
+    "pos": "n",
+    "m": "유형"
+   }
+  ],
+  "para": [
+   "usually",
+   "generally"
+  ],
+  "ant": "",
+  "tip": "현재 시제와 어울려 '보통 ~한다'는 일반적 사실을 나타내므로 recently, previously 같은 시점 부사와 구분해야 한다. 형용사 typical(be typical of ~의 전형이다)도 함께 알아 둔다.",
+  "q": {
+   "s": "Shipments from our overseas warehouse ------- take seven to ten days to arrive.",
+   "o": [
+    "formerly",
+    "typically",
+    "recently",
+    "previously"
+   ],
+   "k": "현재 시제 take와 어울려 '보통 7~10일 걸린다'는 일반적 사실을 나타내는 typically가 정답. formerly와 previously는 과거 시제와, recently는 주로 과거나 현재완료 시제와 쓰인다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "mainly",
+  "pos": "adv",
+  "m": [
+   "주로",
+   "대부분"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Our customers are *mainly* small businesses in the restaurant industry.",
+  "exKo": "우리 고객은 주로 요식업계의 소규모 업체들이다.",
+  "col": [
+   {
+    "e": "mainly because",
+    "k": "주로 ~ 때문에"
+   },
+   {
+    "e": "consist mainly of",
+    "k": "주로 ~로 구성되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "main",
+    "pos": "adj",
+    "m": "주된, 주요한"
+   }
+  ],
+  "para": [
+   "primarily",
+   "chiefly",
+   "mostly"
+  ],
+  "ant": "",
+  "tip": "primarily, chiefly, mostly와 같은 뜻으로 Part 7 패러프레이징에 자주 나온다. 형용사 main은 명사 앞에서만 쓰인다(the main reason).",
+  "q": {
+   "s": "The delay in production was caused ------- by a shortage of raw materials.",
+   "o": [
+    "highly",
+    "mainly",
+    "closely",
+    "newly"
+   ],
+   "k": "'주로 원자재 부족 때문에' 지연되었다는 뜻이므로 mainly가 정답. highly(매우), closely(면밀히), newly(새로)는 by 이하의 원인을 한정하는 의미가 없다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "tentatively",
+  "pos": "adv",
+  "m": [
+   "잠정적으로",
+   "임시로"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The product launch is *tentatively* planned for the second week of March.",
+  "exKo": "제품 출시는 3월 둘째 주로 잠정 계획되어 있다.",
+  "col": [
+   {
+    "e": "tentatively scheduled",
+    "k": "잠정적으로 예정된"
+   },
+   {
+    "e": "tentatively agree",
+    "k": "잠정 합의하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "tentative",
+    "pos": "adj",
+    "m": "잠정적인"
+   }
+  ],
+  "para": [
+   "provisionally",
+   "for now"
+  ],
+  "ant": "",
+  "tip": "tentatively scheduled(잠정적으로 예정된)는 일정이 바뀔 수 있음을 나타내며, Part 7에서 '아직 확정되지 않았다'는 정답의 근거가 된다.",
+  "q": {
+   "s": "The grand opening of the Lakeside branch is ------- set for June 5, pending final inspections.",
+   "o": [
+    "densely",
+    "scarcely",
+    "narrowly",
+    "tentatively"
+   ],
+   "k": "'최종 점검을 앞두고' 개업일이 아직 확정되지 않았으므로 tentatively(잠정적으로)가 정답. densely(빽빽하게), scarcely(거의 ~않다), narrowly(가까스로)는 문맥에 맞지 않는다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "entirely",
+  "pos": "adv",
+  "m": [
+   "전적으로",
+   "완전히"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The charity conference was organized *entirely* by student volunteers.",
+  "exKo": "그 자선 회의는 전적으로 학생 자원봉사자들이 준비했다.",
+  "col": [
+   {
+    "e": "entirely new",
+    "k": "완전히 새로운"
+   },
+   {
+    "e": "not entirely",
+    "k": "완전히 ~한 것은 아닌"
+   },
+   {
+    "e": "focus entirely on",
+    "k": "전적으로 ~에 집중하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "entire",
+    "pos": "adj",
+    "m": "전체의"
+   },
+   {
+    "w": "entirety",
+    "pos": "n",
+    "m": "전체"
+   }
+  ],
+  "para": [
+   "completely",
+   "totally",
+   "wholly"
+  ],
+  "ant": "partially",
+  "tip": "not entirely는 '완전히 ~한 것은 아니다'라는 부분 부정이다. 형용사 entire(전체의)는 명사 앞에서 쓰여 품사 자리 문제로 출제된다.",
+  "q": {
+   "s": "The company's new headquarters is powered ------- by solar energy.",
+   "o": [
+    "entirely",
+    "entire",
+    "entirety",
+    "entireness"
+   ],
+   "k": "수동태 동사 is powered를 수식하는 부사 자리이므로 entirely가 정답. entire는 형용사, entirety와 entireness는 명사다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "slightly",
+  "pos": "adv",
+  "m": [
+   "약간",
+   "조금"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Admission prices at the museum will rise *slightly* next month.",
+  "exKo": "다음 달 그 박물관의 입장료가 약간 오를 것이다.",
+  "col": [
+   {
+    "e": "slightly higher",
+    "k": "약간 더 높은"
+   },
+   {
+    "e": "increase slightly",
+    "k": "약간 증가하다"
+   },
+   {
+    "e": "differ slightly",
+    "k": "약간 다르다"
+   }
+  ],
+  "der": [
+   {
+    "w": "slight",
+    "pos": "adj",
+    "m": "약간의"
+   }
+  ],
+  "para": [
+   "a little",
+   "marginally"
+  ],
+  "ant": "considerably",
+  "tip": "비교급 앞(slightly higher)이나 증감 동사 뒤에서 '약간'을 나타낸다. 형용사 slight는 a slight increase처럼 명사 앞에 쓴다.",
+  "q": {
+   "s": "The revised budget is ------- higher than the one approved last year.",
+   "o": [
+    "slight",
+    "slighter",
+    "slightest",
+    "slightly"
+   ],
+   "k": "비교급 higher를 앞에서 수식하는 부사 자리이므로 slightly가 정답. slight, slighter, slightest는 형용사 형태다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "thus",
+  "pos": "adv",
+  "m": [
+   "따라서",
+   "그리하여",
+   "이와 같이"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "The new machines work faster and *thus* reduce our production time.",
+  "exKo": "새 기계는 더 빨리 작동하며, 따라서 우리의 생산 시간을 줄여 준다.",
+  "col": [
+   {
+    "e": "and thus",
+    "k": "그리하여"
+   },
+   {
+    "e": "thus far",
+    "k": "지금까지"
+   }
+  ],
+  "der": [],
+  "para": [
+   "therefore",
+   "consequently",
+   "hence"
+  ],
+  "ant": "",
+  "tip": "앞 내용에 따른 결과를 나타내는 접속부사로, 접속사가 아니므로 and thus나 세미콜론과 함께 쓴다. thus far는 '지금까지'라는 뜻이다.",
+  "q": {
+   "s": "The online booking system is easy to use and ------- saves our staff a great deal of time.",
+   "o": [
+    "thus",
+    "despite",
+    "although",
+    "whereas"
+   ],
+   "k": "and 뒤에서 동사 saves를 수식하며 '따라서'라는 결과를 나타내는 부사 thus가 정답. despite는 전치사, although와 whereas는 접속사라 and 바로 뒤에서 동사를 수식할 수 없다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "hence",
+  "pos": "adv",
+  "m": [
+   "그러므로",
+   "따라서",
+   "(지금부터) ~ 후에"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "The supplier has raised its prices; *hence*, we are looking for alternatives.",
+  "exKo": "공급업체가 가격을 인상했으므로 우리는 대안을 찾고 있다.",
+  "col": [
+   {
+    "e": "hence the + 명사",
+    "k": "그래서 ~이 생긴 것이다"
+   },
+   {
+    "e": "two weeks hence",
+    "k": "지금부터 2주 후"
+   }
+  ],
+  "der": [],
+  "para": [
+   "therefore",
+   "thus"
+  ],
+  "ant": "",
+  "tip": "hence는 '그러므로'라는 접속부사로, hence the delay처럼 동사 없이 명사만 붙여 결과를 나타내기도 한다. 접속사가 아니므로 콤마만으로 두 절을 잇지 않는다.",
+  "q": {
+   "s": "Heavy snow blocked the main road to the factory, ------- the delay in today's shipments.",
+   "o": [
+    "hence",
+    "because",
+    "so that",
+    "since"
+   ],
+   "k": "콤마 뒤에 명사구만 와서 '그래서 오늘 배송이 지연되었다'는 결과를 나타내므로 hence가 정답. because와 so that은 절이 와야 하고, since를 넣으면 '지연 이후로 도로가 막혔다'는 어색한 뜻이 된다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "nonetheless",
+  "pos": "adv",
+  "m": [
+   "그럼에도 불구하고"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "The project was expensive; *nonetheless*, the board considered it a worthwhile investment.",
+  "exKo": "그 프로젝트는 비용이 많이 들었지만, 그럼에도 이사회는 그것을 가치 있는 투자로 여겼다.",
+  "col": [
+   {
+    "e": "but nonetheless",
+    "k": "그래도 여전히"
+   },
+   {
+    "e": "Nonetheless, S + V",
+    "k": "그럼에도 불구하고 ~하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "nevertheless",
+   "even so",
+   "however"
+  ],
+  "ant": "",
+  "tip": "nevertheless와 같은 뜻의 접속부사로, despite(전치사)나 although(접속사)와 달리 마침표나 세미콜론 뒤에서 콤마와 함께 쓴다.",
+  "q": {
+   "s": "The weather forecast called for heavy rain. -------, more than 3,000 people attended the outdoor festival.",
+   "o": [
+    "Despite",
+    "Although",
+    "Therefore",
+    "Nonetheless"
+   ],
+   "k": "비 예보에도 '그럼에도 불구하고' 많은 사람이 참석했으므로 접속부사 Nonetheless가 정답. Despite는 전치사, Although는 접속사라 이 자리에 쓸 수 없고, Therefore는 인과 관계가 맞지 않는다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "besides",
+  "pos": "prep",
+  "m": [
+   "~ 외에도",
+   "게다가"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "*Besides* free parking, the hotel offers a shuttle service to the airport.",
+  "exKo": "그 호텔은 무료 주차 외에도 공항 셔틀 서비스를 제공한다.",
+  "col": [
+   {
+    "e": "besides + 명사/동명사",
+    "k": "~ 외에도"
+   },
+   {
+    "e": "Besides, S + V",
+    "k": "게다가 ~하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "in addition to",
+   "apart from"
+  ],
+  "ant": "",
+  "tip": "besides는 전치사(~ 외에도)와 접속부사(게다가)로 모두 쓰인다. 철자가 비슷한 beside(~ 옆에)와 혼동을 노리는 문제가 나온다.",
+  "q": {
+   "s": "------- managing the front desk, Ms. Tanaka is responsible for training new receptionists.",
+   "o": [
+    "Besides",
+    "Beside",
+    "Moreover",
+    "Furthermore"
+   ],
+   "k": "뒤에 동명사구를 목적어로 받아 '~ 외에도'를 뜻하는 전치사 Besides가 정답. Beside는 '~ 옆에'라는 위치 전치사이고, Moreover와 Furthermore는 접속부사라 목적어를 취할 수 없다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "substantially",
+  "pos": "adv",
+  "m": [
+   "상당히",
+   "크게"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The merger will *substantially* increase the company's share of the market.",
+  "exKo": "그 합병은 회사의 시장 점유율을 크게 높일 것이다.",
+  "col": [
+   {
+    "e": "substantially higher",
+    "k": "상당히 더 높은"
+   },
+   {
+    "e": "increase substantially",
+    "k": "크게 증가하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "substantial",
+    "pos": "adj",
+    "m": "상당한"
+   },
+   {
+    "w": "substance",
+    "pos": "n",
+    "m": "물질, 실체"
+   }
+  ],
+  "para": [
+   "considerably",
+   "significantly"
+  ],
+  "ant": "slightly",
+  "tip": "증감 동사나 비교급 앞에서 변화의 폭이 큼을 나타내며 considerably, significantly와 바꿔 쓸 수 있다. 형용사 substantial과 구분하는 품사 문제로 출제된다.",
+  "q": {
+   "s": "Energy costs at the plant have fallen ------- since the new insulation was installed.",
+   "o": [
+    "substantial",
+    "substantially",
+    "substance",
+    "substantiate"
+   ],
+   "k": "자동사 have fallen 뒤에서 동사를 수식하는 부사 자리이므로 substantially가 정답. substantial은 형용사, substance는 명사, substantiate는 동사다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "thoroughly",
+  "pos": "adv",
+  "m": [
+   "철저히",
+   "꼼꼼히",
+   "완전히"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The inspector *thoroughly* examined the wiring before approving the building.",
+  "exKo": "검사관은 건물을 승인하기 전에 배선을 철저히 점검했다.",
+  "col": [
+   {
+    "e": "thoroughly inspect",
+    "k": "철저히 점검하다"
+   },
+   {
+    "e": "read thoroughly",
+    "k": "꼼꼼히 읽다"
+   },
+   {
+    "e": "thoroughly enjoy",
+    "k": "마음껏 즐기다"
+   }
+  ],
+  "der": [
+   {
+    "w": "thorough",
+    "pos": "adj",
+    "m": "철저한, 빈틈없는"
+   },
+   {
+    "w": "thoroughness",
+    "pos": "n",
+    "m": "철저함"
+   }
+  ],
+  "para": [
+   "carefully",
+   "completely",
+   "in detail"
+  ],
+  "ant": "superficially",
+  "tip": "thorough(형용사)와 thoroughly(부사)의 품사 자리 문제가 대표적이다. through(~을 통해), though(~이지만)와의 철자 혼동에도 주의한다.",
+  "q": {
+   "s": "Please read the terms of the lease ------- before signing it.",
+   "o": [
+    "thorough",
+    "thoroughly",
+    "through",
+    "thoroughness"
+   ],
+   "k": "완전한 문장(read the terms of the lease) 뒤에서 동사 read를 수식하는 부사 자리이므로 thoroughly가 정답. thorough는 형용사, thoroughness는 명사이며, through는 뒤에 목적어가 필요하다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "beforehand",
+  "pos": "adv",
+  "m": [
+   "사전에",
+   "미리"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "If you plan to bring guests, please let the organizers know *beforehand*.",
+  "exKo": "손님을 데려올 계획이라면 미리 주최 측에 알려 주기 바란다.",
+  "col": [
+   {
+    "e": "notify beforehand",
+    "k": "미리 알리다"
+   },
+   {
+    "e": "the day beforehand",
+    "k": "그 전날"
+   }
+  ],
+  "der": [],
+  "para": [
+   "in advance",
+   "ahead of time"
+  ],
+  "ant": "afterward",
+  "tip": "beforehand는 부사라 뒤에 목적어를 취하지 않고 주로 문장 끝에 온다. 뒤에 명사가 필요하면 before, prior to, ahead of를 쓴다.",
+  "q": {
+   "s": "Participants who require a vegetarian meal should inform the event coordinator -------.",
+   "o": [
+    "previous",
+    "beforehand",
+    "prior to",
+    "ahead of"
+   ],
+   "k": "문장 끝에서 목적어 없이 '미리'라는 뜻을 나타내는 부사 beforehand가 정답. previous는 형용사, prior to와 ahead of는 뒤에 명사가 와야 하는 전치사구다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "thereby",
+  "pos": "adv",
+  "m": [
+   "그렇게 함으로써",
+   "그로 인해"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The firm automated its billing process, *thereby* cutting administrative costs by 20 percent.",
+  "exKo": "그 회사는 청구 업무를 자동화하여 관리 비용을 20퍼센트 절감했다.",
+  "col": [
+   {
+    "e": "thereby + -ing",
+    "k": "그렇게 함으로써 ~하다"
+   },
+   {
+    "e": "thereby reducing",
+    "k": "그로써 줄이다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "thus",
+   "in this way"
+  ],
+  "ant": "",
+  "tip": "thereby는 콤마 뒤에서 분사(-ing)와 함께 앞 행동의 결과를 나타낸다. 접속사가 아니므로 뒤에 주어+동사의 절을 바로 이끌지 않는다.",
+  "q": {
+   "s": "The city widened Main Street, ------- easing traffic congestion in the downtown area.",
+   "o": [
+    "whereby",
+    "whereas",
+    "thereby",
+    "so that"
+   ],
+   "k": "콤마 뒤 분사구문 easing 앞에서 '그렇게 함으로써'라는 결과를 나타내는 부사 thereby가 정답. whereby, whereas, so that은 모두 뒤에 주어+동사의 절이 와야 한다.",
+   "a": 2
+  }
+ }
+]

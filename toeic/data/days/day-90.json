@@ -1,0 +1,1989 @@
+[
+ {
+  "w": "be likely to",
+  "pos": "phr",
+  "m": [
+   "~할 것 같다, ~할 가능성이 있다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ticket prices *are likely to* rise once the festival lineup is announced.",
+  "exKo": "축제 출연진이 발표되면 티켓 가격이 오를 가능성이 높다.",
+  "col": [
+   {
+    "e": "be highly likely to",
+    "k": "~할 가능성이 매우 높다"
+   },
+   {
+    "e": "be more likely to",
+    "k": "~할 가능성이 더 높다"
+   },
+   {
+    "e": "be unlikely to",
+    "k": "~할 것 같지 않다"
+   }
+  ],
+  "der": [
+   {
+    "w": "likelihood",
+    "pos": "n",
+    "m": "가능성"
+   },
+   {
+    "w": "unlikely",
+    "pos": "adj",
+    "m": "~할 것 같지 않은"
+   }
+  ],
+  "para": [
+   "be expected to",
+   "will probably",
+   "tend to"
+  ],
+  "ant": "be unlikely to",
+  "tip": "likely는 -ly로 끝나지만 형용사라 be동사 뒤에 오며 to부정사가 이어진다. 'be highly/more likely to'처럼 부사의 수식을 받는 형태로 출제된다.",
+  "q": {
+   "s": "The new branch is ------- to open in early spring, pending final approval from the city.",
+   "o": [
+    "likelihood",
+    "like",
+    "likely",
+    "likeness"
+   ],
+   "a": 2,
+   "k": "be동사 뒤 보어 자리에서 to부정사와 함께 '~할 것 같다'는 뜻을 이루는 형용사 likely가 정답. likelihood와 likeness는 명사이고, like는 to부정사와 이런 구조를 이루지 않는다."
+  }
+ },
+ {
+  "w": "be based on",
+  "pos": "phr",
+  "m": [
+   "~에 근거하다, ~을 바탕으로 하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Annual bonuses *are based on* each employee's performance review.",
+  "exKo": "연간 상여금은 각 직원의 성과 평가를 바탕으로 한다.",
+  "col": [
+   {
+    "e": "be based on",
+    "k": "~에 근거하다"
+   },
+   {
+    "e": "be based in",
+    "k": "~에 본사를 두다"
+   },
+   {
+    "e": "based solely on",
+    "k": "오로지 ~에 근거하여"
+   }
+  ],
+  "der": [
+   {
+    "w": "basis",
+    "pos": "n",
+    "m": "기초, 근거"
+   },
+   {
+    "w": "base",
+    "pos": "n",
+    "m": "기반, 본거지"
+   }
+  ],
+  "para": [
+   "depend on",
+   "be determined by",
+   "rely on"
+  ],
+  "ant": "",
+  "tip": "'be based on + 근거'와 'be based in + 장소(~에 본사를 두다)'의 전치사를 구분하는 문제가 빈출이다.",
+  "q": {
+   "s": "The prices quoted in this estimate are based ------- current exchange rates.",
+   "o": [
+    "in",
+    "at",
+    "with",
+    "on"
+   ],
+   "a": 3,
+   "k": "근거를 나타내는 'be based on(~에 근거하다)'이므로 on이 정답. 'be based in'은 '~에 본사를 두다'라는 장소 표현이고, at과 with는 based와 짝을 이루지 않는다."
+  }
+ },
+ {
+  "w": "apply for",
+  "pos": "phr",
+  "m": [
+   "~에 지원하다, ~을 신청하다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Mr. Silva *applied for* the position of assistant store manager last week.",
+  "exKo": "Silva 씨는 지난주 부점장 자리에 지원했다.",
+  "col": [
+   {
+    "e": "apply for a job",
+    "k": "일자리에 지원하다"
+   },
+   {
+    "e": "apply for a loan",
+    "k": "대출을 신청하다"
+   },
+   {
+    "e": "apply to",
+    "k": "~에 적용되다, (기관에) 지원하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "application",
+    "pos": "n",
+    "m": "지원(서), 신청"
+   },
+   {
+    "w": "applicant",
+    "pos": "n",
+    "m": "지원자"
+   }
+  ],
+  "para": [
+   "submit an application for",
+   "request"
+  ],
+  "ant": "",
+  "tip": "'apply for + 직책·대상(job, loan, permit)'과 'apply to + 기관·적용 대상'의 전치사를 구분하는 문제가 출제된다.",
+  "q": {
+   "s": "Residents must ------- for a parking permit before the new regulations take effect.",
+   "o": [
+    "request",
+    "obtain",
+    "apply",
+    "submit"
+   ],
+   "a": 2,
+   "k": "전치사 for와 함께 '~을 신청하다'라는 뜻을 이루는 자동사 apply가 정답. request, obtain, submit은 목적어를 바로 취하는 타동사라 for와 쓰지 않는다."
+  }
+ },
+ {
+  "w": "hand in",
+  "pos": "phr",
+  "m": [
+   "제출하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Please *hand in* your expense reports to the accounting office by Friday.",
+  "exKo": "경비 보고서는 금요일까지 회계 부서에 제출하기 바란다.",
+  "col": [
+   {
+    "e": "hand in a report",
+    "k": "보고서를 제출하다"
+   },
+   {
+    "e": "hand in one's resignation",
+    "k": "사직서를 내다"
+   },
+   {
+    "e": "hand it in",
+    "k": "그것을 제출하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "submit",
+   "turn in"
+  ],
+  "ant": "",
+  "tip": "submit, turn in과 같은 뜻으로 Part 7에서 서로 패러프레이즈된다. 목적어가 대명사일 때는 'hand it in'처럼 동사와 부사 사이에 넣는다.",
+  "q": {
+   "s": "All participants must hand ------- their completed surveys before leaving the seminar room.",
+   "o": [
+    "at",
+    "for",
+    "in",
+    "by"
+   ],
+   "a": 2,
+   "k": "'hand in(제출하다)'을 이루는 부사 in이 정답. at, for, by는 hand와 결합해 '제출하다'라는 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "catch up on",
+  "pos": "phr",
+  "m": [
+   "(밀린 일을) 처리하다, 따라잡다",
+   "(소식을) 듣다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "I'm staying late tonight to *catch up on* paperwork I missed last week.",
+  "exKo": "지난주에 밀린 서류 작업을 처리하려고 오늘 밤 늦게까지 남아 있을 것이다.",
+  "col": [
+   {
+    "e": "catch up on work",
+    "k": "밀린 일을 처리하다"
+   },
+   {
+    "e": "catch up on emails",
+    "k": "밀린 이메일을 확인하다"
+   },
+   {
+    "e": "catch up with",
+    "k": "~을 따라잡다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "deal with a backlog of",
+   "get through"
+  ],
+  "ant": "",
+  "tip": "'catch up on + 밀린 일(work, sleep, emails)'과 'catch up with + 사람·경쟁사(따라잡다)'의 전치사가 다르다는 점이 출제 포인트다.",
+  "q": {
+   "s": "After returning from vacation, Ms. Baker spent the morning catching up ------- her emails.",
+   "o": [
+    "on",
+    "to",
+    "at",
+    "for"
+   ],
+   "a": 0,
+   "k": "밀린 일을 처리한다는 뜻의 'catch up on'이므로 on이 정답. 'catch up to'는 앞서가는 대상을 따라잡는다는 뜻이고, at과 for는 catch up과 짝을 이루지 않는다."
+  }
+ },
+ {
+  "w": "owing to",
+  "pos": "prep",
+  "m": [
+   "~ 때문에, ~으로 인해"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The outdoor market was canceled *owing to* the severe weather warning.",
+  "exKo": "기상 특보로 인해 야외 시장이 취소되었다.",
+  "col": [
+   {
+    "e": "owing to the fact that",
+    "k": "~라는 사실 때문에"
+   },
+   {
+    "e": "owing to bad weather",
+    "k": "악천후로 인해"
+   }
+  ],
+  "der": [
+   {
+    "w": "owe",
+    "pos": "v",
+    "m": "빚지다, ~의 덕분이다"
+   }
+  ],
+  "para": [
+   "due to",
+   "because of",
+   "on account of"
+  ],
+  "ant": "",
+  "tip": "due to, because of와 같은 전치사구라 뒤에 명사가 오며, 절이 올 때는 'owing to the fact that'으로 써야 한다.",
+  "q": {
+   "s": "------- a shortage of materials, production of the new model has been delayed.",
+   "o": [
+    "Because",
+    "Although",
+    "Owing to",
+    "Since"
+   ],
+   "a": 2,
+   "k": "뒤에 명사구(a shortage of materials)만 있으므로 전치사구 Owing to가 정답. Because, Although, Since는 접속사로 쓰여 뒤에 절이 와야 한다."
+  }
+ },
+ {
+  "w": "by means of",
+  "pos": "prep",
+  "m": [
+   "~에 의하여, ~을 써서"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Data is transferred between the two offices *by means of* a secure network.",
+  "exKo": "두 사무소 간의 데이터는 보안 네트워크를 통해 전송된다.",
+  "col": [
+   {
+    "e": "by means of a survey",
+    "k": "설문 조사를 통해"
+   },
+   {
+    "e": "by means of technology",
+    "k": "기술을 이용하여"
+   }
+  ],
+  "der": [
+   {
+    "w": "means",
+    "pos": "n",
+    "m": "수단, 방법"
+   }
+  ],
+  "para": [
+   "through",
+   "using",
+   "by way of"
+  ],
+  "ant": "",
+  "tip": "수단·방법을 나타내는 전치사구로 means는 단수·복수 형태가 같다. 'by no means(결코 ~이 아닌)'와 의미가 전혀 달라 구분해야 한다.",
+  "q": {
+   "s": "Customer satisfaction was measured by ------- of an online survey sent to all buyers.",
+   "o": [
+    "mean",
+    "meaning",
+    "means",
+    "meant"
+   ],
+   "a": 2,
+   "k": "'by means of(~을 통해)'라는 고정 표현이므로 means가 정답. mean, meaning, meant는 by ~ of와 결합해 수단을 나타내지 못한다."
+  }
+ },
+ {
+  "w": "in conjunction with",
+  "pos": "prep",
+  "m": [
+   "~와 함께, ~와 연계하여"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The museum is hosting the exhibition *in conjunction with* the National Art Society.",
+  "exKo": "그 박물관은 국립 미술 협회와 공동으로 전시회를 개최하고 있다.",
+  "col": [
+   {
+    "e": "in conjunction with",
+    "k": "~와 함께, ~와 공동으로"
+   },
+   {
+    "e": "used in conjunction with",
+    "k": "~와 함께 사용되는"
+   }
+  ],
+  "der": [
+   {
+    "w": "conjunction",
+    "pos": "n",
+    "m": "결합, 접속사"
+   }
+  ],
+  "para": [
+   "together with",
+   "in cooperation with",
+   "along with"
+  ],
+  "ant": "",
+  "tip": "전치사 in과 with를 묻는 문제가 나오며, together with, in partnership with로 패러프레이즈된다.",
+  "q": {
+   "s": "The training program was developed in conjunction ------- several local universities.",
+   "o": [
+    "to",
+    "for",
+    "by",
+    "with"
+   ],
+   "a": 3,
+   "k": "'in conjunction with(~와 연계하여)'라는 고정 표현이므로 with가 정답. to, for, by는 이 표현에 쓰지 않는다."
+  }
+ },
+ {
+  "w": "hold off",
+  "pos": "phr",
+  "m": [
+   "미루다, 보류하다"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "We decided to *hold off* on hiring until the new budget is approved.",
+  "exKo": "우리는 새 예산이 승인될 때까지 채용을 미루기로 했다.",
+  "col": [
+   {
+    "e": "hold off on",
+    "k": "~을 보류하다"
+   },
+   {
+    "e": "hold off -ing",
+    "k": "~하는 것을 미루다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "postpone",
+   "delay",
+   "put off"
+  ],
+  "ant": "",
+  "tip": "'hold off on + 명사' 또는 'hold off + 동명사'로 써서 '(결정·행동을) 잠시 미루다'라는 뜻이며, put off, postpone으로 패러프레이즈된다.",
+  "q": {
+   "s": "The committee will hold ------- making a final decision until all the bids have been reviewed.",
+   "o": [
+    "up",
+    "off",
+    "out",
+    "back"
+   ],
+   "a": 1,
+   "k": "동명사 making과 함께 '~하는 것을 미루다'라는 뜻을 이루는 'hold off'의 off가 정답. hold up(지연시키다), hold out(버티다), hold back(억제하다)은 동명사를 바로 취해 '미루다'라는 뜻이 되지 않는다."
+  }
+ },
+ {
+  "w": "a variety of",
+  "pos": "phr",
+  "m": [
+   "다양한"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The hotel restaurant serves *a variety of* local and international dishes.",
+  "exKo": "그 호텔 식당은 다양한 현지 요리와 세계 요리를 제공한다.",
+  "col": [
+   {
+    "e": "a wide variety of",
+    "k": "매우 다양한"
+   },
+   {
+    "e": "a variety of options",
+    "k": "다양한 선택지"
+   }
+  ],
+  "der": [
+   {
+    "w": "various",
+    "pos": "adj",
+    "m": "다양한"
+   },
+   {
+    "w": "vary",
+    "pos": "v",
+    "m": "다르다, 다양하다"
+   }
+  ],
+  "para": [
+   "a range of",
+   "various",
+   "an assortment of"
+  ],
+  "ant": "",
+  "tip": "'a variety of + 복수 명사'로 쓰이며 various와 같은 뜻이다. 'a wide variety of'처럼 형용사 wide가 들어간 형태도 빈출이다.",
+  "q": {
+   "s": "The store offers a wide ------- of kitchen appliances at competitive prices.",
+   "o": [
+    "various",
+    "vary",
+    "variety",
+    "variously"
+   ],
+   "a": 2,
+   "k": "관사 a와 형용사 wide 뒤 명사 자리이고 'a wide variety of(매우 다양한)'를 이루므로 variety가 정답. various는 형용사, vary는 동사, variously는 부사다."
+  }
+ },
+ {
+  "w": "a number of",
+  "pos": "phr",
+  "m": [
+   "많은, 다수의",
+   "몇몇의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*A number of* employees have asked about the new parking policy.",
+  "exKo": "많은 직원이 새 주차 정책에 대해 문의했다.",
+  "col": [
+   {
+    "e": "a large number of",
+    "k": "아주 많은"
+   },
+   {
+    "e": "a number of reasons",
+    "k": "여러 가지 이유"
+   }
+  ],
+  "der": [
+   {
+    "w": "numerous",
+    "pos": "adj",
+    "m": "많은"
+   }
+  ],
+  "para": [
+   "several",
+   "many",
+   "numerous"
+  ],
+  "ant": "",
+  "tip": "'a number of + 복수 명사 + 복수 동사(많은 ~)'와 'the number of + 복수 명사 + 단수 동사(~의 수)'를 구분하는 수 일치 문제가 빈출이다.",
+  "q": {
+   "s": "A large ------- of volunteers have signed up for this year's charity run.",
+   "o": [
+    "amount",
+    "deal",
+    "level",
+    "number"
+   ],
+   "a": 3,
+   "k": "복수 가산명사 volunteers와 복수 동사 have가 이어지므로 'a large number of'의 number가 정답. amount와 deal은 불가산명사와 쓰고, level은 이 표현을 이루지 않는다."
+  }
+ },
+ {
+  "w": "as for",
+  "pos": "prep",
+  "m": [
+   "~에 관해서는, ~으로 말하자면"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "*As for* the catering, we have chosen a local company with excellent reviews.",
+  "exKo": "출장 연회 음식에 관해서는 평이 좋은 지역 업체를 선정했다.",
+  "col": [
+   {
+    "e": "as for the rest",
+    "k": "나머지에 관해서는"
+   },
+   {
+    "e": "as for me",
+    "k": "나로서는"
+   }
+  ],
+  "der": [],
+  "para": [
+   "regarding",
+   "concerning",
+   "with regard to"
+  ],
+  "ant": "",
+  "tip": "화제를 바꿔 새로운 대상을 꺼낼 때 문장 맨 앞에 쓰는 전치사구로 regarding, with regard to와 바꿔 쓸 수 있다.",
+  "q": {
+   "s": "The venue has been booked. As ------- the guest speaker, we are still waiting for confirmation.",
+   "o": [
+    "with",
+    "by",
+    "for",
+    "of"
+   ],
+   "a": 2,
+   "k": "화제를 전환해 '~에 관해서는'이라는 뜻을 이루는 'As for'의 for가 정답. with, by, of는 as와 결합해 이런 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "as opposed to",
+  "pos": "prep",
+  "m": [
+   "~와는 대조적으로, ~이 아니라"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Most customers now shop online, *as opposed to* visiting physical stores.",
+  "exKo": "현재 대부분의 고객은 오프라인 매장을 방문하는 대신 온라인으로 쇼핑한다.",
+  "col": [
+   {
+    "e": "as opposed to -ing",
+    "k": "~하는 것과는 대조적으로"
+   }
+  ],
+  "der": [
+   {
+    "w": "oppose",
+    "pos": "v",
+    "m": "반대하다"
+   },
+   {
+    "w": "opposite",
+    "pos": "adj",
+    "m": "반대의"
+   }
+  ],
+  "para": [
+   "rather than",
+   "instead of",
+   "in contrast to"
+  ],
+  "ant": "",
+  "tip": "'as opposed to'의 to는 전치사라 뒤에 명사나 동명사가 오며, rather than, instead of로 패러프레이즈된다.",
+  "q": {
+   "s": "The new chairs are made of recycled plastic, as ------- to the wooden ones used previously.",
+   "o": [
+    "opposite",
+    "opposing",
+    "opposition",
+    "opposed"
+   ],
+   "a": 3,
+   "k": "'as opposed to(~와는 대조적으로)'라는 고정 표현이므로 과거분사 opposed가 정답. opposite, opposing, opposition은 as ~ to와 결합해 이 표현을 이루지 않는다."
+  }
+ },
+ {
+  "w": "by the time",
+  "pos": "conj",
+  "m": [
+   "~할 때쯤에는, ~할 무렵"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*By the time* the client arrived, the presentation slides had been printed.",
+  "exKo": "고객이 도착했을 때는 이미 발표 슬라이드가 인쇄되어 있었다.",
+  "col": [
+   {
+    "e": "by the time S V",
+    "k": "~할 때쯤에는"
+   }
+  ],
+  "der": [],
+  "para": [
+   "before",
+   "when"
+  ],
+  "ant": "",
+  "tip": "접속사로 뒤에 절이 오며, 주절에는 과거완료(had p.p.)나 미래완료(will have p.p.)가 자주 함께 쓰인다. 시간 부사절이라 미래의 일도 현재 시제로 쓴다.",
+  "q": {
+   "s": "By the ------- the renovations are finished, the café will have been closed for three months.",
+   "o": [
+    "while",
+    "time",
+    "period",
+    "during"
+   ],
+   "a": 1,
+   "k": "절을 이끄는 접속사 'By the time(~할 때쯤에는)'을 이루는 time이 정답. while과 during은 the 뒤에 올 수 없고, period는 by the와 결합해 접속사 역할을 하지 못한다."
+  }
+ },
+ {
+  "w": "in favor of",
+  "pos": "prep",
+  "m": [
+   "~에 찬성하여",
+   "~을 선호하여, ~을 택하여"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Most board members voted *in favor of* the proposed merger.",
+  "exKo": "대부분의 이사가 합병안에 찬성표를 던졌다.",
+  "col": [
+   {
+    "e": "vote in favor of",
+    "k": "~에 찬성 투표하다"
+   },
+   {
+    "e": "be in favor of",
+    "k": "~에 찬성하다"
+   },
+   {
+    "e": "reject A in favor of B",
+    "k": "B를 택하고 A를 거부하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "favorable",
+    "pos": "adj",
+    "m": "호의적인, 유리한"
+   },
+   {
+    "w": "favor",
+    "pos": "v",
+    "m": "선호하다, 찬성하다"
+   }
+  ],
+  "para": [
+   "in support of",
+   "supporting"
+  ],
+  "ant": "against",
+  "tip": "'vote in favor of(~에 찬성하다)'가 빈출이며, 'abandon A in favor of B(B를 택하고 A를 버리다)'처럼 선택의 뜻으로도 쓰인다.",
+  "q": {
+   "s": "The city council voted in ------- of building a new public library downtown.",
+   "o": [
+    "favorable",
+    "favorite",
+    "favor",
+    "favored"
+   ],
+   "a": 2,
+   "k": "'vote in favor of(~에 찬성 투표하다)'를 이루는 명사 favor가 정답. favorable, favorite, favored는 형용사·분사라 in과 of 사이의 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "in line with",
+  "pos": "prep",
+  "m": [
+   "~에 맞춰, ~와 일치하여"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company's profits rose *in line with* analysts' expectations.",
+  "exKo": "그 회사의 이익은 분석가들의 예상에 부합하게 증가했다.",
+  "col": [
+   {
+    "e": "in line with expectations",
+    "k": "예상에 부합하는"
+   },
+   {
+    "e": "in line with the policy",
+    "k": "방침에 따라"
+   },
+   {
+    "e": "bring A into line with B",
+    "k": "A를 B에 맞추다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "consistent with",
+   "in accordance with",
+   "matching"
+  ],
+  "ant": "",
+  "tip": "'in line with expectations/regulations'처럼 기준과의 일치를 나타내며 in accordance with, consistent with로 패러프레이즈된다.",
+  "q": {
+   "s": "Salaries will be adjusted ------- line with the national rate of inflation.",
+   "o": [
+    "in",
+    "on",
+    "at",
+    "by"
+   ],
+   "a": 0,
+   "k": "'in line with(~에 맞춰)'라는 고정 표현이므로 in이 정답. on, at, by는 line with와 결합해 '~에 맞춰'라는 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "in the long run",
+  "pos": "phr",
+  "m": [
+   "결국에는, 장기적으로는"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Energy-efficient windows cost more at first but save money *in the long run*.",
+  "exKo": "에너지 효율이 높은 창문은 처음에는 더 비싸지만 장기적으로는 돈을 절약해 준다.",
+  "col": [
+   {
+    "e": "in the long run",
+    "k": "장기적으로"
+   },
+   {
+    "e": "in the short run",
+    "k": "단기적으로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "eventually",
+   "over time",
+   "in the long term"
+  ],
+  "ant": "in the short run",
+  "tip": "'처음에는 ~하지만 장기적으로는'이라는 대비 문맥에 자주 나오며, in the long term, over time으로 패러프레이즈된다.",
+  "q": {
+   "s": "Investing in staff training may seem costly, but it will pay off in the long -------.",
+   "o": [
+    "way",
+    "run",
+    "time",
+    "walk"
+   ],
+   "a": 1,
+   "k": "'in the long run(장기적으로)'이라는 고정 표현이므로 run이 정답. in the long way, in the long time, in the long walk는 성립하지 않는다."
+  }
+ },
+ {
+  "w": "in the process of",
+  "pos": "phr",
+  "m": [
+   "~하는 중인, ~하는 과정에 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "We are *in the process of* updating our customer database.",
+  "exKo": "우리는 고객 데이터베이스를 업데이트하는 중이다.",
+  "col": [
+   {
+    "e": "be in the process of -ing",
+    "k": "~하는 중이다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "currently",
+   "in the middle of"
+  ],
+  "ant": "",
+  "tip": "'be in the process of + 동명사'로 진행 중인 일을 나타내며, 전치사 of 뒤에 동사원형이 올 수 없다는 점이 출제된다.",
+  "q": {
+   "s": "The firm is currently in the ------- of relocating its headquarters to Denver.",
+   "o": [
+    "progress",
+    "procedure",
+    "proceeds",
+    "process"
+   ],
+   "a": 3,
+   "k": "'in the process of -ing(~하는 중인)'라는 고정 표현이므로 process가 정답. progress는 'in progress(진행 중인)'로 쓰고, procedure(절차)와 proceeds(수익금)는 이 표현에 쓰지 않는다."
+  }
+ },
+ {
+  "w": "in view of",
+  "pos": "prep",
+  "m": [
+   "~을 고려하여, ~ 때문에"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*In view of* the rising demand, the factory will add a night shift.",
+  "exKo": "수요 증가를 고려해 공장은 야간 근무조를 추가할 것이다.",
+  "col": [
+   {
+    "e": "in view of the fact that",
+    "k": "~라는 사실을 고려하여"
+   },
+   {
+    "e": "in view of recent events",
+    "k": "최근의 일들을 고려하여"
+   }
+  ],
+  "der": [],
+  "para": [
+   "considering",
+   "given",
+   "in light of"
+  ],
+  "ant": "",
+  "tip": "in light of, considering과 같은 뜻의 전치사구로 뒤에 명사가 오며, 'in view of the fact that + 절'로도 쓴다. 'with a view to -ing(~할 목적으로)'와 혼동하지 않아야 한다.",
+  "q": {
+   "s": "In ------- of the recent complaints, the restaurant has decided to revise its menu.",
+   "o": [
+    "view",
+    "sight",
+    "vision",
+    "scene"
+   ],
+   "a": 0,
+   "k": "'In view of(~을 고려하여)'라는 고정 표현이므로 view가 정답. sight, vision, scene은 in ~ of와 결합해 '~을 고려하여'라는 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "irrespective of",
+  "pos": "prep",
+  "m": [
+   "~와 관계없이"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "All employees receive the same training, *irrespective of* their previous experience.",
+  "exKo": "모든 직원은 이전 경력과 관계없이 동일한 교육을 받는다.",
+  "col": [
+   {
+    "e": "irrespective of age",
+    "k": "나이와 관계없이"
+   },
+   {
+    "e": "irrespective of whether",
+    "k": "~인지 여부와 관계없이"
+   }
+  ],
+  "der": [],
+  "para": [
+   "regardless of",
+   "without regard to"
+  ],
+  "ant": "",
+  "tip": "regardless of와 같은 뜻의 전치사구로 뒤에 명사나 whether절이 온다. regardless와 달리 of 없이 단독 부사로 쓰지 않는다.",
+  "q": {
+   "s": "Delivery is free for all orders, ------- of their size or destination.",
+   "o": [
+    "irrelevant",
+    "irrespective",
+    "respective",
+    "respectively"
+   ],
+   "a": 1,
+   "k": "of와 함께 '~와 관계없이'라는 뜻을 이루는 irrespective가 정답. irrelevant는 'irrelevant to(~와 무관한)'로 쓰고, respective(각각의)와 respectively(각각)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "on the whole",
+  "pos": "phr",
+  "m": [
+   "대체로, 전반적으로"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "*On the whole*, customers were satisfied with the redesigned website.",
+  "exKo": "대체로 고객들은 새로 디자인된 웹사이트에 만족했다.",
+  "col": [
+   {
+    "e": "on the whole",
+    "k": "대체로"
+   },
+   {
+    "e": "as a whole",
+    "k": "전체로서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "overall",
+   "generally",
+   "by and large"
+  ],
+  "ant": "",
+  "tip": "overall, in general과 같은 뜻의 부사구로 문장 앞에 쓰이며, 'as a whole(전체로서)'과 의미·전치사가 다르다.",
+  "q": {
+   "s": "On the -------, the feedback from workshop participants was very positive.",
+   "o": [
+    "all",
+    "whole",
+    "total",
+    "entire"
+   ],
+   "a": 1,
+   "k": "'On the whole(대체로)'이라는 고정 표현이므로 whole이 정답. all, total, entire는 on the와 결합해 '대체로'라는 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "out of date",
+  "pos": "phr",
+  "m": [
+   "구식의, 시대에 뒤떨어진",
+   "기한이 지난"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The contact list on the website is *out of date* and needs to be revised.",
+  "exKo": "웹사이트의 연락처 목록은 오래되어 수정해야 한다.",
+  "col": [
+   {
+    "e": "out-of-date information",
+    "k": "오래된 정보"
+   },
+   {
+    "e": "become out of date",
+    "k": "낡게 되다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "outdated",
+   "obsolete",
+   "old"
+  ],
+  "ant": "up to date",
+  "tip": "명사 앞에서는 'out-of-date information'처럼 하이픈을 넣고, 반대말 up to date(최신의)와 함께 출제된다.",
+  "q": {
+   "s": "Several of the figures in the brochure are out of ------- and should be updated before printing.",
+   "o": [
+    "date",
+    "time",
+    "stock",
+    "reach"
+   ],
+   "a": 0,
+   "k": "수치를 업데이트해야 한다고 했으므로 'out of date(오래된)'의 date가 정답. out of time(시간이 없는), out of stock(품절된), out of reach(손이 닿지 않는)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "with respect to",
+  "pos": "prep",
+  "m": [
+   "~에 관하여"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*With respect to* your recent inquiry, the item you requested is now back in stock.",
+  "exKo": "최근 문의와 관련하여, 요청한 상품이 다시 입고되었다.",
+  "col": [
+   {
+    "e": "with respect to",
+    "k": "~에 관하여"
+   },
+   {
+    "e": "in respect of",
+    "k": "~에 관해서는"
+   }
+  ],
+  "der": [
+   {
+    "w": "respective",
+    "pos": "adj",
+    "m": "각각의"
+   },
+   {
+    "w": "respectively",
+    "pos": "adv",
+    "m": "각각"
+   }
+  ],
+  "para": [
+   "regarding",
+   "concerning",
+   "with regard to"
+  ],
+  "ant": "",
+  "tip": "with regard to, regarding과 같은 뜻의 전치사구이며, 형태가 비슷한 respective(각각의), respectively(각각)와 혼동시키는 문제가 나온다.",
+  "q": {
+   "s": "Please direct all questions with ------- to the new benefits plan to Mr. Hughes.",
+   "o": [
+    "respective",
+    "respectively",
+    "respect",
+    "respectful"
+   ],
+   "a": 2,
+   "k": "'with respect to(~에 관하여)'를 이루는 명사 respect가 정답. respective와 respectful은 형용사, respectively는 부사라 with와 to 사이에 올 수 없다."
+  }
+ },
+ {
+  "w": "in an effort to",
+  "pos": "phr",
+  "m": [
+   "~하기 위한 노력으로, ~하려고"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*In an effort to* reduce waste, the cafeteria no longer provides plastic straws.",
+  "exKo": "구내식당은 쓰레기를 줄이기 위해 더 이상 플라스틱 빨대를 제공하지 않는다.",
+  "col": [
+   {
+    "e": "in an effort to do",
+    "k": "~하기 위해"
+   }
+  ],
+  "der": [],
+  "para": [
+   "in order to",
+   "so as to",
+   "in an attempt to"
+  ],
+  "ant": "",
+  "tip": "in order to처럼 목적을 나타내며 뒤에 동사원형이 온다. effort 앞의 관사 an과 전치사 in이 빠지거나 형태가 비슷한 effect로 바꾼 오답이 출제된다.",
+  "q": {
+   "s": "In an ------- to attract younger customers, the bank launched a new mobile app.",
+   "o": [
+    "effect",
+    "affair",
+    "efficiency",
+    "effort"
+   ],
+   "a": 3,
+   "k": "'In an effort to(~하기 위해)'라는 고정 표현이므로 effort가 정답. effect(효과), affair(일, 사건), efficiency(효율)는 이 표현을 이루지 않는다."
+  }
+ },
+ {
+  "w": "be involved in",
+  "pos": "phr",
+  "m": [
+   "~에 관여하다, ~에 참여하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Gupta *is involved in* planning next year's sales conference.",
+  "exKo": "Gupta 씨는 내년 영업 회의 기획에 참여하고 있다.",
+  "col": [
+   {
+    "e": "be actively involved in",
+    "k": "~에 적극적으로 참여하다"
+   },
+   {
+    "e": "be directly involved in",
+    "k": "~에 직접 관여하다"
+   },
+   {
+    "e": "get involved in",
+    "k": "~에 참여하게 되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "involve",
+    "pos": "v",
+    "m": "수반하다, 관련시키다"
+   },
+   {
+    "w": "involvement",
+    "pos": "n",
+    "m": "관여, 참여"
+   }
+  ],
+  "para": [
+   "participate in",
+   "take part in",
+   "be engaged in"
+  ],
+  "ant": "",
+  "tip": "'be involved in + 명사/동명사'의 전치사 in이 출제 포인트이며, actively, directly 같은 부사가 be동사와 involved 사이에 들어간다.",
+  "q": {
+   "s": "All staff members who were involved ------- the product launch are invited to the celebration dinner.",
+   "o": [
+    "at",
+    "in",
+    "for",
+    "to"
+   ],
+   "a": 1,
+   "k": "'be involved in(~에 참여하다)'이므로 in이 정답. at, for, to는 involved와 짝을 이루어 '참여하다'라는 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "be known for",
+  "pos": "phr",
+  "m": [
+   "~로 유명하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The restaurant *is known for* its fresh seafood and friendly service.",
+  "exKo": "그 식당은 신선한 해산물과 친절한 서비스로 유명하다.",
+  "col": [
+   {
+    "e": "be best known for",
+    "k": "~로 가장 잘 알려져 있다"
+   },
+   {
+    "e": "be known as",
+    "k": "~로 알려지다"
+   },
+   {
+    "e": "be known to",
+    "k": "~에게 알려지다"
+   }
+  ],
+  "der": [
+   {
+    "w": "well-known",
+    "pos": "adj",
+    "m": "잘 알려진"
+   }
+  ],
+  "para": [
+   "be famous for",
+   "be renowned for",
+   "be noted for"
+  ],
+  "ant": "",
+  "tip": "'be known for + 이유(~로 유명하다)', 'be known as + 자격·명칭(~로 알려지다)', 'be known to + 대상(~에게 알려지다)'의 전치사를 구분하는 문제가 빈출이다.",
+  "q": {
+   "s": "The hotel is best known ------- its rooftop garden and panoramic views of the harbor.",
+   "o": [
+    "as",
+    "for",
+    "to",
+    "by"
+   ],
+   "a": 1,
+   "k": "옥상 정원과 전망이 유명한 '이유'이므로 'be known for'의 for가 정답. 'known as'는 명칭·자격, 'known to'는 알고 있는 대상과 쓰며, by는 이 의미로 쓰지 않는다."
+  }
+ },
+ {
+  "w": "be willing to",
+  "pos": "phr",
+  "m": [
+   "기꺼이 ~하다, ~할 의향이 있다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The landlord *is willing to* reduce the rent if we sign a three-year lease.",
+  "exKo": "건물주는 우리가 3년 임대 계약을 맺으면 임대료를 낮춰 줄 의향이 있다.",
+  "col": [
+   {
+    "e": "be more than willing to",
+    "k": "얼마든지 ~하다"
+   },
+   {
+    "e": "be willing to do",
+    "k": "기꺼이 ~하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "willingness",
+    "pos": "n",
+    "m": "의향, 기꺼이 하는 마음"
+   },
+   {
+    "w": "willingly",
+    "pos": "adv",
+    "m": "기꺼이"
+   },
+   {
+    "w": "unwilling",
+    "pos": "adj",
+    "m": "꺼리는"
+   }
+  ],
+  "para": [
+   "be ready to",
+   "be prepared to",
+   "be open to"
+  ],
+  "ant": "be reluctant to",
+  "tip": "'be willing to + 동사원형'으로 쓰이며 명사 willingness('willingness to compromise')도 품사 문제로 나온다. 반대말은 be reluctant to, be unwilling to다.",
+  "q": {
+   "s": "Applicants must be ------- to travel overseas several times a year.",
+   "o": [
+    "willingly",
+    "willingness",
+    "will",
+    "willing"
+   ],
+   "a": 3,
+   "k": "be동사 뒤 보어 자리에서 to부정사와 함께 '기꺼이 ~하다'라는 뜻을 이루는 형용사 willing이 정답. willingly는 부사, willingness와 will은 명사다."
+  }
+ },
+ {
+  "w": "be capable of",
+  "pos": "phr",
+  "m": [
+   "~할 수 있다, ~할 능력이 있다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new printer *is capable of* producing 60 pages per minute.",
+  "exKo": "새 프린터는 분당 60페이지를 출력할 수 있다.",
+  "col": [
+   {
+    "e": "be capable of -ing",
+    "k": "~할 수 있다"
+   },
+   {
+    "e": "be fully capable of",
+    "k": "충분히 ~할 수 있다"
+   }
+  ],
+  "der": [
+   {
+    "w": "capability",
+    "pos": "n",
+    "m": "능력"
+   },
+   {
+    "w": "capacity",
+    "pos": "n",
+    "m": "수용력, 용량"
+   },
+   {
+    "w": "incapable",
+    "pos": "adj",
+    "m": "~할 수 없는"
+   }
+  ],
+  "para": [
+   "be able to",
+   "can"
+  ],
+  "ant": "be incapable of",
+  "tip": "'be capable of + 동명사'로 쓰여 'be able to + 동사원형'과 형태를 혼동시키는 문제가 나온다.",
+  "q": {
+   "s": "The upgraded server is ------- of handling twice as much traffic as the old one.",
+   "o": [
+    "capable",
+    "able",
+    "possible",
+    "available"
+   ],
+   "a": 0,
+   "k": "전치사 of와 동명사(handling)를 취해 '~할 수 있다'라는 뜻을 이루는 capable이 정답. able은 'be able to do'로 쓰고, possible과 available은 사람·사물의 능력을 나타내는 of -ing 구조를 취하지 않는다."
+  }
+ },
+ {
+  "w": "pay attention to",
+  "pos": "phr",
+  "m": [
+   "~에 주의를 기울이다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Please *pay* close *attention to* the safety instructions before operating the machine.",
+  "exKo": "기계를 작동하기 전에 안전 수칙에 각별히 주의를 기울이기 바란다.",
+  "col": [
+   {
+    "e": "pay close attention to",
+    "k": "~에 세심한 주의를 기울이다"
+   },
+   {
+    "e": "pay particular attention to",
+    "k": "~에 특히 주의하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "attentive",
+    "pos": "adj",
+    "m": "주의 깊은, 세심한"
+   },
+   {
+    "w": "attentively",
+    "pos": "adv",
+    "m": "주의 깊게"
+   }
+  ],
+  "para": [
+   "focus on",
+   "take note of",
+   "heed"
+  ],
+  "ant": "ignore",
+  "tip": "'pay attention to + 명사/동명사'의 to는 전치사이며, close, special, particular 같은 형용사가 attention 앞에 들어간다.",
+  "q": {
+   "s": "Drivers should pay particular ------- to road signs in construction zones.",
+   "o": [
+    "attention",
+    "attentive",
+    "attend",
+    "attentively"
+   ],
+   "a": 0,
+   "k": "형용사 particular의 수식을 받는 명사 자리이고 'pay attention to'를 이루므로 attention이 정답. attentive는 형용사, attend는 동사, attentively는 부사다."
+  }
+ },
+ {
+  "w": "be contingent upon",
+  "pos": "phr",
+  "m": [
+   "~에 달려 있다, ~을 조건으로 하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The job offer *is contingent upon* the successful completion of a background check.",
+  "exKo": "채용 제안은 신원 조회를 무사히 통과하는 것을 조건으로 한다.",
+  "col": [
+   {
+    "e": "be contingent on/upon",
+    "k": "~에 달려 있다"
+   },
+   {
+    "e": "contingent on approval",
+    "k": "승인을 조건으로 하는"
+   }
+  ],
+  "der": [
+   {
+    "w": "contingency",
+    "pos": "n",
+    "m": "만일의 사태, 비상"
+   }
+  ],
+  "para": [
+   "depend on",
+   "be conditional on",
+   "be subject to"
+  ],
+  "ant": "",
+  "tip": "depend on, be subject to와 같은 뜻으로 upon 대신 on도 쓰며, 명사 contingency('contingency plan 비상 계획')도 출제된다.",
+  "q": {
+   "s": "Final approval of the project is ------- upon securing additional funding.",
+   "o": [
+    "contingent",
+    "continuous",
+    "constant",
+    "consistent"
+   ],
+   "a": 0,
+   "k": "upon과 함께 '~에 달려 있다'라는 뜻을 이루는 contingent가 정답. continuous(계속되는), constant(끊임없는), consistent(일관된)는 upon과 결합해 조건을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "show up",
+  "pos": "phr",
+  "m": [
+   "나타나다, 오다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Only half of the registered participants *showed up* for the morning session.",
+  "exKo": "등록한 참가자 중 절반만 오전 세션에 참석했다.",
+  "col": [
+   {
+    "e": "show up for",
+    "k": "~에 나타나다"
+   },
+   {
+    "e": "show up late",
+    "k": "늦게 나타나다"
+   },
+   {
+    "e": "show up on time",
+    "k": "제시간에 오다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "arrive",
+   "turn up",
+   "appear"
+  ],
+  "ant": "",
+  "tip": "arrive, turn up과 같은 뜻의 구동사로 듣기 파트에 자주 나오며 'show up for + 행사' 형태로 쓰인다. Part 7에서 attend, arrive로 패러프레이즈된다.",
+  "q": {
+   "s": "Several guests showed ------- late because of heavy traffic on the highway.",
+   "o": [
+    "up",
+    "off",
+    "out",
+    "over"
+   ],
+   "a": 0,
+   "k": "'show up(나타나다)'을 이루는 up이 정답. show off(자랑하다)는 의미가 맞지 않고, show out과 show over는 '도착하다'라는 뜻이 없다."
+  }
+ },
+ {
+  "w": "take on",
+  "pos": "phr",
+  "m": [
+   "(일·책임을) 맡다",
+   "고용하다",
+   "(특성을) 띠다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Mr. Hall agreed to *take on* additional responsibilities while his manager is away.",
+  "exKo": "Hall 씨는 관리자가 자리를 비운 동안 추가 업무를 맡기로 했다.",
+  "col": [
+   {
+    "e": "take on responsibility",
+    "k": "책임을 맡다"
+   },
+   {
+    "e": "take on a project",
+    "k": "프로젝트를 맡다"
+   },
+   {
+    "e": "take on staff",
+    "k": "직원을 채용하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "assume",
+   "undertake",
+   "accept"
+  ],
+  "ant": "",
+  "tip": "'take on responsibilities/a project'처럼 '맡다'의 뜻으로 assume, undertake로 패러프레이즈되며, '(직원을) 고용하다'의 뜻도 출제된다.",
+  "q": {
+   "s": "The firm is too busy to take ------- any new clients until next month.",
+   "o": [
+    "off",
+    "out",
+    "apart",
+    "on"
+   ],
+   "a": 3,
+   "k": "새 고객을 '맡다, 받다'라는 뜻의 'take on'이므로 on이 정답. take off(이륙하다, 벗다), take out(꺼내다), take apart(분해하다)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "turn out",
+  "pos": "phr",
+  "m": [
+   "~으로 드러나다, ~인 것으로 판명되다",
+   "(행사에) 모이다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The new marketing strategy *turned out* to be more effective than expected.",
+  "exKo": "새 마케팅 전략은 예상보다 더 효과적인 것으로 드러났다.",
+  "col": [
+   {
+    "e": "turn out to be",
+    "k": "~인 것으로 드러나다"
+   },
+   {
+    "e": "turn out well",
+    "k": "결과가 좋다"
+   },
+   {
+    "e": "it turns out that",
+    "k": "알고 보니 ~이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "turnout",
+    "pos": "n",
+    "m": "참가자 수, 투표율"
+   }
+  ],
+  "para": [
+   "prove",
+   "end up"
+  ],
+  "ant": "",
+  "tip": "'turn out to be + 형용사/명사(~으로 판명되다)'가 빈출이며, 명사 turnout(참석자 수)은 'a large turnout'처럼 Part 7에 나온다.",
+  "q": {
+   "s": "The conference room that we reserved turned ------- to be too small for the workshop.",
+   "o": [
+    "up",
+    "into",
+    "over",
+    "out"
+   ],
+   "a": 3,
+   "k": "to be와 함께 '~인 것으로 드러나다'라는 뜻을 이루는 'turn out'의 out이 정답. turn up(나타나다), turn into(~으로 변하다), turn over(뒤집다)는 to be와 이런 구조를 이루지 않는다."
+  }
+ },
+ {
+  "w": "call for",
+  "pos": "phr",
+  "m": [
+   "요구하다, 필요로 하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new safety regulations *call for* regular inspections of all equipment.",
+  "exKo": "새 안전 규정은 모든 장비의 정기 점검을 요구한다.",
+  "col": [
+   {
+    "e": "call for proposals",
+    "k": "제안서를 모집하다"
+   },
+   {
+    "e": "call for action",
+    "k": "조치를 요구하다"
+   },
+   {
+    "e": "call for change",
+    "k": "변화를 촉구하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "require",
+   "demand",
+   "necessitate"
+  ],
+  "ant": "",
+  "tip": "사물 주어가 오면 require, necessitate(필요로 하다)의 뜻이고, 사람 주어면 '공개적으로 요구하다'의 뜻이 된다. 'call for proposals(제안서 모집)'도 빈출 표현이다.",
+  "q": {
+   "s": "The recipe calls ------- two cups of flour and one tablespoon of sugar.",
+   "o": [
+    "for",
+    "on",
+    "up",
+    "in"
+   ],
+   "a": 0,
+   "k": "조리법이 재료를 '필요로 하다'라는 뜻의 'call for'이므로 for가 정답. call on(방문하다, 요청하다), call up(전화하다), call in(불러들이다)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "count on",
+  "pos": "phr",
+  "m": [
+   "~에 의지하다, ~을 믿다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "You can *count on* our technicians to respond within 24 hours.",
+  "exKo": "우리 기술자들이 24시간 이내에 대응할 것이라고 믿어도 좋다.",
+  "col": [
+   {
+    "e": "count on A to do",
+    "k": "A가 ~할 것이라 믿다"
+   },
+   {
+    "e": "count on A for B",
+    "k": "B를 A에게 의지하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "rely on",
+   "depend on",
+   "trust"
+  ],
+  "ant": "",
+  "tip": "rely on, depend on과 같은 뜻으로 'count on A to do', 'count on A for B' 구조를 취하며, 전치사 on이 빠지거나 바뀐 오답이 출제된다.",
+  "q": {
+   "s": "Our longtime customers know they can count ------- us for reliable service.",
+   "o": [
+    "at",
+    "on",
+    "in",
+    "for"
+   ],
+   "a": 1,
+   "k": "'count on A for B(B를 A에게 의지하다)'이므로 on이 정답. at, in, for는 count 뒤에서 '의지하다'라는 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "cut back on",
+  "pos": "phr",
+  "m": [
+   "~을 줄이다, 삭감하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The company is *cutting back on* business travel to reduce expenses.",
+  "exKo": "그 회사는 경비를 줄이기 위해 출장을 줄이고 있다.",
+  "col": [
+   {
+    "e": "cut back on spending",
+    "k": "지출을 줄이다"
+   },
+   {
+    "e": "cut back on costs",
+    "k": "비용을 절감하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "cutback",
+    "pos": "n",
+    "m": "삭감, 감축"
+   }
+  ],
+  "para": [
+   "reduce",
+   "curtail",
+   "scale back"
+  ],
+  "ant": "",
+  "tip": "reduce, curtail과 같은 뜻으로 Part 7에서 패러프레이즈되며, on이 빠지거나 바뀐 오답이 나온다. 명사 cutback(감축)은 주로 복수형으로 쓴다.",
+  "q": {
+   "s": "To lower costs, the restaurant has cut back ------- the number of evening staff.",
+   "o": [
+    "on",
+    "off",
+    "in",
+    "at"
+   ],
+   "a": 0,
+   "k": "'cut back on(~을 줄이다)'이므로 on이 정답. off, in, at은 cut back과 결합해 '~을 줄이다'라는 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "opt for",
+  "pos": "phr",
+  "m": [
+   "~을 선택하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Many business travelers *opt for* trains instead of short-haul flights.",
+  "exKo": "많은 출장객이 단거리 항공편 대신 기차를 선택한다.",
+  "col": [
+   {
+    "e": "opt for A over B",
+    "k": "B 대신 A를 택하다"
+   },
+   {
+    "e": "opt to do",
+    "k": "~하기로 선택하다"
+   },
+   {
+    "e": "opt out of",
+    "k": "~에서 빠지다, 탈퇴하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "option",
+    "pos": "n",
+    "m": "선택(권)"
+   },
+   {
+    "w": "optional",
+    "pos": "adj",
+    "m": "선택적인"
+   }
+  ],
+  "para": [
+   "choose",
+   "select",
+   "go with"
+  ],
+  "ant": "",
+  "tip": "'opt for + 명사'와 'opt to do' 두 형태로 쓰이고, 'opt out of(~에서 빠지다)'와 전치사를 구분한다. 형용사 optional(선택적인)이 품사 문제로 나온다.",
+  "q": {
+   "s": "Customers who ------- for express delivery will receive their items within two business days.",
+   "o": [
+    "choose",
+    "select",
+    "prefer",
+    "opt"
+   ],
+   "a": 3,
+   "k": "전치사 for와 함께 '~을 선택하다'라는 뜻을 이루는 자동사 opt가 정답. choose, select, prefer는 목적어를 바로 취하는 타동사라 for와 쓰지 않는다."
+  }
+ },
+ {
+  "w": "cope with",
+  "pos": "phr",
+  "m": [
+   "~에 대처하다, ~을 처리하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The call center hired extra staff to *cope with* the holiday rush.",
+  "exKo": "콜센터는 연휴 성수기에 대처하기 위해 직원을 추가로 고용했다.",
+  "col": [
+   {
+    "e": "cope with demand",
+    "k": "수요에 대처하다"
+   },
+   {
+    "e": "cope with stress",
+    "k": "스트레스에 대처하다"
+   },
+   {
+    "e": "cope with a problem",
+    "k": "문제를 처리하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "deal with",
+   "handle",
+   "manage"
+  ],
+  "ant": "",
+  "tip": "자동사라 전치사 with가 반드시 필요하며, deal with, handle로 패러프레이즈된다.",
+  "q": {
+   "s": "The new warehouse will help the company ------- with the growing number of online orders.",
+   "o": [
+    "handle",
+    "cope",
+    "treat",
+    "address"
+   ],
+   "a": 1,
+   "k": "전치사 with와 함께 '~에 대처하다'라는 뜻을 이루는 자동사 cope가 정답. handle, treat, address는 목적어를 바로 취하는 타동사라 with와 쓰지 않는다."
+  }
+ },
+ {
+  "w": "fall through",
+  "pos": "phr",
+  "m": [
+   "(계획·거래가) 무산되다, 실패로 끝나다"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The merger *fell through* after the two companies failed to agree on a price.",
+  "exKo": "두 회사가 가격에 합의하지 못하면서 합병은 무산되었다.",
+  "col": [
+   {
+    "e": "the deal falls through",
+    "k": "거래가 무산되다"
+   },
+   {
+    "e": "plans fall through",
+    "k": "계획이 무산되다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "collapse",
+   "fail",
+   "be called off"
+  ],
+  "ant": "",
+  "tip": "계획·거래가 '무산되다'라는 자동사구로 목적어를 취하지 않으며, Part 7에서 did not go through, was canceled로 패러프레이즈된다.",
+  "q": {
+   "s": "The sale of the building fell ------- when the buyer was unable to secure a loan.",
+   "o": [
+    "behind",
+    "through",
+    "off",
+    "down"
+   ],
+   "a": 1,
+   "k": "구매자가 대출을 받지 못해 매매가 '무산되었다'는 뜻이므로 'fall through'의 through가 정답. fall behind(뒤처지다), fall off(떨어지다, 감소하다), fall down(넘어지다)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "rule out",
+  "pos": "phr",
+  "m": [
+   "배제하다, 제외하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Officials have not *ruled out* the possibility of raising parking fees.",
+  "exKo": "당국은 주차 요금 인상 가능성을 배제하지 않았다.",
+  "col": [
+   {
+    "e": "rule out the possibility of",
+    "k": "~의 가능성을 배제하다"
+   },
+   {
+    "e": "cannot be ruled out",
+    "k": "배제할 수 없다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "exclude",
+   "eliminate",
+   "dismiss"
+  ],
+  "ant": "",
+  "tip": "'rule out the possibility of(~의 가능성을 배제하다)'가 빈출이며, exclude, eliminate로 패러프레이즈된다.",
+  "q": {
+   "s": "The CEO did not rule ------- the possibility of opening additional stores next year.",
+   "o": [
+    "off",
+    "over",
+    "out",
+    "away"
+   ],
+   "a": 2,
+   "k": "'rule out the possibility of(~의 가능성을 배제하다)'이므로 out이 정답. off, over, away는 rule과 결합해 '배제하다'라는 뜻을 만들지 않는다."
+  }
+ }
+]

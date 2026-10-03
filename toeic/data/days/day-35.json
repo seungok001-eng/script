@@ -1,0 +1,2155 @@
+[
+ {
+  "w": "market",
+  "pos": "n",
+  "m": [
+   "시장",
+   "수요, 판로"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The updated version of the software will be on the *market* by early spring.",
+  "exKo": "그 소프트웨어의 업데이트 버전은 이른 봄까지 시장에 출시될 것이다.",
+  "col": [
+   {
+    "e": "on the market",
+    "k": "시장에 나와 있는, 판매 중인"
+   },
+   {
+    "e": "enter a market",
+    "k": "시장에 진출하다"
+   },
+   {
+    "e": "market for",
+    "k": "~의 시장, ~에 대한 수요"
+   }
+  ],
+  "der": [
+   {
+    "w": "marketing",
+    "pos": "n",
+    "m": "마케팅"
+   },
+   {
+    "w": "marketable",
+    "pos": "adj",
+    "m": "시장성이 있는, 잘 팔리는"
+   },
+   {
+    "w": "marketer",
+    "pos": "n",
+    "m": "마케팅 담당자"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "명사 외에 동사로도 쓰여 market A to B(A를 B에게 판매·홍보하다) 형태가 출제된다. there is a market for(~에 대한 수요가 있다)도 Part 7에서 '수요'의 뜻으로 나온다.",
+  "q": {
+   "s": "Garnet Electronics hopes to expand into the Southeast Asian ------- within the next two years.",
+   "o": [
+    "merchant",
+    "margin",
+    "market",
+    "measure"
+   ],
+   "a": 2,
+   "k": "expand into(~로 확장·진출하다)의 목적어로 '동남아시아 시장'이라는 의미가 되어야 하므로 market이 정답이다. merchant(상인), margin(이윤, 여백), measure(조치, 척도)는 진출 대상이 될 수 없다."
+  }
+ },
+ {
+  "w": "marketing",
+  "pos": "n",
+  "m": [
+   "마케팅",
+   "판매 촉진 활동"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Okafor transferred to the *marketing* department after five years in sales.",
+  "exKo": "Okafor 씨는 영업 부서에서 5년을 근무한 뒤 마케팅 부서로 옮겼다.",
+  "col": [
+   {
+    "e": "marketing department",
+    "k": "마케팅 부서"
+   },
+   {
+    "e": "marketing strategy",
+    "k": "마케팅 전략"
+   },
+   {
+    "e": "marketing budget",
+    "k": "마케팅 예산"
+   }
+  ],
+  "der": [
+   {
+    "w": "market",
+    "pos": "v",
+    "m": "(상품을) 시장에 내놓다, 판매하다"
+   },
+   {
+    "w": "marketer",
+    "pos": "n",
+    "m": "마케팅 담당자"
+   }
+  ],
+  "para": [
+   "promotion",
+   "advertising"
+  ],
+  "ant": "",
+  "tip": "marketing은 불가산명사로 a marketing이나 marketings로 쓰지 않으며, marketing department, marketing campaign처럼 다른 명사 앞에서 복합명사를 만드는 경우가 많다.",
+  "q": {
+   "s": "The ------- team will present its plans for the holiday season at Thursday's meeting.",
+   "o": [
+    "marketable",
+    "marketed",
+    "marketer",
+    "marketing"
+   ],
+   "a": 3,
+   "k": "명사 team 앞에서 복합명사를 이루는 marketing이 정답이다(marketing team: 마케팅팀). marketer는 사람명사라 team과 복합명사를 이루지 않고, marketable과 marketed는 의미상 team을 수식할 수 없다."
+  }
+ },
+ {
+  "w": "product",
+  "pos": "n",
+  "m": [
+   "제품, 상품",
+   "결과물"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Our newest *product* combines a coffee maker and a milk frother in one compact unit.",
+  "exKo": "우리의 최신 제품은 커피 메이커와 우유 거품기를 하나의 작은 기기에 결합한 것이다.",
+  "col": [
+   {
+    "e": "product line",
+    "k": "제품군"
+   },
+   {
+    "e": "launch a product",
+    "k": "제품을 출시하다"
+   },
+   {
+    "e": "product specifications",
+    "k": "제품 사양"
+   }
+  ],
+  "der": [
+   {
+    "w": "produce",
+    "pos": "v",
+    "m": "생산하다"
+   },
+   {
+    "w": "production",
+    "pos": "n",
+    "m": "생산, 생산량"
+   },
+   {
+    "w": "productive",
+    "pos": "adj",
+    "m": "생산적인"
+   }
+  ],
+  "para": [
+   "item",
+   "goods"
+  ],
+  "ant": "",
+  "tip": "가산명사 product(제품)와 불가산명사 production(생산), 그리고 불가산명사 produce(농산물)를 구분하는 품사·어휘 문제가 자주 나온다.",
+  "q": {
+   "s": "Ms. Tanaka will demonstrate how to use the ------- during Friday's training session for sales staff.",
+   "o": [
+    "product",
+    "production",
+    "productive",
+    "produce"
+   ],
+   "a": 0,
+   "k": "관사 the 뒤 명사 자리이며 '사용법을 시연할' 대상은 제품이므로 product가 정답이다. production은 '생산'이라는 행위, produce는 '농산물'이라 의미가 맞지 않고, productive는 형용사다."
+  }
+ },
+ {
+  "w": "advertising",
+  "pos": "n",
+  "m": [
+   "광고",
+   "광고업"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The firm spent nearly half of its annual budget on online *advertising*.",
+  "exKo": "그 회사는 연간 예산의 거의 절반을 온라인 광고에 썼다.",
+  "col": [
+   {
+    "e": "online advertising",
+    "k": "온라인 광고"
+   },
+   {
+    "e": "advertising budget",
+    "k": "광고 예산"
+   },
+   {
+    "e": "advertising campaign",
+    "k": "광고 캠페인"
+   }
+  ],
+  "der": [
+   {
+    "w": "advertise",
+    "pos": "v",
+    "m": "광고하다"
+   },
+   {
+    "w": "advertisement",
+    "pos": "n",
+    "m": "광고 (한 편)"
+   },
+   {
+    "w": "advertiser",
+    "pos": "n",
+    "m": "광고주"
+   }
+  ],
+  "para": [
+   "promotion",
+   "publicity"
+  ],
+  "ant": "",
+  "tip": "advertising은 불가산명사라 관사 a/an이나 복수형 없이 쓴다. 광고 한 편을 가리키는 가산명사 advertisement(ad)와의 구분이 Part 5의 단골 포인트다.",
+  "q": {
+   "s": "Television ------- remains the most effective way for the company to reach older consumers.",
+   "o": [
+    "advertising",
+    "advertisement",
+    "advertises",
+    "advertised"
+   ],
+   "a": 0,
+   "k": "관사 없이 Television과 함께 주어 역할을 하는 불가산명사 advertising이 정답이다. advertisement는 가산명사 단수라 관사 없이 쓸 수 없고, advertises와 advertised는 동사 형태다."
+  }
+ },
+ {
+  "w": "brand recognition",
+  "pos": "phr",
+  "m": [
+   "브랜드 인지도"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Sponsoring the city marathon greatly improved the company's *brand recognition* among local residents.",
+  "exKo": "시 마라톤 대회를 후원한 것이 지역 주민들 사이에서 그 회사의 브랜드 인지도를 크게 높였다.",
+  "col": [
+   {
+    "e": "increase brand recognition",
+    "k": "브랜드 인지도를 높이다"
+   },
+   {
+    "e": "strong brand recognition",
+    "k": "높은 브랜드 인지도"
+   }
+  ],
+  "der": [
+   {
+    "w": "recognize",
+    "pos": "v",
+    "m": "알아보다, 인정하다"
+   },
+   {
+    "w": "recognizable",
+    "pos": "adj",
+    "m": "쉽게 알아볼 수 있는"
+   }
+  ],
+  "para": [
+   "brand awareness",
+   "name recognition"
+  ],
+  "ant": "",
+  "tip": "brand awareness와 함께 Part 7에서 서로 바꿔 쓰이는 표현이다. Part 5에서는 brand 뒤에 명사 recognition이 와야 하는 복합명사 자리 문제로 나온다.",
+  "q": {
+   "s": "The marketing director believes that a simpler logo will help increase brand ------- in overseas markets.",
+   "o": [
+    "recognize",
+    "recognition",
+    "recognizable",
+    "recognized"
+   ],
+   "a": 1,
+   "k": "increase의 목적어로 brand와 복합명사를 이루는 명사 자리이므로 recognition이 정답이다(brand recognition: 브랜드 인지도). 나머지는 동사나 형용사 형태라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "popularity",
+  "pos": "n",
+  "m": [
+   "인기",
+   "대중성"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The *popularity* of plant-based snacks has risen steadily over the past three years.",
+  "exKo": "식물성 간식의 인기는 지난 3년간 꾸준히 높아졌다.",
+  "col": [
+   {
+    "e": "growing popularity",
+    "k": "높아지는 인기"
+   },
+   {
+    "e": "gain popularity",
+    "k": "인기를 얻다"
+   },
+   {
+    "e": "popularity among",
+    "k": "~ 사이에서의 인기"
+   }
+  ],
+  "der": [
+   {
+    "w": "popular",
+    "pos": "adj",
+    "m": "인기 있는, 대중적인"
+   },
+   {
+    "w": "popularize",
+    "pos": "v",
+    "m": "대중화하다"
+   }
+  ],
+  "para": [
+   "appeal",
+   "demand"
+  ],
+  "ant": "",
+  "tip": "the growing popularity of(~의 높아지는 인기) 구문에서 관사와 형용사 뒤 명사 자리를 묻는 문제가 자주 나온다. gain/grow in popularity 같은 동사 짝도 함께 알아 두자.",
+  "q": {
+   "s": "Due to the growing ------- of its cooking classes, the community center has added an evening session.",
+   "o": [
+    "popular",
+    "popularly",
+    "popularity",
+    "popularize"
+   ],
+   "a": 2,
+   "k": "관사 the와 형용사 growing 뒤, 전치사 of 앞은 명사 자리이므로 popularity가 정답이다. popular는 형용사, popularly는 부사, popularize는 동사다."
+  }
+ },
+ {
+  "w": "advertising agency",
+  "pos": "phr",
+  "m": [
+   "광고 대행사"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "We hired an *advertising agency* to design the posters for our summer campaign.",
+  "exKo": "우리는 여름 캠페인 포스터를 디자인하기 위해 광고 대행사를 고용했다.",
+  "col": [
+   {
+    "e": "hire an advertising agency",
+    "k": "광고 대행사를 고용하다"
+   },
+   {
+    "e": "work at an advertising agency",
+    "k": "광고 대행사에서 일하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "agent",
+    "pos": "n",
+    "m": "대리인, 중개인"
+   }
+  ],
+  "para": [
+   "ad agency",
+   "marketing firm"
+  ],
+  "ant": "",
+  "tip": "agency(대행사)는 회사, agent(대리인)는 사람이다. Part 3·4에서는 화자의 직업을 묻는 문제에 at an advertising agency가 정답 근거로 자주 나온다.",
+  "q": {
+   "s": "Bellford Foods has signed a contract with a Seoul-based advertising ------- to handle its new campaign.",
+   "o": [
+    "agenda",
+    "appliance",
+    "admission",
+    "agency"
+   ],
+   "a": 3,
+   "k": "새 캠페인을 맡기기 위해 계약을 맺는 상대는 광고 '대행사'이므로 agency가 정답이다. agenda(안건), appliance(가전제품), admission(입장, 입학)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "image",
+  "pos": "n",
+  "m": [
+   "이미지, 인상",
+   "그림, 사진"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The airline hopes its new uniforms will create a more modern *image*.",
+  "exKo": "그 항공사는 새 유니폼이 더 현대적인 이미지를 만들어 주기를 바란다.",
+  "col": [
+   {
+    "e": "corporate image",
+    "k": "기업 이미지"
+   },
+   {
+    "e": "public image",
+    "k": "대외 이미지"
+   },
+   {
+    "e": "improve an image",
+    "k": "이미지를 개선하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "imagery",
+    "pos": "n",
+    "m": "(집합적) 이미지, 형상화"
+   }
+  ],
+  "para": [
+   "reputation",
+   "perception"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 회사가 로고·포장을 바꾸는 목적으로 update its image가 자주 제시된다. image는 가산명사, imagery는 불가산명사라는 점도 기억하자.",
+  "q": {
+   "s": "The company redesigned its packaging to give the brand a more youthful -------.",
+   "o": [
+    "imagination",
+    "imaginary",
+    "imagine",
+    "image"
+   ],
+   "a": 3,
+   "k": "관사 a와 형용사 youthful 뒤 명사 자리이며 '브랜드에 더 젊은 이미지를 주다'라는 의미가 되어야 하므로 image가 정답이다. imagination은 '상상력'이라 의미가 맞지 않고, imaginary는 형용사, imagine은 동사다."
+  }
+ },
+ {
+  "w": "catalog",
+  "pos": "n",
+  "m": [
+   "(상품) 카탈로그, 목록"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Our spring *catalog* features more than two hundred new items for the home.",
+  "exKo": "우리의 봄 카탈로그에는 200가지가 넘는 새 가정용품이 실려 있다.",
+  "col": [
+   {
+    "e": "product catalog",
+    "k": "제품 카탈로그"
+   },
+   {
+    "e": "online catalog",
+    "k": "온라인 카탈로그"
+   },
+   {
+    "e": "request a catalog",
+    "k": "카탈로그를 요청하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "brochure",
+   "listing"
+  ],
+  "ant": "",
+  "tip": "영국식 철자 catalogue도 같은 단어다. Part 3·4에서는 고객이 catalog를 요청하거나 온라인 catalog에서 제품 번호를 확인하는 장면이 자주 나온다.",
+  "q": {
+   "s": "Customers can request a free ------- of our outdoor furniture by calling our toll-free number.",
+   "o": [
+    "ledger",
+    "roster",
+    "catalog",
+    "verdict"
+   ],
+   "a": 2,
+   "k": "수신자 부담 번호로 전화해 무료로 요청할 수 있는 것은 야외용 가구 '카탈로그'이므로 catalog가 정답이다. ledger(장부), roster(명단), verdict(평결)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "market research",
+  "pos": "phr",
+  "m": [
+   "시장 조사"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "According to our *market research*, younger consumers prefer to shop on their phones.",
+  "exKo": "우리의 시장 조사에 따르면 젊은 소비자들은 휴대폰으로 쇼핑하는 것을 선호한다.",
+  "col": [
+   {
+    "e": "conduct market research",
+    "k": "시장 조사를 실시하다"
+   },
+   {
+    "e": "market research firm",
+    "k": "시장 조사 업체"
+   }
+  ],
+  "der": [
+   {
+    "w": "researcher",
+    "pos": "n",
+    "m": "연구원, 조사원"
+   }
+  ],
+  "para": [
+   "market study",
+   "consumer survey"
+  ],
+  "ant": "",
+  "tip": "research는 불가산명사라 a research나 researches로 쓰지 않는다. conduct/carry out/do market research처럼 함께 쓰이는 동사도 출제된다.",
+  "q": {
+   "s": "Tavira Drinks hired an outside firm to carry out market ------- before launching its sparkling tea.",
+   "o": [
+    "researcher",
+    "researched",
+    "research",
+    "researchable"
+   ],
+   "a": 2,
+   "k": "carry out의 목적어로 market과 복합명사를 이루는 명사 자리이며 '시장 조사를 실시하다'라는 뜻이 되어야 하므로 research가 정답이다. researcher는 사람명사라 carry out의 목적어가 될 수 없고, researched, researchable은 명사가 아니다."
+  }
+ },
+ {
+  "w": "poll",
+  "pos": "n",
+  "m": [
+   "여론 조사",
+   "투표"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "A recent *poll* found that most residents support the new shopping complex.",
+  "exKo": "최근 여론 조사에서 대다수 주민이 새 쇼핑 단지를 지지하는 것으로 나타났다.",
+  "col": [
+   {
+    "e": "opinion poll",
+    "k": "여론 조사"
+   },
+   {
+    "e": "conduct a poll",
+    "k": "여론 조사를 실시하다"
+   },
+   {
+    "e": "online poll",
+    "k": "온라인 투표"
+   }
+  ],
+  "der": [
+   {
+    "w": "pollster",
+    "pos": "n",
+    "m": "여론 조사원"
+   },
+   {
+    "w": "polling",
+    "pos": "n",
+    "m": "여론 조사, 투표"
+   }
+  ],
+  "para": [
+   "survey"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 survey와 서로 바꿔 쓰이는 경우가 많다. 동사로 쓰면 '여론 조사를 하다'라는 뜻이 되어 poll customers(고객에게 설문하다)처럼 쓴다.",
+  "q": {
+   "s": "According to a recent ------- of 1,000 shoppers, most people prefer to pay by card.",
+   "o": [
+    "quota",
+    "poll",
+    "toll",
+    "venue"
+   ],
+   "a": 1,
+   "k": "쇼핑객 1,000명을 대상으로 한 '여론 조사'에 따르면 대부분이 카드 결제를 선호한다는 의미이므로 poll이 정답이다. quota(할당량), toll(통행료), venue(장소)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "sample",
+  "pos": "n",
+  "m": [
+   "샘플, 견본",
+   "표본"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4,
+   7
+  ],
+  "ex": "A staff member is handing out *samples* of a new energy drink near the entrance.",
+  "exKo": "직원 한 명이 입구 근처에서 새 에너지 음료 샘플을 나눠 주고 있다.",
+  "col": [
+   {
+    "e": "free sample",
+    "k": "무료 샘플"
+   },
+   {
+    "e": "product sample",
+    "k": "제품 견본"
+   },
+   {
+    "e": "hand out samples",
+    "k": "샘플을 나눠 주다"
+   }
+  ],
+  "der": [
+   {
+    "w": "sampling",
+    "pos": "n",
+    "m": "시음, 시식, 표본 추출"
+   }
+  ],
+  "para": [
+   "specimen",
+   "trial size"
+  ],
+  "ant": "",
+  "tip": "동사로 쓰면 '시식하다, 시음하다'라는 뜻으로 sample the new menu처럼 쓴다. 통계에서의 '표본'(a sample of 500 customers)이라는 의미도 Part 7에 나온다.",
+  "q": {
+   "s": "Visitors to our booth at the food fair will receive free ------- of our new granola bars.",
+   "o": [
+    "examples",
+    "patterns",
+    "samples",
+    "instances"
+   ],
+   "a": 2,
+   "k": "박람회 부스 방문객이 받는 새 그래놀라 바의 '무료 샘플'이라는 의미이므로 samples가 정답이다. examples(예시), patterns(무늬, 양식), instances(사례)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "analysis",
+  "pos": "n",
+  "m": [
+   "분석",
+   "분석 결과"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The consultant's *analysis* showed that most sales come from repeat customers.",
+  "exKo": "컨설턴트의 분석 결과 매출 대부분이 재구매 고객에게서 나온다는 것이 드러났다.",
+  "col": [
+   {
+    "e": "detailed analysis",
+    "k": "상세한 분석"
+   },
+   {
+    "e": "data analysis",
+    "k": "데이터 분석"
+   },
+   {
+    "e": "conduct an analysis",
+    "k": "분석을 실시하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "analyze",
+    "pos": "v",
+    "m": "분석하다"
+   },
+   {
+    "w": "analytical",
+    "pos": "adj",
+    "m": "분석적인"
+   },
+   {
+    "w": "analyst",
+    "pos": "n",
+    "m": "분석가"
+   }
+  ],
+  "para": [
+   "examination",
+   "evaluation"
+  ],
+  "ant": "",
+  "tip": "복수형은 analyses이다. analysis(분석)와 analyst(분석가), analyze(분석하다)를 구분하는 품사·어휘 문제가 자주 나온다.",
+  "q": {
+   "s": "A thorough ------- of last quarter's sales data revealed a sharp drop in online orders.",
+   "o": [
+    "analyze",
+    "analytical",
+    "analyst",
+    "analysis"
+   ],
+   "a": 3,
+   "k": "관사 A와 형용사 thorough 뒤 명사 자리이며 판매 데이터를 '분석한 결과' 감소가 드러났다는 의미이므로 analysis가 정답이다. analyst는 '분석가'라 of 이하와 의미가 맞지 않고, analyze는 동사, analytical은 형용사다."
+  }
+ },
+ {
+  "w": "analyst",
+  "pos": "n",
+  "m": [
+   "분석가",
+   "애널리스트"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "One financial *analyst* expects the retailer's profits to rise next quarter.",
+  "exKo": "한 금융 분석가는 그 소매업체의 수익이 다음 분기에 증가할 것으로 예상한다.",
+  "col": [
+   {
+    "e": "industry analyst",
+    "k": "업계 분석가"
+   },
+   {
+    "e": "financial analyst",
+    "k": "금융 분석가"
+   },
+   {
+    "e": "market analyst",
+    "k": "시장 분석가"
+   }
+  ],
+  "der": [
+   {
+    "w": "analyze",
+    "pos": "v",
+    "m": "분석하다"
+   },
+   {
+    "w": "analysis",
+    "pos": "n",
+    "m": "분석"
+   },
+   {
+    "w": "analytical",
+    "pos": "adj",
+    "m": "분석적인"
+   }
+  ],
+  "para": [
+   "expert",
+   "specialist"
+  ],
+  "ant": "",
+  "tip": "사람명사 analyst와 사물명사 analysis를 구분하는 문제가 단골이다. Part 7 기사에서는 analysts predict/expect 형태로 전망을 전할 때 자주 쓰인다.",
+  "q": {
+   "s": "Several industry ------- interviewed for the article predict that demand for electric bicycles will double.",
+   "o": [
+    "analysts",
+    "analyses",
+    "analyzed",
+    "analytical"
+   ],
+   "a": 0,
+   "k": "기사를 위해 '인터뷰를 받은' 대상이자 predict의 주어이므로 사람명사 analysts가 정답이다. analyses(분석)는 인터뷰를 받을 수 없고, analyzed, analytical은 명사가 아니다."
+  }
+ },
+ {
+  "w": "impression",
+  "pos": "n",
+  "m": [
+   "인상, 느낌"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Mr. Kowalski made a positive *impression* on the clients during his presentation.",
+  "exKo": "Kowalski 씨는 발표하는 동안 고객들에게 좋은 인상을 남겼다.",
+  "col": [
+   {
+    "e": "make an impression on",
+    "k": "~에게 인상을 남기다"
+   },
+   {
+    "e": "first impression",
+    "k": "첫인상"
+   },
+   {
+    "e": "under the impression that",
+    "k": "~라고 생각하여"
+   }
+  ],
+  "der": [
+   {
+    "w": "impress",
+    "pos": "v",
+    "m": "깊은 인상을 주다"
+   },
+   {
+    "w": "impressive",
+    "pos": "adj",
+    "m": "인상적인"
+   },
+   {
+    "w": "impressed",
+    "pos": "adj",
+    "m": "감명받은"
+   }
+  ],
+  "para": [
+   "perception",
+   "feeling"
+  ],
+  "ant": "",
+  "tip": "make a good/strong impression on(~에게 좋은/강한 인상을 주다)의 전치사 on이 출제 포인트다. 형용사 impressive(인상적인)와 impressed(감명받은)의 구분도 자주 나온다.",
+  "q": {
+   "s": "The bright, spacious lobby makes a strong ------- on first-time visitors to the hotel.",
+   "o": [
+    "impression",
+    "impressive",
+    "impress",
+    "impressively"
+   ],
+   "a": 0,
+   "k": "관사 a와 형용사 strong 뒤 명사 자리이며 make an impression on(~에게 인상을 주다) 구문이므로 impression이 정답이다. impressive는 형용사, impress는 동사, impressively는 부사다."
+  }
+ },
+ {
+  "w": "favorable",
+  "pos": "adj",
+  "m": [
+   "호의적인, 긍정적인",
+   "유리한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new tablet has received *favorable* reviews from both critics and customers.",
+  "exKo": "새 태블릿은 비평가와 고객 모두에게서 호평을 받았다.",
+  "col": [
+   {
+    "e": "favorable reviews",
+    "k": "호평"
+   },
+   {
+    "e": "favorable terms",
+    "k": "유리한 조건"
+   },
+   {
+    "e": "favorable impression",
+    "k": "좋은 인상"
+   }
+  ],
+  "der": [
+   {
+    "w": "favor",
+    "pos": "n",
+    "m": "호의, 지지"
+   },
+   {
+    "w": "favorably",
+    "pos": "adv",
+    "m": "호의적으로, 유리하게"
+   }
+  ],
+  "para": [
+   "positive",
+   "advantageous"
+  ],
+  "ant": "unfavorable",
+  "tip": "favorite(가장 좋아하는)와 혼동하지 말 것. favorable reviews(호평), favorable conditions(유리한 조건)처럼 명사 앞에 쓰이며, 부사 favorably도 be viewed favorably 형태로 출제된다.",
+  "q": {
+   "s": "Thanks to ------- weather conditions, the outdoor product launch drew a much larger crowd than expected.",
+   "o": [
+    "favorably",
+    "favorable",
+    "favor",
+    "favorite"
+   ],
+   "a": 1,
+   "k": "명사구 weather conditions를 수식하는 형용사 자리이며 '유리한, 좋은 날씨'라는 의미이므로 favorable이 정답이다. favorite은 '가장 좋아하는'이라 의미가 맞지 않고, favorably는 부사, favor는 명사·동사다."
+  }
+ },
+ {
+  "w": "billboard",
+  "pos": "n",
+  "m": [
+   "옥외 광고판, 대형 간판"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "A large *billboard* advertising the new resort stands beside the highway.",
+  "exKo": "새 리조트를 광고하는 대형 광고판이 고속도로 옆에 서 있다.",
+  "col": [
+   {
+    "e": "put up a billboard",
+    "k": "광고판을 설치하다"
+   },
+   {
+    "e": "billboard advertising",
+    "k": "옥외 광고"
+   }
+  ],
+  "der": [],
+  "para": [
+   "sign",
+   "outdoor advertisement"
+  ],
+  "ant": "",
+  "tip": "Part 1 사진 묘사와 Part 4 광고 매체 관련 담화에 자주 나온다. 실내 게시판인 bulletin board와 구분해야 한다.",
+  "q": {
+   "s": "The company rented a ------- along the highway to advertise its new outlet mall.",
+   "o": [
+    "billboard",
+    "bulletin",
+    "handout",
+    "receipt"
+   ],
+   "a": 0,
+   "k": "고속도로를 따라 '임대해서' 아웃렛 몰을 광고하는 것은 옥외 광고판이므로 billboard가 정답이다. bulletin(공지, 회보), handout(유인물), receipt(영수증)는 고속도로변에 임대하는 대상이 아니다."
+  }
+ },
+ {
+  "w": "banner",
+  "pos": "n",
+  "m": [
+   "현수막",
+   "(웹페이지) 배너 광고"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "A *banner* announcing the grand opening has been hung above the store entrance.",
+  "exKo": "개업을 알리는 현수막이 매장 입구 위에 걸려 있다.",
+  "col": [
+   {
+    "e": "hang a banner",
+    "k": "현수막을 걸다"
+   },
+   {
+    "e": "banner ad",
+    "k": "배너 광고"
+   }
+  ],
+  "der": [],
+  "para": [
+   "sign",
+   "streamer"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 A banner has been hung/is hanging above ~(현수막이 ~ 위에 걸려 있다) 형태로 자주 나온다. 온라인 광고에서는 banner ad(배너 광고)로 쓰인다.",
+  "q": {
+   "s": "Visitors who click on the ------- at the top of our homepage will be directed to the holiday sale.",
+   "o": [
+    "ballot",
+    "bundle",
+    "banner",
+    "binder"
+   ],
+   "a": 2,
+   "k": "홈페이지 상단에 있으면서 클릭하면 할인 행사 페이지로 연결되는 것은 배너 광고이므로 banner가 정답이다. ballot(투표용지), bundle(묶음), binder(바인더)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "catchy",
+  "pos": "adj",
+  "m": [
+   "기억하기 쉬운, 귀에 쏙 들어오는"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Everyone in the office was humming the *catchy* jingle from the new juice commercial.",
+  "exKo": "사무실의 모두가 새 주스 광고에 나오는 귀에 쏙 들어오는 광고 노래를 흥얼거리고 있었다.",
+  "col": [
+   {
+    "e": "catchy slogan",
+    "k": "기억하기 쉬운 슬로건"
+   },
+   {
+    "e": "catchy tune",
+    "k": "귀에 쏙 들어오는 곡"
+   },
+   {
+    "e": "catchy name",
+    "k": "외우기 쉬운 이름"
+   }
+  ],
+  "der": [
+   {
+    "w": "catch",
+    "pos": "v",
+    "m": "잡다, (관심을) 끌다"
+   }
+  ],
+  "para": [
+   "memorable",
+   "eye-catching"
+  ],
+  "ant": "",
+  "tip": "광고 문구·노래·이름처럼 쉽게 기억되는 것을 꾸미는 형용사로, slogan, jingle, tune 등과 함께 쓰인다. catching(전염성의)과 혼동하지 말 것.",
+  "q": {
+   "s": "The advertising team is brainstorming a ------- slogan that customers will remember easily.",
+   "o": [
+    "catchy",
+    "punctual",
+    "spacious",
+    "durable"
+   ],
+   "a": 0,
+   "k": "고객이 쉽게 기억할 슬로건을 꾸미는 말로는 '기억하기 쉬운'이라는 뜻의 catchy가 알맞다. punctual(시간을 엄수하는), spacious(널찍한), durable(내구성이 있는)은 slogan과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "eye-catching",
+  "pos": "adj",
+  "m": [
+   "눈길을 끄는, 시선을 사로잡는"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The store window features an *eye-catching* display of colorful summer dresses.",
+  "exKo": "매장 진열창에는 화려한 여름 원피스들이 눈길을 끌도록 진열되어 있다.",
+  "col": [
+   {
+    "e": "eye-catching design",
+    "k": "눈길을 끄는 디자인"
+   },
+   {
+    "e": "eye-catching display",
+    "k": "눈길을 끄는 진열"
+   },
+   {
+    "e": "eye-catching packaging",
+    "k": "눈에 띄는 포장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "striking",
+   "attractive",
+   "noticeable"
+  ],
+  "ant": "",
+  "tip": "하이픈으로 연결된 복합형용사로 명사 앞에 온다. Part 7에서 striking, attention-grabbing 등으로 바꿔 표현된다.",
+  "q": {
+   "s": "The poster's bright colors and ------- design are meant to grab the attention of passersby.",
+   "o": [
+    "short-lived",
+    "well-attended",
+    "last-minute",
+    "eye-catching"
+   ],
+   "a": 3,
+   "k": "행인의 주의를 끌기 위한 디자인을 꾸미는 말로는 '눈길을 끄는'이라는 뜻의 eye-catching이 알맞다. short-lived(오래가지 못하는), well-attended(참석자가 많은), last-minute(막판의)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "memorable",
+  "pos": "adj",
+  "m": [
+   "기억에 남는, 인상적인"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The anniversary dinner was a *memorable* event for both employees and their families.",
+  "exKo": "그 창립 기념 만찬은 직원들과 그 가족들 모두에게 기억에 남는 행사였다.",
+  "col": [
+   {
+    "e": "memorable experience",
+    "k": "기억에 남는 경험"
+   },
+   {
+    "e": "memorable slogan",
+    "k": "기억에 남는 슬로건"
+   }
+  ],
+  "der": [
+   {
+    "w": "memory",
+    "pos": "n",
+    "m": "기억, 추억"
+   },
+   {
+    "w": "memorize",
+    "pos": "v",
+    "m": "암기하다"
+   },
+   {
+    "w": "memorably",
+    "pos": "adv",
+    "m": "인상적으로"
+   }
+  ],
+  "para": [
+   "unforgettable",
+   "notable"
+  ],
+  "ant": "forgettable",
+  "tip": "명사 앞이나 be동사 뒤 형용사 자리에서 memory(명사), memorize(동사)와 구분하는 품사 문제로 출제된다. 광고 문맥에서는 catchy와 바꿔 쓰이기도 한다.",
+  "q": {
+   "s": "Our event planners will help make your company retreat a truly ------- experience.",
+   "o": [
+    "memorize",
+    "memorable",
+    "memory",
+    "memorably"
+   ],
+   "a": 1,
+   "k": "부사 truly의 수식을 받으며 명사 experience를 꾸미는 형용사 자리이므로 memorable이 정답이다. memorize는 동사, memory는 명사, memorably는 부사다."
+  }
+ },
+ {
+  "w": "appealing",
+  "pos": "adj",
+  "m": [
+   "매력적인, 마음을 끄는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Free delivery makes online grocery shopping especially *appealing* to busy parents.",
+  "exKo": "무료 배송은 바쁜 부모들에게 온라인 식료품 쇼핑을 특히 매력적으로 만든다.",
+  "col": [
+   {
+    "e": "appealing to",
+    "k": "~에게 매력적인"
+   },
+   {
+    "e": "visually appealing",
+    "k": "시각적으로 매력적인"
+   }
+  ],
+  "der": [
+   {
+    "w": "appeal",
+    "pos": "v",
+    "m": "관심을 끌다, 호소하다"
+   },
+   {
+    "w": "appeal",
+    "pos": "n",
+    "m": "매력, 호소"
+   },
+   {
+    "w": "appealingly",
+    "pos": "adv",
+    "m": "매력적으로"
+   }
+  ],
+  "para": [
+   "attractive",
+   "inviting"
+  ],
+  "ant": "unappealing",
+  "tip": "be appealing to(~에게 매력적이다)의 전치사 to가 출제 포인트다. 동사로 쓰면 appeal to(~의 마음을 끌다)가 되므로 품사에 따라 형태를 구분해야 한다.",
+  "q": {
+   "s": "Large windows and a play area make the restaurant especially ------- to families with young children.",
+   "o": [
+    "appealed",
+    "appeal",
+    "appealingly",
+    "appealing"
+   ],
+   "a": 3,
+   "k": "make + 목적어 + 목적격 보어 구문에서 보어 자리에는 형용사가 오므로 appealing to(~에게 매력적인)를 이루는 appealing이 정답이다. appealed는 '매력적인'이라는 상태를 나타내지 못하고, appeal은 동사원형·명사, appealingly는 부사다."
+  }
+ },
+ {
+  "w": "endorsement",
+  "pos": "n",
+  "m": [
+   "(유명인의 상품) 홍보, 보증 광고",
+   "지지, 승인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The basketball star's *endorsement* helped the sneaker brand reach younger customers.",
+  "exKo": "그 농구 스타의 홍보 덕분에 운동화 브랜드는 더 젊은 고객층에 다가갈 수 있었다.",
+  "col": [
+   {
+    "e": "celebrity endorsement",
+    "k": "유명인 광고"
+   },
+   {
+    "e": "endorsement deal",
+    "k": "광고 모델 계약"
+   },
+   {
+    "e": "endorsement of",
+    "k": "~에 대한 지지"
+   }
+  ],
+  "der": [
+   {
+    "w": "endorse",
+    "pos": "v",
+    "m": "(상품을) 홍보하다, 지지하다"
+   },
+   {
+    "w": "endorser",
+    "pos": "n",
+    "m": "보증인, 홍보 모델"
+   }
+  ],
+  "para": [
+   "backing",
+   "approval",
+   "support"
+  ],
+  "ant": "",
+  "tip": "endorse(동사)의 명사형으로, 소유격 뒤 명사 자리를 묻는 품사 문제로 나온다. Part 7에서는 '공식 지지, 승인'이라는 뜻으로 approval, support와 바꿔 쓰인다.",
+  "q": {
+   "s": "The athlete's ------- of the running shoes led to a sharp rise in sales last spring.",
+   "o": [
+    "endorse",
+    "endorsement",
+    "endorsed",
+    "endorses"
+   ],
+   "a": 1,
+   "k": "소유격 The athlete's 뒤, 전치사 of 앞은 명사 자리이므로 endorsement가 정답이다. endorse, endorsed, endorses는 모두 동사 형태라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "branding",
+  "pos": "n",
+  "m": [
+   "브랜드화, 브랜딩"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Consistent *branding* across all platforms helps customers recognize the company instantly.",
+  "exKo": "모든 플랫폼에서 일관된 브랜딩을 하면 고객이 그 회사를 즉시 알아보는 데 도움이 된다.",
+  "col": [
+   {
+    "e": "corporate branding",
+    "k": "기업 브랜딩"
+   },
+   {
+    "e": "branding strategy",
+    "k": "브랜딩 전략"
+   }
+  ],
+  "der": [
+   {
+    "w": "brand",
+    "pos": "n",
+    "m": "상표, 브랜드"
+   },
+   {
+    "w": "brand",
+    "pos": "v",
+    "m": "상표를 붙이다, 브랜드화하다"
+   }
+  ],
+  "para": [
+   "brand identity",
+   "image building"
+  ],
+  "ant": "",
+  "tip": "브랜드 이미지를 만드는 전반적 활동을 뜻하는 불가산명사로, branding agency, branding strategy처럼 복합명사로 자주 쓰인다.",
+  "q": {
+   "s": "The design firm specializes in ------- for small businesses, including logo design and packaging.",
+   "o": [
+    "catering",
+    "plumbing",
+    "landscaping",
+    "branding"
+   ],
+   "a": 3,
+   "k": "로고 디자인과 포장을 포함하는 업무는 '브랜딩'이므로 branding이 정답이다. catering(출장 요리), plumbing(배관), landscaping(조경)은 로고 디자인과 관련이 없다."
+  }
+ },
+ {
+  "w": "rebrand",
+  "pos": "v",
+  "m": [
+   "브랜드 이미지를 쇄신하다, 브랜드를 바꾸다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bank decided to *rebrand* itself to attract a younger generation of customers.",
+  "exKo": "그 은행은 젊은 세대의 고객을 끌어들이기 위해 브랜드 이미지를 쇄신하기로 결정했다.",
+  "col": [
+   {
+    "e": "rebrand as",
+    "k": "~로 브랜드를 바꾸다"
+   },
+   {
+    "e": "rebrand a product",
+    "k": "제품 브랜드를 새롭게 하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "rebranding",
+    "pos": "n",
+    "m": "브랜드 쇄신, 리브랜딩"
+   },
+   {
+    "w": "brand",
+    "pos": "n",
+    "m": "브랜드"
+   }
+  ],
+  "para": [
+   "revamp",
+   "rename"
+  ],
+  "ant": "",
+  "tip": "rebrand A as B(A를 B로 브랜드를 바꾸다) 형태와 명사 rebranding(브랜드 쇄신)이 Part 7 기사에 자주 나온다. 합병 후 상호를 바꾸는 문맥에서 rename과 바꿔 쓰인다.",
+  "q": {
+   "s": "After the merger, the two hotel chains were ------- under a single name.",
+   "o": [
+    "rebounded",
+    "rebranded",
+    "recharged",
+    "refunded"
+   ],
+   "a": 1,
+   "k": "합병 후 두 호텔 체인이 하나의 이름으로 '브랜드가 바뀌었다'는 의미이므로 rebranded가 정답이다. rebound(반등하다)는 자동사라 수동태가 불가능하고, recharged(재충전된), refunded(환불된)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "outreach",
+  "pos": "n",
+  "m": [
+   "(지역 사회) 봉사·지원 활동",
+   "(대상층을 직접 찾아가는) 홍보 활동"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The library's *outreach* efforts include free reading sessions at local hospitals.",
+  "exKo": "그 도서관의 지역 봉사 활동에는 지역 병원에서 여는 무료 독서 모임이 포함된다.",
+  "col": [
+   {
+    "e": "community outreach",
+    "k": "지역 사회 봉사·소통 활동"
+   },
+   {
+    "e": "outreach program",
+    "k": "봉사·홍보 프로그램"
+   },
+   {
+    "e": "customer outreach",
+    "k": "고객 접촉 활동"
+   }
+  ],
+  "der": [],
+  "para": [
+   "community service",
+   "engagement"
+  ],
+  "ant": "",
+  "tip": "대상을 찾아가서 서비스를 제공하거나 관계를 맺는 활동을 뜻하는 불가산명사로, outreach program, outreach coordinator처럼 복합명사로 Part 4·7에 나온다.",
+  "q": {
+   "s": "The museum's ------- program sends educators to local schools to give free workshops.",
+   "o": [
+    "outcome",
+    "outreach",
+    "outlook",
+    "outlet"
+   ],
+   "a": 1,
+   "k": "교육 담당자를 지역 학교로 보내 무료 워크숍을 여는 것은 '찾아가는 봉사·홍보 활동' 프로그램이므로 outreach가 정답이다. outcome(결과), outlook(전망), outlet(판매점, 콘센트)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "niche",
+  "pos": "n",
+  "m": [
+   "틈새시장",
+   "(꼭 맞는) 분야, 적소"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The startup has carved out a *niche* by selling eco-friendly office supplies.",
+  "exKo": "그 신생 기업은 친환경 사무용품을 판매하여 틈새시장을 개척했다.",
+  "col": [
+   {
+    "e": "niche market",
+    "k": "틈새시장"
+   },
+   {
+    "e": "find a niche",
+    "k": "틈새를 찾다"
+   },
+   {
+    "e": "carve out a niche",
+    "k": "틈새시장을 개척하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "specialty",
+   "specialized market"
+  ],
+  "ant": "",
+  "tip": "형용사처럼 명사 앞에 쓰여 niche market(틈새시장), niche product(틈새 상품) 형태로도 자주 나온다. find/carve out a niche 같은 동사 짝을 함께 기억하자.",
+  "q": {
+   "s": "The small bakery has found a profitable ------- by offering cakes made without wheat flour.",
+   "o": [
+    "niche",
+    "nuisance",
+    "novice",
+    "notion"
+   ],
+   "a": 0,
+   "k": "밀가루 없이 만든 케이크를 팔아 수익성 있는 '틈새시장'을 찾았다는 의미이므로 niche가 정답이다. nuisance(골칫거리), novice(초보자), notion(개념)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "segment",
+  "pos": "n",
+  "m": [
+   "부분, 구획",
+   "(시장의) 세분 집단, 계층"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Retirees make up a rapidly expanding *segment* of the travel market.",
+  "exKo": "은퇴자들은 여행 시장에서 빠르게 커지고 있는 계층을 이루고 있다.",
+  "col": [
+   {
+    "e": "market segment",
+    "k": "시장 부문"
+   },
+   {
+    "e": "segment of the population",
+    "k": "인구 계층"
+   },
+   {
+    "e": "customer segment",
+    "k": "고객층"
+   }
+  ],
+  "der": [
+   {
+    "w": "segmentation",
+    "pos": "n",
+    "m": "세분화, 분할"
+   }
+  ],
+  "para": [
+   "sector",
+   "portion",
+   "group"
+  ],
+  "ant": "",
+  "tip": "시장 분석 문맥에서 market segment(시장 부문), a large segment of customers(고객의 상당 부분)처럼 쓰인다. 방송·행사에서는 '코너, 순서'라는 뜻으로도 나온다.",
+  "q": {
+   "s": "Online sales have become the most profitable ------- of the company's business.",
+   "o": [
+    "sediment",
+    "segment",
+    "statement",
+    "settlement"
+   ],
+   "a": 1,
+   "k": "회사 사업에서 가장 수익성이 좋은 '부문'이라는 의미이므로 segment가 정답이다. sediment(침전물), statement(진술, 명세서), settlement(합의, 정착)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "target audience",
+  "pos": "phr",
+  "m": [
+   "목표 고객층, 대상 시청자"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The *target audience* for this campaign is college students living in large cities.",
+  "exKo": "이 캠페인의 목표 고객층은 대도시에 사는 대학생들이다.",
+  "col": [
+   {
+    "e": "reach a target audience",
+    "k": "목표 고객층에 도달하다"
+   },
+   {
+    "e": "primary target audience",
+    "k": "주요 목표 고객층"
+   }
+  ],
+  "der": [
+   {
+    "w": "target",
+    "pos": "v",
+    "m": "목표로 삼다, 겨냥하다"
+   }
+  ],
+  "para": [
+   "intended audience",
+   "target market"
+  ],
+  "ant": "",
+  "tip": "광고 담화(Part 4)에서 광고의 대상을 묻는 문제의 근거로 자주 나온다. target audience for(~의 대상층) 형태로 전치사 for와 함께 쓰인다.",
+  "q": {
+   "s": "Office workers in their twenties are the primary target ------- for the new smartwatch.",
+   "o": [
+    "attendance",
+    "admission",
+    "audience",
+    "auditorium"
+   ],
+   "a": 2,
+   "k": "새 스마트워치의 '주요 목표 고객층'이라는 의미로 target과 복합명사를 이루는 audience가 정답이다. attendance(참석), admission(입장), auditorium(강당)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "customer base",
+  "pos": "phr",
+  "m": [
+   "고객층, 고객 기반"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Opening an online store helped the bakery expand its *customer base* beyond the neighborhood.",
+  "exKo": "온라인 매장을 연 것은 그 빵집이 동네를 넘어 고객층을 넓히는 데 도움이 되었다.",
+  "col": [
+   {
+    "e": "expand the customer base",
+    "k": "고객층을 넓히다"
+   },
+   {
+    "e": "loyal customer base",
+    "k": "충성 고객층"
+   },
+   {
+    "e": "broad customer base",
+    "k": "폭넓은 고객층"
+   }
+  ],
+  "der": [],
+  "para": [
+   "clientele",
+   "customers"
+  ],
+  "ant": "",
+  "tip": "expand/broaden/build a customer base(고객층을 넓히다/구축하다) 형태로 Part 7 기사와 Part 4 담화에 자주 나온다. Part 7에서는 clientele로 바꿔 표현되기도 한다.",
+  "q": {
+   "s": "Larkspur Fitness hopes to grow its customer ------- by opening two new locations in the suburbs.",
+   "o": [
+    "basis",
+    "basement",
+    "base",
+    "baseline"
+   ],
+   "a": 2,
+   "k": "교외에 새 지점 두 곳을 열어 '고객층'을 늘리려 한다는 의미로 customer와 복합명사를 이루는 base가 정답이다. basis(기준, 근거)는 on a daily basis처럼 쓰이며, basement(지하실), baseline(기준선)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "entice",
+  "pos": "v",
+  "m": [
+   "유인하다, 꾀다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The restaurant *entices* lunchtime customers with a two-course meal for just twelve dollars.",
+  "exKo": "그 식당은 단돈 12달러짜리 2코스 식사로 점심시간 손님들을 끌어들인다.",
+  "col": [
+   {
+    "e": "entice A to do",
+    "k": "A가 ~하도록 유인하다"
+   },
+   {
+    "e": "entice A into -ing",
+    "k": "A를 꾀어 ~하게 하다"
+   },
+   {
+    "e": "entice customers",
+    "k": "고객을 유인하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "enticing",
+    "pos": "adj",
+    "m": "유혹적인, 마음을 끄는"
+   },
+   {
+    "w": "enticement",
+    "pos": "n",
+    "m": "유인책, 미끼"
+   }
+  ],
+  "para": [
+   "attract",
+   "tempt",
+   "lure"
+  ],
+  "ant": "",
+  "tip": "entice A to do / entice A into -ing 구조로 쓰이는 타동사다. Part 7에서는 attract, tempt로 바꿔 쓰이며 형용사 enticing(마음을 끄는)도 출제된다.",
+  "q": {
+   "s": "The store offered a free tote bag to ------- shoppers into signing up for its membership program.",
+   "o": [
+    "entice",
+    "insist",
+    "comply",
+    "consist"
+   ],
+   "a": 0,
+   "k": "목적어 shoppers를 취하고 into -ing와 함께 쓰여 '쇼핑객이 회원 가입을 하도록 유인하다'라는 의미를 만드는 entice가 정답이다. insist, comply, consist는 자동사라 목적어를 바로 취할 수 없다."
+  }
+ },
+ {
+  "w": "lure",
+  "pos": "v",
+  "m": [
+   "(유인하여) 끌어들이다, 꾀다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Tech companies are offering higher salaries to *lure* skilled engineers from overseas.",
+  "exKo": "기술 기업들은 해외의 숙련된 엔지니어들을 끌어들이기 위해 더 높은 급여를 제시하고 있다.",
+  "col": [
+   {
+    "e": "lure A away from B",
+    "k": "A를 B에게서 빼내 오다"
+   },
+   {
+    "e": "lure customers",
+    "k": "고객을 끌어들이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "alluring",
+    "pos": "adj",
+    "m": "매혹적인"
+   }
+  ],
+  "para": [
+   "attract",
+   "entice",
+   "draw"
+  ],
+  "ant": "",
+  "tip": "lure A away from B(B에게서 A를 빼내 오다), lure A into B(A를 꾀어 B로 끌어들이다) 구조가 자주 쓰인다. 명사로는 '매력, 미끼'라는 뜻이다.",
+  "q": {
+   "s": "The new shopping complex hopes to ------- customers away from downtown stores by offering free parking.",
+   "o": [
+    "lend",
+    "lean",
+    "leak",
+    "lure"
+   ],
+   "a": 3,
+   "k": "무료 주차를 제공해 도심 상점에서 고객을 '끌어오려' 한다는 의미로 away from과 어울리는 lure가 정답이다. lend(빌려주다), lean(기대다), leak(새다)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "tagline",
+  "pos": "n",
+  "m": [
+   "(광고의) 핵심 문구, 태그라인"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The jeweler's new *tagline* emphasizes that its rings are handmade.",
+  "exKo": "그 보석상의 새 광고 문구는 반지가 수제품이라는 점을 강조한다.",
+  "col": [
+   {
+    "e": "advertising tagline",
+    "k": "광고 문구"
+   },
+   {
+    "e": "company tagline",
+    "k": "회사 슬로건"
+   }
+  ],
+  "der": [],
+  "para": [
+   "slogan",
+   "catchphrase"
+  ],
+  "ant": "",
+  "tip": "광고나 로고와 함께 반복되는 짧은 문구로 slogan과 거의 같은 뜻이다. Part 7에서 slogan, catchphrase로 바꿔 표현된다.",
+  "q": {
+   "s": "The phrase 'Freshness you can taste' will serve as the grocery chain's ------- in all future advertisements.",
+   "o": [
+    "timeline",
+    "deadline",
+    "tagline",
+    "guideline"
+   ],
+   "a": 2,
+   "k": "'Freshness you can taste'라는 문구가 모든 광고에서 사용될 '광고 문구'라는 의미이므로 tagline이 정답이다. timeline(일정표), deadline(마감 기한), guideline(지침)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "mascot",
+  "pos": "n",
+  "m": [
+   "마스코트"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "The baseball team's *mascot* posed for photos with fans outside the stadium.",
+  "exKo": "그 야구팀의 마스코트가 경기장 밖에서 팬들과 함께 사진을 찍었다.",
+  "col": [
+   {
+    "e": "company mascot",
+    "k": "회사 마스코트"
+   },
+   {
+    "e": "official mascot",
+    "k": "공식 마스코트"
+   }
+  ],
+  "der": [],
+  "para": [
+   "emblem",
+   "character"
+  ],
+  "ant": "",
+  "tip": "행사나 광고 담화에서 브랜드를 대표하는 캐릭터를 가리킨다. Part 1에서는 마스코트 의상을 입은 사람이 사진 촬영에 응하는 장면으로 나올 수 있다.",
+  "q": {
+   "s": "The amusement park's cartoon ------- greeted children at the main gate every morning.",
+   "o": [
+    "mascot",
+    "mentor",
+    "merchant",
+    "monument"
+   ],
+   "a": 0,
+   "k": "놀이공원의 만화 캐릭터로서 아침마다 정문에서 아이들을 맞이한 것은 마스코트이므로 mascot이 정답이다. mentor(멘토), merchant(상인), monument(기념비)는 cartoon과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "saturated",
+  "pos": "adj",
+  "m": [
+   "(시장이) 포화 상태인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The coffee shop market in this neighborhood is already *saturated*.",
+  "exKo": "이 동네의 커피숍 시장은 이미 포화 상태이다.",
+  "col": [
+   {
+    "e": "saturated market",
+    "k": "포화 시장"
+   },
+   {
+    "e": "become saturated",
+    "k": "포화 상태가 되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "saturation",
+    "pos": "n",
+    "m": "포화 (상태)"
+   },
+   {
+    "w": "saturate",
+    "pos": "v",
+    "m": "포화시키다, 흠뻑 적시다"
+   }
+  ],
+  "para": [
+   "oversupplied",
+   "crowded"
+  ],
+  "ant": "",
+  "tip": "시장에 상품·업체가 너무 많아 더 이상 수요가 늘기 어려운 상태를 뜻한다. 명사 market saturation(시장 포화)과 함께 Part 7 기사에 자주 나온다.",
+  "q": {
+   "s": "Because the smartphone market is already -------, new manufacturers find it difficult to attract buyers.",
+   "o": [
+    "saturation",
+    "saturated",
+    "saturate",
+    "saturates"
+   ],
+   "a": 1,
+   "k": "be동사 is 뒤 보어 자리이며 '시장이 이미 포화 상태'라는 의미이므로 형용사 saturated가 정답이다. saturation은 명사라 '시장이 포화 상태이다'라는 의미를 만들 수 없고, saturate, saturates는 동사다."
+  }
+ },
+ {
+  "w": "penetrate",
+  "pos": "v",
+  "m": [
+   "(시장에) 진출하다, 침투하다",
+   "관통하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company used low prices to *penetrate* the competitive frozen food market.",
+  "exKo": "그 회사는 경쟁이 치열한 냉동식품 시장에 진출하기 위해 저가 전략을 썼다.",
+  "col": [
+   {
+    "e": "penetrate a market",
+    "k": "시장에 진출하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "penetration",
+    "pos": "n",
+    "m": "(시장) 침투, 보급률"
+   }
+  ],
+  "para": [
+   "enter",
+   "break into"
+  ],
+  "ant": "",
+  "tip": "penetrate the market은 전치사 없이 목적어를 바로 취하는 타동사 표현이다. 명사 market penetration(시장 점유율, 침투)도 Part 7에 나온다.",
+  "q": {
+   "s": "Hartwell Motors is struggling to ------- the highly competitive European car market.",
+   "o": [
+    "penetrate",
+    "penetration",
+    "penetrating",
+    "penetrable"
+   ],
+   "a": 0,
+   "k": "to부정사의 to 뒤에는 동사원형이 오므로 penetrate가 정답이다. penetration은 명사, penetrating은 현재분사·형용사, penetrable은 형용사다."
+  }
+ },
+ {
+  "w": "trendy",
+  "pos": "adj",
+  "m": [
+   "최신 유행의, 유행하는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hotel's rooftop bar has become a *trendy* spot for young professionals.",
+  "exKo": "그 호텔의 옥상 바는 젊은 직장인들이 즐겨 찾는 유행하는 장소가 되었다.",
+  "col": [
+   {
+    "e": "trendy café",
+    "k": "유행하는 카페"
+   },
+   {
+    "e": "trendy neighborhood",
+    "k": "핫한 동네"
+   },
+   {
+    "e": "trendy clothes",
+    "k": "유행하는 옷"
+   }
+  ],
+  "der": [
+   {
+    "w": "trend",
+    "pos": "n",
+    "m": "유행, 추세"
+   }
+  ],
+  "para": [
+   "fashionable",
+   "stylish",
+   "popular"
+  ],
+  "ant": "outdated",
+  "tip": "'최신 유행의'라는 형용사로 Part 7에서 fashionable, stylish로 바꿔 쓰인다. 명사 trend(추세)와 품사를 구분하자.",
+  "q": {
+   "s": "The café has become popular among young people for its ------- interior and creative drinks.",
+   "o": [
+    "sturdy",
+    "trendy",
+    "tardy",
+    "thrifty"
+   ],
+   "a": 1,
+   "k": "젊은 사람들에게 인기를 얻은 이유로 '유행하는' 인테리어가 알맞으므로 trendy가 정답이다. sturdy(튼튼한), tardy(늦은), thrifty(절약하는)는 interior와 의미상 어울리지 않는다."
+  }
+ },
+ {
+  "w": "novelty",
+  "pos": "n",
+  "m": [
+   "새로움, 참신함",
+   "(값싼) 신기한 상품"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *novelty* of the store's virtual fitting rooms attracted many curious shoppers.",
+  "exKo": "그 매장의 가상 피팅룸이 지닌 새로움은 호기심 많은 쇼핑객을 많이 끌어들였다.",
+  "col": [
+   {
+    "e": "novelty item",
+    "k": "신기한 소품, 기념품"
+   },
+   {
+    "e": "the novelty wears off",
+    "k": "새로움이 사라지다"
+   }
+  ],
+  "der": [
+   {
+    "w": "novel",
+    "pos": "adj",
+    "m": "새로운, 참신한"
+   },
+   {
+    "w": "novel",
+    "pos": "n",
+    "m": "소설"
+   }
+  ],
+  "para": [
+   "newness",
+   "originality"
+  ],
+  "ant": "",
+  "tip": "the novelty wears off(신선함이 사라지다)가 관용 표현으로 쓰인다. 형용사 novel(참신한)과 명사 novel(소설)의 구분도 어휘 문제로 출제된다.",
+  "q": {
+   "s": "Once the ------- wears off, sales of such gadgets usually decline quickly.",
+   "o": [
+    "novel",
+    "novice",
+    "notice",
+    "novelty"
+   ],
+   "a": 3,
+   "k": "the novelty wears off(새로움이 사라지다)라는 관용 표현으로 '신선함이 사라지면 판매가 줄어든다'는 의미이므로 novelty가 정답이다. novel(소설), novice(초보자), notice(공지)는 wear off와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "consumer behavior",
+  "pos": "phr",
+  "m": [
+   "소비자 행동"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Mobile shopping apps have dramatically changed *consumer behavior* over the past decade.",
+  "exKo": "모바일 쇼핑 앱은 지난 10년간 소비자 행동을 극적으로 바꿔 놓았다.",
+  "col": [
+   {
+    "e": "study consumer behavior",
+    "k": "소비자 행동을 연구하다"
+   },
+   {
+    "e": "changes in consumer behavior",
+    "k": "소비자 행동의 변화"
+   }
+  ],
+  "der": [
+   {
+    "w": "behave",
+    "pos": "v",
+    "m": "행동하다"
+   },
+   {
+    "w": "behavioral",
+    "pos": "adj",
+    "m": "행동의"
+   }
+  ],
+  "para": [
+   "buying habits",
+   "shopping patterns"
+  ],
+  "ant": "",
+  "tip": "behavior는 불가산명사로 주로 단수로 쓴다. Part 7에서는 buying habits, shopping patterns로 바꿔 표현되는 경우가 많다.",
+  "q": {
+   "s": "The research team studies consumer ------- to understand why shoppers choose certain brands.",
+   "o": [
+    "behave",
+    "behavioral",
+    "behavior",
+    "behaved"
+   ],
+   "a": 2,
+   "k": "studies의 목적어로 consumer와 복합명사를 이루는 명사 자리이므로 behavior가 정답이다. behave는 동사, behavioral은 형용사, behaved는 동사의 과거형·과거분사다."
+  }
+ },
+ {
+  "w": "pricing",
+  "pos": "n",
+  "m": [
+   "가격 책정"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The company is reviewing its *pricing* to stay competitive with online retailers.",
+  "exKo": "그 회사는 온라인 소매업체들과의 경쟁력을 유지하기 위해 가격 책정을 재검토하고 있다.",
+  "col": [
+   {
+    "e": "competitive pricing",
+    "k": "경쟁력 있는 가격 책정"
+   },
+   {
+    "e": "pricing strategy",
+    "k": "가격 책정 전략"
+   },
+   {
+    "e": "pricing policy",
+    "k": "가격 정책"
+   }
+  ],
+  "der": [
+   {
+    "w": "price",
+    "pos": "v",
+    "m": "가격을 매기다"
+   },
+   {
+    "w": "priced",
+    "pos": "adj",
+    "m": "가격이 매겨진"
+   },
+   {
+    "w": "pricey",
+    "pos": "adj",
+    "m": "값비싼"
+   }
+  ],
+  "para": [
+   "price setting"
+  ],
+  "ant": "",
+  "tip": "가격을 정하는 방식 전체를 뜻하는 불가산명사로, competitive pricing, pricing structure처럼 쓰인다. reasonably priced(가격이 적당한)처럼 과거분사 priced와의 구분도 출제된다.",
+  "q": {
+   "s": "Thanks to its competitive -------, the online retailer has attracted many first-time buyers.",
+   "o": [
+    "priced",
+    "priceless",
+    "pricey",
+    "pricing"
+   ],
+   "a": 3,
+   "k": "소유격 its와 형용사 competitive 뒤 명사 자리이므로 pricing이 정답이다. priced, priceless, pricey는 모두 형용사(분사)라 명사 자리에 올 수 없다."
+  }
+ }
+]

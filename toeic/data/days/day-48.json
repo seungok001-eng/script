@@ -1,0 +1,1919 @@
+[
+ {
+  "w": "data entry",
+  "pos": "phr",
+  "m": [
+   "데이터 입력"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The temporary staff will handle *data entry* while the new system is being tested.",
+  "exKo": "새 시스템을 시험하는 동안 임시 직원들이 데이터 입력을 담당할 것이다.",
+  "col": [
+   {
+    "e": "data entry clerk",
+    "k": "데이터 입력 사무원"
+   },
+   {
+    "e": "data entry errors",
+    "k": "데이터 입력 오류"
+   }
+  ],
+  "der": [
+   {
+    "w": "enter",
+    "pos": "v",
+    "m": "입력하다"
+   },
+   {
+    "w": "entry",
+    "pos": "n",
+    "m": "입력, 기재"
+   }
+  ],
+  "para": [
+   "data input",
+   "inputting data"
+  ],
+  "ant": "",
+  "tip": "data entry clerk(데이터 입력 사무원)는 Part 7 구인 광고의 직무로 자주 나오며, '입력하다'라는 동작은 enter, input으로 패러프레이즈된다.",
+  "q": {
+   "s": "Applicants for the ------- position must be able to type at least 60 words per minute.",
+   "o": [
+    "entry form",
+    "data usage",
+    "data loss",
+    "data entry"
+   ],
+   "a": 3,
+   "k": "분당 60단어 이상 타자를 쳐야 하는 '직책(position)'은 데이터 입력직이므로 data entry가 정답이다. entry form(신청서), data usage(데이터 사용량), data loss(데이터 손실)는 직책 이름이 될 수 없다."
+  }
+ },
+ {
+  "w": "intranet",
+  "pos": "n",
+  "m": [
+   "(사내) 인트라넷, 내부 전산망"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The updated travel expense policy has been posted on the company *intranet*.",
+  "exKo": "개정된 출장비 규정이 회사 인트라넷에 게시되었다.",
+  "col": [
+   {
+    "e": "on the company intranet",
+    "k": "회사 인트라넷에"
+   },
+   {
+    "e": "post on the intranet",
+    "k": "인트라넷에 게시하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "internal website",
+   "company network"
+  ],
+  "ant": "",
+  "tip": "직원만 접속할 수 있는 내부 전산망으로, Part 7 사내 공지에서 '양식은 intranet에서 내려받을 수 있다'는 정보가 정답 단서가 된다. 외부 인터넷을 뜻하는 internet과 구분한다.",
+  "q": {
+   "s": "Employees can download vacation request forms from the company ------- at any time.",
+   "o": [
+    "interval",
+    "intern",
+    "intranet",
+    "interior"
+   ],
+   "a": 2,
+   "k": "직원들이 휴가 신청서를 내려받을 수 있는 곳은 회사 내부 전산망이므로 intranet이 정답이다. interval(간격), intern(인턴), interior(내부, 실내)는 양식을 내려받는 곳이 아니다."
+  }
+ },
+ {
+  "w": "shared drive",
+  "pos": "phr",
+  "m": [
+   "공유 드라이브"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Please save the final version of the report to the team's *shared drive*.",
+  "exKo": "보고서 최종본을 팀 공유 드라이브에 저장하기 바란다.",
+  "col": [
+   {
+    "e": "save to the shared drive",
+    "k": "공유 드라이브에 저장하다"
+   },
+   {
+    "e": "on the shared drive",
+    "k": "공유 드라이브에"
+   }
+  ],
+  "der": [],
+  "para": [
+   "shared folder",
+   "network drive"
+  ],
+  "ant": "",
+  "tip": "팀원 모두가 접근할 수 있는 네트워크 저장 공간을 뜻하며 save to / upload to the shared drive로 쓴다. Part 7에서 shared folder로 패러프레이즈된다.",
+  "q": {
+   "s": "All project files should be saved to the ------- so that every team member can access them.",
+   "o": [
+    "test drive",
+    "driveway",
+    "shared drive",
+    "sales drive"
+   ],
+   "a": 2,
+   "k": "모든 팀원이 접근할 수 있도록 파일을 저장하는 곳은 공유 드라이브이므로 shared drive가 정답이다. test drive(시승), driveway(진입로), sales drive(판매 촉진 운동)는 파일을 저장하는 곳이 아니다."
+  }
+ },
+ {
+  "w": "monitor",
+  "pos": "v",
+  "m": [
+   "감시하다, 관찰하다",
+   "(명사) 모니터, 화면"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "The IT team *monitors* network traffic around the clock to detect unusual activity.",
+  "exKo": "IT팀은 비정상적인 활동을 감지하기 위해 24시간 내내 네트워크 트래픽을 감시한다.",
+  "col": [
+   {
+    "e": "monitor closely",
+    "k": "면밀히 감시하다"
+   },
+   {
+    "e": "monitor progress",
+    "k": "진행 상황을 관찰하다"
+   },
+   {
+    "e": "computer monitor",
+    "k": "컴퓨터 모니터"
+   }
+  ],
+  "der": [
+   {
+    "w": "monitoring",
+    "pos": "n",
+    "m": "감시, 모니터링"
+   }
+  ],
+  "para": [
+   "track",
+   "oversee",
+   "keep an eye on"
+  ],
+  "ant": "",
+  "tip": "동사로 '감시하다, 추적 관찰하다'(monitor progress, monitor closely)라는 뜻이 Part 5·7에 자주 나오고, 명사 '모니터'는 Part 1 사무실 사진 묘사에 나온다.",
+  "q": {
+   "s": "Ms. Ortega's team is responsible for ------- the performance of the company's servers.",
+   "o": [
+    "monitor",
+    "monitored",
+    "monitors",
+    "monitoring"
+   ],
+   "a": 3,
+   "k": "전치사 for 뒤에서 목적어 the performance를 취하려면 동명사가 필요하므로 monitoring이 정답이다. monitor, monitors는 명사로 볼 경우 뒤의 목적어를 설명할 수 없고, monitored는 전치사 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "software update",
+  "pos": "phr",
+  "m": [
+   "소프트웨어 업데이트"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "A *software update* will be installed automatically on all office computers tonight.",
+  "exKo": "오늘 밤 모든 사무실 컴퓨터에 소프트웨어 업데이트가 자동으로 설치될 것이다.",
+  "col": [
+   {
+    "e": "install a software update",
+    "k": "소프트웨어 업데이트를 설치하다"
+   },
+   {
+    "e": "release a software update",
+    "k": "소프트웨어 업데이트를 배포하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "patch",
+   "new version"
+  ],
+  "ant": "",
+  "tip": "Part 4 공지에서 업데이트 설치 때문에 시스템이 잠시 중단된다는 내용이 빈출이다. 기존 프로그램을 고치는 update와 상위 제품으로 바꾸는 upgrade를 구분한다.",
+  "q": {
+   "s": "The ------- released this morning fixes several security problems found in the previous version.",
+   "o": [
+    "software engineer",
+    "hardware store",
+    "software update",
+    "technical support"
+   ],
+   "a": 2,
+   "k": "오늘 아침 배포되어 이전 버전의 보안 문제를 고치는 것은 소프트웨어 업데이트이므로 software update가 정답이다. software engineer(소프트웨어 엔지니어), hardware store(철물점), technical support(기술 지원)는 '배포되는' 대상이 아니다."
+  }
+ },
+ {
+  "w": "error message",
+  "pos": "phr",
+  "m": [
+   "오류 메시지"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "An *error message* appears every time I try to open the sales spreadsheet.",
+  "exKo": "판매 스프레드시트를 열려고 할 때마다 오류 메시지가 뜬다.",
+  "col": [
+   {
+    "e": "get an error message",
+    "k": "오류 메시지가 뜨다"
+   },
+   {
+    "e": "display an error message",
+    "k": "오류 메시지를 표시하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "warning",
+   "alert"
+  ],
+  "ant": "",
+  "tip": "get/receive an error message(오류 메시지가 뜨다)는 Part 3 기술 문제 대화의 단골 상황으로, '여자의 문제는 무엇인가'를 묻는 문항의 정답 단서가 된다.",
+  "q": {
+   "s": "If an ------- appears on the screen, write down the code and contact technical support.",
+   "o": [
+    "errand",
+    "error message",
+    "eraser",
+    "entrance"
+   ],
+   "a": 1,
+   "k": "화면에 나타나 코드를 적어 두고 기술 지원팀에 연락해야 하는 것은 오류 메시지이므로 error message가 정답이다. errand(심부름), eraser(지우개), entrance(입구)는 화면에 나타나는 것이 아니다."
+  }
+ },
+ {
+  "w": "antivirus",
+  "pos": "adj",
+  "m": [
+   "바이러스 방지의, (컴퓨터) 백신의"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "All laptops issued to new hires come with *antivirus* software already installed.",
+  "exKo": "신입 사원에게 지급되는 모든 노트북에는 백신 프로그램이 미리 설치되어 있다.",
+  "col": [
+   {
+    "e": "antivirus software",
+    "k": "백신 프로그램"
+   },
+   {
+    "e": "antivirus program",
+    "k": "바이러스 방지 프로그램"
+   }
+  ],
+  "der": [
+   {
+    "w": "virus",
+    "pos": "n",
+    "m": "(컴퓨터) 바이러스"
+   }
+  ],
+  "para": [
+   "virus protection",
+   "security software"
+  ],
+  "ant": "",
+  "tip": "antivirus software/program(백신 프로그램)처럼 명사 앞에서 쓰인다. 한국어의 '백신 프로그램'에 해당하며 Part 7에서 security software로 패러프레이즈된다.",
+  "q": {
+   "s": "Run the ------- program at least once a week to protect your computer from harmful files.",
+   "o": [
+    "antique",
+    "antisocial",
+    "antonym",
+    "antivirus"
+   ],
+   "a": 3,
+   "k": "해로운 파일로부터 컴퓨터를 보호하기 위해 실행하는 프로그램은 백신 프로그램이므로 antivirus가 정답이다. antique(골동품의), antisocial(반사회적인), antonym(반의어)은 program을 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "encryption",
+  "pos": "n",
+  "m": [
+   "암호화"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bank uses advanced *encryption* to protect customers' account information.",
+  "exKo": "그 은행은 고객의 계좌 정보를 보호하기 위해 고급 암호화 기술을 사용한다.",
+  "col": [
+   {
+    "e": "data encryption",
+    "k": "데이터 암호화"
+   },
+   {
+    "e": "encryption software",
+    "k": "암호화 소프트웨어"
+   }
+  ],
+  "der": [
+   {
+    "w": "encrypt",
+    "pos": "v",
+    "m": "암호화하다"
+   },
+   {
+    "w": "encrypted",
+    "pos": "adj",
+    "m": "암호화된"
+   }
+  ],
+  "para": [
+   "encoding",
+   "data protection"
+  ],
+  "ant": "decryption",
+  "tip": "동사 encrypt와 명사 encryption의 품사 구분이 출제되며 data encryption, encryption software 형태가 빈출이다.",
+  "q": {
+   "s": "All customer data is protected by -------, so it cannot be read by unauthorized users.",
+   "o": [
+    "encrypt",
+    "encryption",
+    "encrypted",
+    "encrypts"
+   ],
+   "a": 1,
+   "k": "전치사 by 뒤에는 명사가 와야 하므로 encryption이 정답이다. encrypt, encrypts는 동사이고, encrypted는 과거분사나 형용사라 전치사의 목적어가 될 수 없다."
+  }
+ },
+ {
+  "w": "username",
+  "pos": "n",
+  "m": [
+   "사용자 이름, 아이디"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Enter your *username* and password to view your monthly pay statements.",
+  "exKo": "월별 급여 명세서를 보려면 사용자 이름과 비밀번호를 입력하라.",
+  "col": [
+   {
+    "e": "username and password",
+    "k": "아이디와 비밀번호"
+   },
+   {
+    "e": "forget one's username",
+    "k": "아이디를 잊어버리다"
+   }
+  ],
+  "der": [
+   {
+    "w": "user",
+    "pos": "n",
+    "m": "사용자"
+   }
+  ],
+  "para": [
+   "user ID",
+   "login ID"
+  ],
+  "ant": "",
+  "tip": "username과 password는 짝지어 나오며 Part 3에서 'I forgot my username(아이디를 잊어버렸다)' 같은 로그인 문제 상황이 빈출이다. user ID, login ID와 같은 뜻이다.",
+  "q": {
+   "s": "Please enter the ------- and temporary password provided in the welcome e-mail.",
+   "o": [
+    "user",
+    "using",
+    "username",
+    "usage"
+   ],
+   "a": 2,
+   "k": "임시 비밀번호와 함께 입력하는 것은 사용자 이름이므로 username이 정답이다. user(사용자)는 사람이라 입력할 수 없고, using과 usage(사용량)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "technical",
+  "pos": "adj",
+  "m": [
+   "기술의, 기술적인",
+   "전문적인"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Our *technical* staff are available 24 hours a day to answer customer questions.",
+  "exKo": "우리 기술 담당 직원들은 고객 문의에 답하기 위해 하루 24시간 대기한다.",
+  "col": [
+   {
+    "e": "technical support",
+    "k": "기술 지원"
+   },
+   {
+    "e": "technical difficulties",
+    "k": "기술적 문제"
+   },
+   {
+    "e": "technical expertise",
+    "k": "전문 기술"
+   }
+  ],
+  "der": [
+   {
+    "w": "technician",
+    "pos": "n",
+    "m": "기술자"
+   },
+   {
+    "w": "technique",
+    "pos": "n",
+    "m": "기법, 기술"
+   },
+   {
+    "w": "technically",
+    "pos": "adv",
+    "m": "기술적으로, 엄밀히 말하면"
+   }
+  ],
+  "para": [
+   "technological",
+   "mechanical"
+  ],
+  "ant": "",
+  "tip": "technical difficulties(기술적 문제)는 Part 4 방송·발표에서 지연 이유로 자주 나온다. 사람명사 technician, 명사 technique와 구분하는 품사 문제가 출제된다.",
+  "q": {
+   "s": "The launch of the new website was postponed because of unexpected ------- problems.",
+   "o": [
+    "technical",
+    "technician",
+    "technique",
+    "technically"
+   ],
+   "a": 0,
+   "k": "명사 problems를 수식하는 형용사 자리이므로 technical이 정답이다. technician(기술자)과 technique(기법)는 명사, technically는 부사라 명사를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "hardware",
+  "pos": "n",
+  "m": [
+   "(컴퓨터) 하드웨어",
+   "철물, 공구"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "The company spent a large portion of its budget on new computer *hardware*.",
+  "exKo": "그 회사는 예산의 상당 부분을 새 컴퓨터 하드웨어에 썼다.",
+  "col": [
+   {
+    "e": "computer hardware",
+    "k": "컴퓨터 하드웨어"
+   },
+   {
+    "e": "hardware store",
+    "k": "철물점"
+   }
+  ],
+  "der": [],
+  "para": [
+   "equipment"
+  ],
+  "ant": "software",
+  "tip": "불가산명사라 a hardware, hardwares로 쓰지 않는다. hardware store(철물점)는 Part 1·3에 나오는 장소로, 컴퓨터와 무관한 '철물'이라는 뜻도 기억한다.",
+  "q": {
+   "s": "The IT department will replace outdated ------- such as old keyboards and printers next month.",
+   "o": [
+    "software",
+    "hardware",
+    "warehouse",
+    "warranty"
+   ],
+   "a": 1,
+   "k": "키보드와 프린터 같은 물리적 장비는 하드웨어이므로 hardware가 정답이다. software는 프로그램이라 키보드와 맞지 않고, warehouse(창고), warranty(품질 보증)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "passcode",
+  "pos": "n",
+  "m": [
+   "(숫자) 비밀번호, 암호"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "Visitors must enter a four-digit *passcode* to open the main door after 6 P.M.",
+  "exKo": "방문객은 오후 6시 이후에 정문을 열려면 네 자리 비밀번호를 입력해야 한다.",
+  "col": [
+   {
+    "e": "enter a passcode",
+    "k": "비밀번호를 입력하다"
+   },
+   {
+    "e": "four-digit passcode",
+    "k": "네 자리 비밀번호"
+   }
+  ],
+  "der": [],
+  "para": [
+   "password",
+   "access code",
+   "PIN"
+  ],
+  "ant": "",
+  "tip": "숫자로 된 비밀번호를 가리키는 경우가 많으며 password, access code, PIN과 패러프레이즈된다. Part 3·4에서 '문을 열려면 무엇이 필요한가'를 묻는 문항의 단서로 나온다.",
+  "q": {
+   "s": "Each employee receives a personal ------- that unlocks the door to the server room.",
+   "o": [
+    "passcode",
+    "passage",
+    "passenger",
+    "passport"
+   ],
+   "a": 0,
+   "k": "서버실 문을 여는 개인 비밀번호를 가리키므로 passcode가 정답이다. passage(통로, 구절), passenger(승객), passport(여권)는 문을 여는 수단이 아니다."
+  }
+ },
+ {
+  "w": "bug",
+  "pos": "n",
+  "m": [
+   "(프로그램의) 오류, 결함",
+   "벌레"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Developers are working to fix a *bug* that causes the app to close unexpectedly.",
+  "exKo": "개발자들은 앱이 예기치 않게 종료되는 오류를 고치기 위해 작업하고 있다.",
+  "col": [
+   {
+    "e": "fix a bug",
+    "k": "오류를 수정하다"
+   },
+   {
+    "e": "software bug",
+    "k": "소프트웨어 결함"
+   }
+  ],
+  "der": [],
+  "para": [
+   "glitch",
+   "error",
+   "defect"
+  ],
+  "ant": "",
+  "tip": "소프트웨어의 결함을 뜻하며 fix a bug(오류를 수정하다)로 쓴다. Part 7에서 glitch, error, technical problem으로 패러프레이즈된다.",
+  "q": {
+   "s": "The new version of the app was delayed after testers discovered a serious -------.",
+   "o": [
+    "bargain",
+    "bonus",
+    "bug",
+    "budget"
+   ],
+   "a": 2,
+   "k": "테스트 담당자가 발견해 앱 출시를 늦춘 것은 심각한 오류이므로 bug가 정답이다. bargain(할인 상품), bonus(보너스), budget(예산)은 테스트 중에 '발견되어' 출시를 지연시키는 대상이 아니다."
+  }
+ },
+ {
+  "w": "portal",
+  "pos": "n",
+  "m": [
+   "(웹) 포털, 접속 사이트",
+   "(웅장한) 정문"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Customers can pay their bills and track orders through our online *portal*.",
+  "exKo": "고객은 온라인 포털을 통해 요금을 납부하고 주문을 추적할 수 있다.",
+  "col": [
+   {
+    "e": "online portal",
+    "k": "온라인 포털"
+   },
+   {
+    "e": "customer portal",
+    "k": "고객 포털"
+   },
+   {
+    "e": "employee portal",
+    "k": "직원 포털"
+   }
+  ],
+  "der": [],
+  "para": [
+   "website",
+   "online platform"
+  ],
+  "ant": "",
+  "tip": "고객이나 직원이 로그인해 여러 서비스를 이용하는 웹사이트를 가리키며 through/via the portal로 쓴다. 철자가 비슷한 portion(부분)과 혼동하지 않도록 한다.",
+  "q": {
+   "s": "Students can check their grades and register for classes through the university's online -------.",
+   "o": [
+    "portion",
+    "portal",
+    "portrait",
+    "porter"
+   ],
+   "a": 1,
+   "k": "성적을 확인하고 수강 신청을 하는 온라인 사이트이므로 portal이 정답이다. portion(부분), portrait(초상화), porter(짐꾼)는 online과 어울려 서비스를 이용하는 곳이 되지 않는다."
+  }
+ },
+ {
+  "w": "cloud",
+  "pos": "n",
+  "m": [
+   "(인터넷 저장 공간) 클라우드",
+   "구름"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The firm moved its customer records to a secure *cloud* platform last year.",
+  "exKo": "그 회사는 작년에 고객 기록을 안전한 클라우드 플랫폼으로 옮겼다.",
+  "col": [
+   {
+    "e": "store in the cloud",
+    "k": "클라우드에 저장하다"
+   },
+   {
+    "e": "cloud storage",
+    "k": "클라우드 저장 공간"
+   },
+   {
+    "e": "cloud-based",
+    "k": "클라우드 기반의"
+   }
+  ],
+  "der": [],
+  "para": [
+   "online storage"
+  ],
+  "ant": "",
+  "tip": "in the cloud(클라우드에)처럼 the와 함께 쓰며 cloud storage, cloud-based service 형태가 빈출이다. Part 7에서 online storage로 패러프레이즈된다.",
+  "q": {
+   "s": "Because the files are stored in the -------, employees can access them from any device.",
+   "o": [
+    "crowd",
+    "cloud",
+    "cloth",
+    "clout"
+   ],
+   "a": 1,
+   "k": "어느 기기에서든 접근할 수 있도록 파일이 저장된 곳은 클라우드이므로 cloud가 정답이다. crowd(군중), cloth(천), clout(영향력)는 파일 저장 장소가 아니다."
+  }
+ },
+ {
+  "w": "corrupted",
+  "pos": "adj",
+  "m": [
+   "(파일·데이터가) 손상된"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Mr. Lopez could not open the attachment because the file was *corrupted*.",
+  "exKo": "파일이 손상되어 Lopez 씨는 첨부 파일을 열 수 없었다.",
+  "col": [
+   {
+    "e": "corrupted file",
+    "k": "손상된 파일"
+   },
+   {
+    "e": "corrupted data",
+    "k": "손상된 데이터"
+   }
+  ],
+  "der": [
+   {
+    "w": "corrupt",
+    "pos": "v",
+    "m": "(데이터를) 손상시키다"
+   },
+   {
+    "w": "corruption",
+    "pos": "n",
+    "m": "(데이터) 손상, 부패"
+   }
+  ],
+  "para": [
+   "damaged",
+   "unreadable"
+  ],
+  "ant": "",
+  "tip": "corrupted file(손상된 파일)이 대표 연어이며 '부패한'이라는 뜻의 corrupt와 같은 어원이다. 철자가 비슷한 corrected(수정된)와 혼동시키는 문제가 나온다.",
+  "q": {
+   "s": "The presentation file appears to be -------, so please send me another copy.",
+   "o": [
+    "corrected",
+    "corrupted",
+    "connected",
+    "committed"
+   ],
+   "a": 1,
+   "k": "다른 사본을 보내 달라고 하는 이유는 파일이 손상되었기 때문이므로 corrupted가 정답이다. corrected(수정된)라면 새 사본이 필요 없고, connected(연결된), committed(헌신적인)는 파일 상태로 맞지 않는다."
+  }
+ },
+ {
+  "w": "link",
+  "pos": "n",
+  "m": [
+   "(인터넷) 링크",
+   "연결, 관련"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Click the *link* in the e-mail to confirm your registration for the workshop.",
+  "exKo": "워크숍 등록을 확정하려면 이메일에 있는 링크를 클릭하라.",
+  "col": [
+   {
+    "e": "click on the link",
+    "k": "링크를 클릭하다"
+   },
+   {
+    "e": "a link to",
+    "k": "~로 연결되는 링크"
+   },
+   {
+    "e": "a link between",
+    "k": "~ 사이의 연관성"
+   }
+  ],
+  "der": [
+   {
+    "w": "linked",
+    "pos": "adj",
+    "m": "연결된, 관련된"
+   }
+  ],
+  "para": [
+   "hyperlink",
+   "connection"
+  ],
+  "ant": "",
+  "tip": "click (on) the link, a link to the Web site처럼 쓰며, 동사 link A to/with B(A를 B와 연결하다) 구문도 출제된다.",
+  "q": {
+   "s": "To reset your password, simply click the ------- included in this message.",
+   "o": [
+    "lid",
+    "link",
+    "lease",
+    "loan"
+   ],
+   "a": 1,
+   "k": "비밀번호를 재설정하기 위해 메시지 안에서 클릭하는 것은 링크이므로 link가 정답이다. lid(뚜껑), lease(임대차 계약), loan(대출)은 클릭하는 대상이 아니다."
+  }
+ },
+ {
+  "w": "malware",
+  "pos": "n",
+  "m": [
+   "악성 소프트웨어, 악성 코드"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Opening attachments from unknown senders can infect your computer with *malware*.",
+  "exKo": "모르는 발신자의 첨부 파일을 열면 컴퓨터가 악성 코드에 감염될 수 있다.",
+  "col": [
+   {
+    "e": "detect malware",
+    "k": "악성 코드를 탐지하다"
+   },
+   {
+    "e": "infected with malware",
+    "k": "악성 코드에 감염된"
+   }
+  ],
+  "der": [],
+  "para": [
+   "virus",
+   "harmful software"
+  ],
+  "ant": "",
+  "tip": "malicious(악의적인)와 software가 합쳐진 말로 불가산명사다. Part 7 보안 공지에서 virus, harmful software로 패러프레이즈된다.",
+  "q": {
+   "s": "The security team installed new software to detect ------- before it can damage the network.",
+   "o": [
+    "hardware",
+    "freeware",
+    "malware",
+    "firmware"
+   ],
+   "a": 2,
+   "k": "네트워크에 피해를 주기 전에 탐지해야 하는 것은 악성 소프트웨어이므로 malware가 정답이다. hardware(하드웨어), freeware(무료 소프트웨어), firmware(펌웨어)는 그 자체로 네트워크를 해치는 것이 아니다."
+  }
+ },
+ {
+  "w": "browser",
+  "pos": "n",
+  "m": [
+   "(웹) 브라우저"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "For the best experience, please use the latest version of your web *browser*.",
+  "exKo": "최적의 이용을 위해 웹 브라우저의 최신 버전을 사용하기 바란다.",
+  "col": [
+   {
+    "e": "web browser",
+    "k": "웹 브라우저"
+   },
+   {
+    "e": "open a browser",
+    "k": "브라우저를 열다"
+   }
+  ],
+  "der": [
+   {
+    "w": "browse",
+    "pos": "v",
+    "m": "(인터넷을) 검색하다, 둘러보다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "동사 browse는 '(웹을) 검색하다' 외에 '(가게에서) 둘러보다'라는 뜻이 있어 Part 2·3에서 'I'm just browsing(그냥 둘러보는 중이에요)'으로 자주 나온다. 프로그램을 가리키는 명사는 browser다.",
+  "q": {
+   "s": "The online form works best with the most recent version of a web -------.",
+   "o": [
+    "browser",
+    "browse",
+    "browsed",
+    "browsing"
+   ],
+   "a": 0,
+   "k": "관사 a와 함께 쓰여 프로그램을 가리키는 가산명사가 필요하므로 browser가 정답이다. browse와 browsed는 동사 형태이고, browsing은 불가산 동명사라 a web 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "inbox",
+  "pos": "n",
+  "m": [
+   "(이메일) 받은 편지함"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Ms. Diaz receives more than a hundred messages in her *inbox* every day.",
+  "exKo": "Diaz 씨의 받은 편지함에는 매일 백 통이 넘는 메시지가 들어온다.",
+  "col": [
+   {
+    "e": "in one's inbox",
+    "k": "받은 편지함에"
+   },
+   {
+    "e": "check one's inbox",
+    "k": "받은 편지함을 확인하다"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "outbox",
+  "tip": "in one's inbox(받은 편지함에)처럼 전치사 in과 쓰며, Part 3·4에서 '이메일이 보이지 않으면 스팸 메일함을 확인하라'는 안내와 함께 나온다.",
+  "q": {
+   "s": "If you do not see our confirmation e-mail in your -------, please check your junk mail folder.",
+   "o": [
+    "input",
+    "intake",
+    "inbox",
+    "index"
+   ],
+   "a": 2,
+   "k": "확인 이메일이 와야 할 곳은 받은 편지함이므로 inbox가 정답이다. input(입력), intake(섭취량), index(색인)는 이메일이 도착하는 곳이 아니다."
+  }
+ },
+ {
+  "w": "spam",
+  "pos": "n",
+  "m": [
+   "스팸 메일"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The new e-mail filter blocks most *spam* before it reaches employees.",
+  "exKo": "새 이메일 필터는 대부분의 스팸 메일이 직원들에게 도달하기 전에 차단한다.",
+  "col": [
+   {
+    "e": "spam folder",
+    "k": "스팸 메일함"
+   },
+   {
+    "e": "spam filter",
+    "k": "스팸 필터"
+   }
+  ],
+  "der": [],
+  "para": [
+   "junk mail"
+  ],
+  "ant": "",
+  "tip": "불가산명사로 spam e-mail, spam folder(스팸 메일함) 형태로 쓴다. Part 7에서 junk mail, unwanted e-mail로 패러프레이즈된다.",
+  "q": {
+   "s": "Our client's reply was accidentally sent to the ------- folder, so I didn't see it until today.",
+   "o": [
+    "span",
+    "spark",
+    "spade",
+    "spam"
+   ],
+   "a": 3,
+   "k": "고객의 답장이 실수로 들어가 오늘에서야 발견된 곳은 스팸 메일함이므로 spam이 정답이다. span(기간), spark(불꽃), spade(삽)는 folder와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "notification",
+  "pos": "n",
+  "m": [
+   "알림, 통지"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Customers will receive a *notification* by text message when their order ships.",
+  "exKo": "고객은 주문 상품이 발송되면 문자 메시지로 알림을 받게 된다.",
+  "col": [
+   {
+    "e": "receive notification of",
+    "k": "~의 통지를 받다"
+   },
+   {
+    "e": "advance notification",
+    "k": "사전 통지"
+   },
+   {
+    "e": "written notification",
+    "k": "서면 통지"
+   }
+  ],
+  "der": [
+   {
+    "w": "notify",
+    "pos": "v",
+    "m": "통지하다, 알리다"
+   },
+   {
+    "w": "notice",
+    "pos": "n",
+    "m": "공지, 통지"
+   }
+  ],
+  "para": [
+   "notice",
+   "alert"
+  ],
+  "ant": "",
+  "tip": "notify A of B(A에게 B를 알리다) 구문의 명사형으로, receive notification of ~, advance notification(사전 통지)이 빈출이다.",
+  "q": {
+   "s": "Successful candidates will receive written ------- of the hiring decision within two weeks.",
+   "o": [
+    "notify",
+    "notification",
+    "notified",
+    "notifying"
+   ],
+   "a": 1,
+   "k": "동사 receive의 목적어이자 형용사 written의 수식을 받는 명사 자리이므로 notification이 정답이다. notify는 동사, notified와 notifying은 분사라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "diagnostic",
+  "pos": "adj",
+  "m": [
+   "진단의, 진단용의"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The technician ran a *diagnostic* test to find out why the printer kept jamming.",
+  "exKo": "기술자는 프린터에 계속 종이가 걸리는 이유를 알아내기 위해 진단 검사를 실행했다.",
+  "col": [
+   {
+    "e": "diagnostic test",
+    "k": "진단 검사"
+   },
+   {
+    "e": "run a diagnostic check",
+    "k": "진단 점검을 실행하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "diagnose",
+    "pos": "v",
+    "m": "진단하다"
+   },
+   {
+    "w": "diagnosis",
+    "pos": "n",
+    "m": "진단"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "run a diagnostic test/check(진단 검사를 실행하다)로 쓰며 동사 diagnose, 명사 diagnosis와의 품사 구분이 출제된다. 명사로 '진단 프로그램'이라는 뜻도 있다.",
+  "q": {
+   "s": "Before replacing the hard drive, the technician will run a ------- check on the computer.",
+   "o": [
+    "diagnose",
+    "diagnosed",
+    "diagnoses",
+    "diagnostic"
+   ],
+   "a": 3,
+   "k": "명사 check를 수식해 '진단 점검'이라는 뜻을 만드는 형용사 diagnostic이 정답이다. diagnose는 동사, diagnoses는 동사의 3인칭 단수형 또는 diagnosis의 복수형이며, diagnosed(진단받은)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "cable",
+  "pos": "n",
+  "m": [
+   "케이블, 전선"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "Make sure the power *cable* is firmly connected before turning on the projector.",
+  "exKo": "프로젝터를 켜기 전에 전원 케이블이 단단히 연결되어 있는지 확인하라.",
+  "col": [
+   {
+    "e": "power cable",
+    "k": "전원 케이블"
+   },
+   {
+    "e": "connect a cable",
+    "k": "케이블을 연결하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "cord",
+   "wire"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 'Cables are plugged into the wall(케이블이 벽 콘센트에 꽂혀 있다)'처럼 묘사된다. power cable, cable TV 등 복합명사로 자주 쓰인다.",
+  "q": {
+   "s": "Several ------- are lying on the floor beneath the desk.",
+   "o": [
+    "cables",
+    "capitals",
+    "cabins",
+    "captions"
+   ],
+   "a": 0,
+   "k": "책상 아래 바닥에 놓여 있을 수 있는 것은 케이블이므로 cables가 정답이다. capitals(수도, 대문자), cabins(오두막, 객실), captions(설명문)는 책상 아래 바닥에 놓여 있을 수 있는 물건이 아니다."
+  }
+ },
+ {
+  "w": "charger",
+  "pos": "n",
+  "m": [
+   "충전기"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "I left my phone *charger* at the hotel, so I need to buy a new one.",
+  "exKo": "휴대폰 충전기를 호텔에 두고 와서 새것을 사야 한다.",
+  "col": [
+   {
+    "e": "phone charger",
+    "k": "휴대폰 충전기"
+   },
+   {
+    "e": "wireless charger",
+    "k": "무선 충전기"
+   }
+  ],
+  "der": [
+   {
+    "w": "charge",
+    "pos": "v",
+    "m": "충전하다, (요금을) 청구하다"
+   },
+   {
+    "w": "rechargeable",
+    "pos": "adj",
+    "m": "충전식의"
+   }
+  ],
+  "para": [
+   "adapter"
+  ],
+  "ant": "",
+  "tip": "동사 charge는 '충전하다' 외에 '요금을 청구하다'라는 뜻으로 Part 5에 더 자주 나온다. 사물명사 charger와 동사 charge를 구분한다.",
+  "q": {
+   "s": "Each room in the hotel is equipped with a wireless phone ------- on the nightstand.",
+   "o": [
+    "charge",
+    "charging",
+    "charger",
+    "charged"
+   ],
+   "a": 2,
+   "k": "관사 a와 wireless phone 뒤에서 기기를 가리키는 명사가 필요하므로 charger가 정답이다. charge는 '요금, 책임'이라는 뜻이라 맞지 않고, charging과 charged는 기기를 나타내는 명사가 될 수 없다."
+  }
+ },
+ {
+  "w": "plug in",
+  "pos": "phr",
+  "m": [
+   "(전원에) 플러그를 꽂다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "The coffee machine won't start because nobody *plugged* it *in*.",
+  "exKo": "아무도 플러그를 꽂지 않아서 커피 머신이 작동하지 않는다.",
+  "col": [
+   {
+    "e": "plug in a device",
+    "k": "기기의 플러그를 꽂다"
+   },
+   {
+    "e": "be plugged into",
+    "k": "~에 꽂혀 있다"
+   }
+  ],
+  "der": [
+   {
+    "w": "unplug",
+    "pos": "v",
+    "m": "플러그를 뽑다"
+   }
+  ],
+  "para": [
+   "connect"
+  ],
+  "ant": "unplug",
+  "tip": "plug in A 또는 plug A in 어순으로 쓰며, 목적어가 대명사이면 반드시 plug it in이 된다. Part 1에서는 'is plugged into an outlet(콘센트에 꽂혀 있다)'로 나온다.",
+  "q": {
+   "s": "Please ------- the laptop before your presentation, because the battery is almost empty.",
+   "o": [
+    "sign in",
+    "check in",
+    "fill in",
+    "plug in"
+   ],
+   "a": 3,
+   "k": "배터리가 거의 없으므로 노트북의 플러그를 꽂으라는 뜻의 plug in이 정답이다. sign in(로그인하다), check in(투숙·탑승 수속을 하다), fill in(기입하다)은 the laptop을 목적어로 받아 배터리 문제를 해결하지 못한다."
+  }
+ },
+ {
+  "w": "workaround",
+  "pos": "n",
+  "m": [
+   "임시 해결책, 우회 방법"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Until the problem is fixed, the support team suggested a simple *workaround*.",
+  "exKo": "문제가 해결될 때까지 지원팀은 간단한 임시 해결책을 제안했다.",
+  "col": [
+   {
+    "e": "temporary workaround",
+    "k": "임시 해결책"
+   },
+   {
+    "e": "find a workaround",
+    "k": "우회 방법을 찾다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "temporary solution",
+   "alternative method"
+  ],
+  "ant": "",
+  "tip": "문제를 근본적으로 해결하기 전에 쓰는 '임시 해결책'을 뜻하며 temporary workaround가 자주 쓰인다. Part 7에서 temporary solution으로 패러프레이즈된다.",
+  "q": {
+   "s": "Until the printer is repaired, a temporary ------- is to send documents to the copier on the second floor.",
+   "o": [
+    "workaround",
+    "workforce",
+    "workload",
+    "workshop"
+   ],
+   "a": 0,
+   "k": "프린터가 수리될 때까지 2층 복사기로 문서를 보내는 것은 임시 해결책이므로 workaround가 정답이다. workforce(인력), workload(업무량), workshop(작업장, 연수회)은 '방법'을 설명하는 주어가 될 수 없다."
+  }
+ },
+ {
+  "w": "reinstall",
+  "pos": "v",
+  "m": [
+   "다시 설치하다, 재설치하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "The technician had to *reinstall* the accounting software after the system crashed.",
+  "exKo": "시스템이 다운된 후 기술자는 회계 소프트웨어를 다시 설치해야 했다.",
+  "col": [
+   {
+    "e": "reinstall the software",
+    "k": "소프트웨어를 재설치하다"
+   },
+   {
+    "e": "uninstall and reinstall",
+    "k": "삭제 후 재설치하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "install",
+    "pos": "v",
+    "m": "설치하다"
+   },
+   {
+    "w": "installation",
+    "pos": "n",
+    "m": "설치"
+   }
+  ],
+  "para": [
+   "install again"
+  ],
+  "ant": "uninstall",
+  "tip": "re-(다시)와 install이 합쳐진 말로, Part 3 기술 지원 대화에서 문제 해결을 위한 제안(Why don't you reinstall ~?)으로 자주 나온다.",
+  "q": {
+   "s": "If the program continues to freeze, uninstall it and then ------- it from our website.",
+   "o": [
+    "reinforce",
+    "reimburse",
+    "renovate",
+    "reinstall"
+   ],
+   "a": 3,
+   "k": "프로그램을 삭제한 뒤 웹사이트에서 '다시 설치하라'는 흐름이므로 reinstall이 정답이다. reinforce(강화하다), reimburse(상환하다), renovate(개조하다)는 프로그램과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "shut down",
+  "pos": "phr",
+  "m": [
+   "(컴퓨터·기계를) 끄다",
+   "(공장·가게를) 폐쇄하다, 가동을 중단하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Please *shut down* your computer before leaving the office on Friday.",
+  "exKo": "금요일에 퇴근하기 전에 컴퓨터를 꺼 주기 바란다.",
+  "col": [
+   {
+    "e": "shut down a computer",
+    "k": "컴퓨터를 끄다"
+   },
+   {
+    "e": "shut down operations",
+    "k": "운영을 중단하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "shutdown",
+    "pos": "n",
+    "m": "가동 중단, 폐쇄"
+   }
+  ],
+  "para": [
+   "turn off",
+   "close"
+  ],
+  "ant": "start up",
+  "tip": "'(컴퓨터를) 끄다' 외에 '(공장·영업을) 중단하다, 폐쇄하다'라는 뜻으로 Part 4·7에 자주 나온다. 명사형 shutdown(가동 중단)은 붙여 쓴다.",
+  "q": {
+   "s": "The factory will ------- its main production line for two days to install new equipment.",
+   "o": [
+    "turn up",
+    "give in",
+    "run out",
+    "shut down"
+   ],
+   "a": 3,
+   "k": "새 장비를 설치하기 위해 이틀간 생산 라인의 '가동을 중단한다'는 뜻이므로 shut down이 정답이다. turn up(나타나다, 소리를 높이다), give in(굴복하다), run out(다 떨어지다)은 production line을 목적어로 받아 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "reboot",
+  "pos": "v",
+  "m": [
+   "(컴퓨터를) 재부팅하다, 다시 시작하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "Try *rebooting* the router if the Internet connection is slow.",
+  "exKo": "인터넷 연결이 느리면 공유기를 재부팅해 보라.",
+  "col": [
+   {
+    "e": "reboot the system",
+    "k": "시스템을 재부팅하다"
+   },
+   {
+    "e": "reboot a computer",
+    "k": "컴퓨터를 재부팅하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "restart"
+  ],
+  "ant": "",
+  "tip": "restart와 같은 뜻으로 Part 3 기술 지원 대화에서 문제 해결책으로 자주 제시된다. 명사로도 쓰여 a quick reboot(빠른 재부팅)라고 한다.",
+  "q": {
+   "s": "After the update is installed, you will need to ------- your computer for the changes to take effect.",
+   "o": [
+    "rebate",
+    "rebound",
+    "reboot",
+    "rebuke"
+   ],
+   "a": 2,
+   "k": "업데이트를 적용하려면 컴퓨터를 '다시 시작해야' 하므로 reboot가 정답이다. rebate(환급하다), rebound(되튀다, 회복하다), rebuke(꾸짖다)는 컴퓨터와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "outage",
+  "pos": "n",
+  "m": [
+   "(전기·서비스의) 중단, 정전"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "A power *outage* forced the store to close early on Tuesday afternoon.",
+  "exKo": "정전으로 그 가게는 화요일 오후에 일찍 문을 닫아야 했다.",
+  "col": [
+   {
+    "e": "power outage",
+    "k": "정전"
+   },
+   {
+    "e": "service outage",
+    "k": "서비스 중단"
+   },
+   {
+    "e": "network outage",
+    "k": "네트워크 장애"
+   }
+  ],
+  "der": [],
+  "para": [
+   "blackout",
+   "interruption",
+   "disruption"
+  ],
+  "ant": "",
+  "tip": "power outage(정전), service outage(서비스 중단)가 공지문 빈출이며 Part 7에서 interruption, disruption으로 패러프레이즈된다.",
+  "q": {
+   "s": "Customers were unable to access their accounts during the two-hour network -------.",
+   "o": [
+    "outlet",
+    "outline",
+    "outage",
+    "outcome"
+   ],
+   "a": 2,
+   "k": "고객들이 계정에 접속하지 못한 2시간은 네트워크 장애 기간이므로 outage가 정답이다. outlet(콘센트, 매장), outline(개요), outcome(결과)은 during과 어울려 접속 불가의 원인이 되지 않는다."
+  }
+ },
+ {
+  "w": "tablet",
+  "pos": "n",
+  "m": [
+   "태블릿 컴퓨터",
+   "알약, 정제"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "Servers at the restaurant take orders on a *tablet* and send them directly to the kitchen.",
+  "exKo": "그 식당의 종업원들은 태블릿으로 주문을 받아 주방으로 바로 전송한다.",
+  "col": [
+   {
+    "e": "tablet computer",
+    "k": "태블릿 컴퓨터"
+   },
+   {
+    "e": "on a tablet",
+    "k": "태블릿으로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "device"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 'A woman is using a tablet(여자가 태블릿을 사용하고 있다)'으로 나오며, 약국·의료 지문에서는 '알약'이라는 뜻으로 쓰인다.",
+  "q": {
+   "s": "Each sales representative was given a ------- to show product catalogs to clients during visits.",
+   "o": [
+    "tablet",
+    "label",
+    "ballot",
+    "pallet"
+   ],
+   "a": 0,
+   "k": "방문 중 고객에게 제품 카탈로그를 보여 주는 기기이므로 tablet이 정답이다. label(상표, 라벨), ballot(투표용지), pallet(화물 운반대)은 카탈로그를 보여 주는 도구가 아니다."
+  }
+ },
+ {
+  "w": "compatibility",
+  "pos": "n",
+  "m": [
+   "호환성",
+   "양립 가능성"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Before buying new software, check its *compatibility* with your operating system.",
+  "exKo": "새 소프트웨어를 사기 전에 운영 체제와의 호환성을 확인하라.",
+  "col": [
+   {
+    "e": "compatibility with",
+    "k": "~와의 호환성"
+   },
+   {
+    "e": "compatibility issues",
+    "k": "호환성 문제"
+   }
+  ],
+  "der": [
+   {
+    "w": "compatible",
+    "pos": "adj",
+    "m": "호환되는"
+   }
+  ],
+  "para": [],
+  "ant": "incompatibility",
+  "tip": "형용사 compatible(be compatible with ~와 호환되다)과 명사 compatibility의 품사 구분이 출제되며 두 형태 모두 전치사 with와 함께 쓴다.",
+  "q": {
+   "s": "The software's ------- with older computers makes it popular among small businesses.",
+   "o": [
+    "compatibility",
+    "compatible",
+    "compatibly",
+    "compete"
+   ],
+   "a": 0,
+   "k": "소유격 The software's 뒤에서 문장의 주어가 되는 명사 자리이므로 compatibility가 정답이다. compatible은 형용사, compatibly는 부사, compete는 동사다."
+  }
+ },
+ {
+  "w": "IT department",
+  "pos": "phr",
+  "m": [
+   "정보기술부, 전산팀"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Please contact the *IT department* if you need a new laptop or keyboard.",
+  "exKo": "새 노트북이나 키보드가 필요하면 전산팀에 연락하기 바란다.",
+  "col": [
+   {
+    "e": "contact the IT department",
+    "k": "전산팀에 연락하다"
+   },
+   {
+    "e": "IT department staff",
+    "k": "전산팀 직원"
+   }
+  ],
+  "der": [],
+  "para": [
+   "technical support",
+   "tech support team"
+  ],
+  "ant": "",
+  "tip": "Part 3·4에서 컴퓨터·네트워크 문제가 생겼을 때 '누구에게 연락하는가'를 묻는 문항의 정답이 된다. technical support, tech support team으로 패러프레이즈된다.",
+  "q": {
+   "s": "Mr. Park works in the ------- and is responsible for maintaining the company's servers.",
+   "o": [
+    "legal department",
+    "IT department",
+    "sales department",
+    "shipping department"
+   ],
+   "a": 1,
+   "k": "회사 서버 유지·관리를 책임지는 부서는 전산팀이므로 IT department가 정답이다. legal department(법무팀), sales department(영업부), shipping department(배송부)는 서버 관리를 맡지 않는다."
+  }
+ },
+ {
+  "w": "administrator",
+  "pos": "n",
+  "m": [
+   "관리자, 운영자",
+   "행정관"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Only the system *administrator* can change the security settings on the server.",
+  "exKo": "시스템 관리자만 서버의 보안 설정을 변경할 수 있다.",
+  "col": [
+   {
+    "e": "system administrator",
+    "k": "시스템 관리자"
+   },
+   {
+    "e": "network administrator",
+    "k": "네트워크 관리자"
+   }
+  ],
+  "der": [
+   {
+    "w": "administer",
+    "pos": "v",
+    "m": "관리하다, 집행하다"
+   },
+   {
+    "w": "administration",
+    "pos": "n",
+    "m": "관리, 행정"
+   },
+   {
+    "w": "administrative",
+    "pos": "adj",
+    "m": "행정의, 관리의"
+   }
+  ],
+  "para": [
+   "manager",
+   "supervisor"
+  ],
+  "ant": "",
+  "tip": "사람명사 administrator와 명사 administration, 형용사 administrative(administrative assistant 행정 비서)를 구분하는 품사 문제가 자주 나온다.",
+  "q": {
+   "s": "Contact the network ------- if you are unable to connect to the shared printers.",
+   "o": [
+    "administrator",
+    "administrative",
+    "administer",
+    "administered"
+   ],
+   "a": 0,
+   "k": "contact의 목적어로 연락할 수 있는 '사람'이 필요하므로 network administrator를 이루는 administrator가 정답이다. administrative는 형용사, administer는 동사, administered는 과거분사라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "permission",
+  "pos": "n",
+  "m": [
+   "허가, 허락",
+   "(접근) 권한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "You need *permission* from your manager to install programs on a work computer.",
+  "exKo": "업무용 컴퓨터에 프로그램을 설치하려면 관리자의 허가가 필요하다.",
+  "col": [
+   {
+    "e": "permission to do",
+    "k": "~해도 된다는 허가"
+   },
+   {
+    "e": "with permission from",
+    "k": "~의 허락을 받아"
+   },
+   {
+    "e": "obtain permission",
+    "k": "허가를 받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "permit",
+    "pos": "v",
+    "m": "허락하다"
+   },
+   {
+    "w": "permissible",
+    "pos": "adj",
+    "m": "허용되는"
+   }
+  ],
+  "para": [
+   "approval",
+   "authorization",
+   "consent"
+  ],
+  "ant": "",
+  "tip": "permission은 불가산명사라 a permission으로 쓰지 않으며, 가산명사 permit(허가증)과 구분한다. permission to do, with permission from ~ 형태가 빈출이다.",
+  "q": {
+   "s": "Visitors must obtain ------- before taking photographs inside the factory.",
+   "o": [
+    "permission",
+    "permit",
+    "permitted",
+    "permissive"
+   ],
+   "a": 0,
+   "k": "관사 없이 obtain의 목적어가 될 수 있는 불가산명사 permission이 정답이다. permit(허가증)은 가산명사라 a permit처럼 관사가 필요하고, permitted와 permissive(관대한)는 명사가 아니다."
+  }
+ },
+ {
+  "w": "authentication",
+  "pos": "n",
+  "m": [
+   "인증, (신원) 확인"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The new login system requires two-step *authentication* for all remote users.",
+  "exKo": "새 로그인 시스템은 모든 원격 사용자에게 2단계 인증을 요구한다.",
+  "col": [
+   {
+    "e": "two-step authentication",
+    "k": "2단계 인증"
+   },
+   {
+    "e": "user authentication",
+    "k": "사용자 인증"
+   }
+  ],
+  "der": [
+   {
+    "w": "authenticate",
+    "pos": "v",
+    "m": "인증하다, 진짜임을 증명하다"
+   },
+   {
+    "w": "authentic",
+    "pos": "adj",
+    "m": "진짜의, 진품인"
+   }
+  ],
+  "para": [
+   "verification"
+  ],
+  "ant": "",
+  "tip": "two-factor/two-step authentication(2단계 인증)이 보안 공지의 빈출 표현이다. 같은 어원의 형용사 authentic(진품인, 진정한)도 함께 기억한다.",
+  "q": {
+   "s": "For added security, users must complete an extra ------- step when logging in from a new device.",
+   "o": [
+    "authority",
+    "authorship",
+    "autograph",
+    "authentication"
+   ],
+   "a": 3,
+   "k": "새 기기에서 로그인할 때 보안을 위해 거치는 추가 단계는 인증 절차이므로 authentication이 정답이다. authority(권한, 당국), authorship(저자임), autograph(사인)는 step과 어울려 보안 절차가 되지 않는다."
+  }
+ },
+ {
+  "w": "retrieve",
+  "pos": "v",
+  "m": [
+   "(데이터를) 복구하다, 불러오다",
+   "되찾다, 회수하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The technician was able to *retrieve* most of the deleted files from the backup.",
+  "exKo": "기술자는 백업에서 삭제된 파일 대부분을 복구할 수 있었다.",
+  "col": [
+   {
+    "e": "retrieve data",
+    "k": "데이터를 복구하다"
+   },
+   {
+    "e": "retrieve one's luggage",
+    "k": "짐을 찾다"
+   }
+  ],
+  "der": [
+   {
+    "w": "retrieval",
+    "pos": "n",
+    "m": "회수, 검색"
+   }
+  ],
+  "para": [
+   "recover",
+   "get back",
+   "collect"
+  ],
+  "ant": "",
+  "tip": "retrieve data/files(데이터를 복구하다)뿐 아니라 retrieve one's luggage(짐을 찾다)처럼 '되찾아 오다'라는 뜻으로도 쓰인다. 명사형은 retrieval이다.",
+  "q": {
+   "s": "Guests can ------- their cars from the valet stand by showing their parking ticket.",
+   "o": [
+    "retire",
+    "retrieve",
+    "retreat",
+    "retail"
+   ],
+   "a": 1,
+   "k": "주차 티켓을 보여 주고 대리 주차 데스크에서 차를 '되찾아 간다'는 뜻이므로 retrieve가 정답이다. retire(은퇴하다), retreat(후퇴하다), retail(소매로 팔다)은 their cars from과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "fax",
+  "pos": "n",
+  "m": [
+   "팩스(기기·문서)",
+   "(동사) 팩스로 보내다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   7
+  ],
+  "ex": "Please send the signed contract by *fax* or scan it and send it by e-mail.",
+  "exKo": "서명한 계약서를 팩스로 보내거나 스캔해서 이메일로 보내 주기 바란다.",
+  "col": [
+   {
+    "e": "by fax",
+    "k": "팩스로"
+   },
+   {
+    "e": "fax machine",
+    "k": "팩스기"
+   },
+   {
+    "e": "fax number",
+    "k": "팩스 번호"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "",
+  "tip": "send by fax(팩스로 보내다)에서는 관사 없이 쓰고, 동사로 fax a document(서류를 팩스로 보내다)라고도 한다. Part 2·3에서 서류 전달 방법을 묻는 문제에 나온다.",
+  "q": {
+   "s": "If you prefer, you can send the completed form by ------- to 555-0172.",
+   "o": [
+    "fact",
+    "fair",
+    "fan",
+    "fax"
+   ],
+   "a": 3,
+   "k": "작성한 양식을 번호로 보내는 수단이므로 by fax(팩스로)를 이루는 fax가 정답이다. fact(사실), fair(박람회), fan(선풍기, 팬)은 서류 전송 수단이 아니다."
+  }
+ },
+ {
+  "w": "printout",
+  "pos": "n",
+  "m": [
+   "출력물, 인쇄물"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Please bring a *printout* of your boarding pass to the check-in counter.",
+  "exKo": "탑승권 출력물을 탑승 수속 카운터로 가져오기 바란다.",
+  "col": [
+   {
+    "e": "a printout of",
+    "k": "~의 출력물"
+   },
+   {
+    "e": "computer printout",
+    "k": "컴퓨터 출력물"
+   }
+  ],
+  "der": [
+   {
+    "w": "print out",
+    "pos": "phr",
+    "m": "출력하다"
+   }
+  ],
+  "para": [
+   "hard copy",
+   "printed copy"
+  ],
+  "ant": "",
+  "tip": "구동사 print out(출력하다)의 명사형으로 붙여 쓴다. Part 7에서 hard copy, printed copy로 패러프레이즈된다.",
+  "q": {
+   "s": "Ms. Ramos handed each board member a ------- of the quarterly sales figures.",
+   "o": [
+    "printout",
+    "blackout",
+    "checkout",
+    "turnout"
+   ],
+   "a": 0,
+   "k": "이사회 구성원에게 건넨 분기 매출 수치는 출력물이므로 printout이 정답이다. blackout(정전), checkout(계산대, 퇴실), turnout(참석자 수)은 건넬 수 있는 문서가 아니다."
+  }
+ }
+]

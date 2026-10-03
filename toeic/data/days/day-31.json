@@ -1,0 +1,2117 @@
+[
+ {
+  "w": "employee",
+  "pos": "n",
+  "m": [
+   "직원",
+   "종업원"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Every new *employee* receives a laptop and an identification badge on the first day.",
+  "exKo": "모든 신입 직원은 첫날 노트북과 사원증을 받는다.",
+  "col": [
+   {
+    "e": "full-time employee",
+    "k": "정규직 직원"
+   },
+   {
+    "e": "employee benefits",
+    "k": "직원 복리후생"
+   },
+   {
+    "e": "employee handbook",
+    "k": "직원 안내서"
+   }
+  ],
+  "der": [
+   {
+    "w": "employ",
+    "pos": "v",
+    "m": "고용하다"
+   },
+   {
+    "w": "employer",
+    "pos": "n",
+    "m": "고용주"
+   },
+   {
+    "w": "employment",
+    "pos": "n",
+    "m": "고용, 취업"
+   }
+  ],
+  "para": [
+   "staff member",
+   "worker"
+  ],
+  "ant": "employer",
+  "tip": "employee(직원)·employer(고용주)·employment(고용)를 구분하는 품사·의미 문제가 단골이다. employee는 가산명사라 단수일 때 관사가 필요하다.",
+  "q": {
+   "s": "Ms. Kwon's company has grown from five ------- to more than two hundred in just three years.",
+   "o": [
+    "employ",
+    "employment",
+    "employees",
+    "employed"
+   ],
+   "a": 2,
+   "k": "숫자 five 뒤에는 복수 가산명사가 와야 하고, 회사 규모를 나타내는 것은 사람인 employees(직원들)이다. employment는 불가산명사, employ와 employed는 동사 형태다."
+  }
+ },
+ {
+  "w": "employer",
+  "pos": "n",
+  "m": [
+   "고용주",
+   "고용 회사"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Many *employers* now allow staff to work from home two days a week.",
+  "exKo": "현재 많은 고용주가 직원들에게 일주일에 이틀은 재택근무를 허용한다.",
+  "col": [
+   {
+    "e": "current employer",
+    "k": "현 고용주"
+   },
+   {
+    "e": "previous employer",
+    "k": "이전 고용주"
+   },
+   {
+    "e": "equal opportunity employer",
+    "k": "균등 고용 기업"
+   }
+  ],
+  "der": [
+   {
+    "w": "employ",
+    "pos": "v",
+    "m": "고용하다"
+   },
+   {
+    "w": "employee",
+    "pos": "n",
+    "m": "직원"
+   },
+   {
+    "w": "employment",
+    "pos": "n",
+    "m": "고용, 취업"
+   }
+  ],
+  "para": [
+   "company",
+   "firm"
+  ],
+  "ant": "employee",
+  "tip": "-er로 끝나는 employer는 '고용하는 쪽', -ee로 끝나는 employee는 '고용된 쪽'이다. 채용 공고의 an equal opportunity employer(균등 고용 기업)도 Part 7에 자주 보인다.",
+  "q": {
+   "s": "Hanson Logistics was named the region's best ------- in a survey of local workers.",
+   "o": [
+    "employer",
+    "employ",
+    "employment",
+    "employed"
+   ],
+   "a": 0,
+   "k": "소유격 the region's best 뒤에는 명사가 오며, 직원들이 평가한 대상인 회사이므로 employer(고용주)가 정답이다. employment는 '고용 상태'라 뜻이 맞지 않는다."
+  }
+ },
+ {
+  "w": "employment",
+  "pos": "n",
+  "m": [
+   "고용",
+   "취업, 일자리"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The construction of the new airport will create *employment* for thousands of local residents.",
+  "exKo": "새 공항 건설은 수천 명의 지역 주민에게 일자리를 창출할 것이다.",
+  "col": [
+   {
+    "e": "offer of employment",
+    "k": "채용 제안"
+   },
+   {
+    "e": "employment opportunities",
+    "k": "취업 기회"
+   },
+   {
+    "e": "terms of employment",
+    "k": "고용 조건"
+   }
+  ],
+  "der": [
+   {
+    "w": "employ",
+    "pos": "v",
+    "m": "고용하다"
+   },
+   {
+    "w": "employee",
+    "pos": "n",
+    "m": "직원"
+   },
+   {
+    "w": "unemployment",
+    "pos": "n",
+    "m": "실업"
+   }
+  ],
+  "para": [
+   "work",
+   "job"
+  ],
+  "ant": "unemployment",
+  "tip": "employment는 불가산명사라 an employment로 쓰지 않는다. offer of employment, employment history(경력 사항)처럼 다른 명사와 짝을 이룬 형태가 자주 나온다.",
+  "q": {
+   "s": "Mr. Silva accepted an offer of ------- from a software firm in Seoul.",
+   "o": [
+    "employer",
+    "employee",
+    "employ",
+    "employment"
+   ],
+   "a": 3,
+   "k": "an offer of employment는 '채용 제안'이라는 고정 표현이다. employer, employee는 사람·회사를 가리키는 가산명사라 관사 없이 올 수 없고, employ는 동사다."
+  }
+ },
+ {
+  "w": "caliber",
+  "pos": "n",
+  "m": [
+   "(사람의) 자질, 역량",
+   "(물건의) 품질, 수준"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The firm's continued success depends on attracting staff of the highest *caliber*.",
+  "exKo": "그 회사의 지속적인 성공은 최고 역량을 갖춘 직원을 끌어들이는 데 달려 있다.",
+  "col": [
+   {
+    "e": "of high caliber",
+    "k": "높은 역량의"
+   },
+   {
+    "e": "high-caliber candidates",
+    "k": "뛰어난 지원자들"
+   },
+   {
+    "e": "caliber of work",
+    "k": "업무의 수준"
+   }
+  ],
+  "der": [],
+  "para": [
+   "quality",
+   "standard"
+  ],
+  "ant": "",
+  "tip": "of the highest caliber, high-caliber처럼 '질적 수준'을 나타내며 사람과 업무 모두에 쓴다. 영국식 철자 calibre도 같은 단어다.",
+  "q": {
+   "s": "Candidates of such high ------- are rarely available on the local job market.",
+   "o": [
+    "caliber",
+    "margin",
+    "proportion",
+    "frequency"
+   ],
+   "a": 0,
+   "k": "of high caliber는 '뛰어난 역량의'라는 뜻으로 사람(Candidates)을 수식한다. margin(이윤, 차이), proportion(비율), frequency(빈도)는 사람의 자질을 나타내지 못한다."
+  }
+ },
+ {
+  "w": "proven",
+  "pos": "adj",
+  "m": [
+   "입증된",
+   "검증된"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We are seeking a project manager with a *proven* ability to meet tight deadlines.",
+  "exKo": "우리는 빠듯한 마감을 지킬 수 있는 능력이 입증된 프로젝트 관리자를 찾고 있다.",
+  "col": [
+   {
+    "e": "proven track record",
+    "k": "입증된 실적"
+   },
+   {
+    "e": "proven ability",
+    "k": "입증된 능력"
+   },
+   {
+    "e": "proven method",
+    "k": "검증된 방법"
+   }
+  ],
+  "der": [
+   {
+    "w": "prove",
+    "pos": "v",
+    "m": "입증하다, ~임이 드러나다"
+   },
+   {
+    "w": "proof",
+    "pos": "n",
+    "m": "증거, 증명"
+   }
+  ],
+  "para": [
+   "demonstrated",
+   "established"
+  ],
+  "ant": "unproven",
+  "tip": "채용 공고의 a proven track record(입증된 실적)는 Part 7 빈출 표현이다. 명사 앞 형용사 자리에 proving이나 명사 proof를 넣는 함정에 주의한다.",
+  "q": {
+   "s": "The consulting firm uses ------- methods to help clients reduce their operating costs.",
+   "o": [
+    "prove",
+    "proof",
+    "proving",
+    "proven"
+   ],
+   "a": 3,
+   "k": "명사 methods를 수식하는 형용사 자리이므로 '검증된'이라는 뜻의 proven이 정답이다. proving은 '증명하는'이라 의미가 맞지 않고, proof는 명사, prove는 동사다."
+  }
+ },
+ {
+  "w": "salaried",
+  "pos": "adj",
+  "m": [
+   "월급을 받는",
+   "급여제의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Salaried* workers at the company are not eligible for overtime pay.",
+  "exKo": "그 회사의 월급제 근로자는 초과 근무 수당을 받을 자격이 없다.",
+  "col": [
+   {
+    "e": "salaried employees",
+    "k": "월급제 직원"
+   },
+   {
+    "e": "salaried position",
+    "k": "월급제 직책"
+   }
+  ],
+  "der": [
+   {
+    "w": "salary",
+    "pos": "n",
+    "m": "급여, 봉급"
+   }
+  ],
+  "para": [],
+  "ant": "hourly",
+  "tip": "salaried는 시급제(hourly)와 대비되어 '고정 월급을 받는'이라는 뜻이다. salaried staff처럼 명사 앞에서 형용사로 쓰인다.",
+  "q": {
+   "s": "Unlike hourly workers, ------- staff are paid a fixed amount every month regardless of the hours they work.",
+   "o": [
+    "punctual",
+    "salaried",
+    "talented",
+    "renowned"
+   ],
+   "a": 1,
+   "k": "시급제 근로자와 달리 근무 시간과 상관없이 매달 고정 금액을 받는 직원은 salaried(월급제의) 직원이다. punctual(시간을 잘 지키는), talented(재능 있는), renowned(유명한)는 급여 방식과 무관하다."
+  }
+ },
+ {
+  "w": "experienced",
+  "pos": "adj",
+  "m": [
+   "경험 많은",
+   "숙련된"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   5,
+   7
+  ],
+  "ex": "The museum is looking for an *experienced* tour guide who can speak Spanish.",
+  "exKo": "그 박물관은 스페인어를 할 줄 아는 경험 많은 관광 가이드를 찾고 있다.",
+  "col": [
+   {
+    "e": "experienced in",
+    "k": "~에 경험이 많은"
+   },
+   {
+    "e": "highly experienced",
+    "k": "매우 숙련된"
+   }
+  ],
+  "der": [
+   {
+    "w": "experience",
+    "pos": "n",
+    "m": "경험, 경력"
+   },
+   {
+    "w": "experience",
+    "pos": "v",
+    "m": "경험하다, 겪다"
+   }
+  ],
+  "para": [
+   "seasoned",
+   "skilled"
+  ],
+  "ant": "inexperienced",
+  "tip": "'경험 많은'이라는 형용사는 experienced이며 experienced in(~에 경험이 많은)의 전치사 짝을 기억한다. 부사 highly의 수식을 받는 형용사 자리에 명사 experience를 넣는 함정이 나온다.",
+  "q": {
+   "s": "Repairs to the main generator must be carried out by highly ------- technicians.",
+   "o": [
+    "experience",
+    "experienced",
+    "experiencing",
+    "experiences"
+   ],
+   "a": 1,
+   "k": "부사 highly의 수식을 받으며 명사 technicians를 꾸미는 형용사 자리이므로 '숙련된'이라는 뜻의 experienced가 정답이다. experiencing은 '경험하고 있는'이라 의미가 어색하다."
+  }
+ },
+ {
+  "w": "temp",
+  "pos": "n",
+  "m": [
+   "임시 직원"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Mr. Grant worked as a *temp* at several law firms before joining our legal team.",
+  "exKo": "Grant 씨는 우리 법무팀에 합류하기 전에 여러 법률 회사에서 임시 직원으로 일했다.",
+  "col": [
+   {
+    "e": "hire a temp",
+    "k": "임시 직원을 고용하다"
+   },
+   {
+    "e": "temp agency",
+    "k": "임시직 파견 업체"
+   },
+   {
+    "e": "temp work",
+    "k": "임시직 일"
+   }
+  ],
+  "der": [
+   {
+    "w": "temporary",
+    "pos": "adj",
+    "m": "임시의"
+   }
+  ],
+  "para": [
+   "temporary worker"
+  ],
+  "ant": "",
+  "tip": "temp는 temporary worker를 줄인 말로 듣기 대화에 자주 나온다. 동사로 '임시직으로 일하다(temp at a firm)'라는 뜻도 있다.",
+  "q": {
+   "s": "During the busy holiday season, the warehouse hires several ------- to help with packing and shipping.",
+   "o": [
+    "temps",
+    "references",
+    "promotions",
+    "wages"
+   ],
+   "a": 0,
+   "k": "바쁜 연휴 기간에 포장과 배송을 돕도록 고용하는 대상은 사람이므로 temps(임시 직원들)가 정답이다. references(추천서, 추천인)는 고용 대상이 아니고, promotions와 wages도 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "reapply",
+  "pos": "v",
+  "m": [
+   "다시 지원하다",
+   "재신청하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Candidates who were not chosen this year may *reapply* after twelve months.",
+  "exKo": "올해 선발되지 않은 지원자는 12개월이 지난 후 다시 지원할 수 있다.",
+  "col": [
+   {
+    "e": "reapply for",
+    "k": "~에 다시 지원하다"
+   },
+   {
+    "e": "be invited to reapply",
+    "k": "재지원을 권유받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "apply",
+    "pos": "v",
+    "m": "지원하다, 신청하다"
+   },
+   {
+    "w": "reapplication",
+    "pos": "n",
+    "m": "재지원, 재신청"
+   }
+  ],
+  "para": [
+   "apply again"
+  ],
+  "ant": "",
+  "tip": "apply와 마찬가지로 reapply for a position(직책에 다시 지원하다)처럼 for와 짝을 이룬다. to부정사·조동사 뒤의 동사원형 자리를 묻는 문제로 나온다.",
+  "q": {
+   "s": "Applicants whose forms are incomplete will be asked to ------- once all required documents are ready.",
+   "o": [
+    "reapplied",
+    "reapplication",
+    "reapply",
+    "reapplying"
+   ],
+   "a": 2,
+   "k": "be asked to 뒤에는 동사원형이 오므로 reapply가 정답이다. reapplication은 명사, reapplied와 reapplying은 to 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "requisite",
+  "pos": "adj",
+  "m": [
+   "필요한",
+   "필수의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Applicants must possess the *requisite* skills to operate heavy machinery safely.",
+  "exKo": "지원자는 중장비를 안전하게 작동하는 데 필요한 기술을 갖추어야 한다.",
+  "col": [
+   {
+    "e": "requisite skills",
+    "k": "필요한 기술"
+   },
+   {
+    "e": "requisite qualifications",
+    "k": "필요한 자격 요건"
+   },
+   {
+    "e": "requisite for",
+    "k": "~에 필요한"
+   }
+  ],
+  "der": [
+   {
+    "w": "require",
+    "pos": "v",
+    "m": "요구하다, 필요로 하다"
+   },
+   {
+    "w": "requirement",
+    "pos": "n",
+    "m": "요건"
+   }
+  ],
+  "para": [
+   "required",
+   "necessary",
+   "essential"
+  ],
+  "ant": "",
+  "tip": "requisite은 명사 앞에서 '필수적인'이라는 뜻으로 쓰이며 required, necessary로 바꿔 쓸 수 있다. 명사로 '필수품, 필요조건'이라는 뜻도 있다.",
+  "q": {
+   "s": "Only candidates with the ------- experience in financial auditing will be considered.",
+   "o": [
+    "reluctant",
+    "receptive",
+    "redundant",
+    "requisite"
+   ],
+   "a": 3,
+   "k": "재무 감사 분야의 '필요한' 경력을 갖춘 지원자만 고려된다는 뜻이므로 requisite이 정답이다. reluctant(꺼리는), receptive(수용적인), redundant(불필요한, 해고된)는 경력을 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "wage",
+  "pos": "n",
+  "m": [
+   "임금",
+   "급료"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   4,
+   5,
+   7
+  ],
+  "ex": "The union is negotiating higher *wages* for factory workers across the region.",
+  "exKo": "노조는 지역 전체 공장 근로자의 임금 인상을 위해 협상하고 있다.",
+  "col": [
+   {
+    "e": "minimum wage",
+    "k": "최저 임금"
+   },
+   {
+    "e": "hourly wage",
+    "k": "시급"
+   },
+   {
+    "e": "wage increase",
+    "k": "임금 인상"
+   }
+  ],
+  "der": [],
+  "para": [
+   "pay",
+   "earnings"
+  ],
+  "ant": "",
+  "tip": "wage는 주로 시간·주 단위로 받는 임금, salary는 연봉·월급을 가리킨다. minimum wage, hourly wage가 대표 연어다.",
+  "q": {
+   "s": "Workers at the plant are paid an hourly ------- that is above the industry average.",
+   "o": [
+    "fare",
+    "charge",
+    "wage",
+    "toll"
+   ],
+   "a": 2,
+   "k": "근로자가 받는 시간당 '임금'이므로 wage가 정답이다. fare(교통 요금), charge(청구 요금), toll(통행료)은 근로의 대가가 아니다."
+  }
+ },
+ {
+  "w": "preferably",
+  "pos": "adv",
+  "m": [
+   "가급적이면",
+   "되도록"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Applications should be sent by e-mail, *preferably* as a single PDF file.",
+  "exKo": "지원서는 이메일로, 가급적이면 하나의 PDF 파일로 보내야 한다.",
+  "col": [
+   {
+    "e": "preferably in",
+    "k": "가급적 ~ 분야에서"
+   },
+   {
+    "e": "preferably by",
+    "k": "가급적 ~까지"
+   }
+  ],
+  "der": [
+   {
+    "w": "prefer",
+    "pos": "v",
+    "m": "선호하다"
+   },
+   {
+    "w": "preferable",
+    "pos": "adj",
+    "m": "더 나은, 바람직한"
+   },
+   {
+    "w": "preference",
+    "pos": "n",
+    "m": "선호"
+   }
+  ],
+  "para": [
+   "ideally"
+  ],
+  "ant": "",
+  "tip": "채용 공고에서 콤마 뒤에 preferably in/with ~ 형태로 '우대 조건'을 덧붙인다. 문장 전체나 수식어구를 꾸미는 부사 자리를 묻는다.",
+  "q": {
+   "s": "Candidates should have experience in event planning, ------- in the hospitality sector.",
+   "o": [
+    "prefer",
+    "preferable",
+    "preferably",
+    "preference"
+   ],
+   "a": 2,
+   "k": "콤마 뒤에서 전치사구 in the hospitality sector를 수식하는 부사 자리이므로 preferably가 정답이다. prefer는 동사, preferable은 형용사, preference는 명사다."
+  }
+ },
+ {
+  "w": "full-time",
+  "pos": "adj",
+  "m": [
+   "정규직의",
+   "전일제의"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The clinic currently employs twelve *full-time* nurses and several on-call doctors.",
+  "exKo": "그 병원은 현재 전일제 간호사 12명과 호출 대기 의사 여러 명을 고용하고 있다.",
+  "col": [
+   {
+    "e": "full-time position",
+    "k": "정규직 자리"
+   },
+   {
+    "e": "full-time staff",
+    "k": "정규직 직원"
+   },
+   {
+    "e": "work full-time",
+    "k": "전일제로 일하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "permanent"
+  ],
+  "ant": "part-time",
+  "tip": "명사 앞에서는 full-time job처럼 형용사, work full-time처럼 동사 뒤에서는 부사로 쓰인다. 반대말 part-time과 함께 근무 시간 정보를 묻는 Part 7 문제에 자주 나온다.",
+  "q": {
+   "s": "The bakery is hiring two ------- cashiers who can work forty hours a week.",
+   "o": [
+    "overtime",
+    "full-time",
+    "lifetime",
+    "part-time"
+   ],
+   "a": 1,
+   "k": "주 40시간 근무할 수 있는 계산원은 전일제 직원이므로 full-time이 정답이다. part-time은 근무 시간이 짧은 시간제라 주 40시간과 맞지 않고, overtime과 lifetime은 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "part-time",
+  "pos": "adj",
+  "m": [
+   "시간제의",
+   "파트타임의"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Many university students take *part-time* jobs at the shopping mall on weekends.",
+  "exKo": "많은 대학생이 주말에 쇼핑몰에서 시간제 일자리를 구한다.",
+  "col": [
+   {
+    "e": "part-time job",
+    "k": "시간제 일자리"
+   },
+   {
+    "e": "part-time basis",
+    "k": "시간제 근무 형태"
+   },
+   {
+    "e": "work part-time",
+    "k": "시간제로 일하다"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "full-time",
+  "tip": "on a part-time basis(시간제로)와 work part-time(부사 용법)이 모두 쓰인다. 하이픈 없이 part time으로 쓰는 명사 용법과 구별한다.",
+  "q": {
+   "s": "Ms. Hart works ------- at the city library, usually about fifteen hours a week.",
+   "o": [
+    "full-time",
+    "on time",
+    "halfway",
+    "part-time"
+   ],
+   "a": 3,
+   "k": "일주일에 15시간 정도 일한다고 했으므로 '시간제로'라는 뜻의 part-time이 정답이다. full-time은 근무 시간과 맞지 않고, on time(제시간에), halfway(중간에)는 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "hiring",
+  "pos": "n",
+  "m": [
+   "채용",
+   "고용"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Ms. Ngo will make the final *hiring* decision after reviewing all the interview notes.",
+  "exKo": "Ngo 씨는 모든 면접 기록을 검토한 후 최종 채용 결정을 내릴 것이다.",
+  "col": [
+   {
+    "e": "hiring process",
+    "k": "채용 절차"
+   },
+   {
+    "e": "hiring freeze",
+    "k": "채용 동결"
+   },
+   {
+    "e": "hiring manager",
+    "k": "채용 담당 관리자"
+   }
+  ],
+  "der": [
+   {
+    "w": "hire",
+    "pos": "v",
+    "m": "고용하다"
+   },
+   {
+    "w": "hire",
+    "pos": "n",
+    "m": "신입 사원"
+   }
+  ],
+  "para": [
+   "recruitment"
+  ],
+  "ant": "",
+  "tip": "hiring은 hiring process, hiring decision처럼 다른 명사 앞에서 복합명사를 만든다. hire는 명사로 쓰면 '신입 사원(new hire)'을 뜻하므로 구별한다.",
+  "q": {
+   "s": "The ------- process for the new branch includes two interviews and a skills test.",
+   "o": [
+    "hired",
+    "hiring",
+    "hires",
+    "hire"
+   ],
+   "a": 1,
+   "k": "명사 process 앞에서 복합명사를 이루는 hiring(채용)이 정답이다. hire process라는 표현은 쓰지 않으며, hired process는 '고용된 절차'라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "recruitment",
+  "pos": "n",
+  "m": [
+   "채용",
+   "모집"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hospital has launched a *recruitment* drive to attract more nurses.",
+  "exKo": "그 병원은 더 많은 간호사를 확보하기 위해 채용 캠페인을 시작했다.",
+  "col": [
+   {
+    "e": "recruitment drive",
+    "k": "채용 캠페인"
+   },
+   {
+    "e": "recruitment process",
+    "k": "채용 절차"
+   },
+   {
+    "e": "graduate recruitment",
+    "k": "신입 졸업생 채용"
+   }
+  ],
+  "der": [
+   {
+    "w": "recruit",
+    "pos": "v",
+    "m": "모집하다, 채용하다"
+   },
+   {
+    "w": "recruiter",
+    "pos": "n",
+    "m": "채용 담당자"
+   }
+  ],
+  "para": [
+   "hiring"
+  ],
+  "ant": "",
+  "tip": "recruitment는 '채용 활동' 자체를 가리키는 명사이고, recruiter는 '채용 담당자'라는 사람명사다. 전치사 뒤 명사 자리에서 둘을 구별하는 문제가 나온다.",
+  "q": {
+   "s": "Ms. Yamada oversees ------- for the company's overseas offices.",
+   "o": [
+    "recruiter",
+    "recruitment",
+    "recruit",
+    "recruited"
+   ],
+   "a": 1,
+   "k": "타동사 oversees의 목적어 자리이며 '채용 업무'를 감독하는 것이므로 불가산명사 recruitment가 정답이다. recruiter와 recruit은 가산명사라 관사 없이 단수로 쓸 수 없다."
+  }
+ },
+ {
+  "w": "recruiter",
+  "pos": "n",
+  "m": [
+   "채용 담당자",
+   "인재 발굴 담당자"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "A *recruiter* from a technology firm contacted Ms. Ahmed about a senior engineering role.",
+  "exKo": "한 기술 회사의 채용 담당자가 고위 엔지니어 직책과 관련해 Ahmed 씨에게 연락했다.",
+  "col": [
+   {
+    "e": "corporate recruiter",
+    "k": "기업 채용 담당자"
+   },
+   {
+    "e": "recruiter from",
+    "k": "~에서 온 채용 담당자"
+   }
+  ],
+  "der": [
+   {
+    "w": "recruit",
+    "pos": "v",
+    "m": "모집하다"
+   },
+   {
+    "w": "recruitment",
+    "pos": "n",
+    "m": "채용, 모집"
+   }
+  ],
+  "para": [
+   "headhunter",
+   "talent scout"
+  ],
+  "ant": "",
+  "tip": "-er이 붙은 사람명사로, 관사 a 뒤나 '방문한다·연락했다'의 주어 자리에서 recruitment(채용 활동)와 구별해야 한다.",
+  "q": {
+   "s": "A ------- from Brightway Staffing will visit the campus to meet with graduating students.",
+   "o": [
+    "recruited",
+    "recruiting",
+    "recruiter",
+    "recruitment"
+   ],
+   "a": 2,
+   "k": "관사 A 뒤의 명사 자리이고, 캠퍼스를 방문해 학생을 만나는 주체는 사람이므로 recruiter가 정답이다. recruitment는 활동을 뜻해 방문의 주체가 될 수 없다."
+  }
+ },
+ {
+  "w": "occupation",
+  "pos": "n",
+  "m": [
+   "직업"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Applicants are asked to list their current *occupation* on the second page of the form.",
+  "exKo": "지원자는 양식 두 번째 페이지에 현재 직업을 기재해야 한다.",
+  "col": [
+   {
+    "e": "state one's occupation",
+    "k": "직업을 기재하다"
+   },
+   {
+    "e": "by occupation",
+    "k": "직업상"
+   }
+  ],
+  "der": [
+   {
+    "w": "occupational",
+    "pos": "adj",
+    "m": "직업의, 직업상의"
+   },
+   {
+    "w": "occupy",
+    "pos": "v",
+    "m": "차지하다, 사용하다"
+   }
+  ],
+  "para": [
+   "job",
+   "profession"
+  ],
+  "ant": "",
+  "tip": "양식에서 '직업'을 묻는 공식적인 말이다. occupational safety(산업 안전)처럼 형용사형도 자주 나오며, occupancy(점유율, 입주)와 혼동하지 않는다.",
+  "q": {
+   "s": "Teaching remains one of the most respected ------- in the country.",
+   "o": [
+    "occupations",
+    "occupants",
+    "occupancies",
+    "occupies"
+   ],
+   "a": 0,
+   "k": "one of the most respected 뒤에는 복수명사가 오며, 가르치는 일은 '직업'이므로 occupations가 정답이다. occupants(거주자), occupancies(점유)는 뜻이 맞지 않고 occupies는 동사다."
+  }
+ },
+ {
+  "w": "profession",
+  "pos": "n",
+  "m": [
+   "(전문) 직업",
+   "전문직"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Lindqvist left the legal *profession* to start her own consulting business.",
+  "exKo": "Lindqvist 씨는 자신의 컨설팅 사업을 시작하기 위해 법조계를 떠났다.",
+  "col": [
+   {
+    "e": "legal profession",
+    "k": "법조계"
+   },
+   {
+    "e": "medical profession",
+    "k": "의료계"
+   },
+   {
+    "e": "by profession",
+    "k": "직업상"
+   }
+  ],
+  "der": [
+   {
+    "w": "professional",
+    "pos": "adj",
+    "m": "전문적인, 직업의"
+   },
+   {
+    "w": "professional",
+    "pos": "n",
+    "m": "전문가"
+   }
+  ],
+  "para": [
+   "career",
+   "occupation"
+  ],
+  "ant": "",
+  "tip": "profession은 의사·변호사처럼 전문 지식이 필요한 직업을 가리킨다. 명사 profession과 형용사·사람명사 professional의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Nursing is a demanding ------- that requires both technical skill and compassion.",
+   "o": [
+    "profession",
+    "professionally",
+    "professionalism",
+    "professional"
+   ],
+   "a": 0,
+   "k": "관계대명사 that의 선행사로, 간호가 '직업'이라는 뜻이므로 profession이 정답이다. professional은 사람명사라 that requires로 받기 어렵고, professionalism은 '전문성'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "internship",
+  "pos": "n",
+  "m": [
+   "인턴십",
+   "인턴 근무"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Ms. Diaz completed a six-month *internship* at an architecture firm in Madrid.",
+  "exKo": "Diaz 씨는 마드리드의 한 건축 회사에서 6개월간의 인턴십을 마쳤다.",
+  "col": [
+   {
+    "e": "summer internship",
+    "k": "여름 인턴십"
+   },
+   {
+    "e": "paid internship",
+    "k": "유급 인턴십"
+   },
+   {
+    "e": "internship program",
+    "k": "인턴십 프로그램"
+   }
+  ],
+  "der": [
+   {
+    "w": "intern",
+    "pos": "n",
+    "m": "인턴"
+   },
+   {
+    "w": "intern",
+    "pos": "v",
+    "m": "인턴으로 근무하다"
+   }
+  ],
+  "para": [
+   "work placement",
+   "traineeship"
+  ],
+  "ant": "",
+  "tip": "internship은 '인턴 근무 과정', intern은 '인턴 사원'이다. offer/complete an internship처럼 프로그램 자체를 가리키는 자리에 사람명사 intern을 넣는 함정이 나온다.",
+  "q": {
+   "s": "Kerwin Media offers paid ------- to university students majoring in journalism.",
+   "o": [
+    "internships",
+    "interns",
+    "internal",
+    "internally"
+   ],
+   "a": 0,
+   "k": "언론학 전공 대학생에게 '제공하는' 대상은 유급 인턴십 과정이므로 internships가 정답이다. interns는 사람이라 학생에게 제공하는 대상이 될 수 없다."
+  }
+ },
+ {
+  "w": "intern",
+  "pos": "n",
+  "m": [
+   "인턴",
+   "실습생"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Each summer, the marketing department brings in two *interns* to help with social media.",
+  "exKo": "매년 여름 마케팅 부서는 소셜 미디어 업무를 도울 인턴 두 명을 들인다.",
+  "col": [
+   {
+    "e": "summer intern",
+    "k": "여름 인턴"
+   },
+   {
+    "e": "unpaid intern",
+    "k": "무급 인턴"
+   }
+  ],
+  "der": [
+   {
+    "w": "internship",
+    "pos": "n",
+    "m": "인턴십"
+   }
+  ],
+  "para": [
+   "trainee"
+  ],
+  "ant": "",
+  "tip": "intern은 사람명사로 '인턴 근무를 하다'라는 동사로도 쓰인다. 형용사 internal(내부의)과 철자가 비슷해 혼동을 유도한다.",
+  "q": {
+   "s": "The ------- will spend her first week shadowing senior staff in the accounting department.",
+   "o": [
+    "intern",
+    "internship",
+    "internal",
+    "interning"
+   ],
+   "a": 0,
+   "k": "선배 직원을 따라다니며 업무를 배우는 주체는 사람이므로 intern이 정답이다. internship은 과정 자체를 뜻하고, internal은 형용사다."
+  }
+ },
+ {
+  "w": "human resources",
+  "pos": "phr",
+  "m": [
+   "인사부",
+   "인적 자원"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Employees must send their completed tax forms to the *human resources* department by Thursday.",
+  "exKo": "직원들은 작성한 세금 서류를 목요일까지 인사부로 보내야 한다.",
+  "col": [
+   {
+    "e": "human resources department",
+    "k": "인사부"
+   },
+   {
+    "e": "human resources manager",
+    "k": "인사부장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "HR",
+   "personnel department"
+  ],
+  "ant": "",
+  "tip": "줄여서 HR이라고 하며 personnel department와 같은 뜻이다. 휴가·급여·채용 문의는 인사부로 하라는 내용이 듣기와 Part 7에 자주 나온다.",
+  "q": {
+   "s": "Employees who wish to change their vacation dates must notify the ------- department in writing.",
+   "o": [
+    "public relations",
+    "research and development",
+    "human resources",
+    "customer service"
+   ],
+   "a": 2,
+   "k": "직원의 휴가 일정 변경을 서면으로 통보받는 곳은 human resources(인사부)다. public relations(홍보), research and development(연구 개발), customer service(고객 서비스)는 직원 휴가 관리와 관련이 없다."
+  }
+ },
+ {
+  "w": "job offer",
+  "pos": "phr",
+  "m": [
+   "일자리 제안",
+   "채용 제의"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Mr. Chen received a *job offer* from a major bank just days after graduating.",
+  "exKo": "Chen 씨는 졸업하고 불과 며칠 만에 한 대형 은행으로부터 일자리 제안을 받았다.",
+  "col": [
+   {
+    "e": "accept a job offer",
+    "k": "일자리 제안을 수락하다"
+   },
+   {
+    "e": "decline a job offer",
+    "k": "일자리 제안을 거절하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "offer of employment"
+  ],
+  "ant": "",
+  "tip": "accept/decline/turn down a job offer처럼 수락·거절 동사와 함께 쓰인다. Part 7에서는 an offer of employment로 바꿔 표현되기도 한다.",
+  "q": {
+   "s": "After careful consideration, Ms. Rossi decided to decline the ------- she had received from Delmont Engineering.",
+   "o": [
+    "job title",
+    "job fair",
+    "job description",
+    "job offer"
+   ],
+   "a": 3,
+   "k": "신중히 고민한 끝에 '거절하기로' 한, Delmont Engineering에서 '받은' 것은 일자리 제안이므로 job offer가 정답이다. job title(직함), job fair(채용 박람회), job description(직무 기술서)은 받고 거절하는 대상이 아니다."
+  }
+ },
+ {
+  "w": "interviewer",
+  "pos": "n",
+  "m": [
+   "면접관",
+   "인터뷰 진행자"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The *interviewer* asked each candidate to describe a difficult project they had managed.",
+  "exKo": "면접관은 각 지원자에게 자신이 관리했던 어려운 프로젝트에 대해 설명해 달라고 요청했다.",
+  "col": [
+   {
+    "e": "panel of interviewers",
+    "k": "면접관단"
+   }
+  ],
+  "der": [
+   {
+    "w": "interview",
+    "pos": "n",
+    "m": "면접"
+   },
+   {
+    "w": "interview",
+    "pos": "v",
+    "m": "면접을 보다"
+   },
+   {
+    "w": "interviewee",
+    "pos": "n",
+    "m": "면접 대상자"
+   }
+  ],
+  "para": [],
+  "ant": "interviewee",
+  "tip": "-er은 면접을 하는 사람, -ee는 면접을 받는 사람이다. 질문하고 평가하는 주체인지, 받는 대상인지를 문맥으로 판단한다.",
+  "q": {
+   "s": "Each ------- will rate the candidates on communication skills and technical knowledge.",
+   "o": [
+    "interviewer",
+    "interview",
+    "interviewee",
+    "interviewed"
+   ],
+   "a": 0,
+   "k": "지원자들을 평가하는 주체는 면접관이므로 interviewer가 정답이다. interviewee는 면접을 받는 사람, 즉 지원자 자신이라 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "select",
+  "pos": "v",
+  "m": [
+   "선발하다",
+   "선택하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The committee will *select* three finalists from more than fifty applicants.",
+  "exKo": "위원회는 50명이 넘는 지원자 중에서 최종 후보 세 명을 선발할 것이다.",
+  "col": [
+   {
+    "e": "select from",
+    "k": "~ 중에서 선택하다"
+   },
+   {
+    "e": "be selected for",
+    "k": "~에 선발되다"
+   },
+   {
+    "e": "carefully select",
+    "k": "신중하게 고르다"
+   }
+  ],
+  "der": [
+   {
+    "w": "selection",
+    "pos": "n",
+    "m": "선발, 선택(된 것)"
+   },
+   {
+    "w": "selective",
+    "pos": "adj",
+    "m": "선별적인, 까다로운"
+   }
+  ],
+  "para": [
+   "choose",
+   "pick"
+  ],
+  "ant": "",
+  "tip": "be selected for/to do(~에 선발되다) 형태와 select A from B 구조가 자주 쓰인다. 조동사 뒤 동사원형 자리에 명사 selection을 넣는 함정에 주의한다.",
+  "q": {
+   "s": "The judges will ------- the winning design from among the twelve entries submitted.",
+   "o": [
+    "selection",
+    "selective",
+    "selectively",
+    "select"
+   ],
+   "a": 3,
+   "k": "조동사 will 뒤에는 동사원형이 오므로 select가 정답이다. selection은 명사, selective는 형용사, selectively는 부사다."
+  }
+ },
+ {
+  "w": "selection",
+  "pos": "n",
+  "m": [
+   "선발, 선택",
+   "(선택 가능한) 제품군"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   4,
+   5,
+   7
+  ],
+  "ex": "The final *selection* of candidates will be announced on the company website next week.",
+  "exKo": "최종 선발된 지원자는 다음 주 회사 웹사이트에 발표될 것이다.",
+  "col": [
+   {
+    "e": "a wide selection of",
+    "k": "다양한 종류의"
+   },
+   {
+    "e": "selection process",
+    "k": "선발 절차"
+   },
+   {
+    "e": "final selection",
+    "k": "최종 선발"
+   }
+  ],
+  "der": [
+   {
+    "w": "select",
+    "pos": "v",
+    "m": "선발하다, 선택하다"
+   },
+   {
+    "w": "selective",
+    "pos": "adj",
+    "m": "선별적인"
+   }
+  ],
+  "para": [
+   "choice",
+   "range"
+  ],
+  "ant": "",
+  "tip": "'선발'과 '구색, 제품군'의 두 뜻이 모두 나온다. a wide/broad selection of(다양한 종류의)는 매장·식당 광고의 빈출 표현이다.",
+  "q": {
+   "s": "The store offers a wide ------- of office furniture at reasonable prices.",
+   "o": [
+    "select",
+    "selection",
+    "selective",
+    "selected"
+   ],
+   "a": 1,
+   "k": "관사 a와 형용사 wide 뒤의 명사 자리이므로 selection이 정답이다. a wide selection of는 '다양한 종류의'라는 뜻이다."
+  }
+ },
+ {
+  "w": "fluent",
+  "pos": "adj",
+  "m": [
+   "(언어가) 유창한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The ideal candidate will be *fluent* in both English and Mandarin.",
+  "exKo": "이상적인 지원자는 영어와 중국어 모두에 유창해야 한다.",
+  "col": [
+   {
+    "e": "fluent in",
+    "k": "~에 유창한"
+   },
+   {
+    "e": "fluent speaker",
+    "k": "유창한 사용자"
+   }
+  ],
+  "der": [
+   {
+    "w": "fluency",
+    "pos": "n",
+    "m": "유창함"
+   },
+   {
+    "w": "fluently",
+    "pos": "adv",
+    "m": "유창하게"
+   }
+  ],
+  "para": [
+   "proficient"
+  ],
+  "ant": "",
+  "tip": "be fluent in + 언어 형태로 전치사 in과 짝을 이룬다. be동사 뒤 보어 자리에 명사 fluency나 부사 fluently를 넣는 함정이 나온다.",
+  "q": {
+   "s": "Ms. Park, who is ------- in French, will handle all communication with our clients in Paris.",
+   "o": [
+    "fluency",
+    "fluent",
+    "fluently",
+    "fluencies"
+   ],
+   "a": 1,
+   "k": "be동사 is 뒤 보어 자리에는 형용사가 오므로 fluent가 정답이다. be fluent in은 '~에 유창하다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "proficiency",
+  "pos": "n",
+  "m": [
+   "숙달, 능숙함",
+   "실력"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "All applicants must pass a test to demonstrate *proficiency* in spreadsheet software.",
+  "exKo": "모든 지원자는 스프레드시트 프로그램을 능숙하게 다룰 수 있음을 입증하는 시험을 통과해야 한다.",
+  "col": [
+   {
+    "e": "proficiency in",
+    "k": "~에 대한 숙달"
+   },
+   {
+    "e": "language proficiency",
+    "k": "언어 능력"
+   },
+   {
+    "e": "proficiency test",
+    "k": "능력 시험"
+   }
+  ],
+  "der": [
+   {
+    "w": "proficient",
+    "pos": "adj",
+    "m": "능숙한"
+   },
+   {
+    "w": "proficiently",
+    "pos": "adv",
+    "m": "능숙하게"
+   }
+  ],
+  "para": [
+   "competence",
+   "skill",
+   "expertise"
+  ],
+  "ant": "",
+  "tip": "proficiency in(~에 대한 능숙함)으로 전치사 in과 함께 쓴다. a high level of, demonstrate 뒤의 명사 자리에 형용사 proficient를 넣는 함정이 나온다.",
+  "q": {
+   "s": "Candidates must have a high level of ------- in Japanese to qualify for the translator position.",
+   "o": [
+    "proficient",
+    "proficiency",
+    "proficiently",
+    "proficiencies"
+   ],
+   "a": 1,
+   "k": "a high level of 뒤에는 명사가 오고, 언어 실력은 불가산 개념이므로 proficiency가 정답이다. proficient는 형용사, proficiently는 부사다."
+  }
+ },
+ {
+  "w": "bilingual",
+  "pos": "adj",
+  "m": [
+   "2개 국어를 하는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hotel prefers to hire *bilingual* staff for its front desk.",
+  "exKo": "그 호텔은 프런트 데스크에 2개 국어를 하는 직원을 고용하는 것을 선호한다.",
+  "col": [
+   {
+    "e": "bilingual in English and Korean",
+    "k": "영어와 한국어를 모두 구사하는"
+   },
+   {
+    "e": "bilingual staff",
+    "k": "2개 국어 구사 직원"
+   }
+  ],
+  "der": [
+   {
+    "w": "multilingual",
+    "pos": "adj",
+    "m": "여러 언어를 하는"
+   }
+  ],
+  "para": [],
+  "ant": "monolingual",
+  "tip": "bilingual in Korean and English처럼 in과 함께 두 언어를 밝힌다. 접두사 bi-(둘)가 붙은 biannual(연 2회의), bilateral(쌍방의)과 혼동을 유도한다.",
+  "q": {
+   "s": "Since many of our customers speak Spanish, we are seeking ------- customer service representatives.",
+   "o": [
+    "binding",
+    "biannual",
+    "bilateral",
+    "bilingual"
+   ],
+   "a": 3,
+   "k": "고객 다수가 스페인어를 사용하므로 2개 국어를 하는 상담원이 필요하다는 뜻의 bilingual이 정답이다. binding(구속력 있는), biannual(연 2회의), bilateral(쌍방의)은 사람을 수식하기에 맞지 않는다."
+  }
+ },
+ {
+  "w": "track record",
+  "pos": "phr",
+  "m": [
+   "실적",
+   "이력"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Hughes has a strong *track record* of completing projects under budget.",
+  "exKo": "Hughes 씨는 프로젝트를 예산 이하로 완료한 탄탄한 실적을 가지고 있다.",
+  "col": [
+   {
+    "e": "proven track record",
+    "k": "입증된 실적"
+   },
+   {
+    "e": "track record of",
+    "k": "~한 실적"
+   },
+   {
+    "e": "excellent track record",
+    "k": "훌륭한 실적"
+   }
+  ],
+  "der": [],
+  "para": [
+   "history",
+   "record"
+  ],
+  "ant": "",
+  "tip": "a (proven/strong) track record of -ing(~한 실적) 형태로 채용 공고와 인물 소개에 자주 나온다. 과거의 성과를 근거로 하는 표현이다.",
+  "q": {
+   "s": "We are looking for a sales manager with an excellent ------- of meeting quarterly targets.",
+   "o": [
+    "checklist",
+    "milestone",
+    "track record",
+    "timeline"
+   ],
+   "a": 2,
+   "k": "of meeting quarterly targets(분기 목표를 달성한)와 어울려 '실적'을 뜻하는 track record가 정답이다. checklist(점검표), milestone(중요 단계), timeline(일정표)은 사람의 과거 성과를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "probation",
+  "pos": "n",
+  "m": [
+   "수습 기간",
+   "시용 기간"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "All new hires are placed on *probation* for their first three months at the company.",
+  "exKo": "모든 신입 사원은 입사 후 첫 3개월 동안 수습 기간을 거친다.",
+  "col": [
+   {
+    "e": "on probation",
+    "k": "수습 중인"
+   },
+   {
+    "e": "probation period",
+    "k": "수습 기간"
+   }
+  ],
+  "der": [
+   {
+    "w": "probationary",
+    "pos": "adj",
+    "m": "수습 중인, 시험적인"
+   }
+  ],
+  "para": [
+   "trial period"
+  ],
+  "ant": "",
+  "tip": "be on probation(수습 중이다) 형태로 전치사 on과 함께 쓴다. a probationary period도 같은 뜻으로 Part 7 고용 조건에 자주 나온다.",
+  "q": {
+   "s": "Newly hired staff remain on ------- until their supervisor completes a formal evaluation.",
+   "o": [
+    "prohibition",
+    "provision",
+    "probation",
+    "proportion"
+   ],
+   "a": 2,
+   "k": "신입 직원이 상사의 공식 평가가 끝날 때까지 머무는 상태는 수습이므로 on probation의 probation이 정답이다. prohibition(금지), provision(제공, 조항), proportion(비율)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "staffing agency",
+  "pos": "phr",
+  "m": [
+   "인력 파견 업체",
+   "인력 소개소"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The hotel used a *staffing agency* to find extra workers for the holiday season.",
+  "exKo": "그 호텔은 연휴 시즌에 필요한 추가 인력을 구하기 위해 인력 파견 업체를 이용했다.",
+  "col": [
+   {
+    "e": "through a staffing agency",
+    "k": "인력 파견 업체를 통해"
+   },
+   {
+    "e": "temporary staffing agency",
+    "k": "임시직 파견 업체"
+   }
+  ],
+  "der": [
+   {
+    "w": "staff",
+    "pos": "v",
+    "m": "직원을 배치하다"
+   },
+   {
+    "w": "staffing",
+    "pos": "n",
+    "m": "직원 채용, 인력 배치"
+   }
+  ],
+  "para": [
+   "employment agency",
+   "recruitment agency"
+  ],
+  "ant": "",
+  "tip": "임시직(temp)을 구할 때 이용하는 업체로 듣기와 Part 7에 자주 나온다. employment agency, recruitment agency로 바꿔 표현되기도 한다.",
+  "q": {
+   "s": "Many retailers rely on a ------- to fill short-term positions during busy periods.",
+   "o": [
+    "staffing agency",
+    "board meeting",
+    "trade show",
+    "supply chain"
+   ],
+   "a": 0,
+   "k": "바쁜 시기에 단기 일자리를 채우기 위해 의존하는 곳은 인력 파견 업체이므로 staffing agency가 정답이다. board meeting(이사회), trade show(무역 박람회), supply chain(공급망)은 인력을 공급하지 않는다."
+  }
+ },
+ {
+  "w": "job posting",
+  "pos": "phr",
+  "m": [
+   "채용 공고",
+   "구인 광고"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "According to the *job posting*, the position requires at least two years of retail experience.",
+  "exKo": "채용 공고에 따르면 그 직책은 최소 2년의 소매업 경력을 요구한다.",
+  "col": [
+   {
+    "e": "online job posting",
+    "k": "온라인 채용 공고"
+   },
+   {
+    "e": "respond to a job posting",
+    "k": "채용 공고에 응하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "post",
+    "pos": "v",
+    "m": "게시하다"
+   }
+  ],
+  "para": [
+   "job advertisement",
+   "job listing"
+  ],
+  "ant": "",
+  "tip": "Part 7 지문 유형으로 자주 등장하며 job advertisement, job listing으로 바꿔 쓸 수 있다. 공고에 '언급되지 않은' 자격 요건을 고르는 문제가 대표적이다.",
+  "q": {
+   "s": "Applicants should read the ------- carefully, as it lists all of the required qualifications.",
+   "o": [
+    "job security",
+    "job posting",
+    "job satisfaction",
+    "job title"
+   ],
+   "a": 1,
+   "k": "필요한 자격 요건을 모두 나열한 것은 채용 공고이므로 job posting이 정답이다. job security(고용 안정), job satisfaction(직무 만족), job title(직함)은 자격 요건을 나열하지 않는다."
+  }
+ },
+ {
+  "w": "advancement",
+  "pos": "n",
+  "m": [
+   "승진, 출세",
+   "발전, 진보"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company offers excellent opportunities for career *advancement*.",
+  "exKo": "그 회사는 훌륭한 승진 기회를 제공한다.",
+  "col": [
+   {
+    "e": "career advancement",
+    "k": "승진, 경력 발전"
+   },
+   {
+    "e": "opportunities for advancement",
+    "k": "승진 기회"
+   },
+   {
+    "e": "technological advancement",
+    "k": "기술 발전"
+   }
+  ],
+  "der": [
+   {
+    "w": "advance",
+    "pos": "v",
+    "m": "나아가다, 승진하다"
+   },
+   {
+    "w": "advanced",
+    "pos": "adj",
+    "m": "고급의, 진보한"
+   }
+  ],
+  "para": [
+   "promotion",
+   "progress"
+  ],
+  "ant": "",
+  "tip": "opportunities for advancement(승진 기회)는 채용 공고의 장점으로 자주 나오며 promotion으로 바꿔 표현된다. 형용사 advanced(고급의)와 품사를 구별한다.",
+  "q": {
+   "s": "Mentoring is one of the most effective ways to support the career ------- of young employees.",
+   "o": [
+    "advanced",
+    "advantageous",
+    "advancing",
+    "advancement"
+   ],
+   "a": 3,
+   "k": "관사 the와 명사 career 뒤에 와서 복합명사를 이루는 명사 자리이므로 advancement가 정답이다. career advancement는 '경력 발전, 승진'이라는 뜻이다."
+  }
+ },
+ {
+  "w": "familiarity",
+  "pos": "n",
+  "m": [
+   "친숙함",
+   "잘 앎, 정통"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Familiarity* with accounting software is required for this position.",
+  "exKo": "이 직책에는 회계 프로그램에 대한 숙지가 요구된다.",
+  "col": [
+   {
+    "e": "familiarity with",
+    "k": "~에 대한 친숙함, 숙지"
+   }
+  ],
+  "der": [
+   {
+    "w": "familiar",
+    "pos": "adj",
+    "m": "친숙한, 잘 아는"
+   },
+   {
+    "w": "familiarize",
+    "pos": "v",
+    "m": "익숙하게 하다"
+   }
+  ],
+  "para": [
+   "knowledge",
+   "acquaintance"
+  ],
+  "ant": "",
+  "tip": "familiarity with(~을 잘 앎)로 전치사 with와 짝을 이룬다. 형용사 familiar도 be familiar with 형태로 쓰여 품사 문제에 함께 나온다.",
+  "q": {
+   "s": "Some ------- with graphic design software would be helpful for this role.",
+   "o": [
+    "familiar",
+    "familiarize",
+    "familiarity",
+    "familiarly"
+   ],
+   "a": 2,
+   "k": "Some의 수식을 받는 문장의 주어 자리이므로 명사 familiarity가 정답이다. familiar는 형용사, familiarize는 동사, familiarly는 부사다."
+  }
+ },
+ {
+  "w": "adept",
+  "pos": "adj",
+  "m": [
+   "능숙한",
+   "숙련된"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Mr. Osei is *adept* at calming down customers who have complaints.",
+  "exKo": "Osei 씨는 불만이 있는 고객을 진정시키는 데 능숙하다.",
+  "col": [
+   {
+    "e": "adept at",
+    "k": "~에 능숙한"
+   },
+   {
+    "e": "adept in",
+    "k": "~에 숙련된"
+   }
+  ],
+  "der": [
+   {
+    "w": "adeptly",
+    "pos": "adv",
+    "m": "능숙하게"
+   }
+  ],
+  "para": [
+   "skilled",
+   "proficient"
+  ],
+  "ant": "inept",
+  "tip": "be adept at -ing(~에 능숙하다) 형태로 at과 함께 쓴다. 철자가 비슷한 adopt(채택하다), adapt(적응하다)와 혼동하지 않는다.",
+  "q": {
+   "s": "Successful applicants must be ------- at managing several projects at the same time.",
+   "o": [
+    "adopt",
+    "adapt",
+    "adeptly",
+    "adept"
+   ],
+   "a": 3,
+   "k": "be동사 뒤 보어 자리에 형용사가 필요하며 be adept at은 '~에 능숙하다'라는 뜻이므로 adept가 정답이다. adopt와 adapt는 동사, adeptly는 부사다."
+  }
+ },
+ {
+  "w": "seasoned",
+  "pos": "adj",
+  "m": [
+   "경험 많은",
+   "노련한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new restaurant is run by a *seasoned* chef who has worked in five countries.",
+  "exKo": "새 식당은 다섯 나라에서 일한 경력이 있는 노련한 요리사가 운영한다.",
+  "col": [
+   {
+    "e": "seasoned professional",
+    "k": "노련한 전문가"
+   },
+   {
+    "e": "seasoned traveler",
+    "k": "여행 경험이 많은 사람"
+   }
+  ],
+  "der": [
+   {
+    "w": "season",
+    "pos": "n",
+    "m": "계절, 시즌"
+   },
+   {
+    "w": "seasonal",
+    "pos": "adj",
+    "m": "계절적인"
+   }
+  ],
+  "para": [
+   "experienced",
+   "veteran"
+  ],
+  "ant": "inexperienced",
+  "tip": "seasoned는 '경험이 풍부한'이라는 뜻으로 experienced의 고급 동의어다. 형태가 비슷한 seasonal(계절적인)과 혼동하는 문제가 나온다.",
+  "q": {
+   "s": "The workshop will be led by a ------- journalist who has covered business news for decades.",
+   "o": [
+    "seasonal",
+    "seasoned",
+    "season",
+    "seasonally"
+   ],
+   "a": 1,
+   "k": "수십 년간 경제 뉴스를 취재한 기자이므로 '노련한'이라는 뜻의 seasoned가 정답이다. seasonal은 '계절적인'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "well-versed",
+  "pos": "adj",
+  "m": [
+   "정통한",
+   "조예가 깊은"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our consultants are *well-versed* in the latest tax regulations.",
+  "exKo": "우리 컨설턴트들은 최신 세법 규정에 정통하다.",
+  "col": [
+   {
+    "e": "well-versed in",
+    "k": "~에 정통한"
+   }
+  ],
+  "der": [],
+  "para": [
+   "knowledgeable",
+   "experienced"
+  ],
+  "ant": "",
+  "tip": "be well-versed in(~에 정통하다)으로 전치사 in과 함께 쓴다. Part 7에서 knowledgeable about, familiar with로 바꿔 표현된다.",
+  "q": {
+   "s": "Ms. Byrne is ------- in contract law, so she will review the agreement before it is signed.",
+   "o": [
+    "well-paid",
+    "well-made",
+    "well-versed",
+    "well-off"
+   ],
+   "a": 2,
+   "k": "계약법에 정통하기 때문에 서명 전에 계약서를 검토한다는 뜻이므로 well-versed가 정답이다. well-paid(보수가 좋은), well-made(잘 만들어진), well-off(부유한)는 in contract law와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "commensurate with",
+  "pos": "phr",
+  "m": [
+   "~에 상응하는",
+   "~에 걸맞은"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The successful candidate will receive a salary *commensurate with* experience.",
+  "exKo": "합격자는 경력에 상응하는 급여를 받게 된다.",
+  "col": [
+   {
+    "e": "salary commensurate with experience",
+    "k": "경력에 상응하는 급여"
+   },
+   {
+    "e": "be commensurate with",
+    "k": "~에 상응하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "in line with",
+   "proportionate to"
+  ],
+  "ant": "",
+  "tip": "채용 공고의 '급여는 경력에 따라 협의(salary commensurate with experience)'라는 고정 표현으로 나온다. 형용사이므로 be동사 뒤나 명사 뒤에서 수식한다.",
+  "q": {
+   "s": "Compensation for this position will be ------- the applicant's qualifications and experience.",
+   "o": [
+    "in addition to",
+    "on behalf of",
+    "regardless of",
+    "commensurate with"
+   ],
+   "a": 3,
+   "k": "보수가 지원자의 자격과 경력에 '상응할' 것이라는 뜻이므로 commensurate with가 정답이다. regardless of(~와 상관없이)는 be동사 뒤 보어로 쓸 수 없고, in addition to, on behalf of도 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "turn down",
+  "pos": "phr",
+  "m": [
+   "거절하다",
+   "(소리 등을) 줄이다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Mr. Ruiz *turned down* the offer because the position required frequent overseas travel.",
+  "exKo": "Ruiz 씨는 그 직책이 잦은 해외 출장을 요구했기 때문에 제안을 거절했다.",
+  "col": [
+   {
+    "e": "turn down an offer",
+    "k": "제안을 거절하다"
+   },
+   {
+    "e": "turn down a request",
+    "k": "요청을 거절하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "decline",
+   "reject",
+   "refuse"
+  ],
+  "ant": "accept",
+  "tip": "turn down은 decline, reject로 패러프레이징된다. 목적어가 대명사이면 turn it down처럼 사이에 넣는다.",
+  "q": {
+   "s": "Although the salary was attractive, Ms. Kaur ------- the offer to stay with her current employer.",
+   "o": [
+    "turned down",
+    "turned in",
+    "turned up",
+    "turned over"
+   ],
+   "a": 0,
+   "k": "현 직장에 남기 위해 제안을 '거절했다'는 뜻이므로 turned down이 정답이다. turn in은 '제출하다', turn up은 '나타나다', turn over는 '뒤집다, 넘겨주다'라는 뜻이다."
+  }
+ }
+]

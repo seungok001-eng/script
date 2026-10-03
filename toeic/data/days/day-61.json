@@ -1,0 +1,2123 @@
+[
+ {
+  "w": "job seeker",
+  "pos": "phr",
+  "m": [
+   "구직자"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The career center offers free résumé workshops for local *job seekers*.",
+  "exKo": "그 취업 지원 센터는 지역 구직자들을 위한 무료 이력서 작성 워크숍을 제공한다.",
+  "col": [
+   {
+    "e": "active job seekers",
+    "k": "적극적인 구직자"
+   },
+   {
+    "e": "help job seekers",
+    "k": "구직자를 돕다"
+   }
+  ],
+  "der": [
+   {
+    "w": "seek",
+    "pos": "v",
+    "m": "찾다, 구하다"
+   }
+  ],
+  "para": [
+   "job hunter",
+   "applicant",
+   "candidate"
+  ],
+  "ant": "",
+  "tip": "job seeker는 일자리를 찾는 사람 전반을, applicant는 특정 직책에 지원한 사람을 가리킨다. 동사 seek는 seek-sought-sought로 변한다.",
+  "q": {
+   "s": "The city's new website helps ------- find openings at local businesses.",
+   "o": [
+    "job seekers",
+    "job descriptions",
+    "job fairs",
+    "job offers"
+   ],
+   "k": "웹사이트의 도움을 받아 일자리를 '찾는' 주체는 사람이므로 job seekers가 정답. job descriptions(직무 기술서), job fairs(채용 박람회), job offers(채용 제안)는 사람이 아니라 find의 주체가 될 수 없다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "new hire",
+  "pos": "phr",
+  "m": [
+   "신입 사원",
+   "새로 채용된 사람"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "All *new hires* must attend a two-day orientation before starting work.",
+  "exKo": "모든 신입 사원은 업무를 시작하기 전에 이틀간의 오리엔테이션에 참석해야 한다.",
+  "col": [
+   {
+    "e": "train new hires",
+    "k": "신입 사원을 교육하다"
+   },
+   {
+    "e": "welcome new hires",
+    "k": "신입 사원을 환영하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "hire",
+    "pos": "v",
+    "m": "고용하다"
+   },
+   {
+    "w": "hiring",
+    "pos": "n",
+    "m": "채용"
+   }
+  ],
+  "para": [
+   "new employee",
+   "newcomer",
+   "recruit"
+  ],
+  "ant": "",
+  "tip": "여기서 hire는 '새로 고용된 사람'이라는 가산명사라 new hires처럼 복수형이 가능하다. Part 7에서 new employee, recent recruit로 바꿔 표현된다.",
+  "q": {
+   "s": "The HR department is preparing welcome packets for the three new ------- joining the sales team on Monday.",
+   "o": [
+    "hiring",
+    "hired",
+    "hires",
+    "hire"
+   ],
+   "k": "three의 수식을 받는 복수 가산명사 자리이므로 '신입 사원들'을 뜻하는 hires가 정답. hiring은 '채용'이라는 뜻이라 사람을 가리키지 못하고, hired는 과거분사, hire는 단수형이라 three와 맞지 않는다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "recent graduate",
+  "pos": "phr",
+  "m": [
+   "최근 졸업생",
+   "갓 졸업한 사람"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The internship program is designed for *recent graduates* with a degree in engineering.",
+  "exKo": "그 인턴십 프로그램은 공학 학위를 가진 최근 졸업생을 위해 마련되었다.",
+  "col": [
+   {
+    "e": "recent college graduates",
+    "k": "최근 대학 졸업생"
+   },
+   {
+    "e": "recent graduates are encouraged to apply",
+    "k": "최근 졸업생의 지원을 환영합니다"
+   }
+  ],
+  "der": [
+   {
+    "w": "graduate",
+    "pos": "v",
+    "m": "졸업하다"
+   },
+   {
+    "w": "graduation",
+    "pos": "n",
+    "m": "졸업"
+   }
+  ],
+  "para": [
+   "new graduate",
+   "entry-level candidate"
+  ],
+  "ant": "",
+  "tip": "graduate는 명사(졸업생)와 동사(졸업하다, graduate from)로 모두 쓰인다. 채용 공고의 recent graduates are welcome은 '경력이 없어도 지원 가능하다'는 단서가 된다.",
+  "q": {
+   "s": "This entry-level position is ideal for a recent ------- with a background in accounting.",
+   "o": [
+    "graduation",
+    "graduate",
+    "graduated",
+    "graduating"
+   ],
+   "k": "관사 a와 recent 뒤에서 '사람'을 나타내는 명사가 필요하므로 graduate(졸업생)가 정답. graduation은 '졸업'이라는 행위 명사라 직책에 적합한 사람을 가리키지 못하고, graduated와 graduating은 명사 자리에 올 수 없다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "remote",
+  "pos": "adj",
+  "m": [
+   "원격의",
+   "외딴, 멀리 떨어진"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The company introduced a *remote* work policy for its customer support staff.",
+  "exKo": "그 회사는 고객 지원 직원들을 위한 원격 근무 정책을 도입했다.",
+  "col": [
+   {
+    "e": "remote work",
+    "k": "원격 근무"
+   },
+   {
+    "e": "work remotely",
+    "k": "원격으로 일하다"
+   },
+   {
+    "e": "remote location",
+    "k": "외딴 곳"
+   }
+  ],
+  "der": [
+   {
+    "w": "remotely",
+    "pos": "adv",
+    "m": "원격으로, 멀리서"
+   }
+  ],
+  "para": [
+   "off-site",
+   "distant"
+  ],
+  "ant": "",
+  "tip": "명사 앞 형용사 remote(remote work)와 동사 뒤 부사 remotely(work remotely)를 구분하는 품사 문제가 나온다. remote location처럼 '멀리 떨어진'이라는 뜻도 있다.",
+  "q": {
+   "s": "Applicants for this ------- position must have a reliable Internet connection at home.",
+   "o": [
+    "remotely",
+    "remoteness",
+    "removal",
+    "remote"
+   ],
+   "k": "명사 position을 앞에서 수식하는 형용사 자리이므로 remote(원격의)가 정답. remotely는 부사이고, remoteness와 removal은 명사다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "hourly",
+  "pos": "adj",
+  "m": [
+   "시간당의",
+   "매시간의"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The *hourly* wage for weekend shifts is higher than for weekday shifts.",
+  "exKo": "주말 근무의 시간당 임금은 평일 근무보다 높다.",
+  "col": [
+   {
+    "e": "hourly wage",
+    "k": "시급"
+   },
+   {
+    "e": "hourly rate",
+    "k": "시간당 요금"
+   },
+   {
+    "e": "hourly employees",
+    "k": "시간제 직원"
+   }
+  ],
+  "der": [
+   {
+    "w": "hour",
+    "pos": "n",
+    "m": "시간"
+   }
+  ],
+  "para": [
+   "per hour",
+   "by the hour"
+  ],
+  "ant": "salaried",
+  "tip": "-ly로 끝나지만 hourly는 형용사(hourly wage)와 부사(be paid hourly)로 모두 쓰인다. daily, weekly, monthly도 같은 성격이다.",
+  "q": {
+   "s": "Part-time staff at the bookstore earn an ------- wage of $16.",
+   "o": [
+    "hourly",
+    "hour",
+    "hours",
+    "hourlong"
+   ],
+   "k": "명사 wage를 수식해 '시간당 임금'을 뜻하는 형용사 hourly가 정답. hour와 hours는 명사이고, hourlong은 '한 시간 동안 계속되는'이라는 뜻이라 wage와 어울리지 않는다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "enclose",
+  "pos": "v",
+  "m": [
+   "동봉하다",
+   "둘러싸다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "I have *enclosed* a copy of my résumé and two letters of reference.",
+  "exKo": "이력서 사본 한 부와 추천서 두 통을 동봉했다.",
+  "col": [
+   {
+    "e": "enclose a copy",
+    "k": "사본을 동봉하다"
+   },
+   {
+    "e": "Please find enclosed ~",
+    "k": "동봉한 ~을 확인해 주십시오"
+   },
+   {
+    "e": "enclosed document",
+    "k": "동봉된 서류"
+   }
+  ],
+  "der": [
+   {
+    "w": "enclosure",
+    "pos": "n",
+    "m": "동봉물"
+   },
+   {
+    "w": "enclosed",
+    "pos": "adj",
+    "m": "동봉된"
+   }
+  ],
+  "para": [
+   "attach",
+   "include"
+  ],
+  "ant": "",
+  "tip": "편지·이메일에서 'Please find enclosed ~'(동봉한 ~을 확인해 주십시오) 형태로 Part 6·7에 자주 나온다. 명사 enclosure(동봉물)도 품사 문제에 출제된다.",
+  "q": {
+   "s": "Please complete the ------- form and return it in the envelope provided.",
+   "o": [
+    "enclosing",
+    "enclosure",
+    "enclosed",
+    "encloses"
+   ],
+   "k": "명사 form을 수식하며 '동봉된'이라는 수동의 의미를 나타내는 과거분사 enclosed가 정답. enclosing은 '동봉하는'이라는 능동의 뜻이고, enclosure는 명사, encloses는 동사다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "motivated",
+  "pos": "adj",
+  "m": [
+   "의욕적인",
+   "동기가 부여된"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We are looking for a highly *motivated* individual to lead our sales team.",
+  "exKo": "우리는 영업팀을 이끌 매우 의욕적인 인재를 찾고 있다.",
+  "col": [
+   {
+    "e": "highly motivated",
+    "k": "의욕이 넘치는"
+   },
+   {
+    "e": "motivated employees",
+    "k": "의욕적인 직원들"
+   },
+   {
+    "e": "stay motivated",
+    "k": "의욕을 유지하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "motivate",
+    "pos": "v",
+    "m": "동기를 부여하다"
+   },
+   {
+    "w": "motivation",
+    "pos": "n",
+    "m": "동기 부여, 의욕"
+   }
+  ],
+  "para": [
+   "driven",
+   "eager",
+   "enthusiastic"
+  ],
+  "ant": "unmotivated",
+  "tip": "사람이 동기가 부여된 상태면 motivated, 일이나 연설이 동기를 부여하는 성격이면 motivating을 쓴다. 채용 공고의 highly motivated는 단골 연어다.",
+  "q": {
+   "s": "The ideal candidate is a highly ------- professional who can work with minimal supervision.",
+   "o": [
+    "motivation",
+    "motivates",
+    "motivationally",
+    "motivated"
+   ],
+   "k": "부사 highly의 수식을 받으며 명사 professional을 꾸미는 형용사 자리이므로 motivated가 정답. motivation은 명사, motivates는 동사, motivationally는 부사다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "flexibility",
+  "pos": "n",
+  "m": [
+   "유연성",
+   "융통성"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Many workers value schedule *flexibility* as much as a high salary.",
+  "exKo": "많은 근로자는 높은 급여만큼이나 근무 일정의 유연성을 중시한다.",
+  "col": [
+   {
+    "e": "flexibility in scheduling",
+    "k": "일정 조정의 유연성"
+   },
+   {
+    "e": "offer flexibility",
+    "k": "유연성을 제공하다"
+   },
+   {
+    "e": "greater flexibility",
+    "k": "더 큰 유연성"
+   }
+  ],
+  "der": [
+   {
+    "w": "flexible",
+    "pos": "adj",
+    "m": "유연한, 융통성 있는"
+   },
+   {
+    "w": "flexibly",
+    "pos": "adv",
+    "m": "유연하게"
+   }
+  ],
+  "para": [
+   "adaptability",
+   "versatility"
+  ],
+  "ant": "rigidity",
+  "tip": "형용사 flexible(flexible hours)과 명사 flexibility의 품사 자리 문제로 출제된다. 채용 공고에서는 '근무 시간 조정 가능'을 나타내는 단서로 쓰인다.",
+  "q": {
+   "s": "The new policy gives employees greater ------- in choosing when to start and finish their workday.",
+   "o": [
+    "flexible",
+    "flexibly",
+    "flexibility",
+    "flexed"
+   ],
+   "k": "형용사 greater의 수식을 받으며 gives의 직접목적어가 되는 명사 자리이므로 flexibility가 정답. flexible은 형용사, flexibly는 부사, flexed는 동사의 과거형이다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "enthusiasm",
+  "pos": "n",
+  "m": [
+   "열정",
+   "열의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The interviewers were impressed by the candidate's *enthusiasm* for the job.",
+  "exKo": "면접관들은 그 지원자의 일에 대한 열정에 깊은 인상을 받았다.",
+  "col": [
+   {
+    "e": "enthusiasm for",
+    "k": "~에 대한 열정"
+   },
+   {
+    "e": "with enthusiasm",
+    "k": "열정적으로"
+   },
+   {
+    "e": "show enthusiasm",
+    "k": "열의를 보이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "enthusiastic",
+    "pos": "adj",
+    "m": "열정적인"
+   },
+   {
+    "w": "enthusiastically",
+    "pos": "adv",
+    "m": "열정적으로"
+   },
+   {
+    "w": "enthusiast",
+    "pos": "n",
+    "m": "애호가, 열성 팬"
+   }
+  ],
+  "para": [
+   "passion",
+   "eagerness",
+   "zeal"
+  ],
+  "ant": "indifference",
+  "tip": "전치사 for와 짝을 이룬다(enthusiasm for). 형용사 enthusiastic(about), 사람 명사 enthusiast(애호가)와 구분하는 품사 문제가 나온다.",
+  "q": {
+   "s": "Mr. Dubois greeted the proposal with great -------, calling it the best idea of the year.",
+   "o": [
+    "enthusiastic",
+    "enthusiasm",
+    "enthusiastically",
+    "enthusiast"
+   ],
+   "k": "전치사 with와 형용사 great 뒤에서 '열정'이라는 추상명사가 필요하므로 enthusiasm이 정답. enthusiast는 '애호가'라는 사람 명사라 문맥에 맞지 않고, enthusiastic은 형용사, enthusiastically는 부사다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "newcomer",
+  "pos": "n",
+  "m": [
+   "새로 온 사람",
+   "신참"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Each *newcomer* is paired with an experienced mentor during the first month.",
+  "exKo": "새로 온 직원은 각각 첫 달 동안 경험 많은 멘토와 짝을 이룬다.",
+  "col": [
+   {
+    "e": "a newcomer to the industry",
+    "k": "업계에 새로 들어온 사람"
+   },
+   {
+    "e": "welcome newcomers",
+    "k": "새로 온 사람들을 환영하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "new hire",
+   "new employee",
+   "beginner"
+  ],
+  "ant": "veteran",
+  "tip": "전치사 to와 함께 a newcomer to the company(회사에 새로 온 사람)처럼 쓴다. Part 3·4에서 new hire, new employee와 같은 뜻으로 바꿔 쓰인다.",
+  "q": {
+   "s": "Although she is a ------- to the publishing industry, Ms. Haddad has already edited two best-selling books.",
+   "o": [
+    "newcomer",
+    "veteran",
+    "founder",
+    "pioneer"
+   ],
+   "k": "'출판업계에 새로 들어왔지만 벌써 베스트셀러를 편집했다'는 양보 관계이므로 newcomer가 정답. veteran은 Although의 대조 관계와 맞지 않고, founder와 pioneer는 전치사 to와 함께 이런 뜻을 나타내지 못한다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "staffing",
+  "pos": "n",
+  "m": [
+   "인력 배치",
+   "직원 채용"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "*Staffing* levels at the call center will increase during the holiday season.",
+  "exKo": "연휴 기간에는 콜센터의 인력 규모가 늘어날 것이다.",
+  "col": [
+   {
+    "e": "staffing levels",
+    "k": "인력 수준"
+   },
+   {
+    "e": "staffing shortage",
+    "k": "인력 부족"
+   },
+   {
+    "e": "staffing needs",
+    "k": "인력 수요"
+   }
+  ],
+  "der": [
+   {
+    "w": "staff",
+    "pos": "v",
+    "m": "직원을 배치하다"
+   }
+  ],
+  "para": [
+   "personnel",
+   "manpower",
+   "hiring"
+  ],
+  "ant": "",
+  "tip": "staffing은 staffing shortage, staffing needs처럼 다른 명사 앞에서 수식어로 자주 쓰인다. 집합명사 staff(직원)와 혼동하지 않도록 한다.",
+  "q": {
+   "s": "The hospital is facing a ------- shortage and has begun recruiting nurses from abroad.",
+   "o": [
+    "staffed",
+    "staffs",
+    "staffing",
+    "staffer"
+   ],
+   "k": "shortage 앞에서 '인력 부족'이라는 복합명사를 만드는 staffing이 정답. staffed는 과거분사, staffs는 복수형 또는 동사, staffer는 '직원 한 명'을 뜻해 shortage와 결합하지 않는다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "short-staffed",
+  "pos": "adj",
+  "m": [
+   "일손이 부족한"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "We're a little *short-staffed* today, so the wait may be longer than usual.",
+  "exKo": "오늘은 일손이 조금 부족해서 평소보다 대기 시간이 길어질 수 있다.",
+  "col": [
+   {
+    "e": "be short-staffed",
+    "k": "일손이 부족하다"
+   },
+   {
+    "e": "short-staffed department",
+    "k": "인력이 부족한 부서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "understaffed",
+   "short-handed"
+  ],
+  "ant": "fully staffed",
+  "tip": "Part 2·3에서 '왜 지연되는가'에 대한 이유로 자주 들린다. understaffed, short-handed와 같은 뜻이다.",
+  "q": {
+   "s": "Because two cashiers called in sick, the store was ------- all afternoon.",
+   "o": [
+    "short-lived",
+    "short-staffed",
+    "short-tempered",
+    "shorthand"
+   ],
+   "k": "계산원 두 명이 병가를 냈으므로 매장이 '일손이 부족했다'는 short-staffed가 정답. short-lived(오래가지 못한), short-tempered(성미가 급한), shorthand(속기)는 문맥에 맞지 않는다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "understaffed",
+  "pos": "adj",
+  "m": [
+   "인원이 부족한"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The accounting department has been *understaffed* since two employees retired in May.",
+  "exKo": "회계 부서는 5월에 직원 두 명이 은퇴한 이후로 인력이 부족한 상태다.",
+  "col": [
+   {
+    "e": "seriously understaffed",
+    "k": "심각하게 인력이 부족한"
+   },
+   {
+    "e": "understaffed and overworked",
+    "k": "인력은 부족하고 업무는 과중한"
+   }
+  ],
+  "der": [
+   {
+    "w": "overstaffed",
+    "pos": "adj",
+    "m": "인원이 과잉인"
+   },
+   {
+    "w": "staff",
+    "pos": "v",
+    "m": "직원을 배치하다"
+   }
+  ],
+  "para": [
+   "short-staffed",
+   "short-handed"
+  ],
+  "ant": "overstaffed",
+  "tip": "접두사 under-는 '부족한', over-는 '과잉의'를 뜻한다(understaffed ↔ overstaffed). Part 7에서 short-staffed, need more workers로 바꿔 표현된다.",
+  "q": {
+   "s": "The clinic is currently ------- and is looking to hire two additional receptionists.",
+   "o": [
+    "overstaffed",
+    "overqualified",
+    "understated",
+    "understaffed"
+   ],
+   "k": "접수원을 추가로 채용하려 하므로 '인력이 부족한' understaffed가 정답. overstaffed(인원이 과잉인)는 반대 의미이고, overqualified(자격이 넘치는)와 understated(절제된)는 문맥에 맞지 않는다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "overqualified",
+  "pos": "adj",
+  "m": [
+   "자격이 넘치는",
+   "필요 이상의 자격을 갖춘"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "With a doctorate in chemistry, Mr. Ito felt *overqualified* for the lab assistant job.",
+  "exKo": "화학 박사 학위가 있는 Ito 씨는 실험 보조원 일자리에 자신의 자격이 넘친다고 느꼈다.",
+  "col": [
+   {
+    "e": "overqualified for",
+    "k": "~에 자격이 넘치는"
+   }
+  ],
+  "der": [
+   {
+    "w": "qualify",
+    "pos": "v",
+    "m": "자격을 얻다"
+   },
+   {
+    "w": "qualification",
+    "pos": "n",
+    "m": "자격, 자격 요건"
+   }
+  ],
+  "para": [
+   "too experienced"
+  ],
+  "ant": "underqualified",
+  "tip": "전치사 for와 함께 overqualified for the position으로 쓴다. Part 7에서 지원자가 채용되지 않은 이유로 등장하며, 반의어는 underqualified다.",
+  "q": {
+   "s": "The hiring committee worried that Ms. Lee, a former director, might be ------- for an assistant position.",
+   "o": [
+    "overdue",
+    "overworked",
+    "overpriced",
+    "overqualified"
+   ],
+   "k": "전직 이사가 보조직에 지원했으므로 '자격이 넘치는' overqualified가 정답. overdue(기한이 지난), overworked(과로한), overpriced(너무 비싼)는 for an assistant position과 의미가 맞지 않는다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "headhunter",
+  "pos": "n",
+  "m": [
+   "헤드헌터",
+   "인재 스카우트 담당자"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "A *headhunter* contacted Ms. Choi about a senior position at a rival firm.",
+  "exKo": "한 헤드헌터가 경쟁사의 고위직 자리와 관련해 Choi 씨에게 연락했다.",
+  "col": [
+   {
+    "e": "be approached by a headhunter",
+    "k": "헤드헌터에게 제안을 받다"
+   },
+   {
+    "e": "use a headhunter",
+    "k": "헤드헌터를 이용하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "headhunt",
+    "pos": "v",
+    "m": "인재를 스카우트하다"
+   }
+  ],
+  "para": [
+   "recruiter",
+   "executive search consultant"
+  ],
+  "ant": "",
+  "tip": "기업을 대신해 인재를 발굴하는 사람으로 Part 7에서 recruiter로 바꿔 표현된다. 동사 headhunt는 be headhunted(스카우트되다)처럼 수동태로 자주 쓰인다.",
+  "q": {
+   "s": "The company hired a ------- to find a qualified candidate for the chief financial officer position.",
+   "o": [
+    "landlord",
+    "supplier",
+    "commuter",
+    "headhunter"
+   ],
+   "k": "최고재무책임자 후보를 찾기 위해 고용한 사람이므로 headhunter가 정답. landlord(집주인), supplier(공급업체), commuter(통근자)는 인재 발굴과 관련이 없다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "onboarding",
+  "pos": "n",
+  "m": [
+   "신입 사원 적응 교육",
+   "온보딩"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Our *onboarding* program helps new employees learn about company policies during their first week.",
+  "exKo": "우리 온보딩 프로그램은 신입 직원이 첫 주 동안 회사 방침을 익히도록 돕는다.",
+  "col": [
+   {
+    "e": "onboarding process",
+    "k": "신입 적응 절차"
+   },
+   {
+    "e": "onboarding program",
+    "k": "온보딩 프로그램"
+   },
+   {
+    "e": "employee onboarding",
+    "k": "직원 온보딩"
+   }
+  ],
+  "der": [
+   {
+    "w": "onboard",
+    "pos": "v",
+    "m": "(신입 사원을) 적응시키다"
+   }
+  ],
+  "para": [
+   "orientation",
+   "induction",
+   "training"
+  ],
+  "ant": "",
+  "tip": "채용 후 신입 사원이 조직에 적응하도록 돕는 과정으로, Part 7에서 orientation, training으로 바꿔 표현된다. 주로 process, program 앞에서 명사 수식어로 쓰인다.",
+  "q": {
+   "s": "During the two-week ------- period, newly hired staff meet with each department head.",
+   "o": [
+    "onboarding",
+    "outgoing",
+    "overtime",
+    "outsourcing"
+   ],
+   "k": "새로 채용된 직원이 부서장들을 만나는 '신입 적응' 기간이므로 onboarding이 정답. outgoing(떠나는, 외향적인), overtime(초과 근무), outsourcing(외주)은 신입 직원의 적응 기간을 나타내지 못한다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "shortlist",
+  "pos": "v",
+  "m": [
+   "최종 후보 명단에 올리다",
+   "최종 후보 명단"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Five candidates have been *shortlisted* for the marketing director position.",
+  "exKo": "마케팅 이사 자리에 다섯 명의 후보가 최종 명단에 올랐다.",
+  "col": [
+   {
+    "e": "be shortlisted for",
+    "k": "~의 최종 후보에 오르다"
+   },
+   {
+    "e": "make the shortlist",
+    "k": "최종 후보 명단에 들다"
+   },
+   {
+    "e": "draw up a shortlist",
+    "k": "최종 후보 명단을 작성하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "select",
+   "narrow down"
+  ],
+  "ant": "",
+  "tip": "명사(최종 후보 명단)와 동사(최종 후보로 선정하다)로 모두 쓰이며 be shortlisted for 형태가 자주 나온다. Part 7 채용 지문에서 '면접 대상자'를 가리킨다.",
+  "q": {
+   "s": "Only applicants who have been ------- will be contacted for an interview.",
+   "o": [
+    "shortened",
+    "shortlisted",
+    "shortcut",
+    "shortage"
+   ],
+   "k": "면접 연락을 받는 지원자는 '최종 후보로 선정된' 사람이므로 shortlisted가 정답. shortened(짧아진)는 사람에게 쓰지 않고, shortcut(지름길)과 shortage(부족)는 명사다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "aspiring",
+  "pos": "adj",
+  "m": [
+   "장차 ~가 되려는",
+   "~ 지망의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The workshop offers practical advice for *aspiring* entrepreneurs.",
+  "exKo": "그 워크숍은 창업을 꿈꾸는 사람들에게 실용적인 조언을 제공한다.",
+  "col": [
+   {
+    "e": "aspiring writers",
+    "k": "작가 지망생"
+   },
+   {
+    "e": "aspiring entrepreneurs",
+    "k": "예비 창업가"
+   }
+  ],
+  "der": [
+   {
+    "w": "aspire",
+    "pos": "v",
+    "m": "열망하다, 꿈꾸다"
+   },
+   {
+    "w": "aspiration",
+    "pos": "n",
+    "m": "열망, 포부"
+   }
+  ],
+  "para": [
+   "would-be",
+   "hopeful",
+   "budding"
+  ],
+  "ant": "",
+  "tip": "명사 앞에서 '장차 ~가 되려는'이라는 뜻으로 쓴다(aspiring designers). 동사 aspire는 aspire to + 명사/동사원형 형태로 쓰인다.",
+  "q": {
+   "s": "The magazine runs a monthly column offering tips to ------- photographers.",
+   "o": [
+    "aspired",
+    "aspiration",
+    "aspire",
+    "aspiring"
+   ],
+   "k": "명사 photographers를 수식해 '사진작가 지망생'이라는 뜻을 만드는 형용사 aspiring이 정답. aspire는 자동사라 과거분사 aspired는 명사를 수식하지 못하고, aspiration은 명사, aspire는 동사원형이다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "background check",
+  "pos": "phr",
+  "m": [
+   "신원 조회",
+   "배경 조사"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "All job offers are conditional on the successful completion of a *background check*.",
+  "exKo": "모든 채용 제안은 신원 조회를 무사히 통과하는 것을 조건으로 한다.",
+  "col": [
+   {
+    "e": "run a background check",
+    "k": "신원 조회를 하다"
+   },
+   {
+    "e": "pass a background check",
+    "k": "신원 조회를 통과하다"
+   },
+   {
+    "e": "conduct a background check",
+    "k": "배경 조사를 실시하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "screening",
+   "reference check"
+  ],
+  "ant": "",
+  "tip": "Part 7 채용 지문에서 최종 채용 전 단계로 자주 언급된다. run, conduct, complete 같은 동사와 함께 쓰인다.",
+  "q": {
+   "s": "Before the contract is signed, the security firm will conduct a background ------- on each finalist.",
+   "o": [
+    "check",
+    "view",
+    "cover",
+    "scene"
+   ],
+   "k": "conduct와 함께 '신원 조회를 실시하다'라는 뜻을 만드는 check가 정답. background view, background cover, background scene은 '조사'라는 의미를 나타내지 못한다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "transcript",
+  "pos": "n",
+  "m": [
+   "성적 증명서",
+   "(녹음·대화의) 기록"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Applicants must submit an official *transcript* from their university.",
+  "exKo": "지원자는 대학의 공식 성적 증명서를 제출해야 한다.",
+  "col": [
+   {
+    "e": "official transcript",
+    "k": "공식 성적 증명서"
+   },
+   {
+    "e": "academic transcript",
+    "k": "성적 증명서"
+   },
+   {
+    "e": "transcript of the speech",
+    "k": "연설 기록문"
+   }
+  ],
+  "der": [
+   {
+    "w": "transcribe",
+    "pos": "v",
+    "m": "받아 적다, 기록하다"
+   },
+   {
+    "w": "transcription",
+    "pos": "n",
+    "m": "필사, 기록"
+   }
+  ],
+  "para": [
+   "academic record",
+   "written record"
+  ],
+  "ant": "",
+  "tip": "채용·입학 지문에서는 '성적 증명서', 회의·방송 지문에서는 '대화를 글로 옮긴 기록'이라는 뜻으로 쓰인다. 동사 transcribe(받아 적다)도 함께 알아 둔다.",
+  "q": {
+   "s": "A full ------- of the CEO's speech will be posted on the company website tomorrow.",
+   "o": [
+    "transcript",
+    "transcribe",
+    "transcribed",
+    "transcribing"
+   ],
+   "k": "관사 A와 형용사 full 뒤의 명사 자리이므로 transcript(기록문)가 정답. transcribe는 동사원형, transcribed와 transcribing은 동사의 변화형이다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "desirable",
+  "pos": "adj",
+  "m": [
+   "갖추면 좋은",
+   "바람직한",
+   "탐나는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Experience with design software is *desirable* but not required.",
+  "exKo": "디자인 소프트웨어 경험이 있으면 좋지만 필수는 아니다.",
+  "col": [
+   {
+    "e": "highly desirable",
+    "k": "매우 바람직한"
+   },
+   {
+    "e": "desirable qualifications",
+    "k": "우대 자격 요건"
+   },
+   {
+    "e": "desirable location",
+    "k": "선호되는 지역"
+   }
+  ],
+  "der": [
+   {
+    "w": "desire",
+    "pos": "n",
+    "m": "욕구, 바람"
+   },
+   {
+    "w": "desirability",
+    "pos": "n",
+    "m": "바람직함"
+   }
+  ],
+  "para": [
+   "preferred",
+   "advantageous",
+   "a plus"
+  ],
+  "ant": "undesirable",
+  "tip": "채용 공고에서 required(필수)와 대비되어 '우대 사항'을 나타낸다. Part 7에서 preferred, a plus로 바꿔 표현되는 경우가 많다.",
+  "q": {
+   "s": "Fluency in Spanish is ------- for this position, though it is not a requirement.",
+   "o": [
+    "desirable",
+    "desirably",
+    "desire",
+    "desirability"
+   ],
+   "k": "be동사 뒤 보어 자리에서 '갖추면 좋은'이라는 뜻을 나타내는 형용사 desirable이 정답. desirably는 부사이고, desire와 desirability는 명사라 주어 Fluency와 의미가 맞지 않는다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "self-motivated",
+  "pos": "adj",
+  "m": [
+   "자발적인",
+   "스스로 동기를 부여하는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Remote workers need to be *self-motivated* and well organized.",
+  "exKo": "원격 근무자는 자발적이고 체계적이어야 한다.",
+  "col": [
+   {
+    "e": "self-motivated individual",
+    "k": "자발적으로 일하는 사람"
+   },
+   {
+    "e": "highly self-motivated",
+    "k": "매우 자기 주도적인"
+   }
+  ],
+  "der": [
+   {
+    "w": "motivation",
+    "pos": "n",
+    "m": "동기 부여, 의욕"
+   }
+  ],
+  "para": [
+   "driven",
+   "proactive",
+   "independent"
+  ],
+  "ant": "",
+  "tip": "채용 공고에서 '감독 없이도 스스로 일하는 사람'을 뜻하며, Part 7에서 can work independently, without supervision으로 패러프레이징된다.",
+  "q": {
+   "s": "We are seeking a ------- individual who can manage projects with little supervision.",
+   "o": [
+    "self-motivated",
+    "self-service",
+    "self-addressed",
+    "self-explanatory"
+   ],
+   "k": "감독 없이 프로젝트를 관리할 수 있는 사람이므로 '자발적인' self-motivated가 정답. self-service(셀프서비스의), self-addressed(자기 주소를 적은), self-explanatory(설명이 필요 없는)는 사람을 묘사하지 않는다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "detail-oriented",
+  "pos": "adj",
+  "m": [
+   "꼼꼼한",
+   "세부 사항에 신경 쓰는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our ideal bookkeeper is *detail-oriented* and comfortable working with numbers.",
+  "exKo": "우리가 원하는 경리 직원은 꼼꼼하고 숫자를 다루는 데 능숙한 사람이다.",
+  "col": [
+   {
+    "e": "detail-oriented person",
+    "k": "꼼꼼한 사람"
+   },
+   {
+    "e": "attention to detail",
+    "k": "세부 사항에 대한 주의"
+   }
+  ],
+  "der": [
+   {
+    "w": "detail",
+    "pos": "n",
+    "m": "세부 사항"
+   },
+   {
+    "w": "detailed",
+    "pos": "adj",
+    "m": "상세한"
+   }
+  ],
+  "para": [
+   "meticulous",
+   "thorough",
+   "careful"
+  ],
+  "ant": "careless",
+  "tip": "채용 공고 단골 표현으로 attention to detail, meticulous와 같은 뜻이다. 형용사 detailed(상세한)는 사람이 아니라 사물(detailed report)에 쓴다는 점이 다르다.",
+  "q": {
+   "s": "Proofreaders must be extremely ------- because even small errors can damage the publisher's reputation.",
+   "o": [
+    "open-ended",
+    "detail-oriented",
+    "long-standing",
+    "well-attended"
+   ],
+   "k": "작은 오류도 평판을 해칠 수 있으므로 교정자는 '꼼꼼해야' 한다는 detail-oriented가 정답. open-ended(제약이 없는), long-standing(오래된), well-attended(참석자가 많은)는 사람의 업무 자질을 나타내지 않는다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "team player",
+  "pos": "phr",
+  "m": [
+   "협동심이 강한 사람",
+   "팀워크가 좋은 사람"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Ms. Novak is a real *team player* who always helps her coworkers meet deadlines.",
+  "exKo": "Novak 씨는 늘 동료들이 마감을 지키도록 돕는 진정한 팀워크형 인재다.",
+  "col": [
+   {
+    "e": "a strong team player",
+    "k": "협동심이 뛰어난 사람"
+   },
+   {
+    "e": "be a team player",
+    "k": "협조적으로 일하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "collaborator",
+   "cooperative worker"
+  ],
+  "ant": "",
+  "tip": "채용 공고와 추천서에서 '협업 능력'을 나타내며, Part 7에서 works well with others로 바꿔 표현된다.",
+  "q": {
+   "s": "Candidates should be team ------- who are comfortable working closely with colleagues.",
+   "o": [
+    "playing",
+    "players",
+    "played",
+    "plays"
+   ],
+   "k": "복수 주어 Candidates의 보어로 '협동심이 강한 사람들'을 뜻하는 복수 명사 players가 정답. playing과 played는 동사 변화형이고, plays는 '연극, 경기'라는 뜻이라 사람을 가리키지 못한다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "punctuality",
+  "pos": "n",
+  "m": [
+   "시간 엄수"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hotel manager stressed the importance of *punctuality* at the staff meeting.",
+  "exKo": "호텔 매니저는 직원회의에서 시간 엄수의 중요성을 강조했다.",
+  "col": [
+   {
+    "e": "punctuality and reliability",
+    "k": "시간 엄수와 신뢰성"
+   },
+   {
+    "e": "stress punctuality",
+    "k": "시간 엄수를 강조하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "punctual",
+    "pos": "adj",
+    "m": "시간을 엄수하는"
+   },
+   {
+    "w": "punctually",
+    "pos": "adv",
+    "m": "정각에, 시간을 지켜"
+   }
+  ],
+  "para": [
+   "timeliness",
+   "promptness"
+  ],
+  "ant": "",
+  "tip": "형용사 punctual(시간을 지키는)과 부사 punctually, 명사 punctuality를 구분하는 품사 문제로 출제된다.",
+  "q": {
+   "s": "Ms. Bauer received an award for her ------- and perfect attendance record.",
+   "o": [
+    "punctual",
+    "punctuality",
+    "punctually",
+    "punctuate"
+   ],
+   "k": "소유격 her 뒤에서 and로 attendance record와 병렬을 이루는 명사 자리이므로 punctuality가 정답. punctual은 형용사, punctually는 부사, punctuate는 동사다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "ambitious",
+  "pos": "adj",
+  "m": [
+   "야심 찬",
+   "의욕적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company has set an *ambitious* goal of doubling its sales within three years.",
+  "exKo": "그 회사는 3년 안에 매출을 두 배로 늘린다는 야심 찬 목표를 세웠다.",
+  "col": [
+   {
+    "e": "ambitious goal",
+    "k": "야심 찬 목표"
+   },
+   {
+    "e": "ambitious plan",
+    "k": "원대한 계획"
+   },
+   {
+    "e": "ambitious young professionals",
+    "k": "의욕 넘치는 젊은 직장인"
+   }
+  ],
+  "der": [
+   {
+    "w": "ambition",
+    "pos": "n",
+    "m": "야망, 포부"
+   },
+   {
+    "w": "ambitiously",
+    "pos": "adv",
+    "m": "야심 차게"
+   }
+  ],
+  "para": [
+   "challenging",
+   "bold",
+   "driven"
+  ],
+  "ant": "modest",
+  "tip": "사람(ambitious employee)뿐 아니라 계획·목표(ambitious target)에도 쓰여 '도전적인, 원대한'이라는 뜻이 된다. 명사 ambition과 품사 자리를 구분한다.",
+  "q": {
+   "s": "The city council approved an ------- plan to build 2,000 affordable homes by 2030.",
+   "o": [
+    "ambition",
+    "ambitiously",
+    "ambitious",
+    "ambitions"
+   ],
+   "k": "관사 an과 명사 plan 사이의 형용사 자리이므로 ambitious가 정답. ambition과 ambitions는 명사, ambitiously는 부사다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "multilingual",
+  "pos": "adj",
+  "m": [
+   "다국어를 구사하는",
+   "여러 언어로 된"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our *multilingual* support staff can assist customers in six languages.",
+  "exKo": "우리 다국어 지원팀은 6개 언어로 고객을 도울 수 있다.",
+  "col": [
+   {
+    "e": "multilingual staff",
+    "k": "다국어 구사 직원"
+   },
+   {
+    "e": "multilingual website",
+    "k": "다국어 웹사이트"
+   }
+  ],
+  "der": [
+   {
+    "w": "bilingual",
+    "pos": "adj",
+    "m": "2개 국어를 하는"
+   }
+  ],
+  "para": [
+   "speaking several languages"
+  ],
+  "ant": "monolingual",
+  "tip": "접두사 multi-(여러)와 lingual(언어의)이 결합한 말로, bilingual(2개 국어를 하는)과 함께 채용 공고의 우대 조건에 자주 나온다.",
+  "q": {
+   "s": "The hotel prefers to hire ------- receptionists because many of its guests are from overseas.",
+   "o": [
+    "multimedia",
+    "multipurpose",
+    "multilingual",
+    "multistory"
+   ],
+   "k": "해외 투숙객이 많아 '여러 언어를 구사하는' 접수원을 선호하므로 multilingual이 정답. multimedia(멀티미디어의), multipurpose(다목적의), multistory(다층의)는 사람을 수식하지 않는다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "resourceful",
+  "pos": "adj",
+  "m": [
+   "수완이 좋은",
+   "지략이 있는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A *resourceful* assistant found a new venue just hours before the event.",
+  "exKo": "수완 좋은 비서가 행사 몇 시간 전에 새 장소를 찾아냈다.",
+  "col": [
+   {
+    "e": "resourceful employee",
+    "k": "수완 좋은 직원"
+   },
+   {
+    "e": "creative and resourceful",
+    "k": "창의적이고 수완 있는"
+   }
+  ],
+  "der": [
+   {
+    "w": "resource",
+    "pos": "n",
+    "m": "자원, 자료"
+   },
+   {
+    "w": "resourcefulness",
+    "pos": "n",
+    "m": "수완, 지략"
+   }
+  ],
+  "para": [
+   "inventive",
+   "capable",
+   "creative"
+  ],
+  "ant": "",
+  "tip": "'어려운 상황에서 해결책을 잘 찾아내는'이라는 뜻으로, 명사 resource(자원)와 의미가 달라 혼동하기 쉽다. 추천서나 직원 칭찬 지문에 자주 나온다.",
+  "q": {
+   "s": "When the shipment was delayed, the ------- store manager borrowed stock from a nearby branch.",
+   "o": [
+    "resourceful",
+    "resource",
+    "resources",
+    "resourcefully"
+   ],
+   "k": "관사 the와 명사 store manager 사이에서 사람을 묘사하는 형용사 자리이므로 resourceful이 정답. resource와 resources는 명사, resourcefully는 부사다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "meticulous",
+  "pos": "adj",
+  "m": [
+   "꼼꼼한",
+   "세심한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The auditor is known for her *meticulous* attention to detail.",
+  "exKo": "그 감사관은 세부 사항까지 꼼꼼히 챙기는 것으로 알려져 있다.",
+  "col": [
+   {
+    "e": "meticulous attention to detail",
+    "k": "세부 사항에 대한 세심한 주의"
+   },
+   {
+    "e": "meticulous records",
+    "k": "꼼꼼한 기록"
+   }
+  ],
+  "der": [
+   {
+    "w": "meticulously",
+    "pos": "adv",
+    "m": "꼼꼼하게"
+   }
+  ],
+  "para": [
+   "thorough",
+   "careful",
+   "detail-oriented"
+  ],
+  "ant": "careless",
+  "tip": "detail-oriented, thorough와 같은 뜻의 고급 어휘다. 부사형 meticulously(meticulously planned)와 품사 자리를 구분하는 문제로도 나온다.",
+  "q": {
+   "s": "Mr. Sato keeps ------- records of every transaction, so his reports are always accurate.",
+   "o": [
+    "spacious",
+    "generous",
+    "meticulous",
+    "punctual"
+   ],
+   "k": "보고서가 항상 정확한 이유가 되어야 하므로 '꼼꼼한' 기록이라는 meticulous가 정답. spacious(넓은), generous(후한), punctual(시간을 지키는)은 records를 수식하기에 의미가 맞지 않는다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "competency",
+  "pos": "n",
+  "m": [
+   "역량",
+   "능력"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The training program focuses on core *competencies* such as leadership and communication.",
+  "exKo": "그 교육 프로그램은 리더십과 의사소통 같은 핵심 역량에 초점을 맞춘다.",
+  "col": [
+   {
+    "e": "core competency",
+    "k": "핵심 역량"
+   },
+   {
+    "e": "competency test",
+    "k": "역량 평가"
+   },
+   {
+    "e": "technical competencies",
+    "k": "기술적 역량"
+   }
+  ],
+  "der": [
+   {
+    "w": "competent",
+    "pos": "adj",
+    "m": "유능한"
+   },
+   {
+    "w": "competence",
+    "pos": "n",
+    "m": "능력, 역량"
+   }
+  ],
+  "para": [
+   "skill",
+   "capability",
+   "ability"
+  ],
+  "ant": "",
+  "tip": "competency는 특정 업무 역량을 뜻하며 core competencies처럼 가산명사로 자주 쓰인다. 형용사 competent(유능한)와 품사 자리를 구분한다.",
+  "q": {
+   "s": "All technicians must pass a ------- test before they are allowed to repair the equipment.",
+   "o": [
+    "competent",
+    "competently",
+    "competency",
+    "compete"
+   ],
+   "k": "test 앞에서 '역량 평가'라는 복합명사를 만드는 명사 competency가 정답. competent test는 '유능한 시험'이라는 어색한 뜻이 되고, competently는 부사, compete는 동사다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "employment agency",
+  "pos": "phr",
+  "m": [
+   "직업소개소",
+   "인력 파견 회사"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "We found our temporary receptionist through a local *employment agency*.",
+  "exKo": "우리는 지역 직업소개소를 통해 임시 접수원을 구했다.",
+  "col": [
+   {
+    "e": "register with an employment agency",
+    "k": "직업소개소에 등록하다"
+   },
+   {
+    "e": "private employment agency",
+    "k": "민간 직업소개소"
+   }
+  ],
+  "der": [
+   {
+    "w": "employ",
+    "pos": "v",
+    "m": "고용하다"
+   },
+   {
+    "w": "employment",
+    "pos": "n",
+    "m": "고용, 일자리"
+   }
+  ],
+  "para": [
+   "staffing agency",
+   "recruitment agency"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 staffing agency, recruitment firm으로 바꿔 표현된다. '직업소개소에 등록하다'는 register with an employment agency처럼 전치사 with를 쓴다.",
+  "q": {
+   "s": "After moving to Toronto, Mr. Ruiz registered with an employment ------- to find work quickly.",
+   "o": [
+    "agenda",
+    "analysis",
+    "agency",
+    "assembly"
+   ],
+   "k": "일자리를 빨리 구하려고 등록하는 곳이므로 employment agency(직업소개소)를 만드는 agency가 정답. agenda(안건), analysis(분석), assembly(조립, 집회)는 register with의 대상이 되지 않는다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "placement",
+  "pos": "n",
+  "m": [
+   "(일자리) 알선, 배치",
+   "배치"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The university's career office helps students find internship *placements*.",
+  "exKo": "그 대학의 취업 지원실은 학생들이 인턴십 자리를 구하도록 돕는다.",
+  "col": [
+   {
+    "e": "job placement",
+    "k": "취업 알선"
+   },
+   {
+    "e": "placement agency",
+    "k": "취업 알선 업체"
+   },
+   {
+    "e": "placement test",
+    "k": "배치 고사"
+   }
+  ],
+  "der": [
+   {
+    "w": "place",
+    "pos": "v",
+    "m": "배치하다, 두다"
+   }
+  ],
+  "para": [
+   "assignment",
+   "position"
+  ],
+  "ant": "",
+  "tip": "job placement(취업 알선), placement test(배치 고사)처럼 복합명사로 자주 쓰인다. 동사 place(배치하다)의 명사형이다.",
+  "q": {
+   "s": "The agency has a 90 percent success rate in the job ------- of its clients.",
+   "o": [
+    "place",
+    "placed",
+    "placing",
+    "placement"
+   ],
+   "k": "관사 the와 job 뒤에서 '취업 알선'이라는 복합명사를 만드는 placement가 정답. place는 '장소'라는 뜻이 되어 문맥에 맞지 않고, placed와 placing은 동사 변화형이다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "relocation package",
+  "pos": "phr",
+  "m": [
+   "이전 지원 혜택",
+   "이주 지원금"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The company offered Ms. Grant a generous *relocation package* to move to Singapore.",
+  "exKo": "회사는 Grant 씨에게 싱가포르로 이주하는 데 필요한 넉넉한 이전 지원 혜택을 제안했다.",
+  "col": [
+   {
+    "e": "generous relocation package",
+    "k": "넉넉한 이전 지원 혜택"
+   },
+   {
+    "e": "offer a relocation package",
+    "k": "이전 지원금을 제공하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "relocate",
+    "pos": "v",
+    "m": "이전하다, 이주하다"
+   },
+   {
+    "w": "relocation",
+    "pos": "n",
+    "m": "이전, 이주"
+   }
+  ],
+  "para": [
+   "moving allowance",
+   "relocation assistance"
+  ],
+  "ant": "",
+  "tip": "근무지를 옮길 때 이사 비용과 주거비 등을 지원하는 혜택으로, Part 7 채용·전근 지문에서 moving expenses, relocation assistance로 바꿔 표현된다.",
+  "q": {
+   "s": "Employees transferring to the Dubai office will receive a relocation ------- covering moving and housing costs.",
+   "o": [
+    "parcel",
+    "package",
+    "bundle",
+    "container"
+   ],
+   "k": "이사비와 주거비를 포괄하는 '이전 지원 혜택'은 relocation package로 쓰므로 package가 정답. parcel(소포), bundle(묶음), container(용기)는 혜택 묶음이라는 뜻을 나타내지 못한다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "remuneration",
+  "pos": "n",
+  "m": [
+   "보수",
+   "급여"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "*Remuneration* for this position will depend on experience and qualifications.",
+  "exKo": "이 직책의 보수는 경력과 자격에 따라 달라진다.",
+  "col": [
+   {
+    "e": "remuneration package",
+    "k": "보수 패키지"
+   },
+   {
+    "e": "competitive remuneration",
+    "k": "경쟁력 있는 보수"
+   }
+  ],
+  "der": [
+   {
+    "w": "remunerate",
+    "pos": "v",
+    "m": "보수를 지급하다"
+   },
+   {
+    "w": "remunerative",
+    "pos": "adj",
+    "m": "보수가 좋은"
+   }
+  ],
+  "para": [
+   "pay",
+   "compensation",
+   "salary"
+  ],
+  "ant": "",
+  "tip": "salary, compensation의 격식 있는 표현으로 Part 7 채용 공고에 나온다. 주로 불가산명사로 쓰여 관사 없이 competitive remuneration처럼 쓴다.",
+  "q": {
+   "s": "The job posting promises competitive ------- and generous benefits for qualified candidates.",
+   "o": [
+    "remunerate",
+    "remuneration",
+    "remunerative",
+    "remunerated"
+   ],
+   "k": "형용사 competitive의 수식을 받고 and 뒤의 benefits와 병렬을 이루는 명사 자리이므로 remuneration이 정답. remunerate는 동사, remunerative는 형용사, remunerated는 과거분사다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "stipend",
+  "pos": "n",
+  "m": [
+   "(정기) 수당",
+   "급료"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Interns receive a monthly *stipend* to cover their transportation and meals.",
+  "exKo": "인턴은 교통비와 식비를 충당할 수 있도록 매달 수당을 받는다.",
+  "col": [
+   {
+    "e": "monthly stipend",
+    "k": "월 수당"
+   },
+   {
+    "e": "receive a stipend",
+    "k": "수당을 받다"
+   },
+   {
+    "e": "travel stipend",
+    "k": "출장 수당"
+   }
+  ],
+  "der": [],
+  "para": [
+   "allowance",
+   "payment",
+   "grant"
+  ],
+  "ant": "",
+  "tip": "인턴·연수생·연구원에게 정기적으로 주는 수당으로 Part 7에서 allowance로 바꿔 표현된다. 정규 급여인 salary와는 구분된다.",
+  "q": {
+   "s": "Participants in the summer research program will be paid a weekly ------- of $300.",
+   "o": [
+    "tuition",
+    "deposit",
+    "stipend",
+    "refund"
+   ],
+   "k": "참가자에게 '지급되는' 주급 형태의 돈이므로 stipend(수당)가 정답. tuition(수업료)과 deposit(보증금)은 참가자가 내는 돈이고, refund(환불금)는 매주 지급되는 보수가 아니다.",
+   "a": 2
+  }
+ },
+ {
+  "w": "negotiable",
+  "pos": "adj",
+  "m": [
+   "협상 가능한",
+   "조정 가능한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The starting salary is *negotiable* depending on the candidate's experience.",
+  "exKo": "초봉은 지원자의 경력에 따라 협상할 수 있다.",
+  "col": [
+   {
+    "e": "salary negotiable",
+    "k": "급여 협의 가능"
+   },
+   {
+    "e": "price is negotiable",
+    "k": "가격은 협상 가능하다"
+   },
+   {
+    "e": "non-negotiable",
+    "k": "협상 불가의"
+   }
+  ],
+  "der": [
+   {
+    "w": "negotiate",
+    "pos": "v",
+    "m": "협상하다"
+   },
+   {
+    "w": "negotiation",
+    "pos": "n",
+    "m": "협상"
+   }
+  ],
+  "para": [
+   "open to discussion",
+   "flexible"
+  ],
+  "ant": "fixed",
+  "tip": "-able은 '~할 수 있는'이라는 형용사 어미로, be동사 뒤 보어 자리 품사 문제로 나온다. 채용 공고의 'Salary negotiable'은 '급여 협의'라는 뜻이다.",
+  "q": {
+   "s": "The rental price of the office space is ------- for tenants who sign a two-year lease.",
+   "o": [
+    "negotiable",
+    "negotiation",
+    "negotiate",
+    "negotiator"
+   ],
+   "k": "be동사 뒤에서 주어 rental price의 성질을 설명하는 형용사 보어 자리이므로 negotiable이 정답. negotiation과 negotiator는 명사, negotiate는 동사다.",
+   "a": 0
+  }
+ },
+ {
+  "w": "freelance",
+  "pos": "adj",
+  "m": [
+   "프리랜서의",
+   "자유 계약의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The magazine relies on *freelance* photographers for most of its travel features.",
+  "exKo": "그 잡지는 여행 특집 대부분을 프리랜서 사진작가들에게 의존한다.",
+  "col": [
+   {
+    "e": "freelance writer",
+    "k": "프리랜서 작가"
+   },
+   {
+    "e": "work freelance",
+    "k": "프리랜서로 일하다"
+   },
+   {
+    "e": "on a freelance basis",
+    "k": "프리랜서 방식으로"
+   }
+  ],
+  "der": [
+   {
+    "w": "freelancer",
+    "pos": "n",
+    "m": "프리랜서"
+   }
+  ],
+  "para": [
+   "self-employed",
+   "independent",
+   "contract"
+  ],
+  "ant": "",
+  "tip": "형용사(freelance designer)와 부사(work freelance)로 쓰이며, 사람을 가리킬 때는 freelancer를 쓴다. Part 7에서 contract worker, self-employed로 바꿔 표현된다.",
+  "q": {
+   "s": "The publisher hired a ------- illustrator on a contract basis to design the book cover.",
+   "o": [
+    "freely",
+    "freelance",
+    "freedom",
+    "freelancer"
+   ],
+   "k": "명사 illustrator를 앞에서 수식하는 형용사 자리이므로 freelance가 정답. freely는 부사, freedom은 명사이고, freelancer는 사람 명사라 illustrator와 나란히 쓸 수 없다.",
+   "a": 1
+  }
+ },
+ {
+  "w": "telecommute",
+  "pos": "v",
+  "m": [
+   "재택근무하다",
+   "원격 근무하다"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Employees may *telecommute* up to two days a week with their manager's approval.",
+  "exKo": "직원들은 관리자의 승인을 받아 주 2일까지 재택근무를 할 수 있다.",
+  "col": [
+   {
+    "e": "telecommute from home",
+    "k": "집에서 원격 근무하다"
+   },
+   {
+    "e": "telecommuting policy",
+    "k": "원격 근무 정책"
+   }
+  ],
+  "der": [
+   {
+    "w": "telecommuter",
+    "pos": "n",
+    "m": "원격 근무자"
+   },
+   {
+    "w": "telecommuting",
+    "pos": "n",
+    "m": "원격 근무"
+   }
+  ],
+  "para": [
+   "work remotely",
+   "work from home"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 work remotely, work from home으로 패러프레이징된다. 사람 명사 telecommuter와 동명사 telecommuting도 함께 알아 둔다.",
+  "q": {
+   "s": "Staff members who wish to ------- must have a secure Internet connection at home.",
+   "o": [
+    "telecommuter",
+    "telecommuting",
+    "telecommuted",
+    "telecommute"
+   ],
+   "k": "to부정사 wish to 뒤에는 동사원형이 와야 하므로 telecommute가 정답. telecommuter는 사람 명사, telecommuting은 동명사, telecommuted는 과거형이다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "retention",
+  "pos": "n",
+  "m": [
+   "(인력) 유지",
+   "보유"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Offering flexible schedules has improved employee *retention* at our firm.",
+  "exKo": "유연 근무제를 도입하면서 우리 회사의 직원 유지율이 높아졌다.",
+  "col": [
+   {
+    "e": "employee retention",
+    "k": "직원 유지"
+   },
+   {
+    "e": "retention rate",
+    "k": "유지율"
+   },
+   {
+    "e": "customer retention",
+    "k": "고객 유지"
+   }
+  ],
+  "der": [
+   {
+    "w": "retain",
+    "pos": "v",
+    "m": "유지하다, 보유하다"
+   }
+  ],
+  "para": [
+   "keeping staff"
+  ],
+  "ant": "turnover",
+  "tip": "employee retention(직원 유지)은 turnover(이직률)와 반대 개념으로 Part 7 인사 지문에 나온다. 동사 retain(유지하다)과의 품사 문제로 출제된다.",
+  "q": {
+   "s": "The new bonus program is aimed at improving staff ------- in the company's retail stores.",
+   "o": [
+    "retain",
+    "retained",
+    "retainable",
+    "retention"
+   ],
+   "k": "improving의 목적어로 staff와 함께 '직원 유지'라는 복합명사를 만드는 명사 retention이 정답. retain은 동사, retained는 과거분사, retainable은 형용사다.",
+   "a": 3
+  }
+ },
+ {
+  "w": "attrition",
+  "pos": "n",
+  "m": [
+   "자연 감원",
+   "(인원의) 자연 감소"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The company plans to reduce its workforce through *attrition* instead of layoffs.",
+  "exKo": "그 회사는 해고 대신 자연 감원을 통해 인력을 줄일 계획이다.",
+  "col": [
+   {
+    "e": "through attrition",
+    "k": "자연 감원으로"
+   },
+   {
+    "e": "attrition rate",
+    "k": "자연 감소율, 이직률"
+   },
+   {
+    "e": "natural attrition",
+    "k": "자연 감소"
+   }
+  ],
+  "der": [],
+  "para": [
+   "natural reduction",
+   "turnover"
+  ],
+  "ant": "",
+  "tip": "퇴직이나 이직으로 인원이 자연스럽게 줄어드는 것을 말하며, 해고(layoffs)와 대비해 through attrition 형태로 자주 쓰인다.",
+  "q": {
+   "s": "Rather than laying off staff, the firm will allow its workforce to shrink through natural -------.",
+   "o": [
+    "admission",
+    "attendance",
+    "attraction",
+    "attrition"
+   ],
+   "k": "해고 대신 인력이 '자연적으로 줄어드는' 방식이므로 attrition(자연 감원)이 정답. admission(입장), attendance(출석), attraction(매력, 명소)은 인력 감소와 관련이 없다.",
+   "a": 3
+  }
+ }
+]

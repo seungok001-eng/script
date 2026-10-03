@@ -1,0 +1,2121 @@
+[
+ {
+  "w": "purchaser",
+  "pos": "n",
+  "m": [
+   "구매자, 구입자"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *purchaser* must sign the delivery form when the furniture arrives.",
+  "exKo": "구매자는 가구가 도착하면 배송 확인서에 서명해야 한다.",
+  "col": [
+   {
+    "e": "original purchaser",
+    "k": "최초 구매자"
+   },
+   {
+    "e": "first-time purchaser",
+    "k": "첫 구매자"
+   }
+  ],
+  "der": [
+   {
+    "w": "purchase",
+    "pos": "v",
+    "m": "구입하다"
+   },
+   {
+    "w": "purchase",
+    "pos": "n",
+    "m": "구입, 구입품"
+   }
+  ],
+  "para": [
+   "buyer",
+   "customer"
+  ],
+  "ant": "seller",
+  "tip": "사람명사 purchaser와 동사·명사 purchase를 구분하는 품사 문제가 나온다. 보증서 문구의 the original purchaser(최초 구매자)가 Part 7에 자주 등장한다.",
+  "q": {
+   "s": "Free repairs are available only if the appliance is still owned by its original -------.",
+   "o": [
+    "purchase",
+    "purchaser",
+    "purchasing",
+    "purchased"
+   ],
+   "a": 1,
+   "k": "소유격 its와 형용사 original 뒤 명사 자리이며, 가전제품을 '소유하는' 주체는 사람이므로 purchaser가 정답이다. purchase는 '구입(품)'이라 소유 주체가 될 수 없고, purchasing, purchased는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "sales",
+  "pos": "n",
+  "m": [
+   "매출(액), 판매량",
+   "영업, 판매"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "*Sales* of winter coats rose sharply after the first heavy snowfall.",
+  "exKo": "첫 폭설 이후 겨울 코트 판매량이 급격히 증가했다.",
+  "col": [
+   {
+    "e": "sales of",
+    "k": "~의 매출"
+   },
+   {
+    "e": "sales department",
+    "k": "영업부"
+   },
+   {
+    "e": "annual sales",
+    "k": "연 매출"
+   }
+  ],
+  "der": [
+   {
+    "w": "sell",
+    "pos": "v",
+    "m": "팔다"
+   },
+   {
+    "w": "sale",
+    "pos": "n",
+    "m": "판매, 할인 판매"
+   },
+   {
+    "w": "salesperson",
+    "pos": "n",
+    "m": "판매원"
+   }
+  ],
+  "para": [
+   "revenue",
+   "turnover"
+  ],
+  "ant": "",
+  "tip": "'매출, 판매량'의 의미일 때는 복수형 sales로 쓰며 동사도 복수로 받는다. 단수 sale은 '판매, 할인 행사'(on sale, for sale)라는 뜻이다.",
+  "q": {
+   "s": "------- of the new laptop have exceeded the company's projections by nearly 30 percent.",
+   "o": [
+    "Sale",
+    "Sells",
+    "Selling",
+    "Sales"
+   ],
+   "a": 3,
+   "k": "복수 동사 have의 주어가 되어 '판매량'을 뜻하는 복수명사 Sales가 정답이다. Sale은 단수라 have와 수가 맞지 않고, Sells는 동사, Selling은 단수 취급하는 동명사다."
+  }
+ },
+ {
+  "w": "trade-in",
+  "pos": "n",
+  "m": [
+   "보상 판매(되는 중고품)",
+   "(중고품) 보상 판매 가격"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The dealer offered Mr. Haddad three thousand dollars for his old car as a *trade-in*.",
+  "exKo": "판매상은 Haddad 씨의 낡은 차를 보상 판매 조건으로 3천 달러에 쳐 주겠다고 제안했다.",
+  "col": [
+   {
+    "e": "trade-in value",
+    "k": "보상 판매 가격"
+   },
+   {
+    "e": "trade-in program",
+    "k": "보상 판매 프로그램"
+   }
+  ],
+  "der": [
+   {
+    "w": "trade in",
+    "pos": "v",
+    "m": "(중고품을) 보상 판매로 내놓다"
+   }
+  ],
+  "para": [
+   "exchange"
+  ],
+  "ant": "",
+  "tip": "쓰던 물건을 내고 새 제품 값을 할인받는 거래를 뜻한다. 동사구 trade in A for B(A를 내고 B를 사다)와 명사 trade-in value(보상 판매가)가 Part 4·7 광고에 나온다.",
+  "q": {
+   "s": "The dealership offered Ms. Sato a generous ------- value for her used sedan.",
+   "o": [
+    "take-out",
+    "break-in",
+    "trade-in",
+    "walk-in"
+   ],
+   "a": 2,
+   "k": "대리점이 중고 세단에 대해 제시한 '보상 판매' 가격이라는 의미로 value와 결합하는 trade-in이 정답이다(trade-in value: 보상 판매가). take-out(포장 음식), break-in(침입), walk-in(예약 없이 오는)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "offer",
+  "pos": "n",
+  "m": [
+   "제안, 제의",
+   "할인 (판매)"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Gibson Hardware rejected the first *offer* but agreed to continue the discussions.",
+  "exKo": "Gibson 철물점은 첫 제안을 거절했지만 논의를 계속하는 데는 동의했다.",
+  "col": [
+   {
+    "e": "job offer",
+    "k": "일자리 제의"
+   },
+   {
+    "e": "special offer",
+    "k": "특가 판매"
+   },
+   {
+    "e": "accept an offer",
+    "k": "제안을 받아들이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "offering",
+    "pos": "n",
+    "m": "(판매용) 상품, 제공물"
+   }
+  ],
+  "para": [
+   "proposal",
+   "bid",
+   "deal"
+  ],
+  "ant": "",
+  "tip": "명사로 job offer(채용 제의), special offer(특가 판매)가 빈출이고, 동사로는 offer A B / offer B to A(A에게 B를 제공하다)의 4형식 구조가 출제된다.",
+  "q": {
+   "s": "Mr. Lindqvist accepted the job ------- after negotiating a higher starting salary.",
+   "o": [
+    "opening",
+    "offer",
+    "outlet",
+    "origin"
+   ],
+   "a": 1,
+   "k": "더 높은 초봉을 협상한 뒤 '수락한' 것은 채용 제의이므로 offer가 정답이다(job offer: 일자리 제의). job opening(공석)은 지원하는 대상이지 수락하는 대상이 아니며, outlet(판매점), origin(기원)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "countersign",
+  "pos": "v",
+  "m": [
+   "연서하다, 확인 서명을 하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The agreement takes effect as soon as the regional director *countersigns* it.",
+  "exKo": "그 합의서는 지역 담당 이사가 확인 서명을 하는 즉시 효력이 발생한다.",
+  "col": [
+   {
+    "e": "countersign a contract",
+    "k": "계약서에 연서하다"
+   },
+   {
+    "e": "be countersigned by",
+    "k": "~의 확인 서명을 받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "countersignature",
+    "pos": "n",
+    "m": "연서, 확인 서명"
+   }
+  ],
+  "para": [
+   "co-sign",
+   "endorse"
+  ],
+  "ant": "",
+  "tip": "이미 다른 사람이 서명한 문서에 추가로 서명해 승인하는 것을 뜻한다. be countersigned by a manager(관리자의 확인 서명을 받다) 같은 수동태 형태로 자주 나온다.",
+  "q": {
+   "s": "The purchase order cannot be processed until it has been ------- by the finance director.",
+   "o": [
+    "countersigned",
+    "counterfeited",
+    "countered",
+    "counted"
+   ],
+   "a": 0,
+   "k": "구매 주문서가 재무 이사의 '확인 서명을 받아야' 처리될 수 있다는 의미이므로 countersigned가 정답이다. counterfeited(위조된), countered(반박된), counted(세어진)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "rescind",
+  "pos": "v",
+  "m": [
+   "(법·결정·계약 등을) 철회하다, 폐지하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The city council voted to *rescind* the planned increase in parking fees.",
+  "exKo": "시의회는 계획된 주차 요금 인상을 철회하기로 표결했다.",
+  "col": [
+   {
+    "e": "rescind an offer",
+    "k": "제안을 철회하다"
+   },
+   {
+    "e": "rescind a decision",
+    "k": "결정을 철회하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "rescission",
+    "pos": "n",
+    "m": "철회, 취소"
+   }
+  ],
+  "para": [
+   "revoke",
+   "cancel",
+   "withdraw"
+  ],
+  "ant": "",
+  "tip": "공식적인 결정·제안·계약을 무효로 하는 격식체 타동사다. Part 7에서는 cancel, withdraw, revoke로 바꿔 표현된다.",
+  "q": {
+   "s": "The company ------- its job offer after the candidate failed to provide the required references.",
+   "o": [
+    "resided",
+    "resembled",
+    "reclined",
+    "rescinded"
+   ],
+   "a": 3,
+   "k": "지원자가 필요한 추천서를 내지 못해 회사가 채용 제안을 '철회했다'는 의미이므로 rescinded가 정답이다. resided(거주했다), resembled(닮았다), reclined(기댔다)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "overcharge",
+  "pos": "v",
+  "m": [
+   "(금액을) 과다 청구하다, 바가지를 씌우다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Please contact our billing office if you believe you were *overcharged* for your stay.",
+  "exKo": "숙박 요금이 과다 청구되었다고 생각되면 저희 청구 부서로 연락하기 바란다.",
+  "col": [
+   {
+    "e": "overcharge A for B",
+    "k": "A에게 B의 요금을 과다 청구하다"
+   },
+   {
+    "e": "be overcharged",
+    "k": "과다 청구되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "charge",
+    "pos": "v",
+    "m": "청구하다"
+   }
+  ],
+  "para": [
+   "overbill"
+  ],
+  "ant": "undercharge",
+  "tip": "overcharge A for B(B에 대해 A에게 과다 청구하다) 구조와 수동태 be overcharged for가 Part 3 불만 상황 대화에 자주 나온다.",
+  "q": {
+   "s": "The customer complained that she had been ------- for the two items she bought last week.",
+   "o": [
+    "overworked",
+    "overlooked",
+    "overcharged",
+    "overbooked"
+   ],
+   "a": 2,
+   "k": "구매한 물건에 대해 '과다 청구되었다'는 불만이므로 be overcharged for 구조를 이루는 overcharged가 정답이다. overworked(혹사당한), overlooked(간과된), overbooked(초과 예약된)는 for the two items와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "account",
+  "pos": "n",
+  "m": [
+   "(거래처) 고객, 거래 계정",
+   "계좌, 계정"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Ferreira manages several major *accounts* for the advertising firm.",
+  "exKo": "Ferreira 씨는 그 광고 회사에서 여러 주요 고객사를 담당하고 있다.",
+  "col": [
+   {
+    "e": "open an account",
+    "k": "계좌를 개설하다"
+   },
+   {
+    "e": "account manager",
+    "k": "고객 담당 관리자"
+   },
+   {
+    "e": "on account of",
+    "k": "~ 때문에"
+   }
+  ],
+  "der": [
+   {
+    "w": "accounting",
+    "pos": "n",
+    "m": "회계"
+   },
+   {
+    "w": "accountant",
+    "pos": "n",
+    "m": "회계사"
+   },
+   {
+    "w": "accountable",
+    "pos": "adj",
+    "m": "책임이 있는"
+   }
+  ],
+  "para": [
+   "client",
+   "customer"
+  ],
+  "ant": "",
+  "tip": "영업 문맥에서 account는 '거래처, 고객사'를 뜻하며 Part 7에서 client로 바꿔 쓰인다. 동사 account for(~을 설명하다, ~을 차지하다)와 on account of(~ 때문에)도 빈출이다.",
+  "q": {
+   "s": "Ms. Nakamura was promoted after she brought in three new corporate ------- last year.",
+   "o": [
+    "accounting",
+    "accountable",
+    "accounts",
+    "accounted"
+   ],
+   "a": 2,
+   "k": "수량 형용사 three new 뒤에는 복수 가산명사가 오며 '새 기업 고객 세 곳을 유치했다'는 의미이므로 accounts가 정답이다. accounting은 불가산명사 '회계'이고, accountable, accounted는 명사가 아니다."
+  }
+ },
+ {
+  "w": "salesperson",
+  "pos": "n",
+  "m": [
+   "판매원, 영업 사원"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "ex": "The *salesperson* explained the difference between the two washing machines.",
+  "exKo": "판매원이 두 세탁기의 차이를 설명했다.",
+  "col": [
+   {
+    "e": "experienced salesperson",
+    "k": "경험 많은 영업 사원"
+   },
+   {
+    "e": "top salesperson",
+    "k": "최우수 판매원"
+   }
+  ],
+  "der": [
+   {
+    "w": "sales",
+    "pos": "n",
+    "m": "판매, 영업"
+   },
+   {
+    "w": "sell",
+    "pos": "v",
+    "m": "팔다"
+   }
+  ],
+  "para": [
+   "sales representative",
+   "sales associate",
+   "clerk"
+  ],
+  "ant": "",
+  "tip": "Part 3에서 화자의 직업을 묻는 문제에 자주 나오며, sales representative, sales associate로 바꿔 표현된다. 복수형은 salespeople이다.",
+  "q": {
+   "s": "If you need help choosing the right laptop, please ask a ------- for assistance.",
+   "o": [
+    "salesperson",
+    "sales",
+    "sell",
+    "sold"
+   ],
+   "a": 0,
+   "k": "관사 a 뒤에 오며 도움을 요청할 수 있는 '사람'이므로 salesperson이 정답이다. sales는 '판매, 매출'이라 a와 함께 쓸 수 없고, sell, sold는 동사 형태다."
+  }
+ },
+ {
+  "w": "sales figures",
+  "pos": "phr",
+  "m": [
+   "매출액, 판매 실적 (수치)"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The latest *sales figures* show a 12 percent increase over the same period last year.",
+  "exKo": "최신 매출 수치는 작년 같은 기간보다 12퍼센트 증가했음을 보여 준다.",
+  "col": [
+   {
+    "e": "quarterly sales figures",
+    "k": "분기 매출 실적"
+   },
+   {
+    "e": "review sales figures",
+    "k": "매출 실적을 검토하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "figure",
+    "pos": "v",
+    "m": "생각하다, 계산하다"
+   }
+  ],
+  "para": [
+   "sales results",
+   "sales data"
+  ],
+  "ant": "",
+  "tip": "figures는 '수치'라는 뜻의 복수명사로 쓰인다. Part 7 그래프·이메일 연계 문제에서 sales results, sales data로 바꿔 표현된다.",
+  "q": {
+   "s": "The regional manager will review the monthly sales ------- at Friday's meeting.",
+   "o": [
+    "features",
+    "fixtures",
+    "factors",
+    "figures"
+   ],
+   "a": 3,
+   "k": "월별 매출 '수치'를 검토한다는 의미로 sales와 함께 쓰이는 figures가 정답이다. features(특징), fixtures(붙박이 설비), factors(요인)는 sales와 이런 의미의 복합명사를 이루지 않는다."
+  }
+ },
+ {
+  "w": "negotiation",
+  "pos": "n",
+  "m": [
+   "협상, 교섭"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "*Negotiations* with the new supplier are expected to continue through next week.",
+  "exKo": "새 공급업체와의 협상은 다음 주까지 계속될 것으로 예상된다.",
+  "col": [
+   {
+    "e": "under negotiation",
+    "k": "협상 중인"
+   },
+   {
+    "e": "negotiations with",
+    "k": "~와의 협상"
+   },
+   {
+    "e": "enter into negotiations",
+    "k": "협상을 시작하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "negotiate",
+    "pos": "v",
+    "m": "협상하다"
+   },
+   {
+    "w": "negotiator",
+    "pos": "n",
+    "m": "협상가"
+   },
+   {
+    "w": "negotiable",
+    "pos": "adj",
+    "m": "협상 가능한"
+   }
+  ],
+  "para": [
+   "talks",
+   "discussions"
+  ],
+  "ant": "",
+  "tip": "'협상'이 진행되는 과정을 말할 때는 흔히 복수형 negotiations로 쓰며, under negotiation(협상 중인)이 관용 표현이다. 사람명사 negotiator와의 구분이 출제된다.",
+  "q": {
+   "s": "The price of the equipment is still under -------, so the final contract has not been signed yet.",
+   "o": [
+    "negotiation",
+    "negotiate",
+    "negotiator",
+    "negotiable"
+   ],
+   "a": 0,
+   "k": "under negotiation(협상 중인)이라는 관용 표현으로 '장비 가격이 아직 협상 중'이라는 의미이므로 negotiation이 정답이다. negotiator는 '협상가'라 의미가 맞지 않고, negotiate는 동사, negotiable은 형용사다."
+  }
+ },
+ {
+  "w": "negotiator",
+  "pos": "n",
+  "m": [
+   "협상가, 교섭자"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "As an experienced *negotiator*, Ms. Duarte secured better terms with the supplier.",
+  "exKo": "노련한 협상가인 Duarte 씨는 공급업체와 더 나은 조건을 얻어 냈다.",
+  "col": [
+   {
+    "e": "chief negotiator",
+    "k": "수석 협상가"
+   },
+   {
+    "e": "skilled negotiator",
+    "k": "능숙한 협상가"
+   }
+  ],
+  "der": [
+   {
+    "w": "negotiate",
+    "pos": "v",
+    "m": "협상하다"
+   },
+   {
+    "w": "negotiation",
+    "pos": "n",
+    "m": "협상"
+   }
+  ],
+  "para": [
+   "mediator",
+   "bargainer"
+  ],
+  "ant": "",
+  "tip": "-or로 끝나는 사람명사로, 관사·형용사 뒤 사람 자리를 묻는 품사 문제에 나온다. chief/lead negotiator(수석 협상가)가 자주 쓰인다.",
+  "q": {
+   "s": "The union selected Mr. Abbott as its chief ------- because of his experience in labor disputes.",
+   "o": [
+    "negotiation",
+    "negotiable",
+    "negotiating",
+    "negotiator"
+   ],
+   "a": 3,
+   "k": "노동 분쟁 경험 때문에 '수석 협상가'로 선정되었다는 의미로 사람을 나타내는 negotiator가 정답이다. negotiation은 '협상'이라는 행위라 사람인 Mr. Abbott과 동격이 될 수 없고, negotiable, negotiating은 명사 자리에 맞지 않는다."
+  }
+ },
+ {
+  "w": "counteroffer",
+  "pos": "n",
+  "m": [
+   "역제안, 수정 제안"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The seller rejected our initial proposal but made a reasonable *counteroffer*.",
+  "exKo": "판매자는 우리의 첫 제안을 거절했지만 합리적인 역제안을 했다.",
+  "col": [
+   {
+    "e": "make a counteroffer",
+    "k": "역제안을 하다"
+   },
+   {
+    "e": "accept a counteroffer",
+    "k": "역제안을 받아들이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "offer",
+    "pos": "n",
+    "m": "제안"
+   }
+  ],
+  "para": [
+   "counterproposal"
+  ],
+  "ant": "",
+  "tip": "상대의 제안에 대해 조건을 바꿔 다시 내놓는 제안을 뜻한다. make/submit a counteroffer 형태로 협상 관련 Part 7 지문에 나온다.",
+  "q": {
+   "s": "Instead of accepting the buyer's proposal, the landlord responded with a -------.",
+   "o": [
+    "counterpart",
+    "counteroffer",
+    "countdown",
+    "counterfeit"
+   ],
+   "a": 1,
+   "k": "구매자의 제안을 받아들이는 대신 '역제안'으로 응했다는 의미이므로 counteroffer가 정답이다. counterpart(상대방, 대응 관계에 있는 것), countdown(초읽기), counterfeit(위조품)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "compromise",
+  "pos": "n",
+  "m": [
+   "타협, 절충(안)"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new schedule is a *compromise* between the managers' needs and the staff's preferences.",
+  "exKo": "새 일정표는 관리자들의 요구와 직원들의 선호를 절충한 것이다.",
+  "col": [
+   {
+    "e": "reach a compromise",
+    "k": "타협에 이르다"
+   },
+   {
+    "e": "compromise between A and B",
+    "k": "A와 B 사이의 절충"
+   }
+  ],
+  "der": [
+   {
+    "w": "compromising",
+    "pos": "adj",
+    "m": "타협적인, 위태롭게 하는"
+   }
+  ],
+  "para": [
+   "middle ground",
+   "settlement"
+  ],
+  "ant": "",
+  "tip": "명사로 reach/make a compromise(타협하다)가 빈출이며, 동사로 쓰면 '타협하다' 외에 compromise quality(품질을 떨어뜨리다)처럼 '손상시키다'라는 뜻도 있다.",
+  "q": {
+   "s": "The two departments reached a ------- that allowed both projects to proceed on schedule.",
+   "o": [
+    "compliment",
+    "complement",
+    "compromise",
+    "component"
+   ],
+   "a": 2,
+   "k": "reach a compromise(타협에 이르다) 표현으로 두 프로젝트 모두 예정대로 진행할 수 있게 했다는 의미이므로 compromise가 정답이다. compliment(칭찬), complement(보완물), component(구성 요소)는 reach와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "bargain",
+  "pos": "n",
+  "m": [
+   "싸게 산 물건, 특가품",
+   "거래, 흥정"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "At just forty dollars, this leather briefcase is a real *bargain*.",
+  "exKo": "단돈 40달러라니, 이 가죽 서류 가방은 정말 싸게 사는 물건이다.",
+  "col": [
+   {
+    "e": "a real bargain",
+    "k": "정말 싼 물건"
+   },
+   {
+    "e": "bargain price",
+    "k": "특가"
+   },
+   {
+    "e": "bargain hunter",
+    "k": "특가품을 찾아다니는 사람"
+   }
+  ],
+  "der": [
+   {
+    "w": "bargaining",
+    "pos": "n",
+    "m": "교섭, 흥정"
+   }
+  ],
+  "para": [
+   "good deal",
+   "steal"
+  ],
+  "ant": "",
+  "tip": "명사로 a (real) bargain(싸게 산 물건), at a bargain price(특가로)가 Part 2·3에 자주 나온다. 동사로는 bargain with(~와 흥정하다)처럼 쓴다.",
+  "q": {
+   "s": "Shoppers looking for ------- should visit the outlet store during its annual clearance event.",
+   "o": [
+    "bargains",
+    "burdens",
+    "barriers",
+    "budgets"
+   ],
+   "a": 0,
+   "k": "연례 재고 정리 행사 때 아웃렛 매장을 방문해야 하는 사람은 '특가품'을 찾는 쇼핑객이므로 bargains가 정답이다. burdens(부담), barriers(장벽), budgets(예산)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "agreeable",
+  "pos": "adj",
+  "m": [
+   "(조건 등이) 받아들일 수 있는, 기꺼이 동의하는",
+   "쾌적한, 상냥한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Both parties found the revised payment schedule *agreeable*.",
+  "exKo": "양측 모두 수정된 지불 일정을 받아들일 만하다고 여겼다.",
+  "col": [
+   {
+    "e": "be agreeable to",
+    "k": "~에 동의하다, ~에게 받아들여지다"
+   },
+   {
+    "e": "mutually agreeable",
+    "k": "서로 받아들일 수 있는"
+   }
+  ],
+  "der": [
+   {
+    "w": "agree",
+    "pos": "v",
+    "m": "동의하다"
+   },
+   {
+    "w": "agreement",
+    "pos": "n",
+    "m": "합의, 계약"
+   },
+   {
+    "w": "agreeably",
+    "pos": "adv",
+    "m": "기분 좋게"
+   }
+  ],
+  "para": [
+   "acceptable",
+   "satisfactory"
+  ],
+  "ant": "disagreeable",
+  "tip": "be agreeable to(~에 동의하다, ~에게 받아들여지다)의 전치사 to와 mutually agreeable(서로 만족하는) 표현이 출제된다. '상냥한'이라는 뜻만 알면 협상 문맥에서 해석이 막힌다.",
+  "q": {
+   "s": "If the proposed delivery date is ------- to you, please sign and return the attached form.",
+   "o": [
+    "agreement",
+    "agreeable",
+    "agree",
+    "agreeably"
+   ],
+   "a": 1,
+   "k": "be동사 is 뒤 보어 자리에 형용사가 오며 be agreeable to(~에게 받아들일 만하다)를 이루는 agreeable이 정답이다. agreement는 명사, agree는 동사, agreeably는 부사다."
+  }
+ },
+ {
+  "w": "draw up",
+  "pos": "phr",
+  "m": [
+   "(문서·계획 등을) 작성하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our legal team will *draw up* a new contract by the end of the week.",
+  "exKo": "우리 법무팀이 이번 주 말까지 새 계약서를 작성할 것이다.",
+  "col": [
+   {
+    "e": "draw up a contract",
+    "k": "계약서를 작성하다"
+   },
+   {
+    "e": "draw up a plan",
+    "k": "계획을 세우다"
+   },
+   {
+    "e": "draw up a list",
+    "k": "목록을 만들다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "prepare",
+   "write up",
+   "draft"
+  ],
+  "ant": "",
+  "tip": "계약서·목록·계획처럼 공식 문서를 '작성하다'라는 뜻으로 Part 7에서 prepare, draft로 바꿔 쓰인다. 목적어가 대명사이면 draw it up 어순이 된다.",
+  "q": {
+   "s": "The lawyer was asked to draw ------- a lease agreement for the downtown warehouse.",
+   "o": [
+    "back",
+    "away",
+    "up",
+    "along"
+   ],
+   "a": 2,
+   "k": "draw up은 '(문서를) 작성하다'라는 뜻으로 임대 계약서를 작성해 달라는 문맥에 맞으므로 up이 정답이다. draw back(물러서다), draw away(멀어지다), draw along은 문서 작성의 의미가 없다."
+  }
+ },
+ {
+  "w": "expiration",
+  "pos": "n",
+  "m": [
+   "만료, 만기"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Members will receive a reminder two weeks before the *expiration* of their membership.",
+  "exKo": "회원들은 회원 자격 만료 2주 전에 안내 메일을 받게 된다.",
+  "col": [
+   {
+    "e": "expiration of",
+    "k": "~의 만료"
+   },
+   {
+    "e": "upon expiration",
+    "k": "만료 시에"
+   }
+  ],
+  "der": [
+   {
+    "w": "expire",
+    "pos": "v",
+    "m": "만료되다"
+   },
+   {
+    "w": "expired",
+    "pos": "adj",
+    "m": "만료된"
+   }
+  ],
+  "para": [
+   "end",
+   "termination"
+  ],
+  "ant": "",
+  "tip": "expire(만료되다)의 명사형으로 관사 the 뒤 명사 자리 문제로 나온다. 영국식으로는 expiry라고도 한다.",
+  "q": {
+   "s": "Tenants who wish to extend their lease should notify the landlord at least sixty days before its -------.",
+   "o": [
+    "expire",
+    "expiration",
+    "expired",
+    "expiring"
+   ],
+   "a": 1,
+   "k": "소유격 its 뒤 명사 자리이므로 expiration이 정답이다. expire는 동사, expired와 expiring은 분사로 소유격 바로 뒤에서 명사 역할을 할 수 없다."
+  }
+ },
+ {
+  "w": "expiration date",
+  "pos": "phr",
+  "m": [
+   "유효 기한, 만료일"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4,
+   7
+  ],
+  "ex": "Check the *expiration date* on the coupon before you bring it to the store.",
+  "exKo": "매장에 쿠폰을 가져가기 전에 유효 기한을 확인하라.",
+  "col": [
+   {
+    "e": "past the expiration date",
+    "k": "유효 기한이 지난"
+   },
+   {
+    "e": "check the expiration date",
+    "k": "유효 기한을 확인하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "expire",
+    "pos": "v",
+    "m": "만료되다"
+   }
+  ],
+  "para": [
+   "expiry date",
+   "use-by date"
+  ],
+  "ant": "",
+  "tip": "식품·쿠폰·카드·계약 등의 유효 기한을 말하며, Part 3·4에서는 회원권이나 신용카드 만료와 관련된 세부 정보로 자주 등장한다.",
+  "q": {
+   "s": "All dairy products are removed from the shelves two days before their expiration -------.",
+   "o": [
+    "date",
+    "data",
+    "dose",
+    "debt"
+   ],
+   "a": 0,
+   "k": "유제품의 '유효 기한' 이틀 전에 진열대에서 치운다는 의미로 expiration과 복합명사를 이루는 date가 정답이다. data(자료), dose(복용량), debt(빚)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "renewal",
+  "pos": "n",
+  "m": [
+   "갱신, 연장",
+   "재개발"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The *renewal* of our office lease is scheduled for next month.",
+  "exKo": "우리 사무실 임대 계약의 갱신은 다음 달로 예정되어 있다.",
+  "col": [
+   {
+    "e": "contract renewal",
+    "k": "계약 갱신"
+   },
+   {
+    "e": "renewal notice",
+    "k": "갱신 안내문"
+   },
+   {
+    "e": "renewal fee",
+    "k": "갱신 수수료"
+   }
+  ],
+  "der": [
+   {
+    "w": "renew",
+    "pos": "v",
+    "m": "갱신하다"
+   },
+   {
+    "w": "renewable",
+    "pos": "adj",
+    "m": "갱신 가능한, 재생 가능한"
+   }
+  ],
+  "para": [
+   "extension"
+  ],
+  "ant": "",
+  "tip": "renew(갱신하다)의 명사형으로 renewal notice, renewal form 같은 복합명사가 Part 7에 자주 나온다. urban renewal(도시 재개발)이라는 뜻도 있다.",
+  "q": {
+   "s": "Subscribers will receive a ------- notice by e-mail one month before their subscription ends.",
+   "o": [
+    "renew",
+    "renews",
+    "renewal",
+    "renewing"
+   ],
+   "a": 2,
+   "k": "명사 notice 앞에서 복합명사를 이루는 명사 자리이므로 renewal이 정답이다(renewal notice: 갱신 안내문). renew와 renews는 동사이고, renewing은 '갱신하는 안내문'이라는 어색한 의미가 된다."
+  }
+ },
+ {
+  "w": "duration",
+  "pos": "n",
+  "m": [
+   "(지속) 기간"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The *duration* of the contract is two years, with an option to extend.",
+  "exKo": "계약 기간은 2년이며 연장할 수 있는 선택권이 있다.",
+  "col": [
+   {
+    "e": "for the duration of",
+    "k": "~ 동안 내내"
+   },
+   {
+    "e": "duration of the contract",
+    "k": "계약 기간"
+   }
+  ],
+  "der": [
+   {
+    "w": "durable",
+    "pos": "adj",
+    "m": "내구성이 있는"
+   },
+   {
+    "w": "durability",
+    "pos": "n",
+    "m": "내구성"
+   }
+  ],
+  "para": [
+   "length",
+   "period",
+   "term"
+  ],
+  "ant": "",
+  "tip": "for the duration of(~하는 기간 내내) 형태가 빈출이다. 같은 어원의 durable(내구성 있는), durability(내구성)와 혼동하지 않도록 주의하자.",
+  "q": {
+   "s": "Visitors must wear safety helmets for the ------- of the factory tour.",
+   "o": [
+    "durability",
+    "durable",
+    "during",
+    "duration"
+   ],
+   "a": 3,
+   "k": "for the duration of(~ 동안 내내) 구문으로 '공장 견학 내내 안전모를 써야 한다'는 의미이므로 duration이 정답이다. durability는 '내구성'이라 의미가 맞지 않고, durable은 형용사, during은 전치사다."
+  }
+ },
+ {
+  "w": "provision",
+  "pos": "n",
+  "m": [
+   "(계약서·법의) 조항, 규정",
+   "제공, 공급"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A *provision* in the lease allows tenants to end the agreement early.",
+  "exKo": "임대 계약서의 한 조항은 세입자가 계약을 조기에 끝낼 수 있도록 허용한다.",
+  "col": [
+   {
+    "e": "provision of",
+    "k": "~의 제공"
+   },
+   {
+    "e": "under the provisions of",
+    "k": "~의 규정에 따라"
+   },
+   {
+    "e": "make provision for",
+    "k": "~에 대비하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "provide",
+    "pos": "v",
+    "m": "제공하다"
+   },
+   {
+    "w": "provisional",
+    "pos": "adj",
+    "m": "임시의, 잠정적인"
+   }
+  ],
+  "para": [
+   "clause",
+   "term",
+   "stipulation"
+  ],
+  "ant": "",
+  "tip": "계약서 문맥의 '조항'(clause, term과 동의)과 provision of services(서비스 제공)의 '제공'이라는 두 뜻이 모두 출제된다. provisional(임시의)과 혼동하지 말 것.",
+  "q": {
+   "s": "Under a ------- in the new agreement, the supplier must pay a penalty for any late deliveries.",
+   "o": [
+    "provision",
+    "provider",
+    "provided",
+    "provisional"
+   ],
+   "a": 0,
+   "k": "관사 a 뒤 명사 자리이며 '새 계약서의 한 조항에 따라' 지연 배송 시 위약금을 내야 한다는 의미이므로 provision이 정답이다. provider는 '제공자'라 의미가 맞지 않고, provided와 provisional은 명사가 아니다."
+  }
+ },
+ {
+  "w": "addendum",
+  "pos": "n",
+  "m": [
+   "(계약서 등의) 부록, 추가 조항"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "An *addendum* to the contract outlines the revised delivery schedule.",
+  "exKo": "계약서의 추가 조항에는 수정된 배송 일정이 간략히 나와 있다.",
+  "col": [
+   {
+    "e": "addendum to",
+    "k": "~에 대한 부록·추가 조항"
+   },
+   {
+    "e": "sign an addendum",
+    "k": "추가 조항에 서명하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "add",
+    "pos": "v",
+    "m": "추가하다"
+   },
+   {
+    "w": "addition",
+    "pos": "n",
+    "m": "추가(된 것)"
+   }
+  ],
+  "para": [
+   "supplement",
+   "appendix",
+   "attachment"
+  ],
+  "ant": "",
+  "tip": "계약서나 문서 끝에 덧붙이는 추가 사항을 뜻하는 격식어로, an addendum to the agreement처럼 전치사 to와 함께 쓴다. 복수형은 addenda이다.",
+  "q": {
+   "s": "The landlord attached an ------- to the lease that allows tenants to keep small pets.",
+   "o": [
+    "addendum",
+    "admission",
+    "adherence",
+    "advocate"
+   ],
+   "a": 0,
+   "k": "임대 계약서에 덧붙여 세입자가 작은 반려동물을 키울 수 있게 허용하는 것은 '추가 조항'이므로 addendum이 정답이다. admission(입장, 인정), adherence(고수, 준수), advocate(옹호자)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "signatory",
+  "pos": "n",
+  "m": [
+   "서명인, 서명 당사자"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Each *signatory* will receive a certified copy of the final agreement.",
+  "exKo": "각 서명인은 최종 합의서의 인증 사본을 받게 된다.",
+  "col": [
+   {
+    "e": "signatory to",
+    "k": "~의 서명 당사자"
+   },
+   {
+    "e": "authorized signatory",
+    "k": "권한을 위임받은 서명인"
+   }
+  ],
+  "der": [
+   {
+    "w": "sign",
+    "pos": "v",
+    "m": "서명하다"
+   },
+   {
+    "w": "signature",
+    "pos": "n",
+    "m": "서명"
+   }
+  ],
+  "para": [
+   "signer",
+   "party"
+  ],
+  "ant": "",
+  "tip": "계약서에 서명한 사람·기관을 뜻하며 signatory to the agreement처럼 전치사 to를 쓴다. 서명 자체를 뜻하는 signature와 구분해야 한다.",
+  "q": {
+   "s": "All ------- to the agreement are required to keep its terms confidential.",
+   "o": [
+    "signatures",
+    "signatories",
+    "signals",
+    "signs"
+   ],
+   "a": 1,
+   "k": "계약 조건을 비밀로 유지해야 하는 주체는 사람·기관이므로 '서명인들'을 뜻하는 signatories가 정답이다. signatures(서명)는 의무를 질 수 없고, signals(신호), signs(표지판)도 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "contractual",
+  "pos": "adj",
+  "m": [
+   "계약상의, 계약에 의한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The supplier has a *contractual* obligation to deliver all parts by June 1.",
+  "exKo": "공급업체는 6월 1일까지 모든 부품을 납품할 계약상의 의무가 있다.",
+  "col": [
+   {
+    "e": "contractual obligation",
+    "k": "계약상의 의무"
+   },
+   {
+    "e": "contractual agreement",
+    "k": "계약상의 합의"
+   }
+  ],
+  "der": [
+   {
+    "w": "contract",
+    "pos": "n",
+    "m": "계약(서)"
+   },
+   {
+    "w": "contractor",
+    "pos": "n",
+    "m": "계약자, 도급업자"
+   },
+   {
+    "w": "contractually",
+    "pos": "adv",
+    "m": "계약상"
+   }
+  ],
+  "para": [
+   "binding",
+   "legal"
+  ],
+  "ant": "",
+  "tip": "명사 contract의 형용사형으로, 명사 앞 형용사 자리에서 contractor(도급업자), contractually(계약상) 등과 구분하는 품사 문제로 출제된다.",
+  "q": {
+   "s": "Ms. Varga carefully reviewed her ------- obligations before accepting the position.",
+   "o": [
+    "contractual",
+    "contractually",
+    "contractor",
+    "contraction"
+   ],
+   "a": 0,
+   "k": "소유격 her와 명사 obligations 사이에서 명사를 수식하는 형용사 자리이므로 contractual이 정답이다. contractually는 부사, contractor(도급업자)와 contraction(수축)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "down payment",
+  "pos": "phr",
+  "m": [
+   "계약금, 착수금, (할부의) 첫 납입금"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The couple made a *down payment* of ten percent on their new apartment.",
+  "exKo": "그 부부는 새 아파트 가격의 10퍼센트를 계약금으로 냈다.",
+  "col": [
+   {
+    "e": "make a down payment",
+    "k": "계약금을 내다"
+   },
+   {
+    "e": "down payment on",
+    "k": "~에 대한 계약금"
+   }
+  ],
+  "der": [],
+  "para": [
+   "deposit",
+   "advance payment"
+  ],
+  "ant": "",
+  "tip": "make/put a down payment on(~에 대한 계약금을 내다) 형태로 쓰이며, Part 3·7에서 deposit으로 바꿔 표현되는 경우가 많다.",
+  "q": {
+   "s": "The dealership requires a ------- payment of at least 15 percent on all new vehicles.",
+   "o": [
+    "under",
+    "off",
+    "down",
+    "over"
+   ],
+   "a": 2,
+   "k": "모든 신차에 대해 최소 15퍼센트의 '계약금'을 요구한다는 의미이므로 down payment를 이루는 down이 정답이다. under, off, over는 payment와 결합해 계약금이라는 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "upfront",
+  "pos": "adv",
+  "m": [
+   "선불로, 미리"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Customers who pay *upfront* for a full year receive two months of service free.",
+  "exKo": "1년 치를 선불로 내는 고객은 두 달 치 서비스를 무료로 받는다.",
+  "col": [
+   {
+    "e": "pay upfront",
+    "k": "선불로 내다"
+   },
+   {
+    "e": "upfront cost",
+    "k": "초기 비용"
+   },
+   {
+    "e": "upfront payment",
+    "k": "선지급금"
+   }
+  ],
+  "der": [],
+  "para": [
+   "in advance",
+   "beforehand"
+  ],
+  "ant": "",
+  "tip": "부사로 pay upfront(선불하다), 형용사로 upfront cost(초기 비용)처럼 쓰이며, Part 7에서 in advance로 바꿔 표현된다. '솔직한'(be upfront about)이라는 뜻도 있다.",
+  "q": {
+   "s": "The design studio asks new clients to pay half of the total fee ------- and the rest upon completion.",
+   "o": [
+    "uptight",
+    "upright",
+    "upfront",
+    "upbeat"
+   ],
+   "a": 2,
+   "k": "총비용의 절반은 '선불로' 내고 나머지는 완료 시 낸다는 의미이므로 upfront가 정답이다. uptight(긴장한), upright(똑바로 선, 정직한), upbeat(낙관적인)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "sales target",
+  "pos": "phr",
+  "m": [
+   "판매 목표, 매출 목표"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Our team met its quarterly *sales target* two weeks ahead of schedule.",
+  "exKo": "우리 팀은 분기 판매 목표를 예정보다 2주 앞당겨 달성했다.",
+  "col": [
+   {
+    "e": "meet a sales target",
+    "k": "판매 목표를 달성하다"
+   },
+   {
+    "e": "exceed a sales target",
+    "k": "판매 목표를 초과하다"
+   },
+   {
+    "e": "set a sales target",
+    "k": "판매 목표를 정하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "sales goal",
+   "quota"
+  ],
+  "ant": "",
+  "tip": "meet/reach/hit a sales target(판매 목표를 달성하다)와 같은 동사 짝이 Part 3·4 회의 대화에 자주 나온다. Part 7에서는 quota, sales goal로 바꿔 표현된다.",
+  "q": {
+   "s": "Employees who exceed their monthly sales ------- will receive a performance bonus.",
+   "o": [
+    "targets",
+    "tariffs",
+    "tenants",
+    "tactics"
+   ],
+   "a": 0,
+   "k": "월간 판매 '목표'를 초과하는 직원에게 성과급을 준다는 의미이므로 targets가 정답이다. tariffs(관세), tenants(세입자), tactics(전술)는 exceed와 의미상 어울리지 않는다."
+  }
+ },
+ {
+  "w": "lead",
+  "pos": "n",
+  "m": [
+   "(영업) 잠재 고객 (정보)",
+   "단서, 실마리"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Our booth at the trade show generated more than fifty new sales *leads*.",
+  "exKo": "무역 박람회의 우리 부스는 50건이 넘는 신규 잠재 고객 정보를 확보했다.",
+  "col": [
+   {
+    "e": "sales lead",
+    "k": "영업 잠재 고객"
+   },
+   {
+    "e": "generate leads",
+    "k": "잠재 고객을 확보하다"
+   },
+   {
+    "e": "follow up on a lead",
+    "k": "잠재 고객에게 후속 연락을 하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "leading",
+    "pos": "adj",
+    "m": "선도하는, 일류의"
+   }
+  ],
+  "para": [
+   "prospect",
+   "potential client"
+  ],
+  "ant": "",
+  "tip": "영업 문맥에서 lead는 구매 가능성이 있는 '잠재 고객'을 뜻하며 Part 7에서 prospect, potential client로 바꿔 쓰인다. 동사 lead(이끌다)와 혼동하지 않도록 문맥을 확인해야 한다.",
+  "q": {
+   "s": "The marketing team passes promising ------- to sales representatives, who then contact the potential clients.",
+   "o": [
+    "loads",
+    "leaks",
+    "leases",
+    "leads"
+   ],
+   "a": 3,
+   "k": "영업 사원에게 넘겨 연락하게 하는 대상은 유망한 '잠재 고객 정보'이므로 leads가 정답이다. loads(짐), leaks(누출), leases(임대 계약)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "cold call",
+  "pos": "phr",
+  "m": [
+   "(판매를 위해) 모르는 사람에게 전화하기, 권유 전화"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "New sales staff spend their first week learning how to make *cold calls*.",
+  "exKo": "신입 영업 사원들은 첫 주 동안 권유 전화 거는 법을 배운다.",
+  "col": [
+   {
+    "e": "make cold calls",
+    "k": "권유 전화를 걸다"
+   },
+   {
+    "e": "cold-call customers",
+    "k": "고객에게 무작정 판매 전화를 걸다"
+   }
+  ],
+  "der": [
+   {
+    "w": "cold calling",
+    "pos": "n",
+    "m": "권유 전화 영업"
+   }
+  ],
+  "para": [
+   "sales call",
+   "unsolicited call"
+  ],
+  "ant": "",
+  "tip": "사전 연락 없이 잠재 고객에게 거는 영업 전화를 말한다. 동사로는 하이픈을 넣어 cold-call이라고 쓰며, Part 7에서 unsolicited call로 바꿔 표현되기도 한다.",
+  "q": {
+   "s": "Instead of making cold -------, the firm now attracts new clients through free online seminars.",
+   "o": [
+    "calls",
+    "callers",
+    "called",
+    "caller"
+   ],
+   "a": 0,
+   "k": "making의 목적어로 '권유 전화'를 뜻하는 복수명사 calls가 정답이다(make cold calls: 권유 전화를 걸다). callers, caller는 '전화 거는 사람'이라 make의 목적어로 의미가 맞지 않고, called는 동사 형태다."
+  }
+ },
+ {
+  "w": "leverage",
+  "pos": "v",
+  "m": [
+   "(자원·강점 등을) 활용하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company plans to *leverage* its large social media following to promote the service.",
+  "exKo": "그 회사는 많은 소셜 미디어 팔로워를 활용해 그 서비스를 홍보할 계획이다.",
+  "col": [
+   {
+    "e": "leverage expertise",
+    "k": "전문 지식을 활용하다"
+   },
+   {
+    "e": "leverage resources",
+    "k": "자원을 활용하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "leveraged",
+    "pos": "adj",
+    "m": "차입 자본을 이용한"
+   }
+  ],
+  "para": [
+   "use",
+   "make the most of",
+   "capitalize on"
+  ],
+  "ant": "",
+  "tip": "동사로는 강점·자원을 '최대한 활용하다'(make the most of)라는 뜻이고, 명사로는 협상에서의 '영향력, 협상력'(gain leverage)이라는 뜻이다.",
+  "q": {
+   "s": "Startups can ------- the experience of their mentors to avoid common mistakes.",
+   "o": [
+    "levy",
+    "leverage",
+    "leave",
+    "lessen"
+   ],
+   "a": 1,
+   "k": "멘토의 경험을 '활용하여' 흔한 실수를 피할 수 있다는 의미이므로 leverage가 정답이다. levy(부과하다), leave(떠나다, 남기다), lessen(줄이다)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "concede",
+  "pos": "v",
+  "m": [
+   "(마지못해) 인정하다",
+   "양보하다, 내주다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The supplier eventually *conceded* that the shipment had been delayed by its own error.",
+  "exKo": "공급업체는 결국 자사의 실수로 배송이 지연되었다는 것을 인정했다.",
+  "col": [
+   {
+    "e": "concede that",
+    "k": "~임을 인정하다"
+   },
+   {
+    "e": "concede a point",
+    "k": "논점을 인정하다, 양보하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "concession",
+    "pos": "n",
+    "m": "양보, 할인, 영업권"
+   }
+  ],
+  "para": [
+   "admit",
+   "acknowledge",
+   "yield"
+  ],
+  "ant": "deny",
+  "tip": "concede that절(~을 인정하다)과 협상에서 '양보하다'라는 뜻이 모두 쓰인다. 명사 concession(양보)은 Day 6 표제어로 함께 외워 두자.",
+  "q": {
+   "s": "To close the deal quickly, the seller ------- several points, including the delivery fee.",
+   "o": [
+    "conducted",
+    "consented",
+    "confided",
+    "conceded"
+   ],
+   "a": 3,
+   "k": "거래를 빨리 성사시키기 위해 배송비를 포함한 몇 가지 사항을 '양보했다'는 의미이므로 conceded가 정답이다. consented는 자동사라 consent to로 써야 하고, conducted(실시했다), confided(털어놓았다)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "reach an agreement",
+  "pos": "phr",
+  "m": [
+   "합의에 이르다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Following a long meeting on Tuesday, the landlord and the tenant *reached an agreement* on the rent.",
+  "exKo": "화요일에 긴 회의를 한 끝에 집주인과 세입자는 임대료에 관해 합의에 이르렀다.",
+  "col": [
+   {
+    "e": "reach an agreement on",
+    "k": "~에 대해 합의하다"
+   },
+   {
+    "e": "reach an agreement with",
+    "k": "~와 합의에 이르다"
+   }
+  ],
+  "der": [
+   {
+    "w": "agree",
+    "pos": "v",
+    "m": "동의하다"
+   }
+  ],
+  "para": [
+   "come to an agreement",
+   "agree",
+   "settle"
+  ],
+  "ant": "",
+  "tip": "reach는 타동사라 reach to an agreement로 쓰지 않는다. 합의 내용은 on, 상대는 with로 나타낸다.",
+  "q": {
+   "s": "The architects and city planners could not reach an ------- on the height of the new tower.",
+   "o": [
+    "agree",
+    "agreeable",
+    "agreeably",
+    "agreement"
+   ],
+   "a": 3,
+   "k": "관사 an 뒤 명사 자리이며 reach an agreement(합의에 이르다) 표현을 이루는 agreement가 정답이다. agree는 동사, agreeable은 형용사, agreeably는 부사다."
+  }
+ },
+ {
+  "w": "close a deal",
+  "pos": "phr",
+  "m": [
+   "거래를 성사시키다, 계약을 체결하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Ms. Tran *closed* the *deal* with the hotel chain just before the end of the quarter.",
+  "exKo": "Tran 씨는 분기 말 직전에 그 호텔 체인과의 거래를 성사시켰다.",
+  "col": [
+   {
+    "e": "close a deal with",
+    "k": "~와 거래를 성사시키다"
+   },
+   {
+    "e": "close the deal on",
+    "k": "~에 대한 거래를 마무리하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "finalize a deal",
+   "seal a deal",
+   "clinch a deal"
+  ],
+  "ant": "",
+  "tip": "close는 '닫다'가 아니라 '(거래를) 성사시키다'라는 뜻으로, Part 7에서 finalize, seal, clinch로 바꿔 쓰인다.",
+  "q": {
+   "s": "The sales team worked late every night to ------- the deal before the end of the fiscal year.",
+   "o": [
+    "shut",
+    "close",
+    "cover",
+    "fold"
+   ],
+   "a": 1,
+   "k": "회계 연도 말 전에 거래를 '성사시키기' 위해 매일 밤늦게 일했다는 의미이므로 close가 정답이다. shut은 '닫다'라는 물리적 의미로만 쓰여 deal과 어울리지 않고, cover, fold도 deal과 이런 의미로 결합하지 않는다."
+  }
+ },
+ {
+  "w": "consultant",
+  "pos": "n",
+  "m": [
+   "컨설턴트, 자문 위원"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "A management *consultant* was hired to help streamline the company's sales process.",
+  "exKo": "회사의 영업 절차를 간소화하는 것을 돕기 위해 경영 컨설턴트가 고용되었다.",
+  "col": [
+   {
+    "e": "management consultant",
+    "k": "경영 컨설턴트"
+   },
+   {
+    "e": "hire a consultant",
+    "k": "컨설턴트를 고용하다"
+   },
+   {
+    "e": "independent consultant",
+    "k": "독립 컨설턴트"
+   }
+  ],
+  "der": [
+   {
+    "w": "consult",
+    "pos": "v",
+    "m": "상담하다, 참고하다"
+   },
+   {
+    "w": "consultation",
+    "pos": "n",
+    "m": "상담, 협의"
+   },
+   {
+    "w": "consulting",
+    "pos": "n",
+    "m": "컨설팅(업)"
+   }
+  ],
+  "para": [
+   "adviser",
+   "expert"
+  ],
+  "ant": "",
+  "tip": "사람명사 consultant와 consultation(상담), consulting(컨설팅업)을 구분하는 품사 문제가 나온다. consult는 consult a doctor처럼 타동사로 쓴다.",
+  "q": {
+   "s": "The firm hired an outside ------- to help reorganize its sales department.",
+   "o": [
+    "consultation",
+    "consultant",
+    "consult",
+    "consulting"
+   ],
+   "a": 1,
+   "k": "고용(hired)의 대상이 되는 사람명사 자리이므로 consultant가 정답이다. consultation(상담)은 고용할 수 없고, consult는 동사, consulting은 관사 an과 함께 쓸 수 없는 불가산명사다."
+  }
+ },
+ {
+  "w": "rate",
+  "pos": "n",
+  "m": [
+   "요금, 가격",
+   "비율, 속도"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The hotel offers a discounted *rate* for guests who stay more than five nights.",
+  "exKo": "그 호텔은 5박 넘게 숙박하는 투숙객에게 할인 요금을 제공한다.",
+  "col": [
+   {
+    "e": "at a reduced rate",
+    "k": "할인된 요금으로"
+   },
+   {
+    "e": "interest rate",
+    "k": "이자율"
+   },
+   {
+    "e": "room rate",
+    "k": "객실 요금"
+   }
+  ],
+  "der": [
+   {
+    "w": "rating",
+    "pos": "n",
+    "m": "등급, 평가"
+   }
+  ],
+  "para": [
+   "price",
+   "charge",
+   "fee"
+  ],
+  "ant": "",
+  "tip": "'요금'이라는 의미일 때 at a ~ rate처럼 전치사 at과 함께 쓴다. 동사로는 be rated highly(높게 평가받다)처럼 '평가하다'라는 뜻이다.",
+  "q": {
+   "s": "Members of the business club can book meeting rooms at a reduced -------.",
+   "o": [
+    "ration",
+    "rank",
+    "route",
+    "rate"
+   ],
+   "a": 3,
+   "k": "at a reduced rate(할인된 요금으로) 표현으로 회의실을 예약할 수 있다는 의미이므로 rate가 정답이다. ration(배급량), rank(계급, 순위), route(경로)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "value",
+  "pos": "n",
+  "m": [
+   "가치, 가격",
+   "(가격 대비) 값어치"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The furniture set offers excellent *value* for its price.",
+  "exKo": "그 가구 세트는 가격 대비 가치가 뛰어나다.",
+  "col": [
+   {
+    "e": "market value",
+    "k": "시장 가치"
+   },
+   {
+    "e": "value for money",
+    "k": "가격 대비 가치"
+   },
+   {
+    "e": "of great value",
+    "k": "매우 가치 있는"
+   }
+  ],
+  "der": [
+   {
+    "w": "valuable",
+    "pos": "adj",
+    "m": "귀중한, 가치 있는"
+   },
+   {
+    "w": "valuation",
+    "pos": "n",
+    "m": "평가, 가치 산정"
+   },
+   {
+    "w": "valued",
+    "pos": "adj",
+    "m": "소중한"
+   }
+  ],
+  "para": [
+   "worth"
+  ],
+  "ant": "",
+  "tip": "명사 value 외에 동사로 '소중히 여기다'(We value your feedback)라는 뜻도 있다. valued customer(소중한 고객)의 형용사 valued도 함께 출제된다.",
+  "q": {
+   "s": "An appraiser estimated the ------- of the property at nearly two million dollars.",
+   "o": [
+    "valuable",
+    "value",
+    "valued",
+    "valuing"
+   ],
+   "a": 1,
+   "k": "관사 the 뒤, 전치사 of 앞 명사 자리이며 부동산의 '가치'를 추정했다는 의미이므로 value가 정답이다. valuable은 형용사이고, valued와 valuing은 이 자리에서 명사 역할을 할 수 없다."
+  }
+ },
+ {
+  "w": "valuable",
+  "pos": "adj",
+  "m": [
+   "귀중한, 가치 있는",
+   "값비싼"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The workshop gave participants *valuable* tips on negotiating with overseas suppliers.",
+  "exKo": "그 워크숍은 참가자들에게 해외 공급업체와의 협상에 관한 유용한 조언을 주었다.",
+  "col": [
+   {
+    "e": "valuable experience",
+    "k": "귀중한 경험"
+   },
+   {
+    "e": "valuable information",
+    "k": "유익한 정보"
+   }
+  ],
+  "der": [
+   {
+    "w": "value",
+    "pos": "n",
+    "m": "가치"
+   },
+   {
+    "w": "valuables",
+    "pos": "n",
+    "m": "귀중품"
+   }
+  ],
+  "para": [
+   "useful",
+   "helpful",
+   "precious"
+  ],
+  "ant": "worthless",
+  "tip": "형용사 valuable(귀중한)과 복수명사 valuables(귀중품)를 구분해야 한다. invaluable은 '매우 귀중한'이라는 뜻으로 반의어가 아님에 주의하자.",
+  "q": {
+   "s": "Mr. Petrov's years of experience in overseas markets proved extremely ------- during the contract talks.",
+   "o": [
+    "variable",
+    "vacant",
+    "valuable",
+    "vague"
+   ],
+   "a": 2,
+   "k": "계약 협상에서 해외 시장에서의 오랜 경험이 매우 '유용했다'는 의미이므로 valuable이 정답이다. variable(가변적인), vacant(비어 있는), vague(모호한)는 문맥상 맞지 않는다."
+  }
+ },
+ {
+  "w": "haggle",
+  "pos": "v",
+  "m": [
+   "(값을) 흥정하다, 실랑이하다"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Tourists often *haggle* with vendors at the night market to get lower prices.",
+  "exKo": "관광객들은 더 싼 값에 사기 위해 야시장에서 상인들과 흥정하곤 한다.",
+  "col": [
+   {
+    "e": "haggle over",
+    "k": "~을 두고 흥정하다"
+   },
+   {
+    "e": "haggle with",
+    "k": "~와 흥정하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "haggling",
+    "pos": "n",
+    "m": "흥정"
+   }
+  ],
+  "para": [
+   "bargain",
+   "negotiate"
+  ],
+  "ant": "",
+  "tip": "자동사라 haggle over the price(가격을 두고 흥정하다), haggle with the seller(판매자와 흥정하다)처럼 전치사가 필요하다. Part 7에서 bargain, negotiate로 바꿔 쓰인다.",
+  "q": {
+   "s": "At the flea market, buyers frequently ------- over prices with the sellers.",
+   "o": [
+    "hassle",
+    "hustle",
+    "haggle",
+    "huddle"
+   ],
+   "a": 2,
+   "k": "벼룩시장에서 판매자와 가격을 두고 '흥정한다'는 의미로 over, with와 어울리는 haggle이 정답이다. hassle(괴롭히다), hustle(서두르다, 밀치다), huddle(모이다)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "markup",
+  "pos": "n",
+  "m": [
+   "가격 인상(폭), 이윤 폭"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The store applies a 40 percent *markup* to most imported goods.",
+  "exKo": "그 매장은 대부분의 수입품에 40퍼센트의 이윤을 붙인다.",
+  "col": [
+   {
+    "e": "markup on",
+    "k": "~에 붙는 이윤"
+   },
+   {
+    "e": "price markup",
+    "k": "가격 인상폭"
+   }
+  ],
+  "der": [
+   {
+    "w": "mark up",
+    "pos": "v",
+    "m": "가격을 올리다"
+   }
+  ],
+  "para": [
+   "margin",
+   "price increase"
+  ],
+  "ant": "markdown",
+  "tip": "원가에 덧붙이는 이윤 폭을 뜻하며, 반대말 markdown(가격 인하)과 구분하는 문제가 나온다. 동사구 mark up(가격을 올리다)과 mark down(가격을 내리다)도 함께 기억하자.",
+  "q": {
+   "s": "Because of the high ------- on bottled water, the hotel's minibar prices are much higher than those in stores.",
+   "o": [
+    "markdown",
+    "marker",
+    "marking",
+    "markup"
+   ],
+   "a": 3,
+   "k": "생수에 붙는 '이윤 폭'이 높아 미니바 가격이 상점보다 훨씬 비싸다는 의미이므로 markup이 정답이다. markdown(가격 인하)은 가격이 비싼 이유가 될 수 없고, marker(표시물), marking(표시)은 의미가 맞지 않는다."
+  }
+ }
+]

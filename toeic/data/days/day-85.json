@@ -1,0 +1,1870 @@
+[
+ {
+  "w": "principal",
+  "pos": "n",
+  "m": [
+   "(대출의) 원금",
+   "(adj) 주요한, 주된"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Each monthly payment covers part of the *principal* as well as the interest.",
+  "exKo": "매달 상환액에는 이자뿐 아니라 원금의 일부도 포함된다.",
+  "col": [
+   {
+    "e": "principal and interest",
+    "k": "원금과 이자"
+   },
+   {
+    "e": "repay the principal",
+    "k": "원금을 상환하다"
+   },
+   {
+    "e": "principal reason",
+    "k": "주된 이유"
+   }
+  ],
+  "der": [
+   {
+    "w": "principally",
+    "pos": "adv",
+    "m": "주로"
+   }
+  ],
+  "para": [
+   "main",
+   "chief"
+  ],
+  "ant": "",
+  "tip": "principle(원칙)과 발음이 같아 혼동을 유도한다. 형용사로는 '주요한'(the principal reason)이라는 뜻으로 Part 5에 자주 나온다.",
+  "q": {
+   "s": "Borrowers who make extra payments can reduce the ------- of their loan more quickly.",
+   "o": [
+    "principled",
+    "principle",
+    "principally",
+    "principal"
+   ],
+   "a": 3,
+   "k": "추가 상환으로 줄어드는 것은 대출 '원금'이므로 principal이 정답이다. principle(원칙)은 발음이 같은 함정이고, principally는 부사, principled(원칙에 입각한)는 형용사다."
+  }
+ },
+ {
+  "w": "interest-free",
+  "pos": "adj",
+  "m": [
+   "무이자의"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The store offers *interest-free* financing on all furniture purchases over $1,000.",
+  "exKo": "그 매장은 1,000달러가 넘는 모든 가구 구매에 무이자 할부를 제공한다.",
+  "col": [
+   {
+    "e": "interest-free loan",
+    "k": "무이자 대출"
+   },
+   {
+    "e": "interest-free period",
+    "k": "무이자 기간"
+   }
+  ],
+  "der": [
+   {
+    "w": "interest",
+    "pos": "n",
+    "m": "이자, 관심"
+   }
+  ],
+  "para": [
+   "zero-interest",
+   "no-interest"
+  ],
+  "ant": "",
+  "tip": "-free는 '~이 없는'이라는 뜻으로 tax-free, duty-free와 같은 방식으로 만들어진다. 명사 앞에서는 interest-free loan처럼 하이픈을 붙인다.",
+  "q": {
+   "s": "Customers who pay the full balance within twelve months can enjoy an ------- payment plan.",
+   "o": [
+    "unpaid",
+    "interested",
+    "overdue",
+    "interest-free"
+   ],
+   "a": 3,
+   "k": "12개월 안에 전액을 갚는 고객이 누리는 혜택은 '무이자' 할부이므로 interest-free가 정답이다. interested(관심 있는)는 사람의 감정을 나타내고, overdue(기한이 지난), unpaid(미납된)는 혜택이 될 수 없다."
+  }
+ },
+ {
+  "w": "vault",
+  "pos": "n",
+  "m": [
+   "금고(실)"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The bank keeps its gold reserves in an underground *vault* beneath the building.",
+  "exKo": "그 은행은 건물 아래 지하 금고에 금 보유고를 보관한다.",
+  "col": [
+   {
+    "e": "bank vault",
+    "k": "은행 금고"
+   },
+   {
+    "e": "secure vault",
+    "k": "안전한 금고"
+   }
+  ],
+  "der": [],
+  "para": [
+   "safe",
+   "strongroom"
+  ],
+  "ant": "",
+  "tip": "bank vault(은행 금고실)와 safe-deposit box(대여 금고)는 은행 지문에 함께 나온다. 철자가 비슷한 valve(밸브), volt(볼트)와 구분한다.",
+  "q": {
+   "s": "Customers' safe-deposit boxes are stored in a secure ------- that only bank staff can open.",
+   "o": [
+    "valve",
+    "vote",
+    "volt",
+    "vault"
+   ],
+   "a": 3,
+   "k": "대여 금고가 보관되는 장소는 은행 '금고실'이므로 vault가 정답이다. vote(투표), volt(볼트, 전압 단위), valve(밸브)는 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "cashless",
+  "pos": "adj",
+  "m": [
+   "현금 없는, 비현금의"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The stadium went *cashless* this season, accepting only cards and mobile payments.",
+  "exKo": "그 경기장은 이번 시즌부터 현금을 받지 않고 카드와 모바일 결제만 받는다.",
+  "col": [
+   {
+    "e": "cashless payment",
+    "k": "비현금 결제"
+   },
+   {
+    "e": "cashless society",
+    "k": "현금 없는 사회"
+   }
+  ],
+  "der": [
+   {
+    "w": "cash",
+    "pos": "n",
+    "m": "현금"
+   }
+  ],
+  "para": [
+   "card-only"
+  ],
+  "ant": "",
+  "tip": "-less는 '~이 없는'이라는 뜻이며, Part 7에서 'only card payments are accepted'처럼 풀어서 패러프레이징된다.",
+  "q": {
+   "s": "Since the museum gift shop went -------, visitors can no longer pay with coins or bills.",
+   "o": [
+    "cashier",
+    "cashless",
+    "cashed",
+    "cashing"
+   ],
+   "a": 1,
+   "k": "동전이나 지폐로 더 이상 결제할 수 없으므로 '현금 없는'이라는 뜻의 형용사 cashless가 정답이다. cashier(계산원)는 명사이고, cashed, cashing은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "banknote",
+  "pos": "n",
+  "m": [
+   "지폐"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The central bank will release a new *banknote* with improved security features.",
+  "exKo": "중앙은행은 보안 기능이 강화된 새 지폐를 발행할 예정이다.",
+  "col": [
+   {
+    "e": "issue banknotes",
+    "k": "지폐를 발행하다"
+   },
+   {
+    "e": "counterfeit banknotes",
+    "k": "위조지폐"
+   }
+  ],
+  "der": [],
+  "para": [
+   "bill",
+   "note",
+   "paper money"
+  ],
+  "ant": "",
+  "tip": "미국식으로는 bill(a ten-dollar bill)이라고 하며, denomination(액면가), counterfeit(위조의)과 함께 출제된다.",
+  "q": {
+   "s": "The new $50 ------- features a hologram that is difficult to reproduce.",
+   "o": [
+    "bonus",
+    "booking",
+    "banker",
+    "banknote"
+   ],
+   "a": 3,
+   "k": "50달러짜리이면서 복제하기 어려운 홀로그램이 들어간 것은 banknote(지폐)이다. booking(예약), banker(은행가), bonus(상여금)는 홀로그램이 들어간 물건이 아니다."
+  }
+ },
+ {
+  "w": "payout",
+  "pos": "n",
+  "m": [
+   "지급금, (보험금·배당금의) 지급"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The insurance company approved a *payout* of $8,000 for the storm damage.",
+  "exKo": "보험 회사는 폭풍 피해에 대해 8,000달러의 보험금 지급을 승인했다.",
+  "col": [
+   {
+    "e": "insurance payout",
+    "k": "보험금"
+   },
+   {
+    "e": "receive a payout",
+    "k": "지급금을 받다"
+   },
+   {
+    "e": "dividend payout",
+    "k": "배당금 지급"
+   }
+  ],
+  "der": [],
+  "para": [
+   "payment",
+   "settlement"
+  ],
+  "ant": "",
+  "tip": "한 단어 명사 payout과 동사구 pay out(돈을 지불하다)을 구분한다. 보험·배당 관련 Part 7 지문에 자주 나온다.",
+  "q": {
+   "s": "Shareholders received a larger dividend ------- this year thanks to record profits.",
+   "o": [
+    "paycheck",
+    "payroll",
+    "payee",
+    "payout"
+   ],
+   "a": 3,
+   "k": "주주가 받는 배당금 '지급액'은 dividend payout이므로 payout이 정답이다. payroll(급여 대장), payee(수취인), paycheck(급여 수표)는 배당금과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "creditworthy",
+  "pos": "adj",
+  "m": [
+   "신용도가 좋은, 신용할 수 있는"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Lenders offer lower rates to borrowers they consider *creditworthy*.",
+  "exKo": "대출 기관은 신용도가 좋다고 판단하는 대출자에게 더 낮은 금리를 제공한다.",
+  "col": [
+   {
+    "e": "creditworthy customers",
+    "k": "신용도가 좋은 고객"
+   },
+   {
+    "e": "deem ~ creditworthy",
+    "k": "~을 신용할 만하다고 여기다"
+   }
+  ],
+  "der": [
+   {
+    "w": "creditworthiness",
+    "pos": "n",
+    "m": "신용도"
+   }
+  ],
+  "para": [
+   "financially reliable"
+  ],
+  "ant": "",
+  "tip": "명사형 creditworthiness(신용도)는 assess creditworthiness(신용도를 평가하다) 형태로 Part 7 대출 지문에 나온다.",
+  "q": {
+   "s": "Before approving the loan, the bank must confirm that the applicant is -------.",
+   "o": [
+    "creditworthy",
+    "creditworthiness",
+    "creditor",
+    "credited"
+   ],
+   "a": 0,
+   "k": "be동사 뒤 보어 자리에서 신청자의 상태를 나타내는 형용사 creditworthy가 정답이다. creditworthiness는 명사, creditor(채권자)는 사람명사이고, credited(입금된)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "overdrawn",
+  "pos": "adj",
+  "m": [
+   "(계좌가) 초과 인출된, 잔고가 마이너스인"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Customers are charged a fee if their account becomes *overdrawn*.",
+  "exKo": "계좌가 잔고를 초과해 인출되면 고객에게 수수료가 부과된다.",
+  "col": [
+   {
+    "e": "overdrawn account",
+    "k": "초과 인출된 계좌"
+   },
+   {
+    "e": "be overdrawn by",
+    "k": "~만큼 초과 인출되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "overdraw",
+    "pos": "v",
+    "m": "초과 인출하다"
+   },
+   {
+    "w": "overdraft",
+    "pos": "n",
+    "m": "초과 인출(액), 당좌 대월"
+   }
+  ],
+  "para": [
+   "in the red"
+  ],
+  "ant": "",
+  "tip": "overdraw의 과거분사로 형용사처럼 쓰인다. 명사 overdraft는 overdraft fee(초과 인출 수수료) 형태로 자주 나온다.",
+  "q": {
+   "s": "Mr. Lin received a text alert warning him that his checking account was ------- by $45.",
+   "o": [
+    "overdraw",
+    "overdraft",
+    "overdrawn",
+    "overdrawing"
+   ],
+   "a": 2,
+   "k": "be동사 뒤에서 계좌가 '초과 인출된' 상태를 나타내는 overdrawn이 정답이다. overdraft는 명사, overdraw는 동사원형이고, overdrawing은 계좌가 인출하는 주체가 되므로 맞지 않는다."
+  }
+ },
+ {
+  "w": "account number",
+  "pos": "phr",
+  "m": [
+   "계좌 번호"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Customers must provide their *account number* when calling the support line.",
+  "exKo": "고객은 고객 지원 센터에 전화할 때 계좌 번호를 알려 주어야 한다.",
+  "col": [
+   {
+    "e": "enter an account number",
+    "k": "계좌 번호를 입력하다"
+   },
+   {
+    "e": "ten-digit account number",
+    "k": "10자리 계좌 번호"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "",
+  "tip": "Part 3·4 전화 대화에서 신원 확인을 위해 account number를 요청하는 장면이 자주 나온다. 고객 번호는 customer number, 주문 번호는 order number이다.",
+  "q": {
+   "s": "To transfer money, please enter the recipient's name and account ------- below.",
+   "o": [
+    "figure",
+    "digit",
+    "number",
+    "count"
+   ],
+   "a": 2,
+   "k": "송금할 때 받는 사람 이름과 함께 입력하는 것은 account number(계좌 번호)이다. digit(숫자 한 자리), figure(수치), count(셈)는 account와 결합해 계좌 번호를 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "joint account",
+  "pos": "phr",
+  "m": [
+   "공동 명의 계좌"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The business partners opened a *joint account* to manage shared expenses.",
+  "exKo": "사업 파트너들은 공동 경비를 관리하기 위해 공동 명의 계좌를 개설했다.",
+  "col": [
+   {
+    "e": "open a joint account",
+    "k": "공동 계좌를 개설하다"
+   },
+   {
+    "e": "joint account holders",
+    "k": "공동 계좌 명의인"
+   }
+  ],
+  "der": [
+   {
+    "w": "jointly",
+    "pos": "adv",
+    "m": "공동으로"
+   }
+  ],
+  "para": [
+   "shared account"
+  ],
+  "ant": "",
+  "tip": "joint는 '공동의'라는 형용사로 joint venture(합작 투자), jointly owned(공동 소유의)처럼 쓰인다.",
+  "q": {
+   "s": "Both owners can withdraw money from a ------- account, but each must show identification.",
+   "o": [
+    "joined",
+    "jointly",
+    "join",
+    "joint"
+   ],
+   "a": 3,
+   "k": "명사 account를 수식해 '공동 계좌'를 만드는 형용사 joint가 정답이다. jointly는 부사, join은 동사이고, joined(결합된)는 계좌를 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "compound interest",
+  "pos": "phr",
+  "m": [
+   "복리"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Thanks to *compound interest*, small monthly savings can grow significantly over time.",
+  "exKo": "복리 덕분에 매달 조금씩 하는 저축도 시간이 지나면서 크게 불어날 수 있다.",
+  "col": [
+   {
+    "e": "earn compound interest",
+    "k": "복리 이자를 받다"
+   },
+   {
+    "e": "the power of compound interest",
+    "k": "복리의 힘"
+   }
+  ],
+  "der": [
+   {
+    "w": "compound",
+    "pos": "v",
+    "m": "악화시키다, 복리로 계산하다"
+   }
+  ],
+  "para": [],
+  "ant": "simple interest",
+  "tip": "simple interest(단리)와 대비된다. 동사 compound는 '(문제를) 악화시키다'라는 뜻으로 Part 5 어휘 문제에 나오기도 한다.",
+  "q": {
+   "s": "Unlike simple interest, compound ------- is calculated on both the original deposit and any interest already earned.",
+   "o": [
+    "interesting",
+    "interests",
+    "interested",
+    "interest"
+   ],
+   "a": 3,
+   "k": "simple interest와 대비되는 '복리'는 compound interest이고, 단수 동사 is와 수가 일치해야 하므로 interest가 정답이다. interests는 복수형이라 is와 맞지 않고, interested, interesting은 형용사다."
+  }
+ },
+ {
+  "w": "brokerage",
+  "pos": "n",
+  "m": [
+   "중개 회사, 중개업",
+   "중개 수수료"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Ms. Patel works as a financial analyst at a large *brokerage* in Chicago.",
+  "exKo": "Patel 씨는 시카고의 한 대형 증권 중개 회사에서 재무 분석가로 일한다.",
+  "col": [
+   {
+    "e": "brokerage firm",
+    "k": "증권사, 중개 회사"
+   },
+   {
+    "e": "brokerage fee",
+    "k": "중개 수수료"
+   }
+  ],
+  "der": [
+   {
+    "w": "broker",
+    "pos": "n",
+    "m": "중개인"
+   }
+  ],
+  "para": [
+   "investment firm"
+  ],
+  "ant": "",
+  "tip": "brokerage firm(증권사, 중개업체)과 brokerage fee(중개 수수료)로 쓰이며, 사람명사 broker(중개인)와 구분한다.",
+  "q": {
+   "s": "Investors who trade frequently should compare the ------- fees charged by different firms.",
+   "o": [
+    "broke",
+    "brokered",
+    "brokerage",
+    "broken"
+   ],
+   "a": 2,
+   "k": "fees 앞에서 '중개 수수료'라는 복합명사를 이루는 brokerage가 정답이다. brokered(중개된), broke(파산한), broken(고장 난)은 수수료를 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "broker",
+  "pos": "n",
+  "m": [
+   "중개인, 브로커",
+   "(v) 중개하다, 성사시키다"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The couple hired a mortgage *broker* to find the best loan for their new home.",
+  "exKo": "그 부부는 새집 구입에 가장 유리한 대출을 찾기 위해 주택 담보 대출 중개인을 고용했다.",
+  "col": [
+   {
+    "e": "real estate broker",
+    "k": "부동산 중개인"
+   },
+   {
+    "e": "insurance broker",
+    "k": "보험 중개인"
+   },
+   {
+    "e": "broker a deal",
+    "k": "거래를 성사시키다"
+   }
+  ],
+  "der": [
+   {
+    "w": "brokerage",
+    "pos": "n",
+    "m": "중개업, 중개 수수료"
+   }
+  ],
+  "para": [
+   "agent",
+   "intermediary"
+  ],
+  "ant": "",
+  "tip": "사람명사로 쓰일 뿐 아니라 동사로 broker a deal/agreement(거래·합의를 중개하다)처럼도 쓰인다.",
+  "q": {
+   "s": "Mr. Dawson, an experienced insurance -------, helped the company choose a new health plan.",
+   "o": [
+    "broker",
+    "brokerage",
+    "brokered",
+    "broke"
+   ],
+   "a": 0,
+   "k": "Mr. Dawson과 동격을 이루는 사람명사가 필요하므로 broker가 정답이다. brokerage(중개업)는 사람이 아니고, brokered, broke는 동사·형용사 형태다."
+  }
+ },
+ {
+  "w": "annuity",
+  "pos": "n",
+  "m": [
+   "연금, 연금 보험"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "After retiring, Mr. Grant began receiving monthly payments from an *annuity*.",
+  "exKo": "은퇴 후 Grant 씨는 연금 보험에서 매달 돈을 받기 시작했다.",
+  "col": [
+   {
+    "e": "purchase an annuity",
+    "k": "연금 상품에 가입하다"
+   },
+   {
+    "e": "annuity payments",
+    "k": "연금 지급액"
+   }
+  ],
+  "der": [
+   {
+    "w": "annual",
+    "pos": "adj",
+    "m": "연례의, 1년의"
+   }
+  ],
+  "para": [
+   "pension"
+  ],
+  "ant": "",
+  "tip": "매년 또는 매달 일정액을 받는 금융 상품으로, Part 7 은퇴 설계 지문에서 pension(연금)으로 바꿔 쓰인다.",
+  "q": {
+   "s": "Many retirees purchase an ------- to guarantee a steady income for the rest of their lives.",
+   "o": [
+    "annuity",
+    "anniversary",
+    "annotation",
+    "antiquity"
+   ],
+   "a": 0,
+   "k": "평생 안정적인 소득을 보장받기 위해 가입하는 것은 annuity(연금 상품)이다. anniversary(기념일), annotation(주석), antiquity(고대)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "inheritance",
+  "pos": "n",
+  "m": [
+   "상속 재산, 유산",
+   "상속"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "She used part of her *inheritance* to open a small bakery downtown.",
+  "exKo": "그녀는 물려받은 유산의 일부로 시내에 작은 빵집을 열었다.",
+  "col": [
+   {
+    "e": "inheritance tax",
+    "k": "상속세"
+   },
+   {
+    "e": "receive an inheritance",
+    "k": "유산을 물려받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "inherit",
+    "pos": "v",
+    "m": "물려받다, 상속하다"
+   },
+   {
+    "w": "heir",
+    "pos": "n",
+    "m": "상속인"
+   }
+  ],
+  "para": [
+   "legacy",
+   "bequest"
+  ],
+  "ant": "",
+  "tip": "동사 inherit은 '(재산·직책·문제를) 물려받다'라는 뜻으로 inherit a family business처럼 비즈니스 문맥에서도 쓰인다.",
+  "q": {
+   "s": "The financial advisor explained how ------- tax would apply to the family's property.",
+   "o": [
+    "inheritance",
+    "inherit",
+    "inherited",
+    "inheritor"
+   ],
+   "a": 0,
+   "k": "tax 앞에서 '상속세'라는 복합명사를 이루는 inheritance가 정답이다. inherit은 동사이고, inherited(물려받은)와 inheritor(상속인)는 tax와 결합해 상속세를 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "refinance",
+  "pos": "v",
+  "m": [
+   "재융자하다, (대출을) 갈아타다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Many homeowners rushed to *refinance* their mortgages when interest rates fell.",
+  "exKo": "금리가 떨어지자 많은 주택 소유자가 서둘러 주택 담보 대출을 갈아탔다.",
+  "col": [
+   {
+    "e": "refinance a mortgage",
+    "k": "주택 담보 대출을 재융자하다"
+   },
+   {
+    "e": "refinance a loan",
+    "k": "대출을 갈아타다"
+   }
+  ],
+  "der": [
+   {
+    "w": "refinancing",
+    "pos": "n",
+    "m": "재융자"
+   }
+  ],
+  "para": [
+   "restructure"
+  ],
+  "ant": "",
+  "tip": "금리가 내려갈 때 더 낮은 금리의 대출로 바꾼다는 뜻이다. 타동사로 refinance a mortgage/loan처럼 목적어를 바로 쓴다.",
+  "q": {
+   "s": "The Hendersons decided to ------- their home loan to take advantage of lower rates.",
+   "o": [
+    "refinancing",
+    "refinance",
+    "refinanced",
+    "refinances"
+   ],
+   "a": 1,
+   "k": "decided to 뒤에는 동사원형이 오므로 refinance가 정답이다. refinancing, refinanced, refinances는 to 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "loan officer",
+  "pos": "phr",
+  "m": [
+   "대출 담당 직원"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Ms. Reyes has worked as a *loan officer* at Harbor Savings Bank for six years.",
+  "exKo": "Reyes 씨는 Harbor 저축은행에서 6년째 대출 담당 직원으로 일하고 있다.",
+  "col": [
+   {
+    "e": "meet with a loan officer",
+    "k": "대출 담당 직원과 상담하다"
+   },
+   {
+    "e": "senior loan officer",
+    "k": "선임 대출 담당 직원"
+   }
+  ],
+  "der": [],
+  "para": [
+   "loan specialist"
+  ],
+  "ant": "",
+  "tip": "Part 3·4에서 대출 상담 장면의 화자로 자주 나와 'Who most likely is the speaker?' 문제의 정답이 되기도 한다.",
+  "q": {
+   "s": "Ms. Ortiz met with a loan ------- to discuss financing options for her new restaurant.",
+   "o": [
+    "officer",
+    "office",
+    "offering",
+    "officiate"
+   ],
+   "a": 0,
+   "k": "만나서 자금 조달 방법을 상의한 '사람'이 필요하므로 loan officer(대출 담당 직원)를 이루는 officer가 정답이다. office(사무실), offering(제공물)은 사람이 아니고, officiate는 동사다."
+  }
+ },
+ {
+  "w": "pre-approved",
+  "pos": "adj",
+  "m": [
+   "사전 승인된"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Buyers who are *pre-approved* for a mortgage can make offers more quickly.",
+  "exKo": "주택 담보 대출을 사전 승인받은 구매자는 더 빨리 매수 제안을 할 수 있다.",
+  "col": [
+   {
+    "e": "pre-approved for a loan",
+    "k": "대출 사전 승인을 받은"
+   },
+   {
+    "e": "pre-approved credit card offer",
+    "k": "사전 승인 신용 카드 제안"
+   }
+  ],
+  "der": [
+   {
+    "w": "pre-approval",
+    "pos": "n",
+    "m": "사전 승인"
+   }
+  ],
+  "para": [
+   "approved in advance"
+  ],
+  "ant": "",
+  "tip": "be pre-approved for(~에 대해 사전 승인을 받다)처럼 전치사 for와 함께 쓴다. Part 7에서 approved in advance로 풀어 쓰인다.",
+  "q": {
+   "s": "Because she was already ------- for a car loan, Ms. Cho completed her purchase in under an hour.",
+   "o": [
+    "pre-approve",
+    "pre-approval",
+    "pre-approved",
+    "pre-approves"
+   ],
+   "a": 2,
+   "k": "be동사 was 뒤에서 '사전 승인을 받은' 상태를 나타내는 과거분사 pre-approved가 정답이다. pre-approval은 명사이고, pre-approve, pre-approves는 be동사 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "credit check",
+  "pos": "phr",
+  "m": [
+   "신용 조회"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The landlord runs a *credit check* on every applicant before signing a lease.",
+  "exKo": "그 집주인은 임대 계약서에 서명하기 전에 모든 지원자의 신용 조회를 한다.",
+  "col": [
+   {
+    "e": "run a credit check",
+    "k": "신용 조회를 하다"
+   },
+   {
+    "e": "pass a credit check",
+    "k": "신용 조회를 통과하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "credit history review"
+  ],
+  "ant": "",
+  "tip": "run/do a credit check on + 사람 형태로 쓰인다. 신용 카드·임대·대출 신청 관련 Part 7 지문에 자주 나온다.",
+  "q": {
+   "s": "All applicants for the store credit card must agree to a credit ------- before approval.",
+   "o": [
+    "check",
+    "union",
+    "score",
+    "rating"
+   ],
+   "a": 0,
+   "k": "승인 전에 동의해야 하는 절차는 credit check(신용 조회)이다. credit union(신용 협동조합), credit score(신용 점수), credit rating(신용 등급)은 동의하는 절차가 아니다."
+  }
+ },
+ {
+  "w": "unsecured",
+  "pos": "adj",
+  "m": [
+   "무담보의"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "*Unsecured* loans usually have higher interest rates because no collateral is required.",
+  "exKo": "무담보 대출은 담보가 필요 없기 때문에 대개 금리가 더 높다.",
+  "col": [
+   {
+    "e": "unsecured loan",
+    "k": "무담보 대출"
+   },
+   {
+    "e": "unsecured debt",
+    "k": "무담보 부채"
+   }
+  ],
+  "der": [
+   {
+    "w": "secure",
+    "pos": "v",
+    "m": "확보하다, 담보로 하다"
+   },
+   {
+    "w": "security",
+    "pos": "n",
+    "m": "보안, 담보"
+   }
+  ],
+  "para": [],
+  "ant": "secured",
+  "tip": "secured loan(담보 대출)의 반대이며, 담보는 collateral이라고 한다. insecure(불안정한)와 구분한다.",
+  "q": {
+   "s": "Because the small business had no property to offer as collateral, it applied for an ------- loan.",
+   "o": [
+    "unsecured",
+    "insecure",
+    "uneven",
+    "unaware"
+   ],
+   "a": 0,
+   "k": "담보로 제공할 재산이 없어 신청하는 것은 '무담보' 대출이므로 unsecured가 정답이다. insecure(불안정한), uneven(고르지 않은), unaware(모르는)는 대출의 종류를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "foreclosure",
+  "pos": "n",
+  "m": [
+   "(담보물) 압류, 담보권 행사"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The family avoided *foreclosure* by working out a new payment plan with the bank.",
+  "exKo": "그 가족은 은행과 새 상환 계획을 마련해 주택 압류를 피했다.",
+  "col": [
+   {
+    "e": "face foreclosure",
+    "k": "압류 위기에 처하다"
+   },
+   {
+    "e": "foreclosure sale",
+    "k": "압류 매각"
+   }
+  ],
+  "der": [
+   {
+    "w": "foreclose",
+    "pos": "v",
+    "m": "(담보물을) 압류하다"
+   }
+  ],
+  "para": [
+   "repossession"
+  ],
+  "ant": "",
+  "tip": "대출을 갚지 못해 은행이 담보로 잡은 집을 처분하는 것으로, face/avoid foreclosure 형태로 부동산 기사에 나온다.",
+  "q": {
+   "s": "Homeowners who fall behind on their mortgage payments may face -------.",
+   "o": [
+    "enclosure",
+    "disclosure",
+    "foreclosure",
+    "composure"
+   ],
+   "a": 2,
+   "k": "주택 담보 대출 상환이 밀린 사람이 맞닥뜨리는 것은 '압류'이므로 foreclosure가 정답이다. disclosure(공개), enclosure(동봉물, 울타리), composure(침착)는 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "minimum payment",
+  "pos": "phr",
+  "m": [
+   "최소 결제 금액"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Paying only the *minimum payment* each month increases the total interest you owe.",
+  "exKo": "매달 최소 결제 금액만 내면 갚아야 할 총이자가 늘어난다.",
+  "col": [
+   {
+    "e": "make the minimum payment",
+    "k": "최소 결제 금액을 내다"
+   },
+   {
+    "e": "minimum payment due",
+    "k": "최소 납부액"
+   }
+  ],
+  "der": [
+   {
+    "w": "minimize",
+    "pos": "v",
+    "m": "최소화하다"
+   },
+   {
+    "w": "minimal",
+    "pos": "adj",
+    "m": "최소의, 아주 적은"
+   }
+  ],
+  "para": [
+   "smallest amount due"
+  ],
+  "ant": "",
+  "tip": "신용 카드 명세서 지문에 minimum payment due(최소 납부액), due date(납부 기한)와 함께 나온다.",
+  "q": {
+   "s": "Cardholders who make at least the ------- payment by the due date will not be charged a late fee.",
+   "o": [
+    "minimum",
+    "minimize",
+    "minimally",
+    "minimized"
+   ],
+   "a": 0,
+   "k": "명사 payment를 수식해 '최소 결제 금액'을 만드는 minimum이 정답이다. minimize는 동사, minimally는 부사이고, minimized(최소화된)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "balance due",
+  "pos": "phr",
+  "m": [
+   "미지불 잔액, 납부할 잔액"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Ms. Ito paid the *balance due* on her catering order the day before the reception.",
+  "exKo": "Ito 씨는 연회 전날 출장 요리 주문의 미지불 잔액을 납부했다.",
+  "col": [
+   {
+    "e": "pay the balance due",
+    "k": "잔액을 지불하다"
+   },
+   {
+    "e": "total balance due",
+    "k": "총 미지불 잔액"
+   }
+  ],
+  "der": [],
+  "para": [
+   "amount owed",
+   "outstanding balance",
+   "remaining balance"
+  ],
+  "ant": "",
+  "tip": "청구서·송장에서 '지불해야 할 남은 금액'을 뜻하며, Part 7에서 outstanding balance, amount owed로 바꿔 쓰인다.",
+  "q": {
+   "s": "The invoice shows a balance ------- of $350, payable by March 31.",
+   "o": [
+    "duly",
+    "due",
+    "dues",
+    "duty"
+   ],
+   "a": 1,
+   "k": "청구서의 '미지불 잔액'은 balance due이므로 due가 정답이다. duly(적절히)는 부사, dues(회비), duty(의무, 관세)는 balance 뒤에서 의미를 이루지 못한다."
+  }
+ },
+ {
+  "w": "card reader",
+  "pos": "phr",
+  "m": [
+   "카드 단말기, 카드 리더기"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The cashier asked the customer to insert her card into the *card reader*.",
+  "exKo": "계산원은 고객에게 카드 단말기에 카드를 꽂아 달라고 요청했다.",
+  "col": [
+   {
+    "e": "insert a card into the card reader",
+    "k": "카드 단말기에 카드를 꽂다"
+   },
+   {
+    "e": "the card reader is not working",
+    "k": "카드 단말기가 작동하지 않는다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "payment terminal"
+  ],
+  "ant": "",
+  "tip": "Part 3에서 'The card reader isn't working.'처럼 결제 문제 상황으로 자주 나오며, payment terminal로 바꿔 쓰인다.",
+  "q": {
+   "s": "Customers can pay by tapping their phones on the card ------- next to the register.",
+   "o": [
+    "reading",
+    "reader",
+    "readable",
+    "read"
+   ],
+   "a": 1,
+   "k": "휴대폰을 갖다 대는 기기는 card reader(카드 단말기)이므로 reader가 정답이다. reading(독서), readable(읽기 쉬운), read(읽다)는 기기를 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "swipe",
+  "pos": "v",
+  "m": [
+   "(카드를) 긁다, 대다"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "Employees must *swipe* their ID badges to enter the research lab.",
+  "exKo": "직원들은 연구실에 들어가려면 사원증을 단말기에 대야 한다.",
+  "col": [
+   {
+    "e": "swipe a card",
+    "k": "카드를 긁다"
+   },
+   {
+    "e": "swipe a badge",
+    "k": "출입증을 대다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "scan"
+  ],
+  "ant": "",
+  "tip": "카드를 긁는 swipe, 끼워 넣는 insert, 갖다 대는 tap을 구분해 두면 Part 3 결제 상황 문제에 도움이 된다.",
+  "q": {
+   "s": "If inserting the card does not work, please ------- it through the slot on the side of the machine.",
+   "o": [
+    "swap",
+    "swipe",
+    "sway",
+    "swing"
+   ],
+   "a": 1,
+   "k": "카드를 투입구에 통과시켜 읽히는 동작은 swipe(긁다)이다. swap(바꾸다), sway(흔들다), swing(휘두르다)은 카드 결제 동작이 아니다."
+  }
+ },
+ {
+  "w": "chip",
+  "pos": "n",
+  "m": [
+   "(카드·전자 기기의) 칩"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "New credit cards contain a *chip* that makes them harder to copy.",
+  "exKo": "새 신용 카드에는 복제를 더 어렵게 만드는 칩이 들어 있다.",
+  "col": [
+   {
+    "e": "chip card",
+    "k": "칩 카드"
+   },
+   {
+    "e": "computer chip",
+    "k": "컴퓨터 칩"
+   },
+   {
+    "e": "chip-enabled",
+    "k": "칩이 내장된"
+   }
+  ],
+  "der": [
+   {
+    "w": "microchip",
+    "pos": "n",
+    "m": "마이크로칩"
+   }
+  ],
+  "para": [
+   "microchip"
+  ],
+  "ant": "",
+  "tip": "chip card(칩 카드)는 단말기에 꽂는 insert 방식과 짝을 이루며, Part 7 제조 지문에서는 '반도체 칩'이라는 뜻으로도 나온다.",
+  "q": {
+   "s": "Because his card has a damaged -------, Mr. Wade must ask the bank for a replacement.",
+   "o": [
+    "cheque",
+    "coin",
+    "chip",
+    "clip"
+   ],
+   "a": 2,
+   "k": "카드에 들어 있다가 손상되어 재발급을 받아야 하는 부품은 chip이다. coin(동전), cheque(수표), clip(클립)은 카드의 부품이 아니다."
+  }
+ },
+ {
+  "w": "cash back",
+  "pos": "phr",
+  "m": [
+   "캐시백, 현금 환급"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The credit card offers 2 percent *cash back* on all grocery purchases.",
+  "exKo": "그 신용 카드는 모든 식료품 구매에 대해 2퍼센트 캐시백을 제공한다.",
+  "col": [
+   {
+    "e": "earn cash back",
+    "k": "캐시백을 받다"
+   },
+   {
+    "e": "cash back rewards",
+    "k": "캐시백 혜택"
+   }
+  ],
+  "der": [],
+  "para": [
+   "rebate",
+   "refund"
+  ],
+  "ant": "",
+  "tip": "구매 금액의 일부를 돌려주는 혜택으로, Part 7 카드 광고에서 rebate나 rewards로 바꿔 표현된다.",
+  "q": {
+   "s": "Members earn 3 percent cash ------- on every purchase made at participating restaurants.",
+   "o": [
+    "off",
+    "back",
+    "out",
+    "over"
+   ],
+   "a": 1,
+   "k": "구매 금액의 일부를 현금으로 돌려받는 혜택은 cash back이므로 back이 정답이다. cash off, cash out, cash over는 이 의미를 나타내지 못한다."
+  }
+ },
+ {
+  "w": "bounce",
+  "pos": "v",
+  "m": [
+   "(수표가) 부도나다",
+   "튀다, 반등하다"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The supplier's check *bounced* because there was not enough money in the account.",
+  "exKo": "계좌에 잔고가 부족해 공급업체의 수표가 부도 처리되었다.",
+  "col": [
+   {
+    "e": "bounced check",
+    "k": "부도 수표"
+   },
+   {
+    "e": "bounce back",
+    "k": "회복하다, 반등하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "be rejected",
+   "be returned"
+  ],
+  "ant": "",
+  "tip": "bounce back(회복하다)은 경제 기사에서 '(매출·경기가) 반등하다'라는 뜻으로 자주 쓰인다. 수표가 부도나면 a check bounces라고 자동사로 쓴다.",
+  "q": {
+   "s": "A $35 fee will be charged for any check that ------- because the account lacks sufficient funds.",
+   "o": [
+    "bounds",
+    "bounces",
+    "bends",
+    "blinks"
+   ],
+   "a": 1,
+   "k": "잔고 부족으로 수표가 '부도나다'는 bounce로 표현하므로 bounces가 정답이다. bounds(껑충 뛰다), bends(구부러지다), blinks(깜박이다)는 수표와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "stop payment",
+  "pos": "phr",
+  "m": [
+   "지급 정지"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Mr. Kim asked his bank to *stop payment* on the check after it was lost in the mail.",
+  "exKo": "Kim 씨는 수표가 우편 배송 중 분실되자 은행에 그 수표의 지급 정지를 요청했다.",
+  "col": [
+   {
+    "e": "stop payment on a check",
+    "k": "수표 지급을 정지하다"
+   },
+   {
+    "e": "stop-payment request",
+    "k": "지급 정지 요청"
+   }
+  ],
+  "der": [],
+  "para": [
+   "cancel the payment"
+  ],
+  "ant": "",
+  "tip": "stop payment on + 수표 형태로 쓰이며, 명사 앞에서는 stop-payment request처럼 하이픈을 붙인다.",
+  "q": {
+   "s": "If a check is lost or stolen, you can ask the bank to ------- payment on it for a small fee.",
+   "o": [
+    "leave",
+    "close",
+    "finish",
+    "stop"
+   ],
+   "a": 3,
+   "k": "분실·도난 수표에 대해 은행에 요청하는 것은 '지급 정지'(stop payment)이므로 stop이 정답이다. close, finish, leave는 payment on과 결합해 지급 정지를 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "scam",
+  "pos": "n",
+  "m": [
+   "사기"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The bank warned customers about an email *scam* that asks for account passwords.",
+  "exKo": "은행은 계좌 비밀번호를 요구하는 이메일 사기에 대해 고객들에게 경고했다.",
+  "col": [
+   {
+    "e": "phone scam",
+    "k": "전화 사기"
+   },
+   {
+    "e": "fall for a scam",
+    "k": "사기에 걸려들다"
+   },
+   {
+    "e": "online scam",
+    "k": "온라인 사기"
+   }
+  ],
+  "der": [
+   {
+    "w": "scammer",
+    "pos": "n",
+    "m": "사기꾼"
+   }
+  ],
+  "para": [
+   "fraud",
+   "con"
+  ],
+  "ant": "",
+  "tip": "가산명사로 a scam, phone/email scam처럼 쓰이며, Part 7 은행 공지에서 fraud로 바꿔 쓰인다. 동사로는 '사기를 치다'라는 뜻이다.",
+  "q": {
+   "s": "Callers who claim to be from the tax office and demand immediate payment are often part of a -------.",
+   "o": [
+    "scan",
+    "scam",
+    "scar",
+    "scale"
+   ],
+   "a": 1,
+   "k": "세무서를 사칭해 즉시 납부를 요구하는 전화는 '사기'의 일부이므로 scam이 정답이다. scan(정밀 검사), scar(흉터), scale(규모, 저울)은 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "suspicious",
+  "pos": "adj",
+  "m": [
+   "의심스러운, 수상한"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The system automatically flags *suspicious* transactions for review by the security team.",
+  "exKo": "그 시스템은 의심스러운 거래를 자동으로 표시해 보안팀이 검토하게 한다.",
+  "col": [
+   {
+    "e": "suspicious activity",
+    "k": "수상한 활동"
+   },
+   {
+    "e": "suspicious package",
+    "k": "수상한 소포"
+   },
+   {
+    "e": "be suspicious of",
+    "k": "~을 의심하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "suspect",
+    "pos": "v",
+    "m": "의심하다"
+   },
+   {
+    "w": "suspicion",
+    "pos": "n",
+    "m": "의심"
+   },
+   {
+    "w": "suspiciously",
+    "pos": "adv",
+    "m": "수상하게"
+   }
+  ],
+  "para": [
+   "questionable",
+   "unusual"
+  ],
+  "ant": "",
+  "tip": "be suspicious of(~을 의심하다)처럼 전치사 of와 쓰인다. 명사 suspicion, 부사 suspiciously와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "The security team was alerted after the system detected ------- activity on several employee accounts.",
+   "o": [
+    "suspicious",
+    "suspicion",
+    "suspiciously",
+    "suspecting"
+   ],
+   "a": 0,
+   "k": "명사 activity를 수식하는 형용사 자리이므로 suspicious가 정답이다. suspicion은 명사, suspiciously는 부사이고, suspecting(의심하는)은 활동을 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "remittance",
+  "pos": "n",
+  "m": [
+   "송금(액)"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Each *remittance* should include the invoice number so that payments can be matched correctly.",
+  "exKo": "결제 내역이 정확히 대조될 수 있도록 모든 송금에는 청구서 번호가 기재되어야 한다.",
+  "col": [
+   {
+    "e": "remittance advice",
+    "k": "송금 통지서"
+   },
+   {
+    "e": "international remittance",
+    "k": "해외 송금"
+   }
+  ],
+  "der": [
+   {
+    "w": "remit",
+    "pos": "v",
+    "m": "송금하다"
+   }
+  ],
+  "para": [
+   "payment",
+   "transfer"
+  ],
+  "ant": "",
+  "tip": "동사 remit(송금하다)의 명사형으로, 청구서에 'Please remit payment by ~'(~까지 송금 바람) 형태로 자주 나온다.",
+  "q": {
+   "s": "Workers abroad often send money home through international ------- services.",
+   "o": [
+    "remit",
+    "remittance",
+    "remitted",
+    "remits"
+   ],
+   "a": 1,
+   "k": "services 앞에서 '송금 서비스'라는 복합명사를 이루는 remittance가 정답이다. remit, remits는 동사이고, remitted(송금된)는 services를 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "recurring",
+  "pos": "adj",
+  "m": [
+   "반복되는, 정기적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Members can set up *recurring* payments so their fees are charged automatically each month.",
+  "exKo": "회원은 정기 결제를 설정해 매달 회비가 자동으로 청구되게 할 수 있다.",
+  "col": [
+   {
+    "e": "recurring payment",
+    "k": "정기 결제"
+   },
+   {
+    "e": "recurring problem",
+    "k": "반복되는 문제"
+   }
+  ],
+  "der": [
+   {
+    "w": "recur",
+    "pos": "v",
+    "m": "재발하다, 반복되다"
+   },
+   {
+    "w": "recurrence",
+    "pos": "n",
+    "m": "재발"
+   }
+  ],
+  "para": [
+   "regular",
+   "repeated"
+  ],
+  "ant": "",
+  "tip": "동사 recur(재발하다)는 자동사라 수동태로 쓰지 않는다. recurring payment(정기 결제), recurring issue(반복되는 문제) 형태로 자주 나온다.",
+  "q": {
+   "s": "The technician was called back to fix a ------- problem with the office printer.",
+   "o": [
+    "recurring",
+    "recurrence",
+    "recur",
+    "recurs"
+   ],
+   "a": 0,
+   "k": "관사 a와 명사 problem 사이 형용사 자리이므로 recurring이 정답이다. recurrence는 명사이고, recur, recurs는 동사다."
+  }
+ },
+ {
+  "w": "cosigner",
+  "pos": "n",
+  "m": [
+   "공동 서명인, 연대 보증인"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Students without a credit history may need a *cosigner* to rent an apartment.",
+  "exKo": "신용 기록이 없는 학생은 아파트를 임차하려면 연대 보증인이 필요할 수 있다.",
+  "col": [
+   {
+    "e": "act as a cosigner",
+    "k": "연대 보증인이 되다"
+   },
+   {
+    "e": "cosigner on a loan",
+    "k": "대출의 연대 보증인"
+   }
+  ],
+  "der": [
+   {
+    "w": "cosign",
+    "pos": "v",
+    "m": "공동 서명하다, 연대 보증하다"
+   }
+  ],
+  "para": [
+   "guarantor"
+  ],
+  "ant": "",
+  "tip": "대출자가 갚지 못하면 대신 책임지는 사람으로 guarantor와 바꿔 쓰인다. 동사 cosign(공동 서명하다)도 함께 알아 두자.",
+  "q": {
+   "s": "Because she had no credit history, Ms. Lopez asked her father to act as a ------- on her car loan.",
+   "o": [
+    "cosigned",
+    "cosign",
+    "cosigner",
+    "cosigning"
+   ],
+   "a": 2,
+   "k": "act as a 뒤에는 역할을 나타내는 사람명사가 와야 하므로 cosigner가 정답이다. cosign은 동사이고, cosigned, cosigning은 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "guarantor",
+  "pos": "n",
+  "m": [
+   "보증인"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The landlord requires a *guarantor* for tenants whose income is below a certain level.",
+  "exKo": "집주인은 소득이 일정 수준에 못 미치는 세입자에게 보증인을 요구한다.",
+  "col": [
+   {
+    "e": "act as a guarantor",
+    "k": "보증인이 되다"
+   },
+   {
+    "e": "guarantor for a loan",
+    "k": "대출 보증인"
+   }
+  ],
+  "der": [
+   {
+    "w": "guarantee",
+    "pos": "n",
+    "m": "보증, 보증서"
+   }
+  ],
+  "para": [
+   "cosigner",
+   "sponsor"
+  ],
+  "ant": "",
+  "tip": "사람명사 guarantor와 명사·동사로 모두 쓰이는 guarantee(보증, 보증하다)를 구분하는 품사 문제가 나온다.",
+  "q": {
+   "s": "The bank will approve the loan only if a ------- agrees to repay it should the borrower fail to do so.",
+   "o": [
+    "guaranteeing",
+    "guarantee",
+    "guaranteed",
+    "guarantor"
+   ],
+   "a": 3,
+   "k": "agrees의 주어로 대신 갚겠다고 동의할 '사람'이 필요하므로 guarantor가 정답이다. guarantee(보증, 보증서)는 사람이 아니고, guaranteed, guaranteeing은 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "frugal",
+  "pos": "adj",
+  "m": [
+   "검소한, 알뜰한"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "By living a *frugal* lifestyle, the couple saved enough to start their own business.",
+  "exKo": "검소하게 생활한 덕분에 그 부부는 자기 사업을 시작할 만큼의 돈을 모았다.",
+  "col": [
+   {
+    "e": "frugal lifestyle",
+    "k": "검소한 생활 방식"
+   },
+   {
+    "e": "be frugal with",
+    "k": "~을 아껴 쓰다"
+   }
+  ],
+  "der": [
+   {
+    "w": "frugality",
+    "pos": "n",
+    "m": "검소함"
+   },
+   {
+    "w": "frugally",
+    "pos": "adv",
+    "m": "검소하게"
+   }
+  ],
+  "para": [
+   "thrifty",
+   "economical"
+  ],
+  "ant": "extravagant",
+  "tip": "be frugal with(~을 아껴 쓰다)처럼 전치사 with와 쓰이며, Part 7에서 thrifty, economical로 바꿔 쓰인다.",
+  "q": {
+   "s": "Being ------- with office supplies has helped the department stay well under budget this year.",
+   "o": [
+    "generous",
+    "lavish",
+    "frugal",
+    "wasteful"
+   ],
+   "a": 2,
+   "k": "예산을 크게 밑돌 수 있었던 이유는 사무용품을 '아껴 쓴' 것이므로 frugal이 정답이다. lavish(헤픈), generous(후한), wasteful(낭비하는)은 예산 절감과 반대된다."
+  }
+ },
+ {
+  "w": "thrifty",
+  "pos": "adj",
+  "m": [
+   "절약하는, 알뜰한"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "*Thrifty* shoppers often compare prices online before making a purchase.",
+  "exKo": "알뜰한 쇼핑객들은 구매하기 전에 온라인으로 가격을 비교하는 경우가 많다.",
+  "col": [
+   {
+    "e": "thrifty shopper",
+    "k": "알뜰한 쇼핑객"
+   },
+   {
+    "e": "thrifty habits",
+    "k": "절약하는 습관"
+   }
+  ],
+  "der": [
+   {
+    "w": "thrift",
+    "pos": "n",
+    "m": "절약"
+   },
+   {
+    "w": "thrift store",
+    "pos": "n",
+    "m": "중고품 할인 매장"
+   }
+  ],
+  "para": [
+   "frugal",
+   "economical"
+  ],
+  "ant": "wasteful",
+  "tip": "형용사 thrifty와 명사 thrift(절약)를 구분한다. thrift store(중고품 할인 매장)도 함께 알아 두자.",
+  "q": {
+   "s": "The store's new discount program is designed to attract ------- customers looking for bargains.",
+   "o": [
+    "thrift",
+    "thrifty",
+    "thriftily",
+    "thriftiness"
+   ],
+   "a": 1,
+   "k": "명사 customers를 수식하는 형용사 자리이므로 thrifty가 정답이다. thrift, thriftiness는 명사이고, thriftily는 부사다."
+  }
+ },
+ {
+  "w": "economize",
+  "pos": "v",
+  "m": [
+   "절약하다, 아끼다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The firm *economized* by moving its staff into a smaller office.",
+  "exKo": "그 회사는 직원들을 더 작은 사무실로 옮겨 비용을 절약했다.",
+  "col": [
+   {
+    "e": "economize on",
+    "k": "~을 절약하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "economical",
+    "pos": "adj",
+    "m": "경제적인, 절약하는"
+   },
+   {
+    "w": "economic",
+    "pos": "adj",
+    "m": "경제의"
+   }
+  ],
+  "para": [
+   "cut costs",
+   "save"
+  ],
+  "ant": "",
+  "tip": "자동사로 economize on + 명사(~을 아끼다) 형태로 쓴다. economic(경제의)과 economical(절약하는)의 구분도 단골 문제다.",
+  "q": {
+   "s": "To ------- on fuel, the delivery company is replacing its older trucks with hybrid models.",
+   "o": [
+    "economical",
+    "economy",
+    "economize",
+    "economics"
+   ],
+   "a": 2,
+   "k": "to부정사 자리에 동사원형이 필요하고 on과 함께 '~을 절약하다'라는 뜻이 되므로 economize가 정답이다. economy, economics는 명사, economical은 형용사다."
+  }
+ },
+ {
+  "w": "fixed-rate",
+  "pos": "adj",
+  "m": [
+   "고정 금리의"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "A *fixed-rate* mortgage keeps monthly payments the same for the entire loan term.",
+  "exKo": "고정 금리 주택 담보 대출은 대출 기간 내내 월 상환액이 똑같이 유지된다.",
+  "col": [
+   {
+    "e": "fixed-rate loan",
+    "k": "고정 금리 대출"
+   },
+   {
+    "e": "fixed-rate mortgage",
+    "k": "고정 금리 주택 담보 대출"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "adjustable-rate",
+  "tip": "변동 금리는 adjustable-rate 또는 variable-rate라고 한다. 명사 앞에서 하이픈을 붙여 쓰는 복합 형용사다.",
+  "q": {
+   "s": "With a ------- loan, borrowers are protected if interest rates rise in the future.",
+   "o": [
+    "high-end",
+    "adjustable-rate",
+    "first-rate",
+    "fixed-rate"
+   ],
+   "a": 3,
+   "k": "금리가 올라도 대출자가 보호받는 것은 '고정 금리' 대출이므로 fixed-rate가 정답이다. adjustable-rate(변동 금리의)는 금리 상승 시 부담이 커지고, first-rate(일류의), high-end(고급의)는 대출의 금리 조건을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "taxable",
+  "pos": "adj",
+  "m": [
+   "과세 대상의, 세금이 붙는"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Bonuses and commissions are considered *taxable* income in most countries.",
+  "exKo": "대부분의 나라에서 상여금과 판매 수수료는 과세 대상 소득으로 간주된다.",
+  "col": [
+   {
+    "e": "taxable income",
+    "k": "과세 소득"
+   },
+   {
+    "e": "taxable goods",
+    "k": "과세 품목"
+   }
+  ],
+  "der": [
+   {
+    "w": "tax",
+    "pos": "n",
+    "m": "세금"
+   },
+   {
+    "w": "taxation",
+    "pos": "n",
+    "m": "과세, 조세"
+   }
+  ],
+  "para": [
+   "subject to tax"
+  ],
+  "ant": "tax-exempt",
+  "tip": "taxable income(과세 소득)이 대표 표현이며, 반대말은 tax-exempt, tax-free(면세의)이다.",
+  "q": {
+   "s": "Interest earned on savings accounts is generally ------- and must be reported on your tax return.",
+   "o": [
+    "taxing",
+    "taxation",
+    "taxable",
+    "taxes"
+   ],
+   "a": 2,
+   "k": "be동사 뒤 보어 자리에서 '과세 대상인'이라는 뜻의 형용사 taxable이 정답이다. taxation, taxes는 명사이고, taxing(힘든, 부담이 큰)은 의미가 맞지 않는다."
+  }
+ }
+]

@@ -1,0 +1,2138 @@
+[
+ {
+  "w": "consideration",
+  "pos": "n",
+  "m": [
+   "고려, 검토",
+   "배려"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "After careful *consideration*, the board approved the budget for the new facility.",
+  "exKo": "신중한 검토 끝에 이사회는 새 시설의 예산을 승인했다.",
+  "col": [
+   {
+    "e": "take A into consideration",
+    "k": "A를 고려하다"
+   },
+   {
+    "e": "under consideration",
+    "k": "검토 중인"
+   },
+   {
+    "e": "careful consideration",
+    "k": "신중한 검토"
+   }
+  ],
+  "der": [
+   {
+    "w": "consider",
+    "pos": "v",
+    "m": "고려하다"
+   },
+   {
+    "w": "considerate",
+    "pos": "adj",
+    "m": "사려 깊은"
+   },
+   {
+    "w": "considerable",
+    "pos": "adj",
+    "m": "상당한"
+   }
+  ],
+  "para": [
+   "thought",
+   "deliberation"
+  ],
+  "ant": "",
+  "tip": "take A into consideration(A를 고려하다), under consideration(검토 중인)이 대표 표현이며, considerate(사려 깊은)·considerable(상당한)과의 구분이 출제된다.",
+  "q": {
+   "s": "The proposal to open a branch in Toronto is currently under -------.",
+   "o": [
+    "considerate",
+    "considerable",
+    "consideration",
+    "considering"
+   ],
+   "a": 2,
+   "k": "전치사 under의 목적어 자리에 명사가 와서 under consideration(검토 중인)을 이루므로 consideration이 정답이다. considerate와 considerable은 형용사이고, considering은 under 뒤에서 이런 의미를 만들지 못한다."
+  }
+ },
+ {
+  "w": "implication",
+  "pos": "n",
+  "m": [
+   "(예상되는) 영향, 결과",
+   "함축, 암시"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Analysts are discussing the *implications* of the new trade agreement for local manufacturers.",
+  "exKo": "분석가들은 새 무역 협정이 지역 제조업체에 미칠 영향을 논의하고 있다.",
+  "col": [
+   {
+    "e": "implications for",
+    "k": "~에 미치는 영향"
+   },
+   {
+    "e": "financial implications",
+    "k": "재정적 영향"
+   },
+   {
+    "e": "serious implications",
+    "k": "심각한 영향"
+   }
+  ],
+  "der": [
+   {
+    "w": "imply",
+    "pos": "v",
+    "m": "암시하다, 의미하다"
+   },
+   {
+    "w": "implicit",
+    "pos": "adj",
+    "m": "암시적인"
+   }
+  ],
+  "para": [
+   "consequence",
+   "effect"
+  ],
+  "ant": "",
+  "tip": "주로 복수형 implications for(~에 미치는 영향)로 쓰이며, 동사 imply(암시하다)와 형태가 비슷한 implement(시행하다)를 혼동하지 말아야 한다.",
+  "q": {
+   "s": "The committee will review the financial ------- of the proposed merger before voting.",
+   "o": [
+    "implements",
+    "implications",
+    "impressions",
+    "imports"
+   ],
+   "a": 1,
+   "k": "합병안이 재정에 미칠 '영향'을 검토한다는 뜻이므로 implications가 정답이다. implements(도구), impressions(인상), imports(수입품)는 financial과 결합해 이런 의미를 만들지 못한다."
+  }
+ },
+ {
+  "w": "vulnerable",
+  "pos": "adj",
+  "m": [
+   "취약한, 영향받기 쉬운"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Outdated software can leave a company's network *vulnerable* to cyberattacks.",
+  "exKo": "구식 소프트웨어는 회사 네트워크를 사이버 공격에 취약한 상태로 만들 수 있다.",
+  "col": [
+   {
+    "e": "vulnerable to",
+    "k": "~에 취약한"
+   },
+   {
+    "e": "vulnerable groups",
+    "k": "취약 계층"
+   }
+  ],
+  "der": [
+   {
+    "w": "vulnerability",
+    "pos": "n",
+    "m": "취약성"
+   }
+  ],
+  "para": [
+   "susceptible",
+   "exposed"
+  ],
+  "ant": "",
+  "tip": "be vulnerable to(~에 취약하다)처럼 전치사 to와 짝을 이루며, 명사 vulnerability(취약성)가 보안 관련 지문에 나온다.",
+  "q": {
+   "s": "Small retailers are particularly ------- to sudden changes in consumer spending.",
+   "o": [
+    "valuable",
+    "vulnerable",
+    "variable",
+    "venerable"
+   ],
+   "a": 1,
+   "k": "소규모 소매업체가 소비 지출의 급변에 특히 '취약하다'는 뜻으로 to와 짝을 이루는 vulnerable이 정답이다. valuable(귀중한), variable(변동이 심한), venerable(존경받는)은 to 이하와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "sole",
+  "pos": "adj",
+  "m": [
+   "유일한, 단독의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Mr. Tanaka is the *sole* owner of the consulting firm.",
+  "exKo": "Tanaka 씨는 그 컨설팅 회사의 단독 소유주이다.",
+  "col": [
+   {
+    "e": "sole purpose",
+    "k": "유일한 목적"
+   },
+   {
+    "e": "sole responsibility",
+    "k": "단독 책임"
+   },
+   {
+    "e": "sole proprietor",
+    "k": "개인 사업자"
+   }
+  ],
+  "der": [
+   {
+    "w": "solely",
+    "pos": "adv",
+    "m": "오로지, 단독으로"
+   }
+  ],
+  "para": [
+   "only",
+   "single"
+  ],
+  "ant": "",
+  "tip": "명사 앞에만 쓰는 형용사로(the sole reason), 부사 solely(오로지, 단독으로)는 be solely responsible for 형태로 Part 5에 나온다.",
+  "q": {
+   "s": "The ------- purpose of the meeting is to finalize next year's marketing budget.",
+   "o": [
+    "solely",
+    "isolated",
+    "sole",
+    "lonely"
+   ],
+   "a": 2,
+   "k": "관사와 명사 purpose 사이에서 '유일한'이라는 뜻으로 수식하는 형용사 sole이 정답이다. solely는 부사라 명사를 수식할 수 없고, isolated(고립된)와 lonely(외로운)는 purpose와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "additional",
+  "pos": "adj",
+  "m": [
+   "추가의"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Guests can request *additional* towels by calling the front desk.",
+  "exKo": "투숙객은 프런트에 전화해 수건을 추가로 요청할 수 있다.",
+  "col": [
+   {
+    "e": "additional charge",
+    "k": "추가 요금"
+   },
+   {
+    "e": "additional information",
+    "k": "추가 정보"
+   }
+  ],
+  "der": [
+   {
+    "w": "add",
+    "pos": "v",
+    "m": "더하다"
+   },
+   {
+    "w": "addition",
+    "pos": "n",
+    "m": "추가"
+   },
+   {
+    "w": "additionally",
+    "pos": "adv",
+    "m": "게다가"
+   }
+  ],
+  "para": [
+   "extra",
+   "further"
+  ],
+  "ant": "",
+  "tip": "명사 앞 형용사 자리에 들어가며, in addition to(~에 더하여)의 명사 addition, 부사 additionally와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "For ------- information about the event, please visit our website.",
+   "o": [
+    "addition",
+    "additionally",
+    "additional",
+    "add"
+   ],
+   "a": 2,
+   "k": "명사 information을 수식하는 형용사 자리이므로 additional이 정답이다. addition은 명사, additionally는 부사, add는 동사다."
+  }
+ },
+ {
+  "w": "various",
+  "pos": "adj",
+  "m": [
+   "다양한, 여러 가지의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The workshop covers *various* topics, from budgeting to time management.",
+  "exKo": "그 워크숍은 예산 편성부터 시간 관리까지 다양한 주제를 다룬다.",
+  "col": [
+   {
+    "e": "various types of",
+    "k": "여러 종류의"
+   },
+   {
+    "e": "for various reasons",
+    "k": "여러 이유로"
+   }
+  ],
+  "der": [
+   {
+    "w": "vary",
+    "pos": "v",
+    "m": "다르다, 다양하다"
+   },
+   {
+    "w": "variety",
+    "pos": "n",
+    "m": "다양성"
+   },
+   {
+    "w": "variation",
+    "pos": "n",
+    "m": "변화, 차이"
+   }
+  ],
+  "para": [
+   "diverse",
+   "different"
+  ],
+  "ant": "",
+  "tip": "various 뒤에는 복수명사가 오며(various products), 명사 variety는 a variety of + 복수명사 형태로 쓰인다.",
+  "q": {
+   "s": "The store sells ------- kinds of kitchen appliances at discounted prices.",
+   "o": [
+    "various",
+    "variety",
+    "vary",
+    "variously"
+   ],
+   "a": 0,
+   "k": "복수명사 kinds를 수식하는 형용사가 필요하므로 various가 정답이다. variety는 명사로 a variety of 형태로 써야 하고, vary는 동사, variously는 부사다."
+  }
+ },
+ {
+  "w": "variety",
+  "pos": "n",
+  "m": [
+   "다양성",
+   "여러 가지, 종류"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The cafeteria offers a *variety* of vegetarian dishes every day.",
+  "exKo": "그 구내식당은 매일 다양한 채식 요리를 제공한다.",
+  "col": [
+   {
+    "e": "a (wide) variety of",
+    "k": "(매우) 다양한"
+   },
+   {
+    "e": "variety of options",
+    "k": "다양한 선택지"
+   }
+  ],
+  "der": [
+   {
+    "w": "various",
+    "pos": "adj",
+    "m": "다양한"
+   },
+   {
+    "w": "vary",
+    "pos": "v",
+    "m": "다르다, 다양하다"
+   }
+  ],
+  "para": [
+   "range",
+   "selection"
+  ],
+  "ant": "",
+  "tip": "a variety of + 복수명사(다양한 ~)가 핵심 구조이며, 관사 a와 전치사 of 사이 명사 자리에 various를 넣는 오답이 자주 나온다.",
+  "q": {
+   "s": "Participants can choose from a wide ------- of workshops on the second day.",
+   "o": [
+    "various",
+    "variety",
+    "vary",
+    "varied"
+   ],
+   "a": 1,
+   "k": "관사 a와 형용사 wide 뒤, 전치사 of 앞은 명사 자리이므로 variety가 정답이다. various와 varied는 형용사, vary는 동사다."
+  }
+ },
+ {
+  "w": "specific",
+  "pos": "adj",
+  "m": [
+   "구체적인, 특정한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The job posting lists the *specific* skills required for the position.",
+  "exKo": "채용 공고에는 그 직책에 필요한 구체적인 기술이 나열되어 있다.",
+  "col": [
+   {
+    "e": "specific to",
+    "k": "~에 특유한"
+   },
+   {
+    "e": "specific instructions",
+    "k": "구체적인 지시"
+   },
+   {
+    "e": "specific requirements",
+    "k": "구체적인 요건"
+   }
+  ],
+  "der": [
+   {
+    "w": "specifically",
+    "pos": "adv",
+    "m": "특히, 구체적으로"
+   },
+   {
+    "w": "specify",
+    "pos": "v",
+    "m": "명시하다"
+   },
+   {
+    "w": "specification",
+    "pos": "n",
+    "m": "사양, 명세"
+   }
+  ],
+  "para": [
+   "particular",
+   "precise"
+  ],
+  "ant": "general",
+  "tip": "specific to(~에 특유한)처럼 to와 짝을 이루며, 부사 specifically, 동사 specify(명시하다), 명사 specifications(사양)와 함께 품사 문제로 나온다.",
+  "q": {
+   "s": "Each department has its own ------- guidelines for handling customer complaints.",
+   "o": [
+    "specify",
+    "specific",
+    "specifically",
+    "specification"
+   ],
+   "a": 1,
+   "k": "소유격 its own과 명사 guidelines 사이에서 명사를 수식하는 형용사가 필요하므로 specific이 정답이다. specify는 동사, specifically는 부사, specification은 명사다."
+  }
+ },
+ {
+  "w": "conducive",
+  "pos": "adj",
+  "m": [
+   "(~에) 도움이 되는, 좋은 환경을 만드는"
+  ],
+  "tier": 3,
+  "parts": [
+   5
+  ],
+  "ex": "The quiet, well-lit office is *conducive* to productive work.",
+  "exKo": "조용하고 조명이 밝은 그 사무실은 생산적인 업무에 도움이 된다.",
+  "col": [
+   {
+    "e": "conducive to",
+    "k": "~에 도움이 되는"
+   }
+  ],
+  "der": [],
+  "para": [
+   "favorable",
+   "helpful"
+  ],
+  "ant": "",
+  "tip": "반드시 be conducive to(~에 도움이 되다) 형태로 전치사 to와 함께 쓰이며, to 뒤에는 명사나 동명사가 온다.",
+  "q": {
+   "s": "The redesigned break room is more ------- to relaxation and casual conversation.",
+   "o": [
+    "conducive",
+    "conductive",
+    "constructive",
+    "conclusive"
+   ],
+   "a": 0,
+   "k": "be conducive to(~에 도움이 되다) 구조로 '휴식과 대화에 더 좋은 환경'이라는 뜻이 되므로 conducive가 정답이다. conductive(전도성의), constructive(건설적인), conclusive(결정적인)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "unforeseen",
+  "pos": "adj",
+  "m": [
+   "예기치 못한, 뜻밖의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The concert was postponed due to *unforeseen* technical problems.",
+  "exKo": "그 콘서트는 예기치 못한 기술적 문제로 연기되었다.",
+  "col": [
+   {
+    "e": "unforeseen circumstances",
+    "k": "예기치 못한 사정"
+   },
+   {
+    "e": "unforeseen delays",
+    "k": "예상치 못한 지연"
+   }
+  ],
+  "der": [
+   {
+    "w": "foresee",
+    "pos": "v",
+    "m": "예견하다"
+   },
+   {
+    "w": "foreseeable",
+    "pos": "adj",
+    "m": "예측할 수 있는"
+   }
+  ],
+  "para": [
+   "unexpected",
+   "unanticipated"
+  ],
+  "ant": "",
+  "tip": "due to unforeseen circumstances(예기치 못한 사정으로)가 취소·연기 공지의 단골 표현이며, Part 7에서 unexpected로 바꿔 표현된다.",
+  "q": {
+   "s": "Due to ------- circumstances, the grand opening has been rescheduled for next Saturday.",
+   "o": [
+    "unforeseen",
+    "unemployed",
+    "unaffordable",
+    "unaccompanied"
+   ],
+   "a": 0,
+   "k": "개업식 일정이 바뀐 이유로 '예기치 못한' 사정이 자연스러우므로 unforeseen이 정답이다. unemployed(실직한), unaffordable(감당할 수 없는), unaccompanied(동반자 없는)는 circumstances와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "noteworthy",
+  "pos": "adj",
+  "m": [
+   "주목할 만한, 눈에 띄는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "One *noteworthy* feature of the new phone is its long battery life.",
+  "exKo": "새 휴대 전화의 주목할 만한 특징 하나는 긴 배터리 수명이다.",
+  "col": [
+   {
+    "e": "noteworthy achievement",
+    "k": "주목할 만한 성과"
+   },
+   {
+    "e": "it is noteworthy that",
+    "k": "~라는 점이 주목할 만하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "note",
+    "pos": "v",
+    "m": "주목하다, 언급하다"
+   }
+  ],
+  "para": [
+   "notable",
+   "remarkable"
+  ],
+  "ant": "",
+  "tip": "notable과 같은 뜻으로, it is noteworthy that(~라는 점은 주목할 만하다) 구문이 Part 7 기사에 나온다.",
+  "q": {
+   "s": "Ms. Ellis was honored for her ------- contributions to the field of urban planning.",
+   "o": [
+    "noteworthy",
+    "trustworthy",
+    "notified",
+    "noting"
+   ],
+   "a": 0,
+   "k": "도시 계획 분야에 대한 '주목할 만한' 공헌으로 상을 받았다는 뜻이므로 noteworthy가 정답이다. trustworthy(믿을 수 있는)는 주로 사람을 수식하고, notified(통지받은)와 noting은 contributions와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "effective",
+  "pos": "adj",
+  "m": [
+   "효과적인",
+   "(법·규정이) 시행되는, 발효되는"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The revised dress code will become *effective* on July 1.",
+  "exKo": "개정된 복장 규정은 7월 1일부터 시행된다.",
+  "col": [
+   {
+    "e": "effective immediately",
+    "k": "즉시 시행되는"
+   },
+   {
+    "e": "effective as of",
+    "k": "~부터 시행되는"
+   },
+   {
+    "e": "cost-effective",
+    "k": "비용 효율이 높은"
+   }
+  ],
+  "der": [
+   {
+    "w": "effectively",
+    "pos": "adv",
+    "m": "효과적으로"
+   },
+   {
+    "w": "effectiveness",
+    "pos": "n",
+    "m": "효과"
+   },
+   {
+    "w": "effect",
+    "pos": "n",
+    "m": "효과, 영향"
+   }
+  ],
+  "para": [
+   "in effect",
+   "successful"
+  ],
+  "ant": "",
+  "tip": "'효과적인' 외에 effective immediately(즉시 시행), Effective + 날짜(~부터 시행)라는 뜻이 공지문에 자주 나온다.",
+  "q": {
+   "s": "------- next month, all visitors must sign in at the security desk.",
+   "o": [
+    "Effect",
+    "Effective",
+    "Effectively",
+    "Effectiveness"
+   ],
+   "a": 1,
+   "k": "Effective + 시점은 '~부터 시행되어'라는 뜻의 관용 표현이므로 Effective가 정답이다. Effect와 Effectiveness는 명사, Effectively는 '효과적으로'라는 부사라 시점 표현과 결합하지 않는다."
+  }
+ },
+ {
+  "w": "successful",
+  "pos": "adj",
+  "m": [
+   "성공적인",
+   "합격한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *successful* candidate will begin work on September 1.",
+  "exKo": "합격자는 9월 1일부터 근무를 시작한다.",
+  "col": [
+   {
+    "e": "successful candidate",
+    "k": "합격자"
+   },
+   {
+    "e": "be successful in",
+    "k": "~에 성공하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "success",
+    "pos": "n",
+    "m": "성공"
+   },
+   {
+    "w": "succeed",
+    "pos": "v",
+    "m": "성공하다"
+   },
+   {
+    "w": "successfully",
+    "pos": "adv",
+    "m": "성공적으로"
+   }
+  ],
+  "para": [
+   "winning",
+   "selected"
+  ],
+  "ant": "unsuccessful",
+  "tip": "successful candidate(합격자)가 채용 공고에 자주 나오며, success·succeed·successfully와의 품사 구분, '연속적인'이라는 뜻의 successive와의 혼동이 출제된다.",
+  "q": {
+   "s": "The product launch was so ------- that the company doubled its production target.",
+   "o": [
+    "success",
+    "successful",
+    "successive",
+    "successfully"
+   ],
+   "a": 1,
+   "k": "so ~ that 구문에서 be동사 뒤 보어 자리에 들어가는 형용사가 필요하고 '성공적인'이라는 뜻이어야 하므로 successful이 정답이다. success는 명사, successive는 '연속적인', successfully는 부사다."
+  }
+ },
+ {
+  "w": "pertinent",
+  "pos": "adj",
+  "m": [
+   "관련 있는, 적절한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Applicants must submit all *pertinent* documents along with the application form.",
+  "exKo": "지원자는 지원서와 함께 관련 서류를 모두 제출해야 한다.",
+  "col": [
+   {
+    "e": "pertinent to",
+    "k": "~와 관련 있는"
+   },
+   {
+    "e": "pertinent information",
+    "k": "관련 정보"
+   }
+  ],
+  "der": [
+   {
+    "w": "pertain",
+    "pos": "v",
+    "m": "(~에) 관련되다"
+   }
+  ],
+  "para": [
+   "relevant",
+   "related"
+  ],
+  "ant": "irrelevant",
+  "tip": "relevant와 같은 뜻으로 pertinent to(~와 관련된)처럼 to와 짝을 이루며, 동사 pertain to(~에 관련되다)도 함께 알아 둔다.",
+  "q": {
+   "s": "Only information ------- to the investigation will be shared with the press.",
+   "o": [
+    "permanent",
+    "persistent",
+    "pertinent",
+    "perceptive"
+   ],
+   "a": 2,
+   "k": "조사와 '관련된' 정보만 공개된다는 뜻으로 to와 짝을 이루는 pertinent가 정답이다. permanent(영구적인), persistent(끈질긴), perceptive(통찰력 있는)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "opportunity",
+  "pos": "n",
+  "m": [
+   "기회"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The internship gives students an *opportunity* to gain practical experience.",
+  "exKo": "그 인턴십은 학생들에게 실무 경험을 쌓을 기회를 준다.",
+  "col": [
+   {
+    "e": "opportunity to do",
+    "k": "~할 기회"
+   },
+   {
+    "e": "take the opportunity to do",
+    "k": "이 기회를 빌려 ~하다"
+   },
+   {
+    "e": "job opportunity",
+    "k": "취업 기회"
+   }
+  ],
+  "der": [
+   {
+    "w": "opportune",
+    "pos": "adj",
+    "m": "시의적절한"
+   }
+  ],
+  "para": [
+   "chance",
+   "opening"
+  ],
+  "ant": "",
+  "tip": "opportunity to do / opportunity for + 명사 구조로 쓰이며, take this opportunity to thank(이 기회를 빌려 감사하다)가 연설문에 자주 나온다.",
+  "q": {
+   "s": "I would like to take this ------- to thank everyone who helped organize the event.",
+   "o": [
+    "possibility",
+    "probability",
+    "availability",
+    "opportunity"
+   ],
+   "a": 3,
+   "k": "take this opportunity to do는 '이 기회를 빌려 ~하다'라는 관용 표현이므로 opportunity가 정답이다. possibility(가능성), probability(확률), availability(이용 가능성)는 take와 결합해 이런 뜻을 만들지 못한다."
+  }
+ },
+ {
+  "w": "option",
+  "pos": "n",
+  "m": [
+   "선택(권), 선택지"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Customers have the *option* of paying in monthly installments.",
+  "exKo": "고객은 월 할부로 지불하는 방법을 선택할 수 있다.",
+  "col": [
+   {
+    "e": "have the option of -ing",
+    "k": "~할 선택권이 있다"
+   },
+   {
+    "e": "option to do",
+    "k": "~할 선택권"
+   },
+   {
+    "e": "payment options",
+    "k": "결제 방법"
+   }
+  ],
+  "der": [
+   {
+    "w": "optional",
+    "pos": "adj",
+    "m": "선택적인"
+   },
+   {
+    "w": "opt",
+    "pos": "v",
+    "m": "선택하다"
+   }
+  ],
+  "para": [
+   "choice",
+   "alternative"
+  ],
+  "ant": "",
+  "tip": "have the option of -ing / option to do 구조이며, 형용사 optional(선택의)과 동사 opt for/to(~을 선택하다)가 함께 출제된다.",
+  "q": {
+   "s": "Employees now have the ------- of working from home two days a week.",
+   "o": [
+    "optional",
+    "option",
+    "opt",
+    "optionally"
+   ],
+   "a": 1,
+   "k": "정관사 the와 전치사 of 사이는 명사 자리이므로 option이 정답이다. optional은 형용사, opt는 동사, optionally는 부사다."
+  }
+ },
+ {
+  "w": "advantage",
+  "pos": "n",
+  "m": [
+   "이점, 장점"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "One *advantage* of the new location is its proximity to the train station.",
+  "exKo": "새 장소의 한 가지 이점은 기차역과 가깝다는 것이다.",
+  "col": [
+   {
+    "e": "take advantage of",
+    "k": "~을 이용하다"
+   },
+   {
+    "e": "competitive advantage",
+    "k": "경쟁 우위"
+   },
+   {
+    "e": "advantage over",
+    "k": "~보다 나은 점"
+   }
+  ],
+  "der": [
+   {
+    "w": "advantageous",
+    "pos": "adj",
+    "m": "유리한"
+   }
+  ],
+  "para": [
+   "benefit",
+   "strength"
+  ],
+  "ant": "disadvantage",
+  "tip": "take advantage of(~을 이용하다), advantage over(~보다 나은 점)가 핵심이며, 형용사 advantageous(유리한)도 품사 문제로 나온다.",
+  "q": {
+   "s": "Members are encouraged to take ------- of the discounts offered during the holiday season.",
+   "o": [
+    "advance",
+    "advantageous",
+    "adventure",
+    "advantage"
+   ],
+   "a": 3,
+   "k": "take advantage of(~을 이용하다)를 이루는 명사 advantage가 정답이다. advance(진보, 선불)와 adventure(모험)는 take ~ of와 결합하지 않고, advantageous는 형용사다."
+  }
+ },
+ {
+  "w": "attention",
+  "pos": "n",
+  "m": [
+   "주의, 주목",
+   "관심"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The manager drew everyone's *attention* to the revised safety guidelines.",
+  "exKo": "관리자는 개정된 안전 지침에 모든 사람의 주의를 환기시켰다.",
+  "col": [
+   {
+    "e": "pay attention to",
+    "k": "~에 주의를 기울이다"
+   },
+   {
+    "e": "attention to detail",
+    "k": "세부 사항에 대한 꼼꼼함"
+   },
+   {
+    "e": "for the attention of",
+    "k": "~ 앞(수신인)"
+   }
+  ],
+  "der": [
+   {
+    "w": "attend",
+    "pos": "v",
+    "m": "참석하다, 주의하다"
+   },
+   {
+    "w": "attentive",
+    "pos": "adj",
+    "m": "주의 깊은"
+   },
+   {
+    "w": "attentively",
+    "pos": "adv",
+    "m": "주의 깊게"
+   }
+  ],
+  "para": [
+   "notice",
+   "focus"
+  ],
+  "ant": "",
+  "tip": "pay attention to, attention to detail(꼼꼼함)처럼 to와 짝을 이루며, 형용사 attentive(주의 깊은)와의 구분도 출제된다.",
+  "q": {
+   "s": "Successful applicants must demonstrate strong ------- to detail.",
+   "o": [
+    "attention",
+    "attentive",
+    "attend",
+    "attentively"
+   ],
+   "a": 0,
+   "k": "형용사 strong의 수식을 받으며 demonstrate의 목적어가 되는 명사가 필요하므로 attention이 정답이다. attentive는 형용사, attend는 동사, attentively는 부사다."
+  }
+ },
+ {
+  "w": "purpose",
+  "pos": "n",
+  "m": [
+   "목적, 용도"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The *purpose* of this e-mail is to confirm your reservation for next Tuesday.",
+  "exKo": "이 이메일의 목적은 다음 주 화요일 예약을 확인하는 것이다.",
+  "col": [
+   {
+    "e": "for the purpose of",
+    "k": "~할 목적으로"
+   },
+   {
+    "e": "on purpose",
+    "k": "고의로"
+   },
+   {
+    "e": "main purpose",
+    "k": "주된 목적"
+   }
+  ],
+  "der": [
+   {
+    "w": "purposely",
+    "pos": "adv",
+    "m": "일부러"
+   }
+  ],
+  "para": [
+   "aim",
+   "goal",
+   "objective"
+  ],
+  "ant": "",
+  "tip": "Part 3·4·7에서 'What is the purpose of the e-mail?'(이메일의 목적은?) 문제로 단골 출제되며, for the purpose of -ing(~할 목적으로) 형태로 쓰인다.",
+  "q": {
+   "s": "The company's vehicles may be used only for business -------.",
+   "o": [
+    "proposals",
+    "prospects",
+    "purposes",
+    "promises"
+   ],
+   "a": 2,
+   "k": "회사 차량은 업무 '용도'로만 쓸 수 있다는 뜻이므로 for business purposes를 이루는 purposes가 정답이다. proposals(제안), prospects(전망), promises(약속)는 for business 뒤에서 용도를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "entire",
+  "pos": "adj",
+  "m": [
+   "전체의, 온"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *entire* staff attended the farewell party for Mr. Wong.",
+  "exKo": "전 직원이 Wong 씨의 송별회에 참석했다.",
+  "col": [
+   {
+    "e": "the entire staff",
+    "k": "전 직원"
+   },
+   {
+    "e": "the entire process",
+    "k": "전 과정"
+   }
+  ],
+  "der": [
+   {
+    "w": "entirely",
+    "pos": "adv",
+    "m": "완전히"
+   },
+   {
+    "w": "entirety",
+    "pos": "n",
+    "m": "전체"
+   }
+  ],
+  "para": [
+   "whole",
+   "complete"
+  ],
+  "ant": "",
+  "tip": "the entire + 단수명사(the entire building)로 쓰며, 부사 entirely(완전히)와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "The ------- building will be closed on Sunday for electrical repairs.",
+   "o": [
+    "entirely",
+    "entire",
+    "entirety",
+    "all"
+   ],
+   "a": 1,
+   "k": "관사 The와 명사 building 사이에서 명사를 수식하는 형용사가 필요하므로 entire가 정답이다. entirely는 부사, entirety는 명사이며, all은 the 앞에 와야 한다(all the building)."
+  }
+ },
+ {
+  "w": "inherent",
+  "pos": "adj",
+  "m": [
+   "내재하는, 고유의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Every investment carries some *inherent* risk, so spreading your money across assets is wise.",
+  "exKo": "모든 투자에는 어느 정도 내재된 위험이 있으므로 자금을 여러 자산에 분산하는 것이 현명하다.",
+  "col": [
+   {
+    "e": "inherent in",
+    "k": "~에 내재하는"
+   },
+   {
+    "e": "inherent risk",
+    "k": "내재된 위험"
+   }
+  ],
+  "der": [
+   {
+    "w": "inherently",
+    "pos": "adv",
+    "m": "본질적으로"
+   }
+  ],
+  "para": [
+   "built-in",
+   "intrinsic"
+  ],
+  "ant": "",
+  "tip": "be inherent in(~에 내재하다)처럼 전치사 in과 짝을 이루며, inherit(상속하다)과 형태가 비슷해 혼동하기 쉽다.",
+  "q": {
+   "s": "There are certain risks ------- in launching a product in an unfamiliar market.",
+   "o": [
+    "inherited",
+    "adherent",
+    "inherent",
+    "coherent"
+   ],
+   "a": 2,
+   "k": "낯선 시장에 제품을 출시하는 일에 '내재된' 위험이라는 뜻으로 in과 짝을 이루는 inherent가 정답이다. inherited(상속받은), adherent(지지자, 들러붙는), coherent(일관성 있는)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "significant",
+  "pos": "adj",
+  "m": [
+   "상당한, 중요한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company reported a *significant* increase in online sales last quarter.",
+  "exKo": "그 회사는 지난 분기에 온라인 매출이 크게 증가했다고 발표했다.",
+  "col": [
+   {
+    "e": "significant increase",
+    "k": "상당한 증가"
+   },
+   {
+    "e": "significant impact",
+    "k": "중대한 영향"
+   },
+   {
+    "e": "statistically significant",
+    "k": "통계적으로 유의미한"
+   }
+  ],
+  "der": [
+   {
+    "w": "significantly",
+    "pos": "adv",
+    "m": "상당히"
+   },
+   {
+    "w": "significance",
+    "pos": "n",
+    "m": "중요성"
+   }
+  ],
+  "para": [
+   "considerable",
+   "substantial",
+   "important"
+  ],
+  "ant": "insignificant",
+  "tip": "significant increase(상당한 증가)처럼 증감 명사를 수식하며, 부사 significantly는 increase significantly처럼 동사를 수식한다.",
+  "q": {
+   "s": "The new scheduling software has had a ------- impact on productivity.",
+   "o": [
+    "significant",
+    "significantly",
+    "significance",
+    "signify"
+   ],
+   "a": 0,
+   "k": "관사 a와 명사 impact 사이에서 명사를 수식하는 형용사가 필요하므로 significant가 정답이다. significantly는 부사, significance는 명사, signify는 동사다."
+  }
+ },
+ {
+  "w": "detailed",
+  "pos": "adj",
+  "m": [
+   "상세한, 자세한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The contractor sent us a *detailed* estimate for the kitchen remodeling.",
+  "exKo": "시공업자는 우리에게 주방 리모델링에 대한 상세한 견적서를 보냈다.",
+  "col": [
+   {
+    "e": "detailed information",
+    "k": "상세한 정보"
+   },
+   {
+    "e": "detailed description",
+    "k": "상세한 설명"
+   }
+  ],
+  "der": [
+   {
+    "w": "detail",
+    "pos": "n",
+    "m": "세부 사항"
+   }
+  ],
+  "para": [
+   "thorough",
+   "comprehensive"
+  ],
+  "ant": "",
+  "tip": "분사형 형용사로 명사 앞에서 수식하며, in detail(자세히)의 명사 detail과 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Please refer to the attached document for a ------- description of the job duties.",
+   "o": [
+    "detail",
+    "detailing",
+    "details",
+    "detailed"
+   ],
+   "a": 3,
+   "k": "관사 a와 명사 description 사이에서 '상세한'이라는 뜻으로 수식하는 형용사 detailed가 정답이다. detail과 details는 명사, detailing은 '세부적으로 설명하는'이라는 능동 형태라 이 자리에 맞지 않는다."
+  }
+ },
+ {
+  "w": "limited",
+  "pos": "adj",
+  "m": [
+   "제한된, 한정된"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Parking is *limited*, so employees are encouraged to use public transportation.",
+  "exKo": "주차 공간이 한정되어 있어 직원들에게 대중교통 이용이 권장된다.",
+  "col": [
+   {
+    "e": "for a limited time",
+    "k": "한정 기간 동안"
+   },
+   {
+    "e": "limited edition",
+    "k": "한정판"
+   },
+   {
+    "e": "limited budget",
+    "k": "한정된 예산"
+   }
+  ],
+  "der": [
+   {
+    "w": "limit",
+    "pos": "n",
+    "m": "한도, 제한"
+   },
+   {
+    "w": "limitation",
+    "pos": "n",
+    "m": "제약, 한계"
+   }
+  ],
+  "para": [
+   "restricted"
+  ],
+  "ant": "unlimited",
+  "tip": "for a limited time(한정 기간 동안), limited edition(한정판)이 광고에 자주 나오며, 명사 limit, limitation과의 품사 구분이 출제된다.",
+  "q": {
+   "s": "This special offer is available for a ------- time only.",
+   "o": [
+    "limited",
+    "limit",
+    "limiting",
+    "limitation"
+   ],
+   "a": 0,
+   "k": "관사 a와 명사 time 사이에서 '한정된'이라는 뜻으로 수식하는 형용사 limited가 정답이다. limit과 limitation은 명사, limiting은 '제한하는'이라는 능동 의미라 맞지 않는다."
+  }
+ },
+ {
+  "w": "multiple",
+  "pos": "adj",
+  "m": [
+   "다수의, 여러"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The software allows *multiple* users to edit a document at the same time.",
+  "exKo": "그 소프트웨어는 여러 사용자가 동시에 하나의 문서를 편집할 수 있게 한다.",
+  "col": [
+   {
+    "e": "multiple locations",
+    "k": "여러 지점"
+   },
+   {
+    "e": "multiple copies",
+    "k": "여러 부"
+   }
+  ],
+  "der": [
+   {
+    "w": "multiply",
+    "pos": "v",
+    "m": "곱하다, 증가하다"
+   },
+   {
+    "w": "multiplication",
+    "pos": "n",
+    "m": "곱셈, 증가"
+   }
+  ],
+  "para": [
+   "several",
+   "numerous"
+  ],
+  "ant": "single",
+  "tip": "multiple 뒤에는 복수명사가 오며(multiple copies), Part 7에서 several, numerous로 바꿔 표현된다.",
+  "q": {
+   "s": "Kessler Logistics operates warehouses in ------- locations across the country.",
+   "o": [
+    "much",
+    "every",
+    "each",
+    "multiple"
+   ],
+   "a": 3,
+   "k": "복수 가산명사 locations를 수식할 수 있는 것은 multiple이다. much는 불가산명사를, every와 each는 단수명사를 수식한다."
+  }
+ },
+ {
+  "w": "ongoing",
+  "pos": "adj",
+  "m": [
+   "진행 중인"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The *ongoing* renovation has temporarily closed the hotel's swimming pool.",
+  "exKo": "진행 중인 보수 공사로 호텔 수영장이 일시적으로 폐쇄되었다.",
+  "col": [
+   {
+    "e": "ongoing project",
+    "k": "진행 중인 프로젝트"
+   },
+   {
+    "e": "ongoing negotiations",
+    "k": "진행 중인 협상"
+   },
+   {
+    "e": "ongoing support",
+    "k": "지속적인 지원"
+   }
+  ],
+  "der": [],
+  "para": [
+   "current",
+   "continuing",
+   "in progress"
+  ],
+  "ant": "",
+  "tip": "명사 앞에서 수식하며(ongoing project), Part 7에서 in progress, under way로 바꿔 표현된다.",
+  "q": {
+   "s": "Due to ------- construction on Main Street, buses will use an alternate route this week.",
+   "o": [
+    "outgoing",
+    "outspoken",
+    "ongoing",
+    "onward"
+   ],
+   "a": 2,
+   "k": "Main Street에서 '진행 중인' 공사 때문에 버스가 우회한다는 뜻이므로 ongoing이 정답이다. outgoing(외향적인, 떠나는), outspoken(거침없이 말하는), onward(앞으로 나아가는)는 construction과 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "overall",
+  "pos": "adj",
+  "m": [
+   "전반적인, 전체의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *overall* cost of the conference came in well under budget.",
+  "exKo": "그 콘퍼런스의 전체 비용은 예산을 크게 밑돌았다.",
+  "col": [
+   {
+    "e": "overall cost",
+    "k": "총비용"
+   },
+   {
+    "e": "overall performance",
+    "k": "전반적인 실적"
+   }
+  ],
+  "der": [],
+  "para": [
+   "total",
+   "general"
+  ],
+  "ant": "",
+  "tip": "형용사(전반적인)와 부사(전반적으로)로 모두 쓰이며, Part 7에서 general, total로 바꿔 표현된다.",
+  "q": {
+   "s": "The ------- performance of the sales department improved considerably this year.",
+   "o": [
+    "overly",
+    "overdue",
+    "overall",
+    "overhead"
+   ],
+   "a": 2,
+   "k": "관사 The와 명사 performance 사이에서 '전반적인'이라는 뜻으로 수식하는 overall이 정답이다. overly는 부사, overdue(기한이 지난)와 overhead(머리 위의)는 performance와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "concern",
+  "pos": "n",
+  "m": [
+   "우려, 걱정",
+   "관심사"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Several employees raised *concerns* about the new overtime policy.",
+  "exKo": "몇몇 직원이 새 초과 근무 정책에 대해 우려를 제기했다.",
+  "col": [
+   {
+    "e": "raise concerns",
+    "k": "우려를 제기하다"
+   },
+   {
+    "e": "concern about/over",
+    "k": "~에 대한 우려"
+   },
+   {
+    "e": "of concern",
+    "k": "중요한, 걱정되는"
+   }
+  ],
+  "der": [
+   {
+    "w": "concerned",
+    "pos": "adj",
+    "m": "걱정하는, 관련된"
+   },
+   {
+    "w": "concerning",
+    "pos": "prep",
+    "m": "~에 관하여"
+   }
+  ],
+  "para": [
+   "worry",
+   "issue"
+  ],
+  "ant": "",
+  "tip": "명사 concern about(~에 대한 우려), 형용사 be concerned about(걱정하다)·be concerned with(~와 관련 있다), 전치사 concerning(~에 관하여)이 함께 출제된다.",
+  "q": {
+   "s": "Rising material costs are a major ------- for small manufacturers.",
+   "o": [
+    "concerned",
+    "concerning",
+    "to concern",
+    "concern"
+   ],
+   "a": 3,
+   "k": "관사 a와 형용사 major 뒤 명사 자리이므로 concern이 정답이다. concerned는 형용사, concerning은 전치사·분사, to concern은 to부정사라 이 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "factor",
+  "pos": "n",
+  "m": [
+   "요인, 요소"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Price is the most important *factor* for many customers when choosing a hotel.",
+  "exKo": "많은 고객에게 호텔을 고를 때 가격은 가장 중요한 요인이다.",
+  "col": [
+   {
+    "e": "key factor in",
+    "k": "~의 주요 요인"
+   },
+   {
+    "e": "contributing factor",
+    "k": "기여 요인"
+   },
+   {
+    "e": "factor in",
+    "k": "~을 계산에 넣다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "element",
+   "consideration"
+  ],
+  "ant": "",
+  "tip": "key/major factor in(~의 주요 요인)처럼 in과 짝을 이루며, 동사 factor in은 '~을 고려하다, 계산에 넣다'라는 뜻이다.",
+  "q": {
+   "s": "Location was a key ------- in the company's decision to build a factory in Ohio.",
+   "o": [
+    "faction",
+    "fraction",
+    "factor",
+    "facility"
+   ],
+   "a": 2,
+   "k": "공장 건설 결정의 주요 '요인'이라는 뜻이므로 factor가 정답이다. faction(파벌), fraction(일부, 분수), facility(시설)는 decision과 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "outcome",
+  "pos": "n",
+  "m": [
+   "결과"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Both sides were pleased with the *outcome* of the negotiations.",
+  "exKo": "양측은 협상 결과에 만족했다.",
+  "col": [
+   {
+    "e": "outcome of",
+    "k": "~의 결과"
+   },
+   {
+    "e": "positive outcome",
+    "k": "긍정적인 결과"
+   },
+   {
+    "e": "final outcome",
+    "k": "최종 결과"
+   }
+  ],
+  "der": [],
+  "para": [
+   "result",
+   "consequence"
+  ],
+  "ant": "",
+  "tip": "outcome of(~의 결과)처럼 of와 짝을 이루며 Part 7에서 result로 바꿔 표현되고, income(수입), output(생산량) 등 형태가 비슷한 단어가 오답으로 나온다.",
+  "q": {
+   "s": "The ------- of the board meeting will be announced to all employees tomorrow.",
+   "o": [
+    "income",
+    "outcome",
+    "output",
+    "outlet"
+   ],
+   "a": 1,
+   "k": "이사회 회의의 '결과'를 발표한다는 뜻이므로 outcome이 정답이다. income(수입), output(생산량), outlet(매장, 콘센트)은 meeting과 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "resource",
+  "pos": "n",
+  "m": [
+   "자원, 자료",
+   "재원"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The website offers free *resources* for small business owners.",
+  "exKo": "그 웹사이트는 소기업 경영자를 위한 무료 자료를 제공한다.",
+  "col": [
+   {
+    "e": "human resources",
+    "k": "인사부, 인적 자원"
+   },
+   {
+    "e": "natural resources",
+    "k": "천연자원"
+   },
+   {
+    "e": "allocate resources",
+    "k": "자원을 배분하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "resourceful",
+    "pos": "adj",
+    "m": "수완이 좋은"
+   }
+  ],
+  "para": [
+   "material",
+   "asset"
+  ],
+  "ant": "",
+  "tip": "human resources(인사부)처럼 주로 복수형으로 쓰이며, 형용사 resourceful(수완이 좋은)과 resource를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "The company plans to allocate more ------- to research and development next year.",
+   "o": [
+    "sources",
+    "recourses",
+    "resources",
+    "resorts"
+   ],
+   "a": 2,
+   "k": "연구 개발에 더 많은 '자원'을 배분한다는 뜻이므로 resources가 정답이다. sources(출처), recourses(의지할 수단), resorts(휴양지)는 allocate의 목적어로 맞지 않는다."
+  }
+ },
+ {
+  "w": "comparable",
+  "pos": "adj",
+  "m": [
+   "비교할 만한, 비슷한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new model offers *comparable* performance at a much lower price.",
+  "exKo": "새 모델은 훨씬 낮은 가격에 비슷한 성능을 제공한다.",
+  "col": [
+   {
+    "e": "comparable to/with",
+    "k": "~에 필적하는"
+   },
+   {
+    "e": "comparable price",
+    "k": "비슷한 가격"
+   }
+  ],
+  "der": [
+   {
+    "w": "compare",
+    "pos": "v",
+    "m": "비교하다"
+   },
+   {
+    "w": "comparison",
+    "pos": "n",
+    "m": "비교"
+   },
+   {
+    "w": "comparative",
+    "pos": "adj",
+    "m": "비교의, 상대적인"
+   }
+  ],
+  "para": [
+   "similar",
+   "equivalent"
+  ],
+  "ant": "",
+  "tip": "comparable to(~에 필적하는)처럼 to와 짝을 이루며, comparative(비교의, 상대적인)와 의미를 혼동하지 않도록 한다.",
+  "q": {
+   "s": "Our prices are ------- to those of other leading suppliers in the region.",
+   "o": [
+    "comparative",
+    "comparable",
+    "comparison",
+    "compare"
+   ],
+   "a": 1,
+   "k": "be동사 뒤 보어 자리에서 to와 짝을 이루어 '~와 비슷한'이라는 뜻이 되는 형용사 comparable이 정답이다. comparative는 '비교의, 상대적인'이라 to와 쓰지 않고, comparison은 명사, compare는 동사다."
+  }
+ },
+ {
+  "w": "equivalent",
+  "pos": "adj",
+  "m": [
+   "동등한, ~에 상당하는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Applicants must hold a bachelor's degree or an *equivalent* qualification.",
+  "exKo": "지원자는 학사 학위 또는 그에 상당하는 자격을 갖추어야 한다.",
+  "col": [
+   {
+    "e": "equivalent to",
+    "k": "~와 동등한"
+   },
+   {
+    "e": "the equivalent of",
+    "k": "~에 상당하는 것"
+   }
+  ],
+  "der": [
+   {
+    "w": "equivalence",
+    "pos": "n",
+    "m": "동등함"
+   }
+  ],
+  "para": [
+   "equal",
+   "comparable"
+  ],
+  "ant": "",
+  "tip": "형용사 be equivalent to(~와 같다)와 명사 the equivalent of(~에 상당하는 것)가 모두 쓰이므로 품사에 따른 전치사 짝을 구분해야 한다.",
+  "q": {
+   "s": "The year-end bonus is ------- to one month's salary.",
+   "o": [
+    "equivalence",
+    "equivalently",
+    "equate",
+    "equivalent"
+   ],
+   "a": 3,
+   "k": "be동사 뒤 보어 자리에서 to와 짝을 이루는 형용사 equivalent가 정답이다. equivalence는 명사, equivalently는 부사, equate는 동사다."
+  }
+ },
+ {
+  "w": "noticeable",
+  "pos": "adj",
+  "m": [
+   "눈에 띄는, 두드러진"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "There has been a *noticeable* improvement in customer satisfaction since March.",
+  "exKo": "3월 이후 고객 만족도가 눈에 띄게 개선되었다.",
+  "col": [
+   {
+    "e": "noticeable difference",
+    "k": "눈에 띄는 차이"
+   },
+   {
+    "e": "noticeable improvement",
+    "k": "두드러진 개선"
+   }
+  ],
+  "der": [
+   {
+    "w": "notice",
+    "pos": "v",
+    "m": "알아차리다"
+   },
+   {
+    "w": "noticeably",
+    "pos": "adv",
+    "m": "눈에 띄게"
+   }
+  ],
+  "para": [
+   "visible",
+   "marked"
+  ],
+  "ant": "",
+  "tip": "noticeable improvement(눈에 띄는 개선)처럼 명사 앞에서 쓰이며, 부사 noticeably(눈에 띄게)는 비교급이나 동사를 수식한다.",
+  "q": {
+   "s": "Customers reported a ------- difference in sound quality after the software update.",
+   "o": [
+    "noticeably",
+    "notice",
+    "noticing",
+    "noticeable"
+   ],
+   "a": 3,
+   "k": "관사 a와 명사 difference 사이에서 명사를 수식하는 형용사가 필요하므로 noticeable이 정답이다. noticeably는 부사, notice는 명사·동사, noticing은 동명사·분사다."
+  }
+ },
+ {
+  "w": "prominent",
+  "pos": "adj",
+  "m": [
+   "저명한, 유명한",
+   "눈에 잘 띄는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A *prominent* economist will deliver the keynote speech at the conference.",
+  "exKo": "한 저명한 경제학자가 그 학회에서 기조연설을 할 것이다.",
+  "col": [
+   {
+    "e": "prominent figure",
+    "k": "저명인사"
+   },
+   {
+    "e": "prominent location",
+    "k": "눈에 잘 띄는 위치"
+   }
+  ],
+  "der": [
+   {
+    "w": "prominence",
+    "pos": "n",
+    "m": "두드러짐, 명성"
+   },
+   {
+    "w": "prominently",
+    "pos": "adv",
+    "m": "눈에 잘 띄게"
+   }
+  ],
+  "para": [
+   "well-known",
+   "leading",
+   "eminent"
+  ],
+  "ant": "",
+  "tip": "'저명한' 외에 prominent location(눈에 잘 띄는 위치)처럼 '두드러진'이라는 뜻도 있으며, 부사 prominently는 be prominently displayed(눈에 잘 띄게 전시되다)로 출제된다.",
+  "q": {
+   "s": "The new posters were placed in ------- locations throughout the train station.",
+   "o": [
+    "prominent",
+    "prominently",
+    "prominence",
+    "promptly"
+   ],
+   "a": 0,
+   "k": "전치사 in 뒤 명사 locations를 수식하는 형용사가 필요하므로 prominent가 정답이다. prominently와 promptly는 부사, prominence는 명사다."
+  }
+ },
+ {
+  "w": "reputable",
+  "pos": "adj",
+  "m": [
+   "평판 좋은, 믿을 만한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Song hired a *reputable* moving company to transport her office furniture.",
+  "exKo": "Song 씨는 사무실 가구를 옮기기 위해 평판 좋은 이삿짐 업체를 고용했다.",
+  "col": [
+   {
+    "e": "reputable company",
+    "k": "평판 좋은 회사"
+   },
+   {
+    "e": "reputable dealer",
+    "k": "믿을 만한 판매상"
+   }
+  ],
+  "der": [
+   {
+    "w": "reputation",
+    "pos": "n",
+    "m": "평판"
+   },
+   {
+    "w": "reputed",
+    "pos": "adj",
+    "m": "~라고 알려진"
+   }
+  ],
+  "para": [
+   "respected",
+   "trusted"
+  ],
+  "ant": "disreputable",
+  "tip": "명사 reputation(평판)과 형용사 reputable(평판 좋은)의 품사 구분이 출제되며, Part 7에서 trusted, well-regarded로 바꿔 표현된다.",
+  "q": {
+   "s": "It is important to purchase used equipment from a ------- dealer.",
+   "o": [
+    "reputable",
+    "reputation",
+    "reputably",
+    "repute"
+   ],
+   "a": 0,
+   "k": "관사 a와 명사 dealer 사이에서 명사를 수식하는 형용사가 필요하므로 reputable이 정답이다. reputation과 repute는 명사, reputably는 부사다."
+  }
+ },
+ {
+  "w": "tangible",
+  "pos": "adj",
+  "m": [
+   "실질적인, 가시적인",
+   "유형의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new training program has produced *tangible* results in just six months.",
+  "exKo": "새 교육 프로그램은 불과 6개월 만에 가시적인 성과를 냈다.",
+  "col": [
+   {
+    "e": "tangible results",
+    "k": "가시적인 성과"
+   },
+   {
+    "e": "tangible benefits",
+    "k": "실질적인 이익"
+   },
+   {
+    "e": "tangible assets",
+    "k": "유형 자산"
+   }
+  ],
+  "der": [
+   {
+    "w": "intangible",
+    "pos": "adj",
+    "m": "무형의"
+   }
+  ],
+  "para": [
+   "concrete",
+   "measurable"
+  ],
+  "ant": "intangible",
+  "tip": "tangible results/benefits(가시적인 결과/이익)가 대표 표현이며, 회계 문맥의 tangible assets(유형 자산)와 반의어 intangible도 함께 출제된다.",
+  "q": {
+   "s": "Investors want to see ------- evidence that the company's restructuring plan is working.",
+   "o": [
+    "tangible",
+    "tangled",
+    "tender",
+    "tedious"
+   ],
+   "a": 0,
+   "k": "구조 조정 계획이 효과를 내고 있다는 '실질적인' 증거를 원한다는 뜻이므로 tangible이 정답이다. tangled(뒤엉킨), tender(부드러운), tedious(지루한)는 evidence와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "unprecedented",
+  "pos": "adj",
+  "m": [
+   "전례 없는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The start-up achieved *unprecedented* growth in its first year of operation.",
+  "exKo": "그 신생 기업은 운영 첫해에 전례 없는 성장을 이루었다.",
+  "col": [
+   {
+    "e": "unprecedented growth",
+    "k": "전례 없는 성장"
+   },
+   {
+    "e": "unprecedented demand",
+    "k": "전례 없는 수요"
+   },
+   {
+    "e": "on an unprecedented scale",
+    "k": "전례 없는 규모로"
+   }
+  ],
+  "der": [
+   {
+    "w": "precedent",
+    "pos": "n",
+    "m": "전례"
+   },
+   {
+    "w": "precede",
+    "pos": "v",
+    "m": "~에 앞서다"
+   }
+  ],
+  "para": [
+   "record-breaking",
+   "unparalleled"
+  ],
+  "ant": "",
+  "tip": "unprecedented demand/growth처럼 증가·규모 명사를 수식하며, 명사 precedent(전례)와 동사 precede(앞서다)도 함께 알아 둔다.",
+  "q": {
+   "s": "The release of the new game console led to ------- demand, and stores quickly ran out of stock.",
+   "o": [
+    "unoccupied",
+    "unemployed",
+    "uninhabited",
+    "unprecedented"
+   ],
+   "a": 3,
+   "k": "매장 재고가 금세 동날 만큼 '전례 없는' 수요라는 뜻이므로 unprecedented가 정답이다. unoccupied(비어 있는), unemployed(실직한), uninhabited(사람이 살지 않는)는 demand와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "worthwhile",
+  "pos": "adj",
+  "m": [
+   "가치 있는, 할 보람이 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Most participants found the leadership seminar *worthwhile* and informative.",
+  "exKo": "대부분의 참가자는 리더십 세미나가 유익하고 가치 있다고 생각했다.",
+  "col": [
+   {
+    "e": "worthwhile investment",
+    "k": "가치 있는 투자"
+   },
+   {
+    "e": "it is worthwhile to do",
+    "k": "~할 가치가 있다"
+   }
+  ],
+  "der": [
+   {
+    "w": "worth",
+    "pos": "prep",
+    "m": "~의 가치가 있는"
+   }
+  ],
+  "para": [
+   "valuable",
+   "beneficial"
+  ],
+  "ant": "",
+  "tip": "it is worthwhile to do/-ing(~할 가치가 있다) 구조로 쓰이며, 명사 앞에 쓸 수 없는 worth(be worth -ing)와 형태를 구분해야 한다.",
+  "q": {
+   "s": "Upgrading the office computers would be a ------- investment for the company.",
+   "o": [
+    "worth",
+    "worthily",
+    "worthiness",
+    "worthwhile"
+   ],
+   "a": 3,
+   "k": "관사 a와 명사 investment 사이에서 수식하는 형용사가 필요하므로 worthwhile이 정답이다. worth는 명사 앞에서 수식어로 쓰지 않고, worthily는 부사, worthiness는 명사다."
+  }
+ },
+ {
+  "w": "vital",
+  "pos": "adj",
+  "m": [
+   "필수적인, 매우 중요한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Regular maintenance is *vital* to the safe operation of the machinery.",
+  "exKo": "정기적인 정비는 기계를 안전하게 운행하는 데 필수적이다.",
+  "col": [
+   {
+    "e": "vital to/for",
+    "k": "~에 필수적인"
+   },
+   {
+    "e": "play a vital role in",
+    "k": "~에서 중요한 역할을 하다"
+   },
+   {
+    "e": "it is vital that",
+    "k": "~하는 것이 필수적이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "vitality",
+    "pos": "n",
+    "m": "활력"
+   }
+  ],
+  "para": [
+   "essential",
+   "crucial"
+  ],
+  "ant": "",
+  "tip": "be vital to/for(~에 필수적이다), play a vital role in(~에서 중요한 역할을 하다)이 자주 나오며, it is vital that 주어 + (should) 동사원형 구조도 출제된다.",
+  "q": {
+   "s": "Volunteers play a ------- role in the success of the annual charity marathon.",
+   "o": [
+    "vitally",
+    "vitality",
+    "vitalize",
+    "vital"
+   ],
+   "a": 3,
+   "k": "관사 a와 명사 role 사이에서 명사를 수식하는 형용사가 필요하므로 vital이 정답이다. vitally는 부사, vitality는 명사, vitalize는 동사다."
+  }
+ }
+]

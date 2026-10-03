@@ -1,0 +1,2014 @@
+[
+ {
+  "w": "audition",
+  "pos": "n",
+  "m": [
+   "오디션"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The theater company will hold *auditions* for its summer musical next Saturday.",
+  "exKo": "그 극단은 다음 주 토요일에 여름 뮤지컬 오디션을 연다.",
+  "col": [
+   {
+    "e": "hold auditions",
+    "k": "오디션을 열다"
+   },
+   {
+    "e": "audition for a role",
+    "k": "배역 오디션(을 보다)"
+   }
+  ],
+  "der": [
+   {
+    "w": "audience",
+    "pos": "n",
+    "m": "청중, 관객"
+   },
+   {
+    "w": "auditorium",
+    "pos": "n",
+    "m": "강당"
+   }
+  ],
+  "para": [
+   "tryout"
+  ],
+  "ant": "",
+  "tip": "명사(오디션)와 동사(오디션을 보다)로 모두 쓰이며 audition for a role처럼 전치사 for와 함께 쓴다. 철자가 비슷한 audit(회계 감사)와 혼동하지 말 것.",
+  "q": {
+   "s": "Singers who wish to join the community choir must sign up for an ------- by March 10.",
+   "o": [
+    "audience",
+    "auditorium",
+    "audit",
+    "audition"
+   ],
+   "a": 3,
+   "k": "합창단에 들어가려는 가수가 신청하는 것은 '오디션'이므로 audition이 정답이다. audit(회계 감사), audience(청중), auditorium(강당)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "symphony",
+  "pos": "n",
+  "m": [
+   "교향곡",
+   "교향악단"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The city's *symphony* will give a free concert in Riverside Park on Sunday evening.",
+  "exKo": "시 교향악단은 일요일 저녁 Riverside 공원에서 무료 공연을 한다.",
+  "col": [
+   {
+    "e": "symphony orchestra",
+    "k": "교향악단"
+   },
+   {
+    "e": "perform a symphony",
+    "k": "교향곡을 연주하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "symphonic",
+    "pos": "adj",
+    "m": "교향곡의, 교향악의"
+   }
+  ],
+  "para": [
+   "orchestra"
+  ],
+  "ant": "",
+  "tip": "작품인 '교향곡'과 symphony orchestra를 줄인 '교향악단'의 뜻이 모두 쓰이므로 Part 7에서는 문맥으로 구분한다.",
+  "q": {
+   "s": "Tickets for the ------- orchestra's holiday concert at Grand Hall go on sale on Monday.",
+   "o": [
+    "symptom",
+    "sympathy",
+    "symphony",
+    "synopsis"
+   ],
+   "a": 2,
+   "k": "orchestra와 결합해 '교향악단'을 이루는 symphony가 정답이다. symptom(증상), sympathy(동정), synopsis(개요)는 orchestra와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "book signing",
+  "pos": "phr",
+  "m": [
+   "저자 사인회"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The author will hold a *book signing* at Harper's Bookstore after her reading.",
+  "exKo": "그 작가는 낭독회가 끝난 후 Harper's 서점에서 사인회를 연다.",
+  "col": [
+   {
+    "e": "hold a book signing",
+    "k": "사인회를 열다"
+   },
+   {
+    "e": "attend a book signing",
+    "k": "사인회에 참석하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "sign",
+    "pos": "v",
+    "m": "서명하다"
+   }
+  ],
+  "para": [
+   "autograph session"
+  ],
+  "ant": "",
+  "tip": "Part 4 서점·도서관 행사 공지에 자주 나온다. 작가가 책에 '서명하다'는 sign이고, 유명인의 '사인'은 명사 autograph로 표현한다.",
+  "q": {
+   "s": "Copies of the novel will be available for purchase at the ------- following Ms. Okafor's talk.",
+   "o": [
+    "bookkeeping",
+    "book review",
+    "book signing",
+    "booking"
+   ],
+   "a": 2,
+   "k": "작가 강연 후 책을 구매할 수 있는 행사는 사인회이므로 book signing이 정답이다. book review(서평), bookkeeping(부기), booking(예약)은 책을 사는 장소가 될 수 없다."
+  }
+ },
+ {
+  "w": "farmers market",
+  "pos": "phr",
+  "m": [
+   "농산물 직판장",
+   "농민 장터"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Local growers sell fresh vegetables at the *farmers market* every Saturday morning.",
+  "exKo": "지역 재배 농민들은 매주 토요일 아침 농산물 직판장에서 신선한 채소를 판다.",
+  "col": [
+   {
+    "e": "weekly farmers market",
+    "k": "매주 열리는 농산물 장터"
+   },
+   {
+    "e": "hold a farmers market",
+    "k": "농산물 장터를 열다"
+   }
+  ],
+  "der": [
+   {
+    "w": "farming",
+    "pos": "n",
+    "m": "농업, 농사"
+   }
+  ],
+  "para": [
+   "outdoor market",
+   "farm stand"
+  ],
+  "ant": "",
+  "tip": "Part 3·4에서 대화 장소나 행사 장소를 묻는 문제의 단서로 나온다. farmers' market처럼 아포스트로피를 붙여 쓰기도 한다.",
+  "q": {
+   "s": "The ------- in Elm Square features fruit, honey, and baked goods from nearby farms.",
+   "o": [
+    "farmers market",
+    "stock market",
+    "market research",
+    "job market"
+   ],
+   "a": 0,
+   "k": "광장에서 인근 농장의 과일과 꿀, 빵을 파는 곳은 농산물 직판장이므로 farmers market이 정답이다. stock market(주식 시장), job market(고용 시장), market research(시장 조사)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "recital",
+  "pos": "n",
+  "m": [
+   "연주회",
+   "리사이틀",
+   "발표회"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The young pianist gave her first solo *recital* at the community arts center.",
+  "exKo": "그 젊은 피아니스트는 지역 예술 센터에서 첫 독주회를 열었다.",
+  "col": [
+   {
+    "e": "give a recital",
+    "k": "연주회를 열다"
+   },
+   {
+    "e": "piano recital",
+    "k": "피아노 연주회"
+   }
+  ],
+  "der": [
+   {
+    "w": "recite",
+    "pos": "v",
+    "m": "낭송하다, 열거하다"
+   },
+   {
+    "w": "recitation",
+    "pos": "n",
+    "m": "낭독, 암송"
+   }
+  ],
+  "para": [
+   "concert",
+   "performance"
+  ],
+  "ant": "",
+  "tip": "한 명 또는 소수의 연주자가 하는 연주회로 give/hold a recital로 쓴다. 동사 recite(낭송하다)와 형태를 혼동하지 말 것.",
+  "q": {
+   "s": "Students of the Linwood Music Academy will give a violin ------- in the main hall on Friday.",
+   "o": [
+    "reciting",
+    "recital",
+    "recite",
+    "recited"
+   ],
+   "a": 1,
+   "k": "관사 a와 명사 violin 뒤 명사 자리이고 give a recital(연주회를 열다)의 연어를 이루므로 recital이 정답이다. recite, recited, reciting은 동사 형태다."
+  }
+ },
+ {
+  "w": "perform",
+  "pos": "v",
+  "m": [
+   "공연하다, 연주하다",
+   "수행하다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The jazz quartet will *perform* in the hotel lobby every Friday evening this month.",
+  "exKo": "그 재즈 4중주단은 이번 달 매주 금요일 저녁 호텔 로비에서 공연한다.",
+  "col": [
+   {
+    "e": "perform a task",
+    "k": "업무를 수행하다"
+   },
+   {
+    "e": "perform on stage",
+    "k": "무대에서 공연하다"
+   },
+   {
+    "e": "perform well",
+    "k": "좋은 성과를 내다"
+   }
+  ],
+  "der": [
+   {
+    "w": "performance",
+    "pos": "n",
+    "m": "공연, 실적"
+   },
+   {
+    "w": "performer",
+    "pos": "n",
+    "m": "공연자, 연주자"
+   }
+  ],
+  "para": [
+   "play",
+   "carry out"
+  ],
+  "ant": "",
+  "tip": "'공연하다' 외에 perform maintenance(정비를 수행하다)처럼 '수행하다'의 뜻이 자주 나온다. 명사 performance는 '공연'과 '실적, 성과'를 모두 뜻한다.",
+  "q": {
+   "s": "Technicians will ------- routine maintenance on the elevators this weekend.",
+   "o": [
+    "performing",
+    "performer",
+    "performance",
+    "perform"
+   ],
+   "a": 3,
+   "k": "조동사 will 뒤에는 동사원형이 오므로 perform이 정답이다. perform maintenance는 '정비를 수행하다'라는 뜻이다. performance, performer는 명사, performing은 동명사·분사다."
+  }
+ },
+ {
+  "w": "genre",
+  "pos": "n",
+  "m": [
+   "장르",
+   "분야"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The radio station plays music from a wide range of *genres*, from classical to hip-hop.",
+  "exKo": "그 라디오 방송국은 클래식부터 힙합까지 다양한 장르의 음악을 튼다.",
+  "col": [
+   {
+    "e": "a wide range of genres",
+    "k": "다양한 장르"
+   },
+   {
+    "e": "music genre",
+    "k": "음악 장르"
+   },
+   {
+    "e": "literary genre",
+    "k": "문학 장르"
+   }
+  ],
+  "der": [],
+  "para": [
+   "category",
+   "type",
+   "style"
+  ],
+  "ant": "",
+  "tip": "가산명사라 various genres처럼 복수형으로 자주 쓰이며, Part 7에서 category, type으로 바꿔 표현된다.",
+  "q": {
+   "s": "The streaming service recommends new titles based on the ------- its subscribers watch most often.",
+   "o": [
+    "grades",
+    "gestures",
+    "guarantees",
+    "genres"
+   ],
+   "a": 3,
+   "k": "구독자가 가장 자주 보는 '장르'를 바탕으로 새 작품을 추천한다는 뜻이므로 genres가 정답이다. grades(등급, 성적), gestures(몸짓), guarantees(보증)는 시청 대상이 될 수 없다."
+  }
+ },
+ {
+  "w": "film festival",
+  "pos": "phr",
+  "m": [
+   "영화제"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Over 200 independent movies will be shown at this year's *film festival*.",
+  "exKo": "올해 영화제에서는 200편이 넘는 독립 영화가 상영된다.",
+  "col": [
+   {
+    "e": "international film festival",
+    "k": "국제 영화제"
+   },
+   {
+    "e": "attend a film festival",
+    "k": "영화제에 참석하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "filmmaker",
+    "pos": "n",
+    "m": "영화 제작자"
+   }
+  ],
+  "para": [
+   "movie festival"
+  ],
+  "ant": "",
+  "tip": "Part 4 광고와 Part 7 기사에서 행사 일정·장소를 묻는 문제로 나온다. '영화를 상영하다'는 show 또는 screen a film으로 표현한다.",
+  "q": {
+   "s": "The director's new documentary received the top award at an international ------- in Toronto.",
+   "o": [
+    "film studio",
+    "film festival",
+    "filmmaker",
+    "film crew"
+   ],
+   "a": 1,
+   "k": "다큐멘터리가 최고상을 받는 행사는 영화제이므로 film festival이 정답이다. film crew(촬영진), film studio(영화 촬영소), filmmaker(영화 제작자)는 상을 주는 행사가 아니다."
+  }
+ },
+ {
+  "w": "composer",
+  "pos": "n",
+  "m": [
+   "작곡가"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *composer* wrote the soundtrack for the award-winning documentary.",
+  "exKo": "그 작곡가는 그 수상작 다큐멘터리의 음악을 썼다.",
+  "col": [
+   {
+    "e": "film composer",
+    "k": "영화 음악 작곡가"
+   },
+   {
+    "e": "renowned composer",
+    "k": "저명한 작곡가"
+   }
+  ],
+  "der": [
+   {
+    "w": "compose",
+    "pos": "v",
+    "m": "작곡하다, 구성하다"
+   },
+   {
+    "w": "composition",
+    "pos": "n",
+    "m": "작곡, 작품, 구성"
+   }
+  ],
+  "para": [
+   "songwriter"
+  ],
+  "ant": "",
+  "tip": "사람명사 composer와 작품·구성을 뜻하는 composition을 구분하는 품사 문제가 나온다. be composed of(~로 구성되다)도 함께 알아 두자.",
+  "q": {
+   "s": "The concert will feature works by a local ------- who studied music in Vienna.",
+   "o": [
+    "compose",
+    "composed",
+    "composer",
+    "composition"
+   ],
+   "a": 2,
+   "k": "관계대명사 who가 이끄는 절의 수식을 받는 '사람'명사가 필요하므로 composer가 정답이다. composition(작품)은 사물이고 compose, composed는 동사 형태다."
+  }
+ },
+ {
+  "w": "pastime",
+  "pos": "n",
+  "m": [
+   "취미",
+   "여가 활동"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Gardening has become a popular *pastime* among the retirees in our community.",
+  "exKo": "원예는 우리 지역 은퇴자들 사이에서 인기 있는 여가 활동이 되었다.",
+  "col": [
+   {
+    "e": "popular pastime",
+    "k": "인기 있는 여가 활동"
+   },
+   {
+    "e": "favorite pastime",
+    "k": "가장 좋아하는 취미"
+   }
+  ],
+  "der": [],
+  "para": [
+   "hobby",
+   "leisure activity"
+  ],
+  "ant": "",
+  "tip": "pass + time에서 온 말로 Part 7에서 hobby, leisure activity로 바꿔 표현된다. s를 하나만 쓰는 철자(pastime)에 주의한다.",
+  "q": {
+   "s": "Hiking in the nearby hills is a favorite weekend ------- for many of the firm's employees.",
+   "o": [
+    "passage",
+    "pastime",
+    "pastry",
+    "pasture"
+   ],
+   "a": 1,
+   "k": "주말에 즐기는 '취미, 여가 활동'이 들어가야 하므로 pastime이 정답이다. passage(통로, 구절), pastry(페이스트리), pasture(목초지)는 형태가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "box office",
+  "pos": "phr",
+  "m": [
+   "매표소",
+   "흥행 (성적)"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "Tickets can be picked up at the *box office* one hour before the show.",
+  "exKo": "표는 공연 한 시간 전에 매표소에서 수령할 수 있다.",
+  "col": [
+   {
+    "e": "at the box office",
+    "k": "매표소에서, 흥행 면에서"
+   },
+   {
+    "e": "box office hit",
+    "k": "흥행작"
+   }
+  ],
+  "der": [],
+  "para": [
+   "ticket office",
+   "ticket counter"
+  ],
+  "ant": "",
+  "tip": "'매표소'와 '흥행 (성적)'의 뜻이 모두 쓰이며, Part 3·4에서 표를 어디서 받는지 묻는 문제의 정답 단서가 된다.",
+  "q": {
+   "s": "Patrons who reserved seats online may collect their tickets at the ------- on the ground floor.",
+   "o": [
+    "head office",
+    "box office",
+    "back office",
+    "post office"
+   ],
+   "a": 1,
+   "k": "온라인으로 좌석을 예약한 관객이 표를 받는 곳은 매표소이므로 box office가 정답이다. back office(후선 업무 부서), head office(본사), post office(우체국)는 표를 받는 곳이 아니다."
+  }
+ },
+ {
+  "w": "marathon",
+  "pos": "n",
+  "m": [
+   "마라톤 (대회)"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Traffic will be diverted around the riverside area during Sunday's city *marathon*.",
+  "exKo": "일요일 시 마라톤 대회 동안 강변 지역의 교통이 우회된다.",
+  "col": [
+   {
+    "e": "run a marathon",
+    "k": "마라톤을 뛰다"
+   },
+   {
+    "e": "charity marathon",
+    "k": "자선 마라톤"
+   }
+  ],
+  "der": [
+   {
+    "w": "marathoner",
+    "pos": "n",
+    "m": "마라톤 선수"
+   }
+  ],
+  "para": [
+   "race"
+  ],
+  "ant": "",
+  "tip": "Part 4 교통 안내에서 도로 통제 이유로 자주 나온다. a marathon meeting처럼 '장시간 계속되는'이라는 비유적 의미로도 쓰인다.",
+  "q": {
+   "s": "Participants in the charity ------- will run a 42-kilometer route through the city's old town.",
+   "o": [
+    "marathon",
+    "exhibition",
+    "auction",
+    "banquet"
+   ],
+   "a": 0,
+   "k": "참가자들이 42킬로미터 코스를 '달리는' 행사이므로 marathon이 정답이다. auction(경매), banquet(연회), exhibition(전시회)은 달리는 행사가 아니다."
+  }
+ },
+ {
+  "w": "tournament",
+  "pos": "n",
+  "m": [
+   "토너먼트",
+   "(선수권) 대회"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Our firm sponsors a golf *tournament* each spring to raise money for local schools.",
+  "exKo": "우리 회사는 매년 봄 지역 학교를 위한 기금을 마련하려고 골프 대회를 후원한다.",
+  "col": [
+   {
+    "e": "golf tournament",
+    "k": "골프 대회"
+   },
+   {
+    "e": "host a tournament",
+    "k": "대회를 개최하다"
+   },
+   {
+    "e": "win a tournament",
+    "k": "대회에서 우승하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "competition",
+   "championship"
+  ],
+  "ant": "",
+  "tip": "host/hold/sponsor a tournament 형태로 자주 쓰이며 Part 7 기사·공지에서 competition, championship으로 바꿔 표현된다.",
+  "q": {
+   "s": "Twelve teams from across the region will compete in next month's soccer -------.",
+   "o": [
+    "ornament",
+    "attachment",
+    "tournament",
+    "tenant"
+   ],
+   "a": 2,
+   "k": "여러 팀이 겨루는 축구 '대회'이므로 tournament가 정답이다. ornament(장식품), attachment(첨부 파일), tenant(세입자)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "standing ovation",
+  "pos": "phr",
+  "m": [
+   "기립 박수"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The violinist's performance earned a five-minute *standing ovation* from the crowd.",
+  "exKo": "그 바이올리니스트의 연주는 관중에게서 5분간의 기립 박수를 받았다.",
+  "col": [
+   {
+    "e": "receive a standing ovation",
+    "k": "기립 박수를 받다"
+   },
+   {
+    "e": "give someone a standing ovation",
+    "k": "~에게 기립 박수를 보내다"
+   }
+  ],
+  "der": [
+   {
+    "w": "ovation",
+    "pos": "n",
+    "m": "열렬한 박수"
+   }
+  ],
+  "para": [
+   "enthusiastic applause"
+  ],
+  "ant": "",
+  "tip": "receive/get a standing ovation(기립 박수를 받다)으로 쓰이며, Part 7에서 공연이나 연설이 호평을 받았다는 근거로 제시된다.",
+  "q": {
+   "s": "At the end of her keynote speech, Dr. Lin received a ------- from the conference attendees.",
+   "o": [
+    "standing committee",
+    "standing room",
+    "standing order",
+    "standing ovation"
+   ],
+   "a": 3,
+   "k": "기조연설이 끝나고 참석자들에게서 받는 것은 기립 박수이므로 standing ovation이 정답이다. standing order(정기 주문, 상시 지시), standing room(입석), standing committee(상임 위원회)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "ensemble",
+  "pos": "n",
+  "m": [
+   "앙상블",
+   "합주단, 합창단"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "A small string *ensemble* will provide music during the awards dinner.",
+  "exKo": "소규모 현악 합주단이 시상식 만찬 중에 음악을 연주한다.",
+  "col": [
+   {
+    "e": "string ensemble",
+    "k": "현악 앙상블"
+   },
+   {
+    "e": "jazz ensemble",
+    "k": "재즈 앙상블"
+   }
+  ],
+  "der": [],
+  "para": [
+   "group",
+   "band"
+  ],
+  "ant": "",
+  "tip": "소규모 연주 단체를 뜻하며 Part 7에서 group, band로 바꿔 표현된다. 대규모 관현악단은 orchestra라고 한다.",
+  "q": {
+   "s": "The five-member jazz ------- has been invited to play at several music festivals this summer.",
+   "o": [
+    "ensemble",
+    "assortment",
+    "ambassador",
+    "assembly"
+   ],
+   "a": 0,
+   "k": "5인조 재즈 '연주 단체'를 가리키므로 ensemble이 정답이다. assembly(집회, 조립), assortment(모음), ambassador(대사)는 연주 단체가 아니다."
+  }
+ },
+ {
+  "w": "season ticket",
+  "pos": "phr",
+  "m": [
+   "시즌 입장권",
+   "정기권"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "*Season ticket* holders can park for free in the lot next to the arena.",
+  "exKo": "시즌 입장권 소지자는 경기장 옆 주차장에 무료로 주차할 수 있다.",
+  "col": [
+   {
+    "e": "season ticket holder",
+    "k": "시즌권 소지자"
+   },
+   {
+    "e": "renew a season ticket",
+    "k": "시즌권을 갱신하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "season pass"
+  ],
+  "ant": "",
+  "tip": "season ticket holder(시즌권 소지자)라는 복합명사가 Part 7 혜택 안내문에 자주 나온다. 영국에서는 '정기 승차권'의 뜻으로도 쓰인다.",
+  "q": {
+   "s": "All ------- holders will have priority access to seats for the theater's spring productions.",
+   "o": [
+    "ticket price",
+    "season ticket",
+    "ticket booth",
+    "season opener"
+   ],
+   "a": 1,
+   "k": "holder와 결합해 '시즌권 소지자'를 이루는 season ticket이 정답이다. ticket booth(매표소), ticket price(표 가격), season opener(개막전)는 holder와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "matinee",
+  "pos": "n",
+  "m": [
+   "낮 공연",
+   "마티네"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Tickets for the Sunday *matinee* are cheaper than those for evening shows.",
+  "exKo": "일요일 낮 공연 표는 저녁 공연 표보다 저렴하다.",
+  "col": [
+   {
+    "e": "afternoon matinee",
+    "k": "오후 공연"
+   },
+   {
+    "e": "matinee performance",
+    "k": "낮 공연"
+   }
+  ],
+  "der": [],
+  "para": [
+   "afternoon performance",
+   "daytime show"
+  ],
+  "ant": "",
+  "tip": "연극·영화의 '낮 공연'을 뜻하며 Part 7에서 afternoon performance로 바꿔 표현된다. 할인되는 경우가 많아 가격 비교 문제의 단서가 된다.",
+  "q": {
+   "s": "The theater offers a discounted ------- on Wednesdays at 2 P.M. for students and seniors.",
+   "o": [
+    "maturity",
+    "mattress",
+    "matinee",
+    "material"
+   ],
+   "a": 2,
+   "k": "수요일 오후 2시에 할인 가격으로 제공하는 '낮 공연'이므로 matinee가 정답이다. mattress(매트리스), material(재료), maturity(만기, 성숙)는 극장이 시간을 정해 제공하는 것이 아니다."
+  }
+ },
+ {
+  "w": "screening",
+  "pos": "n",
+  "m": [
+   "상영(회)",
+   "심사, 검사"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "A special *screening* of the documentary will take place at the Lyric Cinema on Thursday.",
+  "exKo": "그 다큐멘터리의 특별 상영회가 목요일 Lyric 극장에서 열린다.",
+  "col": [
+   {
+    "e": "film screening",
+    "k": "영화 상영"
+   },
+   {
+    "e": "private screening",
+    "k": "시사회, 비공개 상영"
+   },
+   {
+    "e": "health screening",
+    "k": "건강 검진"
+   }
+  ],
+  "der": [
+   {
+    "w": "screen",
+    "pos": "v",
+    "m": "상영하다, 선별하다"
+   }
+  ],
+  "para": [
+   "showing",
+   "viewing"
+  ],
+  "ant": "",
+  "tip": "'(영화) 상영' 외에 지원자 심사, 건강 검진처럼 '심사, 검사'의 뜻도 있다. 동사 screen은 Day 1에서 '선별하다'로 나왔다.",
+  "q": {
+   "s": "Members of the press are invited to a private ------- of the film two days before its release.",
+   "o": [
+    "screens",
+    "screener",
+    "screened",
+    "screening"
+   ],
+   "a": 3,
+   "k": "관사 a와 형용사 private 뒤 단수 명사 자리이며 '영화의 시사회'라는 뜻이 되어야 하므로 screening이 정답이다. screened는 동사·분사, screens는 복수형이라 a와 맞지 않고, screener(심사원)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "stadium",
+  "pos": "n",
+  "m": [
+   "경기장"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "Fans are advised to take the subway to the *stadium* because parking is limited.",
+  "exKo": "주차 공간이 부족하므로 팬들은 경기장까지 지하철을 이용하도록 권고된다.",
+  "col": [
+   {
+    "e": "sports stadium",
+    "k": "스포츠 경기장"
+   },
+   {
+    "e": "seating capacity of the stadium",
+    "k": "경기장 수용 인원"
+   }
+  ],
+  "der": [],
+  "para": [
+   "arena",
+   "venue"
+  ],
+  "ant": "",
+  "tip": "Part 4 교통·행사 안내에서 혼잡과 주차 문제와 함께 나오며, Part 7에서는 arena, venue로 바꿔 표현된다.",
+  "q": {
+   "s": "The new ------- will be able to seat up to 45,000 spectators for football matches.",
+   "o": [
+    "statue",
+    "stadium",
+    "studio",
+    "stationery"
+   ],
+   "a": 1,
+   "k": "관중 45,000명을 수용하는 시설이므로 stadium이 정답이다. studio(작업실), stationery(문구류), statue(조각상)는 관중을 수용할 수 없다."
+  }
+ },
+ {
+  "w": "contest",
+  "pos": "n",
+  "m": [
+   "대회, 경연"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The winner of the photo *contest* will receive a weekend stay at a mountain resort.",
+  "exKo": "사진 대회 우승자는 산악 리조트 주말 숙박권을 받는다.",
+  "col": [
+   {
+    "e": "enter a contest",
+    "k": "대회에 참가하다"
+   },
+   {
+    "e": "contest winner",
+    "k": "대회 우승자"
+   },
+   {
+    "e": "design contest",
+    "k": "디자인 공모전"
+   }
+  ],
+  "der": [
+   {
+    "w": "contestant",
+    "pos": "n",
+    "m": "(대회) 참가자"
+   }
+  ],
+  "para": [
+   "competition"
+  ],
+  "ant": "",
+  "tip": "enter a contest(대회에 참가하다)에서 enter 뒤에 into를 붙이지 않는다. 사람명사 contestant(참가자)와의 구분도 출제된다.",
+  "q": {
+   "s": "Employees are encouraged to enter the company's logo design ------- before May 31.",
+   "o": [
+    "contestable",
+    "contested",
+    "contestant",
+    "contest"
+   ],
+   "a": 3,
+   "k": "enter의 목적어로 '로고 디자인 공모전'이 되어야 하므로 contest가 정답이다. contestant(참가자)는 참가하는 대상이 될 수 없고 contested, contestable은 형용사다."
+  }
+ },
+ {
+  "w": "prize",
+  "pos": "n",
+  "m": [
+   "상, 상품"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Novak's bakery won a *prize* for the best bread in the county.",
+  "exKo": "Novak 씨의 빵집은 카운티 최고의 빵으로 상을 받았다.",
+  "col": [
+   {
+    "e": "win a prize",
+    "k": "상을 받다"
+   },
+   {
+    "e": "first prize",
+    "k": "1등상"
+   },
+   {
+    "e": "prize winner",
+    "k": "수상자"
+   }
+  ],
+  "der": [
+   {
+    "w": "prize-winning",
+    "pos": "adj",
+    "m": "상을 받은"
+   }
+  ],
+  "para": [
+   "award",
+   "reward"
+  ],
+  "ant": "",
+  "tip": "win/award a prize로 쓰며, 발음이 비슷한 price(가격)와 혼동하게 하는 듣기·어휘 함정이 있다.",
+  "q": {
+   "s": "Ms. Abara was awarded first ------- in the competition for her design of the new city library.",
+   "o": [
+    "price",
+    "prize",
+    "praise",
+    "pride"
+   ],
+   "a": 1,
+   "k": "first와 함께 '1등상'을 뜻하는 first prize가 되어야 하므로 prize가 정답이다. price(가격)는 발음이 비슷한 함정이고 praise(칭찬), pride(자부심)는 first와 결합해 수여되는 상을 나타내지 못한다."
+  }
+ },
+ {
+  "w": "entertain",
+  "pos": "v",
+  "m": [
+   "즐겁게 하다",
+   "접대하다",
+   "(제안을) 고려하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A magician was hired to *entertain* children at the company picnic.",
+  "exKo": "회사 야유회에서 아이들을 즐겁게 해 줄 마술사가 고용되었다.",
+  "col": [
+   {
+    "e": "entertain guests",
+    "k": "손님을 접대하다"
+   },
+   {
+    "e": "entertain clients",
+    "k": "고객을 접대하다"
+   },
+   {
+    "e": "entertain an offer",
+    "k": "제안을 고려하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "entertainment",
+    "pos": "n",
+    "m": "오락, 여흥"
+   },
+   {
+    "w": "entertaining",
+    "pos": "adj",
+    "m": "재미있는"
+   },
+   {
+    "w": "entertainer",
+    "pos": "n",
+    "m": "연예인, 공연자"
+   }
+  ],
+  "para": [
+   "amuse",
+   "host"
+  ],
+  "ant": "",
+  "tip": "'즐겁게 하다' 외에 entertain clients(고객을 접대하다), entertain an offer(제안을 고려하다)의 뜻도 있다. 형용사 entertaining과 명사 entertainment의 품사 구분이 출제된다.",
+  "q": {
+   "s": "The new lounge provides an ideal space for sales staff to ------- visiting clients.",
+   "o": [
+    "entertain",
+    "entertainment",
+    "entertainer",
+    "entertaining"
+   ],
+   "a": 0,
+   "k": "to부정사(for sales staff는 의미상 주어) 뒤에는 동사원형이 와야 하므로 entertain(접대하다)이 정답이다. entertainment, entertainer는 명사, entertaining은 형용사·동명사다."
+  }
+ },
+ {
+  "w": "collection",
+  "pos": "n",
+  "m": [
+   "소장품, 수집품",
+   "모음",
+   "수거, 징수"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The museum's permanent *collection* includes over 3,000 works of modern art.",
+  "exKo": "그 박물관의 상설 소장품에는 3,000점이 넘는 현대 미술 작품이 있다.",
+  "col": [
+   {
+    "e": "permanent collection",
+    "k": "상설 소장품"
+   },
+   {
+    "e": "a collection of",
+    "k": "~의 모음"
+   },
+   {
+    "e": "garbage collection",
+    "k": "쓰레기 수거"
+   }
+  ],
+  "der": [
+   {
+    "w": "collect",
+    "pos": "v",
+    "m": "모으다, 수거하다"
+   },
+   {
+    "w": "collector",
+    "pos": "n",
+    "m": "수집가"
+   },
+   {
+    "w": "collectible",
+    "pos": "adj",
+    "m": "수집 가치가 있는"
+   }
+  ],
+  "para": [
+   "holdings",
+   "assortment"
+  ],
+  "ant": "",
+  "tip": "'소장품' 외에 garbage collection(쓰레기 수거), debt collection(채권 추심)의 '수거, 징수' 뜻도 나온다. a collection of(~의 모음) 형태도 빈출이다.",
+  "q": {
+   "s": "The gallery has acquired a valuable ------- of 19th-century landscape paintings.",
+   "o": [
+    "collector",
+    "collected",
+    "collect",
+    "collection"
+   ],
+   "a": 3,
+   "k": "관사 a와 형용사 valuable 뒤 명사 자리이며 '풍경화 소장품'이라는 뜻이 되어야 하므로 collection이 정답이다. collector(수집가)는 사람이라 갤러리가 취득한 대상으로 맞지 않고, collect, collected는 동사 형태다."
+  }
+ },
+ {
+  "w": "athlete",
+  "pos": "n",
+  "m": [
+   "운동선수"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The sports drink is popular among professional *athletes* and amateur runners alike.",
+  "exKo": "그 스포츠음료는 프로 운동선수와 아마추어 러너 모두에게 인기가 있다.",
+  "col": [
+   {
+    "e": "professional athlete",
+    "k": "프로 선수"
+   },
+   {
+    "e": "elite athlete",
+    "k": "정상급 선수"
+   }
+  ],
+  "der": [
+   {
+    "w": "athletic",
+    "pos": "adj",
+    "m": "운동의, 체육의"
+   },
+   {
+    "w": "athletics",
+    "pos": "n",
+    "m": "육상 경기, 운동 경기"
+   }
+  ],
+  "para": [
+   "player",
+   "sportsperson"
+  ],
+  "ant": "",
+  "tip": "사람명사 athlete와 형용사 athletic(운동의)을 구분하는 품사 문제가 나온다. athletic shoes(운동화)도 빈출 표현이다.",
+  "q": {
+   "s": "Several Olympic ------- will lead free fitness workshops at the community center this weekend.",
+   "o": [
+    "athletically",
+    "athletic",
+    "athletics",
+    "athletes"
+   ],
+   "a": 3,
+   "k": "워크숍을 진행하는 주어는 '사람'이어야 하므로 athletes가 정답이다. athletics(육상 경기)는 사람이 아니고 athletic은 형용사, athletically는 부사다."
+  }
+ },
+ {
+  "w": "trophy",
+  "pos": "n",
+  "m": [
+   "트로피",
+   "우승컵"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "The sales team proudly displays its *trophy* in a glass case in the lobby.",
+  "exKo": "영업팀은 로비의 유리 진열장에 트로피를 자랑스럽게 전시하고 있다.",
+  "col": [
+   {
+    "e": "win a trophy",
+    "k": "트로피를 받다"
+   },
+   {
+    "e": "trophy case",
+    "k": "트로피 진열장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "award",
+   "prize"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 'A trophy is being displayed on a shelf.'처럼 진열 상태를 묘사하는 문장으로 나올 수 있으며, Part 7에서는 award로 바꿔 표현된다.",
+  "q": {
+   "s": "The winning team was presented with a silver ------- at the end of the season.",
+   "o": [
+    "tribute",
+    "trophy",
+    "treaty",
+    "trolley"
+   ],
+   "a": 1,
+   "k": "우승팀이 시즌 말에 받은 은빛 '트로피'이므로 trophy가 정답이다. tribute(헌사), treaty(조약), trolley(손수레)는 우승팀에 수여되는 것이 아니다."
+  }
+ },
+ {
+  "w": "photographer",
+  "pos": "n",
+  "m": [
+   "사진작가",
+   "사진사"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "A professional *photographer* will take pictures of each employee for the new staff directory.",
+  "exKo": "전문 사진작가가 새 직원 명부에 실릴 직원들의 사진을 촬영한다.",
+  "col": [
+   {
+    "e": "professional photographer",
+    "k": "전문 사진작가"
+   },
+   {
+    "e": "freelance photographer",
+    "k": "프리랜서 사진작가"
+   }
+  ],
+  "der": [
+   {
+    "w": "photograph",
+    "pos": "n",
+    "m": "사진"
+   },
+   {
+    "w": "photography",
+    "pos": "n",
+    "m": "사진술, 사진 촬영"
+   },
+   {
+    "w": "photographic",
+    "pos": "adj",
+    "m": "사진의"
+   }
+  ],
+  "para": [
+   "cameraman"
+  ],
+  "ant": "",
+  "tip": "사람명사 photographer, 사진 한 장 photograph, 분야 photography를 구분하는 문제가 나온다. 강세 위치도 PHOtograph, phoTOGrapher로 다르다.",
+  "q": {
+   "s": "The magazine hired a freelance ------- to capture images of the new resort.",
+   "o": [
+    "photographic",
+    "photography",
+    "photographer",
+    "photograph"
+   ],
+   "a": 2,
+   "k": "hire(고용하다)의 목적어로 '사람'이 와야 하므로 photographer가 정답이다. photography(사진술), photograph(사진)는 고용할 수 없고 photographic은 형용사다."
+  }
+ },
+ {
+  "w": "literature",
+  "pos": "n",
+  "m": [
+   "문학",
+   "(홍보용) 인쇄물, 자료"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The library's book club meets monthly to discuss classic and contemporary *literature*.",
+  "exKo": "도서관 독서 모임은 매달 모여 고전 문학과 현대 문학에 관해 토론한다.",
+  "col": [
+   {
+    "e": "promotional literature",
+    "k": "홍보 자료"
+   },
+   {
+    "e": "product literature",
+    "k": "제품 안내서"
+   },
+   {
+    "e": "English literature",
+    "k": "영문학"
+   }
+  ],
+  "der": [
+   {
+    "w": "literary",
+    "pos": "adj",
+    "m": "문학의"
+   },
+   {
+    "w": "literate",
+    "pos": "adj",
+    "m": "읽고 쓸 줄 아는"
+   }
+  ],
+  "para": [
+   "printed materials",
+   "brochures"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 a literature로 쓰지 않는다. promotional literature처럼 '홍보 인쇄물, 자료'의 뜻으로 Part 7에 나오니 주의한다.",
+  "q": {
+   "s": "Visitors can pick up free product ------- at the information desk near the entrance.",
+   "o": [
+    "literary",
+    "literate",
+    "literature",
+    "literally"
+   ],
+   "a": 2,
+   "k": "형용사 free와 명사 product 뒤 명사 자리이므로 literature(제품 안내 자료)가 정답이다. literary, literate는 형용사, literally는 부사다."
+  }
+ },
+ {
+  "w": "orchestra",
+  "pos": "n",
+  "m": [
+   "오케스트라",
+   "관현악단"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *orchestra* will play pieces by Mozart and Beethoven at tonight's concert.",
+  "exKo": "오케스트라는 오늘 밤 콘서트에서 모차르트와 베토벤의 곡을 연주한다.",
+  "col": [
+   {
+    "e": "conduct an orchestra",
+    "k": "오케스트라를 지휘하다"
+   },
+   {
+    "e": "symphony orchestra",
+    "k": "교향악단"
+   },
+   {
+    "e": "orchestra seats",
+    "k": "(극장) 1층 앞쪽 좌석"
+   }
+  ],
+  "der": [
+   {
+    "w": "orchestral",
+    "pos": "adj",
+    "m": "관현악의"
+   }
+  ],
+  "para": [
+   "ensemble",
+   "symphony"
+  ],
+  "ant": "",
+  "tip": "conduct an orchestra(지휘하다)가 짝으로 나오며, 극장에서 orchestra (seats)는 '1층 앞쪽 좌석'을 뜻하기도 한다.",
+  "q": {
+   "s": "The conductor has led the city's ------- for more than fifteen years.",
+   "o": [
+    "orchid",
+    "ornament",
+    "orchestra",
+    "orchard"
+   ],
+   "a": 2,
+   "k": "지휘자(conductor)가 이끄는 대상이므로 orchestra가 정답이다. orchard(과수원), orchid(난초), ornament(장식품)는 형태가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "cast",
+  "pos": "n",
+  "m": [
+   "출연진",
+   "배역"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The entire *cast* gathered on stage to thank the audience after the final show.",
+  "exKo": "마지막 공연이 끝난 후 출연진 전원이 무대에 모여 관객에게 감사를 전했다.",
+  "col": [
+   {
+    "e": "cast members",
+    "k": "출연진"
+   },
+   {
+    "e": "cast and crew",
+    "k": "출연진과 제작진"
+   },
+   {
+    "e": "cast a vote",
+    "k": "투표하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "performers",
+   "actors"
+  ],
+  "ant": "",
+  "tip": "집합명사 cast(출연진)와 cast member(출연자 한 명)를 구분한다. 동사로는 cast a vote(투표하다), '배역을 맡기다'로 쓰이며 과거·과거분사도 cast이다.",
+  "q": {
+   "s": "Several members of the original ------- will return for the musical's 20th anniversary production.",
+   "o": [
+    "plot",
+    "script",
+    "cast",
+    "venue"
+   ],
+   "a": 2,
+   "k": "뮤지컬 기념 공연에 돌아오는 '구성원'의 집단이므로 cast(출연진)가 정답이다. script(대본), venue(장소), plot(줄거리)에는 members가 있을 수 없다."
+  }
+ },
+ {
+  "w": "sequel",
+  "pos": "n",
+  "m": [
+   "속편"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The publisher announced that a *sequel* to the best-selling novel will be released next year.",
+  "exKo": "출판사는 그 베스트셀러 소설의 속편이 내년에 출간된다고 발표했다.",
+  "col": [
+   {
+    "e": "sequel to",
+    "k": "~의 속편"
+   }
+  ],
+  "der": [],
+  "para": [
+   "follow-up",
+   "continuation"
+  ],
+  "ant": "prequel",
+  "tip": "a sequel to ~(~의 속편)처럼 전치사 to와 함께 쓰며 Part 7에서 follow-up으로 바꿔 표현된다.",
+  "q": {
+   "s": "Due to the film's success, the studio has already begun production on a -------.",
+   "o": [
+    "sequel",
+    "setback",
+    "sedan",
+    "seminar"
+   ],
+   "a": 0,
+   "k": "영화의 성공으로 제작에 들어간 것은 '속편'이므로 sequel이 정답이다. seminar(세미나), sedan(승용차), setback(차질)은 영화사가 제작할 대상으로 맞지 않는다."
+  }
+ },
+ {
+  "w": "fair",
+  "pos": "n",
+  "m": [
+   "박람회",
+   "품평회, 축제"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "More than 80 local businesses will set up booths at the county *fair* this weekend.",
+  "exKo": "80개가 넘는 지역 업체가 이번 주말 카운티 박람회에 부스를 차린다.",
+  "col": [
+   {
+    "e": "trade fair",
+    "k": "무역 박람회"
+   },
+   {
+    "e": "job fair",
+    "k": "채용 박람회"
+   },
+   {
+    "e": "book fair",
+    "k": "도서 박람회"
+   }
+  ],
+  "der": [
+   {
+    "w": "fairly",
+    "pos": "adv",
+    "m": "꽤, 공정하게"
+   },
+   {
+    "w": "fairness",
+    "pos": "n",
+    "m": "공정성"
+   }
+  ],
+  "para": [
+   "exhibition",
+   "expo"
+  ],
+  "ant": "",
+  "tip": "명사 '박람회'와 형용사 '공정한, 타당한'(a fair price)의 뜻이 모두 쓰인다. 발음이 같은 fare(요금)와 혼동하게 하는 함정이 있다.",
+  "q": {
+   "s": "Hundreds of exhibitors from 30 countries attended the international trade ------- in Frankfurt.",
+   "o": [
+    "fair",
+    "fear",
+    "fire",
+    "fare"
+   ],
+   "a": 0,
+   "k": "전시 업체들이 참가하는 '무역 박람회'이므로 trade fair를 이루는 fair가 정답이다. fare(요금)는 발음이 같은 함정이고 fear(두려움), fire(불)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "donation",
+  "pos": "n",
+  "m": [
+   "기부(금)",
+   "기증(품)"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "All *donations* will be used to buy winter coats for local families in need.",
+  "exKo": "모든 기부금은 형편이 어려운 지역 가정에 겨울 외투를 사 주는 데 쓰인다.",
+  "col": [
+   {
+    "e": "make a donation",
+    "k": "기부하다"
+   },
+   {
+    "e": "donation to",
+    "k": "~에 대한 기부"
+   },
+   {
+    "e": "generous donation",
+    "k": "후한 기부"
+   }
+  ],
+  "der": [
+   {
+    "w": "donate",
+    "pos": "v",
+    "m": "기부하다"
+   },
+   {
+    "w": "donor",
+    "pos": "n",
+    "m": "기부자, 기증자"
+   }
+  ],
+  "para": [
+   "contribution",
+   "gift"
+  ],
+  "ant": "",
+  "tip": "make a donation to ~ 형태로 쓰며, 사람명사 donor(기부자)와 동사 donate를 구분하는 품사 문제가 나온다.",
+  "q": {
+   "s": "The hospital thanked Mr. Reyes for his generous ------- to its new children's wing.",
+   "o": [
+    "donor",
+    "donation",
+    "donated",
+    "donate"
+   ],
+   "a": 1,
+   "k": "소유격 his와 형용사 generous 뒤 명사 자리이며 '어린이 병동에 대한 기부'라는 뜻이 되어야 하므로 donation이 정답이다. donor(기부자)는 Reyes 씨 자신이라 의미가 맞지 않고 donate, donated는 동사 형태다."
+  }
+ },
+ {
+  "w": "troupe",
+  "pos": "n",
+  "m": [
+   "극단",
+   "공연단"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "A traveling dance *troupe* from Brazil will visit our city as part of its world tour.",
+  "exKo": "브라질의 순회 무용단이 세계 순회공연의 일환으로 우리 도시를 방문한다.",
+  "col": [
+   {
+    "e": "dance troupe",
+    "k": "무용단"
+   },
+   {
+    "e": "theater troupe",
+    "k": "극단"
+   },
+   {
+    "e": "touring troupe",
+    "k": "순회 공연단"
+   }
+  ],
+  "der": [],
+  "para": [
+   "company",
+   "group"
+  ],
+  "ant": "",
+  "tip": "발음이 같은 troop(부대, 무리)과 철자를 혼동하지 말 것. Part 7에서는 theater company, group으로 바꿔 표현된다.",
+  "q": {
+   "s": "The comedy ------- has been touring small towns across the country since last spring.",
+   "o": [
+    "troupe",
+    "tribute",
+    "trouble",
+    "treatment"
+   ],
+   "a": 0,
+   "k": "전국 소도시를 순회하는 코미디 '공연단'이므로 troupe가 정답이다. trouble(문제), tribute(헌사), treatment(치료, 대우)는 순회할 수 있는 주체가 아니다."
+  }
+ },
+ {
+  "w": "civic",
+  "pos": "adj",
+  "m": [
+   "시민의",
+   "시의, 도시의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new *civic* center will host concerts, conferences, and public hearings.",
+  "exKo": "새 시민 회관에서는 콘서트와 회의, 공청회가 열리게 된다.",
+  "col": [
+   {
+    "e": "civic center",
+    "k": "시민 회관"
+   },
+   {
+    "e": "civic duty",
+    "k": "시민의 의무"
+   },
+   {
+    "e": "civic pride",
+    "k": "애향심"
+   }
+  ],
+  "der": [
+   {
+    "w": "citizen",
+    "pos": "n",
+    "m": "시민"
+   }
+  ],
+  "para": [
+   "municipal",
+   "community",
+   "public"
+  ],
+  "ant": "",
+  "tip": "civic center(시민 회관), civic pride(애향심)처럼 주로 명사 앞에서 쓰이는 형용사다. 형태가 비슷한 civil(민간의, 정중한)과 구분한다.",
+  "q": {
+   "s": "The town's annual budget meeting will be held in the auditorium of the ------- center.",
+   "o": [
+    "civic",
+    "scenic",
+    "comic",
+    "cynical"
+   ],
+   "a": 0,
+   "k": "center와 결합해 '시민 회관'을 이루는 civic이 정답이다. cynical(냉소적인), comic(웃기는), scenic(경치가 좋은)은 center와 어울려 공공시설을 나타내지 못한다."
+  }
+ },
+ {
+  "w": "town hall",
+  "pos": "phr",
+  "m": [
+   "시청",
+   "주민 간담회, 전체 회의"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "Residents can voice their concerns about the new road at Tuesday's *town hall* meeting.",
+  "exKo": "주민들은 화요일 주민 간담회에서 새 도로에 대한 우려를 표명할 수 있다.",
+  "col": [
+   {
+    "e": "town hall meeting",
+    "k": "주민 간담회, 전체 회의"
+   },
+   {
+    "e": "at the town hall",
+    "k": "시청에서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "city hall",
+   "public forum"
+  ],
+  "ant": "",
+  "tip": "'시청 (건물)'과 town hall meeting(공개 간담회) 두 뜻으로 쓰인다. 회사에서도 경영진과 직원이 함께하는 전체 회의를 town hall이라 부른다.",
+  "q": {
+   "s": "The CEO will answer employees' questions at a ------- meeting in the main auditorium on Friday.",
+   "o": [
+    "town hall",
+    "townhouse",
+    "hall pass",
+    "hallway"
+   ],
+   "a": 0,
+   "k": "대강당에서 CEO가 직원 질문에 답하는 '전체 간담회'이므로 town hall이 정답이다. townhouse(연립 주택), hall pass(복도 통행증), hallway(복도)는 대강당 회의를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "mayor",
+  "pos": "n",
+  "m": [
+   "시장"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *mayor* officially opened the new bridge at a ceremony on Monday.",
+  "exKo": "시장은 월요일 기념식에서 새 다리를 공식 개통했다.",
+  "col": [
+   {
+    "e": "deputy mayor",
+    "k": "부시장"
+   },
+   {
+    "e": "the mayor's office",
+    "k": "시장실"
+   },
+   {
+    "e": "elect a mayor",
+    "k": "시장을 선출하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "mayoral",
+    "pos": "adj",
+    "m": "시장의"
+   }
+  ],
+  "para": [
+   "city leader"
+  ],
+  "ant": "",
+  "tip": "Part 4 지역 뉴스에서 행사·정책 발표의 주체로 자주 나온다. 발음과 철자가 비슷한 major(주요한, 소령)와 혼동하지 말 것.",
+  "q": {
+   "s": "The ------- of Clayton announced plans to expand bus service to the city's eastern suburbs.",
+   "o": [
+    "mayor",
+    "mayoral",
+    "major",
+    "majority"
+   ],
+   "a": 0,
+   "k": "도시의 버스 노선 확대를 발표하는 '시장'이 필요하므로 mayor가 정답이다. major(주요한, 소령), majority(대다수)는 의미가 맞지 않고 mayoral은 형용사다."
+  }
+ },
+ {
+  "w": "amusement park",
+  "pos": "phr",
+  "m": [
+   "놀이공원"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The company rented the entire *amusement park* for its employee appreciation day.",
+  "exKo": "회사는 직원 감사의 날을 맞아 놀이공원 전체를 빌렸다.",
+  "col": [
+   {
+    "e": "visit an amusement park",
+    "k": "놀이공원에 가다"
+   },
+   {
+    "e": "amusement park ride",
+    "k": "놀이기구"
+   }
+  ],
+  "der": [
+   {
+    "w": "amuse",
+    "pos": "v",
+    "m": "즐겁게 하다"
+   },
+   {
+    "w": "amusement",
+    "pos": "n",
+    "m": "즐거움, 오락"
+   }
+  ],
+  "para": [
+   "theme park"
+  ],
+  "ant": "",
+  "tip": "Part 7 여행·행사 광고에서 theme park로 바꿔 표현되며 ride(놀이기구), admission(입장료)과 함께 나온다.",
+  "q": {
+   "s": "Admission to the ------- includes unlimited access to all rides and water attractions.",
+   "o": [
+    "national park",
+    "industrial park",
+    "amusement park",
+    "parking lot"
+   ],
+   "a": 2,
+   "k": "놀이기구(rides)를 무제한 이용할 수 있는 곳은 놀이공원이므로 amusement park가 정답이다. parking lot(주차장), national park(국립공원), industrial park(산업 단지)에는 놀이기구가 없다."
+  }
+ },
+ {
+  "w": "scenery",
+  "pos": "n",
+  "m": [
+   "경치, 풍경",
+   "무대 배경"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "Guests at the lodge can enjoy beautiful mountain *scenery* from every room.",
+  "exKo": "그 산장 투숙객들은 모든 객실에서 아름다운 산 경치를 즐길 수 있다.",
+  "col": [
+   {
+    "e": "breathtaking scenery",
+    "k": "숨 막히게 아름다운 경치"
+   },
+   {
+    "e": "enjoy the scenery",
+    "k": "경치를 즐기다"
+   }
+  ],
+  "der": [
+   {
+    "w": "scenic",
+    "pos": "adj",
+    "m": "경치가 좋은"
+   },
+   {
+    "w": "scene",
+    "pos": "n",
+    "m": "장면, 현장"
+   }
+  ],
+  "para": [
+   "view",
+   "landscape"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 a scenery, sceneries로 쓰지 않는다. 형용사 scenic(경치가 좋은)은 scenic route 같은 표현으로 자주 나온다.",
+  "q": {
+   "s": "The train journey through the valley is famous for its spectacular -------.",
+   "o": [
+    "scenic",
+    "scenery",
+    "scenario",
+    "scenically"
+   ],
+   "a": 1,
+   "k": "소유격 its와 형용사 spectacular 뒤 명사 자리이며 '장관을 이루는 경치'가 되어야 하므로 scenery가 정답이다. scenic은 형용사, scenically는 부사이고 scenario(시나리오)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "grassroots",
+  "pos": "adj",
+  "m": [
+   "풀뿌리의",
+   "일반 대중의, 지역 주민 주도의"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The park cleanup began as a *grassroots* effort organized by neighborhood volunteers.",
+  "exKo": "그 공원 정화 활동은 동네 자원봉사자들이 조직한 풀뿌리 운동으로 시작되었다.",
+  "col": [
+   {
+    "e": "grassroots campaign",
+    "k": "풀뿌리 캠페인"
+   },
+   {
+    "e": "grassroots movement",
+    "k": "풀뿌리 운동"
+   },
+   {
+    "e": "at the grassroots level",
+    "k": "일반 대중 차원에서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "community-based",
+   "local"
+  ],
+  "ant": "",
+  "tip": "지도부가 아니라 일반 주민·회원이 주도하는 활동을 뜻하며 Part 7에서 community-based, local로 바꿔 표현된다.",
+  "q": {
+   "s": "What began as a small ------- campaign has grown into a nationwide movement for safer streets.",
+   "o": [
+    "groundwork",
+    "greenhouse",
+    "grasshopper",
+    "grassroots"
+   ],
+   "a": 3,
+   "k": "작게 시작해 전국적 운동으로 커진 '풀뿌리' 캠페인이므로 grassroots가 정답이다. groundwork(기초 작업), grasshopper(메뚜기), greenhouse(온실)는 campaign을 수식할 수 없다."
+  }
+ },
+ {
+  "w": "municipality",
+  "pos": "n",
+  "m": [
+   "지방 자치 단체",
+   "시, 자치구"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Each *municipality* in the region sets its own recycling schedule.",
+  "exKo": "그 지역의 각 지방 자치 단체는 자체적으로 재활용품 수거 일정을 정한다.",
+  "col": [
+   {
+    "e": "local municipality",
+    "k": "지방 자치 단체"
+   },
+   {
+    "e": "neighboring municipalities",
+    "k": "인접 지자체"
+   }
+  ],
+  "der": [
+   {
+    "w": "municipal",
+    "pos": "adj",
+    "m": "시의, 지방 자치의"
+   }
+  ],
+  "para": [
+   "town",
+   "city",
+   "local government"
+  ],
+  "ant": "",
+  "tip": "형용사 municipal(Day 21)과 품사를 구분해야 하며, 가산명사라 neighboring municipalities처럼 복수형으로도 쓴다.",
+  "q": {
+   "s": "Funding for the bridge repair will be shared by the state and the local -------.",
+   "o": [
+    "municipal",
+    "municipalize",
+    "municipally",
+    "municipality"
+   ],
+   "a": 3,
+   "k": "정관사 the와 형용사 local 뒤 명사 자리이며 주(state)와 비용을 나누는 '지방 자치 단체'가 되어야 하므로 municipality가 정답이다. municipal은 형용사, municipally는 부사, municipalize는 동사다."
+  }
+ }
+]

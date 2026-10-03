@@ -1,0 +1,2036 @@
+[
+ {
+  "w": "curator",
+  "pos": "n",
+  "m": [
+   "(박물관·미술관의) 큐레이터, 학예사"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The museum's chief *curator* selected over 80 paintings for the upcoming exhibition.",
+  "exKo": "박물관의 수석 큐레이터가 다가오는 전시회를 위해 80점이 넘는 그림을 선정했다.",
+  "col": [
+   {
+    "e": "chief curator",
+    "k": "수석 큐레이터"
+   },
+   {
+    "e": "museum curator",
+    "k": "박물관 학예사"
+   }
+  ],
+  "der": [
+   {
+    "w": "curate",
+    "pos": "v",
+    "m": "(전시를) 기획하다"
+   },
+   {
+    "w": "curatorial",
+    "pos": "adj",
+    "m": "큐레이터의, 전시 기획의"
+   }
+  ],
+  "para": [
+   "exhibition organizer"
+  ],
+  "ant": "",
+  "tip": "박물관·미술관에서 전시를 기획하고 소장품을 관리하는 사람이다. Part 4 가이드 투어나 Part 7 전시 안내문에서 인물의 직업을 묻는 문제로 나온다.",
+  "q": {
+   "s": "As the gallery's -------, Ms. Lund is responsible for acquiring new works and planning exhibitions.",
+   "o": [
+    "curate",
+    "curation",
+    "curator",
+    "curative"
+   ],
+   "a": 2,
+   "k": "As the gallery's 뒤에서 Ms. Lund와 동격인 사람명사가 와야 하므로 curator가 정답이다. curate는 동사, curation(전시 기획)은 사물명사, curative(치료의)는 형용사다."
+  }
+ },
+ {
+  "w": "masterpiece",
+  "pos": "n",
+  "m": [
+   "걸작, 명작"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The novel is widely considered a *masterpiece* of modern literature.",
+  "exKo": "그 소설은 현대 문학의 걸작으로 널리 여겨진다.",
+  "col": [
+   {
+    "e": "a masterpiece of",
+    "k": "~의 걸작"
+   },
+   {
+    "e": "true masterpiece",
+    "k": "진정한 걸작"
+   }
+  ],
+  "der": [
+   {
+    "w": "master",
+    "pos": "n",
+    "m": "거장, 대가"
+   },
+   {
+    "w": "masterful",
+    "pos": "adj",
+    "m": "노련한, 훌륭한"
+   }
+  ],
+  "para": [
+   "masterwork",
+   "classic"
+  ],
+  "ant": "",
+  "tip": "a masterpiece of + 분야/시대 형태로 자주 쓰이며 Part 7에서 masterwork, classic으로 패러프레이징된다. 가산명사라 관사 a를 붙인다.",
+  "q": {
+   "s": "Visitors lined up for hours to see the famous -------, which is on loan from a museum in Paris.",
+   "o": [
+    "masterpiece",
+    "mastermind",
+    "masterclass",
+    "mastery"
+   ],
+   "a": 0,
+   "k": "파리의 박물관에서 대여해 온 유명한 작품이므로 '걸작'을 뜻하는 masterpiece가 정답이다. mastermind(주모자), masterclass(명인 강좌), mastery(숙달)는 대여해 전시할 수 있는 대상이 아니다."
+  }
+ },
+ {
+  "w": "admire",
+  "pos": "v",
+  "m": [
+   "감탄하며 바라보다, 감상하다",
+   "존경하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "Tourists stopped to *admire* the view of the harbor from the top of the hill.",
+  "exKo": "관광객들은 언덕 꼭대기에서 항구 경치를 감상하려고 걸음을 멈췄다.",
+  "col": [
+   {
+    "e": "admire the view",
+    "k": "경치를 감상하다"
+   },
+   {
+    "e": "admire A for B",
+    "k": "B 때문에 A를 존경하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "admiration",
+    "pos": "n",
+    "m": "감탄, 존경"
+   },
+   {
+    "w": "admirable",
+    "pos": "adj",
+    "m": "감탄할 만한"
+   }
+  ],
+  "para": [
+   "appreciate",
+   "respect"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 'admiring the artwork(작품을 감상하고 있다)'처럼 사진 묘사에 나오며, admire A for B(B 때문에 A를 존경하다) 구문과 형용사 admirable을 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Many employees ------- Mr. Duval for the way he handled the difficult merger negotiations.",
+   "o": [
+    "admirable",
+    "admiration",
+    "admiringly",
+    "admire"
+   ],
+   "a": 3,
+   "k": "주어 Many employees 뒤 동사 자리이며 admire A for B(B 때문에 A를 존경하다) 구문을 이루는 admire가 정답이다. admirable은 형용사, admiration은 명사, admiringly는 부사다."
+  }
+ },
+ {
+  "w": "amateur",
+  "pos": "n",
+  "m": [
+   "아마추어, 비전문가",
+   "(형) 아마추어의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The photography contest is open to *amateurs* as well as professionals.",
+  "exKo": "그 사진 공모전은 전문가뿐 아니라 아마추어에게도 열려 있다.",
+  "col": [
+   {
+    "e": "amateur photographer",
+    "k": "아마추어 사진가"
+   },
+   {
+    "e": "amateur athlete",
+    "k": "아마추어 운동선수"
+   }
+  ],
+  "der": [
+   {
+    "w": "amateurish",
+    "pos": "adj",
+    "m": "서투른, 미숙한"
+   }
+  ],
+  "para": [
+   "hobbyist",
+   "nonprofessional"
+  ],
+  "ant": "professional",
+  "tip": "명사(아마추어)와 형용사(amateur photographer)로 모두 쓰이며 반의어 professional과 짝지어 나온다. amateurish는 '서투른'이라는 부정적 의미이므로 구분한다.",
+  "q": {
+   "s": "Although he is only an ------- painter, Mr. Hale has had his work displayed in several galleries.",
+   "o": [
+    "annual",
+    "amateur",
+    "ample",
+    "outgoing"
+   ],
+   "a": 1,
+   "k": "although절에서 작품이 여러 갤러리에 전시되었다는 내용과 대조를 이루어야 하므로 '아마추어'라는 뜻의 amateur가 정답이다. annual(연례의), ample(충분한), outgoing(외향적인)은 painter와 결합해 대조를 만들지 못한다."
+  }
+ },
+ {
+  "w": "enthusiast",
+  "pos": "n",
+  "m": [
+   "애호가, 열성 팬"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The classic car show attracted thousands of *enthusiasts* from across the region.",
+  "exKo": "클래식 자동차 쇼는 지역 곳곳에서 온 수천 명의 애호가를 끌어모았다.",
+  "col": [
+   {
+    "e": "car enthusiast",
+    "k": "자동차 애호가"
+   },
+   {
+    "e": "sports enthusiast",
+    "k": "스포츠 애호가"
+   }
+  ],
+  "der": [
+   {
+    "w": "enthusiastic",
+    "pos": "adj",
+    "m": "열정적인"
+   },
+   {
+    "w": "enthusiasm",
+    "pos": "n",
+    "m": "열정"
+   }
+  ],
+  "para": [
+   "fan",
+   "devotee",
+   "lover"
+  ],
+  "ant": "",
+  "tip": "사람명사 enthusiast(애호가), 형용사 enthusiastic(열정적인), 명사 enthusiasm(열정)을 구분하는 품사 문제가 자주 나온다.",
+  "q": {
+   "s": "The hiking trail guide was written by an outdoor ------- who has explored the region for decades.",
+   "o": [
+    "enthusiast",
+    "enthusiasm",
+    "enthusiastic",
+    "enthusiastically"
+   ],
+   "a": 0,
+   "k": "관계대명사 who가 수식하는 사람명사가 와야 하므로 '애호가'를 뜻하는 enthusiast가 정답이다. enthusiasm은 '열정'이라는 추상명사, enthusiastic은 형용사, enthusiastically는 부사다."
+  }
+ },
+ {
+  "w": "prestigious",
+  "pos": "adj",
+  "m": [
+   "명망 있는, 권위 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The architect won a *prestigious* international award for her design of the city library.",
+  "exKo": "그 건축가는 시립 도서관 설계로 권위 있는 국제상을 받았다.",
+  "col": [
+   {
+    "e": "prestigious award",
+    "k": "권위 있는 상"
+   },
+   {
+    "e": "prestigious university",
+    "k": "명문 대학"
+   }
+  ],
+  "der": [
+   {
+    "w": "prestige",
+    "pos": "n",
+    "m": "명성, 위신"
+   }
+  ],
+  "para": [
+   "renowned",
+   "distinguished",
+   "respected"
+  ],
+  "ant": "",
+  "tip": "prestigious award/institution처럼 명사 앞에 쓰이며 명사 prestige(명성)와 구분하는 문제가 나온다. Part 7에서 renowned, distinguished로 패러프레이징된다.",
+  "q": {
+   "s": "The Carrow Prize is one of the most ------- honors that a young composer can receive.",
+   "o": [
+    "prestige",
+    "prestigiously",
+    "prestigious",
+    "presumed"
+   ],
+   "a": 2,
+   "k": "the most와 명사 honors 사이에서 명사를 수식하는 형용사 자리이므로 prestigious가 정답이다. prestige는 명사, prestigiously는 부사이고, presumed(추정되는)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "monument",
+  "pos": "n",
+  "m": [
+   "기념비, 기념물",
+   "(역사적) 유적"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "A bronze *monument* honoring the town's founders stands in the center of the square.",
+  "exKo": "마을 설립자들을 기리는 청동 기념비가 광장 한가운데에 서 있다.",
+  "col": [
+   {
+    "e": "historic monument",
+    "k": "역사적 기념물"
+   },
+   {
+    "e": "national monument",
+    "k": "국가 기념물"
+   },
+   {
+    "e": "erect a monument",
+    "k": "기념비를 세우다"
+   }
+  ],
+  "der": [
+   {
+    "w": "monumental",
+    "pos": "adj",
+    "m": "기념비적인, 엄청난"
+   }
+  ],
+  "para": [
+   "memorial",
+   "landmark",
+   "statue"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 광장의 기념비나 동상을 묘사할 때 나온다. 형용사 monumental은 '기념비적인' 외에 '엄청난(a monumental task)'이라는 뜻도 있다.",
+  "q": {
+   "s": "The walking tour includes stops at several historic ------- in the old part of the city.",
+   "o": [
+    "moments",
+    "monuments",
+    "momentum",
+    "monopolies"
+   ],
+   "a": 1,
+   "k": "도보 관광에서 들르는 장소이자 historic(역사적인)의 수식을 받는 것은 '기념물'이므로 monuments가 정답이다. moments(순간), momentum(추진력), monopolies(독점)는 들를 수 있는 장소가 아니다."
+  }
+ },
+ {
+  "w": "tradition",
+  "pos": "n",
+  "m": [
+   "전통, 관례"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Holding a lantern festival every autumn is a *tradition* that dates back over a century.",
+  "exKo": "매년 가을 등불 축제를 여는 것은 100년 넘게 이어져 온 전통이다.",
+  "col": [
+   {
+    "e": "long tradition",
+    "k": "오랜 전통"
+   },
+   {
+    "e": "follow a tradition",
+    "k": "전통을 따르다"
+   },
+   {
+    "e": "by tradition",
+    "k": "관례상"
+   }
+  ],
+  "der": [
+   {
+    "w": "traditionally",
+    "pos": "adv",
+    "m": "전통적으로"
+   }
+  ],
+  "para": [
+   "custom",
+   "practice",
+   "convention"
+  ],
+  "ant": "",
+  "tip": "명사 tradition과 형용사 traditional의 품사 구분이 가장 많이 출제되며, by tradition(관례에 따라), a tradition of ~ing 형태로도 쓴다.",
+  "q": {
+   "s": "Hosting a picnic for employees' families has been a company ------- for more than thirty years.",
+   "o": [
+    "traditional",
+    "traditionally",
+    "traditionalist",
+    "tradition"
+   ],
+   "a": 3,
+   "k": "관사 a와 company 뒤 명사 자리이며 '회사의 전통'이라는 의미가 되는 tradition이 정답이다. traditional은 형용사, traditionally는 부사이고, traditionalist(전통주의자)는 사람이라 소풍 행사와 동격이 될 수 없다."
+  }
+ },
+ {
+  "w": "traditional",
+  "pos": "adj",
+  "m": [
+   "전통의, 전통적인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The restaurant serves *traditional* Korean dishes made with locally grown vegetables.",
+  "exKo": "그 식당은 지역에서 재배한 채소로 만든 전통 한국 요리를 제공한다.",
+  "col": [
+   {
+    "e": "traditional method",
+    "k": "전통적인 방식"
+   },
+   {
+    "e": "traditional costume",
+    "k": "전통 의상"
+   }
+  ],
+  "der": [
+   {
+    "w": "tradition",
+    "pos": "n",
+    "m": "전통"
+   },
+   {
+    "w": "traditionally",
+    "pos": "adv",
+    "m": "전통적으로"
+   }
+  ],
+  "para": [
+   "conventional",
+   "classic",
+   "customary"
+  ],
+  "ant": "modern",
+  "tip": "명사 앞 형용사 자리 문제로 tradition(명사), traditionally(부사)와 구분해야 한다. Part 7에서 conventional, classic으로 패러프레이징된다.",
+  "q": {
+   "s": "Visitors can watch local weavers make rugs using ------- techniques passed down through generations.",
+   "o": [
+    "tradition",
+    "traditional",
+    "traditionally",
+    "traditions"
+   ],
+   "a": 1,
+   "k": "명사 techniques를 수식하는 형용사 자리이므로 traditional이 정답이다. tradition, traditions는 명사, traditionally는 부사다."
+  }
+ },
+ {
+  "w": "diversity",
+  "pos": "n",
+  "m": [
+   "다양성"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The festival celebrates the cultural *diversity* of the city with food and music from many countries.",
+  "exKo": "그 축제는 여러 나라의 음식과 음악으로 도시의 문화적 다양성을 기린다.",
+  "col": [
+   {
+    "e": "cultural diversity",
+    "k": "문화적 다양성"
+   },
+   {
+    "e": "a diversity of",
+    "k": "다양한"
+   },
+   {
+    "e": "workplace diversity",
+    "k": "직장 내 다양성"
+   }
+  ],
+  "der": [
+   {
+    "w": "diverse",
+    "pos": "adj",
+    "m": "다양한"
+   },
+   {
+    "w": "diversify",
+    "pos": "v",
+    "m": "다각화하다"
+   }
+  ],
+  "para": [
+   "variety",
+   "range"
+  ],
+  "ant": "",
+  "tip": "형용사 diverse(다양한), 동사 diversify(다각화하다)와 함께 품사 문제로 자주 나오며, a diversity of(다양한 ~)는 a variety of와 같은 뜻이다.",
+  "q": {
+   "s": "The museum's new wing highlights the ------- of artistic styles found throughout the region.",
+   "o": [
+    "diversity",
+    "diverse",
+    "diversify",
+    "diversely"
+   ],
+   "a": 0,
+   "k": "정관사 the와 전치사 of 사이 명사 자리이므로 diversity가 정답이다. diverse는 형용사, diversify는 동사, diversely는 부사다."
+  }
+ },
+ {
+  "w": "rating",
+  "pos": "n",
+  "m": [
+   "평가, 평점, 등급",
+   "시청률"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new café has received a five-star *rating* from nearly every online reviewer.",
+  "exKo": "새로 연 카페는 거의 모든 온라인 리뷰어에게서 별 다섯 개의 평점을 받았다.",
+  "col": [
+   {
+    "e": "high rating",
+    "k": "높은 평점"
+   },
+   {
+    "e": "customer rating",
+    "k": "고객 평점"
+   },
+   {
+    "e": "approval rating",
+    "k": "지지율"
+   }
+  ],
+  "der": [
+   {
+    "w": "rate",
+    "pos": "v",
+    "m": "평가하다"
+   },
+   {
+    "w": "rate",
+    "pos": "n",
+    "m": "비율, 요금"
+   }
+  ],
+  "para": [
+   "score",
+   "evaluation",
+   "review"
+  ],
+  "ant": "",
+  "tip": "rate는 '요금, 비율' 또는 '평가하다'이고 rating은 '평점, 등급'이다. receive a high rating, customer ratings처럼 쓰이며 Part 7 리뷰 지문에 자주 나온다.",
+  "q": {
+   "s": "The documentary earned the highest viewer ------- of any program broadcast on the network this year.",
+   "o": [
+    "ratios",
+    "rations",
+    "rationales",
+    "ratings"
+   ],
+   "a": 3,
+   "k": "다큐멘터리가 얻은 '시청자 평가, 시청률'을 뜻하는 ratings가 정답이다. ratios(비율), rations(배급량), rationales(근거)는 viewer와 결합해 의미를 이루지 않는다."
+  }
+ },
+ {
+  "w": "sculptor",
+  "pos": "n",
+  "m": [
+   "조각가"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *sculptor* spent three years carving the marble statue that now stands at the park entrance.",
+  "exKo": "그 조각가는 현재 공원 입구에 서 있는 대리석 조각상을 3년 동안 깎아 만들었다.",
+  "col": [
+   {
+    "e": "renowned sculptor",
+    "k": "저명한 조각가"
+   },
+   {
+    "e": "local sculptor",
+    "k": "지역 조각가"
+   }
+  ],
+  "der": [
+   {
+    "w": "sculpture",
+    "pos": "n",
+    "m": "조각, 조각품"
+   },
+   {
+    "w": "sculpt",
+    "pos": "v",
+    "m": "조각하다"
+   }
+  ],
+  "para": [
+   "artist",
+   "carver"
+  ],
+  "ant": "",
+  "tip": "사람명사 sculptor(조각가)와 작품을 뜻하는 sculpture(조각품)를 구분하는 문제가 자주 출제된다. 철자 -or/-ure에 주의한다.",
+  "q": {
+   "s": "The bronze statue in front of the library was created by a local ------- in 1952.",
+   "o": [
+    "sculpture",
+    "sculpted",
+    "sculptor",
+    "sculpting"
+   ],
+   "a": 2,
+   "k": "by(~에 의해) 뒤에서 조각상을 만든 행위자, 즉 사람명사가 와야 하므로 sculptor가 정답이다. sculpture는 '조각품'이라는 사물명사이고, sculpted, sculpting은 동사 형태다."
+  }
+ },
+ {
+  "w": "pottery",
+  "pos": "n",
+  "m": [
+   "도자기(류)",
+   "도예"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "The gift shop sells *pottery* created by artists from the surrounding villages.",
+  "exKo": "그 기념품점은 인근 마을 예술가들이 만든 도자기를 판매한다.",
+  "col": [
+   {
+    "e": "pottery class",
+    "k": "도예 수업"
+   },
+   {
+    "e": "a piece of pottery",
+    "k": "도자기 한 점"
+   }
+  ],
+  "der": [
+   {
+    "w": "potter",
+    "pos": "n",
+    "m": "도공, 도예가"
+   }
+  ],
+  "para": [
+   "ceramics",
+   "earthenware"
+  ],
+  "ant": "",
+  "tip": "도자기 전체를 가리키는 불가산명사라 a pottery가 아니라 a piece of pottery로 센다. 사람명사 potter(도예가)와 구분한다.",
+  "q": {
+   "s": "The arts studio offers a beginner's ------- class where participants learn to make bowls and vases.",
+   "o": [
+    "poetry",
+    "plumbing",
+    "piano",
+    "pottery"
+   ],
+   "a": 3,
+   "k": "그릇과 꽃병 만드는 법을 배우는 수업은 '도예' 수업이므로 pottery가 정답이다. 철자가 비슷한 poetry(시)를 비롯해 plumbing(배관), piano(피아노)는 그릇을 만드는 수업이 아니다."
+  }
+ },
+ {
+  "w": "portrait",
+  "pos": "n",
+  "m": [
+   "초상화, 인물 사진"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "A *portrait* of the company's founder hangs in the lobby of the headquarters.",
+  "exKo": "본사 로비에 회사 창립자의 초상화가 걸려 있다.",
+  "col": [
+   {
+    "e": "paint a portrait",
+    "k": "초상화를 그리다"
+   },
+   {
+    "e": "portrait of",
+    "k": "~의 초상화"
+   },
+   {
+    "e": "self-portrait",
+    "k": "자화상"
+   }
+  ],
+  "der": [
+   {
+    "w": "portray",
+    "pos": "v",
+    "m": "묘사하다, 그리다"
+   },
+   {
+    "w": "portrayal",
+    "pos": "n",
+    "m": "묘사"
+   }
+  ],
+  "para": [
+   "painting",
+   "picture",
+   "likeness"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 'A portrait is hanging on the wall.(초상화가 벽에 걸려 있다)'처럼 나오며, 동사 portray(묘사하다)와 구분해야 한다.",
+  "q": {
+   "s": "The retiring director's ------- will be displayed in the boardroom alongside those of her predecessors.",
+   "o": [
+    "portray",
+    "portrait",
+    "portable",
+    "portal"
+   ],
+   "a": 1,
+   "k": "회의실에 전임자들의 것과 함께 걸릴 것은 퇴임하는 이사의 '초상화'이므로 portrait가 정답이다. portray는 동사, portable(휴대용의)은 형용사, portal(입구, 포털)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "landscape",
+  "pos": "n",
+  "m": [
+   "풍경, 경치",
+   "풍경화"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "The exhibition features *landscapes* painted along the rocky coast of northern Scotland.",
+  "exKo": "그 전시회는 스코틀랜드 북부의 바위 해안을 따라 그린 풍경화들을 선보인다.",
+  "col": [
+   {
+    "e": "landscape painting",
+    "k": "풍경화"
+   },
+   {
+    "e": "rural landscape",
+    "k": "시골 풍경"
+   }
+  ],
+  "der": [
+   {
+    "w": "landscaping",
+    "pos": "n",
+    "m": "조경"
+   },
+   {
+    "w": "landscaper",
+    "pos": "n",
+    "m": "조경사"
+   }
+  ],
+  "para": [
+   "scenery",
+   "view",
+   "countryside"
+  ],
+  "ant": "",
+  "tip": "'풍경, 풍경화'라는 명사 외에 동사로 '조경하다'라는 뜻이 있으며, landscaping(조경)과 landscaper(조경사)는 시설 관리 지문에 자주 나온다.",
+  "q": {
+   "s": "The painter is best known for her peaceful ------- of the countryside around her hometown.",
+   "o": [
+    "landscapes",
+    "landmarks",
+    "landfills",
+    "landlords"
+   ],
+   "a": 0,
+   "k": "화가가 그린 고향 시골의 평화로운 '풍경화'를 뜻하는 landscapes가 정답이다. landmarks(명소), landfills(쓰레기 매립지), landlords(집주인)는 화가의 작품이 아니다."
+  }
+ },
+ {
+  "w": "mural",
+  "pos": "n",
+  "m": [
+   "벽화"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "Local students painted a colorful *mural* on the side of the old train station.",
+  "exKo": "지역 학생들이 오래된 기차역 측면에 색색의 벽화를 그렸다.",
+  "col": [
+   {
+    "e": "paint a mural",
+    "k": "벽화를 그리다"
+   },
+   {
+    "e": "wall mural",
+    "k": "벽화"
+   }
+  ],
+  "der": [
+   {
+    "w": "muralist",
+    "pos": "n",
+    "m": "벽화가"
+   }
+  ],
+  "para": [
+   "wall painting",
+   "fresco"
+  ],
+  "ant": "",
+  "tip": "건물 벽에 그리는 대형 그림으로 Part 1 사진과 지역 미화 사업을 다루는 Part 7 지문에 나온다. paint a mural on the wall처럼 on과 쓴다.",
+  "q": {
+   "s": "Artists have been hired to paint a large ------- on the exterior wall of the new shopping mall.",
+   "o": [
+    "moral",
+    "mortal",
+    "mural",
+    "muffler"
+   ],
+   "a": 2,
+   "k": "건물 외벽에 그리는 대형 그림은 '벽화'이므로 mural이 정답이다. moral(교훈, 도덕), mortal(인간), muffler(머플러)는 벽에 그리는 대상이 아니다."
+  }
+ },
+ {
+  "w": "abstract",
+  "pos": "adj",
+  "m": [
+   "추상적인",
+   "(명) 요약, 초록"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The gallery's new exhibit features *abstract* paintings made with bold colors and simple shapes.",
+  "exKo": "그 갤러리의 새 전시는 대담한 색채와 단순한 형태로 그린 추상화들을 선보인다.",
+  "col": [
+   {
+    "e": "abstract art",
+    "k": "추상 미술"
+   },
+   {
+    "e": "abstract painting",
+    "k": "추상화"
+   },
+   {
+    "e": "abstract concept",
+    "k": "추상적 개념"
+   }
+  ],
+  "der": [
+   {
+    "w": "abstraction",
+    "pos": "n",
+    "m": "추상, 추상화"
+   }
+  ],
+  "para": [
+   "nonrepresentational",
+   "conceptual"
+  ],
+  "ant": "concrete",
+  "tip": "abstract art(추상 미술)처럼 형용사로 쓰이고, 명사로는 논문의 '요약, 초록'이라는 뜻도 있어 학회 지문에 나온다. 반의어는 concrete(구체적인), realistic(사실적인)이다.",
+  "q": {
+   "s": "Unlike his earlier realistic paintings, Mr. Okafor's recent works are entirely -------.",
+   "o": [
+    "abstract",
+    "lifelike",
+    "accurate",
+    "detailed"
+   ],
+   "a": 0,
+   "k": "unlike(~와 달리)로 초기의 사실적인 그림과 대조를 이루므로 '추상적인'이라는 뜻의 abstract가 정답이다. lifelike(실물 같은), accurate(정확한), detailed(세밀한)는 사실적인 그림과 대조되지 않는다."
+  }
+ },
+ {
+  "w": "fine arts",
+  "pos": "phr",
+  "m": [
+   "(회화·조각 등의) 미술, 순수 미술"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Ms. Delgado holds a degree in *fine arts* and teaches painting at a community college.",
+  "exKo": "Delgado 씨는 미술 학위를 소지하고 있으며 지역 전문대학에서 회화를 가르친다.",
+  "col": [
+   {
+    "e": "museum of fine arts",
+    "k": "미술관"
+   },
+   {
+    "e": "degree in fine arts",
+    "k": "미술 학위"
+   }
+  ],
+  "der": [],
+  "para": [
+   "visual arts"
+  ],
+  "ant": "",
+  "tip": "회화, 조각 등 감상을 위한 순수 미술을 가리키며 Museum of Fine Arts처럼 기관 이름에 자주 쓰인다. 음악·연극 등은 performing arts(공연 예술)로 구분한다.",
+  "q": {
+   "s": "Before becoming a graphic designer, Mr. Reyes studied ------- arts, focusing on oil painting and sculpture.",
+   "o": [
+    "finely",
+    "fined",
+    "finest",
+    "fine"
+   ],
+   "a": 3,
+   "k": "arts와 결합해 회화·조각 같은 '순수 미술'을 뜻하는 fine arts를 이루는 fine이 정답이다. finely는 부사, fined는 '벌금을 부과받은', finest는 최상급으로 이 표현을 만들지 않는다."
+  }
+ },
+ {
+  "w": "performing arts",
+  "pos": "phr",
+  "m": [
+   "공연 예술"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The university's *performing arts* department stages four plays and two operas each year.",
+  "exKo": "그 대학의 공연 예술 학부는 매년 연극 네 편과 오페라 두 편을 무대에 올린다.",
+  "col": [
+   {
+    "e": "performing arts center",
+    "k": "공연 예술 센터"
+   },
+   {
+    "e": "school of performing arts",
+    "k": "공연 예술 학교"
+   }
+  ],
+  "der": [
+   {
+    "w": "perform",
+    "pos": "v",
+    "m": "공연하다"
+   },
+   {
+    "w": "performance",
+    "pos": "n",
+    "m": "공연, 성과"
+   }
+  ],
+  "para": [
+   "theater",
+   "stage arts"
+  ],
+  "ant": "",
+  "tip": "음악·연극·무용처럼 무대에서 공연하는 예술을 가리키며 performing arts center(공연 예술 센터) 형태로 자주 나온다. performance art(행위 예술)와는 다른 말이다.",
+  "q": {
+   "s": "The city's new center for the ------- arts includes a concert hall and two theaters.",
+   "o": [
+    "performed",
+    "performs",
+    "performing",
+    "performer"
+   ],
+   "a": 2,
+   "k": "arts와 결합해 '공연 예술'을 뜻하는 performing arts를 이루는 performing이 정답이다. performed arts라고는 쓰지 않으며, performs는 동사, performer는 사람명사다."
+  }
+ },
+ {
+  "w": "artisan",
+  "pos": "n",
+  "m": [
+   "장인, 공예가"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The market features jewelry and leather goods made by local *artisans*.",
+  "exKo": "그 시장에서는 지역 장인들이 만든 장신구와 가죽 제품을 선보인다.",
+  "col": [
+   {
+    "e": "local artisans",
+    "k": "지역 장인"
+   },
+   {
+    "e": "artisan bread",
+    "k": "장인이 만든 빵"
+   }
+  ],
+  "der": [
+   {
+    "w": "artisanal",
+    "pos": "adj",
+    "m": "장인의, 수공예의"
+   }
+  ],
+  "para": [
+   "craftsperson",
+   "craftsman",
+   "maker"
+  ],
+  "ant": "",
+  "tip": "손으로 물건을 만드는 숙련공을 뜻하며 Part 7에서 craftsperson으로 패러프레이징된다. artisan bread/cheese처럼 '장인이 만든, 수제의'라는 수식어로도 쓴다.",
+  "q": {
+   "s": "Every rug sold at the shop is woven by hand by skilled ------- in small mountain villages.",
+   "o": [
+    "artifacts",
+    "artisans",
+    "articles",
+    "artworks"
+   ],
+   "a": 1,
+   "k": "woven by(~에 의해 짜인) 뒤에는 행위자인 사람명사가 와야 하므로 '장인'을 뜻하는 artisans가 정답이다. artifacts(유물), articles(기사, 물품), artworks(미술품)는 사람이 아니다."
+  }
+ },
+ {
+  "w": "handmade",
+  "pos": "adj",
+  "m": [
+   "손으로 만든, 수제의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Every scarf in the boutique is *handmade* from locally produced wool.",
+  "exKo": "그 부티크의 모든 스카프는 지역에서 생산된 양모로 손수 만든 것이다.",
+  "col": [
+   {
+    "e": "handmade soap",
+    "k": "수제 비누"
+   },
+   {
+    "e": "handmade goods",
+    "k": "수제품"
+   }
+  ],
+  "der": [],
+  "para": [
+   "handcrafted",
+   "homemade",
+   "made by hand"
+  ],
+  "ant": "machine-made",
+  "tip": "made by hand와 같은 뜻으로 Part 7에서 handcrafted로 패러프레이징된다. 반의어는 machine-made(기계로 만든), mass-produced(대량 생산된)이다.",
+  "q": {
+   "s": "Unlike mass-produced furniture, our ------- tables are each built by a single craftsperson.",
+   "o": [
+    "handy",
+    "handheld",
+    "handmade",
+    "handful"
+   ],
+   "a": 2,
+   "k": "mass-produced(대량 생산된)와 대조되며 장인 한 명이 만든다는 내용에 맞는 handmade가 정답이다. handy(편리한), handheld(손에 들고 쓰는)는 대조를 이루지 못하고, handful(한 줌)은 명사다."
+  }
+ },
+ {
+  "w": "handcrafted",
+  "pos": "adj",
+  "m": [
+   "수공예의, 손으로 정성껏 만든"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The hotel's lobby is decorated with *handcrafted* wooden furniture from the region.",
+  "exKo": "그 호텔 로비는 지역 장인이 손으로 만든 목재 가구로 꾸며져 있다.",
+  "col": [
+   {
+    "e": "handcrafted jewelry",
+    "k": "수공예 장신구"
+   },
+   {
+    "e": "handcrafted furniture",
+    "k": "수제 가구"
+   }
+  ],
+  "der": [
+   {
+    "w": "craft",
+    "pos": "n",
+    "m": "공예, 기술"
+   },
+   {
+    "w": "craftsmanship",
+    "pos": "n",
+    "m": "솜씨, 장인 정신"
+   }
+  ],
+  "para": [
+   "handmade",
+   "artisanal"
+  ],
+  "ant": "",
+  "tip": "handmade와 같은 뜻이지만 '숙련된 솜씨로 정성 들여 만든'이라는 느낌이 있어 광고 문구에 자주 쓰인다. 동사 craft(공들여 만들다)의 과거분사에서 나왔다.",
+  "q": {
+   "s": "Our ------- leather bags are stitched entirely by hand in a small workshop in Florence.",
+   "o": [
+    "handcrafted",
+    "handwritten",
+    "handicapped",
+    "handshaking"
+   ],
+   "a": 0,
+   "k": "가방이 작은 공방에서 전부 손으로 꿰매어진다는 내용과 어울리는 '수공예의'라는 뜻의 handcrafted가 정답이다. handwritten(손으로 쓴)은 글씨에 쓰고, handicapped(장애가 있는), handshaking(악수)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "antique",
+  "pos": "n",
+  "m": [
+   "골동품",
+   "(형) 골동품인, 고풍스러운"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "Mr. Bauer collects *antiques* and recently purchased a clock from the 1800s.",
+  "exKo": "Bauer 씨는 골동품을 수집하며 최근에 1800년대 시계를 구입했다.",
+  "col": [
+   {
+    "e": "antique shop",
+    "k": "골동품 가게"
+   },
+   {
+    "e": "antique furniture",
+    "k": "골동품 가구"
+   },
+   {
+    "e": "antique dealer",
+    "k": "골동품상"
+   }
+  ],
+  "der": [
+   {
+    "w": "antiquity",
+    "pos": "n",
+    "m": "고대, (복수) 고대 유물"
+   }
+  ],
+  "para": [
+   "collectible",
+   "heirloom",
+   "relic"
+  ],
+  "ant": "",
+  "tip": "명사(골동품)와 형용사(antique furniture)로 모두 쓰이며 보통 100년 이상 된 물건을 가리킨다. 그보다 최근의 가치 있는 옛 물건은 vintage로 표현한다.",
+  "q": {
+   "s": "The ------- dealer estimated that the hand-painted vase was more than two hundred years old.",
+   "o": [
+    "anticipated",
+    "antique",
+    "antibiotic",
+    "antisocial"
+   ],
+   "a": 1,
+   "k": "200년이 넘은 꽃병의 연대를 감정하는 사람은 '골동품' 상인이므로 antique가 정답이다. anticipated(기대되는), antibiotic(항생제), antisocial(비사교적인)은 dealer와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "vintage",
+  "pos": "adj",
+  "m": [
+   "(오래되어) 가치 있는, 고전적인",
+   "빈티지의"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The shop specializes in *vintage* clothing from the 1960s and 1970s.",
+  "exKo": "그 가게는 1960~70년대의 빈티지 의류를 전문으로 한다.",
+  "col": [
+   {
+    "e": "vintage car",
+    "k": "클래식 자동차"
+   },
+   {
+    "e": "vintage clothing",
+    "k": "빈티지 의류"
+   }
+  ],
+  "der": [],
+  "para": [
+   "classic",
+   "retro",
+   "old-fashioned"
+  ],
+  "ant": "",
+  "tip": "오래되었지만 가치 있는 물건을 수식하며 vintage car/clothing처럼 쓰인다. 명사로는 '(포도주의) 생산 연도'라는 뜻이 있다.",
+  "q": {
+   "s": "Collectors from around the world attended the auction to bid on ------- cars from the 1930s.",
+   "o": [
+    "vacant",
+    "vigilant",
+    "verbal",
+    "vintage"
+   ],
+   "a": 3,
+   "k": "1930년대에 만들어져 수집가들이 입찰하는 자동차는 '고전적인 가치가 있는' 자동차이므로 vintage가 정답이다. vacant(비어 있는), vigilant(경계하는), verbal(말의)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "artifact",
+  "pos": "n",
+  "m": [
+   "(역사적) 유물, 인공물"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Archaeologists discovered several ancient *artifacts* during the construction of the new subway line.",
+  "exKo": "고고학자들이 새 지하철 노선 공사 중에 여러 고대 유물을 발견했다.",
+  "col": [
+   {
+    "e": "ancient artifact",
+    "k": "고대 유물"
+   },
+   {
+    "e": "cultural artifacts",
+    "k": "문화 유물"
+   }
+  ],
+  "der": [],
+  "para": [
+   "relic",
+   "object",
+   "antiquity"
+  ],
+  "ant": "",
+  "tip": "옛사람들이 만든 도구·장신구 등 '유물'을 뜻하는 가산명사로 박물관 지문에 자주 나온다. 영국식 철자는 artefact이며, 사람명사 artisan(장인)과 혼동하지 말 것.",
+  "q": {
+   "s": "The museum's new gallery displays ------- recovered from a shipwreck off the coast of Portugal.",
+   "o": [
+    "artisans",
+    "artifacts",
+    "artistry",
+    "articulations"
+   ],
+   "a": 1,
+   "k": "난파선에서 건져 내어 전시하는 것은 '유물'이므로 artifacts가 정답이다. artisans(장인)는 사람이고, artistry(예술적 기교), articulations(표현, 관절)는 건져 내 전시할 수 있는 대상이 아니다."
+  }
+ },
+ {
+  "w": "historian",
+  "pos": "n",
+  "m": [
+   "역사가, 사학자"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "A local *historian* will lead a guided walk through the oldest neighborhood in town.",
+  "exKo": "지역 역사가가 마을에서 가장 오래된 동네를 둘러보는 가이드 산책을 이끈다.",
+  "col": [
+   {
+    "e": "local historian",
+    "k": "지역 역사가"
+   },
+   {
+    "e": "art historian",
+    "k": "미술사학자"
+   }
+  ],
+  "der": [
+   {
+    "w": "history",
+    "pos": "n",
+    "m": "역사"
+   },
+   {
+    "w": "historic",
+    "pos": "adj",
+    "m": "역사적으로 중요한"
+   },
+   {
+    "w": "historical",
+    "pos": "adj",
+    "m": "역사의, 역사상의"
+   }
+  ],
+  "para": [
+   "scholar",
+   "expert"
+  ],
+  "ant": "",
+  "tip": "사람명사 historian과 함께 historic(역사적으로 중요한)과 historical(역사의, 역사상의)의 의미 구분이 Part 5에 자주 출제된다.",
+  "q": {
+   "s": "The book about the city's railroad was written by a ------- who spent ten years researching old records.",
+   "o": [
+    "history",
+    "historic",
+    "historical",
+    "historian"
+   ],
+   "a": 3,
+   "k": "관계대명사 who가 수식하며 책을 쓴 사람이 와야 하므로 사람명사 historian이 정답이다. history는 사물명사, historic, historical은 형용사다."
+  }
+ },
+ {
+  "w": "restoration",
+  "pos": "n",
+  "m": [
+   "복원, 복구",
+   "회복"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The *restoration* of the 19th-century opera house took nearly four years to complete.",
+  "exKo": "19세기 오페라 극장의 복원 작업은 완료하는 데 거의 4년이 걸렸다.",
+  "col": [
+   {
+    "e": "restoration project",
+    "k": "복원 사업"
+   },
+   {
+    "e": "undergo restoration",
+    "k": "복원 공사를 하다"
+   },
+   {
+    "e": "restoration of",
+    "k": "~의 복원"
+   }
+  ],
+  "der": [
+   {
+    "w": "restore",
+    "pos": "v",
+    "m": "복원하다, 회복시키다"
+   }
+  ],
+  "para": [
+   "renovation",
+   "repair",
+   "refurbishment"
+  ],
+  "ant": "",
+  "tip": "동사 restore(복원하다)와의 품사 구분 문제로 나오며, 건물의 restoration은 Part 7에서 renovation, refurbishment로 패러프레이징된다.",
+  "q": {
+   "s": "The clock tower will remain closed to visitors until ------- work is completed next spring.",
+   "o": [
+    "restoration",
+    "restore",
+    "restores",
+    "restoring"
+   ],
+   "a": 0,
+   "k": "work 앞에서 복합명사 restoration work(복원 작업)를 이루는 명사 restoration이 정답이다. restore, restores는 동사이고, restoring은 work와 이런 복합명사를 만들지 않는다."
+  }
+ },
+ {
+  "w": "preservation",
+  "pos": "n",
+  "m": [
+   "보존, 보호"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The foundation supports the *preservation* of historic buildings in the downtown area.",
+  "exKo": "그 재단은 도심 지역 역사적 건물의 보존을 지원한다.",
+  "col": [
+   {
+    "e": "historic preservation",
+    "k": "역사 유적 보존"
+   },
+   {
+    "e": "preservation of",
+    "k": "~의 보존"
+   },
+   {
+    "e": "wildlife preservation",
+    "k": "야생 동물 보호"
+   }
+  ],
+  "der": [
+   {
+    "w": "preserve",
+    "pos": "v",
+    "m": "보존하다"
+   },
+   {
+    "w": "preservative",
+    "pos": "n",
+    "m": "방부제"
+   }
+  ],
+  "para": [
+   "conservation",
+   "protection",
+   "maintenance"
+  ],
+  "ant": "",
+  "tip": "동사 preserve(보존하다), 명사 preservative(방부제)와 구분하는 품사 문제가 나오며 Part 7에서 conservation, protection으로 패러프레이징된다.",
+  "q": {
+   "s": "Funds raised at the gala will go toward the ------- of rare manuscripts in the university library.",
+   "o": [
+    "preservative",
+    "preserved",
+    "preservation",
+    "preservable"
+   ],
+   "a": 2,
+   "k": "정관사 the와 전치사 of 사이 명사 자리이며 '보존'을 뜻하는 preservation이 정답이다. preservative는 '방부제'라 문맥에 맞지 않고, preserved, preservable은 형용사 형태다."
+  }
+ },
+ {
+  "w": "botanical garden",
+  "pos": "phr",
+  "m": [
+   "식물원"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *botanical garden* has more than 3,000 species of plants from around the world.",
+  "exKo": "그 식물원에는 전 세계에서 온 3,000종이 넘는 식물이 있다.",
+  "col": [
+   {
+    "e": "visit the botanical garden",
+    "k": "식물원을 방문하다"
+   },
+   {
+    "e": "city botanical garden",
+    "k": "시립 식물원"
+   }
+  ],
+  "der": [
+   {
+    "w": "botany",
+    "pos": "n",
+    "m": "식물학"
+   },
+   {
+    "w": "botanist",
+    "pos": "n",
+    "m": "식물학자"
+   }
+  ],
+  "para": [
+   "arboretum",
+   "public garden"
+  ],
+  "ant": "",
+  "tip": "Part 4 관광 안내나 Part 7 지역 명소 지문에 나온다. 형용사 botanical(식물의)과 명사 botany(식물학), botanist(식물학자)를 구분해 둔다.",
+  "q": {
+   "s": "The tour concludes with a visit to the city's ------- garden, which features over 500 types of roses.",
+   "o": [
+    "botany",
+    "botanist",
+    "botanize",
+    "botanical"
+   ],
+   "a": 3,
+   "k": "garden을 수식해 '식물원'을 뜻하는 botanical garden을 이루는 형용사 botanical이 정답이다. botany(식물학)와 botanist(식물학자)는 명사, botanize는 동사다."
+  }
+ },
+ {
+  "w": "memorabilia",
+  "pos": "n",
+  "m": [
+   "(유명인·사건 관련) 기념품, 수집품"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The sports bar's walls are covered with baseball *memorabilia*, including signed jerseys and old tickets.",
+  "exKo": "그 스포츠 바의 벽은 사인이 든 유니폼과 오래된 입장권 등 야구 기념품으로 덮여 있다.",
+  "col": [
+   {
+    "e": "sports memorabilia",
+    "k": "스포츠 기념품"
+   },
+   {
+    "e": "music memorabilia",
+    "k": "음악 관련 수집품"
+   }
+  ],
+  "der": [
+   {
+    "w": "memorable",
+    "pos": "adj",
+    "m": "기억할 만한"
+   }
+  ],
+  "para": [
+   "souvenirs",
+   "collectibles",
+   "mementos"
+  ],
+  "ant": "",
+  "tip": "유명인·행사와 관련된 수집용 기념품을 통틀어 이르는 복수 취급 명사로 a memorabilia처럼 쓰지 않는다. Part 7에서 collectibles로 패러프레이징된다.",
+  "q": {
+   "s": "The exhibit features movie ------- such as costumes, scripts, and posters from classic films.",
+   "o": [
+    "memorabilia",
+    "memoranda",
+    "memorials",
+    "memorization"
+   ],
+   "a": 0,
+   "k": "의상, 대본, 포스터처럼 영화와 관련된 수집품을 가리키므로 memorabilia가 정답이다. memoranda(메모, 회람), memorials(기념비), memorization(암기)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "aquarium",
+  "pos": "n",
+  "m": [
+   "수족관"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Schoolchildren on the field trip watched the sharks being fed at the city *aquarium*.",
+  "exKo": "현장 학습을 온 학생들이 시립 수족관에서 상어에게 먹이를 주는 모습을 지켜보았다.",
+  "col": [
+   {
+    "e": "public aquarium",
+    "k": "공공 수족관"
+   },
+   {
+    "e": "aquarium tank",
+    "k": "수조"
+   }
+  ],
+  "der": [
+   {
+    "w": "aquatic",
+    "pos": "adj",
+    "m": "물속의, 수생의"
+   }
+  ],
+  "para": [
+   "marine center",
+   "sea life center"
+  ],
+  "ant": "",
+  "tip": "Part 4 관광 안내에서 지역 명소로 자주 등장하며, 형용사 aquatic(수생의; aquatic animals)도 함께 알아 둔다.",
+  "q": {
+   "s": "Visitors to the ------- can touch starfish and other sea creatures in a special pool.",
+   "o": [
+    "auditorium",
+    "arboretum",
+    "aquarium",
+    "armory"
+   ],
+   "a": 2,
+   "k": "불가사리 같은 바다 생물을 만져 볼 수 있는 곳은 '수족관'이므로 aquarium이 정답이다. auditorium(강당), arboretum(수목원), armory(무기고)는 바다 생물을 볼 수 있는 곳이 아니다."
+  }
+ },
+ {
+  "w": "arts and crafts",
+  "pos": "phr",
+  "m": [
+   "공예, 미술 공예"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The summer camp offers swimming, hiking, and *arts and crafts* for children aged six to twelve.",
+  "exKo": "그 여름 캠프는 6세에서 12세 어린이를 위해 수영, 하이킹, 공예 활동을 제공한다.",
+  "col": [
+   {
+    "e": "arts and crafts fair",
+    "k": "공예품 장터"
+   },
+   {
+    "e": "arts and crafts supplies",
+    "k": "공예 용품"
+   }
+  ],
+  "der": [
+   {
+    "w": "craft",
+    "pos": "n",
+    "m": "공예, 기술"
+   }
+  ],
+  "para": [
+   "handicrafts",
+   "crafts"
+  ],
+  "ant": "",
+  "tip": "그림·만들기 같은 손재주 활동을 가리키며 arts and crafts fair(공예품 장터)처럼 명사를 꾸미기도 한다. 어린이 캠프·지역 행사 안내문에 자주 나온다.",
+  "q": {
+   "s": "Children in the library's summer program will make masks and puppets during the arts and ------- session.",
+   "o": [
+    "crafty",
+    "crafts",
+    "crafted",
+    "craftily"
+   ],
+   "a": 1,
+   "k": "arts and와 결합해 '공예'를 뜻하는 arts and crafts를 이루는 명사 crafts가 정답이다. crafty(교활한)는 형용사, crafted는 과거분사, craftily는 부사다."
+  }
+ },
+ {
+  "w": "community center",
+  "pos": "phr",
+  "m": [
+   "주민 센터, 지역 문화 회관"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Free yoga classes are held every Tuesday evening at the *community center* on Elm Street.",
+  "exKo": "Elm 가에 있는 주민 센터에서 매주 화요일 저녁 무료 요가 수업이 열린다.",
+  "col": [
+   {
+    "e": "local community center",
+    "k": "지역 주민 센터"
+   },
+   {
+    "e": "at the community center",
+    "k": "주민 센터에서"
+   }
+  ],
+  "der": [
+   {
+    "w": "community",
+    "pos": "n",
+    "m": "지역 사회, 공동체"
+   }
+  ],
+  "para": [
+   "civic center",
+   "neighborhood center"
+  ],
+  "ant": "",
+  "tip": "지역 주민을 위한 강좌·행사가 열리는 장소로 Part 4 공지와 Part 7 지역 소식에 자주 나오며 civic center로 패러프레이징된다.",
+  "q": {
+   "s": "The ------- center will be closed for renovations, so the book club will meet at the library instead.",
+   "o": [
+    "community",
+    "commodity",
+    "commuter",
+    "commute"
+   ],
+   "a": 0,
+   "k": "독서 모임이 열리던 지역 공공시설은 '주민 센터'이므로 community center를 이루는 community가 정답이다. commodity(상품), commuter(통근자), commute(통근)는 center와 결합해 이런 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "city hall",
+  "pos": "phr",
+  "m": [
+   "시청"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Residents can apply for a parking permit in person at *city hall* or online.",
+  "exKo": "주민들은 시청을 직접 방문하거나 온라인으로 주차 허가를 신청할 수 있다.",
+  "col": [
+   {
+    "e": "at city hall",
+    "k": "시청에서"
+   },
+   {
+    "e": "in front of city hall",
+    "k": "시청 앞에서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "town hall",
+   "municipal building"
+  ],
+  "ant": "",
+  "tip": "고유 기관처럼 쓰여 관사 없이 at city hall로 쓰는 경우가 많다. Part 7에서 municipal building, town hall로 패러프레이징된다.",
+  "q": {
+   "s": "Building permits must be obtained from the planning office at city ------- before construction begins.",
+   "o": [
+    "hole",
+    "hull",
+    "heel",
+    "hall"
+   ],
+   "a": 3,
+   "k": "건축 허가를 받는 곳은 시청 기획과이므로 city hall(시청)을 이루는 hall이 정답이다. hole(구멍), hull(선체), heel(발뒤꿈치)은 발음이 비슷한 오답이다."
+  }
+ },
+ {
+  "w": "public hearing",
+  "pos": "phr",
+  "m": [
+   "공청회"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The city council will hold a *public hearing* on the proposed bus fare increase next Monday.",
+  "exKo": "시의회는 다음 주 월요일에 제안된 버스 요금 인상에 관한 공청회를 연다.",
+  "col": [
+   {
+    "e": "hold a public hearing",
+    "k": "공청회를 열다"
+   },
+   {
+    "e": "public hearing on",
+    "k": "~에 관한 공청회"
+   }
+  ],
+  "der": [
+   {
+    "w": "hear",
+    "pos": "v",
+    "m": "듣다, (사건을) 심리하다"
+   }
+  ],
+  "para": [
+   "open meeting",
+   "town hall meeting",
+   "public forum"
+  ],
+  "ant": "",
+  "tip": "정책 결정 전에 주민 의견을 듣는 '공청회'로 hold a public hearing on(~에 관한 공청회를 열다)처럼 on과 쓴다. hearing은 '청력' 외에 '청문회, 심리'라는 뜻이 있다.",
+  "q": {
+   "s": "Residents who wish to comment on the new zoning plan may speak at the public ------- on May 3.",
+   "o": [
+    "heard",
+    "hearing",
+    "hears",
+    "hearer"
+   ],
+   "a": 1,
+   "k": "the public 뒤 명사 자리이며 주민이 의견을 말하는 '공청회'를 뜻하는 hearing이 정답이다. heard, hears는 동사이고, hearer(듣는 사람)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "petition",
+  "pos": "n",
+  "m": [
+   "청원(서), 탄원(서)"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "More than 2,000 residents signed a *petition* asking the city to keep the library open on Sundays.",
+  "exKo": "2,000명이 넘는 주민이 시에 도서관 일요일 개관을 유지해 달라고 요청하는 청원서에 서명했다.",
+  "col": [
+   {
+    "e": "sign a petition",
+    "k": "청원서에 서명하다"
+   },
+   {
+    "e": "petition against",
+    "k": "~에 반대하는 청원"
+   },
+   {
+    "e": "submit a petition",
+    "k": "청원서를 제출하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "petitioner",
+    "pos": "n",
+    "m": "청원인"
+   }
+  ],
+  "para": [
+   "appeal",
+   "formal request"
+  ],
+  "ant": "",
+  "tip": "sign/submit a petition(청원서에 서명하다/제출하다)으로 쓰며, 동사로는 petition A for B(A에게 B를 청원하다)처럼 쓴다. Part 7 지역 소식에서 appeal, formal request로 패러프레이징된다.",
+  "q": {
+   "s": "Shop owners on Main Street have submitted a ------- opposing the plan to remove street parking.",
+   "o": [
+    "position",
+    "partition",
+    "petition",
+    "perception"
+   ],
+   "a": 2,
+   "k": "도로변 주차 폐지 계획에 반대하며 제출한 것은 '청원서'이므로 petition이 정답이다. position(위치, 입장), partition(칸막이), perception(인식)은 제출하는 문서가 아니다."
+  }
+ },
+ {
+  "w": "community garden",
+  "pos": "phr",
+  "m": [
+   "공동체 텃밭, 마을 정원"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Volunteers grow vegetables at the *community garden* and donate the harvest to a local food bank.",
+  "exKo": "자원봉사자들은 공동체 텃밭에서 채소를 기르고 수확물을 지역 푸드뱅크에 기부한다.",
+  "col": [
+   {
+    "e": "plot in the community garden",
+    "k": "공동체 텃밭의 구획"
+   },
+   {
+    "e": "start a community garden",
+    "k": "마을 정원을 조성하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "gardening",
+    "pos": "n",
+    "m": "원예, 정원 가꾸기"
+   }
+  ],
+  "para": [
+   "shared garden",
+   "neighborhood garden"
+  ],
+  "ant": "",
+  "tip": "주민들이 함께 가꾸는 텃밭으로, 구획(plot)을 신청하거나 자원봉사자를 모집하는 Part 7 지역 소식 지문에 자주 나온다.",
+  "q": {
+   "s": "Residents interested in renting a plot in the community ------- should contact the parks department.",
+   "o": [
+    "garden",
+    "guardian",
+    "gardener",
+    "guard"
+   ],
+   "a": 0,
+   "k": "구획(plot)을 빌릴 수 있는 곳은 '공동체 텃밭'이므로 community garden을 이루는 garden이 정답이다. guardian(보호자), gardener(정원사), guard(경비원)는 사람이라 구획이 있는 장소가 될 수 없다."
+  }
+ },
+ {
+  "w": "cleanup",
+  "pos": "n",
+  "m": [
+   "(대)청소, 정화 활동"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Dozens of employees volunteered for the annual beach *cleanup* last weekend.",
+  "exKo": "지난 주말 수십 명의 직원이 연례 해변 정화 활동에 자원했다.",
+  "col": [
+   {
+    "e": "beach cleanup",
+    "k": "해변 정화 활동"
+   },
+   {
+    "e": "park cleanup",
+    "k": "공원 청소"
+   },
+   {
+    "e": "cleanup effort",
+    "k": "정화 노력"
+   }
+  ],
+  "der": [
+   {
+    "w": "clean up",
+    "pos": "phr",
+    "m": "청소하다, 치우다"
+   }
+  ],
+  "para": [
+   "cleaning",
+   "clearing"
+  ],
+  "ant": "",
+  "tip": "명사는 한 단어 cleanup(또는 clean-up), 동사구는 clean up으로 띄어 쓴다. 지역 봉사 활동을 다루는 Part 4·7 지문에 자주 나온다.",
+  "q": {
+   "s": "Volunteers who take part in the river ------- will receive gloves, trash bags, and a free lunch.",
+   "o": [
+    "cleaner",
+    "cleanser",
+    "cleanliness",
+    "cleanup"
+   ],
+   "a": 3,
+   "k": "참가(take part in)할 수 있는 행사는 '정화 활동'이므로 cleanup이 정답이다. cleaner(청소부, 세제), cleanser(세정제), cleanliness(청결)는 참가하는 행사가 될 수 없다."
+  }
+ },
+ {
+  "w": "charitable",
+  "pos": "adj",
+  "m": [
+   "자선의, 자선을 베푸는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company donates five percent of its annual profits to *charitable* organizations.",
+  "exKo": "그 회사는 연간 수익의 5퍼센트를 자선 단체에 기부한다.",
+  "col": [
+   {
+    "e": "charitable organization",
+    "k": "자선 단체"
+   },
+   {
+    "e": "charitable donation",
+    "k": "자선 기부"
+   },
+   {
+    "e": "charitable foundation",
+    "k": "자선 재단"
+   }
+  ],
+  "der": [
+   {
+    "w": "charity",
+    "pos": "n",
+    "m": "자선, 자선 단체"
+   }
+  ],
+  "para": [
+   "nonprofit",
+   "philanthropic"
+  ],
+  "ant": "",
+  "tip": "charitable organization/donation처럼 명사 앞 형용사 자리 문제로 출제되며, 명사 charity(자선 단체)와의 품사 구분에 주의한다.",
+  "q": {
+   "s": "Ms. Grant has been recognized for her ------- work, including raising funds for two children's hospitals.",
+   "o": [
+    "charitably",
+    "charities",
+    "charitable",
+    "chartered"
+   ],
+   "a": 2,
+   "k": "소유격 her와 명사 work 사이에서 명사를 수식하는 형용사 자리이므로 charitable이 정답이다. charitably는 부사, charities는 복수명사이며, chartered(공인된, 전세 낸)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "endowment",
+  "pos": "n",
+  "m": [
+   "(기관에 대한) 기부금, 기금",
+   "(타고난) 재능"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "A generous *endowment* from a former student will fund three new scholarships each year.",
+  "exKo": "한 동문의 넉넉한 기부금으로 매년 세 개의 장학금이 새로 마련된다.",
+  "col": [
+   {
+    "e": "endowment fund",
+    "k": "기부 기금"
+   },
+   {
+    "e": "receive an endowment",
+    "k": "기부금을 받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "endow",
+    "pos": "v",
+    "m": "(기금을) 기부하다, (재능을) 부여하다"
+   }
+  ],
+  "para": [
+   "donation",
+   "gift",
+   "fund"
+  ],
+  "ant": "",
+  "tip": "학교·박물관 같은 기관에 기부되어 운영 자금으로 쓰이는 '기금'을 뜻한다. 동사 endow(기부하다)는 be endowed with(~을 타고나다) 형태로도 쓴다.",
+  "q": {
+   "s": "The university used part of its ------- to build a new research laboratory for the engineering department.",
+   "o": [
+    "endorsement",
+    "endowment",
+    "enrollment",
+    "endurance"
+   ],
+   "a": 1,
+   "k": "대학이 새 연구실을 짓는 데 일부를 사용한 것은 '기금'이므로 endowment가 정답이다. endorsement(지지, 보증), enrollment(등록, 등록자 수), endurance(인내력)는 건물을 짓는 데 쓸 수 있는 자금이 아니다."
+  }
+ }
+]

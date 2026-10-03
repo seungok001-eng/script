@@ -1,0 +1,2206 @@
+[
+ {
+  "w": "staff",
+  "pos": "n",
+  "m": [
+   "직원(들)",
+   "전 직원"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The hotel's *staff* went out of their way to make our stay comfortable.",
+  "exKo": "그 호텔 직원들은 우리가 편안하게 머물 수 있도록 각별히 신경을 써 주었다.",
+  "col": [
+   {
+    "e": "staff meeting",
+    "k": "직원회의"
+   },
+   {
+    "e": "short of staff",
+    "k": "일손이 부족한"
+   },
+   {
+    "e": "support staff",
+    "k": "지원 인력"
+   }
+  ],
+  "der": [
+   {
+    "w": "staffing",
+    "pos": "n",
+    "m": "직원 채용, 인력 배치"
+   },
+   {
+    "w": "staffer",
+    "pos": "n",
+    "m": "직원 (한 명)"
+   }
+  ],
+  "para": [
+   "employees",
+   "personnel",
+   "workforce"
+  ],
+  "ant": "",
+  "tip": "staff는 직원 전체를 가리키는 집합명사라 a staff, staffs로 쓰지 않고, 한 명은 a staff member라고 한다. 동사로 '직원을 배치하다(be staffed by)'라는 뜻도 있다.",
+  "q": {
+   "s": "All ------- are asked to park in the rear lot while the front entrance is being repaved.",
+   "o": [
+    "staffed",
+    "staffing",
+    "staffer",
+    "staff"
+   ],
+   "a": 3,
+   "k": "All 뒤에서 복수 동사 are의 주어가 되는 집합명사 staff(직원들)가 정답이다. staffer는 단수 가산명사라 are와 맞지 않고, staffing은 '인력 배치'라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "manager",
+  "pos": "n",
+  "m": [
+   "관리자",
+   "부장, 매니저"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The store *manager* approved Mr. Hill's request to leave early on Friday.",
+  "exKo": "매장 관리자는 금요일에 일찍 퇴근하겠다는 Hill 씨의 요청을 승인했다.",
+  "col": [
+   {
+    "e": "store manager",
+    "k": "매장 관리자"
+   },
+   {
+    "e": "project manager",
+    "k": "프로젝트 책임자"
+   },
+   {
+    "e": "hiring manager",
+    "k": "채용 담당 관리자"
+   }
+  ],
+  "der": [
+   {
+    "w": "manage",
+    "pos": "v",
+    "m": "관리하다, 운영하다"
+   },
+   {
+    "w": "management",
+    "pos": "n",
+    "m": "경영, 경영진"
+   },
+   {
+    "w": "managerial",
+    "pos": "adj",
+    "m": "관리의, 경영의"
+   }
+  ],
+  "para": [
+   "supervisor",
+   "head"
+  ],
+  "ant": "",
+  "tip": "manager는 사람명사, management는 '경영(진)'이라는 추상·집합명사다. 관사 뒤 사람이 와야 하는 자리에서 둘을 구별한다.",
+  "q": {
+   "s": "Please speak to the shift ------- if you need to swap working hours with a colleague.",
+   "o": [
+    "manageable",
+    "manager",
+    "managerial",
+    "manage"
+   ],
+   "a": 1,
+   "k": "the shift 뒤에서 복합명사를 이루며 speak to의 대상이 되는 사람명사 manager가 정답이다. manageable, managerial은 형용사, manage는 동사다."
+  }
+ },
+ {
+  "w": "performance review",
+  "pos": "phr",
+  "m": [
+   "인사 고과",
+   "업무 평가"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Each employee meets with a supervisor for a *performance review* twice a year.",
+  "exKo": "각 직원은 1년에 두 번 상사와 만나 업무 평가를 받는다.",
+  "col": [
+   {
+    "e": "annual performance review",
+    "k": "연례 업무 평가"
+   },
+   {
+    "e": "conduct a performance review",
+    "k": "업무 평가를 실시하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "performance appraisal",
+   "evaluation"
+  ],
+  "ant": "",
+  "tip": "performance appraisal, evaluation과 같은 뜻으로 Part 7에서 서로 바꿔 쓰인다. 평가 일정·준비 서류를 묻는 사내 공지 문제에 자주 나온다.",
+  "q": {
+   "s": "Ms. Novak received excellent feedback from her manager during her annual -------.",
+   "o": [
+    "job opening",
+    "trade fair",
+    "sales pitch",
+    "performance review"
+   ],
+   "a": 3,
+   "k": "관리자에게서 피드백을 받는 연례 행사는 업무 평가이므로 performance review가 정답이다. job opening(공석), trade fair(무역 박람회), sales pitch(판매 권유)는 상사가 피드백을 주는 자리가 아니다."
+  }
+ },
+ {
+  "w": "outgoing",
+  "pos": "adj",
+  "m": [
+   "퇴임하는, 떠나는",
+   "외향적인",
+   "발송되는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *outgoing* director will help train her replacement before leaving in May.",
+  "exKo": "퇴임하는 이사는 5월에 떠나기 전에 후임자 교육을 도울 것이다.",
+  "col": [
+   {
+    "e": "outgoing president",
+    "k": "퇴임하는 회장"
+   },
+   {
+    "e": "outgoing mail",
+    "k": "발송 우편물"
+   },
+   {
+    "e": "outgoing personality",
+    "k": "외향적인 성격"
+   }
+  ],
+  "der": [],
+  "para": [
+   "departing",
+   "retiring"
+  ],
+  "ant": "incoming",
+  "tip": "직책 앞에서는 '퇴임하는'(반의어 incoming), 성격을 말할 때는 '외향적인', mail·calls 앞에서는 '발송되는, 발신의'라는 뜻이다. 문맥에 따라 뜻을 고르는 Part 7 동의어 문제로 나온다.",
+  "q": {
+   "s": "The board held a dinner to thank the ------- chairman, who will step down at the end of the month.",
+   "o": [
+    "outdated",
+    "outlying",
+    "outbound",
+    "outgoing"
+   ],
+   "a": 3,
+   "k": "이달 말 물러날 회장이므로 '퇴임하는'이라는 뜻의 outgoing이 정답이다. outdated(구식의), outlying(외딴), outbound(밖으로 향하는)는 사람을 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "leadership",
+  "pos": "n",
+  "m": [
+   "지도력, 리더십",
+   "지도부"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Under Ms. Jung's *leadership*, the company doubled its overseas sales.",
+  "exKo": "Jung 씨의 지도 아래 그 회사는 해외 매출을 두 배로 늘렸다.",
+  "col": [
+   {
+    "e": "under the leadership of",
+    "k": "~의 지도 아래"
+   },
+   {
+    "e": "leadership skills",
+    "k": "지도력"
+   },
+   {
+    "e": "strong leadership",
+    "k": "강력한 리더십"
+   }
+  ],
+  "der": [
+   {
+    "w": "lead",
+    "pos": "v",
+    "m": "이끌다"
+   },
+   {
+    "w": "leader",
+    "pos": "n",
+    "m": "지도자"
+   }
+  ],
+  "para": [
+   "guidance",
+   "direction"
+  ],
+  "ant": "",
+  "tip": "under the leadership of(~의 지도 아래)가 대표 표현이다. 사람명사 leader와 추상명사 leadership을 구별하는 문제가 나온다.",
+  "q": {
+   "s": "The training program helps new managers develop strong ------- skills.",
+   "o": [
+    "leader",
+    "leadership",
+    "leading",
+    "led"
+   ],
+   "a": 1,
+   "k": "skills 앞에서 복합명사를 이루어 '리더십 기술'을 뜻하는 leadership이 정답이다. leader skills라고는 하지 않으며, leading은 '선두의'라는 뜻이라 어울리지 않는다."
+  }
+ },
+ {
+  "w": "director",
+  "pos": "n",
+  "m": [
+   "이사, 책임자",
+   "감독"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The marketing *director* will present the new campaign to the board on Monday.",
+  "exKo": "마케팅 이사는 월요일에 이사회에 새 캠페인을 발표할 것이다.",
+  "col": [
+   {
+    "e": "board of directors",
+    "k": "이사회"
+   },
+   {
+    "e": "marketing director",
+    "k": "마케팅 이사"
+   },
+   {
+    "e": "managing director",
+    "k": "전무 이사, 대표 이사"
+   }
+  ],
+  "der": [
+   {
+    "w": "direct",
+    "pos": "v",
+    "m": "지휘하다, 감독하다"
+   },
+   {
+    "w": "direction",
+    "pos": "n",
+    "m": "방향, 지시"
+   }
+  ],
+  "para": [
+   "head",
+   "executive"
+  ],
+  "ant": "",
+  "tip": "board of directors(이사회)와 'director of + 부서' 형태가 자주 나온다. 직책명이 appoint, name의 보어로 쓰이면 관사 없이 쓸 수 있다.",
+  "q": {
+   "s": "Mr. Evans was appointed ------- of research after fifteen years with the company.",
+   "o": [
+    "direction",
+    "director",
+    "directed",
+    "directly"
+   ],
+   "a": 1,
+   "k": "was appointed 뒤에 직책을 나타내는 명사가 와야 하므로 director가 정답이다. direction(방향, 지시)은 사람의 직책이 아니다."
+  }
+ },
+ {
+  "w": "incumbent",
+  "pos": "n",
+  "m": [
+   "현직자, 재임자",
+   "현직의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *incumbent* is expected to win a second term in next month's mayoral election.",
+  "exKo": "다음 달 시장 선거에서 현직자가 재선에 성공할 것으로 예상된다.",
+  "col": [
+   {
+    "e": "incumbent mayor",
+    "k": "현직 시장"
+   },
+   {
+    "e": "the current incumbent",
+    "k": "현 재임자"
+   },
+   {
+    "e": "incumbent on",
+    "k": "~의 의무인"
+   }
+  ],
+  "der": [
+   {
+    "w": "incumbency",
+    "pos": "n",
+    "m": "재임 기간"
+   }
+  ],
+  "para": [
+   "current officeholder"
+  ],
+  "ant": "",
+  "tip": "명사로 '현직자', 형용사로 '현직의(the incumbent CEO)'라는 뜻이다. be incumbent on/upon(~의 의무인)이라는 고급 표현도 있다.",
+  "q": {
+   "s": "The ------- CEO has agreed to stay on until the board selects a new leader.",
+   "o": [
+    "inclusive",
+    "incidental",
+    "indefinite",
+    "incumbent"
+   ],
+   "a": 3,
+   "k": "이사회가 새 대표를 선출할 때까지 자리에 남기로 한 사람은 현직 CEO이므로 incumbent가 정답이다. inclusive(포함된), incidental(부수적인), indefinite(무기한의)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "vice president",
+  "pos": "phr",
+  "m": [
+   "부사장",
+   "부회장"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Ferreira was named *vice president* of sales last spring.",
+  "exKo": "Ferreira 씨는 지난봄 영업 부사장으로 임명되었다.",
+  "col": [
+   {
+    "e": "vice president of",
+    "k": "~ 담당 부사장"
+   },
+   {
+    "e": "senior vice president",
+    "k": "수석 부사장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "VP"
+  ],
+  "ant": "",
+  "tip": "vice president of sales/marketing처럼 담당 분야를 of로 밝히며 줄여서 VP라고 쓴다. Part 7 인물 소개에서 직책을 묻는 문제로 나온다.",
+  "q": {
+   "s": "As ------- of operations, Mr. Lam oversees all of the company's manufacturing plants.",
+   "o": [
+    "vice president",
+    "assembly line",
+    "board meeting",
+    "head office"
+   ],
+   "a": 0,
+   "k": "As 뒤에서 Mr. Lam의 직책을 나타내야 하므로 vice president(부사장)가 정답이다. assembly line(조립 라인), board meeting(이사회 회의), head office(본사)는 사람의 직책이 아니다."
+  }
+ },
+ {
+  "w": "review",
+  "pos": "v",
+  "m": [
+   "검토하다",
+   "평가하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Bauer will *review* the contract carefully before it is sent to the client.",
+  "exKo": "Bauer 씨는 계약서가 고객에게 발송되기 전에 꼼꼼히 검토할 것이다.",
+  "col": [
+   {
+    "e": "under review",
+    "k": "검토 중인"
+   },
+   {
+    "e": "review a document",
+    "k": "서류를 검토하다"
+   },
+   {
+    "e": "review the results",
+    "k": "결과를 검토하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "reviewer",
+    "pos": "n",
+    "m": "검토자, 평론가"
+   }
+  ],
+  "para": [
+   "examine",
+   "go over",
+   "look over"
+  ],
+  "ant": "",
+  "tip": "동사(검토하다)와 명사(검토, 평가, 후기) 모두로 쓰인다. under review(검토 중인)는 전치사 under 뒤에 명사 review가 오는 고정 표현이다.",
+  "q": {
+   "s": "All employees should ------- the updated safety manual before next week's inspection.",
+   "o": [
+    "review",
+    "reviewer",
+    "reviewing",
+    "reviews"
+   ],
+   "a": 0,
+   "k": "조동사 should 뒤에는 동사원형이 오므로 review가 정답이다. reviewer는 명사이고, reviewing과 reviews는 조동사 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "evaluation",
+  "pos": "n",
+  "m": [
+   "평가"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Each employee's *evaluation* is based on sales figures and customer feedback.",
+  "exKo": "각 직원의 평가는 매출 수치와 고객 의견을 토대로 한다.",
+  "col": [
+   {
+    "e": "performance evaluation",
+    "k": "업무 평가"
+   },
+   {
+    "e": "written evaluation",
+    "k": "서면 평가"
+   },
+   {
+    "e": "conduct an evaluation",
+    "k": "평가를 실시하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "evaluate",
+    "pos": "v",
+    "m": "평가하다"
+   },
+   {
+    "w": "evaluator",
+    "pos": "n",
+    "m": "평가자"
+   }
+  ],
+  "para": [
+   "assessment",
+   "appraisal",
+   "review"
+  ],
+  "ant": "",
+  "tip": "가산명사라 a written evaluation, evaluations로 쓴다. 관사·형용사 뒤 명사 자리에 동사 evaluate나 사람명사 evaluator를 넣는 함정에 주의한다.",
+  "q": {
+   "s": "Supervisors must submit a written ------- of each new employee after three months.",
+   "o": [
+    "evaluate",
+    "evaluation",
+    "evaluative",
+    "evaluator"
+   ],
+   "a": 1,
+   "k": "관사 a와 형용사 written 뒤, 제출하는 대상이 되는 명사 자리이므로 evaluation이 정답이다. evaluator는 '평가자'라 제출 대상이 될 수 없다."
+  }
+ },
+ {
+  "w": "award",
+  "pos": "v",
+  "m": [
+   "(상·계약 등을) 수여하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   4,
+   5,
+   7
+  ],
+  "ex": "The committee *awarded* first prize to a young architect from Lisbon.",
+  "exKo": "위원회는 리스본 출신의 젊은 건축가에게 1등 상을 수여했다.",
+  "col": [
+   {
+    "e": "award a contract",
+    "k": "계약을 맺어 주다"
+   },
+   {
+    "e": "be awarded to",
+    "k": "~에게 수여되다"
+   },
+   {
+    "e": "award A to B",
+    "k": "A를 B에게 수여하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "awardee",
+    "pos": "n",
+    "m": "수상자"
+   },
+   {
+    "w": "award-winning",
+    "pos": "adj",
+    "m": "상을 받은"
+   }
+  ],
+  "para": [
+   "grant",
+   "give"
+  ],
+  "ant": "",
+  "tip": "award A B / award B to A(A에게 B를 수여하다) 구조이며, 입찰에서 '계약을 따내게 해 주다(award a contract)'라는 뜻으로 자주 나온다. reward는 보답으로 사람에게 주는 것이라 구별한다.",
+  "q": {
+   "s": "The contract was ------- to Linwood Construction because it submitted the lowest bid.",
+   "o": [
+    "won",
+    "earned",
+    "rewarded",
+    "awarded"
+   ],
+   "a": 3,
+   "k": "계약이 ~에게 수여되었다는 be awarded to 구조이므로 awarded가 정답이다. reward는 사람을 목적어로 해 'reward A with B'로 쓰고, won, earned는 to와 함께 수동태로 쓰지 않는다."
+  }
+ },
+ {
+  "w": "headcount",
+  "pos": "n",
+  "m": [
+   "인원수, 직원 수"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Rising demand has led the hotel chain to increase its *headcount* by nearly fifty people.",
+  "exKo": "수요가 늘면서 그 호텔 체인은 직원 수를 50명 가까이 늘렸다.",
+  "col": [
+   {
+    "e": "reduce headcount",
+    "k": "인원을 감축하다"
+   },
+   {
+    "e": "headcount freeze",
+    "k": "인원 동결"
+   }
+  ],
+  "der": [],
+  "para": [
+   "number of employees",
+   "staff size"
+  ],
+  "ant": "",
+  "tip": "회사의 '직원 수'를 뜻하며 reduce/increase headcount 형태로 인력 감축·증원 기사에 나온다. Part 7에서 the number of employees로 바꿔 표현된다.",
+  "q": {
+   "s": "Despite strong sales, the firm has kept its ------- unchanged in order to control labor costs.",
+   "o": [
+    "headline",
+    "headquarters",
+    "headway",
+    "headcount"
+   ],
+   "a": 3,
+   "k": "인건비를 통제하기 위해 변하지 않게 유지한 것은 직원 수이므로 headcount가 정답이다. headline(표제), headquarters(본사), headway(진전)는 인건비와 관련이 없다."
+  }
+ },
+ {
+  "w": "achievement",
+  "pos": "n",
+  "m": [
+   "성취, 업적"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Winning the national design prize was the greatest *achievement* of Mr. Ito's career.",
+  "exKo": "전국 디자인상을 받은 것은 Ito 씨의 경력에서 가장 큰 업적이었다.",
+  "col": [
+   {
+    "e": "outstanding achievement",
+    "k": "뛰어난 업적"
+   },
+   {
+    "e": "sense of achievement",
+    "k": "성취감"
+   },
+   {
+    "e": "lifetime achievement award",
+    "k": "공로상"
+   }
+  ],
+  "der": [
+   {
+    "w": "achieve",
+    "pos": "v",
+    "m": "성취하다, 달성하다"
+   },
+   {
+    "w": "achievable",
+    "pos": "adj",
+    "m": "달성할 수 있는"
+   }
+  ],
+  "para": [
+   "accomplishment",
+   "success"
+  ],
+  "ant": "",
+  "tip": "achievement는 가산명사(업적)와 불가산명사(성취) 모두로 쓰인다. achieve a goal(목표를 달성하다)처럼 동사형도 품사 문제에 함께 나온다.",
+  "q": {
+   "s": "The banquet celebrates the ------- of employees who exceeded their annual sales goals.",
+   "o": [
+    "achieve",
+    "achievable",
+    "achievements",
+    "achieved"
+   ],
+   "a": 2,
+   "k": "관사 the 뒤, 전치사 of 앞의 명사 자리이므로 achievements가 정답이다. achieve는 동사, achievable은 형용사, achieved는 동사의 과거형·과거분사다."
+  }
+ },
+ {
+  "w": "bonus",
+  "pos": "n",
+  "m": [
+   "상여금, 보너스",
+   "덤, 뜻밖의 혜택"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Ms. Yoon used her performance *bonus* to pay for a weekend trip to Jeju.",
+  "exKo": "Yoon 씨는 성과급으로 제주도 주말 여행 비용을 냈다.",
+  "col": [
+   {
+    "e": "year-end bonus",
+    "k": "연말 상여금"
+   },
+   {
+    "e": "performance bonus",
+    "k": "성과급"
+   },
+   {
+    "e": "signing bonus",
+    "k": "입사 축하금"
+   }
+  ],
+  "der": [],
+  "para": [
+   "incentive",
+   "reward"
+  ],
+  "ant": "",
+  "tip": "performance bonus(성과급), year-end bonus처럼 복합명사로 쓰인다. 'an added bonus(추가 혜택)'처럼 금전 외의 장점을 뜻하기도 한다.",
+  "q": {
+   "s": "Each member of the winning team was given a $500 ------- in addition to a certificate.",
+   "o": [
+    "bonus",
+    "budget",
+    "balance",
+    "bargain"
+   ],
+   "a": 0,
+   "k": "우승 팀원들이 증서와 함께 받은 500달러는 상여금이므로 bonus가 정답이다. budget(예산), balance(잔액), bargain(싼 물건)은 보상으로 받는 돈이 아니다."
+  }
+ },
+ {
+  "w": "standout",
+  "pos": "n",
+  "m": [
+   "두드러진 사람, 돋보이는 것"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Moreno was a *standout* among this year's group of new recruits.",
+  "exKo": "Moreno 씨는 올해 신입 사원들 중에서 단연 돋보이는 인재였다.",
+  "col": [
+   {
+    "e": "a clear standout",
+    "k": "단연 돋보이는 것"
+   },
+   {
+    "e": "standout performance",
+    "k": "돋보이는 성과"
+   }
+  ],
+  "der": [
+   {
+    "w": "stand out",
+    "pos": "v",
+    "m": "두드러지다, 눈에 띄다"
+   }
+  ],
+  "para": [
+   "star",
+   "highlight"
+  ],
+  "ant": "",
+  "tip": "한 단어 standout은 명사·형용사(돋보이는 사람·것), 띄어 쓴 stand out은 동사구(두드러지다)다. stand out from(~보다 돋보이다)의 전치사 짝도 함께 기억한다.",
+  "q": {
+   "s": "Of all the proposals submitted, Mr. Ahn's design was the clear -------.",
+   "o": [
+    "standstill",
+    "standby",
+    "standout",
+    "standpoint"
+   ],
+   "a": 2,
+   "k": "제출된 모든 제안서 중 단연 돋보이는 것이라는 뜻이므로 standout이 정답이다. standstill(정지), standby(대기), standpoint(관점)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "day off",
+  "pos": "phr",
+  "m": [
+   "쉬는 날, 휴무일"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Mr. Byun is taking a *day off* on Friday to attend his daughter's graduation.",
+  "exKo": "Byun 씨는 딸의 졸업식에 참석하기 위해 금요일에 하루 쉰다.",
+  "col": [
+   {
+    "e": "take a day off",
+    "k": "하루 쉬다"
+   },
+   {
+    "e": "have a day off",
+    "k": "쉬는 날이다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "holiday",
+   "leave"
+  ],
+  "ant": "",
+  "tip": "day off는 가산명사라 a day off, two days off처럼 쓰고, time off는 불가산명사다. 듣기에서 take a day off는 '휴가를 내다'로 패러프레이징된다.",
+  "q": {
+   "s": "Employees who work on a public holiday may take another ------- later in the month.",
+   "o": [
+    "time off",
+    "day off",
+    "off duty",
+    "daily"
+   ],
+   "a": 1,
+   "k": "another 뒤에는 단수 가산명사가 와야 하므로 day off가 정답이다. time off는 불가산명사라 another와 함께 쓸 수 없고, off duty는 '비번인'이라는 형용사·부사 표현이다."
+  }
+ },
+ {
+  "w": "time off",
+  "pos": "phr",
+  "m": [
+   "휴가, 휴무"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Staff who need *time off* during the busy season must get approval in advance.",
+  "exKo": "성수기에 휴가가 필요한 직원은 미리 승인을 받아야 한다.",
+  "col": [
+   {
+    "e": "take time off",
+    "k": "휴가를 내다"
+   },
+   {
+    "e": "request time off",
+    "k": "휴가를 신청하다"
+   },
+   {
+    "e": "paid time off",
+    "k": "유급 휴가"
+   }
+  ],
+  "der": [],
+  "para": [
+   "leave",
+   "vacation"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 a time off로 쓰지 않으며 two weeks of time off처럼 기간을 앞에 둔다. paid time off(유급 휴가, PTO)도 복리후생 안내문에 자주 나온다.",
+  "q": {
+   "s": "Ms. Grant has requested two weeks of ------- to visit her family in Australia.",
+   "o": [
+    "time off",
+    "day off",
+    "off-season",
+    "overtime"
+   ],
+   "a": 0,
+   "k": "two weeks of 뒤에는 불가산명사가 오며 가족을 방문하려고 신청한 것은 휴가이므로 time off가 정답이다. day off는 가산명사 단수라 two weeks of 뒤에 맞지 않고, overtime(초과 근무)은 의미가 반대다."
+  }
+ },
+ {
+  "w": "retirement",
+  "pos": "n",
+  "m": [
+   "은퇴, 퇴직"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "After thirty years at the bank, Mr. Olsen is looking forward to his *retirement*.",
+  "exKo": "은행에서 30년을 일한 Olsen 씨는 은퇴를 고대하고 있다.",
+  "col": [
+   {
+    "e": "retirement party",
+    "k": "은퇴 기념 파티"
+   },
+   {
+    "e": "early retirement",
+    "k": "조기 퇴직"
+   },
+   {
+    "e": "retirement plan",
+    "k": "퇴직 연금 제도"
+   }
+  ],
+  "der": [
+   {
+    "w": "retire",
+    "pos": "v",
+    "m": "은퇴하다"
+   },
+   {
+    "w": "retiree",
+    "pos": "n",
+    "m": "은퇴자"
+   },
+   {
+    "w": "retired",
+    "pos": "adj",
+    "m": "은퇴한"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "retirement party/dinner(은퇴 기념 행사)가 듣기와 Part 7에 자주 나온다. 소유격 뒤 명사 자리에서 사람명사 retiree와 구별한다.",
+  "q": {
+   "s": "A party will be held on Friday to celebrate Ms. Duval's ------- after 25 years of service.",
+   "o": [
+    "retire",
+    "retiree",
+    "retired",
+    "retirement"
+   ],
+   "a": 3,
+   "k": "소유격 Ms. Duval's 뒤의 명사 자리이며 축하하는 대상은 '은퇴'이므로 retirement가 정답이다. retiree는 '은퇴자'라 사람 자체를 축하한다는 뜻이 되어 어색하다."
+  }
+ },
+ {
+  "w": "resignation",
+  "pos": "n",
+  "m": [
+   "사직, 사임",
+   "사직서"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Mr. Kemp submitted his *resignation* to accept a position at a rival firm.",
+  "exKo": "Kemp 씨는 경쟁사의 직책을 받아들이기 위해 사직서를 제출했다.",
+  "col": [
+   {
+    "e": "submit one's resignation",
+    "k": "사직서를 제출하다"
+   },
+   {
+    "e": "letter of resignation",
+    "k": "사직서"
+   },
+   {
+    "e": "announce one's resignation",
+    "k": "사임을 발표하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "resign",
+    "pos": "v",
+    "m": "사임하다"
+   },
+   {
+    "w": "resigned",
+    "pos": "adj",
+    "m": "체념한"
+   }
+  ],
+  "para": [
+   "departure"
+  ],
+  "ant": "",
+  "tip": "hand in/submit one's resignation(사직서를 내다), accept a resignation(사임을 수리하다)이 대표 연어다. 동사 resign은 resign from a position처럼 from과 쓴다.",
+  "q": {
+   "s": "The board accepted the ------- of the chief financial officer, effective at the end of June.",
+   "o": [
+    "resign",
+    "resigned",
+    "resignation",
+    "resigning"
+   ],
+   "a": 2,
+   "k": "관사 the 뒤, 전치사 of 앞의 명사 자리이므로 resignation이 정답이다. accept a resignation은 '사임을 수리하다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "responsible",
+  "pos": "adj",
+  "m": [
+   "책임이 있는",
+   "담당하는"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Ms. Torres is *responsible* for scheduling shifts at all three of our downtown stores.",
+  "exKo": "Torres 씨는 시내 3개 매장 전체의 근무 일정 편성을 담당한다.",
+  "col": [
+   {
+    "e": "responsible for",
+    "k": "~을 담당하는, ~에 책임이 있는"
+   },
+   {
+    "e": "be held responsible",
+    "k": "책임을 지다"
+   }
+  ],
+  "der": [
+   {
+    "w": "responsibility",
+    "pos": "n",
+    "m": "책임, 업무"
+   },
+   {
+    "w": "responsibly",
+    "pos": "adv",
+    "m": "책임감 있게"
+   }
+  ],
+  "para": [
+   "in charge of",
+   "accountable"
+  ],
+  "ant": "irresponsible",
+  "tip": "be responsible for + 명사/-ing(~을 담당하다)가 핵심이며 Part 7에서 be in charge of로 바꿔 표현된다. be동사 뒤 보어 자리에 명사 responsibility를 넣는 함정이 나온다.",
+  "q": {
+   "s": "Ms. Ito is ------- for approving all travel expenses submitted by her team.",
+   "o": [
+    "responsibility",
+    "responsible",
+    "responsibly",
+    "response"
+   ],
+   "a": 1,
+   "k": "be동사 is 뒤 보어 자리에 형용사가 필요하며 be responsible for(~을 책임지다) 구조이므로 responsible이 정답이다."
+  }
+ },
+ {
+  "w": "responsibility",
+  "pos": "n",
+  "m": [
+   "책임",
+   "담당 업무"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Keeping the meeting rooms tidy is the *responsibility* of every employee who uses them.",
+  "exKo": "회의실을 깔끔하게 유지하는 것은 회의실을 사용하는 모든 직원의 책임이다.",
+  "col": [
+   {
+    "e": "responsibility for",
+    "k": "~에 대한 책임"
+   },
+   {
+    "e": "take on responsibilities",
+    "k": "책무를 맡다"
+   },
+   {
+    "e": "job responsibilities",
+    "k": "직무"
+   }
+  ],
+  "der": [
+   {
+    "w": "responsible",
+    "pos": "adj",
+    "m": "책임이 있는, 담당하는"
+   }
+  ],
+  "para": [
+   "duty",
+   "obligation",
+   "task"
+  ],
+  "ant": "",
+  "tip": "take responsibility for(~에 대한 책임을 지다), job responsibilities(직무)가 빈출이다. '업무'의 뜻으로는 가산명사 복수형으로 자주 쓰인다.",
+  "q": {
+   "s": "Mr. Grady will take on additional ------- after his promotion to team leader.",
+   "o": [
+    "responsible",
+    "responsibly",
+    "responsibilities",
+    "responsive"
+   ],
+   "a": 2,
+   "k": "타동사 take on의 목적어이자 형용사 additional의 수식을 받는 명사 자리이므로 responsibilities가 정답이다."
+  }
+ },
+ {
+  "w": "appreciate",
+  "pos": "v",
+  "m": [
+   "감사하다",
+   "진가를 알아보다",
+   "(가치가) 오르다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Fowler said she *appreciated* the extra help during the busy holiday season.",
+  "exKo": "Fowler 씨는 바쁜 연휴 기간에 받은 추가 지원에 감사하다고 말했다.",
+  "col": [
+   {
+    "e": "appreciate it if",
+    "k": "~해 주시면 감사하겠다"
+   },
+   {
+    "e": "greatly appreciate",
+    "k": "대단히 감사하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "appreciation",
+    "pos": "n",
+    "m": "감사, 진가 인정"
+   },
+   {
+    "w": "appreciative",
+    "pos": "adj",
+    "m": "감사하는"
+   }
+  ],
+  "para": [
+   "be grateful for",
+   "value"
+  ],
+  "ant": "",
+  "tip": "appreciate는 타동사라 사람이 아닌 '행위'를 목적어로 하며(appreciate your help), I would appreciate it if ~ 구문이 공지·이메일에 자주 나온다.",
+  "q": {
+   "s": "Ms. Ward would ------- it if all monthly reports were submitted by noon on Friday.",
+   "o": [
+    "appreciation",
+    "appreciative",
+    "appreciate",
+    "appreciatively"
+   ],
+   "a": 2,
+   "k": "조동사 would 뒤에는 동사원형이 오므로 appreciate가 정답이다. would appreciate it if는 '~해 주면 고맙겠다'라는 정중한 요청 표현이다."
+  }
+ },
+ {
+  "w": "appreciation",
+  "pos": "n",
+  "m": [
+   "감사",
+   "진가 인정, 이해"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The staff signed a card to express their *appreciation* for Ms. Kim's guidance over the years.",
+  "exKo": "직원들은 수년간 Kim 씨가 이끌어 준 데 대한 감사를 표하기 위해 카드에 서명했다.",
+  "col": [
+   {
+    "e": "in appreciation of",
+    "k": "~에 감사하여"
+   },
+   {
+    "e": "token of appreciation",
+    "k": "감사의 표시"
+   },
+   {
+    "e": "show appreciation for",
+    "k": "~에 감사를 표하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "appreciate",
+    "pos": "v",
+    "m": "감사하다"
+   },
+   {
+    "w": "appreciative",
+    "pos": "adj",
+    "m": "감사하는"
+   }
+  ],
+  "para": [
+   "gratitude",
+   "thanks"
+  ],
+  "ant": "",
+  "tip": "in appreciation of(~에 감사하여), as a token of appreciation(감사의 표시로)이 빈출이다. 소유격 뒤 명사 자리에 형용사 appreciative를 넣는 함정이 나온다.",
+  "q": {
+   "s": "The company hosted a dinner to show its ------- for the volunteers' hard work.",
+   "o": [
+    "appreciate",
+    "appreciative",
+    "appreciation",
+    "appreciated"
+   ],
+   "a": 2,
+   "k": "소유격 its 뒤의 명사 자리이므로 appreciation이 정답이다. show one's appreciation for는 '~에 감사를 표하다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "encourage",
+  "pos": "v",
+  "m": [
+   "권장하다",
+   "격려하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   4,
+   5,
+   7
+  ],
+  "ex": "Managers *encourage* employees to share their ideas at weekly meetings.",
+  "exKo": "관리자들은 직원들에게 주간 회의에서 아이디어를 공유하도록 권장한다.",
+  "col": [
+   {
+    "e": "encourage A to do",
+    "k": "A가 ~하도록 권장하다"
+   },
+   {
+    "e": "be encouraged to do",
+    "k": "~하도록 권장되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "encouragement",
+    "pos": "n",
+    "m": "격려"
+   },
+   {
+    "w": "encouraging",
+    "pos": "adj",
+    "m": "고무적인"
+   }
+  ],
+  "para": [
+   "urge",
+   "motivate"
+  ],
+  "ant": "discourage",
+  "tip": "encourage A to do 구조이며 공지문의 수동태 be encouraged to do(~하는 것이 권장된다)가 매우 자주 나온다. encouraging(고무적인)과 encouraged의 구별도 출제된다.",
+  "q": {
+   "s": "Employees are ------- to use public transportation while the parking garage is closed for repairs.",
+   "o": [
+    "encouraged",
+    "encouragement",
+    "encouraging",
+    "encourages"
+   ],
+   "a": 0,
+   "k": "주차장이 수리로 폐쇄된 동안 직원들이 대중교통 이용을 '권장받는' 것이므로 수동태 be encouraged to do의 encouraged가 정답이다. encouraging은 능동이라 목적어가 필요하며 의미도 맞지 않는다."
+  }
+ },
+ {
+  "w": "hard-working",
+  "pos": "adj",
+  "m": [
+   "근면한",
+   "부지런한"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The restaurant owner thanked her *hard-working* kitchen staff for a successful opening week.",
+  "exKo": "식당 주인은 개업 첫 주를 성공적으로 마친 데 대해 열심히 일한 주방 직원들에게 감사를 표했다.",
+  "col": [
+   {
+    "e": "hard-working employee",
+    "k": "성실한 직원"
+   },
+   {
+    "e": "hard-working team",
+    "k": "열심히 일하는 팀"
+   }
+  ],
+  "der": [],
+  "para": [
+   "diligent",
+   "industrious",
+   "dedicated"
+  ],
+  "ant": "lazy",
+  "tip": "명사 앞에서 하이픈을 붙여 a hard-working employee처럼 쓰며 diligent로 패러프레이징된다. 부사 hardly(거의 ~않다)와 혼동하지 않는다.",
+  "q": {
+   "s": "The award recognizes ------- employees who consistently go beyond their basic duties.",
+   "o": [
+    "hard-working",
+    "hard-pressed",
+    "hardened",
+    "hardly"
+   ],
+   "a": 0,
+   "k": "기본 업무 이상을 꾸준히 해내는 직원을 표창하는 상이므로 '근면한'이라는 뜻의 hard-working이 정답이다. hard-pressed(곤경에 처한), hardened(굳은)는 의미가 맞지 않고 hardly는 부사다."
+  }
+ },
+ {
+  "w": "staff member",
+  "pos": "phr",
+  "m": [
+   "직원 (한 명)"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Shoppers who need help finding an item can ask any *staff member* on the floor.",
+  "exKo": "물건을 찾는 데 도움이 필요한 쇼핑객은 매장에 있는 어느 직원에게나 문의할 수 있다.",
+  "col": [
+   {
+    "e": "new staff member",
+    "k": "신입 직원"
+   },
+   {
+    "e": "senior staff member",
+    "k": "선임 직원"
+   }
+  ],
+  "der": [],
+  "para": [
+   "employee",
+   "worker"
+  ],
+  "ant": "",
+  "tip": "집합명사 staff와 달리 staff member는 한 사람을 가리키는 가산명사라 a staff member, staff members로 쓴다. 듣기에서 employee로 바꿔 표현된다.",
+  "q": {
+   "s": "Any ------- who wishes to work from home must first get approval from a supervisor.",
+   "o": [
+    "staff room",
+    "staff meeting",
+    "staff lounge",
+    "staff member"
+   ],
+   "a": 3,
+   "k": "재택근무를 원하고 상사의 승인을 받아야 하는 주체는 사람이므로 staff member가 정답이다. staff room, staff lounge(직원 휴게실)는 장소, staff meeting(직원회의)은 행사다."
+  }
+ },
+ {
+  "w": "supervise",
+  "pos": "v",
+  "m": [
+   "감독하다",
+   "관리하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Mr. Akande *supervises* a team of twelve technicians at the plant.",
+  "exKo": "Akande 씨는 공장에서 기술자 12명으로 이루어진 팀을 감독한다.",
+  "col": [
+   {
+    "e": "supervise a team",
+    "k": "팀을 감독하다"
+   },
+   {
+    "e": "supervise the construction",
+    "k": "공사를 감독하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "supervisor",
+    "pos": "n",
+    "m": "감독관, 상사"
+   },
+   {
+    "w": "supervision",
+    "pos": "n",
+    "m": "감독, 관리"
+   },
+   {
+    "w": "supervisory",
+    "pos": "adj",
+    "m": "감독의"
+   }
+  ],
+  "para": [
+   "oversee",
+   "manage"
+  ],
+  "ant": "",
+  "tip": "supervise는 타동사라 전치사 없이 목적어를 바로 취한다. Part 7에서 oversee, be in charge of로 바꿔 표현된다.",
+  "q": {
+   "s": "Ms. Lee has been asked to ------- the installation of the new security system.",
+   "o": [
+    "supervise",
+    "supervisor",
+    "supervision",
+    "supervisory"
+   ],
+   "a": 0,
+   "k": "to부정사의 to 뒤에는 동사원형이 오므로 supervise가 정답이다. supervisor, supervision은 명사, supervisory는 형용사다."
+  }
+ },
+ {
+  "w": "supervision",
+  "pos": "n",
+  "m": [
+   "감독",
+   "관리"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "New employees work under the close *supervision* of a senior engineer.",
+  "exKo": "신입 직원은 선임 엔지니어의 철저한 감독하에 일한다.",
+  "col": [
+   {
+    "e": "under the supervision of",
+    "k": "~의 감독하에"
+   },
+   {
+    "e": "close supervision",
+    "k": "철저한 감독"
+   }
+  ],
+  "der": [
+   {
+    "w": "supervise",
+    "pos": "v",
+    "m": "감독하다"
+   },
+   {
+    "w": "supervisor",
+    "pos": "n",
+    "m": "감독관, 상사"
+   }
+  ],
+  "para": [
+   "oversight",
+   "management"
+  ],
+  "ant": "",
+  "tip": "under the supervision of(~의 감독하에)가 대표 표현이다. under 뒤 명사 자리에 사람명사 supervisor를 넣는 함정이 나온다.",
+  "q": {
+   "s": "Children under twelve must be under adult ------- at all times while in the pool area.",
+   "o": [
+    "supervise",
+    "supervision",
+    "supervisor",
+    "supervised"
+   ],
+   "a": 1,
+   "k": "under adult 뒤의 명사 자리이며 '성인의 감독하에'라는 뜻이므로 불가산명사 supervision이 정답이다. supervisor는 가산명사라 관사 없이 단수로 쓸 수 없다."
+  }
+ },
+ {
+  "w": "managerial",
+  "pos": "adj",
+  "m": [
+   "관리의",
+   "경영(상)의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The training course prepares engineers who are moving into *managerial* roles.",
+  "exKo": "그 교육 과정은 관리직으로 옮겨 가는 엔지니어들을 준비시킨다.",
+  "col": [
+   {
+    "e": "managerial position",
+    "k": "관리직"
+   },
+   {
+    "e": "managerial skills",
+    "k": "관리 능력"
+   },
+   {
+    "e": "managerial experience",
+    "k": "관리직 경력"
+   }
+  ],
+  "der": [
+   {
+    "w": "manage",
+    "pos": "v",
+    "m": "관리하다"
+   },
+   {
+    "w": "manager",
+    "pos": "n",
+    "m": "관리자"
+   },
+   {
+    "w": "management",
+    "pos": "n",
+    "m": "경영, 경영진"
+   }
+  ],
+  "para": [
+   "supervisory",
+   "administrative"
+  ],
+  "ant": "",
+  "tip": "명사 앞에 오는 형용사로 managerial position/role(관리직)처럼 쓴다. 보어 자리에서는 명사 management를 쓸 수 없으므로 형용사 managerial을 고른다.",
+  "q": {
+   "s": "Most of Ms. Chen's duties are ------- rather than technical.",
+   "o": [
+    "manage",
+    "managerial",
+    "managers",
+    "managerially"
+   ],
+   "a": 1,
+   "k": "be동사 뒤 보어 자리이며 rather than 뒤의 형용사 technical과 대등하게 연결되므로 형용사 managerial이 정답이다."
+  }
+ },
+ {
+  "w": "deserve",
+  "pos": "v",
+  "m": [
+   "~을 받을 만하다",
+   "~할 자격이 있다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "After months of hard work, the design team *deserves* a long break.",
+  "exKo": "몇 달 동안 열심히 일한 디자인팀은 긴 휴식을 누릴 자격이 있다.",
+  "col": [
+   {
+    "e": "deserve credit",
+    "k": "인정받을 만하다"
+   },
+   {
+    "e": "well-deserved",
+    "k": "충분히 받을 만한"
+   },
+   {
+    "e": "deserve to do",
+    "k": "~할 만하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "deserving",
+    "pos": "adj",
+    "m": "~을 받을 만한, 자격 있는"
+   }
+  ],
+  "para": [
+   "merit",
+   "earn"
+  ],
+  "ant": "",
+  "tip": "deserve는 타동사로 deserve credit/recognition처럼 목적어를 바로 취하며 진행형으로 쓰지 않는다. a well-deserved promotion(받아 마땅한 승진)도 자주 나온다.",
+  "q": {
+   "s": "Ms. Ryan ------- credit for securing the contract with our largest overseas client.",
+   "o": [
+    "deserves",
+    "reserves",
+    "preserves",
+    "conserves"
+   ],
+   "a": 0,
+   "k": "가장 큰 해외 고객과의 계약을 따낸 공로를 '인정받을 만하다'라는 뜻이므로 deserves가 정답이다. reserves(예약하다), preserves(보존하다), conserves(절약하다)는 credit과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "in recognition of",
+  "pos": "prep",
+  "m": [
+   "~을 인정하여",
+   "~에 대한 공로로"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The hospital named its new wing after Dr. Shah *in recognition of* her generous donation.",
+  "exKo": "그 병원은 Shah 박사의 아낌없는 기부를 기리어 신관에 그녀의 이름을 붙였다.",
+  "col": [
+   {
+    "e": "in recognition of one's efforts",
+    "k": "~의 노고를 인정하여"
+   },
+   {
+    "e": "in recognition of outstanding service",
+    "k": "뛰어난 공로를 인정하여"
+   }
+  ],
+  "der": [
+   {
+    "w": "recognize",
+    "pos": "v",
+    "m": "인정하다, 표창하다"
+   },
+   {
+    "w": "recognition",
+    "pos": "n",
+    "m": "인정, 표창"
+   }
+  ],
+  "para": [
+   "in appreciation of",
+   "in honor of"
+  ],
+  "ant": "",
+  "tip": "시상·표창 문맥에서 in recognition of + 공로(명사)로 쓰는 전치사구다. in appreciation of, in honor of로 패러프레이징된다.",
+  "q": {
+   "s": "The volunteers were given certificates ------- their contributions to the community festival.",
+   "o": [
+    "in charge of",
+    "in addition to",
+    "in recognition of",
+    "in case of"
+   ],
+   "a": 2,
+   "k": "지역 축제에 기여한 공로를 '인정하여' 증서를 받았다는 뜻이므로 in recognition of가 정답이다. in charge of(~을 담당하는), in addition to(~에 더하여), in case of(~의 경우에)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "assess",
+  "pos": "v",
+  "m": [
+   "평가하다",
+   "(가치·피해 등을) 산정하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The insurance company sent an expert to *assess* the damage to the warehouse.",
+  "exKo": "보험 회사는 창고의 피해를 산정하기 위해 전문가를 보냈다.",
+  "col": [
+   {
+    "e": "assess the damage",
+    "k": "피해를 산정하다"
+   },
+   {
+    "e": "assess performance",
+    "k": "성과를 평가하다"
+   },
+   {
+    "e": "assess the impact of",
+    "k": "~의 영향을 평가하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "assessment",
+    "pos": "n",
+    "m": "평가, 산정"
+   },
+   {
+    "w": "assessor",
+    "pos": "n",
+    "m": "평가자"
+   }
+  ],
+  "para": [
+   "evaluate",
+   "judge",
+   "appraise"
+  ],
+  "ant": "",
+  "tip": "assess는 타동사로 evaluate와 바꿔 쓸 수 있다. 명사 assessment(평가)와 함께 품사 문제로 출제된다.",
+  "q": {
+   "s": "The survey was designed to ------- customer satisfaction with our new delivery service.",
+   "o": [
+    "assess",
+    "assessment",
+    "assessor",
+    "assessable"
+   ],
+   "a": 0,
+   "k": "to부정사의 to 뒤에는 동사원형이 오므로 assess가 정답이다. assessment, assessor는 명사, assessable은 형용사다."
+  }
+ },
+ {
+  "w": "constructive",
+  "pos": "adj",
+  "m": [
+   "건설적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Han always gives *constructive* feedback that helps her team improve.",
+  "exKo": "Han 씨는 항상 팀의 발전에 도움이 되는 건설적인 피드백을 준다.",
+  "col": [
+   {
+    "e": "constructive criticism",
+    "k": "건설적인 비판"
+   },
+   {
+    "e": "constructive feedback",
+    "k": "건설적인 의견"
+   },
+   {
+    "e": "constructive suggestion",
+    "k": "건설적인 제안"
+   }
+  ],
+  "der": [
+   {
+    "w": "construct",
+    "pos": "v",
+    "m": "건설하다"
+   },
+   {
+    "w": "construction",
+    "pos": "n",
+    "m": "건설, 공사"
+   },
+   {
+    "w": "constructively",
+    "pos": "adv",
+    "m": "건설적으로"
+   }
+  ],
+  "para": [
+   "helpful",
+   "useful"
+  ],
+  "ant": "destructive",
+  "tip": "constructive criticism/feedback처럼 의견을 수식한다. 명사 앞 형용사 자리에 명사 construction을 넣는 함정에 주의한다.",
+  "q": {
+   "s": "Supervisors are trained to offer ------- suggestions rather than simply pointing out mistakes.",
+   "o": [
+    "construction",
+    "constructively",
+    "construct",
+    "constructive"
+   ],
+   "a": 3,
+   "k": "명사 suggestions를 수식하는 형용사 자리이므로 constructive가 정답이다. construction은 명사, constructively는 부사, construct는 동사다."
+  }
+ },
+ {
+  "w": "criticism",
+  "pos": "n",
+  "m": [
+   "비판",
+   "비평"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new parking policy has drawn *criticism* from employees who drive to work.",
+  "exKo": "새 주차 정책은 차로 출근하는 직원들의 비판을 받았다.",
+  "col": [
+   {
+    "e": "constructive criticism",
+    "k": "건설적인 비판"
+   },
+   {
+    "e": "draw criticism",
+    "k": "비판을 받다"
+   },
+   {
+    "e": "criticism of",
+    "k": "~에 대한 비판"
+   }
+  ],
+  "der": [
+   {
+    "w": "criticize",
+    "pos": "v",
+    "m": "비판하다"
+   },
+   {
+    "w": "critic",
+    "pos": "n",
+    "m": "비평가"
+   },
+   {
+    "w": "critical",
+    "pos": "adj",
+    "m": "비판적인, 중대한"
+   }
+  ],
+  "para": [
+   "disapproval",
+   "objection"
+  ],
+  "ant": "praise",
+  "tip": "criticism은 '비판' 자체, critic은 '비평가'라는 사람명사다. 관사 없는 목적어 자리에서는 불가산명사 criticism을 고른다.",
+  "q": {
+   "s": "The director welcomed ------- of the proposal and promised to revise it accordingly.",
+   "o": [
+    "critic",
+    "criticize",
+    "criticism",
+    "critical"
+   ],
+   "a": 2,
+   "k": "타동사 welcomed의 목적어로 관사 없이 쓸 수 있는 불가산명사 criticism이 정답이다. critic은 가산명사라 관사가 필요하고, criticize는 동사, critical은 형용사다."
+  }
+ },
+ {
+  "w": "attendance",
+  "pos": "n",
+  "m": [
+   "출석, 참석",
+   "참석자 수"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "*Attendance* at the evening lectures has risen steadily since the museum extended its hours.",
+  "exKo": "박물관이 운영 시간을 연장한 이후 저녁 강연 참석자 수가 꾸준히 늘었다.",
+  "col": [
+   {
+    "e": "attendance at",
+    "k": "~에의 참석"
+   },
+   {
+    "e": "attendance record",
+    "k": "출근 기록"
+   },
+   {
+    "e": "high attendance",
+    "k": "높은 참석률"
+   }
+  ],
+  "der": [
+   {
+    "w": "attend",
+    "pos": "v",
+    "m": "참석하다"
+   },
+   {
+    "w": "attendee",
+    "pos": "n",
+    "m": "참석자"
+   },
+   {
+    "w": "attendant",
+    "pos": "n",
+    "m": "안내원, 승무원"
+   }
+  ],
+  "para": [
+   "presence",
+   "turnout"
+  ],
+  "ant": "absence",
+  "tip": "attendance at(~에의 참석)으로 전치사 at과 짝을 이룬다. 사람명사 attendee(참석자), attendant(안내원)와 구별하는 문제가 단골이다.",
+  "q": {
+   "s": "Ms. Carter was praised for her perfect ------- record during her first year with the company.",
+   "o": [
+    "attend",
+    "attendance",
+    "attendant",
+    "attendee"
+   ],
+   "a": 1,
+   "k": "record 앞에서 복합명사를 이루는 attendance(출근)가 정답이다. attendance record는 '출근 기록'이며, attendant, attendee는 사람명사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "competence",
+  "pos": "n",
+  "m": [
+   "능력, 역량",
+   "적성"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The certification exam tests the technical *competence* of new electricians.",
+  "exKo": "그 자격 시험은 신입 전기 기사의 기술적 역량을 평가한다.",
+  "col": [
+   {
+    "e": "technical competence",
+    "k": "기술적 역량"
+   },
+   {
+    "e": "competence in",
+    "k": "~에 대한 능력"
+   }
+  ],
+  "der": [
+   {
+    "w": "competent",
+    "pos": "adj",
+    "m": "유능한, 능숙한"
+   },
+   {
+    "w": "competently",
+    "pos": "adv",
+    "m": "유능하게"
+   }
+  ],
+  "para": [
+   "ability",
+   "capability",
+   "proficiency"
+  ],
+  "ant": "incompetence",
+  "tip": "competence in(~에 대한 능력)으로 쓰며 형용사 competent(유능한)와 품사 구별 문제가 나온다. compete(경쟁하다), competition(경쟁)과 어근이 달라 의미를 혼동하지 않는다.",
+  "q": {
+   "s": "Managers should evaluate staff based on their ------- rather than their length of service.",
+   "o": [
+    "competent",
+    "competence",
+    "competently",
+    "compete"
+   ],
+   "a": 1,
+   "k": "소유격 their 뒤의 명사 자리이므로 competence가 정답이다. competent는 형용사, competently는 부사, compete는 '경쟁하다'라는 동사다."
+  }
+ },
+ {
+  "w": "productive",
+  "pos": "adj",
+  "m": [
+   "생산적인",
+   "효율적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Many employees say they are more *productive* when working from home.",
+  "exKo": "많은 직원은 재택근무를 할 때 더 생산적이라고 말한다.",
+  "col": [
+   {
+    "e": "highly productive",
+    "k": "매우 생산적인"
+   },
+   {
+    "e": "productive meeting",
+    "k": "생산적인 회의"
+   }
+  ],
+  "der": [
+   {
+    "w": "productivity",
+    "pos": "n",
+    "m": "생산성"
+   },
+   {
+    "w": "produce",
+    "pos": "v",
+    "m": "생산하다"
+   },
+   {
+    "w": "production",
+    "pos": "n",
+    "m": "생산"
+   }
+  ],
+  "para": [
+   "efficient",
+   "effective"
+  ],
+  "ant": "unproductive",
+  "tip": "be동사·make 뒤 보어 자리에는 형용사 productive, 명사 자리에는 productivity(생산성)를 쓴다. product(제품), production(생산)과의 품사 구별이 출제된다.",
+  "q": {
+   "s": "The revised agenda format has made our weekly meetings much shorter and more -------.",
+   "o": [
+    "product",
+    "production",
+    "productive",
+    "productively"
+   ],
+   "a": 2,
+   "k": "목적격 보어 자리에서 형용사 shorter와 and로 연결되므로 형용사 productive가 정답이다. product, production은 명사, productively는 부사다."
+  }
+ },
+ {
+  "w": "exemplary",
+  "pos": "adj",
+  "m": [
+   "모범적인",
+   "훌륭한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The judges praised the volunteers for their *exemplary* conduct throughout the marathon.",
+  "exKo": "심사위원들은 마라톤 대회 내내 보여 준 자원봉사자들의 모범적인 태도를 칭찬했다.",
+  "col": [
+   {
+    "e": "exemplary service",
+    "k": "모범적인 서비스"
+   },
+   {
+    "e": "exemplary conduct",
+    "k": "모범적인 행동"
+   },
+   {
+    "e": "exemplary performance",
+    "k": "모범적인 성과"
+   }
+  ],
+  "der": [
+   {
+    "w": "example",
+    "pos": "n",
+    "m": "예, 모범"
+   },
+   {
+    "w": "exemplify",
+    "pos": "v",
+    "m": "예를 들다, 전형이 되다"
+   }
+  ],
+  "para": [
+   "outstanding",
+   "excellent",
+   "model"
+  ],
+  "ant": "",
+  "tip": "표창·추천서 문맥에서 exemplary service/conduct(모범적인 서비스/행동)로 쓰인다. 철자가 비슷한 exempt(면제된)와 혼동하지 않는다.",
+  "q": {
+   "s": "Mr. Olsen was promoted to senior engineer because of his ------- work on the bridge project.",
+   "o": [
+    "exemplary",
+    "exempt",
+    "excessive",
+    "exclusive"
+   ],
+   "a": 0,
+   "k": "승진의 이유가 된 작업이므로 '모범적인'이라는 뜻의 exemplary가 정답이다. exempt(면제된), excessive(과도한), exclusive(독점적인)는 승진 사유로 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "conscientious",
+  "pos": "adj",
+  "m": [
+   "성실한",
+   "양심적인, 꼼꼼한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our accountants are *conscientious* about meeting every filing deadline.",
+  "exKo": "우리 회계사들은 모든 신고 기한을 지키는 데 철저하다.",
+  "col": [
+   {
+    "e": "conscientious employee",
+    "k": "성실한 직원"
+   },
+   {
+    "e": "conscientious about",
+    "k": "~에 대해 꼼꼼한"
+   }
+  ],
+  "der": [
+   {
+    "w": "conscientiously",
+    "pos": "adv",
+    "m": "성실하게"
+   },
+   {
+    "w": "conscientiousness",
+    "pos": "n",
+    "m": "성실성"
+   }
+  ],
+  "para": [
+   "diligent",
+   "careful",
+   "thorough"
+  ],
+  "ant": "careless",
+  "tip": "추천서에서 diligent, thorough와 같은 뜻으로 쓰인다. 철자가 비슷한 conscious(의식하는)와 혼동을 유도하는 문제가 나온다.",
+  "q": {
+   "s": "Because she is so -------, Ms. Grant rarely makes errors when entering customer data.",
+   "o": [
+    "conscious",
+    "consecutive",
+    "considerate",
+    "conscientious"
+   ],
+   "a": 3,
+   "k": "매우 꼼꼼해서 고객 정보를 입력할 때 실수를 거의 하지 않는다는 뜻이므로 conscientious가 정답이다. conscious(의식하는), consecutive(연속적인), considerate(배려심 있는)는 실수가 적은 이유로 맞지 않는다."
+  }
+ },
+ {
+  "w": "seniority",
+  "pos": "n",
+  "m": [
+   "연공서열",
+   "근속 연수"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Mr. Hale has the most *seniority* in the department, having joined the firm in 1998.",
+  "exKo": "Hale 씨는 1998년에 입사해 부서에서 근속 연수가 가장 길다.",
+  "col": [
+   {
+    "e": "based on seniority",
+    "k": "연공서열에 따라"
+   },
+   {
+    "e": "years of seniority",
+    "k": "근속 연수"
+   }
+  ],
+  "der": [
+   {
+    "w": "senior",
+    "pos": "adj",
+    "m": "선임의, 고위의"
+   },
+   {
+    "w": "senior",
+    "pos": "n",
+    "m": "선배, 연장자"
+   }
+  ],
+  "para": [
+   "length of service"
+  ],
+  "ant": "",
+  "tip": "based on seniority(연공서열에 따라)처럼 승진·휴가 배정 기준으로 나오며 length of service로 패러프레이징된다. 형용사 senior와 품사를 구별한다.",
+  "q": {
+   "s": "Under the union agreement, workers with greater ------- get first choice of vacation dates.",
+   "o": [
+    "senior",
+    "seniors",
+    "seniority",
+    "seniorities"
+   ],
+   "a": 2,
+   "k": "형용사 greater의 수식을 받으며 휴가 날짜 우선 선택권의 기준이 되는 불가산명사 seniority(근속 연수)가 정답이다. senior는 형용사이거나 '연장자'라는 사람명사라 의미가 맞지 않는다."
+  }
+ }
+]

@@ -1,0 +1,1841 @@
+[
+ {
+  "w": "intercom",
+  "pos": "n",
+  "m": [
+   "인터폰, 구내 통화 장치",
+   "구내 방송 장치"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "The receptionist announced over the *intercom* that the delivery driver had arrived.",
+  "exKo": "접수 담당자는 배달 기사가 도착했다고 인터폰으로 알렸다.",
+  "col": [
+   {
+    "e": "over the intercom",
+    "k": "인터폰으로, 구내 방송으로"
+   },
+   {
+    "e": "intercom system",
+    "k": "구내 통화 시스템"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "",
+  "tip": "LC Part 3·4에서 '인터폰으로 호출하다/알리다'는 over the intercom처럼 전치사 over와 함께 들린다. 공항·매장 안내 방송 문맥의 PA system과 함께 알아 두자.",
+  "q": {
+   "s": "Please wait in the lobby until your name is called over the -------.",
+   "o": [
+    "interval",
+    "intercom",
+    "interior",
+    "intermission"
+   ],
+   "a": 1,
+   "k": "'~을 통해 호출되다'는 called over the intercom으로 표현하므로 intercom이 정답이다. interval(간격), interior(내부), intermission(중간 휴식)은 호출 수단이 될 수 없다."
+  }
+ },
+ {
+  "w": "errand",
+  "pos": "n",
+  "m": [
+   "심부름",
+   "볼일, 용무"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3
+  ],
+  "ex": "I have to run a quick *errand* at the bank, so I'll be back by two.",
+  "exKo": "은행에 잠깐 볼일을 보러 가야 해서 2시까지 돌아오겠다.",
+  "col": [
+   {
+    "e": "run an errand",
+    "k": "볼일을 보다, 심부름을 하다"
+   },
+   {
+    "e": "personal errands",
+    "k": "개인 용무"
+   }
+  ],
+  "der": [],
+  "para": [
+   "task",
+   "chore"
+  ],
+  "ant": "",
+  "tip": "'볼일을 보다'는 do가 아니라 run an errand / run errands로 쓴다. Part 3에서 자리를 비우는 이유(I need to run some errands)로 자주 등장한다.",
+  "q": {
+   "s": "Mr. Kim left the office early to run a few personal ------- before the holiday.",
+   "o": [
+    "tours",
+    "ventures",
+    "errands",
+    "fares"
+   ],
+   "a": 2,
+   "k": "run과 어울려 '개인 볼일을 보다'를 뜻하는 run personal errands가 자연스러우므로 errands가 정답이다. tours(관광), ventures(벤처 사업), fares(요금)는 run personal ~ 구조와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "run late",
+  "pos": "phr",
+  "m": [
+   "(예정보다) 늦어지다",
+   "지각하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Sorry, I'm *running late* because there's an accident on the highway.",
+  "exKo": "미안하지만 고속도로에 사고가 나서 늦어지고 있다.",
+  "col": [
+   {
+    "e": "be running late",
+    "k": "늦어지고 있다"
+   },
+   {
+    "e": "run ten minutes late",
+    "k": "10분 늦어지다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "be delayed",
+   "run behind schedule"
+  ],
+  "ant": "be on time",
+  "tip": "주로 진행형 be running late로 쓰며, 사람뿐 아니라 회의·일정이 늦어질 때도 쓴다. Part 2에서 'Where is Mr. Lee?'에 대한 간접 응답 'He's running late.'로 자주 나온다.",
+  "q": {
+   "s": "The morning session is ------- late, so lunch will be served at 12:30 instead of noon.",
+   "o": [
+    "running",
+    "staying",
+    "falling",
+    "taking"
+   ],
+   "a": 0,
+   "k": "be running late는 '(일정이) 늦어지다'라는 뜻이므로 running이 정답이다. stay late는 '늦게까지 남다'라는 뜻으로 세션 주어와 맞지 않고, fall late, take late는 쓰지 않는 표현이다."
+  }
+ },
+ {
+  "w": "tied up",
+  "pos": "phr",
+  "m": [
+   "(일 때문에) 바쁜, 꼼짝 못 하는",
+   "(돈 등이) 묶인"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3
+  ],
+  "ex": "Ms. Lopez is *tied up* in a meeting until three, but she can call you afterward.",
+  "exKo": "Lopez 씨는 3시까지 회의 때문에 시간이 안 되지만, 그 후에 전화할 수 있다.",
+  "col": [
+   {
+    "e": "be tied up with",
+    "k": "~로 바쁘다"
+   },
+   {
+    "e": "be tied up in a meeting",
+    "k": "회의 때문에 꼼짝 못 하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "busy",
+   "occupied"
+  ],
+  "ant": "available",
+  "tip": "be tied up with/in(~로 바빠서 시간이 없다)은 LC에서 '부탁을 거절하는 이유'로 자주 들린다. Part 3에서 I'm tied up은 '지금은 도와줄 수 없다'로 패러프레이즈된다.",
+  "q": {
+   "s": "I'm ------- up with the budget report right now, so could we talk tomorrow?",
+   "o": [
+    "turned",
+    "given",
+    "tied",
+    "looked"
+   ],
+   "a": 2,
+   "k": "be tied up with는 '~로 바쁘다'라는 뜻으로 내일 이야기하자는 내용과 이어지므로 tied가 정답이다. turn up(나타나다), give up(포기하다), look up(찾아보다)은 with the budget report 구조와 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "look over",
+  "pos": "phr",
+  "m": [
+   "검토하다, 살펴보다",
+   "훑어보다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "Could you *look over* this proposal before I send it to the client?",
+  "exKo": "내가 고객에게 보내기 전에 이 제안서를 검토해 줄 수 있는가?",
+  "col": [
+   {
+    "e": "look over a document",
+    "k": "서류를 검토하다"
+   },
+   {
+    "e": "look over the figures",
+    "k": "수치를 살펴보다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "review",
+   "go over",
+   "examine"
+  ],
+  "ant": "",
+  "tip": "look over는 '검토하다(review)'라는 뜻의 타동사구로 look it over처럼 대명사는 가운데에 온다. overlook(간과하다)과 뜻이 전혀 다르니 주의하자.",
+  "q": {
+   "s": "Mr. Hassan asked his assistant to ------- over the contract for any typing errors.",
+   "o": [
+    "see",
+    "watch",
+    "look",
+    "view"
+   ],
+   "a": 2,
+   "k": "'계약서를 검토하다'는 look over로 표현하므로 look이 정답이다. see, watch, view는 over와 결합해 '검토하다'라는 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "hand out",
+  "pos": "phr",
+  "m": [
+   "나누어 주다, 배포하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "ex": "Volunteers will *hand out* name tags at the registration desk.",
+  "exKo": "자원봉사자들이 등록 데스크에서 이름표를 나누어 줄 것이다.",
+  "col": [
+   {
+    "e": "hand out materials",
+    "k": "자료를 나눠 주다"
+   },
+   {
+    "e": "hand out flyers",
+    "k": "전단을 배포하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "handout",
+    "pos": "n",
+    "m": "유인물, 배포 자료"
+   }
+  ],
+  "para": [
+   "distribute",
+   "give out",
+   "pass out"
+  ],
+  "ant": "collect",
+  "tip": "hand out은 '나눠 주다(distribute)'라는 동사구이고, 붙여 쓴 handout은 '유인물'이라는 명사다. Part 1에서 'A man is handing out some papers.' 형태로 나온다.",
+  "q": {
+   "s": "Please ------- out these feedback forms to everyone at the end of the workshop.",
+   "o": [
+    "hand",
+    "carry",
+    "turn",
+    "check"
+   ],
+   "a": 0,
+   "k": "'(양식을) 모두에게 나눠 주다'는 hand out이므로 hand가 정답이다. carry out(수행하다), turn out(판명되다), check out(확인하다, 대출하다)은 to everyone과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "put together",
+  "pos": "phr",
+  "m": [
+   "(자료 등을) 준비하다, 만들다",
+   "조립하다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Jenna is *putting together* a slideshow for Friday's client meeting.",
+  "exKo": "Jenna는 금요일 고객 회의에 쓸 슬라이드쇼를 준비하고 있다.",
+  "col": [
+   {
+    "e": "put together a report",
+    "k": "보고서를 작성하다"
+   },
+   {
+    "e": "put together a team",
+    "k": "팀을 꾸리다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "prepare",
+   "compile",
+   "assemble"
+  ],
+  "ant": "",
+  "tip": "자료를 모아 '만들다, 준비하다(prepare, compile)'라는 뜻으로 LC에서 매우 자주 쓰이며, 가구 등을 '조립하다(assemble)'라는 뜻도 있다.",
+  "q": {
+   "s": "The marketing team needs a few more days to ------- together a detailed proposal.",
+   "o": [
+    "set",
+    "put",
+    "make",
+    "stay"
+   ],
+   "a": 1,
+   "k": "'제안서를 준비하다'는 put together로 표현하므로 put이 정답이다. set, make, stay는 together와 결합해 '자료를 만들다'라는 뜻을 이루지 않는다."
+  }
+ },
+ {
+  "w": "call back",
+  "pos": "phr",
+  "m": [
+   "다시 전화하다, 회신 전화를 하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Mr. Chen is out of the office, but he'll *call* you *back* this afternoon.",
+  "exKo": "Chen 씨는 외근 중이지만 오늘 오후에 다시 전화할 것이다.",
+  "col": [
+   {
+    "e": "call someone back",
+    "k": "~에게 다시 전화하다"
+   },
+   {
+    "e": "call back later",
+    "k": "나중에 다시 전화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "callback",
+    "pos": "n",
+    "m": "회신 전화"
+   }
+  ],
+  "para": [
+   "return a call"
+  ],
+  "ant": "",
+  "tip": "call me back처럼 대명사 목적어는 call과 back 사이에 온다. Part 4 음성 메시지에서 'Please call me back at ...'과 return my call이 같은 뜻으로 쓰인다.",
+  "q": {
+   "s": "Could you ask Ms. Ruiz to ------- me back when she returns from lunch?",
+   "o": [
+    "reply",
+    "call",
+    "answer",
+    "respond"
+   ],
+   "a": 1,
+   "k": "'나에게 다시 전화하다'는 call me back이므로 call이 정답이다. reply와 respond는 자동사로 to가 필요하고, answer me back은 '말대꾸하다'라는 뜻이라 맞지 않는다."
+  }
+ },
+ {
+  "w": "swamped",
+  "pos": "adj",
+  "m": [
+   "(일이) 너무 많은, 몹시 바쁜"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3
+  ],
+  "ex": "The accounting team is *swamped* with tax returns this month.",
+  "exKo": "회계팀은 이번 달 세금 신고서 업무로 눈코 뜰 새 없이 바쁘다.",
+  "col": [
+   {
+    "e": "be swamped with",
+    "k": "~로 몹시 바쁘다, ~이 쇄도하다"
+   },
+   {
+    "e": "swamped with work",
+    "k": "일이 산더미 같은"
+   }
+  ],
+  "der": [
+   {
+    "w": "swamp",
+    "pos": "v",
+    "m": "(일·요청 등이) 쇄도하다"
+   }
+  ],
+  "para": [
+   "overwhelmed",
+   "very busy",
+   "flooded"
+  ],
+  "ant": "",
+  "tip": "be swamped with(~이 너무 많다)는 Part 3에서 거절·지연 이유로 자주 들리며 I'm really busy로 패러프레이즈된다. 주어가 사람일 때 수동형 swamped를 쓴다.",
+  "q": {
+   "s": "Customer service representatives have been ------- with calls since the price change was announced.",
+   "o": [
+    "swept",
+    "sworn",
+    "swollen",
+    "swamped"
+   ],
+   "a": 3,
+   "k": "'전화가 쇄도해 몹시 바쁘다'는 be swamped with이므로 swamped가 정답이다. swept(쓸린), sworn(맹세한), swollen(부은)은 calls와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "voicemail",
+  "pos": "n",
+  "m": [
+   "음성 메일, 음성 메시지"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "If I'm away from my desk, please leave a *voicemail* with your phone number.",
+  "exKo": "내가 자리에 없으면 전화번호와 함께 음성 메시지를 남겨 달라.",
+  "col": [
+   {
+    "e": "leave a voicemail",
+    "k": "음성 메시지를 남기다"
+   },
+   {
+    "e": "check one's voicemail",
+    "k": "음성 메일을 확인하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "voice message",
+   "phone message"
+  ],
+  "ant": "",
+  "tip": "Part 4의 대표 담화 유형이 음성 메시지(voicemail)다. 첫 문장에서 화자와 용건, 마지막에서 회신 요청(call me back)을 잡아야 한다.",
+  "q": {
+   "s": "Ms. Patel checked her ------- and found three messages from the shipping company.",
+   "o": [
+    "voiceover",
+    "vocation",
+    "voicemail",
+    "vocabulary"
+   ],
+   "a": 2,
+   "k": "메시지가 세 개 와 있는 곳은 voicemail이다. voiceover(내레이션), vocation(천직), vocabulary(어휘)는 메시지를 확인하는 대상이 아니다."
+  }
+ },
+ {
+  "w": "copier",
+  "pos": "n",
+  "m": [
+   "복사기"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "The *copier* in the mailroom keeps jamming, so I've called the repair company.",
+  "exKo": "우편실 복사기에 계속 종이가 걸려서 수리 업체에 연락했다.",
+  "col": [
+   {
+    "e": "use the copier",
+    "k": "복사기를 사용하다"
+   },
+   {
+    "e": "the copier is jammed",
+    "k": "복사기에 종이가 걸리다"
+   }
+  ],
+  "der": [
+   {
+    "w": "copy",
+    "pos": "v",
+    "m": "복사하다"
+   },
+   {
+    "w": "photocopy",
+    "pos": "n",
+    "m": "복사본"
+   }
+  ],
+  "para": [
+   "photocopier",
+   "copy machine"
+  ],
+  "ant": "",
+  "tip": "LC에서 복사기 고장(jammed, out of order, out of toner)은 단골 문제 상황이다. 기계를 뜻할 때는 copy가 아니라 copier를 쓴다.",
+  "q": {
+   "s": "Please notify the maintenance staff if the ------- on this floor stops working.",
+   "o": [
+    "copy",
+    "copied",
+    "copying",
+    "copier"
+   ],
+   "a": 3,
+   "k": "관사 the 뒤 주어 자리에서 '작동을 멈추는' 기계는 copier이므로 정답이다. copy는 '복사본'이라 작동할 수 없고, copied, copying은 기계를 가리키지 않는다."
+  }
+ },
+ {
+  "w": "shredder",
+  "pos": "n",
+  "m": [
+   "문서 파쇄기"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   5
+  ],
+  "ex": "Put any documents containing client information through the *shredder*.",
+  "exKo": "고객 정보가 담긴 서류는 모두 파쇄기에 넣어라.",
+  "col": [
+   {
+    "e": "paper shredder",
+    "k": "문서 파쇄기"
+   },
+   {
+    "e": "put ~ through the shredder",
+    "k": "~을 파쇄기에 넣다"
+   }
+  ],
+  "der": [
+   {
+    "w": "shred",
+    "pos": "v",
+    "m": "(문서를) 파쇄하다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "보안·기밀 문서 처리 문맥에서 동사 shred(파쇄하다)와 기계 명사 shredder가 함께 나온다. 기계는 -er, 행위는 shred/shredding으로 구분한다.",
+  "q": {
+   "s": "All outdated personnel files must be destroyed in the ------- in the supply room.",
+   "o": [
+    "shredder",
+    "shredded",
+    "shred",
+    "shredding"
+   ],
+   "a": 0,
+   "k": "the 뒤 장소 전치사 in의 목적어로 비품실에 있는 '기계'가 와야 하므로 shredder가 정답이다. shred는 동사, shredding은 '파쇄 작업'이라 비품실에 놓인 물건이 될 수 없다."
+  }
+ },
+ {
+  "w": "binder",
+  "pos": "n",
+  "m": [
+   "바인더, 서류철"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "All safety guidelines are kept in a red *binder* by the front desk.",
+  "exKo": "모든 안전 지침은 안내 데스크 옆 빨간 바인더에 보관되어 있다.",
+  "col": [
+   {
+    "e": "three-ring binder",
+    "k": "3공 바인더"
+   },
+   {
+    "e": "training binder",
+    "k": "교육 자료 바인더"
+   }
+  ],
+  "der": [
+   {
+    "w": "bind",
+    "pos": "v",
+    "m": "묶다, 제본하다"
+   }
+  ],
+  "para": [
+   "folder"
+  ],
+  "ant": "",
+  "tip": "Part 1 사진에서 선반 위 바인더나 서류철(binders, folders)이 자주 나온다. three-ring binder(3공 바인더) 표현도 알아 두자.",
+  "q": {
+   "s": "New employees will receive a three-ring ------- containing the company handbook.",
+   "o": [
+    "bundle",
+    "binder",
+    "border",
+    "banner"
+   ],
+   "a": 1,
+   "k": "회사 안내서를 담는 3공 철은 three-ring binder이므로 binder가 정답이다. bundle(묶음), border(경계), banner(현수막)는 three-ring과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "stationery",
+  "pos": "n",
+  "m": [
+   "문구류",
+   "편지지"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Our office orders *stationery*, such as pens and notepads, from a local supplier.",
+  "exKo": "우리 사무실은 펜, 메모장 같은 문구류를 지역 업체에서 주문한다.",
+  "col": [
+   {
+    "e": "office stationery",
+    "k": "사무용 문구"
+   },
+   {
+    "e": "company stationery",
+    "k": "회사 공식 편지지"
+   }
+  ],
+  "der": [],
+  "para": [
+   "office supplies",
+   "writing materials"
+  ],
+  "ant": "",
+  "tip": "-ery로 끝나는 stationery(문구류, 불가산)와 -ary로 끝나는 형용사 stationary(정지된)를 구별하는 문제가 나온다.",
+  "q": {
+   "s": "Please use official company ------- when writing to clients.",
+   "o": [
+    "stationary",
+    "stationery",
+    "station",
+    "stationed"
+   ],
+   "a": 1,
+   "k": "고객에게 편지를 쓸 때 사용하는 '회사 공식 편지지'는 stationery다. stationary는 '정지된'이라는 형용사, station은 '역, 정거장', stationed는 '배치된'이라 맞지 않는다."
+  }
+ },
+ {
+  "w": "letterhead",
+  "pos": "n",
+  "m": [
+   "레터헤드(회사명·주소 등이 인쇄된 편지지)"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The reference letter must be printed on company *letterhead* and signed by a manager.",
+  "exKo": "추천서는 회사 레터헤드 용지에 인쇄하고 관리자의 서명을 받아야 한다.",
+  "col": [
+   {
+    "e": "on company letterhead",
+    "k": "회사 레터헤드 용지에"
+   },
+   {
+    "e": "official letterhead",
+    "k": "공식 레터헤드"
+   }
+  ],
+  "der": [],
+  "para": [
+   "company stationery"
+  ],
+  "ant": "",
+  "tip": "'레터헤드 용지에 인쇄하다'는 전치사 on을 써서 printed on letterhead라고 한다. Part 7 공문 서식 문제나 '공식 문서' 요구 조건 문맥에 나온다.",
+  "q": {
+   "s": "Official invoices should be printed on ------- that displays the company's address and logo.",
+   "o": [
+    "headline",
+    "headquarters",
+    "letterhead",
+    "headset"
+   ],
+   "a": 2,
+   "k": "회사 주소와 로고가 표시된 인쇄 용지는 letterhead이므로 정답이다. headline(헤드라인), headquarters(본사), headset(헤드셋)은 인쇄 용지가 아니다."
+  }
+ },
+ {
+  "w": "template",
+  "pos": "n",
+  "m": [
+   "(문서) 서식, 견본",
+   "템플릿"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Please use the new *template* when you prepare your monthly sales reports.",
+  "exKo": "월간 매출 보고서를 작성할 때는 새 서식을 사용하라.",
+  "col": [
+   {
+    "e": "use a template",
+    "k": "서식을 사용하다"
+   },
+   {
+    "e": "template for",
+    "k": "~의 서식"
+   }
+  ],
+  "der": [],
+  "para": [
+   "format",
+   "model",
+   "pattern"
+  ],
+  "ant": "",
+  "tip": "use a template, a template for reports처럼 가산명사로 쓰인다. Part 7 이메일에서 '첨부된 서식을 사용하라'는 요청 문맥에 자주 나온다.",
+  "q": {
+   "s": "To save time, our IT department created a ------- that staff can use for all client presentations.",
+   "o": [
+    "temperament",
+    "temptation",
+    "tempo",
+    "template"
+   ],
+   "a": 3,
+   "k": "직원들이 모든 발표에 재사용할 수 있게 만든 것은 template(서식)이다. temperament(기질), temptation(유혹), tempo(속도)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "whiteboard",
+  "pos": "n",
+  "m": [
+   "화이트보드"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "The manager wrote the project deadlines on the *whiteboard* in the meeting room.",
+  "exKo": "관리자는 회의실 화이트보드에 프로젝트 마감일을 적었다.",
+  "col": [
+   {
+    "e": "write on a whiteboard",
+    "k": "화이트보드에 쓰다"
+   },
+   {
+    "e": "erase the whiteboard",
+    "k": "화이트보드를 지우다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "board"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 'A woman is writing on a whiteboard.'처럼 자주 나온다. 쓰는 동작(writing)인지 가리키는 동작(pointing at)인지 구분해 들어야 한다.",
+  "q": {
+   "s": "Before leaving the conference room, please erase everything written on the -------.",
+   "o": [
+    "keyboard",
+    "cupboard",
+    "whiteboard",
+    "dashboard"
+   ],
+   "a": 2,
+   "k": "글씨를 쓰고 지우는 판은 whiteboard이므로 정답이다. keyboard, cupboard(찬장), dashboard(계기판)는 글씨를 쓰고 지우는 곳이 아니다."
+  }
+ },
+ {
+  "w": "checklist",
+  "pos": "n",
+  "m": [
+   "점검표, 체크리스트"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Go through the safety *checklist* before you start the machine.",
+  "exKo": "기계를 가동하기 전에 안전 점검표를 꼼꼼히 확인하라.",
+  "col": [
+   {
+    "e": "safety checklist",
+    "k": "안전 점검표"
+   },
+   {
+    "e": "go through a checklist",
+    "k": "점검표를 하나하나 확인하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "list"
+  ],
+  "ant": "",
+  "tip": "go through a checklist(점검표를 항목별로 확인하다), complete a checklist 형태로 쓰인다. 비슷한 생김새의 checkpoint(검문소), checkup(건강 검진)과 구별하자.",
+  "q": {
+   "s": "Employees should complete the onboarding ------- by the end of their first week.",
+   "o": [
+    "checkpoint",
+    "checkout",
+    "checkup",
+    "checklist"
+   ],
+   "a": 3,
+   "k": "입사 첫 주에 완료해야 하는 것은 onboarding checklist(신입 적응 점검표)이므로 정답이다. checkpoint(검문소), checkout(계산대, 퇴실), checkup(검진)은 '완료할' 대상으로 맞지 않는다."
+  }
+ },
+ {
+  "w": "timesheet",
+  "pos": "n",
+  "m": [
+   "근무 시간 기록표"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Hourly staff must submit their *timesheets* to the payroll office every Friday.",
+  "exKo": "시급제 직원은 매주 금요일 급여 담당 부서에 근무 시간 기록표를 제출해야 한다.",
+  "col": [
+   {
+    "e": "submit a timesheet",
+    "k": "근무 시간 기록표를 제출하다"
+   },
+   {
+    "e": "fill out a timesheet",
+    "k": "근무 시간 기록표를 작성하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "time card"
+  ],
+  "ant": "",
+  "tip": "초과 근무(overtime)·급여(payroll) 문맥에서 나온다. timetable(시간표), timeline(일정표)과 철자가 비슷하니 의미로 구별한다.",
+  "q": {
+   "s": "Please make sure your ------- accurately reflects any overtime hours you worked this week.",
+   "o": [
+    "timetable",
+    "timeline",
+    "timesheet",
+    "timeframe"
+   ],
+   "a": 2,
+   "k": "실제 근무한 초과 근무 시간을 기록하는 것은 timesheet이므로 정답이다. timetable(시간표), timeline(일정표), timeframe(기간)은 근무 시간을 기록하는 서류가 아니다."
+  }
+ },
+ {
+  "w": "archive",
+  "pos": "v",
+  "m": [
+   "(문서·파일을) 보관하다",
+   "기록 보관소에 넣다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Completed project files are *archived* on the shared drive after six months.",
+  "exKo": "완료된 프로젝트 파일은 6개월이 지나면 공유 드라이브에 보관된다.",
+  "col": [
+   {
+    "e": "archive files",
+    "k": "파일을 보관하다"
+   },
+   {
+    "e": "company archives",
+    "k": "회사 기록 보관소"
+   }
+  ],
+  "der": [
+   {
+    "w": "archival",
+    "pos": "adj",
+    "m": "기록 보관의"
+   },
+   {
+    "w": "archivist",
+    "pos": "n",
+    "m": "기록 보관 담당자"
+   }
+  ],
+  "para": [
+   "store",
+   "file"
+  ],
+  "ant": "delete",
+  "tip": "동사로는 '(기록을) 보관하다', 명사로는 the archives(기록 보관소, 소장 자료)로 쓰인다. 파일이 주어일 때는 be archived 수동태가 된다.",
+  "q": {
+   "s": "Emails older than two years will be automatically ------- to free up server space.",
+   "o": [
+    "archives",
+    "archived",
+    "archival",
+    "archiving"
+   ],
+   "a": 1,
+   "k": "will be 뒤에서 이메일이 '보관되는' 수동의 의미이므로 과거분사 archived가 정답이다. archiving은 능동 진행이라 맞지 않고, archives는 명사·3인칭 동사, archival은 형용사다."
+  }
+ },
+ {
+  "w": "paperless",
+  "pos": "adj",
+  "m": [
+   "종이를 쓰지 않는, 전자 문서화된"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The firm went *paperless* last year and now stores all contracts electronically.",
+  "exKo": "그 회사는 작년에 종이 없는 업무로 전환해 현재 모든 계약서를 전자 방식으로 보관한다.",
+  "col": [
+   {
+    "e": "go paperless",
+    "k": "종이 없는 업무로 전환하다"
+   },
+   {
+    "e": "paperless billing",
+    "k": "전자 청구서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "digital",
+   "electronic"
+  ],
+  "ant": "",
+  "tip": "go paperless(종이를 쓰지 않는 방식으로 바꾸다)는 Part 4 공지에서 비용 절감·환경 보호 이유와 함께 나온다. paperless billing(전자 청구서)도 빈출이다.",
+  "q": {
+   "s": "To reduce costs, the clinic is switching to a ------- billing system.",
+   "o": [
+    "paperwork",
+    "papered",
+    "paperback",
+    "paperless"
+   ],
+   "a": 3,
+   "k": "명사 billing system을 수식하는 형용사 자리이며 비용 절감과 어울리는 paperless(종이 없는)가 정답이다. paperwork는 '서류 작업'이라는 명사, papered는 '종이를 바른', paperback은 '종이 표지 책'이다."
+  }
+ },
+ {
+  "w": "reorganize",
+  "pos": "v",
+  "m": [
+   "재편성하다, 개편하다",
+   "다시 정리하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "We plan to *reorganize* the storage room so that supplies are easier to find.",
+  "exKo": "우리는 비품을 찾기 쉽도록 창고를 다시 정리할 계획이다.",
+  "col": [
+   {
+    "e": "reorganize a department",
+    "k": "부서를 개편하다"
+   },
+   {
+    "e": "reorganize the files",
+    "k": "파일을 다시 정리하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "reorganization",
+    "pos": "n",
+    "m": "재편성, 구조 조정"
+   }
+  ],
+  "para": [
+   "restructure",
+   "rearrange"
+  ],
+  "ant": "",
+  "tip": "부서·조직을 '개편하다'와 공간·서류를 '다시 정리하다'라는 뜻이 모두 쓰인다. 명사 reorganization(조직 개편)은 Part 7 사내 공지의 단골 주제다.",
+  "q": {
+   "s": "After the merger, the company decided to ------- its sales department into three regional teams.",
+   "o": [
+    "reorganize",
+    "reorganization",
+    "reorganized",
+    "reorganizing"
+   ],
+   "a": 0,
+   "k": "decided to 뒤에는 동사원형이 오므로 reorganize가 정답이다. reorganization은 명사, reorganized와 reorganizing은 to 부정사 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "workspace",
+  "pos": "n",
+  "m": [
+   "작업 공간, 업무 공간"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "Please keep your *workspace* tidy, as clients will be touring the office tomorrow.",
+  "exKo": "내일 고객들이 사무실을 둘러볼 예정이니 각자의 업무 공간을 깔끔하게 유지하라.",
+  "col": [
+   {
+    "e": "shared workspace",
+    "k": "공유 작업 공간"
+   },
+   {
+    "e": "keep one's workspace tidy",
+    "k": "업무 공간을 깔끔하게 유지하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "work area",
+   "desk"
+  ],
+  "ant": "",
+  "tip": "공유 오피스(shared workspace)나 사무실 개조 문맥에서 나온다. 비슷한 work- 복합어 workload(업무량), workforce(인력)와 의미로 구별하는 어휘 문제가 나온다.",
+  "q": {
+   "s": "The renovated office provides each employee with a larger ------- and better lighting.",
+   "o": [
+    "workload",
+    "workforce",
+    "workshop",
+    "workspace"
+   ],
+   "a": 3,
+   "k": "개조된 사무실이 직원마다 제공하는 '더 넓은 업무 공간'이므로 workspace가 정답이다. workload(업무량)는 사무실이 제공하는 혜택이 아니고, workforce(인력), workshop(연수회, 작업장)은 직원 한 명에게 주어지는 공간이 아니다."
+  }
+ },
+ {
+  "w": "attachment",
+  "pos": "n",
+  "m": [
+   "첨부 파일",
+   "애착"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "I've sent you the revised budget as an *attachment*, so please review it by noon.",
+  "exKo": "수정된 예산안을 첨부 파일로 보냈으니 정오까지 검토해 달라.",
+  "col": [
+   {
+    "e": "as an attachment",
+    "k": "첨부 파일로"
+   },
+   {
+    "e": "open an attachment",
+    "k": "첨부 파일을 열다"
+   }
+  ],
+  "der": [
+   {
+    "w": "attach",
+    "pos": "v",
+    "m": "첨부하다"
+   },
+   {
+    "w": "attached",
+    "pos": "adj",
+    "m": "첨부된"
+   }
+  ],
+  "para": [
+   "enclosure",
+   "attached file"
+  ],
+  "ant": "",
+  "tip": "as an attachment(첨부 파일로)처럼 가산명사로 쓴다. Part 7 이메일에서 '첨부된 것은 무엇인가?'를 묻는 문제의 단서가 된다.",
+  "q": {
+   "s": "Please open the ------- to view the full schedule for next week's training.",
+   "o": [
+    "attach",
+    "attached",
+    "attaching",
+    "attachment"
+   ],
+   "a": 3,
+   "k": "관사 the 뒤 open의 목적어 자리이므로 명사 attachment가 정답이다. attach는 동사, attached는 형용사·과거분사, attaching은 동명사로 '첨부 파일'을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "workflow",
+  "pos": "n",
+  "m": [
+   "작업 흐름, 업무 처리 과정"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new software has greatly improved the *workflow* in our design department.",
+  "exKo": "새 소프트웨어 덕분에 디자인 부서의 업무 흐름이 크게 개선되었다.",
+  "col": [
+   {
+    "e": "streamline the workflow",
+    "k": "업무 흐름을 간소화하다"
+   },
+   {
+    "e": "improve workflow",
+    "k": "작업 흐름을 개선하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "process",
+   "work process"
+  ],
+  "ant": "",
+  "tip": "streamline(간소화하다), improve, disrupt 같은 동사와 함께 쓰인다. Part 7에서 새 시스템 도입의 효과를 묻는 문제에 자주 등장한다.",
+  "q": {
+   "s": "The consultant suggested several changes to streamline the ------- between the two departments.",
+   "o": [
+    "workflow",
+    "overflow",
+    "outflow",
+    "inflow"
+   ],
+   "a": 0,
+   "k": "두 부서 사이의 '업무 흐름'을 간소화한다는 뜻이므로 workflow가 정답이다. overflow(범람), outflow(유출), inflow(유입)는 streamline의 목적어로 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "clerical",
+  "pos": "adj",
+  "m": [
+   "사무(직)의, 서기의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The temporary worker will handle *clerical* duties such as filing and data entry.",
+  "exKo": "임시 직원이 서류 정리, 데이터 입력 같은 사무 업무를 담당할 것이다.",
+  "col": [
+   {
+    "e": "clerical work",
+    "k": "사무 업무"
+   },
+   {
+    "e": "clerical staff",
+    "k": "사무직 직원"
+   }
+  ],
+  "der": [
+   {
+    "w": "clerk",
+    "pos": "n",
+    "m": "사무원, 점원"
+   }
+  ],
+  "para": [
+   "administrative",
+   "office"
+  ],
+  "ant": "",
+  "tip": "clerical work/duties/staff처럼 명사 앞에서 수식한다. 구인 광고(Part 7)에서 administrative와 같은 의미로 패러프레이즈된다.",
+  "q": {
+   "s": "Ms. Ito was hired to perform ------- tasks, including answering phones and scheduling appointments.",
+   "o": [
+    "cordial",
+    "chemical",
+    "cynical",
+    "clerical"
+   ],
+   "a": 3,
+   "k": "전화 응대와 일정 관리는 사무 업무이므로 clerical이 정답이다. cordial(다정한), chemical(화학의), cynical(냉소적인)은 tasks를 이렇게 설명할 수 없다."
+  }
+ },
+ {
+  "w": "multitask",
+  "pos": "v",
+  "m": [
+   "동시에 여러 일을 하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Receptionists must be able to *multitask*, answering calls while greeting visitors.",
+  "exKo": "접수 담당자는 방문객을 맞이하면서 전화도 받는 등 여러 일을 동시에 처리할 수 있어야 한다.",
+  "col": [
+   {
+    "e": "ability to multitask",
+    "k": "여러 일을 동시에 처리하는 능력"
+   },
+   {
+    "e": "multitask effectively",
+    "k": "여러 업무를 효율적으로 병행하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "multitasking",
+    "pos": "n",
+    "m": "다중 작업, 멀티태스킹"
+   }
+  ],
+  "para": [
+   "juggle tasks"
+  ],
+  "ant": "",
+  "tip": "구인 광고의 자격 요건(ability to multitask)으로 Part 7에 자주 나온다. 자동사이므로 목적어 없이 쓴다.",
+  "q": {
+   "s": "The ideal candidate can ------- effectively in a fast-paced environment.",
+   "o": [
+    "multitask",
+    "multitasking",
+    "multitasker",
+    "multiple"
+   ],
+   "a": 0,
+   "k": "조동사 can 뒤에는 동사원형이 오므로 multitask가 정답이다. multitasking과 multitasker는 명사, multiple은 형용사다."
+  }
+ },
+ {
+  "w": "tedious",
+  "pos": "adj",
+  "m": [
+   "지루한, 싫증 나는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Entering the survey data by hand was *tedious*, so we bought new software.",
+  "exKo": "설문 데이터를 손으로 입력하는 일이 지루해서 우리는 새 소프트웨어를 구입했다.",
+  "col": [
+   {
+    "e": "tedious task",
+    "k": "지루한 업무"
+   },
+   {
+    "e": "tedious process",
+    "k": "지루한 과정"
+   }
+  ],
+  "der": [
+   {
+    "w": "tediously",
+    "pos": "adv",
+    "m": "지루하게"
+   },
+   {
+    "w": "tedium",
+    "pos": "n",
+    "m": "지루함"
+   }
+  ],
+  "para": [
+   "boring",
+   "monotonous",
+   "dull"
+  ],
+  "ant": "interesting",
+  "tip": "find + 목적어 + tedious(~을 지루하다고 여기다)처럼 형용사 보어 자리에 자주 온다. Part 7에서는 repetitive, time-consuming과 함께 자동화 도입 이유로 나온다.",
+  "q": {
+   "s": "Many staff members find manual data entry ------- and prone to errors.",
+   "o": [
+    "tediously",
+    "tedious",
+    "tedium",
+    "tediousness"
+   ],
+   "a": 1,
+   "k": "find + 목적어 + 형용사 보어 구조이고 and 뒤 형용사 prone과 병렬이므로 tedious가 정답이다. tediously는 부사, tedium과 tediousness는 명사라 형용사 prone과 병렬될 수 없다."
+  }
+ },
+ {
+  "w": "cubicle",
+  "pos": "n",
+  "m": [
+   "(칸막이로 된) 개인 업무 공간, 칸막이 사무실"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "Mr. Novak's *cubicle* is next to the window on the fourth floor.",
+  "exKo": "Novak 씨의 칸막이 자리는 4층 창가 옆에 있다.",
+  "col": [
+   {
+    "e": "office cubicle",
+    "k": "사무실 칸막이 자리"
+   },
+   {
+    "e": "cubicle partition",
+    "k": "칸막이"
+   }
+  ],
+  "der": [],
+  "para": [
+   "workstation",
+   "desk"
+  ],
+  "ant": "",
+  "tip": "Part 1·3에서 칸막이 책상(cubicles), 칸막이(partitions)가 있는 사무실 장면으로 나온다. 위치를 묻는 Part 2 질문 'Where is Ms. Park's desk?'에 대한 응답으로도 들린다.",
+  "q": {
+   "s": "Each ------- in the open office is equipped with a desk, a chair, and a filing drawer.",
+   "o": [
+    "curriculum",
+    "cubicle",
+    "cuisine",
+    "circuit"
+   ],
+   "a": 1,
+   "k": "책상, 의자, 서랍장이 갖춰진 사무실의 개인 공간은 cubicle이다. curriculum(교육 과정), cuisine(요리), circuit(회로)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "hectic",
+  "pos": "adj",
+  "m": [
+   "정신없이 바쁜"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "It's been a *hectic* week with the product launch and two client visits.",
+  "exKo": "제품 출시와 두 번의 고객 방문으로 정신없이 바쁜 한 주였다.",
+  "col": [
+   {
+    "e": "hectic schedule",
+    "k": "빡빡한 일정"
+   },
+   {
+    "e": "hectic day",
+    "k": "정신없는 하루"
+   }
+  ],
+  "der": [],
+  "para": [
+   "busy",
+   "frantic"
+  ],
+  "ant": "quiet",
+  "tip": "hectic schedule/week처럼 명사를 수식하며 LC에서 busy의 고급 표현으로 들린다. 사람이 아닌 일정·기간을 꾸민다는 점이 busy와 다르다.",
+  "q": {
+   "s": "Despite her ------- schedule, Ms. Rahman agreed to mentor two new interns.",
+   "o": [
+    "hesitant",
+    "heroic",
+    "hectic",
+    "hostile"
+   ],
+   "a": 2,
+   "k": "Despite와 함께 '바쁜 일정에도 불구하고'가 자연스러우므로 hectic이 정답이다. hesitant(주저하는), heroic(영웅적인), hostile(적대적인)은 schedule을 수식하기에 어색하다."
+  }
+ },
+ {
+  "w": "time-consuming",
+  "pos": "adj",
+  "m": [
+   "시간이 많이 걸리는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Updating the inventory records manually is *time-consuming* and often leads to errors.",
+  "exKo": "재고 기록을 수동으로 갱신하는 일은 시간이 많이 걸리고 종종 오류로 이어진다.",
+  "col": [
+   {
+    "e": "time-consuming process",
+    "k": "시간이 많이 걸리는 과정"
+   },
+   {
+    "e": "costly and time-consuming",
+    "k": "비용과 시간이 많이 드는"
+   }
+  ],
+  "der": [
+   {
+    "w": "consume",
+    "pos": "v",
+    "m": "소비하다"
+   }
+  ],
+  "para": [
+   "lengthy",
+   "slow"
+  ],
+  "ant": "quick",
+  "tip": "하이픈으로 연결된 복합형용사로 명사 앞(a time-consuming task)과 be동사 뒤에 모두 쓴다. Part 7에서 '자동화·외주를 결정한 이유'로 자주 제시된다.",
+  "q": {
+   "s": "Processing refunds by hand is -------, so the store has introduced an automated system.",
+   "o": [
+    "time-consuming",
+    "part-time",
+    "timely",
+    "timeless"
+   ],
+   "a": 0,
+   "k": "자동화 시스템을 도입한 이유로 '시간이 많이 걸린다'가 알맞으므로 time-consuming이 정답이다. part-time(시간제의), timely(시기적절한), timeless(시대를 초월한)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "deliverable",
+  "pos": "n",
+  "m": [
+   "(프로젝트의) 산출물, 결과물"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The first *deliverable*, a market analysis report, is due at the end of May.",
+  "exKo": "첫 번째 산출물인 시장 분석 보고서는 5월 말까지 제출해야 한다.",
+  "col": [
+   {
+    "e": "project deliverables",
+    "k": "프로젝트 산출물"
+   },
+   {
+    "e": "key deliverables",
+    "k": "핵심 결과물"
+   }
+  ],
+  "der": [
+   {
+    "w": "deliver",
+    "pos": "v",
+    "m": "배달하다, (결과를) 내놓다"
+   },
+   {
+    "w": "delivery",
+    "pos": "n",
+    "m": "배달, 납품"
+   }
+  ],
+  "para": [
+   "output",
+   "product"
+  ],
+  "ant": "",
+  "tip": "-able로 끝나지만 '산출물'이라는 가산명사로 주로 복수형 deliverables로 쓴다. 계약서·프로젝트 계획서(Part 7)에서 일정(timeline)과 함께 나온다.",
+  "q": {
+   "s": "The contract lists each ------- the agency must submit, along with its due date.",
+   "o": [
+    "delivery",
+    "deliverable",
+    "deliverer",
+    "delivered"
+   ],
+   "a": 1,
+   "k": "대행사가 기한까지 '제출해야 하는 결과물'은 deliverable이다. delivery는 '배달, 납품 행위', deliverer는 '배달하는 사람', delivered는 과거분사라 each 뒤 명사 자리에 맞지 않는다."
+  }
+ },
+ {
+  "w": "timeline",
+  "pos": "n",
+  "m": [
+   "일정(표), 시간표",
+   "연대표"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Let's review the project *timeline* to see whether we can meet the deadline.",
+  "exKo": "마감일을 맞출 수 있을지 프로젝트 일정표를 검토해 보자.",
+  "col": [
+   {
+    "e": "project timeline",
+    "k": "프로젝트 일정"
+   },
+   {
+    "e": "tight timeline",
+    "k": "빠듯한 일정"
+   }
+  ],
+  "der": [],
+  "para": [
+   "schedule",
+   "time frame"
+  ],
+  "ant": "",
+  "tip": "프로젝트 단계별 일정을 뜻하며 LC에서 schedule과 같은 의미로 패러프레이즈된다. a tight timeline(빠듯한 일정)이 자주 쓰인다.",
+  "q": {
+   "s": "The architect presented a ------- showing when each phase of construction would be completed.",
+   "o": [
+    "timeline",
+    "deadline",
+    "lifeline",
+    "guideline"
+   ],
+   "a": 0,
+   "k": "각 공사 단계의 완료 시점을 보여 주는 것은 timeline(일정표)이다. deadline은 마감 시한 하나만을 뜻하고, lifeline(생명줄), guideline(지침)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "bottleneck",
+  "pos": "n",
+  "m": [
+   "병목 (현상)",
+   "(진행의) 장애물"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The approval process has become a *bottleneck* that delays every order.",
+  "exKo": "승인 절차가 모든 주문을 지연시키는 병목이 되었다.",
+  "col": [
+   {
+    "e": "eliminate a bottleneck",
+    "k": "병목을 해소하다"
+   },
+   {
+    "e": "production bottleneck",
+    "k": "생산 병목"
+   }
+  ],
+  "der": [],
+  "para": [
+   "obstacle",
+   "holdup"
+  ],
+  "ant": "",
+  "tip": "업무 흐름(workflow)이나 생산 공정에서 지연을 일으키는 지점을 뜻한다. Part 7에서 '문제점이 무엇인가' 문제의 정답 근거로 delay와 함께 나온다.",
+  "q": {
+   "s": "The factory hired additional inspectors to eliminate a ------- in the quality control process.",
+   "o": [
+    "bottleneck",
+    "breakthrough",
+    "benchmark",
+    "bylaw"
+   ],
+   "a": 0,
+   "k": "검사원을 더 고용해 '해소하려는' 대상은 품질 관리 과정의 bottleneck(병목)이다. breakthrough(돌파구), benchmark(기준), bylaw(내규)는 없애야 할 문제가 아니다."
+  }
+ },
+ {
+  "w": "redundant",
+  "pos": "adj",
+  "m": [
+   "불필요한, 중복되는",
+   "(영국) 정리 해고된"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Removing *redundant* steps from the approval process saved us several days.",
+  "exKo": "승인 절차에서 불필요한 단계를 없애자 며칠이 절약되었다.",
+  "col": [
+   {
+    "e": "redundant steps",
+    "k": "불필요한 단계"
+   },
+   {
+    "e": "be made redundant",
+    "k": "정리 해고되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "redundancy",
+    "pos": "n",
+    "m": "중복, 정리 해고"
+   }
+  ],
+  "para": [
+   "unnecessary",
+   "superfluous",
+   "duplicate"
+  ],
+  "ant": "essential",
+  "tip": "'중복되어 불필요한'이 기본 뜻이며 영국식으로 be made redundant는 '정리 해고되다'라는 뜻이다. 철자가 비슷한 abundant(풍부한)와 혼동하지 말자.",
+  "q": {
+   "s": "The editor deleted several ------- sentences that repeated information from the introduction.",
+   "o": [
+    "abundant",
+    "reluctant",
+    "resilient",
+    "redundant"
+   ],
+   "a": 3,
+   "k": "서론의 정보를 반복하는 문장은 '중복되는' 문장이므로 redundant가 정답이다. abundant(풍부한), reluctant(꺼리는), resilient(회복력 있는)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "liaise",
+  "pos": "v",
+  "m": [
+   "연락을 취하다, 협력하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Mr. Osei will *liaise* with the venue staff to arrange the catering.",
+  "exKo": "Osei 씨가 행사장 직원과 연락을 취해 출장 연회를 준비할 것이다.",
+  "col": [
+   {
+    "e": "liaise with",
+    "k": "~와 연락하다, 협력하다"
+   },
+   {
+    "e": "liaise between A and B",
+    "k": "A와 B 사이를 연결하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "liaison",
+    "pos": "n",
+    "m": "연락 담당자, 연락"
+   }
+  ],
+  "para": [
+   "coordinate",
+   "communicate",
+   "work with"
+  ],
+  "ant": "",
+  "tip": "자동사라 반드시 liaise with + 대상으로 쓴다. 명사 liaison(연락 담당자)은 구인 광고에서 '고객 연락 담당'으로 나온다.",
+  "q": {
+   "s": "The project coordinator will ------- with suppliers to ensure materials arrive on time.",
+   "o": [
+    "comply",
+    "consist",
+    "liaise",
+    "refrain"
+   ],
+   "a": 2,
+   "k": "공급업체와 '연락·협력하다'는 liaise with이므로 정답이다. comply with는 규칙을 '준수하다', consist of는 '구성되다', refrain from은 '삼가다'라서 의미나 전치사가 맞지 않는다."
+  }
+ },
+ {
+  "w": "on track",
+  "pos": "phr",
+  "m": [
+   "순조롭게 진행 중인, 예정대로인"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "Despite a few delays, the office renovation is still *on track* to finish in June.",
+  "exKo": "몇 차례 지연에도 불구하고 사무실 개조 공사는 여전히 6월 완료를 향해 순조롭게 진행 중이다.",
+  "col": [
+   {
+    "e": "be on track to do",
+    "k": "~할 것으로 순조롭게 진행 중이다"
+   },
+   {
+    "e": "stay on track",
+    "k": "계획대로 유지하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "on schedule",
+   "on target"
+  ],
+  "ant": "off track",
+  "tip": "be on track to do / for + 명사로 쓰며 LC에서 on schedule로 패러프레이즈된다. 전치사 on을 in이나 at으로 바꾼 오답이 나온다.",
+  "q": {
+   "s": "Thanks to the extra staff, the construction project is ------- track for completion next month.",
+   "o": [
+    "in",
+    "on",
+    "at",
+    "by"
+   ],
+   "a": 1,
+   "k": "'순조롭게 진행 중인'은 on track이므로 on이 정답이다. in track, at track, by track은 쓰지 않는 표현이다."
+  }
+ },
+ {
+  "w": "touch base",
+  "pos": "phr",
+  "m": [
+   "(잠깐) 연락하다, 상황을 확인하다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Let's *touch base* on Thursday to see how the client survey is going.",
+  "exKo": "고객 설문 조사가 어떻게 진행되는지 목요일에 잠깐 이야기해 보자.",
+  "col": [
+   {
+    "e": "touch base with",
+    "k": "~와 연락하다"
+   },
+   {
+    "e": "touch base later",
+    "k": "나중에 다시 이야기하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "check in",
+   "get in touch",
+   "follow up"
+  ],
+  "ant": "",
+  "tip": "touch base with + 사람(~와 잠깐 연락해 상황을 공유하다)은 LC 회화에서 자주 쓰는 구어 표현이다. Part 3에서 '다음에 무엇을 할 것인가' 문제의 정답 contact로 패러프레이즈된다.",
+  "q": {
+   "s": "I'll ------- base with the design team later today to check on their progress.",
+   "o": [
+    "reach",
+    "hold",
+    "cover",
+    "touch"
+   ],
+   "a": 3,
+   "k": "'~와 잠깐 연락해 상황을 확인하다'는 touch base with이므로 touch가 정답이다. reach, hold, cover는 base와 결합해 이런 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "ahead of schedule",
+  "pos": "phr",
+  "m": [
+   "예정보다 앞서, 예정보다 일찍"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "Thanks to good weather, the new branch opened ten days *ahead of schedule*.",
+  "exKo": "날씨가 좋은 덕분에 새 지점은 예정보다 열흘 앞당겨 문을 열었다.",
+  "col": [
+   {
+    "e": "ten days ahead of schedule",
+    "k": "예정보다 열흘 일찍"
+   },
+   {
+    "e": "finish ahead of schedule",
+    "k": "예정보다 일찍 끝내다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "early",
+   "sooner than planned"
+  ],
+  "ant": "behind schedule",
+  "tip": "반의어 behind schedule(예정보다 늦게), 같은 계열인 on schedule(예정대로)과 함께 묶어 외우자. 'ahead of + 명사'에서 ahead를 before로 바꾼 오답이 나온다.",
+  "q": {
+   "s": "The software update was completed ------- of schedule, so the team began testing early.",
+   "o": [
+    "ahead",
+    "before",
+    "prior",
+    "advance"
+   ],
+   "a": 0,
+   "k": "'예정보다 앞서'는 ahead of schedule이므로 ahead가 정답이다. before는 of 없이 쓰고, prior는 to와, advance는 in advance of 형태로 써야 한다."
+  }
+ },
+ {
+  "w": "fall behind",
+  "pos": "phr",
+  "m": [
+   "뒤처지다, (일정 등이) 늦어지다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "We've *fallen behind* on the shipments because two drivers are out sick.",
+  "exKo": "운전기사 두 명이 병가 중이어서 우리는 배송 일정에 뒤처졌다.",
+  "col": [
+   {
+    "e": "fall behind on",
+    "k": "~이 밀리다, 뒤처지다"
+   },
+   {
+    "e": "fall behind schedule",
+    "k": "일정보다 늦어지다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "lag behind",
+   "get behind"
+  ],
+  "ant": "catch up",
+  "tip": "fall behind on + 업무/지불(~이 밀리다), fall behind schedule 형태로 쓴다. Part 3에서 문제점(problem)을 묻는 질문의 단서로 자주 들린다.",
+  "q": {
+   "s": "The production team hired temporary workers so that it would not ------- behind on orders.",
+   "o": [
+    "come",
+    "stay",
+    "fall",
+    "keep"
+   ],
+   "a": 2,
+   "k": "'주문 처리에서 뒤처지다'는 fall behind on이므로 fall이 정답이다. come behind는 쓰지 않으며, stay behind(남다)와 keep behind는 on orders와 함께 '밀리다'라는 뜻이 되지 않는다."
+  }
+ }
+]

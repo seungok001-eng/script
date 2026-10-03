@@ -1,0 +1,1999 @@
+[
+ {
+  "w": "shop around",
+  "pos": "phr",
+  "m": [
+   "(여러 가게를) 비교하며 둘러보다",
+   "가격을 비교해 보다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "Before you sign with a moving company, it's smart to *shop around* for the best rate.",
+  "exKo": "이삿짐 업체와 계약하기 전에 가장 좋은 요금을 찾아 여러 곳을 비교해 보는 것이 현명하다.",
+  "col": [
+   {
+    "e": "shop around for",
+    "k": "~을 찾아 여러 곳을 비교하다"
+   },
+   {
+    "e": "shop around for the best price",
+    "k": "최저가를 찾아 비교하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "compare prices",
+   "look around"
+  ],
+  "ant": "",
+  "tip": "shop around for(~을 찾아 비교하며 둘러보다) 형태로 전치사 for와 함께 잘 쓰인다. 자동사라 목적어를 바로 쓰지 않는다는 점에 주의한다.",
+  "q": {
+   "s": "Ms. Okafor advised her team to ------- for a cheaper printing service before renewing the current contract.",
+   "o": [
+    "turn around",
+    "hand around",
+    "stand around",
+    "shop around"
+   ],
+   "a": 3,
+   "k": "현재 계약을 갱신하기 전에 더 저렴한 인쇄 업체를 '찾아 비교해 보라'는 문맥이므로 shop around가 정답이다. turn around(돌아서다, 호전되다), hand around(돌리다), stand around(서성거리다)는 for와 어울려 이런 뜻을 만들지 못한다."
+  }
+ },
+ {
+  "w": "ring up",
+  "pos": "phr",
+  "m": [
+   "(계산대에서 상품을) 계산하다",
+   "(금액을) 계산기에 찍다"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "Once the clerk had *rung up* all the groceries, the total came to 86 dollars.",
+  "exKo": "점원이 식료품을 모두 계산하자 총액이 86달러가 나왔다.",
+  "col": [
+   {
+    "e": "ring up a purchase",
+    "k": "구매 물품을 계산하다"
+   },
+   {
+    "e": "ring up a sale",
+    "k": "매출을 올리다, 판매를 계산하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "charge for",
+   "process"
+  ],
+  "ant": "",
+  "tip": "LC에서 계산원(cashier)의 행동으로 자주 나온다. 영국 영어의 '전화하다' 뜻도 있지만 토익에서는 '계산하다'가 주로 쓰이며, 목적어는 ring up the items 또는 ring the items up 어순 모두 가능하다.",
+  "q": {
+   "s": "The cashier ------- the same item twice by mistake, so the customer asked for a refund of the extra charge.",
+   "o": [
+    "rang up",
+    "signed up",
+    "took up",
+    "made up"
+   ],
+   "a": 0,
+   "k": "실수로 같은 물건을 두 번 '계산해서' 초과 금액의 환불을 요청한 상황이므로 rang up이 정답이다. signed up(등록했다), took up(차지했다, 시작했다), made up(구성했다, 지어냈다)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "pick out",
+  "pos": "phr",
+  "m": [
+   "고르다, 선택하다",
+   "(여럿 중에서) 알아보다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "The sales associate helped me *pick out* a tie that goes well with my new suit.",
+  "exKo": "판매 직원은 내가 새 정장과 잘 어울리는 넥타이를 고르는 것을 도와주었다.",
+  "col": [
+   {
+    "e": "pick out a gift",
+    "k": "선물을 고르다"
+   },
+   {
+    "e": "pick out a color",
+    "k": "색상을 고르다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "choose",
+   "select"
+  ],
+  "ant": "",
+  "tip": "pick out은 choose, select로 패러프레이징된다. 대명사 목적어는 pick it out처럼 반드시 중간에 넣는다는 점이 어순 문제로 나온다.",
+  "q": {
+   "s": "Customers can ------- any three items from the clearance table for just twenty dollars.",
+   "o": [
+    "pick out",
+    "carry on",
+    "set off",
+    "break down"
+   ],
+   "a": 0,
+   "k": "재고 정리 테이블에서 물건 세 개를 '골라' 20달러에 살 수 있다는 의미이므로 pick out이 정답이다. carry on(계속하다), set off(출발하다, 유발하다), break down(고장 나다, 분해하다)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "try out",
+  "pos": "phr",
+  "m": [
+   "시험 삼아 써 보다",
+   "시험해 보다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "You're welcome to *try out* the massage chair before you decide to buy it.",
+  "exKo": "구매를 결정하기 전에 안마의자를 마음껏 시험 삼아 사용해 봐도 된다.",
+  "col": [
+   {
+    "e": "try out a product",
+    "k": "제품을 써 보다"
+   },
+   {
+    "e": "try out a new feature",
+    "k": "새 기능을 시험해 보다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "test",
+   "sample"
+  ],
+  "ant": "",
+  "tip": "try out은 제품·기능을 '시험 삼아 써 보다', try on은 옷·신발을 '입어 보다/신어 보다'이므로 대상에 따라 구분해야 한다.",
+  "q": {
+   "s": "Visitors to the electronics fair can ------- the latest virtual reality headsets at our booth.",
+   "o": [
+    "run out",
+    "try out",
+    "drop out",
+    "wear out"
+   ],
+   "a": 1,
+   "k": "박람회 방문객이 부스에서 최신 VR 헤드셋을 '시험 삼아 써 볼' 수 있다는 의미이므로 try out이 정답이다. run out(다 떨어지다)과 drop out(빠지다, 중퇴하다)은 목적어를 바로 받지 못하고, wear out(닳게 하다)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "come with",
+  "pos": "phr",
+  "m": [
+   "~이 딸려 있다, ~이 포함되다",
+   "~와 함께 오다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Each space heater *comes with* a remote control and an easy-to-follow setup guide.",
+  "exKo": "각 전기 히터에는 리모컨과 따라 하기 쉬운 설치 안내서가 딸려 있다.",
+  "col": [
+   {
+    "e": "come with a warranty",
+    "k": "보증이 딸려 있다"
+   },
+   {
+    "e": "come with instructions",
+    "k": "설명서가 들어 있다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "include",
+   "be equipped with"
+  ],
+  "ant": "",
+  "tip": "사물 주어 + come with는 '~이 딸려 나오다'로 include로 패러프레이징된다. 수동태로 쓰지 않으므로 is come with 같은 형태는 오답이다.",
+  "q": {
+   "s": "The deluxe coffee maker ------- a set of four ceramic mugs at no extra charge.",
+   "o": [
+    "comes across",
+    "comes with",
+    "comes up",
+    "comes from"
+   ],
+   "a": 1,
+   "k": "커피 메이커에 머그잔 네 개 세트가 추가 비용 없이 '딸려 온다'는 의미이므로 comes with가 정답이다. comes across(우연히 발견하다), comes up(생기다), comes from(~에서 비롯되다)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "escalate",
+  "pos": "v",
+  "m": [
+   "(문제를) 상부에 보고하다, 이관하다",
+   "확대되다, 악화되다"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "If the problem can't be solved over the phone, I'll *escalate* it to my supervisor.",
+  "exKo": "전화로 문제가 해결되지 않으면 내가 상사에게 그 건을 넘기겠다.",
+  "col": [
+   {
+    "e": "escalate a complaint",
+    "k": "불만 건을 상부에 올리다"
+   },
+   {
+    "e": "escalate to a manager",
+    "k": "관리자에게 이관하다"
+   },
+   {
+    "e": "escalating costs",
+    "k": "치솟는 비용"
+   }
+  ],
+  "der": [
+   {
+    "w": "escalation",
+    "pos": "n",
+    "m": "(상부) 이관, 확대, 증가"
+   }
+  ],
+  "para": [
+   "refer",
+   "pass on"
+  ],
+  "ant": "de-escalate",
+  "tip": "escalate A to B(A를 B에게 이관하다) 구조가 고객 응대 지문에 나온다. 자동사로는 '(갈등·비용이) 확대되다'라는 뜻이어서 escalating costs 같은 표현도 출제된다.",
+  "q": {
+   "s": "If a customer remains unsatisfied, representatives should ------- the complaint to a department manager.",
+   "o": [
+    "evaluate",
+    "accelerate",
+    "escalate",
+    "exaggerate"
+   ],
+   "a": 2,
+   "k": "고객이 계속 만족하지 않으면 불만 건을 부서 관리자에게 '이관해야' 한다는 문맥이므로 to와 어울리는 escalate가 정답이다. evaluate(평가하다), accelerate(가속하다), exaggerate(과장하다)는 to a manager와 함께 쓰일 수 없다."
+  }
+ },
+ {
+  "w": "showroom",
+  "pos": "n",
+  "m": [
+   "전시장, 쇼룸",
+   "(자동차 등의) 판매 전시장"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   4,
+   7
+  ],
+  "ex": "The new models will be on display in our downtown *showroom* starting Saturday.",
+  "exKo": "신모델은 토요일부터 시내 전시장에 전시될 예정이다.",
+  "col": [
+   {
+    "e": "car showroom",
+    "k": "자동차 전시장"
+   },
+   {
+    "e": "showroom floor",
+    "k": "전시장 매장"
+   },
+   {
+    "e": "visit the showroom",
+    "k": "전시장을 방문하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "display room",
+   "exhibition space"
+  ],
+  "ant": "",
+  "tip": "Part 1·3에서 자동차 판매장(dealership)이나 가구 매장 장면에 자주 나온다. on display in the showroom(전시장에 진열된)과 함께 기억해 둔다.",
+  "q": {
+   "s": "Customers can test-drive the vehicle after viewing it in the dealership's -------.",
+   "o": [
+    "restroom",
+    "showroom",
+    "mailroom",
+    "ballroom"
+   ],
+   "a": 1,
+   "k": "고객이 시승 전에 차량을 둘러보는 곳은 판매점의 '전시장'이므로 showroom이 정답이다. restroom(화장실), mailroom(우편실), ballroom(연회장)은 차량을 구경하는 장소가 아니다."
+  }
+ },
+ {
+  "w": "outlet",
+  "pos": "n",
+  "m": [
+   "할인 매장, 아웃렛",
+   "(전기) 콘센트",
+   "판매처, 판로"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   5,
+   7
+  ],
+  "ex": "The brand sells last season's clothing at reduced prices through its factory *outlet*.",
+  "exKo": "그 브랜드는 공장 직영 할인 매장을 통해 지난 시즌 의류를 할인된 가격에 판매한다.",
+  "col": [
+   {
+    "e": "factory outlet",
+    "k": "공장 직영 할인점"
+   },
+   {
+    "e": "retail outlet",
+    "k": "소매 판매점"
+   },
+   {
+    "e": "electrical outlet",
+    "k": "전기 콘센트"
+   }
+  ],
+  "der": [],
+  "para": [
+   "store",
+   "socket"
+  ],
+  "ant": "",
+  "tip": "'할인 매장'과 '콘센트' 뜻이 모두 출제된다. Part 1에서는 plug into an outlet(콘센트에 꽂다), Part 7에서는 retail outlet(판매점)으로 자주 나온다.",
+  "q": {
+   "s": "Plug the device into a wall ------- and let it charge for at least two hours.",
+   "o": [
+    "outcome",
+    "outlet",
+    "output",
+    "outlook"
+   ],
+   "a": 1,
+   "k": "기기를 벽에 있는 '콘센트'에 꽂아 충전하라는 의미이므로 outlet이 정답이다. outcome(결과), output(생산량, 출력), outlook(전망)은 plug into와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "high-end",
+  "pos": "adj",
+  "m": [
+   "고급의, 고가의",
+   "최고급 사양의"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The store mainly carries *high-end* kitchen appliances for professional chefs.",
+  "exKo": "그 매장은 주로 전문 요리사를 위한 고급 주방 가전을 취급한다.",
+  "col": [
+   {
+    "e": "high-end products",
+    "k": "고급 제품"
+   },
+   {
+    "e": "high-end market",
+    "k": "고급 시장"
+   },
+   {
+    "e": "high-end clients",
+    "k": "고급 고객층"
+   }
+  ],
+  "der": [],
+  "para": [
+   "upscale",
+   "luxury",
+   "premium"
+  ],
+  "ant": "low-end",
+  "tip": "high-end는 명사 앞에서만 쓰는 형용사로 upscale, premium으로 패러프레이징된다. 반의어 low-end(저가의)와 함께 시장 분석 지문에 등장한다.",
+  "q": {
+   "s": "The boutique specializes in ------- watches that are priced well above those of most competitors.",
+   "o": [
+    "high-rise",
+    "high-pitched",
+    "high-end",
+    "highlighted"
+   ],
+   "a": 2,
+   "k": "대부분의 경쟁사보다 가격이 훨씬 높은 시계라고 했으므로 '고급의' high-end가 정답이다. high-rise(고층의), high-pitched(음이 높은), highlighted(강조 표시된)는 시계를 꾸미기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "luxury",
+  "pos": "n",
+  "m": [
+   "사치(품)",
+   "호화로움, 고급"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The hotel's *luxury* suites include a private balcony and a personal butler service.",
+  "exKo": "그 호텔의 고급 스위트룸에는 전용 발코니와 개인 집사 서비스가 포함된다.",
+  "col": [
+   {
+    "e": "luxury goods",
+    "k": "명품, 사치품"
+   },
+   {
+    "e": "luxury hotel",
+    "k": "고급 호텔"
+   },
+   {
+    "e": "a luxury",
+    "k": "사치(스러운 것)"
+   }
+  ],
+  "der": [
+   {
+    "w": "luxurious",
+    "pos": "adj",
+    "m": "호화로운, 사치스러운"
+   },
+   {
+    "w": "luxuriously",
+    "pos": "adv",
+    "m": "호화롭게"
+   }
+  ],
+  "para": [
+   "indulgence",
+   "extravagance"
+  ],
+  "ant": "necessity",
+  "tip": "luxury는 명사지만 luxury hotel처럼 명사 앞에서 수식어로도 쓰인다. 관사 뒤 명사 자리에는 luxury, 형용사 자리에는 luxurious를 고르는 품사 문제가 나온다.",
+  "q": {
+   "s": "For many busy professionals, a week-long vacation has become a ------- they can rarely afford.",
+   "o": [
+    "luxurious",
+    "luxury",
+    "luxuriously",
+    "luxuriate"
+   ],
+   "a": 1,
+   "k": "관사 a 뒤 명사 자리이고 they can rarely afford가 수식하는 '사치'라는 의미이므로 명사 luxury가 정답이다. luxurious는 형용사, luxuriously는 부사, luxuriate는 동사다."
+  }
+ },
+ {
+  "w": "pricey",
+  "pos": "adj",
+  "m": [
+   "값비싼"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3
+  ],
+  "ex": "That restaurant near the station is a bit *pricey*, but the food is excellent.",
+  "exKo": "역 근처의 그 식당은 좀 비싸지만 음식은 훌륭하다.",
+  "col": [
+   {
+    "e": "a bit pricey",
+    "k": "좀 비싼"
+   },
+   {
+    "e": "rather pricey",
+    "k": "꽤 비싼"
+   }
+  ],
+  "der": [
+   {
+    "w": "price",
+    "pos": "n",
+    "m": "가격"
+   }
+  ],
+  "para": [
+   "expensive",
+   "costly"
+  ],
+  "ant": "cheap",
+  "tip": "구어체 형용사로 LC에서 expensive 대신 자주 들린다. priceless(값을 매길 수 없을 만큼 귀중한)와 혼동하지 않도록 주의한다.",
+  "q": {
+   "s": "Although the hotel is somewhat -------, guests say its location and service are worth the cost.",
+   "o": [
+    "pricey",
+    "priceless",
+    "pricing",
+    "prized"
+   ],
+   "a": 0,
+   "k": "Although 절에서 '비용만큼 가치가 있다'와 대조되려면 '값비싼'이라는 뜻이 필요하므로 pricey가 정답이다. priceless는 '매우 귀중한', prized는 '소중히 여겨지는'이라 대조가 성립하지 않고, pricing은 명사다."
+  }
+ },
+ {
+  "w": "cart",
+  "pos": "n",
+  "m": [
+   "카트, 손수레",
+   "(온라인) 장바구니"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "A man is pushing a shopping *cart* through the parking lot.",
+  "exKo": "한 남자가 주차장에서 쇼핑 카트를 밀고 있다.",
+  "col": [
+   {
+    "e": "shopping cart",
+    "k": "쇼핑 카트, 장바구니"
+   },
+   {
+    "e": "push a cart",
+    "k": "카트를 밀다"
+   },
+   {
+    "e": "add to cart",
+    "k": "장바구니에 담다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "trolley"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 push/pull a cart, be loaded onto a cart 같은 묘사로 자주 나온다. 온라인 쇼핑 지문에서는 '장바구니'라는 뜻으로 쓰인다.",
+  "q": {
+   "s": "Items left in your online shopping ------- will be saved for up to thirty days.",
+   "o": [
+    "cart",
+    "receipt",
+    "center",
+    "spree"
+   ],
+   "a": 0,
+   "k": "온라인 쇼핑에서 물건을 담아 두는 곳은 '장바구니'이므로 cart가 정답이다. shopping receipt(영수증), shopping center(쇼핑센터), shopping spree(마구 사들이기)에는 물건을 남겨 둘 수 없다."
+  }
+ },
+ {
+  "w": "storewide",
+  "pos": "adj",
+  "m": [
+   "매장 전체의",
+   "전 품목의"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Our *storewide* clearance event offers discounts of up to 50 percent this weekend.",
+  "exKo": "이번 주말 매장 전체 재고 정리 행사에서는 최대 50퍼센트까지 할인해 준다.",
+  "col": [
+   {
+    "e": "storewide sale",
+    "k": "전 품목 세일"
+   },
+   {
+    "e": "storewide discount",
+    "k": "매장 전체 할인"
+   }
+  ],
+  "der": [],
+  "para": [
+   "across the store",
+   "on all items"
+  ],
+  "ant": "",
+  "tip": "storewide는 형용사(storewide sale)와 부사(Prices are reduced storewide) 모두로 쓰인다. 광고문에서 '전 품목 할인'을 뜻하며 Part 7에서 on all items로 바꿔 표현된다.",
+  "q": {
+   "s": "This weekend only, Harlow's is offering a ------- discount of 20 percent on every item, including new arrivals.",
+   "o": [
+    "store-bought",
+    "storied",
+    "stored",
+    "storewide"
+   ],
+   "a": 3,
+   "k": "신상품을 포함한 모든 품목에 적용되는 '매장 전체' 할인이므로 storewide가 정답이다. store-bought(가게에서 산), storied(유서 깊은), stored(저장된)는 discount를 꾸미기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "price range",
+  "pos": "phr",
+  "m": [
+   "가격대",
+   "가격 범위"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   7
+  ],
+  "ex": "The customer asked whether there was a similar sofa in a lower *price range*.",
+  "exKo": "고객은 더 낮은 가격대의 비슷한 소파가 있는지 물었다.",
+  "col": [
+   {
+    "e": "in a price range",
+    "k": "~의 가격대로"
+   },
+   {
+    "e": "within one's price range",
+    "k": "예산 범위 안에"
+   },
+   {
+    "e": "a wide price range",
+    "k": "폭넓은 가격대"
+   }
+  ],
+  "der": [],
+  "para": [
+   "budget",
+   "price bracket"
+  ],
+  "ant": "",
+  "tip": "LC에서 고객이 What's your price range?(예산이 어느 정도세요?) 같은 질문을 듣고 응답하는 형태로 자주 나온다. within/in/out of one's price range로 전치사와 함께 쓴다.",
+  "q": {
+   "s": "Our sales staff can recommend several laptops that fall within your -------.",
+   "o": [
+    "price range",
+    "price tag",
+    "price list",
+    "price cut"
+   ],
+   "a": 0,
+   "k": "fall within(~ 범위에 들다)과 어울려 '고객의 예산 범위' 안에 드는 노트북을 뜻하므로 price range가 정답이다. price tag(가격표), price list(가격표, 가격 목록), price cut(가격 인하)은 범위를 나타내지 않아 within과 맞지 않는다."
+  }
+ },
+ {
+  "w": "markdown",
+  "pos": "n",
+  "m": [
+   "가격 인하",
+   "할인(액)"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Winter coats are now available at a 30 percent *markdown* at all our locations.",
+  "exKo": "현재 모든 지점에서 겨울 코트를 30퍼센트 할인된 가격에 구입할 수 있다.",
+  "col": [
+   {
+    "e": "a 20 percent markdown",
+    "k": "20퍼센트 가격 인하"
+   },
+   {
+    "e": "take a markdown",
+    "k": "가격을 인하하다"
+   },
+   {
+    "e": "markdown price",
+    "k": "인하된 가격"
+   }
+  ],
+  "der": [
+   {
+    "w": "mark down",
+    "pos": "phr",
+    "m": "가격을 인하하다"
+   }
+  ],
+  "para": [
+   "discount",
+   "price reduction"
+  ],
+  "ant": "markup",
+  "tip": "명사 markdown(가격 인하)은 구동사 mark down(가격을 내리다)에서 나온 말이다. 반대말 markup(가격 인상, 이윤 폭)과 혼동시키는 문제가 나온다.",
+  "q": {
+   "s": "Several floor models are being sold at a significant ------- to make room for new inventory.",
+   "o": [
+    "markup",
+    "breakdown",
+    "countdown",
+    "markdown"
+   ],
+   "a": 3,
+   "k": "새 재고를 들여놓을 공간을 마련하기 위해 진열 상품을 크게 '할인해서' 판매한다는 문맥이므로 markdown이 정답이다. markup(가격 인상)은 재고 처분 목적과 맞지 않고, breakdown(고장, 내역), countdown(카운트다운)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "flash sale",
+  "pos": "phr",
+  "m": [
+   "반짝 세일",
+   "타임 세일"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The online retailer held a three-hour *flash sale* on wireless earbuds yesterday.",
+  "exKo": "그 온라인 소매업체는 어제 무선 이어폰에 대해 세 시간 동안 반짝 세일을 진행했다.",
+  "col": [
+   {
+    "e": "hold a flash sale",
+    "k": "반짝 세일을 하다"
+   },
+   {
+    "e": "a 24-hour flash sale",
+    "k": "24시간 반짝 세일"
+   }
+  ],
+  "der": [],
+  "para": [
+   "limited-time sale",
+   "one-day sale"
+  ],
+  "ant": "",
+  "tip": "짧은 시간 동안만 진행되는 할인 행사로, Part 4 광고나 Part 7 이메일에서 for a limited time, only today 같은 표현과 함께 나온다.",
+  "q": {
+   "s": "Subscribers to our newsletter will be notified of each ------- at least an hour before it begins.",
+   "o": [
+    "flash sale",
+    "price tag",
+    "sale price",
+    "salesclerk"
+   ],
+   "a": 0,
+   "k": "시작하기 한 시간 전에 알림을 받는 대상은 시작 시점이 있는 행사여야 하므로 flash sale이 정답이다. price tag(가격표), sale price(할인가), salesclerk(점원)는 '시작한다(begins)'와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "redeem",
+  "pos": "v",
+  "m": [
+   "(상품권·쿠폰 등을) 사용하다, 상품으로 교환하다",
+   "(포인트를) 현금화하다"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Customers can *redeem* their reward points for discounts on future purchases.",
+  "exKo": "고객은 적립 포인트를 향후 구매 시 할인으로 교환할 수 있다.",
+  "col": [
+   {
+    "e": "redeem a coupon",
+    "k": "쿠폰을 사용하다"
+   },
+   {
+    "e": "redeem points for",
+    "k": "포인트를 ~으로 교환하다"
+   },
+   {
+    "e": "redeem a voucher",
+    "k": "상품권을 사용하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "redemption",
+    "pos": "n",
+    "m": "(상품권 등의) 교환, 사용"
+   },
+   {
+    "w": "redeemable",
+    "pos": "adj",
+    "m": "교환 가능한"
+   }
+  ],
+  "para": [
+   "use",
+   "exchange",
+   "cash in"
+  ],
+  "ant": "",
+  "tip": "redeem A for B(A를 B로 교환하다) 구조와 redeemable at(~에서 사용 가능한)이 쿠폰·상품권 지문에 나온다. 명사형 redemption의 철자에도 주의한다.",
+  "q": {
+   "s": "This voucher may be ------- at any of our locations until the end of the year.",
+   "o": [
+    "resumed",
+    "revised",
+    "recited",
+    "redeemed"
+   ],
+   "a": 3,
+   "k": "상품권은 매장에서 '사용될' 수 있다는 의미이므로 redeemed가 정답이다. resumed(재개된), revised(수정된), recited(낭독된)는 voucher와 의미상 어울리지 않는다."
+  }
+ },
+ {
+  "w": "gift card",
+  "pos": "phr",
+  "m": [
+   "기프트 카드",
+   "선불 상품권 카드"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "I'd like to buy a fifty-dollar *gift card* for a coworker who's retiring.",
+  "exKo": "은퇴하는 동료에게 줄 50달러짜리 기프트 카드를 사고 싶다.",
+  "col": [
+   {
+    "e": "purchase a gift card",
+    "k": "기프트 카드를 구입하다"
+   },
+   {
+    "e": "gift card balance",
+    "k": "기프트 카드 잔액"
+   },
+   {
+    "e": "redeem a gift card",
+    "k": "기프트 카드를 사용하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "gift certificate",
+   "voucher"
+  ],
+  "ant": "",
+  "tip": "gift certificate(상품권)와 같은 의미로 Part 7에서 voucher로 패러프레이징된다. balance(잔액), expire(만료되다)와 함께 자주 쓰인다.",
+  "q": {
+   "s": "The ------- can be used in our stores or online and never expires.",
+   "o": [
+    "gift shop",
+    "gift basket",
+    "gift wrapping",
+    "gift card"
+   ],
+   "a": 3,
+   "k": "매장과 온라인에서 사용할 수 있고 유효기간이 없다고 했으므로 결제 수단인 gift card가 정답이다. gift shop(선물 가게), gift basket(선물 바구니), gift wrapping(선물 포장)은 '만료되다(expires)'와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "restocking fee",
+  "pos": "phr",
+  "m": [
+   "재입고 수수료",
+   "반품 수수료"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Opened electronics may be returned within 14 days, subject to a 15 percent *restocking fee*.",
+  "exKo": "개봉한 전자제품은 14일 이내에 반품할 수 있으며, 15퍼센트의 반품 수수료가 부과된다.",
+  "col": [
+   {
+    "e": "charge a restocking fee",
+    "k": "재입고 수수료를 부과하다"
+   },
+   {
+    "e": "waive the restocking fee",
+    "k": "재입고 수수료를 면제하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "restock",
+    "pos": "v",
+    "m": "재입고하다, 다시 채우다"
+   }
+  ],
+  "para": [
+   "return fee",
+   "handling charge"
+  ],
+  "ant": "",
+  "tip": "반품 정책(return policy) 지문에서 subject to a restocking fee(재입고 수수료가 부과되는) 형태로 자주 나온다. 어떤 경우에 부과·면제되는지 묻는 Part 7 세부 문제로 출제된다.",
+  "q": {
+   "s": "Customers who return special-order furniture will be charged a ------- of 10 percent of the purchase price.",
+   "o": [
+    "restocking fee",
+    "shipping label",
+    "purchase order",
+    "sales receipt"
+   ],
+   "a": 0,
+   "k": "특별 주문 가구를 반품하면 구매가의 10퍼센트가 '부과된다'고 했으므로 restocking fee가 정답이다. shipping label(배송 라벨), purchase order(구매 주문서), sales receipt(판매 영수증)는 부과되는 금액이 아니다."
+  }
+ },
+ {
+  "w": "proof of purchase",
+  "pos": "phr",
+  "m": [
+   "구매 증빙",
+   "구매 증명서"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Warranty repairs are free, but you'll need to show *proof of purchase* at the service desk.",
+  "exKo": "보증 수리는 무료이지만 서비스 데스크에서 구매 증빙을 보여 줘야 한다.",
+  "col": [
+   {
+    "e": "valid proof of purchase",
+    "k": "유효한 구매 증빙"
+   },
+   {
+    "e": "present proof of purchase",
+    "k": "구매 증빙을 제시하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "receipt",
+   "sales slip"
+  ],
+  "ant": "",
+  "tip": "환불·교환·보증 서비스 조건으로 Part 7에 자주 나오며 receipt로 패러프레이징된다. proof는 불가산명사로 쓰여 a proof of purchase보다 proof of purchase가 일반적이다.",
+  "q": {
+   "s": "Refunds cannot be processed without a valid ------- such as an original receipt or order confirmation.",
+   "o": [
+    "proof of purchase",
+    "point of sale",
+    "terms of use",
+    "place of business"
+   ],
+   "a": 0,
+   "k": "원본 영수증이나 주문 확인서가 예로 제시되었으므로 '구매 증빙'인 proof of purchase가 정답이다. point of sale(판매 시점), terms of use(이용 약관), place of business(사업장)는 영수증의 상위 개념이 아니다."
+  }
+ },
+ {
+  "w": "unopened",
+  "pos": "adj",
+  "m": [
+   "개봉하지 않은",
+   "뜯지 않은"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "We accept returns of *unopened* items within 30 days of delivery.",
+  "exKo": "배송 후 30일 이내에 개봉하지 않은 제품의 반품을 받는다.",
+  "col": [
+   {
+    "e": "unopened items",
+    "k": "미개봉 제품"
+   },
+   {
+    "e": "in unopened condition",
+    "k": "미개봉 상태로"
+   },
+   {
+    "e": "unopened packaging",
+    "k": "뜯지 않은 포장"
+   }
+  ],
+  "der": [
+   {
+    "w": "open",
+    "pos": "v",
+    "m": "열다, 개봉하다"
+   }
+  ],
+  "para": [
+   "sealed",
+   "unused"
+  ],
+  "ant": "opened",
+  "tip": "반품 조건으로 unopened and in its original packaging(미개봉 상태로 원래 포장 그대로)이 자주 나온다. 명사 앞에도 쓰고 be returned unopened처럼 보어로도 쓴다.",
+  "q": {
+   "s": "Only ------- products may be returned for a full refund; opened ones are eligible for store credit.",
+   "o": [
+    "unoccupied",
+    "unopposed",
+    "unopened",
+    "unemployed"
+   ],
+   "a": 2,
+   "k": "개봉한 제품(opened ones)과 대조되어 전액 환불이 가능한 '미개봉' 제품을 뜻하므로 unopened가 정답이다. unoccupied(비어 있는), unopposed(반대 없는), unemployed(실직한)는 products와 의미상 어울리지 않는다."
+  }
+ },
+ {
+  "w": "scratch",
+  "pos": "n",
+  "m": [
+   "긁힌 자국, 흠집"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "I noticed a deep *scratch* on the screen when I took the tablet out of the box.",
+  "exKo": "상자에서 태블릿을 꺼냈을 때 화면에 깊게 긁힌 자국이 있는 것을 발견했다.",
+  "col": [
+   {
+    "e": "a scratch on",
+    "k": "~에 난 흠집"
+   },
+   {
+    "e": "scratch-resistant",
+    "k": "긁힘 방지의"
+   },
+   {
+    "e": "from scratch",
+    "k": "처음부터"
+   }
+  ],
+  "der": [
+   {
+    "w": "scratched",
+    "pos": "adj",
+    "m": "긁힌"
+   }
+  ],
+  "para": [
+   "mark",
+   "scrape"
+  ],
+  "ant": "",
+  "tip": "불량품 항의 지문에서 dent, stain과 함께 나온다. from scratch(처음부터, 맨손으로)는 별개의 숙어로 Part 5·7에 자주 등장한다.",
+  "q": {
+   "s": "The customer requested a replacement because the table arrived with a long ------- across its surface.",
+   "o": [
+    "sketch",
+    "stretch",
+    "scrap",
+    "scratch"
+   ],
+   "a": 3,
+   "k": "테이블 표면에 길게 난 '긁힌 자국' 때문에 교환을 요청한 것이므로 scratch가 정답이다. sketch(스케치), stretch(뻗은 구간), scrap(조각, 폐품)은 표면의 흠을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "stain",
+  "pos": "n",
+  "m": [
+   "얼룩",
+   "때"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "The dry cleaner was able to remove the coffee *stain* from my jacket.",
+  "exKo": "세탁소는 내 재킷에서 커피 얼룩을 지울 수 있었다.",
+  "col": [
+   {
+    "e": "remove a stain",
+    "k": "얼룩을 지우다"
+   },
+   {
+    "e": "stain-resistant",
+    "k": "얼룩 방지의"
+   },
+   {
+    "e": "a stain on",
+    "k": "~에 묻은 얼룩"
+   }
+  ],
+  "der": [
+   {
+    "w": "stained",
+    "pos": "adj",
+    "m": "얼룩진"
+   }
+  ],
+  "para": [
+   "spot",
+   "mark"
+  ],
+  "ant": "",
+  "tip": "명사(얼룩)와 동사(얼룩지게 하다) 모두로 쓰인다. 제품 광고에서는 stain-resistant(얼룩이 잘 안 생기는) 형태가 자주 나온다.",
+  "q": {
+   "s": "Our new carpet is treated with a special coating that makes it highly resistant to -------.",
+   "o": [
+    "stairs",
+    "stalls",
+    "stamps",
+    "stains"
+   ],
+   "a": 3,
+   "k": "특수 코팅 덕분에 카펫이 '얼룩'에 강하다는 의미이므로 stains가 정답이다. stairs(계단), stalls(가판대), stamps(우표)는 resistant to와 의미상 어울리지 않는다."
+  }
+ },
+ {
+  "w": "dent",
+  "pos": "n",
+  "m": [
+   "움푹 들어간 곳, 찌그러진 자국"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "The refrigerator was delivered with a small *dent* in its side panel.",
+  "exKo": "냉장고가 측면 패널이 살짝 찌그러진 상태로 배송되었다.",
+  "col": [
+   {
+    "e": "a dent in",
+    "k": "~의 찌그러진 곳"
+   },
+   {
+    "e": "dents and scratches",
+    "k": "찌그러짐과 긁힘"
+   }
+  ],
+  "der": [
+   {
+    "w": "dented",
+    "pos": "adj",
+    "m": "찌그러진, 움푹 들어간"
+   }
+  ],
+  "para": [
+   "damage",
+   "depression"
+  ],
+  "ant": "",
+  "tip": "배송 파손 지문에서 scratch와 짝을 이뤄 자주 나온다. make a dent in(~을 줄이다, 진척시키다)은 비유적 표현으로도 쓰인다.",
+  "q": {
+   "s": "Please inspect the rental car for any ------- or scratches before you drive it off the lot.",
+   "o": [
+    "debts",
+    "dues",
+    "deeds",
+    "dents"
+   ],
+   "a": 3,
+   "k": "차를 빌리기 전에 확인할 것은 '찌그러진 곳'이나 긁힌 자국이므로 dents가 정답이다. debts(빚), dues(회비), deeds(행위, 증서)는 차량의 손상을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "toll-free",
+  "pos": "adj",
+  "m": [
+   "수신자 부담의, 무료 통화의"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "For questions about your order, please call our *toll-free* number at any time.",
+  "exKo": "주문에 관해 문의가 있으면 언제든 수신자 부담 번호로 전화하기 바란다.",
+  "col": [
+   {
+    "e": "toll-free number",
+    "k": "수신자 부담 전화번호"
+   },
+   {
+    "e": "call toll-free",
+    "k": "무료로 전화하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "free of charge",
+   "free"
+  ],
+  "ant": "",
+  "tip": "toll-free number는 고객 서비스 안내에 단골로 나오며 부사로도 쓰여 call toll-free(무료로 전화하다)가 가능하다. toll(통행료)만 쓰면 도로 지문에 나온다.",
+  "q": {
+   "s": "Customers can reach our support team by dialing the ------- number printed on the back of the card.",
+   "o": [
+    "carefree",
+    "toll-free",
+    "duty-free",
+    "tax-free"
+   ],
+   "a": 1,
+   "k": "카드 뒷면에 인쇄된 고객 지원 전화번호이므로 '수신자 부담의' toll-free가 정답이다. carefree(근심 없는), duty-free(면세의), tax-free(비과세의)는 number와 어울려 전화번호를 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "apologetic",
+  "pos": "adj",
+  "m": [
+   "미안해하는, 사과하는"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The store manager was very *apologetic* about the delay and offered us a discount.",
+  "exKo": "매장 관리자는 지연에 대해 매우 미안해하며 우리에게 할인을 제안했다.",
+  "col": [
+   {
+    "e": "apologetic about",
+    "k": "~에 대해 미안해하는"
+   },
+   {
+    "e": "an apologetic letter",
+    "k": "사과 편지"
+   }
+  ],
+  "der": [
+   {
+    "w": "apologize",
+    "pos": "v",
+    "m": "사과하다"
+   },
+   {
+    "w": "apology",
+    "pos": "n",
+    "m": "사과"
+   },
+   {
+    "w": "apologetically",
+    "pos": "adv",
+    "m": "미안해하며"
+   }
+  ],
+  "para": [
+   "sorry",
+   "regretful"
+  ],
+  "ant": "",
+  "tip": "be apologetic about(~에 대해 미안해하다)의 전치사 about을 기억한다. be동사 뒤 보어 자리에는 형용사 apologetic, 동사 수식에는 부사 apologetically를 고르는 품사 문제가 나온다.",
+  "q": {
+   "s": "The hotel staff were extremely ------- when they discovered the error in our reservation.",
+   "o": [
+    "apologize",
+    "apology",
+    "apologetically",
+    "apologetic"
+   ],
+   "a": 3,
+   "k": "be동사 were와 부사 extremely 뒤 보어 자리이므로 형용사 apologetic이 정답이다. apologize는 동사, apology는 명사, apologetically는 부사라 보어가 될 수 없다."
+  }
+ },
+ {
+  "w": "sincere",
+  "pos": "adj",
+  "m": [
+   "진심 어린, 진실한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The CEO offered a *sincere* apology to all customers affected by the service outage.",
+  "exKo": "최고경영자는 서비스 장애로 피해를 입은 모든 고객에게 진심 어린 사과를 했다.",
+  "col": [
+   {
+    "e": "sincere apologies",
+    "k": "진심 어린 사과"
+   },
+   {
+    "e": "sincere thanks",
+    "k": "진심 어린 감사"
+   },
+   {
+    "e": "sincere interest",
+    "k": "진정한 관심"
+   }
+  ],
+  "der": [
+   {
+    "w": "sincerely",
+    "pos": "adv",
+    "m": "진심으로"
+   },
+   {
+    "w": "sincerity",
+    "pos": "n",
+    "m": "진심, 성실"
+   }
+  ],
+  "para": [
+   "genuine",
+   "heartfelt"
+  ],
+  "ant": "insincere",
+  "tip": "사과·감사 편지에서 sincere apologies/thanks와 맺음말 Sincerely가 자주 나온다. 명사 앞 형용사 자리에 sincere, 동사 수식에 sincerely를 고르는 품사 문제로 출제된다.",
+  "q": {
+   "s": "We would like to express our ------- thanks to everyone who participated in the customer survey.",
+   "o": [
+    "sincerely",
+    "sincere",
+    "sincerity",
+    "sincerities"
+   ],
+   "a": 1,
+   "k": "소유격 our와 명사 thanks 사이 형용사 자리이므로 sincere가 정답이다. sincerely는 부사, sincerity와 sincerities는 명사라 thanks를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "regret",
+  "pos": "v",
+  "m": [
+   "유감으로 생각하다",
+   "후회하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "I really *regret* not buying the extended warranty when I got this printer.",
+  "exKo": "이 프린터를 살 때 연장 보증을 구매하지 않은 것을 정말 후회한다.",
+  "col": [
+   {
+    "e": "regret to inform",
+    "k": "유감스럽게도 ~을 알리다"
+   },
+   {
+    "e": "regret any inconvenience",
+    "k": "불편을 끼쳐 유감이다"
+   },
+   {
+    "e": "regret -ing",
+    "k": "~한 것을 후회하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "regrettable",
+    "pos": "adj",
+    "m": "유감스러운"
+   },
+   {
+    "w": "regretfully",
+    "pos": "adv",
+    "m": "유감스럽게도"
+   }
+  ],
+  "para": [
+   "be sorry"
+  ],
+  "ant": "",
+  "tip": "regret to do(유감스럽게도 ~하다)는 앞으로의 일, regret -ing(~한 것을 후회하다)는 지난 일에 쓴다. 공지문의 We regret any inconvenience.도 필수 표현이다.",
+  "q": {
+   "s": "Thornbury Hardware ------- to announce that its Main Street location will close permanently on May 31.",
+   "o": [
+    "refrains",
+    "reflects",
+    "regrets",
+    "remains"
+   ],
+   "a": 2,
+   "k": "to announce와 함께 '유감스럽게도 ~을 알리다'라는 공지 문구를 만드는 regrets가 정답이다. refrains(삼가다)는 from -ing를 취하고, reflects(반영하다)와 remains(남아 있다)는 to announce와 이런 의미를 만들지 못한다."
+  }
+ },
+ {
+  "w": "mix-up",
+  "pos": "n",
+  "m": [
+   "(실수로 인한) 혼동, 착오"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Sorry about the *mix-up* with your order. We sent you the wrong size by mistake.",
+  "exKo": "주문에 착오가 생겨 죄송하다. 우리가 실수로 다른 사이즈를 보냈다.",
+  "col": [
+   {
+    "e": "a mix-up with",
+    "k": "~에 관한 착오"
+   },
+   {
+    "e": "a scheduling mix-up",
+    "k": "일정 착오"
+   }
+  ],
+  "der": [
+   {
+    "w": "mix up",
+    "pos": "phr",
+    "m": "혼동하다, 뒤섞다"
+   }
+  ],
+  "para": [
+   "mistake",
+   "confusion",
+   "error"
+  ],
+  "ant": "",
+  "tip": "명사 mix-up(하이픈)과 구동사 mix up(띄어 씀)을 구분한다. LC에서 There's been a mix-up.(착오가 있었습니다)이 문제 상황을 알리는 단서로 자주 쓰인다.",
+  "q": {
+   "s": "Due to a ------- at the warehouse, several customers received each other's packages.",
+   "o": [
+    "makeup",
+    "setup",
+    "mix-up",
+    "checkup"
+   ],
+   "a": 2,
+   "k": "고객들이 서로의 소포를 받게 된 원인은 창고에서 생긴 '착오'이므로 mix-up이 정답이다. makeup(구성, 화장), setup(설치, 구성), checkup(검진)은 원인으로서 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "courtesy",
+  "pos": "n",
+  "m": [
+   "예의, 정중함",
+   "호의, 무료 제공"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The front desk staff treat every guest with *courtesy* and patience.",
+  "exKo": "프런트 직원들은 모든 투숙객을 정중하고 인내심 있게 대한다.",
+  "col": [
+   {
+    "e": "as a courtesy",
+    "k": "호의로, 예의상"
+   },
+   {
+    "e": "courtesy shuttle",
+    "k": "무료 셔틀"
+   },
+   {
+    "e": "courtesy of",
+    "k": "~의 제공으로"
+   }
+  ],
+  "der": [
+   {
+    "w": "courteous",
+    "pos": "adj",
+    "m": "예의 바른, 정중한"
+   },
+   {
+    "w": "courteously",
+    "pos": "adv",
+    "m": "정중하게"
+   }
+  ],
+  "para": [
+   "politeness",
+   "favor"
+  ],
+  "ant": "rudeness",
+  "tip": "courtesy는 명사이지만 courtesy shuttle/car(무료 셔틀/차량)처럼 명사 앞에서 '무료로 제공되는'의 뜻으로 쓰인다. 사람을 묘사할 때는 형용사 courteous를 쓴다.",
+  "q": {
+   "s": "Hotel guests can take the ------- shuttle to the airport free of charge every morning.",
+   "o": [
+    "courteous",
+    "courteously",
+    "courtesy",
+    "court"
+   ],
+   "a": 2,
+   "k": "호텔에서 무료로 운행하는 셔틀은 courtesy shuttle이므로 courtesy가 정답이다. courteous(예의 바른)는 사람을 꾸미는 형용사라 shuttle과 맞지 않고, courteously는 부사, court(법정, 코트)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "gesture",
+  "pos": "n",
+  "m": [
+   "(감정·의도의) 표시, 표현",
+   "몸짓"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The restaurant offered us a free dessert as a goodwill *gesture* after the long wait.",
+  "exKo": "식당은 오래 기다린 우리에게 선의의 표시로 무료 디저트를 제공했다.",
+  "col": [
+   {
+    "e": "goodwill gesture",
+    "k": "선의의 표시"
+   },
+   {
+    "e": "a gesture of appreciation",
+    "k": "감사의 표시"
+   },
+   {
+    "e": "a kind gesture",
+    "k": "친절한 행동"
+   }
+  ],
+  "der": [],
+  "para": [
+   "sign",
+   "token",
+   "expression"
+  ],
+  "ant": "",
+  "tip": "a gesture of + 감정명사(goodwill, appreciation)로 '~의 표시'라는 뜻이며 Part 7에서 token, sign으로 패러프레이징된다. 고객 불만 처리 지문에 goodwill gesture로 자주 나온다.",
+  "q": {
+   "s": "The manager sent a bouquet of flowers to the client as a ------- of appreciation.",
+   "o": [
+    "posture",
+    "gesture",
+    "texture",
+    "fixture"
+   ],
+   "a": 1,
+   "k": "고객에게 꽃다발을 보낸 것은 '감사의 표시'이므로 gesture가 정답이다. posture(자세), texture(질감), fixture(고정 설비)는 of appreciation과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "irate",
+  "pos": "adj",
+  "m": [
+   "몹시 화가 난, 격분한"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The agent stayed calm while speaking with an *irate* customer on the phone.",
+  "exKo": "그 상담원은 몹시 화가 난 고객과 통화하는 동안 침착함을 유지했다.",
+  "col": [
+   {
+    "e": "an irate customer",
+    "k": "격분한 고객"
+   },
+   {
+    "e": "irate callers",
+    "k": "화가 난 전화 고객"
+   }
+  ],
+  "der": [],
+  "para": [
+   "angry",
+   "furious",
+   "upset"
+  ],
+  "ant": "calm",
+  "tip": "angry보다 강한 표현으로 고객 응대 교육 지문에 irate customers로 자주 나온다. Part 7에서 angry, upset으로 패러프레이징된다.",
+  "q": {
+   "s": "Call center staff receive training on how to handle ------- callers politely and effectively.",
+   "o": [
+    "irritate",
+    "irate",
+    "irrigate",
+    "ironic"
+   ],
+   "a": 1,
+   "k": "명사 callers를 꾸미는 형용사 자리이고 정중하게 응대해야 할 '화가 난' 고객이므로 irate가 정답이다. irritate(짜증나게 하다)와 irrigate(물을 대다)는 동사이고, ironic(역설적인)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "frustrated",
+  "pos": "adj",
+  "m": [
+   "불만스러운, 짜증이 난",
+   "좌절한"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Many shoppers were *frustrated* by the long lines at the checkout counters.",
+  "exKo": "많은 쇼핑객이 계산대의 긴 줄 때문에 짜증이 났다.",
+  "col": [
+   {
+    "e": "frustrated with",
+    "k": "~에 불만스러운"
+   },
+   {
+    "e": "frustrated by",
+    "k": "~ 때문에 좌절한"
+   }
+  ],
+  "der": [
+   {
+    "w": "frustrate",
+    "pos": "v",
+    "m": "좌절시키다, 불만스럽게 하다"
+   },
+   {
+    "w": "frustrating",
+    "pos": "adj",
+    "m": "불만스럽게 만드는"
+   },
+   {
+    "w": "frustration",
+    "pos": "n",
+    "m": "불만, 좌절"
+   }
+  ],
+  "para": [
+   "annoyed",
+   "dissatisfied"
+  ],
+  "ant": "satisfied",
+  "tip": "감정을 느끼는 사람 주어에는 frustrated, 감정을 일으키는 사물에는 frustrating을 쓴다. -ed/-ing 분사형용사 구분 문제로 자주 나온다.",
+  "q": {
+   "s": "Customers who felt ------- with the slow website were offered a discount code.",
+   "o": [
+    "frustrated",
+    "frustrating",
+    "frustration",
+    "frustrate"
+   ],
+   "a": 0,
+   "k": "주어인 고객(Customers)이 불만을 '느끼는' 것이므로 과거분사형 형용사 frustrated가 정답이다. frustrating은 불만을 유발하는 사물을 묘사하고, frustration은 명사, frustrate는 동사다."
+  }
+ },
+ {
+  "w": "displeased",
+  "pos": "adj",
+  "m": [
+   "불쾌한, 불만스러운"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Several guests were *displeased* with the noise coming from the construction site next door.",
+  "exKo": "여러 투숙객이 옆 공사 현장에서 나는 소음에 불만을 느꼈다.",
+  "col": [
+   {
+    "e": "displeased with",
+    "k": "~에 불만스러운"
+   },
+   {
+    "e": "displeased that",
+    "k": "~라는 것에 불쾌한"
+   }
+  ],
+  "der": [
+   {
+    "w": "displease",
+    "pos": "v",
+    "m": "불쾌하게 하다"
+   },
+   {
+    "w": "displeasure",
+    "pos": "n",
+    "m": "불만, 불쾌감"
+   }
+  ],
+  "para": [
+   "dissatisfied",
+   "unhappy"
+  ],
+  "ant": "pleased",
+  "tip": "be displeased with/about/that 형태로 쓰며 dissatisfied로 패러프레이징된다. 명사 displeasure는 express displeasure(불만을 표하다)로 자주 나온다.",
+  "q": {
+   "s": "Mr. Adler was ------- that his order had been delayed for the second time this month.",
+   "o": [
+    "dismissed",
+    "disposed",
+    "displeased",
+    "discounted"
+   ],
+   "a": 2,
+   "k": "주문이 이번 달 두 번째로 지연된 것에 '불쾌해했다'는 의미이며 that절을 받을 수 있는 감정 형용사 displeased가 정답이다. dismissed(해고된), disposed(~할 마음이 있는), discounted(할인된)는 이 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "hassle-free",
+  "pos": "adj",
+  "m": [
+   "번거롭지 않은, 간편한"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "We offer *hassle-free* returns on all items purchased within the past 60 days.",
+  "exKo": "지난 60일 이내에 구매한 모든 제품에 대해 번거로움 없는 반품을 제공한다.",
+  "col": [
+   {
+    "e": "hassle-free returns",
+    "k": "간편한 반품"
+   },
+   {
+    "e": "hassle-free service",
+    "k": "번거롭지 않은 서비스"
+   }
+  ],
+  "der": [
+   {
+    "w": "hassle",
+    "pos": "n",
+    "m": "번거로운 일, 귀찮은 일"
+   }
+  ],
+  "para": [
+   "convenient",
+   "easy",
+   "trouble-free"
+  ],
+  "ant": "",
+  "tip": "광고문에서 hassle-free returns/installation 같은 표현으로 서비스의 간편함을 강조한다. Part 7에서 easy, convenient로 패러프레이징된다.",
+  "q": {
+   "s": "Online check-in allows travelers to enjoy a ------- boarding process without waiting in long lines.",
+   "o": [
+    "fat-free",
+    "sugar-free",
+    "hassle-free",
+    "toll-free"
+   ],
+   "a": 2,
+   "k": "긴 줄을 서지 않고 탑승하는 '번거롭지 않은' 절차를 뜻하므로 hassle-free가 정답이다. fat-free(무지방의), sugar-free(무설탕의), toll-free(수신자 부담의)는 boarding process를 꾸밀 수 없다."
+  }
+ },
+ {
+  "w": "in-store",
+  "pos": "adj",
+  "m": [
+   "매장 내의",
+   "매장에서의"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "This coupon is valid for *in-store* purchases only and cannot be used online.",
+  "exKo": "이 쿠폰은 매장 구매에만 유효하며 온라인에서는 사용할 수 없다.",
+  "col": [
+   {
+    "e": "in-store pickup",
+    "k": "매장 수령"
+   },
+   {
+    "e": "in-store purchases",
+    "k": "매장 구매"
+   },
+   {
+    "e": "in-store promotion",
+    "k": "매장 내 판촉"
+   }
+  ],
+  "der": [],
+  "para": [
+   "at the store"
+  ],
+  "ant": "online",
+  "tip": "온라인 구매(online)와 대조되는 매장 구매·수령을 나타낸다. Part 7에서 쿠폰 사용 조건을 묻는 문제의 단서로 자주 쓰인다.",
+  "q": {
+   "s": "Customers who order online can select ------- pickup to avoid paying shipping charges.",
+   "o": [
+    "in-depth",
+    "in-store",
+    "in-house",
+    "in-flight"
+   ],
+   "a": 1,
+   "k": "온라인 주문 후 배송비를 피하려면 '매장에서' 직접 수령하면 되므로 in-store가 정답이다. in-depth(심층적인), in-house(사내의), in-flight(기내의)는 pickup과 의미상 어울리지 않는다."
+  }
+ },
+ {
+  "w": "storefront",
+  "pos": "n",
+  "m": [
+   "상점 정면, 점포 앞",
+   "(온라인) 상점"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "The bakery's *storefront* was redesigned with large windows and a bright awning.",
+  "exKo": "그 빵집의 점포 정면은 큰 창문과 밝은 차양으로 새로 디자인되었다.",
+  "col": [
+   {
+    "e": "online storefront",
+    "k": "온라인 상점"
+   },
+   {
+    "e": "physical storefront",
+    "k": "오프라인 매장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "shopfront",
+   "store"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 상점 외관을 묘사할 때, Part 7에서는 online storefront(온라인 매장)와 physical storefront(실제 매장)의 대조로 나온다.",
+  "q": {
+   "s": "The company closed its physical ------- and now sells its products exclusively online.",
+   "o": [
+    "storefront",
+    "frontier",
+    "forefront",
+    "frontline"
+   ],
+   "a": 0,
+   "k": "오프라인 '매장'을 닫고 온라인으로만 판매한다는 의미이므로 storefront가 정답이다. frontier(국경, 미개척 분야), forefront(선두), frontline(최전선)은 매장을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "boutique",
+  "pos": "n",
+  "m": [
+   "부티크, (옷·장신구 등의) 소규모 전문점"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "She opened a small *boutique* that sells handmade jewelry and accessories.",
+  "exKo": "그녀는 수제 보석과 액세서리를 판매하는 작은 부티크를 열었다.",
+  "col": [
+   {
+    "e": "fashion boutique",
+    "k": "패션 부티크"
+   },
+   {
+    "e": "boutique hotel",
+    "k": "부티크 호텔(소규모 고급 호텔)"
+   }
+  ],
+  "der": [],
+  "para": [
+   "shop",
+   "specialty store"
+  ],
+  "ant": "",
+  "tip": "소규모 전문점을 뜻하며 boutique hotel(개성 있는 소규모 고급 호텔)처럼 명사 앞 수식어로도 쓰인다. bouquet(꽃다발)와 철자를 혼동하지 않도록 주의한다.",
+  "q": {
+   "s": "The ------- on Elm Street carries a carefully selected range of designer clothing.",
+   "o": [
+    "bouquet",
+    "banquet",
+    "brochure",
+    "boutique"
+   ],
+   "a": 3,
+   "k": "디자이너 의류를 엄선해 취급하는 곳은 '부티크'이므로 boutique가 정답이다. bouquet(꽃다발), banquet(연회), brochure(안내 책자)는 상품을 취급할 수 없다."
+  }
+ },
+ {
+  "w": "chain",
+  "pos": "n",
+  "m": [
+   "체인(점)",
+   "연쇄, 사슬"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The supermarket *chain* plans to open ten new stores across the region next year.",
+  "exKo": "그 슈퍼마켓 체인은 내년에 지역 전역에 신규 매장 10곳을 열 계획이다.",
+  "col": [
+   {
+    "e": "restaurant chain",
+    "k": "식당 체인"
+   },
+   {
+    "e": "retail chain",
+    "k": "소매 체인"
+   },
+   {
+    "e": "chain store",
+    "k": "체인점"
+   }
+  ],
+  "der": [],
+  "para": [
+   "franchise",
+   "group"
+  ],
+  "ant": "",
+  "tip": "chain은 '같은 회사가 운영하는 여러 매장'을 뜻하며 Part 7에서 매장 수와 함께 나온다. supply chain(공급망)처럼 다른 복합명사로도 쓰인다.",
+  "q": {
+   "s": "Bellwood Coffee has grown from a single café into a national ------- with over 200 locations.",
+   "o": [
+    "shift",
+    "scale",
+    "chain",
+    "trend"
+   ],
+   "a": 2,
+   "k": "카페 한 곳에서 200개 이상의 지점을 둔 전국 '체인'으로 성장했다는 의미이므로 chain이 정답이다. shift(변화, 교대), scale(규모), trend(추세)는 지점을 가질 수 없다."
+  }
+ },
+ {
+  "w": "merchant",
+  "pos": "n",
+  "m": [
+   "상인, 판매자",
+   "(카드) 가맹점"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Local *merchants* are worried that the road construction will reduce foot traffic.",
+  "exKo": "지역 상인들은 도로 공사로 유동 인구가 줄어들까 봐 걱정한다.",
+  "col": [
+   {
+    "e": "local merchants",
+    "k": "지역 상인"
+   },
+   {
+    "e": "online merchant",
+    "k": "온라인 판매자"
+   },
+   {
+    "e": "merchant account",
+    "k": "가맹점 계좌"
+   }
+  ],
+  "der": [
+   {
+    "w": "merchandise",
+    "pos": "n",
+    "m": "상품"
+   },
+   {
+    "w": "merchandising",
+    "pos": "n",
+    "m": "판매 촉진, 상품 기획"
+   }
+  ],
+  "para": [
+   "retailer",
+   "seller",
+   "vendor"
+  ],
+  "ant": "customer",
+  "tip": "사람명사 merchant(상인)와 불가산 사물명사 merchandise(상품)를 구분하는 문제가 나온다. Part 7에서 retailer, vendor로 패러프레이징된다.",
+  "q": {
+   "s": "Some ------- charge a small fee when customers pay by credit card for purchases under ten dollars.",
+   "o": [
+    "merchandise",
+    "merchandising",
+    "merchants",
+    "mercantile"
+   ],
+   "a": 2,
+   "k": "고객에게 수수료를 부과하는 주체는 사람이므로 사람명사 merchants가 정답이다. merchandise(상품)와 merchandising(판매 촉진)은 수수료를 부과할 수 없고, mercantile(상업의)은 형용사다."
+  }
+ }
+]

@@ -1,0 +1,1891 @@
+[
+ {
+  "w": "mailer",
+  "pos": "n",
+  "m": [
+   "(우편) 광고물, 홍보 우편물"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We sent a colorful *mailer* to every household in the neighborhood to announce our grand opening.",
+  "exKo": "우리는 개업을 알리기 위해 동네의 모든 가정에 화려한 홍보 우편물을 보냈다.",
+  "col": [
+   {
+    "e": "promotional mailer",
+    "k": "홍보 우편물"
+   },
+   {
+    "e": "send out a mailer",
+    "k": "광고 우편물을 발송하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "mail",
+    "pos": "v",
+    "m": "우편으로 보내다"
+   },
+   {
+    "w": "mailing",
+    "pos": "n",
+    "m": "우편 발송"
+   }
+  ],
+  "para": [
+   "flyer",
+   "circular"
+  ],
+  "ant": "",
+  "tip": "-er로 끝나지만 사람이 아니라 '우편으로 보내는 광고물'을 뜻한다. Part 7에서 쿠폰이 동봉된 홍보물의 목적을 묻는 문제와 연결된다.",
+  "q": {
+   "s": "The store's spring ------- included a coupon for 20 percent off any purchase.",
+   "o": [
+    "mailbox",
+    "mailroom",
+    "mailman",
+    "mailer"
+   ],
+   "a": 3,
+   "k": "쿠폰이 들어 있는 매장의 봄 '홍보 우편물'이므로 mailer가 정답이다. mailbox(우편함), mailroom(우편물실), mailman(우편집배원)은 쿠폰을 포함할 수 없다."
+  }
+ },
+ {
+  "w": "advertiser",
+  "pos": "n",
+  "m": [
+   "광고주"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The magazine lost several major *advertisers* after its readership declined.",
+  "exKo": "그 잡지는 구독자 수가 줄어든 뒤 주요 광고주 여러 곳을 잃었다.",
+  "col": [
+   {
+    "e": "major advertisers",
+    "k": "주요 광고주"
+   },
+   {
+    "e": "attract advertisers",
+    "k": "광고주를 유치하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "advertise",
+    "pos": "v",
+    "m": "광고하다"
+   },
+   {
+    "w": "advertisement",
+    "pos": "n",
+    "m": "광고"
+   }
+  ],
+  "para": [
+   "sponsor",
+   "client"
+  ],
+  "ant": "",
+  "tip": "advertise(동사), advertisement(광고물), advertising(광고업)과 함께 사람명사 advertiser를 고르는 품사 문제가 자주 나온다. 관계대명사 who의 선행사면 사람명사가 정답이다.",
+  "q": {
+   "s": "The television network offers discounted rates to ------- who book commercial time early.",
+   "o": [
+    "advertise",
+    "advertisers",
+    "advertisements",
+    "advertised"
+   ],
+   "a": 1,
+   "k": "관계대명사 who 앞에는 광고 시간을 예약하는 '사람'이 와야 하므로 advertisers가 정답이다. advertisements는 사물(광고물)이고, advertise와 advertised는 동사 형태다."
+  }
+ },
+ {
+  "w": "marketer",
+  "pos": "n",
+  "m": [
+   "마케팅 담당자, 마케터"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Experienced *marketers* know that a clear message matters more than a big budget.",
+  "exKo": "경험 많은 마케터는 큰 예산보다 명확한 메시지가 더 중요하다는 것을 안다.",
+  "col": [
+   {
+    "e": "digital marketer",
+    "k": "디지털 마케터"
+   },
+   {
+    "e": "experienced marketer",
+    "k": "경험 많은 마케터"
+   }
+  ],
+  "der": [
+   {
+    "w": "market",
+    "pos": "v",
+    "m": "판매하다, 홍보하다"
+   },
+   {
+    "w": "marketable",
+    "pos": "adj",
+    "m": "시장성 있는"
+   }
+  ],
+  "para": [
+   "marketing professional"
+  ],
+  "ant": "",
+  "tip": "사람명사 marketer와 불가산명사 marketing(마케팅)을 구분하는 문제가 나온다. 관사 a 뒤에는 가산명사 marketer가 온다.",
+  "q": {
+   "s": "Our agency is looking for a creative ------- with experience in social media campaigns.",
+   "o": [
+    "marketer",
+    "marketing",
+    "marketed",
+    "marketable"
+   ],
+   "a": 0,
+   "k": "관사 a와 형용사 creative 뒤에 '경력을 가진 사람'이 필요하므로 marketer가 정답이다. marketing은 불가산명사라 a와 쓰지 않고, marketed는 분사, marketable은 형용사다."
+  }
+ },
+ {
+  "w": "infomercial",
+  "pos": "n",
+  "m": [
+   "정보성 광고, 인포머셜"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The kitchen gadget became a best seller after its thirty-minute *infomercial* aired on TV.",
+  "exKo": "그 주방 기구는 30분짜리 정보성 광고가 TV에 방영된 뒤 베스트셀러가 되었다.",
+  "col": [
+   {
+    "e": "air an infomercial",
+    "k": "정보성 광고를 방영하다"
+   },
+   {
+    "e": "late-night infomercial",
+    "k": "심야 정보성 광고"
+   }
+  ],
+  "der": [],
+  "para": [
+   "commercial",
+   "advertisement"
+  ],
+  "ant": "",
+  "tip": "information과 commercial의 합성어로 제품 시연을 길게 보여 주는 TV 광고다. 일반 광고 commercial보다 길다는 점이 차이다.",
+  "q": {
+   "s": "The company produced a half-hour ------- demonstrating how its vacuum cleaner works.",
+   "o": [
+    "infomercial",
+    "informant",
+    "information",
+    "infrastructure"
+   ],
+   "a": 0,
+   "k": "청소기 작동법을 시연하는 30분짜리 광고이므로 infomercial이 정답이다. informant(정보원), information(정보, 불가산), infrastructure(기반 시설)는 a half-hour와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "draw attention",
+  "pos": "phr",
+  "m": [
+   "주의를 끌다, 관심을 모으다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The bright red packaging is designed to *draw attention* on crowded store shelves.",
+  "exKo": "밝은 빨간색 포장은 붐비는 매장 진열대에서 눈길을 끌도록 디자인되었다.",
+  "col": [
+   {
+    "e": "draw attention to",
+    "k": "~에 주의를 끌다"
+   },
+   {
+    "e": "draw public attention",
+    "k": "대중의 관심을 끌다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "attract attention",
+   "catch someone's eye"
+  ],
+  "ant": "",
+  "tip": "draw attention to + 대상(~에 관심을 집중시키다)에서 to는 전치사다. pay attention to(사람이 주의를 기울이다)와 주어가 다르다는 점을 구분하자.",
+  "q": {
+   "s": "The window display was redesigned to ------- attention to the new summer collection.",
+   "o": [
+    "pay",
+    "make",
+    "draw",
+    "keep"
+   ],
+   "a": 2,
+   "k": "진열창이 신상품에 '관심을 끌도록' 바뀐 것이므로 draw가 정답이다. pay attention to는 사람이 '주의를 기울이다'라서 진열창이 주어일 수 없고, make attention, keep attention to는 쓰지 않는 표현이다."
+  }
+ },
+ {
+  "w": "special offer",
+  "pos": "phr",
+  "m": [
+   "특가 판매, 특별 할인"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Don't miss our *special offer*: buy one pair of shoes and get the second at half price.",
+  "exKo": "특별 할인을 놓치지 마라. 신발 한 켤레를 사면 두 번째 켤레는 반값이다.",
+  "col": [
+   {
+    "e": "limited-time special offer",
+    "k": "기간 한정 특가"
+   },
+   {
+    "e": "take advantage of a special offer",
+    "k": "특가 혜택을 이용하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "promotion",
+   "deal",
+   "discount"
+  ],
+  "ant": "",
+  "tip": "Part 4 광고에서 'This special offer ends on ...'처럼 기한을 알리는 경우가 많아 '언제까지인가'를 묻는 문제의 단서가 된다.",
+  "q": {
+   "s": "As a ------- offer, new subscribers will receive their first three issues free of charge.",
+   "o": [
+    "especial",
+    "specially",
+    "special",
+    "specialty"
+   ],
+   "a": 2,
+   "k": "명사 offer를 꾸며 '특별 할인'을 뜻하는 special이 정답이다. specially는 부사이고, especial은 거의 쓰지 않으며, specialty는 '전문, 특산품'이라는 명사다."
+  }
+ },
+ {
+  "w": "free trial",
+  "pos": "phr",
+  "m": [
+   "무료 체험(기간)"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Our streaming service comes with a two-week *free trial*, and you can cancel anytime.",
+  "exKo": "우리 스트리밍 서비스는 2주 무료 체험을 제공하며 언제든지 해지할 수 있다.",
+  "col": [
+   {
+    "e": "30-day free trial",
+    "k": "30일 무료 체험"
+   },
+   {
+    "e": "sign up for a free trial",
+    "k": "무료 체험을 신청하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "trial period"
+  ],
+  "ant": "",
+  "tip": "Part 4·7 광고에서 sign up for a free trial, during the free trial 형태로 나온다. 체험 기간이 끝나면 자동 결제되는지 묻는 세부 문제가 자주 출제된다.",
+  "q": {
+   "s": "Customers can cancel at any time during the ------- trial without being charged.",
+   "o": [
+    "freely",
+    "freedom",
+    "free",
+    "freeing"
+   ],
+   "a": 2,
+   "k": "명사 trial을 꾸미는 형용사 자리이며 '무료 체험'을 뜻하는 free가 정답이다. freely는 부사, freedom은 명사, freeing은 분사·동명사다."
+  }
+ },
+ {
+  "w": "giveaway",
+  "pos": "n",
+  "m": [
+   "경품, 무료 증정품",
+   "경품 행사"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Visitors to our booth can enter a *giveaway* for a new tablet computer.",
+  "exKo": "우리 부스 방문객은 새 태블릿 컴퓨터를 받을 수 있는 경품 행사에 응모할 수 있다.",
+  "col": [
+   {
+    "e": "promotional giveaway",
+    "k": "판촉 증정품"
+   },
+   {
+    "e": "enter a giveaway",
+    "k": "경품 행사에 응모하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "give away",
+    "pos": "phr",
+    "m": "무료로 나눠 주다"
+   }
+  ],
+  "para": [
+   "freebie",
+   "free gift"
+  ],
+  "ant": "",
+  "tip": "붙여 쓴 giveaway는 명사(경품), 띄어 쓴 give away는 동사구(무료로 나눠 주다)다. Part 4에서 'We'll be giving away ...'는 경품 행사를 알리는 표현이다.",
+  "q": {
+   "s": "The bookstore is hosting a ------- in which ten customers will win signed copies of the novel.",
+   "o": [
+    "getaway",
+    "takeaway",
+    "breakaway",
+    "giveaway"
+   ],
+   "a": 3,
+   "k": "고객 열 명이 사인본을 받는 '경품 행사'이므로 giveaway가 정답이다. getaway(휴가, 도주), takeaway(핵심 메시지, 포장 음식), breakaway(분리, 탈퇴)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "leaflet",
+  "pos": "n",
+  "m": [
+   "전단, 리플릿"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "Volunteers placed *leaflets* about the recycling program in every mailbox on the street.",
+  "exKo": "자원봉사자들이 그 거리의 모든 우편함에 재활용 프로그램 안내 전단을 넣었다.",
+  "col": [
+   {
+    "e": "distribute leaflets",
+    "k": "전단을 배포하다"
+   },
+   {
+    "e": "information leaflet",
+    "k": "안내 리플릿"
+   }
+  ],
+  "der": [],
+  "para": [
+   "flyer",
+   "handout",
+   "brochure"
+  ],
+  "ant": "",
+  "tip": "한 장짜리 안내 인쇄물로 flyer와 거의 같은 뜻이다. Part 7에서 leaflet의 내용이 brochure, flyer로 패러프레이즈된다.",
+  "q": {
+   "s": "A ------- describing the museum's summer events can be picked up at the entrance.",
+   "o": [
+    "ledger",
+    "leaflet",
+    "lease",
+    "leakage"
+   ],
+   "a": 1,
+   "k": "박물관 여름 행사를 소개하는 인쇄물이므로 leaflet이 정답이다. ledger(장부), lease(임대차 계약), leakage(누출)는 행사를 소개하는 자료가 아니다."
+  }
+ },
+ {
+  "w": "pamphlet",
+  "pos": "n",
+  "m": [
+   "팸플릿, 소책자"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "The clinic gives every new patient a *pamphlet* explaining its billing policies.",
+  "exKo": "그 병원은 모든 신규 환자에게 진료비 청구 방침을 설명하는 소책자를 준다.",
+  "col": [
+   {
+    "e": "information pamphlet",
+    "k": "안내 소책자"
+   },
+   {
+    "e": "pamphlet on",
+    "k": "~에 관한 팸플릿"
+   }
+  ],
+  "der": [],
+  "para": [
+   "booklet",
+   "brochure",
+   "leaflet"
+  ],
+  "ant": "",
+  "tip": "몇 쪽으로 된 얇은 안내 책자로 booklet, brochure로 패러프레이즈된다. Part 1에서 진열대의 pamphlets, brochures가 자주 등장한다.",
+  "q": {
+   "s": "Each guest room contains a ------- with information about local restaurants and attractions.",
+   "o": [
+    "pamphlet",
+    "patent",
+    "parcel",
+    "pantry"
+   ],
+   "a": 0,
+   "k": "객실에 비치된 지역 식당·명소 안내 책자이므로 pamphlet이 정답이다. patent(특허), parcel(소포), pantry(식료품 저장실)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "mailing list",
+  "pos": "phr",
+  "m": [
+   "우편물 발송 목록, 메일링 리스트"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Please add my name to your *mailing list* so I can receive your monthly newsletter.",
+  "exKo": "월간 소식지를 받을 수 있도록 내 이름을 메일링 리스트에 추가해 달라.",
+  "col": [
+   {
+    "e": "join a mailing list",
+    "k": "메일링 리스트에 가입하다"
+   },
+   {
+    "e": "be on the mailing list",
+    "k": "발송 목록에 올라 있다"
+   },
+   {
+    "e": "remove from a mailing list",
+    "k": "발송 목록에서 빼다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "subscriber list",
+   "distribution list"
+  ],
+  "ant": "",
+  "tip": "be added to / removed from the mailing list 형태로 Part 7 이메일에서 요청 사항으로 나온다. mailing(동명사)이 list를 꾸미는 복합명사다.",
+  "q": {
+   "s": "Customers who join our ------- list will receive news about upcoming sales.",
+   "o": [
+    "mailing",
+    "mailed",
+    "mails",
+    "mailable"
+   ],
+   "a": 0,
+   "k": "명사 list와 결합해 '우편물 발송 목록'을 이루는 복합명사 mailing list이므로 mailing이 정답이다. mailed, mails, mailable은 list와 결합해 쓰지 않는다."
+  }
+ },
+ {
+  "w": "direct mail",
+  "pos": "phr",
+  "m": [
+   "(우편) 직접 광고, DM"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Direct mail* still works well for reaching older customers who rarely shop online.",
+  "exKo": "우편 직접 광고는 온라인 쇼핑을 거의 하지 않는 고령 고객에게 다가가는 데 여전히 효과적이다.",
+  "col": [
+   {
+    "e": "direct mail campaign",
+    "k": "우편 광고 캠페인"
+   },
+   {
+    "e": "send by direct mail",
+    "k": "우편 광고로 보내다"
+   }
+  ],
+  "der": [
+   {
+    "w": "directly",
+    "pos": "adv",
+    "m": "직접"
+   }
+  ],
+  "para": [
+   "mail advertising",
+   "mailers"
+  ],
+  "ant": "",
+  "tip": "잠재 고객의 우편함으로 광고물을 직접 보내는 방식이다. by direct mail(우편 광고로)처럼 불가산명사로 쓰며 형용사 direct 자리에 부사 directly를 넣은 오답이 나온다.",
+  "q": {
+   "s": "The furniture store sent catalogs by ------- mail to customers who had purchased sofas in the past.",
+   "o": [
+    "directly",
+    "direct",
+    "direction",
+    "director"
+   ],
+   "a": 1,
+   "k": "명사 mail을 꾸며 '우편 직접 광고'를 이루는 형용사 direct가 정답이다. directly는 부사라 명사를 꾸밀 수 없고, direction과 director는 명사다."
+  }
+ },
+ {
+  "w": "influencer",
+  "pos": "n",
+  "m": [
+   "인플루언서, 영향력 있는 사람"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The cosmetics brand hired a popular *influencer* to review its new skincare line.",
+  "exKo": "그 화장품 브랜드는 신규 스킨케어 라인을 리뷰하도록 인기 인플루언서를 고용했다.",
+  "col": [
+   {
+    "e": "social media influencer",
+    "k": "소셜 미디어 인플루언서"
+   },
+   {
+    "e": "influencer marketing",
+    "k": "인플루언서 마케팅"
+   }
+  ],
+  "der": [
+   {
+    "w": "influence",
+    "pos": "n",
+    "m": "영향(력)"
+   },
+   {
+    "w": "influential",
+    "pos": "adj",
+    "m": "영향력 있는"
+   }
+  ],
+  "para": [
+   "online personality"
+  ],
+  "ant": "",
+  "tip": "사람명사 influencer와 influence(영향), influential(영향력 있는)을 구별하는 품사 문제가 나온다. 소유격 관계대명사 whose의 선행사가 사람이면 influencer가 정답이다.",
+  "q": {
+   "s": "The company partnered with a fitness ------- whose videos attract millions of viewers.",
+   "o": [
+    "influence",
+    "influential",
+    "influencer",
+    "influenced"
+   ],
+   "a": 2,
+   "k": "영상을 올려 수백만 명을 끌어모으는 '사람'이 필요하므로 influencer가 정답이다. influence는 '영향', influential은 형용사, influenced는 분사다."
+  }
+ },
+ {
+  "w": "digital marketing",
+  "pos": "phr",
+  "m": [
+   "디지털 마케팅"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The startup spends most of its advertising budget on *digital marketing*, such as social media ads.",
+  "exKo": "그 스타트업은 광고 예산 대부분을 소셜 미디어 광고 같은 디지털 마케팅에 쓴다.",
+  "col": [
+   {
+    "e": "digital marketing strategy",
+    "k": "디지털 마케팅 전략"
+   },
+   {
+    "e": "digital marketing agency",
+    "k": "디지털 마케팅 대행사"
+   }
+  ],
+  "der": [
+   {
+    "w": "digitally",
+    "pos": "adv",
+    "m": "디지털 방식으로"
+   }
+  ],
+  "para": [
+   "online marketing",
+   "internet marketing"
+  ],
+  "ant": "",
+  "tip": "구인 광고(Part 7)의 자격 요건 experience in digital marketing으로 자주 나온다. 형용사 digital 자리에 부사나 동사(digitize)를 넣은 오답에 주의한다.",
+  "q": {
+   "s": "Ms. Lin was hired to lead the company's ------- marketing efforts, including email and social media campaigns.",
+   "o": [
+    "digit",
+    "digitally",
+    "digital",
+    "digitize"
+   ],
+   "a": 2,
+   "k": "명사 marketing을 꾸미는 형용사 자리이므로 digital이 정답이다. digit은 '숫자'라는 명사, digitally는 부사, digitize는 동사다."
+  }
+ },
+ {
+  "w": "e-commerce",
+  "pos": "n",
+  "m": [
+   "전자 상거래"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*E-commerce* now accounts for over half of the retailer's total sales.",
+  "exKo": "현재 전자 상거래가 그 소매업체 총매출의 절반 이상을 차지한다.",
+  "col": [
+   {
+    "e": "e-commerce platform",
+    "k": "전자 상거래 플랫폼"
+   },
+   {
+    "e": "e-commerce site",
+    "k": "온라인 쇼핑몰"
+   }
+  ],
+  "der": [
+   {
+    "w": "commerce",
+    "pos": "n",
+    "m": "상업, 무역"
+   }
+  ],
+  "para": [
+   "online shopping",
+   "online sales"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 관사 없이 쓰며 e-commerce site/platform처럼 명사를 꾸미기도 한다. Part 7에서 online sales, selling online으로 패러프레이즈된다.",
+  "q": {
+   "s": "The company expanded its ------- platform so that customers could order groceries online.",
+   "o": [
+    "e-book",
+    "e-commerce",
+    "e-mail",
+    "e-waste"
+   ],
+   "a": 1,
+   "k": "고객이 온라인으로 식료품을 주문할 수 있는 플랫폼은 e-commerce platform이다. e-book(전자책), e-mail(이메일), e-waste(전자 폐기물)는 식료품 주문과 관련이 없다."
+  }
+ },
+ {
+  "w": "engagement",
+  "pos": "n",
+  "m": [
+   "(고객의) 참여, 관심",
+   "약속, 약혼"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Short videos have boosted customer *engagement* on our social media pages.",
+  "exKo": "짧은 동영상 덕분에 우리 소셜 미디어 페이지의 고객 참여도가 높아졌다.",
+  "col": [
+   {
+    "e": "customer engagement",
+    "k": "고객 참여"
+   },
+   {
+    "e": "employee engagement",
+    "k": "직원 몰입도"
+   },
+   {
+    "e": "speaking engagement",
+    "k": "강연 일정"
+   }
+  ],
+  "der": [
+   {
+    "w": "engage",
+    "pos": "v",
+    "m": "(관심을) 끌다, 참여시키다"
+   },
+   {
+    "w": "engaging",
+    "pos": "adj",
+    "m": "흥미를 끄는"
+   }
+  ],
+  "para": [
+   "involvement",
+   "interaction",
+   "participation"
+  ],
+  "ant": "",
+  "tip": "마케팅에서는 좋아요·공유·댓글 같은 고객 반응을 뜻한다. a prior engagement(선약)는 Part 2·3에서 초대를 거절하는 이유로 들린다.",
+  "q": {
+   "s": "The marketing team measures ------- by tracking how many users like, share, or comment on each post.",
+   "o": [
+    "engagement",
+    "engaging",
+    "engaged",
+    "engage"
+   ],
+   "a": 0,
+   "k": "measures의 목적어 자리에 와서 '고객 참여도'를 뜻하는 명사 engagement가 정답이다. engaging은 형용사·동명사로 목적어가 따로 필요하고, engaged는 분사, engage는 동사다."
+  }
+ },
+ {
+  "w": "customer loyalty",
+  "pos": "phr",
+  "m": [
+   "고객 충성도"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Fast and friendly service is the best way to build *customer loyalty*.",
+  "exKo": "빠르고 친절한 서비스는 고객 충성도를 쌓는 최고의 방법이다.",
+  "col": [
+   {
+    "e": "build customer loyalty",
+    "k": "고객 충성도를 쌓다"
+   },
+   {
+    "e": "reward customer loyalty",
+    "k": "단골 고객에게 보상하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "loyal",
+    "pos": "adj",
+    "m": "충성스러운, 단골의"
+   }
+  ],
+  "para": [
+   "repeat business",
+   "brand loyalty"
+  ],
+  "ant": "",
+  "tip": "build/increase/reward customer loyalty와 같이 쓰인다. 형용사 loyal(loyal customers, 단골 고객)과의 품사 구분, royalty(사용료)와의 철자 혼동에 주의한다.",
+  "q": {
+   "s": "The airline introduced free seat upgrades to strengthen customer ------- among frequent flyers.",
+   "o": [
+    "loyalty",
+    "loyal",
+    "loyally",
+    "royalty"
+   ],
+   "a": 0,
+   "k": "strengthen의 목적어로 customer와 결합하는 명사 loyalty(충성도)가 정답이다. loyal은 형용사, loyally는 부사이고, royalty는 '사용료, 왕족'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "loyalty program",
+  "pos": "phr",
+  "m": [
+   "고객 보상 프로그램, 멤버십 프로그램"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Members of our *loyalty program* earn one point for every dollar they spend.",
+  "exKo": "우리 고객 보상 프로그램 회원은 1달러를 쓸 때마다 1포인트를 적립한다.",
+  "col": [
+   {
+    "e": "join a loyalty program",
+    "k": "보상 프로그램에 가입하다"
+   },
+   {
+    "e": "loyalty program member",
+    "k": "멤버십 회원"
+   }
+  ],
+  "der": [],
+  "para": [
+   "rewards program",
+   "membership program"
+  ],
+  "ant": "",
+  "tip": "Part 4 매장 광고·Part 7 안내문에서 포인트 적립(earn points), 혜택 교환(redeem)과 함께 나오며 rewards program으로 패러프레이즈된다.",
+  "q": {
+   "s": "Shoppers who join the store's ------- earn points that can be redeemed for discounts.",
+   "o": [
+    "orientation program",
+    "loyalty program",
+    "exchange program",
+    "training program"
+   ],
+   "a": 1,
+   "k": "가입하면 할인으로 교환할 수 있는 포인트를 적립하는 것은 loyalty program이다. orientation program(오리엔테이션), exchange program(교환 프로그램), training program(교육 과정)은 포인트 적립과 관련이 없다."
+  }
+ },
+ {
+  "w": "promo code",
+  "pos": "phr",
+  "m": [
+   "할인 코드, 프로모션 코드"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Enter the *promo code* SPRING20 at checkout to receive 20 percent off.",
+  "exKo": "결제할 때 할인 코드 SPRING20을 입력하면 20퍼센트 할인을 받는다.",
+  "col": [
+   {
+    "e": "enter a promo code",
+    "k": "할인 코드를 입력하다"
+   },
+   {
+    "e": "valid promo code",
+    "k": "유효한 할인 코드"
+   }
+  ],
+  "der": [
+   {
+    "w": "promotion",
+    "pos": "n",
+    "m": "판촉, 홍보"
+   }
+  ],
+  "para": [
+   "discount code",
+   "coupon code"
+  ],
+  "ant": "",
+  "tip": "promo는 promotion(판촉)의 줄임말이다. Part 4·7 온라인 광고에서 할인을 받는 방법(enter the code at checkout)을 묻는 문제로 나온다.",
+  "q": {
+   "s": "To receive free shipping, enter the ------- code FREESHIP when you check out.",
+   "o": [
+    "prompt",
+    "profile",
+    "proxy",
+    "promo"
+   ],
+   "a": 3,
+   "k": "결제 시 입력해 무료 배송을 받는 것은 promo code(할인 코드)이므로 promo가 정답이다. prompt(신속한, 촉구), profile(개요, 프로필), proxy(대리인)는 code와 결합해 할인 코드를 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "sweepstakes",
+  "pos": "n",
+  "m": [
+   "경품 추첨 (행사)"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The coffee chain's summer *sweepstakes* will give one lucky customer free drinks for a year.",
+  "exKo": "그 커피 체인의 여름 경품 추첨 행사에서는 운 좋은 고객 한 명에게 1년 치 무료 음료를 준다.",
+  "col": [
+   {
+    "e": "enter a sweepstakes",
+    "k": "경품 추첨에 응모하다"
+   },
+   {
+    "e": "win a sweepstakes",
+    "k": "경품 추첨에 당첨되다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "prize drawing",
+   "raffle",
+   "contest"
+  ],
+  "ant": "",
+  "tip": "-s로 끝나지만 단수·복수가 같은 형태로 a sweepstakes처럼 쓴다. Part 7에서 응모 방법과 자격 조건(no purchase necessary 등)을 묻는 문제가 나온다.",
+  "q": {
+   "s": "Customers who buy a drink this month can enter the ------- for a chance to win a new car.",
+   "o": [
+    "stakeholders",
+    "sweepstakes",
+    "mistakes",
+    "keepsakes"
+   ],
+   "a": 1,
+   "k": "새 차를 받을 기회를 위해 '응모하는' 대상은 sweepstakes(경품 추첨)다. stakeholders(이해관계자), mistakes(실수), keepsakes(기념품)는 enter의 목적어로 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "press kit",
+  "pos": "phr",
+  "m": [
+   "언론 홍보 자료(집)"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Journalists attending the launch will receive a *press kit* with product photos and specifications.",
+  "exKo": "출시 행사에 참석하는 기자들은 제품 사진과 사양이 담긴 언론 홍보 자료를 받는다.",
+  "col": [
+   {
+    "e": "prepare a press kit",
+    "k": "보도 자료집을 준비하다"
+   },
+   {
+    "e": "digital press kit",
+    "k": "온라인 보도 자료집"
+   }
+  ],
+  "der": [],
+  "para": [
+   "media kit"
+  ],
+  "ant": "",
+  "tip": "보도 자료(press release), 사진, 회사 소개를 묶은 기자용 자료다. press release(보도 자료), press conference(기자 회견)와 함께 홍보 문맥에 나온다.",
+  "q": {
+   "s": "The public relations team prepared a ------- kit containing the company's history, photos, and news releases.",
+   "o": [
+    "press",
+    "pressure",
+    "pressed",
+    "pressing"
+   ],
+   "a": 0,
+   "k": "기자에게 제공할 회사 연혁·사진·보도 자료 묶음은 press kit이므로 press가 정답이다. pressure(압력)는 kit와 결합하지 않고, pressed, pressing은 분사·형용사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "differentiate",
+  "pos": "v",
+  "m": [
+   "차별화하다",
+   "구별하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our designers use bold colors to *differentiate* our packaging from that of our rivals.",
+  "exKo": "우리 디자이너들은 대담한 색상을 사용해 우리 포장을 경쟁사의 포장과 차별화한다.",
+  "col": [
+   {
+    "e": "differentiate A from B",
+    "k": "A를 B와 차별화하다"
+   },
+   {
+    "e": "differentiate between",
+    "k": "~을 구별하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "differentiation",
+    "pos": "n",
+    "m": "차별화"
+   },
+   {
+    "w": "difference",
+    "pos": "n",
+    "m": "차이"
+   }
+  ],
+  "para": [
+   "distinguish",
+   "set apart"
+  ],
+  "ant": "",
+  "tip": "differentiate A from B(A를 B와 차별화하다), differentiate between A and B(A와 B를 구별하다)의 전치사 짝이 핵심이다. 자동사 differ(다르다)는 목적어를 받지 못한다.",
+  "q": {
+   "s": "The bakery uses only local ingredients to ------- itself from large supermarket chains.",
+   "o": [
+    "differ",
+    "differentiate",
+    "different",
+    "difference"
+   ],
+   "a": 1,
+   "k": "to 뒤 동사원형 자리에서 목적어 itself를 받아 'A를 B와 차별화하다'를 이루는 differentiate가 정답이다. differ는 자동사라 목적어를 받을 수 없고, different는 형용사, difference는 명사다."
+  }
+ },
+ {
+  "w": "positioning",
+  "pos": "n",
+  "m": [
+   "(시장 내) 포지셔닝, 위치 설정"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The brand's *positioning* as a luxury label allows it to charge premium prices.",
+  "exKo": "고급 브랜드라는 포지셔닝 덕분에 그 브랜드는 높은 가격을 매길 수 있다.",
+  "col": [
+   {
+    "e": "brand positioning",
+    "k": "브랜드 포지셔닝"
+   },
+   {
+    "e": "market positioning",
+    "k": "시장 포지셔닝"
+   }
+  ],
+  "der": [
+   {
+    "w": "position",
+    "pos": "v",
+    "m": "(시장에) 자리매김하다"
+   }
+  ],
+  "para": [
+   "image",
+   "placement"
+  ],
+  "ant": "",
+  "tip": "소비자 마음속에 제품을 특정 위치로 자리매김하는 전략을 뜻한다. 동사로 be positioned as(~로 자리매김되다)도 Part 7에 자주 나온다.",
+  "q": {
+   "s": "Careful market ------- helped the new energy drink stand out from its many competitors.",
+   "o": [
+    "positioned",
+    "positional",
+    "positively",
+    "positioning"
+   ],
+   "a": 3,
+   "k": "형용사 Careful과 명사 market 뒤 주어 자리에 '시장 포지셔닝'이라는 명사가 필요하므로 positioning이 정답이다. positioned는 분사, positional은 형용사, positively는 부사다."
+  }
+ },
+ {
+  "w": "jingle",
+  "pos": "n",
+  "m": [
+   "(광고용) 짧은 노래, CM송"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The insurance company's new radio *jingle* has a simple melody that listeners easily remember.",
+  "exKo": "그 보험사의 새 라디오 광고 음악은 청취자들이 쉽게 기억하는 단순한 멜로디를 지녔다.",
+  "col": [
+   {
+    "e": "advertising jingle",
+    "k": "광고 음악"
+   },
+   {
+    "e": "radio jingle",
+    "k": "라디오 광고 노래"
+   }
+  ],
+  "der": [],
+  "para": [
+   "theme song"
+  ],
+  "ant": "",
+  "tip": "광고에 쓰이는 짧고 기억하기 쉬운 노래로, catchy(귀에 쏙 들어오는)와 자주 함께 쓰인다. Part 4 라디오 광고 문맥에서 들린다.",
+  "q": {
+   "s": "The advertising agency hired a composer to write a short ------- for the company's radio commercials.",
+   "o": [
+    "jungle",
+    "juggle",
+    "jingle",
+    "jumble"
+   ],
+   "a": 2,
+   "k": "작곡가가 라디오 광고용으로 쓰는 짧은 노래이므로 jingle이 정답이다. jungle(정글), juggle(저글링하다), jumble(뒤죽박죽)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "copywriter",
+  "pos": "n",
+  "m": [
+   "광고 문안 작성자, 카피라이터"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The agency's senior *copywriter* wrote the witty headlines for our magazine ads.",
+  "exKo": "그 대행사의 선임 카피라이터가 우리 잡지 광고의 재치 있는 헤드라인을 썼다.",
+  "col": [
+   {
+    "e": "advertising copywriter",
+    "k": "광고 카피라이터"
+   },
+   {
+    "e": "freelance copywriter",
+    "k": "프리랜서 카피라이터"
+   }
+  ],
+  "der": [
+   {
+    "w": "copy",
+    "pos": "n",
+    "m": "광고 문안"
+   }
+  ],
+  "para": [
+   "ad writer"
+  ],
+  "ant": "",
+  "tip": "광고 문안(copy)을 쓰는 사람이다. 철자가 비슷한 copyright(저작권)와 혼동시키는 오답이 나오며, 구인 광고(Part 7)의 직책명으로 등장한다.",
+  "q": {
+   "s": "We are seeking a ------- who can write clear, persuasive text for our product pages.",
+   "o": [
+    "copyright",
+    "copier",
+    "copying",
+    "copywriter"
+   ],
+   "a": 3,
+   "k": "제품 페이지 문구를 쓰는 '사람'이 필요하므로 copywriter가 정답이다. copyright(저작권), copier(복사기), copying(복사)은 사람을 가리키지 않는다."
+  }
+ },
+ {
+  "w": "mock-up",
+  "pos": "n",
+  "m": [
+   "실물 모형, 시안"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The designer showed us a *mock-up* of the new cereal box before printing began.",
+  "exKo": "디자이너는 인쇄를 시작하기 전에 새 시리얼 상자의 시안을 우리에게 보여 주었다.",
+  "col": [
+   {
+    "e": "mock-up of",
+    "k": "~의 시안"
+   },
+   {
+    "e": "create a mock-up",
+    "k": "모형을 만들다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "model",
+   "prototype",
+   "sample"
+  ],
+  "ant": "",
+  "tip": "최종 제작 전에 보여 주는 실물 크기 모형이나 디자인 시안이다. Part 7 디자인·광고 업무 이메일에서 prototype, draft design으로 패러프레이즈된다.",
+  "q": {
+   "s": "Before approving the final design, the client asked to see a ------- of the brochure.",
+   "o": [
+    "makeup",
+    "lineup",
+    "mock-up",
+    "checkup"
+   ],
+   "a": 2,
+   "k": "최종 디자인 승인 전에 보는 안내 책자의 '시안'이므로 mock-up이 정답이다. makeup(화장, 구성), lineup(출연진, 제품군), checkup(검진)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "storyboard",
+  "pos": "n",
+  "m": [
+   "스토리보드, 장면 구성안"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Before filming the commercial, the director reviewed the *storyboard* with the client.",
+  "exKo": "광고를 촬영하기 전에 감독은 고객과 함께 스토리보드를 검토했다.",
+  "col": [
+   {
+    "e": "create a storyboard",
+    "k": "스토리보드를 만들다"
+   },
+   {
+    "e": "storyboard for",
+    "k": "~의 스토리보드"
+   }
+  ],
+  "der": [],
+  "para": [
+   "sketch",
+   "outline"
+  ],
+  "ant": "",
+  "tip": "광고·영상의 장면을 순서대로 그린 구성안으로, 광고 제작 과정(Part 7 이메일·일정표)에서 촬영 전 단계로 나온다.",
+  "q": {
+   "s": "The agency presented a ------- showing each scene of the planned television advertisement.",
+   "o": [
+    "storeroom",
+    "storefront",
+    "storyboard",
+    "storage"
+   ],
+   "a": 2,
+   "k": "계획된 TV 광고의 장면을 하나하나 보여 주는 것은 storyboard다. storeroom(창고), storefront(매장 정면), storage(보관)는 장면을 보여 주지 않는다."
+  }
+ },
+ {
+  "w": "tailor",
+  "pos": "v",
+  "m": [
+   "(목적·요구에) 맞추다, 조정하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We *tailor* our training programs to the specific needs of each client.",
+  "exKo": "우리는 각 고객의 구체적인 요구에 맞춰 교육 프로그램을 조정한다.",
+  "col": [
+   {
+    "e": "tailor A to B",
+    "k": "A를 B에 맞추다"
+   },
+   {
+    "e": "tailored to",
+    "k": "~에 맞춘"
+   }
+  ],
+  "der": [
+   {
+    "w": "tailored",
+    "pos": "adj",
+    "m": "맞춤의"
+   },
+   {
+    "w": "tailor-made",
+    "pos": "adj",
+    "m": "맞춤 제작한"
+   }
+  ],
+  "para": [
+   "customize",
+   "adapt",
+   "adjust"
+  ],
+  "ant": "",
+  "tip": "tailor A to B(A를 B에 맞추다), be tailored to(~에 맞춰져 있다)의 전치사 to가 핵심이다. 명사로는 '재단사'지만 토익에서는 동사 의미가 더 자주 나온다.",
+  "q": {
+   "s": "The agency ------- each advertising campaign to the interests of its target audience.",
+   "o": [
+    "tails",
+    "tallies",
+    "tackles",
+    "tailors"
+   ],
+   "a": 3,
+   "k": "tailor A to B(A를 B에 맞추다) 구조이므로 tailors가 정답이다. tails(미행하다), tallies(합계를 내다, 일치하다), tackles(다루다)는 to the interests와 함께 '맞추다'라는 뜻이 되지 않는다."
+  }
+ },
+ {
+  "w": "personalized",
+  "pos": "adj",
+  "m": [
+   "개인 맞춤형의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Customers receive *personalized* product recommendations based on their purchase history.",
+  "exKo": "고객은 구매 이력에 근거한 맞춤형 제품 추천을 받는다.",
+  "col": [
+   {
+    "e": "personalized service",
+    "k": "맞춤형 서비스"
+   },
+   {
+    "e": "personalized recommendations",
+    "k": "맞춤형 추천"
+   }
+  ],
+  "der": [
+   {
+    "w": "personalize",
+    "pos": "v",
+    "m": "개인에게 맞추다"
+   },
+   {
+    "w": "personally",
+    "pos": "adv",
+    "m": "직접, 개인적으로"
+   }
+  ],
+  "para": [
+   "customized",
+   "tailored",
+   "individualized"
+  ],
+  "ant": "generic",
+  "tip": "명사 앞에서 '개인에게 맞춘'이라는 뜻의 과거분사형 형용사로 쓴다. personnel(인사부, 직원), personality(성격)와 철자가 비슷해 오답으로 나온다.",
+  "q": {
+   "s": "Shoppers who create an account will receive ------- offers based on their previous purchases.",
+   "o": [
+    "personality",
+    "personnel",
+    "personally",
+    "personalized"
+   ],
+   "a": 3,
+   "k": "명사 offers를 꾸미며 '이전 구매에 근거한 맞춤형'을 뜻하는 personalized가 정답이다. personality(성격)와 personnel(직원)은 의미가 맞지 않고, personally는 부사라 명사를 꾸밀 수 없다."
+  }
+ },
+ {
+  "w": "targeted",
+  "pos": "adj",
+  "m": [
+   "(특정 대상을) 겨냥한, 표적화된"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Targeted* online ads helped the gym reach young professionals in the area.",
+  "exKo": "표적 온라인 광고 덕분에 그 체육관은 지역의 젊은 직장인들에게 다가갈 수 있었다.",
+  "col": [
+   {
+    "e": "targeted advertising",
+    "k": "타깃 광고"
+   },
+   {
+    "e": "targeted marketing",
+    "k": "표적 마케팅"
+   }
+  ],
+  "der": [
+   {
+    "w": "target",
+    "pos": "v",
+    "m": "겨냥하다, 대상으로 삼다"
+   }
+  ],
+  "para": [
+   "focused",
+   "tailored"
+  ],
+  "ant": "untargeted",
+  "tip": "명사 앞에서 '특정 고객층을 겨냥한'이라는 뜻의 과거분사형 형용사로 쓴다. 동사로는 be targeted at(~을 겨냥하다)이 자주 나온다.",
+  "q": {
+   "s": "The campaign used ------- advertising to reach customers who had recently searched for hiking gear.",
+   "o": [
+    "targeted",
+    "targets",
+    "targeting",
+    "untargeted"
+   ],
+   "a": 0,
+   "k": "최근 등산 장비를 검색한 고객에게 다가가는 '겨냥한' 광고이므로 targeted가 정답이다. untargeted는 '대상을 정하지 않은'이라 문맥과 반대이고, targets와 targeting은 명사를 수식하는 형용사 형태가 아니다."
+  }
+ },
+ {
+  "w": "aggressive",
+  "pos": "adj",
+  "m": [
+   "공격적인, 적극적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our competitor is using *aggressive* price cuts to attract budget-conscious shoppers.",
+  "exKo": "경쟁사는 예산을 중시하는 쇼핑객을 끌기 위해 공격적인 가격 인하를 하고 있다.",
+  "col": [
+   {
+    "e": "aggressive marketing",
+    "k": "공격적인 마케팅"
+   },
+   {
+    "e": "aggressive pricing",
+    "k": "공격적인 가격 책정"
+   },
+   {
+    "e": "aggressive expansion",
+    "k": "적극적인 확장"
+   }
+  ],
+  "der": [
+   {
+    "w": "aggressively",
+    "pos": "adv",
+    "m": "공격적으로, 적극적으로"
+   }
+  ],
+  "para": [
+   "bold",
+   "assertive",
+   "vigorous"
+  ],
+  "ant": "passive",
+  "tip": "비즈니스에서는 부정적인 '공격적인'보다 '적극적인, 과감한'의 뜻이 많다. 형용사 aggressive와 부사 aggressively의 자리 구분 문제가 나온다.",
+  "q": {
+   "s": "To gain market share quickly, the startup adopted an ------- pricing strategy.",
+   "o": [
+    "aggressively",
+    "aggression",
+    "aggressiveness",
+    "aggressive"
+   ],
+   "a": 3,
+   "k": "관사 an과 명사 pricing strategy 사이 형용사 자리이므로 aggressive가 정답이다. aggressively는 부사, aggression과 aggressiveness는 명사다."
+  }
+ },
+ {
+  "w": "flagship",
+  "pos": "n",
+  "m": [
+   "주력 상품, 대표 상품",
+   "(대표) 본점"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company will open its *flagship* store on Fifth Avenue next spring.",
+  "exKo": "그 회사는 내년 봄 5번가에 대표 매장을 열 것이다.",
+  "col": [
+   {
+    "e": "flagship store",
+    "k": "플래그십 스토어, 대표 매장"
+   },
+   {
+    "e": "flagship product",
+    "k": "주력 상품"
+   }
+  ],
+  "der": [],
+  "para": [
+   "leading product",
+   "main store"
+  ],
+  "ant": "",
+  "tip": "명사 앞에서 형용사처럼 쓰여 flagship store(대표 매장), flagship product(주력 상품)가 된다. Part 7에서 '본점, 주력 제품'으로 패러프레이즈된다.",
+  "q": {
+   "s": "The smartphone is the company's ------- product and accounts for most of its revenue.",
+   "o": [
+    "friendship",
+    "flagship",
+    "hardship",
+    "membership"
+   ],
+   "a": 1,
+   "k": "매출 대부분을 차지하는 '주력 상품'이므로 flagship이 정답이다. friendship(우정), hardship(고난), membership(회원 자격)은 product를 꾸며 이 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "buzz",
+  "pos": "n",
+  "m": [
+   "(입소문으로 생긴) 화제, 열기"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The movie trailer created a lot of online *buzz* weeks before the release.",
+  "exKo": "그 영화 예고편은 개봉 몇 주 전부터 온라인에서 큰 화제를 모았다.",
+  "col": [
+   {
+    "e": "create a buzz",
+    "k": "화제를 불러일으키다"
+   },
+   {
+    "e": "generate buzz",
+    "k": "입소문을 내다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "excitement",
+   "interest",
+   "word of mouth"
+  ],
+  "ant": "",
+  "tip": "create/generate a buzz(화제를 일으키다)로 쓰는 구어적 마케팅 표현이다. Part 4 광고·뉴스에서 excitement나 interest로 패러프레이즈된다.",
+  "q": {
+   "s": "The surprise product announcement generated considerable ------- among industry bloggers.",
+   "o": [
+    "bulk",
+    "buzz",
+    "burden",
+    "bust"
+   ],
+   "a": 1,
+   "k": "깜짝 제품 발표가 업계 블로거들 사이에 '화제'를 불러일으켰다는 뜻이므로 buzz가 정답이다. bulk(대량), burden(부담), bust(실패, 흉상)는 generated considerable ~ among과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "hype",
+  "pos": "n",
+  "m": [
+   "과대광고, 과장된 선전",
+   "(지나친) 기대감"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The new game console failed to live up to the *hype* surrounding its launch.",
+  "exKo": "새 게임기는 출시를 둘러싼 과도한 기대에 미치지 못했다.",
+  "col": [
+   {
+    "e": "live up to the hype",
+    "k": "기대에 부응하다"
+   },
+   {
+    "e": "media hype",
+    "k": "언론의 과대 선전"
+   }
+  ],
+  "der": [],
+  "para": [
+   "publicity",
+   "buildup"
+  ],
+  "ant": "",
+  "tip": "live up to the hype(요란한 선전만큼 좋다)가 자주 쓰인다. buzz보다 '실제보다 부풀려진'이라는 부정적 뉘앙스가 강하다.",
+  "q": {
+   "s": "Despite all the media -------, sales of the new tablet were lower than expected.",
+   "o": [
+    "hike",
+    "hint",
+    "hive",
+    "hype"
+   ],
+   "a": 3,
+   "k": "Despite와 함께 '언론의 요란한 선전에도 불구하고 판매가 저조했다'는 뜻이므로 hype가 정답이다. hike(인상, 하이킹), hint(암시), hive(벌집)는 media와 결합해 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "momentum",
+  "pos": "n",
+  "m": [
+   "탄력, 기세, 추진력"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The brand is gaining *momentum* thanks to positive reviews on social media.",
+  "exKo": "그 브랜드는 소셜 미디어의 긍정적인 후기 덕분에 탄력을 받고 있다.",
+  "col": [
+   {
+    "e": "gain momentum",
+    "k": "탄력을 받다"
+   },
+   {
+    "e": "maintain momentum",
+    "k": "기세를 유지하다"
+   },
+   {
+    "e": "lose momentum",
+    "k": "동력을 잃다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "impetus",
+   "drive",
+   "energy"
+  ],
+  "ant": "",
+  "tip": "gain/build/maintain/lose momentum의 동사 짝이 핵심이다. moment(순간)와 철자를 혼동시키는 오답이 나온다.",
+  "q": {
+   "s": "The company hopes to maintain its sales ------- by releasing new flavors every season.",
+   "o": [
+    "moment",
+    "monument",
+    "momentum",
+    "memento"
+   ],
+   "a": 2,
+   "k": "새 맛을 계속 출시해 판매 '기세'를 유지하려는 것이므로 momentum이 정답이다. moment(순간), monument(기념비), memento(기념품)는 maintain sales ~와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "traction",
+  "pos": "n",
+  "m": [
+   "(아이디어·제품의) 인기, 지지",
+   "견인력"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The meal-kit service quickly gained *traction* among busy professionals.",
+  "exKo": "그 밀키트 서비스는 바쁜 직장인들 사이에서 빠르게 인기를 얻었다.",
+  "col": [
+   {
+    "e": "gain traction",
+    "k": "인기를 얻다, 지지를 받다"
+   },
+   {
+    "e": "lose traction",
+    "k": "동력을 잃다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "popularity",
+   "acceptance",
+   "momentum"
+  ],
+  "ant": "",
+  "tip": "gain traction(지지·인기를 얻기 시작하다)으로 거의 고정되어 쓰인다. 비슷한 생김새의 attraction(매력, 명소)을 넣은 오답에 주의한다.",
+  "q": {
+   "s": "The new delivery app has failed to gain ------- in rural areas, where demand remains low.",
+   "o": [
+    "traction",
+    "attraction",
+    "distraction",
+    "extraction"
+   ],
+   "a": 0,
+   "k": "gain traction은 '인기를 얻다'라는 고정 표현이므로 traction이 정답이다. attraction(명소, 매력), distraction(주의 산만), extraction(추출)은 gain과 결합해 이 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "upsell",
+  "pos": "v",
+  "m": [
+   "(더 비싼 상품을) 추가 권유하다, 업셀링하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Cashiers are trained to *upsell* customers by suggesting larger sizes.",
+  "exKo": "계산원들은 더 큰 사이즈를 권해 고객에게 추가 판매를 하도록 교육받는다.",
+  "col": [
+   {
+    "e": "upsell customers",
+    "k": "고객에게 상위 상품을 권하다"
+   },
+   {
+    "e": "upsell to",
+    "k": "~로 업그레이드를 권하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "upselling",
+    "pos": "n",
+    "m": "업셀링, 상위 상품 판매"
+   }
+  ],
+  "para": [
+   "upgrade"
+  ],
+  "ant": "",
+  "tip": "고객에게 더 비싼 상위 제품이나 추가 옵션을 권하는 판매 기법이다. 관련 기법인 cross-sell(관련 상품 판매)과 함께 판매 교육 문맥에 나온다.",
+  "q": {
+   "s": "Sales associates are encouraged to ------- customers by recommending premium versions of the product.",
+   "o": [
+    "upset",
+    "uphold",
+    "upsell",
+    "upload"
+   ],
+   "a": 2,
+   "k": "고급형 제품을 권해 고객에게 '상위 상품을 판매하다'라는 뜻이므로 upsell이 정답이다. upset(화나게 하다), uphold(지지하다), upload(올리다)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "bundle",
+  "pos": "n",
+  "m": [
+   "묶음 상품, 패키지",
+   "꾸러미, 다발"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The internet provider offers a *bundle* that includes TV, phone, and internet service.",
+  "exKo": "그 인터넷 업체는 TV, 전화, 인터넷 서비스를 포함한 결합 상품을 제공한다.",
+  "col": [
+   {
+    "e": "software bundle",
+    "k": "소프트웨어 묶음 상품"
+   },
+   {
+    "e": "bundle deal",
+    "k": "묶음 할인 상품"
+   },
+   {
+    "e": "bundle A with B",
+    "k": "A를 B와 묶어 팔다"
+   }
+  ],
+  "der": [
+   {
+    "w": "bundled",
+    "pos": "adj",
+    "m": "묶음으로 제공되는"
+   }
+  ],
+  "para": [
+   "package",
+   "set"
+  ],
+  "ant": "",
+  "tip": "명사로 '묶음 상품', 동사로 bundle A with B(A를 B와 묶어 팔다)로 쓴다. Part 7 광고에서 package deal로 패러프레이즈된다.",
+  "q": {
+   "s": "Customers who buy the camera ------- receive a tripod and a memory card at no extra cost.",
+   "o": [
+    "bundled",
+    "bundle",
+    "bundling",
+    "bunch"
+   ],
+   "a": 1,
+   "k": "camera와 결합해 '카메라 묶음 상품'을 뜻하는 명사 bundle이 정답이다. bundled와 bundling은 buy의 목적어가 되는 명사가 아니고, bunch는 '다발'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "value-added",
+  "pos": "adj",
+  "m": [
+   "부가 가치가 있는",
+   "부가적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Free installation is one of the *value-added* services we offer every customer.",
+  "exKo": "무료 설치는 우리가 모든 고객에게 제공하는 부가 가치 서비스 중 하나다.",
+  "col": [
+   {
+    "e": "value-added service",
+    "k": "부가 서비스"
+   },
+   {
+    "e": "value-added tax",
+    "k": "부가 가치세"
+   }
+  ],
+  "der": [
+   {
+    "w": "value",
+    "pos": "n",
+    "m": "가치"
+   }
+  ],
+  "para": [
+   "extra",
+   "additional"
+  ],
+  "ant": "",
+  "tip": "기본 상품 외에 무료로 덧붙여 가치를 높이는 서비스를 뜻한다. value-added tax(부가 가치세, VAT)도 영수증·청구서 문맥에 나온다.",
+  "q": {
+   "s": "The software company attracts clients by offering ------- services such as free training and 24-hour support.",
+   "o": [
+    "value-added",
+    "undervalued",
+    "devalued",
+    "evaluated"
+   ],
+   "a": 0,
+   "k": "무료 교육과 24시간 지원 같은 '부가 가치' 서비스이므로 value-added가 정답이다. undervalued(과소평가된), devalued(가치가 떨어진), evaluated(평가된)는 고객을 끄는 서비스를 설명하기에 맞지 않는다."
+  }
+ },
+ {
+  "w": "incentivize",
+  "pos": "v",
+  "m": [
+   "(보상으로) 장려하다, 동기를 부여하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The city *incentivizes* carpooling by offering free parking to vehicles with three or more passengers.",
+  "exKo": "시는 3명 이상 탑승한 차량에 무료 주차를 제공해 카풀을 장려한다.",
+  "col": [
+   {
+    "e": "incentivize customers",
+    "k": "고객에게 동기를 부여하다"
+   },
+   {
+    "e": "incentivize A to do",
+    "k": "A가 ~하도록 장려하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "incentive",
+    "pos": "n",
+    "m": "장려책, 인센티브"
+   }
+  ],
+  "para": [
+   "encourage",
+   "motivate"
+  ],
+  "ant": "discourage",
+  "tip": "incentivize A to do(A가 ~하도록 유도하다) 구조로 쓴다. 명사 incentive(장려책)를 동사 자리에 넣은 오답이 자주 나온다.",
+  "q": {
+   "s": "The store offers double points on weekdays to ------- customers to shop during off-peak hours.",
+   "o": [
+    "incentive",
+    "incentives",
+    "incentivized",
+    "incentivize"
+   ],
+   "a": 3,
+   "k": "to 부정사 뒤 동사원형 자리이며 'A가 ~하도록 장려하다' 구조이므로 incentivize가 정답이다. incentive와 incentives는 명사이고, incentivized는 to 뒤에 올 수 없다."
+  }
+ }
+]

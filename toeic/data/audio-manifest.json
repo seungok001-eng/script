@@ -13654,6 +13654,16 @@
 "src": "gemini-kore",
 "text": "negotiation"
 },
+"w/36-12.mp3": {
+"src": "kokoro",
+"text": "negotiator",
+"voice": "af_heart"
+},
+"w/36-13.mp3": {
+"src": "kokoro",
+"text": "counteroffer",
+"voice": "af_heart"
+},
 "w/36-14.mp3": {
 "from": "/audio/l12/37.mp3",
 "src": "gemini-kore",
@@ -13674,25 +13684,70 @@
 "src": "gemini-kore",
 "text": "draw up"
 },
+"w/36-18.mp3": {
+"src": "kokoro",
+"text": "expiration",
+"voice": "af_heart"
+},
+"w/36-19.mp3": {
+"src": "kokoro",
+"text": "expiration date",
+"voice": "af_heart"
+},
 "w/36-20.mp3": {
 "from": "/audio/l11/305.mp3",
 "src": "gemini-kore",
 "text": "renewal"
+},
+"w/36-21.mp3": {
+"src": "kokoro",
+"text": "duration",
+"voice": "af_heart"
 },
 "w/36-22.mp3": {
 "from": "/audio/l15/155.mp3",
 "src": "gemini-kore",
 "text": "provision"
 },
+"w/36-23.mp3": {
+"src": "kokoro",
+"text": "addendum",
+"voice": "af_heart"
+},
+"w/36-24.mp3": {
+"src": "kokoro",
+"text": "signatory",
+"voice": "af_heart"
+},
+"w/36-25.mp3": {
+"src": "kokoro",
+"text": "contractual",
+"voice": "af_heart"
+},
+"w/36-26.mp3": {
+"src": "kokoro",
+"text": "down payment",
+"voice": "af_heart"
+},
 "w/36-27.mp3": {
 "from": "/audio/l15/566.mp3",
 "src": "gemini-kore",
 "text": "upfront"
 },
+"w/36-28.mp3": {
+"src": "kokoro",
+"text": "sales target",
+"voice": "af_heart"
+},
 "w/36-29.mp3": {
 "from": "/audio/l3/90.mp3",
 "src": "gemini-kore",
 "text": "lead"
+},
+"w/36-30.mp3": {
+"src": "kokoro",
+"text": "cold call",
+"voice": "af_heart"
 },
 "w/36-31.mp3": {
 "from": "/audio/l13/502.mp3",
@@ -13703,6 +13758,16 @@
 "from": "/audio/l17/6.mp3",
 "src": "gemini-kore",
 "text": "concede"
+},
+"w/36-33.mp3": {
+"src": "kokoro",
+"text": "reach an agreement",
+"voice": "af_heart"
+},
+"w/36-34.mp3": {
+"src": "kokoro",
+"text": "close a deal",
+"voice": "af_heart"
 },
 "w/36-35.mp3": {
 "from": "/audio/l8/455.mp3",
@@ -13739,6 +13804,11 @@
 "src": "gemini-kore",
 "text": "customer"
 },
+"w/37-02.mp3": {
+"src": "kokoro",
+"text": "service",
+"voice": "af_heart"
+},
 "w/37-03.mp3": {
 "from": "/audio/l8/462.mp3",
 "src": "gemini-kore",
@@ -13749,10 +13819,40 @@
 "src": "gemini-kore",
 "text": "patronage"
 },
+"w/37-05.mp3": {
+"src": "kokoro",
+"text": "dissatisfaction",
+"voice": "af_heart"
+},
+"w/37-06.mp3": {
+"src": "kokoro",
+"text": "unsatisfactory",
+"voice": "af_heart"
+},
+"w/37-07.mp3": {
+"src": "kokoro",
+"text": "inexpensive",
+"voice": "af_heart"
+},
 "w/37-08.mp3": {
 "from": "/audio/l2/505.mp3",
 "src": "gemini-kore",
 "text": "store"
+},
+"w/37-09.mp3": {
+"src": "kokoro",
+"text": "business hours",
+"voice": "af_heart"
+},
+"w/37-10.mp3": {
+"src": "kokoro",
+"text": "inquire",
+"voice": "af_heart"
+},
+"w/37-11.mp3": {
+"src": "kokoro",
+"text": "shopper",
+"voice": "af_heart"
 },
 "w/37-12.mp3": {
 "from": "/audio/l4/366.mp3",
@@ -13773,6 +13873,11 @@
 "from": "/audio/l7/171.mp3",
 "src": "gemini-kore",
 "text": "shelf"
+},
+"w/37-16.mp3": {
+"src": "kokoro",
+"text": "display",
+"voice": "af_heart"
 },
 "w/37-17.mp3": {
 "from": "/audio/l4/372.mp3",
@@ -13799,6 +13904,11 @@
 "src": "gemini-kore",
 "text": "try on"
 },
+"w/37-22.mp3": {
+"src": "kokoro",
+"text": "gift certificate",
+"voice": "af_heart"
+},
 "w/37-23.mp3": {
 "from": "/audio/l3/136.mp3",
 "src": "gemini-kore",
@@ -13809,10 +13919,25 @@
 "src": "gemini-kore",
 "text": "cash register"
 },
+"w/37-25.mp3": {
+"src": "kokoro",
+"text": "return policy",
+"voice": "af_heart"
+},
 "w/37-26.mp3": {
 "from": "/audio/l3/172.mp3",
 "src": "gemini-kore",
 "text": "satisfied"
+},
+"w/37-27.mp3": {
+"src": "kokoro",
+"text": "dissatisfied",
+"voice": "af_heart"
+},
+"w/37-28.mp3": {
+"src": "kokoro",
+"text": "stock up on",
+"voice": "af_heart"
 },
 "w/37-29.mp3": {
 "from": "/audio/l4/400.mp3",
@@ -13824,6 +13949,16 @@
 "src": "gemini-kore",
 "text": "apology"
 },
+"w/37-31.mp3": {
+"src": "kokoro",
+"text": "affordability",
+"voice": "af_heart"
+},
+"w/37-32.mp3": {
+"src": "kokoro",
+"text": "assortment",
+"voice": "af_heart"
+},
 "w/37-33.mp3": {
 "from": "/audio/l4/553.mp3",
 "src": "gemini-kore",
@@ -13833,6 +13968,16 @@
 "from": "/audio/l11/37.mp3",
 "src": "gemini-kore",
 "text": "assist"
+},
+"w/37-35.mp3": {
+"src": "kokoro",
+"text": "hotline",
+"voice": "af_heart"
+},
+"w/37-36.mp3": {
+"src": "kokoro",
+"text": "responsive",
+"voice": "af_heart"
 },
 "w/37-37.mp3": {
 "from": "/audio/l13/183.mp3",
@@ -13848,6 +13993,11 @@
 "from": "/audio/l6/268.mp3",
 "src": "gemini-kore",
 "text": "browse"
+},
+"w/37-40.mp3": {
+"src": "kokoro",
+"text": "upscale",
+"voice": "af_heart"
 },
 "w/38-01.mp3": {
 "from": "/audio/l4/357.mp3",
@@ -13869,15 +14019,60 @@
 "src": "gemini-kore",
 "text": "package"
 },
+"w/38-05.mp3": {
+"src": "kokoro",
+"text": "customs clearance",
+"voice": "af_heart"
+},
+"w/38-06.mp3": {
+"src": "kokoro",
+"text": "packing slip",
+"voice": "af_heart"
+},
+"w/38-07.mp3": {
+"src": "kokoro",
+"text": "warehousing",
+"voice": "af_heart"
+},
+"w/38-08.mp3": {
+"src": "kokoro",
+"text": "postmark",
+"voice": "af_heart"
+},
 "w/38-09.mp3": {
 "from": "/audio/l7/10.mp3",
 "src": "gemini-kore",
 "text": "receive"
 },
+"w/38-10.mp3": {
+"src": "kokoro",
+"text": "shipper",
+"voice": "af_heart"
+},
 "w/38-11.mp3": {
 "from": "/audio/l4/209.mp3",
 "src": "gemini-kore",
 "text": "arrival"
+},
+"w/38-12.mp3": {
+"src": "kokoro",
+"text": "sender",
+"voice": "af_heart"
+},
+"w/38-13.mp3": {
+"src": "kokoro",
+"text": "shipping",
+"voice": "af_heart"
+},
+"w/38-14.mp3": {
+"src": "kokoro",
+"text": "postage",
+"voice": "af_heart"
+},
+"w/38-15.mp3": {
+"src": "kokoro",
+"text": "mailroom",
+"voice": "af_heart"
 },
 "w/38-16.mp3": {
 "from": "/audio/l4/184.mp3",
@@ -13889,15 +14084,55 @@
 "src": "gemini-kore",
 "text": "load"
 },
+"w/38-18.mp3": {
+"src": "kokoro",
+"text": "unload",
+"voice": "af_heart"
+},
+"w/38-19.mp3": {
+"src": "kokoro",
+"text": "loading dock",
+"voice": "af_heart"
+},
+"w/38-20.mp3": {
+"src": "kokoro",
+"text": "container",
+"voice": "af_heart"
+},
 "w/38-21.mp3": {
 "from": "/audio/l2/377.mp3",
 "src": "gemini-kore",
 "text": "crate"
 },
+"w/38-22.mp3": {
+"src": "kokoro",
+"text": "pallet",
+"voice": "af_heart"
+},
+"w/38-23.mp3": {
+"src": "kokoro",
+"text": "forklift",
+"voice": "af_heart"
+},
+"w/38-24.mp3": {
+"src": "kokoro",
+"text": "damaged",
+"voice": "af_heart"
+},
 "w/38-25.mp3": {
 "from": "/audio/l15/38.mp3",
 "src": "gemini-kore",
 "text": "intact"
+},
+"w/38-26.mp3": {
+"src": "kokoro",
+"text": "missing",
+"voice": "af_heart"
+},
+"w/38-27.mp3": {
+"src": "kokoro",
+"text": "incorrect",
+"voice": "af_heart"
 },
 "w/38-28.mp3": {
 "from": "/audio/l11/104.mp3",
@@ -13924,10 +14159,45 @@
 "src": "gemini-kore",
 "text": "requisition"
 },
+"w/38-33.mp3": {
+"src": "kokoro",
+"text": "purchase order",
+"voice": "af_heart"
+},
+"w/38-34.mp3": {
+"src": "kokoro",
+"text": "order form",
+"voice": "af_heart"
+},
+"w/38-35.mp3": {
+"src": "kokoro",
+"text": "reorder",
+"voice": "af_heart"
+},
+"w/38-36.mp3": {
+"src": "kokoro",
+"text": "backlog",
+"voice": "af_heart"
+},
+"w/38-37.mp3": {
+"src": "kokoro",
+"text": "lead time",
+"voice": "af_heart"
+},
+"w/38-38.mp3": {
+"src": "kokoro",
+"text": "turnaround time",
+"voice": "af_heart"
+},
 "w/38-39.mp3": {
 "from": "/audio/l4/511.mp3",
 "src": "gemini-kore",
 "text": "on time"
+},
+"w/38-40.mp3": {
+"src": "kokoro",
+"text": "timely",
+"voice": "af_heart"
 },
 "w/39-01.mp3": {
 "from": "/audio/l7/8.mp3",
@@ -13949,6 +14219,16 @@
 "src": "gemini-kore",
 "text": "labor"
 },
+"w/39-05.mp3": {
+"src": "kokoro",
+"text": "operational",
+"voice": "af_heart"
+},
+"w/39-06.mp3": {
+"src": "kokoro",
+"text": "assembler",
+"voice": "af_heart"
+},
 "w/39-07.mp3": {
 "from": "/audio/l8/264.mp3",
 "src": "gemini-kore",
@@ -13964,10 +14244,30 @@
 "src": "gemini-kore",
 "text": "repair"
 },
+"w/39-10.mp3": {
+"src": "kokoro",
+"text": "upkeep",
+"voice": "af_heart"
+},
+"w/39-11.mp3": {
+"src": "kokoro",
+"text": "plant manager",
+"voice": "af_heart"
+},
+"w/39-12.mp3": {
+"src": "kokoro",
+"text": "shop floor",
+"voice": "af_heart"
+},
 "w/39-13.mp3": {
 "from": "/audio/l4/515.mp3",
 "src": "gemini-kore",
 "text": "part"
+},
+"w/39-14.mp3": {
+"src": "kokoro",
+"text": "spare part",
+"voice": "af_heart"
 },
 "w/39-15.mp3": {
 "from": "/audio/l2/200.mp3",
@@ -13983,6 +14283,21 @@
 "from": "/audio/l12/530.mp3",
 "src": "gemini-kore",
 "text": "mechanical"
+},
+"w/39-18.mp3": {
+"src": "kokoro",
+"text": "manual",
+"voice": "af_heart"
+},
+"w/39-19.mp3": {
+"src": "kokoro",
+"text": "industrial",
+"voice": "af_heart"
+},
+"w/39-20.mp3": {
+"src": "kokoro",
+"text": "manufacturing",
+"voice": "af_heart"
 },
 "w/39-21.mp3": {
 "from": "/audio/word/7826c96de8e6d657.mp3",
@@ -14014,10 +14329,20 @@
 "src": "gemini-kore",
 "text": "superior"
 },
+"w/39-27.mp3": {
+"src": "kokoro",
+"text": "durability",
+"voice": "af_heart"
+},
 "w/39-28.mp3": {
 "from": "/audio/l5/71.mp3",
 "src": "gemini-kore",
 "text": "recall"
+},
+"w/39-29.mp3": {
+"src": "kokoro",
+"text": "downtime",
+"voice": "af_heart"
 },
 "w/39-30.mp3": {
 "from": "/audio/l12/514.mp3",
@@ -14029,15 +14354,30 @@
 "src": "gemini-kore",
 "text": "mass production"
 },
+"w/39-32.mp3": {
+"src": "kokoro",
+"text": "conveyor belt",
+"voice": "af_heart"
+},
 "w/39-33.mp3": {
 "from": "/audio/l16/86.mp3",
 "src": "gemini-kore",
 "text": "calibrate"
 },
+"w/39-34.mp3": {
+"src": "kokoro",
+"text": "certified",
+"voice": "af_heart"
+},
 "w/39-35.mp3": {
 "from": "/audio/l10/424.mp3",
 "src": "gemini-kore",
 "text": "standardize"
+},
+"w/39-36.mp3": {
+"src": "kokoro",
+"text": "scrap",
+"voice": "af_heart"
 },
 "w/39-37.mp3": {
 "from": "/audio/l13/483.mp3",
@@ -14104,10 +14444,25 @@
 "src": "gemini-kore",
 "text": "researcher"
 },
+"w/40-10.mp3": {
+"src": "kokoro",
+"text": "enhancement",
+"voice": "af_heart"
+},
+"w/40-11.mp3": {
+"src": "kokoro",
+"text": "scientific",
+"voice": "af_heart"
+},
 "w/40-12.mp3": {
 "from": "/audio/l12/512.mp3",
 "src": "gemini-kore",
 "text": "technology"
+},
+"w/40-13.mp3": {
+"src": "kokoro",
+"text": "technological",
+"voice": "af_heart"
 },
 "w/40-14.mp3": {
 "from": "/audio/l9/41.mp3",
@@ -14134,6 +14489,11 @@
 "src": "gemini-kore",
 "text": "invention"
 },
+"w/40-19.mp3": {
+"src": "kokoro",
+"text": "product development",
+"voice": "af_heart"
+},
 "w/40-20.mp3": {
 "from": "/audio/l14/290.mp3",
 "src": "gemini-kore",
@@ -14153,6 +14513,11 @@
 "from": "/audio/l12/269.mp3",
 "src": "gemini-kore",
 "text": "demonstration"
+},
+"w/40-24.mp3": {
+"src": "kokoro",
+"text": "discontinue",
+"voice": "af_heart"
 },
 "w/40-25.mp3": {
 "from": "/audio/l12/160.mp3",
@@ -14203,6 +14568,11 @@
 "from": "/audio/l14/391.mp3",
 "src": "gemini-kore",
 "text": "groundbreaking"
+},
+"w/40-35.mp3": {
+"src": "kokoro",
+"text": "high-tech",
+"voice": "af_heart"
 },
 "w/40-36.mp3": {
 "from": "/audio/l8/512.mp3",
@@ -14274,6 +14644,16 @@
 "src": "gemini-kore",
 "text": "finance"
 },
+"w/41-10.mp3": {
+"src": "kokoro",
+"text": "accounting",
+"voice": "af_heart"
+},
+"w/41-11.mp3": {
+"src": "kokoro",
+"text": "bookkeeping",
+"voice": "af_heart"
+},
 "w/41-12.mp3": {
 "from": "/audio/l4/323.mp3",
 "src": "gemini-kore",
@@ -14294,6 +14674,31 @@
 "src": "gemini-kore",
 "text": "annual"
 },
+"w/41-16.mp3": {
+"src": "kokoro",
+"text": "budgeting",
+"voice": "af_heart"
+},
+"w/41-17.mp3": {
+"src": "kokoro",
+"text": "balance sheet",
+"voice": "af_heart"
+},
+"w/41-18.mp3": {
+"src": "kokoro",
+"text": "cash flow",
+"voice": "af_heart"
+},
+"w/41-19.mp3": {
+"src": "kokoro",
+"text": "tax return",
+"voice": "af_heart"
+},
+"w/41-20.mp3": {
+"src": "kokoro",
+"text": "expense report",
+"voice": "af_heart"
+},
 "w/41-21.mp3": {
 "from": "/audio/l15/490.mp3",
 "src": "gemini-kore",
@@ -14303,6 +14708,26 @@
 "from": "/audio/l10/318.mp3",
 "src": "gemini-kore",
 "text": "allocation"
+},
+"w/41-23.mp3": {
+"src": "kokoro",
+"text": "budgetary",
+"voice": "af_heart"
+},
+"w/41-24.mp3": {
+"src": "kokoro",
+"text": "cutback",
+"voice": "af_heart"
+},
+"w/41-25.mp3": {
+"src": "kokoro",
+"text": "financing",
+"voice": "af_heart"
+},
+"w/41-26.mp3": {
+"src": "kokoro",
+"text": "fund",
+"voice": "af_heart"
 },
 "w/41-27.mp3": {
 "from": "/audio/l15/452.mp3",
@@ -14323,6 +14748,21 @@
 "from": "/audio/l15/596.mp3",
 "src": "gemini-kore",
 "text": "profit margin"
+},
+"w/41-31.mp3": {
+"src": "kokoro",
+"text": "break even",
+"voice": "af_heart"
+},
+"w/41-32.mp3": {
+"src": "kokoro",
+"text": "bottom line",
+"voice": "af_heart"
+},
+"w/41-33.mp3": {
+"src": "kokoro",
+"text": "over budget",
+"voice": "af_heart"
 },
 "w/41-34.mp3": {
 "from": "/audio/l15/478.mp3",
@@ -14374,10 +14814,20 @@
 "src": "gemini-kore",
 "text": "deflation"
 },
+"w/42-04.mp3": {
+"src": "kokoro",
+"text": "upswing",
+"voice": "af_heart"
+},
 "w/42-05.mp3": {
 "from": "/audio/l11/15.mp3",
 "src": "gemini-kore",
 "text": "decrease"
+},
+"w/42-06.mp3": {
+"src": "kokoro",
+"text": "consumer confidence",
+"voice": "af_heart"
 },
 "w/42-07.mp3": {
 "from": "/audio/l8/86.mp3",
@@ -14389,6 +14839,21 @@
 "src": "gemini-kore",
 "text": "average"
 },
+"w/42-09.mp3": {
+"src": "kokoro",
+"text": "market conditions",
+"voice": "af_heart"
+},
+"w/42-10.mp3": {
+"src": "kokoro",
+"text": "decelerate",
+"voice": "af_heart"
+},
+"w/42-11.mp3": {
+"src": "kokoro",
+"text": "marked",
+"voice": "af_heart"
+},
 "w/42-12.mp3": {
 "from": "/audio/l17/442.mp3",
 "src": "gemini-kore",
@@ -14398,6 +14863,16 @@
 "from": "/audio/l12/553.mp3",
 "src": "gemini-kore",
 "text": "rapid"
+},
+"w/42-14.mp3": {
+"src": "kokoro",
+"text": "rapidly",
+"voice": "af_heart"
+},
+"w/42-15.mp3": {
+"src": "kokoro",
+"text": "slowdown",
+"voice": "af_heart"
 },
 "w/42-16.mp3": {
 "from": "/audio/l7/303.mp3",
@@ -14409,6 +14884,11 @@
 "src": "gemini-kore",
 "text": "robust"
 },
+"w/42-18.mp3": {
+"src": "kokoro",
+"text": "rebound",
+"voice": "af_heart"
+},
 "w/42-19.mp3": {
 "from": "/audio/l4/257.mp3",
 "src": "gemini-kore",
@@ -14418,6 +14898,11 @@
 "from": "/audio/l9/33.mp3",
 "src": "gemini-kore",
 "text": "crisis"
+},
+"w/42-21.mp3": {
+"src": "kokoro",
+"text": "uncertainty",
+"voice": "af_heart"
 },
 "w/42-22.mp3": {
 "from": "/audio/l12/278.mp3",
@@ -14454,6 +14939,21 @@
 "src": "gemini-kore",
 "text": "peak"
 },
+"w/42-29.mp3": {
+"src": "kokoro",
+"text": "dip",
+"voice": "af_heart"
+},
+"w/42-30.mp3": {
+"src": "kokoro",
+"text": "spike",
+"voice": "af_heart"
+},
+"w/42-31.mp3": {
+"src": "kokoro",
+"text": "skyrocket",
+"voice": "af_heart"
+},
 "w/42-32.mp3": {
 "from": "/audio/l9/546.mp3",
 "src": "gemini-kore",
@@ -14479,10 +14979,45 @@
 "src": "gemini-kore",
 "text": "worldwide"
 },
+"w/42-37.mp3": {
+"src": "kokoro",
+"text": "nationwide",
+"voice": "af_heart"
+},
+"w/42-38.mp3": {
+"src": "kokoro",
+"text": "regional",
+"voice": "af_heart"
+},
+"w/42-39.mp3": {
+"src": "kokoro",
+"text": "emerging market",
+"voice": "af_heart"
+},
+"w/42-40.mp3": {
+"src": "kokoro",
+"text": "consumer spending",
+"voice": "af_heart"
+},
+"w/43-01.mp3": {
+"src": "kokoro",
+"text": "headquartered",
+"voice": "af_heart"
+},
+"w/43-02.mp3": {
+"src": "kokoro",
+"text": "privatize",
+"voice": "af_heart"
+},
 "w/43-03.mp3": {
 "from": "/audio/l6/433.mp3",
 "src": "gemini-kore",
 "text": "organization"
+},
+"w/43-04.mp3": {
+"src": "kokoro",
+"text": "unprofitable",
+"voice": "af_heart"
 },
 "w/43-05.mp3": {
 "from": "/audio/l12/335.mp3",
@@ -14494,10 +15029,25 @@
 "src": "gemini-kore",
 "text": "run"
 },
+"w/43-07.mp3": {
+"src": "kokoro",
+"text": "CEO",
+"voice": "af_heart"
+},
+"w/43-08.mp3": {
+"src": "kokoro",
+"text": "CFO",
+"voice": "af_heart"
+},
 "w/43-09.mp3": {
 "from": "/audio/l7/60.mp3",
 "src": "gemini-kore",
 "text": "share"
+},
+"w/43-10.mp3": {
+"src": "kokoro",
+"text": "stockholder",
+"voice": "af_heart"
 },
 "w/43-11.mp3": {
 "from": "/audio/l14/427.mp3",
@@ -14513,6 +15063,11 @@
 "from": "/audio/l13/412.mp3",
 "src": "gemini-kore",
 "text": "portfolio"
+},
+"w/43-14.mp3": {
+"src": "kokoro",
+"text": "return on investment",
+"voice": "af_heart"
 },
 "w/43-15.mp3": {
 "from": "/audio/l2/362.mp3",
@@ -14539,15 +15094,45 @@
 "src": "gemini-kore",
 "text": "corporate"
 },
+"w/43-20.mp3": {
+"src": "kokoro",
+"text": "multinational",
+"voice": "af_heart"
+},
 "w/43-21.mp3": {
 "from": "/audio/l15/457.mp3",
 "src": "gemini-kore",
 "text": "conglomerate"
 },
+"w/43-22.mp3": {
+"src": "kokoro",
+"text": "parent company",
+"voice": "af_heart"
+},
+"w/43-23.mp3": {
+"src": "kokoro",
+"text": "mission statement",
+"voice": "af_heart"
+},
+"w/43-24.mp3": {
+"src": "kokoro",
+"text": "vision",
+"voice": "af_heart"
+},
 "w/43-25.mp3": {
 "from": "/audio/l15/432.mp3",
 "src": "gemini-kore",
 "text": "stakeholder"
+},
+"w/43-26.mp3": {
+"src": "kokoro",
+"text": "board meeting",
+"voice": "af_heart"
+},
+"w/43-27.mp3": {
+"src": "kokoro",
+"text": "decision-making",
+"voice": "af_heart"
 },
 "w/43-28.mp3": {
 "from": "/audio/l14/506.mp3",
@@ -14558,6 +15143,16 @@
 "from": "/audio/l17/545.mp3",
 "src": "gemini-kore",
 "text": "oversight"
+},
+"w/43-30.mp3": {
+"src": "kokoro",
+"text": "market leader",
+"voice": "af_heart"
+},
+"w/43-31.mp3": {
+"src": "kokoro",
+"text": "leading",
+"voice": "af_heart"
 },
 "w/43-32.mp3": {
 "from": "/audio/l10/10.mp3",
@@ -14579,6 +15174,11 @@
 "src": "gemini-kore",
 "text": "liquidate"
 },
+"w/43-36.mp3": {
+"src": "kokoro",
+"text": "IPO",
+"voice": "af_heart"
+},
 "w/43-37.mp3": {
 "from": "/audio/l15/508.mp3",
 "src": "gemini-kore",
@@ -14599,30 +15199,80 @@
 "src": "gemini-kore",
 "text": "divest"
 },
+"w/44-01.mp3": {
+"src": "kokoro",
+"text": "boarding gate",
+"voice": "af_heart"
+},
+"w/44-02.mp3": {
+"src": "kokoro",
+"text": "departure lounge",
+"voice": "af_heart"
+},
+"w/44-03.mp3": {
+"src": "kokoro",
+"text": "travel expenses",
+"voice": "af_heart"
+},
 "w/44-04.mp3": {
 "from": "/audio/l6/510.mp3",
 "src": "gemini-kore",
 "text": "hostel"
+},
+"w/44-05.mp3": {
+"src": "kokoro",
+"text": "rebook",
+"voice": "af_heart"
 },
 "w/44-06.mp3": {
 "from": "/audio/l4/161.mp3",
 "src": "gemini-kore",
 "text": "airline"
 },
+"w/44-07.mp3": {
+"src": "kokoro",
+"text": "inbound",
+"voice": "af_heart"
+},
+"w/44-08.mp3": {
+"src": "kokoro",
+"text": "reconfirm",
+"voice": "af_heart"
+},
+"w/44-09.mp3": {
+"src": "kokoro",
+"text": "standby",
+"voice": "af_heart"
+},
 "w/44-10.mp3": {
 "from": "/audio/l6/496.mp3",
 "src": "gemini-kore",
 "text": "reserve"
+},
+"w/44-11.mp3": {
+"src": "kokoro",
+"text": "unattended",
+"voice": "af_heart"
 },
 "w/44-12.mp3": {
 "from": "/audio/l4/190.mp3",
 "src": "gemini-kore",
 "text": "tour"
 },
+"w/44-13.mp3": {
+"src": "kokoro",
+"text": "aviation",
+"voice": "af_heart"
+},
 "w/44-14.mp3": {
 "from": "/audio/l4/214.mp3",
 "src": "gemini-kore",
 "text": "visa"
+},
+"w/44-15.mp3": {
+"src": "kokoro",
+"text": "concourse",
+"voice": "af_heart"
 },
 "w/44-16.mp3": {
 "from": "/audio/l4/72.mp3",
@@ -14639,10 +15289,20 @@
 "src": "gemini-kore",
 "text": "take off"
 },
+"w/44-19.mp3": {
+"src": "kokoro",
+"text": "outbound",
+"voice": "af_heart"
+},
 "w/44-20.mp3": {
 "from": "/audio/l4/178.mp3",
 "src": "gemini-kore",
 "text": "runway"
+},
+"w/44-21.mp3": {
+"src": "kokoro",
+"text": "aircraft",
+"voice": "af_heart"
 },
 "w/44-22.mp3": {
 "from": "/audio/l4/221.mp3",
@@ -14654,6 +15314,41 @@
 "src": "gemini-kore",
 "text": "crew"
 },
+"w/44-24.mp3": {
+"src": "kokoro",
+"text": "nonstop",
+"voice": "af_heart"
+},
+"w/44-25.mp3": {
+"src": "kokoro",
+"text": "one-way",
+"voice": "af_heart"
+},
+"w/44-26.mp3": {
+"src": "kokoro",
+"text": "economy class",
+"voice": "af_heart"
+},
+"w/44-27.mp3": {
+"src": "kokoro",
+"text": "frequent flyer",
+"voice": "af_heart"
+},
+"w/44-28.mp3": {
+"src": "kokoro",
+"text": "airfare",
+"voice": "af_heart"
+},
+"w/44-29.mp3": {
+"src": "kokoro",
+"text": "baggage claim",
+"voice": "af_heart"
+},
+"w/44-30.mp3": {
+"src": "kokoro",
+"text": "overhead compartment",
+"voice": "af_heart"
+},
 "w/44-31.mp3": {
 "from": "/audio/l4/600.mp3",
 "src": "gemini-kore",
@@ -14663,6 +15358,11 @@
 "from": "/audio/l12/300.mp3",
 "src": "gemini-kore",
 "text": "immigration"
+},
+"w/44-33.mp3": {
+"src": "kokoro",
+"text": "disembark",
+"voice": "af_heart"
 },
 "w/44-34.mp3": {
 "from": "/audio/l13/58.mp3",
@@ -14689,40 +15389,135 @@
 "src": "gemini-kore",
 "text": "voyage"
 },
+"w/44-39.mp3": {
+"src": "kokoro",
+"text": "tourism",
+"voice": "af_heart"
+},
 "w/44-40.mp3": {
 "from": "/audio/l8/347.mp3",
 "src": "gemini-kore",
 "text": "expedition"
+},
+"w/45-01.mp3": {
+"src": "kokoro",
+"text": "continental breakfast",
+"voice": "af_heart"
+},
+"w/45-02.mp3": {
+"src": "kokoro",
+"text": "banquet hall",
+"voice": "af_heart"
+},
+"w/45-03.mp3": {
+"src": "kokoro",
+"text": "make a reservation",
+"voice": "af_heart"
+},
+"w/45-04.mp3": {
+"src": "kokoro",
+"text": "head chef",
+"voice": "af_heart"
+},
+"w/45-05.mp3": {
+"src": "kokoro",
+"text": "wine list",
+"voice": "af_heart"
+},
+"w/45-06.mp3": {
+"src": "kokoro",
+"text": "dining area",
+"voice": "af_heart"
+},
+"w/45-07.mp3": {
+"src": "kokoro",
+"text": "guest room",
+"voice": "af_heart"
+},
+"w/45-08.mp3": {
+"src": "kokoro",
+"text": "hostess",
+"voice": "af_heart"
+},
+"w/45-09.mp3": {
+"src": "kokoro",
+"text": "waitstaff",
+"voice": "af_heart"
 },
 "w/45-10.mp3": {
 "from": "/audio/l3/583.mp3",
 "src": "gemini-kore",
 "text": "serve"
 },
+"w/45-11.mp3": {
+"src": "kokoro",
+"text": "cutlery",
+"voice": "af_heart"
+},
+"w/45-12.mp3": {
+"src": "kokoro",
+"text": "silverware",
+"voice": "af_heart"
+},
+"w/45-13.mp3": {
+"src": "kokoro",
+"text": "pitcher",
+"voice": "af_heart"
+},
 "w/45-14.mp3": {
 "from": "/audio/l2/558.mp3",
 "src": "gemini-kore",
 "text": "tray"
+},
+"w/45-15.mp3": {
+"src": "kokoro",
+"text": "platter",
+"voice": "af_heart"
 },
 "w/45-16.mp3": {
 "from": "/audio/l1/215.mp3",
 "src": "gemini-kore",
 "text": "apron"
 },
+"w/45-17.mp3": {
+"src": "kokoro",
+"text": "pastry",
+"voice": "af_heart"
+},
 "w/45-18.mp3": {
 "from": "/audio/l6/68.mp3",
 "src": "gemini-kore",
 "text": "cafeteria"
+},
+"w/45-19.mp3": {
+"src": "kokoro",
+"text": "condiment",
+"voice": "af_heart"
+},
+"w/45-20.mp3": {
+"src": "kokoro",
+"text": "appetizing",
+"voice": "af_heart"
 },
 "w/45-21.mp3": {
 "from": "/audio/l3/388.mp3",
 "src": "gemini-kore",
 "text": "bakery"
 },
+"w/45-22.mp3": {
+"src": "kokoro",
+"text": "savory",
+"voice": "af_heart"
+},
 "w/45-23.mp3": {
 "from": "/audio/l12/107.mp3",
 "src": "gemini-kore",
 "text": "overlook"
+},
+"w/45-24.mp3": {
+"src": "kokoro",
+"text": "eatery",
+"voice": "af_heart"
 },
 "w/45-25.mp3": {
 "from": "/audio/l3/297.mp3",
@@ -14744,15 +15539,35 @@
 "src": "gemini-kore",
 "text": "portion"
 },
+"w/45-29.mp3": {
+"src": "kokoro",
+"text": "main course",
+"voice": "af_heart"
+},
+"w/45-30.mp3": {
+"src": "kokoro",
+"text": "utensil",
+"voice": "af_heart"
+},
 "w/45-31.mp3": {
 "from": "/audio/l3/450.mp3",
 "src": "gemini-kore",
 "text": "napkin"
 },
+"w/45-32.mp3": {
+"src": "kokoro",
+"text": "caterer",
+"voice": "af_heart"
+},
 "w/45-33.mp3": {
 "from": "/audio/l7/226.mp3",
 "src": "gemini-kore",
 "text": "diner"
+},
+"w/45-34.mp3": {
+"src": "kokoro",
+"text": "gourmet",
+"voice": "af_heart"
 },
 "w/45-35.mp3": {
 "from": "/audio/l6/296.mp3",
@@ -14769,30 +15584,105 @@
 "src": "gemini-kore",
 "text": "inn"
 },
+"w/45-38.mp3": {
+"src": "kokoro",
+"text": "lodging",
+"voice": "af_heart"
+},
 "w/45-39.mp3": {
 "from": "/audio/l2/289.mp3",
 "src": "gemini-kore",
 "text": "laundry"
+},
+"w/45-40.mp3": {
+"src": "kokoro",
+"text": "valet",
+"voice": "af_heart"
+},
+"w/46-01.mp3": {
+"src": "kokoro",
+"text": "backed up",
+"voice": "af_heart"
+},
+"w/46-02.mp3": {
+"src": "kokoro",
+"text": "motorist",
+"voice": "af_heart"
+},
+"w/46-03.mp3": {
+"src": "kokoro",
+"text": "pothole",
+"voice": "af_heart"
+},
+"w/46-04.mp3": {
+"src": "kokoro",
+"text": "automotive",
+"voice": "af_heart"
+},
+"w/46-05.mp3": {
+"src": "kokoro",
+"text": "refuel",
+"voice": "af_heart"
+},
+"w/46-06.mp3": {
+"src": "kokoro",
+"text": "curbside",
+"voice": "af_heart"
 },
 "w/46-07.mp3": {
 "from": "/audio/l7/210.mp3",
 "src": "gemini-kore",
 "text": "underpass"
 },
+"w/46-08.mp3": {
+"src": "kokoro",
+"text": "lamppost",
+"voice": "af_heart"
+},
+"w/46-09.mp3": {
+"src": "kokoro",
+"text": "cyclist",
+"voice": "af_heart"
+},
+"w/46-10.mp3": {
+"src": "kokoro",
+"text": "windshield",
+"voice": "af_heart"
+},
 "w/46-11.mp3": {
 "from": "/audio/l4/205.mp3",
 "src": "gemini-kore",
 "text": "tram"
+},
+"w/46-12.mp3": {
+"src": "kokoro",
+"text": "railing",
+"voice": "af_heart"
 },
 "w/46-13.mp3": {
 "from": "/audio/l2/554.mp3",
 "src": "gemini-kore",
 "text": "traffic"
 },
+"w/46-14.mp3": {
+"src": "kokoro",
+"text": "parking",
+"voice": "af_heart"
+},
 "w/46-15.mp3": {
 "from": "/audio/l7/206.mp3",
 "src": "gemini-kore",
 "text": "pavement"
+},
+"w/46-16.mp3": {
+"src": "kokoro",
+"text": "barricade",
+"voice": "af_heart"
+},
+"w/46-17.mp3": {
+"src": "kokoro",
+"text": "roadway",
+"voice": "af_heart"
 },
 "w/46-18.mp3": {
 "from": "/audio/l7/203.mp3",
@@ -14819,6 +15709,31 @@
 "src": "gemini-kore",
 "text": "signal"
 },
+"w/46-23.mp3": {
+"src": "kokoro",
+"text": "roadblock",
+"voice": "af_heart"
+},
+"w/46-24.mp3": {
+"src": "kokoro",
+"text": "trolley",
+"voice": "af_heart"
+},
+"w/46-25.mp3": {
+"src": "kokoro",
+"text": "expressway",
+"voice": "af_heart"
+},
+"w/46-26.mp3": {
+"src": "kokoro",
+"text": "passerby",
+"voice": "af_heart"
+},
+"w/46-27.mp3": {
+"src": "kokoro",
+"text": "kiosk",
+"voice": "af_heart"
+},
 "w/46-28.mp3": {
 "from": "/audio/l8/582.mp3",
 "src": "gemini-kore",
@@ -14829,10 +15744,20 @@
 "src": "gemini-kore",
 "text": "transportation"
 },
+"w/46-30.mp3": {
+"src": "kokoro",
+"text": "reroute",
+"voice": "af_heart"
+},
 "w/46-31.mp3": {
 "from": "/audio/l15/22.mp3",
 "src": "gemini-kore",
 "text": "divert"
+},
+"w/46-32.mp3": {
+"src": "kokoro",
+"text": "directions",
+"voice": "af_heart"
 },
 "w/46-33.mp3": {
 "from": "/audio/l6/370.mp3",
@@ -14844,10 +15769,25 @@
 "src": "gemini-kore",
 "text": "gas station"
 },
+"w/46-35.mp3": {
+"src": "kokoro",
+"text": "flat tire",
+"voice": "af_heart"
+},
 "w/46-36.mp3": {
 "from": "/audio/l9/452.mp3",
 "src": "gemini-kore",
 "text": "break down"
+},
+"w/46-37.mp3": {
+"src": "kokoro",
+"text": "congested",
+"voice": "af_heart"
+},
+"w/46-38.mp3": {
+"src": "kokoro",
+"text": "speed limit",
+"voice": "af_heart"
 },
 "w/46-39.mp3": {
 "from": "/audio/l10/475.mp3",
@@ -14859,10 +15799,35 @@
 "src": "gemini-kore",
 "text": "drop off"
 },
+"w/47-01.mp3": {
+"src": "kokoro",
+"text": "lease agreement",
+"voice": "af_heart"
+},
+"w/47-02.mp3": {
+"src": "kokoro",
+"text": "building manager",
+"voice": "af_heart"
+},
+"w/47-03.mp3": {
+"src": "kokoro",
+"text": "common area",
+"voice": "af_heart"
+},
 "w/47-04.mp3": {
 "from": "/audio/l2/320.mp3",
 "src": "gemini-kore",
 "text": "ladder"
+},
+"w/47-05.mp3": {
+"src": "kokoro",
+"text": "wheelbarrow",
+"voice": "af_heart"
+},
+"w/47-06.mp3": {
+"src": "kokoro",
+"text": "awning",
+"voice": "af_heart"
 },
 "w/47-07.mp3": {
 "from": "/audio/l7/157.mp3",
@@ -14874,10 +15839,25 @@
 "src": "gemini-kore",
 "text": "site"
 },
+"w/47-09.mp3": {
+"src": "kokoro",
+"text": "location",
+"voice": "af_heart"
+},
 "w/47-10.mp3": {
 "from": "/audio/l4/229.mp3",
 "src": "gemini-kore",
 "text": "nearby"
+},
+"w/47-11.mp3": {
+"src": "kokoro",
+"text": "pillar",
+"voice": "af_heart"
+},
+"w/47-12.mp3": {
+"src": "kokoro",
+"text": "vacate",
+"voice": "af_heart"
 },
 "w/47-13.mp3": {
 "from": "/audio/l12/9.mp3",
@@ -14888,6 +15868,16 @@
 "from": "/audio/l15/444.mp3",
 "src": "gemini-kore",
 "text": "rental"
+},
+"w/47-15.mp3": {
+"src": "kokoro",
+"text": "agent",
+"voice": "af_heart"
+},
+"w/47-16.mp3": {
+"src": "kokoro",
+"text": "housing",
+"voice": "af_heart"
 },
 "w/47-17.mp3": {
 "from": "/audio/l8/276.mp3",
@@ -14919,10 +15909,30 @@
 "src": "gemini-kore",
 "text": "rural"
 },
+"w/47-23.mp3": {
+"src": "kokoro",
+"text": "outskirts",
+"voice": "af_heart"
+},
+"w/47-24.mp3": {
+"src": "kokoro",
+"text": "furnished",
+"voice": "af_heart"
+},
+"w/47-25.mp3": {
+"src": "kokoro",
+"text": "appliance",
+"voice": "af_heart"
+},
 "w/47-26.mp3": {
 "from": "/audio/l11/371.mp3",
 "src": "gemini-kore",
 "text": "fixture"
+},
+"w/47-27.mp3": {
+"src": "kokoro",
+"text": "surveyor",
+"voice": "af_heart"
 },
 "w/47-28.mp3": {
 "from": "/audio/l2/128.mp3",
@@ -14949,10 +15959,20 @@
 "src": "gemini-kore",
 "text": "staircase"
 },
+"w/47-33.mp3": {
+"src": "kokoro",
+"text": "lessee",
+"voice": "af_heart"
+},
 "w/47-34.mp3": {
 "from": "/audio/l3/425.mp3",
 "src": "gemini-kore",
 "text": "fence"
+},
+"w/47-35.mp3": {
+"src": "kokoro",
+"text": "mixed-use",
+"voice": "af_heart"
 },
 "w/47-36.mp3": {
 "from": "/audio/l2/124.mp3",
@@ -14964,6 +15984,11 @@
 "src": "gemini-kore",
 "text": "foundation"
 },
+"w/47-38.mp3": {
+"src": "kokoro",
+"text": "scaffolding",
+"voice": "af_heart"
+},
 "w/47-39.mp3": {
 "from": "/audio/l18/91.mp3",
 "src": "gemini-kore",
@@ -14974,10 +15999,35 @@
 "src": "gemini-kore",
 "text": "restore"
 },
+"w/48-01.mp3": {
+"src": "kokoro",
+"text": "data entry",
+"voice": "af_heart"
+},
+"w/48-02.mp3": {
+"src": "kokoro",
+"text": "intranet",
+"voice": "af_heart"
+},
+"w/48-03.mp3": {
+"src": "kokoro",
+"text": "shared drive",
+"voice": "af_heart"
+},
 "w/48-04.mp3": {
 "from": "/audio/l13/438.mp3",
 "src": "gemini-kore",
 "text": "monitor"
+},
+"w/48-05.mp3": {
+"src": "kokoro",
+"text": "software update",
+"voice": "af_heart"
+},
+"w/48-06.mp3": {
+"src": "kokoro",
+"text": "error message",
+"voice": "af_heart"
 },
 "w/48-07.mp3": {
 "from": "/audio/l7/471.mp3",
@@ -15004,10 +16054,30 @@
 "src": "gemini-kore",
 "text": "hardware"
 },
+"w/48-12.mp3": {
+"src": "kokoro",
+"text": "passcode",
+"voice": "af_heart"
+},
+"w/48-13.mp3": {
+"src": "kokoro",
+"text": "bug",
+"voice": "af_heart"
+},
+"w/48-14.mp3": {
+"src": "kokoro",
+"text": "portal",
+"voice": "af_heart"
+},
 "w/48-15.mp3": {
 "from": "/audio/l3/16.mp3",
 "src": "gemini-kore",
 "text": "cloud"
+},
+"w/48-16.mp3": {
+"src": "kokoro",
+"text": "corrupted",
+"voice": "af_heart"
 },
 "w/48-17.mp3": {
 "from": "/audio/l7/425.mp3",
@@ -15039,6 +16109,11 @@
 "src": "gemini-kore",
 "text": "notification"
 },
+"w/48-23.mp3": {
+"src": "kokoro",
+"text": "diagnostic",
+"voice": "af_heart"
+},
 "w/48-24.mp3": {
 "from": "/audio/l6/310.mp3",
 "src": "gemini-kore",
@@ -15054,20 +16129,50 @@
 "src": "gemini-kore",
 "text": "plug in"
 },
+"w/48-27.mp3": {
+"src": "kokoro",
+"text": "workaround",
+"voice": "af_heart"
+},
 "w/48-28.mp3": {
 "from": "/audio/l17/232.mp3",
 "src": "gemini-kore",
 "text": "reinstall"
+},
+"w/48-29.mp3": {
+"src": "kokoro",
+"text": "shut down",
+"voice": "af_heart"
 },
 "w/48-30.mp3": {
 "from": "/audio/l7/495.mp3",
 "src": "gemini-kore",
 "text": "reboot"
 },
+"w/48-31.mp3": {
+"src": "kokoro",
+"text": "outage",
+"voice": "af_heart"
+},
 "w/48-32.mp3": {
 "from": "/audio/l4/300.mp3",
 "src": "gemini-kore",
 "text": "tablet"
+},
+"w/48-33.mp3": {
+"src": "kokoro",
+"text": "compatibility",
+"voice": "af_heart"
+},
+"w/48-34.mp3": {
+"src": "kokoro",
+"text": "IT department",
+"voice": "af_heart"
+},
+"w/48-35.mp3": {
+"src": "kokoro",
+"text": "administrator",
+"voice": "af_heart"
 },
 "w/48-36.mp3": {
 "from": "/audio/l6/129.mp3",
@@ -15084,30 +16189,120 @@
 "src": "gemini-kore",
 "text": "retrieve"
 },
+"w/48-39.mp3": {
+"src": "kokoro",
+"text": "fax",
+"voice": "af_heart"
+},
+"w/48-40.mp3": {
+"src": "kokoro",
+"text": "printout",
+"voice": "af_heart"
+},
 "w/49-01.mp3": {
 "from": "/audio/word/d644a9db4fbd05ed.mp3",
 "src": "gemini-kore",
 "text": "event"
+},
+"w/49-02.mp3": {
+"src": "kokoro",
+"text": "centennial",
+"voice": "af_heart"
+},
+"w/49-03.mp3": {
+"src": "kokoro",
+"text": "inauguration",
+"voice": "af_heart"
+},
+"w/49-04.mp3": {
+"src": "kokoro",
+"text": "breakout session",
+"voice": "af_heart"
+},
+"w/49-05.mp3": {
+"src": "kokoro",
+"text": "planner",
+"voice": "af_heart"
+},
+"w/49-06.mp3": {
+"src": "kokoro",
+"text": "convention center",
+"voice": "af_heart"
 },
 "w/49-07.mp3": {
 "from": "/audio/l3/112.mp3",
 "src": "gemini-kore",
 "text": "hold"
 },
+"w/49-08.mp3": {
+"src": "kokoro",
+"text": "send-off",
+"voice": "af_heart"
+},
+"w/49-09.mp3": {
+"src": "kokoro",
+"text": "presenter",
+"voice": "af_heart"
+},
+"w/49-10.mp3": {
+"src": "kokoro",
+"text": "moderator",
+"voice": "af_heart"
+},
+"w/49-11.mp3": {
+"src": "kokoro",
+"text": "panelist",
+"voice": "af_heart"
+},
+"w/49-12.mp3": {
+"src": "kokoro",
+"text": "entry",
+"voice": "af_heart"
+},
 "w/49-13.mp3": {
 "from": "/audio/l13/303.mp3",
 "src": "gemini-kore",
 "text": "registration"
+},
+"w/49-14.mp3": {
+"src": "kokoro",
+"text": "name tag",
+"voice": "af_heart"
 },
 "w/49-15.mp3": {
 "from": "/audio/l6/69.mp3",
 "src": "gemini-kore",
 "text": "badge"
 },
+"w/49-16.mp3": {
+"src": "kokoro",
+"text": "ballroom",
+"voice": "af_heart"
+},
 "w/49-17.mp3": {
 "from": "/audio/l5/279.mp3",
 "src": "gemini-kore",
 "text": "auditorium"
+},
+"w/49-18.mp3": {
+"src": "kokoro",
+"text": "luncheon",
+"voice": "af_heart"
+},
+"w/49-19.mp3": {
+"src": "kokoro",
+"text": "stage",
+"voice": "af_heart"
+},
+"w/49-20.mp3": {
+"src": "kokoro",
+"text": "podium",
+"voice": "af_heart"
+},
+"w/49-21.mp3": {
+"src": "kokoro",
+"text": "decoration",
+"voice": "af_heart"
 },
 "w/49-22.mp3": {
 "from": "/audio/l4/89.mp3",
@@ -15124,15 +16319,150 @@
 "src": "gemini-kore",
 "text": "crowded"
 },
+"w/49-25.mp3": {
+"src": "kokoro",
+"text": "networking",
+"voice": "af_heart"
+},
+"w/49-26.mp3": {
+"src": "kokoro",
+"text": "opening ceremony",
+"voice": "af_heart"
+},
+"w/49-27.mp3": {
+"src": "kokoro",
+"text": "closing remarks",
+"voice": "af_heart"
+},
+"w/49-28.mp3": {
+"src": "kokoro",
+"text": "inaugural",
+"voice": "af_heart"
+},
+"w/49-29.mp3": {
+"src": "kokoro",
+"text": "grand opening",
+"voice": "af_heart"
+},
+"w/49-30.mp3": {
+"src": "kokoro",
+"text": "expo",
+"voice": "af_heart"
+},
+"w/49-31.mp3": {
+"src": "kokoro",
+"text": "trade fair",
+"voice": "af_heart"
+},
+"w/49-32.mp3": {
+"src": "kokoro",
+"text": "coordinator",
+"voice": "af_heart"
+},
+"w/49-33.mp3": {
+"src": "kokoro",
+"text": "on-site",
+"voice": "af_heart"
+},
+"w/49-34.mp3": {
+"src": "kokoro",
+"text": "off-site",
+"voice": "af_heart"
+},
+"w/49-35.mp3": {
+"src": "kokoro",
+"text": "honoree",
+"voice": "af_heart"
+},
+"w/49-36.mp3": {
+"src": "kokoro",
+"text": "acceptance speech",
+"voice": "af_heart"
+},
+"w/49-37.mp3": {
+"src": "kokoro",
+"text": "ribbon-cutting",
+"voice": "af_heart"
+},
+"w/49-38.mp3": {
+"src": "kokoro",
+"text": "retreat",
+"voice": "af_heart"
+},
+"w/49-39.mp3": {
+"src": "kokoro",
+"text": "emcee",
+"voice": "af_heart"
+},
+"w/49-40.mp3": {
+"src": "kokoro",
+"text": "festivities",
+"voice": "af_heart"
+},
+"w/50-01.mp3": {
+"src": "kokoro",
+"text": "lecture hall",
+"voice": "af_heart"
+},
+"w/50-02.mp3": {
+"src": "kokoro",
+"text": "financial aid",
+"voice": "af_heart"
+},
+"w/50-03.mp3": {
+"src": "kokoro",
+"text": "bachelor's degree",
+"voice": "af_heart"
+},
 "w/50-04.mp3": {
 "from": "/audio/l5/300.mp3",
 "src": "gemini-kore",
 "text": "academic year"
 },
+"w/50-05.mp3": {
+"src": "kokoro",
+"text": "know-how",
+"voice": "af_heart"
+},
+"w/50-06.mp3": {
+"src": "kokoro",
+"text": "course",
+"voice": "af_heart"
+},
+"w/50-07.mp3": {
+"src": "kokoro",
+"text": "learning curve",
+"voice": "af_heart"
+},
+"w/50-08.mp3": {
+"src": "kokoro",
+"text": "training session",
+"voice": "af_heart"
+},
+"w/50-09.mp3": {
+"src": "kokoro",
+"text": "eye-opening",
+"voice": "af_heart"
+},
+"w/50-10.mp3": {
+"src": "kokoro",
+"text": "instructive",
+"voice": "af_heart"
+},
 "w/50-11.mp3": {
 "from": "/audio/l5/280.mp3",
 "src": "gemini-kore",
 "text": "education"
+},
+"w/50-12.mp3": {
+"src": "kokoro",
+"text": "educational",
+"voice": "af_heart"
+},
+"w/50-13.mp3": {
+"src": "kokoro",
+"text": "accreditation",
+"voice": "af_heart"
 },
 "w/50-14.mp3": {
 "from": "/audio/l2/151.mp3",
@@ -15144,10 +16474,25 @@
 "src": "gemini-kore",
 "text": "thesis"
 },
+"w/50-16.mp3": {
+"src": "kokoro",
+"text": "enlightening",
+"voice": "af_heart"
+},
+"w/50-17.mp3": {
+"src": "kokoro",
+"text": "upskilling",
+"voice": "af_heart"
+},
 "w/50-18.mp3": {
 "from": "/audio/l3/321.mp3",
 "src": "gemini-kore",
 "text": "score"
+},
+"w/50-19.mp3": {
+"src": "kokoro",
+"text": "registrar",
+"voice": "af_heart"
 },
 "w/50-20.mp3": {
 "from": "/audio/l13/355.mp3",
@@ -15169,6 +16514,11 @@
 "src": "gemini-kore",
 "text": "campus"
 },
+"w/50-24.mp3": {
+"src": "kokoro",
+"text": "master's degree",
+"voice": "af_heart"
+},
 "w/50-25.mp3": {
 "from": "/audio/l3/319.mp3",
 "src": "gemini-kore",
@@ -15189,6 +16539,11 @@
 "src": "gemini-kore",
 "text": "learner"
 },
+"w/50-29.mp3": {
+"src": "kokoro",
+"text": "trainer",
+"voice": "af_heart"
+},
 "w/50-30.mp3": {
 "from": "/audio/l13/46.mp3",
 "src": "gemini-kore",
@@ -15198,6 +16553,11 @@
 "from": "/audio/l12/36.mp3",
 "src": "gemini-kore",
 "text": "comprehend"
+},
+"w/50-32.mp3": {
+"src": "kokoro",
+"text": "handbook",
+"voice": "af_heart"
 },
 "w/50-33.mp3": {
 "from": "/audio/l5/367.mp3",
@@ -15244,6 +16604,26 @@
 "src": "gemini-kore",
 "text": "audition"
 },
+"w/51-02.mp3": {
+"src": "kokoro",
+"text": "symphony",
+"voice": "af_heart"
+},
+"w/51-03.mp3": {
+"src": "kokoro",
+"text": "book signing",
+"voice": "af_heart"
+},
+"w/51-04.mp3": {
+"src": "kokoro",
+"text": "farmers market",
+"voice": "af_heart"
+},
+"w/51-05.mp3": {
+"src": "kokoro",
+"text": "recital",
+"voice": "af_heart"
+},
 "w/51-06.mp3": {
 "from": "/audio/l8/531.mp3",
 "src": "gemini-kore",
@@ -15254,10 +16634,25 @@
 "src": "gemini-kore",
 "text": "genre"
 },
+"w/51-08.mp3": {
+"src": "kokoro",
+"text": "film festival",
+"voice": "af_heart"
+},
 "w/51-09.mp3": {
 "from": "/audio/l4/76.mp3",
 "src": "gemini-kore",
 "text": "composer"
+},
+"w/51-10.mp3": {
+"src": "kokoro",
+"text": "pastime",
+"voice": "af_heart"
+},
+"w/51-11.mp3": {
+"src": "kokoro",
+"text": "box office",
+"voice": "af_heart"
 },
 "w/51-12.mp3": {
 "from": "/audio/l4/502.mp3",
@@ -15268,6 +16663,31 @@
 "from": "/audio/l4/571.mp3",
 "src": "gemini-kore",
 "text": "tournament"
+},
+"w/51-14.mp3": {
+"src": "kokoro",
+"text": "standing ovation",
+"voice": "af_heart"
+},
+"w/51-15.mp3": {
+"src": "kokoro",
+"text": "ensemble",
+"voice": "af_heart"
+},
+"w/51-16.mp3": {
+"src": "kokoro",
+"text": "season ticket",
+"voice": "af_heart"
+},
+"w/51-17.mp3": {
+"src": "kokoro",
+"text": "matinee",
+"voice": "af_heart"
+},
+"w/51-18.mp3": {
+"src": "kokoro",
+"text": "screening",
+"voice": "af_heart"
 },
 "w/51-19.mp3": {
 "from": "/audio/l3/567.mp3",
@@ -15339,10 +16759,20 @@
 "src": "gemini-kore",
 "text": "donation"
 },
+"w/51-33.mp3": {
+"src": "kokoro",
+"text": "troupe",
+"voice": "af_heart"
+},
 "w/51-34.mp3": {
 "from": "/audio/l12/254.mp3",
 "src": "gemini-kore",
 "text": "civic"
+},
+"w/51-35.mp3": {
+"src": "kokoro",
+"text": "town hall",
+"voice": "af_heart"
 },
 "w/51-36.mp3": {
 "from": "/audio/l4/115.mp3",
@@ -15369,25 +16799,105 @@
 "src": "gemini-kore",
 "text": "municipality"
 },
+"w/52-01.mp3": {
+"src": "kokoro",
+"text": "preexisting condition",
+"voice": "af_heart"
+},
 "w/52-02.mp3": {
 "from": "/audio/l12/441.mp3",
 "src": "gemini-kore",
 "text": "diagnosis"
+},
+"w/52-03.mp3": {
+"src": "kokoro",
+"text": "medical records",
+"voice": "af_heart"
+},
+"w/52-04.mp3": {
+"src": "kokoro",
+"text": "consent form",
+"voice": "af_heart"
+},
+"w/52-05.mp3": {
+"src": "kokoro",
+"text": "waiting room",
+"voice": "af_heart"
 },
 "w/52-06.mp3": {
 "from": "/audio/l15/247.mp3",
 "src": "gemini-kore",
 "text": "prognosis"
 },
+"w/52-07.mp3": {
+"src": "kokoro",
+"text": "general practitioner",
+"voice": "af_heart"
+},
+"w/52-08.mp3": {
+"src": "kokoro",
+"text": "medical leave",
+"voice": "af_heart"
+},
+"w/52-09.mp3": {
+"src": "kokoro",
+"text": "pediatrician",
+"voice": "af_heart"
+},
+"w/52-10.mp3": {
+"src": "kokoro",
+"text": "dermatologist",
+"voice": "af_heart"
+},
+"w/52-11.mp3": {
+"src": "kokoro",
+"text": "optometrist",
+"voice": "af_heart"
+},
+"w/52-12.mp3": {
+"src": "kokoro",
+"text": "co-pay",
+"voice": "af_heart"
+},
+"w/52-13.mp3": {
+"src": "kokoro",
+"text": "out-of-pocket",
+"voice": "af_heart"
+},
+"w/52-14.mp3": {
+"src": "kokoro",
+"text": "in-network",
+"voice": "af_heart"
+},
 "w/52-15.mp3": {
 "from": "/audio/l9/163.mp3",
 "src": "gemini-kore",
 "text": "health insurance"
 },
+"w/52-16.mp3": {
+"src": "kokoro",
+"text": "insured",
+"voice": "af_heart"
+},
 "w/52-17.mp3": {
 "from": "/audio/l15/467.mp3",
 "src": "gemini-kore",
 "text": "insurer"
+},
+"w/52-18.mp3": {
+"src": "kokoro",
+"text": "policyholder",
+"voice": "af_heart"
+},
+"w/52-19.mp3": {
+"src": "kokoro",
+"text": "physical",
+"voice": "af_heart"
+},
+"w/52-20.mp3": {
+"src": "kokoro",
+"text": "mental",
+"voice": "af_heart"
 },
 "w/52-21.mp3": {
 "from": "/audio/l12/442.mp3",
@@ -15424,25 +16934,60 @@
 "src": "gemini-kore",
 "text": "fever"
 },
+"w/52-28.mp3": {
+"src": "kokoro",
+"text": "provider",
+"voice": "af_heart"
+},
 "w/52-29.mp3": {
 "from": "/audio/l4/293.mp3",
 "src": "gemini-kore",
 "text": "surgery"
+},
+"w/52-30.mp3": {
+"src": "kokoro",
+"text": "emergency room",
+"voice": "af_heart"
+},
+"w/52-31.mp3": {
+"src": "kokoro",
+"text": "sanitize",
+"voice": "af_heart"
 },
 "w/52-32.mp3": {
 "from": "/audio/l4/299.mp3",
 "src": "gemini-kore",
 "text": "dose"
 },
+"w/52-33.mp3": {
+"src": "kokoro",
+"text": "nutritionist",
+"voice": "af_heart"
+},
+"w/52-34.mp3": {
+"src": "kokoro",
+"text": "counseling",
+"voice": "af_heart"
+},
 "w/52-35.mp3": {
 "from": "/audio/l13/584.mp3",
 "src": "gemini-kore",
 "text": "supplement"
 },
+"w/52-36.mp3": {
+"src": "kokoro",
+"text": "over-the-counter",
+"voice": "af_heart"
+},
 "w/52-37.mp3": {
 "from": "/audio/l4/266.mp3",
 "src": "gemini-kore",
 "text": "drugstore"
+},
+"w/52-38.mp3": {
+"src": "kokoro",
+"text": "pharmaceutical",
+"voice": "af_heart"
 },
 "w/52-39.mp3": {
 "from": "/audio/l13/536.mp3",
@@ -15459,6 +17004,11 @@
 "src": "gemini-kore",
 "text": "environment"
 },
+"w/53-02.mp3": {
+"src": "kokoro",
+"text": "environmental",
+"voice": "af_heart"
+},
 "w/53-03.mp3": {
 "from": "/audio/l7/511.mp3",
 "src": "gemini-kore",
@@ -15473,6 +17023,16 @@
 "from": "/audio/l13/470.mp3",
 "src": "gemini-kore",
 "text": "harness"
+},
+"w/53-06.mp3": {
+"src": "kokoro",
+"text": "handrail",
+"voice": "af_heart"
+},
+"w/53-07.mp3": {
+"src": "kokoro",
+"text": "risk assessment",
+"voice": "af_heart"
 },
 "w/53-08.mp3": {
 "from": "/audio/l5/508.mp3",
@@ -15494,6 +17054,11 @@
 "src": "gemini-kore",
 "text": "icy"
 },
+"w/53-12.mp3": {
+"src": "kokoro",
+"text": "fire hazard",
+"voice": "af_heart"
+},
 "w/53-13.mp3": {
 "from": "/audio/l4/544.mp3",
 "src": "gemini-kore",
@@ -15504,15 +17069,35 @@
 "src": "gemini-kore",
 "text": "natural disaster"
 },
+"w/53-15.mp3": {
+"src": "kokoro",
+"text": "assembly point",
+"voice": "af_heart"
+},
 "w/53-16.mp3": {
 "from": "/audio/l4/537.mp3",
 "src": "gemini-kore",
 "text": "risk"
 },
+"w/53-17.mp3": {
+"src": "kokoro",
+"text": "electrical",
+"voice": "af_heart"
+},
+"w/53-18.mp3": {
+"src": "kokoro",
+"text": "protection",
+"voice": "af_heart"
+},
 "w/53-19.mp3": {
 "from": "/audio/l8/25.mp3",
 "src": "gemini-kore",
 "text": "prevent"
+},
+"w/53-20.mp3": {
+"src": "kokoro",
+"text": "flammable",
+"voice": "af_heart"
 },
 "w/53-21.mp3": {
 "from": "/audio/l12/498.mp3",
@@ -15569,6 +17154,11 @@
 "src": "gemini-kore",
 "text": "litter"
 },
+"w/53-32.mp3": {
+"src": "kokoro",
+"text": "disposal",
+"voice": "af_heart"
+},
 "w/53-33.mp3": {
 "from": "/audio/l8/243.mp3",
 "src": "gemini-kore",
@@ -15583,6 +17173,11 @@
 "from": "/audio/l5/493.mp3",
 "src": "gemini-kore",
 "text": "fossil fuel"
+},
+"w/53-36.mp3": {
+"src": "kokoro",
+"text": "power plant",
+"voice": "af_heart"
 },
 "w/53-37.mp3": {
 "from": "/audio/l16/450.mp3",
@@ -15604,10 +17199,20 @@
 "src": "gemini-kore",
 "text": "spill"
 },
+"w/54-01.mp3": {
+"src": "kokoro",
+"text": "privacy policy",
+"voice": "af_heart"
+},
 "w/54-02.mp3": {
 "from": "/audio/l10/337.mp3",
 "src": "gemini-kore",
 "text": "conflict of interest"
+},
+"w/54-03.mp3": {
+"src": "kokoro",
+"text": "due diligence",
+"voice": "af_heart"
 },
 "w/54-04.mp3": {
 "from": "/audio/l11/96.mp3",
@@ -15619,15 +17224,30 @@
 "src": "gemini-kore",
 "text": "illegal"
 },
+"w/54-06.mp3": {
+"src": "kokoro",
+"text": "noncompliance",
+"voice": "af_heart"
+},
 "w/54-07.mp3": {
 "from": "/audio/l12/364.mp3",
 "src": "gemini-kore",
 "text": "regulate"
 },
+"w/54-08.mp3": {
+"src": "kokoro",
+"text": "regulatory",
+"voice": "af_heart"
+},
 "w/54-09.mp3": {
 "from": "/audio/l3/585.mp3",
 "src": "gemini-kore",
 "text": "require"
+},
+"w/54-10.mp3": {
+"src": "kokoro",
+"text": "waiver",
+"voice": "af_heart"
 },
 "w/54-11.mp3": {
 "from": "/audio/l1/419.mp3",
@@ -15638,6 +17258,11 @@
 "from": "/audio/l8/429.mp3",
 "src": "gemini-kore",
 "text": "approval"
+},
+"w/54-13.mp3": {
+"src": "kokoro",
+"text": "agency",
+"voice": "af_heart"
 },
 "w/54-14.mp3": {
 "from": "/audio/l13/420.mp3",
@@ -15653,6 +17278,11 @@
 "from": "/audio/l6/167.mp3",
 "src": "gemini-kore",
 "text": "dress code"
+},
+"w/54-17.mp3": {
+"src": "kokoro",
+"text": "ethics",
+"voice": "af_heart"
 },
 "w/54-18.mp3": {
 "from": "/audio/l14/28.mp3",
@@ -15679,6 +17309,11 @@
 "src": "gemini-kore",
 "text": "unethical"
 },
+"w/54-23.mp3": {
+"src": "kokoro",
+"text": "sue",
+"voice": "af_heart"
+},
 "w/54-24.mp3": {
 "from": "/audio/l6/469.mp3",
 "src": "gemini-kore",
@@ -15688,6 +17323,11 @@
 "from": "/audio/l9/35.mp3",
 "src": "gemini-kore",
 "text": "evidence"
+},
+"w/54-26.mp3": {
+"src": "kokoro",
+"text": "confidentiality",
+"voice": "af_heart"
 },
 "w/54-27.mp3": {
 "from": "/audio/l15/64.mp3",
@@ -15759,6 +17399,16 @@
 "src": "gemini-kore",
 "text": "enforcement"
 },
+"w/55-01.mp3": {
+"src": "kokoro",
+"text": "authorization",
+"voice": "af_heart"
+},
+"w/55-02.mp3": {
+"src": "kokoro",
+"text": "unauthorized",
+"voice": "af_heart"
+},
 "w/55-03.mp3": {
 "from": "/audio/l15/458.mp3",
 "src": "gemini-kore",
@@ -15774,10 +17424,35 @@
 "src": "gemini-kore",
 "text": "debt"
 },
+"w/55-06.mp3": {
+"src": "kokoro",
+"text": "repay",
+"voice": "af_heart"
+},
+"w/55-07.mp3": {
+"src": "kokoro",
+"text": "repayment",
+"voice": "af_heart"
+},
+"w/55-08.mp3": {
+"src": "kokoro",
+"text": "safekeeping",
+"voice": "af_heart"
+},
 "w/55-09.mp3": {
 "from": "/audio/l12/245.mp3",
 "src": "gemini-kore",
 "text": "banking"
+},
+"w/55-10.mp3": {
+"src": "kokoro",
+"text": "money order",
+"voice": "af_heart"
+},
+"w/55-11.mp3": {
+"src": "kokoro",
+"text": "cashier's check",
+"voice": "af_heart"
 },
 "w/55-12.mp3": {
 "from": "/audio/l11/257.mp3",
@@ -15799,6 +17474,21 @@
 "src": "gemini-kore",
 "text": "credit score"
 },
+"w/55-16.mp3": {
+"src": "kokoro",
+"text": "borrower",
+"voice": "af_heart"
+},
+"w/55-17.mp3": {
+"src": "kokoro",
+"text": "lender",
+"voice": "af_heart"
+},
+"w/55-18.mp3": {
+"src": "kokoro",
+"text": "lending",
+"voice": "af_heart"
+},
 "w/55-19.mp3": {
 "from": "/audio/l13/448.mp3",
 "src": "gemini-kore",
@@ -15809,15 +17499,65 @@
 "src": "gemini-kore",
 "text": "deny"
 },
+"w/55-21.mp3": {
+"src": "kokoro",
+"text": "mobile banking",
+"voice": "af_heart"
+},
 "w/55-22.mp3": {
 "from": "/audio/l5/85.mp3",
 "src": "gemini-kore",
 "text": "settle"
 },
+"w/55-23.mp3": {
+"src": "kokoro",
+"text": "nonrefundable",
+"voice": "af_heart"
+},
+"w/55-24.mp3": {
+"src": "kokoro",
+"text": "refundable",
+"voice": "af_heart"
+},
 "w/55-25.mp3": {
 "from": "/audio/l17/97.mp3",
 "src": "gemini-kore",
 "text": "defer"
+},
+"w/55-26.mp3": {
+"src": "kokoro",
+"text": "grace period",
+"voice": "af_heart"
+},
+"w/55-27.mp3": {
+"src": "kokoro",
+"text": "direct deposit",
+"voice": "af_heart"
+},
+"w/55-28.mp3": {
+"src": "kokoro",
+"text": "withdrawal",
+"voice": "af_heart"
+},
+"w/55-29.mp3": {
+"src": "kokoro",
+"text": "insufficient funds",
+"voice": "af_heart"
+},
+"w/55-30.mp3": {
+"src": "kokoro",
+"text": "contactless",
+"voice": "af_heart"
+},
+"w/55-31.mp3": {
+"src": "kokoro",
+"text": "credit union",
+"voice": "af_heart"
+},
+"w/55-32.mp3": {
+"src": "kokoro",
+"text": "checkbook",
+"voice": "af_heart"
 },
 "w/55-33.mp3": {
 "from": "/audio/l15/427.mp3",
@@ -15828,6 +17568,16 @@
 "from": "/audio/l10/7.mp3",
 "src": "gemini-kore",
 "text": "convert"
+},
+"w/55-35.mp3": {
+"src": "kokoro",
+"text": "conversion",
+"voice": "af_heart"
+},
+"w/55-36.mp3": {
+"src": "kokoro",
+"text": "payee",
+"voice": "af_heart"
 },
 "w/55-37.mp3": {
 "from": "/audio/l15/448.mp3",
@@ -15844,6 +17594,21 @@
 "src": "gemini-kore",
 "text": "verification"
 },
+"w/55-40.mp3": {
+"src": "kokoro",
+"text": "cardholder",
+"voice": "af_heart"
+},
+"w/56-01.mp3": {
+"src": "kokoro",
+"text": "trade publication",
+"voice": "af_heart"
+},
+"w/56-02.mp3": {
+"src": "kokoro",
+"text": "media relations",
+"voice": "af_heart"
+},
 "w/56-03.mp3": {
 "from": "/audio/l13/409.mp3",
 "src": "gemini-kore",
@@ -15853,6 +17618,11 @@
 "from": "/audio/l14/317.mp3",
 "src": "gemini-kore",
 "text": "synopsis"
+},
+"w/56-05.mp3": {
+"src": "kokoro",
+"text": "footage",
+"voice": "af_heart"
 },
 "w/56-06.mp3": {
 "from": "/audio/l12/319.mp3",
@@ -15864,6 +17634,11 @@
 "src": "gemini-kore",
 "text": "press"
 },
+"w/56-08.mp3": {
+"src": "kokoro",
+"text": "byline",
+"voice": "af_heart"
+},
 "w/56-09.mp3": {
 "from": "/audio/l13/284.mp3",
 "src": "gemini-kore",
@@ -15874,10 +17649,25 @@
 "src": "gemini-kore",
 "text": "journalism"
 },
+"w/56-11.mp3": {
+"src": "kokoro",
+"text": "publishing",
+"voice": "af_heart"
+},
 "w/56-12.mp3": {
 "from": "/audio/l7/445.mp3",
 "src": "gemini-kore",
 "text": "column"
+},
+"w/56-13.mp3": {
+"src": "kokoro",
+"text": "cover story",
+"voice": "af_heart"
+},
+"w/56-14.mp3": {
+"src": "kokoro",
+"text": "front page",
+"voice": "af_heart"
 },
 "w/56-15.mp3": {
 "from": "/audio/l6/355.mp3",
@@ -15894,6 +17684,16 @@
 "src": "gemini-kore",
 "text": "source"
 },
+"w/56-18.mp3": {
+"src": "kokoro",
+"text": "broadcaster",
+"voice": "af_heart"
+},
+"w/56-19.mp3": {
+"src": "kokoro",
+"text": "spotlight",
+"voice": "af_heart"
+},
 "w/56-20.mp3": {
 "from": "/audio/l4/219.mp3",
 "src": "gemini-kore",
@@ -15904,10 +17704,20 @@
 "src": "gemini-kore",
 "text": "anthology"
 },
+"w/56-22.mp3": {
+"src": "kokoro",
+"text": "co-author",
+"voice": "af_heart"
+},
 "w/56-23.mp3": {
 "from": "/audio/l6/257.mp3",
 "src": "gemini-kore",
 "text": "post"
+},
+"w/56-24.mp3": {
+"src": "kokoro",
+"text": "printing",
+"voice": "af_heart"
 },
 "w/56-25.mp3": {
 "from": "/audio/l14/15.mp3",
@@ -15924,15 +17734,30 @@
 "src": "gemini-kore",
 "text": "acclaim"
 },
+"w/56-28.mp3": {
+"src": "kokoro",
+"text": "best-selling",
+"voice": "af_heart"
+},
 "w/56-29.mp3": {
 "from": "/audio/l4/121.mp3",
 "src": "gemini-kore",
 "text": "novelist"
 },
+"w/56-30.mp3": {
+"src": "kokoro",
+"text": "high-profile",
+"voice": "af_heart"
+},
 "w/56-31.mp3": {
 "from": "/audio/l6/253.mp3",
 "src": "gemini-kore",
 "text": "volume"
+},
+"w/56-32.mp3": {
+"src": "kokoro",
+"text": "paperback",
+"voice": "af_heart"
 },
 "w/56-33.mp3": {
 "from": "/audio/l7/30.mp3",
@@ -15953,6 +17778,16 @@
 "from": "/audio/l13/313.mp3",
 "src": "gemini-kore",
 "text": "submission"
+},
+"w/56-37.mp3": {
+"src": "kokoro",
+"text": "editor-in-chief",
+"voice": "af_heart"
+},
+"w/56-38.mp3": {
+"src": "kokoro",
+"text": "typo",
+"voice": "af_heart"
 },
 "w/56-39.mp3": {
 "from": "/audio/l8/456.mp3",
@@ -16089,6 +17924,11 @@
 "src": "gemini-kore",
 "text": "impede"
 },
+"w/57-26.mp3": {
+"src": "kokoro",
+"text": "intend",
+"voice": "af_heart"
+},
 "w/57-27.mp3": {
 "from": "/audio/l7/24.mp3",
 "src": "gemini-kore",
@@ -16159,6 +17999,11 @@
 "src": "gemini-kore",
 "text": "undertake"
 },
+"w/58-01.mp3": {
+"src": "kokoro",
+"text": "consideration",
+"voice": "af_heart"
+},
 "w/58-02.mp3": {
 "from": "/audio/l14/54.mp3",
 "src": "gemini-kore",
@@ -16168,6 +18013,11 @@
 "from": "/audio/l16/11.mp3",
 "src": "gemini-kore",
 "text": "vulnerable"
+},
+"w/58-04.mp3": {
+"src": "kokoro",
+"text": "sole",
+"voice": "af_heart"
 },
 "w/58-05.mp3": {
 "from": "/audio/l8/103.mp3",
@@ -16194,6 +18044,16 @@
 "src": "gemini-kore",
 "text": "conducive"
 },
+"w/58-10.mp3": {
+"src": "kokoro",
+"text": "unforeseen",
+"voice": "af_heart"
+},
+"w/58-11.mp3": {
+"src": "kokoro",
+"text": "noteworthy",
+"voice": "af_heart"
+},
 "w/58-12.mp3": {
 "from": "/audio/l8/48.mp3",
 "src": "gemini-kore",
@@ -16204,10 +18064,20 @@
 "src": "gemini-kore",
 "text": "successful"
 },
+"w/58-14.mp3": {
+"src": "kokoro",
+"text": "pertinent",
+"voice": "af_heart"
+},
 "w/58-15.mp3": {
 "from": "/audio/l8/27.mp3",
 "src": "gemini-kore",
 "text": "opportunity"
+},
+"w/58-16.mp3": {
+"src": "kokoro",
+"text": "option",
+"voice": "af_heart"
 },
 "w/58-17.mp3": {
 "from": "/audio/l9/25.mp3",
@@ -16239,6 +18109,11 @@
 "src": "gemini-kore",
 "text": "significant"
 },
+"w/58-23.mp3": {
+"src": "kokoro",
+"text": "detailed",
+"voice": "af_heart"
+},
 "w/58-24.mp3": {
 "from": "/audio/l8/99.mp3",
 "src": "gemini-kore",
@@ -16249,10 +18124,20 @@
 "src": "gemini-kore",
 "text": "multiple"
 },
+"w/58-26.mp3": {
+"src": "kokoro",
+"text": "ongoing",
+"voice": "af_heart"
+},
 "w/58-27.mp3": {
 "from": "/audio/l12/228.mp3",
 "src": "gemini-kore",
 "text": "overall"
+},
+"w/58-28.mp3": {
+"src": "kokoro",
+"text": "concern",
+"voice": "af_heart"
 },
 "w/58-29.mp3": {
 "from": "/audio/l12/19.mp3",
@@ -16289,6 +18174,11 @@
 "src": "gemini-kore",
 "text": "prominent"
 },
+"w/58-36.mp3": {
+"src": "kokoro",
+"text": "reputable",
+"voice": "af_heart"
+},
 "w/58-37.mp3": {
 "from": "/audio/l16/9.mp3",
 "src": "gemini-kore",
@@ -16319,10 +18209,20 @@
 "src": "gemini-kore",
 "text": "although"
 },
+"w/59-03.mp3": {
+"src": "kokoro",
+"text": "though",
+"voice": "af_heart"
+},
 "w/59-04.mp3": {
 "from": "/audio/l5/546.mp3",
 "src": "gemini-kore",
 "text": "consistently"
+},
+"w/59-05.mp3": {
+"src": "kokoro",
+"text": "adequately",
+"voice": "af_heart"
 },
 "w/59-06.mp3": {
 "from": "/audio/l3/358.mp3",
@@ -16344,10 +18244,65 @@
 "src": "gemini-kore",
 "text": "whether"
 },
+"w/59-10.mp3": {
+"src": "kokoro",
+"text": "once",
+"voice": "af_heart"
+},
+"w/59-11.mp3": {
+"src": "kokoro",
+"text": "even though",
+"voice": "af_heart"
+},
+"w/59-12.mp3": {
+"src": "kokoro",
+"text": "as soon as",
+"voice": "af_heart"
+},
+"w/59-13.mp3": {
+"src": "kokoro",
+"text": "provided that",
+"voice": "af_heart"
+},
+"w/59-14.mp3": {
+"src": "kokoro",
+"text": "so that",
+"voice": "af_heart"
+},
+"w/59-15.mp3": {
+"src": "kokoro",
+"text": "in order to",
+"voice": "af_heart"
+},
+"w/59-16.mp3": {
+"src": "kokoro",
+"text": "as long as",
+"voice": "af_heart"
+},
+"w/59-17.mp3": {
+"src": "kokoro",
+"text": "rather than",
+"voice": "af_heart"
+},
 "w/59-18.mp3": {
 "from": "/audio/l8/431.mp3",
 "src": "gemini-kore",
 "text": "as a result"
+},
+"w/59-19.mp3": {
+"src": "kokoro",
+"text": "conveniently",
+"voice": "af_heart"
+},
+"w/59-20.mp3": {
+"src": "kokoro",
+"text": "sufficiently",
+"voice": "af_heart"
+},
+"w/59-21.mp3": {
+"src": "kokoro",
+"text": "reasonably",
+"voice": "af_heart"
 },
 "w/59-22.mp3": {
 "from": "/audio/l13/569.mp3",
@@ -16419,6 +18374,11 @@
 "src": "gemini-kore",
 "text": "nonetheless"
 },
+"w/59-36.mp3": {
+"src": "kokoro",
+"text": "besides",
+"voice": "af_heart"
+},
 "w/59-37.mp3": {
 "from": "/audio/l13/592.mp3",
 "src": "gemini-kore",
@@ -16429,15 +18389,100 @@
 "src": "gemini-kore",
 "text": "thoroughly"
 },
+"w/59-39.mp3": {
+"src": "kokoro",
+"text": "beforehand",
+"voice": "af_heart"
+},
+"w/59-40.mp3": {
+"src": "kokoro",
+"text": "thereby",
+"voice": "af_heart"
+},
 "w/60-01.mp3": {
 "from": "/audio/l5/150.mp3",
 "src": "gemini-kore",
 "text": "look forward to"
 },
+"w/60-02.mp3": {
+"src": "kokoro",
+"text": "make sure",
+"voice": "af_heart"
+},
+"w/60-03.mp3": {
+"src": "kokoro",
+"text": "take place",
+"voice": "af_heart"
+},
+"w/60-04.mp3": {
+"src": "kokoro",
+"text": "at one's discretion",
+"voice": "af_heart"
+},
+"w/60-05.mp3": {
+"src": "kokoro",
+"text": "in compliance with",
+"voice": "af_heart"
+},
 "w/60-06.mp3": {
 "from": "/audio/l5/143.mp3",
 "src": "gemini-kore",
 "text": "figure out"
+},
+"w/60-07.mp3": {
+"src": "kokoro",
+"text": "as well as",
+"voice": "af_heart"
+},
+"w/60-08.mp3": {
+"src": "kokoro",
+"text": "in the near future",
+"voice": "af_heart"
+},
+"w/60-09.mp3": {
+"src": "kokoro",
+"text": "in spite of",
+"voice": "af_heart"
+},
+"w/60-10.mp3": {
+"src": "kokoro",
+"text": "ahead of",
+"voice": "af_heart"
+},
+"w/60-11.mp3": {
+"src": "kokoro",
+"text": "except for",
+"voice": "af_heart"
+},
+"w/60-12.mp3": {
+"src": "kokoro",
+"text": "thanks to",
+"voice": "af_heart"
+},
+"w/60-13.mp3": {
+"src": "kokoro",
+"text": "in case of",
+"voice": "af_heart"
+},
+"w/60-14.mp3": {
+"src": "kokoro",
+"text": "in the event of",
+"voice": "af_heart"
+},
+"w/60-15.mp3": {
+"src": "kokoro",
+"text": "on account of",
+"voice": "af_heart"
+},
+"w/60-16.mp3": {
+"src": "kokoro",
+"text": "in exchange for",
+"voice": "af_heart"
+},
+"w/60-17.mp3": {
+"src": "kokoro",
+"text": "on display",
+"voice": "af_heart"
 },
 "w/60-18.mp3": {
 "from": "/audio/l8/587.mp3",
@@ -16449,10 +18494,70 @@
 "src": "gemini-kore",
 "text": "in the meantime"
 },
+"w/60-20.mp3": {
+"src": "kokoro",
+"text": "for the time being",
+"voice": "af_heart"
+},
+"w/60-21.mp3": {
+"src": "kokoro",
+"text": "in particular",
+"voice": "af_heart"
+},
 "w/60-22.mp3": {
 "from": "/audio/l8/218.mp3",
 "src": "gemini-kore",
 "text": "on average"
+},
+"w/60-23.mp3": {
+"src": "kokoro",
+"text": "at no extra cost",
+"voice": "af_heart"
+},
+"w/60-24.mp3": {
+"src": "kokoro",
+"text": "in writing",
+"voice": "af_heart"
+},
+"w/60-25.mp3": {
+"src": "kokoro",
+"text": "on hold",
+"voice": "af_heart"
+},
+"w/60-26.mp3": {
+"src": "kokoro",
+"text": "be responsible for",
+"voice": "af_heart"
+},
+"w/60-27.mp3": {
+"src": "kokoro",
+"text": "be aware of",
+"voice": "af_heart"
+},
+"w/60-28.mp3": {
+"src": "kokoro",
+"text": "be eligible for",
+"voice": "af_heart"
+},
+"w/60-29.mp3": {
+"src": "kokoro",
+"text": "be scheduled to",
+"voice": "af_heart"
+},
+"w/60-30.mp3": {
+"src": "kokoro",
+"text": "be required to",
+"voice": "af_heart"
+},
+"w/60-31.mp3": {
+"src": "kokoro",
+"text": "be supposed to",
+"voice": "af_heart"
+},
+"w/60-32.mp3": {
+"src": "kokoro",
+"text": "be equipped with",
+"voice": "af_heart"
 },
 "w/60-33.mp3": {
 "from": "/audio/l10/549.mp3",
@@ -16484,6 +18589,31 @@
 "src": "gemini-kore",
 "text": "keep up with"
 },
+"w/60-39.mp3": {
+"src": "kokoro",
+"text": "stop by",
+"voice": "af_heart"
+},
+"w/60-40.mp3": {
+"src": "kokoro",
+"text": "with the exception of",
+"voice": "af_heart"
+},
+"w/61-01.mp3": {
+"src": "kokoro",
+"text": "job seeker",
+"voice": "af_heart"
+},
+"w/61-02.mp3": {
+"src": "kokoro",
+"text": "new hire",
+"voice": "af_heart"
+},
+"w/61-03.mp3": {
+"src": "kokoro",
+"text": "recent graduate",
+"voice": "af_heart"
+},
 "w/61-04.mp3": {
 "from": "/audio/l2/407.mp3",
 "src": "gemini-kore",
@@ -16493,6 +18623,16 @@
 "from": "/audio/l5/524.mp3",
 "src": "gemini-kore",
 "text": "hourly"
+},
+"w/61-06.mp3": {
+"src": "kokoro",
+"text": "enclose",
+"voice": "af_heart"
+},
+"w/61-07.mp3": {
+"src": "kokoro",
+"text": "motivated",
+"voice": "af_heart"
 },
 "w/61-08.mp3": {
 "from": "/audio/l6/397.mp3",
@@ -16504,10 +18644,80 @@
 "src": "gemini-kore",
 "text": "enthusiasm"
 },
+"w/61-10.mp3": {
+"src": "kokoro",
+"text": "newcomer",
+"voice": "af_heart"
+},
+"w/61-11.mp3": {
+"src": "kokoro",
+"text": "staffing",
+"voice": "af_heart"
+},
+"w/61-12.mp3": {
+"src": "kokoro",
+"text": "short-staffed",
+"voice": "af_heart"
+},
+"w/61-13.mp3": {
+"src": "kokoro",
+"text": "understaffed",
+"voice": "af_heart"
+},
+"w/61-14.mp3": {
+"src": "kokoro",
+"text": "overqualified",
+"voice": "af_heart"
+},
+"w/61-15.mp3": {
+"src": "kokoro",
+"text": "headhunter",
+"voice": "af_heart"
+},
+"w/61-16.mp3": {
+"src": "kokoro",
+"text": "onboarding",
+"voice": "af_heart"
+},
+"w/61-17.mp3": {
+"src": "kokoro",
+"text": "shortlist",
+"voice": "af_heart"
+},
+"w/61-18.mp3": {
+"src": "kokoro",
+"text": "aspiring",
+"voice": "af_heart"
+},
+"w/61-19.mp3": {
+"src": "kokoro",
+"text": "background check",
+"voice": "af_heart"
+},
 "w/61-20.mp3": {
 "from": "/audio/l5/307.mp3",
 "src": "gemini-kore",
 "text": "transcript"
+},
+"w/61-21.mp3": {
+"src": "kokoro",
+"text": "desirable",
+"voice": "af_heart"
+},
+"w/61-22.mp3": {
+"src": "kokoro",
+"text": "self-motivated",
+"voice": "af_heart"
+},
+"w/61-23.mp3": {
+"src": "kokoro",
+"text": "detail-oriented",
+"voice": "af_heart"
+},
+"w/61-24.mp3": {
+"src": "kokoro",
+"text": "team player",
+"voice": "af_heart"
 },
 "w/61-25.mp3": {
 "from": "/audio/l5/580.mp3",
@@ -16519,6 +18729,11 @@
 "src": "gemini-kore",
 "text": "ambitious"
 },
+"w/61-27.mp3": {
+"src": "kokoro",
+"text": "multilingual",
+"voice": "af_heart"
+},
 "w/61-28.mp3": {
 "from": "/audio/l7/306.mp3",
 "src": "gemini-kore",
@@ -16529,10 +18744,35 @@
 "src": "gemini-kore",
 "text": "meticulous"
 },
+"w/61-30.mp3": {
+"src": "kokoro",
+"text": "competency",
+"voice": "af_heart"
+},
+"w/61-31.mp3": {
+"src": "kokoro",
+"text": "employment agency",
+"voice": "af_heart"
+},
+"w/61-32.mp3": {
+"src": "kokoro",
+"text": "placement",
+"voice": "af_heart"
+},
+"w/61-33.mp3": {
+"src": "kokoro",
+"text": "relocation package",
+"voice": "af_heart"
+},
 "w/61-34.mp3": {
 "from": "/audio/l17/581.mp3",
 "src": "gemini-kore",
 "text": "remuneration"
+},
+"w/61-35.mp3": {
+"src": "kokoro",
+"text": "stipend",
+"voice": "af_heart"
 },
 "w/61-36.mp3": {
 "from": "/audio/l15/571.mp3",
@@ -16559,10 +18799,60 @@
 "src": "gemini-kore",
 "text": "attrition"
 },
+"w/62-01.mp3": {
+"src": "kokoro",
+"text": "fill in for",
+"voice": "af_heart"
+},
+"w/62-02.mp3": {
+"src": "kokoro",
+"text": "cover for",
+"voice": "af_heart"
+},
+"w/62-03.mp3": {
+"src": "kokoro",
+"text": "hand over",
+"voice": "af_heart"
+},
+"w/62-04.mp3": {
+"src": "kokoro",
+"text": "report to",
+"voice": "af_heart"
+},
+"w/62-05.mp3": {
+"src": "kokoro",
+"text": "on leave",
+"voice": "af_heart"
+},
+"w/62-06.mp3": {
+"src": "kokoro",
+"text": "maternity leave",
+"voice": "af_heart"
+},
+"w/62-07.mp3": {
+"src": "kokoro",
+"text": "team member",
+"voice": "af_heart"
+},
+"w/62-08.mp3": {
+"src": "kokoro",
+"text": "farewell party",
+"voice": "af_heart"
+},
+"w/62-09.mp3": {
+"src": "kokoro",
+"text": "interpersonal skills",
+"voice": "af_heart"
+},
 "w/62-10.mp3": {
 "from": "/audio/l12/106.mp3",
 "src": "gemini-kore",
 "text": "dismiss"
+},
+"w/62-11.mp3": {
+"src": "kokoro",
+"text": "reassign",
+"voice": "af_heart"
 },
 "w/62-12.mp3": {
 "from": "/audio/l10/118.mp3",
@@ -16578,6 +18868,11 @@
 "from": "/audio/l16/116.mp3",
 "src": "gemini-kore",
 "text": "demote"
+},
+"w/62-15.mp3": {
+"src": "kokoro",
+"text": "dismissal",
+"voice": "af_heart"
 },
 "w/62-16.mp3": {
 "from": "/audio/l13/356.mp3",
@@ -16609,6 +18904,11 @@
 "src": "gemini-kore",
 "text": "benchmark"
 },
+"w/62-22.mp3": {
+"src": "kokoro",
+"text": "metric",
+"voice": "af_heart"
+},
 "w/62-23.mp3": {
 "from": "/audio/l6/514.mp3",
 "src": "gemini-kore",
@@ -16639,6 +18939,11 @@
 "src": "gemini-kore",
 "text": "commendable"
 },
+"w/62-29.mp3": {
+"src": "kokoro",
+"text": "tireless",
+"voice": "af_heart"
+},
 "w/62-30.mp3": {
 "from": "/audio/l8/516.mp3",
 "src": "gemini-kore",
@@ -16648,6 +18953,11 @@
 "from": "/audio/l11/327.mp3",
 "src": "gemini-kore",
 "text": "tenure"
+},
+"w/62-32.mp3": {
+"src": "kokoro",
+"text": "longtime",
+"voice": "af_heart"
 },
 "w/62-33.mp3": {
 "from": "/audio/l14/53.mp3",
@@ -16669,10 +18979,50 @@
 "src": "gemini-kore",
 "text": "liaison"
 },
+"w/62-37.mp3": {
+"src": "kokoro",
+"text": "team-building",
+"voice": "af_heart"
+},
+"w/62-38.mp3": {
+"src": "kokoro",
+"text": "flextime",
+"voice": "af_heart"
+},
+"w/62-39.mp3": {
+"src": "kokoro",
+"text": "perk",
+"voice": "af_heart"
+},
+"w/62-40.mp3": {
+"src": "kokoro",
+"text": "in-house",
+"voice": "af_heart"
+},
+"w/63-01.mp3": {
+"src": "kokoro",
+"text": "intercom",
+"voice": "af_heart"
+},
 "w/63-02.mp3": {
 "from": "/audio/l6/64.mp3",
 "src": "gemini-kore",
 "text": "errand"
+},
+"w/63-03.mp3": {
+"src": "kokoro",
+"text": "run late",
+"voice": "af_heart"
+},
+"w/63-04.mp3": {
+"src": "kokoro",
+"text": "tied up",
+"voice": "af_heart"
+},
+"w/63-05.mp3": {
+"src": "kokoro",
+"text": "look over",
+"voice": "af_heart"
 },
 "w/63-06.mp3": {
 "from": "/audio/l5/221.mp3",
@@ -16689,10 +19039,25 @@
 "src": "gemini-kore",
 "text": "call back"
 },
+"w/63-09.mp3": {
+"src": "kokoro",
+"text": "swamped",
+"voice": "af_heart"
+},
 "w/63-10.mp3": {
 "from": "/audio/l7/452.mp3",
 "src": "gemini-kore",
 "text": "voicemail"
+},
+"w/63-11.mp3": {
+"src": "kokoro",
+"text": "copier",
+"voice": "af_heart"
+},
+"w/63-12.mp3": {
+"src": "kokoro",
+"text": "shredder",
+"voice": "af_heart"
 },
 "w/63-13.mp3": {
 "from": "/audio/l7/63.mp3",
@@ -16704,45 +19069,150 @@
 "src": "gemini-kore",
 "text": "stationery"
 },
+"w/63-15.mp3": {
+"src": "kokoro",
+"text": "letterhead",
+"voice": "af_heart"
+},
+"w/63-16.mp3": {
+"src": "kokoro",
+"text": "template",
+"voice": "af_heart"
+},
 "w/63-17.mp3": {
 "from": "/audio/l3/505.mp3",
 "src": "gemini-kore",
 "text": "whiteboard"
+},
+"w/63-18.mp3": {
+"src": "kokoro",
+"text": "checklist",
+"voice": "af_heart"
+},
+"w/63-19.mp3": {
+"src": "kokoro",
+"text": "timesheet",
+"voice": "af_heart"
 },
 "w/63-20.mp3": {
 "from": "/audio/l13/244.mp3",
 "src": "gemini-kore",
 "text": "archive"
 },
+"w/63-21.mp3": {
+"src": "kokoro",
+"text": "paperless",
+"voice": "af_heart"
+},
+"w/63-22.mp3": {
+"src": "kokoro",
+"text": "reorganize",
+"voice": "af_heart"
+},
+"w/63-23.mp3": {
+"src": "kokoro",
+"text": "workspace",
+"voice": "af_heart"
+},
 "w/63-24.mp3": {
 "from": "/audio/l6/147.mp3",
 "src": "gemini-kore",
 "text": "attachment"
+},
+"w/63-25.mp3": {
+"src": "kokoro",
+"text": "workflow",
+"voice": "af_heart"
+},
+"w/63-26.mp3": {
+"src": "kokoro",
+"text": "clerical",
+"voice": "af_heart"
+},
+"w/63-27.mp3": {
+"src": "kokoro",
+"text": "multitask",
+"voice": "af_heart"
 },
 "w/63-28.mp3": {
 "from": "/audio/l9/576.mp3",
 "src": "gemini-kore",
 "text": "tedious"
 },
+"w/63-29.mp3": {
+"src": "kokoro",
+"text": "cubicle",
+"voice": "af_heart"
+},
+"w/63-30.mp3": {
+"src": "kokoro",
+"text": "hectic",
+"voice": "af_heart"
+},
 "w/63-31.mp3": {
 "from": "/audio/l9/582.mp3",
 "src": "gemini-kore",
 "text": "time-consuming"
+},
+"w/63-32.mp3": {
+"src": "kokoro",
+"text": "deliverable",
+"voice": "af_heart"
 },
 "w/63-33.mp3": {
 "from": "/audio/l7/482.mp3",
 "src": "gemini-kore",
 "text": "timeline"
 },
+"w/63-34.mp3": {
+"src": "kokoro",
+"text": "bottleneck",
+"voice": "af_heart"
+},
 "w/63-35.mp3": {
 "from": "/audio/l13/561.mp3",
 "src": "gemini-kore",
 "text": "redundant"
 },
+"w/63-36.mp3": {
+"src": "kokoro",
+"text": "liaise",
+"voice": "af_heart"
+},
+"w/63-37.mp3": {
+"src": "kokoro",
+"text": "on track",
+"voice": "af_heart"
+},
+"w/63-38.mp3": {
+"src": "kokoro",
+"text": "touch base",
+"voice": "af_heart"
+},
+"w/63-39.mp3": {
+"src": "kokoro",
+"text": "ahead of schedule",
+"voice": "af_heart"
+},
 "w/63-40.mp3": {
 "from": "/audio/l5/373.mp3",
 "src": "gemini-kore",
 "text": "fall behind"
+},
+"w/64-01.mp3": {
+"src": "kokoro",
+"text": "run over",
+"voice": "af_heart"
+},
+"w/64-02.mp3": {
+"src": "kokoro",
+"text": "push back",
+"voice": "af_heart"
+},
+"w/64-03.mp3": {
+"src": "kokoro",
+"text": "move up",
+"voice": "af_heart"
 },
 "w/64-04.mp3": {
 "from": "/audio/l9/544.mp3",
@@ -16753,6 +19223,11 @@
 "from": "/audio/l8/234.mp3",
 "src": "gemini-kore",
 "text": "sum up"
+},
+"w/64-06.mp3": {
+"src": "kokoro",
+"text": "go ahead with",
+"voice": "af_heart"
 },
 "w/64-07.mp3": {
 "from": "/audio/l3/110.mp3",
@@ -16774,15 +19249,35 @@
 "src": "gemini-kore",
 "text": "overview"
 },
+"w/64-11.mp3": {
+"src": "kokoro",
+"text": "briefing",
+"voice": "af_heart"
+},
 "w/64-12.mp3": {
 "from": "/audio/l11/11.mp3",
 "src": "gemini-kore",
 "text": "brief"
 },
+"w/64-13.mp3": {
+"src": "kokoro",
+"text": "adjournment",
+"voice": "af_heart"
+},
 "w/64-14.mp3": {
 "from": "/audio/l7/80.mp3",
 "src": "gemini-kore",
 "text": "participation"
+},
+"w/64-15.mp3": {
+"src": "kokoro",
+"text": "facilitator",
+"voice": "af_heart"
+},
+"w/64-16.mp3": {
+"src": "kokoro",
+"text": "visual aid",
+"voice": "af_heart"
 },
 "w/64-17.mp3": {
 "from": "/audio/l11/51.mp3",
@@ -16799,6 +19294,16 @@
 "src": "gemini-kore",
 "text": "put forward"
 },
+"w/64-20.mp3": {
+"src": "kokoro",
+"text": "show of hands",
+"voice": "af_heart"
+},
+"w/64-21.mp3": {
+"src": "kokoro",
+"text": "takeaway",
+"voice": "af_heart"
+},
 "w/64-22.mp3": {
 "from": "/audio/l12/131.mp3",
 "src": "gemini-kore",
@@ -16809,10 +19314,20 @@
 "src": "gemini-kore",
 "text": "justification"
 },
+"w/64-24.mp3": {
+"src": "kokoro",
+"text": "trade-off",
+"voice": "af_heart"
+},
 "w/64-25.mp3": {
 "from": "/audio/l12/482.mp3",
 "src": "gemini-kore",
 "text": "motion"
+},
+"w/64-26.mp3": {
+"src": "kokoro",
+"text": "veto",
+"voice": "af_heart"
 },
 "w/64-27.mp3": {
 "from": "/audio/l16/20.mp3",
@@ -16849,6 +19364,16 @@
 "src": "gemini-kore",
 "text": "lengthy"
 },
+"w/64-34.mp3": {
+"src": "kokoro",
+"text": "engaging",
+"voice": "af_heart"
+},
+"w/64-35.mp3": {
+"src": "kokoro",
+"text": "teleconference",
+"voice": "af_heart"
+},
 "w/64-36.mp3": {
 "from": "/audio/l7/431.mp3",
 "src": "gemini-kore",
@@ -16858,6 +19383,11 @@
 "from": "/audio/l12/84.mp3",
 "src": "gemini-kore",
 "text": "reconsider"
+},
+"w/64-38.mp3": {
+"src": "kokoro",
+"text": "revisit",
+"voice": "af_heart"
 },
 "w/64-39.mp3": {
 "from": "/audio/l1/226.mp3",
@@ -16869,10 +19399,75 @@
 "src": "gemini-kore",
 "text": "allot"
 },
+"w/65-01.mp3": {
+"src": "kokoro",
+"text": "mailer",
+"voice": "af_heart"
+},
+"w/65-02.mp3": {
+"src": "kokoro",
+"text": "advertiser",
+"voice": "af_heart"
+},
+"w/65-03.mp3": {
+"src": "kokoro",
+"text": "marketer",
+"voice": "af_heart"
+},
+"w/65-04.mp3": {
+"src": "kokoro",
+"text": "infomercial",
+"voice": "af_heart"
+},
+"w/65-05.mp3": {
+"src": "kokoro",
+"text": "draw attention",
+"voice": "af_heart"
+},
+"w/65-06.mp3": {
+"src": "kokoro",
+"text": "special offer",
+"voice": "af_heart"
+},
+"w/65-07.mp3": {
+"src": "kokoro",
+"text": "free trial",
+"voice": "af_heart"
+},
+"w/65-08.mp3": {
+"src": "kokoro",
+"text": "giveaway",
+"voice": "af_heart"
+},
+"w/65-09.mp3": {
+"src": "kokoro",
+"text": "leaflet",
+"voice": "af_heart"
+},
+"w/65-10.mp3": {
+"src": "kokoro",
+"text": "pamphlet",
+"voice": "af_heart"
+},
+"w/65-11.mp3": {
+"src": "kokoro",
+"text": "mailing list",
+"voice": "af_heart"
+},
+"w/65-12.mp3": {
+"src": "kokoro",
+"text": "direct mail",
+"voice": "af_heart"
+},
 "w/65-13.mp3": {
 "from": "/audio/l6/303.mp3",
 "src": "gemini-kore",
 "text": "influencer"
+},
+"w/65-14.mp3": {
+"src": "kokoro",
+"text": "digital marketing",
+"voice": "af_heart"
 },
 "w/65-15.mp3": {
 "from": "/audio/l14/479.mp3",
@@ -16884,30 +19479,120 @@
 "src": "gemini-kore",
 "text": "engagement"
 },
+"w/65-17.mp3": {
+"src": "kokoro",
+"text": "customer loyalty",
+"voice": "af_heart"
+},
+"w/65-18.mp3": {
+"src": "kokoro",
+"text": "loyalty program",
+"voice": "af_heart"
+},
+"w/65-19.mp3": {
+"src": "kokoro",
+"text": "promo code",
+"voice": "af_heart"
+},
+"w/65-20.mp3": {
+"src": "kokoro",
+"text": "sweepstakes",
+"voice": "af_heart"
+},
+"w/65-21.mp3": {
+"src": "kokoro",
+"text": "press kit",
+"voice": "af_heart"
+},
 "w/65-22.mp3": {
 "from": "/audio/l12/68.mp3",
 "src": "gemini-kore",
 "text": "differentiate"
+},
+"w/65-23.mp3": {
+"src": "kokoro",
+"text": "positioning",
+"voice": "af_heart"
+},
+"w/65-24.mp3": {
+"src": "kokoro",
+"text": "jingle",
+"voice": "af_heart"
+},
+"w/65-25.mp3": {
+"src": "kokoro",
+"text": "copywriter",
+"voice": "af_heart"
+},
+"w/65-26.mp3": {
+"src": "kokoro",
+"text": "mock-up",
+"voice": "af_heart"
+},
+"w/65-27.mp3": {
+"src": "kokoro",
+"text": "storyboard",
+"voice": "af_heart"
 },
 "w/65-28.mp3": {
 "from": "/audio/l2/524.mp3",
 "src": "gemini-kore",
 "text": "tailor"
 },
+"w/65-29.mp3": {
+"src": "kokoro",
+"text": "personalized",
+"voice": "af_heart"
+},
+"w/65-30.mp3": {
+"src": "kokoro",
+"text": "targeted",
+"voice": "af_heart"
+},
 "w/65-31.mp3": {
 "from": "/audio/l12/28.mp3",
 "src": "gemini-kore",
 "text": "aggressive"
+},
+"w/65-32.mp3": {
+"src": "kokoro",
+"text": "flagship",
+"voice": "af_heart"
 },
 "w/65-33.mp3": {
 "from": "/audio/l1/402.mp3",
 "src": "gemini-kore",
 "text": "buzz"
 },
+"w/65-34.mp3": {
+"src": "kokoro",
+"text": "hype",
+"voice": "af_heart"
+},
 "w/65-35.mp3": {
 "from": "/audio/l12/481.mp3",
 "src": "gemini-kore",
 "text": "momentum"
+},
+"w/65-36.mp3": {
+"src": "kokoro",
+"text": "traction",
+"voice": "af_heart"
+},
+"w/65-37.mp3": {
+"src": "kokoro",
+"text": "upsell",
+"voice": "af_heart"
+},
+"w/65-38.mp3": {
+"src": "kokoro",
+"text": "bundle",
+"voice": "af_heart"
+},
+"w/65-39.mp3": {
+"src": "kokoro",
+"text": "value-added",
+"voice": "af_heart"
 },
 "w/65-40.mp3": {
 "from": "/audio/l16/179.mp3",
@@ -16919,35 +19604,150 @@
 "src": "gemini-kore",
 "text": "pitch"
 },
+"w/66-02.mp3": {
+"src": "kokoro",
+"text": "sales pitch",
+"voice": "af_heart"
+},
 "w/66-03.mp3": {
 "from": "/audio/l12/130.mp3",
 "src": "gemini-kore",
 "text": "proposition"
+},
+"w/66-04.mp3": {
+"src": "kokoro",
+"text": "retainer",
+"voice": "af_heart"
 },
 "w/66-05.mp3": {
 "from": "/audio/l15/533.mp3",
 "src": "gemini-kore",
 "text": "outbid"
 },
+"w/66-06.mp3": {
+"src": "kokoro",
+"text": "bargaining",
+"voice": "af_heart"
+},
 "w/66-07.mp3": {
 "from": "/audio/l14/304.mp3",
 "src": "gemini-kore",
 "text": "persuasion"
+},
+"w/66-08.mp3": {
+"src": "kokoro",
+"text": "prospecting",
+"voice": "af_heart"
+},
+"w/66-09.mp3": {
+"src": "kokoro",
+"text": "reseller",
+"voice": "af_heart"
+},
+"w/66-10.mp3": {
+"src": "kokoro",
+"text": "closing",
+"voice": "af_heart"
+},
+"w/66-11.mp3": {
+"src": "kokoro",
+"text": "dealer",
+"voice": "af_heart"
+},
+"w/66-12.mp3": {
+"src": "kokoro",
+"text": "sales associate",
+"voice": "af_heart"
+},
+"w/66-13.mp3": {
+"src": "kokoro",
+"text": "account manager",
+"voice": "af_heart"
+},
+"w/66-14.mp3": {
+"src": "kokoro",
+"text": "pipeline",
+"voice": "af_heart"
+},
+"w/66-15.mp3": {
+"src": "kokoro",
+"text": "payment terms",
+"voice": "af_heart"
+},
+"w/66-16.mp3": {
+"src": "kokoro",
+"text": "service agreement",
+"voice": "af_heart"
+},
+"w/66-17.mp3": {
+"src": "kokoro",
+"text": "nondisclosure agreement",
+"voice": "af_heart"
+},
+"w/66-18.mp3": {
+"src": "kokoro",
+"text": "letter of intent",
+"voice": "af_heart"
 },
 "w/66-19.mp3": {
 "from": "/audio/l13/140.mp3",
 "src": "gemini-kore",
 "text": "tender"
 },
+"w/66-20.mp3": {
+"src": "kokoro",
+"text": "bidder",
+"voice": "af_heart"
+},
+"w/66-21.mp3": {
+"src": "kokoro",
+"text": "subcontractor",
+"voice": "af_heart"
+},
+"w/66-22.mp3": {
+"src": "kokoro",
+"text": "subcontract",
+"voice": "af_heart"
+},
+"w/66-23.mp3": {
+"src": "kokoro",
+"text": "exclusivity",
+"voice": "af_heart"
+},
 "w/66-24.mp3": {
 "from": "/audio/l15/517.mp3",
 "src": "gemini-kore",
 "text": "rebate"
 },
+"w/66-25.mp3": {
+"src": "kokoro",
+"text": "volume discount",
+"voice": "af_heart"
+},
+"w/66-26.mp3": {
+"src": "kokoro",
+"text": "price list",
+"voice": "af_heart"
+},
+"w/66-27.mp3": {
+"src": "kokoro",
+"text": "list price",
+"voice": "af_heart"
+},
+"w/66-28.mp3": {
+"src": "kokoro",
+"text": "cancellation",
+"voice": "af_heart"
+},
 "w/66-29.mp3": {
 "from": "/audio/l15/450.mp3",
 "src": "gemini-kore",
 "text": "default"
+},
+"w/66-30.mp3": {
+"src": "kokoro",
+"text": "renegotiate",
+"voice": "af_heart"
 },
 "w/66-31.mp3": {
 "from": "/audio/l17/599.mp3",
@@ -16964,6 +19764,16 @@
 "src": "gemini-kore",
 "text": "deadlock"
 },
+"w/66-34.mp3": {
+"src": "kokoro",
+"text": "win-win",
+"voice": "af_heart"
+},
+"w/66-35.mp3": {
+"src": "kokoro",
+"text": "goodwill",
+"voice": "af_heart"
+},
 "w/66-36.mp3": {
 "from": "/audio/l5/353.mp3",
 "src": "gemini-kore",
@@ -16979,6 +19789,26 @@
 "src": "gemini-kore",
 "text": "assertive"
 },
+"w/66-39.mp3": {
+"src": "kokoro",
+"text": "pushy",
+"voice": "af_heart"
+},
+"w/66-40.mp3": {
+"src": "kokoro",
+"text": "non-negotiable",
+"voice": "af_heart"
+},
+"w/67-01.mp3": {
+"src": "kokoro",
+"text": "shop around",
+"voice": "af_heart"
+},
+"w/67-02.mp3": {
+"src": "kokoro",
+"text": "ring up",
+"voice": "af_heart"
+},
 "w/67-03.mp3": {
 "from": "/audio/l10/476.mp3",
 "src": "gemini-kore",
@@ -16989,30 +19819,65 @@
 "src": "gemini-kore",
 "text": "try out"
 },
+"w/67-05.mp3": {
+"src": "kokoro",
+"text": "come with",
+"voice": "af_heart"
+},
 "w/67-06.mp3": {
 "from": "/audio/l10/425.mp3",
 "src": "gemini-kore",
 "text": "escalate"
+},
+"w/67-07.mp3": {
+"src": "kokoro",
+"text": "showroom",
+"voice": "af_heart"
 },
 "w/67-08.mp3": {
 "from": "/audio/l1/213.mp3",
 "src": "gemini-kore",
 "text": "outlet"
 },
+"w/67-09.mp3": {
+"src": "kokoro",
+"text": "high-end",
+"voice": "af_heart"
+},
 "w/67-10.mp3": {
 "from": "/audio/l4/402.mp3",
 "src": "gemini-kore",
 "text": "luxury"
+},
+"w/67-11.mp3": {
+"src": "kokoro",
+"text": "pricey",
+"voice": "af_heart"
 },
 "w/67-12.mp3": {
 "from": "/audio/l4/332.mp3",
 "src": "gemini-kore",
 "text": "cart"
 },
+"w/67-13.mp3": {
+"src": "kokoro",
+"text": "storewide",
+"voice": "af_heart"
+},
+"w/67-14.mp3": {
+"src": "kokoro",
+"text": "price range",
+"voice": "af_heart"
+},
 "w/67-15.mp3": {
 "from": "/audio/l15/475.mp3",
 "src": "gemini-kore",
 "text": "markdown"
+},
+"w/67-16.mp3": {
+"src": "kokoro",
+"text": "flash sale",
+"voice": "af_heart"
 },
 "w/67-17.mp3": {
 "from": "/audio/l15/539.mp3",
@@ -17024,6 +19889,21 @@
 "src": "gemini-kore",
 "text": "gift card"
 },
+"w/67-19.mp3": {
+"src": "kokoro",
+"text": "restocking fee",
+"voice": "af_heart"
+},
+"w/67-20.mp3": {
+"src": "kokoro",
+"text": "proof of purchase",
+"voice": "af_heart"
+},
+"w/67-21.mp3": {
+"src": "kokoro",
+"text": "unopened",
+"voice": "af_heart"
+},
 "w/67-22.mp3": {
 "from": "/audio/l3/593.mp3",
 "src": "gemini-kore",
@@ -17033,6 +19913,16 @@
 "from": "/audio/l1/232.mp3",
 "src": "gemini-kore",
 "text": "stain"
+},
+"w/67-24.mp3": {
+"src": "kokoro",
+"text": "dent",
+"voice": "af_heart"
+},
+"w/67-25.mp3": {
+"src": "kokoro",
+"text": "toll-free",
+"voice": "af_heart"
 },
 "w/67-26.mp3": {
 "from": "/audio/l6/239.mp3",
@@ -17049,6 +19939,11 @@
 "src": "gemini-kore",
 "text": "regret"
 },
+"w/67-29.mp3": {
+"src": "kokoro",
+"text": "mix-up",
+"voice": "af_heart"
+},
 "w/67-30.mp3": {
 "from": "/audio/l10/199.mp3",
 "src": "gemini-kore",
@@ -17059,10 +19954,45 @@
 "src": "gemini-kore",
 "text": "gesture"
 },
+"w/67-32.mp3": {
+"src": "kokoro",
+"text": "irate",
+"voice": "af_heart"
+},
 "w/67-33.mp3": {
 "from": "/audio/l6/107.mp3",
 "src": "gemini-kore",
 "text": "frustrated"
+},
+"w/67-34.mp3": {
+"src": "kokoro",
+"text": "displeased",
+"voice": "af_heart"
+},
+"w/67-35.mp3": {
+"src": "kokoro",
+"text": "hassle-free",
+"voice": "af_heart"
+},
+"w/67-36.mp3": {
+"src": "kokoro",
+"text": "in-store",
+"voice": "af_heart"
+},
+"w/67-37.mp3": {
+"src": "kokoro",
+"text": "storefront",
+"voice": "af_heart"
+},
+"w/67-38.mp3": {
+"src": "kokoro",
+"text": "boutique",
+"voice": "af_heart"
+},
+"w/67-39.mp3": {
+"src": "kokoro",
+"text": "chain",
+"voice": "af_heart"
 },
 "w/67-40.mp3": {
 "from": "/audio/l6/492.mp3",
@@ -17074,6 +20004,36 @@
 "src": "gemini-kore",
 "text": "supply chain"
 },
+"w/68-02.mp3": {
+"src": "kokoro",
+"text": "send out",
+"voice": "af_heart"
+},
+"w/68-03.mp3": {
+"src": "kokoro",
+"text": "held up",
+"voice": "af_heart"
+},
+"w/68-04.mp3": {
+"src": "kokoro",
+"text": "on the way",
+"voice": "af_heart"
+},
+"w/68-05.mp3": {
+"src": "kokoro",
+"text": "out for delivery",
+"voice": "af_heart"
+},
+"w/68-06.mp3": {
+"src": "kokoro",
+"text": "same-day delivery",
+"voice": "af_heart"
+},
+"w/68-07.mp3": {
+"src": "kokoro",
+"text": "rush order",
+"voice": "af_heart"
+},
 "w/68-08.mp3": {
 "from": "/audio/l4/604.mp3",
 "src": "gemini-kore",
@@ -17084,10 +20044,20 @@
 "src": "gemini-kore",
 "text": "track down"
 },
+"w/68-10.mp3": {
+"src": "kokoro",
+"text": "sign for",
+"voice": "af_heart"
+},
 "w/68-11.mp3": {
 "from": "/audio/l3/471.mp3",
 "src": "gemini-kore",
 "text": "seal"
+},
+"w/68-12.mp3": {
+"src": "kokoro",
+"text": "consignment",
+"voice": "af_heart"
 },
 "w/68-13.mp3": {
 "from": "/audio/l8/177.mp3",
@@ -17114,10 +20084,25 @@
 "src": "gemini-kore",
 "text": "vessel"
 },
+"w/68-18.mp3": {
+"src": "kokoro",
+"text": "trucking",
+"voice": "af_heart"
+},
 "w/68-19.mp3": {
 "from": "/audio/l13/473.mp3",
 "src": "gemini-kore",
 "text": "manifest"
+},
+"w/68-20.mp3": {
+"src": "kokoro",
+"text": "stockroom",
+"voice": "af_heart"
+},
+"w/68-21.mp3": {
+"src": "kokoro",
+"text": "shelving",
+"voice": "af_heart"
 },
 "w/68-22.mp3": {
 "from": "/audio/l7/492.mp3",
@@ -17139,15 +20124,40 @@
 "src": "gemini-kore",
 "text": "excess"
 },
+"w/68-26.mp3": {
+"src": "kokoro",
+"text": "overstock",
+"voice": "af_heart"
+},
 "w/68-27.mp3": {
 "from": "/audio/l15/573.mp3",
 "src": "gemini-kore",
 "text": "perishable"
 },
+"w/68-28.mp3": {
+"src": "kokoro",
+"text": "refrigerated",
+"voice": "af_heart"
+},
 "w/68-29.mp3": {
 "from": "/audio/word/d6f0033adac3510e.mp3",
 "src": "gemini-kore",
 "text": "carton"
+},
+"w/68-30.mp3": {
+"src": "kokoro",
+"text": "padding",
+"voice": "af_heart"
+},
+"w/68-31.mp3": {
+"src": "kokoro",
+"text": "dispatcher",
+"voice": "af_heart"
+},
+"w/68-32.mp3": {
+"src": "kokoro",
+"text": "undeliverable",
+"voice": "af_heart"
 },
 "w/68-33.mp3": {
 "from": "/audio/l7/158.mp3",
@@ -17159,6 +20169,31 @@
 "src": "gemini-kore",
 "text": "messenger"
 },
+"w/68-35.mp3": {
+"src": "kokoro",
+"text": "oversized",
+"voice": "af_heart"
+},
+"w/68-36.mp3": {
+"src": "kokoro",
+"text": "bulky",
+"voice": "af_heart"
+},
+"w/68-37.mp3": {
+"src": "kokoro",
+"text": "heavy-duty",
+"voice": "af_heart"
+},
+"w/68-38.mp3": {
+"src": "kokoro",
+"text": "wholesaler",
+"voice": "af_heart"
+},
+"w/68-39.mp3": {
+"src": "kokoro",
+"text": "middleman",
+"voice": "af_heart"
+},
 "w/68-40.mp3": {
 "from": "/audio/l15/443.mp3",
 "src": "gemini-kore",
@@ -17168,6 +20203,26 @@
 "from": "/audio/l7/65.mp3",
 "src": "gemini-kore",
 "text": "assembly"
+},
+"w/69-02.mp3": {
+"src": "kokoro",
+"text": "packing",
+"voice": "af_heart"
+},
+"w/69-03.mp3": {
+"src": "kokoro",
+"text": "workmanship",
+"voice": "af_heart"
+},
+"w/69-04.mp3": {
+"src": "kokoro",
+"text": "quality assurance",
+"voice": "af_heart"
+},
+"w/69-05.mp3": {
+"src": "kokoro",
+"text": "spot check",
+"voice": "af_heart"
 },
 "w/69-06.mp3": {
 "from": "/audio/l16/501.mp3",
@@ -17194,10 +20249,25 @@
 "src": "gemini-kore",
 "text": "anomaly"
 },
+"w/69-11.mp3": {
+"src": "kokoro",
+"text": "irregularity",
+"voice": "af_heart"
+},
+"w/69-12.mp3": {
+"src": "kokoro",
+"text": "wear and tear",
+"voice": "af_heart"
+},
 "w/69-13.mp3": {
 "from": "/audio/l9/489.mp3",
 "src": "gemini-kore",
 "text": "wear out"
+},
+"w/69-14.mp3": {
+"src": "kokoro",
+"text": "start up",
+"voice": "af_heart"
 },
 "w/69-15.mp3": {
 "from": "/audio/l11/473.mp3",
@@ -17208,6 +20278,16 @@
 "from": "/audio/l13/491.mp3",
 "src": "gemini-kore",
 "text": "overhaul"
+},
+"w/69-17.mp3": {
+"src": "kokoro",
+"text": "lubricate",
+"voice": "af_heart"
+},
+"w/69-18.mp3": {
+"src": "kokoro",
+"text": "weld",
+"voice": "af_heart"
 },
 "w/69-19.mp3": {
 "from": "/audio/l11/94.mp3",
@@ -17224,10 +20304,35 @@
 "src": "gemini-kore",
 "text": "phase out"
 },
+"w/69-22.mp3": {
+"src": "kokoro",
+"text": "modernize",
+"voice": "af_heart"
+},
+"w/69-23.mp3": {
+"src": "kokoro",
+"text": "retool",
+"voice": "af_heart"
+},
+"w/69-24.mp3": {
+"src": "kokoro",
+"text": "waterproof",
+"voice": "af_heart"
+},
+"w/69-25.mp3": {
+"src": "kokoro",
+"text": "lumber",
+"voice": "af_heart"
+},
 "w/69-26.mp3": {
 "from": "/audio/l8/378.mp3",
 "src": "gemini-kore",
 "text": "fabric"
+},
+"w/69-27.mp3": {
+"src": "kokoro",
+"text": "schematic",
+"voice": "af_heart"
 },
 "w/69-28.mp3": {
 "from": "/audio/l13/354.mp3",
@@ -17244,25 +20349,65 @@
 "src": "gemini-kore",
 "text": "sensor"
 },
+"w/69-31.mp3": {
+"src": "kokoro",
+"text": "robotic",
+"voice": "af_heart"
+},
 "w/69-32.mp3": {
 "from": "/audio/l1/297.mp3",
 "src": "gemini-kore",
 "text": "crane"
+},
+"w/69-33.mp3": {
+"src": "kokoro",
+"text": "mill",
+"voice": "af_heart"
+},
+"w/69-34.mp3": {
+"src": "kokoro",
+"text": "foreman",
+"voice": "af_heart"
+},
+"w/69-35.mp3": {
+"src": "kokoro",
+"text": "ventilation",
+"voice": "af_heart"
+},
+"w/69-36.mp3": {
+"src": "kokoro",
+"text": "fumes",
+"voice": "af_heart"
 },
 "w/69-37.mp3": {
 "from": "/audio/l17/438.mp3",
 "src": "gemini-kore",
 "text": "byproduct"
 },
+"w/69-38.mp3": {
+"src": "kokoro",
+"text": "utilization",
+"voice": "af_heart"
+},
 "w/69-39.mp3": {
 "from": "/audio/l9/518.mp3",
 "src": "gemini-kore",
 "text": "ramp up"
 },
+"w/69-40.mp3": {
+"src": "kokoro",
+"text": "scale up",
+"voice": "af_heart"
+},
 "w/70-01.mp3": {
 "from": "/audio/l12/563.mp3",
 "src": "gemini-kore",
 "text": "formula"
+},
+"w/70-02.mp3": {
+"src": "kokoro",
+"text": "refinement",
+"voice": "af_heart"
 },
 "w/70-03.mp3": {
 "from": "/audio/l13/37.mp3",
@@ -17279,10 +20424,20 @@
 "src": "gemini-kore",
 "text": "discovery"
 },
+"w/70-06.mp3": {
+"src": "kokoro",
+"text": "patented",
+"voice": "af_heart"
+},
 "w/70-07.mp3": {
 "from": "/audio/l15/574.mp3",
 "src": "gemini-kore",
 "text": "proprietary"
+},
+"w/70-08.mp3": {
+"src": "kokoro",
+"text": "experimental",
+"voice": "af_heart"
 },
 "w/70-09.mp3": {
 "from": "/audio/l12/142.mp3",
@@ -17319,15 +20474,50 @@
 "src": "gemini-kore",
 "text": "empirical"
 },
+"w/70-16.mp3": {
+"src": "kokoro",
+"text": "clinical trial",
+"voice": "af_heart"
+},
+"w/70-17.mp3": {
+"src": "kokoro",
+"text": "artificial intelligence",
+"voice": "af_heart"
+},
 "w/70-18.mp3": {
 "from": "/audio/l12/519.mp3",
 "src": "gemini-kore",
 "text": "algorithm"
 },
+"w/70-19.mp3": {
+"src": "kokoro",
+"text": "usability",
+"voice": "af_heart"
+},
+"w/70-20.mp3": {
+"src": "kokoro",
+"text": "user experience",
+"voice": "af_heart"
+},
 "w/70-21.mp3": {
 "from": "/audio/l11/431.mp3",
 "src": "gemini-kore",
 "text": "intuitive"
+},
+"w/70-22.mp3": {
+"src": "kokoro",
+"text": "ergonomic",
+"voice": "af_heart"
+},
+"w/70-23.mp3": {
+"src": "kokoro",
+"text": "sleek",
+"voice": "af_heart"
+},
+"w/70-24.mp3": {
+"src": "kokoro",
+"text": "customizable",
+"voice": "af_heart"
 },
 "w/70-25.mp3": {
 "from": "/audio/l13/161.mp3",
@@ -17339,30 +20529,110 @@
 "src": "gemini-kore",
 "text": "scalable"
 },
+"w/70-27.mp3": {
+"src": "kokoro",
+"text": "multipurpose",
+"voice": "af_heart"
+},
+"w/70-28.mp3": {
+"src": "kokoro",
+"text": "innovator",
+"voice": "af_heart"
+},
 "w/70-29.mp3": {
 "from": "/audio/l14/377.mp3",
 "src": "gemini-kore",
 "text": "visionary"
+},
+"w/70-30.mp3": {
+"src": "kokoro",
+"text": "disruptive",
+"voice": "af_heart"
+},
+"w/70-31.mp3": {
+"src": "kokoro",
+"text": "game changer",
+"voice": "af_heart"
 },
 "w/70-32.mp3": {
 "from": "/audio/l14/16.mp3",
 "src": "gemini-kore",
 "text": "conventional"
 },
+"w/70-33.mp3": {
+"src": "kokoro",
+"text": "existing",
+"voice": "af_heart"
+},
+"w/70-34.mp3": {
+"src": "kokoro",
+"text": "iteration",
+"voice": "af_heart"
+},
+"w/70-35.mp3": {
+"src": "kokoro",
+"text": "tweak",
+"voice": "af_heart"
+},
 "w/70-36.mp3": {
 "from": "/audio/l16/159.mp3",
 "src": "gemini-kore",
 "text": "fine-tune"
+},
+"w/70-37.mp3": {
+"src": "kokoro",
+"text": "debug",
+"voice": "af_heart"
+},
+"w/70-38.mp3": {
+"src": "kokoro",
+"text": "field test",
+"voice": "af_heart"
+},
+"w/70-39.mp3": {
+"src": "kokoro",
+"text": "trial run",
+"voice": "af_heart"
+},
+"w/70-40.mp3": {
+"src": "kokoro",
+"text": "product line",
+"voice": "af_heart"
+},
+"w/71-01.mp3": {
+"src": "kokoro",
+"text": "bookkeeper",
+"voice": "af_heart"
 },
 "w/71-02.mp3": {
 "from": "/audio/l6/349.mp3",
 "src": "gemini-kore",
 "text": "controller"
 },
+"w/71-03.mp3": {
+"src": "kokoro",
+"text": "treasurer",
+"voice": "af_heart"
+},
+"w/71-04.mp3": {
+"src": "kokoro",
+"text": "ledger",
+"voice": "af_heart"
+},
 "w/71-05.mp3": {
 "from": "/audio/l15/549.mp3",
 "src": "gemini-kore",
 "text": "accrue"
+},
+"w/71-06.mp3": {
+"src": "kokoro",
+"text": "accounts payable",
+"voice": "af_heart"
+},
+"w/71-07.mp3": {
+"src": "kokoro",
+"text": "accounts receivable",
+"voice": "af_heart"
 },
 "w/71-08.mp3": {
 "from": "/audio/l12/120.mp3",
@@ -17374,15 +20644,75 @@
 "src": "gemini-kore",
 "text": "write off"
 },
+"w/71-10.mp3": {
+"src": "kokoro",
+"text": "petty cash",
+"voice": "af_heart"
+},
+"w/71-11.mp3": {
+"src": "kokoro",
+"text": "fixed costs",
+"voice": "af_heart"
+},
+"w/71-12.mp3": {
+"src": "kokoro",
+"text": "operating expenses",
+"voice": "af_heart"
+},
+"w/71-13.mp3": {
+"src": "kokoro",
+"text": "cost overrun",
+"voice": "af_heart"
+},
+"w/71-14.mp3": {
+"src": "kokoro",
+"text": "cost-cutting",
+"voice": "af_heart"
+},
+"w/71-15.mp3": {
+"src": "kokoro",
+"text": "costly",
+"voice": "af_heart"
+},
+"w/71-16.mp3": {
+"src": "kokoro",
+"text": "line item",
+"voice": "af_heart"
+},
 "w/71-17.mp3": {
 "from": "/audio/l10/161.mp3",
 "src": "gemini-kore",
 "text": "breakdown"
 },
+"w/71-18.mp3": {
+"src": "kokoro",
+"text": "subtotal",
+"voice": "af_heart"
+},
+"w/71-19.mp3": {
+"src": "kokoro",
+"text": "year-end",
+"voice": "af_heart"
+},
+"w/71-20.mp3": {
+"src": "kokoro",
+"text": "year-to-date",
+"voice": "af_heart"
+},
 "w/71-21.mp3": {
 "from": "/audio/l4/395.mp3",
 "src": "gemini-kore",
 "text": "quarter"
+},
+"w/71-22.mp3": {
+"src": "kokoro",
+"text": "semiannual",
+"voice": "af_heart"
+},
+"w/71-23.mp3": {
+"src": "kokoro",
+"text": "budget cut",
+"voice": "af_heart"
 },
 "w/71-24.mp3": {
 "from": "/audio/l17/450.mp3",
@@ -17408,6 +20738,16 @@
 "from": "/audio/l18/487.mp3",
 "src": "gemini-kore",
 "text": "contingency"
+},
+"w/71-29.mp3": {
+"src": "kokoro",
+"text": "capital expenditure",
+"voice": "af_heart"
+},
+"w/71-30.mp3": {
+"src": "kokoro",
+"text": "amortization",
+"voice": "af_heart"
 },
 "w/71-31.mp3": {
 "from": "/audio/l15/449.mp3",
@@ -17479,6 +20819,11 @@
 "src": "gemini-kore",
 "text": "subsidy"
 },
+"w/72-05.mp3": {
+"src": "kokoro",
+"text": "monetary",
+"voice": "af_heart"
+},
 "w/72-06.mp3": {
 "from": "/audio/l12/402.mp3",
 "src": "gemini-kore",
@@ -17499,10 +20844,20 @@
 "src": "gemini-kore",
 "text": "slump"
 },
+"w/72-10.mp3": {
+"src": "kokoro",
+"text": "upturn",
+"voice": "af_heart"
+},
 "w/72-11.mp3": {
 "from": "/audio/l14/447.mp3",
 "src": "gemini-kore",
 "text": "protectionism"
+},
+"w/72-12.mp3": {
+"src": "kokoro",
+"text": "contraction",
+"voice": "af_heart"
 },
 "w/72-13.mp3": {
 "from": "/audio/l6/582.mp3",
@@ -17549,6 +20904,21 @@
 "src": "gemini-kore",
 "text": "volatility"
 },
+"w/72-22.mp3": {
+"src": "kokoro",
+"text": "fluctuation",
+"voice": "af_heart"
+},
+"w/72-23.mp3": {
+"src": "kokoro",
+"text": "upward",
+"voice": "af_heart"
+},
+"w/72-24.mp3": {
+"src": "kokoro",
+"text": "downward",
+"voice": "af_heart"
+},
 "w/72-25.mp3": {
 "from": "/audio/l1/517.mp3",
 "src": "gemini-kore",
@@ -17569,6 +20939,11 @@
 "src": "gemini-kore",
 "text": "negligible"
 },
+"w/72-29.mp3": {
+"src": "kokoro",
+"text": "growth rate",
+"voice": "af_heart"
+},
 "w/72-30.mp3": {
 "from": "/audio/l11/359.mp3",
 "src": "gemini-kore",
@@ -17578,6 +20953,11 @@
 "from": "/audio/l11/360.mp3",
 "src": "gemini-kore",
 "text": "public sector"
+},
+"w/72-32.mp3": {
+"src": "kokoro",
+"text": "labor market",
+"voice": "af_heart"
 },
 "w/72-33.mp3": {
 "from": "/audio/l14/513.mp3",
@@ -17614,6 +20994,31 @@
 "src": "gemini-kore",
 "text": "bleak"
 },
+"w/72-40.mp3": {
+"src": "kokoro",
+"text": "promising",
+"voice": "af_heart"
+},
+"w/73-01.mp3": {
+"src": "kokoro",
+"text": "turnaround",
+"voice": "af_heart"
+},
+"w/73-02.mp3": {
+"src": "kokoro",
+"text": "backer",
+"voice": "af_heart"
+},
+"w/73-03.mp3": {
+"src": "kokoro",
+"text": "buyout",
+"voice": "af_heart"
+},
+"w/73-04.mp3": {
+"src": "kokoro",
+"text": "spin-off",
+"voice": "af_heart"
+},
 "w/73-05.mp3": {
 "from": "/audio/l12/239.mp3",
 "src": "gemini-kore",
@@ -17624,25 +21029,105 @@
 "src": "gemini-kore",
 "text": "synergy"
 },
+"w/73-07.mp3": {
+"src": "kokoro",
+"text": "consolidation",
+"voice": "af_heart"
+},
 "w/73-08.mp3": {
 "from": "/audio/l12/307.mp3",
 "src": "gemini-kore",
 "text": "integration"
+},
+"w/73-09.mp3": {
+"src": "kokoro",
+"text": "reorganization",
+"voice": "af_heart"
 },
 "w/73-10.mp3": {
 "from": "/audio/l9/71.mp3",
 "src": "gemini-kore",
 "text": "footprint"
 },
+"w/73-11.mp3": {
+"src": "kokoro",
+"text": "presence",
+"voice": "af_heart"
+},
+"w/73-12.mp3": {
+"src": "kokoro",
+"text": "foothold",
+"voice": "af_heart"
+},
+"w/73-13.mp3": {
+"src": "kokoro",
+"text": "venture into",
+"voice": "af_heart"
+},
+"w/73-14.mp3": {
+"src": "kokoro",
+"text": "core business",
+"voice": "af_heart"
+},
+"w/73-15.mp3": {
+"src": "kokoro",
+"text": "competitive advantage",
+"voice": "af_heart"
+},
+"w/73-16.mp3": {
+"src": "kokoro",
+"text": "business model",
+"voice": "af_heart"
+},
+"w/73-17.mp3": {
+"src": "kokoro",
+"text": "business plan",
+"voice": "af_heart"
+},
+"w/73-18.mp3": {
+"src": "kokoro",
+"text": "short-term",
+"voice": "af_heart"
+},
+"w/73-19.mp3": {
+"src": "kokoro",
+"text": "core values",
+"voice": "af_heart"
+},
+"w/73-20.mp3": {
+"src": "kokoro",
+"text": "corporate social responsibility",
+"voice": "af_heart"
+},
 "w/73-21.mp3": {
 "from": "/audio/l14/435.mp3",
 "src": "gemini-kore",
 "text": "philanthropy"
 },
+"w/73-22.mp3": {
+"src": "kokoro",
+"text": "philanthropic",
+"voice": "af_heart"
+},
+"w/73-23.mp3": {
+"src": "kokoro",
+"text": "securities",
+"voice": "af_heart"
+},
+"w/73-24.mp3": {
+"src": "kokoro",
+"text": "angel investor",
+"voice": "af_heart"
+},
 "w/73-25.mp3": {
 "from": "/audio/l15/585.mp3",
 "src": "gemini-kore",
 "text": "mutual fund"
+},
+"w/73-26.mp3": {
+"src": "kokoro",
+"text": "diversified",
+"voice": "af_heart"
 },
 "w/73-27.mp3": {
 "from": "/audio/l4/538.mp3",
@@ -17659,25 +21144,180 @@
 "src": "gemini-kore",
 "text": "speculation"
 },
+"w/73-30.mp3": {
+"src": "kokoro",
+"text": "in the red",
+"voice": "af_heart"
+},
+"w/73-31.mp3": {
+"src": "kokoro",
+"text": "struggling",
+"voice": "af_heart"
+},
+"w/73-32.mp3": {
+"src": "kokoro",
+"text": "ailing",
+"voice": "af_heart"
+},
+"w/73-33.mp3": {
+"src": "kokoro",
+"text": "thriving",
+"voice": "af_heart"
+},
 "w/73-34.mp3": {
 "from": "/audio/l14/33.mp3",
 "src": "gemini-kore",
 "text": "flourish"
+},
+"w/73-35.mp3": {
+"src": "kokoro",
+"text": "family-owned",
+"voice": "af_heart"
+},
+"w/73-36.mp3": {
+"src": "kokoro",
+"text": "trustee",
+"voice": "af_heart"
+},
+"w/73-37.mp3": {
+"src": "kokoro",
+"text": "COO",
+"voice": "af_heart"
+},
+"w/73-38.mp3": {
+"src": "kokoro",
+"text": "co-founder",
+"voice": "af_heart"
+},
+"w/73-39.mp3": {
+"src": "kokoro",
+"text": "proprietor",
+"voice": "af_heart"
+},
+"w/73-40.mp3": {
+"src": "kokoro",
+"text": "organizational",
+"voice": "af_heart"
+},
+"w/74-01.mp3": {
+"src": "kokoro",
+"text": "traveler",
+"voice": "af_heart"
+},
+"w/74-02.mp3": {
+"src": "kokoro",
+"text": "picturesque",
+"voice": "af_heart"
+},
+"w/74-03.mp3": {
+"src": "kokoro",
+"text": "breathtaking",
+"voice": "af_heart"
 },
 "w/74-04.mp3": {
 "from": "/audio/l4/602.mp3",
 "src": "gemini-kore",
 "text": "window seat"
 },
+"w/74-05.mp3": {
+"src": "kokoro",
+"text": "fully booked",
+"voice": "af_heart"
+},
+"w/74-06.mp3": {
+"src": "kokoro",
+"text": "catch a flight",
+"voice": "af_heart"
+},
 "w/74-07.mp3": {
 "from": "/audio/word/05014600923823a1.mp3",
 "src": "gemini-kore",
 "text": "get off"
 },
+"w/74-08.mp3": {
+"src": "kokoro",
+"text": "security checkpoint",
+"voice": "af_heart"
+},
+"w/74-09.mp3": {
+"src": "kokoro",
+"text": "checked baggage",
+"voice": "af_heart"
+},
+"w/74-10.mp3": {
+"src": "kokoro",
+"text": "baggage allowance",
+"voice": "af_heart"
+},
+"w/74-11.mp3": {
+"src": "kokoro",
+"text": "excess baggage",
+"voice": "af_heart"
+},
+"w/74-12.mp3": {
+"src": "kokoro",
+"text": "carousel",
+"voice": "af_heart"
+},
+"w/74-13.mp3": {
+"src": "kokoro",
+"text": "stopover",
+"voice": "af_heart"
+},
+"w/74-14.mp3": {
+"src": "kokoro",
+"text": "red-eye",
+"voice": "af_heart"
+},
+"w/74-15.mp3": {
+"src": "kokoro",
+"text": "time zone",
+"voice": "af_heart"
+},
+"w/74-16.mp3": {
+"src": "kokoro",
+"text": "time difference",
+"voice": "af_heart"
+},
+"w/74-17.mp3": {
+"src": "kokoro",
+"text": "booking",
+"voice": "af_heart"
+},
+"w/74-18.mp3": {
+"src": "kokoro",
+"text": "e-ticket",
+"voice": "af_heart"
+},
+"w/74-19.mp3": {
+"src": "kokoro",
+"text": "fasten",
+"voice": "af_heart"
+},
+"w/74-20.mp3": {
+"src": "kokoro",
+"text": "turbulence",
+"voice": "af_heart"
+},
 "w/74-21.mp3": {
 "from": "/audio/l1/120.mp3",
 "src": "gemini-kore",
 "text": "captain"
+},
+"w/74-22.mp3": {
+"src": "kokoro",
+"text": "legroom",
+"voice": "af_heart"
+},
+"w/74-23.mp3": {
+"src": "kokoro",
+"text": "in-flight",
+"voice": "af_heart"
+},
+"w/74-24.mp3": {
+"src": "kokoro",
+"text": "mileage",
+"voice": "af_heart"
 },
 "w/74-25.mp3": {
 "from": "/audio/l15/197.mp3",
@@ -17699,10 +21339,35 @@
 "src": "gemini-kore",
 "text": "adapter"
 },
+"w/74-29.mp3": {
+"src": "kokoro",
+"text": "off-season",
+"voice": "af_heart"
+},
+"w/74-30.mp3": {
+"src": "kokoro",
+"text": "must-see",
+"voice": "af_heart"
+},
+"w/74-31.mp3": {
+"src": "kokoro",
+"text": "coastal",
+"voice": "af_heart"
+},
 "w/74-32.mp3": {
 "from": "/audio/l2/164.mp3",
 "src": "gemini-kore",
 "text": "countryside"
+},
+"w/74-33.mp3": {
+"src": "kokoro",
+"text": "waterfront",
+"voice": "af_heart"
+},
+"w/74-34.mp3": {
+"src": "kokoro",
+"text": "secluded",
+"voice": "af_heart"
 },
 "w/74-35.mp3": {
 "from": "/audio/l8/398.mp3",
@@ -17714,10 +21379,40 @@
 "src": "gemini-kore",
 "text": "vibrant"
 },
+"w/74-37.mp3": {
+"src": "kokoro",
+"text": "bustling",
+"voice": "af_heart"
+},
 "w/74-38.mp3": {
 "from": "/audio/l4/194.mp3",
 "src": "gemini-kore",
 "text": "guidebook"
+},
+"w/74-39.mp3": {
+"src": "kokoro",
+"text": "getaway",
+"voice": "af_heart"
+},
+"w/74-40.mp3": {
+"src": "kokoro",
+"text": "all-inclusive",
+"voice": "af_heart"
+},
+"w/75-01.mp3": {
+"src": "kokoro",
+"text": "be booked up",
+"voice": "af_heart"
+},
+"w/75-02.mp3": {
+"src": "kokoro",
+"text": "key card",
+"voice": "af_heart"
+},
+"w/75-03.mp3": {
+"src": "kokoro",
+"text": "deluxe",
+"voice": "af_heart"
 },
 "w/75-04.mp3": {
 "from": "/audio/l9/28.mp3",
@@ -17729,6 +21424,11 @@
 "src": "gemini-kore",
 "text": "ambience"
 },
+"w/75-06.mp3": {
+"src": "kokoro",
+"text": "award-winning",
+"voice": "af_heart"
+},
 "w/75-07.mp3": {
 "from": "/audio/l7/519.mp3",
 "src": "gemini-kore",
@@ -17739,20 +21439,110 @@
 "src": "gemini-kore",
 "text": "hospitable"
 },
+"w/75-09.mp3": {
+"src": "kokoro",
+"text": "walk-in",
+"voice": "af_heart"
+},
+"w/75-10.mp3": {
+"src": "kokoro",
+"text": "waiting list",
+"voice": "af_heart"
+},
 "w/75-11.mp3": {
 "from": "/audio/l1/394.mp3",
 "src": "gemini-kore",
 "text": "dishwasher"
+},
+"w/75-12.mp3": {
+"src": "kokoro",
+"text": "bartender",
+"voice": "af_heart"
+},
+"w/75-13.mp3": {
+"src": "kokoro",
+"text": "barista",
+"voice": "af_heart"
+},
+"w/75-14.mp3": {
+"src": "kokoro",
+"text": "daily special",
+"voice": "af_heart"
+},
+"w/75-15.mp3": {
+"src": "kokoro",
+"text": "set menu",
+"voice": "af_heart"
+},
+"w/75-16.mp3": {
+"src": "kokoro",
+"text": "starter",
+"voice": "af_heart"
+},
+"w/75-17.mp3": {
+"src": "kokoro",
+"text": "side dish",
+"voice": "af_heart"
+},
+"w/75-18.mp3": {
+"src": "kokoro",
+"text": "five-star",
+"voice": "af_heart"
+},
+"w/75-19.mp3": {
+"src": "kokoro",
+"text": "family-friendly",
+"voice": "af_heart"
+},
+"w/75-20.mp3": {
+"src": "kokoro",
+"text": "poultry",
+"voice": "af_heart"
+},
+"w/75-21.mp3": {
+"src": "kokoro",
+"text": "vegan",
+"voice": "af_heart"
+},
+"w/75-22.mp3": {
+"src": "kokoro",
+"text": "gluten-free",
+"voice": "af_heart"
+},
+"w/75-23.mp3": {
+"src": "kokoro",
+"text": "dairy",
+"voice": "af_heart"
 },
 "w/75-24.mp3": {
 "from": "/audio/l9/74.mp3",
 "src": "gemini-kore",
 "text": "allergic"
 },
+"w/75-25.mp3": {
+"src": "kokoro",
+"text": "refill",
+"voice": "af_heart"
+},
+"w/75-26.mp3": {
+"src": "kokoro",
+"text": "leftovers",
+"voice": "af_heart"
+},
+"w/75-27.mp3": {
+"src": "kokoro",
+"text": "service charge",
+"voice": "af_heart"
+},
 "w/75-28.mp3": {
 "from": "/audio/l7/468.mp3",
 "src": "gemini-kore",
 "text": "tab"
+},
+"w/75-29.mp3": {
+"src": "kokoro",
+"text": "on the house",
+"voice": "af_heart"
 },
 "w/75-30.mp3": {
 "from": "/audio/l4/127.mp3",
@@ -17764,10 +21554,25 @@
 "src": "gemini-kore",
 "text": "doorman"
 },
+"w/75-32.mp3": {
+"src": "kokoro",
+"text": "late checkout",
+"voice": "af_heart"
+},
+"w/75-33.mp3": {
+"src": "kokoro",
+"text": "minibar",
+"voice": "af_heart"
+},
 "w/75-34.mp3": {
 "from": "/audio/l12/34.mp3",
 "src": "gemini-kore",
 "text": "authentic"
+},
+"w/75-35.mp3": {
+"src": "kokoro",
+"text": "toiletries",
+"voice": "af_heart"
 },
 "w/75-36.mp3": {
 "from": "/audio/l8/376.mp3",
@@ -17779,6 +21584,11 @@
 "src": "gemini-kore",
 "text": "fitness center"
 },
+"w/75-38.mp3": {
+"src": "kokoro",
+"text": "spa",
+"voice": "af_heart"
+},
 "w/75-39.mp3": {
 "from": "/audio/l5/523.mp3",
 "src": "gemini-kore",
@@ -17789,20 +21599,60 @@
 "src": "gemini-kore",
 "text": "balcony"
 },
+"w/76-01.mp3": {
+"src": "kokoro",
+"text": "northbound",
+"voice": "af_heart"
+},
+"w/76-02.mp3": {
+"src": "kokoro",
+"text": "southbound",
+"voice": "af_heart"
+},
 "w/76-03.mp3": {
 "from": "/audio/l2/233.mp3",
 "src": "gemini-kore",
 "text": "garage"
+},
+"w/76-04.mp3": {
+"src": "kokoro",
+"text": "gridlock",
+"voice": "af_heart"
 },
 "w/76-05.mp3": {
 "from": "/audio/l12/475.mp3",
 "src": "gemini-kore",
 "text": "frequency"
 },
+"w/76-06.mp3": {
+"src": "kokoro",
+"text": "stuck",
+"voice": "af_heart"
+},
+"w/76-07.mp3": {
+"src": "kokoro",
+"text": "give a ride",
+"voice": "af_heart"
+},
 "w/76-08.mp3": {
 "from": "/audio/word/30a0d193d4534eb9.mp3",
 "src": "gemini-kore",
 "text": "get on"
+},
+"w/76-09.mp3": {
+"src": "kokoro",
+"text": "ride-sharing",
+"voice": "af_heart"
+},
+"w/76-10.mp3": {
+"src": "kokoro",
+"text": "monthly pass",
+"voice": "af_heart"
+},
+"w/76-11.mp3": {
+"src": "kokoro",
+"text": "turnstile",
+"voice": "af_heart"
 },
 "w/76-12.mp3": {
 "from": "/audio/l4/185.mp3",
@@ -17814,6 +21664,11 @@
 "src": "gemini-kore",
 "text": "rail"
 },
+"w/76-14.mp3": {
+"src": "kokoro",
+"text": "depot",
+"voice": "af_heart"
+},
 "w/76-15.mp3": {
 "from": "/audio/l6/163.mp3",
 "src": "gemini-kore",
@@ -17824,15 +21679,35 @@
 "src": "gemini-kore",
 "text": "shortcut"
 },
+"w/76-17.mp3": {
+"src": "kokoro",
+"text": "side street",
+"voice": "af_heart"
+},
 "w/76-18.mp3": {
 "from": "/audio/l7/204.mp3",
 "src": "gemini-kore",
 "text": "boulevard"
 },
+"w/76-19.mp3": {
+"src": "kokoro",
+"text": "freeway",
+"voice": "af_heart"
+},
 "w/76-20.mp3": {
 "from": "/audio/l7/209.mp3",
 "src": "gemini-kore",
 "text": "overpass"
+},
+"w/76-21.mp3": {
+"src": "kokoro",
+"text": "ramp",
+"voice": "af_heart"
+},
+"w/76-22.mp3": {
+"src": "kokoro",
+"text": "tollbooth",
+"voice": "af_heart"
 },
 "w/76-23.mp3": {
 "from": "/audio/l11/82.mp3",
@@ -17849,6 +21724,11 @@
 "src": "gemini-kore",
 "text": "junction"
 },
+"w/76-26.mp3": {
+"src": "kokoro",
+"text": "stop sign",
+"voice": "af_heart"
+},
 "w/76-27.mp3": {
 "from": "/audio/l7/211.mp3",
 "src": "gemini-kore",
@@ -17858,6 +21738,51 @@
 "from": "/audio/l3/518.mp3",
 "src": "gemini-kore",
 "text": "scooter"
+},
+"w/76-29.mp3": {
+"src": "kokoro",
+"text": "intercity",
+"voice": "af_heart"
+},
+"w/76-30.mp3": {
+"src": "kokoro",
+"text": "license plate",
+"voice": "af_heart"
+},
+"w/76-31.mp3": {
+"src": "kokoro",
+"text": "parking space",
+"voice": "af_heart"
+},
+"w/76-32.mp3": {
+"src": "kokoro",
+"text": "parking meter",
+"voice": "af_heart"
+},
+"w/76-33.mp3": {
+"src": "kokoro",
+"text": "parking ticket",
+"voice": "af_heart"
+},
+"w/76-34.mp3": {
+"src": "kokoro",
+"text": "speeding",
+"voice": "af_heart"
+},
+"w/76-35.mp3": {
+"src": "kokoro",
+"text": "off-peak",
+"voice": "af_heart"
+},
+"w/76-36.mp3": {
+"src": "kokoro",
+"text": "door-to-door",
+"voice": "af_heart"
+},
+"w/76-37.mp3": {
+"src": "kokoro",
+"text": "fuel-efficient",
+"voice": "af_heart"
 },
 "w/76-38.mp3": {
 "from": "/audio/l11/376.mp3",
@@ -17869,6 +21794,11 @@
 "src": "gemini-kore",
 "text": "infrastructure"
 },
+"w/76-40.mp3": {
+"src": "kokoro",
+"text": "GPS",
+"voice": "af_heart"
+},
 "w/77-01.mp3": {
 "from": "/audio/l15/208.mp3",
 "src": "gemini-kore",
@@ -17879,15 +21809,90 @@
 "src": "gemini-kore",
 "text": "complex"
 },
+"w/77-03.mp3": {
+"src": "kokoro",
+"text": "interior",
+"voice": "af_heart"
+},
+"w/77-04.mp3": {
+"src": "kokoro",
+"text": "exterior",
+"voice": "af_heart"
+},
 "w/77-05.mp3": {
 "from": "/audio/l17/469.mp3",
 "src": "gemini-kore",
 "text": "dimension"
 },
+"w/77-06.mp3": {
+"src": "kokoro",
+"text": "cramped",
+"voice": "af_heart"
+},
+"w/77-07.mp3": {
+"src": "kokoro",
+"text": "zoning",
+"voice": "af_heart"
+},
+"w/77-08.mp3": {
+"src": "kokoro",
+"text": "move out",
+"voice": "af_heart"
+},
+"w/77-09.mp3": {
+"src": "kokoro",
+"text": "ground floor",
+"voice": "af_heart"
+},
+"w/77-10.mp3": {
+"src": "kokoro",
+"text": "lot",
+"voice": "af_heart"
+},
+"w/77-11.mp3": {
+"src": "kokoro",
+"text": "property manager",
+"voice": "af_heart"
+},
+"w/77-12.mp3": {
+"src": "kokoro",
+"text": "superintendent",
+"voice": "af_heart"
+},
+"w/77-13.mp3": {
+"src": "kokoro",
+"text": "sublet",
+"voice": "af_heart"
+},
+"w/77-14.mp3": {
+"src": "kokoro",
+"text": "evict",
+"voice": "af_heart"
+},
+"w/77-15.mp3": {
+"src": "kokoro",
+"text": "open house",
+"voice": "af_heart"
+},
+"w/77-16.mp3": {
+"src": "kokoro",
+"text": "asking price",
+"voice": "af_heart"
+},
+"w/77-17.mp3": {
+"src": "kokoro",
+"text": "closing costs",
+"voice": "af_heart"
+},
 "w/77-18.mp3": {
 "from": "/audio/l12/63.mp3",
 "src": "gemini-kore",
 "text": "appraise"
+},
+"w/77-19.mp3": {
+"src": "kokoro",
+"text": "property value",
+"voice": "af_heart"
 },
 "w/77-20.mp3": {
 "from": "/audio/l9/84.mp3",
@@ -17899,20 +21904,80 @@
 "src": "gemini-kore",
 "text": "condo"
 },
+"w/77-22.mp3": {
+"src": "kokoro",
+"text": "townhouse",
+"voice": "af_heart"
+},
+"w/77-23.mp3": {
+"src": "kokoro",
+"text": "studio",
+"voice": "af_heart"
+},
+"w/77-24.mp3": {
+"src": "kokoro",
+"text": "loft",
+"voice": "af_heart"
+},
+"w/77-25.mp3": {
+"src": "kokoro",
+"text": "high-rise",
+"voice": "af_heart"
+},
 "w/77-26.mp3": {
 "from": "/audio/l7/198.mp3",
 "src": "gemini-kore",
 "text": "skyscraper"
+},
+"w/77-27.mp3": {
+"src": "kokoro",
+"text": "office space",
+"voice": "af_heart"
+},
+"w/77-28.mp3": {
+"src": "kokoro",
+"text": "square footage",
+"voice": "af_heart"
+},
+"w/77-29.mp3": {
+"src": "kokoro",
+"text": "airy",
+"voice": "af_heart"
+},
+"w/77-30.mp3": {
+"src": "kokoro",
+"text": "natural light",
+"voice": "af_heart"
+},
+"w/77-31.mp3": {
+"src": "kokoro",
+"text": "run-down",
+"voice": "af_heart"
+},
+"w/77-32.mp3": {
+"src": "kokoro",
+"text": "unoccupied",
+"voice": "af_heart"
 },
 "w/77-33.mp3": {
 "from": "/audio/l8/394.mp3",
 "src": "gemini-kore",
 "text": "occupy"
 },
+"w/77-34.mp3": {
+"src": "kokoro",
+"text": "developer",
+"voice": "af_heart"
+},
 "w/77-35.mp3": {
 "from": "/audio/l14/79.mp3",
 "src": "gemini-kore",
 "text": "excavation"
+},
+"w/77-36.mp3": {
+"src": "kokoro",
+"text": "bulldozer",
+"voice": "af_heart"
 },
 "w/77-37.mp3": {
 "from": "/audio/l12/197.mp3",
@@ -17929,6 +21994,21 @@
 "src": "gemini-kore",
 "text": "plumbing"
 },
+"w/77-40.mp3": {
+"src": "kokoro",
+"text": "wiring",
+"voice": "af_heart"
+},
+"w/78-01.mp3": {
+"src": "kokoro",
+"text": "format",
+"voice": "af_heart"
+},
+"w/78-02.mp3": {
+"src": "kokoro",
+"text": "compress",
+"voice": "af_heart"
+},
 "w/78-03.mp3": {
 "from": "/audio/l16/597.mp3",
 "src": "gemini-kore",
@@ -17944,10 +22024,35 @@
 "src": "gemini-kore",
 "text": "firewall"
 },
+"w/78-06.mp3": {
+"src": "kokoro",
+"text": "help desk",
+"voice": "af_heart"
+},
+"w/78-07.mp3": {
+"src": "kokoro",
+"text": "technical difficulties",
+"voice": "af_heart"
+},
 "w/78-08.mp3": {
 "from": "/audio/l9/281.mp3",
 "src": "gemini-kore",
 "text": "operating system"
+},
+"w/78-09.mp3": {
+"src": "kokoro",
+"text": "log off",
+"voice": "af_heart"
+},
+"w/78-10.mp3": {
+"src": "kokoro",
+"text": "sign in",
+"voice": "af_heart"
+},
+"w/78-11.mp3": {
+"src": "kokoro",
+"text": "hook up",
+"voice": "af_heart"
 },
 "w/78-12.mp3": {
 "from": "/audio/l3/590.mp3",
@@ -17968,6 +22073,11 @@
 "from": "/audio/l16/476.mp3",
 "src": "gemini-kore",
 "text": "broadband"
+},
+"w/78-16.mp3": {
+"src": "kokoro",
+"text": "analytics",
+"voice": "af_heart"
 },
 "w/78-17.mp3": {
 "from": "/audio/l7/463.mp3",
@@ -17994,6 +22104,11 @@
 "src": "gemini-kore",
 "text": "hard drive"
 },
+"w/78-22.mp3": {
+"src": "kokoro",
+"text": "flash drive",
+"voice": "af_heart"
+},
 "w/78-23.mp3": {
 "from": "/audio/l6/357.mp3",
 "src": "gemini-kore",
@@ -18004,55 +22119,220 @@
 "src": "gemini-kore",
 "text": "peripheral"
 },
+"w/78-25.mp3": {
+"src": "kokoro",
+"text": "headset",
+"voice": "af_heart"
+},
 "w/78-26.mp3": {
 "from": "/audio/l6/282.mp3",
 "src": "gemini-kore",
 "text": "webcam"
+},
+"w/78-27.mp3": {
+"src": "kokoro",
+"text": "touch screen",
+"voice": "af_heart"
 },
 "w/78-28.mp3": {
 "from": "/audio/l7/474.mp3",
 "src": "gemini-kore",
 "text": "resolution"
 },
+"w/78-29.mp3": {
+"src": "kokoro",
+"text": "graphics",
+"voice": "af_heart"
+},
 "w/78-30.mp3": {
 "from": "/audio/l12/537.mp3",
 "src": "gemini-kore",
 "text": "processor"
+},
+"w/78-31.mp3": {
+"src": "kokoro",
+"text": "patch",
+"voice": "af_heart"
 },
 "w/78-32.mp3": {
 "from": "/audio/l9/242.mp3",
 "src": "gemini-kore",
 "text": "uninstall"
 },
+"w/78-33.mp3": {
+"src": "kokoro",
+"text": "add-on",
+"voice": "af_heart"
+},
+"w/78-34.mp3": {
+"src": "kokoro",
+"text": "dashboard",
+"voice": "af_heart"
+},
+"w/78-35.mp3": {
+"src": "kokoro",
+"text": "cloud-based",
+"voice": "af_heart"
+},
 "w/78-36.mp3": {
 "from": "/audio/l12/539.mp3",
 "src": "gemini-kore",
 "text": "gadget"
+},
+"w/78-37.mp3": {
+"src": "kokoro",
+"text": "handheld",
+"voice": "af_heart"
+},
+"w/78-38.mp3": {
+"src": "kokoro",
+"text": "phishing",
+"voice": "af_heart"
 },
 "w/78-39.mp3": {
 "from": "/audio/l10/125.mp3",
 "src": "gemini-kore",
 "text": "vulnerability"
 },
+"w/78-40.mp3": {
+"src": "kokoro",
+"text": "webinar",
+"voice": "af_heart"
+},
 "w/79-01.mp3": {
 "from": "/audio/l9/395.mp3",
 "src": "gemini-kore",
 "text": "reunion"
+},
+"w/79-02.mp3": {
+"src": "kokoro",
+"text": "registration desk",
+"voice": "af_heart"
+},
+"w/79-03.mp3": {
+"src": "kokoro",
+"text": "headliner",
+"voice": "af_heart"
+},
+"w/79-04.mp3": {
+"src": "kokoro",
+"text": "keynote address",
+"voice": "af_heart"
+},
+"w/79-05.mp3": {
+"src": "kokoro",
+"text": "opening remarks",
+"voice": "af_heart"
+},
+"w/79-06.mp3": {
+"src": "kokoro",
+"text": "black-tie",
+"voice": "af_heart"
+},
+"w/79-07.mp3": {
+"src": "kokoro",
+"text": "business casual",
+"voice": "af_heart"
+},
+"w/79-08.mp3": {
+"src": "kokoro",
+"text": "invitee",
+"voice": "af_heart"
+},
+"w/79-09.mp3": {
+"src": "kokoro",
+"text": "guest list",
+"voice": "af_heart"
+},
+"w/79-10.mp3": {
+"src": "kokoro",
+"text": "head count",
+"voice": "af_heart"
+},
+"w/79-11.mp3": {
+"src": "kokoro",
+"text": "sold-out",
+"voice": "af_heart"
+},
+"w/79-12.mp3": {
+"src": "kokoro",
+"text": "seating chart",
+"voice": "af_heart"
+},
+"w/79-13.mp3": {
+"src": "kokoro",
+"text": "front row",
+"voice": "af_heart"
+},
+"w/79-14.mp3": {
+"src": "kokoro",
+"text": "audiovisual",
+"voice": "af_heart"
+},
+"w/79-15.mp3": {
+"src": "kokoro",
+"text": "sound system",
+"voice": "af_heart"
+},
+"w/79-16.mp3": {
+"src": "kokoro",
+"text": "lectern",
+"voice": "af_heart"
+},
+"w/79-17.mp3": {
+"src": "kokoro",
+"text": "backstage",
+"voice": "af_heart"
+},
+"w/79-18.mp3": {
+"src": "kokoro",
+"text": "rehearse",
+"voice": "af_heart"
+},
+"w/79-19.mp3": {
+"src": "kokoro",
+"text": "run-through",
+"voice": "af_heart"
+},
+"w/79-20.mp3": {
+"src": "kokoro",
+"text": "organizing committee",
+"voice": "af_heart"
 },
 "w/79-21.mp3": {
 "from": "/audio/l6/432.mp3",
 "src": "gemini-kore",
 "text": "committee"
 },
+"w/79-22.mp3": {
+"src": "kokoro",
+"text": "usher",
+"voice": "af_heart"
+},
 "w/79-23.mp3": {
 "from": "/audio/l3/87.mp3",
 "src": "gemini-kore",
 "text": "stand"
 },
+"w/79-24.mp3": {
+"src": "kokoro",
+"text": "raffle",
+"voice": "af_heart"
+},
+"w/79-25.mp3": {
+"src": "kokoro",
+"text": "auction",
+"voice": "af_heart"
+},
 "w/79-26.mp3": {
 "from": "/audio/l8/168.mp3",
 "src": "gemini-kore",
 "text": "pledge"
+},
+"w/79-27.mp3": {
+"src": "kokoro",
+"text": "benefactor",
+"voice": "af_heart"
 },
 "w/79-28.mp3": {
 "from": "/audio/l15/546.mp3",
@@ -18064,30 +22344,75 @@
 "src": "gemini-kore",
 "text": "proceeds"
 },
+"w/79-30.mp3": {
+"src": "kokoro",
+"text": "lanyard",
+"voice": "af_heart"
+},
+"w/79-31.mp3": {
+"src": "kokoro",
+"text": "mingle",
+"voice": "af_heart"
+},
 "w/79-32.mp3": {
 "from": "/audio/l5/118.mp3",
 "src": "gemini-kore",
 "text": "socialize"
+},
+"w/79-33.mp3": {
+"src": "kokoro",
+"text": "icebreaker",
+"voice": "af_heart"
 },
 "w/79-34.mp3": {
 "from": "/audio/l11/421.mp3",
 "src": "gemini-kore",
 "text": "concurrent"
 },
+"w/79-35.mp3": {
+"src": "kokoro",
+"text": "plenary",
+"voice": "af_heart"
+},
+"w/79-36.mp3": {
+"src": "kokoro",
+"text": "roundtable",
+"voice": "af_heart"
+},
 "w/79-37.mp3": {
 "from": "/audio/l13/406.mp3",
 "src": "gemini-kore",
 "text": "panel"
+},
+"w/79-38.mp3": {
+"src": "kokoro",
+"text": "forum",
+"voice": "af_heart"
 },
 "w/79-39.mp3": {
 "from": "/audio/l5/447.mp3",
 "src": "gemini-kore",
 "text": "summit"
 },
+"w/79-40.mp3": {
+"src": "kokoro",
+"text": "commemorative",
+"voice": "af_heart"
+},
 "w/80-01.mp3": {
 "from": "/audio/l13/274.mp3",
 "src": "gemini-kore",
 "text": "grant"
+},
+"w/80-02.mp3": {
+"src": "kokoro",
+"text": "on-the-job training",
+"voice": "af_heart"
+},
+"w/80-03.mp3": {
+"src": "kokoro",
+"text": "interactive",
+"voice": "af_heart"
 },
 "w/80-04.mp3": {
 "from": "/audio/l13/382.mp3",
@@ -18099,10 +22424,30 @@
 "src": "gemini-kore",
 "text": "rigorous"
 },
+"w/80-06.mp3": {
+"src": "kokoro",
+"text": "accredited",
+"voice": "af_heart"
+},
+"w/80-07.mp3": {
+"src": "kokoro",
+"text": "e-learning",
+"voice": "af_heart"
+},
+"w/80-08.mp3": {
+"src": "kokoro",
+"text": "skill set",
+"voice": "af_heart"
+},
 "w/80-09.mp3": {
 "from": "/audio/l10/568.mp3",
 "src": "gemini-kore",
 "text": "brush up on"
+},
+"w/80-10.mp3": {
+"src": "kokoro",
+"text": "sit in on",
+"voice": "af_heart"
 },
 "w/80-11.mp3": {
 "from": "/audio/l9/479.mp3",
@@ -18119,10 +22464,20 @@
 "src": "gemini-kore",
 "text": "case study"
 },
+"w/80-14.mp3": {
+"src": "kokoro",
+"text": "role-play",
+"voice": "af_heart"
+},
 "w/80-15.mp3": {
 "from": "/audio/l12/195.mp3",
 "src": "gemini-kore",
 "text": "theoretical"
+},
+"w/80-16.mp3": {
+"src": "kokoro",
+"text": "fundamentals",
+"voice": "af_heart"
 },
 "w/80-17.mp3": {
 "from": "/audio/l13/387.mp3",
@@ -18149,6 +22504,36 @@
 "src": "gemini-kore",
 "text": "cohort"
 },
+"w/80-22.mp3": {
+"src": "kokoro",
+"text": "self-paced",
+"voice": "af_heart"
+},
+"w/80-23.mp3": {
+"src": "kokoro",
+"text": "online course",
+"voice": "af_heart"
+},
+"w/80-24.mp3": {
+"src": "kokoro",
+"text": "boot camp",
+"voice": "af_heart"
+},
+"w/80-25.mp3": {
+"src": "kokoro",
+"text": "crash course",
+"voice": "af_heart"
+},
+"w/80-26.mp3": {
+"src": "kokoro",
+"text": "continuing education",
+"voice": "af_heart"
+},
+"w/80-27.mp3": {
+"src": "kokoro",
+"text": "vocational",
+"voice": "af_heart"
+},
 "w/80-28.mp3": {
 "from": "/audio/l13/295.mp3",
 "src": "gemini-kore",
@@ -18158,6 +22543,16 @@
 "from": "/audio/l13/322.mp3",
 "src": "gemini-kore",
 "text": "undergraduate"
+},
+"w/80-30.mp3": {
+"src": "kokoro",
+"text": "doctorate",
+"voice": "af_heart"
+},
+"w/80-31.mp3": {
+"src": "kokoro",
+"text": "MBA",
+"voice": "af_heart"
 },
 "w/80-32.mp3": {
 "from": "/audio/l13/360.mp3",
@@ -18174,6 +22569,11 @@
 "src": "gemini-kore",
 "text": "literacy"
 },
+"w/80-35.mp3": {
+"src": "kokoro",
+"text": "lifelong",
+"voice": "af_heart"
+},
 "w/80-36.mp3": {
 "from": "/audio/l13/368.mp3",
 "src": "gemini-kore",
@@ -18188,6 +22588,11 @@
 "from": "/audio/l13/258.mp3",
 "src": "gemini-kore",
 "text": "dean"
+},
+"w/80-39.mp3": {
+"src": "kokoro",
+"text": "commencement",
+"voice": "af_heart"
 },
 "w/80-40.mp3": {
 "from": "/audio/l5/87.mp3",
@@ -18208,6 +22613,16 @@
 "from": "/audio/l11/4.mp3",
 "src": "gemini-kore",
 "text": "admire"
+},
+"w/81-04.mp3": {
+"src": "kokoro",
+"text": "amateur",
+"voice": "af_heart"
+},
+"w/81-05.mp3": {
+"src": "kokoro",
+"text": "enthusiast",
+"voice": "af_heart"
 },
 "w/81-06.mp3": {
 "from": "/audio/l9/574.mp3",
@@ -18233,6 +22648,11 @@
 "from": "/audio/l12/276.mp3",
 "src": "gemini-kore",
 "text": "diversity"
+},
+"w/81-11.mp3": {
+"src": "kokoro",
+"text": "rating",
+"voice": "af_heart"
 },
 "w/81-12.mp3": {
 "from": "/audio/l4/138.mp3",
@@ -18264,6 +22684,16 @@
 "src": "gemini-kore",
 "text": "abstract"
 },
+"w/81-18.mp3": {
+"src": "kokoro",
+"text": "fine arts",
+"voice": "af_heart"
+},
+"w/81-19.mp3": {
+"src": "kokoro",
+"text": "performing arts",
+"voice": "af_heart"
+},
 "w/81-20.mp3": {
 "from": "/audio/l14/92.mp3",
 "src": "gemini-kore",
@@ -18274,10 +22704,20 @@
 "src": "gemini-kore",
 "text": "handmade"
 },
+"w/81-22.mp3": {
+"src": "kokoro",
+"text": "handcrafted",
+"voice": "af_heart"
+},
 "w/81-23.mp3": {
 "from": "/audio/l8/361.mp3",
 "src": "gemini-kore",
 "text": "antique"
+},
+"w/81-24.mp3": {
+"src": "kokoro",
+"text": "vintage",
+"voice": "af_heart"
 },
 "w/81-25.mp3": {
 "from": "/audio/l14/66.mp3",
@@ -18294,25 +22734,60 @@
 "src": "gemini-kore",
 "text": "restoration"
 },
+"w/81-28.mp3": {
+"src": "kokoro",
+"text": "preservation",
+"voice": "af_heart"
+},
 "w/81-29.mp3": {
 "from": "/audio/l7/238.mp3",
 "src": "gemini-kore",
 "text": "botanical garden"
+},
+"w/81-30.mp3": {
+"src": "kokoro",
+"text": "memorabilia",
+"voice": "af_heart"
 },
 "w/81-31.mp3": {
 "from": "/audio/l7/237.mp3",
 "src": "gemini-kore",
 "text": "aquarium"
 },
+"w/81-32.mp3": {
+"src": "kokoro",
+"text": "arts and crafts",
+"voice": "af_heart"
+},
+"w/81-33.mp3": {
+"src": "kokoro",
+"text": "community center",
+"voice": "af_heart"
+},
 "w/81-34.mp3": {
 "from": "/audio/l7/217.mp3",
 "src": "gemini-kore",
 "text": "city hall"
 },
+"w/81-35.mp3": {
+"src": "kokoro",
+"text": "public hearing",
+"voice": "af_heart"
+},
 "w/81-36.mp3": {
 "from": "/audio/l8/159.mp3",
 "src": "gemini-kore",
 "text": "petition"
+},
+"w/81-37.mp3": {
+"src": "kokoro",
+"text": "community garden",
+"voice": "af_heart"
+},
+"w/81-38.mp3": {
+"src": "kokoro",
+"text": "cleanup",
+"voice": "af_heart"
 },
 "w/81-39.mp3": {
 "from": "/audio/l16/272.mp3",
@@ -18329,10 +22804,25 @@
 "src": "gemini-kore",
 "text": "stress"
 },
+"w/82-02.mp3": {
+"src": "kokoro",
+"text": "well-being",
+"voice": "af_heart"
+},
 "w/82-03.mp3": {
 "from": "/audio/l8/513.mp3",
 "src": "gemini-kore",
 "text": "lifestyle"
+},
+"w/82-04.mp3": {
+"src": "kokoro",
+"text": "prevention",
+"voice": "af_heart"
+},
+"w/82-05.mp3": {
+"src": "kokoro",
+"text": "preventive",
+"voice": "af_heart"
 },
 "w/82-06.mp3": {
 "from": "/audio/l15/408.mp3",
@@ -18349,6 +22839,11 @@
 "src": "gemini-kore",
 "text": "disability"
 },
+"w/82-09.mp3": {
+"src": "kokoro",
+"text": "life insurance",
+"voice": "af_heart"
+},
 "w/82-10.mp3": {
 "from": "/audio/l13/497.mp3",
 "src": "gemini-kore",
@@ -18358,6 +22853,11 @@
 "from": "/audio/l8/3.mp3",
 "src": "gemini-kore",
 "text": "admit"
+},
+"w/82-12.mp3": {
+"src": "kokoro",
+"text": "urgent care",
+"voice": "af_heart"
 },
 "w/82-13.mp3": {
 "from": "/audio/l4/593.mp3",
@@ -18369,10 +22869,20 @@
 "src": "gemini-kore",
 "text": "wheelchair"
 },
+"w/82-15.mp3": {
+"src": "kokoro",
+"text": "bandage",
+"voice": "af_heart"
+},
 "w/82-16.mp3": {
 "from": "/audio/l4/245.mp3",
 "src": "gemini-kore",
 "text": "X-ray"
+},
+"w/82-17.mp3": {
+"src": "kokoro",
+"text": "blood test",
+"voice": "af_heart"
 },
 "w/82-18.mp3": {
 "from": "/audio/l4/271.mp3",
@@ -18409,10 +22919,20 @@
 "src": "gemini-kore",
 "text": "epidemic"
 },
+"w/82-25.mp3": {
+"src": "kokoro",
+"text": "physical therapy",
+"voice": "af_heart"
+},
 "w/82-26.mp3": {
 "from": "/audio/l4/304.mp3",
 "src": "gemini-kore",
 "text": "sore throat"
+},
+"w/82-27.mp3": {
+"src": "kokoro",
+"text": "flu shot",
+"voice": "af_heart"
 },
 "w/82-28.mp3": {
 "from": "/audio/l4/279.mp3",
@@ -18444,6 +22964,11 @@
 "src": "gemini-kore",
 "text": "swelling"
 },
+"w/82-34.mp3": {
+"src": "kokoro",
+"text": "painkiller",
+"voice": "af_heart"
+},
 "w/82-35.mp3": {
 "from": "/audio/l12/447.mp3",
 "src": "gemini-kore",
@@ -18458,6 +22983,11 @@
 "from": "/audio/l4/301.mp3",
 "src": "gemini-kore",
 "text": "capsule"
+},
+"w/82-38.mp3": {
+"src": "kokoro",
+"text": "ointment",
+"voice": "af_heart"
 },
 "w/82-39.mp3": {
 "from": "/audio/l13/586.mp3",
@@ -18483,6 +23013,36 @@
 "from": "/audio/l4/30.mp3",
 "src": "gemini-kore",
 "text": "firefighter"
+},
+"w/83-04.mp3": {
+"src": "kokoro",
+"text": "sprinkler",
+"voice": "af_heart"
+},
+"w/83-05.mp3": {
+"src": "kokoro",
+"text": "smoke detector",
+"voice": "af_heart"
+},
+"w/83-06.mp3": {
+"src": "kokoro",
+"text": "precautionary",
+"voice": "af_heart"
+},
+"w/83-07.mp3": {
+"src": "kokoro",
+"text": "slippery",
+"voice": "af_heart"
+},
+"w/83-08.mp3": {
+"src": "kokoro",
+"text": "hard hat",
+"voice": "af_heart"
+},
+"w/83-09.mp3": {
+"src": "kokoro",
+"text": "goggles",
+"voice": "af_heart"
 },
 "w/83-10.mp3": {
 "from": "/audio/l12/22.mp3",
@@ -18524,20 +23084,60 @@
 "src": "gemini-kore",
 "text": "wind turbine"
 },
+"w/83-18.mp3": {
+"src": "kokoro",
+"text": "solar power",
+"voice": "af_heart"
+},
 "w/83-19.mp3": {
 "from": "/audio/l12/477.mp3",
 "src": "gemini-kore",
 "text": "nuclear"
+},
+"w/83-20.mp3": {
+"src": "kokoro",
+"text": "natural gas",
+"voice": "af_heart"
+},
+"w/83-21.mp3": {
+"src": "kokoro",
+"text": "coal",
+"voice": "af_heart"
+},
+"w/83-22.mp3": {
+"src": "kokoro",
+"text": "power grid",
+"voice": "af_heart"
+},
+"w/83-23.mp3": {
+"src": "kokoro",
+"text": "blackout",
+"voice": "af_heart"
 },
 "w/83-24.mp3": {
 "from": "/audio/l8/266.mp3",
 "src": "gemini-kore",
 "text": "generator"
 },
+"w/83-25.mp3": {
+"src": "kokoro",
+"text": "thermostat",
+"voice": "af_heart"
+},
+"w/83-26.mp3": {
+"src": "kokoro",
+"text": "light bulb",
+"voice": "af_heart"
+},
 "w/83-27.mp3": {
 "from": "/audio/l16/446.mp3",
 "src": "gemini-kore",
 "text": "irrigation"
+},
+"w/83-28.mp3": {
+"src": "kokoro",
+"text": "wastewater",
+"voice": "af_heart"
 },
 "w/83-29.mp3": {
 "from": "/audio/l5/429.mp3",
@@ -18579,15 +23179,35 @@
 "src": "gemini-kore",
 "text": "recyclable"
 },
+"w/83-37.mp3": {
+"src": "kokoro",
+"text": "single-use",
+"voice": "af_heart"
+},
 "w/83-38.mp3": {
 "from": "/audio/l13/40.mp3",
 "src": "gemini-kore",
 "text": "exhaust"
 },
+"w/83-39.mp3": {
+"src": "kokoro",
+"text": "occupational",
+"voice": "af_heart"
+},
+"w/83-40.mp3": {
+"src": "kokoro",
+"text": "extinguish",
+"voice": "af_heart"
+},
 "w/84-01.mp3": {
 "from": "/audio/l13/489.mp3",
 "src": "gemini-kore",
 "text": "uphold"
+},
+"w/84-02.mp3": {
+"src": "kokoro",
+"text": "conform to",
+"voice": "af_heart"
 },
 "w/84-03.mp3": {
 "from": "/audio/l15/472.mp3",
@@ -18598,6 +23218,11 @@
 "from": "/audio/l13/493.mp3",
 "src": "gemini-kore",
 "text": "safeguard"
+},
+"w/84-05.mp3": {
+"src": "kokoro",
+"text": "disclaimer",
+"voice": "af_heart"
 },
 "w/84-06.mp3": {
 "from": "/audio/l15/172.mp3",
@@ -18634,6 +23259,11 @@
 "src": "gemini-kore",
 "text": "verdict"
 },
+"w/84-13.mp3": {
+"src": "kokoro",
+"text": "ruling",
+"voice": "af_heart"
+},
 "w/84-14.mp3": {
 "from": "/audio/l15/73.mp3",
 "src": "gemini-kore",
@@ -18649,6 +23279,16 @@
 "src": "gemini-kore",
 "text": "jury"
 },
+"w/84-17.mp3": {
+"src": "kokoro",
+"text": "legal action",
+"voice": "af_heart"
+},
+"w/84-18.mp3": {
+"src": "kokoro",
+"text": "damages",
+"voice": "af_heart"
+},
 "w/84-19.mp3": {
 "from": "/audio/l15/149.mp3",
 "src": "gemini-kore",
@@ -18658,6 +23298,11 @@
 "from": "/audio/l14/218.mp3",
 "src": "gemini-kore",
 "text": "void"
+},
+"w/84-21.mp3": {
+"src": "kokoro",
+"text": "enforceable",
+"voice": "af_heart"
 },
 "w/84-22.mp3": {
 "from": "/audio/l15/68.mp3",
@@ -18669,6 +23314,16 @@
 "src": "gemini-kore",
 "text": "statutory"
 },
+"w/84-24.mp3": {
+"src": "kokoro",
+"text": "bylaw",
+"voice": "af_heart"
+},
+"w/84-25.mp3": {
+"src": "kokoro",
+"text": "charter",
+"voice": "af_heart"
+},
 "w/84-26.mp3": {
 "from": "/audio/l15/79.mp3",
 "src": "gemini-kore",
@@ -18679,15 +23334,35 @@
 "src": "gemini-kore",
 "text": "legislature"
 },
+"w/84-28.mp3": {
+"src": "kokoro",
+"text": "lawmaker",
+"voice": "af_heart"
+},
 "w/84-29.mp3": {
 "from": "/audio/l15/489.mp3",
 "src": "gemini-kore",
 "text": "regulator"
 },
+"w/84-30.mp3": {
+"src": "kokoro",
+"text": "watchdog",
+"voice": "af_heart"
+},
+"w/84-31.mp3": {
+"src": "kokoro",
+"text": "governing body",
+"voice": "af_heart"
+},
 "w/84-32.mp3": {
 "from": "/audio/l12/286.mp3",
 "src": "gemini-kore",
 "text": "federal"
+},
+"w/84-33.mp3": {
+"src": "kokoro",
+"text": "notarize",
+"voice": "af_heart"
 },
 "w/84-34.mp3": {
 "from": "/audio/l15/176.mp3",
@@ -18704,15 +23379,75 @@
 "src": "gemini-kore",
 "text": "proof"
 },
+"w/84-37.mp3": {
+"src": "kokoro",
+"text": "documentation",
+"voice": "af_heart"
+},
+"w/84-38.mp3": {
+"src": "kokoro",
+"text": "disclosure",
+"voice": "af_heart"
+},
+"w/84-39.mp3": {
+"src": "kokoro",
+"text": "classified",
+"voice": "af_heart"
+},
+"w/84-40.mp3": {
+"src": "kokoro",
+"text": "trade secret",
+"voice": "af_heart"
+},
 "w/85-01.mp3": {
 "from": "/audio/l6/66.mp3",
 "src": "gemini-kore",
 "text": "principal"
 },
+"w/85-02.mp3": {
+"src": "kokoro",
+"text": "interest-free",
+"voice": "af_heart"
+},
+"w/85-03.mp3": {
+"src": "kokoro",
+"text": "vault",
+"voice": "af_heart"
+},
+"w/85-04.mp3": {
+"src": "kokoro",
+"text": "cashless",
+"voice": "af_heart"
+},
+"w/85-05.mp3": {
+"src": "kokoro",
+"text": "banknote",
+"voice": "af_heart"
+},
 "w/85-06.mp3": {
 "from": "/audio/l15/484.mp3",
 "src": "gemini-kore",
 "text": "payout"
+},
+"w/85-07.mp3": {
+"src": "kokoro",
+"text": "creditworthy",
+"voice": "af_heart"
+},
+"w/85-08.mp3": {
+"src": "kokoro",
+"text": "overdrawn",
+"voice": "af_heart"
+},
+"w/85-09.mp3": {
+"src": "kokoro",
+"text": "account number",
+"voice": "af_heart"
+},
+"w/85-10.mp3": {
+"src": "kokoro",
+"text": "joint account",
+"voice": "af_heart"
 },
 "w/85-11.mp3": {
 "from": "/audio/l15/436.mp3",
@@ -18729,6 +23464,11 @@
 "src": "gemini-kore",
 "text": "broker"
 },
+"w/85-14.mp3": {
+"src": "kokoro",
+"text": "annuity",
+"voice": "af_heart"
+},
 "w/85-15.mp3": {
 "from": "/audio/l11/275.mp3",
 "src": "gemini-kore",
@@ -18739,10 +23479,45 @@
 "src": "gemini-kore",
 "text": "refinance"
 },
+"w/85-17.mp3": {
+"src": "kokoro",
+"text": "loan officer",
+"voice": "af_heart"
+},
+"w/85-18.mp3": {
+"src": "kokoro",
+"text": "pre-approved",
+"voice": "af_heart"
+},
+"w/85-19.mp3": {
+"src": "kokoro",
+"text": "credit check",
+"voice": "af_heart"
+},
 "w/85-20.mp3": {
 "from": "/audio/l15/579.mp3",
 "src": "gemini-kore",
 "text": "unsecured"
+},
+"w/85-21.mp3": {
+"src": "kokoro",
+"text": "foreclosure",
+"voice": "af_heart"
+},
+"w/85-22.mp3": {
+"src": "kokoro",
+"text": "minimum payment",
+"voice": "af_heart"
+},
+"w/85-23.mp3": {
+"src": "kokoro",
+"text": "balance due",
+"voice": "af_heart"
+},
+"w/85-24.mp3": {
+"src": "kokoro",
+"text": "card reader",
+"voice": "af_heart"
 },
 "w/85-25.mp3": {
 "from": "/audio/l6/274.mp3",
@@ -18764,6 +23539,16 @@
 "src": "gemini-kore",
 "text": "bounce"
 },
+"w/85-29.mp3": {
+"src": "kokoro",
+"text": "stop payment",
+"voice": "af_heart"
+},
+"w/85-30.mp3": {
+"src": "kokoro",
+"text": "scam",
+"voice": "af_heart"
+},
 "w/85-31.mp3": {
 "from": "/audio/l7/292.mp3",
 "src": "gemini-kore",
@@ -18773,6 +23558,21 @@
 "from": "/audio/l15/491.mp3",
 "src": "gemini-kore",
 "text": "remittance"
+},
+"w/85-33.mp3": {
+"src": "kokoro",
+"text": "recurring",
+"voice": "af_heart"
+},
+"w/85-34.mp3": {
+"src": "kokoro",
+"text": "cosigner",
+"voice": "af_heart"
+},
+"w/85-35.mp3": {
+"src": "kokoro",
+"text": "guarantor",
+"voice": "af_heart"
 },
 "w/85-36.mp3": {
 "from": "/audio/l18/44.mp3",
@@ -18789,30 +23589,95 @@
 "src": "gemini-kore",
 "text": "economize"
 },
+"w/85-39.mp3": {
+"src": "kokoro",
+"text": "fixed-rate",
+"voice": "af_heart"
+},
 "w/85-40.mp3": {
 "from": "/audio/l15/582.mp3",
 "src": "gemini-kore",
 "text": "taxable"
+},
+"w/86-01.mp3": {
+"src": "kokoro",
+"text": "viewer",
+"voice": "af_heart"
+},
+"w/86-02.mp3": {
+"src": "kokoro",
+"text": "documentary",
+"voice": "af_heart"
 },
 "w/86-03.mp3": {
 "from": "/audio/l13/340.mp3",
 "src": "gemini-kore",
 "text": "clarification"
 },
+"w/86-04.mp3": {
+"src": "kokoro",
+"text": "viewership",
+"voice": "af_heart"
+},
+"w/86-05.mp3": {
+"src": "kokoro",
+"text": "media outlet",
+"voice": "af_heart"
+},
+"w/86-06.mp3": {
+"src": "kokoro",
+"text": "newsroom",
+"voice": "af_heart"
+},
 "w/86-07.mp3": {
 "from": "/audio/l7/446.mp3",
 "src": "gemini-kore",
 "text": "breaking news"
+},
+"w/86-08.mp3": {
+"src": "kokoro",
+"text": "op-ed",
+"voice": "af_heart"
 },
 "w/86-09.mp3": {
 "from": "/audio/l13/343.mp3",
 "src": "gemini-kore",
 "text": "commentary"
 },
+"w/86-10.mp3": {
+"src": "kokoro",
+"text": "commentator",
+"voice": "af_heart"
+},
+"w/86-11.mp3": {
+"src": "kokoro",
+"text": "photojournalist",
+"voice": "af_heart"
+},
 "w/86-12.mp3": {
 "from": "/audio/l6/487.mp3",
 "src": "gemini-kore",
 "text": "producer"
+},
+"w/86-13.mp3": {
+"src": "kokoro",
+"text": "on air",
+"voice": "af_heart"
+},
+"w/86-14.mp3": {
+"src": "kokoro",
+"text": "prime time",
+"voice": "af_heart"
+},
+"w/86-15.mp3": {
+"src": "kokoro",
+"text": "rerun",
+"voice": "af_heart"
+},
+"w/86-16.mp3": {
+"src": "kokoro",
+"text": "infographic",
+"voice": "af_heart"
 },
 "w/86-17.mp3": {
 "from": "/audio/l12/67.mp3",
@@ -18829,15 +23694,55 @@
 "src": "gemini-kore",
 "text": "bulletin"
 },
+"w/86-20.mp3": {
+"src": "kokoro",
+"text": "blurb",
+"voice": "af_heart"
+},
+"w/86-21.mp3": {
+"src": "kokoro",
+"text": "hard copy",
+"voice": "af_heart"
+},
 "w/86-22.mp3": {
 "from": "/audio/l6/371.mp3",
 "src": "gemini-kore",
 "text": "e-book"
 },
+"w/86-23.mp3": {
+"src": "kokoro",
+"text": "audiobook",
+"voice": "af_heart"
+},
+"w/86-24.mp3": {
+"src": "kokoro",
+"text": "hardcover",
+"voice": "af_heart"
+},
+"w/86-25.mp3": {
+"src": "kokoro",
+"text": "defamation",
+"voice": "af_heart"
+},
+"w/86-26.mp3": {
+"src": "kokoro",
+"text": "publishing house",
+"voice": "af_heart"
+},
 "w/86-27.mp3": {
 "from": "/audio/l13/394.mp3",
 "src": "gemini-kore",
 "text": "literary"
+},
+"w/86-28.mp3": {
+"src": "kokoro",
+"text": "copy editor",
+"voice": "af_heart"
+},
+"w/86-29.mp3": {
+"src": "kokoro",
+"text": "fact-check",
+"voice": "af_heart"
 },
 "w/86-30.mp3": {
 "from": "/audio/l12/166.mp3",
@@ -18854,15 +23759,40 @@
 "src": "gemini-kore",
 "text": "impartial"
 },
+"w/86-33.mp3": {
+"src": "kokoro",
+"text": "tabloid",
+"voice": "af_heart"
+},
 "w/86-34.mp3": {
 "from": "/audio/l6/106.mp3",
 "src": "gemini-kore",
 "text": "gossip"
 },
+"w/86-35.mp3": {
+"src": "kokoro",
+"text": "scoop",
+"voice": "af_heart"
+},
+"w/86-36.mp3": {
+"src": "kokoro",
+"text": "off the record",
+"voice": "af_heart"
+},
+"w/86-37.mp3": {
+"src": "kokoro",
+"text": "insider",
+"voice": "af_heart"
+},
 "w/86-38.mp3": {
 "from": "/audio/l11/107.mp3",
 "src": "gemini-kore",
 "text": "retract"
+},
+"w/86-39.mp3": {
+"src": "kokoro",
+"text": "retraction",
+"voice": "af_heart"
 },
 "w/86-40.mp3": {
 "from": "/audio/l13/265.mp3",
@@ -19079,6 +24009,11 @@
 "src": "gemini-kore",
 "text": "range"
 },
+"w/88-03.mp3": {
+"src": "kokoro",
+"text": "status",
+"voice": "af_heart"
+},
 "w/88-04.mp3": {
 "from": "/audio/l1/327.mp3",
 "src": "gemini-kore",
@@ -19113,6 +24048,16 @@
 "from": "/audio/l8/162.mp3",
 "src": "gemini-kore",
 "text": "direct"
+},
+"w/88-11.mp3": {
+"src": "kokoro",
+"text": "external",
+"voice": "af_heart"
+},
+"w/88-12.mp3": {
+"src": "kokoro",
+"text": "internal",
+"voice": "af_heart"
 },
 "w/88-13.mp3": {
 "from": "/audio/l8/77.mp3",
@@ -19154,6 +24099,16 @@
 "src": "gemini-kore",
 "text": "typical"
 },
+"w/88-21.mp3": {
+"src": "kokoro",
+"text": "arrangement",
+"voice": "af_heart"
+},
+"w/88-22.mp3": {
+"src": "kokoro",
+"text": "availability",
+"voice": "af_heart"
+},
 "w/88-23.mp3": {
 "from": "/audio/l13/10.mp3",
 "src": "gemini-kore",
@@ -19189,6 +24144,11 @@
 "src": "gemini-kore",
 "text": "excessive"
 },
+"w/88-30.mp3": {
+"src": "kokoro",
+"text": "invaluable",
+"voice": "af_heart"
+},
 "w/88-31.mp3": {
 "from": "/audio/l8/216.mp3",
 "src": "gemini-kore",
@@ -19198,6 +24158,11 @@
 "from": "/audio/l10/433.mp3",
 "src": "gemini-kore",
 "text": "consecutive"
+},
+"w/88-33.mp3": {
+"src": "kokoro",
+"text": "foreseeable",
+"voice": "af_heart"
 },
 "w/88-34.mp3": {
 "from": "/audio/l18/47.mp3",
@@ -19304,10 +24269,30 @@
 "src": "gemini-kore",
 "text": "on the other hand"
 },
+"w/89-15.mp3": {
+"src": "kokoro",
+"text": "in contrast",
+"voice": "af_heart"
+},
 "w/89-16.mp3": {
 "from": "/audio/l5/606.mp3",
 "src": "gemini-kore",
 "text": "in other words"
+},
+"w/89-17.mp3": {
+"src": "kokoro",
+"text": "now that",
+"voice": "af_heart"
+},
+"w/89-18.mp3": {
+"src": "kokoro",
+"text": "given that",
+"voice": "af_heart"
+},
+"w/89-19.mp3": {
+"src": "kokoro",
+"text": "even so",
+"voice": "af_heart"
 },
 "w/89-20.mp3": {
 "from": "/audio/l8/425.mp3",
@@ -19339,15 +24324,30 @@
 "src": "gemini-kore",
 "text": "certainly"
 },
+"w/89-26.mp3": {
+"src": "kokoro",
+"text": "expressly",
+"voice": "af_heart"
+},
 "w/89-27.mp3": {
 "from": "/audio/l5/562.mp3",
 "src": "gemini-kore",
 "text": "closely"
 },
+"w/89-28.mp3": {
+"src": "kokoro",
+"text": "equally",
+"voice": "af_heart"
+},
 "w/89-29.mp3": {
 "from": "/audio/l13/596.mp3",
 "src": "gemini-kore",
 "text": "comparatively"
+},
+"w/89-30.mp3": {
+"src": "kokoro",
+"text": "fully",
+"voice": "af_heart"
 },
 "w/89-31.mp3": {
 "from": "/audio/word/d1c4c804d2d80789.mp3",
