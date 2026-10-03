@@ -196,8 +196,8 @@
    5,
    7
   ],
-  "ex": "We hired a freelance graphic *designer* to create a new logo for the bakery.",
-  "exKo": "우리는 빵집의 새 로고를 만들기 위해 프리랜서 그래픽 디자이너를 고용했다.",
+  "ex": "The bakery hired a graphic *designer* to update its menus and storefront sign.",
+  "exKo": "그 빵집은 메뉴판과 매장 간판을 새로 단장하기 위해 그래픽 디자이너를 고용했다.",
   "col": [
    {
     "e": "graphic designer",
@@ -347,7 +347,7 @@
   "ant": "unimaginative",
   "tip": "명사 앞에서 수식하는 형용사로, 동사 invent, 명사 invention, 사람명사 inventor와의 품사 구별 문제가 나온다. Part 7에서 creative, innovative로 바꿔 표현된다.",
   "q": {
-   "s": "The marketing team came up with an ------- way to promote the product using only short social media videos.",
+   "s": "The marketing team proposed an ------- way to promote the product using only short social media videos.",
    "o": [
     "inventive",
     "invention",
@@ -423,8 +423,8 @@
    5,
    7
   ],
-  "ex": "The university received a large grant to fund *research* on renewable energy.",
-  "exKo": "그 대학은 재생 에너지 연구에 쓸 거액의 보조금을 받았다.",
+  "ex": "The university has spent millions of dollars on *research* into renewable energy.",
+  "exKo": "그 대학은 재생 에너지 연구에 수백만 달러를 투자했다.",
   "col": [
    {
     "e": "conduct research",
@@ -565,7 +565,7 @@
   "ant": "",
   "tip": "enhancements to(~에 대한 개선 사항)처럼 전치사 to와 자주 쓰이며, 동사 enhance(향상시키다), 과거분사 enhanced(향상된)와의 품사 구별 문제가 나온다.",
   "q": {
-   "s": "Customer feedback led to several ------- to the mobile banking app, including a faster log-in process.",
+   "s": "Customer feedback led to several ------- to the bank's smartphone app, including a faster log-in process.",
    "o": [
     "enhanced",
     "enhances",
@@ -889,8 +889,8 @@
    5,
    7
   ],
-  "ex": "The new layout of the store is meant to *improve* the flow of customers during busy hours.",
-  "exKo": "매장의 새 배치는 혼잡한 시간대의 고객 동선을 개선하기 위한 것이다.",
+  "ex": "Installing self-checkout machines should *improve* the flow of customers during busy hours.",
+  "exKo": "셀프 계산대를 설치하면 혼잡한 시간대의 고객 흐름이 개선될 것이다.",
   "col": [
    {
     "e": "improve efficiency",
@@ -1047,7 +1047,7 @@
   "ant": "",
   "tip": "가산명사(발명품)와 불가산명사(발명 행위)로 모두 쓰인다. 사람명사 inventor와의 구별, patent an invention(발명품의 특허를 받다) 표현이 출제된다.",
   "q": {
-   "s": "Dr. Shah applied for a patent to protect her ------- from being copied by competitors.",
+   "s": "Mr. Varga's ------- allows farmers to check soil moisture levels from their phones.",
    "o": [
     "inventor",
     "inventive",
@@ -1055,7 +1055,7 @@
     "invent"
    ],
    "a": 2,
-   "k": "소유격 her 뒤 명사 자리이고 경쟁사의 모방으로부터 보호하려는 대상은 사물이므로 invention이 정답이다. inventor는 사람명사라 의미가 맞지 않고, inventive는 형용사, invent는 동사다."
+   "k": "소유격 Mr. Varga's 뒤 명사 자리이고 농부들이 휴대폰으로 토양 수분을 확인하게 해 주는 것은 사물이므로 invention이 정답이다. inventor는 사람명사라 의미가 맞지 않고, inventive는 형용사, invent는 동사다."
   }
  },
  {
@@ -1222,7 +1222,7 @@
   "ant": "",
   "tip": "반품·환불 지문에서 original receipt(영수증 원본), original packaging(원래 포장)이 빈출이다. 부사 originally(원래)와의 품사 구별 문제도 자주 나온다.",
   "q": {
-   "s": "Items may be returned within 30 days if they are still in their ------- packaging.",
+   "s": "Customers who want a refund must bring the product back in its ------- packaging.",
    "o": [
     "original",
     "originally",
@@ -1230,7 +1230,7 @@
     "originate"
    ],
    "a": 0,
-   "k": "소유격 their와 명사 packaging 사이에서 명사를 수식하는 형용사 자리이므로 original이 정답이다. originally는 부사, origin은 명사, originate는 동사다."
+   "k": "소유격 its와 명사 packaging 사이에서 명사를 수식하는 형용사 자리이므로 original이 정답이다. originally는 부사, origin은 명사, originate는 동사다."
   }
  },
  {
@@ -1547,8 +1547,8 @@
    5,
    7
   ],
-  "ex": "Please make sure the shipping address on the form is complete and *accurate*.",
-  "exKo": "양식에 적힌 배송 주소가 빠짐없이 정확한지 확인하기 바란다.",
+  "ex": "Staff must check that the shipping address on each label is *accurate* before sending a package.",
+  "exKo": "직원은 소포를 보내기 전에 각 라벨의 배송 주소가 정확한지 확인해야 한다.",
   "col": [
    {
     "e": "accurate information",
@@ -1712,7 +1712,7 @@
   "ant": "invalidate",
   "tip": "Part 4·7에서 주차권 인증(validate a parking ticket) 표현이 자주 나온다. 형용사 valid(유효한)와 명사 validity(유효성)·validation(검증)의 품사 구별도 출제된다.",
   "q": {
-   "s": "Guests who park in the hotel garage should have their parking tickets ------- at the front desk.",
+   "s": "Guests who park in the hotel garage should have their parking tickets ------- at reception.",
    "o": [
     "validate",
     "validated",
@@ -1836,8 +1836,8 @@
    5,
    7
   ],
-  "ex": "The start-up has come up with a *novel* way to recycle used coffee grounds.",
-  "exKo": "그 신생 기업은 사용한 커피 찌꺼기를 재활용하는 참신한 방법을 생각해 냈다.",
+  "ex": "The start-up has found a *novel* way to recycle used coffee grounds.",
+  "exKo": "그 신생 기업은 사용한 커피 찌꺼기를 재활용하는 참신한 방법을 찾아냈다.",
   "col": [
    {
     "e": "novel idea",
@@ -1990,8 +1990,8 @@
    5,
    7
   ],
-  "ex": "The new stadium features *high-tech* screens that display replays from multiple angles.",
-  "exKo": "새 경기장에는 여러 각도에서 리플레이 장면을 보여 주는 첨단 스크린이 있다.",
+  "ex": "The renovated arena features *high-tech* screens that display replays from multiple angles.",
+  "exKo": "개보수한 경기장에는 여러 각도에서 리플레이 장면을 보여 주는 첨단 스크린이 있다.",
   "col": [
    {
     "e": "high-tech industry",
@@ -2129,7 +2129,7 @@
   "ant": "",
   "tip": "연구 성과나 기술을 시장에 내놓는다는 뜻으로 Part 7에서 bring to market으로 바꿔 표현된다. 명사형 commercialization과 형용사 commercial의 품사 구별 문제가 나온다.",
   "q": {
-   "s": "The research center is looking for an industry partner to help ------- its patented cooling system.",
+   "s": "The research center is looking for an industry partner to help ------- its patented recycling process.",
    "o": [
     "commercial",
     "commercially",
@@ -2183,7 +2183,7 @@
   "ant": "",
   "tip": "commercially/economically viable(상업적·경제적으로 성공 가능한)처럼 부사의 수식을 받는 형태가 빈출이며, Part 7에서 feasible, workable로 바꿔 표현된다.",
   "q": {
-   "s": "The board rejected the proposal because opening a second store in such a small town was not economically -------.",
+   "s": "The committee turned down the plan because opening a second store in such a small town was not economically -------.",
    "o": [
     "eligible",
     "viable",

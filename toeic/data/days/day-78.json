@@ -1,0 +1,1909 @@
+[
+ {
+  "w": "format",
+  "pos": "n",
+  "m": [
+   "형식",
+   "(파일) 포맷",
+   "구성 방식"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Reports must be saved in PDF *format* before they are sent to clients.",
+  "exKo": "보고서는 고객에게 보내기 전에 PDF 형식으로 저장해야 한다.",
+  "col": [
+   {
+    "e": "in PDF format",
+    "k": "PDF 형식으로"
+   },
+   {
+    "e": "file format",
+    "k": "파일 형식"
+   },
+   {
+    "e": "change the format",
+    "k": "형식을 바꾸다"
+   }
+  ],
+  "der": [
+   {
+    "w": "formatting",
+    "pos": "n",
+    "m": "서식"
+   },
+   {
+    "w": "formatted",
+    "pos": "adj",
+    "m": "서식이 지정된"
+   }
+  ],
+  "para": [
+   "layout",
+   "style"
+  ],
+  "ant": "",
+  "tip": "'~ 형식으로'는 전치사 in을 써서 in PDF format처럼 표현한다. 동사로는 '(문서 서식을) 맞추다, (디스크를) 포맷하다'라는 뜻이다.",
+  "q": {
+   "s": "All applications must be submitted in PDF ------- and should not exceed five pages.",
+   "o": [
+    "formation",
+    "formula",
+    "forum",
+    "format"
+   ],
+   "a": 3,
+   "k": "in PDF format은 'PDF 형식으로'라는 뜻이므로 format이 정답이다. formation(형성), formula(공식), forum(토론회)은 파일 형식을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "compress",
+  "pos": "v",
+  "m": [
+   "(파일을) 압축하다",
+   "압축하다, 요약하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Large image files should be *compressed* before they are attached to e-mails.",
+  "exKo": "용량이 큰 이미지 파일은 이메일에 첨부하기 전에 압축해야 한다.",
+  "col": [
+   {
+    "e": "compress a file",
+    "k": "파일을 압축하다"
+   },
+   {
+    "e": "compressed file",
+    "k": "압축 파일"
+   }
+  ],
+  "der": [
+   {
+    "w": "compression",
+    "pos": "n",
+    "m": "압축"
+   }
+  ],
+  "para": [
+   "zip",
+   "shrink",
+   "condense"
+  ],
+  "ant": "decompress",
+  "tip": "compress는 파일 용량을 줄이는 '압축하다'로 IT 지문에 나오며, 명사 compression과 과거분사형 형용사 compressed(compressed file 압축 파일)도 함께 출제된다.",
+  "q": {
+   "s": "Please ------- the video file so that it is small enough to upload to the shared drive.",
+   "o": [
+    "compress",
+    "compose",
+    "comprise",
+    "complement"
+   ],
+   "a": 0,
+   "k": "공유 드라이브에 올릴 수 있을 만큼 작게 만드는 것이므로 '압축하다'라는 뜻의 compress가 정답이다. compose(구성하다), comprise(~으로 이루어지다), complement(보완하다)는 파일 크기를 줄이는 뜻이 없다."
+  }
+ },
+ {
+  "w": "digitize",
+  "pos": "v",
+  "m": [
+   "디지털화하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The library is *digitizing* its old newspapers so that researchers can search them online.",
+  "exKo": "그 도서관은 연구자들이 온라인으로 검색할 수 있도록 옛 신문들을 디지털화하고 있다.",
+  "col": [
+   {
+    "e": "digitize records",
+    "k": "기록을 디지털화하다"
+   },
+   {
+    "e": "digitize documents",
+    "k": "문서를 디지털화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "digital",
+    "pos": "adj",
+    "m": "디지털의"
+   },
+   {
+    "w": "digitization",
+    "pos": "n",
+    "m": "디지털화"
+   }
+  ],
+  "para": [
+   "scan",
+   "convert to digital"
+  ],
+  "ant": "",
+  "tip": "-ize는 동사를 만드는 접미사로, digital(형용사), digitize(동사), digitization(명사)의 품사 구별 문제가 Part 5에 나온다.",
+  "q": {
+   "s": "The clinic hired a temporary assistant to ------- its paper patient records.",
+   "o": [
+    "digital",
+    "digitally",
+    "digitization",
+    "digitize"
+   ],
+   "a": 3,
+   "k": "to부정사 to 뒤에 목적어 its paper patient records를 취하는 동사원형이 필요하므로 digitize가 정답이다. digital은 형용사, digitally는 부사, digitization은 명사이다."
+  }
+ },
+ {
+  "w": "sync",
+  "pos": "v",
+  "m": [
+   "동기화하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The app automatically *syncs* the calendar on your phone with the one on your laptop.",
+  "exKo": "그 앱은 휴대폰의 일정을 노트북의 일정과 자동으로 동기화한다.",
+  "col": [
+   {
+    "e": "sync A with B",
+    "k": "A를 B와 동기화하다"
+   },
+   {
+    "e": "sync data",
+    "k": "데이터를 동기화하다"
+   },
+   {
+    "e": "out of sync",
+    "k": "맞지 않는, 엇갈린"
+   }
+  ],
+  "der": [
+   {
+    "w": "synchronize",
+    "pos": "v",
+    "m": "동기화하다"
+   },
+   {
+    "w": "synchronization",
+    "pos": "n",
+    "m": "동기화"
+   }
+  ],
+  "para": [
+   "synchronize",
+   "update"
+  ],
+  "ant": "",
+  "tip": "sync는 synchronize의 줄임말로 sync A with B 구조로 쓰이며, out of sync(맞지 않는, 엇갈린)는 관용구로도 나온다.",
+  "q": {
+   "s": "Employees should ------- their tablets with the office server so that they always have the latest files.",
+   "o": [
+    "sink",
+    "sing",
+    "sign",
+    "sync"
+   ],
+   "a": 3,
+   "k": "태블릿을 사무실 서버와 맞춰 최신 파일을 유지하는 것이므로 '동기화하다'라는 뜻의 sync가 정답이다. sink(가라앉다), sing(노래하다), sign(서명하다)은 발음이나 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "firewall",
+  "pos": "n",
+  "m": [
+   "방화벽"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The IT team installed a new *firewall* to protect the network from outside attacks.",
+  "exKo": "IT팀은 외부 공격으로부터 네트워크를 보호하기 위해 새 방화벽을 설치했다.",
+  "col": [
+   {
+    "e": "install a firewall",
+    "k": "방화벽을 설치하다"
+   },
+   {
+    "e": "firewall settings",
+    "k": "방화벽 설정"
+   }
+  ],
+  "der": [],
+  "para": [
+   "security barrier"
+  ],
+  "ant": "",
+  "tip": "firewall은 외부의 무단 접근을 막는 보안 시스템으로, cybersecurity, encrypt(Day 18)와 함께 보안 강화 공지(Part 7)에 나온다.",
+  "q": {
+   "s": "Employees cannot access certain websites because the company's ------- blocks them.",
+   "o": [
+    "firewall",
+    "fireplace",
+    "firework",
+    "firefighter"
+   ],
+   "a": 0,
+   "k": "특정 웹사이트 접속을 차단하는 것은 방화벽이므로 firewall이 정답이다. fireplace(벽난로), firework(불꽃놀이), firefighter(소방관)는 웹사이트를 차단하지 않는다."
+  }
+ },
+ {
+  "w": "help desk",
+  "pos": "phr",
+  "m": [
+   "(전산) 지원 센터",
+   "업무 지원 창구"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Employees who forget their passwords can call the *help desk* at extension 4100.",
+  "exKo": "비밀번호를 잊은 직원은 내선 4100번으로 헬프 데스크에 전화하면 된다.",
+  "col": [
+   {
+    "e": "contact the help desk",
+    "k": "헬프 데스크에 연락하다"
+   },
+   {
+    "e": "IT help desk",
+    "k": "IT 지원 센터"
+   }
+  ],
+  "der": [],
+  "para": [
+   "technical support",
+   "IT support"
+  ],
+  "ant": "",
+  "tip": "LC에서 컴퓨터 문제가 생겼을 때 help desk나 technical support에 연락하라는 제안이 자주 나오며, 내선 번호(extension)와 함께 등장한다.",
+  "q": {
+   "s": "For assistance with network problems, staff should contact the IT ------- at extension 220.",
+   "o": [
+    "waiting list",
+    "dress code",
+    "help desk",
+    "side dish"
+   ],
+   "a": 2,
+   "k": "네트워크 문제로 도움을 받기 위해 내선으로 연락하는 곳은 IT help desk이다. waiting list(대기자 명단), dress code(복장 규정), side dish(곁들임 요리)는 연락하는 곳이 아니다."
+  }
+ },
+ {
+  "w": "technical difficulties",
+  "pos": "phr",
+  "m": [
+   "기술적인 문제"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "The video conference started 15 minutes late due to *technical difficulties*.",
+  "exKo": "화상 회의는 기술적인 문제로 15분 늦게 시작되었다.",
+  "col": [
+   {
+    "e": "experience technical difficulties",
+    "k": "기술적인 문제를 겪다"
+   },
+   {
+    "e": "due to technical difficulties",
+    "k": "기술적인 문제로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "technical problems",
+   "technical issues",
+   "glitches"
+  ],
+  "ant": "",
+  "tip": "LC에서 지연·취소의 이유로 자주 나오는 표현으로, Part 7에서는 technical issues, a malfunction으로 패러프레이징된다.",
+  "q": {
+   "s": "We apologize for the interruption; our website is currently experiencing technical -------.",
+   "o": [
+    "difficulties",
+    "difficult",
+    "differently",
+    "differ"
+   ],
+   "a": 0,
+   "k": "형용사 technical의 수식을 받는 명사 자리이므로 difficulties가 정답이다. difficult는 형용사, differently는 부사, differ는 동사이다."
+  }
+ },
+ {
+  "w": "operating system",
+  "pos": "phr",
+  "m": [
+   "운영 체제"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "All laptops must be updated to the latest *operating system* by the end of the week.",
+  "exKo": "모든 노트북은 이번 주말까지 최신 운영 체제로 업데이트되어야 한다.",
+  "col": [
+   {
+    "e": "update the operating system",
+    "k": "운영 체제를 업데이트하다"
+   },
+   {
+    "e": "operating system compatibility",
+    "k": "운영 체제 호환성"
+   }
+  ],
+  "der": [
+   {
+    "w": "operate",
+    "pos": "v",
+    "m": "작동하다, 운영하다"
+   }
+  ],
+  "para": [
+   "OS",
+   "platform"
+  ],
+  "ant": "",
+  "tip": "operating system(OS)은 소프트웨어 호환성(compatible with)이나 업데이트 공지에 나오며, operating hours(영업시간)의 operating과 의미를 구분해야 한다.",
+  "q": {
+   "s": "The new software is compatible with any computer running the latest version of the -------.",
+   "o": [
+    "operating hours",
+    "operating costs",
+    "operating system",
+    "operating room"
+   ],
+   "a": 2,
+   "k": "컴퓨터에서 구동되며(running) 버전이 있는 것은 운영 체제이므로 operating system이 정답이다. operating hours(영업시간), operating costs(운영비), operating room(수술실)은 컴퓨터에서 실행되는 것이 아니다."
+  }
+ },
+ {
+  "w": "log off",
+  "pos": "phr",
+  "m": [
+   "로그오프하다",
+   "접속을 끊다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   7
+  ],
+  "ex": "Staff should *log off* their computers before leaving the office each day.",
+  "exKo": "직원들은 매일 퇴근하기 전에 컴퓨터에서 로그오프해야 한다.",
+  "col": [
+   {
+    "e": "log off the system",
+    "k": "시스템에서 로그오프하다"
+   },
+   {
+    "e": "log off from ~",
+    "k": "~에서 접속을 끊다"
+   }
+  ],
+  "der": [
+   {
+    "w": "logoff",
+    "pos": "n",
+    "m": "로그오프"
+   }
+  ],
+  "para": [
+   "log out",
+   "sign out"
+  ],
+  "ant": "log on",
+  "tip": "log off/out은 '접속을 종료하다'라는 뜻으로 log on/in과 반대이며, 명사형은 logoff, logout처럼 붙여 쓴다.",
+  "q": {
+   "s": "For security reasons, users who forget to log ------- will be disconnected automatically after 30 minutes of inactivity.",
+   "o": [
+    "on",
+    "up",
+    "over",
+    "off"
+   ],
+   "a": 3,
+   "k": "로그오프하는 것을 잊은 사용자를 30분 뒤 자동으로 접속 해제한다는 뜻이므로 log off가 정답이다. log on을 잊었다면 애초에 접속되어 있지 않으므로 문맥에 맞지 않고, log up, log over는 쓰지 않는 표현이다."
+  }
+ },
+ {
+  "w": "sign in",
+  "pos": "phr",
+  "m": [
+   "로그인하다",
+   "(명부에) 서명하고 들어가다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3
+  ],
+  "ex": "Mr. Ford could not *sign in* to the company portal because his password had expired.",
+  "exKo": "Ford 씨는 비밀번호가 만료되어 회사 포털에 로그인할 수 없었다.",
+  "col": [
+   {
+    "e": "sign in to an account",
+    "k": "계정에 로그인하다"
+   },
+   {
+    "e": "sign-in sheet",
+    "k": "출입 명부"
+   }
+  ],
+  "der": [
+   {
+    "w": "sign-in",
+    "pos": "n",
+    "m": "로그인, 출입 서명"
+   }
+  ],
+  "para": [
+   "log in",
+   "check in",
+   "register"
+  ],
+  "ant": "sign out",
+  "tip": "sign in은 '(명부에) 서명하고 들어가다'와 '로그인하다'의 두 뜻이 있으며, 계정에 접속할 때는 sign in to를 쓴다. sign up(가입하다)과 혼동하지 않도록 한다.",
+  "q": {
+   "s": "Please sign ------- to your account using the temporary password we sent to your e-mail address.",
+   "o": [
+    "in",
+    "off",
+    "at",
+    "down"
+   ],
+   "a": 0,
+   "k": "임시 비밀번호로 계정에 '로그인하다'라는 뜻이므로 sign in이 정답이다. sign off는 '(방송·편지를) 끝내다', sign down은 쓰지 않는 표현이며, sign at은 to your account와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "hook up",
+  "pos": "phr",
+  "m": [
+   "(기기를) 연결하다",
+   "설치하다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3
+  ],
+  "ex": "The technician will *hook up* the new printer to the network this afternoon.",
+  "exKo": "기술자가 오늘 오후 새 프린터를 네트워크에 연결할 것이다.",
+  "col": [
+   {
+    "e": "hook up A to B",
+    "k": "A를 B에 연결하다"
+   },
+   {
+    "e": "hook up a projector",
+    "k": "프로젝터를 연결하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "hookup",
+    "pos": "n",
+    "m": "연결, 접속"
+   }
+  ],
+  "para": [
+   "connect",
+   "set up",
+   "install"
+  ],
+  "ant": "",
+  "tip": "hook up A to B(A를 B에 연결하다)는 LC에서 장비 설치 대화에 자주 나오며, Part 7에서는 connect로 패러프레이징된다.",
+  "q": {
+   "s": "Could you help me hook ------- the projector to my laptop before the presentation starts?",
+   "o": [
+    "in",
+    "up",
+    "out",
+    "down"
+   ],
+   "a": 1,
+   "k": "hook up A to B는 'A를 B에 연결하다'라는 구동사이므로 up이 정답이다. hook in, hook out, hook down은 이런 뜻으로 쓰지 않는다."
+  }
+ },
+ {
+  "w": "unplug",
+  "pos": "v",
+  "m": [
+   "플러그를 뽑다",
+   "(전원을) 끊다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "Staff are asked to *unplug* the coffee machine before leaving on Fridays.",
+  "exKo": "직원들은 금요일 퇴근 전에 커피 머신의 플러그를 뽑아 달라는 요청을 받는다.",
+  "col": [
+   {
+    "e": "unplug a device",
+    "k": "기기의 플러그를 뽑다"
+   },
+   {
+    "e": "unplug the cable",
+    "k": "케이블을 뽑다"
+   }
+  ],
+  "der": [
+   {
+    "w": "plug",
+    "pos": "n",
+    "m": "플러그"
+   },
+   {
+    "w": "plug in",
+    "pos": "phr",
+    "m": "플러그를 꽂다"
+   }
+  ],
+  "para": [
+   "disconnect",
+   "switch off"
+  ],
+  "ant": "plug in",
+  "tip": "un-은 반대 동작을 나타내며(unplug, uninstall, unpack), Part 1에서는 'A cord has been unplugged.' 같은 상태 묘사가 나온다.",
+  "q": {
+   "s": "Before cleaning the photocopier, be sure to ------- it from the wall outlet.",
+   "o": [
+    "unpack",
+    "unfold",
+    "unplug",
+    "unwrap"
+   ],
+   "a": 2,
+   "k": "벽 콘센트(wall outlet)에서 복사기를 분리하는 것이므로 '플러그를 뽑다'라는 뜻의 unplug가 정답이다. unpack(짐을 풀다), unfold(펼치다), unwrap(포장을 풀다)은 from the wall outlet과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "freeze",
+  "pos": "v",
+  "m": [
+   "(컴퓨터 화면이) 멈추다",
+   "얼다",
+   "(가격·임금 등을) 동결하다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5
+  ],
+  "ex": "Mr. Chen's laptop *froze* during the presentation, so he had to restart it.",
+  "exKo": "Chen 씨의 노트북이 발표 도중 멈춰서 그는 노트북을 다시 시작해야 했다.",
+  "col": [
+   {
+    "e": "the screen freezes",
+    "k": "화면이 멈추다"
+   },
+   {
+    "e": "freeze prices",
+    "k": "가격을 동결하다"
+   },
+   {
+    "e": "hiring freeze",
+    "k": "채용 동결"
+   }
+  ],
+  "der": [
+   {
+    "w": "frozen",
+    "pos": "adj",
+    "m": "얼어붙은, 동결된"
+   },
+   {
+    "w": "freezer",
+    "pos": "n",
+    "m": "냉동고"
+   }
+  ],
+  "para": [
+   "stop responding",
+   "lock up",
+   "crash"
+  ],
+  "ant": "",
+  "tip": "IT 맥락에서 freeze는 '화면이 멈추다', 경영 맥락에서는 hiring freeze(채용 동결)처럼 '동결하다'라는 뜻으로 쓰인다. freeze-froze-frozen의 불규칙 변화에 유의한다.",
+  "q": {
+   "s": "If your screen begins to ------- frequently, contact the help desk to have your computer checked.",
+   "o": [
+    "frozen",
+    "froze",
+    "freeze",
+    "freezing"
+   ],
+   "a": 2,
+   "k": "begin to 뒤에는 동사원형이 오므로 freeze가 정답이다. frozen은 과거분사, froze는 과거형, freezing은 현재분사·형용사이다."
+  }
+ },
+ {
+  "w": "bandwidth",
+  "pos": "n",
+  "m": [
+   "(데이터) 대역폭",
+   "(업무를 맡을) 여력"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Streaming high-definition video uses a large amount of *bandwidth*.",
+  "exKo": "고화질 영상을 스트리밍하면 대역폭을 많이 사용한다.",
+  "col": [
+   {
+    "e": "increase bandwidth",
+    "k": "대역폭을 늘리다"
+   },
+   {
+    "e": "limited bandwidth",
+    "k": "제한된 대역폭"
+   }
+  ],
+  "der": [],
+  "para": [
+   "capacity",
+   "data capacity"
+  ],
+  "ant": "",
+  "tip": "bandwidth는 데이터 전송 용량을 뜻하는 불가산 명사이며, 비즈니스 구어에서는 'don't have the bandwidth'(일을 맡을 여력이 없다)처럼 비유적으로도 쓰인다.",
+  "q": {
+   "s": "The office upgraded its Internet plan to provide more ------- for video conferencing.",
+   "o": [
+    "bandage",
+    "banquet",
+    "bankruptcy",
+    "bandwidth"
+   ],
+   "a": 3,
+   "k": "화상 회의를 위해 인터넷 요금제를 올려 더 많이 확보한 것은 데이터 전송 용량이므로 bandwidth가 정답이다. bandage(붕대), banquet(연회), bankruptcy(파산)는 인터넷과 관계가 없다."
+  }
+ },
+ {
+  "w": "broadband",
+  "pos": "n",
+  "m": [
+   "광대역 (인터넷)",
+   "초고속 인터넷"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The government plans to bring *broadband* to rural communities within five years.",
+  "exKo": "정부는 5년 안에 농촌 지역에 초고속 인터넷을 보급할 계획이다.",
+  "col": [
+   {
+    "e": "broadband connection",
+    "k": "초고속 인터넷 연결"
+   },
+   {
+    "e": "broadband service",
+    "k": "초고속 인터넷 서비스"
+   }
+  ],
+  "der": [],
+  "para": [
+   "high-speed Internet"
+  ],
+  "ant": "",
+  "tip": "broadband는 '초고속 인터넷'이라는 뜻으로, Part 7 광고·기사에서 high-speed Internet access로 패러프레이징된다.",
+  "q": {
+   "s": "Guests at the business hotel enjoy free ------- Internet access in every room.",
+   "o": [
+    "broadcast",
+    "broadside",
+    "broadband",
+    "broad-minded"
+   ],
+   "a": 2,
+   "k": "객실에서 무료로 제공되는 인터넷 서비스의 종류이므로 '초고속'이라는 뜻의 broadband가 정답이다. broadcast(방송), broadside(맹비난), broad-minded(마음이 넓은)는 Internet access를 수식하지 않는다."
+  }
+ },
+ {
+  "w": "analytics",
+  "pos": "n",
+  "m": [
+   "(데이터) 분석",
+   "분석 정보"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The marketing team uses web *analytics* to track how visitors use the site.",
+  "exKo": "마케팅 팀은 웹 분석 도구를 이용해 방문자들이 사이트를 어떻게 이용하는지 추적한다.",
+  "col": [
+   {
+    "e": "data analytics",
+    "k": "데이터 분석"
+   },
+   {
+    "e": "web analytics",
+    "k": "웹 분석"
+   }
+  ],
+  "der": [
+   {
+    "w": "analyze",
+    "pos": "v",
+    "m": "분석하다"
+   },
+   {
+    "w": "analysis",
+    "pos": "n",
+    "m": "분석"
+   },
+   {
+    "w": "analyst",
+    "pos": "n",
+    "m": "분석가"
+   }
+  ],
+  "para": [
+   "data analysis",
+   "metrics"
+  ],
+  "ant": "",
+  "tip": "analytics는 데이터 분석 기법·결과를 뜻하며, 사람명사 analyst(분석가), 명사 analysis(분석)와 구분하는 품사·어휘 문제가 나온다.",
+  "q": {
+   "s": "The online store relies on customer ------- to recommend products based on past purchases.",
+   "o": [
+    "analyze",
+    "analytical",
+    "analytically",
+    "analytics"
+   ],
+   "a": 3,
+   "k": "전치사 on의 목적어가 되는 명사 자리이므로 analytics가 정답이다. analyze는 동사, analytical은 형용사, analytically는 부사이다."
+  }
+ },
+ {
+  "w": "router",
+  "pos": "n",
+  "m": [
+   "(인터넷) 공유기",
+   "라우터"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "When the Wi-Fi stopped working, the technician restarted the *router*.",
+  "exKo": "와이파이가 작동을 멈추자 기술자가 공유기를 다시 시작했다.",
+  "col": [
+   {
+    "e": "wireless router",
+    "k": "무선 공유기"
+   },
+   {
+    "e": "reset the router",
+    "k": "공유기를 재설정하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "modem"
+  ],
+  "ant": "",
+  "tip": "Part 3 기술 지원 대화에서 인터넷 연결 문제의 해결책으로 restart/reset the router가 자주 제안된다.",
+  "q": {
+   "s": "The wireless ------- in the conference room needs to be replaced because the signal keeps dropping.",
+   "o": [
+    "router",
+    "roster",
+    "rotation",
+    "ruler"
+   ],
+   "a": 0,
+   "k": "신호가 계속 끊겨 교체해야 하는 무선 장비는 router(공유기)이다. roster(근무자 명단), rotation(순환), ruler(자)는 무선 신호를 내보내지 않는다."
+  }
+ },
+ {
+  "w": "hotspot",
+  "pos": "n",
+  "m": [
+   "(무선 인터넷) 핫스폿",
+   "인기 장소"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The cafe offers a free Wi-Fi *hotspot* for customers who want to work on laptops.",
+  "exKo": "그 카페는 노트북으로 일하려는 손님을 위해 무료 와이파이 핫스폿을 제공한다.",
+  "col": [
+   {
+    "e": "Wi-Fi hotspot",
+    "k": "와이파이 핫스폿"
+   },
+   {
+    "e": "mobile hotspot",
+    "k": "모바일 핫스폿"
+   },
+   {
+    "e": "tourist hotspot",
+    "k": "인기 관광지"
+   }
+  ],
+  "der": [],
+  "para": [
+   "access point"
+  ],
+  "ant": "",
+  "tip": "hotspot은 무선 인터넷 접속 지점이라는 뜻 외에 tourist hotspot(인기 관광지)처럼 사람이 몰리는 곳을 뜻하기도 한다.",
+  "q": {
+   "s": "When the hotel's Wi-Fi went down, Ms. Han used her phone as a mobile ------- to send the files.",
+   "o": [
+    "hotline",
+    "hotplate",
+    "hothouse",
+    "hotspot"
+   ],
+   "a": 3,
+   "k": "와이파이가 끊겼을 때 휴대폰으로 인터넷을 연결해 파일을 보낸 것이므로 mobile hotspot이 되는 hotspot이 정답이다. hotline(직통 전화), hotplate(전기 조리판), hothouse(온실)는 인터넷 연결 수단이 아니다."
+  }
+ },
+ {
+  "w": "connectivity",
+  "pos": "n",
+  "m": [
+   "연결성",
+   "(인터넷) 접속 상태"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The new office building offers high-speed *connectivity* on every floor.",
+  "exKo": "새 사무용 건물은 모든 층에서 초고속 인터넷 접속을 제공한다.",
+  "col": [
+   {
+    "e": "Internet connectivity",
+    "k": "인터넷 연결"
+   },
+   {
+    "e": "wireless connectivity",
+    "k": "무선 연결"
+   }
+  ],
+  "der": [
+   {
+    "w": "connect",
+    "pos": "v",
+    "m": "연결하다"
+   },
+   {
+    "w": "connection",
+    "pos": "n",
+    "m": "연결, 접속"
+   }
+  ],
+  "para": [
+   "connection",
+   "access"
+  ],
+  "ant": "",
+  "tip": "connectivity는 연결 가능 상태나 품질을 뜻하는 불가산 명사로, connection(Day 18)과 함께 Part 7 시설·기기 사양 설명에 나온다.",
+  "q": {
+   "s": "Travelers on the new trains will enjoy improved Internet ------- throughout their journey.",
+   "o": [
+    "connected",
+    "connectivity",
+    "connects",
+    "connective"
+   ],
+   "a": 1,
+   "k": "형용사 improved와 명사 Internet의 수식을 받는 명사 자리이므로 connectivity가 정답이다. connected는 과거분사, connects는 동사, connective는 형용사이다."
+  }
+ },
+ {
+  "w": "offline",
+  "pos": "adj",
+  "m": [
+   "오프라인의",
+   "(시스템이) 작동하지 않는"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The booking system will be *offline* for maintenance from midnight to 4 A.M.",
+  "exKo": "예약 시스템은 점검을 위해 자정부터 오전 4시까지 작동하지 않는다.",
+  "col": [
+   {
+    "e": "go offline",
+    "k": "접속이 끊기다"
+   },
+   {
+    "e": "be taken offline",
+    "k": "가동이 중단되다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "unavailable",
+   "down",
+   "disconnected"
+  ],
+  "ant": "online",
+  "tip": "offline은 형용사·부사로 모두 쓰이며 go offline, be taken offline 형태로 시스템 중단 공지(Part 4·7)에 나온다. Part 7에서는 unavailable, down으로 바뀐다.",
+  "q": {
+   "s": "The payroll system will be taken ------- on Saturday while the new software is installed.",
+   "o": [
+    "offhand",
+    "offline",
+    "offset",
+    "offshore"
+   ],
+   "a": 1,
+   "k": "새 소프트웨어를 설치하는 동안 시스템 가동을 중단한다는 뜻이므로 be taken offline이 되는 offline이 정답이다. offhand(즉석의), offset(상쇄하다), offshore(해외의, 앞바다의)는 시스템 중단을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "hard drive",
+  "pos": "phr",
+  "m": [
+   "하드 드라이브",
+   "하드 디스크"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The technician replaced the damaged *hard drive* and restored the files from a backup.",
+  "exKo": "기술자는 손상된 하드 드라이브를 교체하고 백업에서 파일을 복구했다.",
+  "col": [
+   {
+    "e": "external hard drive",
+    "k": "외장 하드 드라이브"
+   },
+   {
+    "e": "hard drive failure",
+    "k": "하드 드라이브 고장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "hard disk",
+   "storage device"
+  ],
+  "ant": "",
+  "tip": "external hard drive(외장 하드)는 백업(back up) 관련 Part 3·7 지문에 자주 나오며, flash drive와 함께 저장 장치로 분류된다.",
+  "q": {
+   "s": "All important files should be backed up to an external ------- once a week.",
+   "o": [
+    "test drive",
+    "driveway",
+    "driver's license",
+    "hard drive"
+   ],
+   "a": 3,
+   "k": "중요한 파일을 백업하는 외장 저장 장치이므로 hard drive가 정답이다. test drive(시승), driveway(진입로), driver's license(운전면허증)는 저장 장치가 아니다."
+  }
+ },
+ {
+  "w": "flash drive",
+  "pos": "phr",
+  "m": [
+   "USB 메모리",
+   "플래시 드라이브"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Ms. Suzuki saved her presentation slides on a *flash drive* in case her laptop failed.",
+  "exKo": "Suzuki 씨는 노트북이 고장 날 경우에 대비해 발표 슬라이드를 USB 메모리에 저장했다.",
+  "col": [
+   {
+    "e": "USB flash drive",
+    "k": "USB 플래시 드라이브"
+   },
+   {
+    "e": "save files to a flash drive",
+    "k": "파일을 USB 메모리에 저장하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "USB drive",
+   "memory stick",
+   "thumb drive"
+  ],
+  "ant": "",
+  "tip": "flash drive는 USB 메모리를 뜻하며, 보안 정책 지문에서 'Personal flash drives are not permitted.'(개인 USB 사용 금지) 같은 규정으로 나온다.",
+  "q": {
+   "s": "To protect company data, employees may not copy files onto a personal -------.",
+   "o": [
+    "flashlight",
+    "headlight",
+    "flash drive",
+    "highlight"
+   ],
+   "a": 2,
+   "k": "파일을 복사할 수 있는 개인 저장 장치이므로 flash drive가 정답이다. flashlight(손전등), headlight(전조등), highlight(가장 중요한 부분)는 파일을 저장하지 못한다."
+  }
+ },
+ {
+  "w": "livestream",
+  "pos": "v",
+  "m": [
+   "실시간으로 방송하다",
+   "생중계하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The company will *livestream* the product launch on its website and social media.",
+  "exKo": "회사는 웹사이트와 소셜 미디어에서 제품 출시 행사를 생중계할 것이다.",
+  "col": [
+   {
+    "e": "livestream an event",
+    "k": "행사를 생중계하다"
+   },
+   {
+    "e": "watch a livestream",
+    "k": "생중계를 시청하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "livestreaming",
+    "pos": "n",
+    "m": "생중계"
+   }
+  ],
+  "para": [
+   "broadcast live",
+   "stream"
+  ],
+  "ant": "",
+  "tip": "livestream은 동사(livestream an event)와 명사(watch the livestream)로 모두 쓰이며, Part 4·7 행사 공지에서 온라인 참석 방법으로 나온다.",
+  "q": {
+   "s": "Those who cannot attend the conference in person can watch the keynote speech, which will be ------- online.",
+   "o": [
+    "livestreamed",
+    "livestreaming",
+    "livestreams",
+    "livestream"
+   ],
+   "a": 0,
+   "k": "주어 the keynote speech가 '생중계되는' 대상이므로 will be 뒤에 과거분사 livestreamed를 써서 수동태를 만든다. livestreaming은 능동의 의미가 되어 맞지 않고, livestreams와 livestream은 be 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "peripheral",
+  "pos": "n",
+  "m": [
+   "(컴퓨터) 주변 기기",
+   "주변 장치"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Printers, scanners, and other *peripherals* are listed separately in the equipment inventory.",
+  "exKo": "프린터, 스캐너 등 주변 기기는 장비 목록에 따로 기재되어 있다.",
+  "col": [
+   {
+    "e": "computer peripherals",
+    "k": "컴퓨터 주변 기기"
+   }
+  ],
+  "der": [
+   {
+    "w": "periphery",
+    "pos": "n",
+    "m": "주변, 주변부"
+   }
+  ],
+  "para": [
+   "accessories",
+   "add-ons"
+  ],
+  "ant": "",
+  "tip": "peripheral은 명사로 '주변 기기', 형용사로 '주변적인, 부수적인(peripheral issues)'을 뜻하며, Part 7에서 accessories로 패러프레이징된다.",
+  "q": {
+   "s": "The store sells laptops as well as ------- such as keyboards, mice, and external speakers.",
+   "o": [
+    "periodicals",
+    "peripherals",
+    "perishables",
+    "permits"
+   ],
+   "a": 1,
+   "k": "키보드, 마우스, 외장 스피커 같은 컴퓨터 주변 기기이므로 peripherals가 정답이다. periodicals(정기 간행물), perishables(부패하기 쉬운 식품), permits(허가증)는 예시와 맞지 않는다."
+  }
+ },
+ {
+  "w": "headset",
+  "pos": "n",
+  "m": [
+   "헤드셋"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "A woman wearing a *headset* is talking to a customer on the phone.",
+  "exKo": "헤드셋을 쓴 여자가 전화로 고객과 이야기하고 있다.",
+  "col": [
+   {
+    "e": "wear a headset",
+    "k": "헤드셋을 쓰고 있다"
+   },
+   {
+    "e": "wireless headset",
+    "k": "무선 헤드셋"
+   }
+  ],
+  "der": [],
+  "para": [
+   "headphones"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 wearing(착용한 상태)과 putting on(착용하는 동작)을 구분해야 한다. 'She's wearing a headset.'은 이미 쓰고 있는 상태를 묘사한다.",
+  "q": {
+   "s": "Call center agents are each provided with a ------- so that they can type while speaking with customers.",
+   "o": [
+    "headline",
+    "headway",
+    "heading",
+    "headset"
+   ],
+   "a": 3,
+   "k": "고객과 통화하면서 타자를 칠 수 있게 해 주는 장비는 headset이다. headline(헤드라인), headway(진전), heading(제목)은 장비가 아니다."
+  }
+ },
+ {
+  "w": "webcam",
+  "pos": "n",
+  "m": [
+   "웹캠"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Participants should turn on their *webcams* during the online training session.",
+  "exKo": "참가자들은 온라인 교육 중에 웹캠을 켜야 한다.",
+  "col": [
+   {
+    "e": "turn on a webcam",
+    "k": "웹캠을 켜다"
+   },
+   {
+    "e": "built-in webcam",
+    "k": "내장 웹캠"
+   }
+  ],
+  "der": [],
+  "para": [
+   "camera"
+  ],
+  "ant": "",
+  "tip": "webcam은 화상 회의(video conference) 관련 Part 3 대화에서 'turn on/off your camera' 같은 요청과 함께 나온다.",
+  "q": {
+   "s": "The laptop's built-in ------- allows users to join video calls without additional equipment.",
+   "o": [
+    "webcam",
+    "webinar",
+    "website",
+    "web page"
+   ],
+   "a": 0,
+   "k": "노트북에 내장되어 있어 별도 장비 없이 화상 통화를 할 수 있게 해 주는 것은 webcam이다. webinar(웨비나), website(웹사이트), web page(웹 페이지)는 노트북에 내장된 장치가 아니다."
+  }
+ },
+ {
+  "w": "touch screen",
+  "pos": "phr",
+  "m": [
+   "터치스크린"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "Customers can order their meals using a *touch screen* at the entrance.",
+  "exKo": "손님은 입구에 있는 터치스크린으로 식사를 주문할 수 있다.",
+  "col": [
+   {
+    "e": "touch screen kiosk",
+    "k": "터치스크린 키오스크"
+   },
+   {
+    "e": "touch screen display",
+    "k": "터치스크린 화면"
+   }
+  ],
+  "der": [],
+  "para": [
+   "kiosk",
+   "display"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 'A man is using a touch screen.'처럼 키오스크 사진 묘사로 나오며, touch-screen이 명사 앞에서 형용사처럼 쓰이기도 한다.",
+  "q": {
+   "s": "The museum's interactive map lets visitors explore each exhibit by tapping the large ------- in the lobby.",
+   "o": [
+    "touchdown",
+    "touch screen",
+    "touchstone",
+    "touch base"
+   ],
+   "a": 1,
+   "k": "로비에서 손가락으로 두드려(tapping) 전시 정보를 살펴보는 장치는 touch screen이다. touchdown(착륙), touchstone(시금석), touch base(연락하다)는 두드려 조작하는 장치가 아니다."
+  }
+ },
+ {
+  "w": "resolution",
+  "pos": "n",
+  "m": [
+   "해상도",
+   "해결",
+   "결의(안)"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new monitors display images at a much higher *resolution*.",
+  "exKo": "새 모니터는 훨씬 높은 해상도로 이미지를 보여 준다.",
+  "col": [
+   {
+    "e": "high resolution",
+    "k": "고해상도"
+   },
+   {
+    "e": "resolution of a dispute",
+    "k": "분쟁 해결"
+   }
+  ],
+  "der": [
+   {
+    "w": "resolve",
+    "pos": "v",
+    "m": "해결하다"
+   }
+  ],
+  "para": [
+   "clarity",
+   "sharpness",
+   "solution"
+  ],
+  "ant": "",
+  "tip": "resolution은 IT에서 '해상도', 일반 비즈니스에서 resolve의 명사형인 '해결'이나 '결의안'을 뜻해 Part 7 동의어 문제에서 문맥 파악이 중요하다.",
+  "q": {
+   "s": "Photographs submitted for the brochure must have a ------- of at least 300 dots per inch.",
+   "o": [
+    "revolution",
+    "resolution",
+    "reputation",
+    "reservation"
+   ],
+   "a": 1,
+   "k": "인치당 300도트 이상이어야 하는 사진의 기준은 해상도이므로 resolution이 정답이다. revolution(혁명, 회전), reputation(평판), reservation(예약)은 사진의 품질을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "graphics",
+  "pos": "n",
+  "m": [
+   "그래픽",
+   "시각 자료"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The designer added colorful *graphics* to make the annual report easier to read.",
+  "exKo": "디자이너는 연례 보고서를 읽기 쉽게 하려고 다채로운 그래픽을 넣었다.",
+  "col": [
+   {
+    "e": "computer graphics",
+    "k": "컴퓨터 그래픽"
+   },
+   {
+    "e": "graphics card",
+    "k": "그래픽 카드"
+   }
+  ],
+  "der": [
+   {
+    "w": "graphic",
+    "pos": "adj",
+    "m": "그래픽의, 생생한"
+   }
+  ],
+  "para": [
+   "visuals",
+   "images",
+   "illustrations"
+  ],
+  "ant": "",
+  "tip": "graphics는 보통 복수형으로 쓰이며, graphic designer(그래픽 디자이너), graphics card처럼 복합 명사로 Part 7 구인 광고나 기기 사양에 나온다.",
+  "q": {
+   "s": "The video game company is hiring artists to create realistic three-dimensional -------.",
+   "o": [
+    "grammar",
+    "graphics",
+    "gravity",
+    "grades"
+   ],
+   "a": 1,
+   "k": "비디오 게임 회사의 아티스트가 만드는 사실적인 3차원 이미지이므로 graphics가 정답이다. grammar(문법), gravity(중력), grades(성적, 등급)는 아티스트가 만드는 것이 아니다."
+  }
+ },
+ {
+  "w": "processor",
+  "pos": "n",
+  "m": [
+   "(컴퓨터) 프로세서",
+   "처리 장치",
+   "처리 업체"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The new laptop has a faster *processor* and twice as much memory.",
+  "exKo": "새 노트북은 더 빠른 프로세서와 두 배의 메모리를 갖추고 있다.",
+  "col": [
+   {
+    "e": "faster processor",
+    "k": "더 빠른 프로세서"
+   },
+   {
+    "e": "food processor",
+    "k": "푸드 프로세서"
+   },
+   {
+    "e": "payment processor",
+    "k": "결제 대행업체"
+   }
+  ],
+  "der": [
+   {
+    "w": "process",
+    "pos": "v",
+    "m": "처리하다"
+   },
+   {
+    "w": "processing",
+    "pos": "n",
+    "m": "처리"
+   }
+  ],
+  "para": [
+   "chip",
+   "CPU"
+  ],
+  "ant": "",
+  "tip": "processor는 컴퓨터의 처리 장치 외에도 food processor(조리 기구), payment processor(결제 처리 업체)처럼 '처리하는 기계·업체'를 뜻한다.",
+  "q": {
+   "s": "Video editing software runs slowly on older computers that lack a powerful -------.",
+   "o": [
+    "procession",
+    "processor",
+    "procedure",
+    "proceeds"
+   ],
+   "a": 1,
+   "k": "영상 편집 프로그램을 빠르게 돌리는 데 필요한 컴퓨터 부품은 processor이다. procession(행렬), procedure(절차), proceeds(수익금)는 컴퓨터 부품이 아니다."
+  }
+ },
+ {
+  "w": "patch",
+  "pos": "n",
+  "m": [
+   "(소프트웨어) 패치",
+   "(작은) 부분, 조각"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "The software company released a security *patch* to fix the problem.",
+  "exKo": "그 소프트웨어 회사는 문제를 해결하기 위해 보안 패치를 배포했다.",
+  "col": [
+   {
+    "e": "security patch",
+    "k": "보안 패치"
+   },
+   {
+    "e": "install a patch",
+    "k": "패치를 설치하다"
+   },
+   {
+    "e": "a patch of grass",
+    "k": "작은 풀밭"
+   }
+  ],
+  "der": [],
+  "para": [
+   "update",
+   "fix"
+  ],
+  "ant": "",
+  "tip": "IT 지문에서 patch는 오류나 보안 취약점을 고치는 업데이트 파일이며, Part 1에서는 a patch of grass(작은 풀밭)처럼 '작은 부분'이라는 뜻으로도 나온다.",
+  "q": {
+   "s": "The developers released a ------- within hours to fix the bug that had caused the app to crash.",
+   "o": [
+    "pitch",
+    "porch",
+    "patch",
+    "punch"
+   ],
+   "a": 2,
+   "k": "앱이 멈추게 한 오류를 고치기 위해 배포한 것이므로 patch가 정답이다. pitch(홍보, 투구), porch(현관), punch(펀치)는 오류를 고치는 파일이 아니다."
+  }
+ },
+ {
+  "w": "uninstall",
+  "pos": "v",
+  "m": [
+   "(프로그램을) 제거하다",
+   "삭제하다"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Employees should *uninstall* any software that the IT department has not approved.",
+  "exKo": "직원들은 IT 부서가 승인하지 않은 소프트웨어를 모두 삭제해야 한다.",
+  "col": [
+   {
+    "e": "uninstall a program",
+    "k": "프로그램을 제거하다"
+   },
+   {
+    "e": "uninstall an app",
+    "k": "앱을 삭제하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "install",
+    "pos": "v",
+    "m": "설치하다"
+   },
+   {
+    "w": "installation",
+    "pos": "n",
+    "m": "설치"
+   }
+  ],
+  "para": [
+   "remove",
+   "delete"
+  ],
+  "ant": "install",
+  "tip": "uninstall은 install의 반대말로 프로그램을 '제거하다'라는 뜻이며, 문제가 생긴 앱을 uninstall and reinstall(삭제 후 재설치)하라는 해결책이 Part 3·7에 나온다.",
+  "q": {
+   "s": "If the application keeps crashing, ------- it and then download the latest version.",
+   "o": [
+    "uninstall",
+    "unfold",
+    "unveil",
+    "unwind"
+   ],
+   "a": 0,
+   "k": "계속 멈추는 프로그램을 삭제한 뒤 최신 버전을 내려받으라는 뜻이므로 uninstall이 정답이다. unfold(펼치다), unveil(공개하다), unwind(긴장을 풀다)는 프로그램과 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "add-on",
+  "pos": "n",
+  "m": [
+   "추가 기능",
+   "부가 상품"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The basic plan is free, but some *add-ons* require a monthly fee.",
+  "exKo": "기본 요금제는 무료이지만 일부 추가 기능에는 월 사용료가 든다.",
+  "col": [
+   {
+    "e": "optional add-ons",
+    "k": "선택 부가 기능"
+   },
+   {
+    "e": "browser add-on",
+    "k": "브라우저 추가 기능"
+   }
+  ],
+  "der": [
+   {
+    "w": "add",
+    "pos": "v",
+    "m": "더하다, 추가하다"
+   }
+  ],
+  "para": [
+   "extension",
+   "extra feature",
+   "plug-in"
+  ],
+  "ant": "",
+  "tip": "add-on은 하이픈이 있는 명사로 '추가 기능, 부가 상품'을 뜻하며, 동사구 add on(추가하다)과 구분해야 한다.",
+  "q": {
+   "s": "Customers can purchase optional -------, such as extra storage or premium support, for an additional fee.",
+   "o": [
+    "add-ons",
+    "addresses",
+    "additives",
+    "admissions"
+   ],
+   "a": 0,
+   "k": "추가 저장 공간이나 프리미엄 지원처럼 추가 요금을 내고 사는 선택 기능이므로 add-ons가 정답이다. addresses(주소), additives(첨가물), admissions(입장, 입학)는 예시와 맞지 않는다."
+  }
+ },
+ {
+  "w": "dashboard",
+  "pos": "n",
+  "m": [
+   "대시보드(현황판)",
+   "(자동차) 계기판"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Managers can check daily sales figures on the online *dashboard*.",
+  "exKo": "관리자들은 온라인 대시보드에서 일일 매출 수치를 확인할 수 있다.",
+  "col": [
+   {
+    "e": "sales dashboard",
+    "k": "매출 현황판"
+   },
+   {
+    "e": "dashboard display",
+    "k": "대시보드 화면"
+   }
+  ],
+  "der": [],
+  "para": [
+   "control panel",
+   "overview"
+  ],
+  "ant": "",
+  "tip": "dashboard는 IT에서 주요 데이터를 한눈에 보여 주는 '현황판', 자동차에서는 '계기판'을 뜻한다.",
+  "q": {
+   "s": "The project ------- shows the status of every task so that team members can see what still needs to be done.",
+   "o": [
+    "keyboard",
+    "cupboard",
+    "dashboard",
+    "cardboard"
+   ],
+   "a": 2,
+   "k": "모든 업무의 진행 상황을 보여 주는 화면이므로 dashboard(현황판)가 정답이다. keyboard(키보드), cupboard(찬장), cardboard(판지)는 업무 상황을 보여 주지 않는다."
+  }
+ },
+ {
+  "w": "cloud-based",
+  "pos": "adj",
+  "m": [
+   "클라우드 기반의"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The firm switched to a *cloud-based* storage system so that staff can access files from anywhere.",
+  "exKo": "그 회사는 직원들이 어디서든 파일에 접근할 수 있도록 클라우드 기반 저장 시스템으로 전환했다.",
+  "col": [
+   {
+    "e": "cloud-based software",
+    "k": "클라우드 기반 소프트웨어"
+   },
+   {
+    "e": "cloud-based service",
+    "k": "클라우드 기반 서비스"
+   }
+  ],
+  "der": [
+   {
+    "w": "cloud",
+    "pos": "n",
+    "m": "클라우드"
+   }
+  ],
+  "para": [
+   "online",
+   "web-based"
+  ],
+  "ant": "",
+  "tip": "-based는 '~에 기반한, ~에 본사를 둔'이라는 복합 형용사를 만든다(cloud-based, London-based). Part 7에서는 web-based, online으로 바뀐다.",
+  "q": {
+   "s": "Because the accounting software is -------, employees can use it from any device with an Internet connection.",
+   "o": [
+    "home-based",
+    "cloud-based",
+    "plant-based",
+    "faith-based"
+   ],
+   "a": 1,
+   "k": "인터넷에 연결된 어떤 기기에서도 쓸 수 있는 소프트웨어이므로 cloud-based가 정답이다. home-based(재택의), plant-based(식물성의), faith-based(종교 기반의)는 소프트웨어의 특성이 아니다."
+  }
+ },
+ {
+  "w": "gadget",
+  "pos": "n",
+  "m": [
+   "(작고 편리한) 기기",
+   "도구"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The electronics fair showcased the latest *gadgets* from over 200 companies.",
+  "exKo": "전자 박람회에서는 200여 개 회사의 최신 기기들이 선보였다.",
+  "col": [
+   {
+    "e": "electronic gadgets",
+    "k": "전자 기기"
+   },
+   {
+    "e": "the latest gadgets",
+    "k": "최신 기기"
+   }
+  ],
+  "der": [],
+  "para": [
+   "device",
+   "appliance"
+  ],
+  "ant": "",
+  "tip": "gadget은 작고 기발한 전자 기기를 가리키며, Part 7에서 device로 패러프레이징된다.",
+  "q": {
+   "s": "The store's technology section is full of the latest ------- such as smart watches and wireless earbuds.",
+   "o": [
+    "budgets",
+    "gadgets",
+    "targets",
+    "garments"
+   ],
+   "a": 1,
+   "k": "스마트워치와 무선 이어폰 같은 최신 전자 기기이므로 gadgets가 정답이다. budgets(예산), targets(목표), garments(의복)는 예시와 맞지 않는다."
+  }
+ },
+ {
+  "w": "handheld",
+  "pos": "adj",
+  "m": [
+   "손에 들고 쓰는",
+   "휴대용의"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "Warehouse workers use *handheld* scanners to track inventory.",
+  "exKo": "창고 직원들은 휴대용 스캐너로 재고를 추적한다.",
+  "col": [
+   {
+    "e": "handheld device",
+    "k": "휴대용 기기"
+   },
+   {
+    "e": "handheld scanner",
+    "k": "휴대용 스캐너"
+   }
+  ],
+  "der": [],
+  "para": [
+   "portable",
+   "mobile"
+  ],
+  "ant": "",
+  "tip": "handheld는 '손에 들고 쓰는'이라는 복합 형용사로 handheld device(휴대용 기기)가 빈출이며, Part 7에서 portable로 패러프레이징된다.",
+  "q": {
+   "s": "Delivery drivers record each signature on a ------- device that sends the information to the main office.",
+   "o": [
+    "handwritten",
+    "handsome",
+    "handcuffed",
+    "handheld"
+   ],
+   "a": 3,
+   "k": "배송 기사가 들고 다니며 서명을 받는 기기이므로 '휴대용의'라는 뜻의 handheld가 정답이다. handwritten(손으로 쓴), handsome(잘생긴), handcuffed(수갑이 채워진)는 device를 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "phishing",
+  "pos": "n",
+  "m": [
+   "피싱(개인 정보를 빼내는 사기)"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Several employees reported a *phishing* scam disguised as a message from the payroll department.",
+  "exKo": "직원 몇 명이 급여 부서에서 보낸 메시지로 위장한 피싱 사기를 신고했다.",
+  "col": [
+   {
+    "e": "phishing e-mail",
+    "k": "피싱 이메일"
+   },
+   {
+    "e": "phishing scam",
+    "k": "피싱 사기"
+   },
+   {
+    "e": "phishing attack",
+    "k": "피싱 공격"
+   }
+  ],
+  "der": [],
+  "para": [
+   "scam",
+   "fraud"
+  ],
+  "ant": "",
+  "tip": "phishing은 가짜 이메일 등으로 개인 정보를 빼내는 사기로, 보안 공지(Part 7)에서 '비밀번호를 요구하는 이메일에 응답하지 말라'는 지시와 함께 나온다.",
+  "q": {
+   "s": "Employees should never click on links in suspicious e-mails, as they may be ------- attempts.",
+   "o": [
+    "finishing",
+    "publishing",
+    "phishing",
+    "polishing"
+   ],
+   "a": 2,
+   "k": "수상한 이메일 속 링크는 개인 정보를 빼내려는 시도일 수 있으므로 phishing이 정답이다. finishing(마무리), publishing(출판), polishing(광택 내기)은 attempts와 결합해 보안 위협을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "vulnerability",
+  "pos": "n",
+  "m": [
+   "취약성",
+   "(보안) 취약점"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Engineers discovered a *vulnerability* in the payment system and fixed it immediately.",
+  "exKo": "엔지니어들은 결제 시스템에서 취약점을 발견하고 즉시 수정했다.",
+  "col": [
+   {
+    "e": "security vulnerability",
+    "k": "보안 취약점"
+   },
+   {
+    "e": "vulnerability to",
+    "k": "~에 대한 취약성"
+   }
+  ],
+  "der": [
+   {
+    "w": "vulnerable",
+    "pos": "adj",
+    "m": "취약한"
+   }
+  ],
+  "para": [
+   "weakness",
+   "flaw"
+  ],
+  "ant": "",
+  "tip": "형용사 vulnerable(be vulnerable to ~에 취약하다)과 명사 vulnerability의 품사 구별이 Part 5에 나온다.",
+  "q": {
+   "s": "The security audit revealed a serious ------- that could allow hackers to access customer data.",
+   "o": [
+    "vulnerable",
+    "vulnerably",
+    "vulnerability",
+    "invulnerable"
+   ],
+   "a": 2,
+   "k": "부정관사 a와 형용사 serious 뒤의 명사 자리이므로 vulnerability가 정답이다. vulnerable과 invulnerable은 형용사, vulnerably는 부사이다."
+  }
+ },
+ {
+  "w": "webinar",
+  "pos": "n",
+  "m": [
+   "웨비나(온라인 세미나)"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Over 500 people registered for the free *webinar* on digital marketing.",
+  "exKo": "디지털 마케팅에 관한 무료 웨비나에 500명이 넘는 사람이 등록했다.",
+  "col": [
+   {
+    "e": "host a webinar",
+    "k": "웨비나를 개최하다"
+   },
+   {
+    "e": "register for a webinar",
+    "k": "웨비나에 등록하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "online seminar",
+   "web conference"
+  ],
+  "ant": "",
+  "tip": "webinar는 web과 seminar의 합성어로, Part 4·7 공지에서 register for(~에 등록하다)와 함께 쓰이며 online seminar로 패러프레이징된다.",
+  "q": {
+   "s": "Participants in tomorrow's ------- will receive a link by e-mail to join the online session.",
+   "o": [
+    "webinar",
+    "web address",
+    "web page",
+    "webcam"
+   ],
+   "a": 0,
+   "k": "참가자가 이메일로 링크를 받아 온라인으로 참여하는 행사이므로 webinar가 정답이다. web address(웹 주소), web page(웹 페이지), webcam(웹캠)은 참가하는 행사가 아니다."
+  }
+ }
+]

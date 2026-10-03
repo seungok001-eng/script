@@ -53,7 +53,7 @@
   "ant": "",
   "tip": "produce는 명사로 '농산물(특히 신선 채소·과일)'이라는 뜻도 있어 Part 1·3의 식료품점 장면에 나온다. produce a receipt(영수증을 제시하다)처럼 '제시하다'라는 뜻도 알아 둔다.",
   "q": {
-   "s": "Thanks to the upgraded machinery, the factory can now ------- twice as many units per shift.",
+   "s": "With the upgraded machinery, the factory can now ------- twice as many units per shift.",
    "o": [
     "production",
     "produce",
@@ -569,7 +569,7 @@
   "ant": "",
   "tip": "maintenance와 같은 뜻의 불가산명사로 Part 7에서 서로 바꿔 쓰인다. be responsible for the upkeep of(~의 유지 관리를 맡다) 형태로 자주 나온다.",
   "q": {
-   "s": "Under the lease agreement, the tenant is responsible for the ------- of the garden and parking area.",
+   "s": "Under the lease agreement, the tenant must pay for the ------- of the garden and parking area.",
    "o": [
     "uptake",
     "upturn",
@@ -577,7 +577,7 @@
     "upkeep"
    ],
    "a": 3,
-   "k": "임대 계약상 세입자가 책임지는 것은 정원과 주차 공간의 유지 관리(upkeep)이다. uptake(흡수, 이해), upturn(호전), upshot(결과)은 의미가 맞지 않는다."
+   "k": "임대 계약상 세입자가 비용을 부담해야 하는 것은 정원과 주차 공간의 유지 관리(upkeep)이다. uptake(흡수, 이해), upturn(호전), upshot(결과)은 의미가 맞지 않는다."
   }
  },
  {
@@ -848,8 +848,8 @@
    5,
    7
   ],
-  "ex": "Ms. Kwon holds a master's degree in mechanical *engineering* from a university in Seoul.",
-  "exKo": "Kwon 씨는 서울의 한 대학교에서 기계 공학 석사 학위를 받았다.",
+  "ex": "Ms. Kwon manages a team of twelve in the company's *engineering* department.",
+  "exKo": "Kwon 씨는 회사 기술 부서에서 12명으로 구성된 팀을 이끌고 있다.",
   "col": [
    {
     "e": "engineering department",
@@ -1082,7 +1082,7 @@
    5,
    7
   ],
-  "ex": "Thanks to new tax incentives, *manufacturing* has returned to the region after a decade of decline.",
+  "ex": "With new tax incentives in place, *manufacturing* has returned to the region after a decade of decline.",
   "exKo": "새로운 세금 혜택 덕분에 10년간의 쇠퇴 끝에 제조업이 그 지역으로 돌아왔다.",
   "col": [
    {
@@ -1739,7 +1739,7 @@
   "ant": "",
   "tip": "go into mass production(대량 생산에 들어가다)이 자주 쓰이며 동사형은 하이픈을 넣은 mass-produce이다. Part 7에서 large-scale production으로 바꿔 표현된다.",
   "q": {
-   "s": "The electric bicycle is expected to go into mass ------- by the end of the year.",
+   "s": "The electric bicycle is expected to go into mass ------- early next year.",
    "o": [
     "productive",
     "production",
@@ -1787,7 +1787,7 @@
   "ant": "",
   "tip": "Part 1 사진 문제에서 'Boxes are being placed on a conveyor belt.'처럼 공장·공항 수하물 장면 묘사로 나온다. 동사 convey는 '운반하다, (생각을) 전달하다'라는 뜻이다.",
   "q": {
-   "s": "Each box is scanned automatically as it travels down the ------- toward the loading dock.",
+   "s": "Each box is scanned automatically as it travels down the ------- toward the shipping area.",
    "o": [
     "parking garage",
     "storage closet",
@@ -1795,7 +1795,7 @@
     "conveyor belt"
    ],
    "a": 3,
-   "k": "상자가 하역장 쪽으로 이동하면서 자동으로 스캔되는 장치는 컨베이어 벨트(conveyor belt)이다. parking garage(주차장), storage closet(수납장), control panel(제어판)은 상자가 이동하는 경로가 될 수 없다."
+   "k": "상자가 출하 구역 쪽으로 이동하면서 자동으로 스캔되는 장치는 컨베이어 벨트(conveyor belt)이다. parking garage(주차장), storage closet(수납장), control panel(제어판)은 상자가 이동하는 경로가 될 수 없다."
   }
  },
  {
@@ -2040,8 +2040,8 @@
    5,
    7
   ],
-  "ex": "The design team spent two weeks *refining* the layout of the website based on user feedback.",
-  "exKo": "디자인팀은 사용자 의견을 바탕으로 2주 동안 웹사이트 레이아웃을 다듬었다.",
+  "ex": "The design team spent two weeks *refining* the website's navigation menu based on user feedback.",
+  "exKo": "디자인팀은 사용자 의견을 바탕으로 2주 동안 웹사이트의 탐색 메뉴를 다듬었다.",
   "col": [
    {
     "e": "refine a process",

@@ -108,8 +108,8 @@
    1,
    7
   ],
-  "ex": "The *interior* walls of the lobby will be painted light gray next week.",
-  "exKo": "다음 주에 로비 내벽은 밝은 회색으로 칠해질 것이다.",
+  "ex": "The hotel hired a well-known designer to update the *interior* decor of its lobby.",
+  "exKo": "그 호텔은 로비의 실내 장식을 새롭게 꾸미기 위해 유명 디자이너를 고용했다.",
   "col": [
    {
     "e": "interior design",
@@ -128,15 +128,15 @@
   "ant": "exterior",
   "tip": "interior는 형용사(내부의)와 명사(내부, 실내) 둘 다로 쓰이며, interior designer(실내 디자이너)처럼 직업명으로 Part 3·7에 자주 나온다.",
   "q": {
-   "s": "Unlike the building's brick facade, its ------- walls are made of drywall, which makes renovations easier.",
+   "s": "The ------- walls of the office will be repainted, but the outside of the building will not be touched.",
    "o": [
     "interior",
     "exterior",
-    "outer",
-    "external"
+    "external",
+    "extended"
    ],
    "a": 0,
-   "k": "벽돌로 된 건물 정면(facade)과 대조되는 벽이므로 '내부의'라는 뜻의 interior가 정답이다. exterior, outer, external은 모두 '바깥쪽의'라는 뜻이라 unlike로 대조하는 문맥에 맞지 않는다."
+   "k": "건물 바깥은 손대지 않는다고 했으므로 다시 칠하는 것은 '내부의' 벽이다. 따라서 interior가 정답이며, exterior와 external은 '외부의'라는 뜻이라 뒷부분과 모순되고 extended(연장된)는 벽을 수식하기에 의미가 맞지 않는다."
   }
  },
  {

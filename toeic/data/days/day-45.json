@@ -535,7 +535,7 @@
   "ant": "",
   "tip": "cutlery는 불가산명사라 a cutlery, cutleries로 쓰지 않는다. 미국 영어에서는 silverware, flatware로 바꿔 쓰인다.",
   "q": {
-   "s": "Guests can find plates, cups, and ------- next to the coffee machine in the break room.",
+   "s": "Staff members can find plates, cups, and ------- on the shelf beside the microwave.",
    "o": [
     "curiosity",
     "currency",
@@ -1877,7 +1877,7 @@
   "ant": "",
   "tip": "valet parking(대리 주차)의 형태로 호텔·식당 광고에 자주 나온다. 발음은 [vælei] 또는 [vǽlit]이며 value(가치)와 혼동하지 말자.",
   "q": {
-   "s": "Guests arriving by car can leave their keys with the ------- attendant at the main entrance.",
+   "s": "Diners who do not want to search for a parking space can hand their keys to a ------- attendant.",
    "o": [
     "valid",
     "valet",
@@ -1885,7 +1885,7 @@
     "variety"
    ],
    "a": 1,
-   "k": "차를 타고 온 손님이 열쇠를 맡기는 사람은 '대리 주차 요원(valet attendant)'이므로 valet이 정답이다. valid(유효한), value(가치), variety(다양성)는 attendant와 어울려 이런 의미를 만들지 않는다."
+   "k": "주차 공간을 찾고 싶지 않은 손님이 열쇠를 맡기는 사람은 '대리 주차 요원(valet attendant)'이므로 valet이 정답이다. valid(유효한), value(가치), variety(다양성)는 attendant와 어울려 이런 의미를 만들지 않는다."
   }
  }
 ]

@@ -129,7 +129,7 @@
   "ant": "",
   "tip": "garage는 '차고' 외에 '자동차 정비소'라는 뜻도 있어 LC에서 차를 수리 맡기는 장소로 나온다. parking garage는 여러 층으로 된 주차 건물을 가리킨다.",
   "q": {
-   "s": "The ------- across the street from our office charges $12 for a full day of parking.",
+   "s": "The hotel's ------- has room for 300 cars, and guests can park there for $15 a night.",
    "o": [
     "gallery",
     "garment",
@@ -137,7 +137,7 @@
     "gazette"
    ],
    "a": 2,
-   "k": "하루 주차 요금을 받는 곳이므로 garage(주차장)가 정답이다. gallery(미술관), garment(의복), gazette(관보, 신문)는 주차와 관계가 없다."
+   "k": "300대의 차를 세울 수 있고 1박에 15달러를 내고 주차하는 곳이므로 garage(주차장)가 정답이다. gallery(미술관), garment(의복), gazette(관보, 신문)는 주차와 관계가 없다."
   }
  },
  {

@@ -257,7 +257,7 @@
   "ant": "increase",
   "tip": "동사로 decrease by(~만큼), decrease to(~로)가 쓰이고, 명사로는 a decrease in(~의 감소)처럼 전치사 in과 짝을 이룬다. 자동사·타동사로 모두 쓰인다.",
   "q": {
-   "s": "Thanks to the new insulation, heating costs are expected to ------- by about 15 percent this winter.",
+   "s": "Because of the new insulation, heating costs are expected to ------- by about 15 percent this winter.",
    "o": [
     "decreasing",
     "decreased",
@@ -689,7 +689,7 @@
   "ant": "slow",
   "tip": "명사 앞 수식 자리에 들어가는 형용사로, 부사 rapidly와의 품사 구별 문제가 대표적이다. rapid growth/expansion(급속한 성장·확장)이 경제 지문 빈출 표현이다.",
   "q": {
-   "s": "The ------- expansion of the company's delivery network has created hundreds of new jobs in the region.",
+   "s": "The ------- rise in housing prices has made it difficult for young families to buy homes.",
    "o": [
     "rapidly",
     "rapidity",
@@ -697,7 +697,7 @@
     "rapids"
    ],
    "a": 2,
-   "k": "정관사 The와 명사 expansion 사이에서 명사를 수식하는 형용사 자리이므로 rapid가 정답이다. rapidly는 부사, rapidity(신속함)와 rapids(급류)는 명사다."
+   "k": "정관사 The와 명사 rise 사이에서 명사를 수식하는 형용사 자리이므로 rapid가 정답이다. rapidly는 부사, rapidity(신속함)와 rapids(급류)는 명사다."
   }
  },
  {
@@ -796,7 +796,7 @@
   "ant": "acceleration",
   "tip": "명사는 붙여 쓴 slowdown, 동사구는 띄어 쓴 slow down이다. a slowdown in(~의 둔화)처럼 전치사 in과 짝을 이룬다.",
   "q": {
-   "s": "Many retailers are worried that the economic ------- will reduce spending during the holiday season.",
+   "s": "Many retailers are worried that the economic ------- will hurt sales during the holiday season.",
    "o": [
     "setup",
     "standby",
@@ -804,7 +804,7 @@
     "slowdown"
    ],
    "a": 3,
-   "k": "연말 소비를 위축시킬 것으로 우려되는 것은 경기 둔화(economic slowdown)이다. setup(설치, 구성), standby(대기), showdown(대결)은 의미가 맞지 않는다."
+   "k": "연말 매출에 타격을 줄 것으로 우려되는 것은 경기 둔화(economic slowdown)이다. setup(설치, 구성), standby(대기), showdown(대결)은 의미가 맞지 않는다."
   }
  },
  {
@@ -914,7 +914,7 @@
   "ant": "weak",
   "tip": "경제 지문에서 '견실한, 탄탄한'이라는 뜻으로 robust growth/demand처럼 쓰이며 strong, healthy로 바꿔 표현된다. 제품을 묘사할 때는 '튼튼한(sturdy)'이라는 뜻이 된다.",
   "q": {
-   "s": "Thanks to ------- sales in Asia, the company reported its best quarterly results in a decade.",
+   "s": "Driven by ------- sales in Asia, the company reported its best quarterly results in a decade.",
    "o": [
     "robust",
     "rigid",
@@ -937,7 +937,7 @@
    5,
    7
   ],
-  "ex": "Stock prices *rebounded* sharply after the central bank announced a cut in interest rates.",
+  "ex": "Stock prices *rebounded* strongly after the central bank announced a cut in interest rates.",
   "exKo": "중앙은행이 금리 인하를 발표하자 주가가 큰 폭으로 반등했다.",
   "col": [
    {
@@ -1278,8 +1278,8 @@
    5,
    7
   ],
-  "ex": "The analyst's *prediction* that oil prices would fall turned out to be correct.",
-  "exKo": "유가가 하락할 것이라는 그 분석가의 예측은 맞은 것으로 드러났다.",
+  "ex": "The analyst's *prediction* that oil prices would fall proved correct.",
+  "exKo": "유가가 하락할 것이라는 그 분석가의 예측은 적중했다.",
   "col": [
    {
     "e": "make a prediction",
@@ -1427,7 +1427,7 @@
   "ant": "",
   "tip": "Part 3·4 시각 정보 연계 문제에서 pie chart, bar chart가 자주 제시된다. 동사로는 '(변화를) 기록하다, (계획을) 세우다'(chart a course)라는 뜻도 있다.",
   "q": {
-   "s": "Please refer to the ------- on the next slide, which compares our sales figures with those of our main competitors.",
+   "s": "The ------- on the next slide compares our sales figures with those of our three main competitors.",
    "o": [
     "charter",
     "charity",
@@ -2136,8 +2136,8 @@
   "parts": [
    7
   ],
-  "ex": "Economists say that *consumer spending* accounts for nearly 70 percent of the country's economic activity.",
-  "exKo": "경제학자들은 소비자 지출이 그 나라 경제 활동의 약 70퍼센트를 차지한다고 말한다.",
+  "ex": "*Consumer spending* accounts for nearly 70 percent of the country's economic activity.",
+  "exKo": "소비자 지출은 그 나라 경제 활동의 약 70퍼센트를 차지한다.",
   "col": [
    {
     "e": "consumer spending on",

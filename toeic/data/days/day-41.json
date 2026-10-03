@@ -188,8 +188,8 @@
    5,
    7
   ],
-  "ex": "Please pay the full *amount* shown on the invoice within 30 days.",
-  "exKo": "청구서에 표시된 금액 전액을 30일 이내에 지불하기 바란다.",
+  "ex": "The full *amount* must be paid before the items can be shipped.",
+  "exKo": "물품이 발송되기 전에 금액 전액이 지불되어야 한다.",
   "col": [
    {
     "e": "a large amount of",
@@ -496,7 +496,7 @@
   "ant": "",
   "tip": "동사로는 '자금을 대다'(finance a project)라는 뜻이며, 복수형 finances는 '재정 상태, 자금'을 뜻한다. 형용사 financial과의 품사 구별 문제가 자주 나온다.",
   "q": {
-   "s": "All requests for new office equipment must be approved by the ------- department.",
+   "s": "All requests for new office equipment must be reviewed by the ------- department.",
    "o": [
     "financially",
     "financier",
@@ -816,8 +816,8 @@
    5,
    7
   ],
-  "ex": "Shareholders will receive a copy of the *annual* report by the end of March.",
-  "exKo": "주주들은 3월 말까지 연차 보고서 사본을 받게 될 것이다.",
+  "ex": "Shareholders will be able to read the *annual* report on our website from March 31.",
+  "exKo": "주주들은 3월 31일부터 당사 웹사이트에서 연차 보고서를 볼 수 있다.",
   "col": [
    {
     "e": "annual report",
@@ -1084,7 +1084,7 @@
   "ant": "",
   "tip": "출장 경비 정산 지문(Part 3·7)에서 submit an expense report가 receipts(영수증), reimbursement(환급)와 함께 나온다. expense는 가산명사로 '비용'이라는 뜻이다.",
   "q": {
-   "s": "Employees must submit an ------- report within ten days of returning from a business trip.",
+   "s": "Employees must submit an ------- report within ten days of the end of each trip.",
    "o": [
     "expensive",
     "expensively",
@@ -1143,7 +1143,7 @@
   "ant": "",
   "tip": "reimbursement for(~에 대한 환급)처럼 전치사 for와 짝을 이룬다. 동사 reimburse는 reimburse A for B(A에게 B를 환급해 주다) 구조로 출제된다.",
   "q": {
-   "s": "Requests for ------- of relocation costs must be approved by a department manager.",
+   "s": "Employees seeking ------- of relocation costs must fill out Form 12B.",
    "o": [
     "reimbursement",
     "reimburse",
@@ -1151,7 +1151,7 @@
     "reimbursable"
    ],
    "a": 0,
-   "k": "전치사 for와 of 사이의 명사 자리이므로 reimbursement가 정답이다. reimburse는 동사, reimbursed는 과거분사, reimbursable은 형용사다."
+   "k": "동사 seeking의 목적어이자 전치사 of 앞의 명사 자리이므로 reimbursement가 정답이다. reimburse는 동사, reimbursed는 과거분사, reimbursable은 형용사다."
   }
  },
  {
@@ -1197,7 +1197,7 @@
   "ant": "",
   "tip": "allocation of(~의 배분)처럼 전치사 of와 함께 쓰이며, 동사 allocate는 allocate A to/for B(A를 B에 배정하다) 구조로 출제된다.",
   "q": {
-   "s": "The ------- of office space will be decided once the new employees have been assigned to their teams.",
+   "s": "The ------- of office space will be decided after the new employees have been assigned to their teams.",
    "o": [
     "allocate",
     "allocated",
@@ -1389,7 +1389,7 @@
    5,
    7
   ],
-  "ex": "The town set up a special *fund* to help local businesses recover from the flood.",
+  "ex": "The town set up a special *fund* to help local businesses rebuild after the flood.",
   "exKo": "그 마을은 지역 업체들이 홍수 피해에서 회복하도록 돕기 위해 특별 기금을 마련했다.",
   "col": [
    {
@@ -1478,7 +1478,7 @@
   "ant": "",
   "tip": "사람명사 auditor와 행위명사 audit(감사)을 구별하는 문제가 나온다. external(외부)/internal(내부) auditor로 자주 쓰인다.",
   "q": {
-   "s": "Mr. Klein, the company's chief internal -------, reports directly to the board of directors.",
+   "s": "Mr. Klein, the company's chief internal -------, will present his findings at Friday's meeting.",
    "o": [
     "audit",
     "audition",
@@ -1536,7 +1536,7 @@
   "ant": "",
   "tip": "재무 지문에서는 '지분, 자기 자본'(shareholders' equity)이라는 뜻으로 쓰이며 stake, shares로 바꿔 표현된다. 일반 문맥에서는 '공정성'이라는 뜻이어서 형용사 equitable(공정한)과 연결된다.",
   "q": {
-   "s": "In exchange for its investment, the venture capital firm received a 20 percent ------- stake in the start-up.",
+   "s": "As part of the deal, the venture capital firm received a 20 percent ------- stake in the start-up.",
    "o": [
     "equity",
     "equality",
@@ -1544,7 +1544,7 @@
     "equivalence"
    ],
    "a": 0,
-   "k": "투자의 대가로 받은 '20퍼센트 지분'은 equity stake로 표현한다. equality(평등), equation(방정식), equivalence(동등함)는 stake와 결합해 이런 뜻을 만들지 않는다."
+   "k": "거래의 일환으로 받은 '20퍼센트 지분'은 equity stake로 표현한다. equality(평등), equation(방정식), equivalence(동등함)는 stake와 결합해 이런 뜻을 만들지 않는다."
   }
  },
  {
