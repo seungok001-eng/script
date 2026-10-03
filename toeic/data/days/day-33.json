@@ -946,7 +946,7 @@
   "ant": "",
   "tip": "종이 서류철과 컴퓨터 폴더 모두를 가리킨다. 사진 묘사에서 holding a folder, 업무 대화에서 upload to the shared folder가 자주 나온다.",
   "q": {
-   "s": "The training materials have been uploaded to the shared ------- on the company server.",
+   "s": "The new price lists have been uploaded to the shared ------- on the company server.",
    "o": [
     "holder",
     "binder",
@@ -1184,7 +1184,7 @@
   "ant": "",
   "tip": "행사 공지·광고 첫머리에서 Mark your calendar(s) for ~(~ 날짜를 기억해 두세요) 형태로 쓰인다. Part 4·7에서 행사 날짜를 묻는 문제의 단서가 된다.",
   "q": {
-   "s": "------- for Saturday, June 7, when our yearly charity run will be held in Riverside Park.",
+   "s": "------- for Saturday, June 7, the date of our yearly charity run in Riverside Park.",
    "o": [
     "Take your time",
     "Mark your calendar",
@@ -1303,7 +1303,7 @@
   "ant": "",
   "tip": "사람명사 assistant와 불가산명사 assistance(도움)를 구별하는 문제가 단골이다. assistant manager(부지배인)처럼 직책 앞에 붙기도 한다.",
   "q": {
-   "s": "Ms. Lee works as a legal ------- at a law firm in Busan.",
+   "s": "Ms. Lee works as a dental ------- at a clinic in Busan.",
    "o": [
     "assistance",
     "assist",
@@ -1311,7 +1311,7 @@
     "assistant"
    ],
    "a": 3,
-   "k": "works as a legal 뒤에는 직업을 나타내는 사람명사가 와야 하므로 assistant가 정답이다. assistance는 '도움'이라는 불가산명사라 관사 a와 함께 직업을 나타낼 수 없다."
+   "k": "works as a dental 뒤에는 직업을 나타내는 사람명사가 와야 하므로 assistant(치과 보조원)가 정답이다. assistance는 '도움'이라는 불가산명사라 관사 a와 함께 직업을 나타낼 수 없다."
   }
  },
  {

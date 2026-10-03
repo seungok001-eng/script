@@ -259,7 +259,7 @@
   "ant": "satisfaction",
   "tip": "전치사 with와 함께 dissatisfaction with(~에 대한 불만)로 쓰이며, express/voice dissatisfaction(불만을 표하다) 형태로 Part 7에 나온다.",
   "q": {
-   "s": "Several guests expressed ------- with the slow room service at the hotel.",
+   "s": "Several guests expressed ------- with the slow check-in process at the hotel.",
    "o": [
     "dissatisfied",
     "dissatisfy",
@@ -983,7 +983,7 @@
   "ant": "",
   "tip": "return A to B(A를 B에 돌려주다), return a call(회신 전화를 하다) 표현이 빈출이다. '돌아오다'의 뜻일 때는 return back이라고 하지 않고 return to로 쓴다.",
   "q": {
-   "s": "Items purchased online may be ------- to any of our stores within 30 days.",
+   "s": "Items bought on our website may be ------- to any of our stores within 30 days.",
    "o": [
     "retained",
     "returned",
@@ -1359,7 +1359,7 @@
    5,
    7
   ],
-  "ex": "*Dissatisfied* customers are encouraged to fill out the online feedback form.",
+  "ex": "*Dissatisfied* customers are encouraged to complete the online feedback form.",
   "exKo": "불만이 있는 고객은 온라인 의견 양식을 작성하도록 권장된다.",
   "col": [
    {

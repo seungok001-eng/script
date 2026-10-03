@@ -66,8 +66,8 @@
    5,
    7
   ],
-  "ex": "*Sales* of winter coats rose sharply after the first heavy snowfall.",
-  "exKo": "첫 폭설 이후 겨울 코트 판매량이 급격히 증가했다.",
+  "ex": "*Sales* of winter coats doubled after the first heavy snowfall.",
+  "exKo": "첫 폭설 이후 겨울 코트 판매량이 두 배로 늘었다.",
   "col": [
    {
     "e": "sales of",
@@ -100,29 +100,28 @@
    }
   ],
   "para": [
-   "revenue",
-   "turnover"
+   "revenue"
   ],
   "ant": "",
   "tip": "'매출, 판매량'의 의미일 때는 복수형 sales로 쓰며 동사도 복수로 받는다. 단수 sale은 '판매, 할인 행사'(on sale, for sale)라는 뜻이다.",
   "q": {
-   "s": "------- of the new laptop have exceeded the company's projections by nearly 30 percent.",
+   "s": "The company's ------- have risen by 20 percent since it opened two new stores in Busan.",
    "o": [
-    "Sale",
-    "Sells",
-    "Selling",
-    "Sales"
+    "sale",
+    "sells",
+    "selling",
+    "sales"
    ],
    "a": 3,
-   "k": "복수 동사 have의 주어가 되어 '판매량'을 뜻하는 복수명사 Sales가 정답이다. Sale은 단수라 have와 수가 맞지 않고, Sells는 동사, Selling은 단수 취급하는 동명사다."
+   "k": "소유격 The company's 뒤에서 복수 동사 have의 주어가 되어 '매출, 판매량'을 뜻하는 복수명사 sales가 정답이다. sale은 단수라 have와 수가 맞지 않고, sells는 동사, selling은 단수 취급하는 동명사다."
   }
  },
  {
   "w": "trade-in",
   "pos": "n",
   "m": [
-   "보상 판매(되는 중고품)",
-   "(중고품) 보상 판매 가격"
+   "보상 판매",
+   "보상 판매용 중고품"
   ],
   "tier": 3,
   "parts": [
@@ -211,7 +210,7 @@
   "ant": "",
   "tip": "명사로 job offer(채용 제의), special offer(특가 판매)가 빈출이고, 동사로는 offer A B / offer B to A(A에게 B를 제공하다)의 4형식 구조가 출제된다.",
   "q": {
-   "s": "Mr. Lindqvist accepted the job ------- after negotiating a higher starting salary.",
+   "s": "After weeks of talks, the owners accepted an ------- of $2 million for the building.",
    "o": [
     "opening",
     "offer",
@@ -219,7 +218,7 @@
     "origin"
    ],
    "a": 1,
-   "k": "더 높은 초봉을 협상한 뒤 '수락한' 것은 채용 제의이므로 offer가 정답이다(job offer: 일자리 제의). job opening(공석)은 지원하는 대상이지 수락하는 대상이 아니며, outlet(판매점), origin(기원)은 의미가 맞지 않는다."
+   "k": "건물에 대해 200만 달러를 내겠다는 '제안'을 수락했다는 의미이므로 offer가 정답이다(accept an offer: 제안을 받아들이다). opening(공석, 개장), outlet(판매점), origin(기원)은 accept의 대상으로 금액과 어울리지 않는다."
   }
  },
  {
@@ -259,7 +258,7 @@
   "ant": "",
   "tip": "이미 다른 사람이 서명한 문서에 추가로 서명해 승인하는 것을 뜻한다. be countersigned by a manager(관리자의 확인 서명을 받다) 같은 수동태 형태로 자주 나온다.",
   "q": {
-   "s": "The purchase order cannot be processed until it has been ------- by the finance director.",
+   "s": "The expense report cannot be processed until it has been ------- by a department head.",
    "o": [
     "countersigned",
     "counterfeited",
@@ -267,7 +266,7 @@
     "counted"
    ],
    "a": 0,
-   "k": "구매 주문서가 재무 이사의 '확인 서명을 받아야' 처리될 수 있다는 의미이므로 countersigned가 정답이다. counterfeited(위조된), countered(반박된), counted(세어진)는 문맥에 맞지 않는다."
+   "k": "경비 보고서가 부서장의 '확인 서명을 받아야' 처리될 수 있다는 의미이므로 countersigned가 정답이다. counterfeited(위조된), countered(반박된), counted(세어진)는 문맥에 맞지 않는다."
   }
  },
  {
@@ -281,8 +280,8 @@
    5,
    7
   ],
-  "ex": "The city council voted to *rescind* the planned increase in parking fees.",
-  "exKo": "시의회는 계획된 주차 요금 인상을 철회하기로 표결했다.",
+  "ex": "The airline decided to *rescind* its new baggage fee after a wave of customer complaints.",
+  "exKo": "그 항공사는 고객 불만이 쇄도하자 새 수하물 요금을 철회하기로 결정했다.",
   "col": [
    {
     "e": "rescind an offer",
@@ -308,7 +307,7 @@
   "ant": "",
   "tip": "공식적인 결정·제안·계약을 무효로 하는 격식체 타동사다. Part 7에서는 cancel, withdraw, revoke로 바꿔 표현된다.",
   "q": {
-   "s": "The company ------- its job offer after the candidate failed to provide the required references.",
+   "s": "The board ------- the policy change only two weeks after approving it.",
    "o": [
     "resided",
     "resembled",
@@ -316,7 +315,7 @@
     "rescinded"
    ],
    "a": 3,
-   "k": "지원자가 필요한 추천서를 내지 못해 회사가 채용 제안을 '철회했다'는 의미이므로 rescinded가 정답이다. resided(거주했다), resembled(닮았다), reclined(기댔다)는 문맥에 맞지 않는다."
+   "k": "정책 변경을 승인한 지 2주 만에 '철회했다'는 의미이므로 rescinded가 정답이다. resided(거주했다), resembled(닮았다), reclined(기댔다)는 문맥에 맞지 않는다."
   }
  },
  {
@@ -382,7 +381,7 @@
    5,
    7
   ],
-  "ex": "Ms. Ferreira manages several major *accounts* for the advertising firm.",
+  "ex": "Ms. Ferreira manages several major *accounts* at the advertising firm.",
   "exKo": "Ferreira 씨는 그 광고 회사에서 여러 주요 고객사를 담당하고 있다.",
   "col": [
    {
@@ -636,10 +635,7 @@
     "m": "협상"
    }
   ],
-  "para": [
-   "mediator",
-   "bargainer"
-  ],
+  "para": [],
   "ant": "",
   "tip": "-or로 끝나는 사람명사로, 관사·형용사 뒤 사람 자리를 묻는 품사 문제에 나온다. chief/lead negotiator(수석 협상가)가 자주 쓰인다.",
   "q": {
@@ -793,7 +789,7 @@
   "ant": "",
   "tip": "명사로 a (real) bargain(싸게 산 물건), at a bargain price(특가로)가 Part 2·3에 자주 나온다. 동사로는 bargain with(~와 흥정하다)처럼 쓴다.",
   "q": {
-   "s": "Shoppers looking for ------- should visit the outlet store during its annual clearance event.",
+   "s": "The outlet store's annual clearance event is the best time to find -------.",
    "o": [
     "bargains",
     "burdens",
@@ -801,7 +797,7 @@
     "budgets"
    ],
    "a": 0,
-   "k": "연례 재고 정리 행사 때 아웃렛 매장을 방문해야 하는 사람은 '특가품'을 찾는 쇼핑객이므로 bargains가 정답이다. burdens(부담), barriers(장벽), budgets(예산)는 의미가 맞지 않는다."
+   "k": "아웃렛 매장의 연례 재고 정리 행사 때 찾을 수 있는 것은 '특가품'이므로 bargains가 정답이다. burdens(부담), barriers(장벽), budgets(예산)는 의미가 맞지 않는다."
   }
  },
  {
@@ -874,8 +870,8 @@
    5,
    7
   ],
-  "ex": "Our legal team will *draw up* a new contract by the end of the week.",
-  "exKo": "우리 법무팀이 이번 주 말까지 새 계약서를 작성할 것이다.",
+  "ex": "Our legal team will *draw up* a new contract by Friday.",
+  "exKo": "우리 법무팀이 금요일까지 새 계약서를 작성할 것이다.",
   "col": [
    {
     "e": "draw up a contract",
@@ -1003,7 +999,7 @@
   "ant": "",
   "tip": "식품·쿠폰·카드·계약 등의 유효 기한을 말하며, Part 3·4에서는 회원권이나 신용카드 만료와 관련된 세부 정보로 자주 등장한다.",
   "q": {
-   "s": "All dairy products are removed from the shelves two days before their expiration -------.",
+   "s": "Store employees check the expiration ------- on all milk cartons every morning.",
    "o": [
     "date",
     "data",
@@ -1011,7 +1007,7 @@
     "debt"
    ],
    "a": 0,
-   "k": "유제품의 '유효 기한' 이틀 전에 진열대에서 치운다는 의미로 expiration과 복합명사를 이루는 date가 정답이다. data(자료), dose(복용량), debt(빚)는 의미가 맞지 않는다."
+   "k": "매일 아침 우유 팩의 '유효 기한'을 확인한다는 의미로 expiration과 복합명사를 이루는 date가 정답이다. data(자료), dose(복용량), debt(빚)는 의미가 맞지 않는다."
   }
  },
  {
@@ -1061,7 +1057,7 @@
   "ant": "",
   "tip": "renew(갱신하다)의 명사형으로 renewal notice, renewal form 같은 복합명사가 Part 7에 자주 나온다. urban renewal(도시 재개발)이라는 뜻도 있다.",
   "q": {
-   "s": "Subscribers will receive a ------- notice by e-mail one month before their subscription ends.",
+   "s": "You will need to fill in a ------- form if your library card expires this month.",
    "o": [
     "renew",
     "renews",
@@ -1069,7 +1065,7 @@
     "renewing"
    ],
    "a": 2,
-   "k": "명사 notice 앞에서 복합명사를 이루는 명사 자리이므로 renewal이 정답이다(renewal notice: 갱신 안내문). renew와 renews는 동사이고, renewing은 '갱신하는 안내문'이라는 어색한 의미가 된다."
+   "k": "명사 form 앞에서 복합명사를 이루는 명사 자리이므로 renewal이 정답이다(renewal form: 갱신 신청서). renew와 renews는 동사이고, renewing은 '갱신하는 양식'이라는 어색한 의미가 된다."
   }
  },
  {
@@ -1116,7 +1112,7 @@
   "ant": "",
   "tip": "for the duration of(~하는 기간 내내) 형태가 빈출이다. 같은 어원의 durable(내구성 있는), durability(내구성)와 혼동하지 않도록 주의하자.",
   "q": {
-   "s": "Visitors must wear safety helmets for the ------- of the factory tour.",
+   "s": "The ------- of the factory tour is approximately ninety minutes.",
    "o": [
     "durability",
     "durable",
@@ -1124,7 +1120,7 @@
     "duration"
    ],
    "a": 3,
-   "k": "for the duration of(~ 동안 내내) 구문으로 '공장 견학 내내 안전모를 써야 한다'는 의미이므로 duration이 정답이다. durability는 '내구성'이라 의미가 맞지 않고, durable은 형용사, during은 전치사다."
+   "k": "관사 The 뒤, 전치사 of 앞의 명사 자리이며 공장 견학의 '소요 기간'이 약 90분이라는 의미이므로 duration이 정답이다. durability는 '내구성'이라 의미가 맞지 않고, durable은 형용사, during은 전치사다."
   }
  },
  {
@@ -1280,7 +1276,7 @@
   "ant": "",
   "tip": "계약서에 서명한 사람·기관을 뜻하며 signatory to the agreement처럼 전치사 to를 쓴다. 서명 자체를 뜻하는 signature와 구분해야 한다.",
   "q": {
-   "s": "All ------- to the agreement are required to keep its terms confidential.",
+   "s": "All ------- to the agreement must keep its terms confidential.",
    "o": [
     "signatures",
     "signatories",
@@ -1451,8 +1447,8 @@
    4,
    7
   ],
-  "ex": "Our team met its quarterly *sales target* two weeks ahead of schedule.",
-  "exKo": "우리 팀은 분기 판매 목표를 예정보다 2주 앞당겨 달성했다.",
+  "ex": "Our team met its quarterly *sales target* with two weeks to spare.",
+  "exKo": "우리 팀은 2주를 남겨 두고 분기 판매 목표를 달성했다.",
   "col": [
    {
     "e": "meet a sales target",
@@ -1475,7 +1471,7 @@
   "ant": "",
   "tip": "meet/reach/hit a sales target(판매 목표를 달성하다)와 같은 동사 짝이 Part 3·4 회의 대화에 자주 나온다. Part 7에서는 quota, sales goal로 바꿔 표현된다.",
   "q": {
-   "s": "Employees who exceed their monthly sales ------- will receive a performance bonus.",
+   "s": "Employees who surpass their sales ------- for the quarter will receive a performance bonus.",
    "o": [
     "targets",
     "tariffs",
@@ -1483,7 +1479,7 @@
     "tactics"
    ],
    "a": 0,
-   "k": "월간 판매 '목표'를 초과하는 직원에게 성과급을 준다는 의미이므로 targets가 정답이다. tariffs(관세), tenants(세입자), tactics(전술)는 exceed와 의미상 어울리지 않는다."
+   "k": "분기 판매 '목표'를 넘어서는 직원에게 성과급을 준다는 의미이므로 targets가 정답이다. tariffs(관세), tenants(세입자), tactics(전술)는 surpass와 의미상 어울리지 않는다."
   }
  },
  {
@@ -1598,7 +1594,7 @@
    5,
    7
   ],
-  "ex": "The company plans to *leverage* its large social media following to promote the service.",
+  "ex": "The company plans to *leverage* its large social media following to publicize the service.",
   "exKo": "그 회사는 많은 소셜 미디어 팔로워를 활용해 그 서비스를 홍보할 계획이다.",
   "col": [
    {
@@ -1642,8 +1638,8 @@
    5,
    7
   ],
-  "ex": "The supplier eventually *conceded* that the shipment had been delayed by its own error.",
-  "exKo": "공급업체는 결국 자사의 실수로 배송이 지연되었다는 것을 인정했다.",
+  "ex": "The supplier eventually *conceded* that the late shipment was its own fault.",
+  "exKo": "공급업체는 결국 배송 지연이 자사의 잘못이었음을 인정했다.",
   "col": [
    {
     "e": "concede that",
@@ -1669,7 +1665,7 @@
   "ant": "deny",
   "tip": "concede that절(~을 인정하다)과 협상에서 '양보하다'라는 뜻이 모두 쓰인다. 명사 concession(양보)은 Day 6 표제어로 함께 외워 두자.",
   "q": {
-   "s": "To close the deal quickly, the seller ------- several points, including the delivery fee.",
+   "s": "Hoping to complete the sale quickly, the seller ------- several points, including the delivery fee.",
    "o": [
     "conducted",
     "consented",
@@ -1677,7 +1673,7 @@
     "conceded"
    ],
    "a": 3,
-   "k": "거래를 빨리 성사시키기 위해 배송비를 포함한 몇 가지 사항을 '양보했다'는 의미이므로 conceded가 정답이다. consented는 자동사라 consent to로 써야 하고, conducted(실시했다), confided(털어놓았다)는 의미가 맞지 않는다."
+   "k": "판매를 빨리 마무리하기 위해 배송비를 포함한 몇 가지 사항을 '양보했다'는 의미이므로 conceded가 정답이다. consented는 자동사라 consent to로 써야 하고, conducted(실시했다), confided(털어놓았다)는 의미가 맞지 않는다."
   }
  },
  {
@@ -1828,7 +1824,7 @@
   "ant": "",
   "tip": "사람명사 consultant와 consultation(상담), consulting(컨설팅업)을 구분하는 품사 문제가 나온다. consult는 consult a doctor처럼 타동사로 쓴다.",
   "q": {
-   "s": "The firm hired an outside ------- to help reorganize its sales department.",
+   "s": "Before expanding overseas, Ms. Park met with a tax ------- to review the legal requirements.",
    "o": [
     "consultation",
     "consultant",
@@ -1836,7 +1832,7 @@
     "consulting"
    ],
    "a": 1,
-   "k": "고용(hired)의 대상이 되는 사람명사 자리이므로 consultant가 정답이다. consultation(상담)은 고용할 수 없고, consult는 동사, consulting은 관사 an과 함께 쓸 수 없는 불가산명사다."
+   "k": "관사 a 뒤에서 만나 상담하는 대상, 즉 사람명사 자리이므로 consultant(세무 자문가)가 정답이다. consultation(상담)은 만나는 사람이 아니고, consult는 동사, consulting은 a와 함께 쓸 수 없는 불가산명사다."
   }
  },
  {
@@ -1885,7 +1881,7 @@
   "ant": "",
   "tip": "'요금'이라는 의미일 때 at a ~ rate처럼 전치사 at과 함께 쓴다. 동사로는 be rated highly(높게 평가받다)처럼 '평가하다'라는 뜻이다.",
   "q": {
-   "s": "Members of the business club can book meeting rooms at a reduced -------.",
+   "s": "Members of the business club can book meeting rooms at a special -------.",
    "o": [
     "ration",
     "rank",
@@ -1893,7 +1889,7 @@
     "rate"
    ],
    "a": 3,
-   "k": "at a reduced rate(할인된 요금으로) 표현으로 회의실을 예약할 수 있다는 의미이므로 rate가 정답이다. ration(배급량), rank(계급, 순위), route(경로)는 의미가 맞지 않는다."
+   "k": "at a special rate(특별 요금으로) 표현으로 회의실을 예약할 수 있다는 의미이므로 rate가 정답이다. ration(배급량), rank(계급, 순위), route(경로)는 의미가 맞지 않는다."
   }
  },
  {
@@ -1998,8 +1994,7 @@
   ],
   "para": [
    "useful",
-   "helpful",
-   "precious"
+   "helpful"
   ],
   "ant": "worthless",
   "tip": "형용사 valuable(귀중한)과 복수명사 valuables(귀중품)를 구분해야 한다. invaluable은 '매우 귀중한'이라는 뜻으로 반의어가 아님에 주의하자.",

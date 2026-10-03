@@ -13,8 +13,8 @@
    5,
    7
   ],
-  "ex": "The total *cost* of the office renovation came to slightly more than the original estimate.",
-  "exKo": "사무실 개보수의 총비용은 처음 견적보다 약간 더 많이 나왔다.",
+  "ex": "The *cost* of the conference includes meals, materials, and a guided city tour.",
+  "exKo": "그 회의의 참가 비용에는 식사, 자료, 시내 가이드 투어가 포함되어 있다.",
   "col": [
    {
     "e": "at no extra cost",
@@ -49,7 +49,7 @@
   "ant": "",
   "tip": "at no extra/additional cost(추가 비용 없이)는 광고 지문 빈출 표현이다. 형용사 costly는 -ly로 끝나지만 부사가 아니라 형용사라는 점이 Part 5에 출제된다.",
   "q": {
-   "s": "Members can attend the monthly workshops at no additional -------.",
+   "s": "The total ------- of the renovation project is estimated at $2 million.",
    "o": [
     "cost",
     "costly",
@@ -57,7 +57,7 @@
     "costed"
    ],
    "a": 0,
-   "k": "at no additional cost는 '추가 비용 없이'라는 고정 표현이므로 명사 cost가 정답이다. costly는 -ly로 끝나지만 형용사이고, costing, costed는 이 표현에 쓰이지 않는다."
+   "k": "정관사 The와 형용사 total 뒤 명사 자리이며 '총비용'이라는 뜻이므로 명사 cost가 정답이다. costly는 -ly로 끝나지만 형용사이고, costing, costed는 이 자리에 맞지 않는다."
   }
  },
  {
@@ -213,7 +213,7 @@
   "ant": "",
   "tip": "amount of 뒤에는 불가산명사가 오고(a large amount of money), 가산 복수명사에는 number of를 쓴다. 동사로 amount to(총계가 ~에 달하다)도 출제된다.",
   "q": {
-   "s": "A large ------- of paperwork must be completed before the loan can be approved.",
+   "s": "The ------- of time employees spend in meetings has nearly doubled over the past year.",
    "o": [
     "number",
     "many",
@@ -221,7 +221,7 @@
     "few"
    ],
    "a": 2,
-   "k": "paperwork는 불가산명사이므로 a large amount of와 함께 쓴다. a large number of는 가산 복수명사 앞에 쓰고, many와 few는 A large 뒤에 올 수 없다."
+   "k": "time은 여기서 불가산명사이므로 the amount of와 함께 쓴다. number는 가산 복수명사 앞에 쓰고, many와 few는 The 뒤 명사 자리에 올 수 없다."
   }
  },
  {
@@ -290,7 +290,7 @@
    5,
    7
   ],
-  "ex": "The hotel plans to *increase* the number of guest rooms from 120 to 200 by next year.",
+  "ex": "The hotel plans to *increase* the number of rooms from 120 to 200 by next year.",
   "exKo": "그 호텔은 내년까지 객실 수를 120개에서 200개로 늘릴 계획이다.",
   "col": [
    {
@@ -325,7 +325,7 @@
   "ant": "decrease",
   "tip": "동사로 increase by(~만큼), increase to(~까지)가 쓰이고, 명사로는 an increase in(~의 증가)처럼 전치사 in과 짝을 이룬다. 부사 increasingly(점점 더)도 품사 문제에 나온다.",
   "q": {
-   "s": "Online sales have ------- by 25 percent since the store launched its mobile app.",
+   "s": "Prices for fresh vegetables have ------- sharply because of the long drought.",
    "o": [
     "increasingly",
     "increased",
@@ -515,8 +515,8 @@
    5,
    7
   ],
-  "ex": "The firm uses cloud-based *accounting* software to track expenses across all of its branches.",
-  "exKo": "그 회사는 모든 지점의 경비를 추적하기 위해 클라우드 기반 회계 소프트웨어를 사용한다.",
+  "ex": "Ms. Ortiz has worked in the *accounting* department at Hale Industries for eight years.",
+  "exKo": "Ortiz 씨는 Hale Industries의 회계부에서 8년째 일하고 있다.",
   "col": [
    {
     "e": "accounting department",
@@ -787,7 +787,7 @@
   "ant": "",
   "tip": "가산명사로 a calculation, calculations로 쓰이며 according to our calculations(우리 계산에 따르면)가 빈출 표현이다. 기계명사 calculator와 혼동하지 않는다.",
   "q": {
-   "s": "An error in the ------- of overtime pay meant that some employees were paid less than they had earned.",
+   "s": "An error in the ------- of sales tax meant that some customers were charged too much.",
    "o": [
     "calculation",
     "calculator",
@@ -795,7 +795,7 @@
     "calculated"
    ],
    "a": 0,
-   "k": "정관사 the와 전치사 of 사이 명사 자리이고 초과 근무 수당을 '계산하는 일'을 뜻해야 하므로 calculation이 정답이다. calculator는 '계산기'라는 기계명사라 의미가 맞지 않는다."
+   "k": "정관사 the와 전치사 of 사이 명사 자리이고 판매세를 '계산하는 일'을 뜻해야 하므로 calculation이 정답이다. calculator는 '계산기'라는 기계명사라 의미가 맞지 않고, calculate는 동사, calculated는 과거분사다."
   }
  },
  {
@@ -811,8 +811,8 @@
    5,
    7
   ],
-  "ex": "Shareholders will be able to read the *annual* report on our website from March 31.",
-  "exKo": "주주들은 3월 31일부터 당사 웹사이트에서 연차 보고서를 볼 수 있다.",
+  "ex": "Members pay an *annual* fee of $60 to use the library's online services.",
+  "exKo": "회원은 도서관 온라인 서비스를 이용하기 위해 연회비 60달러를 낸다.",
   "col": [
    {
     "e": "annual report",
@@ -1138,7 +1138,7 @@
   "ant": "",
   "tip": "reimbursement for(~에 대한 환급)처럼 전치사 for와 짝을 이룬다. 동사 reimburse는 reimburse A for B(A에게 B를 환급해 주다) 구조로 출제된다.",
   "q": {
-   "s": "Employees seeking ------- of relocation costs must fill out Form 12B.",
+   "s": "Employees seeking ------- of relocation costs must submit Form 12B to the human resources office.",
    "o": [
     "reimbursement",
     "reimburse",
@@ -1361,7 +1361,7 @@
   "ant": "",
   "tip": "secure/obtain financing(자금을 확보하다)이 빈출이며, 가전·자동차 광고에서는 zero-interest financing(무이자 할부)처럼 '할부'라는 뜻으로도 쓰인다.",
   "q": {
-   "s": "The car dealership is offering zero-interest ------- on all new vehicles purchased this month.",
+   "s": "Many first-time buyers rely on bank ------- to purchase a home.",
    "o": [
     "financier",
     "financial",
@@ -1369,7 +1369,7 @@
     "financing"
    ],
    "a": 3,
-   "k": "zero-interest financing은 '무이자 할부'라는 뜻으로, offering의 목적어가 되는 명사 financing이 정답이다. financier(자본가)는 사람명사라 의미가 맞지 않고, financial은 형용사, financed는 과거분사다."
+   "k": "bank financing은 '은행 융자'라는 뜻으로, 전치사 on의 목적어가 되는 명사 financing이 정답이다. financier(자본가)는 가산 사람명사라 관사 없이 쓸 수 없고 의미도 맞지 않으며, financial은 형용사, financed는 과거분사다."
   }
  },
  {
@@ -1384,7 +1384,7 @@
    5,
    7
   ],
-  "ex": "The town set up a special *fund* to help local businesses rebuild after the flood.",
+  "ex": "The town created a special *fund* to help local businesses rebuild after the flood.",
   "exKo": "그 마을은 지역 업체들이 홍수 이후 재기하도록 돕기 위해 특별 기금을 마련했다.",
   "col": [
    {
@@ -1420,7 +1420,7 @@
   "ant": "",
   "tip": "동사로는 '자금을 대다'(fund a project)라는 뜻이며, 명사 복수형 funds는 '자금'을 뜻한다. raise funds(기금을 모으다)와 insufficient funds(잔액 부족)가 빈출이다.",
   "q": {
-   "s": "The charity dinner raised enough ------- to build a new playground at the community center.",
+   "s": "The charity dinner raised enough ------- to build a new playground in Maple Park.",
    "o": [
     "fines",
     "fees",
@@ -1733,7 +1733,7 @@
   "ant": "",
   "tip": "손익계산서 맨 아래 줄에 적힌 '최종 이익'에서 나온 표현으로, 회의 대화에서는 The bottom line is ~(요점은 ~이다)처럼 '핵심'이라는 뜻으로도 쓰인다.",
   "q": {
-   "s": "Reducing employee turnover saves money on hiring and training, which ultimately improves the bottom -------.",
+   "s": "Cutting waste in the production process saves money, which ultimately improves the bottom -------.",
    "o": [
     "row",
     "edge",
@@ -2056,8 +2056,8 @@
    5,
    7
   ],
-  "ex": "The store manager noticed a *discrepancy* between the sales figures and the inventory records.",
-  "exKo": "매장 관리자는 매출 수치와 재고 기록 사이의 불일치를 발견했다.",
+  "ex": "The store manager noticed a *discrepancy* between the daily sales report and the inventory records.",
+  "exKo": "매장 관리자는 일일 판매 보고서와 재고 기록 사이의 불일치를 발견했다.",
   "col": [
    {
     "e": "discrepancy between A and B",

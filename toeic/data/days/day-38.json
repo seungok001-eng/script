@@ -162,7 +162,7 @@
   "ant": "",
   "tip": "deliver(배달하다)의 명사형으로 관사·형용사 뒤 명사 자리 문제로 나온다. cash on delivery(착불), delivery date(배송일) 같은 복합명사도 빈출이다.",
   "q": {
-   "s": "Same-day ------- is available for customers who live within ten miles of the store.",
+   "s": "Customers can choose a ------- date that is convenient for them when placing an order.",
    "o": [
     "delivery",
     "deliver",
@@ -170,7 +170,7 @@
     "deliverable"
    ],
    "a": 0,
-   "k": "형용사 Same-day의 수식을 받으며 단수 동사 is의 주어가 되는 명사 자리이므로 delivery가 정답이다. deliver는 동사, delivered는 동사의 과거형·과거분사, deliverable은 형용사다."
+   "k": "관사 a 뒤에서 date와 복합명사를 이루는 명사 자리이므로 delivery가 정답이다(delivery date: 배송일). deliver는 동사, delivered는 동사의 과거형·과거분사, deliverable은 형용사로 date와 어울리지 않는다."
   }
  },
  {
@@ -560,8 +560,8 @@
    5,
    7
   ],
-  "ex": "Guests should present a photo ID to the front desk upon *arrival*.",
-  "exKo": "투숙객은 도착하는 즉시 프런트에 사진이 있는 신분증을 제시해야 한다.",
+  "ex": "Guests should present a photo ID at reception upon *arrival*.",
+  "exKo": "투숙객은 도착하는 즉시 접수처에 사진이 있는 신분증을 제시해야 한다.",
   "col": [
    {
     "e": "upon arrival",
@@ -754,7 +754,7 @@
   "ant": "",
   "tip": "불가산명사로 a postage나 postages로 쓰지 않는다. 반송 봉투 안내의 postage-paid envelope(우편 요금이 지불된 봉투)가 Part 7에 자주 나온다.",
   "q": {
-   "s": "Customers who return a defective item will be reimbursed for the cost of -------.",
+   "s": "Please enclose a self-addressed envelope with enough ------- for us to return your documents.",
    "o": [
     "postage",
     "posture",
@@ -762,7 +762,7 @@
     "position"
    ],
    "a": 0,
-   "k": "불량품을 반송하는 데 든 '우편 요금'을 환급받는다는 의미이므로 postage가 정답이다. posture(자세), portion(부분), position(위치, 직위)은 의미가 맞지 않는다."
+   "k": "서류를 돌려보낼 수 있도록 회신용 봉투에 충분한 '우편 요금(우표)'을 붙여 동봉하라는 의미이므로 postage가 정답이다. posture(자세), portion(부분), position(위치, 직위)은 의미가 맞지 않는다."
   }
  },
  {
@@ -1396,7 +1396,7 @@
   "ant": "correct",
   "tip": "be동사 뒤 보어 자리에 형용사 incorrect가, 동사를 수식할 때는 부사 incorrectly가 와야 한다. Part 3에서는 잘못 청구·배송된 상황이 자주 나온다.",
   "q": {
-   "s": "The invoice was sent back to the supplier because the billing address on it was -------.",
+   "s": "The invoice was sent back to the supplier because the tax amount on it was -------.",
    "o": [
     "incorrectly",
     "correction",
@@ -1404,7 +1404,7 @@
     "incorrect"
    ],
    "a": 3,
-   "k": "be동사 was 뒤 보어 자리에 형용사가 오며 청구서 주소가 '잘못되어서' 반송되었다는 의미이므로 incorrect가 정답이다. incorrectly는 부사, correction은 명사이고, corrective(바로잡는)는 의미가 맞지 않는다."
+   "k": "be동사 was 뒤 보어 자리에 형용사가 오며 청구서의 세액이 '잘못되어서' 반송되었다는 의미이므로 incorrect가 정답이다. incorrectly는 부사, correction은 명사이고, corrective(바로잡는)는 의미가 맞지 않는다."
   }
  },
  {
@@ -1645,7 +1645,7 @@
   "ant": "",
   "tip": "회사 내부에서 물품 구매를 요청하는 공식 문서를 말한다. Part 7 사내 공지에서 submit a requisition(요청서를 제출하다) 형태로 나오며 request로 바꿔 표현된다.",
   "q": {
-   "s": "To obtain additional printer cartridges, please fill out a supply ------- and send it to Ms. Lund.",
+   "s": "To obtain additional printer cartridges, please submit a supply ------- to Ms. Lund.",
    "o": [
     "repetition",
     "recognition",
@@ -1653,7 +1653,7 @@
     "resignation"
    ],
    "a": 2,
-   "k": "추가 프린터 카트리지를 받기 위해 작성하는 서류는 물품 '요청서'이므로 requisition이 정답이다. repetition(반복), recognition(인정), resignation(사직서)은 의미가 맞지 않는다."
+   "k": "추가 프린터 카트리지를 받기 위해 제출하는 서류는 물품 '요청서'이므로 requisition이 정답이다. repetition(반복), recognition(인정), resignation(사직서)은 의미가 맞지 않는다."
   }
  },
  {

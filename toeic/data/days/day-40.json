@@ -370,8 +370,8 @@
    5,
    7
   ],
-  "ex": "A recent *study* found that employees who take short breaks are more productive.",
-  "exKo": "최근 한 연구에서 짧은 휴식을 취하는 직원들의 생산성이 더 높은 것으로 나타났다.",
+  "ex": "A recent *study* found that employees who take short breaks make fewer mistakes.",
+  "exKo": "최근 한 연구에서 짧은 휴식을 취하는 직원들이 실수를 덜 하는 것으로 나타났다.",
   "col": [
    {
     "e": "conduct a study",
@@ -423,8 +423,8 @@
    5,
    7
   ],
-  "ex": "The university has spent millions of dollars on *research* into renewable energy.",
-  "exKo": "그 대학은 재생 에너지 연구에 수백만 달러를 투자했다.",
+  "ex": "The university has spent millions of dollars on *research* into new cancer treatments.",
+  "exKo": "그 대학은 새로운 암 치료법 연구에 수백만 달러를 투자했다.",
   "col": [
    {
     "e": "conduct research",
@@ -747,7 +747,7 @@
   "ant": "",
   "tip": "명사를 수식하는 형용사 자리에 들어가며 technological advances(기술 발전)가 빈출 표현이다. 부사 technologically(technologically advanced 기술적으로 앞선)와의 품사 구별도 출제된다.",
   "q": {
-   "s": "Recent ------- advances have made it possible to manufacture solar panels at a much lower cost.",
+   "s": "Recent ------- advances have made it possible to produce electric car batteries at a much lower cost.",
    "o": [
     "technologically",
     "technologies",
@@ -1114,8 +1114,8 @@
    5,
    7
   ],
-  "ex": "The advertising agency is known for the *creativity* of its television commercials.",
-  "exKo": "그 광고 대행사는 텔레비전 광고의 창의성으로 유명하다.",
+  "ex": "The design firm is known for the *creativity* of its television commercials.",
+  "exKo": "그 디자인 회사는 텔레비전 광고의 창의성으로 유명하다.",
   "col": [
    {
     "e": "encourage creativity",
@@ -1220,7 +1220,7 @@
   "ant": "",
   "tip": "반품·환불 지문에서 original receipt(영수증 원본), original packaging(원래 포장)이 빈출이다. 부사 originally(원래)와의 품사 구별 문제도 자주 나온다.",
   "q": {
-   "s": "Customers who want a refund must bring the product back in its ------- packaging.",
+   "s": "Please keep the ------- receipt, as photocopies will not be accepted for returns.",
    "o": [
     "original",
     "originally",
@@ -1228,7 +1228,7 @@
     "originate"
    ],
    "a": 0,
-   "k": "소유격 its와 명사 packaging 사이에서 명사를 수식하는 형용사 자리이므로 original이 정답이다. originally는 부사, origin은 명사, originate는 동사다."
+   "k": "정관사 the와 명사 receipt 사이에서 명사를 수식하는 형용사 자리이며 복사본과 대비되는 '원본' 영수증이라는 뜻이므로 original이 정답이다. originally는 부사, origin은 명사, originate는 동사다."
   }
  },
  {
@@ -1710,7 +1710,7 @@
   "ant": "invalidate",
   "tip": "Part 4·7에서 주차권 인증(validate a parking ticket) 표현이 자주 나온다. 형용사 valid(유효한)와 명사 validity(유효성)·validation(검증)의 품사 구별도 출제된다.",
   "q": {
-   "s": "Visitors to the medical center should have their parking tickets ------- at the front desk.",
+   "s": "Visitors to the medical center should have their parking tickets ------- before leaving the building.",
    "o": [
     "validate",
     "validated",
@@ -2013,7 +2013,7 @@
   "ant": "low-tech",
   "tip": "명사 앞에서 수식하는 형용사로, Part 7에서 state-of-the-art, cutting-edge, advanced로 바꿔 표현된다. 철자는 하이픈을 넣어 high-tech로 쓴다.",
   "q": {
-   "s": "The city hopes the new research park will attract ------- companies and create well-paid jobs.",
+   "s": "The start-up develops ------- sensors that help farmers monitor their crops from a smartphone.",
    "o": [
     "high-rise",
     "high-tech",
@@ -2021,7 +2021,7 @@
     "high-pitched"
    ],
    "a": 1,
-   "k": "첨단 연구 단지가 유치하려는 대상은 첨단 기술 기업이므로 high-tech가 정답이다. high-rise(고층의)는 건물을, high-pitched(음이 높은)는 소리를 묘사하며, highlighted(강조된)는 의미가 맞지 않는다."
+   "k": "농부가 스마트폰으로 작물을 관리하도록 돕는 센서이므로 '첨단 기술의'라는 뜻의 high-tech가 정답이다. high-rise(고층의)는 건물을, high-pitched(음이 높은)는 소리를 묘사하며, highlighted(강조된)는 의미가 맞지 않는다."
   }
  },
  {
