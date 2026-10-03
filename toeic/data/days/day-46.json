@@ -1,0 +1,1936 @@
+[
+ {
+  "w": "backed up",
+  "pos": "phr",
+  "m": [
+   "(교통이) 정체된, 막힌",
+   "(일이) 밀린"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Traffic on Route 7 is *backed up* for several miles because of an accident near Exit 12.",
+  "exKo": "12번 출구 근처에서 난 사고 때문에 7번 도로의 차량이 수 마일에 걸쳐 정체되어 있다.",
+  "col": [
+   {
+    "e": "be backed up for miles",
+    "k": "수 마일 정체되다"
+   },
+   {
+    "e": "traffic is backed up",
+    "k": "차가 밀려 있다"
+   }
+  ],
+  "der": [
+   {
+    "w": "backup",
+    "pos": "n",
+    "m": "정체, 예비(품)"
+   }
+  ],
+  "para": [
+   "congested",
+   "jammed"
+  ],
+  "ant": "",
+  "tip": "교통 방송(Part 4)에서 traffic is backed up(차가 밀려 있다)이 지연 사유로 자주 나온다. 일이 밀렸다는 뜻으로 I'm backed up with work처럼도 쓴다.",
+  "q": {
+   "s": "Cars were ------- on Harbor Bridge for over an hour because two lanes were closed.",
+   "o": [
+    "backed down",
+    "turned in",
+    "backed up",
+    "given out"
+   ],
+   "a": 2,
+   "k": "차로 두 개가 폐쇄되어 차량이 한 시간 넘게 '정체되었다'는 의미이므로 backed up이 정답이다. backed down(물러섰다), turned in(제출된), given out(배포된)은 교통 정체를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "motorist",
+  "pos": "n",
+  "m": [
+   "(자동차) 운전자"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "*Motorists* are advised to avoid the downtown area during Saturday's parade.",
+  "exKo": "운전자들은 토요일 퍼레이드 동안 도심 지역을 피하도록 권고된다.",
+  "col": [
+   {
+    "e": "motorists are advised to",
+    "k": "운전자들은 ~하도록 권고된다"
+   },
+   {
+    "e": "stranded motorists",
+    "k": "오도 가도 못하는 운전자들"
+   }
+  ],
+  "der": [
+   {
+    "w": "motor",
+    "pos": "n",
+    "m": "모터, 엔진"
+   },
+   {
+    "w": "motorized",
+    "pos": "adj",
+    "m": "모터가 달린"
+   }
+  ],
+  "para": [
+   "driver"
+  ],
+  "ant": "pedestrian",
+  "tip": "교통 안내 방송과 기사에서 driver 대신 자주 쓰이며, Motorists are advised to take an alternate route가 대표 문장이다.",
+  "q": {
+   "s": "------- traveling on Route 9 should expect delays because of ongoing road repairs.",
+   "o": [
+    "Motors",
+    "Motorists",
+    "Motorized",
+    "Motoring"
+   ],
+   "a": 1,
+   "k": "traveling의 수식을 받으며 '지연을 예상해야 하는' 주체는 사람이므로 Motorists가 정답이다. Motors(모터)는 사람이 아니고, Motorized는 형용사, Motoring은 동명사라 주어로 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "pothole",
+  "pos": "n",
+  "m": [
+   "(도로의) 움푹 팬 곳, 포트홀"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "City crews spent the weekend filling *potholes* on Lincoln Avenue.",
+  "exKo": "시 작업반은 주말 동안 Lincoln 가의 움푹 팬 곳들을 메웠다.",
+  "col": [
+   {
+    "e": "fill potholes",
+    "k": "포트홀을 메우다"
+   },
+   {
+    "e": "repair a pothole",
+    "k": "포트홀을 보수하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "hole in the road"
+  ],
+  "ant": "",
+  "tip": "도로 보수 공지(Part 4·7)에서 fill/repair potholes 형태로 나온다. 배의 둥근 창인 porthole과 철자를 구분하자.",
+  "q": {
+   "s": "Drivers are asked to report any ------- on city roads by calling the public works department.",
+   "o": [
+    "portholes",
+    "outlets",
+    "potholes",
+    "stopovers"
+   ],
+   "a": 2,
+   "k": "시 도로에서 발견하면 공공사업부에 신고해야 하는 것은 '움푹 팬 곳'이므로 potholes가 정답이다. portholes(배의 둥근 창), outlets(콘센트, 할인점), stopovers(경유지)는 도로 신고 대상이 아니다."
+  }
+ },
+ {
+  "w": "automotive",
+  "pos": "adj",
+  "m": [
+   "자동차의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Mr. Yoon has twenty years of experience in the *automotive* industry.",
+  "exKo": "Yoon 씨는 자동차 업계에서 20년 경력을 가지고 있다.",
+  "col": [
+   {
+    "e": "automotive industry",
+    "k": "자동차 산업"
+   },
+   {
+    "e": "automotive parts",
+    "k": "자동차 부품"
+   }
+  ],
+  "der": [
+   {
+    "w": "automobile",
+    "pos": "n",
+    "m": "자동차"
+   }
+  ],
+  "para": [
+   "car",
+   "auto"
+  ],
+  "ant": "",
+  "tip": "automotive는 '자동차의'라는 형용사로 automotive industry, automotive parts처럼 명사 앞에 쓰인다. automatic(자동의)과 혼동하지 말자.",
+  "q": {
+   "s": "Brandt Industries supplies brakes and other ------- parts to car manufacturers in Europe.",
+   "o": [
+    "automotive",
+    "automatically",
+    "automate",
+    "automating"
+   ],
+   "a": 0,
+   "k": "명사 parts를 꾸미는 형용사 자리이며 '자동차' 부품이라는 의미이므로 automotive가 정답이다. automatically는 부사이고, automate와 automating은 동사 형태다."
+  }
+ },
+ {
+  "w": "refuel",
+  "pos": "v",
+  "m": [
+   "연료를 다시 넣다, 급유하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The plane stopped in Anchorage to *refuel* before continuing to Tokyo.",
+  "exKo": "그 비행기는 도쿄로 계속 가기 전에 급유하기 위해 앵커리지에 들렀다.",
+  "col": [
+   {
+    "e": "stop to refuel",
+    "k": "급유하려고 멈추다"
+   },
+   {
+    "e": "refuel a vehicle",
+    "k": "차량에 연료를 넣다"
+   }
+  ],
+  "der": [
+   {
+    "w": "fuel",
+    "pos": "n",
+    "m": "연료"
+   },
+   {
+    "w": "refueling",
+    "pos": "n",
+    "m": "급유"
+   }
+  ],
+  "para": [
+   "fill up",
+   "gas up"
+  ],
+  "ant": "",
+  "tip": "refuel은 자동사와 타동사로 모두 쓰인다. 철자가 비슷한 refund(환불하다), refuse(거절하다)를 고르는 어휘 함정에 유의하자.",
+  "q": {
+   "s": "Drivers can ------- at the service station located just past the bridge.",
+   "o": [
+    "refund",
+    "refuel",
+    "refuse",
+    "refusal"
+   ],
+   "a": 1,
+   "k": "다리를 지나 바로 있는 주유소에서 운전자들이 할 수 있는 일은 '연료를 넣는 것'이므로 refuel이 정답이다. refund(환불하다)와 refuse(거절하다)는 목적어가 필요하고 의미도 맞지 않으며, refusal은 명사다."
+  }
+ },
+ {
+  "w": "curbside",
+  "pos": "adj",
+  "m": [
+   "길가의, 도로변의"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The store offers free *curbside* pickup for all online orders.",
+  "exKo": "그 상점은 모든 온라인 주문에 대해 무료 매장 앞 픽업 서비스를 제공한다.",
+  "col": [
+   {
+    "e": "curbside pickup",
+    "k": "매장 앞 픽업"
+   },
+   {
+    "e": "curbside parking",
+    "k": "도로변 주차"
+   }
+  ],
+  "der": [
+   {
+    "w": "curb",
+    "pos": "n",
+    "m": "연석, 도로 경계석"
+   }
+  ],
+  "para": [
+   "roadside"
+  ],
+  "ant": "",
+  "tip": "curbside pickup(차에서 내리지 않고 매장 앞에서 물건을 받는 서비스)이 상점 광고(Part 7)에 자주 나온다. curb(연석)에서 나온 말이다.",
+  "q": {
+   "s": "Restaurants on Fifth Street now offer ------- pickup so that customers don't have to leave their cars.",
+   "o": [
+    "curfew",
+    "curvature",
+    "cursory",
+    "curbside"
+   ],
+   "a": 3,
+   "k": "손님이 차에서 내리지 않고 음식을 받는 '매장 앞(길가)' 픽업이므로 curbside가 정답이다. curfew(통행금지), curvature(굴곡)는 명사이고, cursory(대충 하는)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "underpass",
+  "pos": "n",
+  "m": [
+   "지하도"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   4
+  ],
+  "ex": "Pedestrians can use the *underpass* to cross the highway safely.",
+  "exKo": "보행자들은 지하도를 이용해 고속도로를 안전하게 건널 수 있다.",
+  "col": [
+   {
+    "e": "pedestrian underpass",
+    "k": "보행자 지하도"
+   },
+   {
+    "e": "go through the underpass",
+    "k": "지하도를 지나가다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "subway",
+   "tunnel"
+  ],
+  "ant": "overpass",
+  "tip": "underpass(지하도)와 overpass(육교, 고가도로)가 반의어로 짝지어 나온다. 영국 영어에서는 지하도를 subway라고도 한다.",
+  "q": {
+   "s": "The pedestrian ------- beneath Route 3 will be closed for repairs until May.",
+   "o": [
+    "overpass",
+    "underway",
+    "underpass",
+    "underline"
+   ],
+   "a": 2,
+   "k": "도로 '아래(beneath)'에 있는 보행자 통로이므로 underpass가 정답이다. overpass(육교)는 beneath와 맞지 않고, underway(진행 중인)는 형용사, underline(밑줄)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "lamppost",
+  "pos": "n",
+  "m": [
+   "가로등 기둥"
+  ],
+  "tier": 3,
+  "parts": [
+   1
+  ],
+  "ex": "A bicycle has been chained to a *lamppost* on the sidewalk.",
+  "exKo": "자전거 한 대가 인도의 가로등 기둥에 사슬로 묶여 있다.",
+  "col": [
+   {
+    "e": "lean against a lamppost",
+    "k": "가로등 기둥에 기대다"
+   },
+   {
+    "e": "attached to a lamppost",
+    "k": "가로등 기둥에 붙어 있는"
+   }
+  ],
+  "der": [
+   {
+    "w": "lamp",
+    "pos": "n",
+    "m": "등, 램프"
+   }
+  ],
+  "para": [
+   "light pole",
+   "streetlight"
+  ],
+  "ant": "",
+  "tip": "Part 1 거리 사진에서 A bicycle is leaning against a lamppost 같은 위치 묘사로 출제된다. street lamp, light pole로도 표현한다.",
+  "q": {
+   "s": "Several posters advertising the concert have been attached to a ------- near the bus stop.",
+   "o": [
+    "lamppost",
+    "lawsuit",
+    "layover",
+    "landfill"
+   ],
+   "a": 0,
+   "k": "버스 정류장 근처에서 포스터를 붙일 수 있는 것은 '가로등 기둥'이므로 lamppost가 정답이다. lawsuit(소송), layover(경유), landfill(쓰레기 매립지)은 포스터를 붙이는 물체가 아니다."
+  }
+ },
+ {
+  "w": "cyclist",
+  "pos": "n",
+  "m": [
+   "자전거 타는 사람"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "The city added protected lanes for *cyclists* along Park Road.",
+  "exKo": "시는 Park 로를 따라 자전거 이용자를 위한 보호 차로를 추가했다.",
+  "col": [
+   {
+    "e": "bike lane for cyclists",
+    "k": "자전거 이용자 전용 차로"
+   },
+   {
+    "e": "cyclists and pedestrians",
+    "k": "자전거 이용자와 보행자"
+   }
+  ],
+  "der": [
+   {
+    "w": "cycle",
+    "pos": "v",
+    "m": "자전거를 타다"
+   },
+   {
+    "w": "cycling",
+    "pos": "n",
+    "m": "자전거 타기"
+   }
+  ],
+  "para": [
+   "bicyclist",
+   "biker",
+   "rider"
+  ],
+  "ant": "",
+  "tip": "-ist가 붙은 사람명사로, 행위를 나타내는 cycling과 구분한다. Part 1에서 A cyclist is riding along the path처럼 나온다.",
+  "q": {
+   "s": "The new bike lane separates ------- from car traffic along the waterfront.",
+   "o": [
+    "cashiers",
+    "cylinders",
+    "cyclists",
+    "climates"
+   ],
+   "a": 2,
+   "k": "새 자전거 차로가 자동차와 분리해 주는 대상은 '자전거 이용자'이므로 cyclists가 정답이다. cashiers(계산원), cylinders(원통), climates(기후)는 자전거 차로와 관련이 없다."
+  }
+ },
+ {
+  "w": "windshield",
+  "pos": "n",
+  "m": [
+   "(자동차) 앞유리"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "A man is wiping the *windshield* of his car in a parking garage.",
+  "exKo": "한 남자가 주차장에서 자기 차 앞유리를 닦고 있다.",
+  "col": [
+   {
+    "e": "cracked windshield",
+    "k": "금 간 앞유리"
+   },
+   {
+    "e": "windshield wiper",
+    "k": "와이퍼"
+   }
+  ],
+  "der": [],
+  "para": [
+   "windscreen"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 is cleaning/wiping the windshield(앞유리를 닦고 있다)로 출제된다. 영국 영어에서는 windscreen이라고 한다.",
+  "q": {
+   "s": "The mechanic replaced the cracked ------- on Ms. Kim's car in less than an hour.",
+   "o": [
+    "windmill",
+    "windshield",
+    "windfall",
+    "windowsill"
+   ],
+   "a": 1,
+   "k": "정비사가 자동차에서 교체한 금 간 부분이므로 windshield(앞유리)가 정답이다. windmill(풍차), windfall(뜻밖의 횡재), windowsill(창턱)은 자동차 부품이 아니다."
+  }
+ },
+ {
+  "w": "tram",
+  "pos": "n",
+  "m": [
+   "노면 전차, 트램"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "The *tram* runs every ten minutes between the train station and the old town.",
+  "exKo": "트램은 기차역과 구시가지 사이를 10분마다 운행한다.",
+  "col": [
+   {
+    "e": "take a tram",
+    "k": "트램을 타다"
+   },
+   {
+    "e": "tram stop",
+    "k": "트램 정류장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "streetcar",
+   "trolley"
+  ],
+  "ant": "",
+  "tip": "미국 영어에서는 streetcar, trolley라고도 한다. 운행 간격을 나타내는 run every ten minutes(10분마다 운행하다)와 함께 자주 나온다.",
+  "q": {
+   "s": "Visitors can take a ------- from the airport directly to the city center for just three euros.",
+   "o": [
+    "tram",
+    "trail",
+    "trait",
+    "trend"
+   ],
+   "a": 0,
+   "k": "공항에서 도심까지 3유로에 타고 갈 수 있는 교통수단은 tram(트램)이다. trail(오솔길), trait(특성), trend(경향)는 교통수단이 아니다."
+  }
+ },
+ {
+  "w": "railing",
+  "pos": "n",
+  "m": [
+   "난간"
+  ],
+  "tier": 3,
+  "parts": [
+   1
+  ],
+  "ex": "A woman is leaning against the *railing* of the bridge.",
+  "exKo": "한 여자가 다리 난간에 기대어 있다.",
+  "col": [
+   {
+    "e": "lean on the railing",
+    "k": "난간에 기대다"
+   },
+   {
+    "e": "hold on to the railing",
+    "k": "난간을 잡다"
+   }
+  ],
+  "der": [
+   {
+    "w": "rail",
+    "pos": "n",
+    "m": "난간, 철도"
+   }
+  ],
+  "para": [
+   "handrail",
+   "rail"
+  ],
+  "ant": "",
+  "tip": "Part 1 사진 묘사의 단골 단어로 is leaning on/against the railing(난간에 기대어 있다), is holding the railing(난간을 잡고 있다)으로 나온다.",
+  "q": {
+   "s": "Please hold on to the ------- when going up and down the stairs.",
+   "o": [
+    "railway",
+    "railing",
+    "rating",
+    "raiding"
+   ],
+   "a": 1,
+   "k": "계단을 오르내릴 때 잡는 것은 '난간'이므로 railing이 정답이다. railway(철도), rating(등급), raiding(습격)은 계단에서 잡을 수 있는 것이 아니다."
+  }
+ },
+ {
+  "w": "traffic",
+  "pos": "n",
+  "m": [
+   "교통(량), 차량들"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "Heavy *traffic* delayed the delivery truck by nearly an hour.",
+  "exKo": "극심한 교통 체증으로 배송 트럭이 거의 한 시간 늦어졌다.",
+  "col": [
+   {
+    "e": "heavy traffic",
+    "k": "교통 혼잡"
+   },
+   {
+    "e": "traffic jam",
+    "k": "교통 체증"
+   },
+   {
+    "e": "stuck in traffic",
+    "k": "차가 막혀 꼼짝 못하는"
+   }
+  ],
+  "der": [
+   {
+    "w": "trafficked",
+    "pos": "adj",
+    "m": "통행량이 많은"
+   }
+  ],
+  "para": [
+   "congestion"
+  ],
+  "ant": "",
+  "tip": "traffic은 불가산명사라 a traffic, traffics로 쓰지 않고, 많고 적음은 heavy/light traffic으로 나타낸다.",
+  "q": {
+   "s": "The new bypass is expected to reduce ------- in the city center by 30 percent.",
+   "o": [
+    "tariff",
+    "trophy",
+    "traffic",
+    "trial"
+   ],
+   "a": 2,
+   "k": "우회 도로로 도심에서 줄어드는 것은 '교통량'이므로 traffic이 정답이다. tariff(관세), trophy(트로피), trial(시험, 재판)은 우회 도로로 줄일 수 있는 것이 아니다."
+  }
+ },
+ {
+  "w": "parking",
+  "pos": "n",
+  "m": [
+   "주차",
+   "주차 공간"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "Free *parking* is available for hotel guests in the underground garage.",
+  "exKo": "호텔 투숙객은 지하 주차장에 무료로 주차할 수 있다.",
+  "col": [
+   {
+    "e": "free parking",
+    "k": "무료 주차"
+   },
+   {
+    "e": "parking space",
+    "k": "주차 공간"
+   },
+   {
+    "e": "parking garage",
+    "k": "주차장"
+   }
+  ],
+  "der": [
+   {
+    "w": "park",
+    "pos": "v",
+    "m": "주차하다"
+   }
+  ],
+  "para": [
+   "parking space"
+  ],
+  "ant": "",
+  "tip": "parking은 불가산명사라 a parking으로 쓰지 않고, 개별 공간은 a parking space/spot이라고 한다. 동사 park와 품사를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "------- is not permitted in front of the building's main entrance at any time.",
+   "o": [
+    "Park",
+    "Parked",
+    "Parking",
+    "Parks"
+   ],
+   "a": 2,
+   "k": "be동사 is의 주어가 되는 불가산명사 자리이므로 Parking이 정답이다. Park(공원)는 가산명사 단수라 관사가 필요하고 의미도 맞지 않으며, Parked는 과거분사, Parks는 복수형이라 is와 수가 맞지 않는다."
+  }
+ },
+ {
+  "w": "pavement",
+  "pos": "n",
+  "m": [
+   "(포장) 도로, 노면",
+   "(영) 인도"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "Workers are repairing cracks in the *pavement* outside the public library.",
+  "exKo": "인부들이 공공 도서관 앞 노면의 갈라진 틈을 보수하고 있다.",
+  "col": [
+   {
+    "e": "wet pavement",
+    "k": "젖은 노면"
+   },
+   {
+    "e": "cracked pavement",
+    "k": "갈라진 포장도로"
+   }
+  ],
+  "der": [
+   {
+    "w": "pave",
+    "pos": "v",
+    "m": "(도로를) 포장하다"
+   }
+  ],
+  "para": [
+   "road surface",
+   "sidewalk"
+  ],
+  "ant": "",
+  "tip": "미국 영어에서는 '포장도로, 노면', 영국 영어에서는 '인도(sidewalk)'를 뜻한다. 철자가 비슷한 payment(지불)와 구분하자.",
+  "q": {
+   "s": "The ------- on Oak Street will be resurfaced next week, so drivers should use an alternate route.",
+   "o": [
+    "payment",
+    "placement",
+    "pavilion",
+    "pavement"
+   ],
+   "a": 3,
+   "k": "다시 포장될(resurfaced) 대상은 '도로 노면'이므로 pavement가 정답이다. payment(지불), placement(배치), pavilion(가설 건물)은 도로 재포장의 대상이 아니다."
+  }
+ },
+ {
+  "w": "barricade",
+  "pos": "n",
+  "m": [
+   "바리케이드, 차단벽"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "Workers put up *barricades* to keep cars away from the marathon route.",
+  "exKo": "인부들은 차량이 마라톤 코스에 들어오지 못하도록 바리케이드를 설치했다.",
+  "col": [
+   {
+    "e": "set up barricades",
+    "k": "바리케이드를 설치하다"
+   },
+   {
+    "e": "behind the barricade",
+    "k": "바리케이드 뒤에"
+   }
+  ],
+  "der": [],
+  "para": [
+   "barrier",
+   "roadblock"
+  ],
+  "ant": "",
+  "tip": "명사(set up a barricade)와 동사(barricade the street, 길을 막다)로 모두 쓰인다. Part 1에서 Barricades have been placed around a construction site처럼 나온다.",
+  "q": {
+   "s": "Police placed ------- across the road so that the parade could pass safely.",
+   "o": [
+    "barricades",
+    "bargains",
+    "brackets",
+    "barometers"
+   ],
+   "a": 0,
+   "k": "퍼레이드가 안전하게 지나가도록 경찰이 도로를 가로질러 설치한 것은 '바리케이드'이므로 barricades가 정답이다. bargains(특가품), brackets(괄호, 받침대), barometers(기압계)는 도로를 막는 데 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "roadway",
+  "pos": "n",
+  "m": [
+   "도로, 차도"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Crews cleared fallen trees from the *roadway* by early morning.",
+  "exKo": "작업반은 이른 아침까지 차도에 쓰러진 나무들을 치웠다.",
+  "col": [
+   {
+    "e": "main roadway",
+    "k": "주 도로"
+   },
+   {
+    "e": "block the roadway",
+    "k": "차도를 막다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "road",
+   "street"
+  ],
+  "ant": "",
+  "tip": "roadway는 도로 중 차가 다니는 부분을 강조하는 말이다. 교통 방송에서 debris on the roadway(도로 위 잔해물)처럼 나온다.",
+  "q": {
+   "s": "Cyclists must ride in the bike lane and not on the main -------.",
+   "o": [
+    "roadway",
+    "roadmap",
+    "roadshow",
+    "broadcast"
+   ],
+   "a": 0,
+   "k": "자전거는 자전거 차로로 다니고 주 '차도'로 다니면 안 된다는 의미이므로 roadway가 정답이다. roadmap(로드맵), roadshow(순회 홍보 행사), broadcast(방송)는 자전거가 다니는 곳이 아니다."
+  }
+ },
+ {
+  "w": "avenue",
+  "pos": "n",
+  "m": [
+   "대로, ~가",
+   "(문제 해결의) 방안"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "Our new office is on Fifth *Avenue*, across from the central library.",
+  "exKo": "우리 새 사무실은 중앙 도서관 맞은편 5번가에 있다.",
+  "col": [
+   {
+    "e": "on Fifth Avenue",
+    "k": "5번가에"
+   },
+   {
+    "e": "explore every avenue",
+    "k": "모든 방안을 모색하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "street",
+   "option",
+   "approach"
+  ],
+  "ant": "",
+  "tip": "주소에서는 '대로, ~가'지만, 독해에서는 explore every avenue(모든 방안을 모색하다)처럼 '방안(way)'의 뜻으로도 출제된다.",
+  "q": {
+   "s": "The company is exploring every possible ------- for reducing its energy costs.",
+   "o": [
+    "venue",
+    "avenue",
+    "revenue",
+    "avalanche"
+   ],
+   "a": 1,
+   "k": "에너지 비용을 줄일 수 있는 모든 '방안'을 모색한다는 의미이므로 avenue가 정답이다. venue(장소), revenue(수익), avalanche(눈사태)는 for reducing과 어울려 방법을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "block",
+  "pos": "n",
+  "m": [
+   "(도시의) 블록, 구역",
+   "덩어리"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "The post office is two *blocks* north of the train station.",
+  "exKo": "우체국은 기차역에서 북쪽으로 두 블록 떨어져 있다.",
+  "col": [
+   {
+    "e": "two blocks away",
+    "k": "두 블록 떨어진"
+   },
+   {
+    "e": "around the block",
+    "k": "한 블록 돌아서, 근처에"
+   }
+  ],
+  "der": [
+   {
+    "w": "blockage",
+    "pos": "n",
+    "m": "막힘, 장애물"
+   }
+  ],
+  "para": [
+   "street",
+   "area"
+  ],
+  "ant": "",
+  "tip": "명사로 길 안내 시 two blocks away처럼 쓰이고, 동사로는 '막다(block the entrance)'라는 뜻이다. Part 2·3 길 찾기 문제에 자주 나온다.",
+  "q": {
+   "s": "A delivery truck was ------- the entrance to the parking garage this morning.",
+   "o": [
+    "block",
+    "blocked",
+    "blocking",
+    "blockage"
+   ],
+   "a": 2,
+   "k": "was와 함께 과거진행형을 이루며 목적어 the entrance를 취하는 blocking이 정답이다. blocked는 수동태가 되어 뒤에 목적어가 올 수 없고, block은 was 뒤에 올 수 없으며, blockage는 명사다."
+  }
+ },
+ {
+  "w": "escalator",
+  "pos": "n",
+  "m": [
+   "에스컬레이터"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2
+  ],
+  "ex": "Shoppers are riding the *escalator* to the second floor of the mall.",
+  "exKo": "쇼핑객들이 에스컬레이터를 타고 쇼핑몰 2층으로 올라가고 있다.",
+  "col": [
+   {
+    "e": "take the escalator",
+    "k": "에스컬레이터를 타다"
+   },
+   {
+    "e": "escalator to the platform",
+    "k": "승강장으로 가는 에스컬레이터"
+   }
+  ],
+  "der": [
+   {
+    "w": "escalate",
+    "pos": "v",
+    "m": "확대되다, 증가하다"
+   }
+  ],
+  "para": [
+   "moving staircase"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 They're riding an escalator(에스컬레이터를 타고 있다)와 They're climbing the stairs를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Passengers can take the ------- or the elevator to reach the upper platform.",
+   "o": [
+    "escalator",
+    "escalation",
+    "escalate",
+    "escalating"
+   ],
+   "a": 0,
+   "k": "관사 the 뒤에 와서 엘리베이터와 함께 이동 수단을 나타내는 명사 escalator가 정답이다. escalation(확대)은 의미가 맞지 않고, escalate와 escalating은 동사 형태다."
+  }
+ },
+ {
+  "w": "traffic light",
+  "pos": "phr",
+  "m": [
+   "신호등"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3
+  ],
+  "ex": "Turn left at the second *traffic light*, and the hotel will be on your right.",
+  "exKo": "두 번째 신호등에서 왼쪽으로 돌면 오른쪽에 호텔이 있을 것이다.",
+  "col": [
+   {
+    "e": "stop at a traffic light",
+    "k": "신호등에서 멈추다"
+   },
+   {
+    "e": "install a traffic light",
+    "k": "신호등을 설치하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "traffic signal",
+   "stoplight"
+  ],
+  "ant": "",
+  "tip": "길 안내(Part 2·3)에서 turn left at the traffic light처럼 전치사 at과 함께 쓰인다. Part 7에서는 traffic signal로 바꿔 표현된다.",
+  "q": {
+   "s": "The city plans to install a ------- at the busy intersection of Maple Street and Fourth Avenue.",
+   "o": [
+    "traffic jam",
+    "traffic light",
+    "traffic report",
+    "traffic flow"
+   ],
+   "a": 1,
+   "k": "번잡한 교차로에 '설치하는(install)' 것은 신호등이므로 traffic light가 정답이다. traffic jam(교통 체증), traffic report(교통 정보), traffic flow(교통 흐름)는 설치할 수 있는 대상이 아니다."
+  }
+ },
+ {
+  "w": "signal",
+  "pos": "v",
+  "m": [
+   "신호를 보내다, (방향 지시등을) 켜다",
+   "(~임을) 나타내다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Drivers must *signal* at least 30 meters before turning or changing lanes.",
+  "exKo": "운전자는 회전하거나 차로를 바꾸기 최소 30미터 전에 신호를 보내야 한다.",
+  "col": [
+   {
+    "e": "signal a turn",
+    "k": "방향 지시등을 켜다"
+   },
+   {
+    "e": "signal a change",
+    "k": "변화를 나타내다"
+   }
+  ],
+  "der": [
+   {
+    "w": "signature",
+    "pos": "n",
+    "m": "서명"
+   }
+  ],
+  "para": [
+   "indicate",
+   "show"
+  ],
+  "ant": "",
+  "tip": "signal은 명사(신호)와 동사(신호를 보내다, 나타내다)로 모두 쓰인다. 독해에서는 '(어떤 의도·변화를) 나타내다'라는 뜻으로 indicate와 바꿔 쓰인다.",
+  "q": {
+   "s": "The new logo is intended to ------- the company's commitment to the environment.",
+   "o": [
+    "signature",
+    "significant",
+    "signally",
+    "signal"
+   ],
+   "a": 3,
+   "k": "be intended to 뒤 동사원형 자리이며 '환경에 대한 회사의 의지를 나타내다'라는 의미이므로 signal이 정답이다. signature(서명)는 명사, significant(중요한)는 형용사, signally(현저하게)는 부사다."
+  }
+ },
+ {
+  "w": "roadblock",
+  "pos": "n",
+  "m": [
+   "(도로) 차단, 검문소",
+   "장애물"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Police set up a *roadblock* on Highway 5 after the chemical spill.",
+  "exKo": "경찰은 화학 물질 유출 사고 후 5번 고속도로에 차단선을 설치했다.",
+  "col": [
+   {
+    "e": "set up a roadblock",
+    "k": "도로를 차단하다"
+   },
+   {
+    "e": "hit a roadblock",
+    "k": "난관에 부딪히다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "obstacle",
+   "barrier",
+   "barricade"
+  ],
+  "ant": "",
+  "tip": "roadblock은 실제 도로 차단과 함께 '(계획 진행의) 장애물(obstacle)'이라는 비유적 의미로도 Part 7에 나온다. a roadblock to + 명사 형태를 기억하자.",
+  "q": {
+   "s": "Lack of funding has become the biggest ------- to completing the new transit line.",
+   "o": [
+    "roadside",
+    "roadblock",
+    "shortcut",
+    "upgrade"
+   ],
+   "a": 1,
+   "k": "자금 부족이 새 노선 완공의 가장 큰 '장애물'이 되었다는 의미이므로 roadblock이 정답이다. roadside(길가), shortcut(지름길), upgrade(개선)는 자금 부족을 설명하는 말로 맞지 않는다."
+  }
+ },
+ {
+  "w": "trolley",
+  "pos": "n",
+  "m": [
+   "(바퀴 달린) 손수레, 카트",
+   "노면 전차"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   4
+  ],
+  "ex": "Passengers can use free luggage *trolleys* in the arrivals hall.",
+  "exKo": "승객들은 도착 홀에서 무료 수하물 카트를 이용할 수 있다.",
+  "col": [
+   {
+    "e": "luggage trolley",
+    "k": "수하물 카트"
+   },
+   {
+    "e": "food trolley",
+    "k": "음식 카트"
+   }
+  ],
+  "der": [],
+  "para": [
+   "cart",
+   "streetcar"
+  ],
+  "ant": "",
+  "tip": "영국 영어에서는 '손수레, 카트(cart)', 미국 영어에서는 '노면 전차(streetcar)'를 뜻한다. Part 1에서 is pushing a trolley(카트를 밀고 있다)로 나온다.",
+  "q": {
+   "s": "The flight attendant pushed a ------- of snacks and drinks down the aisle.",
+   "o": [
+    "troupe",
+    "trophy",
+    "tribute",
+    "trolley"
+   ],
+   "a": 3,
+   "k": "기내 통로에서 승무원이 미는 간식과 음료 '카트'이므로 trolley가 정답이다. troupe(공연단), trophy(트로피), tribute(헌사)는 밀고 다닐 수 있는 물건이 아니다."
+  }
+ },
+ {
+  "w": "expressway",
+  "pos": "n",
+  "m": [
+   "고속도로"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The new *expressway* will cut travel time between the two cities in half.",
+  "exKo": "새 고속도로는 두 도시 간 이동 시간을 절반으로 줄여 줄 것이다.",
+  "col": [
+   {
+    "e": "on the expressway",
+    "k": "고속도로에서"
+   },
+   {
+    "e": "expressway exit",
+    "k": "고속도로 출구"
+   }
+  ],
+  "der": [
+   {
+    "w": "express",
+    "pos": "adj",
+    "m": "급행의, 신속한"
+   }
+  ],
+  "para": [
+   "highway",
+   "freeway",
+   "motorway"
+  ],
+  "ant": "",
+  "tip": "highway, freeway와 같은 뜻으로 교통 방송(Part 4)에 자주 나온다. 형태가 비슷한 expression(표현), expressly(명확히)와 구분하자.",
+  "q": {
+   "s": "Traffic on the ------- moved slowly this morning because of heavy rain.",
+   "o": [
+    "expression",
+    "expressive",
+    "expressly",
+    "expressway"
+   ],
+   "a": 3,
+   "k": "전치사 on과 관사 the 뒤에 오며 차량이 다니는 장소를 나타내는 명사 expressway가 정답이다. expression(표현)은 의미가 맞지 않고, expressive는 형용사, expressly는 부사다."
+  }
+ },
+ {
+  "w": "passerby",
+  "pos": "n",
+  "m": [
+   "행인, 지나가는 사람"
+  ],
+  "tier": 3,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "A *passerby* noticed smoke coming from the warehouse and called the fire department.",
+  "exKo": "한 행인이 창고에서 연기가 나는 것을 보고 소방서에 신고했다.",
+  "col": [
+   {
+    "e": "curious passersby",
+    "k": "호기심 많은 행인들"
+   },
+   {
+    "e": "stop passersby",
+    "k": "행인들을 멈춰 세우다"
+   }
+  ],
+  "der": [
+   {
+    "w": "pass by",
+    "pos": "phr",
+    "m": "지나가다"
+   }
+  ],
+  "para": [
+   "pedestrian",
+   "onlooker"
+  ],
+  "ant": "",
+  "tip": "복수형은 passerbys가 아니라 passersby다. Part 1에서 Some passersby are watching a street performer처럼 나온다.",
+  "q": {
+   "s": "Several ------- stopped to watch the street musicians perform in the plaza.",
+   "o": [
+    "passersby",
+    "passages",
+    "passports",
+    "passwords"
+   ],
+   "a": 0,
+   "k": "광장에서 멈춰 서서 거리 음악가들을 구경한 사람들이므로 passersby(행인들)가 정답이다. passages(통로, 구절), passports(여권), passwords(비밀번호)는 사람이 아니다."
+  }
+ },
+ {
+  "w": "kiosk",
+  "pos": "n",
+  "m": [
+   "(무인) 단말기, 키오스크",
+   "(신문·음료 등을 파는) 매점"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "Commuters can buy subway tickets at the self-service *kiosks* near each entrance.",
+  "exKo": "통근자들은 각 입구 근처의 셀프서비스 단말기에서 지하철 승차권을 살 수 있다.",
+  "col": [
+   {
+    "e": "self-service kiosk",
+    "k": "셀프서비스 단말기"
+   },
+   {
+    "e": "ticket kiosk",
+    "k": "승차권 발매기"
+   }
+  ],
+  "der": [],
+  "para": [
+   "machine",
+   "booth",
+   "stand"
+  ],
+  "ant": "",
+  "tip": "토익에서는 공항·역의 self-service kiosk(무인 단말기)로 자주 나오며, 신문·간식을 파는 '매점'이라는 뜻도 있다.",
+  "q": {
+   "s": "Tickets for the express train can be purchased at the automated ------- in the station lobby.",
+   "o": [
+    "kinds",
+    "kits",
+    "kennels",
+    "kiosks"
+   ],
+   "a": 3,
+   "k": "역 로비에서 승차권을 구입하는 자동화 장치이므로 kiosks(무인 단말기)가 정답이다. kinds(종류), kits(도구 세트), kennels(개집)는 승차권을 판매하는 곳이 아니다."
+  }
+ },
+ {
+  "w": "transport",
+  "pos": "v",
+  "m": [
+   "운송하다, 수송하다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The trucks *transport* fresh produce from local farms to supermarkets every morning.",
+  "exKo": "그 트럭들은 매일 아침 지역 농장에서 슈퍼마켓으로 신선한 농산물을 운송한다.",
+  "col": [
+   {
+    "e": "transport goods",
+    "k": "상품을 운송하다"
+   },
+   {
+    "e": "transport A to B",
+    "k": "A를 B로 수송하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "transportation",
+    "pos": "n",
+    "m": "운송, 교통수단"
+   },
+   {
+    "w": "transportable",
+    "pos": "adj",
+    "m": "운반할 수 있는"
+   }
+  ],
+  "para": [
+   "carry",
+   "ship",
+   "move"
+  ],
+  "ant": "",
+  "tip": "transport는 동사(운송하다)와 명사(운송, 영국식 교통수단)로 모두 쓰인다. to부정사·조동사 뒤 동사 자리에 명사 transportation을 넣는 오답에 주의하자.",
+  "q": {
+   "s": "The company uses refrigerated trucks to ------- frozen foods across the country.",
+   "o": [
+    "transportation",
+    "transported",
+    "transport",
+    "transportable"
+   ],
+   "a": 2,
+   "k": "to부정사 to 뒤에는 동사원형이 와야 하므로 transport가 정답이다. transportation은 명사, transported는 과거형·과거분사, transportable은 형용사다."
+  }
+ },
+ {
+  "w": "transportation",
+  "pos": "n",
+  "m": [
+   "교통(수단)",
+   "운송, 수송"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The conference fee covers *transportation* between the hotel and the convention center.",
+  "exKo": "회의 참가비에는 호텔과 컨벤션 센터 간의 교통편이 포함되어 있다.",
+  "col": [
+   {
+    "e": "public transportation",
+    "k": "대중교통"
+   },
+   {
+    "e": "means of transportation",
+    "k": "교통수단"
+   },
+   {
+    "e": "provide transportation",
+    "k": "교통편을 제공하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "transport",
+    "pos": "v",
+    "m": "운송하다"
+   }
+  ],
+  "para": [
+   "transport",
+   "travel",
+   "shuttle service"
+  ],
+  "ant": "",
+  "tip": "transportation은 불가산명사로 관사 없이 쓴다. public transportation(대중교통), provide transportation(교통편을 제공하다)이 빈출 연어다.",
+  "q": {
+   "s": "The hotel provides free ------- to and from the airport for all guests.",
+   "o": [
+    "transported",
+    "transportation",
+    "transporting",
+    "transportable"
+   ],
+   "a": 1,
+   "k": "형용사 free의 수식을 받으며 provides의 목적어가 되는 명사 자리이므로 transportation이 정답이다. transported, transporting은 동사 형태이고, transportable은 형용사다."
+  }
+ },
+ {
+  "w": "reroute",
+  "pos": "v",
+  "m": [
+   "경로를 바꾸다, 우회시키다"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Buses will be *rerouted* along Pine Street during the festival.",
+  "exKo": "축제 기간에는 버스가 Pine 가를 따라 우회 운행할 것이다.",
+  "col": [
+   {
+    "e": "be rerouted around",
+    "k": "~을 우회하도록 경로가 변경되다"
+   },
+   {
+    "e": "reroute traffic",
+    "k": "교통을 우회시키다"
+   }
+  ],
+  "der": [
+   {
+    "w": "route",
+    "pos": "n",
+    "m": "경로, 노선"
+   }
+  ],
+  "para": [
+   "divert",
+   "redirect"
+  ],
+  "ant": "",
+  "tip": "reroute는 주로 수동태(be rerouted)로 쓰여 버스·항공편·배송 경로 변경 안내(Part 4)에 나온다. divert, redirect와 바꿔 쓸 수 있다.",
+  "q": {
+   "s": "Because of the bridge closure, all delivery trucks will be ------- through the industrial park.",
+   "o": [
+    "renewed",
+    "resumed",
+    "retired",
+    "rerouted"
+   ],
+   "a": 3,
+   "k": "다리 폐쇄로 배송 트럭이 산업 단지를 거쳐 가도록 '경로가 변경된다'는 의미이므로 rerouted가 정답이다. renewed(갱신된), resumed(재개된), retired(은퇴한)는 through와 함께 경로 변경을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "divert",
+  "pos": "v",
+  "m": [
+   "(다른 길로) 우회시키다",
+   "(자금·관심을) 돌리다"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Police *diverted* traffic onto side streets after the water main broke.",
+  "exKo": "수도 본관이 파열된 후 경찰은 차량을 옆길로 우회시켰다.",
+  "col": [
+   {
+    "e": "divert traffic",
+    "k": "교통을 우회시키다"
+   },
+   {
+    "e": "divert funds to",
+    "k": "자금을 ~로 돌리다"
+   }
+  ],
+  "der": [
+   {
+    "w": "diversion",
+    "pos": "n",
+    "m": "우회(로), 전환"
+   }
+  ],
+  "para": [
+   "reroute",
+   "redirect",
+   "reallocate"
+  ],
+  "ant": "",
+  "tip": "divert A to/onto B(A를 B로 돌리다) 구조로 쓰인다. 명사 diversion은 영국식으로 '우회로(detour)'를 뜻하며, diverse(다양한)와 혼동하지 말자.",
+  "q": {
+   "s": "The city council voted to ------- funds from road repairs to public transit improvements.",
+   "o": [
+    "divert",
+    "diverse",
+    "diversity",
+    "diversely"
+   ],
+   "a": 0,
+   "k": "to부정사 to 뒤 동사원형 자리이며 '자금을 돌리다'라는 의미이므로 divert가 정답이다. diverse는 형용사, diversity는 명사, diversely는 부사다."
+  }
+ },
+ {
+  "w": "directions",
+  "pos": "n",
+  "m": [
+   "길 안내",
+   "(사용) 지시, 설명서"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "Could you give me *directions* to the nearest subway station?",
+  "exKo": "가장 가까운 지하철역으로 가는 길을 알려 주시겠습니까?",
+  "col": [
+   {
+    "e": "give directions",
+    "k": "길을 알려 주다"
+   },
+   {
+    "e": "follow the directions",
+    "k": "지시를 따르다"
+   },
+   {
+    "e": "directions to",
+    "k": "~로 가는 길"
+   }
+  ],
+  "der": [
+   {
+    "w": "direct",
+    "pos": "v",
+    "m": "길을 안내하다, 지시하다"
+   },
+   {
+    "w": "director",
+    "pos": "n",
+    "m": "책임자, 감독"
+   }
+  ],
+  "para": [
+   "instructions",
+   "guidance"
+  ],
+  "ant": "",
+  "tip": "'길 안내, 지시 사항'의 뜻일 때는 복수형 directions로 쓴다. directions to + 장소(~로 가는 길)와 follow the directions(지시를 따르다)가 빈출이다.",
+  "q": {
+   "s": "Ms. Park called the hotel to ask for ------- from the airport.",
+   "o": [
+    "directors",
+    "directness",
+    "directive",
+    "directions"
+   ],
+   "a": 3,
+   "k": "공항에서 호텔로 가는 '길 안내'를 요청한다는 의미이므로 directions가 정답이다. directors(책임자들)와 directness(솔직함)는 의미가 맞지 않고, directive(지시)는 가산명사 단수라 관사가 필요하다."
+  }
+ },
+ {
+  "w": "navigation",
+  "pos": "n",
+  "m": [
+   "길 찾기, 내비게이션",
+   "항해"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "All of our rental cars come with a built-in *navigation* system.",
+  "exKo": "저희 렌터카에는 모두 내비게이션 시스템이 내장되어 있다.",
+  "col": [
+   {
+    "e": "navigation system",
+    "k": "내비게이션 시스템"
+   },
+   {
+    "e": "easy navigation",
+    "k": "쉬운 탐색"
+   }
+  ],
+  "der": [
+   {
+    "w": "navigate",
+    "pos": "v",
+    "m": "길을 찾다, 탐색하다"
+   },
+   {
+    "w": "navigator",
+    "pos": "n",
+    "m": "항법사"
+   }
+  ],
+  "para": [
+   "guidance",
+   "route finding"
+  ],
+  "ant": "",
+  "tip": "navigation system(내비게이션)과 함께 웹사이트의 easy navigation(쉬운 탐색)으로도 쓰인다. 동사 navigate(길을 찾다, 웹사이트를 탐색하다)도 함께 출제된다.",
+  "q": {
+   "s": "The new app provides real-time ------- for drivers, including alerts about road closures.",
+   "o": [
+    "navigate",
+    "navigational",
+    "navigable",
+    "navigation"
+   ],
+   "a": 3,
+   "k": "형용사 real-time의 수식을 받는 명사 자리이므로 navigation이 정답이다. navigate는 동사, navigational과 navigable은 형용사다."
+  }
+ },
+ {
+  "w": "gas station",
+  "pos": "phr",
+  "m": [
+   "주유소"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "We stopped at a *gas station* to fill up the tank and buy some snacks.",
+  "exKo": "우리는 연료를 가득 채우고 간식을 사려고 주유소에 들렀다.",
+  "col": [
+   {
+    "e": "stop at a gas station",
+    "k": "주유소에 들르다"
+   },
+   {
+    "e": "24-hour gas station",
+    "k": "24시간 주유소"
+   }
+  ],
+  "der": [],
+  "para": [
+   "service station",
+   "filling station"
+  ],
+  "ant": "",
+  "tip": "영국 영어에서는 petrol station이라고 하며, Part 7에서는 service station, filling station으로 바꿔 표현된다. fill up(가득 채우다)과 함께 기억하자.",
+  "q": {
+   "s": "There is a ------- just off the highway where you can fill up before returning the rental car.",
+   "o": [
+    "fire station",
+    "power plant",
+    "gas station",
+    "police station"
+   ],
+   "a": 2,
+   "k": "렌터카를 반납하기 전에 연료를 가득 채울 수 있는 곳이므로 gas station(주유소)이 정답이다. fire station(소방서), power plant(발전소), police station(경찰서)은 연료를 넣는 곳이 아니다."
+  }
+ },
+ {
+  "w": "flat tire",
+  "pos": "phr",
+  "m": [
+   "바람 빠진 타이어, 펑크 난 타이어"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Mr. Ruiz was late for the meeting because his car had a *flat tire*.",
+  "exKo": "Ruiz 씨는 차 타이어에 펑크가 나서 회의에 늦었다.",
+  "col": [
+   {
+    "e": "have a flat tire",
+    "k": "타이어에 펑크가 나다"
+   },
+   {
+    "e": "fix a flat tire",
+    "k": "펑크 난 타이어를 고치다"
+   }
+  ],
+  "der": [
+   {
+    "w": "tire",
+    "pos": "n",
+    "m": "타이어"
+   }
+  ],
+  "para": [
+   "puncture"
+  ],
+  "ant": "",
+  "tip": "Part 2·3에서 지각이나 지연 사유로 자주 나오는 표현이며, have/get a flat tire 형태로 쓴다. flat rate(균일 요금)의 flat과 뜻을 구분하자.",
+  "q": {
+   "s": "The bus was delayed for 40 minutes after one of its rear wheels got a -------.",
+   "o": [
+    "flat rate",
+    "flat tire",
+    "flat fee",
+    "flatbed"
+   ],
+   "a": 1,
+   "k": "뒷바퀴에 생겨 버스가 지연된 원인은 '펑크 난 타이어'이므로 flat tire가 정답이다. flat rate(균일 요금), flat fee(정액 요금), flatbed(평판 트럭)는 바퀴에 생기는 문제가 아니다."
+  }
+ },
+ {
+  "w": "break down",
+  "pos": "phr",
+  "m": [
+   "(기계·차가) 고장 나다",
+   "(분석을 위해) 세분하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "The delivery van *broke down* on the highway, delaying several shipments.",
+  "exKo": "배송 밴이 고속도로에서 고장 나 여러 건의 배송이 지연되었다.",
+  "col": [
+   {
+    "e": "break down on the road",
+    "k": "도로에서 고장 나다"
+   },
+   {
+    "e": "break down the costs",
+    "k": "비용을 세분하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "breakdown",
+    "pos": "n",
+    "m": "고장, 내역"
+   }
+  ],
+  "para": [
+   "stop working",
+   "fail"
+  ],
+  "ant": "",
+  "tip": "break down은 자동사로 '고장 나다', 타동사로 '(자료를) 세분하다'라는 뜻이다. 명사형 breakdown은 붙여 쓰며 '고장, (비용) 내역'을 뜻한다.",
+  "q": {
+   "s": "If your car ------- during the rental period, call our 24-hour roadside assistance line.",
+   "o": [
+    "breaks down",
+    "breaks into",
+    "breaks out",
+    "breaks even"
+   ],
+   "a": 0,
+   "k": "렌트 기간 중 차가 '고장 나면' 긴급 출동 서비스에 연락하라는 의미이므로 breaks down이 정답이다. breaks into(침입하다), breaks out(발생하다), breaks even(본전치기하다)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "congested",
+  "pos": "adj",
+  "m": [
+   "(교통이) 혼잡한, 붐비는"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The roads near the stadium are always *congested* on game days.",
+  "exKo": "경기가 있는 날에는 경기장 근처 도로가 늘 혼잡하다.",
+  "col": [
+   {
+    "e": "heavily congested",
+    "k": "몹시 혼잡한"
+   },
+   {
+    "e": "congested roads",
+    "k": "혼잡한 도로"
+   }
+  ],
+  "der": [
+   {
+    "w": "congestion",
+    "pos": "n",
+    "m": "혼잡, 정체"
+   }
+  ],
+  "para": [
+   "crowded",
+   "jammed",
+   "backed up"
+  ],
+  "ant": "clear",
+  "tip": "형용사 congested는 be동사·become 뒤 보어 자리에 오고, 명사 congestion은 traffic congestion처럼 쓰인다. 품사 구분 문제가 자주 출제된다.",
+  "q": {
+   "s": "Downtown streets become heavily ------- during the evening rush hour.",
+   "o": [
+    "congestion",
+    "congest",
+    "congesting",
+    "congested"
+   ],
+   "a": 3,
+   "k": "become의 보어 자리이며 부사 heavily의 수식을 받는 형용사가 와야 하므로 congested가 정답이다. congestion은 명사라 부사의 수식을 받을 수 없고, congest와 congesting은 동사 형태다."
+  }
+ },
+ {
+  "w": "speed limit",
+  "pos": "phr",
+  "m": [
+   "제한 속도"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *speed limit* near the elementary school is 30 kilometers per hour.",
+  "exKo": "초등학교 근처의 제한 속도는 시속 30킬로미터이다.",
+  "col": [
+   {
+    "e": "exceed the speed limit",
+    "k": "제한 속도를 넘다"
+   },
+   {
+    "e": "obey the speed limit",
+    "k": "제한 속도를 지키다"
+   }
+  ],
+  "der": [
+   {
+    "w": "speed",
+    "pos": "n",
+    "m": "속도"
+   }
+  ],
+  "para": [
+   "maximum speed"
+  ],
+  "ant": "",
+  "tip": "exceed(초과하다), obey(지키다) 같은 동사와 함께 쓰인다. 공사 구간 안내(Part 4)에서 reduced speed limit(하향된 제한 속도)도 나온다.",
+  "q": {
+   "s": "Drivers who exceed the ------- in construction zones will face higher fines.",
+   "o": [
+    "speed limit",
+    "speed bump",
+    "credit limit",
+    "deadline"
+   ],
+   "a": 0,
+   "k": "공사 구간에서 '초과하면(exceed)' 더 높은 벌금을 받는 것은 제한 속도이므로 speed limit가 정답이다. speed bump(과속 방지턱)는 넘는다고 해서 exceed라고 하지 않고, credit limit(신용 한도)와 deadline(마감일)은 운전과 관련이 없다."
+  }
+ },
+ {
+  "w": "pick up",
+  "pos": "phr",
+  "m": [
+   "(차로) 태우러 가다",
+   "(물건을) 찾아오다, 수령하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "A shuttle bus will *pick up* conference attendees at the hotel at 8 A.M.",
+  "exKo": "셔틀버스가 오전 8시에 호텔에서 회의 참석자들을 태울 것이다.",
+  "col": [
+   {
+    "e": "pick up a client",
+    "k": "고객을 태우러 가다"
+   },
+   {
+    "e": "pick up an order",
+    "k": "주문품을 찾아오다"
+   }
+  ],
+  "der": [
+   {
+    "w": "pickup",
+    "pos": "n",
+    "m": "픽업, 수령"
+   }
+  ],
+  "para": [
+   "collect",
+   "get"
+  ],
+  "ant": "drop off",
+  "tip": "pick up은 '(사람을) 태우러 가다'와 '(물건을) 찾아오다'의 뜻으로 Part 2·3에 매우 자주 나온다. 대명사 목적어는 pick him up처럼 가운데에 넣는다.",
+  "q": {
+   "s": "Mr. Han will ------- the clients at the airport and drive them to our office.",
+   "o": [
+    "pick out",
+    "put off",
+    "pick up",
+    "take after"
+   ],
+   "a": 2,
+   "k": "공항에서 고객들을 '태워' 사무실로 데려온다는 의미이므로 pick up이 정답이다. pick out(골라내다), put off(미루다), take after(닮다)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "drop off",
+  "pos": "phr",
+  "m": [
+   "(차에서) 내려 주다",
+   "(물건을) 갖다 두다, 맡기다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "The taxi *dropped* us *off* right in front of the hotel entrance.",
+  "exKo": "택시는 우리를 호텔 입구 바로 앞에 내려 주었다.",
+  "col": [
+   {
+    "e": "drop off a package",
+    "k": "소포를 맡기다"
+   },
+   {
+    "e": "drop someone off at",
+    "k": "~을 …에 내려 주다"
+   }
+  ],
+  "der": [
+   {
+    "w": "drop-off",
+    "pos": "n",
+    "m": "하차, 맡기기"
+   }
+  ],
+  "para": [
+   "leave",
+   "deliver"
+  ],
+  "ant": "pick up",
+  "tip": "drop off는 사람을 '내려 주다'와 물건을 '갖다 두다, 반납하다'의 뜻으로 쓰인다. 반의어 pick up과 짝으로 Part 2·3에 자주 나온다.",
+  "q": {
+   "s": "Customers can ------- their rental cars at any of our locations nationwide.",
+   "o": [
+    "drop out",
+    "drop off",
+    "drop by",
+    "drop in"
+   ],
+   "a": 1,
+   "k": "렌터카를 전국 어느 지점에서나 '반납할(갖다 둘)' 수 있다는 의미이므로 drop off가 정답이다. drop out(중퇴하다), drop by(잠깐 들르다), drop in(불쑥 방문하다)은 목적어 their rental cars와 어울리지 않는다."
+  }
+ }
+]

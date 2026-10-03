@@ -195,7 +195,7 @@
    "예약이 꽉 찬",
    "만석인"
   ],
-  "tier": 2,
+  "tier": 1,
   "parts": [
    2,
    3,
@@ -800,7 +800,7 @@
    "전자 항공권",
    "전자 티켓"
   ],
-  "tier": 2,
+  "tier": 1,
   "parts": [
    3,
    4,
@@ -849,7 +849,7 @@
    4
   ],
   "ex": "Passengers must keep their seat belts *fastened* while the aircraft is taxiing.",
-  "exKo": "승객들은 항공기가 활주로를 이동하는 동안 좌석벨트를 맨 상태로 있어야 한다.",
+  "exKo": "승객들은 항공기가 지상에서 이동하는 동안 좌석벨트를 맨 상태로 있어야 한다.",
   "col": [
    {
     "e": "fasten a seat belt",
@@ -964,7 +964,7 @@
   "ant": "",
   "tip": "기내 방송(Part 4)은 'This is your captain speaking.'으로 시작하는 경우가 많으며, 방송하는 사람을 묻는 문제에서 pilot으로 패러프레이징된다.",
   "q": {
-   "s": "Good morning. This is your ------- speaking. We are now beginning our descent into Vancouver.",
+   "s": "This is your ------- speaking, and we are now beginning our descent into Vancouver.",
    "o": [
     "captain",
     "capital",
@@ -1224,7 +1224,7 @@
    "국경",
    "경계"
   ],
-  "tier": 2,
+  "tier": 1,
   "parts": [
    4,
    5,
@@ -1436,13 +1436,13 @@
   "q": {
    "s": "The hotel chain is opening a new resort in a small ------- town known for its sandy beaches.",
    "o": [
-    "coast",
+    "coasted",
     "coasting",
     "coastal",
     "coastline"
    ],
    "a": 2,
-   "k": "형용사 small과 함께 명사 town을 꾸미는 형용사 자리이므로 coastal이 정답이다. coast와 coastline은 명사이고, coasting(관성으로 나아가는)은 뜻이 맞지 않는다."
+   "k": "형용사 small과 함께 명사 town을 꾸미는 형용사 자리이므로 coastal이 정답이다. coastline(해안선)은 명사이고, coasted와 coasting은 동사 coast(관성으로 나아가다)의 분사형이라 뜻이 맞지 않는다."
   }
  },
  {

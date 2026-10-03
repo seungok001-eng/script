@@ -1297,7 +1297,7 @@
   "ant": "",
   "tip": "사람명사 inspector와 행위명사 inspection, 동사 inspect를 구별하는 품사 문제가 나온다. Part 3·4에서 화자의 신분을 묻는 문제의 정답으로도 나온다.",
   "q": {
-   "s": "The fire ------- will check all emergency exits in the building on Thursday afternoon.",
+   "s": "The fire ------- will check all emergency exits in the building and then meet with the facilities manager.",
    "o": [
     "inspector",
     "inspection",
@@ -1305,7 +1305,7 @@
     "inspected"
    ],
    "a": 0,
-   "k": "will check의 주어로 비상구를 점검하는 주체가 와야 하므로 사람명사 inspector가 정답이다. inspection은 '점검'이라는 행위명사라 점검을 하는 주체가 될 수 없다."
+   "k": "비상구를 점검하고 시설 관리자와 만나는 주체는 사람이므로 사람명사 inspector가 정답이다. inspection은 '점검'이라는 행위명사라 점검을 하거나 사람을 만나는 주체가 될 수 없다."
   }
  },
  {
