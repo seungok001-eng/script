@@ -1188,7 +1188,7 @@
   "ant": "",
   "tip": "줄여서 HR이라고 하며 personnel department와 같은 뜻이다. 휴가·급여·채용 문의는 인사부로 하라는 내용이 듣기와 Part 7에 자주 나온다.",
   "q": {
-   "s": "Employees who wish to change their vacation dates must notify the ------- department in writing.",
+   "s": "Employees must notify the ------- department in writing at least two weeks before taking their vacation.",
    "o": [
     "public relations",
     "research and development",
@@ -1196,7 +1196,7 @@
     "customer service"
    ],
    "a": 2,
-   "k": "직원의 휴가 일정 변경을 서면으로 통보받는 곳은 human resources(인사부)다. public relations(홍보), research and development(연구 개발), customer service(고객 서비스)는 직원 휴가 관리와 관련이 없다."
+   "k": "직원의 휴가 계획을 서면으로 통보받는 곳은 human resources(인사부)다. public relations(홍보), research and development(연구 개발), customer service(고객 서비스)는 직원 휴가 관리와 관련이 없다."
   }
  },
  {

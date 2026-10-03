@@ -14,8 +14,8 @@
    5,
    7
   ],
-  "ex": "The weekly sales *meeting* has been moved to Wednesday morning.",
-  "exKo": "주간 영업 회의가 수요일 오전으로 옮겨졌다.",
+  "ex": "The weekly sales *meeting* starts at nine on Wednesday this week.",
+  "exKo": "이번 주 주간 영업 회의는 수요일 9시에 시작한다.",
   "col": [
    {
     "e": "hold a meeting",
@@ -212,7 +212,7 @@
   "ant": "",
   "tip": "confirm a reservation/appointment가 대표 연어이며, 명사 confirmation은 confirmation number/e-mail(확인 번호/메일)로 자주 나온다.",
   "q": {
-   "s": "Participants will receive an e-mail ------- their registration within 24 hours.",
+   "s": "An e-mail ------- your registration will be sent within 24 hours.",
    "o": [
     "confirming",
     "confirmation",
@@ -220,7 +220,7 @@
     "confirms"
    ],
    "a": 0,
-   "k": "an e-mail을 뒤에서 수식하면서 목적어 their registration을 취하는 현재분사 confirming이 정답이다. confirmed는 수동의 의미라 목적어를 취할 수 없고, confirms는 이미 동사 receive가 있어 올 수 없다."
+   "k": "An e-mail을 뒤에서 수식하면서 목적어 your registration을 취하는 현재분사 confirming이 정답이다. confirmed는 수동의 의미라 목적어를 취할 수 없고, confirms는 이미 동사 will be sent가 있어 올 수 없다."
   }
  },
  {
@@ -263,7 +263,7 @@
   "ant": "",
   "tip": "cancel은 타동사이며 듣기에서 call off로 패러프레이징된다. 명사 cancellation은 cancellation fee/policy(취소 수수료/규정)로 자주 나온다.",
   "q": {
-   "s": "Please ------- any appointments you are unable to keep at least one day in advance.",
+   "s": "Please call the clinic to ------- your appointment if you are unable to attend.",
    "o": [
     "cancellation",
     "canceled",
@@ -271,7 +271,7 @@
     "cancel"
    ],
    "a": 3,
-   "k": "Please 뒤 명령문에는 동사원형이 오므로 cancel이 정답이다. cancellation은 명사, canceled와 canceling은 명령문의 동사 자리에 올 수 없다."
+   "k": "to부정사의 to 뒤에는 동사원형이 오므로 cancel이 정답이다. cancellation은 명사, canceled와 canceling은 to 뒤에 올 수 없다."
   }
  },
  {
@@ -286,8 +286,8 @@
    5,
    7
   ],
-  "ex": "Most of the committee members *concurred* with Ms. Reed's assessment of the risks.",
-  "exKo": "위원 대부분은 위험 요소에 대한 Reed 씨의 평가에 동의했다.",
+  "ex": "Most of the committee members *concurred* with Ms. Reed's view of the risks.",
+  "exKo": "위원 대부분은 위험 요소에 대한 Reed 씨의 견해에 동의했다.",
   "col": [
    {
     "e": "concur with",
@@ -412,7 +412,7 @@
   "ant": "",
   "tip": "suggest는 to부정사가 아닌 동명사를 목적어로 취하며, suggest that 주어 + (should) 동사원형 구조도 자주 나온다.",
   "q": {
-   "s": "The consultant ------- reducing the number of weekly meetings to save time.",
+   "s": "Ms. Abe ------- reducing the number of weekly meetings to save time.",
    "o": [
     "wanted",
     "hoped",
@@ -523,7 +523,7 @@
   "ant": "agreement",
   "tip": "불가산명사로 little/some dissent처럼 쓰이며 objection, disagreement로 패러프레이징된다. 동사로는 dissent from(~에 반대하다)으로 쓴다.",
   "q": {
-   "s": "Despite some ------- among staff, the new dress code will take effect next month.",
+   "s": "Despite some ------- among staff, the board approved the new travel policy.",
    "o": [
     "descent",
     "decent",
@@ -531,7 +531,7 @@
     "distance"
    ],
    "a": 2,
-   "k": "일부 직원들의 '반대'에도 새 복장 규정이 시행된다는 뜻이므로 dissent가 정답이다. descent(하강), decent(괜찮은), distance(거리)는 의미가 맞지 않는다."
+   "k": "일부 직원들의 '반대'에도 이사회가 새 출장 규정을 승인했다는 뜻이므로 dissent가 정답이다. descent(하강), decent(괜찮은), distance(거리)는 의미가 맞지 않는다."
   }
  },
  {
@@ -619,7 +619,6 @@
    }
   ],
   "para": [
-   "review",
    "report back"
   ],
   "ant": "",
@@ -670,7 +669,7 @@
   "ant": "",
   "tip": "consensus는 동사 reach, arrive at, come to와 짝을 이루며 make a consensus라고 쓰지 않는다. 합의 대상은 전치사 on으로 연결한다.",
   "q": {
-   "s": "Because the committee members could not ------- on a design, the final decision was left to the director.",
+   "s": "Because the committee members could not ------- about which design to use, the director will make the choice herself.",
    "o": [
     "give a consensus",
     "hold a consensus",
@@ -771,7 +770,6 @@
   ],
   "para": [
    "choice",
-   "ruling",
    "conclusion"
   ],
   "ant": "",
@@ -940,7 +938,7 @@
   "ant": "",
   "tip": "동사 present는 '발표하다' 외에 '(표·신분증을) 제시하다', present A with B(A에게 B를 수여하다)로 쓰인다. 형용사 present(참석한, 현재의)와 발음·품사가 다르다.",
   "q": {
-   "s": "Concertgoers must ------- their tickets at the entrance in order to be admitted.",
+   "s": "Concertgoers must ------- their tickets at the entrance before being admitted.",
    "o": [
     "present",
     "presence",
@@ -1186,7 +1184,7 @@
   "ant": "",
   "tip": "Part 1에서 speaking into a microphone(마이크에 대고 말하고 있다) 같은 묘사로 자주 나온다. 줄여서 mic이라고도 한다.",
   "q": {
-   "s": "Because the auditorium is so large, every speaker will be given a wireless -------.",
+   "s": "Because the auditorium is so large, each speaker will need to use a -------.",
    "o": [
     "microscope",
     "microphone",
@@ -1194,7 +1192,7 @@
     "microchip"
    ],
    "a": 1,
-   "k": "큰 강당에서 연사에게 지급되는 무선 장비는 microphone(마이크)이다. microscope(현미경), microwave(전자레인지), microchip(마이크로칩)은 의미가 맞지 않는다."
+   "k": "큰 강당이라 연사가 사용해야 하는 장비는 microphone(마이크)이다. microscope(현미경), microwave(전자레인지), microchip(마이크로칩)은 의미가 맞지 않는다."
   }
  },
  {
@@ -1287,7 +1285,7 @@
   "ant": "",
   "tip": "opening/closing remarks(개회사/폐회사)는 행사 일정표에 자주 나온다. 형용사 remarkable은 '발언'이 아니라 '놀라운'이라는 뜻이므로 혼동하지 않는다.",
   "q": {
-   "s": "The mayor's ------- about the new stadium were widely reported in the local press.",
+   "s": "The mayor's ------- about the new bus routes were widely reported in the local press.",
    "o": [
     "remarks",
     "remarkable",
@@ -1344,7 +1342,7 @@
   "ant": "",
   "tip": "comment는 자동사로 comment on + 대상(~에 대해 의견을 말하다)으로 쓴다. 명사로도 쓰여 comments from customers(고객 의견)가 Part 7에 자주 나온다.",
   "q": {
-   "s": "Several board members ------- on the improved design of this year's annual report.",
+   "s": "Several board members ------- on the improved design of this year's product catalog.",
    "o": [
     "mentioned",
     "stated",
@@ -1500,7 +1498,7 @@
   "ant": "",
   "tip": "동사로는 deliberate on/over(~을 숙고하다), 형용사로는 '고의적인, 신중한'이라는 뜻이다. 부사 deliberately(고의로)도 Part 5에 자주 나온다.",
   "q": {
-   "s": "The committee will ------- on the proposal before announcing its decision.",
+   "s": "The committee will ------- on the proposal for two days before voting.",
    "o": [
     "deliberate",
     "deliberately",
@@ -1522,8 +1520,8 @@
    5,
    7
   ],
-  "ex": "Ms. Chang *persuaded* her manager to let the team work from home on Fridays.",
-  "exKo": "Chang 씨는 관리자를 설득해 팀이 금요일마다 재택근무를 할 수 있게 했다.",
+  "ex": "Ms. Chang *persuaded* her manager to extend the deadline by one week.",
+  "exKo": "Chang 씨는 관리자를 설득해 마감 기한을 일주일 연장받았다.",
   "col": [
    {
     "e": "persuade A to do",
@@ -1575,8 +1573,8 @@
    5,
    7
   ],
-  "ex": "Mr. Dorsey made a *persuasive* argument for expanding into the Asian market.",
-  "exKo": "Dorsey 씨는 아시아 시장 진출을 지지하는 설득력 있는 주장을 펼쳤다.",
+  "ex": "Mr. Dorsey made a *persuasive* case for opening a second store downtown.",
+  "exKo": "Dorsey 씨는 시내에 2호점을 열어야 한다는 설득력 있는 주장을 펼쳤다.",
   "col": [
    {
     "e": "persuasive argument",
@@ -1715,7 +1713,7 @@
   "ant": "",
   "tip": "동사로는 elaborate on(~을 상세히 설명하다)처럼 on과 함께 쓰고, 형용사로는 '정교한, 공들인(an elaborate design)'이라는 뜻이다. 발음도 동사(-reit)와 형용사(-rət)가 다르다.",
   "q": {
-   "s": "Could you ------- on the reasons for the delay in the shipment?",
+   "s": "Could you ------- on the reasons for the change in suppliers?",
    "o": [
     "elaborately",
     "elaboration",
@@ -1793,8 +1791,8 @@
    5,
    7
   ],
-  "ex": "The consultant presented *compelling* evidence that the new system would cut costs.",
-  "exKo": "그 컨설턴트는 새 시스템이 비용을 줄일 것이라는 설득력 있는 증거를 제시했다.",
+  "ex": "The consultant presented *compelling* evidence that the new system would reduce billing errors.",
+  "exKo": "그 컨설턴트는 새 시스템이 청구 오류를 줄일 것이라는 설득력 있는 증거를 제시했다.",
   "col": [
    {
     "e": "compelling evidence",
@@ -1824,7 +1822,7 @@
   "ant": "",
   "tip": "compelling reason/argument/evidence처럼 명사를 수식하며 persuasive, convincing으로 패러프레이징된다. 과거분사 compelled(강요받은)와 구별한다.",
   "q": {
-   "s": "The marketing team offered a ------- reason to increase the advertising budget.",
+   "s": "Ms. Ito offered a ------- reason to increase the advertising budget.",
    "o": [
     "compelled",
     "compel",

@@ -13,8 +13,8 @@
    3,
    5
   ],
-  "ex": "The *stapler* at the reception desk has run out of staples again.",
-  "exKo": "안내 데스크에 있는 스테이플러의 심이 또 다 떨어졌다.",
+  "ex": "Mr. Yoo used a heavy-duty *stapler* to bind the thick contract.",
+  "exKo": "Yoo 씨는 두꺼운 계약서를 철하기 위해 대형 스테이플러를 사용했다.",
   "col": [
    {
     "e": "refill a stapler",
@@ -94,7 +94,7 @@
   "ant": "",
   "tip": "the accounting/sales department처럼 부서명이 앞에 온다. 철자가 비슷한 departure(출발)와 혼동을 유도하는 문제가 나온다.",
   "q": {
-   "s": "Each ------- is responsible for managing its own travel budget.",
+   "s": "Each ------- manages its own travel budget and submits a monthly expense report.",
    "o": [
     "department",
     "departure",
@@ -102,7 +102,7 @@
     "departed"
    ],
    "a": 0,
-   "k": "Each 뒤의 단수 명사 자리이며 자체 출장 예산을 관리하는 주체는 '부서'이므로 department가 정답이다. departure는 '출발'이라 의미가 맞지 않고, depart, departed는 동사 형태다."
+   "k": "Each 뒤의 단수 명사 자리이며 자체 출장 예산을 관리하고 경비 보고서를 내는 주체는 '부서'이므로 department가 정답이다. departure는 '출발'이라 의미가 맞지 않고, depart, departed는 동사 형태다."
   }
  },
  {
@@ -144,7 +144,7 @@
   "ant": "",
   "tip": "task는 가산명사로 perform/complete a task처럼 쓴다. task force(특별 대책반)는 Part 7에서 committee로 패러프레이징되기도 한다.",
   "q": {
-   "s": "Updating the customer database is a time-consuming ------- that requires close attention to detail.",
+   "s": "Updating the customer database is a tedious ------- that is usually assigned to interns.",
    "o": [
     "fare",
     "margin",
@@ -152,7 +152,7 @@
     "task"
    ],
    "a": 3,
-   "k": "고객 데이터베이스를 갱신하는 것은 시간이 많이 드는 '업무'이므로 task가 정답이다. fare(요금), margin(이윤, 여백), venue(장소)는 의미가 맞지 않는다."
+   "k": "고객 데이터베이스를 갱신하는 것은 인턴에게 맡겨지는 지루한 '업무'이므로 task가 정답이다. fare(요금), margin(이윤, 여백), venue(장소)는 의미가 맞지 않는다."
   }
  },
  {
@@ -267,7 +267,7 @@
   "ant": "",
   "tip": "report to + 상사는 '~의 지휘를 받다, ~에게 보고하다'라는 뜻으로 조직 구조를 설명할 때 쓴다. report A to B(A를 B에게 보고하다) 구조도 함께 나온다.",
   "q": {
-   "s": "During the training period, all new employees ------- directly to the department manager.",
+   "s": "During the training period, new employees ------- to Ms. Okada, who oversees the onboarding program.",
    "o": [
     "report",
     "reporter",
@@ -275,7 +275,7 @@
     "reportedly"
    ],
    "a": 0,
-   "k": "주어 all new employees 뒤에 동사가 필요하며 report to는 '~의 지휘를 받다'라는 뜻이므로 report가 정답이다. reporting은 단독으로 동사가 될 수 없고, reporter는 명사, reportedly는 부사다."
+   "k": "주어 new employees 뒤에 동사가 필요하며 report to는 '~의 지휘를 받다, ~에게 보고하다'라는 뜻이므로 report가 정답이다. reporting은 단독으로 동사가 될 수 없고, reporter는 명사, reportedly는 부사다."
   }
  },
  {
@@ -317,8 +317,7 @@
    }
   ],
   "para": [
-   "demand",
-   "application"
+   "demand"
   ],
   "ant": "",
   "tip": "명사일 때는 request for(~에 대한 요청), 동사일 때는 전치사 없이 request a refund처럼 쓴다. available upon request(요청 시 제공되는)가 빈출 표현이다.",
@@ -459,8 +458,8 @@
    5,
    7
   ],
-  "ex": "Ms. Tan needs to *complete* three more training modules before she can start work.",
-  "exKo": "Tan 씨는 업무를 시작하기 전에 교육 과정 세 개를 더 이수해야 한다.",
+  "ex": "Ms. Tan needs to *complete* the safety course before she can operate the forklift.",
+  "exKo": "Tan 씨는 지게차를 운전하기 전에 안전 교육 과정을 이수해야 한다.",
   "col": [
    {
     "e": "complete a form",
@@ -552,7 +551,7 @@
   "ant": "",
   "tip": "prepare A(A를 준비하다)와 prepare for A(A에 대비하다)를 구별한다. be prepared to do(~할 준비가 되어 있다)도 자주 나온다.",
   "q": {
-   "s": "The catering staff will ------- lunch for all participants in the training session.",
+   "s": "The catering staff will ------- lunch for everyone attending the training session.",
    "o": [
     "preparation",
     "prepare",
@@ -1067,7 +1066,7 @@
   "pos": "n",
   "m": [
    "클립보드",
-   "(컴퓨터의) 클립보드"
+   "서류 집게판"
   ],
   "tier": 2,
   "parts": [
@@ -1113,8 +1112,8 @@
    5,
    7
   ],
-  "ex": "The new assistant will handle *filing* and answer calls at the front desk.",
-  "exKo": "새 비서는 서류 정리를 맡고 안내 데스크에서 전화를 받을 것이다.",
+  "ex": "The new assistant will handle *filing* and answer calls for the sales team.",
+  "exKo": "새 비서는 영업팀의 서류 정리와 전화 응대를 맡을 것이다.",
   "col": [
    {
     "e": "filing cabinet",
@@ -1185,7 +1184,7 @@
   "ant": "",
   "tip": "행사 공지·광고 첫머리에서 Mark your calendar(s) for ~(~ 날짜를 기억해 두세요) 형태로 쓰인다. Part 4·7에서 행사 날짜를 묻는 문제의 단서가 된다.",
   "q": {
-   "s": "------- for the company's annual charity run, which will take place on Saturday, June 7.",
+   "s": "------- for Saturday, June 7, when our yearly charity run will be held in Riverside Park.",
    "o": [
     "Take your time",
     "Mark your calendar",
@@ -1193,7 +1192,7 @@
     "Make your way"
    ],
    "a": 1,
-   "k": "for 뒤의 행사 날짜를 '달력에 표시해 두라'는 공지 표현이므로 Mark your calendar가 정답이다. Take your time(천천히 하다), Keep in mind(명심하다), Make your way(가다)는 for + 행사와 어울리지 않는다."
+   "k": "for 뒤의 행사 날짜를 '달력에 표시해 두라'는 공지 표현이므로 Mark your calendar가 정답이다. Take your time(천천히 하다), Keep in mind(명심하다), Make your way(가다)는 for + 날짜와 어울리지 않는다."
   }
  },
  {
@@ -1304,7 +1303,7 @@
   "ant": "",
   "tip": "사람명사 assistant와 불가산명사 assistance(도움)를 구별하는 문제가 단골이다. assistant manager(부지배인)처럼 직책 앞에 붙기도 한다.",
   "q": {
-   "s": "Ms. Lee works as a research ------- at a pharmaceutical company in Basel.",
+   "s": "Ms. Lee works as a legal ------- at a law firm in Busan.",
    "o": [
     "assistance",
     "assist",
@@ -1312,7 +1311,7 @@
     "assistant"
    ],
    "a": 3,
-   "k": "works as a 뒤에는 직업을 나타내는 사람명사가 와야 하므로 assistant가 정답이다. assistance는 '도움'이라는 불가산명사라 관사 a와 함께 직업을 나타낼 수 없다."
+   "k": "works as a legal 뒤에는 직업을 나타내는 사람명사가 와야 하므로 assistant가 정답이다. assistance는 '도움'이라는 불가산명사라 관사 a와 함께 직업을 나타낼 수 없다."
   }
  },
  {
@@ -1354,7 +1353,7 @@
   "ant": "",
   "tip": "secretary는 사람명사로 철자가 비슷한 secret(비밀), secretive(비밀스러운)와 혼동을 유도한다. 단체에서는 '총무, 간사'라는 뜻으로도 쓰인다.",
   "q": {
-   "s": "The board ------- is responsible for recording what is decided at each meeting.",
+   "s": "The board ------- records the decisions made at each meeting and distributes them to the members.",
    "o": [
     "secret",
     "secretive",
@@ -1362,7 +1361,7 @@
     "secretly"
    ],
    "a": 2,
-   "k": "회의 결정 사항을 기록하는 책임자는 사람이므로 secretary(간사)가 정답이다. secret(비밀), secretive(비밀스러운), secretly(몰래)는 의미가 맞지 않는다."
+   "k": "회의 결정 사항을 기록해 이사들에게 배포하는 사람이 필요하므로 secretary(간사)가 정답이다. secret(비밀), secretive(비밀스러운), secretly(몰래)는 의미가 맞지 않는다."
   }
  },
  {
@@ -1590,7 +1589,7 @@
   "ant": "",
   "tip": "명사 envelope(봉투)와 끝에 e가 없는 동사 envelop(감싸다)의 철자를 구별한다. self-addressed stamped envelope(반송용 우표 붙은 봉투)도 지원 안내에 나온다.",
   "q": {
-   "s": "Applicants should seal all required documents in an ------- and mail them to our office.",
+   "s": "Please seal the signed contract in an ------- before giving it to the courier.",
    "o": [
     "envelop",
     "engagement",
@@ -1598,7 +1597,7 @@
     "entrance"
    ],
    "a": 2,
-   "k": "관사 an 뒤에서 서류를 넣어 봉하는 '봉투'를 뜻하는 명사 envelope가 정답이다. envelop은 '감싸다'라는 동사이고, engagement(약속), entrance(입구)는 의미가 맞지 않는다."
+   "k": "관사 an 뒤에서 계약서를 넣어 봉하는 '봉투'를 뜻하는 명사 envelope가 정답이다. envelop은 '감싸다'라는 동사이고, engagement(약속), entrance(입구)는 의미가 맞지 않는다."
   }
  },
  {
@@ -1928,7 +1927,7 @@
   ],
   "para": [
    "clerical",
-   "managerial"
+   "office"
   ],
   "ant": "",
   "tip": "administrative assistant(행정 보조 직원), administrative costs(관리비)처럼 명사 앞에 쓰인다. 명사 administration, administrator와의 품사 구별이 출제된다.",

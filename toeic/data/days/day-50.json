@@ -348,7 +348,7 @@
   "ant": "",
   "tip": "직원 연수 일정 공지에 자주 나오며 attend/conduct a training session으로 쓴다. Part 7에서 workshop, class로 패러프레이즈된다.",
   "q": {
-   "s": "Each new cashier must complete a ------- on the store's return policy during the first week.",
+   "s": "Each new cashier must complete a ------- on the store's refund procedures during the first week.",
    "o": [
     "training session",
     "trainee",
@@ -356,7 +356,7 @@
     "train station"
    ],
    "a": 0,
-   "k": "신입 계산원이 첫 주에 '이수해야(complete)' 하는 반품 규정 관련 과정은 교육이므로 training session이 정답이다. trainee(연수생), trainer(교육 담당자)는 사람이라 이수할 수 없고, train station(기차역)도 의미가 맞지 않는다."
+   "k": "신입 계산원이 첫 주에 '이수해야(complete)' 하는 환불 절차 관련 과정은 교육이므로 training session이 정답이다. trainee(연수생), trainer(교육 담당자)는 사람이라 이수할 수 없고, train station(기차역)도 의미가 맞지 않는다."
   }
  },
  {
@@ -930,8 +930,8 @@
    4,
    7
   ],
-  "ex": "Each graduate walked across the stage to receive a *diploma* from the dean.",
-  "exKo": "졸업생들은 한 명씩 무대를 가로질러 가서 학장에게서 졸업장을 받았다.",
+  "ex": "Each graduate walked across the stage to receive a *diploma* from the university president.",
+  "exKo": "졸업생들은 한 명씩 무대를 가로질러 가서 총장에게서 졸업장을 받았다.",
   "col": [
    {
     "e": "high school diploma",
@@ -1909,8 +1909,8 @@
   "parts": [
    7
   ],
-  "ex": "After completing a three-year *apprenticeship*, Mr. Ellis became a licensed electrician.",
-  "exKo": "3년간의 견습 과정을 마친 후 Ellis 씨는 면허를 가진 전기 기사가 되었다.",
+  "ex": "After completing a three-year *apprenticeship*, Mr. Ellis opened his own electrical repair business.",
+  "exKo": "3년간의 견습 과정을 마친 후 Ellis 씨는 자신의 전기 수리 업체를 열었다.",
   "col": [
    {
     "e": "complete an apprenticeship",

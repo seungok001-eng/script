@@ -614,7 +614,7 @@
   "ant": "",
   "tip": "contest 지문에서 '출품작, 응모작'이라는 뜻으로 자주 나오며 사람명사 entrant(참가자)와 구분한다. entry fee(참가비), No entry(출입 금지)도 빈출이다.",
   "q": {
-   "s": "All ------- for the design competition must be submitted by e-mail no later than June 30.",
+   "s": "Each photographer may submit up to three ------- to this year's nature photo contest.",
    "o": [
     "entrants",
     "entrances",
@@ -622,7 +622,7 @@
     "entered"
    ],
    "a": 2,
-   "k": "이메일로 '제출되어야 하는(must be submitted)' 대상은 출품작이므로 entries가 정답이다. entrants(참가자)는 제출하는 사람이지 제출되는 대상이 아니고, entrances(입구)와 entered는 의미·품사가 맞지 않는다."
+   "k": "참가자가 대회에 '제출하는' 대상은 출품작이므로 entries가 정답이다. entrants(참가자)는 제출하는 사람이지 제출되는 대상이 아니고, entrances(입구)와 entered는 의미·품사가 맞지 않는다."
   }
  },
  {
@@ -717,7 +717,7 @@
   "ant": "",
   "tip": "Part 1에서 'He's wearing a name tag'로 나오며 badge와 패러프레이즈된다. wear(착용한 상태)와 put on(착용하는 동작)의 구분이 Part 1 함정이다.",
   "q": {
-   "s": "Attendees should pick up their ------- at the front desk when they arrive.",
+   "s": "Attendees should pick up their ------- at the welcome table when they arrive.",
    "o": [
     "price tags",
     "tag lines",
@@ -725,7 +725,7 @@
     "hashtags"
    ],
    "a": 2,
-   "k": "행사 참석자가 도착하면 안내 데스크에서 받아 가는 것은 명찰이므로 name tags가 정답이다. price tags(가격표), tag lines(광고 문구), hashtags(해시태그)는 참석자가 받아 가는 물품이 아니다."
+   "k": "행사 참석자가 도착하면 환영 테이블에서 받아 가는 것은 명찰이므로 name tags가 정답이다. price tags(가격표), tag lines(광고 문구), hashtags(해시태그)는 참석자가 받아 가는 물품이 아니다."
   }
  },
  {
@@ -1255,8 +1255,8 @@
    4,
    7
   ],
-  "ex": "Thousands of spectators watched the *opening ceremony* of the international film festival.",
-  "exKo": "수천 명의 관객이 국제 영화제 개막식을 지켜보았다.",
+  "ex": "A crowd of nearly 5,000 watched the *opening ceremony* of the international film festival.",
+  "exKo": "5,000명 가까운 관중이 국제 영화제 개막식을 지켜보았다.",
   "col": [
    {
     "e": "attend the opening ceremony",
@@ -1616,7 +1616,7 @@
   "ant": "off-site",
   "tip": "on-site parking/training(구내 주차장/현장 교육)처럼 명사 앞에 쓰며, 부사로는 on site(현장에서)로 띄어 쓰기도 한다. 반의어 off-site와 함께 기억한다.",
   "q": {
-   "s": "The office building has an ------- fitness center that employees can use free of charge.",
+   "s": "The office building has an ------- fitness center that is open to all employees.",
    "o": [
     "on-time",
     "on-site",
@@ -1634,7 +1634,7 @@
    "(본사·현장) 외부의, 부지 밖의",
    "(부사) 외부에서"
   ],
-  "tier": 3,
+  "tier": 2,
   "parts": [
    4,
    7
@@ -1681,8 +1681,8 @@
    4,
    7
   ],
-  "ex": "Each *honoree* received a crystal plaque and a standing ovation from the audience.",
-  "exKo": "각 수상자는 크리스털 상패를 받고 청중에게서 기립 박수를 받았다.",
+  "ex": "Each *honoree* received a crystal plaque engraved with his or her name.",
+  "exKo": "각 수상자는 자신의 이름이 새겨진 크리스털 상패를 받았다.",
   "col": [
    {
     "e": "award honoree",
@@ -1782,8 +1782,8 @@
    4,
    7
   ],
-  "ex": "Local business owners gathered outside the new fire station for its *ribbon-cutting*.",
-  "exKo": "지역 사업주들이 새 소방서 앞에 모여 테이프 커팅식에 참석했다.",
+  "ex": "Local business owners joined city officials outside the new fire station for its *ribbon-cutting*.",
+  "exKo": "지역 사업주들이 시 관계자들과 함께 새 소방서 앞에서 열린 테이프 커팅식에 참석했다.",
   "col": [
    {
     "e": "ribbon-cutting ceremony",
@@ -1798,7 +1798,7 @@
   "ant": "",
   "tip": "새 시설의 개장을 알리는 행사로 ribbon-cutting ceremony 형태가 빈출이다. 한국어로는 '테이프 커팅'이지만 영어로는 ribbon이라고 한다는 점에 주의한다.",
   "q": {
-   "s": "A ------- ceremony will take place on Saturday morning to mark the reopening of the community pool.",
+   "s": "A ------- ceremony is planned for Saturday morning to mark the reopening of the community pool.",
    "o": [
     "cost-cutting",
     "record-breaking",

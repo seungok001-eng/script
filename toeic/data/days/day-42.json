@@ -257,7 +257,7 @@
   "ant": "increase",
   "tip": "동사로 decrease by(~만큼), decrease to(~로)가 쓰이고, 명사로는 a decrease in(~의 감소)처럼 전치사 in과 짝을 이룬다. 자동사·타동사로 모두 쓰인다.",
   "q": {
-   "s": "Because of the new insulation, heating costs are expected to ------- by about 15 percent this winter.",
+   "s": "With more buses on the route, average waiting times are expected to ------- by about ten minutes.",
    "o": [
     "decreasing",
     "decreased",
@@ -384,8 +384,8 @@
    5,
    7
   ],
-  "ex": "The *average* price of a new home in the city rose by 6 percent last year.",
-  "exKo": "그 도시의 신축 주택 평균 가격은 작년에 6퍼센트 올랐다.",
+  "ex": "The *average* age of our customers has dropped from 45 to 38 over the past decade.",
+  "exKo": "우리 고객의 평균 연령은 지난 10년간 45세에서 38세로 낮아졌다.",
   "col": [
    {
     "e": "on average",
@@ -409,7 +409,7 @@
   "ant": "",
   "tip": "명사로 on average(평균적으로), above/below average(평균 이상/이하) 표현이 자주 나오며, 동사로는 '평균 ~이 되다'(average 50 hours a week)라는 뜻으로도 쓰인다.",
   "q": {
-   "s": "On -------, our customer service team responds to e-mails within four hours.",
+   "s": "On -------, commuters in the city spend about 50 minutes a day traveling to and from work.",
    "o": [
     "total",
     "behalf",
@@ -477,8 +477,8 @@
   "parts": [
    7
   ],
-  "ex": "Growth in the housing market began to *decelerate* after interest rates went up.",
-  "exKo": "금리가 오른 뒤 주택 시장의 성장세가 둔화되기 시작했다.",
+  "ex": "Growth in online advertising is likely to *decelerate* as the market matures.",
+  "exKo": "시장이 성숙해지면서 온라인 광고의 성장세는 둔화될 가능성이 높다.",
   "col": [
    {
     "e": "growth decelerates",
@@ -937,8 +937,8 @@
    5,
    7
   ],
-  "ex": "Stock prices *rebounded* strongly after the central bank announced a cut in interest rates.",
-  "exKo": "중앙은행이 금리 인하를 발표하자 주가가 강하게 반등했다.",
+  "ex": "Share prices *rebounded* strongly after the company reported better-than-expected earnings.",
+  "exKo": "그 회사가 예상보다 좋은 실적을 발표하자 주가가 강하게 반등했다.",
   "col": [
    {
     "e": "rebound from",
@@ -1075,7 +1075,7 @@
   "ant": "",
   "tip": "복수형이 crises로 불규칙하다는 점이 출제되며, crisis management(위기 관리) 같은 복합명사로 자주 쓰인다.",
   "q": {
-   "s": "During the financial -------, many small businesses struggled to obtain bank loans.",
+   "s": "During the 2008 financial -------, several major banks needed government support to stay open.",
    "o": [
     "critic",
     "crisis",
@@ -1193,7 +1193,7 @@
   "ant": "",
   "tip": "사람명사 economist와 학문명사 economics(경제학), 형용사 economic/economical을 구별하는 품사 문제가 나온다. 경제 기사에서 전망을 인용할 때 주로 등장한다.",
   "q": {
-   "s": "Ms. Delgado, the bank's chief -------, expects interest rates to remain unchanged this year.",
+   "s": "Ms. Delgado, the bank's chief -------, expects unemployment to fall slightly next year.",
    "o": [
     "economics",
     "economy",
@@ -1421,8 +1421,7 @@
   "der": [],
   "para": [
    "graph",
-   "diagram",
-   "table"
+   "diagram"
   ],
   "ant": "",
   "tip": "Part 3·4 시각 정보 연계 문제에서 pie chart, bar chart가 자주 제시된다. 동사로는 '(변화를) 기록하다, (계획을) 세우다'(chart a course)라는 뜻도 있다.",
@@ -1534,7 +1533,7 @@
   "ant": "",
   "tip": "명사(정점)뿐 아니라 동사(정점에 이르다: sales peaked in May)와 형용사(peak season 성수기, peak hours 혼잡 시간대)로도 쓰인다. 발음이 같은 peek(엿보다)과 혼동하지 않는다.",
   "q": {
-   "s": "Train tickets are more expensive during ------- hours, so commuters who travel later can save money.",
+   "s": "Highway traffic is heaviest during ------- travel times, such as Friday evenings before holidays.",
    "o": [
     "peek",
     "pique",
@@ -1542,7 +1541,7 @@
     "peck"
    ],
    "a": 2,
-   "k": "'혼잡 시간대'는 peak hours로 표현한다. peek(엿보다), pique(불쾌감, 자극하다)는 발음이 비슷한 함정이고, peck(쪼다)은 의미가 맞지 않는다."
+   "k": "'가장 붐비는 이동 시간대'는 peak travel times로 표현하므로 peak이 정답이다. peek(엿보다), pique(불쾌감, 자극하다)는 발음이 비슷한 함정이고, peck(쪼다)은 의미가 맞지 않는다."
   }
  },
  {
@@ -1605,8 +1604,8 @@
    5,
    7
   ],
-  "ex": "The heat wave caused a *spike* in electricity use across the city last week.",
-  "exKo": "지난주 폭염으로 도시 전역의 전기 사용량이 급증했다.",
+  "ex": "A sudden cold snap in March led to a *spike* in heating oil prices.",
+  "exKo": "3월의 갑작스러운 한파로 난방유 가격이 급등했다.",
   "col": [
    {
     "e": "a spike in",
@@ -1834,15 +1833,15 @@
   "ant": "",
   "tip": "경제 지문에서 석유·곡물·금속처럼 거래되는 '원자재, 1차 상품'을 뜻하며 commodity prices(원자재 가격)가 빈출이다. 일상적으로는 '귀중한 것'(Time is a valuable commodity.)이라는 뜻도 있다.",
   "q": {
-   "s": "Rising ------- prices, especially for oil and grain, have pushed up costs for many manufacturers.",
+   "s": "Coffee, cocoa, and other agricultural ------- are traded on international markets every day.",
    "o": [
-    "commodity",
-    "community",
+    "commodities",
+    "communities",
     "commodious",
-    "commitment"
+    "commitments"
    ],
    "a": 0,
-   "k": "석유와 곡물 같은 '원자재' 가격을 뜻하므로 commodity가 정답이다. community(지역 사회), commitment(헌신)는 의미가 맞지 않고, commodious(넓은)는 형용사로 문맥에 맞지 않는다."
+   "k": "커피, 코코아처럼 국제 시장에서 거래되는 '농산물 원자재'를 뜻하므로 commodities가 정답이다. communities(지역 사회), commitments(약속, 헌신)는 의미가 맞지 않고, commodious(넓은)는 형용사다."
   }
  },
  {
@@ -1857,8 +1856,8 @@
    5,
    7
   ],
-  "ex": "The conference will bring together *international* experts in renewable energy and urban planning.",
-  "exKo": "그 회의에는 재생 에너지와 도시 계획 분야의 국제 전문가들이 한자리에 모일 것이다.",
+  "ex": "The hotel chain is training its staff to better serve *international* guests.",
+  "exKo": "그 호텔 체인은 외국인 투숙객을 더 잘 응대하도록 직원들을 교육하고 있다.",
   "col": [
    {
     "e": "international flight",
@@ -1945,7 +1944,7 @@
   "ant": "local",
   "tip": "형용사(worldwide sales)와 부사(ship worldwide 전 세계로 배송하다)로 형태 변화 없이 쓰인다. 부사로 쓸 때도 -ly를 붙이지 않는다는 점이 품사 함정으로 출제된다.",
   "q": {
-   "s": "We offer free shipping ------- on all orders over $100.",
+   "s": "Founded in Seoul in 2005, the cosmetics brand now has more than 300 stores -------.",
    "o": [
     "worldwide",
     "worldly",
@@ -1953,7 +1952,7 @@
     "worlds"
    ],
    "a": 0,
-   "k": "동사구 offer free shipping을 꾸며 '전 세계로'라는 뜻을 나타내는 worldwide가 정답이다. worldwide는 형용사와 부사로 모두 쓰인다. worldly(세속적인)는 의미가 다르고, world, worlds는 명사다."
+   "k": "명사 stores 뒤에서 '전 세계에'라는 뜻을 나타내는 부사 worldwide가 정답이다. worldwide는 형용사와 부사로 모두 쓰인다. worldly(세속적인)는 의미가 다르고, world, worlds는 명사다."
   }
  },
  {
@@ -2027,8 +2026,8 @@
    5,
    7
   ],
-  "ex": "Ms. Park was promoted to *regional* sales manager for the company's Asian markets.",
-  "exKo": "Park 씨는 회사 아시아 시장의 지역 영업 관리자로 승진했다.",
+  "ex": "Several *regional* airlines have added flights between smaller cities this year.",
+  "exKo": "여러 지역 항공사가 올해 중소 도시 간 항공편을 늘렸다.",
   "col": [
    {
     "e": "regional office",
@@ -2071,7 +2070,7 @@
     "regions"
    ],
    "a": 1,
-   "k": "명사 offices를 수식하는 형용사 자리이므로 regional이 정답이다. region(s)은 명사, regionally는 부사다."
+   "k": "명사 office를 수식하는 형용사 자리이므로 regional이 정답이다(regional office: 지역 사무소). region(s)은 명사, regionally는 부사다."
   }
  },
  {

@@ -264,8 +264,8 @@
    5,
    7
   ],
-  "ex": "The jazz quartet will *perform* in the hotel lobby every Friday evening this month.",
-  "exKo": "그 재즈 4중주단은 이번 달 매주 금요일 저녁 호텔 로비에서 공연한다.",
+  "ex": "The jazz quartet will *perform* on the outdoor terrace every Friday evening this month.",
+  "exKo": "그 재즈 4중주단은 이번 달 매주 금요일 저녁 야외 테라스에서 공연한다.",
   "col": [
    {
     "e": "perform a task",
@@ -299,7 +299,7 @@
   "ant": "",
   "tip": "'공연하다' 외에 perform maintenance(정비를 수행하다)처럼 '수행하다'의 뜻이 자주 나온다. 명사 performance는 '공연'과 '실적, 성과'를 모두 뜻한다.",
   "q": {
-   "s": "Technicians will ------- routine maintenance on the elevators this weekend.",
+   "s": "Technicians will ------- scheduled maintenance on the elevators this weekend.",
    "o": [
     "performing",
     "performer",
@@ -416,8 +416,8 @@
    4,
    7
   ],
-  "ex": "The *composer* wrote the soundtrack for the award-winning documentary.",
-  "exKo": "그 작곡가는 그 수상작 다큐멘터리의 음악을 썼다.",
+  "ex": "The *composer* wrote the soundtrack for a popular nature documentary series.",
+  "exKo": "그 작곡가는 인기 자연 다큐멘터리 시리즈의 음악을 썼다.",
   "col": [
    {
     "e": "film composer",
@@ -923,8 +923,8 @@
    5,
    7
   ],
-  "ex": "The winner of the photo *contest* will receive a weekend stay at a mountain resort.",
-  "exKo": "사진 대회 우승자는 산악 리조트 주말 숙박권을 받는다.",
+  "ex": "The winner of the photo *contest* will receive a weekend stay at a beachfront hotel.",
+  "exKo": "사진 대회 우승자는 해변 호텔 주말 숙박권을 받는다.",
   "col": [
    {
     "e": "enter a contest",
@@ -1287,7 +1287,7 @@
   "ant": "",
   "tip": "사람명사 photographer, 사진 한 장 photograph, 분야 photography를 구분하는 문제가 나온다. 강세 위치도 PHOtograph, phoTOGrapher로 다르다.",
   "q": {
-   "s": "The magazine hired a freelance ------- to capture images of the new resort.",
+   "s": "The magazine assigned an experienced ------- to capture images of the new resort.",
    "o": [
     "photographic",
     "photography",
@@ -1295,7 +1295,7 @@
     "photograph"
    ],
    "a": 2,
-   "k": "hire(고용하다)의 목적어로 '사람'이 와야 하므로 photographer가 정답이다. photography(사진술), photograph(사진)는 고용할 수 없고 photographic은 형용사다."
+   "k": "assigned(배정했다)의 목적어로 사진을 찍을 '사람'이 와야 하므로 photographer가 정답이다. photography(사진술), photograph(사진)는 사람이 아니고 photographic은 형용사다."
   }
  },
  {

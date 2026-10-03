@@ -10,8 +10,8 @@
   "parts": [
    7
   ],
-  "ex": "Our new health plan covers employees with *preexisting conditions* at no extra cost.",
-  "exKo": "우리 회사의 새 건강 보험은 기존 질환이 있는 직원도 추가 비용 없이 보장한다.",
+  "ex": "Our new health plan covers employees with *preexisting conditions* without charging higher premiums.",
+  "exKo": "우리 회사의 새 건강 보험은 기존 질환이 있는 직원도 보험료를 더 받지 않고 보장한다.",
   "col": [
    {
     "e": "have a preexisting condition",
@@ -267,7 +267,7 @@
   "ant": "",
   "tip": "병의 경과에 대한 '예후'뿐 아니라 '(경제·사업) 전망'의 뜻으로도 쓰인다. 진단(diagnosis)과 혼동하지 말 것. 복수형은 prognoses이다.",
   "q": {
-   "s": "After reviewing the scans, the specialist said that the ------- for a full recovery was positive.",
+   "s": "After reviewing the scans, the specialist said that the ------- for long-term recovery was positive.",
    "o": [
     "procedure",
     "precaution",
@@ -275,7 +275,7 @@
     "prognosis"
    ],
    "a": 3,
-   "k": "완전한 회복에 대한 '예후'가 긍정적이라는 뜻이므로 prognosis가 정답이다. prescription(처방전), procedure(절차, 시술), precaution(예방 조치)은 회복 전망을 나타내지 못한다."
+   "k": "장기적인 회복에 대한 '예후'가 긍정적이라는 뜻이므로 prognosis가 정답이다. prescription(처방전), procedure(절차, 시술), precaution(예방 조치)은 회복 전망을 나타내지 못한다."
   }
  },
  {
@@ -556,7 +556,7 @@
   "ant": "",
   "tip": "copayment의 줄임말로 진료나 처방 때마다 환자가 내는 정액 부담금이다. 연간 공제액인 deductible(Day 22)과 구분한다.",
   "q": {
-   "s": "Patients are asked to pay their ------- at the front desk at the time of each visit.",
+   "s": "Patients are asked to pay their ------- when they check in for each appointment.",
    "o": [
     "co-author",
     "cooperation",
@@ -564,7 +564,7 @@
     "co-worker"
    ],
    "a": 2,
-   "k": "환자가 매 진료 때 접수처에서 '내는' 돈이므로 co-pay가 정답이다. co-worker(동료), co-author(공저자), cooperation(협력)은 지불 대상이 아니다."
+   "k": "환자가 진료 때마다 접수할 때 '내는' 돈이므로 co-pay가 정답이다. co-worker(동료), co-author(공저자), cooperation(협력)은 지불 대상이 아니다."
   }
  },
  {
@@ -686,7 +686,7 @@
   "ant": "",
   "tip": "불가산명사라 a health insurance로 쓰지 않으며, 복리후생(benefits)의 대표 항목으로 Part 7 채용 공고에 자주 나온다.",
   "q": {
-   "s": "All full-time staff are eligible for -------, dental care, and paid vacation.",
+   "s": "Benefits for full-time staff include -------, dental care, and paid vacation.",
    "o": [
     "healthily",
     "health inspector",
@@ -747,7 +747,7 @@
   "ant": "uninsured",
   "tip": "be insured against(~에 대비해 보험에 들어 있다)로 쓰며, the insured는 '피보험자'라는 명사로 쓰인다. 보험사는 insurer이다.",
   "q": {
-   "s": "Please make sure that the package is ------- before shipping such valuable items overseas.",
+   "s": "Please check that the package is fully ------- before shipping such valuable items overseas.",
    "o": [
     "insurance",
     "insuring",
@@ -755,7 +755,7 @@
     "insurer"
    ],
    "a": 2,
-   "k": "be동사 뒤에서 소포가 '보험에 가입된' 상태임을 나타내야 하므로 insured가 정답이다. insurance, insurer는 명사라 소포의 상태를 나타낼 수 없고 insuring은 능동의 의미라 맞지 않는다."
+   "k": "be동사 뒤에서 부사 fully의 수식을 받아 소포가 '보험에 가입된' 상태임을 나타내야 하므로 insured가 정답이다. insurance, insurer는 명사라 소포의 상태를 나타낼 수 없고 insuring은 능동의 의미라 맞지 않는다."
   }
  },
  {
@@ -821,8 +821,8 @@
   "parts": [
    7
   ],
-  "ex": "Each *policyholder* will receive a renewal notice 30 days before the policy expires.",
-  "exKo": "각 보험 계약자는 보험 만료 30일 전에 갱신 안내문을 받는다.",
+  "ex": "Every *policyholder* is assigned a personal agent who can answer questions about coverage.",
+  "exKo": "모든 보험 계약자에게는 보장 내용에 관한 질문에 답해 줄 전담 설계사가 배정된다.",
   "col": [
    {
     "e": "individual policyholder",
@@ -904,7 +904,7 @@
   "ant": "",
   "tip": "명사로 '건강 검진'(annual physical)을 뜻하고, 형용사로는 physical activity, physical copy(종이 사본)처럼 '신체의, 물리적인' 뜻으로 쓰인다. 의사 physician과 혼동하지 말 것.",
   "q": {
-   "s": "Employees are entitled to one free ------- per year at the company's medical center.",
+   "s": "The company covers the cost of an annual ------- for every full-time employee.",
    "o": [
     "physical",
     "physique",
@@ -912,7 +912,7 @@
     "physics"
    ],
    "a": 0,
-   "k": "one free 뒤 단수 명사 자리이며 회사 의료 센터에서 1년에 한 번 받는 '건강 검진'이므로 physical이 정답이다. physique(체격), physics(물리학)는 의미가 맞지 않고 physically는 부사다."
+   "k": "관사 an과 형용사 annual 뒤 단수 명사 자리이며 회사가 비용을 대는 '연례 건강 검진'이므로 physical이 정답이다. physique(체격), physics(물리학)는 의미가 맞지 않고 physically는 부사다."
   }
  },
  {
@@ -1173,7 +1173,7 @@
   "ant": "",
   "tip": "against와 함께 '~에 대한 예방 접종'을 뜻하며 Part 7에서 vaccination으로 바꿔 표현된다.",
   "q": {
-   "s": "Children must have an up-to-date ------- record before they can enroll in the summer camp.",
+   "s": "All children attending the summer camp must have a complete ------- record on file.",
    "o": [
     "immunize",
     "immunization",
@@ -1194,7 +1194,7 @@
   "parts": [
    7
   ],
-  "ex": "The clinic will offer the flu *vaccine* free of charge to all staff in October.",
+  "ex": "The clinic will offer free flu *vaccines* to all employees in October.",
   "exKo": "그 병원은 10월에 전 직원에게 독감 백신을 무료로 제공한다.",
   "col": [
    {
@@ -1322,7 +1322,7 @@
   "ant": "",
   "tip": "have/run a fever(열이 나다)처럼 관사 a와 함께 쓰며, Part 3에서 결근·조퇴 이유로 자주 언급된다.",
   "q": {
-   "s": "Mr. Chen left work early yesterday because he had a high ------- and a sore throat.",
+   "s": "Mr. Chen left work early yesterday because he had a high ------- and a bad cough.",
    "o": [
     "figure",
     "flavor",
@@ -1330,7 +1330,7 @@
     "fever"
    ],
    "a": 3,
-   "k": "인후통과 함께 조퇴 이유가 되는 '고열'이므로 fever가 정답이다. favor(호의), figure(수치), flavor(맛)는 형태가 비슷한 함정이다."
+   "k": "심한 기침과 함께 조퇴 이유가 되는 '고열'이므로 fever가 정답이다. favor(호의), figure(수치), flavor(맛)는 형태가 비슷한 함정이다."
   }
  },
  {
