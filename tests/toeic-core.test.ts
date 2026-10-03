@@ -144,18 +144,21 @@ test("날짜: ymd ↔ parseYmd 왕복", () => {
   assert.equal(C.parseYmd("bad"), null);
 });
 
-test("실제 데이터: 1,200단어 · 문제 정답 위치 · 예문 강조 표시", () => {
+test("실제 데이터: 계획한 모든 단어 · 문제 정답 위치 · 예문 강조 표시", () => {
   const path = new URL("../toeic/app/js/data.js", import.meta.url);
   if (!fs.existsSync(path)) return;
   const src = fs.readFileSync(path, "utf8");
   const data = JSON.parse(src.slice(src.indexOf("=") + 1).trim().replace(/;$/, ""));
-  assert.equal(data.words.length, 1200);
-  assert.equal(new Set(data.words.map((w: { id: string }) => w.id)).size, 1200);
+  const plan = JSON.parse(fs.readFileSync(new URL("../toeic/data/plan.json", import.meta.url), "utf8"));
+  const total = plan.reduce((n: number, d: { words: string[] }) => n + d.words.length, 0);
+  assert.equal(data.words.length, total, "plan.json 의 모든 표제어에 데이터가 있다");
+  assert.equal(new Set(data.words.map((w: { id: string }) => w.id)).size, total);
+  assert.equal(new Set(data.words.map((w: { w: string }) => w.w.toLowerCase())).size, total, "표제어 중복 없음");
   for (const w of data.words) {
     assert.ok(C.starred(w.ex).length >= 1, `${w.w}: 예문 강조`);
     assert.equal(w.q.o.length, 4, `${w.w}: 보기`);
     assert.ok(w.q.a >= 0 && w.q.a < 4, `${w.w}: 정답`);
     assert.ok(w.q.s.includes("-------"), `${w.w}: 빈칸`);
   }
-  assert.equal(data.days.length, 30);
+  assert.equal(data.days.length, plan.length);
 });

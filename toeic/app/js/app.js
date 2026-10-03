@@ -11,6 +11,9 @@
   const WORDS = D.words;
   const BY_ID = new Map(WORDS.map((w) => [w.id, w]));
   const DAYS = D.days;
+  const NDAYS = DAYS.length;
+  const BASIC_DAYS = Math.min(30, NDAYS); // Day 1~30 기본 코스, 31~ 심화 코스
+  const NWORDS = WORDS.length.toLocaleString();
   const POS_KO = { n: "명사", v: "동사", adj: "형용사", adv: "부사", phr: "숙어", prep: "전치사", conj: "접속사" };
   const POS_SHORT = { n: "명", v: "동", adj: "형", adv: "부", phr: "숙", prep: "전", conj: "접" };
   const $app = document.getElementById("app");
@@ -109,7 +112,9 @@
 
   // ═════════════ 범위 ═════════════
   function target() { return (S.profile && S.profile.target) || 800; }
-  function pool() { return C.poolFor(WORDS, target()); }
+  // 목표 범위의 단어를 학습 순서대로: 기본 → 핵심 → 고득점, 같은 단계 안에서는 Day 순서
+  const ORDERED = WORDS.slice().sort((a, b) => a.tier - b.tier || a.d - b.d || (a.id < b.id ? -1 : 1));
+  function pool() { return C.poolFor(ORDERED, target()); }
   function inPool(w) { return C.tiersFor(target()).includes(w.tier); }
   function dayWords(d, all) { return WORDS.filter((w) => w.d === d && (all || inPool(w))); }
   // 복습할 단어: 범위와 상관없이 이미 배운 단어 중 복습일이 된 것 (오늘 처음 본 단어는 제외), 오래된 순
@@ -502,10 +507,10 @@
         <h1 style="text-align:center">토익 단어,<br/>목표 점수만큼만 정확하게</h1>
         <p class="lead" style="text-align:center">목표 점수를 알려주시면 꼭 필요한 단어만 골라<br/>매일 학습 계획을 만들어 드려요.</p>
         <div class="feature-list">
-          <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 1,200개</b>30일 주제별 · 기본/핵심/고득점 3단계</span></div>
+          <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? "기본 30일 + 심화 30일" : "30일 주제별"} · 기본/핵심/고득점 3단계</span></div>
           <div><span class="tico c-green">${ico("headphones")}</span><span><b>모든 단어·예문 원어민 음성</b>미국·영국 발음으로 토익 LC까지 대비</span></div>
           <div><span class="tico c-orange">${ico("repeat")}</span><span><b>잊을 때쯤 다시 나오는 복습</b>1·3·7·14·30일 간격 반복 + 오답노트</span></div>
-          <div><span class="tico c-purple">${ico("zap")}</span><span><b>Part 5 실전 문제 1,200개</b>단어마다 출제 포인트와 해설</span></div>
+          <div><span class="tico c-purple">${ico("zap")}</span><span><b>Part 5 실전 문제 ${NWORDS}개</b>단어마다 출제 포인트와 해설</span></div>
         </div>`;
     } else if (onb.step === 1) {
       const n = onbPool();
@@ -669,7 +674,7 @@
     const P = pool();
     const plan = C.todayPlan(P, S.words, S.profile.daily, today());
     const curDay = plan.newWords[0] ? plan.newWords[0].d : 0;
-    const cards = DAYS.map((d) => {
+    const card = (d) => {
       const ws = dayWords(d.day);
       const s = C.summarize(ws, S.words);
       const pct = ws.length ? Math.round((s.seen / ws.length) * 100) : 0;
@@ -683,7 +688,11 @@
         <span class="dt">${esc(d.title)}</span>
         <div class="bar thin ${mpct === 100 ? "ok" : ""}"><i style="width:${pct}%"></i></div>
         <span class="dm"><span>${s.seen}/${ws.length}개</span><span>${test ? `테스트 ${test.best}점` : ""}</span></span></a>`;
-    }).join("");
+    };
+    const section = (title, desc, list) => `<div class="section"><div class="section-h"><h2>${title}</h2><span class="small muted">${desc}</span></div><div class="grid2 grid-days">${list.map(card).join("")}</div></div>`;
+    const cards = NDAYS > BASIC_DAYS
+      ? section("기본 코스", `DAY 01~${pad(BASIC_DAYS)} · 주제별 필수 어휘`, DAYS.slice(0, BASIC_DAYS)) + section("심화 코스", `DAY ${pad(BASIC_DAYS + 1)}~${pad(NDAYS)} · 같은 주제의 확장 어휘`, DAYS.slice(BASIC_DAYS))
+      : `<div class="grid2 grid-days">${DAYS.map(card).join("")}</div>`;
     const body = `${topBar("단어장", { sub: `목표 ${target()}점 · ${C.scoreBand(target()).label} · ${P.length.toLocaleString()}개`, right: `<a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a>` })}
       <div class="chips scroll" style="margin-bottom:14px">
         <a class="chip" href="#/part1">${ico("camera")}Part 1 사진 표현</a>
@@ -691,7 +700,8 @@
         <a class="chip" href="#/review?tab=star">${ico("star")}중요 단어</a>
         <a class="chip" href="#/review?tab=wrong">${ico("alert")}오답노트</a>
       </div>
-      <div class="grid2 grid-days">${cards}</div>`;
+      <p class="small muted" style="margin:0 2px">오늘의 학습은 목표 범위 안에서 쉬운 단어(기본 → 핵심 → 고득점)부터 자동으로 골라 드려요. Day를 골라 직접 학습해도 진도에 반영돼요.</p>
+      ${cards}`;
     shell("days", body, true);
   }
 
@@ -728,7 +738,7 @@
     ];
     const items = list.map((w) => wordItem(w)).join("") || `<div class="empty">${ico("search")}<b>해당하는 단어가 없어요</b>필터를 바꿔 보세요</div>`;
     const hiddenCount = all.length - mine.length;
-    const body = `${topBar(`DAY ${pad(d)}`, { back: true, sub: esc(day.title) + " · " + esc(day.titleEn), right: `${d > 1 ? `<a class="icon-btn" href="#/day/${d - 1}" aria-label="이전 Day">${ico("left")}</a>` : ""}${d < 30 ? `<a class="icon-btn" href="#/day/${d + 1}" aria-label="다음 Day">${ico("right")}</a>` : ""}` })}
+    const body = `${topBar(`DAY ${pad(d)}`, { back: true, sub: esc(day.title) + " · " + esc(day.titleEn), right: `${d > 1 ? `<a class="icon-btn" href="#/day/${d - 1}" aria-label="이전 Day">${ico("left")}</a>` : ""}${d < NDAYS ? `<a class="icon-btn" href="#/day/${d + 1}" aria-label="다음 Day">${ico("right")}</a>` : ""}` })}
       <div class="card"><div class="row"><div class="spacer"><div class="stat-num">${sum.mastered}<span class="muted" style="font-size:16px"> / ${mine.length}</span></div><div class="stat-lbl">암기 완료 · 학습 중 ${sum.learning}</div></div>
         ${test ? `<div style="text-align:right"><div class="stat-num" style="color:${test.best >= 80 ? "var(--ok)" : "var(--accent)"}">${test.best}<span style="font-size:16px">점</span></div><div class="stat-lbl">테스트 최고점</div></div>` : ""}</div>
         <div class="stack-bar" style="margin-top:12px"><i style="width:${mine.length ? (sum.mastered / mine.length) * 100 : 0}%;background:var(--ok)"></i><i style="width:${mine.length ? (sum.learning / mine.length) * 100 : 0}%;background:var(--accent)"></i></div></div>
@@ -1434,7 +1444,7 @@
       const res = C.search(WORDS, input.value, 60);
       document.getElementById("sres").innerHTML = input.value.trim()
         ? res.length ? `<div class="small muted" style="margin:0 2px 8px">${res.length}개</div><div class="wlist">${res.map(wordItem).join("")}</div>` : `<div class="empty">${ico("search")}<b>검색 결과가 없어요</b>철자를 확인하거나 다른 뜻으로 찾아보세요</div>`
-        : `<div class="empty">${ico("book")}<b>1,200개 토익 단어에서 찾아요</b>파생어·동의어·한국어 뜻으로도 검색돼요</div>`;
+        : `<div class="empty">${ico("book")}<b>${NWORDS}개 토익 단어에서 찾아요</b>파생어·동의어·한국어 뜻으로도 검색돼요</div>`;
     };
     input.addEventListener("input", run);
     run();
@@ -1494,7 +1504,7 @@
       <div class="section"><div class="section-h"><h2>최근 7일</h2></div><div class="card"><svg class="chart-7" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="최근 7일 학습량">${bars}</svg>
         <div class="legend"><span><i style="background:var(--brand)"></i>새 단어</span><span><i style="background:var(--accent)"></i>복습</span></div></div></div>
       <div class="section"><div class="section-h"><h2>학습 달력 (4주)</h2></div><div class="card"><div class="heat heat-wrap">${["월", "화", "수", "목", "금", "토", "일"].map((x) => `<span class="small muted" style="text-align:center">${x}</span>`).join("")}${cells.join("")}</div></div></div>
-      <div class="section"><div class="section-h"><h2>Day 테스트</h2></div><div class="card"><div class="row"><div class="spacer"><div class="stat-num">${passed}<span class="muted" style="font-size:16px"> / 30</span></div><div class="stat-lbl">통과한 Day (80점 이상) · 응시 ${testsDone}</div></div></div>
+      <div class="section"><div class="section-h"><h2>Day 테스트</h2></div><div class="card"><div class="row"><div class="spacer"><div class="stat-num">${passed}<span class="muted" style="font-size:16px"> / ${NDAYS}</span></div><div class="stat-lbl">통과한 Day (80점 이상) · 응시 ${testsDone}</div></div></div>
         <div class="heat" style="grid-template-columns:repeat(10,1fr);margin-top:12px">${DAYS.map((d) => { const x = S.tests[d.day]; return `<a href="#/day/${d.day}" title="DAY ${d.day}${x ? ` · ${x.best}점` : ""}" style="aspect-ratio:1;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;background:${x ? (x.best >= 80 ? "var(--ok)" : "var(--accent)") : "var(--bg-sunk)"};color:${x ? "#fff" : "var(--text-3)"}">${d.day}</a>`; }).join("")}</div></div></div>`;
     shell("stats", body);
   }
@@ -1529,7 +1539,7 @@
         <button class="set-row" data-import><span class="sl"><b>백업 불러오기</b></span>${ico("upload")}</button>
         <button class="set-row" data-reset><span class="sl"><b style="color:var(--bad)">학습 기록 초기화</b><span>모든 진도와 기록을 지워요</span></span>${ico("trash")}</button>
       </div>
-      ${CONFIG.premium.enabled ? `<div class="set-title">프리미엄</div><div class="set-group"><a class="set-row" href="#/premium"><span class="sl"><b>${S.premium ? "프리미엄 이용 중" : "프리미엄으로 전체 30일 열기"}</b></span>${ico("crown")}</a></div>` : ""}
+      ${CONFIG.premium.enabled ? `<div class="set-title">프리미엄</div><div class="set-group"><a class="set-row" href="#/premium"><span class="sl"><b>${S.premium ? "프리미엄 이용 중" : `프리미엄으로 전체 ${NDAYS}일 열기`}</b></span>${ico("crown")}</a></div>` : ""}
       <div class="set-title">정보</div>
       <div class="set-group">
         <div class="set-row"><span class="sl"><b>버전</b></span><span class="sv">1.0.0 · 데이터 ${esc(D.version)}</span></div>
@@ -1626,10 +1636,10 @@
   }
   function vPremium() {
     const body = `${topBar("프리미엄", { back: true })}
-      <div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">30일 전체 코스 열기</h2><p class="muted">Day ${CONFIG.premium.freeDays + 1}~30 · 1,200개 단어와 문제 전부</p></div>
+      <div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">${NDAYS}일 전체 코스 열기</h2><p class="muted">Day ${CONFIG.premium.freeDays + 1}~${NDAYS} · ${NWORDS}개 단어와 문제 전부</p></div>
       <div class="card"><div class="feature-list">
-        <div><span class="tico c-blue">${ico("book")}</span><span><b>단어 1,200개 + 예문 음성</b>고득점 단어까지 전부</span></div>
-        <div><span class="tico c-purple">${ico("trophy")}</span><span><b>Part 5 실전 문제 1,200개</b>단어마다 해설</span></div>
+        <div><span class="tico c-blue">${ico("book")}</span><span><b>단어 ${NWORDS}개 + 예문 음성</b>고득점 단어까지 전부</span></div>
+        <div><span class="tico c-purple">${ico("trophy")}</span><span><b>Part 5 실전 문제 ${NWORDS}개</b>단어마다 해설</span></div>
         <div><span class="tico c-green">${ico("headphones")}</span><span><b>듣기 모드 · Part 1 · 혼동 어휘</b></span></div></div></div>
       <button class="price-card on" style="margin-top:14px"><span class="spacer"><b>${CONFIG.premium.price}</b><div class="small muted">${CONFIG.premium.priceNote}</div></span>${ico("check")}</button>
       <button class="btn block" style="margin-top:14px" data-buy>${S.premium ? "이용 중" : "구매하기"}</button>
