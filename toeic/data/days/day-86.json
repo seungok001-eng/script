@@ -114,8 +114,8 @@
    5,
    7
   ],
-  "ex": "The editor asked the reporter for *clarification* on several points in the article.",
-  "exKo": "편집자는 기자에게 기사의 몇 가지 내용에 대한 설명을 요청했다.",
+  "ex": "The supplier requested *clarification* on the delivery terms before signing the contract.",
+  "exKo": "그 공급업체는 계약서에 서명하기 전에 배송 조건에 대한 설명을 요청했다.",
   "col": [
    {
     "e": "ask for clarification",
@@ -732,8 +732,8 @@
   "parts": [
    7
   ],
-  "ex": "The report includes an *infographic* that shows how consumer spending has changed.",
-  "exKo": "그 보고서에는 소비자 지출이 어떻게 변해 왔는지 보여 주는 인포그래픽이 들어 있다.",
+  "ex": "The marketing team created an *infographic* showing how consumer spending has changed.",
+  "exKo": "마케팅팀은 소비자 지출이 어떻게 변해 왔는지 보여 주는 인포그래픽을 만들었다.",
   "col": [
    {
     "e": "create an infographic",
@@ -1004,8 +1004,8 @@
   "parts": [
    7
   ],
-  "ex": "The novel sold more *e-books* than printed copies during its first month.",
-  "exKo": "그 소설은 출간 첫 달에 종이책보다 전자책이 더 많이 팔렸다.",
+  "ex": "The novel sold more copies as an *e-book* than in print during its first month.",
+  "exKo": "그 소설은 출간 첫 달에 종이책보다 전자책으로 더 많이 팔렸다.",
   "col": [
    {
     "e": "e-book reader",
@@ -1314,7 +1314,7 @@
   "ant": "",
   "tip": "여기서 copy는 '원고'라는 뜻이다. Part 7 출판사 채용 공고에서 proofreader와 비슷한 직무로 나온다.",
   "q": {
-   "s": "The magazine is hiring a copy ------- to check articles for errors in spelling, grammar, and style.",
+   "s": "Before joining the magazine as a senior copy -------, Mr. Ito worked for a local newspaper.",
    "o": [
     "editorial",
     "edition",
@@ -1322,7 +1322,7 @@
     "editor"
    ],
    "a": 3,
-   "k": "채용하는 대상은 사람이므로 copy editor(교열 담당자)를 이루는 editor가 정답이다. edition(판), editorial(사설)은 사람이 아니고, edit는 동사다."
+   "k": "as a senior copy 뒤에는 직책을 나타내는 사람명사가 와야 하므로 copy editor(교열 담당자)를 이루는 editor가 정답이다. edition(판), editorial(사설)은 사람이 아니고, edit는 동사다."
   }
  },
  {

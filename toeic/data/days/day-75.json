@@ -46,13 +46,13 @@
   "q": {
    "s": "Unfortunately, all of our conference rooms are ------- up for the entire week of the trade show.",
    "o": [
-    "booking",
+    "bookings",
     "books",
     "to book",
     "booked"
    ],
    "a": 3,
-   "k": "be booked up은 '예약이 꽉 차다'라는 표현으로 be동사 뒤에 과거분사 booked가 와야 한다. booking, books, to book은 are 뒤에서 up과 결합해 이런 뜻을 만들지 못한다."
+   "k": "be booked up은 '예약이 꽉 차다'라는 표현으로 be동사 뒤에 과거분사 booked가 와야 한다. bookings는 명사, books는 동사·명사, to book은 to부정사라 are 뒤에서 up과 결합해 이런 뜻을 만들지 못한다."
   }
  },
  {
@@ -377,7 +377,7 @@
   "m": [
    "친절한",
    "환대하는",
-   "(환경이) 쾌적한"
+   "(환경이) 살기 좋은"
   ],
   "tier": 3,
   "parts": [
@@ -955,7 +955,7 @@
   ],
   "der": [],
   "para": [
-   "chicken"
+   "fowl"
   ],
   "ant": "",
   "tip": "poultry는 집합적으로 쓰이는 명사로 보통 복수형 -s를 붙이지 않는다. 메뉴판이나 식료품점 안내에서 meat, seafood, produce와 나란히 분류어로 나온다.",
@@ -1528,7 +1528,7 @@
   "ant": "",
   "tip": "명사 checkout(한 단어)과 동사구 check out(두 단어)을 구분해야 하며, LC에서 late checkout은 추가 요금(fee)이 붙는지를 묻는 문제와 자주 연결된다.",
   "q": {
-   "s": "Members of our rewards program can enjoy a ------- of up to 2 P.M. at no additional charge.",
+   "s": "Members of our rewards program can enjoy a ------- until 2 P.M. at no additional charge.",
    "o": [
     "room rate",
     "late checkout",

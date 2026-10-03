@@ -173,8 +173,8 @@
    }
   ],
   "para": [
-   "work",
-   "job"
+   "jobs",
+   "work"
   ],
   "ant": "unemployment",
   "tip": "employment는 불가산명사라 an employment로 쓰지 않는다. offer of employment, employment history(경력 사항)처럼 다른 명사와 짝을 이룬 형태가 자주 나온다.",
@@ -300,7 +300,7 @@
   "pos": "adj",
   "m": [
    "월급을 받는",
-   "급여제의"
+   "월급제의"
   ],
   "tier": 3,
   "parts": [
@@ -438,7 +438,7 @@
   "ant": "",
   "tip": "temp는 temporary worker를 줄인 말로 듣기 대화에 자주 나온다. 동사로 '임시직으로 일하다(temp at a firm)'라는 뜻도 있다.",
   "q": {
-   "s": "During the busy holiday season, the warehouse hires several ------- to help with packing and shipping.",
+   "s": "The accounting firm brought in two ------- to handle data entry during tax season.",
    "o": [
     "temps",
     "references",
@@ -446,7 +446,7 @@
     "wages"
    ],
    "a": 0,
-   "k": "바쁜 연휴 기간에 포장과 배송을 돕도록 고용하는 대상은 사람이므로 temps(임시 직원들)가 정답이다. references(추천서, 추천인)는 고용 대상이 아니고, promotions와 wages도 의미가 맞지 않는다."
+   "k": "세금 신고 철에 데이터 입력 업무를 처리하도록 들여온 대상은 사람이므로 temps(임시 직원들)가 정답이다. references(추천서, 추천인), promotions(승진, 판촉), wages(임금)는 업무를 처리하는 사람이 아니다."
   }
  },
  {
@@ -491,7 +491,7 @@
   "ant": "",
   "tip": "apply와 마찬가지로 reapply for a position(직책에 다시 지원하다)처럼 for와 짝을 이룬다. to부정사·조동사 뒤의 동사원형 자리를 묻는 문제로 나온다.",
   "q": {
-   "s": "Applicants whose forms are incomplete will be asked to ------- once all required documents are ready.",
+   "s": "Applicants whose forms are incomplete will be asked to ------- once they have gathered the missing paperwork.",
    "o": [
     "reapplied",
     "reapplication",
@@ -599,7 +599,7 @@
   "ant": "",
   "tip": "wage는 주로 시간·주 단위로 받는 임금, salary는 연봉·월급을 가리킨다. minimum wage, hourly wage가 대표 연어다.",
   "q": {
-   "s": "Workers at the plant are paid an hourly ------- that is above the industry average.",
+   "s": "Workers at the plant earn a ------- that is well above the regional average.",
    "o": [
     "fare",
     "charge",
@@ -607,7 +607,7 @@
     "toll"
    ],
    "a": 2,
-   "k": "근로자가 받는 시간당 '임금'이므로 wage가 정답이다. fare(교통 요금), charge(청구 요금), toll(통행료)은 근로의 대가가 아니다."
+   "k": "근로자가 일한 대가로 버는(earn) '임금'이므로 wage가 정답이다. fare(교통 요금), charge(청구 요금), toll(통행료)은 근로의 대가가 아니라 지불하는 요금이다."
   }
  },
  {
@@ -630,8 +630,8 @@
     "k": "가급적 ~ 분야에서"
    },
    {
-    "e": "preferably by",
-    "k": "가급적 ~까지"
+    "e": "preferably with",
+    "k": "가급적 ~을 갖춘"
    }
   ],
   "der": [
@@ -699,9 +699,7 @@
    }
   ],
   "der": [],
-  "para": [
-   "permanent"
-  ],
+  "para": [],
   "ant": "part-time",
   "tip": "명사 앞에서는 full-time job처럼 형용사, work full-time처럼 동사 뒤에서는 부사로 쓰인다. 반대말 part-time과 함께 근무 시간 정보를 묻는 Part 7 문제에 자주 나온다.",
   "q": {
@@ -749,7 +747,7 @@
   "der": [],
   "para": [],
   "ant": "full-time",
-  "tip": "on a part-time basis(시간제로)와 work part-time(부사 용법)이 모두 쓰인다. 하이픈 없이 part time으로 쓰는 명사 용법과 구별한다.",
+  "tip": "on a part-time basis(시간제로), work part-time(시간제로 일하다)처럼 형용사와 부사로 모두 쓰인다. '주 15시간 근무' 같은 짧은 근무 시간 단서가 정답 근거가 된다.",
   "q": {
    "s": "Ms. Hart works ------- at the city library, usually about fifteen hours a week.",
    "o": [
@@ -1460,7 +1458,7 @@
   "ant": "",
   "tip": "be fluent in + 언어 형태로 전치사 in과 짝을 이룬다. be동사 뒤 보어 자리에 명사 fluency나 부사 fluently를 넣는 함정이 나온다.",
   "q": {
-   "s": "Ms. Park, who is ------- in French, will handle all communication with our clients in Paris.",
+   "s": "Because Ms. Park is ------- in French, she was asked to serve as the main contact for our Paris clients.",
    "o": [
     "fluency",
     "fluent",
@@ -1468,7 +1466,7 @@
     "fluencies"
    ],
    "a": 1,
-   "k": "be동사 is 뒤 보어 자리에는 형용사가 오므로 fluent가 정답이다. be fluent in은 '~에 유창하다'라는 뜻이다."
+   "k": "be동사 is 뒤 보어 자리에는 형용사가 오므로 fluent가 정답이다. be fluent in은 '~에 유창하다'라는 뜻이며, fluency는 명사, fluently는 부사다."
   }
  },
  {
@@ -1519,7 +1517,7 @@
   "ant": "",
   "tip": "proficiency in(~에 대한 능숙함)으로 전치사 in과 함께 쓴다. a high level of, demonstrate 뒤의 명사 자리에 형용사 proficient를 넣는 함정이 나온다.",
   "q": {
-   "s": "Candidates must have a high level of ------- in Japanese to qualify for the translator position.",
+   "s": "Candidates for the translator position must have a high level of ------- in Japanese.",
    "o": [
     "proficient",
     "proficiency",
@@ -1659,7 +1657,7 @@
   "ant": "",
   "tip": "be on probation(수습 중이다) 형태로 전치사 on과 함께 쓴다. a probationary period도 같은 뜻으로 Part 7 고용 조건에 자주 나온다.",
   "q": {
-   "s": "Newly hired staff remain on ------- until their supervisor completes a formal evaluation.",
+   "s": "All new recruits remain on ------- until their supervisor completes a formal evaluation.",
    "o": [
     "prohibition",
     "provision",
@@ -1684,8 +1682,8 @@
    5,
    7
   ],
-  "ex": "The hotel used a *staffing agency* to find extra workers for the holiday season.",
-  "exKo": "그 호텔은 연휴 시즌에 필요한 추가 인력을 구하기 위해 인력 파견 업체를 이용했다.",
+  "ex": "The hotel contacts a *staffing agency* whenever it needs extra kitchen workers for large events.",
+  "exKo": "그 호텔은 대규모 행사에 주방 인력이 추가로 필요할 때마다 인력 파견 업체에 연락한다.",
   "col": [
    {
     "e": "through a staffing agency",
@@ -1837,8 +1835,8 @@
   "w": "familiarity",
   "pos": "n",
   "m": [
-   "친숙함",
-   "잘 앎, 정통"
+   "(~에 대한) 숙지, 잘 앎",
+   "친숙함"
   ],
   "tier": 3,
   "parts": [
@@ -1867,7 +1865,7 @@
   ],
   "para": [
    "knowledge",
-   "acquaintance"
+   "experience"
   ],
   "ant": "",
   "tip": "familiarity with(~을 잘 앎)로 전치사 with와 짝을 이룬다. 형용사 familiar도 be familiar with 형태로 쓰여 품사 문제에 함께 나온다.",

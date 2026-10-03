@@ -204,7 +204,7 @@
    }
   ],
   "para": [
-   "be in debt to"
+   "have an outstanding balance"
   ],
   "ant": "",
   "tip": "owe A B = owe B to A(A에게 B를 빚지다) 구조이며, owe one's success to B는 'B 덕분에 성공하다'라는 뜻이다. 형태가 비슷한 owing to(~ 때문에)도 함께 알아 둔다.",
@@ -283,8 +283,8 @@
    5,
    7
   ],
-  "ex": "Borrowers may *repay* the loan early without any additional charges.",
-  "exKo": "대출자는 추가 요금 없이 대출금을 조기 상환할 수 있다.",
+  "ex": "Customers may *repay* the loan early without any additional charges.",
+  "exKo": "고객은 추가 요금 없이 대출금을 조기 상환할 수 있다.",
   "col": [
    {
     "e": "repay a loan",
@@ -364,7 +364,7 @@
    }
   ],
   "para": [
-   "payback"
+   "payment"
   ],
   "ant": "",
   "tip": "repayment plan/schedule처럼 복합명사의 앞 명사로 자주 쓰이며, 동사 repay와 구분하는 품사 문제로 나온다.",
@@ -1031,13 +1031,12 @@
    }
   ],
   "para": [
-   "refuse",
-   "turn down"
+   "refuse"
   ],
   "ant": "grant",
   "tip": "deny A B(A에게 B를 허락하지 않다)의 수동태 A be denied B 구조가 자주 나오며, '부인하다'라는 뜻일 때는 deny -ing를 쓴다.",
   "q": {
-   "s": "Employees who have not completed the security training will be ------- access to the server room.",
+   "s": "Employees who have not completed the security training will be ------- access to the company's design files.",
    "o": [
     "rejected",
     "denied",
@@ -1653,7 +1652,7 @@
   "ant": "",
   "tip": "surcharge on(~에 대한 추가 요금)처럼 on과 짝을 이루며, Part 7에서 additional fee, extra charge로 바꿔 표현된다.",
   "q": {
-   "s": "Due to rising fuel costs, the airline will add a ------- of $15 to each international ticket.",
+   "s": "Because of higher fuel prices, the shipping company will add a ------- of $15 to every overseas delivery.",
    "o": [
     "surcharge",
     "surplus",
@@ -1661,7 +1660,7 @@
     "surrender"
    ],
    "a": 0,
-   "k": "연료비 상승으로 항공권마다 15달러를 '추가 요금'으로 붙인다는 문맥이므로 surcharge가 정답이다. surplus(흑자, 잉여), surface(표면), surrender(항복)는 의미가 맞지 않는다."
+   "k": "연료비 상승으로 해외 배송마다 15달러의 '추가 요금'을 붙인다는 문맥이므로 surcharge가 정답이다. surplus(흑자, 잉여), surface(표면), surrender(항복, 양도)는 의미가 맞지 않는다."
   }
  },
  {
@@ -1730,8 +1729,8 @@
    5,
    7
   ],
-  "ex": "The bank charges a small fee for currency *conversion* on overseas purchases.",
-  "exKo": "그 은행은 해외 구매 시 통화 환전에 대해 소액의 수수료를 부과한다.",
+  "ex": "Most travel cards waive the usual fee for currency *conversion* on overseas purchases.",
+  "exKo": "대부분의 여행용 카드는 해외 구매 시 부과되는 통상적인 환전 수수료를 면제해 준다.",
   "col": [
    {
     "e": "currency conversion",
@@ -1858,7 +1857,7 @@
   "ant": "debtor",
   "tip": "creditor(채권자)와 debtor(채무자)는 반대 개념이며, credit(신용)·credential(자격 증명)과 형태가 비슷해 어휘 문제의 오답으로 자주 섞인다.",
   "q": {
-   "s": "The firm used the proceeds from the sale to pay back its -------.",
+   "s": "Under the restructuring plan, the company's ------- will receive 60 percent of the money they are owed.",
    "o": [
     "creditors",
     "credits",
@@ -1866,7 +1865,7 @@
     "creations"
    ],
    "a": 0,
-   "k": "매각 대금으로 '갚는(pay back)' 대상은 돈을 빌려준 채권자이므로 creditors가 정답이다. credits(입금액, 학점), credentials(자격 증명서), creations(창작물)는 pay back의 대상이 아니다."
+   "k": "빌려준 돈(the money they are owed)의 60퍼센트를 돌려받는 사람은 채권자이므로 creditors가 정답이다. credits(입금액, 학점), credentials(자격 증명서), creations(창작물)는 돈을 돌려받는 주체가 될 수 없다."
   }
  },
  {

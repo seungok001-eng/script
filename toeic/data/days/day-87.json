@@ -452,7 +452,7 @@
   "ant": "",
   "tip": "자동사라 'complain about/of + 대상', 'complain to + 사람'으로 쓰고 목적어를 바로 취하지 않는다. 명사 complaint(불만)와의 품사 구분이 빈출이다.",
   "q": {
-   "s": "Residents who wish to ------- about noise from the construction site should call the city office.",
+   "s": "Customers who wish to ------- about a late delivery should call our service line.",
    "o": [
     "complain",
     "complaint",
@@ -835,8 +835,8 @@
    5,
    7
   ],
-  "ex": "Researchers *gathered* feedback from more than 2,000 customers before redesigning the website.",
-  "exKo": "연구원들은 웹사이트를 다시 디자인하기 전에 2,000명이 넘는 고객의 의견을 수집했다.",
+  "ex": "The HR team *gathered* input from every department before revising the dress code.",
+  "exKo": "인사팀은 복장 규정을 개정하기 전에 모든 부서의 의견을 수집했다.",
   "col": [
    {
     "e": "gather information",
@@ -1606,8 +1606,8 @@
    5,
    7
   ],
-  "ex": "The firm hired temporary workers to *augment* its staff during the busy holiday season.",
-  "exKo": "그 회사는 바쁜 연휴 시즌 동안 인력을 늘리기 위해 임시 직원을 고용했다.",
+  "ex": "The resort hired seasonal workers to *augment* its staff during the ski season.",
+  "exKo": "그 리조트는 스키 시즌 동안 인력을 보강하기 위해 계절 근로자를 고용했다.",
   "col": [
    {
     "e": "augment income",
@@ -2061,7 +2061,7 @@
   "ant": "",
   "tip": "repeat의 격식어로 '이미 한 말을 다시 강조하다'라는 뜻이며 'reiterate that ~', 'reiterate one's commitment to'의 형태로 쓰인다.",
   "q": {
-   "s": "In her closing remarks, the CEO ------- the company's commitment to reducing its carbon emissions.",
+   "s": "In her closing remarks, the CEO ------- the company's commitment to supporting local suppliers.",
    "o": [
     "retrieved",
     "reimbursed",
@@ -2069,7 +2069,7 @@
     "renovated"
    ],
    "a": 2,
-   "k": "맺음말에서 회사의 의지를 '거듭 강조했다'는 뜻이므로 reiterated가 정답. retrieved(되찾았다), reimbursed(상환했다), renovated(보수했다)는 commitment와 어울리지 않는다."
+   "k": "맺음말에서 지역 공급업체를 지원하겠다는 회사의 의지를 '거듭 강조했다'는 뜻이므로 reiterated가 정답. retrieved(되찾았다), reimbursed(상환했다), renovated(보수했다)는 commitment와 어울리지 않는다."
   }
  },
  {

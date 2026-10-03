@@ -223,7 +223,7 @@
   "ant": "",
   "tip": "'소포' 외에 benefits package(복리 후생), travel package(여행 상품)처럼 '묶음 상품'이라는 뜻도 있다. 불가산명사 packaging(포장재)과의 구분이 출제된다.",
   "q": {
-   "s": "A ------- addressed to Mr. Lim was left at the reception desk this morning.",
+   "s": "A ------- containing product samples was delivered to Ms. Reyes's office this morning.",
    "o": [
     "packaging",
     "packed",
@@ -231,7 +231,7 @@
     "packer"
    ],
    "a": 2,
-   "k": "관사 A 뒤 명사 자리이며 Mr. Lim 앞으로 '주소가 적힌' 것은 소포이므로 package가 정답이다. packaging은 불가산명사 '포장재'라 A와 쓸 수 없고, packer(포장하는 사람)는 의미가 맞지 않으며, packed는 형용사·분사다."
+   "k": "관사 A 뒤 주어가 되는 명사 자리이며 제품 견본이 '들어 있는' 소포라는 의미이므로 package가 정답이다. packaging은 불가산명사 '포장재'라 A와 쓸 수 없고, packer(포장하는 사람)는 의미가 맞지 않으며, packed는 형용사·분사다."
   }
  },
  {
@@ -583,14 +583,11 @@
     "m": "도착하다"
    }
   ],
-  "para": [
-   "entrance",
-   "coming"
-  ],
+  "para": [],
   "ant": "departure",
   "tip": "upon/on arrival(도착하는 즉시)이 빈출이며, 상점 광고의 new arrivals는 '신상품'이라는 뜻이다. 동사 arrive는 자동사라 arrive at/in으로 쓴다.",
   "q": {
-   "s": "Please let the front desk know your expected ------- time so that your room can be prepared.",
+   "s": "Flight 207 from Madrid is scheduled for ------- at Gate 14 at 3:45 P.M.",
    "o": [
     "arrive",
     "arriving",
@@ -598,7 +595,7 @@
     "arrival"
    ],
    "a": 3,
-   "k": "형용사 expected와 명사 time 사이에서 time과 복합명사를 이루는 명사 자리이므로 arrival이 정답이다(arrival time: 도착 시간). arrive는 동사이고, arriving과 arrived는 이 자리에 맞지 않는다."
+   "k": "전치사 for의 목적어가 되는 명사 자리이므로 arrival이 정답이다(be scheduled for arrival: 도착 예정이다). arrive는 동사이고, arriving과 arrived는 이 자리에 맞지 않는다."
   }
  },
  {
@@ -632,8 +629,7 @@
    }
   ],
   "para": [
-   "shipper",
-   "dispatcher"
+   "shipper"
   ],
   "ant": "recipient",
   "tip": "반의어 recipient(수령인)와 짝지어 Part 7 배송 문서에서 자주 나온다. 우편물이 배달되지 않으면 return to sender(발송인 반송)로 처리된다.",
@@ -663,8 +659,8 @@
    5,
    7
   ],
-  "ex": "The online store offers free *shipping* on all orders placed before midnight.",
-  "exKo": "그 온라인 상점은 자정 전에 접수된 모든 주문에 무료 배송을 제공한다.",
+  "ex": "The furniture store charges extra for *shipping* to remote areas.",
+  "exKo": "그 가구점은 외딴 지역으로 배송할 때 추가 요금을 받는다.",
   "col": [
    {
     "e": "free shipping",
@@ -697,8 +693,7 @@
    }
   ],
   "para": [
-   "delivery",
-   "postage"
+   "delivery"
   ],
   "ant": "",
   "tip": "불가산명사로 free shipping, shipping charges/costs(배송료)처럼 쓰인다. 가산명사 shipment(화물, 1회 배송분)와 구분해야 한다.",
@@ -754,8 +749,7 @@
    }
   ],
   "para": [
-   "mailing cost",
-   "shipping"
+   "mailing cost"
   ],
   "ant": "",
   "tip": "불가산명사로 a postage나 postages로 쓰지 않는다. 반송 봉투 안내의 postage-paid envelope(우편 요금이 지불된 봉투)가 Part 7에 자주 나온다.",
@@ -828,8 +822,8 @@
    5,
    7
   ],
-  "ex": "The new app lets customers *track* their pizza from the oven to their front door.",
-  "exKo": "새 앱으로 고객은 피자가 오븐에서 나와 현관 앞에 도착할 때까지 추적할 수 있다.",
+  "ex": "Volunteers will *track* the number of visitors entering the park each day.",
+  "exKo": "자원봉사자들이 매일 공원에 들어오는 방문객 수를 추적해 기록할 것이다.",
   "col": [
    {
     "e": "track a package",
@@ -887,8 +881,8 @@
    3,
    7
   ],
-  "ex": "Workers are *loading* boxes onto a delivery truck.",
-  "exKo": "인부들이 배달 트럭에 상자들을 싣고 있다.",
+  "ex": "Two men are *loading* suitcases into the trunk of a car.",
+  "exKo": "두 남자가 자동차 트렁크에 여행 가방을 싣고 있다.",
   "col": [
    {
     "e": "load A onto B",
@@ -911,10 +905,7 @@
     "m": "업무량"
    }
   ],
-  "para": [
-   "pack",
-   "fill"
-  ],
+  "para": [],
   "ant": "unload",
   "tip": "Part 1에서 is loading/are being loaded(싣고 있다/실리고 있다)를 구분하는 문제가 자주 나온다. 명사로는 workload(업무량)처럼 '부담, 양'을 뜻한다.",
   "q": {
@@ -960,10 +951,7 @@
     "m": "싣다"
    }
   ],
-  "para": [
-   "empty",
-   "discharge"
-  ],
+  "para": [],
   "ant": "load",
   "tip": "load(싣다)와 반대 동작으로, Part 1에서 load와 unload를 바꿔 넣은 오답이 자주 나온다. unload A from B(B에서 A를 내리다) 구조를 기억하자.",
   "q": {
@@ -1150,7 +1138,6 @@
   ],
   "der": [],
   "para": [
-   "platform",
    "skid"
   ],
   "ant": "",
@@ -1198,7 +1185,7 @@
   "ant": "",
   "tip": "Part 1 창고 사진에서 매우 자주 나오며, 운전하다는 operate나 drive로 표현한다. 지게차 운전 자격증(forklift license)이 채용 공고의 자격 요건으로 나오기도 한다.",
   "q": {
-   "s": "Only certified employees are allowed to operate the ------- used to move heavy loads.",
+   "s": "The warehouse is hiring a ------- driver with at least two years of experience.",
    "o": [
     "facelift",
     "forklift",
@@ -1206,7 +1193,7 @@
     "airlift"
    ],
    "a": 1,
-   "k": "무거운 짐을 옮기는 데 쓰이며 자격을 갖춘 직원만 '운전할' 수 있는 것은 지게차이므로 forklift가 정답이다. facelift(성형 수술, 외관 개선), shoplift(물건을 훔치다), airlift(공수)는 의미가 맞지 않는다."
+   "k": "창고에서 채용하는 운전사로 driver와 결합해 '지게차 운전사'를 이루는 forklift가 정답이다. facelift(성형 수술, 외관 개선), shoplift(물건을 훔치다), airlift(공수)는 의미가 맞지 않는다."
   }
  },
  {
@@ -1253,7 +1240,7 @@
   "ant": "undamaged",
   "tip": "arrive damaged(파손된 채 도착하다)처럼 2형식 동사 뒤 보어로도 쓰인다. 명사 damage는 불가산으로 damage to(~에 대한 손상)처럼 쓴다.",
   "q": {
-   "s": "Customers who receive ------- merchandise should contact us within seven days of delivery.",
+   "s": "Several bottles of olive oil were ------- during shipping and had to be thrown away.",
    "o": [
     "damaging",
     "damaged",
@@ -1261,7 +1248,7 @@
     "damages"
    ],
    "a": 1,
-   "k": "명사 merchandise를 수식하는 형용사 자리이며 상품이 '파손된' 상태라는 수동의 의미이므로 damaged가 정답이다. damaging은 '해를 끼치는'이라는 능동의 의미이고, damage, damages는 명사·동사다."
+   "k": "be동사 were 뒤에서 병이 '파손되었다'는 수동의 의미가 되어야 하므로 damaged가 정답이다. damaging은 능동이라 목적어가 필요하고 의미도 맞지 않으며, damage, damages는 명사·동사 형태라 be동사 뒤 보어로 올 수 없다."
   }
  },
  {
@@ -1650,13 +1637,7 @@
     "k": "요청서를 제출하다"
    }
   ],
-  "der": [
-   {
-    "w": "request",
-    "pos": "v",
-    "m": "요청하다"
-   }
-  ],
+  "der": [],
   "para": [
    "request",
    "order"
@@ -2032,7 +2013,7 @@
   "ant": "untimely",
   "tip": "-ly로 끝나지만 부사가 아니라 형용사라서 명사 앞에 온다. in a timely manner(적시에)는 Part 5·7에서 매우 자주 쓰이는 표현이다.",
   "q": {
-   "s": "Please submit your expense reports in a ------- manner so that reimbursements are not delayed.",
+   "s": "Thanks to the ------- arrival of the replacement parts, the factory resumed production within a day.",
    "o": [
     "timing",
     "timed",
@@ -2040,7 +2021,7 @@
     "timer"
    ],
    "a": 2,
-   "k": "관사 a와 명사 manner 사이에서 명사를 수식하는 형용사 자리이며 in a timely manner(제때에)를 이루는 timely가 정답이다. -ly로 끝나지만 형용사라는 점이 함정이다. timing, timer는 명사이고, timed는 '시간이 정해진, 측정된'이라는 의미라 manner와 어울리지 않는다."
+   "k": "관사 the와 명사 arrival 사이에서 명사를 수식하는 형용사 자리이며 교체 부품이 '제때' 도착했다는 의미이므로 timely가 정답이다. -ly로 끝나지만 형용사라는 점이 함정이다. timing, timer는 명사이고, timed는 '시간이 정해진, 측정된'이라는 의미라 문맥에 맞지 않는다."
   }
  }
 ]

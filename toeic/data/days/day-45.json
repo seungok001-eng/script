@@ -31,8 +31,7 @@
    }
   ],
   "para": [
-   "light breakfast",
-   "complimentary breakfast"
+   "light breakfast"
   ],
   "ant": "",
   "tip": "빵·과일·커피 등으로 된 가벼운 아침 식사로, 호텔 광고·안내문(Part 7)에서 숙박 요금 포함 내역으로 자주 나온다. 조리된 요리가 나오는 full breakfast와 구분된다.",
@@ -1290,7 +1289,7 @@
    7
   ],
   "ex": "Mr. Ford asked the server whether smaller *portions* were available for children.",
-  "exKo": "Ford 씨는 종업원에게 아이들을 위해 양을 적게 주문할 수 있는지 물었다.",
+  "exKo": "Ford 씨는 종업원에게 아이들을 위한 소량 메뉴가 있는지 물었다.",
   "col": [
    {
     "e": "generous portions",
@@ -1349,7 +1348,7 @@
    "entrée",
    "main dish"
   ],
-  "ant": "dessert",
+  "ant": "",
   "tip": "코스 요리에서 appetizer(전채) 다음, dessert(후식) 전에 나오는 요리이며, 미국 영어에서는 entrée로 바꿔 쓴다.",
   "q": {
    "s": "After the soup and salad, a ------- of grilled steak came with roasted potatoes.",
@@ -1850,7 +1849,7 @@
   "pos": "n",
   "m": [
    "대리 주차 요원",
-   "(호텔의) 객실 서비스 담당자"
+   "(호텔의) 의류 관리 담당 직원"
   ],
   "tier": 3,
   "parts": [

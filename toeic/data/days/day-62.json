@@ -77,14 +77,14 @@
   "ant": "",
   "tip": "cover for는 '~의 업무를 대신 봐 주다'라는 뜻으로 Part 2·3에서 자주 들린다. cover a shift(근무를 대신 서다)처럼 cover 단독으로도 쓰인다.",
   "q": {
-   "s": "Mr. Patel asked a colleague to ------- for him during his doctor's appointment.",
+   "s": "Could you ------- for me at the front desk while I step out for lunch?",
    "o": [
     "take",
     "hand",
     "cover",
     "turn"
    ],
-   "k": "for와 결합해 '~의 일을 대신 봐 주다'라는 뜻을 만드는 cover가 정답. take for는 '~로 여기다'라는 뜻이고, hand for와 turn for는 이런 뜻을 나타내지 못한다.",
+   "k": "for와 결합해 '~의 일을 대신 봐 주다'라는 뜻을 만드는 cover가 정답. take for는 '~로 여기다'라는 뜻이고, hand for와 turn for는 '대신하다'라는 뜻을 나타내지 못한다.",
    "a": 2
   }
  },
@@ -164,7 +164,7 @@
    },
    {
     "e": "report to the front desk",
-    "k": "프런트에 가서 신고하다"
+    "k": "프런트에 가서 도착을 알리다"
    }
   ],
   "der": [
@@ -179,7 +179,7 @@
    "work under"
   ],
   "ant": "",
-  "tip": "report to + 사람은 '~의 지휘를 받다(직속 상사)', report to + 장소는 '~로 가서 도착을 알리다'라는 뜻이다. Part 7에서 '누가 상사인가'를 묻는 문제의 단서가 된다.",
+  "tip": "report to + 사람은 '~의 지휘를 받다(직속 상사)', report to + 장소는 '~에 가서 도착을 알리다'라는 뜻이다. Part 7에서 '누가 상사인가'를 묻는 문제의 단서가 된다.",
   "q": {
    "s": "On your first day, please ------- to the security office to receive your identification badge.",
    "o": [
@@ -188,7 +188,7 @@
     "report",
     "visit"
    ],
-   "k": "to + 장소와 결합해 '~로 가서 신고하다'라는 뜻을 만드는 report가 정답. arrive는 at과 함께 쓰고, attend to는 '~을 처리하다'라는 뜻이며, visit은 전치사 없이 목적어를 취한다.",
+   "k": "to + 장소와 결합해 '~로 가서 도착을 알리다(출두하다)'라는 뜻을 만드는 report가 정답. arrive는 at과 함께 쓰고, attend to는 '~을 처리하다'라는 뜻이며, visit은 전치사 없이 목적어를 취한다.",
    "a": 2
   }
  },
@@ -207,7 +207,7 @@
    7
   ],
   "ex": "Ms. Ward is *on leave* until the end of the month, so please contact her assistant.",
-  "exKo": "Ward 씨는 이달 말까지 휴가 중이니 그녀의 비서에게 연락하기 바란다.",
+  "exKo": "Ward 씨는 이달 말까지 휴가 중이니 비서에게 연락하기 바란다.",
   "col": [
    {
     "e": "be on leave",
@@ -581,7 +581,7 @@
    "bond"
   ],
   "ant": "",
-  "tip": "전치사 with와 짝을 이루어 build/establish a rapport with로 쓴다. 끝의 t는 발음하지 않으므로[ræpɔ́ːr] 듣기에서 report와 혼동하지 않도록 한다.",
+  "tip": "전치사 with와 짝을 이루어 build/establish a rapport with로 쓴다. 끝의 t는 발음하지 않으므로(발음 [ræˈpɔːr]) 듣기에서 report와 혼동하지 않도록 한다.",
   "q": {
    "s": "Ms. Fontaine quickly established a strong ------- with the members of her new team.",
    "o": [
@@ -995,8 +995,8 @@
   ],
   "para": [
    "arbitrate",
-   "settle",
-   "resolve"
+   "intervene",
+   "act as a go-between"
   ],
   "ant": "",
   "tip": "mediate a dispute(분쟁을 중재하다) 또는 mediate between A and B 형태로 쓴다. 사람 명사 mediator와 행위 명사 mediation을 구분하는 품사 문제가 나온다.",
@@ -1083,8 +1083,8 @@
     "k": "성과 지표"
    },
    {
-    "e": "metric system",
-    "k": "미터법"
+    "e": "success metrics",
+    "k": "성공 지표"
    }
   ],
   "der": [],
@@ -1544,14 +1544,14 @@
   "ant": "",
   "tip": "customer loyalty(고객 충성도), loyalty program(단골 고객 우대 제도)이 대표 연어다. 형용사 loyal(loyal customers)과 품사 자리를 구분한다.",
   "q": {
-   "s": "Shoppers who join the store's free ------- program receive exclusive discounts and birthday coupons.",
+   "s": "Ms. Abara received a gold watch in recognition of her ------- to the company over three decades.",
    "o": [
     "loyalty",
     "loyal",
     "loyally",
     "loyalist"
    ],
-   "k": "program 앞에서 '고객 우대 프로그램'이라는 복합명사를 만드는 loyalty가 정답. loyal program은 '충실한 프로그램'이라는 어색한 뜻이 되고, loyally는 부사, loyalist는 '충성파'라는 사람 명사다.",
+   "k": "소유격 her 뒤에서 전치사 to와 함께 '회사에 대한 충성'을 나타내는 명사 자리이므로 loyalty가 정답. loyal은 형용사, loyally는 부사이고, loyalist는 '충성파'라는 사람 명사라 문맥에 맞지 않는다.",
    "a": 0
   }
  },

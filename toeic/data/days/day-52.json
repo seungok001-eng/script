@@ -477,7 +477,7 @@
   "pos": "n",
   "m": [
    "검안사",
-   "안과 의사"
+   "시력 검사 전문가"
   ],
   "tier": 3,
   "parts": [
@@ -1271,9 +1271,7 @@
     "m": "전염성의"
    }
   ],
-  "para": [
-   "contamination"
-  ],
+  "para": [],
   "ant": "",
   "tip": "risk of infection, prevent the spread of infection처럼 쓰이며 형용사 infectious(전염성의)와 품사를 구분한다.",
   "q": {
@@ -1759,7 +1757,7 @@
    }
   ],
   "para": [
-   "additive",
+   "pills",
    "addition"
   ],
   "ant": "",

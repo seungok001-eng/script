@@ -328,7 +328,7 @@
    },
    {
     "e": "inbound tourism",
-    "k": "외국인 관광객 유치, 인바운드 관광"
+    "k": "(외국인의) 국내 관광, 인바운드 관광"
    }
   ],
   "der": [],
@@ -418,7 +418,7 @@
    7
   ],
   "ex": "Mr. Novak was put on *standby* for the next flight to Seattle.",
-  "exKo": "Novak 씨는 시애틀행 다음 항공편의 대기자로 올라갔다.",
+  "exKo": "Novak 씨는 시애틀행 다음 항공편의 대기자 명단에 올랐다.",
   "col": [
    {
     "e": "on standby",
@@ -849,7 +849,7 @@
     "casework"
    ],
    "a": 2,
-   "k": "공항에 일찍 출발하기 위해 전날 밤 싼 것은 '여행 가방'이므로 suitcase가 정답이다. showcase(진열장), staircase(계단), casework(사례 연구)는 pack(짐을 싸다)의 목적어로 맞지 않는다."
+   "k": "공항에 일찍 출발하기 위해 전날 밤 싼 것은 '여행 가방'이므로 suitcase가 정답이다. showcase(진열장), staircase(계단), casework(사례 관리 업무)는 pack(짐을 싸다)의 목적어로 맞지 않는다."
   }
  },
  {
@@ -1611,8 +1611,8 @@
   "w": "embark",
   "pos": "v",
   "m": [
-   "(배·비행기에) 타다",
-   "(on) ~에 착수하다"
+   "(on) ~에 착수하다, 시작하다",
+   "(배·비행기에) 타다"
   ],
   "tier": 3,
   "parts": [
@@ -1880,8 +1880,8 @@
    }
   ],
   "para": [
-   "travel industry",
-   "hospitality"
+   "travel",
+   "travel industry"
   ],
   "ant": "",
   "tip": "tourism은 불가산명사로 '관광업'을 뜻하고, 사람은 tourist(가산명사)다. boost/promote tourism(관광을 활성화하다)이 빈출 연어다.",

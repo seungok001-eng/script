@@ -42,8 +42,7 @@
   ],
   "para": [
    "be expected to",
-   "will probably",
-   "tend to"
+   "will probably"
   ],
   "ant": "be unlikely to",
   "tip": "likely는 -ly로 끝나지만 형용사라 be동사 뒤에 오며 to부정사가 이어진다. 'be highly/more likely to'처럼 부사의 수식을 받는 형태로 출제된다.",
@@ -74,8 +73,8 @@
   "exKo": "연간 상여금은 각 직원의 성과 평가를 바탕으로 한다.",
   "col": [
    {
-    "e": "be based on",
-    "k": "~에 근거하다"
+    "e": "be based largely on",
+    "k": "주로 ~에 근거하다"
    },
    {
     "e": "be based in",
@@ -100,8 +99,7 @@
   ],
   "para": [
    "depend on",
-   "be determined by",
-   "rely on"
+   "be determined by"
   ],
   "ant": "",
   "tip": "'be based on + 근거'와 'be based in + 장소(~에 본사를 두다)'의 전치사를 구분하는 문제가 빈출이다.",
@@ -130,8 +128,8 @@
    5,
    7
   ],
-  "ex": "Mr. Silva *applied for* a small business loan to open a second bakery.",
-  "exKo": "Silva 씨는 두 번째 제과점을 열기 위해 소상공인 대출을 신청했다.",
+  "ex": "Mr. Silva *applied for* a government grant to expand his bakery.",
+  "exKo": "Silva 씨는 제과점을 확장하기 위해 정부 보조금을 신청했다.",
   "col": [
    {
     "e": "apply for a job",
@@ -716,8 +714,8 @@
    5,
    7
   ],
-  "ex": "Most board members voted *in favor of* the proposed merger.",
-  "exKo": "대부분의 이사가 합병안에 찬성표를 던졌다.",
+  "ex": "The board rejected the original design *in favor of* a simpler, less expensive one.",
+  "exKo": "이사회는 원래 디자인을 거부하고 더 단순하고 저렴한 디자인을 택했다.",
   "col": [
    {
     "e": "vote in favor of",
@@ -1342,8 +1340,8 @@
    5,
    7
   ],
-  "ex": "The new delivery vans *are capable of* traveling 300 kilometers on a single charge.",
-  "exKo": "새 배송 밴은 한 번 충전으로 300킬로미터를 주행할 수 있다.",
+  "ex": "The company's electric trucks *are capable of* traveling 300 kilometers on a single charge.",
+  "exKo": "그 회사의 전기 트럭은 한 번 충전으로 300킬로미터를 주행할 수 있다.",
   "col": [
    {
     "e": "be capable of -ing",
@@ -1975,7 +1973,7 @@
   "ant": "",
   "tip": "'rule out the possibility of(~의 가능성을 배제하다)'가 빈출이며, exclude, eliminate로 패러프레이즈된다.",
   "q": {
-   "s": "The CEO did not rule ------- the possibility of opening additional stores next year.",
+   "s": "Investigators have ruled ------- faulty wiring as the cause of the warehouse fire.",
    "o": [
     "off",
     "over",
@@ -1983,7 +1981,7 @@
     "away"
    ],
    "a": 2,
-   "k": "'rule out the possibility of(~의 가능성을 배제하다)'이므로 out이 정답. off, over, away는 rule과 결합해 '배제하다'라는 뜻을 만들지 않는다."
+   "k": "'rule out(배제하다)'이므로 out이 정답. 조사관들이 창고 화재의 원인에서 배선 결함을 배제했다는 뜻이며, off, over, away는 rule과 결합해 '배제하다'라는 뜻을 만들지 않는다."
   }
  }
 ]

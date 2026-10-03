@@ -728,7 +728,7 @@
    }
   ],
   "para": [
-   "restructure"
+   "remortgage"
   ],
   "ant": "",
   "tip": "금리가 내려갈 때 더 낮은 금리의 대출로 바꾼다는 뜻이다. 타동사로 refinance a mortgage/loan처럼 목적어를 바로 쓴다.",
@@ -1218,8 +1218,7 @@
   ],
   "der": [],
   "para": [
-   "rebate",
-   "refund"
+   "rebate"
   ],
   "ant": "",
   "tip": "구매 금액의 일부를 돌려주는 혜택으로, Part 7 카드 광고에서 rebate나 rewards로 바꿔 표현된다.",
@@ -1421,7 +1420,7 @@
   "ant": "",
   "tip": "be suspicious of(~을 의심하다)처럼 전치사 of와 쓰인다. 명사 suspicion, 부사 suspiciously와의 품사 구분이 출제된다.",
   "q": {
-   "s": "The security team was alerted after the system detected ------- activity on several employee accounts.",
+   "s": "Hotel guests are asked to report any ------- packages left unattended in the lobby.",
    "o": [
     "suspicious",
     "suspicion",
@@ -1429,7 +1428,7 @@
     "suspecting"
    ],
    "a": 0,
-   "k": "명사 activity를 수식하는 형용사 자리이므로 suspicious가 정답이다. suspicion은 명사, suspiciously는 부사이고, suspecting(의심하는)은 활동을 수식하기에 의미가 맞지 않는다."
+   "k": "명사 packages를 수식하는 형용사 자리이므로 suspicious(수상한)가 정답이다. suspicion은 명사, suspiciously는 부사이고, suspecting(의심하는)은 사람이 주체일 때 쓰므로 소포를 수식하기에 의미가 맞지 않는다."
   }
  },
  {

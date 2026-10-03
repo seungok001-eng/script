@@ -785,8 +785,7 @@
   ],
   "para": [
    "scenery",
-   "view",
-   "countryside"
+   "view"
   ],
   "ant": "",
   "tip": "'풍경, 풍경화'라는 명사 외에 동사로 '조경하다'라는 뜻이 있으며, landscaping(조경)과 landscaper(조경사)는 시설 관리 지문에 자주 나온다.",
@@ -1070,7 +1069,6 @@
   "der": [],
   "para": [
    "handcrafted",
-   "homemade",
    "made by hand"
   ],
   "ant": "machine-made",
@@ -1132,11 +1130,11 @@
    "o": [
     "handcrafted",
     "handwritten",
-    "handicapped",
+    "handover",
     "handshaking"
    ],
    "a": 0,
-   "k": "가방이 작은 공방에서 전부 손으로 꿰매어진다는 내용과 어울리는 '수공예의'라는 뜻의 handcrafted가 정답이다. handwritten(손으로 쓴)은 글씨에 쓰고, handicapped(장애가 있는), handshaking(악수)은 의미가 맞지 않는다."
+   "k": "가방이 작은 공방에서 전부 손으로 꿰매어진다는 내용과 어울리는 '수공예의'라는 뜻의 handcrafted가 정답이다. handwritten(손으로 쓴)은 글씨에 쓰고, handover(인수인계)와 handshaking(악수)은 명사로 의미가 맞지 않는다."
   }
  },
  {
@@ -1176,8 +1174,7 @@
   ],
   "para": [
    "collectible",
-   "heirloom",
-   "relic"
+   "vintage item"
   ],
   "ant": "",
   "tip": "명사(골동품)와 형용사(antique furniture)로 모두 쓰이며 보통 100년 이상 된 물건을 가리킨다. 그보다 최근의 가치 있는 옛 물건은 vintage로 표현한다.",
@@ -1219,8 +1216,7 @@
   "der": [],
   "para": [
    "classic",
-   "retro",
-   "old-fashioned"
+   "retro"
   ],
   "ant": "",
   "tip": "오래되었지만 가치 있는 물건을 수식하며 vintage car/clothing처럼 쓰인다. 명사로는 '(포도주의) 생산 연도'라는 뜻이 있다.",

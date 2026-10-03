@@ -172,7 +172,7 @@
   "ant": "interior",
   "tip": "exterior는 형용사로 '외부의', 명사로 '외관'을 뜻하며, Part 7에서 facade(건물 정면)나 outside로 패러프레이징된다. Part 1 공사 사진에서도 자주 쓰인다.",
   "q": {
-   "s": "Painters will begin work on the ------- walls of the warehouse once the rainy season is over.",
+   "s": "Security cameras have been installed above all ------- doors of the warehouse.",
    "o": [
     "excessive",
     "exemplary",
@@ -180,7 +180,7 @@
     "exterior"
    ],
    "a": 3,
-   "k": "우기가 끝나면 작업을 시작하는 벽이므로 '외부의'라는 뜻의 exterior가 정답이다. excessive(과도한), exemplary(모범적인), exhausted(지친)는 walls를 수식하기에 의미가 맞지 않는다."
+   "k": "창고의 바깥쪽 출입문 위에 보안 카메라를 설치한 것이므로 '외부의'라는 뜻의 exterior가 정답이다. excessive(과도한), exemplary(모범적인), exhausted(지친)는 doors를 수식하기에 의미가 맞지 않는다."
   }
  },
  {
@@ -318,7 +318,7 @@
   "ant": "",
   "tip": "zoning은 토지를 주거·상업·공업 용도로 나누는 규제로, zoning laws/regulations, zoning board 같은 복합 명사 형태로 Part 7 부동산 기사에 나온다.",
   "q": {
-   "s": "The developer must obtain approval from the city's ------- board before converting the warehouse into apartments.",
+   "s": "The owner must obtain approval from the city's ------- board before converting the warehouse into apartments.",
    "o": [
     "zoned",
     "zones",
@@ -872,7 +872,7 @@
   "ant": "",
   "tip": "Part 7 기사에서 교통·학교·개발 계획이 property values에 미치는 영향을 묻는 문제가 나오며, home prices로 패러프레이징된다.",
   "q": {
-   "s": "Homeowners fear that the proposed landfill could lower ------- throughout the neighborhood.",
+   "s": "Residents fear that the proposed landfill could lower ------- throughout the neighborhood.",
    "o": [
     "building permits",
     "property values",
@@ -936,8 +936,8 @@
   "w": "condo",
   "pos": "n",
   "m": [
-   "콘도(분양 아파트)",
-   "공동 주택의 한 세대"
+   "분양 아파트",
+   "(공동 주택의) 한 세대"
   ],
   "tier": 2,
   "parts": [
@@ -993,8 +993,8 @@
   "parts": [
    7
   ],
-  "ex": "The developer is building 50 *townhouses* with shared gardens on the site.",
-  "exKo": "개발업체는 그 부지에 공용 정원이 딸린 타운하우스 50채를 짓고 있다.",
+  "ex": "The builder is constructing 50 *townhouses* with shared gardens on the site.",
+  "exKo": "그 건설업체는 그 부지에 공용 정원이 딸린 타운하우스 50채를 짓고 있다.",
   "col": [
    {
     "e": "three-story townhouse",
@@ -1142,7 +1142,7 @@
   "ant": "low-rise",
   "tip": "high-rise는 형용사(high-rise buildings)와 명사(a high-rise) 둘 다로 쓰이며, Part 1에서 'High-rise buildings overlook the river.'처럼 배경 묘사로 나온다.",
   "q": {
-   "s": "Developers have submitted plans for a 40-story ------- tower with offices and apartments.",
+   "s": "The city has received plans for a 40-story ------- tower with offices and apartments.",
    "o": [
     "high-speed",
     "high-pitched",
@@ -1592,8 +1592,8 @@
   "parts": [
    7
   ],
-  "ex": "*Excavation* for the building's underground parking lot began last week.",
-  "exKo": "그 건물의 지하 주차장을 만들기 위한 굴착 작업이 지난주에 시작되었다.",
+  "ex": "*Excavation* for the building's two-level basement began last week.",
+  "exKo": "그 건물의 지하 2개 층을 만들기 위한 굴착 작업이 지난주에 시작되었다.",
   "col": [
    {
     "e": "excavation work",

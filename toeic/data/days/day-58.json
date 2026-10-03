@@ -51,7 +51,7 @@
   "ant": "",
   "tip": "take A into consideration(A를 고려하다), under consideration(검토 중인)이 대표 표현이며, considerate(사려 깊은)·considerable(상당한)과의 구분이 출제된다.",
   "q": {
-   "s": "The proposal to open a branch in Toronto is currently under -------.",
+   "s": "Ms. Ito's request to work from home two days a week is currently under -------.",
    "o": [
     "considerate",
     "considerable",
@@ -381,7 +381,7 @@
   "ant": "",
   "tip": "a variety of + 복수명사(다양한 ~)가 핵심 구조이며, 관사 a와 전치사 of 사이 명사 자리에 various를 넣는 오답이 자주 나온다.",
   "q": {
-   "s": "Participants can choose from a wide ------- of workshops on the second day.",
+   "s": "The hotel's gift shop sells a broad ------- of local crafts and souvenirs.",
    "o": [
     "various",
     "variety",
@@ -389,7 +389,7 @@
     "varied"
    ],
    "a": 1,
-   "k": "관사 a와 형용사 wide 뒤, 전치사 of 앞은 명사 자리이므로 variety가 정답이다. various와 varied는 형용사, vary는 동사다."
+   "k": "관사 a와 형용사 broad 뒤, 전치사 of 앞은 명사 자리이므로 variety가 정답이다. various와 varied는 형용사, vary는 동사다."
   }
  },
  {
@@ -645,7 +645,7 @@
   "ant": "",
   "tip": "'효과적인' 외에 effective immediately(즉시 시행), Effective + 날짜(~부터 시행)라는 뜻이 공지문에 자주 나온다.",
   "q": {
-   "s": "------- immediately, employees must wear their ID badges at all times while in the building.",
+   "s": "------- immediately, the employee cafeteria will close at 3 P.M. on Fridays.",
    "o": [
     "Effect",
     "Effective",
@@ -1194,7 +1194,7 @@
   "ant": "insignificant",
   "tip": "significant increase(상당한 증가)처럼 증감 명사를 수식하며, 부사 significantly는 increase significantly처럼 동사를 수식한다.",
   "q": {
-   "s": "The new scheduling software has had a ------- impact on productivity.",
+   "s": "The recent heat wave has had a ------- impact on electricity usage across the region.",
    "o": [
     "significant",
     "significantly",
@@ -1775,8 +1775,8 @@
    5,
    7
   ],
-  "ex": "There has been a *noticeable* improvement in customer satisfaction since March.",
-  "exKo": "3월 이후 고객 만족도가 눈에 띄게 개선되었다.",
+  "ex": "The effects of the new marketing campaign became *noticeable* within a few weeks.",
+  "exKo": "새 마케팅 캠페인의 효과는 몇 주 만에 눈에 띄게 나타났다.",
   "col": [
    {
     "e": "noticeable difference",

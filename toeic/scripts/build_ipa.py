@@ -113,10 +113,18 @@ def main():
             ipas = []
             for part in parts:
                 pr = d.get(part)
-                if not pr:
+                if pr:
+                    ipas.append(to_ipa(pick(pr, pos_of.get(w))))
+                    continue
+                # 사전에 없는 합성어는 두 단어로 나눠 본다 (whiteboard = white + board)
+                split = next(((part[:i], part[i:]) for i in range(3, len(part) - 2)
+                              if d.get(part[:i]) and d.get(part[i:])), None)
+                if not split:
                     ipas = None
                     break
-                ipas.append(to_ipa(pick(pr, pos_of.get(w))))
+                a_, b_ = (to_ipa(d[x][0]) for x in split)
+                # 합성어는 앞 단어에 주강세, 뒤 단어는 보조 강세
+                ipas.append(a_ + b_.replace("ˈ", "ˌ") if "ˈ" in a_ or "ˌ" in a_ else "ˈ" + a_ + b_.replace("ˈ", "ˌ"))
             if ipas:
                 res[w] = "/" + "-".join(ipas) + "/" if "-" in key else "/" + ipas[0] + "/"
             else:

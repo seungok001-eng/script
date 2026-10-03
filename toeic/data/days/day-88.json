@@ -4,7 +4,7 @@
   "pos": "n",
   "m": [
    "영향(력)",
-   "영향을 미치다"
+   "(v) 영향을 미치다"
   ],
   "tier": 1,
   "parts": [
@@ -750,8 +750,8 @@
    5,
    7
   ],
-  "ex": "The company offers a *generous* benefits package, including four weeks of paid vacation.",
-  "exKo": "그 회사는 4주간의 유급 휴가를 포함한 넉넉한 복리후생 제도를 제공한다.",
+  "ex": "New hires receive a *generous* benefits package, including four weeks of paid vacation.",
+  "exKo": "신입 사원은 4주간의 유급 휴가를 포함한 넉넉한 복리후생 혜택을 받는다.",
   "col": [
    {
     "e": "generous donation",
@@ -762,8 +762,8 @@
     "k": "큰 폭의 할인"
    },
    {
-    "e": "thanks to the generosity of",
-    "k": "~의 후원 덕분에"
+    "e": "generous salary",
+    "k": "넉넉한 급여"
    }
   ],
   "der": [
@@ -856,7 +856,7 @@
   "pos": "adj",
   "m": [
    "개인의, 개별의",
-   "개인"
+   "(n) 개인"
   ],
   "tier": 1,
   "parts": [
@@ -915,7 +915,7 @@
   "pos": "n",
   "m": [
    "한도, 제한",
-   "제한하다"
+   "(v) 제한하다"
   ],
   "tier": 1,
   "parts": [
@@ -1264,7 +1264,7 @@
     "avail"
    ],
    "a": 0,
-   "k": "'subject to + 명사' 구조에서 '이용 가능 여부에 따라'라는 뜻을 이루는 availability가 정답. available은 형용사, availably는 부사이며, avail은 'to no avail(보람 없이)' 같은 고정 표현으로만 쓴다."
+   "k": "'subject to + 명사' 구조에서 '이용 가능 여부에 따라'라는 뜻을 이루는 availability가 정답. available은 형용사, availably는 부사이고, avail은 동사(도움이 되다) 또는 to no avail(보람 없이) 같은 표현에 쓰여 이 자리에 맞지 않는다."
   }
  },
  {
@@ -2060,8 +2060,8 @@
    5,
    7
   ],
-  "ex": "The consultant was hired to identify the *underlying* causes of the drop in sales.",
-  "exKo": "그 컨설턴트는 매출 하락의 근본 원인을 찾기 위해 고용되었다.",
+  "ex": "A detailed review showed that poor communication was the *underlying* cause of the delays.",
+  "exKo": "면밀한 검토 결과, 소통 부족이 지연의 근본 원인이었던 것으로 드러났다.",
   "col": [
    {
     "e": "underlying cause",

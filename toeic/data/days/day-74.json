@@ -848,8 +848,8 @@
    3,
    4
   ],
-  "ex": "Passengers must keep their seat belts *fastened* while the aircraft is taxiing.",
-  "exKo": "승객들은 항공기가 지상에서 이동하는 동안 좌석벨트를 맨 상태로 있어야 한다.",
+  "ex": "Passengers should *fasten* their seat belts whenever the seat belt sign is illuminated.",
+  "exKo": "승객은 좌석벨트 표시등이 켜져 있을 때는 언제나 좌석벨트를 매야 한다.",
   "col": [
    {
     "e": "fasten a seat belt",
@@ -875,7 +875,7 @@
   "ant": "unfasten",
   "tip": "t를 발음하지 않아 [fǽsn]으로 읽는다. 'keep your seat belt fastened(좌석벨트를 맨 상태로 유지하다)'처럼 5형식 구조로 기내 방송(Part 4)에 자주 나온다.",
   "q": {
-   "s": "Passengers are asked to remain seated and ------- their seat belts until the aircraft comes to a complete stop.",
+   "s": "Passengers are asked to return to their seats and ------- their seat belts as the plane begins its descent.",
    "o": [
     "fast",
     "fastened",
@@ -883,7 +883,7 @@
     "fasten"
    ],
    "a": 3,
-   "k": "to remain과 and로 연결된 to부정사의 동사원형 자리이므로 fasten이 정답이다. fast는 형용사·부사, fastened는 과거(분사)형, fastening은 동명사·현재분사다."
+   "k": "to return과 and로 연결된 to부정사의 동사원형 자리이므로 fasten이 정답이다. fast는 형용사·부사, fastened는 과거(분사)형, fastening은 동명사·현재분사다."
   }
  },
  {
@@ -1053,7 +1053,7 @@
   "ant": "",
   "tip": "명사 앞에서만 쓰는 형용사로 'in-flight meal/service/Wi-Fi'처럼 쓰이며 onboard로 패러프레이징된다.",
   "q": {
-   "s": "Passengers on long-haul flights can now access free ------- Wi-Fi on all of our aircraft.",
+   "s": "Meals are included in the fare, but passengers must pay extra for ------- Wi-Fi on most routes.",
    "o": [
     "one-way",
     "round-trip",
@@ -1061,7 +1061,7 @@
     "carry-on"
    ],
    "a": 2,
-   "k": "비행 중에 이용하는 무료 '기내' 와이파이이므로 in-flight가 정답이다. one-way(편도의), round-trip(왕복의), carry-on(기내 휴대용의)은 Wi-Fi를 꾸미기에 의미가 맞지 않는다."
+   "k": "비행 중에 이용하는 '기내' 와이파이에 추가 요금을 내야 한다는 뜻이므로 in-flight가 정답이다. one-way(편도의), round-trip(왕복의), carry-on(기내 휴대용의)은 Wi-Fi를 꾸미기에 의미가 맞지 않는다."
   }
  },
  {
@@ -1159,7 +1159,7 @@
   "ant": "",
   "tip": "대사관(embassy)은 수도에 하나 있고 영사관(consulate)은 주요 도시에 있으며, 둘 다 비자, 여권 업무 지문에 나온다. 사람명사 consul(영사)과 구분한다.",
   "q": {
-   "s": "Travelers who lose their passports abroad should contact the nearest ------- of their home country.",
+   "s": "If you lose your passport while abroad, contact the nearest ------- of your home country for assistance.",
    "o": [
     "consultant",
     "consolation",
@@ -1250,7 +1250,7 @@
   "ant": "",
   "tip": "'cross the border(국경을 넘다)', 'border crossing(국경 검문소)'이 자주 쓰이며, 동사로는 'border on(~와 접하다)'처럼 쓴다. 발음이 같은 boarder(하숙인)와 혼동하지 말자.",
   "q": {
-   "s": "Travelers crossing the ------- by car must show their passports to the customs officer.",
+   "s": "Visitors crossing the ------- by car must show their passports to the customs officer.",
    "o": [
     "boarder",
     "broader",
@@ -1342,7 +1342,7 @@
   "ant": "peak season",
   "tip": "반대말은 peak season(성수기)이며 'off-season discount(비수기 할인)'처럼 형용사로도 쓴다. Part 7에서 low season으로 패러프레이징된다.",
   "q": {
-   "s": "Travelers who visit the resort during the ------- can save up to 40 percent on accommodations.",
+   "s": "Guests who visit the resort during the ------- can save up to 40 percent on accommodations.",
    "o": [
     "off-season",
     "peak season",

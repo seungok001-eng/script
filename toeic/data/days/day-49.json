@@ -150,8 +150,9 @@
    }
   ],
   "para": [
-   "launch",
-   "opening"
+   "swearing-in",
+   "opening",
+   "launch"
   ],
   "ant": "",
   "tip": "'취임(식)' 외에 '(시설·서비스의) 개시, 개통'이라는 뜻으로 쓰인다. 형용사 inaugural, 동사 inaugurate와의 품사 구분이 출제된다.",
@@ -276,8 +277,8 @@
    4,
    7
   ],
-  "ex": "The annual book fair will be held at the downtown *convention center* this year.",
-  "exKo": "올해 연례 도서전은 시내 컨벤션 센터에서 열린다.",
+  "ex": "The annual book fair is moving to the downtown *convention center* this year.",
+  "exKo": "연례 도서전은 올해 시내 컨벤션 센터로 장소를 옮긴다.",
   "col": [
    {
     "e": "at the convention center",
@@ -380,8 +381,8 @@
     "k": "~을 환송하다"
    },
    {
-    "e": "farewell send-off",
-    "k": "송별회"
+    "e": "a warm send-off",
+    "k": "따뜻한 환송"
    }
   ],
   "der": [
@@ -1884,7 +1885,7 @@
   "ant": "",
   "tip": "MC(master of ceremonies)를 소리 나는 대로 쓴 말로 host와 패러프레이즈된다. 동사로 emcee an event(행사 사회를 보다)라고도 쓴다.",
   "q": {
-   "s": "The ------- kept the audience entertained between performances and introduced each award presenter.",
+   "s": "The ------- kept the audience entertained between acts and introduced each performer.",
    "o": [
     "email",
     "empathy",
@@ -1892,7 +1893,7 @@
     "emcee"
    ],
    "a": 3,
-   "k": "공연 사이에 청중을 즐겁게 하고 시상자를 소개하는 사람은 사회자이므로 emcee가 정답이다. email(이메일), empathy(공감), embassy(대사관)는 행사를 진행할 수 없다."
+   "k": "공연 사이에 청중을 즐겁게 하고 출연자를 소개하는 사람은 사회자이므로 emcee가 정답이다. email(이메일), empathy(공감), embassy(대사관)는 행사를 진행할 수 없다."
   }
  },
  {

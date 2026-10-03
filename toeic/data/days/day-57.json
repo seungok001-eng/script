@@ -169,7 +169,7 @@
   "ant": "",
   "tip": "be expected to do(~할 것으로 예상되다)와 비교급 뒤 than expected(예상보다)가 Part 5 단골이다.",
   "q": {
-   "s": "Construction of the new terminal took longer than originally -------.",
+   "s": "Renovation of the hotel lobby took longer than originally -------.",
    "o": [
     "expecting",
     "expects",
@@ -224,7 +224,7 @@
   "ant": "",
   "tip": "명사 maintenance(유지 보수)와의 품사 구분이 단골이며, maintain that절은 '~라고 주장하다'라는 뜻이다.",
   "q": {
-   "s": "To ------- its competitive edge, the company invests heavily in research and development.",
+   "s": "To ------- its competitive edge, Norland Tech spends nearly a fifth of its revenue on research.",
    "o": [
     "maintenance",
     "maintained",
@@ -277,7 +277,7 @@
   "ant": "",
   "tip": "recommend that 주어 + (should) 동사원형 구조와 recommend -ing(to부정사 불가)가 Part 5에 자주 나온다.",
   "q": {
-   "s": "We ------- arriving at the venue at least 30 minutes before the performance begins.",
+   "s": "We ------- printing your boarding pass at home to avoid long lines at the airport.",
    "o": [
     "recommend",
     "want",
@@ -285,7 +285,7 @@
     "plan"
    ],
    "a": 0,
-   "k": "동명사 arriving을 목적어로 취할 수 있는 동사는 recommend이다. want, hope, plan은 to부정사를 목적어로 취하므로(want to arrive) 뒤에 -ing가 올 수 없다."
+   "k": "동명사 printing을 목적어로 취할 수 있는 동사는 recommend이다. want, hope, plan은 to부정사를 목적어로 취하므로(want to print) 뒤에 -ing가 올 수 없다."
   }
  },
  {
@@ -639,8 +639,8 @@
    5,
    7
   ],
-  "ex": "In her speech, the CEO *mentioned* plans to open three new stores.",
-  "exKo": "연설에서 CEO는 새 매장 세 곳을 열 계획을 언급했다.",
+  "ex": "In her speech, the CEO *mentioned* plans to open two overseas offices next year.",
+  "exKo": "연설에서 CEO는 내년에 해외 사무소 두 곳을 열 계획을 언급했다.",
   "col": [
    {
     "e": "as mentioned above",
@@ -727,8 +727,7 @@
    }
   ],
   "para": [
-   "favor",
-   "would rather"
+   "favor"
   ],
   "ant": "",
   "tip": "prefer A to B(B보다 A를 선호하다)에서 than이 아닌 to를 쓰며, 형용사 preferable to(~보다 나은)도 to와 짝을 이룬다.",
@@ -842,7 +841,7 @@
   "ant": "",
   "tip": "reach는 타동사로 전치사 없이 목적어를 취하며(reach to ×), reach an agreement(합의에 이르다), reach A at 번호(~번으로 A에게 연락하다)가 자주 나온다.",
   "q": {
-   "s": "The union and management have yet to ------- a final decision on the new wage proposal.",
+   "s": "The delivery truck is expected to ------- the warehouse by 3 P.M. this afternoon.",
    "o": [
     "arrive",
     "come",
@@ -850,7 +849,7 @@
     "go"
    ],
    "a": 2,
-   "k": "목적어 a final decision을 바로 취해 '결정에 이르다'라는 뜻이 되는 타동사 reach가 정답이다. arrive와 come은 자동사라 arrive at, come to처럼 전치사가 필요하고, go는 의미가 맞지 않는다."
+   "k": "목적어 the warehouse를 전치사 없이 바로 취해 '~에 도착하다'라는 뜻이 되는 타동사 reach가 정답이다. arrive, come, go는 자동사라 arrive at, come to, go to처럼 전치사가 필요하다."
   }
  },
  {
@@ -1595,7 +1594,7 @@
    {
     "w": "representative",
     "pos": "n",
-    "m": "직원, 대리인"
+    "m": "대표자, (고객 담당) 직원"
    },
    {
     "w": "representation",
@@ -1610,7 +1609,7 @@
   "ant": "",
   "tip": "'대표하다' 외에 represent a 10 percent increase(10% 증가에 해당하다)처럼 '나타내다'라는 뜻으로 쓰이며, 사람명사 representative(직원, 대리인)가 Part 5에 자주 나온다.",
   "q": {
-   "s": "The new contract ------- a 12 percent increase over last year's agreement.",
+   "s": "The new contract ------- a significant improvement over the terms offered last year.",
    "o": [
     "accounts",
     "consists",
@@ -1618,7 +1617,7 @@
     "amounts"
    ],
    "a": 2,
-   "k": "목적어 a 12 percent increase를 바로 취해 '~에 해당하다, ~을 나타내다'라는 뜻이 되는 타동사 represents가 정답이다. account는 account for, consist는 consist of, amount는 amount to처럼 전치사가 필요하다."
+   "k": "목적어 a significant improvement를 바로 취해 '~에 해당하다, ~을 나타내다'라는 뜻이 되는 타동사 represents가 정답이다. account는 account for, consist는 consist of, amount는 amount to처럼 전치사가 필요하다."
   }
  },
  {

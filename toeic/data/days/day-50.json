@@ -78,7 +78,7 @@
   "ant": "",
   "tip": "장학금·학자금 대출 등 학비 지원을 통칭하는 불가산명사로 apply for financial aid로 쓴다. 응급 처치를 뜻하는 first aid와 혼동하지 않도록 한다.",
   "q": {
-   "s": "Students who need help paying tuition should apply for ------- before the semester begins.",
+   "s": "Students who need help paying tuition should apply for ------- by the May 1 deadline.",
    "o": [
     "first aid",
     "financial aid",
@@ -283,11 +283,11 @@
    7
   ],
   "ex": "New hires face a steep *learning curve* during their first month with the software.",
-  "exKo": "신입 사원들은 입사 첫 달에 그 소프트웨어를 익히느라 상당히 고생한다.",
+  "exKo": "신입 사원들은 입사 첫 달에 그 소프트웨어를 익히느라 큰 어려움을 겪는다.",
   "col": [
    {
     "e": "steep learning curve",
-    "k": "익히기 어려움"
+    "k": "가파른 학습 곡선(익히기 어려움)"
    },
    {
     "e": "on a learning curve",
@@ -564,7 +564,7 @@
    "informative"
   ],
   "ant": "",
-  "tip": "educational background(학력), educational institution(교육 기관)처럼 명사 앞에 쓰인다. 같은 -al 형용사 instructional(교육용의)과 의미가 겹친다.",
+  "tip": "educational background(학력), educational institution(교육 기관)처럼 명사 앞에 쓰인다. '교육받은, 학식 있는'이라는 뜻으로 사람을 꾸미는 educated와 구분한다.",
   "q": {
    "s": "The software company produces ------- games that help children learn basic math.",
    "o": [
@@ -1730,9 +1730,7 @@
     "m": "졸업생"
    }
   ],
-  "para": [
-   "commencement"
-  ],
+  "para": [],
   "ant": "",
   "tip": "graduation ceremony(졸업식), upon graduation(졸업하자마자)이 빈출이다. 동사 graduate from(~을 졸업하다)과 품사를 구분한다.",
   "q": {
@@ -1875,7 +1873,7 @@
    {
     "w": "tutorial",
     "pos": "n",
-    "m": "개별 지도, 사용 지침 영상"
+    "m": "개별 지도 (시간), 사용법 안내"
    },
    {
     "w": "tutoring",
@@ -1898,7 +1896,7 @@
     "tuition"
    ],
    "a": 0,
-   "k": "hired(고용했다)의 대상은 사람이므로 tutor가 정답이다. tutorial(지침 영상), tutoring(개인 지도), tuition(수업료)은 고용할 수 있는 사람이 아니다."
+   "k": "hired(고용했다)의 대상은 사람이므로 tutor가 정답이다. tutorial(사용법 안내), tutoring(개인 지도), tuition(수업료)은 고용할 수 있는 사람이 아니다."
   }
  },
  {

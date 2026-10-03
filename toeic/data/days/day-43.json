@@ -216,7 +216,7 @@
   "pos": "n",
   "m": [
    "소유(권)",
-   "경영권"
+   "소유주(측)"
   ],
   "tier": 2,
   "parts": [
@@ -359,7 +359,7 @@
    "president"
   ],
   "ant": "",
-  "tip": "chief executive officer의 약자로, 첫소리가 모음 발음이라 관사는 a CEO로 쓴다. Part 7에서는 president, head of the company로 바꿔 표현되기도 한다.",
+  "tip": "chief executive officer의 약자로, 첫소리가 자음 [s]로 발음되므로 관사는 an이 아니라 a를 써서 a CEO라고 한다. Part 7에서는 president, head of the company로 바꿔 표현되기도 한다.",
   "q": {
    "s": "Ms. Nakamura was appointed ------- of Orbis Logistics after serving as its chief operating officer for five years.",
    "o": [
@@ -1151,7 +1151,7 @@
   ],
   "para": [
    "statement of purpose",
-   "core values"
+   "corporate mission"
   ],
   "ant": "",
   "tip": "회사의 목적과 가치를 밝힌 글로, Part 7 웹페이지·회사 소개 지문에 나온다. aim to, be committed to 같은 표현과 함께 쓰이는 경우가 많다.",
@@ -1775,7 +1775,7 @@
   ],
   "para": [
    "sell off",
-   "close down"
+   "convert to cash"
   ],
   "ant": "",
   "tip": "liquidate는 타동사로 assets, inventory, a company 같은 목적어를 취한다. 재고 정리 세일은 liquidation sale이라고 한다.",
@@ -1952,8 +1952,8 @@
     "k": "경쟁사를 능가하다"
    },
    {
-    "e": "outperform expectations",
-    "k": "기대 이상의 성과를 내다"
+    "e": "outperform the market",
+    "k": "시장 평균보다 나은 성과를 내다"
    }
   ],
   "der": [

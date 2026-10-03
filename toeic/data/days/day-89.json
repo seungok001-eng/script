@@ -303,8 +303,7 @@
   ],
   "para": [
    "instead",
-   "otherwise",
-   "or"
+   "as another option"
   ],
   "ant": "",
   "tip": "앞 문장과 다른 '선택지'를 제시하는 접속부사라 Part 6 문장 연결 문제에 나온다. 부사이므로 두 절을 직접 연결할 수 없고 마침표나 세미콜론 뒤에 쓴다.",
@@ -672,7 +671,7 @@
   "ant": "",
   "tip": "형용사·비교급 앞에서 '다소'라는 뜻으로 slightly, a little과 바꿔 쓸 수 있으며, 형태가 비슷한 some, something과 혼동시키는 문제가 나온다.",
   "q": {
-   "s": "The new version of the software is ------- faster than the previous one.",
+   "s": "The updated booking software runs ------- faster than the version we used last year.",
    "o": [
     "some",
     "something",
@@ -1160,8 +1159,8 @@
    5,
    7
   ],
-  "ex": "Before the vote, Mr. Adams *briefly* explained the main points of the proposal.",
-  "exKo": "투표에 앞서 Adams 씨는 제안서의 요점을 간단히 설명했다.",
+  "ex": "Before the vote, Mr. Adams *briefly* outlined the costs and benefits of the proposal.",
+  "exKo": "투표에 앞서 Adams 씨는 그 제안의 비용과 이점을 간단히 설명했다.",
   "col": [
    {
     "e": "briefly explain",
@@ -1190,7 +1189,6 @@
   ],
   "para": [
    "concisely",
-   "shortly",
    "quickly"
   ],
   "ant": "",
@@ -1299,8 +1297,8 @@
   "der": [
    {
     "w": "express",
-    "pos": "v",
-    "m": "표현하다"
+    "pos": "adj",
+    "m": "명시된, 분명한"
    },
    {
     "w": "expression",
@@ -1363,8 +1361,8 @@
    }
   ],
   "para": [
-   "carefully",
-   "tightly"
+   "in close cooperation",
+   "carefully"
   ],
   "ant": "",
   "tip": "'work closely with(~와 긴밀히 협력하다)', 'closely monitor(면밀히 감시하다)'가 빈출이다. close도 부사로 쓰이지만 '가까이'라는 물리적 거리만 뜻하고 '긴밀히, 면밀히'의 뜻은 closely만 가능하다.",

@@ -12,7 +12,7 @@
    7
   ],
   "ex": "The firm is hosting a *reunion* for former employees to celebrate its twentieth year.",
-  "exKo": "그 회사는 창립 20주년을 기념하기 위해 전직 직원들을 위한 재회 모임을 연다.",
+  "exKo": "그 회사는 창립 20주년을 기념해 전직 직원들이 다시 모이는 행사를 연다.",
   "col": [
    {
     "e": "class reunion",
@@ -192,15 +192,15 @@
   "ant": "",
   "tip": "'기조연설을 하다'는 deliver/give the keynote address로 쓰며, 연설자는 keynote speaker이다. address가 명사로 '연설'이라는 뜻임을 알아야 Part 7 문제가 풀린다.",
   "q": {
-   "s": "Following the ------- address by Professor Adler, attendees will break into small discussion groups.",
+   "s": "The ------- address, scheduled for 9 A.M., will be followed by a networking breakfast.",
    "o": [
     "headline",
     "milestone",
-    "landmark",
+    "turnout",
     "keynote"
    ],
    "a": 3,
-   "k": "address(연설)와 결합해 '기조연설'을 뜻하는 복합명사를 만드는 keynote가 정답이다. headline(표제), milestone(이정표), landmark(랜드마크)는 address와 어울리지 않는다."
+   "k": "address(연설)와 결합해 '기조연설'을 뜻하는 복합명사를 만드는 keynote가 정답이다. headline(표제), milestone(이정표), turnout(참가자 수)은 address와 결합해 행사의 연설을 나타내지 못한다."
   }
  },
  {
@@ -1136,7 +1136,7 @@
   "der": [],
   "para": [
    "prize drawing",
-   "lottery"
+   "drawing"
   ],
   "ant": "",
   "tip": "raffle ticket(추첨권)으로 당첨자를 뽑는 행사로, Part 4·7에서 prize drawing으로 패러프레이징된다. 동사로 raffle off(경품을 추첨으로 나눠 주다)도 쓴다.",
@@ -1293,7 +1293,7 @@
   "ant": "beneficiary",
   "tip": "도움을 '주는' 사람 benefactor와 '받는' 사람 beneficiary(수혜자)를 구분해야 한다. Part 7에서 donor, patron으로 패러프레이징된다.",
   "q": {
-   "s": "The new science wing was named after Dr. Elena Ruiz, the university's most generous -------.",
+   "s": "A plaque in the lobby thanks Dr. Elena Ruiz, the hospital's most generous -------, for funding the new wing.",
    "o": [
     "beneficiary",
     "beneficial",
@@ -1301,7 +1301,7 @@
     "benefactor"
    ],
    "a": 3,
-   "k": "generous(너그러운)의 수식을 받으며 건물에 이름이 붙을 만큼 기여한 사람은 '후원자'이므로 benefactor가 정답이다. beneficiary는 혜택을 '받는' 사람이라 문맥에 맞지 않는다."
+   "k": "generous(너그러운)의 수식을 받으며 새 병동 건립 자금을 댄 사람은 '후원자'이므로 benefactor가 정답이다. beneficiary는 혜택을 '받는' 사람이라 문맥에 맞지 않고, beneficial은 형용사, benefit은 사람을 가리키지 않는다."
   }
  },
  {
@@ -1359,7 +1359,7 @@
   "m": [
    "수익금, 수익"
   ],
-  "tier": 3,
+  "tier": 2,
   "parts": [
    4,
    7
@@ -1773,13 +1773,13 @@
    }
   ],
   "para": [
-   "committee",
-   "board"
+   "jury",
+   "committee"
   ],
   "ant": "",
   "tip": "a panel of experts/judges처럼 of와 함께 쓰는 집합명사이며 개별 구성원은 panelist이다. Part 1에서는 solar panel, glass panel처럼 '판'의 뜻으로 나온다.",
   "q": {
-   "s": "A ------- of financial experts will answer questions from the audience after the keynote speech.",
+   "s": "A ------- of financial experts will take questions from attendees following the morning presentations.",
    "o": [
     "panelist",
     "paneled",

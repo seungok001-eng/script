@@ -241,8 +241,8 @@
    5,
    7
   ],
-  "ex": "The *media* gave extensive coverage to the merger of the two airlines.",
-  "exKo": "언론은 두 항공사의 합병을 대대적으로 보도했다.",
+  "ex": "The *media* gave extensive coverage to the opening of the new convention center.",
+  "exKo": "언론은 새 컨벤션 센터의 개관을 대대적으로 보도했다.",
   "col": [
    {
     "e": "the news media",
@@ -387,8 +387,8 @@
    5,
    7
   ],
-  "ex": "Dr. Mehta's study was published in a leading medical *journal*.",
-  "exKo": "Mehta 박사의 연구는 한 유명 의학 저널에 실렸다.",
+  "ex": "Dr. Mehta's research on sleep and productivity appeared in a respected medical *journal*.",
+  "exKo": "수면과 생산성에 관한 Mehta 박사의 연구가 권위 있는 의학 저널에 실렸다.",
   "col": [
    {
     "e": "medical journal",
@@ -612,8 +612,8 @@
     "k": "표지 기사를 싣다"
    },
    {
-    "e": "feature in a cover story",
-    "k": "표지 기사로 다루다"
+    "e": "be featured in a cover story",
+    "k": "표지 기사로 다뤄지다"
    }
   ],
   "der": [],
@@ -660,7 +660,7 @@
   ],
   "der": [],
   "para": [
-   "headline news"
+   "page one"
   ],
   "ant": "",
   "tip": "on the front page처럼 전치사 on과 함께 쓰며, 하이픈을 넣은 front-page는 형용사로 front-page story(1면 기사)처럼 쓰인다.",
@@ -755,8 +755,7 @@
    }
   ],
   "para": [
-   "quote",
-   "estimate"
+   "quote"
   ],
   "ant": "",
   "tip": "'인용문' 외에 price quotation(가격 견적서)처럼 '견적'이라는 뜻으로도 자주 나오며, 동사 quote와의 품사 구분이 출제된다.",
@@ -784,7 +783,7 @@
    5,
    7
   ],
-  "ex": "The journalist confirmed the details with two reliable *sources* before publishing the story.",
+  "ex": "The journalist confirmed the details with two reliable *sources* before running the story.",
   "exKo": "그 기자는 기사를 내기 전에 믿을 만한 소식통 두 곳을 통해 세부 내용을 확인했다.",
   "col": [
    {
@@ -1059,7 +1058,7 @@
     "co-authorship"
    ],
    "a": 0,
-   "k": "주어 Mr. Lin 뒤에 문장의 동사가 필요하고 3인칭 단수이므로 과거형 co-authored가 정답이다. co-author는 수 일치가 맞지 않고, co-authoring은 단독으로 동사가 될 수 없으며, co-authorship은 명사다."
+   "k": "주어 Mr. Lin 뒤에 문장의 동사가 필요하므로 과거형 co-authored가 정답이다. co-author는 3인칭 단수 주어와 수가 맞지 않고, co-authoring은 단독으로 동사가 될 수 없으며, co-authorship은 명사다."
   }
  },
  {
@@ -1483,8 +1482,8 @@
   "w": "volume",
   "pos": "n",
   "m": [
-   "(책의) 권",
    "양, 분량",
+   "(책의) 권",
    "음량"
   ],
   "tier": 2,
@@ -1610,7 +1609,7 @@
    }
   ],
   "para": [
-   "interpret"
+   "render"
   ],
   "ant": "",
   "tip": "translate A into B 구조로 into와 짝을 이루며, translate into higher sales(매출 증가로 이어지다)처럼 '~로 이어지다'라는 뜻으로도 쓰인다.",
@@ -1709,8 +1708,7 @@
    }
   ],
   "para": [
-   "fee",
-   "commission"
+   "fee"
   ],
   "ant": "",
   "tip": "주로 복수형 royalties로 '인세, 저작권 사용료'를 뜻하며, 출판·음악 계약 지문에 나온다.",

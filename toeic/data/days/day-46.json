@@ -240,7 +240,7 @@
     "refusal"
    ],
    "a": 1,
-   "k": "다리를 지나 바로 있는 주유소에서 운전자들이 할 수 있는 일은 '연료를 넣는 것'이므로 refuel이 정답이다. refund(환불하다)와 refuse(거절하다)는 목적어가 필요하고 의미도 맞지 않으며, refusal은 명사다."
+   "k": "다리를 지나 바로 있는 주유소에서 운전자들이 할 수 있는 일은 '연료를 넣는 것'이므로 refuel이 정답이다. refund(환불하다)와 refuse(거절하다)는 주유소에서 운전자가 하는 일로 의미가 맞지 않으며, refusal은 명사다."
   }
  },
  {
@@ -554,7 +554,7 @@
   "ant": "",
   "tip": "Part 1 사진 묘사의 단골 단어로 is leaning on/against the railing(난간에 기대어 있다), is holding the railing(난간을 잡고 있다)으로 나온다.",
   "q": {
-   "s": "Please hold on to the ------- when going up and down the stairs.",
+   "s": "For safety reasons, passengers should not lean over the ------- on the ship's upper deck.",
    "o": [
     "railway",
     "railing",
@@ -562,7 +562,7 @@
     "raiding"
    ],
    "a": 1,
-   "k": "계단을 오르내릴 때 잡는 것은 '난간'이므로 railing이 정답이다. railway(철도), rating(등급), raiding(습격)은 계단에서 잡을 수 있는 것이 아니다."
+   "k": "배 위쪽 갑판에서 승객이 몸을 내밀어서는 안 되는 구조물은 '난간'이므로 railing이 정답이다. railway(철도), rating(등급), raiding(습격)은 갑판에서 몸을 기대거나 내밀 수 있는 대상이 아니다."
   }
  },
  {
@@ -981,7 +981,7 @@
   "ant": "",
   "tip": "길 안내(Part 2·3)에서 turn left at the traffic light처럼 전치사 at과 함께 쓰인다. Part 7에서는 traffic signal로 바꿔 표현된다.",
   "q": {
-   "s": "Following several accidents, the city will put a ------- at the busy junction near Lakeview Mall.",
+   "s": "Following several accidents, the city will install a ------- at the busy junction near Lakeview Mall.",
    "o": [
     "traffic jam",
     "traffic light",
@@ -989,7 +989,7 @@
     "traffic flow"
    ],
    "a": 1,
-   "k": "사고가 잇따른 뒤 시가 교차 지점에 설치하는(put) 것은 신호등이므로 traffic light가 정답이다. traffic jam(교통 체증), traffic report(교통 정보), traffic flow(교통 흐름)는 도로에 설치할 수 있는 대상이 아니다."
+   "k": "사고가 잇따른 뒤 시가 교차 지점에 설치하는(install) 것은 신호등이므로 traffic light가 정답이다. traffic jam(교통 체증), traffic report(교통 정보), traffic flow(교통 흐름)는 도로에 설치할 수 있는 대상이 아니다."
   }
  },
  {

@@ -106,7 +106,7 @@
   "ant": "",
   "tip": "'서비스' 외에 '근무'(20 years of service)와 '(교통편) 운행'(bus service)의 뜻이 Part 4·7에 나온다. out of service는 '고장 난, 운행하지 않는'이라는 뜻이다.",
   "q": {
-   "s": "Ferry ------- to the island will be suspended tomorrow because of strong winds.",
+   "s": "Ferry ------- between the mainland and Pine Island operates only on weekends during the winter.",
    "o": [
     "service",
     "serve",
@@ -114,7 +114,7 @@
     "served"
    ],
    "a": 0,
-   "k": "Ferry와 복합명사를 이루어 문장의 주어가 되는 명사 자리이며 '여객선 운행'이 중단된다는 의미이므로 service가 정답이다. server는 '종업원'이라 의미가 맞지 않고, serve와 served는 동사 형태다."
+   "k": "Ferry와 복합명사를 이루어 문장의 주어가 되는 명사 자리이며 '여객선 운행'이 겨울에는 주말에만 이루어진다는 의미이므로 service가 정답이다. server는 '종업원'이라 의미가 맞지 않고, serve와 served는 동사 형태다."
   }
  },
  {
@@ -205,7 +205,7 @@
   "ant": "",
   "tip": "상점·업체를 꾸준히 이용해 주는 것을 뜻하는 불가산명사로, 공지문의 Thank you for your patronage(애용해 주셔서 감사합니다)가 대표 표현이다. 사람명사 patron과의 구분이 출제된다.",
   "q": {
-   "s": "To thank customers for their continued -------, the bookstore is offering a 20 percent discount this week.",
+   "s": "Harlow Hardware mailed gift cards to its longtime customers in appreciation of their -------.",
    "o": [
     "patronage",
     "patron",
@@ -213,7 +213,7 @@
     "patronizing"
    ],
    "a": 0,
-   "k": "소유격 their와 형용사 continued 뒤 명사 자리이며 '지속적인 애용'이라는 의미이므로 patronage가 정답이다. patron은 가산명사 단수라 의미와 수가 맞지 않고, patronize는 동사, patronizing은 '거들먹거리는'이라는 형용사다."
+   "k": "소유격 their 뒤 명사 자리이며 오랜 고객들의 '애용'에 감사한다는 의미이므로 patronage가 정답이다. patron은 가산명사 단수라 their customers와 수가 맞지 않고 의미도 어색하며, patronize는 동사, patronizing은 '거들먹거리는'이라는 형용사다."
   }
  },
  {
@@ -369,7 +369,7 @@
   "ant": "expensive",
   "tip": "cheap과 달리 '품질은 괜찮은데 저렴한'이라는 긍정적 뉘앙스다. Part 7에서 affordable, reasonably priced로 바꿔 표현된다.",
   "q": {
-   "s": "The café near our office offers healthy and ------- lunch options for busy workers.",
+   "s": "The deli next to our building offers healthy and ------- lunch options for busy workers.",
    "o": [
     "inexpensive",
     "insistent",
@@ -608,8 +608,8 @@
    5,
    7
   ],
-  "ex": "The warehouse stores imported *goods* until they are sent to stores.",
-  "exKo": "그 창고는 수입 상품을 매장으로 보내기 전까지 보관한다.",
+  "ex": "The warehouse holds imported *goods* until they are shipped to retail outlets.",
+  "exKo": "그 창고는 수입 상품을 소매점으로 발송하기 전까지 보관한다.",
   "col": [
    {
     "e": "household goods",
@@ -687,7 +687,7 @@
   "ant": "",
   "tip": "Part 1 사진 묘사에서 계산대 장면(The cashier is scanning/bagging items)으로 자주 나온다. Part 3에서는 화자의 직업을 묻는 문제의 정답이 되기도 한다.",
   "q": {
-   "s": "Please show your membership card to the ------- before your items are scanned.",
+   "s": "If you need a gift receipt, please ask the ------- when you pay for your items.",
    "o": [
     "cash",
     "cashier",
@@ -695,7 +695,7 @@
     "cashless"
    ],
    "a": 1,
-   "k": "회원 카드를 보여 주는 대상이자 물건을 스캔하는 사람이 와야 하므로 cashier가 정답이다. cash는 '현금'이라 의미가 맞지 않고, cashed와 cashless는 명사가 아니다."
+   "k": "계산할 때 선물용 영수증을 요청하는 대상이 되는 '사람'이 와야 하므로 cashier가 정답이다. cash는 '현금'이라 의미가 맞지 않고, cashed와 cashless는 명사가 아니다."
   }
  },
  {
@@ -734,7 +734,7 @@
   "ant": "",
   "tip": "Part 1에서 Items have been placed on the counter(물건들이 조리대 위에 놓여 있다) 같은 묘사로 자주 나온다. over the counter(처방전 없이)라는 표현도 있다.",
   "q": {
-   "s": "The pharmacist placed the medicine on the ------- and explained how often to take it.",
+   "s": "The bank teller slid the loan forms across the ------- for Mr. Ito to sign.",
    "o": [
     "counter",
     "counsel",
@@ -742,7 +742,7 @@
     "country"
    ],
    "a": 0,
-   "k": "약사가 약을 올려놓고 복용법을 설명한 곳은 '카운터'이므로 counter가 정답이다. counsel(조언), council(의회), country(나라)는 의미가 맞지 않는다."
+   "k": "은행 직원이 서류를 밀어 건넨 곳은 '창구, 카운터'이므로 counter가 정답이다. counsel(조언), council(의회), country(나라)는 의미가 맞지 않는다."
   }
  },
  {
@@ -837,7 +837,7 @@
   "ant": "",
   "tip": "on display(진열된, 전시 중인)는 Part 1에서 매우 자주 나오는 표현이다. 동사로도 쓰여 be displayed(진열되어 있다)의 수동태 묘사가 빈출이다.",
   "q": {
-   "s": "Prototypes of the company's new electric scooters are currently on ------- in the lobby.",
+   "s": "Photographs from this year's contest will remain on ------- in the library's main hall until May 30.",
    "o": [
     "demand",
     "duty",
@@ -845,7 +845,7 @@
     "deposit"
    ],
    "a": 2,
-   "k": "be on display(전시 중이다) 표현으로 전동 스쿠터 시제품이 로비에 전시되어 있다는 의미이므로 display가 정답이다. on demand(요청 시), on duty(근무 중인), on deposit(예치된)은 시제품 전시와 어울리지 않는다."
+   "k": "remain on display(계속 전시되다) 표현으로 공모전 사진이 5월 30일까지 도서관 중앙 홀에 전시된다는 의미이므로 display가 정답이다. on demand(요청 시), on duty(근무 중인), on deposit(예치된)은 사진 전시와 어울리지 않는다."
   }
  },
  {
@@ -927,7 +927,7 @@
   "ant": "",
   "tip": "미국 영어에서 on sale은 주로 '할인 중인'이라는 뜻이고 '판매 중인'이라는 뜻도 있다. for sale(팔려고 내놓은)과 구분해야 한다.",
   "q": {
-   "s": "Tickets for the jazz festival will go ------- sale next Friday at noon.",
+   "s": "The bakery's seasonal pumpkin pies will go ------- sale at all of its locations next month.",
    "o": [
     "for",
     "in",
@@ -935,7 +935,7 @@
     "at"
    ],
    "a": 2,
-   "k": "go on sale(판매에 들어가다)라는 표현이므로 on이 정답이다. for sale은 be/put up for sale(팔려고 내놓다)처럼 쓰이며 go와 결합하지 않고, in, at은 sale과 이런 의미로 쓰이지 않는다."
+   "k": "go on sale(판매에 들어가다, 출시되다)라는 표현이므로 on이 정답이다. for sale은 be/put up for sale(팔려고 내놓다)처럼 쓰이며 go와 결합하지 않고, in, at은 sale과 이런 의미로 쓰이지 않는다."
   }
  },
  {
@@ -1074,9 +1074,7 @@
    }
   ],
   "der": [],
-  "para": [
-   "fit"
-  ],
+  "para": [],
   "ant": "",
   "tip": "목적어가 대명사이면 try it on 어순이 된다. Part 1에서 A woman is trying on a hat 같은 묘사로 자주 나오며, try out(시험해 보다)과 구분해야 한다.",
   "q": {
@@ -1258,8 +1256,8 @@
    4,
    7
   ],
-  "ex": "Under our *return policy*, unused items can be refunded within thirty days.",
-  "exKo": "저희 반품 규정에 따르면 사용하지 않은 물건은 30일 이내에 환불받을 수 있다.",
+  "ex": "Ms. Grant checked the shop's *return policy* before buying the expensive coat.",
+  "exKo": "Grant 씨는 비싼 코트를 사기 전에 그 가게의 반품 규정을 확인했다.",
   "col": [
    {
     "e": "strict return policy",
@@ -1338,7 +1336,7 @@
   "ant": "dissatisfied",
   "tip": "사람이 만족을 '느끼는' 경우에는 satisfied, 사물이 만족을 '주는' 경우에는 satisfying/satisfactory를 쓴다. be satisfied with의 전치사 with도 출제 포인트다.",
   "q": {
-   "s": "If you are not completely ------- with your purchase, you may return it for a full refund.",
+   "s": "Ms. Lopez was so ------- with the catering service that she booked it again for the year-end party.",
    "o": [
     "satisfying",
     "satisfaction",
@@ -1346,7 +1344,7 @@
     "satisfactorily"
    ],
    "a": 2,
-   "k": "주어 you(사람)가 만족을 느끼는 것이고 be satisfied with(~에 만족하다) 구문이므로 satisfied가 정답이다. satisfying은 만족을 주는 사물에 쓰고, satisfaction은 명사, satisfactorily는 부사다."
+   "k": "사람 주어 Ms. Lopez가 만족을 느낀 것이고 be satisfied with(~에 만족하다) 구문이므로 satisfied가 정답이다. satisfying은 만족을 주는 사물에 쓰고, satisfaction은 명사, satisfactorily는 부사다."
   }
  },
  {
@@ -1362,7 +1360,7 @@
    7
   ],
   "ex": "*Dissatisfied* customers are encouraged to fill out the online feedback form.",
-  "exKo": "불만이 있는 고객은 온라인 의견 양식을 작성할 것을 권장한다.",
+  "exKo": "불만이 있는 고객은 온라인 의견 양식을 작성하도록 권장된다.",
   "col": [
    {
     "e": "be dissatisfied with",
@@ -1417,7 +1415,7 @@
    7
   ],
   "ex": "Many families *stock up on* bottled water before the typhoon season begins.",
-  "exKo": "많은 가정이 태풍 철이 시작되기 전에 생수를 사재기해 둔다.",
+  "exKo": "많은 가정이 태풍 철이 시작되기 전에 생수를 많이 사 둔다.",
   "col": [
    {
     "e": "stock up on supplies",
@@ -1487,7 +1485,7 @@
   ],
   "para": [
    "too expensive",
-   "overcharged"
+   "pricey"
   ],
   "ant": "reasonably priced",
   "tip": "가격이 가치에 비해 지나치게 비싸다는 부정적인 평가로, Part 7 후기에서 too expensive로 바꿔 표현된다. 반대 개념은 reasonably priced, affordable이다.",
@@ -1515,8 +1513,8 @@
    4,
    7
   ],
-  "ex": "The airline sent each passenger a letter of *apology* and a travel voucher.",
-  "exKo": "그 항공사는 각 승객에게 사과 편지와 여행 상품권을 보냈다.",
+  "ex": "The software company issued a public *apology* for the three-hour service outage.",
+  "exKo": "그 소프트웨어 회사는 세 시간 동안의 서비스 장애에 대해 공개 사과했다.",
   "col": [
    {
     "e": "accept an apology",
@@ -1564,15 +1562,16 @@
   "w": "affordability",
   "pos": "n",
   "m": [
-   "(가격의) 적정성, 감당할 수 있는 비용"
+   "(가격의) 저렴함, 적정한 가격",
+   "구매 여력"
   ],
   "tier": 3,
   "parts": [
    5,
    7
   ],
-  "ex": "Housing *affordability* has become a major concern for young workers in the city.",
-  "exKo": "주택 가격 부담은 그 도시의 젊은 직장인들에게 주요 관심사가 되었다.",
+  "ex": "Many shoppers choose the store brand for its *affordability* and reliable quality.",
+  "exKo": "많은 쇼핑객이 저렴한 가격과 믿을 만한 품질 때문에 그 매장의 자체 브랜드 상품을 선택한다.",
   "col": [
    {
     "e": "affordability of",
@@ -1786,8 +1785,8 @@
    4,
    7
   ],
-  "ex": "Call our customer support *hotline* if you have any trouble installing the software.",
-  "exKo": "소프트웨어 설치에 문제가 있으면 저희 고객 지원 상담 전화로 연락하라.",
+  "ex": "Residents can report broken streetlights by calling the city's free *hotline*.",
+  "exKo": "주민들은 시의 무료 상담 전화로 고장 난 가로등을 신고할 수 있다.",
   "col": [
    {
     "e": "24-hour hotline",

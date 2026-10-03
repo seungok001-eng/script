@@ -150,7 +150,7 @@
   "pos": "v",
   "m": [
    "보호하다, 지키다",
-   "(n) 보호 장치"
+   "(명) 보호 장치"
   ],
   "tier": 2,
   "parts": [
@@ -281,8 +281,7 @@
   ],
   "para": [
    "attorney",
-   "lawyer",
-   "advice"
+   "lawyer"
   ],
   "ant": "",
   "tip": "council(위원회, 의회)과 발음이 같아 어휘 문제에서 혼동을 유도한다. 동사로는 '조언하다'(counsel clients)라는 뜻으로 쓰인다.",
@@ -864,7 +863,7 @@
   "ant": "",
   "tip": "복수형 damages는 '손해 배상금'이라는 별도 의미이며, 단수 불가산 damage(피해, 손상)와 구분한다. pay $~ in damages 형태로 자주 쓴다.",
   "q": {
-   "s": "The supplier was ordered to pay $20,000 in ------- to the restaurant for delivering spoiled food.",
+   "s": "The jury awarded the injured worker $2 million in ------- for lost wages and medical costs.",
    "o": [
     "damaged",
     "damage",
@@ -872,7 +871,7 @@
     "damaging"
    ],
    "a": 2,
-   "k": "법원 명령에 따라 지급하는 '손해 배상금'은 복수형 damages로 쓴다. 단수 damage는 '피해, 손상'이라 지급하는 금액이 될 수 없고, damaged, damaging은 형용사 형태다."
+   "k": "배심원단이 지급하라고 판정한 '손해 배상금'은 복수형 damages로 쓴다. 단수 damage는 '피해, 손상'이라 지급 금액을 나타낼 수 없고, damaged, damaging은 형용사 형태다."
   }
  },
  {
@@ -1113,7 +1112,7 @@
   ],
   "para": [
    "legal",
-   "mandatory"
+   "public"
   ],
   "ant": "",
   "tip": "명사 statute(법령)의 형용사형으로 statutory requirements(법적 요건), statutory holiday(법정 공휴일)처럼 명사 앞에 쓰인다.",
@@ -1176,7 +1175,7 @@
   "pos": "n",
   "m": [
    "(조직의) 헌장, 설립 허가서",
-   "전세, 전세 내다"
+   "(버스·비행기 등의) 전세"
   ],
   "tier": 2,
   "parts": [

@@ -197,7 +197,7 @@
   ],
   "para": [
    "off-site",
-   "distant"
+   "virtual"
   ],
   "ant": "",
   "tip": "명사 앞 형용사 remote(remote work)와 동사 뒤 부사 remotely(work remotely)를 구분하는 품사 문제가 나온다. remote location처럼 '멀리 떨어진'이라는 뜻도 있다.",
@@ -280,8 +280,8 @@
    6,
    7
   ],
-  "ex": "I have *enclosed* a copy of my résumé and two letters of reference.",
-  "exKo": "이력서 사본 한 부와 추천서 두 통을 동봉했다.",
+  "ex": "I have *enclosed* my résumé along with samples of my recent design work.",
+  "exKo": "이력서와 함께 최근 디자인 작업 샘플을 동봉했다.",
   "col": [
    {
     "e": "enclose a copy",
@@ -534,9 +534,9 @@
   ],
   "der": [],
   "para": [
+   "new arrival",
    "new hire",
-   "new employee",
-   "beginner"
+   "new employee"
   ],
   "ant": "veteran",
   "tip": "전치사 to와 함께 a newcomer to the company(회사에 새로 온 사람)처럼 쓴다. Part 3·4에서 new hire, new employee와 같은 뜻으로 바꿔 쓰인다.",
@@ -589,8 +589,7 @@
   ],
   "para": [
    "personnel",
-   "manpower",
-   "hiring"
+   "manpower"
   ],
   "ant": "",
   "tip": "staffing은 staffing shortage, staffing needs처럼 다른 명사 앞에서 수식어로 자주 쓰인다. 집합명사 staff(직원)와 혼동하지 않도록 한다.",
@@ -886,7 +885,7 @@
   "der": [],
   "para": [
    "select",
-   "narrow down"
+   "choose as a finalist"
   ],
   "ant": "",
   "tip": "명사(최종 후보 명단)와 동사(최종 후보로 선정하다)로 모두 쓰이며 be shortlisted for 형태가 자주 나온다. Part 7 채용 지문에서 '면접 대상자'를 가리킨다.",
@@ -1366,8 +1365,7 @@
   ],
   "para": [
    "challenging",
-   "bold",
-   "driven"
+   "bold"
   ],
   "ant": "modest",
   "tip": "사람(ambitious employee)뿐 아니라 계획·목표(ambitious target)에도 쓰여 '도전적인, 원대한'이라는 뜻이 된다. 명사 ambition과 품사 자리를 구분한다.",
@@ -1653,8 +1651,9 @@
   "w": "placement",
   "pos": "n",
   "m": [
-   "(일자리) 알선, 배치",
-   "배치"
+   "(취업) 알선",
+   "배치",
+   "(인턴십 등의) 자리"
   ],
   "tier": 3,
   "parts": [
@@ -2011,14 +2010,14 @@
   "ant": "",
   "tip": "Part 7에서 work remotely, work from home으로 패러프레이징된다. 사람 명사 telecommuter와 동명사 telecommuting도 함께 알아 둔다.",
   "q": {
-   "s": "Employees who ------- two days a week save both time and money on commuting.",
+   "s": "Employees who ------- three days a week typically save both time and money on commuting.",
    "o": [
     "telecommuter",
     "telecommuting",
     "telecommuted",
     "telecommute"
    ],
-   "k": "관계대명사 who 뒤 동사 자리이며 주절 동사 save와 같은 현재 시제가 자연스러우므로 telecommute가 정답. telecommuter는 명사, telecommuting은 동사 역할을 단독으로 할 수 없고, telecommuted는 과거 시제라 현재의 일반적 사실과 맞지 않는다.",
+   "k": "관계대명사 who 뒤 동사 자리이며 typically save로 현재의 일반적 사실을 말하므로 현재 시제 telecommute가 정답. telecommuter는 명사, telecommuting은 단독으로 동사 역할을 할 수 없고, telecommuted는 과거 시제라 일반적 사실을 나타내는 문맥과 맞지 않는다.",
    "a": 3
   }
  },

@@ -735,14 +735,14 @@
   "ant": "",
   "tip": "'~하는 한, ~하기만 하면'이라는 조건 접속사로 provided that과 바꿔 쓸 수 있다. 조건절이므로 미래의 일도 현재 시제로 쓴다.",
   "q": {
-   "s": "Visitors may park in the north lot as ------- as they display a valid parking permit.",
+   "s": "Visitors may park in the north lot as ------- as they leave by 6 P.M.",
    "o": [
     "well",
     "long",
     "much",
     "far"
    ],
-   "k": "'유효한 주차증을 부착하기만 하면'이라는 조건이 필요하므로 as long as를 만드는 long이 정답. as well as는 명사나 구를 연결하고, as much as와 as far as는 이 문맥의 조건 의미를 나타내지 못한다.",
+   "k": "'오후 6시까지 나가기만 하면'이라는 조건이 필요하므로 as long as를 만드는 long이 정답. as well as는 명사나 구를 연결하고, as much as와 as far as는 이 문맥의 조건 의미를 나타내지 못한다.",
    "a": 1
   }
  },
@@ -825,14 +825,14 @@
   "ant": "",
   "tip": "As a result는 뒤에 콤마와 절이 오는 접속부사구이고, as a result of는 뒤에 명사가 오는 전치사구다. 두 형태를 구분하는 문제가 나온다.",
   "q": {
-   "s": "Profits rose sharply in the third quarter. -------, the company will pay all employees a year-end bonus.",
+   "s": "A water pipe burst in the lobby overnight. -------, the building will be closed until Wednesday.",
    "o": [
     "Due to",
     "Because",
     "As a result",
     "Even though"
    ],
-   "k": "앞 문장의 결과를 이끄는 접속부사 자리이므로 As a result가 정답. Due to는 뒤에 명사가 와야 하는 전치사구이고, Because와 Even though는 접속사라 콤마만 두고 단독으로 쓸 수 없다.",
+   "k": "앞 문장(수도관 파열)의 결과를 이끄는 접속부사 자리이므로 As a result가 정답. Due to는 뒤에 명사가 와야 하는 전치사구이고, Because와 Even though는 접속사라 콤마만 두고 단독으로 쓸 수 없다.",
    "a": 2
   }
  },
