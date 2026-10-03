@@ -1,0 +1,2130 @@
+[
+ {
+  "w": "training",
+  "pos": "n",
+  "m": [
+   "교육",
+   "연수",
+   "훈련"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "All new employees must complete a two-week *training* program before starting work.",
+  "exKo": "모든 신입 직원은 업무를 시작하기 전에 2주간의 교육 프로그램을 이수해야 한다.",
+  "col": [
+   {
+    "e": "training session",
+    "k": "교육 시간"
+   },
+   {
+    "e": "on-the-job training",
+    "k": "현장 직무 교육"
+   },
+   {
+    "e": "undergo training",
+    "k": "교육을 받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "train",
+    "pos": "v",
+    "m": "교육하다, 훈련하다"
+   },
+   {
+    "w": "trainer",
+    "pos": "n",
+    "m": "교육 담당자, 트레이너"
+   },
+   {
+    "w": "trainee",
+    "pos": "n",
+    "m": "교육생"
+   }
+  ],
+  "para": [
+   "instruction",
+   "coaching"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 a training이 아니라 a training session/program으로 쓴다. 사람명사 trainer(교육하는 사람), trainee(교육받는 사람)와 구분한다.",
+  "q": {
+   "s": "New staff members will receive two days of ------- on the company's accounting software.",
+   "o": [
+    "trainer",
+    "training",
+    "trainee",
+    "trained"
+   ],
+   "a": 1,
+   "k": "전치사 of 뒤에서 '이틀간의 교육'을 뜻하는 불가산명사 training이 정답. trainer와 trainee는 사람명사라 '이틀간의 ~'라는 의미가 성립하지 않는다."
+  }
+ },
+ {
+  "w": "trainee",
+  "pos": "n",
+  "m": [
+   "교육생",
+   "수습 직원"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Each *trainee* will be paired with an experienced sales representative for the first month.",
+  "exKo": "각 교육생은 첫 한 달 동안 경험 많은 영업 사원과 짝을 이루게 된다.",
+  "col": [
+   {
+    "e": "management trainee",
+    "k": "관리직 수습사원"
+   },
+   {
+    "e": "trainee program",
+    "k": "수습 교육 프로그램"
+   }
+  ],
+  "der": [
+   {
+    "w": "train",
+    "pos": "v",
+    "m": "교육하다"
+   },
+   {
+    "w": "trainer",
+    "pos": "n",
+    "m": "교육 담당자"
+   },
+   {
+    "w": "training",
+    "pos": "n",
+    "m": "교육, 연수"
+   }
+  ],
+  "para": [
+   "apprentice",
+   "new hire",
+   "intern"
+  ],
+  "ant": "",
+  "tip": "-ee는 '~을 받는 사람', -er는 '~을 하는 사람'이다. trainee(교육생)와 trainer(교육 담당자)를 의미로 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Every ------- is required to shadow a senior technician for at least three weeks.",
+   "o": [
+    "training",
+    "trained",
+    "trainable",
+    "trainee"
+   ],
+   "a": 3,
+   "k": "Every 뒤 단수 가산명사 자리이며 선임 기술자를 따라다니며 배우는 '사람'이 필요하므로 trainee가 정답. training은 불가산명사로 사람이 아니다."
+  }
+ },
+ {
+  "w": "orientation",
+  "pos": "n",
+  "m": [
+   "오리엔테이션",
+   "(신입) 예비 교육"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The *orientation* for new hires begins at 9 A.M. in Conference Room B.",
+  "exKo": "신입 사원 오리엔테이션은 오전 9시 B 회의실에서 시작한다.",
+  "col": [
+   {
+    "e": "orientation session",
+    "k": "오리엔테이션 시간"
+   },
+   {
+    "e": "new employee orientation",
+    "k": "신입 사원 오리엔테이션"
+   },
+   {
+    "e": "attend orientation",
+    "k": "오리엔테이션에 참석하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "orient",
+    "pos": "v",
+    "m": "적응시키다, 방향을 맞추다"
+   }
+  ],
+  "para": [
+   "introductory session",
+   "induction"
+  ],
+  "ant": "",
+  "tip": "신입 사원의 첫날 일정 안내에 자주 나오며 Part 7에서 introductory session으로 바꿔 쓴다. 동사형은 orient(적응시키다)이다.",
+  "q": {
+   "s": "On their first day, new employees attend a half-day ------- that introduces company policies.",
+   "o": [
+    "orientation",
+    "occupation",
+    "observation",
+    "obligation"
+   ],
+   "a": 0,
+   "k": "입사 첫날 회사 방침을 소개하는 반일 행사이므로 orientation이 정답. occupation(직업), observation(관찰), obligation(의무)은 참석하는 행사가 아니다."
+  }
+ },
+ {
+  "w": "workshop",
+  "pos": "n",
+  "m": [
+   "워크숍",
+   "연수회",
+   "작업장"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The library offers a free *workshop* on writing effective cover letters every Saturday.",
+  "exKo": "그 도서관은 매주 토요일 효과적인 자기소개서 작성법에 관한 무료 워크숍을 연다.",
+  "col": [
+   {
+    "e": "workshop on",
+    "k": "~에 관한 워크숍"
+   },
+   {
+    "e": "hold a workshop",
+    "k": "워크숍을 열다"
+   },
+   {
+    "e": "lead a workshop",
+    "k": "워크숍을 진행하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "seminar",
+   "training session",
+   "class"
+  ],
+  "ant": "",
+  "tip": "'~에 관한 워크숍'은 workshop on으로 쓰며 conduct/lead/hold a workshop과 결합한다. Part 7에서 seminar, session으로 바꿔 쓴다.",
+  "q": {
+   "s": "Ms. Hughes will lead a three-hour ------- on time management for department managers.",
+   "o": [
+    "workforce",
+    "workload",
+    "workshop",
+    "worksheet"
+   ],
+   "a": 2,
+   "k": "'시간 관리에 관한 3시간짜리 연수'를 진행한다는 뜻이므로 workshop이 정답. workforce(인력), workload(업무량), worksheet(작업 계획표)는 3시간 동안 진행하는 행사가 아니다."
+  }
+ },
+ {
+  "w": "instructor",
+  "pos": "n",
+  "m": [
+   "강사",
+   "교사"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Our yoga *instructor* has more than ten years of teaching experience.",
+  "exKo": "우리 요가 강사는 10년이 넘는 강의 경력이 있다.",
+  "col": [
+   {
+    "e": "certified instructor",
+    "k": "공인 강사"
+   },
+   {
+    "e": "course instructor",
+    "k": "과목 강사"
+   },
+   {
+    "e": "driving instructor",
+    "k": "운전 강사"
+   }
+  ],
+  "der": [
+   {
+    "w": "instruct",
+    "pos": "v",
+    "m": "가르치다, 지시하다"
+   },
+   {
+    "w": "instruction",
+    "pos": "n",
+    "m": "설명, 지시, 교육"
+   },
+   {
+    "w": "instructional",
+    "pos": "adj",
+    "m": "교육용의"
+   }
+  ],
+  "para": [
+   "teacher",
+   "trainer",
+   "lecturer"
+  ],
+  "ant": "",
+  "tip": "사람명사 instructor와 instruction(지시, 설명)을 구분하는 품사 문제가 나오며, instructional video(교육용 영상) 같은 형용사형도 출제된다.",
+  "q": {
+   "s": "The ------- will distribute the course materials at the beginning of the first class.",
+   "o": [
+    "instruction",
+    "instruct",
+    "instructor",
+    "instructional"
+   ],
+   "a": 2,
+   "k": "The 뒤 주어 자리에서 자료를 '나눠 주는' 사람이 필요하므로 instructor가 정답. instruction은 지시·설명이라 행동의 주체가 될 수 없다."
+  }
+ },
+ {
+  "w": "lecture",
+  "pos": "n",
+  "m": [
+   "강의",
+   "강연"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Professor Lin will give a *lecture* on sustainable architecture at the city museum.",
+  "exKo": "린 교수는 시립 박물관에서 지속 가능한 건축에 관한 강연을 한다.",
+  "col": [
+   {
+    "e": "give a lecture",
+    "k": "강연하다"
+   },
+   {
+    "e": "lecture on",
+    "k": "~에 관한 강의"
+   },
+   {
+    "e": "lecture hall",
+    "k": "강의실, 강당"
+   }
+  ],
+  "der": [
+   {
+    "w": "lecturer",
+    "pos": "n",
+    "m": "강사, 강연자"
+   }
+  ],
+  "para": [
+   "talk",
+   "presentation",
+   "speech"
+  ],
+  "ant": "",
+  "tip": "'~에 관한 강연'은 lecture on이며 give/deliver a lecture로 쓴다. Part 7에서 talk, presentation으로 바꿔 표현된다.",
+  "q": {
+   "s": "The famous economist will deliver a ------- on market trends at the university next Monday.",
+   "o": [
+    "lecture",
+    "lecturer",
+    "lectured",
+    "lecturing"
+   ],
+   "a": 0,
+   "k": "deliver의 목적어이자 관사 a 뒤 명사 자리이므로 '강연'을 뜻하는 lecture가 정답. lecturer는 사람이라 deliver의 목적어로 맞지 않는다."
+  }
+ },
+ {
+  "w": "curriculum",
+  "pos": "n",
+  "m": [
+   "교육 과정",
+   "커리큘럼"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The training *curriculum* was revised to include more courses on data analysis.",
+  "exKo": "교육 과정은 데이터 분석 과목을 더 포함하도록 개편되었다.",
+  "col": [
+   {
+    "e": "revise the curriculum",
+    "k": "교육 과정을 개편하다"
+   },
+   {
+    "e": "core curriculum",
+    "k": "핵심 교육 과정"
+   }
+  ],
+  "der": [
+   {
+    "w": "curricular",
+    "pos": "adj",
+    "m": "교육 과정의"
+   }
+  ],
+  "para": [
+   "program",
+   "syllabus",
+   "course of study"
+  ],
+  "ant": "",
+  "tip": "복수형은 curricula 또는 curriculums이며 Part 7에서 program, course content로 바꿔 표현된다. extracurricular(교과 외의)도 함께 알아 둔다.",
+  "q": {
+   "s": "The academy updated its ------- to reflect recent changes in digital marketing.",
+   "o": [
+    "currency",
+    "curriculum",
+    "curiosity",
+    "circumstance"
+   ],
+   "a": 1,
+   "k": "학원이 디지털 마케팅의 최근 변화를 반영하도록 '교육 과정'을 개편했다는 문맥이므로 curriculum이 정답. currency(통화), curiosity(호기심), circumstance(상황)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "enroll",
+  "pos": "v",
+  "m": [
+   "등록하다",
+   "수강 신청하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Over 300 students *enrolled* in the online accounting course this semester.",
+  "exKo": "이번 학기에 300명이 넘는 학생이 온라인 회계 강좌에 등록했다.",
+  "col": [
+   {
+    "e": "enroll in",
+    "k": "~에 등록하다"
+   },
+   {
+    "e": "enroll for a course",
+    "k": "강좌에 등록하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "enrollment",
+    "pos": "n",
+    "m": "등록, 등록자 수"
+   }
+  ],
+  "para": [
+   "register",
+   "sign up"
+  ],
+  "ant": "",
+  "tip": "자동사로 enroll in + 과정명(enroll in a course) 형태로 쓰며 register for, sign up for와 바꿔 쓸 수 있다. 전치사 in과의 짝이 Part 5 포인트다.",
+  "q": {
+   "s": "Employees who ------- in the evening language program will have their tuition paid by the company.",
+   "o": [
+    "attend",
+    "complete",
+    "take",
+    "enroll"
+   ],
+   "a": 3,
+   "k": "빈칸 뒤 전치사 in과 짝을 이루는 자동사 enroll이 정답. attend, complete, take는 전치사 없이 목적어를 바로 취하는 타동사다."
+  }
+ },
+ {
+  "w": "enrollment",
+  "pos": "n",
+  "m": [
+   "등록",
+   "등록자 수"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Enrollment* in the leadership course is limited to 25 participants.",
+  "exKo": "리더십 강좌의 수강 인원은 25명으로 제한된다.",
+  "col": [
+   {
+    "e": "enrollment in",
+    "k": "~에의 등록"
+   },
+   {
+    "e": "open enrollment",
+    "k": "공개 등록 (기간)"
+   },
+   {
+    "e": "enrollment fee",
+    "k": "등록비"
+   }
+  ],
+  "der": [
+   {
+    "w": "enroll",
+    "pos": "v",
+    "m": "등록하다"
+   }
+  ],
+  "para": [
+   "registration"
+  ],
+  "ant": "",
+  "tip": "등록 행위 외에 '등록자 수'(Enrollment has increased.)라는 뜻이 있으며, 동사 enroll과의 품사 구분 문제가 Part 5에 나온다.",
+  "q": {
+   "s": "------- in the advanced Excel workshop has doubled since last year.",
+   "o": [
+    "Enrollment",
+    "Enroll",
+    "Enrolled",
+    "Enrolls"
+   ],
+   "a": 0,
+   "k": "문장의 주어인 명사 자리이므로 Enrollment가 정답. '등록자 수가 두 배가 되었다'는 뜻이다. Enroll, Enrolls는 동사, Enrolled는 과거형·과거분사다."
+  }
+ },
+ {
+  "w": "tuition",
+  "pos": "n",
+  "m": [
+   "수업료",
+   "학비"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The company will reimburse employees for *tuition* costs related to job-relevant courses.",
+  "exKo": "회사는 직무 관련 강좌의 수업료를 직원들에게 환급해 준다.",
+  "col": [
+   {
+    "e": "tuition fee",
+    "k": "수업료"
+   },
+   {
+    "e": "tuition reimbursement",
+    "k": "학비 지원(환급)"
+   },
+   {
+    "e": "pay tuition",
+    "k": "수업료를 내다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "fees",
+   "course fees"
+  ],
+  "ant": "",
+  "tip": "Part 7 복리후생 안내에 tuition reimbursement(학비 환급)로 자주 나오며 불가산명사로 쓴다.",
+  "q": {
+   "s": "Under the new policy, Delmont Corporation will cover half of the ------- for employees pursuing a degree.",
+   "o": [
+    "intuition",
+    "nutrition",
+    "tuition",
+    "tradition"
+   ],
+   "a": 2,
+   "k": "학위 과정을 밟는 직원의 '학비' 절반을 지원한다는 뜻이므로 tuition이 정답. intuition(직관), nutrition(영양), tradition(전통)은 비용이 아니다."
+  }
+ },
+ {
+  "w": "scholarship",
+  "pos": "n",
+  "m": [
+   "장학금"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The foundation awards a *scholarship* to five outstanding engineering students every year.",
+  "exKo": "그 재단은 매년 우수한 공학도 다섯 명에게 장학금을 수여한다.",
+  "col": [
+   {
+    "e": "award a scholarship",
+    "k": "장학금을 수여하다"
+   },
+   {
+    "e": "apply for a scholarship",
+    "k": "장학금을 신청하다"
+   },
+   {
+    "e": "full scholarship",
+    "k": "전액 장학금"
+   }
+  ],
+  "der": [
+   {
+    "w": "scholar",
+    "pos": "n",
+    "m": "학자"
+   },
+   {
+    "w": "scholarly",
+    "pos": "adj",
+    "m": "학문적인"
+   }
+  ],
+  "para": [
+   "grant",
+   "financial aid"
+  ],
+  "ant": "",
+  "tip": "award/receive a scholarship 형태로 쓰이며 Part 7에서 grant, financial aid로 바꿔 쓴다. -ly로 끝나는 scholarly는 형용사다.",
+  "q": {
+   "s": "Students with excellent grades may apply for a ------- that covers the full cost of tuition.",
+   "o": [
+    "partnership",
+    "membership",
+    "ownership",
+    "scholarship"
+   ],
+   "a": 3,
+   "k": "성적이 우수한 학생이 신청하며 '수업료 전액을 지원하는' 것은 장학금이므로 scholarship이 정답. partnership(제휴), membership(회원 자격), ownership(소유권)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "certification",
+  "pos": "n",
+  "m": [
+   "자격(증)",
+   "인증",
+   "증명"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Applicants must have a professional *certification* in project management.",
+  "exKo": "지원자는 프로젝트 관리 분야의 전문 자격증을 갖추고 있어야 한다.",
+  "col": [
+   {
+    "e": "obtain certification",
+    "k": "자격을 취득하다"
+   },
+   {
+    "e": "certification program",
+    "k": "자격 취득 과정"
+   },
+   {
+    "e": "safety certification",
+    "k": "안전 인증"
+   }
+  ],
+  "der": [
+   {
+    "w": "certify",
+    "pos": "v",
+    "m": "증명하다, 자격을 인정하다"
+   },
+   {
+    "w": "certificate",
+    "pos": "n",
+    "m": "증명서, 수료증"
+   },
+   {
+    "w": "certified",
+    "pos": "adj",
+    "m": "공인된"
+   }
+  ],
+  "para": [
+   "credential",
+   "qualification",
+   "license"
+  ],
+  "ant": "",
+  "tip": "certificate(증명서라는 문서)와 certification(인증, 자격 취득)을 구분하며, '자격을 취득하다'는 obtain/earn certification이다. 형용사 certified(공인된)도 빈출이다.",
+  "q": {
+   "s": "Technicians must earn ------- in electrical safety before working on the new production line.",
+   "o": [
+    "certify",
+    "certification",
+    "certified",
+    "certifies"
+   ],
+   "a": 1,
+   "k": "earn의 목적어인 명사 자리이므로 certification이 정답. certify, certifies는 동사이고 certified는 형용사·과거분사다."
+  }
+ },
+ {
+  "w": "credential",
+  "pos": "n",
+  "m": [
+   "자격",
+   "자격 증명(서)"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The hiring committee carefully reviewed each candidate's *credentials* and work history.",
+  "exKo": "채용 위원회는 각 지원자의 자격 요건과 경력을 꼼꼼히 검토했다.",
+  "col": [
+   {
+    "e": "academic credentials",
+    "k": "학력"
+   },
+   {
+    "e": "impressive credentials",
+    "k": "훌륭한 자격 요건"
+   }
+  ],
+  "der": [],
+  "para": [
+   "qualifications",
+   "background"
+  ],
+  "ant": "",
+  "tip": "주로 복수형 credentials로 '자격, 경력, 자격 증명'을 뜻하며 Part 7에서 qualifications로 패러프레이징된다.",
+  "q": {
+   "s": "Ms. Yamada's impressive ------- include a law degree and fifteen years of experience in corporate finance.",
+   "o": [
+    "creditors",
+    "credibility",
+    "creations",
+    "credentials"
+   ],
+   "a": 3,
+   "k": "법학 학위와 15년 경력을 '포함하는' 것은 자격 요건이므로 credentials가 정답. credibility(신뢰성)는 단수라 복수 동사 include와 맞지 않고, creditors(채권자), creations(창작물)는 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "skilled",
+  "pos": "adj",
+  "m": [
+   "숙련된",
+   "노련한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The factory is looking for *skilled* workers with experience in machine repair.",
+  "exKo": "그 공장은 기계 수리 경험이 있는 숙련공을 찾고 있다.",
+  "col": [
+   {
+    "e": "skilled in",
+    "k": "~에 능숙한"
+   },
+   {
+    "e": "highly skilled",
+    "k": "매우 숙련된"
+   },
+   {
+    "e": "skilled labor",
+    "k": "숙련 노동(력)"
+   }
+  ],
+  "der": [
+   {
+    "w": "skill",
+    "pos": "n",
+    "m": "기술, 솜씨"
+   },
+   {
+    "w": "skillful",
+    "pos": "adj",
+    "m": "능숙한"
+   },
+   {
+    "w": "skillfully",
+    "pos": "adv",
+    "m": "능숙하게"
+   }
+  ],
+  "para": [
+   "experienced",
+   "qualified",
+   "trained"
+  ],
+  "ant": "unskilled",
+  "tip": "skilled in/at(~에 능숙한)이라는 전치사 짝과 highly skilled라는 수식 표현이 빈출이며, 명사 skill과의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "The company plans to hire more highly ------- engineers to support its expansion overseas.",
+   "o": [
+    "skill",
+    "skilled",
+    "skills",
+    "skillfully"
+   ],
+   "a": 1,
+   "k": "부사 highly의 수식을 받으며 명사 engineers를 꾸미는 형용사 자리이므로 skilled가 정답. skill, skills는 명사, skillfully는 부사다."
+  }
+ },
+ {
+  "w": "professional development",
+  "pos": "n",
+  "m": [
+   "직무 능력 개발",
+   "전문성 개발"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Employees can use up to $1,000 a year for *professional development* activities.",
+  "exKo": "직원들은 직무 능력 개발 활동에 연간 최대 1,000달러를 쓸 수 있다.",
+  "col": [
+   {
+    "e": "professional development program",
+    "k": "직무 능력 개발 프로그램"
+   },
+   {
+    "e": "opportunities for professional development",
+    "k": "직무 능력 개발 기회"
+   }
+  ],
+  "der": [],
+  "para": [
+   "career development",
+   "skills training"
+  ],
+  "ant": "",
+  "tip": "Part 7 복리후생·채용 공고에서 '역량 개발 기회'로 나오며 career development, continuing education으로 바꿔 표현된다.",
+  "q": {
+   "s": "The company offers a generous annual budget for -------, including conferences and online courses.",
+   "o": [
+    "professional appearance",
+    "professional reference",
+    "professional development",
+    "professional opinion"
+   ],
+   "a": 2,
+   "k": "회의 참석과 온라인 강좌를 포함하는 예산 항목은 '직무 능력 개발'이므로 professional development가 정답. 외모(appearance), 추천인(reference), 전문가 의견(opinion)은 회의와 강좌를 포함할 수 없다."
+  }
+ },
+ {
+  "w": "mentor",
+  "pos": "n",
+  "m": [
+   "멘토",
+   "조언자"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Each new associate is assigned a *mentor* who provides guidance during the first year.",
+  "exKo": "신입 직원마다 첫해 동안 지도를 해 줄 멘토가 배정된다.",
+  "col": [
+   {
+    "e": "serve as a mentor",
+    "k": "멘토 역할을 하다"
+   },
+   {
+    "e": "mentor program",
+    "k": "멘토 제도"
+   }
+  ],
+  "der": [
+   {
+    "w": "mentoring",
+    "pos": "n",
+    "m": "멘토링, 지도"
+   },
+   {
+    "w": "mentee",
+    "pos": "n",
+    "m": "멘티, 지도받는 사람"
+   }
+  ],
+  "para": [
+   "adviser",
+   "coach",
+   "guide"
+  ],
+  "ant": "",
+  "tip": "명사(멘토)와 동사(멘토 역할을 하다)로 모두 쓰이며 지도받는 사람은 mentee이다. Part 7에서 adviser, coach로 바꿔 쓴다.",
+  "q": {
+   "s": "Mr. Patel, who has worked at the firm for 20 years, will serve as a ------- to the junior analysts.",
+   "o": [
+    "mentor",
+    "mentee",
+    "mention",
+    "memory"
+   ],
+   "a": 0,
+   "k": "20년 경력자가 후배 분석가들에게 '지도해 주는 사람'이 되는 것이므로 mentor가 정답. mentee는 지도를 받는 쪽이라 문맥과 반대다."
+  }
+ },
+ {
+  "w": "tutorial",
+  "pos": "n",
+  "m": [
+   "사용법 안내",
+   "튜토리얼",
+   "개별 지도"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Watch the online *tutorial* to learn how to use the new scheduling software.",
+  "exKo": "새 일정 관리 소프트웨어의 사용법을 익히려면 온라인 안내 영상을 시청하기 바란다.",
+  "col": [
+   {
+    "e": "online tutorial",
+    "k": "온라인 사용 안내"
+   },
+   {
+    "e": "video tutorial",
+    "k": "안내 영상"
+   },
+   {
+    "e": "step-by-step tutorial",
+    "k": "단계별 안내"
+   }
+  ],
+  "der": [
+   {
+    "w": "tutor",
+    "pos": "n",
+    "m": "개인 교사"
+   }
+  ],
+  "para": [
+   "guide",
+   "instructional video",
+   "lesson"
+  ],
+  "ant": "",
+  "tip": "IT·소프트웨어 맥락에서 '사용법 안내(영상)'로 자주 나오며 Part 7에서 instructional video, guide로 바꿔 쓴다.",
+  "q": {
+   "s": "A short video ------- explaining how to submit expense reports is available on the company intranet.",
+   "o": [
+    "tutor",
+    "tutorial",
+    "tuition",
+    "territory"
+   ],
+   "a": 1,
+   "k": "경비 보고서 제출 방법을 '설명하는' 짧은 영상 자료이므로 tutorial이 정답. tutor는 사람, tuition은 수업료, territory는 영역이다."
+  }
+ },
+ {
+  "w": "hands-on",
+  "pos": "adj",
+  "m": [
+   "실습의",
+   "직접 해 보는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The course offers *hands-on* experience with the latest medical equipment.",
+  "exKo": "그 과정은 최신 의료 장비를 직접 다뤄 보는 실습 경험을 제공한다.",
+  "col": [
+   {
+    "e": "hands-on training",
+    "k": "실습 교육"
+   },
+   {
+    "e": "hands-on experience",
+    "k": "실무 경험"
+   }
+  ],
+  "der": [],
+  "para": [
+   "practical",
+   "firsthand"
+  ],
+  "ant": "hands-off",
+  "tip": "명사 앞에서 hands-on training/experience처럼 쓰는 형용사이며 Part 7에서 practical, firsthand로 바꿔 쓴다.",
+  "q": {
+   "s": "Participants will gain ------- experience by operating the machines themselves under supervision.",
+   "o": [
+    "hands-on",
+    "handmade",
+    "handful",
+    "handwritten"
+   ],
+   "a": 0,
+   "k": "'직접 기계를 작동해 보며' 얻는 경험이므로 hands-on이 정답. handmade(수제의), handwritten(손으로 쓴)은 경험을 수식할 수 없고, handful(한 줌)은 명사다."
+  }
+ },
+ {
+  "w": "practical",
+  "pos": "adj",
+  "m": [
+   "실용적인",
+   "실제적인",
+   "현실적인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The workshop provides *practical* advice on managing a small business.",
+  "exKo": "그 워크숍은 소규모 사업체 운영에 관한 실용적인 조언을 제공한다.",
+  "col": [
+   {
+    "e": "practical experience",
+    "k": "실무 경험"
+   },
+   {
+    "e": "practical skills",
+    "k": "실용적인 기술"
+   },
+   {
+    "e": "practical solution",
+    "k": "현실적인 해결책"
+   }
+  ],
+  "der": [
+   {
+    "w": "practice",
+    "pos": "n",
+    "m": "실행, 관행, 연습"
+   },
+   {
+    "w": "practically",
+    "pos": "adv",
+    "m": "사실상, 실질적으로"
+   },
+   {
+    "w": "practicality",
+    "pos": "n",
+    "m": "실용성"
+   }
+  ],
+  "para": [
+   "useful",
+   "realistic",
+   "hands-on"
+  ],
+  "ant": "impractical",
+  "tip": "부사 practically는 '실용적으로' 외에 '사실상, 거의'의 뜻도 있다. 형용사 practical과 명사 practice의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "Although the proposal is creative, it is not ------- given our limited budget.",
+   "o": [
+    "practically",
+    "practice",
+    "practitioner",
+    "practical"
+   ],
+   "a": 3,
+   "k": "be동사 is not 뒤 보어 자리이므로 형용사 practical이 정답. '창의적이지만 한정된 예산을 고려하면 현실적이지 않다'는 뜻이다. practice, practitioner는 명사라 주어 it(제안)과 동격이 될 수 없다."
+  }
+ },
+ {
+  "w": "module",
+  "pos": "n",
+  "m": [
+   "(교육 과정의) 단원",
+   "모듈"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The online course consists of six *modules*, each followed by a short quiz.",
+  "exKo": "그 온라인 강좌는 여섯 개 단원으로 구성되며 각 단원 뒤에 짧은 퀴즈가 있다.",
+  "col": [
+   {
+    "e": "training module",
+    "k": "교육 단원"
+   },
+   {
+    "e": "complete a module",
+    "k": "단원을 이수하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "modular",
+    "pos": "adj",
+    "m": "모듈식의, 조립식의"
+   }
+  ],
+  "para": [
+   "unit",
+   "section"
+  ],
+  "ant": "",
+  "tip": "온라인 교육 공지에서 '단원, 과목 단위'로 쓰이며 Part 7에서 unit, section으로 바꿔 쓴다. 형용사 modular(조립식의)도 함께 알아 둔다.",
+  "q": {
+   "s": "Employees must complete all four training ------- before the end of the quarter.",
+   "o": [
+    "moderators",
+    "molecules",
+    "modules",
+    "monuments"
+   ],
+   "a": 2,
+   "k": "직원들이 분기 말까지 '이수해야 하는' 교육 단위이므로 modules가 정답. moderators(사회자), molecules(분자), monuments(기념물)는 이수할 수 있는 대상이 아니다."
+  }
+ },
+ {
+  "w": "assessment",
+  "pos": "n",
+  "m": [
+   "평가",
+   "판단"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Managers will conduct a performance *assessment* for each team member in December.",
+  "exKo": "관리자들은 12월에 팀원 각자에 대한 성과 평가를 실시한다.",
+  "col": [
+   {
+    "e": "performance assessment",
+    "k": "성과 평가"
+   },
+   {
+    "e": "risk assessment",
+    "k": "위험 평가"
+   },
+   {
+    "e": "conduct an assessment",
+    "k": "평가를 실시하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "assess",
+    "pos": "v",
+    "m": "평가하다"
+   },
+   {
+    "w": "assessor",
+    "pos": "n",
+    "m": "평가자"
+   }
+  ],
+  "para": [
+   "evaluation",
+   "appraisal",
+   "review"
+  ],
+  "ant": "",
+  "tip": "동사 assess와 명사 assessment의 품사 구분, conduct/carry out an assessment라는 결합이 빈출이며 Part 7에서 evaluation으로 바꿔 쓴다.",
+  "q": {
+   "s": "An independent consultant will carry out an ------- of the company's safety procedures.",
+   "o": [
+    "assess",
+    "assessed",
+    "assessment",
+    "assessing"
+   ],
+   "a": 2,
+   "k": "관사 an 뒤 carry out의 목적어인 명사 자리이므로 assessment가 정답. assess는 동사, assessed와 assessing은 분사다."
+  }
+ },
+ {
+  "w": "mandatory",
+  "pos": "adj",
+  "m": [
+   "의무적인",
+   "필수의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Attendance at the safety training session is *mandatory* for all warehouse staff.",
+  "exKo": "모든 창고 직원은 안전 교육에 의무적으로 참석해야 한다.",
+  "col": [
+   {
+    "e": "mandatory for",
+    "k": "~에게 의무적인"
+   },
+   {
+    "e": "mandatory training",
+    "k": "필수 교육"
+   }
+  ],
+  "der": [
+   {
+    "w": "mandate",
+    "pos": "n",
+    "m": "권한, 지시"
+   }
+  ],
+  "para": [
+   "required",
+   "compulsory",
+   "obligatory"
+  ],
+  "ant": "optional",
+  "tip": "be mandatory for + 사람 구조로 쓰이며 required, compulsory와 같은 뜻이다. 반의어 optional, voluntary와 문맥으로 구분하는 어휘 문제가 나온다.",
+  "q": {
+   "s": "Attendance at Friday's fire safety briefing is ------- for all employees, so no exceptions will be made.",
+   "o": [
+    "optional",
+    "voluntary",
+    "flexible",
+    "mandatory"
+   ],
+   "a": 3,
+   "k": "'예외는 없다(no exceptions)'는 내용으로 보아 참석이 의무라는 뜻이므로 mandatory가 정답. optional, voluntary, flexible은 예외가 없다는 말과 모순된다."
+  }
+ },
+ {
+  "w": "optional",
+  "pos": "adj",
+  "m": [
+   "선택적인",
+   "선택 사항인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The afternoon city tour is *optional* and requires an additional fee.",
+  "exKo": "오후 시내 관광은 선택 사항이며 추가 요금이 든다.",
+  "col": [
+   {
+    "e": "optional for",
+    "k": "~에게 선택 사항인"
+   },
+   {
+    "e": "optional but recommended",
+    "k": "선택 사항이지만 권장되는"
+   }
+  ],
+  "der": [
+   {
+    "w": "option",
+    "pos": "n",
+    "m": "선택(권)"
+   },
+   {
+    "w": "optionally",
+    "pos": "adv",
+    "m": "선택적으로"
+   }
+  ],
+  "para": [
+   "elective",
+   "voluntary",
+   "not required"
+  ],
+  "ant": "mandatory",
+  "tip": "mandatory, required의 반의어이며, 'optional but recommended'(선택이지만 권장)처럼 Part 7 안내문에 나온다.",
+  "q": {
+   "s": "Attending the networking dinner is -------, but participants are encouraged to join if their schedules allow.",
+   "o": [
+    "optional",
+    "mandatory",
+    "required",
+    "compulsory"
+   ],
+   "a": 0,
+   "k": "'일정이 허락하면 참석하도록 권장한다'는 but 이하 내용과 어울리려면 참석이 선택 사항이어야 하므로 optional이 정답. 나머지는 모두 '의무적인'이라는 뜻이다."
+  }
+ },
+ {
+  "w": "voluntary",
+  "pos": "adj",
+  "m": [
+   "자발적인",
+   "자원봉사의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Participation in the employee wellness survey is completely *voluntary*.",
+  "exKo": "직원 건강 설문 조사 참여는 전적으로 자율이다.",
+  "col": [
+   {
+    "e": "on a voluntary basis",
+    "k": "자발적으로"
+   },
+   {
+    "e": "voluntary participation",
+    "k": "자발적 참여"
+   }
+  ],
+  "der": [
+   {
+    "w": "volunteer",
+    "pos": "n",
+    "m": "자원봉사자"
+   },
+   {
+    "w": "voluntarily",
+    "pos": "adv",
+    "m": "자발적으로"
+   }
+  ],
+  "para": [
+   "optional"
+  ],
+  "ant": "compulsory",
+  "tip": "on a voluntary basis(자발적으로)가 빈출 표현이며, 부사 voluntarily와 사람명사 volunteer와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Participation in the survey is entirely -------, and employees may skip any question they prefer not to answer.",
+   "o": [
+    "voluntarily",
+    "voluntary",
+    "volunteer",
+    "volunteered"
+   ],
+   "a": 1,
+   "k": "be동사 is 뒤 부사 entirely의 수식을 받는 형용사 보어 자리이므로 voluntary가 정답. voluntarily는 부사, volunteer는 명사·동사라 보어 자리에 맞지 않는다."
+  }
+ },
+ {
+  "w": "beginner",
+  "pos": "n",
+  "m": [
+   "초보자",
+   "초심자"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "This photography class is designed for *beginners* with no prior experience.",
+  "exKo": "이 사진 강좌는 사전 경험이 없는 초보자를 위해 마련되었다.",
+  "col": [
+   {
+    "e": "for beginners",
+    "k": "초보자용"
+   },
+   {
+    "e": "beginner level",
+    "k": "초급"
+   },
+   {
+    "e": "complete beginner",
+    "k": "완전 초보"
+   }
+  ],
+  "der": [
+   {
+    "w": "begin",
+    "pos": "v",
+    "m": "시작하다"
+   },
+   {
+    "w": "beginning",
+    "pos": "n",
+    "m": "시작, 초기"
+   }
+  ],
+  "para": [
+   "novice",
+   "newcomer",
+   "first-timer"
+  ],
+  "ant": "expert",
+  "tip": "for beginners(초보자용)로 자주 쓰이며 Part 7에서 novice, those with no experience로 바꿔 표현된다.",
+  "q": {
+   "s": "The introductory coding course is ideal for ------- who have never written a computer program.",
+   "o": [
+    "beginners",
+    "beginnings",
+    "begins",
+    "began"
+   ],
+   "a": 0,
+   "k": "관계대명사 who가 받는 '사람' 명사 자리이므로 beginners가 정답. beginnings는 '시작, 초기'라는 사물명사이고 begins, began은 동사다."
+  }
+ },
+ {
+  "w": "intermediate",
+  "pos": "adj",
+  "m": [
+   "중급의",
+   "중간의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Students at the *intermediate* level will practice writing business emails.",
+  "exKo": "중급 수준의 학생들은 업무용 이메일 작성을 연습한다.",
+  "col": [
+   {
+    "e": "intermediate level",
+    "k": "중급"
+   },
+   {
+    "e": "intermediate course",
+    "k": "중급 과정"
+   }
+  ],
+  "der": [],
+  "para": [
+   "mid-level"
+  ],
+  "ant": "",
+  "tip": "초급(beginner)-중급(intermediate)-고급(advanced)의 수준 표현으로 Part 7 강좌 안내에 자주 나온다. intermediate-level course처럼 명사 앞에 쓴다.",
+  "q": {
+   "s": "Those who have completed the beginner course may move on to the ------- class next term.",
+   "o": [
+    "immediate",
+    "intermediate",
+    "intimate",
+    "interested"
+   ],
+   "a": 1,
+   "k": "초급 과정을 마친 사람이 다음 학기에 올라가는 '중급' 반이므로 intermediate가 정답. immediate(즉각적인), intimate(친밀한), interested(관심 있는)는 수준을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "knowledgeable",
+  "pos": "adj",
+  "m": [
+   "박식한",
+   "잘 아는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our sales associates are *knowledgeable* about every product we carry.",
+  "exKo": "우리 판매 직원들은 취급하는 모든 제품에 대해 잘 알고 있다.",
+  "col": [
+   {
+    "e": "knowledgeable about",
+    "k": "~에 대해 잘 아는"
+   },
+   {
+    "e": "highly knowledgeable",
+    "k": "매우 박식한"
+   }
+  ],
+  "der": [
+   {
+    "w": "knowledge",
+    "pos": "n",
+    "m": "지식"
+   },
+   {
+    "w": "knowledgeably",
+    "pos": "adv",
+    "m": "박식하게"
+   }
+  ],
+  "para": [
+   "well-informed",
+   "experienced",
+   "expert"
+  ],
+  "ant": "",
+  "tip": "knowledgeable about/in(~에 정통한)의 전치사 짝이 빈출이며 명사 knowledge와의 품사 구분 문제로 나온다.",
+  "q": {
+   "s": "The tour guides at the museum are extremely ------- about the history of the region.",
+   "o": [
+    "knowledge",
+    "knowingly",
+    "knowledgeable",
+    "known"
+   ],
+   "a": 2,
+   "k": "be동사 뒤 부사 extremely의 수식을 받는 형용사 보어 자리이며 about과 어울리는 knowledgeable이 정답. known은 '알려진'이라는 수동의 뜻이라 가이드를 설명하기에 맞지 않는다."
+  }
+ },
+ {
+  "w": "competent",
+  "pos": "adj",
+  "m": [
+   "유능한",
+   "능숙한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We need a *competent* accountant who can manage the firm's finances independently.",
+  "exKo": "우리는 회사 재무를 독자적으로 관리할 수 있는 유능한 회계사가 필요하다.",
+  "col": [
+   {
+    "e": "competent in",
+    "k": "~에 능숙한"
+   },
+   {
+    "e": "highly competent",
+    "k": "매우 유능한"
+   }
+  ],
+  "der": [
+   {
+    "w": "competence",
+    "pos": "n",
+    "m": "능력, 역량"
+   },
+   {
+    "w": "competently",
+    "pos": "adv",
+    "m": "유능하게"
+   }
+  ],
+  "para": [
+   "capable",
+   "skilled",
+   "qualified"
+  ],
+  "ant": "incompetent",
+  "tip": "competent(유능한)는 compete(경쟁하다), competitive(경쟁력 있는)와 철자가 비슷해 혼동을 유도한다. competent in/at의 짝도 기억한다.",
+  "q": {
+   "s": "Ms. Ruiz proved to be a highly ------- manager who consistently met her team's deadlines.",
+   "o": [
+    "competence",
+    "competently",
+    "competition",
+    "competent"
+   ],
+   "a": 3,
+   "k": "부사 highly의 수식을 받고 명사 manager를 꾸미는 형용사 자리이므로 competent가 정답. competence, competition은 명사, competently는 부사다."
+  }
+ },
+ {
+  "w": "refresher course",
+  "pos": "n",
+  "m": [
+   "재교육 과정",
+   "보수 교육"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Nurses are required to take a *refresher course* in emergency care every two years.",
+  "exKo": "간호사들은 2년마다 응급 처치 보수 교육을 받아야 한다.",
+  "col": [
+   {
+    "e": "take a refresher course",
+    "k": "보수 교육을 받다"
+   },
+   {
+    "e": "refresher course in",
+    "k": "~에 관한 재교육 과정"
+   }
+  ],
+  "der": [
+   {
+    "w": "refresh",
+    "pos": "v",
+    "m": "새롭게 하다, (기억을) 되살리다"
+   }
+  ],
+  "para": [
+   "review course",
+   "retraining"
+  ],
+  "ant": "",
+  "tip": "이미 배운 기술을 다시 익히는 '보수 교육'으로, Part 7에서 review session, retraining으로 바꿔 표현된다.",
+  "q": {
+   "s": "Drivers who have not operated a forklift for over a year must take a ------- before returning to work.",
+   "o": [
+    "refreshment stand",
+    "reference letter",
+    "research paper",
+    "refresher course"
+   ],
+   "a": 3,
+   "k": "1년 넘게 지게차를 운전하지 않은 사람이 업무 복귀 전 '다시 받아야 하는 교육'이므로 refresher course가 정답. 매점(refreshment stand), 추천서(reference letter), 연구 논문(research paper)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "completion",
+  "pos": "n",
+  "m": [
+   "완료",
+   "완성",
+   "수료"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A certificate will be issued upon *completion* of the training program.",
+  "exKo": "교육 프로그램을 수료하면 수료증이 발급된다.",
+  "col": [
+   {
+    "e": "upon completion of",
+    "k": "~을 완료하는 대로"
+   },
+   {
+    "e": "completion date",
+    "k": "완료일"
+   },
+   {
+    "e": "certificate of completion",
+    "k": "수료증"
+   }
+  ],
+  "der": [
+   {
+    "w": "complete",
+    "pos": "v",
+    "m": "완료하다"
+   },
+   {
+    "w": "completely",
+    "pos": "adv",
+    "m": "완전히"
+   }
+  ],
+  "para": [
+   "conclusion"
+  ],
+  "ant": "",
+  "tip": "upon/on completion of(~을 완료하는 대로)가 Part 5 단골 표현이며 동사 complete와의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "Upon ------- of the online course, participants will receive a digital certificate.",
+   "o": [
+    "complete",
+    "completed",
+    "completion",
+    "completely"
+   ],
+   "a": 2,
+   "k": "전치사 Upon 뒤, of 앞의 명사 자리이므로 completion이 정답. complete는 동사·형용사, completed는 과거분사, completely는 부사다."
+  }
+ },
+ {
+  "w": "faculty",
+  "pos": "n",
+  "m": [
+   "교수진",
+   "교직원"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The university hired five new *faculty* members for its business school.",
+  "exKo": "그 대학은 경영대학에 교수 다섯 명을 새로 채용했다.",
+  "col": [
+   {
+    "e": "faculty member",
+    "k": "교수, 교직원"
+   },
+   {
+    "e": "faculty and staff",
+    "k": "교직원"
+   }
+  ],
+  "der": [],
+  "para": [
+   "teaching staff",
+   "professors"
+  ],
+  "ant": "",
+  "tip": "집합명사로 '교수진 전체'를 뜻하며 교수 개인은 a faculty member로 쓴다. 철자가 비슷한 facility(시설)와 혼동하지 않도록 주의한다.",
+  "q": {
+   "s": "Dr. Wells joined the ------- of the Hamilton School of Design as a professor of graphic arts.",
+   "o": [
+    "facility",
+    "faculty",
+    "factor",
+    "faction"
+   ],
+   "a": 1,
+   "k": "교수로서 '합류한' 대상은 교수진이므로 faculty가 정답. facility(시설)는 철자가 비슷한 함정이며 사람이 합류하는 집단이 아니다."
+  }
+ },
+ {
+  "w": "institute",
+  "pos": "n",
+  "m": [
+   "협회",
+   "연구소",
+   "교육 기관"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Dr. Shah has directed the research *institute* since it opened in 2015.",
+  "exKo": "샤 박사는 그 연구소가 2015년에 문을 연 이래 줄곧 소장을 맡아 왔다.",
+  "col": [
+   {
+    "e": "research institute",
+    "k": "연구소"
+   },
+   {
+    "e": "institute of technology",
+    "k": "공과 대학"
+   }
+  ],
+  "der": [
+   {
+    "w": "institution",
+    "pos": "n",
+    "m": "기관, 제도"
+   },
+   {
+    "w": "institutional",
+    "pos": "adj",
+    "m": "기관의, 제도적인"
+   }
+  ],
+  "para": [
+   "academy",
+   "school",
+   "organization"
+  ],
+  "ant": "",
+  "tip": "명사(연구소, 기관) 외에 동사로 '(제도를) 도입하다'(institute a new policy)라는 뜻도 있어 Part 5·7에서 주의해야 한다.",
+  "q": {
+   "s": "The Fairview ------- of Technology has announced a new degree program in robotics.",
+   "o": [
+    "Institute",
+    "Instinct",
+    "Instance",
+    "Interval"
+   ],
+   "a": 0,
+   "k": "'기술 교육 기관(Institute of Technology)'이 새 학위 과정을 발표했다는 뜻이므로 Institute가 정답. Instinct(본능), Instance(사례), Interval(간격)은 기관 이름이 될 수 없다."
+  }
+ },
+ {
+  "w": "academic",
+  "pos": "adj",
+  "m": [
+   "학업의",
+   "학문의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Applicants must submit their *academic* records along with a cover letter.",
+  "exKo": "지원자는 자기소개서와 함께 학업 성적 증명서를 제출해야 한다.",
+  "col": [
+   {
+    "e": "academic background",
+    "k": "학력"
+   },
+   {
+    "e": "academic year",
+    "k": "학년도"
+   },
+   {
+    "e": "academic achievement",
+    "k": "학업 성취"
+   }
+  ],
+  "der": [
+   {
+    "w": "academy",
+    "pos": "n",
+    "m": "학원, 학회"
+   },
+   {
+    "w": "academically",
+    "pos": "adv",
+    "m": "학업적으로"
+   }
+  ],
+  "para": [
+   "educational",
+   "scholarly"
+  ],
+  "ant": "",
+  "tip": "academic year(학년도), academic background(학력)처럼 명사를 수식하는 형용사로 쓰이며, 부사 academically와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Applicants should include a summary of their ------- background in their cover letter.",
+   "o": [
+    "academy",
+    "academic",
+    "academically",
+    "academics"
+   ],
+   "a": 1,
+   "k": "소유격 their와 명사 background 사이의 형용사 자리이므로 academic이 정답. academy, academics는 명사이고 academically는 부사다."
+  }
+ },
+ {
+  "w": "graduate",
+  "pos": "v",
+  "m": [
+   "졸업하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Ford *graduated* from Boston University with a degree in finance.",
+  "exKo": "포드 씨는 보스턴 대학교에서 재무학 학위를 받고 졸업했다.",
+  "col": [
+   {
+    "e": "graduate from",
+    "k": "~을 졸업하다"
+   },
+   {
+    "e": "recent graduate",
+    "k": "최근 졸업생"
+   },
+   {
+    "e": "graduate school",
+    "k": "대학원"
+   }
+  ],
+  "der": [
+   {
+    "w": "graduation",
+    "pos": "n",
+    "m": "졸업"
+   },
+   {
+    "w": "undergraduate",
+    "pos": "n",
+    "m": "학부생"
+   }
+  ],
+  "para": [
+   "complete one's studies"
+  ],
+  "ant": "",
+  "tip": "자동사라 graduate from + 학교로 쓴다(graduate the university는 오답). 명사로는 '졸업생'(recent graduates)이라는 뜻도 있다.",
+  "q": {
+   "s": "Mr. Park ------- from the Seoul Institute of Design before joining our team in 2019.",
+   "o": [
+    "completed",
+    "attended",
+    "graduated",
+    "studied"
+   ],
+   "a": 2,
+   "k": "빈칸 뒤 전치사 from과 짝을 이루는 graduated가 정답. completed, attended는 from 없이 목적어를 바로 취하고, studied from은 '학교를 다녔다'는 뜻으로 쓰지 않는다."
+  }
+ },
+ {
+  "w": "alumni",
+  "pos": "n",
+  "m": [
+   "졸업생들",
+   "동문"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Several *alumni* returned to campus to speak with students about career options.",
+  "exKo": "졸업생 몇 명이 학교로 돌아와 학생들과 진로에 관해 이야기를 나눴다.",
+  "col": [
+   {
+    "e": "alumni association",
+    "k": "동문회"
+   },
+   {
+    "e": "alumni network",
+    "k": "동문 네트워크"
+   }
+  ],
+  "der": [
+   {
+    "w": "alumnus",
+    "pos": "n",
+    "m": "졸업생, 동문 (단수형)"
+   }
+  ],
+  "para": [
+   "graduates",
+   "former students"
+  ],
+  "ant": "",
+  "tip": "alumni는 복수형(단수는 alumnus/alumna)이므로 복수 동사와 쓴다. alumni association(동문회)이 Part 7에 자주 나온다.",
+  "q": {
+   "s": "The ------- association is organizing a reunion for graduates of the class of 2010.",
+   "o": [
+    "alumni",
+    "allowance",
+    "aluminum",
+    "alliance"
+   ],
+   "a": 0,
+   "k": "졸업생 동창회를 준비하는 단체는 '동문회'이므로 alumni가 정답. allowance(수당), aluminum(알루미늄), alliance(동맹)는 association과 결합해 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "master",
+  "pos": "v",
+  "m": [
+   "숙달하다",
+   "통달하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "It usually takes new hires about three months to *master* the inventory system.",
+  "exKo": "신입 직원이 재고 관리 시스템을 완전히 익히는 데는 보통 3개월 정도 걸린다.",
+  "col": [
+   {
+    "e": "master a skill",
+    "k": "기술을 익히다"
+   },
+   {
+    "e": "master's degree",
+    "k": "석사 학위"
+   }
+  ],
+  "der": [
+   {
+    "w": "mastery",
+    "pos": "n",
+    "m": "숙달, 통달"
+   }
+  ],
+  "para": [
+   "learn thoroughly",
+   "become proficient in"
+  ],
+  "ant": "",
+  "tip": "동사로 '완전히 익히다'(master the software)라는 뜻이며, 명사로는 master's degree(석사 학위)로 쓰인다. 명사 mastery(숙달)도 함께 알아 둔다.",
+  "q": {
+   "s": "Trainees are expected to ------- the basic functions of the software within their first week.",
+   "o": [
+    "mastery",
+    "masterful",
+    "masterpiece",
+    "master"
+   ],
+   "a": 3,
+   "k": "be expected to 뒤 동사원형 자리이므로 master가 정답. mastery, masterpiece는 명사, masterful은 형용사다."
+  }
+ },
+ {
+  "w": "familiarize",
+  "pos": "v",
+  "m": [
+   "익숙하게 하다",
+   "숙지시키다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Please take some time to *familiarize* yourself with the new safety procedures.",
+  "exKo": "시간을 내어 새 안전 절차를 숙지하기 바란다.",
+  "col": [
+   {
+    "e": "familiarize oneself with",
+    "k": "~을 숙지하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "familiar",
+    "pos": "adj",
+    "m": "익숙한, 잘 아는"
+   },
+   {
+    "w": "familiarity",
+    "pos": "n",
+    "m": "익숙함, 친숙함"
+   }
+  ],
+  "para": [
+   "learn about",
+   "get to know",
+   "become acquainted with"
+  ],
+  "ant": "",
+  "tip": "familiarize oneself with ~(~을 숙지하다)처럼 재귀대명사와 with가 함께 나오며 be familiar with와 같은 의미다.",
+  "q": {
+   "s": "New employees should ------- themselves with the company's dress code before their first day.",
+   "o": [
+    "familiar",
+    "familiarity",
+    "familiarize",
+    "familiarly"
+   ],
+   "a": 2,
+   "k": "조동사 should 뒤 동사원형 자리이며 'familiarize oneself with' 구조이므로 familiarize가 정답. familiar는 형용사, familiarity는 명사, familiarly는 부사다."
+  }
+ },
+ {
+  "w": "acquaint",
+  "pos": "v",
+  "m": [
+   "익히게 하다",
+   "알게 하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The first week is designed to *acquaint* new staff with company policies.",
+  "exKo": "첫 주는 신입 직원이 회사 방침을 익히도록 구성되어 있다.",
+  "col": [
+   {
+    "e": "acquaint A with B",
+    "k": "A에게 B를 알려 주다"
+   },
+   {
+    "e": "be acquainted with",
+    "k": "~을 잘 알다"
+   }
+  ],
+  "der": [
+   {
+    "w": "acquaintance",
+    "pos": "n",
+    "m": "아는 사람, 지식"
+   },
+   {
+    "w": "acquainted",
+    "pos": "adj",
+    "m": "알고 있는, 정통한"
+   }
+  ],
+  "para": [
+   "familiarize",
+   "introduce"
+  ],
+  "ant": "",
+  "tip": "acquaint A with B 또는 be acquainted with 형태로 with와 짝을 이루며 familiarize A with B와 같은 의미다.",
+  "q": {
+   "s": "The orientation video is meant to ------- visitors with the safety rules of the plant.",
+   "o": [
+    "inform",
+    "acquaint",
+    "introduce",
+    "notify"
+   ],
+   "a": 1,
+   "k": "'목적어 + with'와 짝을 이루어 '~에게 …을 알게 하다'를 뜻하는 동사는 acquaint이다. inform과 notify는 of/about, introduce는 to와 함께 쓴다."
+  }
+ },
+ {
+  "w": "comprehension",
+  "pos": "n",
+  "m": [
+   "이해(력)"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The test measures reading *comprehension* and basic writing skills.",
+  "exKo": "그 시험은 독해력과 기본적인 작문 능력을 평가한다.",
+  "col": [
+   {
+    "e": "reading comprehension",
+    "k": "독해(력)"
+   },
+   {
+    "e": "listening comprehension",
+    "k": "청해(력)"
+   }
+  ],
+  "der": [
+   {
+    "w": "comprehend",
+    "pos": "v",
+    "m": "이해하다"
+   },
+   {
+    "w": "comprehensible",
+    "pos": "adj",
+    "m": "이해할 수 있는"
+   }
+  ],
+  "para": [
+   "understanding",
+   "grasp"
+  ],
+  "ant": "",
+  "tip": "comprehension(이해)과 comprehensive(포괄적인)는 철자가 비슷하지만 뜻이 전혀 다르다. 이 혼동을 노린 품사·어휘 문제가 나온다.",
+  "q": {
+   "s": "The quiz at the end of each module checks the trainees' ------- of the material.",
+   "o": [
+    "comprehensive",
+    "comprehend",
+    "comprehensively",
+    "comprehension"
+   ],
+   "a": 3,
+   "k": "소유격 trainees' 뒤 명사 자리이므로 comprehension이 정답. comprehensive는 형용사(포괄적인), comprehend는 동사, comprehensively는 부사다."
+  }
+ },
+ {
+  "w": "aptitude",
+  "pos": "n",
+  "m": [
+   "적성",
+   "소질"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Candidates will take an *aptitude* test before the final interview.",
+  "exKo": "지원자들은 최종 면접 전에 적성 검사를 받는다.",
+  "col": [
+   {
+    "e": "aptitude test",
+    "k": "적성 검사"
+   },
+   {
+    "e": "aptitude for",
+    "k": "~에 대한 소질"
+   }
+  ],
+  "der": [
+   {
+    "w": "apt",
+    "pos": "adj",
+    "m": "~하는 경향이 있는, 적절한"
+   }
+  ],
+  "para": [
+   "talent",
+   "ability",
+   "flair"
+  ],
+  "ant": "",
+  "tip": "aptitude for(~에 대한 소질)로 for와 짝을 이루며, 철자가 비슷한 attitude(태도), altitude(고도)와의 혼동을 노린다.",
+  "q": {
+   "s": "Ms. Novak showed a natural ------- for negotiation during her first year in sales.",
+   "o": [
+    "aptitude",
+    "attitude",
+    "altitude",
+    "gratitude"
+   ],
+   "a": 0,
+   "k": "for negotiation과 결합해 '협상에 대한 타고난 소질'을 뜻하는 aptitude가 정답. attitude(태도)는 toward와 쓰며, altitude(고도), gratitude(감사)는 의미가 맞지 않는다."
+  }
+ }
+]

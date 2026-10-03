@@ -1,0 +1,22 @@
+{
+  "name": "vocafit-toeic",
+  "version": "1.0.0",
+  "private": true,
+  "description": "보카핏 토익 — 목표 점수 맞춤 토익 단어장 (Android/iOS/PC)",
+  "scripts": {
+    "build:data": "node scripts/build_data.mjs",
+    "validate": "python3 scripts/validate_day.py",
+    "serve": "cd app && python3 -m http.server 8080",
+    "cap:add:android": "npx cap add android",
+    "cap:add:ios": "npx cap add ios",
+    "cap:sync": "npx cap sync"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/ios": "^7.0.0"
+  }
+}

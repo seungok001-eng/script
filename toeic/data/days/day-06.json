@@ -1,0 +1,2156 @@
+[
+ {
+  "w": "contract",
+  "pos": "n",
+  "m": [
+   "계약(서)"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The two companies signed a three-year *contract* for office cleaning services.",
+  "exKo": "두 회사는 사무실 청소 서비스에 대한 3년 계약을 체결했다.",
+  "col": [
+   {
+    "e": "sign a contract",
+    "k": "계약을 체결하다"
+   },
+   {
+    "e": "renew a contract",
+    "k": "계약을 갱신하다"
+   },
+   {
+    "e": "under contract",
+    "k": "계약을 맺은"
+   }
+  ],
+  "der": [
+   {
+    "w": "contractor",
+    "pos": "n",
+    "m": "계약자, 도급업자"
+   },
+   {
+    "w": "contractual",
+    "pos": "adj",
+    "m": "계약상의"
+   }
+  ],
+  "para": [
+   "agreement",
+   "deal"
+  ],
+  "ant": "",
+  "tip": "명사(계약)와 동사(계약하다)로 모두 쓰이며, 사람명사 contractor(도급업자)와 형용사 contractual(계약상의)의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Mr. Tanaka carefully reviewed the ------- before signing it on his company's behalf.",
+   "o": [
+    "contractor",
+    "contract",
+    "contractual",
+    "contracted"
+   ],
+   "a": 1,
+   "k": "검토한 뒤 '서명하는(signing it)' 대상이 되는 명사이므로 contract가 정답이다. contractor는 사람이라 서명할 대상이 아니고, contractual은 형용사다."
+  }
+ },
+ {
+  "w": "agreement",
+  "pos": "n",
+  "m": [
+   "합의, 협정",
+   "동의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "After months of talks, the two firms finally reached an *agreement* on the merger.",
+  "exKo": "수개월의 협상 끝에 두 회사는 마침내 합병에 합의했다.",
+  "col": [
+   {
+    "e": "reach an agreement",
+    "k": "합의에 이르다"
+   },
+   {
+    "e": "sign an agreement",
+    "k": "협정에 서명하다"
+   },
+   {
+    "e": "in agreement with",
+    "k": "~와 의견이 일치하는"
+   }
+  ],
+  "der": [
+   {
+    "w": "agree",
+    "pos": "v",
+    "m": "동의하다"
+   },
+   {
+    "w": "agreeable",
+    "pos": "adj",
+    "m": "기분 좋은, 동의할 만한"
+   }
+  ],
+  "para": [
+   "contract",
+   "deal",
+   "arrangement"
+  ],
+  "ant": "disagreement",
+  "tip": "reach/come to an agreement(합의에 이르다), in agreement with(~와 의견이 일치하는)가 빈출이며, 동사 agree와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "The supplier and the restaurant chain came to an ------- about the new delivery schedule.",
+   "o": [
+    "agreed",
+    "agree",
+    "agreeable",
+    "agreement"
+   ],
+   "a": 3,
+   "k": "관사 an 뒤의 명사 자리이며 come to an agreement(합의에 이르다)를 이루므로 agreement가 정답이다."
+  }
+ },
+ {
+  "w": "terms",
+  "pos": "n",
+  "m": [
+   "(계약의) 조건",
+   "조항"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Both parties accepted the *terms* of the contract without any changes.",
+  "exKo": "양측은 아무런 수정 없이 계약 조건을 받아들였다.",
+  "col": [
+   {
+    "e": "terms and conditions",
+    "k": "약관, 계약 조건"
+   },
+   {
+    "e": "under the terms of",
+    "k": "~의 조건에 따라"
+   },
+   {
+    "e": "payment terms",
+    "k": "지불 조건"
+   }
+  ],
+  "der": [
+   {
+    "w": "term",
+    "pos": "n",
+    "m": "기간, 용어"
+   }
+  ],
+  "para": [
+   "conditions",
+   "provisions"
+  ],
+  "ant": "",
+  "tip": "'조건'의 뜻일 때는 항상 복수형 terms로 쓰며, under the terms of the contract(계약 조건에 따라), terms and conditions(이용 약관)가 빈출이다.",
+  "q": {
+   "s": "Under the ------- of the agreement, the supplier must deliver all orders within five business days.",
+   "o": [
+    "sides",
+    "rates",
+    "terms",
+    "scopes"
+   ],
+   "a": 2,
+   "k": "under the terms of(~의 조건에 따라)라는 표현이므로 terms가 정답이다. rates(요금), sides(측면), scopes(범위)는 under the ~ of the agreement와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "condition",
+  "pos": "n",
+  "m": [
+   "조건",
+   "상태"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "The loan was approved on the *condition* that the company submit quarterly reports.",
+  "exKo": "그 대출은 회사가 분기 보고서를 제출한다는 조건으로 승인되었다.",
+  "col": [
+   {
+    "e": "on the condition that",
+    "k": "~라는 조건으로"
+   },
+   {
+    "e": "in good condition",
+    "k": "상태가 좋은"
+   },
+   {
+    "e": "working conditions",
+    "k": "근무 환경"
+   }
+  ],
+  "der": [
+   {
+    "w": "conditional",
+    "pos": "adj",
+    "m": "조건부의"
+   },
+   {
+    "w": "conditionally",
+    "pos": "adv",
+    "m": "조건부로"
+   }
+  ],
+  "para": [
+   "requirement",
+   "term",
+   "stipulation"
+  ],
+  "ant": "",
+  "tip": "on (the) condition that(~라는 조건으로)과 in good condition(상태가 좋은)의 두 의미를 모두 알아야 하며, 형용사 conditional(조건부의)도 출제된다.",
+  "q": {
+   "s": "The used car is in excellent -------, with only 20,000 kilometers on the odometer.",
+   "o": [
+    "condition",
+    "conditional",
+    "conditioned",
+    "conditionally"
+   ],
+   "a": 0,
+   "k": "형용사 excellent의 수식을 받는 명사 자리로 in excellent condition(상태가 아주 좋은)을 이루므로 condition이 정답이다."
+  }
+ },
+ {
+  "w": "negotiate",
+  "pos": "v",
+  "m": [
+   "협상하다, 교섭하다",
+   "(협상으로) 성사시키다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Our legal team is *negotiating* a new contract with the software supplier.",
+  "exKo": "우리 법무팀은 소프트웨어 공급업체와 새 계약을 협상하고 있다.",
+  "col": [
+   {
+    "e": "negotiate a contract",
+    "k": "계약을 협상하다"
+   },
+   {
+    "e": "negotiate with",
+    "k": "~와 협상하다"
+   },
+   {
+    "e": "negotiate a price",
+    "k": "가격을 협상하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "negotiation",
+    "pos": "n",
+    "m": "협상"
+   },
+   {
+    "w": "negotiator",
+    "pos": "n",
+    "m": "협상가"
+   },
+   {
+    "w": "negotiable",
+    "pos": "adj",
+    "m": "협상 가능한"
+   }
+  ],
+  "para": [
+   "bargain",
+   "discuss terms"
+  ],
+  "ant": "",
+  "tip": "타동사(negotiate a contract)와 자동사(negotiate with)로 모두 쓰이며, 형용사 negotiable(협상 가능한)은 구인 광고의 Salary is negotiable.로 자주 나온다.",
+  "q": {
+   "s": "The company hired an experienced lawyer to ------- the terms of the merger.",
+   "o": [
+    "negotiation",
+    "negotiate",
+    "negotiator",
+    "negotiable"
+   ],
+   "a": 1,
+   "k": "to 뒤에서 목적어 the terms를 취하는 동사원형이 필요하므로 negotiate가 정답이다. negotiation, negotiator는 명사, negotiable은 형용사다."
+  }
+ },
+ {
+  "w": "client",
+  "pos": "n",
+  "m": [
+   "고객, 의뢰인"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Ms. Barnes is meeting with an important *client* from Singapore this afternoon.",
+  "exKo": "Barnes 씨는 오늘 오후 싱가포르에서 온 중요한 고객과 만난다.",
+  "col": [
+   {
+    "e": "meet with a client",
+    "k": "고객과 만나다"
+   },
+   {
+    "e": "potential client",
+    "k": "잠재 고객"
+   },
+   {
+    "e": "client base",
+    "k": "고객층"
+   }
+  ],
+  "der": [
+   {
+    "w": "clientele",
+    "pos": "n",
+    "m": "(집합적) 고객층"
+   }
+  ],
+  "para": [
+   "customer",
+   "account"
+  ],
+  "ant": "",
+  "tip": "주로 법률·광고·컨설팅 등 전문 서비스를 의뢰하는 고객을 가리키며, 집합명사 clientele과 달리 가산명사라 a client, clients로 쓴다.",
+  "q": {
+   "s": "The advertising agency is preparing a presentation for a new ------- that sells organic cosmetics.",
+   "o": [
+    "client",
+    "colleague",
+    "manager",
+    "receptionist"
+   ],
+   "a": 0,
+   "k": "광고 대행사가 발표를 준비하는 대상이자 화장품을 '판매하는' 회사이므로 client가 정답이다. colleague, manager, receptionist는 개인이라 that sells organic cosmetics와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "clientele",
+  "pos": "n",
+  "m": [
+   "(집합적) 고객층, 단골손님들"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The boutique hotel attracts a wealthy international *clientele*.",
+  "exKo": "그 부티크 호텔은 부유한 외국인 고객층을 끌어들인다.",
+  "col": [
+   {
+    "e": "loyal clientele",
+    "k": "충성 고객층"
+   },
+   {
+    "e": "expand the clientele",
+    "k": "고객층을 넓히다"
+   }
+  ],
+  "der": [
+   {
+    "w": "client",
+    "pos": "n",
+    "m": "고객"
+   }
+  ],
+  "para": [
+   "customers",
+   "customer base",
+   "patrons"
+  ],
+  "ant": "",
+  "tip": "고객 전체를 가리키는 집합명사로 보통 단수 취급하며, 개별 고객을 뜻하는 가산명사 client와 구분해야 한다.",
+  "q": {
+   "s": "The restaurant has built a loyal ------- by offering excellent food at reasonable prices.",
+   "o": [
+    "clearance",
+    "census",
+    "clientele",
+    "collateral"
+   ],
+   "a": 2,
+   "k": "좋은 음식과 합리적인 가격으로 쌓아 온 '충성 고객층'을 뜻하는 clientele이 정답이다. census(인구 조사), clearance(재고 정리), collateral(담보)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "deal",
+  "pos": "n",
+  "m": [
+   "거래, 계약",
+   "(좋은) 조건, 싸게 산 물건"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The company closed a *deal* to supply parts to a major car manufacturer.",
+  "exKo": "그 회사는 대형 자동차 제조사에 부품을 공급하는 거래를 성사시켰다.",
+  "col": [
+   {
+    "e": "make a deal",
+    "k": "거래하다"
+   },
+   {
+    "e": "close a deal",
+    "k": "거래를 성사시키다"
+   },
+   {
+    "e": "a good deal",
+    "k": "좋은 조건, 싸게 산 물건"
+   }
+  ],
+  "der": [
+   {
+    "w": "dealer",
+    "pos": "n",
+    "m": "판매업자, 중개인"
+   },
+   {
+    "w": "dealership",
+    "pos": "n",
+    "m": "대리점"
+   }
+  ],
+  "para": [
+   "agreement",
+   "contract",
+   "transaction"
+  ],
+  "ant": "",
+  "tip": "명사로는 '거래, 좋은 가격 조건'을 뜻하고, 동사구 deal with는 '(문제를) 처리하다, (업체와) 거래하다'를 뜻한다.",
+  "q": {
+   "s": "Ms. Harper flew to Toronto to finalize the ------- with the new distributor.",
+   "o": [
+    "fund",
+    "fare",
+    "fault",
+    "deal"
+   ],
+   "a": 3,
+   "k": "새 유통업체와의 '거래'를 마무리하러 갔다는 의미이므로 deal이 정답이다. fare(요금), fault(결함, 잘못), fund(기금)는 with the distributor와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "renew",
+  "pos": "v",
+  "m": [
+   "갱신하다, 연장하다",
+   "재개하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The tenant decided to *renew* the lease for another two years.",
+  "exKo": "세입자는 임대 계약을 2년 더 갱신하기로 결정했다.",
+  "col": [
+   {
+    "e": "renew a contract",
+    "k": "계약을 갱신하다"
+   },
+   {
+    "e": "renew a subscription",
+    "k": "구독을 갱신하다"
+   },
+   {
+    "e": "renew a membership",
+    "k": "회원 자격을 갱신하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "renewal",
+    "pos": "n",
+    "m": "갱신"
+   },
+   {
+    "w": "renewable",
+    "pos": "adj",
+    "m": "갱신 가능한, 재생 가능한"
+   }
+  ],
+  "para": [
+   "extend",
+   "continue"
+  ],
+  "ant": "",
+  "tip": "contract, subscription, membership, license와 짝을 이루며, 명사형 renewal(갱신)이 renewal date, renewal fee로 자주 나온다.",
+  "q": {
+   "s": "Members who ------- their subscriptions before May 1 will receive a free gift.",
+   "o": [
+    "renew",
+    "retire",
+    "resign",
+    "recover"
+   ],
+   "a": 0,
+   "k": "구독(subscriptions)을 '갱신하다'라는 의미이므로 renew가 정답이다. retire(은퇴하다), resign(사임하다), recover(회복하다)는 subscriptions와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "expire",
+  "pos": "v",
+  "m": [
+   "(기한이) 만료되다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Your current parking permit will *expire* at the end of this month.",
+  "exKo": "현재의 주차 허가증은 이번 달 말에 만료된다.",
+  "col": [
+   {
+    "e": "expire at the end of",
+    "k": "~ 말에 만료되다"
+   },
+   {
+    "e": "expiration date",
+    "k": "만료일, 유효 기한"
+   }
+  ],
+  "der": [
+   {
+    "w": "expiration",
+    "pos": "n",
+    "m": "만료"
+   },
+   {
+    "w": "expired",
+    "pos": "adj",
+    "m": "만료된"
+   }
+  ],
+  "para": [
+   "run out",
+   "end",
+   "lapse"
+  ],
+  "ant": "",
+  "tip": "자동사라 목적어를 취하지 않고 The contract expires on ~처럼 쓰며, 명사 expiration은 expiration date(만료일)로 자주 나온다.",
+  "q": {
+   "s": "The warranty on the printer will ------- one year after the date of purchase.",
+   "o": [
+    "expire",
+    "expiration",
+    "expired",
+    "expiring"
+   ],
+   "a": 0,
+   "k": "조동사 will 뒤에는 동사원형이 오므로 expire가 정답이다. expiration은 명사, expired, expiring은 will 바로 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "valid",
+  "pos": "adj",
+  "m": [
+   "유효한",
+   "타당한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "This coupon is *valid* until the end of December at all our locations.",
+  "exKo": "이 쿠폰은 12월 말까지 모든 매장에서 유효하다.",
+  "col": [
+   {
+    "e": "valid for",
+    "k": "~ 동안 유효한"
+   },
+   {
+    "e": "valid until",
+    "k": "~까지 유효한"
+   },
+   {
+    "e": "valid passport",
+    "k": "유효한 여권"
+   }
+  ],
+  "der": [
+   {
+    "w": "validity",
+    "pos": "n",
+    "m": "유효성, 타당성"
+   },
+   {
+    "w": "validate",
+    "pos": "v",
+    "m": "승인하다, 확인하다"
+   }
+  ],
+  "para": [
+   "effective",
+   "good",
+   "in effect"
+  ],
+  "ant": "invalid",
+  "tip": "be valid for + 기간, be valid until + 시점이 빈출이며, 명사 validity, 동사 validate와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "The discount voucher is ------- for three months from the date of issue.",
+   "o": [
+    "validity",
+    "valid",
+    "validate",
+    "validly"
+   ],
+   "a": 1,
+   "k": "be동사 뒤 보어 자리에 형용사가 필요하므로 valid가 정답이다. validity는 명사, validate는 동사, validly는 부사다."
+  }
+ },
+ {
+  "w": "binding",
+  "pos": "adj",
+  "m": [
+   "구속력 있는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Once signed, this agreement is legally *binding* on both parties.",
+  "exKo": "일단 서명하면 이 계약은 양측 모두에게 법적 구속력을 갖는다.",
+  "col": [
+   {
+    "e": "legally binding",
+    "k": "법적 구속력이 있는"
+   },
+   {
+    "e": "binding contract",
+    "k": "구속력 있는 계약"
+   },
+   {
+    "e": "binding on",
+    "k": "~에게 구속력이 있는"
+   }
+  ],
+  "der": [
+   {
+    "w": "bind",
+    "pos": "v",
+    "m": "묶다, 구속하다"
+   }
+  ],
+  "para": [
+   "enforceable",
+   "obligatory"
+  ],
+  "ant": "nonbinding",
+  "tip": "legally binding(법적 구속력이 있는)이 대표 표현이며, '~에게 구속력이 있다'는 binding on/upon으로 쓴다.",
+  "q": {
+   "s": "Ms. Lee reminded the client that the signed agreement is legally ------- and cannot be canceled without penalty.",
+   "o": [
+    "binding",
+    "bind",
+    "binds",
+    "bounded"
+   ],
+   "a": 0,
+   "k": "부사 legally의 수식을 받는 be동사 뒤 보어 자리이므로 형용사 binding이 정답이다. bind, binds는 동사이고, bounded는 '경계가 정해진'이라는 뜻이라 맞지 않는다."
+  }
+ },
+ {
+  "w": "clause",
+  "pos": "n",
+  "m": [
+   "(계약서의) 조항"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A *clause* in the contract allows either party to cancel with 30 days' notice.",
+  "exKo": "계약서의 한 조항에 따르면 어느 쪽이든 30일 전에 통보하면 계약을 해지할 수 있다.",
+  "col": [
+   {
+    "e": "contract clause",
+    "k": "계약 조항"
+   },
+   {
+    "e": "include a clause",
+    "k": "조항을 넣다"
+   },
+   {
+    "e": "penalty clause",
+    "k": "위약 조항"
+   }
+  ],
+  "der": [],
+  "para": [
+   "provision",
+   "term",
+   "article"
+  ],
+  "ant": "",
+  "tip": "계약서의 개별 조항을 가리키며 Part 7에서 provision, term으로 패러프레이징된다. 문법 용어 '절'과 같은 단어다.",
+  "q": {
+   "s": "The lawyer recommended adding a ------- that protects the company if the supplier misses a delivery date.",
+   "o": [
+    "clearance",
+    "cause",
+    "closure",
+    "clause"
+   ],
+   "a": 3,
+   "k": "계약서에 '추가해서' 회사를 보호하는 것은 조항이므로 clause가 정답이다. cause(원인), closure(폐쇄), clearance(정리, 허가)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "party",
+  "pos": "n",
+  "m": [
+   "(계약·거래의) 당사자",
+   "일행"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   5,
+   7
+  ],
+  "ex": "The contract must be signed by both *parties* before work can begin.",
+  "exKo": "작업을 시작하기 전에 양 당사자가 계약서에 서명해야 한다.",
+  "col": [
+   {
+    "e": "both parties",
+    "k": "양측, 양 당사자"
+   },
+   {
+    "e": "the parties involved",
+    "k": "관련 당사자"
+   },
+   {
+    "e": "third party",
+    "k": "제3자"
+   }
+  ],
+  "der": [],
+  "para": [
+   "side",
+   "participant"
+  ],
+  "ant": "",
+  "tip": "계약 지문에서는 '파티'가 아니라 '당사자'를 뜻하며, 식당 예약 듣기 지문에서는 a party of six(6명 일행)처럼 '일행'의 의미로 나온다.",
+  "q": {
+   "s": "Personal information will not be shared with any third ------- without the customer's consent.",
+   "o": [
+    "member",
+    "side",
+    "party",
+    "group"
+   ],
+   "a": 2,
+   "k": "'제3자'는 third party로 쓰므로 party가 정답이다. third side, third member, third group은 '제3자'라는 뜻이 없다."
+  }
+ },
+ {
+  "w": "amend",
+  "pos": "v",
+  "m": [
+   "(법·계약을) 수정하다, 개정하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company *amended* its refund policy after receiving many complaints.",
+  "exKo": "회사는 많은 불만을 접수한 후 환불 정책을 수정했다.",
+  "col": [
+   {
+    "e": "amend a contract",
+    "k": "계약을 수정하다"
+   },
+   {
+    "e": "amend the policy",
+    "k": "정책을 개정하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "amendment",
+    "pos": "n",
+    "m": "수정(안), 개정"
+   }
+  ],
+  "para": [
+   "revise",
+   "modify",
+   "change"
+  ],
+  "ant": "",
+  "tip": "계약·법·규정을 '수정하다'라는 뜻으로 revise, modify와 패러프레이징되며, 명사 amendment(수정안)가 Part 7에 나온다. '보상'을 뜻하는 amends와 혼동하지 말 것.",
+  "q": {
+   "s": "The terms of this agreement may not be ------- without the written consent of both parties.",
+   "o": [
+    "amended",
+    "amendment",
+    "amending",
+    "amends"
+   ],
+   "a": 0,
+   "k": "may not be 뒤에 과거분사가 와서 '수정될 수 없다'라는 수동태가 되어야 하므로 amended가 정답이다."
+  }
+ },
+ {
+  "w": "mutually",
+  "pos": "adv",
+  "m": [
+   "서로, 상호 간에"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The meeting was moved to a *mutually* convenient date.",
+  "exKo": "회의는 서로 편한 날짜로 옮겨졌다.",
+  "col": [
+   {
+    "e": "mutually beneficial",
+    "k": "상호 이익이 되는"
+   },
+   {
+    "e": "mutually agreed",
+    "k": "상호 합의된"
+   },
+   {
+    "e": "mutually convenient",
+    "k": "서로 편리한"
+   }
+  ],
+  "der": [
+   {
+    "w": "mutual",
+    "pos": "adj",
+    "m": "상호 간의"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "mutually beneficial(상호 이익이 되는), mutually agreed-upon(상호 합의한)처럼 형용사·분사를 수식하는 부사 자리 문제로 출제된다.",
+  "q": {
+   "s": "Both companies expect the partnership to be ------- beneficial for many years.",
+   "o": [
+    "mutuality",
+    "mutual",
+    "mutually",
+    "mutualize"
+   ],
+   "a": 2,
+   "k": "형용사 beneficial을 앞에서 수식하는 부사 자리이므로 mutually가 정답이다. mutual은 형용사라 형용사를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "beneficial",
+  "pos": "adj",
+  "m": [
+   "유익한, 이로운"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new training program has been *beneficial* to both new and experienced staff.",
+  "exKo": "새 교육 프로그램은 신입과 경력 직원 모두에게 유익했다.",
+  "col": [
+   {
+    "e": "beneficial to",
+    "k": "~에게 유익한"
+   },
+   {
+    "e": "mutually beneficial",
+    "k": "상호 이익이 되는"
+   }
+  ],
+  "der": [
+   {
+    "w": "benefit",
+    "pos": "n",
+    "m": "혜택, 이익"
+   },
+   {
+    "w": "beneficiary",
+    "pos": "n",
+    "m": "수혜자, 수익자"
+   }
+  ],
+  "para": [
+   "advantageous",
+   "helpful",
+   "useful"
+  ],
+  "ant": "harmful",
+  "tip": "be beneficial to(~에게 유익하다)와 mutually beneficial이 대표 표현이며, 명사 benefit, 사람명사 beneficiary(수혜자)와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Regular maintenance is ------- to the long-term performance of the equipment.",
+   "o": [
+    "benefited",
+    "benefit",
+    "beneficiary",
+    "beneficial"
+   ],
+   "a": 3,
+   "k": "be동사 뒤 보어 자리에서 to와 함께 '~에 유익하다'가 되는 형용사 beneficial이 정답이다. benefit은 관사 없이 보어로 쓸 수 없고, beneficiary는 사람명사다."
+  }
+ },
+ {
+  "w": "quote",
+  "pos": "n",
+  "m": [
+   "견적(가)",
+   "인용구"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "We asked three contractors for a *quote* on the kitchen renovation.",
+  "exKo": "우리는 세 시공업체에 주방 개조 공사 견적을 요청했다.",
+  "col": [
+   {
+    "e": "get a quote",
+    "k": "견적을 받다"
+   },
+   {
+    "e": "price quote",
+    "k": "가격 견적"
+   },
+   {
+    "e": "quote for",
+    "k": "~에 대한 견적"
+   }
+  ],
+  "der": [
+   {
+    "w": "quotation",
+    "pos": "n",
+    "m": "견적(서), 인용"
+   }
+  ],
+  "para": [
+   "estimate",
+   "price",
+   "bid"
+  ],
+  "ant": "",
+  "tip": "명사로 '견적'(get a quote), 동사로 '견적을 내다'(quote a price)로 쓰이며, Part 3·4에서 견적 요청은 고객 전화의 목적으로 자주 출제된다.",
+  "q": {
+   "s": "Please contact our sales department to request a free ------- for your printing project.",
+   "o": [
+    "quotient",
+    "quota",
+    "quote",
+    "quorum"
+   ],
+   "a": 2,
+   "k": "인쇄 작업에 대한 '무료 견적'을 요청하는 문장이므로 quote가 정답이다. quota(할당량), quotient(지수), quorum(정족수)은 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "estimate",
+  "pos": "n",
+  "m": [
+   "견적(서)",
+   "추정(치)"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The contractor gave us a written *estimate* for repairing the roof.",
+  "exKo": "시공업자는 지붕 수리에 대한 서면 견적서를 주었다.",
+  "col": [
+   {
+    "e": "written estimate",
+    "k": "서면 견적서"
+   },
+   {
+    "e": "rough estimate",
+    "k": "대략적인 추정치"
+   },
+   {
+    "e": "estimate for",
+    "k": "~에 대한 견적"
+   }
+  ],
+  "der": [
+   {
+    "w": "estimated",
+    "pos": "adj",
+    "m": "추정된, 예상된"
+   },
+   {
+    "w": "underestimate",
+    "pos": "v",
+    "m": "과소평가하다"
+   }
+  ],
+  "para": [
+   "quote",
+   "quotation",
+   "projection"
+  ],
+  "ant": "",
+  "tip": "명사(견적, 추정치)와 동사(추정하다)로 모두 쓰이며, estimated delivery date(예상 배송일), an estimated 500 people(약 500명)처럼 estimated도 Part 5에 자주 나온다.",
+  "q": {
+   "s": "According to the mechanic's -------, the repairs will cost about $800.",
+   "o": [
+    "estimated",
+    "estimate",
+    "estimating",
+    "estimable"
+   ],
+   "a": 1,
+   "k": "소유격 the mechanic's 뒤에는 명사가 와야 하므로 estimate가 정답이다. estimated, estimating은 분사, estimable(존경할 만한)은 형용사다."
+  }
+ },
+ {
+  "w": "bid",
+  "pos": "n",
+  "m": [
+   "입찰(가)",
+   "시도"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Five construction firms submitted *bids* for the new library project.",
+  "exKo": "다섯 개 건설사가 새 도서관 사업에 입찰서를 제출했다.",
+  "col": [
+   {
+    "e": "submit a bid",
+    "k": "입찰서를 제출하다"
+   },
+   {
+    "e": "win a bid",
+    "k": "낙찰받다"
+   },
+   {
+    "e": "bid for",
+    "k": "~에 대한 입찰"
+   }
+  ],
+  "der": [
+   {
+    "w": "bidder",
+    "pos": "n",
+    "m": "입찰자"
+   },
+   {
+    "w": "bidding",
+    "pos": "n",
+    "m": "입찰"
+   }
+  ],
+  "para": [
+   "offer",
+   "tender",
+   "proposal"
+  ],
+  "ant": "",
+  "tip": "명사(입찰)와 동사(입찰하다, bid on/for)로 모두 쓰이며 동사의 과거형·과거분사도 bid다. 사람명사 bidder(입찰자)도 함께 출제된다.",
+  "q": {
+   "s": "The city council accepted the lowest ------- for the bridge repair project.",
+   "o": [
+    "toll",
+    "fare",
+    "bid",
+    "wage"
+   ],
+   "a": 2,
+   "k": "공사에 대해 가장 낮은 금액을 제시한 '입찰'을 받아들였다는 의미이므로 bid가 정답이다. fare(운임), toll(통행료), wage(임금)는 공사 계약과 관련이 없다."
+  }
+ },
+ {
+  "w": "commission",
+  "pos": "n",
+  "m": [
+   "수수료",
+   "위원회",
+   "(작품 등의) 의뢰"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Sales staff earn a 5 percent *commission* on every car they sell.",
+  "exKo": "영업 사원은 판매하는 차 한 대마다 5퍼센트의 수수료를 받는다.",
+  "col": [
+   {
+    "e": "earn a commission",
+    "k": "수수료를 받다"
+   },
+   {
+    "e": "on commission",
+    "k": "수수료를 받는 조건으로"
+   },
+   {
+    "e": "commission on",
+    "k": "~에 대한 수수료"
+   }
+  ],
+  "der": [
+   {
+    "w": "commissioner",
+    "pos": "n",
+    "m": "위원, 국장"
+   }
+  ],
+  "para": [
+   "fee",
+   "percentage"
+  ],
+  "ant": "",
+  "tip": "영업 지문에서는 '판매 수수료'(a commission on sales), 행정 지문에서는 '위원회'를 뜻하며, 동사로는 '(작품·조사를) 의뢰하다'로도 쓰인다.",
+  "q": {
+   "s": "Real estate agents usually receive a ------- based on the selling price of the property.",
+   "o": [
+    "commission",
+    "commitment",
+    "committee",
+    "communication"
+   ],
+   "a": 0,
+   "k": "매매 가격을 기준으로 중개인이 받는 돈은 수수료이므로 commission이 정답이다. commitment(약속, 헌신), committee(위원회), communication(소통)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "representative",
+  "pos": "n",
+  "m": [
+   "직원, 담당자",
+   "대표(자)"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "A sales *representative* will contact you within two business days.",
+  "exKo": "영업 담당자가 영업일 기준 2일 이내에 연락할 것이다.",
+  "col": [
+   {
+    "e": "sales representative",
+    "k": "영업 사원"
+   },
+   {
+    "e": "customer service representative",
+    "k": "고객 서비스 상담원"
+   }
+  ],
+  "der": [
+   {
+    "w": "represent",
+    "pos": "v",
+    "m": "대표하다, 대리하다"
+   },
+   {
+    "w": "representation",
+    "pos": "n",
+    "m": "대표, 묘사"
+   }
+  ],
+  "para": [
+   "agent",
+   "associate"
+  ],
+  "ant": "",
+  "tip": "-ive로 끝나지만 '담당자, 대표자'라는 사람명사로 자주 쓰여 관사 뒤 명사 자리 문제로 출제되며, Part 3·4에서는 sales/customer service representative로 나온다.",
+  "q": {
+   "s": "If you have questions about your bill, please speak with a customer service -------.",
+   "o": [
+    "represented",
+    "represent",
+    "representation",
+    "representative"
+   ],
+   "a": 3,
+   "k": "'대화할(speak with)' 대상인 사람명사가 필요하므로 representative가 정답이다. representation은 '대표, 묘사'라는 추상명사다."
+  }
+ },
+ {
+  "w": "revenue",
+  "pos": "n",
+  "m": [
+   "수익, 수입",
+   "세입"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company's annual *revenue* increased by 12 percent last year.",
+  "exKo": "회사의 연간 수익은 작년에 12퍼센트 증가했다.",
+  "col": [
+   {
+    "e": "annual revenue",
+    "k": "연간 수익"
+   },
+   {
+    "e": "generate revenue",
+    "k": "수익을 창출하다"
+   },
+   {
+    "e": "advertising revenue",
+    "k": "광고 수익"
+   }
+  ],
+  "der": [],
+  "para": [
+   "income",
+   "earnings",
+   "sales"
+  ],
+  "ant": "",
+  "tip": "generate/increase revenue가 짝을 이루며, Part 7 재무 기사에서 income, earnings, sales로 패러프레이징된다.",
+  "q": {
+   "s": "The new online store is expected to generate additional ------- for the company.",
+   "o": [
+    "revenge",
+    "revenue",
+    "revision",
+    "reverse"
+   ],
+   "a": 1,
+   "k": "generate와 짝을 이뤄 '추가 수익을 창출하다'가 되는 revenue가 정답이다. revenge(복수), revision(수정), reverse(반대)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "quota",
+  "pos": "n",
+  "m": [
+   "할당량, 목표량"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Ruiz exceeded her monthly sales *quota* by 20 percent.",
+  "exKo": "Ruiz 씨는 월간 판매 할당량을 20퍼센트 초과 달성했다.",
+  "col": [
+   {
+    "e": "sales quota",
+    "k": "판매 할당량"
+   },
+   {
+    "e": "meet a quota",
+    "k": "할당량을 채우다"
+   },
+   {
+    "e": "exceed a quota",
+    "k": "할당량을 초과하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "target",
+   "goal",
+   "allocation"
+  ],
+  "ant": "",
+  "tip": "meet/reach/exceed one's quota가 대표 연어이며, 철자가 비슷한 quote(견적)가 오답 보기로 함께 나온다.",
+  "q": {
+   "s": "Each salesperson is expected to meet a monthly ------- of 50 new subscriptions.",
+   "o": [
+    "quote",
+    "quota",
+    "quality",
+    "quarter"
+   ],
+   "a": 1,
+   "k": "meet과 짝을 이뤄 '월간 할당량을 채우다'가 되는 quota가 정답이다. quote(견적), quality(품질), quarter(분기)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "exceed",
+  "pos": "v",
+  "m": [
+   "초과하다, 넘다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Sales of the new model *exceeded* our expectations in the first quarter.",
+  "exKo": "새 모델의 판매량은 1분기에 우리의 기대를 넘어섰다.",
+  "col": [
+   {
+    "e": "exceed expectations",
+    "k": "기대를 넘어서다"
+   },
+   {
+    "e": "exceed the limit",
+    "k": "한도를 초과하다"
+   },
+   {
+    "e": "exceed the budget",
+    "k": "예산을 초과하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "excess",
+    "pos": "n",
+    "m": "초과, 과잉"
+   },
+   {
+    "w": "excessive",
+    "pos": "adj",
+    "m": "과도한"
+   },
+   {
+    "w": "exceedingly",
+    "pos": "adv",
+    "m": "매우, 대단히"
+   }
+  ],
+  "para": [
+   "surpass",
+   "go beyond",
+   "outstrip"
+  ],
+  "ant": "",
+  "tip": "타동사라 exceed over가 아니라 exceed the budget처럼 바로 목적어를 쓰며, 형용사 excessive(과도한)와 부사 exceedingly(매우)도 출제된다.",
+  "q": {
+   "s": "Luggage that ------- the weight limit of 23 kilograms will be subject to an additional fee.",
+   "o": [
+    "exceedingly",
+    "excesses",
+    "excessive",
+    "exceeds"
+   ],
+   "a": 3,
+   "k": "관계대명사 that절의 동사 자리이며 목적어 the weight limit을 취하므로 exceeds가 정답이다. excesses는 명사, excessive는 형용사, exceedingly는 부사다."
+  }
+ },
+ {
+  "w": "surpass",
+  "pos": "v",
+  "m": [
+   "능가하다, 뛰어넘다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "This year's profits *surpassed* those of the previous five years combined.",
+  "exKo": "올해 수익은 지난 5년간의 수익을 합친 것보다 많았다.",
+  "col": [
+   {
+    "e": "surpass expectations",
+    "k": "기대를 뛰어넘다"
+   },
+   {
+    "e": "surpass a record",
+    "k": "기록을 넘어서다"
+   }
+  ],
+  "der": [
+   {
+    "w": "unsurpassed",
+    "pos": "adj",
+    "m": "타의 추종을 불허하는"
+   }
+  ],
+  "para": [
+   "exceed",
+   "outperform",
+   "top"
+  ],
+  "ant": "",
+  "tip": "타동사라 전치사 없이 목적어를 취하며 exceed와 바꿔 쓸 수 있다. unsurpassed(최고의)는 광고문의 unsurpassed quality로 나온다.",
+  "q": {
+   "s": "Online sales have ------- in-store sales for the first time in the company's history.",
+   "o": [
+    "surpassed",
+    "surrounded",
+    "surrendered",
+    "suspended"
+   ],
+   "a": 0,
+   "k": "온라인 판매가 처음으로 매장 판매를 '넘어섰다'는 의미이므로 surpassed가 정답이다. surrounded(둘러쌌다), surrendered(넘겨주었다), suspended(중단했다)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "prospective",
+  "pos": "adj",
+  "m": [
+   "장래의, 잠재적인",
+   "~이 될 가능성이 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The sales team will give a product demonstration to several *prospective* clients.",
+  "exKo": "영업팀은 여러 잠재 고객에게 제품 시연을 할 것이다.",
+  "col": [
+   {
+    "e": "prospective client",
+    "k": "잠재 고객"
+   },
+   {
+    "e": "prospective employee",
+    "k": "입사 예정자"
+   },
+   {
+    "e": "prospective buyer",
+    "k": "구매 희망자"
+   }
+  ],
+  "der": [
+   {
+    "w": "prospect",
+    "pos": "n",
+    "m": "가망, 전망, 잠재 고객"
+   }
+  ],
+  "para": [
+   "potential",
+   "future",
+   "possible"
+  ],
+  "ant": "",
+  "tip": "사람명사 앞에서 '~이 될 가능성이 있는'을 뜻하며(prospective buyers) potential과 바꿔 쓸 수 있다. 명사 prospect와의 품사 구분도 출제된다.",
+  "q": {
+   "s": "The real estate agent showed the apartment to three ------- buyers on Saturday.",
+   "o": [
+    "prospectively",
+    "prospect",
+    "prospects",
+    "prospective"
+   ],
+   "a": 3,
+   "k": "명사 buyers를 앞에서 수식하는 형용사 자리이므로 prospective가 정답이다. prospect(s)는 명사, prospectively는 부사다."
+  }
+ },
+ {
+  "w": "potential",
+  "pos": "adj",
+  "m": [
+   "잠재적인, 가능성 있는"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company is looking for *potential* partners in the Asian market.",
+  "exKo": "회사는 아시아 시장에서 잠재적인 협력사를 찾고 있다.",
+  "col": [
+   {
+    "e": "potential customer",
+    "k": "잠재 고객"
+   },
+   {
+    "e": "potential risk",
+    "k": "잠재적 위험"
+   },
+   {
+    "e": "reach one's full potential",
+    "k": "잠재력을 최대한 발휘하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "potentially",
+    "pos": "adv",
+    "m": "잠재적으로"
+   }
+  ],
+  "para": [
+   "possible",
+   "prospective",
+   "likely"
+  ],
+  "ant": "",
+  "tip": "형용사(잠재적인)와 명사(잠재력)로 모두 쓰이며, 부사 potentially(잠재적으로)와의 자리 구분이 출제된다.",
+  "q": {
+   "s": "The consultant identified several ------- problems with the new manufacturing process.",
+   "o": [
+    "potentially",
+    "potential",
+    "potentials",
+    "potentialize"
+   ],
+   "a": 1,
+   "k": "명사 problems를 수식하는 형용사 자리이므로 potential이 정답이다. potentially는 부사, potentials는 명사 복수형이다."
+  }
+ },
+ {
+  "w": "long-term",
+  "pos": "adj",
+  "m": [
+   "장기적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We are hoping to build a *long-term* relationship with our new supplier.",
+  "exKo": "우리는 새 공급업체와 장기적인 관계를 구축하기를 바라고 있다.",
+  "col": [
+   {
+    "e": "long-term contract",
+    "k": "장기 계약"
+   },
+   {
+    "e": "long-term goal",
+    "k": "장기 목표"
+   },
+   {
+    "e": "in the long term",
+    "k": "장기적으로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "lasting",
+   "extended"
+  ],
+  "ant": "short-term",
+  "tip": "하이픈이 있는 long-term은 명사 앞 형용사(long-term plan)로, 하이픈 없는 in the long term은 '장기적으로'라는 부사구로 쓴다.",
+  "q": {
+   "s": "The company signed a ------- agreement that will remain in effect for the next ten years.",
+   "o": [
+    "part-time",
+    "short-term",
+    "long-term",
+    "one-way"
+   ],
+   "a": 2,
+   "k": "향후 10년간 효력이 유지되는 계약이므로 long-term이 정답이다. short-term은 10년과 모순되고, part-time(시간제의), one-way(편도의)는 계약과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "partnership",
+  "pos": "n",
+  "m": [
+   "제휴, 동업 (관계)"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The two airlines formed a *partnership* to offer more international routes.",
+  "exKo": "두 항공사는 더 많은 국제 노선을 제공하기 위해 제휴를 맺었다.",
+  "col": [
+   {
+    "e": "form a partnership",
+    "k": "제휴를 맺다"
+   },
+   {
+    "e": "in partnership with",
+    "k": "~와 제휴하여"
+   },
+   {
+    "e": "business partnership",
+    "k": "사업 제휴"
+   }
+  ],
+  "der": [
+   {
+    "w": "partner",
+    "pos": "n",
+    "m": "동업자, 협력사"
+   }
+  ],
+  "para": [
+   "alliance",
+   "collaboration",
+   "cooperation"
+  ],
+  "ant": "",
+  "tip": "in partnership with(~와 제휴하여), form/enter into a partnership가 빈출이며, 사람명사 partner와의 구분이 출제된다.",
+  "q": {
+   "s": "The museum is organizing the exhibition in ------- with the local university.",
+   "o": [
+    "partnership",
+    "partner",
+    "partnered",
+    "partnering"
+   ],
+   "a": 0,
+   "k": "in partnership with(~와 제휴하여)라는 표현이므로 partnership이 정답이다. partner는 가산명사라 관사 없이 in ~ with 사이에 올 수 없다."
+  }
+ },
+ {
+  "w": "terminate",
+  "pos": "v",
+  "m": [
+   "(계약 등을) 종료하다, 해지하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company has the right to *terminate* the contract if payments are late.",
+  "exKo": "회사는 대금 지급이 늦어지면 계약을 해지할 권리가 있다.",
+  "col": [
+   {
+    "e": "terminate a contract",
+    "k": "계약을 해지하다"
+   },
+   {
+    "e": "terminate an agreement",
+    "k": "협정을 종료하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "termination",
+    "pos": "n",
+    "m": "종료, 해지"
+   }
+  ],
+  "para": [
+   "end",
+   "cancel",
+   "discontinue"
+  ],
+  "ant": "",
+  "tip": "계약·고용·서비스를 '종료하다'라는 격식 있는 동사로, Part 7에서 end, cancel과 패러프레이징되며 명사형 termination도 출제된다.",
+  "q": {
+   "s": "Either party may ------- the agreement by providing 60 days' written notice.",
+   "o": [
+    "termination",
+    "terminal",
+    "terminate",
+    "terminated"
+   ],
+   "a": 2,
+   "k": "조동사 may 뒤에는 동사원형이 오므로 terminate가 정답이다. terminal은 명사·형용사, termination은 명사다."
+  }
+ },
+ {
+  "w": "breach",
+  "pos": "n",
+  "m": [
+   "(계약·법의) 위반",
+   "(보안 등의) 침해"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Failing to deliver the goods on time would be a *breach* of contract.",
+  "exKo": "제때 상품을 납품하지 못하면 계약 위반이 될 것이다.",
+  "col": [
+   {
+    "e": "breach of contract",
+    "k": "계약 위반"
+   },
+   {
+    "e": "in breach of",
+    "k": "~을 위반하여"
+   },
+   {
+    "e": "security breach",
+    "k": "보안 침해"
+   }
+  ],
+  "der": [],
+  "para": [
+   "violation",
+   "infringement"
+  ],
+  "ant": "",
+  "tip": "breach of contract(계약 위반)가 대표 표현이며, in breach of(~을 위반하여)처럼 전치사 of와 함께 쓴다.",
+  "q": {
+   "s": "The supplier was found to be in ------- of the contract after missing three delivery deadlines.",
+   "o": [
+    "light",
+    "favor",
+    "place",
+    "breach"
+   ],
+   "a": 3,
+   "k": "납기를 세 번 어겨 계약을 '위반한' 상태라는 의미이므로 in breach of의 breach가 정답이다. in favor of(~에 찬성하여), in place of(~ 대신에), in light of(~에 비추어)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "obligation",
+  "pos": "n",
+  "m": [
+   "의무, 책임"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Customers are under no *obligation* to purchase anything during the free trial.",
+  "exKo": "고객은 무료 체험 기간 동안 어떤 것도 구매할 의무가 없다.",
+  "col": [
+   {
+    "e": "under no obligation to",
+    "k": "~할 의무가 없는"
+   },
+   {
+    "e": "contractual obligation",
+    "k": "계약상 의무"
+   },
+   {
+    "e": "fulfill an obligation",
+    "k": "의무를 이행하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "oblige",
+    "pos": "v",
+    "m": "의무적으로 ~하게 하다"
+   },
+   {
+    "w": "obligated",
+    "pos": "adj",
+    "m": "~할 의무가 있는"
+   },
+   {
+    "w": "obligatory",
+    "pos": "adj",
+    "m": "의무적인"
+   }
+  ],
+  "para": [
+   "duty",
+   "responsibility",
+   "commitment"
+  ],
+  "ant": "",
+  "tip": "under no obligation to(~할 의무가 없는)가 광고 지문 빈출이며, be obligated to do(~할 의무가 있다)의 형태도 함께 알아 두어야 한다.",
+  "q": {
+   "s": "There is no ------- to buy, and the consultation is completely free.",
+   "o": [
+    "obligate",
+    "obligation",
+    "obligated",
+    "obligatory"
+   ],
+   "a": 1,
+   "k": "There is no 뒤에는 명사가 와야 하므로 obligation이 정답이다. obligate는 동사, obligated, obligatory는 형용사다."
+  }
+ },
+ {
+  "w": "specify",
+  "pos": "v",
+  "m": [
+   "명시하다, 구체적으로 말하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The contract *specifies* the delivery date and the method of payment.",
+  "exKo": "계약서에는 납품일과 결제 방법이 명시되어 있다.",
+  "col": [
+   {
+    "e": "specify a date",
+    "k": "날짜를 명시하다"
+   },
+   {
+    "e": "as specified in",
+    "k": "~에 명시된 대로"
+   },
+   {
+    "e": "unless otherwise specified",
+    "k": "별도로 명시되지 않는 한"
+   }
+  ],
+  "der": [
+   {
+    "w": "specific",
+    "pos": "adj",
+    "m": "구체적인, 특정한"
+   },
+   {
+    "w": "specification",
+    "pos": "n",
+    "m": "명세서, 사양"
+   },
+   {
+    "w": "specifically",
+    "pos": "adv",
+    "m": "특별히, 구체적으로"
+   }
+  ],
+  "para": [
+   "state",
+   "indicate",
+   "detail"
+  ],
+  "ant": "",
+  "tip": "as specified in the contract(계약서에 명시된 대로), unless otherwise specified가 빈출이며, 형용사 specific, 명사 specifications(사양)와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Please ------- your preferred delivery time when placing your order online.",
+   "o": [
+    "specification",
+    "specific",
+    "specify",
+    "specifically"
+   ],
+   "a": 2,
+   "k": "명령문의 동사 자리이며 목적어 your preferred delivery time을 취하므로 specify가 정답이다."
+  }
+ },
+ {
+  "w": "stipulate",
+  "pos": "v",
+  "m": [
+   "(계약서에) 규정하다, 명기하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The lease *stipulates* that tenants may not keep pets in the building.",
+  "exKo": "임대 계약서에는 세입자가 건물 안에서 반려동물을 키울 수 없다고 규정되어 있다.",
+  "col": [
+   {
+    "e": "stipulate that",
+    "k": "~라고 규정하다"
+   },
+   {
+    "e": "as stipulated in",
+    "k": "~에 규정된 대로"
+   }
+  ],
+  "der": [
+   {
+    "w": "stipulation",
+    "pos": "n",
+    "m": "규정, 조항"
+   }
+  ],
+  "para": [
+   "specify",
+   "state",
+   "require"
+  ],
+  "ant": "",
+  "tip": "계약서·규정이 주어로 오는 경우가 많고 stipulate that절로 쓰이며, Part 7 동의어 문제에서 specify, state로 바꿔 묻는다.",
+  "q": {
+   "s": "The agreement ------- that all payments must be made within 30 days of delivery.",
+   "o": [
+    "stipulates",
+    "stimulates",
+    "stabilizes",
+    "stumbles"
+   ],
+   "a": 0,
+   "k": "계약서가 that절의 내용을 '규정한다'는 의미이므로 stipulates가 정답이다. stimulates(자극하다), stabilizes(안정시키다), stumbles(비틀거리다)는 that절을 취하지 않는다."
+  }
+ },
+ {
+  "w": "retain",
+  "pos": "v",
+  "m": [
+   "보유하다, 유지하다",
+   "(직원·고객을) 계속 두다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Offering excellent after-sales service helps us *retain* our existing customers.",
+  "exKo": "훌륭한 사후 서비스를 제공하는 것은 기존 고객을 유지하는 데 도움이 된다.",
+  "col": [
+   {
+    "e": "retain customers",
+    "k": "고객을 유지하다"
+   },
+   {
+    "e": "retain employees",
+    "k": "직원을 붙잡아 두다"
+   },
+   {
+    "e": "retain a receipt",
+    "k": "영수증을 보관하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "retention",
+    "pos": "n",
+    "m": "보유, 유지"
+   }
+  ],
+  "para": [
+   "keep",
+   "maintain",
+   "hold on to"
+  ],
+  "ant": "",
+  "tip": "retain customers/staff(고객/직원을 유지하다), retain the receipt(영수증을 보관하다)가 빈출이며, 명사형 retention은 customer retention(고객 유지)으로 쓰인다.",
+  "q": {
+   "s": "Customers should ------- their receipts in case they need to return an item.",
+   "o": [
+    "remain",
+    "refrain",
+    "retain",
+    "retire"
+   ],
+   "a": 2,
+   "k": "반품에 대비해 영수증을 '보관하다'라는 의미의 타동사 retain이 정답이다. refrain은 from이 필요하고, remain, retire는 목적어를 취하지 않는다."
+  }
+ },
+ {
+  "w": "cooperate",
+  "pos": "v",
+  "m": [
+   "협력하다, 협조하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The two departments *cooperated* closely to complete the project ahead of schedule.",
+  "exKo": "두 부서는 일정보다 앞서 프로젝트를 끝내기 위해 긴밀히 협력했다.",
+  "col": [
+   {
+    "e": "cooperate with",
+    "k": "~와 협력하다"
+   },
+   {
+    "e": "cooperate on",
+    "k": "~에 대해 협력하다"
+   },
+   {
+    "e": "cooperate fully",
+    "k": "전적으로 협조하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "cooperation",
+    "pos": "n",
+    "m": "협력"
+   },
+   {
+    "w": "cooperative",
+    "pos": "adj",
+    "m": "협조적인"
+   }
+  ],
+  "para": [
+   "collaborate",
+   "work together"
+  ],
+  "ant": "",
+  "tip": "자동사라 cooperate with + 사람, cooperate on + 일로 쓰며, 명사 cooperation은 공지문 끝의 Thank you for your cooperation.으로 자주 나온다.",
+  "q": {
+   "s": "The local government will ------- with private companies to improve public transportation.",
+   "o": [
+    "cooperatively",
+    "cooperation",
+    "cooperative",
+    "cooperate"
+   ],
+   "a": 3,
+   "k": "조동사 will 뒤에는 동사원형이 오므로 cooperate가 정답이다. cooperation은 명사, cooperative는 형용사, cooperatively는 부사다."
+  }
+ },
+ {
+  "w": "concession",
+  "pos": "n",
+  "m": [
+   "양보",
+   "(구내) 매점, 영업권"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Both sides had to make *concessions* to reach a final agreement.",
+  "exKo": "양측은 최종 합의에 이르기 위해 양보를 해야 했다.",
+  "col": [
+   {
+    "e": "make concessions",
+    "k": "양보하다"
+   },
+   {
+    "e": "concession stand",
+    "k": "(경기장 등의) 매점"
+   }
+  ],
+  "der": [
+   {
+    "w": "concede",
+    "pos": "v",
+    "m": "인정하다, 양보하다"
+   }
+  ],
+  "para": [
+   "compromise",
+   "allowance"
+  ],
+  "ant": "",
+  "tip": "협상 지문에서 make a concession(양보하다)으로 쓰이며, 듣기에서는 concession stand(경기장·극장 매점)라는 의미로 나오기도 한다.",
+  "q": {
+   "s": "The union agreed to make some ------- in exchange for greater job security.",
+   "o": [
+    "concentrations",
+    "concessions",
+    "confessions",
+    "conventions"
+   ],
+   "a": 1,
+   "k": "고용 안정을 보장받는 대가로 '양보하다'는 make concessions이므로 concessions가 정답이다. concentrations(집중), confessions(고백), conventions(관례, 대회)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "on behalf of",
+  "pos": "phr",
+  "m": [
+   "~을 대표하여, ~을 대신하여"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Mr. Patel accepted the award *on behalf of* the entire design team.",
+  "exKo": "Patel 씨는 디자인팀 전체를 대표하여 상을 받았다.",
+  "col": [
+   {
+    "e": "on behalf of the company",
+    "k": "회사를 대표하여"
+   },
+   {
+    "e": "on one's behalf",
+    "k": "~을 대신하여"
+   }
+  ],
+  "der": [],
+  "para": [
+   "representing",
+   "in place of"
+  ],
+  "ant": "",
+  "tip": "on behalf of + 사람/단체로 '~을 대표하여'를 뜻하며, on my behalf처럼 소유격과 함께 쓰는 형태도 나온다.",
+  "q": {
+   "s": "Ms. Kwon will sign the contract on ------- of the company's president, who is traveling abroad.",
+   "o": [
+    "instead",
+    "behalf",
+    "place",
+    "regard"
+   ],
+   "a": 1,
+   "k": "on behalf of(~을 대신하여)라는 고정 표현이므로 behalf가 정답이다. instead of, in place of, in regard to는 형태가 맞지 않아 on ~ of 사이에 올 수 없다."
+  }
+ },
+ {
+  "w": "lucrative",
+  "pos": "adj",
+  "m": [
+   "수익성이 좋은, 돈벌이가 되는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The firm recently signed a *lucrative* contract with a national retail chain.",
+  "exKo": "그 회사는 최근 전국 규모의 소매 체인과 수익성 좋은 계약을 체결했다.",
+  "col": [
+   {
+    "e": "lucrative contract",
+    "k": "수익성 좋은 계약"
+   },
+   {
+    "e": "lucrative market",
+    "k": "수익성 높은 시장"
+   },
+   {
+    "e": "lucrative business",
+    "k": "돈벌이가 되는 사업"
+   }
+  ],
+  "der": [],
+  "para": [
+   "profitable",
+   "rewarding",
+   "moneymaking"
+  ],
+  "ant": "unprofitable",
+  "tip": "Part 7 동의어 문제에서 profitable로 바꿔 묻는 대표 고득점 어휘이며, 주로 contract, deal, market 등을 수식한다.",
+  "q": {
+   "s": "The company's expansion into Southeast Asia proved to be highly -------, doubling its profits in two years.",
+   "o": [
+    "lucid",
+    "lenient",
+    "literate",
+    "lucrative"
+   ],
+   "a": 3,
+   "k": "2년 만에 수익을 두 배로 늘렸으므로 '수익성이 좋은'을 뜻하는 lucrative가 정답이다. lenient(관대한), literate(글을 아는), lucid(명쾌한)는 사업 확장의 결과와 어울리지 않는다."
+  }
+ }
+]

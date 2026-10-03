@@ -1,0 +1,2119 @@
+[
+ {
+  "w": "accompany",
+  "pos": "v",
+  "m": [
+   "동반하다, 동행하다",
+   "(~에) 수반되다, 첨부되다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "All visitors must be *accompanied* by a staff member while in the laboratory.",
+  "exKo": "모든 방문객은 실험실에 있는 동안 직원과 동행해야 한다.",
+  "col": [
+   {
+    "e": "be accompanied by",
+    "k": "~을 동반하다, ~이 첨부되다"
+   },
+   {
+    "e": "accompany A to B",
+    "k": "A와 함께 B에 가다"
+   }
+  ],
+  "der": [
+   {
+    "w": "accompaniment",
+    "pos": "n",
+    "m": "동반(물), 반주"
+   }
+  ],
+  "para": [
+   "go with",
+   "escort"
+  ],
+  "ant": "",
+  "tip": "타동사이므로 'accompany with'는 틀리고 목적어를 바로 쓴다. 수동태 'be accompanied by(~이 동반되다, ~이 첨부되다)'가 빈출이다.",
+  "q": {
+   "s": "Refund requests must be ------- by the original receipt.",
+   "o": [
+    "accompanying",
+    "accompaniment",
+    "accompany",
+    "accompanied"
+   ],
+   "a": 3,
+   "k": "환불 요청서에 영수증이 '첨부되어야' 하므로 'be accompanied by'의 과거분사 accompanied가 정답. accompanying은 능동 진행이라 by와 맞지 않고, accompaniment는 명사, accompany는 원형이다."
+  }
+ },
+ {
+  "w": "achieve",
+  "pos": "v",
+  "m": [
+   "달성하다, 성취하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The sales team *achieved* its quarterly target two weeks early.",
+  "exKo": "영업팀은 분기 목표를 2주 일찍 달성했다.",
+  "col": [
+   {
+    "e": "achieve a goal",
+    "k": "목표를 달성하다"
+   },
+   {
+    "e": "achieve success",
+    "k": "성공을 거두다"
+   }
+  ],
+  "der": [
+   {
+    "w": "achievement",
+    "pos": "n",
+    "m": "업적, 성취"
+   },
+   {
+    "w": "achievable",
+    "pos": "adj",
+    "m": "달성 가능한"
+   }
+  ],
+  "para": [
+   "accomplish",
+   "reach",
+   "attain"
+  ],
+  "ant": "",
+  "tip": "goal, target, objective 같은 목표 명사와 짝을 이루는 어휘 문제가 나오며, 명사형 achievement(업적)도 품사 문제로 출제된다.",
+  "q": {
+   "s": "With the new software, the factory hopes to ------- a 20 percent increase in productivity.",
+   "o": [
+    "achieve",
+    "achievement",
+    "achievable",
+    "achiever"
+   ],
+   "a": 0,
+   "k": "to부정사 뒤 동사원형 자리이므로 achieve가 정답. achievement와 achiever는 명사, achievable은 형용사다."
+  }
+ },
+ {
+  "w": "adjust",
+  "pos": "v",
+  "m": [
+   "조정하다, 조절하다",
+   "적응하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "You can *adjust* the height of the desk by pressing the button on the side.",
+  "exKo": "옆면의 버튼을 누르면 책상 높이를 조절할 수 있다.",
+  "col": [
+   {
+    "e": "adjust A to B",
+    "k": "A를 B에 맞추다"
+   },
+   {
+    "e": "adjust to",
+    "k": "~에 적응하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "adjustment",
+    "pos": "n",
+    "m": "조정, 적응"
+   },
+   {
+    "w": "adjustable",
+    "pos": "adj",
+    "m": "조절 가능한"
+   }
+  ],
+  "para": [
+   "modify",
+   "adapt"
+  ],
+  "ant": "",
+  "tip": "자동사로 쓰일 때는 'adjust to(~에 적응하다)'처럼 전치사 to가 필요하다. 형용사 adjustable('adjustable chairs' 높이 조절 의자)이 품사 문제로 나온다.",
+  "q": {
+   "s": "New employees usually need a few weeks to ------- to the company's working environment.",
+   "o": [
+    "adopt",
+    "adjust",
+    "advise",
+    "attribute"
+   ],
+   "a": 1,
+   "k": "전치사 to와 함께 '~에 적응하다'라는 뜻을 이루는 자동사 adjust가 정답. adopt(채택하다), advise(조언하다), attribute(~의 탓으로 돌리다)는 목적어가 필요한 타동사라 이 자리에 맞지 않는다."
+  }
+ },
+ {
+  "w": "adopt",
+  "pos": "v",
+  "m": [
+   "채택하다",
+   "(방식을) 도입하다",
+   "입양하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The city council voted to *adopt* the new recycling policy next year.",
+  "exKo": "시의회는 내년에 새 재활용 정책을 채택하기로 의결했다.",
+  "col": [
+   {
+    "e": "adopt a policy",
+    "k": "정책을 채택하다"
+   },
+   {
+    "e": "adopt a strategy",
+    "k": "전략을 도입하다"
+   },
+   {
+    "e": "adopt a proposal",
+    "k": "제안을 채택하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "adoption",
+    "pos": "n",
+    "m": "채택, 도입"
+   }
+  ],
+  "para": [
+   "implement",
+   "embrace",
+   "take up"
+  ],
+  "ant": "",
+  "tip": "adapt(적응하다, 각색하다)와 철자를 혼동시키는 어휘 문제가 나오며, policy, plan, approach 같은 명사와 짝을 이룬다.",
+  "q": {
+   "s": "The committee voted unanimously to ------- the proposal without any changes.",
+   "o": [
+    "adopt",
+    "adapt",
+    "adept",
+    "adhere"
+   ],
+   "a": 0,
+   "k": "제안을 수정 없이(without any changes) '채택하다'라는 뜻이므로 adopt가 정답. adapt는 '(용도에 맞게) 고치다, 적응하다'라 '수정 없이'와 모순되고, adept는 '능숙한'이라는 형용사, adhere는 'adhere to(~을 고수하다)'로 써야 한다."
+  }
+ },
+ {
+  "w": "advise",
+  "pos": "v",
+  "m": [
+   "조언하다, 권고하다",
+   "알리다, 통지하다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Passengers are *advised* to arrive at the airport at least two hours early.",
+  "exKo": "승객은 적어도 두 시간 일찍 공항에 도착하도록 권고된다.",
+  "col": [
+   {
+    "e": "advise A to do",
+    "k": "A에게 ~하라고 권고하다"
+   },
+   {
+    "e": "be advised that",
+    "k": "~임을 알려 드립니다"
+   },
+   {
+    "e": "advise against",
+    "k": "~하지 말라고 조언하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "advice",
+    "pos": "n",
+    "m": "조언"
+   },
+   {
+    "w": "advisor",
+    "pos": "n",
+    "m": "고문, 조언자"
+   },
+   {
+    "w": "advisory",
+    "pos": "adj",
+    "m": "자문의"
+   }
+  ],
+  "para": [
+   "recommend",
+   "inform",
+   "notify"
+  ],
+  "ant": "",
+  "tip": "'be advised to do(~하도록 권고받다)'와 공지문 'Please be advised that ~(~임을 알려 드립니다)'이 빈출이다. 명사 advice는 불가산이라 an advice, advices는 틀린다.",
+  "q": {
+   "s": "Employees are ------- to save their work frequently during the system upgrade.",
+   "o": [
+    "advice",
+    "advisor",
+    "advisory",
+    "advised"
+   ],
+   "a": 3,
+   "k": "'be advised to do(~하도록 권고받다)' 수동태 구조이므로 과거분사 advised가 정답. advice와 advisor는 명사, advisory는 형용사로 to부정사와 연결되지 않는다."
+  }
+ },
+ {
+  "w": "affect",
+  "pos": "v",
+  "m": [
+   "영향을 미치다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The road construction may *affect* delivery times for the next two weeks.",
+  "exKo": "도로 공사로 인해 앞으로 2주간 배송 시간에 영향이 있을 수 있다.",
+  "col": [
+   {
+    "e": "be affected by",
+    "k": "~의 영향을 받다"
+   },
+   {
+    "e": "adversely affect",
+    "k": "악영향을 미치다"
+   },
+   {
+    "e": "affected areas",
+    "k": "피해 지역"
+   }
+  ],
+  "der": [
+   {
+    "w": "affected",
+    "pos": "adj",
+    "m": "영향을 받은"
+   },
+   {
+    "w": "unaffected",
+    "pos": "adj",
+    "m": "영향을 받지 않은"
+   }
+  ],
+  "para": [
+   "influence",
+   "impact"
+  ],
+  "ant": "",
+  "tip": "affect는 동사, effect는 주로 명사(효과, 영향)로 쓰여 둘을 구분하는 문제가 자주 나온다. 타동사이므로 'affect on'은 틀린다.",
+  "q": {
+   "s": "Flights to the northern region may be ------- by the heavy snowstorm expected tonight.",
+   "o": [
+    "effected",
+    "affected",
+    "effective",
+    "affection"
+   ],
+   "a": 1,
+   "k": "항공편이 폭설의 '영향을 받는' 것이므로 affected가 정답. effected는 '(변화를) 초래된', effective는 '효과적인', affection은 '애정'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "alleviate",
+  "pos": "v",
+  "m": [
+   "완화하다, 경감하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new parking garage should *alleviate* congestion around the stadium.",
+  "exKo": "새 주차 빌딩이 경기장 주변의 혼잡을 완화할 것이다.",
+  "col": [
+   {
+    "e": "alleviate traffic congestion",
+    "k": "교통 혼잡을 완화하다"
+   },
+   {
+    "e": "alleviate concerns",
+    "k": "우려를 덜다"
+   },
+   {
+    "e": "alleviate a shortage",
+    "k": "부족 문제를 완화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "alleviation",
+    "pos": "n",
+    "m": "완화, 경감"
+   }
+  ],
+  "para": [
+   "ease",
+   "relieve",
+   "reduce"
+  ],
+  "ant": "aggravate",
+  "tip": "congestion, burden, concern, shortage 같은 부정적 명사를 목적어로 취하며, Part 7에서는 ease, relieve로 바꿔 표현된다.",
+  "q": {
+   "s": "Hiring additional staff during the holiday season will help ------- the workload of our customer service team.",
+   "o": [
+    "alleviate",
+    "elevate",
+    "accelerate",
+    "appreciate"
+   ],
+   "a": 0,
+   "k": "직원을 더 고용하면 업무 부담이 '덜어지므로' alleviate가 정답. elevate(높이다), accelerate(가속하다), appreciate(감사하다, 인정하다)는 workload와 어울려 이런 의미를 만들지 못한다."
+  }
+ },
+ {
+  "w": "assure",
+  "pos": "v",
+  "m": [
+   "장담하다, 확신시키다",
+   "보장하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The manager *assured* customers that the defective items would be replaced free of charge.",
+  "exKo": "매니저는 고객들에게 결함 있는 제품을 무료로 교환해 주겠다고 장담했다.",
+  "col": [
+   {
+    "e": "assure A that",
+    "k": "A에게 ~라고 장담하다"
+   },
+   {
+    "e": "assure A of B",
+    "k": "A에게 B를 보장하다"
+   },
+   {
+    "e": "rest assured",
+    "k": "안심하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "assurance",
+    "pos": "n",
+    "m": "보장, 확언"
+   },
+   {
+    "w": "assured",
+    "pos": "adj",
+    "m": "확실한, 자신 있는"
+   }
+  ],
+  "para": [
+   "promise",
+   "guarantee"
+  ],
+  "ant": "",
+  "tip": "assure는 사람을 목적어로 취해 'assure + 사람 + that절/of 명사'로 쓰이고, ensure는 사물이나 that절을 바로 목적어로 취한다. 이 차이가 Part 5 단골이다.",
+  "q": {
+   "s": "The hotel manager ------- the guests that their luggage would be delivered to their rooms within an hour.",
+   "o": [
+    "ensured",
+    "insured",
+    "secured",
+    "assured"
+   ],
+   "a": 3,
+   "k": "'사람(the guests) + that절'을 목적어로 취하는 동사는 assure이므로 assured가 정답. ensure와 secure는 사람 목적어 뒤에 that절을 쓰지 않고, insure는 '보험에 들다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "attribute",
+  "pos": "v",
+  "m": [
+   "(~의) 덕분으로 보다",
+   "(~의) 탓으로 돌리다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The CEO *attributed* the company's rapid growth to its loyal customers.",
+  "exKo": "CEO는 회사의 빠른 성장을 충성 고객 덕분으로 돌렸다.",
+  "col": [
+   {
+    "e": "attribute A to B",
+    "k": "A를 B의 덕분(탓)으로 돌리다"
+   },
+   {
+    "e": "be attributed to",
+    "k": "~에 기인하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "attributable",
+    "pos": "adj",
+    "m": "(~에) 기인하는"
+   },
+   {
+    "w": "attribution",
+    "pos": "n",
+    "m": "귀속, 출처 표시"
+   }
+  ],
+  "para": [
+   "credit",
+   "ascribe"
+  ],
+  "ant": "",
+  "tip": "'attribute A to B'의 전치사 to와 수동태 'be attributed to(~ 덕분이다, ~ 때문이다)'가 핵심이다. 명사로는 '속성, 자질'이라는 뜻이며 강세가 앞에 온다.",
+  "q": {
+   "s": "Analysts ------- the decline in sales to rising competition from online retailers.",
+   "o": [
+    "contribute",
+    "distribute",
+    "attribute",
+    "consider"
+   ],
+   "a": 2,
+   "k": "'A(매출 감소)를 B(경쟁 심화) 탓으로 돌리다'라는 'attribute A to B' 구조이므로 attribute가 정답. contribute(기여하다), distribute(배분하다), consider(고려하다)는 이 구조로 원인을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "cease",
+  "pos": "v",
+  "m": [
+   "중단하다, 그만두다",
+   "그치다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The factory will *cease* operations at the end of the year.",
+  "exKo": "그 공장은 연말에 가동을 중단한다.",
+  "col": [
+   {
+    "e": "cease operations",
+    "k": "운영을 중단하다"
+   },
+   {
+    "e": "cease production",
+    "k": "생산을 중단하다"
+   },
+   {
+    "e": "cease to do",
+    "k": "~하기를 그만두다"
+   }
+  ],
+  "der": [
+   {
+    "w": "cessation",
+    "pos": "n",
+    "m": "중단, 정지"
+   },
+   {
+    "w": "ceaseless",
+    "pos": "adj",
+    "m": "끊임없는"
+   }
+  ],
+  "para": [
+   "stop",
+   "discontinue",
+   "halt"
+  ],
+  "ant": "continue",
+  "tip": "to부정사와 동명사를 모두 목적어로 취할 수 있으며, Part 7에서는 stop, discontinue로 바꿔 표현된다. 발음이 비슷한 seize(붙잡다)와 혼동하지 말 것.",
+  "q": {
+   "s": "Due to low demand, the company will ------- production of its compact camera line next month.",
+   "o": [
+    "seize",
+    "resume",
+    "cite",
+    "cease"
+   ],
+   "a": 3,
+   "k": "수요가 낮아 생산을 '중단한다'는 흐름이므로 cease가 정답. seize는 '붙잡다'라는 발음 함정이고, resume(재개하다)은 수요 감소와 논리가 맞지 않으며, cite는 '인용하다'다."
+  }
+ },
+ {
+  "w": "clarify",
+  "pos": "v",
+  "m": [
+   "명확하게 하다",
+   "분명히 설명하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The manager sent an e-mail to *clarify* the new vacation policy.",
+  "exKo": "관리자는 새 휴가 정책을 명확히 설명하기 위해 이메일을 보냈다.",
+  "col": [
+   {
+    "e": "clarify a policy",
+    "k": "정책을 명확히 하다"
+   },
+   {
+    "e": "clarify a point",
+    "k": "요점을 분명히 하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "clarification",
+    "pos": "n",
+    "m": "해명, 설명"
+   },
+   {
+    "w": "clarity",
+    "pos": "n",
+    "m": "명료성"
+   }
+  ],
+  "para": [
+   "explain",
+   "make clear"
+  ],
+  "ant": "",
+  "tip": "명사형 clarification('ask for clarification' 설명을 요청하다)이 품사 문제로 자주 나오며, Part 7에서는 explain으로 바꿔 표현된다.",
+  "q": {
+   "s": "Ms. Patel called the client to ------- some details of the contract before it was signed.",
+   "o": [
+    "clarification",
+    "clarify",
+    "clarity",
+    "clarified"
+   ],
+   "a": 1,
+   "k": "to부정사 뒤 동사원형 자리이므로 clarify가 정답. clarification과 clarity는 명사, clarified는 과거(분사)다."
+  }
+ },
+ {
+  "w": "commence",
+  "pos": "v",
+  "m": [
+   "시작하다, 개시하다"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Construction of the new terminal will *commence* in early spring.",
+  "exKo": "새 터미널 공사는 초봄에 시작된다.",
+  "col": [
+   {
+    "e": "commence operations",
+    "k": "운영을 시작하다"
+   },
+   {
+    "e": "commence on + 날짜",
+    "k": "~에 시작하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "commencement",
+    "pos": "n",
+    "m": "시작, 졸업식"
+   }
+  ],
+  "para": [
+   "begin",
+   "start"
+  ],
+  "ant": "conclude",
+  "tip": "begin, start의 격식체로 공지문에 자주 쓰인다. 명사 commencement는 '시작' 외에 미국에서 '졸업식'을 뜻한다.",
+  "q": {
+   "s": "Boarding will ------- 30 minutes before the scheduled departure time.",
+   "o": [
+    "commend",
+    "comment",
+    "commence",
+    "commute"
+   ],
+   "a": 2,
+   "k": "탑승이 예정 출발 시각 30분 전에 '시작된다'는 뜻이므로 commence가 정답. commend(칭찬하다), comment(논평하다), commute(통근하다)는 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "compile",
+  "pos": "v",
+  "m": [
+   "(자료를) 모으다, 편찬하다",
+   "(목록·보고서를) 작성하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Mr. Shah is *compiling* a list of suppliers that offer bulk discounts.",
+  "exKo": "샤 씨는 대량 구매 할인을 제공하는 공급업체 목록을 작성하고 있다.",
+  "col": [
+   {
+    "e": "compile a list",
+    "k": "목록을 작성하다"
+   },
+   {
+    "e": "compile data",
+    "k": "자료를 수집하다"
+   },
+   {
+    "e": "compile a report",
+    "k": "보고서를 작성하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "compilation",
+    "pos": "n",
+    "m": "편집, 모음집"
+   }
+  ],
+  "para": [
+   "put together",
+   "gather",
+   "collect"
+  ],
+  "ant": "",
+  "tip": "list, data, report, statistics 같은 목적어와 함께 쓰이며, Part 7에서는 'put together'로 바꿔 표현된다.",
+  "q": {
+   "s": "The research assistant spent two weeks ------- data for the annual market report.",
+   "o": [
+    "complying",
+    "complaining",
+    "compiling",
+    "competing"
+   ],
+   "a": 2,
+   "k": "연례 보고서를 위해 자료를 '수집하는' 데 2주를 보낸 것이므로 compiling이 정답. complying(준수하는), complaining(불평하는), competing(경쟁하는)은 data를 목적어로 취하지 않는다."
+  }
+ },
+ {
+  "w": "comprise",
+  "pos": "v",
+  "m": [
+   "~로 구성되다",
+   "구성하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The committee *comprises* twelve members from different departments.",
+  "exKo": "위원회는 여러 부서에서 온 12명의 위원으로 구성된다.",
+  "col": [
+   {
+    "e": "comprise + 구성 요소",
+    "k": "~로 구성되다"
+   },
+   {
+    "e": "be comprised of",
+    "k": "~로 구성되다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "consist of",
+   "be made up of"
+  ],
+  "ant": "",
+  "tip": "comprise는 타동사라 전치사 없이 바로 목적어를 취하며(comprise A), 'be comprised of'도 쓰인다. 'consist of'와 바꿔 쓰는 문제가 나온다.",
+  "q": {
+   "s": "The new design team ------- five engineers and three graphic designers.",
+   "o": [
+    "consists",
+    "composes",
+    "constitutes",
+    "comprises"
+   ],
+   "a": 3,
+   "k": "전치사 없이 구성원을 목적어로 취해 '~로 구성되다'를 뜻하는 comprises가 정답. consists는 of가 필요하고, composes는 'is composed of'로 써야 하며, constitutes는 부분이 전체를 '구성하다'라는 뜻이라 방향이 반대다."
+  }
+ },
+ {
+  "w": "consist of",
+  "pos": "phr",
+  "m": [
+   "~로 구성되다",
+   "~로 이루어지다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The training program *consists of* three online modules and a final exam.",
+  "exKo": "그 교육 과정은 온라인 강좌 세 개와 최종 시험으로 구성된다.",
+  "col": [
+   {
+    "e": "consist mainly of",
+    "k": "주로 ~로 구성되다"
+   },
+   {
+    "e": "consist entirely of",
+    "k": "전적으로 ~로 이루어지다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "be made up of",
+   "comprise",
+   "be composed of"
+  ],
+  "ant": "",
+  "tip": "자동사구이므로 수동태(be consisted of)로 쓸 수 없다. be composed of, be made up of, comprise와 같은 의미로 패러프레이징된다.",
+  "q": {
+   "s": "The judging panel ------- of three professors and two industry experts.",
+   "o": [
+    "comprises",
+    "includes",
+    "contains",
+    "consists"
+   ],
+   "a": 3,
+   "k": "빈칸 뒤 전치사 of와 짝을 이루는 자동사는 consist뿐이므로 consists가 정답. comprises, includes, contains는 타동사라 of 없이 목적어를 바로 취한다."
+  }
+ },
+ {
+  "w": "convey",
+  "pos": "v",
+  "m": [
+   "전달하다",
+   "운반하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The speaker used simple charts to *convey* complex financial information.",
+  "exKo": "발표자는 복잡한 재무 정보를 전달하기 위해 간단한 도표를 사용했다.",
+  "col": [
+   {
+    "e": "convey a message",
+    "k": "메시지를 전달하다"
+   },
+   {
+    "e": "convey one's gratitude",
+    "k": "감사의 뜻을 전하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "conveyor",
+    "pos": "n",
+    "m": "컨베이어, 운반 장치"
+   },
+   {
+    "w": "conveyance",
+    "pos": "n",
+    "m": "운반, 전달"
+   }
+  ],
+  "para": [
+   "communicate",
+   "express",
+   "pass on"
+  ],
+  "ant": "",
+  "tip": "'convey A to B(A를 B에게 전달하다)'로 쓰이며, Part 7에서는 communicate나 express로 바꿔 표현된다. Part 1의 conveyor belt(컨베이어 벨트)도 같은 어원이다.",
+  "q": {
+   "s": "On behalf of the board, I would like to ------- my thanks to everyone who helped organize the charity event.",
+   "o": [
+    "convey",
+    "convert",
+    "convene",
+    "conceive"
+   ],
+   "a": 0,
+   "k": "감사의 뜻을 '전하다'라는 뜻이므로 convey가 정답. convert(전환하다), convene(소집하다), conceive(구상하다)는 thanks를 목적어로 취하지 않는다."
+  }
+ },
+ {
+  "w": "customize",
+  "pos": "v",
+  "m": [
+   "(요구에) 맞추다",
+   "주문 제작하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Users can *customize* the dashboard to display the reports they use most.",
+  "exKo": "사용자는 가장 자주 쓰는 보고서가 표시되도록 대시보드를 맞춤 설정할 수 있다.",
+  "col": [
+   {
+    "e": "customize a product",
+    "k": "제품을 맞춤 제작하다"
+   },
+   {
+    "e": "customize A to B",
+    "k": "A를 B에 맞추다"
+   }
+  ],
+  "der": [
+   {
+    "w": "customized",
+    "pos": "adj",
+    "m": "맞춤형의"
+   },
+   {
+    "w": "customizable",
+    "pos": "adj",
+    "m": "맞춤 설정이 가능한"
+   }
+  ],
+  "para": [
+   "tailor",
+   "personalize"
+  ],
+  "ant": "",
+  "tip": "과거분사형 형용사 customized('customized service' 맞춤 서비스)가 품사 문제로 나오며, Part 7에서는 tailor로 바꿔 표현된다.",
+  "q": {
+   "s": "Our design team can ------- the packaging to match your company's brand colors.",
+   "o": [
+    "customize",
+    "customer",
+    "customary",
+    "customs"
+   ],
+   "a": 0,
+   "k": "조동사 can 뒤 동사원형 자리이므로 customize가 정답. customer(고객)와 customs(세관)는 명사, customary(관례적인)는 형용사다."
+  }
+ },
+ {
+  "w": "deem",
+  "pos": "v",
+  "m": [
+   "(~라고) 여기다, 간주하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The inspector *deemed* the building safe for occupancy.",
+  "exKo": "검사관은 그 건물이 입주하기에 안전하다고 판단했다.",
+  "col": [
+   {
+    "e": "deem A (to be) B",
+    "k": "A를 B로 여기다"
+   },
+   {
+    "e": "be deemed necessary",
+    "k": "필요하다고 여겨지다"
+   },
+   {
+    "e": "as deemed appropriate",
+    "k": "적절하다고 판단되는 대로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "consider",
+   "judge",
+   "regard as"
+  ],
+  "ant": "",
+  "tip": "5형식 동사로 'deem + 목적어 + 형용사/명사' 구조를 취하며, 수동태 'be deemed (to be) + 형용사'가 Part 5에 나온다.",
+  "q": {
+   "s": "Additional security measures will be taken if they are ------- necessary by the safety committee.",
+   "o": [
+    "regarded",
+    "deemed",
+    "thought of",
+    "seen"
+   ],
+   "a": 1,
+   "k": "'be deemed + 형용사(~하다고 여겨지다)' 구조이므로 deemed가 정답. regarded, thought of, seen은 'be regarded as'처럼 as가 있어야 형용사 보어를 취할 수 있다."
+  }
+ },
+ {
+  "w": "designate",
+  "pos": "v",
+  "m": [
+   "지정하다",
+   "임명하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The lounge on the second floor has been *designated* as a quiet work area.",
+  "exKo": "2층 라운지는 조용한 업무 공간으로 지정되었다.",
+  "col": [
+   {
+    "e": "designate A as B",
+    "k": "A를 B로 지정하다"
+   },
+   {
+    "e": "designated area",
+    "k": "지정 구역"
+   },
+   {
+    "e": "designate a successor",
+    "k": "후임자를 지명하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "designation",
+    "pos": "n",
+    "m": "지정, 명칭"
+   }
+  ],
+  "para": [
+   "assign",
+   "appoint",
+   "specify"
+  ],
+  "ant": "",
+  "tip": "'designated parking area(지정 주차 구역)'처럼 과거분사가 명사를 수식하는 형태가 빈출이며, 'designate A as B' 구조도 함께 출제된다.",
+  "q": {
+   "s": "Smoking is permitted only in ------- areas outside the main building.",
+   "o": [
+    "designing",
+    "designate",
+    "designation",
+    "designated"
+   ],
+   "a": 3,
+   "k": "명사 areas를 수식하여 '지정된 구역'을 뜻하는 과거분사 designated가 정답. designing은 '설계하는', designate는 동사원형, designation은 명사라 맞지 않는다."
+  }
+ },
+ {
+  "w": "determine",
+  "pos": "v",
+  "m": [
+   "결정하다",
+   "알아내다, 밝히다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A customer survey will be conducted to *determine* which features are most popular.",
+  "exKo": "어떤 기능이 가장 인기 있는지 알아내기 위해 고객 설문 조사가 실시된다.",
+  "col": [
+   {
+    "e": "determine the cause",
+    "k": "원인을 밝히다"
+   },
+   {
+    "e": "be determined to do",
+    "k": "~하기로 굳게 결심하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "determination",
+    "pos": "n",
+    "m": "결정, 결심"
+   },
+   {
+    "w": "determined",
+    "pos": "adj",
+    "m": "단호한, 결심한"
+   }
+  ],
+  "para": [
+   "decide",
+   "find out",
+   "establish"
+  ],
+  "ant": "",
+  "tip": "'determine the cause(원인을 알아내다)'처럼 '알아내다'의 뜻이 Part 7 동의어 문제로 나온다. 'be determined to do(~하기로 결심하다)'도 빈출이다.",
+  "q": {
+   "s": "Engineers are still trying to ------- the cause of the power outage that occurred yesterday.",
+   "o": [
+    "determine",
+    "determination",
+    "determined",
+    "determining"
+   ],
+   "a": 0,
+   "k": "to부정사 뒤 동사원형 자리이므로 determine이 정답. determination은 명사, determined는 과거(분사)/형용사, determining은 동명사/현재분사다."
+  }
+ },
+ {
+  "w": "devote",
+  "pos": "v",
+  "m": [
+   "(시간·노력을) 바치다, 쏟다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Wong *devoted* most of her career to improving patient care.",
+  "exKo": "웡 씨는 경력의 대부분을 환자 치료 개선에 바쳤다.",
+  "col": [
+   {
+    "e": "devote A to B",
+    "k": "A를 B에 바치다"
+   },
+   {
+    "e": "be devoted to -ing",
+    "k": "~에 전념하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "devotion",
+    "pos": "n",
+    "m": "헌신"
+   },
+   {
+    "w": "devoted",
+    "pos": "adj",
+    "m": "헌신적인"
+   }
+  ],
+  "para": [
+   "dedicate",
+   "commit"
+  ],
+  "ant": "",
+  "tip": "'devote A to B'의 to는 전치사이므로 뒤에 동명사가 온다(devote time to improving). 수동태 'be devoted to(~에 할애되다)'도 빈출이다.",
+  "q": {
+   "s": "The second day of the conference will be ------- to workshops on digital marketing.",
+   "o": [
+    "provided",
+    "devoted",
+    "involved",
+    "engaged"
+   ],
+   "a": 1,
+   "k": "회의 둘째 날이 워크숍에 '할애된다'는 뜻으로 'be devoted to'를 이루는 devoted가 정답. provided는 '제공되다'라 to workshops와 의미가 맞지 않고, involved는 in, engaged는 in과 짝을 이룬다."
+  }
+ },
+ {
+  "w": "disrupt",
+  "pos": "v",
+  "m": [
+   "방해하다, 지장을 주다",
+   "중단시키다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The power outage *disrupted* production at the plant for several hours.",
+  "exKo": "정전으로 몇 시간 동안 공장 생산에 차질이 생겼다.",
+  "col": [
+   {
+    "e": "disrupt service",
+    "k": "서비스에 지장을 주다"
+   },
+   {
+    "e": "disrupt operations",
+    "k": "운영을 방해하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "disruption",
+    "pos": "n",
+    "m": "지장, 중단"
+   },
+   {
+    "w": "disruptive",
+    "pos": "adj",
+    "m": "지장을 주는"
+   }
+  ],
+  "para": [
+   "interrupt",
+   "interfere with"
+  ],
+  "ant": "",
+  "tip": "명사 disruption('service disruption' 서비스 중단)이 공지 지문에 자주 나오며, 'minimize disruption(지장을 최소화하다)' 표현이 빈출이다.",
+  "q": {
+   "s": "The repairs will be scheduled at night so as not to ------- normal business operations.",
+   "o": [
+    "disruption",
+    "disrupt",
+    "disruptive",
+    "disruptively"
+   ],
+   "a": 1,
+   "k": "'so as not to + 동사원형' 구조이므로 disrupt가 정답. disruption은 명사, disruptive는 형용사, disruptively는 부사다."
+  }
+ },
+ {
+  "w": "encounter",
+  "pos": "v",
+  "m": [
+   "(문제 등에) 부딪히다, 맞닥뜨리다",
+   "우연히 만나다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Some users *encountered* problems when they tried to log in after the update.",
+  "exKo": "일부 사용자는 업데이트 후 로그인하려다가 문제를 겪었다.",
+  "col": [
+   {
+    "e": "encounter a problem",
+    "k": "문제에 부딪히다"
+   },
+   {
+    "e": "encounter difficulties",
+    "k": "어려움을 겪다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "experience",
+   "run into",
+   "face"
+  ],
+  "ant": "",
+  "tip": "타동사이므로 'encounter with'가 아니라 바로 목적어를 쓴다. problem, difficulty, delay 같은 명사와 함께 쓰이며, Part 7에서 experience로 바꿔 표현된다.",
+  "q": {
+   "s": "Customers who ------- difficulties with the online payment system should contact technical support.",
+   "o": [
+    "encourage",
+    "enclose",
+    "encounter",
+    "entail"
+   ],
+   "a": 2,
+   "k": "결제 시스템에서 어려움을 '겪는' 고객이므로 encounter가 정답. encourage(격려하다), enclose(동봉하다), entail(수반하다)은 difficulties를 목적어로 이 의미를 만들지 못한다."
+  }
+ },
+ {
+  "w": "ensure",
+  "pos": "v",
+  "m": [
+   "반드시 ~하게 하다",
+   "보장하다, 확실하게 하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The supervisor checks every order to *ensure* that it is shipped on time.",
+  "exKo": "감독관은 모든 주문이 제때 발송되도록 하나하나 확인한다.",
+  "col": [
+   {
+    "e": "ensure that",
+    "k": "반드시 ~하도록 하다"
+   },
+   {
+    "e": "ensure accuracy",
+    "k": "정확성을 확보하다"
+   },
+   {
+    "e": "ensure safety",
+    "k": "안전을 보장하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "guarantee",
+   "make sure"
+  ],
+  "ant": "",
+  "tip": "ensure는 that절이나 사물 명사를 바로 목적어로 취하고, assure는 사람 목적어를 취한다(assure + 사람 + that). 철자가 비슷한 insure(보험에 들다)도 함정으로 나온다.",
+  "q": {
+   "s": "Staff members must wear safety helmets at all times to ------- that no one is injured on the construction site.",
+   "o": [
+    "remind",
+    "ensure",
+    "reassure",
+    "notify"
+   ],
+   "a": 1,
+   "k": "사람 목적어 없이 that절을 바로 취해 '반드시 ~하게 하다'를 뜻하는 ensure가 정답. remind, reassure, notify는 모두 'remind + 사람 + that'처럼 사람 목적어가 먼저 와야 한다."
+  }
+ },
+ {
+  "w": "entitle",
+  "pos": "v",
+  "m": [
+   "자격(권리)을 주다",
+   "제목을 붙이다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "This coupon *entitles* the holder to a free drink with any purchase.",
+  "exKo": "이 쿠폰을 소지한 사람은 구매 시 음료 한 잔을 무료로 받을 수 있다.",
+  "col": [
+   {
+    "e": "be entitled to + 명사",
+    "k": "~을 받을 자격이 있다"
+   },
+   {
+    "e": "be entitled to do",
+    "k": "~할 자격이 있다"
+   },
+   {
+    "e": "a book entitled ~",
+    "k": "~라는 제목의 책"
+   }
+  ],
+  "der": [
+   {
+    "w": "entitlement",
+    "pos": "n",
+    "m": "자격, 권리"
+   }
+  ],
+  "para": [
+   "qualify",
+   "allow"
+  ],
+  "ant": "",
+  "tip": "'be entitled to + 명사/동사원형(~할 자격이 있다)'이 빈출이며, 'a lecture entitled ~(~라는 제목의 강연)'처럼 '제목을 붙이다'의 뜻도 나온다.",
+  "q": {
+   "s": "Full-time employees are ------- to fifteen days of paid vacation per year.",
+   "o": [
+    "entitled",
+    "eligible",
+    "qualified",
+    "allowed"
+   ],
+   "a": 0,
+   "k": "'be entitled to + 명사(~을 받을 자격이 있다)'이므로 entitled가 정답. eligible은 'eligible for + 명사'로 쓰고, qualified와 allowed는 'to + 명사' 형태로 혜택을 받을 자격을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "equip",
+  "pos": "v",
+  "m": [
+   "(장비를) 갖추다, 설비하다"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "All meeting rooms are *equipped* with projectors and video conferencing systems.",
+  "exKo": "모든 회의실에는 프로젝터와 화상 회의 시스템이 갖춰져 있다.",
+  "col": [
+   {
+    "e": "be equipped with",
+    "k": "~을 갖추고 있다"
+   },
+   {
+    "e": "fully equipped",
+    "k": "설비가 완비된"
+   }
+  ],
+  "der": [
+   {
+    "w": "equipment",
+    "pos": "n",
+    "m": "장비, 설비"
+   }
+  ],
+  "para": [
+   "furnish",
+   "outfit",
+   "supply"
+  ],
+  "ant": "",
+  "tip": "'be equipped with(~을 갖추다)'의 전치사 with가 핵심이며, 명사 equipment는 불가산이라 an equipment, equipments는 틀린다.",
+  "q": {
+   "s": "The new fitness center is ------- with the latest exercise machines.",
+   "o": [
+    "equipment",
+    "equipping",
+    "equipped",
+    "equips"
+   ],
+   "a": 2,
+   "k": "'be equipped with(~을 갖추고 있다)' 수동태 구조이므로 과거분사 equipped가 정답. equipment는 명사, equipping은 능동 진행, equips는 be동사 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "facilitate",
+  "pos": "v",
+  "m": [
+   "용이하게 하다, 촉진하다",
+   "(회의 등을) 진행하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new software will *facilitate* communication between our offices in Seoul and London.",
+  "exKo": "새 소프트웨어는 서울과 런던 사무소 간의 의사소통을 원활하게 해 줄 것이다.",
+  "col": [
+   {
+    "e": "facilitate communication",
+    "k": "의사소통을 원활하게 하다"
+   },
+   {
+    "e": "facilitate a discussion",
+    "k": "토론을 진행하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "facilitator",
+    "pos": "n",
+    "m": "진행자"
+   },
+   {
+    "w": "facilitation",
+    "pos": "n",
+    "m": "촉진, 용이하게 함"
+   }
+  ],
+  "para": [
+   "make easier",
+   "assist",
+   "promote"
+  ],
+  "ant": "",
+  "tip": "사람이 아닌 일·과정을 목적어로 취한다(facilitate the process). 'help + 사람 + do'와 혼동시키는 문제가 나오며, 사람명사 facilitator(진행자)도 출제된다.",
+  "q": {
+   "s": "The online booking system was introduced to ------- the reservation process for hotel guests.",
+   "o": [
+    "facilitate",
+    "facility",
+    "facilitator",
+    "facilitation"
+   ],
+   "a": 0,
+   "k": "to부정사 뒤 동사원형 자리이므로 facilitate가 정답. facility(시설), facilitator(진행자), facilitation(촉진)은 모두 명사다."
+  }
+ },
+ {
+  "w": "foster",
+  "pos": "v",
+  "m": [
+   "육성하다, 증진하다",
+   "(아이를) 위탁해 기르다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Team-building events help *foster* a sense of trust among employees.",
+  "exKo": "팀워크 향상 행사는 직원들 사이에 신뢰감을 키우는 데 도움이 된다.",
+  "col": [
+   {
+    "e": "foster cooperation",
+    "k": "협력을 증진하다"
+   },
+   {
+    "e": "foster innovation",
+    "k": "혁신을 촉진하다"
+   },
+   {
+    "e": "foster a culture of",
+    "k": "~의 문화를 조성하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "encourage",
+   "promote",
+   "cultivate"
+  ],
+  "ant": "",
+  "tip": "cooperation, growth, innovation, relationship 같은 긍정적 명사를 목적어로 취하며, Part 7에서는 encourage, promote로 바꿔 표현된다.",
+  "q": {
+   "s": "The mentoring program is designed to ------- closer relationships between senior and junior staff.",
+   "o": [
+    "fasten",
+    "forecast",
+    "foster",
+    "forbid"
+   ],
+   "a": 2,
+   "k": "선후배 직원 간에 더 가까운 관계를 '증진하다'라는 뜻이므로 foster가 정답. fasten(고정하다), forecast(예측하다), forbid(금지하다)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "generate",
+  "pos": "v",
+  "m": [
+   "(수익 등을) 창출하다",
+   "발생시키다, 만들어 내다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new product line *generated* over $3 million in revenue last year.",
+  "exKo": "새 제품군은 작년에 300만 달러가 넘는 매출을 올렸다.",
+  "col": [
+   {
+    "e": "generate revenue",
+    "k": "수익을 창출하다"
+   },
+   {
+    "e": "generate interest",
+    "k": "관심을 불러일으키다"
+   },
+   {
+    "e": "generate electricity",
+    "k": "전기를 생산하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "generation",
+    "pos": "n",
+    "m": "발생, 세대"
+   },
+   {
+    "w": "generator",
+    "pos": "n",
+    "m": "발전기"
+   }
+  ],
+  "para": [
+   "produce",
+   "create",
+   "bring in"
+  ],
+  "ant": "",
+  "tip": "revenue, profit, sales, interest 같은 목적어와 짝을 이루는 어휘 문제가 나온다. 'generate interest(관심을 끌다)'도 Part 7에서 자주 쓰인다.",
+  "q": {
+   "s": "The new solar panels will ------- enough electricity to power the entire factory.",
+   "o": [
+    "generate",
+    "generation",
+    "generator",
+    "generous"
+   ],
+   "a": 0,
+   "k": "조동사 will 뒤 동사원형 자리이고 '전기를 생산하다(generate electricity)'라는 뜻이므로 generate가 정답. generation과 generator는 명사, generous는 '관대한'이라는 형용사다."
+  }
+ },
+ {
+  "w": "hesitate",
+  "pos": "v",
+  "m": [
+   "주저하다, 망설이다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   6,
+   7
+  ],
+  "ex": "Ms. Ahn did not *hesitate* to accept the job offer from the Tokyo office.",
+  "exKo": "안 씨는 도쿄 사무소의 일자리 제안을 망설임 없이 받아들였다.",
+  "col": [
+   {
+    "e": "hesitate to do",
+    "k": "~하기를 망설이다"
+   },
+   {
+    "e": "do not hesitate to",
+    "k": "주저하지 말고 ~하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "hesitation",
+    "pos": "n",
+    "m": "망설임"
+   },
+   {
+    "w": "hesitant",
+    "pos": "adj",
+    "m": "주저하는"
+   }
+  ],
+  "para": [
+   "hold back"
+  ],
+  "ant": "",
+  "tip": "이메일 맺음말 'Please do not hesitate to contact me'가 Part 6·7 단골이며, to부정사를 취한다는 점이 출제된다. 명사구 'without hesitation(망설임 없이)'도 나온다.",
+  "q": {
+   "s": "Customers who have concerns about their orders should not ------- to call our service center.",
+   "o": [
+    "hesitation",
+    "hesitant",
+    "hesitate",
+    "hesitantly"
+   ],
+   "a": 2,
+   "k": "조동사 should not 뒤 동사원형 자리이므로 hesitate가 정답. hesitation은 명사, hesitant는 형용사, hesitantly는 부사다."
+  }
+ },
+ {
+  "w": "identify",
+  "pos": "v",
+  "m": [
+   "확인하다, 알아보다",
+   "찾아내다, 파악하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The audit helped *identify* several ways to reduce operating costs.",
+  "exKo": "회계 감사를 통해 운영비를 줄일 수 있는 몇 가지 방법을 찾아냈다.",
+  "col": [
+   {
+    "e": "identify a problem",
+    "k": "문제를 파악하다"
+   },
+   {
+    "e": "identify A as B",
+    "k": "A를 B로 확인하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "identification",
+    "pos": "n",
+    "m": "신분증, 확인"
+   },
+   {
+    "w": "identifiable",
+    "pos": "adj",
+    "m": "식별 가능한"
+   }
+  ],
+  "para": [
+   "pinpoint",
+   "recognize",
+   "find"
+  ],
+  "ant": "",
+  "tip": "'identify the cause(원인을 찾아내다)'처럼 '파악하다'의 뜻이 Part 7 동의어 문제로 나오며, 명사 identification(신분증)과의 품사 구분이 출제된다.",
+  "q": {
+   "s": "The consultant was hired to ------- areas where the company could improve efficiency.",
+   "o": [
+    "identity",
+    "identical",
+    "identification",
+    "identify"
+   ],
+   "a": 3,
+   "k": "to부정사 뒤 동사원형 자리이므로 identify가 정답. identity(신원)와 identification(확인)은 명사, identical(동일한)은 형용사다."
+  }
+ },
+ {
+  "w": "indicate",
+  "pos": "v",
+  "m": [
+   "나타내다, 보여 주다",
+   "명시하다, 표시하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Early sales figures *indicate* that the new model is more popular than expected.",
+  "exKo": "초기 판매 수치는 신모델이 예상보다 인기가 높다는 것을 보여 준다.",
+  "col": [
+   {
+    "e": "indicate that",
+    "k": "~임을 나타내다"
+   },
+   {
+    "e": "as indicated",
+    "k": "명시된 대로"
+   }
+  ],
+  "der": [
+   {
+    "w": "indication",
+    "pos": "n",
+    "m": "표시, 징후"
+   },
+   {
+    "w": "indicator",
+    "pos": "n",
+    "m": "지표"
+   }
+  ],
+  "para": [
+   "show",
+   "suggest",
+   "state"
+  ],
+  "ant": "",
+  "tip": "Part 7 질문 'What is indicated about ~?(~에 대해 언급된 것은?)'의 핵심 동사다. 'as indicated in the brochure(안내 책자에 명시된 대로)'도 빈출이다.",
+  "q": {
+   "s": "Please ------- your preferred meal option on the registration form.",
+   "o": [
+    "indication",
+    "indicator",
+    "indicative",
+    "indicate"
+   ],
+   "a": 3,
+   "k": "Please 뒤 명령문의 동사원형 자리이므로 indicate가 정답. indication과 indicator는 명사, indicative는 형용사다."
+  }
+ },
+ {
+  "w": "obtain",
+  "pos": "v",
+  "m": [
+   "얻다, 획득하다",
+   "입수하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Visitors must *obtain* a parking permit from the security office.",
+  "exKo": "방문객은 경비실에서 주차 허가증을 받아야 한다.",
+  "col": [
+   {
+    "e": "obtain permission",
+    "k": "허가를 받다"
+   },
+   {
+    "e": "obtain a permit",
+    "k": "허가증을 얻다"
+   },
+   {
+    "e": "obtain information",
+    "k": "정보를 얻다"
+   }
+  ],
+  "der": [
+   {
+    "w": "obtainable",
+    "pos": "adj",
+    "m": "얻을 수 있는"
+   }
+  ],
+  "para": [
+   "get",
+   "acquire",
+   "secure"
+  ],
+  "ant": "",
+  "tip": "permission, approval, permit, information 같은 목적어와 쓰이며, 'obtain A from B(B에게서 A를 얻다)'의 전치사 from이 함께 나온다.",
+  "q": {
+   "s": "Employees must ------- approval from their supervisor before purchasing office equipment.",
+   "o": [
+    "contain",
+    "obtain",
+    "retain",
+    "maintain"
+   ],
+   "a": 1,
+   "k": "상사로부터 승인을 '받아야' 한다는 뜻이므로 obtain이 정답. contain(포함하다), retain(보유하다), maintain(유지하다)은 'approval from ~'과 어울려 이런 의미를 만들지 못한다."
+  }
+ },
+ {
+  "w": "pursue",
+  "pos": "v",
+  "m": [
+   "추구하다",
+   "(일·학업을) 계속하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Lim left the company to *pursue* a master's degree in economics.",
+  "exKo": "임 씨는 경제학 석사 학위를 취득하기 위해 회사를 그만두었다.",
+  "col": [
+   {
+    "e": "pursue a career",
+    "k": "경력을 쌓다"
+   },
+   {
+    "e": "pursue a degree",
+    "k": "학위 과정을 밟다"
+   },
+   {
+    "e": "pursue an opportunity",
+    "k": "기회를 좇다"
+   }
+  ],
+  "der": [
+   {
+    "w": "pursuit",
+    "pos": "n",
+    "m": "추구"
+   }
+  ],
+  "para": [
+   "seek",
+   "follow"
+  ],
+  "ant": "",
+  "tip": "career, degree, goal, opportunity를 목적어로 취하며, 명사 pursuit('in pursuit of' ~을 추구하여)도 Part 5에 나온다.",
+  "q": {
+   "s": "After ten years in sales, Mr. Ford decided to ------- a career in marketing.",
+   "o": [
+    "persuade",
+    "purchase",
+    "pursue",
+    "pursuit"
+   ],
+   "a": 2,
+   "k": "마케팅 분야의 경력을 '추구하다'라는 뜻이므로 pursue가 정답. persuade(설득하다), purchase(구매하다)는 의미가 맞지 않고, pursuit는 명사다."
+  }
+ },
+ {
+  "w": "reflect",
+  "pos": "v",
+  "m": [
+   "반영하다, 나타내다",
+   "(빛 등을) 반사하다",
+   "숙고하다"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "The price increase *reflects* the rising cost of raw materials.",
+  "exKo": "가격 인상은 원자재 비용 상승을 반영한다.",
+  "col": [
+   {
+    "e": "reflect changes",
+    "k": "변경 사항을 반영하다"
+   },
+   {
+    "e": "reflect on",
+    "k": "~을 되돌아보다"
+   },
+   {
+    "e": "be reflected in",
+    "k": "~에 비치다, 반영되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "reflection",
+    "pos": "n",
+    "m": "반영, 반사"
+   },
+   {
+    "w": "reflective",
+    "pos": "adj",
+    "m": "반사하는, 사색적인"
+   }
+  ],
+  "para": [
+   "show",
+   "indicate",
+   "mirror"
+  ],
+  "ant": "",
+  "tip": "'reflect the changes(변경 사항을 반영하다)'처럼 수정 공지에 자주 쓰이며, Part 1에서는 'be reflected in the water(물에 비치다)'로 나온다.",
+  "q": {
+   "s": "The updated price list will ------- the changes in shipping costs.",
+   "o": [
+    "reflection",
+    "reflective",
+    "reflect",
+    "reflectively"
+   ],
+   "a": 2,
+   "k": "조동사 will 뒤 동사원형 자리이므로 reflect가 정답. reflection은 명사, reflective는 형용사, reflectively는 부사다."
+  }
+ },
+ {
+  "w": "refrain from",
+  "pos": "phr",
+  "m": [
+   "~을 삼가다, 자제하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Audience members are asked to *refrain from* using mobile phones during the performance.",
+  "exKo": "관객은 공연 중에 휴대 전화 사용을 삼가 달라는 요청을 받는다.",
+  "col": [
+   {
+    "e": "refrain from -ing",
+    "k": "~하는 것을 삼가다"
+   },
+   {
+    "e": "kindly refrain from",
+    "k": "~을 삼가 주십시오"
+   }
+  ],
+  "der": [],
+  "para": [
+   "avoid",
+   "abstain from"
+  ],
+  "ant": "",
+  "tip": "from은 전치사이므로 뒤에 동명사가 온다(refrain from taking). 공지문의 'Please refrain from ~' 표현이 Part 4·7 단골이다.",
+  "q": {
+   "s": "Visitors are asked to ------- from taking photographs inside the gallery.",
+   "o": [
+    "prevent",
+    "refrain",
+    "prohibit",
+    "restrict"
+   ],
+   "a": 1,
+   "k": "목적어 없이 바로 from을 취하는 자동사 refrain이 정답. prevent, prohibit, restrict는 타동사라 'prevent + 목적어 + from -ing'처럼 목적어가 먼저 와야 한다."
+  }
+ },
+ {
+  "w": "reinforce",
+  "pos": "v",
+  "m": [
+   "강화하다, 보강하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The engineers *reinforced* the old bridge with steel supports.",
+  "exKo": "기술자들은 강철 지지대로 오래된 다리를 보강했다.",
+  "col": [
+   {
+    "e": "reinforce security",
+    "k": "보안을 강화하다"
+   },
+   {
+    "e": "reinforce a message",
+    "k": "메시지를 강화하다"
+   },
+   {
+    "e": "reinforced concrete",
+    "k": "철근 콘크리트"
+   }
+  ],
+  "der": [
+   {
+    "w": "reinforcement",
+    "pos": "n",
+    "m": "강화, 보강"
+   }
+  ],
+  "para": [
+   "strengthen",
+   "support",
+   "bolster"
+  ],
+  "ant": "",
+  "tip": "물리적 보강(reinforce a wall)과 추상적 강화(reinforce a brand image) 모두에 쓰이며, Part 7에서 strengthen으로 바꿔 표현된다.",
+  "q": {
+   "s": "The new advertising campaign is designed to ------- the company's image as an eco-friendly brand.",
+   "o": [
+    "reimburse",
+    "relocate",
+    "refund",
+    "reinforce"
+   ],
+   "a": 3,
+   "k": "친환경 브랜드라는 이미지를 '강화하다'라는 뜻이므로 reinforce가 정답. reimburse(상환하다), relocate(이전하다), refund(환불하다)는 image와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "solicit",
+  "pos": "v",
+  "m": [
+   "요청하다, 간청하다",
+   "(의견·기부를) 구하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The city is *soliciting* public comments on the proposed bike lanes.",
+  "exKo": "시는 자전거 전용 도로 설치안에 대해 시민 의견을 구하고 있다.",
+  "col": [
+   {
+    "e": "solicit feedback",
+    "k": "의견을 구하다"
+   },
+   {
+    "e": "solicit donations",
+    "k": "기부를 요청하다"
+   },
+   {
+    "e": "solicit bids",
+    "k": "입찰을 요청하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "solicitation",
+    "pos": "n",
+    "m": "요청, 권유"
+   }
+  ],
+  "para": [
+   "request",
+   "seek",
+   "ask for"
+  ],
+  "ant": "",
+  "tip": "feedback, input, donations, proposals를 목적어로 취하며, Part 7에서 request, ask for로 바꿔 표현된다. 'No soliciting(판매·권유 금지)' 표지로도 나온다.",
+  "q": {
+   "s": "The management team is ------- suggestions from employees on how to improve the workplace.",
+   "o": [
+    "resolving",
+    "soliciting",
+    "consoling",
+    "isolating"
+   ],
+   "a": 1,
+   "k": "직원들에게 제안을 '구하고' 있다는 뜻이므로 soliciting이 정답. resolving(해결하는), consoling(위로하는), isolating(고립시키는)은 suggestions from ~과 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "undergo",
+  "pos": "v",
+  "m": [
+   "(변화·검사 등을) 겪다, 받다"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "The office building is currently *undergoing* major renovations.",
+  "exKo": "그 사무실 건물은 현재 대규모 보수 공사 중이다.",
+  "col": [
+   {
+    "e": "undergo renovations",
+    "k": "보수 공사를 하다"
+   },
+   {
+    "e": "undergo training",
+    "k": "교육을 받다"
+   },
+   {
+    "e": "undergo an inspection",
+    "k": "점검을 받다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "go through",
+   "experience"
+  ],
+  "ant": "",
+  "tip": "renovation, inspection, training, changes 같은 명사를 목적어로 취하는 타동사다. 불규칙 변화(undergo-underwent-undergone)와 진행형 'be undergoing'이 자주 출제된다.",
+  "q": {
+   "s": "All new machinery must ------- a safety inspection before it can be used in the factory.",
+   "o": [
+    "undertake",
+    "underline",
+    "undergo",
+    "underestimate"
+   ],
+   "a": 2,
+   "k": "기계가 안전 점검을 '받아야' 하므로 undergo가 정답. undertake는 사람이 일을 '맡다'라는 뜻이라 기계 주어와 맞지 않고, underline(강조하다), underestimate(과소평가하다)도 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "utilize",
+  "pos": "v",
+  "m": [
+   "활용하다, 이용하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company *utilizes* solar panels to power its main warehouse.",
+  "exKo": "그 회사는 주 창고에 전력을 공급하기 위해 태양광 패널을 활용한다.",
+  "col": [
+   {
+    "e": "utilize resources",
+    "k": "자원을 활용하다"
+   },
+   {
+    "e": "fully utilize",
+    "k": "충분히 활용하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "utilization",
+    "pos": "n",
+    "m": "활용, 이용"
+   },
+   {
+    "w": "utility",
+    "pos": "n",
+    "m": "유용성, 공공요금"
+   }
+  ],
+  "para": [
+   "use",
+   "make use of",
+   "employ"
+  ],
+  "ant": "",
+  "tip": "use의 격식 표현으로 resources, space, technology 같은 목적어와 쓰인다. 명사 utility는 'utility bills(공과금)'의 뜻으로 따로 출제된다.",
+  "q": {
+   "s": "Staff are encouraged to ------- the new online training resources to improve their skills.",
+   "o": [
+    "utilize",
+    "utility",
+    "utilization",
+    "utilitarian"
+   ],
+   "a": 0,
+   "k": "to부정사 뒤 동사원형 자리이므로 utilize가 정답. utility와 utilization은 명사, utilitarian은 '실용적인'이라는 형용사다."
+  }
+ }
+]

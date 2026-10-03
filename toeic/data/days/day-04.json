@@ -1,0 +1,2053 @@
+[
+ {
+  "w": "agenda",
+  "pos": "n",
+  "m": [
+   "의제, 안건",
+   "(회의) 일정표"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The first item on the *agenda* is the marketing budget for next quarter.",
+  "exKo": "안건의 첫 번째 항목은 다음 분기 마케팅 예산이다.",
+  "col": [
+   {
+    "e": "on the agenda",
+    "k": "안건에 올라 있는"
+   },
+   {
+    "e": "set the agenda",
+    "k": "의제를 정하다"
+   },
+   {
+    "e": "meeting agenda",
+    "k": "회의 안건"
+   }
+  ],
+  "der": [],
+  "para": [
+   "schedule",
+   "program"
+  ],
+  "ant": "",
+  "tip": "'on the agenda'(안건에 올라 있는)처럼 전치사 on과 함께 쓰이며, Part 3·4에서 '다음 안건은 무엇인가'를 묻는 문제의 단서가 된다.",
+  "q": {
+   "s": "The marketing director added two more topics to the ------- for Friday's meeting.",
+   "o": [
+    "attendance",
+    "signature",
+    "venue",
+    "agenda"
+   ],
+   "a": 3,
+   "k": "금요일 회의에서 다룰 '주제(topics)'를 추가하는 대상은 안건 목록인 agenda이다. attendance(출석), venue(장소), signature(서명)는 주제를 추가할 대상이 아니다."
+  }
+ },
+ {
+  "w": "minutes",
+  "pos": "n",
+  "m": [
+   "회의록",
+   "의사록"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Kim will take the *minutes* at this afternoon's board meeting.",
+  "exKo": "Kim 씨가 오늘 오후 이사회에서 회의록을 작성할 것이다.",
+  "col": [
+   {
+    "e": "take the minutes",
+    "k": "회의록을 작성하다"
+   },
+   {
+    "e": "minutes of the meeting",
+    "k": "회의록"
+   },
+   {
+    "e": "distribute the minutes",
+    "k": "회의록을 배포하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "meeting notes",
+   "record"
+  ],
+  "ant": "",
+  "tip": "시간 단위 '분'과 달리 '회의록'은 항상 복수형 minutes로 쓰며, take the minutes(회의록을 작성하다)가 대표 표현이다.",
+  "q": {
+   "s": "Employees who missed yesterday's meeting can read the ------- to find out what was decided.",
+   "o": [
+    "agenda",
+    "invitation",
+    "minutes",
+    "attendance"
+   ],
+   "a": 2,
+   "k": "이미 끝난 회의에서 '무엇이 결정되었는지' 확인하려면 회의 내용을 기록한 minutes를 읽어야 한다. agenda는 회의 전에 정하는 안건이라 결정 사항이 담겨 있지 않다."
+  }
+ },
+ {
+  "w": "attend",
+  "pos": "v",
+  "m": [
+   "참석하다",
+   "(학교 등에) 다니다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "More than 200 sales representatives are expected to *attend* the annual conference.",
+  "exKo": "200명이 넘는 영업 사원이 연례 회의에 참석할 것으로 예상된다.",
+  "col": [
+   {
+    "e": "attend a meeting",
+    "k": "회의에 참석하다"
+   },
+   {
+    "e": "attend to",
+    "k": "~을 처리하다, 돌보다"
+   }
+  ],
+  "der": [
+   {
+    "w": "attendance",
+    "pos": "n",
+    "m": "참석, 출석자 수"
+   },
+   {
+    "w": "attendee",
+    "pos": "n",
+    "m": "참석자"
+   },
+   {
+    "w": "attendant",
+    "pos": "n",
+    "m": "안내원, 수행원"
+   }
+  ],
+  "para": [
+   "participate in",
+   "be present at",
+   "go to"
+  ],
+  "ant": "miss",
+  "tip": "'~에 참석하다'의 attend는 타동사라 attend the meeting처럼 전치사 없이 목적어를 쓴다. attend to는 '~을 처리하다'라는 별개의 뜻이다.",
+  "q": {
+   "s": "All department heads are required to ------- the safety training session next Monday.",
+   "o": [
+    "attendance",
+    "attend",
+    "attendee",
+    "attended"
+   ],
+   "a": 1,
+   "k": "be required to 뒤에는 동사원형이 오므로 attend가 정답이다. attendance, attendee는 명사, attended는 과거형이라 to 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "attendee",
+  "pos": "n",
+  "m": [
+   "참석자"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Each *attendee* will receive a name tag and a conference program at the entrance.",
+  "exKo": "각 참석자는 입구에서 이름표와 회의 프로그램을 받게 된다.",
+  "col": [
+   {
+    "e": "conference attendees",
+    "k": "회의 참석자"
+   },
+   {
+    "e": "registered attendees",
+    "k": "등록된 참석자"
+   }
+  ],
+  "der": [
+   {
+    "w": "attend",
+    "pos": "v",
+    "m": "참석하다"
+   },
+   {
+    "w": "attendance",
+    "pos": "n",
+    "m": "참석, 참석자 수"
+   }
+  ],
+  "para": [
+   "participant"
+  ],
+  "ant": "",
+  "tip": "-ee는 '~하는 사람'을 나타내는 접미사로, 사람명사 attendee와 '참석, 참석자 수'를 뜻하는 attendance를 구분하는 문제가 자주 나온다.",
+  "q": {
+   "s": "Lunch will be provided for all registered ------- at the workshop.",
+   "o": [
+    "attendance",
+    "attendees",
+    "attending",
+    "attends"
+   ],
+   "a": 1,
+   "k": "점심을 제공받는 대상은 '사람'이고 all의 수식을 받으므로 복수 사람명사 attendees가 정답이다. attendance는 '참석'이라는 행위·수를 뜻해 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "convene",
+  "pos": "v",
+  "m": [
+   "(회의를) 소집하다",
+   "모이다, 회합하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The board will *convene* next Tuesday to discuss the proposed merger.",
+  "exKo": "이사회는 제안된 합병을 논의하기 위해 다음 주 화요일에 회의를 연다.",
+  "col": [
+   {
+    "e": "convene a meeting",
+    "k": "회의를 소집하다"
+   },
+   {
+    "e": "convene a committee",
+    "k": "위원회를 소집하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "convention",
+    "pos": "n",
+    "m": "대회, 협의회"
+   }
+  ],
+  "para": [
+   "meet",
+   "assemble",
+   "gather"
+  ],
+  "ant": "",
+  "tip": "'모이다'(자동사)와 '(회의를) 소집하다'(타동사)로 모두 쓰이며, 명사형 convention(대규모 회의, 대회)과 함께 Part 7 공지문에 자주 등장한다.",
+  "q": {
+   "s": "The CEO decided to ------- an emergency meeting after the quarterly figures were released.",
+   "o": [
+    "comply",
+    "convene",
+    "confide",
+    "consent"
+   ],
+   "a": 1,
+   "k": "목적어 an emergency meeting을 취해 '긴급회의를 소집하다'가 되는 convene이 정답이다. comply(with), confide(in), consent(to)는 모두 전치사가 필요한 자동사이고 의미도 맞지 않는다."
+  }
+ },
+ {
+  "w": "postpone",
+  "pos": "v",
+  "m": [
+   "연기하다, 미루다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "The product launch has been *postponed* until early next month.",
+  "exKo": "제품 출시가 다음 달 초로 연기되었다.",
+  "col": [
+   {
+    "e": "postpone A until B",
+    "k": "A를 B까지 연기하다"
+   },
+   {
+    "e": "postpone a meeting",
+    "k": "회의를 연기하다"
+   },
+   {
+    "e": "postpone making a decision",
+    "k": "결정을 미루다"
+   }
+  ],
+  "der": [
+   {
+    "w": "postponement",
+    "pos": "n",
+    "m": "연기"
+   }
+  ],
+  "para": [
+   "put off",
+   "delay",
+   "push back"
+  ],
+  "ant": "",
+  "tip": "postpone은 동명사를 목적어로 취하며(postpone making a decision), 'until/to + 시점'과 함께 쓰인다. 같은 뜻의 구동사 put off가 패러프레이징으로 나온다.",
+  "q": {
+   "s": "Due to the heavy snowstorm, the outdoor company picnic has been ------- until next Saturday.",
+   "o": [
+    "postponed",
+    "postpone",
+    "postponing",
+    "postponement"
+   ],
+   "a": 0,
+   "k": "has been 뒤에 과거분사가 와서 '연기되었다'라는 수동태를 이루므로 postponed가 정답이다. postponing은 능동 진행이라 목적어가 없는 이 문장에 맞지 않는다."
+  }
+ },
+ {
+  "w": "reschedule",
+  "pos": "v",
+  "m": [
+   "일정을 다시 잡다, 일정을 변경하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Mr. Lopez asked his assistant to *reschedule* the client meeting for Thursday morning.",
+  "exKo": "Lopez 씨는 비서에게 고객 회의를 목요일 오전으로 다시 잡아 달라고 요청했다.",
+  "col": [
+   {
+    "e": "reschedule an appointment",
+    "k": "예약 일정을 변경하다"
+   },
+   {
+    "e": "reschedule A for B",
+    "k": "A를 B로 일정을 다시 잡다"
+   }
+  ],
+  "der": [
+   {
+    "w": "schedule",
+    "pos": "n",
+    "m": "일정, 일정표"
+   }
+  ],
+  "para": [
+   "change the time of",
+   "move"
+  ],
+  "ant": "",
+  "tip": "Part 3·4에서 reschedule an appointment가 '일정 변경 요청'의 정답 단서로 자주 쓰이며, 새 날짜는 for 또는 to로 연결한다.",
+  "q": {
+   "s": "Ms. Chen called the dental clinic to ------- her appointment because of a scheduling conflict.",
+   "o": [
+    "remind",
+    "renew",
+    "retain",
+    "reschedule"
+   ],
+   "a": 3,
+   "k": "일정이 겹쳐서(scheduling conflict) 병원에 전화한 목적은 예약 일정을 바꾸는 것이므로 reschedule이 정답이다. remind는 사람을 목적어로 취하고, renew(갱신하다), retain(보유하다)은 appointment와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "call off",
+  "pos": "phr",
+  "m": [
+   "취소하다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "The organizers *called off* the outdoor concert because of heavy rain.",
+  "exKo": "주최 측은 폭우 때문에 야외 콘서트를 취소했다.",
+  "col": [
+   {
+    "e": "call off a meeting",
+    "k": "회의를 취소하다"
+   },
+   {
+    "e": "call off an event",
+    "k": "행사를 취소하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "cancel"
+  ],
+  "ant": "",
+  "tip": "call off는 cancel과 같은 뜻의 구동사로 Part 7에서 서로 바꿔 쓰이며, 목적어가 대명사이면 call it off처럼 가운데에 넣는다.",
+  "q": {
+   "s": "The board meeting was called ------- because the chairperson was suddenly taken ill.",
+   "o": [
+    "up",
+    "off",
+    "for",
+    "out"
+   ],
+   "a": 1,
+   "k": "의장이 갑자기 아파서 회의가 '취소되었다'는 의미이므로 call off의 수동태인 called off가 정답이다. called for(요구되다), called up(소집되다), called out(호명되다)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "adjourn",
+  "pos": "v",
+  "m": [
+   "(회의를) 마치다, 폐회하다",
+   "휴회하다"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The chairperson *adjourned* the meeting at 5 p.m. after all issues were resolved.",
+  "exKo": "의장은 모든 사안이 해결된 후 오후 5시에 회의를 폐회했다.",
+  "col": [
+   {
+    "e": "adjourn a meeting",
+    "k": "회의를 마치다"
+   },
+   {
+    "e": "adjourn for lunch",
+    "k": "점심 식사를 위해 휴회하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "adjournment",
+    "pos": "n",
+    "m": "휴회, 폐회"
+   }
+  ],
+  "para": [
+   "end",
+   "close",
+   "wrap up"
+  ],
+  "ant": "",
+  "tip": "회의를 '끝내다' 또는 '잠시 중단하다'라는 뜻으로, 공지문이나 Part 4에서 The meeting is adjourned.나 adjourn for lunch(점심 휴회) 형태로 나온다.",
+  "q": {
+   "s": "Since there were no further questions, the director ------- the meeting and thanked everyone for coming.",
+   "o": [
+    "attended",
+    "adjourned",
+    "presented",
+    "objected"
+   ],
+   "a": 1,
+   "k": "더 이상 질문이 없어서 참석자들에게 감사 인사를 하며 회의를 '마쳤다'는 흐름이므로 adjourned가 정답이다. objected는 to가 필요하고, attended, presented는 회의를 진행하는 사람의 행동으로 어울리지 않는다."
+  }
+ },
+ {
+  "w": "preside over",
+  "pos": "phr",
+  "m": [
+   "~을 주재하다, ~의 사회를 보다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Dr. Patel will *preside over* the opening session of the medical conference.",
+  "exKo": "Patel 박사가 의학 학회의 개회 세션을 주재할 것이다.",
+  "col": [
+   {
+    "e": "preside over a meeting",
+    "k": "회의를 주재하다"
+   },
+   {
+    "e": "preside at a ceremony",
+    "k": "의식에서 사회를 보다"
+   }
+  ],
+  "der": [
+   {
+    "w": "president",
+    "pos": "n",
+    "m": "회장, 사장"
+   }
+  ],
+  "para": [
+   "chair",
+   "lead",
+   "run"
+  ],
+  "ant": "",
+  "tip": "preside는 자동사라 목적어 앞에 over(또는 at)가 필요하며, 같은 뜻의 타동사 chair와 패러프레이징된다.",
+  "q": {
+   "s": "Ms. Ortega, the vice president of operations, will preside ------- the annual shareholders' meeting.",
+   "o": [
+    "to",
+    "with",
+    "on",
+    "over"
+   ],
+   "a": 3,
+   "k": "preside는 자동사로 '~을 주재하다'는 preside over로 쓴다. to, with, on은 preside와 짝을 이루지 않는다."
+  }
+ },
+ {
+  "w": "chair",
+  "pos": "v",
+  "m": [
+   "(회의의) 의장을 맡다",
+   "사회를 보다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Mr. Davis has been asked to *chair* the budget committee this year.",
+  "exKo": "Davis 씨는 올해 예산 위원회의 의장을 맡아 달라는 요청을 받았다.",
+  "col": [
+   {
+    "e": "chair a meeting",
+    "k": "회의의 의장을 맡다"
+   },
+   {
+    "e": "chair a committee",
+    "k": "위원회의 의장을 맡다"
+   }
+  ],
+  "der": [
+   {
+    "w": "chairperson",
+    "pos": "n",
+    "m": "의장"
+   },
+   {
+    "w": "chairman",
+    "pos": "n",
+    "m": "회장, 의장"
+   }
+  ],
+  "para": [
+   "preside over",
+   "lead",
+   "head"
+  ],
+  "ant": "",
+  "tip": "'의자' 외에 '의장을 맡다'라는 타동사로 쓰여 chair a meeting처럼 바로 목적어를 취한다. 같은 뜻의 preside는 over가 필요하다는 점과 대비해 출제된다.",
+  "q": {
+   "s": "Ms. Nakamura will ------- the committee meeting while the director is on a business trip.",
+   "o": [
+    "preside",
+    "chair",
+    "object",
+    "occupy"
+   ],
+   "a": 1,
+   "k": "빈칸 뒤 목적어 the committee meeting을 바로 취해 '의장을 맡다'가 되는 타동사 chair가 정답이다. preside는 over, object는 to가 필요하며, occupy(차지하다)는 회의와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "presentation",
+  "pos": "n",
+  "m": [
+   "발표, 프레젠테이션",
+   "제출, 제시"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5
+  ],
+  "ex": "Mr. Grant gave an impressive *presentation* on the new marketing strategy.",
+  "exKo": "Grant 씨는 새 마케팅 전략에 관해 인상적인 발표를 했다.",
+  "col": [
+   {
+    "e": "give a presentation",
+    "k": "발표하다"
+   },
+   {
+    "e": "presentation on",
+    "k": "~에 관한 발표"
+   }
+  ],
+  "der": [
+   {
+    "w": "present",
+    "pos": "v",
+    "m": "발표하다, 제시하다"
+   },
+   {
+    "w": "presenter",
+    "pos": "n",
+    "m": "발표자"
+   }
+  ],
+  "para": [
+   "talk",
+   "speech"
+  ],
+  "ant": "",
+  "tip": "give/make/deliver a presentation이 짝을 이루며 주제는 on으로 연결한다. 사람명사 presenter(발표자)와의 구분도 출제된다.",
+  "q": {
+   "s": "Ms. Ford will give a ------- on the quarterly sales results right after lunch.",
+   "o": [
+    "presentation",
+    "presenter",
+    "present",
+    "presented"
+   ],
+   "a": 0,
+   "k": "give a presentation on(~에 관해 발표하다)이 되어야 하므로 presentation이 정답이다. presenter는 사람이라 give의 목적어로 어색하고, present는 명사일 때 '선물'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "proposal",
+  "pos": "n",
+  "m": [
+   "제안(서), 기획안"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The committee rejected the *proposal* to extend store hours on weekends.",
+  "exKo": "위원회는 주말 영업시간을 연장하자는 제안을 거절했다.",
+  "col": [
+   {
+    "e": "submit a proposal",
+    "k": "제안서를 제출하다"
+   },
+   {
+    "e": "proposal for",
+    "k": "~에 대한 제안"
+   },
+   {
+    "e": "budget proposal",
+    "k": "예산안"
+   }
+  ],
+  "der": [
+   {
+    "w": "propose",
+    "pos": "v",
+    "m": "제안하다"
+   }
+  ],
+  "para": [
+   "suggestion",
+   "plan"
+  ],
+  "ant": "",
+  "tip": "관사 뒤나 submit, approve의 목적어 자리에는 명사 proposal이 오며, 동사 propose와의 품사 구분이 자주 출제된다.",
+  "q": {
+   "s": "All project ------- must be submitted to the review committee by March 15.",
+   "o": [
+    "propose",
+    "proposing",
+    "proposals",
+    "proposed"
+   ],
+   "a": 2,
+   "k": "All project 뒤에서 주어 역할을 하는 명사가 필요하므로 proposals가 정답이다. project proposals는 '프로젝트 제안서'라는 복합명사이며, 나머지는 동사 형태다."
+  }
+ },
+ {
+  "w": "propose",
+  "pos": "v",
+  "m": [
+   "제안하다",
+   "(계획을) 제시하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The manager *proposed* holding the training sessions online to reduce costs.",
+  "exKo": "매니저는 비용을 줄이기 위해 교육을 온라인으로 진행하자고 제안했다.",
+  "col": [
+   {
+    "e": "propose a plan",
+    "k": "계획을 제안하다"
+   },
+   {
+    "e": "propose + -ing",
+    "k": "~하자고 제안하다"
+   },
+   {
+    "e": "propose that S (should) V",
+    "k": "~해야 한다고 제안하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "proposal",
+    "pos": "n",
+    "m": "제안(서)"
+   },
+   {
+    "w": "proposed",
+    "pos": "adj",
+    "m": "제안된"
+   }
+  ],
+  "para": [
+   "suggest",
+   "put forward",
+   "recommend"
+  ],
+  "ant": "",
+  "tip": "propose는 동명사나 that절을 목적어로 취하며, that절의 동사는 동사원형을 쓴다(propose that the meeting be postponed).",
+  "q": {
+   "s": "Mr. Hughes ------- that the company open a new branch in Singapore next year.",
+   "o": [
+    "proposed",
+    "proposal",
+    "proposing",
+    "to propose"
+   ],
+   "a": 0,
+   "k": "주어 Mr. Hughes 뒤에 that절을 목적어로 취하는 본동사가 필요하므로 proposed가 정답이다. that절의 open이 동사원형인 것도 propose 구문의 특징이다."
+  }
+ },
+ {
+  "w": "consensus",
+  "pos": "n",
+  "m": [
+   "합의, 의견 일치"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "After a long debate, the team finally reached a *consensus* on the new logo.",
+  "exKo": "오랜 논쟁 끝에 팀은 마침내 새 로고에 대해 합의에 이르렀다.",
+  "col": [
+   {
+    "e": "reach a consensus",
+    "k": "합의에 이르다"
+   },
+   {
+    "e": "consensus on",
+    "k": "~에 대한 합의"
+   },
+   {
+    "e": "general consensus",
+    "k": "전반적인 합의"
+   }
+  ],
+  "der": [],
+  "para": [
+   "agreement",
+   "accord"
+  ],
+  "ant": "disagreement",
+  "tip": "reach/come to a consensus(합의에 이르다)와 '~에 대한'을 나타내는 전치사 on이 함께 출제된다.",
+  "q": {
+   "s": "The board members were unable to reach a ------- on the location of the new headquarters.",
+   "o": [
+    "consensus",
+    "conference",
+    "consumption",
+    "consent"
+   ],
+   "a": 0,
+   "k": "reach a consensus on(~에 대해 합의에 이르다)이 되어야 하므로 consensus가 정답이다. consent(동의, 허락)는 give/obtain과 어울리며 reach와 쓰지 않는다."
+  }
+ },
+ {
+  "w": "unanimous",
+  "pos": "adj",
+  "m": [
+   "만장일치의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The board's decision to approve the new budget was *unanimous*.",
+  "exKo": "새 예산을 승인한다는 이사회의 결정은 만장일치였다.",
+  "col": [
+   {
+    "e": "unanimous decision",
+    "k": "만장일치의 결정"
+   },
+   {
+    "e": "unanimous vote",
+    "k": "만장일치 투표"
+   },
+   {
+    "e": "unanimous approval",
+    "k": "만장일치의 승인"
+   }
+  ],
+  "der": [
+   {
+    "w": "unanimously",
+    "pos": "adv",
+    "m": "만장일치로"
+   },
+   {
+    "w": "unanimity",
+    "pos": "n",
+    "m": "만장일치"
+   }
+  ],
+  "para": [
+   "agreed upon by all"
+  ],
+  "ant": "",
+  "tip": "명사 앞에서는 형용사 unanimous를, 동사를 수식할 때는 부사 unanimously(was approved unanimously)를 쓰는 자리 문제가 자주 나온다.",
+  "q": {
+   "s": "The proposal to expand the cafeteria received ------- support from the staff.",
+   "o": [
+    "unanimously",
+    "unanimity",
+    "unanimous",
+    "unanimities"
+   ],
+   "a": 2,
+   "k": "명사 support를 앞에서 수식하는 형용사 자리이므로 unanimous가 정답이다. unanimously는 부사, unanimity는 명사라 명사를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "objection",
+  "pos": "n",
+  "m": [
+   "반대, 이의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Several employees raised *objections* to the new dress code.",
+  "exKo": "몇몇 직원이 새 복장 규정에 이의를 제기했다.",
+  "col": [
+   {
+    "e": "raise an objection",
+    "k": "이의를 제기하다"
+   },
+   {
+    "e": "objection to",
+    "k": "~에 대한 반대"
+   },
+   {
+    "e": "have no objection",
+    "k": "이의가 없다"
+   }
+  ],
+  "der": [
+   {
+    "w": "object",
+    "pos": "v",
+    "m": "반대하다 (to)"
+   }
+  ],
+  "para": [
+   "opposition",
+   "protest"
+  ],
+  "ant": "approval",
+  "tip": "objection to 뒤에는 명사나 동명사가 오며(to는 전치사), 동사형도 object to -ing로 쓴다.",
+  "q": {
+   "s": "If there are no ------- to the plan, construction will begin next month.",
+   "o": [
+    "objections",
+    "objected",
+    "objective",
+    "objects"
+   ],
+   "a": 0,
+   "k": "there are no 뒤 명사 자리이고 to the plan과 어울려 '계획에 대한 이의'가 되는 objections가 정답이다. objects는 '물건'이라는 뜻의 명사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "discussion",
+  "pos": "n",
+  "m": [
+   "논의, 토론"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The managers had a lengthy *discussion* about relocating the main office.",
+  "exKo": "관리자들은 본사 이전에 관해 오랜 논의를 했다.",
+  "col": [
+   {
+    "e": "discussion about",
+    "k": "~에 관한 논의"
+   },
+   {
+    "e": "under discussion",
+    "k": "논의 중인"
+   },
+   {
+    "e": "panel discussion",
+    "k": "공개 토론회"
+   }
+  ],
+  "der": [
+   {
+    "w": "discuss",
+    "pos": "v",
+    "m": "논의하다"
+   }
+  ],
+  "para": [
+   "talk",
+   "conversation",
+   "debate"
+  ],
+  "ant": "",
+  "tip": "동사 discuss는 타동사라 discuss about이 틀리지만, 명사 discussion은 about/on과 함께 쓴다. under discussion(논의 중인)도 빈출 표현이다.",
+  "q": {
+   "s": "The details of the merger are still under ------- and will be announced next month.",
+   "o": [
+    "discuss",
+    "discussed",
+    "discussing",
+    "discussion"
+   ],
+   "a": 3,
+   "k": "전치사 under 뒤에는 명사가 와야 하며 under discussion은 '논의 중인'이라는 고정 표현이므로 discussion이 정답이다."
+  }
+ },
+ {
+  "w": "brainstorm",
+  "pos": "v",
+  "m": [
+   "브레인스토밍하다",
+   "(아이디어를) 함께 짜내다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5
+  ],
+  "ex": "The design team met to *brainstorm* ideas for the new advertising campaign.",
+  "exKo": "디자인팀은 새 광고 캠페인 아이디어를 짜내기 위해 모였다.",
+  "col": [
+   {
+    "e": "brainstorm ideas",
+    "k": "아이디어를 짜내다"
+   },
+   {
+    "e": "brainstorming session",
+    "k": "브레인스토밍 회의"
+   }
+  ],
+  "der": [
+   {
+    "w": "brainstorming",
+    "pos": "n",
+    "m": "브레인스토밍"
+   }
+  ],
+  "para": [
+   "come up with ideas",
+   "generate ideas"
+  ],
+  "ant": "",
+  "tip": "brainstorm ideas처럼 타동사로 쓰이며, brainstorming session(아이디어 회의)이 Part 3·4에서 회의 목적을 묻는 문제의 단서로 나온다.",
+  "q": {
+   "s": "Staff members gathered in the conference room to ------- ways to reduce operating costs.",
+   "o": [
+    "persuade",
+    "interrupt",
+    "brainstorm",
+    "register"
+   ],
+   "a": 2,
+   "k": "비용 절감 '방법(ways)'을 함께 생각해 내기 위해 모였다는 의미이므로 brainstorm이 정답이다. persuade(설득하다)는 사람을 목적어로 취하고, interrupt, register는 ways와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "finalize",
+  "pos": "v",
+  "m": [
+   "마무리하다, 확정하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "We need to *finalize* the event schedule by the end of this week.",
+  "exKo": "우리는 이번 주 안에 행사 일정을 확정해야 한다.",
+  "col": [
+   {
+    "e": "finalize a contract",
+    "k": "계약을 마무리하다"
+   },
+   {
+    "e": "finalize the details",
+    "k": "세부 사항을 확정하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "final",
+    "pos": "adj",
+    "m": "최종의"
+   },
+   {
+    "w": "finally",
+    "pos": "adv",
+    "m": "마침내, 최종적으로"
+   }
+  ],
+  "para": [
+   "complete",
+   "confirm",
+   "settle"
+  ],
+  "ant": "",
+  "tip": "-ize로 끝나는 동사로 '최종 확정하다'를 뜻하며, Part 3·4에서 hasn't been finalized(아직 확정되지 않았다)가 정답 단서로 자주 쓰인다.",
+  "q": {
+   "s": "The marketing team is meeting today to ------- the details of the product launch.",
+   "o": [
+    "final",
+    "finally",
+    "finality",
+    "finalize"
+   ],
+   "a": 3,
+   "k": "to부정사 to 뒤에 목적어 the details를 취하는 동사원형이 필요하므로 finalize가 정답이다. final은 형용사, finally는 부사, finality는 명사다."
+  }
+ },
+ {
+  "w": "conclude",
+  "pos": "v",
+  "m": [
+   "끝내다, 마치다",
+   "결론을 내리다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The marketing seminar *concluded* with a lively question-and-answer session for all participants.",
+  "exKo": "마케팅 세미나는 모든 참가자가 함께한 활발한 질의응답 시간으로 마무리되었다.",
+  "col": [
+   {
+    "e": "conclude with",
+    "k": "~로 끝나다"
+   },
+   {
+    "e": "conclude that",
+    "k": "~라고 결론짓다"
+   },
+   {
+    "e": "conclude a deal",
+    "k": "거래를 체결하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "conclusion",
+    "pos": "n",
+    "m": "결론, 종결"
+   },
+   {
+    "w": "conclusive",
+    "pos": "adj",
+    "m": "결정적인"
+   }
+  ],
+  "para": [
+   "end",
+   "finish",
+   "wrap up"
+  ],
+  "ant": "",
+  "tip": "'~로 끝나다'는 conclude with, '~라고 결론짓다'는 conclude that으로 쓰며, conclude a deal(거래를 체결하다)도 토익 빈출 의미다.",
+  "q": {
+   "s": "The workshop will ------- with a brief speech by the company president.",
+   "o": [
+    "include",
+    "preclude",
+    "exclude",
+    "conclude"
+   ],
+   "a": 3,
+   "k": "with와 함께 '~로 끝나다'라는 뜻을 이루는 conclude가 정답이다. include, exclude, preclude는 모두 타동사로 목적어가 필요하며 with와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "summarize",
+  "pos": "v",
+  "m": [
+   "요약하다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "At the end of the meeting, Ms. Hall *summarized* the main points of the discussion.",
+  "exKo": "회의 말미에 Hall 씨는 논의의 요점을 요약했다.",
+  "col": [
+   {
+    "e": "summarize the findings",
+    "k": "결과를 요약하다"
+   },
+   {
+    "e": "briefly summarize",
+    "k": "간략히 요약하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "summary",
+    "pos": "n",
+    "m": "요약(본)"
+   }
+  ],
+  "para": [
+   "sum up",
+   "recap",
+   "outline"
+  ],
+  "ant": "",
+  "tip": "Part 4에서 화자가 Let me summarize...라고 하면 내용을 정리하는 단계임을 알 수 있으며, 명사형 summary와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Mr. Allen asked his assistant to ------- the survey results in a one-page report.",
+   "o": [
+    "summarize",
+    "summarily",
+    "summary",
+    "summarizing"
+   ],
+   "a": 0,
+   "k": "ask A to 뒤에는 동사원형이 오므로 summarize가 정답이다. summary는 명사, summarily는 '즉석에서'라는 뜻의 부사다."
+  }
+ },
+ {
+  "w": "address",
+  "pos": "v",
+  "m": [
+   "(문제를) 다루다, 처리하다",
+   "연설하다",
+   "(우편물을) ~앞으로 보내다"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The CEO will *address* employees' concerns about the merger at tomorrow's meeting.",
+  "exKo": "CEO는 내일 회의에서 합병에 관한 직원들의 우려 사항을 다룰 것이다.",
+  "col": [
+   {
+    "e": "address an issue",
+    "k": "문제를 다루다"
+   },
+   {
+    "e": "address concerns",
+    "k": "우려를 해소하다"
+   },
+   {
+    "e": "address the audience",
+    "k": "청중에게 연설하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "deal with",
+   "handle",
+   "tackle"
+  ],
+  "ant": "",
+  "tip": "'주소' 외에 '(문제를) 다루다', '(청중에게) 연설하다'라는 타동사로 쓰여 바로 목적어를 취하며, Part 7 동의어 문제에서 deal with로 바꿔 묻는다.",
+  "q": {
+   "s": "The new software update is designed to ------- several security problems reported by users.",
+   "o": [
+    "insist",
+    "respond",
+    "comply",
+    "address"
+   ],
+   "a": 3,
+   "k": "목적어 security problems를 바로 취해 '문제를 해결하다, 다루다'가 되는 타동사 address가 정답이다. insist(on), respond(to), comply(with)는 전치사가 필요한 자동사다."
+  }
+ },
+ {
+  "w": "bring up",
+  "pos": "phr",
+  "m": [
+   "(화제를) 꺼내다, 제기하다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Mr. Lee *brought up* the issue of parking spaces during the staff meeting.",
+  "exKo": "Lee 씨는 직원회의에서 주차 공간 문제를 꺼냈다.",
+  "col": [
+   {
+    "e": "bring up an issue",
+    "k": "문제를 제기하다"
+   },
+   {
+    "e": "bring up a topic",
+    "k": "화제를 꺼내다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "raise",
+   "mention"
+  ],
+  "ant": "",
+  "tip": "'(화제·문제를) 꺼내다'라는 뜻으로 raise, mention과 패러프레이징되며, 목적어가 대명사이면 bring it up처럼 가운데에 둔다.",
+  "q": {
+   "s": "I'd like to bring ------- a concern about the new vacation policy before we finish today.",
+   "o": [
+    "out",
+    "in",
+    "up",
+    "over"
+   ],
+   "a": 2,
+   "k": "'우려 사항을 (화제로) 꺼내다'는 bring up이므로 up이 정답이다. bring out(드러내다, 출시하다), bring in(들여오다), bring over(가져오다)는 concern과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "point out",
+  "pos": "phr",
+  "m": [
+   "지적하다, 언급하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The accountant *pointed out* several errors in the quarterly financial report.",
+  "exKo": "회계사는 분기 재무 보고서에서 몇 가지 오류를 지적했다.",
+  "col": [
+   {
+    "e": "point out an error",
+    "k": "오류를 지적하다"
+   },
+   {
+    "e": "point out that",
+    "k": "~라고 지적하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "indicate",
+   "note",
+   "mention"
+  ],
+  "ant": "",
+  "tip": "point out that절 구문으로 많이 쓰이며, Part 3·4에서 화자가 문제점을 짚는 장면의 정답 단서가 된다.",
+  "q": {
+   "s": "Ms. Rivera ------- out that the deadline for the project was unrealistic.",
+   "o": [
+    "carried",
+    "turned",
+    "dropped",
+    "pointed"
+   ],
+   "a": 3,
+   "k": "out that절과 함께 '~라고 지적했다'가 되는 pointed가 정답이다. carry out(수행하다)은 that절을 취하지 않고, drop out(중도 하차하다)은 의미가 맞지 않으며, turn out that은 가주어 It이 주어일 때 쓴다."
+  }
+ },
+ {
+  "w": "emphasize",
+  "pos": "v",
+  "m": [
+   "강조하다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The speaker *emphasized* the importance of customer service in retail.",
+  "exKo": "연사는 소매업에서 고객 서비스의 중요성을 강조했다.",
+  "col": [
+   {
+    "e": "emphasize the importance of",
+    "k": "~의 중요성을 강조하다"
+   },
+   {
+    "e": "emphasize that",
+    "k": "~라고 강조하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "emphasis",
+    "pos": "n",
+    "m": "강조, 중점"
+   },
+   {
+    "w": "emphatically",
+    "pos": "adv",
+    "m": "단호히, 힘주어"
+   }
+  ],
+  "para": [
+   "stress",
+   "highlight",
+   "underline"
+  ],
+  "ant": "",
+  "tip": "타동사라 emphasize on은 틀린 표현이지만, 명사형은 put emphasis on처럼 on과 함께 쓴다.",
+  "q": {
+   "s": "The safety manual ------- the need to wear protective gear at all times in the factory.",
+   "o": [
+    "emphasis",
+    "emphasizes",
+    "emphatic",
+    "emphasizing"
+   ],
+   "a": 1,
+   "k": "주어 The safety manual 뒤에 본동사가 필요하므로 3인칭 단수 현재형 emphasizes가 정답이다. emphasizing은 동사 역할을 혼자 할 수 없다."
+  }
+ },
+ {
+  "w": "highlight",
+  "pos": "v",
+  "m": [
+   "강조하다, 부각하다",
+   "형광펜으로 표시하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The report *highlights* the need for better communication between departments.",
+  "exKo": "보고서는 부서 간 원활한 소통의 필요성을 강조한다.",
+  "col": [
+   {
+    "e": "highlight the need for",
+    "k": "~의 필요성을 강조하다"
+   },
+   {
+    "e": "highlights of the event",
+    "k": "행사의 하이라이트"
+   }
+  ],
+  "der": [],
+  "para": [
+   "emphasize",
+   "stress",
+   "feature"
+  ],
+  "ant": "",
+  "tip": "동사(강조하다)와 명사(가장 중요한 부분)로 모두 쓰이며, the highlight of the tour처럼 명사로도 Part 7에 자주 나온다.",
+  "q": {
+   "s": "The brochure ------- the hotel's convenient location near the airport and the convention center.",
+   "o": [
+    "highlights",
+    "informs",
+    "admits",
+    "advises"
+   ],
+   "a": 0,
+   "k": "안내 책자가 호텔의 편리한 위치를 '부각한다'는 의미이므로 highlights가 정답이다. informs는 사람을 목적어로 취하고, advises, admits는 location과 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "outline",
+  "pos": "v",
+  "m": [
+   "개요를 설명하다, 요점을 말하다",
+   "윤곽을 잡다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "In her presentation, Ms. Moore *outlined* the company's plans for overseas expansion.",
+  "exKo": "Moore 씨는 발표에서 회사의 해외 확장 계획을 개략적으로 설명했다.",
+  "col": [
+   {
+    "e": "outline a plan",
+    "k": "계획을 개략적으로 설명하다"
+   },
+   {
+    "e": "a brief outline of",
+    "k": "~의 간략한 개요"
+   }
+  ],
+  "der": [],
+  "para": [
+   "describe",
+   "summarize",
+   "explain briefly"
+  ],
+  "ant": "",
+  "tip": "동사 '개요를 설명하다'와 명사 '개요(an outline of)'로 모두 쓰이며, Part 7에서 '무엇을 설명하는가'를 묻는 문제의 동의어로 describe가 나온다.",
+  "q": {
+   "s": "The handout ------- the main steps for submitting travel expense reports.",
+   "o": [
+    "outlining",
+    "outlines",
+    "to outline",
+    "outliner"
+   ],
+   "a": 1,
+   "k": "주어 The handout 뒤에 본동사가 필요하므로 outlines가 정답이다. outlining, to outline은 본동사가 될 수 없고, outliner는 명사다."
+  }
+ },
+ {
+  "w": "handout",
+  "pos": "n",
+  "m": [
+   "유인물, 배포 자료"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   4
+  ],
+  "ex": "The speaker distributed a *handout* summarizing the key points of her talk.",
+  "exKo": "연사는 강연의 요점을 정리한 유인물을 나누어 주었다.",
+  "col": [
+   {
+    "e": "distribute handouts",
+    "k": "유인물을 배포하다"
+   },
+   {
+    "e": "refer to the handout",
+    "k": "유인물을 참고하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "hand out",
+    "pos": "phr",
+    "m": "나누어 주다"
+   }
+  ],
+  "para": [
+   "printed material",
+   "leaflet"
+  ],
+  "ant": "",
+  "tip": "명사 handout(유인물)과 구동사 hand out(나누어 주다)을 구분해야 하며, Part 3·4에서 '나눠 드린 자료를 보라'는 지시와 함께 나온다.",
+  "q": {
+   "s": "Copies of the ------- will be available at the registration desk before the seminar begins.",
+   "o": [
+    "handout",
+    "venue",
+    "deadline",
+    "intermission"
+   ],
+   "a": 0,
+   "k": "등록 데스크에서 '사본(copies)'을 받을 수 있는 대상은 인쇄물인 handout이다. deadline(마감), venue(장소), intermission(중간 휴식)은 사본을 만들 수 없다."
+  }
+ },
+ {
+  "w": "conference call",
+  "pos": "n",
+  "m": [
+   "전화 회의"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The marketing directors will hold a *conference call* with the Tokyo office tomorrow.",
+  "exKo": "마케팅 이사들은 내일 도쿄 지사와 전화 회의를 할 것이다.",
+  "col": [
+   {
+    "e": "hold a conference call",
+    "k": "전화 회의를 하다"
+   },
+   {
+    "e": "join a conference call",
+    "k": "전화 회의에 참여하다"
+   },
+   {
+    "e": "on a conference call",
+    "k": "전화 회의 중인"
+   }
+  ],
+  "der": [],
+  "para": [
+   "teleconference",
+   "phone meeting"
+  ],
+  "ant": "",
+  "tip": "여러 장소의 사람들이 전화로 동시에 참여하는 회의로, Part 3에서 화자가 곧 할 일로 자주 등장하며 teleconference로 바꿔 쓸 수 있다.",
+  "q": {
+   "s": "Because the clients are in three different cities, the meeting will be held as a ------- on Monday morning.",
+   "o": [
+    "conference call",
+    "site visit",
+    "job fair",
+    "grand opening"
+   ],
+   "a": 0,
+   "k": "고객들이 서로 다른 도시에 있어서 모이지 않고 진행하는 회의는 conference call이다. site visit(현장 방문), job fair(채용 박람회), grand opening(개장 행사)은 회의 형식이 아니다."
+  }
+ },
+ {
+  "w": "videoconference",
+  "pos": "n",
+  "m": [
+   "화상 회의"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Employees working remotely joined the meeting by *videoconference*.",
+  "exKo": "원격 근무 중인 직원들은 화상으로 회의에 참여했다.",
+  "col": [
+   {
+    "e": "by videoconference",
+    "k": "화상 회의로"
+   },
+   {
+    "e": "hold a videoconference",
+    "k": "화상 회의를 열다"
+   }
+  ],
+  "der": [
+   {
+    "w": "videoconferencing",
+    "pos": "n",
+    "m": "화상 회의 (방식)"
+   }
+  ],
+  "para": [
+   "video call",
+   "virtual meeting"
+  ],
+  "ant": "",
+  "tip": "'화상 회의로'는 by videoconference처럼 관사 없이 쓰며, video call, virtual meeting으로 패러프레이징된다.",
+  "q": {
+   "s": "Since the regional managers could not travel, the quarterly review was conducted by -------.",
+   "o": [
+    "admission",
+    "overtime",
+    "videoconference",
+    "itinerary"
+   ],
+   "a": 2,
+   "k": "지역 관리자들이 이동할 수 없어서 원격으로 회의를 진행했다는 의미이므로 videoconference가 정답이다. 나머지는 '~로 진행되다(conducted by)'의 수단이 될 수 없다."
+  }
+ },
+ {
+  "w": "input",
+  "pos": "n",
+  "m": [
+   "의견, 조언",
+   "투입, 입력"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The manager asked for everyone's *input* before making a final decision.",
+  "exKo": "매니저는 최종 결정을 내리기 전에 모든 사람의 의견을 구했다.",
+  "col": [
+   {
+    "e": "input on",
+    "k": "~에 대한 의견"
+   },
+   {
+    "e": "valuable input",
+    "k": "귀중한 의견"
+   },
+   {
+    "e": "provide input",
+    "k": "의견을 제공하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "opinion",
+   "feedback",
+   "suggestions"
+  ],
+  "ant": "",
+  "tip": "'의견'이라는 뜻일 때는 주로 불가산명사로 your input처럼 쓰며, 주제는 on으로 연결한다.",
+  "q": {
+   "s": "We would appreciate your ------- on the proposed changes to the employee handbook.",
+   "o": [
+    "entry",
+    "input",
+    "admission",
+    "intake"
+   ],
+   "a": 1,
+   "k": "변경안에 대한(on) '의견'을 구하는 문장이므로 input이 정답이다. entry(입장, 출품작), admission(입장, 입학), intake(섭취량, 모집 인원)는 의견이라는 뜻이 없다."
+  }
+ },
+ {
+  "w": "feedback",
+  "pos": "n",
+  "m": [
+   "의견, 피드백"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Customer *feedback* helped us improve the design of our mobile app.",
+  "exKo": "고객 의견은 우리가 모바일 앱 디자인을 개선하는 데 도움이 되었다.",
+  "col": [
+   {
+    "e": "feedback on",
+    "k": "~에 대한 의견"
+   },
+   {
+    "e": "positive feedback",
+    "k": "긍정적인 반응"
+   },
+   {
+    "e": "provide feedback",
+    "k": "의견을 제공하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "comments",
+   "response",
+   "opinion"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 a feedback이나 feedbacks로 쓰지 않으며, 주제는 on 또는 about으로 연결한다.",
+  "q": {
+   "s": "The survey results show that most customers gave positive ------- about the new menu.",
+   "o": [
+    "reservations",
+    "refunds",
+    "feedback",
+    "deliveries"
+   ],
+   "a": 2,
+   "k": "고객들이 새 메뉴에 대해 긍정적인 '의견'을 주었다는 뜻이므로 feedback이 정답이다. feedback은 불가산명사라 a나 -s를 붙이지 않으며, reservations(예약), refunds(환불), deliveries(배달)는 give positive ~ about과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "vote",
+  "pos": "v",
+  "m": [
+   "투표하다",
+   "표결하다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Shareholders will *vote* on the proposed merger at next month's meeting.",
+  "exKo": "주주들은 다음 달 회의에서 제안된 합병에 대해 투표할 것이다.",
+  "col": [
+   {
+    "e": "vote on",
+    "k": "~에 대해 표결하다"
+   },
+   {
+    "e": "vote for/against",
+    "k": "~에 찬성/반대 투표하다"
+   },
+   {
+    "e": "take a vote",
+    "k": "표결에 부치다"
+   }
+  ],
+  "der": [
+   {
+    "w": "voter",
+    "pos": "n",
+    "m": "유권자, 투표자"
+   },
+   {
+    "w": "voting",
+    "pos": "n",
+    "m": "투표"
+   }
+  ],
+  "para": [
+   "cast a ballot",
+   "decide"
+  ],
+  "ant": "",
+  "tip": "안건에 대한 표결은 vote on, 찬성은 vote for, 반대는 vote against로 전치사를 구분해야 한다.",
+  "q": {
+   "s": "Committee members will ------- on the revised budget proposal at Thursday's meeting.",
+   "o": [
+    "elect",
+    "vote",
+    "select",
+    "nominate"
+   ],
+   "a": 1,
+   "k": "전치사 on과 함께 '~에 대해 표결하다'가 되는 vote가 정답이다. elect(선출하다), select(고르다), nominate(지명하다)는 타동사라 on 없이 목적어를 바로 취하며 의미도 맞지 않는다."
+  }
+ },
+ {
+  "w": "item",
+  "pos": "n",
+  "m": [
+   "(안건의) 항목, 사항",
+   "물품, 품목"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   5,
+   7
+  ],
+  "ex": "The next *item* on the agenda is the renovation of the employee lounge.",
+  "exKo": "다음 안건 항목은 직원 휴게실 보수 공사이다.",
+  "col": [
+   {
+    "e": "agenda item",
+    "k": "안건 항목"
+   },
+   {
+    "e": "item on the agenda",
+    "k": "안건에 오른 항목"
+   }
+  ],
+  "der": [
+   {
+    "w": "itemize",
+    "pos": "v",
+    "m": "항목별로 적다"
+   },
+   {
+    "w": "itemized",
+    "pos": "adj",
+    "m": "항목별로 된"
+   }
+  ],
+  "para": [
+   "topic",
+   "matter",
+   "issue"
+  ],
+  "ant": "",
+  "tip": "회의에서는 '안건 항목', 쇼핑에서는 '물품'을 뜻하며, itemized receipt(항목별 영수증)처럼 파생어 형태도 출제된다.",
+  "q": {
+   "s": "Due to time constraints, the last ------- on the agenda will be discussed at next week's meeting.",
+   "o": [
+    "piece",
+    "element",
+    "item",
+    "ingredient"
+   ],
+   "a": 2,
+   "k": "'안건에 오른 항목'은 item on the agenda로 쓰므로 item이 정답이다. piece, element, ingredient는 agenda와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "in person",
+  "pos": "phr",
+  "m": [
+   "직접, 몸소"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "Applicants must submit their documents *in person* at the main office.",
+  "exKo": "지원자는 본사에서 직접 서류를 제출해야 한다.",
+  "col": [
+   {
+    "e": "apply in person",
+    "k": "직접 지원하다"
+   },
+   {
+    "e": "meet in person",
+    "k": "직접 만나다"
+   }
+  ],
+  "der": [
+   {
+    "w": "personal",
+    "pos": "adj",
+    "m": "개인의"
+   },
+   {
+    "w": "personally",
+    "pos": "adv",
+    "m": "직접, 개인적으로"
+   }
+  ],
+  "para": [
+   "personally",
+   "face-to-face"
+  ],
+  "ant": "remotely",
+  "tip": "'(본인이) 직접'이라는 뜻으로 by phone, online과 대비되며, Part 7에서 face-to-face, personally로 패러프레이징된다.",
+  "q": {
+   "s": "Tickets for the concert can be purchased online or ------- person at the box office.",
+   "o": [
+    "by",
+    "on",
+    "in",
+    "with"
+   ],
+   "a": 2,
+   "k": "'직접'을 뜻하는 표현은 in person이므로 in이 정답이다. by person, on person, with person은 쓰지 않는 표현이다."
+  }
+ },
+ {
+  "w": "regarding",
+  "pos": "prep",
+  "m": [
+   "~에 관하여"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Ms. Wong answered several questions *regarding* the new vacation policy.",
+  "exKo": "Wong 씨는 새 휴가 정책에 관한 몇 가지 질문에 답했다.",
+  "col": [
+   {
+    "e": "regarding the matter",
+    "k": "그 문제에 관해"
+   },
+   {
+    "e": "inquiries regarding",
+    "k": "~에 관한 문의"
+   }
+  ],
+  "der": [
+   {
+    "w": "regard",
+    "pos": "v",
+    "m": "여기다, 간주하다"
+   },
+   {
+    "w": "regardless",
+    "pos": "adv",
+    "m": "상관없이 (of)"
+   }
+  ],
+  "para": [
+   "concerning",
+   "about",
+   "with regard to"
+  ],
+  "ant": "",
+  "tip": "전치사라 뒤에 명사(구)가 오며 concerning, about과 같은 뜻이다. regardless of(~와 상관없이)와 혼동하지 말 것.",
+  "q": {
+   "s": "Customers with inquiries ------- their orders should contact the support team by e-mail.",
+   "o": [
+    "regardless",
+    "regard",
+    "regarded",
+    "regarding"
+   ],
+   "a": 3,
+   "k": "명사 their orders를 이끌어 '주문에 관한 문의'가 되는 전치사 regarding이 정답이다. regardless는 of가 필요하며 의미도 맞지 않는다."
+  }
+ },
+ {
+  "w": "tentative",
+  "pos": "adj",
+  "m": [
+   "잠정적인, 임시의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *tentative* date for the product launch is September 15.",
+  "exKo": "제품 출시의 잠정 날짜는 9월 15일이다.",
+  "col": [
+   {
+    "e": "tentative schedule",
+    "k": "잠정 일정"
+   },
+   {
+    "e": "tentative agreement",
+    "k": "잠정 합의"
+   }
+  ],
+  "der": [
+   {
+    "w": "tentatively",
+    "pos": "adv",
+    "m": "잠정적으로"
+   }
+  ],
+  "para": [
+   "provisional",
+   "preliminary"
+  ],
+  "ant": "final",
+  "tip": "아직 확정되지 않은 일정·합의에 쓰이며, 부사가 쓰인 tentatively scheduled(잠정적으로 예정된)가 Part 5 빈출 표현이다.",
+  "q": {
+   "s": "The workshop is ------- scheduled for May 3, but the date may change depending on room availability.",
+   "o": [
+    "tentative",
+    "tentativeness",
+    "tentatively",
+    "more tentative"
+   ],
+   "a": 2,
+   "k": "be동사와 과거분사 scheduled 사이에서 분사를 수식하는 부사 자리이므로 tentatively가 정답이다."
+  }
+ },
+ {
+  "w": "go over",
+  "pos": "phr",
+  "m": [
+   "검토하다, 살펴보다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "The team *went over* the budget figures once more before the client meeting.",
+  "exKo": "팀은 고객 회의 전에 예산 수치를 한 번 더 검토했다.",
+  "col": [
+   {
+    "e": "go over the details",
+    "k": "세부 사항을 검토하다"
+   },
+   {
+    "e": "go over a report",
+    "k": "보고서를 검토하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "review",
+   "examine",
+   "check"
+  ],
+  "ant": "",
+  "tip": "Part 3·4에서 go over the schedule처럼 '검토하다'라는 뜻으로 쓰이며 review로 패러프레이징된다.",
+  "q": {
+   "s": "Before signing the contract, Mr. Bell asked his lawyer to go ------- the terms carefully.",
+   "o": [
+    "over",
+    "off",
+    "out",
+    "away"
+   ],
+   "a": 0,
+   "k": "계약 조건을 '꼼꼼히 검토하다'는 go over이므로 over가 정답이다. go off(울리다, 폭발하다), go out(외출하다), go away(떠나다)는 목적어를 취하지 않는다."
+  }
+ },
+ {
+  "w": "follow up",
+  "pos": "phr",
+  "m": [
+   "후속 조치를 하다",
+   "(추가로) 다시 연락하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The sales manager will *follow up* with the client next week to confirm the order.",
+  "exKo": "영업부장은 주문을 확정하기 위해 다음 주에 고객에게 다시 연락할 것이다.",
+  "col": [
+   {
+    "e": "follow up on",
+    "k": "~에 대해 후속 조치를 하다"
+   },
+   {
+    "e": "follow up with",
+    "k": "(사람)에게 다시 연락하다"
+   },
+   {
+    "e": "follow-up meeting",
+    "k": "후속 회의"
+   }
+  ],
+  "der": [
+   {
+    "w": "follow-up",
+    "pos": "n",
+    "m": "후속 조치"
+   }
+  ],
+  "para": [
+   "check back",
+   "contact again"
+  ],
+  "ant": "",
+  "tip": "사람에게 다시 연락할 때는 follow up with, 사안을 챙길 때는 follow up on으로 쓰며, 하이픈을 붙인 follow-up은 명사·형용사(follow-up call)다.",
+  "q": {
+   "s": "Ms. Dubois will ------- on the delayed shipment by calling the supplier this afternoon.",
+   "o": [
+    "set up",
+    "look up",
+    "make up",
+    "follow up"
+   ],
+   "a": 3,
+   "k": "on과 함께 '(지연된 배송 건)에 대해 후속 조치를 하다'가 되는 follow up이 정답이다. set up(설치하다), look up(찾아보다), make up(구성하다, 보충하다)은 on과 이런 의미를 이루지 않는다."
+  }
+ }
+]

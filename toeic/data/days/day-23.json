@@ -1,0 +1,2063 @@
+[
+ {
+  "w": "environmentally friendly",
+  "pos": "adj",
+  "m": [
+   "친환경적인",
+   "환경친화적인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company switched to *environmentally friendly* packaging made from recycled paper.",
+  "exKo": "그 회사는 재활용 종이로 만든 친환경 포장재로 바꿨다.",
+  "col": [
+   {
+    "e": "environmentally friendly products",
+    "k": "친환경 제품"
+   },
+   {
+    "e": "environmentally friendly practices",
+    "k": "친환경적인 관행"
+   }
+  ],
+  "der": [
+   {
+    "w": "environment",
+    "pos": "n",
+    "m": "환경"
+   },
+   {
+    "w": "environmental",
+    "pos": "adj",
+    "m": "환경의"
+   }
+  ],
+  "para": [
+   "eco-friendly",
+   "green"
+  ],
+  "ant": "",
+  "tip": "부사 environmentally가 형용사 friendly를 수식하는 구조다. 빈칸에 형용사 environmental이 아니라 부사 environmentally를 고르는 품사 문제가 빈출이다.",
+  "q": {
+   "s": "Greenleaf Hotels uses only ------- friendly cleaning products in all of its guest rooms.",
+   "o": [
+    "environmental",
+    "environmentalist",
+    "environmentally",
+    "environmentalism"
+   ],
+   "a": 2,
+   "k": "형용사 friendly를 수식하는 자리이므로 부사 environmentally가 정답. 형용사 environmental은 형용사를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "sustainable",
+  "pos": "adj",
+  "m": [
+   "지속 가능한",
+   "(환경을 해치지 않고) 유지할 수 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The firm aims to source all of its coffee beans from *sustainable* farms by 2030.",
+  "exKo": "그 회사는 2030년까지 모든 커피 원두를 지속 가능한 농장에서 조달하는 것을 목표로 한다.",
+  "col": [
+   {
+    "e": "sustainable development",
+    "k": "지속 가능한 개발"
+   },
+   {
+    "e": "sustainable growth",
+    "k": "지속 가능한 성장"
+   },
+   {
+    "e": "environmentally sustainable",
+    "k": "환경적으로 지속 가능한"
+   }
+  ],
+  "der": [
+   {
+    "w": "sustain",
+    "pos": "v",
+    "m": "지속하다, 유지하다"
+   },
+   {
+    "w": "sustainability",
+    "pos": "n",
+    "m": "지속 가능성"
+   },
+   {
+    "w": "sustainably",
+    "pos": "adv",
+    "m": "지속 가능하게"
+   }
+  ],
+  "para": [
+   "eco-friendly",
+   "green"
+  ],
+  "ant": "unsustainable",
+  "tip": "명사 sustainability(지속 가능성)와 형용사 sustainable의 품사 구분이 출제된다. Part 7에서는 eco-friendly, green으로 바꿔 표현된다.",
+  "q": {
+   "s": "Our goal is to make the manufacturing process more ------- by reducing water use.",
+   "o": [
+    "sustainably",
+    "sustainability",
+    "sustain",
+    "sustainable"
+   ],
+   "a": 3,
+   "k": "make + 목적어 + 목적격 보어 구조에서 보어 자리에는 형용사가 와야 하므로 sustainable이 정답. 부사 sustainably는 보어가 될 수 없다."
+  }
+ },
+ {
+  "w": "conserve",
+  "pos": "v",
+  "m": [
+   "(자원을) 아끼다, 절약하다",
+   "보존하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Employees are encouraged to turn off lights to *conserve* energy.",
+  "exKo": "직원들은 에너지를 절약하기 위해 조명을 끄도록 권장된다.",
+  "col": [
+   {
+    "e": "conserve energy",
+    "k": "에너지를 절약하다"
+   },
+   {
+    "e": "conserve water",
+    "k": "물을 아끼다"
+   },
+   {
+    "e": "conserve resources",
+    "k": "자원을 보존하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "conservation",
+    "pos": "n",
+    "m": "보존, 절약"
+   },
+   {
+    "w": "conservative",
+    "pos": "adj",
+    "m": "보수적인, (추정이) 적게 잡은"
+   }
+  ],
+  "para": [
+   "save",
+   "preserve"
+  ],
+  "ant": "waste",
+  "tip": "conserve는 타동사로 energy, water 같은 목적어를 바로 취한다. 형태가 비슷한 conservative(보수적인; 적게 잡은)는 의미가 다르다.",
+  "q": {
+   "s": "To ------- water during the drought, residents are asked not to water their lawns.",
+   "o": [
+    "conserve",
+    "consume",
+    "convert",
+    "conduct"
+   ],
+   "a": 0,
+   "k": "가뭄 중에 잔디에 물을 주지 말라는 것은 물을 '아끼기' 위해서이므로 conserve가 정답. consume(소비하다)은 정반대 의미다."
+  }
+ },
+ {
+  "w": "conservation",
+  "pos": "n",
+  "m": [
+   "(자연·자원의) 보존, 보호",
+   "절약"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The city launched a water *conservation* campaign last summer.",
+  "exKo": "시는 지난여름 물 절약 캠페인을 시작했다.",
+  "col": [
+   {
+    "e": "energy conservation",
+    "k": "에너지 절약"
+   },
+   {
+    "e": "wildlife conservation",
+    "k": "야생 동물 보호"
+   },
+   {
+    "e": "conservation efforts",
+    "k": "보존 노력"
+   }
+  ],
+  "der": [
+   {
+    "w": "conserve",
+    "pos": "v",
+    "m": "아끼다, 보존하다"
+   },
+   {
+    "w": "conservationist",
+    "pos": "n",
+    "m": "환경 보호 활동가"
+   }
+  ],
+  "para": [
+   "preservation",
+   "protection"
+  ],
+  "ant": "",
+  "tip": "불가산명사로 energy conservation처럼 앞에 다른 명사가 오는 복합명사 형태가 빈출이다. 철자가 비슷한 conversation(대화)을 보기에 넣은 함정에 주의한다.",
+  "q": {
+   "s": "Local volunteers have played a key role in the ------- of the wetlands.",
+   "o": [
+    "conservation",
+    "conserve",
+    "conversation",
+    "conservative"
+   ],
+   "a": 0,
+   "k": "관사 the와 전치사 of 사이의 명사 자리이며 '습지 보존'이라는 의미이므로 conservation이 정답. conversation은 '대화'라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "energy-efficient",
+  "pos": "adj",
+  "m": [
+   "에너지 효율이 높은"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Replacing old bulbs with *energy-efficient* ones can reduce electricity costs.",
+  "exKo": "오래된 전구를 에너지 효율이 높은 전구로 교체하면 전기 요금을 줄일 수 있다.",
+  "col": [
+   {
+    "e": "energy-efficient appliances",
+    "k": "고효율 가전제품"
+   },
+   {
+    "e": "energy-efficient lighting",
+    "k": "에너지 효율이 높은 조명"
+   }
+  ],
+  "der": [
+   {
+    "w": "efficiency",
+    "pos": "n",
+    "m": "효율"
+   },
+   {
+    "w": "efficiently",
+    "pos": "adv",
+    "m": "효율적으로"
+   }
+  ],
+  "para": [
+   "energy-saving"
+  ],
+  "ant": "",
+  "tip": "명사 energy와 형용사 efficient가 하이픈으로 결합한 복합형용사로 명사 앞에 쓴다. 명사형은 energy efficiency(에너지 효율)다.",
+  "q": {
+   "s": "The new ------- heating system has reduced the factory's utility bills by nearly 30 percent.",
+   "o": [
+    "labor-intensive",
+    "time-consuming",
+    "energy-efficient",
+    "short-staffed"
+   ],
+   "a": 2,
+   "k": "공과금을 30퍼센트 가까이 줄인 난방 시스템이므로 '에너지 효율이 높은'이 정답. labor-intensive(노동 집약적인), time-consuming(시간이 많이 드는), short-staffed(일손이 부족한)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "renewable energy",
+  "pos": "n",
+  "m": [
+   "재생 에너지"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The plant now gets half of its power from *renewable energy* sources.",
+  "exKo": "그 공장은 현재 전력의 절반을 재생 에너지원에서 얻는다.",
+  "col": [
+   {
+    "e": "renewable energy sources",
+    "k": "재생 에너지원"
+   },
+   {
+    "e": "invest in renewable energy",
+    "k": "재생 에너지에 투자하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "renew",
+    "pos": "v",
+    "m": "갱신하다, 재개하다"
+   },
+   {
+    "w": "renewable",
+    "pos": "adj",
+    "m": "재생 가능한, 갱신 가능한"
+   }
+  ],
+  "para": [
+   "clean energy",
+   "green energy"
+  ],
+  "ant": "",
+  "tip": "renewable은 '재생 가능한' 외에 a renewable contract(갱신 가능한 계약)처럼 '갱신 가능한'이라는 뜻으로도 출제된다.",
+  "q": {
+   "s": "The company plans to invest heavily in ------- energy such as wind and solar power.",
+   "o": [
+    "renewable",
+    "renewed",
+    "renewal",
+    "renewing"
+   ],
+   "a": 0,
+   "k": "풍력·태양광 같은 '재생 가능한' 에너지를 뜻해야 하므로 renewable이 정답. renewed energy는 '새로워진 활력'이라는 뜻이고, renewal은 명사다."
+  }
+ },
+ {
+  "w": "solar panel",
+  "pos": "n",
+  "m": [
+   "태양 전지판"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "Workers are installing *solar panels* on the roof of the warehouse.",
+  "exKo": "작업자들이 창고 지붕에 태양 전지판을 설치하고 있다.",
+  "col": [
+   {
+    "e": "install solar panels",
+    "k": "태양 전지판을 설치하다"
+   },
+   {
+    "e": "rooftop solar panels",
+    "k": "옥상 태양 전지판"
+   }
+  ],
+  "der": [
+   {
+    "w": "solar",
+    "pos": "adj",
+    "m": "태양의, 태양열을 이용한"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "Part 1에서 Solar panels have been mounted on the roof.(지붕에 태양 전지판이 설치되어 있다)처럼 현재완료 수동태 묘사로 나온다.",
+  "q": {
+   "s": "The ------- panels on the building's roof generate enough electricity to power the entire office.",
+   "o": [
+    "lunar",
+    "polar",
+    "sole",
+    "solar"
+   ],
+   "a": 3,
+   "k": "지붕 위에서 전기를 생산하는 장치는 '태양 전지판'이므로 solar가 정답. lunar(달의), polar(극지의), sole(유일한)은 panels와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "emission",
+  "pos": "n",
+  "m": [
+   "(가스 등의) 배출",
+   "배출물, 배기가스"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new regulations aim to cut carbon *emissions* by 40 percent.",
+  "exKo": "새 규정은 탄소 배출량을 40퍼센트 줄이는 것을 목표로 한다.",
+  "col": [
+   {
+    "e": "carbon emissions",
+    "k": "탄소 배출(량)"
+   },
+   {
+    "e": "reduce emissions",
+    "k": "배출량을 줄이다"
+   },
+   {
+    "e": "emission standards",
+    "k": "배출 기준"
+   }
+  ],
+  "der": [
+   {
+    "w": "emit",
+    "pos": "v",
+    "m": "배출하다, 내뿜다"
+   }
+  ],
+  "para": [
+   "discharge",
+   "release"
+  ],
+  "ant": "",
+  "tip": "carbon emissions, greenhouse gas emissions처럼 주로 복수형으로 쓴다. 동사 emit(배출하다)과의 품사 구분이 나온다.",
+  "q": {
+   "s": "Electric vehicles produce no tailpipe -------, making them popular in large cities.",
+   "o": [
+    "emit",
+    "emitting",
+    "emitted",
+    "emissions"
+   ],
+   "a": 3,
+   "k": "한정사 no 뒤, produce의 목적어인 명사 자리이므로 emissions가 정답. tailpipe emissions는 '배기관 배출 가스'라는 뜻이다."
+  }
+ },
+ {
+  "w": "pollution",
+  "pos": "n",
+  "m": [
+   "오염",
+   "공해"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Heavy traffic is the main source of air *pollution* in the downtown area.",
+  "exKo": "극심한 교통량이 도심 지역 대기 오염의 주된 원인이다.",
+  "col": [
+   {
+    "e": "air pollution",
+    "k": "대기 오염"
+   },
+   {
+    "e": "reduce pollution",
+    "k": "오염을 줄이다"
+   },
+   {
+    "e": "noise pollution",
+    "k": "소음 공해"
+   }
+  ],
+  "der": [
+   {
+    "w": "pollute",
+    "pos": "v",
+    "m": "오염시키다"
+   },
+   {
+    "w": "pollutant",
+    "pos": "n",
+    "m": "오염 물질"
+   }
+  ],
+  "para": [
+   "contamination"
+  ],
+  "ant": "",
+  "tip": "불가산명사 pollution과 가산명사 pollutant(오염 물질)를 구분해야 한다. 동사 pollute와의 품사 문제도 빈출이다.",
+  "q": {
+   "s": "The factory installed new filters to reduce air ------- from its smokestacks.",
+   "o": [
+    "pollution",
+    "polluted",
+    "pollute",
+    "polluting"
+   ],
+   "a": 0,
+   "k": "reduce의 목적어로 air와 함께 '대기 오염'이라는 복합명사를 이루는 자리이므로 pollution이 정답."
+  }
+ },
+ {
+  "w": "waste",
+  "pos": "n",
+  "m": [
+   "쓰레기, 폐기물",
+   "낭비",
+   "(동) 낭비하다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The cafeteria has cut food *waste* by donating leftover meals to shelters.",
+  "exKo": "구내식당은 남은 음식을 보호소에 기부해 음식물 쓰레기를 줄였다.",
+  "col": [
+   {
+    "e": "food waste",
+    "k": "음식물 쓰레기"
+   },
+   {
+    "e": "a waste of time",
+    "k": "시간 낭비"
+   },
+   {
+    "e": "waste disposal",
+    "k": "폐기물 처리"
+   }
+  ],
+  "der": [
+   {
+    "w": "wasteful",
+    "pos": "adj",
+    "m": "낭비하는, 낭비가 심한"
+   }
+  ],
+  "para": [
+   "garbage",
+   "trash"
+  ],
+  "ant": "",
+  "tip": "'폐기물'의 뜻일 때는 주로 불가산(industrial waste)이며, a waste of time/money(시간·돈 낭비)는 듣기에 자주 나온다. 형용사 wasteful과의 품사 구분도 출제된다.",
+  "q": {
+   "s": "Hazardous ------- from the laboratory must be stored in sealed containers.",
+   "o": [
+    "wasteful",
+    "waste",
+    "wasted",
+    "wastefully"
+   ],
+   "a": 1,
+   "k": "형용사 Hazardous의 수식을 받는 주어 자리이므로 명사 waste가 정답. hazardous waste는 '유해 폐기물'이라는 뜻의 빈출 표현이다."
+  }
+ },
+ {
+  "w": "recycle",
+  "pos": "v",
+  "m": [
+   "재활용하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "Staff members are asked to *recycle* paper and plastic using the bins by the elevator.",
+  "exKo": "직원들은 엘리베이터 옆 수거함을 이용해 종이와 플라스틱을 재활용해야 한다.",
+  "col": [
+   {
+    "e": "recycle paper",
+    "k": "종이를 재활용하다"
+   },
+   {
+    "e": "a recycling bin",
+    "k": "재활용 수거함"
+   },
+   {
+    "e": "recycled materials",
+    "k": "재활용 소재"
+   }
+  ],
+  "der": [
+   {
+    "w": "recycling",
+    "pos": "n",
+    "m": "재활용"
+   },
+   {
+    "w": "recycled",
+    "pos": "adj",
+    "m": "재활용된"
+   },
+   {
+    "w": "recyclable",
+    "pos": "adj",
+    "m": "재활용할 수 있는"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "recycled paper(재활용된 종이)는 과거분사, recycling bin(재활용 수거함)은 동명사가 명사를 꾸미는 복합명사다. 수식 관계를 보고 형태를 고르는 문제가 나온다.",
+  "q": {
+   "s": "All of our shipping boxes are made from 100 percent ------- cardboard.",
+   "o": [
+    "recycling",
+    "recycle",
+    "recycles",
+    "recycled"
+   ],
+   "a": 3,
+   "k": "명사 cardboard를 수식하며 '재활용된 판지'라는 수동의 의미이므로 과거분사 recycled가 정답. recycling cardboard는 '판지를 재활용하는 것'이라는 뜻이 된다."
+  }
+ },
+ {
+  "w": "dispose of",
+  "pos": "phr",
+  "m": [
+   "~을 처리하다, 버리다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Used batteries must be *disposed of* at designated collection points.",
+  "exKo": "다 쓴 배터리는 지정된 수거 장소에서 처리해야 한다.",
+  "col": [
+   {
+    "e": "dispose of waste",
+    "k": "폐기물을 처리하다"
+   },
+   {
+    "e": "properly dispose of",
+    "k": "적절히 처리하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "disposal",
+    "pos": "n",
+    "m": "처리, 처분"
+   },
+   {
+    "w": "disposable",
+    "pos": "adj",
+    "m": "일회용의"
+   }
+  ],
+  "para": [
+   "throw away",
+   "discard",
+   "get rid of"
+  ],
+  "ant": "",
+  "tip": "dispose는 자동사이므로 반드시 전치사 of와 함께 쓰고, 수동태도 be disposed of로 of가 남는다. 명사 disposal(at one's disposal 마음대로 쓸 수 있는)도 빈출이다.",
+  "q": {
+   "s": "Employees should ------- of old documents by placing them in the shredding bins.",
+   "o": [
+    "discard",
+    "dispose",
+    "remove",
+    "eliminate"
+   ],
+   "a": 1,
+   "k": "빈칸 뒤 전치사 of와 함께 '~을 처리하다'라는 뜻을 이루는 동사는 dispose다. discard, remove, eliminate는 타동사라 of 없이 목적어를 바로 취한다."
+  }
+ },
+ {
+  "w": "hazardous",
+  "pos": "adj",
+  "m": [
+   "위험한, 유해한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Workers must wear protective gear when handling *hazardous* materials.",
+  "exKo": "작업자는 유해 물질을 다룰 때 보호 장비를 착용해야 한다.",
+  "col": [
+   {
+    "e": "hazardous materials",
+    "k": "위험 물질"
+   },
+   {
+    "e": "hazardous waste",
+    "k": "유해 폐기물"
+   },
+   {
+    "e": "hazardous to",
+    "k": "~에 위험한"
+   }
+  ],
+  "der": [
+   {
+    "w": "hazard",
+    "pos": "n",
+    "m": "위험 (요소)"
+   }
+  ],
+  "para": [
+   "dangerous",
+   "harmful"
+  ],
+  "ant": "safe",
+  "tip": "형용사 hazardous와 명사 hazard를 구분하는 품사 문제가 나온다. be hazardous to health처럼 전치사 to와 함께 쓴다.",
+  "q": {
+   "s": "Chemicals that are ------- to human health must be clearly labeled.",
+   "o": [
+    "hazard",
+    "hazardous",
+    "hazardously",
+    "hazards"
+   ],
+   "a": 1,
+   "k": "be동사 are 뒤 보어 자리이며 to와 함께 '~에 해로운'이라는 뜻이 되어야 하므로 형용사 hazardous가 정답."
+  }
+ },
+ {
+  "w": "toxic",
+  "pos": "adj",
+  "m": [
+   "유독한, 독성이 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The cleaning company does not use any *toxic* chemicals in its products.",
+  "exKo": "그 청소 업체는 제품에 어떠한 유독성 화학 물질도 사용하지 않는다.",
+  "col": [
+   {
+    "e": "toxic chemicals",
+    "k": "유독성 화학 물질"
+   },
+   {
+    "e": "toxic waste",
+    "k": "유독성 폐기물"
+   },
+   {
+    "e": "toxic fumes",
+    "k": "유독 가스"
+   }
+  ],
+  "der": [
+   {
+    "w": "toxin",
+    "pos": "n",
+    "m": "독소"
+   },
+   {
+    "w": "toxicity",
+    "pos": "n",
+    "m": "독성"
+   }
+  ],
+  "para": [
+   "poisonous",
+   "harmful"
+  ],
+  "ant": "non-toxic",
+  "tip": "형태가 비슷한 명사 toxin(독소), toxicity(독성)와의 품사 구분이 출제된다. non-toxic(무독성의)은 제품 광고에 자주 쓰인다.",
+  "q": {
+   "s": "This paint is safe for children because it contains no ------- substances.",
+   "o": [
+    "toxin",
+    "toxicity",
+    "toxically",
+    "toxic"
+   ],
+   "a": 3,
+   "k": "명사 substances를 수식하는 형용사 자리이므로 toxic이 정답. toxin과 toxicity는 명사, toxically는 부사라 명사를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "contaminate",
+  "pos": "v",
+  "m": [
+   "오염시키다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Improper storage can *contaminate* food and cause serious illness.",
+  "exKo": "부적절한 보관은 음식을 오염시켜 심각한 질병을 일으킬 수 있다.",
+  "col": [
+   {
+    "e": "contaminate water",
+    "k": "물을 오염시키다"
+   },
+   {
+    "e": "be contaminated with",
+    "k": "~에 오염되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "contamination",
+    "pos": "n",
+    "m": "오염"
+   },
+   {
+    "w": "contaminant",
+    "pos": "n",
+    "m": "오염 물질"
+   }
+  ],
+  "para": [
+   "pollute"
+  ],
+  "ant": "purify",
+  "tip": "be contaminated with[by](~으로 오염되다)의 전치사가 출제 포인트이며, 명사 contamination과의 품사 구분 문제도 나온다.",
+  "q": {
+   "s": "Tests showed that the well water had been ------- by chemicals from a nearby factory.",
+   "o": [
+    "contamination",
+    "contaminating",
+    "contaminated",
+    "contaminant"
+   ],
+   "a": 2,
+   "k": "had been 뒤에 by가 이어지는 수동태 구조이므로 과거분사 contaminated가 정답. contaminating은 능동 진행이라 by 이하와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "natural resources",
+  "pos": "n",
+  "m": [
+   "천연자원"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The country's economy depends heavily on its *natural resources*.",
+  "exKo": "그 나라의 경제는 천연자원에 크게 의존한다.",
+  "col": [
+   {
+    "e": "protect natural resources",
+    "k": "천연자원을 보호하다"
+   },
+   {
+    "e": "rich in natural resources",
+    "k": "천연자원이 풍부한"
+   },
+   {
+    "e": "limited natural resources",
+    "k": "한정된 천연자원"
+   }
+  ],
+  "der": [
+   {
+    "w": "resourceful",
+    "pos": "adj",
+    "m": "수완이 좋은"
+   }
+  ],
+  "para": [
+   "raw materials"
+  ],
+  "ant": "",
+  "tip": "'자원'의 뜻일 때 resources는 복수형으로 쓴다. human resources(인사부, 인적 자원)와 함께 Part 7에 자주 나온다.",
+  "q": {
+   "s": "The region is rich in natural -------, including timber, coal, and fresh water.",
+   "o": [
+    "resources",
+    "results",
+    "resorts",
+    "responses"
+   ],
+   "a": 0,
+   "k": "목재·석탄·담수는 '천연자원'의 예시이므로 resources가 정답. be rich in(~이 풍부하다)과 함께 자주 쓰인다."
+  }
+ },
+ {
+  "w": "consumption",
+  "pos": "n",
+  "m": [
+   "소비(량)"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new air conditioners have significantly lowered the office's energy *consumption*.",
+  "exKo": "새 에어컨 덕분에 사무실의 에너지 소비량이 크게 줄었다.",
+  "col": [
+   {
+    "e": "energy consumption",
+    "k": "에너지 소비"
+   },
+   {
+    "e": "fuel consumption",
+    "k": "연료 소비"
+   },
+   {
+    "e": "reduce consumption",
+    "k": "소비를 줄이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "consume",
+    "pos": "v",
+    "m": "소비하다"
+   },
+   {
+    "w": "consumer",
+    "pos": "n",
+    "m": "소비자"
+   }
+  ],
+  "para": [
+   "use",
+   "usage"
+  ],
+  "ant": "",
+  "tip": "명사 consumption(소비)과 사람명사 consumer(소비자)를 구분하는 문제가 나온다. not for human consumption(식용 불가)처럼 표시 문구에도 쓰인다.",
+  "q": {
+   "s": "Installing motion-sensor lights helped cut the building's electricity ------- by 20 percent.",
+   "o": [
+    "consumer",
+    "consumption",
+    "consumed",
+    "consume"
+   ],
+   "a": 1,
+   "k": "소유격 the building's 뒤, electricity와 함께 '전기 소비량'이라는 복합명사를 이루는 자리이므로 consumption이 정답. consumer는 사람이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "carbon footprint",
+  "pos": "n",
+  "m": [
+   "탄소 발자국"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The airline is trying to reduce its *carbon footprint* by using lighter aircraft.",
+  "exKo": "그 항공사는 더 가벼운 항공기를 사용해 탄소 발자국을 줄이려 하고 있다.",
+  "col": [
+   {
+    "e": "reduce one's carbon footprint",
+    "k": "탄소 발자국을 줄이다"
+   },
+   {
+    "e": "a smaller carbon footprint",
+    "k": "더 적은 탄소 발자국"
+   }
+  ],
+  "der": [],
+  "para": [
+   "carbon emissions"
+  ],
+  "ant": "",
+  "tip": "개인이나 기업이 배출하는 온실가스 총량을 뜻하며 reduce, shrink, lower와 함께 쓴다. Part 7에서는 carbon emissions로 바꿔 표현된다.",
+  "q": {
+   "s": "By shipping products by rail instead of truck, the company has reduced its carbon -------.",
+   "o": [
+    "footprint",
+    "blueprint",
+    "fingerprint",
+    "printout"
+   ],
+   "a": 0,
+   "k": "트럭 대신 철도로 운송해 줄인 것은 '탄소 발자국'이므로 footprint가 정답. blueprint(청사진), printout(출력물)은 carbon과 결합하지 않는다."
+  }
+ },
+ {
+  "w": "climate change",
+  "pos": "n",
+  "m": [
+   "기후 변화"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The conference will address how *climate change* affects global supply chains.",
+  "exKo": "그 회의에서는 기후 변화가 세계 공급망에 미치는 영향을 다룰 것이다.",
+  "col": [
+   {
+    "e": "combat climate change",
+    "k": "기후 변화에 대처하다"
+   },
+   {
+    "e": "the effects of climate change",
+    "k": "기후 변화의 영향"
+   }
+  ],
+  "der": [
+   {
+    "w": "climatic",
+    "pos": "adj",
+    "m": "기후의"
+   }
+  ],
+  "para": [
+   "global warming"
+  ],
+  "ant": "",
+  "tip": "climate는 장기적인 '기후', weather는 그날그날의 '날씨'다. combat, address, tackle 같은 '대처하다' 동사와 자주 쓰인다.",
+  "q": {
+   "s": "Rising sea levels are one of the most serious effects of climate -------.",
+   "o": [
+    "weather",
+    "season",
+    "forecast",
+    "change"
+   ],
+   "a": 3,
+   "k": "해수면 상승은 '기후 변화'의 영향이므로 change가 정답. climate weather, climate season, climate forecast는 쓰지 않는 결합이다."
+  }
+ },
+ {
+  "w": "inclement weather",
+  "pos": "n",
+  "m": [
+   "악천후"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The outdoor company picnic was postponed due to *inclement weather*.",
+  "exKo": "회사 야외 야유회가 악천후로 연기되었다.",
+  "col": [
+   {
+    "e": "due to inclement weather",
+    "k": "악천후로 인해"
+   },
+   {
+    "e": "in case of inclement weather",
+    "k": "악천후 시에"
+   }
+  ],
+  "der": [],
+  "para": [
+   "bad weather",
+   "severe weather"
+  ],
+  "ant": "",
+  "tip": "듣기 공지에서 행사 취소·연기 사유로 자주 나오며 bad weather, storm으로 바꿔 표현된다. inclement는 '(날씨가) 궂은'이라는 뜻으로 거의 weather와만 쓴다.",
+  "q": {
+   "s": "In the event of ------- weather, the awards ceremony will be moved indoors.",
+   "o": [
+    "increment",
+    "incremental",
+    "inclement",
+    "inclusive"
+   ],
+   "a": 2,
+   "k": "시상식을 실내로 옮기는 이유가 되어야 하므로 '궂은 날씨'를 뜻하는 inclement가 정답. incremental(점진적인), inclusive(포함한)는 weather와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "drought",
+  "pos": "n",
+  "m": [
+   "가뭄"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "A severe *drought* has driven up the price of wheat this year.",
+  "exKo": "극심한 가뭄으로 올해 밀 가격이 올랐다.",
+  "col": [
+   {
+    "e": "a severe drought",
+    "k": "극심한 가뭄"
+   },
+   {
+    "e": "a prolonged drought",
+    "k": "장기간의 가뭄"
+   }
+  ],
+  "der": [],
+  "para": [
+   "dry spell",
+   "water shortage"
+  ],
+  "ant": "flood",
+  "tip": "drought는 [드라우트]로 발음하며 draft와 혼동하지 않도록 한다. Part 7 기사에서 농산물 가격 상승의 원인으로 자주 등장한다.",
+  "q": {
+   "s": "Crop yields fell sharply last year because of a prolonged -------.",
+   "o": [
+    "draft",
+    "drought",
+    "dropout",
+    "doubt"
+   ],
+   "a": 1,
+   "k": "농작물 수확량이 급감한 원인으로 '장기간의 가뭄'이 자연스러우므로 drought가 정답. draft(초안)와 doubt(의심)는 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "precaution",
+  "pos": "n",
+  "m": [
+   "예방 조치",
+   "조심, 경계"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "As a *precaution*, all employees will receive a free flu shot.",
+  "exKo": "예방 조치로 모든 직원이 무료로 독감 예방 주사를 맞게 된다.",
+  "col": [
+   {
+    "e": "as a precaution",
+    "k": "예방 조치로"
+   },
+   {
+    "e": "take precautions",
+    "k": "예방 조치를 취하다"
+   },
+   {
+    "e": "safety precautions",
+    "k": "안전 예방 조치"
+   }
+  ],
+  "der": [
+   {
+    "w": "precautionary",
+    "pos": "adj",
+    "m": "예방의"
+   }
+  ],
+  "para": [
+   "safeguard",
+   "preventive measure"
+  ],
+  "ant": "",
+  "tip": "take precautions(예방 조치를 취하다), as a precaution(예방책으로)이 빈출 표현이다. 형용사 precautionary(precautionary measures 예방 조치)도 출제된다.",
+  "q": {
+   "s": "Visitors to the construction site must take all necessary safety -------.",
+   "o": [
+    "exceptions",
+    "reservations",
+    "precautions",
+    "suspicions"
+   ],
+   "a": 2,
+   "k": "건설 현장 방문객이 '취해야 하는' 것은 안전 예방 조치이므로 precautions가 정답. take precautions는 고정 표현이다."
+  }
+ },
+ {
+  "w": "hazard",
+  "pos": "n",
+  "m": [
+   "위험 (요소)"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Boxes left in the hallway are a fire *hazard* and must be removed.",
+  "exKo": "복도에 놓인 상자는 화재 위험 요소이므로 치워야 한다.",
+  "col": [
+   {
+    "e": "a fire hazard",
+    "k": "화재 위험 요소"
+   },
+   {
+    "e": "a safety hazard",
+    "k": "안전 위험 요소"
+   },
+   {
+    "e": "a health hazard",
+    "k": "건강을 해치는 요소"
+   }
+  ],
+  "der": [
+   {
+    "w": "hazardous",
+    "pos": "adj",
+    "m": "위험한, 유해한"
+   }
+  ],
+  "para": [
+   "danger",
+   "risk"
+  ],
+  "ant": "",
+  "tip": "fire hazard, safety hazard처럼 '위험 요소'를 나타내는 가산명사다. pose a hazard(위험을 초래하다)와 형용사 hazardous와의 품사 구분이 빈출이다.",
+  "q": {
+   "s": "Wet floors pose a serious safety ------- to both customers and staff.",
+   "o": [
+    "hazardous",
+    "hazard",
+    "hazardously",
+    "hazarded"
+   ],
+   "a": 1,
+   "k": "관사 a와 형용사 serious 뒤, pose의 목적어인 명사 자리이므로 hazard가 정답. pose a hazard는 '위험을 초래하다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "evacuate",
+  "pos": "v",
+  "m": [
+   "대피시키다",
+   "(장소에서) 대피하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "All staff were *evacuated* from the building when the fire alarm sounded.",
+  "exKo": "화재 경보가 울리자 모든 직원이 건물에서 대피했다.",
+  "col": [
+   {
+    "e": "evacuate the building",
+    "k": "건물에서 대피하다"
+   },
+   {
+    "e": "be evacuated from",
+    "k": "~에서 대피하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "evacuation",
+    "pos": "n",
+    "m": "대피"
+   },
+   {
+    "w": "evacuee",
+    "pos": "n",
+    "m": "대피자"
+   }
+  ],
+  "para": [
+   "clear",
+   "leave"
+  ],
+  "ant": "",
+  "tip": "evacuate the building처럼 장소를 목적어로 하면 '~에서 대피하다', 사람을 목적어로 하면 '대피시키다'가 된다. 명사 evacuation(evacuation route 대피로)도 함께 나온다.",
+  "q": {
+   "s": "In the event of a fire, employees should ------- the building using the nearest stairway.",
+   "o": [
+    "evacuate",
+    "evacuee",
+    "evacuated",
+    "evacuation"
+   ],
+   "a": 0,
+   "k": "조동사 should 뒤에는 동사원형이 와야 하므로 evacuate가 정답. evacuation과 evacuee는 명사라 동사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "emergency exit",
+  "pos": "n",
+  "m": [
+   "비상구"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "Flight attendants pointed out the *emergency exits* before takeoff.",
+  "exKo": "승무원들은 이륙 전에 비상구 위치를 안내했다.",
+  "col": [
+   {
+    "e": "the nearest emergency exit",
+    "k": "가장 가까운 비상구"
+   },
+   {
+    "e": "block an emergency exit",
+    "k": "비상구를 막다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "fire exit"
+  ],
+  "ant": "",
+  "tip": "안내 방송·안전 공지에서 Do not block the emergency exits.(비상구를 막지 말 것)처럼 자주 나오며 fire exit로 바꿔 표현된다.",
+  "q": {
+   "s": "Boxes and equipment must never be stored in front of the emergency -------.",
+   "o": [
+    "exist",
+    "excerpt",
+    "exit",
+    "excess"
+   ],
+   "a": 2,
+   "k": "물건을 쌓아 두면 안 되는 곳은 '비상구' 앞이므로 exit가 정답. 철자가 비슷한 exist(존재하다)는 동사라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "fire drill",
+  "pos": "n",
+  "m": [
+   "소방 훈련"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "A *fire drill* will be held at 10 A.M. on Wednesday.",
+  "exKo": "수요일 오전 10시에 소방 훈련이 실시된다.",
+  "col": [
+   {
+    "e": "conduct a fire drill",
+    "k": "소방 훈련을 실시하다"
+   },
+   {
+    "e": "an annual fire drill",
+    "k": "연례 소방 훈련"
+   }
+  ],
+  "der": [
+   {
+    "w": "drill",
+    "pos": "v",
+    "m": "훈련시키다, 구멍을 뚫다"
+   }
+  ],
+  "para": [
+   "evacuation drill",
+   "safety drill"
+  ],
+  "ant": "",
+  "tip": "듣기 공지에서 fire drill 일정과 '엘리베이터를 이용하지 말 것' 같은 지시 사항이 자주 출제된다. drill은 '훈련' 외에 '드릴(공구)'이라는 뜻도 있다.",
+  "q": {
+   "s": "All employees must participate in the fire ------- scheduled for Friday afternoon.",
+   "o": [
+    "alarm",
+    "extinguisher",
+    "drill",
+    "hazard"
+   ],
+   "a": 2,
+   "k": "금요일 오후로 '예정되어 있고' 직원들이 '참여하는' 것은 소방 훈련이므로 drill이 정답. alarm, extinguisher, hazard는 participate in의 대상이 될 수 없다."
+  }
+ },
+ {
+  "w": "fire extinguisher",
+  "pos": "n",
+  "m": [
+   "소화기"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4
+  ],
+  "ex": "A *fire extinguisher* is mounted on the wall next to the kitchen door.",
+  "exKo": "주방 문 옆 벽에 소화기가 설치되어 있다.",
+  "col": [
+   {
+    "e": "use a fire extinguisher",
+    "k": "소화기를 사용하다"
+   },
+   {
+    "e": "inspect fire extinguishers",
+    "k": "소화기를 점검하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "extinguish",
+    "pos": "v",
+    "m": "(불을) 끄다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "Part 1 사진에서 A fire extinguisher is mounted on the wall.처럼 위치 묘사로 나온다. 동사 extinguish(불을 끄다)는 put out으로 바꿔 쓸 수 있다.",
+  "q": {
+   "s": "Maintenance staff check every fire ------- in the building once a month.",
+   "o": [
+    "extinguish",
+    "extinguished",
+    "extinction",
+    "extinguisher"
+   ],
+   "a": 3,
+   "k": "한정사 every 뒤의 단수 명사 자리이며 정비 직원이 '점검하는' 대상이므로 extinguisher가 정답. extinction은 '멸종'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "caution",
+  "pos": "n",
+  "m": [
+   "주의, 조심",
+   "(동) 주의를 주다, 경고하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Drivers should use *caution* when traveling on icy roads.",
+  "exKo": "운전자는 빙판길을 주행할 때 주의해야 한다.",
+  "col": [
+   {
+    "e": "use caution",
+    "k": "주의하다"
+   },
+   {
+    "e": "with caution",
+    "k": "조심해서"
+   },
+   {
+    "e": "caution A against B",
+    "k": "A에게 B하지 말라고 주의를 주다"
+   }
+  ],
+  "der": [
+   {
+    "w": "cautious",
+    "pos": "adj",
+    "m": "조심스러운"
+   },
+   {
+    "w": "cautiously",
+    "pos": "adv",
+    "m": "조심스럽게"
+   }
+  ],
+  "para": [
+   "care"
+  ],
+  "ant": "",
+  "tip": "명사로 exercise[use] caution(주의를 기울이다), 동사로 caution A against -ing(A에게 ~하지 말라고 경고하다) 형태로 출제된다. 형용사 cautious와의 품사 구분도 빈출이다.",
+  "q": {
+   "s": "Visitors are advised to proceed with ------- when walking through the construction area.",
+   "o": [
+    "cautious",
+    "cautioned",
+    "cautiously",
+    "caution"
+   ],
+   "a": 3,
+   "k": "전치사 with의 목적어인 명사 자리이므로 caution이 정답. proceed with caution은 '조심해서 진행하다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "warning",
+  "pos": "n",
+  "m": [
+   "경고, 주의"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The label carries a *warning* about the risk of overheating.",
+  "exKo": "그 라벨에는 과열 위험에 대한 경고가 적혀 있다.",
+  "col": [
+   {
+    "e": "a warning sign",
+    "k": "경고 표지판"
+   },
+   {
+    "e": "without warning",
+    "k": "예고 없이"
+   },
+   {
+    "e": "issue a warning",
+    "k": "경고를 발령하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "warn",
+    "pos": "v",
+    "m": "경고하다"
+   }
+  ],
+  "para": [
+   "caution",
+   "alert"
+  ],
+  "ant": "",
+  "tip": "동사 warn은 warn A of[about] B, warn A to do 형태로 쓴다. without warning(예고 없이)은 Part 7에 자주 나온다.",
+  "q": {
+   "s": "The weather service issued a storm ------- for the coastal region.",
+   "o": [
+    "warning",
+    "warned",
+    "warns",
+    "warn"
+   ],
+   "a": 0,
+   "k": "관사 a 뒤, issued의 목적어인 명사 자리이므로 warning이 정답. storm warning은 '폭풍 경보'라는 뜻이다."
+  }
+ },
+ {
+  "w": "harmful",
+  "pos": "adj",
+  "m": [
+   "해로운, 유해한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Long hours in front of a screen can be *harmful* to your eyes.",
+  "exKo": "화면 앞에서 오랜 시간을 보내면 눈에 해로울 수 있다.",
+  "col": [
+   {
+    "e": "harmful to",
+    "k": "~에 해로운"
+   },
+   {
+    "e": "harmful effects",
+    "k": "해로운 영향"
+   },
+   {
+    "e": "harmful chemicals",
+    "k": "유해 화학 물질"
+   }
+  ],
+  "der": [
+   {
+    "w": "harm",
+    "pos": "n",
+    "m": "해, 손해"
+   },
+   {
+    "w": "harmless",
+    "pos": "adj",
+    "m": "무해한"
+   }
+  ],
+  "para": [
+   "damaging",
+   "dangerous"
+  ],
+  "ant": "harmless",
+  "tip": "be harmful to(~에 해롭다)의 전치사 to가 출제 포인트이고, 반의어 harmless(무해한)와 함께 기억한다.",
+  "q": {
+   "s": "Some cleaning products contain substances that are ------- to the environment.",
+   "o": [
+    "harm",
+    "harmed",
+    "harmful",
+    "harmfully"
+   ],
+   "a": 2,
+   "k": "be동사 are 뒤 보어 자리이며 to와 함께 '~에 해로운'이라는 뜻이 되어야 하므로 형용사 harmful이 정답."
+  }
+ },
+ {
+  "w": "ecosystem",
+  "pos": "n",
+  "m": [
+   "생태계"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The new dam could seriously damage the river's *ecosystem*.",
+  "exKo": "새 댐이 그 강의 생태계를 심각하게 훼손할 수 있다.",
+  "col": [
+   {
+    "e": "a fragile ecosystem",
+    "k": "취약한 생태계"
+   },
+   {
+    "e": "a marine ecosystem",
+    "k": "해양 생태계"
+   },
+   {
+    "e": "a business ecosystem",
+    "k": "비즈니스 생태계"
+   }
+  ],
+  "der": [
+   {
+    "w": "ecology",
+    "pos": "n",
+    "m": "생태(학)"
+   },
+   {
+    "w": "ecological",
+    "pos": "adj",
+    "m": "생태의"
+   }
+  ],
+  "para": [
+   "environment"
+  ],
+  "ant": "",
+  "tip": "자연 생태계 외에 business ecosystem(산업 생태계)처럼 비즈니스 기사에서 비유적으로도 쓰인다.",
+  "q": {
+   "s": "Environmental groups warned that the oil spill could harm the region's marine -------.",
+   "o": [
+    "ecologist",
+    "ecosystem",
+    "economist",
+    "ecotourist"
+   ],
+   "a": 1,
+   "k": "기름 유출이 해칠 수 있는 대상은 '해양 생태계'이므로 ecosystem이 정답. ecologist(생태학자), economist(경제학자), ecotourist(생태 관광객)는 사람이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "wildlife",
+  "pos": "n",
+  "m": [
+   "야생 동물"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The park is home to a wide variety of *wildlife*, including deer and eagles.",
+  "exKo": "그 공원에는 사슴과 독수리를 비롯한 다양한 야생 동물이 서식한다.",
+  "col": [
+   {
+    "e": "wildlife conservation",
+    "k": "야생 동물 보호"
+   },
+   {
+    "e": "a wildlife sanctuary",
+    "k": "야생 동물 보호 구역"
+   },
+   {
+    "e": "local wildlife",
+    "k": "그 지역의 야생 동물"
+   }
+  ],
+  "der": [],
+  "para": [
+   "animals"
+  ],
+  "ant": "",
+  "tip": "wildlife는 불가산명사로 a wildlife, wildlifes로 쓰지 않는다. 관광 안내문에서 wildlife tour, wildlife reserve로 자주 나온다.",
+  "q": {
+   "s": "Visitors to the nature reserve are not allowed to feed the -------.",
+   "o": [
+    "wilderness",
+    "wildlife",
+    "wildly",
+    "wildfire"
+   ],
+   "a": 1,
+   "k": "feed(먹이를 주다)의 대상은 동물이므로 wildlife가 정답. wilderness(황야), wildfire(산불)는 먹이를 줄 수 있는 대상이 아니다."
+  }
+ },
+ {
+  "w": "habitat",
+  "pos": "n",
+  "m": [
+   "서식지"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The project was halted to protect the natural *habitat* of rare birds.",
+  "exKo": "그 프로젝트는 희귀 조류의 자연 서식지를 보호하기 위해 중단되었다.",
+  "col": [
+   {
+    "e": "a natural habitat",
+    "k": "자연 서식지"
+   },
+   {
+    "e": "habitat loss",
+    "k": "서식지 감소"
+   },
+   {
+    "e": "protect habitats",
+    "k": "서식지를 보호하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "inhabit",
+    "pos": "v",
+    "m": "~에 살다, 서식하다"
+   },
+   {
+    "w": "inhabitant",
+    "pos": "n",
+    "m": "주민, 서식 동물"
+   }
+  ],
+  "para": [
+   "home"
+  ],
+  "ant": "",
+  "tip": "동물의 '서식지'를 뜻하며, 형태가 비슷한 habit(습관), inhabitant(주민)를 보기에 넣은 함정에 주의한다.",
+  "q": {
+   "s": "Expanding the highway would destroy the ------- of several endangered species.",
+   "o": [
+    "habit",
+    "habitual",
+    "inhabitant",
+    "habitat"
+   ],
+   "a": 3,
+   "k": "고속도로 확장으로 파괴되는 것은 멸종 위기종의 '서식지'이므로 habitat이 정답. habit(습관)은 철자가 비슷한 함정이고, habitual은 형용사다."
+  }
+ },
+ {
+  "w": "endangered",
+  "pos": "adj",
+  "m": [
+   "멸종 위기에 처한",
+   "위험에 처한"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The zoo runs a breeding program for *endangered* animals.",
+  "exKo": "그 동물원은 멸종 위기 동물을 위한 번식 프로그램을 운영한다.",
+  "col": [
+   {
+    "e": "endangered species",
+    "k": "멸종 위기종"
+   },
+   {
+    "e": "critically endangered",
+    "k": "심각한 멸종 위기에 처한"
+   }
+  ],
+  "der": [
+   {
+    "w": "endanger",
+    "pos": "v",
+    "m": "위험에 빠뜨리다"
+   }
+  ],
+  "para": [
+   "threatened",
+   "at risk"
+  ],
+  "ant": "",
+  "tip": "endangered species(멸종 위기종)처럼 과거분사형 형용사로 쓴다. 동사 endanger는 endanger safety(안전을 위태롭게 하다)처럼 쓰인다.",
+  "q": {
+   "s": "The organization works to protect ------- species such as the snow leopard.",
+   "o": [
+    "endanger",
+    "endangering",
+    "endangered",
+    "endangerment"
+   ],
+   "a": 2,
+   "k": "명사 species를 수식하며 '위험에 처한'이라는 수동의 의미이므로 과거분사 endangered가 정답. endangering은 '위험에 빠뜨리는'이라는 능동의 의미다."
+  }
+ },
+ {
+  "w": "biodegradable",
+  "pos": "adj",
+  "m": [
+   "생분해성의"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "All of our takeout containers are made from *biodegradable* materials.",
+  "exKo": "우리 가게의 테이크아웃 용기는 모두 생분해성 소재로 만들어진다.",
+  "col": [
+   {
+    "e": "biodegradable packaging",
+    "k": "생분해성 포장재"
+   },
+   {
+    "e": "biodegradable plastic",
+    "k": "생분해성 플라스틱"
+   }
+  ],
+  "der": [
+   {
+    "w": "degrade",
+    "pos": "v",
+    "m": "분해되다, 저하시키다"
+   }
+  ],
+  "para": [
+   "compostable",
+   "eco-friendly"
+  ],
+  "ant": "",
+  "tip": "bio(생물) + degrade(분해되다) + able(~할 수 있는)로 '미생물에 의해 분해되는'이라는 뜻이다. 친환경 제품 광고에서 eco-friendly로 바꿔 표현된다.",
+  "q": {
+   "s": "The cafe replaced its plastic straws with ------- paper ones.",
+   "o": [
+    "bilingual",
+    "biodegradable",
+    "biographical",
+    "biannual"
+   ],
+   "a": 1,
+   "k": "플라스틱 빨대를 대신하는 친환경 종이 빨대를 꾸며야 하므로 biodegradable이 정답. bilingual(2개 국어를 하는), biannual(연 2회의)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "safety inspection",
+  "pos": "n",
+  "m": [
+   "안전 점검"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The factory passed its annual *safety inspection* without any violations.",
+  "exKo": "그 공장은 연례 안전 점검을 위반 사항 없이 통과했다.",
+  "col": [
+   {
+    "e": "conduct a safety inspection",
+    "k": "안전 점검을 실시하다"
+   },
+   {
+    "e": "pass a safety inspection",
+    "k": "안전 점검을 통과하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "inspect",
+    "pos": "v",
+    "m": "점검하다"
+   },
+   {
+    "w": "inspector",
+    "pos": "n",
+    "m": "점검관, 감독관"
+   }
+  ],
+  "para": [
+   "safety check"
+  ],
+  "ant": "",
+  "tip": "듣기에서 시설 이용 중단이나 일정 변경의 사유로 자주 나온다. 사람명사 inspector와 행위명사 inspection의 구분이 Part 5에 출제된다.",
+  "q": {
+   "s": "The elevators will be out of service on Monday morning for a routine safety -------.",
+   "o": [
+    "inspector",
+    "inspect",
+    "inspected",
+    "inspection"
+   ],
+   "a": 3,
+   "k": "관사 a와 형용사 routine 뒤의 명사 자리이며 엘리베이터 운행 중단의 사유이므로 '안전 점검'을 뜻하는 inspection이 정답. inspector는 사람이다."
+  }
+ },
+ {
+  "w": "reusable",
+  "pos": "adj",
+  "m": [
+   "재사용할 수 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Customers who bring *reusable* bags receive a small discount.",
+  "exKo": "재사용 가방을 가져오는 고객은 소폭 할인을 받는다.",
+  "col": [
+   {
+    "e": "reusable bags",
+    "k": "재사용 가방, 장바구니"
+   },
+   {
+    "e": "reusable containers",
+    "k": "다회용 용기"
+   }
+  ],
+  "der": [
+   {
+    "w": "reuse",
+    "pos": "v",
+    "m": "재사용하다"
+   }
+  ],
+  "para": [],
+  "ant": "disposable",
+  "tip": "반의어 disposable(일회용의)과 짝으로 출제된다. 어미 -able을 보고 명사 앞 수식 자리의 형용사를 고르는 품사 문제도 나온다.",
+  "q": {
+   "s": "To reduce waste, the office has replaced its paper cups with ------- mugs.",
+   "o": [
+    "reusable",
+    "reusing",
+    "reuse",
+    "reuses"
+   ],
+   "a": 0,
+   "k": "명사 mugs를 수식하는 형용사 자리이므로 reusable이 정답. reuse와 reuses는 동사이고, reusing mugs는 '머그잔을 재사용하는 것'이라는 뜻이 된다."
+  }
+ },
+ {
+  "w": "landfill",
+  "pos": "n",
+  "m": [
+   "쓰레기 매립지"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Recycling programs keep tons of plastic out of local *landfills*.",
+  "exKo": "재활용 프로그램 덕분에 엄청난 양의 플라스틱이 지역 매립지로 가지 않는다.",
+  "col": [
+   {
+    "e": "send waste to a landfill",
+    "k": "쓰레기를 매립지로 보내다"
+   },
+   {
+    "e": "a landfill site",
+    "k": "쓰레기 매립지"
+   }
+  ],
+  "der": [],
+  "para": [
+   "dump",
+   "waste site"
+  ],
+  "ant": "",
+  "tip": "환경 기사에서 reduce the amount of waste sent to landfills(매립지로 보내는 쓰레기 양을 줄이다) 형태로 자주 나온다.",
+  "q": {
+   "s": "The company aims to cut the amount of waste it sends to ------- by half.",
+   "o": [
+    "landmarks",
+    "landscapes",
+    "landfills",
+    "landlords"
+   ],
+   "a": 2,
+   "k": "쓰레기를 '보내는' 장소이므로 landfills가 정답. landmarks(랜드마크), landscapes(풍경), landlords(집주인)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "alarm",
+  "pos": "n",
+  "m": [
+   "경보(기)",
+   "알람"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4
+  ],
+  "ex": "Everyone left the building as soon as the fire *alarm* went off.",
+  "exKo": "화재 경보가 울리자마자 모두 건물을 빠져나갔다.",
+  "col": [
+   {
+    "e": "a fire alarm",
+    "k": "화재 경보기"
+   },
+   {
+    "e": "set off an alarm",
+    "k": "경보를 울리다"
+   },
+   {
+    "e": "an alarm goes off",
+    "k": "경보가 울리다"
+   }
+  ],
+  "der": [
+   {
+    "w": "alarming",
+    "pos": "adj",
+    "m": "우려스러운"
+   },
+   {
+    "w": "alarmed",
+    "pos": "adj",
+    "m": "불안해하는"
+   }
+  ],
+  "para": [
+   "siren"
+  ],
+  "ant": "",
+  "tip": "an alarm goes off(경보가 울리다), set off the alarm(경보를 작동시키다)이 듣기 빈출 표현이다. 형용사 alarming은 an alarming increase(우려스러운 증가)처럼 쓰인다.",
+  "q": {
+   "s": "Opening this door after 10 P.M. will set off the security -------.",
+   "o": [
+    "alarming",
+    "alarm",
+    "alarmed",
+    "alarmingly"
+   ],
+   "a": 1,
+   "k": "관사 the와 security 뒤의 명사 자리이며 set off(작동시키다)의 목적어이므로 alarm이 정답. alarming과 alarmed는 형용사, alarmingly는 부사다."
+  }
+ },
+ {
+  "w": "deplete",
+  "pos": "v",
+  "m": [
+   "고갈시키다",
+   "(양을) 크게 줄이다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Overfishing has severely *depleted* fish stocks in the region.",
+  "exKo": "남획으로 그 지역의 어류 자원이 심각하게 고갈되었다.",
+  "col": [
+   {
+    "e": "deplete resources",
+    "k": "자원을 고갈시키다"
+   },
+   {
+    "e": "depleted supplies",
+    "k": "바닥난 비품[재고]"
+   }
+  ],
+  "der": [
+   {
+    "w": "depletion",
+    "pos": "n",
+    "m": "고갈, 감소"
+   }
+  ],
+  "para": [
+   "use up",
+   "exhaust"
+  ],
+  "ant": "replenish",
+  "tip": "deplete는 타동사로 resources, supplies, savings 등을 목적어로 취한다. Part 7에서는 use up, run out of로 바꿔 표현된다.",
+  "q": {
+   "s": "Office supplies were quickly ------- after the company hired twenty new employees.",
+   "o": [
+    "depleted",
+    "delayed",
+    "deleted",
+    "declined"
+   ],
+   "a": 0,
+   "k": "직원이 20명 늘어난 뒤 사무용품이 빠르게 '바닥났다'는 의미이므로 depleted가 정답. deleted(삭제된), delayed(지연된), declined(거절된)는 사무용품의 상태로 의미가 통하지 않는다."
+  }
+ }
+]

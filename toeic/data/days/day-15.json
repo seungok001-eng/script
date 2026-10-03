@@ -1,0 +1,1952 @@
+[
+ {
+  "w": "hospitality",
+  "pos": "n",
+  "m": [
+   "(호텔·외식 등) 서비스업",
+   "환대, 접대"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Ms. Ramos has worked in the *hospitality* industry for over fifteen years.",
+  "exKo": "라모스 씨는 15년 넘게 호텔·외식 서비스업계에서 일해 왔다.",
+  "col": [
+   {
+    "e": "hospitality industry",
+    "k": "(호텔·외식) 서비스업"
+   },
+   {
+    "e": "warm hospitality",
+    "k": "따뜻한 환대"
+   }
+  ],
+  "der": [
+   {
+    "w": "hospitable",
+    "pos": "adj",
+    "m": "환대하는, 친절한"
+   }
+  ],
+  "para": [
+   "hotel and restaurant industry",
+   "warm welcome"
+  ],
+  "ant": "",
+  "tip": "hospitality industry는 호텔·외식·관광업을 묶어 부르는 말로 Part 7 구인 광고에 자주 나온다. 형용사 hospitable(친절한)과 hospital(병원)을 혼동시키는 보기에 주의하자.",
+  "q": {
+   "s": "Thank you for your warm ------- during our visit to your factory last week.",
+   "o": [
+    "hospitable",
+    "hospitality",
+    "hospital",
+    "hospitalize"
+   ],
+   "a": 1,
+   "k": "소유격 your와 형용사 warm 뒤는 명사 자리이고 '따뜻한 환대'라는 의미이므로 hospitality가 정답. hospitable은 형용사다."
+  }
+ },
+ {
+  "w": "front desk",
+  "pos": "phr",
+  "m": [
+   "프런트, 안내 데스크"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Guests can store their luggage at the *front desk* after checking out.",
+  "exKo": "투숙객은 체크아웃 후 프런트에 짐을 맡길 수 있다.",
+  "col": [
+   {
+    "e": "at the front desk",
+    "k": "프런트에서"
+   },
+   {
+    "e": "call the front desk",
+    "k": "프런트에 전화하다"
+   },
+   {
+    "e": "front desk staff",
+    "k": "프런트 직원"
+   }
+  ],
+  "der": [],
+  "para": [
+   "reception desk",
+   "reception"
+  ],
+  "ant": "",
+  "tip": "Part 3·4 호텔 대화에서 'Please contact the front desk'가 문제 해결 방법으로 자주 제시된다. reception (desk)과 같은 뜻이다.",
+  "q": {
+   "s": "Guests who arrive after midnight should pick up their room keys at the ------- desk.",
+   "o": [
+    "front",
+    "forward",
+    "ahead",
+    "advance"
+   ],
+   "a": 0,
+   "k": "호텔의 '프런트'는 front desk이므로 front가 정답. forward, ahead, advance는 desk와 결합해 '안내 데스크'를 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "receptionist",
+  "pos": "n",
+  "m": [
+   "접수원, 안내 담당자"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4
+  ],
+  "ex": "The *receptionist* asked the visitor to sign in and wait in the lobby.",
+  "exKo": "접수원은 방문객에게 방명록에 서명하고 로비에서 기다려 달라고 했다.",
+  "col": [
+   {
+    "e": "hotel receptionist",
+    "k": "호텔 접수원"
+   },
+   {
+    "e": "front desk receptionist",
+    "k": "프런트 접수원"
+   }
+  ],
+  "der": [
+   {
+    "w": "reception",
+    "pos": "n",
+    "m": "접수(처), 환영회"
+   },
+   {
+    "w": "receive",
+    "pos": "v",
+    "m": "받다"
+   }
+  ],
+  "para": [
+   "front desk clerk"
+  ],
+  "ant": "",
+  "tip": "사람명사 receptionist와 장소·행사명사 reception(접수처, 환영회)을 구분하는 문제가 나온다. 인사하거나 안내하는 주체라면 receptionist다.",
+  "q": {
+   "s": "The ------- greeted the guests warmly and handed them their room keys.",
+   "o": [
+    "reception",
+    "receiving",
+    "receptive",
+    "receptionist"
+   ],
+   "a": 3,
+   "k": "손님을 맞이하고 열쇠를 건네는 '사람'이 와야 하므로 receptionist가 정답. reception은 접수처나 환영회라 동작의 주체가 될 수 없다."
+  }
+ },
+ {
+  "w": "amenities",
+  "pos": "n",
+  "m": [
+   "편의 시설"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The hotel's *amenities* include a fitness center, an indoor pool, and free Wi-Fi.",
+  "exKo": "그 호텔의 편의 시설에는 피트니스 센터, 실내 수영장, 무료 와이파이가 있다.",
+  "col": [
+   {
+    "e": "hotel amenities",
+    "k": "호텔 편의 시설"
+   },
+   {
+    "e": "modern amenities",
+    "k": "현대식 편의 시설"
+   }
+  ],
+  "der": [
+   {
+    "w": "amenity",
+    "pos": "n",
+    "m": "(단수) 편의 시설 한 가지"
+   }
+  ],
+  "para": [
+   "facilities",
+   "features",
+   "services"
+  ],
+  "ant": "",
+  "tip": "주로 복수형 amenities로 쓰이며 Part 7 호텔·아파트 광고에서 facilities로 패러프레이징된다. 광고에 언급되지 않은 시설을 묻는 NOT 문제의 단골 소재다.",
+  "q": {
+   "s": "The apartment complex offers a range of -------, including a rooftop garden and a fitness room.",
+   "o": [
+    "vacancies",
+    "gratuities",
+    "amenities",
+    "occupancies"
+   ],
+   "a": 2,
+   "k": "옥상 정원과 피트니스 룸은 편의 시설의 예이므로 amenities가 정답. vacancies는 빈방·공석, gratuities는 팁이다."
+  }
+ },
+ {
+  "w": "complimentary",
+  "pos": "adj",
+  "m": [
+   "무료의",
+   "칭찬하는"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "All guests receive a *complimentary* breakfast served from 6 to 10 A.M.",
+  "exKo": "모든 투숙객에게는 오전 6시부터 10시까지 무료 조식이 제공된다.",
+  "col": [
+   {
+    "e": "complimentary breakfast",
+    "k": "무료 조식"
+   },
+   {
+    "e": "complimentary shuttle service",
+    "k": "무료 셔틀 서비스"
+   }
+  ],
+  "der": [
+   {
+    "w": "compliment",
+    "pos": "n",
+    "m": "칭찬"
+   }
+  ],
+  "para": [
+   "free",
+   "free of charge",
+   "at no cost"
+  ],
+  "ant": "",
+  "tip": "complimentary는 Part 7에서 free, at no charge로 패러프레이징된다. 철자가 비슷한 complementary(보완하는)와의 혼동을 노리는 문제에 주의하자.",
+  "q": {
+   "s": "Guests staying at least three nights will receive a ------- bottle of wine upon arrival.",
+   "o": [
+    "complementary",
+    "compliment",
+    "complimentary",
+    "complimented"
+   ],
+   "a": 2,
+   "k": "3박 이상 투숙객에게 주는 '무료' 와인이므로 complimentary가 정답. complementary는 '보완하는'이라는 뜻이라 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "vacancy",
+  "pos": "n",
+  "m": [
+   "빈방, 빈 객실",
+   "(일자리) 공석"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The inn has no *vacancies* this weekend because of the music festival.",
+  "exKo": "그 여관은 음악 축제 때문에 이번 주말 빈방이 없다.",
+  "col": [
+   {
+    "e": "no vacancies",
+    "k": "빈방 없음"
+   },
+   {
+    "e": "fill a vacancy",
+    "k": "공석을 채우다"
+   },
+   {
+    "e": "job vacancy",
+    "k": "일자리 공석"
+   }
+  ],
+  "der": [
+   {
+    "w": "vacant",
+    "pos": "adj",
+    "m": "비어 있는"
+   }
+  ],
+  "para": [
+   "available room",
+   "opening"
+  ],
+  "ant": "",
+  "tip": "호텔에서는 '빈방', 회사에서는 '공석(job opening)'의 뜻이다. 형용사 vacant(비어 있는)와의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "Due to the international conference, few hotels downtown have any ------- next week.",
+   "o": [
+    "vacancies",
+    "vacant",
+    "vacate",
+    "vacantly"
+   ],
+   "a": 0,
+   "k": "have의 목적어인 명사 자리이고 '빈방'을 뜻하므로 vacancies가 정답. vacant는 형용사, vacate는 동사다."
+  }
+ },
+ {
+  "w": "suite",
+  "pos": "n",
+  "m": [
+   "스위트룸",
+   "(사무실) 호"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The CEO always stays in a *suite* on the top floor of the hotel.",
+  "exKo": "그 최고경영자는 항상 호텔 꼭대기 층의 스위트룸에 묵는다.",
+  "col": [
+   {
+    "e": "executive suite",
+    "k": "귀빈실, 임원실"
+   },
+   {
+    "e": "honeymoon suite",
+    "k": "신혼부부용 스위트룸"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "",
+  "tip": "발음이 sweet와 같아 Part 2·3에서 혼동을 노린다. 주소에 쓰인 'Suite 300'은 '300호(사무실)'를 뜻한다.",
+  "q": {
+   "s": "The hotel upgraded Mr. Ward to a ------- with a separate living room and a view of the bay.",
+   "o": [
+    "lobby",
+    "suite",
+    "patio",
+    "vacancy"
+   ],
+   "a": 1,
+   "k": "별도의 거실과 만 전망을 갖춘 객실로 업그레이드해 준 것이므로 suite가 정답. lobby, patio는 객실이 아니다."
+  }
+ },
+ {
+  "w": "housekeeping",
+  "pos": "n",
+  "m": [
+   "(호텔) 객실 관리(부)",
+   "청소"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Guests who need extra towels can call *housekeeping* at extension 4.",
+  "exKo": "수건이 더 필요한 투숙객은 내선 4번으로 객실 관리부에 전화하면 된다.",
+  "col": [
+   {
+    "e": "housekeeping staff",
+    "k": "객실 관리 직원"
+   },
+   {
+    "e": "housekeeping service",
+    "k": "객실 청소 서비스"
+   }
+  ],
+  "der": [
+   {
+    "w": "housekeeper",
+    "pos": "n",
+    "m": "객실 청소원, 가사 도우미"
+   }
+  ],
+  "para": [
+   "cleaning service"
+  ],
+  "ant": "",
+  "tip": "호텔에서 housekeeping은 객실 청소를 담당하는 부서를 가리키는 불가산명사다. 사람명사 housekeeper와 구분하자.",
+  "q": {
+   "s": "Our ------- staff will clean your room every day between 10 A.M. and 2 P.M.",
+   "o": [
+    "housekeeper",
+    "housekeeping",
+    "houses",
+    "housework"
+   ],
+   "a": 1,
+   "k": "staff를 수식해 '객실 관리 직원'을 이루는 명사는 housekeeping이므로 정답. housekeeper는 사람명사라 staff 앞에 쓰지 않는다."
+  }
+ },
+ {
+  "w": "room service",
+  "pos": "phr",
+  "m": [
+   "룸서비스"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "*Room service* is available 24 hours a day for all hotel guests.",
+  "exKo": "룸서비스는 모든 투숙객에게 하루 24시간 제공된다.",
+  "col": [
+   {
+    "e": "order room service",
+    "k": "룸서비스를 주문하다"
+   },
+   {
+    "e": "room service menu",
+    "k": "룸서비스 메뉴"
+   }
+  ],
+  "der": [],
+  "para": [
+   "in-room dining"
+  ],
+  "ant": "",
+  "tip": "order room service처럼 불가산명사로 쓰여 a room service로 쓰지 않는다. Part 7 호텔 안내문에서 in-room dining으로 바뀌어 나오기도 한다.",
+  "q": {
+   "s": "Guests who prefer to eat in their rooms can order room ------- by calling extension 5.",
+   "o": [
+    "serve",
+    "server",
+    "service",
+    "servant"
+   ],
+   "a": 2,
+   "k": "객실에서 식사를 주문하는 서비스는 room service이므로 service가 정답. server는 사람명사다."
+  }
+ },
+ {
+  "w": "check out",
+  "pos": "phr",
+  "m": [
+   "체크아웃하다",
+   "확인해 보다, (책을) 대출하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Guests must *check out* by 11 A.M. or pay a late fee.",
+  "exKo": "투숙객은 오전 11시까지 체크아웃하지 않으면 추가 요금을 내야 한다.",
+  "col": [
+   {
+    "e": "check out of a hotel",
+    "k": "호텔에서 체크아웃하다"
+   },
+   {
+    "e": "late check-out",
+    "k": "늦은 체크아웃"
+   },
+   {
+    "e": "check-out time",
+    "k": "체크아웃 시간"
+   }
+  ],
+  "der": [
+   {
+    "w": "checkout",
+    "pos": "n",
+    "m": "체크아웃, 계산대"
+   }
+  ],
+  "para": [
+   "leave"
+  ],
+  "ant": "check in",
+  "tip": "check out of + 호텔(~에서 체크아웃하다)의 of에 주의하자. 명사는 check-out/checkout(계산대)이며, 구어로는 '확인해 보다(check out the new menu)'의 뜻도 있다.",
+  "q": {
+   "s": "Guests who wish to ------- after noon must request a late check-out from the front desk.",
+   "o": [
+    "check up",
+    "check off",
+    "check over",
+    "check out"
+   ],
+   "a": 3,
+   "k": "정오 이후 '체크아웃'하려면 late check-out을 요청해야 한다는 의미이므로 check out이 정답."
+  }
+ },
+ {
+  "w": "wake-up call",
+  "pos": "phr",
+  "m": [
+   "모닝콜"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "Mr. Baker asked the front desk for a *wake-up call* at 6 A.M.",
+  "exKo": "베이커 씨는 프런트에 오전 6시 모닝콜을 요청했다.",
+  "col": [
+   {
+    "e": "request a wake-up call",
+    "k": "모닝콜을 요청하다"
+   },
+   {
+    "e": "set up a wake-up call",
+    "k": "모닝콜을 설정하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "wake up",
+    "pos": "v",
+    "m": "일어나다, 깨우다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "'모닝콜'은 영어로 wake-up call이다(morning call은 콩글리시). 기사에서는 '경각심을 일깨우는 일'이라는 비유적 의미로도 쓰인다.",
+  "q": {
+   "s": "If you have an early flight, you can ask the front desk for a ------- call.",
+   "o": [
+    "wake-up",
+    "wake",
+    "waking",
+    "woke"
+   ],
+   "a": 0,
+   "k": "'모닝콜'은 하이픈으로 연결한 wake-up call이므로 wake-up이 정답."
+  }
+ },
+ {
+  "w": "lobby",
+  "pos": "n",
+  "m": [
+   "로비"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4
+  ],
+  "ex": "Breakfast is served in the café next to the main *lobby*.",
+  "exKo": "아침 식사는 메인 로비 옆 카페에서 제공된다.",
+  "col": [
+   {
+    "e": "hotel lobby",
+    "k": "호텔 로비"
+   },
+   {
+    "e": "in the lobby",
+    "k": "로비에서"
+   },
+   {
+    "e": "lobby area",
+    "k": "로비 구역"
+   }
+  ],
+  "der": [],
+  "para": [
+   "entrance hall",
+   "foyer"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 'People are waiting in a lobby.' 같은 사진 묘사로, Part 3·4에서는 만남 장소(meet in the lobby)로 자주 나온다. 동사 lobby는 '로비 활동을 하다'라는 다른 뜻이다.",
+  "q": {
+   "s": "The tour group will meet in the hotel ------- at 8 A.M. before boarding the bus.",
+   "o": [
+    "lobby",
+    "recipe",
+    "banquet",
+    "cuisine"
+   ],
+   "a": 0,
+   "k": "단체 관광객이 버스 탑승 전 모이는 호텔 내 장소는 로비이므로 lobby가 정답. banquet은 연회, cuisine은 요리라 장소가 아니다."
+  }
+ },
+ {
+  "w": "concierge",
+  "pos": "n",
+  "m": [
+   "(호텔) 안내 담당 직원, 컨시어지"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The *concierge* can recommend restaurants and book theater tickets for guests.",
+  "exKo": "컨시어지는 투숙객에게 식당을 추천하고 공연 표를 예매해 줄 수 있다.",
+  "col": [
+   {
+    "e": "concierge desk",
+    "k": "안내 데스크"
+   },
+   {
+    "e": "concierge service",
+    "k": "컨시어지 서비스"
+   }
+  ],
+  "der": [],
+  "para": [
+   "guest services"
+  ],
+  "ant": "",
+  "tip": "concierge는 식당 추천·티켓 예매·교통편 안내를 해 주는 호텔 직원이다. Part 3·4에서 '추천을 받으려면 누구에게 문의하라'는 정답으로 나온다.",
+  "q": {
+   "s": "For restaurant recommendations or tour bookings, please speak with the ------- in the lobby.",
+   "o": [
+    "patio",
+    "concierge",
+    "housekeeping",
+    "cuisine"
+   ],
+   "a": 1,
+   "k": "speak with의 대상은 사람이어야 하고 식당 추천과 투어 예약을 돕는 직원은 concierge이므로 정답."
+  }
+ },
+ {
+  "w": "cuisine",
+  "pos": "n",
+  "m": [
+   "(특정 지역의) 요리, 요리법"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The restaurant serves traditional Thai *cuisine* in a modern setting.",
+  "exKo": "그 식당은 현대적인 분위기에서 전통 태국 요리를 제공한다.",
+  "col": [
+   {
+    "e": "local cuisine",
+    "k": "현지 요리"
+   },
+   {
+    "e": "Italian cuisine",
+    "k": "이탈리아 요리"
+   },
+   {
+    "e": "fine cuisine",
+    "k": "고급 요리"
+   }
+  ],
+  "der": [],
+  "para": [
+   "food",
+   "cooking"
+  ],
+  "ant": "",
+  "tip": "cuisine은 특정 나라·지역의 '요리(방식)'를 가리키며 주로 불가산으로 쓴다. 개별 음식 한 접시는 dish로 표현한다.",
+  "q": {
+   "s": "Visitors to the festival can sample local ------- from more than 30 food stalls.",
+   "o": [
+    "culinary",
+    "chef",
+    "recipe",
+    "cuisine"
+   ],
+   "a": 3,
+   "k": "sample(맛보다)의 목적어로 '현지 요리'가 와야 하므로 cuisine이 정답. culinary는 형용사, chef는 사람이다."
+  }
+ },
+ {
+  "w": "dine",
+  "pos": "v",
+  "m": [
+   "식사하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Hotel guests can *dine* on the rooftop terrace during the summer months.",
+  "exKo": "투숙객은 여름철에 옥상 테라스에서 식사할 수 있다.",
+  "col": [
+   {
+    "e": "dine out",
+    "k": "외식하다"
+   },
+   {
+    "e": "dine in",
+    "k": "매장에서 식사하다"
+   },
+   {
+    "e": "dine with",
+    "k": "~와 식사하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "dining",
+    "pos": "n",
+    "m": "식사"
+   },
+   {
+    "w": "diner",
+    "pos": "n",
+    "m": "식사하는 손님, 간이식당"
+   }
+  ],
+  "para": [
+   "eat",
+   "have a meal"
+  ],
+  "ant": "",
+  "tip": "dine은 자동사로 'dine at + 장소', 'dine on + 음식'처럼 전치사와 쓴다. 사람명사 diner(식사 손님)와 dining(식사)의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "Customers who wish to ------- in the outdoor area should inform their server when ordering.",
+   "o": [
+    "diner",
+    "dining",
+    "dine",
+    "dinner"
+   ],
+   "a": 2,
+   "k": "to부정사 뒤에는 동사원형이 오므로 dine이 정답. diner, dinner는 명사다."
+  }
+ },
+ {
+  "w": "appetizer",
+  "pos": "n",
+  "m": [
+   "전채 요리, 애피타이저"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "We ordered two *appetizers* to share before our main courses arrived.",
+  "exKo": "우리는 주요리가 나오기 전에 나눠 먹을 전채 요리 두 개를 주문했다.",
+  "col": [
+   {
+    "e": "order an appetizer",
+    "k": "전채 요리를 주문하다"
+   },
+   {
+    "e": "appetizer menu",
+    "k": "전채 요리 메뉴"
+   }
+  ],
+  "der": [
+   {
+    "w": "appetite",
+    "pos": "n",
+    "m": "식욕"
+   }
+  ],
+  "para": [
+   "starter"
+  ],
+  "ant": "",
+  "tip": "Part 3 식당 대화에서 '전채 요리 → 주요리(main course, entrée) → 디저트' 순서가 자주 언급된다. 영국식으로는 starter라고 한다.",
+  "q": {
+   "s": "The set menu includes an -------, a main course, and a dessert for $35.",
+   "o": [
+    "appetite",
+    "applicant",
+    "apparel",
+    "appetizer"
+   ],
+   "a": 3,
+   "k": "주요리, 디저트와 함께 세트 메뉴에 포함되는 것은 전채 요리이므로 appetizer가 정답. appetite는 '식욕'이다."
+  }
+ },
+ {
+  "w": "entrée",
+  "pos": "n",
+  "m": [
+   "주요리, 메인 요리"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Each *entrée* comes with a side salad and your choice of soup.",
+  "exKo": "모든 주요리에는 곁들임 샐러드와 선택 수프가 함께 나온다.",
+  "col": [
+   {
+    "e": "choice of entrée",
+    "k": "주요리 선택"
+   },
+   {
+    "e": "vegetarian entrée",
+    "k": "채식 주요리"
+   }
+  ],
+  "der": [],
+  "para": [
+   "main course",
+   "main dish"
+  ],
+  "ant": "",
+  "tip": "미국 영어에서 entrée는 '주요리(main course)'를 뜻한다. Part 7 메뉴판·행사 안내에서 main course로 패러프레이징된다.",
+  "q": {
+   "s": "After the appetizers were cleared, the servers brought out the -------, a grilled steak with vegetables.",
+   "o": [
+    "entrée",
+    "beverage",
+    "recipe",
+    "gratuity"
+   ],
+   "a": 0,
+   "k": "전채 요리 다음에 나오는 스테이크는 주요리이므로 entrée가 정답. beverage(음료), recipe(조리법), gratuity(팁)는 스테이크를 가리킬 수 없다."
+  }
+ },
+ {
+  "w": "beverage",
+  "pos": "n",
+  "m": [
+   "음료"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Food and *beverages* are not allowed in the conference room.",
+  "exKo": "회의실에는 음식과 음료를 반입할 수 없다.",
+  "col": [
+   {
+    "e": "food and beverages",
+    "k": "식음료"
+   },
+   {
+    "e": "hot beverages",
+    "k": "따뜻한 음료"
+   },
+   {
+    "e": "alcoholic beverages",
+    "k": "주류"
+   }
+  ],
+  "der": [],
+  "para": [
+   "drink",
+   "refreshment"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 drink로 패러프레이징되며 food and beverage(F&B, 식음료)로 자주 묶인다. 가산명사라 a beverage, beverages로 쓴다.",
+  "q": {
+   "s": "Coffee, tea, and other ------- will be served in the hallway during the break.",
+   "o": [
+    "appetizers",
+    "dishes",
+    "beverages",
+    "ingredients"
+   ],
+   "a": 2,
+   "k": "커피, 차와 같은 종류인 '음료'가 와야 하므로 beverages가 정답. other는 앞에 나온 것과 같은 범주를 가리킨다."
+  }
+ },
+ {
+  "w": "refreshments",
+  "pos": "n",
+  "m": [
+   "다과, 간단한 음식과 음료"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Light *refreshments* will be served in the lobby after the presentation.",
+  "exKo": "발표가 끝난 뒤 로비에서 가벼운 다과가 제공될 것이다.",
+  "col": [
+   {
+    "e": "light refreshments",
+    "k": "가벼운 다과"
+   },
+   {
+    "e": "serve refreshments",
+    "k": "다과를 제공하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "refresh",
+    "pos": "v",
+    "m": "상쾌하게 하다"
+   },
+   {
+    "w": "refreshing",
+    "pos": "adj",
+    "m": "상쾌한, 신선한"
+   }
+  ],
+  "para": [
+   "snacks and drinks",
+   "light snacks"
+  ],
+  "ant": "",
+  "tip": "'다과'의 뜻으로는 보통 복수형 refreshments로 쓴다. Part 4·7 행사 안내 마지막에 'Refreshments will be served'가 자주 나온다.",
+  "q": {
+   "s": "Light ------- will be provided to all participants at the end of the workshop.",
+   "o": [
+    "refreshments",
+    "refreshing",
+    "refreshed",
+    "refresh"
+   ],
+   "a": 0,
+   "k": "형용사 Light의 수식을 받으며 문장의 주어가 되는 명사 자리이므로 refreshments가 정답."
+  }
+ },
+ {
+  "w": "catering",
+  "pos": "n",
+  "m": [
+   "출장 요리 (서비스), 케이터링"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Our company uses a local *catering* service for all its client events.",
+  "exKo": "우리 회사는 모든 고객 행사에 지역 출장 요리 업체를 이용한다.",
+  "col": [
+   {
+    "e": "catering service",
+    "k": "출장 요리 서비스"
+   },
+   {
+    "e": "catering company",
+    "k": "출장 요리 업체"
+   },
+   {
+    "e": "provide catering",
+    "k": "음식을 제공하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "cater",
+    "pos": "v",
+    "m": "음식을 공급하다"
+   },
+   {
+    "w": "caterer",
+    "pos": "n",
+    "m": "출장 요리 업체(업자)"
+   }
+  ],
+  "para": [
+   "food service"
+  ],
+  "ant": "",
+  "tip": "catering(출장 요리 서비스)과 caterer(출장 요리 업체·업자)를 구분하자. catering company, catering service처럼 명사 앞 수식어로도 쓰인다.",
+  "q": {
+   "s": "Bayview Bistro also provides ------- for weddings, birthday parties, and business meetings.",
+   "o": [
+    "caterer",
+    "catering",
+    "cater",
+    "catered"
+   ],
+   "a": 1,
+   "k": "provides의 목적어인 명사 자리이고 '출장 요리 서비스'를 뜻하므로 catering이 정답. caterer는 가산명사라 관사 없이 단수로 쓸 수 없다."
+  }
+ },
+ {
+  "w": "cater",
+  "pos": "v",
+  "m": [
+   "(행사에) 음식을 공급하다",
+   "(요구를) 충족시키다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Hartwell Foods will *cater* the reception for the visiting delegation.",
+  "exKo": "하트웰 푸드가 방문 대표단을 위한 환영회의 음식을 맡을 것이다.",
+  "col": [
+   {
+    "e": "cater an event",
+    "k": "행사에 음식을 제공하다"
+   },
+   {
+    "e": "cater to",
+    "k": "~의 요구에 맞추다"
+   }
+  ],
+  "der": [
+   {
+    "w": "caterer",
+    "pos": "n",
+    "m": "출장 요리 업체(업자)"
+   },
+   {
+    "w": "catering",
+    "pos": "n",
+    "m": "출장 요리 서비스"
+   }
+  ],
+  "para": [
+   "provide food for",
+   "serve"
+  ],
+  "ant": "",
+  "tip": "타동사로 '(행사에) 음식을 제공하다'(cater a party), cater to/for는 '(특정 고객층의) 요구에 맞추다'(cater to young families)라는 뜻이다.",
+  "q": {
+   "s": "The resort ------- to families with young children by offering babysitting services and a kids' club.",
+   "o": [
+    "serves",
+    "suits",
+    "caters",
+    "fits"
+   ],
+   "a": 2,
+   "k": "전치사 to와 함께 '~의 요구에 맞추다'를 뜻하는 caters가 정답. serves, suits, fits는 타동사라 to 없이 목적어를 바로 취한다."
+  }
+ },
+ {
+  "w": "chef",
+  "pos": "n",
+  "m": [
+   "요리사, 주방장"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "The restaurant's head *chef* trained in Paris for five years.",
+  "exKo": "그 식당의 주방장은 파리에서 5년간 수련했다.",
+  "col": [
+   {
+    "e": "head chef",
+    "k": "주방장"
+   },
+   {
+    "e": "executive chef",
+    "k": "총주방장"
+   },
+   {
+    "e": "pastry chef",
+    "k": "제과 담당 요리사"
+   }
+  ],
+  "der": [],
+  "para": [
+   "cook"
+  ],
+  "ant": "",
+  "tip": "head/executive chef(총주방장)가 Part 7 기사·광고의 인물로 자주 등장한다. Part 1에서는 'A chef is preparing food.' 같은 묘사가 나온다.",
+  "q": {
+   "s": "Award-winning ------- Lisa Tran will demonstrate how to prepare traditional Vietnamese dishes.",
+   "o": [
+    "cuisine",
+    "chef",
+    "recipe",
+    "buffet"
+   ],
+   "a": 1,
+   "k": "사람 이름 Lisa Tran 앞에서 직함 역할을 하며 요리 시연을 하는 사람이므로 chef가 정답."
+  }
+ },
+ {
+  "w": "culinary",
+  "pos": "adj",
+  "m": [
+   "요리의, 조리의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "He studied at a *culinary* school in Lyon before opening his own bistro.",
+  "exKo": "그는 자신의 식당을 열기 전에 리옹의 요리 학교에서 공부했다.",
+  "col": [
+   {
+    "e": "culinary school",
+    "k": "요리 학교"
+   },
+   {
+    "e": "culinary skills",
+    "k": "요리 솜씨"
+   },
+   {
+    "e": "culinary arts",
+    "k": "조리 예술"
+   }
+  ],
+  "der": [],
+  "para": [
+   "cooking"
+  ],
+  "ant": "",
+  "tip": "culinary는 명사 앞에서 쓰는 형용사로 culinary school/skills/arts처럼 쓰인다. Part 7 인물 소개에서 경력을 묻는 문제의 단서가 된다.",
+  "q": {
+   "s": "Applicants for the head cook position must have formal ------- training and five years of experience.",
+   "o": [
+    "vacant",
+    "scenic",
+    "culinary",
+    "spacious"
+   ],
+   "a": 2,
+   "k": "주방장 지원자에게 필요한 것은 '요리' 교육이므로 culinary가 정답. vacant(비어 있는), spacious(넓은)는 training과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "ingredient",
+  "pos": "n",
+  "m": [
+   "재료, 성분",
+   "(성공의) 요소"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our chefs use only fresh, locally grown *ingredients*.",
+  "exKo": "우리 요리사들은 지역에서 재배한 신선한 재료만 사용한다.",
+  "col": [
+   {
+    "e": "fresh ingredients",
+    "k": "신선한 재료"
+   },
+   {
+    "e": "key ingredient",
+    "k": "핵심 재료(요소)"
+   },
+   {
+    "e": "natural ingredients",
+    "k": "천연 성분"
+   }
+  ],
+  "der": [],
+  "para": [
+   "component",
+   "element"
+  ],
+  "ant": "",
+  "tip": "가산명사라 주로 복수형 ingredients로 쓴다. the key ingredient for success(성공의 핵심 요소)처럼 비유적으로도 쓰인다.",
+  "q": {
+   "s": "All of the ------- in our salads come from organic farms in the region.",
+   "o": [
+    "ingredients",
+    "recipes",
+    "cuisines",
+    "appetizers"
+   ],
+   "a": 0,
+   "k": "샐러드에 들어가며 농장에서 오는 것은 재료이므로 ingredients가 정답. recipes(조리법)는 농장에서 올 수 없다."
+  }
+ },
+ {
+  "w": "recipe",
+  "pos": "n",
+  "m": [
+   "조리법, 레시피",
+   "비결"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bakery still uses the same bread *recipe* it created in 1952.",
+  "exKo": "그 제과점은 1952년에 만든 빵 조리법을 지금도 그대로 사용한다.",
+  "col": [
+   {
+    "e": "recipe for",
+    "k": "~의 조리법(비결)"
+   },
+   {
+    "e": "follow a recipe",
+    "k": "조리법을 따르다"
+   },
+   {
+    "e": "a recipe for success",
+    "k": "성공의 비결"
+   }
+  ],
+  "der": [],
+  "para": [
+   "formula",
+   "method"
+  ],
+  "ant": "",
+  "tip": "recipe for(~의 조리법, 비결)의 전치사 for에 주의하자. 철자가 비슷한 receipt(영수증)와의 혼동을 노리는 보기가 나온다.",
+  "q": {
+   "s": "The cookbook contains more than 200 easy ------- for busy professionals.",
+   "o": [
+    "receipts",
+    "recipes",
+    "receptions",
+    "recipients"
+   ],
+   "a": 1,
+   "k": "요리책에 담긴 것은 조리법이므로 recipes가 정답. receipts는 영수증, recipients는 수령인이다."
+  }
+ },
+ {
+  "w": "specialty",
+  "pos": "n",
+  "m": [
+   "(식당의) 대표 요리, 특산품",
+   "전문 분야"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Grilled seafood is the *specialty* of this small restaurant by the harbor.",
+  "exKo": "구운 해산물은 항구 옆 이 작은 식당의 대표 요리다.",
+  "col": [
+   {
+    "e": "house specialty",
+    "k": "그 집의 대표 요리"
+   },
+   {
+    "e": "local specialty",
+    "k": "지역 특산물"
+   },
+   {
+    "e": "specialty store",
+    "k": "전문점"
+   }
+  ],
+  "der": [
+   {
+    "w": "specialize",
+    "pos": "v",
+    "m": "전문으로 하다"
+   },
+   {
+    "w": "specialist",
+    "pos": "n",
+    "m": "전문가"
+   }
+  ],
+  "para": [
+   "signature dish"
+  ],
+  "ant": "",
+  "tip": "식당에서는 '대표 요리(house specialty)'의 뜻이다. 동사 specialize in(~을 전문으로 하다)의 전치사 in도 Part 5에 자주 나온다.",
+  "q": {
+   "s": "Fresh pasta with truffle sauce is the house ------- at Vito's Kitchen.",
+   "o": [
+    "specialize",
+    "specialist",
+    "specially",
+    "specialty"
+   ],
+   "a": 3,
+   "k": "관사 the와 house 뒤 명사 자리로 '그 집의 대표 요리'를 뜻하는 specialty가 정답. specialist는 사람명사다."
+  }
+ },
+ {
+  "w": "vegetarian",
+  "pos": "adj",
+  "m": [
+   "채식(주의)의",
+   "채식주의자"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The banquet menu includes several *vegetarian* dishes for guests who do not eat meat.",
+  "exKo": "연회 메뉴에는 고기를 먹지 않는 손님을 위한 채식 요리가 여러 가지 있다.",
+  "col": [
+   {
+    "e": "vegetarian option",
+    "k": "채식 메뉴"
+   },
+   {
+    "e": "vegetarian dish",
+    "k": "채식 요리"
+   }
+  ],
+  "der": [
+   {
+    "w": "vegetable",
+    "pos": "n",
+    "m": "채소"
+   }
+  ],
+  "para": [
+   "meat-free"
+  ],
+  "ant": "",
+  "tip": "형용사(vegetarian meal)와 사람명사(a vegetarian) 둘 다 가능하다. Part 3·7에서 행사 식사 신청 시 채식 메뉴 요청이 단골로 나온다.",
+  "q": {
+   "s": "Please let us know by Friday if you would prefer a ------- meal at the awards dinner.",
+   "o": [
+    "spacious",
+    "vegetarian",
+    "cozy",
+    "scenic"
+   ],
+   "a": 1,
+   "k": "meal을 수식해 '채식 식사'를 뜻하는 vegetarian이 정답. spacious(넓은), cozy(아늑한), scenic(경치 좋은)은 식사를 수식하지 않는다."
+  }
+ },
+ {
+  "w": "dietary restriction",
+  "pos": "phr",
+  "m": [
+   "식이 제한"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Please inform us of any *dietary restrictions* when you register for the conference.",
+  "exKo": "회의에 등록할 때 식이 제한이 있으면 알려 주기 바란다.",
+  "col": [
+   {
+    "e": "have dietary restrictions",
+    "k": "식이 제한이 있다"
+   },
+   {
+    "e": "accommodate dietary restrictions",
+    "k": "식이 제한을 반영하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "diet",
+    "pos": "n",
+    "m": "식단, 식사"
+   },
+   {
+    "w": "dietary",
+    "pos": "adj",
+    "m": "식사의, 식이의"
+   }
+  ],
+  "para": [
+   "dietary requirements",
+   "special dietary needs"
+  ],
+  "ant": "",
+  "tip": "Part 7 행사 등록 양식에 'any dietary restrictions or allergies'로 자주 나온다. 형용사 dietary와 명사 diet의 품사 구분도 출제된다.",
+  "q": {
+   "s": "Attendees with dietary ------- such as nut allergies should note them on the registration form.",
+   "o": [
+    "restrictions",
+    "reservations",
+    "vacancies",
+    "amenities"
+   ],
+   "a": 0,
+   "k": "견과류 알레르기 같은 '식이 제한'이므로 restrictions가 정답. reservations는 예약, vacancies는 빈방이다."
+  }
+ },
+ {
+  "w": "banquet",
+  "pos": "n",
+  "m": [
+   "연회, 만찬"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The awards *banquet* will be held in the Grand Ballroom on Saturday evening.",
+  "exKo": "시상식 만찬은 토요일 저녁 그랜드 볼룸에서 열린다.",
+  "col": [
+   {
+    "e": "banquet hall",
+    "k": "연회장"
+   },
+   {
+    "e": "awards banquet",
+    "k": "시상식 만찬"
+   },
+   {
+    "e": "host a banquet",
+    "k": "연회를 열다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "formal dinner",
+   "feast",
+   "gala"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 formal dinner, gala로 패러프레이징되며, banquet hall/room(연회장)은 호텔 시설 안내에 자주 나온다.",
+  "q": {
+   "s": "The company will hold a formal ------- next month to celebrate its 50th anniversary.",
+   "o": [
+    "patio",
+    "vacancy",
+    "banquet",
+    "lounge"
+   ],
+   "a": 2,
+   "k": "창립 50주년을 기념해 '여는' 공식 행사는 연회이므로 banquet이 정답. patio, lounge는 장소라 hold의 목적어로 어울리지 않는다."
+  }
+ },
+ {
+  "w": "buffet",
+  "pos": "n",
+  "m": [
+   "뷔페"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "A breakfast *buffet* is served in the hotel restaurant every morning.",
+  "exKo": "매일 아침 호텔 레스토랑에서 조식 뷔페가 제공된다.",
+  "col": [
+   {
+    "e": "breakfast buffet",
+    "k": "조식 뷔페"
+   },
+   {
+    "e": "buffet lunch",
+    "k": "뷔페식 점심"
+   },
+   {
+    "e": "buffet-style",
+    "k": "뷔페식의"
+   }
+  ],
+  "der": [],
+  "para": [
+   "self-service meal"
+  ],
+  "ant": "",
+  "tip": "buffet의 t는 묵음이다. buffet-style lunch처럼 명사 앞 수식어로도 쓰이며, 식사가 포함된 행사 안내에 자주 나온다.",
+  "q": {
+   "s": "Lunch will be served ------- style, so guests can choose from a wide variety of dishes.",
+   "o": [
+    "suite",
+    "lounge",
+    "patio",
+    "buffet"
+   ],
+   "a": 3,
+   "k": "손님이 다양한 요리를 직접 골라 먹는 방식은 뷔페식이므로 buffet가 정답."
+  }
+ },
+ {
+  "w": "gratuity",
+  "pos": "n",
+  "m": [
+   "팁, 봉사료"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "A 15 percent *gratuity* will be added to the bill for groups of six or more.",
+  "exKo": "6인 이상 단체의 계산서에는 15퍼센트의 봉사료가 추가된다.",
+  "col": [
+   {
+    "e": "include a gratuity",
+    "k": "봉사료를 포함하다"
+   },
+   {
+    "e": "gratuity included",
+    "k": "봉사료 포함"
+   }
+  ],
+  "der": [],
+  "para": [
+   "tip",
+   "service charge"
+  ],
+  "ant": "",
+  "tip": "gratuity는 tip의 격식 표현으로 Part 7 영수증·메뉴판에서 service charge로 패러프레이징된다. 'gratuity included'면 팁을 따로 낼 필요가 없다.",
+  "q": {
+   "s": "Please note that an 18 percent ------- is automatically added to the bill for large parties.",
+   "o": [
+    "vacancy",
+    "gratuity",
+    "occupancy",
+    "specialty"
+   ],
+   "a": 1,
+   "k": "단체 손님의 계산서에 자동으로 추가되는 18퍼센트는 봉사료이므로 gratuity가 정답."
+  }
+ },
+ {
+  "w": "seating",
+  "pos": "n",
+  "m": [
+   "좌석, 좌석 배치"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The restaurant's outdoor *seating* area is open from April to October.",
+  "exKo": "그 식당의 야외 좌석 구역은 4월부터 10월까지 운영된다.",
+  "col": [
+   {
+    "e": "seating capacity",
+    "k": "좌석 수, 수용 인원"
+   },
+   {
+    "e": "seating arrangement",
+    "k": "좌석 배치"
+   },
+   {
+    "e": "outdoor seating",
+    "k": "야외 좌석"
+   }
+  ],
+  "der": [
+   {
+    "w": "seat",
+    "pos": "v",
+    "m": "앉히다, 수용하다"
+   }
+  ],
+  "para": [
+   "seats"
+  ],
+  "ant": "",
+  "tip": "seating은 불가산명사로 seating capacity(좌석 수), seating chart(좌석 배치도)로 쓴다. 동사 seat은 타동사라 '앉다'는 be seated로 표현한다.",
+  "q": {
+   "s": "The café has added outdoor ------- so that customers can enjoy their coffee in the sunshine.",
+   "o": [
+    "seating",
+    "seated",
+    "vacancy",
+    "occupancy"
+   ],
+   "a": 0,
+   "k": "added의 목적어인 명사 자리이고 손님이 햇볕 아래 커피를 마실 수 있는 '좌석'이므로 seating이 정답."
+  }
+ },
+ {
+  "w": "patio",
+  "pos": "n",
+  "m": [
+   "테라스, 파티오"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "On sunny days, customers can enjoy their meals on the *patio* behind the café.",
+  "exKo": "날씨가 좋은 날에는 손님들이 카페 뒤편 테라스에서 식사를 즐길 수 있다.",
+  "col": [
+   {
+    "e": "on the patio",
+    "k": "테라스에서"
+   },
+   {
+    "e": "outdoor patio",
+    "k": "야외 테라스"
+   },
+   {
+    "e": "patio furniture",
+    "k": "테라스용 가구"
+   }
+  ],
+  "der": [],
+  "para": [
+   "terrace",
+   "outdoor seating area"
+  ],
+  "ant": "",
+  "tip": "Part 1 사진에서 'Some chairs have been arranged on a patio.' 같은 묘사로 나온다. 전치사는 on the patio를 쓴다.",
+  "q": {
+   "s": "Tables on the ------- are available only when the weather is warm and dry.",
+   "o": [
+    "lobby",
+    "suite",
+    "concierge",
+    "patio"
+   ],
+   "a": 3,
+   "k": "날씨가 좋을 때만 이용할 수 있는 야외 공간이므로 patio가 정답. lobby, suite는 실내 공간이다."
+  }
+ },
+ {
+  "w": "spacious",
+  "pos": "adj",
+  "m": [
+   "널찍한, 넓은"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "All of our rooms are *spacious* and have a view of the ocean.",
+  "exKo": "우리 호텔 객실은 모두 넓고 바다가 내려다보인다.",
+  "col": [
+   {
+    "e": "spacious room",
+    "k": "넓은 방"
+   },
+   {
+    "e": "spacious office",
+    "k": "널찍한 사무실"
+   }
+  ],
+  "der": [
+   {
+    "w": "space",
+    "pos": "n",
+    "m": "공간"
+   }
+  ],
+  "para": [
+   "roomy",
+   "large"
+  ],
+  "ant": "cramped",
+  "tip": "Part 7 광고에서 roomy, large로 패러프레이징된다. 명사 space와 형용사 spacious의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "The newly renovated meeting room is ------- enough to hold up to 80 people.",
+   "o": [
+    "space",
+    "spaces",
+    "spacious",
+    "spaciously"
+   ],
+   "a": 2,
+   "k": "be동사 뒤 보어 자리이며 enough의 수식을 받는 형용사가 필요하므로 spacious가 정답."
+  }
+ },
+ {
+  "w": "cozy",
+  "pos": "adj",
+  "m": [
+   "아늑한"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The inn offers *cozy* rooms with fireplaces and handmade furniture.",
+  "exKo": "그 여관은 벽난로와 수제 가구를 갖춘 아늑한 객실을 제공한다.",
+  "col": [
+   {
+    "e": "cozy atmosphere",
+    "k": "아늑한 분위기"
+   },
+   {
+    "e": "cozy café",
+    "k": "아늑한 카페"
+   }
+  ],
+  "der": [
+   {
+    "w": "coziness",
+    "pos": "n",
+    "m": "아늑함"
+   }
+  ],
+  "para": [
+   "comfortable",
+   "warm",
+   "snug"
+  ],
+  "ant": "",
+  "tip": "Part 7 숙박·카페 광고에서 comfortable, inviting으로 패러프레이징된다. 영국식 철자는 cosy다.",
+  "q": {
+   "s": "With its soft lighting and comfortable armchairs, the café has a warm and ------- atmosphere.",
+   "o": [
+    "vacant",
+    "culinary",
+    "spacious",
+    "cozy"
+   ],
+   "a": 3,
+   "k": "부드러운 조명과 편안한 안락의자가 만드는 '아늑한' 분위기이므로 cozy가 정답. spacious(넓은)는 atmosphere를 수식하지 않는다."
+  }
+ },
+ {
+  "w": "lounge",
+  "pos": "n",
+  "m": [
+   "라운지, 휴게실"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   4
+  ],
+  "ex": "Coffee and snacks are available in the staff *lounge* on the second floor.",
+  "exKo": "2층 직원 휴게실에서 커피와 간식을 이용할 수 있다.",
+  "col": [
+   {
+    "e": "hotel lounge",
+    "k": "호텔 라운지"
+   },
+   {
+    "e": "staff lounge",
+    "k": "직원 휴게실"
+   },
+   {
+    "e": "departure lounge",
+    "k": "출국 대기실"
+   }
+  ],
+  "der": [],
+  "para": [
+   "break room",
+   "waiting area"
+  ],
+  "ant": "",
+  "tip": "staff lounge(직원 휴게실), departure lounge(출국 대기실)처럼 장소를 나타낸다. 동사 lounge는 '느긋하게 쉬다'라는 뜻이다.",
+  "q": {
+   "s": "Employees can eat lunch or take a break in the staff ------- on the third floor.",
+   "o": [
+    "banquet",
+    "lounge",
+    "buffet",
+    "suite"
+   ],
+   "a": 1,
+   "k": "직원들이 점심을 먹거나 쉬는 장소는 직원 휴게실이므로 lounge가 정답. banquet(연회), buffet(뷔페)는 장소가 아니다."
+  }
+ },
+ {
+  "w": "room rate",
+  "pos": "phr",
+  "m": [
+   "객실 요금, 숙박 요금"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "*Room rates* at the hotel increase during the summer tourist season.",
+  "exKo": "그 호텔의 객실 요금은 여름 관광 성수기에 오른다.",
+  "col": [
+   {
+    "e": "special room rate",
+    "k": "특별 객실 요금"
+   },
+   {
+    "e": "room rates start at",
+    "k": "객실 요금이 ~부터 시작하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "rate",
+    "pos": "n",
+    "m": "요금, 비율"
+   }
+  ],
+  "para": [
+   "room price",
+   "nightly rate"
+  ],
+  "ant": "",
+  "tip": "Part 7 호텔 광고·이메일에서 'room rates start at $120 per night'처럼 per night과 함께 나온다. 단체 할인 요금은 group rate다.",
+  "q": {
+   "s": "Conference attendees can receive a discounted room ------- by mentioning the event when booking.",
+   "o": [
+    "fare",
+    "toll",
+    "rate",
+    "tuition"
+   ],
+   "a": 2,
+   "k": "'객실 요금'은 room rate이므로 rate가 정답. fare는 교통 요금, toll은 통행료, tuition은 수업료다."
+  }
+ },
+ {
+  "w": "occupancy",
+  "pos": "n",
+  "m": [
+   "(객실) 점유율, 투숙",
+   "(건물·방의) 사용, 거주"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Hotel *occupancy* in the city reached 95 percent during the film festival.",
+  "exKo": "영화제 기간 동안 그 도시의 호텔 객실 점유율은 95퍼센트에 달했다.",
+  "col": [
+   {
+    "e": "occupancy rate",
+    "k": "객실 점유율"
+   },
+   {
+    "e": "maximum occupancy",
+    "k": "최대 수용 인원"
+   },
+   {
+    "e": "single occupancy",
+    "k": "1인 사용"
+   }
+  ],
+  "der": [
+   {
+    "w": "occupy",
+    "pos": "v",
+    "m": "차지하다, 사용하다"
+   },
+   {
+    "w": "occupant",
+    "pos": "n",
+    "m": "거주자, 사용자"
+   }
+  ],
+  "para": [
+   "room usage"
+  ],
+  "ant": "vacancy",
+  "tip": "occupancy rate(객실 점유율)는 Part 7 호텔 업계 기사에 자주 나온다. 사람명사 occupant(사용자, 거주자)와 구분하자.",
+  "q": {
+   "s": "The hotel's ------- rate rose to 90 percent after the new convention center opened nearby.",
+   "o": [
+    "occupancy",
+    "occupant",
+    "occupy",
+    "occupied"
+   ],
+   "a": 0,
+   "k": "'객실 점유율'은 occupancy rate이므로 occupancy가 정답. occupant는 사람명사라 rate와 결합하지 않는다."
+  }
+ },
+ {
+  "w": "server",
+  "pos": "n",
+  "m": [
+   "(식당) 종업원, 서빙 직원"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "Our *server* recommended the grilled salmon and a glass of white wine.",
+  "exKo": "우리 테이블을 담당한 종업원은 연어구이와 화이트 와인 한 잔을 추천했다.",
+  "col": [
+   {
+    "e": "ask your server",
+    "k": "종업원에게 문의하다"
+   },
+   {
+    "e": "restaurant server",
+    "k": "식당 종업원"
+   }
+  ],
+  "der": [
+   {
+    "w": "serve",
+    "pos": "v",
+    "m": "(음식을) 제공하다"
+   },
+   {
+    "w": "service",
+    "pos": "n",
+    "m": "서비스, 봉사"
+   }
+  ],
+  "para": [
+   "waiter",
+   "waitress"
+  ],
+  "ant": "",
+  "tip": "식당에서 server는 waiter/waitress를 성별 구분 없이 부르는 말이다. Part 7 메뉴판에서 'Please ask your server about today's specials.'로 자주 나온다.",
+  "q": {
+   "s": "If you have any food allergies, please inform your ------- before placing your order.",
+   "o": [
+    "service",
+    "serving",
+    "server",
+    "serve"
+   ],
+   "a": 2,
+   "k": "inform은 사람을 목적어로 취하므로 사람명사 server가 정답. service와 serving은 사람이 아니다."
+  }
+ },
+ {
+  "w": "dish",
+  "pos": "n",
+  "m": [
+   "요리",
+   "접시"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "This *dish* is made with fresh tomatoes, basil, and mozzarella cheese.",
+  "exKo": "이 요리는 신선한 토마토, 바질, 모차렐라 치즈로 만든다.",
+  "col": [
+   {
+    "e": "main dish",
+    "k": "주요리"
+   },
+   {
+    "e": "side dish",
+    "k": "곁들임 요리"
+   },
+   {
+    "e": "signature dish",
+    "k": "대표 요리"
+   }
+  ],
+  "der": [],
+  "para": [
+   "course",
+   "plate"
+  ],
+  "ant": "",
+  "tip": "dish는 '접시'뿐 아니라 '(한 접시의) 요리'를 뜻한다. Part 1에서는 'He is washing the dishes.'(설거지를 하고 있다) 같은 묘사로도 나온다.",
+  "q": {
+   "s": "Chef Kim's signature ------- is a spicy seafood stew served with rice.",
+   "o": [
+    "beverage",
+    "cuisine",
+    "ingredient",
+    "dish"
+   ],
+   "a": 3,
+   "k": "밥과 함께 나오는 해물 스튜는 하나의 요리이므로 dish가 정답. cuisine은 특정 지역의 요리 전반을 가리키는 말이다."
+  }
+ }
+]

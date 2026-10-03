@@ -1,0 +1,2134 @@
+[
+ {
+  "w": "manufacture",
+  "pos": "v",
+  "m": [
+   "제조하다",
+   "생산하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company *manufactures* electric bicycles at its factory near Seoul.",
+  "exKo": "그 회사는 서울 근교의 공장에서 전기 자전거를 제조한다.",
+  "col": [
+   {
+    "e": "manufacture products",
+    "k": "제품을 제조하다"
+   },
+   {
+    "e": "be manufactured in ~",
+    "k": "~에서 제조되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "manufacturer",
+    "pos": "n",
+    "m": "제조업체"
+   },
+   {
+    "w": "manufacturing",
+    "pos": "n",
+    "m": "제조(업)"
+   }
+  ],
+  "para": [
+   "produce",
+   "make"
+  ],
+  "ant": "",
+  "tip": "manufacture는 동사·명사로 모두 쓰이며, 업체는 manufacturer, 산업·공정은 manufacturing으로 구분한다. 원산지를 말할 때는 be manufactured in 수동태가 자주 쓰인다.",
+  "q": {
+   "s": "All of our furniture is ------- from sustainably harvested wood.",
+   "o": [
+    "manufacturer",
+    "manufactured",
+    "manufacturing",
+    "manufactures"
+   ],
+   "a": 1,
+   "k": "가구가 목재로 '만들어진다'는 수동의 의미이므로 be동사 뒤 과거분사 manufactured가 정답이다. manufacturing을 쓰면 가구가 무언가를 제조한다는 능동의 의미가 된다."
+  }
+ },
+ {
+  "w": "manufacturer",
+  "pos": "n",
+  "m": [
+   "제조업체",
+   "제조사"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Contact the *manufacturer* directly if the product needs repairs after the warranty expires.",
+  "exKo": "보증 기간이 끝난 후 제품 수리가 필요하면 제조사에 직접 연락하기 바란다.",
+  "col": [
+   {
+    "e": "leading manufacturer",
+    "k": "선도적인 제조업체"
+   },
+   {
+    "e": "car manufacturer",
+    "k": "자동차 제조사"
+   },
+   {
+    "e": "manufacturer's instructions",
+    "k": "제조사 설명서"
+   }
+  ],
+  "der": [
+   {
+    "w": "manufacture",
+    "pos": "v",
+    "m": "제조하다"
+   },
+   {
+    "w": "manufacturing",
+    "pos": "n",
+    "m": "제조(업)"
+   }
+  ],
+  "para": [
+   "maker",
+   "producer"
+  ],
+  "ant": "",
+  "tip": "manufacturer는 업체를 가리키는 가산명사로 관사나 복수형과 함께 쓰인다. 제조 공정·산업을 뜻하는 manufacturing과 구분하는 문제가 빈출이다.",
+  "q": {
+   "s": "Hanbit Motors is one of the largest automobile ------- in Asia.",
+   "o": [
+    "manufacturers",
+    "manufacturing",
+    "manufactures",
+    "manufactured"
+   ],
+   "a": 0,
+   "k": "one of the + 최상급 뒤에는 복수명사가 오며, 회사를 가리키므로 manufacturers가 정답이다. manufacturing은 '제조업'이라는 불가산명사다."
+  }
+ },
+ {
+  "w": "production",
+  "pos": "n",
+  "m": [
+   "생산(량)",
+   "제작"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Production* at the plant increased by 20 percent after the new machines were installed.",
+  "exKo": "새 기계가 설치된 후 공장의 생산량이 20퍼센트 증가했다.",
+  "col": [
+   {
+    "e": "production costs",
+    "k": "생산 비용"
+   },
+   {
+    "e": "mass production",
+    "k": "대량 생산"
+   },
+   {
+    "e": "go into production",
+    "k": "생산에 들어가다"
+   }
+  ],
+  "der": [
+   {
+    "w": "produce",
+    "pos": "v",
+    "m": "생산하다"
+   },
+   {
+    "w": "productive",
+    "pos": "adj",
+    "m": "생산적인"
+   },
+   {
+    "w": "productivity",
+    "pos": "n",
+    "m": "생산성"
+   }
+  ],
+  "para": [
+   "output",
+   "manufacturing"
+  ],
+  "ant": "",
+  "tip": "production(생산), productivity(생산성), productive(생산적인), product(제품)의 품사·의미 구분이 Part 5 단골이다.",
+  "q": {
+   "s": "The company plans to increase ------- at its Texas factory to meet rising demand.",
+   "o": [
+    "productive",
+    "produce",
+    "production",
+    "producer"
+   ],
+   "a": 2,
+   "k": "동사 increase의 목적어인 명사 자리이며 '공장 생산량'을 늘린다는 의미이므로 production이 정답이다. 명사 produce는 '농산물', producer는 '생산자'라 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "output",
+  "pos": "n",
+  "m": [
+   "생산량",
+   "산출량"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The factory's monthly *output* has doubled since last year.",
+  "exKo": "그 공장의 월간 생산량은 작년 이후 두 배로 늘었다.",
+  "col": [
+   {
+    "e": "increase output",
+    "k": "생산량을 늘리다"
+   },
+   {
+    "e": "annual output",
+    "k": "연간 생산량"
+   },
+   {
+    "e": "industrial output",
+    "k": "산업 생산량"
+   }
+  ],
+  "der": [],
+  "para": [
+   "production",
+   "yield"
+  ],
+  "ant": "input",
+  "tip": "output은 '생산량'을 뜻하는 명사로 Part 7에서 production으로 패러프레이징된다. increase/boost output처럼 증감 동사와 함께 쓰인다.",
+  "q": {
+   "s": "The new machines have allowed the plant to raise its daily ------- by nearly 30 percent.",
+   "o": [
+    "outlook",
+    "outcome",
+    "outlet",
+    "output"
+   ],
+   "a": 3,
+   "k": "공장이 하루에 생산하는 양, 즉 '생산량'을 늘렸다는 의미이므로 output이 정답이다. outcome(결과), outlet(직판점), outlook(전망)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "capacity",
+  "pos": "n",
+  "m": [
+   "생산 능력",
+   "수용력",
+   "자격"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The factory is currently operating at full *capacity* to meet holiday demand.",
+  "exKo": "그 공장은 연말 수요를 맞추기 위해 현재 최대로 가동 중이다.",
+  "col": [
+   {
+    "e": "at full capacity",
+    "k": "최대로 가동하여"
+   },
+   {
+    "e": "seating capacity",
+    "k": "좌석 수"
+   },
+   {
+    "e": "in one's capacity as ~",
+    "k": "~의 자격으로"
+   }
+  ],
+  "der": [
+   {
+    "w": "capable",
+    "pos": "adj",
+    "m": "~할 수 있는, 유능한"
+   },
+   {
+    "w": "capability",
+    "pos": "n",
+    "m": "능력"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "capacity는 '생산 능력, 수용 인원' 외에 in her capacity as manager(관리자 자격으로)처럼 '자격, 역할'이라는 뜻으로도 출제된다. at full capacity(최대로 가동하여)가 빈출이다.",
+  "q": {
+   "s": "The conference hall has a seating ------- of 500 people.",
+   "o": [
+    "capably",
+    "capability",
+    "capable",
+    "capacity"
+   ],
+   "a": 3,
+   "k": "'좌석 수(수용 인원)'는 seating capacity로 표현하므로 capacity가 정답이다. capability는 '능력'이라 수용 인원을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "plant",
+  "pos": "n",
+  "m": [
+   "공장",
+   "설비"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The automaker will open a new assembly *plant* in Mexico next year.",
+  "exKo": "그 자동차 회사는 내년에 멕시코에 새 조립 공장을 연다.",
+  "col": [
+   {
+    "e": "manufacturing plant",
+    "k": "제조 공장"
+   },
+   {
+    "e": "power plant",
+    "k": "발전소"
+   },
+   {
+    "e": "plant manager",
+    "k": "공장장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "factory",
+   "facility"
+  ],
+  "ant": "",
+  "tip": "plant는 '식물' 외에 '공장'이라는 뜻으로 토익에 자주 나오며, Part 7에서 factory, facility로 바뀌어 표현된다. power plant(발전소)도 함께 알아두자.",
+  "q": {
+   "s": "Workers at the ------- produce more than 10,000 tires every day.",
+   "o": [
+    "yield",
+    "output",
+    "plant",
+    "batch"
+   ],
+   "a": 2,
+   "k": "직원들이 일하며 타이어를 생산하는 장소는 '공장'이므로 plant가 정답이다. output, yield, batch는 장소를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "facility",
+  "pos": "n",
+  "m": [
+   "시설",
+   "설비"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Visitors must wear safety glasses at all times inside the production *facility*.",
+  "exKo": "방문객은 생산 시설 안에서 항상 보안경을 착용해야 한다.",
+  "col": [
+   {
+    "e": "manufacturing facility",
+    "k": "제조 시설"
+   },
+   {
+    "e": "state-of-the-art facility",
+    "k": "최신식 시설"
+   },
+   {
+    "e": "storage facility",
+    "k": "보관 시설"
+   }
+  ],
+  "der": [
+   {
+    "w": "facilitate",
+    "pos": "v",
+    "m": "용이하게 하다, 촉진하다"
+   }
+  ],
+  "para": [
+   "plant",
+   "site",
+   "building"
+  ],
+  "ant": "",
+  "tip": "facility는 공장·체육관 등 특정 목적의 '시설'을 뜻하며 복수형 facilities는 '편의 시설'로 자주 쓰인다. 동사 facilitate(용이하게 하다)와 혼동하지 말자.",
+  "q": {
+   "s": "The company's new research ------- will employ more than 200 scientists.",
+   "o": [
+    "facility",
+    "facilitate",
+    "facilitated",
+    "facilitating"
+   ],
+   "a": 0,
+   "k": "형용사 new와 명사 research의 수식을 받는 명사 자리이며 '연구 시설'이라는 의미이므로 facility가 정답이다. facilitate는 동사다."
+  }
+ },
+ {
+  "w": "assembly line",
+  "pos": "n",
+  "m": [
+   "조립 라인"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "Each car moves along the *assembly line* for about eight hours.",
+  "exKo": "각 자동차는 약 8시간 동안 조립 라인을 따라 이동한다.",
+  "col": [
+   {
+    "e": "work on an assembly line",
+    "k": "조립 라인에서 일하다"
+   },
+   {
+    "e": "assembly line workers",
+    "k": "조립 라인 작업자"
+   }
+  ],
+  "der": [
+   {
+    "w": "assemble",
+    "pos": "v",
+    "m": "조립하다"
+   }
+  ],
+  "para": [
+   "production line"
+  ],
+  "ant": "",
+  "tip": "assembly는 '조립' 외에 '집회, 의회'라는 뜻도 있다. assembly line은 Part 1 공장 사진에서 작업자들이 나란히 일하는 장면 묘사로 나온다.",
+  "q": {
+   "s": "Workers on the ------- line are required to take a 15-minute break every two hours.",
+   "o": [
+    "assembly",
+    "assemble",
+    "assembled",
+    "assembler"
+   ],
+   "a": 0,
+   "k": "'조립 라인'은 복합명사 assembly line으로 쓰므로 assembly가 정답이다."
+  }
+ },
+ {
+  "w": "assemble",
+  "pos": "v",
+  "m": [
+   "조립하다",
+   "모이다, 모으다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "The bookshelf is easy to *assemble* and comes with all the necessary tools.",
+  "exKo": "그 책장은 조립하기 쉽고 필요한 공구가 모두 함께 들어 있다.",
+  "col": [
+   {
+    "e": "assemble parts",
+    "k": "부품을 조립하다"
+   },
+   {
+    "e": "assemble a team",
+    "k": "팀을 구성하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "assembly",
+    "pos": "n",
+    "m": "조립, 집회"
+   }
+  ],
+  "para": [
+   "put together",
+   "build"
+  ],
+  "ant": "disassemble",
+  "tip": "assemble은 '조립하다'와 '(사람들이) 모이다, 모으다' 두 뜻으로 쓰이며, Part 7에서 put together로 패러프레이징된다. 명사 assembly와의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "All participants are asked to ------- in the main lobby at 9 A.M. before the factory tour.",
+   "o": [
+    "assembling",
+    "assembly",
+    "assembled",
+    "assemble"
+   ],
+   "a": 3,
+   "k": "be asked to 뒤에는 동사원형이 오므로 assemble(모이다)이 정답이다. assembly는 명사다."
+  }
+ },
+ {
+  "w": "component",
+  "pos": "n",
+  "m": [
+   "부품",
+   "구성 요소"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company imports most of the electronic *components* used in its smartphones.",
+  "exKo": "그 회사는 스마트폰에 쓰이는 전자 부품 대부분을 수입한다.",
+  "col": [
+   {
+    "e": "electronic components",
+    "k": "전자 부품"
+   },
+   {
+    "e": "key component",
+    "k": "핵심 요소"
+   }
+  ],
+  "der": [],
+  "para": [
+   "part",
+   "element"
+  ],
+  "ant": "",
+  "tip": "component는 기계의 '부품'과 계획 등의 '구성 요소'를 모두 뜻하며 Part 7에서 part, element로 패러프레이징된다. 가산명사이므로 복수형에 주의하자.",
+  "q": {
+   "s": "Customer feedback is a key ------- of our product development process.",
+   "o": [
+    "yield",
+    "assembly",
+    "component",
+    "capacity"
+   ],
+   "a": 2,
+   "k": "고객 의견이 제품 개발 과정의 '핵심 요소'라는 의미이므로 component가 정답이다. yield(수확량), capacity(수용력), assembly(조립)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "raw material",
+  "pos": "n",
+  "m": [
+   "원자재",
+   "원료"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Rising prices of *raw materials* have forced many manufacturers to raise their prices.",
+  "exKo": "원자재 가격 상승으로 많은 제조업체가 제품 가격을 올릴 수밖에 없었다.",
+  "col": [
+   {
+    "e": "the cost of raw materials",
+    "k": "원자재 비용"
+   },
+   {
+    "e": "source raw materials",
+    "k": "원자재를 조달하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "materials",
+   "resources"
+  ],
+  "ant": "",
+  "tip": "raw material은 보통 복수형 raw materials로 쓰이며, Part 7 기사에서 '원가 상승'의 원인으로 자주 등장한다. raw는 '가공하지 않은'이라는 뜻이다.",
+  "q": {
+   "s": "The steel mill imports most of its ------- materials from Australia.",
+   "o": [
+    "raw",
+    "rough",
+    "bare",
+    "plain"
+   ],
+   "a": 0,
+   "k": "가공되지 않은 '원자재'는 raw materials로 표현하므로 raw가 정답이다. rough, bare, plain은 materials와 결합해 '원자재'라는 뜻을 만들지 못한다."
+  }
+ },
+ {
+  "w": "equipment",
+  "pos": "n",
+  "m": [
+   "장비",
+   "설비"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   5,
+   7
+  ],
+  "ex": "All *equipment* must be turned off and unplugged at the end of each shift.",
+  "exKo": "모든 장비는 매 교대 근무가 끝날 때 전원을 끄고 플러그를 뽑아야 한다.",
+  "col": [
+   {
+    "e": "office equipment",
+    "k": "사무 장비"
+   },
+   {
+    "e": "safety equipment",
+    "k": "안전 장비"
+   },
+   {
+    "e": "a piece of equipment",
+    "k": "장비 한 대"
+   }
+  ],
+  "der": [
+   {
+    "w": "equip",
+    "pos": "v",
+    "m": "(장비를) 갖추다"
+   },
+   {
+    "w": "equipped",
+    "pos": "adj",
+    "m": "장비를 갖춘"
+   }
+  ],
+  "para": [
+   "machinery",
+   "devices",
+   "tools"
+  ],
+  "ant": "",
+  "tip": "equipment는 불가산명사이므로 equipments로 쓰지 않고 a piece of equipment로 센다. be equipped with(~을 갖추고 있다)도 빈출이다.",
+  "q": {
+   "s": "The laboratory recently purchased several new pieces of -------.",
+   "o": [
+    "equipments",
+    "equipment",
+    "equip",
+    "equipped"
+   ],
+   "a": 1,
+   "k": "pieces of 뒤에는 불가산명사가 오므로 equipment가 정답이다. equipment는 불가산명사라 equipments라는 형태는 쓰지 않는다."
+  }
+ },
+ {
+  "w": "machinery",
+  "pos": "n",
+  "m": [
+   "기계(류)"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "Only trained staff are allowed to operate heavy *machinery* in the warehouse.",
+  "exKo": "교육받은 직원만 창고에서 중장비를 운전할 수 있다.",
+  "col": [
+   {
+    "e": "heavy machinery",
+    "k": "중장비"
+   },
+   {
+    "e": "farm machinery",
+    "k": "농기계"
+   },
+   {
+    "e": "operate machinery",
+    "k": "기계를 작동하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "machine",
+    "pos": "n",
+    "m": "기계"
+   },
+   {
+    "w": "machinist",
+    "pos": "n",
+    "m": "기계 기술자"
+   }
+  ],
+  "para": [
+   "equipment",
+   "machines"
+  ],
+  "ant": "",
+  "tip": "machinery는 기계 전체를 가리키는 불가산명사로 단수 동사를 받는다. 개별 기계를 셀 때는 machine(s)을 쓴다.",
+  "q": {
+   "s": "A large amount of new ------- was installed at the factory last month.",
+   "o": [
+    "machinery",
+    "machines",
+    "machine",
+    "machinist"
+   ],
+   "a": 0,
+   "k": "a large amount of 뒤에는 불가산명사가 오고 단수 동사 was와도 맞아야 하므로 machinery가 정답이다. machines는 복수 가산명사라 amount와 was에 맞지 않는다."
+  }
+ },
+ {
+  "w": "operate",
+  "pos": "v",
+  "m": [
+   "작동하다",
+   "운영하다",
+   "가동하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "Employees must complete a safety course before they *operate* the forklift.",
+  "exKo": "직원들은 지게차를 운전하기 전에 안전 교육을 이수해야 한다.",
+  "col": [
+   {
+    "e": "operate a machine",
+    "k": "기계를 작동하다"
+   },
+   {
+    "e": "operate a business",
+    "k": "사업체를 운영하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "operation",
+    "pos": "n",
+    "m": "운영, 작동"
+   },
+   {
+    "w": "operational",
+    "pos": "adj",
+    "m": "가동 중인, 운영상의"
+   },
+   {
+    "w": "operator",
+    "pos": "n",
+    "m": "조작자, 운영자"
+   }
+  ],
+  "para": [
+   "run",
+   "use",
+   "work"
+  ],
+  "ant": "",
+  "tip": "operate는 타동사(기계를 작동하다, 회사를 운영하다)와 자동사(작동하다, 영업하다)로 모두 쓰인다. operational(가동 중인), operator(조작자) 등 파생어 품사 문제가 나온다.",
+  "q": {
+   "s": "Only certified technicians are permitted to ------- the cutting machines.",
+   "o": [
+    "operational",
+    "operation",
+    "operate",
+    "operator"
+   ],
+   "a": 2,
+   "k": "be permitted to 뒤에는 동사원형이 오므로 operate가 정답이다."
+  }
+ },
+ {
+  "w": "inspect",
+  "pos": "v",
+  "m": [
+   "점검하다",
+   "검사하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "Safety officers *inspect* the factory floor every Monday morning.",
+  "exKo": "안전 담당관들이 매주 월요일 오전 공장 작업장을 점검한다.",
+  "col": [
+   {
+    "e": "inspect equipment",
+    "k": "장비를 점검하다"
+   },
+   {
+    "e": "inspect A for B",
+    "k": "B가 있는지 A를 검사하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "inspection",
+    "pos": "n",
+    "m": "점검, 검사"
+   },
+   {
+    "w": "inspector",
+    "pos": "n",
+    "m": "검사관"
+   }
+  ],
+  "para": [
+   "examine",
+   "check",
+   "review"
+  ],
+  "ant": "",
+  "tip": "inspect는 타동사로 inspect A for B(B가 있는지 A를 검사하다) 형태가 자주 쓰인다. 사람명사 inspector와 행위명사 inspection을 구분하자.",
+  "q": {
+   "s": "Every product is carefully ------- for defects before it leaves the factory.",
+   "o": [
+    "inspecting",
+    "inspection",
+    "inspector",
+    "inspected"
+   ],
+   "a": 3,
+   "k": "제품이 결함 여부를 '검사받는다'는 수동의 의미이므로 is 뒤 과거분사 inspected가 정답이다."
+  }
+ },
+ {
+  "w": "inspection",
+  "pos": "n",
+  "m": [
+   "점검",
+   "검사"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The building passed its annual fire safety *inspection* last week.",
+  "exKo": "그 건물은 지난주 연례 소방 안전 점검을 통과했다.",
+  "col": [
+   {
+    "e": "safety inspection",
+    "k": "안전 점검"
+   },
+   {
+    "e": "pass an inspection",
+    "k": "검사를 통과하다"
+   },
+   {
+    "e": "conduct an inspection",
+    "k": "점검을 실시하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "inspect",
+    "pos": "v",
+    "m": "점검하다"
+   },
+   {
+    "w": "inspector",
+    "pos": "n",
+    "m": "검사관"
+   }
+  ],
+  "para": [
+   "examination",
+   "check"
+  ],
+  "ant": "",
+  "tip": "inspection은 conduct/carry out an inspection(점검을 실시하다), pass an inspection(검사를 통과하다) 형태로 쓰인다. Part 4에서는 점검으로 인한 시설 이용 제한 안내가 자주 나온다.",
+  "q": {
+   "s": "The elevators will be out of service on Friday for a routine -------.",
+   "o": [
+    "inspector",
+    "inspect",
+    "inspection",
+    "inspected"
+   ],
+   "a": 2,
+   "k": "관사 a와 형용사 routine 뒤 명사 자리이며 '정기 점검'이라는 의미이므로 inspection이 정답이다. inspector는 '검사관'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "quality control",
+  "pos": "n",
+  "m": [
+   "품질 관리"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our *quality control* team tests samples from every batch before shipping.",
+  "exKo": "우리 품질 관리팀은 출하 전에 모든 생산분의 샘플을 검사한다.",
+  "col": [
+   {
+    "e": "quality control process",
+    "k": "품질 관리 절차"
+   },
+   {
+    "e": "strict quality control",
+    "k": "엄격한 품질 관리"
+   }
+  ],
+  "der": [],
+  "para": [
+   "quality assurance"
+  ],
+  "ant": "",
+  "tip": "quality control(QC)은 Part 7 제조 지문에서 '불량 감소'와 관련된 단서로 자주 나온다. quality(품질)와 quantity(수량)를 혼동하지 말자.",
+  "q": {
+   "s": "Thanks to stricter ------- control, the number of defective products has fallen sharply.",
+   "o": [
+    "qualified",
+    "quantity",
+    "qualify",
+    "quality"
+   ],
+   "a": 3,
+   "k": "불량품 수가 줄어든 것은 '품질 관리'가 엄격해졌기 때문이므로 quality가 정답이다. quantity(수량)는 불량과 관련이 없고, qualify는 동사다."
+  }
+ },
+ {
+  "w": "standard",
+  "pos": "n",
+  "m": [
+   "기준",
+   "표준"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "All of our products meet strict international safety *standards*.",
+  "exKo": "우리의 모든 제품은 엄격한 국제 안전 기준을 충족한다.",
+  "col": [
+   {
+    "e": "meet standards",
+    "k": "기준을 충족하다"
+   },
+   {
+    "e": "safety standards",
+    "k": "안전 기준"
+   },
+   {
+    "e": "industry standard",
+    "k": "업계 표준"
+   }
+  ],
+  "der": [
+   {
+    "w": "standardize",
+    "pos": "v",
+    "m": "표준화하다"
+   },
+   {
+    "w": "standardized",
+    "pos": "adj",
+    "m": "표준화된"
+   }
+  ],
+  "para": [
+   "requirements",
+   "criteria",
+   "guidelines"
+  ],
+  "ant": "",
+  "tip": "standard는 meet/comply with standards(기준을 충족하다)처럼 동사 짝이 자주 출제된다. 형용사로는 standard procedure(표준 절차)처럼 '표준의'라는 뜻이다.",
+  "q": {
+   "s": "The new filters were rejected because they did not meet the company's quality -------.",
+   "o": [
+    "standardized",
+    "standardize",
+    "standards",
+    "standardly"
+   ],
+   "a": 2,
+   "k": "동사 meet의 목적어인 명사 자리이며 '품질 기준을 충족하지 못했다'는 의미이므로 standards가 정답이다."
+  }
+ },
+ {
+  "w": "specifications",
+  "pos": "n",
+  "m": [
+   "사양",
+   "명세(서)"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The engineers adjusted the design to match the client's exact *specifications*.",
+  "exKo": "엔지니어들은 고객의 정확한 사양에 맞춰 설계를 조정했다.",
+  "col": [
+   {
+    "e": "meet specifications",
+    "k": "사양을 충족하다"
+   },
+   {
+    "e": "technical specifications",
+    "k": "기술 사양"
+   },
+   {
+    "e": "according to specifications",
+    "k": "사양에 따라"
+   }
+  ],
+  "der": [
+   {
+    "w": "specify",
+    "pos": "v",
+    "m": "명시하다"
+   },
+   {
+    "w": "specific",
+    "pos": "adj",
+    "m": "구체적인, 특정한"
+   }
+  ],
+  "para": [
+   "requirements",
+   "specs",
+   "details"
+  ],
+  "ant": "",
+  "tip": "specifications(specs)는 제품의 크기·성능 등 '사양'을 뜻하며 보통 복수로 쓴다. 동사 specify(명시하다)와 형용사 specific(구체적인)의 품사 문제도 함께 나온다.",
+  "q": {
+   "s": "The parts were manufactured according to the ------- provided by the client.",
+   "o": [
+    "specify",
+    "specifications",
+    "specific",
+    "specifically"
+   ],
+   "a": 1,
+   "k": "정관사 the 뒤 명사 자리이며 '고객이 제공한 사양'이라는 의미이므로 specifications가 정답이다."
+  }
+ },
+ {
+  "w": "defect",
+  "pos": "n",
+  "m": [
+   "결함",
+   "결점"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Every unit is tested to make sure it is free of *defects*.",
+  "exKo": "모든 제품은 결함이 없는지 확인하기 위해 테스트를 거친다.",
+  "col": [
+   {
+    "e": "manufacturing defect",
+    "k": "제조상 결함"
+   },
+   {
+    "e": "free of defects",
+    "k": "결함이 없는"
+   },
+   {
+    "e": "a defect in ~",
+    "k": "~의 결함"
+   }
+  ],
+  "der": [
+   {
+    "w": "defective",
+    "pos": "adj",
+    "m": "결함이 있는"
+   }
+  ],
+  "para": [
+   "flaw",
+   "fault"
+  ],
+  "ant": "",
+  "tip": "defect는 '결함'을 뜻하는 명사로 a defect in ~(~의 결함), free of defects(결함 없는)로 쓰인다. 형용사 defective와의 품사 구분 문제가 빈출이다.",
+  "q": {
+   "s": "The recall was issued after engineers discovered a ------- in the braking system.",
+   "o": [
+    "defective",
+    "defect",
+    "defectively",
+    "defected"
+   ],
+   "a": 1,
+   "k": "관사 a 뒤 명사 자리이며 동사 discovered의 목적어이므로 명사 defect가 정답이다. defective는 형용사다."
+  }
+ },
+ {
+  "w": "malfunction",
+  "pos": "n",
+  "m": [
+   "오작동",
+   "고장"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "A *malfunction* in the cooling system caused the production line to shut down.",
+  "exKo": "냉각 시스템의 오작동으로 생산 라인이 멈췄다.",
+  "col": [
+   {
+    "e": "equipment malfunction",
+    "k": "장비 오작동"
+   },
+   {
+    "e": "technical malfunction",
+    "k": "기술적 결함"
+   }
+  ],
+  "der": [
+   {
+    "w": "malfunctioning",
+    "pos": "adj",
+    "m": "오작동하는"
+   }
+  ],
+  "para": [
+   "breakdown",
+   "failure",
+   "problem"
+  ],
+  "ant": "",
+  "tip": "malfunction은 명사(오작동)와 자동사(제대로 작동하지 않다)로 모두 쓰인다. Part 3에서 'The machine isn't working properly.'라는 말이 malfunction으로 바뀌어 나온다.",
+  "q": {
+   "s": "The flight was delayed because of a ------- in one of the aircraft's engines.",
+   "o": [
+    "capacity",
+    "maintenance",
+    "malfunction",
+    "precision"
+   ],
+   "a": 2,
+   "k": "엔진의 '오작동' 때문에 지연되었다는 의미이므로 malfunction이 정답이다. maintenance(정비)는 불가산명사라 a와 함께 쓸 수 없고, capacity와 precision은 지연의 원인이 될 수 없다."
+  }
+ },
+ {
+  "w": "maintenance",
+  "pos": "n",
+  "m": [
+   "유지 보수",
+   "정비"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The east elevator will be closed for routine *maintenance* on Saturday.",
+  "exKo": "동쪽 엘리베이터는 토요일에 정기 점검으로 운행이 중단된다.",
+  "col": [
+   {
+    "e": "routine maintenance",
+    "k": "정기 점검"
+   },
+   {
+    "e": "maintenance department",
+    "k": "시설 관리부"
+   },
+   {
+    "e": "maintenance work",
+    "k": "보수 작업"
+   }
+  ],
+  "der": [
+   {
+    "w": "maintain",
+    "pos": "v",
+    "m": "유지하다, 정비하다"
+   }
+  ],
+  "para": [
+   "upkeep",
+   "repair",
+   "servicing"
+  ],
+  "ant": "",
+  "tip": "maintenance는 불가산명사로 a를 붙이지 않으며, 동사 maintain과 철자가 다른 점(-tenance)에 유의하자. Part 4 공지에서 시설 이용이 중단되는 이유로 자주 나온다.",
+  "q": {
+   "s": "The ------- crew will repair the broken air conditioner in the conference room this afternoon.",
+   "o": [
+    "maintain",
+    "maintenance",
+    "maintained",
+    "maintains"
+   ],
+   "a": 1,
+   "k": "명사 crew 앞에서 '정비팀'이라는 복합명사를 만드는 명사 maintenance가 정답이다. maintain은 동사다."
+  }
+ },
+ {
+  "w": "automate",
+  "pos": "v",
+  "m": [
+   "자동화하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company plans to *automate* its packaging process by the end of the year.",
+  "exKo": "그 회사는 연말까지 포장 공정을 자동화할 계획이다.",
+  "col": [
+   {
+    "e": "automate a process",
+    "k": "공정을 자동화하다"
+   },
+   {
+    "e": "fully automated",
+    "k": "완전 자동화된"
+   }
+  ],
+  "der": [
+   {
+    "w": "automation",
+    "pos": "n",
+    "m": "자동화"
+   },
+   {
+    "w": "automatic",
+    "pos": "adj",
+    "m": "자동의"
+   }
+  ],
+  "para": [
+   "mechanize",
+   "computerize"
+  ],
+  "ant": "",
+  "tip": "automate(자동화하다), automation(자동화), automated/automatic(자동의)의 품사 구분이 Part 5에 나온다. Part 7에서는 '수작업 감소, 효율 향상'의 수단으로 등장한다.",
+  "q": {
+   "s": "The factory hopes to ------- most of its assembly tasks within two years.",
+   "o": [
+    "automate",
+    "automation",
+    "automatic",
+    "automatically"
+   ],
+   "a": 0,
+   "k": "hope to 뒤에는 동사원형이 오므로 automate가 정답이다. automation은 명사, automatic은 형용사다."
+  }
+ },
+ {
+  "w": "streamline",
+  "pos": "v",
+  "m": [
+   "간소화하다",
+   "능률화하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new software will *streamline* the ordering process for our customers.",
+  "exKo": "새 소프트웨어는 고객의 주문 절차를 간소화할 것이다.",
+  "col": [
+   {
+    "e": "streamline a process",
+    "k": "절차를 간소화하다"
+   },
+   {
+    "e": "streamline operations",
+    "k": "운영을 효율화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "streamlined",
+    "pos": "adj",
+    "m": "간소화된, 능률적인"
+   }
+  ],
+  "para": [
+   "simplify",
+   "make more efficient"
+  ],
+  "ant": "",
+  "tip": "streamline은 '불필요한 단계를 없애 효율적으로 만들다'라는 타동사로 Part 7에서 simplify, make more efficient로 패러프레이징된다. process, procedure, operations가 목적어로 자주 온다.",
+  "q": {
+   "s": "The manager introduced a new system to ------- the approval procedure and reduce paperwork.",
+   "o": [
+    "complicate",
+    "streamline",
+    "withdraw",
+    "resume"
+   ],
+   "a": 1,
+   "k": "서류 작업을 줄이려는 목적이므로 절차를 '간소화하다'라는 의미의 streamline이 정답이다. complicate(복잡하게 하다)는 문맥과 반대다."
+  }
+ },
+ {
+  "w": "precise",
+  "pos": "adj",
+  "m": [
+   "정확한",
+   "정밀한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The machine cuts each piece to *precise* measurements.",
+  "exKo": "그 기계는 각 조각을 정확한 치수로 자른다.",
+  "col": [
+   {
+    "e": "precise measurements",
+    "k": "정확한 치수"
+   },
+   {
+    "e": "precise instructions",
+    "k": "정확한 지시"
+   }
+  ],
+  "der": [
+   {
+    "w": "precisely",
+    "pos": "adv",
+    "m": "정확히"
+   },
+   {
+    "w": "precision",
+    "pos": "n",
+    "m": "정밀(성)"
+   }
+  ],
+  "para": [
+   "exact",
+   "accurate"
+  ],
+  "ant": "imprecise",
+  "tip": "precise(형용사), precisely(부사), precision(명사)의 품사 구분 문제가 빈출이다. precisely는 'precisely at noon(정확히 정오에)'처럼 시간 앞에도 쓰인다.",
+  "q": {
+   "s": "The instructions for mixing the chemicals must be extremely -------.",
+   "o": [
+    "precision",
+    "precisely",
+    "precise",
+    "preciseness"
+   ],
+   "a": 2,
+   "k": "be동사 뒤 보어 자리이며 부사 extremely의 수식을 받으므로 형용사 precise가 정답이다."
+  }
+ },
+ {
+  "w": "sturdy",
+  "pos": "adj",
+  "m": [
+   "튼튼한",
+   "견고한"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "These *sturdy* metal shelves can hold up to 200 kilograms each.",
+  "exKo": "이 튼튼한 금속 선반은 한 칸에 최대 200킬로그램까지 견딜 수 있다.",
+  "col": [
+   {
+    "e": "sturdy construction",
+    "k": "견고한 구조"
+   },
+   {
+    "e": "sturdy furniture",
+    "k": "튼튼한 가구"
+   }
+  ],
+  "der": [
+   {
+    "w": "sturdiness",
+    "pos": "n",
+    "m": "견고함"
+   }
+  ],
+  "para": [
+   "durable",
+   "solid",
+   "strong"
+  ],
+  "ant": "flimsy",
+  "tip": "sturdy는 가구·용기 등이 '튼튼한'을 뜻하며 제품 광고에서 durable, solid로 패러프레이징된다. 반대말은 flimsy(약한)다.",
+  "q": {
+   "s": "The packaging must be ------- enough to protect the glass bottles during shipping.",
+   "o": [
+    "eager",
+    "fragile",
+    "pending",
+    "sturdy"
+   ],
+   "a": 3,
+   "k": "유리병을 보호하려면 포장이 '튼튼해야' 하므로 sturdy가 정답이다. fragile(깨지기 쉬운)은 문맥과 반대이고, pending, eager는 포장을 묘사하지 않는다."
+  }
+ },
+ {
+  "w": "reliable",
+  "pos": "adj",
+  "m": [
+   "믿을 수 있는",
+   "신뢰할 만한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We need a *reliable* supplier that can deliver materials on time.",
+  "exKo": "우리는 자재를 제때 납품할 수 있는 믿을 만한 공급업체가 필요하다.",
+  "col": [
+   {
+    "e": "reliable source",
+    "k": "믿을 만한 출처"
+   },
+   {
+    "e": "reliable service",
+    "k": "믿을 수 있는 서비스"
+   }
+  ],
+  "der": [
+   {
+    "w": "reliability",
+    "pos": "n",
+    "m": "신뢰성"
+   },
+   {
+    "w": "rely",
+    "pos": "v",
+    "m": "의지하다"
+   },
+   {
+    "w": "reliably",
+    "pos": "adv",
+    "m": "믿을 수 있게"
+   }
+  ],
+  "para": [
+   "dependable",
+   "trustworthy"
+  ],
+  "ant": "unreliable",
+  "tip": "reliable(형용사), reliability(명사), rely on(~에 의지하다)의 품사·전치사 문제가 빈출이다. Part 7에서 dependable로 패러프레이징된다.",
+  "q": {
+   "s": "Customers choose our vans because they are known for being extremely -------.",
+   "o": [
+    "reliability",
+    "reliable",
+    "reliably",
+    "reliance"
+   ],
+   "a": 1,
+   "k": "being 뒤 보어 자리이며 부사 extremely의 수식을 받으므로 형용사 reliable이 정답이다."
+  }
+ },
+ {
+  "w": "consistent",
+  "pos": "adj",
+  "m": [
+   "일관된",
+   "한결같은"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The factory uses automated equipment to maintain *consistent* product quality.",
+  "exKo": "그 공장은 일정한 제품 품질을 유지하기 위해 자동화 장비를 사용한다.",
+  "col": [
+   {
+    "e": "consistent quality",
+    "k": "일정한 품질"
+   },
+   {
+    "e": "be consistent with ~",
+    "k": "~와 일치하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "consistently",
+    "pos": "adv",
+    "m": "일관되게, 꾸준히"
+   },
+   {
+    "w": "consistency",
+    "pos": "n",
+    "m": "일관성"
+   }
+  ],
+  "para": [
+   "steady",
+   "uniform",
+   "stable"
+  ],
+  "ant": "inconsistent",
+  "tip": "be consistent with(~와 일치하다)의 전치사 with가 출제되며, 부사 consistently(꾸준히)는 동사나 형용사 앞 자리에 자주 나온다.",
+  "q": {
+   "s": "The results of the second test were ------- with those of the first.",
+   "o": [
+    "consistency",
+    "consistently",
+    "consistent",
+    "consist"
+   ],
+   "a": 2,
+   "k": "be동사 뒤 보어 자리이며 be consistent with(~와 일치하다) 구문이므로 형용사 consistent가 정답이다."
+  }
+ },
+ {
+  "w": "uniform",
+  "pos": "adj",
+  "m": [
+   "균일한",
+   "일정한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "All bricks are baked at the same temperature to ensure a *uniform* color.",
+  "exKo": "모든 벽돌은 균일한 색상을 내기 위해 같은 온도에서 구워진다.",
+  "col": [
+   {
+    "e": "uniform size",
+    "k": "균일한 크기"
+   },
+   {
+    "e": "uniform standards",
+    "k": "통일된 기준"
+   }
+  ],
+  "der": [
+   {
+    "w": "uniformly",
+    "pos": "adv",
+    "m": "균일하게"
+   },
+   {
+    "w": "uniformity",
+    "pos": "n",
+    "m": "균일성"
+   }
+  ],
+  "para": [
+   "consistent",
+   "even",
+   "identical"
+  ],
+  "ant": "",
+  "tip": "uniform은 명사(유니폼) 외에 형용사로 '균일한, 일정한'이라는 뜻이 있으며, 제조 지문에서 uniform size, uniform quality로 쓰인다. 부사 uniformly도 함께 알아두자.",
+  "q": {
+   "s": "Each tablet must be of ------- size and weight to pass the quality inspection.",
+   "o": [
+    "diverse",
+    "various",
+    "uniform",
+    "assorted"
+   ],
+   "a": 2,
+   "k": "품질 검사를 통과하려면 각 알약의 크기와 무게가 '균일해야' 하므로 uniform이 정답이다. various, diverse, assorted는 '다양한'이라는 뜻이라 문맥과 반대다."
+  }
+ },
+ {
+  "w": "yield",
+  "pos": "v",
+  "m": [
+   "(결과·이익을) 내다",
+   "산출하다",
+   "양보하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new production method is expected to *yield* significant cost savings.",
+  "exKo": "새 생산 방식은 상당한 비용 절감 효과를 낼 것으로 예상된다.",
+  "col": [
+   {
+    "e": "yield results",
+    "k": "결과를 내다"
+   },
+   {
+    "e": "yield a profit",
+    "k": "이익을 내다"
+   },
+   {
+    "e": "high yield",
+    "k": "높은 수확량, 고수익"
+   }
+  ],
+  "der": [],
+  "para": [
+   "produce",
+   "generate",
+   "bring"
+  ],
+  "ant": "",
+  "tip": "yield는 동사로 '(결과·이익을) 내다', 명사로 '수확량, 수익률'을 뜻한다. 교통 표지판의 'Yield(양보)'라는 뜻도 있다.",
+  "q": {
+   "s": "The research team's experiments finally ------- promising results last month.",
+   "o": [
+    "expanded",
+    "halted",
+    "resumed",
+    "yielded"
+   ],
+   "a": 3,
+   "k": "실험이 유망한 결과를 '냈다'는 의미이므로 yielded가 정답이다. halted(중단했다), resumed(재개했다), expanded(확장했다)는 results를 목적어로 취하기에 어색하다."
+  }
+ },
+ {
+  "w": "halt",
+  "pos": "v",
+  "m": [
+   "중단시키다",
+   "멈추다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Production was *halted* for three days while the damaged machinery was repaired.",
+  "exKo": "손상된 기계를 수리하는 동안 생산이 사흘간 중단되었다.",
+  "col": [
+   {
+    "e": "halt production",
+    "k": "생산을 중단하다"
+   },
+   {
+    "e": "come to a halt",
+    "k": "멈추다"
+   },
+   {
+    "e": "bring ~ to a halt",
+    "k": "~을 멈추게 하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "stop",
+   "suspend",
+   "pause"
+  ],
+  "ant": "resume",
+  "tip": "halt는 동사(중단시키다)와 명사(come to a halt: 멈추다)로 모두 쓰인다. Part 7에서 stop, suspend로 패러프레이징되며 반대말 resume과 짝지어 나온다.",
+  "q": {
+   "s": "The city ------- construction of the bridge after engineers raised safety concerns.",
+   "o": [
+    "halted",
+    "resumed",
+    "yielded",
+    "assembled"
+   ],
+   "a": 0,
+   "k": "기술자들이 안전 문제를 제기한 후이므로 공사를 '중단했다'는 의미의 halted가 정답이다. resumed(재개했다)는 문맥과 반대다."
+  }
+ },
+ {
+  "w": "resume",
+  "pos": "v",
+  "m": [
+   "재개하다",
+   "다시 시작하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Normal train service will *resume* once the repairs are completed.",
+  "exKo": "수리가 끝나면 정상적인 열차 운행이 재개된다.",
+  "col": [
+   {
+    "e": "resume operations",
+    "k": "운영을 재개하다"
+   },
+   {
+    "e": "resume production",
+    "k": "생산을 재개하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "resumption",
+    "pos": "n",
+    "m": "재개"
+   }
+  ],
+  "para": [
+   "restart",
+   "continue"
+  ],
+  "ant": "halt",
+  "tip": "resume은 자동사·타동사로 모두 쓰여 'Production will resume.'과 'resume production'이 둘 다 가능하다. 명사 résumé(이력서)와는 발음과 뜻이 다르니 주의하자.",
+  "q": {
+   "s": "The meeting will ------- after a 15-minute break.",
+   "o": [
+    "resuming",
+    "resumption",
+    "resumed",
+    "resume"
+   ],
+   "a": 3,
+   "k": "조동사 will 뒤에는 동사원형이 오므로 resume이 정답이다."
+  }
+ },
+ {
+  "w": "batch",
+  "pos": "n",
+  "m": [
+   "(생산) 1회분",
+   "한 묶음"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bakery produces a fresh *batch* of bread every four hours.",
+  "exKo": "그 제과점은 네 시간마다 빵을 새로 한 판씩 구워 낸다.",
+  "col": [
+   {
+    "e": "a batch of ~",
+    "k": "한 묶음의 ~"
+   },
+   {
+    "e": "in batches",
+    "k": "여러 번에 나누어"
+   },
+   {
+    "e": "batch number",
+    "k": "생산 번호, 로트 번호"
+   }
+  ],
+  "der": [],
+  "para": [
+   "lot",
+   "group",
+   "set"
+  ],
+  "ant": "",
+  "tip": "batch는 한 번에 생산·처리되는 '1회분, 묶음'을 뜻하며 a batch of ~ 형태로 쓰인다. Part 7 리콜 공지에서 특정 batch number(생산 번호)가 자주 등장한다.",
+  "q": {
+   "s": "The recall applies only to products from the ------- manufactured in March.",
+   "o": [
+    "batch",
+    "yield",
+    "capacity",
+    "halt"
+   ],
+   "a": 0,
+   "k": "3월에 제조된 특정 '생산분'의 제품만 리콜된다는 의미이므로 batch가 정답이다."
+  }
+ },
+ {
+  "w": "outsource",
+  "pos": "v",
+  "m": [
+   "외주를 주다",
+   "외부에 위탁하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Many companies *outsource* their customer service operations to reduce costs.",
+  "exKo": "많은 회사가 비용 절감을 위해 고객 서비스 업무를 외주로 맡긴다.",
+  "col": [
+   {
+    "e": "outsource A to B",
+    "k": "A를 B에 외주 주다"
+   },
+   {
+    "e": "outsource production",
+    "k": "생산을 위탁하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "outsourcing",
+    "pos": "n",
+    "m": "외주, 아웃소싱"
+   }
+  ],
+  "para": [
+   "contract out",
+   "subcontract"
+  ],
+  "ant": "",
+  "tip": "outsource A to B(A를 B에 외주 주다)의 전치사 to가 핵심이며, 명사 outsourcing도 Part 7 기사에 자주 나온다.",
+  "q": {
+   "s": "To cut costs, the firm decided to ------- its payroll processing to an outside accounting company.",
+   "o": [
+    "outsourcing",
+    "outsource",
+    "outsourced",
+    "outsources"
+   ],
+   "a": 1,
+   "k": "decide to 뒤에는 동사원형이 오므로 outsource가 정답이다. outsource A to B는 'A를 B에 외주 주다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "process",
+  "pos": "n",
+  "m": [
+   "과정",
+   "절차",
+   "공정"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The manufacturing *process* takes about two weeks from start to finish.",
+  "exKo": "제조 공정은 처음부터 끝까지 약 2주가 걸린다.",
+  "col": [
+   {
+    "e": "production process",
+    "k": "생산 공정"
+   },
+   {
+    "e": "application process",
+    "k": "지원 절차"
+   },
+   {
+    "e": "in the process of ~",
+    "k": "~하는 중인"
+   }
+  ],
+  "der": [
+   {
+    "w": "processing",
+    "pos": "n",
+    "m": "처리, 가공"
+   },
+   {
+    "w": "processor",
+    "pos": "n",
+    "m": "가공업자, 처리 장치"
+   }
+  ],
+  "para": [
+   "procedure",
+   "method",
+   "system"
+  ],
+  "ant": "",
+  "tip": "process는 명사(과정, 절차) 외에 동사로 '처리하다'라는 뜻이 있어 process an order(주문을 처리하다)로 쓰인다. in the process of -ing(~하는 중인)도 빈출이다.",
+  "q": {
+   "s": "The company is in the ------- of upgrading its computer systems.",
+   "o": [
+    "process",
+    "proceed",
+    "procedure",
+    "progress"
+   ],
+   "a": 0,
+   "k": "'~하는 중인'은 in the process of -ing로 표현하므로 process가 정답이다. progress는 in progress로 쓰고, proceed는 동사다."
+  }
+ },
+ {
+  "w": "protective gear",
+  "pos": "n",
+  "m": [
+   "보호 장비"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "Workers must wear *protective gear* when handling chemicals in the laboratory.",
+  "exKo": "작업자는 실험실에서 화학 물질을 다룰 때 보호 장비를 착용해야 한다.",
+  "col": [
+   {
+    "e": "wear protective gear",
+    "k": "보호 장비를 착용하고 있다"
+   },
+   {
+    "e": "put on protective gear",
+    "k": "보호 장비를 착용하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "protect",
+    "pos": "v",
+    "m": "보호하다"
+   },
+   {
+    "w": "protection",
+    "pos": "n",
+    "m": "보호"
+   }
+  ],
+  "para": [
+   "safety equipment",
+   "protective clothing"
+  ],
+  "ant": "",
+  "tip": "gear는 불가산명사로 gears로 쓰지 않는다. Part 1에서는 wearing protective gear(착용한 상태)와 putting on(착용하는 동작)을 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Visitors to the construction site must wear ------- gear, including hard hats and safety boots.",
+   "o": [
+    "protectively",
+    "protection",
+    "protect",
+    "protective"
+   ],
+   "a": 3,
+   "k": "명사 gear를 수식하는 형용사 자리이므로 protective가 정답이다."
+  }
+ },
+ {
+  "w": "minimize",
+  "pos": "v",
+  "m": [
+   "최소화하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new packaging design helps *minimize* damage during shipping.",
+  "exKo": "새 포장 디자인은 배송 중 파손을 최소화하는 데 도움이 된다.",
+  "col": [
+   {
+    "e": "minimize costs",
+    "k": "비용을 최소화하다"
+   },
+   {
+    "e": "minimize risk",
+    "k": "위험을 최소화하다"
+   },
+   {
+    "e": "minimize disruption",
+    "k": "지장을 최소화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "minimal",
+    "pos": "adj",
+    "m": "최소의"
+   },
+   {
+    "w": "minimum",
+    "pos": "n",
+    "m": "최소, 최저"
+   }
+  ],
+  "para": [
+   "reduce",
+   "cut",
+   "limit"
+  ],
+  "ant": "maximize",
+  "tip": "minimize는 cost, risk, delay, disruption 같은 부정적인 명사를 목적어로 받는다. 형용사 minimal(최소한의)과 명사 minimum(최소)도 함께 알아두자.",
+  "q": {
+   "s": "Road repairs will be done at night to ------- disruption to local traffic.",
+   "o": [
+    "minimize",
+    "maximize",
+    "expand",
+    "resume"
+   ],
+   "a": 0,
+   "k": "야간 공사의 목적은 교통 지장을 '최소화하는' 것이므로 minimize가 정답이다. maximize, expand는 문맥과 반대다."
+  }
+ },
+ {
+  "w": "maximize",
+  "pos": "v",
+  "m": [
+   "극대화하다",
+   "최대화하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We rearranged the warehouse to *maximize* storage space.",
+  "exKo": "우리는 보관 공간을 최대한 확보하기 위해 창고를 재배치했다.",
+  "col": [
+   {
+    "e": "maximize profits",
+    "k": "이익을 극대화하다"
+   },
+   {
+    "e": "maximize efficiency",
+    "k": "효율을 극대화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "maximum",
+    "pos": "n",
+    "m": "최대, 최고"
+   },
+   {
+    "w": "maximal",
+    "pos": "adj",
+    "m": "최대한의"
+   }
+  ],
+  "para": [
+   "increase",
+   "boost",
+   "make the most of"
+  ],
+  "ant": "minimize",
+  "tip": "maximize는 profit, efficiency, space 같은 긍정적인 명사를 목적어로 받으며, 반대말 minimize와 짝지어 어휘 문제로 나온다.",
+  "q": {
+   "s": "The consultant suggested several ways to ------- profits without raising prices.",
+   "o": [
+    "maximum",
+    "maximize",
+    "maximal",
+    "maximally"
+   ],
+   "a": 1,
+   "k": "ways to 뒤에는 to부정사의 동사원형이 오므로 maximize가 정답이다."
+  }
+ },
+ {
+  "w": "expand",
+  "pos": "v",
+  "m": [
+   "확장하다",
+   "확대하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company plans to *expand* its production facility to meet growing demand.",
+  "exKo": "그 회사는 늘어나는 수요에 맞추기 위해 생산 시설을 확장할 계획이다.",
+  "col": [
+   {
+    "e": "expand into ~",
+    "k": "~로 진출하다"
+   },
+   {
+    "e": "expand operations",
+    "k": "사업을 확장하다"
+   },
+   {
+    "e": "expand a product line",
+    "k": "제품군을 확대하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "expansion",
+    "pos": "n",
+    "m": "확장"
+   },
+   {
+    "w": "expansive",
+    "pos": "adj",
+    "m": "광범위한"
+   }
+  ],
+  "para": [
+   "enlarge",
+   "extend",
+   "grow"
+  ],
+  "ant": "shrink",
+  "tip": "expand into(~ 시장에 진출하다)의 전치사 into가 자주 출제되며, 명사 expansion(확장)과의 품사 구분 문제도 빈출이다.",
+  "q": {
+   "s": "Bakers Inc. has decided to ------- into the Asian market next year.",
+   "o": [
+    "expanding",
+    "expansion",
+    "expansive",
+    "expand"
+   ],
+   "a": 3,
+   "k": "decide to 뒤에는 동사원형이 오므로 expand가 정답이다. expand into는 '~로 진출하다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "state-of-the-art",
+  "pos": "adj",
+  "m": [
+   "최첨단의",
+   "최신식의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new plant is equipped with *state-of-the-art* robotic technology.",
+  "exKo": "새 공장은 최첨단 로봇 기술을 갖추고 있다.",
+  "col": [
+   {
+    "e": "state-of-the-art facility",
+    "k": "최신식 시설"
+   },
+   {
+    "e": "state-of-the-art equipment",
+    "k": "최첨단 장비"
+   }
+  ],
+  "der": [],
+  "para": [
+   "cutting-edge",
+   "advanced",
+   "the latest"
+  ],
+  "ant": "outdated",
+  "tip": "state-of-the-art는 하이픈으로 연결된 형용사로 주로 명사 앞에 쓰이며, Part 7에서 cutting-edge, advanced, the latest로 패러프레이징된다.",
+  "q": {
+   "s": "The hospital recently purchased ------- equipment for its new cancer treatment center.",
+   "o": [
+    "out-of-order",
+    "state-of-the-art",
+    "one-way",
+    "part-time"
+   ],
+   "a": 1,
+   "k": "새 암 치료 센터를 위해 구입한 '최첨단' 장비라는 의미이므로 state-of-the-art가 정답이다. out-of-order(고장 난), one-way(일방통행의), part-time(시간제의)은 의미가 맞지 않는다."
+  }
+ }
+]

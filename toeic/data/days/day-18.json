@@ -1,0 +1,1955 @@
+[
+ {
+  "w": "technical support",
+  "pos": "n",
+  "m": [
+   "기술 지원(팀)"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "If your laptop will not turn on, please contact *technical support* at extension 205.",
+  "exKo": "노트북이 켜지지 않으면 내선 205번으로 기술 지원팀에 연락하기 바란다.",
+  "col": [
+   {
+    "e": "contact technical support",
+    "k": "기술 지원팀에 연락하다"
+   },
+   {
+    "e": "technical support team",
+    "k": "기술 지원팀"
+   }
+  ],
+  "der": [
+   {
+    "w": "technical",
+    "pos": "adj",
+    "m": "기술의, 기술적인"
+   },
+   {
+    "w": "technically",
+    "pos": "adv",
+    "m": "기술적으로"
+   }
+  ],
+  "para": [
+   "IT department",
+   "tech support",
+   "help desk"
+  ],
+  "ant": "",
+  "tip": "Part 3·4에서 IT department, help desk, tech support로 바꿔 말한다. 형용사 technical과 명사 technician/technique의 구별도 출제된다.",
+  "q": {
+   "s": "For help resetting your password, please call our ------- line, which is open 24 hours a day.",
+   "o": [
+    "technical support",
+    "annual leave",
+    "job opening",
+    "floor plan"
+   ],
+   "a": 0,
+   "k": "비밀번호 재설정 도움을 받으려고 전화하는 곳은 '기술 지원' 상담 전화이므로 technical support가 정답."
+  }
+ },
+ {
+  "w": "technician",
+  "pos": "n",
+  "m": [
+   "기술자, 기사"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "A *technician* will visit your office tomorrow to repair the copier.",
+  "exKo": "내일 기술자가 사무실에 방문해 복사기를 수리할 것이다.",
+  "col": [
+   {
+    "e": "computer technician",
+    "k": "컴퓨터 기술자"
+   },
+   {
+    "e": "lab technician",
+    "k": "실험실 기사"
+   },
+   {
+    "e": "send a technician",
+    "k": "기술자를 보내다"
+   }
+  ],
+  "der": [
+   {
+    "w": "technical",
+    "pos": "adj",
+    "m": "기술의"
+   },
+   {
+    "w": "technique",
+    "pos": "n",
+    "m": "기법, 기술"
+   }
+  ],
+  "para": [
+   "repair person",
+   "specialist"
+  ],
+  "ant": "",
+  "tip": "사람명사 technician, 기법을 뜻하는 technique, 형용사 technical의 품사 구별이 Part 5에 나온다.",
+  "q": {
+   "s": "The printer will be out of service until a ------- arrives to replace the faulty part.",
+   "o": [
+    "technique",
+    "technician",
+    "technical",
+    "technically"
+   ],
+   "a": 1,
+   "k": "도착해서 부품을 교체하는 주체인 사람명사가 필요하므로 technician이 정답. technique(기법)는 사람이 아니다."
+  }
+ },
+ {
+  "w": "software",
+  "pos": "n",
+  "m": [
+   "소프트웨어"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "All employees must install the new accounting *software* by Friday.",
+  "exKo": "전 직원은 금요일까지 새 회계 소프트웨어를 설치해야 한다.",
+  "col": [
+   {
+    "e": "software update",
+    "k": "소프트웨어 업데이트"
+   },
+   {
+    "e": "install software",
+    "k": "소프트웨어를 설치하다"
+   },
+   {
+    "e": "software program",
+    "k": "소프트웨어 프로그램"
+   }
+  ],
+  "der": [],
+  "para": [
+   "program",
+   "application"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 a software나 softwares로 쓰지 않는다. 개수를 셀 때는 'a software program/package'로 쓴다.",
+  "q": {
+   "s": "Our company recently purchased new accounting ------- that automatically tracks expenses.",
+   "o": [
+    "softwares",
+    "a software",
+    "software",
+    "software's"
+   ],
+   "a": 2,
+   "k": "software는 불가산명사이므로 복수형이나 관사 a 없이 쓴다. 따라서 software가 정답이며, 관계대명사절의 단수 동사 tracks와도 일치한다."
+  }
+ },
+ {
+  "w": "device",
+  "pos": "n",
+  "m": [
+   "기기, 장치"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Please turn off all electronic *devices* before the presentation begins.",
+  "exKo": "발표가 시작되기 전에 모든 전자 기기를 꺼 주기 바란다.",
+  "col": [
+   {
+    "e": "mobile device",
+    "k": "모바일 기기"
+   },
+   {
+    "e": "electronic device",
+    "k": "전자 기기"
+   }
+  ],
+  "der": [
+   {
+    "w": "devise",
+    "pos": "v",
+    "m": "고안하다"
+   }
+  ],
+  "para": [
+   "gadget",
+   "equipment"
+  ],
+  "ant": "",
+  "tip": "가산명사이며, 철자가 비슷한 동사 devise(고안하다)와 혼동하지 말 것. 'mobile/electronic device'가 공지문 빈출이다.",
+  "q": {
+   "s": "Employees may access their work e-mail from any mobile ------- with the company app installed.",
+   "o": [
+    "devise",
+    "device",
+    "devised",
+    "devising"
+   ],
+   "a": 1,
+   "k": "any mobile 뒤 명사 자리이므로 device가 정답. devise는 '고안하다'라는 동사로, 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "upgrade",
+  "pos": "v",
+  "m": [
+   "업그레이드하다, 개선하다",
+   "(등급을) 올리다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The company plans to *upgrade* its computer system next quarter.",
+  "exKo": "회사는 다음 분기에 컴퓨터 시스템을 업그레이드할 계획이다.",
+  "col": [
+   {
+    "e": "upgrade the software",
+    "k": "소프트웨어를 업그레이드하다"
+   },
+   {
+    "e": "upgrade to",
+    "k": "~으로 업그레이드하다"
+   },
+   {
+    "e": "system upgrade",
+    "k": "시스템 업그레이드"
+   }
+  ],
+  "der": [],
+  "para": [
+   "improve",
+   "update",
+   "enhance"
+  ],
+  "ant": "",
+  "tip": "동사·명사 모두 쓰이며 항공·호텔 지문에서는 '좌석·객실 등급 상향'이라는 뜻으로 나온다(upgrade to business class).",
+  "q": {
+   "s": "Customers can ------- to a premium membership at any time for an additional $5 a month.",
+   "o": [
+    "upgrade",
+    "upload",
+    "restart",
+    "encrypt"
+   ],
+   "a": 0,
+   "k": "추가 요금을 내고 프리미엄 회원으로 '등급을 올리는' 것이므로 'upgrade to'가 정답. upload, restart, encrypt는 to a membership과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "download",
+  "pos": "v",
+  "m": [
+   "다운로드하다, 내려받다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "You can *download* the conference schedule from our website.",
+  "exKo": "우리 웹사이트에서 회의 일정표를 내려받을 수 있다.",
+  "col": [
+   {
+    "e": "download a file",
+    "k": "파일을 다운로드하다"
+   },
+   {
+    "e": "available for download",
+    "k": "다운로드할 수 있는"
+   },
+   {
+    "e": "free download",
+    "k": "무료 다운로드"
+   }
+  ],
+  "der": [],
+  "para": [
+   "get",
+   "obtain"
+  ],
+  "ant": "upload",
+  "tip": "'available for download(다운로드 가능한)'처럼 명사로도 쓰이며, 반대말 upload와 함께 출제된다. 'download A from B' 구조를 기억하자.",
+  "q": {
+   "s": "The user manual is available to ------- free of charge from the manufacturer's website.",
+   "o": [
+    "upload",
+    "configure",
+    "download",
+    "encrypt"
+   ],
+   "a": 2,
+   "k": "웹사이트'에서(from)' 설명서를 무료로 받는 것이므로 download가 정답. upload는 'upload A to B'로 방향이 반대다."
+  }
+ },
+ {
+  "w": "log in",
+  "pos": "phr",
+  "m": [
+   "로그인하다, 접속하다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Employees must *log in* to the system with their ID number and password.",
+  "exKo": "직원은 사번과 비밀번호로 시스템에 로그인해야 한다.",
+  "col": [
+   {
+    "e": "log in to",
+    "k": "~에 로그인하다"
+   },
+   {
+    "e": "login information",
+    "k": "로그인 정보"
+   }
+  ],
+  "der": [
+   {
+    "w": "login",
+    "pos": "n",
+    "m": "로그인 (정보)"
+   }
+  ],
+  "para": [
+   "sign in"
+  ],
+  "ant": "log out",
+  "tip": "동사구는 띄어 쓴 log in(log in to the website), 명사·형용사는 붙여 쓴 login(login ID)이다.",
+  "q": {
+   "s": "Please ------- to your account to view your order history.",
+   "o": [
+    "log out",
+    "log in",
+    "check out",
+    "turn in"
+   ],
+   "a": 1,
+   "k": "주문 내역을 보려면 계정에 '로그인'해야 하므로 log in이 정답. log out(로그아웃하다)은 내역 확인 목적과 맞지 않는다."
+  }
+ },
+ {
+  "w": "password",
+  "pos": "n",
+  "m": [
+   "비밀번호"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "For security reasons, staff are required to change their *passwords* every three months.",
+  "exKo": "보안상의 이유로 직원들은 3개월마다 비밀번호를 변경해야 한다.",
+  "col": [
+   {
+    "e": "reset a password",
+    "k": "비밀번호를 재설정하다"
+   },
+   {
+    "e": "enter a password",
+    "k": "비밀번호를 입력하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "passcode",
+   "login credentials"
+  ],
+  "ant": "",
+  "tip": "'reset/change/enter a password'가 IT 공지 빈출이며, Part 3에서 비밀번호를 잊어 기술 지원팀에 전화하는 상황이 자주 나온다.",
+  "q": {
+   "s": "If you forget your -------, click the link below to reset it.",
+   "o": [
+    "password",
+    "passport",
+    "passenger",
+    "passage"
+   ],
+   "a": 0,
+   "k": "잊어버렸을 때 링크를 눌러 재설정하는 것은 '비밀번호'이므로 password가 정답. passport(여권)는 링크로 재설정할 수 없다."
+  }
+ },
+ {
+  "w": "access",
+  "pos": "n",
+  "m": [
+   "접근, 이용 (권한)"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Only managers have *access* to the employee database.",
+  "exKo": "관리자만 직원 데이터베이스에 접근할 수 있다.",
+  "col": [
+   {
+    "e": "have access to",
+    "k": "~에 접근할 수 있다"
+   },
+   {
+    "e": "gain access",
+    "k": "접근 권한을 얻다"
+   },
+   {
+    "e": "Internet access",
+    "k": "인터넷 이용"
+   }
+  ],
+  "der": [
+   {
+    "w": "accessible",
+    "pos": "adj",
+    "m": "접근 가능한"
+   },
+   {
+    "w": "accessibility",
+    "pos": "n",
+    "m": "접근성"
+   }
+  ],
+  "para": [
+   "entry",
+   "admission"
+  ],
+  "ant": "",
+  "tip": "명사 access는 전치사 to와 함께 쓰지만(have access to), 동사 access는 타동사라 전치사 없이 목적어를 받는다(access the file).",
+  "q": {
+   "s": "Guests at the hotel have free ------- to the fitness center and business lounge.",
+   "o": [
+    "access",
+    "accessible",
+    "accessing",
+    "accessed"
+   ],
+   "a": 0,
+   "k": "have의 목적어이자 형용사 free의 수식을 받는 명사 자리이므로 access가 정답. accessible은 형용사다."
+  }
+ },
+ {
+  "w": "database",
+  "pos": "n",
+  "m": [
+   "데이터베이스"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Customer contact information is stored in a secure *database*.",
+  "exKo": "고객 연락처 정보는 보안이 철저한 데이터베이스에 저장된다.",
+  "col": [
+   {
+    "e": "customer database",
+    "k": "고객 데이터베이스"
+   },
+   {
+    "e": "update the database",
+    "k": "데이터베이스를 갱신하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "records",
+   "system"
+  ],
+  "ant": "",
+  "tip": "'update/maintain the database', 'enter data into the database'가 Part 7 업무 이메일에 나온다.",
+  "q": {
+   "s": "All new client information should be entered into the ------- by the end of each business day.",
+   "o": [
+    "password",
+    "printer",
+    "database",
+    "toner cartridge"
+   ],
+   "a": 2,
+   "k": "고객 정보를 입력해 저장하는 곳은 '데이터베이스'이므로 database가 정답."
+  }
+ },
+ {
+  "w": "network",
+  "pos": "n",
+  "m": [
+   "네트워크, 통신망",
+   "인맥"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The office *network* will be unavailable on Saturday due to scheduled maintenance.",
+  "exKo": "정기 점검으로 인해 토요일에는 사내 네트워크를 이용할 수 없다.",
+  "col": [
+   {
+    "e": "computer network",
+    "k": "컴퓨터 네트워크"
+   },
+   {
+    "e": "network connection",
+    "k": "네트워크 연결"
+   },
+   {
+    "e": "professional network",
+    "k": "업무 인맥"
+   }
+  ],
+  "der": [
+   {
+    "w": "networking",
+    "pos": "n",
+    "m": "인맥 쌓기"
+   }
+  ],
+  "para": [
+   "system"
+  ],
+  "ant": "",
+  "tip": "IT의 '통신망' 외에 동사로 '인맥을 쌓다'라는 뜻이 있으며, 'networking event(인맥 교류 행사)'가 자주 나온다.",
+  "q": {
+   "s": "Please do not connect personal devices to the company's wireless ------- without approval.",
+   "o": [
+    "database",
+    "password",
+    "subscription",
+    "network"
+   ],
+   "a": 3,
+   "k": "개인 기기를 연결하는 대상은 회사의 무선 '네트워크'이므로 network가 정답."
+  }
+ },
+ {
+  "w": "troubleshoot",
+  "pos": "v",
+  "m": [
+   "(문제를) 해결하다, 고장 원인을 찾아 고치다"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Our IT staff can help you *troubleshoot* problems with your e-mail account.",
+  "exKo": "IT 직원이 이메일 계정 문제를 해결하도록 도와줄 수 있다.",
+  "col": [
+   {
+    "e": "troubleshoot a problem",
+    "k": "문제를 해결하다"
+   },
+   {
+    "e": "troubleshooting guide",
+    "k": "문제 해결 안내서"
+   }
+  ],
+  "der": [
+   {
+    "w": "troubleshooting",
+    "pos": "n",
+    "m": "문제 해결"
+   },
+   {
+    "w": "troubleshooter",
+    "pos": "n",
+    "m": "문제 해결사"
+   }
+  ],
+  "para": [
+   "fix",
+   "solve",
+   "resolve"
+  ],
+  "ant": "",
+  "tip": "설명서의 'Troubleshooting(문제 해결)' 항목이 Part 7에 자주 나오며 fix, resolve로 패러프레이즈된다.",
+  "q": {
+   "s": "The help desk staff are trained to ------- common software problems over the phone.",
+   "o": [
+    "overlook",
+    "withdraw",
+    "undergo",
+    "troubleshoot"
+   ],
+   "a": 3,
+   "k": "헬프데스크 직원이 전화로 소프트웨어 문제를 '해결하도록' 교육받는다는 의미이므로 troubleshoot가 정답. overlook(간과하다), withdraw(철회하다), undergo(겪다)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "glitch",
+  "pos": "n",
+  "m": [
+   "(기계·시스템의) 작은 결함, 오류"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "A technical *glitch* caused the website to go offline for an hour.",
+  "exKo": "기술적 결함으로 웹사이트가 한 시간 동안 접속되지 않았다.",
+  "col": [
+   {
+    "e": "technical glitch",
+    "k": "기술적 결함"
+   },
+   {
+    "e": "software glitch",
+    "k": "소프트웨어 오류"
+   }
+  ],
+  "der": [],
+  "para": [
+   "problem",
+   "error",
+   "malfunction"
+  ],
+  "ant": "",
+  "tip": "갑자기 생기는 '사소한 오류'를 뜻하며 Part 7에서 problem, error, technical difficulty로 바꿔 표현된다.",
+  "q": {
+   "s": "Due to a minor ------- in the payment system, some customers were charged twice.",
+   "o": [
+    "glimpse",
+    "glitch",
+    "glance",
+    "glare"
+   ],
+   "a": 1,
+   "k": "결제 시스템의 작은 '오류' 때문에 이중 청구가 되었다는 의미이므로 glitch가 정답. glimpse, glance(흘끗 봄), glare(눈부심)는 뜻이 맞지 않는다."
+  }
+ },
+ {
+  "w": "crash",
+  "pos": "v",
+  "m": [
+   "(컴퓨터·시스템이) 갑자기 멈추다, 다운되다",
+   "충돌하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "My computer *crashed* while I was editing the sales report.",
+  "exKo": "판매 보고서를 편집하는 동안 컴퓨터가 갑자기 멈췄다.",
+  "col": [
+   {
+    "e": "the system crashed",
+    "k": "시스템이 다운되었다"
+   },
+   {
+    "e": "computer crash",
+    "k": "컴퓨터 고장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "break down",
+   "fail",
+   "freeze"
+  ],
+  "ant": "",
+  "tip": "'(컴퓨터·시스템이) 다운되다'의 뜻일 때는 자동사라 'The system crashed'처럼 쓰고 수동태(was crashed)로 쓰지 않는다. Part 3에서 작업 파일을 잃어버린 원인으로 자주 나온다.",
+  "q": {
+   "s": "The online ordering system ------- yesterday afternoon because of a sudden increase in traffic.",
+   "o": [
+    "crashed",
+    "was crashed",
+    "crashing",
+    "crash"
+   ],
+   "a": 0,
+   "k": "'(시스템이) 다운되다'의 crash는 자동사라 수동태로 쓸 수 없고 yesterday가 있으므로 과거형 crashed가 정답. crashing은 동사 자리에 올 수 없고, crash는 시제·수가 맞지 않는다."
+  }
+ },
+ {
+  "w": "restart",
+  "pos": "v",
+  "m": [
+   "다시 시작하다, 재부팅하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Please *restart* your computer after the update has been installed.",
+  "exKo": "업데이트가 설치된 후 컴퓨터를 다시 시작하기 바란다.",
+  "col": [
+   {
+    "e": "restart the computer",
+    "k": "컴퓨터를 재시작하다"
+   },
+   {
+    "e": "restart the system",
+    "k": "시스템을 재시작하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "reboot"
+  ],
+  "ant": "",
+  "tip": "'Have you tried restarting it?'처럼 Part 2·3의 기술 문제 대화에 나오며 reboot로 바꿔 말한다.",
+  "q": {
+   "s": "If the program stops responding, save your work and ------- the computer.",
+   "o": [
+    "resign",
+    "restart",
+    "retire",
+    "refund"
+   ],
+   "a": 1,
+   "k": "프로그램이 응답하지 않을 때 컴퓨터를 '다시 시작하라'는 의미이므로 restart가 정답. resign(사임하다), retire(은퇴하다), refund(환불하다)는 컴퓨터를 목적어로 취하지 않는다."
+  }
+ },
+ {
+  "w": "back up",
+  "pos": "phr",
+  "m": [
+   "(파일을) 백업하다",
+   "지지하다, 뒷받침하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Remember to *back up* your files before the system upgrade this evening.",
+  "exKo": "오늘 저녁 시스템 업그레이드 전에 파일을 백업해 두는 것을 잊지 말기 바란다.",
+  "col": [
+   {
+    "e": "back up files",
+    "k": "파일을 백업하다"
+   },
+   {
+    "e": "backup copy",
+    "k": "백업 사본"
+   }
+  ],
+  "der": [
+   {
+    "w": "backup",
+    "pos": "n",
+    "m": "백업, 예비"
+   }
+  ],
+  "para": [
+   "save a copy",
+   "make a copy"
+  ],
+  "ant": "",
+  "tip": "동사구는 띄어 쓴 back up, 명사·형용사는 붙여 쓴 backup(backup copy)이다. '지지하다', '(차가) 밀리다'라는 뜻도 있다.",
+  "q": {
+   "s": "Employees should ------- important documents to the shared drive at least once a week.",
+   "o": [
+    "back up",
+    "take off",
+    "put off",
+    "turn down"
+   ],
+   "a": 0,
+   "k": "중요 문서를 공유 드라이브에 정기적으로 '백업하다'라는 의미이므로 back up이 정답. take off, put off(미루다), turn down(거절하다)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "security",
+  "pos": "n",
+  "m": [
+   "보안",
+   "경비"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "For *security* reasons, visitors must sign in at the front desk.",
+  "exKo": "보안상의 이유로 방문객은 안내 데스크에서 서명하고 들어가야 한다.",
+  "col": [
+   {
+    "e": "for security reasons",
+    "k": "보안상의 이유로"
+   },
+   {
+    "e": "security guard",
+    "k": "경비원"
+   },
+   {
+    "e": "security system",
+    "k": "보안 시스템"
+   }
+  ],
+  "der": [
+   {
+    "w": "secure",
+    "pos": "adj",
+    "m": "안전한"
+   },
+   {
+    "w": "securely",
+    "pos": "adv",
+    "m": "안전하게, 단단히"
+   }
+  ],
+  "para": [
+   "protection",
+   "safety"
+  ],
+  "ant": "",
+  "tip": "'for security reasons', 'security badge/guard'가 빈출이며, 형용사 secure와의 품사 구별 문제가 나온다.",
+  "q": {
+   "s": "All visitors must stop at the ------- desk in the lobby to receive a temporary ID badge.",
+   "o": [
+    "secure",
+    "securely",
+    "secured",
+    "security"
+   ],
+   "a": 3,
+   "k": "명사 desk 앞에서 복합명사 security desk(보안 데스크)를 이루는 자리이므로 security가 정답. secure desk는 '안전한 책상'이라는 뜻이 되어 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "secure",
+  "pos": "v",
+  "m": [
+   "확보하다, 얻어 내다",
+   "안전하게 지키다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The firm finally *secured* a contract with a major software developer.",
+  "exKo": "그 회사는 마침내 대형 소프트웨어 개발사와 계약을 따냈다.",
+  "col": [
+   {
+    "e": "secure funding",
+    "k": "자금을 확보하다"
+   },
+   {
+    "e": "secure a contract",
+    "k": "계약을 따내다"
+   }
+  ],
+  "der": [
+   {
+    "w": "security",
+    "pos": "n",
+    "m": "보안"
+   },
+   {
+    "w": "securely",
+    "pos": "adv",
+    "m": "안전하게, 단단히"
+   }
+  ],
+  "para": [
+   "obtain",
+   "win",
+   "acquire"
+  ],
+  "ant": "",
+  "tip": "형용사(안전한)로도 쓰이지만 Part 5에서는 '확보하다(secure funding, secure a deal)'라는 동사 뜻이 자주 출제된다.",
+  "q": {
+   "s": "The startup was able to ------- enough funding to hire ten new engineers.",
+   "o": [
+    "refrain",
+    "proceed",
+    "secure",
+    "comply"
+   ],
+   "a": 2,
+   "k": "목적어 enough funding을 취하는 타동사가 필요하고 '자금을 확보하다'라는 의미이므로 secure가 정답. refrain, proceed, comply는 자동사로 목적어를 바로 취할 수 없다."
+  }
+ },
+ {
+  "w": "encrypt",
+  "pos": "v",
+  "m": [
+   "암호화하다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "All customer payment data is *encrypted* to prevent unauthorized access.",
+  "exKo": "모든 고객 결제 정보는 무단 접근을 막기 위해 암호화된다.",
+  "col": [
+   {
+    "e": "encrypt data",
+    "k": "데이터를 암호화하다"
+   },
+   {
+    "e": "encrypted files",
+    "k": "암호화된 파일"
+   }
+  ],
+  "der": [
+   {
+    "w": "encryption",
+    "pos": "n",
+    "m": "암호화"
+   }
+  ],
+  "para": [
+   "protect",
+   "encode"
+  ],
+  "ant": "decrypt",
+  "tip": "보안 관련 지문에서 'be encrypted'처럼 수동태로 나오며 명사형 encryption과 함께 쓰인다.",
+  "q": {
+   "s": "Sensitive files must be ------- before they are sent outside the company.",
+   "o": [
+    "encrypted",
+    "encryption",
+    "encrypting",
+    "encrypts"
+   ],
+   "a": 0,
+   "k": "파일이 '암호화되어야' 한다는 수동의 의미이므로 must be 뒤에 과거분사 encrypted가 정답."
+  }
+ },
+ {
+  "w": "wireless",
+  "pos": "adj",
+  "m": [
+   "무선의"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "*Wireless* Internet access is available free of charge in the hotel lobby.",
+  "exKo": "호텔 로비에서는 무선 인터넷을 무료로 이용할 수 있다.",
+  "col": [
+   {
+    "e": "wireless Internet access",
+    "k": "무선 인터넷 접속"
+   },
+   {
+    "e": "wireless network",
+    "k": "무선 네트워크"
+   }
+  ],
+  "der": [],
+  "para": [
+   "Wi-Fi"
+  ],
+  "ant": "",
+  "tip": "호텔·카페 안내문에서 'complimentary wireless Internet access'로 자주 나오며 Wi-Fi로 패러프레이즈된다.",
+  "q": {
+   "s": "All rooms at the Bayview Inn are equipped with free ------- Internet access.",
+   "o": [
+    "careless",
+    "endless",
+    "countless",
+    "wireless"
+   ],
+   "a": 3,
+   "k": "객실에 갖춰진 '무선' 인터넷이므로 wireless가 정답. careless(부주의한), endless(끝없는), countless(셀 수 없는)는 Internet access를 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "connection",
+  "pos": "n",
+  "m": [
+   "연결, 접속",
+   "관련(성)"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The video call kept freezing because of a poor Internet *connection*.",
+  "exKo": "인터넷 연결 상태가 좋지 않아 화상 통화가 계속 멈췄다.",
+  "col": [
+   {
+    "e": "Internet connection",
+    "k": "인터넷 연결"
+   },
+   {
+    "e": "in connection with",
+    "k": "~와 관련하여"
+   }
+  ],
+  "der": [
+   {
+    "w": "connect",
+    "pos": "v",
+    "m": "연결하다"
+   },
+   {
+    "w": "connected",
+    "pos": "adj",
+    "m": "연결된"
+   }
+  ],
+  "para": [
+   "link"
+  ],
+  "ant": "",
+  "tip": "'in connection with(~와 관련하여)'는 Part 5 숙어 문제로, 'connecting flight(연결 항공편)'는 여행 지문으로 나온다.",
+  "q": {
+   "s": "Ms. Han called the IT department in ------- with the problem she was having with her e-mail.",
+   "o": [
+    "connect",
+    "connected",
+    "connects",
+    "connection"
+   ],
+   "a": 3,
+   "k": "'in connection with(~와 관련하여)'는 고정 표현이며 전치사 in 뒤에는 명사가 와야 하므로 connection이 정답."
+  }
+ },
+ {
+  "w": "configure",
+  "pos": "v",
+  "m": [
+   "(컴퓨터·장치를) 설정하다, 구성하다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The technician will *configure* your laptop to connect to the office network.",
+  "exKo": "기술자가 사무실 네트워크에 연결되도록 노트북을 설정해 줄 것이다.",
+  "col": [
+   {
+    "e": "configure the settings",
+    "k": "설정을 구성하다"
+   },
+   {
+    "e": "be configured to",
+    "k": "~하도록 설정되어 있다"
+   }
+  ],
+  "der": [
+   {
+    "w": "configuration",
+    "pos": "n",
+    "m": "설정, 구성"
+   }
+  ],
+  "para": [
+   "set up",
+   "adjust"
+  ],
+  "ant": "",
+  "tip": "'be configured to + 동사원형'으로 장치가 어떻게 설정되어 있는지 설명하며, 명사형 configuration도 함께 알아 두자.",
+  "q": {
+   "s": "The printers have been ------- to print on both sides of the paper by default.",
+   "o": [
+    "configuration",
+    "configuring",
+    "configures",
+    "configured"
+   ],
+   "a": 3,
+   "k": "프린터가 양면 인쇄로 '설정되어 있다'는 수동의 의미이므로 have been 뒤에 과거분사 configured가 정답."
+  }
+ },
+ {
+  "w": "settings",
+  "pos": "n",
+  "m": [
+   "(기기·프로그램의) 설정"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "You can change the display language in the *settings* menu of the app.",
+  "exKo": "앱의 설정 메뉴에서 표시 언어를 변경할 수 있다.",
+  "col": [
+   {
+    "e": "privacy settings",
+    "k": "개인정보 보호 설정"
+   },
+   {
+    "e": "default settings",
+    "k": "기본 설정"
+   },
+   {
+    "e": "adjust the settings",
+    "k": "설정을 조정하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "set",
+    "pos": "v",
+    "m": "설정하다, 맞추다"
+   }
+  ],
+  "para": [
+   "preferences",
+   "options"
+  ],
+  "ant": "",
+  "tip": "기기의 '설정'은 주로 복수형 settings로 쓰며, 단수 setting은 '배경, 환경(a casual setting)'이라는 뜻으로 Part 7에 나온다.",
+  "q": {
+   "s": "To stop receiving notifications, simply adjust the ------- on your phone.",
+   "o": [
+    "reservations",
+    "instructions",
+    "connections",
+    "settings"
+   ],
+   "a": 3,
+   "k": "알림을 끄려면 휴대전화의 '설정'을 조정해야 하므로 settings가 정답. reservations(예약), instructions(설명서), connections(연결)는 조정해서 알림을 끄는 대상이 아니다."
+  }
+ },
+ {
+  "w": "instructions",
+  "pos": "n",
+  "m": [
+   "(사용) 설명, 지시 사항"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Please read the *instructions* carefully before assembling the desk.",
+  "exKo": "책상을 조립하기 전에 설명서를 꼼꼼히 읽기 바란다.",
+  "col": [
+   {
+    "e": "follow the instructions",
+    "k": "지시를 따르다"
+   },
+   {
+    "e": "detailed instructions",
+    "k": "상세한 설명"
+   },
+   {
+    "e": "instructions for",
+    "k": "~에 대한 설명"
+   }
+  ],
+  "der": [
+   {
+    "w": "instruct",
+    "pos": "v",
+    "m": "지시하다, 가르치다"
+   },
+   {
+    "w": "instructor",
+    "pos": "n",
+    "m": "강사"
+   }
+  ],
+  "para": [
+   "directions",
+   "guidelines"
+  ],
+  "ant": "",
+  "tip": "'설명, 지시'의 뜻으로는 주로 복수형을 쓴다. 'be instructed to do(~하라고 지시받다)'도 Part 5 빈출이다.",
+  "q": {
+   "s": "Follow the ------- in the manual to connect the printer to your computer.",
+   "o": [
+    "instructors",
+    "instructed",
+    "instructions",
+    "instructive"
+   ],
+   "a": 2,
+   "k": "설명서에 있는 '지시 사항'을 따르라는 의미이므로 명사 instructions가 정답. instructors(강사)는 설명서 안에 있을 수 없다."
+  }
+ },
+ {
+  "w": "user manual",
+  "pos": "n",
+  "m": [
+   "사용 설명서"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Detailed troubleshooting tips can be found in the *user manual*.",
+  "exKo": "상세한 문제 해결 요령은 사용 설명서에서 찾을 수 있다.",
+  "col": [
+   {
+    "e": "refer to the user manual",
+    "k": "사용 설명서를 참조하다"
+   },
+   {
+    "e": "online user manual",
+    "k": "온라인 사용 설명서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "instruction booklet",
+   "guide",
+   "handbook"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 instruction booklet, guide로 바꿔 말한다. 형용사 manual(수동의, 손으로 하는)과 구별할 것.",
+  "q": {
+   "s": "For instructions on replacing the battery, please refer to page 12 of the -------.",
+   "o": [
+    "user manual",
+    "invoice",
+    "receipt",
+    "subscription"
+   ],
+   "a": 0,
+   "k": "배터리 교체 방법이 나와 있는 것은 '사용 설명서'이므로 user manual이 정답. invoice(송장), receipt(영수증)에는 사용법이 없다."
+  }
+ },
+ {
+  "w": "printer",
+  "pos": "n",
+  "m": [
+   "프린터, 인쇄기"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "The *printer* on the second floor is out of paper again.",
+  "exKo": "2층 프린터에 또 종이가 떨어졌다.",
+  "col": [
+   {
+    "e": "color printer",
+    "k": "컬러 프린터"
+   },
+   {
+    "e": "printer paper",
+    "k": "프린터 용지"
+   }
+  ],
+  "der": [
+   {
+    "w": "print",
+    "pos": "v",
+    "m": "인쇄하다"
+   },
+   {
+    "w": "printing",
+    "pos": "n",
+    "m": "인쇄"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "Part 3에서 'The printer is out of paper/toner'가 사무실 문제 상황으로 자주 나온다. 'out of + 명사(~이 떨어진)' 구조를 함께 기억하자.",
+  "q": {
+   "s": "The ------- in the copy room is out of toner, so please use the one near the reception desk.",
+   "o": [
+    "scanner",
+    "monitor",
+    "keyboard",
+    "printer"
+   ],
+   "a": 3,
+   "k": "토너가 떨어질 수 있는 기기는 '프린터'이므로 printer가 정답. scanner, monitor, keyboard는 토너를 쓰지 않는다."
+  }
+ },
+ {
+  "w": "photocopier",
+  "pos": "n",
+  "m": [
+   "복사기"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "A woman is making copies at the *photocopier*.",
+  "exKo": "한 여자가 복사기로 복사를 하고 있다.",
+  "col": [
+   {
+    "e": "use the photocopier",
+    "k": "복사기를 사용하다"
+   },
+   {
+    "e": "photocopier repair",
+    "k": "복사기 수리"
+   }
+  ],
+  "der": [
+   {
+    "w": "photocopy",
+    "pos": "v",
+    "m": "복사하다"
+   }
+  ],
+  "para": [
+   "copier",
+   "copy machine"
+  ],
+  "ant": "",
+  "tip": "Part 1에서 'She's using a photocopier'로, Part 3에서는 copier, copy machine으로 바꿔 말한다.",
+  "q": {
+   "s": "Please make 30 copies of this handout using the ------- in the supply room.",
+   "o": [
+    "photographer",
+    "photograph",
+    "photocopier",
+    "photography"
+   ],
+   "a": 2,
+   "k": "유인물을 복사하는 데 쓰는 기기는 '복사기'이므로 photocopier가 정답. photographer(사진작가), photograph(사진), photography(사진술)는 철자가 비슷한 함정이다."
+  }
+ },
+ {
+  "w": "paper jam",
+  "pos": "n",
+  "m": [
+   "(프린터·복사기의) 종이 걸림"
+  ],
+  "tier": 3,
+  "parts": [
+   3
+  ],
+  "ex": "The copier stopped working because of a *paper jam*.",
+  "exKo": "종이가 걸려 복사기가 작동을 멈췄다.",
+  "col": [
+   {
+    "e": "clear a paper jam",
+    "k": "걸린 종이를 빼내다"
+   },
+   {
+    "e": "cause a paper jam",
+    "k": "종이 걸림을 일으키다"
+   }
+  ],
+  "der": [
+   {
+    "w": "jammed",
+    "pos": "adj",
+    "m": "(종이 등이) 걸린, 꽉 막힌"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "'clear/fix a paper jam'이 기본 연어이며, Part 3에서 'The copier is jammed again'처럼 형용사 jammed로도 나온다.",
+  "q": {
+   "s": "If the copier displays an error message, check for a ------- before calling a technician.",
+   "o": [
+    "paper jam",
+    "traffic jam",
+    "paper clip",
+    "paperwork"
+   ],
+   "a": 0,
+   "k": "복사기 오류 시 기술자를 부르기 전에 확인할 것은 '종이 걸림'이므로 paper jam이 정답. traffic jam(교통 체증)은 복사기와 무관하다."
+  }
+ },
+ {
+  "w": "out of order",
+  "pos": "phr",
+  "m": [
+   "고장 난"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4
+  ],
+  "ex": "The elevator is *out of order*, so please use the stairs.",
+  "exKo": "엘리베이터가 고장 났으니 계단을 이용하기 바란다.",
+  "col": [
+   {
+    "e": "be out of order",
+    "k": "고장 나 있다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "broken",
+   "not working",
+   "out of service"
+  ],
+  "ant": "in working order",
+  "tip": "LC에서 not working, broken, out of service로 바꿔 말한다. 'in order(정돈된, 적절한)'와 혼동하지 말 것.",
+  "q": {
+   "s": "The vending machine on the third floor has been ------- since Monday.",
+   "o": [
+    "out of order",
+    "out of print",
+    "out of reach",
+    "out of town"
+   ],
+   "a": 0,
+   "k": "자판기가 월요일부터 '고장 난' 상태라는 의미이므로 out of order가 정답. out of print(절판된)는 책에, out of town(출장 중인)은 사람에 쓴다."
+  }
+ },
+ {
+  "w": "toner cartridge",
+  "pos": "n",
+  "m": [
+   "토너 카트리지"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Please replace the *toner cartridge* when the warning light comes on.",
+  "exKo": "경고등이 켜지면 토너 카트리지를 교체하기 바란다.",
+  "col": [
+   {
+    "e": "replace the toner cartridge",
+    "k": "토너 카트리지를 교체하다"
+   },
+   {
+    "e": "order toner cartridges",
+    "k": "토너 카트리지를 주문하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "toner"
+  ],
+  "ant": "",
+  "tip": "Part 3·7에서 프린터 문제 해결이나 사무용품 주문서 항목으로 나온다. 'run out of toner(토너가 떨어지다)'도 함께 알아 두자.",
+  "q": {
+   "s": "Our printer is producing faded pages, so we need to order a new -------.",
+   "o": [
+    "paper jam",
+    "password",
+    "subscription",
+    "toner cartridge"
+   ],
+   "a": 3,
+   "k": "인쇄물이 흐리게 나오는 것은 토너 부족 때문이므로 새 toner cartridge를 주문해야 한다."
+  }
+ },
+ {
+  "w": "scanner",
+  "pos": "n",
+  "m": [
+   "스캐너"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3
+  ],
+  "ex": "Use the *scanner* next to the copier to send documents by e-mail.",
+  "exKo": "문서를 이메일로 보내려면 복사기 옆의 스캐너를 사용하면 된다.",
+  "col": [
+   {
+    "e": "document scanner",
+    "k": "문서 스캐너"
+   },
+   {
+    "e": "barcode scanner",
+    "k": "바코드 스캐너"
+   }
+  ],
+  "der": [
+   {
+    "w": "scan",
+    "pos": "v",
+    "m": "스캔하다, 훑어보다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "동사 scan은 '스캔하다' 외에 '훑어보다'라는 뜻도 있어 Part 7 문제에 쓰인다.",
+  "q": {
+   "s": "To create digital copies of the signed contracts, please use the ------- in Room 204.",
+   "o": [
+    "shredder",
+    "stapler",
+    "scanner",
+    "heater"
+   ],
+   "a": 2,
+   "k": "종이 계약서의 디지털 사본을 만드는 기기는 '스캐너'이므로 scanner가 정답. shredder(문서 파쇄기)는 문서를 없애는 기기다."
+  }
+ },
+ {
+  "w": "digital",
+  "pos": "adj",
+  "m": [
+   "디지털의, 전자식의"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The library now offers *digital* versions of most newspapers and magazines.",
+  "exKo": "그 도서관은 이제 대부분의 신문과 잡지를 디지털판으로 제공한다.",
+  "col": [
+   {
+    "e": "digital copy",
+    "k": "디지털 사본"
+   },
+   {
+    "e": "digital format",
+    "k": "디지털 형식"
+   },
+   {
+    "e": "digital marketing",
+    "k": "디지털 마케팅"
+   }
+  ],
+  "der": [
+   {
+    "w": "digitally",
+    "pos": "adv",
+    "m": "디지털 방식으로"
+   },
+   {
+    "w": "digitize",
+    "pos": "v",
+    "m": "디지털화하다"
+   }
+  ],
+  "para": [
+   "electronic",
+   "online"
+  ],
+  "ant": "",
+  "tip": "'digital copy/format'은 Part 7에서 electronic version으로 패러프레이즈되며 'print version(인쇄판)'과 대비된다.",
+  "q": {
+   "s": "Subscribers can choose between the print edition and the ------- edition of the magazine.",
+   "o": [
+    "digit",
+    "digitally",
+    "digits",
+    "digital"
+   ],
+   "a": 3,
+   "k": "명사 edition을 수식하는 형용사 자리이며 print edition과 대비되는 '디지털판'이므로 digital이 정답."
+  }
+ },
+ {
+  "w": "electronic",
+  "pos": "adj",
+  "m": [
+   "전자의, 전자식의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Please submit your expense reports in *electronic* form by the end of the month.",
+  "exKo": "월말까지 경비 보고서를 전자 문서 형태로 제출하기 바란다.",
+  "col": [
+   {
+    "e": "electronic device",
+    "k": "전자 기기"
+   },
+   {
+    "e": "electronic copy",
+    "k": "전자 사본"
+   }
+  ],
+  "der": [
+   {
+    "w": "electronically",
+    "pos": "adv",
+    "m": "전자적으로, 온라인으로"
+   },
+   {
+    "w": "electronics",
+    "pos": "n",
+    "m": "전자 기기, 전자 공학"
+   }
+  ],
+  "para": [
+   "digital"
+  ],
+  "ant": "",
+  "tip": "electronic(전자의), electric(전기로 작동하는), electrical(전기에 관한)을 구별하는 문제가 나오며, 부사 electronically(submit electronically)도 빈출이다.",
+  "q": {
+   "s": "Please turn off all ------- devices, including mobile phones, during the performance.",
+   "o": [
+    "electron",
+    "electronically",
+    "electronic",
+    "electronics"
+   ],
+   "a": 2,
+   "k": "명사 devices를 수식하는 형용사 자리이므로 electronic이 정답. electronically는 부사, electron과 electronics는 명사다."
+  }
+ },
+ {
+  "w": "automatically",
+  "pos": "adv",
+  "m": [
+   "자동으로"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The system *automatically* saves your work every five minutes.",
+  "exKo": "시스템은 5분마다 작업 내용을 자동으로 저장한다.",
+  "col": [
+   {
+    "e": "be automatically renewed",
+    "k": "자동 갱신되다"
+   },
+   {
+    "e": "turn off automatically",
+    "k": "자동으로 꺼지다"
+   }
+  ],
+  "der": [
+   {
+    "w": "automatic",
+    "pos": "adj",
+    "m": "자동의"
+   },
+   {
+    "w": "automate",
+    "pos": "v",
+    "m": "자동화하다"
+   },
+   {
+    "w": "automation",
+    "pos": "n",
+    "m": "자동화"
+   }
+  ],
+  "para": [
+   "by itself"
+  ],
+  "ant": "manually",
+  "tip": "동사를 수식하는 부사 자리 문제로 출제되며, 'be automatically renewed(자동 갱신되다)'가 구독·계약 지문 빈출이다.",
+  "q": {
+   "s": "Your subscription will be ------- renewed each year unless you cancel it in writing.",
+   "o": [
+    "automatic",
+    "automatically",
+    "automation",
+    "automate"
+   ],
+   "a": 1,
+   "k": "be와 과거분사 renewed 사이에서 동사를 수식하는 부사 자리이므로 automatically가 정답."
+  }
+ },
+ {
+  "w": "interface",
+  "pos": "n",
+  "m": [
+   "인터페이스, (사용자) 화면 구성"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The app's simple *interface* makes it easy for new users to learn.",
+  "exKo": "그 앱은 인터페이스가 단순해서 신규 사용자도 쉽게 익힐 수 있다.",
+  "col": [
+   {
+    "e": "user interface",
+    "k": "사용자 인터페이스"
+   },
+   {
+    "e": "user-friendly interface",
+    "k": "사용하기 쉬운 인터페이스"
+   }
+  ],
+  "der": [],
+  "para": [
+   "layout",
+   "design"
+  ],
+  "ant": "",
+  "tip": "제품 리뷰 지문에서 'user-friendly interface'처럼 쓰이며 Part 7에서 '사용하기 쉬운 디자인'으로 패러프레이즈된다.",
+  "q": {
+   "s": "Reviewers praised the software's user-friendly -------, which makes important features easy to find.",
+   "o": [
+    "interval",
+    "interest",
+    "interface",
+    "interview"
+   ],
+   "a": 2,
+   "k": "소프트웨어에서 기능을 찾기 쉽게 해 주는 '사용자 화면 구성'이므로 interface가 정답. interval(간격), interest(관심), interview(면접)는 user-friendly와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "application",
+  "pos": "n",
+  "m": [
+   "지원(서), 신청(서)",
+   "(컴퓨터·스마트폰) 응용 프로그램, 앱"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Download our mobile *application* to track your order in real time.",
+  "exKo": "모바일 앱을 내려받으면 주문 상황을 실시간으로 확인할 수 있다.",
+  "col": [
+   {
+    "e": "mobile application",
+    "k": "모바일 앱"
+   },
+   {
+    "e": "job application",
+    "k": "입사 지원서"
+   },
+   {
+    "e": "application form",
+    "k": "신청서"
+   }
+  ],
+  "der": [
+   {
+    "w": "apply",
+    "pos": "v",
+    "m": "지원하다, 적용하다"
+   },
+   {
+    "w": "applicant",
+    "pos": "n",
+    "m": "지원자"
+   },
+   {
+    "w": "applicable",
+    "pos": "adj",
+    "m": "적용할 수 있는"
+   }
+  ],
+  "para": [
+   "app",
+   "program"
+  ],
+  "ant": "",
+  "tip": "IT 지문에서는 '앱(app)', 인사 지문에서는 '지원서'를 뜻한다. 사람명사 applicant와의 구별이 Part 5 단골이다.",
+  "q": {
+   "s": "Customers can now check their account balances using our new mobile banking -------.",
+   "o": [
+    "applicant",
+    "application",
+    "applicable",
+    "apply"
+   ],
+   "a": 1,
+   "k": "using의 목적어로 잔액을 확인하는 수단인 '앱'이 필요하므로 application이 정답. applicant(지원자)는 사람이라 뜻이 맞지 않는다."
+  }
+ },
+ {
+  "w": "cybersecurity",
+  "pos": "n",
+  "m": [
+   "사이버 보안"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The company has hired an outside expert to strengthen its *cybersecurity*.",
+  "exKo": "그 회사는 사이버 보안을 강화하기 위해 외부 전문가를 고용했다.",
+  "col": [
+   {
+    "e": "cybersecurity training",
+    "k": "사이버 보안 교육"
+   },
+   {
+    "e": "cybersecurity threats",
+    "k": "사이버 보안 위협"
+   }
+  ],
+  "der": [],
+  "para": [
+   "online security",
+   "data protection"
+  ],
+  "ant": "",
+  "tip": "불가산명사로 'cybersecurity training/measures'처럼 명사 앞 수식어로 자주 쓰이며 Part 7에서 online security로 패러프레이즈된다.",
+  "q": {
+   "s": "All staff must complete a ------- training session to learn how to recognize suspicious e-mails.",
+   "o": [
+    "landscaping",
+    "bookkeeping",
+    "cybersecurity",
+    "catering"
+   ],
+   "a": 2,
+   "k": "의심스러운 이메일을 식별하는 법을 배우는 교육은 '사이버 보안' 교육이므로 cybersecurity가 정답."
+  }
+ },
+ {
+  "w": "online",
+  "pos": "adv",
+  "m": [
+   "온라인으로, 인터넷으로"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Customers can now track the status of their orders *online* at any time.",
+  "exKo": "고객은 이제 언제든지 온라인으로 주문 상태를 확인할 수 있다.",
+  "col": [
+   {
+    "e": "order online",
+    "k": "온라인으로 주문하다"
+   },
+   {
+    "e": "apply online",
+    "k": "온라인으로 지원하다"
+   },
+   {
+    "e": "online registration",
+    "k": "온라인 등록"
+   }
+  ],
+  "der": [],
+  "para": [
+   "on the Internet",
+   "electronically"
+  ],
+  "ant": "",
+  "tip": "부사(order online)와 형용사(online form) 모두 쓰인다. Part 7에서 'on our website', 'electronically'로 바꿔 표현된다.",
+  "q": {
+   "s": "Conference participants are encouraged to register ------- to receive an early-bird discount.",
+   "o": [
+    "alone",
+    "online",
+    "aloud",
+    "apart"
+   ],
+   "a": 1,
+   "k": "조기 등록 할인을 받기 위해 '온라인으로' 등록하라는 의미이므로 online이 정답. alone(혼자), aloud(소리 내어), apart(떨어져)는 register를 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "subscription",
+  "pos": "n",
+  "m": [
+   "구독, 정기 이용 (서비스)"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our annual *subscription* includes access to all premium features of the software.",
+  "exKo": "연간 구독에는 소프트웨어의 모든 프리미엄 기능 이용이 포함된다.",
+  "col": [
+   {
+    "e": "annual subscription",
+    "k": "연간 구독"
+   },
+   {
+    "e": "renew a subscription",
+    "k": "구독을 갱신하다"
+   },
+   {
+    "e": "subscription to",
+    "k": "~의 구독"
+   }
+  ],
+  "der": [
+   {
+    "w": "subscribe",
+    "pos": "v",
+    "m": "구독하다"
+   },
+   {
+    "w": "subscriber",
+    "pos": "n",
+    "m": "구독자"
+   }
+  ],
+  "para": [
+   "membership",
+   "plan"
+  ],
+  "ant": "",
+  "tip": "'subscription to + 잡지/서비스'처럼 to와 짝을 이루며, 동사 subscribe to, 사람명사 subscriber와의 품사 구별이 출제된다.",
+  "q": {
+   "s": "To continue receiving the newsletter, please renew your ------- before May 31.",
+   "o": [
+    "subscriber",
+    "subscription",
+    "subscribe",
+    "subscribed"
+   ],
+   "a": 1,
+   "k": "소유격 your 뒤 renew의 목적어인 명사 자리이고 갱신하는 대상은 '구독'이므로 subscription이 정답. subscriber(구독자)는 갱신하는 대상이 아니다."
+  }
+ },
+ {
+  "w": "upload",
+  "pos": "v",
+  "m": [
+   "업로드하다, 올리다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Please *upload* your presentation slides to the shared folder by noon.",
+  "exKo": "정오까지 발표 슬라이드를 공유 폴더에 올리기 바란다.",
+  "col": [
+   {
+    "e": "upload a file",
+    "k": "파일을 업로드하다"
+   },
+   {
+    "e": "upload A to B",
+    "k": "A를 B에 올리다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "post",
+   "submit"
+  ],
+  "ant": "download",
+  "tip": "'upload A to B(A를 B에 올리다)' 구조로 쓰며, 반대말 download는 'download A from B'처럼 from과 쓰인다.",
+  "q": {
+   "s": "Applicants should ------- their resumes to our online job portal.",
+   "o": [
+    "download",
+    "upload",
+    "delete",
+    "restart"
+   ],
+   "a": 1,
+   "k": "지원자가 이력서를 채용 사이트'에(to)' 올리는 것이므로 upload가 정답. download는 from과 쓰이며 방향이 반대다."
+  }
+ }
+]

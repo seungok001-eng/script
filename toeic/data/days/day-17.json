@@ -1,0 +1,1963 @@
+[
+ {
+  "w": "real estate",
+  "pos": "n",
+  "m": [
+   "부동산"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "She has worked in *real estate* for over ten years, mainly selling office buildings.",
+  "exKo": "그녀는 주로 사무용 건물을 판매하며 10년 넘게 부동산 업계에서 일해 왔다.",
+  "col": [
+   {
+    "e": "real estate agent",
+    "k": "부동산 중개인"
+   },
+   {
+    "e": "real estate market",
+    "k": "부동산 시장"
+   },
+   {
+    "e": "commercial real estate",
+    "k": "상업용 부동산"
+   }
+  ],
+  "der": [
+   {
+    "w": "realtor",
+    "pos": "n",
+    "m": "부동산 중개인"
+   }
+  ],
+  "para": [
+   "property"
+  ],
+  "ant": "",
+  "tip": "불가산명사로 'real estate agent/agency/market'처럼 명사 앞 수식어로 자주 쓰인다. Part 7에서 property로 바꿔 쓴다.",
+  "q": {
+   "s": "The ------- market in the downtown area has slowed due to rising interest rates.",
+   "o": [
+    "realtor",
+    "real estate",
+    "realistic",
+    "realization"
+   ],
+   "a": 1,
+   "k": "금리 상승으로 둔화된 시장은 '부동산' 시장이므로 real estate가 정답. realtor(중개인)는 market을 수식하지 않으며 realistic, realization은 뜻이 맞지 않는다."
+  }
+ },
+ {
+  "w": "property",
+  "pos": "n",
+  "m": [
+   "부동산, 건물, 부지",
+   "재산, 소유물"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The company recently purchased a commercial *property* near the harbor.",
+  "exKo": "그 회사는 최근 항구 근처의 상업용 건물을 매입했다.",
+  "col": [
+   {
+    "e": "commercial property",
+    "k": "상업용 부동산"
+   },
+   {
+    "e": "rental property",
+    "k": "임대용 부동산"
+   },
+   {
+    "e": "property manager",
+    "k": "부동산 관리인"
+   }
+  ],
+  "der": [],
+  "para": [
+   "building",
+   "real estate",
+   "premises"
+  ],
+  "ant": "",
+  "tip": "가산명사로는 '건물·부지', 불가산명사로는 '재산'을 뜻한다. 'property manager', 'rental property'가 Part 7 빈출이다.",
+  "q": {
+   "s": "Ms. Lopez manages several rental ------- in the downtown area, including two apartment buildings.",
+   "o": [
+    "proprietor",
+    "proper",
+    "properties",
+    "properly"
+   ],
+   "a": 2,
+   "k": "several 뒤에는 복수 가산명사가 와야 하고 아파트 건물을 포함하는 '임대 부동산'이므로 properties가 정답. proprietor(소유주)는 단수형이라 several과 맞지 않는다."
+  }
+ },
+ {
+  "w": "lease",
+  "pos": "n",
+  "m": [
+   "임대차 계약",
+   "임대 기간"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "We signed a five-year *lease* for the new office space last week.",
+  "exKo": "우리는 지난주 새 사무실 공간에 대해 5년 임대 계약을 체결했다.",
+  "col": [
+   {
+    "e": "sign a lease",
+    "k": "임대 계약을 맺다"
+   },
+   {
+    "e": "renew a lease",
+    "k": "임대 계약을 갱신하다"
+   },
+   {
+    "e": "lease agreement",
+    "k": "임대차 계약서"
+   }
+  ],
+  "der": [
+   {
+    "w": "leasing",
+    "pos": "n",
+    "m": "임대(업)"
+   }
+  ],
+  "para": [
+   "rental agreement",
+   "contract"
+  ],
+  "ant": "",
+  "tip": "명사·동사로 모두 쓰인다. 'sign/renew a lease', 'The lease expires(임대 계약이 만료되다)'가 Part 7 빈출이다.",
+  "q": {
+   "s": "Our ------- on the warehouse expires in March, so we must decide soon whether to renew it.",
+   "o": [
+    "rent",
+    "deposit",
+    "lease",
+    "tenant"
+   ],
+   "a": 2,
+   "k": "만료되고(expire) 갱신하는(renew) 대상은 '임대 계약'이므로 lease가 정답. rent(임대료)나 deposit(보증금)은 만료·갱신의 대상이 아니다."
+  }
+ },
+ {
+  "w": "rent",
+  "pos": "n",
+  "m": [
+   "임대료, 집세"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The monthly *rent* for the office includes water and electricity.",
+  "exKo": "사무실 월 임대료에는 수도 요금과 전기 요금이 포함되어 있다.",
+  "col": [
+   {
+    "e": "pay the rent",
+    "k": "임대료를 내다"
+   },
+   {
+    "e": "monthly rent",
+    "k": "월 임대료, 월세"
+   },
+   {
+    "e": "rent increase",
+    "k": "임대료 인상"
+   }
+  ],
+  "der": [
+   {
+    "w": "rental",
+    "pos": "adj",
+    "m": "임대의"
+   },
+   {
+    "w": "renter",
+    "pos": "n",
+    "m": "세입자, 임차인"
+   }
+  ],
+  "para": [
+   "rental fee",
+   "payment"
+  ],
+  "ant": "",
+  "tip": "명사(임대료)와 동사(빌리다, 임대하다)로 모두 쓰인다. 명사를 수식하는 자리에는 rental(rental car, rental property)을 쓴다는 점이 품사 문제 포인트다.",
+  "q": {
+   "s": "Tenants must pay their ------- by the fifth day of each month to avoid a late fee.",
+   "o": [
+    "renter",
+    "renting",
+    "rented",
+    "rent"
+   ],
+   "a": 3,
+   "k": "pay의 목적어로 매달 내는 '임대료'가 필요하므로 rent가 정답. renter는 사람이고, renting과 rented는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "tenant",
+  "pos": "n",
+  "m": [
+   "세입자, 임차인"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "*Tenants* should report any maintenance problems to the building manager.",
+  "exKo": "세입자는 관리상의 문제가 있으면 건물 관리인에게 알려야 한다.",
+  "col": [
+   {
+    "e": "current tenants",
+    "k": "현재 세입자"
+   },
+   {
+    "e": "prospective tenant",
+    "k": "예비 세입자"
+   }
+  ],
+  "der": [
+   {
+    "w": "tenancy",
+    "pos": "n",
+    "m": "임차, 임차 기간"
+   }
+  ],
+  "para": [
+   "renter",
+   "occupant",
+   "resident"
+  ],
+  "ant": "landlord",
+  "tip": "임대인 landlord와 반대되는 사람명사로, Part 7에서 renter, occupant로 패러프레이즈된다.",
+  "q": {
+   "s": "The building owner has notified all ------- that the elevators will be inspected on Monday.",
+   "o": [
+    "tenants",
+    "tenancy",
+    "tenant",
+    "tenancies"
+   ],
+   "a": 0,
+   "k": "notify의 목적어로 통지를 받는 '사람'이 필요하고 all 뒤이므로 복수형 tenants가 정답. tenancy는 '임차 기간'이라는 추상명사다."
+  }
+ },
+ {
+  "w": "landlord",
+  "pos": "n",
+  "m": [
+   "집주인, 임대인"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The *landlord* agreed to repaint the apartment before the new tenants move in.",
+  "exKo": "집주인은 새 세입자가 입주하기 전에 아파트를 다시 칠해 주기로 했다.",
+  "col": [
+   {
+    "e": "contact the landlord",
+    "k": "집주인에게 연락하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "property owner",
+   "building owner"
+  ],
+  "ant": "tenant",
+  "tip": "Part 3에서 property owner, building owner로 바꿔 말한다. 수리 책임이 집주인에게 있는지 세입자에게 있는지가 Part 7 문제로 나온다.",
+  "q": {
+   "s": "Under the lease, the ------- is responsible for repairing major appliances in the apartment.",
+   "o": [
+    "landmark",
+    "landscape",
+    "landfill",
+    "landlord"
+   ],
+   "a": 3,
+   "k": "임대 계약상 가전제품 수리를 책임지는 사람은 '집주인'이므로 landlord가 정답. landmark(명소), landscape(풍경), landfill(쓰레기 매립지)은 사람이 아니다."
+  }
+ },
+ {
+  "w": "occupant",
+  "pos": "n",
+  "m": [
+   "(건물의) 입주자, 거주자",
+   "(차량 등의) 탑승자"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The previous *occupant* left some office furniture behind when she moved out.",
+  "exKo": "이전 입주자는 이사 나가면서 사무실 가구 일부를 두고 갔다.",
+  "col": [
+   {
+    "e": "previous occupant",
+    "k": "이전 입주자"
+   },
+   {
+    "e": "building occupants",
+    "k": "건물 입주자"
+   }
+  ],
+  "der": [
+   {
+    "w": "occupy",
+    "pos": "v",
+    "m": "차지하다, 사용하다"
+   },
+   {
+    "w": "occupancy",
+    "pos": "n",
+    "m": "점유(율), 입주"
+   }
+  ],
+  "para": [
+   "tenant",
+   "resident"
+  ],
+  "ant": "",
+  "tip": "사람명사 occupant와 추상명사 occupancy(occupancy rate: 객실 점유율)를 구별하는 품사 문제가 나온다.",
+  "q": {
+   "s": "All ------- of the building must leave immediately when the fire alarm sounds.",
+   "o": [
+    "occupancy",
+    "occupy",
+    "occupants",
+    "occupied"
+   ],
+   "a": 2,
+   "k": "건물을 떠나야 하는 주체인 '사람'이 필요하므로 occupants가 정답. occupancy는 점유 상태를 뜻하는 추상명사, occupy는 동사다."
+  }
+ },
+ {
+  "w": "residential",
+  "pos": "adj",
+  "m": [
+   "주거의, 주택지의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new apartment complex will be built in a quiet *residential* area.",
+  "exKo": "새 아파트 단지는 조용한 주택가에 지어질 예정이다.",
+  "col": [
+   {
+    "e": "residential area",
+    "k": "주거 지역, 주택가"
+   },
+   {
+    "e": "residential property",
+    "k": "주거용 부동산"
+   }
+  ],
+  "der": [
+   {
+    "w": "reside",
+    "pos": "v",
+    "m": "거주하다"
+   },
+   {
+    "w": "resident",
+    "pos": "n",
+    "m": "거주자, 주민"
+   },
+   {
+    "w": "residence",
+    "pos": "n",
+    "m": "주택, 거주지"
+   }
+  ],
+  "para": [
+   "housing"
+  ],
+  "ant": "commercial",
+  "tip": "commercial(상업용)과 대비되며, 명사 resident(거주자)/residence(주택)와의 품사 구별이 Part 5에 나온다.",
+  "q": {
+   "s": "The city has approved plans to convert the old factory into ------- apartments.",
+   "o": [
+    "resident",
+    "residential",
+    "residence",
+    "reside"
+   ],
+   "a": 1,
+   "k": "명사 apartments를 수식하는 형용사 자리이므로 residential이 정답. resident와 residence는 명사, reside는 동사다."
+  }
+ },
+ {
+  "w": "utilities",
+  "pos": "n",
+  "m": [
+   "(전기·가스·수도 등) 공과금",
+   "공익 설비"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The rent is $1,200 a month, and *utilities* are not included.",
+  "exKo": "임대료는 월 1,200달러이며 공과금은 포함되어 있지 않다.",
+  "col": [
+   {
+    "e": "utilities included",
+    "k": "공과금 포함"
+   },
+   {
+    "e": "utility bill",
+    "k": "공과금 고지서"
+   }
+  ],
+  "der": [
+   {
+    "w": "utilize",
+    "pos": "v",
+    "m": "활용하다"
+   }
+  ],
+  "para": [
+   "electricity and water",
+   "utility bills"
+  ],
+  "ant": "",
+  "tip": "복수형 utilities로 전기·가스·수도 요금을 뜻하며 'utilities included'가 임대 광고 빈출 표현이다. 단수 utility는 utility bill처럼 명사 앞에서 쓰인다.",
+  "q": {
+   "s": "The monthly rent of $950 includes all -------, such as water, gas, and electricity.",
+   "o": [
+    "utilities",
+    "appliances",
+    "facilities",
+    "deposits"
+   ],
+   "a": 0,
+   "k": "수도·가스·전기를 예로 드는 것은 '공과금'이므로 utilities가 정답. appliances(가전제품), facilities(시설), deposits(보증금)는 예시와 맞지 않는다."
+  }
+ },
+ {
+  "w": "security deposit",
+  "pos": "n",
+  "m": [
+   "보증금"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Tenants must pay a *security deposit* equal to one month's rent.",
+  "exKo": "세입자는 한 달 치 임대료에 해당하는 보증금을 내야 한다.",
+  "col": [
+   {
+    "e": "pay a security deposit",
+    "k": "보증금을 내다"
+   },
+   {
+    "e": "refund the security deposit",
+    "k": "보증금을 돌려주다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "deposit"
+  ],
+  "ant": "",
+  "tip": "임대 계약 지문에서 'refundable(환불 가능한)', 'one month's rent'와 함께 나오며, 퇴거 시 손상이 없으면 돌려받는다는 내용이 Part 7 문제로 나온다.",
+  "q": {
+   "s": "The ------- will be returned in full when you move out, provided the apartment is undamaged.",
+   "o": [
+    "monthly rent",
+    "security deposit",
+    "utility bill",
+    "floor plan"
+   ],
+   "a": 1,
+   "k": "아파트에 손상이 없으면 퇴거 시 전액 돌려받는 돈은 '보증금'이므로 security deposit이 정답. 월 임대료나 공과금은 돌려받는 돈이 아니다."
+  }
+ },
+ {
+  "w": "mortgage",
+  "pos": "n",
+  "m": [
+   "주택 담보 대출"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The couple took out a *mortgage* to buy their first home.",
+  "exKo": "그 부부는 첫 집을 사기 위해 주택 담보 대출을 받았다.",
+  "col": [
+   {
+    "e": "take out a mortgage",
+    "k": "담보 대출을 받다"
+   },
+   {
+    "e": "mortgage payment",
+    "k": "담보 대출 상환금"
+   },
+   {
+    "e": "mortgage rate",
+    "k": "담보 대출 금리"
+   }
+  ],
+  "der": [],
+  "para": [
+   "home loan"
+  ],
+  "ant": "",
+  "tip": "t가 묵음이다('모기지'). 'take out a mortgage', 'mortgage rate'가 금융·부동산 지문에 나온다.",
+  "q": {
+   "s": "Lower interest rates have made it easier for first-time buyers to qualify for a -------.",
+   "o": [
+    "landlord",
+    "mortgage",
+    "tenant",
+    "listing"
+   ],
+   "a": 1,
+   "k": "금리와 관련해 자격 심사를 받는(qualify for) 대상은 '주택 담보 대출'이므로 mortgage가 정답. landlord, tenant는 사람이고 listing은 매물 목록이다."
+  }
+ },
+ {
+  "w": "realtor",
+  "pos": "n",
+  "m": [
+   "부동산 중개인"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Our *realtor* showed us three office spaces in the downtown area.",
+  "exKo": "우리 부동산 중개인이 시내의 사무실 공간 세 곳을 보여 주었다.",
+  "col": [
+   {
+    "e": "local realtor",
+    "k": "지역 부동산 중개인"
+   },
+   {
+    "e": "contact a realtor",
+    "k": "부동산 중개인에게 연락하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "realty",
+    "pos": "n",
+    "m": "부동산"
+   }
+  ],
+  "para": [
+   "real estate agent",
+   "broker"
+  ],
+  "ant": "",
+  "tip": "Part 3·7에서 real estate agent로 바꿔 말한다. 사람명사 realtor와 사물명사 realty(부동산)를 구별하자.",
+  "q": {
+   "s": "Before signing the lease, we asked our ------- to negotiate a lower monthly rent.",
+   "o": [
+    "realty",
+    "reality",
+    "realtor",
+    "realization"
+   ],
+   "a": 2,
+   "k": "임대료 협상을 부탁할 수 있는 '사람'이 필요하므로 realtor가 정답. realty(부동산), reality(현실), realization(실현)은 사람이 아니다."
+  }
+ },
+ {
+  "w": "listing",
+  "pos": "n",
+  "m": [
+   "(부동산) 매물 정보, 매물",
+   "목록, 게시물"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The online *listing* includes photos and a detailed floor plan of the apartment.",
+  "exKo": "온라인 매물 정보에는 아파트 사진과 상세한 평면도가 포함되어 있다.",
+  "col": [
+   {
+    "e": "property listing",
+    "k": "부동산 매물 정보"
+   },
+   {
+    "e": "job listing",
+    "k": "구인 공고"
+   }
+  ],
+  "der": [
+   {
+    "w": "list",
+    "pos": "v",
+    "m": "목록에 올리다, (매물로) 내놓다"
+   }
+  ],
+  "para": [
+   "advertisement",
+   "posting"
+  ],
+  "ant": "",
+  "tip": "부동산 광고·구인 공고 지문에서 '게시된 매물/공고'를 뜻한다. 동사 list는 'be listed for sale(매물로 나오다)'로 쓰인다.",
+  "q": {
+   "s": "Sellers can post a ------- on our website for a small fee, with up to 20 photos of their property.",
+   "o": [
+    "mortgage",
+    "tenant",
+    "landlord",
+    "listing"
+   ],
+   "a": 3,
+   "k": "판매자가 부동산 사진과 함께 웹사이트에 게시하는 것은 '매물 정보'이므로 listing이 정답. mortgage(담보 대출), tenant, landlord는 게시할 수 있는 대상이 아니다."
+  }
+ },
+ {
+  "w": "square feet",
+  "pos": "n",
+  "m": [
+   "평방피트"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The office space measures 2,000 *square feet* and includes a large meeting room.",
+  "exKo": "그 사무실 공간은 면적이 2,000평방피트이며 넓은 회의실을 갖추고 있다.",
+  "col": [
+   {
+    "e": "square feet of office space",
+    "k": "평방피트의 사무실 공간"
+   },
+   {
+    "e": "per square foot",
+    "k": "평방피트당"
+   }
+  ],
+  "der": [
+   {
+    "w": "square footage",
+    "pos": "n",
+    "m": "면적"
+   }
+  ],
+  "para": [
+   "floor space"
+  ],
+  "ant": "",
+  "tip": "단수는 square foot, 복수는 square feet이다. 'per square foot(평방피트당)' 가격, 'square footage(면적)'가 부동산 지문에 나온다.",
+  "q": {
+   "s": "The newly built warehouse offers more than 50,000 ------- of storage space.",
+   "o": [
+    "square feet",
+    "square foot",
+    "squares",
+    "squared feet"
+   ],
+   "a": 0,
+   "k": "50,000이라는 복수 수량 뒤이므로 복수형 square feet가 정답. square foot는 단수형이고, squared feet는 틀린 표현이다."
+  }
+ },
+ {
+  "w": "floor plan",
+  "pos": "n",
+  "m": [
+   "평면도, 층별 배치도"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Please review the attached *floor plan* before choosing your new desk location.",
+  "exKo": "새 자리를 고르기 전에 첨부된 평면도를 검토하기 바란다.",
+  "col": [
+   {
+    "e": "open floor plan",
+    "k": "개방형 구조"
+   },
+   {
+    "e": "detailed floor plan",
+    "k": "상세 평면도"
+   }
+  ],
+  "der": [],
+  "para": [
+   "layout",
+   "diagram"
+  ],
+  "ant": "",
+  "tip": "'open floor plan(칸막이 없는 개방형 구조)'이 사무실 이전 지문에 자주 나오며, Part 7에서 layout으로 패러프레이즈된다.",
+  "q": {
+   "s": "The apartment's open ------- makes the living room and kitchen feel especially spacious.",
+   "o": [
+    "security deposit",
+    "floor plan",
+    "mortgage",
+    "landlord"
+   ],
+   "a": 1,
+   "k": "거실과 주방을 넓어 보이게 하는 것은 '개방형 구조(open floor plan)'이므로 floor plan이 정답."
+  }
+ },
+ {
+  "w": "renovate",
+  "pos": "v",
+  "m": [
+   "개조하다, 보수하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hotel will *renovate* all of its guest rooms over the next six months.",
+  "exKo": "그 호텔은 앞으로 6개월에 걸쳐 모든 객실을 개조할 것이다.",
+  "col": [
+   {
+    "e": "renovate the lobby",
+    "k": "로비를 개조하다"
+   },
+   {
+    "e": "newly renovated",
+    "k": "새로 단장한"
+   }
+  ],
+  "der": [
+   {
+    "w": "renovation",
+    "pos": "n",
+    "m": "개조, 보수 공사"
+   }
+  ],
+  "para": [
+   "remodel",
+   "refurbish",
+   "upgrade"
+  ],
+  "ant": "",
+  "tip": "타동사이므로 뒤에 목적어가 오거나 'be renovated' 수동태로 쓴다. 'newly renovated(새로 단장한)'가 광고 지문 빈출이다.",
+  "q": {
+   "s": "The library will be closed for two months while the main reading room is being -------.",
+   "o": [
+    "renovation",
+    "renovating",
+    "renovates",
+    "renovated"
+   ],
+   "a": 3,
+   "k": "열람실이 '개조되는' 것이므로 is being 뒤에 과거분사가 오는 진행형 수동태가 필요하다. 따라서 renovated가 정답."
+  }
+ },
+ {
+  "w": "renovation",
+  "pos": "n",
+  "m": [
+   "개조, 보수 공사"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *renovation* of the lobby is expected to be completed by June.",
+  "exKo": "로비 개조 공사는 6월까지 완료될 예정이다.",
+  "col": [
+   {
+    "e": "closed for renovations",
+    "k": "보수 공사로 휴업 중인"
+   },
+   {
+    "e": "undergo renovations",
+    "k": "보수 공사를 하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "renovate",
+    "pos": "v",
+    "m": "개조하다"
+   }
+  ],
+  "para": [
+   "remodeling",
+   "refurbishment",
+   "improvements"
+  ],
+  "ant": "",
+  "tip": "'closed for renovation(s)', 'undergo renovations'가 빈출이며, 전치사·관사 뒤 명사 자리에서 동사 renovate와 구별하는 문제가 나온다.",
+  "q": {
+   "s": "The restaurant will be closed for ------- until the end of the month.",
+   "o": [
+    "renovations",
+    "renovate",
+    "renovated",
+    "renovates"
+   ],
+   "a": 0,
+   "k": "전치사 for 뒤에는 명사가 와야 하므로 renovations가 정답. 'closed for renovations(보수 공사로 휴업)'는 고정 표현이다."
+  }
+ },
+ {
+  "w": "remodel",
+  "pos": "v",
+  "m": [
+   "리모델링하다, 개조하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We are planning to *remodel* the break room to add more seating.",
+  "exKo": "우리는 좌석을 늘리기 위해 휴게실을 개조할 계획이다.",
+  "col": [
+   {
+    "e": "remodel a kitchen",
+    "k": "주방을 개조하다"
+   },
+   {
+    "e": "recently remodeled",
+    "k": "최근 개조된"
+   }
+  ],
+  "der": [
+   {
+    "w": "remodeling",
+    "pos": "n",
+    "m": "리모델링, 개조"
+   }
+  ],
+  "para": [
+   "renovate",
+   "redesign"
+  ],
+  "ant": "",
+  "tip": "renovate와 거의 같은 뜻으로 바꿔 쓸 수 있으며, 'recently remodeled'처럼 과거분사가 형용사로 자주 쓰인다.",
+  "q": {
+   "s": "The Grand Hotel is ------- its lobby and will reopen it to guests next month.",
+   "o": [
+    "remodeled",
+    "remodel",
+    "remodeling",
+    "remodels"
+   ],
+   "a": 2,
+   "k": "be동사 is 뒤에 목적어 its lobby가 있으므로 능동 진행형 remodeling이 정답. is remodeled는 수동태라 목적어를 취할 수 없다."
+  }
+ },
+ {
+  "w": "construction",
+  "pos": "n",
+  "m": [
+   "건설, 공사"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "*Construction* of the new headquarters will begin early next year.",
+  "exKo": "새 본사 건설은 내년 초에 시작된다.",
+  "col": [
+   {
+    "e": "construction site",
+    "k": "공사 현장"
+   },
+   {
+    "e": "construction company",
+    "k": "건설 회사"
+   }
+  ],
+  "der": [
+   {
+    "w": "construct",
+    "pos": "v",
+    "m": "건설하다"
+   },
+   {
+    "w": "constructive",
+    "pos": "adj",
+    "m": "건설적인"
+   }
+  ],
+  "para": [
+   "building"
+  ],
+  "ant": "",
+  "tip": "동사 construct와 명사 construction의 품사 문제, 그리고 형용사 constructive(건설적인: constructive feedback)와의 의미 혼동이 출제된다.",
+  "q": {
+   "s": "------- of the new shopping mall is expected to take approximately 18 months.",
+   "o": [
+    "Construct",
+    "Constructive",
+    "Constructively",
+    "Construction"
+   ],
+   "a": 3,
+   "k": "문장의 주어 자리이며 of의 수식을 받으므로 명사 Construction이 정답. Construct는 동사, Constructive는 형용사, Constructively는 부사다."
+  }
+ },
+ {
+  "w": "contractor",
+  "pos": "n",
+  "m": [
+   "(공사) 시공업자, 도급업체"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "We hired a local *contractor* to repair the roof of the warehouse.",
+  "exKo": "우리는 창고 지붕을 수리하기 위해 지역 시공업체를 고용했다.",
+  "col": [
+   {
+    "e": "general contractor",
+    "k": "종합 건설업체"
+   },
+   {
+    "e": "hire a contractor",
+    "k": "시공업체를 고용하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "contract",
+    "pos": "n",
+    "m": "계약(서)"
+   }
+  ],
+  "para": [
+   "builder",
+   "construction company"
+  ],
+  "ant": "",
+  "tip": "사람·업체를 뜻하는 contractor와 사물명사 contract(계약)를 구별하는 품사 문제가 출제된다.",
+  "q": {
+   "s": "The ------- has promised to complete the kitchen renovation by the end of the week.",
+   "o": [
+    "contractor",
+    "contract",
+    "contracted",
+    "contraction"
+   ],
+   "a": 0,
+   "k": "약속하고 공사를 완료하는 주체가 필요하므로 contractor가 정답. contract(계약)는 약속하는 주체가 될 수 없다."
+  }
+ },
+ {
+  "w": "architect",
+  "pos": "n",
+  "m": [
+   "건축가"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The *architect* presented three different designs for the new library.",
+  "exKo": "건축가는 새 도서관에 대한 세 가지 다른 설계안을 발표했다.",
+  "col": [
+   {
+    "e": "award-winning architect",
+    "k": "수상 경력이 있는 건축가"
+   },
+   {
+    "e": "landscape architect",
+    "k": "조경 설계사"
+   }
+  ],
+  "der": [
+   {
+    "w": "architecture",
+    "pos": "n",
+    "m": "건축(학), 건축 양식"
+   },
+   {
+    "w": "architectural",
+    "pos": "adj",
+    "m": "건축의"
+   }
+  ],
+  "para": [
+   "designer"
+  ],
+  "ant": "",
+  "tip": "사람명사 architect, 명사 architecture(건축), 형용사 architectural(건축의) 세 가지 품사 구별이 Part 5에 나온다.",
+  "q": {
+   "s": "The new city hall was designed by a well-known ------- from Chicago.",
+   "o": [
+    "architecture",
+    "architectural",
+    "architecturally",
+    "architect"
+   ],
+   "a": 3,
+   "k": "by 뒤에 설계한 행위자인 사람명사가 필요하고 관사 a가 있으므로 architect가 정답. architecture는 '건축'이라는 추상명사다."
+  }
+ },
+ {
+  "w": "blueprint",
+  "pos": "n",
+  "m": [
+   "설계도",
+   "청사진, 계획"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The engineers carefully reviewed the *blueprints* before construction began.",
+  "exKo": "기술자들은 공사가 시작되기 전에 설계도를 꼼꼼히 검토했다.",
+  "col": [
+   {
+    "e": "draw up a blueprint",
+    "k": "설계도를 작성하다"
+   },
+   {
+    "e": "a blueprint for",
+    "k": "~을 위한 청사진"
+   }
+  ],
+  "der": [],
+  "para": [
+   "plan",
+   "design"
+  ],
+  "ant": "",
+  "tip": "건축 '설계도' 외에 'a blueprint for growth(성장을 위한 청사진)'처럼 계획이라는 비유적 뜻으로도 쓰인다.",
+  "q": {
+   "s": "Before the builders could begin work, the architect had to revise the ------- for the second floor.",
+   "o": [
+    "blueprints",
+    "tenants",
+    "mortgages",
+    "premises"
+   ],
+   "a": 0,
+   "k": "건축가가 공사 전에 수정하는 것은 '설계도'이므로 blueprints가 정답."
+  }
+ },
+ {
+  "w": "building permit",
+  "pos": "n",
+  "m": [
+   "건축 허가(증)"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Construction cannot start until the city issues a *building permit*.",
+  "exKo": "시에서 건축 허가를 내주기 전까지는 공사를 시작할 수 없다.",
+  "col": [
+   {
+    "e": "obtain a building permit",
+    "k": "건축 허가를 받다"
+   },
+   {
+    "e": "apply for a building permit",
+    "k": "건축 허가를 신청하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "construction permit"
+  ],
+  "ant": "",
+  "tip": "'issue/obtain/apply for a building permit'이 핵심 연어이며, Part 7에서 공사 지연 이유로 '허가 대기'가 자주 등장한다.",
+  "q": {
+   "s": "The company is still waiting for the city to approve its ------- for the new factory.",
+   "o": [
+    "building permit",
+    "security deposit",
+    "mortgage",
+    "landlord"
+   ],
+   "a": 0,
+   "k": "시가 승인해야 공장을 지을 수 있는 것은 '건축 허가'이므로 building permit이 정답."
+  }
+ },
+ {
+  "w": "structure",
+  "pos": "n",
+  "m": [
+   "건축물, 구조물",
+   "구조, 체계"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The old bank building is one of the oldest *structures* in the city.",
+  "exKo": "그 오래된 은행 건물은 시에서 가장 오래된 건축물 중 하나다.",
+  "col": [
+   {
+    "e": "historic structure",
+    "k": "역사적 건축물"
+   },
+   {
+    "e": "organizational structure",
+    "k": "조직 구조"
+   },
+   {
+    "e": "pricing structure",
+    "k": "가격 체계"
+   }
+  ],
+  "der": [
+   {
+    "w": "structural",
+    "pos": "adj",
+    "m": "구조의, 구조적인"
+   },
+   {
+    "w": "structurally",
+    "pos": "adv",
+    "m": "구조적으로"
+   }
+  ],
+  "para": [
+   "building"
+  ],
+  "ant": "",
+  "tip": "형용사 structural(structural damage: 구조적 손상)과의 품사 구별 문제가 나오며, 'pricing structure'처럼 '체계'의 뜻으로도 쓰인다.",
+  "q": {
+   "s": "The new ------- will house a museum, a library, and several offices.",
+   "o": [
+    "structural",
+    "structurally",
+    "structured",
+    "structure"
+   ],
+   "a": 3,
+   "k": "관사 The와 형용사 new 뒤에 오는 주어 자리이므로 명사 structure가 정답. 동사 house는 '수용하다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "install",
+  "pos": "v",
+  "m": [
+   "설치하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "Workers will *install* new security cameras in the lobby this weekend.",
+  "exKo": "작업자들이 이번 주말 로비에 새 보안 카메라를 설치할 것이다.",
+  "col": [
+   {
+    "e": "install equipment",
+    "k": "장비를 설치하다"
+   },
+   {
+    "e": "be installed in",
+    "k": "~에 설치되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "installation",
+    "pos": "n",
+    "m": "설치"
+   },
+   {
+    "w": "installment",
+    "pos": "n",
+    "m": "할부(금)"
+   }
+  ],
+  "para": [
+   "set up",
+   "put in"
+  ],
+  "ant": "",
+  "tip": "명사형은 installation(설치)이고 installment는 '할부금'이므로 혼동하지 말 것. Part 1에서 'A light fixture is being installed'처럼 진행형 수동태로 나온다.",
+  "q": {
+   "s": "Workers are scheduled to ------- solar panels on the roof of the building next week.",
+   "o": [
+    "installation",
+    "install",
+    "installment",
+    "installer"
+   ],
+   "a": 1,
+   "k": "be scheduled to 뒤에는 동사원형이 와야 하므로 install이 정답. 나머지는 모두 명사다."
+  }
+ },
+ {
+  "w": "installation",
+  "pos": "n",
+  "m": [
+   "설치",
+   "설비, 장치"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Installation* of the new air-conditioning system will take about two days.",
+  "exKo": "새 에어컨 시스템 설치에는 약 이틀이 걸릴 것이다.",
+  "col": [
+   {
+    "e": "free installation",
+    "k": "무료 설치"
+   },
+   {
+    "e": "installation fee",
+    "k": "설치비"
+   }
+  ],
+  "der": [
+   {
+    "w": "install",
+    "pos": "v",
+    "m": "설치하다"
+   }
+  ],
+  "para": [
+   "setup"
+  ],
+  "ant": "",
+  "tip": "'free installation', 'installation fee'가 광고 지문에 나오며, 철자가 비슷한 installment(할부)가 오답 함정으로 쓰인다.",
+  "q": {
+   "s": "The price of the dishwasher includes delivery and ------- at no extra charge.",
+   "o": [
+    "installation",
+    "installment",
+    "install",
+    "installed"
+   ],
+   "a": 0,
+   "k": "식기세척기 가격에 배송과 함께 포함되는 서비스는 '설치'이므로 installation이 정답. installment는 '할부금'이라 뜻이 맞지 않고, install은 동사다."
+  }
+ },
+ {
+  "w": "plumber",
+  "pos": "n",
+  "m": [
+   "배관공"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "We called a *plumber* to fix the leaking pipe in the kitchen.",
+  "exKo": "우리는 주방의 새는 배관을 고치려고 배관공을 불렀다.",
+  "col": [
+   {
+    "e": "call a plumber",
+    "k": "배관공을 부르다"
+   },
+   {
+    "e": "licensed plumber",
+    "k": "면허를 소지한 배관공"
+   }
+  ],
+  "der": [
+   {
+    "w": "plumbing",
+    "pos": "n",
+    "m": "배관 (설비)"
+   }
+  ],
+  "para": [
+   "repair person"
+  ],
+  "ant": "",
+  "tip": "b는 묵음이다('플러머'). 배관 설비는 불가산명사 plumbing으로 'plumbing problem'처럼 쓴다.",
+  "q": {
+   "s": "The water heater is broken, so the building manager has called a ------- to repair it.",
+   "o": [
+    "plumbing",
+    "plumber",
+    "architect",
+    "realtor"
+   ],
+   "a": 1,
+   "k": "온수기를 수리하러 부르는 사람은 '배관공'이므로 plumber가 정답. plumbing은 배관 설비를 뜻하는 불가산명사이고, architect와 realtor는 수리하는 사람이 아니다."
+  }
+ },
+ {
+  "w": "electrician",
+  "pos": "n",
+  "m": [
+   "전기 기사"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "An *electrician* is coming this afternoon to repair the lights in the hallway.",
+  "exKo": "오늘 오후에 전기 기사가 와서 복도 조명을 수리할 것이다.",
+  "col": [
+   {
+    "e": "licensed electrician",
+    "k": "면허를 소지한 전기 기사"
+   },
+   {
+    "e": "hire an electrician",
+    "k": "전기 기사를 고용하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "electrical",
+    "pos": "adj",
+    "m": "전기의"
+   },
+   {
+    "w": "electricity",
+    "pos": "n",
+    "m": "전기"
+   }
+  ],
+  "para": [
+   "technician"
+  ],
+  "ant": "",
+  "tip": "사람명사 electrician, 명사 electricity(전기), 형용사 electrical/electric의 품사 구별이 출제된다.",
+  "q": {
+   "s": "A licensed ------- will inspect the building's wiring before the new tenants move in.",
+   "o": [
+    "electricity",
+    "electrical",
+    "electrify",
+    "electrician"
+   ],
+   "a": 3,
+   "k": "관사 A와 형용사 licensed 뒤에서 점검하는 주체인 사람명사가 필요하므로 electrician이 정답."
+  }
+ },
+ {
+  "w": "leak",
+  "pos": "n",
+  "m": [
+   "누수, 새는 곳",
+   "누출"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Please report any water *leaks* to the maintenance office right away.",
+  "exKo": "누수가 있으면 즉시 관리 사무소에 알리기 바란다.",
+  "col": [
+   {
+    "e": "water leak",
+    "k": "누수"
+   },
+   {
+    "e": "fix a leak",
+    "k": "새는 곳을 고치다"
+   },
+   {
+    "e": "gas leak",
+    "k": "가스 누출"
+   }
+  ],
+  "der": [
+   {
+    "w": "leaky",
+    "pos": "adj",
+    "m": "새는"
+   },
+   {
+    "w": "leakage",
+    "pos": "n",
+    "m": "누출(량)"
+   }
+  ],
+  "para": [
+   "drip"
+  ],
+  "ant": "",
+  "tip": "명사·동사 모두 쓰이며 'The roof is leaking'처럼 자동사로도 쓴다. Part 3에서 배관공을 부르는 이유로 자주 나온다.",
+  "q": {
+   "s": "A plumber has been called to repair a ------- in the ceiling of the third-floor conference room.",
+   "o": [
+    "leaky",
+    "leaked",
+    "leak",
+    "leaking"
+   ],
+   "a": 2,
+   "k": "관사 a 뒤 repair의 목적어 자리이므로 명사 leak이 정답. leaky는 형용사, leaked와 leaking은 분사다."
+  }
+ },
+ {
+  "w": "move in",
+  "pos": "phr",
+  "m": [
+   "입주하다, 이사 들어오다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The new tenants will *move in* on the first of next month.",
+  "exKo": "새 세입자들은 다음 달 1일에 입주할 것이다.",
+  "col": [
+   {
+    "e": "move into",
+    "k": "~으로 이사 들어가다"
+   },
+   {
+    "e": "move-in date",
+    "k": "입주일"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "move out",
+  "tip": "장소가 뒤에 오면 'move into + 장소'로 쓴다. 'move-in date(입주일)'처럼 명사 수식어로도 쓰인다.",
+  "q": {
+   "s": "The apartment will be ready for tenants to ------- by March 1.",
+   "o": [
+    "move out",
+    "move on",
+    "move in",
+    "move up"
+   ],
+   "a": 2,
+   "k": "아파트가 준비되면 세입자가 '입주'하는 것이므로 move in이 정답. move out(이사 나가다)은 준비 완료와 논리적으로 맞지 않는다."
+  }
+ },
+ {
+  "w": "vacant",
+  "pos": "adj",
+  "m": [
+   "비어 있는",
+   "공석인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *vacant* store on Main Street will soon become a bakery.",
+  "exKo": "메인 가의 빈 상점은 곧 빵집이 될 것이다.",
+  "col": [
+   {
+    "e": "vacant lot",
+    "k": "공터"
+   },
+   {
+    "e": "vacant position",
+    "k": "공석"
+   }
+  ],
+  "der": [
+   {
+    "w": "vacancy",
+    "pos": "n",
+    "m": "빈방, 공석"
+   },
+   {
+    "w": "vacate",
+    "pos": "v",
+    "m": "비우다"
+   }
+  ],
+  "para": [
+   "empty",
+   "unoccupied",
+   "available"
+  ],
+  "ant": "occupied",
+  "tip": "형용사 vacant와 명사 vacancy(No vacancies: 빈방 없음)의 품사 문제가 나오며, 'vacant position(공석)'처럼 일자리에도 쓴다.",
+  "q": {
+   "s": "The office on the third floor has been ------- since the law firm moved out in January.",
+   "o": [
+    "vacancy",
+    "vacant",
+    "vacate",
+    "vacantly"
+   ],
+   "a": 1,
+   "k": "has been 뒤 주격 보어 자리이므로 형용사 vacant가 정답. vacancy는 명사, vacate는 동사, vacantly는 부사다."
+  }
+ },
+ {
+  "w": "premises",
+  "pos": "n",
+  "m": [
+   "(건물을 포함한) 부지, 구내"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Smoking is not permitted anywhere on the company *premises*.",
+  "exKo": "회사 구내 어디에서도 흡연은 허용되지 않는다.",
+  "col": [
+   {
+    "e": "on the premises",
+    "k": "구내에서"
+   },
+   {
+    "e": "off the premises",
+    "k": "구외에서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "property",
+   "grounds",
+   "facility"
+  ],
+  "ant": "",
+  "tip": "이 뜻으로는 항상 복수형으로 쓰며 'on the premises(구내에서)'가 공지문 빈출 표현이다. 단수 premise는 '전제'라는 다른 뜻이다.",
+  "q": {
+   "s": "Visitors must wear identification badges at all times while on the -------.",
+   "o": [
+    "premise",
+    "promises",
+    "premises",
+    "precision"
+   ],
+   "a": 2,
+   "k": "'on the premises(구내에서)'는 복수형으로 쓰는 고정 표현이므로 premises가 정답. 단수 premise는 '전제'라는 뜻이다."
+  }
+ },
+ {
+  "w": "adjacent",
+  "pos": "adj",
+  "m": [
+   "인접한, 바로 옆의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The parking garage is *adjacent* to the main office building.",
+  "exKo": "주차 건물은 본사 건물 바로 옆에 있다.",
+  "col": [
+   {
+    "e": "adjacent to",
+    "k": "~에 인접한"
+   },
+   {
+    "e": "adjacent building",
+    "k": "인접 건물"
+   }
+  ],
+  "der": [],
+  "para": [
+   "next to",
+   "beside",
+   "neighboring"
+  ],
+  "ant": "",
+  "tip": "전치사 to와 짝을 이루어 'be adjacent to'로 쓰며, Part 7에서 next to, beside로 패러프레이즈된다.",
+  "q": {
+   "s": "The hotel is conveniently located ------- to the convention center.",
+   "o": [
+    "vacant",
+    "residential",
+    "adjacent",
+    "spacious"
+   ],
+   "a": 2,
+   "k": "전치사 to와 함께 '~에 인접한'이라는 위치를 나타내는 형용사는 adjacent이므로 정답. vacant, residential, spacious는 to와 결합해 위치를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "located",
+  "pos": "adj",
+  "m": [
+   "~에 위치한"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Our new branch is *located* on the corner of Pine Street and Fourth Avenue.",
+  "exKo": "우리 새 지점은 파인 가와 4번가가 만나는 모퉁이에 있다.",
+  "col": [
+   {
+    "e": "be located in",
+    "k": "~에 위치하다"
+   },
+   {
+    "e": "conveniently located",
+    "k": "편리한 곳에 위치한"
+   },
+   {
+    "e": "centrally located",
+    "k": "중심부에 위치한"
+   }
+  ],
+  "der": [
+   {
+    "w": "locate",
+    "pos": "v",
+    "m": "찾아내다, 위치시키다"
+   },
+   {
+    "w": "location",
+    "pos": "n",
+    "m": "위치, 장소"
+   }
+  ],
+  "para": [
+   "situated",
+   "found"
+  ],
+  "ant": "",
+  "tip": "'be located in/at/on'으로 위치를 나타내며 'conveniently/centrally located'처럼 부사 수식이 빈출이다. 동사 locate는 '(위치를) 찾아내다'라는 뜻도 있다.",
+  "q": {
+   "s": "Our new headquarters is ------- in the heart of the financial district, near Central Station.",
+   "o": [
+    "location",
+    "located",
+    "locating",
+    "locates"
+   ],
+   "a": 1,
+   "k": "본사가 '위치해 있다'는 의미이므로 be동사 뒤에 과거분사 located가 와야 한다. location은 명사라 보어로 쓰면 '본사 = 위치'가 되어 뜻이 맞지 않는다."
+  }
+ },
+ {
+  "w": "neighborhood",
+  "pos": "n",
+  "m": [
+   "동네, 인근 지역"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Several new restaurants have opened in the *neighborhood* this year.",
+  "exKo": "올해 그 동네에 새 식당이 여러 곳 문을 열었다.",
+  "col": [
+   {
+    "e": "residential neighborhood",
+    "k": "주택가"
+   },
+   {
+    "e": "in the neighborhood",
+    "k": "근처에"
+   }
+  ],
+  "der": [
+   {
+    "w": "neighboring",
+    "pos": "adj",
+    "m": "인근의, 이웃의"
+   },
+   {
+    "w": "neighbor",
+    "pos": "n",
+    "m": "이웃"
+   }
+  ],
+  "para": [
+   "area",
+   "community",
+   "district"
+  ],
+  "ant": "",
+  "tip": "'in the neighborhood of + 숫자'는 '약 ~'라는 뜻으로도 쓰인다. 형용사 neighboring(neighboring towns: 인근 도시들)과 구별할 것.",
+  "q": {
+   "s": "The bakery has become popular with residents of the surrounding -------.",
+   "o": [
+    "neighboring",
+    "neighborly",
+    "neighborhood",
+    "neighbored"
+   ],
+   "a": 2,
+   "k": "관사 the와 형용사 surrounding 뒤 명사 자리이므로 neighborhood가 정답. neighboring과 neighborly는 형용사다."
+  }
+ },
+ {
+  "w": "district",
+  "pos": "n",
+  "m": [
+   "지구, 구역"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Our new office is in the financial *district*, close to several major banks.",
+  "exKo": "우리 새 사무실은 주요 은행 여러 곳과 가까운 금융가에 있다.",
+  "col": [
+   {
+    "e": "business district",
+    "k": "상업 지구"
+   },
+   {
+    "e": "financial district",
+    "k": "금융가"
+   },
+   {
+    "e": "shopping district",
+    "k": "쇼핑가"
+   }
+  ],
+  "der": [],
+  "para": [
+   "area",
+   "zone",
+   "quarter"
+  ],
+  "ant": "",
+  "tip": "'business/shopping/financial district'처럼 앞의 명사와 함께 특정 목적의 구역을 나타낸다. Part 7에서 area로 바꿔 쓴다.",
+  "q": {
+   "s": "Many tech companies have moved their headquarters to the city's new business -------.",
+   "o": [
+    "distinction",
+    "distribution",
+    "distance",
+    "district"
+   ],
+   "a": 3,
+   "k": "본사를 옮겨 간 장소인 '상업 지구'를 뜻하는 business district가 맞으므로 district가 정답. distinction, distribution, distance는 장소를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "demolish",
+  "pos": "v",
+  "m": [
+   "(건물을) 철거하다, 허물다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The old warehouse will be *demolished* to make room for a parking garage.",
+  "exKo": "오래된 창고는 주차 건물을 지을 공간을 마련하기 위해 철거될 것이다.",
+  "col": [
+   {
+    "e": "demolish a building",
+    "k": "건물을 철거하다"
+   },
+   {
+    "e": "be scheduled to be demolished",
+    "k": "철거될 예정이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "demolition",
+    "pos": "n",
+    "m": "철거"
+   }
+  ],
+  "para": [
+   "tear down",
+   "knock down"
+  ],
+  "ant": "construct",
+  "tip": "명사형 demolition(철거)도 'demolition work'처럼 자주 나오며, Part 7에서 tear down으로 패러프레이즈된다.",
+  "q": {
+   "s": "The city plans to ------- the abandoned factory and build a public park on the site.",
+   "o": [
+    "demolish",
+    "demonstrate",
+    "install",
+    "occupy"
+   ],
+   "a": 0,
+   "k": "공장 부지에 공원을 지으려면 먼저 공장을 '철거'해야 하므로 demolish가 정답. demonstrate(시연하다), install(설치하다), occupy(차지하다)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "under construction",
+  "pos": "phr",
+  "m": [
+   "공사 중인"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "The east entrance is *under construction*, so please use the west doors.",
+  "exKo": "동쪽 출입구가 공사 중이므로 서쪽 문을 이용하기 바란다.",
+  "col": [
+   {
+    "e": "currently under construction",
+    "k": "현재 공사 중인"
+   },
+   {
+    "e": "be still under construction",
+    "k": "아직 공사 중이다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "being built"
+  ],
+  "ant": "",
+  "tip": "'under + 명사'로 진행 중인 상태를 나타내는 표현(under repair, under review)과 함께 정리해 두자. Part 1에서 'A building is under construction'으로 나온다.",
+  "q": {
+   "s": "The new train station is still -------, but it is expected to open next spring.",
+   "o": [
+    "on vacation",
+    "in charge",
+    "out of stock",
+    "under construction"
+   ],
+   "a": 3,
+   "k": "아직 완공되지 않았지만 내년 봄 개장 예정이라는 문맥이므로 '공사 중인'을 뜻하는 under construction이 정답."
+  }
+ },
+ {
+  "w": "convenient",
+  "pos": "adj",
+  "m": [
+   "편리한, 가까워서 이용하기 좋은"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hotel's *convenient* location makes it popular with business travelers.",
+  "exKo": "그 호텔은 위치가 편리해 출장객들에게 인기가 많다.",
+  "col": [
+   {
+    "e": "convenient location",
+    "k": "편리한 위치"
+   },
+   {
+    "e": "convenient for",
+    "k": "~에게 편리한"
+   },
+   {
+    "e": "at your convenience",
+    "k": "편하실 때"
+   }
+  ],
+  "der": [
+   {
+    "w": "convenience",
+    "pos": "n",
+    "m": "편의, 편리"
+   },
+   {
+    "w": "conveniently",
+    "pos": "adv",
+    "m": "편리하게"
+   }
+  ],
+  "para": [
+   "accessible",
+   "handy"
+  ],
+  "ant": "inconvenient",
+  "tip": "사람을 주어로 쓰지 않는다(I am convenient (X) / Is it convenient for you? (O)). 부사 conveniently(conveniently located)와 명사 convenience의 품사 문제가 나온다.",
+  "q": {
+   "s": "Please let us know which time is most ------- for you to attend the orientation.",
+   "o": [
+    "convenience",
+    "convenient",
+    "conveniently",
+    "convene"
+   ],
+   "a": 1,
+   "k": "be동사 is 뒤 보어 자리이며 most의 수식을 받으므로 형용사 convenient가 정답."
+  }
+ },
+ {
+  "w": "landscaping",
+  "pos": "n",
+  "m": [
+   "조경 (관리)"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The monthly maintenance fee covers *landscaping* and snow removal.",
+  "exKo": "월 관리비에는 조경 관리와 제설 작업이 포함된다.",
+  "col": [
+   {
+    "e": "landscaping service",
+    "k": "조경 서비스"
+   },
+   {
+    "e": "landscaping company",
+    "k": "조경 회사"
+   }
+  ],
+  "der": [
+   {
+    "w": "landscape",
+    "pos": "n",
+    "m": "풍경, 경관"
+   },
+   {
+    "w": "landscaper",
+    "pos": "n",
+    "m": "조경사"
+   }
+  ],
+  "para": [
+   "gardening",
+   "grounds maintenance"
+  ],
+  "ant": "",
+  "tip": "불가산명사로 'landscaping services'처럼 서비스 광고 지문에 나오며 gardening, lawn care로 패러프레이즈된다.",
+  "q": {
+   "s": "The property management company handles all ------- for the office park, including mowing the lawns.",
+   "o": [
+    "landscaping",
+    "landscaped",
+    "landscaper",
+    "landscapes"
+   ],
+   "a": 0,
+   "k": "잔디 깎기를 포함하는 '조경 관리' 업무를 뜻하는 불가산명사가 필요하므로 landscaping이 정답. landscaper는 사람이고, landscapes는 '풍경들'이라 뜻이 맞지 않는다."
+  }
+ }
+]

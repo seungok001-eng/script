@@ -1,0 +1,2078 @@
+[
+ {
+  "w": "corporation",
+  "pos": "n",
+  "m": [
+   "기업, 회사",
+   "법인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *corporation* employs more than 5,000 people in twelve countries.",
+  "exKo": "그 기업은 12개국에서 5,000명 이상을 고용하고 있다.",
+  "col": [
+   {
+    "e": "multinational corporation",
+    "k": "다국적 기업"
+   },
+   {
+    "e": "a large corporation",
+    "k": "대기업"
+   }
+  ],
+  "der": [
+   {
+    "w": "corporate",
+    "pos": "adj",
+    "m": "기업의, 회사의"
+   },
+   {
+    "w": "incorporate",
+    "pos": "v",
+    "m": "포함하다, 법인으로 만들다"
+   }
+  ],
+  "para": [
+   "company",
+   "firm"
+  ],
+  "ant": "",
+  "tip": "명사 corporation과 형용사 corporate를 구분하는 문제가 나온다. corporate는 corporate policy, corporate headquarters처럼 명사 앞에서 수식한다.",
+  "q": {
+   "s": "Mr. Tanaka has worked for the same ------- since he graduated from university.",
+   "o": [
+    "corporate",
+    "corporation",
+    "corporately",
+    "incorporate"
+   ],
+   "a": 1,
+   "k": "한정사 the same 뒤는 명사 자리이므로 corporation이 정답. corporate는 형용사라 단독으로 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "headquarters",
+  "pos": "n",
+  "m": [
+   "본사",
+   "본부"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The company will move its *headquarters* to Singapore next spring.",
+  "exKo": "그 회사는 내년 봄 본사를 싱가포르로 옮길 예정이다.",
+  "col": [
+   {
+    "e": "corporate headquarters",
+    "k": "회사 본사"
+   },
+   {
+    "e": "be headquartered in",
+    "k": "~에 본사를 두다"
+   }
+  ],
+  "der": [
+   {
+    "w": "headquartered",
+    "pos": "adj",
+    "m": "본사를 둔"
+   }
+  ],
+  "para": [
+   "head office",
+   "main office"
+  ],
+  "ant": "branch",
+  "tip": "headquarters는 -s로 끝나지만 단수·복수 취급이 모두 가능하다. 'be headquartered in + 지역'(~에 본사를 두다) 형태로도 자주 나온다.",
+  "q": {
+   "s": "The firm's ------- is located in Boston, where the CEO and most senior executives work.",
+   "o": [
+    "headquarters",
+    "branch",
+    "franchise",
+    "dividend"
+   ],
+   "a": 0,
+   "k": "CEO와 고위 임원들이 근무하는 곳은 본사이므로 headquarters가 정답. branch(지점)는 본사가 아닌 하위 사무소다."
+  }
+ },
+ {
+  "w": "branch",
+  "pos": "n",
+  "m": [
+   "지점, 지사",
+   "분야"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The bank plans to open three new *branches* in the downtown area this year.",
+  "exKo": "그 은행은 올해 시내에 지점 세 곳을 새로 열 계획이다.",
+  "col": [
+   {
+    "e": "branch office",
+    "k": "지점 사무소"
+   },
+   {
+    "e": "branch manager",
+    "k": "지점장"
+   },
+   {
+    "e": "open a branch",
+    "k": "지점을 열다"
+   }
+  ],
+  "der": [
+   {
+    "w": "branch out",
+    "pos": "v",
+    "m": "(사업을) 확장하다, 진출하다"
+   }
+  ],
+  "para": [
+   "office",
+   "location"
+  ],
+  "ant": "headquarters",
+  "tip": "branch(지점)는 Part 3·4에서 'the Main Street branch'처럼 지명과 함께 들린다. branch out into(~로 사업을 넓히다)도 함께 알아 두자.",
+  "q": {
+   "s": "Customers can now pick up their online orders at any of our 25 ------- nationwide.",
+   "o": [
+    "stakes",
+    "ventures",
+    "branches",
+    "dividends"
+   ],
+   "a": 2,
+   "k": "전국 25곳에서 주문품을 찾을 수 있는 장소는 지점이므로 branches가 정답. stakes(지분), ventures(사업), dividends(배당금)는 장소가 아니다."
+  }
+ },
+ {
+  "w": "subsidiary",
+  "pos": "n",
+  "m": [
+   "자회사"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Lumina Foods became a wholly owned *subsidiary* of Grant Holdings in 2019.",
+  "exKo": "루미나 푸드는 2019년 그랜트 홀딩스의 전액 출자 자회사가 되었다.",
+  "col": [
+   {
+    "e": "wholly owned subsidiary",
+    "k": "전액 출자 자회사"
+   },
+   {
+    "e": "overseas subsidiary",
+    "k": "해외 자회사"
+   },
+   {
+    "e": "subsidiary of",
+    "k": "~의 자회사"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "parent company",
+  "tip": "subsidiary(자회사)의 반대말은 parent company(모회사). Part 7에서 'A is owned by B'로 패러프레이징되며, 형용사로 '부수적인'의 뜻도 있다.",
+  "q": {
+   "s": "Marlow Textiles plans to sell its Canadian ------- in order to focus on its domestic market.",
+   "o": [
+    "chairperson",
+    "dividend",
+    "subsidiary",
+    "investor"
+   ],
+   "a": 2,
+   "k": "국내 시장에 집중하기 위해 매각할 대상은 캐나다 자회사이므로 subsidiary가 정답. 사람(chairperson, investor)이나 배당금은 매각 대상으로 어색하다."
+  }
+ },
+ {
+  "w": "affiliate",
+  "pos": "n",
+  "m": [
+   "계열사, 제휴사",
+   "제휴하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hotel chain shares booking data with its *affiliates* across Europe.",
+  "exKo": "그 호텔 체인은 유럽 전역의 제휴사들과 예약 데이터를 공유한다.",
+  "col": [
+   {
+    "e": "be affiliated with",
+    "k": "~와 제휴하다, ~에 소속되다"
+   },
+   {
+    "e": "local affiliate",
+    "k": "지역 계열사"
+   }
+  ],
+  "der": [
+   {
+    "w": "affiliated",
+    "pos": "adj",
+    "m": "제휴한, 소속된"
+   },
+   {
+    "w": "affiliation",
+    "pos": "n",
+    "m": "제휴, 소속"
+   }
+  ],
+  "para": [
+   "partner",
+   "associate company"
+  ],
+  "ant": "",
+  "tip": "be affiliated with(~와 제휴하다, ~에 소속되다)의 형태와 전치사 with를 묻는 문제가 자주 나온다. 명사로는 '계열사', 동사로는 '제휴시키다'.",
+  "q": {
+   "s": "Dr. Moore is no longer ------- with Westbrook University Hospital.",
+   "o": [
+    "affiliate",
+    "affiliated",
+    "affiliation",
+    "affiliating"
+   ],
+   "a": 1,
+   "k": "be동사 뒤에서 with와 함께 '~에 소속되다'를 나타내는 be affiliated with 구문이므로 affiliated가 정답."
+  }
+ },
+ {
+  "w": "merger",
+  "pos": "n",
+  "m": [
+   "합병"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *merger* of the two airlines is expected to be completed by June.",
+  "exKo": "두 항공사의 합병은 6월까지 마무리될 것으로 예상된다.",
+  "col": [
+   {
+    "e": "merger with",
+    "k": "~와의 합병"
+   },
+   {
+    "e": "mergers and acquisitions",
+    "k": "인수 합병(M&A)"
+   },
+   {
+    "e": "announce a merger",
+    "k": "합병을 발표하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "merge",
+    "pos": "v",
+    "m": "합병하다, 합치다"
+   }
+  ],
+  "para": [
+   "consolidation",
+   "combination"
+  ],
+  "ant": "",
+  "tip": "동사 merge(merge with ~와 합병하다)와 명사 merger의 품사 구분이 빈출이다. 'a merger between A and B' 구조도 함께 기억하자.",
+  "q": {
+   "s": "The proposed ------- between Halden Bank and Crest Financial still requires government approval.",
+   "o": [
+    "merge",
+    "merged",
+    "merger",
+    "merging"
+   ],
+   "a": 2,
+   "k": "관사 The와 분사 proposed 뒤는 명사 자리이므로 merger가 정답. merge는 동사, merged는 과거분사다."
+  }
+ },
+ {
+  "w": "acquire",
+  "pos": "v",
+  "m": [
+   "인수하다",
+   "획득하다, 습득하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Delmont Media *acquired* a small software company for $40 million last month.",
+  "exKo": "델몬트 미디어는 지난달 소규모 소프트웨어 회사를 4천만 달러에 인수했다.",
+  "col": [
+   {
+    "e": "acquire a company",
+    "k": "회사를 인수하다"
+   },
+   {
+    "e": "acquire skills",
+    "k": "기술을 습득하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "acquisition",
+    "pos": "n",
+    "m": "인수, 획득"
+   }
+  ],
+  "para": [
+   "buy",
+   "purchase",
+   "obtain"
+  ],
+  "ant": "sell",
+  "tip": "acquire는 타동사라 전치사 없이 목적어를 바로 취한다(acquire a company (O) / acquire of a company (X)). '기업 인수' 외에 '기술·경험을 습득하다'의 뜻으로도 출제된다.",
+  "q": {
+   "s": "Pellman Corporation hopes to ------- several smaller competitors over the next two years.",
+   "o": [
+    "establish",
+    "announce",
+    "diversify",
+    "acquire"
+   ],
+   "a": 3,
+   "k": "경쟁사 여러 곳을 목적어로 취해 '인수하다'가 되어야 하므로 acquire가 정답. establish(설립하다)는 이미 존재하는 경쟁사와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "acquisition",
+  "pos": "n",
+  "m": [
+   "인수, 매입",
+   "획득, 습득"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *acquisition* of Hartley Foods will make us the largest snack producer in the region.",
+  "exKo": "하틀리 푸드 인수로 우리는 이 지역 최대의 스낵 생산 업체가 될 것이다.",
+  "col": [
+   {
+    "e": "acquisition of",
+    "k": "~의 인수"
+   },
+   {
+    "e": "recent acquisition",
+    "k": "최근 인수(한 것)"
+   }
+  ],
+  "der": [
+   {
+    "w": "acquire",
+    "pos": "v",
+    "m": "인수하다, 획득하다"
+   }
+  ],
+  "para": [
+   "purchase",
+   "takeover",
+   "buyout"
+  ],
+  "ant": "",
+  "tip": "acquisition은 전치사 of와 짝을 이룬다. 박물관의 '신규 소장품', 회사의 '신규 영입 인력'처럼 '새로 얻은 것'의 의미로도 쓰인다.",
+  "q": {
+   "s": "The company's ------- of a rival firm doubled its market share.",
+   "o": [
+    "acquire",
+    "acquisition",
+    "acquiring",
+    "acquired"
+   ],
+   "a": 1,
+   "k": "소유격 The company's 뒤, 전치사 of 앞은 명사 자리이므로 acquisition이 정답. 동명사 acquiring은 of 없이 목적어를 바로 취해야 한다."
+  }
+ },
+ {
+  "w": "take over",
+  "pos": "phr",
+  "m": [
+   "인수하다",
+   "(업무를) 넘겨받다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Ms. Patel will *take over* as regional sales director when Mr. Cole retires.",
+  "exKo": "콜 씨가 은퇴하면 파텔 씨가 지역 영업 이사직을 이어받을 것이다.",
+  "col": [
+   {
+    "e": "take over a company",
+    "k": "회사를 인수하다"
+   },
+   {
+    "e": "take over as",
+    "k": "~로서 직무를 이어받다"
+   },
+   {
+    "e": "take over responsibility for",
+    "k": "~에 대한 책임을 넘겨받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "takeover",
+    "pos": "n",
+    "m": "인수, 경영권 장악"
+   }
+  ],
+  "para": [
+   "assume",
+   "acquire"
+  ],
+  "ant": "",
+  "tip": "명사는 붙여 쓴 takeover(인수)다. 'take over A's duties(A의 업무를 인계받다)'는 Part 3·4 대화에서 자주 들리는 표현이다.",
+  "q": {
+   "s": "While Mr. Reed is on medical leave, Ms. Kim will ------- his duties.",
+   "o": [
+    "take off",
+    "take after",
+    "take apart",
+    "take over"
+   ],
+   "a": 3,
+   "k": "휴가 중인 사람의 업무를 '넘겨받다'라는 의미이므로 take over가 정답. take after는 '닮다', take apart는 '분해하다'."
+  }
+ },
+ {
+  "w": "stake",
+  "pos": "n",
+  "m": [
+   "지분",
+   "이해관계"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The investment firm now holds a 30 percent *stake* in the electric vehicle maker.",
+  "exKo": "그 투자 회사는 현재 전기차 제조업체의 지분 30퍼센트를 보유하고 있다.",
+  "col": [
+   {
+    "e": "stake in",
+    "k": "~에 대한 지분"
+   },
+   {
+    "e": "majority stake",
+    "k": "과반 지분"
+   },
+   {
+    "e": "controlling stake",
+    "k": "경영권 지분"
+   }
+  ],
+  "der": [
+   {
+    "w": "stakeholder",
+    "pos": "n",
+    "m": "이해관계자"
+   }
+  ],
+  "para": [
+   "share",
+   "interest"
+  ],
+  "ant": "",
+  "tip": "stake는 전치사 in과 짝을 이룬다(a stake in the company). stakeholder(이해관계자)와 shareholder(주주)를 혼동하지 말자.",
+  "q": {
+   "s": "Trilon Group recently purchased a majority ------- in a local construction company.",
+   "o": [
+    "stake",
+    "capital",
+    "venture",
+    "dividend"
+   ],
+   "a": 0,
+   "k": "a majority ~ in 구조로 '과반 지분'을 뜻하는 stake가 정답. capital은 불가산명사라 a와 쓰기 어렵고 의미도 맞지 않는다."
+  }
+ },
+ {
+  "w": "shareholder",
+  "pos": "n",
+  "m": [
+   "주주"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Shareholders* will vote on the proposed merger at the annual meeting in May.",
+  "exKo": "주주들은 5월 연례 총회에서 합병안에 대해 투표할 것이다.",
+  "col": [
+   {
+    "e": "shareholders' meeting",
+    "k": "주주 총회"
+   },
+   {
+    "e": "major shareholder",
+    "k": "대주주"
+   }
+  ],
+  "der": [
+   {
+    "w": "share",
+    "pos": "n",
+    "m": "주식, 몫"
+   }
+  ],
+  "para": [
+   "stockholder",
+   "investor"
+  ],
+  "ant": "",
+  "tip": "사람명사 shareholder(주주)와 사물명사 share(주식)를 구분하는 문제가 나온다. 이메일을 받거나 투표하는 주체라면 shareholder다.",
+  "q": {
+   "s": "The company sent its quarterly earnings report to all ------- by e-mail.",
+   "o": [
+    "shares",
+    "shareholders",
+    "sharing",
+    "shared"
+   ],
+   "a": 1,
+   "k": "이메일로 보고서를 받는 대상은 사람이므로 shareholders가 정답. shares(주식)는 사물이라 보고서를 받을 수 없다."
+  }
+ },
+ {
+  "w": "invest",
+  "pos": "v",
+  "m": [
+   "투자하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company plans to *invest* heavily in renewable energy over the next decade.",
+  "exKo": "그 회사는 향후 10년간 재생 에너지에 대규모로 투자할 계획이다.",
+  "col": [
+   {
+    "e": "invest in",
+    "k": "~에 투자하다"
+   },
+   {
+    "e": "invest A in B",
+    "k": "A를 B에 투자하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "investment",
+    "pos": "n",
+    "m": "투자"
+   },
+   {
+    "w": "investor",
+    "pos": "n",
+    "m": "투자자"
+   }
+  ],
+  "para": [
+   "put money into",
+   "fund"
+  ],
+  "ant": "",
+  "tip": "invest는 전치사 in과 짝을 이룬다(invest A in B). to 뒤 동사 자리면 invest, 관사 뒤 명사 자리면 investment를 고른다.",
+  "q": {
+   "s": "Fernhill Capital decided to ------- $2 million in the startup's new technology.",
+   "o": [
+    "invest",
+    "investment",
+    "investor",
+    "investing"
+   ],
+   "a": 0,
+   "k": "decided to 뒤에는 동사원형이 오므로 invest가 정답. investment와 investor는 명사다."
+  }
+ },
+ {
+  "w": "investor",
+  "pos": "n",
+  "m": [
+   "투자자"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The startup presented its business plan to a group of potential *investors*.",
+  "exKo": "그 스타트업은 잠재 투자자들에게 사업 계획을 발표했다.",
+  "col": [
+   {
+    "e": "potential investors",
+    "k": "잠재 투자자"
+   },
+   {
+    "e": "attract investors",
+    "k": "투자자를 유치하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "invest",
+    "pos": "v",
+    "m": "투자하다"
+   },
+   {
+    "w": "investment",
+    "pos": "n",
+    "m": "투자"
+   }
+  ],
+  "para": [
+   "backer",
+   "financier"
+  ],
+  "ant": "",
+  "tip": "사람명사 investor와 행위·사물명사 investment를 구분하는 문제가 빈출이다. 관심을 갖거나 결정을 내리는 주체라면 사람명사를 고른다.",
+  "q": {
+   "s": "The company's strong earnings report has caught the attention of several foreign -------.",
+   "o": [
+    "invest",
+    "invested",
+    "investments",
+    "investors"
+   ],
+   "a": 3,
+   "k": "관심(attention)을 가질 수 있는 주체는 사람이므로 investors가 정답. investments(투자)는 사물이라 의미상 맞지 않는다."
+  }
+ },
+ {
+  "w": "dividend",
+  "pos": "n",
+  "m": [
+   "배당금"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The board approved a quarterly *dividend* of 50 cents per share.",
+  "exKo": "이사회는 주당 50센트의 분기 배당금을 승인했다.",
+  "col": [
+   {
+    "e": "pay a dividend",
+    "k": "배당금을 지급하다"
+   },
+   {
+    "e": "dividend per share",
+    "k": "주당 배당금"
+   }
+  ],
+  "der": [],
+  "para": [
+   "payout"
+  ],
+  "ant": "",
+  "tip": "pay/declare a dividend(배당금을 지급/선언하다)로 쓰이며 per share(주당)와 자주 함께 나온다. 가산명사라 a dividend, dividends로 쓴다.",
+  "q": {
+   "s": "Despite the drop in profits, the company will continue to pay a ------- to its shareholders.",
+   "o": [
+    "dividend",
+    "franchise",
+    "stake",
+    "venture"
+   ],
+   "a": 0,
+   "k": "회사가 주주에게 지급하는 것은 배당금이므로 dividend가 정답. franchise(가맹점), stake(지분), venture(사업)는 pay의 목적어로 맞지 않는다."
+  }
+ },
+ {
+  "w": "capital",
+  "pos": "n",
+  "m": [
+   "자본(금)",
+   "수도"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company needs to raise additional *capital* to build a second factory.",
+  "exKo": "그 회사는 두 번째 공장을 짓기 위해 추가 자본을 조달해야 한다.",
+  "col": [
+   {
+    "e": "raise capital",
+    "k": "자본을 조달하다"
+   },
+   {
+    "e": "venture capital",
+    "k": "벤처 자본"
+   },
+   {
+    "e": "capital investment",
+    "k": "설비 투자"
+   }
+  ],
+  "der": [
+   {
+    "w": "capitalize",
+    "pos": "v",
+    "m": "(on과 함께) ~을 기회로 활용하다"
+   }
+  ],
+  "para": [
+   "funds",
+   "money"
+  ],
+  "ant": "",
+  "tip": "'자본'의 의미일 때는 불가산명사로 관사 a를 붙이지 않는다. capitalize on(~을 기회로 활용하다)도 Part 5에 자주 나온다.",
+  "q": {
+   "s": "To expand into overseas markets, Bexley Tools must first raise more -------.",
+   "o": [
+    "capital",
+    "dividend",
+    "shareholder",
+    "stake"
+   ],
+   "a": 0,
+   "k": "raise more ~ 구조로 '더 많은 자본을 조달하다'가 되어야 하므로 불가산명사 capital이 정답. dividend, shareholder, stake는 가산명사라 단수형으로 more 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "venture",
+  "pos": "n",
+  "m": [
+   "(모험적인) 사업, 벤처"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The two companies launched a new *venture* to develop smart home devices.",
+  "exKo": "두 회사는 스마트 홈 기기를 개발하기 위해 새로운 사업을 시작했다.",
+  "col": [
+   {
+    "e": "business venture",
+    "k": "사업"
+   },
+   {
+    "e": "new venture",
+    "k": "신규 사업"
+   },
+   {
+    "e": "venture capital",
+    "k": "벤처 자본"
+   }
+  ],
+  "der": [
+   {
+    "w": "venture capitalist",
+    "pos": "n",
+    "m": "벤처 투자가"
+   }
+  ],
+  "para": [
+   "enterprise",
+   "undertaking",
+   "project"
+  ],
+  "ant": "",
+  "tip": "'위험이 따르는 사업'이라는 뉘앙스로 risky venture, business venture가 자주 쓰인다. venture capital(벤처 자본), joint venture(합작 투자)도 함께 출제된다.",
+  "q": {
+   "s": "Opening a restaurant can be a risky ------- without a clear business plan.",
+   "o": [
+    "capital",
+    "dividend",
+    "venture",
+    "headquarters"
+   ],
+   "a": 2,
+   "k": "식당 개업이 '위험한 사업'이 될 수 있다는 의미이므로 venture가 정답. capital은 불가산명사로 a와 쓸 수 없고 의미도 맞지 않는다."
+  }
+ },
+ {
+  "w": "startup",
+  "pos": "n",
+  "m": [
+   "신생 기업, 스타트업"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Many tech *startups* rent desks in shared office spaces to save money.",
+  "exKo": "많은 기술 신생 기업이 비용을 아끼기 위해 공유 오피스에서 책상을 임대한다.",
+  "col": [
+   {
+    "e": "tech startup",
+    "k": "기술 신생 기업"
+   },
+   {
+    "e": "startup costs",
+    "k": "창업 비용"
+   }
+  ],
+  "der": [
+   {
+    "w": "start up",
+    "pos": "v",
+    "m": "(사업을) 시작하다, 창업하다"
+   }
+  ],
+  "para": [
+   "new business",
+   "new company"
+  ],
+  "ant": "",
+  "tip": "startup costs(창업 비용)처럼 명사 앞에서 수식어로도 쓰인다. 동사구는 띄어 쓴 start up (a business)이다.",
+  "q": {
+   "s": "The founders of the ------- worked out of a small garage before moving into an office.",
+   "o": [
+    "merger",
+    "stake",
+    "dividend",
+    "startup"
+   ],
+   "a": 3,
+   "k": "창업자(founders)가 차고에서 일하다 사무실로 옮긴 회사이므로 startup이 정답. merger, stake, dividend에는 창업자가 있을 수 없다."
+  }
+ },
+ {
+  "w": "found",
+  "pos": "v",
+  "m": [
+   "설립하다, 창립하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Lopez *founded* the consulting firm in 2008 with just two employees.",
+  "exKo": "로페즈 씨는 2008년 단 두 명의 직원으로 그 컨설팅 회사를 설립했다.",
+  "col": [
+   {
+    "e": "found a company",
+    "k": "회사를 설립하다"
+   },
+   {
+    "e": "be founded in + 연도",
+    "k": "~년에 설립되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "founder",
+    "pos": "n",
+    "m": "설립자, 창업자"
+   },
+   {
+    "w": "foundation",
+    "pos": "n",
+    "m": "설립, 재단, 기초"
+   }
+  ],
+  "para": [
+   "establish",
+   "set up",
+   "start"
+  ],
+  "ant": "",
+  "tip": "found(설립하다)-founded-founded는 find(찾다)의 과거형 found와 혼동하기 쉽다. 'was founded in 1985'처럼 수동태로 자주 출제된다.",
+  "q": {
+   "s": "Torvan Industries was ------- in 1962 as a small family-owned business.",
+   "o": [
+    "founder",
+    "founding",
+    "founded",
+    "foundation"
+   ],
+   "a": 2,
+   "k": "회사가 '설립되었다'는 수동태(be + p.p.)이므로 founded가 정답. founding은 능동 진행형이 되어 목적어가 필요하다."
+  }
+ },
+ {
+  "w": "establish",
+  "pos": "v",
+  "m": [
+   "설립하다",
+   "(관계·제도를) 확립하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company *established* a research center in Austin to support its growth.",
+  "exKo": "그 회사는 성장을 뒷받침하기 위해 오스틴에 연구 센터를 설립했다.",
+  "col": [
+   {
+    "e": "establish a company",
+    "k": "회사를 설립하다"
+   },
+   {
+    "e": "establish a relationship",
+    "k": "관계를 맺다"
+   },
+   {
+    "e": "well-established",
+    "k": "자리를 잡은, 정평이 난"
+   }
+  ],
+  "der": [
+   {
+    "w": "establishment",
+    "pos": "n",
+    "m": "설립, 시설·업소"
+   },
+   {
+    "w": "established",
+    "pos": "adj",
+    "m": "확립된, 인정받는"
+   }
+  ],
+  "para": [
+   "set up",
+   "found",
+   "create"
+  ],
+  "ant": "",
+  "tip": "명사 establishment는 '설립' 외에 '업소, 시설'(a dining establishment)의 뜻으로 Part 7에 자주 나온다.",
+  "q": {
+   "s": "The two firms hope to ------- a long-term partnership that benefits both companies.",
+   "o": [
+    "downsize",
+    "establish",
+    "invest",
+    "resign"
+   ],
+   "a": 1,
+   "k": "'장기적인 협력 관계를 맺다'라는 의미이므로 establish가 정답. invest는 in이 필요하고, downsize·resign은 partnership과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "expansion",
+  "pos": "n",
+  "m": [
+   "확장, 확대"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *expansion* of the factory will create about 300 new jobs.",
+  "exKo": "공장 확장으로 약 300개의 새로운 일자리가 생길 것이다.",
+  "col": [
+   {
+    "e": "expansion into",
+    "k": "~로의 진출(확장)"
+   },
+   {
+    "e": "business expansion",
+    "k": "사업 확장"
+   },
+   {
+    "e": "expansion plans",
+    "k": "확장 계획"
+   }
+  ],
+  "der": [
+   {
+    "w": "expand",
+    "pos": "v",
+    "m": "확장하다"
+   },
+   {
+    "w": "expansive",
+    "pos": "adj",
+    "m": "광범위한, 넓은"
+   }
+  ],
+  "para": [
+   "growth",
+   "enlargement",
+   "extension"
+  ],
+  "ant": "reduction",
+  "tip": "expansion into(새 시장으로의 진출)의 전치사 into에 주의하자. 관사 뒤 명사 자리면 expansion, to 뒤 동사 자리면 expand를 고른다.",
+  "q": {
+   "s": "The board approved the ------- of the company's distribution network into South America.",
+   "o": [
+    "expand",
+    "expansive",
+    "expansion",
+    "expanded"
+   ],
+   "a": 2,
+   "k": "관사 the와 전치사 of 사이는 명사 자리이므로 expansion이 정답. expand는 동사, expansive는 형용사다."
+  }
+ },
+ {
+  "w": "restructure",
+  "pos": "v",
+  "m": [
+   "구조 조정하다, 재편하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company *restructured* its sales department to reduce costs and improve efficiency.",
+  "exKo": "그 회사는 비용 절감과 효율성 향상을 위해 영업 부서를 재편했다.",
+  "col": [
+   {
+    "e": "restructure a company",
+    "k": "회사를 구조 조정하다"
+   },
+   {
+    "e": "restructure debt",
+    "k": "부채를 재조정하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "restructuring",
+    "pos": "n",
+    "m": "구조 조정"
+   }
+  ],
+  "para": [
+   "reorganize",
+   "overhaul"
+  ],
+  "ant": "",
+  "tip": "명사형 restructuring(구조 조정)이 Part 7 기사에 자주 나오며 reorganization으로 패러프레이징된다.",
+  "q": {
+   "s": "After two years of losses, Brightline Media decided to ------- its operations and close several offices.",
+   "o": [
+    "invest",
+    "found",
+    "acquire",
+    "restructure"
+   ],
+   "a": 3,
+   "k": "적자 끝에 사업을 '재편하고' 사무실을 닫기로 한 것이므로 restructure가 정답. 자사의 사업을 found(설립)하거나 acquire(인수)할 수는 없다."
+  }
+ },
+ {
+  "w": "downsize",
+  "pos": "v",
+  "m": [
+   "(인원·규모를) 축소하다, 감원하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The manufacturer plans to *downsize* its workforce by ten percent next year.",
+  "exKo": "그 제조업체는 내년에 인력을 10퍼센트 감축할 계획이다.",
+  "col": [
+   {
+    "e": "downsize the workforce",
+    "k": "인력을 감축하다"
+   },
+   {
+    "e": "downsize operations",
+    "k": "사업 규모를 축소하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "downsizing",
+    "pos": "n",
+    "m": "감원, 규모 축소"
+   }
+  ],
+  "para": [
+   "cut jobs",
+   "reduce staff",
+   "scale down"
+  ],
+  "ant": "expand",
+  "tip": "downsize는 타동사(downsize the staff)와 자동사(The company downsized) 둘 다 가능하다. Part 7에서는 reduce its workforce, cut jobs로 바꿔 표현된다.",
+  "q": {
+   "s": "Due to falling sales, the retailer was forced to ------- and close twenty of its stores.",
+   "o": [
+    "expand",
+    "downsize",
+    "found",
+    "invest"
+   ],
+   "a": 1,
+   "k": "매출 감소로 매장을 닫는 상황이므로 '규모를 축소하다'라는 downsize가 정답. expand(확장하다)는 문맥과 반대다."
+  }
+ },
+ {
+  "w": "lay off",
+  "pos": "phr",
+  "m": [
+   "(일시) 해고하다, 감원하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The factory had to *lay off* 200 workers after losing its biggest client.",
+  "exKo": "그 공장은 최대 고객을 잃은 뒤 직원 200명을 해고해야 했다.",
+  "col": [
+   {
+    "e": "lay off workers",
+    "k": "직원을 해고하다"
+   },
+   {
+    "e": "be laid off",
+    "k": "해고되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "layoff",
+    "pos": "n",
+    "m": "정리 해고, 감원"
+   }
+  ],
+  "para": [
+   "dismiss",
+   "let go",
+   "cut jobs"
+  ],
+  "ant": "hire",
+  "tip": "lay-laid-laid 활용에 주의하자(be laid off). lie(눕다)-lay-lain과 혼동시키는 보기가 나온다. 명사는 붙여 쓴 layoff(s)다.",
+  "q": {
+   "s": "More than 50 employees were ------- off when the plant closed last month.",
+   "o": [
+    "lain",
+    "laying",
+    "laid",
+    "lied"
+   ],
+   "a": 2,
+   "k": "'해고되었다'는 수동태 be laid off이므로 lay의 과거분사 laid가 정답. lain은 lie(눕다)의 과거분사다."
+  }
+ },
+ {
+  "w": "bankrupt",
+  "pos": "adj",
+  "m": [
+   "파산한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The airline went *bankrupt* after years of rising fuel costs and falling demand.",
+  "exKo": "그 항공사는 수년간의 연료비 상승과 수요 감소 끝에 파산했다.",
+  "col": [
+   {
+    "e": "go bankrupt",
+    "k": "파산하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "bankruptcy",
+    "pos": "n",
+    "m": "파산"
+   }
+  ],
+  "para": [
+   "insolvent",
+   "out of business"
+  ],
+  "ant": "solvent",
+  "tip": "go bankrupt(파산하다)에서 bankrupt는 형용사 보어다. 명사 bankruptcy는 file for bankruptcy(파산 신청을 하다)로 쓴다.",
+  "q": {
+   "s": "The construction company went ------- after it failed to repay its loans.",
+   "o": [
+    "bankrupt",
+    "bankruptcy",
+    "bankrupting",
+    "bankruptly"
+   ],
+   "a": 0,
+   "k": "go 뒤에 형용사 보어가 와서 '파산하다'가 되므로 bankrupt가 정답. 명사 bankruptcy는 go의 보어로 쓰지 않는다."
+  }
+ },
+ {
+  "w": "board of directors",
+  "pos": "phr",
+  "m": [
+   "이사회"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The *board of directors* will meet next Tuesday to choose a new CEO.",
+  "exKo": "이사회는 새 최고경영자를 선임하기 위해 다음 주 화요일에 모인다.",
+  "col": [
+   {
+    "e": "sit on the board",
+    "k": "이사로 재직하다"
+   },
+   {
+    "e": "board meeting",
+    "k": "이사회 회의"
+   }
+  ],
+  "der": [
+   {
+    "w": "director",
+    "pos": "n",
+    "m": "이사, 책임자"
+   }
+  ],
+  "para": [
+   "the board",
+   "directors"
+  ],
+  "ant": "",
+  "tip": "줄여서 the board라고도 하며 board meeting(이사회 회의), sit on the board(이사로 재직하다)로 자주 쓰인다. 동사 board(탑승하다)와 혼동하지 말 것.",
+  "q": {
+   "s": "The plan to open a factory in Vietnam must first be approved by the ------- of directors.",
+   "o": [
+    "crew",
+    "board",
+    "audience",
+    "agenda"
+   ],
+   "a": 1,
+   "k": "'이사회'는 board of directors이므로 board가 정답. crew는 승무원, audience는 청중, agenda는 안건이다."
+  }
+ },
+ {
+  "w": "management",
+  "pos": "n",
+  "m": [
+   "경영진",
+   "경영, 관리"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The new *management* team has introduced flexible working hours for all staff.",
+  "exKo": "새 경영진은 전 직원에게 유연 근무제를 도입했다.",
+  "col": [
+   {
+    "e": "senior management",
+    "k": "고위 경영진"
+   },
+   {
+    "e": "under new management",
+    "k": "경영진이 바뀐"
+   },
+   {
+    "e": "time management",
+    "k": "시간 관리"
+   }
+  ],
+  "der": [
+   {
+    "w": "manage",
+    "pos": "v",
+    "m": "관리하다, 경영하다"
+   },
+   {
+    "w": "managerial",
+    "pos": "adj",
+    "m": "경영의, 관리의"
+   }
+  ],
+  "para": [
+   "executives",
+   "administration",
+   "leadership"
+  ],
+  "ant": "",
+  "tip": "management는 '경영(행위)'과 '경영진(집단)'을 모두 뜻한다. under new management(새 경영진 체제의)는 Part 7 공지에 자주 나온다.",
+  "q": {
+   "s": "The restaurant has been under new ------- since the original owner retired last year.",
+   "o": [
+    "management",
+    "manage",
+    "manager",
+    "managerial"
+   ],
+   "a": 0,
+   "k": "under new management는 '경영진이 바뀐'이라는 관용 표현이므로 management가 정답. manager는 가산명사라 관사 없이 단수로 쓸 수 없다."
+  }
+ },
+ {
+  "w": "chairperson",
+  "pos": "n",
+  "m": [
+   "의장, 회장"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Rivera was elected *chairperson* of the board at Monday's meeting.",
+  "exKo": "리베라 씨는 월요일 회의에서 이사회 의장으로 선출되었다.",
+  "col": [
+   {
+    "e": "chairperson of the board",
+    "k": "이사회 의장"
+   },
+   {
+    "e": "vice chairperson",
+    "k": "부의장"
+   }
+  ],
+  "der": [
+   {
+    "w": "chair",
+    "pos": "v",
+    "m": "(회의를) 주재하다, 의장을 맡다"
+   }
+  ],
+  "para": [
+   "chair",
+   "head"
+  ],
+  "ant": "",
+  "tip": "chair가 동사로 '(회의를) 주재하다'로도 쓰인다(chair a meeting). elect, appoint 뒤에서 직책명이 보어로 올 때는 관사를 생략하는 경우가 많다.",
+  "q": {
+   "s": "Dr. Harris will serve as ------- of the hospital's board of trustees starting next month.",
+   "o": [
+    "subsidiary",
+    "shareholder",
+    "chairperson",
+    "headquarters"
+   ],
+   "a": 2,
+   "k": "serve as(~로 일하다) 뒤에 이사회의 직책이 와야 하므로 chairperson이 정답. shareholder(주주)는 이사회의 직책이 아니고, subsidiary(자회사)와 headquarters(본사)는 사람이 아니다."
+  }
+ },
+ {
+  "w": "annual report",
+  "pos": "phr",
+  "m": [
+   "연례 보고서, 연차 보고서"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company's *annual report* shows a 15 percent increase in net profit.",
+  "exKo": "그 회사의 연례 보고서에는 순이익이 15퍼센트 증가한 것으로 나와 있다.",
+  "col": [
+   {
+    "e": "publish an annual report",
+    "k": "연례 보고서를 발간하다"
+   },
+   {
+    "e": "release the annual report",
+    "k": "연례 보고서를 공개하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "annual",
+    "pos": "adj",
+    "m": "연례의, 매년의"
+   },
+   {
+    "w": "annually",
+    "pos": "adv",
+    "m": "매년, 해마다"
+   }
+  ],
+  "para": [
+   "yearly report"
+  ],
+  "ant": "",
+  "tip": "annual(형용사)과 annually(부사)의 품사 구분 문제가 함께 출제된다. Part 7에서는 yearly report로 바뀌어 나오기도 한다.",
+  "q": {
+   "s": "Copies of the company's ------- report are available on our Web site for all shareholders.",
+   "o": [
+    "annually",
+    "annual",
+    "annuity",
+    "annualize"
+   ],
+   "a": 1,
+   "k": "명사 report를 앞에서 수식하는 형용사 자리이므로 annual이 정답. annually는 부사라 명사를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "announce",
+  "pos": "v",
+  "m": [
+   "발표하다, 알리다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The CEO *announced* plans to open a new plant in Mexico next year.",
+  "exKo": "최고경영자는 내년에 멕시코에 새 공장을 열 계획을 발표했다.",
+  "col": [
+   {
+    "e": "announce a plan",
+    "k": "계획을 발표하다"
+   },
+   {
+    "e": "announce that",
+    "k": "~라고 발표하다"
+   },
+   {
+    "e": "officially announce",
+    "k": "공식 발표하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "announcement",
+    "pos": "n",
+    "m": "발표, 공지"
+   }
+  ],
+  "para": [
+   "declare",
+   "reveal",
+   "make public"
+  ],
+  "ant": "",
+  "tip": "announce는 사람을 목적어로 바로 취하지 않는다(announce to staff that ~). 'inform/notify + 사람 + that'과 구분하는 문제가 빈출이다.",
+  "q": {
+   "s": "The company ------- yesterday that it will merge with its largest competitor.",
+   "o": [
+    "informed",
+    "told",
+    "announced",
+    "notified"
+   ],
+   "a": 2,
+   "k": "빈칸 뒤에 사람 목적어 없이 that절이 바로 오므로 announced가 정답. informed, told, notified는 사람 목적어가 먼저 와야 한다."
+  }
+ },
+ {
+  "w": "strategic",
+  "pos": "adj",
+  "m": [
+   "전략적인, 전략상 중요한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The two companies formed a *strategic* partnership to enter the Asian market.",
+  "exKo": "두 회사는 아시아 시장에 진출하기 위해 전략적 제휴를 맺었다.",
+  "col": [
+   {
+    "e": "strategic partnership",
+    "k": "전략적 제휴"
+   },
+   {
+    "e": "strategic plan",
+    "k": "전략 계획"
+   },
+   {
+    "e": "strategic location",
+    "k": "전략적 요충지"
+   }
+  ],
+  "der": [
+   {
+    "w": "strategy",
+    "pos": "n",
+    "m": "전략"
+   },
+   {
+    "w": "strategically",
+    "pos": "adv",
+    "m": "전략적으로"
+   }
+  ],
+  "para": [
+   "key",
+   "carefully planned"
+  ],
+  "ant": "",
+  "tip": "명사 앞 형용사 자리면 strategic, 분사 앞 부사 자리면 strategically(strategically located)를 고른다.",
+  "q": {
+   "s": "Our company has made several highly ------- investments in the renewable energy sector.",
+   "o": [
+    "strategy",
+    "strategic",
+    "strategically",
+    "strategies"
+   ],
+   "a": 1,
+   "k": "부사 highly의 수식을 받으면서 명사 investments를 꾸미는 형용사 자리이므로 strategic이 정답."
+  }
+ },
+ {
+  "w": "consolidate",
+  "pos": "v",
+  "m": [
+   "통합하다",
+   "(입지를) 강화하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bank will *consolidate* its two regional offices into one location in Denver.",
+  "exKo": "그 은행은 두 지역 사무소를 덴버의 한 곳으로 통합할 것이다.",
+  "col": [
+   {
+    "e": "consolidate A into B",
+    "k": "A를 B로 통합하다"
+   },
+   {
+    "e": "consolidate one's position",
+    "k": "입지를 굳히다"
+   }
+  ],
+  "der": [
+   {
+    "w": "consolidation",
+    "pos": "n",
+    "m": "통합, 합병"
+   }
+  ],
+  "para": [
+   "combine",
+   "merge",
+   "unify"
+  ],
+  "ant": "",
+  "tip": "consolidate A into B(A를 B로 통합하다) 구조와 '(입지·지위를) 강화하다'의 뜻이 모두 출제된다. 명사 consolidation은 merger로 패러프레이징되기도 한다.",
+  "q": {
+   "s": "To cut costs, the company plans to ------- its three warehouses into a single large facility.",
+   "o": [
+    "diversify",
+    "acquire",
+    "announce",
+    "consolidate"
+   ],
+   "a": 3,
+   "k": "세 창고를 하나로 '통합하다'는 consolidate A into B 구조이므로 consolidate가 정답. 자사 창고를 acquire(인수)할 수는 없다."
+  }
+ },
+ {
+  "w": "diversify",
+  "pos": "v",
+  "m": [
+   "다각화하다, 다양화하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company is trying to *diversify* its product line to attract younger customers.",
+  "exKo": "그 회사는 젊은 고객을 끌어들이기 위해 제품군을 다양화하려 하고 있다.",
+  "col": [
+   {
+    "e": "diversify into",
+    "k": "~로 사업을 다각화하다"
+   },
+   {
+    "e": "diversify a portfolio",
+    "k": "투자 포트폴리오를 분산하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "diversification",
+    "pos": "n",
+    "m": "다각화"
+   },
+   {
+    "w": "diverse",
+    "pos": "adj",
+    "m": "다양한"
+   },
+   {
+    "w": "diversity",
+    "pos": "n",
+    "m": "다양성"
+   }
+  ],
+  "para": [
+   "expand",
+   "broaden",
+   "vary"
+  ],
+  "ant": "",
+  "tip": "diversify into(새 분야로 진출하다)의 전치사 into에 주의하자. 형용사 diverse, 명사 diversity·diversification과의 품사 구분도 출제된다.",
+  "q": {
+   "s": "Originally a bookseller, the company has ------- into music, electronics, and home goods.",
+   "o": [
+    "diverse",
+    "diversity",
+    "diversified",
+    "diversely"
+   ],
+   "a": 2,
+   "k": "has 뒤에 과거분사가 와서 현재완료를 이루어야 하므로 diversified가 정답. diverse는 형용사라 has 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "joint venture",
+  "pos": "phr",
+  "m": [
+   "합작 투자, 합작 회사"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The automaker formed a *joint venture* with a Korean battery company last year.",
+  "exKo": "그 자동차 제조사는 작년 한국의 배터리 회사와 합작 회사를 설립했다.",
+  "col": [
+   {
+    "e": "form a joint venture",
+    "k": "합작 회사를 설립하다"
+   },
+   {
+    "e": "joint venture with",
+    "k": "~와의 합작 투자"
+   }
+  ],
+  "der": [
+   {
+    "w": "joint",
+    "pos": "adj",
+    "m": "공동의, 합동의"
+   },
+   {
+    "w": "jointly",
+    "pos": "adv",
+    "m": "공동으로"
+   }
+  ],
+  "para": [
+   "partnership",
+   "collaboration"
+  ],
+  "ant": "",
+  "tip": "form/enter into a joint venture with(~와 합작 투자하다)로 쓰인다. 부사 jointly는 jointly owned(공동 소유의)처럼 분사 앞에서 출제된다.",
+  "q": {
+   "s": "Samwell Energy and a Japanese partner have formed a joint ------- to build solar farms in Australia.",
+   "o": [
+    "venture",
+    "stake",
+    "dividend",
+    "capital"
+   ],
+   "a": 0,
+   "k": "두 회사가 '합작 회사를 설립하다'는 form a joint venture이므로 venture가 정답. stake, dividend, capital은 form의 목적어로 어울리지 않는다."
+  }
+ },
+ {
+  "w": "enterprise",
+  "pos": "n",
+  "m": [
+   "기업, 회사",
+   "(대규모) 사업"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The government offers tax benefits to small and medium-sized *enterprises*.",
+  "exKo": "정부는 중소기업에 세제 혜택을 제공한다.",
+  "col": [
+   {
+    "e": "small and medium-sized enterprises",
+    "k": "중소기업"
+   },
+   {
+    "e": "private enterprise",
+    "k": "민간 기업"
+   },
+   {
+    "e": "state-owned enterprise",
+    "k": "국영 기업"
+   }
+  ],
+  "der": [
+   {
+    "w": "enterprising",
+    "pos": "adj",
+    "m": "진취적인, 기업가 정신이 있는"
+   }
+  ],
+  "para": [
+   "business",
+   "company",
+   "firm"
+  ],
+  "ant": "",
+  "tip": "small and medium-sized enterprises(SMEs, 중소기업)로 자주 나온다. 형용사 enterprising(진취적인)은 사람을 수식하며 enterprise와 의미가 다르다.",
+  "q": {
+   "s": "The program provides low-interest loans to small ------- that want to expand overseas.",
+   "o": [
+    "enterprises",
+    "dividends",
+    "headquarters",
+    "stakes"
+   ],
+   "a": 0,
+   "k": "저금리 대출을 받아 해외로 확장하려는 주체는 기업이므로 enterprises가 정답. dividends(배당금), headquarters(본사), stakes(지분)는 대출을 받아 해외로 확장하는 주체가 될 수 없다."
+  }
+ },
+ {
+  "w": "firm",
+  "pos": "n",
+  "m": [
+   "회사, 사무소"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "She works as an accountant at a large law *firm* in Manhattan.",
+  "exKo": "그녀는 맨해튼의 한 대형 법률 회사에서 회계 담당자로 일한다.",
+  "col": [
+   {
+    "e": "law firm",
+    "k": "법률 회사"
+   },
+   {
+    "e": "accounting firm",
+    "k": "회계 법인"
+   },
+   {
+    "e": "consulting firm",
+    "k": "컨설팅 회사"
+   }
+  ],
+  "der": [
+   {
+    "w": "firmly",
+    "pos": "adv",
+    "m": "확고하게, 단호하게"
+   }
+  ],
+  "para": [
+   "company",
+   "business"
+  ],
+  "ant": "",
+  "tip": "명사 firm(회사)은 law/accounting/consulting firm처럼 업종 명사와 결합한다. 형용사로 '확고한, 단단한'(a firm commitment)의 뜻도 있다.",
+  "q": {
+   "s": "After ten years at a large accounting -------, Mr. Grant opened his own office.",
+   "o": [
+    "stake",
+    "dividend",
+    "firm",
+    "capital"
+   ],
+   "a": 2,
+   "k": "accounting firm(회계 법인)에서 10년 근무했다는 의미이므로 firm이 정답. 나머지는 근무 장소가 될 수 없다."
+  }
+ },
+ {
+  "w": "go public",
+  "pos": "phr",
+  "m": [
+   "(주식을 공개해) 상장하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The online retailer plans to *go public* on the New York Stock Exchange next year.",
+  "exKo": "그 온라인 소매업체는 내년에 뉴욕 증권 거래소에 상장할 계획이다.",
+  "col": [
+   {
+    "e": "go public on",
+    "k": "~에 상장하다"
+   },
+   {
+    "e": "plans to go public",
+    "k": "상장 계획"
+   }
+  ],
+  "der": [
+   {
+    "w": "initial public offering",
+    "pos": "n",
+    "m": "기업 공개(IPO)"
+   }
+  ],
+  "para": [
+   "list its shares",
+   "hold an IPO"
+  ],
+  "ant": "",
+  "tip": "go public은 '공개적으로 알리다'가 아니라 '주식을 공개해 상장하다'의 뜻이다. Part 7에서 list its shares, IPO로 패러프레이징된다.",
+  "q": {
+   "s": "The software developer will go ------- by offering its shares on the stock market next spring.",
+   "o": [
+    "public",
+    "publicly",
+    "publicity",
+    "publicize"
+   ],
+   "a": 0,
+   "k": "go public은 '상장하다'라는 관용 표현으로, go 뒤에 형용사 보어 public이 온다. 부사 publicly는 보어 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "spokesperson",
+  "pos": "n",
+  "m": [
+   "대변인"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "A company *spokesperson* confirmed that the factory will remain open.",
+  "exKo": "회사 대변인은 그 공장이 계속 운영될 것이라고 확인했다.",
+  "col": [
+   {
+    "e": "company spokesperson",
+    "k": "회사 대변인"
+   },
+   {
+    "e": "spokesperson for",
+    "k": "~의 대변인"
+   }
+  ],
+  "der": [
+   {
+    "w": "spokesman",
+    "pos": "n",
+    "m": "(남성) 대변인"
+   }
+  ],
+  "para": [
+   "representative",
+   "official"
+  ],
+  "ant": "",
+  "tip": "'According to a spokesperson for ~'는 Part 7 기사에서 정보의 출처를 밝히는 표현이다. 전치사 for와 짝을 이룬다.",
+  "q": {
+   "s": "According to a ------- for Brandt Motors, the new model will go on sale in March.",
+   "o": [
+    "subsidiary",
+    "spokesperson",
+    "dividend",
+    "franchise"
+   ],
+   "a": 1,
+   "k": "according to 뒤에서 회사를 대표해 발언하는 사람이 와야 하므로 spokesperson이 정답. 나머지는 발언의 주체가 될 수 없다."
+  }
+ },
+ {
+  "w": "share price",
+  "pos": "phr",
+  "m": [
+   "주가"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company's *share price* rose 8 percent after it announced record profits.",
+  "exKo": "그 회사의 주가는 사상 최대 이익을 발표한 뒤 8퍼센트 올랐다.",
+  "col": [
+   {
+    "e": "a rise in the share price",
+    "k": "주가 상승"
+   },
+   {
+    "e": "share prices fall",
+    "k": "주가가 하락하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "share",
+    "pos": "n",
+    "m": "주식"
+   },
+   {
+    "w": "shareholder",
+    "pos": "n",
+    "m": "주주"
+   }
+  ],
+  "para": [
+   "stock price"
+  ],
+  "ant": "",
+  "tip": "share price는 rise, fall, drop, climb 같은 증감 동사와 함께 쓰인다. Part 7에서는 stock price로 바뀌어 나온다.",
+  "q": {
+   "s": "Pemberton's share ------- fell sharply after the company reported a loss for the third quarter.",
+   "o": [
+    "fare",
+    "fee",
+    "rate",
+    "price"
+   ],
+   "a": 3,
+   "k": "'주가'는 share price이므로 price가 정답. fare는 교통 요금, fee는 수수료, rate는 비율·요금이다."
+  }
+ },
+ {
+  "w": "franchise",
+  "pos": "n",
+  "m": [
+   "가맹점, 체인점",
+   "가맹 사업권"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "He owns three coffee shop *franchises* in the Seattle area.",
+  "exKo": "그는 시애틀 지역에 커피숍 가맹점 세 곳을 보유하고 있다.",
+  "col": [
+   {
+    "e": "franchise owner",
+    "k": "가맹점주"
+   },
+   {
+    "e": "franchise agreement",
+    "k": "가맹 계약"
+   }
+  ],
+  "der": [
+   {
+    "w": "franchisee",
+    "pos": "n",
+    "m": "가맹점주"
+   },
+   {
+    "w": "franchisor",
+    "pos": "n",
+    "m": "가맹 본부"
+   }
+  ],
+  "para": [
+   "chain store",
+   "outlet"
+  ],
+  "ant": "",
+  "tip": "가맹점주는 franchisee, 가맹 본부는 franchisor다. -ee(받는 사람)와 -or(주는 쪽)의 구분이 출제 포인트다.",
+  "q": {
+   "s": "Anyone interested in opening a Burger Hub ------- should contact our head office for details.",
+   "o": [
+    "merger",
+    "dividend",
+    "stake",
+    "franchise"
+   ],
+   "a": 3,
+   "k": "'버거 허브 가맹점을 열다'라는 의미이므로 franchise가 정답. 본사(head office)에 문의하라는 내용도 가맹점과 어울린다."
+  }
+ },
+ {
+  "w": "competitive edge",
+  "pos": "phr",
+  "m": [
+   "경쟁 우위"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Fast delivery gives the online store a *competitive edge* over its rivals.",
+  "exKo": "빠른 배송 덕분에 그 온라인 상점은 경쟁사들보다 우위를 점하고 있다.",
+  "col": [
+   {
+    "e": "competitive edge over",
+    "k": "~에 대한 경쟁 우위"
+   },
+   {
+    "e": "gain a competitive edge",
+    "k": "경쟁 우위를 얻다"
+   }
+  ],
+  "der": [
+   {
+    "w": "competitive",
+    "pos": "adj",
+    "m": "경쟁력 있는"
+   },
+   {
+    "w": "competition",
+    "pos": "n",
+    "m": "경쟁"
+   },
+   {
+    "w": "compete",
+    "pos": "v",
+    "m": "경쟁하다"
+   }
+  ],
+  "para": [
+   "advantage",
+   "competitive advantage"
+  ],
+  "ant": "disadvantage",
+  "tip": "edge over(~보다 우위)의 전치사 over가 핵심이다. 형용사 competitive와 명사 competition의 품사 구분도 함께 출제된다.",
+  "q": {
+   "s": "Investing in new technology will help us maintain a ------- edge over other manufacturers.",
+   "o": [
+    "compete",
+    "competitive",
+    "competition",
+    "competitively"
+   ],
+   "a": 1,
+   "k": "명사 edge를 수식하는 형용사 자리이므로 competitive가 정답. compete는 동사, competitively는 부사다."
+  }
+ }
+]

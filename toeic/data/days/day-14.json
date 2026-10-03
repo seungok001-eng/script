@@ -1,0 +1,1981 @@
+[
+ {
+  "w": "itinerary",
+  "pos": "n",
+  "m": [
+   "여행 일정(표)"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Ms. Chen's *itinerary* includes stops in Tokyo, Seoul, and Hong Kong.",
+  "exKo": "첸 씨의 여행 일정에는 도쿄, 서울, 홍콩 방문이 포함되어 있다.",
+  "col": [
+   {
+    "e": "travel itinerary",
+    "k": "여행 일정표"
+   },
+   {
+    "e": "detailed itinerary",
+    "k": "상세 일정표"
+   }
+  ],
+  "der": [],
+  "para": [
+   "schedule",
+   "travel plans"
+  ],
+  "ant": "",
+  "tip": "itinerary는 Part 7 이메일의 첨부 문서로 자주 등장하며 schedule, travel plans로 패러프레이징된다. 가산명사라 an itinerary로 쓴다.",
+  "q": {
+   "s": "The travel agent e-mailed Mr. Shah a detailed ------- listing all of his flights and hotel stays.",
+   "o": [
+    "itinerary",
+    "fare",
+    "customs",
+    "souvenir"
+   ],
+   "a": 0,
+   "k": "항공편과 호텔 숙박을 모두 정리한 문서는 여행 일정표이므로 itinerary가 정답. fare(요금), customs(세관), souvenir(기념품)는 일정을 나열할 수 없다."
+  }
+ },
+ {
+  "w": "travel arrangements",
+  "pos": "phr",
+  "m": [
+   "출장 준비, 여행 준비(예약)"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "My assistant will make all the *travel arrangements* for the conference in Berlin.",
+  "exKo": "내 비서가 베를린 회의를 위한 출장 준비를 모두 할 것이다.",
+  "col": [
+   {
+    "e": "make travel arrangements",
+    "k": "여행 준비를 하다"
+   },
+   {
+    "e": "handle travel arrangements",
+    "k": "출장 준비를 맡다"
+   }
+  ],
+  "der": [
+   {
+    "w": "arrange",
+    "pos": "v",
+    "m": "준비하다, 마련하다"
+   },
+   {
+    "w": "arrangement",
+    "pos": "n",
+    "m": "준비, 배치"
+   }
+  ],
+  "para": [
+   "travel plans",
+   "bookings"
+  ],
+  "ant": "",
+  "tip": "make arrangements for(~을 준비하다)처럼 동사 make와 짝을 이루며, '준비, 예약'의 뜻일 때는 복수형 arrangements를 쓴다.",
+  "q": {
+   "s": "Ms. Ortiz in the administration office will make travel ------- for all conference attendees.",
+   "o": [
+    "arranges",
+    "arranged",
+    "arrangements",
+    "arranging"
+   ],
+   "a": 2,
+   "k": "동사 make의 목적어인 명사 자리로, travel과 결합해 '출장 준비'를 뜻하는 arrangements가 정답."
+  }
+ },
+ {
+  "w": "book",
+  "pos": "v",
+  "m": [
+   "예약하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "We *booked* a double room at the Harbor Hotel for three nights.",
+  "exKo": "우리는 하버 호텔에 더블룸을 3박으로 예약했다.",
+  "col": [
+   {
+    "e": "book a flight",
+    "k": "항공편을 예약하다"
+   },
+   {
+    "e": "fully booked",
+    "k": "예약이 꽉 찬"
+   },
+   {
+    "e": "book in advance",
+    "k": "미리 예약하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "booking",
+    "pos": "n",
+    "m": "예약"
+   }
+  ],
+  "para": [
+   "reserve"
+  ],
+  "ant": "cancel",
+  "tip": "동사 book은 reserve와 같은 뜻이다. fully booked(예약이 꽉 찬)는 Part 3·4에서 '방/좌석이 없다'는 정답 단서로 자주 쓰인다.",
+  "q": {
+   "s": "The hotel is fully ------- this weekend because of the international trade fair.",
+   "o": [
+    "book",
+    "books",
+    "booking",
+    "booked"
+   ],
+   "a": 3,
+   "k": "'예약이 꽉 찬'은 수동의 의미인 fully booked이므로 과거분사 booked가 정답."
+  }
+ },
+ {
+  "w": "reservation",
+  "pos": "n",
+  "m": [
+   "예약"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "ex": "Guests can make a *reservation* online or by calling the hotel directly.",
+  "exKo": "투숙객은 온라인으로 또는 호텔에 직접 전화해서 예약할 수 있다.",
+  "col": [
+   {
+    "e": "make a reservation",
+    "k": "예약하다"
+   },
+   {
+    "e": "confirm a reservation",
+    "k": "예약을 확인하다"
+   },
+   {
+    "e": "cancel a reservation",
+    "k": "예약을 취소하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "reserve",
+    "pos": "v",
+    "m": "예약하다, 따로 남겨 두다"
+   },
+   {
+    "w": "reserved",
+    "pos": "adj",
+    "m": "예약된"
+   }
+  ],
+  "para": [
+   "booking"
+  ],
+  "ant": "",
+  "tip": "make a reservation for + 날짜·인원 구조로 쓰인다. 동사 reserve와 명사 reservation의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Please call the restaurant at least one day ahead to confirm your -------.",
+   "o": [
+    "reserve",
+    "reservation",
+    "reserved",
+    "reserving"
+   ],
+   "a": 1,
+   "k": "소유격 your 뒤는 명사 자리이므로 reservation이 정답. reserve는 동사, reserved는 형용사·과거분사다."
+  }
+ },
+ {
+  "w": "accommodation",
+  "pos": "n",
+  "m": [
+   "숙박 시설, 숙소"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The conference fee includes *accommodation* at a hotel near the venue.",
+  "exKo": "회의 참가비에는 행사장 근처 호텔 숙박이 포함되어 있다.",
+  "col": [
+   {
+    "e": "hotel accommodation",
+    "k": "호텔 숙박"
+   },
+   {
+    "e": "provide accommodation",
+    "k": "숙소를 제공하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "accommodate",
+    "pos": "v",
+    "m": "수용하다, 숙박시키다"
+   }
+  ],
+  "para": [
+   "lodging",
+   "place to stay"
+  ],
+  "ant": "",
+  "tip": "'숙박 시설'의 뜻으로 영국식은 불가산 accommodation, 미국식은 복수형 accommodations를 쓴다. 동사 accommodate는 '(인원을) 수용하다'로 Part 5에 자주 나온다.",
+  "q": {
+   "s": "The tour package includes airfare, meals, and ------- at a four-star hotel.",
+   "o": [
+    "accommodate",
+    "accommodated",
+    "accommodation",
+    "accommodating"
+   ],
+   "a": 2,
+   "k": "airfare, meals와 and로 나열되는 명사 자리이므로 accommodation이 정답. accommodate는 동사다."
+  }
+ },
+ {
+  "w": "depart",
+  "pos": "v",
+  "m": [
+   "출발하다, 떠나다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5
+  ],
+  "ex": "The train to Chicago *departs* from platform 4 at 9:15 A.M.",
+  "exKo": "시카고행 열차는 오전 9시 15분에 4번 승강장에서 출발한다.",
+  "col": [
+   {
+    "e": "depart from",
+    "k": "~에서 출발하다"
+   },
+   {
+    "e": "depart for",
+    "k": "~로 떠나다"
+   },
+   {
+    "e": "depart on time",
+    "k": "정시에 출발하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "departure",
+    "pos": "n",
+    "m": "출발"
+   }
+  ],
+  "para": [
+   "leave",
+   "set off"
+  ],
+  "ant": "arrive",
+  "tip": "depart는 주로 자동사로 'depart from + 출발지', 'depart for + 목적지'처럼 전치사와 함께 쓴다. 타동사 leave(leave Seoul)와 구분하자.",
+  "q": {
+   "s": "The bus will ------- promptly at 8 A.M., so please arrive at least ten minutes early.",
+   "o": [
+    "departure",
+    "depart",
+    "departed",
+    "departing"
+   ],
+   "a": 1,
+   "k": "조동사 will 뒤에는 동사원형이 오므로 depart가 정답. departure는 명사다."
+  }
+ },
+ {
+  "w": "departure",
+  "pos": "n",
+  "m": [
+   "출발"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Please arrive at the airport at least two hours before your *departure*.",
+  "exKo": "출발 최소 두 시간 전에 공항에 도착해야 한다.",
+  "col": [
+   {
+    "e": "departure time",
+    "k": "출발 시각"
+   },
+   {
+    "e": "departure gate",
+    "k": "출발 게이트"
+   },
+   {
+    "e": "prior to departure",
+    "k": "출발 전에"
+   }
+  ],
+  "der": [
+   {
+    "w": "depart",
+    "pos": "v",
+    "m": "출발하다"
+   }
+  ],
+  "para": [
+   "leaving"
+  ],
+  "ant": "arrival",
+  "tip": "prior to departure(출발 전)처럼 전치사 뒤 명사 자리면 departure를 고른다. departure time/gate/lounge처럼 명사 앞 수식어로도 쓰인다.",
+  "q": {
+   "s": "Passengers must check in at least one hour prior to -------.",
+   "o": [
+    "depart",
+    "departed",
+    "departs",
+    "departure"
+   ],
+   "a": 3,
+   "k": "prior to는 전치사이므로 뒤에 명사가 와야 한다. 따라서 departure가 정답."
+  }
+ },
+ {
+  "w": "board",
+  "pos": "v",
+  "m": [
+   "탑승하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4,
+   5
+  ],
+  "ex": "Passengers are now *boarding* the 10:30 flight to Vancouver at Gate 6.",
+  "exKo": "승객들이 지금 6번 게이트에서 10시 30분발 밴쿠버행 항공편에 탑승하고 있다.",
+  "col": [
+   {
+    "e": "board a plane",
+    "k": "비행기에 탑승하다"
+   },
+   {
+    "e": "boarding gate",
+    "k": "탑승구"
+   },
+   {
+    "e": "on board",
+    "k": "탑승한"
+   }
+  ],
+  "der": [
+   {
+    "w": "boarding",
+    "pos": "n",
+    "m": "탑승"
+   }
+  ],
+  "para": [
+   "get on"
+  ],
+  "ant": "get off",
+  "tip": "board는 타동사라 전치사 없이 목적어를 바로 취한다(board on a plane은 틀림). Part 1에서 'They're boarding a bus.' 같은 사진 묘사로도 나온다.",
+  "q": {
+   "s": "All passengers should be ready to ------- the ferry by 7:45 A.M.",
+   "o": [
+    "arrive",
+    "board",
+    "proceed",
+    "declare"
+   ],
+   "a": 1,
+   "k": "목적어 the ferry를 바로 취해 '배에 탑승하다'가 되어야 하므로 board가 정답. arrive는 at, proceed는 to가 필요한 자동사다."
+  }
+ },
+ {
+  "w": "boarding pass",
+  "pos": "phr",
+  "m": [
+   "탑승권"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "Please have your *boarding pass* and passport ready at the security checkpoint.",
+  "exKo": "보안 검색대에서는 탑승권과 여권을 미리 준비해 두어야 한다.",
+  "col": [
+   {
+    "e": "print a boarding pass",
+    "k": "탑승권을 출력하다"
+   },
+   {
+    "e": "mobile boarding pass",
+    "k": "모바일 탑승권"
+   }
+  ],
+  "der": [
+   {
+    "w": "board",
+    "pos": "v",
+    "m": "탑승하다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "Part 3·4 공항 대화와 안내 방송에서 탑승권 출력·분실·재발급 상황이 자주 나온다. 동명사 boarding이 pass를 수식하는 복합명사이므로 board pass로 쓰지 않는다.",
+  "q": {
+   "s": "Travelers can print their ------- passes at the self-service kiosks in the terminal.",
+   "o": [
+    "boarded",
+    "board",
+    "boarding",
+    "boards"
+   ],
+   "a": 2,
+   "k": "'탑승권'은 boarding pass라는 복합명사이므로 boarding이 정답."
+  }
+ },
+ {
+  "w": "connecting flight",
+  "pos": "phr",
+  "m": [
+   "연결 항공편, 환승편"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "Because of the delay, several passengers missed their *connecting flights* in Dallas.",
+  "exKo": "지연 때문에 몇몇 승객이 댈러스에서 연결 항공편을 놓쳤다.",
+  "col": [
+   {
+    "e": "miss a connecting flight",
+    "k": "연결 항공편을 놓치다"
+   },
+   {
+    "e": "catch a connecting flight",
+    "k": "연결 항공편을 타다"
+   }
+  ],
+  "der": [
+   {
+    "w": "connect",
+    "pos": "v",
+    "m": "연결하다, 환승하다"
+   },
+   {
+    "w": "connection",
+    "pos": "n",
+    "m": "연결, 연결편"
+   }
+  ],
+  "para": [
+   "connection",
+   "transfer"
+  ],
+  "ant": "direct flight",
+  "tip": "'연결 항공편을 놓치다'는 Part 3 공항 대화의 단골 문제 상황이다. connection 자체도 '연결편'의 뜻으로 쓰인다(make one's connection).",
+  "q": {
+   "s": "Passengers with a ------- flight to Lisbon should proceed directly to Gate B4 after landing.",
+   "o": [
+    "connect",
+    "connects",
+    "connected",
+    "connecting"
+   ],
+   "a": 3,
+   "k": "'연결 항공편'은 connecting flight로 쓰는 고정 표현이므로 connecting이 정답. connect, connects는 동사라 명사 앞에 올 수 없다."
+  }
+ },
+ {
+  "w": "layover",
+  "pos": "n",
+  "m": [
+   "(비행기) 경유, 경유 대기"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Our flight to Sydney includes a three-hour *layover* in Singapore.",
+  "exKo": "우리가 탈 시드니행 항공편은 싱가포르에서 세 시간 동안 경유한다.",
+  "col": [
+   {
+    "e": "a layover in",
+    "k": "~에서의 경유"
+   },
+   {
+    "e": "long layover",
+    "k": "긴 경유 대기 시간"
+   }
+  ],
+  "der": [],
+  "para": [
+   "stopover",
+   "stop"
+  ],
+  "ant": "",
+  "tip": "a layover in + 도시(~에서의 경유) 구조로 쓰인다. 직항(nonstop/direct flight)과 대비되어 출장 일정을 묻는 Part 3·4 문제로 나온다.",
+  "q": {
+   "s": "The cheapest ticket to Lima involves a five-hour ------- in Miami.",
+   "o": [
+    "excursion",
+    "terminal",
+    "layover",
+    "itinerary"
+   ],
+   "a": 2,
+   "k": "가장 저렴한 항공권에 마이애미에서 다섯 시간 '경유'가 포함된다는 의미이므로 layover가 정답. excursion은 관광 목적의 짧은 여행이다."
+  }
+ },
+ {
+  "w": "baggage",
+  "pos": "n",
+  "m": [
+   "수하물, 짐"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Passengers can collect their *baggage* at carousel 5 in the arrivals hall.",
+  "exKo": "승객들은 도착 홀의 5번 수하물 컨베이어에서 짐을 찾을 수 있다.",
+  "col": [
+   {
+    "e": "baggage claim",
+    "k": "수하물 찾는 곳"
+   },
+   {
+    "e": "checked baggage",
+    "k": "위탁 수하물"
+   },
+   {
+    "e": "baggage allowance",
+    "k": "수하물 허용량"
+   }
+  ],
+  "der": [],
+  "para": [
+   "luggage",
+   "bags"
+  ],
+  "ant": "",
+  "tip": "baggage는 불가산명사라 a baggage, baggages로 쓸 수 없고 a piece of baggage, two pieces of baggage로 센다.",
+  "q": {
+   "s": "Each passenger is allowed to check two pieces of ------- free of charge.",
+   "o": [
+    "baggages",
+    "baggage",
+    "bags",
+    "suitcases"
+   ],
+   "a": 1,
+   "k": "pieces of 뒤에는 불가산명사가 오므로 baggage가 정답. baggages는 틀린 형태이고, bags·suitcases는 가산명사라 pieces of와 쓰지 않는다."
+  }
+ },
+ {
+  "w": "carry-on",
+  "pos": "adj",
+  "m": [
+   "기내 반입용의",
+   "기내 휴대 수하물"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Each passenger is allowed one *carry-on* bag and one personal item.",
+  "exKo": "승객 1인당 기내 휴대 가방 하나와 개인 소지품 하나가 허용된다.",
+  "col": [
+   {
+    "e": "carry-on bag",
+    "k": "기내 휴대 가방"
+   },
+   {
+    "e": "carry-on luggage",
+    "k": "기내 휴대 수하물"
+   }
+  ],
+  "der": [
+   {
+    "w": "carry",
+    "pos": "v",
+    "m": "나르다, 휴대하다"
+   }
+  ],
+  "para": [
+   "hand luggage",
+   "cabin baggage"
+  ],
+  "ant": "checked",
+  "tip": "carry-on은 명사 앞 형용사(carry-on bag)와 명사(a carry-on) 둘 다 가능하다. 반대 개념은 checked baggage(위탁 수하물)다.",
+  "q": {
+   "s": "Liquids in ------- bags must be stored in containers of 100 milliliters or less.",
+   "o": [
+    "carry-on",
+    "scenic",
+    "round-trip",
+    "overbooked"
+   ],
+   "a": 0,
+   "k": "액체 용량 제한이 적용되는 것은 기내 휴대 가방이므로 carry-on이 정답. scenic(경치 좋은), round-trip(왕복의)은 가방을 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "check in",
+  "pos": "phr",
+  "m": [
+   "체크인하다, 탑승 수속을 하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Passengers flying to New York should *check in* at counter C two hours early.",
+  "exKo": "뉴욕행 승객은 두 시간 일찍 C 카운터에서 탑승 수속을 해야 한다.",
+  "col": [
+   {
+    "e": "check in at",
+    "k": "~에서 체크인하다"
+   },
+   {
+    "e": "check in for a flight",
+    "k": "탑승 수속을 하다"
+   },
+   {
+    "e": "online check-in",
+    "k": "온라인 체크인"
+   }
+  ],
+  "der": [
+   {
+    "w": "check-in",
+    "pos": "n",
+    "m": "체크인, 탑승 수속"
+   }
+  ],
+  "para": [
+   "register"
+  ],
+  "ant": "check out",
+  "tip": "동사구는 띄어 쓴 check in, 명사·형용사는 하이픈을 넣은 check-in(check-in counter)이다. 장소는 at, 항공편은 for와 함께 쓴다.",
+  "q": {
+   "s": "Passengers on international flights should ------- at least three hours before departure.",
+   "o": [
+    "check out",
+    "check in",
+    "check up",
+    "check off"
+   ],
+   "a": 1,
+   "k": "출발 세 시간 전에 하는 것은 탑승 수속이므로 check in이 정답. check out은 호텔에서 나갈 때 쓴다."
+  }
+ },
+ {
+  "w": "customs",
+  "pos": "n",
+  "m": [
+   "세관"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "All international passengers must go through *customs* after collecting their bags.",
+  "exKo": "모든 국제선 승객은 짐을 찾은 뒤 세관을 통과해야 한다.",
+  "col": [
+   {
+    "e": "go through customs",
+    "k": "세관을 통과하다"
+   },
+   {
+    "e": "customs officer",
+    "k": "세관원"
+   },
+   {
+    "e": "customs declaration form",
+    "k": "세관 신고서"
+   }
+  ],
+  "der": [
+   {
+    "w": "custom",
+    "pos": "n",
+    "m": "관습, 풍습"
+   },
+   {
+    "w": "customary",
+    "pos": "adj",
+    "m": "관례적인"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "'세관'은 항상 -s가 붙은 customs이며, 단수 custom은 '관습'이라는 전혀 다른 뜻이다. go through/clear customs(세관을 통과하다)로 쓴다.",
+  "q": {
+   "s": "After landing, international passengers must go through ------- before leaving the airport.",
+   "o": [
+    "custom",
+    "customer",
+    "customs",
+    "customary"
+   ],
+   "a": 2,
+   "k": "공항에서 통과해야 하는 곳은 세관이므로 customs가 정답. custom은 '관습', customer는 '고객'이다."
+  }
+ },
+ {
+  "w": "declare",
+  "pos": "v",
+  "m": [
+   "(세관에) 신고하다",
+   "선언하다"
+  ],
+  "tier": 3,
+  "parts": [
+   2,
+   3,
+   7
+  ],
+  "ex": "Travelers must *declare* any goods worth more than $800 at customs.",
+  "exKo": "여행객은 800달러가 넘는 물품을 세관에 신고해야 한다.",
+  "col": [
+   {
+    "e": "declare goods",
+    "k": "물품을 신고하다"
+   },
+   {
+    "e": "anything to declare",
+    "k": "신고할 물품"
+   },
+   {
+    "e": "declare bankruptcy",
+    "k": "파산을 선언하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "declaration",
+    "pos": "n",
+    "m": "신고(서), 선언"
+   }
+  ],
+  "para": [
+   "report",
+   "state"
+  ],
+  "ant": "",
+  "tip": "공항에서는 '(과세 물품을) 신고하다'의 뜻으로 'Do you have anything to declare?'가 Part 2·3에 나온다. 명사형 declaration(customs declaration form)도 함께 기억하자.",
+  "q": {
+   "s": "Visitors carrying more than $10,000 in cash must ------- it to customs officials.",
+   "o": [
+    "reserve",
+    "board",
+    "declare",
+    "depart"
+   ],
+   "a": 2,
+   "k": "현금을 세관 직원에게 '신고하다'라는 의미이므로 declare가 정답. reserve(예약하다), board(탑승하다)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "passport",
+  "pos": "n",
+  "m": [
+   "여권"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Make sure your *passport* is valid for at least six months before you travel.",
+  "exKo": "여행 전에 여권 유효 기간이 최소 6개월 남아 있는지 반드시 확인해야 한다.",
+  "col": [
+   {
+    "e": "valid passport",
+    "k": "유효한 여권"
+   },
+   {
+    "e": "renew a passport",
+    "k": "여권을 갱신하다"
+   },
+   {
+    "e": "passport control",
+    "k": "출입국 심사"
+   }
+  ],
+  "der": [],
+  "para": [
+   "travel document"
+  ],
+  "ant": "",
+  "tip": "Part 3·4에서 여권 만료(expire)·갱신(renew) 관련 대화가 자주 나온다. passport control은 '출입국 심사대'를 뜻한다.",
+  "q": {
+   "s": "Before booking your trip, check that your ------- will still be valid on the date you return.",
+   "o": [
+    "souvenir",
+    "landmark",
+    "excursion",
+    "passport"
+   ],
+   "a": 3,
+   "k": "귀국일에도 '유효해야(valid)' 하는 것은 여권이므로 passport가 정답. 나머지는 유효 기간과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "round-trip",
+  "pos": "adj",
+  "m": [
+   "왕복의"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "A *round-trip* ticket from Seoul to London costs about $1,200 in the summer.",
+  "exKo": "서울-런던 왕복 항공권은 여름에 약 1,200달러다.",
+  "col": [
+   {
+    "e": "round-trip ticket",
+    "k": "왕복 항공권"
+   },
+   {
+    "e": "round-trip fare",
+    "k": "왕복 요금"
+   }
+  ],
+  "der": [
+   {
+    "w": "round trip",
+    "pos": "n",
+    "m": "왕복 여행"
+   }
+  ],
+  "para": [
+   "return"
+  ],
+  "ant": "one-way",
+  "tip": "명사 앞에서는 하이픈을 넣은 형용사 round-trip(round-trip ticket), 명사로는 a round trip으로 쓴다. 반대말 one-way(편도의)와 함께 Part 3·4에서 들린다.",
+  "q": {
+   "s": "Mr. Davis purchased a ------- ticket because he will fly back to Toronto right after the conference.",
+   "o": [
+    "round-trip",
+    "one-way",
+    "scenic",
+    "overbooked"
+   ],
+   "a": 0,
+   "k": "회의 후 다시 토론토로 돌아오므로 '왕복' 항공권인 round-trip이 정답. one-way(편도의)는 돌아오는 일정과 맞지 않는다."
+  }
+ },
+ {
+  "w": "fare",
+  "pos": "n",
+  "m": [
+   "(교통) 요금, 운임"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The airline is offering reduced *fares* on all flights to Europe this month.",
+  "exKo": "그 항공사는 이번 달 유럽행 전 항공편의 요금을 할인하고 있다.",
+  "col": [
+   {
+    "e": "bus fare",
+    "k": "버스 요금"
+   },
+   {
+    "e": "discounted fare",
+    "k": "할인 요금"
+   },
+   {
+    "e": "round-trip fare",
+    "k": "왕복 요금"
+   }
+  ],
+  "der": [
+   {
+    "w": "airfare",
+    "pos": "n",
+    "m": "항공 요금"
+   }
+  ],
+  "para": [
+   "ticket price",
+   "cost"
+  ],
+  "ant": "",
+  "tip": "fare는 교통 요금, fee는 수수료·입장료, toll은 통행료, tuition은 수업료다. 이 혼동을 노리는 어휘 문제가 자주 나온다.",
+  "q": {
+   "s": "Passengers must pay the ------- in exact change when boarding the bus.",
+   "o": [
+    "toll",
+    "fare",
+    "deposit",
+    "tuition"
+   ],
+   "a": 1,
+   "k": "버스에 탈 때 내는 요금은 fare이므로 정답. toll은 도로·다리 통행료, tuition은 수업료다."
+  }
+ },
+ {
+  "w": "aisle seat",
+  "pos": "phr",
+  "m": [
+   "통로 쪽 좌석"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3
+  ],
+  "ex": "I requested an *aisle seat* so that I could stretch my legs during the flight.",
+  "exKo": "나는 비행 중에 다리를 펼 수 있도록 통로 쪽 좌석을 요청했다.",
+  "col": [
+   {
+    "e": "request an aisle seat",
+    "k": "통로 쪽 좌석을 요청하다"
+   },
+   {
+    "e": "aisle or window seat",
+    "k": "통로석 또는 창가석"
+   }
+  ],
+  "der": [
+   {
+    "w": "aisle",
+    "pos": "n",
+    "m": "통로"
+   }
+  ],
+  "para": [],
+  "ant": "window seat",
+  "tip": "aisle의 s는 묵음이라 [ail]로 발음되어 Part 2·3에서 I'll, isle과 헷갈리기 쉽다. 반대는 window seat(창가 좌석)이다.",
+  "q": {
+   "s": "Mr. Burke prefers an ------- seat because it lets him get up easily during long flights.",
+   "o": [
+    "isle",
+    "aisle",
+    "inner",
+    "outlet"
+   ],
+   "a": 1,
+   "k": "자리에서 쉽게 일어날 수 있는 좌석은 통로 쪽 좌석이므로 aisle이 정답. 발음이 같은 isle은 '섬'이다."
+  }
+ },
+ {
+  "w": "travel agency",
+  "pos": "phr",
+  "m": [
+   "여행사"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "We booked our flights and hotel through a local *travel agency*.",
+  "exKo": "우리는 지역 여행사를 통해 항공편과 호텔을 예약했다.",
+  "col": [
+   {
+    "e": "through a travel agency",
+    "k": "여행사를 통해"
+   },
+   {
+    "e": "travel agency staff",
+    "k": "여행사 직원"
+   }
+  ],
+  "der": [
+   {
+    "w": "travel agent",
+    "pos": "n",
+    "m": "여행사 직원"
+   }
+  ],
+  "para": [
+   "travel agent"
+  ],
+  "ant": "",
+  "tip": "회사는 travel agency, 그 직원은 travel agent다. 사람과 회사(사물)를 구분하는 문제로 출제된다.",
+  "q": {
+   "s": "Hillcrest Tours is a ------- agency that specializes in group trips to Southeast Asia.",
+   "o": [
+    "travel",
+    "traveler",
+    "traveled",
+    "travels"
+   ],
+   "a": 0,
+   "k": "'여행사'는 travel agency라는 복합명사이므로 travel이 정답. traveler는 '여행자'라 agency와 결합하지 않는다."
+  }
+ },
+ {
+  "w": "tourist attraction",
+  "pos": "phr",
+  "m": [
+   "관광 명소"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The old harbor is the city's most popular *tourist attraction*.",
+  "exKo": "옛 항구는 그 도시에서 가장 인기 있는 관광 명소다.",
+  "col": [
+   {
+    "e": "major tourist attraction",
+    "k": "주요 관광 명소"
+   },
+   {
+    "e": "popular tourist attraction",
+    "k": "인기 관광 명소"
+   }
+  ],
+  "der": [
+   {
+    "w": "attract",
+    "pos": "v",
+    "m": "끌어들이다"
+   },
+   {
+    "w": "attractive",
+    "pos": "adj",
+    "m": "매력적인"
+   }
+  ],
+  "para": [
+   "landmark",
+   "sight",
+   "point of interest"
+  ],
+  "ant": "",
+  "tip": "Part 7 관광 안내문에서 sight, landmark, point of interest로 패러프레이징된다. attraction은 '명소'라는 뜻의 가산명사로 쓰인다.",
+  "q": {
+   "s": "The Grand Bazaar is one of Istanbul's most popular tourist -------.",
+   "o": [
+    "attractive",
+    "attracts",
+    "attractions",
+    "attracted"
+   ],
+   "a": 2,
+   "k": "one of + 복수명사 구조이므로 '관광 명소들'을 뜻하는 attractions가 정답. attractive는 형용사다."
+  }
+ },
+ {
+  "w": "sightseeing",
+  "pos": "n",
+  "m": [
+   "관광, 구경"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "After the conference, the participants spent a day *sightseeing* in Kyoto.",
+  "exKo": "회의가 끝난 뒤 참가자들은 교토에서 하루 동안 관광을 했다.",
+  "col": [
+   {
+    "e": "go sightseeing",
+    "k": "관광하러 가다"
+   },
+   {
+    "e": "sightseeing tour",
+    "k": "관광 투어"
+   }
+  ],
+  "der": [
+   {
+    "w": "sightseer",
+    "pos": "n",
+    "m": "관광객"
+   },
+   {
+    "w": "sights",
+    "pos": "n",
+    "m": "명소, 관광지"
+   }
+  ],
+  "para": [
+   "touring"
+  ],
+  "ant": "",
+  "tip": "go sightseeing(관광하러 가다)처럼 go -ing 구문으로 쓰이며, sightseeing tour/bus처럼 명사 앞 수식어로도 쓰인다.",
+  "q": {
+   "s": "Conference participants will have a free afternoon to go ------- in the old town.",
+   "o": [
+    "sightseeing",
+    "sightseer",
+    "sights",
+    "sighted"
+   ],
+   "a": 0,
+   "k": "'관광하러 가다'는 go sightseeing이므로 sightseeing이 정답. sightseer는 사람명사라 go 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "excursion",
+  "pos": "n",
+  "m": [
+   "(단체) 짧은 여행, 견학"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The hotel offers a half-day *excursion* to the nearby vineyards.",
+  "exKo": "그 호텔은 인근 포도원으로 가는 반나절 여행을 제공한다.",
+  "col": [
+   {
+    "e": "excursion to",
+    "k": "~로의 짧은 여행"
+   },
+   {
+    "e": "day excursion",
+    "k": "당일 여행"
+   },
+   {
+    "e": "go on an excursion",
+    "k": "짧은 여행을 가다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "trip",
+   "outing",
+   "tour"
+  ],
+  "ant": "",
+  "tip": "excursion은 전치사 to와 짝을 이루며(an excursion to the island) Part 7에서 trip, outing으로 패러프레이징된다.",
+  "q": {
+   "s": "Registered attendees may join an optional ------- to the national park on the last day of the conference.",
+   "o": [
+    "itinerary",
+    "accommodation",
+    "excursion",
+    "currency"
+   ],
+   "a": 2,
+   "k": "국립공원으로 가는 선택 '여행'에 참여하는 것이므로 excursion이 정답. itinerary(일정표)나 accommodation(숙소)은 join ~ to와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "guided tour",
+  "pos": "phr",
+  "m": [
+   "가이드 동반 투어"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Visitors can join a free *guided tour* of the museum every hour.",
+  "exKo": "방문객은 매시간 무료 박물관 가이드 투어에 참여할 수 있다.",
+  "col": [
+   {
+    "e": "guided tour of",
+    "k": "~의 가이드 투어"
+   },
+   {
+    "e": "take a guided tour",
+    "k": "가이드 투어를 하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "guide",
+    "pos": "n",
+    "m": "안내원, 가이드"
+   },
+   {
+    "w": "guidance",
+    "pos": "n",
+    "m": "지도, 안내"
+   }
+  ],
+  "para": [
+   "escorted tour"
+  ],
+  "ant": "self-guided tour",
+  "tip": "guided tour of + 장소 형태로 쓰이며, 과거분사 guided(안내를 받는)가 명사를 수식하는 구조다. guiding tour로 쓰지 않는다.",
+  "q": {
+   "s": "A ------- tour of the factory will be offered to all new employees on their first day.",
+   "o": [
+    "guide",
+    "guided",
+    "guiding",
+    "guidance"
+   ],
+   "a": 1,
+   "k": "'가이드가 안내하는 투어'는 과거분사를 쓴 guided tour이므로 guided가 정답."
+  }
+ },
+ {
+  "w": "landmark",
+  "pos": "n",
+  "m": [
+   "(유명) 명소, 랜드마크",
+   "획기적인 사건"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The clock tower is a well-known *landmark* in the center of the city.",
+  "exKo": "그 시계탑은 도심의 잘 알려진 명소다.",
+  "col": [
+   {
+    "e": "historic landmark",
+    "k": "역사적 명소"
+   },
+   {
+    "e": "local landmark",
+    "k": "지역 명소"
+   },
+   {
+    "e": "landmark decision",
+    "k": "획기적인 결정"
+   }
+  ],
+  "der": [],
+  "para": [
+   "sight",
+   "monument",
+   "tourist attraction"
+  ],
+  "ant": "",
+  "tip": "'눈에 띄는 건물, 명소'의 뜻 외에 a landmark agreement(획기적인 합의)처럼 명사 앞에서 '획기적인'의 의미로도 쓰인다.",
+  "q": {
+   "s": "The Old Mill, a historic ------- built in 1820, has been converted into a popular restaurant.",
+   "o": [
+    "souvenir",
+    "fare",
+    "layover",
+    "landmark"
+   ],
+   "a": 3,
+   "k": "1820년에 지어진 '역사적 명소'라는 의미이므로 landmark가 정답. 건물을 가리킬 수 있는 보기는 landmark뿐이다."
+  }
+ },
+ {
+  "w": "abroad",
+  "pos": "adv",
+  "m": [
+   "해외로, 해외에서"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Ms. Kim has worked *abroad* for most of her career.",
+  "exKo": "김 씨는 경력의 대부분을 해외에서 일했다.",
+  "col": [
+   {
+    "e": "travel abroad",
+    "k": "해외여행을 하다"
+   },
+   {
+    "e": "study abroad",
+    "k": "유학하다"
+   },
+   {
+    "e": "from abroad",
+    "k": "해외에서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "overseas",
+   "internationally"
+  ],
+  "ant": "domestically",
+  "tip": "abroad는 부사라 전치사 없이 쓴다(go to abroad는 틀림, go abroad가 맞음). 철자가 비슷한 aboard(탑승하여)와의 혼동을 노리는 보기가 자주 나온다.",
+  "q": {
+   "s": "Employees who travel ------- on business must submit their expense reports within 30 days.",
+   "o": [
+    "aboard",
+    "foreign",
+    "abroad",
+    "foreigner"
+   ],
+   "a": 2,
+   "k": "자동사 travel을 수식하는 부사 자리로 '해외로'를 뜻하는 abroad가 정답. aboard는 '탑승하여', foreign은 형용사다."
+  }
+ },
+ {
+  "w": "business trip",
+  "pos": "phr",
+  "m": [
+   "출장"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Mr. Hughes is away on a *business trip* to Singapore until Friday.",
+  "exKo": "휴즈 씨는 금요일까지 싱가포르로 출장 중이다.",
+  "col": [
+   {
+    "e": "go on a business trip",
+    "k": "출장을 가다"
+   },
+   {
+    "e": "be on a business trip",
+    "k": "출장 중이다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "work trip"
+  ],
+  "ant": "",
+  "tip": "'출장 중이다'는 be on a business trip, be away on business로 표현한다. Part 3에서 부재 이유를 묻는 문제의 정답으로 자주 나온다.",
+  "q": {
+   "s": "Ms. Grant cannot attend Monday's meeting because she will be on a business ------- in Tokyo.",
+   "o": [
+    "trip",
+    "travel",
+    "journey",
+    "travels"
+   ],
+   "a": 0,
+   "k": "'출장 중이다'는 be on a business trip이므로 trip이 정답. travel은 불가산명사라 a와 함께 쓰지 않고, journey는 business와 결합해 '출장'을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "per diem",
+  "pos": "n",
+  "m": [
+   "일당, 일일 출장비"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Employees on business trips receive a *per diem* of $75 for meals.",
+  "exKo": "출장 중인 직원은 식비로 하루 75달러의 일당을 받는다.",
+  "col": [
+   {
+    "e": "per diem allowance",
+    "k": "일일 수당"
+   },
+   {
+    "e": "receive a per diem",
+    "k": "일당을 받다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "daily allowance"
+  ],
+  "ant": "",
+  "tip": "라틴어로 '하루당'이라는 뜻이다. Part 7 출장 규정 문서에서 daily allowance로 패러프레이징된다.",
+  "q": {
+   "s": "Staff traveling overseas will receive a ------- of $90 to cover meals and local transportation.",
+   "o": [
+    "layover",
+    "per diem",
+    "souvenir",
+    "fare"
+   ],
+   "a": 1,
+   "k": "식비와 현지 교통비를 충당하기 위해 '받는' 하루 금액이므로 per diem이 정답. fare는 직원이 받는 돈이 아니라 내는 요금이다."
+  }
+ },
+ {
+  "w": "jet lag",
+  "pos": "n",
+  "m": [
+   "시차증, 시차로 인한 피로"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "I'm still suffering from *jet lag* after my flight from New York.",
+  "exKo": "나는 뉴욕에서 비행기를 타고 온 뒤 아직도 시차증에 시달리고 있다.",
+  "col": [
+   {
+    "e": "suffer from jet lag",
+    "k": "시차증을 겪다"
+   },
+   {
+    "e": "get over jet lag",
+    "k": "시차증을 극복하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "jet-lagged",
+    "pos": "adj",
+    "m": "시차증을 겪는"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "suffer from, recover from 등 from과 함께 쓰는 불가산명사다. 형용사형 jet-lagged(시차로 피곤한)도 Part 3에서 들린다.",
+  "q": {
+   "s": "To reduce the effects of -------, try to sleep on the plane and adjust to local time quickly.",
+   "o": [
+    "jet lag",
+    "layover",
+    "customs",
+    "per diem"
+   ],
+   "a": 0,
+   "k": "기내에서 자고 현지 시간에 빨리 적응해 줄일 수 있는 것은 시차증이므로 jet lag가 정답."
+  }
+ },
+ {
+  "w": "terminal",
+  "pos": "n",
+  "m": [
+   "(공항) 터미널, 청사"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "International flights depart from the new *terminal* on the east side of the airport.",
+  "exKo": "국제선은 공항 동쪽에 있는 신청사에서 출발한다.",
+  "col": [
+   {
+    "e": "airport terminal",
+    "k": "공항 청사"
+   },
+   {
+    "e": "passenger terminal",
+    "k": "여객 터미널"
+   },
+   {
+    "e": "bus terminal",
+    "k": "버스 터미널"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "",
+  "tip": "Part 3·4 공항 안내 방송에서 터미널·게이트 변경(has been moved to Terminal B)이 정답 단서로 자주 나온다.",
+  "q": {
+   "s": "A free shuttle connects the airport's main ------- with the long-term parking lots.",
+   "o": [
+    "souvenir",
+    "itinerary",
+    "terminal",
+    "fare"
+   ],
+   "a": 2,
+   "k": "셔틀이 장기 주차장과 연결하는 공항 건물은 터미널이므로 terminal이 정답."
+  }
+ },
+ {
+  "w": "overbooked",
+  "pos": "adj",
+  "m": [
+   "(정원보다) 초과 예약된"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "The flight was *overbooked*, so the airline offered vouchers to passengers who gave up their seats.",
+  "exKo": "그 항공편은 초과 예약되어 항공사는 좌석을 양보한 승객들에게 상품권을 제공했다.",
+  "col": [
+   {
+    "e": "overbooked flight",
+    "k": "초과 예약된 항공편"
+   },
+   {
+    "e": "be overbooked",
+    "k": "초과 예약되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "overbook",
+    "pos": "v",
+    "m": "초과 예약을 받다"
+   },
+   {
+    "w": "overbooking",
+    "pos": "n",
+    "m": "초과 예약"
+   }
+  ],
+  "para": [
+   "oversold"
+  ],
+  "ant": "",
+  "tip": "fully booked(예약이 꽉 찬)와 달리 overbooked는 '좌석보다 예약을 더 받은' 상태다. Part 3에서 초과 예약으로 다음 항공편을 권유받는 상황이 나온다.",
+  "q": {
+   "s": "Because the flight was -------, the airline asked for volunteers to take a later flight.",
+   "o": [
+    "scenic",
+    "abroad",
+    "round-trip",
+    "overbooked"
+   ],
+   "a": 3,
+   "k": "자원자에게 다음 항공편을 타 달라고 요청한 이유는 좌석이 초과 예약되었기 때문이므로 overbooked가 정답."
+  }
+ },
+ {
+  "w": "souvenir",
+  "pos": "n",
+  "m": [
+   "기념품"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "Visitors can buy *souvenirs* at the gift shop near the museum exit.",
+  "exKo": "방문객은 박물관 출구 근처의 선물 가게에서 기념품을 살 수 있다.",
+  "col": [
+   {
+    "e": "souvenir shop",
+    "k": "기념품 가게"
+   },
+   {
+    "e": "as a souvenir",
+    "k": "기념으로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "memento",
+   "keepsake",
+   "gift"
+  ],
+  "ant": "",
+  "tip": "souvenir shop은 gift shop과 같은 뜻이다. 가산명사라 a souvenir, souvenirs로 쓰며 Part 7 관광 안내문에서 자주 나온다.",
+  "q": {
+   "s": "Each conference participant received a small ------- from the host city, such as a key chain or mug.",
+   "o": [
+    "souvenir",
+    "landmark",
+    "excursion",
+    "terminal"
+   ],
+   "a": 0,
+   "k": "열쇠고리나 머그잔 같은 작은 '기념품'을 받은 것이므로 souvenir가 정답."
+  }
+ },
+ {
+  "w": "currency",
+  "pos": "n",
+  "m": [
+   "통화, 화폐"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "You can exchange foreign *currency* at the bank counter in the arrivals area.",
+  "exKo": "도착 구역의 은행 창구에서 외화를 환전할 수 있다.",
+  "col": [
+   {
+    "e": "foreign currency",
+    "k": "외화"
+   },
+   {
+    "e": "local currency",
+    "k": "현지 통화"
+   },
+   {
+    "e": "currency exchange",
+    "k": "환전"
+   }
+  ],
+  "der": [],
+  "para": [
+   "money",
+   "cash"
+  ],
+  "ant": "",
+  "tip": "foreign/local currency처럼 주로 불가산으로 쓰인다. currency exchange(환전)는 exchange rate(환율)와 함께 Part 4 공항 안내에 나온다.",
+  "q": {
+   "s": "Travelers can exchange their money for the local ------- at the airport's exchange counter.",
+   "o": [
+    "fare",
+    "currency",
+    "customs",
+    "souvenir"
+   ],
+   "a": 1,
+   "k": "돈을 '현지 통화'로 바꾸는 것이므로 currency가 정답."
+  }
+ },
+ {
+  "w": "exchange rate",
+  "pos": "phr",
+  "m": [
+   "환율"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *exchange rate* between the dollar and the euro changes every day.",
+  "exKo": "달러와 유로 간의 환율은 매일 바뀐다.",
+  "col": [
+   {
+    "e": "favorable exchange rate",
+    "k": "유리한 환율"
+   },
+   {
+    "e": "current exchange rate",
+    "k": "현재 환율"
+   }
+  ],
+  "der": [
+   {
+    "w": "exchange",
+    "pos": "n",
+    "m": "교환, 환전"
+   }
+  ],
+  "para": [
+   "conversion rate",
+   "rate of exchange"
+  ],
+  "ant": "",
+  "tip": "Part 7 기사에서 favorable/unfavorable exchange rate가 수출입 실적 변화의 원인으로 제시된다.",
+  "q": {
+   "s": "Thanks to a favorable exchange -------, our exports to Europe rose sharply last quarter.",
+   "o": [
+    "fare",
+    "fee",
+    "price",
+    "rate"
+   ],
+   "a": 3,
+   "k": "'환율'은 exchange rate이므로 rate가 정답. fare는 교통 요금, fee는 수수료다."
+  }
+ },
+ {
+  "w": "in advance",
+  "pos": "phr",
+  "m": [
+   "미리, 사전에"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Tickets for the factory tour must be reserved at least a week *in advance*.",
+  "exKo": "공장 견학 표는 적어도 일주일 전에 미리 예약해야 한다.",
+  "col": [
+   {
+    "e": "book in advance",
+    "k": "미리 예약하다"
+   },
+   {
+    "e": "well in advance",
+    "k": "훨씬 미리"
+   },
+   {
+    "e": "in advance of",
+    "k": "~에 앞서"
+   }
+  ],
+  "der": [
+   {
+    "w": "advance",
+    "pos": "n",
+    "m": "진보, 선금"
+   },
+   {
+    "w": "advanced",
+    "pos": "adj",
+    "m": "고급의, 진보한"
+   }
+  ],
+  "para": [
+   "beforehand",
+   "ahead of time"
+  ],
+  "ant": "",
+  "tip": "'기간 + in advance'(일주일 전에 미리)와 well in advance(훨씬 미리) 형태가 자주 쓰인다. in advance of + 명사(~에 앞서)도 출제된다.",
+  "q": {
+   "s": "Visitors are advised to purchase tickets online ------- to avoid long lines at the entrance.",
+   "o": [
+    "in addition",
+    "in contrast",
+    "in advance",
+    "in fact"
+   ],
+   "a": 2,
+   "k": "긴 줄을 피하려면 표를 '미리' 사야 하므로 in advance가 정답. in addition은 '게다가', in contrast는 '대조적으로'라 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "en route",
+  "pos": "phr",
+  "m": [
+   "도중에, 가는 길에"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Our bus stopped for lunch *en route* to the conference center.",
+  "exKo": "우리 버스는 회의장으로 가는 길에 점심을 먹으려고 멈췄다.",
+  "col": [
+   {
+    "e": "en route to",
+    "k": "~로 가는 도중에"
+   },
+   {
+    "e": "en route from",
+    "k": "~에서 오는 도중에"
+   }
+  ],
+  "der": [
+   {
+    "w": "route",
+    "pos": "n",
+    "m": "경로, 노선"
+   }
+  ],
+  "para": [
+   "on the way",
+   "in transit"
+  ],
+  "ant": "",
+  "tip": "en route to + 목적지(~로 가는 도중) 형태로 쓰이며 on the way to로 패러프레이징된다. 프랑스어에서 온 표현이다.",
+  "q": {
+   "s": "The delivery truck is currently ------- to the warehouse and should arrive within the hour.",
+   "o": [
+    "en route",
+    "abroad",
+    "aboard",
+    "in advance"
+   ],
+   "a": 0,
+   "k": "트럭이 창고로 '가는 중'이라는 의미이므로 en route가 정답. aboard는 '탑승하여', abroad는 '해외로'라 to the warehouse와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "flight attendant",
+  "pos": "phr",
+  "m": [
+   "(항공기) 승무원"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4
+  ],
+  "ex": "A *flight attendant* helped the elderly passenger put her bag in the overhead bin.",
+  "exKo": "승무원이 그 나이 든 승객이 머리 위 짐칸에 가방을 넣는 것을 도왔다.",
+  "col": [
+   {
+    "e": "ask a flight attendant",
+    "k": "승무원에게 요청하다"
+   },
+   {
+    "e": "cabin crew",
+    "k": "객실 승무원"
+   }
+  ],
+  "der": [
+   {
+    "w": "attendant",
+    "pos": "n",
+    "m": "안내원, 수행원"
+   },
+   {
+    "w": "attendance",
+    "pos": "n",
+    "m": "참석, 출석"
+   }
+  ],
+  "para": [
+   "cabin crew member"
+  ],
+  "ant": "",
+  "tip": "Part 1·3에서 기내 장면의 등장인물로 자주 나온다. 사람명사 attendant와 attendance(참석, 출석)의 혼동을 노리는 문제도 나온다.",
+  "q": {
+   "s": "The flight ------- asked all passengers to fasten their seat belts before landing.",
+   "o": [
+    "attendance",
+    "attendant",
+    "attending",
+    "attended"
+   ],
+   "a": 1,
+   "k": "승객에게 안전벨트를 매라고 요청한 '사람'이 와야 하므로 attendant가 정답. attendance는 '출석'이라는 추상명사다."
+  }
+ },
+ {
+  "w": "luggage",
+  "pos": "n",
+  "m": [
+   "짐, 수하물"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4,
+   7
+  ],
+  "ex": "Please do not leave your *luggage* unattended anywhere in the terminal.",
+  "exKo": "터미널 안 어디에서든 짐을 방치해 두어서는 안 된다.",
+  "col": [
+   {
+    "e": "carry-on luggage",
+    "k": "기내 휴대 수하물"
+   },
+   {
+    "e": "lost luggage",
+    "k": "분실 수하물"
+   },
+   {
+    "e": "luggage cart",
+    "k": "수하물 카트"
+   }
+  ],
+  "der": [],
+  "para": [
+   "baggage",
+   "bags",
+   "suitcases"
+  ],
+  "ant": "",
+  "tip": "luggage는 불가산명사라 a luggage, luggages는 틀린 표현이고 much luggage, a piece of luggage로 쓴다. baggage와 같은 뜻이다.",
+  "q": {
+   "s": "Passengers are asked not to bring too much ------- on board the tour bus.",
+   "o": [
+    "suitcases",
+    "bags",
+    "luggages",
+    "luggage"
+   ],
+   "a": 3,
+   "k": "too much 뒤에는 불가산명사가 오므로 luggage가 정답. suitcases, bags는 가산명사라 many와 써야 하고, luggages는 틀린 형태다."
+  }
+ },
+ {
+  "w": "scenic",
+  "pos": "adj",
+  "m": [
+   "경치가 좋은"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The train passes through some of the most *scenic* areas in the country.",
+  "exKo": "그 열차는 국내에서 가장 경치 좋은 지역들을 지나간다.",
+  "col": [
+   {
+    "e": "scenic route",
+    "k": "경치 좋은 길"
+   },
+   {
+    "e": "scenic view",
+    "k": "아름다운 경관"
+   }
+  ],
+  "der": [
+   {
+    "w": "scenery",
+    "pos": "n",
+    "m": "경치, 풍경"
+   },
+   {
+    "w": "scene",
+    "pos": "n",
+    "m": "장면, 현장"
+   }
+  ],
+  "para": [
+   "picturesque",
+   "beautiful"
+  ],
+  "ant": "",
+  "tip": "형용사 scenic과 불가산명사 scenery(풍경)의 품사 구분이 출제된다. scenic route는 Part 4 관광 안내에 자주 나온다.",
+  "q": {
+   "s": "The tour bus will take a ------- route along the coast so that passengers can enjoy the ocean views.",
+   "o": [
+    "scenic",
+    "scenery",
+    "scene",
+    "scenically"
+   ],
+   "a": 0,
+   "k": "명사 route를 수식하는 형용사 자리이므로 scenic이 정답. scenery, scene은 명사, scenically는 부사다."
+  }
+ }
+]

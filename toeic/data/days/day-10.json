@@ -1,0 +1,2117 @@
+[
+ {
+  "w": "research and development",
+  "pos": "phr",
+  "m": [
+   "연구 개발(R&D)"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company plans to invest 15 percent of its revenue in *research and development* next year.",
+  "exKo": "그 회사는 내년에 매출의 15퍼센트를 연구 개발에 투자할 계획이다.",
+  "col": [
+   {
+    "e": "research and development department",
+    "k": "연구 개발 부서"
+   },
+   {
+    "e": "invest in research and development",
+    "k": "연구 개발에 투자하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "researcher",
+    "pos": "n",
+    "m": "연구원"
+   },
+   {
+    "w": "develop",
+    "pos": "v",
+    "m": "개발하다"
+   }
+  ],
+  "para": [
+   "R&D"
+  ],
+  "ant": "",
+  "tip": "R&D로 줄여 쓰며 'research and development department(연구 개발부)'처럼 부서명으로 Part 7 지문에 자주 등장한다. research는 불가산명사라 a research, researches로 쓰지 않는다.",
+  "q": {
+   "s": "The firm's spending on research and ------- rose sharply as it raced to launch new products.",
+   "o": [
+    "development",
+    "develop",
+    "developer",
+    "developed"
+   ],
+   "a": 0,
+   "k": "and로 research와 연결된 명사 자리이며 '연구 개발'이라는 고정 표현이므로 development가 정답. developer는 '개발자'라는 사람명사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "laboratory",
+  "pos": "n",
+  "m": [
+   "실험실",
+   "연구소"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "Visitors must wear safety goggles at all times inside the *laboratory*.",
+  "exKo": "방문객은 실험실 안에서 항상 보안경을 착용해야 한다.",
+  "col": [
+   {
+    "e": "research laboratory",
+    "k": "연구소"
+   },
+   {
+    "e": "laboratory equipment",
+    "k": "실험실 장비"
+   },
+   {
+    "e": "laboratory technician",
+    "k": "실험실 기술자"
+   }
+  ],
+  "der": [
+   {
+    "w": "lab",
+    "pos": "n",
+    "m": "실험실(laboratory의 줄임말)"
+   }
+  ],
+  "para": [
+   "lab",
+   "research facility"
+  ],
+  "ant": "",
+  "tip": "LC에서는 줄임말 lab으로 자주 나오며 'lab coat(실험복)', 'lab results(검사 결과)' 같은 표현이 Part 1, 3에 등장한다.",
+  "q": {
+   "s": "Dr. Chen's team analyzed the water samples in the company's ------- before publishing the results.",
+   "o": [
+    "laboratory",
+    "auditorium",
+    "warehouse",
+    "reception"
+   ],
+   "a": 0,
+   "k": "물 샘플을 '분석하는' 장소이므로 laboratory(실험실)가 정답. auditorium(강당), warehouse(창고), reception(접수처)은 분석 작업과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "experiment",
+  "pos": "n",
+  "m": [
+   "실험",
+   "(새로운 방식의) 시도"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The researchers ran a series of *experiments* to test the durability of the new material.",
+  "exKo": "연구원들은 신소재의 내구성을 시험하기 위해 일련의 실험을 진행했다.",
+  "col": [
+   {
+    "e": "conduct an experiment",
+    "k": "실험을 하다"
+   },
+   {
+    "e": "experiment with",
+    "k": "~을 시험 삼아 해 보다"
+   }
+  ],
+  "der": [
+   {
+    "w": "experimental",
+    "pos": "adj",
+    "m": "실험적인"
+   },
+   {
+    "w": "experimentation",
+    "pos": "n",
+    "m": "실험 (작업)"
+   }
+  ],
+  "para": [
+   "test",
+   "trial"
+  ],
+  "ant": "",
+  "tip": "명사 '실험'과 동사 '실험하다'가 같은 형태이며, 동사일 때는 'experiment with new methods'처럼 전치사 with와 쓴다. 형용사 experimental과의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "The marketing team decided to ------- with a shorter newsletter format for three months.",
+   "o": [
+    "experimental",
+    "experiment",
+    "experimentally",
+    "experimentation"
+   ],
+   "a": 1,
+   "k": "to부정사 뒤 동사원형 자리이므로 experiment가 정답. experimentation은 명사, experimental은 형용사라 to 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "prototype",
+  "pos": "n",
+  "m": [
+   "시제품",
+   "원형"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Engineers will present a working *prototype* of the device at next month's trade show.",
+  "exKo": "엔지니어들은 다음 달 무역 박람회에서 그 기기의 작동하는 시제품을 선보일 것이다.",
+  "col": [
+   {
+    "e": "develop a prototype",
+    "k": "시제품을 개발하다"
+   },
+   {
+    "e": "a working prototype",
+    "k": "작동하는 시제품"
+   }
+  ],
+  "der": [],
+  "para": [
+   "model",
+   "sample"
+  ],
+  "ant": "",
+  "tip": "가산명사이므로 a prototype, prototypes로 쓰며 'prototype of + 제품' 형태로 Part 7 신제품 개발 지문에 나온다. model, sample로 패러프레이징된다.",
+  "q": {
+   "s": "Before mass production begins, the design team must build a ------- and test it under real conditions.",
+   "o": [
+    "receipt",
+    "quota",
+    "prototype",
+    "venue"
+   ],
+   "a": 2,
+   "k": "대량 생산 전에 만들어서 실제 조건에서 시험하는 것은 prototype(시제품)이다. receipt(영수증), quota(할당량), venue(장소)는 build, test와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "innovation",
+  "pos": "n",
+  "m": [
+   "혁신",
+   "새로운 것(방법)"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The award recognizes *innovation* in sustainable packaging design.",
+  "exKo": "그 상은 친환경 포장 디자인 분야의 혁신을 인정하여 수여된다.",
+  "col": [
+   {
+    "e": "technological innovation",
+    "k": "기술 혁신"
+   },
+   {
+    "e": "innovation in",
+    "k": "~ 분야의 혁신"
+   }
+  ],
+  "der": [
+   {
+    "w": "innovative",
+    "pos": "adj",
+    "m": "혁신적인"
+   },
+   {
+    "w": "innovate",
+    "pos": "v",
+    "m": "혁신하다"
+   },
+   {
+    "w": "innovator",
+    "pos": "n",
+    "m": "혁신가"
+   }
+  ],
+  "para": [
+   "new idea",
+   "advance"
+  ],
+  "ant": "",
+  "tip": "innovative(형용사), innovate(동사), innovator(사람명사)와의 품사 구분이 Part 5 단골이다. 정관사 뒤 명사 자리, 'innovation in + 분야' 형태를 확인하자.",
+  "q": {
+   "s": "The judges praised the startup for the ------- shown in its latest product line.",
+   "o": [
+    "innovation",
+    "innovate",
+    "innovative",
+    "innovatively"
+   ],
+   "a": 0,
+   "k": "정관사 the 뒤에서 과거분사 shown의 수식을 받는 명사 자리이므로 innovation이 정답. innovative는 형용사라 단독으로 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "invent",
+  "pos": "v",
+  "m": [
+   "발명하다",
+   "고안하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The engineer who *invented* the folding container now runs her own consulting firm.",
+  "exKo": "접이식 용기를 발명한 그 엔지니어는 현재 자신의 컨설팅 회사를 운영한다.",
+  "col": [
+   {
+    "e": "invent a device",
+    "k": "장치를 발명하다"
+   },
+   {
+    "e": "newly invented",
+    "k": "새로 발명된"
+   }
+  ],
+  "der": [
+   {
+    "w": "invention",
+    "pos": "n",
+    "m": "발명(품)"
+   },
+   {
+    "w": "inventor",
+    "pos": "n",
+    "m": "발명가"
+   },
+   {
+    "w": "inventive",
+    "pos": "adj",
+    "m": "창의적인"
+   }
+  ],
+  "para": [
+   "create",
+   "devise",
+   "come up with"
+  ],
+  "ant": "",
+  "tip": "사람명사 inventor와 사물명사 invention을 구분하는 문제가 나오며, 철자가 비슷한 inventory(재고)와 혼동하지 않도록 주의하자.",
+  "q": {
+   "s": "Mr. Okafor ------- a device that cuts energy use in commercial refrigerators by half.",
+   "o": [
+    "inventive",
+    "invention",
+    "invented",
+    "inventor"
+   ],
+   "a": 2,
+   "k": "주어 Mr. Okafor 뒤에 동사가 없으므로 동사 invented가 정답. invention, inventor는 명사, inventive는 형용사라 동사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "patent",
+  "pos": "n",
+  "m": [
+   "특허",
+   "특허권"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company has applied for a *patent* on its new battery technology.",
+  "exKo": "그 회사는 새 배터리 기술에 대한 특허를 출원했다.",
+  "col": [
+   {
+    "e": "apply for a patent",
+    "k": "특허를 출원하다"
+   },
+   {
+    "e": "a patent on",
+    "k": "~에 대한 특허"
+   },
+   {
+    "e": "patent pending",
+    "k": "특허 출원 중"
+   }
+  ],
+  "der": [
+   {
+    "w": "patented",
+    "pos": "adj",
+    "m": "특허받은"
+   }
+  ],
+  "para": [
+   "exclusive rights"
+  ],
+  "ant": "",
+  "tip": "'apply for/file for a patent(특허를 출원하다)', 'a patent on + 대상'의 전치사 짝이 출제된다. patented는 'patented technology'처럼 명사 앞에서 '특허받은'의 뜻으로 쓴다.",
+  "q": {
+   "s": "Harmon Tech filed for a ------- to protect its innovative cooling system from imitation.",
+   "o": [
+    "permit",
+    "refund",
+    "merger",
+    "patent"
+   ],
+   "a": 3,
+   "k": "기술을 모방으로부터 보호하기 위해 신청하는 것은 patent(특허)다. permit(허가증)은 모방 방지와 무관하고, refund(환불), merger(합병)도 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "breakthrough",
+  "pos": "n",
+  "m": [
+   "돌파구",
+   "획기적 발전"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Scientists at the institute announced a major *breakthrough* in solar panel efficiency.",
+  "exKo": "그 연구소의 과학자들은 태양광 패널 효율 분야에서 획기적인 성과를 거두었다고 발표했다.",
+  "col": [
+   {
+    "e": "a major breakthrough",
+    "k": "중대한 돌파구"
+   },
+   {
+    "e": "a breakthrough in",
+    "k": "~에서의 획기적 진전"
+   },
+   {
+    "e": "achieve a breakthrough",
+    "k": "돌파구를 마련하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "break through",
+    "pos": "phr",
+    "m": "~을 뚫고 나아가다, 돌파하다"
+   }
+  ],
+  "para": [
+   "advance",
+   "discovery"
+  ],
+  "ant": "setback",
+  "tip": "전치사 in과 함께 'a breakthrough in technology'로 쓰며, 'a breakthrough product(획기적인 제품)'처럼 명사 앞에서 형용사처럼 쓰이기도 한다.",
+  "q": {
+   "s": "After years of research, the team finally made a ------- in developing a low-cost water purification system.",
+   "o": [
+    "shortage",
+    "breakthrough",
+    "setback",
+    "deadline"
+   ],
+   "a": 1,
+   "k": "'수년간의 연구 끝에 마침내'라는 긍정적 맥락과 make a breakthrough(돌파구를 마련하다)의 결합으로 breakthrough가 정답. setback(차질)은 문맥과 반대이고 보통 suffer와 쓴다."
+  }
+ },
+ {
+  "w": "cutting-edge",
+  "pos": "adj",
+  "m": [
+   "최첨단의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new headquarters is equipped with *cutting-edge* video conferencing technology.",
+  "exKo": "새 본사는 최첨단 화상 회의 기술을 갖추고 있다.",
+  "col": [
+   {
+    "e": "cutting-edge technology",
+    "k": "최첨단 기술"
+   },
+   {
+    "e": "cutting-edge research",
+    "k": "최첨단 연구"
+   }
+  ],
+  "der": [],
+  "para": [
+   "state-of-the-art",
+   "advanced",
+   "leading-edge"
+  ],
+  "ant": "outdated",
+  "tip": "명사 앞에서는 하이픈을 붙여 쓰며 Part 7에서 state-of-the-art, advanced로 패러프레이징된다. 명사구 'at the cutting edge of(~의 최첨단에 있는)'도 알아두자.",
+  "q": {
+   "s": "Our clinic uses ------- imaging equipment to provide faster and more accurate diagnoses.",
+   "o": [
+    "reluctant",
+    "spacious",
+    "outdated",
+    "cutting-edge"
+   ],
+   "a": 3,
+   "k": "더 빠르고 정확한 진단을 제공하는 장비이므로 cutting-edge(최첨단의)가 정답. outdated(구식의)는 문맥과 반대이고, reluctant(꺼리는), spacious(넓은)는 장비를 수식하기에 어색하다."
+  }
+ },
+ {
+  "w": "advanced",
+  "pos": "adj",
+  "m": [
+   "첨단의",
+   "고급의",
+   "상급의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Participants in the *advanced* course should already be familiar with basic accounting software.",
+  "exKo": "고급 과정 참가자는 기본적인 회계 소프트웨어에 이미 익숙해야 한다.",
+  "col": [
+   {
+    "e": "advanced technology",
+    "k": "첨단 기술"
+   },
+   {
+    "e": "advanced degree",
+    "k": "석사 이상의 학위"
+   }
+  ],
+  "der": [
+   {
+    "w": "advance",
+    "pos": "n",
+    "m": "발전, 선불"
+   },
+   {
+    "w": "advancement",
+    "pos": "n",
+    "m": "발전, 승진"
+   }
+  ],
+  "para": [
+   "sophisticated",
+   "high-level"
+  ],
+  "ant": "basic",
+  "tip": "advanced(첨단의, 고급의)와 advance(사전의)를 구분하자. 'advance notice(사전 통지)', 'in advance(미리)'에서는 advanced를 쓰지 않는다는 점이 함정으로 나온다.",
+  "q": {
+   "s": "Applicants with an ------- degree in engineering will be given preference.",
+   "o": [
+    "advance",
+    "advancing",
+    "advanced",
+    "advancement"
+   ],
+   "a": 2,
+   "k": "'석사 이상의 학위'를 뜻하는 advanced degree가 정답. advance는 명사 앞에서 '사전의'라는 뜻이라 degree와 어울리지 않고, advancement는 명사다."
+  }
+ },
+ {
+  "w": "feature",
+  "pos": "n",
+  "m": [
+   "특징",
+   "기능",
+   "특집 기사"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The latest model includes several new safety *features*, such as automatic emergency braking.",
+  "exKo": "최신 모델에는 자동 긴급 제동 같은 몇 가지 새로운 안전 기능이 포함되어 있다.",
+  "col": [
+   {
+    "e": "key features",
+    "k": "주요 특징"
+   },
+   {
+    "e": "safety feature",
+    "k": "안전 기능"
+   },
+   {
+    "e": "be featured in",
+    "k": "~에 실리다, 소개되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "featured",
+    "pos": "adj",
+    "m": "특집의, 주요한"
+   }
+  ],
+  "para": [
+   "function",
+   "characteristic"
+  ],
+  "ant": "",
+  "tip": "명사(기능, 특징)뿐 아니라 동사로 'The exhibit features works by local artists(전시회에서 지역 작가들의 작품을 선보인다)'처럼 '~을 특징으로 하다, 선보이다'의 뜻으로 Part 7에 자주 쓰인다.",
+  "q": {
+   "s": "The upcoming issue of the magazine will ------- an interview with the CEO of Larkin Foods.",
+   "o": [
+    "attend",
+    "appear",
+    "respond",
+    "feature"
+   ],
+   "a": 3,
+   "k": "잡지가 인터뷰 기사를 '싣다'라는 뜻의 타동사 feature가 정답. appear와 respond는 자동사라 목적어를 바로 받을 수 없고, 잡지가 인터뷰에 attend(참석하다)할 수는 없다."
+  }
+ },
+ {
+  "w": "functionality",
+  "pos": "n",
+  "m": [
+   "기능(성)"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The software update improves the app's *functionality* without changing its familiar design.",
+  "exKo": "그 소프트웨어 업데이트는 익숙한 디자인은 그대로 두고 앱의 기능을 향상시킨다.",
+  "col": [
+   {
+    "e": "improve functionality",
+    "k": "기능을 개선하다"
+   },
+   {
+    "e": "full functionality",
+    "k": "모든 기능"
+   }
+  ],
+  "der": [
+   {
+    "w": "function",
+    "pos": "v",
+    "m": "작동하다, 기능하다"
+   },
+   {
+    "w": "functional",
+    "pos": "adj",
+    "m": "작동하는, 실용적인"
+   }
+  ],
+  "para": [
+   "features",
+   "capability"
+  ],
+  "ant": "",
+  "tip": "functional(작동하는, 실용적인), function(작동하다)과의 품사 구분이 출제되며, functionality는 보통 불가산명사로 쓴다.",
+  "q": {
+   "s": "The new version of the app adds ------- that allows users to scan receipts directly.",
+   "o": [
+    "punctuality",
+    "functionality",
+    "hospitality",
+    "liability"
+   ],
+   "a": 1,
+   "k": "영수증을 바로 스캔할 수 있게 해 주는 것은 앱의 functionality(기능)다. punctuality(시간 엄수), hospitality(환대), liability(책임)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "enhance",
+  "pos": "v",
+  "m": [
+   "향상시키다",
+   "높이다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hotel renovated its lobby to *enhance* the overall guest experience.",
+  "exKo": "그 호텔은 투숙객 경험을 전반적으로 향상시키기 위해 로비를 개조했다.",
+  "col": [
+   {
+    "e": "enhance productivity",
+    "k": "생산성을 높이다"
+   },
+   {
+    "e": "enhance one's reputation",
+    "k": "명성을 높이다"
+   },
+   {
+    "e": "enhance the quality",
+    "k": "품질을 높이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "enhancement",
+    "pos": "n",
+    "m": "향상, 강화"
+   },
+   {
+    "w": "enhanced",
+    "pos": "adj",
+    "m": "향상된"
+   }
+  ],
+  "para": [
+   "improve",
+   "boost"
+  ],
+  "ant": "diminish",
+  "tip": "타동사이므로 뒤에 바로 목적어가 오며 전치사를 붙이지 않는다. 명사 enhancement와의 품사 구분 문제도 출제된다.",
+  "q": {
+   "s": "The training program is designed to ------- employees' communication skills.",
+   "o": [
+    "enhance",
+    "enhancement",
+    "enhancing",
+    "enhanced"
+   ],
+   "a": 0,
+   "k": "be designed to 뒤에는 동사원형이 오므로 enhance가 정답. enhancement는 명사, enhancing과 enhanced는 to 뒤 동사원형 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "modify",
+  "pos": "v",
+  "m": [
+   "수정하다",
+   "변경하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We may need to *modify* the floor plan to fit additional workstations.",
+  "exKo": "추가 업무 공간을 들이려면 평면도를 수정해야 할 수도 있다.",
+  "col": [
+   {
+    "e": "modify the design",
+    "k": "디자인을 수정하다"
+   },
+   {
+    "e": "slightly modified",
+    "k": "약간 수정된"
+   }
+  ],
+  "der": [
+   {
+    "w": "modification",
+    "pos": "n",
+    "m": "수정, 변경"
+   }
+  ],
+  "para": [
+   "change",
+   "alter",
+   "adjust"
+  ],
+  "ant": "",
+  "tip": "명사 modification은 'make modifications to(~을 수정하다)'처럼 전치사 to와 함께 쓴다. Part 7에서 change, alter, revise로 패러프레이징된다.",
+  "q": {
+   "s": "The contract terms cannot be ------- without written approval from both parties.",
+   "o": [
+    "modify",
+    "modifying",
+    "modification",
+    "modified"
+   ],
+   "a": 3,
+   "k": "cannot be 뒤에서 주어 terms가 '수정되는' 대상이므로 수동태 과거분사 modified가 정답. modifying은 능동이라 목적어가 필요하다."
+  }
+ },
+ {
+  "w": "revolutionary",
+  "pos": "adj",
+  "m": [
+   "혁신적인",
+   "획기적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Critics called the company's foldable display a *revolutionary* step in smartphone design.",
+  "exKo": "비평가들은 그 회사의 접이식 디스플레이를 스마트폰 디자인의 획기적인 진전이라고 평했다.",
+  "col": [
+   {
+    "e": "revolutionary design",
+    "k": "혁신적인 디자인"
+   },
+   {
+    "e": "revolutionary approach",
+    "k": "혁신적인 접근법"
+   }
+  ],
+  "der": [
+   {
+    "w": "revolution",
+    "pos": "n",
+    "m": "혁명, 대변혁"
+   },
+   {
+    "w": "revolutionize",
+    "pos": "v",
+    "m": "혁신을 일으키다"
+   }
+  ],
+  "para": [
+   "groundbreaking",
+   "innovative"
+  ],
+  "ant": "conventional",
+  "tip": "토익에서는 '혁명의'보다 '혁신적인, 획기적인'의 뜻으로 신제품 광고 지문에 나온다. 동사 revolutionize(대변혁을 일으키다)도 함께 알아두자.",
+  "q": {
+   "s": "The ------- design of the new vacuum cleaner allows it to clean corners that other models cannot reach.",
+   "o": [
+    "revolution",
+    "revolutionize",
+    "revolutionary",
+    "revolutionarily"
+   ],
+   "a": 2,
+   "k": "관사 The와 명사 design 사이의 형용사 자리이므로 revolutionary가 정답. revolution은 명사, revolutionize는 동사, revolutionarily는 부사다."
+  }
+ },
+ {
+  "w": "conduct",
+  "pos": "v",
+  "m": [
+   "(업무를) 수행하다",
+   "실시하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The marketing department will *conduct* a customer survey throughout the month of May.",
+  "exKo": "마케팅 부서는 5월 한 달 동안 고객 설문 조사를 실시할 것이다.",
+  "col": [
+   {
+    "e": "conduct a survey",
+    "k": "설문 조사를 실시하다"
+   },
+   {
+    "e": "conduct research",
+    "k": "연구를 수행하다"
+   },
+   {
+    "e": "code of conduct",
+    "k": "행동 강령"
+   }
+  ],
+  "der": [
+   {
+    "w": "conductor",
+    "pos": "n",
+    "m": "지휘자, 차장"
+   }
+  ],
+  "para": [
+   "carry out",
+   "perform",
+   "hold"
+  ],
+  "ant": "",
+  "tip": "'conduct a survey/study/interview/inspection'처럼 조사, 점검 명사와 잘 어울린다. 명사로는 '행동, 처신'의 뜻으로 'code of conduct(행동 강령)'에 쓰인다.",
+  "q": {
+   "s": "Inspectors will ------- a safety review of the factory before it reopens.",
+   "o": [
+    "respond",
+    "comply",
+    "conduct",
+    "proceed"
+   ],
+   "a": 2,
+   "k": "목적어 a safety review를 바로 받는 타동사가 필요하므로 conduct(실시하다)가 정답. respond, comply, proceed는 자동사라 to, with 등 전치사가 있어야 한다."
+  }
+ },
+ {
+  "w": "findings",
+  "pos": "n",
+  "m": [
+   "(조사, 연구) 결과"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The research team will present its *findings* at the annual industry conference in Boston.",
+  "exKo": "연구팀은 보스턴에서 열리는 연례 업계 회의에서 연구 결과를 발표할 것이다.",
+  "col": [
+   {
+    "e": "research findings",
+    "k": "연구 결과"
+   },
+   {
+    "e": "present the findings",
+    "k": "결과를 발표하다"
+   },
+   {
+    "e": "the findings of the survey",
+    "k": "설문 조사 결과"
+   }
+  ],
+  "der": [
+   {
+    "w": "find",
+    "pos": "v",
+    "m": "알아내다, 발견하다"
+   }
+  ],
+  "para": [
+   "results",
+   "conclusions"
+  ],
+  "ant": "",
+  "tip": "'연구, 조사 결과'라는 뜻일 때는 보통 복수형 findings로 쓴다. Part 7에서 results로 패러프레이징되는 경우가 많다.",
+  "q": {
+   "s": "According to the survey -------, most customers prefer to receive updates by text message.",
+   "o": [
+    "founders",
+    "finances",
+    "findings",
+    "fixtures"
+   ],
+   "a": 2,
+   "k": "설문 조사에 '따르면' 고객 선호가 드러나므로 survey findings(설문 조사 결과)가 정답. founders(설립자), finances(재정), fixtures(설비)는 survey와 결합하지 않는다."
+  }
+ },
+ {
+  "w": "data",
+  "pos": "n",
+  "m": [
+   "자료",
+   "데이터"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our analysts collected sales *data* from all twelve regional offices.",
+  "exKo": "우리 분석가들은 12개 지역 사무소 전체에서 판매 데이터를 수집했다.",
+  "col": [
+   {
+    "e": "collect data",
+    "k": "데이터를 수집하다"
+   },
+   {
+    "e": "data analysis",
+    "k": "데이터 분석"
+   },
+   {
+    "e": "accurate data",
+    "k": "정확한 자료"
+   }
+  ],
+  "der": [
+   {
+    "w": "database",
+    "pos": "n",
+    "m": "데이터베이스"
+   }
+  ],
+  "para": [
+   "information",
+   "figures"
+  ],
+  "ant": "",
+  "tip": "data는 보통 불가산명사처럼 단수 취급(much data, The data is)하며 a data처럼 부정관사를 붙이지 않는다. Part 7에서 information, figures로 바꿔 표현된다.",
+  "q": {
+   "s": "The report is based on ------- gathered from more than 2,000 online shoppers.",
+   "o": [
+    "data",
+    "appliances",
+    "discounts",
+    "vacancies"
+   ],
+   "a": 0,
+   "k": "온라인 쇼핑객들로부터 '수집한' 것이 보고서의 근거가 되므로 data(자료)가 정답. appliances(가전제품), discounts(할인), vacancies(공석)는 쇼핑객에게서 수집하는 대상이 아니다."
+  }
+ },
+ {
+  "w": "trial",
+  "pos": "n",
+  "m": [
+   "시험",
+   "시범 사용, 체험",
+   "재판"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "New subscribers can sign up for a free 30-day *trial* of our design software.",
+  "exKo": "신규 가입자는 우리 디자인 소프트웨어를 30일간 무료로 체험해 볼 수 있다.",
+  "col": [
+   {
+    "e": "free trial",
+    "k": "무료 체험"
+   },
+   {
+    "e": "clinical trial",
+    "k": "임상 시험"
+   },
+   {
+    "e": "on a trial basis",
+    "k": "시범적으로"
+   }
+  ],
+  "der": [
+   {
+    "w": "try",
+    "pos": "v",
+    "m": "시도하다, 써 보다"
+   }
+  ],
+  "para": [
+   "test",
+   "test run"
+  ],
+  "ant": "",
+  "tip": "'free trial(무료 체험)', 'on a trial basis(시범적으로)'가 광고, 공지 지문에 자주 나온다. 토익에서는 '재판'보다 '시험, 체험'의 뜻이 훨씬 빈출이다.",
+  "q": {
+   "s": "The new scheduling system will be introduced on a ------- basis in the Seoul branch first.",
+   "o": [
+    "courteous",
+    "trial",
+    "fluent",
+    "durable"
+   ],
+   "a": 1,
+   "k": "서울 지점에 '먼저' 도입한다는 내용과 on a trial basis(시범적으로)라는 표현에 맞는 trial이 정답. 나머지 형용사는 basis와 결합하지 않는다."
+  }
+ },
+ {
+  "w": "phase",
+  "pos": "n",
+  "m": [
+   "단계",
+   "국면"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The first *phase* of the construction project is scheduled to finish in March.",
+  "exKo": "건설 프로젝트의 1단계는 3월에 끝날 예정이다.",
+  "col": [
+   {
+    "e": "the final phase",
+    "k": "마지막 단계"
+   },
+   {
+    "e": "in phases",
+    "k": "단계적으로"
+   },
+   {
+    "e": "phase out",
+    "k": "단계적으로 폐지하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "phased",
+    "pos": "adj",
+    "m": "단계적인"
+   }
+  ],
+  "para": [
+   "stage",
+   "step"
+  ],
+  "ant": "",
+  "tip": "'in the final phase of(~의 마지막 단계에서)'처럼 전치사 in과 쓰며, 구동사 phase out(단계적으로 없애다)도 Part 7에 나온다. stage로 패러프레이징된다.",
+  "q": {
+   "s": "The second ------- of the clinical trial will involve more than 500 volunteers.",
+   "o": [
+    "phase",
+    "phrase",
+    "merit",
+    "margin"
+   ],
+   "a": 0,
+   "k": "임상 시험의 '두 번째 단계'라는 뜻이 되어야 하므로 phase가 정답. 철자가 비슷한 phrase(구절)와 merit(장점), margin(여백, 이윤)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "release",
+  "pos": "v",
+  "m": [
+   "출시하다",
+   "공개하다",
+   "발표하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company will *release* its new line of wireless earbuds in early September.",
+  "exKo": "그 회사는 9월 초에 무선 이어폰 신제품 라인을 출시할 것이다.",
+  "col": [
+   {
+    "e": "release a new product",
+    "k": "신제품을 출시하다"
+   },
+   {
+    "e": "press release",
+    "k": "보도 자료"
+   },
+   {
+    "e": "release date",
+    "k": "출시일"
+   }
+  ],
+  "der": [],
+  "para": [
+   "launch",
+   "issue",
+   "make available"
+  ],
+  "ant": "",
+  "tip": "동사(출시하다, 공개하다)와 명사(출시, 공개)가 같은 형태이며, 'press release(보도 자료)'는 Part 7 지문 유형으로 자주 나온다. launch로 패러프레이징된다.",
+  "q": {
+   "s": "The quarterly sales figures will be ------- to shareholders next Monday.",
+   "o": [
+    "founded",
+    "occurred",
+    "consisted",
+    "released"
+   ],
+   "a": 3,
+   "k": "매출 수치가 주주들에게 '공개되다'라는 수동태가 되어야 하므로 released가 정답. occur, consist는 자동사라 수동태가 불가능하고, founded(설립된)는 수치와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "unveil",
+  "pos": "v",
+  "m": [
+   "공개하다",
+   "발표하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Kessler Motors *unveiled* its first electric pickup truck at the auto show yesterday.",
+  "exKo": "케슬러 모터스는 어제 자동차 쇼에서 첫 번째 전기 픽업트럭을 공개했다.",
+  "col": [
+   {
+    "e": "unveil a new product",
+    "k": "신제품을 공개하다"
+   },
+   {
+    "e": "unveil plans",
+    "k": "계획을 발표하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "unveiling",
+    "pos": "n",
+    "m": "공개(식), 제막(식)"
+   }
+  ],
+  "para": [
+   "reveal",
+   "introduce",
+   "present"
+  ],
+  "ant": "",
+  "tip": "'베일을 벗기다'에서 나온 말로 신제품이나 계획을 처음 공개할 때 쓴다. Part 7에서 introduce, announce, reveal로 바뀌어 나온다.",
+  "q": {
+   "s": "The mayor will ------- the design for the new public library at a press conference on Friday.",
+   "o": [
+    "undergo",
+    "unveil",
+    "uphold",
+    "unite"
+   ],
+   "a": 1,
+   "k": "기자 회견에서 새 도서관 설계안을 '공개하다'라는 뜻의 unveil이 정답. undergo(겪다), uphold(지지하다), unite(통합하다)는 design과 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "introduce",
+  "pos": "v",
+  "m": [
+   "도입하다",
+   "출시하다",
+   "소개하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The cafeteria will *introduce* a new vegetarian menu starting next Monday.",
+  "exKo": "구내식당은 다음 주 월요일부터 새로운 채식 메뉴를 도입할 것이다.",
+  "col": [
+   {
+    "e": "introduce a new policy",
+    "k": "새 정책을 도입하다"
+   },
+   {
+    "e": "introduce A to B",
+    "k": "A를 B에게 소개하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "introduction",
+    "pos": "n",
+    "m": "도입, 소개"
+   },
+   {
+    "w": "introductory",
+    "pos": "adj",
+    "m": "입문의, 출시 기념의"
+   }
+  ],
+  "para": [
+   "launch",
+   "bring in",
+   "implement"
+  ],
+  "ant": "",
+  "tip": "'소개하다' 외에 '(제도를) 도입하다, (제품을) 출시하다'의 뜻이 중요하다. 형용사 introductory는 'introductory price/offer(출시 기념 가격, 할인)'로 자주 나온다.",
+  "q": {
+   "s": "Since the new filing system was -------, employees have saved nearly an hour each day.",
+   "o": [
+    "introduction",
+    "introduced",
+    "introductory",
+    "introducing"
+   ],
+   "a": 1,
+   "k": "주어 system이 '도입된' 것이므로 was 뒤 수동태 과거분사 introduced가 정답. introducing은 능동이라 목적어가 필요하고, introduction은 명사, introductory는 형용사다."
+  }
+ },
+ {
+  "w": "upcoming",
+  "pos": "adj",
+  "m": [
+   "다가오는",
+   "곧 있을"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Staff members are encouraged to attend the *upcoming* workshop on data security.",
+  "exKo": "직원들은 곧 있을 데이터 보안 워크숍에 참석하도록 권장된다.",
+  "col": [
+   {
+    "e": "upcoming event",
+    "k": "곧 있을 행사"
+   },
+   {
+    "e": "upcoming release",
+    "k": "곧 있을 출시"
+   }
+  ],
+  "der": [],
+  "para": [
+   "forthcoming",
+   "coming",
+   "approaching"
+  ],
+  "ant": "",
+  "tip": "명사 앞에서만 쓰는 형용사로 'upcoming event/meeting/conference' 형태로 나온다. 명사 뒤나 be동사 뒤에서는 upcoming 대신 'coming up'을 쓴다.",
+  "q": {
+   "s": "Tickets for the ------- concert series go on sale this Friday at 10 A.M.",
+   "o": [
+    "expired",
+    "previous",
+    "outdated",
+    "upcoming"
+   ],
+   "a": 3,
+   "k": "이번 금요일부터 티켓을 판매하는 것은 '곧 있을' 공연이므로 upcoming이 정답. previous(이전의), expired(만료된), outdated(구식의)는 앞으로 판매할 티켓과 맞지 않는다."
+  }
+ },
+ {
+  "w": "anticipate",
+  "pos": "v",
+  "m": [
+   "예상하다",
+   "기대하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We *anticipate* a sharp increase in orders during the holiday season.",
+  "exKo": "우리는 연휴 시즌 동안 주문이 급증할 것으로 예상한다.",
+  "col": [
+   {
+    "e": "anticipate demand",
+    "k": "수요를 예상하다"
+   },
+   {
+    "e": "than anticipated",
+    "k": "예상했던 것보다"
+   },
+   {
+    "e": "eagerly anticipated",
+    "k": "몹시 기다려 온"
+   }
+  ],
+  "der": [
+   {
+    "w": "anticipation",
+    "pos": "n",
+    "m": "예상, 기대"
+   },
+   {
+    "w": "anticipated",
+    "pos": "adj",
+    "m": "예상된, 기대되는"
+   }
+  ],
+  "para": [
+   "expect",
+   "predict",
+   "foresee"
+  ],
+  "ant": "",
+  "tip": "'than anticipated(예상보다)', 'in anticipation of(~을 예상하여)' 형태가 자주 출제된다. 뒤에는 to부정사가 아닌 명사나 동명사(anticipate doing)가 온다.",
+  "q": {
+   "s": "The renovation took longer than ------- because of unexpected plumbing problems.",
+   "o": [
+    "anticipated",
+    "anticipate",
+    "anticipation",
+    "anticipating"
+   ],
+   "a": 0,
+   "k": "'예상했던 것보다'라는 뜻의 관용 표현 than anticipated가 정답. than 뒤에 동사원형 anticipate나 능동의 anticipating은 올 수 없고, anticipation은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "feasible",
+  "pos": "adj",
+  "m": [
+   "실현 가능한",
+   "실행 가능한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The consultants concluded that expanding into the Asian market is financially *feasible*.",
+  "exKo": "컨설턴트들은 아시아 시장으로의 확장이 재정적으로 실현 가능하다고 결론 내렸다.",
+  "col": [
+   {
+    "e": "economically feasible",
+    "k": "경제적으로 실현 가능한"
+   },
+   {
+    "e": "feasibility study",
+    "k": "타당성 조사"
+   }
+  ],
+  "der": [
+   {
+    "w": "feasibility",
+    "pos": "n",
+    "m": "실현 가능성, 타당성"
+   }
+  ],
+  "para": [
+   "practical",
+   "viable",
+   "possible"
+  ],
+  "ant": "impractical",
+  "tip": "'It is feasible to do(~하는 것이 실현 가능하다)'의 가주어 구문으로 자주 쓴다. 명사 feasibility는 'feasibility study(타당성 조사)'로 Part 7에 나온다.",
+  "q": {
+   "s": "The engineers are not sure whether it is ------- to finish the bridge before winter.",
+   "o": [
+    "eligible",
+    "feasible",
+    "reluctant",
+    "dependent"
+   ],
+   "a": 1,
+   "k": "가주어 it 뒤에서 '겨울 전에 완공하는 것이 실현 가능한지'라는 뜻이 되어야 하므로 feasible이 정답. eligible, reluctant는 사람이 주어일 때 to부정사를 받고, dependent는 on과 쓴다."
+  }
+ },
+ {
+  "w": "initial",
+  "pos": "adj",
+  "m": [
+   "초기의",
+   "처음의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *initial* cost of the equipment is high, but it will save money over time.",
+  "exKo": "그 장비는 초기 비용이 많이 들지만 시간이 지나면서 비용을 절감해 줄 것이다.",
+  "col": [
+   {
+    "e": "initial stage",
+    "k": "초기 단계"
+   },
+   {
+    "e": "initial investment",
+    "k": "초기 투자"
+   },
+   {
+    "e": "initial reaction",
+    "k": "첫 반응"
+   }
+  ],
+  "der": [
+   {
+    "w": "initially",
+    "pos": "adv",
+    "m": "처음에"
+   },
+   {
+    "w": "initiate",
+    "pos": "v",
+    "m": "시작하다, 착수하다"
+   },
+   {
+    "w": "initiative",
+    "pos": "n",
+    "m": "계획, 주도권"
+   }
+  ],
+  "para": [
+   "first",
+   "early",
+   "preliminary"
+  ],
+  "ant": "final",
+  "tip": "부사 initially(처음에)와의 품사 구분이 Part 5에 자주 나온다. 동사로 '이니셜로 서명하다'라는 뜻도 있어 'Please initial each page'가 계약서 지문에 등장한다.",
+  "q": {
+   "s": "------- reactions to the redesigned website have been overwhelmingly positive.",
+   "o": [
+    "Initial",
+    "Initially",
+    "Initiate",
+    "Initiation"
+   ],
+   "a": 0,
+   "k": "명사 reactions를 앞에서 수식하는 형용사 자리이므로 Initial이 정답. Initially는 부사, Initiate는 동사, Initiation은 명사라 reactions를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "preliminary",
+  "pos": "adj",
+  "m": [
+   "예비의",
+   "사전의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Preliminary* results suggest that the new formula reduces production costs by 10 percent.",
+  "exKo": "예비 결과에 따르면 새 배합을 쓰면 생산 비용이 10퍼센트 절감되는 것으로 보인다.",
+  "col": [
+   {
+    "e": "preliminary results",
+    "k": "예비 결과"
+   },
+   {
+    "e": "preliminary interview",
+    "k": "예비 면접"
+   },
+   {
+    "e": "preliminary report",
+    "k": "예비 보고서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "initial",
+   "early"
+  ],
+  "ant": "final",
+  "tip": "'preliminary results/findings/discussion'처럼 정식 단계에 앞선 '예비' 단계를 말할 때 쓰며, Part 7에서 initial로 패러프레이징된다. 명사로 쓰이면 '예선, 사전 준비'라는 뜻이다.",
+  "q": {
+   "s": "The ------- inspection of the building revealed minor problems with the electrical wiring.",
+   "o": [
+    "punctual",
+    "adjacent",
+    "courteous",
+    "preliminary"
+   ],
+   "a": 3,
+   "k": "건물에 대한 '예비' 점검에서 배선 문제가 드러났다는 뜻이므로 preliminary가 정답. punctual(시간을 지키는), courteous(예의 바른)는 사람에 쓰고, adjacent(인접한)는 inspection과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "comprehensive",
+  "pos": "adj",
+  "m": [
+   "포괄적인",
+   "종합적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "New employees receive a *comprehensive* guide to company policies on their first day.",
+  "exKo": "신입 직원은 첫날 회사 정책에 관한 종합 안내서를 받는다.",
+  "col": [
+   {
+    "e": "comprehensive review",
+    "k": "종합적인 검토"
+   },
+   {
+    "e": "comprehensive coverage",
+    "k": "포괄적인 보장"
+   },
+   {
+    "e": "a comprehensive list",
+    "k": "전체 목록"
+   }
+  ],
+  "der": [
+   {
+    "w": "comprehensively",
+    "pos": "adv",
+    "m": "포괄적으로"
+   },
+   {
+    "w": "comprehend",
+    "pos": "v",
+    "m": "이해하다"
+   },
+   {
+    "w": "comprehension",
+    "pos": "n",
+    "m": "이해(력)"
+   }
+  ],
+  "para": [
+   "thorough",
+   "complete",
+   "extensive"
+  ],
+  "ant": "",
+  "tip": "comprehensible(이해할 수 있는)과 혼동하기 쉬운 단어다. 'comprehensive insurance/coverage(종합 보험, 포괄적 보장)'도 자주 나온다.",
+  "q": {
+   "s": "The consultant prepared a ------- report covering every aspect of the company's operations.",
+   "o": [
+    "comprehension",
+    "comprehensive",
+    "comprehend",
+    "comprehensively"
+   ],
+   "a": 1,
+   "k": "관사 a와 명사 report 사이의 형용사 자리이며 '모든 측면을 다루는' 보고서이므로 comprehensive가 정답. comprehension은 명사, comprehend는 동사, comprehensively는 부사다."
+  }
+ },
+ {
+  "w": "thorough",
+  "pos": "adj",
+  "m": [
+   "철저한",
+   "빈틈없는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The auditors carried out a *thorough* review of the company's expense reports.",
+  "exKo": "감사관들은 회사의 경비 보고서를 철저하게 검토했다.",
+  "col": [
+   {
+    "e": "a thorough inspection",
+    "k": "철저한 점검"
+   },
+   {
+    "e": "thorough knowledge",
+    "k": "해박한 지식"
+   }
+  ],
+  "der": [
+   {
+    "w": "thoroughly",
+    "pos": "adv",
+    "m": "철저히, 완전히"
+   },
+   {
+    "w": "thoroughness",
+    "pos": "n",
+    "m": "철저함"
+   }
+  ],
+  "para": [
+   "careful",
+   "detailed",
+   "comprehensive"
+  ],
+  "ant": "superficial",
+  "tip": "부사 thoroughly(철저히)와의 품사 구분 문제가 단골이며, through(~을 통해), though(비록 ~이지만)와의 철자 혼동에 주의하자.",
+  "q": {
+   "s": "All applications will be given a ------- review by the hiring committee before interviews are scheduled.",
+   "o": [
+    "thoroughly",
+    "thoroughness",
+    "throughout",
+    "thorough"
+   ],
+   "a": 3,
+   "k": "관사 a와 명사 review 사이의 형용사 자리이므로 thorough가 정답. thoroughly는 부사, thoroughness는 명사, throughout은 전치사/부사다."
+  }
+ },
+ {
+  "w": "examine",
+  "pos": "v",
+  "m": [
+   "조사하다",
+   "검토하다",
+   "검사하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "The committee will *examine* each proposal carefully before selecting a supplier.",
+  "exKo": "위원회는 공급업체를 선정하기 전에 각 제안서를 꼼꼼히 검토할 것이다.",
+  "col": [
+   {
+    "e": "examine closely",
+    "k": "면밀히 조사하다"
+   },
+   {
+    "e": "examine a document",
+    "k": "서류를 검토하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "examination",
+    "pos": "n",
+    "m": "조사, 검사, 시험"
+   },
+   {
+    "w": "examiner",
+    "pos": "n",
+    "m": "검사관, 시험관"
+   }
+  ],
+  "para": [
+   "inspect",
+   "review",
+   "look into"
+  ],
+  "ant": "",
+  "tip": "타동사이므로 전치사 없이 바로 목적어를 받는다. Part 1에서 'A man is examining a document(남자가 서류를 살펴보고 있다)'처럼 사진 묘사에도 쓰인다.",
+  "q": {
+   "s": "The mechanic ------- the engine carefully but could not find the source of the noise.",
+   "o": [
+    "resided",
+    "consulted",
+    "examined",
+    "arrived"
+   ],
+   "a": 2,
+   "k": "정비사가 엔진을 '꼼꼼히 살펴보았지만' 소음 원인을 찾지 못했다는 흐름이므로 examined가 정답. resided, arrived는 자동사라 목적어를 받을 수 없고, consulted(상의했다)는 엔진과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "investigate",
+  "pos": "v",
+  "m": [
+   "조사하다",
+   "수사하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The customer service team is *investigating* the cause of the billing error.",
+  "exKo": "고객 서비스팀은 청구 오류의 원인을 조사하고 있다.",
+  "col": [
+   {
+    "e": "investigate a complaint",
+    "k": "불만 사항을 조사하다"
+   },
+   {
+    "e": "investigate the cause",
+    "k": "원인을 조사하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "investigation",
+    "pos": "n",
+    "m": "조사, 수사"
+   },
+   {
+    "w": "investigator",
+    "pos": "n",
+    "m": "조사관"
+   }
+  ],
+  "para": [
+   "look into",
+   "examine",
+   "probe"
+  ],
+  "ant": "",
+  "tip": "명사 investigation은 'under investigation(조사 중인)'으로 자주 쓰이며, 동사는 Part 7에서 look into로 패러프레이징되는 경우가 많다.",
+  "q": {
+   "s": "The maintenance manager has promised to ------- the cause of the frequent power outages.",
+   "o": [
+    "investigate",
+    "investigation",
+    "investigator",
+    "investigative"
+   ],
+   "a": 0,
+   "k": "promise to 뒤에는 동사원형이 오므로 investigate가 정답. investigation, investigator는 명사, investigative는 형용사다."
+  }
+ },
+ {
+  "w": "demonstrate",
+  "pos": "v",
+  "m": [
+   "시연하다",
+   "(시범을 통해) 보여 주다",
+   "입증하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "A sales representative will *demonstrate* how to use the new photocopier.",
+  "exKo": "영업 담당자가 새 복사기 사용법을 시연할 것이다.",
+  "col": [
+   {
+    "e": "demonstrate a product",
+    "k": "제품을 시연하다"
+   },
+   {
+    "e": "demonstrate how to",
+    "k": "~하는 법을 보여 주다"
+   }
+  ],
+  "der": [
+   {
+    "w": "demonstration",
+    "pos": "n",
+    "m": "시연, 시범"
+   },
+   {
+    "w": "demonstrator",
+    "pos": "n",
+    "m": "시연자"
+   }
+  ],
+  "para": [
+   "show",
+   "prove",
+   "illustrate"
+  ],
+  "ant": "",
+  "tip": "'product demonstration(제품 시연)'이 LC 빈출 표현이며, '입증하다'의 뜻으로는 'demonstrate that절'이나 'demonstrate an ability'처럼 쓴다.",
+  "q": {
+   "s": "Applicants must ------- a strong ability to work independently.",
+   "o": [
+    "demonstration",
+    "demonstrate",
+    "demonstrative",
+    "demonstrably"
+   ],
+   "a": 1,
+   "k": "조동사 must 뒤에는 동사원형이 오므로 demonstrate(보여 주다, 입증하다)가 정답. demonstration은 명사, demonstrative는 형용사, demonstrably는 부사다."
+  }
+ },
+ {
+  "w": "compatible",
+  "pos": "adj",
+  "m": [
+   "호환되는",
+   "양립할 수 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "This printer is *compatible* with most laptops and tablets on the market.",
+  "exKo": "이 프린터는 시중에 나와 있는 대부분의 노트북 및 태블릿과 호환된다.",
+  "col": [
+   {
+    "e": "be compatible with",
+    "k": "~와 호환되다"
+   },
+   {
+    "e": "fully compatible",
+    "k": "완벽하게 호환되는"
+   }
+  ],
+  "der": [
+   {
+    "w": "compatibility",
+    "pos": "n",
+    "m": "호환성"
+   },
+   {
+    "w": "incompatible",
+    "pos": "adj",
+    "m": "호환되지 않는"
+   }
+  ],
+  "para": [
+   "works with"
+  ],
+  "ant": "incompatible",
+  "tip": "전치사 with와 짝을 이루는 'be compatible with'가 핵심이다. 철자가 비슷한 comparable(비교할 만한), competitive(경쟁력 있는)가 어휘 문제의 함정으로 나온다.",
+  "q": {
+   "s": "Please make sure that the replacement battery is ------- with your camera model.",
+   "o": [
+    "comparable",
+    "competitive",
+    "complimentary",
+    "compatible"
+   ],
+   "a": 3,
+   "k": "교체용 배터리가 카메라 모델과 '호환되는지' 확인하라는 뜻이므로 compatible이 정답. comparable(비교할 만한), competitive(경쟁력 있는), complimentary(무료의)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "user-friendly",
+  "pos": "adj",
+  "m": [
+   "사용하기 쉬운",
+   "사용자 친화적인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Customers appreciate the *user-friendly* design of our online booking system.",
+  "exKo": "고객들은 우리 온라인 예약 시스템의 사용하기 쉬운 디자인을 높이 평가한다.",
+  "col": [
+   {
+    "e": "user-friendly interface",
+    "k": "사용하기 쉬운 인터페이스"
+   },
+   {
+    "e": "user-friendly software",
+    "k": "사용하기 쉬운 소프트웨어"
+   }
+  ],
+  "der": [],
+  "para": [
+   "easy to use",
+   "intuitive",
+   "simple to operate"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 'easy to use', 'simple to operate'로 패러프레이징되며, 제품 리뷰나 광고 지문에서 제품의 장점을 묻는 문제의 정답 근거가 된다.",
+  "q": {
+   "s": "Thanks to its ------- interface, even first-time users can set up the device within minutes.",
+   "o": [
+    "complicated",
+    "outdated",
+    "user-friendly",
+    "fragile"
+   ],
+   "a": 2,
+   "k": "처음 쓰는 사람도 몇 분 만에 설치할 수 있다는 내용이므로 '사용하기 쉬운' 인터페이스라는 뜻의 user-friendly가 정답. complicated(복잡한), outdated(구식의)는 문맥과 반대이고, fragile(깨지기 쉬운)은 interface와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "version",
+  "pos": "n",
+  "m": [
+   "(제품, 문서의) 판",
+   "버전"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The updated *version* of the app allows users to pay bills directly from their phones.",
+  "exKo": "그 앱의 업데이트된 버전에서는 휴대폰으로 직접 요금을 납부할 수 있다.",
+  "col": [
+   {
+    "e": "the latest version",
+    "k": "최신 버전"
+   },
+   {
+    "e": "revised version",
+    "k": "수정본"
+   },
+   {
+    "e": "an earlier version",
+    "k": "이전 버전"
+   }
+  ],
+  "der": [],
+  "para": [
+   "edition",
+   "model"
+  ],
+  "ant": "",
+  "tip": "'the latest/updated/revised version of'처럼 형용사와 함께 쓰이며, 문서의 '수정본(revised version)'을 가리킬 때도 쓴다. edition으로 바꿔 표현되기도 한다.",
+  "q": {
+   "s": "Please discard the draft and refer to the revised ------- of the contract attached to this e-mail.",
+   "o": [
+    "version",
+    "vision",
+    "verdict",
+    "venture"
+   ],
+   "a": 0,
+   "k": "초안 대신 참고해야 할 계약서의 '수정본'이므로 revised version이 정답. vision(비전), verdict(평결), venture(벤처 사업)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "obsolete",
+  "pos": "adj",
+  "m": [
+   "더 이상 쓰이지 않는",
+   "구식의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Many of the office's fax machines have become *obsolete* since the switch to digital forms.",
+  "exKo": "디지털 서식으로 전환한 이후 사무실의 팩스기 상당수가 더 이상 쓰이지 않게 되었다.",
+  "col": [
+   {
+    "e": "become obsolete",
+    "k": "쓸모없게 되다"
+   },
+   {
+    "e": "obsolete equipment",
+    "k": "구식 장비"
+   }
+  ],
+  "der": [
+   {
+    "w": "obsolescence",
+    "pos": "n",
+    "m": "노후화, 구식화"
+   }
+  ],
+  "para": [
+   "outdated",
+   "out of date",
+   "old-fashioned"
+  ],
+  "ant": "up-to-date",
+  "tip": "'become/render obsolete(쓸모없게 되다/만들다)' 형태로 자주 쓰이며, Part 7에서 outdated, no longer used로 패러프레이징된다.",
+  "q": {
+   "s": "Rapid advances in technology can make expensive equipment ------- within just a few years.",
+   "o": [
+    "obedient",
+    "obsolete",
+    "abundant",
+    "eager"
+   ],
+   "a": 1,
+   "k": "기술의 급속한 발전이 장비를 몇 년 만에 '구식으로' 만든다는 뜻이므로 obsolete가 정답. obedient(순종적인), eager(열망하는)는 사람에 쓰고, abundant(풍부한)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "improvement",
+  "pos": "n",
+  "m": [
+   "개선",
+   "향상"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The survey showed a significant *improvement* in customer satisfaction after the renovation.",
+  "exKo": "설문 조사 결과 개조 공사 이후 고객 만족도가 크게 향상된 것으로 나타났다.",
+  "col": [
+   {
+    "e": "improvement in",
+    "k": "~의 향상"
+   },
+   {
+    "e": "make improvements to",
+    "k": "~을 개선하다"
+   },
+   {
+    "e": "home improvement",
+    "k": "주택 개조"
+   }
+  ],
+  "der": [
+   {
+    "w": "improve",
+    "pos": "v",
+    "m": "개선하다, 향상시키다"
+   },
+   {
+    "w": "improved",
+    "pos": "adj",
+    "m": "개선된"
+   }
+  ],
+  "para": [
+   "enhancement",
+   "upgrade",
+   "progress"
+  ],
+  "ant": "",
+  "tip": "'improvement in(~의 향상)'과 'improvements to(~에 대한 개선 작업)'의 전치사 구분이 출제되며, 동사 improve와의 품사 자리 문제도 자주 나온다.",
+  "q": {
+   "s": "There has been a noticeable ------- in the quality of our products since the new supplier was hired.",
+   "o": [
+    "improve",
+    "improved",
+    "improving",
+    "improvement"
+   ],
+   "a": 3,
+   "k": "관사 a와 형용사 noticeable 뒤의 명사 자리이므로 improvement가 정답. improve는 동사, improved는 과거분사, improving은 분사로 명사 자리에 맞지 않는다."
+  }
+ },
+ {
+  "w": "intellectual property",
+  "pos": "phr",
+  "m": [
+   "지적 재산(권)"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The firm hired a lawyer to protect its *intellectual property* in overseas markets.",
+  "exKo": "그 회사는 해외 시장에서 지적 재산권을 보호하기 위해 변호사를 고용했다.",
+  "col": [
+   {
+    "e": "protect intellectual property",
+    "k": "지적 재산권을 보호하다"
+   },
+   {
+    "e": "intellectual property rights",
+    "k": "지적 재산권"
+   }
+  ],
+  "der": [],
+  "para": [
+   "IP",
+   "patents and trademarks"
+  ],
+  "ant": "",
+  "tip": "IP로 줄여 쓰며 patent(특허), copyright(저작권), trademark(상표)를 포괄하는 개념이다. 이 의미의 property는 불가산명사라 관사 없이 쓴다.",
+  "q": {
+   "s": "Employees must not share designs or other intellectual ------- with anyone outside the company.",
+   "o": [
+    "proprietor",
+    "properly",
+    "property",
+    "proper"
+   ],
+   "a": 2,
+   "k": "형용사 intellectual의 수식을 받는 명사 자리이며 '지적 재산'이라는 뜻이 되어야 하므로 property가 정답. proprietor는 '소유주'라는 사람명사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "sophisticated",
+  "pos": "adj",
+  "m": [
+   "정교한",
+   "고도로 발달한",
+   "세련된"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The warehouse uses a *sophisticated* system to track every shipment in real time.",
+  "exKo": "그 창고는 모든 배송품을 실시간으로 추적하기 위해 정교한 시스템을 사용한다.",
+  "col": [
+   {
+    "e": "sophisticated technology",
+    "k": "고도의 기술"
+   },
+   {
+    "e": "sophisticated equipment",
+    "k": "정교한 장비"
+   }
+  ],
+  "der": [
+   {
+    "w": "sophistication",
+    "pos": "n",
+    "m": "정교함, 세련됨"
+   }
+  ],
+  "para": [
+   "advanced",
+   "complex",
+   "state-of-the-art"
+  ],
+  "ant": "primitive",
+  "tip": "기계, 기술에 쓰면 '정교한, 고도로 발달한', 사람이나 취향에 쓰면 '세련된'의 뜻이다. Part 7에서 advanced로 패러프레이징된다.",
+  "q": {
+   "s": "The bank has installed a highly ------- security system to protect customer information.",
+   "o": [
+    "sophistication",
+    "sophisticate",
+    "sophisticated",
+    "sophisticating"
+   ],
+   "a": 2,
+   "k": "부사 highly의 수식을 받으며 명사 system을 꾸미는 형용사 자리이므로 '정교한'이라는 뜻의 sophisticated가 정답. sophistication은 명사, sophisticate는 동사/명사다."
+  }
+ }
+]

@@ -1,0 +1,2621 @@
+{
+ "part1": [
+  {
+   "g": "사무실·업무",
+   "e": "Some files are *stacked* on the desk.",
+   "k": "서류철 몇 개가 책상 위에 쌓여 있다.",
+   "key": "be stacked",
+   "keyKo": "쌓여 있다",
+   "tip": "사물 상태는 'be + p.p.' 또는 'have been p.p.'로 묘사한다."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "A woman is *typing on a keyboard*.",
+   "k": "한 여자가 키보드로 타자를 치고 있다.",
+   "key": "type on a keyboard",
+   "keyKo": "키보드로 타자를 치다",
+   "tip": "손 동작이 비슷한 'writing', 'using a mouse'와 바꿔 내는 오답에 주의한다."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "A man is *making a photocopy*.",
+   "k": "한 남자가 복사를 하고 있다.",
+   "key": "make a photocopy",
+   "keyKo": "복사하다",
+   "tip": "같은 장면이 'using a copy machine', 'operating a photocopier'로도 나온다."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "A man is *reaching for* a binder on the shelf.",
+   "k": "한 남자가 선반 위 바인더를 향해 손을 뻗고 있다.",
+   "key": "reach for",
+   "keyKo": "~을 잡으려고 손을 뻗다",
+   "tip": "reach for는 아직 잡지 않은 상태다. 이미 손에 쥐고 있으면 'holding'이 정답이다."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "A woman is *talking on the phone*.",
+   "k": "한 여자가 전화 통화를 하고 있다.",
+   "key": "talk on the phone",
+   "keyKo": "전화 통화를 하다",
+   "tip": "수화기를 귀에 대고 있을 때만 정답이다. 전화기가 책상 위에 놓여 있기만 하면 오답."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "The man is *looking at a monitor*.",
+   "k": "남자가 모니터를 보고 있다.",
+   "key": "look at a monitor",
+   "keyKo": "모니터를 보다",
+   "tip": "시선이 어디를 향하는지 확인하자. looking at, staring at, gazing at 모두 '보다'."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "Some papers are *scattered* across the desk.",
+   "k": "서류 몇 장이 책상 여기저기에 흩어져 있다.",
+   "key": "be scattered",
+   "keyKo": "흩어져 있다",
+   "tip": "scattered는 정돈되지 않은 상태, stacked·piled는 쌓여 있는 상태로 구분한다."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "A file cabinet drawer *has been left open*.",
+   "k": "서류 캐비닛 서랍이 열린 채로 있다.",
+   "key": "be left open",
+   "keyKo": "열린 채로 있다",
+   "tip": "'be left + 형용사/p.p.'는 사물 상태를 묘사하는 단골 표현이다."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "The woman is *filing* some documents.",
+   "k": "여자가 서류를 철해서 정리하고 있다.",
+   "key": "file documents",
+   "keyKo": "서류를 철하다, 정리해 넣다",
+   "tip": "명사 file(서류철)뿐 아니라 동사 file(철하다, 정리해 넣다)도 함께 기억하자."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "A woman is *writing on a notepad*.",
+   "k": "한 여자가 메모장에 무언가를 적고 있다.",
+   "key": "write on a notepad",
+   "keyKo": "메모장에 적다",
+   "tip": "writing과 reading처럼 손과 시선의 동작을 비교해 고르게 하는 문제가 많다."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "Some of the chairs are *unoccupied*.",
+   "k": "의자 몇 개가 비어 있다.",
+   "key": "be unoccupied",
+   "keyKo": "비어 있다",
+   "tip": "occupied(사용 중인) ↔ unoccupied·empty·vacant(비어 있는). 사람이 없는 사진의 정답으로 자주 나온다."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "A man is *plugging* a cord *into* an outlet.",
+   "k": "한 남자가 전선을 콘센트에 꽂고 있다.",
+   "key": "plug A into B",
+   "keyKo": "A를 B에 꽂다",
+   "tip": "outlet은 '콘센트'라는 뜻으로 Part 1에 자주 나온다."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "The copier *is being repaired*.",
+   "k": "복사기가 수리되고 있다.",
+   "key": "be being repaired",
+   "keyKo": "수리되고 있다",
+   "tip": "'is being p.p.'(진행 수동태)는 지금 누군가 그 동작을 하고 있다는 뜻이다. 수리하는 사람이 사진에 있어야 정답이고, 사람 없이 복사기만 있으면 오답이다."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "A man is *leaning back in* his chair.",
+   "k": "한 남자가 의자에 등을 기대고 있다.",
+   "key": "lean back in a chair",
+   "keyKo": "의자에 등을 기대다",
+   "tip": "lean back(뒤로 기대다)과 lean forward(앞으로 숙이다)의 방향을 구분해 듣자."
+  },
+  {
+   "g": "사무실·업무",
+   "e": "The woman is *wearing* a headset.",
+   "k": "여자가 헤드셋을 착용하고 있다.",
+   "key": "be wearing",
+   "keyKo": "착용하고 있다",
+   "tip": "wearing은 착용한 상태, putting on은 착용하는 동작이다. 사진에서는 대부분 wearing이 정답이다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "Some merchandise is *displayed* in a store window.",
+   "k": "상품 몇 개가 가게 진열창에 진열되어 있다.",
+   "key": "be displayed",
+   "keyKo": "진열되어 있다",
+   "tip": "'on display'도 같은 뜻이다. 예외적으로 'is being displayed'는 사람이 없어도 정답이 될 수 있다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "A customer is *browsing* through a rack of clothing.",
+   "k": "한 손님이 옷걸이에 걸린 옷들을 둘러보고 있다.",
+   "key": "browse",
+   "keyKo": "(상품을) 둘러보다",
+   "tip": "browse는 '이것저것 구경하다'라는 뜻으로 매장 사진의 단골 동사다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "A man is *trying on* a jacket.",
+   "k": "한 남자가 재킷을 입어 보고 있다.",
+   "key": "try on",
+   "keyKo": "(옷 등을) 입어 보다",
+   "tip": "try on은 입어 보는 동작이다. 거울 앞에서 옷을 걸쳐 보는 장면에 주로 나온다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "The shelves *are being stocked*.",
+   "k": "선반에 물건이 채워지고 있다.",
+   "key": "be being stocked",
+   "keyKo": "(물건이) 채워지고 있다",
+   "tip": "'is being p.p.'(진행 수동태)는 지금 누군가 그 동작을 하고 있다는 뜻이다. 직원이 물건을 채우는 모습이 보여야 정답이다. 이미 다 채워진 선반이면 'The shelves are stocked.'"
+  },
+  {
+   "g": "상점·식당",
+   "e": "The shelves are *stocked with* canned goods.",
+   "k": "선반이 통조림 제품으로 채워져 있다.",
+   "key": "be stocked with",
+   "keyKo": "~으로 채워져 있다",
+   "tip": "사람이 없는 진열대 사진이라면 being이 없는 상태 수동태가 정답이다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "A shopper is *pushing a cart* down an aisle.",
+   "k": "한 쇼핑객이 통로를 따라 카트를 밀고 있다.",
+   "key": "push a cart",
+   "keyKo": "카트를 밀다",
+   "tip": "aisle(통로)은 s가 묵음이라 [아일]로 발음된다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "A customer is *paying for* some items at the counter.",
+   "k": "한 손님이 계산대에서 물건값을 계산하고 있다.",
+   "key": "pay for",
+   "keyKo": "~의 값을 치르다",
+   "tip": "계산대 장면에서는 cashier(계산원), register(금전 등록기)도 함께 나온다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "A server is *pouring* water into a glass.",
+   "k": "종업원이 잔에 물을 따르고 있다.",
+   "key": "pour",
+   "keyKo": "따르다, 붓다",
+   "tip": "pour[포어]의 발음을 익혀 두자. pouring과 drinking을 바꿔 내는 오답에 주의한다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "A customer is *reading a menu*.",
+   "k": "한 손님이 메뉴를 보고 있다.",
+   "key": "read a menu",
+   "keyKo": "메뉴를 보다",
+   "tip": "같은 장면이 'looking at a menu', 'studying a menu'로도 나온다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "A server is *taking an order*.",
+   "k": "종업원이 주문을 받고 있다.",
+   "key": "take an order",
+   "keyKo": "주문을 받다",
+   "tip": "메모지를 든 종업원이 손님 옆에 서 있는 장면이 전형적이다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "A woman is *examining* a piece of fruit.",
+   "k": "한 여자가 과일 하나를 살펴보고 있다.",
+   "key": "examine",
+   "keyKo": "자세히 살펴보다",
+   "tip": "examine, inspect, look over, check 모두 '살펴보다'로 묶어 외우자."
+  },
+  {
+   "g": "상점·식당",
+   "e": "Some tables *have been set* for a meal.",
+   "k": "식사를 위해 테이블 몇 개가 차려져 있다.",
+   "key": "be set (for a meal)",
+   "keyKo": "(상이) 차려져 있다",
+   "tip": "set the table(상을 차리다)의 수동형이다. 사람이 상을 차리는 중이라면 'is being set'."
+  },
+  {
+   "g": "상점·식당",
+   "e": "Price tags *have been attached to* the items.",
+   "k": "상품에 가격표가 붙어 있다.",
+   "key": "be attached to",
+   "keyKo": "~에 붙어 있다",
+   "tip": "attach(붙이다) ↔ remove(떼다). 사물 상태는 완료 수동태로 자주 묘사된다."
+  },
+  {
+   "g": "상점·식당",
+   "e": "A worker is *wiping off* a counter.",
+   "k": "한 직원이 카운터를 닦고 있다.",
+   "key": "wipe off",
+   "keyKo": "닦아 내다",
+   "tip": "청소 동사를 구분하자. wipe(천으로 닦다), mop(대걸레질하다), sweep(빗자루로 쓸다)."
+  },
+  {
+   "g": "상점·식당",
+   "e": "Some customers are *waiting in line*.",
+   "k": "손님 몇 명이 줄을 서서 기다리고 있다.",
+   "key": "wait in line",
+   "keyKo": "줄을 서서 기다리다",
+   "tip": "'standing in line', 'forming a line'도 같은 장면에 쓰인다."
+  },
+  {
+   "g": "거리·교통",
+   "e": "Some cars are *parked* along the street.",
+   "k": "차 몇 대가 길을 따라 주차되어 있다.",
+   "key": "be parked",
+   "keyKo": "주차되어 있다",
+   "tip": "사람이 없는 사진에서 'is being parked'가 들리면 오답이다."
+  },
+  {
+   "g": "거리·교통",
+   "e": "Trees *line the street*.",
+   "k": "나무들이 길을 따라 늘어서 있다.",
+   "key": "line the street",
+   "keyKo": "길을 따라 늘어서 있다",
+   "tip": "동사 line(줄지어 서 있다)은 능동형으로 상태를 묘사한다. 'The street is lined with trees.'도 같은 뜻이다."
+  },
+  {
+   "g": "거리·교통",
+   "e": "Some vehicles are *lined up* at a traffic light.",
+   "k": "차량 몇 대가 신호등 앞에 줄지어 서 있다.",
+   "key": "be lined up",
+   "keyKo": "줄지어 서 있다",
+   "tip": "사람에게도 사물에게도 쓴다. 'in a row(한 줄로)'와 함께 자주 나온다."
+  },
+  {
+   "g": "거리·교통",
+   "e": "Passengers are *boarding* a bus.",
+   "k": "승객들이 버스에 탑승하고 있다.",
+   "key": "board",
+   "keyKo": "탑승하다",
+   "tip": "board ↔ get off·step off(내리다). 사람이 타는 방향인지 내리는 방향인지 확인하자."
+  },
+  {
+   "g": "거리·교통",
+   "e": "A woman is *stepping off* a train.",
+   "k": "한 여자가 기차에서 내리고 있다.",
+   "key": "step off",
+   "keyKo": "(차량에서) 내리다",
+   "tip": "get off, exit도 같은 의미로 쓰인다."
+  },
+  {
+   "g": "거리·교통",
+   "e": "Some people are *crossing the street*.",
+   "k": "사람 몇 명이 길을 건너고 있다.",
+   "key": "cross the street",
+   "keyKo": "길을 건너다",
+   "tip": "'at a crosswalk(횡단보도에서)'와 함께 자주 나온다."
+  },
+  {
+   "g": "거리·교통",
+   "e": "A bicycle is *leaning against* a pole.",
+   "k": "자전거 한 대가 기둥에 기대어 세워져 있다.",
+   "key": "lean against",
+   "keyKo": "~에 기대어 있다",
+   "tip": "사람뿐 아니라 자전거·사다리 같은 사물 주어에도 lean against를 쓴다."
+  },
+  {
+   "g": "거리·교통",
+   "e": "Some people are *waiting on a platform*.",
+   "k": "사람 몇 명이 승강장에서 기다리고 있다.",
+   "key": "wait on a platform",
+   "keyKo": "승강장에서 기다리다",
+   "tip": "기차역 사진의 핵심 어휘: platform(승강장), track(선로), railing(난간)."
+  },
+  {
+   "g": "거리·교통",
+   "e": "Traffic is *moving in both directions*.",
+   "k": "차량이 양방향으로 움직이고 있다.",
+   "key": "move in both directions",
+   "keyKo": "양방향으로 움직이다",
+   "tip": "in both directions(양방향)와 in the same direction(같은 방향)을 구분해 듣자."
+  },
+  {
+   "g": "거리·교통",
+   "e": "A man is *loading* luggage *into* a trunk.",
+   "k": "한 남자가 트렁크에 짐을 싣고 있다.",
+   "key": "load A into B",
+   "keyKo": "A를 B에 싣다",
+   "tip": "load(싣다) ↔ unload(내리다). 짐이 들어가는 방향인지 나오는 방향인지 확인하자."
+  },
+  {
+   "g": "거리·교통",
+   "e": "Some pedestrians are *walking along* a sidewalk.",
+   "k": "보행자 몇 명이 인도를 따라 걷고 있다.",
+   "key": "walk along",
+   "keyKo": "~을 따라 걷다",
+   "tip": "sidewalk(인도), pedestrian(보행자)은 거리 사진의 필수 어휘다."
+  },
+  {
+   "g": "거리·교통",
+   "e": "A car is *stopped at* an intersection.",
+   "k": "차 한 대가 교차로에 멈춰 서 있다.",
+   "key": "be stopped at",
+   "keyKo": "~에 멈춰 서 있다",
+   "tip": "intersection(교차로), traffic light(신호등)도 함께 기억하자."
+  },
+  {
+   "g": "거리·교통",
+   "e": "A car *is being washed*.",
+   "k": "차 한 대가 세차되고 있다.",
+   "key": "be being washed",
+   "keyKo": "세차되고 있다",
+   "tip": "'is being p.p.'(진행 수동태)는 지금 누군가 그 동작을 하고 있다는 뜻이다. 세차하는 사람이 보여야 정답이다. 'A man is washing a car.'와 같은 의미다."
+  },
+  {
+   "g": "거리·교통",
+   "e": "A man is *riding a bicycle*.",
+   "k": "한 남자가 자전거를 타고 있다.",
+   "key": "ride a bicycle",
+   "keyKo": "자전거를 타다",
+   "tip": "타고 가는 riding과 끌고 가는 pushing·walking a bicycle을 구분하자."
+  },
+  {
+   "g": "거리·교통",
+   "e": "A traffic sign is *posted* at the corner.",
+   "k": "모퉁이에 교통 표지판이 세워져 있다.",
+   "key": "be posted",
+   "keyKo": "게시되어 있다",
+   "tip": "post(게시하다)는 sign, notice와 잘 어울린다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "A building is *under construction*.",
+   "k": "건물 하나가 공사 중이다.",
+   "key": "be under construction",
+   "keyKo": "공사 중이다",
+   "tip": "under renovation(보수 중), under repair(수리 중)도 함께 기억하자."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "Workers are *paving* a road.",
+   "k": "인부들이 도로를 포장하고 있다.",
+   "key": "pave",
+   "keyKo": "(도로를) 포장하다",
+   "tip": "paved road(포장도로), pavement(포장 도로, 보도)도 함께 나온다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "A ladder is *propped against* a wall.",
+   "k": "사다리 하나가 벽에 기대어 세워져 있다.",
+   "key": "be propped against",
+   "keyKo": "~에 받쳐 세워져 있다",
+   "tip": "'is leaning against'와 같은 뜻으로, 사다리 사진의 단골 정답이다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "Some bricks are *piled* on the ground.",
+   "k": "벽돌이 바닥에 쌓여 있다.",
+   "key": "be piled",
+   "keyKo": "쌓여 있다",
+   "tip": "'in a pile', 'stacked'도 같은 장면에 쓴다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "A man is *operating* heavy machinery.",
+   "k": "한 남자가 중장비를 조작하고 있다.",
+   "key": "operate machinery",
+   "keyKo": "기계를 작동하다",
+   "tip": "machinery는 불가산명사다. operate, run, use 모두 정답 표현으로 나올 수 있다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "A worker is *climbing a ladder*.",
+   "k": "한 인부가 사다리를 오르고 있다.",
+   "key": "climb a ladder",
+   "keyKo": "사다리를 오르다",
+   "tip": "사다리가 세워져 있기만 하고 아무도 오르지 않으면 climbing은 오답이다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "Workers are *unloading* materials from a truck.",
+   "k": "인부들이 트럭에서 자재를 내리고 있다.",
+   "key": "unload A from B",
+   "keyKo": "B에서 A를 내리다",
+   "tip": "load와 unload를 바꿔 치는 오답에 주의한다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "A wall *is being painted*.",
+   "k": "벽이 페인트칠되고 있다.",
+   "key": "be being painted",
+   "keyKo": "칠해지고 있다",
+   "tip": "'is being p.p.'(진행 수동태)는 지금 누군가 그 동작을 하고 있다는 뜻이다. 붓이나 롤러로 칠하는 사람이 있어야 정답이다. 칠이 끝난 벽은 'has been painted'."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "A worker is *drilling a hole* in the wall.",
+   "k": "한 인부가 벽에 구멍을 뚫고 있다.",
+   "key": "drill a hole",
+   "keyKo": "구멍을 뚫다",
+   "tip": "공구 이름도 익혀 두자: drill(드릴), hammer(망치), saw(톱)."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "A man is *measuring* a piece of wood.",
+   "k": "한 남자가 나무판의 치수를 재고 있다.",
+   "key": "measure",
+   "keyKo": "치수를 재다",
+   "tip": "줄자(tape measure)를 들고 있는 장면이 전형적이다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "A man is *carrying a plank on his shoulder*.",
+   "k": "한 남자가 널빤지를 어깨에 메고 나르고 있다.",
+   "key": "carry ~ on one's shoulder",
+   "keyKo": "~을 어깨에 메고 나르다",
+   "tip": "on his shoulder(어깨에), in his arms(품에), under his arm(옆구리에) 등 위치 표현을 끝까지 듣자."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "Scaffolding *has been put up* beside a building.",
+   "k": "건물 옆에 비계가 설치되어 있다.",
+   "key": "be put up",
+   "keyKo": "세워져 있다, 설치되어 있다",
+   "tip": "scaffolding(공사장 비계)은 공사 사진의 핵심 명사다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "A worker is *sweeping up* debris.",
+   "k": "한 인부가 잔해를 쓸어 담고 있다.",
+   "key": "sweep up",
+   "keyKo": "쓸어 담다",
+   "tip": "debris는 s가 묵음이라 [데브리]로 발음된다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "A man is *bending over* a workbench.",
+   "k": "한 남자가 작업대 위로 몸을 숙이고 있다.",
+   "key": "bend over",
+   "keyKo": "몸을 굽히다, 숙이다",
+   "tip": "'leaning over'와 같은 장면에 쓴다."
+  },
+  {
+   "g": "공사·작업 현장",
+   "e": "Some traffic cones *have been placed* on the road.",
+   "k": "도로 위에 원뿔형 표지 몇 개가 놓여 있다.",
+   "key": "be placed",
+   "keyKo": "놓여 있다",
+   "tip": "공사장 사진에서는 cone(원뿔형 표지), barrier(차단벽)가 자주 나온다."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A picture is *hanging* on the wall.",
+   "k": "벽에 그림 한 점이 걸려 있다.",
+   "key": "be hanging",
+   "keyKo": "걸려 있다",
+   "tip": "hang은 능동 진행형(is hanging)으로도 상태를 나타낸다. 'has been hung'과 같은 뜻이다."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A television is *mounted on* the wall.",
+   "k": "텔레비전이 벽에 설치되어 있다.",
+   "key": "be mounted on",
+   "keyKo": "~에 고정 설치되어 있다",
+   "tip": "벽걸이 TV, 선반, 시계처럼 고정된 사물에 쓴다."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "Some cushions are *arranged* on a sofa.",
+   "k": "쿠션 몇 개가 소파 위에 가지런히 놓여 있다.",
+   "key": "be arranged",
+   "keyKo": "배치되어 있다, 정리되어 있다",
+   "tip": "'in a row(한 줄로)', 'in a circle(원형으로)' 같은 배열 표현과 함께 나온다."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A lamp is *positioned* next to a bed.",
+   "k": "침대 옆에 스탠드가 놓여 있다.",
+   "key": "be positioned",
+   "keyKo": "(특정 위치에) 놓여 있다",
+   "tip": "next to, beside, between 등 위치 전치사까지 사진과 맞는지 확인하자."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A rug *covers* most of the floor.",
+   "k": "러그가 바닥 대부분을 덮고 있다.",
+   "key": "cover the floor",
+   "keyKo": "바닥을 덮다",
+   "tip": "사물 주어 + 능동 동사(cover, line, overlook)로 상태를 묘사하는 문장도 자주 나온다."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A vase is *resting on* a windowsill.",
+   "k": "꽃병 하나가 창턱 위에 놓여 있다.",
+   "key": "rest on",
+   "keyKo": "~ 위에 놓여 있다",
+   "tip": "rest on은 '쉬다'가 아니라 '~ 위에 놓여 있다'는 뜻이다. windowsill(창턱)도 기억하자."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A light fixture is *suspended from* the ceiling.",
+   "k": "조명 기구가 천장에 매달려 있다.",
+   "key": "be suspended from",
+   "keyKo": "~에 매달려 있다",
+   "tip": "'is hanging from the ceiling'과 같은 뜻이다."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "Some shelves are *filled with* books.",
+   "k": "선반 몇 개가 책으로 가득 차 있다.",
+   "key": "be filled with",
+   "keyKo": "~으로 가득 차 있다",
+   "tip": "'be full of'와 같은 뜻이다. empty(비어 있는)와 대비되어 출제된다."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A woman is *watering* some plants.",
+   "k": "한 여자가 식물에 물을 주고 있다.",
+   "key": "water plants",
+   "keyKo": "식물에 물을 주다",
+   "tip": "명사 water가 동사로 쓰였다. watering can(물뿌리개)도 함께 나온다."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A man is *mopping* the floor.",
+   "k": "한 남자가 대걸레로 바닥을 닦고 있다.",
+   "key": "mop",
+   "keyKo": "대걸레로 닦다",
+   "tip": "mop(대걸레질하다)과 sweep(쓸다)을 혼동하지 말자."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A woman is *folding* some laundry.",
+   "k": "한 여자가 빨래를 개고 있다.",
+   "key": "fold laundry",
+   "keyKo": "빨래를 개다",
+   "tip": "fold는 옷·수건·종이를 접거나 갤 때 쓴다."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "The blinds *have been lowered*.",
+   "k": "블라인드가 내려져 있다.",
+   "key": "be lowered",
+   "keyKo": "내려져 있다",
+   "tip": "lower(내리다) ↔ raise(올리다). 블라인드·커튼의 상태를 사진에서 확인하자."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A bed *is being made*.",
+   "k": "침대가 정돈되고 있다.",
+   "key": "be being made",
+   "keyKo": "(침대가) 정돈되고 있다",
+   "tip": "'is being p.p.'(진행 수동태)는 지금 누군가 그 동작을 하고 있다는 뜻이다. make the bed(침대를 정돈하다)하는 사람이 보여야 정답이다. 정돈이 끝났다면 'The bed has been made.'"
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "Some dishes are *drying on a rack*.",
+   "k": "접시 몇 개가 건조대에서 마르고 있다.",
+   "key": "dry on a rack",
+   "keyKo": "건조대에서 마르다",
+   "tip": "rack은 '선반, 걸이'로 dish rack, coat rack, bike rack 등으로 쓰인다."
+  },
+  {
+   "g": "가정·실내 사물 배치",
+   "e": "A coat *has been draped over* a chair.",
+   "k": "코트 한 벌이 의자에 걸쳐져 있다.",
+   "key": "be draped over",
+   "keyKo": "~에 걸쳐져 있다",
+   "tip": "옷이나 천이 늘어지게 걸쳐진 상태를 묘사한다."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "Some boats are *docked* in a harbor.",
+   "k": "배 몇 척이 항구에 정박해 있다.",
+   "key": "be docked",
+   "keyKo": "정박해 있다",
+   "tip": "docked, moored, tied up 모두 '정박해 있다'. pier, dock, harbor도 함께 외우자."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "A sailboat is *moored* near the shore.",
+   "k": "범선 한 척이 해안 근처에 정박해 있다.",
+   "key": "be moored",
+   "keyKo": "(밧줄로 매어) 정박해 있다",
+   "tip": "moor는 배를 밧줄로 매어 두는 것이다. 'is tied to a dock'도 같은 장면에 쓴다."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "Two people are *rowing a boat*.",
+   "k": "두 사람이 노를 저어 배를 몰고 있다.",
+   "key": "row a boat",
+   "keyKo": "노를 저어 배를 몰다",
+   "tip": "동사 row(노를 젓다)와 명사 row(줄, 열)는 철자가 같다. 문맥으로 구분하자."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "Some houses *overlook* the water.",
+   "k": "집 몇 채가 물가를 내려다보고 있다.",
+   "key": "overlook",
+   "keyKo": "내려다보다",
+   "tip": "사물 주어 + overlook은 '~이 내려다보이는 곳에 있다'는 뜻이다. '간과하다'의 뜻과 구별하자."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "A tree is *casting a shadow* on the grass.",
+   "k": "나무 한 그루가 잔디 위에 그림자를 드리우고 있다.",
+   "key": "cast a shadow",
+   "keyKo": "그림자를 드리우다",
+   "tip": "예외적으로 'Shadows are being cast ~'는 사람이 없어도 정답이 될 수 있다."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "A couple is *strolling* along a path.",
+   "k": "한 커플이 산책로를 따라 거닐고 있다.",
+   "key": "stroll",
+   "keyKo": "거닐다, 산책하다",
+   "tip": "stroll, take a walk, walk along 모두 걷는 장면에 쓴다."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "A man is *leaning over a railing*.",
+   "k": "한 남자가 난간 너머로 몸을 숙이고 있다.",
+   "key": "lean over a railing",
+   "keyKo": "난간 너머로 몸을 숙이다",
+   "tip": "lean against(~에 기대다)와 lean over(~ 위로 몸을 숙이다)를 구분하자."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "Water is *flowing* from a fountain.",
+   "k": "분수에서 물이 흘러나오고 있다.",
+   "key": "flow",
+   "keyKo": "흐르다",
+   "tip": "fountain(분수), spray(뿜다)도 공원 사진에서 자주 나온다."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "Some people are *having a picnic* in a park.",
+   "k": "사람 몇 명이 공원에서 소풍을 즐기고 있다.",
+   "key": "have a picnic",
+   "keyKo": "소풍을 즐기다",
+   "tip": "잔디에 앉아 음식을 먹는 장면이면 'sitting on the grass'도 정답이 될 수 있다."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "A path *winds through* the park.",
+   "k": "오솔길 하나가 공원 사이로 구불구불 나 있다.",
+   "key": "wind through",
+   "keyKo": "구불구불 이어지다",
+   "tip": "동사 wind는 [와인드]로 발음한다. 명사 wind(바람, [윈드])와 구분하자."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "A man is *fishing off* a pier.",
+   "k": "한 남자가 부두에서 낚시를 하고 있다.",
+   "key": "fish off a pier",
+   "keyKo": "부두에서 낚시하다",
+   "tip": "pier(부두), dock(선착장), shore(해안)를 함께 기억하자."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "Some trees are *reflected* in the water.",
+   "k": "나무 몇 그루가 물에 비치고 있다.",
+   "key": "be reflected",
+   "keyKo": "(물에) 비치다",
+   "tip": "reflection(물에 비친 모습)도 함께 나온다."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "A man is *raking* leaves.",
+   "k": "한 남자가 갈퀴로 낙엽을 긁어모으고 있다.",
+   "key": "rake leaves",
+   "keyKo": "낙엽을 갈퀴로 긁어모으다",
+   "tip": "rake는 명사(갈퀴)와 동사(갈퀴질하다)로 모두 쓰인다."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "A woman is *mowing the lawn*.",
+   "k": "한 여자가 잔디를 깎고 있다.",
+   "key": "mow the lawn",
+   "keyKo": "잔디를 깎다",
+   "tip": "mow[모우]의 발음을 익혀 두자. lawn mower(잔디 깎는 기계)도 함께 나온다."
+  },
+  {
+   "g": "야외·공원·물가",
+   "e": "A bridge *spans* a river.",
+   "k": "다리 하나가 강을 가로질러 놓여 있다.",
+   "key": "span",
+   "keyKo": "(다리가) ~에 걸쳐 있다",
+   "tip": "'A bridge crosses a river.', 'extends across a river'도 같은 뜻이다."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "A woman is *handing out* some papers.",
+   "k": "한 여자가 서류를 나눠 주고 있다.",
+   "key": "hand out",
+   "keyKo": "나눠 주다",
+   "tip": "hand out, distribute, pass out 모두 '배포하다'."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "A man is *pointing at* a chart.",
+   "k": "한 남자가 차트를 가리키고 있다.",
+   "key": "point at",
+   "keyKo": "~을 가리키다",
+   "tip": "'point to'도 같은 뜻이다. 화면이나 차트 앞의 발표 장면에 단골로 나온다."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "A man is *giving a presentation*.",
+   "k": "한 남자가 발표를 하고 있다.",
+   "key": "give a presentation",
+   "keyKo": "발표하다",
+   "tip": "'making a presentation'도 같은 뜻이다."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "Technicians are *setting up equipment* on a stage.",
+   "k": "기술자들이 무대 위에 장비를 설치하고 있다.",
+   "key": "set up equipment",
+   "keyKo": "장비를 설치하다",
+   "tip": "set up은 설치하는 동작이다. 이미 설치가 끝난 상태면 'has been set up'."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "Some people are *seated around* a table.",
+   "k": "사람 몇 명이 테이블에 둘러앉아 있다.",
+   "key": "be seated around",
+   "keyKo": "~에 둘러앉아 있다",
+   "tip": "be seated는 sitting과 같은 상태 표현이다. around a table, in a row 같은 위치 표현까지 끝까지 듣자."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "An audience is *gathered* in an auditorium.",
+   "k": "청중이 강당에 모여 있다.",
+   "key": "be gathered",
+   "keyKo": "모여 있다",
+   "tip": "auditorium(강당), audience(청중), crowd(군중)를 함께 기억하자."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "A speaker is *addressing* an audience.",
+   "k": "연설자가 청중에게 연설하고 있다.",
+   "key": "address an audience",
+   "keyKo": "청중에게 연설하다",
+   "tip": "address는 '주소' 외에 '연설하다'라는 동사로도 Part 1에 나온다."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "Some people are *shaking hands*.",
+   "k": "사람 몇 명이 악수를 하고 있다.",
+   "key": "shake hands",
+   "keyKo": "악수하다",
+   "tip": "hands는 항상 복수형으로 쓴다."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "The participants are *taking notes*.",
+   "k": "참석자들이 필기를 하고 있다.",
+   "key": "take notes",
+   "keyKo": "필기하다",
+   "tip": "'writing something down'도 같은 장면에 쓴다."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "Some refreshments *have been laid out* on a table.",
+   "k": "테이블 위에 다과가 차려져 있다.",
+   "key": "be laid out",
+   "keyKo": "(펼쳐) 차려져 있다",
+   "tip": "refreshments(다과)는 행사 사진의 단골 명사다. lay out(펼쳐 놓다)의 수동형."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "Some documents *are being distributed*.",
+   "k": "서류가 배포되고 있다.",
+   "key": "be being distributed",
+   "keyKo": "배포되고 있다",
+   "tip": "'is being p.p.'(진행 수동태)는 지금 누군가 그 동작을 하고 있다는 뜻이다. 나눠 주는 사람이 사진에 있어야 정답이다. 서류가 탁자 위에 놓여 있기만 하면 오답."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "A woman is *speaking into* a microphone.",
+   "k": "한 여자가 마이크에 대고 말하고 있다.",
+   "key": "speak into a microphone",
+   "keyKo": "마이크에 대고 말하다",
+   "tip": "전치사 into(~에 대고)에 주의하자."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "Some people are *applauding* a speaker.",
+   "k": "사람 몇 명이 연설자에게 박수를 치고 있다.",
+   "key": "applaud",
+   "keyKo": "박수를 치다",
+   "tip": "applaud와 clap은 같은 뜻이다."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "A man is *adjusting* a microphone.",
+   "k": "한 남자가 마이크를 조절하고 있다.",
+   "key": "adjust",
+   "keyKo": "조절하다",
+   "tip": "adjust는 높이나 위치를 맞추는 동작이다. 의자·화면·장비 등에도 쓴다."
+  },
+  {
+   "g": "회의·발표·행사",
+   "e": "Some people are *posing for* a photograph.",
+   "k": "사람 몇 명이 사진 촬영을 위해 포즈를 취하고 있다.",
+   "key": "pose for a photograph",
+   "keyKo": "사진을 위해 포즈를 취하다",
+   "tip": "'having their picture taken'도 같은 장면에 쓴다."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A man is *holding* a cup of coffee.",
+   "k": "한 남자가 커피 한 잔을 들고 있다.",
+   "key": "hold",
+   "keyKo": "들고 있다",
+   "tip": "holding은 들고 있는 상태, picking up은 집어 드는 동작이다."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A woman is *putting on* a coat.",
+   "k": "한 여자가 코트를 입고 있다(입는 중이다).",
+   "key": "put on",
+   "keyKo": "(옷 등을) 입다, 착용하다",
+   "tip": "putting on은 입는 '동작'이다. 이미 입고 있는 상태라면 'wearing'이 정답이다."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A man is *kneeling* on the floor.",
+   "k": "한 남자가 바닥에 무릎을 꿇고 있다.",
+   "key": "kneel",
+   "keyKo": "무릎을 꿇다",
+   "tip": "kneel의 k는 묵음이라 [닐]로 발음된다."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "Two people are *facing each other*.",
+   "k": "두 사람이 서로 마주 보고 있다.",
+   "key": "face each other",
+   "keyKo": "서로 마주 보다",
+   "tip": "'facing the same direction(같은 방향을 보고 있다)'과 구분하자."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A woman is *sipping from* a mug.",
+   "k": "한 여자가 머그잔에 든 음료를 홀짝이고 있다.",
+   "key": "sip from",
+   "keyKo": "~에서 조금씩 마시다",
+   "tip": "sip(조금씩 마시다)과 drink(마시다)는 같은 장면에 쓰인다."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A man is *tying his shoe*.",
+   "k": "한 남자가 신발 끈을 묶고 있다.",
+   "key": "tie one's shoe",
+   "keyKo": "신발 끈을 묶다",
+   "tip": "허리를 숙이거나 무릎을 꿇은 자세의 사진에 자주 나온다."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A woman is *walking up* the stairs.",
+   "k": "한 여자가 계단을 올라가고 있다.",
+   "key": "walk up the stairs",
+   "keyKo": "계단을 올라가다",
+   "tip": "up(올라가다)과 down(내려가다)의 방향을 확인하자. 'climbing the stairs'도 같은 뜻."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "Some people are *chatting with* each other.",
+   "k": "사람 몇 명이 서로 담소를 나누고 있다.",
+   "key": "chat with",
+   "keyKo": "~와 담소를 나누다",
+   "tip": "talking, conversing, having a conversation 모두 같은 장면에 쓴다."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A woman is *picking up* a package.",
+   "k": "한 여자가 소포를 집어 들고 있다.",
+   "key": "pick up",
+   "keyKo": "집어 들다",
+   "tip": "pick up은 집어 드는 동작, holding은 들고 있는 상태다."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A man is *putting away* some tools.",
+   "k": "한 남자가 공구를 제자리에 정리하고 있다.",
+   "key": "put away",
+   "keyKo": "치우다, 제자리에 넣다",
+   "tip": "put away(치우다)와 take out(꺼내다)을 바꿔 치는 오답에 주의한다."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A man is *taking off* his glasses.",
+   "k": "한 남자가 안경을 벗고 있다.",
+   "key": "take off",
+   "keyKo": "(옷·안경 등을) 벗다",
+   "tip": "take off(벗는 동작) ↔ put on(입는 동작) ↔ wear(착용 상태)."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A woman is *staring out* a window.",
+   "k": "한 여자가 창밖을 응시하고 있다.",
+   "key": "stare out a window",
+   "keyKo": "창밖을 응시하다",
+   "tip": "'looking out a window', 'gazing out a window'도 같은 뜻이다."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "Two men are *walking side by side*.",
+   "k": "두 남자가 나란히 걷고 있다.",
+   "key": "walk side by side",
+   "keyKo": "나란히 걷다",
+   "tip": "side by side(나란히)와 one behind the other(앞뒤로)를 구분하자."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A box *is being lifted* onto a shelf.",
+   "k": "상자 하나가 선반 위로 들어 올려지고 있다.",
+   "key": "be being lifted",
+   "keyKo": "들어 올려지고 있다",
+   "tip": "'is being p.p.'(진행 수동태)는 지금 누군가 그 동작을 하고 있다는 뜻이다. 누군가 상자를 드는 모습이 보여야 정답이다. 'Someone is lifting a box.'와 같은 의미."
+  },
+  {
+   "g": "사람의 동작(일반)",
+   "e": "A man is *rolling up* his sleeves.",
+   "k": "한 남자가 소매를 걷어 올리고 있다.",
+   "key": "roll up one's sleeves",
+   "keyKo": "소매를 걷어 올리다",
+   "tip": "roll up(걷어 올리다) ↔ roll down(내리다). 걷어 올리는 동작은 'is rolling up', 이미 걷어 올린 상태는 'His sleeves are rolled up.'으로 묘사한다."
+  }
+ ],
+ "confusables": [
+  {
+   "words": [
+    {
+     "w": "affect",
+     "pos": "v",
+     "m": "~에 영향을 주다"
+    },
+    {
+     "w": "effect",
+     "pos": "n",
+     "m": "영향, 효과"
+    }
+   ],
+   "point": "affect는 동사(타동사), effect는 명사다. have an effect on(~에 영향을 미치다) 형태가 자주 나온다.",
+   "q": {
+    "s": "The new policy will ------- all employees hired after January.",
+    "o": [
+     "effect",
+     "affect",
+     "affection",
+     "effective"
+    ],
+    "a": 1,
+    "k": "조동사 will 뒤 동사 자리 + 목적어 all employees → 타동사 affect."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "rise",
+     "pos": "v",
+     "m": "오르다, 증가하다 (자동사)"
+    },
+    {
+     "w": "raise",
+     "pos": "v",
+     "m": "~을 올리다, (자금을) 모으다 (타동사)"
+    }
+   ],
+   "point": "rise는 목적어 없이 쓰는 자동사(rise-rose-risen), raise는 목적어가 필요한 타동사(raise-raised-raised)다. 명사로는 둘 다 '인상, 상승'.",
+   "q": {
+    "s": "The company plans to ------- the prices of its products next quarter.",
+    "o": [
+     "rise",
+     "raise",
+     "arise",
+     "rising"
+    ],
+    "a": 1,
+    "k": "to부정사 뒤 동사원형 자리 + 목적어 the prices → 타동사 raise. rise와 arise는 자동사라 목적어를 가질 수 없다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "lie",
+     "pos": "v",
+     "m": "놓여 있다, 눕다 (자동사: lie-lay-lain)"
+    },
+    {
+     "w": "lay",
+     "pos": "v",
+     "m": "~을 놓다, 깔다 (타동사: lay-laid-laid)"
+    }
+   ],
+   "point": "lay는 lie의 과거형이기도 해서 헷갈린다. 목적어가 있으면 lay, 없으면 lie로 판단한다.",
+   "q": {
+    "s": "Workers will ------- new carpet in the lobby over the weekend.",
+    "o": [
+     "lie",
+     "lay",
+     "lying",
+     "lain"
+    ],
+    "a": 1,
+    "k": "조동사 will 뒤 동사원형 자리 + 목적어 new carpet → 타동사 lay(깔다)."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "considerable",
+     "pos": "adj",
+     "m": "상당한, 많은"
+    },
+    {
+     "w": "considerate",
+     "pos": "adj",
+     "m": "사려 깊은, 배려하는"
+    }
+   ],
+   "point": "considerable은 양·정도(a considerable amount), considerate는 사람의 태도(be considerate of others)를 나타낸다.",
+   "q": {
+    "s": "The renovation project required a ------- amount of time and money.",
+    "o": [
+     "considerable",
+     "considerate",
+     "consideration",
+     "considering"
+    ],
+    "a": 0,
+    "k": "명사 amount를 수식하며 '상당한 양'의 의미 → considerable. considerate는 '배려하는'으로 사람의 성품을 묘사한다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "economic",
+     "pos": "adj",
+     "m": "경제의, 경제와 관련된"
+    },
+    {
+     "w": "economical",
+     "pos": "adj",
+     "m": "절약되는, 비용이 적게 드는"
+    }
+   ],
+   "point": "economic은 '경제(학)와 관련된'(economic growth), economical은 '돈이 덜 드는, 알뜰한'(an economical car)이다.",
+   "q": {
+    "s": "Its fuel-efficient engine makes the Volt C3 one of the most ------- cars on the market.",
+    "o": [
+     "economic",
+     "economy",
+     "economical",
+     "economist"
+    ],
+    "a": 2,
+    "k": "연비가 좋아 '유지비가 적게 드는' 차라는 의미이므로 economical이 정답. economic은 economic growth처럼 '경제의'라는 뜻이고, economy와 economist는 명사라 most 뒤 형용사 자리에 올 수 없다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "successful",
+     "pos": "adj",
+     "m": "성공적인"
+    },
+    {
+     "w": "successive",
+     "pos": "adj",
+     "m": "연속적인, 잇따른"
+    }
+   ],
+   "point": "success(성공) → successful, succession(연속) → successive. 'for three successive years(3년 연속)' 형태로 자주 출제된다.",
+   "q": {
+    "s": "Brightline Inc. posted losses for two ------- quarters before returning to profitability.",
+    "o": [
+     "successful",
+     "successive",
+     "succession",
+     "succeeded"
+    ],
+    "a": 1,
+    "k": "'두 분기 연속 손실'이라는 의미 → successive. successful(성공적인)은 손실이라는 문맥과 맞지 않는다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "reliable",
+     "pos": "adj",
+     "m": "믿을 만한, 신뢰할 수 있는"
+    },
+    {
+     "w": "reliant",
+     "pos": "adj",
+     "m": "의존하는 (be reliant on)"
+    }
+   ],
+   "point": "reliable은 '믿을 만한'(a reliable supplier), reliant는 'be reliant on(~에 의존하다)' 형태로 쓴다.",
+   "q": {
+    "s": "Many small businesses are heavily ------- on online sales.",
+    "o": [
+     "reliable",
+     "reliably",
+     "reliance",
+     "reliant"
+    ],
+    "a": 3,
+    "k": "be동사 뒤 보어 자리 + 전치사 on → 'be reliant on(~에 의존하다)'. reliable은 '믿을 만한'이라는 뜻이다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "comprehensive",
+     "pos": "adj",
+     "m": "포괄적인, 종합적인"
+    },
+    {
+     "w": "comprehensible",
+     "pos": "adj",
+     "m": "이해할 수 있는"
+    }
+   ],
+   "point": "comprehensive는 '범위가 넓은, 빠짐없는'(comprehensive coverage), comprehensible은 '이해하기 쉬운'이다.",
+   "q": {
+    "s": "The insurance plan offers ------- coverage, including dental and vision care.",
+    "o": [
+     "comprehension",
+     "comprehensive",
+     "comprehensible",
+     "comprehend"
+    ],
+    "a": 1,
+    "k": "치과·안과 진료까지 포함하는 '포괄적인 보장' → comprehensive. comprehensible(이해할 수 있는)은 의미가 맞지 않는다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "respectable",
+     "pos": "adj",
+     "m": "존경할 만한, (수준이) 상당한"
+    },
+    {
+     "w": "respectful",
+     "pos": "adj",
+     "m": "공손한, 존중하는"
+    },
+    {
+     "w": "respective",
+     "pos": "adj",
+     "m": "각각의"
+    }
+   ],
+   "point": "respectable은 '훌륭한, 상당한', respectful은 '예의 바른(of/to)', respective는 '각자의'다. '소유격 + respective + 복수명사' 형태가 자주 나온다.",
+   "q": {
+    "s": "After the meeting, the managers returned to their ------- offices.",
+    "o": [
+     "respectable",
+     "respective",
+     "respectful",
+     "respectively"
+    ],
+    "a": 1,
+    "k": "'각자의 사무실로 돌아갔다'는 의미 → respective. respectively는 부사라 명사를 수식할 수 없다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "sensible",
+     "pos": "adj",
+     "m": "현명한, 분별 있는"
+    },
+    {
+     "w": "sensitive",
+     "pos": "adj",
+     "m": "민감한, 세심한, 기밀의"
+    }
+   ],
+   "point": "sensible은 판단이 '합리적인'(a sensible decision), sensitive는 '민감한'(sensitive information)이다.",
+   "q": {
+    "s": "Please store all ------- documents in the locked cabinet.",
+    "o": [
+     "sensitive",
+     "sensible",
+     "sensibly",
+     "sensation"
+    ],
+    "a": 0,
+    "k": "잠금 캐비닛에 보관해야 하는 '민감한(기밀) 문서' → sensitive. sensible은 '현명한'이라는 뜻이다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "imaginary",
+     "pos": "adj",
+     "m": "가상의, 상상 속의"
+    },
+    {
+     "w": "imaginative",
+     "pos": "adj",
+     "m": "상상력이 풍부한, 창의적인"
+    }
+   ],
+   "point": "imaginary는 '실제로 존재하지 않는', imaginative는 '창의적인'(an imaginative design)이다.",
+   "q": {
+    "s": "The design team was praised for its ------- approach to the new product packaging.",
+    "o": [
+     "imaginary",
+     "imaginative",
+     "imagination",
+     "imagine"
+    ],
+    "a": 1,
+    "k": "칭찬받은 '창의적인 접근 방식' → imaginative. imaginary(가상의)는 문맥과 맞지 않는다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "confident",
+     "pos": "adj",
+     "m": "자신 있는, 확신하는"
+    },
+    {
+     "w": "confidential",
+     "pos": "adj",
+     "m": "기밀의, 비밀의"
+    }
+   ],
+   "point": "confident는 사람의 확신(be confident that/of), confidential은 정보의 기밀성(confidential information)을 나타낸다.",
+   "q": {
+    "s": "All information submitted by applicants will be kept strictly -------.",
+    "o": [
+     "confidential",
+     "confident",
+     "confidence",
+     "confidentially"
+    ],
+    "a": 0,
+    "k": "'keep + 목적어 + 형용사 보어'의 수동태. 정보가 '기밀로' 유지된다는 의미 → confidential."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "dependent",
+     "pos": "adj",
+     "m": "의존하는 (be dependent on)"
+    },
+    {
+     "w": "dependable",
+     "pos": "adj",
+     "m": "믿을 수 있는"
+    }
+   ],
+   "point": "dependent는 'be dependent on(~에 의존하다)', dependable은 reliable과 같은 '믿을 만한'이다.",
+   "q": {
+    "s": "Ms. Chen has earned a reputation as a ------- employee who always meets deadlines.",
+    "o": [
+     "dependable",
+     "dependent",
+     "dependence",
+     "depending"
+    ],
+    "a": 0,
+    "k": "마감을 항상 지키는 '믿을 만한' 직원 → dependable. dependent는 의존을 나타내 문맥과 맞지 않는다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "complement",
+     "pos": "v/n",
+     "m": "보완하다; 보완물"
+    },
+    {
+     "w": "compliment",
+     "pos": "v/n",
+     "m": "칭찬하다; 칭찬"
+    },
+    {
+     "w": "complimentary",
+     "pos": "adj",
+     "m": "무료의, 칭찬하는"
+    }
+   ],
+   "point": "complement는 '보완하다, 잘 어울리다', compliment는 '칭찬하다'. 형용사 complimentary는 '무료의'(complimentary breakfast)로 자주 출제된다.",
+   "q": {
+    "s": "The new wine list was chosen to ------- the restaurant's seasonal menu.",
+    "o": [
+     "complimentary",
+     "compliment",
+     "complement",
+     "completion"
+    ],
+    "a": 2,
+    "k": "'계절 메뉴를 보완하다(잘 어울리다)' → complement. compliment는 '칭찬하다'라는 뜻이다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "principal",
+     "pos": "adj/n",
+     "m": "주요한; 교장, 원금"
+    },
+    {
+     "w": "principle",
+     "pos": "n",
+     "m": "원칙, 원리"
+    }
+   ],
+   "point": "principal은 형용사 '주요한'(= main), principle은 명사 '원칙'이다. 발음이 같아 혼동하기 쉽다.",
+   "q": {
+    "s": "The ------- reason for the delay was a shortage of materials.",
+    "o": [
+     "principle",
+     "principally",
+     "principles",
+     "principal"
+    ],
+    "a": 3,
+    "k": "명사 reason을 수식하는 형용사, '주된 이유' → principal(= main). principle은 명사 '원칙'이다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "personal",
+     "pos": "adj",
+     "m": "개인의, 개인적인"
+    },
+    {
+     "w": "personnel",
+     "pos": "n",
+     "m": "직원들, 인사부"
+    }
+   ],
+   "point": "personal은 형용사, personnel은 '전 직원'을 뜻하는 집합명사다. personnel department(인사부)도 자주 나온다.",
+   "q": {
+    "s": "All ------- must wear identification badges in the laboratory.",
+    "o": [
+     "personnel",
+     "personal",
+     "personally",
+     "personality"
+    ],
+    "a": 0,
+    "k": "All 뒤 주어 자리, '모든 직원' → personnel. personal은 형용사라 주어가 될 수 없다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "advice",
+     "pos": "n",
+     "m": "조언, 충고 (불가산)"
+    },
+    {
+     "w": "advise",
+     "pos": "v",
+     "m": "조언하다, 권고하다"
+    }
+   ],
+   "point": "advice는 불가산명사(a piece of advice), advise는 동사로 'advise + 사람 + to V', 수동형 'be advised to V' 형태로 자주 나온다.",
+   "q": {
+    "s": "Passengers are ------- to arrive at the airport at least two hours before departure.",
+    "o": [
+     "advice",
+     "advise",
+     "advised",
+     "advisory"
+    ],
+    "a": 2,
+    "k": "be동사 뒤 'be advised to V(~하도록 권고받다)' 수동태 → advised. advice는 명사다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "beside",
+     "pos": "prep",
+     "m": "~ 옆에"
+    },
+    {
+     "w": "besides",
+     "pos": "prep/adv",
+     "m": "~ 외에도; 게다가"
+    }
+   ],
+   "point": "s 하나 차이로 뜻이 달라진다. beside는 위치(옆에), besides는 추가(~ 이외에도, = in addition to)다.",
+   "q": {
+    "s": "------- its main office in Seoul, the company operates branches in Busan and Daegu.",
+    "o": [
+     "Beside",
+     "Beneath",
+     "Besides",
+     "Between"
+    ],
+    "a": 2,
+    "k": "'서울 본사 외에도 부산·대구에 지점이 있다'는 추가의 의미 → Besides(= In addition to)."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "during",
+     "pos": "prep",
+     "m": "~ 동안 (+ 명사)"
+    },
+    {
+     "w": "while",
+     "pos": "conj",
+     "m": "~하는 동안 (+ 절/분사)"
+    }
+   ],
+   "point": "의미는 같지만 during은 전치사라 명사(구)가, while은 접속사라 '주어 + 동사' 또는 분사가 온다.",
+   "q": {
+    "s": "Please turn off your mobile phones ------- the performance.",
+    "o": [
+     "while",
+     "when",
+     "whereas",
+     "during"
+    ],
+    "a": 3,
+    "k": "빈칸 뒤 명사 the performance → 전치사 during. while, when, whereas는 접속사다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "despite",
+     "pos": "prep",
+     "m": "~에도 불구하고 (+ 명사)"
+    },
+    {
+     "w": "although",
+     "pos": "conj",
+     "m": "비록 ~이지만 (+ 절)"
+    }
+   ],
+   "point": "despite(= in spite of)는 전치사, although(= even though, though)는 접속사다. 빈칸 뒤가 명사인지 절인지 먼저 확인한다.",
+   "q": {
+    "s": "------- the heavy rain, the outdoor concert started on time.",
+    "o": [
+     "Although",
+     "Even though",
+     "Because of",
+     "Despite"
+    ],
+    "a": 3,
+    "k": "빈칸 뒤 명사구 the heavy rain + 양보의 의미 → 전치사 Despite. Although와 Even though는 접속사, Because of는 의미가 반대다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "because",
+     "pos": "conj",
+     "m": "~ 때문에 (+ 절)"
+    },
+    {
+     "w": "because of",
+     "pos": "prep",
+     "m": "~ 때문에 (+ 명사)"
+    }
+   ],
+   "point": "because 뒤에는 절, because of(= due to, owing to) 뒤에는 명사(구)가 온다.",
+   "q": {
+    "s": "The flight was delayed ------- the airport was covered in fog.",
+    "o": [
+     "because of",
+     "due to",
+     "because",
+     "owing to"
+    ],
+    "a": 2,
+    "k": "빈칸 뒤 '주어 + 동사'의 절 → 접속사 because. because of, due to, owing to는 명사(구)를 이끈다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "until",
+     "pos": "prep/conj",
+     "m": "~까지 (계속)"
+    },
+    {
+     "w": "by",
+     "pos": "prep",
+     "m": "~까지 (완료)"
+    }
+   ],
+   "point": "until은 그 시점까지 상태·동작이 '계속', by는 그 시점까지 '완료'를 나타낸다. submit, finish, complete 같은 완료 동사는 by와 쓴다.",
+   "q": {
+    "s": "All expense reports must be submitted ------- Friday at 5 P.M.",
+    "o": [
+     "by",
+     "until",
+     "since",
+     "within"
+    ],
+    "a": 0,
+    "k": "제출은 기한까지 한 번 완료하는 동작 → by. until은 stay, remain, wait처럼 계속되는 동작과 쓴다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "almost",
+     "pos": "adv",
+     "m": "거의"
+    },
+    {
+     "w": "most",
+     "pos": "adj/pron",
+     "m": "대부분(의)"
+    },
+    {
+     "w": "mostly",
+     "pos": "adv",
+     "m": "주로, 대개"
+    }
+   ],
+   "point": "almost는 부사라 명사를 직접 수식할 수 없다(almost all employees). most는 명사 앞(most employees) 또는 most of the + 명사로 쓴다.",
+   "q": {
+    "s": "------- employees at Corbin Tech commute by public transportation.",
+    "o": [
+     "Almost",
+     "Mostly",
+     "The most",
+     "Most"
+    ],
+    "a": 3,
+    "k": "명사 employees를 직접 수식하는 '대부분의' → Most. almost는 'Almost all employees'처럼 써야 한다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "hard",
+     "pos": "adj/adv",
+     "m": "어려운, 단단한; 열심히"
+    },
+    {
+     "w": "hardly",
+     "pos": "adv",
+     "m": "거의 ~않다"
+    }
+   ],
+   "point": "hard는 형용사와 부사가 같은 형태다. -ly를 붙인 hardly는 '열심히'가 아니라 '거의 ~않다'라는 부정의 뜻이다.",
+   "q": {
+    "s": "The new assistant worked ------- to finish the report before the deadline.",
+    "o": [
+     "hardly",
+     "harden",
+     "hard",
+     "hardness"
+    ],
+    "a": 2,
+    "k": "동사 worked를 수식하는 '열심히' → 부사 hard. hardly(거의 ~않다)는 의미가 반대다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "late",
+     "pos": "adj/adv",
+     "m": "늦은; 늦게"
+    },
+    {
+     "w": "lately",
+     "pos": "adv",
+     "m": "최근에"
+    }
+   ],
+   "point": "late는 형용사·부사 모두 '늦은/늦게', lately는 '최근에(= recently)'로 주로 현재완료와 함께 쓴다.",
+   "q": {
+    "s": "Sales of electric bicycles have increased significantly -------.",
+    "o": [
+     "lately",
+     "late",
+     "later",
+     "latest"
+    ],
+    "a": 0,
+    "k": "현재완료(have increased)와 어울리는 '최근에' → lately."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "high",
+     "pos": "adj/adv",
+     "m": "높은; 높이"
+    },
+    {
+     "w": "highly",
+     "pos": "adv",
+     "m": "매우, 대단히"
+    }
+   ],
+   "point": "high는 물리적 높이, highly는 정도(= very)를 나타낸다. highly recommended, highly qualified 같은 표현이 자주 나온다.",
+   "q": {
+    "s": "Dr. Patel is a ------- respected expert in renewable energy.",
+    "o": [
+     "high",
+     "highly",
+     "higher",
+     "height"
+    ],
+    "a": 1,
+    "k": "분사형 형용사 respected를 수식하는 '매우' → highly."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "near",
+     "pos": "prep/adj/adv",
+     "m": "~ 가까이; 가까운"
+    },
+    {
+     "w": "nearly",
+     "pos": "adv",
+     "m": "거의"
+    }
+   ],
+   "point": "near는 거리상 '가까이', nearly는 정도상 '거의(= almost)'다. nearly complete, nearly 50 percent처럼 쓴다.",
+   "q": {
+    "s": "The construction of the new library is ------- complete.",
+    "o": [
+     "near",
+     "nearly",
+     "nearby",
+     "nearest"
+    ],
+    "a": 1,
+    "k": "형용사 complete를 수식하는 '거의' → nearly(= almost)."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "close",
+     "pos": "adj/adv",
+     "m": "가까운; 가까이"
+    },
+    {
+     "w": "closely",
+     "pos": "adv",
+     "m": "면밀히, 긴밀하게"
+    }
+   ],
+   "point": "close는 거리상 '가까이', closely는 '긴밀하게, 주의 깊게'다. work closely with, monitor closely가 단골 표현이다.",
+   "q": {
+    "s": "The marketing team works ------- with the design department on every campaign.",
+    "o": [
+     "closely",
+     "closed",
+     "close",
+     "closing"
+    ],
+    "a": 0,
+    "k": "'디자인 부서와 긴밀하게 협력한다' → work closely with. close는 물리적 거리를 나타낸다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "each",
+     "pos": "det/pron",
+     "m": "각각(의) (+ 단수명사)"
+    },
+    {
+     "w": "every",
+     "pos": "det",
+     "m": "모든 (+ 단수명사)"
+    },
+    {
+     "w": "all",
+     "pos": "det/pron",
+     "m": "모든 (+ 복수/불가산명사)"
+    }
+   ],
+   "point": "each와 every 뒤에는 단수명사와 단수동사가 온다. 'each of the + 복수명사'는 가능하지만 'every of'는 틀린 표현이다. 'all of the + 복수명사'는 복수동사를 쓴다.",
+   "q": {
+    "s": "------- of the participants receives a certificate upon completing the workshop.",
+    "o": [
+     "Every",
+     "All",
+     "Whole",
+     "Each"
+    ],
+    "a": 3,
+    "k": "'of the + 복수명사' + 단수동사 receives → Each. every는 of와 함께 쓸 수 없고, All of the participants는 복수동사 receive를 써야 한다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "another",
+     "pos": "det/pron",
+     "m": "또 하나(의) (+ 단수명사)"
+    },
+    {
+     "w": "other",
+     "pos": "det",
+     "m": "다른 (+ 복수명사)"
+    },
+    {
+     "w": "others",
+     "pos": "pron",
+     "m": "다른 사람들/것들"
+    }
+   ],
+   "point": "another는 단수 가산명사, other는 복수명사나 불가산명사 앞에 쓴다. others는 대명사라 뒤에 명사가 오지 않는다.",
+   "q": {
+    "s": "If you have any questions, please contact ------- member of our support team.",
+    "o": [
+     "another",
+     "others",
+     "other",
+     "the others"
+    ],
+    "a": 0,
+    "k": "단수 가산명사 member 앞 → another. other는 'other members'처럼 복수명사와 쓰고, others는 명사를 수식하지 못한다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "few",
+     "pos": "det",
+     "m": "거의 없는 (+ 복수 가산명사)"
+    },
+    {
+     "w": "little",
+     "pos": "det",
+     "m": "거의 없는 (+ 불가산명사)"
+    }
+   ],
+   "point": "few/a few는 가산 복수명사, little/a little은 불가산명사와 쓴다. a가 없으면 '거의 없는', 있으면 '약간 있는'.",
+   "q": {
+    "s": "There is ------- time left before the product launch, so we must work quickly.",
+    "o": [
+     "few",
+     "many",
+     "little",
+     "a few"
+    ],
+    "a": 2,
+    "k": "불가산명사 time + '시간이 거의 없으니 서둘러야 한다'는 문맥 → little."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "alike",
+     "pos": "adj/adv",
+     "m": "비슷한; 똑같이, 둘 다"
+    },
+    {
+     "w": "like",
+     "pos": "prep",
+     "m": "~처럼, ~와 같은"
+    }
+   ],
+   "point": "alike는 명사 앞에 쓰지 않는다. 'A and B alike(A와 B 모두)', 'look alike(닮다)' 형태로 쓰고, like는 뒤에 목적어가 온다.",
+   "q": {
+    "s": "The new park has been popular with residents and tourists -------.",
+    "o": [
+     "likely",
+     "like",
+     "alike",
+     "liking"
+    ],
+    "a": 2,
+    "k": "'주민과 관광객 모두에게' → A and B alike. like는 전치사라 뒤에 목적어가 있어야 한다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "especially",
+     "pos": "adv",
+     "m": "특히"
+    },
+    {
+     "w": "specially",
+     "pos": "adv",
+     "m": "특별히 (특정 목적을 위해)"
+    }
+   ],
+   "point": "especially는 '특히(= particularly)', specially는 'specially designed(특별히 제작된)'처럼 특정 목적을 나타낸다.",
+   "q": {
+    "s": "The museum is ------- popular with families during the summer.",
+    "o": [
+     "especially",
+     "special",
+     "specially",
+     "specialty"
+    ],
+    "a": 0,
+    "k": "형용사 popular를 강조하는 '특히' → especially. specially는 '특정 목적을 위해'라는 뜻이다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "adapt",
+     "pos": "v",
+     "m": "적응하다 (adapt to), 개조하다"
+    },
+    {
+     "w": "adopt",
+     "pos": "v",
+     "m": "채택하다, 입양하다"
+    }
+   ],
+   "point": "철자 한 글자 차이. adapt to(~에 적응하다), adopt a policy/plan(정책·계획을 채택하다)으로 구분한다.",
+   "q": {
+    "s": "The board voted to ------- the new environmental policy.",
+    "o": [
+     "adapt",
+     "adept",
+     "adoption",
+     "adopt"
+    ],
+    "a": 3,
+    "k": "목적어 policy와 어울리는 '채택하다' → adopt. adapt는 '적응하다, 개조하다'라는 뜻이다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "accept",
+     "pos": "v",
+     "m": "받아들이다, 수락하다"
+    },
+    {
+     "w": "except",
+     "pos": "prep",
+     "m": "~을 제외하고"
+    }
+   ],
+   "point": "발음이 비슷하지만 accept는 동사, except는 전치사다. except for, except that도 함께 알아 두자.",
+   "q": {
+    "s": "The store is open every day ------- national holidays.",
+    "o": [
+     "accept",
+     "expect",
+     "except",
+     "excerpt"
+    ],
+    "a": 2,
+    "k": "'공휴일을 제외하고 매일 영업한다' → 전치사 except."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "assure",
+     "pos": "v",
+     "m": "(사람에게) 장담하다, 확신시키다"
+    },
+    {
+     "w": "ensure",
+     "pos": "v",
+     "m": "확실히 하다, 보장하다"
+    },
+    {
+     "w": "insure",
+     "pos": "v",
+     "m": "보험에 들다"
+    }
+   ],
+   "point": "assure는 'assure + 사람 + that/of'처럼 사람 목적어가 필요하다. ensure는 'ensure that ~', 'ensure + 명사'로 쓰고, insure는 '보험에 가입하다'다.",
+   "q": {
+    "s": "Please check all figures carefully to ------- that the report is accurate.",
+    "o": [
+     "assure",
+     "insure",
+     "reassure",
+     "ensure"
+    ],
+    "a": 3,
+    "k": "사람 목적어 없이 바로 that절 → ensure(확실히 하다). assure와 reassure는 사람 목적어가 먼저 와야 한다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "expand",
+     "pos": "v",
+     "m": "(규모·범위를) 확장하다"
+    },
+    {
+     "w": "extend",
+     "pos": "v",
+     "m": "(기간·길이를) 연장하다, (초대·감사를) 전하다"
+    }
+   ],
+   "point": "expand는 크기·범위(expand a business), extend는 기간·길이(extend a deadline)에 쓴다. extend an invitation도 자주 나온다.",
+   "q": {
+    "s": "The deadline for submissions has been ------- to March 31.",
+    "o": [
+     "expanded",
+     "expended",
+     "extended",
+     "extensive"
+    ],
+    "a": 2,
+    "k": "마감 기한을 '연장하다' → extend. expand는 규모나 범위를 넓힐 때 쓴다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "inform",
+     "pos": "v",
+     "m": "알리다 (inform + 사람 + of/that)"
+    },
+    {
+     "w": "notify",
+     "pos": "v",
+     "m": "통지하다 (notify + 사람 + of/that)"
+    },
+    {
+     "w": "announce",
+     "pos": "v",
+     "m": "발표하다 (announce + 사물/that)"
+    },
+    {
+     "w": "explain",
+     "pos": "v",
+     "m": "설명하다 (explain + 사물 + to 사람)"
+    }
+   ],
+   "point": "inform과 notify는 사람을 바로 목적어로 쓴다. announce와 explain은 사람을 목적어로 쓸 수 없어 'announce/explain (to 사람) that ~' 형태가 된다.",
+   "q": {
+    "s": "The manager ------- the staff that the office would close early on Friday.",
+    "o": [
+     "announced",
+     "informed",
+     "explained",
+     "said"
+    ],
+    "a": 1,
+    "k": "빈칸 뒤 '사람 목적어(the staff) + that절' → inform. announce, explain, say는 사람 목적어를 바로 쓰지 않는다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "say",
+     "pos": "v",
+     "m": "말하다 (say + 내용/that)"
+    },
+    {
+     "w": "tell",
+     "pos": "v",
+     "m": "말하다, 알려 주다 (tell + 사람 + 내용)"
+    },
+    {
+     "w": "speak",
+     "pos": "v",
+     "m": "말하다, 연설하다 (speak to/with)"
+    },
+    {
+     "w": "talk",
+     "pos": "v",
+     "m": "이야기하다 (talk to/about)"
+    }
+   ],
+   "point": "tell만 사람을 바로 목적어로 쓴다(tell us that). say는 'say (to 사람) that', speak과 talk은 전치사 to/with/about과 함께 쓴다.",
+   "q": {
+    "s": "Ms. Ortiz ------- us that the shipment would arrive on Tuesday.",
+    "o": [
+     "told",
+     "said",
+     "spoke",
+     "talked"
+    ],
+    "a": 0,
+    "k": "빈칸 뒤 '사람 목적어(us) + that절' → told. said는 'said to us that'처럼 to가 필요하다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "borrow",
+     "pos": "v",
+     "m": "빌리다 (borrow A from B)"
+    },
+    {
+     "w": "lend",
+     "pos": "v",
+     "m": "빌려주다 (lend B A / lend A to B)"
+    },
+    {
+     "w": "rent",
+     "pos": "v",
+     "m": "(돈을 내고) 임대하다, 임차하다"
+    }
+   ],
+   "point": "borrow는 내가 '빌려 오는' 것, lend는 남에게 '빌려주는' 것이다. 4형식(lend + 사람 + 사물)은 lend만 가능하다.",
+   "q": {
+    "s": "Ms. Park asked her colleague to ------- her a laptop for the presentation.",
+    "o": [
+     "lend",
+     "borrow",
+     "borrowing",
+     "lent"
+    ],
+    "a": 0,
+    "k": "'동료에게 노트북을 빌려 달라고' + 'lend + 사람(her) + 사물(a laptop)' 4형식 → lend. borrow는 4형식으로 쓰지 않는다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "price",
+     "pos": "n",
+     "m": "(상품의) 가격"
+    },
+    {
+     "w": "charge",
+     "pos": "n",
+     "m": "(서비스) 요금, 청구 금액"
+    },
+    {
+     "w": "fee",
+     "pos": "n",
+     "m": "수수료, 입장료, 가입비"
+    },
+    {
+     "w": "fare",
+     "pos": "n",
+     "m": "(교통) 요금"
+    }
+   ],
+   "point": "모두 '요금'이지만 쓰임이 다르다. price는 물건값, charge는 서비스 이용료, fee는 전문 서비스·입장·등록 비용, fare는 버스·택시·항공 등 교통 요금이다.",
+   "q": {
+    "s": "Bus ------- will increase by 10 percent starting next month.",
+    "o": [
+     "fees",
+     "prices",
+     "charges",
+     "fares"
+    ],
+    "a": 3,
+    "k": "버스 등 대중교통 요금 → fare. bus fare, taxi fare, airfare로 기억하자."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "job",
+     "pos": "n",
+     "m": "일자리, 직업 (가산)"
+    },
+    {
+     "w": "work",
+     "pos": "n",
+     "m": "일, 업무, 직장 (불가산)"
+    }
+   ],
+   "point": "job은 가산명사라 a job, jobs로 쓴다. work는 '일, 일자리'의 뜻일 때 불가산명사라 관사 없이 쓴다.",
+   "q": {
+    "s": "After graduating, Mr. Kwon found ------- at a local accounting firm.",
+    "o": [
+     "work",
+     "job",
+     "working",
+     "worker"
+    ],
+    "a": 0,
+    "k": "관사 없이 쓸 수 있는 불가산명사 '일자리' → work. job은 가산명사라 'found a job'이 되어야 한다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "permit",
+     "pos": "n/v",
+     "m": "허가증 (가산); 허락하다"
+    },
+    {
+     "w": "permission",
+     "pos": "n",
+     "m": "허락, 허가 (불가산)"
+    }
+   ],
+   "point": "permit은 명사일 때 '허가증'이라는 가산명사(a parking permit), permission은 '허락'이라는 불가산명사(without permission)다.",
+   "q": {
+    "s": "Visitors may not enter the laboratory without -------.",
+    "o": [
+     "permit",
+     "permitted",
+     "permission",
+     "permissive"
+    ],
+    "a": 2,
+    "k": "전치사 without 뒤 관사 없는 명사 자리 → 불가산명사 permission. permit은 가산명사라 'a permit'이 되어야 한다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "arrive",
+     "pos": "v",
+     "m": "도착하다 (자동사: arrive at/in)"
+    },
+    {
+     "w": "reach",
+     "pos": "v",
+     "m": "~에 도착하다, 이르다 (타동사)"
+    }
+   ],
+   "point": "arrive는 자동사라 'arrive at/in + 장소', reach는 타동사라 전치사 없이 바로 장소가 온다.",
+   "q": {
+    "s": "The delegation is expected to ------- the conference center by noon.",
+    "o": [
+     "arrive",
+     "get",
+     "reach",
+     "come"
+    ],
+    "a": 2,
+    "k": "전치사 없이 바로 목적어 the conference center → 타동사 reach. arrive, get, come은 at/to가 필요하다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "discuss",
+     "pos": "v",
+     "m": "~에 대해 논의하다 (타동사)"
+    },
+    {
+     "w": "talk",
+     "pos": "v",
+     "m": "이야기하다 (talk about)"
+    }
+   ],
+   "point": "discuss는 타동사라 바로 목적어를 쓴다. 'discuss about'은 틀린 표현이다.",
+   "q": {
+    "s": "The committee will ------- the budget proposal at next week's meeting.",
+    "o": [
+     "talk",
+     "speak",
+     "discuss about",
+     "discuss"
+    ],
+    "a": 3,
+    "k": "빈칸 뒤 목적어 the budget proposal → 타동사 discuss. talk와 speak은 about이 필요하고, discuss about은 틀린 표현이다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "attend",
+     "pos": "v",
+     "m": "~에 참석하다 (타동사)"
+    },
+    {
+     "w": "participate",
+     "pos": "v",
+     "m": "참가하다 (participate in)"
+    }
+   ],
+   "point": "attend는 바로 목적어를 쓰고(attend a meeting), participate는 in이 필요하다(participate in a meeting). take part in도 같은 뜻.",
+   "q": {
+    "s": "More than 300 people ------- in the annual charity run last Saturday.",
+    "o": [
+     "attended",
+     "involved",
+     "took",
+     "participated"
+    ],
+    "a": 3,
+    "k": "빈칸 뒤 전치사 in → participate in. attend는 in 없이 목적어를 바로 쓴다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "reply",
+     "pos": "v",
+     "m": "답하다 (reply to)"
+    },
+    {
+     "w": "respond",
+     "pos": "v",
+     "m": "응답하다 (respond to)"
+    },
+    {
+     "w": "answer",
+     "pos": "v",
+     "m": "~에 답하다 (타동사)"
+    }
+   ],
+   "point": "reply와 respond는 자동사라 to가 필요하고, answer는 타동사라 바로 목적어가 온다.",
+   "q": {
+    "s": "Our customer service team will ------- your e-mail within 24 hours.",
+    "o": [
+     "reply",
+     "respond",
+     "react",
+     "answer"
+    ],
+    "a": 3,
+    "k": "전치사 없이 바로 목적어 your e-mail → 타동사 answer. reply와 respond는 'reply to', 'respond to'로 써야 한다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "among",
+     "pos": "prep",
+     "m": "(셋 이상) ~ 사이에서"
+    },
+    {
+     "w": "between",
+     "pos": "prep",
+     "m": "(둘) ~ 사이에"
+    }
+   ],
+   "point": "between은 주로 둘(between A and B), among은 셋 이상의 집단 속에서 쓴다. 'popular among ~(~ 사이에서 인기 있는)'이 자주 나온다.",
+   "q": {
+    "s": "The new software is popular ------- small business owners.",
+    "o": [
+     "between",
+     "along",
+     "beside",
+     "among"
+    ],
+    "a": 3,
+    "k": "'소상공인들 사이에서 인기 있다' → 집단 속을 나타내는 among."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "since",
+     "pos": "prep/conj",
+     "m": "~ 이래로 (+ 시점)"
+    },
+    {
+     "w": "for",
+     "pos": "prep",
+     "m": "~ 동안 (+ 기간)"
+    }
+   ],
+   "point": "현재완료와 함께 since 뒤에는 시점(2019, last year), for 뒤에는 기간(five years)이 온다.",
+   "q": {
+    "s": "Mr. Lee has worked in the finance department ------- 2019.",
+    "o": [
+     "since",
+     "for",
+     "during",
+     "from"
+    ],
+    "a": 0,
+    "k": "현재완료 + 시점(2019) → since. for는 'for five years'처럼 기간과 쓴다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "already",
+     "pos": "adv",
+     "m": "이미, 벌써"
+    },
+    {
+     "w": "yet",
+     "pos": "adv",
+     "m": "(부정문) 아직"
+    },
+    {
+     "w": "still",
+     "pos": "adv",
+     "m": "여전히, 아직도"
+    }
+   ],
+   "point": "already는 긍정문, yet은 부정문 끝(have not ~ yet)에 온다. still은 부정문에서 not 앞에 온다(still have not).",
+   "q": {
+    "s": "The final budget figures have not been approved -------.",
+    "o": [
+     "already",
+     "still",
+     "yet",
+     "ever"
+    ],
+    "a": 2,
+    "k": "부정문 끝에 오는 '아직' → yet. still은 'have still not been approved'처럼 not 앞에 쓴다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "so",
+     "pos": "adv",
+     "m": "매우, 그렇게 (+ 형용사/부사)"
+    },
+    {
+     "w": "such",
+     "pos": "det",
+     "m": "그렇게 ~한 (+ (a) + 형용사 + 명사)"
+    }
+   ],
+   "point": "'so + 형용사/부사 + that', 'such + a + (형용사) + 명사 + that' 구문으로 구분한다.",
+   "q": {
+    "s": "The demonstration was ------- a success that the company scheduled two more sessions.",
+    "o": [
+     "so",
+     "very",
+     "such",
+     "too"
+    ],
+    "a": 2,
+    "k": "빈칸 뒤 'a + 명사(a success)' + that절 → such. so는 'so successful that'처럼 형용사 앞에 쓴다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "amount",
+     "pos": "n",
+     "m": "양 (+ 불가산명사)"
+    },
+    {
+     "w": "number",
+     "pos": "n",
+     "m": "수 (+ 복수 가산명사)"
+    }
+   ],
+   "point": "amount of 뒤에는 불가산명사(money, time), number of 뒤에는 복수 가산명사가 온다. 'a number of + 복수명사'는 복수동사를 쓴다.",
+   "q": {
+    "s": "A large ------- of applicants have already submitted their resumes.",
+    "o": [
+     "amount",
+     "number",
+     "deal",
+     "quantity"
+    ],
+    "a": 1,
+    "k": "가산 복수명사 applicants + 복수동사 have → a large number of. amount와 deal은 불가산명사와 쓰고, quantity는 주로 사물의 양에 쓰여 사람(applicants)과 어울리지 않는다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "valuable",
+     "pos": "adj",
+     "m": "귀중한, 가치 있는"
+    },
+    {
+     "w": "invaluable",
+     "pos": "adj",
+     "m": "매우 귀중한"
+    },
+    {
+     "w": "valueless",
+     "pos": "adj",
+     "m": "가치 없는"
+    }
+   ],
+   "point": "invaluable은 '가치가 없는'이 아니라 '값을 매길 수 없을 만큼 귀중한'이다. '가치 없는'은 valueless 또는 worthless.",
+   "q": {
+    "s": "Ms. Grant's advice was -------, and the team thanked her for her help.",
+    "o": [
+     "evaluate",
+     "valueless",
+     "invaluable",
+     "valuation"
+    ],
+    "a": 2,
+    "k": "팀이 감사를 표했다는 문맥 → '매우 귀중한' invaluable. valueless(가치 없는)는 문맥과 반대다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "industrial",
+     "pos": "adj",
+     "m": "산업의, 공업의"
+    },
+    {
+     "w": "industrious",
+     "pos": "adj",
+     "m": "근면한, 부지런한"
+    }
+   ],
+   "point": "industrial은 '산업의'(industrial complex), industrious는 사람의 성품 '근면한'(= diligent)이다.",
+   "q": {
+    "s": "The city plans to build a new ------- complex on the outskirts of town.",
+    "o": [
+     "industrious",
+     "industries",
+     "industrially",
+     "industrial"
+    ],
+    "a": 3,
+    "k": "'산업 단지' → industrial complex. industrious는 사람을 묘사하는 '근면한'이다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "attendance",
+     "pos": "n",
+     "m": "출석, 참석자 수"
+    },
+    {
+     "w": "attendee",
+     "pos": "n",
+     "m": "참석자"
+    },
+    {
+     "w": "attendant",
+     "pos": "n",
+     "m": "안내원, 승무원"
+    }
+   ],
+   "point": "attendance는 불가산의 '참석(률)', attendee는 '참석자', attendant는 '안내원'(flight attendant)이다.",
+   "q": {
+    "s": "------- at this year's trade fair was higher than expected.",
+    "o": [
+     "Attendee",
+     "Attendance",
+     "Attendant",
+     "Attending"
+    ],
+    "a": 1,
+    "k": "관사 없는 주어 자리 + '예상보다 높았다' → 불가산명사 Attendance(참석자 수). attendee와 attendant는 가산명사라 관사가 필요하다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "applicant",
+     "pos": "n",
+     "m": "지원자"
+    },
+    {
+     "w": "application",
+     "pos": "n",
+     "m": "지원(서), 신청(서), 적용"
+    },
+    {
+     "w": "appliance",
+     "pos": "n",
+     "m": "가전제품, 기기"
+    }
+   ],
+   "point": "사람명사 applicant, 사물명사 application을 구분하는 문제가 자주 나온다. appliance는 '가전제품'(home appliances).",
+   "q": {
+    "s": "All ------- must be submitted online by the end of the month.",
+    "o": [
+     "appliances",
+     "applications",
+     "applicants",
+     "applies"
+    ],
+    "a": 1,
+    "k": "온라인으로 '제출되는' 대상 → 지원서 applications. 사람(applicants)은 제출되는 대상이 될 수 없다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "access",
+     "pos": "n/v",
+     "m": "접근, 이용; ~에 접근하다"
+    },
+    {
+     "w": "assess",
+     "pos": "v",
+     "m": "평가하다"
+    },
+    {
+     "w": "excess",
+     "pos": "n/adj",
+     "m": "초과(의), 과잉(의)"
+    }
+   ],
+   "point": "access는 '이용/접근'(have access to), assess는 '평가하다'(= evaluate), excess는 '초과'(in excess of)다.",
+   "q": {
+    "s": "An expert was hired to ------- the damage caused by the storm.",
+    "o": [
+     "access",
+     "assess",
+     "excess",
+     "accessible"
+    ],
+    "a": 1,
+    "k": "'폭풍 피해를 평가하다' → assess(= evaluate)."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "proceed",
+     "pos": "v",
+     "m": "나아가다, 진행하다 (proceed to/with)"
+    },
+    {
+     "w": "precede",
+     "pos": "v",
+     "m": "~에 앞서다 (타동사)"
+    }
+   ],
+   "point": "proceed는 자동사로 'proceed to + 장소', 'proceed with + 일'로 쓰고, precede는 타동사로 '~보다 먼저 일어나다'다.",
+   "q": {
+    "s": "Passengers should ------- to Gate 12 for boarding.",
+    "o": [
+     "proceed",
+     "precede",
+     "process",
+     "procedure"
+    ],
+    "a": 0,
+    "k": "'12번 게이트로 이동하다' → proceed to. precede는 '~에 앞서다'라는 뜻의 타동사다."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "convenient",
+     "pos": "adj",
+     "m": "편리한 (사물·시간이 주어)"
+    },
+    {
+     "w": "convenience",
+     "pos": "n",
+     "m": "편의, 편리"
+    }
+   ],
+   "point": "convenient는 사람을 주어로 쓰지 않는다. '편하실 때'는 'when it is convenient for you' 또는 'at your convenience'다.",
+   "q": {
+    "s": "Please return the signed contract at your earliest -------.",
+    "o": [
+     "convenient",
+     "conveniently",
+     "convene",
+     "convenience"
+    ],
+    "a": 3,
+    "k": "소유격 your earliest 뒤 명사 자리 → at your earliest convenience(가급적 빨리, 편하실 때)."
+   }
+  },
+  {
+   "words": [
+    {
+     "w": "short",
+     "pos": "adj/adv",
+     "m": "짧은, 부족한; 갑자기"
+    },
+    {
+     "w": "shortly",
+     "pos": "adv",
+     "m": "곧, 얼마 안 있어"
+    }
+   ],
+   "point": "shortly는 '짧게'가 아니라 '곧(= soon)'이다. shortly after(~ 직후에), shortly before(~ 직전에)도 자주 나온다.",
+   "q": {
+    "s": "The guest speaker will arrive -------, so please take your seats.",
+    "o": [
+     "short",
+     "shortly",
+     "shortage",
+     "shorten"
+    ],
+    "a": 1,
+    "k": "동사 arrive를 수식하는 '곧' → shortly(= soon)."
+   }
+  }
+ ]
+}

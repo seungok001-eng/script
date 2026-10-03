@@ -1,0 +1,2106 @@
+[
+ {
+  "w": "economic",
+  "pos": "adj",
+  "m": [
+   "경제의",
+   "경제상의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Rising fuel prices could slow *economic* growth in the region.",
+  "exKo": "연료 가격 상승은 그 지역의 경제 성장을 둔화시킬 수 있다.",
+  "col": [
+   {
+    "e": "economic growth",
+    "k": "경제 성장"
+   },
+   {
+    "e": "economic conditions",
+    "k": "경제 상황"
+   },
+   {
+    "e": "economic development",
+    "k": "경제 발전"
+   }
+  ],
+  "der": [
+   {
+    "w": "economy",
+    "pos": "n",
+    "m": "경제"
+   },
+   {
+    "w": "economist",
+    "pos": "n",
+    "m": "경제학자"
+   },
+   {
+    "w": "economically",
+    "pos": "adv",
+    "m": "경제적으로"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "economic(경제의)과 economical(절약하는, 알뜰한)의 의미 구분이 Part 5 단골 함정이다. economic은 'economic growth/slowdown/forecast'처럼 경제 전반과 관련된 명사와 쓴다.",
+  "q": {
+   "s": "Analysts expect ------- conditions to improve in the second half of the year.",
+   "o": [
+    "economical",
+    "economic",
+    "economize",
+    "economist"
+   ],
+   "a": 1,
+   "k": "명사 conditions를 수식하며 '경제 상황'이라는 뜻이 되어야 하므로 economic이 정답. economical은 '돈이 적게 드는'이라는 뜻이라 conditions와 맞지 않고, economize는 동사, economist는 사람명사다."
+  }
+ },
+ {
+  "w": "economical",
+  "pos": "adj",
+  "m": [
+   "경제적인",
+   "절약하는",
+   "알뜰한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new hybrid model is more *economical* to run than our previous vehicles.",
+  "exKo": "새 하이브리드 모델은 이전 차량들보다 유지비가 덜 든다.",
+  "col": [
+   {
+    "e": "economical to run",
+    "k": "유지비가 적게 드는"
+   },
+   {
+    "e": "an economical choice",
+    "k": "경제적인 선택"
+   }
+  ],
+  "der": [
+   {
+    "w": "economically",
+    "pos": "adv",
+    "m": "경제적으로, 알뜰하게"
+   },
+   {
+    "w": "economize",
+    "pos": "v",
+    "m": "절약하다"
+   }
+  ],
+  "para": [
+   "cost-effective",
+   "inexpensive",
+   "efficient"
+  ],
+  "ant": "wasteful",
+  "tip": "'돈이 적게 드는, 효율적인'이라는 뜻으로 economic(경제의)과 구분해야 한다. Part 7에서 cost-effective, affordable로 패러프레이징된다.",
+  "q": {
+   "s": "Buying supplies in bulk is a more ------- option for large offices.",
+   "o": [
+    "economy",
+    "economize",
+    "economically",
+    "economical"
+   ],
+   "a": 3,
+   "k": "more와 명사 option 사이의 형용사 자리이며 '더 경제적인 선택'이라는 뜻이므로 economical이 정답. economy는 명사, economize는 동사, economically는 부사다."
+  }
+ },
+ {
+  "w": "growth",
+  "pos": "n",
+  "m": [
+   "성장",
+   "증가"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company has experienced rapid *growth* since it entered the Asian market.",
+  "exKo": "그 회사는 아시아 시장에 진출한 이후 급속한 성장을 이루었다.",
+  "col": [
+   {
+    "e": "rapid growth",
+    "k": "급속한 성장"
+   },
+   {
+    "e": "growth in",
+    "k": "~의 성장, 증가"
+   },
+   {
+    "e": "growth rate",
+    "k": "성장률"
+   }
+  ],
+  "der": [
+   {
+    "w": "grow",
+    "pos": "v",
+    "m": "성장하다, 증가하다"
+   },
+   {
+    "w": "growing",
+    "pos": "adj",
+    "m": "증가하는, 커지는"
+   }
+  ],
+  "para": [
+   "expansion",
+   "increase",
+   "development"
+  ],
+  "ant": "decline",
+  "tip": "'growth in + 분야(~의 성장)', 'a growth rate of 5 percent'처럼 쓰며 동사 grow, 형용사 growing과의 품사 구분이 출제된다.",
+  "q": {
+   "s": "The region has seen steady ------- in tourism over the past decade.",
+   "o": [
+    "growth",
+    "grow",
+    "grown",
+    "grows"
+   ],
+   "a": 0,
+   "k": "형용사 steady의 수식을 받는 명사 자리이므로 growth가 정답. grow, grows는 동사, grown은 과거분사라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "decline",
+  "pos": "v",
+  "m": [
+   "감소하다",
+   "(정중히) 거절하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Sales of printed newspapers have *declined* steadily over the past decade.",
+  "exKo": "지난 10년간 종이 신문 판매량이 꾸준히 감소했다.",
+  "col": [
+   {
+    "e": "decline sharply",
+    "k": "급격히 감소하다"
+   },
+   {
+    "e": "a decline in",
+    "k": "~의 감소"
+   },
+   {
+    "e": "decline an invitation",
+    "k": "초대를 거절하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "declining",
+    "pos": "adj",
+    "m": "감소하는, 하락하는"
+   }
+  ],
+  "para": [
+   "decrease",
+   "drop",
+   "turn down"
+  ],
+  "ant": "increase",
+  "tip": "자동사 '감소하다'와 타동사 '거절하다(decline an offer)'의 두 뜻이 모두 출제된다. 명사로는 'a decline in sales'처럼 전치사 in과 쓴다.",
+  "q": {
+   "s": "Mr. Patel had to ------- the invitation to speak at the conference because of a scheduling conflict.",
+   "o": [
+    "depart",
+    "resign",
+    "decline",
+    "complain"
+   ],
+   "a": 2,
+   "k": "일정이 겹쳐 초대를 '거절해야' 했다는 뜻이므로 타동사 decline이 정답. depart와 complain은 자동사이고, resign(사임하다)은 invitation과 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "fluctuate",
+  "pos": "v",
+  "m": [
+   "변동하다",
+   "오르내리다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Fuel prices tend to *fluctuate* depending on the season.",
+  "exKo": "연료 가격은 계절에 따라 오르내리는 경향이 있다.",
+  "col": [
+   {
+    "e": "fluctuate wildly",
+    "k": "크게 변동하다"
+   },
+   {
+    "e": "fluctuate between A and B",
+    "k": "A와 B 사이에서 오르내리다"
+   }
+  ],
+  "der": [
+   {
+    "w": "fluctuation",
+    "pos": "n",
+    "m": "변동"
+   }
+  ],
+  "para": [
+   "vary",
+   "change",
+   "rise and fall"
+  ],
+  "ant": "",
+  "tip": "자동사이므로 수동태로 쓰지 않으며, 'fluctuate between A and B'나 명사 'fluctuations in prices(가격 변동)' 형태로 출제된다.",
+  "q": {
+   "s": "Hotel room rates ------- considerably throughout the year, so booking early is recommended.",
+   "o": [
+    "fluctuation",
+    "fluctuating",
+    "fluctuate",
+    "fluctuations"
+   ],
+   "a": 2,
+   "k": "주어 Hotel room rates 뒤에 동사가 필요하므로 fluctuate가 정답. fluctuation(s)는 명사, fluctuating은 분사라 단독으로 문장의 동사가 될 수 없다."
+  }
+ },
+ {
+  "w": "stable",
+  "pos": "adj",
+  "m": [
+   "안정된",
+   "안정적인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company has maintained a *stable* workforce despite the industry slowdown.",
+  "exKo": "그 회사는 업계 침체에도 불구하고 안정적인 인력을 유지해 왔다.",
+  "col": [
+   {
+    "e": "remain stable",
+    "k": "안정적으로 유지되다"
+   },
+   {
+    "e": "stable prices",
+    "k": "안정된 가격"
+   },
+   {
+    "e": "a stable income",
+    "k": "안정적인 수입"
+   }
+  ],
+  "der": [
+   {
+    "w": "stability",
+    "pos": "n",
+    "m": "안정(성)"
+   },
+   {
+    "w": "stabilize",
+    "pos": "v",
+    "m": "안정시키다, 안정되다"
+   }
+  ],
+  "para": [
+   "steady",
+   "secure",
+   "constant"
+  ],
+  "ant": "unstable",
+  "tip": "'remain/stay stable(안정을 유지하다)'처럼 2형식 동사의 보어로 자주 쓰이며, 명사 stability, 동사 stabilize와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Despite the uncertain market, housing prices in the area have remained ------- this year.",
+   "o": [
+    "stability",
+    "stable",
+    "stabilize",
+    "stably"
+   ],
+   "a": 1,
+   "k": "remain 뒤의 보어 자리이며 가격의 상태를 나타내야 하므로 형용사 stable이 정답. stability는 명사라 '가격=안정성'이 되어 어색하고, stabilize는 동사, stably는 부사다."
+  }
+ },
+ {
+  "w": "steady",
+  "pos": "adj",
+  "m": [
+   "꾸준한",
+   "안정된"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The restaurant has seen a *steady* increase in customers since its renovation.",
+  "exKo": "그 식당은 리모델링 이후 손님이 꾸준히 늘고 있다.",
+  "col": [
+   {
+    "e": "steady growth",
+    "k": "꾸준한 성장"
+   },
+   {
+    "e": "a steady increase",
+    "k": "꾸준한 증가"
+   },
+   {
+    "e": "a steady job",
+    "k": "안정된 직장"
+   }
+  ],
+  "der": [
+   {
+    "w": "steadily",
+    "pos": "adv",
+    "m": "꾸준히"
+   }
+  ],
+  "para": [
+   "constant",
+   "consistent",
+   "gradual"
+  ],
+  "ant": "irregular",
+  "tip": "부사 steadily(꾸준히)와의 품사 구분이 자주 나오며, 'steady growth/increase/decline'처럼 변화를 나타내는 명사와 어울린다.",
+  "q": {
+   "s": "The number of online subscribers has grown at a ------- pace since the website was redesigned.",
+   "o": [
+    "steadily",
+    "steadiness",
+    "steadied",
+    "steady"
+   ],
+   "a": 3,
+   "k": "관사 a와 명사 pace 사이의 형용사 자리이므로 steady가 정답. steadily는 부사, steadiness는 명사이고, steadied는 '안정된'이라는 형용사로 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "sharply",
+  "pos": "adv",
+  "m": [
+   "급격히",
+   "크게"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Demand for air purifiers rose *sharply* during the spring.",
+  "exKo": "봄철에 공기 청정기 수요가 급격히 증가했다.",
+  "col": [
+   {
+    "e": "rise sharply",
+    "k": "급격히 오르다"
+   },
+   {
+    "e": "fall sharply",
+    "k": "급격히 떨어지다"
+   }
+  ],
+  "der": [
+   {
+    "w": "sharp",
+    "pos": "adj",
+    "m": "급격한, 날카로운"
+   }
+  ],
+  "para": [
+   "dramatically",
+   "steeply",
+   "suddenly"
+  ],
+  "ant": "gradually",
+  "tip": "rise, fall, increase, drop 같은 증감 동사를 수식하는 부사 자리 문제로 자주 출제된다. 형용사 sharp(급격한)는 'a sharp increase'처럼 명사를 꾸민다.",
+  "q": {
+   "s": "Profits fell ------- after the company lost its largest client.",
+   "o": [
+    "sharp",
+    "sharply",
+    "sharpen",
+    "sharpness"
+   ],
+   "a": 1,
+   "k": "자동사 fell을 수식하는 부사 자리이므로 sharply가 정답. sharp는 형용사, sharpen은 동사, sharpness는 명사다."
+  }
+ },
+ {
+  "w": "dramatically",
+  "pos": "adv",
+  "m": [
+   "극적으로",
+   "급격히"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The cost of solar panels has dropped *dramatically* over the last ten years.",
+  "exKo": "태양광 패널 가격은 지난 10년간 급격히 하락했다.",
+  "col": [
+   {
+    "e": "increase dramatically",
+    "k": "급격히 증가하다"
+   },
+   {
+    "e": "change dramatically",
+    "k": "극적으로 변하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "dramatic",
+    "pos": "adj",
+    "m": "극적인, 급격한"
+   }
+  ],
+  "para": [
+   "significantly",
+   "sharply",
+   "considerably"
+  ],
+  "ant": "slightly",
+  "tip": "증감 동사를 수식하는 부사 자리 문제로 출제되며, 형용사 dramatic(급격한)은 'a dramatic increase'처럼 명사 앞에 온다.",
+  "q": {
+   "s": "Since the new subway line opened, traffic in the downtown area has decreased -------.",
+   "o": [
+    "dramatically",
+    "dramatic",
+    "drama",
+    "dramatize"
+   ],
+   "a": 0,
+   "k": "자동사 decreased를 뒤에서 수식하는 부사 자리이므로 dramatically가 정답. dramatic은 형용사, drama는 명사, dramatize는 동사다."
+  }
+ },
+ {
+  "w": "slight",
+  "pos": "adj",
+  "m": [
+   "약간의",
+   "근소한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "There has been a *slight* increase in the price of coffee beans this month.",
+  "exKo": "이번 달 커피 원두 가격이 약간 올랐다.",
+  "col": [
+   {
+    "e": "a slight increase",
+    "k": "약간의 증가"
+   },
+   {
+    "e": "a slight delay",
+    "k": "약간의 지연"
+   },
+   {
+    "e": "a slight change",
+    "k": "약간의 변화"
+   }
+  ],
+  "der": [
+   {
+    "w": "slightly",
+    "pos": "adv",
+    "m": "약간, 조금"
+   }
+  ],
+  "para": [
+   "small",
+   "minor",
+   "modest"
+  ],
+  "ant": "considerable",
+  "tip": "부사 slightly(약간)와의 품사 구분이 단골이다. 'a slight increase/decrease/delay'처럼 관사와 명사 사이 형용사 자리를 확인하자.",
+  "q": {
+   "s": "Due to a ------- delay in production, the new catalog will be mailed on May 3 instead of May 1.",
+   "o": [
+    "slightly",
+    "slighted",
+    "slight",
+    "slightness"
+   ],
+   "a": 2,
+   "k": "관사 a와 명사 delay 사이의 형용사 자리이므로 slight가 정답. slightly는 부사, slightness는 명사이고, slighted는 '무시당한'이라는 뜻이라 맞지 않는다."
+  }
+ },
+ {
+  "w": "gradually",
+  "pos": "adv",
+  "m": [
+   "점차",
+   "서서히"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company will *gradually* replace its delivery vans with electric vehicles.",
+  "exKo": "그 회사는 배송용 밴을 점차 전기 차량으로 교체할 것이다.",
+  "col": [
+   {
+    "e": "gradually increase",
+    "k": "점차 증가하다"
+   },
+   {
+    "e": "gradually improve",
+    "k": "서서히 나아지다"
+   }
+  ],
+  "der": [
+   {
+    "w": "gradual",
+    "pos": "adj",
+    "m": "점진적인"
+   }
+  ],
+  "para": [
+   "slowly",
+   "little by little",
+   "steadily"
+  ],
+  "ant": "suddenly",
+  "tip": "형용사 gradual(점진적인)과의 품사 구분이 출제된다. 'will gradually replace'처럼 조동사와 동사 사이, 또는 동사 뒤에 오는 부사 자리를 익혀 두자.",
+  "q": {
+   "s": "Customer complaints have ------- decreased since the call center hired additional staff.",
+   "o": [
+    "gradual",
+    "graduate",
+    "graduation",
+    "gradually"
+   ],
+   "a": 3,
+   "k": "현재완료 have와 과거분사 decreased 사이에서 동사를 수식하는 부사 자리이므로 gradually가 정답. gradual은 형용사, graduate는 동사/명사, graduation은 명사다."
+  }
+ },
+ {
+  "w": "recession",
+  "pos": "n",
+  "m": [
+   "경기 침체",
+   "불황"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Many small businesses struggled to survive during the *recession*.",
+  "exKo": "많은 소기업이 경기 침체기에 살아남기 위해 고군분투했다.",
+  "col": [
+   {
+    "e": "economic recession",
+    "k": "경기 침체"
+   },
+   {
+    "e": "enter a recession",
+    "k": "불황에 접어들다"
+   },
+   {
+    "e": "during the recession",
+    "k": "불황기 동안"
+   }
+  ],
+  "der": [
+   {
+    "w": "recede",
+    "pos": "v",
+    "m": "물러나다, 약해지다"
+   }
+  ],
+  "para": [
+   "downturn",
+   "slump",
+   "depression"
+  ],
+  "ant": "boom",
+  "tip": "Part 7 경제 기사에서 downturn, slump로 패러프레이징되며, 반대 개념인 boom(호황), recovery(회복)와 함께 나온다.",
+  "q": {
+   "s": "During the -------, consumers cut back on spending, and many retailers closed their stores.",
+   "o": [
+    "recession",
+    "reception",
+    "recognition",
+    "recreation"
+   ],
+   "a": 0,
+   "k": "소비자가 지출을 줄이고 상점들이 문을 닫은 시기는 '경기 침체기'이므로 recession이 정답. reception(접수, 환영회), recognition(인정), recreation(오락)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "inflation",
+  "pos": "n",
+  "m": [
+   "물가 상승",
+   "인플레이션"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Rising *inflation* has made everyday goods more expensive for consumers.",
+  "exKo": "물가 상승으로 소비자들이 사는 생필품이 더 비싸졌다.",
+  "col": [
+   {
+    "e": "the inflation rate",
+    "k": "물가 상승률"
+   },
+   {
+    "e": "high inflation",
+    "k": "높은 물가 상승"
+   },
+   {
+    "e": "rate of inflation",
+    "k": "물가 상승률"
+   }
+  ],
+  "der": [
+   {
+    "w": "inflate",
+    "pos": "v",
+    "m": "부풀리다, (물가를) 올리다"
+   },
+   {
+    "w": "inflationary",
+    "pos": "adj",
+    "m": "인플레이션의"
+   }
+  ],
+  "para": [
+   "rising prices",
+   "price increases"
+  ],
+  "ant": "deflation",
+  "tip": "불가산명사로 'the inflation rate', 'the rate of inflation(물가 상승률)' 형태로 자주 쓰이며, Part 7에서 rising prices로 바꿔 표현된다.",
+  "q": {
+   "s": "The central bank raised interest rates in an effort to control -------.",
+   "o": [
+    "inflate",
+    "inflation",
+    "inflated",
+    "inflationary"
+   ],
+   "a": 1,
+   "k": "타동사 control의 목적어인 명사 자리이므로 inflation이 정답. inflate는 동사, inflated는 분사, inflationary는 형용사라 목적어 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "interest rate",
+  "pos": "phr",
+  "m": [
+   "금리",
+   "이자율"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bank announced that it would lower its *interest rate* on home loans next month.",
+  "exKo": "그 은행은 다음 달 주택 담보 대출 금리를 인하하겠다고 발표했다.",
+  "col": [
+   {
+    "e": "raise interest rates",
+    "k": "금리를 인상하다"
+   },
+   {
+    "e": "a low interest rate",
+    "k": "낮은 금리"
+   },
+   {
+    "e": "interest rate on",
+    "k": "~에 대한 금리"
+   }
+  ],
+  "der": [],
+  "para": [
+   "rate",
+   "borrowing cost"
+  ],
+  "ant": "",
+  "tip": "'interest rate on + 대출/예금'처럼 전치사 on과 쓰며, 이 뜻의 interest는 '흥미'가 아니라 '이자'라는 점을 기억하자.",
+  "q": {
+   "s": "Many homeowners refinanced their mortgages after the bank cut its ------- rates.",
+   "o": [
+    "interesting",
+    "interested",
+    "interest",
+    "interests"
+   ],
+   "a": 2,
+   "k": "rates와 함께 복합명사 '금리(interest rates)'를 이루므로 interest가 정답. 복합명사의 앞 명사는 보통 단수형이므로 interests는 맞지 않고, interesting과 interested는 형용사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "demand",
+  "pos": "n",
+  "m": [
+   "수요",
+   "요구"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Demand* for electric bicycles has grown rapidly in major cities.",
+  "exKo": "대도시에서 전기 자전거 수요가 빠르게 늘었다.",
+  "col": [
+   {
+    "e": "demand for",
+    "k": "~에 대한 수요"
+   },
+   {
+    "e": "meet demand",
+    "k": "수요를 충족하다"
+   },
+   {
+    "e": "in high demand",
+    "k": "수요가 많은"
+   }
+  ],
+  "der": [
+   {
+    "w": "demanding",
+    "pos": "adj",
+    "m": "부담이 큰, 까다로운"
+   }
+  ],
+  "para": [
+   "need",
+   "market"
+  ],
+  "ant": "supply",
+  "tip": "'demand for + 제품(~에 대한 수요)'의 전치사 for와 'meet/keep up with demand(수요를 맞추다)', 'in high demand(수요가 많은)'가 자주 출제된다.",
+  "q": {
+   "s": "The factory hired temporary workers to keep up with the growing ------- for its products.",
+   "o": [
+    "supply",
+    "shortage",
+    "deficit",
+    "demand"
+   ],
+   "a": 3,
+   "k": "임시직을 고용해 따라잡아야 하는 것은 늘어나는 '수요'이므로 demand가 정답. supply(공급), shortage(부족), deficit(적자)은 keep up with와 for its products의 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "prosper",
+  "pos": "v",
+  "m": [
+   "번창하다",
+   "번영하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The town began to *prosper* after a major software company opened an office there.",
+  "exKo": "그 도시는 대형 소프트웨어 회사가 사무실을 연 뒤 번창하기 시작했다.",
+  "col": [
+   {
+    "e": "continue to prosper",
+    "k": "계속 번창하다"
+   },
+   {
+    "e": "prosper in",
+    "k": "~에서 번성하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "prosperity",
+    "pos": "n",
+    "m": "번영"
+   },
+   {
+    "w": "prosperous",
+    "pos": "adj",
+    "m": "번창하는, 부유한"
+   }
+  ],
+  "para": [
+   "thrive",
+   "flourish",
+   "succeed"
+  ],
+  "ant": "decline",
+  "tip": "자동사이므로 목적어 없이 쓰며, 명사 prosperity(번영), 형용사 prosperous(번창하는)와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "With its loyal customer base, the family-owned bakery is expected to ------- for many years to come.",
+   "o": [
+    "prosper",
+    "prosperity",
+    "prosperous",
+    "prosperously"
+   ],
+   "a": 0,
+   "k": "be expected to 뒤에는 동사원형이 와야 하므로 prosper가 정답. prosperity는 명사, prosperous는 형용사, prosperously는 부사다."
+  }
+ },
+ {
+  "w": "boom",
+  "pos": "n",
+  "m": [
+   "호황",
+   "급성장",
+   "붐"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The city's housing *boom* has attracted builders from across the country.",
+  "exKo": "그 도시의 주택 호황은 전국 각지의 건설업자들을 끌어들였다.",
+  "col": [
+   {
+    "e": "economic boom",
+    "k": "경제 호황"
+   },
+   {
+    "e": "a boom in",
+    "k": "~의 급성장"
+   }
+  ],
+  "der": [
+   {
+    "w": "booming",
+    "pos": "adj",
+    "m": "호황을 누리는, 급성장하는"
+   }
+  ],
+  "para": [
+   "upturn",
+   "expansion",
+   "surge"
+  ],
+  "ant": "recession",
+  "tip": "'a boom in tourism(관광 산업의 호황)'처럼 전치사 in과 쓰며, 형용사 booming은 'a booming industry(급성장하는 산업)'로 자주 나온다.",
+  "q": {
+   "s": "The recent ------- in online shopping has created thousands of jobs in the delivery industry.",
+   "o": [
+    "slump",
+    "boom",
+    "halt",
+    "drought"
+   ],
+   "a": 1,
+   "k": "배송 업계에 수천 개의 일자리를 만들어 낸 것은 온라인 쇼핑의 '호황'이므로 boom이 정답. slump(부진), halt(중단), drought(가뭄)는 일자리 창출과 반대되는 의미다."
+  }
+ },
+ {
+  "w": "downturn",
+  "pos": "n",
+  "m": [
+   "(경기) 하강",
+   "침체"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *downturn* in the housing market has hurt furniture sales.",
+  "exKo": "주택 시장의 침체가 가구 판매에 타격을 주었다.",
+  "col": [
+   {
+    "e": "economic downturn",
+    "k": "경기 침체"
+   },
+   {
+    "e": "a downturn in",
+    "k": "~의 하락, 침체"
+   }
+  ],
+  "der": [],
+  "para": [
+   "decline",
+   "slump",
+   "recession"
+  ],
+  "ant": "upturn",
+  "tip": "'a downturn in + 분야'처럼 전치사 in과 쓰며 recession, slump로 패러프레이징된다. 반의어 upturn(호전)도 함께 알아두자.",
+  "q": {
+   "s": "Many companies postponed hiring plans because of the economic -------.",
+   "o": [
+    "downtown",
+    "download",
+    "downturn",
+    "downstairs"
+   ],
+   "a": 2,
+   "k": "기업들이 채용 계획을 미룬 원인은 '경기 침체(economic downturn)'이므로 downturn이 정답. downtown(시내), download(내려받기), downstairs(아래층)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "recover",
+  "pos": "v",
+  "m": [
+   "회복하다",
+   "되찾다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The tourism industry has fully *recovered* from last year's slowdown.",
+  "exKo": "관광 산업은 작년의 침체에서 완전히 회복했다.",
+  "col": [
+   {
+    "e": "recover from",
+    "k": "~에서 회복하다"
+   },
+   {
+    "e": "recover costs",
+    "k": "비용을 회수하다"
+   },
+   {
+    "e": "fully recover",
+    "k": "완전히 회복하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "recovery",
+    "pos": "n",
+    "m": "회복"
+   }
+  ],
+  "para": [
+   "bounce back",
+   "rebound",
+   "improve"
+  ],
+  "ant": "",
+  "tip": "자동사로 'recover from(~에서 회복하다)', 타동사로 'recover the costs(비용을 회수하다)'처럼 쓴다. 명사 recovery는 'economic recovery(경기 회복)'로 자주 나온다.",
+  "q": {
+   "s": "It may take several years for the local economy to fully ------- from the factory closures.",
+   "o": [
+    "recovery",
+    "recovered",
+    "recovering",
+    "recover"
+   ],
+   "a": 3,
+   "k": "'for + 의미상 주어 + to부정사' 구조에서 to 뒤 동사원형 자리이므로 recover가 정답. recovery는 명사이고, recovered와 recovering은 to 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "outlook",
+  "pos": "n",
+  "m": [
+   "전망",
+   "관점"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The economic *outlook* for next year remains uncertain, according to several analysts.",
+  "exKo": "여러 분석가에 따르면 내년 경제 전망은 여전히 불확실하다.",
+  "col": [
+   {
+    "e": "economic outlook",
+    "k": "경제 전망"
+   },
+   {
+    "e": "outlook for",
+    "k": "~에 대한 전망"
+   },
+   {
+    "e": "positive outlook",
+    "k": "긍정적인 전망"
+   }
+  ],
+  "der": [],
+  "para": [
+   "prospects",
+   "forecast",
+   "view"
+  ],
+  "ant": "",
+  "tip": "'outlook for + 대상/기간'처럼 전치사 for와 쓰며, Part 7에서 forecast, prospects로 패러프레이징된다.",
+  "q": {
+   "s": "Industry experts have a positive ------- for the electric vehicle market over the next five years.",
+   "o": [
+    "outlook",
+    "outcome",
+    "outlet",
+    "output"
+   ],
+   "a": 0,
+   "k": "향후 5년간의 시장에 대한 '전망'이므로 'outlook for'의 outlook이 정답. outcome(결과)은 이미 나온 결과를 말하며, outlet(판매점), output(생산량)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "prospect",
+  "pos": "n",
+  "m": [
+   "전망",
+   "가능성",
+   "잠재 고객"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *prospect* of a new trade agreement has boosted investor confidence.",
+  "exKo": "새로운 무역 협정이 체결될 가능성에 투자자 신뢰가 높아졌다.",
+  "col": [
+   {
+    "e": "prospects for",
+    "k": "~에 대한 전망"
+   },
+   {
+    "e": "job prospects",
+    "k": "취업 전망"
+   },
+   {
+    "e": "the prospect of",
+    "k": "~할 가능성"
+   }
+  ],
+  "der": [
+   {
+    "w": "prospective",
+    "pos": "adj",
+    "m": "장래의, 잠재적인"
+   }
+  ],
+  "para": [
+   "possibility",
+   "likelihood",
+   "outlook"
+  ],
+  "ant": "",
+  "tip": "형용사 prospective는 'prospective clients/employees(잠재 고객, 예비 직원)'로 Part 5에 자주 나온다. 'prospects for growth(성장 전망)'처럼 복수형으로도 자주 쓴다.",
+  "q": {
+   "s": "The engineering graduates have excellent job ------- because of the growing demand for skilled workers.",
+   "o": [
+    "prospective",
+    "prospects",
+    "prosperity",
+    "prospectus"
+   ],
+   "a": 1,
+   "k": "숙련 인력 수요 증가로 '취업 전망(job prospects)'이 밝다는 뜻이므로 prospects가 정답. prospective는 형용사, prospectus는 '사업 설명서', prosperity는 '번영'이라 job과 결합하지 않는다."
+  }
+ },
+ {
+  "w": "indicator",
+  "pos": "n",
+  "m": [
+   "지표",
+   "지수"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Retail sales are an important *indicator* of consumer confidence.",
+  "exKo": "소매 판매는 소비자 신뢰를 보여 주는 중요한 지표다.",
+  "col": [
+   {
+    "e": "economic indicator",
+    "k": "경제 지표"
+   },
+   {
+    "e": "key indicator",
+    "k": "주요 지표"
+   },
+   {
+    "e": "an indicator of",
+    "k": "~의 지표"
+   }
+  ],
+  "der": [
+   {
+    "w": "indicate",
+    "pos": "v",
+    "m": "나타내다, 보여 주다"
+   },
+   {
+    "w": "indication",
+    "pos": "n",
+    "m": "징후, 표시"
+   }
+  ],
+  "para": [
+   "sign",
+   "measure",
+   "signal"
+  ],
+  "ant": "",
+  "tip": "'an indicator of + 대상'처럼 전치사 of와 쓰며, 동사 indicate는 Part 7 문제 'What is indicated about ~?'에 자주 쓰인다.",
+  "q": {
+   "s": "Employment figures are often seen as a reliable ------- of the economy's overall health.",
+   "o": [
+    "indicate",
+    "indicative",
+    "indicator",
+    "indicated"
+   ],
+   "a": 2,
+   "k": "관사 a와 형용사 reliable 뒤의 명사 자리이므로 indicator가 정답. indicate는 동사, indicative는 형용사, indicated는 분사다."
+  }
+ },
+ {
+  "w": "unemployment",
+  "pos": "n",
+  "m": [
+   "실업",
+   "실업률"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Unemployment* in the region fell to its lowest level in a decade.",
+  "exKo": "그 지역의 실업률이 10년 만에 최저 수준으로 떨어졌다.",
+  "col": [
+   {
+    "e": "unemployment rate",
+    "k": "실업률"
+   },
+   {
+    "e": "high unemployment",
+    "k": "높은 실업률"
+   }
+  ],
+  "der": [
+   {
+    "w": "unemployed",
+    "pos": "adj",
+    "m": "실직한"
+   },
+   {
+    "w": "employment",
+    "pos": "n",
+    "m": "고용"
+   }
+  ],
+  "para": [
+   "joblessness"
+  ],
+  "ant": "employment",
+  "tip": "불가산명사이며 'the unemployment rate(실업률)'로 자주 쓴다. 형용사 unemployed(실직한)와의 품사 구분에 주의하자.",
+  "q": {
+   "s": "The opening of the new factory is expected to reduce ------- in the area by 3 percent.",
+   "o": [
+    "unemployed",
+    "employer",
+    "employ",
+    "unemployment"
+   ],
+   "a": 3,
+   "k": "타동사 reduce의 목적어인 명사 자리이므로 unemployment가 정답. unemployed는 형용사이고, employer는 단수 가산명사라 관사 없이 쓸 수 없으며, employ는 동사다."
+  }
+ },
+ {
+  "w": "industry",
+  "pos": "n",
+  "m": [
+   "산업",
+   "업계"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "She has worked in the hospitality *industry* for more than fifteen years.",
+  "exKo": "그녀는 15년 넘게 호텔 및 외식 업계에서 일해 왔다.",
+  "col": [
+   {
+    "e": "the automobile industry",
+    "k": "자동차 산업"
+   },
+   {
+    "e": "industry leader",
+    "k": "업계 선두 주자"
+   },
+   {
+    "e": "industry experts",
+    "k": "업계 전문가"
+   }
+  ],
+  "der": [
+   {
+    "w": "industrial",
+    "pos": "adj",
+    "m": "산업의"
+   },
+   {
+    "w": "industrious",
+    "pos": "adj",
+    "m": "근면한"
+   }
+  ],
+  "para": [
+   "field",
+   "sector",
+   "business"
+  ],
+  "ant": "",
+  "tip": "형용사 industrial(산업의)과 industrious(근면한)의 의미 구분이 Part 5 함정으로 나온다. 'a leader in the industry(업계 선도 기업)' 표현도 자주 쓰인다.",
+  "q": {
+   "s": "Gemini Motors is widely regarded as a leader in the automotive -------.",
+   "o": [
+    "industry",
+    "industrial",
+    "industrious",
+    "industrialize"
+   ],
+   "a": 0,
+   "k": "정관사 the와 형용사 automotive 뒤의 명사 자리이므로 industry가 정답. industrial, industrious는 형용사, industrialize는 동사다."
+  }
+ },
+ {
+  "w": "sector",
+  "pos": "n",
+  "m": [
+   "부문",
+   "분야"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Jobs in the technology *sector* are expected to increase next year.",
+  "exKo": "기술 부문의 일자리는 내년에 늘어날 것으로 예상된다.",
+  "col": [
+   {
+    "e": "the private sector",
+    "k": "민간 부문"
+   },
+   {
+    "e": "the public sector",
+    "k": "공공 부문"
+   },
+   {
+    "e": "the service sector",
+    "k": "서비스 부문"
+   }
+  ],
+  "der": [],
+  "para": [
+   "industry",
+   "field",
+   "area"
+  ],
+  "ant": "",
+  "tip": "'the private/public sector(민간/공공 부문)'처럼 정관사 the와 함께 쓰며, Part 7에서 industry, field로 패러프레이징된다.",
+  "q": {
+   "s": "Wages in the public ------- rose by an average of 3 percent last year.",
+   "o": [
+    "factor",
+    "sector",
+    "venue",
+    "surface"
+   ],
+   "a": 1,
+   "k": "'공공 부문(public sector)'의 임금이 올랐다는 뜻이므로 sector가 정답. factor(요인), venue(장소), surface(표면)는 public과 결합해 임금을 받는 분야를 나타내지 못한다."
+  }
+ },
+ {
+  "w": "domestic",
+  "pos": "adj",
+  "m": [
+   "국내의",
+   "가정의"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The airline operates both *domestic* and international flights from this terminal.",
+  "exKo": "그 항공사는 이 터미널에서 국내선과 국제선을 모두 운항한다.",
+  "col": [
+   {
+    "e": "domestic flight",
+    "k": "국내선"
+   },
+   {
+    "e": "domestic market",
+    "k": "국내 시장"
+   },
+   {
+    "e": "domestic demand",
+    "k": "내수"
+   }
+  ],
+  "der": [],
+  "para": [
+   "local",
+   "national",
+   "internal"
+  ],
+  "ant": "foreign",
+  "tip": "'domestic flights(국내선)', 'domestic market(국내 시장)'처럼 '국내의'라는 뜻으로 international, overseas와 대비되어 출제된다.",
+  "q": {
+   "s": "The company plans to expand overseas after strengthening its position in the ------- market.",
+   "o": [
+    "foreign",
+    "vacant",
+    "domestic",
+    "durable"
+   ],
+   "a": 2,
+   "k": "해외로 확장하기 '전에' 입지를 다질 곳은 국내 시장이므로 domestic이 정답. foreign(외국의)은 해외 확장 이전 단계와 맞지 않고, vacant(비어 있는), durable(내구성 있는)은 market과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "global",
+  "pos": "adj",
+  "m": [
+   "세계적인",
+   "전 세계의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company has become a *global* leader in renewable energy technology.",
+  "exKo": "그 회사는 재생 에너지 기술 분야의 세계적인 선두 주자가 되었다.",
+  "col": [
+   {
+    "e": "global market",
+    "k": "세계 시장"
+   },
+   {
+    "e": "global economy",
+    "k": "세계 경제"
+   },
+   {
+    "e": "on a global scale",
+    "k": "세계적 규모로"
+   }
+  ],
+  "der": [
+   {
+    "w": "globally",
+    "pos": "adv",
+    "m": "전 세계적으로"
+   },
+   {
+    "w": "globalization",
+    "pos": "n",
+    "m": "세계화"
+   }
+  ],
+  "para": [
+   "worldwide",
+   "international"
+  ],
+  "ant": "local",
+  "tip": "부사 globally와의 품사 구분, 그리고 'on a global scale(세계적 규모로)' 표현이 출제된다. Part 7에서 worldwide, international로 바뀐다.",
+  "q": {
+   "s": "Slow ------- demand for steel has forced several manufacturers to reduce production.",
+   "o": [
+    "globally",
+    "globe",
+    "globalize",
+    "global"
+   ],
+   "a": 3,
+   "k": "형용사 slow와 함께 명사 demand를 수식하는 형용사 자리이므로 global이 정답. globally는 부사, globe는 명사, globalize는 동사다."
+  }
+ },
+ {
+  "w": "overseas",
+  "pos": "adv",
+  "m": [
+   "해외로",
+   "해외에서"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Hart will travel *overseas* next month to meet with potential suppliers.",
+  "exKo": "하트 씨는 잠재 공급업체들을 만나기 위해 다음 달 해외 출장을 간다.",
+  "col": [
+   {
+    "e": "travel overseas",
+    "k": "해외로 가다"
+   },
+   {
+    "e": "overseas market",
+    "k": "해외 시장"
+   },
+   {
+    "e": "overseas branch",
+    "k": "해외 지사"
+   }
+  ],
+  "der": [],
+  "para": [
+   "abroad",
+   "internationally"
+  ],
+  "ant": "",
+  "tip": "부사(해외로)와 형용사(해외의)로 모두 쓰이며, 부사일 때는 go overseas처럼 전치사 없이 쓴다(go to overseas는 틀린 표현). abroad로 패러프레이징된다.",
+  "q": {
+   "s": "Our sales team has been working hard to attract more customers -------.",
+   "o": [
+    "overseas",
+    "oversee",
+    "overseen",
+    "overseer"
+   ],
+   "a": 0,
+   "k": "'해외에서' 고객을 유치한다는 뜻으로 동사구를 수식하는 부사 자리이므로 overseas가 정답. 철자가 비슷한 oversee(감독하다)와 그 과거분사 overseen, 명사 overseer(감독관)는 함정이다."
+  }
+ },
+ {
+  "w": "export",
+  "pos": "v",
+  "m": [
+   "수출하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company *exports* organic coffee to more than twenty countries.",
+  "exKo": "그 회사는 20개국 이상에 유기농 커피를 수출한다.",
+  "col": [
+   {
+    "e": "export A to B",
+    "k": "A를 B로 수출하다"
+   },
+   {
+    "e": "export market",
+    "k": "수출 시장"
+   }
+  ],
+  "der": [
+   {
+    "w": "exporter",
+    "pos": "n",
+    "m": "수출업자, 수출국"
+   }
+  ],
+  "para": [
+   "ship abroad",
+   "sell overseas"
+  ],
+  "ant": "import",
+  "tip": "동사(수출하다)와 명사(수출, 수출품)가 같은 형태이며, 'export A to B'의 전치사 to와 사람명사 exporter의 구분이 출제된다.",
+  "q": {
+   "s": "Thanks to the new trade agreement, local farmers can now ------- their produce to Europe tax-free.",
+   "o": [
+    "exporter",
+    "export",
+    "exportation",
+    "exportable"
+   ],
+   "a": 1,
+   "k": "조동사 can 뒤의 동사원형 자리이므로 export가 정답. exporter, exportation은 명사, exportable은 형용사다."
+  }
+ },
+ {
+  "w": "import",
+  "pos": "n",
+  "m": [
+   "수입",
+   "수입품"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The government placed new restrictions on *imports* of foreign steel.",
+  "exKo": "정부는 외국산 철강 수입에 새로운 규제를 가했다.",
+  "col": [
+   {
+    "e": "imports from",
+    "k": "~로부터의 수입(품)"
+   },
+   {
+    "e": "import duties",
+    "k": "수입 관세"
+   },
+   {
+    "e": "import A from B",
+    "k": "A를 B에서 수입하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "importer",
+    "pos": "n",
+    "m": "수입업자, 수입국"
+   }
+  ],
+  "para": [
+   "foreign goods"
+  ],
+  "ant": "export",
+  "tip": "명사와 동사(수입하다)가 같은 형태이며, 동사일 때는 'import A from B'처럼 전치사 from과 쓴다. 철자가 비슷한 important(중요한)와 혼동하지 않도록 하자.",
+  "q": {
+   "s": "The country's ------- of electronic goods from Asia have increased steadily since 2020.",
+   "o": [
+    "imported",
+    "importance",
+    "imports",
+    "important"
+   ],
+   "a": 2,
+   "k": "소유격 뒤의 명사 자리이며 복수 동사 have와 수가 일치해야 하므로 imports가 정답. importance는 단수 명사라 have와 맞지 않고, imported와 important는 명사가 아니다."
+  }
+ },
+ {
+  "w": "tariff",
+  "pos": "n",
+  "m": [
+   "관세",
+   "요금(표)"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The government imposed a 10 percent *tariff* on imported cars.",
+  "exKo": "정부는 수입 자동차에 10퍼센트의 관세를 부과했다.",
+  "col": [
+   {
+    "e": "impose a tariff on",
+    "k": "~에 관세를 부과하다"
+   },
+   {
+    "e": "lift tariffs",
+    "k": "관세를 철폐하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "duty",
+   "import tax",
+   "customs duty"
+  ],
+  "ant": "",
+  "tip": "'impose a tariff on + 품목'처럼 전치사 on과 쓰며, Part 7에서 duty, tax로 패러프레이징된다.",
+  "q": {
+   "s": "Higher ------- on imported steel have increased production costs for local car manufacturers.",
+   "o": [
+    "refunds",
+    "rebates",
+    "dividends",
+    "tariffs"
+   ],
+   "a": 3,
+   "k": "수입 철강에 대한 '관세'가 올라 생산 비용이 늘었다는 뜻이므로 tariffs가 정답. refunds(환불), rebates(환급), dividends(배당금)는 비용을 늘리는 요인이 아니다."
+  }
+ },
+ {
+  "w": "competition",
+  "pos": "n",
+  "m": [
+   "경쟁",
+   "대회"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Fierce *competition* among airlines has led to lower ticket prices.",
+  "exKo": "항공사 간의 치열한 경쟁으로 항공권 가격이 낮아졌다.",
+  "col": [
+   {
+    "e": "fierce competition",
+    "k": "치열한 경쟁"
+   },
+   {
+    "e": "competition among",
+    "k": "~ 간의 경쟁"
+   },
+   {
+    "e": "enter a competition",
+    "k": "대회에 참가하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "compete",
+    "pos": "v",
+    "m": "경쟁하다"
+   },
+   {
+    "w": "competitive",
+    "pos": "adj",
+    "m": "경쟁력 있는"
+   },
+   {
+    "w": "competitor",
+    "pos": "n",
+    "m": "경쟁자, 경쟁사"
+   }
+  ],
+  "para": [
+   "rivalry",
+   "contest"
+  ],
+  "ant": "",
+  "tip": "compete(동사), competitive(형용사), competitor(경쟁자)와의 품사 구분이 Part 5 단골이다. '경쟁' 외에 '대회(contest)'의 뜻도 있다.",
+  "q": {
+   "s": "Increased ------- from online retailers has forced many bookstores to lower their prices.",
+   "o": [
+    "competition",
+    "competitive",
+    "compete",
+    "competitively"
+   ],
+   "a": 0,
+   "k": "분사 Increased의 수식을 받는 주어 자리의 명사이므로 competition이 정답. competitive는 형용사, compete는 동사, competitively는 부사다."
+  }
+ },
+ {
+  "w": "stagnant",
+  "pos": "adj",
+  "m": [
+   "침체된",
+   "정체된"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Wages have remained *stagnant* for several years despite rising living costs.",
+  "exKo": "생활비 상승에도 불구하고 임금은 몇 년째 제자리걸음이다.",
+  "col": [
+   {
+    "e": "a stagnant economy",
+    "k": "침체된 경제"
+   },
+   {
+    "e": "remain stagnant",
+    "k": "정체 상태에 머무르다"
+   }
+  ],
+  "der": [
+   {
+    "w": "stagnation",
+    "pos": "n",
+    "m": "침체, 정체"
+   },
+   {
+    "w": "stagnate",
+    "pos": "v",
+    "m": "침체되다"
+   }
+  ],
+  "para": [
+   "sluggish",
+   "flat",
+   "inactive"
+  ],
+  "ant": "booming",
+  "tip": "'remain stagnant(정체되어 있다)'처럼 2형식 보어로 자주 쓰이며, 명사 stagnation(침체)도 경제 기사에 나온다.",
+  "q": {
+   "s": "Sales of desktop computers have been ------- for years as more people switch to laptops.",
+   "o": [
+    "attentive",
+    "stagnant",
+    "eligible",
+    "spacious"
+   ],
+   "a": 1,
+   "k": "더 많은 사람이 노트북으로 바꾸면서 데스크톱 판매가 '정체되어' 있다는 뜻이므로 stagnant가 정답. attentive(주의 깊은), eligible(자격이 있는)은 사람에 쓰고, spacious(넓은)는 공간에 쓴다."
+  }
+ },
+ {
+  "w": "plummet",
+  "pos": "v",
+  "m": [
+   "급락하다",
+   "곤두박질치다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company's stock price *plummeted* after it reported disappointing sales.",
+  "exKo": "그 회사의 주가는 실망스러운 판매 실적을 발표한 뒤 급락했다.",
+  "col": [
+   {
+    "e": "plummet by",
+    "k": "~만큼 급락하다"
+   },
+   {
+    "e": "plummet to",
+    "k": "~로 급락하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "plunge",
+   "drop sharply",
+   "fall dramatically"
+  ],
+  "ant": "soar",
+  "tip": "자동사이므로 목적어 없이 쓰고 수동태로 쓰지 않는다. 반의어 soar(치솟다)와 함께 증감을 나타내는 어휘 문제로 출제된다.",
+  "q": {
+   "s": "Ticket sales ------- after the band canceled several of its concerts.",
+   "o": [
+    "prolonged",
+    "postponed",
+    "plummeted",
+    "persuaded"
+   ],
+   "a": 2,
+   "k": "목적어 없이 쓰여 판매량이 '급락했다'는 뜻이 되어야 하므로 자동사 plummeted가 정답. prolonged, postponed, persuaded는 타동사라 목적어가 필요하다."
+  }
+ },
+ {
+  "w": "soar",
+  "pos": "v",
+  "m": [
+   "급등하다",
+   "치솟다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Housing prices in the capital have *soared* over the past two years.",
+  "exKo": "수도의 주택 가격은 지난 2년간 치솟았다.",
+  "col": [
+   {
+    "e": "soar to",
+    "k": "~로 치솟다"
+   },
+   {
+    "e": "soaring prices",
+    "k": "치솟는 가격"
+   }
+  ],
+  "der": [
+   {
+    "w": "soaring",
+    "pos": "adj",
+    "m": "치솟는, 급증하는"
+   }
+  ],
+  "para": [
+   "skyrocket",
+   "surge",
+   "rise sharply"
+  ],
+  "ant": "plummet",
+  "tip": "자동사이므로 수동태로 쓰지 않으며, 'soaring costs(치솟는 비용)'처럼 현재분사형 형용사로도 자주 나온다.",
+  "q": {
+   "s": "Demand for the new smartphone has ------- since its launch, and stores are struggling to keep it in stock.",
+   "o": [
+    "sorted",
+    "sought",
+    "solved",
+    "soared"
+   ],
+   "a": 3,
+   "k": "매장들이 재고를 유지하기 힘들 정도로 수요가 '치솟았다'는 뜻이므로 자동사 soared가 정답. sorted, sought, solved는 타동사라 목적어가 필요하고 의미도 맞지 않는다."
+  }
+ },
+ {
+  "w": "considerable",
+  "pos": "adj",
+  "m": [
+   "상당한",
+   "많은"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new marketing campaign generated *considerable* interest among young consumers.",
+  "exKo": "새 마케팅 캠페인은 젊은 소비자들 사이에서 상당한 관심을 불러일으켰다.",
+  "col": [
+   {
+    "e": "a considerable amount",
+    "k": "상당한 양"
+   },
+   {
+    "e": "considerable effort",
+    "k": "상당한 노력"
+   }
+  ],
+  "der": [
+   {
+    "w": "considerably",
+    "pos": "adv",
+    "m": "상당히"
+   },
+   {
+    "w": "consider",
+    "pos": "v",
+    "m": "고려하다"
+   }
+  ],
+  "para": [
+   "substantial",
+   "significant",
+   "large"
+  ],
+  "ant": "negligible",
+  "tip": "considerate(사려 깊은)와 철자가 비슷해 어휘 문제 함정으로 나온다. 부사 considerably는 'considerably higher'처럼 비교급을 수식한다.",
+  "q": {
+   "s": "Renovating the old warehouse will require a ------- amount of time and money.",
+   "o": [
+    "considerable",
+    "considerate",
+    "considering",
+    "consideration"
+   ],
+   "a": 0,
+   "k": "명사 amount를 수식해 '상당한 양'이라는 뜻을 만드는 considerable이 정답. considerate(사려 깊은)는 사람의 성품에 쓰는 함정이고, considering은 전치사/분사, consideration은 명사다."
+  }
+ },
+ {
+  "w": "projected",
+  "pos": "adj",
+  "m": [
+   "예상되는",
+   "추정된"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *projected* cost of the new stadium has risen to $200 million.",
+  "exKo": "새 경기장의 예상 비용이 2억 달러로 늘었다.",
+  "col": [
+   {
+    "e": "projected growth",
+    "k": "예상 성장률"
+   },
+   {
+    "e": "projected sales",
+    "k": "예상 매출"
+   },
+   {
+    "e": "be projected to do",
+    "k": "~할 것으로 예상되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "projection",
+    "pos": "n",
+    "m": "예상(치), 추정"
+   }
+  ],
+  "para": [
+   "expected",
+   "estimated",
+   "forecast"
+  ],
+  "ant": "",
+  "tip": "'be projected to do(~할 것으로 예상되다)'의 수동 구문과 'projected growth/sales'처럼 명사 앞에서 쓰는 형용사 용법이 모두 출제된다.",
+  "q": {
+   "s": "The new shopping mall is ------- to attract more than two million visitors a year.",
+   "o": [
+    "projecting",
+    "projected",
+    "projection",
+    "projector"
+   ],
+   "a": 1,
+   "k": "쇼핑몰이 방문객을 유치할 것으로 '예상된다'는 수동 구문 be projected to do이므로 projected가 정답. projecting은 능동이라 의미가 맞지 않고, projection과 projector는 명사다."
+  }
+ },
+ {
+  "w": "volatile",
+  "pos": "adj",
+  "m": [
+   "변동성이 큰",
+   "불안정한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Investors are worried about the *volatile* price of crude oil.",
+  "exKo": "투자자들은 변동성이 큰 원유 가격을 우려하고 있다.",
+  "col": [
+   {
+    "e": "a volatile market",
+    "k": "변동성이 큰 시장"
+   },
+   {
+    "e": "highly volatile",
+    "k": "매우 불안정한"
+   }
+  ],
+  "der": [
+   {
+    "w": "volatility",
+    "pos": "n",
+    "m": "변동성"
+   }
+  ],
+  "para": [
+   "unstable",
+   "unpredictable"
+  ],
+  "ant": "stable",
+  "tip": "가격, 시장이 '급변하는, 불안정한'이라는 뜻으로 stable(안정된)과 반대되며 Part 7에서 unstable, unpredictable로 패러프레이징된다.",
+  "q": {
+   "s": "Because the currency market is highly -------, many firms protect themselves against sudden exchange rate changes.",
+   "o": [
+    "valuable",
+    "voluntary",
+    "volatile",
+    "vocal"
+   ],
+   "a": 2,
+   "k": "급격한 환율 변화에 대비하는 이유는 외환 시장의 '변동성이 크기' 때문이므로 volatile이 정답. valuable(귀중한), voluntary(자발적인), vocal(목소리를 내는)은 이유가 되지 않는다."
+  }
+ },
+ {
+  "w": "surge",
+  "pos": "n",
+  "m": [
+   "급증",
+   "급등"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The store saw a *surge* in sales after the product was featured on television.",
+  "exKo": "그 매장은 제품이 TV에 소개된 뒤 매출이 급증했다.",
+  "col": [
+   {
+    "e": "a surge in",
+    "k": "~의 급증"
+   },
+   {
+    "e": "a sudden surge",
+    "k": "갑작스러운 급증"
+   }
+  ],
+  "der": [],
+  "para": [
+   "sharp increase",
+   "jump",
+   "spike"
+  ],
+  "ant": "",
+  "tip": "'a surge in + 대상(~의 급증)'처럼 전치사 in과 쓰며, 동사로도 'Sales surged(매출이 급증했다)'처럼 쓴다.",
+  "q": {
+   "s": "A sudden ------- in demand for bottled water followed the announcement of the water main repairs.",
+   "o": [
+    "delay",
+    "refund",
+    "patent",
+    "surge"
+   ],
+   "a": 3,
+   "k": "수도관 수리 발표 후 생수 수요가 '급증했다'는 뜻이므로 surge가 정답. delay(지연), refund(환불), patent(특허)는 'in demand'와 결합하지 않는다."
+  }
+ },
+ {
+  "w": "boost",
+  "pos": "v",
+  "m": [
+   "높이다",
+   "늘리다",
+   "북돋우다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new advertising campaign is expected to *boost* sales by 15 percent.",
+  "exKo": "새 광고 캠페인은 매출을 15퍼센트 끌어올릴 것으로 기대된다.",
+  "col": [
+   {
+    "e": "boost sales",
+    "k": "매출을 늘리다"
+   },
+   {
+    "e": "boost productivity",
+    "k": "생산성을 높이다"
+   },
+   {
+    "e": "boost morale",
+    "k": "사기를 북돋우다"
+   }
+  ],
+  "der": [
+   {
+    "w": "booster",
+    "pos": "n",
+    "m": "촉진제, 후원자"
+   }
+  ],
+  "para": [
+   "increase",
+   "raise",
+   "improve"
+  ],
+  "ant": "reduce",
+  "tip": "동사(높이다)와 명사(a boost to/in ~의 증대)가 같은 형태이며 sales, morale, productivity 같은 목적어와 잘 어울린다. Part 7에서 increase, improve로 패러프레이징된다.",
+  "q": {
+   "s": "The company held a team-building retreat to ------- employee morale after a difficult year.",
+   "o": [
+    "boost",
+    "lower",
+    "delay",
+    "lend"
+   ],
+   "a": 0,
+   "k": "힘든 한 해를 보낸 뒤 워크숍을 연 목적은 직원 사기를 '북돋우기' 위해서이므로 boost가 정답. lower(낮추다)는 목적과 반대이고, delay(미루다), lend(빌려주다)는 morale과 어울리지 않는다."
+  }
+ }
+]

@@ -1,0 +1,2084 @@
+[
+ {
+  "w": "conference",
+  "pos": "n",
+  "m": [
+   "회의",
+   "학회",
+   "콘퍼런스"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The annual sales *conference* will be held in Chicago this October.",
+  "exKo": "연례 영업 회의는 올해 10월 시카고에서 열린다.",
+  "col": [
+   {
+    "e": "attend a conference",
+    "k": "회의에 참석하다"
+   },
+   {
+    "e": "conference call",
+    "k": "전화 회의"
+   },
+   {
+    "e": "conference room",
+    "k": "회의실"
+   }
+  ],
+  "der": [
+   {
+    "w": "confer",
+    "pos": "v",
+    "m": "상의하다, 수여하다"
+   }
+  ],
+  "para": [
+   "meeting",
+   "convention"
+  ],
+  "ant": "",
+  "tip": "'회의에 참석하다'는 attend a conference로, 타동사 attend 뒤에 전치사를 쓰지 않는다. conference call(전화 회의)은 LC 빈출 표현이다.",
+  "q": {
+   "s": "Ms. Patel will be out of the office next week because she is attending a medical ------- in Boston.",
+   "o": [
+    "residence",
+    "preference",
+    "conference",
+    "inference"
+   ],
+   "a": 2,
+   "k": "'보스턴에서 열리는 의학 학회에 참석한다'는 문맥이므로 conference가 정답. residence(거주지), preference(선호), inference(추론)는 attend의 목적어로 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "convention",
+  "pos": "n",
+  "m": [
+   "(대규모) 회의",
+   "총회",
+   "관례, 관습"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "More than 5,000 dealers are expected to attend this year's *convention* in Las Vegas.",
+  "exKo": "5,000명이 넘는 판매업자가 라스베이거스에서 열리는 올해 총회에 참석할 것으로 예상된다.",
+  "col": [
+   {
+    "e": "convention center",
+    "k": "컨벤션 센터, 대규모 회의장"
+   },
+   {
+    "e": "annual convention",
+    "k": "연례 총회"
+   }
+  ],
+  "der": [
+   {
+    "w": "conventional",
+    "pos": "adj",
+    "m": "관습적인, 기존의"
+   },
+   {
+    "w": "conventionally",
+    "pos": "adv",
+    "m": "관례적으로"
+   }
+  ],
+  "para": [
+   "conference",
+   "gathering"
+  ],
+  "ant": "",
+  "tip": "convention center(대규모 행사장)가 장소로 자주 나온다. 형용사 conventional은 '대회의'가 아니라 '관습적인, 기존의'라는 뜻이라 의미 차이에 주의한다.",
+  "q": {
+   "s": "The Midwest Dental Association holds its annual ------- in a different city each spring.",
+   "o": [
+    "attendance",
+    "convention",
+    "invention",
+    "admission"
+   ],
+   "a": 1,
+   "k": "협회가 매년 봄 다른 도시에서 '개최하는(holds)' 것은 연례 총회이므로 convention이 정답. attendance(참석), invention(발명품), admission(입장)은 hold의 목적어로 어울리지 않는다."
+  }
+ },
+ {
+  "w": "seminar",
+  "pos": "n",
+  "m": [
+   "세미나",
+   "연수회"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Employees who attend the *seminar* on workplace safety will receive a certificate.",
+  "exKo": "직장 안전에 관한 세미나에 참석하는 직원은 수료증을 받는다.",
+  "col": [
+   {
+    "e": "seminar on",
+    "k": "~에 관한 세미나"
+   },
+   {
+    "e": "hold a seminar",
+    "k": "세미나를 열다"
+   },
+   {
+    "e": "sign up for a seminar",
+    "k": "세미나에 신청하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "workshop",
+   "training session"
+  ],
+  "ant": "",
+  "tip": "'~에 관한 세미나'는 seminar on/about으로 쓰며, hold/conduct/host a seminar와 자주 결합한다. Part 7에서는 workshop, session으로 바꿔 표현된다.",
+  "q": {
+   "s": "All new sales representatives are required to attend a one-day ------- on customer service skills.",
+   "o": [
+    "semester",
+    "signature",
+    "statement",
+    "seminar"
+   ],
+   "a": 3,
+   "k": "attend의 목적어이자 '고객 서비스 기술에 관한 하루짜리 교육'이므로 seminar가 정답. semester(학기)는 one-day와 어울리지 않고 signature(서명), statement(성명서, 명세서)는 참석 대상이 아니다."
+  }
+ },
+ {
+  "w": "symposium",
+  "pos": "n",
+  "m": [
+   "심포지엄",
+   "학술 토론회"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Leading economists from twelve countries will speak at next month's *symposium* on global trade.",
+  "exKo": "12개국의 저명한 경제학자들이 다음 달 열리는 세계 무역 심포지엄에서 연설한다.",
+  "col": [
+   {
+    "e": "international symposium",
+    "k": "국제 심포지엄"
+   },
+   {
+    "e": "symposium on",
+    "k": "~에 관한 심포지엄"
+   }
+  ],
+  "der": [],
+  "para": [
+   "conference",
+   "forum"
+  ],
+  "ant": "",
+  "tip": "복수형은 symposiums 또는 symposia이다. 전문가들이 특정 주제로 발표하는 학술 행사라 Part 7에서 conference, forum으로 바꿔 표현된다.",
+  "q": {
+   "s": "Researchers from over thirty universities presented their findings at the two-day -------.",
+   "o": [
+    "symposium",
+    "sympathy",
+    "symptom",
+    "synopsis"
+   ],
+   "a": 0,
+   "k": "연구자들이 연구 결과를 '발표한' 이틀간의 행사이므로 symposium이 정답. sympathy(동정), symptom(증상), synopsis(개요)는 행사가 아니다."
+  }
+ },
+ {
+  "w": "exhibition",
+  "pos": "n",
+  "m": [
+   "전시회",
+   "전람회"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "The museum's photography *exhibition* will run until the end of August.",
+  "exKo": "박물관의 사진 전시회는 8월 말까지 계속된다.",
+  "col": [
+   {
+    "e": "on exhibition",
+    "k": "전시 중인"
+   },
+   {
+    "e": "hold an exhibition",
+    "k": "전시회를 열다"
+   },
+   {
+    "e": "art exhibition",
+    "k": "미술 전시회"
+   }
+  ],
+  "der": [
+   {
+    "w": "exhibit",
+    "pos": "v",
+    "m": "전시하다"
+   },
+   {
+    "w": "exhibitor",
+    "pos": "n",
+    "m": "출품자, 전시 업체"
+   }
+  ],
+  "para": [
+   "exhibit",
+   "show",
+   "display"
+  ],
+  "ant": "",
+  "tip": "on exhibition(전시 중인)은 on display로 바꿔 쓸 수 있다. 행사 자체는 exhibition, 행사에 참가해 전시하는 업체는 exhibitor로 구분한다.",
+  "q": {
+   "s": "Several of the artist's early paintings are currently on ------- at the Westbrook Gallery.",
+   "o": [
+    "exhibition",
+    "exhibitor",
+    "exhibited",
+    "exhibiting"
+   ],
+   "a": 0,
+   "k": "전치사 on 뒤에서 '전시 중인'을 뜻하는 on exhibition이 되어야 하므로 명사 exhibition이 정답. exhibitor는 사람(업체)명사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "exhibitor",
+  "pos": "n",
+  "m": [
+   "출품자",
+   "전시 업체"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Each *exhibitor* will be assigned a booth near the main entrance of the hall.",
+  "exKo": "각 전시 업체에는 전시장 정문 근처의 부스가 배정된다.",
+  "col": [
+   {
+    "e": "exhibitor registration",
+    "k": "전시 업체 등록"
+   },
+   {
+    "e": "exhibitors at the fair",
+    "k": "박람회 참가 업체"
+   }
+  ],
+  "der": [
+   {
+    "w": "exhibit",
+    "pos": "v",
+    "m": "전시하다"
+   },
+   {
+    "w": "exhibition",
+    "pos": "n",
+    "m": "전시회"
+   }
+  ],
+  "para": [
+   "vendor",
+   "participating company"
+  ],
+  "ant": "",
+  "tip": "-or로 끝나는 사람(업체)명사다. 주어가 부스를 예약하거나 신청서를 내는 주체이면 exhibitor, 행사를 가리키면 exhibition이 정답이다.",
+  "q": {
+   "s": "------- who wish to reserve a corner booth must submit their applications by May 1.",
+   "o": [
+    "Exhibitions",
+    "Exhibited",
+    "Exhibiting",
+    "Exhibitors"
+   ],
+   "a": 3,
+   "k": "관계대명사 who가 받는 '사람' 주어 자리이므로 Exhibitors가 정답. Exhibitions는 행사를 뜻하는 사물명사라 who와 부스 예약의 주체가 될 수 없다."
+  }
+ },
+ {
+  "w": "trade show",
+  "pos": "n",
+  "m": [
+   "무역 박람회",
+   "업계 전시회"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Our company will introduce its new line of kitchen appliances at the *trade show* in Frankfurt.",
+  "exKo": "우리 회사는 프랑크푸르트 무역 박람회에서 새 주방 가전 제품군을 선보일 예정이다.",
+  "col": [
+   {
+    "e": "attend a trade show",
+    "k": "무역 박람회에 참가하다"
+   },
+   {
+    "e": "trade show booth",
+    "k": "박람회 부스"
+   }
+  ],
+  "der": [],
+  "para": [
+   "trade fair",
+   "expo",
+   "exposition"
+  ],
+  "ant": "",
+  "tip": "trade fair, expo와 같은 뜻으로 Part 7에서 바꿔 쓰인다. LC에서는 박람회 부스 위치나 준비물을 묻는 문제의 배경으로 자주 나온다.",
+  "q": {
+   "s": "Thousands of industry professionals visited our booth at last week's -------.",
+   "o": [
+    "trade-off",
+    "trademark",
+    "trade show",
+    "trade deficit"
+   ],
+   "a": 2,
+   "k": "'부스를 방문했다'는 내용에 맞는 행사는 trade show이다. trade-off(맞교환), trademark(상표), trade deficit(무역 적자)는 부스가 있는 행사가 아니다."
+  }
+ },
+ {
+  "w": "booth",
+  "pos": "n",
+  "m": [
+   "(전시) 부스",
+   "칸막이 공간",
+   "매표소"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "Visitors stopped by our *booth* to try samples of the new energy drink.",
+  "exKo": "방문객들이 새 에너지 음료 시음을 하러 우리 부스에 들렀다.",
+  "col": [
+   {
+    "e": "set up a booth",
+    "k": "부스를 설치하다"
+   },
+   {
+    "e": "information booth",
+    "k": "안내소"
+   },
+   {
+    "e": "ticket booth",
+    "k": "매표소"
+   }
+  ],
+  "der": [],
+  "para": [
+   "stand",
+   "stall",
+   "kiosk"
+  ],
+  "ant": "",
+  "tip": "Part 1에서는 ticket booth(매표소), information booth(안내소) 사진 묘사로, Part 3·4에서는 박람회 부스 설치·위치 문제로 출제된다.",
+  "q": {
+   "s": "Exhibitors may begin setting up their ------- in Hall B at 7 A.M. on Friday.",
+   "o": [
+    "audiences",
+    "booths",
+    "receipts",
+    "admissions"
+   ],
+   "a": 1,
+   "k": "전시 업체가 설치하는(set up) 대상은 부스이므로 booths가 정답. audiences(관객), receipts(영수증), admissions(입장)는 설치할 수 있는 것이 아니다."
+  }
+ },
+ {
+  "w": "venue",
+  "pos": "n",
+  "m": [
+   "(행사) 장소",
+   "개최지"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The hotel's ballroom is an ideal *venue* for large corporate events.",
+  "exKo": "그 호텔의 연회장은 대규모 기업 행사에 이상적인 장소이다.",
+  "col": [
+   {
+    "e": "venue for",
+    "k": "~을 위한 장소"
+   },
+   {
+    "e": "change of venue",
+    "k": "장소 변경"
+   },
+   {
+    "e": "wedding venue",
+    "k": "결혼식장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "location",
+   "site",
+   "place"
+  ],
+  "ant": "",
+  "tip": "venue for(~을 위한 장소)로 쓰이며 Part 7에서 location, site로 패러프레이징된다. '장소 변경(a change of venue)' 공지가 자주 출제된다.",
+  "q": {
+   "s": "Because more people registered than expected, the organizers moved the banquet to a larger -------.",
+   "o": [
+    "revenue",
+    "venue",
+    "avenue",
+    "value"
+   ],
+   "a": 1,
+   "k": "예상보다 등록자가 많아 연회를 '더 큰 장소'로 옮겼다는 문맥이므로 venue가 정답. revenue(수익), avenue(대로), value(가치)는 행사를 옮겨 갈 장소가 아니다."
+  }
+ },
+ {
+  "w": "host",
+  "pos": "v",
+  "m": [
+   "(행사를) 주최하다",
+   "개최하다",
+   "진행하다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Brightline Technologies will *host* a networking event for local entrepreneurs next Friday.",
+  "exKo": "브라이트라인 테크놀로지스는 다음 주 금요일 지역 창업가들을 위한 네트워킹 행사를 주최한다.",
+  "col": [
+   {
+    "e": "host a conference",
+    "k": "회의를 주최하다"
+   },
+   {
+    "e": "host city",
+    "k": "개최 도시"
+   },
+   {
+    "e": "play host to",
+    "k": "~을 개최하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "hospitality",
+    "pos": "n",
+    "m": "환대, 접대"
+   }
+  ],
+  "para": [
+   "hold",
+   "organize",
+   "put on"
+  ],
+  "ant": "",
+  "tip": "타동사로 바로 목적어를 취한다(host an event). 명사로는 '주최자, 진행자'(the host of the show)이며, Part 7에서 hold, organize로 바꿔 쓴다.",
+  "q": {
+   "s": "The city of Melbourne has been selected to ------- next year's international film festival.",
+   "o": [
+    "participate",
+    "occur",
+    "host",
+    "happen"
+   ],
+   "a": 2,
+   "k": "빈칸 뒤에 목적어(next year's ~ festival)가 있으므로 타동사 host가 정답. participate는 in이 필요하고 occur, happen은 목적어를 취하지 않는 자동사다."
+  }
+ },
+ {
+  "w": "organizer",
+  "pos": "n",
+  "m": [
+   "주최자",
+   "조직자",
+   "준비 위원"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The event *organizers* thanked all the volunteers for their hard work.",
+  "exKo": "행사 주최 측은 모든 자원봉사자에게 수고에 대한 감사를 전했다.",
+  "col": [
+   {
+    "e": "event organizer",
+    "k": "행사 주최자"
+   },
+   {
+    "e": "conference organizer",
+    "k": "회의 준비 위원"
+   }
+  ],
+  "der": [
+   {
+    "w": "organize",
+    "pos": "v",
+    "m": "조직하다, 준비하다"
+   },
+   {
+    "w": "organization",
+    "pos": "n",
+    "m": "조직, 단체"
+   },
+   {
+    "w": "organizational",
+    "pos": "adj",
+    "m": "조직의"
+   }
+  ],
+  "para": [
+   "coordinator",
+   "planner",
+   "host"
+  ],
+  "ant": "",
+  "tip": "사람명사 organizer와 단체·조직을 뜻하는 organization을 구분하는 문제가 나온다. 복수 동사(are)와 호응하면 organizers가 답이다.",
+  "q": {
+   "s": "Event ------- are asked to arrive two hours early to greet the speakers.",
+   "o": [
+    "organizers",
+    "organization",
+    "organize",
+    "organizational"
+   ],
+   "a": 0,
+   "k": "복수 동사 are의 주어이자 연사를 맞이하는 '사람'이 필요하므로 organizers가 정답. organization은 단수라 are와 수가 맞지 않고 의미도 '조직'이다."
+  }
+ },
+ {
+  "w": "register",
+  "pos": "v",
+  "m": [
+   "등록하다",
+   "신청하다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Attendees must *register* online by June 10 to receive the early-bird discount.",
+  "exKo": "참석자는 조기 등록 할인을 받으려면 6월 10일까지 온라인으로 등록해야 한다.",
+  "col": [
+   {
+    "e": "register for",
+    "k": "~에 등록하다"
+   },
+   {
+    "e": "register in advance",
+    "k": "미리 등록하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "registration",
+    "pos": "n",
+    "m": "등록"
+   },
+   {
+    "w": "registered",
+    "pos": "adj",
+    "m": "등록된"
+   }
+  ],
+  "para": [
+   "sign up",
+   "enroll"
+  ],
+  "ant": "",
+  "tip": "자동사로 쓸 때 register for a workshop처럼 for와 짝을 이룬다(sign up for와 같은 뜻). 명사 registration(등록)과의 품사 구분도 빈출이다.",
+  "q": {
+   "s": "Those who wish to ------- for the workshop should contact Ms. Dawson in the HR department.",
+   "o": [
+    "attend",
+    "join",
+    "participate",
+    "register"
+   ],
+   "a": 3,
+   "k": "빈칸 뒤 전치사 for와 짝을 이루는 동사는 register이다. attend와 join은 전치사 없이 목적어를 취하고, participate는 in과 함께 쓴다."
+  }
+ },
+ {
+  "w": "registration fee",
+  "pos": "n",
+  "m": [
+   "등록비",
+   "참가비"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *registration fee* includes lunch, conference materials, and a parking pass.",
+  "exKo": "등록비에는 점심, 회의 자료, 주차권이 포함된다.",
+  "col": [
+   {
+    "e": "pay the registration fee",
+    "k": "등록비를 내다"
+   },
+   {
+    "e": "waive the registration fee",
+    "k": "등록비를 면제하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "register",
+    "pos": "v",
+    "m": "등록하다"
+   },
+   {
+    "w": "registration",
+    "pos": "n",
+    "m": "등록"
+   }
+  ],
+  "para": [
+   "entry fee",
+   "participation fee"
+  ],
+  "ant": "",
+  "tip": "pay/waive/refund the registration fee와 결합하며, Part 7에서 등록비 포함 사항(includes ~)이나 조기 등록 할인 문제의 단서가 된다.",
+  "q": {
+   "s": "Students with a valid ID will receive a 20 percent discount on the -------.",
+   "o": [
+    "registration form",
+    "registration desk",
+    "registration number",
+    "registration fee"
+   ],
+   "a": 3,
+   "k": "'20퍼센트 할인'을 받을 수 있는 대상은 비용이므로 registration fee가 정답. 등록 양식(form), 등록 데스크(desk), 등록 번호(number)는 할인 대상이 아니다."
+  }
+ },
+ {
+  "w": "admission",
+  "pos": "n",
+  "m": [
+   "입장",
+   "입장료",
+   "입학"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "*Admission* to the exhibition is free for children under twelve.",
+  "exKo": "12세 미만 어린이는 전시회 입장이 무료이다.",
+  "col": [
+   {
+    "e": "admission to",
+    "k": "~ 입장"
+   },
+   {
+    "e": "free admission",
+    "k": "무료 입장"
+   },
+   {
+    "e": "admission fee",
+    "k": "입장료"
+   }
+  ],
+  "der": [
+   {
+    "w": "admit",
+    "pos": "v",
+    "m": "입장을 허락하다, 인정하다"
+   },
+   {
+    "w": "admittance",
+    "pos": "n",
+    "m": "입장 (허가)"
+   }
+  ],
+  "para": [
+   "entry",
+   "entrance"
+  ],
+  "ant": "",
+  "tip": "admission to + 장소(~ 입장) 형태로 to와 짝을 이루며, 'Admission is free'처럼 '입장료'의 뜻으로도 쓰인다. 동사 admit의 명사형이다.",
+  "q": {
+   "s": "The ticket includes ------- to all galleries as well as a guided tour of the sculpture garden.",
+   "o": [
+    "admission",
+    "submission",
+    "commission",
+    "transmission"
+   ],
+   "a": 0,
+   "k": "입장권에 '모든 전시실 입장'이 포함된다는 뜻이므로 admission이 정답. submission(제출), commission(수수료, 위원회), transmission(전송)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "keynote speaker",
+  "pos": "n",
+  "m": [
+   "기조연설자"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *keynote speaker* will open the conference with a talk on renewable energy.",
+  "exKo": "기조연설자가 재생 에너지에 관한 강연으로 회의의 막을 연다.",
+  "col": [
+   {
+    "e": "serve as keynote speaker",
+    "k": "기조연설자를 맡다"
+   },
+   {
+    "e": "deliver the keynote address",
+    "k": "기조연설을 하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "keynote",
+    "pos": "n",
+    "m": "기조연설, 핵심"
+   }
+  ],
+  "para": [
+   "main speaker",
+   "featured speaker"
+  ],
+  "ant": "",
+  "tip": "keynote speech/address(기조연설)와 함께 쓰인다. Part 4·7에서 '누가 행사의 첫 연설을 하는가'를 묻는 문제로 출제된다.",
+  "q": {
+   "s": "Dr. Helen Cho, a leading expert in artificial intelligence, has been invited as the ------- for the opening session.",
+   "o": [
+    "keynote address",
+    "keynote speaker",
+    "key card",
+    "keyboard"
+   ],
+   "a": 1,
+   "k": "초청된 대상이 사람(Dr. Helen Cho)이므로 사람을 가리키는 keynote speaker가 정답. keynote address는 연설 자체라 사람과 동격이 될 수 없다."
+  }
+ },
+ {
+  "w": "guest speaker",
+  "pos": "n",
+  "m": [
+   "초청 연사"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "This month's *guest speaker* is a successful author who started three companies.",
+  "exKo": "이번 달 초청 연사는 회사 세 곳을 창업한 성공한 작가이다.",
+  "col": [
+   {
+    "e": "invite a guest speaker",
+    "k": "초청 연사를 모시다"
+   },
+   {
+    "e": "introduce the guest speaker",
+    "k": "초청 연사를 소개하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "invited speaker",
+   "presenter"
+  ],
+  "ant": "",
+  "tip": "Part 4 행사 안내에서 'Let me introduce our guest speaker ~' 직후 화자가 할 일을 묻는 문제가 자주 나온다.",
+  "q": {
+   "s": "Please join us in welcoming our -------, Mr. Raymond Ortiz, the founder of Ortiz Logistics.",
+   "o": [
+    "guest room",
+    "guest list",
+    "guest speaker",
+    "guest book"
+   ],
+   "a": 2,
+   "k": "환영하는 대상이자 Mr. Raymond Ortiz와 동격인 사람이 필요하므로 guest speaker가 정답. 객실(room), 명단(list), 방명록(book)은 사람이 아니다."
+  }
+ },
+ {
+  "w": "panel discussion",
+  "pos": "n",
+  "m": [
+   "패널 토론",
+   "공개 토론회"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "After lunch, four industry experts will take part in a *panel discussion* on digital marketing.",
+  "exKo": "점심 식사 후 업계 전문가 네 명이 디지털 마케팅에 관한 패널 토론에 참여한다.",
+  "col": [
+   {
+    "e": "moderate a panel discussion",
+    "k": "패널 토론을 진행하다"
+   },
+   {
+    "e": "panel discussion on",
+    "k": "~에 관한 패널 토론"
+   }
+  ],
+  "der": [
+   {
+    "w": "panelist",
+    "pos": "n",
+    "m": "토론자, 패널"
+   }
+  ],
+  "para": [
+   "roundtable",
+   "forum"
+  ],
+  "ant": "",
+  "tip": "토론 진행자는 moderator, 토론자는 panelist이다. Part 7 일정표에서 패널 토론 시간·장소를 묻는 세부 사항 문제로 자주 나온다.",
+  "q": {
+   "s": "Ms. Grant will moderate a ------- featuring three successful restaurant owners.",
+   "o": [
+    "panelist",
+    "control panel",
+    "panel discussion",
+    "solar panel"
+   ],
+   "a": 2,
+   "k": "moderate(진행하다)의 목적어이자 '세 명의 식당 주인이 참여하는' 행사이므로 panel discussion이 정답. panelist는 토론자 한 명이라 진행의 대상이 될 수 없다."
+  }
+ },
+ {
+  "w": "session",
+  "pos": "n",
+  "m": [
+   "(특정 활동을 위한) 시간",
+   "회의",
+   "세션"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The morning *session* will focus on recent changes in tax regulations.",
+  "exKo": "오전 세션은 최근 세법 개정 사항을 중점적으로 다룬다.",
+  "col": [
+   {
+    "e": "training session",
+    "k": "교육 시간"
+   },
+   {
+    "e": "question-and-answer session",
+    "k": "질의응답 시간"
+   },
+   {
+    "e": "in session",
+    "k": "개회 중인"
+   }
+  ],
+  "der": [],
+  "para": [
+   "meeting",
+   "class",
+   "period"
+  ],
+  "ant": "",
+  "tip": "training session, Q&A session처럼 복합명사로 자주 쓰이며, 'The afternoon session has been moved to Room 3' 같은 일정 변경 LC 문제의 핵심어다.",
+  "q": {
+   "s": "Following the presentation, there will be a question-and-answer ------- for audience members.",
+   "o": [
+    "position",
+    "possession",
+    "procession",
+    "session"
+   ],
+   "a": 3,
+   "k": "'질의응답 시간'은 question-and-answer session이므로 session이 정답. position(직위), possession(소유), procession(행렬)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "participant",
+  "pos": "n",
+  "m": [
+   "참가자"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Each *participant* will receive a name tag and a printed program at the entrance.",
+  "exKo": "각 참가자는 입구에서 이름표와 인쇄된 프로그램을 받는다.",
+  "col": [
+   {
+    "e": "participants in",
+    "k": "~의 참가자"
+   },
+   {
+    "e": "workshop participants",
+    "k": "워크숍 참가자"
+   }
+  ],
+  "der": [
+   {
+    "w": "participate",
+    "pos": "v",
+    "m": "참가하다"
+   },
+   {
+    "w": "participation",
+    "pos": "n",
+    "m": "참가, 참여"
+   }
+  ],
+  "para": [
+   "attendee",
+   "entrant"
+  ],
+  "ant": "",
+  "tip": "사람명사 participant와 추상명사 participation을 구분하는 문제가 Part 5 빈출이다. 가산명사라 a participant, participants로 쓴다.",
+  "q": {
+   "s": "All ------- in the leadership program will be given access to online course materials.",
+   "o": [
+    "participation",
+    "participants",
+    "participate",
+    "participated"
+   ],
+   "a": 1,
+   "k": "All 뒤 주어 자리이며 자료 이용 권한을 받는 '사람'이 필요하므로 participants가 정답. participation은 불가산 추상명사라 All participation이 되면 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "participate",
+  "pos": "v",
+  "m": [
+   "참가하다",
+   "참여하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "More than fifty local businesses have agreed to *participate* in the job fair.",
+  "exKo": "50곳이 넘는 지역 업체가 채용 박람회에 참가하기로 했다.",
+  "col": [
+   {
+    "e": "participate in",
+    "k": "~에 참가하다"
+   },
+   {
+    "e": "actively participate",
+    "k": "적극적으로 참여하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "participant",
+    "pos": "n",
+    "m": "참가자"
+   },
+   {
+    "w": "participation",
+    "pos": "n",
+    "m": "참가, 참여"
+   }
+  ],
+  "para": [
+   "take part in",
+   "join"
+  ],
+  "ant": "",
+  "tip": "자동사라 반드시 participate in + 명사로 쓴다. 같은 뜻의 attend, join은 전치사 없이 목적어를 취한다는 점이 Part 5 함정이다.",
+  "q": {
+   "s": "Employees who wish to ------- in the volunteer program should notify their supervisors by Friday.",
+   "o": [
+    "participate",
+    "attend",
+    "involve",
+    "contribute"
+   ],
+   "a": 0,
+   "k": "빈칸 뒤 전치사 in과 짝을 이루는 자동사 participate가 정답. attend는 in 없이 목적어를 바로 취하고, involve는 목적어가 반드시 필요하며, contribute는 to와 함께 쓴다."
+  }
+ },
+ {
+  "w": "turnout",
+  "pos": "n",
+  "m": [
+   "참가자 수",
+   "참석률",
+   "투표율"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Despite the heavy rain, the *turnout* for the outdoor concert was better than expected.",
+  "exKo": "폭우에도 불구하고 야외 콘서트의 관객 수는 예상보다 많았다.",
+  "col": [
+   {
+    "e": "high turnout",
+    "k": "높은 참석률"
+   },
+   {
+    "e": "turnout for",
+    "k": "~의 참석자 수"
+   },
+   {
+    "e": "voter turnout",
+    "k": "투표율"
+   }
+  ],
+  "der": [
+   {
+    "w": "turn out",
+    "pos": "phr",
+    "m": "참석하다, ~로 판명되다"
+   }
+  ],
+  "para": [
+   "attendance"
+  ],
+  "ant": "",
+  "tip": "명사 turnout(참석자 수)과 구동사 turn out(모이다, ~로 판명되다)을 구분해야 한다. Part 7에서 attendance로 바꿔 쓴다.",
+  "q": {
+   "s": "The organizers were pleased with the large ------- at this year's career fair.",
+   "o": [
+    "turnout",
+    "output",
+    "outlook",
+    "layout"
+   ],
+   "a": 0,
+   "k": "주최 측이 만족한 것은 채용 박람회에 '많은 사람이 참석한 것'이므로 turnout이 정답. output(생산량), outlook(전망), layout(배치)은 박람회 참석과 관련이 없다."
+  }
+ },
+ {
+  "w": "reception",
+  "pos": "n",
+  "m": [
+   "환영회",
+   "리셉션",
+   "(호텔·회사의) 접수처"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   4,
+   7
+  ],
+  "ex": "A welcome *reception* for new board members will be held in the hotel lobby.",
+  "exKo": "신임 이사들을 위한 환영회가 호텔 로비에서 열린다.",
+  "col": [
+   {
+    "e": "welcome reception",
+    "k": "환영회"
+   },
+   {
+    "e": "reception desk",
+    "k": "접수처"
+   },
+   {
+    "e": "hold a reception",
+    "k": "리셉션을 열다"
+   }
+  ],
+  "der": [
+   {
+    "w": "receive",
+    "pos": "v",
+    "m": "받다"
+   },
+   {
+    "w": "receptionist",
+    "pos": "n",
+    "m": "접수 담당자"
+   },
+   {
+    "w": "receptive",
+    "pos": "adj",
+    "m": "수용적인"
+   }
+  ],
+  "para": [
+   "party",
+   "gathering",
+   "front desk"
+  ],
+  "ant": "",
+  "tip": "'환영회'와 '접수처(reception desk)'의 두 뜻이 모두 나오며, 사람명사 receptionist(접수원)와 구분해야 한다. 휴대폰 '수신 상태(poor reception)'의 뜻도 LC에 등장한다.",
+  "q": {
+   "s": "Following the awards ceremony, a ------- will be held in the main hall with drinks and light refreshments.",
+   "o": [
+    "receptionist",
+    "reception",
+    "receipt",
+    "recipient"
+   ],
+   "a": 1,
+   "k": "음료와 다과가 제공되며 '열리는(be held)' 행사이므로 reception이 정답. receptionist(접수원), recipient(수령인)는 사람이고 receipt(영수증)는 행사가 아니다."
+  }
+ },
+ {
+  "w": "gala",
+  "pos": "n",
+  "m": [
+   "갈라",
+   "경축 행사",
+   "축하 연회"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Tickets for the annual charity *gala* sold out within a week.",
+  "exKo": "연례 자선 갈라 행사의 입장권이 일주일 만에 매진되었다.",
+  "col": [
+   {
+    "e": "charity gala",
+    "k": "자선 갈라"
+   },
+   {
+    "e": "gala dinner",
+    "k": "축하 만찬"
+   }
+  ],
+  "der": [],
+  "para": [
+   "celebration",
+   "banquet",
+   "formal event"
+  ],
+  "ant": "",
+  "tip": "gala dinner, gala event처럼 명사 앞에서도 쓰인다. Part 7 초대장에서 formal celebration, banquet으로 바꿔 표현된다.",
+  "q": {
+   "s": "Funds raised at Saturday's ------- will be used to renovate the children's hospital.",
+   "o": [
+    "galaxy",
+    "gallon",
+    "gallery",
+    "gala"
+   ],
+   "a": 3,
+   "k": "기금을 모은(funds raised at) 행사가 와야 하므로 gala가 정답. galaxy(은하), gallon(갤런)은 행사가 아니고, gallery(미술관)는 장소라 Saturday's와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "fundraiser",
+  "pos": "n",
+  "m": [
+   "모금 행사",
+   "모금 담당자"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The library is holding a *fundraiser* to buy new computers for its study rooms.",
+  "exKo": "그 도서관은 열람실에 새 컴퓨터를 들이기 위해 모금 행사를 열고 있다.",
+  "col": [
+   {
+    "e": "hold a fundraiser",
+    "k": "모금 행사를 열다"
+   },
+   {
+    "e": "charity fundraiser",
+    "k": "자선 모금 행사"
+   }
+  ],
+  "der": [
+   {
+    "w": "fundraising",
+    "pos": "n",
+    "m": "모금 (활동)"
+   },
+   {
+    "w": "fund",
+    "pos": "n",
+    "m": "자금, 기금"
+   }
+  ],
+  "para": [
+   "benefit",
+   "charity event"
+  ],
+  "ant": "",
+  "tip": "행사 자체는 가산명사 fundraiser, 모금 활동은 불가산명사 fundraising으로 구분한다. a fundraising event는 a fundraiser로 바꿔 쓸 수 있다.",
+  "q": {
+   "s": "The community center will hold a ------- next month to collect money for new playground equipment.",
+   "o": [
+    "fundraising",
+    "funded",
+    "fundraiser",
+    "funds"
+   ],
+   "a": 2,
+   "k": "관사 a 뒤 단수 가산명사 자리이므로 fundraiser가 정답. fundraising은 불가산명사라 a와 함께 단독으로 쓰지 않고, funds는 복수형이라 a와 맞지 않는다."
+  }
+ },
+ {
+  "w": "charity",
+  "pos": "n",
+  "m": [
+   "자선 단체",
+   "자선"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "All proceeds from the book sale will go to a local *charity* that helps homeless families.",
+  "exKo": "도서 판매 수익금 전액은 노숙 가정을 돕는 지역 자선 단체에 전달된다.",
+  "col": [
+   {
+    "e": "donate to charity",
+    "k": "자선 단체에 기부하다"
+   },
+   {
+    "e": "charity event",
+    "k": "자선 행사"
+   },
+   {
+    "e": "charity auction",
+    "k": "자선 경매"
+   }
+  ],
+  "der": [
+   {
+    "w": "charitable",
+    "pos": "adj",
+    "m": "자선의, 자선을 베푸는"
+   }
+  ],
+  "para": [
+   "nonprofit organization",
+   "foundation"
+  ],
+  "ant": "",
+  "tip": "가산명사로 '자선 단체(a local charity)', 불가산명사로 '자선'을 뜻한다. 형용사 charitable(자선의)과의 품사 구분 문제에 주의한다.",
+  "q": {
+   "s": "Wilson Bakery donates its unsold bread to a local ------- every evening.",
+   "o": [
+    "charitable",
+    "charitably",
+    "charities",
+    "charity"
+   ],
+   "a": 3,
+   "k": "a local 뒤 단수 명사 자리이므로 charity가 정답. charitable은 형용사, charitably는 부사이고, charities는 복수라 관사 a와 맞지 않는다."
+  }
+ },
+ {
+  "w": "donate",
+  "pos": "v",
+  "m": [
+   "기부하다",
+   "기증하다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The company *donated* 500 laptops to schools in rural areas last year.",
+  "exKo": "그 회사는 작년에 농촌 지역 학교들에 노트북 500대를 기증했다.",
+  "col": [
+   {
+    "e": "donate A to B",
+    "k": "A를 B에 기부하다"
+   },
+   {
+    "e": "donate money",
+    "k": "돈을 기부하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "donation",
+    "pos": "n",
+    "m": "기부(금)"
+   },
+   {
+    "w": "donor",
+    "pos": "n",
+    "m": "기부자"
+   }
+  ],
+  "para": [
+   "give",
+   "contribute"
+  ],
+  "ant": "",
+  "tip": "donate A to B 구조로 to와 짝을 이룬다. 사람명사 donor(기부자)와 사물명사 donation(기부금)을 구분하는 문제가 Part 5에 자주 나온다.",
+  "q": {
+   "s": "Visitors are encouraged to ------- gently used books to the library's annual sale.",
+   "o": [
+    "donation",
+    "donor",
+    "donate",
+    "donated"
+   ],
+   "a": 2,
+   "k": "to부정사(be encouraged to) 뒤에는 동사원형이 와야 하므로 donate가 정답. donation, donor는 명사이고 donated는 과거형이다."
+  }
+ },
+ {
+  "w": "donor",
+  "pos": "n",
+  "m": [
+   "기부자",
+   "기증자"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new science wing was named after its largest *donor*, Mr. Albert Kim.",
+  "exKo": "새 과학관 건물은 최대 기부자인 앨버트 김 씨의 이름을 따서 명명되었다.",
+  "col": [
+   {
+    "e": "generous donor",
+    "k": "후한 기부자"
+   },
+   {
+    "e": "anonymous donor",
+    "k": "익명의 기부자"
+   },
+   {
+    "e": "blood donor",
+    "k": "헌혈자"
+   }
+  ],
+  "der": [
+   {
+    "w": "donate",
+    "pos": "v",
+    "m": "기부하다"
+   },
+   {
+    "w": "donation",
+    "pos": "n",
+    "m": "기부(금)"
+   }
+  ],
+  "para": [
+   "contributor",
+   "benefactor",
+   "sponsor"
+  ],
+  "ant": "",
+  "tip": "-or로 끝나는 사람명사로 an anonymous donor처럼 관사·형용사 뒤 사람 자리에 온다. 사물명사 donation(기부금)과 혼동시키는 문제가 많다.",
+  "q": {
+   "s": "Thanks to a generous gift from an anonymous -------, the museum can now offer free admission on Sundays.",
+   "o": [
+    "donor",
+    "donation",
+    "donate",
+    "donated"
+   ],
+   "a": 0,
+   "k": "선물을 '준 사람'이 필요하므로 사람명사 donor가 정답. donation은 기부금 자체라 'a gift from a donation'은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "ceremony",
+  "pos": "n",
+  "m": [
+   "의식",
+   "식"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   4,
+   7
+  ],
+  "ex": "The awards *ceremony* will be broadcast live on the company's website.",
+  "exKo": "시상식은 회사 웹사이트에서 생중계된다.",
+  "col": [
+   {
+    "e": "awards ceremony",
+    "k": "시상식"
+   },
+   {
+    "e": "opening ceremony",
+    "k": "개막식"
+   },
+   {
+    "e": "ribbon-cutting ceremony",
+    "k": "개관(준공) 테이프 커팅식"
+   }
+  ],
+  "der": [
+   {
+    "w": "ceremonial",
+    "pos": "adj",
+    "m": "의식의, 의례적인"
+   }
+  ],
+  "para": [
+   "event",
+   "celebration"
+  ],
+  "ant": "",
+  "tip": "awards ceremony, groundbreaking ceremony(기공식), ribbon-cutting ceremony(개관식) 같은 복합명사가 Part 4·7 행사 안내에 자주 나온다.",
+  "q": {
+   "s": "The mayor will attend the ribbon-cutting ------- for the new city library on Monday.",
+   "o": [
+    "celebrity",
+    "ceremony",
+    "ceiling",
+    "certainty"
+   ],
+   "a": 1,
+   "k": "ribbon-cutting과 결합해 '개관 테이프 커팅식'을 이루는 ceremony가 정답. celebrity(유명인), ceiling(천장), certainty(확실성)는 참석할 행사가 아니다."
+  }
+ },
+ {
+  "w": "anniversary",
+  "pos": "n",
+  "m": [
+   "기념일",
+   "~주년"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Hanson Electronics will celebrate its 25th *anniversary* with a special sale this weekend.",
+  "exKo": "핸슨 전자는 이번 주말 특별 할인 행사로 창립 25주년을 기념한다.",
+  "col": [
+   {
+    "e": "celebrate an anniversary",
+    "k": "기념일을 축하하다"
+   },
+   {
+    "e": "10th anniversary",
+    "k": "10주년"
+   },
+   {
+    "e": "anniversary party",
+    "k": "기념 파티"
+   }
+  ],
+  "der": [],
+  "para": [
+   "milestone"
+  ],
+  "ant": "",
+  "tip": "서수와 함께 its 25th anniversary처럼 쓰여 Part 7에서 창립 연도를 계산하는 문제의 단서가 된다.",
+  "q": {
+   "s": "To mark the tenth ------- of its founding, Carter Engineering will host a banquet for all employees.",
+   "o": [
+    "annual",
+    "anniversary",
+    "annually",
+    "annuity"
+   ],
+   "a": 1,
+   "k": "서수 tenth 뒤에서 '창립 10주년'을 뜻하는 명사 anniversary가 정답. annual은 형용사, annually는 부사, annuity는 '연금'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "commemorate",
+  "pos": "v",
+  "m": [
+   "기념하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A bronze statue was unveiled to *commemorate* the founder's contributions to the city.",
+  "exKo": "창립자가 도시에 남긴 공헌을 기리기 위해 청동상이 공개되었다.",
+  "col": [
+   {
+    "e": "commemorate the anniversary",
+    "k": "~주년을 기념하다"
+   },
+   {
+    "e": "commemorative plaque",
+    "k": "기념 명판"
+   }
+  ],
+  "der": [
+   {
+    "w": "commemoration",
+    "pos": "n",
+    "m": "기념(식)"
+   },
+   {
+    "w": "commemorative",
+    "pos": "adj",
+    "m": "기념하는"
+   }
+  ],
+  "para": [
+   "honor",
+   "mark",
+   "celebrate"
+  ],
+  "ant": "",
+  "tip": "타동사로 바로 목적어를 취하며 Part 7에서 mark, honor로 바꿔 쓴다. 형용사 commemorative(기념의)도 Part 5 품사 문제로 나온다.",
+  "q": {
+   "s": "The city issued a special stamp to ------- the 100th anniversary of the railway's opening.",
+   "o": [
+    "commemorate",
+    "commemorative",
+    "commemoration",
+    "commemorated"
+   ],
+   "a": 0,
+   "k": "to부정사 뒤 동사원형 자리이며 뒤에 목적어가 있으므로 commemorate가 정답. commemorative는 형용사, commemoration은 명사다."
+  }
+ },
+ {
+  "w": "in honor of",
+  "pos": "phr",
+  "m": [
+   "~을 기념하여",
+   "~에게 경의를 표하여"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A dinner will be held *in honor of* Ms. Larson, who is retiring after 30 years.",
+  "exKo": "30년 근속 후 은퇴하는 라슨 씨를 기리는 만찬이 열린다.",
+  "col": [
+   {
+    "e": "in honor of one's retirement",
+    "k": "~의 은퇴를 기념하여"
+   },
+   {
+    "e": "hold a party in honor of",
+    "k": "~을 기리는 파티를 열다"
+   }
+  ],
+  "der": [
+   {
+    "w": "honor",
+    "pos": "n",
+    "m": "영광, 명예"
+   },
+   {
+    "w": "honorary",
+    "pos": "adj",
+    "m": "명예의"
+   }
+  ],
+  "para": [
+   "to honor",
+   "in recognition of"
+  ],
+  "ant": "",
+  "tip": "'~을 기념하여, ~에게 경의를 표하여'라는 전치사구로 뒤에 사람이나 업적을 나타내는 명사가 온다. 비슷한 뜻의 in recognition of(~을 인정하여)도 함께 알아 둔다.",
+  "q": {
+   "s": "A reception will be held ------- Dr. Moore, who received the National Science Award last month.",
+   "o": [
+    "in spite of",
+    "instead of",
+    "in honor of",
+    "in case of"
+   ],
+   "a": 2,
+   "k": "상을 받은 무어 박사를 '기리기 위해' 리셉션을 연다는 문맥이므로 in honor of가 정답. in spite of(~에도 불구하고), instead of(~ 대신에), in case of(~의 경우에)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "invitation",
+  "pos": "n",
+  "m": [
+   "초대",
+   "초대장"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "We were pleased to receive an *invitation* to the opening of the new branch.",
+  "exKo": "우리는 새 지점 개점식 초대장을 받아 기뻤다.",
+  "col": [
+   {
+    "e": "accept an invitation",
+    "k": "초대를 수락하다"
+   },
+   {
+    "e": "decline an invitation",
+    "k": "초대를 거절하다"
+   },
+   {
+    "e": "invitation to",
+    "k": "~로의 초대"
+   }
+  ],
+  "der": [
+   {
+    "w": "invite",
+    "pos": "v",
+    "m": "초대하다"
+   },
+   {
+    "w": "inviting",
+    "pos": "adj",
+    "m": "매력적인, 솔깃한"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "accept/decline an invitation과 결합하며 '~로의 초대'는 invitation to를 쓴다. 동사 invite와의 품사 구분 문제도 빈출이다.",
+  "q": {
+   "s": "Mr. Feldman regretfully declined the ------- to speak at the annual retail conference.",
+   "o": [
+    "invited",
+    "inviting",
+    "invitingly",
+    "invitation"
+   ],
+   "a": 3,
+   "k": "정관사 the 뒤 decline의 목적어인 명사 자리이므로 invitation이 정답. invited는 동사·분사, inviting은 형용사, invitingly는 부사다."
+  }
+ },
+ {
+  "w": "RSVP",
+  "pos": "v",
+  "m": [
+   "참석 여부를 회신하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Please *RSVP* to Jenny Lim by May 3 if you plan to attend the luncheon.",
+  "exKo": "오찬에 참석할 예정이라면 5월 3일까지 제니 림에게 참석 여부를 회신해 주기 바란다.",
+  "col": [
+   {
+    "e": "RSVP by + 날짜",
+    "k": "~까지 참석 여부를 알리다"
+   },
+   {
+    "e": "RSVP to + 사람",
+    "k": "~에게 참석 여부를 알리다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "respond",
+   "reply",
+   "confirm attendance"
+  ],
+  "ant": "",
+  "tip": "초대장 끝의 'Please RSVP by ~'는 '~까지 참석 여부를 회신해 달라'는 뜻으로, Part 7에서 '독자가 해야 할 일'을 묻는 문제의 단서가 된다.",
+  "q": {
+   "s": "Guests are kindly asked to ------- by Friday so that the caterer can prepare enough food.",
+   "o": [
+    "invite",
+    "accommodate",
+    "RSVP",
+    "host"
+   ],
+   "a": 2,
+   "k": "빈칸 뒤에 목적어 없이 기한(by Friday)만 이어지므로 자동사로 쓰이는 RSVP가 정답. invite, accommodate, host는 모두 목적어가 필요한 타동사다."
+  }
+ },
+ {
+  "w": "cordially",
+  "pos": "adv",
+  "m": [
+   "진심으로",
+   "정중히"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "You are *cordially* invited to the grand opening of our new downtown store.",
+  "exKo": "시내에 새로 문을 여는 매장의 개업식에 귀하를 정중히 초대한다.",
+  "col": [
+   {
+    "e": "be cordially invited to",
+    "k": "~에 정중히 초대되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "cordial",
+    "pos": "adj",
+    "m": "다정한, 진심 어린"
+   }
+  ],
+  "para": [
+   "warmly",
+   "sincerely"
+  ],
+  "ant": "",
+  "tip": "초대장의 관용 표현 'You are cordially invited to ~'로 거의 고정되어 나오며, be동사와 과거분사 invited 사이의 부사 자리 문제로 출제된다.",
+  "q": {
+   "s": "All employees and their families are ------- invited to the company's year-end celebration.",
+   "o": [
+    "cordially",
+    "cordial",
+    "cordiality",
+    "cordials"
+   ],
+   "a": 0,
+   "k": "be동사와 과거분사 invited 사이에서 동사를 수식하는 부사 자리이므로 cordially가 정답. cordial은 형용사, cordiality와 cordials는 명사다."
+  }
+ },
+ {
+  "w": "sign up",
+  "pos": "phr",
+  "m": [
+   "등록하다",
+   "신청하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "More than 200 employees have already *signed up* for the company fitness challenge.",
+  "exKo": "200명이 넘는 직원이 이미 회사 체력 증진 챌린지에 신청했다.",
+  "col": [
+   {
+    "e": "sign up for",
+    "k": "~에 신청하다"
+   },
+   {
+    "e": "sign up online",
+    "k": "온라인으로 신청하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "sign-up",
+    "pos": "n",
+    "m": "등록, 가입"
+   }
+  ],
+  "para": [
+   "register",
+   "enroll"
+  ],
+  "ant": "",
+  "tip": "자동사 구동사라 sign up for + 명사로 쓰며 register for와 같은 뜻이다. 명사형 sign-up(sign-up sheet 신청서)도 LC에 나온다.",
+  "q": {
+   "s": "Employees interested in the Spanish class should ------- for it at the front desk by Friday.",
+   "o": [
+    "attend",
+    "join",
+    "take part",
+    "sign up"
+   ],
+   "a": 3,
+   "k": "빈칸 뒤 전치사 for와 짝을 이루는 sign up이 정답. attend, join은 전치사 없이 목적어를 취하고 take part는 in과 함께 쓴다."
+  }
+ },
+ {
+  "w": "accommodate",
+  "pos": "v",
+  "m": [
+   "수용하다",
+   "(요구를) 들어주다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new auditorium can *accommodate* up to 800 people.",
+  "exKo": "새 강당은 최대 800명을 수용할 수 있다.",
+  "col": [
+   {
+    "e": "accommodate up to + 숫자",
+    "k": "최대 ~명을 수용하다"
+   },
+   {
+    "e": "accommodate a request",
+    "k": "요청을 들어주다"
+   }
+  ],
+  "der": [
+   {
+    "w": "accommodation",
+    "pos": "n",
+    "m": "숙박 시설, 편의"
+   },
+   {
+    "w": "accommodating",
+    "pos": "adj",
+    "m": "친절한, 협조적인"
+   }
+  ],
+  "para": [
+   "hold",
+   "seat",
+   "fit"
+  ],
+  "ant": "",
+  "tip": "'수용하다'의 뜻일 때 accommodate + 인원수(up to 300 guests) 형태로 나오며 Part 7에서 hold, seat으로 바꿔 쓴다. 명사 accommodations(숙박 시설)도 빈출이다.",
+  "q": {
+   "s": "The banquet hall is large enough to ------- all 250 guests attending the awards dinner.",
+   "o": [
+    "accompany",
+    "accommodate",
+    "accumulate",
+    "acknowledge"
+   ],
+   "a": 1,
+   "k": "연회장이 손님 250명을 모두 '수용할 만큼' 넓다는 문맥이므로 accommodate가 정답. accompany(동행하다), accumulate(축적하다), acknowledge(인정하다)는 연회장의 크기와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "rehearsal",
+  "pos": "n",
+  "m": [
+   "리허설",
+   "예행연습"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "A full *rehearsal* of the opening ceremony is scheduled for Thursday afternoon.",
+  "exKo": "개막식 전체 리허설은 목요일 오후로 예정되어 있다.",
+  "col": [
+   {
+    "e": "dress rehearsal",
+    "k": "최종 총연습"
+   },
+   {
+    "e": "rehearsal for",
+    "k": "~을 위한 리허설"
+   }
+  ],
+  "der": [
+   {
+    "w": "rehearse",
+    "pos": "v",
+    "m": "예행연습하다"
+   }
+  ],
+  "para": [
+   "practice run",
+   "run-through"
+  ],
+  "ant": "",
+  "tip": "동사 rehearse와 명사 rehearsal의 품사 구분 문제, 그리고 dress rehearsal(실제처럼 진행하는 최종 리허설)이 LC 행사 준비 대화에 나온다.",
+  "q": {
+   "s": "All performers must attend the final ------- before the concert on Saturday night.",
+   "o": [
+    "rehearse",
+    "rehearsal",
+    "rehearsed",
+    "rehearses"
+   ],
+   "a": 1,
+   "k": "the final 뒤 attend의 목적어인 명사 자리이므로 rehearsal이 정답. rehearse, rehearses는 동사이고 rehearsed는 과거형·과거분사다."
+  }
+ },
+ {
+  "w": "attire",
+  "pos": "n",
+  "m": [
+   "복장",
+   "의상"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Formal *attire* is required for all guests attending the awards banquet.",
+  "exKo": "시상식 연회에 참석하는 모든 손님은 정장을 갖춰 입어야 한다.",
+  "col": [
+   {
+    "e": "business attire",
+    "k": "비즈니스 정장"
+   },
+   {
+    "e": "formal attire",
+    "k": "정장"
+   },
+   {
+    "e": "casual attire",
+    "k": "평상복"
+   }
+  ],
+  "der": [],
+  "para": [
+   "clothing",
+   "dress",
+   "outfit"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 an attire나 attires로 쓰지 않는다. 초대장의 'Business attire is recommended'는 Part 7 복장 규정(dress code) 문제로 연결된다.",
+  "q": {
+   "s": "Business ------- is required for all staff meeting with clients at the headquarters.",
+   "o": [
+    "entire",
+    "retire",
+    "admire",
+    "attire"
+   ],
+   "a": 3,
+   "k": "Business와 결합해 '비즈니스 정장'을 뜻하는 명사 attire가 정답. entire는 형용사, retire와 admire는 동사라 주어 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "lineup",
+  "pos": "n",
+  "m": [
+   "출연진",
+   "라인업",
+   "(제품) 구성"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "This year's festival *lineup* includes several internationally famous jazz musicians.",
+  "exKo": "올해 축제 출연진에는 세계적으로 유명한 재즈 음악가 여럿이 포함되어 있다.",
+  "col": [
+   {
+    "e": "lineup of speakers",
+    "k": "연사진"
+   },
+   {
+    "e": "product lineup",
+    "k": "제품 라인업"
+   }
+  ],
+  "der": [
+   {
+    "w": "line up",
+    "pos": "phr",
+    "m": "줄을 서다, (출연자 등을) 섭외하다"
+   }
+  ],
+  "para": [
+   "roster",
+   "program",
+   "schedule"
+  ],
+  "ant": "",
+  "tip": "명사 lineup(출연진, 제품군)과 구동사 line up(줄 서다, 섭외해 두다)을 구분한다. an impressive lineup of speakers처럼 of와 함께 쓰인다.",
+  "q": {
+   "s": "The conference features an impressive ------- of speakers from the technology and finance industries.",
+   "o": [
+    "outline",
+    "upturn",
+    "lineup",
+    "setback"
+   ],
+   "a": 2,
+   "k": "'인상적인 연사진'을 뜻하므로 lineup이 정답. outline(개요), upturn(호전), setback(차질)은 of speakers와 결합해 연사들을 가리킬 수 없다."
+  }
+ },
+ {
+  "w": "showcase",
+  "pos": "v",
+  "m": [
+   "(장점을) 선보이다",
+   "소개하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The fair gives young designers a chance to *showcase* their latest creations.",
+  "exKo": "그 박람회는 젊은 디자이너들에게 최신 작품을 선보일 기회를 준다.",
+  "col": [
+   {
+    "e": "showcase new products",
+    "k": "신제품을 선보이다"
+   },
+   {
+    "e": "showcase one's talent",
+    "k": "재능을 선보이다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "display",
+   "present",
+   "feature"
+  ],
+  "ant": "",
+  "tip": "타동사로 '(재능·제품을) 돋보이게 선보이다'라는 뜻이며 Part 7에서 display, feature, present로 바꿔 쓴다. 명사로는 '공개 행사, 진열장'을 뜻한다.",
+  "q": {
+   "s": "The trade show allows small manufacturers to ------- their products to international buyers.",
+   "o": [
+    "showcase",
+    "appear",
+    "occur",
+    "emerge"
+   ],
+   "a": 0,
+   "k": "빈칸 뒤에 목적어(their products)가 있으므로 타동사 showcase가 정답. appear, occur, emerge는 목적어를 취하지 않는 자동사다."
+  }
+ }
+]

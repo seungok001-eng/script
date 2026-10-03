@@ -1,0 +1,2149 @@
+[
+ {
+  "w": "purchase",
+  "pos": "v",
+  "m": [
+   "구매하다",
+   "구입하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Customers who *purchase* two items will receive a third one free of charge.",
+  "exKo": "상품 두 개를 구매하는 고객은 세 번째 상품을 무료로 받는다.",
+  "col": [
+   {
+    "e": "make a purchase",
+    "k": "구매하다"
+   },
+   {
+    "e": "proof of purchase",
+    "k": "구매 증빙"
+   },
+   {
+    "e": "purchase in bulk",
+    "k": "대량으로 구매하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "purchaser",
+    "pos": "n",
+    "m": "구매자"
+   },
+   {
+    "w": "purchasing",
+    "pos": "n",
+    "m": "구매 (업무)"
+   }
+  ],
+  "para": [
+   "buy",
+   "acquire"
+  ],
+  "ant": "sell",
+  "tip": "purchase는 타동사이므로 전치사 없이 바로 목적어를 받는다. 명사로도 쓰여 make a purchase, proof of purchase 형태로 자주 나온다.",
+  "q": {
+   "s": "Tickets for the trade show can be ------- online until midnight on Thursday.",
+   "o": [
+    "purchasing",
+    "purchased",
+    "purchaser",
+    "purchases"
+   ],
+   "a": 1,
+   "k": "can be 뒤에는 수동태를 만드는 과거분사가 와야 하므로 purchased가 정답이다. purchasing은 능동 진행형, purchaser는 사람명사다."
+  }
+ },
+ {
+  "w": "merchandise",
+  "pos": "n",
+  "m": [
+   "상품",
+   "제품"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "All *merchandise* on the second floor is 30 percent off this weekend.",
+  "exKo": "2층의 모든 상품은 이번 주말 30퍼센트 할인된다.",
+  "col": [
+   {
+    "e": "return merchandise",
+    "k": "상품을 반품하다"
+   },
+   {
+    "e": "damaged merchandise",
+    "k": "파손된 상품"
+   }
+  ],
+  "der": [
+   {
+    "w": "merchant",
+    "pos": "n",
+    "m": "상인"
+   },
+   {
+    "w": "merchandising",
+    "pos": "n",
+    "m": "판매 촉진, 상품화 계획"
+   }
+  ],
+  "para": [
+   "goods",
+   "products",
+   "items"
+  ],
+  "ant": "",
+  "tip": "merchandise는 불가산명사이므로 a를 붙이거나 merchandises로 쓰지 않고 단수 동사를 받는다. Part 7에서 goods, products로 바꿔 표현된다.",
+  "q": {
+   "s": "Customers may return unused ------- within 30 days as long as they have the original receipt.",
+   "o": [
+    "merchant",
+    "merchants",
+    "merchandising",
+    "merchandise"
+   ],
+   "a": 3,
+   "k": "반품할 수 있는 대상은 '상품'이므로 merchandise가 정답이다. merchant(s)는 '상인', merchandising은 '판매 촉진 활동'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "retail",
+  "pos": "n",
+  "m": [
+   "소매",
+   "소매업"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Tanaka worked in *retail* for over a decade before joining our marketing team.",
+  "exKo": "타나카 씨는 우리 마케팅팀에 합류하기 전 10년 넘게 소매업에 종사했다.",
+  "col": [
+   {
+    "e": "retail price",
+    "k": "소매가"
+   },
+   {
+    "e": "retail store",
+    "k": "소매점"
+   },
+   {
+    "e": "retail sales",
+    "k": "소매 판매(액)"
+   }
+  ],
+  "der": [
+   {
+    "w": "retailer",
+    "pos": "n",
+    "m": "소매업체, 소매상"
+   }
+  ],
+  "para": [],
+  "ant": "wholesale",
+  "tip": "retail은 retail price, retail outlet처럼 명사 앞에서 형용사처럼 자주 쓰인다. 업체·사람을 가리킬 때는 retailer를 쓴다는 점을 구분하자.",
+  "q": {
+   "s": "The suggested ------- price of the new blender is $89, but many stores sell it for less.",
+   "o": [
+    "retail",
+    "retailer",
+    "retailed",
+    "retailers"
+   ],
+   "a": 0,
+   "k": "'권장 소매가'는 suggested retail price로 쓰므로 retail이 정답이다. retailer(s)는 업체를 가리키는 명사라 price를 수식하지 않는다."
+  }
+ },
+ {
+  "w": "retailer",
+  "pos": "n",
+  "m": [
+   "소매업체",
+   "소매상"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new headphones will be available at major *retailers* starting next month.",
+  "exKo": "새 헤드폰은 다음 달부터 주요 소매업체에서 구입할 수 있다.",
+  "col": [
+   {
+    "e": "online retailer",
+    "k": "온라인 소매업체"
+   },
+   {
+    "e": "major retailers",
+    "k": "주요 소매업체"
+   }
+  ],
+  "der": [
+   {
+    "w": "retail",
+    "pos": "n",
+    "m": "소매, 소매업"
+   }
+  ],
+  "para": [
+   "store",
+   "seller",
+   "vendor"
+  ],
+  "ant": "wholesaler",
+  "tip": "retailer는 업체·사람을 가리키는 가산명사이므로 a retailer, retailers 형태로 쓴다. 업종·행위를 뜻하는 retail과 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Lakeview Electronics is the largest ------- of home appliances in the northern region.",
+   "o": [
+    "retail",
+    "retailing",
+    "retailed",
+    "retailer"
+   ],
+   "a": 3,
+   "k": "the largest 뒤에는 '가전제품을 파는 업체'를 뜻하는 명사가 와야 하므로 retailer가 정답이다. retail과 retailing은 업종·행위를 뜻해 회사를 가리킬 수 없다."
+  }
+ },
+ {
+  "w": "wholesale",
+  "pos": "adj",
+  "m": [
+   "도매의",
+   "대규모의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The supermarket chain buys fresh produce at *wholesale* prices directly from local farms.",
+  "exKo": "그 슈퍼마켓 체인은 현지 농장에서 신선 농산물을 도매가로 직접 구입한다.",
+  "col": [
+   {
+    "e": "wholesale price",
+    "k": "도매가"
+   },
+   {
+    "e": "wholesale market",
+    "k": "도매 시장"
+   },
+   {
+    "e": "sell wholesale",
+    "k": "도매로 팔다"
+   }
+  ],
+  "der": [
+   {
+    "w": "wholesaler",
+    "pos": "n",
+    "m": "도매업자"
+   }
+  ],
+  "para": [
+   "bulk"
+  ],
+  "ant": "retail",
+  "tip": "wholesale은 형용사(wholesale price)뿐 아니라 부사(sell wholesale)로도 쓰인다. 반대말 retail과 짝지어 출제되며, 업자는 wholesaler다.",
+  "q": {
+   "s": "Restaurants that register as business members can buy ingredients at ------- prices.",
+   "o": [
+    "durable",
+    "courteous",
+    "defective",
+    "wholesale"
+   ],
+   "a": 3,
+   "k": "사업자 회원이 식자재를 싸게 사는 '도매' 가격이므로 wholesale이 정답이다. durable(내구성 있는), defective(결함 있는), courteous(정중한)는 prices와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "discount",
+  "pos": "n",
+  "m": [
+   "할인",
+   "할인액"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Members receive a 15 percent *discount* on all purchases made online.",
+  "exKo": "회원은 온라인으로 구매하는 모든 상품에 대해 15퍼센트 할인을 받는다.",
+  "col": [
+   {
+    "e": "offer a discount",
+    "k": "할인을 제공하다"
+   },
+   {
+    "e": "a discount on ~",
+    "k": "~에 대한 할인"
+   },
+   {
+    "e": "at a discount",
+    "k": "할인된 가격으로"
+   }
+  ],
+  "der": [
+   {
+    "w": "discounted",
+    "pos": "adj",
+    "m": "할인된"
+   }
+  ],
+  "para": [
+   "price reduction",
+   "markdown"
+  ],
+  "ant": "",
+  "tip": "할인 대상 품목 앞에는 on(a discount on all items), 할인받는 사람 앞에는 for(a discount for seniors)를 쓴다. 형용사 discounted는 discounted price처럼 명사 앞에 온다.",
+  "q": {
+   "s": "Employees can buy company products at a ------- by showing their staff ID.",
+   "o": [
+    "discounted",
+    "discounting",
+    "discount",
+    "discounts"
+   ],
+   "a": 2,
+   "k": "관사 a 뒤 단수 명사 자리이며 at a discount는 '할인된 가격으로'라는 관용 표현이므로 discount가 정답이다. discounts는 복수형이라 a와 함께 쓸 수 없다."
+  }
+ },
+ {
+  "w": "clearance",
+  "pos": "n",
+  "m": [
+   "재고 정리",
+   "(공식) 허가"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The store is holding a *clearance* sale to make room for the new spring collection.",
+  "exKo": "그 매장은 새 봄 상품을 들여놓을 공간을 마련하기 위해 재고 정리 세일을 하고 있다.",
+  "col": [
+   {
+    "e": "clearance sale",
+    "k": "재고 정리 세일"
+   },
+   {
+    "e": "clearance items",
+    "k": "재고 정리 상품"
+   },
+   {
+    "e": "security clearance",
+    "k": "보안 허가"
+   }
+  ],
+  "der": [
+   {
+    "w": "clear",
+    "pos": "v",
+    "m": "치우다, 정리하다, 허가하다"
+   }
+  ],
+  "para": [
+   "closeout"
+  ],
+  "ant": "",
+  "tip": "clearance sale은 '재고 정리 세일'로, Part 4 매장 안내 방송에서 '반품 불가' 같은 조건과 함께 자주 나온다. 공항·건물 출입의 '허가'라는 뜻도 알아두자.",
+  "q": {
+   "s": "All items marked with a red tag are part of our end-of-season ------- sale and cannot be returned.",
+   "o": [
+    "inquiry",
+    "receipt",
+    "clearance",
+    "guarantee"
+   ],
+   "a": 2,
+   "k": "시즌 말 '재고 정리' 세일이라는 의미이므로 clearance가 정답이다. 나머지는 sale과 결합해 의미 있는 표현을 만들지 못한다."
+  }
+ },
+ {
+  "w": "coupon",
+  "pos": "n",
+  "m": [
+   "쿠폰",
+   "할인권"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Present this *coupon* at the register to get a free drink with any sandwich.",
+  "exKo": "계산대에서 이 쿠폰을 제시하면 샌드위치 구매 시 음료를 무료로 받을 수 있다.",
+  "col": [
+   {
+    "e": "redeem a coupon",
+    "k": "쿠폰을 사용하다"
+   },
+   {
+    "e": "discount coupon",
+    "k": "할인 쿠폰"
+   },
+   {
+    "e": "coupon code",
+    "k": "쿠폰 코드"
+   }
+  ],
+  "der": [],
+  "para": [
+   "voucher"
+  ],
+  "ant": "",
+  "tip": "'쿠폰을 사용하다'는 use 대신 redeem을 자주 쓰므로 redeem a coupon으로 묶어 외우자. 쿠폰 조건 문구 valid until(~까지 유효), one per customer도 Part 7에 자주 나온다.",
+  "q": {
+   "s": "Shoppers who sign up for our newsletter will receive a ------- for 10 percent off their next order.",
+   "o": [
+    "refund",
+    "coupon",
+    "warranty",
+    "complaint"
+   ],
+   "a": 1,
+   "k": "다음 주문 시 10퍼센트 할인을 받는 수단이므로 coupon이 정답이다. refund(환불), warranty(보증), complaint(불만)는 10 percent off와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "voucher",
+  "pos": "n",
+  "m": [
+   "상품권",
+   "바우처",
+   "쿠폰"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "As an apology for the delay, the airline gave each passenger a meal *voucher*.",
+  "exKo": "항공사는 지연에 대한 사과의 뜻으로 승객마다 식사 쿠폰을 주었다.",
+  "col": [
+   {
+    "e": "gift voucher",
+    "k": "상품권"
+   },
+   {
+    "e": "meal voucher",
+    "k": "식사 쿠폰, 식권"
+   },
+   {
+    "e": "travel voucher",
+    "k": "여행 바우처"
+   }
+  ],
+  "der": [],
+  "para": [
+   "coupon",
+   "gift certificate"
+  ],
+  "ant": "",
+  "tip": "voucher는 일정 금액이나 서비스로 교환할 수 있는 증서로, Part 7에서 불만 고객에게 주는 보상 수단으로 자주 등장한다.",
+  "q": {
+   "s": "Guests who were affected by the power outage will receive a ------- for one free night at any of our hotels.",
+   "o": [
+    "voucher",
+    "invoice",
+    "deposit",
+    "clearance"
+   ],
+   "a": 0,
+   "k": "무료 1박으로 교환할 수 있는 '숙박권'이므로 voucher가 정답이다. invoice(청구서), deposit(보증금), clearance(재고 정리)는 free night와 맞지 않는다."
+  }
+ },
+ {
+  "w": "receipt",
+  "pos": "n",
+  "m": [
+   "영수증",
+   "수령"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Please keep your *receipt* in case you need to return or exchange the item.",
+  "exKo": "제품을 반품하거나 교환해야 할 경우에 대비해 영수증을 보관해 두기 바란다.",
+  "col": [
+   {
+    "e": "original receipt",
+    "k": "영수증 원본"
+   },
+   {
+    "e": "upon receipt of ~",
+    "k": "~을 받는 즉시"
+   },
+   {
+    "e": "acknowledge receipt of ~",
+    "k": "~의 수령을 확인하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "receive",
+    "pos": "v",
+    "m": "받다"
+   },
+   {
+    "w": "recipient",
+    "pos": "n",
+    "m": "수령인"
+   }
+  ],
+  "para": [
+   "proof of purchase"
+  ],
+  "ant": "",
+  "tip": "receipt는 '영수증' 외에 '수령'이라는 뜻이 있어 upon receipt of(~을 받는 즉시), acknowledge receipt of(~을 받았음을 알리다) 형태로 나온다. p는 발음하지 않는다.",
+  "q": {
+   "s": "All payments must be made within 30 days of ------- of the goods.",
+   "o": [
+    "receive",
+    "recipient",
+    "receptive",
+    "receipt"
+   ],
+   "a": 3,
+   "k": "전치사 of와 of 사이 명사 자리이며 '물품 수령 후 30일 이내'라는 의미이므로 receipt가 정답이다. recipient는 '수령인'이라 의미가 맞지 않고, receive는 동사, receptive는 형용사다."
+  }
+ },
+ {
+  "w": "refund",
+  "pos": "n",
+  "m": [
+   "환불",
+   "환불금"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Customers who are not completely satisfied may request a full *refund* within 14 days.",
+  "exKo": "완전히 만족하지 못한 고객은 14일 이내에 전액 환불을 요청할 수 있다.",
+  "col": [
+   {
+    "e": "full refund",
+    "k": "전액 환불"
+   },
+   {
+    "e": "issue a refund",
+    "k": "환불해 주다"
+   },
+   {
+    "e": "request a refund",
+    "k": "환불을 요청하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "refundable",
+    "pos": "adj",
+    "m": "환불 가능한"
+   },
+   {
+    "w": "nonrefundable",
+    "pos": "adj",
+    "m": "환불되지 않는"
+   }
+  ],
+  "para": [
+   "reimbursement",
+   "money back"
+  ],
+  "ant": "",
+  "tip": "refund는 명사·동사로 모두 쓰인다. 형용사 refundable, nonrefundable(환불 불가)은 deposit, ticket 앞에 자주 붙는다.",
+  "q": {
+   "s": "Because the concert was canceled, all ticket holders will be ------- in full.",
+   "o": [
+    "refund",
+    "refunding",
+    "refundable",
+    "refunded"
+   ],
+   "a": 3,
+   "k": "'티켓 소지자들이 전액 환불받는다'는 수동태이므로 refunded가 정답이다. refundable은 티켓처럼 사물을 수식하므로 사람 주어와 맞지 않는다."
+  }
+ },
+ {
+  "w": "exchange",
+  "pos": "v",
+  "m": [
+   "교환하다",
+   "바꾸다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "You can *exchange* the sweater for a larger size at any of our branches.",
+  "exKo": "스웨터는 우리 모든 지점에서 더 큰 사이즈로 교환할 수 있다.",
+  "col": [
+   {
+    "e": "exchange A for B",
+    "k": "A를 B로 교환하다"
+   },
+   {
+    "e": "in exchange for ~",
+    "k": "~의 대가로"
+   },
+   {
+    "e": "exchange rate",
+    "k": "환율"
+   }
+  ],
+  "der": [
+   {
+    "w": "exchangeable",
+    "pos": "adj",
+    "m": "교환 가능한"
+   }
+  ],
+  "para": [
+   "swap",
+   "trade"
+  ],
+  "ant": "",
+  "tip": "exchange A for B(A를 B로 교환하다)의 전치사 for와 in exchange for(~의 대가로)가 빈출이다. 명사로는 exchange rate(환율)도 함께 알아두자.",
+  "q": {
+   "s": "Defective items may be returned or ------- for a different model within 30 days of purchase.",
+   "o": [
+    "exchanged",
+    "complained",
+    "refunded",
+    "apologized"
+   ],
+   "a": 0,
+   "k": "'다른 모델로 교환하다'는 exchange A for B 구문이므로 exchanged가 정답이다. complain, apologize는 자동사라 수동태가 불가능하고, refund는 for a different model과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "warranty",
+  "pos": "n",
+  "m": [
+   "품질 보증(서)",
+   "보증 기간"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The laptop comes with a two-year *warranty* covering all parts and labor.",
+  "exKo": "그 노트북에는 모든 부품과 수리비를 보장하는 2년 품질 보증이 제공된다.",
+  "col": [
+   {
+    "e": "under warranty",
+    "k": "보증 기간 중인"
+   },
+   {
+    "e": "extended warranty",
+    "k": "연장 보증"
+   },
+   {
+    "e": "the warranty expires",
+    "k": "보증이 만료되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "warrant",
+    "pos": "v",
+    "m": "정당화하다, 보증하다"
+   }
+  ],
+  "para": [
+   "guarantee"
+  ],
+  "ant": "",
+  "tip": "'보증 기간 중인'은 관사 없이 under warranty로 쓴다. Part 3·4에서는 수리 비용이 무료인지를 묻는 문제로 연결된다.",
+  "q": {
+   "s": "Repairs are free of charge as long as the product is still under -------.",
+   "o": [
+    "warranty",
+    "voucher",
+    "receipt",
+    "exchange"
+   ],
+   "a": 0,
+   "k": "under warranty는 '보증 기간 중인'이라는 고정 표현이므로 warranty가 정답이다. 나머지는 under와 결합해 이런 의미를 만들지 못한다."
+  }
+ },
+ {
+  "w": "guarantee",
+  "pos": "v",
+  "m": [
+   "보장하다",
+   "보증하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "We *guarantee* delivery within 48 hours, or your shipping fee will be refunded.",
+  "exKo": "우리는 48시간 이내 배송을 보장하며, 그렇지 못할 경우 배송비를 환불해 준다.",
+  "col": [
+   {
+    "e": "guarantee satisfaction",
+    "k": "만족을 보장하다"
+   },
+   {
+    "e": "money-back guarantee",
+    "k": "환불 보장"
+   },
+   {
+    "e": "be guaranteed to do",
+    "k": "반드시 ~하게 되어 있다"
+   }
+  ],
+  "der": [
+   {
+    "w": "guaranteed",
+    "pos": "adj",
+    "m": "보장된"
+   }
+  ],
+  "para": [
+   "ensure",
+   "promise",
+   "assure"
+  ],
+  "ant": "",
+  "tip": "guarantee는 동사와 명사(money-back guarantee)로 모두 쓰이며, guarantee that절, be guaranteed to do 구문이 자주 나온다. 철자 -ee에 유의하자.",
+  "q": {
+   "s": "The manufacturer ------- all of its power tools against defects for five years.",
+   "o": [
+    "guarantee",
+    "guaranteeing",
+    "guarantees",
+    "to guarantee"
+   ],
+   "a": 2,
+   "k": "주어 The manufacturer가 3인칭 단수이고 문장에 동사가 없으므로 guarantees가 정답이다. guarantee는 복수 주어와 쓰는 형태이고, guaranteeing과 to guarantee는 동사 역할을 할 수 없다."
+  }
+ },
+ {
+  "w": "defective",
+  "pos": "adj",
+  "m": [
+   "결함이 있는",
+   "불량의"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The manufacturer recalled 5,000 units after customers reported *defective* batteries.",
+  "exKo": "고객들이 배터리 결함을 신고하자 제조사는 제품 5,000개를 리콜했다.",
+  "col": [
+   {
+    "e": "defective product",
+    "k": "결함 제품"
+   },
+   {
+    "e": "replace defective items",
+    "k": "불량품을 교체하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "defect",
+    "pos": "n",
+    "m": "결함"
+   }
+  ],
+  "para": [
+   "faulty",
+   "flawed"
+  ],
+  "ant": "",
+  "tip": "defective는 명사 앞이나 보어 자리에 오는 형용사로, 명사 defect(결함)와 구분하는 품사 문제가 나온다. Part 7에서 faulty로 바꿔 표현된다.",
+  "q": {
+   "s": "Please contact our service center if any part of your order arrives -------.",
+   "o": [
+    "defect",
+    "defects",
+    "defective",
+    "defectively"
+   ],
+   "a": 2,
+   "k": "arrive는 형용사 보어를 취해 '~한 상태로 도착하다'를 뜻하므로 defective가 정답이다. 명사 defect(s)나 부사 defectively는 이 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "faulty",
+  "pos": "adj",
+  "m": [
+   "결함이 있는",
+   "고장 난"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The technician found that a *faulty* cable was causing the printer to stop working.",
+  "exKo": "기술자는 결함이 있는 케이블 때문에 프린터가 작동을 멈춘 것을 알아냈다.",
+  "col": [
+   {
+    "e": "faulty wiring",
+    "k": "결함 있는 배선"
+   },
+   {
+    "e": "faulty equipment",
+    "k": "고장 난 장비"
+   }
+  ],
+  "der": [
+   {
+    "w": "fault",
+    "pos": "n",
+    "m": "결함, 잘못"
+   }
+  ],
+  "para": [
+   "defective",
+   "malfunctioning"
+  ],
+  "ant": "",
+  "tip": "faulty는 기계·배선 등의 '결함이 있는'을 뜻하며 fault(잘못, 결함)의 형용사형이다. Part 3에서 '제품에 문제가 있다'는 대화가 defective, faulty로 바뀌어 나온다.",
+  "q": {
+   "s": "The elevator was shut down for repairs after inspectors discovered ------- wiring in the control panel.",
+   "o": [
+    "loyal",
+    "affordable",
+    "faulty",
+    "courteous"
+   ],
+   "a": 2,
+   "k": "수리를 위해 엘리베이터를 멈춘 이유는 '결함 있는' 배선이므로 faulty가 정답이다. loyal(충실한), affordable(저렴한), courteous(정중한)는 wiring과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "replacement",
+  "pos": "n",
+  "m": [
+   "교체(품)",
+   "후임자"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "If the item is damaged, we will send you a *replacement* at no extra cost.",
+  "exKo": "제품이 파손된 경우 추가 비용 없이 교체품을 보내 준다.",
+  "col": [
+   {
+    "e": "replacement part",
+    "k": "교체 부품"
+   },
+   {
+    "e": "free replacement",
+    "k": "무상 교체"
+   },
+   {
+    "e": "a replacement for ~",
+    "k": "~의 후임자, ~의 대체품"
+   }
+  ],
+  "der": [
+   {
+    "w": "replace",
+    "pos": "v",
+    "m": "교체하다, 대신하다"
+   },
+   {
+    "w": "replaceable",
+    "pos": "adj",
+    "m": "교체 가능한"
+   }
+  ],
+  "para": [
+   "substitute"
+  ],
+  "ant": "",
+  "tip": "replacement는 '교체품'과 '후임자' 두 뜻으로 쓰이며 a replacement for Ms. Lee처럼 for와 짝을 이룬다. 동사 replace A with B(A를 B로 교체하다)도 함께 알아두자.",
+  "q": {
+   "s": "Ms. Ortiz will remain in her position until a suitable ------- is found.",
+   "o": [
+    "replace",
+    "replaceable",
+    "replacement",
+    "replaced"
+   ],
+   "a": 2,
+   "k": "형용사 suitable의 수식을 받는 명사 자리이며 '적합한 후임자'라는 의미이므로 replacement가 정답이다."
+  }
+ },
+ {
+  "w": "in stock",
+  "pos": "phr",
+  "m": [
+   "재고가 있는"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The blue model is currently *in stock* and can be shipped today.",
+  "exKo": "파란색 모델은 현재 재고가 있어 오늘 바로 발송할 수 있다.",
+  "col": [
+   {
+    "e": "be in stock",
+    "k": "재고가 있다"
+   },
+   {
+    "e": "keep ~ in stock",
+    "k": "~을 재고로 갖춰 두다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "available",
+   "on hand"
+  ],
+  "ant": "out of stock",
+  "tip": "in stock은 be동사 뒤 보어로 쓰여 available(구입 가능한)로 패러프레이징된다. 전치사는 반드시 in을 쓰며, 반대 표현 out of stock과 함께 나온다.",
+  "q": {
+   "s": "Only two units of this model remain -------, so we recommend ordering soon.",
+   "o": [
+    "at stock",
+    "on stock",
+    "by stock",
+    "in stock"
+   ],
+   "a": 3,
+   "k": "'재고가 있는'은 전치사 in을 쓴 in stock이 정답이다. at, on, by stock은 쓰지 않는 표현이다."
+  }
+ },
+ {
+  "w": "out of stock",
+  "pos": "phr",
+  "m": [
+   "재고가 없는",
+   "품절된"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The printer cartridges you requested are temporarily *out of stock*.",
+  "exKo": "요청한 프린터 카트리지는 일시적으로 재고가 없다.",
+  "col": [
+   {
+    "e": "temporarily out of stock",
+    "k": "일시 품절된"
+   },
+   {
+    "e": "currently out of stock",
+    "k": "현재 재고가 없는"
+   }
+  ],
+  "der": [],
+  "para": [
+   "sold out",
+   "unavailable"
+  ],
+  "ant": "in stock",
+  "tip": "out of stock은 보어 자리에 오며 temporarily, currently 같은 부사의 수식을 자주 받는다. Part 3에서는 대체 상품 추천이나 입고 예정일을 묻는 문제로 이어진다.",
+  "q": {
+   "s": "Because the item is currently -------, it will be shipped as soon as new inventory arrives.",
+   "o": [
+    "on display",
+    "in charge",
+    "out of order",
+    "out of stock"
+   ],
+   "a": 3,
+   "k": "새 재고가 들어오면 발송된다고 했으므로 '재고가 없는'을 뜻하는 out of stock이 정답이다. out of order는 '고장 난'이라는 뜻이라 재고 입고와 관련이 없다."
+  }
+ },
+ {
+  "w": "sold out",
+  "pos": "adj",
+  "m": [
+   "매진된",
+   "품절된"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "Tickets for Saturday's performance were *sold out* within an hour.",
+  "exKo": "토요일 공연 티켓은 한 시간 만에 매진되었다.",
+  "col": [
+   {
+    "e": "be completely sold out",
+    "k": "완전히 매진되다"
+   },
+   {
+    "e": "sell out",
+    "k": "다 팔리다, 매진되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "sellout",
+    "pos": "n",
+    "m": "매진, 대성황"
+   }
+  ],
+  "para": [
+   "out of stock",
+   "unavailable"
+  ],
+  "ant": "",
+  "tip": "sold out은 be동사 뒤에서 '매진된'을 뜻한다. 동사구 sell out은 자동사로 'The tickets sold out quickly.'처럼 쓰인다는 점도 알아두자.",
+  "q": {
+   "s": "The limited-edition sneakers were completely ------- on the first day of the sale.",
+   "o": [
+    "sold out",
+    "sells out",
+    "sell out",
+    "sellout"
+   ],
+   "a": 0,
+   "k": "be동사 were 뒤 보어 자리이며 '완전히 매진된' 상태를 나타내므로 sold out이 정답이다. sells out, sell out은 동사 형태라 be동사 뒤에 올 수 없고, 명사 sellout은 관사 없이 보어로 쓸 수 없다."
+  }
+ },
+ {
+  "w": "patron",
+  "pos": "n",
+  "m": [
+   "고객",
+   "이용객",
+   "후원자"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Library *patrons* may borrow up to ten books at a time.",
+  "exKo": "도서관 이용객은 한 번에 최대 10권까지 빌릴 수 있다.",
+  "col": [
+   {
+    "e": "restaurant patrons",
+    "k": "식당 손님"
+   },
+   {
+    "e": "regular patrons",
+    "k": "단골손님"
+   }
+  ],
+  "der": [
+   {
+    "w": "patronage",
+    "pos": "n",
+    "m": "애용, 후원"
+   },
+   {
+    "w": "patronize",
+    "pos": "v",
+    "m": "애용하다"
+   }
+  ],
+  "para": [
+   "customer",
+   "visitor",
+   "guest"
+  ],
+  "ant": "",
+  "tip": "patron은 식당·도서관·극장 등의 '이용객'을 뜻하며 Part 7에서 customer로 패러프레이징된다. 명사 patronage(애용)는 'Thank you for your patronage.' 같은 감사 문구에 쓰인다.",
+  "q": {
+   "s": "Theater ------- are asked to turn off their mobile phones before the performance begins.",
+   "o": [
+    "patronage",
+    "patrons",
+    "patronize",
+    "patronizes"
+   ],
+   "a": 1,
+   "k": "복수 동사 are의 주어가 되는 사람명사 자리이므로 patrons가 정답이다. patronage는 '애용'이라는 불가산명사라 휴대전화를 끌 수 없다."
+  }
+ },
+ {
+  "w": "loyal",
+  "pos": "adj",
+  "m": [
+   "단골의",
+   "충실한",
+   "충성스러운"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "To thank our *loyal* customers, we are offering an extra 10 percent off this week.",
+  "exKo": "단골 고객에게 감사하는 뜻으로 이번 주에 10퍼센트 추가 할인을 제공한다.",
+  "col": [
+   {
+    "e": "loyal customer",
+    "k": "단골 고객"
+   },
+   {
+    "e": "be loyal to ~",
+    "k": "~에 충실하다"
+   },
+   {
+    "e": "customer loyalty",
+    "k": "고객 충성도"
+   }
+  ],
+  "der": [
+   {
+    "w": "loyalty",
+    "pos": "n",
+    "m": "충성(도)"
+   },
+   {
+    "w": "loyally",
+    "pos": "adv",
+    "m": "충실하게"
+   }
+  ],
+  "para": [
+   "regular",
+   "faithful"
+  ],
+  "ant": "",
+  "tip": "loyal customer(단골 고객)와 loyalty program(고객 우대 프로그램)이 Part 7 광고·이메일에 자주 나온다. '~에 충실한'은 be loyal to로 쓴다.",
+  "q": {
+   "s": "The bakery has remained popular thanks to its ------- customers, many of whom have shopped there for decades.",
+   "o": [
+    "loyal",
+    "faulty",
+    "prompt",
+    "durable"
+   ],
+   "a": 0,
+   "k": "수십 년간 그 가게를 이용해 온 '단골' 고객이므로 loyal이 정답이다. prompt(신속한), faulty(결함 있는), durable(내구성 있는)은 customers와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "membership",
+  "pos": "n",
+  "m": [
+   "회원 자격",
+   "회원권",
+   "회원 수"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Your annual *membership* includes free parking and access to all exhibitions.",
+  "exKo": "연간 회원권에는 무료 주차와 모든 전시회 입장 혜택이 포함된다.",
+  "col": [
+   {
+    "e": "membership fee",
+    "k": "회비"
+   },
+   {
+    "e": "renew one's membership",
+    "k": "회원 자격을 갱신하다"
+   },
+   {
+    "e": "membership card",
+    "k": "회원 카드"
+   }
+  ],
+  "der": [
+   {
+    "w": "member",
+    "pos": "n",
+    "m": "회원"
+   }
+  ],
+  "para": [
+   "subscription"
+  ],
+  "ant": "",
+  "tip": "membership은 '회원 자격' 외에 '회원 수, 회원 전체'를 뜻하기도 한다. renew/cancel one's membership, membership fee가 Part 3·7에 자주 나오며, 사람명사 member와 구분하자.",
+  "q": {
+   "s": "Please remember to renew your ------- before it expires at the end of the month.",
+   "o": [
+    "member",
+    "members",
+    "memberships",
+    "membership"
+   ],
+   "a": 3,
+   "k": "갱신하고 만료되는 대상은 '회원 자격'이며 대명사 it으로 받으므로 단수 membership이 정답이다. member(s)는 사람이라 갱신의 대상이 될 수 없다."
+  }
+ },
+ {
+  "w": "complaint",
+  "pos": "n",
+  "m": [
+   "불만",
+   "항의"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The hotel manager responded immediately to the guest's *complaint* about the noise.",
+  "exKo": "호텔 지배인은 소음에 대한 투숙객의 불만에 즉시 대응했다.",
+  "col": [
+   {
+    "e": "file a complaint",
+    "k": "항의를 제기하다"
+   },
+   {
+    "e": "a complaint about ~",
+    "k": "~에 대한 불만"
+   },
+   {
+    "e": "handle complaints",
+    "k": "불만을 처리하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "complain",
+    "pos": "v",
+    "m": "불평하다, 항의하다"
+   }
+  ],
+  "para": [
+   "grievance",
+   "concern"
+  ],
+  "ant": "",
+  "tip": "명사 complaint와 동사 complain을 구분하는 품사 문제가 빈출이다. complain은 자동사이므로 complain about ~ 형태로 쓴다.",
+  "q": {
+   "s": "Customers who wish to file a ------- should speak with a store manager.",
+   "o": [
+    "complain",
+    "complained",
+    "complaint",
+    "complaining"
+   ],
+   "a": 2,
+   "k": "관사 a 뒤 명사 자리이며 file a complaint는 '항의를 제기하다'라는 표현이므로 complaint가 정답이다. complain은 동사다."
+  }
+ },
+ {
+  "w": "inquiry",
+  "pos": "n",
+  "m": [
+   "문의",
+   "조사"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Thank you for your *inquiry* about our corporate catering services.",
+  "exKo": "우리 기업 케이터링 서비스에 관해 문의해 주어 감사하다.",
+  "col": [
+   {
+    "e": "an inquiry about ~",
+    "k": "~에 관한 문의"
+   },
+   {
+    "e": "respond to an inquiry",
+    "k": "문의에 답변하다"
+   },
+   {
+    "e": "customer inquiries",
+    "k": "고객 문의"
+   }
+  ],
+  "der": [
+   {
+    "w": "inquire",
+    "pos": "v",
+    "m": "문의하다"
+   }
+  ],
+  "para": [
+   "question",
+   "request"
+  ],
+  "ant": "",
+  "tip": "inquiry about(~에 관한 문의)의 전치사 about이 자주 출제된다. 동사 inquire도 자동사로 inquire about ~ 형태로 쓰이며, enquiry는 영국식 철자다.",
+  "q": {
+   "s": "Our support team responds to all customer ------- within 24 hours.",
+   "o": [
+    "inquire",
+    "inquiries",
+    "inquired",
+    "inquiring"
+   ],
+   "a": 1,
+   "k": "전치사 to의 목적어인 명사 자리이며 all 뒤에는 복수 가산명사가 오므로 inquiries가 정답이다."
+  }
+ },
+ {
+  "w": "apologize",
+  "pos": "v",
+  "m": [
+   "사과하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "We *apologize* for any confusion caused by the error in our previous e-mail.",
+  "exKo": "이전 이메일의 오류로 혼란을 끼친 점을 사과한다.",
+  "col": [
+   {
+    "e": "apologize for ~",
+    "k": "~에 대해 사과하다"
+   },
+   {
+    "e": "apologize to ~",
+    "k": "~에게 사과하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "apology",
+    "pos": "n",
+    "m": "사과"
+   },
+   {
+    "w": "apologetic",
+    "pos": "adj",
+    "m": "미안해하는"
+   }
+  ],
+  "para": [
+   "express regret"
+  ],
+  "ant": "",
+  "tip": "apologize는 자동사이므로 사과의 이유 앞에는 for, 대상 앞에는 to를 쓰며 목적어를 바로 받지 않는다. 명사 apology는 'Please accept our apologies.'로 쓰인다.",
+  "q": {
+   "s": "The airline ------- to passengers for the delay and offered them free meals.",
+   "o": [
+    "apology",
+    "apologized",
+    "apologetic",
+    "apologies"
+   ],
+   "a": 1,
+   "k": "주어 The airline 뒤 동사 자리이며 and 뒤 offered와 시제가 같아야 하므로 과거형 apologized가 정답이다. apology(ies)는 명사, apologetic은 형용사다."
+  }
+ },
+ {
+  "w": "inconvenience",
+  "pos": "n",
+  "m": [
+   "불편"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "We apologize for any *inconvenience* the road construction may cause.",
+  "exKo": "도로 공사로 불편을 끼칠 수 있는 점을 사과한다.",
+  "col": [
+   {
+    "e": "apologize for the inconvenience",
+    "k": "불편에 대해 사과하다"
+   },
+   {
+    "e": "cause inconvenience",
+    "k": "불편을 초래하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "inconvenient",
+    "pos": "adj",
+    "m": "불편한"
+   },
+   {
+    "w": "convenience",
+    "pos": "n",
+    "m": "편의, 편리"
+   }
+  ],
+  "para": [
+   "trouble",
+   "disruption"
+  ],
+  "ant": "convenience",
+  "tip": "'불편을 드려 죄송합니다(We apologize for any inconvenience.)'는 Part 4·7 공지문의 단골 문장이다. any, the 뒤 명사 자리이므로 형용사 inconvenient와 구분하자.",
+  "q": {
+   "s": "We regret any ------- caused by the temporary closure of the east entrance.",
+   "o": [
+    "inconvenient",
+    "inconveniently",
+    "inconvenience",
+    "inconvenienced"
+   ],
+   "a": 2,
+   "k": "any 뒤 명사 자리이며 caused 이하의 수식을 받으므로 명사 inconvenience가 정답이다. inconvenient는 형용사라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "resolve",
+  "pos": "v",
+  "m": [
+   "해결하다",
+   "결심하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Our technicians *resolved* the billing problem within two hours.",
+  "exKo": "우리 기술자들이 두 시간 만에 요금 청구 문제를 해결했다.",
+  "col": [
+   {
+    "e": "resolve an issue",
+    "k": "문제를 해결하다"
+   },
+   {
+    "e": "resolve a dispute",
+    "k": "분쟁을 해결하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "resolution",
+    "pos": "n",
+    "m": "해결, 결의"
+   },
+   {
+    "w": "resolved",
+    "pos": "adj",
+    "m": "해결된"
+   }
+  ],
+  "para": [
+   "solve",
+   "settle",
+   "fix"
+  ],
+  "ant": "",
+  "tip": "resolve는 타동사로 issue, problem, complaint, dispute를 목적어로 받는다. 명사 resolution은 '해결' 외에 '결의안, 해상도'의 뜻도 있다.",
+  "q": {
+   "s": "The customer service representative was able to ------- the issue quickly by sending a replacement.",
+   "o": [
+    "respond",
+    "resolve",
+    "react",
+    "remain"
+   ],
+   "a": 1,
+   "k": "the issue를 목적어로 받아 '문제를 해결하다'라는 의미가 되어야 하므로 타동사 resolve가 정답이다. respond, react, remain은 자동사라 목적어를 바로 받지 못한다."
+  }
+ },
+ {
+  "w": "satisfaction",
+  "pos": "n",
+  "m": [
+   "만족",
+   "만족도"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Customer *satisfaction* has improved significantly since we extended our service hours.",
+  "exKo": "서비스 시간을 연장한 이후 고객 만족도가 크게 향상되었다.",
+  "col": [
+   {
+    "e": "customer satisfaction",
+    "k": "고객 만족"
+   },
+   {
+    "e": "satisfaction survey",
+    "k": "만족도 조사"
+   },
+   {
+    "e": "to one's satisfaction",
+    "k": "~가 만족스럽게"
+   }
+  ],
+  "der": [
+   {
+    "w": "satisfy",
+    "pos": "v",
+    "m": "만족시키다"
+   },
+   {
+    "w": "satisfied",
+    "pos": "adj",
+    "m": "만족한"
+   },
+   {
+    "w": "satisfactory",
+    "pos": "adj",
+    "m": "만족스러운"
+   }
+  ],
+  "para": [
+   "contentment"
+  ],
+  "ant": "dissatisfaction",
+  "tip": "satisfied(사람이 만족한)와 satisfactory(결과가 만족스러운)를 구분하는 문제가 빈출이다. satisfaction은 customer satisfaction처럼 복합명사로 자주 쓰인다.",
+  "q": {
+   "s": "Please take a moment to complete our customer ------- survey.",
+   "o": [
+    "satisfy",
+    "satisfaction",
+    "satisfied",
+    "satisfactory"
+   ],
+   "a": 1,
+   "k": "'고객 만족도 조사'는 명사가 명사를 수식하는 복합명사 customer satisfaction survey이므로 satisfaction이 정답이다."
+  }
+ },
+ {
+  "w": "compensate",
+  "pos": "v",
+  "m": [
+   "보상하다",
+   "보충하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The hotel offered a free night to *compensate* guests for the broken air conditioning.",
+  "exKo": "호텔은 에어컨 고장에 대한 보상으로 투숙객에게 1박을 무료로 제공했다.",
+  "col": [
+   {
+    "e": "compensate A for B",
+    "k": "A에게 B를 보상하다"
+   },
+   {
+    "e": "compensate for ~",
+    "k": "~을 보충하다, 메우다"
+   }
+  ],
+  "der": [
+   {
+    "w": "compensation",
+    "pos": "n",
+    "m": "보상(금), 보수"
+   },
+   {
+    "w": "compensatory",
+    "pos": "adj",
+    "m": "보상의"
+   }
+  ],
+  "para": [
+   "reimburse",
+   "make up for"
+  ],
+  "ant": "",
+  "tip": "compensate A for B(A에게 B를 보상하다)와 compensate for(~을 만회하다)의 전치사 for가 핵심이다. 명사 compensation은 '보상' 외에 '급여, 보수'의 뜻으로도 쓰인다.",
+  "q": {
+   "s": "To ------- for the delay, the restaurant offered every diner a complimentary dessert.",
+   "o": [
+    "compensate",
+    "compensated",
+    "compensation",
+    "compensating"
+   ],
+   "a": 0,
+   "k": "목적을 나타내는 to부정사이므로 동사원형 compensate가 정답이다. compensate for는 '~을 보상하다, 만회하다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "courteous",
+  "pos": "adj",
+  "m": [
+   "정중한",
+   "예의 바른"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Guests praised the hotel staff for being *courteous* and helpful throughout their stay.",
+  "exKo": "투숙객들은 숙박 기간 내내 정중하고 친절했던 호텔 직원들을 칭찬했다.",
+  "col": [
+   {
+    "e": "courteous staff",
+    "k": "정중한 직원"
+   },
+   {
+    "e": "be courteous to ~",
+    "k": "~에게 정중하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "courtesy",
+    "pos": "n",
+    "m": "예의, 호의"
+   },
+   {
+    "w": "courteously",
+    "pos": "adv",
+    "m": "정중하게"
+   }
+  ],
+  "para": [
+   "polite",
+   "respectful"
+  ],
+  "ant": "rude",
+  "tip": "courteous는 형용사, courtesy는 명사다. courtesy는 courtesy shuttle(무료 셔틀)처럼 '무료 제공'의 의미로도 출제된다.",
+  "q": {
+   "s": "All sales associates are expected to remain ------- even when dealing with difficult customers.",
+   "o": [
+    "courtesy",
+    "courteous",
+    "courteously",
+    "courtesies"
+   ],
+   "a": 1,
+   "k": "remain은 형용사 보어를 취하므로 courteous가 정답이다. 부사 courteously나 명사 courtesy는 보어로 적절하지 않다."
+  }
+ },
+ {
+  "w": "prompt",
+  "pos": "adj",
+  "m": [
+   "신속한",
+   "즉각적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Thank you for your *prompt* reply to our request for a quote.",
+  "exKo": "견적 요청에 신속히 답변해 주어 감사하다.",
+  "col": [
+   {
+    "e": "prompt response",
+    "k": "신속한 응답"
+   },
+   {
+    "e": "prompt payment",
+    "k": "신속한 지불"
+   }
+  ],
+  "der": [
+   {
+    "w": "promptly",
+    "pos": "adv",
+    "m": "신속히, 정각에"
+   },
+   {
+    "w": "promptness",
+    "pos": "n",
+    "m": "신속함"
+   }
+  ],
+  "para": [
+   "quick",
+   "immediate",
+   "timely"
+  ],
+  "ant": "",
+  "tip": "prompt는 형용사(신속한) 외에 동사(촉발하다)로도 쓰인다. 부사 promptly는 'promptly at 9 A.M.'처럼 '정각에'라는 뜻으로도 나온다.",
+  "q": {
+   "s": "We appreciate your ------- payment of the outstanding balance.",
+   "o": [
+    "prompt",
+    "promptness",
+    "promptly",
+    "prompted"
+   ],
+   "a": 0,
+   "k": "소유격 your와 명사 payment 사이 형용사 자리이므로 prompt가 정답이다. 부사 promptly는 명사를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "assistance",
+  "pos": "n",
+  "m": [
+   "도움",
+   "지원"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "If you need *assistance* finding an item, please ask any member of our staff.",
+  "exKo": "상품을 찾는 데 도움이 필요하면 직원 누구에게든 문의하기 바란다.",
+  "col": [
+   {
+    "e": "need assistance",
+    "k": "도움이 필요하다"
+   },
+   {
+    "e": "provide assistance",
+    "k": "도움을 제공하다"
+   },
+   {
+    "e": "financial assistance",
+    "k": "재정 지원"
+   }
+  ],
+  "der": [
+   {
+    "w": "assist",
+    "pos": "v",
+    "m": "돕다"
+   },
+   {
+    "w": "assistant",
+    "pos": "n",
+    "m": "조수, 보조원"
+   }
+  ],
+  "para": [
+   "help",
+   "support",
+   "aid"
+  ],
+  "ant": "",
+  "tip": "assistance는 불가산명사이므로 an assistance나 assistances로 쓰지 않는다. 사람명사 assistant(조수)와 구분하는 문제가 자주 나온다.",
+  "q": {
+   "s": "For further -------, please call our customer hotline at 555-0198.",
+   "o": [
+    "assisted",
+    "assist",
+    "assistant",
+    "assistance"
+   ],
+   "a": 3,
+   "k": "For further 뒤 명사 자리이며 '추가 도움'이라는 의미이므로 assistance가 정답이다. assistant는 가산명사라 관사 없이 단독으로 쓸 수 없고 의미도 맞지 않는다."
+  }
+ },
+ {
+  "w": "store credit",
+  "pos": "n",
+  "m": [
+   "매장 적립금",
+   "스토어 크레딧"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Items returned without a receipt can be exchanged only for *store credit*.",
+  "exKo": "영수증 없이 반품된 상품은 매장 적립금으로만 교환할 수 있다.",
+  "col": [
+   {
+    "e": "receive store credit",
+    "k": "매장 적립금을 받다"
+   },
+   {
+    "e": "issue store credit",
+    "k": "매장 적립금을 발급하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "in-store credit"
+  ],
+  "ant": "",
+  "tip": "store credit은 현금 환불 대신 해당 매장에서만 쓸 수 있는 금액으로, Part 7 반품 정책에서 '현금 환불 불가(no cash refunds)' 조건과 함께 나온다.",
+  "q": {
+   "s": "Because the return period has passed, we can offer you ------- instead of a cash refund.",
+   "o": [
+    "checkout",
+    "complaint",
+    "store credit",
+    "receipt"
+   ],
+   "a": 2,
+   "k": "현금 환불 대신 줄 수 있는 것은 '매장 적립금'이므로 store credit이 정답이다. 나머지는 환불을 대신하는 수단이 아니다."
+  }
+ },
+ {
+  "w": "checkout",
+  "pos": "n",
+  "m": [
+   "계산(대)",
+   "(호텔) 퇴실"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   7
+  ],
+  "ex": "Please present your membership card at *checkout* to receive your discount.",
+  "exKo": "할인을 받으려면 계산할 때 회원 카드를 제시해야 한다.",
+  "col": [
+   {
+    "e": "checkout counter",
+    "k": "계산대"
+   },
+   {
+    "e": "checkout time",
+    "k": "퇴실 시간"
+   },
+   {
+    "e": "at checkout",
+    "k": "계산할 때"
+   }
+  ],
+  "der": [
+   {
+    "w": "check out",
+    "pos": "v",
+    "m": "계산하다, 퇴실하다"
+   }
+  ],
+  "para": [
+   "register",
+   "cash register"
+  ],
+  "ant": "",
+  "tip": "명사 checkout은 한 단어로, 동사구 check out은 두 단어로 쓴다. Part 1에서는 계산대 앞에 줄 선 사진 묘사로 나온다.",
+  "q": {
+   "s": "Customers in the express lane may bring no more than ten items to the -------.",
+   "o": [
+    "voucher",
+    "clearance",
+    "checkout",
+    "patron"
+   ],
+   "a": 2,
+   "k": "물건을 가져가는 장소인 '계산대'가 필요하므로 checkout이 정답이다. 나머지는 장소를 나타내지 않는다."
+  }
+ },
+ {
+  "w": "affordable",
+  "pos": "adj",
+  "m": [
+   "저렴한",
+   "(가격이) 알맞은"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The new apartment complex offers *affordable* housing for young professionals.",
+  "exKo": "새 아파트 단지는 젊은 직장인들에게 저렴한 주택을 제공한다.",
+  "col": [
+   {
+    "e": "affordable price",
+    "k": "알맞은 가격"
+   },
+   {
+    "e": "affordable housing",
+    "k": "저렴한 주택"
+   }
+  ],
+  "der": [
+   {
+    "w": "afford",
+    "pos": "v",
+    "m": "(~할) 여유가 있다"
+   },
+   {
+    "w": "affordability",
+    "pos": "n",
+    "m": "감당 가능성"
+   }
+  ],
+  "para": [
+   "inexpensive",
+   "reasonably priced",
+   "budget-friendly"
+  ],
+  "ant": "expensive",
+  "tip": "affordable은 명사 앞 형용사 자리에 자주 오며, 동사 afford는 can afford to do(~할 여유가 있다) 형태로 쓰인다. Part 7에서 inexpensive, reasonably priced로 바뀌어 나온다.",
+  "q": {
+   "s": "The hotel is popular with students because of its ------- rates and central location.",
+   "o": [
+    "affordable",
+    "afford",
+    "affordably",
+    "affordability"
+   ],
+   "a": 0,
+   "k": "소유격 its와 명사 rates 사이 형용사 자리이므로 affordable이 정답이다."
+  }
+ },
+ {
+  "w": "reasonable",
+  "pos": "adj",
+  "m": [
+   "(가격이) 적정한",
+   "합리적인"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The restaurant serves excellent food at *reasonable* prices.",
+  "exKo": "그 식당은 적정한 가격에 훌륭한 음식을 제공한다.",
+  "col": [
+   {
+    "e": "reasonable price",
+    "k": "적정한 가격"
+   },
+   {
+    "e": "within a reasonable time",
+    "k": "합리적인 기간 내에"
+   }
+  ],
+  "der": [
+   {
+    "w": "reasonably",
+    "pos": "adv",
+    "m": "적정하게, 합리적으로"
+   },
+   {
+    "w": "reason",
+    "pos": "n",
+    "m": "이유"
+   }
+  ],
+  "para": [
+   "fair",
+   "affordable"
+  ],
+  "ant": "unreasonable",
+  "tip": "reasonable은 가격과 함께 쓰여 '비싸지 않은'을 뜻한다. reasonably priced(적정한 가격의)처럼 부사가 분사를 수식하는 형태도 빈출이다.",
+  "q": {
+   "s": "The consultant charges a ------- fee for her services, which makes her popular with small businesses.",
+   "o": [
+    "reason",
+    "reasoning",
+    "reasonably",
+    "reasonable"
+   ],
+   "a": 3,
+   "k": "관사 a와 명사 fee 사이 형용사 자리이므로 reasonable이 정답이다. 부사 reasonably는 명사를 직접 수식할 수 없다."
+  }
+ },
+ {
+  "w": "durable",
+  "pos": "adj",
+  "m": [
+   "내구성 있는",
+   "튼튼한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "These *durable* work boots are designed to last for years.",
+  "exKo": "이 튼튼한 작업화는 수년간 신을 수 있도록 만들어졌다.",
+  "col": [
+   {
+    "e": "durable material",
+    "k": "내구성 있는 소재"
+   },
+   {
+    "e": "durable goods",
+    "k": "내구재"
+   }
+  ],
+  "der": [
+   {
+    "w": "durability",
+    "pos": "n",
+    "m": "내구성"
+   }
+  ],
+  "para": [
+   "sturdy",
+   "long-lasting",
+   "tough"
+  ],
+  "ant": "fragile",
+  "tip": "durable은 제품 광고에서 sturdy, long-lasting으로 패러프레이징된다. 명사 durability(내구성)와 구분하는 품사 문제가 나온다.",
+  "q": {
+   "s": "The backpack is made of a highly ------- fabric that resists water and tears.",
+   "o": [
+    "durability",
+    "durable",
+    "durably",
+    "duration"
+   ],
+   "a": 1,
+   "k": "부사 highly의 수식을 받으면서 명사 fabric을 꾸미는 형용사 자리이므로 durable이 정답이다."
+  }
+ },
+ {
+  "w": "valued customer",
+  "pos": "phr",
+  "m": [
+   "소중한 고객",
+   "우수 고객"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "As a *valued customer*, you are invited to our exclusive preview sale.",
+  "exKo": "소중한 고객인 귀하를 특별 사전 세일에 초대한다.",
+  "col": [
+   {
+    "e": "our valued customers",
+    "k": "저희의 소중한 고객 여러분"
+   },
+   {
+    "e": "valued client",
+    "k": "소중한 고객"
+   }
+  ],
+  "der": [
+   {
+    "w": "value",
+    "pos": "v",
+    "m": "소중히 여기다"
+   },
+   {
+    "w": "valuable",
+    "pos": "adj",
+    "m": "귀중한, 가치 있는"
+   }
+  ],
+  "para": [
+   "loyal customer",
+   "regular customer"
+  ],
+  "ant": "",
+  "tip": "valued는 '소중히 여겨지는'이라는 분사형 형용사로, valuable(가치가 큰)과 혼동하지 말자. Part 7 이메일·편지의 인사나 감사 문구로 자주 나온다.",
+  "q": {
+   "s": "We are pleased to offer our most ------- customers a free upgrade to premium service.",
+   "o": [
+    "valuing",
+    "valued",
+    "valuation",
+    "values"
+   ],
+   "a": 1,
+   "k": "최우수 고객은 회사가 '소중히 여기는' 대상이므로 수동의 의미를 가진 과거분사 valued가 정답이다. valuing은 능동, valuation은 '평가'라는 명사다."
+  }
+ },
+ {
+  "w": "price tag",
+  "pos": "n",
+  "m": [
+   "가격표",
+   "가격"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "The *price tag* on the jacket was different from the amount shown at the register.",
+  "exKo": "재킷에 붙은 가격표가 계산대에 표시된 금액과 달랐다.",
+  "col": [
+   {
+    "e": "remove the price tag",
+    "k": "가격표를 떼다"
+   },
+   {
+    "e": "a hefty price tag",
+    "k": "비싼 가격"
+   }
+  ],
+  "der": [],
+  "para": [
+   "label",
+   "price"
+  ],
+  "ant": "",
+  "tip": "price tag는 실제 '가격표' 외에 'a $2 million price tag'처럼 '비용'의 의미로도 Part 7에 쓰인다. Part 1에서는 'Price tags are attached to the items.' 같은 묘사가 나온다.",
+  "q": {
+   "s": "Please check the ------- on each item, as some prices have changed since the catalog was printed.",
+   "o": [
+    "price tag",
+    "patron",
+    "checkout",
+    "warranty"
+   ],
+   "a": 0,
+   "k": "가격이 바뀌었으니 각 상품에 붙은 '가격표'를 확인하라는 의미이므로 price tag가 정답이다."
+  }
+ }
+]

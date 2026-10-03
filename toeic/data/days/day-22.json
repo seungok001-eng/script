@@ -1,0 +1,2185 @@
+[
+ {
+  "w": "healthcare",
+  "pos": "n",
+  "m": [
+   "의료",
+   "보건 의료"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The company offers comprehensive *healthcare* benefits to all full-time employees.",
+  "exKo": "그 회사는 모든 정규직 직원에게 포괄적인 의료 혜택을 제공한다.",
+  "col": [
+   {
+    "e": "healthcare provider",
+    "k": "의료 서비스 제공자(의료 기관)"
+   },
+   {
+    "e": "healthcare benefits",
+    "k": "의료 혜택"
+   },
+   {
+    "e": "healthcare industry",
+    "k": "의료 산업"
+   }
+  ],
+  "der": [
+   {
+    "w": "health",
+    "pos": "n",
+    "m": "건강"
+   },
+   {
+    "w": "healthy",
+    "pos": "adj",
+    "m": "건강한"
+   }
+  ],
+  "para": [
+   "medical care"
+  ],
+  "ant": "",
+  "tip": "healthcare는 불가산명사라 a를 붙이지 않는다. healthcare provider, healthcare costs처럼 명사 앞에서 다른 명사를 수식하는 복합명사 형태로 주로 나온다.",
+  "q": {
+   "s": "Brightview Clinic has been a leading ------- provider in the region for over two decades.",
+   "o": [
+    "hospitality",
+    "transportation",
+    "construction",
+    "healthcare"
+   ],
+   "a": 3,
+   "k": "주어가 병원(Clinic)이므로 '의료 서비스 제공자'를 뜻하는 healthcare provider가 정답. 나머지는 숙박업·운송·건설 분야라 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "medical",
+  "pos": "adj",
+  "m": [
+   "의료의",
+   "의학의"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Patients are asked to bring their *medical* records to their first appointment.",
+  "exKo": "환자들은 첫 진료 때 의료 기록을 지참해야 한다.",
+  "col": [
+   {
+    "e": "medical records",
+    "k": "의료 기록"
+   },
+   {
+    "e": "medical leave",
+    "k": "병가"
+   },
+   {
+    "e": "medical expenses",
+    "k": "의료비"
+   }
+  ],
+  "der": [
+   {
+    "w": "medicine",
+    "pos": "n",
+    "m": "약, 의학"
+   },
+   {
+    "w": "medically",
+    "pos": "adv",
+    "m": "의학적으로"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "명사 앞에서 수식하는 형용사로 쓰이며, medical leave(병가), medical checkup(건강 검진)이 빈출이다. 명사 medicine(약, 의학)과의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "Employees who require extended ------- leave must submit a doctor's note to Human Resources.",
+   "o": [
+    "medically",
+    "medical",
+    "medicine",
+    "medicate"
+   ],
+   "a": 1,
+   "k": "명사 leave를 수식하는 형용사 자리이므로 medical이 정답. medical leave는 '병가'라는 뜻의 빈출 표현이며, 부사 medically는 명사를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "clinic",
+  "pos": "n",
+  "m": [
+   "진료소, 병원",
+   "클리닉"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The *clinic* on Maple Avenue is open until 8 P.M. on weekdays.",
+  "exKo": "메이플 가에 있는 그 병원은 평일에 오후 8시까지 문을 연다.",
+  "col": [
+   {
+    "e": "walk-in clinic",
+    "k": "예약 없이 진료받는 병원"
+   },
+   {
+    "e": "dental clinic",
+    "k": "치과"
+   },
+   {
+    "e": "clinic hours",
+    "k": "진료 시간"
+   }
+  ],
+  "der": [
+   {
+    "w": "clinical",
+    "pos": "adj",
+    "m": "임상의"
+   },
+   {
+    "w": "clinician",
+    "pos": "n",
+    "m": "임상 의사"
+   }
+  ],
+  "para": [
+   "medical center",
+   "health center"
+  ],
+  "ant": "",
+  "tip": "walk-in clinic은 '예약 없이 방문 가능한 병원'으로 듣기에 자주 나온다. 형용사 clinical은 clinical trial(임상 시험)처럼 제약회사 관련 Part 7 지문에 등장한다.",
+  "q": {
+   "s": "Dr. Patel opened a small dental ------- in the downtown area last spring.",
+   "o": [
+    "clinical",
+    "clinic",
+    "clinically",
+    "clinician"
+   ],
+   "a": 1,
+   "k": "동사 opened의 목적어이자 dental의 수식을 받는 명사 자리이며, '개업하다'의 대상은 장소인 clinic이다. clinician은 사람이라 opened의 목적어로 맞지 않는다."
+  }
+ },
+ {
+  "w": "physician",
+  "pos": "n",
+  "m": [
+   "의사",
+   "내과 의사"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Patients should consult their *physician* before starting a new exercise program.",
+  "exKo": "환자들은 새로운 운동 프로그램을 시작하기 전에 담당 의사와 상담해야 한다.",
+  "col": [
+   {
+    "e": "primary care physician",
+    "k": "1차 진료 의사, 주치의"
+   },
+   {
+    "e": "consult a physician",
+    "k": "의사와 상담하다"
+   },
+   {
+    "e": "a licensed physician",
+    "k": "면허를 소지한 의사"
+   }
+  ],
+  "der": [
+   {
+    "w": "physical",
+    "pos": "adj",
+    "m": "신체의"
+   },
+   {
+    "w": "physically",
+    "pos": "adv",
+    "m": "신체적으로"
+   }
+  ],
+  "para": [
+   "doctor"
+  ],
+  "ant": "",
+  "tip": "physician(의사)과 physicist(물리학자)는 철자가 비슷해 혼동을 노린 보기로 자주 나온다. Part 7에서는 doctor로 바꿔 표현된다.",
+  "q": {
+   "s": "Ms. Ortiz made an appointment with her primary care ------- to discuss her test results.",
+   "o": [
+    "physician",
+    "physicist",
+    "physics",
+    "physical"
+   ],
+   "a": 0,
+   "k": "검사 결과를 상의하려고 진료 예약을 잡는 대상이므로 '의사'인 physician이 정답. physicist는 '물리학자', physics는 '물리학'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "surgeon",
+  "pos": "n",
+  "m": [
+   "외과 의사"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The hospital recently hired two experienced *surgeons* from Boston.",
+  "exKo": "그 병원은 최근 보스턴 출신의 경력 많은 외과 의사 두 명을 채용했다.",
+  "col": [
+   {
+    "e": "orthopedic surgeon",
+    "k": "정형외과 의사"
+   },
+   {
+    "e": "chief surgeon",
+    "k": "외과 과장"
+   },
+   {
+    "e": "a skilled surgeon",
+    "k": "숙련된 외과 의사"
+   }
+  ],
+  "der": [
+   {
+    "w": "surgery",
+    "pos": "n",
+    "m": "수술"
+   },
+   {
+    "w": "surgical",
+    "pos": "adj",
+    "m": "외과의, 수술의"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "사람명사 surgeon과 행위명사 surgery(수술)를 구분하는 품사 문제가 나온다. undergo surgery(수술을 받다)도 함께 알아 두자.",
+  "q": {
+   "s": "Dr. Kim, who has worked as a ------- for fifteen years, will lead the new cardiac unit.",
+   "o": [
+    "surgery",
+    "surgical",
+    "surgeon",
+    "surgically"
+   ],
+   "a": 2,
+   "k": "'~로서 일하다(work as a ~)' 뒤에는 직업을 나타내는 사람명사가 와야 하므로 surgeon이 정답. surgery는 '수술'이라는 행위명사라 사람 자리에 맞지 않는다."
+  }
+ },
+ {
+  "w": "dental",
+  "pos": "adj",
+  "m": [
+   "치과의",
+   "치아의"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Our *dental* plan covers two routine cleanings per year.",
+  "exKo": "우리 회사의 치과 보험은 연 2회의 정기 스케일링을 보장한다.",
+  "col": [
+   {
+    "e": "dental clinic",
+    "k": "치과"
+   },
+   {
+    "e": "dental insurance",
+    "k": "치과 보험"
+   },
+   {
+    "e": "dental checkup",
+    "k": "치과 검진"
+   }
+  ],
+  "der": [
+   {
+    "w": "dentist",
+    "pos": "n",
+    "m": "치과 의사"
+   },
+   {
+    "w": "dentistry",
+    "pos": "n",
+    "m": "치의학, 치과 진료"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "dental은 명사 앞에만 쓰는 형용사이고, 사람은 dentist다. 듣기에서는 dental appointment(치과 예약)가 일정 변경 사유로 자주 나온다.",
+  "q": {
+   "s": "The benefits package includes both medical and ------- insurance for all permanent staff.",
+   "o": [
+    "dentist",
+    "dentistry",
+    "dental",
+    "dentists"
+   ],
+   "a": 2,
+   "k": "and 앞의 형용사 medical과 병렬을 이루며 명사 insurance를 수식하는 형용사 자리이므로 dental이 정답. dentist는 사람명사라 보험을 수식할 수 없다."
+  }
+ },
+ {
+  "w": "pharmacist",
+  "pos": "n",
+  "m": [
+   "약사"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The *pharmacist* explained how often the medicine should be taken.",
+  "exKo": "약사는 그 약을 얼마나 자주 복용해야 하는지 설명했다.",
+  "col": [
+   {
+    "e": "a licensed pharmacist",
+    "k": "면허를 소지한 약사"
+   },
+   {
+    "e": "ask a pharmacist",
+    "k": "약사에게 문의하다"
+   },
+   {
+    "e": "the pharmacist on duty",
+    "k": "당번 약사"
+   }
+  ],
+  "der": [
+   {
+    "w": "pharmacy",
+    "pos": "n",
+    "m": "약국"
+   },
+   {
+    "w": "pharmaceutical",
+    "pos": "adj",
+    "m": "제약의, 약학의"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "사람명사 pharmacist와 장소명사 pharmacy를 구분하는 문제가 나온다. pharmaceutical company(제약 회사)도 Part 7 기사에 자주 등장한다.",
+  "q": {
+   "s": "If you have questions about possible drug interactions, speak with the ------- on duty.",
+   "o": [
+    "pharmacist",
+    "pharmacy",
+    "pharmaceutical",
+    "pharmacology"
+   ],
+   "a": 0,
+   "k": "speak with(~와 이야기하다)의 대상이자 on duty(근무 중인)의 수식을 받으므로 사람명사 pharmacist가 정답. pharmacy는 장소, pharmacology는 '약리학'이다."
+  }
+ },
+ {
+  "w": "pharmacy",
+  "pos": "n",
+  "m": [
+   "약국"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "The *pharmacy* next to the hospital is open 24 hours a day.",
+  "exKo": "병원 옆에 있는 약국은 24시간 문을 연다.",
+  "col": [
+   {
+    "e": "a local pharmacy",
+    "k": "동네 약국"
+   },
+   {
+    "e": "the pharmacy counter",
+    "k": "약국 카운터"
+   },
+   {
+    "e": "a hospital pharmacy",
+    "k": "병원 내 약국"
+   }
+  ],
+  "der": [
+   {
+    "w": "pharmacist",
+    "pos": "n",
+    "m": "약사"
+   },
+   {
+    "w": "pharmaceutical",
+    "pos": "adj",
+    "m": "제약의, 약학의"
+   }
+  ],
+  "para": [
+   "drugstore"
+  ],
+  "ant": "",
+  "tip": "듣기에서 pharmacy는 drugstore로 바꿔 말하는 경우가 많다. 사람명사 pharmacist와의 구분이 Part 5에 출제된다.",
+  "q": {
+   "s": "Prescriptions can be picked up at the hospital ------- on the first floor.",
+   "o": [
+    "pharmacy",
+    "pharmaceutical",
+    "pharmacist",
+    "pharmacologist"
+   ],
+   "a": 0,
+   "k": "전치사 at 뒤, '1층에 있는' 장소를 나타내는 명사 자리이므로 pharmacy가 정답. pharmacist와 pharmacologist는 사람이라 장소 자리에 맞지 않는다."
+  }
+ },
+ {
+  "w": "prescription",
+  "pos": "n",
+  "m": [
+   "처방전",
+   "처방약"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "A *prescription* from a doctor is required to purchase this medication.",
+  "exKo": "이 약을 구입하려면 의사의 처방전이 필요하다.",
+  "col": [
+   {
+    "e": "fill a prescription",
+    "k": "처방전대로 약을 조제하다"
+   },
+   {
+    "e": "prescription drugs",
+    "k": "처방약"
+   },
+   {
+    "e": "by prescription only",
+    "k": "처방전이 있어야만"
+   }
+  ],
+  "der": [
+   {
+    "w": "prescribe",
+    "pos": "v",
+    "m": "처방하다"
+   },
+   {
+    "w": "prescriptive",
+    "pos": "adj",
+    "m": "규범적인"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "가산명사이므로 a prescription, prescriptions로 쓴다. 동사 prescribe와의 품사 구분, available by prescription only(처방전으로만 구입 가능) 표현이 빈출이다.",
+  "q": {
+   "s": "This medication is available only by ------- and cannot be purchased over the counter.",
+   "o": [
+    "prescription",
+    "prescribe",
+    "prescribed",
+    "prescribing"
+   ],
+   "a": 0,
+   "k": "전치사 by의 목적어인 명사 자리이므로 prescription이 정답. by prescription은 '처방전으로'라는 뜻이며, prescribing은 목적어가 없어 의미가 성립하지 않는다."
+  }
+ },
+ {
+  "w": "prescribe",
+  "pos": "v",
+  "m": [
+   "처방하다",
+   "규정하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The doctor *prescribed* an antibiotic for the patient's ear infection.",
+  "exKo": "의사는 환자의 귀 감염 치료를 위해 항생제를 처방했다.",
+  "col": [
+   {
+    "e": "prescribe medication",
+    "k": "약을 처방하다"
+   },
+   {
+    "e": "prescribe A for B",
+    "k": "B에 대해 A를 처방하다"
+   },
+   {
+    "e": "as prescribed",
+    "k": "처방(지시)대로"
+   }
+  ],
+  "der": [
+   {
+    "w": "prescription",
+    "pos": "n",
+    "m": "처방전"
+   },
+   {
+    "w": "prescriptive",
+    "pos": "adj",
+    "m": "규범적인"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "'처방하다' 외에 '(규칙 등을) 규정하다'라는 뜻도 있다. take the medication as prescribed(처방대로 복용하다)처럼 as + 과거분사 구문이 자주 나온다.",
+  "q": {
+   "s": "Patients should take all medication exactly as ------- by their physician.",
+   "o": [
+    "prescription",
+    "prescribes",
+    "prescribed",
+    "prescribing"
+   ],
+   "a": 2,
+   "k": "뒤에 by their physician이 이어지므로 '의사가 처방한 대로'라는 수동의 의미를 갖는 과거분사 prescribed가 정답. as prescribed는 관용적으로 쓰인다."
+  }
+ },
+ {
+  "w": "medication",
+  "pos": "n",
+  "m": [
+   "약, 약물",
+   "약물 치료"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Patients taking this *medication* should avoid driving or operating heavy machinery.",
+  "exKo": "이 약을 복용 중인 환자는 운전이나 중장비 조작을 피해야 한다.",
+  "col": [
+   {
+    "e": "take medication",
+    "k": "약을 복용하다"
+   },
+   {
+    "e": "be on medication",
+    "k": "약을 복용 중이다"
+   },
+   {
+    "e": "over-the-counter medication",
+    "k": "일반 의약품"
+   }
+  ],
+  "der": [
+   {
+    "w": "medicate",
+    "pos": "v",
+    "m": "약을 투여하다"
+   },
+   {
+    "w": "medicine",
+    "pos": "n",
+    "m": "약, 의학"
+   }
+  ],
+  "para": [
+   "medicine",
+   "drug"
+  ],
+  "ant": "",
+  "tip": "약을 '먹다'는 eat이 아니라 take medication으로 쓴다. Part 7에서는 medicine으로 바꿔 표현되는 경우가 많다.",
+  "q": {
+   "s": "Mr. Hayes was advised to stop taking the ------- if he experienced any dizziness.",
+   "o": [
+    "symptom",
+    "medication",
+    "clinic",
+    "surgeon"
+   ],
+   "a": 1,
+   "k": "taking의 목적어로 '복용하다'의 대상이 와야 하므로 medication이 정답. symptom(증상), clinic(병원), surgeon(외과 의사)은 take의 목적어로 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "treatment",
+  "pos": "n",
+  "m": [
+   "치료(법)",
+   "처리",
+   "대우"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The new *treatment* has helped thousands of patients recover more quickly.",
+  "exKo": "그 새로운 치료법은 수천 명의 환자가 더 빨리 회복하도록 도왔다.",
+  "col": [
+   {
+    "e": "receive treatment",
+    "k": "치료를 받다"
+   },
+   {
+    "e": "treatment for",
+    "k": "~에 대한 치료"
+   },
+   {
+    "e": "preferential treatment",
+    "k": "우대"
+   }
+  ],
+  "der": [
+   {
+    "w": "treat",
+    "pos": "v",
+    "m": "치료하다, 대우하다, 처리하다"
+   }
+  ],
+  "para": [
+   "therapy",
+   "care"
+  ],
+  "ant": "",
+  "tip": "treatment for + 질병 형태로 전치사 for와 짝을 이룬다. '대우'의 뜻으로 preferential treatment(우대), '처리'의 뜻으로 water treatment(수처리)도 나온다.",
+  "q": {
+   "s": "The clinic offers effective ------- for back pain without the need for surgery.",
+   "o": [
+    "treat",
+    "treated",
+    "treatment",
+    "treatable"
+   ],
+   "a": 2,
+   "k": "형용사 effective의 수식을 받으며 offers의 목적어가 되는 명사 자리이므로 treatment가 정답. 명사 treat는 '대접, 즐거움'이라는 뜻이라 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "symptom",
+  "pos": "n",
+  "m": [
+   "증상"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Employees with flu *symptoms* are encouraged to stay home and rest.",
+  "exKo": "독감 증상이 있는 직원은 집에서 쉬도록 권장된다.",
+  "col": [
+   {
+    "e": "flu symptoms",
+    "k": "독감 증상"
+   },
+   {
+    "e": "common symptoms",
+    "k": "흔한 증상"
+   },
+   {
+    "e": "show symptoms of",
+    "k": "~의 증상을 보이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "symptomatic",
+    "pos": "adj",
+    "m": "증상을 보이는"
+   }
+  ],
+  "para": [
+   "sign"
+  ],
+  "ant": "",
+  "tip": "가산명사로 보통 복수형 symptoms로 쓴다. Part 7에서는 sign으로 바꿔 표현되기도 한다.",
+  "q": {
+   "s": "Anyone who develops ------- such as fever or cough should notify a supervisor at once.",
+   "o": [
+    "treatments",
+    "symptoms",
+    "remedies",
+    "appointments"
+   ],
+   "a": 1,
+   "k": "fever(열)나 cough(기침)는 '증상'의 예시이므로 symptoms가 정답. treatments와 remedies는 '치료(법)'라 열과 기침을 예로 들 수 없다."
+  }
+ },
+ {
+  "w": "diagnose",
+  "pos": "v",
+  "m": [
+   "진단하다",
+   "(문제의) 원인을 밝혀내다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The technician *diagnosed* the problem with the network in less than an hour.",
+  "exKo": "기술자는 한 시간도 안 되어 네트워크 문제의 원인을 밝혀냈다.",
+  "col": [
+   {
+    "e": "be diagnosed with",
+    "k": "~라는 진단을 받다"
+   },
+   {
+    "e": "diagnose A with B",
+    "k": "A를 B로 진단하다"
+   },
+   {
+    "e": "diagnose a problem",
+    "k": "문제의 원인을 밝혀내다"
+   }
+  ],
+  "der": [
+   {
+    "w": "diagnosis",
+    "pos": "n",
+    "m": "진단 (복수 diagnoses)"
+   },
+   {
+    "w": "diagnostic",
+    "pos": "adj",
+    "m": "진단의"
+   }
+  ],
+  "para": [
+   "identify"
+  ],
+  "ant": "",
+  "tip": "be diagnosed with(~라는 진단을 받다)의 전치사 with가 출제 포인트다. 명사 diagnosis와 형용사 diagnostic(diagnostic test 진단 검사)도 품사 문제로 나온다.",
+  "q": {
+   "s": "Our technicians can ------- most software problems remotely within minutes.",
+   "o": [
+    "diagnose",
+    "diagnosis",
+    "diagnostic",
+    "diagnosed"
+   ],
+   "a": 0,
+   "k": "조동사 can 뒤에는 동사원형이 와야 하므로 diagnose가 정답. diagnosis는 명사, diagnostic은 형용사라 동사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "checkup",
+  "pos": "n",
+  "m": [
+   "건강 검진",
+   "점검"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4
+  ],
+  "ex": "Ms. Chen has a dental *checkup* scheduled for Thursday morning.",
+  "exKo": "첸 씨는 목요일 오전에 치과 검진이 예정되어 있다.",
+  "col": [
+   {
+    "e": "an annual checkup",
+    "k": "연례 건강 검진"
+   },
+   {
+    "e": "a routine checkup",
+    "k": "정기 검진"
+   },
+   {
+    "e": "have a checkup",
+    "k": "검진을 받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "check up on",
+    "pos": "phr",
+    "m": "~을 확인하다, 점검하다"
+   }
+  ],
+  "para": [
+   "examination",
+   "physical"
+  ],
+  "ant": "",
+  "tip": "명사는 checkup 또는 check-up처럼 붙여 쓰거나 하이픈을 넣고, 동사구 check up (on)은 띄어 쓴다. 듣기에서 회의에 빠지는 이유로 '검진 예약'이 자주 등장한다.",
+  "q": {
+   "s": "All employees are required to undergo an annual medical ------- at the company's expense.",
+   "o": [
+    "checkout",
+    "checkup",
+    "check-in",
+    "checkbook"
+   ],
+   "a": 1,
+   "k": "'연례 건강 검진을 받다'라는 의미가 되어야 하므로 checkup이 정답. checkout(계산대, 퇴실), check-in(입실 수속), checkbook(수표책)은 undergo의 목적어로 맞지 않는다."
+  }
+ },
+ {
+  "w": "appointment",
+  "pos": "n",
+  "m": [
+   "(진료·면담) 예약, 약속",
+   "임명"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "Mr. Lopez called to reschedule his *appointment* with Dr. Harris to next week.",
+  "exKo": "로페즈 씨는 해리스 박사와의 진료 예약을 다음 주로 변경하려고 전화했다.",
+  "col": [
+   {
+    "e": "make an appointment",
+    "k": "예약하다"
+   },
+   {
+    "e": "reschedule an appointment",
+    "k": "예약을 변경하다"
+   },
+   {
+    "e": "by appointment only",
+    "k": "예약제로만"
+   }
+  ],
+  "der": [
+   {
+    "w": "appoint",
+    "pos": "v",
+    "m": "임명하다, 지정하다"
+   },
+   {
+    "w": "appointed",
+    "pos": "adj",
+    "m": "지정된"
+   }
+  ],
+  "para": [
+   "booking"
+  ],
+  "ant": "",
+  "tip": "식당·호텔 예약은 reservation, 병원·면담 예약은 appointment로 구분한다. '임명'(the appointment of a new CEO)이라는 뜻도 Part 7 빈출이다.",
+  "q": {
+   "s": "Consultations with our tax advisors are available by ------- only.",
+   "o": [
+    "appoint",
+    "appointee",
+    "appointed",
+    "appointment"
+   ],
+   "a": 3,
+   "k": "전치사 by의 목적어 자리이며 '예약제로만'이라는 의미가 되어야 하므로 appointment가 정답. appointee는 '임명된 사람'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "patient",
+  "pos": "n",
+  "m": [
+   "환자",
+   "(형) 참을성 있는"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The clinic has extended its hours to serve more *patients* in the evening.",
+  "exKo": "그 병원은 저녁에 더 많은 환자를 진료하기 위해 진료 시간을 연장했다.",
+  "col": [
+   {
+    "e": "patient records",
+    "k": "환자 기록"
+   },
+   {
+    "e": "patient care",
+    "k": "환자 관리"
+   },
+   {
+    "e": "be patient with",
+    "k": "~에게 인내심을 갖다"
+   }
+  ],
+  "der": [
+   {
+    "w": "patience",
+    "pos": "n",
+    "m": "인내심"
+   },
+   {
+    "w": "patiently",
+    "pos": "adv",
+    "m": "참을성 있게"
+   },
+   {
+    "w": "outpatient",
+    "pos": "n",
+    "m": "외래 환자"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "명사 '환자'와 형용사 '참을성 있는'의 두 뜻이 모두 출제된다. 안내 방송의 Thank you for being patient.처럼 형용사로도 쓰이며, 명사 patience와의 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "Nurses at Lakeside Hospital are trained to respond quickly to the needs of their -------.",
+   "o": [
+    "patience",
+    "patiently",
+    "patients",
+    "impatient"
+   ],
+   "a": 2,
+   "k": "소유격 their 뒤의 명사 자리이며 간호사가 요구에 응하는 대상은 '환자들'이므로 patients가 정답. patience(인내심)는 명사지만 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "illness",
+  "pos": "n",
+  "m": [
+   "질병, 병"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Mr. Grant missed the board meeting due to a sudden *illness*.",
+  "exKo": "그랜트 씨는 갑작스러운 병으로 이사회 회의에 불참했다.",
+  "col": [
+   {
+    "e": "due to illness",
+    "k": "병으로 인해"
+   },
+   {
+    "e": "a serious illness",
+    "k": "중병"
+   },
+   {
+    "e": "chronic illness",
+    "k": "만성 질환"
+   }
+  ],
+  "der": [
+   {
+    "w": "ill",
+    "pos": "adj",
+    "m": "아픈"
+   }
+  ],
+  "para": [
+   "sickness",
+   "disease"
+  ],
+  "ant": "health",
+  "tip": "illness는 가산·불가산 모두 가능하며, due to illness처럼 결근·일정 변경 사유로 Part 7에 자주 나온다. 형용사 ill은 주로 be동사 뒤(be ill)에 쓴다.",
+  "q": {
+   "s": "Ms. Novak will be absent this week because of a minor -------.",
+   "o": [
+    "ill",
+    "illness",
+    "sickly",
+    "sick"
+   ],
+   "a": 1,
+   "k": "관사 a와 형용사 minor 뒤에는 명사가 와야 하므로 illness가 정답. ill, sickly, sick은 모두 형용사라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "injury",
+  "pos": "n",
+  "m": [
+   "부상"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Workers must report any *injury* to their supervisor immediately.",
+  "exKo": "근로자는 모든 부상을 즉시 상사에게 보고해야 한다.",
+  "col": [
+   {
+    "e": "a work-related injury",
+    "k": "업무상 부상"
+   },
+   {
+    "e": "prevent injuries",
+    "k": "부상을 예방하다"
+   },
+   {
+    "e": "suffer an injury",
+    "k": "부상을 입다"
+   }
+  ],
+  "der": [
+   {
+    "w": "injure",
+    "pos": "v",
+    "m": "부상을 입히다"
+   },
+   {
+    "w": "injured",
+    "pos": "adj",
+    "m": "부상당한"
+   }
+  ],
+  "para": [
+   "harm"
+  ],
+  "ant": "",
+  "tip": "동사 injure는 타동사라서 '다치다'는 be injured로 쓴다. 명사 injury와 형용사 injured의 품사 구분이 자주 출제된다.",
+  "q": {
+   "s": "Wearing protective gloves can greatly reduce the risk of ------- in the warehouse.",
+   "o": [
+    "injury",
+    "injured",
+    "injures",
+    "injure"
+   ],
+   "a": 0,
+   "k": "전치사 of의 목적어인 명사 자리이므로 injury가 정답. the risk of injury는 '부상 위험'이라는 뜻의 빈출 표현이다."
+  }
+ },
+ {
+  "w": "sick leave",
+  "pos": "n",
+  "m": [
+   "병가"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Full-time employees receive ten days of paid *sick leave* each year.",
+  "exKo": "정규직 직원은 매년 10일의 유급 병가를 받는다.",
+  "col": [
+   {
+    "e": "be on sick leave",
+    "k": "병가 중이다"
+   },
+   {
+    "e": "take sick leave",
+    "k": "병가를 내다"
+   },
+   {
+    "e": "paid sick leave",
+    "k": "유급 병가"
+   }
+  ],
+  "der": [],
+  "para": [
+   "medical leave",
+   "sick days"
+  ],
+  "ant": "",
+  "tip": "'병가 중이다'는 be on sick leave로 전치사 on을 쓴다. annual leave(연차), maternity leave(출산 휴가)도 함께 나온다.",
+  "q": {
+   "s": "Mr. Davis is currently on sick ------- and will return to the office next Monday.",
+   "o": [
+    "absence",
+    "holiday",
+    "leave",
+    "break"
+   ],
+   "a": 2,
+   "k": "be on sick leave는 '병가 중이다'라는 고정 표현이므로 leave가 정답. sick absence, sick holiday, sick break는 쓰지 않는 표현이다."
+  }
+ },
+ {
+  "w": "insurance",
+  "pos": "n",
+  "m": [
+   "보험"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The company provides health *insurance* for employees and their families.",
+  "exKo": "회사는 직원과 그 가족에게 건강 보험을 제공한다.",
+  "col": [
+   {
+    "e": "health insurance",
+    "k": "건강 보험"
+   },
+   {
+    "e": "an insurance policy",
+    "k": "보험 증권, 보험 계약"
+   },
+   {
+    "e": "insurance coverage",
+    "k": "보험 보장"
+   }
+  ],
+  "der": [
+   {
+    "w": "insure",
+    "pos": "v",
+    "m": "보험에 들다"
+   },
+   {
+    "w": "insured",
+    "pos": "adj",
+    "m": "보험에 가입된"
+   },
+   {
+    "w": "insurer",
+    "pos": "n",
+    "m": "보험사"
+   }
+  ],
+  "para": [
+   "coverage"
+  ],
+  "ant": "",
+  "tip": "insurance는 불가산명사로 an insurance로 쓰지 않는다. 동사 insure(보험에 들다)와 ensure(보장하다)의 혼동에 주의한다.",
+  "q": {
+   "s": "Before signing the lease, tenants should check whether their ------- policy covers water damage.",
+   "o": [
+    "insure",
+    "insuring",
+    "insurance",
+    "insures"
+   ],
+   "a": 2,
+   "k": "소유격 their와 명사 policy 사이에서 복합명사 insurance policy(보험 계약)를 이루는 자리이므로 insurance가 정답."
+  }
+ },
+ {
+  "w": "coverage",
+  "pos": "n",
+  "m": [
+   "(보험의) 보장 (범위)",
+   "보도, 취재"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Our basic plan offers *coverage* for both hospital stays and outpatient care.",
+  "exKo": "우리 기본 플랜은 입원과 외래 진료를 모두 보장한다.",
+  "col": [
+   {
+    "e": "insurance coverage",
+    "k": "보험 보장"
+   },
+   {
+    "e": "media coverage",
+    "k": "언론 보도"
+   },
+   {
+    "e": "coverage for",
+    "k": "~에 대한 보장"
+   }
+  ],
+  "der": [
+   {
+    "w": "cover",
+    "pos": "v",
+    "m": "보장하다, 다루다, 취재하다"
+   }
+  ],
+  "para": [
+   "protection"
+  ],
+  "ant": "",
+  "tip": "'보험 보장 범위'와 '언론 보도'의 두 뜻이 모두 출제된다. 불가산명사이므로 a coverage로 쓰지 않는다.",
+  "q": {
+   "s": "The product launch received extensive media ------- in both national and local newspapers.",
+   "o": [
+    "cover",
+    "covered",
+    "covers",
+    "coverage"
+   ],
+   "a": 3,
+   "k": "형용사 extensive의 수식을 받는 명사 자리이며 '광범위한 언론 보도'라는 의미이므로 coverage가 정답. media coverage는 고정 표현이다."
+  }
+ },
+ {
+  "w": "premium",
+  "pos": "n",
+  "m": [
+   "보험료",
+   "할증금, 프리미엄",
+   "(형) 고급의"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Monthly *premiums* for the company's health plan will increase slightly next year.",
+  "exKo": "회사 건강 보험의 월 보험료가 내년에 소폭 인상된다.",
+  "col": [
+   {
+    "e": "insurance premium",
+    "k": "보험료"
+   },
+   {
+    "e": "at a premium",
+    "k": "웃돈을 주고, 구하기 힘든"
+   },
+   {
+    "e": "premium service",
+    "k": "고급 서비스"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "",
+  "tip": "보험 지문에서는 '보험료', 상품 지문에서는 형용사 '고급의'(premium quality)로 쓰인다. at a premium은 '웃돈을 주고' 또는 '구하기 힘든'이라는 뜻이다.",
+  "q": {
+   "s": "Employees who enroll in the family plan will pay a higher monthly -------.",
+   "o": [
+    "beneficiary",
+    "premium",
+    "prescription",
+    "coverage"
+   ],
+   "a": 1,
+   "k": "가족 플랜에 가입하면 매달 '내는' 금액이 높아진다는 의미이므로 '보험료'인 premium이 정답. coverage는 '보장', beneficiary는 '수령인'이라 pay의 목적어로 맞지 않는다."
+  }
+ },
+ {
+  "w": "claim",
+  "pos": "n",
+  "m": [
+   "(보험금 등의) 청구",
+   "주장",
+   "(동) 청구하다, 주장하다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Customers must file a *claim* within 30 days of the incident.",
+  "exKo": "고객은 사고 발생 후 30일 이내에 청구를 접수해야 한다.",
+  "col": [
+   {
+    "e": "file a claim",
+    "k": "청구하다"
+   },
+   {
+    "e": "an insurance claim",
+    "k": "보험금 청구"
+   },
+   {
+    "e": "baggage claim",
+    "k": "수하물 찾는 곳"
+   }
+  ],
+  "der": [
+   {
+    "w": "claimant",
+    "pos": "n",
+    "m": "청구인"
+   }
+  ],
+  "para": [
+   "request"
+  ],
+  "ant": "",
+  "tip": "file[submit] a claim(청구하다)이 빈출이며, 공항의 baggage claim(수하물 찾는 곳)은 듣기에 자주 나온다. 동사로는 '(권리를) 요구하다, 주장하다'라는 뜻이다.",
+  "q": {
+   "s": "To receive reimbursement, policyholders must submit a ------- form along with the original receipts.",
+   "o": [
+    "premium",
+    "symptom",
+    "beneficiary",
+    "claim"
+   ],
+   "a": 3,
+   "k": "환급을 받기 위해 영수증과 함께 제출하는 것은 '청구서'이므로 claim이 정답. claim form은 '청구서 양식'이라는 뜻이다."
+  }
+ },
+ {
+  "w": "deductible",
+  "pos": "n",
+  "m": [
+   "(보험의) 자기 부담금, 공제액",
+   "(형) 공제 가능한"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The plan has a low annual *deductible*, so patients pay less out of pocket.",
+  "exKo": "그 보험은 연간 자기 부담금이 낮아서 환자가 직접 내는 돈이 적다.",
+  "col": [
+   {
+    "e": "an annual deductible",
+    "k": "연간 자기 부담금"
+   },
+   {
+    "e": "tax-deductible",
+    "k": "세금 공제가 되는"
+   },
+   {
+    "e": "meet the deductible",
+    "k": "자기 부담금 한도를 채우다"
+   }
+  ],
+  "der": [
+   {
+    "w": "deduct",
+    "pos": "v",
+    "m": "공제하다, 빼다"
+   },
+   {
+    "w": "deduction",
+    "pos": "n",
+    "m": "공제(액)"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "보험에서는 명사로 '자기 부담금'이고, 형용사 tax-deductible은 '세금 공제가 되는'이라는 뜻으로 기부·경비 관련 지문에 나온다. 동사 deduct, 명사 deduction과의 품사 구분도 출제된다.",
+  "q": {
+   "s": "Business travel expenses may be ------- if they are properly documented.",
+   "o": [
+    "deduction",
+    "deductible",
+    "deducting",
+    "deduct"
+   ],
+   "a": 1,
+   "k": "be동사 뒤 보어 자리에 '공제 가능한'이라는 형용사가 와야 하므로 deductible이 정답. deducting은 능동이라 '경비가 공제한다'는 뜻이 되어 틀리고, deduction은 주어와 동격이 될 수 없다."
+  }
+ },
+ {
+  "w": "beneficiary",
+  "pos": "n",
+  "m": [
+   "수혜자",
+   "(보험금) 수령인"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Employees may name a family member as the *beneficiary* of their life insurance policy.",
+  "exKo": "직원은 생명 보험의 수령인으로 가족 한 명을 지정할 수 있다.",
+  "col": [
+   {
+    "e": "name a beneficiary",
+    "k": "수령인을 지정하다"
+   },
+   {
+    "e": "the primary beneficiary",
+    "k": "제1 수익자"
+   },
+   {
+    "e": "the main beneficiary of",
+    "k": "~의 주된 수혜자"
+   }
+  ],
+  "der": [
+   {
+    "w": "benefit",
+    "pos": "n",
+    "m": "혜택, 이익"
+   },
+   {
+    "w": "beneficial",
+    "pos": "adj",
+    "m": "유익한"
+   }
+  ],
+  "para": [
+   "recipient"
+  ],
+  "ant": "",
+  "tip": "사람명사 beneficiary와 형용사 beneficial(유익한)을 구분하는 품사 문제가 나온다. 보험 외에 기사에서 '~의 최대 수혜자'라는 뜻으로도 쓰인다.",
+  "q": {
+   "s": "Small businesses will be the main ------- of the city's new tax reduction program.",
+   "o": [
+    "beneficiaries",
+    "beneficially",
+    "beneficial",
+    "benefited"
+   ],
+   "a": 0,
+   "k": "관사 the와 형용사 main 뒤의 명사 자리이며 주어 Small businesses와 동격이므로 복수 사람명사 beneficiaries가 정답."
+  }
+ },
+ {
+  "w": "nutrition",
+  "pos": "n",
+  "m": [
+   "영양",
+   "영양 섭취"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The seminar will focus on *nutrition* and healthy eating habits for office workers.",
+  "exKo": "그 세미나는 사무직 근로자를 위한 영양과 건강한 식습관에 초점을 맞출 것이다.",
+  "col": [
+   {
+    "e": "proper nutrition",
+    "k": "적절한 영양 섭취"
+   },
+   {
+    "e": "a nutrition label",
+    "k": "영양 성분 표시"
+   },
+   {
+    "e": "nutrition facts",
+    "k": "영양 정보"
+   }
+  ],
+  "der": [
+   {
+    "w": "nutritious",
+    "pos": "adj",
+    "m": "영양가 높은"
+   },
+   {
+    "w": "nutritional",
+    "pos": "adj",
+    "m": "영양상의"
+   },
+   {
+    "w": "nutritionist",
+    "pos": "n",
+    "m": "영양사"
+   }
+  ],
+  "para": [
+   "diet"
+  ],
+  "ant": "",
+  "tip": "불가산명사 nutrition, 형용사 nutritious(영양가 높은)와 nutritional(영양상의), 사람명사 nutritionist의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Good ------- is essential for maintaining high energy levels throughout the workday.",
+   "o": [
+    "nutritious",
+    "nutritional",
+    "nutritionally",
+    "nutrition"
+   ],
+   "a": 3,
+   "k": "형용사 Good의 수식을 받는 주어 자리이므로 명사 nutrition이 정답. nutritious와 nutritional은 형용사라 주어가 될 수 없다."
+  }
+ },
+ {
+  "w": "nutritious",
+  "pos": "adj",
+  "m": [
+   "영양가 높은"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The cafeteria now serves more *nutritious* meals at affordable prices.",
+  "exKo": "구내식당은 이제 저렴한 가격에 더 영양가 높은 식사를 제공한다.",
+  "col": [
+   {
+    "e": "nutritious meals",
+    "k": "영양가 높은 식사"
+   },
+   {
+    "e": "nutritious food",
+    "k": "영양가 높은 음식"
+   },
+   {
+    "e": "healthy and nutritious",
+    "k": "건강하고 영양가 높은"
+   }
+  ],
+  "der": [
+   {
+    "w": "nutrition",
+    "pos": "n",
+    "m": "영양"
+   },
+   {
+    "w": "nutrient",
+    "pos": "n",
+    "m": "영양소"
+   }
+  ],
+  "para": [
+   "healthy",
+   "wholesome"
+  ],
+  "ant": "",
+  "tip": "nutritious는 '영양가가 높은'(음식의 성질), nutritional은 '영양에 관한'(nutritional information)으로 의미가 다르다.",
+  "q": {
+   "s": "The school's lunch program provides students with balanced and ------- meals.",
+   "o": [
+    "nutrition",
+    "nutritious",
+    "nutritionist",
+    "nutritionally"
+   ],
+   "a": 1,
+   "k": "and 앞의 형용사 balanced와 병렬을 이루어 명사 meals를 수식하는 형용사 자리이므로 nutritious가 정답."
+  }
+ },
+ {
+  "w": "fitness",
+  "pos": "n",
+  "m": [
+   "신체 단련, 건강",
+   "적합성"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4,
+   7
+  ],
+  "ex": "The hotel's *fitness* center is available to guests 24 hours a day.",
+  "exKo": "그 호텔의 피트니스 센터는 투숙객이 24시간 이용할 수 있다.",
+  "col": [
+   {
+    "e": "a fitness center",
+    "k": "헬스장, 피트니스 센터"
+   },
+   {
+    "e": "a fitness program",
+    "k": "운동 프로그램"
+   },
+   {
+    "e": "physical fitness",
+    "k": "체력"
+   }
+  ],
+  "der": [
+   {
+    "w": "fit",
+    "pos": "adj",
+    "m": "건강한, 적합한"
+   }
+  ],
+  "para": [
+   "exercise"
+  ],
+  "ant": "",
+  "tip": "fitness center(헬스장)는 호텔 편의시설 관련 듣기·Part 7 지문의 단골이며 gym으로 바꿔 표현된다.",
+  "q": {
+   "s": "Membership to the new ------- center includes free access to group yoga classes.",
+   "o": [
+    "fitted",
+    "fit",
+    "fitting",
+    "fitness"
+   ],
+   "a": 3,
+   "k": "요가 수업이 포함된 시설이므로 '헬스장'을 뜻하는 복합명사 fitness center가 되어야 한다. fitting은 '적절한; 가봉'이라 center와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "wellness",
+  "pos": "n",
+  "m": [
+   "건강, 웰빙"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The company launched a *wellness* program to help employees manage stress.",
+  "exKo": "회사는 직원들의 스트레스 관리를 돕기 위해 건강 증진 프로그램을 시작했다.",
+  "col": [
+   {
+    "e": "a wellness program",
+    "k": "건강 증진 프로그램"
+   },
+   {
+    "e": "employee wellness",
+    "k": "직원 건강"
+   },
+   {
+    "e": "a wellness center",
+    "k": "웰니스 센터"
+   }
+  ],
+  "der": [
+   {
+    "w": "well",
+    "pos": "adj",
+    "m": "건강한"
+   }
+  ],
+  "para": [
+   "well-being",
+   "health"
+  ],
+  "ant": "illness",
+  "tip": "wellness program은 회사 복지 관련 Part 7 지문에 자주 나오며 well-being으로 바꿔 표현된다.",
+  "q": {
+   "s": "As part of its employee ------- initiative, the firm offers free health screenings every spring.",
+   "o": [
+    "shipment",
+    "warranty",
+    "inventory",
+    "wellness"
+   ],
+   "a": 3,
+   "k": "무료 건강 검진을 제공하는 계획이므로 '직원 건강 증진'을 뜻하는 wellness가 정답. shipment(배송), inventory(재고), warranty(보증)는 문맥과 무관하다."
+  }
+ },
+ {
+  "w": "relieve",
+  "pos": "v",
+  "m": [
+   "(고통·부담을) 완화하다, 덜어 주다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "This cream can *relieve* minor muscle pain within minutes.",
+  "exKo": "이 크림은 가벼운 근육통을 몇 분 만에 완화할 수 있다.",
+  "col": [
+   {
+    "e": "relieve pain",
+    "k": "통증을 완화하다"
+   },
+   {
+    "e": "relieve stress",
+    "k": "스트레스를 해소하다"
+   },
+   {
+    "e": "relieve congestion",
+    "k": "혼잡을 완화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "relief",
+    "pos": "n",
+    "m": "완화, 안도"
+   },
+   {
+    "w": "relieved",
+    "pos": "adj",
+    "m": "안도한"
+   }
+  ],
+  "para": [
+   "ease",
+   "alleviate"
+  ],
+  "ant": "worsen",
+  "tip": "동사 relieve와 명사 relief(pain relief 통증 완화)의 품사 구분이 출제된다. be relieved of one's duties는 '직무에서 해임되다'라는 뜻이다.",
+  "q": {
+   "s": "The city plans to widen Route 9 to ------- traffic congestion during rush hour.",
+   "o": [
+    "relieve",
+    "relieving",
+    "relief",
+    "relieved"
+   ],
+   "a": 0,
+   "k": "to부정사의 to 뒤에는 동사원형이 와야 하므로 relieve가 정답. 명사 relief는 traffic congestion을 목적어로 취할 수 없다."
+  }
+ },
+ {
+  "w": "allergy",
+  "pos": "n",
+  "m": [
+   "알레르기"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Guests with food *allergies* should notify the catering staff in advance.",
+  "exKo": "음식 알레르기가 있는 손님은 출장 요리 직원에게 미리 알려야 한다.",
+  "col": [
+   {
+    "e": "a food allergy",
+    "k": "음식 알레르기"
+   },
+   {
+    "e": "have an allergy to",
+    "k": "~에 알레르기가 있다"
+   },
+   {
+    "e": "seasonal allergies",
+    "k": "계절성 알레르기"
+   }
+  ],
+  "der": [
+   {
+    "w": "allergic",
+    "pos": "adj",
+    "m": "알레르기가 있는"
+   }
+  ],
+  "para": [
+   "sensitivity"
+  ],
+  "ant": "",
+  "tip": "allergy to와 allergic to 모두 전치사 to를 쓴다. 명사 allergy와 형용사 allergic의 품사 구분이 출제된다.",
+  "q": {
+   "s": "Guests are asked to let the hotel staff know in advance if they have any food -------.",
+   "o": [
+    "allergic",
+    "allergically",
+    "allergies",
+    "allergist"
+   ],
+   "a": 2,
+   "k": "have의 목적어이자 food의 수식을 받는 명사 자리이므로 allergies가 정답. allergist는 '알레르기 전문의'라 의미가 맞지 않고, allergic은 형용사다."
+  }
+ },
+ {
+  "w": "emergency",
+  "pos": "n",
+  "m": [
+   "비상(사태)",
+   "응급 상황"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "In case of an *emergency*, employees should use the stairs instead of the elevators.",
+  "exKo": "비상시에 직원들은 엘리베이터 대신 계단을 이용해야 한다.",
+  "col": [
+   {
+    "e": "in case of emergency",
+    "k": "비상시에"
+   },
+   {
+    "e": "an emergency contact",
+    "k": "비상 연락처"
+   },
+   {
+    "e": "the emergency room",
+    "k": "응급실"
+   }
+  ],
+  "der": [],
+  "para": [
+   "crisis"
+  ],
+  "ant": "",
+  "tip": "in case of (an) emergency, emergency exit(비상구), emergency contact(비상 연락처)처럼 명사 앞에서 다른 명사를 수식하는 형태로 자주 쓰인다.",
+  "q": {
+   "s": "Please list the name and phone number of an ------- contact on the enrollment form.",
+   "o": [
+    "emerge",
+    "emergency",
+    "emergent",
+    "emergence"
+   ],
+   "a": 1,
+   "k": "contact와 함께 '비상 연락처'라는 복합명사를 이루는 emergency가 정답. emergence는 '출현', emergent는 '신생의'라는 뜻이라 contact와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "first aid",
+  "pos": "n",
+  "m": [
+   "응급 처치"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "All lifeguards at the resort are trained in *first aid* and CPR.",
+  "exKo": "리조트의 모든 인명 구조원은 응급 처치와 심폐소생술 교육을 받았다.",
+  "col": [
+   {
+    "e": "a first aid kit",
+    "k": "구급상자"
+   },
+   {
+    "e": "first aid training",
+    "k": "응급 처치 교육"
+   },
+   {
+    "e": "give first aid",
+    "k": "응급 처치를 하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "emergency care"
+  ],
+  "ant": "",
+  "tip": "first aid kit(구급상자)는 사진 묘사와 안전 공지에 나오는 빈출 표현이다. first aid는 불가산명사이므로 a first aid로 쓰지 않는다.",
+  "q": {
+   "s": "A ------- kit is located in the break room next to the coffee machine.",
+   "o": [
+    "first class",
+    "first floor",
+    "first draft",
+    "first aid"
+   ],
+   "a": 3,
+   "k": "kit와 결합해 '구급상자'를 뜻하는 first aid kit가 정답. first class(일등석), first draft(초안), first floor(1층)는 kit와 결합하지 않는다."
+  }
+ },
+ {
+  "w": "consultation",
+  "pos": "n",
+  "m": [
+   "상담, 진찰",
+   "협의"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The firm offers a free initial *consultation* to all new clients.",
+  "exKo": "그 회사는 모든 신규 고객에게 첫 상담을 무료로 제공한다.",
+  "col": [
+   {
+    "e": "a free consultation",
+    "k": "무료 상담"
+   },
+   {
+    "e": "in consultation with",
+    "k": "~와 협의하여"
+   },
+   {
+    "e": "schedule a consultation",
+    "k": "상담 일정을 잡다"
+   }
+  ],
+  "der": [
+   {
+    "w": "consult",
+    "pos": "v",
+    "m": "상담하다, 참고하다"
+   },
+   {
+    "w": "consultant",
+    "pos": "n",
+    "m": "컨설턴트, 상담가"
+   }
+  ],
+  "para": [
+   "meeting",
+   "advice"
+  ],
+  "ant": "",
+  "tip": "in consultation with(~와 협의하여)가 숙어로 나오고, 사람명사 consultant와 행위명사 consultation을 구분하는 문제가 출제된다.",
+  "q": {
+   "s": "The new layout was designed in close ------- with the hospital's nursing staff.",
+   "o": [
+    "consultant",
+    "consult",
+    "consulted",
+    "consultation"
+   ],
+   "a": 3,
+   "k": "in consultation with(~와 협의하여)의 숙어 구조이며 형용사 close의 수식을 받는 명사 자리이므로 consultation이 정답. consultant는 사람명사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "specialist",
+  "pos": "n",
+  "m": [
+   "전문가",
+   "전문의"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Dr. Moore is a *specialist* in sports medicine with over 20 years of experience.",
+  "exKo": "무어 박사는 20년 이상의 경력을 지닌 스포츠 의학 전문의이다.",
+  "col": [
+   {
+    "e": "a specialist in",
+    "k": "~ 분야의 전문가"
+   },
+   {
+    "e": "an IT specialist",
+    "k": "IT 전문가"
+   },
+   {
+    "e": "see a specialist",
+    "k": "전문의의 진찰을 받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "specialize",
+    "pos": "v",
+    "m": "전문으로 하다"
+   },
+   {
+    "w": "specialized",
+    "pos": "adj",
+    "m": "전문화된"
+   },
+   {
+    "w": "specialty",
+    "pos": "n",
+    "m": "전문 분야, 특산품"
+   }
+  ],
+  "para": [
+   "expert"
+  ],
+  "ant": "generalist",
+  "tip": "specialist in(~ 분야의 전문가)과 specialize in(~을 전문으로 하다) 모두 전치사 in을 쓴다. 사람명사 specialist와 동사 specialize의 품사 문제가 빈출이다.",
+  "q": {
+   "s": "Mr. Reyes was hired as a marketing ------- to help the company expand overseas.",
+   "o": [
+    "specialize",
+    "specialty",
+    "specialist",
+    "specialized"
+   ],
+   "a": 2,
+   "k": "'~로서 채용되다(be hired as a ~)' 뒤에는 사람명사가 와야 하므로 specialist가 정답. specialty는 '전문 분야'라 사람을 가리킬 수 없다."
+  }
+ },
+ {
+  "w": "referral",
+  "pos": "n",
+  "m": [
+   "소개, 추천",
+   "(전문의에게 보내는) 진료 의뢰(서)"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Most new clients come to us through *referrals* from satisfied customers.",
+  "exKo": "대부분의 신규 고객은 만족한 고객의 소개를 통해 우리를 찾아온다.",
+  "col": [
+   {
+    "e": "a referral from",
+    "k": "~의 소개[의뢰]"
+   },
+   {
+    "e": "a referral program",
+    "k": "추천 프로그램"
+   },
+   {
+    "e": "a referral to a specialist",
+    "k": "전문의 진료 의뢰서"
+   }
+  ],
+  "der": [
+   {
+    "w": "refer",
+    "pos": "v",
+    "m": "소개하다, 참조하다, 언급하다"
+   },
+   {
+    "w": "reference",
+    "pos": "n",
+    "m": "참고, 추천서"
+   }
+  ],
+  "para": [
+   "recommendation"
+  ],
+  "ant": "",
+  "tip": "병원 맥락에서는 '(전문의에게 보내는) 진료 의뢰서', 회사 맥락에서는 '추천, 소개'를 뜻한다. 동사 refer A to B(A를 B에게 보내다)의 전치사 to도 출제된다.",
+  "q": {
+   "s": "Patients need a ------- from their primary doctor before they can see a specialist.",
+   "o": [
+    "refer",
+    "referred",
+    "referral",
+    "referring"
+   ],
+   "a": 2,
+   "k": "관사 a 뒤의 명사 자리이며 '주치의의 진료 의뢰서'라는 의미이므로 referral이 정답. refer는 동사, referred와 referring은 분사라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "hygiene",
+  "pos": "n",
+  "m": [
+   "위생"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Kitchen staff must follow strict *hygiene* standards at all times.",
+  "exKo": "주방 직원은 항상 엄격한 위생 기준을 따라야 한다.",
+  "col": [
+   {
+    "e": "personal hygiene",
+    "k": "개인 위생"
+   },
+   {
+    "e": "food hygiene",
+    "k": "식품 위생"
+   },
+   {
+    "e": "hygiene standards",
+    "k": "위생 기준"
+   }
+  ],
+  "der": [
+   {
+    "w": "hygienic",
+    "pos": "adj",
+    "m": "위생적인"
+   },
+   {
+    "w": "hygienist",
+    "pos": "n",
+    "m": "위생사, 치위생사"
+   }
+  ],
+  "para": [
+   "sanitation",
+   "cleanliness"
+  ],
+  "ant": "",
+  "tip": "불가산명사이며 형용사 hygienic(위생적인)과의 품사 구분이 출제된다. dental hygienist(치위생사)도 듣기에 등장한다.",
+  "q": {
+   "s": "Restaurant inspectors evaluate food storage, cleanliness, and the personal ------- of employees.",
+   "o": [
+    "hygienic",
+    "hygienist",
+    "hygienically",
+    "hygiene"
+   ],
+   "a": 3,
+   "k": "형용사 personal의 수식을 받는 명사 자리이며 '직원의 개인 위생'이라는 의미이므로 hygiene이 정답. hygienist는 사람명사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "fill a prescription",
+  "pos": "phr",
+  "m": [
+   "처방전대로 약을 조제하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4
+  ],
+  "ex": "The pharmacy down the street can *fill* your *prescription* in about 20 minutes.",
+  "exKo": "길을 따라 조금 가면 있는 약국에서 약 20분 만에 처방약을 조제해 준다.",
+  "col": [
+   {
+    "e": "have a prescription filled",
+    "k": "처방약을 조제받다"
+   },
+   {
+    "e": "fill a prescription at",
+    "k": "~에서 처방약을 조제하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "dispense medication"
+  ],
+  "ant": "",
+  "tip": "fill은 '(주문·처방을) 이행하다'라는 뜻으로 fill an order(주문을 처리하다)와 같은 용법이다. 환자 입장에서는 have[get] a prescription filled 형태로 쓴다.",
+  "q": {
+   "s": "Customers can have their prescriptions ------- at any of our 200 locations nationwide.",
+   "o": [
+    "filled",
+    "filling",
+    "fill",
+    "fills"
+   ],
+   "a": 0,
+   "k": "사역동사 have + 목적어 + 과거분사 구조로 '처방약이 조제되게 하다'라는 수동의 의미이므로 filled가 정답."
+  }
+ },
+ {
+  "w": "side effect",
+  "pos": "n",
+  "m": [
+   "부작용"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Drowsiness is a common *side effect* of this allergy medication.",
+  "exKo": "졸음은 이 알레르기 약의 흔한 부작용이다.",
+  "col": [
+   {
+    "e": "possible side effects",
+    "k": "발생 가능한 부작용"
+   },
+   {
+    "e": "side effects of",
+    "k": "~의 부작용"
+   },
+   {
+    "e": "cause side effects",
+    "k": "부작용을 일으키다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "adverse reaction"
+  ],
+  "ant": "",
+  "tip": "약뿐 아니라 정책·변화의 '부작용'에도 쓰이며 전치사 of와 짝을 이룬다. 명사 effect와 동사 affect를 혼동하게 하는 보기에 주의한다.",
+  "q": {
+   "s": "Patients should report any unusual side ------- to their doctor immediately.",
+   "o": [
+    "effects",
+    "effective",
+    "affects",
+    "effectively"
+   ],
+   "a": 0,
+   "k": "형용사 unusual의 수식을 받고 report의 목적어가 되는 명사 자리이므로 side effects가 정답. affects는 동사 affect의 3인칭 단수형이라 명사 자리에 올 수 없다."
+  }
+ }
+]

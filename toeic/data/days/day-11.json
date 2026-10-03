@@ -1,0 +1,2100 @@
+[
+ {
+  "w": "budget",
+  "pos": "n",
+  "m": [
+   "예산",
+   "예산안"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The marketing team has already spent most of its *budget* for this quarter.",
+  "exKo": "마케팅팀은 이번 분기 예산의 대부분을 이미 썼다.",
+  "col": [
+   {
+    "e": "within budget",
+    "k": "예산 범위 내에서"
+   },
+   {
+    "e": "over budget",
+    "k": "예산을 초과한"
+   },
+   {
+    "e": "tight budget",
+    "k": "빠듯한 예산"
+   }
+  ],
+  "der": [
+   {
+    "w": "budgetary",
+    "pos": "adj",
+    "m": "예산의"
+   }
+  ],
+  "para": [
+   "funds",
+   "allocation"
+  ],
+  "ant": "",
+  "tip": "'within/under budget(예산 내에서)', 'over budget(예산 초과)'의 전치사 표현이 핵심이다. 형용사처럼 'budget hotel(저렴한 호텔)'로 쓰면 '저가의'라는 뜻이 된다.",
+  "q": {
+   "s": "The project was completed on time and slightly under -------.",
+   "o": [
+    "balance",
+    "budget",
+    "account",
+    "charge"
+   ],
+   "a": 1,
+   "k": "'예산보다 약간 적게 들여' 완료했다는 뜻의 under budget이 정답. under charge, under account, under balance는 쓰지 않는 표현이다."
+  }
+ },
+ {
+  "w": "allocate",
+  "pos": "v",
+  "m": [
+   "할당하다",
+   "배분하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The board *allocated* an additional $50,000 to the employee training program.",
+  "exKo": "이사회는 직원 교육 프로그램에 5만 달러를 추가로 배정했다.",
+  "col": [
+   {
+    "e": "allocate A to B",
+    "k": "A를 B에 할당하다"
+   },
+   {
+    "e": "allocate funds",
+    "k": "자금을 배정하다"
+   },
+   {
+    "e": "allocate resources",
+    "k": "자원을 배분하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "allocation",
+    "pos": "n",
+    "m": "할당(량), 배분"
+   }
+  ],
+  "para": [
+   "assign",
+   "set aside",
+   "designate"
+  ],
+  "ant": "",
+  "tip": "'allocate A to/for B(A를 B에 배정하다)' 구조로 쓰며 수동태 'be allocated to'도 자주 나온다. 명사 allocation과의 품사 구분도 출제된다.",
+  "q": {
+   "s": "Each department head must decide how to ------- the remaining funds before the end of the year.",
+   "o": [
+    "allocation",
+    "allocated",
+    "allocator",
+    "allocate"
+   ],
+   "a": 3,
+   "k": "'how to + 동사원형' 구조이므로 allocate가 정답. allocation, allocator는 명사, allocated는 과거(분사)형이라 to 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "expense",
+  "pos": "n",
+  "m": [
+   "비용",
+   "경비"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Employees can claim travel *expenses* by submitting receipts to the finance office.",
+  "exKo": "직원들은 재무팀에 영수증을 제출해 출장 경비를 청구할 수 있다.",
+  "col": [
+   {
+    "e": "travel expenses",
+    "k": "출장 경비"
+   },
+   {
+    "e": "at one's own expense",
+    "k": "자비로"
+   },
+   {
+    "e": "expense report",
+    "k": "경비 보고서"
+   }
+  ],
+  "der": [
+   {
+    "w": "expensive",
+    "pos": "adj",
+    "m": "비싼"
+   },
+   {
+    "w": "expend",
+    "pos": "v",
+    "m": "(돈, 시간을) 쓰다"
+   }
+  ],
+  "para": [
+   "cost",
+   "expenditure",
+   "charge"
+  ],
+  "ant": "",
+  "tip": "'at no extra expense(추가 비용 없이)', 'at the expense of(~의 비용으로, ~을 희생하여)'처럼 전치사 at과 쓰는 표현이 출제된다. 경비 항목을 말할 때는 주로 복수형 expenses로 쓴다.",
+  "q": {
+   "s": "All meals during the conference will be provided at no additional ------- to participants.",
+   "o": [
+    "expensive",
+    "expend",
+    "expense",
+    "expensively"
+   ],
+   "a": 2,
+   "k": "형용사 additional의 수식을 받는 명사 자리이므로 expense가 정답. 'at no additional expense'는 '추가 비용 없이'라는 뜻이다. expensive는 형용사, expend는 동사다."
+  }
+ },
+ {
+  "w": "expenditure",
+  "pos": "n",
+  "m": [
+   "지출",
+   "비용"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The city reduced its *expenditure* on road maintenance by nearly 20 percent.",
+  "exKo": "시는 도로 보수 지출을 20퍼센트 가까이 줄였다.",
+  "col": [
+   {
+    "e": "expenditure on",
+    "k": "~에 대한 지출"
+   },
+   {
+    "e": "capital expenditure",
+    "k": "자본 지출"
+   },
+   {
+    "e": "public expenditure",
+    "k": "공공 지출"
+   }
+  ],
+  "der": [
+   {
+    "w": "expend",
+    "pos": "v",
+    "m": "(돈, 시간을) 쓰다"
+   }
+  ],
+  "para": [
+   "spending",
+   "outlay",
+   "costs"
+  ],
+  "ant": "",
+  "tip": "'expenditure on + 대상'처럼 전치사 on과 함께 쓰며 Part 7에서 spending으로 패러프레이징된다. expense보다 격식 있는 말로 조직, 정부의 총지출을 말할 때 주로 쓴다.",
+  "q": {
+   "s": "Hamilton Logistics plans to cut its ------- on office supplies by switching to digital records.",
+   "o": [
+    "expenditure",
+    "revenue",
+    "earnings",
+    "profit"
+   ],
+   "a": 0,
+   "k": "디지털 기록으로 전환해 사무용품에 대한 '지출'을 줄인다는 뜻이므로 expenditure가 정답. revenue(매출), earnings(수익), profit(이익)은 회사가 줄이려는 대상이 아니며 on office supplies와도 맞지 않는다."
+  }
+ },
+ {
+  "w": "cut costs",
+  "pos": "phr",
+  "m": [
+   "비용을 절감하다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The company *cut costs* by moving its customer service center to a smaller building.",
+  "exKo": "그 회사는 고객 서비스 센터를 더 작은 건물로 옮겨 비용을 절감했다.",
+  "col": [
+   {
+    "e": "cut costs significantly",
+    "k": "비용을 크게 절감하다"
+   },
+   {
+    "e": "cost-cutting measures",
+    "k": "비용 절감 조치"
+   }
+  ],
+  "der": [
+   {
+    "w": "cost-cutting",
+    "pos": "adj",
+    "m": "비용 절감의"
+   }
+  ],
+  "para": [
+   "reduce expenses",
+   "save money",
+   "lower costs"
+  ],
+  "ant": "",
+  "tip": "cut은 과거형과 과거분사도 cut이라 시제 판단에 주의해야 한다. 'cost-cutting measures(비용 절감 조치)'라는 복합 형용사도 Part 7에 자주 나온다.",
+  "q": {
+   "s": "To ------- costs, the firm has started holding most of its meetings online.",
+   "o": [
+    "pay",
+    "cut",
+    "spend",
+    "raise"
+   ],
+   "a": 1,
+   "k": "회의를 온라인으로 하는 목적은 '비용을 절감하기' 위해서이므로 cut이 정답. raise costs(비용을 올리다)는 목적과 반대이고, pay와 spend는 costs와 결합해 이 문맥의 목적을 나타내지 못한다."
+  }
+ },
+ {
+  "w": "reduction",
+  "pos": "n",
+  "m": [
+   "감소",
+   "삭감",
+   "할인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new lighting system led to a 30 percent *reduction* in electricity use.",
+  "exKo": "새 조명 시스템 덕분에 전기 사용량이 30퍼센트 감소했다.",
+  "col": [
+   {
+    "e": "a reduction in",
+    "k": "~의 감소"
+   },
+   {
+    "e": "price reduction",
+    "k": "가격 인하"
+   },
+   {
+    "e": "cost reduction",
+    "k": "비용 절감"
+   }
+  ],
+  "der": [
+   {
+    "w": "reduce",
+    "pos": "v",
+    "m": "줄이다, 낮추다"
+   },
+   {
+    "w": "reduced",
+    "pos": "adj",
+    "m": "할인된, 줄어든"
+   }
+  ],
+  "para": [
+   "decrease",
+   "cut",
+   "drop"
+  ],
+  "ant": "increase",
+  "tip": "'a reduction in + 대상'처럼 전치사 in과 함께 쓰는 것이 핵심이다. 동사 reduce, 형용사 reduced와의 품사 구분 문제도 자주 나온다.",
+  "q": {
+   "s": "Customers who renew their memberships early will receive a 15 percent ------- in the annual fee.",
+   "o": [
+    "reduce",
+    "reduced",
+    "reducing",
+    "reduction"
+   ],
+   "a": 3,
+   "k": "관사 a와 수식어 15 percent 뒤의 명사 자리이므로 reduction이 정답. reduce는 동사, reduced와 reducing은 분사라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "funding",
+  "pos": "n",
+  "m": [
+   "자금 (지원)",
+   "재정 지원"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The research center received government *funding* to study renewable energy.",
+  "exKo": "그 연구 센터는 재생 에너지 연구를 위해 정부 자금을 지원받았다.",
+  "col": [
+   {
+    "e": "secure funding",
+    "k": "자금을 확보하다"
+   },
+   {
+    "e": "funding for",
+    "k": "~을 위한 자금"
+   },
+   {
+    "e": "government funding",
+    "k": "정부 지원금"
+   }
+  ],
+  "der": [
+   {
+    "w": "fund",
+    "pos": "v",
+    "m": "자금을 대다"
+   }
+  ],
+  "para": [
+   "financial support",
+   "financing",
+   "money"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 a funding, fundings로 쓰지 않는다. 'secure/obtain funding(자금을 확보하다)', 'funding for + 대상'이 자주 나온다.",
+  "q": {
+   "s": "The museum was able to expand its children's programs thanks to additional ------- from a local foundation.",
+   "o": [
+    "funding",
+    "enrollment",
+    "admission",
+    "attendance"
+   ],
+   "a": 0,
+   "k": "지역 재단으로부터 받은 추가 '자금' 덕분에 프로그램을 확대했다는 뜻이므로 funding이 정답. enrollment(등록), admission(입장), attendance(참석)는 재단에서 받는 것이 아니다."
+  }
+ },
+ {
+  "w": "financial",
+  "pos": "adj",
+  "m": [
+   "재정의",
+   "금융의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our *financial* advisor recommended reducing the company's debt before expanding.",
+  "exKo": "우리 재무 고문은 사업을 확장하기 전에 회사 부채를 줄이라고 권고했다.",
+  "col": [
+   {
+    "e": "financial advisor",
+    "k": "재무 고문"
+   },
+   {
+    "e": "financial difficulties",
+    "k": "재정난"
+   },
+   {
+    "e": "financial institution",
+    "k": "금융 기관"
+   }
+  ],
+  "der": [
+   {
+    "w": "finance",
+    "pos": "n",
+    "m": "재정, 재무"
+   },
+   {
+    "w": "financially",
+    "pos": "adv",
+    "m": "재정적으로"
+   }
+  ],
+  "para": [
+   "monetary",
+   "fiscal"
+  ],
+  "ant": "",
+  "tip": "명사 finance(재무), 부사 financially(재정적으로)와의 품사 구분이 단골이다. 'financial statement(재무제표)', 'financial institution(금융 기관)'도 알아두자.",
+  "q": {
+   "s": "The charity has struggled with ------- difficulties since its largest donor withdrew support.",
+   "o": [
+    "financially",
+    "financial",
+    "finance",
+    "financed"
+   ],
+   "a": 1,
+   "k": "명사 difficulties를 수식하는 형용사 자리이므로 financial이 정답. financially는 부사, finance는 명사, financed는 '자금을 지원받은'이라는 뜻이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "accountant",
+  "pos": "n",
+  "m": [
+   "회계사",
+   "회계 담당자"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Our *accountant* will help us prepare the annual tax return.",
+  "exKo": "우리 회계사가 연간 세금 신고서 작성을 도와줄 것이다.",
+  "col": [
+   {
+    "e": "certified public accountant",
+    "k": "공인 회계사"
+   },
+   {
+    "e": "hire an accountant",
+    "k": "회계사를 고용하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "accounting",
+    "pos": "n",
+    "m": "회계"
+   },
+   {
+    "w": "account",
+    "pos": "n",
+    "m": "계좌, 계정"
+   }
+  ],
+  "para": [
+   "bookkeeper"
+  ],
+  "ant": "",
+  "tip": "사람명사 accountant와 분야를 나타내는 accounting(회계)을 구분하는 문제가 나온다. LC에서는 세금, 영수증 관련 대화의 화자로 자주 등장한다.",
+  "q": {
+   "s": "Ms. Lin has worked as a senior ------- at Barrow & Hughes for over a decade.",
+   "o": [
+    "accounting",
+    "account",
+    "accountant",
+    "accountable"
+   ],
+   "a": 2,
+   "k": "'~로서 일하다(work as)' 뒤에는 직업을 나타내는 사람명사가 와야 하므로 accountant가 정답. accounting(회계)은 분야, account는 계좌, accountable은 형용사다."
+  }
+ },
+ {
+  "w": "audit",
+  "pos": "n",
+  "m": [
+   "회계 감사",
+   "감사"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The annual *audit* revealed several errors in the company's expense records.",
+  "exKo": "연례 회계 감사에서 회사 경비 기록의 오류 몇 건이 드러났다.",
+  "col": [
+   {
+    "e": "conduct an audit",
+    "k": "감사를 실시하다"
+   },
+   {
+    "e": "internal audit",
+    "k": "내부 감사"
+   },
+   {
+    "e": "external audit",
+    "k": "외부 감사"
+   }
+  ],
+  "der": [
+   {
+    "w": "auditor",
+    "pos": "n",
+    "m": "감사관, 회계 감사인"
+   }
+  ],
+  "para": [
+   "inspection",
+   "review",
+   "examination"
+  ],
+  "ant": "",
+  "tip": "명사와 동사(감사하다)가 같은 형태다. 사람명사 auditor(감사관)와의 구분, 그리고 'conduct/perform an audit'의 동사 짝이 출제된다.",
+  "q": {
+   "s": "An independent firm will conduct an ------- of our financial records next month.",
+   "o": [
+    "auditor",
+    "auditorium",
+    "audition",
+    "audit"
+   ],
+   "a": 3,
+   "k": "conduct의 목적어로 재무 기록에 대한 '감사'가 와야 하므로 audit이 정답. auditor는 감사하는 사람이라 conduct의 목적어가 될 수 없고, auditorium(강당), audition(오디션)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "balance",
+  "pos": "n",
+  "m": [
+   "잔액",
+   "잔고",
+   "균형"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Customers can check their account *balance* online at any time.",
+  "exKo": "고객은 언제든지 온라인으로 계좌 잔액을 확인할 수 있다.",
+  "col": [
+   {
+    "e": "account balance",
+    "k": "계좌 잔액"
+   },
+   {
+    "e": "outstanding balance",
+    "k": "미지불 잔액"
+   },
+   {
+    "e": "work-life balance",
+    "k": "일과 삶의 균형"
+   }
+  ],
+  "der": [
+   {
+    "w": "balanced",
+    "pos": "adj",
+    "m": "균형 잡힌"
+   }
+  ],
+  "para": [
+   "remaining amount",
+   "amount owed"
+  ],
+  "ant": "",
+  "tip": "'outstanding/remaining balance(미지불 잔액)'처럼 '남은 금액'의 뜻으로 청구서 지문에 자주 나온다. 동사로는 'balance the budget(예산의 수지를 맞추다)'처럼 쓴다.",
+  "q": {
+   "s": "The remaining ------- of $250 must be paid before the furniture is delivered.",
+   "o": [
+    "refund",
+    "balance",
+    "receipt",
+    "discount"
+   ],
+   "a": 1,
+   "k": "가구 배송 전에 '지불해야 하는' 남은 금액이므로 balance(잔금)가 정답. refund(환불금)와 discount(할인)는 고객이 지불하는 것이 아니고, receipt(영수증)는 금액이 아니다."
+  }
+ },
+ {
+  "w": "deficit",
+  "pos": "n",
+  "m": [
+   "적자",
+   "부족액"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The airline reported a *deficit* for the second year in a row due to rising fuel prices.",
+  "exKo": "그 항공사는 연료비 상승으로 2년 연속 적자를 기록했다.",
+  "col": [
+   {
+    "e": "budget deficit",
+    "k": "재정 적자"
+   },
+   {
+    "e": "trade deficit",
+    "k": "무역 적자"
+   },
+   {
+    "e": "run a deficit",
+    "k": "적자를 내다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "shortfall",
+   "loss"
+  ],
+  "ant": "surplus",
+  "tip": "반의어 surplus(흑자, 잉여)와 짝으로 외워 두자. 'trade deficit(무역 적자)', 'budget deficit(재정 적자)'이 경제 기사 지문에 자주 나온다.",
+  "q": {
+   "s": "Because spending exceeded revenue, the city faces a budget ------- of nearly $3 million.",
+   "o": [
+    "surplus",
+    "profit",
+    "deficit",
+    "bonus"
+   ],
+   "a": 2,
+   "k": "지출이 수입을 넘었으므로 '재정 적자'에 직면한 것이다. 따라서 deficit이 정답이며 surplus(흑자), profit(이익), bonus(상여금)는 문맥과 반대다."
+  }
+ },
+ {
+  "w": "surplus",
+  "pos": "n",
+  "m": [
+   "흑자",
+   "잉여(금)",
+   "과잉"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Thanks to strong sales, the company ended the year with a budget *surplus*.",
+  "exKo": "탄탄한 매출 덕분에 그 회사는 예산 흑자로 한 해를 마감했다.",
+  "col": [
+   {
+    "e": "trade surplus",
+    "k": "무역 흑자"
+   },
+   {
+    "e": "budget surplus",
+    "k": "재정 흑자"
+   },
+   {
+    "e": "surplus inventory",
+    "k": "과잉 재고"
+   }
+  ],
+  "der": [],
+  "para": [
+   "excess",
+   "extra"
+  ],
+  "ant": "deficit",
+  "tip": "'남는 양, 잉여'의 뜻으로 'surplus stock(과잉 재고)'처럼 명사 앞에서 형용사처럼 쓰이기도 한다. 반의어 deficit과 함께 출제된다.",
+  "q": {
+   "s": "The store is offering steep discounts to clear its ------- inventory of winter coats.",
+   "o": [
+    "surplus",
+    "deficit",
+    "shortage",
+    "absence"
+   ],
+   "a": 0,
+   "k": "큰 폭의 할인으로 처분하려는 것은 '남아도는' 재고이므로 surplus가 정답. deficit(적자), shortage(부족), absence(부재)는 처분할 재고가 많다는 문맥과 반대다."
+  }
+ },
+ {
+  "w": "profit",
+  "pos": "n",
+  "m": [
+   "이익",
+   "수익"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bakery made a *profit* in its first year, which is rare for a new business.",
+  "exKo": "그 제과점은 첫해에 이익을 냈는데, 이는 신생 업체로서는 드문 일이다.",
+  "col": [
+   {
+    "e": "make a profit",
+    "k": "이익을 내다"
+   },
+   {
+    "e": "net profit",
+    "k": "순이익"
+   },
+   {
+    "e": "profit margin",
+    "k": "이윤 폭"
+   }
+  ],
+  "der": [
+   {
+    "w": "profitable",
+    "pos": "adj",
+    "m": "수익성 있는"
+   },
+   {
+    "w": "profitability",
+    "pos": "n",
+    "m": "수익성"
+   }
+  ],
+  "para": [
+   "earnings",
+   "gain"
+  ],
+  "ant": "loss",
+  "tip": "'make/turn a profit(이익을 내다)'의 동사 짝과 'profit margin(이윤 폭)' 같은 복합명사가 자주 나온다. 동사 profit은 'profit from(~에서 이익을 얻다)'처럼 from과 쓴다.",
+  "q": {
+   "s": "Despite higher shipping costs, the company still made a ------- of $2 million last year.",
+   "o": [
+    "profitable",
+    "profitably",
+    "profiting",
+    "profit"
+   ],
+   "a": 3,
+   "k": "관사 a 뒤에서 of $2 million의 수식을 받는 명사 자리이므로 profit이 정답. 'make a profit'은 '이익을 내다'라는 표현이며 profitable은 형용사, profitably는 부사다."
+  }
+ },
+ {
+  "w": "profitable",
+  "pos": "adj",
+  "m": [
+   "수익성 있는",
+   "이익이 되는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new product line has proven more *profitable* than expected.",
+  "exKo": "신제품 라인은 예상보다 수익성이 더 높은 것으로 드러났다.",
+  "col": [
+   {
+    "e": "highly profitable",
+    "k": "수익성이 매우 높은"
+   },
+   {
+    "e": "remain profitable",
+    "k": "수익성을 유지하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "profitability",
+    "pos": "n",
+    "m": "수익성"
+   },
+   {
+    "w": "profitably",
+    "pos": "adv",
+    "m": "수익성 있게"
+   }
+  ],
+  "para": [
+   "lucrative",
+   "money-making"
+  ],
+  "ant": "unprofitable",
+  "tip": "명사 profitability(수익성), 부사 profitably와의 품사 구분이 출제되며, Part 7에서 lucrative로 패러프레이징된다.",
+  "q": {
+   "s": "After years of losses, the restaurant chain finally became ------- last quarter.",
+   "o": [
+    "profit",
+    "profitably",
+    "profitable",
+    "profitability"
+   ],
+   "a": 2,
+   "k": "become 뒤의 보어 자리이며 주어 chain의 상태를 나타내야 하므로 형용사 profitable이 정답. profit, profitability는 명사라 '체인=이익'이 되어 의미가 맞지 않고, profitably는 부사다."
+  }
+ },
+ {
+  "w": "loss",
+  "pos": "n",
+  "m": [
+   "손실",
+   "적자",
+   "분실"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company reported a net *loss* of $4 million for the first quarter.",
+  "exKo": "그 회사는 1분기에 400만 달러의 순손실을 기록했다고 발표했다.",
+  "col": [
+   {
+    "e": "net loss",
+    "k": "순손실"
+   },
+   {
+    "e": "suffer a loss",
+    "k": "손실을 입다"
+   },
+   {
+    "e": "at a loss",
+    "k": "손해를 보고"
+   }
+  ],
+  "der": [
+   {
+    "w": "lose",
+    "pos": "v",
+    "m": "잃다, 손해를 보다"
+   }
+  ],
+  "para": [
+   "deficit",
+   "shortfall"
+  ],
+  "ant": "profit",
+  "tip": "'operate at a loss(적자로 운영하다)', 'sell at a loss(손해를 보고 팔다)'처럼 전치사 at과 쓴다. 동사 lose와 형태가 비슷하니 품사 자리를 확인하자.",
+  "q": {
+   "s": "The store had to sell its remaining stock at a ------- because demand dropped suddenly.",
+   "o": [
+    "lose",
+    "loss",
+    "lost",
+    "losing"
+   ],
+   "a": 1,
+   "k": "관사 a 뒤의 명사 자리이며 'sell at a loss(손해를 보고 팔다)'라는 표현이므로 loss가 정답. lose는 동사, lost와 losing은 분사다."
+  }
+ },
+ {
+  "w": "earnings",
+  "pos": "n",
+  "m": [
+   "수익",
+   "소득",
+   "실적"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Kline Industries announced record *earnings* for the third quarter.",
+  "exKo": "클라인 인더스트리는 3분기 사상 최대 수익을 발표했다.",
+  "col": [
+   {
+    "e": "quarterly earnings",
+    "k": "분기 실적"
+   },
+   {
+    "e": "earnings report",
+    "k": "실적 보고서"
+   },
+   {
+    "e": "annual earnings",
+    "k": "연간 수익"
+   }
+  ],
+  "der": [
+   {
+    "w": "earn",
+    "pos": "v",
+    "m": "벌다, 얻다"
+   }
+  ],
+  "para": [
+   "profits",
+   "income",
+   "revenue"
+  ],
+  "ant": "",
+  "tip": "'수익, 소득'의 뜻일 때는 항상 복수형 earnings로 쓰며, 'earnings report(실적 보고서)'가 Part 7 기사에 자주 나온다.",
+  "q": {
+   "s": "Shareholders were pleased when the firm's quarterly ------- exceeded analysts' expectations.",
+   "o": [
+    "earnings",
+    "earners",
+    "earned",
+    "earnest"
+   ],
+   "a": 0,
+   "k": "소유격과 형용사 quarterly 뒤의 명사 자리이며 '분기 실적'이 기대를 넘었다는 뜻이므로 earnings가 정답. earners는 '돈을 버는 사람'이라 의미가 맞지 않고, earned와 earnest는 명사가 아니다."
+  }
+ },
+ {
+  "w": "income",
+  "pos": "n",
+  "m": [
+   "소득",
+   "수입"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Many retirees rely on rental properties as a steady source of *income*.",
+  "exKo": "많은 은퇴자가 임대 부동산을 안정적인 소득원으로 삼는다.",
+  "col": [
+   {
+    "e": "annual income",
+    "k": "연간 소득"
+   },
+   {
+    "e": "source of income",
+    "k": "소득원"
+   },
+   {
+    "e": "income tax",
+    "k": "소득세"
+   }
+  ],
+  "der": [],
+  "para": [
+   "earnings",
+   "revenue",
+   "pay"
+  ],
+  "ant": "",
+  "tip": "소득의 크기를 말할 때는 large/small보다 high/low를 쓴다(a high income). 'income tax(소득세)'가 세금 관련 지문에 자주 나온다.",
+  "q": {
+   "s": "Applicants must provide proof of ------- when applying for an apartment lease.",
+   "o": [
+    "outcome",
+    "incomer",
+    "income",
+    "intake"
+   ],
+   "a": 2,
+   "k": "아파트 임대를 신청할 때 제출하는 것은 '소득' 증빙(proof of income)이므로 income이 정답. outcome(결과), incomer(새로 온 사람), intake(섭취량)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "gross",
+  "pos": "adj",
+  "m": [
+   "총(액)의",
+   "세전의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The film's *gross* earnings exceeded $50 million in its first month.",
+  "exKo": "그 영화의 총수익은 개봉 첫 달에 5천만 달러를 넘었다.",
+  "col": [
+   {
+    "e": "gross income",
+    "k": "총소득"
+   },
+   {
+    "e": "gross profit",
+    "k": "매출 총이익"
+   },
+   {
+    "e": "gross domestic product",
+    "k": "국내 총생산"
+   }
+  ],
+  "der": [
+   {
+    "w": "grossly",
+    "pos": "adv",
+    "m": "지나치게, 몹시"
+   }
+  ],
+  "para": [
+   "total",
+   "before tax"
+  ],
+  "ant": "net",
+  "tip": "공제 전 '총액'을 뜻하며 반의어 net(순~, 공제 후)과 짝으로 출제된다. 동사로는 'gross $1 million(총 100만 달러의 수익을 올리다)'처럼 쓴다.",
+  "q": {
+   "s": "Your ------- salary is the amount you earn before taxes and other deductions are taken out.",
+   "o": [
+    "net",
+    "partial",
+    "spare",
+    "gross"
+   ],
+   "a": 3,
+   "k": "세금과 공제액을 빼기 '전'의 급여이므로 gross(총액의)가 정답. net(순~)은 공제 후 금액이라 정의와 반대이고, partial(부분적인), spare(여분의)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "net",
+  "pos": "adj",
+  "m": [
+   "순(純)~",
+   "최종적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company's *net* profit rose by 8 percent after it lowered its operating costs.",
+  "exKo": "운영비를 낮춘 후 그 회사의 순이익은 8퍼센트 증가했다.",
+  "col": [
+   {
+    "e": "net profit",
+    "k": "순이익"
+   },
+   {
+    "e": "net income",
+    "k": "순소득"
+   },
+   {
+    "e": "net weight",
+    "k": "순중량"
+   }
+  ],
+  "der": [],
+  "para": [
+   "after tax",
+   "final"
+  ],
+  "ant": "gross",
+  "tip": "세금, 비용을 뺀 '순~'의 뜻으로 gross(총~)와 반대된다. 'net weight(순중량)'처럼 포장 정보에도 쓰이며, 동사로는 '순이익을 올리다'라는 뜻이다.",
+  "q": {
+   "s": "After all expenses were deducted, the charity event raised a ------- amount of $12,000.",
+   "o": [
+    "net",
+    "gross",
+    "whole",
+    "broad"
+   ],
+   "a": 0,
+   "k": "모든 비용을 '뺀 후'의 금액이므로 net(순~)이 정답. gross(총~)는 공제 전 금액이라 문맥과 반대이고, whole과 broad는 amount of와 이런 의미로 결합하지 않는다."
+  }
+ },
+ {
+  "w": "quarterly",
+  "pos": "adj",
+  "m": [
+   "분기의",
+   "분기별의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The CFO will present the *quarterly* sales report at Monday's meeting.",
+  "exKo": "최고 재무 책임자가 월요일 회의에서 분기 판매 보고서를 발표할 것이다.",
+  "col": [
+   {
+    "e": "quarterly report",
+    "k": "분기 보고서"
+   },
+   {
+    "e": "quarterly earnings",
+    "k": "분기 실적"
+   },
+   {
+    "e": "on a quarterly basis",
+    "k": "분기별로"
+   }
+  ],
+  "der": [
+   {
+    "w": "quarter",
+    "pos": "n",
+    "m": "분기, 4분의 1"
+   }
+  ],
+  "para": [
+   "every three months"
+  ],
+  "ant": "",
+  "tip": "-ly로 끝나지만 형용사와 부사로 모두 쓰인다(a quarterly meeting / meet quarterly). daily, weekly, monthly와 같은 유형이다.",
+  "q": {
+   "s": "The board of directors meets ------- to review the company's financial performance.",
+   "o": [
+    "quarter",
+    "quarterly",
+    "quartered",
+    "quarters"
+   ],
+   "a": 1,
+   "k": "자동사 meets를 수식하는 부사 자리이므로 '분기마다'라는 뜻의 quarterly가 정답. quarterly는 형용사와 부사로 모두 쓰인다. quarter, quarters는 명사, quartered는 분사다."
+  }
+ },
+ {
+  "w": "fiscal year",
+  "pos": "phr",
+  "m": [
+   "회계 연도"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Sales increased by 12 percent during the last *fiscal year*.",
+  "exKo": "지난 회계 연도 동안 매출이 12퍼센트 증가했다.",
+  "col": [
+   {
+    "e": "the current fiscal year",
+    "k": "이번 회계 연도"
+   },
+   {
+    "e": "the end of the fiscal year",
+    "k": "회계 연도 말"
+   }
+  ],
+  "der": [
+   {
+    "w": "fiscal",
+    "pos": "adj",
+    "m": "재정의, 회계의"
+   }
+  ],
+  "para": [
+   "financial year"
+  ],
+  "ant": "",
+  "tip": "회사마다 시작 시점이 다른 '회계 연도'로, Part 7 재무 보고서에 'for the fiscal year ending March 31'처럼 나온다. fiscal은 '재정의'라는 뜻의 형용사다.",
+  "q": {
+   "s": "All budget requests for the next ------- year must be submitted by October 15.",
+   "o": [
+    "physical",
+    "final",
+    "fiscal",
+    "annual"
+   ],
+   "a": 2,
+   "k": "예산 요청서를 제출하는 기준이 되는 '회계 연도(fiscal year)'이므로 fiscal이 정답. 발음이 비슷한 physical(신체의)은 함정이고, annual year나 final year는 이 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "financial statement",
+  "pos": "phr",
+  "m": [
+   "재무제표",
+   "재무 보고서"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Investors carefully reviewed the company's *financial statements* before buying shares.",
+  "exKo": "투자자들은 주식을 사기 전에 회사의 재무제표를 꼼꼼히 검토했다.",
+  "col": [
+   {
+    "e": "prepare financial statements",
+    "k": "재무제표를 작성하다"
+   },
+   {
+    "e": "audited financial statements",
+    "k": "감사를 받은 재무제표"
+   }
+  ],
+  "der": [],
+  "para": [
+   "financial report",
+   "accounts"
+  ],
+  "ant": "",
+  "tip": "보통 복수형 financial statements로 쓰며, 'bank statement(은행 거래 내역서)'의 statement와 같은 '내역서, 명세서'의 뜻이다.",
+  "q": {
+   "s": "The accounting department is preparing the year-end financial ------- for the auditors.",
+   "o": [
+    "applicants",
+    "reservations",
+    "designers",
+    "statements"
+   ],
+   "a": 3,
+   "k": "회계 부서가 감사인을 위해 준비하는 것은 연말 '재무제표(financial statements)'이므로 statements가 정답. applicants(지원자), reservations(예약), designers(디자이너)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "spreadsheet",
+  "pos": "n",
+  "m": [
+   "스프레드시트",
+   "계산표"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Mr. Ford updated the *spreadsheet* with this month's sales figures.",
+  "exKo": "포드 씨는 이번 달 판매 수치로 스프레드시트를 갱신했다.",
+  "col": [
+   {
+    "e": "update a spreadsheet",
+    "k": "스프레드시트를 갱신하다"
+   },
+   {
+    "e": "budget spreadsheet",
+    "k": "예산 스프레드시트"
+   }
+  ],
+  "der": [],
+  "para": [
+   "table",
+   "file"
+  ],
+  "ant": "",
+  "tip": "LC에서 'Could you send me the spreadsheet?'처럼 자료 공유를 요청하는 대화에 자주 나오며 update, attach, enter data into와 어울린다.",
+  "q": {
+   "s": "Please enter the updated expense figures into the shared ------- by the end of the day.",
+   "o": [
+    "spreadsheet",
+    "headquarters",
+    "workshop",
+    "receptionist"
+   ],
+   "a": 0,
+   "k": "경비 수치를 '입력하는' 공유 파일이므로 spreadsheet가 정답. headquarters(본사), workshop(워크숍), receptionist(접수 담당자)에는 수치를 입력할 수 없다."
+  }
+ },
+ {
+  "w": "figure",
+  "pos": "n",
+  "m": [
+   "수치",
+   "숫자",
+   "인물"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The sales *figures* for June were higher than those of any other month this year.",
+  "exKo": "6월 판매 수치는 올해 다른 어느 달보다 높았다.",
+  "col": [
+   {
+    "e": "sales figures",
+    "k": "판매 수치"
+   },
+   {
+    "e": "a key figure",
+    "k": "핵심 인물"
+   },
+   {
+    "e": "figure out",
+    "k": "알아내다, 이해하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "numbers",
+   "statistics",
+   "data"
+  ],
+  "ant": "",
+  "tip": "'수치'의 뜻일 때는 'sales/attendance figures'처럼 주로 복수로 쓴다. '인물'의 뜻(a leading figure in the industry)과 구동사 figure out(알아내다)도 출제된다.",
+  "q": {
+   "s": "According to the latest -------, online sales accounted for 40 percent of total revenue.",
+   "o": [
+    "features",
+    "figures",
+    "fixtures",
+    "failures"
+   ],
+   "a": 1,
+   "k": "온라인 판매가 전체 매출의 40퍼센트를 차지했다는 근거는 최신 '수치'이므로 figures가 정답. features(특징), fixtures(설비), failures(실패)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "projection",
+  "pos": "n",
+  "m": [
+   "예상(치)",
+   "추정"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Revenue for the first half of the year exceeded the original *projections*.",
+  "exKo": "상반기 매출이 당초 예상치를 넘어섰다.",
+  "col": [
+   {
+    "e": "sales projections",
+    "k": "매출 예상치"
+   },
+   {
+    "e": "exceed projections",
+    "k": "예상치를 넘다"
+   }
+  ],
+  "der": [
+   {
+    "w": "project",
+    "pos": "v",
+    "m": "예상하다, 추정하다"
+   },
+   {
+    "w": "projected",
+    "pos": "adj",
+    "m": "예상되는"
+   }
+  ],
+  "para": [
+   "forecast",
+   "estimate",
+   "prediction"
+  ],
+  "ant": "",
+  "tip": "'sales/revenue projections(매출 예상치)'처럼 복수형으로 자주 쓰며, 동사 project의 수동형 'be projected to do(~할 것으로 예상되다)'도 함께 출제된다.",
+  "q": {
+   "s": "Based on current -------, the company expects to open five new stores next year.",
+   "o": [
+    "projectors",
+    "projected",
+    "projections",
+    "project"
+   ],
+   "a": 2,
+   "k": "형용사 current의 수식을 받는 명사 자리이며 '현재의 예상치에 근거하여'라는 뜻이므로 projections가 정답. project는 단수 가산명사라 관사 없이 쓸 수 없고, projectors(영사기)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "forecast",
+  "pos": "n",
+  "m": [
+   "예측",
+   "예보"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Economists revised their growth *forecast* after the latest employment report was released.",
+  "exKo": "경제학자들은 최신 고용 보고서가 발표된 뒤 성장 전망치를 수정했다.",
+  "col": [
+   {
+    "e": "weather forecast",
+    "k": "일기 예보"
+   },
+   {
+    "e": "sales forecast",
+    "k": "매출 예측"
+   },
+   {
+    "e": "be forecast to do",
+    "k": "~할 것으로 예상되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "forecaster",
+    "pos": "n",
+    "m": "예보관, 예측가"
+   }
+  ],
+  "para": [
+   "prediction",
+   "projection",
+   "outlook"
+  ],
+  "ant": "",
+  "tip": "동사로도 쓰이며 과거, 과거분사는 forecast(forecasted도 허용)이다. 'be forecast to do(~할 것으로 예상되다)' 형태가 나오고, Part 4에서는 일기 예보(weather forecast) 담화로 자주 등장한다.",
+  "q": {
+   "s": "Sales of air conditioners are ------- to rise sharply as temperatures increase this summer.",
+   "o": [
+    "forecaster",
+    "forecasting",
+    "forecasts",
+    "forecast"
+   ],
+   "a": 3,
+   "k": "판매량이 급증할 것으로 '예상되다'라는 수동태 be forecast to do 구조이므로 과거분사 forecast가 정답. forecasting은 능동이라 의미가 맞지 않고, forecaster와 forecasts는 명사다."
+  }
+ },
+ {
+  "w": "reimburse",
+  "pos": "v",
+  "m": [
+   "(비용을) 상환하다",
+   "변제하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company will *reimburse* employees for any parking fees incurred during business trips.",
+  "exKo": "회사는 출장 중 발생한 주차비를 직원들에게 상환해 줄 것이다.",
+  "col": [
+   {
+    "e": "reimburse A for B",
+    "k": "A에게 B를 상환하다"
+   },
+   {
+    "e": "be reimbursed for",
+    "k": "~을 환급받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "reimbursement",
+    "pos": "n",
+    "m": "상환, 환급"
+   }
+  ],
+  "para": [
+   "pay back",
+   "refund",
+   "compensate"
+  ],
+  "ant": "",
+  "tip": "'reimburse + 사람 + for + 비용' 구조와 수동태 'be reimbursed for'가 핵심이다. 명사 reimbursement는 'request reimbursement(환급을 요청하다)'로 자주 나온다.",
+  "q": {
+   "s": "Staff members will be ------- for meals purchased while attending the conference.",
+   "o": [
+    "reimbursed",
+    "reimbursement",
+    "reimbursing",
+    "reimburse"
+   ],
+   "a": 0,
+   "k": "직원들이 식비를 '환급받는' 것이므로 be동사 뒤 수동태 과거분사 reimbursed가 정답. reimbursing은 능동이라 목적어가 필요하고, reimbursement는 명사라 '직원=환급'이 되어 맞지 않는다."
+  }
+ },
+ {
+  "w": "tax",
+  "pos": "n",
+  "m": [
+   "세금"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "All prices listed on the menu include *tax* and service charges.",
+  "exKo": "메뉴에 표시된 모든 가격에는 세금과 봉사료가 포함되어 있다.",
+  "col": [
+   {
+    "e": "tax return",
+    "k": "세금 신고(서)"
+   },
+   {
+    "e": "income tax",
+    "k": "소득세"
+   },
+   {
+    "e": "sales tax",
+    "k": "판매세"
+   }
+  ],
+  "der": [
+   {
+    "w": "taxable",
+    "pos": "adj",
+    "m": "과세 대상인"
+   },
+   {
+    "w": "taxation",
+    "pos": "n",
+    "m": "과세"
+   }
+  ],
+  "para": [
+   "duty",
+   "levy"
+  ],
+  "ant": "",
+  "tip": "'before tax(세전)', 'after tax(세후)', 'tax-free(면세의)' 같은 표현이 가격, 급여 지문에 나온다. 'file a tax return(세금 신고서를 제출하다)'도 알아두자.",
+  "q": {
+   "s": "The price of $59 does not include sales -------, which will be added at checkout.",
+   "o": [
+    "fare",
+    "tax",
+    "toll",
+    "wage"
+   ],
+   "a": 1,
+   "k": "결제 시 가격에 추가되는 것은 '판매세(sales tax)'이므로 tax가 정답. fare(교통 요금), toll(통행료), wage(임금)는 sales와 결합하지 않는다."
+  }
+ },
+ {
+  "w": "deduct",
+  "pos": "v",
+  "m": [
+   "공제하다",
+   "빼다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The cost of the uniform will be *deducted* from each employee's first paycheck.",
+  "exKo": "유니폼 비용은 각 직원의 첫 급여에서 공제된다.",
+  "col": [
+   {
+    "e": "deduct A from B",
+    "k": "B에서 A를 공제하다"
+   },
+   {
+    "e": "tax-deductible",
+    "k": "세금 공제가 되는"
+   }
+  ],
+  "der": [
+   {
+    "w": "deduction",
+    "pos": "n",
+    "m": "공제(액)"
+   },
+   {
+    "w": "deductible",
+    "pos": "adj",
+    "m": "공제 가능한"
+   }
+  ],
+  "para": [
+   "subtract",
+   "take off",
+   "withhold"
+  ],
+  "ant": "add",
+  "tip": "'deduct A from B' 구조로 전치사 from과 짝을 이룬다. 명사 deduction(공제액)과 형용사 tax-deductible(세금 공제가 되는)도 자주 나온다.",
+  "q": {
+   "s": "A ten-dollar late fee will be ------- from the deposit if the equipment is returned after the due date.",
+   "o": [
+    "subscribed",
+    "refrained",
+    "deducted",
+    "complied"
+   ],
+   "a": 2,
+   "k": "연체료가 보증금'에서 공제되는' 것이므로 from과 짝을 이루는 deducted가 정답. refrain, comply는 자동사라 수동태가 불가능하고, subscribed는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "payroll",
+  "pos": "n",
+  "m": [
+   "급여 대장",
+   "급여 지급 업무",
+   "인건비"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Questions about paychecks should be directed to the *payroll* department.",
+  "exKo": "급여 관련 문의는 급여 담당 부서로 해야 한다.",
+  "col": [
+   {
+    "e": "payroll department",
+    "k": "급여 담당 부서"
+   },
+   {
+    "e": "on the payroll",
+    "k": "고용되어 있는"
+   },
+   {
+    "e": "payroll system",
+    "k": "급여 시스템"
+   }
+  ],
+  "der": [],
+  "para": [
+   "salaries",
+   "wages"
+  ],
+  "ant": "",
+  "tip": "'payroll department(급여 담당 부서)'가 Part 7 사내 공지에 자주 등장하며, 'on the payroll(고용되어 있는)'이라는 표현도 알아두자.",
+  "q": {
+   "s": "Please contact the ------- office if you notice any errors on your pay statement.",
+   "o": [
+    "catering",
+    "security",
+    "shipping",
+    "payroll"
+   ],
+   "a": 3,
+   "k": "급여 명세서의 오류를 문의할 곳은 '급여 담당' 부서이므로 payroll이 정답. catering(케이터링), security(보안), shipping(배송) 부서는 급여 업무와 관련이 없다."
+  }
+ },
+ {
+  "w": "overhead",
+  "pos": "n",
+  "m": [
+   "간접비",
+   "고정비"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Moving to a smaller office will help the firm reduce its *overhead*.",
+  "exKo": "더 작은 사무실로 이전하면 회사가 간접비를 줄이는 데 도움이 될 것이다.",
+  "col": [
+   {
+    "e": "overhead costs",
+    "k": "간접비"
+   },
+   {
+    "e": "reduce overhead",
+    "k": "간접비를 줄이다"
+   },
+   {
+    "e": "overhead compartment",
+    "k": "(기내) 머리 위 짐칸"
+   }
+  ],
+  "der": [],
+  "para": [
+   "operating costs",
+   "fixed costs"
+  ],
+  "ant": "",
+  "tip": "임대료, 공과금처럼 영업에 드는 '간접비'의 뜻이다. 형용사로는 'overhead compartment/bin(머리 위 짐칸)'처럼 '머리 위의'라는 뜻으로 LC에 나온다.",
+  "q": {
+   "s": "Because it operates entirely online, the company has much lower ------- than its competitors.",
+   "o": [
+    "overview",
+    "outset",
+    "overhead",
+    "outlook"
+   ],
+   "a": 2,
+   "k": "온라인으로만 운영해 임대료 등이 들지 않으므로 '간접비'가 낮다는 뜻의 overhead가 정답. overview(개요), outset(시작), outlook(전망)은 비용을 나타내지 않아 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "asset",
+  "pos": "n",
+  "m": [
+   "자산",
+   "재산",
+   "강점"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Kwon's experience in international sales makes her a valuable *asset* to our team.",
+  "exKo": "해외 영업 경험을 갖춘 권 씨는 우리 팀의 소중한 인재다.",
+  "col": [
+   {
+    "e": "a valuable asset",
+    "k": "소중한 자산"
+   },
+   {
+    "e": "an asset to",
+    "k": "~에게 도움이 되는 사람/것"
+   },
+   {
+    "e": "financial assets",
+    "k": "금융 자산"
+   }
+  ],
+  "der": [],
+  "para": [
+   "strength",
+   "advantage",
+   "resource"
+  ],
+  "ant": "liability",
+  "tip": "회계상의 '자산'뿐 아니라 사람, 능력에 대해 'a valuable asset to the company(회사의 소중한 인재)'처럼 쓰는 표현이 추천서, 채용 지문에 자주 나온다. 전치사 to와의 짝을 기억하자.",
+  "q": {
+   "s": "Mr. Garcia's fluency in three languages would be a great ------- to our customer service team.",
+   "o": [
+    "asset",
+    "access",
+    "excess",
+    "aspect"
+   ],
+   "a": 0,
+   "k": "3개 국어 능통 능력이 팀에 '큰 도움이 될 것'이라는 뜻이므로 'an asset to'의 asset이 정답. access(접근), excess(초과), aspect(측면)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "liability",
+  "pos": "n",
+  "m": [
+   "(법적) 책임",
+   "부채"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The rental agreement limits the owner's *liability* for damage caused by tenants.",
+  "exKo": "그 임대 계약은 세입자가 초래한 손상에 대한 소유주의 책임을 제한한다.",
+  "col": [
+   {
+    "e": "liability for",
+    "k": "~에 대한 책임"
+   },
+   {
+    "e": "liability insurance",
+    "k": "배상 책임 보험"
+   },
+   {
+    "e": "assets and liabilities",
+    "k": "자산과 부채"
+   }
+  ],
+  "der": [
+   {
+    "w": "liable",
+    "pos": "adj",
+    "m": "(법적) 책임이 있는"
+   }
+  ],
+  "para": [
+   "responsibility",
+   "obligation",
+   "debt"
+  ],
+  "ant": "asset",
+  "tip": "형용사 liable은 'be liable for(~에 책임이 있다)'로 쓴다. 회계 문맥에서 복수형 liabilities는 '부채'로 asset(자산)과 반대된다.",
+  "q": {
+   "s": "The hotel accepts no ------- for valuables left in guest rooms.",
+   "o": [
+    "priority",
+    "liability",
+    "capacity",
+    "variety"
+   ],
+   "a": 1,
+   "k": "객실에 두고 간 귀중품에 대해 '책임'을 지지 않는다는 뜻의 'accept no liability for'가 정답. priority(우선순위), capacity(수용력), variety(다양성)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "overdue",
+  "pos": "adj",
+  "m": [
+   "기한이 지난",
+   "연체된"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Reminders were sent to customers whose payments are more than 30 days *overdue*.",
+  "exKo": "대금이 30일 넘게 연체된 고객들에게 독촉장이 발송되었다.",
+  "col": [
+   {
+    "e": "overdue payment",
+    "k": "연체된 대금"
+   },
+   {
+    "e": "overdue invoice",
+    "k": "기한이 지난 청구서"
+   },
+   {
+    "e": "long overdue",
+    "k": "진작 했어야 할"
+   }
+  ],
+  "der": [],
+  "para": [
+   "late",
+   "past due",
+   "outstanding"
+  ],
+  "ant": "",
+  "tip": "'past due', 'outstanding', 'late'로 패러프레이징되며 독촉장, 청구서 지문의 핵심 단어다. 'long overdue'는 '진작 했어야 할'이라는 뜻이다.",
+  "q": {
+   "s": "A late fee will be charged on any invoice that is more than two weeks -------.",
+   "o": [
+    "overtime",
+    "overall",
+    "overseas",
+    "overdue"
+   ],
+   "a": 3,
+   "k": "연체료가 부과되는 것은 2주 넘게 '기한이 지난' 청구서이므로 overdue가 정답. overtime(초과 근무), overall(전반적인), overseas(해외의)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "spending",
+  "pos": "n",
+  "m": [
+   "지출",
+   "소비"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Consumer *spending* on travel rose sharply during the summer months.",
+  "exKo": "여름철 동안 여행에 대한 소비자 지출이 크게 늘었다.",
+  "col": [
+   {
+    "e": "consumer spending",
+    "k": "소비자 지출"
+   },
+   {
+    "e": "spending on",
+    "k": "~에 대한 지출"
+   },
+   {
+    "e": "cut spending",
+    "k": "지출을 줄이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "spend",
+    "pos": "v",
+    "m": "(돈, 시간을) 쓰다"
+   },
+   {
+    "w": "spender",
+    "pos": "n",
+    "m": "돈을 쓰는 사람"
+   }
+  ],
+  "para": [
+   "expenditure",
+   "outlay"
+  ],
+  "ant": "",
+  "tip": "'spending on + 대상'처럼 전치사 on과 함께 쓰며 불가산명사다. Part 7에서 expenditure로 패러프레이징된다.",
+  "q": {
+   "s": "The government plans to increase ------- on public transportation over the next five years.",
+   "o": [
+    "spending",
+    "spend",
+    "spent",
+    "spender"
+   ],
+   "a": 0,
+   "k": "increase의 목적어인 명사 자리이며 '대중교통에 대한 지출'이라는 뜻이므로 spending이 정답. spender는 단수 가산명사라 관사 없이 쓸 수 없고, spend는 동사, spent는 과거(분사)다."
+  }
+ },
+ {
+  "w": "approximately",
+  "pos": "adv",
+  "m": [
+   "대략",
+   "약"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The renovation will take *approximately* six weeks to complete.",
+  "exKo": "개조 공사를 마치는 데 약 6주가 걸릴 것이다.",
+  "col": [
+   {
+    "e": "approximately 100 people",
+    "k": "약 100명"
+   },
+   {
+    "e": "at approximately 3 P.M.",
+    "k": "오후 3시경"
+   }
+  ],
+  "der": [
+   {
+    "w": "approximate",
+    "pos": "adj",
+    "m": "대략의"
+   },
+   {
+    "w": "approximation",
+    "pos": "n",
+    "m": "근사치"
+   }
+  ],
+  "para": [
+   "about",
+   "around",
+   "roughly"
+  ],
+  "ant": "exactly",
+  "tip": "숫자 앞에서 수사를 수식하는 부사 자리 문제로 자주 나오며 형용사 approximate와 구분해야 한다. Part 7에서 about, around, roughly로 바뀐다.",
+  "q": {
+   "s": "The new factory will create ------- 500 jobs in the region.",
+   "o": [
+    "approximate",
+    "approximation",
+    "approximately",
+    "approximated"
+   ],
+   "a": 2,
+   "k": "숫자 500을 수식하는 부사 자리이므로 approximately가 정답. 형용사 approximate는 'an approximate number'처럼 명사를 수식하며, 숫자 앞에는 쓰지 않는다."
+  }
+ },
+ {
+  "w": "substantial",
+  "pos": "adj",
+  "m": [
+   "상당한",
+   "많은"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company made a *substantial* investment in new manufacturing equipment.",
+  "exKo": "그 회사는 새 제조 설비에 상당한 투자를 했다.",
+  "col": [
+   {
+    "e": "a substantial increase",
+    "k": "상당한 증가"
+   },
+   {
+    "e": "a substantial amount",
+    "k": "상당한 양"
+   }
+  ],
+  "der": [
+   {
+    "w": "substantially",
+    "pos": "adv",
+    "m": "상당히"
+   },
+   {
+    "w": "substance",
+    "pos": "n",
+    "m": "물질, 본질"
+   }
+  ],
+  "para": [
+   "considerable",
+   "significant",
+   "large"
+  ],
+  "ant": "negligible",
+  "tip": "부사 substantially(상당히)와의 품사 구분이 자주 출제되며, Part 7에서 considerable, significant로 패러프레이징된다.",
+  "q": {
+   "s": "The marketing campaign led to a ------- increase in website traffic.",
+   "o": [
+    "substantially",
+    "substantial",
+    "substance",
+    "substantiate"
+   ],
+   "a": 1,
+   "k": "관사 a와 명사 increase 사이의 형용사 자리이므로 substantial이 정답. substantially는 부사, substance는 명사, substantiate는 동사다."
+  }
+ },
+ {
+  "w": "significantly",
+  "pos": "adv",
+  "m": [
+   "상당히",
+   "크게"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new software has *significantly* reduced the time needed to process orders.",
+  "exKo": "새 소프트웨어 덕분에 주문 처리에 필요한 시간이 크게 줄었다.",
+  "col": [
+   {
+    "e": "significantly increase",
+    "k": "크게 증가하다"
+   },
+   {
+    "e": "significantly lower",
+    "k": "상당히 낮은"
+   }
+  ],
+  "der": [
+   {
+    "w": "significant",
+    "pos": "adj",
+    "m": "상당한, 중요한"
+   },
+   {
+    "w": "significance",
+    "pos": "n",
+    "m": "중요성"
+   }
+  ],
+  "para": [
+   "considerably",
+   "substantially",
+   "markedly"
+  ],
+  "ant": "slightly",
+  "tip": "동사나 비교급을 수식하는 부사 자리 문제의 단골이다(significantly higher). 형용사 significant와의 품사 구분에 주의하자.",
+  "q": {
+   "s": "Ticket sales for this year's festival were ------- higher than last year's.",
+   "o": [
+    "significant",
+    "significance",
+    "signify",
+    "significantly"
+   ],
+   "a": 3,
+   "k": "비교급 형용사 higher를 수식하는 부사 자리이므로 significantly가 정답. significant는 형용사, significance는 명사, signify는 동사다."
+  }
+ },
+ {
+  "w": "cost-effective",
+  "pos": "adj",
+  "m": [
+   "비용 효율이 높은",
+   "가성비가 좋은"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Switching to LED lighting proved to be a *cost-effective* way to cut energy bills.",
+  "exKo": "LED 조명으로 바꾼 것은 전기 요금을 줄이는 비용 효율적인 방법으로 드러났다.",
+  "col": [
+   {
+    "e": "a cost-effective solution",
+    "k": "비용 효율적인 해결책"
+   },
+   {
+    "e": "a cost-effective way",
+    "k": "비용 효율적인 방법"
+   }
+  ],
+  "der": [
+   {
+    "w": "cost-effectiveness",
+    "pos": "n",
+    "m": "비용 효율성"
+   }
+  ],
+  "para": [
+   "economical",
+   "efficient",
+   "affordable"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 economical, affordable, 'saves money'로 패러프레이징된다. economic(경제의)이 아니라 economical(알뜰한, 경제적인)과 비슷한 뜻이다.",
+  "q": {
+   "s": "Outsourcing payroll services has proven to be a ------- solution for many small businesses.",
+   "o": [
+    "cost-effective",
+    "cost-effectively",
+    "cost-effectiveness",
+    "costs"
+   ],
+   "a": 0,
+   "k": "관사 a와 명사 solution 사이의 형용사 자리이므로 cost-effective가 정답. cost-effectively는 부사, cost-effectiveness와 costs는 명사다."
+  }
+ }
+]

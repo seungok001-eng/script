@@ -1,0 +1,2078 @@
+[
+ {
+  "w": "in accordance with",
+  "pos": "prep",
+  "m": [
+   "~에 따라",
+   "~에 부합하여"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "All hazardous waste must be disposed of *in accordance with* local regulations.",
+  "exKo": "모든 유해 폐기물은 지역 규정에 따라 처리해야 한다.",
+  "col": [
+   {
+    "e": "in accordance with regulations",
+    "k": "규정에 따라"
+   },
+   {
+    "e": "in accordance with company policy",
+    "k": "회사 방침에 따라"
+   },
+   {
+    "e": "in accordance with the terms",
+    "k": "조건에 따라"
+   }
+  ],
+  "der": [
+   {
+    "w": "accordance",
+    "pos": "n",
+    "m": "일치, 부합"
+   },
+   {
+    "w": "accordingly",
+    "pos": "adv",
+    "m": "그에 맞게"
+   }
+  ],
+  "para": [
+   "according to",
+   "in compliance with",
+   "as required by"
+  ],
+  "ant": "",
+  "tip": "in accordance with의 전치사 with를 to로 바꾸거나 accordance 자리에 according, accordingly를 넣은 오답이 자주 나온다.",
+  "q": {
+   "s": "Refunds will be issued in ------- with the store's posted return policy.",
+   "o": [
+    "accordance",
+    "according",
+    "accordingly",
+    "accorded"
+   ],
+   "a": 0,
+   "k": "in과 with 사이에는 명사가 와야 하므로 in accordance with(~에 따라)를 완성하는 accordance가 정답. according은 to와, accordingly는 단독 부사로 쓴다."
+  }
+ },
+ {
+  "w": "according to",
+  "pos": "prep",
+  "m": [
+   "~에 따르면",
+   "~에 따라"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "*According to* the weather forecast, the rain should stop by Thursday afternoon.",
+  "exKo": "일기 예보에 따르면 비는 목요일 오후까지 그칠 것이다.",
+  "col": [
+   {
+    "e": "according to the report",
+    "k": "보고서에 따르면"
+   },
+   {
+    "e": "according to plan",
+    "k": "계획대로"
+   },
+   {
+    "e": "according to the schedule",
+    "k": "일정에 따라"
+   }
+  ],
+  "der": [
+   {
+    "w": "accordingly",
+    "pos": "adv",
+    "m": "그에 맞게, 따라서"
+   }
+  ],
+  "para": [
+   "as stated in",
+   "based on"
+  ],
+  "ant": "",
+  "tip": "전치사구라 뒤에 명사가 오며 절은 올 수 없다. Part 7의 'According to the article, ~?' 질문은 지문의 해당 부분을 찾으라는 신호다.",
+  "q": {
+   "s": "------- the revised schedule, the airport shuttle bus will depart every 20 minutes.",
+   "o": [
+    "According to",
+    "Accordingly",
+    "In accordance",
+    "Accordance with"
+   ],
+   "a": 0,
+   "k": "명사구 the revised schedule을 이끄는 전치사구 자리이므로 According to가 정답. Accordingly는 부사, In accordance는 with가 빠졌고, Accordance with는 in이 빠졌다."
+  }
+ },
+ {
+  "w": "as of",
+  "pos": "prep",
+  "m": [
+   "~부로",
+   "~일자로"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "*As of* July 1, all employees must use the new expense reporting system.",
+  "exKo": "7월 1일부로 모든 직원은 새 경비 보고 시스템을 사용해야 한다.",
+  "col": [
+   {
+    "e": "as of today",
+    "k": "오늘부로"
+   },
+   {
+    "e": "as of next Monday",
+    "k": "다음 주 월요일부로"
+   },
+   {
+    "e": "as of now",
+    "k": "지금부터"
+   }
+  ],
+  "der": [],
+  "para": [
+   "starting",
+   "effective",
+   "beginning"
+  ],
+  "ant": "",
+  "tip": "날짜 앞에서 변경 사항이 시작되는 시점(~부로)을 나타내며, effective + 날짜와 같은 뜻이다. 미래 시점과 쓸 수 없는 since와 구분해야 한다.",
+  "q": {
+   "s": "------- January 1, the monthly membership fee will increase from $40 to $45.",
+   "o": [
+    "Since",
+    "Prior",
+    "As of",
+    "Unless"
+   ],
+   "a": 2,
+   "k": "미래의 변경 시점을 나타내는 '~부로'의 As of가 정답. Since는 과거 시점과 완료 시제에 쓰고, Prior는 to가 필요하며, Unless는 접속사다."
+  }
+ },
+ {
+  "w": "prior to",
+  "pos": "prep",
+  "m": [
+   "~ 전에",
+   "~에 앞서"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "ex": "Please arrive at least 15 minutes *prior to* your scheduled appointment.",
+  "exKo": "예약 시간보다 최소 15분 전에 도착하기 바란다.",
+  "col": [
+   {
+    "e": "prior to departure",
+    "k": "출발 전에"
+   },
+   {
+    "e": "prior to + -ing",
+    "k": "~하기 전에"
+   },
+   {
+    "e": "shortly prior to",
+    "k": "~ 직전에"
+   }
+  ],
+  "der": [
+   {
+    "w": "prior",
+    "pos": "adj",
+    "m": "이전의, 사전의"
+   },
+   {
+    "w": "priority",
+    "pos": "n",
+    "m": "우선순위"
+   }
+  ],
+  "para": [
+   "before",
+   "ahead of"
+  ],
+  "ant": "after",
+  "tip": "prior to의 to는 전치사라 뒤에 명사나 동명사가 온다(prior to arriving). before와 같은 뜻이지만 before to라는 표현은 없다.",
+  "q": {
+   "s": "Guests are asked to arrive at the venue at least 30 minutes ------- to the start of the ceremony.",
+   "o": [
+    "before",
+    "prior",
+    "ahead",
+    "earlier"
+   ],
+   "a": 1,
+   "k": "뒤의 to와 결합해 '~ 전에'를 뜻하는 prior to가 정답. before는 to 없이 쓰고, ahead는 of와 함께 쓰며, earlier는 to와 결합하지 않는다."
+  }
+ },
+ {
+  "w": "due to",
+  "pos": "prep",
+  "m": [
+   "~ 때문에"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "ex": "The outdoor awards ceremony has been postponed *due to* heavy rain.",
+  "exKo": "야외 시상식이 폭우 때문에 연기되었다.",
+  "col": [
+   {
+    "e": "due to bad weather",
+    "k": "악천후로 인해"
+   },
+   {
+    "e": "due to unforeseen circumstances",
+    "k": "예기치 못한 사정으로"
+   },
+   {
+    "e": "due to the fact that",
+    "k": "~라는 사실 때문에"
+   }
+  ],
+  "der": [
+   {
+    "w": "due",
+    "pos": "adj",
+    "m": "~할 예정인, 지불 기일이 된"
+   }
+  ],
+  "para": [
+   "because of",
+   "owing to",
+   "on account of"
+  ],
+  "ant": "",
+  "tip": "전치사구라 뒤에 명사(구)가 오고, 절이 오면 접속사 because를 쓴다. 'be due to do(~할 예정이다)'와 구분해야 한다.",
+  "q": {
+   "s": "The flight to Chicago was canceled ------- mechanical problems with the aircraft.",
+   "o": [
+    "because",
+    "since",
+    "due to",
+    "as though"
+   ],
+   "a": 2,
+   "k": "뒤에 명사구 mechanical problems가 오므로 전치사구 due to가 정답. because와 as though는 접속사라 절이 필요하고, since는 전치사로 쓰일 때 '~ 이후로'라는 뜻이라 맞지 않는다."
+  }
+ },
+ {
+  "w": "regardless of",
+  "pos": "prep",
+  "m": [
+   "~에 상관없이"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "All applicants will be treated equally *regardless of* age or nationality.",
+  "exKo": "모든 지원자는 나이나 국적에 상관없이 동등하게 대우받는다.",
+  "col": [
+   {
+    "e": "regardless of cost",
+    "k": "비용에 상관없이"
+   },
+   {
+    "e": "regardless of whether",
+    "k": "~인지 여부에 상관없이"
+   },
+   {
+    "e": "regardless of experience",
+    "k": "경력에 상관없이"
+   }
+  ],
+  "der": [
+   {
+    "w": "regard",
+    "pos": "v",
+    "m": "~로 여기다"
+   },
+   {
+    "w": "regarding",
+    "pos": "prep",
+    "m": "~에 관하여"
+   }
+  ],
+  "para": [
+   "irrespective of",
+   "without regard to"
+  ],
+  "ant": "",
+  "tip": "regardless of + 명사/whether절 형태로 쓴다. of 없는 regardless는 '그래도, 개의치 않고'라는 부사라 뒤에 명사를 바로 쓸 수 없다.",
+  "q": {
+   "s": "Shipping is free for all online orders ------- size or destination.",
+   "o": [
+    "in spite",
+    "whereas",
+    "regardless of",
+    "even though"
+   ],
+   "a": 2,
+   "k": "명사 size or destination 앞에서 '~에 상관없이'를 뜻하는 전치사구 regardless of가 정답. in spite는 of가 빠졌고, whereas와 even though는 접속사라 절이 필요하다."
+  }
+ },
+ {
+  "w": "in addition to",
+  "pos": "prep",
+  "m": [
+   "~ 외에도",
+   "~에 더하여"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "*In addition to* a competitive salary, we offer generous vacation benefits.",
+  "exKo": "경쟁력 있는 급여 외에도 우리는 넉넉한 휴가 혜택을 제공한다.",
+  "col": [
+   {
+    "e": "in addition to salary",
+    "k": "급여 외에도"
+   },
+   {
+    "e": "in addition to + -ing",
+    "k": "~하는 것 외에도"
+   }
+  ],
+  "der": [
+   {
+    "w": "addition",
+    "pos": "n",
+    "m": "추가"
+   },
+   {
+    "w": "additional",
+    "pos": "adj",
+    "m": "추가의"
+   },
+   {
+    "w": "additionally",
+    "pos": "adv",
+    "m": "게다가"
+   }
+  ],
+  "para": [
+   "besides",
+   "as well as",
+   "along with"
+  ],
+  "ant": "",
+  "tip": "to가 전치사라 뒤에 명사나 동명사가 온다(in addition to offering). 콤마 뒤 완전한 절이 오는 접속부사 In addition과 구분하는 문제가 나온다.",
+  "q": {
+   "s": "------- offering free delivery, the store gives first-time customers a 10 percent discount.",
+   "o": [
+    "In addition",
+    "Furthermore",
+    "In addition to",
+    "Moreover"
+   ],
+   "a": 2,
+   "k": "동명사구 offering free delivery를 목적어로 취하는 전치사구 자리이므로 In addition to가 정답. In addition, Furthermore, Moreover는 접속부사라 뒤에 목적어를 바로 취할 수 없다."
+  }
+ },
+ {
+  "w": "along with",
+  "pos": "prep",
+  "m": [
+   "~와 함께"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Please submit your résumé *along with* two letters of recommendation.",
+  "exKo": "이력서를 추천서 두 통과 함께 제출하기 바란다.",
+  "col": [
+   {
+    "e": "along with a receipt",
+    "k": "영수증과 함께"
+   },
+   {
+    "e": "along with other documents",
+    "k": "다른 서류와 함께"
+   }
+  ],
+  "der": [],
+  "para": [
+   "together with",
+   "in addition to",
+   "as well as"
+  ],
+  "ant": "",
+  "tip": "'A along with B'가 주어일 때 동사는 A에 수를 일치시킨다(The CEO, along with two directors, is ~). 서류 제출 안내문에 자주 나온다.",
+  "q": {
+   "s": "The CEO, ------- several board members, will attend the opening ceremony of the new plant.",
+   "o": [
+    "as well",
+    "along with",
+    "both",
+    "together"
+   ],
+   "a": 1,
+   "k": "명사구 several board members를 이끌어 '~와 함께'를 뜻하는 전치사구 along with가 정답. as well은 부사, both는 and와 짝을 이루며, together는 with가 있어야 전치사처럼 쓸 수 있다."
+  }
+ },
+ {
+  "w": "in light of",
+  "pos": "prep",
+  "m": [
+   "~을 고려하여",
+   "~에 비추어"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "*In light of* recent customer feedback, we have redesigned our mobile app.",
+  "exKo": "최근 고객 의견을 고려하여 우리는 모바일 앱을 새로 디자인했다.",
+  "col": [
+   {
+    "e": "in light of recent events",
+    "k": "최근 사건을 고려하여"
+   },
+   {
+    "e": "in light of the results",
+    "k": "결과에 비추어"
+   },
+   {
+    "e": "in light of the circumstances",
+    "k": "상황을 감안하여"
+   }
+  ],
+  "der": [],
+  "para": [
+   "considering",
+   "given",
+   "because of"
+  ],
+  "ant": "",
+  "tip": "in (the) light of는 결정의 근거를 나타내는 전치사구로, 뒤에 명사가 온다. Part 7에서 considering, given으로 바꿔 표현된다.",
+  "q": {
+   "s": "------- of the rising cost of raw materials, the company has decided to raise its prices.",
+   "o": [
+    "In spite",
+    "In light",
+    "Instead",
+    "On behalf"
+   ],
+   "a": 1,
+   "k": "원자재 비용 상승을 '고려하여' 가격을 올린다는 인과 관계이므로 In light (of)가 정답. In spite of는 양보, Instead of는 대체, On behalf of는 대리를 나타내 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "in terms of",
+  "pos": "prep",
+  "m": [
+   "~ 면에서",
+   "~에 관하여"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "*In terms of* price, our new model is more competitive than any rival product.",
+  "exKo": "가격 면에서 우리 신모델은 어떤 경쟁 제품보다도 경쟁력이 있다.",
+  "col": [
+   {
+    "e": "in terms of quality",
+    "k": "품질 면에서"
+   },
+   {
+    "e": "in terms of cost",
+    "k": "비용 면에서"
+   },
+   {
+    "e": "in terms of performance",
+    "k": "성능 면에서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "regarding",
+   "with respect to"
+  ],
+  "ant": "",
+  "tip": "in terms of + 명사(~ 측면에서) 형태로, terms는 반드시 복수형이다. 비교·평가 문장에서 자주 쓰인다.",
+  "q": {
+   "s": "The new office is a significant improvement ------- space and natural light.",
+   "o": [
+    "in charge of",
+    "in favor of",
+    "in case of",
+    "in terms of"
+   ],
+   "a": 3,
+   "k": "공간과 채광 '면에서' 개선되었다는 뜻이므로 in terms of가 정답. in charge of(~을 담당하는), in favor of(~에 찬성하는), in case of(~의 경우에)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "with regard to",
+  "pos": "prep",
+  "m": [
+   "~에 관하여"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Please contact Mr. Diaz *with regard to* any questions about your contract.",
+  "exKo": "계약에 관한 질문은 디아스 씨에게 문의하기 바란다.",
+  "col": [
+   {
+    "e": "with regard to your inquiry",
+    "k": "문의하신 건에 관하여"
+   },
+   {
+    "e": "with regard to the proposal",
+    "k": "그 제안에 관하여"
+   }
+  ],
+  "der": [
+   {
+    "w": "regarding",
+    "pos": "prep",
+    "m": "~에 관하여"
+   },
+   {
+    "w": "regard",
+    "pos": "n",
+    "m": "관심, 존경"
+   }
+  ],
+  "para": [
+   "regarding",
+   "concerning",
+   "about"
+  ],
+  "ant": "",
+  "tip": "with regard to = regarding = concerning으로, 이메일 첫 문장(I am writing with regard to ~)에 자주 쓰인다. regardless of(~에 상관없이)와 뜻을 혼동하지 않도록 한다.",
+  "q": {
+   "s": "I am writing ------- the sales position advertised on your company's website.",
+   "o": [
+    "regardless of",
+    "with regard to",
+    "in spite of",
+    "instead of"
+   ],
+   "a": 1,
+   "k": "광고된 직책에 '관하여' 글을 쓴다는 뜻이므로 with regard to가 정답. regardless of(~에 상관없이), in spite of(~에도 불구하고), instead of(~ 대신에)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "in response to",
+  "pos": "prep",
+  "m": [
+   "~에 응하여",
+   "~에 대한 대응으로"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "*In response to* customer requests, the store now opens at 8 A.M. on weekdays.",
+  "exKo": "고객 요청에 따라 그 매장은 이제 평일 오전 8시에 문을 연다.",
+  "col": [
+   {
+    "e": "in response to your inquiry",
+    "k": "문의에 대한 답변으로"
+   },
+   {
+    "e": "in response to feedback",
+    "k": "의견을 반영하여"
+   },
+   {
+    "e": "in response to demand",
+    "k": "수요에 대응하여"
+   }
+  ],
+  "der": [
+   {
+    "w": "respond",
+    "pos": "v",
+    "m": "응답하다(to)"
+   },
+   {
+    "w": "responsive",
+    "pos": "adj",
+    "m": "반응이 빠른"
+   }
+  ],
+  "para": [
+   "answering",
+   "following",
+   "as a result of"
+  ],
+  "ant": "",
+  "tip": "in response to + 명사 형태로, 답장 이메일의 첫 문장에 자주 나온다. 동사 respond는 자동사라 respond to처럼 to가 필요하다.",
+  "q": {
+   "s": "------- to numerous complaints, the airline has improved its baggage-handling procedures.",
+   "o": [
+    "Response",
+    "Responsive",
+    "In response",
+    "Responsibly"
+   ],
+   "a": 2,
+   "k": "to와 결합해 '~에 대응하여'라는 전치사구를 만드는 In response가 정답. 관사 없는 Response만으로는 수식어구가 될 수 없고, Responsive는 형용사, Responsibly는 부사다."
+  }
+ },
+ {
+  "w": "in place of",
+  "pos": "prep",
+  "m": [
+   "~ 대신에"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Ms. Ward will chair the budget meeting *in place of* the director, who is traveling.",
+  "exKo": "출장 중인 이사 대신 워드 씨가 예산 회의를 주재한다.",
+  "col": [
+   {
+    "e": "in place of the manager",
+    "k": "부장을 대신하여"
+   },
+   {
+    "e": "in place of the original item",
+    "k": "원래 품목 대신"
+   }
+  ],
+  "der": [
+   {
+    "w": "replace",
+    "pos": "v",
+    "m": "대체하다"
+   },
+   {
+    "w": "replacement",
+    "pos": "n",
+    "m": "교체, 후임자"
+   }
+  ],
+  "para": [
+   "instead of",
+   "as a substitute for"
+  ],
+  "ant": "",
+  "tip": "in place of = instead of로 바꿔 쓸 수 있다. of 없는 in place(제자리에, 시행 중인)와 뜻이 다르므로 주의한다.",
+  "q": {
+   "s": "Customers may choose a side salad ------- French fries at no additional cost.",
+   "o": [
+    "in case of",
+    "in charge of",
+    "in spite of",
+    "in place of"
+   ],
+   "a": 3,
+   "k": "감자튀김 '대신' 샐러드를 고를 수 있다는 뜻이므로 in place of가 정답. in case of(~의 경우에), in charge of(~을 담당하는), in spite of(~에도 불구하고)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "on short notice",
+  "pos": "phr",
+  "m": [
+   "촉박하게",
+   "급하게"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Thank you for agreeing to give the presentation *on short notice*.",
+  "exKo": "급하게 요청했는데도 발표를 맡아 주셔서 감사하다.",
+  "col": [
+   {
+    "e": "on such short notice",
+    "k": "이렇게 급하게"
+   },
+   {
+    "e": "at short notice",
+    "k": "(영국식) 촉박하게"
+   }
+  ],
+  "der": [
+   {
+    "w": "notice",
+    "pos": "n",
+    "m": "통지, 예고"
+   }
+  ],
+  "para": [
+   "at the last minute",
+   "with little warning"
+  ],
+  "ant": "",
+  "tip": "on short notice에서 notice 앞에 관사를 쓰지 않으며, on such short notice로 강조하기도 한다. 감사 이메일과 일정 변경 대화에 자주 나온다.",
+  "q": {
+   "s": "We appreciate your willingness to cover the evening shift on such short -------.",
+   "o": [
+    "note",
+    "notion",
+    "noticing",
+    "notice"
+   ],
+   "a": 3,
+   "k": "on such short notice는 '이렇게 급하게'라는 관용 표현이므로 notice가 정답. note(메모), notion(개념)은 이 표현에 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "free of charge",
+  "pos": "phr",
+  "m": [
+   "무료로"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Delivery is provided *free of charge* for all orders over $50.",
+  "exKo": "50달러가 넘는 모든 주문은 무료로 배송된다.",
+  "col": [
+   {
+    "e": "provided free of charge",
+    "k": "무료로 제공되는"
+   },
+   {
+    "e": "available free of charge",
+    "k": "무료로 이용할 수 있는"
+   }
+  ],
+  "der": [
+   {
+    "w": "charge",
+    "pos": "v",
+    "m": "(요금을) 청구하다"
+   }
+  ],
+  "para": [
+   "for free",
+   "at no cost",
+   "complimentary"
+  ],
+  "ant": "",
+  "tip": "free of charge = at no cost = complimentary로 Part 7 패러프레이징 빈출이다. 'free of + 명사'는 '~이 없는'이라는 뜻이다.",
+  "q": {
+   "s": "Shuttle service between the airport and the hotel is available free of ------- to all guests.",
+   "o": [
+    "price",
+    "fare",
+    "fee",
+    "charge"
+   ],
+   "a": 3,
+   "k": "free of charge는 '무료로'라는 고정 표현이므로 charge가 정답. price, fare, fee는 free of와 결합해 이 뜻을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "at one's earliest convenience",
+  "pos": "phr",
+  "m": [
+   "가능한 한 빨리",
+   "편한 때 되도록 일찍"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Please return the signed contract to our office *at your earliest convenience*.",
+  "exKo": "서명한 계약서를 가능한 한 빨리 우리 사무실로 보내 주기 바란다.",
+  "col": [
+   {
+    "e": "reply at your earliest convenience",
+    "k": "가능한 한 빨리 회신하다"
+   },
+   {
+    "e": "contact us at your earliest convenience",
+    "k": "되도록 빨리 연락하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "convenient",
+    "pos": "adj",
+    "m": "편리한"
+   }
+  ],
+  "para": [
+   "as soon as possible",
+   "promptly"
+  ],
+  "ant": "",
+  "tip": "이메일 끝의 정중한 요청 문구로, 전치사 at과 최상급 earliest가 고정이다. 실제 문장에서는 one's 자리에 your, his 등이 들어간다.",
+  "q": {
+   "s": "Please contact our office at your ------- convenience to schedule a follow-up appointment.",
+   "o": [
+    "earliest",
+    "early",
+    "earlier",
+    "earliness"
+   ],
+   "a": 0,
+   "k": "at one's earliest convenience는 최상급 earliest를 쓰는 고정 표현이므로 earliest가 정답. 원급 early나 비교급 earlier는 이 표현에 쓰지 않는다."
+  }
+ },
+ {
+  "w": "at the latest",
+  "pos": "phr",
+  "m": [
+   "늦어도"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "All quarterly reports must be submitted by Friday *at the latest*.",
+  "exKo": "모든 분기 보고서는 늦어도 금요일까지 제출해야 한다.",
+  "col": [
+   {
+    "e": "by Friday at the latest",
+    "k": "늦어도 금요일까지"
+   },
+   {
+    "e": "by noon at the latest",
+    "k": "늦어도 정오까지"
+   }
+  ],
+  "der": [
+   {
+    "w": "late",
+    "pos": "adj",
+    "m": "늦은"
+   },
+   {
+    "w": "lately",
+    "pos": "adv",
+    "m": "최근에"
+   }
+  ],
+  "para": [
+   "no later than"
+  ],
+  "ant": "at the earliest",
+  "tip": "'by + 시점 + at the latest' 형태로 no later than과 같은 뜻이다. 형용사 latest(최신의)나 lately(최근에)와 혼동하지 않도록 한다.",
+  "q": {
+   "s": "Applications for the internship program must be received by May 15 at the -------.",
+   "o": [
+    "last",
+    "lately",
+    "latest",
+    "later"
+   ],
+   "a": 2,
+   "k": "by + 날짜 뒤에서 '늦어도'를 뜻하는 고정 표현 at the latest의 latest가 정답. at last는 관사 없이 '마침내'라는 뜻이고, lately와 later는 이 표현에 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "be subject to",
+  "pos": "phr",
+  "m": [
+   "~의 대상이다",
+   "~될 수 있다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "All prices listed in the catalog *are subject to* change without notice.",
+  "exKo": "카탈로그에 기재된 모든 가격은 예고 없이 변경될 수 있다.",
+  "col": [
+   {
+    "e": "be subject to change",
+    "k": "변경될 수 있다"
+   },
+   {
+    "e": "be subject to approval",
+    "k": "승인을 받아야 한다"
+   },
+   {
+    "e": "subject to availability",
+    "k": "재고나 예약 상황에 따라"
+   }
+  ],
+  "der": [
+   {
+    "w": "subject",
+    "pos": "n",
+    "m": "주제, 과목"
+   }
+  ],
+  "para": [
+   "be liable to",
+   "depend on"
+  ],
+  "ant": "",
+  "tip": "to는 전치사라 뒤에 명사가 온다(be subject to change/approval). be subject to change는 Part 7에서 may change로 바꿔 표현된다.",
+  "q": {
+   "s": "All hotel reservations are ------- to availability and must be confirmed by phone.",
+   "o": [
+    "dependent",
+    "eligible",
+    "responsible",
+    "subject"
+   ],
+   "a": 3,
+   "k": "be subject to availability는 '예약 가능 여부에 따라 달라진다'는 뜻이므로 subject가 정답. dependent는 on, eligible은 for와 쓰고, responsible to는 '~에게 책임을 지다'라는 뜻이라 맞지 않는다."
+  }
+ },
+ {
+  "w": "be entitled to",
+  "pos": "phr",
+  "m": [
+   "~을 받을 자격이 있다",
+   "~할 권리가 있다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Members who renew before May 1 *are entitled to* a 10 percent discount on all classes.",
+  "exKo": "5월 1일 전에 갱신하는 회원은 모든 강좌를 10% 할인받을 자격이 있다.",
+  "col": [
+   {
+    "e": "be entitled to a refund",
+    "k": "환불받을 자격이 있다"
+   },
+   {
+    "e": "be entitled to do",
+    "k": "~할 권리가 있다"
+   }
+  ],
+  "der": [
+   {
+    "w": "entitle",
+    "pos": "v",
+    "m": "자격을 주다"
+   },
+   {
+    "w": "entitlement",
+    "pos": "n",
+    "m": "권리, 자격"
+   }
+  ],
+  "para": [
+   "be eligible for",
+   "have the right to"
+  ],
+  "ant": "",
+  "tip": "be entitled to 뒤에는 명사(a refund)와 동사원형(to receive)이 모두 올 수 있다. 같은 뜻의 be eligible은 for + 명사와 쓴다는 점이 함정이다.",
+  "q": {
+   "s": "Customers who are not satisfied with their purchase are ------- to a full refund within 30 days.",
+   "o": [
+    "eligible",
+    "capable",
+    "deserving",
+    "entitled"
+   ],
+   "a": 3,
+   "k": "to + 명사(a full refund)와 결합해 '~을 받을 자격이 있다'를 뜻하는 entitled가 정답. eligible은 for, capable과 deserving은 of와 함께 쓴다."
+  }
+ },
+ {
+  "w": "be committed to",
+  "pos": "phr",
+  "m": [
+   "~에 전념하다",
+   "~에 헌신하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Our company *is committed to* reducing its carbon emissions by 2030.",
+  "exKo": "우리 회사는 2030년까지 탄소 배출량을 줄이는 데 전념하고 있다.",
+  "col": [
+   {
+    "e": "be committed to -ing",
+    "k": "~하는 데 전념하다"
+   },
+   {
+    "e": "be committed to quality",
+    "k": "품질에 전념하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "commit",
+    "pos": "v",
+    "m": "약속하다, 전념하다"
+   },
+   {
+    "w": "commitment",
+    "pos": "n",
+    "m": "헌신, 약속"
+   }
+  ],
+  "para": [
+   "be dedicated to",
+   "be devoted to"
+  ],
+  "ant": "",
+  "tip": "to는 전치사라 뒤에 동명사가 온다(be committed to reducing). be dedicated to, be devoted to와 함께 '전치사 to + -ing' 유형으로 묶어 출제된다.",
+  "q": {
+   "s": "Greenway Foods is ------- to sourcing its ingredients from local farmers.",
+   "o": [
+    "interested",
+    "eager",
+    "capable",
+    "committed"
+   ],
+   "a": 3,
+   "k": "전치사 to + 동명사(sourcing)와 결합해 '~에 전념하다'를 뜻하는 committed가 정답. interested는 in, capable은 of와 쓰고, eager to 뒤에는 동사원형이 온다."
+  }
+ },
+ {
+  "w": "be accustomed to",
+  "pos": "phr",
+  "m": [
+   "~에 익숙하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Ms. Ito *is accustomed to* working long hours during the busy season.",
+  "exKo": "이토 씨는 성수기에 오랜 시간 일하는 것에 익숙하다.",
+  "col": [
+   {
+    "e": "be accustomed to -ing",
+    "k": "~하는 데 익숙하다"
+   },
+   {
+    "e": "become accustomed to",
+    "k": "~에 익숙해지다"
+   },
+   {
+    "e": "get accustomed to",
+    "k": "~에 적응하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "accustom",
+    "pos": "v",
+    "m": "익숙하게 하다"
+   }
+  ],
+  "para": [
+   "be used to",
+   "be familiar with"
+  ],
+  "ant": "",
+  "tip": "to는 전치사라 뒤에 동명사가 온다(be accustomed to working). 과거 습관을 나타내는 used to + 동사원형과 구분해야 한다.",
+  "q": {
+   "s": "Having lived in Seoul for years, Mr. Grant is ------- to the city's busy subway system.",
+   "o": [
+    "familiar",
+    "accustomed",
+    "aware",
+    "acquainted"
+   ],
+   "a": 1,
+   "k": "뒤의 to와 짝을 이뤄 '~에 익숙하다'를 뜻하는 accustomed가 정답. familiar와 acquainted는 with, aware는 of와 함께 쓴다."
+  }
+ },
+ {
+  "w": "be familiar with",
+  "pos": "phr",
+  "m": [
+   "~을 잘 알다",
+   "~에 익숙하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "All sales representatives must *be familiar with* the features of our products.",
+  "exKo": "모든 영업 사원은 우리 제품의 특징을 잘 알고 있어야 한다.",
+  "col": [
+   {
+    "e": "be familiar with + 명사",
+    "k": "~을 잘 알다"
+   },
+   {
+    "e": "become familiar with",
+    "k": "~에 익숙해지다"
+   }
+  ],
+  "der": [
+   {
+    "w": "familiarity",
+    "pos": "n",
+    "m": "친숙함, 잘 앎"
+   },
+   {
+    "w": "familiarize",
+    "pos": "v",
+    "m": "익숙하게 하다"
+   }
+  ],
+  "para": [
+   "know well",
+   "be acquainted with"
+  ],
+  "ant": "be unfamiliar with",
+  "tip": "사람이 주어면 be familiar with + 대상, 대상이 주어면 be familiar to + 사람이다. familiarize oneself with(~을 숙지하다)도 함께 출제된다.",
+  "q": {
+   "s": "Applicants for the position should be ------- with standard accounting software.",
+   "o": [
+    "familiar",
+    "accustomed",
+    "aware",
+    "dependent"
+   ],
+   "a": 0,
+   "k": "뒤의 with와 짝을 이뤄 '~을 잘 알다'를 뜻하는 familiar가 정답. accustomed는 to, aware는 of, dependent는 on과 함께 쓴다."
+  }
+ },
+ {
+  "w": "take part in",
+  "pos": "phr",
+  "m": [
+   "~에 참가하다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "More than 200 employees *took part in* the charity run last weekend.",
+  "exKo": "지난 주말 200명이 넘는 직원이 자선 달리기 대회에 참가했다.",
+  "col": [
+   {
+    "e": "take part in a survey",
+    "k": "설문에 참여하다"
+   },
+   {
+    "e": "take part in a conference",
+    "k": "회의에 참석하다"
+   },
+   {
+    "e": "take part in a discussion",
+    "k": "토론에 참여하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "participate in",
+   "join",
+   "attend"
+  ],
+  "ant": "",
+  "tip": "take part in = participate in으로, 전치사 in을 빠뜨리지 않아야 한다. take place(개최되다)와 혼동하는 함정이 자주 나온다.",
+  "q": {
+   "s": "All department heads are expected to take ------- in the annual planning meeting.",
+   "o": [
+    "part",
+    "place",
+    "effect",
+    "notice"
+   ],
+   "a": 0,
+   "k": "사람 주어가 회의에 '참가하다'라는 뜻이므로 take part in의 part가 정답. take place는 행사가 '열리다', take effect는 '시행되다'라는 뜻이라 사람 주어와 맞지 않고, notice는 take notice of로 쓴다."
+  }
+ },
+ {
+  "w": "take advantage of",
+  "pos": "phr",
+  "m": [
+   "~을 이용하다",
+   "~을 활용하다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Customers can *take advantage of* our free shipping offer until the end of May.",
+  "exKo": "고객들은 5월 말까지 무료 배송 혜택을 이용할 수 있다.",
+  "col": [
+   {
+    "e": "take advantage of an opportunity",
+    "k": "기회를 활용하다"
+   },
+   {
+    "e": "take advantage of a discount",
+    "k": "할인을 이용하다"
+   },
+   {
+    "e": "take full advantage of",
+    "k": "~을 최대한 활용하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "advantageous",
+    "pos": "adj",
+    "m": "유리한"
+   }
+  ],
+  "para": [
+   "make use of",
+   "benefit from",
+   "use"
+  ],
+  "ant": "",
+  "tip": "광고·공지에서 할인, 혜택, 기회를 '이용하다'라는 긍정적 의미로 쓰인다. take full advantage of처럼 형용사가 들어가기도 한다.",
+  "q": {
+   "s": "Shoppers are encouraged to take ------- of the holiday sale before it ends on Sunday.",
+   "o": [
+    "benefit",
+    "profit",
+    "advantage",
+    "opportunity"
+   ],
+   "a": 2,
+   "k": "take advantage of는 '~을 이용하다'라는 고정 표현이므로 advantage가 정답. benefit, profit, opportunity는 take ~ of 구조로 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "keep track of",
+  "pos": "phr",
+  "m": [
+   "~을 기록하다",
+   "~을 계속 파악하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "This software helps managers *keep track of* employee working hours.",
+  "exKo": "이 소프트웨어는 관리자가 직원의 근무 시간을 기록하고 파악하는 데 도움이 된다.",
+  "col": [
+   {
+    "e": "keep track of expenses",
+    "k": "비용을 기록하다"
+   },
+   {
+    "e": "keep track of inventory",
+    "k": "재고를 파악하다"
+   },
+   {
+    "e": "keep track of orders",
+    "k": "주문 현황을 추적하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "monitor",
+   "record",
+   "follow"
+  ],
+  "ant": "lose track of",
+  "tip": "keep track of = monitor로 패러프레이징된다. 반대 표현 lose track of(~을 놓치다, 잊다)도 함께 알아 둔다.",
+  "q": {
+   "s": "Our new budgeting app allows users to keep ------- of their monthly expenses.",
+   "o": [
+    "touch",
+    "watch",
+    "trace",
+    "track"
+   ],
+   "a": 3,
+   "k": "keep track of는 '~을 기록하다, 파악하다'라는 고정 표현이므로 track이 정답. keep in touch with(연락하다), keep watch on(지켜보다)은 전치사가 다르고, keep trace of는 쓰지 않는다."
+  }
+ },
+ {
+  "w": "put off",
+  "pos": "phr",
+  "m": [
+   "미루다",
+   "연기하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "We had to *put off* the product launch until the beginning of next year.",
+  "exKo": "우리는 제품 출시를 내년 초로 미뤄야 했다.",
+  "col": [
+   {
+    "e": "put off a meeting",
+    "k": "회의를 미루다"
+   },
+   {
+    "e": "put off a decision",
+    "k": "결정을 미루다"
+   },
+   {
+    "e": "put off -ing",
+    "k": "~하는 것을 미루다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "postpone",
+   "delay"
+  ],
+  "ant": "",
+  "tip": "put off = postpone으로 듣기와 Part 7 패러프레이징 빈출이다. 뒤에 동사가 오면 동명사를 쓴다(put off making a decision).",
+  "q": {
+   "s": "The board decided to put ------- the vote until all members could attend.",
+   "o": [
+    "out",
+    "up",
+    "off",
+    "on"
+   ],
+   "a": 2,
+   "k": "until과 함께 투표를 '미루다'라는 뜻이므로 put off의 off가 정답. put out(끄다, 내놓다), put up(세우다, 게시하다), put on(입다, 공연하다)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "run out of",
+  "pos": "phr",
+  "m": [
+   "~이 다 떨어지다",
+   "~을 다 써 버리다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "The office printer has *run out of* paper, so please refill the tray.",
+  "exKo": "사무실 프린터에 용지가 다 떨어졌으니 용지함을 채워 주기 바란다.",
+  "col": [
+   {
+    "e": "run out of stock",
+    "k": "재고가 바닥나다"
+   },
+   {
+    "e": "run out of time",
+    "k": "시간이 다 되다"
+   },
+   {
+    "e": "run out of supplies",
+    "k": "비품이 떨어지다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "use up",
+   "be out of"
+  ],
+  "ant": "",
+  "tip": "사람·기계가 주어일 때는 run out of + 명사, 물건이 주어일 때는 run out 단독(Supplies ran out)으로 쓴다. 현재완료에서는 과거분사 run을 쓴다.",
+  "q": {
+   "s": "We have ------- out of brochures, so more will be printed for tomorrow's trade show.",
+   "o": [
+    "ran",
+    "running",
+    "runs",
+    "run"
+   ],
+   "a": 3,
+   "k": "현재완료 have 뒤에는 과거분사가 와야 하므로 run의 과거분사 run이 정답. ran은 과거형이라 have 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "set up",
+  "pos": "phr",
+  "m": [
+   "설치하다",
+   "준비하다",
+   "설립하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   5,
+   7
+  ],
+  "ex": "Technicians will *set up* the projector before the presentation begins.",
+  "exKo": "기술자들이 발표가 시작되기 전에 프로젝터를 설치할 것이다.",
+  "col": [
+   {
+    "e": "set up equipment",
+    "k": "장비를 설치하다"
+   },
+   {
+    "e": "set up a meeting",
+    "k": "회의를 잡다"
+   },
+   {
+    "e": "set up a business",
+    "k": "사업체를 세우다"
+   }
+  ],
+  "der": [
+   {
+    "w": "setup",
+    "pos": "n",
+    "m": "설치, 구성"
+   }
+  ],
+  "para": [
+   "install",
+   "arrange",
+   "establish"
+  ],
+  "ant": "",
+  "tip": "동사구 set up(띄어 씀)과 명사 setup(붙여 씀)을 구분해야 한다. Part 1에서는 'Chairs are being set up.' 같은 진행 수동태로 자주 나온다.",
+  "q": {
+   "s": "The new branch office was ------- up in less than three months.",
+   "o": [
+    "setting",
+    "sets",
+    "set",
+    "to set"
+   ],
+   "a": 2,
+   "k": "be동사 was 뒤 수동태를 만드는 과거분사 자리이므로 set이 정답. set은 원형·과거형·과거분사형이 모두 같다."
+  }
+ },
+ {
+  "w": "carry out",
+  "pos": "phr",
+  "m": [
+   "수행하다",
+   "실시하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The research team will *carry out* a customer satisfaction survey next month.",
+  "exKo": "연구팀은 다음 달 고객 만족도 조사를 실시할 것이다.",
+  "col": [
+   {
+    "e": "carry out a survey",
+    "k": "조사를 실시하다"
+   },
+   {
+    "e": "carry out a plan",
+    "k": "계획을 실행하다"
+   },
+   {
+    "e": "carry out an inspection",
+    "k": "점검을 실시하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "conduct",
+   "perform",
+   "implement"
+  ],
+  "ant": "",
+  "tip": "carry out = conduct = perform으로 조사·점검·계획 같은 명사를 목적어로 취한다. Part 7에서 conduct로 바꿔 표현되는 경우가 많다.",
+  "q": {
+   "s": "Inspectors will ------- out a thorough safety check of the building next Tuesday.",
+   "o": [
+    "carry",
+    "take",
+    "bring",
+    "hand"
+   ],
+   "a": 0,
+   "k": "점검을 '실시하다'라는 뜻의 carry out이 정답. take out(꺼내다), bring out(출시하다), hand out(나눠 주다)은 safety check와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "fill out",
+  "pos": "phr",
+  "m": [
+   "작성하다",
+   "기입하다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Please *fill out* the registration form and return it to the front desk.",
+  "exKo": "등록 양식을 작성해서 안내 데스크에 제출하기 바란다.",
+  "col": [
+   {
+    "e": "fill out a form",
+    "k": "양식을 작성하다"
+   },
+   {
+    "e": "fill out an application",
+    "k": "지원서를 작성하다"
+   },
+   {
+    "e": "fill out a survey",
+    "k": "설문지를 작성하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "complete",
+   "fill in"
+  ],
+  "ant": "",
+  "tip": "fill out = fill in = complete로 양식, 지원서, 설문지를 목적어로 취한다. Part 7에서 complete a form으로 패러프레이징된다.",
+  "q": {
+   "s": "Visitors must ------- out a registration form before entering the research facility.",
+   "o": [
+    "fill",
+    "turn",
+    "put",
+    "break"
+   ],
+   "a": 0,
+   "k": "양식을 '작성하다'라는 뜻의 fill out이 정답. turn out(드러나다), put out(끄다), break out(발생하다)은 form을 목적어로 취하지 않는다."
+  }
+ },
+ {
+  "w": "look into",
+  "pos": "phr",
+  "m": [
+   "조사하다",
+   "살펴보다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Our customer service team will *look into* the billing error immediately.",
+  "exKo": "고객 서비스팀이 청구 오류를 즉시 조사할 것이다.",
+  "col": [
+   {
+    "e": "look into a matter",
+    "k": "문제를 조사하다"
+   },
+   {
+    "e": "look into a complaint",
+    "k": "불만 사항을 조사하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "investigate",
+   "examine",
+   "check"
+  ],
+  "ant": "",
+  "tip": "look into = investigate로 듣기의 '문제를 알아보겠다'는 응답에 자주 나온다. look after(돌보다), look for(찾다), look forward to(고대하다)와 구분한다.",
+  "q": {
+   "s": "The manager promised to look ------- the customer's complaint about the late delivery.",
+   "o": [
+    "after",
+    "into",
+    "out",
+    "forward"
+   ],
+   "a": 1,
+   "k": "불만 사항을 '조사하다'라는 뜻이므로 look into의 into가 정답. look after는 '돌보다', look out은 '조심하다', look forward는 to와 함께 '고대하다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "come up with",
+  "pos": "phr",
+  "m": [
+   "생각해 내다",
+   "제시하다"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The design team *came up with* several creative ideas for the new logo.",
+  "exKo": "디자인팀은 새 로고에 대한 여러 창의적인 아이디어를 내놓았다.",
+  "col": [
+   {
+    "e": "come up with an idea",
+    "k": "아이디어를 생각해 내다"
+   },
+   {
+    "e": "come up with a plan",
+    "k": "계획을 세우다"
+   },
+   {
+    "e": "come up with a solution",
+    "k": "해결책을 찾아내다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "think of",
+   "devise",
+   "propose"
+  ],
+  "ant": "",
+  "tip": "come up with + 아이디어·계획·해결책 형태로 쓴다. Part 7에서 devise, develop, propose로 바꿔 표현된다.",
+  "q": {
+   "s": "The committee needs to come up ------- a solution to the parking problem before the end of the month.",
+   "o": [
+    "to",
+    "with",
+    "for",
+    "on"
+   ],
+   "a": 1,
+   "k": "해결책을 '생각해 내다'라는 뜻의 come up with가 정답. come up to는 '~에 다가오다', come up for는 '(갱신·검토 시기가) 되다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "get in touch with",
+  "pos": "phr",
+  "m": [
+   "~와 연락하다"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Please *get in touch with* our sales team for a detailed price quote.",
+  "exKo": "자세한 견적을 원하면 우리 영업팀에 연락하기 바란다.",
+  "col": [
+   {
+    "e": "get in touch with + 사람",
+    "k": "~에게 연락하다"
+   },
+   {
+    "e": "keep in touch with",
+    "k": "~와 계속 연락하다"
+   },
+   {
+    "e": "be in touch",
+    "k": "연락하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "contact",
+   "reach"
+  ],
+  "ant": "",
+  "tip": "get in touch with = contact로 바꿔 쓸 수 있다. 단, contact는 타동사라 contact with라고 쓰지 않는다.",
+  "q": {
+   "s": "Please get in ------- with Ms. Duarte if you have any questions about the conference schedule.",
+   "o": [
+    "reach",
+    "touch",
+    "call",
+    "connect"
+   ],
+   "a": 1,
+   "k": "get in touch with는 '~와 연락하다'라는 고정 표현이므로 touch가 정답. reach, call, connect는 get in ~ with 구조로 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "until further notice",
+  "pos": "phr",
+  "m": [
+   "추후 공지가 있을 때까지"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The east parking lot will be closed *until further notice*.",
+  "exKo": "동쪽 주차장은 추후 공지가 있을 때까지 폐쇄된다.",
+  "col": [
+   {
+    "e": "closed until further notice",
+    "k": "추후 공지가 있을 때까지 폐쇄되는"
+   },
+   {
+    "e": "suspended until further notice",
+    "k": "추후 공지가 있을 때까지 중단되는"
+   }
+  ],
+  "der": [],
+  "para": [
+   "indefinitely",
+   "for the time being"
+  ],
+  "ant": "",
+  "tip": "상태가 계속됨을 나타내는 until과 결합한 고정 표현으로, by further notice는 오답이다. 시설 폐쇄·서비스 중단 공지와 안내 방송에 자주 나온다.",
+  "q": {
+   "s": "The fitness center will remain closed ------- further notice due to water damage.",
+   "o": [
+    "by",
+    "until",
+    "since",
+    "within"
+   ],
+   "a": 1,
+   "k": "remain closed라는 지속 상태와 어울려 '추후 공지가 있을 때까지'를 뜻하는 until이 정답. by는 완료 기한을 나타내 지속 상태와 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "in a timely manner",
+  "pos": "phr",
+  "m": [
+   "적시에",
+   "시기적절하게"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Our staff are trained to respond to every inquiry *in a timely manner*.",
+  "exKo": "우리 직원들은 모든 문의에 신속하게 답변하도록 교육받는다.",
+  "col": [
+   {
+    "e": "respond in a timely manner",
+    "k": "신속하게 응답하다"
+   },
+   {
+    "e": "complete in a timely manner",
+    "k": "제때 완료하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "timely",
+    "pos": "adj",
+    "m": "시기적절한, 때맞춘"
+   }
+  ],
+  "para": [
+   "promptly",
+   "on time",
+   "quickly"
+  ],
+  "ant": "",
+  "tip": "timely는 -ly로 끝나지만 형용사라 in a timely manner, timely delivery처럼 쓴다. timely를 부사로 착각해 동사를 바로 꾸미게 만든 오답에 주의한다.",
+  "q": {
+   "s": "All invoices must be paid in a ------- manner to avoid late fees.",
+   "o": [
+    "timely",
+    "time",
+    "timing",
+    "timed"
+   ],
+   "a": 0,
+   "k": "관사 a와 명사 manner 사이 형용사 자리에서 '시기적절한'을 뜻하는 timely가 정답. time과 timing은 명사이고, timed는 '시간이 정해진'이라는 뜻이라 맞지 않는다."
+  }
+ },
+ {
+  "w": "on a regular basis",
+  "pos": "phr",
+  "m": [
+   "정기적으로"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The fire alarms are inspected *on a regular basis* to ensure safety.",
+  "exKo": "화재경보기는 안전을 위해 정기적으로 점검된다.",
+  "col": [
+   {
+    "e": "on an as-needed basis",
+    "k": "필요할 때마다"
+   },
+   {
+    "e": "on a daily basis",
+    "k": "매일"
+   },
+   {
+    "e": "on a weekly basis",
+    "k": "매주"
+   }
+  ],
+  "der": [
+   {
+    "w": "basis",
+    "pos": "n",
+    "m": "기준, 근거"
+   }
+  ],
+  "para": [
+   "regularly",
+   "routinely",
+   "periodically"
+  ],
+  "ant": "",
+  "tip": "on a ~ basis 구조로, 전치사 on과 단수 basis가 고정이다. regularly로 바꿔 쓸 수 있으며 daily, weekly 등으로 응용된다.",
+  "q": {
+   "s": "Safety drills are conducted on a regular ------- at all of our manufacturing facilities.",
+   "o": [
+    "base",
+    "basic",
+    "basement",
+    "basis"
+   ],
+   "a": 3,
+   "k": "on a regular basis는 '정기적으로'라는 고정 표현이므로 basis가 정답. base(기지, 토대), basic(기본적인), basement(지하실)는 이 표현에 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "at your disposal",
+  "pos": "phr",
+  "m": [
+   "마음대로 쓸 수 있는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A company car will be *at your disposal* during your stay in Tokyo.",
+  "exKo": "도쿄에 머무는 동안 회사 차량을 마음대로 이용할 수 있다.",
+  "col": [
+   {
+    "e": "be at your disposal",
+    "k": "마음대로 쓸 수 있다"
+   },
+   {
+    "e": "place ~ at someone's disposal",
+    "k": "~을 마음껏 쓰게 하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "dispose",
+    "pos": "v",
+    "m": "처리하다(of)"
+   },
+   {
+    "w": "disposable",
+    "pos": "adj",
+    "m": "일회용의"
+   }
+  ],
+  "para": [
+   "available to you"
+  ],
+  "ant": "",
+  "tip": "be at your disposal은 '언제든 이용할 수 있다'는 뜻으로 호텔·행사 안내문에 나온다. 동사 dispose of(처분하다)와 의미를 혼동하지 않도록 한다.",
+  "q": {
+   "s": "During the conference, a private meeting room will be at your ------- at no extra cost.",
+   "o": [
+    "disposal",
+    "disposition",
+    "dispose",
+    "disposable"
+   ],
+   "a": 0,
+   "k": "소유격 your 뒤 명사 자리이며, at your disposal은 '마음대로 쓸 수 있는'이라는 고정 표현이므로 disposal이 정답. disposition은 '성향', dispose는 동사, disposable은 형용사다."
+  }
+ },
+ {
+  "w": "contrary to",
+  "pos": "prep",
+  "m": [
+   "~와 반대로",
+   "~와 달리"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "*Contrary to* expectations, sales rose sharply during the winter months.",
+  "exKo": "예상과 달리 겨울철 동안 매출이 급증했다.",
+  "col": [
+   {
+    "e": "contrary to expectations",
+    "k": "예상과 달리"
+   },
+   {
+    "e": "contrary to popular belief",
+    "k": "일반적인 믿음과 달리"
+   },
+   {
+    "e": "contrary to reports",
+    "k": "보도와 달리"
+   }
+  ],
+  "der": [
+   {
+    "w": "contrary",
+    "pos": "adj",
+    "m": "반대의"
+   }
+  ],
+  "para": [
+   "unlike",
+   "in contrast to"
+  ],
+  "ant": "",
+  "tip": "contrary to + 명사(~와 반대로)는 전치사구로 쓴다. on the contrary(오히려, 그와는 반대로)는 접속부사라 뒤에 명사를 바로 쓸 수 없다.",
+  "q": {
+   "s": "------- to what analysts had predicted, the company's profits increased in the third quarter.",
+   "o": [
+    "Unlike",
+    "Contrary",
+    "Despite",
+    "Instead"
+   ],
+   "a": 1,
+   "k": "to와 결합해 '~와 반대로'라는 전치사구를 만드는 Contrary가 정답. Unlike와 Despite는 to 없이 바로 목적어를 취하고, Instead는 of와 함께 쓴다."
+  }
+ },
+ {
+  "w": "by the end of",
+  "pos": "phr",
+  "m": [
+   "~ 말까지"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The renovation of the lobby will be completed *by the end of* the month.",
+  "exKo": "로비 보수 공사는 이달 말까지 완료될 것이다.",
+  "col": [
+   {
+    "e": "by the end of the day",
+    "k": "오늘 중으로"
+   },
+   {
+    "e": "by the end of the week",
+    "k": "이번 주 안에, 이번 주 말까지"
+   },
+   {
+    "e": "by the end of the year",
+    "k": "연말까지"
+   }
+  ],
+  "der": [],
+  "para": [
+   "no later than",
+   "before the end of"
+  ],
+  "ant": "",
+  "tip": "by는 일회성 동작의 완료 기한(submit, complete), until은 상태의 지속(stay, remain)과 쓴다는 점이 핵심 출제 포인트다.",
+  "q": {
+   "s": "The contractor promised to finish the kitchen remodel ------- the end of the month.",
+   "o": [
+    "until",
+    "since",
+    "by",
+    "during"
+   ],
+   "a": 2,
+   "k": "완료 동사 finish는 기한까지 한 번 끝내는 동작이므로 by가 정답. until은 상태·동작의 지속(stay, remain, wait)에 쓰고, since는 완료 시제와, during은 기간 동안 일어나는 일과 쓴다."
+  }
+ },
+ {
+  "w": "as a token of",
+  "pos": "phr",
+  "m": [
+   "~의 표시로"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Please accept this gift card *as a token of* our appreciation.",
+  "exKo": "감사의 표시로 이 상품권을 받아 주기 바란다.",
+  "col": [
+   {
+    "e": "as a token of appreciation",
+    "k": "감사의 표시로"
+   },
+   {
+    "e": "as a token of gratitude",
+    "k": "감사의 뜻으로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "as a sign of",
+   "as an expression of"
+  ],
+  "ant": "",
+  "tip": "as a token of appreciation/gratitude는 감사 편지, 쿠폰·사은품 증정 안내문에 자주 나온다. token은 '표시, 증표'라는 뜻이다.",
+  "q": {
+   "s": "As a ------- of our gratitude, all survey participants will receive a free coffee voucher.",
+   "o": [
+    "token",
+    "ticket",
+    "charge",
+    "credit"
+   ],
+   "a": 0,
+   "k": "as a token of our gratitude는 '감사의 표시로'라는 고정 표현이므로 token이 정답. ticket(표), charge(요금), credit(신용, 적립금)은 이 표현에 쓰이지 않는다."
+  }
+ }
+]

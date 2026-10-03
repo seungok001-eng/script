@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>보카핏 토익</title>
+  <meta name="description" content="목표 점수에 맞춘 토익 영단어 1,200개 · 단어와 예문 원어민 음성 · 간격 반복 복습 · Part 5 실전 문제" />
+  <meta name="theme-color" content="#2b59f0" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="보카핏 토익" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+  <link rel="preload" href="fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/app.css" />
+  <script>
+    // 첫 화면 깜빡임 방지: 저장된 테마를 먼저 적용
+    try {
+      var t = JSON.parse(localStorage.getItem("vocafit.v1") || "{}").settings;
+      if (t && t.theme && t.theme !== "system") document.documentElement.setAttribute("data-theme", t.theme);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <div id="app" aria-live="polite"></div>
+  <div class="toast-wrap" id="toast"></div>
+  <noscript>이 앱을 사용하려면 자바스크립트를 켜 주세요.</noscript>
+  <script src="js/data.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

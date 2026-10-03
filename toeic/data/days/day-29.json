@@ -1,0 +1,2156 @@
+[
+ {
+  "w": "accordingly",
+  "pos": "adv",
+  "m": [
+   "그에 맞게",
+   "따라서"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "The schedule has changed, so please adjust your travel plans *accordingly*.",
+  "exKo": "일정이 변경되었으니 그에 맞게 출장 계획을 조정하기 바란다.",
+  "col": [
+   {
+    "e": "adjust accordingly",
+    "k": "그에 맞게 조정하다"
+   },
+   {
+    "e": "plan accordingly",
+    "k": "그에 맞춰 계획하다"
+   },
+   {
+    "e": "act accordingly",
+    "k": "그에 따라 행동하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "accord",
+    "pos": "n",
+    "m": "일치, 합의"
+   },
+   {
+    "w": "according to",
+    "pos": "prep",
+    "m": "~에 따르면, ~에 따라"
+   }
+  ],
+  "para": [
+   "correspondingly",
+   "appropriately"
+  ],
+  "ant": "",
+  "tip": "동사 뒤 문장 끝에서는 '그에 맞게'(adjust accordingly), 문두에서는 '따라서'라는 접속부사로 쓰인다. according to(전치사구)와 형태를 혼동하지 않도록 한다.",
+  "q": {
+   "s": "The client has moved the deadline up by two days, so we must revise our work schedule -------.",
+   "o": [
+    "according",
+    "accordance",
+    "accord",
+    "accordingly"
+   ],
+   "a": 3,
+   "k": "완전한 문장 뒤에서 동사 revise를 수식하는 부사 자리이므로 accordingly가 정답. according은 to와 함께 써야 하고, accordance와 accord는 명사다."
+  }
+ },
+ {
+  "w": "additionally",
+  "pos": "adv",
+  "m": [
+   "게다가",
+   "추가로"
+  ],
+  "tier": 1,
+  "parts": [
+   6,
+   7
+  ],
+  "ex": "*Additionally*, all workshop participants will receive a certificate of completion.",
+  "exKo": "게다가 워크숍 참가자 전원은 수료증을 받게 된다.",
+  "col": [
+   {
+    "e": "Additionally, S + V",
+    "k": "게다가 ~하다"
+   },
+   {
+    "e": "additionally offer",
+    "k": "추가로 제공하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "add",
+    "pos": "v",
+    "m": "더하다"
+   },
+   {
+    "w": "addition",
+    "pos": "n",
+    "m": "추가"
+   },
+   {
+    "w": "additional",
+    "pos": "adj",
+    "m": "추가의"
+   }
+  ],
+  "para": [
+   "in addition",
+   "furthermore",
+   "moreover"
+  ],
+  "ant": "",
+  "tip": "접속부사 additionally는 마침표나 세미콜론 뒤에서 콤마와 함께 쓴다. 뒤에 명사(구)가 오는 전치사 in addition to와 구분하는 문제가 나온다.",
+  "q": {
+   "s": "The hotel offers a free breakfast to all guests. -------, parking is available at no extra cost.",
+   "o": [
+    "In addition to",
+    "Although",
+    "Because",
+    "Additionally"
+   ],
+   "a": 3,
+   "k": "앞 문장에 혜택을 추가하는 접속부사 자리이므로 Additionally가 정답. In addition to는 뒤에 명사가 와야 하는 전치사구이고, Although와 Because는 접속사라 콤마만 두고 단독으로 쓸 수 없다."
+  }
+ },
+ {
+  "w": "consequently",
+  "pos": "adv",
+  "m": [
+   "그 결과",
+   "따라서"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "The flight was delayed by fog; *consequently*, several passengers missed their connections.",
+  "exKo": "안개로 항공편이 지연되었고, 그 결과 몇몇 승객이 연결편을 놓쳤다.",
+  "col": [
+   {
+    "e": "and consequently",
+    "k": "그래서 결과적으로"
+   },
+   {
+    "e": "consequently, S + V",
+    "k": "그 결과 ~하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "consequence",
+    "pos": "n",
+    "m": "결과"
+   },
+   {
+    "w": "consequent",
+    "pos": "adj",
+    "m": "결과로 일어나는"
+   }
+  ],
+  "para": [
+   "as a result",
+   "therefore"
+  ],
+  "ant": "",
+  "tip": "앞 문장의 '결과'를 이끄는 접속부사다. 접속사 so와 달리 콤마만으로 두 절을 잇지 못하고 세미콜론이나 마침표 뒤에 쓴다.",
+  "q": {
+   "s": "Demand for the product far exceeded expectations. -------, the company had to hire additional factory workers.",
+   "o": [
+    "Consequently",
+    "Nevertheless",
+    "Otherwise",
+    "Instead"
+   ],
+   "a": 0,
+   "k": "수요 초과의 '결과'로 인력을 추가 채용했으므로 Consequently가 정답. Nevertheless(그럼에도), Otherwise(그렇지 않으면), Instead(대신에)는 두 문장의 인과 관계에 맞지 않는다."
+  }
+ },
+ {
+  "w": "considerably",
+  "pos": "adv",
+  "m": [
+   "상당히",
+   "꽤"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "Online sales have increased *considerably* since we redesigned our website.",
+  "exKo": "웹사이트를 새로 단장한 이후 온라인 매출이 상당히 늘었다.",
+  "col": [
+   {
+    "e": "increase considerably",
+    "k": "상당히 증가하다"
+   },
+   {
+    "e": "considerably cheaper",
+    "k": "훨씬 저렴한"
+   },
+   {
+    "e": "considerably more",
+    "k": "훨씬 더 많은"
+   }
+  ],
+  "der": [
+   {
+    "w": "considerable",
+    "pos": "adj",
+    "m": "상당한"
+   },
+   {
+    "w": "consider",
+    "pos": "v",
+    "m": "고려하다"
+   }
+  ],
+  "para": [
+   "significantly",
+   "substantially"
+  ],
+  "ant": "slightly",
+  "tip": "considerably는 비교급 앞에서 '훨씬'이라는 강조 부사로 쓰인다(considerably lower). very는 비교급을 수식할 수 없다는 점이 함정으로 나온다.",
+  "q": {
+   "s": "The new laptop is ------- lighter than its predecessor, making it ideal for frequent travelers.",
+   "o": [
+    "very",
+    "considerable",
+    "considerably",
+    "consideration"
+   ],
+   "a": 2,
+   "k": "비교급 lighter를 강조하는 부사 자리이므로 considerably가 정답. very는 비교급을 수식할 수 없고, considerable은 형용사, consideration은 명사다."
+  }
+ },
+ {
+  "w": "currently",
+  "pos": "adv",
+  "m": [
+   "현재",
+   "지금"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "We are *currently* looking for an experienced accountant to join our finance team.",
+  "exKo": "우리는 현재 재무팀에서 함께 일할 경력 있는 회계사를 찾고 있다.",
+  "col": [
+   {
+    "e": "be currently -ing",
+    "k": "현재 ~하고 있다"
+   },
+   {
+    "e": "currently available",
+    "k": "현재 이용할 수 있는"
+   },
+   {
+    "e": "currently under construction",
+    "k": "현재 공사 중인"
+   }
+  ],
+  "der": [
+   {
+    "w": "current",
+    "pos": "adj",
+    "m": "현재의"
+   },
+   {
+    "w": "currency",
+    "pos": "n",
+    "m": "통화"
+   }
+  ],
+  "para": [
+   "at present",
+   "now",
+   "presently"
+  ],
+  "ant": "",
+  "tip": "현재시제·현재진행형과 어울리며 과거시제와 함께 쓰면 오답이다. 시제 단서로 previously, formerly 등과 구분하는 문제가 나온다.",
+  "q": {
+   "s": "The east wing of the museum is ------- closed for renovations but will reopen in May.",
+   "o": [
+    "previously",
+    "formerly",
+    "currently",
+    "lately"
+   ],
+   "a": 2,
+   "k": "현재시제 is와 '5월에 다시 문을 연다'는 내용으로 보아 '현재' 닫혀 있다는 뜻의 currently가 정답. previously와 formerly는 과거의 일을, lately는 주로 현재완료와 쓰인다."
+  }
+ },
+ {
+  "w": "directly",
+  "pos": "adv",
+  "m": [
+   "직접",
+   "곧바로"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Please send your application *directly* to the human resources manager.",
+  "exKo": "지원서는 인사부장에게 직접 보내기 바란다.",
+  "col": [
+   {
+    "e": "report directly to",
+    "k": "~에게 직속으로 보고하다"
+   },
+   {
+    "e": "contact directly",
+    "k": "직접 연락하다"
+   },
+   {
+    "e": "directly after",
+    "k": "~ 직후에"
+   }
+  ],
+  "der": [
+   {
+    "w": "direct",
+    "pos": "adj",
+    "m": "직접적인"
+   },
+   {
+    "w": "direction",
+    "pos": "n",
+    "m": "방향, 지시"
+   },
+   {
+    "w": "director",
+    "pos": "n",
+    "m": "책임자, 감독"
+   }
+  ],
+  "para": [
+   "straight",
+   "personally"
+  ],
+  "ant": "indirectly",
+  "tip": "report directly to(~의 직속 부하이다), directly after(~ 직후에)가 빈출이다. 동사를 수식하는 부사 자리에 명사 direction, director를 넣는 오답에 주의한다.",
+  "q": {
+   "s": "In her new role, Ms. Han will report ------- to the vice president of operations.",
+   "o": [
+    "direction",
+    "directive",
+    "director",
+    "directly"
+   ],
+   "a": 3,
+   "k": "자동사 report 뒤에서 동사를 수식하는 부사 자리이므로 directly가 정답. report directly to는 '~에게 직속으로 보고하다'라는 뜻이다. 나머지는 모두 명사다."
+  }
+ },
+ {
+  "w": "eventually",
+  "pos": "adv",
+  "m": [
+   "결국",
+   "마침내"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Sales were slow at first, but the product *eventually* became the company's best seller.",
+  "exKo": "처음에는 판매가 부진했지만 그 제품은 결국 회사의 최고 인기 상품이 되었다.",
+  "col": [
+   {
+    "e": "eventually lead to",
+    "k": "결국 ~로 이어지다"
+   },
+   {
+    "e": "will eventually",
+    "k": "결국 ~할 것이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "eventual",
+    "pos": "adj",
+    "m": "최종적인, 궁극적인"
+   },
+   {
+    "w": "event",
+    "pos": "n",
+    "m": "행사, 사건"
+   }
+  ],
+  "para": [
+   "finally",
+   "in the end",
+   "ultimately"
+  ],
+  "ant": "",
+  "tip": "오랜 과정이나 어려움 끝에 '결국' 일어난 일을 나타낸다. 수동태 be와 p.p. 사이 부사 자리로 자주 출제된다.",
+  "q": {
+   "s": "Although the project faced several setbacks, it was ------- completed within budget.",
+   "o": [
+    "eventual",
+    "eventually",
+    "event",
+    "eventful"
+   ],
+   "a": 1,
+   "k": "수동태 was와 과거분사 completed 사이의 부사 자리이므로 eventually가 정답. eventual과 eventful은 형용사, event는 명사다."
+  }
+ },
+ {
+  "w": "exclusively",
+  "pos": "adv",
+  "m": [
+   "오로지",
+   "독점적으로"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "This parking area is reserved *exclusively* for hotel guests.",
+  "exKo": "이 주차 구역은 오로지 호텔 투숙객만 이용할 수 있다.",
+  "col": [
+   {
+    "e": "exclusively for",
+    "k": "오로지 ~만을 위해"
+   },
+   {
+    "e": "available exclusively",
+    "k": "독점 판매되는"
+   },
+   {
+    "e": "deal exclusively with",
+    "k": "~만을 전문으로 다루다"
+   }
+  ],
+  "der": [
+   {
+    "w": "exclusive",
+    "pos": "adj",
+    "m": "독점적인, 전용의"
+   },
+   {
+    "w": "exclude",
+    "pos": "v",
+    "m": "제외하다"
+   },
+   {
+    "w": "exclusion",
+    "pos": "n",
+    "m": "제외"
+   }
+  ],
+  "para": [
+   "only",
+   "solely"
+  ],
+  "ant": "",
+  "tip": "exclusively for/to(오로지 ~에게만)가 빈출이다. 명사를 수식할 때는 형용사 exclusive(an exclusive offer)를 쓴다.",
+  "q": {
+   "s": "This offer is valid ------- for customers who purchase a two-year service plan.",
+   "o": [
+    "exclusively",
+    "exclusive",
+    "exclusion",
+    "exclude"
+   ],
+   "a": 0,
+   "k": "형용사 valid 뒤에서 전치사구 for customers를 한정하는 부사 자리이므로 '오로지'를 뜻하는 exclusively가 정답. exclusive는 형용사, exclusion은 명사, exclude는 동사다."
+  }
+ },
+ {
+  "w": "formerly",
+  "pos": "adv",
+  "m": [
+   "이전에",
+   "예전에"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The building, *formerly* a textile factory, now houses several technology start-ups.",
+  "exKo": "예전에 섬유 공장이었던 그 건물에는 현재 여러 기술 스타트업이 입주해 있다.",
+  "col": [
+   {
+    "e": "formerly known as",
+    "k": "이전에 ~로 알려진"
+   },
+   {
+    "e": "formerly called",
+    "k": "예전에 ~라고 불린"
+   }
+  ],
+  "der": [
+   {
+    "w": "former",
+    "pos": "adj",
+    "m": "이전의, 전자의"
+   }
+  ],
+  "para": [
+   "previously",
+   "once"
+  ],
+  "ant": "",
+  "tip": "회사명 변경·합병 기사의 formerly known as(구 ~)가 빈출이다. 철자가 비슷한 formally(공식적으로)와 혼동하지 않도록 한다.",
+  "q": {
+   "s": "Brightline Media, ------- known as Kessler Publishing, has opened a new office in Seoul.",
+   "o": [
+    "formally",
+    "former",
+    "formerly",
+    "forming"
+   ],
+   "a": 2,
+   "k": "'이전에 ~로 알려진'이라는 뜻의 formerly known as가 정답. formally는 '공식적으로'라는 뜻이고, former는 형용사라 과거분사를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "frequently",
+  "pos": "adv",
+  "m": [
+   "자주",
+   "빈번히"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Please check the list of *frequently* asked questions before contacting our support team.",
+  "exKo": "고객 지원팀에 연락하기 전에 자주 묻는 질문 목록을 확인하기 바란다.",
+  "col": [
+   {
+    "e": "frequently asked questions",
+    "k": "자주 묻는 질문"
+   },
+   {
+    "e": "frequently used",
+    "k": "자주 쓰이는"
+   },
+   {
+    "e": "travel frequently",
+    "k": "자주 출장 가다"
+   }
+  ],
+  "der": [
+   {
+    "w": "frequent",
+    "pos": "adj",
+    "m": "잦은, 빈번한"
+   },
+   {
+    "w": "frequency",
+    "pos": "n",
+    "m": "빈도"
+   }
+  ],
+  "para": [
+   "often",
+   "regularly"
+  ],
+  "ant": "rarely",
+  "tip": "자동사 뒤나 과거분사 앞에서 부사 frequently를 쓴다. 형용사 frequent는 frequent customers(단골)처럼 명사를 꾸민다.",
+  "q": {
+   "s": "Employees who travel ------- for work are eligible for a complimentary airport lounge membership.",
+   "o": [
+    "frequently",
+    "frequent",
+    "frequency",
+    "frequented"
+   ],
+   "a": 0,
+   "k": "자동사 travel을 수식하는 부사 자리이므로 frequently가 정답. frequent는 형용사, frequency는 명사, frequented는 과거분사다."
+  }
+ },
+ {
+  "w": "furthermore",
+  "pos": "adv",
+  "m": [
+   "게다가",
+   "더욱이"
+  ],
+  "tier": 2,
+  "parts": [
+   6,
+   7
+  ],
+  "ex": "The new software is easy to use. *Furthermore*, it costs less than our current system.",
+  "exKo": "새 소프트웨어는 사용하기 쉽다. 게다가 현재 시스템보다 비용도 적게 든다.",
+  "col": [
+   {
+    "e": "Furthermore, S + V",
+    "k": "게다가 ~하다"
+   },
+   {
+    "e": "and furthermore",
+    "k": "그리고 더욱이"
+   }
+  ],
+  "der": [
+   {
+    "w": "further",
+    "pos": "adj",
+    "m": "추가의, 그 이상의"
+   }
+  ],
+  "para": [
+   "moreover",
+   "in addition",
+   "additionally"
+  ],
+  "ant": "",
+  "tip": "앞 내용과 같은 방향의 정보를 덧붙이는 접속부사다. Part 6 문맥 문제에서 However(역접), Therefore(결과)와 구분해야 한다.",
+  "q": {
+   "s": "The apartment is close to the subway station. -------, it is within walking distance of several shopping centers.",
+   "o": [
+    "However",
+    "Furthermore",
+    "Otherwise",
+    "Instead"
+   ],
+   "a": 1,
+   "k": "역 근처라는 장점에 쇼핑센터와도 가깝다는 장점을 추가하므로 Furthermore가 정답. However는 대조, Otherwise는 '그렇지 않으면', Instead는 '대신에'라 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "hardly",
+  "pos": "adv",
+  "m": [
+   "거의 ~않다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6
+  ],
+  "ex": "The new photocopier has *hardly* been used since it was installed last month.",
+  "exKo": "새 복사기는 지난달 설치된 이후로 거의 사용되지 않았다.",
+  "col": [
+   {
+    "e": "hardly ever",
+    "k": "거의 ~하지 않다"
+   },
+   {
+    "e": "hardly any",
+    "k": "거의 없는"
+   },
+   {
+    "e": "can hardly",
+    "k": "거의 ~할 수 없다"
+   }
+  ],
+  "der": [
+   {
+    "w": "hard",
+    "pos": "adj",
+    "m": "어려운, 단단한"
+   }
+  ],
+  "para": [
+   "barely",
+   "scarcely"
+  ],
+  "ant": "",
+  "tip": "hardly는 그 자체로 부정의 뜻이라 not, never와 함께 쓰지 않는다. hard(열심히, 세게)와 뜻이 전혀 다르다는 점이 함정이다.",
+  "q": {
+   "s": "The conference room was so crowded that there was ------- any space left to stand.",
+   "o": [
+    "hardly",
+    "hard",
+    "harder",
+    "hardest"
+   ],
+   "a": 0,
+   "k": "any와 함께 '거의 없는'이라는 부정의 뜻을 나타내는 hardly가 정답. hard는 '열심히, 어려운'이라는 뜻으로 any를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "immediately",
+  "pos": "adv",
+  "m": [
+   "즉시",
+   "곧바로"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Please report any equipment malfunctions to your supervisor *immediately*.",
+  "exKo": "장비 고장은 즉시 상사에게 보고하기 바란다.",
+  "col": [
+   {
+    "e": "immediately after",
+    "k": "~ 직후에"
+   },
+   {
+    "e": "take effect immediately",
+    "k": "즉시 발효되다"
+   },
+   {
+    "e": "immediately available",
+    "k": "즉시 이용 가능한"
+   }
+  ],
+  "der": [
+   {
+    "w": "immediate",
+    "pos": "adj",
+    "m": "즉각적인, 직속의"
+   }
+  ],
+  "para": [
+   "at once",
+   "right away",
+   "promptly"
+  ],
+  "ant": "",
+  "tip": "immediately after/following(~ 직후에)가 자주 나온다. 형용사 immediate는 immediate supervisor(직속 상사)처럼 명사를 꾸민다.",
+  "q": {
+   "s": "The new parking regulations will take effect ------- after they are approved by the city council.",
+   "o": [
+    "immediate",
+    "immediacy",
+    "more immediate",
+    "immediately"
+   ],
+   "a": 3,
+   "k": "after절 앞에서 '~한 직후에'를 만드는 부사 자리이므로 immediately가 정답. immediate는 형용사, immediacy는 명사다."
+  }
+ },
+ {
+  "w": "increasingly",
+  "pos": "adv",
+  "m": [
+   "점점 더"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Online grocery shopping has become *increasingly* popular among older consumers.",
+  "exKo": "온라인 식료품 쇼핑은 고령 소비자 사이에서 점점 더 인기를 얻고 있다.",
+  "col": [
+   {
+    "e": "increasingly popular",
+    "k": "점점 더 인기 있는"
+   },
+   {
+    "e": "increasingly important",
+    "k": "점점 더 중요한"
+   },
+   {
+    "e": "increasingly difficult",
+    "k": "점점 더 어려운"
+   }
+  ],
+  "der": [
+   {
+    "w": "increase",
+    "pos": "v",
+    "m": "증가하다"
+   },
+   {
+    "w": "increasing",
+    "pos": "adj",
+    "m": "증가하는"
+   }
+  ],
+  "para": [
+   "more and more",
+   "progressively"
+  ],
+  "ant": "",
+  "tip": "become increasingly + 형용사(점점 더 ~해지다) 형태가 전형적이다. 형용사를 꾸미는 자리에 분사 increasing을 넣는 오답이 자주 쓰인다.",
+  "q": {
+   "s": "Remote work has become ------- common in the technology industry over the past decade.",
+   "o": [
+    "increase",
+    "increasingly",
+    "increased",
+    "increasing"
+   ],
+   "a": 1,
+   "k": "형용사 common을 수식하는 부사 자리이므로 increasingly가 정답. increasing과 increased는 분사 형용사라 다른 형용사를 꾸밀 수 없다."
+  }
+ },
+ {
+  "w": "initially",
+  "pos": "adv",
+  "m": [
+   "처음에",
+   "당초"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The project was *initially* scheduled to be completed in March.",
+  "exKo": "그 프로젝트는 당초 3월에 완료될 예정이었다.",
+  "col": [
+   {
+    "e": "initially scheduled",
+    "k": "당초 예정된"
+   },
+   {
+    "e": "initially expected",
+    "k": "처음에 예상된"
+   }
+  ],
+  "der": [
+   {
+    "w": "initial",
+    "pos": "adj",
+    "m": "처음의, 초기의"
+   },
+   {
+    "w": "initiate",
+    "pos": "v",
+    "m": "시작하다"
+   }
+  ],
+  "para": [
+   "at first",
+   "originally"
+  ],
+  "ant": "",
+  "tip": "be initially scheduled/planned to do처럼 수동태 사이에 자주 오며, 뒤에 but으로 변경 사항이 이어지는 경우가 많다.",
+  "q": {
+   "s": "The store was ------- planned to open in April, but construction delays pushed the date back.",
+   "o": [
+    "initial",
+    "initially",
+    "initiate",
+    "initiative"
+   ],
+   "a": 1,
+   "k": "수동태 was와 과거분사 planned 사이의 부사 자리이므로 initially가 정답. initial은 형용사, initiate는 동사, initiative는 명사다."
+  }
+ },
+ {
+  "w": "meanwhile",
+  "pos": "adv",
+  "m": [
+   "그동안",
+   "한편"
+  ],
+  "tier": 2,
+  "parts": [
+   6,
+   7
+  ],
+  "ex": "The office will be repainted next week. *Meanwhile*, staff may work from home.",
+  "exKo": "다음 주에 사무실을 새로 칠한다. 그동안 직원들은 재택근무를 해도 된다.",
+  "col": [
+   {
+    "e": "Meanwhile, S + V",
+    "k": "그동안 ~하다"
+   },
+   {
+    "e": "in the meanwhile",
+    "k": "그 사이에"
+   }
+  ],
+  "der": [],
+  "para": [
+   "in the meantime"
+  ],
+  "ant": "",
+  "tip": "Meanwhile은 접속부사라 단독으로 콤마와 함께 쓴다. 뒤에 절이 오는 접속사 while, 명사가 오는 전치사 during과 구분하는 문제가 나온다.",
+  "q": {
+   "s": "The main lobby is being renovated. -------, visitors should use the side entrance on Elm Street.",
+   "o": [
+    "While",
+    "During",
+    "Meanwhile",
+    "Whereas"
+   ],
+   "a": 2,
+   "k": "콤마 뒤에 완전한 문장이 오는 접속부사 자리이며 '공사하는 그동안'이라는 뜻이므로 Meanwhile이 정답. While과 Whereas는 접속사, During은 전치사라 단독으로 쓸 수 없다."
+  }
+ },
+ {
+  "w": "moreover",
+  "pos": "adv",
+  "m": [
+   "게다가",
+   "더욱이"
+  ],
+  "tier": 2,
+  "parts": [
+   6,
+   7
+  ],
+  "ex": "The proposal is too expensive. *Moreover*, it does not address our main concerns.",
+  "exKo": "그 제안은 너무 비싸다. 게다가 우리의 주요 우려 사항도 다루지 않는다.",
+  "col": [
+   {
+    "e": "Moreover, S + V",
+    "k": "게다가 ~하다"
+   },
+   {
+    "e": "and moreover",
+    "k": "그리고 더욱이"
+   }
+  ],
+  "der": [],
+  "para": [
+   "furthermore",
+   "in addition",
+   "besides"
+  ],
+  "ant": "",
+  "tip": "앞 문장과 같은 방향(긍정+긍정, 부정+부정)의 내용을 추가한다. 접속부사라 뒤에 명사만 올 수 없고 완전한 절이 와야 한다.",
+  "q": {
+   "s": "Our new courier service is faster than the previous one. -------, it offers real-time package tracking.",
+   "o": [
+    "Despite",
+    "Unless",
+    "Whereas",
+    "Moreover"
+   ],
+   "a": 3,
+   "k": "콤마 뒤 완전한 문장이 오는 접속부사 자리이며 장점을 추가하므로 Moreover가 정답. Despite는 전치사, Unless와 Whereas는 접속사라 이 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "nevertheless",
+  "pos": "adv",
+  "m": [
+   "그럼에도 불구하고"
+  ],
+  "tier": 3,
+  "parts": [
+   6,
+   7
+  ],
+  "ex": "The weather was poor; *nevertheless*, the outdoor festival attracted thousands of visitors.",
+  "exKo": "날씨가 좋지 않았지만, 그럼에도 불구하고 야외 축제에는 수천 명의 방문객이 몰렸다.",
+  "col": [
+   {
+    "e": "nevertheless, S + V",
+    "k": "그럼에도 불구하고 ~하다"
+   },
+   {
+    "e": "but nevertheless",
+    "k": "그러나 그럼에도"
+   }
+  ],
+  "der": [],
+  "para": [
+   "nonetheless",
+   "however",
+   "even so"
+  ],
+  "ant": "",
+  "tip": "같은 뜻이라도 despite/in spite of는 전치사(+명사), although는 접속사(+절), nevertheless는 접속부사(마침표·세미콜론 뒤)로 쓰임이 다르다.",
+  "q": {
+   "s": "Sales declined slightly in the third quarter. -------, the company still met its annual revenue target.",
+   "o": [
+    "Although",
+    "Despite",
+    "Nevertheless",
+    "Because of"
+   ],
+   "a": 2,
+   "k": "앞 문장과 대조되는 내용을 마침표 뒤에서 잇는 접속부사 자리이므로 Nevertheless가 정답. Although는 접속사, Despite와 Because of는 전치사라 콤마 뒤에 바로 절이 올 수 없다."
+  }
+ },
+ {
+  "w": "newly",
+  "pos": "adv",
+  "m": [
+   "새로",
+   "최근에"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *newly* renovated lobby will be open to the public next Monday.",
+  "exKo": "새로 단장한 로비는 다음 주 월요일에 일반에 공개된다.",
+  "col": [
+   {
+    "e": "newly hired",
+    "k": "새로 채용된"
+   },
+   {
+    "e": "newly opened",
+    "k": "새로 문을 연"
+   },
+   {
+    "e": "newly appointed",
+    "k": "새로 임명된"
+   }
+  ],
+  "der": [
+   {
+    "w": "new",
+    "pos": "adj",
+    "m": "새로운"
+   }
+  ],
+  "para": [
+   "recently"
+  ],
+  "ant": "",
+  "tip": "newly + 과거분사(newly hired employees) 형태로 쓰인다. 형용사 new는 과거분사를 수식할 수 없다는 점이 품사 문제의 핵심이다.",
+  "q": {
+   "s": "All ------- hired staff members must attend an orientation session on their first day.",
+   "o": [
+    "new",
+    "newly",
+    "newness",
+    "news"
+   ],
+   "a": 1,
+   "k": "과거분사 hired를 수식하는 부사 자리이므로 newly가 정답. new는 형용사라 분사를 꾸밀 수 없고, newness와 news는 명사다."
+  }
+ },
+ {
+  "w": "occasionally",
+  "pos": "adv",
+  "m": [
+   "가끔",
+   "때때로"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5
+  ],
+  "ex": "The elevator *occasionally* stops between floors, so a technician has been called.",
+  "exKo": "엘리베이터가 가끔 층 사이에서 멈춰서 기술자를 불렀다.",
+  "col": [
+   {
+    "e": "only occasionally",
+    "k": "아주 가끔"
+   },
+   {
+    "e": "occasionally work from home",
+    "k": "가끔 재택근무를 하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "occasion",
+    "pos": "n",
+    "m": "경우, 행사"
+   },
+   {
+    "w": "occasional",
+    "pos": "adj",
+    "m": "가끔의"
+   }
+  ],
+  "para": [
+   "sometimes",
+   "from time to time"
+  ],
+  "ant": "frequently",
+  "tip": "빈도부사로 일반동사 앞, be동사·조동사 뒤에 온다. 형용사 occasional(an occasional visitor)과 품사를 구분해야 한다.",
+  "q": {
+   "s": "The marketing director ------- works from the branch office in Busan.",
+   "o": [
+    "occasion",
+    "occasionally",
+    "occasional",
+    "occasioned"
+   ],
+   "a": 1,
+   "k": "주어와 동사 works 사이에서 동사를 수식하는 부사 자리이므로 occasionally가 정답. occasional은 형용사, occasion은 명사다."
+  }
+ },
+ {
+  "w": "otherwise",
+  "pos": "adv",
+  "m": [
+   "그렇지 않으면",
+   "달리"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Please submit the form by Friday; *otherwise*, your registration may be canceled.",
+  "exKo": "금요일까지 양식을 제출하기 바란다. 그렇지 않으면 등록이 취소될 수 있다.",
+  "col": [
+   {
+    "e": "unless otherwise noted",
+    "k": "달리 명시되지 않는 한"
+   },
+   {
+    "e": "otherwise, S + V",
+    "k": "그렇지 않으면 ~하다"
+   },
+   {
+    "e": "think otherwise",
+    "k": "달리 생각하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "or else",
+   "if not"
+  ],
+  "ant": "",
+  "tip": "'그렇지 않으면'이라는 접속부사와 unless otherwise stated/noted(달리 명시되지 않는 한)라는 관용 표현이 모두 출제된다.",
+  "q": {
+   "s": "Unless ------- stated, all prices on our website include shipping and handling.",
+   "o": [
+    "otherwise",
+    "instead",
+    "likewise",
+    "therefore"
+   ],
+   "a": 0,
+   "k": "unless otherwise stated는 '달리 명시되지 않는 한'이라는 관용 표현이므로 otherwise가 정답. instead, likewise, therefore는 이 구문에 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "particularly",
+  "pos": "adv",
+  "m": [
+   "특히"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The new lunch menu has been *particularly* popular with younger customers.",
+  "exKo": "새 점심 메뉴는 특히 젊은 고객들에게 인기가 많았다.",
+  "col": [
+   {
+    "e": "particularly popular",
+    "k": "특히 인기 있는"
+   },
+   {
+    "e": "particularly important",
+    "k": "특히 중요한"
+   },
+   {
+    "e": "particularly when",
+    "k": "특히 ~할 때"
+   }
+  ],
+  "der": [
+   {
+    "w": "particular",
+    "pos": "adj",
+    "m": "특정한, 까다로운"
+   }
+  ],
+  "para": [
+   "especially",
+   "notably",
+   "in particular"
+  ],
+  "ant": "",
+  "tip": "particularly + 형용사/전치사구/접속사절 형태로 쓴다. in particular(특히)와 같은 뜻이며, 형용사 particular와 품사 구분 문제가 나온다.",
+  "q": {
+   "s": "The hiking trail is ------- beautiful in autumn, when the leaves change color.",
+   "o": [
+    "particular",
+    "particulars",
+    "particularity",
+    "particularly"
+   ],
+   "a": 3,
+   "k": "형용사 beautiful을 수식하는 부사 자리이므로 particularly가 정답. particular는 형용사, particulars와 particularity는 명사다."
+  }
+ },
+ {
+  "w": "periodically",
+  "pos": "adv",
+  "m": [
+   "정기적으로",
+   "주기적으로"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Employees are required to change their passwords *periodically* to protect company data.",
+  "exKo": "직원들은 회사 데이터를 보호하기 위해 비밀번호를 주기적으로 변경해야 한다.",
+  "col": [
+   {
+    "e": "periodically inspected",
+    "k": "정기적으로 점검되는"
+   },
+   {
+    "e": "periodically review",
+    "k": "주기적으로 검토하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "periodic",
+    "pos": "adj",
+    "m": "주기적인"
+   },
+   {
+    "w": "periodical",
+    "pos": "n",
+    "m": "정기 간행물"
+   },
+   {
+    "w": "period",
+    "pos": "n",
+    "m": "기간"
+   }
+  ],
+  "para": [
+   "regularly",
+   "at regular intervals"
+  ],
+  "ant": "",
+  "tip": "be periodically + p.p.처럼 수동태 사이 부사 자리로 자주 나온다. periodical은 '정기 간행물'이라는 명사로 쓰이니 혼동하지 않도록 한다.",
+  "q": {
+   "s": "Fire extinguishers in the building are ------- inspected to ensure that they are in working order.",
+   "o": [
+    "periodic",
+    "period",
+    "periodically",
+    "periodical"
+   ],
+   "a": 2,
+   "k": "수동태 are와 과거분사 inspected 사이의 부사 자리이므로 periodically가 정답. periodic은 형용사, period와 periodical은 명사다."
+  }
+ },
+ {
+  "w": "precisely",
+  "pos": "adv",
+  "m": [
+   "정확히",
+   "바로"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The keynote speech will begin at *precisely* 9 A.M. in the main hall.",
+  "exKo": "기조연설은 대강당에서 정확히 오전 9시에 시작한다.",
+  "col": [
+   {
+    "e": "at precisely + 시각",
+    "k": "정확히 ~시에"
+   },
+   {
+    "e": "precisely because",
+    "k": "바로 ~ 때문에"
+   },
+   {
+    "e": "more precisely",
+    "k": "더 정확히 말하면"
+   }
+  ],
+  "der": [
+   {
+    "w": "precise",
+    "pos": "adj",
+    "m": "정확한"
+   },
+   {
+    "w": "precision",
+    "pos": "n",
+    "m": "정밀성"
+   }
+  ],
+  "para": [
+   "exactly"
+  ],
+  "ant": "",
+  "tip": "시각·수치 앞에서 '정확히'라는 뜻으로 쓰여 exactly와 바꿔 쓸 수 있다. 형용사 precise(precise measurements)와 품사를 구분해야 한다.",
+  "q": {
+   "s": "The express train to Busan departs at ------- 7:15 A.M., so please arrive at the station early.",
+   "o": [
+    "precisely",
+    "precise",
+    "precision",
+    "preciseness"
+   ],
+   "a": 0,
+   "k": "시각 7:15 A.M.을 수식해 '정확히'를 뜻하는 부사 자리이므로 precisely가 정답. precise는 형용사, precision과 preciseness는 명사다."
+  }
+ },
+ {
+  "w": "previously",
+  "pos": "adv",
+  "m": [
+   "이전에",
+   "앞서"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Mr. Patel *previously* worked as a sales manager at a software company.",
+  "exKo": "파텔 씨는 이전에 한 소프트웨어 회사에서 영업부장으로 일했다.",
+  "col": [
+   {
+    "e": "as previously mentioned",
+    "k": "앞서 언급했듯이"
+   },
+   {
+    "e": "previously scheduled",
+    "k": "이전에 예정된"
+   },
+   {
+    "e": "as previously announced",
+    "k": "앞서 공지한 대로"
+   }
+  ],
+  "der": [
+   {
+    "w": "previous",
+    "pos": "adj",
+    "m": "이전의"
+   }
+  ],
+  "para": [
+   "formerly",
+   "before",
+   "earlier"
+  ],
+  "ant": "",
+  "tip": "과거시제·현재완료와 어울린다. 공지문의 as previously announced/mentioned(앞서 공지한 대로) 형태가 빈출이다.",
+  "q": {
+   "s": "As ------- announced, the employee cafeteria will be closed on Friday for maintenance.",
+   "o": [
+    "previous",
+    "previously",
+    "preview",
+    "prevention"
+   ],
+   "a": 1,
+   "k": "As와 과거분사 announced 사이에서 분사를 수식하는 부사 자리이므로 previously가 정답. previous는 형용사, preview와 prevention은 명사다."
+  }
+ },
+ {
+  "w": "primarily",
+  "pos": "adv",
+  "m": [
+   "주로"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Our products are sold *primarily* through online retailers.",
+  "exKo": "우리 제품은 주로 온라인 소매업체를 통해 판매된다.",
+  "col": [
+   {
+    "e": "primarily responsible for",
+    "k": "주로 ~을 책임지는"
+   },
+   {
+    "e": "primarily due to",
+    "k": "주로 ~ 때문에"
+   },
+   {
+    "e": "be primarily used for",
+    "k": "주로 ~에 쓰이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "primary",
+    "pos": "adj",
+    "m": "주된, 기본적인"
+   }
+  ],
+  "para": [
+   "mainly",
+   "mostly",
+   "chiefly"
+  ],
+  "ant": "",
+  "tip": "primarily = mainly로 패러프레이징된다. 전치사구(due to, through) 앞이나 과거분사 앞 부사 자리에 자주 나온다.",
+  "q": {
+   "s": "The decline in profits was ------- due to rising material costs.",
+   "o": [
+    "primary",
+    "prime",
+    "primacy",
+    "primarily"
+   ],
+   "a": 3,
+   "k": "전치사구 due to rising material costs를 수식하는 부사 자리이므로 primarily가 정답. primary와 prime은 형용사, primacy는 명사다."
+  }
+ },
+ {
+  "w": "promptly",
+  "pos": "adv",
+  "m": [
+   "즉시",
+   "신속히",
+   "정각에"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The meeting will begin *promptly* at 10 A.M., so please arrive on time.",
+  "exKo": "회의는 오전 10시 정각에 시작하니 늦지 않게 오기 바란다.",
+  "col": [
+   {
+    "e": "respond promptly",
+    "k": "신속히 응답하다"
+   },
+   {
+    "e": "promptly at + 시각",
+    "k": "~시 정각에"
+   }
+  ],
+  "der": [
+   {
+    "w": "prompt",
+    "pos": "adj",
+    "m": "신속한"
+   },
+   {
+    "w": "promptness",
+    "pos": "n",
+    "m": "신속함"
+   }
+  ],
+  "para": [
+   "quickly",
+   "immediately",
+   "on time"
+  ],
+  "ant": "",
+  "tip": "'신속히'와 'promptly at 9(9시 정각에)'의 두 뜻이 모두 출제된다. 형용사 prompt는 a prompt reply처럼 명사를 꾸민다.",
+  "q": {
+   "s": "Ms. Cho replied ------- to the client's request, which helped the firm win the contract.",
+   "o": [
+    "prompt",
+    "promptly",
+    "prompted",
+    "promptness"
+   ],
+   "a": 1,
+   "k": "자동사 replied를 수식하는 부사 자리이므로 promptly(신속히)가 정답. prompt는 형용사, promptness는 명사, prompted는 과거(분사)다."
+  }
+ },
+ {
+  "w": "readily",
+  "pos": "adv",
+  "m": [
+   "손쉽게",
+   "선뜻"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Spare parts for this model are *readily* available at most hardware stores.",
+  "exKo": "이 모델의 예비 부품은 대부분의 철물점에서 손쉽게 구할 수 있다.",
+  "col": [
+   {
+    "e": "readily available",
+    "k": "쉽게 구할 수 있는"
+   },
+   {
+    "e": "readily accessible",
+    "k": "쉽게 이용할 수 있는"
+   },
+   {
+    "e": "readily agree",
+    "k": "선뜻 동의하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "ready",
+    "pos": "adj",
+    "m": "준비된"
+   },
+   {
+    "w": "readiness",
+    "pos": "n",
+    "m": "준비(된 상태)"
+   }
+  ],
+  "para": [
+   "easily",
+   "freely"
+  ],
+  "ant": "",
+  "tip": "readily available/accessible(쉽게 구할 수 있는/이용할 수 있는)이 압도적 빈출 연어다. Part 7에서 easily obtained로 바꿔 표현된다.",
+  "q": {
+   "s": "Product manuals are ------- accessible on our website in several languages.",
+   "o": [
+    "ready",
+    "readiness",
+    "readily",
+    "readied"
+   ],
+   "a": 2,
+   "k": "형용사 accessible을 수식하는 부사 자리이므로 readily가 정답. ready는 형용사, readiness는 명사, readied는 과거분사다."
+  }
+ },
+ {
+  "w": "regularly",
+  "pos": "adv",
+  "m": [
+   "정기적으로",
+   "규칙적으로"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "Our technicians *regularly* inspect the elevators to ensure passenger safety.",
+  "exKo": "우리 기술자들은 승객 안전을 위해 엘리베이터를 정기적으로 점검한다.",
+  "col": [
+   {
+    "e": "regularly scheduled",
+    "k": "정기적으로 예정된"
+   },
+   {
+    "e": "meet regularly",
+    "k": "정기적으로 만나다"
+   },
+   {
+    "e": "regularly updated",
+    "k": "정기적으로 갱신되는"
+   }
+  ],
+  "der": [
+   {
+    "w": "regular",
+    "pos": "adj",
+    "m": "정기적인, 단골의"
+   },
+   {
+    "w": "regularity",
+    "pos": "n",
+    "m": "규칙성"
+   }
+  ],
+  "para": [
+   "routinely",
+   "periodically",
+   "on a regular basis"
+  ],
+  "ant": "",
+  "tip": "regularly = on a regular basis로 패러프레이징된다. 형용사 regular는 regular customers(단골 고객)처럼 명사를 꾸민다.",
+  "q": {
+   "s": "The company website is updated ------- with news about upcoming events.",
+   "o": [
+    "regularly",
+    "regular",
+    "regularity",
+    "regulate"
+   ],
+   "a": 0,
+   "k": "수동태 is updated 뒤에서 동사를 수식하는 부사 자리이므로 regularly가 정답. regular는 형용사, regularity는 명사, regulate는 동사다."
+  }
+ },
+ {
+  "w": "relatively",
+  "pos": "adv",
+  "m": [
+   "비교적",
+   "상대적으로"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The hotel is *relatively* small but offers excellent service and amenities.",
+  "exKo": "그 호텔은 비교적 작지만 훌륭한 서비스와 편의 시설을 제공한다.",
+  "col": [
+   {
+    "e": "relatively low",
+    "k": "비교적 낮은"
+   },
+   {
+    "e": "relatively inexpensive",
+    "k": "비교적 저렴한"
+   },
+   {
+    "e": "relatively new",
+    "k": "비교적 새로운"
+   }
+  ],
+  "der": [
+   {
+    "w": "relative",
+    "pos": "adj",
+    "m": "상대적인"
+   },
+   {
+    "w": "relation",
+    "pos": "n",
+    "m": "관계"
+   },
+   {
+    "w": "relate",
+    "pos": "v",
+    "m": "관련시키다"
+   }
+  ],
+  "para": [
+   "comparatively",
+   "fairly"
+  ],
+  "ant": "",
+  "tip": "relatively + 형용사(relatively inexpensive) 형태로 쓰인다. 형용사 relative는 명사로 '친척'이라는 뜻도 있다.",
+  "q": {
+   "s": "Despite its central location, the office space is ------- inexpensive to rent.",
+   "o": [
+    "relative",
+    "relatively",
+    "relation",
+    "relate"
+   ],
+   "a": 1,
+   "k": "형용사 inexpensive를 수식하는 부사 자리이므로 relatively가 정답. relative는 형용사, relation은 명사, relate는 동사다."
+  }
+ },
+ {
+  "w": "respectively",
+  "pos": "adv",
+  "m": [
+   "각각"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Lim and Mr. Ford were promoted to director and manager, *respectively*.",
+  "exKo": "임 씨와 포드 씨는 각각 이사와 부장으로 승진했다.",
+  "col": [
+   {
+    "e": "A and B, respectively",
+    "k": "A와 B 각각"
+   }
+  ],
+  "der": [
+   {
+    "w": "respective",
+    "pos": "adj",
+    "m": "각자의, 각각의"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "앞에 나온 대상들을 순서대로 짝지을 때 문장 끝에 콤마와 함께 쓴다. respectfully(정중하게)와 철자가 비슷해 함정으로 나온다.",
+  "q": {
+   "s": "The first and second prizes went to Ms. Okafor and Mr. Silva, -------.",
+   "o": [
+    "respectively",
+    "respectfully",
+    "respectably",
+    "respective"
+   ],
+   "a": 0,
+   "k": "1등과 2등이 두 사람에게 순서대로 돌아갔다는 뜻이므로 '각각'을 뜻하는 respectively가 정답. respectfully는 '정중하게', respectably는 '남부끄럽지 않게'라는 뜻이고 respective는 형용사다."
+  }
+ },
+ {
+  "w": "shortly",
+  "pos": "adv",
+  "m": [
+   "곧",
+   "얼마 안 되어"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   4,
+   5
+  ],
+  "ex": "The plane will begin boarding *shortly*, so please remain near the gate.",
+  "exKo": "곧 탑승이 시작되니 탑승구 근처에서 기다리기 바란다.",
+  "col": [
+   {
+    "e": "shortly after",
+    "k": "~ 직후에"
+   },
+   {
+    "e": "shortly before",
+    "k": "~ 직전에"
+   },
+   {
+    "e": "shortly thereafter",
+    "k": "그 직후에"
+   }
+  ],
+  "der": [
+   {
+    "w": "short",
+    "pos": "adj",
+    "m": "짧은, 부족한"
+   },
+   {
+    "w": "shortage",
+    "pos": "n",
+    "m": "부족"
+   },
+   {
+    "w": "shorten",
+    "pos": "v",
+    "m": "줄이다"
+   }
+  ],
+  "para": [
+   "soon",
+   "before long"
+  ],
+  "ant": "",
+  "tip": "shortly는 '짧게'가 아니라 '곧'이라는 뜻이다. shortly after/before(직후/직전)가 듣기 안내 방송과 Part 5에 자주 나온다.",
+  "q": {
+   "s": "------- after the new manager was appointed, the store's sales began to improve.",
+   "o": [
+    "Short",
+    "Shortage",
+    "Shorten",
+    "Shortly"
+   ],
+   "a": 3,
+   "k": "접속사 after 앞에서 '~ 직후에'를 만드는 부사 자리이므로 Shortly가 정답. Short는 형용사, Shortage는 명사, Shorten은 동사다."
+  }
+ },
+ {
+  "w": "simultaneously",
+  "pos": "adv",
+  "m": [
+   "동시에"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new smartphone will be released *simultaneously* in Asia and Europe.",
+  "exKo": "새 스마트폰은 아시아와 유럽에서 동시에 출시된다.",
+  "col": [
+   {
+    "e": "simultaneously with",
+    "k": "~와 동시에"
+   },
+   {
+    "e": "occur simultaneously",
+    "k": "동시에 일어나다"
+   }
+  ],
+  "der": [
+   {
+    "w": "simultaneous",
+    "pos": "adj",
+    "m": "동시의"
+   }
+  ],
+  "para": [
+   "at the same time",
+   "concurrently"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 at the same time으로 패러프레이징된다. 형용사형은 simultaneous interpretation(동시통역)처럼 명사를 꾸민다.",
+  "q": {
+   "s": "The two branch offices will open ------- on March 1 to mark the company's 50th anniversary.",
+   "o": [
+    "simultaneous",
+    "simultaneously",
+    "simultaneity",
+    "simulate"
+   ],
+   "a": 1,
+   "k": "자동사 open을 수식하는 부사 자리이므로 simultaneously가 정답. simultaneous는 형용사, simultaneity는 명사, simulate는 동사다."
+  }
+ },
+ {
+  "w": "subsequently",
+  "pos": "adv",
+  "m": [
+   "그 후에",
+   "나중에"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The product was tested in Canada and *subsequently* launched across North America.",
+  "exKo": "그 제품은 캐나다에서 시험을 거친 후 북미 전역에 출시되었다.",
+  "col": [
+   {
+    "e": "and subsequently",
+    "k": "그리고 그 후에"
+   },
+   {
+    "e": "subsequently + p.p.",
+    "k": "이후에 ~되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "subsequent",
+    "pos": "adj",
+    "m": "그 다음의, 이후의"
+   }
+  ],
+  "para": [
+   "later",
+   "afterward"
+  ],
+  "ant": "previously",
+  "tip": "부사 subsequently는 동사 앞에, 형용사 subsequent는 명사 앞에 온다. subsequent to(~ 이후에)는 after와 같은 뜻의 전치사구다.",
+  "q": {
+   "s": "Mr. Tan joined the firm as an intern in 2019 and was ------- hired as a full-time analyst.",
+   "o": [
+    "subsequent",
+    "subsequence",
+    "consequent",
+    "subsequently"
+   ],
+   "a": 3,
+   "k": "수동태 was와 과거분사 hired 사이의 부사 자리이므로 subsequently가 정답. subsequent와 consequent는 형용사, subsequence는 명사다."
+  }
+ },
+ {
+  "w": "temporarily",
+  "pos": "adv",
+  "m": [
+   "일시적으로",
+   "임시로"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The north entrance will be *temporarily* closed while the elevators are being repaired.",
+  "exKo": "엘리베이터를 수리하는 동안 북쪽 출입구는 일시적으로 폐쇄된다.",
+  "col": [
+   {
+    "e": "temporarily closed",
+    "k": "일시적으로 폐쇄된"
+   },
+   {
+    "e": "temporarily unavailable",
+    "k": "일시적으로 이용할 수 없는"
+   },
+   {
+    "e": "temporarily out of stock",
+    "k": "일시 품절된"
+   }
+  ],
+  "der": [
+   {
+    "w": "temporary",
+    "pos": "adj",
+    "m": "임시의, 일시적인"
+   }
+  ],
+  "para": [
+   "for the time being",
+   "briefly"
+  ],
+  "ant": "permanently",
+  "tip": "temporarily closed/unavailable은 공지와 안내 방송의 단골 표현이다. 형용사 temporary는 temporary staff(임시 직원)처럼 명사를 꾸민다.",
+  "q": {
+   "s": "The item you ordered is ------- out of stock but should be available again next week.",
+   "o": [
+    "temporarily",
+    "temporary",
+    "permanently",
+    "timely"
+   ],
+   "a": 0,
+   "k": "'다음 주에 다시 입고된다'는 내용과 어울리는 '일시적으로'의 부사 temporarily가 정답. permanently(영구적으로)는 뒤 내용과 모순되고, temporary와 timely는 형용사다."
+  }
+ },
+ {
+  "w": "therefore",
+  "pos": "adv",
+  "m": [
+   "그러므로",
+   "따라서"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The bridge is closed for repairs; *therefore*, drivers should take an alternative route.",
+  "exKo": "다리가 보수 공사로 폐쇄되었으므로 운전자들은 다른 길로 가야 한다.",
+  "col": [
+   {
+    "e": "therefore, S + V",
+    "k": "그러므로 ~하다"
+   },
+   {
+    "e": "and therefore",
+    "k": "그래서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "thus",
+   "consequently",
+   "as a result"
+  ],
+  "ant": "",
+  "tip": "접속부사라 콤마만으로 두 절을 이을 수 없고 세미콜론, 마침표, 또는 and 뒤에 쓴다. 접속사 so, because와 문법적 쓰임을 구분해야 한다.",
+  "q": {
+   "s": "The venue can hold only 50 people, and ------- early registration is strongly recommended.",
+   "o": [
+    "therefore",
+    "because",
+    "although",
+    "despite"
+   ],
+   "a": 0,
+   "k": "접속사 and 뒤에서 앞 절의 결과를 나타내는 부사 자리이므로 therefore가 정답. because와 although는 접속사라 and 바로 뒤에 겹쳐 쓰면 문장이 성립하지 않고, despite는 전치사다."
+  }
+ },
+ {
+  "w": "ultimately",
+  "pos": "adv",
+  "m": [
+   "궁극적으로",
+   "결국"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The decision to expand overseas will *ultimately* be made by the board of directors.",
+  "exKo": "해외 진출 결정은 최종적으로 이사회가 내리게 된다.",
+  "col": [
+   {
+    "e": "ultimately responsible for",
+    "k": "최종적으로 ~을 책임지는"
+   },
+   {
+    "e": "ultimately lead to",
+    "k": "결국 ~로 이어지다"
+   }
+  ],
+  "der": [
+   {
+    "w": "ultimate",
+    "pos": "adj",
+    "m": "궁극적인, 최종의"
+   }
+  ],
+  "para": [
+   "eventually",
+   "in the end",
+   "finally"
+  ],
+  "ant": "",
+  "tip": "ultimately responsible for(최종 책임이 있는)가 빈출이다. 형용사 ultimate(the ultimate goal)와 품사를 구분해야 한다.",
+  "q": {
+   "s": "The project manager is ------- responsible for ensuring that the work is completed on schedule.",
+   "o": [
+    "ultimate",
+    "ultimatum",
+    "ultimately",
+    "eventual"
+   ],
+   "a": 2,
+   "k": "형용사 responsible을 수식하는 부사 자리이므로 ultimately가 정답. ultimate와 eventual은 형용사, ultimatum은 '최후통첩'이라는 명사다."
+  }
+ },
+ {
+  "w": "unexpectedly",
+  "pos": "adv",
+  "m": [
+   "뜻밖에",
+   "예상외로"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The keynote speaker *unexpectedly* canceled his appearance due to illness.",
+  "exKo": "기조연설자가 병으로 뜻밖에 출연을 취소했다.",
+  "col": [
+   {
+    "e": "unexpectedly high",
+    "k": "예상외로 높은"
+   },
+   {
+    "e": "rise unexpectedly",
+    "k": "예상외로 오르다"
+   }
+  ],
+  "der": [
+   {
+    "w": "unexpected",
+    "pos": "adj",
+    "m": "예상치 못한"
+   },
+   {
+    "w": "expect",
+    "pos": "v",
+    "m": "예상하다"
+   }
+  ],
+  "para": [
+   "suddenly",
+   "surprisingly"
+  ],
+  "ant": "",
+  "tip": "unexpectedly high demand처럼 형용사를 수식할 때는 부사를 쓴다. 형용사 unexpected는 unexpected delays처럼 명사를 직접 꾸민다.",
+  "q": {
+   "s": "Due to ------- high demand, the new smartphone sold out within hours of its release.",
+   "o": [
+    "unexpected",
+    "unexpecting",
+    "unexpectedly",
+    "expectation"
+   ],
+   "a": 2,
+   "k": "형용사 high를 수식하는 부사 자리이므로 unexpectedly가 정답. unexpected는 형용사라 다른 형용사 high를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "likewise",
+  "pos": "adv",
+  "m": [
+   "마찬가지로",
+   "똑같이"
+  ],
+  "tier": 3,
+  "parts": [
+   6,
+   7
+  ],
+  "ex": "The sales team exceeded its targets this year. *Likewise*, the marketing team achieved record results.",
+  "exKo": "영업팀은 올해 목표를 초과 달성했다. 마찬가지로 마케팅팀도 기록적인 성과를 냈다.",
+  "col": [
+   {
+    "e": "do likewise",
+    "k": "똑같이 하다"
+   },
+   {
+    "e": "Likewise, S + V",
+    "k": "마찬가지로 ~하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "alike",
+    "pos": "adj",
+    "m": "비슷한, 똑같은"
+   }
+  ],
+  "para": [
+   "similarly",
+   "in the same way"
+  ],
+  "ant": "",
+  "tip": "접속부사로 앞 내용과 비슷한 내용을 이끌며, do likewise(똑같이 하다)로도 쓰인다. alike는 'A and B alike(A와 B 모두)' 형태로 쓴다.",
+  "q": {
+   "s": "Ms. Moreno arrived early to help set up the room, and her assistant was asked to do -------.",
+   "o": [
+    "alike",
+    "like",
+    "likely",
+    "likewise"
+   ],
+   "a": 3,
+   "k": "do likewise는 '똑같이 하다'라는 뜻이므로 likewise가 정답. alike는 do 뒤에서 이 뜻으로 쓰이지 않고, like는 전치사·동사, likely는 형용사다."
+  }
+ },
+ {
+  "w": "instead",
+  "pos": "adv",
+  "m": [
+   "대신에"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   6,
+   7
+  ],
+  "ex": "The client could not attend in person, so we held the meeting online *instead*.",
+  "exKo": "고객이 직접 참석할 수 없어서 우리는 대신 온라인으로 회의를 열었다.",
+  "col": [
+   {
+    "e": "instead of",
+    "k": "~ 대신에"
+   },
+   {
+    "e": "choose ~ instead",
+    "k": "대신 ~을 선택하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "rather",
+   "alternatively"
+  ],
+  "ant": "",
+  "tip": "부사 instead는 문장 끝이나 문두에 단독으로 쓰고, instead of는 전치사구라 뒤에 명사나 동명사가 와야 한다.",
+  "q": {
+   "s": "The outdoor concert was canceled due to rain, so the orchestra performed in the city hall -------.",
+   "o": [
+    "instead of",
+    "rather than",
+    "instead",
+    "in place of"
+   ],
+   "a": 2,
+   "k": "완전한 문장 끝에 단독으로 쓰이는 부사 자리이므로 instead가 정답. instead of, rather than, in place of는 뒤에 목적어가 필요하다."
+  }
+ }
+]

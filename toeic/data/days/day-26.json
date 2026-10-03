@@ -1,0 +1,2063 @@
+[
+ {
+  "w": "press release",
+  "pos": "n",
+  "m": [
+   "보도 자료"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The company issued a *press release* announcing its merger with Kalton Industries.",
+  "exKo": "그 회사는 칼튼 인더스트리즈와의 합병을 발표하는 보도 자료를 배포했다.",
+  "col": [
+   {
+    "e": "issue a press release",
+    "k": "보도 자료를 배포하다"
+   },
+   {
+    "e": "according to a press release",
+    "k": "보도 자료에 따르면"
+   }
+  ],
+  "der": [],
+  "para": [
+   "news release",
+   "announcement"
+  ],
+  "ant": "",
+  "tip": "'issue a press release(보도 자료를 배포하다)'처럼 동사 issue와 짝을 이루며, Part 7 기사·공지 지문의 정보 출처로 자주 나온다.",
+  "q": {
+   "s": "According to a ------- issued yesterday, the airline will add three new routes to Asia next spring.",
+   "o": [
+    "readership",
+    "manuscript",
+    "press release",
+    "columnist"
+   ],
+   "a": 2,
+   "k": "어제 '배포된(issued)' 문서에 따르면 노선이 추가된다는 내용이므로 press release가 정답. readership(독자층), manuscript(원고), columnist(칼럼니스트)는 발표 내용의 출처로 맞지 않는다."
+  }
+ },
+ {
+  "w": "press conference",
+  "pos": "n",
+  "m": [
+   "기자 회견"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The mayor will hold a *press conference* at noon to discuss the new transit plan.",
+  "exKo": "시장은 새 교통 계획을 논의하기 위해 정오에 기자 회견을 연다.",
+  "col": [
+   {
+    "e": "hold a press conference",
+    "k": "기자 회견을 열다"
+   },
+   {
+    "e": "at a press conference",
+    "k": "기자 회견에서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "news conference",
+   "media briefing"
+  ],
+  "ant": "",
+  "tip": "'hold a press conference'의 동사 hold가 어휘 문제로 나오며, '기자 회견에서'는 전치사 at을 써서 'at a press conference'라고 한다.",
+  "q": {
+   "s": "The CEO answered questions from reporters at a ------- held after the product launch.",
+   "o": [
+    "press conference",
+    "circulation",
+    "manuscript",
+    "biography"
+   ],
+   "a": 0,
+   "k": "기자들의 질문에 답하는 자리는 기자 회견이므로 press conference가 정답. circulation(발행 부수), manuscript(원고), biography(전기)는 '개최되는(held)' 행사가 아니다."
+  }
+ },
+ {
+  "w": "journalist",
+  "pos": "n",
+  "m": [
+   "기자",
+   "언론인"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "A *journalist* from the Daily Herald interviewed our CEO about the expansion plans.",
+  "exKo": "데일리 헤럴드의 기자가 우리 CEO를 만나 확장 계획에 관해 인터뷰했다.",
+  "col": [
+   {
+    "e": "freelance journalist",
+    "k": "프리랜서 기자"
+   },
+   {
+    "e": "business journalist",
+    "k": "경제 전문 기자"
+   }
+  ],
+  "der": [
+   {
+    "w": "journalism",
+    "pos": "n",
+    "m": "저널리즘, 언론(계)"
+   },
+   {
+    "w": "journalistic",
+    "pos": "adj",
+    "m": "언론의, 기자의"
+   }
+  ],
+  "para": [
+   "reporter",
+   "correspondent"
+  ],
+  "ant": "",
+  "tip": "사람명사 journalist와 분야를 뜻하는 journalism을 구분하는 품사 문제가 나온다. Part 7에서는 reporter로 바꿔 표현된다.",
+  "q": {
+   "s": "Ms. Okafor worked as a business ------- for ten years before joining our communications team.",
+   "o": [
+    "journalist",
+    "journalism",
+    "journal",
+    "journalistic"
+   ],
+   "a": 0,
+   "k": "'~로서 일했다(worked as)' 뒤에는 사람명사가 와야 하므로 journalist가 정답. journalism은 분야, journal은 잡지·일지, journalistic은 형용사다."
+  }
+ },
+ {
+  "w": "editor",
+  "pos": "n",
+  "m": [
+   "편집자",
+   "편집장"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Reporters must send their articles to the *editor* by Thursday for final review.",
+  "exKo": "기자들은 최종 검토를 위해 목요일까지 편집자에게 기사를 보내야 한다.",
+  "col": [
+   {
+    "e": "editor in chief",
+    "k": "편집장"
+   },
+   {
+    "e": "managing editor",
+    "k": "편집 주간"
+   },
+   {
+    "e": "letter to the editor",
+    "k": "독자 투고"
+   }
+  ],
+  "der": [
+   {
+    "w": "edit",
+    "pos": "v",
+    "m": "편집하다"
+   },
+   {
+    "w": "editing",
+    "pos": "n",
+    "m": "편집"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "사람명사 editor, 동사 edit, 명사 edition(판)·editorial(사설)을 구분하는 품사·어휘 문제가 나온다. 'letter to the editor(독자 투고)'도 Part 7 단골 표현이다.",
+  "q": {
+   "s": "All submissions will be reviewed by the senior ------- before they are approved for publication.",
+   "o": [
+    "edit",
+    "editor",
+    "edition",
+    "editorial"
+   ],
+   "a": 1,
+   "k": "원고를 '검토하는(reviewed by)' 행위자는 사람이어야 하고 형용사 senior의 수식을 받으므로 editor가 정답. edition은 '판', editorial은 '사설', edit은 동사다."
+  }
+ },
+ {
+  "w": "editorial",
+  "pos": "adj",
+  "m": [
+   "편집의, 편집과 관련된",
+   "사설의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The magazine's *editorial* team meets every Monday to plan upcoming issues.",
+  "exKo": "그 잡지의 편집팀은 매주 월요일에 모여 다음 호들을 기획한다.",
+  "col": [
+   {
+    "e": "editorial staff",
+    "k": "편집진"
+   },
+   {
+    "e": "editorial department",
+    "k": "편집부"
+   },
+   {
+    "e": "editorial calendar",
+    "k": "편집 일정표"
+   }
+  ],
+  "der": [
+   {
+    "w": "editor",
+    "pos": "n",
+    "m": "편집자"
+   },
+   {
+    "w": "edit",
+    "pos": "v",
+    "m": "편집하다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "형용사로는 'editorial staff(편집진)'처럼 명사를 수식하고, 명사로는 신문의 '사설'을 뜻한다. 사람명사 editor와 구분하는 품사 문제가 나온다.",
+  "q": {
+   "s": "Mr. Chang has been promoted to director of the ------- department at Bellmont Press.",
+   "o": [
+    "editor",
+    "editorial",
+    "edit",
+    "edited"
+   ],
+   "a": 1,
+   "k": "명사 department를 수식하여 '편집부'를 이루는 형용사 editorial이 정답. editor는 사람명사, edit은 동사, edited는 '편집된'이라는 뜻이라 부서를 수식하지 않는다."
+  }
+ },
+ {
+  "w": "publish",
+  "pos": "v",
+  "m": [
+   "출판하다, 발행하다",
+   "(공식적으로) 발표하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The research team plans to *publish* its findings in a leading medical journal.",
+  "exKo": "연구팀은 연구 결과를 유명 의학 학술지에 발표할 계획이다.",
+  "col": [
+   {
+    "e": "publish a book",
+    "k": "책을 출판하다"
+   },
+   {
+    "e": "be published in",
+    "k": "~에 게재되다"
+   },
+   {
+    "e": "publish a report",
+    "k": "보고서를 발표하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "publishing",
+    "pos": "n",
+    "m": "출판(업)"
+   }
+  ],
+  "para": [
+   "release",
+   "print"
+  ],
+  "ant": "",
+  "tip": "수동태 'be published in(~에 게재되다)'이 빈출이며, 사람명사 publisher, 명사 publication과 품사를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "The results of the customer survey will be ------- in next month's company newsletter.",
+   "o": [
+    "publishing",
+    "publication",
+    "publisher",
+    "published"
+   ],
+   "a": 3,
+   "k": "설문 결과가 소식지에 '게재되는' 것이므로 수동태 'be + 과거분사'를 이루는 published가 정답. publishing은 능동 진행, publication과 publisher는 명사라 맞지 않는다."
+  }
+ },
+ {
+  "w": "publication",
+  "pos": "n",
+  "m": [
+   "출판(물), 간행물",
+   "발행, 발표"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *publication* of the annual report has been delayed until next week.",
+  "exKo": "연례 보고서의 발행이 다음 주로 연기되었다.",
+  "col": [
+   {
+    "e": "date of publication",
+    "k": "출판일"
+   },
+   {
+    "e": "trade publication",
+    "k": "업계 전문지"
+   },
+   {
+    "e": "accept for publication",
+    "k": "게재를 승인하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "publish",
+    "pos": "v",
+    "m": "출판하다"
+   },
+   {
+    "w": "publisher",
+    "pos": "n",
+    "m": "출판사"
+   }
+  ],
+  "para": [
+   "release"
+  ],
+  "ant": "",
+  "tip": "'출판(행위)'의 뜻일 때는 불가산, '간행물'의 뜻일 때는 가산명사다. 'trade publication(업계 전문지)'이 Part 7에 자주 나온다.",
+  "q": {
+   "s": "The article was accepted for ------- in the spring issue of Modern Architecture.",
+   "o": [
+    "publication",
+    "publish",
+    "published",
+    "publishes"
+   ],
+   "a": 0,
+   "k": "전치사 for 뒤 명사 자리이므로 publication이 정답. 'be accepted for publication(게재가 승인되다)'은 관용 표현이다. 나머지는 동사의 형태다."
+  }
+ },
+ {
+  "w": "issue",
+  "pos": "n",
+  "m": [
+   "(정기 간행물의) 호",
+   "문제, 쟁점",
+   "발행, 발급"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The March *issue* of the magazine features an interview with a famous architect.",
+  "exKo": "그 잡지의 3월호에는 유명 건축가의 인터뷰가 실려 있다.",
+  "col": [
+   {
+    "e": "the latest issue",
+    "k": "최신호"
+   },
+   {
+    "e": "back issue",
+    "k": "지난 호"
+   },
+   {
+    "e": "address an issue",
+    "k": "문제를 다루다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "edition",
+   "number"
+  ],
+  "ant": "",
+  "tip": "Part 7 잡지·소식지 지문에서 '호'의 뜻으로 자주 쓰이며, 동사로는 'issue a refund/permit(환불해 주다/허가증을 발급하다)'으로 쓰인다.",
+  "q": {
+   "s": "Subscribers will receive the next ------- of the journal by mail in early May.",
+   "o": [
+    "issue",
+    "editor",
+    "headline",
+    "author"
+   ],
+   "a": 0,
+   "k": "구독자가 우편으로 받는 것은 학술지의 '다음 호'이므로 issue가 정답. editor(편집자), author(저자)는 사람이고 headline(표제)은 우편으로 받는 대상이 아니다."
+  }
+ },
+ {
+  "w": "edition",
+  "pos": "n",
+  "m": [
+   "(출판물의) 판",
+   "(신문·방송의) 회, 호"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The revised *edition* of the employee handbook includes updated travel policies.",
+  "exKo": "직원 안내서의 개정판에는 갱신된 출장 규정이 포함되어 있다.",
+  "col": [
+   {
+    "e": "first edition",
+    "k": "초판"
+   },
+   {
+    "e": "limited edition",
+    "k": "한정판"
+   },
+   {
+    "e": "revised edition",
+    "k": "개정판"
+   }
+  ],
+  "der": [
+   {
+    "w": "edit",
+    "pos": "v",
+    "m": "편집하다"
+   }
+  ],
+  "para": [
+   "version"
+  ],
+  "ant": "",
+  "tip": "edition(판)과 addition(추가)의 철자 혼동, 사람명사 editor와의 구분이 출제된다. 'limited edition(한정판)'은 광고 지문 단골 표현이다.",
+  "q": {
+   "s": "The publisher plans to release a revised ------- of the cookbook with twenty new recipes.",
+   "o": [
+    "addition",
+    "editor",
+    "editing",
+    "edition"
+   ],
+   "a": 3,
+   "k": "새 요리법을 추가해 내놓는 요리책의 '개정판'이므로 edition이 정답. addition은 '추가'라 철자 함정이고, editor는 사람, editing은 '편집 작업'이다."
+  }
+ },
+ {
+  "w": "article",
+  "pos": "n",
+  "m": [
+   "(신문·잡지의) 기사",
+   "물품, 품목",
+   "(계약서의) 조항"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "According to the *article*, the new factory will create about 300 jobs.",
+  "exKo": "기사에 따르면 새 공장은 약 300개의 일자리를 창출할 것이다.",
+  "col": [
+   {
+    "e": "news article",
+    "k": "뉴스 기사"
+   },
+   {
+    "e": "write an article",
+    "k": "기사를 쓰다"
+   },
+   {
+    "e": "article of clothing",
+    "k": "의류 한 점"
+   }
+  ],
+  "der": [],
+  "para": [
+   "story",
+   "report"
+  ],
+  "ant": "",
+  "tip": "Part 7 기사 지문에서 'What is the article mainly about?' 같은 질문으로 나온다. 'article of clothing(옷 한 점)'처럼 '물품'의 뜻도 함정으로 나온다.",
+  "q": {
+   "s": "Mr. Davies wrote an ------- about the growing popularity of electric bicycles for the local newspaper.",
+   "o": [
+    "edition",
+    "circulation",
+    "article",
+    "readership"
+   ],
+   "a": 2,
+   "k": "지역 신문에 '~에 관해 쓴(wrote about)' 글이므로 article이 정답. edition(판), circulation(발행 부수), readership(독자층)은 기자가 쓰는 대상이 아니다."
+  }
+ },
+ {
+  "w": "columnist",
+  "pos": "n",
+  "m": [
+   "칼럼니스트",
+   "(정기) 기고가"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The newspaper hired a well-known *columnist* to write about personal finance.",
+  "exKo": "그 신문사는 개인 재테크에 관한 글을 쓸 유명 칼럼니스트를 고용했다.",
+  "col": [
+   {
+    "e": "guest columnist",
+    "k": "객원 칼럼니스트"
+   },
+   {
+    "e": "business columnist",
+    "k": "경제 칼럼니스트"
+   }
+  ],
+  "der": [
+   {
+    "w": "column",
+    "pos": "n",
+    "m": "칼럼, 기둥"
+   }
+  ],
+  "para": [
+   "writer",
+   "contributor"
+  ],
+  "ant": "",
+  "tip": "사람명사 columnist와 사물명사 column(칼럼, 기둥)을 구분하는 문제가 나온다. column은 Part 1에서 '기둥'의 뜻으로도 쓰인다.",
+  "q": {
+   "s": "Ms. Ruiz, a regular ------- for the Westside Times, writes about local restaurants every week.",
+   "o": [
+    "column",
+    "circulation",
+    "columned",
+    "columnist"
+   ],
+   "a": 3,
+   "k": "Ms. Ruiz를 설명하는 동격 자리이므로 사람명사 columnist가 정답. column은 글 자체, circulation은 발행 부수, columned는 '기둥이 있는'이라는 형용사다."
+  }
+ },
+ {
+  "w": "headline",
+  "pos": "n",
+  "m": [
+   "(기사) 표제, 헤드라인",
+   "주요 뉴스"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The company's record profits made *headlines* in business newspapers across the country.",
+  "exKo": "그 회사의 사상 최대 이익은 전국 경제 신문의 헤드라인을 장식했다.",
+  "col": [
+   {
+    "e": "make headlines",
+    "k": "크게 보도되다"
+   },
+   {
+    "e": "front-page headline",
+    "k": "1면 표제"
+   }
+  ],
+  "der": [],
+  "para": [
+   "title",
+   "top story"
+  ],
+  "ant": "",
+  "tip": "'make headlines(크게 보도되다)'가 관용 표현으로 나오며, 동사로는 '(공연에서) 주연을 맡다(headline a concert)'라는 뜻도 있다.",
+  "q": {
+   "s": "The editor asked the reporter to write a shorter ------- that would fit across the top of the page.",
+   "o": [
+    "biography",
+    "headline",
+    "manuscript",
+    "circulation"
+   ],
+   "a": 1,
+   "k": "지면 맨 위에 들어가는 짧은 글은 기사 표제이므로 headline이 정답. biography(전기), manuscript(원고)는 지면 상단에 들어갈 만큼 짧지 않고, circulation은 '쓰는' 대상이 아니다."
+  }
+ },
+ {
+  "w": "broadcast",
+  "pos": "v",
+  "m": [
+   "방송하다",
+   "널리 알리다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The final match will be *broadcast* live on Channel 7 at 8 P.M.",
+  "exKo": "결승전은 오후 8시에 7번 채널에서 생중계된다.",
+  "col": [
+   {
+    "e": "broadcast live",
+    "k": "생방송하다"
+   },
+   {
+    "e": "be broadcast on",
+    "k": "~에서 방송되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "broadcaster",
+    "pos": "n",
+    "m": "방송인, 방송사"
+   },
+   {
+    "w": "broadcasting",
+    "pos": "n",
+    "m": "방송(업)"
+   }
+  ],
+  "para": [
+   "air",
+   "televise"
+  ],
+  "ant": "",
+  "tip": "과거·과거분사가 원형과 같은 broadcast라서 수동태 'be broadcast'가 자주 출제된다. Part 7에서는 air로 바꿔 표현된다.",
+  "q": {
+   "s": "The interview with the mayor was ------- on several local radio stations last night.",
+   "o": [
+    "broadcasting",
+    "broadcaster",
+    "broadcasts",
+    "broadcast"
+   ],
+   "a": 3,
+   "k": "인터뷰가 '방송된' 것이므로 수동태를 만드는 과거분사 broadcast가 정답. broadcasting은 능동 진행이 되어 의미가 맞지 않고, broadcaster와 broadcasts는 be동사 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "newsletter",
+  "pos": "n",
+  "m": [
+   "소식지, 뉴스레터",
+   "회보"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Customers who sign up for our monthly *newsletter* receive updates on new products.",
+  "exKo": "월간 소식지를 신청한 고객은 신제품 소식을 받는다.",
+  "col": [
+   {
+    "e": "monthly newsletter",
+    "k": "월간 소식지"
+   },
+   {
+    "e": "company newsletter",
+    "k": "사내 소식지"
+   },
+   {
+    "e": "subscribe to a newsletter",
+    "k": "소식지를 구독하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "bulletin"
+  ],
+  "ant": "",
+  "tip": "Part 7의 사내 공지 지문 유형으로 자주 나오며, 'be featured in the newsletter(소식지에 실리다)' 표현이 함께 쓰인다.",
+  "q": {
+   "s": "Employees who are retiring this year will be featured in the next issue of the company -------.",
+   "o": [
+    "newsletter",
+    "headline",
+    "columnist",
+    "manuscript"
+   ],
+   "a": 0,
+   "k": "'다음 호(next issue)'를 내는 사내 간행물은 소식지이므로 newsletter가 정답. headline(표제), columnist(칼럼니스트), manuscript(원고)는 호를 발행하지 않는다."
+  }
+ },
+ {
+  "w": "subscribe",
+  "pos": "v",
+  "m": [
+   "구독하다",
+   "(서비스에) 가입하다"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Over 50,000 professionals *subscribe* to our weekly industry report.",
+  "exKo": "5만 명이 넘는 전문가가 우리의 주간 업계 보고서를 구독한다.",
+  "col": [
+   {
+    "e": "subscribe to",
+    "k": "~을 구독하다"
+   },
+   {
+    "e": "subscribe online",
+    "k": "온라인으로 구독 신청하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "subscription",
+    "pos": "n",
+    "m": "구독, 가입"
+   },
+   {
+    "w": "subscriber",
+    "pos": "n",
+    "m": "구독자"
+   }
+  ],
+  "para": [
+   "sign up for"
+  ],
+  "ant": "unsubscribe",
+  "tip": "자동사이므로 반드시 'subscribe to + 대상'으로 쓴다. 명사 subscription(구독)과 사람명사 subscriber를 구분하는 품사 문제도 나온다.",
+  "q": {
+   "s": "Readers who ------- to the magazine before June 1 will receive a free tote bag.",
+   "o": [
+    "register",
+    "enroll",
+    "sign",
+    "subscribe"
+   ],
+   "a": 3,
+   "k": "전치사 to와 짝을 이루어 '잡지를 구독하다'라는 뜻이 되는 subscribe가 정답. register와 enroll은 for/in과, sign은 up for와 써야 하므로 to와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "subscriber",
+  "pos": "n",
+  "m": [
+   "구독자",
+   "가입자"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Every *subscriber* receives a digital copy of each issue at no extra cost.",
+  "exKo": "모든 구독자는 추가 비용 없이 매호의 디지털판을 받는다.",
+  "col": [
+   {
+    "e": "new subscribers",
+    "k": "신규 구독자"
+   },
+   {
+    "e": "paid subscriber",
+    "k": "유료 구독자"
+   }
+  ],
+  "der": [
+   {
+    "w": "subscribe",
+    "pos": "v",
+    "m": "구독하다"
+   },
+   {
+    "w": "subscription",
+    "pos": "n",
+    "m": "구독, 가입"
+   }
+  ],
+  "para": [
+   "reader",
+   "member"
+  ],
+  "ant": "",
+  "tip": "사람명사 subscriber와 명사 subscription을 구분하는 품사 문제가 빈출이다. 가산명사이므로 관사를 붙이거나 복수형으로 쓴다.",
+  "q": {
+   "s": "Long-time ------- will be invited to a special event celebrating the magazine's 50th anniversary.",
+   "o": [
+    "subscribers",
+    "subscriptions",
+    "subscribes",
+    "subscribed"
+   ],
+   "a": 0,
+   "k": "행사에 '초대되는' 대상은 사람이므로 subscribers가 정답. subscriptions(구독)는 사람이 아니라 초대될 수 없고, subscribes와 subscribed는 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "circulation",
+  "pos": "n",
+  "m": [
+   "발행 부수",
+   "유통, 순환"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The newspaper's daily *circulation* has fallen below 100,000 copies.",
+  "exKo": "그 신문의 일일 발행 부수가 10만 부 아래로 떨어졌다.",
+  "col": [
+   {
+    "e": "daily circulation",
+    "k": "일일 발행 부수"
+   },
+   {
+    "e": "in circulation",
+    "k": "유통되는"
+   },
+   {
+    "e": "wide circulation",
+    "k": "많은 발행 부수"
+   }
+  ],
+  "der": [
+   {
+    "w": "circulate",
+    "pos": "v",
+    "m": "유포하다, 회람하다"
+   }
+  ],
+  "para": [
+   "distribution"
+  ],
+  "ant": "",
+  "tip": "언론 지문에서는 '발행 부수'로, 사내 지문에서는 동사 circulate('circulate a memo' 메모를 회람하다)로 자주 나온다.",
+  "q": {
+   "s": "With a weekly ------- of over 80,000 copies, Harbor News is the region's most widely read paper.",
+   "o": [
+    "circulate",
+    "circulated",
+    "circulating",
+    "circulation"
+   ],
+   "a": 3,
+   "k": "형용사 weekly의 수식을 받는 명사 자리이고 '주간 발행 부수'를 뜻하므로 circulation이 정답. 나머지는 동사 circulate의 변화형이다."
+  }
+ },
+ {
+  "w": "manuscript",
+  "pos": "n",
+  "m": [
+   "원고",
+   "필사본"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The author submitted her *manuscript* to three publishers last month.",
+  "exKo": "그 작가는 지난달 세 곳의 출판사에 원고를 제출했다.",
+  "col": [
+   {
+    "e": "submit a manuscript",
+    "k": "원고를 제출하다"
+   },
+   {
+    "e": "final manuscript",
+    "k": "최종 원고"
+   },
+   {
+    "e": "review a manuscript",
+    "k": "원고를 검토하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "draft"
+  ],
+  "ant": "",
+  "tip": "출판 관련 Part 7 이메일에서 'submit/review a manuscript'로 나오며, draft(초안)로 바꿔 표현된다.",
+  "q": {
+   "s": "Authors should send a complete ------- along with a brief summary of the book.",
+   "o": [
+    "circulation",
+    "readership",
+    "manuscript",
+    "headline"
+   ],
+   "a": 2,
+   "k": "저자가 책 요약과 함께 보내는 것은 '완성된 원고'이므로 manuscript가 정답. circulation(발행 부수), readership(독자층)은 보낼 수 있는 대상이 아니고, headline(표제)은 complete와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "proofread",
+  "pos": "v",
+  "m": [
+   "교정을 보다",
+   "(오탈자를) 검토하다"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Mr. Ito carefully *proofread* the brochure before sending it to the printer.",
+  "exKo": "이토 씨는 안내 책자를 인쇄소에 보내기 전에 꼼꼼히 교정을 보았다.",
+  "col": [
+   {
+    "e": "proofread a document",
+    "k": "문서를 교정하다"
+   },
+   {
+    "e": "carefully proofread",
+    "k": "꼼꼼히 교정하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "proofreader",
+    "pos": "n",
+    "m": "교정자"
+   },
+   {
+    "w": "proofreading",
+    "pos": "n",
+    "m": "교정 (작업)"
+   }
+  ],
+  "para": [
+   "check for errors",
+   "review"
+  ],
+  "ant": "",
+  "tip": "과거·과거분사가 원형과 같은 proofread다. Part 3·4에서 'Could you proofread this report?'처럼 업무 요청 표현으로 자주 나온다.",
+  "q": {
+   "s": "Every article is ------- by two staff members to make sure there are no spelling errors.",
+   "o": [
+    "proofreader",
+    "proofreading",
+    "proofreads",
+    "proofread"
+   ],
+   "a": 3,
+   "k": "기사가 직원에 의해 '교정되는' 것이므로 수동태를 만드는 과거분사 proofread가 정답. proofreading은 능동 진행, proofreader는 사람명사, proofreads는 be동사 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "layout",
+  "pos": "n",
+  "m": [
+   "배치, 레이아웃",
+   "(지면) 구성"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "The designer changed the *layout* of the front page to make the photos larger.",
+  "exKo": "디자이너는 사진을 더 크게 싣기 위해 1면의 구성을 바꿨다.",
+  "col": [
+   {
+    "e": "page layout",
+    "k": "페이지 구성"
+   },
+   {
+    "e": "office layout",
+    "k": "사무실 배치"
+   },
+   {
+    "e": "store layout",
+    "k": "매장 배치"
+   }
+  ],
+  "der": [
+   {
+    "w": "lay out",
+    "pos": "phr",
+    "m": "배치하다, 설명하다"
+   }
+  ],
+  "para": [
+   "design",
+   "arrangement"
+  ],
+  "ant": "",
+  "tip": "명사 layout은 붙여 쓰고 동사구 lay out(배치하다)은 띄어 쓴다. 사무실·매장 배치도를 보는 Part 3 시각 자료 문제에도 나온다.",
+  "q": {
+   "s": "The new ------- of the magazine makes it easier for readers to find the articles they want.",
+   "o": [
+    "outlay",
+    "layout",
+    "readership",
+    "contributor"
+   ],
+   "a": 1,
+   "k": "독자가 원하는 기사를 찾기 쉽게 해 주는 것은 잡지의 '지면 구성'이므로 layout이 정답. outlay(지출)는 철자를 뒤집은 함정이고, readership과 contributor는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "illustration",
+  "pos": "n",
+  "m": [
+   "삽화",
+   "실례, 예시"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The children's book includes colorful *illustrations* on every page.",
+  "exKo": "그 아동 도서에는 모든 페이지에 다채로운 삽화가 들어 있다.",
+  "col": [
+   {
+    "e": "cover illustration",
+    "k": "표지 삽화"
+   },
+   {
+    "e": "by way of illustration",
+    "k": "예를 들어"
+   }
+  ],
+  "der": [
+   {
+    "w": "illustrate",
+    "pos": "v",
+    "m": "삽화를 넣다, 분명히 보여 주다"
+   },
+   {
+    "w": "illustrator",
+    "pos": "n",
+    "m": "삽화가"
+   }
+  ],
+  "para": [
+   "drawing",
+   "image"
+  ],
+  "ant": "",
+  "tip": "사람명사 illustrator와 구분하는 품사 문제가 나오며, '예시'의 뜻일 때는 동사 illustrate(보여 주다)와 함께 출제된다.",
+  "q": {
+   "s": "The cover ------- was created by a local artist who has worked with the publisher for years.",
+   "o": [
+    "illustrator",
+    "illustrate",
+    "illustrative",
+    "illustration"
+   ],
+   "a": 3,
+   "k": "화가에 의해 '만들어진(was created by)' 대상은 사물이므로 illustration이 정답. illustrator는 사람이라 '만들어질' 수 없고, illustrate는 동사, illustrative는 형용사다."
+  }
+ },
+ {
+  "w": "contributor",
+  "pos": "n",
+  "m": [
+   "기고가",
+   "기여자, 기부자"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The magazine is looking for *contributors* to write short articles on travel and food.",
+  "exKo": "그 잡지는 여행과 음식에 관한 짧은 기사를 쓸 기고가를 찾고 있다.",
+  "col": [
+   {
+    "e": "regular contributor",
+    "k": "정기 기고가"
+   },
+   {
+    "e": "contributor to",
+    "k": "~의 기고가, ~에 대한 기여자"
+   }
+  ],
+  "der": [
+   {
+    "w": "contribute",
+    "pos": "v",
+    "m": "기고하다, 기여하다"
+   },
+   {
+    "w": "contribution",
+    "pos": "n",
+    "m": "기고, 기여, 기부금"
+   }
+  ],
+  "para": [
+   "writer"
+  ],
+  "ant": "",
+  "tip": "'contribute to(~에 기여하다, 기고하다)'의 전치사 to가 핵심이며, 사람명사 contributor와 명사 contribution을 구분하는 문제가 자주 나온다.",
+  "q": {
+   "s": "Mr. Yoon has been a regular ------- to the travel section of the Sunday paper for five years.",
+   "o": [
+    "contribution",
+    "contribute",
+    "contributor",
+    "contributing"
+   ],
+   "a": 2,
+   "k": "주어 Mr. Yoon과 동격인 보어 자리이므로 사람명사 contributor가 정답. contribution은 사물명사라 사람과 동일시될 수 없고, contribute와 contributing은 관사 a 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "public relations",
+  "pos": "n",
+  "m": [
+   "홍보",
+   "대외 관계 (업무)"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Ms. Lee has over ten years of experience in *public relations* for tech companies.",
+  "exKo": "이 씨는 기술 기업에서 10년 넘게 홍보 업무를 해 온 경력이 있다.",
+  "col": [
+   {
+    "e": "public relations department",
+    "k": "홍보부"
+   },
+   {
+    "e": "public relations campaign",
+    "k": "홍보 캠페인"
+   }
+  ],
+  "der": [
+   {
+    "w": "publicity",
+    "pos": "n",
+    "m": "홍보, 언론의 관심"
+   },
+   {
+    "w": "publicize",
+    "pos": "v",
+    "m": "홍보하다"
+   }
+  ],
+  "para": [
+   "PR",
+   "publicity"
+  ],
+  "ant": "",
+  "tip": "약어 PR로 자주 쓰이며, 형태는 복수지만 '홍보 업무'라는 하나의 분야를 뜻한다. publicity(홍보, 언론의 관심)와 함께 Part 7에 나온다.",
+  "q": {
+   "s": "Questions from the media should be directed to Ms. Haddad in the ------- relations department.",
+   "o": [
+    "public",
+    "publicity",
+    "publicly",
+    "publicize"
+   ],
+   "a": 0,
+   "k": "relations와 결합해 '홍보부(public relations department)'를 이루는 형용사 public이 정답. publicity는 명사, publicly는 부사, publicize는 동사다."
+  }
+ },
+ {
+  "w": "statement",
+  "pos": "n",
+  "m": [
+   "성명, 발표",
+   "진술",
+   "명세서"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The company released a *statement* apologizing for the delay in shipments.",
+  "exKo": "그 회사는 배송 지연에 대해 사과하는 성명을 발표했다.",
+  "col": [
+   {
+    "e": "issue a statement",
+    "k": "성명을 발표하다"
+   },
+   {
+    "e": "official statement",
+    "k": "공식 성명"
+   },
+   {
+    "e": "financial statement",
+    "k": "재무제표"
+   }
+  ],
+  "der": [
+   {
+    "w": "state",
+    "pos": "v",
+    "m": "진술하다, 명시하다"
+   }
+  ],
+  "para": [
+   "announcement",
+   "declaration"
+  ],
+  "ant": "",
+  "tip": "'issue/release a statement(성명을 발표하다)'가 빈출이며, 은행·회계 지문에서는 '명세서(bank statement, financial statement)'의 뜻으로 쓰인다.",
+  "q": {
+   "s": "In an official -------, the spokesperson confirmed that the factory would reopen next week.",
+   "o": [
+    "state",
+    "stated",
+    "statement",
+    "stating"
+   ],
+   "a": 2,
+   "k": "관사 an과 형용사 official 뒤 명사 자리이므로 statement가 정답. state는 명사일 때 '주, 상태'라 의미가 맞지 않고, stated와 stating은 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "rumor",
+  "pos": "n",
+  "m": [
+   "소문, 루머"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The CEO denied *rumors* that the company would close its Seoul office.",
+  "exKo": "CEO는 회사가 서울 사무소를 폐쇄할 것이라는 소문을 부인했다.",
+  "col": [
+   {
+    "e": "deny a rumor",
+    "k": "소문을 부인하다"
+   },
+   {
+    "e": "rumor has it that",
+    "k": "~라는 소문이 있다"
+   },
+   {
+    "e": "spread a rumor",
+    "k": "소문을 퍼뜨리다"
+   }
+  ],
+  "der": [
+   {
+    "w": "rumored",
+    "pos": "adj",
+    "m": "소문이 난"
+   }
+  ],
+  "para": [
+   "speculation",
+   "gossip"
+  ],
+  "ant": "",
+  "tip": "'be rumored to do(~라는 소문이 있다)'의 수동형과 'deny rumors that ~'의 동격 that절이 출제 포인트다. 영국식 철자는 rumour이다.",
+  "q": {
+   "s": "Despite ------- of a possible merger, both companies declined to comment on the matter.",
+   "o": [
+    "authors",
+    "layouts",
+    "chapters",
+    "rumors"
+   ],
+   "a": 3,
+   "k": "'합병 가능성에 대한 ~에도 불구하고 논평을 거부했다'는 흐름이므로 rumors(소문)가 정답. authors(저자), layouts(배치), chapters(장)는 합병 가능성과 연결되지 않는다."
+  }
+ },
+ {
+  "w": "exclusive",
+  "pos": "adj",
+  "m": [
+   "독점적인, 단독의",
+   "고급의, 배타적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The magazine published an *exclusive* interview with the award-winning director.",
+  "exKo": "그 잡지는 수상 경력이 있는 감독과의 단독 인터뷰를 실었다.",
+  "col": [
+   {
+    "e": "exclusive interview",
+    "k": "단독 인터뷰"
+   },
+   {
+    "e": "exclusive rights",
+    "k": "독점권"
+   },
+   {
+    "e": "exclusive to",
+    "k": "~에게만 한정된"
+   }
+  ],
+  "der": [
+   {
+    "w": "exclusively",
+    "pos": "adv",
+    "m": "독점적으로, 오로지"
+   },
+   {
+    "w": "exclude",
+    "pos": "v",
+    "m": "제외하다"
+   }
+  ],
+  "para": [
+   "sole"
+  ],
+  "ant": "",
+  "tip": "'exclusive to + 대상(~ 전용의)'과 부사 exclusively('exclusively for members' 회원 전용으로)를 구분하는 품사 문제가 나온다.",
+  "q": {
+   "s": "The discount is ------- to members who have subscribed for more than one year.",
+   "o": [
+    "exclusively",
+    "exclusive",
+    "exclusion",
+    "exclude"
+   ],
+   "a": 1,
+   "k": "be동사 뒤 보어 자리에 형용사가 와서 'be exclusive to(~에게만 한정되다)'를 이루므로 exclusive가 정답. exclusively는 부사, exclusion은 명사, exclude는 동사다."
+  }
+ },
+ {
+  "w": "correspondent",
+  "pos": "n",
+  "m": [
+   "특파원, 통신원",
+   "편지를 주고받는 사람"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Our Tokyo *correspondent* reports on business news from across Asia.",
+  "exKo": "우리 도쿄 특파원은 아시아 전역의 경제 뉴스를 보도한다.",
+  "col": [
+   {
+    "e": "foreign correspondent",
+    "k": "해외 특파원"
+   },
+   {
+    "e": "business correspondent",
+    "k": "경제 담당 기자"
+   }
+  ],
+  "der": [
+   {
+    "w": "correspond",
+    "pos": "v",
+    "m": "일치하다, 서신을 주고받다"
+   },
+   {
+    "w": "correspondence",
+    "pos": "n",
+    "m": "서신, 연락"
+   }
+  ],
+  "para": [
+   "reporter",
+   "journalist"
+  ],
+  "ant": "",
+  "tip": "사람명사 correspondent와 명사 correspondence(서신)를 구분하는 품사 문제가 나온다. 'correspond with(~와 연락하다)', 'correspond to(~에 해당하다)'도 함께 알아 둔다.",
+  "q": {
+   "s": "Ms. Novak worked as a foreign ------- in Brazil before becoming the newspaper's editor.",
+   "o": [
+    "correspondence",
+    "corresponding",
+    "correspondent",
+    "correspond"
+   ],
+   "a": 2,
+   "k": "'~로서 일했다(worked as)' 뒤에는 사람명사가 와야 하므로 correspondent(특파원)가 정답. correspondence는 '서신', corresponding은 형용사/분사, correspond는 동사다."
+  }
+ },
+ {
+  "w": "readership",
+  "pos": "n",
+  "m": [
+   "독자층",
+   "독자 수"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The magazine's *readership* has grown steadily since it launched its mobile app.",
+  "exKo": "그 잡지의 독자 수는 모바일 앱을 출시한 이후 꾸준히 늘었다.",
+  "col": [
+   {
+    "e": "wide readership",
+    "k": "폭넓은 독자층"
+   },
+   {
+    "e": "target readership",
+    "k": "목표 독자층"
+   }
+  ],
+  "der": [
+   {
+    "w": "reader",
+    "pos": "n",
+    "m": "독자"
+   }
+  ],
+  "para": [
+   "audience",
+   "readers"
+  ],
+  "ant": "",
+  "tip": "-ship이 붙어 '독자 전체'를 뜻하는 집합명사로, 사람명사 reader와 구분하는 문제가 나온다. circulation(발행 부수)과 함께 언론 지문에 쓰인다.",
+  "q": {
+   "s": "The journal has a large ------- among engineers and architects in North America.",
+   "o": [
+    "reader",
+    "readership",
+    "reading",
+    "readable"
+   ],
+   "a": 1,
+   "k": "'엔지니어와 건축가 사이에 많은 독자층'을 뜻하므로 집합명사 readership이 정답. 단수 reader는 large와 어울리지 않고, reading은 '독서', readable은 형용사다."
+  }
+ },
+ {
+  "w": "social media",
+  "pos": "n",
+  "m": [
+   "소셜 미디어",
+   "SNS, 소셜 네트워크"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The restaurant promotes its daily specials on *social media* every morning.",
+  "exKo": "그 식당은 매일 아침 소셜 미디어에 오늘의 특선 요리를 홍보한다.",
+  "col": [
+   {
+    "e": "on social media",
+    "k": "소셜 미디어에서"
+   },
+   {
+    "e": "social media platform",
+    "k": "소셜 미디어 플랫폼"
+   },
+   {
+    "e": "social media campaign",
+    "k": "소셜 미디어 캠페인"
+   }
+  ],
+  "der": [],
+  "para": [
+   "online platforms"
+  ],
+  "ant": "",
+  "tip": "'on social media'처럼 전치사 on과 함께 무관사로 쓴다. 'SNS'는 영어권에서 잘 쓰지 않으므로 social media로 기억해 둔다.",
+  "q": {
+   "s": "Customers can follow the bakery on ------- to see photos of its newest products.",
+   "o": [
+    "circulation",
+    "social media",
+    "readership",
+    "manuscript"
+   ],
+   "a": 1,
+   "k": "고객이 '팔로우하여(follow)' 신제품 사진을 볼 수 있는 곳은 소셜 미디어이므로 social media가 정답. 나머지는 팔로우하거나 사진을 볼 수 있는 공간이 아니다."
+  }
+ },
+ {
+  "w": "viral",
+  "pos": "adj",
+  "m": [
+   "(온라인에서) 급속히 퍼지는",
+   "바이러스(성)의"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The company's humorous advertisement went *viral* within hours of being posted.",
+  "exKo": "그 회사의 유머러스한 광고는 게시된 지 몇 시간 만에 급속히 퍼졌다.",
+  "col": [
+   {
+    "e": "go viral",
+    "k": "입소문을 타다, 급속히 퍼지다"
+   },
+   {
+    "e": "viral video",
+    "k": "화제의 동영상"
+   },
+   {
+    "e": "viral marketing",
+    "k": "바이럴 마케팅"
+   }
+  ],
+  "der": [
+   {
+    "w": "virus",
+    "pos": "n",
+    "m": "바이러스"
+   }
+  ],
+  "para": [
+   "spread quickly",
+   "become popular online"
+  ],
+  "ant": "",
+  "tip": "'go viral(인터넷에서 급속히 퍼지다)'처럼 2형식 동사 go 뒤 보어로 쓰인다. Part 7에서는 'spread rapidly online'으로 바꿔 표현된다.",
+  "q": {
+   "s": "The video of the chef's cooking demonstration went ------- and was viewed more than three million times.",
+   "o": [
+    "viral",
+    "exclusive",
+    "anonymous",
+    "editorial"
+   ],
+   "a": 0,
+   "k": "300만 회 넘게 조회되었다는 내용과 이어지는 'go viral(급속히 퍼지다)'이므로 viral이 정답. exclusive, anonymous, editorial은 go와 결합해 조회 수 급증을 나타내지 않는다."
+  }
+ },
+ {
+  "w": "copy",
+  "pos": "n",
+  "m": [
+   "(책·신문의) 부, 권",
+   "사본",
+   "(광고) 문안"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   7
+  ],
+  "ex": "Ms. Grant made ten *copies* of the agenda before the meeting started.",
+  "exKo": "그랜트 씨는 회의가 시작되기 전에 안건을 열 부 복사했다.",
+  "col": [
+   {
+    "e": "make a copy",
+    "k": "복사하다"
+   },
+   {
+    "e": "free copy",
+    "k": "무료 한 부"
+   },
+   {
+    "e": "hard copy",
+    "k": "출력본"
+   }
+  ],
+  "der": [
+   {
+    "w": "copier",
+    "pos": "n",
+    "m": "복사기"
+   }
+  ],
+  "para": [
+   "duplicate"
+  ],
+  "ant": "",
+  "tip": "책·신문을 셀 때 'a copy of the book(책 한 부)'처럼 copy를 쓴다. 광고 업계에서는 '광고 문안(copy)'이라는 뜻으로도 쓰인다.",
+  "q": {
+   "s": "Attendees will each receive a signed ------- of the author's latest novel.",
+   "o": [
+    "copy",
+    "author",
+    "circulation",
+    "layout"
+   ],
+   "a": 0,
+   "k": "참석자가 받는 '저자 서명이 든 소설 한 부'이므로 copy가 정답. author는 사람, circulation은 발행 부수, layout은 지면 구성이라 받을 수 있는 대상이 아니다."
+  }
+ },
+ {
+  "w": "publisher",
+  "pos": "n",
+  "m": [
+   "출판사",
+   "발행인"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *publisher* plans to release the book in twelve languages next year.",
+  "exKo": "그 출판사는 내년에 그 책을 12개 언어로 출간할 계획이다.",
+  "col": [
+   {
+    "e": "book publisher",
+    "k": "출판사"
+   },
+   {
+    "e": "leading publisher",
+    "k": "대형 출판사"
+   }
+  ],
+  "der": [
+   {
+    "w": "publish",
+    "pos": "v",
+    "m": "출판하다"
+   },
+   {
+    "w": "publication",
+    "pos": "n",
+    "m": "출판(물)"
+   }
+  ],
+  "para": [
+   "publishing house"
+  ],
+  "ant": "",
+  "tip": "사람·회사를 뜻하는 publisher와 사물·행위를 뜻하는 publication을 구분하는 품사 문제가 자주 나온다.",
+  "q": {
+   "s": "After reading the manuscript, the ------- offered the author a contract for two more books.",
+   "o": [
+    "publication",
+    "publisher",
+    "published",
+    "publishing"
+   ],
+   "a": 1,
+   "k": "원고를 읽고 계약을 '제안한' 주체이므로 사람·회사를 뜻하는 publisher가 정답. publication은 사물이라 제안할 수 없고, published와 publishing은 주어 자리에 맞지 않는다."
+  }
+ },
+ {
+  "w": "author",
+  "pos": "n",
+  "m": [
+   "저자, 작가"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *author* will sign copies of her new book at Mercer Bookstore on Saturday.",
+  "exKo": "그 작가는 토요일에 머서 서점에서 신간에 사인을 해 줄 예정이다.",
+  "col": [
+   {
+    "e": "best-selling author",
+    "k": "베스트셀러 작가"
+   },
+   {
+    "e": "co-author",
+    "k": "공동 저자"
+   }
+  ],
+  "der": [
+   {
+    "w": "authorship",
+    "pos": "n",
+    "m": "저자임, 원작자"
+   }
+  ],
+  "para": [
+   "writer"
+  ],
+  "ant": "",
+  "tip": "Part 4 공지에서 'book signing(사인회)'과 함께 자주 나오며, 동사로는 '(책·보고서를) 쓰다(author a report)'라는 뜻도 있다.",
+  "q": {
+   "s": "The best-selling ------- will discuss her new novel at the public library next Tuesday.",
+   "o": [
+    "authority",
+    "author",
+    "authorize",
+    "authorship"
+   ],
+   "a": 1,
+   "k": "자신의 신작 소설에 대해 이야기하는 사람이므로 author가 정답. authority(권한, 당국), authorship(저자임)은 의미가 맞지 않고, authorize는 동사다."
+  }
+ },
+ {
+  "w": "cite",
+  "pos": "v",
+  "m": [
+   "인용하다",
+   "(이유·예로) 들다, 언급하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The report *cites* several studies on the link between remote work and productivity.",
+  "exKo": "그 보고서는 재택근무와 생산성의 관계에 관한 여러 연구를 인용한다.",
+  "col": [
+   {
+    "e": "cite a source",
+    "k": "출처를 인용하다"
+   },
+   {
+    "e": "cite A as B",
+    "k": "A를 B로 들다"
+   }
+  ],
+  "der": [
+   {
+    "w": "citation",
+    "pos": "n",
+    "m": "인용(문), 표창장"
+   }
+  ],
+  "para": [
+   "quote",
+   "mention",
+   "refer to"
+  ],
+  "ant": "",
+  "tip": "'cite A as the reason(A를 이유로 들다)'처럼 이유를 언급할 때 자주 쓰인다. 발음이 같은 site(장소), sight(시야)는 LC 함정이 된다.",
+  "q": {
+   "s": "Many customers ------- fast delivery as the main reason they prefer shopping with Dalton Online.",
+   "o": [
+    "insist",
+    "refer",
+    "cite",
+    "speak"
+   ],
+   "a": 2,
+   "k": "'cite A as B(A를 B로 들다)' 구조이므로 cite가 정답. insist는 on/that절과 쓰고, refer는 'refer to A as B'처럼 to가 필요하며, speak은 목적어를 취하지 않는다."
+  }
+ },
+ {
+  "w": "biography",
+  "pos": "n",
+  "m": [
+   "전기",
+   "약력"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The *biography* describes how the founder built the company from a small garage.",
+  "exKo": "그 전기는 창업자가 작은 차고에서 어떻게 회사를 일으켰는지를 그린다.",
+  "col": [
+   {
+    "e": "official biography",
+    "k": "공식 전기"
+   },
+   {
+    "e": "brief biography",
+    "k": "간략한 약력"
+   }
+  ],
+  "der": [
+   {
+    "w": "biographer",
+    "pos": "n",
+    "m": "전기 작가"
+   },
+   {
+    "w": "autobiography",
+    "pos": "n",
+    "m": "자서전"
+   }
+  ],
+  "para": [
+   "life story",
+   "profile"
+  ],
+  "ant": "",
+  "tip": "행사 연사 소개 지문에서 'brief biography(약력)'의 뜻으로도 나오며, 자서전 autobiography와 구분해야 한다.",
+  "q": {
+   "s": "A short ------- of each speaker is included in the conference program.",
+   "o": [
+    "biographer",
+    "biographical",
+    "biography",
+    "biology"
+   ],
+   "a": 2,
+   "k": "학회 프로그램에 실리는 각 연사의 '약력'이므로 biography가 정답. biographer는 사람, biographical은 형용사, biology는 '생물학'이다."
+  }
+ },
+ {
+  "w": "chapter",
+  "pos": "n",
+  "m": [
+   "(책의) 장",
+   "(단체의) 지부"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The final *chapter* of the guide explains how to file expense reports.",
+  "exKo": "안내서의 마지막 장은 경비 보고서를 제출하는 방법을 설명한다.",
+  "col": [
+   {
+    "e": "the opening chapter",
+    "k": "첫 장"
+   },
+   {
+    "e": "local chapter",
+    "k": "지역 지부"
+   }
+  ],
+  "der": [],
+  "para": [
+   "section",
+   "branch"
+  ],
+  "ant": "",
+  "tip": "책의 '장' 외에 협회·단체의 '지부(local chapter)'라는 뜻으로 Part 7에 나온다.",
+  "q": {
+   "s": "The association's Boston ------- will host a networking event for new members next month.",
+   "o": [
+    "edition",
+    "manuscript",
+    "headline",
+    "chapter"
+   ],
+   "a": 3,
+   "k": "협회의 보스턴 '지부'가 행사를 연다는 내용이므로 '지부'의 뜻이 있는 chapter가 정답. edition(판), manuscript(원고), headline(표제)은 행사를 주최할 수 없다."
+  }
+ },
+ {
+  "w": "print",
+  "pos": "v",
+  "m": [
+   "인쇄하다",
+   "출력하다",
+   "(신문에) 싣다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   5
+  ],
+  "ex": "The newsletter is *printed* on recycled paper to reduce waste.",
+  "exKo": "그 소식지는 쓰레기를 줄이기 위해 재생 용지에 인쇄된다.",
+  "col": [
+   {
+    "e": "print out",
+    "k": "출력하다"
+   },
+   {
+    "e": "in print",
+    "k": "출간되어"
+   },
+   {
+    "e": "out of print",
+    "k": "절판된"
+   }
+  ],
+  "der": [
+   {
+    "w": "printer",
+    "pos": "n",
+    "m": "인쇄기, 인쇄업자"
+   },
+   {
+    "w": "printout",
+    "pos": "n",
+    "m": "출력물"
+   }
+  ],
+  "para": [
+   "publish",
+   "produce"
+  ],
+  "ant": "",
+  "tip": "명사로 'in print(출간되어)', 'out of print(절판된)', 'fine print(작은 글씨의 세부 조항)'가 빈출이다.",
+  "q": {
+   "s": "The brochures must be ------- and delivered to the convention center by Friday morning.",
+   "o": [
+    "printing",
+    "printer",
+    "printed",
+    "prints"
+   ],
+   "a": 2,
+   "k": "안내 책자가 '인쇄되어' 배달되어야 하므로 수동태를 만드는 과거분사 printed가 정답. printing은 능동 진행, printer와 prints는 be동사 뒤에서 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "media coverage",
+  "pos": "n",
+  "m": [
+   "언론 보도",
+   "매체 취재"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The charity concert received extensive *media coverage* both at home and abroad.",
+  "exKo": "그 자선 콘서트는 국내외에서 폭넓게 언론에 보도되었다.",
+  "col": [
+   {
+    "e": "receive media coverage",
+    "k": "언론에 보도되다"
+   },
+   {
+    "e": "extensive media coverage",
+    "k": "광범위한 언론 보도"
+   },
+   {
+    "e": "positive media coverage",
+    "k": "호의적인 언론 보도"
+   }
+  ],
+  "der": [
+   {
+    "w": "cover",
+    "pos": "v",
+    "m": "취재하다, 보도하다"
+   }
+  ],
+  "para": [
+   "press coverage",
+   "publicity"
+  ],
+  "ant": "",
+  "tip": "cover가 '취재하다, 보도하다'의 뜻으로 쓰인다는 점이 핵심이며, extensive(광범위한), favorable(호의적인) 같은 형용사와 함께 나온다.",
+  "q": {
+   "s": "The opening of the new stadium received extensive media ------- across the country.",
+   "o": [
+    "coverage",
+    "covering",
+    "covered",
+    "cover"
+   ],
+   "a": 0,
+   "k": "media와 결합해 '언론 보도(media coverage)'를 이루는 명사 coverage가 정답. covering은 '덮개', cover는 '표지, 덮개'의 뜻이라 맞지 않고, covered는 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "anonymous",
+  "pos": "adj",
+  "m": [
+   "익명의",
+   "작자 미상의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Employees can submit *anonymous* feedback through the company's online survey.",
+  "exKo": "직원들은 회사의 온라인 설문 조사를 통해 익명으로 의견을 제출할 수 있다.",
+  "col": [
+   {
+    "e": "remain anonymous",
+    "k": "익명으로 남다"
+   },
+   {
+    "e": "anonymous survey",
+    "k": "익명 설문 조사"
+   },
+   {
+    "e": "anonymous donor",
+    "k": "익명의 기부자"
+   }
+  ],
+  "der": [
+   {
+    "w": "anonymously",
+    "pos": "adv",
+    "m": "익명으로"
+   },
+   {
+    "w": "anonymity",
+    "pos": "n",
+    "m": "익명(성)"
+   }
+  ],
+  "para": [
+   "unnamed",
+   "unidentified"
+  ],
+  "ant": "",
+  "tip": "부사 anonymously('submit anonymously' 익명으로 제출하다)와 구분하는 품사 문제, 'remain anonymous'처럼 2형식 동사 뒤 보어 자리 문제가 나온다.",
+  "q": {
+   "s": "The donor who funded the new library wing asked to remain -------.",
+   "o": [
+    "anonymously",
+    "anonymous",
+    "anonymity",
+    "anonymities"
+   ],
+   "a": 1,
+   "k": "2형식 동사 remain 뒤 보어 자리이므로 형용사 anonymous가 정답. anonymously는 부사라 보어가 될 수 없고, anonymity는 명사라 사람의 상태를 나타내지 못한다."
+  }
+ },
+ {
+  "w": "release date",
+  "pos": "n",
+  "m": [
+   "출시일",
+   "발매일, 개봉일"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The *release date* for the new smartphone has been moved up to September 5.",
+  "exKo": "새 스마트폰의 출시일이 9월 5일로 앞당겨졌다.",
+  "col": [
+   {
+    "e": "set a release date",
+    "k": "출시일을 정하다"
+   },
+   {
+    "e": "postpone the release date",
+    "k": "출시일을 연기하다"
+   },
+   {
+    "e": "official release date",
+    "k": "공식 출시일"
+   }
+  ],
+  "der": [],
+  "para": [
+   "launch date"
+  ],
+  "ant": "",
+  "tip": "'push back/postpone(연기하다)', 'move up(앞당기다)' 같은 일정 변경 표현과 함께 Part 3·7에 나온다.",
+  "q": {
+   "s": "Due to production delays, the ------- of the film has been pushed back to December.",
+   "o": [
+    "readership",
+    "headline",
+    "release date",
+    "biography"
+   ],
+   "a": 2,
+   "k": "제작 지연으로 12월로 '연기된(pushed back)' 것은 영화의 개봉일이므로 release date가 정답. 독자층, 표제, 전기는 연기될 수 있는 일정이 아니다."
+  }
+ }
+]

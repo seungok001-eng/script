@@ -1,0 +1,18 @@
+{
+  "name": "보카핏 토익 — 목표 점수 맞춤 토익 단어장",
+  "short_name": "보카핏 토익",
+  "description": "목표 점수에 맞춘 토익 영단어 1,200개, 단어·예문 원어민 음성, 간격 반복 복습, Part 5 실전 문제",
+  "lang": "ko",
+  "start_url": "./index.html#/home",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f6fb",
+  "theme_color": "#2b59f0",
+  "categories": ["education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,2088 @@
+[
+ {
+  "w": "place an order",
+  "pos": "phr",
+  "m": [
+   "주문하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "To *place an order*, simply call our sales department or visit our website.",
+  "exKo": "주문하려면 영업부에 전화하거나 웹사이트를 방문하면 된다.",
+  "col": [
+   {
+    "e": "place an order for ~",
+    "k": "~을 주문하다"
+   },
+   {
+    "e": "place a large order",
+    "k": "대량 주문을 하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "order",
+    "pos": "n",
+    "m": "주문, 주문품"
+   }
+  ],
+  "para": [
+   "order",
+   "make a purchase"
+  ],
+  "ant": "",
+  "tip": "'주문하다'는 동사 place를 써서 place an order (for ~)로 표현한다. Part 5에서 빈칸에 동사 place를 고르는 문제로 출제된다.",
+  "q": {
+   "s": "Customers who ------- an order before noon will receive their items the next day.",
+   "o": [
+    "do",
+    "place",
+    "raise",
+    "give"
+   ],
+   "a": 1,
+   "k": "'주문하다'는 place an order로 표현하므로 place가 정답이다. do, raise, give는 an order와 결합해 '주문하다'라는 뜻을 만들지 못한다."
+  }
+ },
+ {
+  "w": "ship",
+  "pos": "v",
+  "m": [
+   "배송하다",
+   "발송하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "All orders over $50 are *shipped* free of charge within the country.",
+  "exKo": "50달러를 넘는 모든 주문은 국내 무료로 배송된다.",
+  "col": [
+   {
+    "e": "ship an order",
+    "k": "주문품을 발송하다"
+   },
+   {
+    "e": "ship overseas",
+    "k": "해외로 배송하다"
+   },
+   {
+    "e": "be shipped to ~",
+    "k": "~로 배송되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "shipment",
+    "pos": "n",
+    "m": "배송(품)"
+   },
+   {
+    "w": "shipping",
+    "pos": "n",
+    "m": "배송, 운송"
+   }
+  ],
+  "para": [
+   "send",
+   "deliver",
+   "dispatch"
+  ],
+  "ant": "",
+  "tip": "ship은 배뿐 아니라 모든 운송 수단으로 '발송하다'를 뜻한다. 주문품이 주어일 때는 be shipped 수동태로 자주 쓰이며, 명사 shipping과 shipment를 구분해야 한다.",
+  "q": {
+   "s": "The company ------- its products to customers in over 40 countries.",
+   "o": [
+    "shipping",
+    "ships",
+    "shipment",
+    "to ship"
+   ],
+   "a": 1,
+   "k": "주어 The company 뒤에 동사가 없으므로 3인칭 단수 현재형 ships가 정답이다. shipping, to ship은 동사 역할을 할 수 없고 shipment는 명사다."
+  }
+ },
+ {
+  "w": "shipment",
+  "pos": "n",
+  "m": [
+   "배송(품)",
+   "선적"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The *shipment* of office chairs is expected to arrive on Monday morning.",
+  "exKo": "사무용 의자 배송품은 월요일 오전에 도착할 예정이다.",
+  "col": [
+   {
+    "e": "a shipment of ~",
+    "k": "~의 배송품"
+   },
+   {
+    "e": "track a shipment",
+    "k": "배송을 추적하다"
+   },
+   {
+    "e": "delay a shipment",
+    "k": "배송을 지연시키다"
+   }
+  ],
+  "der": [
+   {
+    "w": "ship",
+    "pos": "v",
+    "m": "발송하다"
+   },
+   {
+    "w": "shipping",
+    "pos": "n",
+    "m": "배송, 배송비"
+   }
+  ],
+  "para": [
+   "delivery",
+   "order",
+   "consignment"
+  ],
+  "ant": "",
+  "tip": "shipment는 '한 번에 발송된 물품'을 뜻하는 가산명사이고, shipping은 '배송(업무), 배송비'를 뜻하는 불가산명사다. a shipment of ~ 형태가 빈출이다.",
+  "q": {
+   "s": "A large ------- of printer paper arrived at the warehouse this morning.",
+   "o": [
+    "ship",
+    "shipped",
+    "shipment",
+    "shipping"
+   ],
+   "a": 2,
+   "k": "관사 A와 형용사 large 뒤 가산명사 자리이며 '대량의 배송품'이라는 의미이므로 shipment가 정답이다. shipping은 불가산명사라 a large와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "dispatch",
+  "pos": "v",
+  "m": [
+   "발송하다",
+   "파견하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Your order was *dispatched* from our warehouse yesterday and should arrive within three days.",
+  "exKo": "주문품은 어제 우리 창고에서 발송되었으며 3일 이내에 도착할 것이다.",
+  "col": [
+   {
+    "e": "dispatch an order",
+    "k": "주문품을 발송하다"
+   },
+   {
+    "e": "dispatch a technician",
+    "k": "기술자를 파견하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "dispatcher",
+    "pos": "n",
+    "m": "배차 담당자"
+   }
+  ],
+  "para": [
+   "send",
+   "ship"
+  ],
+  "ant": "",
+  "tip": "dispatch는 물건을 '발송하다'와 사람을 '파견하다'라는 두 뜻으로 쓰인다. Part 7에서 ship, send로 패러프레이징된다.",
+  "q": {
+   "s": "A technician will be ------- to your office to repair the copier within 24 hours.",
+   "o": [
+    "delayed",
+    "dispatched",
+    "labeled",
+    "stocked"
+   ],
+   "a": 1,
+   "k": "수리 기사가 사무실로 '파견될' 것이라는 의미이므로 dispatched가 정답이다. delayed(지연된), labeled(라벨이 붙은), stocked(채워진)는 to your office와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "courier",
+  "pos": "n",
+  "m": [
+   "택배 회사",
+   "배달원"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The signed contract will be sent to your office by *courier* this afternoon.",
+  "exKo": "서명된 계약서는 오늘 오후 택배로 귀하의 사무실에 발송될 것이다.",
+  "col": [
+   {
+    "e": "by courier",
+    "k": "택배로"
+   },
+   {
+    "e": "courier service",
+    "k": "택배 서비스, 특송 업체"
+   }
+  ],
+  "der": [],
+  "para": [
+   "delivery service",
+   "messenger"
+  ],
+  "ant": "",
+  "tip": "'택배로'는 by mail, by fax처럼 관사 없이 by courier로 쓴다. Part 3에서 서류를 급히 보내는 방법으로 자주 나온다.",
+  "q": {
+   "s": "Since the documents are urgent, please send them by ------- rather than by regular mail.",
+   "o": [
+    "cargo",
+    "courier",
+    "inventory",
+    "recipient"
+   ],
+   "a": 1,
+   "k": "급한 서류를 일반 우편 대신 '택배'로 보내라는 의미이므로 courier가 정답이다. cargo(화물), inventory(재고), recipient(수령인)는 by와 함께 전달 수단을 나타내지 못한다."
+  }
+ },
+ {
+  "w": "parcel",
+  "pos": "n",
+  "m": [
+   "소포",
+   "꾸러미"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4,
+   7
+  ],
+  "ex": "The front desk will hold any *parcels* that arrive while you are away.",
+  "exKo": "부재중에 도착하는 소포는 프런트 데스크에서 보관해 준다.",
+  "col": [
+   {
+    "e": "deliver a parcel",
+    "k": "소포를 배달하다"
+   },
+   {
+    "e": "parcel delivery",
+    "k": "소포 배달"
+   }
+  ],
+  "der": [],
+  "para": [
+   "package"
+  ],
+  "ant": "",
+  "tip": "parcel은 package와 같은 뜻으로 Part 1·3에서 서로 바꿔 쓰인다. 소포를 받을 때 서명하는 sign for a parcel 표현도 함께 알아두자.",
+  "q": {
+   "s": "The ------- was left at the reception desk because no one was available to sign for it.",
+   "o": [
+    "inventory",
+    "parcel",
+    "warehouse",
+    "logistics"
+   ],
+   "a": 1,
+   "k": "안내 데스크에 맡겨지고 서명을 받아야 하는 대상은 '소포'이므로 parcel이 정답이다."
+  }
+ },
+ {
+  "w": "freight",
+  "pos": "n",
+  "m": [
+   "화물",
+   "화물 운송(료)"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company uses rail *freight* to move heavy machinery across the country.",
+  "exKo": "그 회사는 중장비를 전국으로 운반하기 위해 철도 화물 운송을 이용한다.",
+  "col": [
+   {
+    "e": "freight charges",
+    "k": "화물 운송료"
+   },
+   {
+    "e": "air freight",
+    "k": "항공 화물"
+   },
+   {
+    "e": "freight train",
+    "k": "화물 열차"
+   }
+  ],
+  "der": [
+   {
+    "w": "freighter",
+    "pos": "n",
+    "m": "화물선, 화물기"
+   }
+  ],
+  "para": [
+   "cargo",
+   "goods"
+  ],
+  "ant": "",
+  "tip": "freight는 불가산명사로 '화물' 자체와 '화물 운송(료)'을 모두 뜻한다. freight charges, air freight처럼 복합명사로 자주 출제된다.",
+  "q": {
+   "s": "------- charges will be added to the total for any orders weighing more than 50 kilograms.",
+   "o": [
+    "Confirmation",
+    "Recipient",
+    "Freight",
+    "Inventory"
+   ],
+   "a": 2,
+   "k": "무게가 50킬로그램을 넘는 주문에 붙는 '화물 운송료'이므로 Freight가 정답이다. 나머지는 charges와 결합해 운송 비용을 뜻하지 못한다."
+  }
+ },
+ {
+  "w": "cargo",
+  "pos": "n",
+  "m": [
+   "화물",
+   "적하물"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   5,
+   7
+  ],
+  "ex": "Workers are unloading *cargo* from the ship at the harbor.",
+  "exKo": "인부들이 항구에서 배의 화물을 내리고 있다.",
+  "col": [
+   {
+    "e": "cargo ship",
+    "k": "화물선"
+   },
+   {
+    "e": "load cargo",
+    "k": "화물을 싣다"
+   },
+   {
+    "e": "cargo hold",
+    "k": "화물칸"
+   }
+  ],
+  "der": [],
+  "para": [
+   "freight",
+   "goods",
+   "load"
+  ],
+  "ant": "",
+  "tip": "cargo는 배·비행기·트럭으로 운반하는 '화물'로, Part 1 항구 사진에서 load(싣다), unload(내리다)와 함께 나온다. 보통 불가산명사로 쓰인다.",
+  "q": {
+   "s": "The ------- ship was delayed at the port for two days due to stormy weather.",
+   "o": [
+    "packaging",
+    "courier",
+    "recipient",
+    "cargo"
+   ],
+   "a": 3,
+   "k": "항구에서 지연된 배는 '화물선'이므로 cargo가 정답이다. courier(택배원), recipient(수령인), packaging(포장재)은 ship을 수식하지 않는다."
+  }
+ },
+ {
+  "w": "carrier",
+  "pos": "n",
+  "m": [
+   "운송 회사",
+   "항공사",
+   "통신사"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "We work with several major *carriers* to ensure fast delivery nationwide.",
+  "exKo": "우리는 전국에 빠르게 배송하기 위해 여러 주요 운송 업체와 협력하고 있다.",
+  "col": [
+   {
+    "e": "shipping carrier",
+    "k": "운송 업체"
+   },
+   {
+    "e": "air carrier",
+    "k": "항공사"
+   },
+   {
+    "e": "mobile carrier",
+    "k": "이동 통신사"
+   }
+  ],
+  "der": [
+   {
+    "w": "carry",
+    "pos": "v",
+    "m": "나르다, (상품을) 취급하다"
+   }
+  ],
+  "para": [
+   "shipping company",
+   "airline"
+  ],
+  "ant": "",
+  "tip": "carrier는 화물 운송 업체 외에 항공사(air carrier), 통신사(mobile carrier)도 가리킨다. 동사 carry는 '(매장이 상품을) 취급하다'라는 뜻으로도 출제된다.",
+  "q": {
+   "s": "The online store allows customers to choose their preferred shipping ------- at checkout.",
+   "o": [
+    "carriage",
+    "carry",
+    "carried",
+    "carrier"
+   ],
+   "a": 3,
+   "k": "소유격 their와 형용사 preferred 뒤에서 '배송 업체'를 뜻하는 명사가 필요하므로 carrier가 정답이다. carriage는 '마차, 운반'이라는 뜻이라 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "tracking number",
+  "pos": "n",
+  "m": [
+   "운송장 번호",
+   "배송 조회 번호"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "You can check the status of your order online using the *tracking number* below.",
+  "exKo": "아래 운송장 번호로 온라인에서 주문 상태를 확인할 수 있다.",
+  "col": [
+   {
+    "e": "enter the tracking number",
+    "k": "운송장 번호를 입력하다"
+   },
+   {
+    "e": "provide a tracking number",
+    "k": "운송장 번호를 제공하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "track",
+    "pos": "v",
+    "m": "추적하다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "tracking number는 Part 3·7 배송 관련 대화·이메일에서 '배송 상황을 확인하는 방법'을 묻는 문제의 단서로 자주 나온다. 동사 track(추적하다)과 함께 알아두자.",
+  "q": {
+   "s": "Once your package has been shipped, you will receive an e-mail containing its ------- number.",
+   "o": [
+    "tracking",
+    "tracked",
+    "track",
+    "tracks"
+   ],
+   "a": 0,
+   "k": "'운송장 번호'는 tracking number라는 복합명사로 쓰므로 tracking이 정답이다. tracked number는 '추적된 번호'라는 어색한 의미가 된다."
+  }
+ },
+ {
+  "w": "invoice",
+  "pos": "n",
+  "m": [
+   "송장",
+   "청구서"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Please find attached the *invoice* for last month's cleaning services.",
+  "exKo": "지난달 청소 서비스에 대한 청구서를 첨부하니 확인하기 바란다.",
+  "col": [
+   {
+    "e": "issue an invoice",
+    "k": "청구서를 발행하다"
+   },
+   {
+    "e": "pay an invoice",
+    "k": "청구서 대금을 지불하다"
+   },
+   {
+    "e": "invoice number",
+    "k": "송장 번호"
+   }
+  ],
+  "der": [],
+  "para": [
+   "bill",
+   "statement"
+  ],
+  "ant": "",
+  "tip": "invoice는 거래 후 대금을 청구하는 '청구서(송장)'로, Part 7에서 bill로 패러프레이징된다. 지불 후 받는 영수증 receipt와 혼동하지 말자.",
+  "q": {
+   "s": "Payment is due within 30 days of the date shown on the -------.",
+   "o": [
+    "invoice",
+    "courier",
+    "cargo",
+    "destination"
+   ],
+   "a": 0,
+   "k": "지불 기한의 기준이 되는 날짜가 적힌 문서는 '청구서'이므로 invoice가 정답이다."
+  }
+ },
+ {
+  "w": "inventory",
+  "pos": "n",
+  "m": [
+   "재고(품)",
+   "재고 조사"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The store closes early on the last Friday of each month to take *inventory*.",
+  "exKo": "그 매장은 매달 마지막 금요일에 재고 조사를 하기 위해 일찍 문을 닫는다.",
+  "col": [
+   {
+    "e": "take inventory",
+    "k": "재고 조사를 하다"
+   },
+   {
+    "e": "inventory levels",
+    "k": "재고 수준"
+   },
+   {
+    "e": "keep track of inventory",
+    "k": "재고를 관리하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "stock",
+   "supplies"
+  ],
+  "ant": "",
+  "tip": "inventory는 '재고품' 자체와 '재고 조사'를 모두 뜻하며 take/conduct inventory(재고 조사를 하다)가 빈출이다. Part 7에서 stock으로 패러프레이징된다.",
+  "q": {
+   "s": "The new software helps managers keep track of ------- levels at all of our stores.",
+   "o": [
+    "dispatch",
+    "invoice",
+    "recipient",
+    "inventory"
+   ],
+   "a": 3,
+   "k": "매장별로 관리하는 '재고' 수준이라는 의미이므로 inventory가 정답이다. invoice(청구서), recipient(수령인), dispatch(발송)는 levels와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "stock",
+  "pos": "v",
+  "m": [
+   "(상품을) 갖추다",
+   "채우다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   5,
+   7
+  ],
+  "ex": "Employees *stock* the shelves every night after the store closes.",
+  "exKo": "직원들은 매일 밤 매장이 문을 닫은 후 진열대에 상품을 채운다.",
+  "col": [
+   {
+    "e": "stock shelves",
+    "k": "진열대를 채우다"
+   },
+   {
+    "e": "be well stocked with ~",
+    "k": "~이 잘 갖춰져 있다"
+   },
+   {
+    "e": "stock up on ~",
+    "k": "~을 비축하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "stockroom",
+    "pos": "n",
+    "m": "재고 창고"
+   },
+   {
+    "w": "stockholder",
+    "pos": "n",
+    "m": "주주"
+   }
+  ],
+  "para": [
+   "fill",
+   "supply"
+  ],
+  "ant": "",
+  "tip": "stock은 동사로 '(상품을) 갖추다, 채우다'를 뜻하며 Part 1에서 'stocking shelves(진열대를 채우는 중)' 묘사가 자주 나온다. 명사로는 '재고' 외에 '주식'이라는 뜻도 있다.",
+  "q": {
+   "s": "The break room is well ------- with coffee, tea, and snacks for employees.",
+   "o": [
+    "stocks",
+    "stocking",
+    "stocked",
+    "stock"
+   ],
+   "a": 2,
+   "k": "휴게실이 커피·차·간식으로 '잘 갖춰져 있다'는 수동의 의미이므로 be well stocked with의 stocked가 정답이다."
+  }
+ },
+ {
+  "w": "warehouse",
+  "pos": "n",
+  "m": [
+   "창고",
+   "물류 창고"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   4,
+   7
+  ],
+  "ex": "All orders are packed and shipped from our *warehouse* in Ohio.",
+  "exKo": "모든 주문품은 오하이오에 있는 우리 창고에서 포장되어 발송된다.",
+  "col": [
+   {
+    "e": "warehouse manager",
+    "k": "창고 관리자"
+   },
+   {
+    "e": "distribution warehouse",
+    "k": "물류 창고"
+   }
+  ],
+  "der": [
+   {
+    "w": "warehousing",
+    "pos": "n",
+    "m": "창고 보관(업)"
+   }
+  ],
+  "para": [
+   "storage facility",
+   "depot",
+   "distribution center"
+  ],
+  "ant": "",
+  "tip": "warehouse는 Part 1 사진에서 상자가 쌓인 장소로 자주 나오며, Part 7에서는 storage facility, distribution center로 바뀌어 표현된다.",
+  "q": {
+   "s": "Forklifts are used to move heavy pallets around the -------.",
+   "o": [
+    "recipient",
+    "warehouse",
+    "invoice",
+    "confirmation"
+   ],
+   "a": 1,
+   "k": "지게차로 무거운 팔레트를 옮기는 장소는 '창고'이므로 warehouse가 정답이다."
+  }
+ },
+ {
+  "w": "storage",
+  "pos": "n",
+  "m": [
+   "보관",
+   "저장 공간"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   5,
+   7
+  ],
+  "ex": "The basement is used for *storage* of old files and office supplies.",
+  "exKo": "지하실은 오래된 서류와 사무용품을 보관하는 데 쓰인다.",
+  "col": [
+   {
+    "e": "storage space",
+    "k": "보관 공간"
+   },
+   {
+    "e": "in storage",
+    "k": "보관 중인"
+   },
+   {
+    "e": "storage room",
+    "k": "보관실, 창고"
+   }
+  ],
+  "der": [
+   {
+    "w": "store",
+    "pos": "v",
+    "m": "보관하다, 저장하다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "storage는 불가산명사로 '보관, 저장 공간'을 뜻하며 동사 store(보관하다)와의 품사 구분 문제가 나온다. storage space, storage room처럼 복합명사로 자주 쓰인다.",
+  "q": {
+   "s": "Please contact the facilities team if you need more ------- space for your files.",
+   "o": [
+    "stores",
+    "stored",
+    "storing",
+    "storage"
+   ],
+   "a": 3,
+   "k": "'보관 공간'은 복합명사 storage space로 쓰므로 storage가 정답이다. stored space는 '저장된 공간'이라는 어색한 의미가 된다."
+  }
+ },
+ {
+  "w": "supplier",
+  "pos": "n",
+  "m": [
+   "공급업체",
+   "납품업자"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "We are looking for a new *supplier* that can provide paper products at lower prices.",
+  "exKo": "우리는 종이 제품을 더 저렴한 가격에 공급할 수 있는 새 공급업체를 찾고 있다.",
+  "col": [
+   {
+    "e": "a supplier of ~",
+    "k": "~의 공급업체"
+   },
+   {
+    "e": "switch suppliers",
+    "k": "공급업체를 바꾸다"
+   },
+   {
+    "e": "leading supplier",
+    "k": "선도적인 공급업체"
+   }
+  ],
+  "der": [
+   {
+    "w": "supply",
+    "pos": "v",
+    "m": "공급하다 (명사: 공급, 용품)"
+   }
+  ],
+  "para": [
+   "vendor",
+   "provider",
+   "distributor"
+  ],
+  "ant": "",
+  "tip": "supplier는 업체·사람을 가리키는 가산명사이고 supply는 '공급(품)' 또는 동사 '공급하다'다. 사람명사와 사물명사를 구분하는 문제가 자주 나온다.",
+  "q": {
+   "s": "Greenfield Farms, our main ------- of fresh vegetables, has agreed to lower its prices.",
+   "o": [
+    "supply",
+    "supplied",
+    "supplier",
+    "supplying"
+   ],
+   "a": 2,
+   "k": "가격 인하에 동의한 주체이자 회사명 Greenfield Farms와 동격인 명사이므로 업체를 가리키는 supplier가 정답이다. supply는 '공급(량)'이라 회사를 가리킬 수 없다."
+  }
+ },
+ {
+  "w": "vendor",
+  "pos": "n",
+  "m": [
+   "판매업체",
+   "노점상"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   5,
+   7
+  ],
+  "ex": "Our purchasing department compares quotes from at least three *vendors* before signing a contract.",
+  "exKo": "우리 구매부는 계약을 체결하기 전에 최소 세 곳의 판매업체에서 받은 견적을 비교한다.",
+  "col": [
+   {
+    "e": "approved vendor",
+    "k": "승인된 업체"
+   },
+   {
+    "e": "street vendor",
+    "k": "노점상"
+   },
+   {
+    "e": "vendor booth",
+    "k": "판매 부스"
+   }
+  ],
+  "der": [
+   {
+    "w": "vend",
+    "pos": "v",
+    "m": "팔다"
+   },
+   {
+    "w": "vending machine",
+    "pos": "n",
+    "m": "자동판매기"
+   }
+  ],
+  "para": [
+   "supplier",
+   "seller"
+  ],
+  "ant": "",
+  "tip": "vendor는 기업에 물품을 납품하는 '공급업체'와 행사장·거리의 '판매상'을 모두 뜻하며, Part 7에서 supplier, seller와 바꿔 쓰인다.",
+  "q": {
+   "s": "More than 50 local ------- will sell crafts and food at this weekend's street fair.",
+   "o": [
+    "couriers",
+    "recipients",
+    "vendors",
+    "inventories"
+   ],
+   "a": 2,
+   "k": "거리 축제에서 공예품과 음식을 '판매하는 상인'이므로 vendors가 정답이다. recipients(수령인), couriers(배달원), inventories(재고)는 sell의 주어로 맞지 않는다."
+  }
+ },
+ {
+  "w": "distributor",
+  "pos": "n",
+  "m": [
+   "유통업체",
+   "배급업자"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Mendez Foods is the exclusive *distributor* of our products in South America.",
+  "exKo": "멘데즈 푸드는 남미 지역에서 우리 제품의 독점 유통업체다.",
+  "col": [
+   {
+    "e": "exclusive distributor",
+    "k": "독점 유통업체"
+   },
+   {
+    "e": "authorized distributor",
+    "k": "공식 유통업체"
+   }
+  ],
+  "der": [
+   {
+    "w": "distribute",
+    "pos": "v",
+    "m": "유통하다, 배포하다"
+   },
+   {
+    "w": "distribution",
+    "pos": "n",
+    "m": "유통, 배포"
+   }
+  ],
+  "para": [
+   "supplier",
+   "wholesaler"
+  ],
+  "ant": "",
+  "tip": "distributor(유통업체), distribution(유통, 배포), distribute(배포하다)의 품사 구분이 Part 5에 자주 나온다. distribute A to B(A를 B에게 나눠 주다)도 함께 알아두자.",
+  "q": {
+   "s": "The company is seeking an authorized ------- for its products in Europe.",
+   "o": [
+    "distribute",
+    "distributor",
+    "distribution",
+    "distributed"
+   ],
+   "a": 1,
+   "k": "관사 an과 형용사 authorized 뒤 명사 자리이며, 회사가 찾는 대상은 '공식 유통업체'이므로 distributor가 정답이다. distribution은 '유통'이라는 행위를 뜻한다."
+  }
+ },
+ {
+  "w": "bulk",
+  "pos": "n",
+  "m": [
+   "대량",
+   "대부분"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Restaurants can save money by buying ingredients in *bulk*.",
+  "exKo": "식당은 식자재를 대량으로 구매하여 비용을 절감할 수 있다.",
+  "col": [
+   {
+    "e": "in bulk",
+    "k": "대량으로"
+   },
+   {
+    "e": "bulk order",
+    "k": "대량 주문"
+   },
+   {
+    "e": "the bulk of ~",
+    "k": "~의 대부분"
+   }
+  ],
+  "der": [
+   {
+    "w": "bulky",
+    "pos": "adj",
+    "m": "부피가 큰"
+   }
+  ],
+  "para": [
+   "large quantities",
+   "wholesale"
+  ],
+  "ant": "",
+  "tip": "in bulk(대량으로), bulk order(대량 주문)가 빈출이며, the bulk of ~는 '~의 대부분'이라는 뜻으로 Part 7에 나온다.",
+  "q": {
+   "s": "Customers who order paper in ------- receive an additional 10 percent discount.",
+   "o": [
+    "bulk",
+    "charge",
+    "transit",
+    "demand"
+   ],
+   "a": 0,
+   "k": "추가 할인을 받는 조건은 '대량으로' 주문하는 것이므로 in bulk의 bulk가 정답이다. in charge(책임지는), in transit(운송 중인), in demand(수요가 많은)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "quantity",
+  "pos": "n",
+  "m": [
+   "수량",
+   "양"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Please indicate the *quantity* of each item you wish to order on the form.",
+  "exKo": "주문하려는 각 품목의 수량을 양식에 표시하기 바란다.",
+  "col": [
+   {
+    "e": "a large quantity of ~",
+    "k": "다량의 ~"
+   },
+   {
+    "e": "in large quantities",
+    "k": "대량으로"
+   },
+   {
+    "e": "limited quantities",
+    "k": "한정 수량"
+   }
+  ],
+  "der": [
+   {
+    "w": "quantify",
+    "pos": "v",
+    "m": "수량화하다"
+   },
+   {
+    "w": "quantitative",
+    "pos": "adj",
+    "m": "양적인"
+   }
+  ],
+  "para": [
+   "amount",
+   "number"
+  ],
+  "ant": "",
+  "tip": "quantity는 a large quantity of(다량의), in large quantities(대량으로) 형태로 쓰인다. 철자가 비슷한 quality(품질)와의 혼동을 노리는 어휘 문제가 나온다.",
+  "q": {
+   "s": "Discounts are available for orders of large ------- placed before the end of the month.",
+   "o": [
+    "quantify",
+    "qualities",
+    "quantities",
+    "quantitative"
+   ],
+   "a": 2,
+   "k": "전치사 of 뒤 명사 자리이며 '대량 주문'이라는 의미이므로 quantities가 정답이다. qualities는 '품질, 특성'이라 large와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "backorder",
+  "pos": "n",
+  "m": [
+   "이월 주문",
+   "입고 대기 주문"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The desk you selected is on *backorder* and will ship in two weeks.",
+  "exKo": "선택한 책상은 입고 대기 중이라 2주 후에 발송된다.",
+  "col": [
+   {
+    "e": "on backorder",
+    "k": "입고 대기 중인"
+   },
+   {
+    "e": "backorder an item",
+    "k": "품목을 이월 주문 처리하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "temporarily unavailable"
+  ],
+  "ant": "",
+  "tip": "on backorder는 '재고가 없어 입고된 후 발송될 예정인'이라는 뜻으로, Part 7 주문 확인 이메일에서 배송 지연의 이유로 자주 등장한다.",
+  "q": {
+   "s": "The printer you requested is currently on -------, so it will be shipped as soon as new stock arrives.",
+   "o": [
+    "storage",
+    "display",
+    "backorder",
+    "transit"
+   ],
+   "a": 2,
+   "k": "새 재고가 들어오면 발송된다고 했으므로 '입고 대기 중'을 뜻하는 on backorder가 정답이다. on display는 '진열 중인'이며, storage와 transit은 on과 함께 쓰지 않는다."
+  }
+ },
+ {
+  "w": "expedite",
+  "pos": "v",
+  "m": [
+   "신속히 처리하다",
+   "촉진하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We paid an extra fee to *expedite* the delivery of the conference materials.",
+  "exKo": "우리는 회의 자료 배송을 앞당기기 위해 추가 요금을 지불했다.",
+  "col": [
+   {
+    "e": "expedite delivery",
+    "k": "배송을 앞당기다"
+   },
+   {
+    "e": "expedite the process",
+    "k": "절차를 신속히 처리하다"
+   },
+   {
+    "e": "expedited shipping",
+    "k": "빠른 배송"
+   }
+  ],
+  "der": [
+   {
+    "w": "expedited",
+    "pos": "adj",
+    "m": "신속 처리된"
+   }
+  ],
+  "para": [
+   "speed up",
+   "accelerate",
+   "hasten"
+  ],
+  "ant": "delay",
+  "tip": "expedite는 '(일·절차를) 더 빨리 진행시키다'라는 뜻의 타동사로 Part 7에서 speed up으로 패러프레이징된다. expedited shipping(빠른 배송) 옵션 표현이 자주 나온다.",
+  "q": {
+   "s": "To ------- the approval process, please submit all required documents at once.",
+   "o": [
+    "restock",
+    "postpone",
+    "deliver",
+    "expedite"
+   ],
+   "a": 3,
+   "k": "서류를 한 번에 제출하는 목적은 승인 절차를 '신속히 처리하기' 위한 것이므로 expedite가 정답이다. postpone(연기하다)은 문맥과 반대이며 deliver, restock은 process와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "express",
+  "pos": "adj",
+  "m": [
+   "급행의",
+   "빠른"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "If you need the parts by Friday, I recommend choosing *express* shipping.",
+  "exKo": "금요일까지 부품이 필요하다면 빠른 배송을 선택할 것을 권한다.",
+  "col": [
+   {
+    "e": "express delivery",
+    "k": "빠른 배송"
+   },
+   {
+    "e": "express mail",
+    "k": "속달 우편"
+   },
+   {
+    "e": "express train",
+    "k": "급행열차"
+   }
+  ],
+  "der": [
+   {
+    "w": "expressway",
+    "pos": "n",
+    "m": "고속도로"
+   }
+  ],
+  "para": [
+   "expedited",
+   "rush"
+  ],
+  "ant": "",
+  "tip": "형용사 express는 '빠른, 급행의'라는 뜻으로 express delivery, express lane(소량 계산대) 등에 쓰인다. 동사 express(표현하다)와는 뜻이 전혀 다르니 문맥으로 구분하자.",
+  "q": {
+   "s": "For an additional $15, your package can be sent by ------- mail and arrive the next day.",
+   "o": [
+    "fragile",
+    "express",
+    "pending",
+    "estimated"
+   ],
+   "a": 1,
+   "k": "추가 요금을 내면 다음 날 도착하는 '속달' 우편이므로 express가 정답이다. fragile(깨지기 쉬운), pending(보류 중인), estimated(추정된)는 mail과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "in transit",
+  "pos": "phr",
+  "m": [
+   "운송 중인"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Your package is currently *in transit* and should arrive by Thursday.",
+  "exKo": "소포는 현재 운송 중이며 목요일까지 도착할 예정이다.",
+  "col": [
+   {
+    "e": "damaged in transit",
+    "k": "운송 중에 파손된"
+   },
+   {
+    "e": "lost in transit",
+    "k": "운송 중 분실된"
+   }
+  ],
+  "der": [
+   {
+    "w": "transit",
+    "pos": "n",
+    "m": "운송, 대중교통"
+   }
+  ],
+  "para": [
+   "on the way",
+   "en route",
+   "being shipped"
+  ],
+  "ant": "",
+  "tip": "in transit은 be동사 뒤 보어로 쓰이거나 damaged in transit(운송 중 파손된)처럼 쓰인다. Part 7에서 on the way, en route로 바뀌어 나온다.",
+  "q": {
+   "s": "Several of the glasses were damaged ------- and had to be replaced.",
+   "o": [
+    "on time",
+    "on hand",
+    "in bulk",
+    "in transit"
+   ],
+   "a": 3,
+   "k": "유리잔이 '운송 중에' 파손되었다는 의미이므로 in transit이 정답이다. on hand(구비된), in bulk(대량으로), on time(제시간에)은 damaged와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "delay",
+  "pos": "n",
+  "m": [
+   "지연",
+   "연기"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "We apologize for the *delay* in processing your refund request.",
+  "exKo": "환불 요청 처리가 지연된 점을 사과한다.",
+  "col": [
+   {
+    "e": "a delay in ~",
+    "k": "~의 지연"
+   },
+   {
+    "e": "without delay",
+    "k": "지체 없이"
+   },
+   {
+    "e": "cause a delay",
+    "k": "지연을 일으키다"
+   }
+  ],
+  "der": [
+   {
+    "w": "delayed",
+    "pos": "adj",
+    "m": "지연된"
+   }
+  ],
+  "para": [
+   "holdup",
+   "postponement"
+  ],
+  "ant": "",
+  "tip": "delay는 명사·동사로 모두 쓰이며, 명사일 때 '~의 지연'은 a delay in ~처럼 전치사 in을 쓴다. without delay(지체 없이)도 빈출이다.",
+  "q": {
+   "s": "Due to heavy snow, all flights out of Denver have been ------- by at least two hours.",
+   "o": [
+    "delays",
+    "delay",
+    "delaying",
+    "delayed"
+   ],
+   "a": 3,
+   "k": "have been 뒤에서 '지연되었다'는 수동의 의미를 만드는 과거분사 delayed가 정답이다."
+  }
+ },
+ {
+  "w": "estimated",
+  "pos": "adj",
+  "m": [
+   "추정된",
+   "예상되는"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "The *estimated* delivery date is listed in your order confirmation e-mail.",
+  "exKo": "예상 배송일은 주문 확인 이메일에 나와 있다.",
+  "col": [
+   {
+    "e": "estimated delivery date",
+    "k": "예상 배송일"
+   },
+   {
+    "e": "estimated cost",
+    "k": "추정 비용"
+   },
+   {
+    "e": "estimated time of arrival",
+    "k": "도착 예정 시간"
+   }
+  ],
+  "der": [
+   {
+    "w": "estimate",
+    "pos": "n",
+    "m": "견적(서), 추정치"
+   },
+   {
+    "w": "estimation",
+    "pos": "n",
+    "m": "판단, 추정"
+   }
+  ],
+  "para": [
+   "expected",
+   "projected",
+   "approximate"
+  ],
+  "ant": "",
+  "tip": "estimated는 명사 앞에서 '예상되는, 추정된'을 뜻하고 estimate는 명사 '견적(서)' 또는 동사 '추정하다'다. an estimated 500 people(약 500명)처럼 수 앞에도 쓰인다.",
+  "q": {
+   "s": "The ------- cost of the renovation is $45,000, but the final amount may vary.",
+   "o": [
+    "estimated",
+    "estimate",
+    "estimating",
+    "estimation"
+   ],
+   "a": 0,
+   "k": "명사 cost를 수식하는 형용사 자리이며 '추정된 비용'이라는 수동의 의미이므로 estimated가 정답이다."
+  }
+ },
+ {
+  "w": "fragile",
+  "pos": "adj",
+  "m": [
+   "깨지기 쉬운",
+   "취약한"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Please handle this box with care because it contains *fragile* items.",
+  "exKo": "이 상자에는 깨지기 쉬운 물건이 들어 있으니 조심해서 다루기 바란다.",
+  "col": [
+   {
+    "e": "fragile items",
+    "k": "깨지기 쉬운 물건"
+   },
+   {
+    "e": "fragile goods",
+    "k": "파손 주의 물품"
+   }
+  ],
+  "der": [
+   {
+    "w": "fragility",
+    "pos": "n",
+    "m": "깨지기 쉬움, 취약성"
+   }
+  ],
+  "para": [
+   "breakable",
+   "delicate"
+  ],
+  "ant": "durable",
+  "tip": "fragile은 상자에 붙이는 '파손 주의' 표시로, Part 3·4 배송 대화에서 handle with care와 함께 나온다. Part 7에서는 breakable, delicate로 패러프레이징된다.",
+  "q": {
+   "s": "Glassware and other ------- items should be wrapped in bubble wrap before shipping.",
+   "o": [
+    "fragile",
+    "express",
+    "pending",
+    "overnight"
+   ],
+   "a": 0,
+   "k": "유리 제품처럼 뽁뽁이로 감싸야 하는 물건은 '깨지기 쉬운' 물건이므로 fragile이 정답이다."
+  }
+ },
+ {
+  "w": "packaging",
+  "pos": "n",
+  "m": [
+   "포장(재)",
+   "포장 방식"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company switched to recyclable *packaging* to reduce waste.",
+  "exKo": "그 회사는 쓰레기를 줄이기 위해 재활용 가능한 포장재로 바꿨다.",
+  "col": [
+   {
+    "e": "product packaging",
+    "k": "제품 포장"
+   },
+   {
+    "e": "eco-friendly packaging",
+    "k": "친환경 포장"
+   },
+   {
+    "e": "original packaging",
+    "k": "원래 포장"
+   }
+  ],
+  "der": [
+   {
+    "w": "package",
+    "pos": "n",
+    "m": "소포, 포장물"
+   },
+   {
+    "w": "packing",
+    "pos": "n",
+    "m": "짐 싸기, 포장 작업"
+   }
+  ],
+  "para": [
+   "wrapping",
+   "container"
+  ],
+  "ant": "",
+  "tip": "packaging은 불가산명사로 '포장재, 포장 방식'을 뜻한다. 반품 조건 'in its original packaging(원래 포장 상태로)'이 Part 7에 자주 나온다.",
+  "q": {
+   "s": "Items must be returned in their original ------- to receive a full refund.",
+   "o": [
+    "packaged",
+    "packed",
+    "packer",
+    "packaging"
+   ],
+   "a": 3,
+   "k": "형용사 original의 수식을 받는 명사 자리이며 '원래 포장 상태로'라는 의미이므로 packaging이 정답이다. packer는 '포장하는 사람'이다."
+  }
+ },
+ {
+  "w": "label",
+  "pos": "n",
+  "m": [
+   "라벨",
+   "꼬리표",
+   "상표"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   3,
+   5,
+   7
+  ],
+  "ex": "Read the *label* carefully before using any cleaning products.",
+  "exKo": "세정 제품을 사용하기 전에는 라벨을 주의 깊게 읽어야 한다.",
+  "col": [
+   {
+    "e": "shipping label",
+    "k": "배송 라벨"
+   },
+   {
+    "e": "attach a label",
+    "k": "라벨을 붙이다"
+   },
+   {
+    "e": "private label",
+    "k": "자체 브랜드"
+   }
+  ],
+  "der": [
+   {
+    "w": "labeling",
+    "pos": "n",
+    "m": "라벨 부착, 표시"
+   }
+  ],
+  "para": [
+   "tag",
+   "sticker"
+  ],
+  "ant": "",
+  "tip": "label은 명사(라벨)와 동사(라벨을 붙이다)로 모두 쓰이며, Part 1에서 'Some boxes have been labeled.' 같은 수동태 묘사로 나온다. 발음은 [레이블]이다.",
+  "q": {
+   "s": "Please print the shipping ------- and attach it securely to the top of the box.",
+   "o": [
+    "destination",
+    "carrier",
+    "label",
+    "logistics"
+   ],
+   "a": 2,
+   "k": "출력해서 상자 위에 붙이는 것은 '배송 라벨'이므로 label이 정답이다."
+  }
+ },
+ {
+  "w": "confirmation",
+  "pos": "n",
+  "m": [
+   "확인(서)",
+   "확정"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "You will receive a *confirmation* e-mail once your payment has been processed.",
+  "exKo": "결제가 처리되면 확인 이메일을 받게 된다.",
+  "col": [
+   {
+    "e": "confirmation number",
+    "k": "확인 번호"
+   },
+   {
+    "e": "order confirmation",
+    "k": "주문 확인(서)"
+   },
+   {
+    "e": "written confirmation",
+    "k": "서면 확인"
+   }
+  ],
+  "der": [
+   {
+    "w": "confirm",
+    "pos": "v",
+    "m": "확인하다, 확정하다"
+   }
+  ],
+  "para": [
+   "verification",
+   "acknowledgment"
+  ],
+  "ant": "",
+  "tip": "confirmation은 '확인(서)'을 뜻하는 명사로, 동사 confirm(확인하다)과의 품사 구분 문제가 빈출이다. confirmation number, order confirmation 같은 복합명사가 Part 7에 자주 나온다.",
+  "q": {
+   "s": "Please keep your ------- number in case you need to change your reservation.",
+   "o": [
+    "confirmation",
+    "confirmed",
+    "confirm",
+    "confirming"
+   ],
+   "a": 0,
+   "k": "'예약 확인 번호'는 복합명사 confirmation number로 쓰므로 confirmation이 정답이다."
+  }
+ },
+ {
+  "w": "pending",
+  "pos": "adj",
+  "m": [
+   "보류 중인",
+   "미결의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The contract is still *pending* approval from the legal department.",
+  "exKo": "그 계약은 아직 법무팀의 승인을 기다리고 있다.",
+  "col": [
+   {
+    "e": "pending approval",
+    "k": "승인 대기 중인"
+   },
+   {
+    "e": "pending orders",
+    "k": "미처리 주문"
+   },
+   {
+    "e": "pending further notice",
+    "k": "추가 공지가 있을 때까지"
+   }
+  ],
+  "der": [],
+  "para": [
+   "awaiting",
+   "outstanding",
+   "unresolved"
+  ],
+  "ant": "",
+  "tip": "pending은 형용사로 '보류 중인, 미결의'를 뜻하고, 전치사처럼 '~을 기다리는 동안, ~까지'라는 뜻으로도 쓰여 pending approval처럼 나온다. Part 7에서 awaiting으로 패러프레이징된다.",
+  "q": {
+   "s": "Your order status will remain ------- until we receive your payment.",
+   "o": [
+    "express",
+    "pending",
+    "fragile",
+    "estimated"
+   ],
+   "a": 1,
+   "k": "결제를 받을 때까지 주문 상태가 '보류 중'으로 남는다는 의미이므로 pending이 정답이다."
+  }
+ },
+ {
+  "w": "fulfill",
+  "pos": "v",
+  "m": [
+   "(주문을) 처리하다",
+   "이행하다",
+   "충족시키다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We are hiring additional staff to *fulfill* the large number of holiday orders.",
+  "exKo": "우리는 대량의 연말 주문을 처리하기 위해 직원을 추가로 채용하고 있다.",
+  "col": [
+   {
+    "e": "fulfill an order",
+    "k": "주문을 처리하다"
+   },
+   {
+    "e": "fulfill requirements",
+    "k": "요건을 충족시키다"
+   },
+   {
+    "e": "fulfill one's obligations",
+    "k": "의무를 다하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "fulfillment",
+    "pos": "n",
+    "m": "이행, (주문) 처리"
+   }
+  ],
+  "para": [
+   "complete",
+   "process",
+   "meet"
+  ],
+  "ant": "",
+  "tip": "fulfill은 order, request, requirement, obligation을 목적어로 받는 타동사다. order fulfillment(주문 처리)처럼 명사형도 물류 지문에 자주 나온다.",
+  "q": {
+   "s": "Due to high demand, we are unable to ------- your order until early next month.",
+   "o": [
+    "fulfilling",
+    "fulfillment",
+    "fulfilled",
+    "fulfill"
+   ],
+   "a": 3,
+   "k": "be unable to 뒤에는 동사원형이 오므로 fulfill이 정답이다."
+  }
+ },
+ {
+  "w": "logistics",
+  "pos": "n",
+  "m": [
+   "물류",
+   "세부 실행 계획"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our *logistics* team coordinates deliveries to more than 300 stores.",
+  "exKo": "우리 물류팀은 300개가 넘는 매장으로의 배송을 조율한다.",
+  "col": [
+   {
+    "e": "logistics company",
+    "k": "물류 회사"
+   },
+   {
+    "e": "handle the logistics",
+    "k": "세부 준비를 담당하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "logistical",
+    "pos": "adj",
+    "m": "물류의, 실행 계획상의"
+   }
+  ],
+  "para": [
+   "distribution",
+   "supply chain management"
+  ],
+  "ant": "",
+  "tip": "logistics는 '물류' 외에 행사 등의 '세부 실행 계획'도 뜻하며, 형태는 복수지만 단수 동사와 함께 쓰이는 경우가 많다. 형용사형 logistical은 logistical support처럼 쓰인다.",
+  "q": {
+   "s": "The event planner will handle the ------- of transporting guests from the airport to the hotel.",
+   "o": [
+    "logistics",
+    "logistical",
+    "logistically",
+    "logistic"
+   ],
+   "a": 0,
+   "k": "정관사 the 뒤 명사 자리이며 '손님 수송의 세부 준비'라는 의미이므로 logistics가 정답이다. logistical은 형용사, logistically는 부사다."
+  }
+ },
+ {
+  "w": "recipient",
+  "pos": "n",
+  "m": [
+   "수령인",
+   "받는 사람"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The package could not be delivered because the *recipient* was not at home.",
+  "exKo": "수령인이 집에 없어 소포를 배달하지 못했다.",
+  "col": [
+   {
+    "e": "award recipient",
+    "k": "수상자"
+   },
+   {
+    "e": "the intended recipient",
+    "k": "원래 받을 사람"
+   }
+  ],
+  "der": [
+   {
+    "w": "receive",
+    "pos": "v",
+    "m": "받다"
+   },
+   {
+    "w": "receipt",
+    "pos": "n",
+    "m": "영수증, 수령"
+   }
+  ],
+  "para": [
+   "receiver",
+   "addressee"
+  ],
+  "ant": "sender",
+  "tip": "recipient는 '받는 사람'을 뜻하는 사람명사로, receipt(영수증, 수령)와 구분하는 문제가 자주 나온다. award recipient(수상자)처럼 상을 받는 사람도 가리킨다.",
+  "q": {
+   "s": "The ------- of this year's Employee of the Year award will be announced at the banquet.",
+   "o": [
+    "receipt",
+    "recipient",
+    "reception",
+    "receptive"
+   ],
+   "a": 1,
+   "k": "만찬에서 발표될 대상은 상을 '받는 사람'이므로 recipient가 정답이다. receipt는 '영수증, 수령', reception은 '접수처, 환영회'라는 뜻이다."
+  }
+ },
+ {
+  "w": "destination",
+  "pos": "n",
+  "m": [
+   "목적지",
+   "도착지"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "Please write the name of your final *destination* on the luggage tag.",
+  "exKo": "수하물 꼬리표에 최종 목적지의 이름을 적기 바란다.",
+  "col": [
+   {
+    "e": "final destination",
+    "k": "최종 목적지"
+   },
+   {
+    "e": "travel destination",
+    "k": "여행지"
+   },
+   {
+    "e": "tourist destination",
+    "k": "관광지"
+   }
+  ],
+  "der": [
+   {
+    "w": "destined",
+    "pos": "adj",
+    "m": "~행의, ~할 운명인"
+   }
+  ],
+  "para": [
+   "location"
+  ],
+  "ant": "origin",
+  "tip": "destination은 배송·여행의 '목적지'로, 배송 지문에서는 country of destination(도착 국가)처럼 쓰인다. Part 4 공항 안내 방송에도 자주 나온다.",
+  "q": {
+   "s": "Shipping costs vary depending on the weight of the package and its -------.",
+   "o": [
+    "expedite",
+    "confirmation",
+    "destination",
+    "pending"
+   ],
+   "a": 2,
+   "k": "배송비를 결정하는 요소는 무게와 '목적지'이므로 destination이 정답이다. expedite는 동사, pending은 형용사라 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "overnight",
+  "pos": "adj",
+  "m": [
+   "익일의",
+   "하룻밤 사이의"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The documents must reach Chicago by tomorrow, so please send them by *overnight* delivery.",
+  "exKo": "서류가 내일까지 시카고에 도착해야 하니 익일 배송으로 보내기 바란다.",
+  "col": [
+   {
+    "e": "overnight delivery",
+    "k": "익일 배송"
+   },
+   {
+    "e": "overnight stay",
+    "k": "1박"
+   },
+   {
+    "e": "ship overnight",
+    "k": "익일 배송으로 보내다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "next-day"
+  ],
+  "ant": "",
+  "tip": "overnight는 형용사(overnight delivery: 익일 배송)와 부사(ship overnight)로 모두 쓰인다. '하룻밤 사이에, 갑자기'라는 뜻도 있다.",
+  "q": {
+   "s": "If you choose ------- shipping, your order will arrive the next business day.",
+   "o": [
+    "overnight",
+    "overdue",
+    "overall",
+    "overtime"
+   ],
+   "a": 0,
+   "k": "다음 영업일에 도착하는 배송이므로 '익일'을 뜻하는 overnight가 정답이다. overdue(기한이 지난), overall(전반적인), overtime(초과 근무)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "deliver",
+  "pos": "v",
+  "m": [
+   "배달하다",
+   "(연설 등을) 하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The furniture store will *deliver* your new sofa on Saturday morning.",
+  "exKo": "가구점에서 토요일 오전에 새 소파를 배달해 줄 것이다.",
+  "col": [
+   {
+    "e": "deliver A to B",
+    "k": "A를 B에게 배달하다"
+   },
+   {
+    "e": "deliver a speech",
+    "k": "연설하다"
+   },
+   {
+    "e": "deliver on a promise",
+    "k": "약속을 지키다"
+   }
+  ],
+  "der": [
+   {
+    "w": "delivery",
+    "pos": "n",
+    "m": "배달, 전달"
+   }
+  ],
+  "para": [
+   "bring",
+   "drop off",
+   "ship"
+  ],
+  "ant": "",
+  "tip": "deliver는 '배달하다' 외에 deliver a speech/presentation(연설·발표를 하다)이라는 뜻으로도 자주 출제된다. 명사 delivery와의 품사 구분 문제도 빈출이다.",
+  "q": {
+   "s": "Ms. Kim will ------- the keynote address at next month's industry conference.",
+   "o": [
+    "deliver",
+    "deliverable",
+    "delivery",
+    "delivered"
+   ],
+   "a": 0,
+   "k": "조동사 will 뒤 동사원형 자리이며 deliver the keynote address는 '기조연설을 하다'라는 뜻이므로 deliver가 정답이다."
+  }
+ },
+ {
+  "w": "on hand",
+  "pos": "phr",
+  "m": [
+   "갖춰져 있는",
+   "대기하고 있는"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "We always keep extra printer cartridges *on hand* in the supply room.",
+  "exKo": "우리는 비품실에 여분의 프린터 카트리지를 항상 비치해 둔다.",
+  "col": [
+   {
+    "e": "keep ~ on hand",
+    "k": "~을 비치해 두다"
+   },
+   {
+    "e": "be on hand to do",
+    "k": "~하기 위해 대기하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "available",
+   "in stock"
+  ],
+  "ant": "",
+  "tip": "on hand는 물건이 '구비된' 또는 사람이 '대기하고 있는'이라는 뜻으로, 'Staff will be on hand to answer questions.'처럼 Part 4 안내에 자주 나온다. on the other hand(반면에)와 혼동하지 말자.",
+  "q": {
+   "s": "Technical staff will be ------- throughout the conference to help presenters with any equipment problems.",
+   "o": [
+    "on hand",
+    "in stock",
+    "in bulk",
+    "on order"
+   ],
+   "a": 0,
+   "k": "기술 직원들이 발표자를 돕기 위해 '대기하고 있다'는 의미이므로 on hand가 정답이다. in stock, in bulk, on order는 사물에 쓰는 표현이다."
+  }
+ },
+ {
+  "w": "restock",
+  "pos": "v",
+  "m": [
+   "재입고하다",
+   "다시 채우다"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   7
+  ],
+  "ex": "The bookstore *restocks* its shelves with new titles every Tuesday.",
+  "exKo": "그 서점은 매주 화요일 새 책으로 진열대를 다시 채운다.",
+  "col": [
+   {
+    "e": "restock shelves",
+    "k": "진열대를 다시 채우다"
+   },
+   {
+    "e": "be restocked",
+    "k": "재입고되다"
+   }
+  ],
+  "der": [
+   {
+    "w": "restocking",
+    "pos": "n",
+    "m": "재입고"
+   }
+  ],
+  "para": [
+   "replenish",
+   "refill"
+  ],
+  "ant": "",
+  "tip": "restock은 '재고를 다시 채우다'라는 타동사로, Part 3·7 품절 상황에서 'The item will be restocked next week.'처럼 수동태로 자주 나온다. replenish로 패러프레이징된다.",
+  "q": {
+   "s": "The popular sneakers sold out quickly, but the store expects to ------- them by Friday.",
+   "o": [
+    "restocking",
+    "restocks",
+    "restocked",
+    "restock"
+   ],
+   "a": 3,
+   "k": "expect to 뒤에는 동사원형이 오므로 restock이 정답이다."
+  }
+ },
+ {
+  "w": "shipping and handling",
+  "pos": "n",
+  "m": [
+   "배송 및 취급 수수료",
+   "배송료"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The total price includes $8.50 for *shipping and handling*.",
+  "exKo": "총 가격에는 배송 및 취급 수수료 8.50달러가 포함되어 있다.",
+  "col": [
+   {
+    "e": "shipping and handling charges",
+    "k": "배송 및 취급 비용"
+   },
+   {
+    "e": "plus shipping and handling",
+    "k": "배송료 별도"
+   }
+  ],
+  "der": [],
+  "para": [
+   "delivery charges",
+   "postage"
+  ],
+  "ant": "",
+  "tip": "shipping and handling(S&H)은 상품 가격과 별도로 붙는 '배송·포장 처리 비용'으로, Part 7 주문서·청구서에서 총액 계산 문제의 단서가 된다.",
+  "q": {
+   "s": "Orders over $100 qualify for free shipping and -------.",
+   "o": [
+    "handled",
+    "handle",
+    "handling",
+    "handler"
+   ],
+   "a": 2,
+   "k": "and 앞의 명사 shipping과 대등하게 연결되는 명사가 필요하며 shipping and handling은 고정 표현이므로 handling이 정답이다. handler는 '처리하는 사람'이다."
+  }
+ }
+]
