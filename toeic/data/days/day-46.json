@@ -12,8 +12,8 @@
    3,
    4
   ],
-  "ex": "Traffic on Route 7 is *backed up* for several miles because of an accident near Exit 12.",
-  "exKo": "12번 출구 근처에서 난 사고 때문에 7번 도로의 차량이 수 마일에 걸쳐 정체되어 있다.",
+  "ex": "Northbound traffic on Route 7 is *backed up* for several miles near Exit 12.",
+  "exKo": "7번 도로 북쪽 방향 차량이 12번 출구 근처에서 수 마일에 걸쳐 정체되어 있다.",
   "col": [
    {
     "e": "be backed up for miles",
@@ -487,8 +487,8 @@
    4,
    7
   ],
-  "ex": "The *tram* runs every ten minutes between the train station and the old town.",
-  "exKo": "트램은 기차역과 구시가지 사이를 10분마다 운행한다.",
+  "ex": "Tourists can ride the historic *tram* along the waterfront for a small fee.",
+  "exKo": "관광객들은 적은 요금으로 해안가를 따라 운행하는 역사적인 트램을 탈 수 있다.",
   "col": [
    {
     "e": "take a tram",
@@ -607,7 +607,7 @@
   "ant": "",
   "tip": "traffic은 불가산명사라 a traffic, traffics로 쓰지 않고, 많고 적음은 heavy/light traffic으로 나타낸다.",
   "q": {
-   "s": "The new bypass is expected to reduce ------- in the city center by 30 percent.",
+   "s": "Local residents have complained about the increase in truck ------- on Cedar Road since the warehouse opened.",
    "o": [
     "tariff",
     "trophy",
@@ -615,7 +615,7 @@
     "trial"
    ],
    "a": 2,
-   "k": "우회 도로로 도심에서 줄어드는 것은 '교통량'이므로 traffic이 정답이다. tariff(관세), trophy(트로피), trial(시험, 재판)은 우회 도로로 줄일 수 있는 것이 아니다."
+   "k": "창고가 문을 연 뒤 Cedar 로에서 늘어난 것은 트럭 '통행량'이므로 traffic이 정답이다. tariff(관세), trophy(트로피), trial(시험, 재판)은 도로 위에서 늘어나는 것이 아니다."
   }
  },
  {
@@ -661,7 +661,7 @@
   "ant": "",
   "tip": "parking은 불가산명사라 a parking으로 쓰지 않고, 개별 공간은 a parking space/spot이라고 한다. 동사 park와 품사를 구분하는 문제가 나온다.",
   "q": {
-   "s": "------- is not permitted in front of the building's main entrance at any time.",
+   "s": "------- in the visitor lot is limited to two hours on weekdays.",
    "o": [
     "Park",
     "Parked",
@@ -669,7 +669,7 @@
     "Parks"
    ],
    "a": 2,
-   "k": "be동사 is의 주어가 되는 불가산명사 자리이므로 Parking이 정답이다. Park(공원)는 가산명사 단수라 관사가 필요하고 의미도 맞지 않으며, Parked는 과거분사, Parks는 복수형이라 is와 수가 맞지 않는다."
+   "k": "be동사 is의 주어가 되는 불가산명사 자리이므로 Parking이 정답이다. Park(공원)는 관사 없이 쓸 수 없고 의미도 맞지 않으며, Parked는 과거분사, Parks는 복수형이라 is와 수가 맞지 않는다."
   }
  },
  {
@@ -796,7 +796,7 @@
   "ant": "",
   "tip": "roadway는 도로 중 차가 다니는 부분을 강조하는 말이다. 교통 방송에서 debris on the roadway(도로 위 잔해물)처럼 나온다.",
   "q": {
-   "s": "Cyclists must ride in the bike lane and not on the main -------.",
+   "s": "A fallen tree is blocking part of the -------, so drivers should use caution near Elm Park.",
    "o": [
     "roadway",
     "roadmap",
@@ -804,7 +804,7 @@
     "broadcast"
    ],
    "a": 0,
-   "k": "자전거는 자전거 차로로 다니고 주 '차도'로 다니면 안 된다는 의미이므로 roadway가 정답이다. roadmap(로드맵), roadshow(순회 홍보 행사), broadcast(방송)는 자전거가 다니는 곳이 아니다."
+   "k": "쓰러진 나무가 일부를 막고 있어 운전자가 주의해야 하는 곳은 '차도'이므로 roadway가 정답이다. roadmap(로드맵), roadshow(순회 홍보 행사), broadcast(방송)는 나무가 막을 수 있는 장소가 아니다."
   }
  },
  {
@@ -939,7 +939,7 @@
   "ant": "",
   "tip": "Part 1에서 They're riding an escalator(에스컬레이터를 타고 있다)와 They're climbing the stairs를 구분하는 문제가 나온다.",
   "q": {
-   "s": "Passengers can take the ------- or the elevator to reach the upper platform.",
+   "s": "The ------- in the north wing is out of service, so shoppers should use the stairs instead.",
    "o": [
     "escalator",
     "escalation",
@@ -947,7 +947,7 @@
     "escalating"
    ],
    "a": 0,
-   "k": "관사 the 뒤에 와서 엘리베이터와 함께 이동 수단을 나타내는 명사 escalator가 정답이다. escalation(확대)은 의미가 맞지 않고, escalate와 escalating은 동사 형태다."
+   "k": "관사 the 뒤에 오며 고장 나서 계단을 대신 이용하게 만드는 시설을 나타내는 명사 escalator가 정답이다. escalation(확대)은 의미가 맞지 않고, escalate와 escalating은 동사 형태다."
   }
  },
  {
@@ -961,8 +961,8 @@
    2,
    3
   ],
-  "ex": "Turn left at the second *traffic light*, and the hotel will be on your right.",
-  "exKo": "두 번째 신호등에서 왼쪽으로 돌면 오른쪽에 호텔이 있을 것이다.",
+  "ex": "The *traffic light* at the corner of Main Street and Broad Street has been broken since Tuesday.",
+  "exKo": "Main 가와 Broad 가가 만나는 모퉁이의 신호등이 화요일부터 고장 나 있다.",
   "col": [
    {
     "e": "stop at a traffic light",
@@ -981,7 +981,7 @@
   "ant": "",
   "tip": "길 안내(Part 2·3)에서 turn left at the traffic light처럼 전치사 at과 함께 쓰인다. Part 7에서는 traffic signal로 바꿔 표현된다.",
   "q": {
-   "s": "The city plans to install a ------- at the busy intersection of Maple Street and Fourth Avenue.",
+   "s": "Residents have asked the city to install a ------- near the school because cars often drive too fast there.",
    "o": [
     "traffic jam",
     "traffic light",
@@ -989,7 +989,7 @@
     "traffic flow"
    ],
    "a": 1,
-   "k": "번잡한 교차로에 '설치하는(install)' 것은 신호등이므로 traffic light가 정답이다. traffic jam(교통 체증), traffic report(교통 정보), traffic flow(교통 흐름)는 설치할 수 있는 대상이 아니다."
+   "k": "학교 근처에 '설치하는(install)' 것은 신호등이므로 traffic light가 정답이다. traffic jam(교통 체증), traffic report(교통 정보), traffic flow(교통 흐름)는 설치할 수 있는 대상이 아니다."
   }
  },
  {
@@ -1017,13 +1017,7 @@
     "k": "변화를 나타내다"
    }
   ],
-  "der": [
-   {
-    "w": "signature",
-    "pos": "n",
-    "m": "서명"
-   }
-  ],
+  "der": [],
   "para": [
    "indicate",
    "show"
@@ -1098,8 +1092,8 @@
    1,
    4
   ],
-  "ex": "Passengers can use free luggage *trolleys* in the arrivals hall.",
-  "exKo": "승객들은 도착 홀에서 무료 수하물 카트를 이용할 수 있다.",
+  "ex": "A porter is pushing a *trolley* loaded with suitcases toward the hotel entrance.",
+  "exKo": "짐꾼이 여행 가방을 실은 카트를 호텔 입구 쪽으로 밀고 있다.",
   "col": [
    {
     "e": "luggage trolley",
@@ -1167,7 +1161,7 @@
   "ant": "",
   "tip": "highway, freeway와 같은 뜻으로 교통 방송(Part 4)에 자주 나온다. 형태가 비슷한 expression(표현), expressly(명확히)와 구분하자.",
   "q": {
-   "s": "Traffic on the ------- moved slowly this morning because of heavy rain.",
+   "s": "Construction of the ------- linking the port to the airport is scheduled to finish next year.",
    "o": [
     "expression",
     "expressive",
@@ -1175,7 +1169,7 @@
     "expressway"
    ],
    "a": 3,
-   "k": "전치사 on과 관사 the 뒤에 오며 차량이 다니는 장소를 나타내는 명사 expressway가 정답이다. expression(표현)은 의미가 맞지 않고, expressive는 형용사, expressly는 부사다."
+   "k": "관사 the 뒤에 오며 항구와 공항을 잇는 도로를 나타내는 명사 expressway가 정답이다. expression(표현)은 의미가 맞지 않고, expressive는 형용사, expressly는 부사다."
   }
  },
  {
@@ -1340,8 +1334,8 @@
    5,
    7
   ],
-  "ex": "The conference fee covers *transportation* between the hotel and the convention center.",
-  "exKo": "회의 참가비에는 호텔과 컨벤션 센터 간의 교통편이 포함되어 있다.",
+  "ex": "Many employees use public *transportation* because parking downtown is so expensive.",
+  "exKo": "시내 주차비가 매우 비싸서 많은 직원이 대중교통을 이용한다.",
   "col": [
    {
     "e": "public transportation",
@@ -1872,7 +1866,7 @@
   "ant": "drop off",
   "tip": "pick up은 '(사람을) 태우러 가다'와 '(물건을) 찾아오다'의 뜻으로 Part 2·3에 매우 자주 나온다. 대명사 목적어는 pick him up처럼 가운데에 넣는다.",
   "q": {
-   "s": "Mr. Han will ------- the clients at the airport and drive them to our office.",
+   "s": "Could you ------- Ms. Grady at the train station at four o'clock and bring her to the meeting?",
    "o": [
     "pick out",
     "put off",
@@ -1880,7 +1874,7 @@
     "take after"
    ],
    "a": 2,
-   "k": "공항에서 고객들을 '태워' 사무실로 데려온다는 의미이므로 pick up이 정답이다. pick out(골라내다), put off(미루다), take after(닮다)는 문맥에 맞지 않는다."
+   "k": "기차역에서 Grady 씨를 '태워' 회의에 데려온다는 의미이므로 pick up이 정답이다. pick out(골라내다), put off(미루다), take after(닮다)는 문맥에 맞지 않는다."
   }
  },
  {
@@ -1922,7 +1916,7 @@
   "ant": "pick up",
   "tip": "drop off는 사람을 '내려 주다'와 물건을 '갖다 두다, 반납하다'의 뜻으로 쓰인다. 반의어 pick up과 짝으로 Part 2·3에 자주 나온다.",
   "q": {
-   "s": "Customers can ------- their rental cars at any of our locations nationwide.",
+   "s": "Guests who check out early may ------- their room keys at the front desk.",
    "o": [
     "drop out",
     "drop off",
@@ -1930,7 +1924,7 @@
     "drop in"
    ],
    "a": 1,
-   "k": "렌터카를 전국 어느 지점에서나 '반납할(갖다 둘)' 수 있다는 의미이므로 drop off가 정답이다. drop out(중퇴하다), drop by(잠깐 들르다), drop in(불쑥 방문하다)은 목적어 their rental cars와 어울리지 않는다."
+   "k": "일찍 퇴실하는 손님이 객실 열쇠를 프런트에 '맡기다(두고 가다)'라는 의미이므로 drop off가 정답이다. drop out(중퇴하다), drop by(잠깐 들르다), drop in(불쑥 방문하다)은 목적어 their room keys와 어울리지 않는다."
   }
  }
 ]
