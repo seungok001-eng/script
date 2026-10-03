@@ -1129,7 +1129,7 @@
   "ant": "",
   "tip": "Part 4·7에서 경품이나 사은품으로 자주 나오며 gift card, voucher로 바꿔 표현된다. '상품권을 사용하다'는 redeem a gift certificate라고 한다.",
   "q": {
-   "s": "Customers who spend more than $100 will receive a $10 gift ------- for their next visit.",
+   "s": "Every new member of the fitness club receives a $25 gift ------- for the juice bar.",
    "o": [
     "certification",
     "certificate",
@@ -1170,14 +1170,14 @@
   ],
   "der": [
    {
-    "w": "wrapping",
-    "pos": "n",
-    "m": "포장지, 포장"
-   },
-   {
     "w": "wrapper",
     "pos": "n",
     "m": "포장지, 포장 용기"
+   },
+   {
+    "w": "wrapping paper",
+    "pos": "n",
+    "m": "포장지"
    }
   ],
   "para": [
@@ -2060,8 +2060,8 @@
    5,
    7
   ],
-  "ex": "The company plans to open an *upscale* restaurant in the financial district.",
-  "exKo": "그 회사는 금융 지구에 고급 레스토랑을 열 계획이다.",
+  "ex": "An *upscale* seafood restaurant will open on the top floor of the new office tower.",
+  "exKo": "새 사무용 빌딩의 꼭대기 층에 고급 해산물 레스토랑이 문을 열 예정이다.",
   "col": [
    {
     "e": "upscale restaurant",

@@ -446,8 +446,8 @@
    5,
    7
   ],
-  "ex": "Ms. Ortiz has worked in *banking* for more than fifteen years.",
-  "exKo": "Ortiz 씨는 15년 넘게 금융업에 종사해 왔다.",
+  "ex": "After ten years in *banking*, Ms. Ortiz opened her own financial consulting firm.",
+  "exKo": "Ortiz 씨는 금융업계에서 10년간 일한 뒤 자신의 재무 컨설팅 회사를 차렸다.",
   "col": [
    {
     "e": "banking hours",
@@ -1059,8 +1059,8 @@
    4,
    7
   ],
-  "ex": "With *mobile banking*, customers can check their balances anytime from their phones.",
-  "exKo": "모바일 뱅킹을 이용하면 고객은 언제든지 휴대 전화로 잔액을 확인할 수 있다.",
+  "ex": "The bank's *mobile banking* app lets users transfer money and pay bills with a few taps.",
+  "exKo": "그 은행의 모바일 뱅킹 앱을 이용하면 몇 번의 터치만으로 송금과 공과금 납부를 할 수 있다.",
   "col": [
    {
     "e": "mobile banking app",
@@ -1102,8 +1102,8 @@
    5,
    7
   ],
-  "ex": "Guests are asked to *settle* their bills at the front desk before checking out.",
-  "exKo": "투숙객은 체크아웃하기 전에 프런트에서 숙박비를 정산해야 한다.",
+  "ex": "Before checking out, guests must *settle* any charges for room service and minibar items.",
+  "exKo": "투숙객은 체크아웃하기 전에 룸서비스와 미니바 이용 요금을 모두 정산해야 한다.",
   "col": [
    {
     "e": "settle a bill",
@@ -1331,7 +1331,7 @@
   "ant": "",
   "tip": "납부 기한이 지난 뒤에도 연체료 없이 낼 수 있는 기간으로, Part 7에서 '며칠 내 납부하면 연체료 면제' 같은 내용의 근거가 된다.",
   "q": {
-   "s": "Payments received within the five-day ------- will not be subject to a late fee.",
+   "s": "Customers who miss the due date have a ten-day ------- before a late fee is added to their account.",
    "o": [
     "peak period",
     "grace period",
@@ -1339,7 +1339,7 @@
     "rush hour"
    ],
    "a": 1,
-   "k": "기한 후 5일 이내에 받은 납부금에 연체료가 붙지 않는다는 내용이므로 grace period(유예 기간)가 정답이다. peak period(성수기), trial period(시험 기간), rush hour(혼잡 시간대)는 연체료 면제와 관련이 없다."
+   "k": "납부 기한을 놓친 뒤 연체료가 부과되기 전까지 주어지는 10일은 grace period(유예 기간)이다. peak period(성수기), trial period(시험 기간), rush hour(혼잡 시간대)는 연체료 면제와 관련이 없다."
   }
  },
  {
@@ -1424,15 +1424,15 @@
   "ant": "deposit",
   "tip": "동사 withdraw와 명사 withdrawal을 구분하는 품사 문제가 나오며, make a withdrawal(인출하다)이 대표 표현이다.",
   "q": {
-   "s": "Customers can make a ------- of up to $1,000 per day at any of our ATMs.",
+   "s": "Daily cash ------- at the airport ATM are limited to $500 per card.",
    "o": [
     "withdraw",
     "withdrew",
     "withdrawn",
-    "withdrawal"
+    "withdrawals"
    ],
    "a": 3,
-   "k": "관사 a 뒤에 명사가 필요하므로 withdrawal이 정답이며, make a withdrawal은 '인출하다'라는 뜻이다. withdraw, withdrew, withdrawn은 동사의 활용형이다."
+   "k": "cash와 결합해 복수 동사 are의 주어가 되는 복합명사 cash withdrawals(현금 인출)를 이루어야 하므로 withdrawals가 정답이다. withdraw와 withdrew는 동사이고, withdrawn을 넣으면 불가산명사 cash가 주어가 되어 복수 동사 are와 맞지 않는다."
   }
  },
  {
@@ -1760,7 +1760,7 @@
   "ant": "",
   "tip": "conversion rate(환율, 전환율), conversion of A into B 형태로 쓰이며, 동사 convert와의 품사 구분 문제가 나온다.",
   "q": {
-   "s": "The ------- of the old factory into apartments is expected to be completed by spring.",
+   "s": "Lakeside Bank offers free ------- of foreign currency to customers who hold a premium account.",
    "o": [
     "convert",
     "converts",
@@ -1768,7 +1768,7 @@
     "conversion"
    ],
    "a": 3,
-   "k": "정관사 The와 전치사 of 사이는 명사 자리이므로 conversion이 정답이다. convert와 converts는 동사, converted는 과거(분사) 형태다."
+   "k": "형용사 free의 수식을 받으며 offers의 목적어가 되는 명사 자리이므로 conversion이 정답이다. convert와 converts는 동사, converted는 과거(분사) 형태다."
   }
  },
  {

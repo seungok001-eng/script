@@ -1,0 +1,2176 @@
+[
+ {
+  "w": "stapler",
+  "pos": "n",
+  "m": [
+   "스테이플러",
+   "호치키스"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   5
+  ],
+  "ex": "The *stapler* at the reception desk has run out of staples again.",
+  "exKo": "안내 데스크에 있는 스테이플러의 심이 또 다 떨어졌다.",
+  "col": [
+   {
+    "e": "refill a stapler",
+    "k": "스테이플러 심을 채우다"
+   }
+  ],
+  "der": [
+   {
+    "w": "staple",
+    "pos": "n",
+    "m": "스테이플러 심"
+   },
+   {
+    "w": "staple",
+    "pos": "v",
+    "m": "스테이플러로 고정하다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "사진 묘사와 사무실 대화에 등장하는 사무용품 어휘다. 동사 staple(스테이플러로 찍다)은 staple the pages together처럼 쓴다.",
+  "q": {
+   "s": "Please use the ------- to fasten the pages of each report together before handing them out.",
+   "o": [
+    "scanner",
+    "shredder",
+    "stapler",
+    "projector"
+   ],
+   "a": 2,
+   "k": "보고서 페이지를 함께 고정하는 도구는 stapler(스테이플러)다. scanner(스캐너), shredder(문서 파쇄기), projector(영사기)는 종이를 고정하지 못한다."
+  }
+ },
+ {
+  "w": "department",
+  "pos": "n",
+  "m": [
+   "부서",
+   "(백화점의) 매장"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The shipping *department* is located on the ground floor of the warehouse.",
+  "exKo": "배송 부서는 창고 1층에 있다.",
+  "col": [
+   {
+    "e": "accounting department",
+    "k": "회계부"
+   },
+   {
+    "e": "department head",
+    "k": "부서장"
+   },
+   {
+    "e": "department store",
+    "k": "백화점"
+   }
+  ],
+  "der": [
+   {
+    "w": "departmental",
+    "pos": "adj",
+    "m": "부서의"
+   }
+  ],
+  "para": [
+   "division",
+   "section",
+   "office"
+  ],
+  "ant": "",
+  "tip": "the accounting/sales department처럼 부서명이 앞에 온다. 철자가 비슷한 departure(출발)와 혼동을 유도하는 문제가 나온다.",
+  "q": {
+   "s": "Requests for new laptops should be sent to the IT ------- by Friday.",
+   "o": [
+    "department",
+    "departure",
+    "depart",
+    "departed"
+   ],
+   "a": 0,
+   "k": "the IT 뒤에서 '정보 기술 부서'를 뜻하는 명사 department가 정답이다. departure는 '출발'이라 의미가 맞지 않고, depart, departed는 동사 형태다."
+  }
+ },
+ {
+  "w": "task",
+  "pos": "n",
+  "m": [
+   "업무, 일",
+   "과제"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Ms. Reyes divided the *tasks* among her team members so the project would finish on time.",
+  "exKo": "Reyes 씨는 프로젝트가 제때 끝나도록 팀원들에게 업무를 나누어 맡겼다.",
+  "col": [
+   {
+    "e": "perform a task",
+    "k": "업무를 수행하다"
+   },
+   {
+    "e": "task force",
+    "k": "특별 대책반"
+   },
+   {
+    "e": "daily tasks",
+    "k": "일상 업무"
+   }
+  ],
+  "der": [],
+  "para": [
+   "job",
+   "duty",
+   "assignment"
+  ],
+  "ant": "",
+  "tip": "task는 가산명사로 perform/complete a task처럼 쓴다. task force(특별 대책반)는 Part 7에서 committee로 패러프레이징되기도 한다.",
+  "q": {
+   "s": "Updating the customer database is a time-consuming ------- that requires close attention to detail.",
+   "o": [
+    "fare",
+    "margin",
+    "venue",
+    "task"
+   ],
+   "a": 3,
+   "k": "고객 데이터베이스를 갱신하는 것은 시간이 많이 드는 '업무'이므로 task가 정답이다. fare(요금), margin(이윤, 여백), venue(장소)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "project",
+  "pos": "n",
+  "m": [
+   "프로젝트, 사업",
+   "계획"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The renovation *project* is expected to take about four months.",
+  "exKo": "보수 공사 프로젝트는 약 4개월이 걸릴 것으로 예상된다.",
+  "col": [
+   {
+    "e": "lead a project",
+    "k": "프로젝트를 이끌다"
+   },
+   {
+    "e": "project manager",
+    "k": "프로젝트 책임자"
+   },
+   {
+    "e": "pilot project",
+    "k": "시범 사업"
+   }
+  ],
+  "der": [
+   {
+    "w": "projection",
+    "pos": "n",
+    "m": "예측, 투영"
+   },
+   {
+    "w": "projected",
+    "pos": "adj",
+    "m": "예상된"
+   }
+  ],
+  "para": [
+   "undertaking",
+   "plan"
+  ],
+  "ant": "",
+  "tip": "명사 '프로젝트' 외에 동사로 '예상하다(be projected to do)'라는 뜻이 Part 5·7에 자주 나온다. 사람명사가 아니므로 projector(영사기)와 구별한다.",
+  "q": {
+   "s": "Ms. Kim was chosen to lead the ------- to redesign the company's website.",
+   "o": [
+    "projection",
+    "project",
+    "projector",
+    "projected"
+   ],
+   "a": 1,
+   "k": "lead의 목적어로 '웹사이트 재설계 프로젝트'를 뜻하는 project가 정답이다. projection은 '예측, 투영', projector는 '영사기'라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "report",
+  "pos": "v",
+  "m": [
+   "보고하다",
+   "(~에게) 업무 보고를 하다, 지휘를 받다",
+   "보도하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Employees should *report* any damaged equipment to the facilities manager immediately.",
+  "exKo": "직원들은 손상된 장비를 시설 관리자에게 즉시 보고해야 한다.",
+  "col": [
+   {
+    "e": "report to",
+    "k": "~에게 보고하다, ~의 지휘를 받다"
+   },
+   {
+    "e": "report for work",
+    "k": "출근하다"
+   },
+   {
+    "e": "sales report",
+    "k": "판매 보고서"
+   }
+  ],
+  "der": [
+   {
+    "w": "reporter",
+    "pos": "n",
+    "m": "기자"
+   },
+   {
+    "w": "reportedly",
+    "pos": "adv",
+    "m": "전하는 바에 따르면"
+   }
+  ],
+  "para": [
+   "inform",
+   "notify"
+  ],
+  "ant": "",
+  "tip": "report to + 상사는 '~의 지휘를 받다, ~에게 보고하다'라는 뜻으로 조직 구조를 설명할 때 쓴다. report A to B(A를 B에게 보고하다) 구조도 함께 나온다.",
+  "q": {
+   "s": "During the training period, all new employees ------- directly to the department manager.",
+   "o": [
+    "report",
+    "reporter",
+    "reporting",
+    "reportedly"
+   ],
+   "a": 0,
+   "k": "주어 all new employees 뒤에 동사가 필요하며 report to는 '~의 지휘를 받다'라는 뜻이므로 report가 정답이다. reporting은 단독으로 동사가 될 수 없고, reporter는 명사, reportedly는 부사다."
+  }
+ },
+ {
+  "w": "request",
+  "pos": "n",
+  "m": [
+   "요청",
+   "요청서"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The IT team received more than fifty *requests* for software upgrades this week.",
+  "exKo": "IT팀은 이번 주에 소프트웨어 업그레이드 요청을 50건 넘게 받았다.",
+  "col": [
+   {
+    "e": "upon request",
+    "k": "요청 시"
+   },
+   {
+    "e": "request for",
+    "k": "~에 대한 요청"
+   },
+   {
+    "e": "make a request",
+    "k": "요청하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "requester",
+    "pos": "n",
+    "m": "요청자"
+   }
+  ],
+  "para": [
+   "demand",
+   "application"
+  ],
+  "ant": "",
+  "tip": "명사일 때는 request for(~에 대한 요청), 동사일 때는 전치사 없이 request a refund처럼 쓴다. available upon request(요청 시 제공되는)가 빈출 표현이다.",
+  "q": {
+   "s": "Additional copies of the product catalog are available upon -------.",
+   "o": [
+    "requested",
+    "requester",
+    "request",
+    "requesting"
+   ],
+   "a": 2,
+   "k": "upon request는 '요청 시'라는 고정 표현이므로 명사 request가 정답이다. requester는 사람명사라 관사 없이 쓸 수 없고, requesting은 목적어 없이 의미가 완성되지 않는다."
+  }
+ },
+ {
+  "w": "contact",
+  "pos": "v",
+  "m": [
+   "연락하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Lowe *contacted* the supplier to ask about the delayed shipment.",
+  "exKo": "Lowe 씨는 지연된 배송에 관해 문의하기 위해 공급업체에 연락했다.",
+  "col": [
+   {
+    "e": "contact information",
+    "k": "연락처"
+   },
+   {
+    "e": "contact A at",
+    "k": "A에게 ~로 연락하다"
+   },
+   {
+    "e": "point of contact",
+    "k": "연락 담당자"
+   }
+  ],
+  "der": [],
+  "para": [
+   "get in touch with",
+   "reach"
+  ],
+  "ant": "",
+  "tip": "contact는 타동사라 contact with A가 아니라 contact A로 쓴다. 명사로는 contact information(연락처), be in contact with(~와 연락하고 있다)처럼 쓰인다.",
+  "q": {
+   "s": "Please ------- Mr. Park in the purchasing department if you have questions about the order.",
+   "o": [
+    "contact",
+    "contact with",
+    "contacting",
+    "contacted"
+   ],
+   "a": 0,
+   "k": "Please 뒤 명령문에는 동사원형이 오며, contact는 타동사라 전치사 없이 목적어를 취하므로 contact가 정답이다. contact with는 동사로 쓸 때 틀린 표현이다."
+  }
+ },
+ {
+  "w": "information",
+  "pos": "n",
+  "m": [
+   "정보",
+   "안내"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The brochure contains *information* about all of the hotel's facilities.",
+  "exKo": "그 안내 책자에는 호텔의 모든 시설에 관한 정보가 담겨 있다.",
+  "col": [
+   {
+    "e": "further information",
+    "k": "추가 정보"
+   },
+   {
+    "e": "information about",
+    "k": "~에 관한 정보"
+   },
+   {
+    "e": "contact information",
+    "k": "연락처"
+   }
+  ],
+  "der": [
+   {
+    "w": "inform",
+    "pos": "v",
+    "m": "알리다"
+   },
+   {
+    "w": "informative",
+    "pos": "adj",
+    "m": "유익한"
+   }
+  ],
+  "para": [
+   "details",
+   "data"
+  ],
+  "ant": "",
+  "tip": "information은 불가산명사라 an information, informations로 쓰지 않고 a piece of information으로 센다. further/more information 뒤의 명사 자리를 묻는다.",
+  "q": {
+   "s": "For further -------, please visit our website or call our customer service line.",
+   "o": [
+    "inform",
+    "informed",
+    "informative",
+    "information"
+   ],
+   "a": 3,
+   "k": "형용사 further 뒤의 명사 자리이므로 information이 정답이다. inform은 동사, informed와 informative는 형용사다."
+  }
+ },
+ {
+  "w": "complete",
+  "pos": "v",
+  "m": [
+   "완료하다",
+   "(양식을) 작성하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The contractor expects to *complete* the renovation by the end of March.",
+  "exKo": "그 시공업자는 3월 말까지 보수 공사를 완료할 것으로 예상한다.",
+  "col": [
+   {
+    "e": "complete a form",
+    "k": "양식을 작성하다"
+   },
+   {
+    "e": "complete a project",
+    "k": "프로젝트를 완료하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "completion",
+    "pos": "n",
+    "m": "완료"
+   },
+   {
+    "w": "completely",
+    "pos": "adv",
+    "m": "완전히"
+   }
+  ],
+  "para": [
+   "finish",
+   "fill out"
+  ],
+  "ant": "",
+  "tip": "동사로 '끝내다' 외에 complete a form(양식을 작성하다)이라는 뜻이 중요하다. 형용사로 '완전한, 완료된'이라는 뜻도 있어 be동사 뒤 보어 자리에 쓰인다.",
+  "q": {
+   "s": "Please make sure that the form is ------- before you hand it in at the front desk.",
+   "o": [
+    "complete",
+    "completely",
+    "completion",
+    "completing"
+   ],
+   "a": 0,
+   "k": "be동사 is 뒤 보어 자리에 '완전히 작성된'이라는 뜻의 형용사가 필요하므로 complete가 정답이다. completely는 부사, completion은 명사이며, completing은 양식이 무언가를 완료한다는 뜻이 되어 어색하다."
+  }
+ },
+ {
+  "w": "prepare",
+  "pos": "v",
+  "m": [
+   "준비하다",
+   "(음식을) 마련하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Mr. Adams spent the weekend *preparing* slides for Monday's presentation.",
+  "exKo": "Adams 씨는 월요일 발표에 쓸 슬라이드를 준비하며 주말을 보냈다.",
+  "col": [
+   {
+    "e": "prepare for",
+    "k": "~을 준비하다, ~에 대비하다"
+   },
+   {
+    "e": "be prepared to do",
+    "k": "~할 준비가 되어 있다"
+   }
+  ],
+  "der": [
+   {
+    "w": "preparation",
+    "pos": "n",
+    "m": "준비"
+   },
+   {
+    "w": "prepared",
+    "pos": "adj",
+    "m": "준비된"
+   },
+   {
+    "w": "preparatory",
+    "pos": "adj",
+    "m": "준비의"
+   }
+  ],
+  "para": [
+   "get ready",
+   "arrange"
+  ],
+  "ant": "",
+  "tip": "prepare A(A를 준비하다)와 prepare for A(A에 대비하다)를 구별한다. be prepared to do(~할 준비가 되어 있다)도 자주 나온다.",
+  "q": {
+   "s": "The catering staff will ------- lunch for all participants in the training session.",
+   "o": [
+    "preparation",
+    "prepare",
+    "preparatory",
+    "prepared"
+   ],
+   "a": 1,
+   "k": "조동사 will 뒤에는 동사원형이 오므로 prepare가 정답이다. preparation은 명사, preparatory는 형용사, prepared는 과거형·과거분사다."
+  }
+ },
+ {
+  "w": "available",
+  "pos": "adj",
+  "m": [
+   "이용할 수 있는",
+   "(사람이) 시간이 되는"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The conference room is not *available* on Thursday afternoon because of a client meeting.",
+  "exKo": "회의실은 고객 회의 때문에 목요일 오후에는 사용할 수 없다.",
+  "col": [
+   {
+    "e": "available to do",
+    "k": "~할 시간이 있는"
+   },
+   {
+    "e": "available for",
+    "k": "~에 이용 가능한"
+   },
+   {
+    "e": "readily available",
+    "k": "쉽게 구할 수 있는"
+   }
+  ],
+  "der": [
+   {
+    "w": "availability",
+    "pos": "n",
+    "m": "이용 가능성, 시간 여유"
+   }
+  ],
+  "para": [
+   "free",
+   "accessible",
+   "on hand"
+  ],
+  "ant": "unavailable",
+  "tip": "사물에는 '이용 가능한', 사람에는 '시간이 되는'이라는 뜻으로 쓴다. be동사 뒤 보어 자리에 명사 availability를 넣는 함정이 단골이다.",
+  "q": {
+   "s": "Ms. Grey will not be ------- to meet with clients until she returns from Tokyo next week.",
+   "o": [
+    "availability",
+    "available",
+    "avail",
+    "availed"
+   ],
+   "a": 1,
+   "k": "be동사 be 뒤 보어 자리에는 형용사가 오므로 available이 정답이다. be available to do는 '~할 시간이 있다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "schedule",
+  "pos": "n",
+  "m": [
+   "일정, 일정표",
+   "시간표"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The construction company sent us a revised *schedule* for the lobby renovation.",
+  "exKo": "그 건설 회사는 로비 보수 공사의 수정된 일정표를 우리에게 보냈다.",
+  "col": [
+   {
+    "e": "ahead of schedule",
+    "k": "예정보다 빨리"
+   },
+   {
+    "e": "on schedule",
+    "k": "예정대로"
+   },
+   {
+    "e": "busy schedule",
+    "k": "바쁜 일정"
+   }
+  ],
+  "der": [
+   {
+    "w": "scheduled",
+    "pos": "adj",
+    "m": "예정된"
+   }
+  ],
+  "para": [
+   "timetable",
+   "plan",
+   "agenda"
+  ],
+  "ant": "",
+  "tip": "ahead of/behind/on schedule(예정보다 빨리/늦게/예정대로)이 빈출이다. 동사로 be scheduled for + 시간, be scheduled to do(~할 예정이다)도 매우 자주 나온다.",
+  "q": {
+   "s": "Because of the holiday, the shuttle bus will run on a reduced ------- this week.",
+   "o": [
+    "scheduled",
+    "scheduler",
+    "schedule",
+    "scheduling"
+   ],
+   "a": 2,
+   "k": "관사 a와 형용사 reduced 뒤의 명사 자리이며 셔틀버스 운행 '시간표'를 뜻하므로 schedule이 정답이다. run on a reduced schedule은 '단축 운행하다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "manage",
+  "pos": "v",
+  "m": [
+   "관리하다, 운영하다",
+   "(어떻게든) 해내다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Doyle *manages* a team of fifteen sales representatives in the Asian region.",
+  "exKo": "Doyle 씨는 아시아 지역의 영업 사원 15명으로 구성된 팀을 관리한다.",
+  "col": [
+   {
+    "e": "manage to do",
+    "k": "간신히 ~해내다"
+   },
+   {
+    "e": "manage a team",
+    "k": "팀을 관리하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "management",
+    "pos": "n",
+    "m": "경영, 경영진"
+   },
+   {
+    "w": "manager",
+    "pos": "n",
+    "m": "관리자"
+   },
+   {
+    "w": "manageable",
+    "pos": "adj",
+    "m": "감당할 수 있는"
+   }
+  ],
+  "para": [
+   "run",
+   "oversee",
+   "handle"
+  ],
+  "ant": "",
+  "tip": "manage to do는 '(어려움에도) 해내다'라는 뜻으로 to부정사를 목적어로 취한다. succeed는 succeed in -ing로 써야 하므로 구별한다.",
+  "q": {
+   "s": "Despite the heavy traffic, Mr. Lee ------- to arrive at the client's office on time.",
+   "o": [
+    "handled",
+    "succeeded",
+    "achieved",
+    "managed"
+   ],
+   "a": 3,
+   "k": "교통 체증에도 '간신히 해냈다'는 뜻이며 to부정사를 목적어로 취하는 동사는 managed다. succeed는 succeeded in arriving으로 써야 하고, handled, achieved는 to부정사를 목적어로 취하지 않는다."
+  }
+ },
+ {
+  "w": "progress",
+  "pos": "n",
+  "m": [
+   "진행, 진척",
+   "발전"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The project manager reports on the team's *progress* every Friday afternoon.",
+  "exKo": "프로젝트 책임자는 매주 금요일 오후 팀의 진척 상황을 보고한다.",
+  "col": [
+   {
+    "e": "in progress",
+    "k": "진행 중인"
+   },
+   {
+    "e": "make progress",
+    "k": "진전을 보이다"
+   },
+   {
+    "e": "progress report",
+    "k": "경과 보고서"
+   }
+  ],
+  "der": [
+   {
+    "w": "progressive",
+    "pos": "adj",
+    "m": "진보적인, 점진적인"
+   },
+   {
+    "w": "progressively",
+    "pos": "adv",
+    "m": "점진적으로"
+   }
+  ],
+  "para": [
+   "advancement",
+   "development"
+  ],
+  "ant": "",
+  "tip": "progress는 불가산명사라 a progress, progresses로 쓰지 않는다. in progress(진행 중인), make progress on(~에 진전을 보이다)이 빈출이다.",
+  "q": {
+   "s": "Construction of the new parking garage is currently in -------.",
+   "o": [
+    "progress",
+    "progressive",
+    "progressed",
+    "progressively"
+   ],
+   "a": 0,
+   "k": "in progress는 '진행 중인'이라는 고정 표현이므로 명사 progress가 정답이다. progressive는 형용사, progressively는 부사다."
+  }
+ },
+ {
+  "w": "file",
+  "pos": "v",
+  "m": [
+   "(서류를) 철하다, 정리 보관하다",
+   "(불만·소송 등을) 제기하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Ms. Ruiz *filed* the signed contracts in alphabetical order.",
+  "exKo": "Ruiz 씨는 서명된 계약서를 알파벳 순서로 철해 두었다.",
+  "col": [
+   {
+    "e": "file a complaint",
+    "k": "불만을 제기하다"
+   },
+   {
+    "e": "file a report",
+    "k": "보고서를 제출하다"
+   },
+   {
+    "e": "file away",
+    "k": "정리해 보관하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "filing",
+    "pos": "n",
+    "m": "서류 정리"
+   }
+  ],
+  "para": [
+   "submit",
+   "lodge",
+   "store"
+  ],
+  "ant": "",
+  "tip": "명사(파일, 서류철) 외에 동사로 '철하다', file a complaint/claim(불만·청구를 제기하다)이 자주 나온다. 철자가 비슷한 fill(채우다)과 혼동하지 않는다.",
+  "q": {
+   "s": "Customers who wish to ------- a complaint can do so through our website.",
+   "o": [
+    "fill",
+    "file",
+    "feed",
+    "fold"
+   ],
+   "a": 1,
+   "k": "file a complaint는 '불만을 제기하다'라는 고정 표현이므로 file이 정답이다. fill(채우다)은 fill out a form처럼 양식과 함께 쓰며 complaint와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "form",
+  "pos": "n",
+  "m": [
+   "양식, 서식",
+   "형태"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "All visitors must fill out a *form* at the front desk before entering the laboratory.",
+  "exKo": "모든 방문객은 실험실에 들어가기 전에 안내 데스크에서 양식을 작성해야 한다.",
+  "col": [
+   {
+    "e": "fill out a form",
+    "k": "양식을 작성하다"
+   },
+   {
+    "e": "application form",
+    "k": "신청서"
+   },
+   {
+    "e": "order form",
+    "k": "주문서"
+   }
+  ],
+  "der": [
+   {
+    "w": "format",
+    "pos": "n",
+    "m": "형식, 구성"
+   }
+  ],
+  "para": [
+   "document",
+   "application"
+  ],
+  "ant": "",
+  "tip": "fill out/complete/submit a form(양식을 작성하다/제출하다)이 핵심이다. 동사로 form a committee(위원회를 구성하다)처럼 '구성하다'라는 뜻도 있다.",
+  "q": {
+   "s": "New members should fill out the attached ------- and return it to the front office.",
+   "o": [
+    "format",
+    "formula",
+    "form",
+    "formation"
+   ],
+   "a": 2,
+   "k": "fill out의 목적어로 '양식'을 뜻하는 form이 정답이다. format(형식), formula(공식), formation(형성)은 작성해서 제출하는 대상이 아니다."
+  }
+ },
+ {
+  "w": "folder",
+  "pos": "n",
+  "m": [
+   "폴더",
+   "서류철"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   5
+  ],
+  "ex": "Ms. Patel keeps all the receipts from her business trips in a blue *folder*.",
+  "exKo": "Patel 씨는 출장 영수증을 모두 파란색 서류철에 보관한다.",
+  "col": [
+   {
+    "e": "shared folder",
+    "k": "공유 폴더"
+   },
+   {
+    "e": "file folder",
+    "k": "서류철"
+   }
+  ],
+  "der": [],
+  "para": [
+   "file",
+   "binder"
+  ],
+  "ant": "",
+  "tip": "종이 서류철과 컴퓨터 폴더 모두를 가리킨다. 사진 묘사에서 holding a folder, 업무 대화에서 upload to the shared folder가 자주 나온다.",
+  "q": {
+   "s": "The training materials have been uploaded to the shared ------- on the company server.",
+   "o": [
+    "holder",
+    "binder",
+    "shelf",
+    "folder"
+   ],
+   "a": 3,
+   "k": "회사 서버의 공유 '폴더'에 자료가 업로드된 것이므로 folder가 정답이다. holder(소유자, 받침대), binder(바인더), shelf(선반)는 서버에 있을 수 없다."
+  }
+ },
+ {
+  "w": "sign",
+  "pos": "v",
+  "m": [
+   "서명하다"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Both parties *signed* the agreement at a ceremony in Seoul.",
+  "exKo": "양측은 서울에서 열린 행사에서 협정에 서명했다.",
+  "col": [
+   {
+    "e": "sign in",
+    "k": "서명하고 들어가다, 출석을 기록하다"
+   },
+   {
+    "e": "sign up for",
+    "k": "~에 등록하다"
+   },
+   {
+    "e": "sign a contract",
+    "k": "계약서에 서명하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "signature",
+    "pos": "n",
+    "m": "서명"
+   },
+   {
+    "w": "signing",
+    "pos": "n",
+    "m": "서명, 조인"
+   }
+  ],
+  "para": [
+   "endorse"
+  ],
+  "ant": "",
+  "tip": "sign in/out(출입 기록을 하다), sign up for(~에 신청하다)이 빈출이며, 명사 sign은 '표지판'이라는 뜻이다. 명사 signature(서명)와 품사를 구별한다.",
+  "q": {
+   "s": "Visitors must ------- in at the security desk before going to the upper floors.",
+   "o": [
+    "signal",
+    "sign",
+    "signature",
+    "signing"
+   ],
+   "a": 1,
+   "k": "조동사 must 뒤의 동사원형 자리이며 sign in은 '서명하고 들어가다'라는 뜻이므로 sign이 정답이다. signal in이라는 표현은 쓰지 않고, signature는 명사다."
+  }
+ },
+ {
+  "w": "on file",
+  "pos": "phr",
+  "m": [
+   "(서류로) 보관되어 있는",
+   "기록되어 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "We will keep your résumé *on file* in case a suitable position opens up.",
+  "exKo": "적합한 자리가 나는 경우에 대비해 귀하의 이력서를 보관해 둘 것이다.",
+  "col": [
+   {
+    "e": "keep A on file",
+    "k": "A를 보관해 두다"
+   },
+   {
+    "e": "have A on file",
+    "k": "A를 기록으로 갖고 있다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "on record",
+   "in our records"
+  ],
+  "ant": "",
+  "tip": "keep/have A on file(A를 보관하고 있다)로 쓰이며 불합격 통보 편지·고객 정보 안내에 자주 나온다. Part 7에서 in our records로 패러프레이징된다.",
+  "q": {
+   "s": "The clinic already has your insurance details -------, so you do not need to bring your card.",
+   "o": [
+    "in line",
+    "in stock",
+    "on file",
+    "on call"
+   ],
+   "a": 2,
+   "k": "보험 정보가 이미 '기록으로 보관되어 있어서' 카드를 가져올 필요가 없다는 뜻이므로 on file이 정답이다. in line(줄을 서서), in stock(재고가 있는), on call(대기 중인)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "clipboard",
+  "pos": "n",
+  "m": [
+   "클립보드",
+   "(컴퓨터의) 클립보드"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "The inspector carried a *clipboard* and took notes as she walked through the factory.",
+  "exKo": "검사관은 클립보드를 들고 공장을 돌아다니며 메모했다.",
+  "col": [
+   {
+    "e": "hold a clipboard",
+    "k": "클립보드를 들고 있다"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "",
+  "tip": "Part 1 사진 묘사에서 holding a clipboard, writing on a clipboard로 자주 등장한다. 철자가 비슷한 cupboard(찬장), billboard(광고판)와 구별한다.",
+  "q": {
+   "s": "Each tour guide carries a ------- with a list of all the participants' names.",
+   "o": [
+    "keyboard",
+    "cupboard",
+    "billboard",
+    "clipboard"
+   ],
+   "a": 3,
+   "k": "참가자 명단을 끼워 들고 다니는 것은 clipboard(클립보드)다. keyboard(키보드), cupboard(찬장), billboard(광고판)는 들고 다니며 명단을 볼 수 있는 물건이 아니다."
+  }
+ },
+ {
+  "w": "filing",
+  "pos": "n",
+  "m": [
+   "서류 정리",
+   "(서류의) 제출, 신청"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   3,
+   5,
+   7
+  ],
+  "ex": "The new assistant will handle *filing* and answer calls at the front desk.",
+  "exKo": "새 비서는 서류 정리를 맡고 안내 데스크에서 전화를 받을 것이다.",
+  "col": [
+   {
+    "e": "filing cabinet",
+    "k": "서류 캐비닛"
+   },
+   {
+    "e": "filing system",
+    "k": "문서 정리 체계"
+   },
+   {
+    "e": "tax filing",
+    "k": "세금 신고"
+   }
+  ],
+  "der": [
+   {
+    "w": "file",
+    "pos": "v",
+    "m": "철하다, 제출하다"
+   }
+  ],
+  "para": [
+   "paperwork"
+  ],
+  "ant": "",
+  "tip": "filing cabinet(서류 캐비닛), filing system처럼 명사 앞에서 복합명사를 이룬다. tax filing deadline(세금 신고 마감일)처럼 '제출, 신고'라는 뜻도 있다.",
+  "q": {
+   "s": "Mr. Nash spent the morning organizing the ------- cabinets in the records room.",
+   "o": [
+    "filing",
+    "filed",
+    "files",
+    "filer"
+   ],
+   "a": 0,
+   "k": "cabinets 앞에서 복합명사 filing cabinet(서류 캐비닛)을 이루는 filing이 정답이다. filed cabinets는 '철해진 캐비닛'이라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "mark your calendar",
+  "pos": "phr",
+  "m": [
+   "(일정을) 달력에 표시해 두다",
+   "날짜를 기억해 두다"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Employees were asked to *mark their calendars* for the company picnic on June 14.",
+  "exKo": "직원들은 6월 14일 회사 야유회 날짜를 달력에 표시해 두라는 요청을 받았다.",
+  "col": [
+   {
+    "e": "mark your calendar for",
+    "k": "~의 날짜를 표시해 두다"
+   },
+   {
+    "e": "mark the date",
+    "k": "날짜를 기억해 두다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "save the date",
+   "make a note of"
+  ],
+  "ant": "",
+  "tip": "행사 공지·광고 첫머리에서 Mark your calendar(s) for ~(~ 날짜를 기억해 두세요) 형태로 쓰인다. Part 4·7에서 행사 날짜를 묻는 문제의 단서가 된다.",
+  "q": {
+   "s": "------- for the grand opening of our new downtown branch on Friday, May 3.",
+   "o": [
+    "Take your time",
+    "Mark your calendar",
+    "Keep in mind",
+    "Make your way"
+   ],
+   "a": 1,
+   "k": "for 뒤의 행사 날짜를 '달력에 표시해 두라'는 공지 표현이므로 Mark your calendar가 정답이다. Take your time(천천히 하다), Keep in mind(명심하다), Make your way(가다)는 for + 행사와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "respond",
+  "pos": "v",
+  "m": [
+   "응답하다",
+   "대응하다"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Wong *responded* to every customer complaint within twenty-four hours.",
+  "exKo": "Wong 씨는 모든 고객 불만에 24시간 이내에 응답했다.",
+  "col": [
+   {
+    "e": "respond to",
+    "k": "~에 응답하다, 대응하다"
+   },
+   {
+    "e": "respond promptly",
+    "k": "신속히 응답하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "response",
+    "pos": "n",
+    "m": "응답, 반응"
+   },
+   {
+    "w": "responsive",
+    "pos": "adj",
+    "m": "즉각 반응하는"
+   }
+  ],
+  "para": [
+   "reply",
+   "answer",
+   "react"
+  ],
+  "ant": "",
+  "tip": "respond는 자동사라 respond to + 대상으로 쓴다. 명사 response는 in response to(~에 대한 응답으로) 형태로 자주 나온다.",
+  "q": {
+   "s": "Please ------- to this invitation by May 10 so that we can finalize the seating arrangements.",
+   "o": [
+    "response",
+    "respond",
+    "responsive",
+    "responsively"
+   ],
+   "a": 1,
+   "k": "Please 뒤 명령문에는 동사원형이 오므로 respond가 정답이다. response는 명사, responsive는 형용사, responsively는 부사다."
+  }
+ },
+ {
+  "w": "assistant",
+  "pos": "n",
+  "m": [
+   "비서, 보조",
+   "조수"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Mr. Hong's *assistant* booked his flights and hotel for the conference.",
+  "exKo": "Hong 씨의 비서가 학회에 갈 항공편과 호텔을 예약했다.",
+  "col": [
+   {
+    "e": "administrative assistant",
+    "k": "행정 보조 직원"
+   },
+   {
+    "e": "personal assistant",
+    "k": "개인 비서"
+   },
+   {
+    "e": "assistant manager",
+    "k": "부지배인, 대리"
+   }
+  ],
+  "der": [
+   {
+    "w": "assist",
+    "pos": "v",
+    "m": "돕다"
+   },
+   {
+    "w": "assistance",
+    "pos": "n",
+    "m": "도움, 지원"
+   }
+  ],
+  "para": [
+   "aide",
+   "secretary"
+  ],
+  "ant": "",
+  "tip": "사람명사 assistant와 불가산명사 assistance(도움)를 구별하는 문제가 단골이다. assistant manager(부지배인)처럼 직책 앞에 붙기도 한다.",
+  "q": {
+   "s": "Ms. Lee works as a legal ------- at a law firm in downtown Toronto.",
+   "o": [
+    "assistance",
+    "assist",
+    "assisted",
+    "assistant"
+   ],
+   "a": 3,
+   "k": "works as a 뒤에는 직업을 나타내는 사람명사가 와야 하므로 assistant가 정답이다. assistance는 '도움'이라는 불가산명사라 관사 a와 함께 직업을 나타낼 수 없다."
+  }
+ },
+ {
+  "w": "secretary",
+  "pos": "n",
+  "m": [
+   "비서",
+   "(단체의) 총무"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Callers can leave a message with Mr. Diaz's *secretary* when he is out of the office.",
+  "exKo": "전화한 사람은 Diaz 씨가 자리에 없을 때 그의 비서에게 메시지를 남길 수 있다.",
+  "col": [
+   {
+    "e": "personal secretary",
+    "k": "개인 비서"
+   },
+   {
+    "e": "board secretary",
+    "k": "이사회 간사"
+   }
+  ],
+  "der": [
+   {
+    "w": "secretarial",
+    "pos": "adj",
+    "m": "비서의"
+   }
+  ],
+  "para": [
+   "assistant"
+  ],
+  "ant": "",
+  "tip": "secretary는 사람명사로 철자가 비슷한 secret(비밀), secretive(비밀스러운)와 혼동을 유도한다. 단체에서는 '총무, 간사'라는 뜻으로도 쓰인다.",
+  "q": {
+   "s": "The board ------- is responsible for recording what is decided at each meeting.",
+   "o": [
+    "secret",
+    "secretive",
+    "secretary",
+    "secretly"
+   ],
+   "a": 2,
+   "k": "회의 결정 사항을 기록하는 책임자는 사람이므로 secretary(간사)가 정답이다. secret(비밀), secretive(비밀스러운), secretly(몰래)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "coworker",
+  "pos": "n",
+  "m": [
+   "동료",
+   "직장 동료"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "Ms. Han often has lunch with her *coworkers* in the company cafeteria.",
+  "exKo": "Han 씨는 회사 구내식당에서 동료들과 자주 점심을 먹는다.",
+  "col": [
+   {
+    "e": "former coworker",
+    "k": "전 동료"
+   }
+  ],
+  "der": [],
+  "para": [
+   "colleague",
+   "associate"
+  ],
+  "ant": "",
+  "tip": "colleague와 같은 뜻으로 Part 7에서 서로 바꿔 쓰인다. co-worker처럼 하이픈을 넣어 쓰기도 한다.",
+  "q": {
+   "s": "Mr. Ford asked a ------- to cover his shift while he attended a medical appointment.",
+   "o": [
+    "coworker",
+    "coordinate",
+    "cooperation",
+    "copier"
+   ],
+   "a": 0,
+   "k": "근무를 대신해 달라고 부탁할 수 있는 대상은 사람이므로 coworker(동료)가 정답이다. coordinate는 동사, cooperation은 '협력', copier는 '복사기'다."
+  }
+ },
+ {
+  "w": "duplicate",
+  "pos": "n",
+  "m": [
+   "사본, 복제품"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The receptionist made a *duplicate* of the key for the new tenant.",
+  "exKo": "접수 담당자는 새 세입자를 위해 열쇠를 하나 복사했다.",
+  "col": [
+   {
+    "e": "in duplicate",
+    "k": "두 통으로"
+   },
+   {
+    "e": "duplicate copy",
+    "k": "사본"
+   }
+  ],
+  "der": [
+   {
+    "w": "duplication",
+    "pos": "n",
+    "m": "복제, 중복"
+   }
+  ],
+  "para": [
+   "copy",
+   "replica"
+  ],
+  "ant": "original",
+  "tip": "명사·형용사(중복된)·동사(복사하다, 중복하다)로 모두 쓰인다. in duplicate(두 통으로 작성하여)는 서류 제출 안내에 나온다.",
+  "q": {
+   "s": "To avoid confusion, the system automatically deletes any ------- entries in the customer database.",
+   "o": [
+    "dominant",
+    "diligent",
+    "devoted",
+    "duplicate"
+   ],
+   "a": 3,
+   "k": "혼동을 피하기 위해 시스템이 삭제하는 것은 '중복된' 항목이므로 duplicate가 정답이다. dominant(지배적인), diligent(근면한), devoted(헌신적인)는 데이터 항목을 수식하기에 맞지 않는다."
+  }
+ },
+ {
+  "w": "cabinet",
+  "pos": "n",
+  "m": [
+   "캐비닛, 보관장",
+   "(정부의) 내각"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   5
+  ],
+  "ex": "The confidential files are kept in a locked *cabinet* in Ms. Nolan's office.",
+  "exKo": "기밀 서류는 Nolan 씨의 사무실에 있는 잠긴 캐비닛에 보관된다.",
+  "col": [
+   {
+    "e": "filing cabinet",
+    "k": "서류 캐비닛"
+   },
+   {
+    "e": "supply cabinet",
+    "k": "비품 보관장"
+   },
+   {
+    "e": "kitchen cabinet",
+    "k": "주방 수납장"
+   }
+  ],
+  "der": [],
+  "para": [
+   "cupboard",
+   "closet"
+  ],
+  "ant": "",
+  "tip": "Part 1 사진 묘사에서 drawers of a cabinet, filing cabinet이 자주 등장한다. 문이나 서랍이 달린 수납장을 가리킨다.",
+  "q": {
+   "s": "Extra paper and toner are stored in the supply ------- next to the copy machine.",
+   "o": [
+    "ceiling",
+    "cabinet",
+    "platform",
+    "balcony"
+   ],
+   "a": 1,
+   "k": "복사기 옆에서 여분의 종이와 토너를 보관하는 곳은 비품 보관장이므로 cabinet이 정답이다. ceiling(천장), platform(승강장), balcony(발코니)는 비품 보관 장소가 아니다."
+  }
+ },
+ {
+  "w": "drawer",
+  "pos": "n",
+  "m": [
+   "서랍"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3
+  ],
+  "ex": "Ms. Kent keeps spare batteries in the top *drawer* of her desk.",
+  "exKo": "Kent 씨는 여분의 건전지를 책상 맨 위 서랍에 보관한다.",
+  "col": [
+   {
+    "e": "top drawer",
+    "k": "맨 위 서랍"
+   },
+   {
+    "e": "desk drawer",
+    "k": "책상 서랍"
+   },
+   {
+    "e": "open a drawer",
+    "k": "서랍을 열다"
+   }
+  ],
+  "der": [
+   {
+    "w": "draw",
+    "pos": "v",
+    "m": "끌어당기다, 그리다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "Part 1에서 A drawer has been left open(서랍이 열려 있다) 같은 묘사로 나온다. drawing(그림), drawn(draw의 과거분사)과 형태를 구별한다.",
+  "q": {
+   "s": "Spare keys to the storage room are kept in the bottom ------- of the reception desk.",
+   "o": [
+    "drawer",
+    "drawing",
+    "draw",
+    "drawn"
+   ],
+   "a": 0,
+   "k": "the bottom 뒤에서 열쇠를 보관하는 '서랍'을 뜻하는 drawer가 정답이다. drawing은 '그림', draw는 동사, drawn은 과거분사다."
+  }
+ },
+ {
+  "w": "envelope",
+  "pos": "n",
+  "m": [
+   "봉투"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   5
+  ],
+  "ex": "The invitation arrived in a white *envelope* printed with the company's logo.",
+  "exKo": "초대장은 회사 로고가 인쇄된 흰 봉투에 담겨 도착했다.",
+  "col": [
+   {
+    "e": "sealed envelope",
+    "k": "봉인된 봉투"
+   },
+   {
+    "e": "self-addressed envelope",
+    "k": "반송용 봉투"
+   }
+  ],
+  "der": [
+   {
+    "w": "envelop",
+    "pos": "v",
+    "m": "감싸다"
+   }
+  ],
+  "para": [],
+  "ant": "",
+  "tip": "명사 envelope(봉투)와 끝에 e가 없는 동사 envelop(감싸다)의 철자를 구별한다. self-addressed stamped envelope(반송용 우표 붙은 봉투)도 지원 안내에 나온다.",
+  "q": {
+   "s": "Applicants should seal all required documents in an ------- and mail them to our office.",
+   "o": [
+    "envelop",
+    "engagement",
+    "envelope",
+    "entrance"
+   ],
+   "a": 2,
+   "k": "관사 an 뒤에서 서류를 넣어 봉하는 '봉투'를 뜻하는 명사 envelope가 정답이다. envelop은 '감싸다'라는 동사이고, engagement(약속), entrance(입구)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "reminder",
+  "pos": "n",
+  "m": [
+   "상기시키는 것, 알림",
+   "독촉장"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "Ms. Lin sent the team a *reminder* about Friday's deadline.",
+  "exKo": "Lin 씨는 팀에 금요일 마감에 관한 알림을 보냈다.",
+  "col": [
+   {
+    "e": "send a reminder",
+    "k": "알림을 보내다"
+   },
+   {
+    "e": "friendly reminder",
+    "k": "안내 말씀, 다시 알려 드림"
+   },
+   {
+    "e": "reminder notice",
+    "k": "독촉장"
+   }
+  ],
+  "der": [
+   {
+    "w": "remind",
+    "pos": "v",
+    "m": "상기시키다"
+   }
+  ],
+  "para": [
+   "notice",
+   "notification"
+  ],
+  "ant": "",
+  "tip": "This is a reminder that ~(~을 다시 알려 드립니다)이 공지·음성 메시지의 첫머리에 자주 나온다. 동사 remind는 remind A of B / remind A to do 구조다.",
+  "q": {
+   "s": "This is a ------- that all expense reports must be submitted by the last day of the month.",
+   "o": [
+    "remind",
+    "reminded",
+    "reminding",
+    "reminder"
+   ],
+   "a": 3,
+   "k": "관사 a 뒤의 명사 자리이므로 reminder가 정답이다. This is a reminder that ~은 '~을 다시 알려 드린다'는 공지 표현이다."
+  }
+ },
+ {
+  "w": "bulletin board",
+  "pos": "phr",
+  "m": [
+   "게시판"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   2,
+   3,
+   4,
+   7
+  ],
+  "ex": "The schedule for next month's workshops has been posted on the *bulletin board*.",
+  "exKo": "다음 달 워크숍 일정이 게시판에 게시되었다.",
+  "col": [
+   {
+    "e": "post on the bulletin board",
+    "k": "게시판에 게시하다"
+   },
+   {
+    "e": "online bulletin board",
+    "k": "온라인 게시판"
+   }
+  ],
+  "der": [],
+  "para": [
+   "notice board"
+  ],
+  "ant": "",
+  "tip": "post A on the bulletin board(게시판에 A를 붙이다)로 쓰이며 Part 1 사진 묘사에도 나온다. 영국식으로는 notice board라고 한다.",
+  "q": {
+   "s": "Details about the upcoming office move were posted on the ------- in the break room.",
+   "o": [
+    "boarding pass",
+    "bulletin board",
+    "board meeting",
+    "dashboard"
+   ],
+   "a": 1,
+   "k": "휴게실에서 사무실 이전 관련 세부 사항을 '게시한' 곳은 게시판이므로 bulletin board가 정답이다. boarding pass(탑승권), board meeting(이사회), dashboard(계기판)는 게시 장소가 아니다."
+  }
+ },
+ {
+  "w": "notice",
+  "pos": "n",
+  "m": [
+   "공지, 안내문",
+   "통지, 예고"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "A *notice* in the lobby informs residents that the water will be shut off on Tuesday.",
+  "exKo": "로비의 안내문은 화요일에 단수가 된다는 사실을 주민들에게 알린다.",
+  "col": [
+   {
+    "e": "until further notice",
+    "k": "추후 공지가 있을 때까지"
+   },
+   {
+    "e": "on short notice",
+    "k": "촉박하게, 갑자기"
+   },
+   {
+    "e": "post a notice",
+    "k": "공지를 게시하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "notify",
+    "pos": "v",
+    "m": "알리다, 통지하다"
+   },
+   {
+    "w": "noticeable",
+    "pos": "adj",
+    "m": "눈에 띄는"
+   }
+  ],
+  "para": [
+   "announcement",
+   "notification"
+  ],
+  "ant": "",
+  "tip": "until further notice(추후 공지가 있을 때까지), on short notice(촉박하게)가 빈출 표현이다. 동사로는 '알아차리다'라는 뜻이라 notify(통지하다)와 구별한다.",
+  "q": {
+   "s": "The east entrance of the building will remain closed until further -------.",
+   "o": [
+    "notify",
+    "noticeable",
+    "notice",
+    "noticing"
+   ],
+   "a": 2,
+   "k": "until further notice는 '추후 공지가 있을 때까지'라는 고정 표현이므로 명사 notice가 정답이다. notify는 동사, noticeable은 형용사다."
+  }
+ },
+ {
+  "w": "announcement",
+  "pos": "n",
+  "m": [
+   "발표",
+   "공고, 안내 방송"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The CEO made an *announcement* about the merger at the staff meeting.",
+  "exKo": "CEO는 직원회의에서 합병에 관해 발표했다.",
+  "col": [
+   {
+    "e": "make an announcement",
+    "k": "발표하다"
+   },
+   {
+    "e": "official announcement",
+    "k": "공식 발표"
+   }
+  ],
+  "der": [
+   {
+    "w": "announce",
+    "pos": "v",
+    "m": "발표하다"
+   },
+   {
+    "w": "announcer",
+    "pos": "n",
+    "m": "아나운서"
+   }
+  ],
+  "para": [
+   "statement",
+   "notice"
+  ],
+  "ant": "",
+  "tip": "make an announcement(발표하다)가 대표 연어이며, Part 4 공항·기내 안내 방송도 announcement라고 한다. 사람명사 announcer와 구별한다.",
+  "q": {
+   "s": "Mr. Kim will make an important ------- regarding the new travel policy at the start of the meeting.",
+   "o": [
+    "announce",
+    "announcement",
+    "announcer",
+    "announced"
+   ],
+   "a": 1,
+   "k": "make an important 뒤의 명사 자리이며 make an announcement는 '발표하다'라는 뜻이므로 announcement가 정답이다. announcer는 '아나운서'라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "record",
+  "pos": "n",
+  "m": [
+   "기록",
+   "최고 기록"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "The company keeps a *record* of all customer complaints and how they were resolved.",
+  "exKo": "그 회사는 모든 고객 불만과 그 해결 과정을 기록해 둔다.",
+  "col": [
+   {
+    "e": "keep a record of",
+    "k": "~을 기록해 두다"
+   },
+   {
+    "e": "record high",
+    "k": "사상 최고치"
+   },
+   {
+    "e": "for one's records",
+    "k": "보관용으로"
+   }
+  ],
+  "der": [
+   {
+    "w": "recording",
+    "pos": "n",
+    "m": "녹음, 녹화"
+   },
+   {
+    "w": "recorder",
+    "pos": "n",
+    "m": "녹음기"
+   }
+  ],
+  "para": [
+   "log",
+   "file",
+   "document"
+  ],
+  "ant": "",
+  "tip": "명사 record는 keep a record of(~을 기록하다), record high/sales(기록적인 최고치/매출)처럼 쓴다. 동사일 때는 강세가 뒤로 가서 re-CORD로 발음한다.",
+  "q": {
+   "s": "Sales at the downtown store reached a ------- high in December.",
+   "o": [
+    "record",
+    "recorder",
+    "recording",
+    "recorded"
+   ],
+   "a": 0,
+   "k": "a record high는 '사상 최고치'라는 고정 표현으로, 명사 record가 high를 수식하므로 record가 정답이다. recorded high, recording high는 쓰지 않는다."
+  }
+ },
+ {
+  "w": "administrative",
+  "pos": "adj",
+  "m": [
+   "관리의, 행정의",
+   "사무의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Park handles *administrative* duties such as booking rooms and ordering supplies.",
+  "exKo": "Park 씨는 회의실 예약과 비품 주문 같은 행정 업무를 담당한다.",
+  "col": [
+   {
+    "e": "administrative assistant",
+    "k": "행정 보조 직원"
+   },
+   {
+    "e": "administrative duties",
+    "k": "행정 업무"
+   },
+   {
+    "e": "administrative staff",
+    "k": "사무 직원"
+   }
+  ],
+  "der": [
+   {
+    "w": "administer",
+    "pos": "v",
+    "m": "관리하다, 집행하다"
+   },
+   {
+    "w": "administration",
+    "pos": "n",
+    "m": "관리, 행정"
+   },
+   {
+    "w": "administrator",
+    "pos": "n",
+    "m": "관리자"
+   }
+  ],
+  "para": [
+   "clerical",
+   "managerial"
+  ],
+  "ant": "",
+  "tip": "administrative assistant(행정 보조 직원), administrative costs(관리비)처럼 명사 앞에 쓰인다. 명사 administration, administrator와의 품사 구별이 출제된다.",
+  "q": {
+   "s": "Most of the duties of this position are ------- in nature.",
+   "o": [
+    "administer",
+    "administration",
+    "administrative",
+    "administrator"
+   ],
+   "a": 2,
+   "k": "be동사 are 뒤 보어 자리에서 '행정적인'이라는 성질을 나타내야 하므로 형용사 administrative가 정답이다. administration, administrator는 명사라 직무의 성질을 나타내지 못한다."
+  }
+ },
+ {
+  "w": "operation",
+  "pos": "n",
+  "m": [
+   "운영, 영업",
+   "작동",
+   "사업"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The family-owned bakery has been in *operation* since 1985.",
+  "exKo": "그 가족 경영 제과점은 1985년부터 영업해 왔다.",
+  "col": [
+   {
+    "e": "in operation",
+    "k": "운영 중인, 가동 중인"
+   },
+   {
+    "e": "hours of operation",
+    "k": "영업시간"
+   },
+   {
+    "e": "begin operations",
+    "k": "영업을 시작하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "operate",
+    "pos": "v",
+    "m": "운영하다, 작동하다"
+   },
+   {
+    "w": "operational",
+    "pos": "adj",
+    "m": "가동 준비가 된, 운영상의"
+   },
+   {
+    "w": "operator",
+    "pos": "n",
+    "m": "운영자, 조작자"
+   }
+  ],
+  "para": [
+   "business",
+   "running"
+  ],
+  "ant": "",
+  "tip": "in operation(운영 중인), hours of operation(영업시간)이 빈출이다. 회사의 '사업 부문'을 뜻할 때는 복수형 operations(European operations)를 쓴다.",
+  "q": {
+   "s": "The new branch in Busan is expected to begin ------- early next year.",
+   "o": [
+    "operate",
+    "operational",
+    "operator",
+    "operations"
+   ],
+   "a": 3,
+   "k": "타동사 begin의 목적어 자리이므로 명사가 필요하며 '영업을 시작하다'라는 뜻의 begin operations가 정답이다. operator는 사람명사 단수라 관사 없이 쓸 수 없다."
+  }
+ },
+ {
+  "w": "recordkeeping",
+  "pos": "n",
+  "m": [
+   "기록 관리",
+   "장부 정리"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Accurate *recordkeeping* is essential for passing the annual tax audit.",
+  "exKo": "정확한 기록 관리는 연례 세무 감사를 통과하는 데 필수적이다.",
+  "col": [
+   {
+    "e": "accurate recordkeeping",
+    "k": "정확한 기록 관리"
+   },
+   {
+    "e": "recordkeeping system",
+    "k": "기록 관리 시스템"
+   }
+  ],
+  "der": [
+   {
+    "w": "record",
+    "pos": "n",
+    "m": "기록"
+   },
+   {
+    "w": "record",
+    "pos": "v",
+    "m": "기록하다"
+   }
+  ],
+  "para": [
+   "documentation",
+   "bookkeeping"
+  ],
+  "ant": "",
+  "tip": "불가산명사로 accurate/careful recordkeeping처럼 형용사의 수식을 받는다. 회계 관련 지문에서 bookkeeping(부기)과 함께 나온다.",
+  "q": {
+   "s": "Ms. Chen introduced a digital system to make the clinic's ------- more efficient.",
+   "o": [
+    "timekeeper",
+    "bookmark",
+    "recordkeeping",
+    "landmark"
+   ],
+   "a": 2,
+   "k": "병원의 업무를 더 효율적으로 만드는 디지털 시스템이므로 '기록 관리'를 뜻하는 recordkeeping이 정답이다. timekeeper(시간 기록원), bookmark(책갈피), landmark(랜드마크)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "accomplish",
+  "pos": "v",
+  "m": [
+   "성취하다",
+   "완수하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The team *accomplished* its goal of reducing waste by twenty percent.",
+  "exKo": "그 팀은 폐기물을 20퍼센트 줄이겠다는 목표를 달성했다.",
+  "col": [
+   {
+    "e": "accomplish a goal",
+    "k": "목표를 달성하다"
+   },
+   {
+    "e": "accomplish a task",
+    "k": "과업을 완수하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "accomplishment",
+    "pos": "n",
+    "m": "성취, 업적"
+   },
+   {
+    "w": "accomplished",
+    "pos": "adj",
+    "m": "뛰어난, 숙련된"
+   }
+  ],
+  "para": [
+   "achieve",
+   "complete",
+   "carry out"
+  ],
+  "ant": "",
+  "tip": "accomplish는 타동사로 goal, task, mission을 목적어로 취한다. 철자가 비슷한 accompany(동행하다), accommodate(수용하다)와 혼동을 유도한다.",
+  "q": {
+   "s": "With the help of the new software, we were able to ------- the task in half the usual time.",
+   "o": [
+    "accomplish",
+    "accompany",
+    "accommodate",
+    "accumulate"
+   ],
+   "a": 0,
+   "k": "새 소프트웨어 덕분에 평소의 절반 시간에 일을 '완수할' 수 있었다는 뜻이므로 accomplish가 정답이다. accompany(동행하다), accommodate(수용하다), accumulate(축적하다)는 task와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "proceed",
+  "pos": "v",
+  "m": [
+   "(계속) 진행하다",
+   "(~로) 가다, 이동하다"
+  ],
+  "tier": 2,
+  "parts": [
+   2,
+   4,
+   5,
+   7
+  ],
+  "ex": "After the security check, passengers should *proceed* directly to Gate 12.",
+  "exKo": "보안 검색 후 승객들은 곧바로 12번 탑승구로 가야 한다.",
+  "col": [
+   {
+    "e": "proceed with",
+    "k": "~을 계속 진행하다"
+   },
+   {
+    "e": "proceed to",
+    "k": "~로 가다"
+   }
+  ],
+  "der": [
+   {
+    "w": "procedure",
+    "pos": "n",
+    "m": "절차"
+   },
+   {
+    "w": "proceeds",
+    "pos": "n",
+    "m": "수익금"
+   }
+  ],
+  "para": [
+   "go ahead",
+   "continue",
+   "move on"
+  ],
+  "ant": "",
+  "tip": "proceed는 자동사라 proceed with + 일(~을 진행하다), proceed to + 장소(~로 가다)로 쓴다. 철자가 비슷한 precede(앞서다)와 혼동하지 않는다.",
+  "q": {
+   "s": "Once the budget is approved, we will ------- with the construction of the new warehouse.",
+   "o": [
+    "precede",
+    "process",
+    "produce",
+    "proceed"
+   ],
+   "a": 3,
+   "k": "with와 함께 '~을 진행하다'라는 뜻을 이루는 proceed가 정답이다. precede(앞서다), process(처리하다), produce(생산하다)는 타동사로 with와 함께 쓰지 않는다."
+  }
+ }
+]

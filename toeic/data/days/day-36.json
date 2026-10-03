@@ -726,9 +726,9 @@
   ],
   "der": [
    {
-    "w": "compromising",
+    "w": "uncompromising",
     "pos": "adj",
-    "m": "타협적인, 위태롭게 하는"
+    "m": "타협하지 않는, 단호한"
    }
   ],
   "para": [
@@ -1610,13 +1610,7 @@
     "k": "자원을 활용하다"
    }
   ],
-  "der": [
-   {
-    "w": "leveraged",
-    "pos": "adj",
-    "m": "차입 자본을 이용한"
-   }
-  ],
+  "der": [],
   "para": [
    "use",
    "make the most of",

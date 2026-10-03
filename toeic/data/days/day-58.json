@@ -11,8 +11,8 @@
    5,
    7
   ],
-  "ex": "After careful *consideration*, the board approved the budget for the new facility.",
-  "exKo": "신중한 검토 끝에 이사회는 새 시설의 예산을 승인했다.",
+  "ex": "After careful *consideration*, Ms. Novak decided to accept the job offer from the Seoul office.",
+  "exKo": "Novak 씨는 신중하게 고민한 끝에 서울 지사의 일자리 제안을 받아들이기로 했다.",
   "col": [
    {
     "e": "take A into consideration",
@@ -581,7 +581,7 @@
   "ant": "",
   "tip": "notable과 같은 뜻으로, it is noteworthy that(~라는 점은 주목할 만하다) 구문이 Part 7 기사에 나온다.",
   "q": {
-   "s": "Ms. Ellis was honored for her ------- contributions to the field of urban planning.",
+   "s": "The museum's new exhibit includes several ------- works by local artists that have never been shown before.",
    "o": [
     "noteworthy",
     "trustworthy",
@@ -589,7 +589,7 @@
     "noting"
    ],
    "a": 0,
-   "k": "도시 계획 분야에 대한 '주목할 만한' 공헌으로 상을 받았다는 뜻이므로 noteworthy가 정답이다. trustworthy(믿을 수 있는)는 주로 사람을 수식하고, notified(통지받은)와 noting은 contributions와 의미가 맞지 않는다."
+   "k": "한 번도 공개된 적 없는 '주목할 만한' 작품들이라는 뜻이므로 noteworthy가 정답이다. trustworthy(믿을 수 있는)는 예술 작품을 수식하기에 어색하고, notified(통지받은)와 noting은 works와 의미가 맞지 않는다."
   }
  },
  {
@@ -605,8 +605,8 @@
    5,
    7
   ],
-  "ex": "The revised dress code will become *effective* on July 1.",
-  "exKo": "개정된 복장 규정은 7월 1일부터 시행된다.",
+  "ex": "The new refund policy is *effective* for all purchases made after March 1.",
+  "exKo": "새 환불 정책은 3월 1일 이후의 모든 구매에 적용된다.",
   "col": [
    {
     "e": "effective immediately",
@@ -645,7 +645,7 @@
   "ant": "",
   "tip": "'효과적인' 외에 effective immediately(즉시 시행), Effective + 날짜(~부터 시행)라는 뜻이 공지문에 자주 나온다.",
   "q": {
-   "s": "------- next month, all visitors must sign in at the security desk.",
+   "s": "------- immediately, all expense reports must be submitted through the new online system.",
    "o": [
     "Effect",
     "Effective",
@@ -653,7 +653,7 @@
     "Effectiveness"
    ],
    "a": 1,
-   "k": "Effective + 시점은 '~부터 시행되어'라는 뜻의 관용 표현이므로 Effective가 정답이다. Effect와 Effectiveness는 명사, Effectively는 '효과적으로'라는 부사라 시점 표현과 결합하지 않는다."
+   "k": "Effective immediately는 '즉시 시행되어'라는 뜻의 관용 표현이므로 Effective가 정답이다. Effect와 Effectiveness는 명사, Effectively는 '사실상, 효과적으로'라는 부사라 immediately와 결합해 시행 시점을 나타내지 못한다."
   }
  },
  {
@@ -806,15 +806,15 @@
   "ant": "",
   "tip": "opportunity to do / opportunity for + 명사 구조로 쓰이며, take this opportunity to thank(이 기회를 빌려 감사하다)가 연설문에 자주 나온다.",
   "q": {
-   "s": "I would like to take this ------- to thank everyone who helped organize the event.",
+   "s": "Attending the trade fair will give our sales team the ------- to meet potential clients in person.",
    "o": [
-    "possibility",
     "probability",
-    "availability",
+    "priority",
+    "popularity",
     "opportunity"
    ],
    "a": 3,
-   "k": "take this opportunity to do는 '이 기회를 빌려 ~하다'라는 관용 표현이므로 opportunity가 정답이다. possibility(가능성), probability(확률), availability(이용 가능성)는 take와 결합해 이런 뜻을 만들지 못한다."
+   "k": "give A the opportunity to do는 'A에게 ~할 기회를 주다'라는 뜻이므로 opportunity가 정답이다. probability(확률), priority(우선순위), popularity(인기)는 to부정사와 결합해 이런 뜻을 만들지 못한다."
   }
  },
  {
@@ -864,7 +864,7 @@
   "ant": "",
   "tip": "have the option of -ing / option to do 구조이며, 형용사 optional(선택의)과 동사 opt for/to(~을 선택하다)가 함께 출제된다.",
   "q": {
-   "s": "Employees now have the ------- of working from home two days a week.",
+   "s": "Passengers who miss their connecting flight will be given the ------- of a full refund or a seat on a later flight.",
    "o": [
     "optional",
     "option",
@@ -916,7 +916,7 @@
   "ant": "disadvantage",
   "tip": "take advantage of(~을 이용하다), advantage over(~보다 나은 점)가 핵심이며, 형용사 advantageous(유리한)도 품사 문제로 나온다.",
   "q": {
-   "s": "Members are encouraged to take ------- of the discounts offered during the holiday season.",
+   "s": "Small business owners should take ------- of the free tax workshops offered by the city.",
    "o": [
     "advance",
     "advantageous",
@@ -1216,8 +1216,8 @@
    5,
    7
   ],
-  "ex": "The contractor sent us a *detailed* estimate for the kitchen remodeling.",
-  "exKo": "시공업자는 우리에게 주방 리모델링에 대한 상세한 견적서를 보냈다.",
+  "ex": "Each tour participant will receive a *detailed* itinerary one week before departure.",
+  "exKo": "각 투어 참가자는 출발 일주일 전에 상세한 일정표를 받는다.",
   "col": [
    {
     "e": "detailed information",
@@ -1647,7 +1647,7 @@
   "ant": "",
   "tip": "human resources(인사부)처럼 주로 복수형으로 쓰이며, 형용사 resourceful(수완이 좋은)과 resource를 구분하는 문제가 나온다.",
   "q": {
-   "s": "The company plans to allocate more ------- to research and development next year.",
+   "s": "Management decided to allocate more ------- to the customer service department this year.",
    "o": [
     "sources",
     "recourses",
@@ -1655,7 +1655,7 @@
     "resorts"
    ],
    "a": 2,
-   "k": "연구 개발에 더 많은 '자원'을 배분한다는 뜻이므로 resources가 정답이다. sources(출처), recourses(의지할 수단), resorts(휴양지)는 allocate의 목적어로 맞지 않는다."
+   "k": "고객 서비스 부서에 더 많은 '자원'을 배분한다는 뜻이므로 resources가 정답이다. sources(출처), recourses(의지할 수단), resorts(휴양지)는 allocate의 목적어로 맞지 않는다."
   }
  },
  {
@@ -1727,8 +1727,8 @@
    5,
    7
   ],
-  "ex": "Applicants must hold a bachelor's degree or an *equivalent* qualification.",
-  "exKo": "지원자는 학사 학위 또는 그에 상당하는 자격을 갖추어야 한다.",
+  "ex": "Under the new program, completing three online modules is *equivalent* to attending one full-day workshop.",
+  "exKo": "새 프로그램에서는 온라인 모듈 세 개를 이수하면 하루 종일 진행되는 워크숍 1회에 참석한 것과 같다.",
   "col": [
    {
     "e": "equivalent to",
@@ -2094,8 +2094,8 @@
    5,
    7
   ],
-  "ex": "Regular maintenance is *vital* to the safe operation of the machinery.",
-  "exKo": "정기적인 정비는 기계를 안전하게 운행하는 데 필수적이다.",
+  "ex": "Clear communication between departments is *vital* for meeting project deadlines.",
+  "exKo": "부서 간의 명확한 의사소통은 프로젝트 마감일을 지키는 데 필수적이다.",
   "col": [
    {
     "e": "vital to/for",

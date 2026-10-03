@@ -336,7 +336,7 @@
   "ant": "oppose",
   "tip": "동사와 명사 형태가 같아 technical support(기술 지원)처럼 명사로도 쓰이며, 형용사 supportive(지지하는, 협조적인)와 함께 품사 문제로 나온다.",
   "q": {
-   "s": "The survey results clearly ------- the decision to extend store hours on weekends.",
+   "s": "The latest sales figures clearly ------- the manager's decision to hire more staff.",
    "o": [
     "supportive",
     "support",
@@ -344,7 +344,7 @@
     "supportively"
    ],
    "a": 1,
-   "k": "주어 The survey results 뒤에 목적어 the decision을 취하는 동사가 필요하므로 support가 정답이다. supportive는 형용사, supporter는 명사, supportively는 부사다."
+   "k": "주어 The latest sales figures 뒤에 목적어 the decision을 취하는 동사가 필요하므로 support가 정답이다. supportive는 형용사, supporter는 명사, supportively는 부사다."
   }
  },
  {
@@ -756,8 +756,8 @@
    5,
    7
   ],
-  "ex": "The new marketing strategy *proved* highly effective in attracting younger customers.",
-  "exKo": "새 마케팅 전략은 젊은 고객을 끌어들이는 데 매우 효과적인 것으로 드러났다.",
+  "ex": "The redesigned website *proved* popular with customers, and online orders doubled within a month.",
+  "exKo": "새로 디자인한 웹사이트는 고객들에게 인기를 끌어 한 달 만에 온라인 주문이 두 배로 늘었다.",
   "col": [
    {
     "e": "prove (to be) + 형용사",
@@ -842,15 +842,15 @@
   "ant": "",
   "tip": "reach는 타동사로 전치사 없이 목적어를 취하며(reach to ×), reach an agreement(합의에 이르다), reach A at 번호(~번으로 A에게 연락하다)가 자주 나온다.",
   "q": {
-   "s": "After months of negotiations, the two companies finally ------- an agreement.",
+   "s": "The union and management have yet to ------- a final decision on the new wage proposal.",
    "o": [
-    "arrived",
-    "came",
-    "reached",
-    "went"
+    "arrive",
+    "come",
+    "reach",
+    "go"
    ],
    "a": 2,
-   "k": "목적어 an agreement를 바로 취해 '합의에 이르다'라는 뜻이 되는 타동사 reached가 정답이다. arrive와 come은 자동사라 arrived at, came to처럼 전치사가 필요하고, went는 의미가 맞지 않는다."
+   "k": "목적어 a final decision을 바로 취해 '결정에 이르다'라는 뜻이 되는 타동사 reach가 정답이다. arrive와 come은 자동사라 arrive at, come to처럼 전치사가 필요하고, go는 의미가 맞지 않는다."
   }
  },
  {
@@ -924,8 +924,8 @@
    5,
    7
   ],
-  "ex": "The store will *remain* open until 9 p.m. throughout the holiday season.",
-  "exKo": "그 매장은 연휴 기간 내내 오후 9시까지 계속 문을 연다.",
+  "ex": "Despite the renovation work, the museum will *remain* open to visitors throughout the summer.",
+  "exKo": "보수 공사에도 불구하고 그 박물관은 여름 내내 계속 관람객에게 개방된다.",
   "col": [
    {
     "e": "remain + 형용사",
@@ -1037,8 +1037,8 @@
    5,
    7
   ],
-  "ex": "The company is *seeking* experienced engineers for its new research center.",
-  "exKo": "그 회사는 새 연구소에서 일할 경력직 엔지니어를 구하고 있다.",
+  "ex": "Hollis Pharmaceuticals is *seeking* a qualified chemist to lead its quality control team.",
+  "exKo": "Hollis 제약은 품질 관리팀을 이끌 자격을 갖춘 화학자를 구하고 있다.",
   "col": [
    {
     "e": "seek to do",
@@ -1238,7 +1238,7 @@
   "ant": "shorten",
   "tip": "extend a deadline(마감을 연장하다) 외에 extend an invitation/thanks(초대·감사를 전하다)라는 뜻이 자주 나오며, extension(연장, 내선)·extensive(광범위한)와 함께 품사 문제로 나온다.",
   "q": {
-   "s": "On behalf of the board, I would like to ------- my sincere thanks to all the volunteers.",
+   "s": "The organizers would like to ------- an invitation to all former members to attend the anniversary dinner.",
    "o": [
     "expand",
     "extract",
@@ -1246,7 +1246,7 @@
     "expose"
    ],
    "a": 2,
-   "k": "extend one's thanks to는 '~에게 감사를 전하다'라는 관용 표현이므로 extend가 정답이다. expand(확대하다), extract(추출하다), expose(노출시키다)는 thanks와 결합하지 않는다."
+   "k": "extend an invitation to는 '~에게 초대의 뜻을 전하다'라는 관용 표현이므로 extend가 정답이다. expand(확대하다), extract(추출하다), expose(노출시키다)는 invitation과 결합하지 않는다."
   }
  },
  {
@@ -1377,7 +1377,7 @@
   "ant": "facilitate",
   "tip": "impede progress(진전을 방해하다)처럼 타동사로 쓰이며, Part 7에서 hinder, slow down으로 바꿔 표현된다.",
   "q": {
-   "s": "Outdated equipment has ------- the factory's efforts to increase production.",
+   "s": "Frequent staff changes have ------- progress on the software development project.",
    "o": [
     "impeded",
     "imposed",
@@ -1385,7 +1385,7 @@
     "impressed"
    ],
    "a": 0,
-   "k": "낡은 장비가 생산을 늘리려는 노력을 '방해했다'는 뜻이므로 impeded가 정답이다. imposed(부과했다), implied(암시했다), impressed(감명을 주었다)는 efforts와 의미가 맞지 않는다."
+   "k": "잦은 인력 교체가 프로젝트의 진전을 '방해했다'는 뜻이므로 impeded가 정답이다. imposed(부과했다), implied(암시했다), impressed(감명을 주었다)는 progress와 의미가 맞지 않는다."
   }
  },
  {
@@ -1610,15 +1610,15 @@
   "ant": "",
   "tip": "'대표하다' 외에 represent a 10 percent increase(10% 증가에 해당하다)처럼 '나타내다'라는 뜻으로 쓰이며, 사람명사 representative(직원, 대리인)가 Part 5에 자주 나온다.",
   "q": {
-   "s": "Online sales now ------- nearly 40 percent of the company's total revenue.",
+   "s": "The new contract ------- a 12 percent increase over last year's agreement.",
    "o": [
-    "account",
-    "consist",
-    "represent",
-    "amount"
+    "accounts",
+    "consists",
+    "represents",
+    "amounts"
    ],
    "a": 2,
-   "k": "목적어 nearly 40 percent를 바로 취해 '~에 해당하다'라는 뜻이 되는 타동사 represent가 정답이다. account는 account for, consist는 consist of, amount는 amount to처럼 전치사가 필요하다."
+   "k": "목적어 a 12 percent increase를 바로 취해 '~에 해당하다, ~을 나타내다'라는 뜻이 되는 타동사 represents가 정답이다. account는 account for, consist는 consist of, amount는 amount to처럼 전치사가 필요하다."
   }
  },
  {
@@ -1752,8 +1752,8 @@
    5,
    7
   ],
-  "ex": "The merger will *strengthen* the company's position in the Asian market.",
-  "exKo": "그 합병은 아시아 시장에서 회사의 입지를 강화할 것이다.",
+  "ex": "The joint venture will *strengthen* the firm's presence in Southeast Asia.",
+  "exKo": "그 합작 투자는 동남아시아에서 회사의 입지를 강화할 것이다.",
   "col": [
    {
     "e": "strengthen ties",
@@ -1928,7 +1928,7 @@
   "ant": "slow down",
   "tip": "accelerate the process(과정을 앞당기다)처럼 타동사로 쓰이며, Part 7에서 speed up, expedite로 바꿔 표현된다.",
   "q": {
-   "s": "To ------- the approval process, applicants should submit all documents online.",
+   "s": "Hiring two additional inspectors should help ------- the permit review process.",
    "o": [
     "accumulate",
     "accelerate",
@@ -1936,7 +1936,7 @@
     "accompany"
    ],
    "a": 1,
-   "k": "서류를 온라인으로 제출하는 목적은 승인 절차를 '앞당기기' 위해서이므로 accelerate가 정답이다. accumulate(축적하다), accommodate(수용하다), accompany(동반하다)는 process와 의미가 맞지 않는다."
+   "k": "검사관을 더 채용하면 허가 심사 절차를 '가속화하는' 데 도움이 된다는 뜻이므로 accelerate가 정답이다. accumulate(축적하다), accommodate(수용하다), accompany(동반하다)는 process와 의미가 맞지 않는다."
   }
  },
  {
@@ -2076,7 +2076,7 @@
   "ant": "",
   "tip": "형용사 optimal(최적의), 명사 optimization과 함께 품사 문제로 나오며, optimistic(낙관적인)과 혼동하지 말아야 한다.",
   "q": {
-   "s": "The consultant suggested several ways to ------- the use of warehouse space.",
+   "s": "The logistics team is looking for ways to ------- delivery routes and reduce fuel costs.",
    "o": [
     "optimal",
     "optimize",
@@ -2084,7 +2084,7 @@
     "optimization"
    ],
    "a": 1,
-   "k": "ways to 뒤에 목적어 the use를 취하는 동사원형이 필요하므로 optimize가 정답이다. optimal과 optimistic은 형용사, optimization은 명사다."
+   "k": "ways to 뒤에 목적어 delivery routes를 취하는 동사원형이 필요하므로 optimize가 정답이다. optimal과 optimistic은 형용사, optimization은 명사다."
   }
  },
  {

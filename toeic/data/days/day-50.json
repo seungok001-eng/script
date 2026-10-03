@@ -100,8 +100,8 @@
    4,
    7
   ],
-  "ex": "Ms. Okafor earned a *bachelor's degree* in chemistry before joining the research team.",
-  "exKo": "Okafor 씨는 연구팀에 합류하기 전에 화학 학사 학위를 받았다.",
+  "ex": "Ms. Okafor completed her *bachelor's degree* in only three years while working part-time.",
+  "exKo": "Okafor 씨는 시간제로 일하면서도 단 3년 만에 학사 학위 과정을 마쳤다.",
   "col": [
    {
     "e": "bachelor's degree in",
@@ -120,7 +120,7 @@
   "ant": "",
   "tip": "구인 광고의 자격 요건에 hold a bachelor's degree in ~(~ 학사 학위 소지) 형태로 나온다. 아포스트로피 's를 빠뜨리지 않도록 주의하며 university degree, college degree로 패러프레이즈된다.",
   "q": {
-   "s": "The position requires a ------- in accounting and at least two years of related experience.",
+   "s": "A ------- in business administration is required for this management trainee position.",
    "o": [
     "graduation ceremony",
     "bachelor's degree",
@@ -128,7 +128,7 @@
     "lecture hall"
    ],
    "a": 1,
-   "k": "직책의 자격 요건으로 '회계학' 분야와 함께 요구되는 것은 학위이므로 bachelor's degree가 정답이다. graduation ceremony(졸업식), class schedule(수업 시간표), lecture hall(강의실)은 자격 요건이 될 수 없다."
+   "k": "관리직 연수생 직책의 자격 요건으로 '경영학' 분야에서 요구되는 것은 학위이므로 bachelor's degree가 정답이다. graduation ceremony(졸업식), class schedule(수업 시간표), lecture hall(강의실)은 지원 자격이 될 수 없다."
   }
  },
  {
@@ -348,7 +348,7 @@
   "ant": "",
   "tip": "직원 연수 일정 공지에 자주 나오며 attend/conduct a training session으로 쓴다. Part 7에서 workshop, class로 패러프레이즈된다.",
   "q": {
-   "s": "The ------- on workplace safety will last about two hours and include a short quiz.",
+   "s": "Each new cashier must complete a ------- on the store's return policy during the first week.",
    "o": [
     "training session",
     "trainee",
@@ -356,7 +356,7 @@
     "train station"
    ],
    "a": 0,
-   "k": "약 2시간 동안 진행되고 퀴즈가 포함된 것은 교육 시간이므로 training session이 정답이다. trainee(연수생), trainer(교육 담당자)는 사람이라 '지속될(last)' 수 없고, train station(기차역)도 의미가 맞지 않는다."
+   "k": "신입 계산원이 첫 주에 '이수해야(complete)' 하는 반품 규정 관련 과정은 교육이므로 training session이 정답이다. trainee(연수생), trainer(교육 담당자)는 사람이라 이수할 수 없고, train station(기차역)도 의미가 맞지 않는다."
   }
  },
  {
@@ -878,8 +878,8 @@
   "parts": [
    7
   ],
-  "ex": "Students who wish to change their major should contact the *registrar*'s office.",
-  "exKo": "전공을 바꾸고 싶은 학생은 학적과에 연락해야 한다.",
+  "ex": "The *registrar* keeps records of all students' grades and course enrollments.",
+  "exKo": "학적과는 모든 학생의 성적과 수강 등록 기록을 관리한다.",
   "col": [
    {
     "e": "registrar's office",
@@ -950,15 +950,15 @@
   "ant": "",
   "tip": "high school diploma(고등학교 졸업장)가 구인 광고 자격 요건에 자주 나온다. 철자가 비슷한 diplomat(외교관), diplomacy(외교)와 혼동하지 않도록 한다.",
   "q": {
-   "s": "Candidates must hold at least a high school ------- to apply for the warehouse position.",
+   "s": "Graduates will receive their ------- by mail within six weeks of the ceremony.",
    "o": [
-    "diplomat",
+    "diplomats",
     "diplomacy",
     "diplomatic",
-    "diploma"
+    "diplomas"
    ],
    "a": 3,
-   "k": "지원 자격으로 소지해야 하는 것은 고등학교 졸업장이므로 diploma가 정답이다. diplomat(외교관), diplomacy(외교), diplomatic(외교의)은 의미가 맞지 않는다."
+   "k": "졸업생이 졸업식 후 우편으로 받는 것은 졸업장이므로 diplomas가 정답이다. diplomats(외교관), diplomacy(외교), diplomatic(외교의)은 우편으로 받을 수 있는 것이 아니다."
   }
  },
  {
@@ -1197,8 +1197,8 @@
    5,
    7
   ],
-  "ex": "New employees work under the *guidance* of a senior colleague for three months.",
-  "exKo": "신입 사원들은 석 달간 선배 동료의 지도 아래 일한다.",
+  "ex": "With *guidance* from a career counselor, Ms. Vega found a job in hotel management.",
+  "exKo": "Vega 씨는 진로 상담사의 조언을 받아 호텔 경영 분야에 취업했다.",
   "col": [
    {
     "e": "under the guidance of",
@@ -1255,8 +1255,8 @@
    5,
    7
   ],
-  "ex": "The campaign aims to *educate* consumers about the benefits of recycling.",
-  "exKo": "그 캠페인은 소비자들에게 재활용의 이점을 알리는 것을 목표로 한다.",
+  "ex": "The hospital hired two nurses to *educate* patients about healthy eating.",
+  "exKo": "그 병원은 환자들에게 건강한 식습관을 교육하기 위해 간호사 두 명을 채용했다.",
   "col": [
    {
     "e": "educate A about B",
@@ -1513,8 +1513,8 @@
    4,
    7
   ],
-  "ex": "Details about the vacation policy can be found in the employee *handbook*.",
-  "exKo": "휴가 규정에 관한 세부 사항은 직원 안내서에서 확인할 수 있다.",
+  "ex": "The updated employee *handbook* now includes a section on remote work.",
+  "exKo": "개정된 직원 안내서에는 이제 재택근무에 관한 항목이 포함되어 있다.",
   "col": [
    {
     "e": "employee handbook",
@@ -1598,8 +1598,8 @@
    5,
    7
   ],
-  "ex": "Customers who spend more than $100 *qualify* for free shipping.",
-  "exKo": "100달러 넘게 구매한 고객은 무료 배송을 받을 수 있다.",
+  "ex": "Members who refer three friends *qualify* for a free month of service.",
+  "exKo": "친구 세 명을 추천한 회원은 한 달 무료 이용 자격을 얻는다.",
   "col": [
    {
     "e": "qualify for",
@@ -1736,7 +1736,7 @@
   "ant": "",
   "tip": "graduation ceremony(졸업식), upon graduation(졸업하자마자)이 빈출이다. 동사 graduate from(~을 졸업하다)과 품사를 구분한다.",
   "q": {
-   "s": "Family members are invited to a reception immediately following the ------- ceremony.",
+   "s": "The college's ------- rate is among the highest in the state.",
    "o": [
     "gradual",
     "graduation",
@@ -1744,7 +1744,7 @@
     "gradient"
    ],
    "a": 1,
-   "k": "ceremony와 결합해 '졸업식'을 이루는 명사 graduation이 정답이다. gradual(점진적인)과 gradually(점차)는 의미가 맞지 않고, gradient(경사도)도 ceremony와 어울리지 않는다."
+   "k": "rate와 결합해 '졸업률'이라는 복합명사를 이루는 graduation이 정답이다. gradually는 부사라 명사를 수식할 수 없고, gradual rate(점진적인 속도), gradient rate(경사율)는 대학의 성과 지표로 의미가 통하지 않는다."
   }
  },
  {
