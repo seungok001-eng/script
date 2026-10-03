@@ -665,7 +665,7 @@
   "ant": "",
   "tip": "portfolio는 '작품집'과 '투자 자산 구성'이라는 두 뜻으로 모두 출제된다. 채용 공고에서는 submit a portfolio(작품집을 제출하다)가 지원 요건으로 자주 나온다.",
   "q": {
-   "s": "The financial adviser recommended adding more bonds to Mr. Ahn's investment -------.",
+   "s": "The financial adviser recommended adding more bonds to Mr. Ahn's -------.",
    "o": [
     "brochure",
     "itinerary",
@@ -673,7 +673,7 @@
     "portfolio"
    ],
    "a": 3,
-   "k": "채권을 추가하는 대상은 '투자 포트폴리오'이므로 portfolio가 정답이다. brochure(안내 책자), itinerary(여행 일정표), invoice(송장)는 investment와 어울리지 않는다."
+   "k": "재무 상담사가 채권을 더 넣으라고 권한 대상은 '투자 포트폴리오(자산 구성)'이므로 portfolio가 정답이다. brochure(안내 책자), itinerary(여행 일정표), invoice(송장)는 채권을 추가할 대상이 아니다."
   }
  },
  {

@@ -62,8 +62,8 @@
    4,
    7
   ],
-  "ex": "The hotel is located in a *picturesque* village surrounded by vineyards.",
-  "exKo": "그 호텔은 포도밭으로 둘러싸인 그림 같은 마을에 있다.",
+  "ex": "Our tour stops for lunch in a *picturesque* village surrounded by vineyards.",
+  "exKo": "우리 투어는 점심 식사를 위해 포도밭으로 둘러싸인 그림 같은 마을에 들른다.",
   "col": [
    {
     "e": "picturesque village",
@@ -384,8 +384,8 @@
    4,
    7
   ],
-  "ex": "Each passenger is allowed one piece of *checked baggage* weighing up to 23 kilograms.",
-  "exKo": "승객 1인당 23킬로그램 이하의 위탁 수하물 한 개가 허용된다.",
+  "ex": "Passengers can track their *checked baggage* using the airline's mobile app.",
+  "exKo": "승객들은 항공사 모바일 앱으로 위탁 수하물의 위치를 추적할 수 있다.",
   "col": [
    {
     "e": "checked baggage fee",
@@ -574,8 +574,8 @@
    4,
    7
   ],
-  "ex": "Our flight to Sydney includes a six-hour *stopover* in Singapore.",
-  "exKo": "우리의 시드니행 항공편은 싱가포르에서 6시간 경유한다.",
+  "ex": "Ms. Adler booked a two-day *stopover* in Istanbul on her way to London.",
+  "exKo": "Adler 씨는 런던으로 가는 길에 이스탄불에서 이틀간 머무는 경유 일정을 예약했다.",
   "col": [
    {
     "e": "stopover in",
@@ -782,7 +782,7 @@
   "ant": "",
   "tip": "영국식 영어에서 reservation 대신 자주 쓰며 'make a booking(예약하다)', 'booking reference(예약 번호)'가 Part 7 이메일에 나온다.",
   "q": {
-   "s": "A confirmation email will be sent to you as soon as your ------- has been processed.",
+   "s": "Your ------- at the Harbor View Hotel has been confirmed for three nights starting June 4.",
    "o": [
     "booked",
     "books",
@@ -790,7 +790,7 @@
     "bookable"
    ],
    "a": 2,
-   "k": "소유격 your 뒤 명사 자리이며 단수 동사 has와 맞는 booking이 정답이다. books는 복수라 has와 수가 맞지 않고, booked는 과거(분사)형, bookable(예약 가능한)은 형용사다."
+   "k": "소유격 Your 뒤 명사 자리이며 단수 동사 has와 맞는 booking이 정답이다. books는 복수라 has와 수가 맞지 않고, booked는 과거(분사)형, bookable(예약 가능한)은 형용사다."
   }
  },
  {
@@ -875,7 +875,7 @@
   "ant": "unfasten",
   "tip": "t를 발음하지 않아 [fǽsn]으로 읽는다. 'keep your seat belt fastened(좌석벨트를 맨 상태로 유지하다)'처럼 5형식 구조로 기내 방송(Part 4)에 자주 나온다.",
   "q": {
-   "s": "The captain has asked all passengers to return to their seats and ------- their seat belts.",
+   "s": "Passengers are asked to remain seated and ------- their seat belts until the aircraft comes to a complete stop.",
    "o": [
     "fast",
     "fastened",
@@ -883,7 +883,7 @@
     "fasten"
    ],
    "a": 3,
-   "k": "to return과 and로 연결된 to부정사의 동사원형 자리이므로 fasten이 정답이다. fast는 형용사·부사, fastened는 과거(분사)형, fastening은 동명사·현재분사다."
+   "k": "to remain과 and로 연결된 to부정사의 동사원형 자리이므로 fasten이 정답이다. fast는 형용사·부사, fastened는 과거(분사)형, fastening은 동명사·현재분사다."
   }
  },
  {
@@ -1181,8 +1181,8 @@
    4,
    7
   ],
-  "ex": "The *embassy* will be closed on Monday in observance of a national holiday.",
-  "exKo": "대사관은 국경일을 맞아 월요일에 문을 닫는다.",
+  "ex": "The *embassy* is adding staff to handle a sharp rise in visa requests this summer.",
+  "exKo": "대사관은 올여름 급증한 비자 신청을 처리하기 위해 직원을 늘리고 있다.",
   "col": [
    {
     "e": "embassy in",
@@ -1206,7 +1206,7 @@
   "ant": "",
   "tip": "사람명사 ambassador(대사)와 기관명사 embassy(대사관)를 구분하며, 'the Korean embassy in London(주영 한국 대사관)'처럼 in과 쓴다.",
   "q": {
-   "s": "Visa applications must be submitted in person at the ------- in the capital.",
+   "s": "Applicants for a work visa must schedule an interview at the ------- in the capital.",
    "o": [
     "embassy",
     "ambassador",
@@ -1214,7 +1214,7 @@
     "embankment"
    ],
    "a": 0,
-   "k": "수도에서 비자 신청서를 직접 제출하는 곳은 '대사관'이므로 embassy가 정답이다. ambassador(대사)는 사람이고, embargo(수출입 금지), embankment(제방)는 서류를 제출하는 곳이 아니다."
+   "k": "취업 비자 신청자가 수도에서 면접을 보는 곳은 '대사관'이므로 embassy가 정답이다. ambassador(대사)는 사람이고, embargo(수출입 금지), embankment(제방)는 면접을 보는 곳이 아니다."
   }
  },
  {
@@ -1502,8 +1502,8 @@
    4,
    7
   ],
-  "ex": "Several new restaurants have opened along the *waterfront* this year.",
-  "exKo": "올해 해안가를 따라 새 식당 여러 곳이 문을 열었다.",
+  "ex": "The city plans to turn its old industrial *waterfront* into a public park.",
+  "exKo": "시는 낡은 공업 지대였던 해안가를 공원으로 바꿀 계획이다.",
   "col": [
    {
     "e": "along the waterfront",
@@ -1691,8 +1691,8 @@
    4,
    7
   ],
-  "ex": "Our hotel is just a short walk from the *bustling* city center.",
-  "exKo": "우리 호텔은 북적이는 도심에서 걸어서 조금만 가면 된다.",
+  "ex": "The hotel stands on a *bustling* street lined with shops and cafés.",
+  "exKo": "그 호텔은 상점과 카페가 늘어선 북적이는 거리에 있다.",
   "col": [
    {
     "e": "bustling city",

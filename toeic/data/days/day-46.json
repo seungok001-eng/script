@@ -423,7 +423,7 @@
   "ant": "",
   "tip": "-ist가 붙은 사람명사로, 행위를 나타내는 cycling과 구분한다. Part 1에서 A cyclist is riding along the path처럼 나온다.",
   "q": {
-   "s": "The new bike lane separates ------- from car traffic along the waterfront.",
+   "s": "The new bike lane separates ------- from cars and buses along the waterfront.",
    "o": [
     "cashiers",
     "cylinders",
@@ -796,7 +796,7 @@
   "ant": "",
   "tip": "roadway는 도로 중 차가 다니는 부분을 강조하는 말이다. 교통 방송에서 debris on the roadway(도로 위 잔해물)처럼 나온다.",
   "q": {
-   "s": "A fallen tree is blocking part of the -------, so drivers should use caution near Elm Park.",
+   "s": "A fallen tree is lying across part of the -------, so drivers should use caution near Elm Park.",
    "o": [
     "roadway",
     "roadmap",
@@ -804,7 +804,7 @@
     "broadcast"
    ],
    "a": 0,
-   "k": "쓰러진 나무가 일부를 막고 있어 운전자가 주의해야 하는 곳은 '차도'이므로 roadway가 정답이다. roadmap(로드맵), roadshow(순회 홍보 행사), broadcast(방송)는 나무가 막을 수 있는 장소가 아니다."
+   "k": "쓰러진 나무가 일부를 가로막고 있어 운전자가 주의해야 하는 곳은 '차도'이므로 roadway가 정답이다. roadmap(로드맵), roadshow(순회 홍보 행사), broadcast(방송)는 나무가 막을 수 있는 장소가 아니다."
   }
  },
  {
@@ -892,7 +892,7 @@
   "ant": "",
   "tip": "명사로 길 안내 시 two blocks away처럼 쓰이고, 동사로는 '막다(block the entrance)'라는 뜻이다. Part 2·3 길 찾기 문제에 자주 나온다.",
   "q": {
-   "s": "A delivery truck was ------- the entrance to the parking garage this morning.",
+   "s": "A delivery truck was ------- the entrance to the underground garage this morning.",
    "o": [
     "block",
     "blocked",
@@ -981,7 +981,7 @@
   "ant": "",
   "tip": "길 안내(Part 2·3)에서 turn left at the traffic light처럼 전치사 at과 함께 쓰인다. Part 7에서는 traffic signal로 바꿔 표현된다.",
   "q": {
-   "s": "Following several accidents, the city will put a ------- at the corner of Pine Street and Elm Road.",
+   "s": "Following several accidents, the city will put a ------- at the busy junction near Lakeview Mall.",
    "o": [
     "traffic jam",
     "traffic light",
@@ -989,7 +989,7 @@
     "traffic flow"
    ],
    "a": 1,
-   "k": "사고가 잇따른 뒤 시가 모퉁이에 설치하는(put) 것은 신호등이므로 traffic light가 정답이다. traffic jam(교통 체증), traffic report(교통 정보), traffic flow(교통 흐름)는 길모퉁이에 설치할 수 있는 대상이 아니다."
+   "k": "사고가 잇따른 뒤 시가 교차 지점에 설치하는(put) 것은 신호등이므로 traffic light가 정답이다. traffic jam(교통 체증), traffic report(교통 정보), traffic flow(교통 흐름)는 도로에 설치할 수 있는 대상이 아니다."
   }
  },
  {
@@ -1049,7 +1049,7 @@
    7
   ],
   "ex": "Police set up a *roadblock* on Highway 5 after the chemical spill.",
-  "exKo": "경찰은 화학 물질 유출 사고 후 5번 고속도로에 차단선을 설치했다.",
+  "exKo": "경찰은 화학 물질 유출 사고 후 5번 고속도로에 도로 차단 시설을 설치했다.",
   "col": [
    {
     "e": "set up a roadblock",
@@ -1134,8 +1134,8 @@
    4,
    7
   ],
-  "ex": "Two lanes of the *expressway* will be closed overnight for resurfacing.",
-  "exKo": "고속도로의 두 개 차로가 재포장 공사로 밤새 폐쇄된다.",
+  "ex": "Mr. Brooks takes the *expressway* to work because it is faster than the coastal road.",
+  "exKo": "Brooks 씨는 해안 도로보다 빠르기 때문에 고속도로를 타고 출근한다.",
   "col": [
    {
     "e": "on the expressway",
@@ -1488,8 +1488,8 @@
    3,
    5
   ],
-  "ex": "Could you give me *directions* to the nearest subway station?",
-  "exKo": "가장 가까운 지하철역으로 가는 길을 알려 주시겠습니까?",
+  "ex": "The hotel receptionist gave us *directions* to the nearest subway station.",
+  "exKo": "호텔 접수원은 우리에게 가장 가까운 지하철역으로 가는 길을 알려 주었다.",
   "col": [
    {
     "e": "give directions",
@@ -1548,7 +1548,7 @@
    7
   ],
   "ex": "All of our rental cars come with a built-in *navigation* system.",
-  "exKo": "저희 렌터카에는 모두 내비게이션 시스템이 내장되어 있다.",
+  "exKo": "우리 렌터카에는 모두 내비게이션 시스템이 내장되어 있다.",
   "col": [
    {
     "e": "navigation system",
@@ -1669,7 +1669,7 @@
   "ant": "",
   "tip": "Part 2·3에서 지각이나 지연 사유로 자주 나오는 표현이며, have/get a flat tire 형태로 쓴다. flat rate(균일 요금)의 flat과 뜻을 구분하자.",
   "q": {
-   "s": "The bus was delayed for 40 minutes after one of its rear wheels got a -------.",
+   "s": "The airport shuttle was delayed for 40 minutes because it got a ------- on the way to the terminal.",
    "o": [
     "flat rate",
     "flat tire",
@@ -1677,7 +1677,7 @@
     "flatbed"
    ],
    "a": 1,
-   "k": "뒷바퀴에 생겨 버스가 지연된 원인은 '펑크 난 타이어'이므로 flat tire가 정답이다. flat rate(균일 요금), flat fee(정액 요금), flatbed(평판 트럭)는 바퀴에 생기는 문제가 아니다."
+   "k": "공항 셔틀이 터미널로 가는 도중 40분 지연된 원인은 '펑크 난 타이어'이므로 flat tire가 정답이다. flat rate(균일 요금), flat fee(정액 요금), flatbed(평판 트럭)는 운행 중 생기는 차량 고장이 아니다."
   }
  },
  {

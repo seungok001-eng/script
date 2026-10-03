@@ -37,7 +37,7 @@
   "ant": "",
   "tip": "빵·과일·커피 등으로 된 가벼운 아침 식사로, 호텔 광고·안내문(Part 7)에서 숙박 요금 포함 내역으로 자주 나온다. 조리된 요리가 나오는 full breakfast와 구분된다.",
   "q": {
-   "s": "The room rate includes a ------- of pastries, fruit, and coffee served in the lobby.",
+   "s": "The room rate includes a ------- of pastries, fruit, and coffee available in the lobby.",
    "o": [
     "continental breakfast",
     "wake-up call",
@@ -45,7 +45,7 @@
     "parking permit"
    ],
    "a": 0,
-   "k": "로비에서 제공되는 페이스트리, 과일, 커피로 구성된 것은 '간단한 아침 식사'이므로 continental breakfast가 정답이다. wake-up call(모닝콜), late checkout(늦은 퇴실), parking permit(주차증)은 음식으로 구성될 수 없다."
+   "k": "로비에 마련된 페이스트리, 과일, 커피로 구성된 것은 '간단한 아침 식사'이므로 continental breakfast가 정답이다. wake-up call(모닝콜), late checkout(늦은 퇴실), parking permit(주차증)은 음식으로 구성될 수 없다."
   }
  },
  {
@@ -91,11 +91,11 @@
    "o": [
     "hallway",
     "city hall",
-    "hall monitor",
+    "hallmark",
     "banquet hall"
    ],
    "a": 3,
-   "k": "200명이 넘는 인원을 위해 시상 연회를 옮겨 갈 호텔 시설은 '연회장'이므로 banquet hall이 정답이다. hallway(복도)는 연회 장소가 아니고, city hall(시청)은 호텔 시설이 아니며, hall monitor(복도 감독 학생)는 장소가 아니다."
+   "k": "200명이 넘는 인원을 위해 시상 연회를 옮겨 갈 호텔 시설은 '연회장'이므로 banquet hall이 정답이다. hallway(복도)는 연회 장소가 아니고, city hall(시청)은 호텔 시설이 아니며, hallmark(특징, 품질 보증 마크)는 장소가 아니다."
   }
  },
  {
@@ -110,8 +110,8 @@
    3,
    4
   ],
-  "ex": "I'd like to *make a reservation* for six people on Friday evening.",
-  "exKo": "금요일 저녁에 여섯 명으로 예약하고 싶다.",
+  "ex": "Mr. Lee called the restaurant to *make a reservation* for six people on Friday evening.",
+  "exKo": "Lee 씨는 금요일 저녁 여섯 명 자리를 예약하려고 식당에 전화했다.",
   "col": [
    {
     "e": "make a reservation for",
@@ -141,7 +141,7 @@
   "ant": "cancel a reservation",
   "tip": "make a reservation for + 인원/시간/장소 형태로 쓰며, Part 2·3에서 book, reserve로 바꿔 표현된다. reservation은 가산명사라 관사가 필요하다.",
   "q": {
-   "s": "Diners who wish to sit on the terrace should ------- at least two days in advance.",
+   "s": "Customers who wish to sit on the terrace should ------- at least two days in advance.",
    "o": [
     "make a living",
     "take a break",
@@ -790,7 +790,7 @@
   "ant": "",
   "tip": "pastry chef(제과 요리사), baked goods(제과류)와 함께 카페·제과점 광고(Part 7)에 나온다. paste(반죽, 풀)와 철자를 혼동하지 말자.",
   "q": {
-   "s": "Our bakery's most popular ------- is a croissant filled with almond cream.",
+   "s": "Our cafe's most popular ------- is a croissant filled with almond cream.",
    "o": [
     "pastry",
     "pasture",
@@ -798,7 +798,7 @@
     "posture"
    ],
    "a": 0,
-   "k": "아몬드 크림을 채운 크루아상은 '페이스트리'의 일종이므로 pastry가 정답이다. pasture(목초지), paste(반죽, 풀), posture(자세)는 제과점 상품이 아니다."
+   "k": "아몬드 크림을 채운 크루아상은 '페이스트리'의 일종이므로 pastry가 정답이다. pasture(목초지), paste(반죽, 풀), posture(자세)는 카페에서 파는 상품이 아니다."
   }
  },
  {
@@ -1352,7 +1352,7 @@
   "ant": "dessert",
   "tip": "코스 요리에서 appetizer(전채) 다음, dessert(후식) 전에 나오는 요리이며, 미국 영어에서는 entrée로 바꿔 쓴다.",
   "q": {
-   "s": "After the soup and salad, a ------- of grilled steak was served with roasted potatoes.",
+   "s": "After the soup and salad, a ------- of grilled steak came with roasted potatoes.",
    "o": [
     "main office",
     "main entrance",
@@ -1877,7 +1877,7 @@
   "ant": "",
   "tip": "valet parking(대리 주차)의 형태로 호텔·식당 광고에 자주 나온다. 발음은 [vælei] 또는 [vǽlit]이며 value(가치)와 혼동하지 말자.",
   "q": {
-   "s": "Diners who do not want to search for a parking space can hand their keys to a ------- attendant.",
+   "s": "Guests who do not want to search for a parking space can hand their keys to a ------- attendant.",
    "o": [
     "valid",
     "valet",

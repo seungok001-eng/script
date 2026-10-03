@@ -242,7 +242,7 @@
   "ant": "",
   "tip": "rebook A on/onto B(A를 B편으로 다시 예약해 주다) 형태로 항공편 취소 안내 방송(Part 4)에 자주 나온다. reconfirm(재확인하다)과 의미를 구분하자.",
   "q": {
-   "s": "Passengers whose flights are canceled may ------- at no extra charge through the airline's app.",
+   "s": "Passengers whose flights are canceled may ------- at no extra charge through our mobile app.",
    "o": [
     "rebooking",
     "rebooked",
@@ -665,7 +665,7 @@
   "ant": "",
   "tip": "aviation은 항공기 운항·제조 등 항공 분야 전체를 가리키는 불가산명사로, aviation industry, aviation safety 같은 복합명사로 쓰인다.",
   "q": {
-   "s": "The conference will bring together experts from across the ------- industry, including pilots and aircraft engineers.",
+   "s": "The conference will bring together experts from across the ------- industry, including pilots and flight engineers.",
    "o": [
     "aviation",
     "avenue",
@@ -1026,7 +1026,7 @@
   "ant": "",
   "tip": "aircraft는 단수와 복수의 형태가 같아 aircrafts로 쓰지 않는다. several aircraft처럼 복수 수식어 뒤에도 그대로 쓰는 점이 출제 포인트다.",
   "q": {
-   "s": "Several of the airline's ------- are being inspected after a software problem was reported.",
+   "s": "Several of the company's ------- are being inspected after a software problem was reported.",
    "o": [
     "aircrafts",
     "airliner",
@@ -1123,7 +1123,7 @@
   "ant": "",
   "tip": "crew는 집합명사로 한 팀 전체를 가리키며, 개인은 a crew member라고 한다. 비행기뿐 아니라 공사·청소·촬영 팀에도 쓰인다.",
   "q": {
-   "s": "The cabin ------- will be serving light refreshments shortly after takeoff.",
+   "s": "The flight ------- will be serving light refreshments shortly after takeoff.",
    "o": [
     "crowd",
     "clue",
@@ -1131,7 +1131,7 @@
     "cue"
    ],
    "a": 2,
-   "k": "이륙 직후 다과를 제공하는 사람들은 '객실 승무원(cabin crew)'이므로 crew가 정답이다. crowd(군중), clue(단서), cue(신호)는 cabin과 어울려 쓰이지 않는다."
+   "k": "이륙 직후 다과를 제공하는 사람들은 '승무원(flight crew)'이므로 crew가 정답이다. crowd(군중), clue(단서), cue(신호)는 flight와 어울려 승무원을 나타내지 않는다."
   }
  },
  {
@@ -1378,7 +1378,7 @@
    4
   ],
   "ex": "Our driver will be waiting for you at *baggage claim* with a sign showing your name.",
-  "exKo": "저희 기사가 이름이 적힌 팻말을 들고 수하물 찾는 곳에서 기다리고 있을 것이다.",
+  "exKo": "우리 기사가 이름이 적힌 팻말을 들고 수하물 찾는 곳에서 기다리고 있을 것이다.",
   "col": [
    {
     "e": "baggage claim area",
@@ -1425,7 +1425,7 @@
    4
   ],
   "ex": "Please place your carry-on bags in the *overhead compartment* or under the seat in front of you.",
-  "exKo": "기내용 가방은 머리 위 짐칸이나 앞 좌석 아래에 두시기 바란다.",
+  "exKo": "기내용 가방은 머리 위 짐칸이나 앞 좌석 아래에 두어야 한다.",
   "col": [
    {
     "e": "store bags in the overhead compartment",
