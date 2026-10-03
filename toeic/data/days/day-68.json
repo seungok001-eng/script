@@ -69,8 +69,8 @@
    4,
    5
   ],
-  "ex": "We'll *send out* the revised contracts to all clients by the end of the day.",
-  "exKo": "우리는 오늘 업무 종료 전까지 모든 고객에게 수정된 계약서를 발송할 것이다.",
+  "ex": "We'll *send out* the revised contracts to all clients this afternoon.",
+  "exKo": "우리는 오늘 오후에 모든 고객에게 수정된 계약서를 발송할 것이다.",
   "col": [
    {
     "e": "send out invitations",
@@ -114,8 +114,8 @@
    3,
    4
   ],
-  "ex": "The shipment of printer paper was *held up* at customs for three days.",
-  "exKo": "프린터 용지 배송분이 세관에서 사흘 동안 지연되었다.",
+  "ex": "A container of spare parts was *held up* at customs for three days.",
+  "exKo": "예비 부품을 실은 컨테이너 한 대가 세관에서 사흘 동안 지체되었다.",
   "col": [
    {
     "e": "be held up in traffic",
@@ -591,7 +591,7 @@
    5,
    7
   ],
-  "ex": "Passengers must fill out a customs *declaration* form before the plane lands.",
+  "ex": "Passengers must complete a customs *declaration* form before the plane lands.",
   "exKo": "승객은 비행기가 착륙하기 전에 세관 신고서를 작성해야 한다.",
   "col": [
    {
@@ -644,7 +644,7 @@
    4,
    7
   ],
-  "ex": "The cargo ship is scheduled to arrive at the *port* of Busan on Monday morning.",
+  "ex": "The cargo ship is due to reach the *port* of Busan on Monday morning.",
   "exKo": "그 화물선은 월요일 아침 부산항에 도착할 예정이다.",
   "col": [
    {
@@ -1716,7 +1716,8 @@
   "w": "bulky",
   "pos": "adj",
   "m": [
-   "부피가 큰, 거대한"
+   "부피가 큰",
+   "(커서) 다루기 힘든"
   ],
   "tier": 2,
   "parts": [
@@ -1791,8 +1792,8 @@
    "sturdy",
    "robust"
   ],
-  "ant": "lightweight",
-  "tip": "명사 앞에서만 쓰여 '튼튼한, 고강도의'를 뜻하며 Part 7에서 durable, sturdy로 패러프레이징된다. heavy(무거운)와 의미를 혼동하지 않는다.",
+  "ant": "light-duty",
+  "tip": "주로 명사 앞에 쓰여 '튼튼한, 고강도의'를 뜻하며 Part 7에서 durable, sturdy로 패러프레이징된다. heavy(무거운)와 의미를 혼동하지 않는다.",
   "q": {
    "s": "The construction crew needs ------- gloves that can withstand sharp metal edges.",
    "o": [
@@ -1833,11 +1834,6 @@
     "w": "wholesale",
     "pos": "adj",
     "m": "도매의"
-   },
-   {
-    "w": "retailer",
-    "pos": "n",
-    "m": "소매업자"
    }
   ],
   "para": [

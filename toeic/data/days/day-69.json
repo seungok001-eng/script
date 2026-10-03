@@ -812,9 +812,8 @@
   ],
   "der": [],
   "para": [
-   "revamp",
-   "renovate",
-   "service"
+   "service",
+   "revamp"
   ],
   "ant": "",
   "tip": "기계의 '정밀 점검'뿐 아니라 제도·시스템의 '전면 개편'에도 쓰여 revamp, restructure로 패러프레이징된다. 명사로도 쓰여 a major overhaul이 가능하다.",
@@ -1201,13 +1200,12 @@
   ],
   "der": [
    {
-    "w": "water-resistant",
-    "pos": "adj",
-    "m": "내수성의, 생활 방수의"
+    "w": "waterproofing",
+    "pos": "n",
+    "m": "방수 처리, 방수재"
    }
   ],
   "para": [
-   "water-resistant",
    "watertight"
   ],
   "ant": "",
@@ -1494,7 +1492,7 @@
   "ant": "",
   "tip": "자동화·스마트 기기 지문에서 detect(감지하다)와 함께 쓰인다. 발음이 같은 censor(검열관)와 철자를 혼동하지 않는다.",
   "q": {
-   "s": "A ------- on the conveyor detects any package that exceeds the weight limit.",
+   "s": "A ------- on the conveyor belt detects damaged packages and removes them from the line.",
    "o": [
     "sensor",
     "censor",
@@ -1502,7 +1500,7 @@
     "sensation"
    ],
    "a": 0,
-   "k": "중량 한도를 넘는 소포를 '감지하는' 장치는 sensor이므로 정답이다. censor(검열관), censure(비난), sensation(감각, 돌풍)은 감지 장치가 아니다."
+   "k": "컨베이어 벨트에서 파손된 소포를 '감지하는' 장치이므로 sensor가 정답이다. censor(검열관), censure(비난), sensation(감각, 돌풍)은 감지 장치가 아니다."
   }
  },
  {
@@ -1822,8 +1820,7 @@
    }
   ],
   "para": [
-   "side effect",
-   "spin-off"
+   "waste product"
   ],
   "ant": "",
   "tip": "a byproduct of + 공정 형태로 쓰이며, 비유적으로 '부수적 결과'라는 뜻도 있다. by-product처럼 하이픈을 넣어 쓰기도 한다.",
@@ -1924,7 +1921,7 @@
   "ant": "ramp down",
   "tip": "생산량·활동을 점차 늘리는 것을 뜻하며 Part 7에서 increase, boost로 패러프레이징된다. 반대말 ramp down, cut back과 함께 문맥으로 구분하는 문제가 나온다.",
   "q": {
-   "s": "To meet growing demand, the manufacturer will ------- production of its electric scooters next month.",
+   "s": "Because preorders have been much stronger than expected, the manufacturer will ------- output of its electric scooters.",
    "o": [
     "ramp down",
     "cut back",
@@ -1932,7 +1929,7 @@
     "wind down"
    ],
    "a": 2,
-   "k": "늘어나는 수요를 충족하려면 생산을 '늘려야' 하므로 ramp up이 정답이다. ramp down(줄이다), cut back(삭감하다), wind down(점차 축소하다)은 모두 수요 증가와 반대되는 조치다."
+   "k": "예약 주문이 예상보다 훨씬 많으므로 생산량을 '늘린다'는 의미의 ramp up이 정답이다. ramp down(줄이다), cut back(삭감하다), wind down(점차 축소하다)은 모두 수요 증가와 반대되는 조치다."
   }
  },
  {

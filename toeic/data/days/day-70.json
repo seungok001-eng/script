@@ -96,7 +96,7 @@
   "ant": "",
   "tip": "make refinements to(~을 다듬다)와 같이 가산명사로 쓰인다. 동사 refine, 형용사 refined와 함께 품사 문제로 출제되며 refinery(정제소)와 구분한다.",
   "q": {
-   "s": "The final design incorporates several ------- suggested by participants in the focus group.",
+   "s": "The final design incorporates several ------- suggested by members of the review panel.",
    "o": [
     "refined",
     "refinements",
@@ -425,7 +425,7 @@
   "ant": "proven",
   "tip": "명사 experiment(실험)의 형용사형으로 '시험 단계의, 실험적인'을 뜻한다. at an experimental stage처럼 관사와 명사 사이 형용사 자리를 묻는 문제가 나온다.",
   "q": {
-   "s": "The engine is still at an ------- stage and will not be available for several years.",
+   "s": "The engine is still at an ------- stage and will not reach the market for several years.",
    "o": [
     "experiment",
     "experimental",
@@ -579,9 +579,9 @@
     "m": "변화, 차이"
    },
    {
-    "w": "invariably",
-    "pos": "adv",
-    "m": "언제나, 변함없이"
+    "w": "variability",
+    "pos": "n",
+    "m": "가변성, 변동성"
    }
   ],
   "para": [
@@ -914,8 +914,7 @@
    }
   ],
   "para": [
-   "AI",
-   "machine learning"
+   "AI"
   ],
   "ant": "",
   "tip": "줄여서 AI라고 하며 기술 기사에서 AI-powered, AI-driven 같은 형태로도 나온다. 불가산명사라 an artificial intelligence로 쓰지 않는다.",
@@ -1122,7 +1121,7 @@
   "ant": "",
   "tip": "제품 리뷰에서 intuitive interface/controls가 '쓰기 쉬운'의 뜻으로 나오며 user-friendly로 패러프레이징된다. 명사 intuition, 부사 intuitively와 품사 문제로 출제된다.",
   "q": {
-   "s": "Thanks to its ------- interface, most users can operate the software without reading the manual.",
+   "s": "The new scheduling software is so ------- that most employees learned to use it without any training.",
    "o": [
     "intuition",
     "intuitively",
@@ -1130,7 +1129,7 @@
     "intrusive"
    ],
    "a": 2,
-   "k": "소유격 its와 명사 interface 사이 형용사 자리이며, 설명서 없이 사용할 수 있다고 했으므로 '직관적인' intuitive가 정답이다. intuition은 명사, intuitively는 부사이고, intrusive(거슬리는)는 의미가 맞지 않는다."
+   "k": "so ~ that 구문에서 be동사 is 뒤 보어 자리에는 형용사가 오며, 교육 없이도 사용법을 익혔다고 했으므로 '직관적인' intuitive가 정답이다. intuition은 명사, intuitively는 부사이고, intrusive(거슬리는)는 문맥에 맞지 않는다."
   }
  },
  {
@@ -1593,8 +1592,8 @@
    }
   ],
   "para": [
-   "innovative",
-   "disturbing"
+   "game-changing",
+   "revolutionary"
   ],
   "ant": "",
   "tip": "기술 기사에서는 '업계 판도를 바꾸는', 사내 공지에서는 '업무에 지장을 주는'(disruptive to employees)이라는 뜻으로 쓰인다. 명사 disruption과 품사 문제로 출제된다.",

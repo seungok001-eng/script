@@ -36,7 +36,7 @@
   "ant": "",
   "tip": "purchasing은 '구매의'라는 뜻으로 purchasing department(구매부), purchasing manager(구매 담당자)처럼도 쓴다. Part 7에서는 buying power로 패러프레이징된다.",
   "q": {
-   "s": "When wages fail to keep up with prices, consumers lose ------- power.",
+   "s": "When wages rise more slowly than prices, consumers lose ------- power.",
    "o": [
     "purchased",
     "purchaser",
@@ -527,7 +527,7 @@
   "ant": "free trade",
   "tip": "수입품에 관세 등을 매겨 자국 산업을 보호하려는 정책으로 불가산명사다. 반대 개념인 free trade(자유 무역)와 함께 경제 기사에 나온다.",
   "q": {
-   "s": "Higher tariffs on imported steel are seen as a sign of increasing ------- in the region.",
+   "s": "The new limits on imported cars are seen as a sign of increasing ------- in the region.",
    "o": [
     "protective",
     "protectionism",
@@ -535,7 +535,7 @@
     "protected"
    ],
    "a": 1,
-   "k": "전치사 of의 목적어로 increasing의 수식을 받는 불가산명사 자리이며, 수입 철강 관세 인상은 '보호 무역주의'의 신호이므로 protectionism이 정답이다. protective, protected는 형용사(분사)이고 protector(보호자)는 가산명사라 관사 없이 쓸 수 없다."
+   "k": "전치사 of의 목적어로 increasing의 수식을 받는 불가산명사 자리이며, 수입차 규제는 '보호 무역주의'의 신호이므로 protectionism이 정답이다. protective, protected는 형용사(분사)이고 protector(보호자)는 가산명사라 관사 없이 쓸 수 없다."
   }
  },
  {
@@ -650,8 +650,8 @@
    5,
    7
   ],
-  "ex": "Attendance at the trade fair has steadily *dwindled* since online exhibitions became popular.",
-  "exKo": "온라인 전시회가 인기를 끈 이후 그 무역 박람회의 참석자 수는 꾸준히 줄어들었다.",
+  "ex": "Attendance at the annual book fair has steadily *dwindled* since online exhibitions became popular.",
+  "exKo": "온라인 전시회가 인기를 끈 이후 그 연례 도서전의 참석자 수는 꾸준히 줄어들었다.",
   "col": [
    {
     "e": "dwindle to",
@@ -1180,7 +1180,7 @@
   "ant": "upward",
   "tip": "'downward pressure on prices(가격 하락 압력)', 'a downward revision(하향 조정)'처럼 쓴다. -ward는 방향을 나타내며 부사로는 downwards라고도 쓴다.",
   "q": {
-   "s": "Increased competition from online retailers has put ------- pressure on prices at traditional stores.",
+   "s": "The opening of three discount supermarkets nearby has put ------- pressure on prices at local grocery stores.",
    "o": [
     "downtown",
     "downward",
@@ -1188,7 +1188,7 @@
     "download"
    ],
    "a": 1,
-   "k": "온라인 업체와의 경쟁 심화로 기존 매장 가격에 '하락' 압력이 생겼다는 뜻이므로 downward가 정답이다. downtown(시내의), downstairs(아래층의), download(내려받다)는 pressure와 어울리지 않는다."
+   "k": "인근에 할인 슈퍼마켓 세 곳이 문을 열면서 지역 식료품점 가격에 '하락' 압력이 생겼다는 뜻이므로 downward가 정답이다. downtown(시내의), downstairs(아래층의), download(내려받다)는 pressure와 어울리지 않는다."
   }
  },
  {

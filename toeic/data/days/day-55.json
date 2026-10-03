@@ -187,8 +187,8 @@
     "k": "A에게 B를 빚지다"
    },
    {
-    "e": "owe A's success to B",
-    "k": "A의 성공은 B 덕분이다"
+    "e": "owe one's success to B",
+    "k": "성공은 B 덕분이다"
    }
   ],
   "der": [
@@ -1652,7 +1652,7 @@
   "ant": "",
   "tip": "surcharge on(~에 대한 추가 요금)처럼 on과 짝을 이루며, Part 7에서 additional fee, extra charge로 바꿔 표현된다.",
   "q": {
-   "s": "Because of higher fuel prices, the shipping company will add a ------- of $15 to every overseas delivery.",
+   "s": "During the holiday season, the courier adds a ------- of $5 to all weekend deliveries.",
    "o": [
     "surcharge",
     "surplus",
@@ -1660,7 +1660,7 @@
     "surrender"
    ],
    "a": 0,
-   "k": "연료비 상승으로 해외 배송마다 15달러의 '추가 요금'을 붙인다는 문맥이므로 surcharge가 정답이다. surplus(흑자, 잉여), surface(표면), surrender(항복, 양도)는 의미가 맞지 않는다."
+   "k": "연휴 기간에 주말 배송마다 5달러의 '추가 요금'을 붙인다는 문맥이므로 surcharge가 정답이다. surplus(흑자, 잉여), surface(표면), surrender(항복, 양도)는 의미가 맞지 않는다."
   }
  },
  {

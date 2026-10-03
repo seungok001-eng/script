@@ -133,7 +133,7 @@
   "ant": "",
   "tip": "협회, 동호회, 비영리 단체의 '회계 담당자'로 Part 7 회의록, 공지에 자주 나온다. 'serve as treasurer', 'be elected treasurer'처럼 직책명으로 쓰일 때는 관사 없이 쓸 수 있다.",
   "q": {
-   "s": "Ms. Kim was elected ------- of the Riverside Business Association at last night's meeting.",
+   "s": "Ms. Kim has served as ------- of the Riverside Business Association for six years, managing its budget and membership fees.",
    "o": [
     "treasury",
     "treasured",
@@ -141,7 +141,7 @@
     "treasurer"
    ],
    "a": 3,
-   "k": "'be elected + 직책명(~로 선출되다)'이므로 사람명사 treasurer가 정답이다. treasury는 '재무부, 자금'이라는 기관·사물명사이고, treasure(보물), treasured(소중한)는 뜻이 맞지 않는다."
+   "k": "'serve as + 직책명(~로 일하다)' 구조에서 직책명은 관사 없이 쓸 수 있으며, 예산과 회비를 관리하는 사람이므로 사람명사 treasurer가 정답이다. treasury는 '재무부, 자금'이라는 기관·사물명사이고, treasure(보물), treasured(소중한)는 뜻이 맞지 않는다."
   }
  },
  {
@@ -1401,7 +1401,7 @@
   "ant": "",
   "tip": "건물, 장비처럼 오래 쓰는 자산에 들어가는 지출로 줄여서 capex라고도 한다. 일상적인 운영비(operating expenses)와 대비된다.",
   "q": {
-   "s": "Building a new factory is a major capital ------- that requires approval from the board of directors.",
+   "s": "Building a new factory is a major capital ------- that requires careful long-term planning.",
    "o": [
     "expenditure",
     "expend",
