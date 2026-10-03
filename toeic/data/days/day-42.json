@@ -53,7 +53,7 @@
   "ant": "",
   "tip": "economic(경제의)과 economical(절약하는, 알뜰한)의 의미 구별이 단골 출제 포인트다. 항공·여행 지문에서는 economy class(일반석)라는 뜻으로 나온다.",
   "q": {
-   "s": "Experts expect the national ------- to grow by about 2 percent next year.",
+   "s": "Exports have become the main engine of the country's -------, accounting for 40 percent of total output.",
    "o": [
     "economic",
     "economical",
@@ -61,7 +61,7 @@
     "economically"
    ],
    "a": 2,
-   "k": "형용사 national의 수식을 받는 명사 자리이므로 economy가 정답이다. economic, economical은 형용사, economically는 부사다."
+   "k": "소유격 the country's 뒤 명사 자리이므로 economy가 정답이다. economic, economical은 형용사, economically는 부사다."
   }
  },
  {
@@ -278,8 +278,8 @@
   "parts": [
    7
   ],
-  "ex": "*Consumer confidence* rose last month as unemployment fell to its lowest level in years.",
-  "exKo": "실업률이 수년 만에 최저 수준으로 떨어지면서 지난달 소비자 신뢰지수가 상승했다.",
+  "ex": "*Consumer confidence* has improved as more people feel secure about their jobs.",
+  "exKo": "일자리에 안정감을 느끼는 사람이 늘면서 소비자 신뢰지수가 개선되었다.",
   "col": [
    {
     "e": "consumer confidence index",
@@ -532,8 +532,8 @@
    5,
    7
   ],
-  "ex": "There has been a *marked* improvement in customer satisfaction since the store extended its hours.",
-  "exKo": "그 매장이 영업시간을 연장한 이후 고객 만족도가 눈에 띄게 향상되었다.",
+  "ex": "Profits showed a *marked* increase after the company moved part of its production overseas.",
+  "exKo": "회사가 생산 시설 일부를 해외로 옮긴 뒤 수익이 뚜렷하게 증가했다.",
   "col": [
    {
     "e": "marked increase",
@@ -1787,7 +1787,7 @@
   "ant": "",
   "tip": "trade show/fair(무역 박람회)는 Part 3·4·7 빈출 표현이다. 동사로는 trade A for B(A를 B와 교환하다)처럼 쓰인다.",
   "q": {
-   "s": "More than 300 companies will display their products at this year's ------- show in Frankfurt.",
+   "s": "Our booth at last month's ------- show in Frankfurt attracted more than 2,000 visitors.",
    "o": [
     "treat",
     "trade",
@@ -1795,7 +1795,7 @@
     "tread"
    ],
    "a": 1,
-   "k": "trade show는 '무역 박람회'라는 뜻으로 수백 개 기업이 제품을 전시하는 행사다. treat(대접), trait(특성), tread(밟다)는 철자가 비슷한 함정이다."
+   "k": "trade show는 '무역 박람회'라는 뜻으로 부스를 차리고 방문객을 맞는 행사다. treat(대접), trait(특성), tread(밟다)는 철자가 비슷한 함정이다."
   }
  },
  {
@@ -1968,8 +1968,8 @@
    5,
    7
   ],
-  "ex": "The retailer launched a *nationwide* advertising campaign to promote its new loyalty program.",
-  "exKo": "그 소매업체는 새 고객 보상 프로그램을 홍보하기 위해 전국적인 광고 캠페인을 시작했다.",
+  "ex": "A *nationwide* survey found that most adults now read the news on their phones.",
+  "exKo": "전국 조사 결과 대부분의 성인이 이제 휴대폰으로 뉴스를 읽는 것으로 나타났다.",
   "col": [
    {
     "e": "nationwide campaign",
@@ -2063,7 +2063,7 @@
   "ant": "national",
   "tip": "regional office(지역 사무소), regional manager(지역 담당 관리자)처럼 명사 앞에 쓰이는 형용사로, 명사 region, 부사 regionally와의 품사 구별이 출제된다.",
   "q": {
-   "s": "All ------- offices will be closed on Monday in observance of the national holiday.",
+   "s": "Applications should be sent to the nearest ------- office rather than to the company's headquarters.",
    "o": [
     "region",
     "regional",
@@ -2136,8 +2136,8 @@
   "parts": [
    7
   ],
-  "ex": "Higher fuel prices have led to a drop in *consumer spending* on travel and dining out.",
-  "exKo": "연료 가격 상승으로 여행과 외식에 대한 소비자 지출이 감소했다.",
+  "ex": "Economists say that *consumer spending* accounts for nearly 70 percent of the country's economic activity.",
+  "exKo": "경제학자들은 소비자 지출이 그 나라 경제 활동의 약 70퍼센트를 차지한다고 말한다.",
   "col": [
    {
     "e": "consumer spending on",

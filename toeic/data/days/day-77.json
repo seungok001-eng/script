@@ -55,8 +55,8 @@
    4,
    7
   ],
-  "ex": "The new apartment *complex* will include a swimming pool and a children's playground.",
-  "exKo": "새 아파트 단지에는 수영장과 어린이 놀이터가 들어선다.",
+  "ex": "Residents of the Harbor View *complex* share a gym, a pool, and a rooftop garden.",
+  "exKo": "Harbor View 단지의 주민들은 체육관, 수영장, 옥상 정원을 함께 이용한다.",
   "col": [
    {
     "e": "apartment complex",
@@ -476,8 +476,8 @@
    4,
    7
   ],
-  "ex": "Tenants should report any needed repairs to the *property manager* by e-mail.",
-  "exKo": "세입자는 필요한 수리 사항을 이메일로 건물 관리인에게 알려야 한다.",
+  "ex": "The *property manager* collects rent and arranges repairs on behalf of the owner.",
+  "exKo": "건물 관리인은 소유주를 대신해 임대료를 걷고 수리를 주선한다.",
   "col": [
    {
     "e": "contact the property manager",
@@ -647,7 +647,7 @@
   "ant": "",
   "tip": "evict A from B(A를 B에서 쫓아내다) 구조와 명사 eviction을 쓴 eviction notice(퇴거 통지서)가 Part 7 임대 지문에 나온다.",
   "q": {
-   "s": "Under the new law, landlords must give tenants at least 90 days' notice before ------- them.",
+   "s": "The city now requires landlords to give tenants at least 90 days' written notice before ------- them.",
    "o": [
     "evicting",
     "evicted",
@@ -1207,8 +1207,8 @@
    4,
    7
   ],
-  "ex": "The startup is looking for affordable *office space* close to public transportation.",
-  "exKo": "그 신생 기업은 대중교통과 가까운 저렴한 사무 공간을 찾고 있다.",
+  "ex": "Many small firms now rent shared *office space* instead of signing long leases.",
+  "exKo": "요즘 많은 소기업이 장기 임대 계약을 맺는 대신 공유 사무 공간을 빌린다.",
   "col": [
    {
     "e": "rent office space",
