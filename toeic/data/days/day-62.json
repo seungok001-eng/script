@@ -380,14 +380,14 @@
   "ant": "welcome party",
   "tip": "Part 3·4에서 퇴직·전근 소식과 함께 자주 나오며, going-away party, send-off로 바꿔 표현된다.",
   "q": {
-   "s": "Colleagues organized a ------- party for Ms. Webb, who is retiring after 30 years with the firm.",
+   "s": "Everyone in the marketing department is invited to a ------- party for Mr. Osei, who is moving to the Lisbon office.",
    "o": [
     "launch",
     "farewell",
     "welcome",
     "housewarming"
    ],
-   "k": "30년 근무 후 은퇴하는 사람을 위한 모임이므로 farewell party(송별회)가 정답. launch party(출시 기념 행사), welcome party(환영회), housewarming party(집들이)는 은퇴와 맞지 않는다.",
+   "k": "리스본 지사로 떠나는 사람을 위한 모임이므로 farewell party(송별회)가 정답. launch party(출시 기념 행사), welcome party(환영회), housewarming party(집들이)는 떠나는 동료를 위한 모임이 아니다.",
    "a": 1
   }
  },

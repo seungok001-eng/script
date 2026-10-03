@@ -916,12 +916,12 @@
    5,
    7
   ],
-  "ex": "The north entrance will be closed *for the time being* while the steps are repaired.",
-  "exKo": "계단을 보수하는 동안 북쪽 출입구는 당분간 폐쇄된다.",
+  "ex": "We'll be working out of the Elm Street office *for the time being*.",
+  "exKo": "우리는 당분간 Elm Street 사무실에서 근무하게 된다.",
   "col": [
    {
     "e": "be closed for the time being",
-    "k": "당분간 폐쇄되다"
+    "k": "당분간 문을 닫다"
    },
    {
     "e": "for the time being, S + V",
@@ -1440,8 +1440,8 @@
    5,
    7
   ],
-  "ex": "Contractors *are required to* wear identification badges at all times while on site.",
-  "exKo": "외부 작업자는 현장에 있는 동안 항상 신분증을 착용해야 한다.",
+  "ex": "Passengers *are required to* show a valid photo ID at check-in.",
+  "exKo": "승객은 탑승 수속 시 유효한 사진 신분증을 제시해야 한다.",
   "col": [
    {
     "e": "be required to + 동사원형",

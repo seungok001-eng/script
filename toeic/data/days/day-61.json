@@ -62,8 +62,8 @@
    4,
    7
   ],
-  "ex": "Each *new hire* receives a laptop and a security badge on the first day.",
-  "exKo": "신입 사원은 각자 첫날 노트북과 보안 출입증을 받는다.",
+  "ex": "Our *new hire* in accounting starts on Monday, so please make her feel welcome.",
+  "exKo": "회계팀 신입 사원이 월요일부터 출근하니 따뜻하게 맞아 주기 바란다.",
   "col": [
    {
     "e": "train new hires",
@@ -969,8 +969,8 @@
    4,
    7
   ],
-  "ex": "The security company runs a *background check* on every applicant before hiring.",
-  "exKo": "그 보안 업체는 채용 전에 모든 지원자의 신원 조회를 실시한다.",
+  "ex": "The hospital completes a *background check* on all new nurses before their first shift.",
+  "exKo": "그 병원은 모든 신규 간호사에 대해 첫 근무 전에 신원 조회를 마친다.",
   "col": [
    {
     "e": "run a background check",
@@ -1313,14 +1313,14 @@
   "ant": "",
   "tip": "형용사 punctual(시간을 지키는)과 부사 punctually, 명사 punctuality를 구분하는 품사 문제로 출제된다.",
   "q": {
-   "s": "Ms. Bauer received an award for her ------- and perfect attendance record.",
+   "s": "Mr. Lindgren's ------- and reliability made him the obvious choice for the night supervisor position.",
    "o": [
     "punctual",
     "punctuality",
     "punctually",
     "punctuate"
    ],
-   "k": "소유격 her 뒤에서 and로 attendance record와 병렬을 이루는 명사 자리이므로 punctuality가 정답. punctual은 형용사, punctually는 부사, punctuate는 동사다.",
+   "k": "소유격 Mr. Lindgren's 뒤에서 and로 reliability와 병렬을 이루는 명사 자리이므로 punctuality가 정답. punctual은 형용사, punctually는 부사, punctuate는 동사다.",
    "a": 1
   }
  },
