@@ -1,4 +1,604 @@
 {
+"p1/001.mp3": {
+"src": "kokoro",
+"text": "Some files are stacked on the desk.",
+"voice": "bf_emma"
+},
+"p1/002.mp3": {
+"src": "kokoro",
+"text": "A woman is typing on a keyboard.",
+"voice": "af_heart"
+},
+"p1/003.mp3": {
+"src": "kokoro",
+"text": "A man is making a photocopy.",
+"voice": "af_bella"
+},
+"p1/004.mp3": {
+"src": "kokoro",
+"text": "A man is reaching for a binder on the shelf.",
+"voice": "am_michael"
+},
+"p1/005.mp3": {
+"src": "kokoro",
+"text": "A woman is talking on the phone.",
+"voice": "af_heart"
+},
+"p1/006.mp3": {
+"src": "kokoro",
+"text": "The man is looking at a monitor.",
+"voice": "af_heart"
+},
+"p1/007.mp3": {
+"src": "kokoro",
+"text": "Some papers are scattered across the desk.",
+"voice": "af_heart"
+},
+"p1/008.mp3": {
+"src": "kokoro",
+"text": "A file cabinet drawer has been left open.",
+"voice": "bm_george"
+},
+"p1/009.mp3": {
+"src": "kokoro",
+"text": "The woman is filing some documents.",
+"voice": "bm_george"
+},
+"p1/010.mp3": {
+"src": "kokoro",
+"text": "A woman is writing on a notepad.",
+"voice": "af_heart"
+},
+"p1/011.mp3": {
+"src": "kokoro",
+"text": "Some of the chairs are unoccupied.",
+"voice": "bf_emma"
+},
+"p1/012.mp3": {
+"src": "kokoro",
+"text": "A man is plugging a cord into an outlet.",
+"voice": "af_heart"
+},
+"p1/013.mp3": {
+"src": "kokoro",
+"text": "The copier is being repaired.",
+"voice": "af_bella"
+},
+"p1/014.mp3": {
+"src": "kokoro",
+"text": "A man is leaning back in his chair.",
+"voice": "am_michael"
+},
+"p1/015.mp3": {
+"src": "kokoro",
+"text": "The woman is wearing a headset.",
+"voice": "af_heart"
+},
+"p1/016.mp3": {
+"src": "kokoro",
+"text": "Some merchandise is displayed in a store window.",
+"voice": "af_heart"
+},
+"p1/017.mp3": {
+"src": "kokoro",
+"text": "A customer is browsing through a rack of clothing.",
+"voice": "af_heart"
+},
+"p1/018.mp3": {
+"src": "kokoro",
+"text": "A man is trying on a jacket.",
+"voice": "am_michael"
+},
+"p1/019.mp3": {
+"src": "kokoro",
+"text": "The shelves are being stocked.",
+"voice": "am_michael"
+},
+"p1/020.mp3": {
+"src": "kokoro",
+"text": "The shelves are stocked with canned goods.",
+"voice": "af_bella"
+},
+"p1/021.mp3": {
+"src": "kokoro",
+"text": "A shopper is pushing a cart down an aisle.",
+"voice": "am_michael"
+},
+"p1/022.mp3": {
+"src": "kokoro",
+"text": "A customer is paying for some items at the counter.",
+"voice": "af_heart"
+},
+"p1/023.mp3": {
+"src": "kokoro",
+"text": "A server is pouring water into a glass.",
+"voice": "af_bella"
+},
+"p1/024.mp3": {
+"src": "kokoro",
+"text": "A customer is reading a menu.",
+"voice": "bm_george"
+},
+"p1/025.mp3": {
+"src": "kokoro",
+"text": "A server is taking an order.",
+"voice": "af_heart"
+},
+"p1/026.mp3": {
+"src": "kokoro",
+"text": "A woman is examining a piece of fruit.",
+"voice": "af_heart"
+},
+"p1/027.mp3": {
+"src": "kokoro",
+"text": "Some tables have been set for a meal.",
+"voice": "af_heart"
+},
+"p1/028.mp3": {
+"src": "kokoro",
+"text": "Price tags have been attached to the items.",
+"voice": "bm_george"
+},
+"p1/029.mp3": {
+"src": "kokoro",
+"text": "A worker is wiping off a counter.",
+"voice": "am_michael"
+},
+"p1/030.mp3": {
+"src": "kokoro",
+"text": "Some customers are waiting in line.",
+"voice": "af_heart"
+},
+"p1/031.mp3": {
+"src": "kokoro",
+"text": "Some cars are parked along the street.",
+"voice": "bf_emma"
+},
+"p1/032.mp3": {
+"src": "kokoro",
+"text": "Trees line the street.",
+"voice": "af_bella"
+},
+"p1/033.mp3": {
+"src": "kokoro",
+"text": "Some vehicles are lined up at a traffic light.",
+"voice": "af_bella"
+},
+"p1/034.mp3": {
+"src": "kokoro",
+"text": "Passengers are boarding a bus.",
+"voice": "am_michael"
+},
+"p1/035.mp3": {
+"src": "kokoro",
+"text": "A woman is stepping off a train.",
+"voice": "af_heart"
+},
+"p1/036.mp3": {
+"src": "kokoro",
+"text": "Some people are crossing the street.",
+"voice": "bm_george"
+},
+"p1/037.mp3": {
+"src": "kokoro",
+"text": "A bicycle is leaning against a pole.",
+"voice": "af_heart"
+},
+"p1/038.mp3": {
+"src": "kokoro",
+"text": "Some people are waiting on a platform.",
+"voice": "am_michael"
+},
+"p1/039.mp3": {
+"src": "kokoro",
+"text": "Traffic is moving in both directions.",
+"voice": "af_bella"
+},
+"p1/040.mp3": {
+"src": "kokoro",
+"text": "A man is loading luggage into a trunk.",
+"voice": "af_heart"
+},
+"p1/041.mp3": {
+"src": "kokoro",
+"text": "Some pedestrians are walking along a sidewalk.",
+"voice": "af_heart"
+},
+"p1/042.mp3": {
+"src": "kokoro",
+"text": "A car is stopped at an intersection.",
+"voice": "af_bella"
+},
+"p1/043.mp3": {
+"src": "kokoro",
+"text": "A car is being washed.",
+"voice": "af_heart"
+},
+"p1/044.mp3": {
+"src": "kokoro",
+"text": "A man is riding a bicycle.",
+"voice": "bf_emma"
+},
+"p1/045.mp3": {
+"src": "kokoro",
+"text": "A traffic sign is posted at the corner.",
+"voice": "af_bella"
+},
+"p1/046.mp3": {
+"src": "kokoro",
+"text": "A building is under construction.",
+"voice": "bf_emma"
+},
+"p1/047.mp3": {
+"src": "kokoro",
+"text": "Workers are paving a road.",
+"voice": "af_heart"
+},
+"p1/048.mp3": {
+"src": "kokoro",
+"text": "A ladder is propped against a wall.",
+"voice": "af_heart"
+},
+"p1/049.mp3": {
+"src": "kokoro",
+"text": "Some bricks are piled on the ground.",
+"voice": "af_heart"
+},
+"p1/050.mp3": {
+"src": "kokoro",
+"text": "A man is operating heavy machinery.",
+"voice": "af_heart"
+},
+"p1/051.mp3": {
+"src": "kokoro",
+"text": "A worker is climbing a ladder.",
+"voice": "af_bella"
+},
+"p1/052.mp3": {
+"src": "kokoro",
+"text": "Workers are unloading materials from a truck.",
+"voice": "af_heart"
+},
+"p1/053.mp3": {
+"src": "kokoro",
+"text": "A wall is being painted.",
+"voice": "bm_george"
+},
+"p1/054.mp3": {
+"src": "kokoro",
+"text": "A worker is drilling a hole in the wall.",
+"voice": "af_heart"
+},
+"p1/055.mp3": {
+"src": "kokoro",
+"text": "A man is measuring a piece of wood.",
+"voice": "af_bella"
+},
+"p1/056.mp3": {
+"src": "kokoro",
+"text": "A man is carrying a plank on his shoulder.",
+"voice": "bm_george"
+},
+"p1/057.mp3": {
+"src": "kokoro",
+"text": "Scaffolding has been put up beside a building.",
+"voice": "af_heart"
+},
+"p1/058.mp3": {
+"src": "kokoro",
+"text": "A worker is sweeping up debris.",
+"voice": "af_heart"
+},
+"p1/059.mp3": {
+"src": "kokoro",
+"text": "A man is bending over a workbench.",
+"voice": "bm_george"
+},
+"p1/060.mp3": {
+"src": "kokoro",
+"text": "Some traffic cones have been placed on the road.",
+"voice": "af_bella"
+},
+"p1/061.mp3": {
+"src": "kokoro",
+"text": "A picture is hanging on the wall.",
+"voice": "af_bella"
+},
+"p1/062.mp3": {
+"src": "kokoro",
+"text": "A television is mounted on the wall.",
+"voice": "af_bella"
+},
+"p1/063.mp3": {
+"src": "kokoro",
+"text": "Some cushions are arranged on a sofa.",
+"voice": "af_bella"
+},
+"p1/064.mp3": {
+"src": "kokoro",
+"text": "A lamp is positioned next to a bed.",
+"voice": "af_heart"
+},
+"p1/065.mp3": {
+"src": "kokoro",
+"text": "A rug covers most of the floor.",
+"voice": "bf_emma"
+},
+"p1/066.mp3": {
+"src": "kokoro",
+"text": "A vase is resting on a windowsill.",
+"voice": "af_bella"
+},
+"p1/067.mp3": {
+"src": "kokoro",
+"text": "A light fixture is suspended from the ceiling.",
+"voice": "af_bella"
+},
+"p1/068.mp3": {
+"src": "kokoro",
+"text": "Some shelves are filled with books.",
+"voice": "af_heart"
+},
+"p1/069.mp3": {
+"src": "kokoro",
+"text": "A woman is watering some plants.",
+"voice": "am_michael"
+},
+"p1/070.mp3": {
+"src": "kokoro",
+"text": "A man is mopping the floor.",
+"voice": "am_michael"
+},
+"p1/071.mp3": {
+"src": "kokoro",
+"text": "A woman is folding some laundry.",
+"voice": "af_bella"
+},
+"p1/072.mp3": {
+"src": "kokoro",
+"text": "The blinds have been lowered.",
+"voice": "af_heart"
+},
+"p1/073.mp3": {
+"src": "kokoro",
+"text": "A bed is being made.",
+"voice": "af_heart"
+},
+"p1/074.mp3": {
+"src": "kokoro",
+"text": "Some dishes are drying on a rack.",
+"voice": "af_bella"
+},
+"p1/075.mp3": {
+"src": "kokoro",
+"text": "A coat has been draped over a chair.",
+"voice": "af_heart"
+},
+"p1/076.mp3": {
+"src": "kokoro",
+"text": "Some boats are docked in a harbor.",
+"voice": "af_heart"
+},
+"p1/077.mp3": {
+"src": "kokoro",
+"text": "A sailboat is moored near the shore.",
+"voice": "bf_emma"
+},
+"p1/078.mp3": {
+"src": "kokoro",
+"text": "Two people are rowing a boat.",
+"voice": "am_michael"
+},
+"p1/079.mp3": {
+"src": "kokoro",
+"text": "Some houses overlook the water.",
+"voice": "af_heart"
+},
+"p1/080.mp3": {
+"src": "kokoro",
+"text": "A tree is casting a shadow on the grass.",
+"voice": "bf_emma"
+},
+"p1/081.mp3": {
+"src": "kokoro",
+"text": "A couple is strolling along a path.",
+"voice": "af_heart"
+},
+"p1/082.mp3": {
+"src": "kokoro",
+"text": "A man is leaning over a railing.",
+"voice": "bf_emma"
+},
+"p1/083.mp3": {
+"src": "kokoro",
+"text": "Water is flowing from a fountain.",
+"voice": "af_heart"
+},
+"p1/084.mp3": {
+"src": "kokoro",
+"text": "Some people are having a picnic in a park.",
+"voice": "am_michael"
+},
+"p1/085.mp3": {
+"src": "kokoro",
+"text": "A path winds through the park.",
+"voice": "af_heart"
+},
+"p1/086.mp3": {
+"src": "kokoro",
+"text": "A man is fishing off a pier.",
+"voice": "bm_george"
+},
+"p1/087.mp3": {
+"src": "kokoro",
+"text": "Some trees are reflected in the water.",
+"voice": "bf_emma"
+},
+"p1/088.mp3": {
+"src": "kokoro",
+"text": "A man is raking leaves.",
+"voice": "af_heart"
+},
+"p1/089.mp3": {
+"src": "kokoro",
+"text": "A woman is mowing the lawn.",
+"voice": "af_heart"
+},
+"p1/090.mp3": {
+"src": "kokoro",
+"text": "A bridge spans a river.",
+"voice": "bm_george"
+},
+"p1/091.mp3": {
+"src": "kokoro",
+"text": "A woman is handing out some papers.",
+"voice": "af_bella"
+},
+"p1/092.mp3": {
+"src": "kokoro",
+"text": "A man is pointing at a chart.",
+"voice": "bm_george"
+},
+"p1/093.mp3": {
+"src": "kokoro",
+"text": "A man is giving a presentation.",
+"voice": "bm_george"
+},
+"p1/094.mp3": {
+"src": "kokoro",
+"text": "Technicians are setting up equipment on a stage.",
+"voice": "bm_george"
+},
+"p1/095.mp3": {
+"src": "kokoro",
+"text": "Some people are seated around a table.",
+"voice": "am_michael"
+},
+"p1/096.mp3": {
+"src": "kokoro",
+"text": "An audience is gathered in an auditorium.",
+"voice": "bf_emma"
+},
+"p1/097.mp3": {
+"src": "kokoro",
+"text": "A speaker is addressing an audience.",
+"voice": "af_heart"
+},
+"p1/098.mp3": {
+"src": "kokoro",
+"text": "Some people are shaking hands.",
+"voice": "bf_emma"
+},
+"p1/099.mp3": {
+"src": "kokoro",
+"text": "The participants are taking notes.",
+"voice": "am_michael"
+},
+"p1/100.mp3": {
+"src": "kokoro",
+"text": "Some refreshments have been laid out on a table.",
+"voice": "am_michael"
+},
+"p1/101.mp3": {
+"src": "kokoro",
+"text": "Some documents are being distributed.",
+"voice": "bf_emma"
+},
+"p1/102.mp3": {
+"src": "kokoro",
+"text": "A woman is speaking into a microphone.",
+"voice": "am_michael"
+},
+"p1/103.mp3": {
+"src": "kokoro",
+"text": "Some people are applauding a speaker.",
+"voice": "bf_emma"
+},
+"p1/104.mp3": {
+"src": "kokoro",
+"text": "A man is adjusting a microphone.",
+"voice": "af_heart"
+},
+"p1/105.mp3": {
+"src": "kokoro",
+"text": "Some people are posing for a photograph.",
+"voice": "af_heart"
+},
+"p1/106.mp3": {
+"src": "kokoro",
+"text": "A man is holding a cup of coffee.",
+"voice": "af_heart"
+},
+"p1/107.mp3": {
+"src": "kokoro",
+"text": "A woman is putting on a coat.",
+"voice": "bf_emma"
+},
+"p1/108.mp3": {
+"src": "kokoro",
+"text": "A man is kneeling on the floor.",
+"voice": "af_heart"
+},
+"p1/109.mp3": {
+"src": "kokoro",
+"text": "Two people are facing each other.",
+"voice": "af_heart"
+},
+"p1/110.mp3": {
+"src": "kokoro",
+"text": "A woman is sipping from a mug.",
+"voice": "am_michael"
+},
+"p1/111.mp3": {
+"src": "kokoro",
+"text": "A man is tying his shoe.",
+"voice": "af_heart"
+},
+"p1/112.mp3": {
+"src": "kokoro",
+"text": "A woman is walking up the stairs.",
+"voice": "af_bella"
+},
+"p1/113.mp3": {
+"src": "kokoro",
+"text": "Some people are chatting with each other.",
+"voice": "bm_george"
+},
+"p1/114.mp3": {
+"src": "kokoro",
+"text": "A woman is picking up a package.",
+"voice": "af_bella"
+},
+"p1/115.mp3": {
+"src": "kokoro",
+"text": "A man is putting away some tools.",
+"voice": "bm_george"
+},
+"p1/116.mp3": {
+"src": "kokoro",
+"text": "A man is taking off his glasses.",
+"voice": "af_bella"
+},
+"p1/117.mp3": {
+"src": "kokoro",
+"text": "A woman is staring out a window.",
+"voice": "af_heart"
+},
+"p1/118.mp3": {
+"src": "kokoro",
+"text": "Two men are walking side by side.",
+"voice": "bm_george"
+},
+"p1/119.mp3": {
+"src": "kokoro",
+"text": "A box is being lifted onto a shelf.",
+"voice": "af_heart"
+},
+"p1/120.mp3": {
+"src": "kokoro",
+"text": "A man is rolling up his sleeves.",
+"voice": "af_bella"
+},
 "s/01-01.mp3": {
 "src": "kokoro",
 "text": "More than 200 applicants responded to our advertisement for a marketing assistant.",
@@ -111,7 +711,7 @@
 },
 "s/01-23.mp3": {
 "src": "kokoro",
-"text": "Participants will receive a certificate upon completion of the training course.",
+"text": "Participants who finish all five sessions will receive a certificate signed by the director.",
 "voice": "af_heart"
 },
 "s/01-24.mp3": {
@@ -2196,7 +2796,7 @@
 },
 "s/11-40.mp3": {
 "src": "kokoro",
-"text": "Video conferencing is a cost-effective alternative to frequent business travel.",
+"text": "Switching to LED lighting proved to be a cost-effective way to cut energy bills.",
 "voice": "af_bella"
 },
 "s/12-01.mp3": {
@@ -3586,7 +4186,7 @@
 },
 "s/18-38.mp3": {
 "src": "kokoro",
-"text": "Tickets for the concert can be purchased online or at the box office.",
+"text": "Customers can now track the status of their orders online at any time.",
 "voice": "bf_emma"
 },
 "s/18-39.mp3": {
@@ -4861,7 +5461,7 @@
 },
 "s/25-13.mp3": {
 "src": "kokoro",
-"text": "Payment is due within 30 days of the invoice date.",
+"text": "Full payment is required before the order can be shipped.",
 "voice": "af_heart"
 },
 "s/25-14.mp3": {
@@ -5061,7 +5661,7 @@
 },
 "s/26-13.mp3": {
 "src": "kokoro",
-"text": "The awards ceremony will be broadcast live on Channel 7 at 8 P.M.",
+"text": "The final match will be broadcast live on Channel 7 at 8 P.M.",
 "voice": "am_michael"
 },
 "s/26-14.mp3": {
@@ -5356,7 +5956,7 @@
 },
 "s/27-32.mp3": {
 "src": "kokoro",
-"text": "Recent surveys indicate that most customers prefer to shop online.",
+"text": "Early sales figures indicate that the new model is more popular than expected.",
 "voice": "bf_emma"
 },
 "s/27-33.mp3": {
@@ -5631,7 +6231,7 @@
 },
 "s/29-07.mp3": {
 "src": "kokoro",
-"text": "After months of negotiations, the two companies eventually agreed to merge.",
+"text": "Sales were slow at first, but the product eventually became the company's best seller.",
 "voice": "af_heart"
 },
 "s/29-08.mp3": {
@@ -5737,6 +6337,266 @@
 "s/29-28.mp3": {
 "src": "kokoro",
 "text": "Spare parts for this model are readily available at most hardware stores.",
+"voice": "af_heart"
+},
+"s/29-29.mp3": {
+"src": "kokoro",
+"text": "Our technicians regularly inspect the elevators to ensure passenger safety.",
+"voice": "af_heart"
+},
+"s/29-30.mp3": {
+"src": "kokoro",
+"text": "The hotel is relatively small but offers excellent service and amenities.",
+"voice": "bm_george"
+},
+"s/29-31.mp3": {
+"src": "kokoro",
+"text": "Ms. Lim and Mr. Ford were promoted to director and manager, respectively.",
+"voice": "af_bella"
+},
+"s/29-32.mp3": {
+"src": "kokoro",
+"text": "The plane will begin boarding shortly, so please remain near the gate.",
+"voice": "am_michael"
+},
+"s/29-33.mp3": {
+"src": "kokoro",
+"text": "The new smartphone will be released simultaneously in Asia and Europe.",
+"voice": "af_heart"
+},
+"s/29-34.mp3": {
+"src": "kokoro",
+"text": "The product was tested in Canada and subsequently launched across North America.",
+"voice": "bm_george"
+},
+"s/29-35.mp3": {
+"src": "kokoro",
+"text": "The north entrance will be temporarily closed while the elevators are being repaired.",
+"voice": "af_heart"
+},
+"s/29-36.mp3": {
+"src": "kokoro",
+"text": "The bridge is closed for repairs; therefore, drivers should take an alternative route.",
+"voice": "af_bella"
+},
+"s/29-37.mp3": {
+"src": "kokoro",
+"text": "The decision to expand overseas will ultimately be made by the board of directors.",
+"voice": "bf_emma"
+},
+"s/29-38.mp3": {
+"src": "kokoro",
+"text": "The keynote speaker unexpectedly canceled his appearance due to illness.",
+"voice": "bm_george"
+},
+"s/29-39.mp3": {
+"src": "kokoro",
+"text": "The sales team exceeded its targets this year. Likewise, the marketing team achieved record results.",
+"voice": "af_heart"
+},
+"s/29-40.mp3": {
+"src": "kokoro",
+"text": "The client could not attend in person, so we held the meeting online instead.",
+"voice": "af_heart"
+},
+"s/30-01.mp3": {
+"src": "kokoro",
+"text": "All hazardous waste must be disposed of in accordance with local regulations.",
+"voice": "bf_emma"
+},
+"s/30-02.mp3": {
+"src": "kokoro",
+"text": "According to the weather forecast, the rain should stop by Thursday afternoon.",
+"voice": "bf_emma"
+},
+"s/30-03.mp3": {
+"src": "kokoro",
+"text": "As of July 1, all employees must use the new expense reporting system.",
+"voice": "af_heart"
+},
+"s/30-04.mp3": {
+"src": "kokoro",
+"text": "Please arrive at least 15 minutes prior to your scheduled appointment.",
+"voice": "bf_emma"
+},
+"s/30-05.mp3": {
+"src": "kokoro",
+"text": "The outdoor awards ceremony has been postponed due to heavy rain.",
+"voice": "bf_emma"
+},
+"s/30-06.mp3": {
+"src": "kokoro",
+"text": "All applicants will be treated equally regardless of age or nationality.",
+"voice": "bm_george"
+},
+"s/30-07.mp3": {
+"src": "kokoro",
+"text": "In addition to a competitive salary, we offer generous vacation benefits.",
+"voice": "af_bella"
+},
+"s/30-08.mp3": {
+"src": "kokoro",
+"text": "Please submit your résumé along with two letters of recommendation.",
+"voice": "bm_george"
+},
+"s/30-09.mp3": {
+"src": "kokoro",
+"text": "In light of recent customer feedback, we have redesigned our mobile app.",
+"voice": "bm_george"
+},
+"s/30-10.mp3": {
+"src": "kokoro",
+"text": "In terms of price, our new model is more competitive than any rival product.",
+"voice": "am_michael"
+},
+"s/30-11.mp3": {
+"src": "kokoro",
+"text": "Please contact Mr. Diaz with regard to any questions about your contract.",
+"voice": "am_michael"
+},
+"s/30-12.mp3": {
+"src": "kokoro",
+"text": "In response to customer requests, the store now opens at 8 A.M. on weekdays.",
+"voice": "bf_emma"
+},
+"s/30-13.mp3": {
+"src": "kokoro",
+"text": "Ms. Ward will chair the budget meeting in place of the director, who is traveling.",
+"voice": "af_heart"
+},
+"s/30-14.mp3": {
+"src": "kokoro",
+"text": "Thank you for agreeing to give the presentation on short notice.",
+"voice": "af_heart"
+},
+"s/30-15.mp3": {
+"src": "kokoro",
+"text": "Delivery is provided free of charge for all orders over $50.",
+"voice": "bm_george"
+},
+"s/30-16.mp3": {
+"src": "kokoro",
+"text": "Please return the signed contract to our office at your earliest convenience.",
+"voice": "am_michael"
+},
+"s/30-17.mp3": {
+"src": "kokoro",
+"text": "All quarterly reports must be submitted by Friday at the latest.",
+"voice": "af_bella"
+},
+"s/30-18.mp3": {
+"src": "kokoro",
+"text": "All prices listed in the catalog are subject to change without notice.",
+"voice": "am_michael"
+},
+"s/30-19.mp3": {
+"src": "kokoro",
+"text": "Members who renew before May 1 are entitled to a 10 percent discount on all classes.",
+"voice": "af_heart"
+},
+"s/30-20.mp3": {
+"src": "kokoro",
+"text": "Our company is committed to reducing its carbon emissions by 2030.",
+"voice": "bf_emma"
+},
+"s/30-21.mp3": {
+"src": "kokoro",
+"text": "Ms. Ito is accustomed to working long hours during the busy season.",
+"voice": "bf_emma"
+},
+"s/30-22.mp3": {
+"src": "kokoro",
+"text": "All sales representatives must be familiar with the features of our products.",
+"voice": "bm_george"
+},
+"s/30-23.mp3": {
+"src": "kokoro",
+"text": "More than 200 employees took part in the charity run last weekend.",
+"voice": "af_heart"
+},
+"s/30-24.mp3": {
+"src": "kokoro",
+"text": "Customers can take advantage of our free shipping offer until the end of May.",
+"voice": "af_heart"
+},
+"s/30-25.mp3": {
+"src": "kokoro",
+"text": "This software helps managers keep track of employee working hours.",
+"voice": "bf_emma"
+},
+"s/30-26.mp3": {
+"src": "kokoro",
+"text": "We had to put off the product launch until the beginning of next year.",
+"voice": "af_bella"
+},
+"s/30-27.mp3": {
+"src": "kokoro",
+"text": "The office printer has run out of paper, so please refill the tray.",
+"voice": "am_michael"
+},
+"s/30-28.mp3": {
+"src": "kokoro",
+"text": "Technicians will set up the projector before the presentation begins.",
+"voice": "af_heart"
+},
+"s/30-29.mp3": {
+"src": "kokoro",
+"text": "The research team will carry out a customer satisfaction survey next month.",
+"voice": "af_heart"
+},
+"s/30-30.mp3": {
+"src": "kokoro",
+"text": "Please fill out the registration form and return it to the front desk.",
+"voice": "bf_emma"
+},
+"s/30-31.mp3": {
+"src": "kokoro",
+"text": "Our customer service team will look into the billing error immediately.",
+"voice": "am_michael"
+},
+"s/30-32.mp3": {
+"src": "kokoro",
+"text": "The design team came up with several creative ideas for the new logo.",
+"voice": "bf_emma"
+},
+"s/30-33.mp3": {
+"src": "kokoro",
+"text": "Please get in touch with our sales team for a detailed price quote.",
+"voice": "af_heart"
+},
+"s/30-34.mp3": {
+"src": "kokoro",
+"text": "The east parking lot will be closed until further notice.",
+"voice": "bm_george"
+},
+"s/30-35.mp3": {
+"src": "kokoro",
+"text": "Our staff are trained to respond to every inquiry in a timely manner.",
+"voice": "af_heart"
+},
+"s/30-36.mp3": {
+"src": "kokoro",
+"text": "The fire alarms are inspected on a regular basis to ensure safety.",
+"voice": "bm_george"
+},
+"s/30-37.mp3": {
+"src": "kokoro",
+"text": "A company car will be at your disposal during your stay in Tokyo.",
+"voice": "bf_emma"
+},
+"s/30-38.mp3": {
+"src": "kokoro",
+"text": "Contrary to expectations, sales rose sharply during the winter months.",
+"voice": "bf_emma"
+},
+"s/30-39.mp3": {
+"src": "kokoro",
+"text": "The renovation of the lobby will be completed by the end of the month.",
+"voice": "af_bella"
+},
+"s/30-40.mp3": {
+"src": "kokoro",
+"text": "Please accept this gift card as a token of our appreciation.",
 "voice": "af_heart"
 },
 "w/01-01.mp3": {
