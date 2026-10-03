@@ -546,3 +546,6 @@ mark { background: none; color: var(--brand); font-weight: 800; }
 }
 .switch input:focus-visible + span { outline: 2px solid var(--brand); outline-offset: 2px; }
 .witem:focus-visible { outline: 2px solid var(--brand); outline-offset: -2px; border-radius: 0; }
+.task > .ico { color: var(--text-3); }
+.grade2 .btn { height: 60px; flex-direction: column; gap: 0; font-size: 15px; }
+.grade2 .btn small { font-size: 11px; font-weight: 600; opacity: 0.75; }

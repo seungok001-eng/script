@@ -106,6 +106,19 @@
     s.due = today + (s.b === 0 ? 0 : 1);
     return s;
   }
+  // '아는 단어 빼기': 이미 아는 단어는 7일 뒤 한 번 확인하도록 상자 3에 둔다
+  function markKnown(st, today) {
+    const s = Object.assign(newState(), st || {});
+    if (s.n && s.b >= 3) return s;
+    s.b = 3;
+    s.n = Math.max(1, s.n);
+    s.ok += 1;
+    s.last = today;
+    s.due = today + INTERVALS[3];
+    if (!s.first) { s.first = today; s.known = true; }
+    delete s.wrong;
+    return s;
+  }
   function status(st) {
     if (!st || !st.n) return "new";
     if (st.b >= MASTER_BOX) return "mastered";
@@ -126,7 +139,7 @@
       const st = states[w.id];
       if (!st || !st.n) fresh.push(w);
       else {
-        if (st.first === today) introducedToday += 1;
+        if (st.first === today && !st.known) introducedToday += 1;
         if (st.due <= today && st.first !== today) due.push(w);
       }
     }
@@ -342,7 +355,7 @@
   return {
     DAY_MS, dayNum, dayToDate, ymd, parseYmd,
     TIER_NAMES, SCORE_OPTIONS, tiersFor, scoreBand, poolFor, recommendDaily,
-    INTERVALS, MASTER_BOX, newState, grade, applyQuiz, status, isDue,
+    INTERVALS, MASTER_BOX, newState, grade, applyQuiz, markKnown, status, isDue,
     todayPlan, streak,
     rng, shuffle, meaningText, distractors, starred, cloze, plainEx, makeQuestion, makeTest,
     normEn, checkSpelling, editDistance, spellHint,

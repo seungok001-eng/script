@@ -688,6 +688,7 @@
     const sum = C.summarize(mine, S.words);
     const test = S.tests[d];
     const modes = [
+      ["sort", "아는 단어 빼기", "check", "c-green"],
       ["card", "카드 암기", "layers", "c-blue"],
       ["meaning", "뜻 고르기", "list", "c-green"],
       ["word", "단어 고르기", "shuffle", "c-orange"],
@@ -696,7 +697,6 @@
       ["cloze", "예문 빈칸", "bulb", "c-blue"],
       ["part5", "Part 5 실전", "trophy", "c-purple"],
       ["listen", "듣기 모드", "headphones", "c-green"],
-      ["test", "Day 테스트", "flag", "c-red"],
     ];
     const items = list.map((w) => wordItem(w)).join("") || `<div class="empty">${ico("search")}<b>해당하는 단어가 없어요</b>필터를 바꿔 보세요</div>`;
     const hiddenCount = all.length - mine.length;
@@ -706,6 +706,7 @@
         <div class="stack-bar" style="margin-top:12px"><i style="width:${mine.length ? (sum.mastered / mine.length) * 100 : 0}%;background:var(--ok)"></i><i style="width:${mine.length ? (sum.learning / mine.length) * 100 : 0}%;background:var(--accent)"></i></div></div>
       <div class="section"><div class="section-h"><h2>학습 방법</h2></div>
         <div class="grid3">${modes.map(([k, l, ic, c]) => `<button class="tile" data-mode="${k}" style="align-items:center;text-align:center;padding:14px 8px"><span class="tico ${c}">${ico(ic)}</span><b style="font-size:13.5px">${l}</b></button>`).join("")}</div>
+        <button class="task" data-mode="test" style="margin-top:10px"><span class="tico c-red">${ico("flag")}</span><span class="spacer"><div class="tt">DAY ${pad(d)} 테스트</div><div class="td">20문제 · 80점 이상이면 통과${test ? ` · 최고 ${test.best}점` : ""}</div></span>${ico("right")}</button>
       </div>
       <div class="section"><div class="section-h"><h2>단어 ${list.length}개</h2><button data-toggle-hide>${S.settings.hideMeaning ? "뜻 보이기" : "뜻 가리기"}</button></div>
         <div class="chips scroll" style="margin-bottom:12px">${[["all", "전체"], ["new", "안 본 단어"], ["learning", "학습 중"], ["mastered", "암기 완료"], ["star", "★ 중요"]].map(([k, l]) => `<button class="chip ${f === k ? "on" : ""}" data-filter="${k}">${l}</button>`).join("")}
@@ -722,6 +723,7 @@
       const m = b.dataset.mode;
       const title = `DAY ${pad(d)} · ${b.textContent.trim()}`;
       if (m === "card") return startCard(ws, { title });
+      if (m === "sort") return startSort(ws.filter((w) => C.status(st(w.id)) !== "mastered"), { title });
       if (m === "listen") return startListen(ws, { title });
       if (m === "test") return startQuiz(base, "test", { title: `DAY ${pad(d)} 테스트`, day: d });
       if (m === "listen-q") return startQuiz(ws, "listen", { title });
@@ -828,6 +830,7 @@
     if (!session) return location.replace("#/home");
     if (session.done) return vResult();
     if (session.kind === "card") return vCard();
+    if (session.kind === "sort") return vSort();
     if (session.kind === "quiz") return vQuiz();
     if (session.kind === "listen") return vListen();
     if (session.kind === "conf") return vQuiz();
@@ -950,6 +953,58 @@
       } else return finishSession();
     }
     vCard();
+  }
+
+  // ═════════════ 아는 단어 빼기 ═════════════
+  function startSort(words, opt) {
+    if (!words.length) return toast("뺄 단어가 없어요 (이미 모두 암기 완료)");
+    session = { kind: "sort", title: opt.title, queue: words.slice(), i: 0, known: [], unknown: [] };
+    enterStudy();
+  }
+  function vSort() {
+    const s = session;
+    const w = s.queue[s.i];
+    $app.innerHTML = `<div class="study">${studyTop(s.i, s.queue.length)}
+      <div class="small muted" style="text-align:center">${esc(s.title)} · 확실히 아는 단어만 빼 두세요</div>
+      <div class="flash-wrap"><div class="flash" id="flash" style="min-height:320px">
+        <span class="swipe-label l">몰라요</span><span class="swipe-label r">알아요</span>
+        <div class="f-head"><span class="badge tier-${w.tier}">${C.TIER_NAMES[w.tier]}</span><span class="badge pos">${POS_KO[w.pos] || ""}</span></div>
+        <div class="f-center"><div class="f-word en">${esc(w.w)}</div>${w.ipa ? `<div class="f-ipa">${esc(w.ipa)}</div>` : ""}
+          <button class="play lg" data-act="play-word" data-id="${w.id}" style="margin-top:14px" aria-label="발음 듣기">${ico("vol")}</button>
+          ${s.peek ? `<div class="f-mean" style="margin-top:16px">${esc(C.meaningText(w, 3))}</div>` : `<button class="btn ghost sm" data-peek style="margin-top:16px">${ico("eye")}뜻 확인</button>`}</div>
+      </div></div>
+      <div class="study-foot"><div class="grid2 grade2"><button class="btn g-no" data-k="0">몰라요<small>학습할게요</small></button><button class="btn g-yes" data-k="1">알아요<small>빼 둘게요</small></button></div>
+      <div class="kbd-hint"><kbd>←</kbd> 몰라요 · <kbd>→</kbd> 알아요 · <kbd>Space</kbd> 뜻 확인 · <kbd>P</kbd> 발음</div></div></div>`;
+    bindExit();
+    const decide = (known) => {
+      if (s.animating) return;
+      if (known) {
+        const before = st(w.id);
+        const ns = C.markKnown(before, today());
+        if (before && before.star) ns.star = true;
+        setSt(w.id, ns);
+        s.known.push(w);
+        save();
+      } else s.unknown.push(w);
+      s.i += 1;
+      s.peek = false;
+      if (s.i >= s.queue.length) return finishSession();
+      vSort();
+    };
+    $app.querySelectorAll("[data-k]").forEach((b) => b.addEventListener("click", () => decide(b.dataset.k === "1")));
+    const pk = $app.querySelector("[data-peek]");
+    if (pk) pk.addEventListener("click", () => { s.peek = true; vSort(); });
+    const flash = document.getElementById("flash");
+    bindSwipe(flash, () => { s.animating = true; }, (dir) => { s.animating = false; if (session === s && route().name === "study") decide(dir > 0); });
+    if (S.settings.autoWord && !s.peek) Sound.word(w);
+    keyHandler = (e) => {
+      if (onControl(e) || s.animating) return;
+      if (e.key === "ArrowLeft" || e.key === "1") decide(false);
+      else if (e.key === "ArrowRight" || e.key === "2") decide(true);
+      else if (e.key === " ") { e.preventDefault(); s.peek = true; vSort(); }
+      else if (e.key === "p" || e.key === "P") Sound.word(w);
+      else if (e.key === "Escape") askExit();
+    };
   }
 
   // ═════════════ 퀴즈 ═════════════
@@ -1197,7 +1252,7 @@
   function finishSession() {
     const s = session;
     s.done = true;
-    const count = s.kind === "card" ? s.seenIds.size : s.results.length;
+    const count = s.kind === "card" ? s.seenIds.size : s.kind === "sort" ? 0 : s.results.length;
     if (count >= 5) markDone();
     if (s.type === "test" && s.day) {
       const score = Math.round((s.results.filter((r) => r.ok).length / s.results.length) * 100);
@@ -1220,7 +1275,12 @@
     let hero = "";
     let list = "";
     let actions = "";
-    if (s.kind === "card") {
+    if (s.kind === "sort") {
+      hero = `<div class="result-hero"><div style="display:flex;justify-content:center">${ico("check")}</div><div class="score">${s.known.length}<small>개</small></div><div class="msg">아는 단어로 뺐어요</div><p class="muted">7일 뒤 복습에서 한 번만 확인할게요 · 학습할 단어 ${s.unknown.length}개</p></div>`;
+      s._words = s.unknown;
+      list = s.unknown.map((w) => wordItem(w)).join("");
+      actions = `${s.unknown.length ? `<button class="btn block" data-card>${ico("layers")}모르는 단어 ${s.unknown.length}개 카드로 외우기</button>` : ""}<button class="btn ${s.unknown.length ? "ghost" : ""} block" style="margin-top:10px" data-home>처음 화면으로</button>`;
+    } else if (s.kind === "card") {
       const total = s.res[0] + s.res[1] + s.res[2];
       const words = Array.from(s.seenIds).map((id) => BY_ID.get(id));
       hero = `<div class="result-hero"><div style="display:flex;justify-content:center">${ico("check", "")}</div><div class="score">${total}<small>개</small></div><div class="msg">카드 학습 완료!</div><p class="muted">한 번에 안 단어 ${s.res[2]} · 헷갈림 ${s.res[1]} · 모름 ${s.res[0]}</p></div>`;
@@ -1245,7 +1305,7 @@
     }
     $app.innerHTML = `<div class="study"><div class="study-top"><button class="icon-btn back" data-home aria-label="닫기">${ico("x")}</button><span class="spacer"></span></div>
       ${hero}${actions}
-      ${list ? `<div class="section"><div class="section-h"><h2>${s.kind === "card" ? "학습한 단어" : "틀린 문제"}</h2></div><div class="wlist">${list}</div></div>` : ""}</div>`;
+      ${list ? `<div class="section"><div class="section-h"><h2>${s.kind === "card" ? "학습한 단어" : s.kind === "sort" ? "학습할 단어" : "틀린 문제"}</h2></div><div class="wlist">${list}</div></div>` : ""}</div>`;
     $app.querySelectorAll("[data-home]").forEach((b) => b.addEventListener("click", exitStudy));
     const q = $app.querySelector("[data-quiz]");
     if (q) q.addEventListener("click", () => startQuiz(s._words, "mix", { title: "확인 퀴즈" }));
