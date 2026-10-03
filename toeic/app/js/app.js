@@ -404,7 +404,7 @@
     else { studyPushed = true; location.hash = "#/study"; }
   }
   let keyHandler = null;
-  let ui = { dayFilter: "all", dayAll: false, p1g: "all", reviewTab: "due", searchQ: "" };
+  let ui = { dayFilter: "all", dayAll: false, p1g: "all", reviewTab: "due", searchQ: "", course: null };
   function go(hash) {
     if (location.hash === hash) render();
     else location.hash = hash;
@@ -698,8 +698,13 @@
         <span class="dm"><span>${s.seen}/${ws.length}개</span><span>${test ? `테스트 ${test.best}점` : ""}</span></span></a>`;
     };
     const section = (title, desc, list) => `<div class="section"><div class="section-h"><h2>${title}</h2><span class="small muted">${desc}</span></div><div class="grid2 grid-days">${list.map(card).join("")}</div></div>`;
-    const cards = NDAYS > BASIC_DAYS
-      ? COURSES.filter((c) => c.from <= NDAYS).map((c) => section(c.name, `DAY ${pad(c.from)}~${pad(Math.min(c.to, NDAYS))} · ${c.desc}`, DAYS.filter((d) => d.day >= c.from && d.day <= c.to))).join("")
+    // 코스 탭: 기본 / 심화 / 실전 (처음엔 지금 학습 중인 Day 가 있는 코스)
+    const courses = COURSES.filter((c) => DAYS.some((d) => d.day >= c.from && d.day <= c.to));
+    if (ui.course == null || !courses[ui.course]) ui.course = Math.max(0, courses.findIndex((c) => curDay >= c.from && curDay <= c.to));
+    const cur = courses[ui.course];
+    const tabs = courses.length > 1 ? `<div class="seg" style="margin:6px 0 2px">${courses.map((c, i) => `<button class="${i === ui.course ? "on" : ""}" data-course="${i}">${c.name.replace(" 코스", "")}</button>`).join("")}</div>` : "";
+    const cards = courses.length > 1
+      ? tabs + section(cur.name, `DAY ${pad(cur.from)}~${pad(Math.min(cur.to, NDAYS))} · ${cur.desc}`, DAYS.filter((d) => d.day >= cur.from && d.day <= cur.to))
       : `<div class="grid2 grid-days">${DAYS.map(card).join("")}</div>`;
     const body = `${topBar("단어장", { sub: `목표 ${target()}점 · ${C.scoreBand(target()).label} · ${P.length.toLocaleString()}개`, right: `<a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a>` })}
       <div class="chips scroll" style="margin-bottom:14px">
@@ -711,6 +716,7 @@
       <p class="small muted" style="margin:0 2px">오늘의 학습은 목표 범위 안에서 쉬운 단어(기본 → 핵심 → 고득점)부터 자동으로 골라 드려요. Day를 골라 직접 학습해도 진도에 반영돼요.</p>
       ${cards}`;
     shell("days", body, true);
+    $app.querySelectorAll("[data-course]").forEach((b) => b.addEventListener("click", () => { ui.course = +b.dataset.course; vDays(); }));
   }
 
   // ═════════════ Day 상세 ═════════════
