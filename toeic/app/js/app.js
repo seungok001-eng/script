@@ -19,7 +19,7 @@
   const DEFAULT_STATE = () => ({
     v: 1,
     profile: null, // { target, examDate, daily, start }
-    settings: { theme: "system", autoWord: true, autoEx: false, rate: 1, showKo: true, readKo: true, hideMeaning: false, sfx: true },
+    settings: { theme: "system", autoWord: true, autoEx: false, rate: 1, showKo: true, readKo: true, hideMeaning: false, sfx: true, remind: false, remindAt: "21:00" },
     words: {},
     log: {},
     tests: {},
@@ -179,6 +179,7 @@
     const el = new Audio();
     el.preload = "auto";
     let token = 0;
+    let pendingFin = null;
     let koVoice = null;
     let enVoice = null;
     function pickVoices() {
@@ -193,6 +194,7 @@
     }
     function stop() {
       token += 1;
+      if (pendingFin) { const f = pendingFin; pendingFin = null; f(false); }
       try { el.pause(); } catch (e) { /* 무시 */ }
       if ("speechSynthesis" in window) speechSynthesis.cancel();
       document.querySelectorAll(".play.playing").forEach((b) => b.classList.remove("playing"));
@@ -226,16 +228,19 @@
         const fin = (ok) => {
           if (settled) return;
           settled = true;
+          if (pendingFin === fin) pendingFin = null;
           el.onended = el.onerror = null;
-          if (!ok && my === token) tts(text, "en-US", my).then((v) => res(end(v)));
-          else res(end(ok));
+          // 파일이 없거나 못 읽을 때만 기기 음성으로 대신 읽는다 (자동재생 차단은 조용히 넘어간다)
+          if (ok === false && my === token) tts(text, "en-US", my).then((v) => res(end(v)));
+          else res(end(ok === true));
         };
+        pendingFin = fin;
         el.onended = () => fin(true);
         el.onerror = () => fin(false);
         el.src = src;
         el.playbackRate = S.settings.rate;
         const p = el.play();
-        if (p && p.catch) p.catch(() => fin(false));
+        if (p && p.catch) p.catch((err) => fin(err && err.name === "NotAllowedError" ? "blocked" : false));
       });
     }
     function word(w, btn) { return play(w.au ? `audio/w/${w.id}.mp3` : null, w.w, { btn }); }
@@ -271,8 +276,29 @@
     return { ok: () => beep([880, 1320], 0.12), bad: () => beep([220, 180], 0.16) };
   })();
 
+  // ═════════════ 학습 알림 (네이티브 앱: @capacitor/local-notifications) ═════════════
+  const Notify = (function () {
+    const plugin = () => window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.LocalNotifications;
+    const MSGS = ["오늘의 토익 단어가 기다리고 있어요 📚", "5분만 투자해도 목표 점수에 가까워져요", "복습할 단어가 쌓이기 전에 한 번 볼까요?", "연속 학습 기록을 이어가세요 🔥"];
+    async function apply() {
+      const LN = plugin();
+      if (!LN) return false;
+      try {
+        await LN.cancel({ notifications: [{ id: 1001 }] }).catch(() => {});
+        if (!S.settings.remind) return true;
+        const perm = await LN.requestPermissions();
+        if (perm.display !== "granted") return false;
+        const [h, m] = (S.settings.remindAt || "21:00").split(":").map(Number);
+        await LN.schedule({ notifications: [{ id: 1001, title: BRAND.name, body: MSGS[Math.floor(Math.random() * MSGS.length)], schedule: { on: { hour: h, minute: m }, repeats: true, allowWhileIdle: true } }] });
+        return true;
+      } catch (e) { return false; }
+    }
+    return { available: () => !!plugin(), apply };
+  })();
+
   // ═════════════ 라우터 ═════════════
   let session = null; // 진행 중인 학습
+  let seqId = 0; // 목록 연속 재생 취소용
   let keyHandler = null;
   let ui = { dayFilter: "all", dayAll: false, p1g: "all", reviewTab: "due", searchQ: "" };
   function go(hash) {
@@ -287,7 +313,7 @@
     (qs || "").split("&").filter(Boolean).forEach((kv) => { const [k, v] = kv.split("="); q[k] = decodeURIComponent(v || ""); });
     return { name: parts[0] || "home", arg: parts[1], q };
   }
-  window.addEventListener("hashchange", () => { Sound.stop(); render(); });
+  window.addEventListener("hashchange", () => { seqId += 1; Sound.stop(); render(); });
 
   function render() {
     closeModal();
@@ -612,7 +638,7 @@
       </div>
       <div class="section"><div class="section-h"><h2>단어 ${list.length}개</h2><button data-toggle-hide>${S.settings.hideMeaning ? "뜻 보이기" : "뜻 가리기"}</button></div>
         <div class="chips scroll" style="margin-bottom:12px">${[["all", "전체"], ["new", "안 본 단어"], ["learning", "학습 중"], ["mastered", "암기 완료"], ["star", "★ 중요"]].map(([k, l]) => `<button class="chip ${f === k ? "on" : ""}" data-filter="${k}">${l}</button>`).join("")}
-          ${hiddenCount > 0 || ui.dayAll ? `<button class="chip ${ui.dayAll ? "on" : ""}" data-all>${ui.dayAll ? "목표 범위만" : `범위 밖 +${hiddenCount}`}</button>` : ""}</div>
+          ${hiddenCount > 0 || ui.dayAll ? `<button class="chip ${ui.dayAll ? "on" : ""}" data-all>${ui.dayAll ? "내 목표 범위만" : `목표 밖 단어 +${hiddenCount}`}</button>` : ""}</div>
         <div class="wlist">${items}</div></div>`;
     shell("days", body);
     $app.querySelectorAll("[data-filter]").forEach((b) => b.addEventListener("click", () => { ui.dayFilter = b.dataset.filter; vDay(r); }));
@@ -1189,19 +1215,17 @@
     shell("part1", body);
     $app.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => { ui.p1g = b.dataset.g; vPart1(); }));
     const byId = new Map(D.part1.map((p) => [p.id, p]));
-    $app.querySelectorAll("[data-p1]").forEach((b) => b.addEventListener("click", () => { const p = byId.get(b.dataset.p1); Sound.play(p.au ? `audio/${p.au}` : null, C.plainEx(p.e), { btn: b }); }));
+    $app.querySelectorAll("[data-p1]").forEach((b) => b.addEventListener("click", () => { seqId += 1; const p = byId.get(b.dataset.p1); Sound.play(p.au ? `audio/${p.au}` : null, C.plainEx(p.e), { btn: b }); }));
     $app.querySelector("[data-p1play]").addEventListener("click", async () => {
       const btns = Array.from($app.querySelectorAll("[data-p1]"));
-      Sound.stop();
-      const tk = Sound.current();
+      const my = ++seqId;
       for (const b of btns) {
-        if (!document.body.contains(b)) break;
+        if (my !== seqId || !document.body.contains(b)) break;
         b.scrollIntoView({ block: "center", behavior: "smooth" });
         const p = byId.get(b.dataset.p1);
         await Sound.play(p.au ? `audio/${p.au}` : null, C.plainEx(p.e), { btn: b });
-        if (Sound.current() !== tk + 1) break;
+        if (my !== seqId) break;
         await wait(900);
-        if (Sound.current() !== tk + 1) break;
       }
     });
   }
@@ -1303,6 +1327,8 @@
       <div class="set-title">학습 계획</div>
       <div class="set-group">
         <a class="set-row" href="#/onboarding"><span class="sl"><b>목표 점수 · 시험일 · 하루 학습량</b><span>${p.target}점 · ${p.examDate ? `시험 ${fmtDate(C.parseYmd(p.examDate))}` : "시험일 미정"} · 하루 ${p.daily}개</span></span>${ico("right")}</a>
+        ${Notify.available() ? `${sw("remind", "매일 학습 알림", "정한 시간에 오늘의 단어를 알려 드려요")}
+        <label class="set-row"><span class="sl"><b>알림 시간</b></span><input type="time" class="field" data-remind-at value="${esc(s.remindAt)}" style="width:130px;height:40px" ${s.remind ? "" : "disabled"} /></label>` : ""}
       </div>
       <div class="set-title">소리</div>
       <div class="set-group">
@@ -1327,11 +1353,24 @@
       <div class="set-group">
         <div class="set-row"><span class="sl"><b>버전</b></span><span class="sv">1.0.0 · 데이터 ${esc(D.version)}</span></div>
         <a class="set-row" href="#/licenses"><span class="sl"><b>오픈소스 라이선스</b></span>${ico("right")}</a>
+        <a class="set-row" href="privacy.html" target="_blank" rel="noopener"><span class="sl"><b>개인정보 처리방침</b><span>학습 기록은 기기에만 저장돼요</span></span>${ico("right")}</a>
       </div>
       <p class="small muted" style="text-align:center;margin-top:20px">${BRAND.name} · TOEIC is a registered trademark of ETS. 이 앱은 ETS와 관련이 없습니다.</p>
       <input type="file" id="importFile" accept="application/json,.json" hidden />`;
     shell("settings", body);
-    $app.querySelectorAll("[data-set]").forEach((c) => c.addEventListener("change", () => { s[c.dataset.set] = c.checked; save(); }));
+    $app.querySelectorAll("[data-set]").forEach((c) => c.addEventListener("change", async () => {
+      s[c.dataset.set] = c.checked;
+      if (c.dataset.set === "remind") {
+        const ok = await Notify.apply();
+        if (s.remind && !ok) { s.remind = false; toast("알림 권한을 허용해야 알림을 받을 수 있어요"); }
+        else toast(s.remind ? `매일 ${s.remindAt}에 알려 드릴게요` : "학습 알림을 껐어요");
+        save();
+        return vSettings();
+      }
+      save();
+    }));
+    const ra = $app.querySelector("[data-remind-at]");
+    if (ra) ra.addEventListener("change", async () => { if (!ra.value) return; s.remindAt = ra.value; save(); await Notify.apply(); toast(`매일 ${s.remindAt}에 알려 드릴게요`); });
     $app.querySelectorAll("[data-rate]").forEach((b) => b.addEventListener("click", () => { s.rate = +b.dataset.rate; save(); vSettings(); }));
     $app.querySelectorAll("[data-theme]").forEach((b) => b.addEventListener("click", () => { s.theme = b.dataset.theme; applyTheme(); save(); vSettings(); }));
     $app.querySelector("[data-export]").addEventListener("click", exportData);

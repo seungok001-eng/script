@@ -531,3 +531,14 @@ input[type="date"].field, .field {
 .heat-wrap { max-width: 420px; }
 .in-study .toast-wrap { bottom: auto; top: calc(64px + var(--safe-t)); }
 mark { background: none; color: var(--brand); font-weight: 800; }
+.hero > .eyebrow, .hero > .big { margin-right: 86px; }
+@media (max-width: 360px) {
+  .flash { padding: 22px 18px; min-height: 360px; }
+  .flash .f-word { font-size: 32px; }
+  .flash .f-center { min-height: 150px; }
+  .flash .f-mean { font-size: 19px; }
+  .hero .big { font-size: 22px; }
+  .wd-word { font-size: 32px; }
+  .quiz-q .qw { font-size: 28px; }
+  .grade3 .btn { height: 56px; font-size: 14px; }
+}
