@@ -1,0 +1,2097 @@
+[
+ {
+  "w": "privacy policy",
+  "pos": "phr",
+  "m": [
+   "개인정보 보호 정책",
+   "개인정보 처리 방침"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The updated *privacy policy* explains how customer data is stored and shared.",
+  "exKo": "개정된 개인정보 처리 방침은 고객 데이터가 어떻게 저장되고 공유되는지 설명한다.",
+  "col": [
+   {
+    "e": "update a privacy policy",
+    "k": "개인정보 처리 방침을 개정하다"
+   },
+   {
+    "e": "read the privacy policy",
+    "k": "개인정보 처리 방침을 읽다"
+   }
+  ],
+  "der": [
+   {
+    "w": "privacy",
+    "pos": "n",
+    "m": "사생활, 개인정보"
+   }
+  ],
+  "para": [
+   "data protection policy"
+  ],
+  "ant": "",
+  "tip": "Part 7 웹사이트 공지와 이메일에서 개인정보 처리 방침의 변경을 알리는 문맥으로 자주 나오며, 약관(terms of service)과 함께 언급된다.",
+  "q": {
+   "s": "Under our -------, we will never sell your personal information to third parties.",
+   "o": [
+    "price list",
+    "privacy policy",
+    "travel itinerary",
+    "return policy"
+   ],
+   "a": 1,
+   "k": "개인정보를 제3자에게 팔지 않는다는 약속의 근거는 '개인정보 처리 방침'이므로 privacy policy가 정답이다. return policy(반품 정책), price list(가격표), travel itinerary(여행 일정표)는 개인정보와 관련이 없다."
+  }
+ },
+ {
+  "w": "conflict of interest",
+  "pos": "phr",
+  "m": [
+   "이해 충돌",
+   "이해관계의 상충"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Board members must report any *conflict of interest* before voting on a contract.",
+  "exKo": "이사회 구성원은 계약 건에 투표하기 전에 이해 충돌이 있으면 모두 보고해야 한다.",
+  "col": [
+   {
+    "e": "avoid a conflict of interest",
+    "k": "이해 충돌을 피하다"
+   },
+   {
+    "e": "potential conflict of interest",
+    "k": "잠재적 이해 충돌"
+   }
+  ],
+  "der": [
+   {
+    "w": "conflict",
+    "pos": "n",
+    "m": "갈등, 충돌"
+   }
+  ],
+  "para": [
+   "competing interests"
+  ],
+  "ant": "",
+  "tip": "공적 책임과 개인적 이익이 충돌하는 상황을 뜻하며, Part 7 윤리 규정에서 avoid/disclose a conflict of interest로 쓰인다.",
+  "q": {
+   "s": "Ms. Ito declined to review the bid because her brother works for the company, which would create a -------.",
+   "o": [
+    "piece of advice",
+    "point of view",
+    "conflict of interest",
+    "sense of urgency"
+   ],
+   "a": 2,
+   "k": "가족이 일하는 회사의 입찰을 심사하면 공정성이 훼손되므로 '이해 충돌'을 뜻하는 conflict of interest가 정답이다. point of view(관점), piece of advice(조언 한마디), sense of urgency(긴박감)는 심사를 거절할 이유가 되지 않는다."
+  }
+ },
+ {
+  "w": "due diligence",
+  "pos": "phr",
+  "m": [
+   "실사",
+   "상당한 주의 (의무)"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The investors spent three months on *due diligence* before signing the merger agreement.",
+  "exKo": "투자자들은 합병 계약서에 서명하기 전 3개월 동안 실사를 진행했다.",
+  "col": [
+   {
+    "e": "conduct due diligence",
+    "k": "실사를 하다"
+   },
+   {
+    "e": "exercise due diligence",
+    "k": "상당한 주의를 기울이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "diligent",
+    "pos": "adj",
+    "m": "성실한, 부지런한"
+   },
+   {
+    "w": "diligently",
+    "pos": "adv",
+    "m": "부지런히"
+   }
+  ],
+  "para": [
+   "thorough investigation",
+   "careful review"
+  ],
+  "ant": "",
+  "tip": "인수·합병이나 투자 전에 대상 기업을 면밀히 조사하는 '실사'를 뜻하며 conduct/perform due diligence로 쓴다. 불가산명사로 관사 없이 쓴다.",
+  "q": {
+   "s": "Before acquiring the startup, Halvorsen Group conducted thorough ------- on its finances.",
+   "o": [
+    "due diligence",
+    "overdue",
+    "due date",
+    "deadline"
+   ],
+   "a": 0,
+   "k": "인수 전에 재무 상태를 꼼꼼히 조사하는 것은 '실사'이므로 due diligence가 정답이다. due date(만기일), deadline(마감일)은 conduct의 목적어로 맞지 않고 overdue(기한이 지난)는 형용사다."
+  }
+ },
+ {
+  "w": "penalize",
+  "pos": "v",
+  "m": [
+   "처벌하다",
+   "불이익을 주다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Companies that fail to file their taxes on time will be *penalized*.",
+  "exKo": "세금을 제때 신고하지 않는 회사는 처벌을 받는다.",
+  "col": [
+   {
+    "e": "be penalized for",
+    "k": "~에 대해 처벌받다"
+   },
+   {
+    "e": "penalize late payments",
+    "k": "연체에 불이익을 주다"
+   }
+  ],
+  "der": [
+   {
+    "w": "penalty",
+    "pos": "n",
+    "m": "처벌, 벌금"
+   }
+  ],
+  "para": [
+   "punish",
+   "fine"
+  ],
+  "ant": "",
+  "tip": "penalize A for B(B에 대해 A를 처벌하다) 구문으로 쓰이며 명사 penalty(Day 24)와 품사를 구분한다.",
+  "q": {
+   "s": "Passengers will be ------- for carrying bags that exceed the airline's weight limit.",
+   "o": [
+    "penalties",
+    "penal",
+    "penalized",
+    "penalty"
+   ],
+   "a": 2,
+   "k": "will be 뒤에서 승객이 '처벌을 받는다'는 수동태가 되어야 하므로 과거분사 penalized가 정답이다. penalty, penalties는 명사, penal(형벌의)은 형용사로 for와 어울려 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "illegal",
+  "pos": "adj",
+  "m": [
+   "불법의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "It is *illegal* to park in front of a fire hydrant.",
+  "exKo": "소화전 앞에 주차하는 것은 불법이다.",
+  "col": [
+   {
+    "e": "illegal parking",
+    "k": "불법 주차"
+   },
+   {
+    "e": "illegal copies",
+    "k": "불법 복제물"
+   }
+  ],
+  "der": [
+   {
+    "w": "illegally",
+    "pos": "adv",
+    "m": "불법으로"
+   },
+   {
+    "w": "legal",
+    "pos": "adj",
+    "m": "합법적인, 법률의"
+   }
+  ],
+  "para": [
+   "unlawful",
+   "prohibited"
+  ],
+  "ant": "legal",
+  "tip": "부사 illegally(illegally parked 불법 주차된)와의 품사 자리 구분이 출제되며 Part 7에서 unlawful, prohibited로 바꿔 표현된다.",
+  "q": {
+   "s": "Downloading copyrighted software without a license is ------- in most countries.",
+   "o": [
+    "illegally",
+    "illegalities",
+    "illegal",
+    "illegality"
+   ],
+   "a": 2,
+   "k": "be동사 is 뒤 보어 자리에 주어의 성격을 설명하는 형용사가 필요하므로 illegal이 정답이다. illegally는 부사라 보어가 될 수 없고 illegality, illegalities는 명사라 주어와 동격이 되지 않는다."
+  }
+ },
+ {
+  "w": "noncompliance",
+  "pos": "n",
+  "m": [
+   "(규정) 미준수",
+   "불이행"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Factories face heavy fines for *noncompliance* with safety standards.",
+  "exKo": "공장들은 안전 기준을 지키지 않으면 무거운 벌금을 물게 된다.",
+  "col": [
+   {
+    "e": "noncompliance with",
+    "k": "~의 미준수"
+   },
+   {
+    "e": "penalty for noncompliance",
+    "k": "미준수에 대한 처벌"
+   }
+  ],
+  "der": [
+   {
+    "w": "compliance",
+    "pos": "n",
+    "m": "준수"
+   },
+   {
+    "w": "comply",
+    "pos": "v",
+    "m": "준수하다(with)"
+   }
+  ],
+  "para": [
+   "violation",
+   "failure to comply"
+  ],
+  "ant": "compliance",
+  "tip": "noncompliance with(~을 지키지 않음)처럼 전치사 with와 함께 쓰이며 Part 7에서 failure to comply로 바꿔 표현된다.",
+  "q": {
+   "s": "Contractors may lose their licenses for repeated ------- with building regulations.",
+   "o": [
+    "nonsense",
+    "nonstop",
+    "nonprofit",
+    "noncompliance"
+   ],
+   "a": 3,
+   "k": "건축 규정을 반복해서 '지키지 않으면' 면허를 잃을 수 있다는 뜻이며 with와 어울리는 noncompliance가 정답이다. nonprofit(비영리의), nonstop(직행의), nonsense(터무니없는 말)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "regulate",
+  "pos": "v",
+  "m": [
+   "규제하다",
+   "조절하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The government *regulates* the prices of electricity and gas.",
+  "exKo": "정부는 전기와 가스 요금을 규제한다.",
+  "col": [
+   {
+    "e": "strictly regulated",
+    "k": "엄격히 규제되는"
+   },
+   {
+    "e": "regulate the temperature",
+    "k": "온도를 조절하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "regulation",
+    "pos": "n",
+    "m": "규정, 규제"
+   },
+   {
+    "w": "regulatory",
+    "pos": "adj",
+    "m": "규제의"
+   },
+   {
+    "w": "regulator",
+    "pos": "n",
+    "m": "규제 기관"
+   }
+  ],
+  "para": [
+   "control",
+   "govern",
+   "oversee"
+  ],
+  "ant": "",
+  "tip": "'규제하다' 외에 regulate the temperature(온도를 조절하다)의 뜻도 있으며, 명사 regulation(Day 24), 형용사 regulatory와 품사를 구분한다.",
+  "q": {
+   "s": "A thermostat automatically ------- the temperature in each meeting room.",
+   "o": [
+    "regulatory",
+    "regulates",
+    "regulator",
+    "regulation"
+   ],
+   "a": 1,
+   "k": "주어 A thermostat와 부사 automatically 뒤 동사 자리이므로 3인칭 단수 동사 regulates가 정답이다. regulation, regulator는 명사, regulatory는 형용사다."
+  }
+ },
+ {
+  "w": "regulatory",
+  "pos": "adj",
+  "m": [
+   "규제의",
+   "규제력을 지닌"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Banks must submit monthly reports to *regulatory* authorities.",
+  "exKo": "은행은 규제 당국에 월별 보고서를 제출해야 한다.",
+  "col": [
+   {
+    "e": "regulatory approval",
+    "k": "규제 당국의 승인"
+   },
+   {
+    "e": "regulatory agency",
+    "k": "규제 기관"
+   },
+   {
+    "e": "regulatory requirements",
+    "k": "규제 요건"
+   }
+  ],
+  "der": [
+   {
+    "w": "regulate",
+    "pos": "v",
+    "m": "규제하다"
+   },
+   {
+    "w": "regulation",
+    "pos": "n",
+    "m": "규정, 규제"
+   }
+  ],
+  "para": [
+   "supervisory",
+   "governing"
+  ],
+  "ant": "",
+  "tip": "명사 앞 형용사 자리에 regulatory approval/agency/requirements처럼 쓰이며, 명사 regulation과 품사를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "The merger cannot be completed until it receives ------- clearance from the government.",
+   "o": [
+    "regulates",
+    "regulate",
+    "regularly",
+    "regulatory"
+   ],
+   "a": 3,
+   "k": "명사 clearance(허가)를 수식하는 형용사 자리이므로 regulatory가 정답이다. regulate, regulates는 동사이고 regularly(정기적으로)는 부사다."
+  }
+ },
+ {
+  "w": "require",
+  "pos": "v",
+  "m": [
+   "요구하다",
+   "필요로 하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "New regulations *require* all food suppliers to label allergens clearly.",
+  "exKo": "새 규정은 모든 식품 공급업체에 알레르기 유발 성분을 명확히 표시하도록 요구한다.",
+  "col": [
+   {
+    "e": "be required to do",
+    "k": "~해야 한다"
+   },
+   {
+    "e": "require A to do",
+    "k": "A에게 ~하도록 요구하다"
+   },
+   {
+    "e": "as required",
+    "k": "필요에 따라"
+   }
+  ],
+  "der": [
+   {
+    "w": "requirement",
+    "pos": "n",
+    "m": "필요조건, 요건"
+   },
+   {
+    "w": "required",
+    "pos": "adj",
+    "m": "필수의"
+   }
+  ],
+  "para": [
+   "call for",
+   "need",
+   "demand"
+  ],
+  "ant": "",
+  "tip": "be required to do(~해야 한다), require that + 주어 + (should) 동사원형 구문이 출제된다. 명사 requirement(Day 1)와 품사도 구분한다.",
+  "q": {
+   "s": "The new policy ------- that all employees complete safety training by June 30.",
+   "o": [
+    "requiring",
+    "require",
+    "requires",
+    "requirement"
+   ],
+   "a": 2,
+   "k": "단수 주어 The new policy의 동사 자리이며 that절을 목적어로 취하므로 requires가 정답이다. require는 수가 맞지 않고, requiring은 동사 자리에 올 수 없으며 requirement는 명사다. that절에 동사원형 complete가 쓰인 점도 단서다."
+  }
+ },
+ {
+  "w": "waiver",
+  "pos": "n",
+  "m": [
+   "(권리·청구의) 포기 각서",
+   "(수수료 등의) 면제"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Participants must sign a *waiver* before joining the rock-climbing class.",
+  "exKo": "참가자들은 암벽 등반 강좌에 참여하기 전에 면책 동의서에 서명해야 한다.",
+  "col": [
+   {
+    "e": "sign a waiver",
+    "k": "면책 동의서에 서명하다"
+   },
+   {
+    "e": "fee waiver",
+    "k": "수수료 면제"
+   }
+  ],
+  "der": [
+   {
+    "w": "waive",
+    "pos": "v",
+    "m": "(권리를) 포기하다, 면제하다"
+   }
+  ],
+  "para": [
+   "release form",
+   "exemption"
+  ],
+  "ant": "",
+  "tip": "동사 waive(Day 24)의 명사형으로 sign a waiver(면책 동의서에 서명하다), fee waiver(수수료 면제)처럼 쓰인다. 발음이 같은 waver(흔들리다)와 혼동하지 말 것.",
+  "q": {
+   "s": "Students with financial need may apply for a ------- of the application fee.",
+   "o": [
+    "waived",
+    "waiving",
+    "waive",
+    "waiver"
+   ],
+   "a": 3,
+   "k": "관사 a 뒤 명사 자리이며 '신청비 면제'라는 뜻이 되어야 하므로 waiver가 정답이다. waive, waived, waiving은 동사 형태다."
+  }
+ },
+ {
+  "w": "forbid",
+  "pos": "v",
+  "m": [
+   "금지하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The lease agreement *forbids* tenants from keeping pets in the building.",
+  "exKo": "임대 계약서는 세입자가 건물 안에서 반려동물을 키우는 것을 금지한다.",
+  "col": [
+   {
+    "e": "forbid A to do",
+    "k": "A가 ~하는 것을 금지하다"
+   },
+   {
+    "e": "strictly forbidden",
+    "k": "엄격히 금지된"
+   }
+  ],
+  "der": [
+   {
+    "w": "forbidden",
+    "pos": "adj",
+    "m": "금지된"
+   }
+  ],
+  "para": [
+   "prohibit",
+   "ban"
+  ],
+  "ant": "allow",
+  "tip": "forbid A to do와 forbid A from -ing 모두 가능하며, 과거형은 forbade, 과거분사는 forbidden이다.",
+  "q": {
+   "s": "Smoking is strictly ------- anywhere on the factory grounds.",
+   "o": [
+    "forbidden",
+    "forbade",
+    "forbid",
+    "forbidding"
+   ],
+   "a": 0,
+   "k": "be동사 is 뒤에서 흡연이 '금지된다'는 수동태가 되어야 하므로 과거분사 forbidden이 정답이다. forbade는 과거형, forbid는 원형이라 be동사 뒤에 올 수 없고 forbidding은 '험악한'이라는 뜻의 형용사다."
+  }
+ },
+ {
+  "w": "approval",
+  "pos": "n",
+  "m": [
+   "승인",
+   "찬성"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The budget proposal still needs *approval* from the finance director.",
+  "exKo": "그 예산안은 아직 재무 이사의 승인이 필요하다.",
+  "col": [
+   {
+    "e": "obtain approval",
+    "k": "승인을 얻다"
+   },
+   {
+    "e": "subject to approval",
+    "k": "승인을 받아야 하는"
+   },
+   {
+    "e": "approval from",
+    "k": "~의 승인"
+   }
+  ],
+  "der": [
+   {
+    "w": "approve",
+    "pos": "v",
+    "m": "승인하다"
+   },
+   {
+    "w": "approved",
+    "pos": "adj",
+    "m": "승인된"
+   }
+  ],
+  "para": [
+   "authorization",
+   "consent",
+   "permission"
+  ],
+  "ant": "rejection",
+  "tip": "approve는 타동사(approve the plan) 또는 approve of(~에 찬성하다)로 쓰이며, 명사 approval은 obtain/get approval, subject to approval 형태로 출제된다.",
+  "q": {
+   "s": "All travel expenses over 500 dollars require prior ------- from a department manager.",
+   "o": [
+    "approve",
+    "approval",
+    "approved",
+    "approves"
+   ],
+   "a": 1,
+   "k": "형용사 prior의 수식을 받고 require의 목적어가 되는 명사 자리이므로 approval이 정답이다. approve, approves는 동사, approved는 과거분사다."
+  }
+ },
+ {
+  "w": "agency",
+  "pos": "n",
+  "m": [
+   "(정부) 기관",
+   "대행사, 대리점"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The federal *agency* will publish new food labeling rules next month.",
+  "exKo": "그 연방 기관은 다음 달 새로운 식품 표시 규정을 발표한다.",
+  "col": [
+   {
+    "e": "government agency",
+    "k": "정부 기관"
+   },
+   {
+    "e": "travel agency",
+    "k": "여행사"
+   },
+   {
+    "e": "advertising agency",
+    "k": "광고 대행사"
+   }
+  ],
+  "der": [
+   {
+    "w": "agent",
+    "pos": "n",
+    "m": "대리인, 중개인"
+   }
+  ],
+  "para": [
+   "organization",
+   "bureau",
+   "firm"
+  ],
+  "ant": "",
+  "tip": "travel agency(여행사), advertising agency(광고 대행사), government agency(정부 기관)처럼 복합명사로 쓰이며 사람명사 agent와 구분한다.",
+  "q": {
+   "s": "Before booking the trip, Mr. Ford compared prices at several travel -------.",
+   "o": [
+    "agencies",
+    "agreements",
+    "agendas",
+    "assignments"
+   ],
+   "a": 0,
+   "k": "travel과 결합해 '여행사'를 이루고 가격을 비교할 수 있는 곳이므로 agencies가 정답이다. agendas(안건), agreements(합의), assignments(과제)는 travel과 결합해 장소를 나타내지 못한다."
+  }
+ },
+ {
+  "w": "protocol",
+  "pos": "n",
+  "m": [
+   "규약, (공식) 절차",
+   "의례"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Lab staff must follow strict safety *protocols* when handling chemicals.",
+  "exKo": "연구실 직원은 화학 물질을 다룰 때 엄격한 안전 수칙을 따라야 한다.",
+  "col": [
+   {
+    "e": "follow protocol",
+    "k": "절차를 따르다"
+   },
+   {
+    "e": "safety protocol",
+    "k": "안전 수칙"
+   },
+   {
+    "e": "standard protocol",
+    "k": "표준 절차"
+   }
+  ],
+  "der": [],
+  "para": [
+   "procedure",
+   "rules",
+   "guidelines"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 procedure, guidelines로 바꿔 표현되며 follow/observe protocol 형태로 쓰인다. 외교상의 '의례'라는 뜻도 있다.",
+  "q": {
+   "s": "According to company -------, all security breaches must be reported within one hour.",
+   "o": [
+    "protocol",
+    "prototype",
+    "proportion",
+    "prosperity"
+   ],
+   "a": 0,
+   "k": "보안 사고를 한 시간 안에 보고하도록 정한 회사의 '규약, 절차'이므로 protocol이 정답이다. prototype(시제품), proportion(비율), prosperity(번영)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "code",
+  "pos": "n",
+  "m": [
+   "규정, 법규",
+   "부호, 코드"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The restaurant was closed after failing to meet the city's health *code*.",
+  "exKo": "그 식당은 시의 보건 규정을 충족하지 못해 문을 닫았다.",
+  "col": [
+   {
+    "e": "building code",
+    "k": "건축 법규"
+   },
+   {
+    "e": "code of conduct",
+    "k": "행동 강령"
+   },
+   {
+    "e": "access code",
+    "k": "출입 코드"
+   }
+  ],
+  "der": [
+   {
+    "w": "codify",
+    "pos": "v",
+    "m": "성문화하다"
+   }
+  ],
+  "para": [
+   "regulations",
+   "rules"
+  ],
+  "ant": "",
+  "tip": "building/health code(건축·보건 법규), code of conduct(행동 강령)처럼 '규정'의 뜻으로 자주 쓰이며 zip code, access code의 '부호' 뜻도 있다.",
+  "q": {
+   "s": "The renovation must meet all local building ------- before the property can be reopened.",
+   "o": [
+    "coats",
+    "codes",
+    "chords",
+    "cords"
+   ],
+   "a": 1,
+   "k": "building과 결합해 '건축 법규'를 이루고 meet(충족하다)의 목적어가 되는 codes가 정답이다. chords(화음), coats(외투, 칠), cords(끈, 전선)는 충족해야 할 대상이 아니다."
+  }
+ },
+ {
+  "w": "dress code",
+  "pos": "phr",
+  "m": [
+   "복장 규정"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The company relaxed its *dress code* to allow jeans on Fridays.",
+  "exKo": "그 회사는 금요일에 청바지를 입을 수 있도록 복장 규정을 완화했다.",
+  "col": [
+   {
+    "e": "strict dress code",
+    "k": "엄격한 복장 규정"
+   },
+   {
+    "e": "follow the dress code",
+    "k": "복장 규정을 지키다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "attire policy"
+  ],
+  "ant": "",
+  "tip": "Part 3·7에서 복장 규정의 변경·준수 안내로 나오며 attire, business casual 같은 표현과 함께 쓰인다.",
+  "q": {
+   "s": "According to the new -------, employees who meet with clients must wear business attire.",
+   "o": [
+    "zip code",
+    "dressing room",
+    "dress rehearsal",
+    "dress code"
+   ],
+   "a": 3,
+   "k": "고객을 만나는 직원의 복장을 정한 '복장 규정'이므로 dress code가 정답이다. zip code(우편 번호), dressing room(탈의실), dress rehearsal(총연습)은 복장 기준을 정하지 않는다."
+  }
+ },
+ {
+  "w": "ethics",
+  "pos": "n",
+  "m": [
+   "윤리",
+   "윤리 규범"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "All new hires must complete an online course on business *ethics*.",
+  "exKo": "모든 신입 사원은 기업 윤리에 관한 온라인 강좌를 이수해야 한다.",
+  "col": [
+   {
+    "e": "business ethics",
+    "k": "기업 윤리"
+   },
+   {
+    "e": "code of ethics",
+    "k": "윤리 강령"
+   },
+   {
+    "e": "professional ethics",
+    "k": "직업 윤리"
+   }
+  ],
+  "der": [
+   {
+    "w": "ethical",
+    "pos": "adj",
+    "m": "윤리적인"
+   },
+   {
+    "w": "ethically",
+    "pos": "adv",
+    "m": "윤리적으로"
+   }
+  ],
+  "para": [
+   "moral standards",
+   "principles"
+  ],
+  "ant": "",
+  "tip": "'윤리 규범'의 뜻일 때는 복수 취급하고 '윤리학'일 때는 단수 취급한다. code of ethics(윤리 강령)가 Part 7 빈출 표현이다.",
+  "q": {
+   "s": "Every employee must sign the company's code of ------- when joining the firm.",
+   "o": [
+    "ethics",
+    "ethicist",
+    "ethical",
+    "ethically"
+   ],
+   "a": 0,
+   "k": "전치사 of 뒤에 와서 '윤리 강령'(code of ethics)을 이루는 명사 ethics가 정답이다. ethical은 형용사, ethically는 부사이고 ethicist(윤리학자)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "ethical",
+  "pos": "adj",
+  "m": [
+   "윤리적인",
+   "도덕적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Customers increasingly prefer brands that follow *ethical* business practices.",
+  "exKo": "고객들은 윤리적인 경영 방식을 따르는 브랜드를 점점 더 선호한다.",
+  "col": [
+   {
+    "e": "ethical standards",
+    "k": "윤리 기준"
+   },
+   {
+    "e": "ethical practices",
+    "k": "윤리적 관행"
+   },
+   {
+    "e": "ethical sourcing",
+    "k": "윤리적 조달"
+   }
+  ],
+  "der": [
+   {
+    "w": "ethics",
+    "pos": "n",
+    "m": "윤리"
+   },
+   {
+    "w": "ethically",
+    "pos": "adv",
+    "m": "윤리적으로"
+   }
+  ],
+  "para": [
+   "moral",
+   "principled",
+   "responsible"
+  ],
+  "ant": "unethical",
+  "tip": "명사 앞 형용사 자리 문제로 출제되며 반의어 unethical, 부사 ethically와 함께 알아 두자.",
+  "q": {
+   "s": "The clothing brand was praised for its ------- treatment of factory workers overseas.",
+   "o": [
+    "ethicist",
+    "ethical",
+    "ethically",
+    "ethics"
+   ],
+   "a": 1,
+   "k": "소유격 its와 명사 treatment 사이 형용사 자리이므로 ethical이 정답이다. ethics, ethicist는 명사, ethically는 부사라 명사를 수식할 수 없다."
+  }
+ },
+ {
+  "w": "integrity",
+  "pos": "n",
+  "m": [
+   "진실성, 청렴",
+   "(구조적) 온전함"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Mr. Larson is known for his honesty and *integrity* in all his business dealings.",
+  "exKo": "Larson 씨는 모든 사업 거래에서 정직하고 청렴하기로 알려져 있다.",
+  "col": [
+   {
+    "e": "personal integrity",
+    "k": "개인의 청렴성"
+   },
+   {
+    "e": "maintain integrity",
+    "k": "진실성을 지키다"
+   },
+   {
+    "e": "structural integrity",
+    "k": "구조적 안전성"
+   }
+  ],
+  "der": [],
+  "para": [
+   "honesty",
+   "principles"
+  ],
+  "ant": "",
+  "tip": "사람의 '청렴, 정직'뿐 아니라 structural integrity(구조적 안전성), data integrity(데이터 무결성)의 뜻으로도 쓰인다.",
+  "q": {
+   "s": "Engineers inspected the bridge to make sure its structural ------- had not been affected by the storm.",
+   "o": [
+    "intention",
+    "intensity",
+    "integrity",
+    "integration"
+   ],
+   "a": 2,
+   "k": "폭풍 후 다리의 '구조적 안전성'을 확인한다는 뜻이므로 structural integrity를 이루는 integrity가 정답이다. integration(통합), intensity(강도), intention(의도)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "transparency",
+  "pos": "n",
+  "m": [
+   "투명성"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Shareholders have called for greater *transparency* in how executive pay is set.",
+  "exKo": "주주들은 경영진 보수 결정 방식의 투명성을 높이라고 요구해 왔다.",
+  "col": [
+   {
+    "e": "greater transparency",
+    "k": "더 높은 투명성"
+   },
+   {
+    "e": "financial transparency",
+    "k": "재무 투명성"
+   },
+   {
+    "e": "transparency in",
+    "k": "~에서의 투명성"
+   }
+  ],
+  "der": [
+   {
+    "w": "transparent",
+    "pos": "adj",
+    "m": "투명한"
+   }
+  ],
+  "para": [
+   "openness",
+   "clarity"
+  ],
+  "ant": "",
+  "tip": "형용사 transparent와 품사를 구분하며 Part 7에서 openness로 바꿔 표현된다. greater/increased transparency처럼 형용사 수식이 흔하다.",
+  "q": {
+   "s": "To improve -------, the city council now posts its spending records online every month.",
+   "o": [
+    "transparent",
+    "transparencies",
+    "transparency",
+    "transparently"
+   ],
+   "a": 2,
+   "k": "improve의 목적어로 '투명성'이라는 불가산 추상명사가 필요하므로 transparency가 정답이다. transparent는 형용사, transparently는 부사이고 transparencies는 '투명 필름'을 뜻하는 가산명사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "accountability",
+  "pos": "n",
+  "m": [
+   "책임(성)",
+   "책무"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The new reporting system increases *accountability* among department heads.",
+  "exKo": "새 보고 체계는 부서장들의 책임성을 높인다.",
+  "col": [
+   {
+    "e": "accountability for",
+    "k": "~에 대한 책임"
+   },
+   {
+    "e": "public accountability",
+    "k": "공적 책임"
+   }
+  ],
+  "der": [
+   {
+    "w": "accountable",
+    "pos": "adj",
+    "m": "책임이 있는"
+   }
+  ],
+  "para": [
+   "responsibility",
+   "answerability"
+  ],
+  "ant": "",
+  "tip": "형용사 accountable은 be accountable for/to(~에 대해/~에게 책임이 있다)로 쓰이며 명사 accountability와의 품사 구분이 출제된다. 회계사(accountant)와 혼동하지 말 것.",
+  "q": {
+   "s": "The CEO promised greater ------- for decisions that affect employees.",
+   "o": [
+    "accountant",
+    "accountability",
+    "accountably",
+    "accountable"
+   ],
+   "a": 1,
+   "k": "형용사 greater의 수식을 받고 promised의 목적어가 되는 명사 자리이므로 accountability가 정답이다. accountable은 형용사, accountably는 부사이고 accountant(회계사)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "unethical",
+  "pos": "adj",
+  "m": [
+   "비윤리적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The supplier was dropped after reports of *unethical* labor practices.",
+  "exKo": "그 공급업체는 비윤리적인 노동 관행이 보도된 후 거래가 끊겼다.",
+  "col": [
+   {
+    "e": "unethical behavior",
+    "k": "비윤리적 행동"
+   },
+   {
+    "e": "unethical practices",
+    "k": "비윤리적 관행"
+   }
+  ],
+  "der": [
+   {
+    "w": "ethical",
+    "pos": "adj",
+    "m": "윤리적인"
+   },
+   {
+    "w": "ethics",
+    "pos": "n",
+    "m": "윤리"
+   }
+  ],
+  "para": [
+   "immoral",
+   "dishonest",
+   "improper"
+  ],
+  "ant": "ethical",
+  "tip": "un-은 부정 접두사로 반의어 ethical과 짝을 이루며, Part 7에서 improper, dishonest로 바꿔 표현된다.",
+  "q": {
+   "s": "Accepting expensive gifts from vendors is considered ------- under the company's guidelines.",
+   "o": [
+    "unethical",
+    "unanimous",
+    "unoccupied",
+    "unlimited"
+   ],
+   "a": 0,
+   "k": "회사 지침상 납품업체에게서 비싼 선물을 받는 행위는 '비윤리적인' 것으로 간주되므로 unethical이 정답이다. unlimited(무제한의), unanimous(만장일치의), unoccupied(비어 있는)는 행위를 평가하는 말로 맞지 않는다."
+  }
+ },
+ {
+  "w": "sue",
+  "pos": "v",
+  "m": [
+   "고소하다",
+   "소송을 제기하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The customer threatened to *sue* the airline over the lost luggage.",
+  "exKo": "그 고객은 분실 수하물 문제로 항공사를 고소하겠다고 했다.",
+  "col": [
+   {
+    "e": "sue A for B",
+    "k": "B를 이유로 A를 고소하다"
+   },
+   {
+    "e": "sue for damages",
+    "k": "손해 배상을 청구하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "lawsuit",
+    "pos": "n",
+    "m": "소송"
+   },
+   {
+    "w": "suit",
+    "pos": "n",
+    "m": "소송, 정장"
+   }
+  ],
+  "para": [
+   "take legal action against",
+   "file a lawsuit against"
+  ],
+  "ant": "",
+  "tip": "타동사로 sue the company처럼 목적어를 바로 쓰며, sue A for B(B를 이유로 A를 고소하다)로 쓴다. 명사는 lawsuit 또는 suit이다.",
+  "q": {
+   "s": "The software company decided to ------- its competitor for copying its design.",
+   "o": [
+    "accuse",
+    "suit",
+    "sue",
+    "argue"
+   ],
+   "a": 2,
+   "k": "sue A for B(B를 이유로 A를 고소하다) 구문이므로 sue가 정답이다. suit는 동사로 '어울리다'라는 뜻이고, accuse는 accuse A of B로 써야 하며, argue는 사람을 목적어로 취하지 않는다."
+  }
+ },
+ {
+  "w": "witness",
+  "pos": "n",
+  "m": [
+   "증인",
+   "목격자"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The contract must be signed in the presence of a *witness*.",
+  "exKo": "계약서는 증인이 입회한 상태에서 서명해야 한다.",
+  "col": [
+   {
+    "e": "in the presence of a witness",
+    "k": "증인 입회하에"
+   },
+   {
+    "e": "witness a signature",
+    "k": "서명에 증인으로 서다"
+   }
+  ],
+  "der": [
+   {
+    "w": "eyewitness",
+    "pos": "n",
+    "m": "목격자"
+   }
+  ],
+  "para": [
+   "observer",
+   "bystander"
+  ],
+  "ant": "",
+  "tip": "명사(증인, 목격자)와 동사(목격하다, 증인으로 서명하다)로 모두 쓰이며, '(지역·업계가 변화를) 겪다'라는 비유적 동사 의미도 Part 7에 나온다.",
+  "q": {
+   "s": "Since the new airport opened, the coastal town has ------- a dramatic rise in tourist numbers.",
+   "o": [
+    "testified",
+    "witnessed",
+    "spectated",
+    "attended"
+   ],
+   "a": 1,
+   "k": "새 공항 개항 이후 해안 도시가 관광객의 급증을 '겪었다'는 뜻이 되어야 하므로 witnessed가 정답이다. attended(참석했다), spectated(관전했다)는 도시를 주어로 쓸 수 없고 testified(증언했다)는 목적어 rise와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "evidence",
+  "pos": "n",
+  "m": [
+   "증거",
+   "근거"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "There is no *evidence* that the delay was caused by the shipping company.",
+  "exKo": "배송 지연이 그 운송 회사 때문이라는 증거는 없다.",
+  "col": [
+   {
+    "e": "evidence of",
+    "k": "~의 증거"
+   },
+   {
+    "e": "provide evidence",
+    "k": "증거를 제시하다"
+   },
+   {
+    "e": "clear evidence",
+    "k": "명백한 증거"
+   }
+  ],
+  "der": [
+   {
+    "w": "evident",
+    "pos": "adj",
+    "m": "분명한"
+   },
+   {
+    "w": "evidently",
+    "pos": "adv",
+    "m": "분명히"
+   }
+  ],
+  "para": [
+   "proof"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 an evidence, evidences로 쓰지 않고 a piece of evidence로 센다. 형용사 evident와 품사를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Applicants for the grant must provide ------- of their company's registration.",
+   "o": [
+    "evidently",
+    "evidenced",
+    "evidence",
+    "evident"
+   ],
+   "a": 2,
+   "k": "provide의 목적어로 of 이하의 수식을 받는 명사가 필요하므로 evidence가 정답이다. evident는 형용사, evidently는 부사, evidenced는 과거분사다."
+  }
+ },
+ {
+  "w": "confidentiality",
+  "pos": "n",
+  "m": [
+   "기밀성",
+   "비밀 유지"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "All employees must sign a *confidentiality* agreement on their first day.",
+  "exKo": "모든 직원은 첫 출근일에 비밀 유지 계약서에 서명해야 한다.",
+  "col": [
+   {
+    "e": "confidentiality agreement",
+    "k": "비밀 유지 계약"
+   },
+   {
+    "e": "maintain confidentiality",
+    "k": "비밀을 유지하다"
+   },
+   {
+    "e": "patient confidentiality",
+    "k": "환자 비밀 보장"
+   }
+  ],
+  "der": [
+   {
+    "w": "confidential",
+    "pos": "adj",
+    "m": "기밀의"
+   },
+   {
+    "w": "confidentially",
+    "pos": "adv",
+    "m": "은밀히"
+   }
+  ],
+  "para": [
+   "secrecy",
+   "privacy"
+  ],
+  "ant": "",
+  "tip": "형용사 confidential(Day 24)과 품사를 구분하며, confidentiality agreement(비밀 유지 계약)가 Part 7 빈출 표현이다.",
+  "q": {
+   "s": "Our counselors respect client ------- and will not share any personal details.",
+   "o": [
+    "confidentiality",
+    "confident",
+    "confidently",
+    "confidential"
+   ],
+   "a": 0,
+   "k": "respect의 목적어로 client와 결합해 '고객 비밀 보장'을 이루는 명사 confidentiality가 정답이다. confidential, confident는 형용사, confidently는 부사다."
+  }
+ },
+ {
+  "w": "jurisdiction",
+  "pos": "n",
+  "m": [
+   "관할(권)",
+   "관할 구역"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The dispute falls under the *jurisdiction* of the state court.",
+  "exKo": "그 분쟁은 주 법원의 관할에 속한다.",
+  "col": [
+   {
+    "e": "under the jurisdiction of",
+    "k": "~의 관할하에"
+   },
+   {
+    "e": "within one's jurisdiction",
+    "k": "~의 관할 내에"
+   }
+  ],
+  "der": [
+   {
+    "w": "jurisdictional",
+    "pos": "adj",
+    "m": "관할권의"
+   }
+  ],
+  "para": [
+   "authority",
+   "control"
+  ],
+  "ant": "",
+  "tip": "under/within the jurisdiction of(~의 관할하에) 형태로 전치사와 함께 쓰이며, Part 7에서 authority로 바꿔 표현된다.",
+  "q": {
+   "s": "Road repairs on the highway fall under the ------- of the state transportation department.",
+   "o": [
+    "justification",
+    "juncture",
+    "junction",
+    "jurisdiction"
+   ],
+   "a": 3,
+   "k": "fall under the jurisdiction of(~의 관할에 속하다) 표현이므로 jurisdiction이 정답이다. justification(정당화), junction(교차로), juncture(시점)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "ordinance",
+  "pos": "n",
+  "m": [
+   "(지방 자치 단체의) 조례"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The city council passed an *ordinance* limiting construction noise after 8 P.M.",
+  "exKo": "시의회는 오후 8시 이후의 공사 소음을 제한하는 조례를 통과시켰다.",
+  "col": [
+   {
+    "e": "city ordinance",
+    "k": "시 조례"
+   },
+   {
+    "e": "local ordinance",
+    "k": "지방 조례"
+   },
+   {
+    "e": "pass an ordinance",
+    "k": "조례를 통과시키다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "regulation",
+   "bylaw",
+   "law"
+  ],
+  "ant": "",
+  "tip": "시·군 등 지방 자치 단체의 법규를 뜻하며, 철자가 비슷한 ordnance(무기)나 ordinary(평범한)와 혼동하지 말 것.",
+  "q": {
+   "s": "Under a local -------, businesses must keep their sidewalks clear of snow.",
+   "o": [
+    "ordeal",
+    "ordinary",
+    "ordinance",
+    "ornament"
+   ],
+   "a": 2,
+   "k": "업체에 보도 제설 의무를 지우는 '지방 조례'이므로 ordinance가 정답이다. ordinary(평범한)는 형용사이고 ordeal(시련), ornament(장식품)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "amendment",
+  "pos": "n",
+  "m": [
+   "개정(안)",
+   "수정 (조항)"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The board approved an *amendment* to the company's bylaws.",
+  "exKo": "이사회는 회사 정관 개정안을 승인했다.",
+  "col": [
+   {
+    "e": "amendment to",
+    "k": "~의 개정"
+   },
+   {
+    "e": "propose an amendment",
+    "k": "개정안을 제안하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "amend",
+    "pos": "v",
+    "m": "개정하다, 수정하다"
+   }
+  ],
+  "para": [
+   "revision",
+   "modification",
+   "change"
+  ],
+  "ant": "",
+  "tip": "an amendment to the contract(계약 수정 조항)처럼 전치사 to와 함께 쓰이며 동사 amend와 품사를 구분한다.",
+  "q": {
+   "s": "Both parties must sign any ------- to the original contract.",
+   "o": [
+    "amend",
+    "amendment",
+    "amends",
+    "amended"
+   ],
+   "a": 1,
+   "k": "any 뒤 sign의 목적어가 되는 명사 자리이며 '계약서 수정 조항'이라는 뜻이 되어야 하므로 amendment가 정답이다. amend, amended는 동사 형태이고 amends는 make amends(보상하다)로 쓰이는 명사라 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "revision",
+  "pos": "n",
+  "m": [
+   "수정",
+   "개정"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Cole made several *revisions* to the contract before sending it to the client.",
+  "exKo": "Cole 씨는 고객에게 보내기 전에 계약서를 몇 군데 수정했다.",
+  "col": [
+   {
+    "e": "make revisions",
+    "k": "수정하다"
+   },
+   {
+    "e": "revision to",
+    "k": "~의 수정"
+   },
+   {
+    "e": "final revision",
+    "k": "최종 수정본"
+   }
+  ],
+  "der": [
+   {
+    "w": "revise",
+    "pos": "v",
+    "m": "수정하다, 개정하다"
+   },
+   {
+    "w": "revised",
+    "pos": "adj",
+    "m": "수정된"
+   }
+  ],
+  "para": [
+   "amendment",
+   "modification",
+   "update"
+  ],
+  "ant": "",
+  "tip": "make revisions to(~을 수정하다)처럼 쓰이며 동사 revise, 형용사 revised(revised schedule 수정된 일정)와 품사를 구분한다.",
+  "q": {
+   "s": "After several -------, the marketing plan was finally approved by the director.",
+   "o": [
+    "revise",
+    "revised",
+    "revising",
+    "revisions"
+   ],
+   "a": 3,
+   "k": "several 뒤에는 복수 가산명사가 와야 하므로 revisions가 정답이다. revise는 동사, revised는 과거분사, revising은 동명사로 several과 함께 쓸 수 없다."
+  }
+ },
+ {
+  "w": "repeal",
+  "pos": "v",
+  "m": [
+   "(법률을) 폐지하다",
+   "철회하다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The city council voted to *repeal* the tax on small businesses.",
+  "exKo": "시의회는 소규모 업체에 부과하던 세금을 폐지하기로 의결했다.",
+  "col": [
+   {
+    "e": "repeal a law",
+    "k": "법을 폐지하다"
+   },
+   {
+    "e": "repeal a ban",
+    "k": "금지 조치를 해제하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "abolish",
+   "cancel",
+   "revoke"
+  ],
+  "ant": "enact",
+  "tip": "법률·규정을 공식적으로 '폐지하다'라는 뜻으로 반의어 enact(Day 24)와 짝을 이룬다. 철자가 비슷한 repel(물리치다), appeal과 혼동하지 말 것.",
+  "q": {
+   "s": "Lawmakers are expected to ------- the outdated rule that limits store hours on Sundays.",
+   "o": [
+    "reveal",
+    "repeal",
+    "repair",
+    "repel"
+   ],
+   "a": 1,
+   "k": "의원들이 낡은 규칙을 '폐지할' 것이라는 뜻이므로 repeal이 정답이다. repel(물리치다), repair(수리하다), reveal(드러내다)은 rule을 목적어로 쓰기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "revoke",
+  "pos": "v",
+  "m": [
+   "(면허·허가를) 취소하다",
+   "철회하다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The restaurant's license was *revoked* after it failed several inspections.",
+  "exKo": "그 식당은 여러 차례 점검에서 불합격한 후 영업 허가가 취소되었다.",
+  "col": [
+   {
+    "e": "revoke a license",
+    "k": "면허를 취소하다"
+   },
+   {
+    "e": "revoke a permit",
+    "k": "허가를 취소하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "revocation",
+    "pos": "n",
+    "m": "취소, 철회"
+   }
+  ],
+  "para": [
+   "cancel",
+   "withdraw",
+   "invalidate"
+  ],
+  "ant": "grant",
+  "tip": "면허·허가·권한을 공식적으로 '취소하다'라는 뜻으로 주로 수동태 be revoked로 쓰인다. 형태가 비슷한 evoke, invoke, provoke와 구분한다.",
+  "q": {
+   "s": "The agency may ------- the permit of any company that ignores safety warnings.",
+   "o": [
+    "provoke",
+    "invoke",
+    "revoke",
+    "evoke"
+   ],
+   "a": 2,
+   "k": "안전 경고를 무시하는 업체의 허가를 '취소할' 수 있다는 뜻이므로 revoke가 정답이다. evoke(불러일으키다), invoke(언급하다, 발동하다), provoke(유발하다)는 permit과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "infringe",
+  "pos": "v",
+  "m": [
+   "(권리·특허를) 침해하다",
+   "위반하다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The court ruled that the design *infringed* the competitor's patent.",
+  "exKo": "법원은 그 디자인이 경쟁사의 특허를 침해했다고 판결했다.",
+  "col": [
+   {
+    "e": "infringe a copyright",
+    "k": "저작권을 침해하다"
+   },
+   {
+    "e": "infringe on rights",
+    "k": "권리를 침해하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "infringement",
+    "pos": "n",
+    "m": "침해, 위반"
+   }
+  ],
+  "para": [
+   "violate",
+   "breach"
+  ],
+  "ant": "",
+  "tip": "infringe a patent처럼 타동사로도, infringe on/upon(~을 침해하다)처럼 자동사로도 쓰이며 명사 infringement와 품사 구분이 출제된다.",
+  "q": {
+   "s": "Using the logo without permission could ------- on the company's trademark rights.",
+   "o": [
+    "infringe",
+    "infringement",
+    "infringing",
+    "infringed"
+   ],
+   "a": 0,
+   "k": "조동사 could 뒤에는 동사원형이 와야 하므로 infringe가 정답이다. infringement는 명사, infringed와 infringing은 조동사 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "violation",
+  "pos": "n",
+  "m": [
+   "위반"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Parking in a fire lane is a *violation* of city traffic rules.",
+  "exKo": "소방 차로에 주차하는 것은 시 교통 규칙 위반이다.",
+  "col": [
+   {
+    "e": "in violation of",
+    "k": "~을 위반하여"
+   },
+   {
+    "e": "safety violation",
+    "k": "안전 수칙 위반"
+   },
+   {
+    "e": "violation of",
+    "k": "~의 위반"
+   }
+  ],
+  "der": [
+   {
+    "w": "violate",
+    "pos": "v",
+    "m": "위반하다"
+   },
+   {
+    "w": "violator",
+    "pos": "n",
+    "m": "위반자"
+   }
+  ],
+  "para": [
+   "breach",
+   "infringement"
+  ],
+  "ant": "",
+  "tip": "in violation of(~을 위반하여) 숙어가 Part 5에 출제되며 동사 violate(Day 24)와 품사를 구분한다.",
+  "q": {
+   "s": "The company was fined for operating in ------- of environmental laws.",
+   "o": [
+    "violation",
+    "violator",
+    "violate",
+    "violated"
+   ],
+   "a": 0,
+   "k": "in violation of(~을 위반하여)라는 숙어이므로 violation이 정답이다. violator(위반자)는 사람이라 의미가 맞지 않고 violate, violated는 동사 형태다."
+  }
+ },
+ {
+  "w": "investigation",
+  "pos": "n",
+  "m": [
+   "조사",
+   "수사"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The airline has opened an *investigation* into the baggage handling error.",
+  "exKo": "그 항공사는 수하물 처리 오류에 대한 조사에 착수했다.",
+  "col": [
+   {
+    "e": "investigation into",
+    "k": "~에 대한 조사"
+   },
+   {
+    "e": "under investigation",
+    "k": "조사 중인"
+   },
+   {
+    "e": "conduct an investigation",
+    "k": "조사를 실시하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "investigate",
+    "pos": "v",
+    "m": "조사하다"
+   },
+   {
+    "w": "investigator",
+    "pos": "n",
+    "m": "조사관"
+   }
+  ],
+  "para": [
+   "inquiry",
+   "examination",
+   "probe"
+  ],
+  "ant": "",
+  "tip": "investigation into(~에 대한 조사), under investigation(조사 중인) 형태가 자주 나오며 사람명사 investigator와 구분한다.",
+  "q": {
+   "s": "The cause of the warehouse fire is still under -------.",
+   "o": [
+    "investigator",
+    "investigative",
+    "investigate",
+    "investigation"
+   ],
+   "a": 3,
+   "k": "under investigation(조사 중인)이라는 표현이므로 전치사 under 뒤에 명사 investigation이 정답이다. investigator(조사관)는 사람이라 의미가 맞지 않고 investigate는 동사, investigative는 형용사다."
+  }
+ },
+ {
+  "w": "legitimate",
+  "pos": "adj",
+  "m": [
+   "정당한, 타당한",
+   "합법적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Employees may miss a meeting only for a *legitimate* reason, such as illness.",
+  "exKo": "직원은 질병과 같은 정당한 사유가 있을 때만 회의에 불참할 수 있다.",
+  "col": [
+   {
+    "e": "legitimate reason",
+    "k": "정당한 이유"
+   },
+   {
+    "e": "legitimate business",
+    "k": "합법적인 사업"
+   },
+   {
+    "e": "legitimate concern",
+    "k": "타당한 우려"
+   }
+  ],
+  "der": [
+   {
+    "w": "legitimately",
+    "pos": "adv",
+    "m": "정당하게, 합법적으로"
+   },
+   {
+    "w": "legitimacy",
+    "pos": "n",
+    "m": "정당성, 합법성"
+   }
+  ],
+  "para": [
+   "valid",
+   "lawful",
+   "genuine"
+  ],
+  "ant": "illegitimate",
+  "tip": "'합법적인'뿐 아니라 legitimate reason/concern(정당한 이유, 타당한 우려)처럼 '정당한, 타당한'의 뜻으로 자주 쓰인다.",
+  "q": {
+   "s": "Customers have raised ------- concerns about the safety of the new product.",
+   "o": [
+    "legible",
+    "legendary",
+    "leisurely",
+    "legitimate"
+   ],
+   "a": 3,
+   "k": "제품 안전에 대해 고객이 제기한 '타당한' 우려라는 뜻이므로 legitimate가 정답이다. legendary(전설적인), legible(읽기 쉬운), leisurely(느긋한)는 concerns를 수식하기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "invalid",
+  "pos": "adj",
+  "m": [
+   "무효의",
+   "효력이 없는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Your parking permit is *invalid* if it is not displayed on the dashboard.",
+  "exKo": "주차 허가증은 대시보드 위에 보이게 두지 않으면 효력이 없다.",
+  "col": [
+   {
+    "e": "invalid password",
+    "k": "잘못된 비밀번호"
+   },
+   {
+    "e": "declare invalid",
+    "k": "무효를 선언하다"
+   },
+   {
+    "e": "invalid ticket",
+    "k": "무효 티켓"
+   }
+  ],
+  "der": [
+   {
+    "w": "invalidate",
+    "pos": "v",
+    "m": "무효화하다"
+   },
+   {
+    "w": "valid",
+    "pos": "adj",
+    "m": "유효한"
+   }
+  ],
+  "para": [
+   "void",
+   "expired"
+  ],
+  "ant": "valid",
+  "tip": "반의어 valid와 짝을 이루며, 동사 invalidate(무효로 하다)와 품사 구분이 출제된다. '병약자'라는 뜻의 명사 invalid는 강세가 첫음절에 온다.",
+  "q": {
+   "s": "Coupons that have passed their expiration date are considered -------.",
+   "o": [
+    "invalidation",
+    "invalidate",
+    "invaluable",
+    "invalid"
+   ],
+   "a": 3,
+   "k": "be considered 뒤 보어 자리에 쿠폰의 상태를 나타내는 형용사가 필요하고 유효 기간이 지났으므로 '무효인'이라는 invalid가 정답이다. invaluable(매우 귀중한)은 의미가 맞지 않고 invalidate는 동사, invalidation은 명사다."
+  }
+ },
+ {
+  "w": "mandate",
+  "pos": "v",
+  "m": [
+   "의무화하다",
+   "명령하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new law *mandates* that all restaurants display calorie information.",
+  "exKo": "새 법은 모든 식당이 칼로리 정보를 표시하도록 의무화한다.",
+  "col": [
+   {
+    "e": "mandate that",
+    "k": "~하도록 의무화하다"
+   },
+   {
+    "e": "be mandated by law",
+    "k": "법으로 의무화되다"
+   },
+   {
+    "e": "government mandate",
+    "k": "정부 명령"
+   }
+  ],
+  "der": [
+   {
+    "w": "mandatory",
+    "pos": "adj",
+    "m": "의무적인"
+   }
+  ],
+  "para": [
+   "require",
+   "order"
+  ],
+  "ant": "",
+  "tip": "mandate that + 주어 + (should) 동사원형 구문으로 쓰이며 명사로는 '명령, 권한'을 뜻한다. 형용사 mandatory(의무적인)도 Part 5에 자주 출제된다.",
+  "q": {
+   "s": "Federal regulations ------- that all commercial vehicles undergo a safety inspection every year.",
+   "o": [
+    "mandate",
+    "mandates",
+    "mandating",
+    "mandatory"
+   ],
+   "a": 0,
+   "k": "복수 주어 Federal regulations의 동사 자리이므로 mandate가 정답이다. mandates는 3인칭 단수형이라 수가 맞지 않고, mandatory는 형용사, mandating은 동명사·현재분사라 동사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "compulsory",
+  "pos": "adj",
+  "m": [
+   "의무적인",
+   "강제적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Attendance at the safety training session is *compulsory* for all new staff.",
+  "exKo": "안전 교육 참석은 모든 신입 직원에게 의무 사항이다.",
+  "col": [
+   {
+    "e": "compulsory attendance",
+    "k": "의무 참석"
+   },
+   {
+    "e": "compulsory for",
+    "k": "~에게 의무적인"
+   },
+   {
+    "e": "compulsory retirement",
+    "k": "정년 퇴직"
+   }
+  ],
+  "der": [
+   {
+    "w": "compel",
+    "pos": "v",
+    "m": "강요하다"
+   }
+  ],
+  "para": [
+   "mandatory",
+   "required",
+   "obligatory"
+  ],
+  "ant": "optional",
+  "tip": "mandatory, required와 같은 뜻으로 Part 7에서 바꿔 표현되며 반의어 optional(선택적인)과 대비된다.",
+  "q": {
+   "s": "Wearing a helmet is ------- for all workers on the construction site.",
+   "o": [
+    "comparable",
+    "compulsory",
+    "complimentary",
+    "competent"
+   ],
+   "a": 1,
+   "k": "공사 현장의 모든 작업자에게 헬멧 착용이 '의무적'이라는 뜻이므로 compulsory가 정답이다. complimentary(무료의), comparable(비슷한), competent(유능한)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "enforcement",
+  "pos": "n",
+  "m": [
+   "(법률의) 시행, 집행",
+   "단속"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Stricter *enforcement* of speed limits has reduced accidents near schools.",
+  "exKo": "제한 속도 단속이 강화되면서 학교 주변 사고가 줄었다.",
+  "col": [
+   {
+    "e": "law enforcement",
+    "k": "법 집행 (기관)"
+   },
+   {
+    "e": "strict enforcement",
+    "k": "엄격한 시행"
+   },
+   {
+    "e": "enforcement of",
+    "k": "~의 시행"
+   }
+  ],
+  "der": [
+   {
+    "w": "enforce",
+    "pos": "v",
+    "m": "시행하다, 집행하다"
+   }
+  ],
+  "para": [
+   "implementation",
+   "application"
+  ],
+  "ant": "",
+  "tip": "동사 enforce(Day 24)의 명사형으로 law enforcement(법 집행 기관), enforcement of the rules 형태로 쓰인다.",
+  "q": {
+   "s": "The city has hired additional officers to improve ------- of its new parking rules.",
+   "o": [
+    "enforce",
+    "enforced",
+    "enforceable",
+    "enforcement"
+   ],
+   "a": 3,
+   "k": "improve의 목적어로 of 이하의 수식을 받는 명사가 필요하므로 enforcement가 정답이다. enforce는 동사, enforced는 과거분사, enforceable은 형용사다."
+  }
+ }
+]

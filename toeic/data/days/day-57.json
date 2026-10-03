@@ -12,8 +12,8 @@
    5,
    7
   ],
-  "ex": "The hotel *provides* free shuttle service to and from the airport.",
-  "exKo": "그 호텔은 공항 왕복 무료 셔틀 서비스를 제공한다.",
+  "ex": "The agency *provides* free legal advice to small business owners.",
+  "exKo": "그 기관은 소기업 경영자에게 무료 법률 자문을 제공한다.",
   "col": [
    {
     "e": "provide A with B",
@@ -399,7 +399,7 @@
   "ant": "",
   "tip": "consider는 동명사를 목적어로 취하며(consider to do 불가), consider A B(A를 B로 여기다) 5형식으로도 쓰인다.",
   "q": {
-   "s": "The firm is ------- relocating its headquarters to a less expensive area.",
+   "s": "Management is ------- opening a second distribution center in the Midwest.",
    "o": [
     "planning",
     "hoping",
@@ -407,7 +407,7 @@
     "considering"
    ],
    "a": 3,
-   "k": "동명사 relocating을 목적어로 취할 수 있는 동사는 consider이므로 considering이 정답이다. plan, hope, decide는 to부정사를 목적어로 취한다(planning to relocate)."
+   "k": "동명사 opening을 목적어로 취할 수 있는 동사는 consider이므로 considering이 정답이다. plan, hope, decide는 to부정사를 목적어로 취한다(planning to open)."
   }
  },
  {
@@ -1783,7 +1783,7 @@
   "ant": "weaken",
   "tip": "명사 strength, 형용사 strong에서 나온 동사로, 동사 자리에 strength를 넣는 오답에 주의해야 한다.",
   "q": {
-   "s": "The two firms signed an agreement to ------- their business ties.",
+   "s": "Regular team-building activities can help ------- relationships among coworkers.",
    "o": [
     "strength",
     "strengthen",
@@ -1791,7 +1791,7 @@
     "strongly"
    ],
    "a": 1,
-   "k": "to부정사의 to 뒤에 목적어 their business ties를 취하는 동사원형이 필요하므로 strengthen이 정답이다. strength는 명사, strong은 형용사, strongly는 부사다."
+   "k": "help 뒤에 목적어 relationships를 취하는 동사원형이 필요하므로 strengthen이 정답이다. strength는 명사, strong은 형용사, strongly는 부사다."
   }
  },
  {

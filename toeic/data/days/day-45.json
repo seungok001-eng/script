@@ -11,8 +11,8 @@
    4,
    7
   ],
-  "ex": "A free *continental breakfast* is served in the lobby from 6:30 to 9:30 A.M.",
-  "exKo": "무료 간단한 아침 식사가 오전 6시 30분부터 9시 30분까지 로비에서 제공된다.",
+  "ex": "Ms. Moon skipped the hotel's *continental breakfast* because she had an early meeting downtown.",
+  "exKo": "Moon 씨는 시내에서 이른 회의가 있어서 호텔의 간단한 아침 식사를 거르고 나갔다.",
   "col": [
    {
     "e": "complimentary continental breakfast",
@@ -87,15 +87,15 @@
   "ant": "",
   "tip": "회사 행사·시상식 장소로 Part 3·4·7에 나오며, 수용 인원(seat up to, accommodate)을 묻는 문제와 함께 출제된다.",
   "q": {
-   "s": "The hotel's ------- can seat up to 300 guests for weddings and corporate dinners.",
+   "s": "Because more than 200 people have registered, the awards reception has been moved to the hotel's -------.",
    "o": [
     "hallway",
     "city hall",
-    "lecture hall",
+    "hall monitor",
     "banquet hall"
    ],
    "a": 3,
-   "k": "결혼식과 회사 만찬을 위해 최대 300명을 수용하는 호텔 시설은 '연회장'이므로 banquet hall이 정답이다. hallway(복도)는 손님을 앉힐 공간이 아니고, city hall(시청)과 lecture hall(강당)은 호텔의 만찬 시설이 아니다."
+   "k": "200명이 넘는 인원을 위해 시상 연회를 옮겨 갈 호텔 시설은 '연회장'이므로 banquet hall이 정답이다. hallway(복도)는 연회 장소가 아니고, city hall(시청)은 호텔 시설이 아니며, hall monitor(복도 감독 학생)는 장소가 아니다."
   }
  },
  {
@@ -255,8 +255,8 @@
    3,
    7
   ],
-  "ex": "The cafe's outdoor *dining area* is open from April through October.",
-  "exKo": "그 카페의 야외 식사 공간은 4월부터 10월까지 운영된다.",
+  "ex": "Smoking is not permitted in any *dining area* of the restaurant, including the patio.",
+  "exKo": "테라스를 포함한 식당 내 모든 식사 공간에서 흡연이 금지된다.",
   "col": [
    {
     "e": "outdoor dining area",
@@ -305,8 +305,8 @@
    4,
    7
   ],
-  "ex": "Each *guest room* is equipped with a coffee maker and a large work desk.",
-  "exKo": "각 객실에는 커피 메이커와 넓은 업무용 책상이 갖추어져 있다.",
+  "ex": "Housekeeping staff clean each *guest room* daily between 10 A.M. and 3 P.M.",
+  "exKo": "객실 청소 직원은 매일 오전 10시에서 오후 3시 사이에 각 객실을 청소한다.",
   "col": [
    {
     "e": "renovate guest rooms",
@@ -401,8 +401,8 @@
    3,
    7
   ],
-  "ex": "The restaurant is hiring additional *waitstaff* for the busy holiday season.",
-  "exKo": "그 식당은 바쁜 연휴 시즌에 대비해 서빙 직원을 추가로 채용하고 있다.",
+  "ex": "Our *waitstaff* receive two weeks of training before serving customers on their own.",
+  "exKo": "우리 서빙 직원들은 혼자 손님을 응대하기 전에 2주간 교육을 받는다.",
   "col": [
    {
     "e": "friendly waitstaff",
@@ -432,7 +432,7 @@
   "ant": "",
   "tip": "waitstaff는 웨이터·웨이트리스 전체를 가리키는 집합명사로 a waitstaff처럼 쓰지 않는다. 식당 리뷰(Part 7)에서 attentive waitstaff로 자주 나온다.",
   "q": {
-   "s": "The ------- at Bellmont Bistro are known for their friendly and attentive service.",
+   "s": "Several members of the ------- at Bellmont Bistro have worked there for more than ten years.",
    "o": [
     "waiting",
     "waitstaff",
@@ -440,7 +440,7 @@
     "waitlist"
    ],
    "a": 1,
-   "k": "친절하고 세심한 서비스로 알려진 사람들을 가리키는 집합명사 waitstaff가 정답이다. waiting(기다림)과 waitlist(대기자 명단)는 사람이 아니며, waited는 동사다."
+   "k": "그 식당에서 10년 넘게 일해 온 사람들이 속한 집단은 '서빙 직원들'이므로 waitstaff가 정답이다. waitlist(대기자 명단)에 오른 사람은 식당에서 일하는 사람이 아니고, waiting(기다림)은 사람 집단이 아니며, waited는 동사다."
   }
  },
  {
@@ -813,8 +813,8 @@
    3,
    4
   ],
-  "ex": "The employee *cafeteria* will be closed on Friday for kitchen repairs.",
-  "exKo": "직원 구내식당은 주방 수리로 금요일에 문을 닫는다.",
+  "ex": "The company *cafeteria* offers a different vegetarian dish every day.",
+  "exKo": "회사 구내식당은 매일 다른 채식 요리를 제공한다.",
   "col": [
    {
     "e": "employee cafeteria",
@@ -833,7 +833,7 @@
   "ant": "",
   "tip": "사내 공지(Part 4·7)에서 구내식당 운영 시간 변경·휴업 소식으로 자주 출제된다. 손님이 직접 음식을 골라 가져가는 셀프서비스 식당을 뜻한다.",
   "q": {
-   "s": "Employees can buy lunch at discounted prices in the ------- on the ground floor.",
+   "s": "The ------- on the ground floor serves hot meals to employees from 11:30 A.M. to 2 P.M.",
    "o": [
     "criteria",
     "cafeteria",
@@ -841,7 +841,7 @@
     "catalog"
    ],
    "a": 1,
-   "k": "직원들이 할인된 가격에 점심을 사 먹는 1층 장소는 '구내식당'이므로 cafeteria가 정답이다. criteria(기준), category(범주), catalog(목록)는 식사하는 장소가 아니다."
+   "k": "1층에서 직원들에게 따뜻한 식사를 제공하는 곳은 '구내식당'이므로 cafeteria가 정답이다. criteria(기준), category(범주), catalog(목록)는 식사를 제공하는 장소가 아니다."
   }
  },
  {
@@ -1053,8 +1053,8 @@
    5,
    7
   ],
-  "ex": "Our hotel's rooftop restaurant *overlooks* the harbor.",
-  "exKo": "우리 호텔의 옥상 식당에서는 항구가 내려다보인다.",
+  "ex": "Our hotel's rooftop restaurant *overlooks* the harbor and the old city walls.",
+  "exKo": "우리 호텔의 옥상 식당에서는 항구와 옛 성벽이 내려다보인다.",
   "col": [
    {
     "e": "overlook the ocean",

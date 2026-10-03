@@ -1,0 +1,2309 @@
+[
+ {
+  "w": "develop",
+  "pos": "v",
+  "m": [
+   "개발하다",
+   "발전시키다, 발전하다",
+   "(문제 등이) 생기다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our engineers are *developing* a smartphone app that lets customers track their deliveries in real time.",
+  "exKo": "우리 엔지니어들은 고객이 배송 상황을 실시간으로 추적할 수 있는 스마트폰 앱을 개발하고 있다.",
+  "col": [
+   {
+    "e": "develop a product",
+    "k": "제품을 개발하다"
+   },
+   {
+    "e": "develop skills",
+    "k": "기술을 기르다"
+   },
+   {
+    "e": "newly developed",
+    "k": "새로 개발된"
+   }
+  ],
+  "der": [
+   {
+    "w": "development",
+    "pos": "n",
+    "m": "개발, 발전"
+   },
+   {
+    "w": "developer",
+    "pos": "n",
+    "m": "개발자, 개발업체"
+   },
+   {
+    "w": "developing",
+    "pos": "adj",
+    "m": "발전 중인, 개발 도상의"
+   }
+  ],
+  "para": [
+   "create",
+   "design",
+   "build"
+  ],
+  "ant": "",
+  "tip": "타동사(~을 개발하다)와 자동사(발전하다)로 모두 쓰인다. 사람·업체 명사 developer와 행위명사 development를 구별하는 품사 문제가 자주 나온다.",
+  "q": {
+   "s": "The research team spent three years trying to ------- a battery that charges in under ten minutes.",
+   "o": [
+    "developer",
+    "development",
+    "developed",
+    "develop"
+   ],
+   "a": 3,
+   "k": "to부정사 to 뒤에는 동사원형이 와야 하므로 develop이 정답이다. developer, development는 명사, developed는 과거형·과거분사다."
+  }
+ },
+ {
+  "w": "development",
+  "pos": "n",
+  "m": [
+   "개발",
+   "발전, 성장",
+   "(새로운) 사태, 진전"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *development* of the new vaccine took less time than scientists had expected.",
+  "exKo": "새 백신 개발은 과학자들이 예상했던 것보다 시간이 덜 걸렸다.",
+  "col": [
+   {
+    "e": "under development",
+    "k": "개발 중인"
+   },
+   {
+    "e": "professional development",
+    "k": "직무 능력 개발"
+   },
+   {
+    "e": "latest developments",
+    "k": "최근 동향, 새로운 소식"
+   }
+  ],
+  "der": [
+   {
+    "w": "develop",
+    "pos": "v",
+    "m": "개발하다"
+   },
+   {
+    "w": "developmental",
+    "pos": "adj",
+    "m": "발달상의, 개발의"
+   }
+  ],
+  "para": [
+   "creation",
+   "growth",
+   "progress"
+  ],
+  "ant": "",
+  "tip": "under development(개발 중인)처럼 전치사 under와 짝을 이루며, '새로운 소식, 진전 상황'이라는 가산명사 뜻(latest developments)도 Part 7에 자주 나온다.",
+  "q": {
+   "s": "The company's new tablet computer is still under ------- and will not be released until next year.",
+   "o": [
+    "development",
+    "developed",
+    "developer",
+    "develops"
+   ],
+   "a": 0,
+   "k": "under development는 '개발 중인'이라는 고정 표현이므로 명사 development가 정답이다. developer는 '개발자'라는 사람명사라 의미가 맞지 않고, developed와 develops는 동사 형태다."
+  }
+ },
+ {
+  "w": "design",
+  "pos": "v",
+  "m": [
+   "설계하다, 디자인하다",
+   "(특정 목적으로) 고안하다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The architect *designed* the library so that natural light fills every reading room.",
+  "exKo": "그 건축가는 모든 열람실에 자연광이 가득 들도록 도서관을 설계했다.",
+  "col": [
+   {
+    "e": "be designed to do",
+    "k": "~하도록 고안되다"
+   },
+   {
+    "e": "be designed for",
+    "k": "~을 위해 만들어지다"
+   },
+   {
+    "e": "product design",
+    "k": "제품 디자인"
+   }
+  ],
+  "der": [
+   {
+    "w": "designer",
+    "pos": "n",
+    "m": "디자이너, 설계자"
+   },
+   {
+    "w": "redesign",
+    "pos": "v",
+    "m": "다시 디자인하다"
+   }
+  ],
+  "para": [
+   "create",
+   "plan",
+   "devise"
+  ],
+  "ant": "",
+  "tip": "be designed to do(~하도록 고안되다)와 be designed for(~을 위해 만들어지다)의 수동태 구문이 Part 5에 자주 출제된다. 명사로도 쓰여 '설계, 디자인'을 뜻한다.",
+  "q": {
+   "s": "This ergonomic chair is specially ------- to reduce back pain during long hours at the desk.",
+   "o": [
+    "designer",
+    "designing",
+    "design",
+    "designed"
+   ],
+   "a": 3,
+   "k": "의자는 허리 통증을 줄이도록 '고안된' 대상이므로 수동태를 이루는 과거분사 designed가 정답이다. be designed to do는 '~하도록 고안되다'라는 뜻이다."
+  }
+ },
+ {
+  "w": "designer",
+  "pos": "n",
+  "m": [
+   "디자이너, 설계자"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "We hired a freelance graphic *designer* to create a new logo for the bakery.",
+  "exKo": "우리는 빵집의 새 로고를 만들기 위해 프리랜서 그래픽 디자이너를 고용했다.",
+  "col": [
+   {
+    "e": "graphic designer",
+    "k": "그래픽 디자이너"
+   },
+   {
+    "e": "interior designer",
+    "k": "인테리어 디자이너"
+   },
+   {
+    "e": "fashion designer",
+    "k": "패션 디자이너"
+   }
+  ],
+  "der": [
+   {
+    "w": "design",
+    "pos": "n",
+    "m": "디자인, 설계"
+   }
+  ],
+  "para": [
+   "creator",
+   "planner"
+  ],
+  "ant": "",
+  "tip": "사람명사 designer와 사물·행위명사 design을 구별하는 문제가 나온다. Part 3·4에서 화자의 직업을 묻는 문제(interior designer 등)의 정답으로 자주 나온다.",
+  "q": {
+   "s": "Ms. Moreau, an award-winning interior -------, has been hired to redecorate the hotel's lobby.",
+   "o": [
+    "design",
+    "designed",
+    "designer",
+    "designing"
+   ],
+   "a": 2,
+   "k": "Moreau 씨와 동격을 이루는 사람명사가 필요하므로 designer가 정답이다. design은 '디자인'이라는 사물·행위명사라 사람과 동격이 될 수 없다."
+  }
+ },
+ {
+  "w": "model",
+  "pos": "n",
+  "m": [
+   "(제품의) 모델, 기종",
+   "모형",
+   "본보기, 모범"
+  ],
+  "tier": 1,
+  "parts": [
+   2,
+   3,
+   5,
+   7
+  ],
+  "ex": "The latest *model* of the vacuum cleaner is lighter and much quieter than the previous one.",
+  "exKo": "그 진공청소기의 최신 모델은 이전 모델보다 더 가볍고 훨씬 조용하다.",
+  "col": [
+   {
+    "e": "latest model",
+    "k": "최신 모델"
+   },
+   {
+    "e": "model number",
+    "k": "모델 번호, 제품 번호"
+   },
+   {
+    "e": "business model",
+    "k": "사업 모델"
+   }
+  ],
+  "der": [
+   {
+    "w": "modeling",
+    "pos": "n",
+    "m": "모형 제작, 모델링"
+   }
+  ],
+  "para": [
+   "version",
+   "type",
+   "design"
+  ],
+  "ant": "",
+  "tip": "Part 2·3의 제품 문의 대화에서 model number(모델 번호), latest model(최신 모델)이 자주 나온다. 동사로 model A on B(B를 본떠 A를 만들다)라는 구문도 쓰인다.",
+  "q": {
+   "s": "Please include the ------- number of your printer when submitting a request for technical support.",
+   "o": [
+    "mode",
+    "model",
+    "mold",
+    "motto"
+   ],
+   "a": 1,
+   "k": "기술 지원 요청 시 기재하는 제품 식별 번호는 model number(모델 번호)이다. mode(방식), mold(틀, 곰팡이), motto(좌우명)는 number와 결합해 이런 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "inventive",
+  "pos": "adj",
+  "m": [
+   "창의적인, 독창적인",
+   "발명의 재능이 있는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Judges praised the student team for its *inventive* use of recycled plastic in furniture design.",
+  "exKo": "심사위원들은 가구 디자인에 재활용 플라스틱을 독창적으로 활용한 학생팀을 칭찬했다.",
+  "col": [
+   {
+    "e": "inventive solution",
+    "k": "독창적인 해결책"
+   },
+   {
+    "e": "inventive approach",
+    "k": "창의적인 접근법"
+   },
+   {
+    "e": "inventive design",
+    "k": "독창적인 디자인"
+   }
+  ],
+  "der": [
+   {
+    "w": "invent",
+    "pos": "v",
+    "m": "발명하다"
+   },
+   {
+    "w": "invention",
+    "pos": "n",
+    "m": "발명, 발명품"
+   },
+   {
+    "w": "inventiveness",
+    "pos": "n",
+    "m": "창의성"
+   }
+  ],
+  "para": [
+   "creative",
+   "innovative",
+   "original"
+  ],
+  "ant": "unimaginative",
+  "tip": "명사 앞에서 수식하는 형용사로, 동사 invent, 명사 invention, 사람명사 inventor와의 품사 구별 문제가 나온다. Part 7에서 creative, innovative로 바꿔 표현된다.",
+  "q": {
+   "s": "The marketing team came up with an ------- way to promote the product using only short social media videos.",
+   "o": [
+    "inventive",
+    "invention",
+    "inventor",
+    "invent"
+   ],
+   "a": 0,
+   "k": "관사 an과 명사 way 사이에서 명사를 수식하는 형용사 자리이므로 inventive가 정답이다. invention, inventor는 명사, invent는 동사다."
+  }
+ },
+ {
+  "w": "study",
+  "pos": "n",
+  "m": [
+   "연구, 조사",
+   "공부, 학습"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A recent *study* found that employees who take short breaks are more productive.",
+  "exKo": "최근 한 연구에서 짧은 휴식을 취하는 직원들의 생산성이 더 높은 것으로 나타났다.",
+  "col": [
+   {
+    "e": "conduct a study",
+    "k": "연구를 수행하다"
+   },
+   {
+    "e": "a study on",
+    "k": "~에 관한 연구"
+   },
+   {
+    "e": "feasibility study",
+    "k": "타당성 조사"
+   }
+  ],
+  "der": [
+   {
+    "w": "studious",
+    "pos": "adj",
+    "m": "학구적인"
+   }
+  ],
+  "para": [
+   "research",
+   "survey",
+   "analysis"
+  ],
+  "ant": "",
+  "tip": "conduct a study(연구를 수행하다), a study on/of(~에 관한 연구) 형태가 빈출이며 Part 7에서 research, survey로 바꿔 표현된다. 동사로는 '연구하다, 검토하다'라는 뜻이다.",
+  "q": {
+   "s": "According to a ------- published last month, demand for electric vehicles will double by 2030.",
+   "o": [
+    "studied",
+    "studious",
+    "study",
+    "studying"
+   ],
+   "a": 2,
+   "k": "관사 a 뒤 명사 자리이고 published last month의 수식을 받는 '연구(보고서)'가 필요하므로 study가 정답이다. studious는 형용사, studied와 studying은 동사 형태다."
+  }
+ },
+ {
+  "w": "research",
+  "pos": "n",
+  "m": [
+   "연구, 조사"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The university received a large grant to fund *research* on renewable energy.",
+  "exKo": "그 대학은 재생 에너지 연구에 쓸 거액의 보조금을 받았다.",
+  "col": [
+   {
+    "e": "conduct research",
+    "k": "연구를 하다"
+   },
+   {
+    "e": "market research",
+    "k": "시장 조사"
+   },
+   {
+    "e": "research on/into",
+    "k": "~에 관한 연구"
+   }
+  ],
+  "der": [
+   {
+    "w": "researcher",
+    "pos": "n",
+    "m": "연구원, 연구자"
+   }
+  ],
+  "para": [
+   "study",
+   "investigation",
+   "analysis"
+  ],
+  "ant": "",
+  "tip": "불가산명사라 a research로 쓰지 않으며, 셀 때는 a piece of research 또는 a study를 쓴다. research on/into(~에 관한 연구)의 전치사 짝도 출제된다.",
+  "q": {
+   "s": "The firm has conducted extensive ------- into how young consumers make purchasing decisions.",
+   "o": [
+    "researcher",
+    "research",
+    "researched",
+    "researching"
+   ],
+   "a": 1,
+   "k": "형용사 extensive의 수식을 받는 명사 자리이고 conduct research into(~에 대한 연구를 수행하다)라는 표현이므로 research가 정답이다. researcher는 사람명사라 conduct의 목적어로 맞지 않고, researched, researching은 동사 형태다."
+  }
+ },
+ {
+  "w": "researcher",
+  "pos": "n",
+  "m": [
+   "연구원, 연구자"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "*Researchers* at the institute are testing a new type of solar panel on rooftops.",
+  "exKo": "그 연구소의 연구원들은 옥상에서 새로운 유형의 태양광 패널을 시험하고 있다.",
+  "col": [
+   {
+    "e": "lead researcher",
+    "k": "수석 연구원"
+   },
+   {
+    "e": "medical researcher",
+    "k": "의학 연구원"
+   },
+   {
+    "e": "market researcher",
+    "k": "시장 조사원"
+   }
+  ],
+  "der": [
+   {
+    "w": "research",
+    "pos": "n",
+    "m": "연구, 조사"
+   }
+  ],
+  "para": [
+   "scientist",
+   "investigator",
+   "analyst"
+  ],
+  "ant": "",
+  "tip": "사람명사 researcher와 불가산명사 research를 구별하는 문제가 나온다. 가산명사이므로 단수일 때 관사(a/the)가 필요하다.",
+  "q": {
+   "s": "Dr. Okafor worked as a senior ------- at a pharmaceutical company before joining the university.",
+   "o": [
+    "research",
+    "researched",
+    "researching",
+    "researcher"
+   ],
+   "a": 3,
+   "k": "'~로 일하다'라는 worked as 뒤에는 직업을 나타내는 사람명사가 와야 하므로 researcher가 정답이다. research는 '연구'라는 불가산명사라 관사 a와 쓸 수 없다."
+  }
+ },
+ {
+  "w": "enhancement",
+  "pos": "n",
+  "m": [
+   "향상, 개선",
+   "강화"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The latest software update includes several *enhancements* to the security features.",
+  "exKo": "최신 소프트웨어 업데이트에는 보안 기능에 대한 몇 가지 개선 사항이 포함되어 있다.",
+  "col": [
+   {
+    "e": "enhancements to",
+    "k": "~의 개선 사항"
+   },
+   {
+    "e": "product enhancement",
+    "k": "제품 개선"
+   },
+   {
+    "e": "performance enhancement",
+    "k": "성능 향상"
+   }
+  ],
+  "der": [
+   {
+    "w": "enhance",
+    "pos": "v",
+    "m": "향상시키다"
+   },
+   {
+    "w": "enhanced",
+    "pos": "adj",
+    "m": "향상된"
+   }
+  ],
+  "para": [
+   "improvement",
+   "upgrade"
+  ],
+  "ant": "",
+  "tip": "enhancements to(~에 대한 개선 사항)처럼 전치사 to와 자주 쓰이며, 동사 enhance(향상시키다), 과거분사 enhanced(향상된)와의 품사 구별 문제가 나온다.",
+  "q": {
+   "s": "Customer feedback led to several ------- to the mobile banking app, including a faster log-in process.",
+   "o": [
+    "enhanced",
+    "enhances",
+    "enhancements",
+    "enhancing"
+   ],
+   "a": 2,
+   "k": "수량 형용사 several 뒤에는 복수 가산명사가 와야 하므로 enhancements가 정답이다. enhanced, enhances, enhancing은 모두 동사 형태다."
+  }
+ },
+ {
+  "w": "scientific",
+  "pos": "adj",
+  "m": [
+   "과학의, 과학적인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company's claims about the product are supported by *scientific* evidence from independent labs.",
+  "exKo": "제품에 대한 그 회사의 주장은 독립 연구소들의 과학적 근거로 뒷받침된다.",
+  "col": [
+   {
+    "e": "scientific research",
+    "k": "과학 연구"
+   },
+   {
+    "e": "scientific evidence",
+    "k": "과학적 근거"
+   },
+   {
+    "e": "scientific journal",
+    "k": "과학 저널"
+   }
+  ],
+  "der": [
+   {
+    "w": "science",
+    "pos": "n",
+    "m": "과학"
+   },
+   {
+    "w": "scientist",
+    "pos": "n",
+    "m": "과학자"
+   },
+   {
+    "w": "scientifically",
+    "pos": "adv",
+    "m": "과학적으로"
+   }
+  ],
+  "para": [
+   "research-based",
+   "technical",
+   "systematic"
+  ],
+  "ant": "unscientific",
+  "tip": "명사 앞에 오는 형용사로, 부사 scientifically와의 품사 구별 문제가 나온다. scientifically proven(과학적으로 입증된)은 광고 지문 빈출 표현이다.",
+  "q": {
+   "s": "Critics noted that the manufacturer's health claims had never been tested in a ------- way.",
+   "o": [
+    "scientifically",
+    "scientist",
+    "scientific",
+    "science"
+   ],
+   "a": 2,
+   "k": "관사 a와 명사 way 사이에서 명사를 수식하는 형용사 자리이므로 scientific이 정답이다. scientifically는 부사, scientist와 science는 명사다."
+  }
+ },
+ {
+  "w": "technology",
+  "pos": "n",
+  "m": [
+   "기술",
+   "과학 기술"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "New *technology* allows doctors to consult with patients through video calls.",
+  "exKo": "새로운 기술 덕분에 의사들은 화상 통화로 환자를 진료할 수 있다.",
+  "col": [
+   {
+    "e": "information technology",
+    "k": "정보 기술"
+   },
+   {
+    "e": "latest technology",
+    "k": "최신 기술"
+   },
+   {
+    "e": "adopt new technology",
+    "k": "신기술을 도입하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "technological",
+    "pos": "adj",
+    "m": "기술의"
+   },
+   {
+    "w": "technologically",
+    "pos": "adv",
+    "m": "기술적으로"
+   },
+   {
+    "w": "technician",
+    "pos": "n",
+    "m": "기술자"
+   }
+  ],
+  "para": [
+   "innovation",
+   "equipment"
+  ],
+  "ant": "",
+  "tip": "information technology(IT, 정보 기술)처럼 복합명사로 자주 쓰이며, 형용사 technological, 부사 technologically와의 품사 구별 문제가 나온다.",
+  "q": {
+   "s": "Investing in the latest ------- has helped the clinic cut patient waiting times in half.",
+   "o": [
+    "technological",
+    "technology",
+    "technologically",
+    "technical"
+   ],
+   "a": 1,
+   "k": "형용사 latest의 수식을 받는 명사 자리이므로 technology가 정답이다. technological과 technical은 형용사, technologically는 부사다."
+  }
+ },
+ {
+  "w": "technological",
+  "pos": "adj",
+  "m": [
+   "기술의, 기술적인",
+   "과학 기술의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Constant *technological* change means employees must keep learning new skills throughout their careers.",
+  "exKo": "끊임없는 기술 변화 때문에 직원들은 직장 생활 내내 새로운 능력을 계속 익혀야 한다.",
+  "col": [
+   {
+    "e": "technological advances",
+    "k": "기술 발전"
+   },
+   {
+    "e": "technological innovation",
+    "k": "기술 혁신"
+   },
+   {
+    "e": "technological change",
+    "k": "기술 변화"
+   }
+  ],
+  "der": [
+   {
+    "w": "technology",
+    "pos": "n",
+    "m": "기술"
+   },
+   {
+    "w": "technologically",
+    "pos": "adv",
+    "m": "기술적으로"
+   }
+  ],
+  "para": [
+   "technical",
+   "scientific"
+  ],
+  "ant": "",
+  "tip": "명사를 수식하는 형용사 자리에 들어가며 technological advances(기술 발전)가 빈출 표현이다. 부사 technologically(technologically advanced 기술적으로 앞선)와의 품사 구별도 출제된다.",
+  "q": {
+   "s": "Recent ------- advances have made it possible to manufacture solar panels at a much lower cost.",
+   "o": [
+    "technologically",
+    "technologies",
+    "technological",
+    "technologist"
+   ],
+   "a": 2,
+   "k": "명사 advances를 수식하는 형용사 자리이므로 technological이 정답이다. technologically는 부사, technologies와 technologist는 명사다."
+  }
+ },
+ {
+  "w": "method",
+  "pos": "n",
+  "m": [
+   "방법, 방식"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Customers can choose their preferred payment *method* when checking out online.",
+  "exKo": "고객은 온라인 결제 시 원하는 결제 방법을 선택할 수 있다.",
+  "col": [
+   {
+    "e": "payment method",
+    "k": "결제 방법"
+   },
+   {
+    "e": "method of",
+    "k": "~의 방법"
+   },
+   {
+    "e": "effective method",
+    "k": "효과적인 방법"
+   }
+  ],
+  "der": [
+   {
+    "w": "methodical",
+    "pos": "adj",
+    "m": "체계적인, 꼼꼼한"
+   },
+   {
+    "w": "methodology",
+    "pos": "n",
+    "m": "방법론"
+   }
+  ],
+  "para": [
+   "way",
+   "approach",
+   "technique"
+  ],
+  "ant": "",
+  "tip": "method of -ing/명사(~하는 방법) 또는 method for 형태로 쓰며 payment method(결제 방법)가 빈출이다. 형용사 methodical은 '체계적인, 꼼꼼한'이라는 뜻으로 사람을 묘사할 때도 쓰인다.",
+  "q": {
+   "s": "Bank transfers remain the most common ------- of payment among our corporate clients.",
+   "o": [
+    "motive",
+    "margin",
+    "measure",
+    "method"
+   ],
+   "a": 3,
+   "k": "'가장 흔한 결제 방법'이라는 뜻이 되어야 하므로 method가 정답이다. motive(동기), margin(차이, 이윤), measure(조치, 척도)는 of payment와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "technique",
+  "pos": "n",
+  "m": [
+   "기법, 기술",
+   "솜씨"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The workshop teaches sales staff *techniques* for handling difficult customers politely.",
+  "exKo": "그 워크숍은 영업 직원들에게 까다로운 고객을 정중하게 응대하는 기법을 가르친다.",
+  "col": [
+   {
+    "e": "marketing techniques",
+    "k": "마케팅 기법"
+   },
+   {
+    "e": "technique for",
+    "k": "~을 위한 기법"
+   },
+   {
+    "e": "management technique",
+    "k": "관리 기법"
+   }
+  ],
+  "der": [
+   {
+    "w": "technical",
+    "pos": "adj",
+    "m": "기술적인, 전문적인"
+   },
+   {
+    "w": "technician",
+    "pos": "n",
+    "m": "기술자"
+   }
+  ],
+  "para": [
+   "method",
+   "approach",
+   "skill"
+  ],
+  "ant": "",
+  "tip": "technique(기법)는 가산명사, technology(기술)는 주로 불가산명사로 쓰인다. 사람명사 technician(기술자), 형용사 technical과의 구별 문제도 나온다.",
+  "q": {
+   "s": "Ms. Lim will demonstrate several ------- for reducing stress in the workplace during her presentation.",
+   "o": [
+    "technicians",
+    "technicalities",
+    "technical",
+    "techniques"
+   ],
+   "a": 3,
+   "k": "발표에서 시연할 수 있고 for reducing stress의 수식을 받는 것은 '기법'이므로 techniques가 정답이다. technicians(기술자)는 사람, technicalities(세부 조항)는 의미가 맞지 않고, technical은 형용사다."
+  }
+ },
+ {
+  "w": "improve",
+  "pos": "v",
+  "m": [
+   "개선하다, 향상시키다",
+   "나아지다"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new layout of the store is meant to *improve* the flow of customers during busy hours.",
+  "exKo": "매장의 새 배치는 혼잡한 시간대의 고객 동선을 개선하기 위한 것이다.",
+  "col": [
+   {
+    "e": "improve efficiency",
+    "k": "효율을 높이다"
+   },
+   {
+    "e": "improve customer service",
+    "k": "고객 서비스를 개선하다"
+   },
+   {
+    "e": "significantly improved",
+    "k": "크게 개선된"
+   }
+  ],
+  "der": [
+   {
+    "w": "improvement",
+    "pos": "n",
+    "m": "개선, 향상"
+   },
+   {
+    "w": "improved",
+    "pos": "adj",
+    "m": "개선된"
+   }
+  ],
+  "para": [
+   "enhance",
+   "upgrade",
+   "better"
+  ],
+  "ant": "worsen",
+  "tip": "타동사(~을 개선하다)와 자동사(나아지다)로 모두 쓰인다. 명사 improvement는 improvement in/to(~의 개선)처럼 전치사와 함께 출제된다.",
+  "q": {
+   "s": "The call center is offering staff extra training in order to ------- the quality of its customer service.",
+   "o": [
+    "improvement",
+    "improved",
+    "improve",
+    "improving"
+   ],
+   "a": 2,
+   "k": "in order to 뒤에는 동사원형이 오므로 improve가 정답이다. improvement는 명사이고, improved, improving은 분사 형태다."
+  }
+ },
+ {
+  "w": "inventor",
+  "pos": "n",
+  "m": [
+   "발명가"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *inventor* of the folding bicycle will give a talk at the design fair this weekend.",
+  "exKo": "접이식 자전거의 발명가가 이번 주말 디자인 박람회에서 강연을 할 것이다.",
+  "col": [
+   {
+    "e": "inventor of",
+    "k": "~의 발명가"
+   },
+   {
+    "e": "young inventor",
+    "k": "젊은 발명가"
+   },
+   {
+    "e": "award-winning inventor",
+    "k": "수상 경력이 있는 발명가"
+   }
+  ],
+  "der": [
+   {
+    "w": "invent",
+    "pos": "v",
+    "m": "발명하다"
+   },
+   {
+    "w": "invention",
+    "pos": "n",
+    "m": "발명, 발명품"
+   },
+   {
+    "w": "inventive",
+    "pos": "adj",
+    "m": "창의적인"
+   }
+  ],
+  "para": [
+   "creator",
+   "designer",
+   "originator"
+  ],
+  "ant": "",
+  "tip": "사람명사 inventor와 사물명사 invention(발명품)을 구별하는 문제가 자주 나온다. Part 7에서 creator, originator로 바꿔 표현된다.",
+  "q": {
+   "s": "Mr. Barros, the ------- of a popular kitchen gadget, now runs a consulting business for start-ups.",
+   "o": [
+    "invention",
+    "inventor",
+    "inventive",
+    "invent"
+   ],
+   "a": 1,
+   "k": "Barros 씨와 동격을 이루는 사람명사가 필요하므로 inventor가 정답이다. invention은 '발명(품)'이라 사람과 동격이 될 수 없고, inventive는 형용사, invent는 동사다."
+  }
+ },
+ {
+  "w": "invention",
+  "pos": "n",
+  "m": [
+   "발명품",
+   "발명"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Her latest *invention* is a water bottle that reminds users when to drink.",
+  "exKo": "그녀의 최신 발명품은 사용자에게 물 마실 때를 알려 주는 물병이다.",
+  "col": [
+   {
+    "e": "patent an invention",
+    "k": "발명품의 특허를 받다"
+   },
+   {
+    "e": "new invention",
+    "k": "새로운 발명품"
+   },
+   {
+    "e": "the invention of",
+    "k": "~의 발명"
+   }
+  ],
+  "der": [
+   {
+    "w": "invent",
+    "pos": "v",
+    "m": "발명하다"
+   },
+   {
+    "w": "inventor",
+    "pos": "n",
+    "m": "발명가"
+   }
+  ],
+  "para": [
+   "innovation",
+   "creation",
+   "device"
+  ],
+  "ant": "",
+  "tip": "가산명사(발명품)와 불가산명사(발명 행위)로 모두 쓰인다. 사람명사 inventor와의 구별, patent an invention(발명품의 특허를 받다) 표현이 출제된다.",
+  "q": {
+   "s": "Dr. Shah applied for a patent to protect her ------- from being copied by competitors.",
+   "o": [
+    "inventor",
+    "inventive",
+    "invention",
+    "invent"
+   ],
+   "a": 2,
+   "k": "소유격 her 뒤 명사 자리이고 경쟁사의 모방으로부터 보호하려는 대상은 사물이므로 invention이 정답이다. inventor는 사람명사라 의미가 맞지 않고, inventive는 형용사, invent는 동사다."
+  }
+ },
+ {
+  "w": "product development",
+  "pos": "phr",
+  "m": [
+   "제품 개발"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Torres leads a *product development* team of eight engineers and two designers.",
+  "exKo": "Torres 씨는 엔지니어 8명과 디자이너 2명으로 구성된 제품 개발팀을 이끈다.",
+  "col": [
+   {
+    "e": "product development team",
+    "k": "제품 개발팀"
+   },
+   {
+    "e": "head of product development",
+    "k": "제품 개발 책임자"
+   },
+   {
+    "e": "product development cycle",
+    "k": "제품 개발 주기"
+   }
+  ],
+  "der": [],
+  "para": [
+   "R&D",
+   "product design"
+  ],
+  "ant": "",
+  "tip": "부서·직책 이름(head of product development 등)으로 Part 7 이메일 서명이나 조직 개편 공지에 자주 나온다. product developer(제품 개발자)는 사람을 가리킨다.",
+  "q": {
+   "s": "Mr. Grant was named head of product ------- after his team launched three successful items.",
+   "o": [
+    "developing",
+    "development",
+    "developed",
+    "develop"
+   ],
+   "a": 1,
+   "k": "head of product development는 '제품 개발 책임자'라는 뜻으로, 전치사 of 뒤에서 복합명사를 완성하는 명사 development가 정답이다. developing, developed, develop은 동사 형태다."
+  }
+ },
+ {
+  "w": "creativity",
+  "pos": "n",
+  "m": [
+   "창의성, 창의력",
+   "독창성"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The advertising agency is known for the *creativity* of its television commercials.",
+  "exKo": "그 광고 대행사는 텔레비전 광고의 창의성으로 유명하다.",
+  "col": [
+   {
+    "e": "encourage creativity",
+    "k": "창의성을 장려하다"
+   },
+   {
+    "e": "creativity and innovation",
+    "k": "창의성과 혁신"
+   },
+   {
+    "e": "show creativity",
+    "k": "창의력을 보여 주다"
+   }
+  ],
+  "der": [
+   {
+    "w": "create",
+    "pos": "v",
+    "m": "만들다, 창조하다"
+   },
+   {
+    "w": "creative",
+    "pos": "adj",
+    "m": "창의적인"
+   },
+   {
+    "w": "creatively",
+    "pos": "adv",
+    "m": "창의적으로"
+   }
+  ],
+  "para": [
+   "originality",
+   "imagination",
+   "inventiveness"
+  ],
+  "ant": "",
+  "tip": "불가산명사로 형용사 creative, 부사 creatively와의 품사 구별 문제가 나온다. 사람명사 creator(창작자)와도 구별한다.",
+  "q": {
+   "s": "The open office layout is intended to encourage ------- and collaboration among employees.",
+   "o": [
+    "creative",
+    "creatively",
+    "create",
+    "creativity"
+   ],
+   "a": 3,
+   "k": "동사 encourage의 목적어이자 and 뒤 명사 collaboration과 병렬을 이루는 명사 자리이므로 creativity가 정답이다. creative는 형용사, creatively는 부사, create는 동사다."
+  }
+ },
+ {
+  "w": "original",
+  "pos": "adj",
+  "m": [
+   "원래의, 최초의",
+   "독창적인",
+   "원본의"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The museum restored the building's *original* wooden floors during the renovation.",
+  "exKo": "박물관은 보수 공사 중에 건물의 원래 나무 바닥을 복원했다.",
+  "col": [
+   {
+    "e": "original receipt",
+    "k": "영수증 원본"
+   },
+   {
+    "e": "original plan",
+    "k": "원래 계획"
+   },
+   {
+    "e": "original idea",
+    "k": "독창적인 아이디어"
+   }
+  ],
+  "der": [
+   {
+    "w": "originally",
+    "pos": "adv",
+    "m": "원래, 처음에"
+   },
+   {
+    "w": "originality",
+    "pos": "n",
+    "m": "독창성"
+   },
+   {
+    "w": "originate",
+    "pos": "v",
+    "m": "비롯되다, 유래하다"
+   }
+  ],
+  "para": [
+   "initial",
+   "first",
+   "innovative"
+  ],
+  "ant": "",
+  "tip": "반품·환불 지문에서 original receipt(영수증 원본), original packaging(원래 포장)이 빈출이다. 부사 originally(원래)와의 품사 구별 문제도 자주 나온다.",
+  "q": {
+   "s": "Items may be returned within 30 days if they are still in their ------- packaging.",
+   "o": [
+    "original",
+    "originally",
+    "origin",
+    "originate"
+   ],
+   "a": 0,
+   "k": "소유격 their와 명사 packaging 사이에서 명사를 수식하는 형용사 자리이므로 original이 정답이다. originally는 부사, origin은 명사, originate는 동사다."
+  }
+ },
+ {
+  "w": "concept",
+  "pos": "n",
+  "m": [
+   "개념",
+   "구상, 콘셉트"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The restaurant's *concept* combines traditional Korean dishes with a modern café atmosphere.",
+  "exKo": "그 식당의 콘셉트는 전통 한식과 현대적인 카페 분위기를 결합한 것이다.",
+  "col": [
+   {
+    "e": "design concept",
+    "k": "디자인 콘셉트"
+   },
+   {
+    "e": "basic concept",
+    "k": "기본 개념"
+   },
+   {
+    "e": "the concept of",
+    "k": "~의 개념"
+   }
+  ],
+  "der": [
+   {
+    "w": "conceptual",
+    "pos": "adj",
+    "m": "개념의, 구상의"
+   },
+   {
+    "w": "conceive",
+    "pos": "v",
+    "m": "생각해 내다, 구상하다"
+   }
+  ],
+  "para": [
+   "idea",
+   "notion",
+   "theme"
+  ],
+  "ant": "",
+  "tip": "가산명사로 a concept, the concept of(~의 개념)처럼 쓰인다. Part 7에서 idea, theme으로 바꿔 표현되며 형용사 conceptual(개념상의)도 함께 알아 둔다.",
+  "q": {
+   "s": "The architect presented her initial design ------- to the board before drawing up detailed plans.",
+   "o": [
+    "concept",
+    "consent",
+    "conflict",
+    "contest"
+   ],
+   "a": 0,
+   "k": "세부 도면을 그리기 전에 이사회에 제시한 것은 초기 디자인 구상(concept)이다. consent(동의), conflict(갈등), contest(대회)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "demonstration",
+  "pos": "n",
+  "m": [
+   "(제품) 시연, 설명",
+   "입증",
+   "시위"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   5,
+   7
+  ],
+  "ex": "A sales representative gave the office staff a short *demonstration* of the new coffee machine.",
+  "exKo": "영업 사원이 사무실 직원들에게 새 커피 머신을 짧게 시연해 보였다.",
+  "col": [
+   {
+    "e": "give a demonstration",
+    "k": "시연하다"
+   },
+   {
+    "e": "product demonstration",
+    "k": "제품 시연"
+   },
+   {
+    "e": "demonstration of",
+    "k": "~의 시연"
+   }
+  ],
+  "der": [
+   {
+    "w": "demonstrate",
+    "pos": "v",
+    "m": "시연하다, 입증하다"
+   },
+   {
+    "w": "demonstrator",
+    "pos": "n",
+    "m": "시연자, 시위 참가자"
+   }
+  ],
+  "para": [
+   "presentation",
+   "display",
+   "showing"
+  ],
+  "ant": "",
+  "tip": "give/provide a demonstration of(~을 시연하다)가 빈출이며, Part 3·4에서 '다음에 일어날 일'로 product demonstration(제품 시연)이 자주 나온다. 동사 demonstrate와의 품사 구별에 주의한다.",
+  "q": {
+   "s": "After lunch, attendees will watch a ------- of the new inventory software in Room 204.",
+   "o": [
+    "demonstration",
+    "demonstrate",
+    "demonstrated",
+    "demonstrative"
+   ],
+   "a": 0,
+   "k": "관사 a 뒤 명사 자리이므로 demonstration이 정답이다. demonstrate는 동사, demonstrated는 과거형·과거분사, demonstrative(감정을 드러내는)는 형용사다."
+  }
+ },
+ {
+  "w": "discontinue",
+  "pos": "v",
+  "m": [
+   "(생산·판매를) 중단하다, 단종하다",
+   "(서비스를) 중지하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The manufacturer has decided to *discontinue* its oldest laptop model because of weak sales.",
+  "exKo": "그 제조업체는 판매 부진으로 가장 오래된 노트북 모델을 단종하기로 결정했다.",
+  "col": [
+   {
+    "e": "discontinue a product",
+    "k": "제품을 단종하다"
+   },
+   {
+    "e": "discontinued item",
+    "k": "단종 제품"
+   },
+   {
+    "e": "discontinue a service",
+    "k": "서비스를 중단하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "discontinuation",
+    "pos": "n",
+    "m": "중단, 단종"
+   },
+   {
+    "w": "discontinued",
+    "pos": "adj",
+    "m": "단종된"
+   }
+  ],
+  "para": [
+   "stop producing",
+   "phase out",
+   "cease"
+  ],
+  "ant": "continue",
+  "tip": "과거분사 discontinued(단종된)가 discontinued item/model 형태로 Part 7 반품·재고 지문에 자주 나온다. 타동사이므로 discontinue 뒤에 바로 목적어를 쓴다.",
+  "q": {
+   "s": "Because of low demand, the shuttle bus service between the hotel and the airport will be ------- next month.",
+   "o": [
+    "discontinued",
+    "disconnected",
+    "discouraged",
+    "dismissed"
+   ],
+   "a": 0,
+   "k": "수요가 적어 셔틀버스 운행이 '중단될' 예정이므로 discontinued가 정답이다. disconnected(연결이 끊긴)는 전화·전기 등에 쓰고, discouraged(낙담한), dismissed(해고된, 기각된)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "analytical",
+  "pos": "adj",
+  "m": [
+   "분석적인",
+   "분석의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The position requires strong *analytical* skills and experience with financial software.",
+  "exKo": "그 직책에는 뛰어난 분석 능력과 재무 소프트웨어 사용 경험이 필요하다.",
+  "col": [
+   {
+    "e": "analytical skills",
+    "k": "분석 능력"
+   },
+   {
+    "e": "analytical thinking",
+    "k": "분석적 사고"
+   },
+   {
+    "e": "analytical tools",
+    "k": "분석 도구"
+   }
+  ],
+  "der": [
+   {
+    "w": "analyze",
+    "pos": "v",
+    "m": "분석하다"
+   },
+   {
+    "w": "analysis",
+    "pos": "n",
+    "m": "분석"
+   },
+   {
+    "w": "analyst",
+    "pos": "n",
+    "m": "분석가"
+   }
+  ],
+  "para": [
+   "logical",
+   "systematic",
+   "investigative"
+  ],
+  "ant": "",
+  "tip": "채용 공고의 analytical skills(분석 능력)가 대표 빈출 표현이다. 명사 analysis(분석)·analyst(분석가), 동사 analyze와의 품사 구별 문제가 나온다.",
+  "q": {
+   "s": "Applicants for the data specialist position should have excellent ------- and communication skills.",
+   "o": [
+    "analytically",
+    "analyst",
+    "analyze",
+    "analytical"
+   ],
+   "a": 3,
+   "k": "명사 skills를 수식하는 형용사 자리이므로 '분석적인'이라는 뜻의 analytical이 정답이다. analytically는 부사, analyst는 사람명사, analyze는 동사다."
+  }
+ },
+ {
+  "w": "measurement",
+  "pos": "n",
+  "m": [
+   "치수, 측정값",
+   "측정"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Please check the *measurements* of the doorway before ordering a new sofa.",
+  "exKo": "새 소파를 주문하기 전에 출입구의 치수를 확인하기 바란다.",
+  "col": [
+   {
+    "e": "take measurements",
+    "k": "치수를 재다"
+   },
+   {
+    "e": "accurate measurements",
+    "k": "정확한 치수"
+   },
+   {
+    "e": "unit of measurement",
+    "k": "측정 단위"
+   }
+  ],
+  "der": [
+   {
+    "w": "measure",
+    "pos": "v",
+    "m": "측정하다, 재다"
+   },
+   {
+    "w": "measurable",
+    "pos": "adj",
+    "m": "측정할 수 있는, 눈에 띄는"
+   }
+  ],
+  "para": [
+   "dimensions",
+   "size"
+  ],
+  "ant": "",
+  "tip": "치수를 뜻할 때는 주로 복수형 measurements로 쓰며 take measurements(치수를 재다)가 빈출이다. measure는 명사로 '조치'(take measures)라는 뜻도 있어 혼동하지 않도록 한다.",
+  "q": {
+   "s": "The tailor took Mr. Ahmed's ------- before making the suit for his wedding.",
+   "o": [
+    "measurements",
+    "measuring",
+    "measurable",
+    "measured"
+   ],
+   "a": 0,
+   "k": "소유격 뒤 명사 자리이고 take one's measurements는 '~의 치수를 재다'라는 뜻이므로 measurements가 정답이다. measurable은 형용사, measured는 과거분사이며, measuring은 이 표현에 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "accurate",
+  "pos": "adj",
+  "m": [
+   "정확한",
+   "정밀한"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Please make sure the shipping address on the form is complete and *accurate*.",
+  "exKo": "양식에 적힌 배송 주소가 빠짐없이 정확한지 확인하기 바란다.",
+  "col": [
+   {
+    "e": "accurate information",
+    "k": "정확한 정보"
+   },
+   {
+    "e": "accurate records",
+    "k": "정확한 기록"
+   },
+   {
+    "e": "highly accurate",
+    "k": "매우 정확한"
+   }
+  ],
+  "der": [
+   {
+    "w": "accuracy",
+    "pos": "n",
+    "m": "정확성"
+   },
+   {
+    "w": "accurately",
+    "pos": "adv",
+    "m": "정확하게"
+   },
+   {
+    "w": "inaccurate",
+    "pos": "adj",
+    "m": "부정확한"
+   }
+  ],
+  "para": [
+   "correct",
+   "precise",
+   "exact"
+  ],
+  "ant": "inaccurate",
+  "tip": "be동사 뒤 보어나 명사 앞 수식어 자리에 들어가며, 명사 accuracy, 부사 accurately와의 품사 구별 문제가 단골이다.",
+  "q": {
+   "s": "The new weather app provides more ------- forecasts than any of its competitors.",
+   "o": [
+    "accurately",
+    "accuracy",
+    "accurate",
+    "most accurately"
+   ],
+   "a": 2,
+   "k": "비교급 more와 명사 forecasts 사이에서 명사를 수식하는 형용사 자리이므로 accurate가 정답이다. accurately, most accurately는 부사, accuracy는 명사다."
+  }
+ },
+ {
+  "w": "accuracy",
+  "pos": "n",
+  "m": [
+   "정확성, 정확도"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Editors check every article for *accuracy* before it appears on the company's website.",
+  "exKo": "편집자들은 모든 기사가 회사 웹사이트에 게재되기 전에 정확성을 점검한다.",
+  "col": [
+   {
+    "e": "check for accuracy",
+    "k": "정확한지 확인하다"
+   },
+   {
+    "e": "with accuracy",
+    "k": "정확하게"
+   },
+   {
+    "e": "ensure accuracy",
+    "k": "정확성을 보장하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "accurate",
+    "pos": "adj",
+    "m": "정확한"
+   },
+   {
+    "w": "accurately",
+    "pos": "adv",
+    "m": "정확하게"
+   }
+  ],
+  "para": [
+   "precision",
+   "correctness",
+   "exactness"
+  ],
+  "ant": "inaccuracy",
+  "tip": "check A for accuracy(A가 정확한지 점검하다), with accuracy(= accurately) 형태가 빈출이며 형용사 accurate와의 품사 구별 문제가 나온다.",
+  "q": {
+   "s": "Please review the numbers in the attached report carefully to ensure their -------.",
+   "o": [
+    "accuracy",
+    "accurate",
+    "accurately",
+    "inaccurate"
+   ],
+   "a": 0,
+   "k": "소유격 their 뒤 명사 자리이고 ensure의 목적어가 필요하므로 명사 accuracy가 정답이다. accurate, inaccurate는 형용사, accurately는 부사다."
+  }
+ },
+ {
+  "w": "validate",
+  "pos": "v",
+  "m": [
+   "(타당성을) 입증하다, 검증하다",
+   "(주차권 등을) 확인해 인증하다",
+   "승인하다"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   5,
+   7
+  ],
+  "ex": "Further testing is needed to *validate* the results of the initial experiment.",
+  "exKo": "초기 실험 결과를 검증하려면 추가 테스트가 필요하다.",
+  "col": [
+   {
+    "e": "validate results",
+    "k": "결과를 검증하다"
+   },
+   {
+    "e": "validate a parking ticket",
+    "k": "주차권을 인증받다"
+   },
+   {
+    "e": "validate data",
+    "k": "데이터를 검증하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "valid",
+    "pos": "adj",
+    "m": "유효한, 타당한"
+   },
+   {
+    "w": "validation",
+    "pos": "n",
+    "m": "검증, 확인"
+   },
+   {
+    "w": "validity",
+    "pos": "n",
+    "m": "유효성, 타당성"
+   }
+  ],
+  "para": [
+   "confirm",
+   "verify",
+   "prove"
+  ],
+  "ant": "invalidate",
+  "tip": "Part 4·7에서 주차권 인증(validate a parking ticket) 표현이 자주 나온다. 형용사 valid(유효한)와 명사 validity(유효성)·validation(검증)의 품사 구별도 출제된다.",
+  "q": {
+   "s": "Guests who park in the hotel garage should have their parking tickets ------- at the front desk.",
+   "o": [
+    "validate",
+    "validated",
+    "validity",
+    "validation"
+   ],
+   "a": 1,
+   "k": "have + 목적어 + 과거분사 구조로 '주차권을 인증받다'라는 뜻이므로 validated가 정답이다. 주차권이 직접 인증하는 것이 아니므로 동사원형 validate는 맞지 않고, validity와 validation은 명사다."
+  }
+ },
+ {
+  "w": "pilot",
+  "pos": "adj",
+  "m": [
+   "시범의, 시험적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bank launched a *pilot* program that lets customers open accounts using only their phones.",
+  "exKo": "그 은행은 고객이 휴대폰만으로 계좌를 개설할 수 있는 시범 프로그램을 시작했다.",
+  "col": [
+   {
+    "e": "pilot program",
+    "k": "시범 프로그램"
+   },
+   {
+    "e": "pilot project",
+    "k": "시범 사업"
+   },
+   {
+    "e": "pilot study",
+    "k": "예비 연구"
+   }
+  ],
+  "der": [],
+  "para": [
+   "trial",
+   "test",
+   "experimental"
+  ],
+  "ant": "",
+  "tip": "pilot program/project(시범 사업)처럼 명사 앞에서 '시범의'라는 뜻으로 쓰이며, 동사로는 '시범 운영하다'라는 뜻이다. 듣기에서 '조종사'와 혼동하지 않도록 문맥을 확인한다.",
+  "q": {
+   "s": "Before introducing the four-day workweek company-wide, the firm will test it in a six-month ------- program.",
+   "o": [
+    "pivot",
+    "plot",
+    "pilot",
+    "pillar"
+   ],
+   "a": 2,
+   "k": "전사 도입에 앞서 6개월간 시험해 보는 프로그램은 pilot program(시범 프로그램)이다. pivot(중심축), plot(줄거리, 구획), pillar(기둥)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "roll out",
+  "pos": "phr",
+  "m": [
+   "(신제품·서비스를) 출시하다, 공개하다",
+   "(단계적으로) 도입하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The airline plans to *roll out* free onboard Wi-Fi on all of its long-haul flights next spring.",
+  "exKo": "그 항공사는 내년 봄 모든 장거리 항공편에 무료 기내 와이파이를 도입할 계획이다.",
+  "col": [
+   {
+    "e": "roll out a product",
+    "k": "제품을 출시하다"
+   },
+   {
+    "e": "roll out nationwide",
+    "k": "전국적으로 출시하다"
+   },
+   {
+    "e": "gradually roll out",
+    "k": "단계적으로 도입하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "rollout",
+    "pos": "n",
+    "m": "출시, 도입"
+   }
+  ],
+  "para": [
+   "launch",
+   "introduce",
+   "release"
+  ],
+  "ant": "",
+  "tip": "명사형은 붙여 쓴 rollout(출시, 도입)이며 Part 7에서 launch, introduce로 바꿔 표현된다. 목적어가 대명사이면 roll it out처럼 사이에 넣는다.",
+  "q": {
+   "s": "The software company will ------- out its new accounting program in stages, starting with small businesses.",
+   "o": [
+    "wear",
+    "roll",
+    "break",
+    "drop"
+   ],
+   "a": 1,
+   "k": "roll out은 '(신제품을) 출시하다, (단계적으로) 도입하다'라는 뜻으로 in stages(단계적으로)와 잘 어울린다. wear out(닳게 하다)은 의미가 맞지 않고, break out(발생하다)과 drop out(중도 하차하다)은 목적어를 취하지 않는다."
+  }
+ },
+ {
+  "w": "novel",
+  "pos": "adj",
+  "m": [
+   "새로운, 참신한",
+   "기발한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The start-up has come up with a *novel* way to recycle used coffee grounds.",
+  "exKo": "그 신생 기업은 사용한 커피 찌꺼기를 재활용하는 참신한 방법을 생각해 냈다.",
+  "col": [
+   {
+    "e": "novel idea",
+    "k": "참신한 아이디어"
+   },
+   {
+    "e": "novel approach",
+    "k": "새로운 접근법"
+   },
+   {
+    "e": "novel solution",
+    "k": "새로운 해결책"
+   }
+  ],
+  "der": [
+   {
+    "w": "novelty",
+    "pos": "n",
+    "m": "새로움, 참신함"
+   }
+  ],
+  "para": [
+   "new",
+   "original",
+   "innovative"
+  ],
+  "ant": "conventional",
+  "tip": "명사(소설)로 익숙하지만 토익 RC에서는 형용사로 '참신한, 새로운'이라는 뜻으로 쓰여 혼동을 노린다. Part 7에서 new, innovative, original로 바꿔 표현된다.",
+  "q": {
+   "s": "Dr. Chen's ------- approach to treating sports injuries has attracted attention from doctors around the world.",
+   "o": [
+    "novice",
+    "notary",
+    "nominal",
+    "novel"
+   ],
+   "a": 3,
+   "k": "명사 approach를 수식해 '참신한 접근법'이라는 뜻을 만드는 형용사 novel이 정답이다. novice(초보자), notary(공증인)는 명사이고, nominal(명목상의, 아주 적은)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "pioneer",
+  "pos": "n",
+  "m": [
+   "선구자, 개척자"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company is a *pioneer* in the production of electric delivery trucks.",
+  "exKo": "그 회사는 전기 배송 트럭 생산의 선구자다.",
+  "col": [
+   {
+    "e": "pioneer in",
+    "k": "~의 선구자"
+   },
+   {
+    "e": "pioneer of",
+    "k": "~의 개척자"
+   },
+   {
+    "e": "industry pioneer",
+    "k": "업계의 선구자"
+   }
+  ],
+  "der": [
+   {
+    "w": "pioneering",
+    "pos": "adj",
+    "m": "선구적인"
+   }
+  ],
+  "para": [
+   "innovator",
+   "trailblazer",
+   "leader"
+  ],
+  "ant": "follower",
+  "tip": "a pioneer in/of(~의 선구자) 형태로 쓰인다. 동사로는 '처음 개발하다, 개척하다'(pioneer a technique)라는 뜻이고, 형용사 pioneering(선구적인)도 Part 7에 자주 나온다.",
+  "q": {
+   "s": "Ms. Watanabe is widely regarded as a ------- in the field of sustainable architecture.",
+   "o": [
+    "pioneering",
+    "pioneered",
+    "pioneers",
+    "pioneer"
+   ],
+   "a": 3,
+   "k": "관사 a 뒤 단수 명사 자리이고 regarded as의 보어로 사람을 나타내야 하므로 pioneer가 정답이다. pioneering은 형용사, pioneered는 과거형, pioneers는 복수형이라 관사 a와 쓸 수 없다."
+  }
+ },
+ {
+  "w": "groundbreaking",
+  "pos": "adj",
+  "m": [
+   "획기적인",
+   "선구적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The scientist received an international award for her *groundbreaking* work on battery storage.",
+  "exKo": "그 과학자는 배터리 저장에 관한 획기적인 연구로 국제적인 상을 받았다.",
+  "col": [
+   {
+    "e": "groundbreaking research",
+    "k": "획기적인 연구"
+   },
+   {
+    "e": "groundbreaking discovery",
+    "k": "획기적인 발견"
+   },
+   {
+    "e": "groundbreaking ceremony",
+    "k": "기공식"
+   }
+  ],
+  "der": [],
+  "para": [
+   "innovative",
+   "revolutionary",
+   "pioneering"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 innovative, revolutionary로 바꿔 표현된다. groundbreaking ceremony는 '기공식(착공식)'이라는 뜻으로 건설 관련 지문에 나온다.",
+  "q": {
+   "s": "The documentary describes the ------- discovery that changed the way doctors treat heart disease.",
+   "o": [
+    "groundbreaking",
+    "outspoken",
+    "unattended",
+    "underpaid"
+   ],
+   "a": 0,
+   "k": "의사들의 심장병 치료 방식을 바꾼 발견을 수식하므로 '획기적인'이라는 뜻의 groundbreaking이 정답이다. outspoken(거침없이 말하는), unattended(방치된), underpaid(저임금의)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "high-tech",
+  "pos": "adj",
+  "m": [
+   "첨단 기술의, 최첨단의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new stadium features *high-tech* screens that display replays from multiple angles.",
+  "exKo": "새 경기장에는 여러 각도에서 리플레이 장면을 보여 주는 첨단 스크린이 있다.",
+  "col": [
+   {
+    "e": "high-tech industry",
+    "k": "첨단 산업"
+   },
+   {
+    "e": "high-tech equipment",
+    "k": "첨단 장비"
+   },
+   {
+    "e": "high-tech company",
+    "k": "첨단 기술 기업"
+   }
+  ],
+  "der": [],
+  "para": [
+   "advanced",
+   "state-of-the-art",
+   "cutting-edge"
+  ],
+  "ant": "low-tech",
+  "tip": "명사 앞에서 수식하는 형용사로, Part 7에서 state-of-the-art, cutting-edge, advanced로 바꿔 표현된다. 철자는 하이픈을 넣어 high-tech로 쓴다.",
+  "q": {
+   "s": "The city hopes the new research park will attract ------- companies and create well-paid jobs.",
+   "o": [
+    "high-rise",
+    "high-tech",
+    "highlighted",
+    "high-pitched"
+   ],
+   "a": 1,
+   "k": "첨단 연구 단지가 유치하려는 대상은 첨단 기술 기업이므로 high-tech가 정답이다. high-rise(고층의)는 건물을, high-pitched(음이 높은)는 소리를 묘사하며, highlighted(강조된)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "license",
+  "pos": "n",
+  "m": [
+   "면허(증), 자격증",
+   "(사용) 허가, 라이선스"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The software company sells a *license* that allows up to five employees to use the program.",
+  "exKo": "그 소프트웨어 회사는 직원 최대 5명이 프로그램을 사용할 수 있는 라이선스를 판매한다.",
+  "col": [
+   {
+    "e": "driver's license",
+    "k": "운전면허증"
+   },
+   {
+    "e": "business license",
+    "k": "영업 허가(증)"
+   },
+   {
+    "e": "license agreement",
+    "k": "사용권 계약"
+   }
+  ],
+  "der": [
+   {
+    "w": "licensed",
+    "pos": "adj",
+    "m": "면허를 소지한, 허가받은"
+   },
+   {
+    "w": "licensing",
+    "pos": "n",
+    "m": "인허가, 라이선스 사업"
+   }
+  ],
+  "para": [
+   "permit",
+   "authorization",
+   "certificate"
+  ],
+  "ant": "",
+  "tip": "명사(면허, 허가)와 동사(허가하다)로 모두 쓰인다. 형용사 licensed(면허를 소지한)는 licensed electrician처럼 자격을 갖춘 사람을 수식한다.",
+  "q": {
+   "s": "Restaurants must renew their business ------- every two years to continue serving food to the public.",
+   "o": [
+    "license",
+    "licensed",
+    "licensee",
+    "licensable"
+   ],
+   "a": 0,
+   "k": "business license는 '영업 허가(증)'라는 복합명사로, renew의 목적어가 되는 license가 정답이다. licensee(허가받은 사람)는 사람명사라 갱신 대상이 될 수 없고, licensed, licensable은 형용사다."
+  }
+ },
+ {
+  "w": "commercialize",
+  "pos": "v",
+  "m": [
+   "상업화하다, 상품화하다",
+   "시판하다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The university partnered with a local company to *commercialize* its new water filter technology.",
+  "exKo": "그 대학은 새로운 정수 필터 기술을 상품화하기 위해 지역 기업과 제휴했다.",
+  "col": [
+   {
+    "e": "commercialize a technology",
+    "k": "기술을 상업화하다"
+   },
+   {
+    "e": "commercialize an invention",
+    "k": "발명품을 상품화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "commercial",
+    "pos": "adj",
+    "m": "상업의"
+   },
+   {
+    "w": "commercialization",
+    "pos": "n",
+    "m": "상업화"
+   }
+  ],
+  "para": [
+   "market",
+   "bring to market",
+   "sell"
+  ],
+  "ant": "",
+  "tip": "연구 성과나 기술을 시장에 내놓는다는 뜻으로 Part 7에서 bring to market으로 바꿔 표현된다. 명사형 commercialization과 형용사 commercial의 품사 구별 문제가 나온다.",
+  "q": {
+   "s": "The research center is looking for an industry partner to help ------- its patented cooling system.",
+   "o": [
+    "commercial",
+    "commercially",
+    "commercialization",
+    "commercialize"
+   ],
+   "a": 3,
+   "k": "help 뒤에는 동사원형이나 to부정사가 오므로 동사원형 commercialize가 정답이다. commercial은 형용사·명사, commercially는 부사, commercialization은 명사다."
+  }
+ },
+ {
+  "w": "viable",
+  "pos": "adj",
+  "m": [
+   "실행 가능한, 성공 가능성이 있는",
+   "(경제적으로) 존립 가능한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "After months of testing, the engineers concluded that the design was not commercially *viable*.",
+  "exKo": "몇 달간의 테스트 끝에 엔지니어들은 그 설계가 상업적으로 성공 가능성이 없다고 결론 내렸다.",
+  "col": [
+   {
+    "e": "commercially viable",
+    "k": "상업적으로 성공 가능한"
+   },
+   {
+    "e": "viable option",
+    "k": "실행 가능한 선택지"
+   },
+   {
+    "e": "viable alternative",
+    "k": "현실적인 대안"
+   }
+  ],
+  "der": [
+   {
+    "w": "viability",
+    "pos": "n",
+    "m": "실행 가능성, 존립 가능성"
+   }
+  ],
+  "para": [
+   "feasible",
+   "workable",
+   "practical"
+  ],
+  "ant": "",
+  "tip": "commercially/economically viable(상업적·경제적으로 성공 가능한)처럼 부사의 수식을 받는 형태가 빈출이며, Part 7에서 feasible, workable로 바꿔 표현된다.",
+  "q": {
+   "s": "The board rejected the proposal because opening a second store in such a small town was not economically -------.",
+   "o": [
+    "eligible",
+    "viable",
+    "edible",
+    "legible"
+   ],
+   "a": 1,
+   "k": "economically viable은 '경제적으로 성공 가능한'이라는 뜻으로 제안이 거절된 이유를 설명한다. eligible(자격이 있는), edible(먹을 수 있는), legible(읽기 쉬운)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "feasibility",
+  "pos": "n",
+  "m": [
+   "실행 가능성, 타당성"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Consultants are examining the *feasibility* of building a second runway at the airport.",
+  "exKo": "컨설턴트들이 공항에 두 번째 활주로를 건설하는 방안의 타당성을 검토하고 있다.",
+  "col": [
+   {
+    "e": "feasibility study",
+    "k": "타당성 조사"
+   },
+   {
+    "e": "assess the feasibility of",
+    "k": "~의 타당성을 평가하다"
+   },
+   {
+    "e": "technical feasibility",
+    "k": "기술적 실현 가능성"
+   }
+  ],
+  "der": [
+   {
+    "w": "feasible",
+    "pos": "adj",
+    "m": "실현 가능한"
+   }
+  ],
+  "para": [
+   "viability",
+   "practicality",
+   "possibility"
+  ],
+  "ant": "",
+  "tip": "feasibility study(타당성 조사)가 대표 빈출 표현이며 the feasibility of + 명사/동명사 형태로 쓰인다. 형용사 feasible(실현 가능한)과의 품사 구별 문제가 나온다.",
+  "q": {
+   "s": "The city council has commissioned a ------- study to determine whether a light rail system would benefit the area.",
+   "o": [
+    "feasible",
+    "feasibly",
+    "feasibility",
+    "infeasible"
+   ],
+   "a": 2,
+   "k": "feasibility study는 '타당성 조사'라는 복합명사이므로 feasibility가 정답이다. feasible, infeasible은 형용사로 '실현 가능한(불가능한) 조사'라는 어색한 뜻이 되고, feasibly는 부사다."
+  }
+ },
+ {
+  "w": "simulation",
+  "pos": "n",
+  "m": [
+   "모의실험, 시뮬레이션",
+   "모의 훈련"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Computer *simulations* show engineers how the bridge will respond to strong winds.",
+  "exKo": "컴퓨터 시뮬레이션은 엔지니어들에게 그 다리가 강풍에 어떻게 반응할지 보여 준다.",
+  "col": [
+   {
+    "e": "computer simulation",
+    "k": "컴퓨터 시뮬레이션"
+   },
+   {
+    "e": "run a simulation",
+    "k": "시뮬레이션을 실행하다"
+   },
+   {
+    "e": "simulation exercise",
+    "k": "모의 훈련"
+   }
+  ],
+  "der": [
+   {
+    "w": "simulate",
+    "pos": "v",
+    "m": "모의실험하다, 흉내 내다"
+   },
+   {
+    "w": "simulator",
+    "pos": "n",
+    "m": "시뮬레이터, 모의 장치"
+   }
+  ],
+  "para": [
+   "model",
+   "imitation",
+   "mock-up"
+  ],
+  "ant": "",
+  "tip": "run/conduct a simulation(시뮬레이션을 실행하다) 형태로 쓰이며, 동사 simulate와 기계명사 simulator를 구별하는 문제가 나온다.",
+  "q": {
+   "s": "All staff will participate in an emergency evacuation ------- on Friday morning.",
+   "o": [
+    "simulate",
+    "simulation",
+    "simulator",
+    "simulated"
+   ],
+   "a": 1,
+   "k": "관사 an과 emergency evacuation 뒤 명사 자리로, 직원들이 참여하는 '모의 훈련'을 뜻하는 simulation이 정답이다. simulator는 '모의 장치'라는 기계명사라 참여의 대상이 될 수 없고, simulate는 동사, simulated는 과거분사다."
+  }
+ }
+]

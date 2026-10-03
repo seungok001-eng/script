@@ -11,8 +11,8 @@
    5,
    7
   ],
-  "ex": "After careful *consideration*, Ms. Novak decided to accept the job offer from the Seoul office.",
-  "exKo": "Novak 씨는 신중하게 고민한 끝에 서울 지사의 일자리 제안을 받아들이기로 했다.",
+  "ex": "After careful *consideration*, the hiring committee chose Ms. Novak as the new marketing director.",
+  "exKo": "신중한 검토 끝에 채용 위원회는 Novak 씨를 새 마케팅 이사로 선발했다.",
   "col": [
    {
     "e": "take A into consideration",
@@ -327,7 +327,7 @@
   "ant": "",
   "tip": "various 뒤에는 복수명사가 오며(various products), 명사 variety는 a variety of + 복수명사 형태로 쓰인다.",
   "q": {
-   "s": "The store sells ------- kinds of kitchen appliances at discounted prices.",
+   "s": "Our consultants have worked with clients in ------- industries, from retail to health care.",
    "o": [
     "various",
     "variety",
@@ -335,7 +335,7 @@
     "variously"
    ],
    "a": 0,
-   "k": "복수명사 kinds를 수식하는 형용사가 필요하므로 various가 정답이다. variety는 명사로 a variety of 형태로 써야 하고, vary는 동사, variously는 부사다."
+   "k": "복수명사 industries를 수식하는 형용사가 필요하므로 various가 정답이다. variety는 명사로 a variety of 형태로 써야 하고, vary는 동사, variously는 부사다."
   }
  },
  {
@@ -645,7 +645,7 @@
   "ant": "",
   "tip": "'효과적인' 외에 effective immediately(즉시 시행), Effective + 날짜(~부터 시행)라는 뜻이 공지문에 자주 나온다.",
   "q": {
-   "s": "------- immediately, all expense reports must be submitted through the new online system.",
+   "s": "------- immediately, employees must wear their ID badges at all times while in the building.",
    "o": [
     "Effect",
     "Effective",
@@ -1088,7 +1088,7 @@
   "ant": "",
   "tip": "the entire + 단수명사(the entire building)로 쓰며, 부사 entirely(완전히)와의 품사 구분이 출제된다.",
   "q": {
-   "s": "The ------- building will be closed on Sunday for electrical repairs.",
+   "s": "The ------- third floor will be off-limits while new carpeting is installed.",
    "o": [
     "entirely",
     "entire",
@@ -1096,7 +1096,7 @@
     "all"
    ],
    "a": 1,
-   "k": "관사 The와 명사 building 사이에서 명사를 수식하는 형용사가 필요하므로 entire가 정답이다. entirely는 부사, entirety는 명사이며, all은 the 앞에 와야 한다(all the building)."
+   "k": "관사 The와 명사구 third floor 사이에서 명사를 수식하는 형용사가 필요하므로 entire가 정답이다. entirely는 부사, entirety는 명사이며, all은 관사 the 앞에 와야 한다(all the third floor)."
   }
  },
  {

@@ -100,8 +100,8 @@
    4,
    7
   ],
-  "ex": "Ms. Okafor completed her *bachelor's degree* in only three years while working part-time.",
-  "exKo": "Okafor 씨는 시간제로 일하면서도 단 3년 만에 학사 학위 과정을 마쳤다.",
+  "ex": "Nearly 70 percent of our staff hold a *bachelor's degree* or higher.",
+  "exKo": "우리 직원의 70퍼센트 가까이가 학사 이상의 학위를 갖고 있다.",
   "col": [
    {
     "e": "bachelor's degree in",
@@ -120,7 +120,7 @@
   "ant": "",
   "tip": "구인 광고의 자격 요건에 hold a bachelor's degree in ~(~ 학사 학위 소지) 형태로 나온다. 아포스트로피 's를 빠뜨리지 않도록 주의하며 university degree, college degree로 패러프레이즈된다.",
   "q": {
-   "s": "A ------- in business administration is required for this management trainee position.",
+   "s": "Ms. Ndiaye returned to school at the age of 40 to finish her ------- in nursing.",
    "o": [
     "graduation ceremony",
     "bachelor's degree",
@@ -128,7 +128,7 @@
     "lecture hall"
    ],
    "a": 1,
-   "k": "관리직 연수생 직책의 자격 요건으로 '경영학' 분야에서 요구되는 것은 학위이므로 bachelor's degree가 정답이다. graduation ceremony(졸업식), class schedule(수업 시간표), lecture hall(강의실)은 지원 자격이 될 수 없다."
+   "k": "학교로 돌아가 '간호학 분야에서 마치는(finish)' 것은 학위 과정이므로 bachelor's degree가 정답이다. graduation ceremony(졸업식), class schedule(수업 시간표), lecture hall(강의실)은 in nursing과 어울려 마칠 수 있는 대상이 아니다."
   }
  },
  {
@@ -801,7 +801,7 @@
   "ant": "",
   "tip": "기존 직원에게 새로운 기술을 가르쳐 역량을 높이는 것으로 reskilling(재교육)과 함께 최근 기업 교육 지문에 등장한다. 동사형은 upskill이다.",
   "q": {
-   "s": "Rather than hire new staff, the firm chose to focus on ------- its current employees in data analysis.",
+   "s": "Instead of recruiting outside experts, Delmont Inc. is focusing on ------- its current employees in data analysis.",
    "o": [
     "upbringing",
     "uprising",
@@ -809,7 +809,7 @@
     "upsetting"
    ],
    "a": 2,
-   "k": "신규 채용 대신 기존 직원의 데이터 분석 능력을 '향상시키는' 데 집중한다는 뜻이므로 upskilling이 정답이다. upbringing(양육), uprising(봉기)은 목적어를 취할 수 없고, upsetting(속상하게 하는)은 문맥에 맞지 않는다."
+   "k": "외부 전문가를 채용하는 대신 기존 직원의 데이터 분석 능력을 '향상시키는' 데 집중한다는 뜻이므로 upskilling이 정답이다. upbringing(양육), uprising(봉기)은 목적어를 취할 수 없고, upsetting(속상하게 하는)은 문맥에 맞지 않는다."
   }
  },
  {

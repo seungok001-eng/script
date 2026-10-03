@@ -1,0 +1,2003 @@
+[
+ {
+  "w": "turnaround",
+  "pos": "n",
+  "m": [
+   "(경영의) 호전, 회생",
+   "(작업의) 처리 시간"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new CEO is credited with the company's remarkable *turnaround* after years of losses.",
+  "exKo": "새 최고 경영자는 수년간 적자를 낸 회사를 놀랍게 회생시킨 공로를 인정받고 있다.",
+  "col": [
+   {
+    "e": "dramatic turnaround",
+    "k": "극적인 회생"
+   },
+   {
+    "e": "turnaround time",
+    "k": "처리 소요 시간"
+   },
+   {
+    "e": "turnaround plan",
+    "k": "회생 계획"
+   }
+  ],
+  "der": [
+   {
+    "w": "turn around",
+    "pos": "phr",
+    "m": "호전시키다, 회생시키다"
+   }
+  ],
+  "para": [
+   "recovery",
+   "revival",
+   "rebound"
+  ],
+  "ant": "",
+  "tip": "'turnaround time(처리 소요 시간)'은 주문, 수리 등이 끝나기까지 걸리는 시간으로 Part 7에 자주 나온다. 동사구 turn around(회생시키다)는 띄어 쓴다.",
+  "q": {
+   "s": "Thanks to strict cost controls, the retailer, which had lost money for years, achieved a dramatic -------.",
+   "o": [
+    "setback",
+    "turnaround",
+    "downturn",
+    "shortfall"
+   ],
+   "a": 1,
+   "k": "수년간 적자였던 회사가 엄격한 비용 관리 '덕분에' 이뤄 낸 것은 극적인 '회생'이므로 turnaround가 정답이다. setback(차질), downturn(침체), shortfall(부족액)은 thanks to, achieved와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "backer",
+  "pos": "n",
+  "m": [
+   "(재정적) 후원자",
+   "지지자"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The startup is looking for financial *backers* to fund its expansion into Europe.",
+  "exKo": "그 신생 기업은 유럽 진출 자금을 대 줄 재정 후원자를 찾고 있다.",
+  "col": [
+   {
+    "e": "financial backer",
+    "k": "재정 후원자"
+   },
+   {
+    "e": "find a backer",
+    "k": "후원자를 찾다"
+   }
+  ],
+  "der": [
+   {
+    "w": "back",
+    "pos": "v",
+    "m": "후원하다, 지지하다"
+   },
+   {
+    "w": "backing",
+    "pos": "n",
+    "m": "(재정적) 지원"
+   }
+  ],
+  "para": [
+   "investor",
+   "sponsor",
+   "supporter"
+  ],
+  "ant": "",
+  "tip": "동사 back(후원하다)에서 온 사람명사로 'financial backer'처럼 쓰며 Part 7에서 investor, sponsor로 패러프레이징된다. 사물명사 backing(지원)과 구분한다.",
+  "q": {
+   "s": "The film's producers spent two years searching for a ------- willing to invest in the project.",
+   "o": [
+    "backing",
+    "backlog",
+    "backed",
+    "backer"
+   ],
+   "a": 3,
+   "k": "프로젝트에 투자할 의향이 있는 '사람'을 찾았다는 뜻이므로 사람명사 backer가 정답이다. backing(지원)은 사람이 아니고, backlog(밀린 일)는 뜻이 맞지 않으며, backed는 분사라 a 뒤 명사 자리에 올 수 없다."
+  }
+ },
+ {
+  "w": "buyout",
+  "pos": "n",
+  "m": [
+   "(기업) 인수, 매수",
+   "(지분) 매입"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Shareholders voted in favor of the *buyout* offered by a private investment group.",
+  "exKo": "주주들은 한 사모 투자 그룹이 제안한 인수안에 찬성표를 던졌다.",
+  "col": [
+   {
+    "e": "management buyout",
+    "k": "경영진 인수"
+   },
+   {
+    "e": "buyout offer",
+    "k": "인수 제안"
+   }
+  ],
+  "der": [
+   {
+    "w": "buy out",
+    "pos": "phr",
+    "m": "(지분을) 사들이다"
+   }
+  ],
+  "para": [
+   "takeover",
+   "acquisition",
+   "purchase"
+  ],
+  "ant": "",
+  "tip": "동사구 buy out(지분을 사들이다)은 띄어 쓰고 명사 buyout은 붙여 쓴다. Part 7에서 acquisition, takeover로 패러프레이징된다.",
+  "q": {
+   "s": "The founders rejected a $50 million ------- offer from a larger competitor.",
+   "o": [
+    "buyout",
+    "layout",
+    "checkout",
+    "lookout"
+   ],
+   "a": 0,
+   "k": "더 큰 경쟁사가 제시한 5천만 달러 규모의 '인수' 제안이므로 buyout이 정답이다. layout(배치), checkout(계산대), lookout(망보기)은 offer와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "spin-off",
+  "pos": "n",
+  "m": [
+   "분사(分社) 회사",
+   "파생 상품"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The medical device unit will become an independent *spin-off* next year.",
+  "exKo": "의료기기 사업부는 내년에 독립된 회사로 분사된다.",
+  "col": [
+   {
+    "e": "spin-off company",
+    "k": "분사 기업"
+   },
+   {
+    "e": "spin-off product",
+    "k": "파생 상품"
+   }
+  ],
+  "der": [
+   {
+    "w": "spin off",
+    "pos": "phr",
+    "m": "분사시키다, 분리 독립시키다"
+   }
+  ],
+  "para": [
+   "offshoot",
+   "subsidiary"
+  ],
+  "ant": "",
+  "tip": "모회사에서 떨어져 나와 독립한 회사를 뜻하며, 동사구 spin off(분사시키다)는 하이픈 없이 쓴다. 인기 TV 프로그램 등의 '파생작'이라는 뜻도 있다.",
+  "q": {
+   "s": "The software company announced that its cloud division will be separated into a ------- with its own management team.",
+   "o": [
+    "merger",
+    "takeover",
+    "spin-off",
+    "shareholder"
+   ],
+   "a": 2,
+   "k": "클라우드 사업부가 별도의 경영진을 둔 독립 회사로 '분리된다'는 뜻이므로 spin-off가 정답이다. merger(합병), takeover(인수)는 분리와 반대 개념이고 shareholder(주주)는 사람이다."
+  }
+ },
+ {
+  "w": "alliance",
+  "pos": "n",
+  "m": [
+   "제휴",
+   "동맹"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The two airlines formed an *alliance* to offer passengers more connecting flights.",
+  "exKo": "두 항공사는 승객에게 더 많은 연결편을 제공하기 위해 제휴를 맺었다.",
+  "col": [
+   {
+    "e": "form an alliance",
+    "k": "제휴를 맺다"
+   },
+   {
+    "e": "strategic alliance",
+    "k": "전략적 제휴"
+   },
+   {
+    "e": "alliance with",
+    "k": "~와의 제휴"
+   }
+  ],
+  "der": [
+   {
+    "w": "ally",
+    "pos": "n",
+    "m": "동맹국, 협력자"
+   },
+   {
+    "w": "allied",
+    "pos": "adj",
+    "m": "동맹한, 연합한"
+   }
+  ],
+  "para": [
+   "partnership",
+   "collaboration"
+  ],
+  "ant": "",
+  "tip": "'form/enter into an alliance with(~와 제휴를 맺다)'처럼 with와 함께 쓰며, 'strategic alliance(전략적 제휴)'가 경영 기사에 자주 나온다.",
+  "q": {
+   "s": "Hartwell Pharmaceuticals has entered into a strategic ------- with a research university to develop new vaccines.",
+   "o": [
+    "allowance",
+    "alliance",
+    "appliance",
+    "assurance"
+   ],
+   "a": 1,
+   "k": "새 백신 개발을 위해 대학과 '전략적 제휴'를 맺었다는 뜻이므로 alliance가 정답이다. allowance(수당), appliance(가전제품), assurance(보장)는 enter into ~ with와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "synergy",
+  "pos": "n",
+  "m": [
+   "시너지, 상승 효과"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Executives believe the merger will create *synergy* between the two companies' sales teams.",
+  "exKo": "경영진은 이번 합병으로 두 회사 영업팀 사이에 시너지가 생길 것으로 믿는다.",
+  "col": [
+   {
+    "e": "create synergy",
+    "k": "시너지를 창출하다"
+   },
+   {
+    "e": "synergy between",
+    "k": "~ 사이의 시너지"
+   },
+   {
+    "e": "cost synergies",
+    "k": "비용 절감 효과"
+   }
+  ],
+  "der": [
+   {
+    "w": "synergistic",
+    "pos": "adj",
+    "m": "상승 효과를 내는"
+   }
+  ],
+  "para": [
+   "cooperation",
+   "combined effect"
+  ],
+  "ant": "",
+  "tip": "합병, 제휴 관련 지문에서 'achieve/create synergies'처럼 복수형으로도 쓰인다. 'synergy between A and B' 구조를 알아 두자.",
+  "q": {
+   "s": "The merger is expected to produce ------- that will save the combined company about $20 million a year.",
+   "o": [
+    "symptoms",
+    "sympathies",
+    "symphonies",
+    "synergies"
+   ],
+   "a": 3,
+   "k": "합병으로 연간 약 2천만 달러를 절감하게 해 줄 '시너지 효과'를 낸다는 뜻이므로 synergies가 정답이다. symptoms(증상), sympathies(동정), symphonies(교향곡)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "consolidation",
+  "pos": "n",
+  "m": [
+   "통합, 합병",
+   "강화"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *consolidation* of three regional offices into one will reduce rental costs.",
+  "exKo": "지역 사무소 세 곳을 하나로 통합하면 임대 비용이 줄어들 것이다.",
+  "col": [
+   {
+    "e": "consolidation of",
+    "k": "~의 통합"
+   },
+   {
+    "e": "industry consolidation",
+    "k": "업계 통합"
+   }
+  ],
+  "der": [
+   {
+    "w": "consolidate",
+    "pos": "v",
+    "m": "통합하다, 강화하다"
+   },
+   {
+    "w": "consolidated",
+    "pos": "adj",
+    "m": "통합된"
+   }
+  ],
+  "para": [
+   "merger",
+   "combination",
+   "unification"
+  ],
+  "ant": "",
+  "tip": "동사 consolidate는 'consolidate A into B(A를 B로 통합하다)' 구조로 쓴다. 'consolidate its position(입지를 굳히다)'처럼 '강화하다'라는 뜻도 있다.",
+  "q": {
+   "s": "The ------- of the two warehouses into a single facility is expected to improve delivery times.",
+   "o": [
+    "consolidation",
+    "consolidate",
+    "consolidated",
+    "consolidates"
+   ],
+   "a": 0,
+   "k": "정관사 the와 전치사 of 사이에서 문장의 주어가 되는 명사 자리이므로 consolidation이 정답이다. consolidate, consolidates는 동사이고 consolidated는 과거(분사)형이다."
+  }
+ },
+ {
+  "w": "integration",
+  "pos": "n",
+  "m": [
+   "통합",
+   "통합 작업"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *integration* of the new payroll system with our existing software took three months.",
+  "exKo": "새 급여 시스템을 기존 소프트웨어와 통합하는 데 3개월이 걸렸다.",
+  "col": [
+   {
+    "e": "integration of A into B",
+    "k": "A를 B에 통합하기"
+   },
+   {
+    "e": "seamless integration",
+    "k": "매끄러운 통합"
+   }
+  ],
+  "der": [
+   {
+    "w": "integrate",
+    "pos": "v",
+    "m": "통합하다"
+   },
+   {
+    "w": "integrated",
+    "pos": "adj",
+    "m": "통합된"
+   }
+  ],
+  "para": [
+   "incorporation",
+   "merging",
+   "combination"
+  ],
+  "ant": "",
+  "tip": "동사 integrate는 'integrate A into/with B(A를 B에 통합하다)' 구조로 쓴다. 'integrated system(통합 시스템)'처럼 형용사형도 자주 나온다.",
+  "q": {
+   "s": "Ms. Ngata will oversee the ------- of the acquired company's staff into our existing departments.",
+   "o": [
+    "integrate",
+    "integrated",
+    "integration",
+    "integrates"
+   ],
+   "a": 2,
+   "k": "정관사 the 뒤, oversee의 목적어가 되는 명사 자리이므로 integration이 정답이다. integrate, integrates는 동사이고 integrated는 과거(분사)형이다."
+  }
+ },
+ {
+  "w": "reorganization",
+  "pos": "n",
+  "m": [
+   "조직 개편",
+   "구조 조정"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Several managers were assigned new roles as part of the company's *reorganization*.",
+  "exKo": "회사 조직 개편의 일환으로 여러 관리자가 새 직책을 맡았다.",
+  "col": [
+   {
+    "e": "corporate reorganization",
+    "k": "기업 구조 조정"
+   },
+   {
+    "e": "undergo a reorganization",
+    "k": "조직 개편을 거치다"
+   }
+  ],
+  "der": [
+   {
+    "w": "reorganize",
+    "pos": "v",
+    "m": "재편성하다, 개편하다"
+   }
+  ],
+  "para": [
+   "restructuring",
+   "overhaul",
+   "reshuffle"
+  ],
+  "ant": "",
+  "tip": "동사 reorganize와 품사를 구분하는 문제가 나오며, Part 7에서는 restructuring으로 패러프레이징된다.",
+  "q": {
+   "s": "Following the -------, the marketing and sales departments will report to the same vice president.",
+   "o": [
+    "reorganize",
+    "reorganized",
+    "reorganizes",
+    "reorganization"
+   ],
+   "a": 3,
+   "k": "전치사 following의 목적어이자 정관사 the 뒤의 명사 자리이므로 reorganization이 정답이다. reorganize, reorganizes는 동사이고 reorganized는 과거(분사)형이다."
+  }
+ },
+ {
+  "w": "footprint",
+  "pos": "n",
+  "m": [
+   "(사업) 영역, 입지",
+   "발자국"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The coffee chain plans to expand its *footprint* by opening 50 stores in Asia.",
+  "exKo": "그 커피 체인은 아시아에 매장 50곳을 열어 사업 영역을 넓힐 계획이다.",
+  "col": [
+   {
+    "e": "expand one's footprint",
+    "k": "사업 영역을 넓히다"
+   },
+   {
+    "e": "global footprint",
+    "k": "세계적 입지"
+   },
+   {
+    "e": "carbon footprint",
+    "k": "탄소 발자국"
+   }
+  ],
+  "der": [],
+  "para": [
+   "presence",
+   "reach"
+  ],
+  "ant": "",
+  "tip": "경영 기사에서는 '사업 영역, 입지'라는 뜻으로 'expand its footprint'처럼 쓰이고, 'carbon footprint(탄소 발자국)'는 환경 관련 지문에 나온다.",
+  "q": {
+   "s": "By acquiring a rival chain, the grocer significantly expanded its ------- in the southern states.",
+   "o": [
+    "footnote",
+    "footprint",
+    "footwear",
+    "footstep"
+   ],
+   "a": 1,
+   "k": "경쟁 체인을 인수해 남부 지역의 '사업 영역'을 넓혔다는 뜻이므로 footprint가 정답이다. footnote(각주), footwear(신발), footstep(발소리, 걸음)은 expand와 어울려 이런 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "presence",
+  "pos": "n",
+  "m": [
+   "입지, 존재(감)",
+   "참석"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bank has a strong *presence* in rural areas where few competitors operate.",
+  "exKo": "그 은행은 경쟁사가 거의 없는 농촌 지역에서 입지가 탄탄하다.",
+  "col": [
+   {
+    "e": "strong presence",
+    "k": "탄탄한 입지"
+   },
+   {
+    "e": "establish a presence in",
+    "k": "~에서 입지를 구축하다"
+   },
+   {
+    "e": "online presence",
+    "k": "온라인상의 존재감"
+   }
+  ],
+  "der": [
+   {
+    "w": "present",
+    "pos": "adj",
+    "m": "참석한, 현재의"
+   }
+  ],
+  "para": [
+   "footprint",
+   "foothold"
+  ],
+  "ant": "absence",
+  "tip": "'establish/expand a presence in(~에서 입지를 구축/확대하다)'처럼 in과 함께 쓴다. 'in the presence of(~이 있는 자리에서)'처럼 '참석, 존재'의 뜻도 있다.",
+  "q": {
+   "s": "The online retailer hopes to establish a ------- in the Latin American market by next year.",
+   "o": [
+    "presence",
+    "present",
+    "presently",
+    "presenting"
+   ],
+   "a": 0,
+   "k": "관사 a 뒤 명사 자리이며 시장에 '입지'를 구축한다는 뜻이므로 presence가 정답이다. present는 명사로 쓰면 '선물'이라 뜻이 맞지 않고, presently는 부사, presenting은 동명사·분사다."
+  }
+ },
+ {
+  "w": "foothold",
+  "pos": "n",
+  "m": [
+   "발판, 거점"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company gained a *foothold* in the Japanese market through a local partnership.",
+  "exKo": "그 회사는 현지 업체와의 제휴를 통해 일본 시장에 발판을 마련했다.",
+  "col": [
+   {
+    "e": "gain a foothold",
+    "k": "발판을 마련하다"
+   },
+   {
+    "e": "foothold in",
+    "k": "~에서의 거점"
+   }
+  ],
+  "der": [],
+  "para": [
+   "toehold",
+   "base",
+   "entry"
+  ],
+  "ant": "",
+  "tip": "'gain/establish a foothold in + 시장(~에 발판을 마련하다)'이 고정 표현이다. Part 7에서는 'enter the market', 'establish a presence'로 패러프레이징되기도 한다.",
+  "q": {
+   "s": "The furniture maker opened a showroom in Seoul to gain a ------- in the Korean market.",
+   "o": [
+    "household",
+    "threshold",
+    "foothold",
+    "freehold"
+   ],
+   "a": 2,
+   "k": "한국 시장에 '발판'을 마련하려고 서울에 전시장을 열었다는 뜻이므로 foothold가 정답이다. household(가정), threshold(문지방, 기준점), freehold(부동산 자유 보유권)는 gain a ~ in the market과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "venture into",
+  "pos": "phr",
+  "m": [
+   "~에 진출하다",
+   "(새 분야에) 뛰어들다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The cosmetics brand *ventured into* men's skincare products last spring.",
+  "exKo": "그 화장품 브랜드는 지난봄 남성용 스킨케어 제품 시장에 진출했다.",
+  "col": [
+   {
+    "e": "venture into a new market",
+    "k": "새 시장에 진출하다"
+   },
+   {
+    "e": "venture into new territory",
+    "k": "새로운 영역에 뛰어들다"
+   }
+  ],
+  "der": [
+   {
+    "w": "venture",
+    "pos": "n",
+    "m": "벤처, 모험적 사업"
+   }
+  ],
+  "para": [
+   "enter",
+   "expand into",
+   "move into"
+  ],
+  "ant": "",
+  "tip": "'venture into + 새로운 분야/시장' 구조로 쓴다. 명사 venture는 'joint venture(합작 투자)'로 자주 출제된다.",
+  "q": {
+   "s": "After decades of making only kitchen appliances, Dalton Electronics has decided to venture ------- the smartphone market.",
+   "o": [
+    "out",
+    "off",
+    "about",
+    "into"
+   ],
+   "a": 3,
+   "k": "스마트폰 시장에 '진출하다'는 venture into이므로 into가 정답이다. venture out(밖으로 나가다)은 목적어 없이 쓰거나 of가 필요하며, venture off, venture about은 시장 진출의 뜻이 없다."
+  }
+ },
+ {
+  "w": "core business",
+  "pos": "phr",
+  "m": [
+   "핵심 사업",
+   "주력 사업"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company sold its restaurant chain to focus on its *core business* of hotel management.",
+  "exKo": "그 회사는 핵심 사업인 호텔 경영에 집중하기 위해 레스토랑 체인을 매각했다.",
+  "col": [
+   {
+    "e": "focus on the core business",
+    "k": "핵심 사업에 집중하다"
+   },
+   {
+    "e": "return to its core business",
+    "k": "핵심 사업으로 돌아가다"
+   }
+  ],
+  "der": [
+   {
+    "w": "core",
+    "pos": "adj",
+    "m": "핵심적인"
+   }
+  ],
+  "para": [
+   "main business",
+   "primary operations"
+  ],
+  "ant": "",
+  "tip": "core는 '핵심의'라는 뜻으로 core values(핵심 가치), core competency(핵심 역량)처럼 쓰인다. 비핵심 사업을 매각하고 '핵심 사업에 집중한다'는 내용이 Part 7에 자주 나온다.",
+  "q": {
+   "s": "After selling its fitness clubs, the company plans to concentrate on its ------- business of sportswear design.",
+   "o": [
+    "core",
+    "total",
+    "extra",
+    "partial"
+   ],
+   "a": 0,
+   "k": "피트니스 클럽을 매각한 뒤 '핵심' 사업인 스포츠웨어 디자인에 집중한다는 뜻이므로 core가 정답이다. total(전체의), extra(추가의), partial(부분적인)은 business와 결합해 이런 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "competitive advantage",
+  "pos": "phr",
+  "m": [
+   "경쟁 우위"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Fast delivery has given the online grocer a clear *competitive advantage* over local stores.",
+  "exKo": "빠른 배송 덕분에 그 온라인 식료품점은 동네 상점들보다 확실한 경쟁 우위를 갖게 되었다.",
+  "col": [
+   {
+    "e": "gain a competitive advantage",
+    "k": "경쟁 우위를 얻다"
+   },
+   {
+    "e": "competitive advantage over",
+    "k": "~에 대한 경쟁 우위"
+   }
+  ],
+  "der": [
+   {
+    "w": "compete",
+    "pos": "v",
+    "m": "경쟁하다"
+   },
+   {
+    "w": "competition",
+    "pos": "n",
+    "m": "경쟁"
+   }
+  ],
+  "para": [
+   "edge",
+   "upper hand"
+  ],
+  "ant": "",
+  "tip": "'competitive advantage over + 경쟁자'처럼 over와 함께 쓰며, Part 7에서는 edge(우위)로 패러프레이징되기도 한다.",
+  "q": {
+   "s": "The firm's patented technology gives it a significant competitive ------- over its rivals.",
+   "o": [
+    "adventure",
+    "advantage",
+    "advertisement",
+    "admission"
+   ],
+   "a": 1,
+   "k": "특허 기술 덕분에 경쟁사보다 상당한 '경쟁 우위'를 갖는다는 뜻이므로 advantage가 정답이다. adventure(모험), advertisement(광고), admission(입장, 인정)은 competitive ~ over와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "business model",
+  "pos": "phr",
+  "m": [
+   "비즈니스 모델",
+   "수익 구조"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company changed its *business model* from selling software to offering monthly subscriptions.",
+  "exKo": "그 회사는 소프트웨어 판매에서 월 구독 서비스 제공으로 사업 모델을 바꿨다.",
+  "col": [
+   {
+    "e": "subscription-based business model",
+    "k": "구독 기반 사업 모델"
+   },
+   {
+    "e": "sustainable business model",
+    "k": "지속 가능한 사업 모델"
+   }
+  ],
+  "der": [],
+  "para": [
+   "business approach",
+   "revenue model"
+  ],
+  "ant": "",
+  "tip": "회사가 어떤 방식으로 수익을 내는지를 나타내며 'adopt/change a business model'처럼 쓴다. 문서인 business plan(사업 계획서)과 구분해야 한다.",
+  "q": {
+   "s": "Rather than selling its scooters, the startup's business ------- relies on renting them by the minute.",
+   "o": [
+    "card",
+    "trip",
+    "model",
+    "class"
+   ],
+   "a": 2,
+   "k": "스쿠터를 팔지 않고 분 단위로 대여해 수익을 내는 방식은 '사업 모델'이므로 model이 정답이다. business card(명함), business trip(출장), business class(비즈니스석)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "business plan",
+  "pos": "phr",
+  "m": [
+   "사업 계획(서)"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Entrepreneurs must submit a detailed *business plan* to apply for the city's startup grant.",
+  "exKo": "창업자들은 시의 창업 지원금을 신청하려면 상세한 사업 계획서를 제출해야 한다.",
+  "col": [
+   {
+    "e": "draw up a business plan",
+    "k": "사업 계획서를 작성하다"
+   },
+   {
+    "e": "detailed business plan",
+    "k": "상세한 사업 계획서"
+   }
+  ],
+  "der": [],
+  "para": [
+   "proposal",
+   "strategy"
+  ],
+  "ant": "",
+  "tip": "대출이나 투자 유치를 위해 은행, 투자자에게 내는 문서로 'write/draw up/submit a business plan'처럼 쓴다. 수익 구조를 뜻하는 business model과 구분하자.",
+  "q": {
+   "s": "Before approving the loan, the bank asked Mr. Haddad to submit a five-year business -------.",
+   "o": [
+    "plan",
+    "planner",
+    "planned",
+    "planning"
+   ],
+   "a": 0,
+   "k": "대출 승인 전에 제출하는 문서는 '사업 계획서'이므로 plan이 정답이다. planner(계획자, 일정표)는 제출할 문서가 아니고, planned는 분사, planning은 불가산명사라 관사 a와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "short-term",
+  "pos": "adj",
+  "m": [
+   "단기의",
+   "단기적인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The bank offered the company a *short-term* loan to cover its seasonal expenses.",
+  "exKo": "은행은 그 회사에 계절성 비용을 충당할 단기 대출을 제공했다.",
+  "col": [
+   {
+    "e": "short-term goal",
+    "k": "단기 목표"
+   },
+   {
+    "e": "short-term loan",
+    "k": "단기 대출"
+   },
+   {
+    "e": "in the short term",
+    "k": "단기적으로"
+   }
+  ],
+  "der": [],
+  "para": [
+   "temporary",
+   "brief"
+  ],
+  "ant": "long-term",
+  "tip": "명사 앞에서는 하이픈을 넣어 short-term으로 쓰고, 부사구 'in the short term(단기적으로)'에서는 하이픈 없이 쓴다.",
+  "q": {
+   "s": "Investors were disappointed that the company focused on ------- profits instead of long-term growth.",
+   "o": [
+    "shortly",
+    "shortage",
+    "shorten",
+    "short-term"
+   ],
+   "a": 3,
+   "k": "명사 profits를 꾸미며 long-term과 대비되는 형용사 short-term(단기적인)이 정답이다. shortly는 부사, shortage는 명사, shorten은 동사다."
+  }
+ },
+ {
+  "w": "core values",
+  "pos": "phr",
+  "m": [
+   "핵심 가치"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Honesty and teamwork are among the *core values* listed in our employee handbook.",
+  "exKo": "정직과 팀워크는 우리 직원 안내서에 실린 핵심 가치에 속한다.",
+  "col": [
+   {
+    "e": "company's core values",
+    "k": "회사의 핵심 가치"
+   },
+   {
+    "e": "reflect core values",
+    "k": "핵심 가치를 반영하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "value",
+    "pos": "n",
+    "m": "가치, 가치관"
+   }
+  ],
+  "para": [
+   "guiding principles",
+   "fundamental beliefs"
+  ],
+  "ant": "",
+  "tip": "회사의 사명(mission)과 함께 소개되는 기본 원칙으로 Part 7 회사 소개, 채용 공고에 자주 나온다. '가치관'의 뜻일 때는 보통 복수형 values로 쓴다.",
+  "q": {
+   "s": "Customer satisfaction is one of the core ------- that guide every decision our company makes.",
+   "o": [
+    "valuables",
+    "values",
+    "valuations",
+    "valued"
+   ],
+   "a": 1,
+   "k": "회사의 모든 결정을 이끄는 '핵심 가치'이므로 values가 정답이다. valuables(귀중품), valuations(평가액)는 core와 결합해 이런 뜻을 만들지 않고, valued는 분사라 one of 뒤 복수 명사 자리에 맞지 않는다."
+  }
+ },
+ {
+  "w": "corporate social responsibility",
+  "pos": "phr",
+  "m": [
+   "기업의 사회적 책임"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "As part of its *corporate social responsibility* program, the firm funds local literacy projects.",
+  "exKo": "그 회사는 기업의 사회적 책임 프로그램의 일환으로 지역 문해 교육 사업에 자금을 지원한다.",
+  "col": [
+   {
+    "e": "CSR report",
+    "k": "사회적 책임 보고서"
+   },
+   {
+    "e": "commitment to corporate social responsibility",
+    "k": "기업의 사회적 책임에 대한 의지"
+   }
+  ],
+  "der": [
+   {
+    "w": "corporate",
+    "pos": "adj",
+    "m": "기업의, 회사의"
+   }
+  ],
+  "para": [
+   "CSR",
+   "social commitment"
+  ],
+  "ant": "",
+  "tip": "줄여서 CSR이라고 하며, 기부, 봉사, 환경 보호 활동을 소개하는 Part 7 기사나 보도 자료에 자주 나온다.",
+  "q": {
+   "s": "The company's ------- social responsibility efforts include planting trees and supporting local schools.",
+   "o": [
+    "corporation",
+    "cooperate",
+    "corporate",
+    "corporal"
+   ],
+   "a": 2,
+   "k": "social responsibility를 꾸며 '기업의 사회적 책임'을 이루는 형용사 corporate가 정답이다. corporation은 명사, cooperate(협력하다)는 동사, corporal(신체의)은 뜻이 맞지 않는다."
+  }
+ },
+ {
+  "w": "philanthropy",
+  "pos": "n",
+  "m": [
+   "자선 (활동)",
+   "박애"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The retired banker devoted most of his fortune to *philanthropy*.",
+  "exKo": "그 은퇴한 은행가는 재산의 대부분을 자선 활동에 바쳤다.",
+  "col": [
+   {
+    "e": "corporate philanthropy",
+    "k": "기업 자선 활동"
+   },
+   {
+    "e": "devote oneself to philanthropy",
+    "k": "자선 활동에 헌신하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "philanthropist",
+    "pos": "n",
+    "m": "자선가"
+   },
+   {
+    "w": "philanthropic",
+    "pos": "adj",
+    "m": "자선의"
+   }
+  ],
+  "para": [
+   "charity",
+   "generosity"
+  ],
+  "ant": "",
+  "tip": "사람명사 philanthropist(자선가), 형용사 philanthropic(자선의)과의 품사 구분이 출제된다. philanthropy는 불가산명사다.",
+  "q": {
+   "s": "Ms. Okoye is well known for her ------- and has donated millions to children's hospitals.",
+   "o": [
+    "philanthropy",
+    "philanthropic",
+    "philanthropist",
+    "philanthropically"
+   ],
+   "a": 0,
+   "k": "소유격 her 뒤, 전치사 for의 목적어인 명사 자리이며 그녀가 알려진 이유는 '자선 활동'이므로 philanthropy가 정답이다. philanthropist(자선가)는 그녀 자신을 가리키므로 her 뒤에 맞지 않고, philanthropic은 형용사, philanthropically는 부사다."
+  }
+ },
+ {
+  "w": "philanthropic",
+  "pos": "adj",
+  "m": [
+   "자선의",
+   "박애주의의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company's *philanthropic* foundation awards scholarships to engineering students.",
+  "exKo": "그 회사의 자선 재단은 공학 전공 학생들에게 장학금을 수여한다.",
+  "col": [
+   {
+    "e": "philanthropic foundation",
+    "k": "자선 재단"
+   },
+   {
+    "e": "philanthropic activities",
+    "k": "자선 활동"
+   }
+  ],
+  "der": [
+   {
+    "w": "philanthropy",
+    "pos": "n",
+    "m": "자선 (활동)"
+   },
+   {
+    "w": "philanthropist",
+    "pos": "n",
+    "m": "자선가"
+   }
+  ],
+  "para": [
+   "charitable",
+   "humanitarian"
+  ],
+  "ant": "",
+  "tip": "'philanthropic organization/foundation(자선 단체/재단)'처럼 명사 앞에 쓰며, Part 7에서 charitable로 패러프레이징된다.",
+  "q": {
+   "s": "Mr. Tanaka sits on the boards of several ------- organizations that support education in rural areas.",
+   "o": [
+    "mechanical",
+    "hesitant",
+    "numerical",
+    "philanthropic"
+   ],
+   "a": 3,
+   "k": "농촌 지역 교육을 지원하는 '자선' 단체이므로 philanthropic이 정답이다. mechanical(기계의), hesitant(주저하는), numerical(숫자의)은 organizations와 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "securities",
+  "pos": "n",
+  "m": [
+   "유가 증권",
+   "증권"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Tran works as an analyst at a *securities* firm in the financial district.",
+  "exKo": "Tran 씨는 금융가에 있는 증권 회사에서 분석가로 일한다.",
+  "col": [
+   {
+    "e": "securities firm",
+    "k": "증권 회사"
+   },
+   {
+    "e": "government securities",
+    "k": "국채"
+   },
+   {
+    "e": "securities market",
+    "k": "증권 시장"
+   }
+  ],
+  "der": [
+   {
+    "w": "security",
+    "pos": "n",
+    "m": "보안, 안전"
+   }
+  ],
+  "para": [
+   "stocks and bonds",
+   "investments"
+  ],
+  "ant": "",
+  "tip": "복수형 securities는 '유가 증권(주식, 채권 등)'이라는 뜻으로 단수 security(보안, 안전)와 의미가 다르다. 'securities firm/company(증권사)'로 자주 쓰인다.",
+  "q": {
+   "s": "Before joining our bank, Mr. Ellis worked as a broker trading stocks and other -------.",
+   "o": [
+    "security",
+    "securities",
+    "secure",
+    "securely"
+   ],
+   "a": 1,
+   "k": "stocks와 함께 거래하는 '유가 증권'을 뜻하는 복수명사 securities가 정답이다. 단수 security는 '보안, 안전'이라는 뜻이고, secure는 형용사·동사, securely는 부사다."
+  }
+ },
+ {
+  "w": "angel investor",
+  "pos": "phr",
+  "m": [
+   "엔젤 투자자"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "An *angel investor* provided the initial funding for the bakery's first location.",
+  "exKo": "한 엔젤 투자자가 그 제과점 1호점의 초기 자금을 댔다.",
+  "col": [
+   {
+    "e": "attract an angel investor",
+    "k": "엔젤 투자자를 유치하다"
+   },
+   {
+    "e": "angel investor network",
+    "k": "엔젤 투자자 네트워크"
+   }
+  ],
+  "der": [
+   {
+    "w": "invest",
+    "pos": "v",
+    "m": "투자하다"
+   }
+  ],
+  "para": [
+   "early-stage investor",
+   "backer"
+  ],
+  "ant": "",
+  "tip": "창업 초기 기업에 개인 자금을 투자하는 사람으로, 투자 회사 소속의 venture capitalist(벤처 투자가)와 구분된다. Part 7에서 backer, investor로 바꿔 표현된다.",
+  "q": {
+   "s": "Unable to get a bank loan, the two engineers turned to an angel ------- for start-up funds.",
+   "o": [
+    "invest",
+    "invested",
+    "investor",
+    "investing"
+   ],
+   "a": 2,
+   "k": "관사 an과 angel 뒤에서 '엔젤 투자자'를 이루는 사람명사 investor가 정답이다. invest는 동사이고, invested와 investing은 분사·동명사 형태다."
+  }
+ },
+ {
+  "w": "mutual fund",
+  "pos": "phr",
+  "m": [
+   "뮤추얼 펀드",
+   "투자 신탁"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Many employees put part of their savings into a low-cost *mutual fund*.",
+  "exKo": "많은 직원들이 저축액의 일부를 수수료가 낮은 뮤추얼 펀드에 넣는다.",
+  "col": [
+   {
+    "e": "invest in a mutual fund",
+    "k": "뮤추얼 펀드에 투자하다"
+   },
+   {
+    "e": "mutual fund manager",
+    "k": "뮤추얼 펀드 운용역"
+   }
+  ],
+  "der": [
+   {
+    "w": "mutual",
+    "pos": "adj",
+    "m": "상호의, 공동의"
+   }
+  ],
+  "para": [
+   "investment fund"
+  ],
+  "ant": "",
+  "tip": "여러 투자자의 돈을 모아 전문가가 주식, 채권 등에 투자하는 상품이다. mutual은 '상호의, 공동의'라는 뜻으로 mutual agreement(상호 합의)처럼도 쓴다.",
+  "q": {
+   "s": "Ms. Patel's financial advisor recommended investing in a ------- fund that holds stocks from many industries.",
+   "o": [
+    "mutually",
+    "mutuality",
+    "mutated",
+    "mutual"
+   ],
+   "a": 3,
+   "k": "fund를 꾸며 '뮤추얼 펀드'를 이루는 형용사 mutual이 정답이다. mutually는 부사, mutuality는 명사이고, mutated(변이된)는 뜻이 맞지 않는다."
+  }
+ },
+ {
+  "w": "diversified",
+  "pos": "adj",
+  "m": [
+   "다각화된",
+   "분산된, 다양한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "A *diversified* portfolio helps investors reduce their exposure to risk.",
+  "exKo": "분산된 투자 포트폴리오는 투자자가 위험 노출을 줄이는 데 도움이 된다.",
+  "col": [
+   {
+    "e": "diversified portfolio",
+    "k": "분산 투자 포트폴리오"
+   },
+   {
+    "e": "diversified company",
+    "k": "다각화된 기업"
+   }
+  ],
+  "der": [
+   {
+    "w": "diversify",
+    "pos": "v",
+    "m": "다각화하다"
+   },
+   {
+    "w": "diversification",
+    "pos": "n",
+    "m": "다각화"
+   }
+  ],
+  "para": [
+   "varied",
+   "wide-ranging"
+  ],
+  "ant": "",
+  "tip": "동사 diversify(다각화하다)와 명사 diversification(다각화)도 출제된다. 'diversify into(~로 사업을 다각화하다)'의 전치사 into에 주의한다.",
+  "q": {
+   "s": "Owning stocks in many different industries gives investors a more ------- portfolio.",
+   "o": [
+    "diversified",
+    "diversify",
+    "diversification",
+    "diversely"
+   ],
+   "a": 0,
+   "k": "부사 more와 함께 명사 portfolio를 꾸미는 형용사 자리이므로 diversified가 정답이다. diversify는 동사, diversification은 명사, diversely는 부사라 명사를 꾸밀 수 없다."
+  }
+ },
+ {
+  "w": "risky",
+  "pos": "adj",
+  "m": [
+   "위험한",
+   "모험적인"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Opening a second store during a recession was a *risky* decision.",
+  "exKo": "불황기에 두 번째 매장을 연 것은 위험한 결정이었다.",
+  "col": [
+   {
+    "e": "risky investment",
+    "k": "위험한 투자"
+   },
+   {
+    "e": "risky venture",
+    "k": "위험한 사업"
+   }
+  ],
+  "der": [
+   {
+    "w": "risk",
+    "pos": "n",
+    "m": "위험"
+   }
+  ],
+  "para": [
+   "dangerous",
+   "uncertain"
+  ],
+  "ant": "safe",
+  "tip": "명사 risk는 'at risk(위험에 처한)', 'at one's own risk(본인 책임하에)'처럼 at과 함께 쓴다. 형용사 risky와의 품사 구분 문제도 나온다.",
+  "q": {
+   "s": "Investing all of your savings in a single company's stock is considered extremely -------.",
+   "o": [
+    "risk",
+    "risky",
+    "risked",
+    "riskily"
+   ],
+   "a": 1,
+   "k": "be considered 뒤 보어 자리로 부사 extremely의 수식을 받는 형용사 risky가 정답이다. risk는 명사·동사, risked는 과거(분사)형, riskily는 부사다."
+  }
+ },
+ {
+  "w": "speculative",
+  "pos": "adj",
+  "m": [
+   "투기적인",
+   "추측에 근거한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The analyst warned that the newly listed tech stocks were highly *speculative* investments.",
+  "exKo": "그 분석가는 새로 상장된 기술주들이 매우 투기적인 투자 대상이라고 경고했다.",
+  "col": [
+   {
+    "e": "speculative investment",
+    "k": "투기성 투자"
+   },
+   {
+    "e": "purely speculative",
+    "k": "순전히 추측에 불과한"
+   }
+  ],
+  "der": [
+   {
+    "w": "speculate",
+    "pos": "v",
+    "m": "추측하다, 투기하다"
+   },
+   {
+    "w": "speculation",
+    "pos": "n",
+    "m": "추측, 투기"
+   }
+  ],
+  "para": [
+   "risky",
+   "uncertain"
+  ],
+  "ant": "",
+  "tip": "'투기적인'과 '추측에 근거한' 두 뜻이 모두 쓰이며, 'The report is purely speculative(그 보도는 추측일 뿐이다)'처럼 보어로도 쓴다.",
+  "q": {
+   "s": "Many cautious investors avoid ------- stocks because their prices can change dramatically in a single day.",
+   "o": [
+    "speculation",
+    "speculate",
+    "speculative",
+    "speculator"
+   ],
+   "a": 2,
+   "k": "명사 stocks를 앞에서 꾸미는 형용사 자리이므로 speculative(투기적인)가 정답이다. speculation과 speculator는 명사, speculate는 동사다."
+  }
+ },
+ {
+  "w": "speculation",
+  "pos": "n",
+  "m": [
+   "추측",
+   "투기"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "There has been widespread *speculation* that the CEO will retire this year.",
+  "exKo": "최고 경영자가 올해 은퇴할 것이라는 추측이 널리 퍼져 있다.",
+  "col": [
+   {
+    "e": "speculation about",
+    "k": "~에 대한 추측"
+   },
+   {
+    "e": "amid speculation that",
+    "k": "~라는 추측 속에"
+   },
+   {
+    "e": "real estate speculation",
+    "k": "부동산 투기"
+   }
+  ],
+  "der": [
+   {
+    "w": "speculate",
+    "pos": "v",
+    "m": "추측하다"
+   },
+   {
+    "w": "speculative",
+    "pos": "adj",
+    "m": "추측에 근거한, 투기적인"
+   }
+  ],
+  "para": [
+   "rumor",
+   "guesswork",
+   "conjecture"
+  ],
+  "ant": "",
+  "tip": "'speculation that + 절', 'speculation about/over + 명사'로 쓴다. 'amid speculation(추측이 나도는 가운데)'이 기사에 자주 나온다.",
+  "q": {
+   "s": "Shares of Norland Motors rose sharply amid ------- that the company would be acquired.",
+   "o": [
+    "speculative",
+    "speculate",
+    "speculated",
+    "speculation"
+   ],
+   "a": 3,
+   "k": "전치사 amid의 목적어이자 that절의 수식을 받는 명사 자리이므로 speculation이 정답이다. speculative는 형용사, speculate는 동사, speculated는 과거(분사)형이다."
+  }
+ },
+ {
+  "w": "in the red",
+  "pos": "phr",
+  "m": [
+   "적자 상태인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The theater has been *in the red* for three years because of low ticket sales.",
+  "exKo": "그 극장은 저조한 티켓 판매로 3년째 적자 상태이다.",
+  "col": [
+   {
+    "e": "be in the red",
+    "k": "적자이다"
+   },
+   {
+    "e": "operate in the red",
+    "k": "적자로 운영하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "losing money",
+   "operating at a loss"
+  ],
+  "ant": "in the black",
+  "tip": "반대말은 'in the black(흑자인)'이며, Part 7에서는 'losing money', 'operating at a loss'로 패러프레이징된다.",
+  "q": {
+   "s": "After two years of losses, the restaurant is no longer in the ------- and finally made a profit this quarter.",
+   "o": [
+    "red",
+    "black",
+    "white",
+    "green"
+   ],
+   "a": 0,
+   "k": "적자에서 벗어나 마침내 이익을 냈다는 뜻이므로 '적자 상태인'을 뜻하는 in the red의 red가 정답이다. in the black은 '흑자인'이라 no longer와 함께 쓰면 문맥과 반대가 되고, white, green은 이런 뜻이 없다."
+  }
+ },
+ {
+  "w": "struggling",
+  "pos": "adj",
+  "m": [
+   "어려움을 겪는",
+   "고전하는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The investment group plans to buy *struggling* hotels and renovate them.",
+  "exKo": "그 투자 그룹은 경영난을 겪는 호텔들을 사들여 개조할 계획이다.",
+  "col": [
+   {
+    "e": "struggling company",
+    "k": "고전하는 회사"
+   },
+   {
+    "e": "struggling economy",
+    "k": "어려운 경제"
+   }
+  ],
+  "der": [
+   {
+    "w": "struggle",
+    "pos": "v",
+    "m": "애쓰다, 고전하다"
+   }
+  ],
+  "para": [
+   "troubled",
+   "ailing",
+   "failing"
+  ],
+  "ant": "thriving",
+  "tip": "'struggling businesses'처럼 명사를 앞에서 꾸미는 형용사로 자주 쓰이며 Part 7에서 ailing, troubled로 패러프레이징된다. 동사 struggle은 'struggle to do(~하려고 애쓰다)'로 쓴다.",
+  "q": {
+   "s": "The new manager was hired to revive the ------- store, which had lost money for several years.",
+   "o": [
+    "struggle",
+    "struggled",
+    "struggling",
+    "struggles"
+   ],
+   "a": 2,
+   "k": "정관사 the와 명사 store 사이에서 '고전하는'이라는 뜻으로 명사를 꾸미는 struggling이 정답이다. struggle과 struggles는 명사·동사이고, struggle은 자동사라 과거분사 struggled는 명사를 꾸미지 않는다."
+  }
+ },
+ {
+  "w": "ailing",
+  "pos": "adj",
+  "m": [
+   "(경제, 기업이) 침체된, 부실한",
+   "병든"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The government offered loans to help the *ailing* shipbuilding industry.",
+  "exKo": "정부는 침체된 조선업을 돕기 위해 대출을 제공했다.",
+  "col": [
+   {
+    "e": "ailing economy",
+    "k": "침체된 경제"
+   },
+   {
+    "e": "ailing company",
+    "k": "부실 기업"
+   }
+  ],
+  "der": [],
+  "para": [
+   "struggling",
+   "troubled",
+   "weak"
+  ],
+  "ant": "thriving",
+  "tip": "원래 '병든'이라는 뜻이지만 경제 기사에서는 'ailing economy/company(침체된 경제/부실 기업)'처럼 쓰이며 struggling과 패러프레이징된다.",
+  "q": {
+   "s": "The new CEO's plan to rescue the ------- airline includes cutting unprofitable routes.",
+   "o": [
+    "thriving",
+    "ailing",
+    "booming",
+    "flourishing"
+   ],
+   "a": 1,
+   "k": "'구해 내야(rescue)' 하는 항공사이므로 '부실한'이라는 뜻의 ailing이 정답이다. thriving, booming, flourishing은 모두 '번창하는'이라는 뜻이라 rescue와 맞지 않는다."
+  }
+ },
+ {
+  "w": "thriving",
+  "pos": "adj",
+  "m": [
+   "번창하는",
+   "잘 되는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "What began as a small food truck is now a *thriving* restaurant business.",
+  "exKo": "작은 푸드 트럭으로 시작한 사업이 지금은 번창하는 식당 사업이 되었다.",
+  "col": [
+   {
+    "e": "thriving business",
+    "k": "번창하는 사업"
+   },
+   {
+    "e": "thriving community",
+    "k": "활기찬 지역 사회"
+   }
+  ],
+  "der": [
+   {
+    "w": "thrive",
+    "pos": "v",
+    "m": "번성하다, 잘 자라다"
+   }
+  ],
+  "para": [
+   "flourishing",
+   "prosperous",
+   "booming"
+  ],
+  "ant": "struggling",
+  "tip": "동사 thrive는 자동사이며 'thrive on(~을 즐기다, ~으로 성장하다)'처럼 쓴다. 형용사 thriving은 Part 7에서 flourishing, prosperous로 패러프레이징된다.",
+  "q": {
+   "s": "Thanks to its popular local festivals, Millbrook has become a ------- tourist destination.",
+   "o": [
+    "thrive",
+    "thrived",
+    "thrives",
+    "thriving"
+   ],
+   "a": 3,
+   "k": "관사 a와 명사 tourist destination 사이에서 명사를 꾸미는 형용사 thriving이 정답이다. thrive, thrives는 동사이고, thrive는 자동사라 과거분사 thrived가 명사를 꾸밀 수 없다."
+  }
+ },
+ {
+  "w": "flourish",
+  "pos": "v",
+  "m": [
+   "번창하다",
+   "잘 자라다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Small businesses tend to *flourish* in neighborhoods with heavy foot traffic.",
+  "exKo": "소규모 사업체는 유동 인구가 많은 동네에서 번창하는 경향이 있다.",
+  "col": [
+   {
+    "e": "continue to flourish",
+    "k": "계속 번창하다"
+   },
+   {
+    "e": "business flourishes",
+    "k": "사업이 번창하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "flourishing",
+    "pos": "adj",
+    "m": "번창하는"
+   }
+  ],
+  "para": [
+   "thrive",
+   "prosper",
+   "boom"
+  ],
+  "ant": "decline",
+  "tip": "자동사이므로 목적어를 취하지 않으며 thrive, prosper와 패러프레이징된다. 형용사형 flourishing(번창하는)도 자주 쓰인다.",
+  "q": {
+   "s": "Since moving to a larger location, the bakery has continued to ------- and now employs 30 people.",
+   "o": [
+    "flourish",
+    "flourishing",
+    "flourished",
+    "flourishes"
+   ],
+   "a": 0,
+   "k": "'continue to + 동사원형' 구조이므로 flourish가 정답이다. flourishing은 현재분사, flourished는 과거(분사)형, flourishes는 3인칭 단수형이라 to 뒤에 올 수 없다."
+  }
+ },
+ {
+  "w": "family-owned",
+  "pos": "adj",
+  "m": [
+   "가족 소유의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *family-owned* hardware store has served the town for over 60 years.",
+  "exKo": "그 가족 소유의 철물점은 60년 넘게 마을 사람들을 위해 영업해 왔다.",
+  "col": [
+   {
+    "e": "family-owned business",
+    "k": "가족 기업"
+   },
+   {
+    "e": "family-owned and operated",
+    "k": "가족이 소유하고 운영하는"
+   }
+  ],
+  "der": [],
+  "para": [
+   "family-run"
+  ],
+  "ant": "",
+  "tip": "'family-owned and operated(가족이 소유·운영하는)'가 광고 문구로 자주 나오며, Part 7에서 family-run으로 패러프레이징된다. 하이픈을 넣은 복합 형용사다.",
+  "q": {
+   "s": "Romano's is a ------- restaurant that has been run by three generations of the same family.",
+   "o": [
+    "state-owned",
+    "government-run",
+    "family-owned",
+    "self-employed"
+   ],
+   "a": 2,
+   "k": "같은 가족 3대가 운영해 온 식당이므로 family-owned가 정답이다. state-owned(국영의)와 government-run(정부가 운영하는)은 문맥과 맞지 않고, self-employed(자영업의)는 사람을 수식하는 말이다."
+  }
+ },
+ {
+  "w": "trustee",
+  "pos": "n",
+  "m": [
+   "(재단, 대학 등의) 이사",
+   "수탁자"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The museum's board of *trustees* approved the plan to build a new wing.",
+  "exKo": "그 박물관 이사회는 새 별관 건립 계획을 승인했다.",
+  "col": [
+   {
+    "e": "board of trustees",
+    "k": "이사회"
+   },
+   {
+    "e": "serve as a trustee",
+    "k": "이사로 재직하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "trust",
+    "pos": "n",
+    "m": "신탁, 신뢰"
+   }
+  ],
+  "para": [
+   "board member",
+   "director"
+  ],
+  "ant": "",
+  "tip": "대학, 박물관, 재단의 'board of trustees(이사회)'로 Part 7에 자주 나오며, 재산을 맡아 관리하는 '수탁자'라는 뜻도 있다. 사람명사이므로 trust(신탁, 신뢰)와 구분한다.",
+  "q": {
+   "s": "Ms. Delgado was appointed as a ------- of the university and will help oversee its finances.",
+   "o": [
+    "trust",
+    "trustee",
+    "trusting",
+    "trustful"
+   ],
+   "a": 1,
+   "k": "대학 재정 감독을 돕는 '이사'로 임명되었다는 뜻이므로 사람명사 trustee가 정답이다. trust(신뢰, 신탁)는 사람이 아니고, trusting, trustful(남을 잘 믿는)은 형용사다."
+  }
+ },
+ {
+  "w": "COO",
+  "pos": "n",
+  "m": [
+   "최고 운영 책임자"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "As *COO*, Mr. Ito is responsible for the company's daily operations.",
+  "exKo": "최고 운영 책임자로서 Ito 씨는 회사의 일상적인 운영을 책임진다.",
+  "col": [
+   {
+    "e": "appoint a COO",
+    "k": "최고 운영 책임자를 임명하다"
+   },
+   {
+    "e": "president and COO",
+    "k": "사장 겸 최고 운영 책임자"
+   }
+  ],
+  "der": [],
+  "para": [
+   "chief operating officer"
+  ],
+  "ant": "",
+  "tip": "chief operating officer의 약자로 회사의 일상 운영을 총괄한다. CEO(최고 경영자), CFO(최고 재무 책임자)와 함께 Part 7 인사 발표에 자주 나온다.",
+  "q": {
+   "s": "Before becoming CEO, Ms. Varga served as the company's -------, overseeing daily operations at all of its factories.",
+   "o": [
+    "CFO",
+    "CPA",
+    "CEO",
+    "COO"
+   ],
+   "a": 3,
+   "k": "모든 공장의 일상 운영을 감독하는 직책은 COO(최고 운영 책임자)이다. CFO는 재무를 총괄하고, CPA는 공인 회계사이며, CEO는 그녀가 '이후에' 맡게 된 직책이라 문맥과 맞지 않는다."
+  }
+ },
+ {
+  "w": "co-founder",
+  "pos": "n",
+  "m": [
+   "공동 창업자",
+   "공동 설립자"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Bauer, a *co-founder* of the software firm, will speak at the conference.",
+  "exKo": "그 소프트웨어 회사의 공동 창업자인 Bauer 씨가 회의에서 연설할 예정이다.",
+  "col": [
+   {
+    "e": "co-founder of",
+    "k": "~의 공동 창업자"
+   },
+   {
+    "e": "co-founder and CEO",
+    "k": "공동 창업자 겸 최고 경영자"
+   }
+  ],
+  "der": [
+   {
+    "w": "found",
+    "pos": "v",
+    "m": "설립하다"
+   },
+   {
+    "w": "founder",
+    "pos": "n",
+    "m": "창업자, 설립자"
+   }
+  ],
+  "para": [
+   "joint founder"
+  ],
+  "ant": "",
+  "tip": "found(설립하다)-founded-founded는 find(찾다)의 과거형 found와 혼동하기 쉽다. co-는 '공동의'라는 뜻으로 co-worker, co-author처럼 쓰인다.",
+  "q": {
+   "s": "Mr. Sharma, who started the company with two college friends in 2015, is one of its three -------.",
+   "o": [
+    "co-founders",
+    "co-workers",
+    "co-authors",
+    "co-pilots"
+   ],
+   "a": 0,
+   "k": "대학 친구 두 명과 함께 회사를 세웠으므로 세 명의 '공동 창업자' 중 한 명이라는 co-founders가 정답이다. co-workers(동료), co-authors(공동 저자), co-pilots(부조종사)는 회사를 세운 사람을 가리키지 않는다."
+  }
+ },
+ {
+  "w": "proprietor",
+  "pos": "n",
+  "m": [
+   "(상점, 사업체의) 소유주",
+   "경영주"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *proprietor* of the bookstore greets every customer by name.",
+  "exKo": "그 서점 주인은 모든 손님을 이름으로 부르며 맞이한다.",
+  "col": [
+   {
+    "e": "sole proprietor",
+    "k": "개인 사업자"
+   },
+   {
+    "e": "proprietor of",
+    "k": "~의 소유주"
+   }
+  ],
+  "der": [
+   {
+    "w": "proprietary",
+    "pos": "adj",
+    "m": "독점의, 소유권이 있는"
+   }
+  ],
+  "para": [
+   "owner",
+   "operator"
+  ],
+  "ant": "",
+  "tip": "상점, 식당 등의 '주인'을 격식 있게 이르는 말로 Part 7에서 owner로 패러프레이징된다. 형용사 proprietary(독점적인, 소유권이 있는)와 혼동하지 말자.",
+  "q": {
+   "s": "As the ------- of three cafés downtown, Ms. Yoon makes all hiring decisions herself.",
+   "o": [
+    "property",
+    "proprietary",
+    "proprietor",
+    "propriety"
+   ],
+   "a": 2,
+   "k": "카페 세 곳의 '소유주'로서 직접 채용을 결정한다는 뜻이므로 사람명사 proprietor가 정답이다. property(재산), propriety(예의 바름)는 사람이 아니고, proprietary는 형용사다."
+  }
+ },
+ {
+  "w": "organizational",
+  "pos": "adj",
+  "m": [
+   "조직의",
+   "조직적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *organizational* chart shows that the design team reports directly to the CEO.",
+  "exKo": "조직도를 보면 디자인팀은 최고 경영자에게 직접 보고하는 구조이다.",
+  "col": [
+   {
+    "e": "organizational chart",
+    "k": "조직도"
+   },
+   {
+    "e": "organizational skills",
+    "k": "업무 조직 능력"
+   },
+   {
+    "e": "organizational structure",
+    "k": "조직 구조"
+   }
+  ],
+  "der": [
+   {
+    "w": "organize",
+    "pos": "v",
+    "m": "조직하다, 정리하다"
+   },
+   {
+    "w": "organization",
+    "pos": "n",
+    "m": "조직, 단체"
+   }
+  ],
+  "para": [
+   "structural",
+   "administrative"
+  ],
+  "ant": "",
+  "tip": "'organizational skills(일을 체계적으로 처리하는 능력)'는 채용 공고에, 'organizational structure/chart(조직 구조/조직도)'는 경영 지문에 자주 나온다. 명사 organization과 품사를 구분하자.",
+  "q": {
+   "s": "The new CEO made sweeping ------- changes, merging several departments and eliminating two management levels.",
+   "o": [
+    "occasional",
+    "organizational",
+    "optional",
+    "original"
+   ],
+   "a": 1,
+   "k": "부서를 통합하고 관리 단계를 없앤 것은 '조직의' 변화이므로 organizational이 정답이다. occasional(가끔의), optional(선택적인), original(원래의)은 문맥에 맞지 않는다."
+  }
+ }
+]

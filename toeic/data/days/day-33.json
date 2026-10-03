@@ -94,7 +94,7 @@
   "ant": "",
   "tip": "the accounting/sales department처럼 부서명이 앞에 온다. 철자가 비슷한 departure(출발)와 혼동을 유도하는 문제가 나온다.",
   "q": {
-   "s": "Requests for new laptops should be sent to the IT ------- by Friday.",
+   "s": "Each ------- is responsible for managing its own travel budget.",
    "o": [
     "department",
     "departure",
@@ -102,7 +102,7 @@
     "departed"
    ],
    "a": 0,
-   "k": "the IT 뒤에서 '정보 기술 부서'를 뜻하는 명사 department가 정답이다. departure는 '출발'이라 의미가 맞지 않고, depart, departed는 동사 형태다."
+   "k": "Each 뒤의 단수 명사 자리이며 자체 출장 예산을 관리하는 주체는 '부서'이므로 department가 정답이다. departure는 '출발'이라 의미가 맞지 않고, depart, departed는 동사 형태다."
   }
  },
  {
@@ -170,8 +170,8 @@
    5,
    7
   ],
-  "ex": "The renovation *project* is expected to take about four months.",
-  "exKo": "보수 공사 프로젝트는 약 4개월이 걸릴 것으로 예상된다.",
+  "ex": "Mr. Oh took over the *project* after the previous manager left the company.",
+  "exKo": "Oh 씨는 이전 관리자가 회사를 떠난 후 그 프로젝트를 넘겨받았다.",
   "col": [
    {
     "e": "lead a project",
@@ -232,8 +232,8 @@
    5,
    7
   ],
-  "ex": "Employees should *report* any damaged equipment to the facilities manager immediately.",
-  "exKo": "직원들은 손상된 장비를 시설 관리자에게 즉시 보고해야 한다.",
+  "ex": "Ms. Ahn *reported* the findings of the customer survey to the board on Monday.",
+  "exKo": "Ahn 씨는 월요일에 고객 설문 조사 결과를 이사회에 보고했다.",
   "col": [
    {
     "e": "report to",
@@ -372,7 +372,7 @@
   "ant": "",
   "tip": "contact는 타동사라 contact with A가 아니라 contact A로 쓴다. 명사로는 contact information(연락처), be in contact with(~와 연락하고 있다)처럼 쓰인다.",
   "q": {
-   "s": "Please ------- Mr. Park in the purchasing department if you have questions about the order.",
+   "s": "Ms. Duval asked her assistant to ------- the caterer about adding vegetarian dishes to the menu.",
    "o": [
     "contact",
     "contact with",
@@ -380,7 +380,7 @@
     "contacted"
    ],
    "a": 0,
-   "k": "Please 뒤 명령문에는 동사원형이 오며, contact는 타동사라 전치사 없이 목적어를 취하므로 contact가 정답이다. contact with는 동사로 쓸 때 틀린 표현이다."
+   "k": "asked her assistant to 뒤에는 동사원형이 오며, contact는 타동사라 전치사 없이 목적어를 취하므로 contact가 정답이다. contact with는 동사로 쓸 때 틀린 표현이다."
   }
  },
  {
@@ -433,7 +433,7 @@
   "ant": "",
   "tip": "information은 불가산명사라 an information, informations로 쓰지 않고 a piece of information으로 센다. further/more information 뒤의 명사 자리를 묻는다.",
   "q": {
-   "s": "For further -------, please visit our website or call our customer service line.",
+   "s": "Detailed ------- about the new parking rules will be sent to all employees next week.",
    "o": [
     "inform",
     "informed",
@@ -441,7 +441,7 @@
     "information"
    ],
    "a": 3,
-   "k": "형용사 further 뒤의 명사 자리이므로 information이 정답이다. inform은 동사, informed와 informative는 형용사다."
+   "k": "형용사 Detailed의 수식을 받는 주어 자리이므로 명사 information이 정답이다. inform은 동사, informed와 informative는 형용사다."
   }
  },
  {
@@ -459,8 +459,8 @@
    5,
    7
   ],
-  "ex": "The contractor expects to *complete* the renovation by the end of March.",
-  "exKo": "그 시공업자는 3월 말까지 보수 공사를 완료할 것으로 예상한다.",
+  "ex": "Ms. Tan needs to *complete* three more training modules before she can start work.",
+  "exKo": "Tan 씨는 업무를 시작하기 전에 교육 과정 세 개를 더 이수해야 한다.",
   "col": [
    {
     "e": "complete a form",
@@ -490,7 +490,7 @@
   "ant": "",
   "tip": "동사로 '끝내다' 외에 complete a form(양식을 작성하다)이라는 뜻이 중요하다. 형용사로 '완전한, 완료된'이라는 뜻도 있어 be동사 뒤 보어 자리에 쓰인다.",
   "q": {
-   "s": "Please make sure that the form is ------- before you hand it in at the front desk.",
+   "s": "Applications will not be processed unless every section of the form is -------.",
    "o": [
     "complete",
     "completely",
@@ -498,7 +498,7 @@
     "completing"
    ],
    "a": 0,
-   "k": "be동사 is 뒤 보어 자리에 '완전히 작성된'이라는 뜻의 형용사가 필요하므로 complete가 정답이다. completely는 부사, completion은 명사이며, completing은 양식이 무언가를 완료한다는 뜻이 되어 어색하다."
+   "k": "be동사 is 뒤 보어 자리에 '빠짐없이 작성된'이라는 뜻의 형용사가 필요하므로 complete가 정답이다. completely는 부사, completion은 명사이며, completing은 양식이 무언가를 완료한다는 뜻이 되어 어색하다."
   }
  },
  {
@@ -635,8 +635,8 @@
    5,
    7
   ],
-  "ex": "The construction company sent us a revised *schedule* for the lobby renovation.",
-  "exKo": "그 건설 회사는 로비 보수 공사의 수정된 일정표를 우리에게 보냈다.",
+  "ex": "Ms. Ferrari keeps a detailed *schedule* of all her meetings on her phone.",
+  "exKo": "Ferrari 씨는 휴대 전화에 모든 회의의 상세한 일정을 기록해 둔다.",
   "col": [
    {
     "e": "ahead of schedule",
@@ -790,7 +790,7 @@
   "ant": "",
   "tip": "progress는 불가산명사라 a progress, progresses로 쓰지 않는다. in progress(진행 중인), make progress on(~에 진전을 보이다)이 빈출이다.",
   "q": {
-   "s": "Construction of the new parking garage is currently in -------.",
+   "s": "Work on the new company website is still in -------, but a test version can be viewed online.",
    "o": [
     "progress",
     "progressive",
@@ -846,15 +846,15 @@
   "ant": "",
   "tip": "명사(파일, 서류철) 외에 동사로 '철하다', file a complaint/claim(불만·청구를 제기하다)이 자주 나온다. 철자가 비슷한 fill(채우다)과 혼동하지 않는다.",
   "q": {
-   "s": "Customers who wish to ------- a complaint can do so through our website.",
+   "s": "Mr. Abbott ------- a complaint with the airline after his luggage was damaged.",
    "o": [
-    "fill",
-    "file",
-    "feed",
-    "fold"
+    "filled",
+    "filed",
+    "fed",
+    "folded"
    ],
    "a": 1,
-   "k": "file a complaint는 '불만을 제기하다'라는 고정 표현이므로 file이 정답이다. fill(채우다)은 fill out a form처럼 양식과 함께 쓰며 complaint와 어울리지 않는다."
+   "k": "file a complaint는 '불만을 제기하다'라는 고정 표현이므로 과거형 filed가 정답이다. fill(채우다)은 fill out a form처럼 양식과 함께 쓰며 complaint와 어울리지 않는다."
   }
  },
  {
@@ -872,8 +872,8 @@
    5,
    7
   ],
-  "ex": "All visitors must fill out a *form* at the front desk before entering the laboratory.",
-  "exKo": "모든 방문객은 실험실에 들어가기 전에 안내 데스크에서 양식을 작성해야 한다.",
+  "ex": "Ms. Choi downloaded the *form* from the bank's website and filled it out at home.",
+  "exKo": "Choi 씨는 은행 웹사이트에서 양식을 내려받아 집에서 작성했다.",
   "col": [
    {
     "e": "fill out a form",
@@ -902,7 +902,7 @@
   "ant": "",
   "tip": "fill out/complete/submit a form(양식을 작성하다/제출하다)이 핵심이다. 동사로 form a committee(위원회를 구성하다)처럼 '구성하다'라는 뜻도 있다.",
   "q": {
-   "s": "New members should fill out the attached ------- and return it to the front office.",
+   "s": "Club members who wish to change their address must submit a new ------- to the front office.",
    "o": [
     "format",
     "formula",
@@ -910,7 +910,7 @@
     "formation"
    ],
    "a": 2,
-   "k": "fill out의 목적어로 '양식'을 뜻하는 form이 정답이다. format(형식), formula(공식), formation(형성)은 작성해서 제출하는 대상이 아니다."
+   "k": "주소를 변경하려는 회원이 제출하는 것은 새 '양식'이므로 form이 정답이다. format(형식), formula(공식), formation(형성)은 작성해서 제출하는 대상이 아니다."
   }
  },
  {
@@ -972,8 +972,8 @@
    5,
    7
   ],
-  "ex": "Both parties *signed* the agreement at a ceremony in Seoul.",
-  "exKo": "양측은 서울에서 열린 행사에서 협정에 서명했다.",
+  "ex": "Mr. Lopez forgot to *sign* the check before mailing it to the utility company.",
+  "exKo": "Lopez 씨는 공과금 회사에 수표를 우편으로 보내기 전에 서명하는 것을 잊었다.",
   "col": [
    {
     "e": "sign in",
@@ -1006,7 +1006,7 @@
   "ant": "",
   "tip": "sign in/out(출입 기록을 하다), sign up for(~에 신청하다)이 빈출이며, 명사 sign은 '표지판'이라는 뜻이다. 명사 signature(서명)와 품사를 구별한다.",
   "q": {
-   "s": "Visitors must ------- in at the security desk before going to the upper floors.",
+   "s": "The two companies are expected to ------- the merger agreement at a ceremony next week.",
    "o": [
     "signal",
     "sign",
@@ -1014,7 +1014,7 @@
     "signing"
    ],
    "a": 1,
-   "k": "조동사 must 뒤의 동사원형 자리이며 sign in은 '서명하고 들어가다'라는 뜻이므로 sign이 정답이다. signal in이라는 표현은 쓰지 않고, signature는 명사다."
+   "k": "be expected to 뒤의 동사원형 자리이며 합병 계약서에 '서명하다'라는 뜻이므로 sign이 정답이다. signal은 '신호를 보내다'라 계약서와 어울리지 않고, signature는 명사다."
   }
  },
  {
@@ -1185,7 +1185,7 @@
   "ant": "",
   "tip": "행사 공지·광고 첫머리에서 Mark your calendar(s) for ~(~ 날짜를 기억해 두세요) 형태로 쓰인다. Part 4·7에서 행사 날짜를 묻는 문제의 단서가 된다.",
   "q": {
-   "s": "------- for the grand opening of our new downtown branch on Friday, May 3.",
+   "s": "------- for the company's annual charity run, which will take place on Saturday, June 7.",
    "o": [
     "Take your time",
     "Mark your calendar",
@@ -1304,7 +1304,7 @@
   "ant": "",
   "tip": "사람명사 assistant와 불가산명사 assistance(도움)를 구별하는 문제가 단골이다. assistant manager(부지배인)처럼 직책 앞에 붙기도 한다.",
   "q": {
-   "s": "Ms. Lee works as a legal ------- at a law firm in downtown Toronto.",
+   "s": "Ms. Lee works as a research ------- at a pharmaceutical company in Basel.",
    "o": [
     "assistance",
     "assist",
@@ -1395,22 +1395,23 @@
   "ant": "",
   "tip": "colleague와 같은 뜻으로 Part 7에서 서로 바꿔 쓰인다. co-worker처럼 하이픈을 넣어 쓰기도 한다.",
   "q": {
-   "s": "Mr. Ford asked a ------- to cover his shift while he attended a medical appointment.",
+   "s": "Ms. Tran's ------- threw a small party to celebrate her tenth anniversary with the company.",
    "o": [
-    "coworker",
-    "coordinate",
+    "coworkers",
+    "coordinates",
     "cooperation",
-    "copier"
+    "copiers"
    ],
    "a": 0,
-   "k": "근무를 대신해 달라고 부탁할 수 있는 대상은 사람이므로 coworker(동료)가 정답이다. coordinate는 동사, cooperation은 '협력', copier는 '복사기'다."
+   "k": "입사 10주년을 축하하는 파티를 연 주체는 사람이므로 coworkers(동료들)가 정답이다. coordinates(좌표), cooperation(협력), copiers(복사기)는 파티를 열 수 없다."
   }
  },
  {
   "w": "duplicate",
   "pos": "n",
   "m": [
-   "사본, 복제품"
+   "사본, 복제품",
+   "중복된, 똑같은"
   ],
   "tier": 2,
   "parts": [
@@ -1645,7 +1646,7 @@
   "ant": "",
   "tip": "This is a reminder that ~(~을 다시 알려 드립니다)이 공지·음성 메시지의 첫머리에 자주 나온다. 동사 remind는 remind A of B / remind A to do 구조다.",
   "q": {
-   "s": "This is a ------- that all expense reports must be submitted by the last day of the month.",
+   "s": "This is a ------- that the books you borrowed are due back at the library on March 15.",
    "o": [
     "remind",
     "reminded",
@@ -1670,8 +1671,8 @@
    4,
    7
   ],
-  "ex": "The schedule for next month's workshops has been posted on the *bulletin board*.",
-  "exKo": "다음 달 워크숍 일정이 게시판에 게시되었다.",
+  "ex": "Ms. Ford pinned a sign-up sheet for the volunteer program to the *bulletin board*.",
+  "exKo": "Ford 씨는 자원봉사 프로그램 신청서를 게시판에 붙였다.",
   "col": [
    {
     "e": "post on the bulletin board",
@@ -1689,7 +1690,7 @@
   "ant": "",
   "tip": "post A on the bulletin board(게시판에 A를 붙이다)로 쓰이며 Part 1 사진 묘사에도 나온다. 영국식으로는 notice board라고 한다.",
   "q": {
-   "s": "Details about the upcoming office move were posted on the ------- in the break room.",
+   "s": "Job openings within the company are listed on the ------- outside the cafeteria.",
    "o": [
     "boarding pass",
     "bulletin board",
@@ -1697,7 +1698,7 @@
     "dashboard"
    ],
    "a": 1,
-   "k": "휴게실에서 사무실 이전 관련 세부 사항을 '게시한' 곳은 게시판이므로 bulletin board가 정답이다. boarding pass(탑승권), board meeting(이사회), dashboard(계기판)는 게시 장소가 아니다."
+   "k": "구내식당 밖에서 사내 공석 정보가 게시되는 곳은 게시판이므로 bulletin board가 정답이다. boarding pass(탑승권), board meeting(이사회), dashboard(계기판)는 게시 장소가 아니다."
   }
  },
  {
@@ -1719,8 +1720,8 @@
   "exKo": "로비의 안내문은 화요일에 단수가 된다는 사실을 주민들에게 알린다.",
   "col": [
    {
-    "e": "until further notice",
-    "k": "추후 공지가 있을 때까지"
+    "e": "give notice",
+    "k": "(사전에) 통보하다"
    },
    {
     "e": "on short notice",
@@ -1748,9 +1749,9 @@
    "notification"
   ],
   "ant": "",
-  "tip": "until further notice(추후 공지가 있을 때까지), on short notice(촉박하게)가 빈출 표현이다. 동사로는 '알아차리다'라는 뜻이라 notify(통지하다)와 구별한다.",
+  "tip": "give two weeks' notice(2주 전에 통보하다), on short notice(촉박하게)가 빈출 표현이다. 동사로는 '알아차리다'라는 뜻이라 notify(통지하다)와 구별한다.",
   "q": {
-   "s": "The east entrance of the building will remain closed until further -------.",
+   "s": "Employees who plan to resign are asked to give at least two weeks' -------.",
    "o": [
     "notify",
     "noticeable",
@@ -1758,7 +1759,7 @@
     "noticing"
    ],
    "a": 2,
-   "k": "until further notice는 '추후 공지가 있을 때까지'라는 고정 표현이므로 명사 notice가 정답이다. notify는 동사, noticeable은 형용사다."
+   "k": "give two weeks' notice는 '2주 전에 (퇴사를) 통보하다'라는 뜻으로 소유격 뒤에 명사가 필요하므로 notice가 정답이다. notify는 동사, noticeable은 형용사다."
   }
  },
  {
@@ -1776,8 +1777,8 @@
    5,
    7
   ],
-  "ex": "The CEO made an *announcement* about the merger at the staff meeting.",
-  "exKo": "CEO는 직원회의에서 합병에 관해 발표했다.",
+  "ex": "An *announcement* over the speakers informed shoppers that the store would close in fifteen minutes.",
+  "exKo": "스피커에서 나온 안내 방송이 쇼핑객들에게 매장이 15분 후에 문을 닫는다고 알렸다.",
   "col": [
    {
     "e": "make an announcement",
@@ -1996,7 +1997,7 @@
   "ant": "",
   "tip": "in operation(운영 중인), hours of operation(영업시간)이 빈출이다. 회사의 '사업 부문'을 뜻할 때는 복수형 operations(European operations)를 쓴다.",
   "q": {
-   "s": "The new branch in Busan is expected to begin ------- early next year.",
+   "s": "The factory had to suspend ------- for two days because of a power outage.",
    "o": [
     "operate",
     "operational",
@@ -2004,7 +2005,7 @@
     "operations"
    ],
    "a": 3,
-   "k": "타동사 begin의 목적어 자리이므로 명사가 필요하며 '영업을 시작하다'라는 뜻의 begin operations가 정답이다. operator는 사람명사 단수라 관사 없이 쓸 수 없다."
+   "k": "타동사 suspend의 목적어 자리이므로 명사가 필요하며 '가동을 중단하다'라는 뜻의 suspend operations가 정답이다. operator는 사람명사 단수라 관사 없이 쓸 수 없다."
   }
  },
  {
@@ -2130,8 +2131,8 @@
    5,
    7
   ],
-  "ex": "After the security check, passengers should *proceed* directly to Gate 12.",
-  "exKo": "보안 검색 후 승객들은 곧바로 12번 탑승구로 가야 한다.",
+  "ex": "After a short break, the speaker *proceeded* with the second half of her presentation.",
+  "exKo": "잠시 휴식한 후 연사는 발표의 후반부를 이어 갔다.",
   "col": [
    {
     "e": "proceed with",
@@ -2162,7 +2163,7 @@
   "ant": "",
   "tip": "proceed는 자동사라 proceed with + 일(~을 진행하다), proceed to + 장소(~로 가다)로 쓴다. 철자가 비슷한 precede(앞서다)와 혼동하지 않는다.",
   "q": {
-   "s": "Once the budget is approved, we will ------- with the construction of the new warehouse.",
+   "s": "The committee decided to ------- with the plan despite concerns about the cost.",
    "o": [
     "precede",
     "process",
