@@ -467,15 +467,15 @@
   "ant": "",
   "tip": "be required to do(~해야 한다), require that + 주어 + (should) 동사원형 구문이 출제된다. 명사 requirement(Day 1)와 품사도 구분한다.",
   "q": {
-   "s": "The new policy ------- that all employees complete safety training by June 30.",
+   "s": "Most of the job openings listed on our Web site ------- a bachelor's degree in a related field.",
    "o": [
     "requiring",
-    "require",
     "requires",
+    "require",
     "requirement"
    ],
    "a": 2,
-   "k": "단수 주어 The new policy의 동사 자리이며 that절을 목적어로 취하므로 requires가 정답이다. require는 수가 맞지 않고, requiring은 동사 자리에 올 수 없으며 requirement는 명사다. that절에 동사원형 complete가 쓰인 점도 단서다."
+   "k": "주어 Most of the job openings는 복수(openings)이므로 복수 동사 require가 정답이다. listed는 openings를 꾸미는 과거분사다. requires는 수가 맞지 않고, requiring은 동사 자리에 올 수 없으며 requirement는 명사다."
   }
  },
  {
@@ -537,8 +537,8 @@
    5,
    7
   ],
-  "ex": "The lease agreement *forbids* tenants from keeping pets in the building.",
-  "exKo": "임대 계약서는 세입자가 건물 안에서 반려동물을 키우는 것을 금지한다.",
+  "ex": "Airport rules *forbid* passengers from carrying more than 100 milliliters of liquid.",
+  "exKo": "공항 규정은 승객이 100밀리리터가 넘는 액체를 휴대하는 것을 금지한다.",
   "col": [
    {
     "e": "forbid A to do",
@@ -622,7 +622,7 @@
   "ant": "rejection",
   "tip": "approve는 타동사(approve the plan) 또는 approve of(~에 찬성하다)로 쓰이며, 명사 approval은 obtain/get approval, subject to approval 형태로 출제된다.",
   "q": {
-   "s": "All travel expenses over 500 dollars require prior ------- from a department manager.",
+   "s": "All travel expenses over 500 dollars need prior ------- from a department manager.",
    "o": [
     "approve",
     "approval",
@@ -630,7 +630,7 @@
     "approves"
    ],
    "a": 1,
-   "k": "형용사 prior의 수식을 받고 require의 목적어가 되는 명사 자리이므로 approval이 정답이다. approve, approves는 동사, approved는 과거분사다."
+   "k": "형용사 prior의 수식을 받고 need의 목적어가 되는 명사 자리이므로 approval이 정답이다. approve, approves는 동사, approved는 과거분사다."
   }
  },
  {
@@ -2000,8 +2000,8 @@
    5,
    7
   ],
-  "ex": "Attendance at the safety training session is *compulsory* for all new staff.",
-  "exKo": "안전 교육 참석은 모든 신입 직원에게 의무 사항이다.",
+  "ex": "Seat belts are *compulsory* for all passengers on the company shuttle bus.",
+  "exKo": "회사 셔틀버스의 모든 승객은 안전벨트를 의무적으로 매야 한다.",
   "col": [
    {
     "e": "compulsory attendance",

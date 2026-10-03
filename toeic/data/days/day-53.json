@@ -306,7 +306,7 @@
   "ant": "",
   "tip": "Part 1 사진 묘사 빈출어로 'A woman is holding onto a handrail.'처럼 나오며 railing과 바꿔 쓸 수 있다.",
   "q": {
-   "s": "For your safety, please hold on to the ------- while riding the escalator.",
+   "s": "To avoid falls, please hold on to the ------- while riding the escalator.",
    "o": [
     "handrail",
     "handout",
@@ -314,7 +314,7 @@
     "handbook"
    ],
    "a": 0,
-   "k": "에스컬레이터를 탈 때 안전을 위해 잡는 것은 '손잡이, 난간'이므로 handrail이 정답이다. handout(유인물), handbook(안내서), handshake(악수)는 잡고 탈 수 있는 것이 아니다."
+   "k": "에스컬레이터를 탈 때 넘어지지 않도록 잡는 것은 '손잡이, 난간'이므로 handrail이 정답이다. handout(유인물), handbook(안내서), handshake(악수)는 잡고 탈 수 있는 것이 아니다."
   }
  },
  {
@@ -353,7 +353,7 @@
   "ant": "",
   "tip": "conduct/carry out a risk assessment 형태로 Part 7 안전 공지·보고서에 나오며 safety evaluation으로 바꿔 표현된다.",
   "q": {
-   "s": "The safety officer will conduct a ------- of the warehouse to identify potential dangers.",
+   "s": "The building inspector will conduct a ------- of the warehouse to identify potential dangers.",
    "o": [
     "market share",
     "risk assessment",
@@ -1228,7 +1228,7 @@
   "parts": [
    7
   ],
-  "ex": "Workers wear gloves to prevent *contamination* of the food products.",
+  "ex": "Workers wear gloves to avoid *contamination* of the food products.",
   "exKo": "작업자들은 식품 오염을 막기 위해 장갑을 착용한다.",
   "col": [
    {
@@ -1959,7 +1959,7 @@
   "ant": "",
   "tip": "명사(유출)와 동사(쏟다)로 모두 쓰이며 과거형은 spilled 또는 spilt이다. Part 1·3에서 음료를 쏟는 상황으로도 나온다.",
   "q": {
-   "s": "Employees must report any chemical ------- to the safety manager immediately.",
+   "s": "Employees must report any chemical ------- to the facilities manager immediately.",
    "o": [
     "spell",
     "spin",

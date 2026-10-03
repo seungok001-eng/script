@@ -62,8 +62,8 @@
    4,
    7
   ],
-  "ex": "All *new hires* must attend a two-day orientation before starting work.",
-  "exKo": "모든 신입 사원은 업무를 시작하기 전에 이틀간의 오리엔테이션에 참석해야 한다.",
+  "ex": "Each *new hire* receives a laptop and a security badge on the first day.",
+  "exKo": "신입 사원은 각자 첫날 노트북과 보안 출입증을 받는다.",
   "col": [
    {
     "e": "train new hires",
@@ -148,14 +148,14 @@
   "ant": "",
   "tip": "graduate는 명사(졸업생)와 동사(졸업하다, graduate from)로 모두 쓰인다. 채용 공고의 recent graduates are welcome은 '경력이 없어도 지원 가능하다'는 단서가 된다.",
   "q": {
-   "s": "This entry-level position is ideal for a recent ------- with a background in accounting.",
+   "s": "The firm's training program was created specifically for recent ------- who lack work experience.",
    "o": [
-    "graduation",
-    "graduate",
+    "graduations",
+    "graduates",
     "graduated",
     "graduating"
    ],
-   "k": "관사 a와 recent 뒤에서 '사람'을 나타내는 명사가 필요하므로 graduate(졸업생)가 정답. graduation은 '졸업'이라는 행위 명사라 직책에 적합한 사람을 가리키지 못하고, graduated와 graduating은 명사 자리에 올 수 없다.",
+   "k": "관계대명사 who의 선행사로 '사람'을 나타내는 복수 명사가 필요하므로 graduates(졸업생들)가 정답. graduations는 '졸업(식)'이라는 행위 명사라 사람을 가리키지 못하고, graduated와 graduating은 명사 자리에 올 수 없다.",
    "a": 1
   }
  },
@@ -315,14 +315,14 @@
   "ant": "",
   "tip": "편지·이메일에서 'Please find enclosed ~'(동봉한 ~을 확인해 주십시오) 형태로 Part 6·7에 자주 나온다. 명사 enclosure(동봉물)도 품사 문제에 출제된다.",
   "q": {
-   "s": "Please complete the ------- form and return it in the envelope provided.",
+   "s": "Please sign the ------- contract and mail it back to us by June 30.",
    "o": [
     "enclosing",
     "enclosure",
     "enclosed",
     "encloses"
    ],
-   "k": "명사 form을 수식하며 '동봉된'이라는 수동의 의미를 나타내는 과거분사 enclosed가 정답. enclosing은 '동봉하는'이라는 능동의 뜻이고, enclosure는 명사, encloses는 동사다.",
+   "k": "명사 contract를 수식하며 '동봉된'이라는 수동의 의미를 나타내는 과거분사 enclosed가 정답. enclosing은 '동봉하는'이라는 능동의 뜻이고, enclosure는 명사, encloses는 동사다.",
    "a": 2
   }
  },
@@ -520,8 +520,8 @@
    4,
    7
   ],
-  "ex": "Each *newcomer* is paired with an experienced mentor during the first month.",
-  "exKo": "새로 온 직원은 각각 첫 달 동안 경험 많은 멘토와 짝을 이룬다.",
+  "ex": "As a *newcomer* to the city, Mr. Akers relied on his coworkers for restaurant recommendations.",
+  "exKo": "그 도시에 새로 온 Akers 씨는 식당 추천을 동료들에게 의지했다.",
   "col": [
    {
     "e": "a newcomer to the industry",
@@ -891,14 +891,14 @@
   "ant": "",
   "tip": "명사(최종 후보 명단)와 동사(최종 후보로 선정하다)로 모두 쓰이며 be shortlisted for 형태가 자주 나온다. Part 7 채용 지문에서 '면접 대상자'를 가리킨다.",
   "q": {
-   "s": "Only applicants who have been ------- will be contacted for an interview.",
+   "s": "Of the 200 people who applied, only six were ------- for a final interview.",
    "o": [
     "shortened",
     "shortlisted",
     "shortcut",
     "shortage"
    ],
-   "k": "면접 연락을 받는 지원자는 '최종 후보로 선정된' 사람이므로 shortlisted가 정답. shortened(짧아진)는 사람에게 쓰지 않고, shortcut(지름길)과 shortage(부족)는 명사다.",
+   "k": "최종 면접 대상은 '최종 후보로 선정된' 사람이므로 shortlisted가 정답. shortened(짧아진)는 사람에게 쓰지 않고, shortcut(지름길)과 shortage(부족)는 명사다.",
    "a": 1
   }
  },
@@ -969,8 +969,8 @@
    4,
    7
   ],
-  "ex": "All job offers are conditional on the successful completion of a *background check*.",
-  "exKo": "모든 채용 제안은 신원 조회를 무사히 통과하는 것을 조건으로 한다.",
+  "ex": "The security company runs a *background check* on every applicant before hiring.",
+  "exKo": "그 보안 업체는 채용 전에 모든 지원자의 신원 조회를 실시한다.",
   "col": [
    {
     "e": "run a background check",
@@ -1420,14 +1420,14 @@
   "ant": "monolingual",
   "tip": "접두사 multi-(여러)와 lingual(언어의)이 결합한 말로, bilingual(2개 국어를 하는)과 함께 채용 공고의 우대 조건에 자주 나온다.",
   "q": {
-   "s": "The hotel prefers to hire ------- receptionists because many of its guests are from overseas.",
+   "s": "The airline is recruiting ------- flight attendants who can speak at least three languages.",
    "o": [
     "multimedia",
     "multipurpose",
     "multilingual",
     "multistory"
    ],
-   "k": "해외 투숙객이 많아 '여러 언어를 구사하는' 접수원을 선호하므로 multilingual이 정답. multimedia(멀티미디어의), multipurpose(다목적의), multistory(다층의)는 사람을 수식하지 않는다.",
+   "k": "세 개 이상의 언어를 구사하는 승무원을 찾으므로 multilingual이 정답. multimedia(멀티미디어의), multipurpose(다목적의), multistory(다층의)는 사람을 수식하지 않는다.",
    "a": 2
   }
  },
@@ -1607,8 +1607,8 @@
    4,
    7
   ],
-  "ex": "We found our temporary receptionist through a local *employment agency*.",
-  "exKo": "우리는 지역 직업소개소를 통해 임시 접수원을 구했다.",
+  "ex": "During the busy season, the warehouse hires extra workers through an *employment agency*.",
+  "exKo": "성수기에는 그 창고가 직업소개소를 통해 추가 인력을 고용한다.",
   "col": [
    {
     "e": "register with an employment agency",
@@ -2011,14 +2011,14 @@
   "ant": "",
   "tip": "Part 7에서 work remotely, work from home으로 패러프레이징된다. 사람 명사 telecommuter와 동명사 telecommuting도 함께 알아 둔다.",
   "q": {
-   "s": "Staff members who wish to ------- must have a secure Internet connection at home.",
+   "s": "Employees who ------- two days a week save both time and money on commuting.",
    "o": [
     "telecommuter",
     "telecommuting",
     "telecommuted",
     "telecommute"
    ],
-   "k": "to부정사 wish to 뒤에는 동사원형이 와야 하므로 telecommute가 정답. telecommuter는 사람 명사, telecommuting은 동명사, telecommuted는 과거형이다.",
+   "k": "관계대명사 who 뒤 동사 자리이며 주절 동사 save와 같은 현재 시제가 자연스러우므로 telecommute가 정답. telecommuter는 명사, telecommuting은 동사 역할을 단독으로 할 수 없고, telecommuted는 과거 시제라 현재의 일반적 사실과 맞지 않는다.",
    "a": 3
   }
  },

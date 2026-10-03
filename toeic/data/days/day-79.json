@@ -1641,7 +1641,7 @@
   "ant": "consecutive",
   "tip": "concurrent sessions(동시 진행 세션)가 학회 일정표에 자주 나오며, 부사 concurrently(동시에)를 고르는 품사 문제도 출제된다. simultaneous로 패러프레이징된다.",
   "q": {
-   "s": "Because the two workshops are -------, participants will be able to attend only one of them.",
+   "s": "Since the two presentations are -------, Mr. Choi asked a colleague to attend one of them on his behalf.",
    "o": [
     "consecutive",
     "conclusive",
@@ -1649,7 +1649,7 @@
     "concurrent"
    ],
    "a": 3,
-   "k": "참가자들이 둘 중 하나만 들을 수 있는 것은 두 워크숍이 '동시에 진행되기' 때문이므로 concurrent가 정답이다. consecutive(연이은)라면 둘 다 참석할 수 있으므로 오답이다."
+   "k": "두 발표가 '동시에 열리기' 때문에 동료에게 하나를 대신 참석해 달라고 부탁한 것이므로 concurrent가 정답이다. consecutive(연이은)라면 혼자서 둘 다 참석할 수 있으므로 오답이고, conclusive(결정적인), considerate(사려 깊은)는 의미가 맞지 않는다."
   }
  },
  {

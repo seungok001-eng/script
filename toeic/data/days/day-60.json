@@ -104,8 +104,8 @@
    5,
    7
   ],
-  "ex": "The annual shareholders' meeting will *take place* in the main auditorium.",
-  "exKo": "연례 주주 총회는 대강당에서 열릴 것이다.",
+  "ex": "The product demonstration will *take place* in Conference Room B at 2 P.M.",
+  "exKo": "제품 시연회는 오후 2시에 B 회의실에서 열린다.",
   "col": [
    {
     "e": "take place on/in/at",
@@ -283,14 +283,14 @@
   "ant": "",
   "tip": "목적어가 대명사면 figure it out처럼 동사와 부사 사이에 넣는다. Part 3에서는 '문제를 파악하다'를 determine, identify로 바꿔 말하는 경우가 많다.",
   "q": {
-   "s": "We need to figure ------- why the shipment was sent to the wrong address.",
+   "s": "Can you help me figure ------- how to use the new expense reporting system?",
    "o": [
     "up",
     "off",
     "out",
     "in"
    ],
-   "k": "figure와 결합해 '알아내다'라는 뜻을 만드는 out이 정답. figure in(계산에 넣다)을 비롯해 나머지 보기는 why절을 목적어로 받아 '알아내다'라는 뜻을 만들지 못한다.",
+   "k": "figure와 결합해 '알아내다'라는 뜻을 만드는 out이 정답. figure in(계산에 넣다)을 비롯해 나머지 보기는 how to를 목적어로 받아 '알아내다'라는 뜻을 만들지 못한다.",
    "a": 2
   }
  },
@@ -581,8 +581,8 @@
    5,
    7
   ],
-  "ex": "*In case of* fire, use the stairs instead of the elevators.",
-  "exKo": "화재가 발생하면 엘리베이터 대신 계단을 이용해야 한다.",
+  "ex": "*In case of* a flight delay, please call the hotel to tell them you will arrive late.",
+  "exKo": "항공편이 지연될 경우 호텔에 전화해 늦게 도착한다고 알려 주기 바란다.",
   "col": [
    {
     "e": "in case of emergency",
@@ -644,7 +644,7 @@
   "ant": "",
   "tip": "in the event of 뒤에는 명사가, in the event that 뒤에는 절이 온다. 공지문에서 in case of와 바꿔 쓰는 격식 있는 표현이다.",
   "q": {
-   "s": "In the ------- of rain, the company picnic will be moved to the cafeteria.",
+   "s": "In the ------- of a cancellation, ticket holders will receive a full refund within seven days.",
    "o": [
     "occasion",
     "instance",
@@ -916,12 +916,16 @@
    5,
    7
   ],
-  "ex": "The cafeteria will remain closed *for the time being* because of plumbing repairs.",
-  "exKo": "구내식당은 배관 수리 때문에 당분간 문을 닫는다.",
+  "ex": "The north entrance will be closed *for the time being* while the steps are repaired.",
+  "exKo": "계단을 보수하는 동안 북쪽 출입구는 당분간 폐쇄된다.",
   "col": [
    {
-    "e": "remain closed for the time being",
-    "k": "당분간 문을 닫다"
+    "e": "be closed for the time being",
+    "k": "당분간 폐쇄되다"
+   },
+   {
+    "e": "for the time being, S + V",
+    "k": "당분간은 ~하다"
    }
   ],
   "der": [],
@@ -1113,8 +1117,8 @@
    5,
    7
   ],
-  "ex": "All requests for vacation time must be submitted *in writing*.",
-  "exKo": "모든 휴가 신청은 서면으로 제출해야 한다.",
+  "ex": "Please confirm your acceptance of the job offer *in writing* by Friday.",
+  "exKo": "금요일까지 채용 제안 수락 여부를 서면으로 확인해 주기 바란다.",
   "col": [
    {
     "e": "put ~ in writing",
@@ -1144,7 +1148,7 @@
   "ant": "verbally",
   "tip": "'서면으로'는 관사 없이 in writing으로 쓴다. 명사 앞에서는 형용사 written을 써서 written consent(서면 동의)로 표현한다.",
   "q": {
-   "s": "Any changes to the terms of the contract must be confirmed in ------- by both parties.",
+   "s": "The landlord asks tenants to submit all repair requests in ------- instead of by phone.",
    "o": [
     "writing",
     "written",
@@ -1303,7 +1307,7 @@
   "ant": "be unaware of",
   "tip": "전치사 of와 짝을 이루며, 절이 올 때는 be aware that을 쓴다. 명사 awareness는 raise awareness(인식을 높이다)라는 연어로 자주 쓰인다.",
   "q": {
-   "s": "All employees should be ------- of the new security procedures at the main entrance.",
+   "s": "Travelers should be ------- of the baggage restrictions before they arrive at the airport.",
    "o": [
     "informative",
     "acquainted",
@@ -1326,8 +1330,8 @@
    5,
    7
   ],
-  "ex": "Full-time employees *are eligible for* two weeks of paid vacation.",
-  "exKo": "정규직 직원은 2주간의 유급 휴가를 받을 자격이 있다.",
+  "ex": "Members who have attended at least ten classes *are eligible for* a free personal training session.",
+  "exKo": "강좌에 10회 이상 참석한 회원은 무료 개인 트레이닝 1회를 받을 자격이 있다.",
   "col": [
    {
     "e": "be eligible for + 명사",
@@ -1357,14 +1361,14 @@
   "ant": "",
   "tip": "명사 앞에는 for, 동사원형 앞에는 to를 쓴다(be eligible to apply). Part 7에서 '누가 혜택을 받을 수 있는가'를 묻는 문제의 근거로 자주 나온다.",
   "q": {
-   "s": "Customers who spend more than $100 are eligible ------- free delivery.",
+   "s": "Employees with more than five years of service are eligible ------- the company's tuition reimbursement program.",
    "o": [
     "to",
     "with",
     "of",
     "for"
    ],
-   "k": "뒤에 명사 free delivery가 오므로 eligible과 짝을 이루는 전치사 for가 정답. to는 동사원형 앞에서 쓰고(be eligible to receive), with와 of는 eligible과 어울리지 않는다.",
+   "k": "뒤에 명사구 the company's tuition reimbursement program이 오므로 eligible과 짝을 이루는 전치사 for가 정답. to는 동사원형 앞에서 쓰고(be eligible to receive), with와 of는 eligible과 어울리지 않는다.",
    "a": 3
   }
  },
@@ -1381,8 +1385,8 @@
    5,
    7
   ],
-  "ex": "The new branch *is scheduled to* open in early September.",
-  "exKo": "새 지점은 9월 초에 문을 열 예정이다.",
+  "ex": "Our flight *is scheduled to* land in Frankfurt at 6:40 A.M. local time.",
+  "exKo": "우리 항공편은 현지 시각 오전 6시 40분에 프랑크푸르트에 착륙할 예정이다.",
   "col": [
    {
     "e": "be scheduled to + 동사원형",
@@ -1436,8 +1440,8 @@
    5,
    7
   ],
-  "ex": "All visitors *are required to* sign in at the security desk.",
-  "exKo": "모든 방문객은 보안 데스크에서 방문 기록을 작성해야 한다.",
+  "ex": "Contractors *are required to* wear identification badges at all times while on site.",
+  "exKo": "외부 작업자는 현장에 있는 동안 항상 신분증을 착용해야 한다.",
   "col": [
    {
     "e": "be required to + 동사원형",
@@ -1467,7 +1471,7 @@
   "ant": "",
   "tip": "require A to do의 수동형이 be required to do다. 공지문의 의무 사항을 나타내며 Part 7에서 must, have to로 바꿔 표현된다.",
   "q": {
-   "s": "Employees are ------- to wear safety helmets at all times in the warehouse.",
+   "s": "All new employees are ------- to complete an online safety course within their first week.",
    "o": [
     "requiring",
     "required",
@@ -1545,8 +1549,8 @@
    5,
    7
   ],
-  "ex": "All of our meeting rooms *are equipped with* high-speed Internet access.",
-  "exKo": "우리 회의실은 모두 초고속 인터넷 설비를 갖추고 있다.",
+  "ex": "The new delivery vans *are equipped with* GPS tracking devices.",
+  "exKo": "새 배송 차량에는 GPS 위치 추적 장치가 장착되어 있다.",
   "col": [
    {
     "e": "be equipped with + 장비",
@@ -1737,8 +1741,8 @@
    5,
    7
   ],
-  "ex": "Online sales now *account for* nearly half of the company's revenue.",
-  "exKo": "현재 온라인 매출이 회사 수익의 거의 절반을 차지한다.",
+  "ex": "Rising fuel prices *account for* most of the increase in our shipping costs.",
+  "exKo": "운송비 증가분의 대부분은 연료비 상승으로 설명된다.",
   "col": [
    {
     "e": "account for + 비율",
@@ -1843,8 +1847,8 @@
    5,
    7
   ],
-  "ex": "Our factory is hiring more workers to *keep up with* growing demand.",
-  "exKo": "우리 공장은 늘어나는 수요를 따라가기 위해 직원을 더 채용하고 있다.",
+  "ex": "It's hard to *keep up with* all the changes in tax law, so we hired an accountant.",
+  "exKo": "세법의 모든 변경 사항을 따라가기가 어려워서 우리는 회계사를 고용했다.",
   "col": [
    {
     "e": "keep up with demand",

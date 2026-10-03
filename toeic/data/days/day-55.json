@@ -1582,7 +1582,6 @@
   ],
   "tier": 2,
   "parts": [
-   1,
    7
   ],
   "ex": "Mr. Lee keeps his company *checkbook* in a locked drawer at the office.",
@@ -1708,7 +1707,7 @@
   "ant": "",
   "tip": "convert A into(to) B 구조로 전치사 into/to와 짝을 이루며, 명사 conversion과의 품사 구분이 출제된다.",
   "q": {
-   "s": "Cardholders can ------- their reward points into airline miles through the bank's website.",
+   "s": "Members can ------- their reward points into airline miles through the bank's website.",
    "o": [
     "convert",
     "conversion",

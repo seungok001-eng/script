@@ -690,8 +690,8 @@
   "parts": [
    7
   ],
-  "ex": "The witness's *testimony* helped the jury understand what happened that night.",
-  "exKo": "목격자의 증언은 배심원단이 그날 밤 무슨 일이 있었는지 이해하는 데 도움이 되었다.",
+  "ex": "The witness's *testimony* helped the court understand what happened that night.",
+  "exKo": "목격자의 증언은 법정이 그날 밤 무슨 일이 있었는지 파악하는 데 도움이 되었다.",
   "col": [
    {
     "e": "give testimony",
@@ -727,13 +727,13 @@
   "q": {
    "s": "The engineer's expert ------- convinced the court that the bridge had been poorly designed.",
    "o": [
+    "testified",
     "testify",
-    "testimonial",
     "testimony",
-    "testified"
+    "testifying"
    ],
    "a": 2,
-   "k": "법정(the court)을 설득한 것은 전문가의 '증언'이므로 testimony가 정답이다. testimonial은 제품·서비스의 추천 글이고, testify, testified는 동사 형태다."
+   "k": "소유격 The engineer's와 expert 뒤 주어 자리에 명사가 필요하며 법정을 설득한 것은 '증언'이므로 testimony가 정답이다. testify, testified, testifying은 동사 형태라 명사 자리에 올 수 없다."
   }
  },
  {

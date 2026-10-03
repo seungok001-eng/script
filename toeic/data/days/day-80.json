@@ -1351,7 +1351,7 @@
   "ant": "undergraduate",
   "tip": "학사 학위 이후의 석사·박사 과정을 가리키며 미국식 graduate에 해당한다. 반대 개념 undergraduate(학부의)와 구분해야 한다.",
   "q": {
-   "s": "After working for five years, Ms. Ferreira returned to school to earn a ------- diploma in data science.",
+   "s": "Ms. Ferreira is taking evening classes at a local university to earn a ------- diploma in data science.",
    "o": [
     "postponed",
     "postgraduate",
@@ -1359,7 +1359,7 @@
     "postal"
    ],
    "a": 1,
-   "k": "직장 생활 후 다시 학교로 돌아가 취득하는 '대학원' 수료증이 되어야 하므로 postgraduate가 정답이다. postponed(연기된), postdated(날짜를 늦춰 적은), postal(우편의)은 diploma와 어울리지 않는다."
+   "k": "대학에서 야간 수업을 들으며 취득하려는 '대학원' 과정의 수료증이 되어야 하므로 postgraduate가 정답이다. postponed(연기된), postdated(날짜를 늦춰 적은), postal(우편의)은 diploma와 어울리지 않는다."
   }
  },
  {

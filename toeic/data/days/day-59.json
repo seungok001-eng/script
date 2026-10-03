@@ -398,8 +398,8 @@
    5,
    6
   ],
-  "ex": "Please let us know *whether* you will attend the awards dinner on Friday.",
-  "exKo": "금요일 시상식 만찬에 참석할지 여부를 알려 주기 바란다.",
+  "ex": "Please let us know *whether* you will need a parking space during your visit.",
+  "exKo": "방문 기간 동안 주차 공간이 필요한지 알려 주기 바란다.",
   "col": [
    {
     "e": "whether or not",
@@ -447,8 +447,8 @@
    5,
    6
   ],
-  "ex": "*Once* the contract is signed, we will begin work on the new warehouse.",
-  "exKo": "계약서에 서명이 끝나면 우리는 새 창고 공사를 시작할 것이다.",
+  "ex": "*Once* you've logged in, you can view your pay statements online.",
+  "exKo": "일단 로그인하면 온라인으로 급여 명세서를 볼 수 있다.",
   "col": [
    {
     "e": "once + S + V(현재 시제)",
@@ -471,14 +471,14 @@
   "ant": "",
   "tip": "접속사 once는 '일단 ~하면'이라는 시간·조건절을 이끌며 미래의 일도 현재 시제로 쓴다. once completed처럼 주어와 be동사를 생략한 형태도 자주 나온다.",
   "q": {
-   "s": "------- the renovation is complete, the café will offer extended evening hours.",
+   "s": "------- the new software is installed, employees will be able to submit expense reports online.",
    "o": [
     "During",
     "Although",
     "Upon",
     "Once"
    ],
-   "k": "'보수 공사가 끝나면 영업시간을 연장한다'는 시간·조건 관계의 접속사 자리이므로 Once가 정답. During과 Upon은 전치사라 절을 이끌 수 없고, Although는 양보의 뜻이라 문맥에 맞지 않는다.",
+   "k": "'새 소프트웨어가 설치되면 온라인으로 경비 보고서를 제출할 수 있다'는 시간·조건 관계의 접속사 자리이므로 Once가 정답. During과 Upon은 전치사라 절을 이끌 수 없고, Although는 양보의 뜻이라 문맥에 맞지 않는다.",
    "a": 3
   }
  },
@@ -494,8 +494,8 @@
    5,
    6
   ],
-  "ex": "*Even though* the flight was delayed, the team arrived in time for the presentation.",
-  "exKo": "항공편이 지연되었는데도 팀은 발표 시간에 맞춰 도착했다.",
+  "ex": "*Even though* the store opened only last month, it already has many regular customers.",
+  "exKo": "그 가게는 지난달에야 문을 열었는데도 벌써 단골손님이 많다.",
   "col": [
    {
     "e": "even though + S + V",
@@ -848,8 +848,8 @@
    5,
    7
   ],
-  "ex": "The hotel is *conveniently* located just five minutes from the convention center.",
-  "exKo": "그 호텔은 컨벤션 센터에서 불과 5분 거리의 편리한 곳에 위치해 있다.",
+  "ex": "The new fitness center is *conveniently* located on the ground floor of our office building.",
+  "exKo": "새 피트니스 센터는 우리 사무실 건물 1층의 편리한 곳에 자리 잡고 있다.",
   "col": [
    {
     "e": "conveniently located",
@@ -1173,8 +1173,8 @@
    5,
    7
   ],
-  "ex": "Customer complaints have decreased *markedly* since the new return policy took effect.",
-  "exKo": "새 반품 정책이 시행된 이후 고객 불만이 눈에 띄게 줄었다.",
+  "ex": "Delivery times have improved *markedly* since we opened a second distribution center.",
+  "exKo": "두 번째 물류 센터를 연 이후 배송 시간이 눈에 띄게 단축되었다.",
   "col": [
    {
     "e": "differ markedly",
@@ -1234,8 +1234,8 @@
    5,
    7
   ],
-  "ex": "The renovation will take *roughly* three weeks to complete.",
-  "exKo": "보수 공사를 마치는 데 대략 3주가 걸릴 것이다.",
+  "ex": "The flight from Seoul to Singapore takes *roughly* six hours.",
+  "exKo": "서울에서 싱가포르까지 비행시간은 대략 6시간이다.",
   "col": [
    {
     "e": "roughly half",
@@ -1265,14 +1265,14 @@
   "ant": "exactly",
   "tip": "숫자 앞에서 approximately, about과 같은 뜻으로 쓰여 Part 7 패러프레이징에 자주 나온다. a rough estimate(대략적인 견적)처럼 형용사 rough도 함께 알아 둔다.",
   "q": {
-   "s": "The new factory will create ------- 300 jobs in the local area.",
+   "s": "------- half of the survey respondents said they would prefer a four-day workweek.",
    "o": [
-    "roughly",
-    "highly",
-    "mostly",
-    "widely"
+    "Roughly",
+    "Highly",
+    "Mostly",
+    "Widely"
    ],
-   "k": "숫자 300 앞에서 '대략'을 뜻하는 roughly가 정답. highly(매우), mostly(주로), widely(널리)는 수량 표현을 수식하지 않는다.",
+   "k": "수량 표현 half 앞에서 '대략'을 뜻하는 Roughly가 정답. Highly(매우), Mostly(주로), Widely(널리)는 half 같은 수량 표현을 수식하지 않는다.",
    "a": 0
   }
  },
@@ -1748,8 +1748,8 @@
    6,
    7
   ],
-  "ex": "*Besides* free parking, the hotel offers a shuttle service to the airport.",
-  "exKo": "그 호텔은 무료 주차 외에도 공항 셔틀 서비스를 제공한다.",
+  "ex": "*Besides* the main conference hall, the venue has six smaller meeting rooms.",
+  "exKo": "그 행사장에는 대회의장 외에도 소규모 회의실이 여섯 개 있다.",
   "col": [
    {
     "e": "besides + 명사/동명사",
@@ -1791,8 +1791,8 @@
    5,
    7
   ],
-  "ex": "The merger will *substantially* increase the company's share of the market.",
-  "exKo": "그 합병은 회사의 시장 점유율을 크게 높일 것이다.",
+  "ex": "The new warehouse will *substantially* increase our storage capacity.",
+  "exKo": "새 창고는 우리의 보관 능력을 크게 늘려 줄 것이다.",
   "col": [
    {
     "e": "substantially higher",

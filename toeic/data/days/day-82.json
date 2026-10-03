@@ -1,0 +1,1947 @@
+[
+ {
+  "w": "stress",
+  "pos": "n",
+  "m": [
+   "스트레스, 압박",
+   "강조"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   4,
+   5
+  ],
+  "ex": "Many employees say that heavy workloads are the main source of *stress* in their jobs.",
+  "exKo": "많은 직원은 과중한 업무량이 직장 생활에서 스트레스의 주된 원인이라고 말한다.",
+  "col": [
+   {
+    "e": "reduce stress",
+    "k": "스트레스를 줄이다"
+   },
+   {
+    "e": "stress management",
+    "k": "스트레스 관리"
+   },
+   {
+    "e": "under stress",
+    "k": "스트레스를 받는"
+   }
+  ],
+  "der": [
+   {
+    "w": "stressful",
+    "pos": "adj",
+    "m": "스트레스가 많은"
+   },
+   {
+    "w": "stressed",
+    "pos": "adj",
+    "m": "스트레스를 받은"
+   }
+  ],
+  "para": [
+   "pressure",
+   "tension",
+   "strain"
+  ],
+  "ant": "",
+  "tip": "명사 외에 동사로 '강조하다(stress the importance of)'라는 뜻이 자주 나온다. 형용사 stressful(스트레스를 주는)과 stressed(스트레스를 받은)의 구분에 주의한다.",
+  "q": {
+   "s": "The workshop teaches practical techniques for managing ------- during busy periods.",
+   "o": [
+    "stressful",
+    "stressfully",
+    "stressed",
+    "stress"
+   ],
+   "a": 3,
+   "k": "동명사 managing의 목적어 자리이므로 명사 stress가 정답이다. stressful, stressed는 형용사, stressfully는 부사다."
+  }
+ },
+ {
+  "w": "well-being",
+  "pos": "n",
+  "m": [
+   "(심신의) 건강, 행복"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The company introduced flexible hours to support the *well-being* of its employees.",
+  "exKo": "그 회사는 직원들의 건강과 행복을 위해 유연 근무제를 도입했다.",
+  "col": [
+   {
+    "e": "employee well-being",
+    "k": "직원의 건강과 행복"
+   },
+   {
+    "e": "physical and mental well-being",
+    "k": "심신의 건강"
+   },
+   {
+    "e": "sense of well-being",
+    "k": "행복감"
+   }
+  ],
+  "der": [],
+  "para": [
+   "health",
+   "welfare",
+   "wellness"
+  ],
+  "ant": "",
+  "tip": "신체적·정신적 건강과 만족감을 아우르는 불가산명사로, Part 7 사내 복지 지문에서 welfare, wellness로 패러프레이징된다.",
+  "q": {
+   "s": "The new exercise program is designed to improve the overall ------- of our staff.",
+   "o": [
+    "well-known",
+    "well-being",
+    "well-off",
+    "well-done"
+   ],
+   "a": 1,
+   "k": "the overall 뒤 명사 자리이며 직원들의 '전반적인 건강'을 뜻하는 well-being이 정답이다. well-known(유명한), well-off(부유한), well-done(잘 익힌)은 형용사다."
+  }
+ },
+ {
+  "w": "lifestyle",
+  "pos": "n",
+  "m": [
+   "생활 방식, 생활 습관"
+  ],
+  "tier": 1,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "Doctors recommend a balanced diet and an active *lifestyle* to prevent heart disease.",
+  "exKo": "의사들은 심장 질환을 예방하기 위해 균형 잡힌 식단과 활동적인 생활 방식을 권한다.",
+  "col": [
+   {
+    "e": "healthy lifestyle",
+    "k": "건강한 생활 방식"
+   },
+   {
+    "e": "lifestyle change",
+    "k": "생활 습관의 변화"
+   },
+   {
+    "e": "sedentary lifestyle",
+    "k": "주로 앉아서 지내는 생활 방식"
+   }
+  ],
+  "der": [],
+  "para": [
+   "way of life",
+   "habits"
+  ],
+  "ant": "",
+  "tip": "healthy/active lifestyle, lifestyle changes처럼 쓰이며 Part 7 건강 기사에서 way of life, habits로 패러프레이징된다.",
+  "q": {
+   "s": "Dr. Moss advised her patient to make a few ------- changes, such as walking daily and sleeping more.",
+   "o": [
+    "lifestyle",
+    "lifetime",
+    "lifeline",
+    "lifeguard"
+   ],
+   "a": 0,
+   "k": "매일 걷기, 잠 더 자기 같은 '생활 습관'의 변화이므로 lifestyle이 정답이다. lifetime(일생), lifeline(생명줄), lifeguard(인명 구조원)는 changes와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "prevention",
+  "pos": "n",
+  "m": [
+   "예방, 방지"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The clinic offers free workshops on the *prevention* of common winter illnesses.",
+  "exKo": "그 병원은 흔한 겨울철 질병 예방에 관한 무료 워크숍을 제공한다.",
+  "col": [
+   {
+    "e": "disease prevention",
+    "k": "질병 예방"
+   },
+   {
+    "e": "prevention of",
+    "k": "~의 예방"
+   },
+   {
+    "e": "fire prevention",
+    "k": "화재 예방"
+   }
+  ],
+  "der": [
+   {
+    "w": "prevent",
+    "pos": "v",
+    "m": "막다, 예방하다"
+   },
+   {
+    "w": "preventive",
+    "pos": "adj",
+    "m": "예방의"
+   }
+  ],
+  "para": [
+   "avoidance",
+   "protection"
+  ],
+  "ant": "",
+  "tip": "prevent A from ~ing(A가 ~하지 못하게 하다)의 명사형이며 the prevention of처럼 of와 쓴다. 형용사 preventive(예방의)와의 품사 구분이 출제된다.",
+  "q": {
+   "s": "The city's new campaign focuses on the ------- of injuries among young cyclists.",
+   "o": [
+    "prevent",
+    "preventive",
+    "prevention",
+    "prevented"
+   ],
+   "a": 2,
+   "k": "정관사 the와 전치사 of 사이의 명사 자리이므로 prevention이 정답이다. prevent는 동사, preventive는 형용사, prevented는 과거(분사)형이다."
+  }
+ },
+ {
+  "w": "preventive",
+  "pos": "adj",
+  "m": [
+   "예방의, 예방을 위한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Regular checkups are an important part of *preventive* health care.",
+  "exKo": "정기 검진은 예방 의료의 중요한 부분이다.",
+  "col": [
+   {
+    "e": "preventive care",
+    "k": "예방 진료"
+   },
+   {
+    "e": "preventive measures",
+    "k": "예방 조치"
+   },
+   {
+    "e": "preventive maintenance",
+    "k": "예방 정비"
+   }
+  ],
+  "der": [
+   {
+    "w": "prevent",
+    "pos": "v",
+    "m": "예방하다"
+   },
+   {
+    "w": "prevention",
+    "pos": "n",
+    "m": "예방"
+   }
+  ],
+  "para": [
+   "precautionary",
+   "protective"
+  ],
+  "ant": "",
+  "tip": "preventive measures(예방 조치), preventive maintenance(예방 정비)처럼 의료 외 시설 관리 지문에도 나온다. preventative도 같은 뜻이다.",
+  "q": {
+   "s": "The factory performs ------- maintenance on all its machines every month to avoid costly breakdowns.",
+   "o": [
+    "preventive",
+    "prevention",
+    "prevents",
+    "preventively"
+   ],
+   "a": 0,
+   "k": "명사 maintenance를 수식하는 형용사 자리이므로 preventive가 정답이다. preventive maintenance(예방 정비)는 고장을 막기 위한 정기 점검이다. prevention은 명사, prevents는 동사, preventively는 부사다."
+  }
+ },
+ {
+  "w": "outpatient",
+  "pos": "adj",
+  "m": [
+   "외래의, 통원 치료의",
+   "(명) 외래 환자"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The minor surgery is performed on an *outpatient* basis, so patients can return home the same day.",
+  "exKo": "그 간단한 수술은 외래로 진행되므로 환자들은 당일에 귀가할 수 있다.",
+  "col": [
+   {
+    "e": "outpatient clinic",
+    "k": "외래 진료소"
+   },
+   {
+    "e": "outpatient treatment",
+    "k": "통원 치료"
+   },
+   {
+    "e": "on an outpatient basis",
+    "k": "외래로"
+   }
+  ],
+  "der": [
+   {
+    "w": "patient",
+    "pos": "n",
+    "m": "환자"
+   }
+  ],
+  "para": [
+   "same-day",
+   "walk-in"
+  ],
+  "ant": "inpatient",
+  "tip": "입원하지 않고 통원하는 치료를 뜻하며 반의어는 inpatient(입원 환자의)이다. on an outpatient basis(외래로)라는 표현이 자주 나온다.",
+  "q": {
+   "s": "Because the procedure does not require an overnight stay, it can be done at our ------- clinic.",
+   "o": [
+    "outgoing",
+    "outdated",
+    "outspoken",
+    "outpatient"
+   ],
+   "a": 3,
+   "k": "하룻밤 입원이 필요 없는 시술을 하는 곳은 '외래' 진료소이므로 outpatient가 정답이다. outgoing(외향적인, 떠나는), outdated(구식의), outspoken(거침없이 말하는)은 이유와 연결되지 않는다."
+  }
+ },
+ {
+  "w": "eligibility",
+  "pos": "n",
+  "m": [
+   "자격, 적격성"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Employees should check their *eligibility* for the dental plan with the human resources department.",
+  "exKo": "직원들은 인사부에 치과 보험 가입 자격이 있는지 확인해야 한다.",
+  "col": [
+   {
+    "e": "eligibility for",
+    "k": "~에 대한 자격"
+   },
+   {
+    "e": "eligibility requirements",
+    "k": "자격 요건"
+   },
+   {
+    "e": "determine eligibility",
+    "k": "자격 여부를 판단하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "eligible",
+    "pos": "adj",
+    "m": "자격이 있는"
+   }
+  ],
+  "para": [
+   "qualification",
+   "entitlement"
+  ],
+  "ant": "",
+  "tip": "형용사 eligible(be eligible for/to do)의 명사형으로 eligibility for처럼 전치사 for와 쓴다. 품사 문제에서 eligible과 함께 보기로 자주 나온다.",
+  "q": {
+   "s": "Applicants must meet all ------- requirements before their insurance claims can be processed.",
+   "o": [
+    "eligible",
+    "eligibility",
+    "eligibly",
+    "elegance"
+   ],
+   "a": 1,
+   "k": "requirements 앞에서 복합명사 eligibility requirements(자격 요건)를 이루는 명사 eligibility가 정답이다. eligible은 '자격이 있는'이라는 형용사로 주로 사람을 수식하며, eligibly는 부사, elegance(우아함)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "disability",
+  "pos": "n",
+  "m": [
+   "장애"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The building has ramps and elevators for visitors with *disabilities*.",
+  "exKo": "그 건물에는 장애가 있는 방문객을 위한 경사로와 엘리베이터가 있다.",
+  "col": [
+   {
+    "e": "people with disabilities",
+    "k": "장애인"
+   },
+   {
+    "e": "disability insurance",
+    "k": "장애 보험"
+   },
+   {
+    "e": "disability benefits",
+    "k": "장애 수당"
+   }
+  ],
+  "der": [
+   {
+    "w": "disabled",
+    "pos": "adj",
+    "m": "장애가 있는"
+   },
+   {
+    "w": "ability",
+    "pos": "n",
+    "m": "능력"
+   }
+  ],
+  "para": [
+   "impairment",
+   "handicap"
+  ],
+  "ant": "",
+  "tip": "people with disabilities(장애인), disability insurance(장애 보험)처럼 쓰이며 형용사 disabled(장애가 있는)와 구분해야 한다. 시설 접근성 안내 지문에 자주 나온다.",
+  "q": {
+   "s": "Workers who are injured on the job may be able to collect ------- benefits while they recover.",
+   "o": [
+    "disabled",
+    "disable",
+    "disability",
+    "disabling"
+   ],
+   "a": 2,
+   "k": "benefits 앞에서 복합명사 disability benefits(장애 수당)를 이루는 명사 disability가 정답이다. disabled, disabling은 형용사로 benefits를 이렇게 수식하지 않고, disable은 동사다."
+  }
+ },
+ {
+  "w": "life insurance",
+  "pos": "phr",
+  "m": [
+   "생명 보험"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Full-time employees receive *life insurance* worth twice their annual salary.",
+  "exKo": "정규직 직원은 연봉의 두 배에 해당하는 생명 보험을 받는다.",
+  "col": [
+   {
+    "e": "life insurance policy",
+    "k": "생명 보험 증권"
+   },
+   {
+    "e": "take out life insurance",
+    "k": "생명 보험에 가입하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "insure",
+    "pos": "v",
+    "m": "보험에 들다"
+   },
+   {
+    "w": "insurer",
+    "pos": "n",
+    "m": "보험사"
+   }
+  ],
+  "para": [
+   "life coverage",
+   "life assurance"
+  ],
+  "ant": "",
+  "tip": "health insurance, dental insurance와 함께 복리후생(benefits) 항목으로 나오며 take out life insurance(생명 보험에 가입하다)처럼 쓴다.",
+  "q": {
+   "s": "The benefits package includes health, dental, and ------- insurance at no cost to employees.",
+   "o": [
+    "life",
+    "live",
+    "lively",
+    "living"
+   ],
+   "a": 0,
+   "k": "insurance와 결합해 '생명 보험'을 뜻하는 life insurance를 이루는 명사 life가 정답이다. live는 동사·형용사, lively(활기찬)는 형용사이며, living(생활, 생계)은 insurance와 이런 뜻을 만들지 않는다."
+  }
+ },
+ {
+  "w": "discharge",
+  "pos": "v",
+  "m": [
+   "퇴원시키다",
+   "방출하다, 배출하다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Mr. Castillo was *discharged* from the hospital two days after his operation.",
+  "exKo": "Castillo 씨는 수술 이틀 후에 병원에서 퇴원했다.",
+  "col": [
+   {
+    "e": "be discharged from the hospital",
+    "k": "퇴원하다"
+   },
+   {
+    "e": "discharge a patient",
+    "k": "환자를 퇴원시키다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "release"
+  ],
+  "ant": "admit",
+  "tip": "be discharged from the hospital(퇴원하다)처럼 수동태로 자주 쓰이며 반의어는 admit(입원시키다)이다. 명사로는 '퇴원, 배출'이라는 뜻이다.",
+  "q": {
+   "s": "Patients are usually ------- from the hospital within 24 hours of minor surgery.",
+   "o": [
+    "discarded",
+    "dismantled",
+    "discharged",
+    "dispatched"
+   ],
+   "a": 2,
+   "k": "간단한 수술 후 24시간 이내에 병원에서 '퇴원하게 된다'는 의미이므로 discharged가 정답이다. discarded(버려진), dismantled(해체된), dispatched(파견된, 발송된)는 환자에게 쓰이지 않는다."
+  }
+ },
+ {
+  "w": "admit",
+  "pos": "v",
+  "m": [
+   "입원시키다, 입장을 허락하다",
+   "인정하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "She was *admitted* to the hospital for tests after complaining of chest pain.",
+  "exKo": "그녀는 가슴 통증을 호소한 후 검사를 위해 병원에 입원했다.",
+  "col": [
+   {
+    "e": "be admitted to the hospital",
+    "k": "입원하다"
+   },
+   {
+    "e": "admit A to B",
+    "k": "A의 B 입장을 허락하다"
+   },
+   {
+    "e": "admit to ~ing",
+    "k": "~한 것을 인정하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "admission",
+    "pos": "n",
+    "m": "입장, 입원"
+   },
+   {
+    "w": "admittance",
+    "pos": "n",
+    "m": "입장 (허가)"
+   }
+  ],
+  "para": [
+   "hospitalize",
+   "let in",
+   "accept"
+  ],
+  "ant": "discharge",
+  "tip": "be admitted to the hospital(입원하다), be admitted to the event(입장이 허용되다)처럼 수동태로 자주 쓰인다. 명사형은 admission이다.",
+  "q": {
+   "s": "Patients who need overnight care will be ------- to the ward on the third floor.",
+   "o": [
+    "admission",
+    "admitting",
+    "admits",
+    "admitted"
+   ],
+   "a": 3,
+   "k": "will be 뒤에서 '입원하게 되다'라는 수동의 의미가 되어야 하므로 과거분사 admitted가 정답이다. admission은 명사, admits는 현재형 동사이며, admitting은 능동 진행형이 되어 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "urgent care",
+  "pos": "phr",
+  "m": [
+   "긴급 진료, 응급 외래 진료"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "If your regular doctor's office is closed, you can visit an *urgent care* clinic for minor injuries.",
+  "exKo": "평소 다니는 병원이 문을 닫았다면 가벼운 부상은 긴급 진료소를 이용할 수 있다.",
+  "col": [
+   {
+    "e": "urgent care center",
+    "k": "긴급 진료소"
+   },
+   {
+    "e": "urgent care clinic",
+    "k": "긴급 진료소"
+   }
+  ],
+  "der": [
+   {
+    "w": "urgent",
+    "pos": "adj",
+    "m": "긴급한"
+   },
+   {
+    "w": "urgency",
+    "pos": "n",
+    "m": "긴급, 시급함"
+   }
+  ],
+  "para": [
+   "walk-in clinic",
+   "emergency care"
+  ],
+  "ant": "",
+  "tip": "응급실(emergency room)에 갈 정도는 아니지만 바로 진료가 필요할 때 예약 없이 가는 곳이다. Part 4 병원 안내 메시지에서 진료 시간 외의 대안으로 소개된다.",
+  "q": {
+   "s": "For minor injuries that need prompt attention after hours, patients can go to the nearby ------- care center.",
+   "o": [
+    "urgently",
+    "urgent",
+    "urgency",
+    "urge"
+   ],
+   "a": 1,
+   "k": "care를 수식해 '긴급 진료'를 뜻하는 urgent care를 이루는 형용사 urgent가 정답이다. urgently는 부사, urgency는 명사, urge는 동사다."
+  }
+ },
+ {
+  "w": "paramedic",
+  "pos": "n",
+  "m": [
+   "응급 구조사"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "*Paramedics* arrived within minutes and treated the injured worker at the scene.",
+  "exKo": "응급 구조사들이 몇 분 만에 도착해 현장에서 다친 직원을 치료했다.",
+  "col": [
+   {
+    "e": "team of paramedics",
+    "k": "응급 구조대"
+   },
+   {
+    "e": "trained paramedic",
+    "k": "훈련받은 응급 구조사"
+   }
+  ],
+  "der": [
+   {
+    "w": "medic",
+    "pos": "n",
+    "m": "의료진, 의대생"
+   }
+  ],
+  "para": [
+   "emergency medical technician",
+   "first responder"
+  ],
+  "ant": "",
+  "tip": "구급차를 타고 출동해 현장에서 응급 처치를 하는 사람으로, 의사(physician)나 간호사와 구별된다. 사고 소식을 전하는 Part 4 라디오 뉴스에 나온다.",
+  "q": {
+   "s": "The ------- who responded to the accident checked each passenger before taking two of them to the hospital.",
+   "o": [
+    "paramedics",
+    "parameters",
+    "paragraphs",
+    "parachutes"
+   ],
+   "a": 0,
+   "k": "사고 현장에 출동해 승객 상태를 확인하고 병원으로 이송한 사람들이므로 '응급 구조사'를 뜻하는 paramedics가 정답이다. parameters(변수, 한도), paragraphs(단락), parachutes(낙하산)는 사람이 아니다."
+  }
+ },
+ {
+  "w": "wheelchair",
+  "pos": "n",
+  "m": [
+   "휠체어"
+  ],
+  "tier": 1,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "A nurse is pushing a patient in a *wheelchair* down the hallway.",
+  "exKo": "간호사가 휠체어에 탄 환자를 밀며 복도를 지나가고 있다.",
+  "col": [
+   {
+    "e": "wheelchair access",
+    "k": "휠체어 접근로"
+   },
+   {
+    "e": "wheelchair-accessible",
+    "k": "휠체어로 이용 가능한"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "",
+  "tip": "Part 1 사진에서 'pushing a wheelchair'로 자주 나오며, 시설 안내에서 wheelchair-accessible(휠체어로 이용 가능한)이 접근성을 나타낸다.",
+  "q": {
+   "s": "The museum provides free ------- for visitors who have difficulty walking long distances.",
+   "o": [
+    "wheelbarrows",
+    "steering wheels",
+    "windmills",
+    "wheelchairs"
+   ],
+   "a": 3,
+   "k": "오래 걷기 힘든 방문객에게 제공하는 것은 '휠체어'이므로 wheelchairs가 정답이다. wheelbarrows(손수레), steering wheels(운전대), windmills(풍차)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "bandage",
+  "pos": "n",
+  "m": [
+   "붕대"
+  ],
+  "tier": 2,
+  "parts": [
+   1,
+   7
+  ],
+  "ex": "The nurse cleaned the cut and covered it with a sterile *bandage*.",
+  "exKo": "간호사는 베인 상처를 소독하고 멸균 붕대로 감쌌다.",
+  "col": [
+   {
+    "e": "apply a bandage",
+    "k": "붕대를 감다"
+   },
+   {
+    "e": "change a bandage",
+    "k": "붕대를 갈다"
+   }
+  ],
+  "der": [
+   {
+    "w": "band",
+    "pos": "n",
+    "m": "띠, 끈"
+   }
+  ],
+  "para": [
+   "dressing",
+   "gauze"
+  ],
+  "ant": "",
+  "tip": "apply/wrap a bandage(붕대를 감다)처럼 쓰이며 동사로 '붕대를 감다'라는 뜻도 있다. 구급상자(first-aid kit) 품목으로 Part 1·3에 나온다.",
+  "q": {
+   "s": "Each first-aid kit should contain gauze, tape, and several ------- of different sizes.",
+   "o": [
+    "badges",
+    "baggages",
+    "bandages",
+    "bindings"
+   ],
+   "a": 2,
+   "k": "구급상자에 거즈, 테이프와 함께 들어갈 것은 '붕대'이므로 bandages가 정답이다. badges(배지), bindings(제본, 묶는 끈)는 구급용품이 아니며, baggage(수하물)는 불가산명사라 복수형으로 쓰지 않는다."
+  }
+ },
+ {
+  "w": "X-ray",
+  "pos": "n",
+  "m": [
+   "엑스레이 (사진·검사)"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The doctor ordered an *X-ray* to check whether the patient's wrist was broken.",
+  "exKo": "의사는 환자의 손목이 부러졌는지 확인하기 위해 엑스레이 촬영을 지시했다.",
+  "col": [
+   {
+    "e": "take an X-ray",
+    "k": "엑스레이를 찍다"
+   },
+   {
+    "e": "chest X-ray",
+    "k": "흉부 엑스레이"
+   }
+  ],
+  "der": [],
+  "para": [
+   "scan",
+   "radiograph"
+  ],
+  "ant": "",
+  "tip": "take/have an X-ray(엑스레이를 찍다)처럼 가산명사로 쓰며 공항 보안 검색(X-ray machine)에서도 나온다. 첫소리가 모음 [엑스]라 an X-ray로 쓴다.",
+  "q": {
+   "s": "The dentist will take an ------- of your teeth to look for any hidden problems.",
+   "o": [
+    "exit",
+    "X-ray",
+    "outlet",
+    "order"
+   ],
+   "a": 1,
+   "k": "치과 의사가 숨은 문제를 찾기 위해 치아를 촬영하는 것이므로 X-ray가 정답이다. take an exit(출구로 나가다), take an order(주문을 받다)는 of your teeth와 어울리지 않고, outlet(콘센트, 매장)도 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "blood test",
+  "pos": "phr",
+  "m": [
+   "혈액 검사"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Patients should not eat anything for twelve hours before their *blood test*.",
+  "exKo": "환자는 혈액 검사 전 12시간 동안 아무것도 먹지 말아야 한다.",
+  "col": [
+   {
+    "e": "have a blood test",
+    "k": "혈액 검사를 받다"
+   },
+   {
+    "e": "blood test results",
+    "k": "혈액 검사 결과"
+   }
+  ],
+  "der": [],
+  "para": [
+   "blood work",
+   "lab test"
+  ],
+  "ant": "",
+  "tip": "have/take a blood test(혈액 검사를 받다)로 쓰며, 검사 전 금식(fasting)이나 결과 안내 전화가 Part 3·4의 단골 소재다.",
+  "q": {
+   "s": "The results of your blood ------- will be available online within three business days.",
+   "o": [
+    "type",
+    "bank",
+    "donor",
+    "test"
+   ],
+   "a": 3,
+   "k": "결과(results)가 나오는 것은 '혈액 검사'이므로 test가 정답이다. blood type(혈액형), blood bank(혈액 은행), blood donor(헌혈자)는 결과를 받아 보는 검사가 아니다."
+  }
+ },
+ {
+  "w": "blood pressure",
+  "pos": "phr",
+  "m": [
+   "혈압"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "The nurse will check your weight and *blood pressure* before you see the doctor.",
+  "exKo": "진료를 받기 전에 간호사가 체중과 혈압을 잴 것이다.",
+  "col": [
+   {
+    "e": "high blood pressure",
+    "k": "고혈압"
+   },
+   {
+    "e": "check one's blood pressure",
+    "k": "혈압을 재다"
+   },
+   {
+    "e": "lower blood pressure",
+    "k": "혈압을 낮추다"
+   }
+  ],
+  "der": [
+   {
+    "w": "press",
+    "pos": "v",
+    "m": "누르다"
+   }
+  ],
+  "para": [
+   "BP"
+  ],
+  "ant": "",
+  "tip": "high/low blood pressure(고혈압/저혈압), check/take one's blood pressure(혈압을 재다)처럼 쓰는 불가산명사다.",
+  "q": {
+   "s": "Reducing salt in your diet can help lower your blood -------.",
+   "o": [
+    "pressure",
+    "press",
+    "pressing",
+    "pressed"
+   ],
+   "a": 0,
+   "k": "blood와 결합해 '혈압'을 뜻하는 blood pressure를 이루는 명사 pressure가 정답이다. press는 동사 또는 '언론'이라는 명사, pressing(긴급한)은 형용사, pressed는 과거분사다."
+  }
+ },
+ {
+  "w": "cholesterol",
+  "pos": "n",
+  "m": [
+   "콜레스테롤"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Eating more vegetables and whole grains can help reduce *cholesterol* levels.",
+  "exKo": "채소와 통곡물을 더 많이 먹으면 콜레스테롤 수치를 낮추는 데 도움이 된다.",
+  "col": [
+   {
+    "e": "cholesterol level",
+    "k": "콜레스테롤 수치"
+   },
+   {
+    "e": "high cholesterol",
+    "k": "고콜레스테롤"
+   }
+  ],
+  "der": [],
+  "para": [],
+  "ant": "",
+  "tip": "cholesterol levels(콜레스테롤 수치), high cholesterol처럼 쓰이는 불가산명사로 건강 기사나 식품 광고 지문에 나온다. 철자 c-h-o-l-e-s-t-e-r-o-l에 주의한다.",
+  "q": {
+   "s": "The cereal is advertised as a heart-healthy choice that can lower ------- when eaten daily.",
+   "o": [
+    "chlorine",
+    "charcoal",
+    "cholesterol",
+    "cholera"
+   ],
+   "a": 2,
+   "k": "심장 건강에 좋은 시리얼이 낮춰 주는 것은 '콜레스테롤'이므로 cholesterol이 정답이다. chlorine(염소), charcoal(숯), cholera(콜레라)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "obesity",
+  "pos": "n",
+  "m": [
+   "비만"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The government launched a campaign to reduce childhood *obesity* through healthier school lunches.",
+  "exKo": "정부는 학교 급식을 더 건강하게 바꿔 아동 비만을 줄이기 위한 캠페인을 시작했다.",
+  "col": [
+   {
+    "e": "childhood obesity",
+    "k": "아동 비만"
+   },
+   {
+    "e": "obesity rate",
+    "k": "비만율"
+   }
+  ],
+  "der": [
+   {
+    "w": "obese",
+    "pos": "adj",
+    "m": "비만인"
+   }
+  ],
+  "para": [
+   "overweight"
+  ],
+  "ant": "",
+  "tip": "불가산명사로 childhood obesity, obesity rate처럼 쓰이며 형용사형은 obese(비만인)이다. 건강 정책 기사에서 being overweight로 패러프레이징된다.",
+  "q": {
+   "s": "Health officials are concerned about rising ------- rates among adults who spend most of the day sitting.",
+   "o": [
+    "obese",
+    "obesity",
+    "obedience",
+    "observance"
+   ],
+   "a": 1,
+   "k": "rates 앞에서 복합명사 obesity rates(비만율)를 이루는 명사 obesity가 정답이다. obese는 형용사이고, obedience(복종), observance(준수)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "acute",
+  "pos": "adj",
+  "m": [
+   "(통증 등이) 극심한, 급성의",
+   "(문제가) 심각한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The patient was rushed to the emergency room with *acute* stomach pain.",
+  "exKo": "그 환자는 극심한 복통으로 응급실에 급히 실려 왔다.",
+  "col": [
+   {
+    "e": "acute pain",
+    "k": "극심한 통증"
+   },
+   {
+    "e": "acute shortage",
+    "k": "심각한 부족"
+   },
+   {
+    "e": "acute illness",
+    "k": "급성 질환"
+   }
+  ],
+  "der": [
+   {
+    "w": "acutely",
+    "pos": "adv",
+    "m": "극심하게, 절실히"
+   }
+  ],
+  "para": [
+   "severe",
+   "intense",
+   "sharp"
+  ],
+  "ant": "chronic",
+  "tip": "의학에서는 '급성의'(반의어 chronic, 만성의)이고, 비즈니스 지문에서는 an acute shortage of staff(심각한 인력 부족)처럼 '심각한'이라는 뜻으로 쓰인다.",
+  "q": {
+   "s": "The hospital is facing an ------- shortage of nurses, so it has raised salaries to attract new staff.",
+   "o": [
+    "acute",
+    "accurate",
+    "adjacent",
+    "adequate"
+   ],
+   "a": 0,
+   "k": "급여까지 올려 인력을 모으려는 상황이므로 '심각한' 부족을 뜻하는 acute가 정답이다. accurate(정확한), adjacent(인접한), adequate(충분한)는 shortage와 어울리지 않는다."
+  }
+ },
+ {
+  "w": "contagious",
+  "pos": "adj",
+  "m": [
+   "전염성의, 전염되는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Employees with *contagious* illnesses such as the flu should stay home until they recover.",
+  "exKo": "독감 같은 전염성 질병에 걸린 직원은 회복할 때까지 집에 머물러야 한다.",
+  "col": [
+   {
+    "e": "highly contagious",
+    "k": "전염성이 강한"
+   },
+   {
+    "e": "contagious disease",
+    "k": "전염병"
+   }
+  ],
+  "der": [
+   {
+    "w": "contagion",
+    "pos": "n",
+    "m": "전염, 감염"
+   }
+  ],
+  "para": [
+   "infectious",
+   "communicable",
+   "catching"
+  ],
+  "ant": "",
+  "tip": "highly contagious(전염성이 강한)처럼 부사 highly와 자주 쓰이며 infectious로 패러프레이징된다. 비유적으로 contagious laughter(전염되는 웃음)처럼도 쓴다.",
+  "q": {
+   "s": "Because the virus is highly -------, the clinic has asked visitors to wear masks in the waiting room.",
+   "o": [
+    "courageous",
+    "continuous",
+    "conspicuous",
+    "contagious"
+   ],
+   "a": 3,
+   "k": "대기실에서 마스크 착용을 요청한 이유가 되려면 바이러스가 '전염성이 강해야' 하므로 contagious가 정답이다. courageous(용감한), continuous(지속적인), conspicuous(눈에 띄는)는 그 이유가 되지 않는다."
+  }
+ },
+ {
+  "w": "outbreak",
+  "pos": "n",
+  "m": [
+   "(질병·전쟁 등의) 발생, 발발"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Health officials are investigating an *outbreak* of food poisoning at a local restaurant.",
+  "exKo": "보건 당국이 지역 식당에서 발생한 집단 식중독을 조사하고 있다.",
+  "col": [
+   {
+    "e": "outbreak of",
+    "k": "~의 발생"
+   },
+   {
+    "e": "flu outbreak",
+    "k": "독감 발생"
+   }
+  ],
+  "der": [
+   {
+    "w": "break out",
+    "pos": "phr",
+    "m": "(질병·화재 등이) 발생하다"
+   }
+  ],
+  "para": [
+   "spread",
+   "flare-up"
+  ],
+  "ant": "",
+  "tip": "an outbreak of + 질병 형태로 쓰이며 동사구 break out(발생하다)의 명사형이다. 식당 위생이나 공중 보건 관련 뉴스 지문에 나온다.",
+  "q": {
+   "s": "Several schools closed temporarily following an ------- of influenza in the district.",
+   "o": [
+    "outcome",
+    "outbreak",
+    "outlet",
+    "output"
+   ],
+   "a": 1,
+   "k": "학교를 임시 휴교하게 만든 것은 독감의 '발생'이므로 outbreak가 정답이다. outcome(결과), outlet(배출구, 매장), output(생산량)은 of influenza와 이런 의미를 만들지 않는다."
+  }
+ },
+ {
+  "w": "epidemic",
+  "pos": "n",
+  "m": [
+   "유행병, (전염병의) 유행",
+   "(나쁜 현상의) 급속한 확산"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Vaccination programs helped stop the measles *epidemic* from spreading to other regions.",
+  "exKo": "예방 접종 프로그램은 홍역 유행이 다른 지역으로 확산되는 것을 막는 데 도움이 되었다.",
+  "col": [
+   {
+    "e": "flu epidemic",
+    "k": "독감 유행"
+   },
+   {
+    "e": "epidemic of",
+    "k": "~의 유행, 급증"
+   }
+  ],
+  "der": [
+   {
+    "w": "pandemic",
+    "pos": "n",
+    "m": "세계적 유행병"
+   }
+  ],
+  "para": [
+   "outbreak",
+   "widespread disease"
+  ],
+  "ant": "",
+  "tip": "특정 지역에서 질병이 널리 퍼진 상태를 뜻하며 전 세계적 유행은 pandemic이라 한다. an epidemic of obesity(비만의 급증)처럼 비유적으로도 쓴다.",
+  "q": {
+   "s": "Officials warned that the flu could become a nationwide ------- if vaccination rates remain low.",
+   "o": [
+    "episode",
+    "epilogue",
+    "epidemic",
+    "epitome"
+   ],
+   "a": 2,
+   "k": "예방 접종률이 낮으면 독감이 전국적인 '유행병'이 될 수 있다는 의미이므로 epidemic이 정답이다. episode(사건, 회), epilogue(맺음말), epitome(전형)은 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "physical therapy",
+  "pos": "phr",
+  "m": [
+   "물리 치료"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "After knee surgery, Mr. Diaz attended *physical therapy* sessions three times a week.",
+  "exKo": "무릎 수술 후 Diaz 씨는 일주일에 세 번 물리 치료를 받았다.",
+  "col": [
+   {
+    "e": "physical therapy session",
+    "k": "물리 치료 시간"
+   },
+   {
+    "e": "undergo physical therapy",
+    "k": "물리 치료를 받다"
+   }
+  ],
+  "der": [
+   {
+    "w": "physical therapist",
+    "pos": "n",
+    "m": "물리 치료사"
+   }
+  ],
+  "para": [
+   "physiotherapy",
+   "rehabilitation"
+  ],
+  "ant": "",
+  "tip": "부상이나 수술 후 운동·마사지로 기능을 회복시키는 치료로, 영국식으로는 physiotherapy라고 한다. 치료사는 physical therapist이다.",
+  "q": {
+   "s": "Ms. Larsen hopes to return to work soon after completing six weeks of physical -------.",
+   "o": [
+    "therapist",
+    "therapeutic",
+    "theory",
+    "therapy"
+   ],
+   "a": 3,
+   "k": "six weeks of 뒤에 오는 치료 과정을 나타내야 하므로 physical therapy(물리 치료)를 이루는 therapy가 정답이다. therapist는 '치료사'라는 사람명사, therapeutic은 형용사, theory(이론)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "sore throat",
+  "pos": "phr",
+  "m": [
+   "인후통, 목 아픔"
+  ],
+  "tier": 1,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Ms. Fisher called in sick this morning because she has a fever and a *sore throat*.",
+  "exKo": "Fisher 씨는 열이 나고 목이 아파서 오늘 아침 병가를 냈다.",
+  "col": [
+   {
+    "e": "have a sore throat",
+    "k": "목이 아프다"
+   },
+   {
+    "e": "soothe a sore throat",
+    "k": "목 통증을 완화하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "soreness",
+    "pos": "n",
+    "m": "쓰림, 아픔"
+   }
+  ],
+  "para": [
+   "throat pain"
+  ],
+  "ant": "",
+  "tip": "have a sore throat(목이 아프다)처럼 관사 a와 함께 쓴다. sore는 '(근육·상처가) 아픈'이라는 형용사로 sore muscles(쑤시는 근육)처럼도 쓴다.",
+  "q": {
+   "s": "Drinking warm tea with honey can help relieve a ------- throat.",
+   "o": [
+    "sore",
+    "sour",
+    "sole",
+    "soar"
+   ],
+   "a": 0,
+   "k": "throat와 결합해 '목 아픔'을 뜻하는 sore throat를 이루는 형용사 sore가 정답이다. sour(신), sole(유일한), soar(치솟다)는 발음이나 철자가 비슷한 오답이다."
+  }
+ },
+ {
+  "w": "flu shot",
+  "pos": "phr",
+  "m": [
+   "독감 예방 주사"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "The company is offering free *flu shots* to all employees in the cafeteria next Tuesday.",
+  "exKo": "회사는 다음 주 화요일 구내식당에서 전 직원에게 무료 독감 예방 주사를 놓아 준다.",
+  "col": [
+   {
+    "e": "get a flu shot",
+    "k": "독감 예방 주사를 맞다"
+   },
+   {
+    "e": "free flu shots",
+    "k": "무료 독감 예방 주사"
+   }
+  ],
+  "der": [],
+  "para": [
+   "flu vaccine",
+   "influenza vaccination"
+  ],
+  "ant": "",
+  "tip": "get a flu shot(독감 예방 주사를 맞다)으로 쓰며 Part 4 사내 공지와 Part 7 이메일에서 flu vaccine, vaccination으로 패러프레이징된다.",
+  "q": {
+   "s": "Pharmacies across the city have begun offering flu ------- for the coming winter season.",
+   "o": [
+    "shoots",
+    "shutters",
+    "shots",
+    "shorts"
+   ],
+   "a": 2,
+   "k": "약국에서 겨울을 앞두고 제공하는 것은 '독감 예방 주사'이므로 shots가 정답이다. shoots(새싹, 촬영), shutters(덧문), shorts(반바지)는 flu와 결합하지 않는다."
+  }
+ },
+ {
+  "w": "nausea",
+  "pos": "n",
+  "m": [
+   "메스꺼움, 구역질"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Some patients may experience mild *nausea* after taking this medication.",
+  "exKo": "일부 환자는 이 약을 복용한 후 가벼운 메스꺼움을 느낄 수 있다.",
+  "col": [
+   {
+    "e": "feel nausea",
+    "k": "메스꺼움을 느끼다"
+   },
+   {
+    "e": "cause nausea",
+    "k": "구역질을 유발하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "nauseous",
+    "pos": "adj",
+    "m": "메스꺼운"
+   }
+  ],
+  "para": [
+   "sickness",
+   "queasiness"
+  ],
+  "ant": "",
+  "tip": "약 설명서의 부작용(side effects) 목록에 dizziness, headache와 함께 자주 나온다. 형용사 nauseous(메스꺼운; feel nauseous)도 알아 둔다.",
+  "q": {
+   "s": "Passengers who suffer from ------- on boats are advised to sit near the middle of the ferry.",
+   "o": [
+    "nauseous",
+    "nausea",
+    "naval",
+    "notion"
+   ],
+   "a": 1,
+   "k": "전치사 from의 목적어인 명사 자리이며 배에서 겪는 '메스꺼움'을 뜻하는 nausea가 정답이다. nauseous(메스꺼운)와 naval(해군의)은 형용사이고, notion(개념)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "dizzy",
+  "pos": "adj",
+  "m": [
+   "어지러운, 현기증 나는"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Patients who feel *dizzy* after the injection should rest for a few minutes before leaving.",
+  "exKo": "주사를 맞은 후 어지러움을 느끼는 환자는 떠나기 전 몇 분간 쉬어야 한다.",
+  "col": [
+   {
+    "e": "feel dizzy",
+    "k": "어지럽다"
+   },
+   {
+    "e": "dizzy spell",
+    "k": "현기증"
+   }
+  ],
+  "der": [
+   {
+    "w": "dizziness",
+    "pos": "n",
+    "m": "어지러움, 현기증"
+   }
+  ],
+  "para": [
+   "light-headed",
+   "unsteady"
+  ],
+  "ant": "",
+  "tip": "feel/get dizzy처럼 감각동사 뒤 보어로 쓰이는 형용사다. 명사형 dizziness(어지러움)는 약 부작용 목록에 자주 나온다.",
+  "q": {
+   "s": "Ms. Ramos felt ------- after standing in the hot sun for several hours, so she sat down in the shade.",
+   "o": [
+    "dizzy",
+    "dizziness",
+    "dizzily",
+    "daze"
+   ],
+   "a": 0,
+   "k": "감각동사 felt 뒤 보어 자리이므로 형용사 dizzy가 정답이다. dizziness와 daze(멍한 상태)는 명사, dizzily는 부사다."
+  }
+ },
+ {
+  "w": "rash",
+  "pos": "n",
+  "m": [
+   "발진, 뾰루지",
+   "(형) 성급한"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Customers who develop a *rash* after using the cream should stop applying it immediately.",
+  "exKo": "크림 사용 후 발진이 생긴 고객은 즉시 사용을 중단해야 한다.",
+  "col": [
+   {
+    "e": "skin rash",
+    "k": "피부 발진"
+   },
+   {
+    "e": "develop a rash",
+    "k": "발진이 생기다"
+   },
+   {
+    "e": "rash decision",
+    "k": "성급한 결정"
+   }
+  ],
+  "der": [
+   {
+    "w": "rashly",
+    "pos": "adv",
+    "m": "성급하게"
+   }
+  ],
+  "para": [
+   "skin irritation",
+   "redness"
+  ],
+  "ant": "",
+  "tip": "develop/get a rash(발진이 생기다)로 쓰는 가산명사이며, 형용사로는 a rash decision(성급한 결정)처럼 '성급한'이라는 뜻이다. Part 5에서는 이 형용사 의미도 출제된다.",
+  "q": {
+   "s": "The new laundry detergent was recalled after several customers reported developing a skin -------.",
+   "o": [
+    "rush",
+    "crash",
+    "rasp",
+    "rash"
+   ],
+   "a": 3,
+   "k": "세제 사용 후 피부에 생긴 것은 '발진'이므로 rash가 정답이다. rush(돌진, 혼잡), crash(충돌), rasp(거친 소리)는 skin과 결합해 의미를 이루지 않는다."
+  }
+ },
+ {
+  "w": "sprain",
+  "pos": "v",
+  "m": [
+   "(발목·손목 등을) 삐다, 접질리다"
+  ],
+  "tier": 3,
+  "parts": [
+   3,
+   7
+  ],
+  "ex": "Mr. Lee *sprained* his ankle while jogging and had to use crutches for a week.",
+  "exKo": "Lee 씨는 조깅하다가 발목을 삐어서 일주일 동안 목발을 짚어야 했다.",
+  "col": [
+   {
+    "e": "sprain one's ankle",
+    "k": "발목을 삐다"
+   },
+   {
+    "e": "sprained wrist",
+    "k": "삔 손목"
+   }
+  ],
+  "der": [],
+  "para": [
+   "twist",
+   "wrench"
+  ],
+  "ant": "",
+  "tip": "sprain one's ankle(발목을 삐다)처럼 타동사로 쓰며 명사로는 '염좌'라는 뜻이다. 뼈가 부러지는 fracture(골절)와 구분해야 한다.",
+  "q": {
+   "s": "The goalkeeper ------- her wrist during practice and will miss the next two matches.",
+   "o": [
+    "sprinkled",
+    "sprained",
+    "sprouted",
+    "sprayed"
+   ],
+   "a": 1,
+   "k": "연습 중 손목을 다쳐 다음 두 경기에 결장한다는 내용이므로 '삐었다'라는 뜻의 sprained가 정답이다. sprinkled(뿌렸다), sprouted(싹텄다), sprayed(분사했다)는 결장의 이유가 되지 않는다."
+  }
+ },
+ {
+  "w": "fracture",
+  "pos": "n",
+  "m": [
+   "골절",
+   "균열"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Tests revealed a small *fracture* in the bone of her left foot.",
+  "exKo": "검사 결과 그녀의 왼발 뼈에서 작은 골절이 발견되었다.",
+  "col": [
+   {
+    "e": "hip fracture",
+    "k": "고관절 골절"
+   },
+   {
+    "e": "stress fracture",
+    "k": "피로 골절"
+   }
+  ],
+  "der": [
+   {
+    "w": "fractured",
+    "pos": "adj",
+    "m": "골절된, 금이 간"
+   }
+  ],
+  "para": [
+   "break",
+   "crack"
+  ],
+  "ant": "",
+  "tip": "명사(골절)와 동사(골절시키다)로 모두 쓰이며 break보다 격식 있는 의학 용어다. 인대를 다치는 sprain(염좌)과 구분해야 한다.",
+  "q": {
+   "s": "The skier was taken to the hospital with a suspected ------- of the left leg.",
+   "o": [
+    "fraction",
+    "friction",
+    "fracture",
+    "fixture"
+   ],
+   "a": 2,
+   "k": "스키 선수가 병원으로 이송된 이유로 다리의 '골절'이 의심된다는 의미이므로 fracture가 정답이다. fraction(일부, 분수), friction(마찰), fixture(고정 설비)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "swelling",
+  "pos": "n",
+  "m": [
+   "부기, 부어오름"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Applying ice to the injury for twenty minutes can reduce *swelling*.",
+  "exKo": "다친 부위에 20분간 얼음을 대면 부기를 줄일 수 있다.",
+  "col": [
+   {
+    "e": "reduce swelling",
+    "k": "부기를 줄이다"
+   },
+   {
+    "e": "swelling in",
+    "k": "~의 부기"
+   }
+  ],
+  "der": [
+   {
+    "w": "swell",
+    "pos": "v",
+    "m": "붓다, 부풀다"
+   },
+   {
+    "w": "swollen",
+    "pos": "adj",
+    "m": "부어오른"
+   }
+  ],
+  "para": [
+   "inflammation",
+   "puffiness"
+  ],
+  "ant": "",
+  "tip": "동사 swell(붓다)-swelled-swollen에서 나온 명사로 reduce swelling처럼 쓴다. 형용사 swollen(부어오른; a swollen ankle)과 구분해야 한다.",
+  "q": {
+   "s": "The doctor prescribed medicine to reduce the ------- in Mr. Ford's injured knee.",
+   "o": [
+    "swollen",
+    "swells",
+    "swiftly",
+    "swelling"
+   ],
+   "a": 3,
+   "k": "정관사 the 뒤, 동사 reduce의 목적어인 명사 자리이므로 swelling이 정답이다. swollen은 형용사(과거분사), swells는 동사, swiftly는 부사다."
+  }
+ },
+ {
+  "w": "painkiller",
+  "pos": "n",
+  "m": [
+   "진통제"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "The dentist recommended an over-the-counter *painkiller* after the tooth extraction.",
+  "exKo": "치과 의사는 발치 후 처방전 없이 살 수 있는 진통제를 권했다.",
+  "col": [
+   {
+    "e": "take a painkiller",
+    "k": "진통제를 먹다"
+   },
+   {
+    "e": "prescription painkiller",
+    "k": "처방 진통제"
+   }
+  ],
+  "der": [
+   {
+    "w": "pain",
+    "pos": "n",
+    "m": "통증"
+   },
+   {
+    "w": "painful",
+    "pos": "adj",
+    "m": "아픈, 고통스러운"
+   }
+  ],
+  "para": [
+   "pain reliever",
+   "analgesic"
+  ],
+  "ant": "",
+  "tip": "Part 7에서 pain reliever로 패러프레이징되며, take a painkiller(진통제를 먹다)처럼 동사 take와 함께 쓴다.",
+  "q": {
+   "s": "If the headache continues, you may take a mild ------- every six hours.",
+   "o": [
+    "painkiller",
+    "painter",
+    "pain",
+    "painting"
+   ],
+   "a": 0,
+   "k": "두통이 계속될 때 6시간마다 복용하는 것은 '진통제'이므로 painkiller가 정답이다. painter(화가), painting(그림)은 복용할 수 없고, pain(통증)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "antibiotic",
+  "pos": "n",
+  "m": [
+   "항생제"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Dr. Shah decided that an *antibiotic* was not necessary because the infection was viral.",
+  "exKo": "Shah 박사는 감염이 바이러스성이어서 항생제가 필요하지 않다고 판단했다.",
+  "col": [
+   {
+    "e": "course of antibiotics",
+    "k": "항생제 치료 과정"
+   },
+   {
+    "e": "prescribe antibiotics",
+    "k": "항생제를 처방하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "medication",
+   "medicine"
+  ],
+  "ant": "",
+  "tip": "주로 복수형 antibiotics로 쓰이며 finish the full course of antibiotics(처방된 항생제를 끝까지 복용하다) 같은 복약 지시가 Part 4·7에 나온다.",
+  "q": {
+   "s": "Patients should finish the entire course of ------- even if they start to feel better.",
+   "o": [
+    "antiques",
+    "antibiotics",
+    "anthems",
+    "antennas"
+   ],
+   "a": 1,
+   "k": "몸이 나아지기 시작해도 끝까지 복용해야 하는 것은 '항생제'이므로 antibiotics가 정답이다. antiques(골동품), anthems(국가, 찬가), antennas(안테나)는 복용하는 대상이 아니다."
+  }
+ },
+ {
+  "w": "dosage",
+  "pos": "n",
+  "m": [
+   "(약의) 복용량, 투여량"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Children under twelve usually require a lower *dosage* than adults.",
+  "exKo": "12세 미만 어린이는 보통 성인보다 적은 복용량이 필요하다.",
+  "col": [
+   {
+    "e": "recommended dosage",
+    "k": "권장 복용량"
+   },
+   {
+    "e": "daily dosage",
+    "k": "일일 복용량"
+   },
+   {
+    "e": "exceed the dosage",
+    "k": "복용량을 초과하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "dose",
+    "pos": "n",
+    "m": "(1회) 복용량"
+   }
+  ],
+  "para": [
+   "dose",
+   "amount"
+  ],
+  "ant": "",
+  "tip": "dose가 1회 복용량이라면 dosage는 양과 횟수를 아우르는 '용량, 복용법'이다. exceed the recommended dosage(권장량을 초과하다)가 약 설명서에 자주 나온다.",
+  "q": {
+   "s": "Ms. Ward's doctor increased the ------- of her medication after the first two weeks of treatment.",
+   "o": [
+    "dossier",
+    "doorway",
+    "dosage",
+    "dotage"
+   ],
+   "a": 2,
+   "k": "치료 2주 후 의사가 늘린 것은 약의 '복용량'이므로 dosage가 정답이다. dossier(서류 일체), doorway(출입구), dotage(노쇠)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "capsule",
+  "pos": "n",
+  "m": [
+   "캡슐 (알약)"
+  ],
+  "tier": 2,
+  "parts": [
+   7
+  ],
+  "ex": "Each bottle contains sixty *capsules*, enough for a one-month supply.",
+  "exKo": "각 병에는 한 달 분량인 60캡슐이 들어 있다.",
+  "col": [
+   {
+    "e": "vitamin capsule",
+    "k": "비타민 캡슐"
+   },
+   {
+    "e": "take a capsule",
+    "k": "캡슐을 복용하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "encapsulate",
+    "pos": "v",
+    "m": "요약하다, 캡슐에 넣다"
+   }
+  ],
+  "para": [
+   "pill",
+   "tablet"
+  ],
+  "ant": "",
+  "tip": "약이나 영양제 형태로 tablet(정제), pill(알약)과 함께 나오며 Part 7 제품 설명에서 pill로 패러프레이징된다.",
+  "q": {
+   "s": "Patients should take one ------- with water after breakfast and another after dinner.",
+   "o": [
+    "capsule",
+    "capacity",
+    "caption",
+    "capital"
+   ],
+   "a": 0,
+   "k": "아침·저녁 식후 물과 함께 하나씩 복용하는 것은 '캡슐'이므로 capsule이 정답이다. capacity(용량, 수용력), caption(설명문), capital(수도, 자본)은 복용할 수 없다."
+  }
+ },
+ {
+  "w": "ointment",
+  "pos": "n",
+  "m": [
+   "연고"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "The pharmacist suggested an *ointment* to relieve the itching from the insect bite.",
+  "exKo": "약사는 벌레 물린 곳의 가려움을 완화하는 연고를 권했다.",
+  "col": [
+   {
+    "e": "apply ointment",
+    "k": "연고를 바르다"
+   },
+   {
+    "e": "antibiotic ointment",
+    "k": "항생제 연고"
+   }
+  ],
+  "der": [],
+  "para": [
+   "cream",
+   "lotion",
+   "salve"
+  ],
+  "ant": "",
+  "tip": "apply ointment to(~에 연고를 바르다)처럼 동사 apply와 함께 쓰인다. Part 7에서 cream으로 패러프레이징된다.",
+  "q": {
+   "s": "Gently apply the ------- to the affected area of the skin three times a day.",
+   "o": [
+    "appointment",
+    "enrollment",
+    "adjournment",
+    "ointment"
+   ],
+   "a": 3,
+   "k": "피부 환부에 바르는(apply) 것은 '연고'이므로 ointment가 정답이다. 철자가 비슷한 appointment(약속, 예약)와 enrollment(등록), adjournment(휴회)는 바를 수 있는 것이 아니다."
+  }
+ },
+ {
+  "w": "remedy",
+  "pos": "n",
+  "m": [
+   "치료법, 치료약",
+   "해결책"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ginger tea is a popular home *remedy* for an upset stomach.",
+  "exKo": "생강차는 배탈에 좋은 인기 있는 민간요법이다.",
+  "col": [
+   {
+    "e": "home remedy",
+    "k": "민간요법"
+   },
+   {
+    "e": "remedy for",
+    "k": "~의 치료법, 해결책"
+   },
+   {
+    "e": "natural remedy",
+    "k": "자연 요법"
+   }
+  ],
+  "der": [
+   {
+    "w": "remedial",
+    "pos": "adj",
+    "m": "치료의, 보충의"
+   }
+  ],
+  "para": [
+   "cure",
+   "treatment",
+   "solution"
+  ],
+  "ant": "",
+  "tip": "a remedy for(~에 대한 치료법, 해결책)처럼 전치사 for와 쓰며, 비즈니스 지문에서는 '(문제의) 해결책'이라는 뜻으로도 쓰인다. 동사로는 remedy the situation(상황을 바로잡다)처럼 쓴다.",
+  "q": {
+   "s": "Management is looking for a quick ------- for the delays in the shipping department.",
+   "o": [
+    "remark",
+    "remainder",
+    "remedy",
+    "reminder"
+   ],
+   "a": 2,
+   "k": "배송 지연 문제에 대한 빠른 '해결책'을 찾는다는 의미이므로 remedy가 정답이다. remark(발언), remainder(나머지), reminder(상기시키는 것)는 문맥에 맞지 않는다."
+  }
+ },
+ {
+  "w": "rehabilitation",
+  "pos": "n",
+  "m": [
+   "(부상·병 후의) 재활",
+   "(건물·지역의) 복구"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "After the accident, Mr. Bose spent three months in *rehabilitation* before returning to work.",
+  "exKo": "사고 후 Bose 씨는 3개월 동안 재활 치료를 받고 나서 직장에 복귀했다.",
+  "col": [
+   {
+    "e": "rehabilitation center",
+    "k": "재활 센터"
+   },
+   {
+    "e": "rehabilitation program",
+    "k": "재활 프로그램"
+   }
+  ],
+  "der": [
+   {
+    "w": "rehabilitate",
+    "pos": "v",
+    "m": "재활시키다, 복구하다"
+   }
+  ],
+  "para": [
+   "recovery",
+   "therapy",
+   "rehab"
+  ],
+  "ant": "",
+  "tip": "rehabilitation center/program처럼 쓰이며 줄여서 rehab이라 한다. 건물·지역의 '복구'라는 뜻도 있어 도시 재생 지문에 나온다.",
+  "q": {
+   "s": "The hospital's new ------- center helps patients regain strength and mobility after surgery.",
+   "o": [
+    "rehabilitate",
+    "rehabilitation",
+    "rehabilitated",
+    "rehabilitates"
+   ],
+   "a": 1,
+   "k": "center 앞에서 복합명사 rehabilitation center(재활 센터)를 이루는 명사 rehabilitation이 정답이다. rehabilitate, rehabilitates는 동사이고, rehabilitated는 과거분사다."
+  }
+ }
+]

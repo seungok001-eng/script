@@ -237,7 +237,7 @@
   "ant": "",
   "tip": "명사 leave는 '휴가'라는 뜻으로 on leave(휴가 중), sick leave(병가), annual leave(연차)처럼 쓰인다. Part 2·3에서 '그 사람이 왜 없는가'에 대한 답으로 자주 들린다.",
   "q": {
-   "s": "Mr. Garcia is currently on ------- and will return to the office on March 3.",
+   "s": "Please direct all billing questions to Mr. Ngata while Ms. Reed is on -------.",
    "o": [
     "leaving",
     "leave",
@@ -289,14 +289,14 @@
   "ant": "",
   "tip": "Part 3·7에서 업무 대행자가 필요한 이유로 자주 나온다. 아버지의 휴가는 paternity leave, 성별 구분 없는 육아 휴직은 parental leave라고 한다.",
   "q": {
-   "s": "While Ms. Kang is on maternity -------, Mr. Bose will manage her accounts.",
+   "s": "Ms. Kang plans to take six months of maternity ------- after her baby is born.",
    "o": [
     "absence",
     "leave",
     "retirement",
     "permit"
    ],
-   "k": "'출산 휴가'는 maternity leave로 쓰므로 leave가 정답. on maternity absence나 on maternity permit은 쓰지 않는 표현이고, retirement는 '은퇴'라 maternity와 결합하지 않는다.",
+   "k": "'출산 휴가'는 maternity leave로 쓰므로 leave가 정답. maternity absence나 maternity permit은 쓰지 않는 표현이고, retirement는 '은퇴'라 maternity와 결합하지 않는다.",
    "a": 1
   }
  },
@@ -606,8 +606,8 @@
    4,
    7
   ],
-  "ex": "The community center offers free computer classes for local *retirees*.",
-  "exKo": "그 주민 센터는 지역 은퇴자들을 위한 무료 컴퓨터 강좌를 제공한다.",
+  "ex": "The company still invites its *retirees* to the annual holiday dinner.",
+  "exKo": "그 회사는 지금도 퇴직자들을 연례 연말 만찬에 초대한다.",
   "col": [
    {
     "e": "recent retirees",
@@ -889,14 +889,14 @@
   "ant": "",
   "tip": "file/submit a grievance(고충을 제기하다)가 대표 연어로 Part 7에서 complaint로 바꿔 표현된다. grievance procedure는 회사의 공식 고충 처리 절차를 말한다.",
   "q": {
-   "s": "Staff members who wish to file a ------- should first speak with their immediate supervisor.",
+   "s": "The union submitted a formal ------- about the new overtime rules.",
    "o": [
     "grief",
     "grieve",
     "grievance",
     "grievous"
    ],
-   "k": "file a와 결합해 '고충을 제기하다'라는 뜻을 만드는 명사 grievance가 정답. grief(깊은 슬픔)는 file의 목적어가 될 수 없고, grieve는 동사, grievous(심각한)는 형용사다.",
+   "k": "관사 a와 형용사 formal 뒤에서 '공식 고충(이의 제기)'이라는 뜻을 만드는 명사 grievance가 정답. grief(깊은 슬픔)는 submit의 목적어로 맞지 않고, grieve는 동사, grievous(심각한)는 형용사다.",
    "a": 2
   }
  },
@@ -969,8 +969,8 @@
    5,
    7
   ],
-  "ex": "An outside consultant was hired to *mediate* the dispute between the two departments.",
-  "exKo": "두 부서 간의 분쟁을 중재하기 위해 외부 컨설턴트가 고용되었다.",
+  "ex": "A senior manager was asked to *mediate* when the two team leaders disagreed over the budget.",
+  "exKo": "두 팀장이 예산을 두고 의견이 갈리자 한 고위 관리자가 중재를 요청받았다.",
   "col": [
    {
     "e": "mediate a dispute",
@@ -1485,14 +1485,14 @@
   "ant": "",
   "tip": "-less는 '~이 없는'이라는 접미사로 tireless는 '지치지 않는'이라는 긍정적인 뜻이다. tireless efforts, work tirelessly 형태로 감사·표창 지문에 자주 나온다.",
   "q": {
-   "s": "The mayor praised the rescue team for its ------- efforts during the flood.",
+   "s": "The hospital thanked its nurses for their ------- dedication during the winter flu season.",
    "o": [
     "tireless",
     "careless",
     "pointless",
     "harmless"
    ],
-   "k": "시장이 '칭찬한' 노력이므로 긍정적인 의미의 tireless(지칠 줄 모르는)가 정답. careless(부주의한)와 pointless(무의미한)는 칭찬과 맞지 않고, harmless(무해한)는 efforts를 수식하기에 어색하다.",
+   "k": "병원이 '감사한' 헌신이므로 긍정적인 의미의 tireless(지칠 줄 모르는)가 정답. careless(부주의한)와 pointless(무의미한)는 감사와 맞지 않고, harmless(무해한)는 dedication을 수식하기에 어색하다.",
    "a": 0
   }
  },
@@ -1640,14 +1640,14 @@
   "ant": "new",
   "tip": "명사 앞에서만 쓰는 형용사로 longtime client(오랜 고객)처럼 쓴다. '오랫동안'이라는 부사는 for a long time으로 표현해야 하므로 구분한다.",
   "q": {
-   "s": "As a ------- customer, Ms. Song receives a 15 percent discount on all purchases.",
+   "s": "As a ------- client of the law firm, Ms. Song is invited to its annual reception.",
    "o": [
     "lengthy",
     "lasting",
     "longtime",
     "longing"
    ],
-   "k": "할인 혜택을 받는 '오랜 단골' 고객이라는 뜻이므로 longtime이 정답. lengthy(장황한, 긴)와 lasting(오래가는)은 사물에 쓰며 사람인 customer를 이런 뜻으로 수식하지 못하고, longing은 '갈망'이다.",
+   "k": "연례 행사에 초대받는 '오랜' 고객이라는 뜻이므로 longtime이 정답. lengthy(장황한, 긴)와 lasting(오래가는)은 사물에 쓰며 사람인 client를 이런 뜻으로 수식하지 못하고, longing은 '갈망'이다.",
    "a": 2
   }
  },
@@ -1862,8 +1862,8 @@
    4,
    7
   ],
-  "ex": "The sales department went on a *team-building* retreat in the mountains last weekend.",
-  "exKo": "영업부는 지난 주말 산으로 단합 수련회를 다녀왔다.",
+  "ex": "Our department will spend Friday afternoon on *team-building* exercises at a nearby park.",
+  "exKo": "우리 부서는 금요일 오후에 근처 공원에서 팀워크 향상 활동을 한다.",
   "col": [
    {
     "e": "team-building activities",

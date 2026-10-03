@@ -1,0 +1,2088 @@
+[
+ {
+  "w": "formula",
+  "pos": "n",
+  "m": [
+   "제조법, 배합",
+   "공식"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company's new shampoo uses a gentler *formula* designed for sensitive skin.",
+  "exKo": "그 회사의 새 샴푸는 민감한 피부를 위해 고안된 더 순한 배합을 사용한다.",
+  "col": [
+   {
+    "e": "a new formula",
+    "k": "새 배합"
+   },
+   {
+    "e": "a formula for",
+    "k": "~의 공식, 비결"
+   }
+  ],
+  "der": [
+   {
+    "w": "formulate",
+    "pos": "v",
+    "m": "(계획·제품을) 고안하다, 만들어 내다"
+   },
+   {
+    "w": "formulation",
+    "pos": "n",
+    "m": "배합, 고안"
+   }
+  ],
+  "para": [
+   "recipe",
+   "composition"
+  ],
+  "ant": "",
+  "tip": "화장품·식품 광고에서 '배합, 제조법'으로 쓰이며 improved formula가 자주 보인다. 동사 formulate(고안하다)는 formulate a plan처럼 Part 5에 나온다.",
+  "q": {
+   "s": "Our researchers spent two years perfecting the ------- for this long-lasting paint.",
+   "o": [
+    "formula",
+    "formation",
+    "format",
+    "formality"
+   ],
+   "a": 0,
+   "k": "오래가는 페인트를 위해 2년간 완성한 것은 '배합'이므로 formula가 정답이다. formation(형성, 대형), format(형식), formality(형식적 절차)는 페인트의 성분을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "refinement",
+  "pos": "n",
+  "m": [
+   "개선, 정교화",
+   "정제"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "After several *refinements*, the prototype was ready for consumer testing.",
+  "exKo": "몇 차례의 개선을 거친 뒤 그 시제품은 소비자 테스트를 받을 준비가 되었다.",
+  "col": [
+   {
+    "e": "further refinement",
+    "k": "추가 개선"
+   },
+   {
+    "e": "make refinements to",
+    "k": "~을 개선하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "refine",
+    "pos": "v",
+    "m": "개선하다, 정제하다"
+   },
+   {
+    "w": "refined",
+    "pos": "adj",
+    "m": "세련된, 정제된"
+   }
+  ],
+  "para": [
+   "improvement",
+   "enhancement"
+  ],
+  "ant": "",
+  "tip": "make refinements to(~을 다듬다)와 같이 가산명사로 쓰인다. 동사 refine, 형용사 refined와 함께 품사 문제로 출제되며 refinery(정제소)와 구분한다.",
+  "q": {
+   "s": "The final design incorporates several ------- suggested by participants in the focus group.",
+   "o": [
+    "refined",
+    "refinements",
+    "refines",
+    "refinery"
+   ],
+   "a": 1,
+   "k": "수량 형용사 several 뒤에는 복수명사가 와야 하고 '개선 사항'이 제안된 것이므로 refinements가 정답이다. refined는 분사·형용사, refines는 동사, refinery(정제소)는 단수 명사라 의미도 맞지 않는다."
+  }
+ },
+ {
+  "w": "evolve",
+  "pos": "v",
+  "m": [
+   "발전하다, 진화하다",
+   "(점차) 변하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The small mobile app has *evolved* into a complete platform for online banking.",
+  "exKo": "그 작은 모바일 앱은 온라인 뱅킹을 위한 완전한 플랫폼으로 발전했다.",
+  "col": [
+   {
+    "e": "evolve into",
+    "k": "~으로 발전하다"
+   },
+   {
+    "e": "constantly evolving",
+    "k": "끊임없이 변화하는"
+   }
+  ],
+  "der": [
+   {
+    "w": "evolution",
+    "pos": "n",
+    "m": "진화, 발전"
+   },
+   {
+    "w": "evolving",
+    "pos": "adj",
+    "m": "발전하는, 변화하는"
+   }
+  ],
+  "para": [
+   "develop",
+   "grow",
+   "change"
+  ],
+  "ant": "",
+  "tip": "자동사로 evolve into(~으로 발전하다)가 핵심 구조이며 수동태로 쓰지 않는다. constantly evolving market(끊임없이 변하는 시장) 같은 표현이 Part 7에 나온다.",
+  "q": {
+   "s": "As customer needs continue to -------, we regularly update our services.",
+   "o": [
+    "involve",
+    "evolve",
+    "revolve",
+    "resolve"
+   ],
+   "a": 1,
+   "k": "고객의 요구가 계속 '변화함에' 따라 서비스를 갱신한다는 의미이므로 자동사 evolve가 정답이다. involve(포함하다)와 resolve(해결하다)는 목적어가 필요하고, revolve(회전하다)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "innovate",
+  "pos": "v",
+  "m": [
+   "혁신하다",
+   "새로 도입하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "To stay competitive, small manufacturers must constantly *innovate*.",
+  "exKo": "경쟁력을 유지하려면 소규모 제조업체는 끊임없이 혁신해야 한다.",
+  "col": [
+   {
+    "e": "continue to innovate",
+    "k": "계속 혁신하다"
+   },
+   {
+    "e": "innovate in",
+    "k": "~ 분야에서 혁신하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "innovation",
+    "pos": "n",
+    "m": "혁신"
+   },
+   {
+    "w": "innovative",
+    "pos": "adj",
+    "m": "혁신적인"
+   },
+   {
+    "w": "innovator",
+    "pos": "n",
+    "m": "혁신가"
+   }
+  ],
+  "para": [
+   "modernize",
+   "pioneer"
+  ],
+  "ant": "",
+  "tip": "주로 자동사로 쓰이며, 명사 innovation, 형용사 innovative, 사람명사 innovator와 함께 품사 자리 문제로 자주 나온다.",
+  "q": {
+   "s": "Companies that fail to ------- often lose market share to more creative competitors.",
+   "o": [
+    "innovation",
+    "innovate",
+    "innovative",
+    "innovator"
+   ],
+   "a": 1,
+   "k": "fail to 뒤에는 동사원형이 와야 하므로 innovate가 정답이다. innovation과 innovator는 명사, innovative는 형용사다."
+  }
+ },
+ {
+  "w": "discovery",
+  "pos": "n",
+  "m": [
+   "발견",
+   "발견물"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *discovery* of a cheaper raw material helped the firm cut production costs.",
+  "exKo": "더 저렴한 원자재를 발견한 덕분에 그 회사는 생산비를 줄일 수 있었다.",
+  "col": [
+   {
+    "e": "make a discovery",
+    "k": "발견하다"
+   },
+   {
+    "e": "scientific discovery",
+    "k": "과학적 발견"
+   }
+  ],
+  "der": [
+   {
+    "w": "discover",
+    "pos": "v",
+    "m": "발견하다"
+   },
+   {
+    "w": "discoverer",
+    "pos": "n",
+    "m": "발견자"
+   }
+  ],
+  "para": [
+   "finding",
+   "breakthrough"
+  ],
+  "ant": "",
+  "tip": "make a discovery(발견하다)가 기본 연어이며 소유격·관사 뒤 명사 자리를 묻는 품사 문제로 나온다. Part 7에서 finding으로 패러프레이징된다.",
+  "q": {
+   "s": "The research team's ------- could lead to batteries that last twice as long.",
+   "o": [
+    "discover",
+    "discovery",
+    "discovered",
+    "discoverer"
+   ],
+   "a": 1,
+   "k": "소유격 team's 뒤 명사 자리이며 수명이 두 배인 배터리로 이어질 수 있는 것은 '발견'이므로 discovery가 정답이다. discoverer는 사람이라 의미가 맞지 않고, discover는 동사, discovered는 분사다."
+  }
+ },
+ {
+  "w": "patented",
+  "pos": "adj",
+  "m": [
+   "특허받은"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Our *patented* cooling technology keeps laptops quiet even during heavy use.",
+  "exKo": "우리의 특허받은 냉각 기술은 노트북을 많이 사용하는 중에도 조용하게 유지해 준다.",
+  "col": [
+   {
+    "e": "patented technology",
+    "k": "특허 기술"
+   },
+   {
+    "e": "patented design",
+    "k": "특허받은 디자인"
+   }
+  ],
+  "der": [
+   {
+    "w": "patent",
+    "pos": "n",
+    "m": "특허"
+   },
+   {
+    "w": "patent",
+    "pos": "v",
+    "m": "특허를 받다"
+   }
+  ],
+  "para": [
+   "proprietary"
+  ],
+  "ant": "",
+  "tip": "명사 patent(특허)의 과거분사형 형용사로 제품 광고에서 기술의 독창성을 강조할 때 쓴다. hold a patent(특허를 보유하다), apply for a patent도 함께 알아 둔다.",
+  "q": {
+   "s": "The vacuum cleaner features a ------- filter system that no competitor is legally allowed to copy.",
+   "o": [
+    "patient",
+    "painted",
+    "partnered",
+    "patented"
+   ],
+   "a": 3,
+   "k": "경쟁사가 법적으로 모방할 수 없는 필터 시스템이므로 '특허받은' patented가 정답이다. patient(참을성 있는), painted(칠해진), partnered(제휴한)는 모방 금지의 이유가 되지 않는다."
+  }
+ },
+ {
+  "w": "proprietary",
+  "pos": "adj",
+  "m": [
+   "독점적인, 자사 소유의",
+   "소유주의"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The software runs on a *proprietary* system developed entirely in-house.",
+  "exKo": "그 소프트웨어는 전적으로 사내에서 개발한 독자 시스템에서 구동된다.",
+  "col": [
+   {
+    "e": "proprietary information",
+    "k": "기밀 정보, 사내 정보"
+   },
+   {
+    "e": "proprietary technology",
+    "k": "독자 기술"
+   }
+  ],
+  "der": [
+   {
+    "w": "proprietor",
+    "pos": "n",
+    "m": "소유주"
+   },
+   {
+    "w": "property",
+    "pos": "n",
+    "m": "재산, 소유물"
+   }
+  ],
+  "para": [
+   "exclusive",
+   "patented",
+   "confidential"
+  ],
+  "ant": "",
+  "tip": "proprietary information(회사 고유의 기밀 정보)이 보안 규정에 자주 나온다. 사람명사 proprietor(소유주)와 품사를 구분하는 문제가 출제된다.",
+  "q": {
+   "s": "Employees must not share ------- information about the company's products with anyone outside the firm.",
+   "o": [
+    "propriety",
+    "proprietor",
+    "proprietary",
+    "prosperity"
+   ],
+   "a": 2,
+   "k": "명사 information을 꾸미는 형용사 자리이며 외부에 공유하면 안 되는 '회사 소유의' 정보이므로 proprietary가 정답이다. propriety(예의), proprietor(소유주), prosperity(번영)는 명사다."
+  }
+ },
+ {
+  "w": "experimental",
+  "pos": "adj",
+  "m": [
+   "실험적인, 실험의",
+   "시험 단계의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The *experimental* drug is still being tested and is not yet available to the public.",
+  "exKo": "그 실험 단계의 약은 아직 시험 중이며 일반인에게는 공급되지 않는다.",
+  "col": [
+   {
+    "e": "experimental stage",
+    "k": "실험 단계"
+   },
+   {
+    "e": "experimental design",
+    "k": "실험적 설계"
+   }
+  ],
+  "der": [
+   {
+    "w": "experiment",
+    "pos": "n",
+    "m": "실험"
+   },
+   {
+    "w": "experimentally",
+    "pos": "adv",
+    "m": "실험적으로"
+   }
+  ],
+  "para": [
+   "trial",
+   "untested"
+  ],
+  "ant": "proven",
+  "tip": "명사 experiment(실험)의 형용사형으로 '시험 단계의, 실험적인'을 뜻한다. at an experimental stage처럼 관사와 명사 사이 형용사 자리를 묻는 문제가 나온다.",
+  "q": {
+   "s": "The engine is still at an ------- stage and will not be available for several years.",
+   "o": [
+    "experiment",
+    "experimental",
+    "experimentally",
+    "experimenter"
+   ],
+   "a": 1,
+   "k": "관사 an과 명사 stage 사이 형용사 자리이므로 experimental이 정답이다. experiment와 experimenter는 명사, experimentally는 부사다."
+  }
+ },
+ {
+  "w": "theory",
+  "pos": "n",
+  "m": [
+   "이론",
+   "학설"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "In *theory*, the new layout should reduce the time workers spend walking around.",
+  "exKo": "이론상으로는 새 배치가 작업자들이 돌아다니는 데 쓰는 시간을 줄여 줄 것이다.",
+  "col": [
+   {
+    "e": "in theory",
+    "k": "이론상으로는"
+   },
+   {
+    "e": "test a theory",
+    "k": "이론을 검증하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "theoretical",
+    "pos": "adj",
+    "m": "이론적인"
+   },
+   {
+    "w": "theoretically",
+    "pos": "adv",
+    "m": "이론상"
+   }
+  ],
+  "para": [
+   "hypothesis",
+   "concept"
+  ],
+  "ant": "practice",
+  "tip": "in theory(이론상으로는)와 in practice(실제로는)가 대조되는 문장이 자주 나온다. 형용사 theoretical, 부사 theoretically와 품사 문제로 출제된다.",
+  "q": {
+   "s": "The engineer's ------- was confirmed when the redesigned part passed every stress test.",
+   "o": [
+    "therapy",
+    "treaty",
+    "theater",
+    "theory"
+   ],
+   "a": 3,
+   "k": "다시 설계한 부품이 모든 시험을 통과하면서 입증된 것은 기술자의 '이론'이므로 theory가 정답이다. therapy(치료), treaty(조약), theater(극장)는 시험으로 입증되는 대상이 아니다."
+  }
+ },
+ {
+  "w": "hypothesis",
+  "pos": "n",
+  "m": [
+   "가설"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The researchers designed a series of experiments to test their *hypothesis*.",
+  "exKo": "연구원들은 자신들의 가설을 검증하기 위해 일련의 실험을 설계했다.",
+  "col": [
+   {
+    "e": "test a hypothesis",
+    "k": "가설을 검증하다"
+   },
+   {
+    "e": "support a hypothesis",
+    "k": "가설을 뒷받침하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "hypothesize",
+    "pos": "v",
+    "m": "가설을 세우다"
+   },
+   {
+    "w": "hypothetical",
+    "pos": "adj",
+    "m": "가설의, 가정의"
+   }
+  ],
+  "para": [
+   "theory",
+   "assumption"
+  ],
+  "ant": "",
+  "tip": "복수형은 hypotheses다. the hypothesis that절(~라는 가설) 구조로 쓰이며 형용사 hypothetical과 품사를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Results from the survey support the ------- that younger shoppers prefer to buy groceries online.",
+   "o": [
+    "hypothetical",
+    "hypothesis",
+    "hypothesize",
+    "hypothetically"
+   ],
+   "a": 1,
+   "k": "관사 the 뒤 명사 자리이고 that절이 내용을 설명하는 '가설'이므로 hypothesis가 정답이다. hypothetical은 형용사, hypothesize는 동사, hypothetically는 부사다."
+  }
+ },
+ {
+  "w": "variable",
+  "pos": "n",
+  "m": [
+   "변수",
+   "변하는 것"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Weather is an important *variable* that can affect construction schedules.",
+  "exKo": "날씨는 공사 일정에 영향을 줄 수 있는 중요한 변수다.",
+  "col": [
+   {
+    "e": "key variable",
+    "k": "핵심 변수"
+   },
+   {
+    "e": "a number of variables",
+    "k": "여러 변수"
+   }
+  ],
+  "der": [
+   {
+    "w": "vary",
+    "pos": "v",
+    "m": "다르다, 달라지다"
+   },
+   {
+    "w": "variation",
+    "pos": "n",
+    "m": "변화, 차이"
+   },
+   {
+    "w": "variable",
+    "pos": "adj",
+    "m": "변동이 심한"
+   }
+  ],
+  "para": [
+   "factor"
+  ],
+  "ant": "constant",
+  "tip": "명사로는 '변수', 형용사로는 '변동이 심한(variable rates)'이다. Part 7에서 factor로 패러프레이징되며 동사 vary와 품사를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Analysts considered several -------, such as fuel prices and exchange rates, when forecasting next year's costs.",
+   "o": [
+    "vary",
+    "variably",
+    "variance",
+    "variables"
+   ],
+   "a": 3,
+   "k": "수량 형용사 several 뒤에는 복수명사가 와야 하므로 '변수'를 뜻하는 variables가 정답이다. vary는 동사, variably는 부사이고, variance는 단수형이라 several과 함께 쓸 수 없다."
+  }
+ },
+ {
+  "w": "interpret",
+  "pos": "v",
+  "m": [
+   "해석하다, 이해하다",
+   "통역하다"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We hired a consultant to help us *interpret* the results of the customer survey.",
+  "exKo": "우리는 고객 설문 조사 결과를 해석하는 데 도움을 받으려고 컨설턴트를 고용했다.",
+  "col": [
+   {
+    "e": "interpret data",
+    "k": "데이터를 해석하다"
+   },
+   {
+    "e": "interpret for",
+    "k": "~을 위해 통역하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "interpretation",
+    "pos": "n",
+    "m": "해석, 통역"
+   },
+   {
+    "w": "interpreter",
+    "pos": "n",
+    "m": "통역사"
+   }
+  ],
+  "para": [
+   "analyze",
+   "explain",
+   "translate"
+  ],
+  "ant": "",
+  "tip": "데이터를 '해석하다'와 말을 '통역하다' 두 뜻이 있다. 사람명사 interpreter(통역사), 명사 interpretation과 품사를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "Ms. Takahashi will ------- for the Japanese delegation during the factory tour.",
+   "o": [
+    "interpret",
+    "interpretation",
+    "interpreter",
+    "interpretive"
+   ],
+   "a": 0,
+   "k": "조동사 will 뒤에는 동사원형이 와야 하므로 '통역하다'의 interpret가 정답이다. interpretation과 interpreter는 명사, interpretive는 형용사다."
+  }
+ },
+ {
+  "w": "interpretation",
+  "pos": "n",
+  "m": [
+   "해석, 이해",
+   "통역"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Team members offered different *interpretations* of last quarter's sales data.",
+  "exKo": "팀원들은 지난 분기 판매 데이터에 대해 서로 다른 해석을 내놓았다.",
+  "col": [
+   {
+    "e": "interpretation of",
+    "k": "~의 해석"
+   },
+   {
+    "e": "open to interpretation",
+    "k": "해석의 여지가 있는"
+   },
+   {
+    "e": "simultaneous interpretation",
+    "k": "동시통역"
+   }
+  ],
+  "der": [
+   {
+    "w": "interpret",
+    "pos": "v",
+    "m": "해석하다, 통역하다"
+   },
+   {
+    "w": "interpreter",
+    "pos": "n",
+    "m": "통역사"
+   }
+  ],
+  "para": [
+   "explanation",
+   "reading",
+   "analysis"
+  ],
+  "ant": "",
+  "tip": "open to interpretation(여러 해석이 가능한), leave room for interpretation이 계약·규정 지문에 나온다. 사람명사 interpreter와 구분한다.",
+  "q": {
+   "s": "The contract's wording is clear and leaves little room for -------.",
+   "o": [
+    "interpretation",
+    "interpret",
+    "interpreter",
+    "interpreted"
+   ],
+   "a": 0,
+   "k": "전치사 for 뒤 명사 자리이고 계약서 문구가 명확해 '해석'의 여지가 거의 없다는 의미이므로 interpretation이 정답이다. interpreter(통역사)는 가산명사 단수라 관사가 필요하고 의미도 맞지 않으며, interpret는 동사, interpreted는 분사다."
+  }
+ },
+ {
+  "w": "conclusive",
+  "pos": "adj",
+  "m": [
+   "결정적인, 확실한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "So far, there is no *conclusive* evidence that the additive improves fuel efficiency.",
+  "exKo": "지금까지 그 첨가제가 연비를 개선한다는 확실한 증거는 없다.",
+  "col": [
+   {
+    "e": "conclusive evidence",
+    "k": "결정적 증거"
+   },
+   {
+    "e": "conclusive results",
+    "k": "확실한 결과"
+   }
+  ],
+  "der": [
+   {
+    "w": "conclude",
+    "pos": "v",
+    "m": "결론을 내리다, 끝내다"
+   },
+   {
+    "w": "conclusion",
+    "pos": "n",
+    "m": "결론"
+   },
+   {
+    "w": "conclusively",
+    "pos": "adv",
+    "m": "결정적으로"
+   }
+  ],
+  "para": [
+   "definitive",
+   "decisive"
+  ],
+  "ant": "inconclusive",
+  "tip": "conclusive evidence/proof(확실한 증거)가 대표 연어이며 반대말 inconclusive(결론에 이르지 못한)도 연구 지문에 나온다. be동사·enough 앞 형용사 자리를 묻는 문제가 출제된다.",
+  "q": {
+   "s": "The initial test results were promising but not ------- enough to justify full-scale production.",
+   "o": [
+    "conclusive",
+    "conclude",
+    "conclusion",
+    "conclusively"
+   ],
+   "a": 0,
+   "k": "be동사 were의 보어이자 enough 앞 형용사 자리이므로 conclusive가 정답이다. conclude는 동사, conclusion은 명사, conclusively는 부사다."
+  }
+ },
+ {
+  "w": "empirical",
+  "pos": "adj",
+  "m": [
+   "경험적인, 실증적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The report is based on *empirical* data collected from over 500 factories.",
+  "exKo": "그 보고서는 500개가 넘는 공장에서 수집한 실증적 데이터를 바탕으로 한다.",
+  "col": [
+   {
+    "e": "empirical evidence",
+    "k": "실증적 증거"
+   },
+   {
+    "e": "empirical data",
+    "k": "실증 데이터"
+   },
+   {
+    "e": "empirical research",
+    "k": "실증 연구"
+   }
+  ],
+  "der": [
+   {
+    "w": "empirically",
+    "pos": "adv",
+    "m": "경험적으로, 실증적으로"
+   }
+  ],
+  "para": [
+   "observed",
+   "experimental",
+   "factual"
+  ],
+  "ant": "theoretical",
+  "tip": "이론이 아니라 관찰·실험에 근거한다는 뜻으로 empirical evidence/data가 연구 보고서 지문에 나온다. 반대 개념은 theoretical(이론적인)이다.",
+  "q": {
+   "s": "The marketing team's claims must be supported by ------- evidence rather than personal opinions.",
+   "o": [
+    "imperial",
+    "empirical",
+    "empathetic",
+    "emphatic"
+   ],
+   "a": 1,
+   "k": "개인 의견이 아닌 '실증적' 증거로 뒷받침해야 한다는 의미이므로 empirical이 정답이다. imperial(제국의), empathetic(공감하는), emphatic(단호한, 강조하는)은 evidence와 어울려 이런 뜻을 만들지 못한다."
+  }
+ },
+ {
+  "w": "clinical trial",
+  "pos": "phr",
+  "m": [
+   "임상 시험"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The new allergy medication is currently in the final stage of *clinical trials*.",
+  "exKo": "그 신약 알레르기 치료제는 현재 임상 시험 마지막 단계에 있다.",
+  "col": [
+   {
+    "e": "conduct a clinical trial",
+    "k": "임상 시험을 실시하다"
+   },
+   {
+    "e": "participate in a clinical trial",
+    "k": "임상 시험에 참여하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "clinic",
+    "pos": "n",
+    "m": "병원, 진료소"
+   },
+   {
+    "w": "clinical",
+    "pos": "adj",
+    "m": "임상의"
+   }
+  ],
+  "para": [
+   "medical study"
+  ],
+  "ant": "",
+  "tip": "제약 회사 기사에서 신약 출시 전 단계로 나온다. Part 7에서 study, testing으로 패러프레이징되며 참가자 모집 광고(participants needed)로도 출제된다.",
+  "q": {
+   "s": "Before the medication can be sold, it must pass a series of ------- involving thousands of patients.",
+   "o": [
+    "trial balances",
+    "field trips",
+    "clinical trials",
+    "travel clinics"
+   ],
+   "a": 2,
+   "k": "약이 판매되기 전에 수천 명의 환자를 대상으로 통과해야 하는 것은 '임상 시험'이므로 clinical trials가 정답이다. trial balances(시산표), field trips(현장 학습), travel clinics(여행자 진료소)는 약이 통과해야 할 절차가 아니다."
+  }
+ },
+ {
+  "w": "artificial intelligence",
+  "pos": "phr",
+  "m": [
+   "인공 지능"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The bank uses *artificial intelligence* to detect suspicious transactions.",
+  "exKo": "그 은행은 수상한 거래를 탐지하기 위해 인공 지능을 활용한다.",
+  "col": [
+   {
+    "e": "artificial intelligence technology",
+    "k": "인공 지능 기술"
+   },
+   {
+    "e": "AI-powered",
+    "k": "인공 지능 기반의"
+   }
+  ],
+  "der": [
+   {
+    "w": "artificial",
+    "pos": "adj",
+    "m": "인공의, 인위적인"
+   },
+   {
+    "w": "intelligent",
+    "pos": "adj",
+    "m": "지능적인"
+   }
+  ],
+  "para": [
+   "AI",
+   "machine learning"
+  ],
+  "ant": "",
+  "tip": "줄여서 AI라고 하며 기술 기사에서 AI-powered, AI-driven 같은 형태로도 나온다. 불가산명사라 an artificial intelligence로 쓰지 않는다.",
+  "q": {
+   "s": "Advances in ------- have allowed the software to answer customer questions without human help.",
+   "o": [
+    "artificial intelligence",
+    "artificial lighting",
+    "emotional intelligence",
+    "natural resources"
+   ],
+   "a": 0,
+   "k": "사람의 도움 없이 소프트웨어가 고객 질문에 답하게 해 준 기술 발전이므로 artificial intelligence가 정답이다. artificial lighting(인공 조명), emotional intelligence(감성 지능), natural resources(천연자원)는 소프트웨어 기능과 관련이 없다."
+  }
+ },
+ {
+  "w": "algorithm",
+  "pos": "n",
+  "m": [
+   "알고리즘"
+  ],
+  "tier": 3,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The streaming service uses an *algorithm* to recommend shows based on viewing history.",
+  "exKo": "그 스트리밍 서비스는 시청 기록을 바탕으로 프로그램을 추천하기 위해 알고리즘을 사용한다.",
+  "col": [
+   {
+    "e": "search algorithm",
+    "k": "검색 알고리즘"
+   },
+   {
+    "e": "develop an algorithm",
+    "k": "알고리즘을 개발하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "algorithmic",
+    "pos": "adj",
+    "m": "알고리즘의"
+   }
+  ],
+  "para": [
+   "formula",
+   "procedure"
+  ],
+  "ant": "",
+  "tip": "문제 해결을 위한 계산 절차로 기술·마케팅 지문에서 recommendation, search와 함께 나온다. 가산명사라 an algorithm, algorithms로 쓴다.",
+  "q": {
+   "s": "Engineers updated the search ------- so that users see more relevant results.",
+   "o": [
+    "logarithm",
+    "rhythm",
+    "altitude",
+    "algorithm"
+   ],
+   "a": 3,
+   "k": "사용자에게 더 관련성 높은 결과를 보여 주도록 수정한 것은 검색 '알고리즘'이므로 algorithm이 정답이다. logarithm(로그), rhythm(리듬), altitude(고도)는 search와 결합해 의미를 만들지 못한다."
+  }
+ },
+ {
+  "w": "usability",
+  "pos": "n",
+  "m": [
+   "사용 편의성, 유용성"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We invited 20 customers to test the website's *usability* before the launch.",
+  "exKo": "우리는 출시 전에 웹사이트의 사용 편의성을 시험하기 위해 고객 20명을 초청했다.",
+  "col": [
+   {
+    "e": "usability testing",
+    "k": "사용성 테스트"
+   },
+   {
+    "e": "improve usability",
+    "k": "사용 편의성을 높이다"
+   }
+  ],
+  "der": [
+   {
+    "w": "usable",
+    "pos": "adj",
+    "m": "사용 가능한"
+   },
+   {
+    "w": "use",
+    "pos": "v",
+    "m": "사용하다"
+   }
+  ],
+  "para": [
+   "ease of use",
+   "user-friendliness"
+  ],
+  "ant": "",
+  "tip": "웹사이트·앱 개발 지문에서 usability testing(사용성 테스트)이 자주 나온다. Part 7에서 ease of use로 패러프레이징된다.",
+  "q": {
+   "s": "The designers improved the app's ------- by reducing the number of steps needed to place an order.",
+   "o": [
+    "usability",
+    "usable",
+    "usably",
+    "user"
+   ],
+   "a": 0,
+   "k": "소유격 app's 뒤 명사 자리이며 주문 단계를 줄여서 개선한 것은 '사용 편의성'이므로 usability가 정답이다. usable은 형용사, usably는 부사이고, user(사용자)는 개선 대상으로 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "user experience",
+  "pos": "phr",
+  "m": [
+   "사용자 경험"
+  ],
+  "tier": 2,
+  "parts": [
+   4,
+   7
+  ],
+  "ex": "The redesign focuses on improving the *user experience* on mobile devices.",
+  "exKo": "이번 재설계는 모바일 기기에서의 사용자 경험을 개선하는 데 중점을 둔다.",
+  "col": [
+   {
+    "e": "improve the user experience",
+    "k": "사용자 경험을 개선하다"
+   },
+   {
+    "e": "user experience designer",
+    "k": "UX 디자이너"
+   }
+  ],
+  "der": [
+   {
+    "w": "user",
+    "pos": "n",
+    "m": "사용자"
+   }
+  ],
+  "para": [
+   "UX",
+   "customer experience"
+  ],
+  "ant": "",
+  "tip": "줄여서 UX라고 하며 웹사이트·앱 개편 공지에서 improve, enhance와 함께 나온다. 채용 공고의 user experience designer(UX 디자이너)도 자주 등장한다.",
+  "q": {
+   "s": "Our team interviews customers regularly to find ways to improve the overall ------- of the app.",
+   "o": [
+    "user name",
+    "end user",
+    "user experience",
+    "user fee"
+   ],
+   "a": 2,
+   "k": "앱의 전반적인 '사용자 경험'을 개선하는 방법을 찾는다는 의미이므로 user experience가 정답이다. user name(사용자 이름), end user(최종 사용자), user fee(이용료)는 improve the overall ~ of the app과 어울리지 않는다."
+  }
+ },
+ {
+  "w": "intuitive",
+  "pos": "adj",
+  "m": [
+   "직관적인, 이해하기 쉬운"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The camera's *intuitive* controls make it easy for beginners to use.",
+  "exKo": "그 카메라는 조작부가 직관적이어서 초보자도 쉽게 사용할 수 있다.",
+  "col": [
+   {
+    "e": "intuitive interface",
+    "k": "직관적인 인터페이스"
+   },
+   {
+    "e": "intuitive design",
+    "k": "직관적인 디자인"
+   }
+  ],
+  "der": [
+   {
+    "w": "intuition",
+    "pos": "n",
+    "m": "직관"
+   },
+   {
+    "w": "intuitively",
+    "pos": "adv",
+    "m": "직관적으로"
+   }
+  ],
+  "para": [
+   "user-friendly",
+   "easy to use"
+  ],
+  "ant": "",
+  "tip": "제품 리뷰에서 intuitive interface/controls가 '쓰기 쉬운'의 뜻으로 나오며 user-friendly로 패러프레이징된다. 명사 intuition, 부사 intuitively와 품사 문제로 출제된다.",
+  "q": {
+   "s": "Thanks to its ------- interface, most users can operate the software without reading the manual.",
+   "o": [
+    "intuition",
+    "intuitively",
+    "intuitive",
+    "intrusive"
+   ],
+   "a": 2,
+   "k": "소유격 its와 명사 interface 사이 형용사 자리이며, 설명서 없이 사용할 수 있다고 했으므로 '직관적인' intuitive가 정답이다. intuition은 명사, intuitively는 부사이고, intrusive(거슬리는)는 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "ergonomic",
+  "pos": "adj",
+  "m": [
+   "인체 공학적인"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "All staff will receive *ergonomic* chairs to help reduce back pain.",
+  "exKo": "모든 직원은 허리 통증을 줄이는 데 도움이 되는 인체 공학 의자를 받게 된다.",
+  "col": [
+   {
+    "e": "ergonomic design",
+    "k": "인체 공학적 디자인"
+   },
+   {
+    "e": "ergonomic keyboard",
+    "k": "인체 공학 키보드"
+   }
+  ],
+  "der": [
+   {
+    "w": "ergonomics",
+    "pos": "n",
+    "m": "인체 공학"
+   },
+   {
+    "w": "ergonomically",
+    "pos": "adv",
+    "m": "인체 공학적으로"
+   }
+  ],
+  "para": [
+   "comfortable",
+   "user-friendly"
+  ],
+  "ant": "",
+  "tip": "사무용 가구·기기 광고에서 피로·통증을 줄여 준다는 내용과 함께 나온다. 학문명 ergonomics(인체 공학)는 단수 취급하며 economic(경제의)과 철자를 혼동하지 않는다.",
+  "q": {
+   "s": "The keyboard's ------- design reduces strain on the wrists during long periods of typing.",
+   "o": [
+    "ergonomic",
+    "economic",
+    "energetic",
+    "egotistic"
+   ],
+   "a": 0,
+   "k": "장시간 타이핑할 때 손목의 부담을 줄여 주는 디자인은 '인체 공학적인' 디자인이므로 ergonomic이 정답이다. economic(경제의), energetic(활동적인), egotistic(이기적인)은 손목 부담 감소와 관련이 없다."
+  }
+ },
+ {
+  "w": "sleek",
+  "pos": "adj",
+  "m": [
+   "매끈한, 날렵한",
+   "세련된"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new phone has a *sleek* metal body and weighs only 150 grams.",
+  "exKo": "새 휴대전화는 매끈한 금속 본체에 무게가 150그램에 불과하다.",
+  "col": [
+   {
+    "e": "sleek design",
+    "k": "세련된 디자인"
+   },
+   {
+    "e": "sleek and stylish",
+    "k": "매끈하고 멋진"
+   }
+  ],
+  "der": [
+   {
+    "w": "sleekly",
+    "pos": "adv",
+    "m": "매끈하게"
+   }
+  ],
+  "para": [
+   "stylish",
+   "streamlined",
+   "elegant"
+  ],
+  "ant": "bulky",
+  "tip": "전자 제품·자동차 광고에서 slim, lightweight와 함께 세련된 외관을 묘사한다. Part 7에서 stylish, streamlined로 패러프레이징된다.",
+  "q": {
+   "s": "Customers praised the laptop's ------- design, which is thinner and lighter than that of previous models.",
+   "o": [
+    "sleepy",
+    "slack",
+    "sleek",
+    "sleeve"
+   ],
+   "a": 2,
+   "k": "이전 모델보다 얇고 가벼운 디자인을 칭찬한 것이므로 '매끈하고 날렵한' sleek가 정답이다. sleepy(졸린), slack(느슨한, 부진한)은 의미가 맞지 않고, sleeve(소매)는 명사다."
+  }
+ },
+ {
+  "w": "customizable",
+  "pos": "adj",
+  "m": [
+   "맞춤 설정이 가능한",
+   "사용자 지정 가능한"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The dashboard is fully *customizable*, so each user can choose which data to display.",
+  "exKo": "대시보드는 완전히 맞춤 설정이 가능해서 각 사용자가 표시할 데이터를 선택할 수 있다.",
+  "col": [
+   {
+    "e": "fully customizable",
+    "k": "완전한 맞춤 설정이 가능한"
+   },
+   {
+    "e": "customizable options",
+    "k": "맞춤 옵션"
+   }
+  ],
+  "der": [
+   {
+    "w": "customize",
+    "pos": "v",
+    "m": "맞춤 제작하다, 사용자 지정하다"
+   },
+   {
+    "w": "customization",
+    "pos": "n",
+    "m": "맞춤화"
+   }
+  ],
+  "para": [
+   "adjustable",
+   "personalized"
+  ],
+  "ant": "",
+  "tip": "custom(주문 제작의) + -ize + -able 구조로 '사용자에 맞게 바꿀 수 있는'을 뜻한다. 동사 customize, 명사 customization과 함께 기술·제품 지문에 나온다.",
+  "q": {
+   "s": "The software offers ------- templates that businesses can adapt to match their brand.",
+   "o": [
+    "customizable",
+    "comfortable",
+    "combustible",
+    "collectible"
+   ],
+   "a": 0,
+   "k": "기업이 브랜드에 맞게 고칠 수 있는 템플릿이므로 '맞춤 설정이 가능한' customizable이 정답이다. comfortable(편안한), combustible(불에 잘 타는), collectible(수집할 가치가 있는)은 템플릿을 꾸미기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "adaptable",
+  "pos": "adj",
+  "m": [
+   "적응력 있는",
+   "조정 가능한, 다용도로 쓸 수 있는"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We need *adaptable* employees who can handle frequently changing priorities.",
+  "exKo": "우리는 자주 바뀌는 우선순위에 대처할 수 있는 적응력 있는 직원이 필요하다.",
+  "col": [
+   {
+    "e": "adaptable to",
+    "k": "~에 적응할 수 있는"
+   },
+   {
+    "e": "highly adaptable",
+    "k": "적응력이 뛰어난"
+   }
+  ],
+  "der": [
+   {
+    "w": "adapt",
+    "pos": "v",
+    "m": "적응하다, 조정하다"
+   },
+   {
+    "w": "adaptation",
+    "pos": "n",
+    "m": "적응, 각색"
+   }
+  ],
+  "para": [
+   "flexible",
+   "versatile"
+  ],
+  "ant": "rigid",
+  "tip": "사람(적응력 있는)과 사물(여러 용도로 조정 가능한) 모두에 쓰이며 adaptable to(~에 맞출 수 있는)로 전치사 to와 쓴다. adopt(채택하다)와 철자를 혼동시키는 문제가 나온다.",
+  "q": {
+   "s": "The modular furniture is highly ------- and can be rearranged to suit different office layouts.",
+   "o": [
+    "adoptable",
+    "adaptation",
+    "adaptable",
+    "adapter"
+   ],
+   "a": 2,
+   "k": "다양한 사무실 배치에 맞게 재배열할 수 있다고 했으므로 '조정 가능한' adaptable이 정답이다. adoptable(입양·채택할 수 있는)은 의미가 맞지 않고, adaptation과 adapter는 명사라 highly의 수식을 받는 보어가 될 수 없다."
+  }
+ },
+ {
+  "w": "scalable",
+  "pos": "adj",
+  "m": [
+   "확장 가능한, 규모 조정이 가능한"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "We chose a *scalable* cloud service that can grow along with our business.",
+  "exKo": "우리는 사업과 함께 확장할 수 있는 클라우드 서비스를 선택했다.",
+  "col": [
+   {
+    "e": "scalable solution",
+    "k": "확장 가능한 솔루션"
+   },
+   {
+    "e": "highly scalable",
+    "k": "확장성이 뛰어난"
+   }
+  ],
+  "der": [
+   {
+    "w": "scale",
+    "pos": "v",
+    "m": "규모를 조정하다"
+   },
+   {
+    "w": "scalability",
+    "pos": "n",
+    "m": "확장성"
+   }
+  ],
+  "para": [
+   "expandable",
+   "flexible"
+  ],
+  "ant": "",
+  "tip": "IT·스타트업 지문에서 사업 규모가 커져도 대응할 수 있다는 뜻으로 쓰인다. 명사 scalability(확장성)와 scale up(규모를 확대하다)도 함께 알아 둔다.",
+  "q": {
+   "s": "Investors prefer business models that are -------, meaning they can expand without a large increase in costs.",
+   "o": [
+    "scaled",
+    "scaly",
+    "scenic",
+    "scalable"
+   ],
+   "a": 3,
+   "k": "비용을 크게 늘리지 않고 확장할 수 있다는 설명이 이어지므로 '확장 가능한' scalable이 정답이다. scaled(축척된, 조정된)는 가능성을 나타내지 않고, scaly(비늘이 있는), scenic(경치가 좋은)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "multipurpose",
+  "pos": "adj",
+  "m": [
+   "다용도의, 다목적의"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The community center has a *multipurpose* room for meetings, classes, and parties.",
+  "exKo": "그 주민 센터에는 회의, 수업, 파티를 위한 다목적실이 있다.",
+  "col": [
+   {
+    "e": "multipurpose room",
+    "k": "다목적실"
+   },
+   {
+    "e": "multipurpose tool",
+    "k": "다용도 도구"
+   }
+  ],
+  "der": [
+   {
+    "w": "purpose",
+    "pos": "n",
+    "m": "목적"
+   }
+  ],
+  "para": [
+   "versatile",
+   "all-purpose"
+  ],
+  "ant": "",
+  "tip": "시설·제품 안내에서 '여러 용도로 쓸 수 있는'을 뜻하며 Part 7에서 versatile, all-purpose로 패러프레이징된다. multi-purpose로 쓰기도 한다.",
+  "q": {
+   "s": "This ------- cleaner can be used on glass, wood, and stainless steel surfaces.",
+   "o": [
+    "multinational",
+    "multilingual",
+    "multistory",
+    "multipurpose"
+   ],
+   "a": 3,
+   "k": "유리, 목재, 스테인리스 등 여러 표면에 쓸 수 있는 세제이므로 '다용도의' multipurpose가 정답이다. multinational(다국적의), multilingual(여러 언어를 하는), multistory(여러 층의)는 세제를 꾸미기에 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "innovator",
+  "pos": "n",
+  "m": [
+   "혁신가, 혁신 기업"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ms. Ortiz is widely regarded as an *innovator* in the field of solar energy.",
+  "exKo": "Ortiz 씨는 태양 에너지 분야의 혁신가로 널리 인정받는다.",
+  "col": [
+   {
+    "e": "an innovator in",
+    "k": "~ 분야의 혁신가"
+   },
+   {
+    "e": "leading innovator",
+    "k": "선도적 혁신 기업"
+   }
+  ],
+  "der": [
+   {
+    "w": "innovate",
+    "pos": "v",
+    "m": "혁신하다"
+   },
+   {
+    "w": "innovation",
+    "pos": "n",
+    "m": "혁신"
+   },
+   {
+    "w": "innovative",
+    "pos": "adj",
+    "m": "혁신적인"
+   }
+  ],
+  "para": [
+   "pioneer",
+   "trailblazer"
+  ],
+  "ant": "",
+  "tip": "사람뿐 아니라 기업도 innovator로 표현한다. 관사 a/an과 형용사 뒤 명사 자리에서 사람명사 innovator와 형용사 innovative를 구분하는 문제가 나온다.",
+  "q": {
+   "s": "As a leading ------- in medical technology, Zentrix has developed over 50 new devices.",
+   "o": [
+    "innovative",
+    "innovate",
+    "innovatively",
+    "innovator"
+   ],
+   "a": 3,
+   "k": "관사 a와 형용사 leading 뒤 명사 자리이며 Zentrix라는 회사와 동격이므로 '혁신 기업'인 innovator가 정답이다. innovative는 형용사, innovate는 동사, innovatively는 부사다."
+  }
+ },
+ {
+  "w": "visionary",
+  "pos": "adj",
+  "m": [
+   "선견지명이 있는, 미래를 내다보는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Under its *visionary* founder, the company grew from a garage startup into a global brand.",
+  "exKo": "선견지명이 있는 창업자의 지휘 아래 그 회사는 차고 창업에서 세계적인 브랜드로 성장했다.",
+  "col": [
+   {
+    "e": "visionary leader",
+    "k": "선견지명이 있는 지도자"
+   },
+   {
+    "e": "visionary idea",
+    "k": "미래를 내다본 아이디어"
+   }
+  ],
+  "der": [
+   {
+    "w": "vision",
+    "pos": "n",
+    "m": "비전, 시야"
+   },
+   {
+    "w": "visionary",
+    "pos": "n",
+    "m": "선견지명이 있는 사람"
+   }
+  ],
+  "para": [
+   "forward-thinking",
+   "innovative"
+  ],
+  "ant": "shortsighted",
+  "tip": "형용사(선견지명이 있는)와 명사(비전을 가진 사람) 모두로 쓰인다. 인물 소개 기사에서 forward-thinking으로 패러프레이징된다.",
+  "q": {
+   "s": "The CEO was praised for her ------- leadership, which anticipated the shift to online shopping years in advance.",
+   "o": [
+    "visual",
+    "visitation",
+    "visionary",
+    "viscous"
+   ],
+   "a": 2,
+   "k": "온라인 쇼핑으로의 변화를 수년 앞서 예측한 리더십이므로 '선견지명이 있는' visionary가 정답이다. visual(시각의), viscous(끈적끈적한)는 의미가 맞지 않고, visitation(방문)은 명사다."
+  }
+ },
+ {
+  "w": "disruptive",
+  "pos": "adj",
+  "m": [
+   "(업계의) 판도를 바꾸는, 파괴적인",
+   "지장을 주는, 방해가 되는"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Ride-sharing apps proved to be a *disruptive* force in the taxi industry.",
+  "exKo": "차량 공유 앱은 택시 업계의 판도를 바꾸는 세력임이 드러났다.",
+  "col": [
+   {
+    "e": "disruptive technology",
+    "k": "파괴적 혁신 기술"
+   },
+   {
+    "e": "disruptive to",
+    "k": "~에 지장을 주는"
+   }
+  ],
+  "der": [
+   {
+    "w": "disrupt",
+    "pos": "v",
+    "m": "방해하다, 지장을 주다"
+   },
+   {
+    "w": "disruption",
+    "pos": "n",
+    "m": "혼란, 지장"
+   }
+  ],
+  "para": [
+   "innovative",
+   "disturbing"
+  ],
+  "ant": "",
+  "tip": "기술 기사에서는 '업계 판도를 바꾸는', 사내 공지에서는 '업무에 지장을 주는'(disruptive to employees)이라는 뜻으로 쓰인다. 명사 disruption과 품사 문제로 출제된다.",
+  "q": {
+   "s": "Construction noise can be highly ------- to employees working on the floors below.",
+   "o": [
+    "disrupt",
+    "disruptive",
+    "disruption",
+    "disruptively"
+   ],
+   "a": 1,
+   "k": "be동사 be와 부사 highly 뒤 보어 자리이므로 형용사 disruptive가 정답이다. disrupt는 동사, disruption은 명사, disruptively는 부사다."
+  }
+ },
+ {
+  "w": "game changer",
+  "pos": "phr",
+  "m": [
+   "판도를 바꾸는 것, 획기적인 것"
+  ],
+  "tier": 2,
+  "parts": [
+   3,
+   4,
+   7
+  ],
+  "ex": "Industry experts are calling the new battery a real *game changer* for electric cars.",
+  "exKo": "업계 전문가들은 그 새 배터리를 전기차의 판도를 바꿀 진정한 혁신이라고 부른다.",
+  "col": [
+   {
+    "e": "a real game changer",
+    "k": "진정한 판도 변화 요인"
+   },
+   {
+    "e": "a game changer for",
+    "k": "~에 획기적인 것"
+   }
+  ],
+  "der": [],
+  "para": [
+   "breakthrough",
+   "revolution"
+  ],
+  "ant": "",
+  "tip": "구어적 표현으로 LC 대화나 기사에서 신제품·기술의 획기성을 강조할 때 쓴다. Part 7에서 breakthrough, revolutionary로 패러프레이징된다.",
+  "q": {
+   "s": "The new scheduling app has been a ------- for our small clinic, cutting patient wait times in half.",
+   "o": [
+    "game changer",
+    "game show",
+    "ball game",
+    "board game"
+   ],
+   "a": 0,
+   "k": "환자 대기 시간을 절반으로 줄여 준 앱은 병원에 '획기적인 변화를 가져온 것'이므로 game changer가 정답이다. game show(게임 쇼), ball game(구기 경기), board game(보드게임)은 의미가 맞지 않는다."
+  }
+ },
+ {
+  "w": "conventional",
+  "pos": "adj",
+  "m": [
+   "기존의, 종래의",
+   "관례적인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "LED bulbs use far less energy than *conventional* light bulbs.",
+  "exKo": "LED 전구는 기존 전구보다 에너지를 훨씬 적게 쓴다.",
+  "col": [
+   {
+    "e": "conventional methods",
+    "k": "기존 방식"
+   },
+   {
+    "e": "conventional wisdom",
+    "k": "통념"
+   }
+  ],
+  "der": [
+   {
+    "w": "convention",
+    "pos": "n",
+    "m": "관례, 대회"
+   },
+   {
+    "w": "conventionally",
+    "pos": "adv",
+    "m": "관례적으로"
+   }
+  ],
+  "para": [
+   "traditional",
+   "standard"
+  ],
+  "ant": "unconventional",
+  "tip": "신제품과 비교되는 '기존의 일반적인' 제품을 나타내며 traditional로 패러프레이징된다. 명사 convention은 '관례' 외에 '대회, 컨벤션'이라는 뜻이 있다.",
+  "q": {
+   "s": "Unlike ------- ovens, the new model cooks food using infrared light.",
+   "o": [
+    "convention",
+    "conventionally",
+    "convent",
+    "conventional"
+   ],
+   "a": 3,
+   "k": "명사 ovens를 꾸미는 형용사 자리이며 신모델과 대비되는 '기존의' 오븐이므로 conventional이 정답이다. convention(관례, 대회)과 convent(수녀원)는 명사, conventionally는 부사다."
+  }
+ },
+ {
+  "w": "existing",
+  "pos": "adj",
+  "m": [
+   "기존의, 현재 있는"
+  ],
+  "tier": 1,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The update will add new features without deleting any of your *existing* files.",
+  "exKo": "이번 업데이트는 기존 파일을 하나도 삭제하지 않고 새 기능을 추가한다.",
+  "col": [
+   {
+    "e": "existing customers",
+    "k": "기존 고객"
+   },
+   {
+    "e": "existing equipment",
+    "k": "기존 장비"
+   }
+  ],
+  "der": [
+   {
+    "w": "exist",
+    "pos": "v",
+    "m": "존재하다"
+   },
+   {
+    "w": "existence",
+    "pos": "n",
+    "m": "존재"
+   }
+  ],
+  "para": [
+   "current",
+   "present"
+  ],
+  "ant": "new",
+  "tip": "existing customers(기존 고객)처럼 명사 앞에 쓰여 '현재 있는'을 뜻한다. 동사 exist는 자동사라 수동태로 쓰지 않으며, 명사 앞 형용사 자리를 묻는 품사 문제가 나온다.",
+  "q": {
+   "s": "The new software is fully compatible with our ------- equipment, so no additional purchases are needed.",
+   "o": [
+    "exist",
+    "existence",
+    "exists",
+    "existing"
+   ],
+   "a": 3,
+   "k": "소유격 our와 명사 equipment 사이 형용사 자리이므로 existing이 정답이다. exist와 exists는 동사, existence는 명사다."
+  }
+ },
+ {
+  "w": "iteration",
+  "pos": "n",
+  "m": [
+   "(개발 과정의) 버전, 반복 단계",
+   "반복"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The latest *iteration* of the app includes a dark mode and faster loading times.",
+  "exKo": "앱의 최신 버전에는 다크 모드와 더 빠른 로딩 속도가 포함되어 있다.",
+  "col": [
+   {
+    "e": "the latest iteration",
+    "k": "최신 버전"
+   },
+   {
+    "e": "each iteration",
+    "k": "각 반복 단계"
+   }
+  ],
+  "der": [
+   {
+    "w": "iterate",
+    "pos": "v",
+    "m": "반복하다"
+   },
+   {
+    "w": "iterative",
+    "pos": "adj",
+    "m": "반복적인"
+   }
+  ],
+  "para": [
+   "version",
+   "update"
+  ],
+  "ant": "",
+  "tip": "IT·제품 개발 지문에서 '수정을 거듭해 나온 버전'의 뜻으로 version과 바꿔 쓰인다. irritation(짜증), imitation(모방)과 철자가 비슷해 어휘 문제로 나온다.",
+  "q": {
+   "s": "Each ------- of the prototype was tested by a small group of users before further changes were made.",
+   "o": [
+    "irritation",
+    "imitation",
+    "iteration",
+    "intonation"
+   ],
+   "a": 2,
+   "k": "추가 수정 전에 사용자 그룹이 시험한 것은 시제품의 각 '버전'이므로 iteration이 정답이다. irritation(짜증), imitation(모조품), intonation(억양)은 개발 과정의 단계를 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "tweak",
+  "pos": "v",
+  "m": [
+   "(약간) 수정하다, 미세 조정하다"
+  ],
+  "tier": 3,
+  "parts": [
+   2,
+   3,
+   7
+  ],
+  "ex": "We just need to *tweak* the color scheme before the website goes live.",
+  "exKo": "웹사이트를 공개하기 전에 색상 구성만 살짝 손보면 된다.",
+  "col": [
+   {
+    "e": "tweak the design",
+    "k": "디자인을 살짝 수정하다"
+   },
+   {
+    "e": "make a few tweaks",
+    "k": "몇 군데 손보다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "adjust",
+   "modify",
+   "fine-tune"
+  ],
+  "ant": "",
+  "tip": "LC 대화에서 We need to tweak a few things.처럼 '조금 손보다'라는 뜻으로 자주 쓰이며 명사로도 make a few tweaks가 가능하다. Part 7에서 adjust, modify로 패러프레이징된다.",
+  "q": {
+   "s": "The chef ------- the recipe slightly after several customers said the sauce was too spicy.",
+   "o": [
+    "tweeted",
+    "tweaked",
+    "tackled",
+    "traced"
+   ],
+   "a": 1,
+   "k": "소스가 너무 맵다는 의견을 듣고 조리법을 '살짝 수정했다'는 의미이므로 tweaked가 정답이다. tweeted(트윗했다), tackled(씨름했다, 다뤘다), traced(추적했다)는 slightly와 함께 조리법 조정의 의미를 만들지 못한다."
+  }
+ },
+ {
+  "w": "fine-tune",
+  "pos": "v",
+  "m": [
+   "미세 조정하다",
+   "(세부를) 다듬다"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "Engineers spent a week *fine-tuning* the robot's movements before the demonstration.",
+  "exKo": "엔지니어들은 시연 전에 로봇의 동작을 미세 조정하는 데 일주일을 보냈다.",
+  "col": [
+   {
+    "e": "fine-tune a plan",
+    "k": "계획을 다듬다"
+   },
+   {
+    "e": "fine-tune the settings",
+    "k": "설정을 미세 조정하다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "refine",
+   "adjust",
+   "tweak"
+  ],
+  "ant": "",
+  "tip": "출시·발표 직전에 세부를 다듬는 상황에서 자주 나오며 Part 7에서 refine, adjust로 패러프레이징된다. 하이픈을 넣은 동사형 fine-tune에 주의한다.",
+  "q": {
+   "s": "Before the official launch, the team will ------- the software based on feedback from beta testers.",
+   "o": [
+    "fine print",
+    "fine arts",
+    "fine-tune",
+    "finest"
+   ],
+   "a": 2,
+   "k": "조동사 will 뒤 동사원형 자리이며 베타 테스터 의견을 바탕으로 소프트웨어를 '다듬는다'는 의미이므로 fine-tune이 정답이다. fine print(작은 글씨의 세부 조항)와 fine arts(미술)는 명사, finest는 최상급 형용사다."
+  }
+ },
+ {
+  "w": "debug",
+  "pos": "v",
+  "m": [
+   "(프로그램의) 오류를 찾아 고치다, 디버그하다"
+  ],
+  "tier": 3,
+  "parts": [
+   7
+  ],
+  "ex": "Our developers worked overnight to *debug* the payment system before launch.",
+  "exKo": "우리 개발자들은 출시 전에 결제 시스템의 오류를 잡기 위해 밤새 일했다.",
+  "col": [
+   {
+    "e": "debug the code",
+    "k": "코드의 오류를 수정하다"
+   },
+   {
+    "e": "debug a program",
+    "k": "프로그램을 디버그하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "bug",
+    "pos": "n",
+    "m": "(프로그램의) 오류"
+   }
+  ],
+  "para": [
+   "fix",
+   "troubleshoot"
+  ],
+  "ant": "",
+  "tip": "소프트웨어의 bug(오류)를 제거한다는 뜻으로 IT 업무 이메일에 나온다. Part 7에서 fix errors, troubleshoot로 패러프레이징된다.",
+  "q": {
+   "s": "The programmers need two more days to ------- the code before the update can be released.",
+   "o": [
+    "debug",
+    "debut",
+    "debit",
+    "debunk"
+   ],
+   "a": 0,
+   "k": "업데이트 출시 전에 코드의 '오류를 고치는' 데 이틀이 더 필요하다는 의미이므로 debug가 정답이다. debut(데뷔하다), debit(차감하다), debunk(틀렸음을 밝히다)는 code와 어울려 의미가 통하지 않는다."
+  }
+ },
+ {
+  "w": "field test",
+  "pos": "phr",
+  "m": [
+   "현장 시험, 실지 테스트"
+  ],
+  "tier": 3,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The new tractors will undergo a *field test* on three farms this summer.",
+  "exKo": "새 트랙터들은 올여름 농장 세 곳에서 현장 시험을 거칠 예정이다.",
+  "col": [
+   {
+    "e": "conduct a field test",
+    "k": "현장 시험을 실시하다"
+   },
+   {
+    "e": "undergo a field test",
+    "k": "현장 시험을 받다"
+   }
+  ],
+  "der": [],
+  "para": [
+   "trial",
+   "real-world test"
+  ],
+  "ant": "",
+  "tip": "실험실이 아닌 실제 사용 환경에서 제품을 시험하는 것으로, 동사 field-test(현장 시험을 하다)로도 쓰인다. 신제품 출시 전 단계로 Part 7에 나온다.",
+  "q": {
+   "s": "Engineers will conduct a ------- under real-world conditions before the drone goes on sale.",
+   "o": [
+    "field trip",
+    "playing field",
+    "field test",
+    "test score"
+   ],
+   "a": 2,
+   "k": "판매 전에 실제 환경에서 실시하는 것은 '현장 시험'이므로 field test가 정답이다. field trip(현장 학습), playing field(경기장, 경쟁의 장), test score(시험 점수)는 conduct와 under real-world conditions에 어울리지 않는다."
+  }
+ },
+ {
+  "w": "trial run",
+  "pos": "phr",
+  "m": [
+   "시운전, 시범 운영",
+   "예행 연습"
+  ],
+  "tier": 3,
+  "parts": [
+   2,
+   3,
+   7
+  ],
+  "ex": "Let's do a *trial run* of the presentation before the client arrives tomorrow.",
+  "exKo": "내일 고객이 오기 전에 발표 예행 연습을 해 보자.",
+  "col": [
+   {
+    "e": "do a trial run",
+    "k": "시범 운영을 하다, 예행 연습을 하다"
+   },
+   {
+    "e": "a trial run of",
+    "k": "~의 시운전"
+   }
+  ],
+  "der": [],
+  "para": [
+   "test run",
+   "dry run",
+   "rehearsal"
+  ],
+  "ant": "",
+  "tip": "새 시스템·절차를 정식 도입 전에 시험해 보거나 발표를 미리 연습하는 것을 뜻한다. LC에서 dry run, rehearsal로 패러프레이징된다.",
+  "q": {
+   "s": "The new checkout system will be given a two-week ------- at one store before being introduced at all locations.",
+   "o": [
+    "long run",
+    "trial run",
+    "rerun",
+    "runway"
+   ],
+   "a": 1,
+   "k": "전 매장 도입 전에 한 매장에서 2주간 실시하는 것은 '시범 운영'이므로 trial run이 정답이다. long run(장기), rerun(재방송), runway(활주로)는 시스템 도입 전의 시험을 뜻하지 않는다."
+  }
+ },
+ {
+  "w": "product line",
+  "pos": "phr",
+  "m": [
+   "제품군, 제품 라인"
+  ],
+  "tier": 2,
+  "parts": [
+   5,
+   7
+  ],
+  "ex": "The company is expanding its *product line* to include organic baby food.",
+  "exKo": "그 회사는 유기농 이유식을 포함하도록 제품군을 확대하고 있다.",
+  "col": [
+   {
+    "e": "expand a product line",
+    "k": "제품군을 확대하다"
+   },
+   {
+    "e": "launch a new product line",
+    "k": "새 제품군을 출시하다"
+   }
+  ],
+  "der": [
+   {
+    "w": "product",
+    "pos": "n",
+    "m": "제품"
+   }
+  ],
+  "para": [
+   "range",
+   "lineup",
+   "collection"
+  ],
+  "ant": "",
+  "tip": "한 회사가 판매하는 관련 제품들의 묶음으로 range, lineup으로 패러프레이징된다. 생산 설비인 production line(생산 라인)과 혼동하지 않는다.",
+  "q": {
+   "s": "Hartley Cosmetics will discontinue its oldest ------- and focus on skincare instead.",
+   "o": [
+    "bottom line",
+    "deadline",
+    "hotline",
+    "product line"
+   ],
+   "a": 3,
+   "k": "가장 오래된 '제품군'을 단종하고 스킨케어에 집중한다는 의미이므로 product line이 정답이다. bottom line(최종 결산, 핵심), deadline(마감 기한), hotline(직통 전화)은 단종할 수 있는 대상이 아니다."
+  }
+ }
+]
