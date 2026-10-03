@@ -150,8 +150,12 @@ test("실제 데이터: 계획한 모든 단어 · 문제 정답 위치 · 예�
   const src = fs.readFileSync(path, "utf8");
   const data = JSON.parse(src.slice(src.indexOf("=") + 1).trim().replace(/;$/, ""));
   const plan = JSON.parse(fs.readFileSync(new URL("../toeic/data/plan.json", import.meta.url), "utf8"));
-  const total = plan.reduce((n: number, d: { words: string[] }) => n + d.words.length, 0);
-  assert.equal(data.words.length, total, "plan.json 의 모든 표제어에 데이터가 있다");
+  // 데이터가 들어온 Day 는 계획한 40단어가 빠짐없이 있어야 한다 (계획이 작성보다 앞설 수는 있다)
+  const released = data.days.filter((d: { count: number }) => d.count > 0);
+  for (const d of released) assert.equal(d.count, plan[d.day - 1].words.length, `DAY ${d.day} 단어 수`);
+  const total = released.reduce((n: number, d: { count: number }) => n + d.count, 0);
+  assert.ok(total >= 1200);
+  assert.equal(data.words.length, total);
   assert.equal(new Set(data.words.map((w: { id: string }) => w.id)).size, total);
   assert.equal(new Set(data.words.map((w: { w: string }) => w.w.toLowerCase())).size, total, "표제어 중복 없음");
   for (const w of data.words) {

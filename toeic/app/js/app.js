@@ -10,8 +10,10 @@
 
   const WORDS = D.words;
   const BY_ID = new Map(WORDS.map((w) => [w.id, w]));
-  const DAYS = D.days;
-  const NDAYS = DAYS.length;
+  // 데이터가 들어온 Day 만 보여 준다 (계획이 작성보다 앞서 있어도 빈 Day 가 나오지 않게)
+  const DAYS = D.days.filter((d) => d.count > 0);
+  const DAY_BY = new Map(DAYS.map((d) => [d.day, d]));
+  const NDAYS = DAYS.length ? DAYS[DAYS.length - 1].day : 0;
   const BASIC_DAYS = Math.min(30, NDAYS); // Day 1~30 기본 코스, 31~ 심화 코스
   const NWORDS = WORDS.length.toLocaleString();
   // 30일 단위 코스: 같은 30개 주제를 기본 → 심화 → 실전으로 세 번 넓혀 간다
@@ -595,7 +597,7 @@
     const hour = new Date().getHours();
     const hi = hour < 6 ? "늦은 밤에도 열공 중이시네요" : hour < 12 ? "좋은 아침이에요" : hour < 18 ? "오늘도 한 걸음 더" : "오늘 하루도 수고했어요";
     const heroTitle = plan.remaining === 0 ? "범위 1회독 완료! 복습으로 굳혀요" : newDone ? "오늘 새 단어 완료!" : `오늘의 단어 ${plan.newWords.length}개`;
-    const heroSub = nextWord ? `DAY ${pad(nextWord.d)} · ${esc(DAYS[nextWord.d - 1].title)}` : `${hi}`;
+    const heroSub = nextWord ? `DAY ${pad(nextWord.d)} · ${esc(DAY_BY.get(nextWord.d).title)}` : `${hi}`;
     const body = `
       <div class="top"><h1>${hi}</h1><a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a></div>
       <section class="hero">
@@ -697,7 +699,7 @@
     };
     const section = (title, desc, list) => `<div class="section"><div class="section-h"><h2>${title}</h2><span class="small muted">${desc}</span></div><div class="grid2 grid-days">${list.map(card).join("")}</div></div>`;
     const cards = NDAYS > BASIC_DAYS
-      ? COURSES.filter((c) => c.from <= NDAYS).map((c) => section(c.name, `DAY ${pad(c.from)}~${pad(Math.min(c.to, NDAYS))} · ${c.desc}`, DAYS.slice(c.from - 1, c.to))).join("")
+      ? COURSES.filter((c) => c.from <= NDAYS).map((c) => section(c.name, `DAY ${pad(c.from)}~${pad(Math.min(c.to, NDAYS))} · ${c.desc}`, DAYS.filter((d) => d.day >= c.from && d.day <= c.to))).join("")
       : `<div class="grid2 grid-days">${DAYS.map(card).join("")}</div>`;
     const body = `${topBar("단어장", { sub: `목표 ${target()}점 · ${C.scoreBand(target()).label} · ${P.length.toLocaleString()}개`, right: `<a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a>` })}
       <div class="chips scroll" style="margin-bottom:14px">
@@ -714,7 +716,7 @@
   // ═════════════ Day 상세 ═════════════
   function vDay(r) {
     const d = +r.arg;
-    const day = DAYS[d - 1];
+    const day = DAY_BY.get(d);
     if (!day) return go("#/days");
     if (!canAccessDay(d)) return go("#/premium");
     const all = dayWords(d, true);
@@ -744,7 +746,7 @@
     ];
     const items = list.map((w) => wordItem(w)).join("") || `<div class="empty">${ico("search")}<b>해당하는 단어가 없어요</b>필터를 바꿔 보세요</div>`;
     const hiddenCount = all.length - mine.length;
-    const body = `${topBar(`DAY ${pad(d)}`, { back: true, sub: esc(day.title) + " · " + esc(day.titleEn), right: `${d > 1 ? `<a class="icon-btn" href="#/day/${d - 1}" aria-label="이전 Day">${ico("left")}</a>` : ""}${d < NDAYS ? `<a class="icon-btn" href="#/day/${d + 1}" aria-label="다음 Day">${ico("right")}</a>` : ""}` })}
+    const body = `${topBar(`DAY ${pad(d)}`, { back: true, sub: esc(day.title) + " · " + esc(day.titleEn), right: `${DAY_BY.has(d - 1) ? `<a class="icon-btn" href="#/day/${d - 1}" aria-label="이전 Day">${ico("left")}</a>` : ""}${DAY_BY.has(d + 1) ? `<a class="icon-btn" href="#/day/${d + 1}" aria-label="다음 Day">${ico("right")}</a>` : ""}` })}
       <div class="card"><div class="row"><div class="spacer"><div class="stat-num">${sum.mastered}<span class="muted" style="font-size:16px"> / ${mine.length}</span></div><div class="stat-lbl">암기 완료 · 학습 중 ${sum.learning}</div></div>
         ${test ? `<div style="text-align:right"><div class="stat-num" style="color:${test.best >= 80 ? "var(--ok)" : "var(--accent)"}">${test.best}<span style="font-size:16px">점</span></div><div class="stat-lbl">테스트 최고점</div></div>` : ""}</div>
         <div class="stack-bar" style="margin-top:12px"><i style="width:${mine.length ? (sum.mastered / mine.length) * 100 : 0}%;background:var(--ok)"></i><i style="width:${mine.length ? (sum.learning / mine.length) * 100 : 0}%;background:var(--accent)"></i></div></div>
