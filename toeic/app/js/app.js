@@ -223,6 +223,26 @@
   }
 
   // ═════════════ 소리 ═════════════
+  // 음성 묶음 모드: window.VOCA_AUDIO_PACKS = { index: { "w/01-01.mp3": [묶음파일, 시작, 길이] } }
+  // (파일 수 제한이 있는 웹 미리보기용. 앱·일반 배포는 audio/ 아래 개별 mp3 를 그대로 쓴다)
+  const PACKS = window.VOCA_AUDIO_PACKS || null;
+  const packBufs = new Map();
+  const packUrls = new Map();
+  async function packedUrl(rel) {
+    if (packUrls.has(rel)) return packUrls.get(rel);
+    const e = PACKS.index[rel];
+    if (!e) return null;
+    let buf = packBufs.get(e[0]);
+    if (!buf) {
+      buf = fetch(`audio/${e[0]}`).then((r) => { if (!r.ok) throw new Error("pack"); return r.arrayBuffer(); });
+      packBufs.set(e[0], buf);
+      buf.catch(() => packBufs.delete(e[0]));
+    }
+    const ab = await buf;
+    const url = URL.createObjectURL(new Blob([ab.slice(e[1], e[1] + e[2])], { type: "audio/mpeg" }));
+    packUrls.set(rel, url);
+    return url;
+  }
   const Sound = (function () {
     const el = new Audio();
     el.preload = "auto";
@@ -273,10 +293,18 @@
         setTimeout(() => fin(false), 12000 + text.length * 120);
       });
     }
-    // src(앱 안 mp3)를 재생하고 끝나면 resolve. 파일이 없거나 실패하면 기기 음성(TTS)으로 대신 읽는다
-    function play(src, text, opt) {
+    // rel(audio/ 아래 mp3 경로)을 재생하고 끝나면 resolve. 파일이 없거나 실패하면 기기 음성(TTS)으로 대신 읽는다
+    async function play(rel, text, opt) {
       stop();
       const my = token;
+      let src = null;
+      if (rel) {
+        if (!PACKS) src = `audio/${rel}`;
+        else {
+          try { src = await packedUrl(rel); } catch (e) { src = null; }
+          if (my !== token) return false;
+        }
+      }
       const btn = opt && opt.btn;
       if (btn) btn.classList.add("playing");
       const end = (v) => { if (btn) btn.classList.remove("playing"); return v; };
@@ -301,8 +329,8 @@
         if (p && p.catch) p.catch((err) => fin(err && err.name === "NotAllowedError" ? "blocked" : false));
       });
     }
-    function word(w, btn) { return play(w.au ? `audio/w/${w.id}.mp3` : null, w.w, { btn }); }
-    function example(w, btn) { return play(w.exAu ? `audio/s/${w.id}.mp3` : null, C.plainEx(w.ex), { btn }); }
+    function word(w, btn) { return play(w.au ? `w/${w.id}.mp3` : null, w.w, { btn }); }
+    function example(w, btn) { return play(w.exAu ? `s/${w.id}.mp3` : null, C.plainEx(w.ex), { btn }); }
     function ko(text) { const my = token; return hasKo() ? tts(text, "ko-KR", my) : Promise.resolve(false); }
     function hasKo() { return NT() ? nativeKo : !!koVoice; }
     function current() { return token; }
@@ -1368,7 +1396,7 @@
     shell("part1", body);
     $app.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => { ui.p1g = b.dataset.g; vPart1(); }));
     const byId = new Map(D.part1.map((p) => [p.id, p]));
-    $app.querySelectorAll("[data-p1]").forEach((b) => b.addEventListener("click", () => { seqId += 1; const p = byId.get(b.dataset.p1); Sound.play(p.au ? `audio/${p.au}` : null, C.plainEx(p.e), { btn: b }); }));
+    $app.querySelectorAll("[data-p1]").forEach((b) => b.addEventListener("click", () => { seqId += 1; const p = byId.get(b.dataset.p1); Sound.play(p.au || null, C.plainEx(p.e), { btn: b }); }));
     $app.querySelector("[data-p1play]").addEventListener("click", async () => {
       const btns = Array.from($app.querySelectorAll("[data-p1]"));
       const my = ++seqId;
@@ -1376,7 +1404,7 @@
         if (my !== seqId || !document.body.contains(b)) break;
         b.scrollIntoView({ block: "center", behavior: "smooth" });
         const p = byId.get(b.dataset.p1);
-        await Sound.play(p.au ? `audio/${p.au}` : null, C.plainEx(p.e), { btn: b });
+        await Sound.play(p.au || null, C.plainEx(p.e), { btn: b });
         if (my !== seqId) break;
         await wait(900);
       }

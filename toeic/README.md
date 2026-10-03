@@ -36,6 +36,7 @@ toeic/
     build_ipa.py        발음기호 생성
     build_audio.py      음성 생성(기존 음성 재사용 + Kokoro 합성)
     build_data.mjs      app/js/data.js 생성
+    build_audio_packs.py (선택) 파일 수 제한이 있는 웹 호스팅용 음성 묶음 31개 + js/audio-packs.js
 ```
 
 ## 실행 (PC)
