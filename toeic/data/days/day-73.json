@@ -219,8 +219,8 @@
    5,
    7
   ],
-  "ex": "The two airlines formed an *alliance* to offer passengers more connecting flights.",
-  "exKo": "두 항공사는 승객에게 더 많은 연결편을 제공하기 위해 제휴를 맺었다.",
+  "ex": "Two regional banks formed an *alliance* to share their ATM networks and reduce costs.",
+  "exKo": "두 지역 은행은 ATM 망을 공유하고 비용을 줄이기 위해 제휴를 맺었다.",
   "col": [
    {
     "e": "form an alliance",
@@ -329,8 +329,8 @@
    5,
    7
   ],
-  "ex": "The *consolidation* of three regional offices into one will reduce rental costs.",
-  "exKo": "지역 사무소 세 곳을 하나로 통합하면 임대 비용이 줄어들 것이다.",
+  "ex": "The *consolidation* of our three call centers is scheduled to be completed by June.",
+  "exKo": "우리 회사 콜센터 세 곳의 통합 작업은 6월까지 마무리될 예정이다.",
   "col": [
    {
     "e": "consolidation of",
@@ -466,7 +466,7 @@
   "ant": "",
   "tip": "동사 reorganize와 품사를 구분하는 문제가 나오며, Part 7에서는 restructuring으로 패러프레이징된다.",
   "q": {
-   "s": "Following the -------, the marketing and sales departments will report to the same vice president.",
+   "s": "Following the -------, all regional managers will report directly to the vice president of operations.",
    "o": [
     "reorganize",
     "reorganized",
@@ -489,8 +489,8 @@
    5,
    7
   ],
-  "ex": "The coffee chain plans to expand its *footprint* by opening 50 stores in Asia.",
-  "exKo": "그 커피 체인은 아시아에 매장 50곳을 열어 사업 영역을 넓힐 계획이다.",
+  "ex": "Opening 50 stores in Asia will greatly expand the coffee chain's global *footprint*.",
+  "exKo": "아시아에 매장 50곳을 열면 그 커피 체인의 세계적 입지가 크게 넓어질 것이다.",
   "col": [
    {
     "e": "expand one's footprint",
@@ -566,7 +566,7 @@
   "ant": "absence",
   "tip": "'establish/expand a presence in(~에서 입지를 구축/확대하다)'처럼 in과 함께 쓴다. 'in the presence of(~이 있는 자리에서)'처럼 '참석, 존재'의 뜻도 있다.",
   "q": {
-   "s": "The online retailer hopes to establish a ------- in the Latin American market by next year.",
+   "s": "The Canadian clothing brand hopes to establish a ------- in the Latin American market by next year.",
    "o": [
     "presence",
     "present",
@@ -730,8 +730,8 @@
    5,
    7
   ],
-  "ex": "Fast delivery has given the online grocer a clear *competitive advantage* over local stores.",
-  "exKo": "빠른 배송 덕분에 그 온라인 식료품점은 동네 상점들보다 확실한 경쟁 우위를 갖게 되었다.",
+  "ex": "Lower production costs have given the Vietnamese factory a *competitive advantage* over its European rivals.",
+  "exKo": "낮은 생산 비용 덕분에 그 베트남 공장은 유럽 경쟁 업체들보다 경쟁 우위를 갖게 되었다.",
   "col": [
    {
     "e": "gain a competitive advantage",
@@ -846,7 +846,7 @@
   "ant": "",
   "tip": "대출이나 투자 유치를 위해 은행, 투자자에게 내는 문서로 'write/draw up/submit a business plan'처럼 쓴다. 수익 구조를 뜻하는 business model과 구분하자.",
   "q": {
-   "s": "Before approving the loan, the bank asked Mr. Haddad to submit a five-year business -------.",
+   "s": "Investors asked Mr. Haddad to submit a five-year business ------- before agreeing to fund his company.",
    "o": [
     "plan",
     "planner",
@@ -854,7 +854,7 @@
     "planning"
    ],
    "a": 0,
-   "k": "대출 승인 전에 제출하는 문서는 '사업 계획서'이므로 plan이 정답이다. planner(계획자, 일정표)는 제출할 문서가 아니고, planned는 분사, planning은 불가산명사라 관사 a와 어울리지 않는다."
+   "k": "투자자들이 자금 지원에 앞서 요구하는 문서는 '사업 계획서'이므로 plan이 정답이다. planner(계획자, 일정표)는 제출할 문서가 아니고, planned는 분사, planning은 불가산명사라 관사 a와 어울리지 않는다."
   }
  },
  {
@@ -1066,8 +1066,8 @@
    5,
    7
   ],
-  "ex": "The company's *philanthropic* foundation awards scholarships to engineering students.",
-  "exKo": "그 회사의 자선 재단은 공학 전공 학생들에게 장학금을 수여한다.",
+  "ex": "The company's *philanthropic* foundation donates computers to schools in low-income areas.",
+  "exKo": "그 회사의 자선 재단은 저소득층 지역 학교에 컴퓨터를 기증한다.",
   "col": [
    {
     "e": "philanthropic foundation",
@@ -1504,7 +1504,7 @@
   "ant": "in the black",
   "tip": "반대말은 'in the black(흑자인)'이며, Part 7에서는 'losing money', 'operating at a loss'로 패러프레이징된다.",
   "q": {
-   "s": "After two years of losses, the restaurant is no longer in the ------- and finally made a profit this quarter.",
+   "s": "Thanks to a new menu and lower costs, the café is no longer in the ------- and made a profit this quarter.",
    "o": [
     "red",
     "black",
@@ -1512,7 +1512,7 @@
     "green"
    ],
    "a": 0,
-   "k": "적자에서 벗어나 마침내 이익을 냈다는 뜻이므로 '적자 상태인'을 뜻하는 in the red의 red가 정답이다. in the black은 '흑자인'이라 no longer와 함께 쓰면 문맥과 반대가 되고, white, green은 이런 뜻이 없다."
+   "k": "적자에서 벗어나 이번 분기에 이익을 냈다는 뜻이므로 '적자 상태인'을 뜻하는 in the red의 red가 정답이다. in the black은 '흑자인'이라 no longer와 함께 쓰면 문맥과 반대가 되고, white, green은 이런 뜻이 없다."
   }
  },
  {
@@ -1554,7 +1554,7 @@
   "ant": "thriving",
   "tip": "'struggling businesses'처럼 명사를 앞에서 꾸미는 형용사로 자주 쓰이며 Part 7에서 ailing, troubled로 패러프레이징된다. 동사 struggle은 'struggle to do(~하려고 애쓰다)'로 쓴다.",
   "q": {
-   "s": "The new manager was hired to revive the ------- store, which had lost money for several years.",
+   "s": "The new manager was hired to revive the ------- department store, whose sales had fallen for several years.",
    "o": [
     "struggle",
     "struggled",
@@ -1562,7 +1562,7 @@
     "struggles"
    ],
    "a": 2,
-   "k": "정관사 the와 명사 store 사이에서 '고전하는'이라는 뜻으로 명사를 꾸미는 struggling이 정답이다. struggle과 struggles는 명사·동사이고, struggle은 자동사라 과거분사 struggled는 명사를 꾸미지 않는다."
+   "k": "정관사 the와 명사 department store 사이에서 '고전하는'이라는 뜻으로 명사를 꾸미는 struggling이 정답이다. struggle과 struggles는 명사·동사이고, struggle은 자동사라 과거분사 struggled는 명사를 꾸미지 않는다."
   }
  },
  {
@@ -1715,7 +1715,7 @@
   "m": [
    "가족 소유의"
   ],
-  "tier": 2,
+  "tier": 1,
   "parts": [
    5,
    7
@@ -1847,7 +1847,7 @@
    "공동 창업자",
    "공동 설립자"
   ],
-  "tier": 2,
+  "tier": 1,
   "parts": [
    5,
    7

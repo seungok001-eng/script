@@ -1,7 +1,7 @@
 """음성 파일 만들기 (다시 돌려도 안전 — 이미 만든 파일은 건너뛴다).
 
-1) 단어 음성: 기존 앱(voca-yun)의 Gemini TTS 음성(Kore)이 있으면 그대로 복사해 재사용한다.
-   없으면 Kokoro-82M(Apache-2.0)로 af_heart(미국 여성) 목소리로 만든다.
+1) 단어 음성: Kokoro-82M(Apache-2.0)의 af_heart(미국 여성) 목소리로 만든다 — 앱 전체 음성을 한 모델로 통일.
+   (--reuse-gemini 를 주면 예전처럼 voca-yun 의 Gemini TTS 음성(Kore)이 있는 단어는 복사해 재사용한다)
 2) 예문·Part 1 문장 음성: Kokoro로 만든다. 토익처럼 여러 억양을 듣도록 미국·영국 남녀 목소리를 문장마다 고정 배정한다.
 
 파일 이름은 단어 id(예: w/01-05.mp3). audio-manifest.json 에 (파일 → 문장·목소리)를 기록해서
@@ -115,6 +115,7 @@ def main():
     ap.add_argument("--words", action="store_true")
     ap.add_argument("--sentences", action="store_true")
     ap.add_argument("--workers", type=int, default=3)
+    ap.add_argument("--reuse-gemini", action="store_true", help="voca-yun 의 기존 Gemini 단어 음성을 재사용")
     a = ap.parse_args()
     if not a.words and not a.sentences:
         a.words = a.sentences = True
@@ -122,7 +123,7 @@ def main():
     words, sents = load_entries()
     jobs = []
     if a.words:
-        idx = json.load(open(os.path.join(REF, "data", "word-audio-index.json"), encoding="utf-8"))
+        idx = json.load(open(os.path.join(REF, "data", "word-audio-index.json"), encoding="utf-8")) if a.reuse_gemini else {}
         reused = 0
         for wid, w in words:
             rel = f"w/{wid}.mp3"

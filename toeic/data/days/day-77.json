@@ -341,8 +341,8 @@
    2,
    3
   ],
-  "ex": "The current tenants will *move out* at the end of the month.",
-  "exKo": "현재 세입자들은 이달 말에 이사 나간다.",
+  "ex": "Mr. Lopez had to clean the carpets and repaint the walls before he *moved out*.",
+  "exKo": "Lopez 씨는 이사 나가기 전에 카펫을 청소하고 벽을 다시 칠해야 했다.",
   "col": [
    {
     "e": "move out of ~",
@@ -647,7 +647,7 @@
   "ant": "",
   "tip": "evict A from B(A를 B에서 쫓아내다) 구조와 명사 eviction을 쓴 eviction notice(퇴거 통지서)가 Part 7 임대 지문에 나온다.",
   "q": {
-   "s": "Under the new law, landlords must give tenants at least 60 days' notice before ------- them.",
+   "s": "Under the new law, landlords must give tenants at least 90 days' notice before ------- them.",
    "o": [
     "evicting",
     "evicted",
@@ -971,7 +971,7 @@
   "ant": "",
   "tip": "condo는 condominium의 줄임말로 세대별로 소유하는 공동 주택이다. 한국의 휴양 시설 '콘도'와 뜻이 다르다는 점에 유의한다.",
   "q": {
-   "s": "Each ------- in the new waterfront building comes with two bedrooms and a private storage unit.",
+   "s": "Ms. Abbott sold her suburban house and moved into a downtown ------- with a rooftop pool.",
    "o": [
     "condiment",
     "condo",
@@ -979,7 +979,7 @@
     "conductor"
    ],
    "a": 1,
-   "k": "새 해안가 건물 안에서 침실 두 개와 개인 창고가 딸린 것은 각 세대이므로 condo가 정답이다. condiment(양념), condolence(애도), conductor(지휘자, 차장)는 주거 공간이 아니다."
+   "k": "교외 주택을 팔고 옥상 수영장이 있는 시내의 주거 공간으로 이사한 것이므로 condo(분양 아파트)가 정답이다. condiment(양념), condolence(애도), conductor(지휘자, 차장)는 주거 공간이 아니다."
   }
  },
  {
@@ -1081,8 +1081,8 @@
   "parts": [
    7
   ],
-  "ex": "The old factory has been converted into *lofts* with high ceilings and large windows.",
-  "exKo": "오래된 공장이 높은 천장과 큰 창문을 갖춘 로프트형 주거 공간으로 개조되었다.",
+  "ex": "Ms. Weber rents a *loft* downtown with exposed brick walls and an open layout.",
+  "exKo": "Weber 씨는 벽돌이 드러난 벽과 개방형 구조를 갖춘 시내의 로프트를 임차하고 있다.",
   "col": [
    {
     "e": "loft apartment",
@@ -1100,7 +1100,7 @@
   "ant": "",
   "tip": "loft는 창고·공장을 개조한 천장 높은 개방형 공간이나 '다락'을 뜻하며, Part 7 부동산 광고에서 high ceilings, open layout과 함께 묘사된다.",
   "q": {
-   "s": "The design firm moved into a spacious ------- on the top floor of a former textile mill.",
+   "s": "The design firm moved into a spacious ------- on the top floor of a former printing plant.",
    "o": [
     "lift",
     "lawn",
@@ -1108,7 +1108,7 @@
     "loft"
    ],
    "a": 3,
-   "k": "옛 방직 공장 꼭대기 층의 넓은 공간으로 이사한 것이므로 loft가 정답이다. lift(승강기), lawn(잔디밭), leaf(잎)는 사무실로 쓰는 공간이 아니다."
+   "k": "옛 인쇄 공장 꼭대기 층의 넓은 공간으로 이사한 것이므로 loft가 정답이다. lift(승강기), lawn(잔디밭), leaf(잎)는 사무실로 쓰는 공간이 아니다."
   }
  },
  {
@@ -1142,7 +1142,7 @@
   "ant": "low-rise",
   "tip": "high-rise는 형용사(high-rise buildings)와 명사(a high-rise) 둘 다로 쓰이며, Part 1에서 'High-rise buildings overlook the river.'처럼 배경 묘사로 나온다.",
   "q": {
-   "s": "The city has approved plans for a 40-story ------- tower with offices and apartments.",
+   "s": "Developers have submitted plans for a 40-story ------- tower with offices and apartments.",
    "o": [
     "high-speed",
     "high-pitched",
@@ -1320,7 +1320,7 @@
   "ant": "stuffy",
   "tip": "부동산 광고에서 bright/light and airy(밝고 탁 트인)가 짝을 이뤄 쓰이며, 반의어 stuffy(답답한), cramped(비좁은)와 대비된다.",
   "q": {
-   "s": "With its high ceilings and large windows, the apartment feels light and -------.",
+   "s": "Thanks to its open floor plan and skylights, the new library feels bright and -------.",
    "o": [
     "aired",
     "airing",
@@ -1328,7 +1328,7 @@
     "airborne"
    ],
    "a": 2,
-   "k": "feels의 보어로 형용사 light와 and로 연결되므로 '탁 트인'이라는 뜻의 형용사 airy가 정답이다. aired는 '방송된', airing은 '방송, 환기', airborne은 '공중에 뜬'이라는 뜻이라 문맥에 맞지 않는다."
+   "k": "feels의 보어로 형용사 bright와 and로 연결되므로 '탁 트인'이라는 뜻의 형용사 airy가 정답이다. aired는 '방송된', airing은 '방송, 환기', airborne은 '공중에 뜬'이라는 뜻이라 문맥에 맞지 않는다."
   }
  },
  {

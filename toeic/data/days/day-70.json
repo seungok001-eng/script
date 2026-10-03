@@ -371,7 +371,7 @@
   "ant": "",
   "tip": "proprietary information(회사 고유의 기밀 정보)이 보안 규정에 자주 나온다. 사람명사 proprietor(소유주)와 품사를 구분하는 문제가 출제된다.",
   "q": {
-   "s": "Employees must not share ------- information about the company's products with anyone outside the firm.",
+   "s": "The firm's ------- software cannot be installed on computers outside its own network.",
    "o": [
     "propriety",
     "proprietor",
@@ -379,7 +379,7 @@
     "prosperity"
    ],
    "a": 2,
-   "k": "명사 information을 꾸미는 형용사 자리이며 외부에 공유하면 안 되는 '회사 소유의' 정보이므로 proprietary가 정답이다. propriety(예의), proprietor(소유주), prosperity(번영)는 명사다."
+   "k": "명사 software를 꾸미는 형용사 자리이며 회사 네트워크 밖에서는 설치할 수 없는 '자사 소유의' 소프트웨어이므로 proprietary가 정답이다. propriety(예의), proprietor(소유주), prosperity(번영)는 명사다."
   }
  },
  {
@@ -501,8 +501,8 @@
    5,
    7
   ],
-  "ex": "The researchers designed a series of experiments to test their *hypothesis*.",
-  "exKo": "연구원들은 자신들의 가설을 검증하기 위해 일련의 실험을 설계했다.",
+  "ex": "Our initial *hypothesis* was that customers left the website because of slow loading times.",
+  "exKo": "우리의 초기 가설은 고객들이 느린 로딩 속도 때문에 웹사이트를 떠났다는 것이었다.",
   "col": [
    {
     "e": "test a hypothesis",
@@ -838,7 +838,7 @@
    7
   ],
   "ex": "The new allergy medication is currently in the final stage of *clinical trials*.",
-  "exKo": "그 신약 알레르기 치료제는 현재 임상 시험 마지막 단계에 있다.",
+  "exKo": "새 알레르기 치료제는 현재 임상 시험 마지막 단계에 있다.",
   "col": [
    {
     "e": "conduct a clinical trial",
@@ -1456,8 +1456,8 @@
    5,
    7
   ],
-  "ex": "Ms. Ortiz is widely regarded as an *innovator* in the field of solar energy.",
-  "exKo": "Ortiz 씨는 태양 에너지 분야의 혁신가로 널리 인정받는다.",
+  "ex": "Lindqvist Audio has been an *innovator* in wireless headphones since the early 2000s.",
+  "exKo": "Lindqvist Audio는 2000년대 초부터 무선 헤드폰 분야의 혁신 기업이었다.",
   "col": [
    {
     "e": "an innovator in",
@@ -2047,8 +2047,8 @@
    5,
    7
   ],
-  "ex": "The company is expanding its *product line* to include organic baby food.",
-  "exKo": "그 회사는 유기농 이유식을 포함하도록 제품군을 확대하고 있다.",
+  "ex": "Our skincare *product line* now includes three fragrance-free moisturizers.",
+  "exKo": "우리 스킨케어 제품군에는 이제 무향 보습제 세 가지가 포함되어 있다.",
   "col": [
    {
     "e": "expand a product line",
@@ -2074,7 +2074,7 @@
   "ant": "",
   "tip": "한 회사가 판매하는 관련 제품들의 묶음으로 range, lineup으로 패러프레이징된다. 생산 설비인 production line(생산 라인)과 혼동하지 않는다.",
   "q": {
-   "s": "Hartley Cosmetics will discontinue its oldest ------- and focus on skincare instead.",
+   "s": "Hartley Cosmetics will discontinue its oldest ------- and focus on hair care instead.",
    "o": [
     "bottom line",
     "deadline",
@@ -2082,7 +2082,7 @@
     "product line"
    ],
    "a": 3,
-   "k": "가장 오래된 '제품군'을 단종하고 스킨케어에 집중한다는 의미이므로 product line이 정답이다. bottom line(최종 결산, 핵심), deadline(마감 기한), hotline(직통 전화)은 단종할 수 있는 대상이 아니다."
+   "k": "가장 오래된 '제품군'을 단종하고 헤어 케어에 집중한다는 의미이므로 product line이 정답이다. bottom line(최종 결산, 핵심), deadline(마감 기한), hotline(직통 전화)은 단종할 수 있는 대상이 아니다."
   }
  }
 ]

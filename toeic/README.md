@@ -34,7 +34,7 @@ toeic/
   scripts/
     validate_day.py     데이터 검증
     build_ipa.py        발음기호 생성
-    build_audio.py      음성 생성(기존 음성 재사용 + Kokoro 합성)
+    build_audio.py      음성 생성(Kokoro-82M 합성, 바뀐 문장만)
     build_data.mjs      app/js/data.js 생성
     build_audio_packs.py (선택) 파일 수 제한이 있는 웹 호스팅용 음성 묶음 31개 + js/audio-packs.js
 ```
@@ -60,12 +60,13 @@ BASE_URL=http://localhost:8080/index.html node toeic/tests/e2e.mjs   # 6) 화면
 
 ### 음성
 
-- **단어 음성**: `voca-yun`(정철 VOCA) 저장소의 Gemini TTS 음성(Kore)을 그대로 재사용합니다 — 1,200개 중 876개.
-- **나머지 단어 324개 + 모든 예문/Part 1 문장**: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)(Apache-2.0, 상업 이용 가능)으로
-  이 저장소에서 직접 합성했습니다. 단어는 `af_heart`(미국 여성), 예문은 `af_heart / am_michael / bf_emma / bm_george / af_bella`를
-  문장마다 고정 배정합니다(화면에 "미국·여", "영국·남" 표시).
+- 앱의 **모든 음성(단어·예문·Part 1 문장)은 [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)**(Apache-2.0, 상업 이용 가능)으로
+  이 저장소에서 직접 합성합니다. 한 모델로 통일해 음색이 일정합니다.
+  - 단어: `af_heart`(미국 여성) 한 목소리
+  - 예문·Part 1: `af_heart · af_bella`(미국 여성) · `am_michael`(미국 남성) · `bf_emma`(영국 여성) · `bm_george`(영국 남성)를 문장마다 고정 배정 (화면에 "미국·여", "영국·남" 표시 — 토익 LC 억양 대비)
 - 준비: `python3 -m venv venv && venv/bin/pip install kokoro-onnx soundfile`, 모델·목소리는 npm 패키지 `expo-kokoro`(`build/kokoro-quantized.onnx`, `build/voices/*.bin`)를 풀어 `KOKORO_DIR`로 지정.
 - 문장을 고치면 `audio-manifest.json`과 비교해 **바뀐 문장만** 다시 만듭니다. 음성 파일이 없거나 옛 문장이면 앱은 기기 음성(TTS)으로 대신 읽습니다.
+- (참고) `--reuse-gemini` 옵션을 주면 voca-yun 저장소의 기존 Gemini TTS 단어 음성을 재사용할 수 있습니다. 기본값은 사용하지 않음.
 
 ## 스토어 출시 (Capacitor 8)
 

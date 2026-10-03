@@ -130,8 +130,8 @@
    5,
    7
   ],
-  "ex": "Mr. Silva *applied for* the position of assistant store manager last week.",
-  "exKo": "Silva 씨는 지난주 부점장 자리에 지원했다.",
+  "ex": "Mr. Silva *applied for* a small business loan to open a second bakery.",
+  "exKo": "Silva 씨는 두 번째 제과점을 열기 위해 소상공인 대출을 신청했다.",
   "col": [
    {
     "e": "apply for a job",
@@ -285,8 +285,8 @@
    5,
    7
   ],
-  "ex": "The outdoor market was canceled *owing to* the severe weather warning.",
-  "exKo": "기상 특보로 인해 야외 시장이 취소되었다.",
+  "ex": "Several flights were delayed *owing to* a shortage of air traffic controllers.",
+  "exKo": "항공 교통 관제사 부족으로 여러 항공편이 지연되었다.",
   "col": [
    {
     "e": "owing to the fact that",
@@ -312,7 +312,7 @@
   "ant": "",
   "tip": "due to, because of와 같은 전치사구라 뒤에 명사가 오며, 절이 올 때는 'owing to the fact that'으로 써야 한다.",
   "q": {
-   "s": "------- a shortage of materials, production of the new model has been delayed.",
+   "s": "------- a sudden drop in demand, the factory has reduced its production hours.",
    "o": [
     "Because",
     "Although",
@@ -320,7 +320,7 @@
     "Since"
    ],
    "a": 2,
-   "k": "뒤에 명사구(a shortage of materials)만 있으므로 전치사구 Owing to가 정답. Because, Although, Since는 접속사로 쓰여 뒤에 절이 와야 한다."
+   "k": "뒤에 명사구(a sudden drop in demand)만 있으므로 전치사구 Owing to가 정답. Because, Although, Since는 접속사로 쓰여 뒤에 절이 와야 한다."
   }
  },
  {
@@ -383,8 +383,8 @@
    5,
    7
   ],
-  "ex": "The museum is hosting the exhibition *in conjunction with* the National Art Society.",
-  "exKo": "그 박물관은 국립 미술 협회와 공동으로 전시회를 개최하고 있다.",
+  "ex": "The safety campaign is being run *in conjunction with* the regional police department.",
+  "exKo": "그 안전 캠페인은 지역 경찰서와 연계하여 진행되고 있다.",
   "col": [
    {
     "e": "in conjunction with",
@@ -510,7 +510,7 @@
   "ant": "",
   "tip": "'a variety of + 복수 명사'로 쓰이며 various와 같은 뜻이다. 'a wide variety of'처럼 형용사 wide가 들어간 형태도 빈출이다.",
   "q": {
-   "s": "The store offers a wide ------- of kitchen appliances at competitive prices.",
+   "s": "The library lends a wide ------- of materials, including e-books and audio recordings.",
    "o": [
     "various",
     "vary",
@@ -627,8 +627,8 @@
    5,
    7
   ],
-  "ex": "Most customers now shop online, *as opposed to* visiting physical stores.",
-  "exKo": "현재 대부분의 고객은 오프라인 매장을 방문하는 대신 온라인으로 쇼핑한다.",
+  "ex": "The firm now hires contract workers, *as opposed to* full-time staff, for seasonal projects.",
+  "exKo": "그 회사는 이제 계절성 프로젝트에 정규직 대신 계약직 직원을 고용한다.",
   "col": [
    {
     "e": "as opposed to -ing",
@@ -967,7 +967,7 @@
   "ant": "",
   "tip": "regardless of와 같은 뜻의 전치사구로 뒤에 명사나 whether절이 온다. regardless와 달리 of 없이 단독 부사로 쓰지 않는다.",
   "q": {
-   "s": "Delivery is free for all orders, ------- of their size or destination.",
+   "s": "Ticket prices are the same for all seats, ------- of their location in the theater.",
    "o": [
     "irrelevant",
     "irrespective",
@@ -1229,8 +1229,8 @@
    5,
    7
   ],
-  "ex": "The restaurant *is known for* its fresh seafood and friendly service.",
-  "exKo": "그 식당은 신선한 해산물과 친절한 서비스로 유명하다.",
+  "ex": "The town *is known for* its historic architecture and annual jazz festival.",
+  "exKo": "그 도시는 역사적인 건축물과 매년 열리는 재즈 축제로 유명하다.",
   "col": [
    {
     "e": "be best known for",
@@ -1342,8 +1342,8 @@
    5,
    7
   ],
-  "ex": "The new printer *is capable of* producing 60 pages per minute.",
-  "exKo": "새 프린터는 분당 60페이지를 출력할 수 있다.",
+  "ex": "The new delivery vans *are capable of* traveling 300 kilometers on a single charge.",
+  "exKo": "새 배송 밴은 한 번 충전으로 300킬로미터를 주행할 수 있다.",
   "col": [
    {
     "e": "be capable of -ing",
@@ -1756,7 +1756,7 @@
    7
   ],
   "ex": "The company is *cutting back on* business travel to reduce expenses.",
-  "exKo": "그 회사는 경비를 줄이기 위해 출장을 줄이고 있다.",
+  "exKo": "그 회사는 경비 절감을 위해 출장을 줄이고 있다.",
   "col": [
    {
     "e": "cut back on spending",
@@ -1840,7 +1840,7 @@
   "ant": "",
   "tip": "'opt for + 명사'와 'opt to do' 두 형태로 쓰이고, 'opt out of(~에서 빠지다)'와 전치사를 구분한다. 형용사 optional(선택적인)이 품사 문제로 나온다.",
   "q": {
-   "s": "Customers who ------- for express delivery will receive their items within two business days.",
+   "s": "Travelers who ------- for the premium package will receive free airport transfers.",
    "o": [
     "choose",
     "select",

@@ -70,8 +70,8 @@
    5,
    7
   ],
-  "ex": "Our store carries a wide *range* of office furniture at affordable prices.",
-  "exKo": "우리 매장은 다양한 사무용 가구를 저렴한 가격에 판매한다.",
+  "ex": "The resort offers a wide *range* of outdoor activities, from kayaking to guided hikes.",
+  "exKo": "그 리조트는 카약부터 가이드 동반 하이킹까지 다양한 야외 활동을 제공한다.",
   "col": [
    {
     "e": "a wide range of",
@@ -95,7 +95,7 @@
   "ant": "",
   "tip": "'a wide/broad range of + 복수 명사(다양한 ~)'가 빈출이며, 동사로는 'range from A to B(A에서 B에 이르다)' 구조로 출제된다.",
   "q": {
-   "s": "The hotel offers a broad ------- of services, including airport transfers and dry cleaning.",
+   "s": "Our consultants can assist with an extensive ------- of legal and financial matters.",
    "o": [
     "level",
     "degree",
@@ -103,7 +103,7 @@
     "rate"
    ],
    "a": 2,
-   "k": "'a broad range of(다양한 ~)'를 이루는 range가 정답. level(수준), degree(정도), rate(비율)는 'a broad ~ of services' 형태로 '다양한 서비스'라는 뜻이 되지 않는다."
+   "k": "'an extensive range of(광범위한 ~)'를 이루는 range가 정답. level(수준), degree(정도), rate(비율)는 'an extensive ~ of matters' 형태로 '다양한 문제'라는 뜻이 되지 않는다."
   }
  },
  {
@@ -120,8 +120,8 @@
    5,
    7
   ],
-  "ex": "Customers can check the *status* of their orders online at any time.",
-  "exKo": "고객은 언제든지 온라인으로 주문 처리 현황을 확인할 수 있다.",
+  "ex": "Please send me a *status* update on the Henderson project by the end of the day.",
+  "exKo": "오늘 업무 종료 전까지 Henderson 프로젝트의 진행 현황을 알려 주기 바란다.",
   "col": [
    {
     "e": "check the status of",
@@ -208,7 +208,7 @@
   "ant": "inactive",
   "tip": "'take an active part/role in(~에 적극 참여하다)'이 빈출이며, 부사 actively는 'actively participate'처럼 동사를 수식하는 자리에 온다.",
   "q": {
-   "s": "Employees are encouraged to take an ------- role in planning the company's charity events.",
+   "s": "Ms. Ortiz has played an ------- role in organizing the annual charity auction.",
    "o": [
     "activity",
     "actively",
@@ -590,8 +590,8 @@
    5,
    7
   ],
-  "ex": "The company hired an *external* auditor to review its financial records.",
-  "exKo": "그 회사는 재무 기록을 검토하기 위해 외부 감사인을 고용했다.",
+  "ex": "The company brought in an *external* consultant to evaluate its customer service operations.",
+  "exKo": "그 회사는 고객 서비스 운영을 평가하기 위해 외부 컨설턴트를 들였다.",
   "col": [
    {
     "e": "external auditor",
@@ -620,7 +620,7 @@
   "ant": "internal",
   "tip": "internal(내부의)과 짝을 이루는 반의어로, 'external candidates(외부 지원자)', 'external consultants(외부 컨설턴트)' 같은 결합이 나온다.",
   "q": {
-   "s": "The position is open to both internal and ------- candidates.",
+   "s": "The safety report was reviewed by an ------- panel of experts with no ties to the company.",
    "o": [
     "extensive",
     "external",
@@ -628,7 +628,7 @@
     "exterior"
    ],
    "a": 1,
-   "k": "both A and B 구조에서 internal(내부의)과 대비되는 '외부의'라는 뜻이 필요하므로 external이 정답. extensive(광범위한), extended(연장된), exterior(건물 등의 바깥쪽의)는 지원자를 수식하기에 맞지 않는다."
+   "k": "회사와 관계없는 전문가들로 구성된 '외부' 위원단이라는 뜻이므로 external이 정답. extensive(광범위한), extended(연장된), exterior(건물 등의 바깥쪽의)는 전문가 위원단을 수식하기에 맞지 않는다."
   }
  },
  {
@@ -926,12 +926,12 @@
   "exKo": "환영회에서 무료 음료는 손님 한 명당 두 잔으로 제한된다.",
   "col": [
    {
-    "e": "weight limit",
-    "k": "중량 제한"
+    "e": "place a limit on",
+    "k": "~에 제한을 두다"
    },
    {
-    "e": "time limit",
-    "k": "제한 시간"
+    "e": "weight limit",
+    "k": "중량 제한"
    },
    {
     "e": "limit A to B",
@@ -963,7 +963,7 @@
   "ant": "",
   "tip": "'a limit on/of + 명사'와 동사 'limit A to B' 구조가 나오며, limited(제한된), limitation(제약)과의 품사 구분 문제가 빈출이다.",
   "q": {
-   "s": "Each passenger is allowed one carry-on bag, which must not exceed the weight ------- of 10 kilograms.",
+   "s": "During the sale, the store places a ------- on the number of discounted items each customer may buy.",
    "o": [
     "limit",
     "limited",
@@ -971,7 +971,7 @@
     "limitless"
    ],
    "a": 0,
-   "k": "the weight와 함께 '중량 제한'이라는 복합 명사를 이루는 명사 자리이므로 limit이 정답. limited, limiting, limitless는 명사 자리에 올 수 없다."
+   "k": "관사 a 뒤의 명사 자리이고 'place a limit on(~에 제한을 두다)'을 이루므로 limit이 정답. limited, limiting, limitless는 형용사·분사라 관사 a 뒤에 단독으로 명사처럼 쓸 수 없다."
   }
  },
  {
@@ -1080,7 +1080,7 @@
   "ant": "lenient",
   "tip": "형용사 strict는 명사 앞, 부사 strictly는 'Smoking is strictly prohibited.'처럼 과거분사 앞에 오는 품사 자리 문제가 빈출이다.",
   "q": {
-   "s": "Visitors must follow ------- safety procedures while touring the manufacturing plant.",
+   "s": "The pharmaceutical plant enforces ------- hygiene rules to prevent contamination.",
    "o": [
     "strictly",
     "strict",
@@ -1088,7 +1088,7 @@
     "stricture"
    ],
    "a": 1,
-   "k": "명사구 safety procedures를 수식하는 형용사 자리이므로 strict가 정답. strictly는 부사, strictness와 stricture는 명사다."
+   "k": "명사구 hygiene rules를 수식하는 형용사 자리이므로 strict가 정답. strictly는 부사, strictness와 stricture는 명사다."
   }
  },
  {
@@ -2113,7 +2113,7 @@
    5,
    7
   ],
-  "ex": "The new mobile banking app has won *widespread* acceptance among older customers.",
+  "ex": "The new mobile banking app has gained *widespread* acceptance among older customers.",
   "exKo": "새 모바일 뱅킹 앱은 고령 고객층에게도 폭넓게 받아들여졌다.",
   "col": [
    {
@@ -2138,7 +2138,7 @@
   "ant": "rare",
   "tip": "support, use, concern 같은 명사를 수식하는 형용사로, 동사·분사를 수식하는 부사 widely와 혼동시키는 품사 문제가 나온다.",
   "q": {
-   "s": "The proposal to extend library hours received ------- support from local residents.",
+   "s": "The mayor's plan to build more bike lanes has won ------- support across the city.",
    "o": [
     "widely",
     "widespread",
@@ -2160,8 +2160,8 @@
    5,
    7
   ],
-  "ex": "The hotel's *proximity* to the airport makes it popular with business travelers.",
-  "exKo": "그 호텔은 공항과 가까워서 출장객에게 인기가 많다.",
+  "ex": "The office's *proximity* to several bus routes makes commuting easy for employees.",
+  "exKo": "그 사무실은 여러 버스 노선과 가까워 직원들이 통근하기 편하다.",
   "col": [
    {
     "e": "proximity to",

@@ -305,8 +305,8 @@
    4,
    7
   ],
-  "ex": "Housekeeping staff clean each *guest room* daily between 10 A.M. and 3 P.M.",
-  "exKo": "객실 청소 직원은 매일 오전 10시에서 오후 3시 사이에 각 객실을 청소한다.",
+  "ex": "The hotel added 40 new *guest rooms* when it expanded its east wing last year.",
+  "exKo": "그 호텔은 작년에 동관을 확장하면서 객실 40개를 새로 추가했다.",
   "col": [
    {
     "e": "renovate guest rooms",
@@ -813,8 +813,8 @@
    3,
    4
   ],
-  "ex": "The company *cafeteria* offers a different vegetarian dish every day.",
-  "exKo": "회사 구내식당은 매일 다른 채식 요리를 제공한다.",
+  "ex": "Ms. Ortiz usually eats lunch in the *cafeteria* with her coworkers from accounting.",
+  "exKo": "Ortiz 씨는 보통 회계부 동료들과 구내식당에서 점심을 먹는다.",
   "col": [
    {
     "e": "employee cafeteria",
@@ -1127,7 +1127,7 @@
   "ant": "",
   "tip": "Part 7 식당 기사·리뷰에서 restaurant를 바꿔 표현하는 단어로 자주 나온다. 사람명사 eater(먹는 사람)와 혼동하지 말자.",
   "q": {
-   "s": "Food critics have praised the small ------- for its creative menu and reasonable prices.",
+   "s": "The family-owned ------- near the train station is popular with commuters looking for a quick breakfast.",
    "o": [
     "eater",
     "eating",
@@ -1135,7 +1135,7 @@
     "eatery"
    ],
    "a": 3,
-   "k": "창의적인 메뉴와 합리적인 가격으로 칭찬받는 대상은 '음식점'이므로 eatery가 정답이다. eater(먹는 사람)는 메뉴를 가진 대상이 아니고, eating은 동명사, eaten은 과거분사다."
+   "k": "가족이 운영하며 간단한 아침을 찾는 통근자들에게 인기 있는 곳은 '음식점'이므로 eatery가 정답이다. eater(먹는 사람)는 장소가 아니고, eating은 동명사, eaten은 과거분사다."
   }
  },
  {
@@ -1240,8 +1240,8 @@
    5,
    7
   ],
-  "ex": "The restaurant uses only *organic* vegetables grown on nearby farms.",
-  "exKo": "그 식당은 인근 농장에서 재배한 유기농 채소만 사용한다.",
+  "ex": "Sales of *organic* fruit at Greenway Market have doubled over the past two years.",
+  "exKo": "Greenway Market의 유기농 과일 판매량은 지난 2년간 두 배로 늘었다.",
   "col": [
    {
     "e": "organic produce",
@@ -1289,8 +1289,8 @@
    5,
    7
   ],
-  "ex": "The restaurant is known for its generous *portions* and friendly service.",
-  "exKo": "그 식당은 넉넉한 양과 친절한 서비스로 유명하다.",
+  "ex": "Mr. Ford asked the server whether smaller *portions* were available for children.",
+  "exKo": "Ford 씨는 종업원에게 아이들을 위해 양을 적게 주문할 수 있는지 물었다.",
   "col": [
    {
     "e": "generous portions",
@@ -1436,7 +1436,7 @@
   "ant": "",
   "tip": "Part 1 식당 사진에서 Napkins have been folded on the plates(냅킨이 접시 위에 접혀 있다)처럼 수동태 현재완료 묘사로 자주 나온다.",
   "q": {
-   "s": "Paper ------- and plastic cups can be found at the end of the counter.",
+   "s": "The server brought extra paper ------- after the children spilled their juice.",
    "o": [
     "nickels",
     "needles",
@@ -1444,7 +1444,7 @@
     "notches"
    ],
    "a": 2,
-   "k": "플라스틱 컵과 함께 카운터 끝에 놓인 종이 제품은 냅킨이므로 napkins가 정답이다. nickels(5센트 동전), needles(바늘), notches(새김 눈)는 Paper와 어울려 컵과 함께 놓이는 물건이 아니다."
+   "k": "아이들이 주스를 쏟은 뒤 종업원이 더 가져온 종이 제품은 냅킨이므로 napkins가 정답이다. nickels(5센트 동전), needles(바늘), notches(새김 눈)는 쏟은 주스를 닦는 데 쓰는 물건이 아니다."
   }
  },
  {
@@ -1687,7 +1687,7 @@
   "ant": "",
   "tip": "tip은 '봉사료(gratuity)' 외에 '조언(advice)'이라는 뜻으로도 Part 7에 자주 나온다. 동사로 tip the server(종업원에게 팁을 주다)처럼도 쓴다.",
   "q": {
-   "s": "A 15 percent ------- will be automatically added to the bill for groups of eight or more.",
+   "s": "Ms. Reyes left a generous ------- for the server who had recommended an excellent wine.",
    "o": [
     "refund",
     "tip",
@@ -1695,7 +1695,7 @@
     "menu"
    ],
    "a": 1,
-   "k": "8명 이상의 단체에 자동으로 계산서에 더해지는 15퍼센트는 '봉사료'이므로 tip이 정답이다. refund(환불금)는 계산서에 더해지지 않고, receipt(영수증)와 menu(메뉴)는 퍼센트로 나타낼 수 없다."
+   "k": "훌륭한 와인을 추천해 준 종업원에게 넉넉하게 남긴 것은 '팁'이므로 tip이 정답이다. refund(환불금)는 손님이 종업원에게 주는 것이 아니고, receipt(영수증)와 menu(메뉴)는 generous와 어울려 감사의 표시가 될 수 없다."
   }
  },
  {
@@ -1758,8 +1758,8 @@
    5,
    7
   ],
-  "ex": "The conference fee includes three nights of *lodging* at a nearby hotel.",
-  "exKo": "회의 참가비에는 인근 호텔 3박 숙박이 포함되어 있다.",
+  "ex": "Volunteers at the festival will receive free meals and *lodging* for the entire week.",
+  "exKo": "축제 자원봉사자들은 일주일 내내 무료 식사와 숙소를 제공받는다.",
   "col": [
    {
     "e": "food and lodging",
@@ -1784,7 +1784,7 @@
   "ant": "",
   "tip": "lodging은 '숙박'을 뜻하는 불가산명사로 관사 없이 쓴다. 동사 lodge(묵다)나 명사 lodge(산장)와 구분하자.",
   "q": {
-   "s": "The company will cover ------- and meals for employees attending the training in Denver.",
+   "s": "Visitors to the national park can find ------- in several small cabins near the main entrance.",
    "o": [
     "lodged",
     "lodge",
@@ -1792,7 +1792,7 @@
     "lodger"
    ],
    "a": 2,
-   "k": "cover의 목적어로 관사 없이 쓸 수 있는 불가산명사 lodging(숙박)이 정답이다. lodge와 lodger(하숙인)는 가산명사 단수라 관사가 필요하고 의미도 맞지 않으며, lodged는 동사 형태다."
+   "k": "find의 목적어로 관사 없이 쓸 수 있는 불가산명사 lodging(숙소)이 정답이다. lodge(산장)와 lodger(하숙인)는 가산명사 단수라 관사가 필요하고, lodged는 동사 형태다."
   }
  },
  {
@@ -1808,8 +1808,8 @@
    4,
    7
   ],
-  "ex": "The hotel offers same-day *laundry* service for business travelers.",
-  "exKo": "그 호텔은 출장객을 위해 당일 세탁 서비스를 제공한다.",
+  "ex": "Ms. Kwon sent two shirts to the hotel *laundry* so they would be ready for her presentation.",
+  "exKo": "Kwon 씨는 발표 때 입을 수 있도록 셔츠 두 벌을 호텔 세탁실에 맡겼다.",
   "col": [
    {
     "e": "laundry service",
@@ -1858,8 +1858,8 @@
    3,
    7
   ],
-  "ex": "A *valet* will park your car when you arrive at the restaurant entrance.",
-  "exKo": "식당 입구에 도착하면 대리 주차 요원이 차를 주차해 준다.",
+  "ex": "Mr. Grant handed his car keys to the *valet* and walked into the hotel lobby.",
+  "exKo": "Grant 씨는 대리 주차 요원에게 차 키를 건네고 호텔 로비로 걸어 들어갔다.",
   "col": [
    {
     "e": "valet parking",
@@ -1877,7 +1877,7 @@
   "ant": "",
   "tip": "valet parking(대리 주차)의 형태로 호텔·식당 광고에 자주 나온다. 발음은 [vælei] 또는 [vǽlit]이며 value(가치)와 혼동하지 말자.",
   "q": {
-   "s": "The hotel offers ------- parking for guests who prefer not to park their own cars.",
+   "s": "Guests arriving by car can leave their keys with the ------- attendant at the main entrance.",
    "o": [
     "valid",
     "valet",
@@ -1885,7 +1885,7 @@
     "variety"
    ],
    "a": 1,
-   "k": "직접 주차하지 않으려는 손님을 위한 '대리' 주차이므로 valet이 정답이다. valid(유효한), value(가치), variety(다양성)는 parking과 어울려 이런 의미를 만들지 않는다."
+   "k": "차를 타고 온 손님이 열쇠를 맡기는 사람은 '대리 주차 요원(valet attendant)'이므로 valet이 정답이다. valid(유효한), value(가치), variety(다양성)는 attendant와 어울려 이런 의미를 만들지 않는다."
   }
  }
 ]

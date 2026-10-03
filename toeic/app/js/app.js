@@ -1637,7 +1637,7 @@
   function vLicenses() {
     const body = `${topBar("오픈소스 라이선스", { back: true })}
       <div class="card"><b>CMU Pronouncing Dictionary</b><p class="small muted">발음기호 생성에 사용. Copyright (C) 1993-2015 Carnegie Mellon University. BSD 2-Clause License.</p>
-      <b>Kokoro-82M</b><p class="small muted">일부 단어·예문 음성 합성에 사용. Copyright hexgrad. Apache License 2.0.</p>
+      <b>Kokoro-82M</b><p class="small muted">모든 단어·예문·문장 음성 합성에 사용. Copyright hexgrad. Apache License 2.0.</p>
       <b>Pretendard</b><p class="small muted">앱 글꼴. Copyright 2021 Kil Hyung-jin. SIL Open Font License 1.1.</p>
       <b>Lucide Icons</b><p class="small muted">아이콘 모양 참고. ISC License.</p></div>`;
     shell("settings", body);

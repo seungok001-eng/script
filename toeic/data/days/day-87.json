@@ -100,7 +100,7 @@
   "ant": "",
   "tip": "'cause + 목적어 + to do' 구조가 출제 포인트로, 사역동사 make, let, have와 달리 목적어 뒤에 to부정사가 온다. 사과 공지의 'any inconvenience this may cause'도 빈출이다.",
   "q": {
-   "s": "Heavy rain ------- the outdoor concert to be postponed until Sunday.",
+   "s": "A software glitch ------- the payroll system to issue duplicate payments last month.",
    "o": [
     "made",
     "caused",
@@ -108,7 +108,7 @@
     "had"
    ],
    "a": 1,
-   "k": "목적어 뒤에 to부정사(to be postponed)가 왔으므로 'cause + 목적어 + to do' 구조를 취하는 caused가 정답. made, let, had는 사역동사라 목적어 뒤에 to 없는 동사원형을 쓴다."
+   "k": "목적어 뒤에 to부정사(to issue)가 왔으므로 'cause + 목적어 + to do' 구조를 취하는 caused가 정답. made, let, had는 사역동사라 목적어 뒤에 to 없는 동사원형을 쓴다."
   }
  },
  {
@@ -452,7 +452,7 @@
   "ant": "",
   "tip": "자동사라 'complain about/of + 대상', 'complain to + 사람'으로 쓰고 목적어를 바로 취하지 않는다. 명사 complaint(불만)와의 품사 구분이 빈출이다.",
   "q": {
-   "s": "Customers who ------- about late deliveries will receive a discount on their next order.",
+   "s": "Residents who wish to ------- about noise from the construction site should call the city office.",
    "o": [
     "complain",
     "complaint",
@@ -460,7 +460,7 @@
     "complainer"
    ],
    "a": 0,
-   "k": "관계대명사 who 뒤에 동사가 필요하고 선행사 Customers가 복수이므로 complain이 정답. complaint, complaints, complainer는 모두 명사다."
+   "k": "to부정사(to) 뒤 동사원형 자리이고 뒤에 about이 이어지므로 자동사 complain이 정답. complaint, complaints, complainer는 모두 명사다."
   }
  },
  {
@@ -1006,8 +1006,8 @@
    5,
    7
   ],
-  "ex": "The company *initiated* a review of its suppliers after receiving several quality complaints.",
-  "exKo": "회사는 품질 관련 불만을 여러 건 접수한 뒤 공급업체 점검에 착수했다.",
+  "ex": "The utility company *initiated* a program to replace aging water pipes across the city.",
+  "exKo": "그 공공 서비스 회사는 도시 전역의 노후 수도관을 교체하는 사업에 착수했다.",
   "col": [
    {
     "e": "initiate a project",
@@ -1659,8 +1659,8 @@
    5,
    7
   ],
-  "ex": "The new advertising campaign is expected to *bolster* sales in the Asian market.",
-  "exKo": "새 광고 캠페인은 아시아 시장의 매출을 끌어올릴 것으로 기대된다.",
+  "ex": "Positive reviews from industry experts helped *bolster* the startup's reputation among investors.",
+  "exKo": "업계 전문가들의 호평 덕분에 그 신생 기업은 투자자들 사이에서 평판이 높아졌다.",
   "col": [
    {
     "e": "bolster confidence",
@@ -1684,7 +1684,7 @@
   "ant": "undermine",
   "tip": "strengthen, boost와 같은 뜻의 격식어로 confidence, sales, reputation 같은 목적어와 쓰인다. 반의어 undermine(약화시키다)과 대비해 출제된다.",
   "q": {
-   "s": "Strong quarterly earnings helped ------- investor confidence in the struggling retailer.",
+   "s": "The government introduced new tax incentives to ------- investment in rural areas.",
    "o": [
     "bolster",
     "diminish",
@@ -1692,7 +1692,7 @@
     "restrain"
    ],
    "a": 0,
-   "k": "좋은 분기 실적이 투자자 신뢰를 '높이는 데' 도움이 되었다는 문맥이므로 bolster가 정답. diminish(줄이다), deplete(고갈시키다), restrain(억제하다)은 부정적 의미라 맞지 않는다."
+   "k": "세금 혜택을 도입한 목적은 농촌 지역 투자를 '활성화하는' 것이므로 bolster가 정답. diminish(줄이다), deplete(고갈시키다), restrain(억제하다)은 세금 혜택의 목적과 반대된다."
   }
  },
  {
@@ -1955,7 +1955,7 @@
   "ant": "",
   "tip": "사물 주어가 '~을 필요하게 만들다'라는 뜻으로 명사나 동명사를 목적어로 취한다. 형용사 necessary, 명사 necessity와의 품사 구분 문제가 나온다.",
   "q": {
-   "s": "The expansion of the factory will ------- the hiring of fifty new technicians.",
+   "s": "The relocation of our data center will ------- a brief interruption of online services.",
    "o": [
     "necessitate",
     "necessity",

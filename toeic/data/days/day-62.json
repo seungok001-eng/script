@@ -754,8 +754,8 @@
    5,
    7
   ],
-  "ex": "Employees who ignore the safety rules will face *disciplinary* action.",
-  "exKo": "안전 규정을 무시하는 직원은 징계 조치를 받게 된다.",
+  "ex": "A *disciplinary* hearing will be held next week to review the employee's conduct.",
+  "exKo": "그 직원의 행위를 검토하기 위한 징계 청문회가 다음 주에 열린다.",
   "col": [
    {
     "e": "disciplinary action",
@@ -784,7 +784,7 @@
   "ant": "",
   "tip": "disciplinary action(징계 조치)이 대표 연어로, 명사 앞 형용사 자리 문제로 나온다. 명사·동사 discipline(규율, 징계하다)과 품사를 구분한다.",
   "q": {
-   "s": "Any employee found sharing confidential data will be subject to ------- action.",
+   "s": "Staff members who repeatedly ignore the dress code may face ------- action.",
    "o": [
     "discipline",
     "disciplined",
@@ -1544,7 +1544,7 @@
   "ant": "",
   "tip": "customer loyalty(고객 충성도), loyalty program(단골 고객 우대 제도)이 대표 연어다. 형용사 loyal(loyal customers)과 품사 자리를 구분한다.",
   "q": {
-   "s": "Members of our ------- program earn points every time they shop at any of our stores.",
+   "s": "Shoppers who join the store's free ------- program receive exclusive discounts and birthday coupons.",
    "o": [
     "loyalty",
     "loyal",
