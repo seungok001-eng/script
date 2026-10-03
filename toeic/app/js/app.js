@@ -14,6 +14,12 @@
   const NDAYS = DAYS.length;
   const BASIC_DAYS = Math.min(30, NDAYS); // Day 1~30 기본 코스, 31~ 심화 코스
   const NWORDS = WORDS.length.toLocaleString();
+  // 30일 단위 코스: 같은 30개 주제를 기본 → 심화 → 실전으로 세 번 넓혀 간다
+  const COURSES = [
+    { name: "기본 코스", from: 1, to: 30, desc: "주제별 필수 어휘" },
+    { name: "심화 코스", from: 31, to: 60, desc: "같은 주제의 확장 어휘" },
+    { name: "실전 코스", from: 61, to: 90, desc: "LC 표현 · 고득점 어휘" },
+  ];
   const POS_KO = { n: "명사", v: "동사", adj: "형용사", adv: "부사", phr: "숙어", prep: "전치사", conj: "접속사" };
   const POS_SHORT = { n: "명", v: "동", adj: "형", adv: "부", phr: "숙", prep: "전", conj: "접" };
   const $app = document.getElementById("app");
@@ -507,7 +513,7 @@
         <h1 style="text-align:center">토익 단어,<br/>목표 점수만큼만 정확하게</h1>
         <p class="lead" style="text-align:center">목표 점수를 알려주시면 꼭 필요한 단어만 골라<br/>매일 학습 계획을 만들어 드려요.</p>
         <div class="feature-list">
-          <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? "기본 30일 + 심화 30일" : "30일 주제별"} · 기본/핵심/고득점 3단계</span></div>
+          <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? `${NDAYS}일 · 기본/심화/실전 코스` : "30일 주제별"} · 기본/핵심/고득점 3단계</span></div>
           <div><span class="tico c-green">${ico("headphones")}</span><span><b>모든 단어·예문 원어민 음성</b>미국·영국 발음으로 토익 LC까지 대비</span></div>
           <div><span class="tico c-orange">${ico("repeat")}</span><span><b>잊을 때쯤 다시 나오는 복습</b>1·3·7·14·30일 간격 반복 + 오답노트</span></div>
           <div><span class="tico c-purple">${ico("zap")}</span><span><b>Part 5 실전 문제 ${NWORDS}개</b>단어마다 출제 포인트와 해설</span></div>
@@ -691,7 +697,7 @@
     };
     const section = (title, desc, list) => `<div class="section"><div class="section-h"><h2>${title}</h2><span class="small muted">${desc}</span></div><div class="grid2 grid-days">${list.map(card).join("")}</div></div>`;
     const cards = NDAYS > BASIC_DAYS
-      ? section("기본 코스", `DAY 01~${pad(BASIC_DAYS)} · 주제별 필수 어휘`, DAYS.slice(0, BASIC_DAYS)) + section("심화 코스", `DAY ${pad(BASIC_DAYS + 1)}~${pad(NDAYS)} · 같은 주제의 확장 어휘`, DAYS.slice(BASIC_DAYS))
+      ? COURSES.filter((c) => c.from <= NDAYS).map((c) => section(c.name, `DAY ${pad(c.from)}~${pad(Math.min(c.to, NDAYS))} · ${c.desc}`, DAYS.slice(c.from - 1, c.to))).join("")
       : `<div class="grid2 grid-days">${DAYS.map(card).join("")}</div>`;
     const body = `${topBar("단어장", { sub: `목표 ${target()}점 · ${C.scoreBand(target()).label} · ${P.length.toLocaleString()}개`, right: `<a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a>` })}
       <div class="chips scroll" style="margin-bottom:14px">
