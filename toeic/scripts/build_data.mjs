@@ -61,11 +61,20 @@ const part1 = (extras.part1 || []).map((p, i) => {
   }
   return o;
 });
+const lc = (extras.lc || []).map((p, i) => {
+  const rel = `lc/${String(i + 1).padStart(3, "0")}.mp3`;
+  const o = { id: `lc-${i + 1}`, g: p.g, e: p.e, k: p.k, key: p.key, keyKo: p.keyKo, tip: p.tip || "" };
+  if (fresh(rel, plain(p.e))) {
+    o.au = rel;
+    o.v = voiceOf(rel);
+  }
+  return o;
+});
 const conf = (extras.confusables || []).map((c, i) => ({ id: `cf-${i + 1}`, words: c.words, point: c.point, q: c.q }));
 
-const out = { version: new Date().toISOString().slice(0, 10), days, words, part1, conf };
+const out = { version: new Date().toISOString().slice(0, 10), days, words, part1, lc, conf };
 const js = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_DATA=" + JSON.stringify(out) + ";\n";
 fs.writeFileSync(path.join(ROOT, "app/js/data.js"), js);
 const withAu = words.filter((w) => w.au).length;
 const withEx = words.filter((w) => w.exAu).length;
-console.log(`단어 ${words.length}개 (데이터 없음 ${missing}) · 단어 음성 ${withAu} · 예문 음성 ${withEx} · Part1 ${part1.length} (음성 ${part1.filter((p) => p.au).length}) · 혼동어 ${conf.length} · ${(js.length / 1024).toFixed(0)}KB`);
+console.log(`단어 ${words.length}개 (데이터 없음 ${missing}) · 단어 음성 ${withAu} · 예문 음성 ${withEx} · Part1 ${part1.length} (음성 ${part1.filter((p) => p.au).length}) · LC ${lc.length} (음성 ${lc.filter((p) => p.au).length}) · 혼동어 ${conf.length} · ${(js.length / 1024).toFixed(0)}KB`);

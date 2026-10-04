@@ -13,10 +13,11 @@ out = sys.argv[1]
 os.makedirs(os.path.join(out, "audio"), exist_ok=True)
 os.makedirs(os.path.join(out, "js"), exist_ok=True)
 groups = {}
-for sub in ("w", "s", "p1"):
-    for f in sorted(os.listdir(os.path.join(AUDIO, sub))):
+for sub in ("w", "s", "p1", "lc"):
+    d = os.path.join(AUDIO, sub)
+    for f in (sorted(os.listdir(d)) if os.path.isdir(d) else []):
         if f.endswith(".mp3"):
-            key = "p1" if sub == "p1" else f[:2]
+            key = sub if sub in ("p1", "lc") else f[:2]
             groups.setdefault(key, []).append(f"{sub}/{f}")
 index = {}
 for key, rels in groups.items():

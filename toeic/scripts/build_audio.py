@@ -56,8 +56,17 @@ def load_entries():
     ex = os.path.join(ROOT, "data", "extras.json")
     if os.path.exists(ex):
         try:
-            for i, it in enumerate(json.load(open(ex, encoding="utf-8")).get("part1", []), 1):
+            extras = json.load(open(ex, encoding="utf-8"))
+            for i, it in enumerate(extras.get("part1", []), 1):
                 sents.append((f"p1/{i:03d}.mp3", plain(it["e"]), voice_for(f"p1-{i}")))
+            # LC 표현: "Q: … / A: …" 대화는 묻는 사람·답하는 사람 목소리를 다르게
+            for i, it in enumerate(extras.get("lc", []), 1):
+                text = plain(it["e"])
+                v = voice_for(f"lc-{i}")
+                if text.startswith("Q:") and " / A:" in text:
+                    other = {"af_heart": "am_michael", "af_bella": "bm_george", "am_michael": "bf_emma", "bf_emma": "am_michael", "bm_george": "af_heart"}[v]
+                    v = f"{v}+{other}"
+                sents.append((f"lc/{i:03d}.mp3", text, v))
         except Exception:
             pass
     return words, sents
@@ -94,8 +103,17 @@ def synth(job):
     out = os.path.join(AUDIO, rel)
     os.makedirs(os.path.dirname(out), exist_ok=True)
     import numpy as np
-    lang = "en-gb" if voice.startswith("b") else "en-us"
-    samples, sr = kokoro().create(text, voice=voice, speed=0.95 if rel.startswith("w/") else 1.0, lang=lang)
+    if "+" in voice:  # 두 사람 대화: Q 와 A 를 각각 만들어 사이에 쉼을 둔다
+        v1, v2 = voice.split("+")
+        q, a = text.split(" / A:", 1)
+        parts = []
+        for t, v in ((q[2:].strip(), v1), (a.strip(), v2)):
+            smp, sr = kokoro().create(t, voice=v, speed=1.0, lang="en-gb" if v.startswith("b") else "en-us")
+            parts.append(np.asarray(smp, dtype=np.float32))
+        samples = np.concatenate([parts[0], np.zeros(int(0.6 * sr), dtype=np.float32), parts[1]])
+    else:
+        lang = "en-gb" if voice.startswith("b") else "en-us"
+        samples, sr = kokoro().create(text, voice=voice, speed=0.95 if rel.startswith("w/") else 1.0, lang=lang)
     # 앞뒤 무음 정리 + 짧은 여백
     a = np.asarray(samples, dtype=np.float32)
     nz = np.where(np.abs(a) > 0.01)[0]

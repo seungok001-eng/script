@@ -2617,5 +2617,1287 @@
     "k": "동사 arrive를 수식하는 '곧' → shortly(= soon)."
    }
   }
+ ],
+ "lc": [
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: When is the report due? / A: Ms. Kim is *still reviewing* it.",
+   "k": "Q: 보고서 마감이 언제예요? / A: 김 씨가 아직 검토하고 있어요.",
+   "key": "still reviewing",
+   "keyKo": "아직 검토 중인 (→ 아직 정해지지 않았다)",
+   "tip": "When 질문에 시점 대신 '아직 검토 중'이라고 돌려 답하는 전형적인 정답 유형이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Who's going to lead the training session? / A: *It hasn't been decided yet.*",
+   "k": "Q: 교육은 누가 진행하나요? / A: 아직 안 정해졌어요.",
+   "key": "It hasn't been decided yet.",
+   "keyKo": "아직 결정되지 않았다",
+   "tip": "Who·When·Where 등 거의 모든 의문사 질문에 정답이 되는 '미정' 응답이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Where should I put these boxes? / A: *Let me ask* the office manager.",
+   "k": "Q: 이 상자들 어디에 둘까요? / A: 사무장님께 여쭤볼게요.",
+   "key": "Let me ask ~",
+   "keyKo": "~에게 물어볼게요 (→ 나도 잘 모른다)",
+   "tip": "장소를 직접 말하지 않아도 '확인해 보겠다'는 응답이 정답이 될 수 있다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Did you send the invoice to the client? / A: *I thought you did.*",
+   "k": "Q: 고객한테 청구서 보냈어요? / A: 당신이 보낸 줄 알았는데요.",
+   "key": "I thought you did.",
+   "keyKo": "당신이 한 줄 알았다 (→ 나는 안 했다)",
+   "tip": "Yes/No 없이 상대에게 되묻듯 답하는 응답. 대동사 did가 send를 대신한다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: How much will the roof repairs cost? / A: *We're still waiting for* an estimate.",
+   "k": "Q: 지붕 수리비가 얼마나 들까요? / A: 아직 견적을 기다리고 있어요.",
+   "key": "We're still waiting for ~",
+   "keyKo": "아직 ~을 기다리는 중이다 (→ 아직 모른다)",
+   "tip": "How much 질문에 금액 대신 estimate(견적)나 quote를 언급하는 응답이 자주 정답이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Why isn't the printer working? / A: *Didn't you get the email* about the maintenance?",
+   "k": "Q: 프린터가 왜 안 되죠? / A: 점검 관련 이메일 못 받으셨어요?",
+   "key": "Didn't you get the email?",
+   "keyKo": "이메일 못 받았어요? (→ 이미 공지된 내용이다)",
+   "tip": "질문에 질문으로 답하는 유형. 이유를 직접 말하지 않고 정보 출처를 알려 준다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Should we hire more staff or pay overtime? / A: *That depends on* the budget.",
+   "k": "Q: 직원을 더 뽑을까요, 아니면 초과 근무 수당을 줄까요? / A: 그건 예산에 달렸죠.",
+   "key": "That depends on ~",
+   "keyKo": "그건 ~에 달려 있다 (→ 지금은 정할 수 없다)",
+   "tip": "선택 의문문에서 둘 중 하나를 고르지 않는 응답도 정답이 된다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Which hotel are we staying at in Chicago? / A: *Check the itinerary* I sent you.",
+   "k": "Q: 시카고에서 어느 호텔에 묵어요? / A: 제가 보낸 일정표를 확인해 보세요.",
+   "key": "check the itinerary",
+   "keyKo": "일정표를 확인하다 (→ 답은 일정표에 있다)",
+   "tip": "답 대신 '자료를 보라'고 안내하는 응답. schedule, handout, website도 같은 패턴이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Is the new scheduling software easy to use? / A: *I haven't had a chance to* try it yet.",
+   "k": "Q: 새 일정 관리 소프트웨어 쓰기 쉬워요? / A: 아직 써 볼 기회가 없었어요.",
+   "key": "I haven't had a chance to ~",
+   "keyKo": "아직 ~할 기회가 없었다",
+   "tip": "Yes/No 의문문에 '아직 안 해 봐서 모른다'고 답하는 전형적인 정답이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: When does the product launch take place? / A: *It's been postponed* indefinitely.",
+   "k": "Q: 제품 출시 행사는 언제예요? / A: 무기한 연기됐어요.",
+   "key": "It's been postponed.",
+   "keyKo": "연기되었다 (→ 정해진 시점이 없다)",
+   "tip": "When 질문에 '연기·취소'로 답하는 응답은 시점이 없어도 정답이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Who's handling the Anderson account now? / A: *Jason would know.*",
+   "k": "Q: 지금 앤더슨 거래처는 누가 맡고 있어요? / A: 제이슨이 알 거예요.",
+   "key": "~ would know",
+   "keyKo": "~가 알 거예요 (→ 나는 모른다)",
+   "tip": "제3자를 알려 주는 응답. 질문의 단어를 그대로 반복하는 보기보다 이런 응답이 정답인 경우가 많다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Can you give me a ride to the airport tomorrow? / A: My car is *in the shop*.",
+   "k": "Q: 내일 공항까지 태워 줄 수 있어요? / A: 제 차가 정비소에 있어요.",
+   "key": "in the shop",
+   "keyKo": "(차가) 수리 중인 (→ 태워 줄 수 없다)",
+   "tip": "No 없이 사정을 설명해 거절하는 유형. shop을 '가게'로만 들으면 놓친다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Have the new brochures arrived? / A: *I'll check with* the front desk.",
+   "k": "Q: 새 안내 책자 도착했어요? / A: 안내 데스크에 확인해 볼게요.",
+   "key": "check with ~",
+   "keyKo": "~에게 확인해 보다",
+   "tip": "'I'll find out.', 'Let me look into it.'으로도 나온다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Should I make copies of the agenda? / A: *Haven't you heard?* The meeting was called off.",
+   "k": "Q: 안건 자료 복사해 둘까요? / A: 못 들었어요? 회의 취소됐어요.",
+   "key": "Haven't you heard?",
+   "keyKo": "못 들었어요? (→ 상황이 바뀌어 할 필요가 없다)",
+   "tip": "제안 질문에 '상황이 바뀌었다'는 정보로 답하는 우회 응답이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Are you going to the company picnic on Saturday? / A: *I have other plans.*",
+   "k": "Q: 토요일 회사 야유회 가세요? / A: 다른 일정이 있어요.",
+   "key": "I have other plans.",
+   "keyKo": "다른 계획이 있다 (→ 못 간다)",
+   "tip": "No를 말하지 않는 불참 응답. 'I'll be out of town.'도 같은 의미로 자주 나온다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Excuse me, where's the nearest post office? / A: Sorry, *I'm new here myself*.",
+   "k": "Q: 실례지만 제일 가까운 우체국이 어디예요? / A: 죄송해요, 저도 여기 처음이에요.",
+   "key": "I'm new here myself.",
+   "keyKo": "저도 여기가 처음이다 (→ 모른다)",
+   "tip": "길·위치를 묻는 Where 질문에 대한 대표적인 '모른다' 응답이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Would you like a window seat or an aisle seat? / A: *Either is fine.*",
+   "k": "Q: 창가 자리로 드릴까요, 통로 자리로 드릴까요? / A: 아무 데나 괜찮아요.",
+   "key": "Either is fine.",
+   "keyKo": "둘 다 괜찮다",
+   "tip": "선택 의문문의 단골 정답. 'Whichever is cheaper.', 'I don't have a preference.'도 같은 유형이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Shouldn't the technician be here by now? / A: He *just called to say* he's stuck in traffic.",
+   "k": "Q: 기술자가 지금쯤 와 있어야 하지 않나요? / A: 방금 차가 막힌다고 전화 왔어요.",
+   "key": "~ just called to say",
+   "keyKo": "방금 ~라고 전화가 왔다",
+   "tip": "부정 의문문도 일반 의문문처럼 내용만 판단한다. 늦는 이유를 알려 주면 정답이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: How did the client like our proposal? / A: *We haven't heard back* from them yet.",
+   "k": "Q: 고객이 우리 제안서를 어떻게 생각했대요? / A: 아직 답을 못 받았어요.",
+   "key": "hear back (from)",
+   "keyKo": "~에게서 회신을 받다",
+   "tip": "결과·반응을 묻는 질문에 '아직 연락이 없다'고 답하는 유형이다."
+  },
+  {
+   "g": "Part 2 우회 응답",
+   "e": "Q: Do you know where the spare keys are? / A: *Try* the top drawer.",
+   "k": "Q: 여분 열쇠가 어디 있는지 아세요? / A: 맨 위 서랍을 찾아보세요.",
+   "key": "Try ~",
+   "keyKo": "~을 찾아보세요, ~에 알아보세요",
+   "tip": "Do you know ~? 간접 의문문은 Yes/No보다 뒤의 의문사(where)에 맞는 답을 고른다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "*Would you mind* closing the window? It's a little cold in here.",
+   "k": "창문 좀 닫아 주시겠어요? 여기 좀 춥네요.",
+   "key": "Would you mind ~ing?",
+   "keyKo": "~해 주시겠어요?",
+   "tip": "mind는 '꺼리다'라서 수락할 때 'Not at all.', 'Of course not.'처럼 부정으로 답한다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Would you mind if I borrowed your stapler? / A: *Not at all.* It's on my desk.",
+   "k": "Q: 스테이플러 좀 빌려도 될까요? / A: 그럼요. 제 책상 위에 있어요.",
+   "key": "Not at all.",
+   "keyKo": "전혀요 (→ 괜찮아요, 수락)",
+   "tip": "Would you mind 질문에 'Yes, I would.'라고 하면 '싫다'는 거절이 된다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "*Why don't we* take a short break before the next session?",
+   "k": "다음 세션 전에 잠깐 쉬는 게 어때요?",
+   "key": "Why don't we ~?",
+   "keyKo": "~하는 게 어때요? (제안)",
+   "tip": "Why로 시작하지만 이유를 묻는 게 아니다. Because로 시작하는 보기는 오답이다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Why don't we order lunch for the whole team? / A: *Sounds good to me.*",
+   "k": "Q: 팀 전체 점심을 주문하는 게 어때요? / A: 좋아요.",
+   "key": "Sounds good (to me).",
+   "keyKo": "좋아요 (동의)",
+   "tip": "제안 수락 표현. 'Good idea.', 'Let's do that.'도 같은 기능이다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "*Could you* send me the updated figures by noon?",
+   "k": "정오까지 수정된 수치를 보내 주시겠어요?",
+   "key": "Could you ~?",
+   "keyKo": "~해 주시겠어요? (정중한 요청)",
+   "tip": "요청에는 'Sure.', 'No problem.' 같은 수락이나 이유를 댄 거절이 정답이 된다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Could someone call the caterer to confirm the order? / A: Sure, *I'll take care of it*.",
+   "k": "Q: 누가 출장 요리 업체에 전화해서 주문 확인 좀 해 줄래요? / A: 네, 제가 처리할게요.",
+   "key": "I'll take care of it.",
+   "keyKo": "제가 처리할게요",
+   "tip": "'I'll handle it.', 'Leave it to me.'로 바뀌어 나온다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Can you cover my shift on Friday? / A: *I'm afraid I can't.* I'll be out of town.",
+   "k": "Q: 금요일에 제 근무 좀 대신해 줄 수 있어요? / A: 미안하지만 안 되겠어요. 그날 멀리 가 있거든요.",
+   "key": "I'm afraid I can't.",
+   "keyKo": "죄송하지만 할 수 없다 (정중한 거절)",
+   "tip": "I'm afraid는 '두렵다'가 아니라 유감을 나타내는 완곡 표현이다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "*How about* meeting at the café across the street?",
+   "k": "길 건너 카페에서 만나는 게 어때요?",
+   "key": "How about ~?",
+   "keyKo": "~하는 게 어때요? (제안)",
+   "tip": "How로 시작해도 방법을 묻는 게 아니다. 뒤에 명사나 동명사가 오면 제안이다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Should we take a taxi to the convention center? / A: *I'd rather* walk; it's not far.",
+   "k": "Q: 컨벤션 센터까지 택시 탈까요? / A: 저는 걷는 게 좋겠어요. 멀지 않거든요.",
+   "key": "I'd rather ~",
+   "keyKo": "차라리 ~하겠다 (다른 안 제시)",
+   "tip": "제안을 받아들이지 않고 대안을 내는 응답. 'I'd prefer to ~'로도 나온다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "*Would you like me to* make copies of the agenda?",
+   "k": "제가 안건 자료를 복사해 드릴까요?",
+   "key": "Would you like me to ~?",
+   "keyKo": "제가 ~해 드릴까요? (도움 제안)",
+   "tip": "Would you like to ~?(~하실래요?)와 달리 me가 들어가면 화자가 해 주겠다는 제안이다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Do you want me to pick you up at the station? / A: *That would be great*, thanks.",
+   "k": "Q: 역으로 데리러 갈까요? / A: 그래 주면 정말 좋죠, 고마워요.",
+   "key": "That would be great.",
+   "keyKo": "그러면 정말 좋겠다 (수락)",
+   "tip": ""
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Would you like some help with those boxes? / A: Thanks, but *I can manage*.",
+   "k": "Q: 그 상자들 옮기는 거 도와드릴까요? / A: 고맙지만 혼자 할 수 있어요.",
+   "key": "I can manage.",
+   "keyKo": "혼자 할 수 있다 (도움 사양)",
+   "tip": "manage를 '관리하다'로만 알면 놓친다. 여기서는 '그럭저럭 해내다'라는 뜻이다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "*Let me know if* you need anything else for the presentation.",
+   "k": "발표 준비에 필요한 게 더 있으면 알려 주세요.",
+   "key": "Let me know if ~",
+   "keyKo": "~하면 알려 주세요",
+   "tip": "대화·담화 마무리에 자주 나오며, 추가 요청이 있으면 연락하라는 뜻이다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Is it all right if I leave a little early today? / A: *Go ahead.*",
+   "k": "Q: 오늘 조금 일찍 퇴근해도 될까요? / A: 그러세요.",
+   "key": "Go ahead.",
+   "keyKo": "그러세요 (허락)",
+   "tip": "허락 요청에는 'Sure.', 'Of course.'가 정답이다. 'I left early.'처럼 시제를 바꾼 보기는 함정이다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Could you show the new intern around the office? / A: *I'd be happy to.*",
+   "k": "Q: 새 인턴한테 사무실 좀 구경시켜 줄래요? / A: 기꺼이요.",
+   "key": "I'd be happy to.",
+   "keyKo": "기꺼이 하겠다",
+   "tip": "happy를 듣고 기분을 묻는 질문으로 착각하지 말 것. 요청을 수락하는 표현이다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "*Can I get you* something to drink while you wait?",
+   "k": "기다리시는 동안 마실 것 좀 갖다 드릴까요?",
+   "key": "Can I get you ~?",
+   "keyKo": "~을 갖다 드릴까요?",
+   "tip": "get이 '가져다주다'의 뜻이다. 응답은 'Just some water, please.'처럼 짧게 나온다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: The client wants the contract revised by three o'clock. / A: *I'm on it.*",
+   "k": "Q: 고객이 계약서를 3시까지 수정해 달래요. / A: 바로 할게요.",
+   "key": "I'm on it.",
+   "keyKo": "바로 처리하겠다",
+   "tip": "Part 2 평서문 문제에서도 숨은 요청을 파악해 수락 응답을 고른다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Would you like to join us for dinner tonight? / A: *I'd love to, but* I have to finish this report.",
+   "k": "Q: 오늘 저녁 저희랑 같이 식사하실래요? / A: 그러고 싶은데, 이 보고서를 끝내야 해요.",
+   "key": "I'd love to, but ~",
+   "keyKo": "그러고 싶지만 ~ (정중한 거절)",
+   "tip": "love만 듣고 수락으로 판단하면 안 된다. but 뒤가 핵심이다."
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "Q: Should I call a repair technician? / A: *I don't think that's necessary.*",
+   "k": "Q: 수리 기사를 부를까요? / A: 그럴 필요는 없을 것 같아요.",
+   "key": "I don't think that's necessary.",
+   "keyKo": "그럴 필요 없을 것 같다 (완곡한 거절)",
+   "tip": ""
+  },
+  {
+   "g": "Part 2 요청·제안 응답",
+   "e": "*Do you need a hand* setting up the projector?",
+   "k": "프로젝터 설치하는 거 도와드릴까요?",
+   "key": "Do you need a hand?",
+   "keyKo": "도움이 필요하세요?",
+   "tip": "give/lend a hand도 '돕다'라는 뜻이다. hand를 손 동작으로 해석한 보기는 오답이다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "Could we *reschedule* our meeting for Thursday afternoon?",
+   "k": "회의를 목요일 오후로 다시 잡을 수 있을까요?",
+   "key": "reschedule",
+   "keyKo": "일정을 변경하다, 다시 잡다",
+   "tip": "Part 3 전화 목적 문제에서 'To change an appointment'로 패러프레이즈된다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "The deadline has been *pushed back* to next Friday.",
+   "k": "마감일이 다음 주 금요일로 미뤄졌어요.",
+   "key": "push back",
+   "keyKo": "(일정을) 뒤로 미루다",
+   "tip": "push back = postpone = delay. 반대 의미인 move up과 바꿔 내는 함정에 주의한다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "We need to *move up* the product launch by a week.",
+   "k": "제품 출시를 일주일 앞당겨야 해요.",
+   "key": "move up",
+   "keyKo": "(일정을) 앞당기다",
+   "tip": "move up = bring forward. move만 듣고 장소 이동으로 착각하기 쉽다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "Sorry, I'm *running late*. The traffic on the highway is terrible.",
+   "k": "죄송해요, 좀 늦을 것 같아요. 고속도로가 너무 막혀요.",
+   "key": "be running late",
+   "keyKo": "(예정보다) 늦어지고 있다",
+   "tip": "늦는 이유(교통, 이전 회의)가 바로 뒤에 나오므로 이유를 묻는 문제의 단서가 된다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "I'm sorry, but we're *fully booked* on Saturday night.",
+   "k": "죄송하지만 토요일 밤은 예약이 다 찼습니다.",
+   "key": "fully booked",
+   "keyKo": "예약이 꽉 찬",
+   "tip": "'no rooms available', 'no openings'로 바뀌어 나온다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "The outdoor concert was *called off* because of the storm.",
+   "k": "야외 콘서트가 폭풍 때문에 취소됐어요.",
+   "key": "call off",
+   "keyKo": "취소하다",
+   "tip": "call off = cancel. call을 듣고 전화 관련 보기를 고르면 오답이다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "The workshop has been postponed *until further notice*.",
+   "k": "워크숍은 추후 공지가 있을 때까지 연기되었습니다.",
+   "key": "until further notice",
+   "keyKo": "추후 공지가 있을 때까지",
+   "tip": "새 일정이 아직 없다는 뜻. 'A new date has not been set.'이 정답 보기로 나온다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "Are you *available* on Tuesday morning for a quick call?",
+   "k": "화요일 오전에 잠깐 통화할 시간 되세요?",
+   "key": "be available",
+   "keyKo": "(사람이) 시간이 되는",
+   "tip": "사람에게는 '시간이 되는', 사물에는 '이용 가능한'. free, open으로 바꿔 나온다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "Does three o'clock *work for* you?",
+   "k": "3시 괜찮으세요?",
+   "key": "work for",
+   "keyKo": "~에게 (일정이) 괜찮다",
+   "tip": "work를 '일하다'로만 알면 놓친다. suit, be convenient for와 같은 뜻이다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "Dr. Patel is busy today, but she can *fit you in* at four.",
+   "k": "파텔 선생님이 오늘 바쁘시지만 4시에 진료를 잡아 드릴 수 있어요.",
+   "key": "fit ~ in",
+   "keyKo": "(바쁜 일정에) ~을 끼워 넣다",
+   "tip": "squeeze ~ in도 같은 뜻으로 자주 쓰인다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "I have a *scheduling conflict* that day, so I can't attend the seminar.",
+   "k": "그날 일정이 겹쳐서 세미나에 참석할 수 없어요.",
+   "key": "scheduling conflict",
+   "keyKo": "일정 충돌, 일정이 겹침",
+   "tip": "불참 이유 문제의 정답이 'She has another commitment.'로 패러프레이즈된다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "I'm *tied up* in meetings all morning, but I'm free after lunch.",
+   "k": "오전 내내 회의 때문에 꼼짝 못 하지만 점심 이후엔 시간이 돼요.",
+   "key": "be tied up",
+   "keyKo": "(일 때문에) 몹시 바쁜",
+   "tip": "busy의 패러프레이즈. '묶여 있다'는 물리적 의미로 만든 보기에 주의한다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "The renovation project is already two weeks *behind schedule*.",
+   "k": "보수 공사가 벌써 예정보다 2주 늦어졌어요.",
+   "key": "behind schedule",
+   "keyKo": "예정보다 늦은",
+   "tip": "반대는 ahead of schedule, 예정대로는 on schedule. 세 가지를 구분하는 문제가 나온다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "Thank you for coming in *on such short notice*.",
+   "k": "갑작스러운 연락에도 이렇게 와 주셔서 감사합니다.",
+   "key": "on short notice",
+   "keyKo": "촉박하게, 갑자기 통보를 받고",
+   "tip": ""
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "I'm calling to *confirm your appointment* with Dr. Lee tomorrow at ten.",
+   "k": "내일 10시 이 선생님 진료 예약을 확인하려고 전화드렸습니다.",
+   "key": "confirm an appointment",
+   "keyKo": "예약을 확인하다",
+   "tip": "병원·치과 음성 메시지에서 전화 목적 문제의 정답으로 자주 나온다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "I'm stuck at the airport, so I won't be able to *make it* to the meeting.",
+   "k": "공항에 발이 묶여서 회의에 못 갈 것 같아요.",
+   "key": "make it (to)",
+   "keyKo": "(제시간에) 가다, 참석하다",
+   "tip": "can't make it은 불참을 뜻한다. make를 '만들다'로 해석한 보기는 오답이다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "*Something came up*, so I have to cancel our lunch today.",
+   "k": "일이 좀 생겨서 오늘 점심 약속을 취소해야겠어요.",
+   "key": "Something came up.",
+   "keyKo": "(갑자기) 일이 생겼다",
+   "tip": "구체적인 사정을 밝히지 않고 약속을 취소·변경할 때 쓰는 말이다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "Sorry I'm late. I *got held up* at the bank.",
+   "k": "늦어서 미안해요. 은행에서 일이 늦어졌어요.",
+   "key": "get held up",
+   "keyKo": "(예상치 못하게) 지체되다",
+   "tip": "hold up을 '들어 올리다'로 해석하지 말 것. 늦은 이유를 나타낸다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "There's been *a last-minute change* to the conference schedule.",
+   "k": "학회 일정이 막판에 변경되었습니다.",
+   "key": "a last-minute change",
+   "keyKo": "막판 변경, 직전 변경",
+   "tip": "담화 초반에 나오면 무엇이 바뀌었는지가 문제로 이어진다."
+  },
+  {
+   "g": "일정·약속 변경",
+   "e": "I'll *pencil you in* for Monday, and you can confirm by Friday.",
+   "k": "일단 월요일로 잡아 둘게요. 금요일까지 확정해 주세요.",
+   "key": "pencil ~ in",
+   "keyKo": "(잠정적으로) 일정에 넣어 두다",
+   "tip": "연필로 적어 두듯 '아직 확정 전'이라는 뉘앙스가 핵심이다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "Please hold, and I'll *put you through* to the billing department.",
+   "k": "잠시만 기다리시면 청구 부서로 연결해 드리겠습니다.",
+   "key": "put ~ through",
+   "keyKo": "(전화를) 연결해 주다",
+   "tip": "'transfer your call', 'connect you'로 패러프레이즈된다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "Could you *hold the line* for a moment? I'll check his schedule.",
+   "k": "잠시 끊지 말고 기다려 주시겠어요? 그분 일정을 확인해 볼게요.",
+   "key": "hold the line",
+   "keyKo": "(전화를) 끊지 않고 기다리다",
+   "tip": "'Hold on.', 'Please hold.'처럼 짧게도 쓴다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "He's not at his desk right now. Would you like to *leave a message*?",
+   "k": "지금 자리에 안 계신데, 메시지 남기시겠어요?",
+   "key": "leave a message",
+   "keyKo": "메시지를 남기다",
+   "tip": "leave는 전화 건 사람이 남기는 것, take는 받는 사람이 받아 적는 것이다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "She's in a meeting. Can I *take a message*?",
+   "k": "회의 중이신데, 메시지 전해 드릴까요?",
+   "key": "take a message",
+   "keyKo": "메시지를 받아 두다",
+   "tip": "Part 3에서 화자가 해 주겠다는 일로 'Write down a message'가 정답이 된다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "I'll *get back to you* as soon as I have the numbers.",
+   "k": "수치가 나오는 대로 다시 연락드릴게요.",
+   "key": "get back to",
+   "keyKo": "~에게 나중에 다시 연락하다",
+   "tip": "'contact you later', 'respond'로 바뀌어 나온다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "You can reach me directly at *extension* 4127.",
+   "k": "내선 4127번으로 저에게 직접 연락하시면 됩니다.",
+   "key": "extension",
+   "keyKo": "내선 번호",
+   "tip": "'연장'이라는 뜻도 있지만 전화 맥락에서는 내선 번호다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "Hi, Ms. Grant. I'm *returning your call* from this morning.",
+   "k": "안녕하세요, 그랜트 씨. 오늘 아침에 주신 전화에 회신드립니다.",
+   "key": "return one's call",
+   "keyKo": "회신 전화를 하다",
+   "tip": "전화 목적 문제에서 'To respond to a message'로 패러프레이즈된다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "What's the best number to *reach* you at?",
+   "k": "어느 번호로 연락드리면 될까요?",
+   "key": "reach (someone)",
+   "keyKo": "~에게 연락하다",
+   "tip": "'도착하다', '손을 뻗다' 외에 '연락이 닿다'의 뜻으로 자주 쓰인다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "Mr. Park is out to lunch. Could you *call back* in an hour?",
+   "k": "박 씨는 점심 식사하러 나가셨어요. 한 시간 뒤에 다시 전화해 주시겠어요?",
+   "key": "call back",
+   "keyKo": "다시 전화하다",
+   "tip": "부재 이유(out to lunch)와 다시 걸 시간(in an hour)이 함께 문제로 나온다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "Ms. Rivera is *away from her desk* at the moment.",
+   "k": "리베라 씨는 지금 자리에 안 계십니다.",
+   "key": "away from one's desk",
+   "keyKo": "자리를 비운",
+   "tip": "not available, out of the office와 함께 부재를 나타낸다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "He's *on another line*. Would you like to hold?",
+   "k": "다른 전화를 받고 계세요. 기다리시겠어요?",
+   "key": "on another line",
+   "keyKo": "다른 전화를 받는 중인",
+   "tip": ""
+  },
+  {
+   "g": "전화·메시지",
+   "e": "Sorry, we *got cut off*. I think I lost the signal in the elevator.",
+   "k": "죄송해요, 전화가 끊겼네요. 엘리베이터에서 신호가 안 잡혔나 봐요.",
+   "key": "get cut off",
+   "keyKo": "(통화가) 끊기다",
+   "tip": "cut을 듣고 자르는 동작이나 예산 삭감 보기를 고르면 오답이다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "I'm sorry, but I think you *have the wrong number*.",
+   "k": "죄송하지만 전화 잘못 거신 것 같아요.",
+   "key": "have the wrong number",
+   "keyKo": "전화를 잘못 걸다",
+   "tip": ""
+  },
+  {
+   "g": "전화·메시지",
+   "e": "Q: Hello, may I speak with Laura Kim? / A: *Speaking.* How can I help you?",
+   "k": "Q: 여보세요, 로라 김 씨와 통화할 수 있을까요? / A: 전데요. 무엇을 도와드릴까요?",
+   "key": "Speaking.",
+   "keyKo": "(전화에서) 제가 본인입니다",
+   "tip": "'This is she.', 'This is he.'도 같은 뜻이다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "Hi, *this is* Mark Evans *calling from* Brightline Office Supplies.",
+   "k": "안녕하세요, 브라이트라인 사무용품의 마크 에번스입니다.",
+   "key": "This is ~ calling from ~",
+   "keyKo": "~사의 ~입니다 (전화 자기소개)",
+   "tip": "음성 메시지 첫 문장. 화자의 소속·업종을 묻는 문제의 정답 근거다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "*I'm calling about* the job opening posted on your website.",
+   "k": "웹사이트에 올라온 채용 공고 건으로 전화드렸습니다.",
+   "key": "I'm calling about ~",
+   "keyKo": "~ 건으로 전화드렸습니다",
+   "tip": "전화 목적 문제의 핵심 단서. 'I'm calling to ~', regarding도 같은 신호다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "I tried calling him, but it *went straight to voicemail*.",
+   "k": "그 사람한테 전화해 봤는데 바로 음성 사서함으로 넘어갔어요.",
+   "key": "go to voicemail",
+   "keyKo": "음성 사서함으로 넘어가다",
+   "tip": ""
+  },
+  {
+   "g": "전화·메시지",
+   "e": "*Give me a call* when you get a chance.",
+   "k": "시간 날 때 전화 주세요.",
+   "key": "give ~ a call",
+   "keyKo": "~에게 전화하다",
+   "tip": "음성 메시지 끝의 요청 사항 문제에서 'Return a call'이 정답으로 나온다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "Could you *speak up* a little? I can barely hear you.",
+   "k": "조금만 크게 말씀해 주시겠어요? 잘 안 들려서요.",
+   "key": "speak up",
+   "keyKo": "더 크게 말하다",
+   "tip": "'의견을 말하다'라는 뜻도 있지만 전화에서는 목소리를 키워 달라는 뜻이다."
+  },
+  {
+   "g": "전화·메시지",
+   "e": "I'll *pass along* your message as soon as he gets back.",
+   "k": "그분이 돌아오시는 대로 메시지 전해 드릴게요.",
+   "key": "pass along",
+   "keyKo": "(메시지를) 전달하다",
+   "tip": "pass on, let him know로 바뀌어 나온다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "Let's *go over* the sales figures before the client arrives.",
+   "k": "고객이 오기 전에 매출 수치를 검토해 봅시다.",
+   "key": "go over",
+   "keyKo": "검토하다, 살펴보다",
+   "tip": "review, look over로 패러프레이즈된다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "We need to *wrap up* the meeting by four.",
+   "k": "4시까지는 회의를 마무리해야 해요.",
+   "key": "wrap up",
+   "keyKo": "마무리하다, 끝내다",
+   "tip": "wrap을 '포장하다'로 해석한 보기는 오답. finish, conclude와 같은 뜻이다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "What's next *on the agenda*?",
+   "k": "다음 안건은 뭐죠?",
+   "key": "on the agenda",
+   "keyKo": "(회의) 안건에 있는",
+   "tip": "Part 3에서 '무엇을 논의하는가' 문제의 단서가 된다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "Ms. Ortiz will *take over* the project while I'm on leave.",
+   "k": "제가 휴가 가 있는 동안 오티즈 씨가 프로젝트를 맡을 거예요.",
+   "key": "take over",
+   "keyKo": "(업무를) 인계받다, 맡다",
+   "tip": "'assume responsibility for', 'be in charge of'로 바뀌어 나온다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "Can you *fill in for* me at the staff meeting tomorrow?",
+   "k": "내일 직원회의에 저 대신 들어가 줄 수 있어요?",
+   "key": "fill in for",
+   "keyKo": "~을 대신하다",
+   "tip": "fill in(서류를 작성하다)과 구분한다. for가 붙으면 '대신하다'다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "I'm just *following up on* the email I sent last week.",
+   "k": "지난주에 보낸 이메일 건으로 확인차 연락드렸어요.",
+   "key": "follow up on",
+   "keyKo": "~에 대해 후속 조치하다, 다시 확인하다",
+   "tip": "전화·이메일 목적 문제에서 '이전 연락에 대한 후속'이라는 정답의 근거다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "Let's *touch base* next week to see how the project is going.",
+   "k": "다음 주에 다시 연락해서 프로젝트 진행 상황을 확인해요.",
+   "key": "touch base",
+   "keyKo": "(잠깐) 연락해 상황을 공유하다",
+   "tip": "야구에서 온 말이지만 업무 맥락에서는 '연락하다'. check in과 비슷하다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "I'd like to *bring up* one more issue before we finish.",
+   "k": "끝내기 전에 한 가지 문제를 더 말씀드리고 싶습니다.",
+   "key": "bring up",
+   "keyKo": "(안건·문제를) 꺼내다, 제기하다",
+   "tip": "raise, mention으로 패러프레이즈된다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "We need to *come up with* a new marketing strategy by Friday.",
+   "k": "금요일까지 새 마케팅 전략을 생각해 내야 해요.",
+   "key": "come up with",
+   "keyKo": "(아이디어를) 생각해 내다",
+   "tip": "develop, think of로 바뀌어 나온다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "Who's *in charge of* the annual conference this year?",
+   "k": "올해 연례 회의는 누가 담당하나요?",
+   "key": "be in charge of",
+   "keyKo": "~을 담당하는",
+   "tip": "Who 질문에 이름 대신 부서명이나 직책으로 답해도 정답이다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "Please *hand in* your expense reports by Friday.",
+   "k": "금요일까지 경비 보고서를 제출해 주세요.",
+   "key": "hand in",
+   "keyKo": "제출하다",
+   "tip": "submit, turn in과 같은 뜻. hand out(나눠 주다)과 혼동하지 말 것."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "Are we still *on track* to finish by the end of the month?",
+   "k": "이달 말까지 끝내는 일정대로 잘 진행되고 있나요?",
+   "key": "on track",
+   "keyKo": "(계획대로) 순조롭게 진행 중인",
+   "tip": "on schedule과 같은 뜻. track을 선로·트랙으로 해석한 보기는 오답이다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "We'll have to work overtime to *meet the deadline*.",
+   "k": "마감을 맞추려면 초과 근무를 해야 할 거예요.",
+   "key": "meet the deadline",
+   "keyKo": "마감을 맞추다",
+   "tip": "meet을 '만나다'로 해석하면 안 된다. meet a goal, meet demand도 '충족하다'라는 뜻이다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "*Keep me posted* on any changes to the budget.",
+   "k": "예산에 변동이 생기면 계속 알려 주세요.",
+   "key": "keep ~ posted",
+   "keyKo": "~에게 계속 소식을 알려 주다",
+   "tip": "keep me updated, let me know와 같은 뜻이다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "The board has decided to *go ahead with* the merger.",
+   "k": "이사회가 합병을 추진하기로 결정했습니다.",
+   "key": "go ahead with",
+   "keyKo": "~을 진행하다, 추진하다",
+   "tip": "단독으로 쓰는 'Go ahead.'(그러세요)와 달리 with가 붙으면 계획을 실행한다는 뜻이다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "The director still needs to *sign off on* the budget.",
+   "k": "예산안은 아직 이사님의 승인이 필요해요.",
+   "key": "sign off on",
+   "keyKo": "~을 (최종) 승인하다",
+   "tip": "approve의 패러프레이즈. sign off를 '방송을 마치다'로만 알면 놓친다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "Could you *put together* a short presentation for Monday?",
+   "k": "월요일까지 짧은 발표 자료를 준비해 줄 수 있어요?",
+   "key": "put together",
+   "keyKo": "(자료를) 준비하다, 만들다",
+   "tip": "prepare, create로 바뀌어 나온다."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "I'll *look into* the billing error and let you know.",
+   "k": "청구 오류를 알아보고 알려 드릴게요.",
+   "key": "look into",
+   "keyKo": "~을 조사하다, 알아보다",
+   "tip": "investigate, check로 패러프레이즈된다. look at(보다)과 혼동하지 말 것."
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "All right, everyone, let's *get down to business*.",
+   "k": "자, 여러분, 본론으로 들어갑시다.",
+   "key": "get down to business",
+   "keyKo": "본론으로 들어가다, 일을 시작하다",
+   "tip": ""
+  },
+  {
+   "g": "회의·업무 진행",
+   "e": "We're *short-staffed* this week, so everyone needs to pitch in.",
+   "k": "이번 주는 일손이 부족해서 모두 힘을 보태야 해요.",
+   "key": "short-staffed",
+   "keyKo": "일손이 부족한",
+   "tip": "Part 3 문제점 문제에서 'not enough employees'로 패러프레이즈된다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "I'm sorry, that model is *out of stock* at the moment.",
+   "k": "죄송하지만 그 모델은 지금 재고가 없습니다.",
+   "key": "out of stock",
+   "keyKo": "재고가 없는, 품절된",
+   "tip": "sold out, unavailable, not in stock으로 바뀌어 나온다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "Do you have this jacket *in stock* in a medium?",
+   "k": "이 재킷 M 사이즈 재고 있어요?",
+   "key": "in stock",
+   "keyKo": "재고가 있는",
+   "tip": "stock은 동사로 '(물건을) 채우다'. Part 1의 be stocked with와 함께 기억한다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "I'd like to *place an order* for twenty boxes of printer paper.",
+   "k": "프린터 용지 20상자를 주문하고 싶습니다.",
+   "key": "place an order",
+   "keyKo": "주문하다",
+   "tip": "place를 '두다'로 해석하면 안 된다. order는 '주문'과 '순서' 둘 다 된다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "What's your *return policy* on electronics?",
+   "k": "전자 제품 반품 규정이 어떻게 되나요?",
+   "key": "return policy",
+   "keyKo": "반품 규정",
+   "tip": "return은 '반품'과 '돌아오다' 모두 가능하니 맥락으로 구분한다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "You'll need your *receipt* to return this item.",
+   "k": "이 제품을 반품하시려면 영수증이 필요합니다.",
+   "key": "receipt",
+   "keyKo": "영수증",
+   "tip": "p가 묵음이라 [리씨트]로 들린다. 'proof of purchase'로 패러프레이즈된다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "We can't give you cash back, but we can offer you *store credit*.",
+   "k": "현금 환불은 안 되지만 매장 적립금으로 드릴 수 있어요.",
+   "key": "store credit",
+   "keyKo": "매장 적립금 (그 매장에서만 쓸 수 있는 금액)",
+   "tip": "환불 대신 제시하는 해결책을 묻는 문제에서 자주 정답이 된다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "If you're not completely satisfied, you'll receive a *full refund*.",
+   "k": "완전히 만족하지 않으시면 전액 환불해 드립니다.",
+   "key": "full refund",
+   "keyKo": "전액 환불",
+   "tip": "'get your money back'으로 패러프레이즈된다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "Can I *exchange* this shirt *for* a larger size?",
+   "k": "이 셔츠를 더 큰 사이즈로 교환할 수 있을까요?",
+   "key": "exchange A for B",
+   "keyKo": "A를 B로 교환하다",
+   "tip": "교환(exchange)과 환불(refund)을 구분하는 문제가 자주 나온다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "The printer you want is *on back order*, but it should arrive in two weeks.",
+   "k": "원하시는 프린터는 입고 대기 중인데, 2주 안에 들어올 거예요.",
+   "key": "on back order",
+   "keyKo": "(재고가 없어) 입고 대기 중인",
+   "tip": "주문은 받지만 지금은 재고가 없다는 뜻. out of stock과 함께 나온다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "Orders over fifty dollars qualify for *free shipping*.",
+   "k": "50달러가 넘는 주문은 무료 배송됩니다.",
+   "key": "free shipping",
+   "keyKo": "무료 배송",
+   "tip": "광고 담화에서 혜택을 묻는 문제의 정답. 조건(금액·기간)까지 들어야 한다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "These running shoes are *on sale* this week. They're thirty percent off.",
+   "k": "이 운동화는 이번 주에 할인 중이에요. 30퍼센트 할인이에요.",
+   "key": "on sale",
+   "keyKo": "할인 중인",
+   "tip": "on sale은 '할인 중', for sale은 '판매 중'. 둘을 구분하는 함정이 있다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "This vacuum cleaner *comes with a two-year warranty*.",
+   "k": "이 청소기는 2년 품질 보증이 포함되어 있습니다.",
+   "key": "come with a warranty",
+   "keyKo": "품질 보증이 딸려 있다",
+   "tip": "warranty는 guarantee로 패러프레이즈된다. under warranty는 '보증 기간 내'다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "You can *track your order* online with this confirmation number.",
+   "k": "이 주문 확인 번호로 온라인에서 배송 조회를 하실 수 있어요.",
+   "key": "track an order",
+   "keyKo": "주문(배송) 상태를 조회하다",
+   "tip": ""
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "*Are you being helped*, sir? I'd be glad to show you our new models.",
+   "k": "도움 받고 계신가요, 고객님? 새로 나온 모델을 보여 드릴게요.",
+   "key": "Are you being helped?",
+   "keyKo": "다른 직원이 응대하고 있나요? (점원의 응대 인사)",
+   "tip": "Part 3 첫 대사에서 장소(매장)와 화자 관계(점원과 고객)를 알려 준다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "Q: Can I help you find something? / A: No, thanks. *I'm just looking*.",
+   "k": "Q: 찾으시는 거 있으세요? / A: 아뇨, 괜찮아요. 그냥 둘러보는 중이에요.",
+   "key": "I'm just looking.",
+   "keyKo": "그냥 구경하는 중이다",
+   "tip": "'I'm just browsing.'도 같은 뜻이다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "Breakfast is *complimentary* for all hotel guests.",
+   "k": "투숙객 전원에게 조식이 무료로 제공됩니다.",
+   "key": "complimentary",
+   "keyKo": "무료의, 무료로 제공되는",
+   "tip": "free of charge, at no cost로 패러프레이즈된다. complementary(보완적인)와 철자가 다르다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "Will you be *paying by credit card* or in cash?",
+   "k": "신용카드로 계산하시겠어요, 현금으로 하시겠어요?",
+   "key": "pay by credit card",
+   "keyKo": "신용카드로 결제하다",
+   "tip": "by card, in cash처럼 전치사가 다르다. 선택 의문문은 둘 중 하나나 제3의 답이 정답이다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "Enter the *promo code* at checkout to get ten percent off.",
+   "k": "결제할 때 프로모션 코드를 입력하시면 10퍼센트 할인됩니다.",
+   "key": "promo code",
+   "keyKo": "할인 코드",
+   "tip": "discount code, coupon code와 같은 말이다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "The blender I bought last week turned out to be *defective*.",
+   "k": "지난주에 산 믹서기가 알고 보니 불량이었어요.",
+   "key": "defective",
+   "keyKo": "결함이 있는, 불량인",
+   "tip": "Part 3 문제점 문제에서 'not working properly', faulty로 바뀌어 나온다."
+  },
+  {
+   "g": "쇼핑·서비스 대화",
+   "e": "I'd like to *make a reservation* for four at seven tonight.",
+   "k": "오늘 저녁 7시에 네 명 예약하고 싶습니다.",
+   "key": "make a reservation",
+   "keyKo": "예약하다",
+   "tip": "book a table로도 쓴다. 인원·시간 숫자가 문제로 나온다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: Shouldn't we check the budget before ordering new laptops? / A: *That's a good point.*",
+   "k": "Q: 새 노트북 주문하기 전에 예산을 확인해야 하지 않을까요? / A: 좋은 지적이에요.",
+   "key": "That's a good point.",
+   "keyKo": "좋은 지적이다 → 상대 의견을 인정하고 받아들인다",
+   "tip": "의도 파악 문제의 정답은 'To agree with a suggestion' 유형이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: Is there any way you could finish the report by Friday? / A: *I'll see what I can do.*",
+   "k": "Q: 금요일까지 보고서를 끝낼 방법이 없을까요? / A: 어떻게든 해 볼게요.",
+   "key": "I'll see what I can do.",
+   "keyKo": "할 수 있는 데까지 해 보겠다 → 확답은 못 하지만 요청을 들어주려 노력하겠다",
+   "tip": "수락도 거절도 아닌 '노력하겠다'는 의도. promise처럼 확정하는 보기는 오답이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: This has been a really long week. / A: *You can say that again.*",
+   "k": "Q: 이번 주 정말 길었네요. / A: 누가 아니래요.",
+   "key": "You can say that again.",
+   "keyKo": "정말 그렇다 → 강한 동의",
+   "tip": "'다시 말해 달라'는 요청이 아니다. repeat이 들어간 보기는 함정이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "I'd love to give you the day off, but *it's not my call*. You'll need to ask Mr. Chen.",
+   "k": "휴가를 드리고 싶지만 제가 결정할 일이 아니에요. 첸 씨께 여쭤보셔야 해요.",
+   "key": "It's not my call.",
+   "keyKo": "내가 결정할 일이 아니다 → 결정권이 다른 사람에게 있다",
+   "tip": "call을 '전화'로 들으면 함정에 빠진다. 여기서 call은 '결정'이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: We should really update our website. / A: *I couldn't agree more.*",
+   "k": "Q: 우리 웹사이트 정말 업데이트해야 해요. / A: 전적으로 동의해요.",
+   "key": "I couldn't agree more.",
+   "keyKo": "더할 나위 없이 동의한다 → 강한 동의",
+   "tip": "couldn't라는 부정형 때문에 반대 의견으로 오해하기 쉽다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Cutting costs by thirty percent? *That's easier said than done.*",
+   "k": "비용을 30퍼센트나 줄이자고요? 말이야 쉽죠.",
+   "key": "That's easier said than done.",
+   "keyKo": "말은 쉽지만 실행은 어렵다 → 제안의 실현 가능성을 의심한다",
+   "tip": "의도 파악 문제의 정답은 'To express doubt', 'To point out a difficulty' 유형이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "*Don't get me wrong*, I like the design. I'm just worried about the cost.",
+   "k": "오해하지 마세요, 디자인은 마음에 들어요. 비용이 좀 걱정될 뿐이에요.",
+   "key": "Don't get me wrong.",
+   "keyKo": "오해하지 마라 → 우려나 비판을 말하기 전에 완곡하게 덧붙인다",
+   "tip": "이 표현 뒤 but이나 just 다음에 나오는 말이 화자의 진짜 의견이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "The new supplier is cheaper, so *it's worth a try*.",
+   "k": "새 공급업체가 더 싸니까 한번 써 볼 만해요.",
+   "key": "It's worth a try.",
+   "keyKo": "시도해 볼 만하다 → 제안을 받아들이거나 권한다",
+   "tip": ""
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "That sounds great, but *we're on a tight budget* this quarter.",
+   "k": "좋은 생각이긴 한데 이번 분기는 예산이 빠듯해요.",
+   "key": "on a tight budget",
+   "keyKo": "예산이 빠듯한 → 비용이 드는 제안은 어렵다 (완곡한 거절)",
+   "tip": "제안을 거절하는 이유로 자주 나오며 'can't afford it'으로 패러프레이즈된다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: Did you know the office is moving next month? / A: Really? *That's news to me.*",
+   "k": "Q: 다음 달에 사무실 이전하는 거 알았어요? / A: 정말요? 처음 듣는 얘기예요.",
+   "key": "That's news to me.",
+   "keyKo": "처음 듣는 얘기다 → 몰랐다, 놀랐다",
+   "tip": "news를 듣고 신문·뉴스 관련 보기를 고르면 오답이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: Do you think the shipment will arrive by Monday? / A: *I wouldn't count on it.*",
+   "k": "Q: 화물이 월요일까지 도착할까요? / A: 기대하지 않는 게 좋을 거예요.",
+   "key": "I wouldn't count on it.",
+   "keyKo": "기대하지 마라 → 그럴 가능성이 낮다",
+   "tip": "count를 '세다'로 해석한 숫자 관련 보기는 함정이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: The traffic downtown is getting worse every day. / A: *Tell me about it.* It took me an hour to get here.",
+   "k": "Q: 시내 교통이 날마다 심해지네요. / A: 그러게 말이에요. 여기 오는 데 한 시간 걸렸어요.",
+   "key": "Tell me about it.",
+   "keyKo": "그러게 말이다 → 공감·동의 (설명해 달라는 뜻이 아니다)",
+   "tip": "글자 그대로 '말해 달라'는 요청으로 해석하면 오답이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: What do you think about offering flexible hours? / A: *I'm all for it.*",
+   "k": "Q: 유연 근무제를 도입하는 거 어떻게 생각해요? / A: 대찬성이에요.",
+   "key": "I'm all for it.",
+   "keyKo": "전적으로 찬성한다",
+   "tip": "'support the idea'로 패러프레이즈된다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "I'd like to help, but *it's out of my hands* now. Legal has the final say.",
+   "k": "도와드리고 싶지만 이제 제 손을 떠났어요. 최종 결정은 법무팀이 해요.",
+   "key": "It's out of my hands.",
+   "keyKo": "내 손을 떠났다 → 내가 더는 어떻게 할 수 없다",
+   "tip": "'It's not my call.'처럼 권한이 없음을 나타낸다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: Do you remember a client named Ellen Wade? / A: Hmm, the name *rings a bell*.",
+   "k": "Q: 엘런 웨이드라는 고객 기억나세요? / A: 음, 이름은 들어 본 것 같아요.",
+   "key": "ring a bell",
+   "keyKo": "들어 본 것 같다 → 어렴풋이 기억난다",
+   "tip": "bell을 듣고 초인종·종소리 보기를 고르면 함정에 걸린다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: Should we book a restaurant for after the conference? / A: Let's *play it by ear*.",
+   "k": "Q: 학회 끝나고 갈 식당을 예약할까요? / A: 상황 봐서 정하죠.",
+   "key": "play it by ear",
+   "keyKo": "상황을 봐 가며 정하다 → 지금 확정하지 않겠다",
+   "tip": ""
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "It's a generous offer, but *let me sleep on it*.",
+   "k": "좋은 조건이지만 하룻밤 생각해 볼게요.",
+   "key": "Let me sleep on it.",
+   "keyKo": "하룻밤 생각해 보겠다 → 지금 바로 결정하지 않겠다",
+   "tip": "결정을 미루는 의도. sleep을 듣고 피곤함·수면 관련 보기를 고르면 오답이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: Let's ask the interns to handle the client presentation. / A: Hmm, *I'm not sure that's a good idea*.",
+   "k": "Q: 고객 발표를 인턴들한테 맡기죠. / A: 음, 그게 좋은 생각인지 모르겠네요.",
+   "key": "I'm not sure that's a good idea.",
+   "keyKo": "좋은 생각인지 모르겠다 → 완곡한 반대",
+   "tip": "직접 No라고 하지 않는 반대 표현. 의도 파악 문제의 정답은 'To express disagreement'다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: Do you want to try the new Thai place for lunch? / A: *Why not?*",
+   "k": "Q: 점심에 새로 생긴 태국 음식점 가 볼래요? / A: 좋죠.",
+   "key": "Why not?",
+   "keyKo": "안 될 거 없지 → 흔쾌히 수락",
+   "tip": "Why로 시작하지만 이유를 묻는 게 아니라 동의하는 표현이다."
+  },
+  {
+   "g": "Part 3·4 화자 의도·추론",
+   "e": "Q: A few of us are going to the trade show on Friday. / A: *Count me in.*",
+   "k": "Q: 몇 명이서 금요일에 무역 박람회에 가요. / A: 저도 갈게요.",
+   "key": "Count me in.",
+   "keyKo": "나도 끼워 달라 → 참여하겠다",
+   "tip": "반대로 'Count me out.'은 빠지겠다는 뜻이다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*Attention, passengers*: Flight 207 to Denver will now depart from Gate 14.",
+   "k": "승객 여러분께 알려 드립니다. 덴버행 207편은 14번 게이트에서 출발하게 되었습니다.",
+   "key": "Attention, passengers",
+   "keyKo": "승객 여러분께 알려 드립니다",
+   "tip": "첫마디에서 장소(공항·역)와 청자를 묻는 문제의 정답이 나온다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "The 8:15 train has been delayed due to track maintenance. *We apologize for the inconvenience.*",
+   "k": "선로 보수 작업으로 8시 15분 열차가 지연되고 있습니다. 불편을 드려 죄송합니다.",
+   "key": "We apologize for the inconvenience.",
+   "keyKo": "불편을 드려 죄송합니다",
+   "tip": "사과 문구 바로 앞에 나오는 지연·변경 사유가 문제로 나온다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "We'll begin boarding shortly, so please *have your boarding pass ready*.",
+   "k": "곧 탑승을 시작하오니 탑승권을 준비해 주십시오.",
+   "key": "have your boarding pass ready",
+   "keyKo": "탑승권을 준비하다",
+   "tip": "청자 요청 사항 문제에서 'Prepare a document'로 패러프레이즈된다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*Stay tuned* for the weather report right after the break.",
+   "k": "광고 후 바로 날씨 예보가 이어집니다. 채널 고정해 주세요.",
+   "key": "Stay tuned.",
+   "keyKo": "채널을 고정하세요",
+   "tip": "라디오 방송 끝부분에 나오며 '다음에 무엇을 듣게 되는가' 문제의 단서다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*Don't miss* our grand opening sale, this Saturday only!",
+   "k": "이번 토요일 단 하루, 개업 기념 세일을 놓치지 마세요!",
+   "key": "Don't miss ~",
+   "keyKo": "~을 놓치지 마세요",
+   "tip": "광고 담화의 신호. 뒤따르는 기간·할인율 숫자에 집중한다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*You've reached* Fairview Dental Clinic. Our office is currently closed.",
+   "k": "페어뷰 치과입니다. 지금은 진료 시간이 아닙니다.",
+   "key": "You've reached ~",
+   "keyKo": "~에 전화하셨습니다 (자동 응답 인사)",
+   "tip": "녹음 메시지 첫 문장. 업종·장소를 묻는 문제의 정답 근거다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "Our regular *business hours* are Monday through Friday, nine to five.",
+   "k": "정규 영업시간은 월요일부터 금요일, 9시부터 5시까지입니다.",
+   "key": "business hours",
+   "keyKo": "영업시간",
+   "tip": "office hours, opening hours와 같은 말. 주말·공휴일 변동이 문제로 나온다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "For questions about your bill, *please press* two.",
+   "k": "요금 관련 문의는 2번을 눌러 주십시오.",
+   "key": "press (a number)",
+   "keyKo": "(번호를) 누르다",
+   "tip": "번호별 안내가 이어지므로 문제에 나온 용건에 해당하는 번호를 골라 듣는다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*Welcome aboard* Flight 52 to Seattle.",
+   "k": "시애틀행 52편에 탑승하신 것을 환영합니다.",
+   "key": "Welcome aboard.",
+   "keyKo": "탑승을 환영합니다; (신입에게) 합류를 환영합니다",
+   "tip": "신입 사원 환영 인사로도 쓰여 '새 직원 소개' 담화의 단서가 된다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*Please remain seated* until the seatbelt sign has been turned off.",
+   "k": "안전벨트 표시등이 꺼질 때까지 자리에 앉아 계십시오.",
+   "key": "Please remain seated.",
+   "keyKo": "자리에 앉아 계십시오",
+   "tip": ""
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*On behalf of* everyone at Delmont Industries, thank you for coming.",
+   "k": "델몬트 인더스트리 전 직원을 대표해 와 주셔서 감사드립니다.",
+   "key": "on behalf of",
+   "keyKo": "~을 대표하여, ~을 대신하여",
+   "tip": "화자의 소속을 묻는 문제의 단서가 된다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*Please join me in welcoming* our keynote speaker, Dr. Anita Shah.",
+   "k": "기조연설자 아니타 샤 박사님을 함께 환영해 주십시오.",
+   "key": "Please join me in welcoming ~",
+   "keyKo": "~을 함께 환영해 주십시오",
+   "tip": "인물 소개 담화의 신호. 뒤에 나오는 경력·업적이 문제로 나온다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*Feel free to* take photos, but please don't touch the artwork.",
+   "k": "사진은 자유롭게 찍으셔도 되지만 작품은 만지지 마십시오.",
+   "key": "Feel free to ~",
+   "keyKo": "자유롭게 ~하세요",
+   "tip": "투어 안내에서 허용 사항과 금지 사항을 구분하는 문제가 나온다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*Be sure to* stop by the gift shop on your way out.",
+   "k": "나가시는 길에 기념품 가게에 꼭 들러 보세요.",
+   "key": "Be sure to ~",
+   "keyKo": "꼭 ~하세요",
+   "tip": "청자에게 권하는 일(요청 사항) 문제의 정답 근거다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*In the event of* an emergency, please use the stairs, not the elevators.",
+   "k": "비상시에는 엘리베이터가 아닌 계단을 이용해 주십시오.",
+   "key": "in the event of",
+   "keyKo": "~할 경우에는",
+   "tip": ""
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "We're currently *experiencing a high volume of calls*. Please stay on the line.",
+   "k": "현재 통화량이 많습니다. 끊지 말고 기다려 주십시오.",
+   "key": "experience a high volume of calls",
+   "keyKo": "통화량이 많다",
+   "tip": "대기 안내 녹음. 이어지는 대안(웹사이트 이용, 회신 요청)을 묻는 문제가 나온다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*Thank you for your patience* while we resolve the issue.",
+   "k": "문제를 해결하는 동안 기다려 주셔서 감사합니다.",
+   "key": "Thank you for your patience.",
+   "keyKo": "기다려 주셔서 감사합니다",
+   "tip": "지연 상황을 암시하므로 문제점을 묻는 문제와 함께 출제된다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*This concludes* our tour of the factory. I hope you enjoyed it.",
+   "k": "이것으로 공장 견학을 마치겠습니다. 즐거우셨기를 바랍니다.",
+   "key": "This concludes ~",
+   "keyKo": "이것으로 ~을 마칩니다",
+   "tip": "담화 끝부분의 신호. 이후 일정을 묻는 문제가 이어진다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "Traffic is *backed up* on Highway 9 due to an accident near Exit 12.",
+   "k": "12번 출구 근처에서 난 사고로 9번 고속도로가 정체되고 있습니다.",
+   "key": "be backed up",
+   "keyKo": "(차량이) 밀려 있는, 정체된",
+   "tip": "heavy traffic, congestion, delays로 패러프레이즈된다."
+  },
+  {
+   "g": "Part 4 안내·방송",
+   "e": "*Admission is free* for children under twelve.",
+   "k": "12세 미만 어린이는 입장료가 무료입니다.",
+   "key": "Admission is free.",
+   "keyKo": "입장료가 무료이다",
+   "tip": "admission은 '입장(료)'. no charge, free of charge로 패러프레이즈된다."
+  }
  ]
 }

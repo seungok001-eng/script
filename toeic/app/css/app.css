@@ -169,7 +169,7 @@ svg { flex-shrink: 0; }
 /* ───────── 헤더 ───────── */
 .top { display: flex; align-items: center; gap: 8px; min-height: 52px; margin-bottom: 8px; }
 .top h1 { font-size: 22px; font-weight: 800; letter-spacing: -0.03em; margin: 0; flex: 1; min-width: 0; }
-.top .sub { color: var(--text-3); font-size: 13px; font-weight: 500; }
+.top .sub { color: var(--text-3); font-size: 13px; font-weight: 500; letter-spacing: normal; }
 .icon-btn {
   width: 42px; height: 42px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center;
   color: var(--text-2); transition: background 0.15s;

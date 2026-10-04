@@ -7,13 +7,14 @@
 
 | 기능 | 내용 |
 |---|---|
+| 3분 어휘 진단 | 기본·핵심·고득점에서 고루 뽑은 30문항(모름 선택 가능, 찍기 보정)으로 이미 아는 난이도를 추정 → 그 단계를 건너뛰도록 추천 (설정에서 다시 진단·되돌리기) |
 | 목표 점수 맞춤 | 첫 실행 때 목표 점수(550~950+)·시험일·하루 학습량을 입력 → 범위와 일정 자동 계산. 650점 이하 = 기본(1,070개), 700~800 = 기본+핵심(2,551개), 850+ = 전체(3,600개). 범위 안에서 쉬운 단어부터 출제 |
 | 90일 3,600단어 | 30개 토익 주제(채용·인사·회의·마케팅·계약·배송·회계·출장·호텔·IT·법률·금융 … + Part 5·6 빈출 동사/형용사/부사/숙어)를 기본(Day 1~30) → 심화(31~60) → 실전(61~90, LC 구동사·Part 7·고득점) 3개 코스로 |
 | 단어마다 | 뜻, 품사, 난이도(기본/핵심/고득점), 출제 파트, 발음기호, 토익식 예문+해석, 빈출 연어, 파생어, Part 7 패러프레이징, 반의어, 출제 포인트, **Part 5 실전 문제 1개(해설 포함)** |
 | 원어민 음성 | 단어 3,600개 + 예문 3,600개 + Part 1 문장 120개 전부 mp3 (Kokoro-82M 한 모델로 통일). 예문은 미국·영국 남녀 목소리를 섞어 토익 LC 억양에 대비 |
-| 학습 모드 | 카드 암기(스와이프·키보드, 모르는 단어 회차 재출), 뜻 고르기, 단어 고르기, 듣고 고르기, 철자 쓰기(힌트), 예문 빈칸, Part 5 실전, 듣기 모드(출퇴근용 자동 재생: 단어→한국어 뜻→예문), Day 테스트(80점 통과) |
+| 학습 모드 | 카드 암기(스와이프·키보드, 모르는 단어 회차 재출), 뜻 고르기, 단어 고르기, 듣고 고르기, 철자 쓰기(힌트), 예문 빈칸, Part 5 실전, **Part 7 동의어(패러프레이징) 퀴즈**, 듣기 모드(출퇴근용 자동 재생: 단어→한국어 뜻→예문), Day 테스트(80점 통과) |
 | 복습 | 라이트너 간격 반복(1·3·7·14·30·60일), 오늘 할 일(새 단어/복습/확인 퀴즈/오답노트), 오답노트 자동 수집·자동 해제, ★ 중요 단어 |
-| 특훈 | Part 1 사진 묘사 필수 120문장(진행형 수동태 함정 포함), Part 5 혼동 어휘 60세트 + 퀴즈 |
+| 특훈 | Part 1 사진 묘사 필수 120문장(진행형 수동태 함정 포함), **LC Part 2~4 빈출 표현 160개**(질문-응답 대화는 두 목소리로 녹음, 우회 응답 포함), Part 5 혼동 어휘 60세트 + 퀴즈, Part 7 동의어 20제 |
 | 통계 | 암기 완료/학습/정답률/연속 학습일, 난이도별 진도, 최근 7일 그래프, 4주 학습 달력, 시험일 대비 1회독 예상일, Day 테스트 현황 |
 | 기타 | 단어 검색(영어·한국어·파생어), 다크 모드, 재생 속도, 백업/복원(JSON), 오프라인(PWA), PC 사이드바 레이아웃 + 단축키 |
 
@@ -23,12 +24,12 @@
 toeic/
   app/                  ← 앱 그 자체 (Capacitor webDir, 정적 호스팅 루트)
     index.html  css/app.css  js/core.js(로직)  js/app.js(화면)  js/data.js(생성됨)
-    audio/w/{id}.mp3 단어 · audio/s/{id}.mp3 예문 · audio/p1/NNN.mp3 Part 1
+    audio/w/{id}.mp3 단어 · audio/s/{id}.mp3 예문 · audio/p1/NNN.mp3 Part 1 · audio/lc/NNN.mp3 LC 표현
     fonts/ (Pretendard 서브셋)  icons/  manifest.webmanifest  sw.js
   data/
     plan.json           90일 × 40단어 표제어 계획 (기본/심화/실전)
     days/day-XX.json    단어 원본 데이터 (SPEC.md 규격)
-    extras.json         Part 1 표현 · 혼동 어휘
+    extras.json         Part 1 표현 · LC 표현 · 혼동 어휘
     ipa.json            발음기호 (CMU 사전에서 생성)
     audio-manifest.json 음성 파일 ↔ 문장·목소리 기록
   scripts/
@@ -36,7 +37,8 @@ toeic/
     build_ipa.py        발음기호 생성
     build_audio.py      음성 생성(Kokoro-82M 합성, 바뀐 문장만)
     build_data.mjs      app/js/data.js 생성
-    build_audio_packs.py (선택) 파일 수 제한이 있는 웹 호스팅용 음성 묶음 31개 + js/audio-packs.js
+    build_audio_packs.py (선택) 파일 수 제한이 있는 웹 호스팅용 음성 묶음(Day별 + p1 + lc) + js/audio-packs.js
+    store_shots.mjs     스토어 스크린샷(액자 합성) 생성
 ```
 
 ## 실행 (PC)
@@ -93,7 +95,9 @@ npm run assets                              # (아이콘을 바꿨을 때) asset
 체크리스트
 - 앱 ID `com.vocafit.toeic`, 이름 `보카핏 토익` — `capacitor.config.json`, `app/js/app.js`의 `BRAND`, `manifest.webmanifest`에서 바꿀 수 있습니다.
 - 아이콘: `app/icons/icon-1024.png`(스토어용, 꽉 찬 사각), `icon-maskable-512.png`(안드로이드 적응형). 스플래시는 `@capacitor/assets`로 생성 권장.
-- 스크린샷: PC 브라우저에서 개발자 도구 기기 모드(예: 1290×2796, 1080×1920)로 캡처.
+- 스크린샷: `store/screenshots/`에 완성본(iOS 1290×2796 · Android 1080×1920) 8장. `node scripts/store_shots.mjs`로 다시 생성.
+- 개인정보처리방침 URL: `PRIVACY.md` (공개 저장소의 GitHub 주소를 그대로 스토어에 입력 가능)
+- 테스트용 APK: `toeic/**`를 푸시하면 GitHub Actions(`.github/workflows/toeic-android.yml`)가 디버그 APK를 빌드해 Releases의 `toeic-test` 프리릴리스에 올린다.
 - 개인정보: 모든 기록은 기기 안(localStorage)에만 저장되고 서버로 보내지 않습니다 → 스토어 "데이터 수집 없음" 신고 가능. (광고·분석 SDK를 넣으면 다시 확인)
 - 상표: "TOEIC"은 ETS의 등록 상표입니다. 앱 이름·아이콘에 ETS 로고를 쓰지 말고, 설정 화면의 "ETS와 관련 없음" 문구를 유지하세요.
 - 앱 크기: 음성 포함 약 120~150MB. Google Play 기본 모듈 크기 제한에 가까우므로, 출시 전 Play Console에서 크기를 확인하고 필요하면 음성(app/audio)을 Play Asset Delivery(install-time 팩)로 분리하거나 비트레이트를 낮춘다(build_audio.py 의 -b:a 값). App Store는 문제없음.

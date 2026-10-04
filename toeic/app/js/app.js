@@ -146,6 +146,7 @@
   function pad(n) { return String(n).padStart(2, "0"); }
   function voiceLabel(v) {
     if (!v) return "";
+    if (v.includes("+")) return "대화";
     const acc = v[0] === "b" ? "영국" : "미국";
     const sex = v[1] === "m" ? "남" : "여";
     return `${acc}·${sex}`;
@@ -442,7 +443,7 @@
     const r = route();
     document.body.classList.toggle("in-study", r.name === "study" || r.name === "onboarding");
     if (!S.profile && r.name !== "onboarding") return go("#/onboarding");
-    const views = { onboarding: vOnboarding, home: vHome, days: vDays, day: vDay, word: vWord, study: vStudy, review: vReview, part1: vPart1, conf: vConf, search: vSearch, stats: vStats, settings: vSettings, licenses: vLicenses, premium: vPremium };
+    const views = { onboarding: vOnboarding, home: vHome, days: vDays, day: vDay, word: vWord, study: vStudy, review: vReview, part1: vPart1, conf: vConf, lc: vLc, search: vSearch, stats: vStats, settings: vSettings, licenses: vLicenses, premium: vPremium };
     const v = views[r.name] || vHome;
     v(r);
     window.scrollTo(0, 0);
@@ -464,6 +465,7 @@
         <a href="#/search" class="side-link ${active === "search" ? "on" : ""}">${ico("search")}단어 검색</a>
         <a href="#/part1" class="side-link ${active === "part1" ? "on" : ""}">${ico("camera")}Part 1 사진 표현</a>
         <a href="#/conf" class="side-link ${active === "conf" ? "on" : ""}">${ico("split")}혼동 어휘</a>
+        ${(D.lc || []).length ? `<a href="#/lc" class="side-link ${active === "lc" ? "on" : ""}">${ico("ear")}LC 빈출 표현</a>` : ""}
         <div class="side-foot">목표 ${target()}점 · 단어 ${pool().length}개</div></nav>
       <main class="main"><div class="page ${wide ? "wide" : ""} fade-in">${body}</div></main>
       <nav class="tabbar" aria-label="탭">${tabs}</nav></div>`;
@@ -632,10 +634,12 @@
       </div>
       <div class="section"><div class="section-h"><h2>토익 파트별 특훈</h2></div>
         <div class="grid2">
-          <a class="tile" href="#/part1"><span class="tico c-green">${ico("camera")}</span><b>Part 1 사진 표현</b><span>사진 묘사 필수 120문장</span></a>
-          <a class="tile" href="#/conf"><span class="tico c-gold">${ico("split")}</span><b>Part 5 혼동 어휘</b><span>헷갈리는 단어 60세트</span></a>
+          <a class="tile" href="#/part1"><span class="tico c-green">${ico("camera")}</span><b>Part 1 사진 표현</b><span>사진 묘사 필수 ${D.part1.length}문장</span></a>
+          <a class="tile" href="#/conf"><span class="tico c-gold">${ico("split")}</span><b>Part 5 혼동 어휘</b><span>헷갈리는 단어 ${D.conf.length}세트</span></a>
+          ${(D.lc || []).length ? `<a class="tile" href="#/lc"><span class="tico c-purple">${ico("ear")}</span><b>LC 빈출 표현</b><span>Part 2~4 표현 ${D.lc.length}개</span></a>` : ""}
           <button class="tile" data-go="listen"><span class="tico c-blue">${ico("headphones")}</span><b>듣기 모드</b><span>출퇴근길 자동 재생</span></button>
           <button class="tile" data-go="part5"><span class="tico c-purple">${ico("trophy")}</span><b>Part 5 실전 20제</b><span>배운 단어로 실전 문제</span></button>
+          <button class="tile" data-go="para"><span class="tico c-orange">${ico("swap")}</span><b>Part 7 동의어 20제</b><span>문맥 속 바꿔 쓰기</span></button>
         </div>
       </div>
       <div class="section"><div class="section-h"><h2>진도</h2><a href="#/stats">자세히</a></div>
@@ -683,6 +687,11 @@
       const list = plan.newWords.length ? plan.newWords : seen.length ? C.shuffle(seen).slice(0, 40) : P.slice(0, 30);
       return startListen(list, { title: "듣기 모드" });
     }
+    if (what === "para") {
+      const seen = P.filter((w) => st(w.id) && st(w.id).n && C.canParaphrase(w));
+      const base = seen.length >= 10 ? seen : P.filter(C.canParaphrase).slice(0, 80);
+      return startQuiz(C.shuffle(base).slice(0, 20), "para", { title: "Part 7 동의어 20제" });
+    }
     if (what === "part5") {
       const seen = P.filter((w) => st(w.id) && st(w.id).n);
       const base = seen.length >= 10 ? seen : P.slice(0, 80);
@@ -723,6 +732,7 @@
       <div class="chips scroll" style="margin-bottom:14px">
         <a class="chip" href="#/part1">${ico("camera")}Part 1 사진 표현</a>
         <a class="chip" href="#/conf">${ico("split")}혼동 어휘</a>
+        ${(D.lc || []).length ? `<a class="chip" href="#/lc">${ico("ear")}LC 빈출 표현</a>` : ""}
         <a class="chip" href="#/review?tab=star">${ico("star")}중요 단어</a>
         <a class="chip" href="#/review?tab=wrong">${ico("alert")}오답노트</a>
       </div>
@@ -1487,31 +1497,51 @@
   }
 
   // ═════════════ Part 1 ═════════════
-  function vPart1() {
-    const groups = Array.from(new Set(D.part1.map((p) => p.g)));
-    const g = ui.p1g;
-    const list = D.part1.filter((p) => g === "all" || p.g === g);
-    const body = `${topBar("Part 1 사진 표현", { back: true, sub: "사진 묘사 문제에 그대로 나오는 문장 120개" })}
-      <div class="tip-box" style="margin-bottom:14px"><b>핵심 함정</b> 사람이 없는 사진에서 <span class="en">is being + p.p.</span>(지금 ~되는 중)는 대부분 오답! 사물의 상태는 <span class="en">is/are + p.p.</span>, <span class="en">has been + p.p.</span>로 말해요.</div>
-      <div class="row" style="margin-bottom:12px"><button class="btn sm" data-p1play>${ico("headphones")}이 목록 연속 듣기</button><span class="spacer"></span></div>
-      <div class="chips scroll" style="margin-bottom:12px"><button class="chip ${g === "all" ? "on" : ""}" data-g="all">전체</button>${groups.map((x) => `<button class="chip ${g === x ? "on" : ""}" data-g="${esc(x)}">${esc(x)}</button>`).join("")}</div>
-      <div class="wlist">${list.map((p) => `<div class="witem" style="align-items:flex-start;cursor:default"><div class="wbody">
-        <div class="ex-en en" style="font-size:16px">${hl(p.e)}</div><div class="ex-ko" style="margin-top:3px">${esc(p.k)}</div>
+  // Part 1 사진 표현 / LC 빈출 표현 — 같은 목록 화면을 쓴다
+  const EXPR = {
+    part1: { title: "Part 1 사진 표현", sub: () => `사진 묘사 문제에 그대로 나오는 문장 ${D.part1.length}개`, list: () => D.part1,
+      tip: `<b>핵심 함정</b> 사람이 없는 사진에서 <span class="en">is being + p.p.</span>(지금 ~되는 중)는 대부분 오답! 사물의 상태는 <span class="en">is/are + p.p.</span>, <span class="en">has been + p.p.</span>로 말해요.` },
+    lc: { title: "LC 빈출 표현", sub: () => `Part 2~4 대화·방송에 자주 나오는 표현 ${(D.lc || []).length}개`, list: () => D.lc || [],
+      tip: `<b>Part 2 요령</b> 질문에 직접 답하지 않는 <b>우회 응답</b>이 정답인 경우가 많아요. "글쎄요", "~에게 물어보세요", "아직 정해지지 않았어요" 같은 답을 놓치지 마세요.` },
+  };
+  function vPart1() { vExpr("part1"); }
+  function vLc() { vExpr("lc"); }
+  function vExpr(kind) {
+    const cfg = EXPR[kind];
+    const all = cfg.list();
+    const groups = Array.from(new Set(all.map((p) => p.g)));
+    if (!ui.exprG) ui.exprG = {};
+    const g = groups.includes(ui.exprG[kind]) ? ui.exprG[kind] : "all";
+    const list = all.filter((p) => g === "all" || p.g === g);
+    const showKo = ui.exprKo !== false;
+    const line = (p) => {
+      const isDialog = /^Q:/.test(p.e) && p.e.includes(" / A:");
+      const en = isDialog ? p.e.split(" / ").map((x) => `<div>${hl(x)}</div>`).join("") : hl(p.e);
+      const ko = isDialog ? p.k.split(" / ").map((x) => `<div>${esc(x)}</div>`).join("") : esc(p.k);
+      return `<div class="witem" style="align-items:flex-start;cursor:default"><div class="wbody">
+        <div class="ex-en en" style="font-size:16px">${en}</div>${showKo ? `<div class="ex-ko" style="margin-top:3px">${ko}</div>` : ""}
         <div class="small" style="margin-top:6px"><span class="badge pos en">${esc(p.key)}</span> <span class="muted">${esc(p.keyKo)}</span></div>
         ${p.tip ? `<div class="small" style="margin-top:6px;color:var(--text-2)">💡 ${esc(p.tip)}</div>` : ""}</div>
-        <button class="play" data-p1="${p.id}" aria-label="듣기">${ico("vol")}</button></div>`).join("")}</div>`;
-    shell("part1", body);
-    $app.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => { ui.p1g = b.dataset.g; vPart1(); }));
-    const byId = new Map(D.part1.map((p) => [p.id, p]));
-    $app.querySelectorAll("[data-p1]").forEach((b) => b.addEventListener("click", () => { seqId += 1; const p = byId.get(b.dataset.p1); Sound.play(p.au || null, C.plainEx(p.e), { btn: b }); }));
+        <button class="play" data-p1="${p.id}" aria-label="듣기">${ico("vol")}</button></div>`;
+    };
+    const body = `${topBar(cfg.title, { back: true, sub: cfg.sub() })}
+      <div class="tip-box" style="margin-bottom:14px">${cfg.tip}</div>
+      <div class="row" style="margin-bottom:12px"><button class="btn sm" data-p1play>${ico("headphones")}이 목록 연속 듣기</button><span class="spacer"></span><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>
+      <div class="chips scroll" style="margin-bottom:12px"><button class="chip ${g === "all" ? "on" : ""}" data-g="all">전체</button>${groups.map((x) => `<button class="chip ${g === x ? "on" : ""}" data-g="${esc(x)}">${esc(x)}</button>`).join("")}</div>
+      <div class="wlist">${list.map(line).join("")}</div>`;
+    shell(kind, body);
+    $app.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => { ui.exprG[kind] = b.dataset.g; vExpr(kind); }));
+    $app.querySelector("[data-ko]").addEventListener("click", () => { ui.exprKo = !showKo; vExpr(kind); });
+    const byId = new Map(all.map((p) => [p.id, p]));
+    const say = (p, b) => Sound.play(p.au || null, C.plainEx(p.e).replace(/^Q:\s*/, "").replace(/\s*\/\s*A:\s*/, " ... "), { btn: b });
+    $app.querySelectorAll("[data-p1]").forEach((b) => b.addEventListener("click", () => { seqId += 1; say(byId.get(b.dataset.p1), b); }));
     $app.querySelector("[data-p1play]").addEventListener("click", async () => {
       const btns = Array.from($app.querySelectorAll("[data-p1]"));
       const my = ++seqId;
       for (const b of btns) {
         if (my !== seqId || !document.body.contains(b)) break;
         b.scrollIntoView({ block: "center", behavior: "smooth" });
-        const p = byId.get(b.dataset.p1);
-        await Sound.play(p.au || null, C.plainEx(p.e), { btn: b });
+        await say(byId.get(b.dataset.p1), b);
         if (my !== seqId) break;
         await wait(900);
       }
