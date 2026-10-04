@@ -33,3 +33,6 @@ next-env.d.ts
 # toeic app
 /toeic/node_modules
 *.tmp.mp3
+
+/toeic/release-*.apk
+/toeic/dist

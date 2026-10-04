@@ -14,6 +14,9 @@ concurrency:
   group: toeic-android-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -56,6 +59,7 @@ jobs:
         run: |
           mkdir -p dist
           cp android/app/build/outputs/apk/debug/app-debug.apk "dist/vocafit-toeic-debug-${GITHUB_SHA::7}.apk"
+          cp android/app/build/outputs/apk/debug/app-debug.apk "release-vocafit-toeic-test.apk"
           ls -la dist
 
       - uses: actions/upload-artifact@v4
@@ -63,3 +67,19 @@ jobs:
           name: vocafit-toeic-debug-apk
           path: toeic/dist/*.apk
           retention-days: 30
+
+      # 폰에서 바로 받을 수 있게: 'toeic-test' 사전 출시(pre-release)에 최신 APK 를 덮어쓴다
+      - name: 테스트용 사전 출시에 APK 올리기
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: toeic-test
+          name: 보카핏 토익 테스트 빌드 (최신)
+          prerelease: true
+          make_latest: false
+          body: |
+            폰에서 이 페이지를 열고 아래 Assets 의 .apk 를 눌러 설치하세요.
+            (처음이면 '출처를 알 수 없는 앱 설치'를 허용해야 합니다. 테스트용 debug 빌드입니다.)
+            빌드 커밋: ${{ github.sha }}
+          files: toeic/release-vocafit-toeic-test.apk
+          overwrite_files: true
+
