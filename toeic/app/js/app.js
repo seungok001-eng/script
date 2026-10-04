@@ -56,6 +56,8 @@
         daily: num(p.daily, 30, 5, 200),
         start: num(p.start, C.dayNum(), 0, 1e6),
       };
+      if (Array.isArray(p.skip)) d.profile.skip = p.skip.filter((t) => t === 1 || t === 2);
+      if (p.placed) d.profile.placed = true;
     }
     const ss = (src && src.settings) || {};
     for (const k of Object.keys(d.settings)) {
@@ -122,8 +124,15 @@
   function target() { return (S.profile && S.profile.target) || 800; }
   // 목표 범위의 단어를 학습 순서대로: 기본 → 핵심 → 고득점, 같은 단계 안에서는 Day 순서
   const ORDERED = WORDS.slice().sort((a, b) => a.tier - b.tier || a.d - b.d || (a.id < b.id ? -1 : 1));
-  function pool() { return C.poolFor(ORDERED, target()); }
-  function inPool(w) { return C.tiersFor(target()).includes(w.tier); }
+  // 어휘 진단으로 '이미 아는 난이도'를 건너뛸 수 있다 (profile.skip). 목표 범위가 비지 않게 한다
+  function myTiers() {
+    const ts = C.tiersFor(target());
+    const sk = (S.profile && S.profile.skip) || [];
+    const left = ts.filter((t) => !sk.includes(t));
+    return left.length ? left : ts;
+  }
+  function pool() { const ts = myTiers(); return ORDERED.filter((w) => ts.includes(w.tier)); }
+  function inPool(w) { return myTiers().includes(w.tier); }
   function dayWords(d, all) { return WORDS.filter((w) => w.d === d && (all || inPool(w))); }
   // 복습할 단어: 범위와 상관없이 이미 배운 단어 중 복습일이 된 것 (오늘 처음 본 단어는 제외), 오래된 순
   function dueWords(t) { return C.todayPlan(WORDS, S.words, 0, t).due; }
@@ -195,6 +204,8 @@
     info: '<circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/>',
     bulb: '<path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/>',
     flag: '<path d="M4 22V4M4 4h13l-2 4 2 4H4"/>',
+    swap: '<path d="M7 4 3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="m17 20 4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/>',
+    gauge: '<path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/>',
   };
   function ico(name, cls) {
     return `<svg class="ico ${cls || ""}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${I[name] || ""}</svg>`;
@@ -616,6 +627,7 @@
         <button class="task ${newDone ? "done" : ""}" data-go="new"><span class="tico c-blue">${ico("layers")}</span><span class="spacer"><div class="tt">새 단어 외우기</div><div class="td">${newDone ? `오늘 ${plan.introducedToday}개 완료 · 더 하고 싶다면 단어장에서` : `카드로 뜻 확인 → 모르는 단어는 다시`}</div></span><span class="tn">${newDone ? ico("check") : plan.newWords.length}</span></button>
         <button class="task ${plan.due.length ? "" : "done"}" data-go="due"><span class="tico c-orange">${ico("repeat")}</span><span class="spacer"><div class="tt">복습하기</div><div class="td">${plan.due.length ? "잊어버리기 전에 다시 볼 단어" : "오늘 복습할 단어가 없어요"}</div></span><span class="tn">${plan.due.length || ico("check")}</span></button>
         <button class="task ${introduced.length ? "" : "done"}" data-go="quiz-today"><span class="tico c-purple">${ico("zap")}</span><span class="spacer"><div class="tt">오늘 단어 확인 퀴즈</div><div class="td">${introduced.length ? `오늘 본 ${introduced.length}개 · 뜻/단어/예문/Part 5 섞어서` : "새 단어를 외우면 열려요"}</div></span><span class="tn">${introduced.length || "–"}</span></button>
+        ${S.profile.placed ? "" : `<button class="task" data-go="place"><span class="tico c-green">${ico("gauge")}</span><span class="spacer"><div class="tt">3분 어휘 진단</div><div class="td">이미 아는 단어는 건너뛰고 필요한 단어부터</div></span><span class="tn">${ico("right")}</span></button>`}
         <button class="task ${wrong ? "" : "done"}" data-go="wrong"><span class="tico c-red">${ico("alert")}</span><span class="spacer"><div class="tt">오답노트</div><div class="td">${wrong ? "틀린 단어만 다시 풀어요" : "아직 틀린 단어가 없어요"}</div></span><span class="tn">${wrong || "–"}</span></button>
       </div>
       <div class="section"><div class="section-h"><h2>토익 파트별 특훈</h2></div>
@@ -633,7 +645,7 @@
     $app.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => homeGo(b.dataset.go, plan, introduced)));
   }
   function progressBlock(P) {
-    const tiers = C.tiersFor(target());
+    const tiers = myTiers();
     return tiers.map((tier) => {
       const ws = P.filter((w) => w.tier === tier);
       const s = C.summarize(ws, S.words);
@@ -660,6 +672,7 @@
       if (!introduced.length) return toast("오늘 새 단어를 먼저 외워 주세요");
       return startQuiz(introduced, "mix", { title: "오늘 단어 퀴즈" });
     }
+    if (what === "place") return startPlacement();
     if (what === "wrong") {
       const ws = WORDS.filter((w) => st(w.id) && st(w.id).wrong);
       if (!ws.length) return toast("오답노트가 비어 있어요");
@@ -748,7 +761,7 @@
       ["spell", "철자 쓰기", "pencil", "c-gold"],
       ["cloze", "예문 빈칸", "bulb", "c-blue"],
       ["part5", "Part 5 실전", "trophy", "c-purple"],
-      ["listen", "듣기 모드", "headphones", "c-green"],
+      ["para", "Part 7 동의어", "swap", "c-orange"],
     ];
     const items = list.map((w) => wordItem(w)).join("") || `<div class="empty">${ico("search")}<b>해당하는 단어가 없어요</b>필터를 바꿔 보세요</div>`;
     const hiddenCount = all.length - mine.length;
@@ -758,6 +771,7 @@
         <div class="stack-bar" style="margin-top:12px"><i style="width:${mine.length ? (sum.mastered / mine.length) * 100 : 0}%;background:var(--ok)"></i><i style="width:${mine.length ? (sum.learning / mine.length) * 100 : 0}%;background:var(--accent)"></i></div></div>
       <div class="section"><div class="section-h"><h2>학습 방법</h2></div>
         <div class="grid3">${modes.map(([k, l, ic, c]) => `<button class="tile" data-mode="${k}" style="align-items:center;text-align:center;padding:14px 8px"><span class="tico ${c}">${ico(ic)}</span><b style="font-size:13.5px">${l}</b></button>`).join("")}</div>
+        <button class="task" data-mode="listen" style="margin-top:10px"><span class="tico c-green">${ico("headphones")}</span><span class="spacer"><div class="tt">듣기 모드</div><div class="td">단어 → 뜻 → 예문 자동 재생 · 출퇴근길에</div></span>${ico("right")}</button>
         <button class="task" data-mode="test" style="margin-top:10px"><span class="tico c-red">${ico("flag")}</span><span class="spacer"><div class="tt">DAY ${pad(d)} 테스트</div><div class="td">20문제 · 80점 이상이면 통과${test ? ` · 최고 ${test.best}점` : ""}</div></span>${ico("right")}</button>
       </div>
       <div class="section"><div class="section-h"><h2>단어 ${list.length}개</h2><button data-toggle-hide>${S.settings.hideMeaning ? "뜻 보이기" : "뜻 가리기"}</button></div>
@@ -880,9 +894,11 @@
   }
   function vStudy() {
     if (!session) return location.replace("#/home");
+    if (session.kind === "place") return vPlacement();
     if (session.done) return vResult();
     if (session.kind === "card") return vCard();
     if (session.kind === "sort") return vSort();
+    if (session.kind === "place") return vPlacement();
     if (session.kind === "quiz") return vQuiz();
     if (session.kind === "listen") return vListen();
     if (session.kind === "conf") return vQuiz();
@@ -1059,26 +1075,92 @@
     };
   }
 
+  // ═════════════ 어휘 진단 ═════════════
+  // 난이도별 8문항(총 24) 뜻 고르기 + '모르겠어요'. 결과로 아는 단어 수를 추정하고 건너뛸 난이도를 추천한다
+  function startPlacement() {
+    const words = C.placementSample(WORDS, 8);
+    const qs = words.map((w) => C.makeQuestion("meaning", w, WORDS));
+    session = { kind: "place", qs, i: 0, results: [], from: location.hash };
+    enterStudy();
+  }
+  function vPlacement() {
+    const s = session;
+    if (s.done) return vPlacementResult();
+    const q = s.qs[s.i];
+    const w = q.word;
+    $app.innerHTML = `<div class="study">${studyTop(s.i, s.qs.length)}
+      <div class="small muted" style="text-align:center">어휘 진단 · 아는 만큼만 답하세요 (점수에 영향 없음)</div>
+      <div class="quiz-q"><div class="qk">알맞은 뜻은?</div><div class="qw en">${esc(w.w)}</div></div>
+      <div class="opts">${q.options.map((o, i) => `<button class="opt" data-pick="${i}"><span class="on">${i + 1}</span><span>${esc(o)}</span></button>`).join("")}
+        <button class="opt" data-skip style="justify-content:center;color:var(--text-3)">모르겠어요</button></div>
+      <div class="kbd-hint"><kbd>1</kbd>~<kbd>4</kbd> 선택 · <kbd>0</kbd> 모르겠어요</div></div>`;
+    bindExit();
+    const answer = (pick) => {
+      s.results.push({ tier: w.tier, ok: pick === q.answer, skipped: pick < 0 });
+      s.i += 1;
+      if (s.i >= s.qs.length) { s.done = true; return vPlacementResult(); }
+      vPlacement();
+    };
+    $app.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", () => answer(+b.dataset.pick)));
+    $app.querySelector("[data-skip]").addEventListener("click", () => answer(-1));
+    keyHandler = (e) => {
+      if (onControl(e)) return;
+      if (/^[1-4]$/.test(e.key)) answer(+e.key - 1);
+      else if (e.key === "0") answer(-1);
+      else if (e.key === "Escape") askExit();
+    };
+  }
+  function vPlacementResult() {
+    const s = session;
+    const p = C.placementScore(s.results);
+    const known = C.estimateKnown(p, WORDS);
+    const rec = C.recommendSkip(p).filter((t) => C.tiersFor(target()).includes(t) && t < Math.max(...C.tiersFor(target())));
+    const pct = (x) => Math.round(x * 100);
+    const bar = (t) => `<div style="margin:10px 0"><div class="row small" style="margin-bottom:6px"><span class="badge tier-${t}">${C.TIER_NAMES[t]}</span><span class="spacer"></span><b>${pct(p[t])}%</b></div><div class="bar"><i style="width:${pct(p[t])}%"></i></div></div>`;
+    const recText = rec.length ? `<b>${rec.map((t) => C.TIER_NAMES[t]).join("·")} 단어</b>는 이미 잘 알고 있어요. 건너뛰고 <b>${C.TIER_NAMES[rec[rec.length - 1] + 1]} 단어</b>부터 시작하면 시간을 아낄 수 있어요.` : "처음부터 차근차근 학습하는 걸 추천해요. 아는 단어는 Day 화면의 '아는 단어 빼기'로 빠르게 넘길 수 있어요.";
+    $app.innerHTML = `<div class="study"><div class="study-top"><button class="icon-btn back" data-home aria-label="닫기">${ico("x")}</button><span class="spacer"></span></div>
+      <div class="result-hero"><div style="display:flex;justify-content:center;color:var(--brand)">${ico("gauge", "")}</div>
+        <div class="msg" style="margin-top:6px">이미 알고 있는 토익 단어</div><div class="score"><small>약 </small>${known.toLocaleString()}<small>개</small></div>
+        <p class="muted small">전체 ${NWORDS}개 기준 추정 · ${s.results.length}문항</p></div>
+      <div class="card">${[1, 2, 3].map(bar).join("")}</div>
+      <div class="tip-box" style="margin-top:12px">${recText}</div>
+      <div style="margin-top:16px">${rec.length ? `<button class="btn block" data-apply>${ico("check")}${rec.map((t) => C.TIER_NAMES[t]).join("·")} 단어 건너뛰고 시작</button><button class="btn ghost block" style="margin-top:10px" data-keep>처음부터 학습할게요</button>` : `<button class="btn block" data-keep>학습 시작하기</button>`}</div></div>`;
+    const finish = (skip) => {
+      S.profile.placed = true;
+      S.profile.skip = skip;
+      save(true);
+      toast(skip.length ? `${skip.map((t) => C.TIER_NAMES[t]).join("·")} 단어를 건너뛰었어요. 설정에서 다시 포함할 수 있어요` : "진단 완료! 오늘의 단어부터 시작해요");
+      exitStudy();
+    };
+    const ap = $app.querySelector("[data-apply]");
+    if (ap) ap.addEventListener("click", () => finish(rec));
+    $app.querySelector("[data-keep]").addEventListener("click", () => finish([]));
+    $app.querySelector("[data-home]").addEventListener("click", () => finish(S.profile.skip || []));
+    keyHandler = (e) => { if (e.key === "Escape") finish(S.profile.skip || []); };
+  }
+
   // ═════════════ 퀴즈 ═════════════
-  const QUIZ_TITLES = { meaning: "알맞은 뜻은?", word: "알맞은 단어는?", listen: "듣고 알맞은 뜻 고르기", spell: "영어로 쓰세요", cloze: "빈칸에 알맞은 말은?", part5: "Part 5 · 빈칸에 알맞은 것은?", conf: "혼동 어휘 · 빈칸에 알맞은 것은?" };
+  const QUIZ_TITLES = { meaning: "알맞은 뜻은?", word: "알맞은 단어는?", listen: "듣고 알맞은 뜻 고르기", spell: "영어로 쓰세요", cloze: "빈칸에 알맞은 말은?", part5: "Part 5 · 빈칸에 알맞은 것은?", conf: "혼동 어휘 · 빈칸에 알맞은 것은?", para: "Part 7 · 문맥상 뜻이 가장 가까운 것은?" };
   function startQuiz(words, type, opt) {
     if (!words.length) return toast("문제를 만들 단어가 없어요");
     const all = pool().length > 60 ? pool() : WORDS;
     let qs;
     if (type === "test") qs = C.makeTest(words, all, Math.min(20, words.length));
     else if (type === "mix") {
-      const types = ["meaning", "word", "cloze", "part5", "listen"];
+      const types = ["meaning", "word", "cloze", "part5", "listen", "para"];
       qs = C.shuffle(words).slice(0, 30).map((w, i) => {
         let tp = types[i % types.length];
         if (tp === "cloze" && C.starred(w.ex).length !== 1) tp = "meaning";
+        if (tp === "para") return C.canParaphrase(w) ? C.makeParaphrase(w, all) : C.makeQuestion("meaning", w, all);
         return C.makeQuestion(tp, w, all);
       });
     } else {
       let ws = C.shuffle(words);
       if (type === "cloze") ws = ws.filter((w) => C.starred(w.ex).length === 1);
-      qs = ws.slice(0, 30).map((w) => C.makeQuestion(type, w, all));
+      if (type === "para") ws = ws.filter(C.canParaphrase);
+      qs = ws.slice(0, 30).map((w) => (type === "para" ? C.makeParaphrase(w, all) : C.makeQuestion(type, w, all)));
     }
-    if (!qs.length) return toast(type === "cloze" ? "예문 빈칸 문제를 만들 수 있는 단어가 없어요" : "문제를 만들 단어가 없어요");
+    if (!qs.length) return toast(type === "cloze" ? "예문 빈칸 문제를 만들 수 있는 단어가 없어요" : type === "para" ? "바꿔 쓰기 표현이 있는 단어가 없어요" : "문제를 만들 단어가 없어요");
     session = { kind: "quiz", type, title: opt.title, qs, i: 0, answered: null, results: [], day: opt.day, wrongNote: opt.wrongNote, from: location.hash, hint: 0 };
     enterStudy();
   }
@@ -1100,6 +1182,7 @@
     else if (q.type === "listen") qhtml = `<button class="play lg" data-replay style="margin:18px auto 0;width:84px;height:84px" aria-label="다시 듣기">${ico("vol")}</button>${ans ? `<div class="qw en" style="font-size:26px">${esc(w.w)}</div>` : `<div class="small muted" style="margin-top:10px">버튼을 눌러 다시 들을 수 있어요</div>`}`;
     else if (q.type === "cloze") qhtml = `<div class="qs en">${esc(q.prompt).replace(/_____/g, '<b style="color:var(--brand)">_____</b>')}</div>${S.settings.showKo ? `<div class="qsub">${esc(q.sub)}</div>` : ""}`;
     else if (q.type === "part5" || q.type === "conf") qhtml = `<div class="qs en">${esc(q.prompt).replace("-------", '<b style="color:var(--brand);letter-spacing:.05em">_______</b>')}</div>`;
+    else if (q.type === "para") qhtml = `<div class="qs en">${hl(w.ex)}</div><div class="qsub">표시된 <b class="en">${esc(q.key)}</b>와 바꿔 쓸 수 있는 표현은?</div>`;
     else if (q.type === "spell") qhtml = `<div class="qm">${esc(q.prompt)}</div><div class="muted small" style="margin-top:6px">${POS_KO[w.pos] || ""}${w.ex ? "" : ""}</div>`;
     let body;
     if (q.type === "spell") {
@@ -1111,12 +1194,12 @@
       body = `<div class="opts">${q.options.map((o, i) => {
         let cls = "";
         if (ans) cls = i === q.answer ? "right" : i === ans.pick ? "wrong" : "dim";
-        return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${i + 1}</span><span class="${q.type === "word" || q.type === "cloze" || q.type === "part5" || q.type === "conf" ? "en" : ""}">${esc(o)}</span></button>`;
+        return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${i + 1}</span><span class="${q.type === "word" || q.type === "cloze" || q.type === "part5" || q.type === "conf" || q.type === "para" ? "en" : ""}">${esc(o)}</span></button>`;
       }).join("")}</div>`;
     }
     let fb = "";
     if (ans) {
-      const expl = q.type === "part5" || q.type === "conf" ? q.explain : "";
+      const expl = q.type === "part5" || q.type === "conf" ? q.explain : q.type === "para" ? `이 문맥의 ${q.key}(${C.meaningText(w, 2)}) = ${w.para.join(", ")}${S.settings.showKo ? ` · ${w.exKo}` : ""}` : "";
       const wInfo = w ? `<div style="margin-top:6px"><b class="en">${esc(w.w)}</b> ${esc(C.meaningText(w, 3))}</div>` : "";
       const confInfo = q.conf ? `<div style="margin-top:8px">${q.conf.words.map((x) => `<div><b class="en">${esc(x.w)}</b> <span class="muted">${POS_SHORT[x.pos] || ""}</span> ${esc(x.m)}</div>`).join("")}<div style="margin-top:6px;color:var(--text-2)">${esc(q.conf.point)}</div></div>` : "";
       fb = `<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? "정답이에요!" : ans.close ? "아깝다! 철자를 확인해 보세요" : "틀렸어요"}</b>${expl ? esc(expl) : ""}${q.type === "spell" && !ans.ok ? `<div style="margin-top:4px">정답: <b class="en">${esc(w.w)}</b></div>` : ""}${!ans.ok || q.type === "part5" ? wInfo : ""}${confInfo}</div>`;
@@ -1190,7 +1273,7 @@
     save();
     vQuiz();
     if (q.word && (q.type === "word" || q.type === "spell" || q.type === "cloze") && S.settings.autoWord) Sound.word(q.word);
-    if (a.ok && q.type !== "part5" && q.type !== "conf" && q.type !== "spell") {
+    if (a.ok && q.type !== "part5" && q.type !== "conf" && q.type !== "spell" && q.type !== "para") {
       const i = s.i;
       setTimeout(() => { if (session === s && s.i === i && s.answered) nextQuiz(); }, 900);
     }
@@ -1532,6 +1615,8 @@
       <div class="set-title">학습 계획</div>
       <div class="set-group">
         <a class="set-row" href="#/onboarding"><span class="sl"><b>목표 점수 · 시험일 · 하루 학습량</b><span>${p.target}점 · ${p.examDate ? `시험 ${fmtDate(C.parseYmd(p.examDate))}` : "시험일 미정"} · 하루 ${p.daily}개</span></span>${ico("right")}</a>
+        <button class="set-row" data-place><span class="sl"><b>어휘 진단 ${S.profile.placed ? "다시 하기" : "하기"}</b><span>${(S.profile.skip || []).length ? `지금 ${S.profile.skip.map((t) => C.TIER_NAMES[t]).join("·")} 단어를 건너뛰는 중` : "3분 테스트로 아는 단어를 건너뛰어요"}</span></span>${ico("gauge")}</button>
+        ${(S.profile.skip || []).length ? `<button class="set-row" data-unskip><span class="sl"><b>건너뛴 단어 다시 포함</b><span>${S.profile.skip.map((t) => C.TIER_NAMES[t]).join("·")} 단어를 오늘의 학습에 다시 넣어요</span></span>${ico("repeat")}</button>` : ""}
         ${Notify.available() ? `${sw("remind", "매일 학습 알림", "정한 시간에 오늘의 단어를 알려 드려요")}
         <label class="set-row"><span class="sl"><b>알림 시간</b></span><input type="time" class="field" data-remind-at value="${esc(s.remindAt)}" style="width:130px;height:40px" ${s.remind ? "" : "disabled"} /></label>` : ""}
       </div>
@@ -1579,6 +1664,9 @@
     $app.querySelectorAll("[data-rate]").forEach((b) => b.addEventListener("click", () => { s.rate = +b.dataset.rate; save(); vSettings(); }));
     $app.querySelectorAll("[data-theme]").forEach((b) => b.addEventListener("click", () => { s.theme = b.dataset.theme; applyTheme(); save(); vSettings(); }));
     $app.querySelector("[data-export]").addEventListener("click", exportData);
+    $app.querySelector("[data-place]").addEventListener("click", startPlacement);
+    const us = $app.querySelector("[data-unskip]");
+    if (us) us.addEventListener("click", () => { S.profile.skip = []; save(true); toast("건너뛴 단어를 다시 포함했어요"); vSettings(); });
     const file = document.getElementById("importFile");
     $app.querySelector("[data-import]").addEventListener("click", () => file.click());
     file.addEventListener("change", () => importData(file.files[0]));

@@ -166,3 +166,41 @@ test("실제 데이터: 계획한 모든 단어 · 문제 정답 위치 · 예�
   }
   assert.equal(data.days.length, plan.length);
 });
+
+test("어휘 진단: 난이도별로 고르게 뽑고, 찍기 보정 점수와 건너뛸 난이도를 계산한다", () => {
+  const words = [];
+  for (let t = 1; t <= 3; t++) for (let i = 0; i < 30; i++) words.push({ id: `${t}-${i}`, d: (i % 10) + 1, tier: t, w: `w${t}${i}`, pos: "n", m: [`뜻${t}${i}`] });
+  const sample = C.placementSample(words, 8, C.rng(3));
+  assert.equal(sample.length, 24);
+  for (const t of [1, 2, 3]) assert.equal(sample.filter((w: { tier: number }) => w.tier === t).length, 8);
+  const res = [
+    ...Array.from({ length: 8 }, () => ({ tier: 1, ok: true })),
+    ...Array.from({ length: 8 }, (_, i) => ({ tier: 2, ok: i < 4, skipped: i >= 4 })),
+    ...Array.from({ length: 8 }, () => ({ tier: 3, ok: false })),
+  ];
+  const p = C.placementScore(res);
+  assert.equal(p[1], 1);
+  assert.equal(p[2], 0.5);
+  assert.equal(p[3], 0, "찍어서 틀린 답은 0 아래로 내려가지 않는다");
+  assert.deepEqual(C.recommendSkip(p), [1]);
+  assert.deepEqual(C.recommendSkip({ 1: 0.9, 2: 0.9, 3: 0.1 }), [1, 2]);
+  assert.deepEqual(C.recommendSkip({ 1: 0.6, 2: 0.9, 3: 0.1 }), []);
+  assert.equal(C.estimateKnown(p, words), 50); // 30*1 + 30*0.5 = 45 → 10단위 반올림
+});
+
+test("패러프레이징: 정답은 그 단어의 para[0], 보기 4개 중복 없음", () => {
+  const ws = [
+    { id: "a", w: "complimentary", pos: "adj", m: ["무료의"], ex: "We offer *complimentary* breakfast.", para: ["free", "at no cost"] },
+    { id: "b", w: "adjacent", pos: "adj", m: ["인접한"], ex: "The *adjacent* room is quiet.", para: ["neighboring"] },
+    { id: "c", w: "durable", pos: "adj", m: ["내구성 있는"], ex: "A *durable* bag.", para: ["sturdy"] },
+    { id: "d", w: "prompt", pos: "adj", m: ["신속한"], ex: "A *prompt* reply.", para: ["quick"] },
+    { id: "e", w: "rival", pos: "n", m: ["경쟁자"], ex: "Our *rival* won.", para: ["competitor"] },
+  ];
+  assert.equal(C.canParaphrase(ws[0]), true);
+  assert.equal(C.canParaphrase({ ...ws[0], para: [] }), false);
+  const q = C.makeParaphrase(ws[0], ws, C.rng(1));
+  assert.equal(q.options.length, 4);
+  assert.equal(new Set(q.options).size, 4);
+  assert.equal(q.options[q.answer], "free");
+  assert.ok(!q.options.includes("at no cost"), "같은 단어의 다른 동의어는 오답 보기로 쓰지 않는다");
+});

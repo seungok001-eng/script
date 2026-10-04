@@ -250,6 +250,73 @@
     });
   }
 
+  // ───────────── Part 7 패러프레이징 (문맥상 바꿔 쓸 수 있는 말) ─────────────
+  function canParaphrase(w) {
+    return !!(w.para && w.para.length && w.para[0] && starred(w.ex).length >= 1);
+  }
+  function makeParaphrase(word, all, rand) {
+    const r = rand || Math.random;
+    const ans = word.para[0];
+    const own = new Set([word.w.toLowerCase()].concat((word.para || []).map((x) => x.toLowerCase())));
+    const pickFrom = (list) => shuffle(list, r).map((w) => w.para[0]).filter((x) => x && !own.has(x.toLowerCase()));
+    const same = pickFrom(all.filter((w) => w.id !== word.id && w.pos === word.pos && canParaphrase(w)));
+    const other = pickFrom(all.filter((w) => w.id !== word.id && w.pos !== word.pos && canParaphrase(w)));
+    const ds = [];
+    for (const x of same.concat(other)) {
+      if (!ds.some((y) => y.toLowerCase() === x.toLowerCase())) ds.push(x);
+      if (ds.length >= 3) break;
+    }
+    const opts = shuffle([ans].concat(ds), r);
+    return { type: "para", word, prompt: word.ex, key: starred(word.ex).join(" … "), options: opts, answer: opts.indexOf(ans) };
+  }
+
+  // ───────────── 어휘 진단 ─────────────
+  // 난이도마다 고르게 뽑아 '뜻 고르기'로 묻고, 맞힌 비율(찍기 보정)로 아는 단어 수를 추정한다
+  function placementSample(words, perTier, rand) {
+    const r = rand || Math.random;
+    const out = [];
+    for (const t of [1, 2, 3]) {
+      const ws = words.filter((w) => w.tier === t);
+      // Day 전체에 고르게: 무작위로 섞은 뒤 Day 가 겹치지 않게 우선 선택
+      const seen = new Set();
+      const picked = [];
+      for (const w of shuffle(ws, r)) {
+        if (picked.length >= perTier) break;
+        if (seen.has(w.d) && picked.length < Math.min(perTier, 20)) continue;
+        seen.add(w.d);
+        picked.push(w);
+      }
+      for (const w of shuffle(ws, r)) { if (picked.length >= perTier) break; if (!picked.includes(w)) picked.push(w); }
+      out.push(...picked);
+    }
+    return shuffle(out, r);
+  }
+  // results: [{tier, ok, skipped}] → 난이도별 아는 비율 (4지선다 찍기 보정: 맞힘 - 틀림/3)
+  function placementScore(results) {
+    const by = { 1: [], 2: [], 3: [] };
+    results.forEach((x) => by[x.tier] && by[x.tier].push(x));
+    const p = {};
+    for (const t of [1, 2, 3]) {
+      const xs = by[t];
+      if (!xs.length) { p[t] = 0; continue; }
+      const ok = xs.filter((x) => x.ok).length;
+      const wrong = xs.filter((x) => !x.ok && !x.skipped).length;
+      p[t] = clamp((ok - wrong / 3) / xs.length, 0, 1);
+    }
+    return p;
+  }
+  function estimateKnown(p, words) {
+    let n = 0;
+    for (const t of [1, 2, 3]) n += (p[t] || 0) * words.filter((w) => w.tier === t).length;
+    return Math.round(n / 10) * 10;
+  }
+  // 진단 결과로 건너뛸 난이도 추천: 기본 85% 이상 → 기본 건너뛰기, 핵심도 85% 이상 → 핵심까지
+  function recommendSkip(p) {
+    if ((p[1] || 0) >= 0.85 && (p[2] || 0) >= 0.85) return [1, 2];
+    if ((p[1] || 0) >= 0.85) return [1];
+    return [];
+  }
+
   // ───────────── 철자 채점 ─────────────
   function normEn(s) {
     return (s || "")
@@ -358,6 +425,7 @@
     INTERVALS, MASTER_BOX, newState, grade, applyQuiz, markKnown, status, isDue,
     todayPlan, streak,
     rng, shuffle, meaningText, distractors, starred, cloze, plainEx, makeQuestion, makeTest,
+    canParaphrase, makeParaphrase, placementSample, placementScore, estimateKnown, recommendSkip,
     normEn, checkSpelling, editDistance, spellHint,
     search, summarize, projectFinish, clamp,
   };
