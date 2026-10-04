@@ -1,0 +1,60 @@
+# 보카핏 토익 — 안드로이드 테스트용 APK 자동 빌드
+# toeic/ 폴더가 바뀌어 푸시되면(또는 Actions 탭에서 'Run workflow') debug APK 를 만든다.
+# 결과: Actions → 해당 실행 → Artifacts → vocafit-toeic-debug-apk (zip 안의 .apk 를 폰에 설치)
+name: toeic-android-apk
+
+on:
+  push:
+    paths:
+      - "toeic/**"
+      - ".github/workflows/toeic-android.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: toeic-android-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: toeic
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: android-actions/setup-android@v3
+
+      - name: 의존성 설치
+        run: npm ci
+
+      - name: 웹 파일을 안드로이드 프로젝트로 복사
+        run: npx cap sync android
+
+      - name: debug APK 빌드
+        working-directory: toeic/android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+
+      - name: APK 이름 정리
+        run: |
+          mkdir -p dist
+          cp android/app/build/outputs/apk/debug/app-debug.apk "dist/vocafit-toeic-debug-${GITHUB_SHA::7}.apk"
+          ls -la dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vocafit-toeic-debug-apk
+          path: toeic/dist/*.apk
+          retention-days: 30
