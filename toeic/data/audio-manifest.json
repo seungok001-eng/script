@@ -5939,6 +5939,131 @@
 "text": "I'll check the schedule.",
 "voice": "am_michael"
 },
+"lc/382-x2.mp3": {
+"src": "kokoro",
+"text": "Yes, the food was excellent.",
+"voice": "am_michael"
+},
+"lc/383-a.mp3": {
+"src": "kokoro",
+"text": "Do you have anything in the morning?",
+"voice": "bf_emma"
+},
+"lc/383-q.mp3": {
+"src": "kokoro",
+"text": "Did you want the two o'clock tour or the four o'clock?",
+"voice": "am_michael"
+},
+"lc/383-x1.mp3": {
+"src": "kokoro",
+"text": "The tour guide was very friendly.",
+"voice": "bf_emma"
+},
+"lc/383-x2.mp3": {
+"src": "kokoro",
+"text": "Yes, two tickets.",
+"voice": "bf_emma"
+},
+"lc/384-a.mp3": {
+"src": "kokoro",
+"text": "She mentioned she rarely checks her email.",
+"voice": "am_michael"
+},
+"lc/384-q.mp3": {
+"src": "kokoro",
+"text": "Should I call the client or send her an email?",
+"voice": "af_heart"
+},
+"lc/384-x1.mp3": {
+"src": "kokoro",
+"text": "I'll call a taxi for you.",
+"voice": "am_michael"
+},
+"lc/384-x2.mp3": {
+"src": "kokoro",
+"text": "The client list is on my desk.",
+"voice": "am_michael"
+},
+"lc/385-a.mp3": {
+"src": "kokoro",
+"text": "Is the shuttle bus an option? It's free for guests.",
+"voice": "am_michael"
+},
+"lc/385-q.mp3": {
+"src": "kokoro",
+"text": "Do you want to take a taxi or the subway to the airport?",
+"voice": "bf_emma"
+},
+"lc/385-x1.mp3": {
+"src": "kokoro",
+"text": "The flight was on time.",
+"voice": "am_michael"
+},
+"lc/385-x2.mp3": {
+"src": "kokoro",
+"text": "Yes, it's a short ride.",
+"voice": "am_michael"
+},
+"lc/386-a.mp3": {
+"src": "kokoro",
+"text": "It's been moved to the third-floor lounge.",
+"voice": "bm_george"
+},
+"lc/386-q.mp3": {
+"src": "kokoro",
+"text": "Is the meeting in Room A or Room B?",
+"voice": "af_bella"
+},
+"lc/386-x1.mp3": {
+"src": "kokoro",
+"text": "At two thirty.",
+"voice": "bm_george"
+},
+"lc/386-x2.mp3": {
+"src": "kokoro",
+"text": "Yes, I'll be there.",
+"voice": "bm_george"
+},
+"lc/387-a.mp3": {
+"src": "kokoro",
+"text": "Is there a discount for two years?",
+"voice": "am_michael"
+},
+"lc/387-q.mp3": {
+"src": "kokoro",
+"text": "Do you want to renew your membership for one year or two?",
+"voice": "af_heart"
+},
+"lc/387-x1.mp3": {
+"src": "kokoro",
+"text": "My membership card is in my wallet.",
+"voice": "am_michael"
+},
+"lc/387-x2.mp3": {
+"src": "kokoro",
+"text": "She's a new member.",
+"voice": "am_michael"
+},
+"lc/388-a.mp3": {
+"src": "kokoro",
+"text": "A freelancer makes more sense for now.",
+"voice": "am_michael"
+},
+"lc/388-q.mp3": {
+"src": "kokoro",
+"text": "Should we hire a full-time designer or work with a freelancer?",
+"voice": "af_heart"
+},
+"lc/388-x1.mp3": {
+"src": "kokoro",
+"text": "Yes, he's a great designer.",
+"voice": "am_michael"
+},
+"lc/388-x2.mp3": {
+"src": "kokoro",
+"text": "The office closes at five.",
+"voice": "am_michael"
+},
 "p1/001.mp3": {
 "src": "kokoro",
 "text": "Some files are stacked on the desk.",
