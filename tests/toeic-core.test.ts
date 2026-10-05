@@ -267,3 +267,26 @@ test("lcRecord / lcSummary: 맞힘·틀림 기록과 요약", () => {
   const sum = C.lcSummary(LC, { "lc-1": s, "lc-2": { ok: 0, ng: 2, last: 1, wrong: true } });
   assert.deepEqual(sum, { total: 6, seen: 2, wrong: 1, accuracy: 25 });
 });
+
+test("LC 데이터: 그룹·Part 규칙, 대화 오답 보기, 표현 중복 없음", () => {
+  const ex = JSON.parse(fs.readFileSync(new URL("../toeic/data/extras.json", import.meta.url), "utf8"));
+  const groups = new Map(ex.lcGroups.map((g: any) => [g.g, g.part]));
+  assert.ok(ex.lc.length >= 800, `LC ${ex.lc.length}`);
+  const norm = (s: string) => s.toLowerCase().replace(/\*/g, "").replace(/[^a-z0-9~ ]/g, "").trim();
+  const seen = new Set();
+  for (const it of ex.lc) {
+    const part = groups.get(it.g);
+    assert.ok(part, `그룹 없음: ${it.g}`);
+    const d = C.splitDialog(it.e);
+    if (part === 4) assert.ok(!d, `Part 4 는 한 사람의 말: ${it.e}`);
+    if (d) {
+      assert.ok(C.splitDialog(it.k), `대화 해석 형식: ${it.k}`);
+      if (it.x) assert.ok(it.x.length === 2 && it.xk.length === 2 && !it.x.some((x: string) => x.includes("*")), `오답 보기: ${it.e}`);
+    } else assert.ok(!it.x, `대화가 아닌데 오답 보기: ${it.e}`);
+    assert.ok((it.e.match(/\*/g) || []).length % 2 === 0, `강조 짝: ${it.e}`);
+    const k = norm(it.key);
+    assert.ok(!seen.has(k), `표현 중복: ${it.key}`);
+    seen.add(k);
+  }
+  assert.ok(ex.lc.filter(C.canRespond).length >= 400);
+});

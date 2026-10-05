@@ -4901,11 +4901,11 @@
   },
   {
    "g": "Part 2 Who·Where 질문",
-   "e": "Q: Where did you put the extra chairs? / A: I *put them away* in the storage room.",
+   "e": "Q: Where did you put the extra chairs? / A: I put them away in the *storage room*.",
    "k": "Q: 여분 의자들 어디에 뒀어요? / A: 창고에 치워 뒀어요.",
-   "key": "put ~ away",
-   "keyKo": "치우다, 제자리에 넣어 두다",
-   "tip": "Where 질문에 '~에 치워 두었다'고 답하는 정답. chair를 '의장을 맡다'로 쓴 보기는 함정이다.",
+   "key": "storage room",
+   "keyKo": "창고, 보관실",
+   "tip": "Where 질문에 장소로 답하는 정답. chair 를 '의장을 맡다'로 쓴 보기는 함정이다.",
    "x": [
     "About twenty of them.",
     "I'll chair the meeting."
@@ -5509,10 +5509,10 @@
   },
   {
    "g": "Part 2 When·How long 질문",
-   "e": "Q: How long has Mr. Novak been the head of the department? / A: *For as long as* I've worked here.",
-   "k": "Q: 노박 씨가 부서장을 맡은 지 얼마나 됐어요? / A: 제가 여기서 일한 내내요.",
-   "key": "for as long as ~",
-   "keyKo": "~하는 내내",
+   "e": "Q: How long has Mr. Novak been the head of the department? / A: *Since before* I joined the company.",
+   "k": "Q: 노박 씨가 부서장을 맡은 지 얼마나 됐어요? / A: 제가 입사하기 전부터요.",
+   "key": "since before ~",
+   "keyKo": "~하기 전부터",
    "tip": "기간을 숫자로 말하지 않고 다른 기준에 빗대어 답하는 정답이다.",
    "x": [
     "He's the head of Marketing.",
@@ -5845,11 +5845,11 @@
   },
   {
    "g": "Part 2 Why·How 질문",
-   "e": "Q: How soon can you send a technician? / A: *First thing* tomorrow morning.",
-   "k": "Q: 기술자를 얼마나 빨리 보내 주실 수 있어요? / A: 내일 아침 일찍 바로요.",
-   "key": "first thing (in the morning)",
-   "keyKo": "(아침에) 제일 먼저, 일찍",
-   "tip": "How soon 은 '언제쯤'을 묻는 질문이라 시점으로 답해요.",
+   "e": "Q: How soon can you send a technician? / A: Someone can be there *within the hour*.",
+   "k": "Q: 기술자를 얼마나 빨리 보내 주실 수 있어요? / A: 한 시간 안에 누군가 가실 수 있어요.",
+   "key": "within the hour",
+   "keyKo": "한 시간 안에",
+   "tip": "How soon 은 '얼마나 빨리'를 묻는 질문이라 걸리는 시간으로 답해요. on the hour(정각)와 구분.",
    "x": [
     "He's a skilled technician.",
     "To fix the copier."
@@ -5861,11 +5861,11 @@
   },
   {
    "g": "Part 2 Why·How 질문",
-   "e": "Q: How far is the hotel from the airport? / A: About *a twenty-minute drive*.",
-   "k": "Q: 호텔이 공항에서 얼마나 멀어요? / A: 차로 20분 정도예요.",
-   "key": "a ~-minute drive",
-   "keyKo": "차로 ~분 거리",
-   "tip": "How far 에는 거리나 소요 시간으로 답해요. far 를 반복한 오답 주의.",
+   "e": "Q: How far is the hotel from the airport? / A: *Not far at all.* The shuttle takes ten minutes.",
+   "k": "Q: 호텔이 공항에서 얼마나 멀어요? / A: 전혀 안 멀어요. 셔틀로 10분 걸려요.",
+   "key": "Not far at all.",
+   "keyKo": "전혀 멀지 않아요",
+   "tip": "How far 에 거리 숫자 대신 '가깝다'고 답하는 응답. far 를 반복한 오답 주의.",
    "x": [
     "I'll book the hotel.",
     "Yes, it's far too expensive."
@@ -6037,11 +6037,11 @@
   },
   {
    "g": "Part 2 What·Which 질문",
-   "e": "Q: What time does the pharmacy close on Saturdays? / A: *It's open until* six.",
-   "k": "Q: 약국이 토요일엔 몇 시에 닫아요? / A: 6시까지 열어요.",
-   "key": "be open until ~",
-   "keyKo": "~까지 영업하다",
-   "tip": "What time 질문에 장소나 Yes/No 응답은 오답이에요.",
+   "e": "Q: What time does the pharmacy close on Saturdays? / A: *Same as* weekdays, at nine.",
+   "k": "Q: 약국이 토요일엔 몇 시에 닫아요? / A: 평일이랑 같아요, 9시요.",
+   "key": "same as ~",
+   "keyKo": "~와 같다",
+   "tip": "다른 기준(평일)에 빗대어 답하는 응답. What time 질문에 장소나 Yes/No 응답은 오답이에요.",
    "x": [
     "It's close to the bank.",
     "Yes, every Saturday."
@@ -6677,11 +6677,11 @@
   },
   {
    "g": "Part 2 Yes/No·조동사 질문",
-   "e": "Q: Has the new receptionist started yet? / A: *Not until* next week.",
-   "k": "Q: 새 접수 담당자가 벌써 출근했어요? / A: 다음 주부터예요.",
-   "key": "not until ~",
-   "keyKo": "~이 되어서야 (그 전엔 아니다)",
-   "tip": "receptionist 와 reception, start 반복 오답 주의.",
+   "e": "Q: Has the new receptionist started yet? / A: *Her first day is* next Monday.",
+   "k": "Q: 새 접수 담당자가 벌써 출근했어요? / A: 첫 출근은 다음 주 월요일이에요.",
+   "key": "one's first day",
+   "keyKo": "첫 출근일, 첫날",
+   "tip": "No 없이 첫 출근 날짜로 '아직'이라고 답하는 응답. reception, start 반복 오답 주의.",
    "x": [
     "The reception is in the lobby.",
     "Yes, it started to rain."
@@ -7237,11 +7237,11 @@
   },
   {
    "g": "Part 2 부정·부가 의문문",
-   "e": "Q: You can work late tonight, can't you? / A: *As long as* I'm out by eight.",
-   "k": "Q: 오늘 밤 늦게까지 일할 수 있죠? / A: 8시 전에만 나갈 수 있으면요.",
-   "key": "as long as ~",
-   "keyKo": "~하기만 하면",
-   "tip": "조건을 붙여 수락하는 응답. 주어가 다른 She came in late 오답 주의.",
+   "e": "Q: You can work late tonight, can't you? / A: Until seven *at the latest*. I have dinner plans.",
+   "k": "Q: 오늘 밤 늦게까지 일할 수 있죠? / A: 늦어도 7시까지만요. 저녁 약속이 있어서요.",
+   "key": "at the latest",
+   "keyKo": "늦어도",
+   "tip": "조건을 붙여 일부만 수락하는 응답. at the latest(늦어도) ↔ at the earliest(빨라도).",
    "x": [
     "Yes, it's tonight's special.",
     "She came in late this morning."
@@ -7493,11 +7493,11 @@
   },
   {
    "g": "Part 2 선택 의문문",
-   "e": "Q: Are you taking the train or driving to the conference? / A: *Neither, actually.* Ms. Patel is giving me a ride.",
-   "k": "Q: 학회에 기차 타고 가요, 운전해서 가요? / A: 사실 둘 다 아니에요. 파텔 씨가 태워 주기로 했어요.",
-   "key": "Neither, actually.",
-   "keyKo": "사실 둘 다 아니에요",
-   "tip": "둘 다 아닌 제3의 방법을 말하는 응답도 선택 의문문의 정답이 된다.",
+   "e": "Q: Are you taking the train or driving to the conference? / A: *I'm carpooling with* Ms. Patel, actually.",
+   "k": "Q: 학회에 기차 타고 가요, 운전해서 가요? / A: 사실 파텔 씨랑 카풀하기로 했어요.",
+   "key": "carpool with ~",
+   "keyKo": "~와 카풀하다(차를 같이 타고 가다)",
+   "tip": "A or B 질문에 둘 다 아닌 제3의 방법을 말하는 응답도 선택 의문문의 정답이 된다.",
    "x": [
     "I trained the new staff.",
     "Yes, it's in Chicago."
@@ -7573,10 +7573,10 @@
   },
   {
    "g": "Part 2 선택 의문문",
-   "e": "Q: Should I call you on your cell or at the office? / A: My cell. *I'll be out of the office* all day.",
-   "k": "Q: 휴대폰으로 전화드릴까요, 사무실로 드릴까요? / A: 휴대폰으로요. 하루 종일 외근이라서요.",
-   "key": "be out of the office",
-   "keyKo": "사무실에 없다, 외근 중이다",
+   "e": "Q: Should I call you on your cell or at the office? / A: My cell. *I'll be on the road* all day.",
+   "k": "Q: 휴대폰으로 전화드릴까요, 사무실로 드릴까요? / A: 휴대폰으로요. 하루 종일 이동 중이라서요.",
+   "key": "be on the road",
+   "keyKo": "(외근·출장으로) 이동 중이다",
    "tip": "하나를 고른 뒤 이유를 덧붙이는 응답. 이유만 말해도 정답이 될 수 있다.",
    "x": [
     "I called him last night.",
@@ -7669,11 +7669,11 @@
   },
   {
    "g": "Part 2 선택 의문문",
-   "e": "Q: Do you want a regular or a large coffee? / A: *Make it a large*, please. I have a long day ahead.",
+   "e": "Q: Do you want a regular or a large coffee? / A: Make it a large, please. *I have a long day ahead.*",
    "k": "Q: 커피 레귤러로 드릴까요, 라지로 드릴까요? / A: 라지로 주세요. 오늘 하루가 길거든요.",
-   "key": "Make it ~.",
-   "keyKo": "~(으)로 해 주세요 (주문할 때)",
-   "tip": "'Make it ~'은 주문을 정할 때 쓰는 구어 표현. make(만들다) 반복 함정에 주의.",
+   "key": "have a long day ahead",
+   "keyKo": "(할 일이 많은) 긴 하루가 남아 있다",
+   "tip": "하나를 고른 뒤 이유를 덧붙이는 응답. make(만들다)를 반복한 오답 함정에 주의.",
    "x": [
     "I made it myself.",
     "Yes, with cream and sugar."
@@ -7717,11 +7717,11 @@
   },
   {
    "g": "Part 2 선택 의문문",
-   "e": "Q: Is the new manager starting this week or next week? / A: *Not until* the first of the month, I heard.",
-   "k": "Q: 새 매니저가 이번 주에 출근해요, 다음 주에 출근해요? / A: 다음 달 1일이나 돼야 온다고 들었어요.",
-   "key": "Not until ~",
-   "keyKo": "~이 되어서야 (그 전에는 아니다)",
-   "tip": "두 시점 모두 아닌 다른 시점을 말하는 응답. 'Not until'은 Part 2 빈출 표현이다.",
+   "e": "Q: Is the new manager starting this week or next week? / A: *From what I heard*, she starts on the first.",
+   "k": "Q: 새 매니저가 이번 주에 출근해요, 다음 주에 출근해요? / A: 제가 듣기로는 1일에 출근한대요.",
+   "key": "from what I heard",
+   "keyKo": "내가 듣기로는",
+   "tip": "두 시점 모두 아닌 다른 시점(1일)을 전해 들은 대로 말하는 응답이다.",
    "x": [
     "Yes, she's very experienced.",
     "He managed the store well."
@@ -7877,11 +7877,11 @@
   },
   {
    "g": "Part 2 선택 의문문",
-   "e": "Q: Is the meeting in Room A or Room B? / A: *It's been moved to* the third-floor lounge.",
-   "k": "Q: 회의가 A실에서 해요, B실에서 해요? / A: 3층 라운지로 옮겨졌어요.",
-   "key": "It's been moved to ~",
-   "keyKo": "~로 옮겨졌어요",
-   "tip": "장소가 변경되었다는 응답. 둘 다 아닌 제3의 장소가 정답이다.",
+   "e": "Q: Is the meeting in Room A or Room B? / A: The *updated schedule* says it's in the third-floor lounge.",
+   "k": "Q: 회의가 A실에서 해요, B실에서 해요? / A: 변경된 일정표에는 3층 라운지라고 되어 있어요.",
+   "key": "updated schedule",
+   "keyKo": "변경된 일정(표)",
+   "tip": "A or B 질문에 둘 다 아닌 제3의 장소로 답하는 정답. 일정 변경을 알리는 응답이다.",
    "x": [
     "At two thirty.",
     "Yes, I'll be there."
@@ -8101,11 +8101,11 @@
   },
   {
    "g": "Part 2 평서문 응답",
-   "e": "Q: The printer's out of paper. / A: *There's a box* in the supply closet.",
-   "k": "Q: 프린터에 용지가 떨어졌어요. / A: 비품 창고에 한 상자 있어요.",
-   "key": "There's ~ in the supply closet.",
-   "keyKo": "비품 창고에 ~이 있어요",
-   "tip": "'떨어졌다'는 말에 있는 곳을 알려 주는 응답. paper(신문) 함정에 주의.",
+   "e": "Q: The printer's out of paper. / A: Really? I just *refilled* it an hour ago.",
+   "k": "Q: 프린터에 용지가 떨어졌어요. / A: 정말요? 한 시간 전에 제가 채워 놨는데요.",
+   "key": "refill",
+   "keyKo": "다시 채우다, 보충하다",
+   "tip": "평서문에 놀라움으로 반응하는 응답도 정답이다. paper(신문) 함정에 주의.",
    "x": [
     "I read it in the paper.",
     "Yes, he's out today."
@@ -8213,11 +8213,11 @@
   },
   {
    "g": "Part 2 평서문 응답",
-   "e": "Q: The restaurant we wanted is closed for renovations. / A: There's a nice café *just around the corner*.",
-   "k": "Q: 우리가 가려던 식당이 리모델링 때문에 문을 닫았어요. / A: 바로 근처에 괜찮은 카페가 있어요.",
-   "key": "just around the corner",
-   "keyKo": "바로 근처에, 모퉁이만 돌면",
-   "tip": "계획이 틀어졌다는 말에 대안을 제시하는 응답이 정답이다.",
+   "e": "Q: The restaurant we wanted is closed for renovations. / A: Oh no. Should we just *order in* instead?",
+   "k": "Q: 우리가 가려던 식당이 리모델링 때문에 문을 닫았어요. / A: 이런. 그냥 배달시켜 먹을까요?",
+   "key": "order in",
+   "keyKo": "(음식을) 배달시켜 먹다",
+   "tip": "계획이 틀어졌다는 말에 대안을 제시하는 응답이 정답이다. order in 은 배달 주문.",
    "x": [
     "I'll close the window.",
     "The menu has changed a lot."
@@ -8805,18 +8805,18 @@
   },
   {
    "g": "쇼핑·서비스 대화",
-   "e": "Q: Does this sweater *come in* other colors? / A: Yes, we also have it in navy and gray.",
-   "k": "Q: 이 스웨터 다른 색상도 나오나요? / A: 네, 남색이랑 회색도 있어요.",
-   "key": "come in (색상·사이즈)",
-   "keyKo": "(상품이 색상·사이즈로) 나오다",
-   "tip": "come in은 '들어오다' 외에 '~색상·사이즈로 나오다'라는 뜻이 빈출이다.",
+   "e": "Q: Is this sweater *machine washable*? / A: No, it needs to be dry-cleaned.",
+   "k": "Q: 이 스웨터 세탁기에 빨아도 되나요? / A: 아니요, 드라이클리닝 하셔야 해요.",
+   "key": "machine washable",
+   "keyKo": "세탁기로 빨 수 있는",
+   "tip": "옷 관리 방법 문의. dry-clean(드라이클리닝하다), hand wash(손빨래)도 함께 알아 두자.",
    "x": [
-    "Please come in and have a seat.",
-    "It's made of wool."
+    "The washroom is down the hall.",
+    "We sell sewing machines, too."
    ],
    "xk": [
-    "들어와서 앉으세요.",
-    "울 소재예요."
+    "화장실은 복도 끝에 있어요.",
+    "저희는 재봉틀도 팔아요."
    ]
   },
   {
@@ -8885,11 +8885,11 @@
   },
   {
    "g": "쇼핑·서비스 대화",
-   "e": "You can *pay in* twelve monthly *installments* with no interest.",
-   "k": "12개월 무이자 할부로 내실 수 있어요.",
-   "key": "pay in installments",
-   "keyKo": "할부로 내다",
-   "tip": "installment는 '할부금'. 결제 방식 문제의 정답 근거가 된다."
+   "e": "You can get twelve months of *zero-percent financing* on any sofa in the store.",
+   "k": "매장 내 모든 소파는 12개월 무이자 할부로 구매하실 수 있어요.",
+   "key": "zero-percent financing",
+   "keyKo": "무이자 할부",
+   "tip": "financing 은 '할부·대출 결제'. 결제 조건을 묻는 문제의 정답 근거가 된다."
   },
   {
    "g": "쇼핑·서비스 대화",
@@ -8909,11 +8909,11 @@
   },
   {
    "g": "Part 3·4 화자 의도·추론",
-   "e": "Q: When do you think the new printer will get here? / A: *Your guess is as good as mine.*",
-   "k": "Q: 새 프린터가 언제 도착할 것 같아요? / A: 저도 모르기는 마찬가지예요.",
-   "key": "Your guess is as good as mine.",
-   "keyKo": "당신 추측이나 내 추측이나 같다 → 나도 전혀 모른다",
-   "tip": "'모른다'는 뜻의 관용 표현. 화자 의도 문제와 Part 2 우회 응답에 모두 나온다.",
+   "e": "Q: When do you think the new printer will get here? / A: *Not anytime soon*, I'm afraid.",
+   "k": "Q: 새 프린터가 언제 도착할 것 같아요? / A: 아쉽지만 금방은 안 올 거예요.",
+   "key": "not anytime soon",
+   "keyKo": "당분간은 아니다 → 한참 기다려야 한다",
+   "tip": "도착 시점 대신 '한참 걸린다'고 답하는 응답. 기다려야 한다는 의도를 파악한다.",
    "x": [
     "It prints in color.",
     "Here's the guest list."
@@ -9053,17 +9053,17 @@
   },
   {
    "g": "사무기기·IT 문제",
-   "e": "Q: My computer *froze* in the middle of the presentation. / A: Did you try restarting it?",
-   "k": "Q: 발표 도중에 컴퓨터가 멈춰 버렸어요. / A: 다시 시작해 보셨어요?",
-   "key": "freeze",
-   "keyKo": "(컴퓨터 화면이) 멈추다, 먹통이 되다",
-   "tip": "freeze 의 과거형 froze 를 '얼었다'로만 알면 놓친다. freezing(추운) 오답 함정 주의.",
+   "e": "Q: My screen *went blank* in the middle of the presentation. / A: Did you try restarting it?",
+   "k": "Q: 발표 도중에 화면이 갑자기 꺼져 버렸어요. / A: 다시 시작해 보셨어요?",
+   "key": "go blank",
+   "keyKo": "(화면이) 갑자기 꺼지다, 아무것도 안 나오다",
+   "tip": "go blank 는 화면이 먹통이 되는 고장. blank(빈칸)를 반복한 유사 발음 오답 주의.",
    "x": [
-    "It's freezing in this room.",
+    "Just leave that line blank.",
     "I'll present the sales figures next."
    ],
    "xk": [
-    "이 방 정말 춥네요.",
+    "그 줄은 그냥 비워 두세요.",
     "다음엔 제가 매출 수치를 발표할게요."
    ]
   },
@@ -9149,11 +9149,11 @@
   },
   {
    "g": "사무기기·IT 문제",
-   "e": "Q: I accidentally deleted the file with the sales figures. / A: Don't worry. The system *backs up* everything overnight.",
-   "k": "Q: 실수로 매출 수치 파일을 삭제했어요. / A: 걱정 마세요. 시스템이 밤사이 전부 백업해 둬요.",
-   "key": "back up",
-   "keyKo": "(데이터를) 백업하다",
-   "tip": "파일 삭제·분실 문제의 해결책으로 '백업본이 있다'는 응답이 자주 나온다.",
+   "e": "Q: I accidentally deleted the file with the sales figures. / A: Don't worry. IT can *recover* it for you.",
+   "k": "Q: 실수로 매출 수치 파일을 삭제했어요. / A: 걱정 마세요. IT 팀이 복구해 줄 수 있어요.",
+   "key": "recover (a file)",
+   "keyKo": "(삭제된 파일을) 복구하다",
+   "tip": "파일 삭제·분실 문제의 해결책. recover 는 restore, retrieve 로 패러프레이즈된다.",
    "x": [
     "Sales went up last quarter.",
     "I'll file it in the cabinet."
@@ -9229,11 +9229,11 @@
   },
   {
    "g": "사무기기·IT 문제",
-   "e": "Q: Is anyone else having trouble *accessing the shared drive*? / A: Yes, IT sent an e-mail about it this morning.",
+   "e": "Q: Is anyone else *having trouble* accessing the shared drive? / A: Yes, IT sent an e-mail about it this morning.",
    "k": "Q: 공유 드라이브 접속에 문제 있는 사람 또 있어요? / A: 네, 오늘 아침에 IT 팀에서 그 건으로 이메일을 보냈어요.",
-   "key": "access the shared drive",
-   "keyKo": "공유 드라이브에 접속하다",
-   "tip": "drive(운전하다), shared(함께 나눴다)를 반복한 유사 발음 오답이 전형적이다.",
+   "key": "have trouble ~ing",
+   "keyKo": "~하는 데 문제를 겪다",
+   "tip": "기기·접속 문제 대화의 첫마디. drive, shared 를 반복한 유사 발음 오답이 전형적이다.",
    "x": [
     "I'll drive you to the airport.",
     "We shared a taxi yesterday."
@@ -9445,11 +9445,11 @@
   },
   {
    "g": "인사·채용·교육",
-   "e": "Q: Mr. Rivera *was promoted to* regional manager. / A: Good for him. He really deserves it.",
+   "e": "Q: Mr. Rivera was promoted to regional manager. / A: Good for him. *He really deserves it.*",
    "k": "Q: 리베라 씨가 지역 관리자로 승진했어요. / A: 잘됐네요. 그럴 자격이 충분하죠.",
-   "key": "be promoted to ~",
-   "keyKo": "~로 승진하다",
-   "tip": "promotion 은 '승진'과 '판촉 행사' 두 뜻. 판촉 뜻으로 쓴 오답이 함정이다.",
+   "key": "He really deserves it.",
+   "keyKo": "그럴 자격이 충분하다",
+   "tip": "승진 소식에 축하로 답하는 응답. promotion 을 '판촉 행사' 뜻으로 쓴 오답이 함정이다.",
    "x": [
     "The promotion ends on Friday.",
     "The manager's office is down the hall."
@@ -9477,11 +9477,11 @@
   },
   {
    "g": "인사·채용·교육",
-   "e": "Q: Why is Ms. Chen *transferring to* the Tokyo office? / A: She wants some international experience.",
+   "e": "Q: Why is Ms. Chen transferring to the Tokyo office? / A: She wants to *gain* some international *experience*.",
    "k": "Q: 첸 씨는 왜 도쿄 지사로 전근 가요? / A: 해외 근무 경험을 쌓고 싶어 해요.",
-   "key": "transfer to ~",
-   "keyKo": "~로 전근 가다",
-   "tip": "transfer 는 전근·환승·송금 등 뜻이 많다. 환승 뜻으로 쓴 오답에 주의.",
+   "key": "gain experience",
+   "keyKo": "경험을 쌓다",
+   "tip": "Why 질문에 Because 없이 목적으로 답한 정답. transfer 를 '환승' 뜻으로 쓴 오답에 주의.",
    "x": [
     "You can transfer at the next station.",
     "For about six months."
@@ -9589,11 +9589,11 @@
   },
   {
    "g": "인사·채용·교육",
-   "e": "Q: Is the training workshop *mandatory* for all staff? / A: Only for those in customer service.",
-   "k": "Q: 교육 워크숍은 전 직원 필수인가요? / A: 고객 서비스팀만 필수예요.",
-   "key": "mandatory",
-   "keyKo": "의무적인, 필수의",
-   "tip": "mandatory = required = compulsory. 반대말 optional 도 함께 알아 두자.",
+   "e": "Q: Is the training workshop *optional*? / A: Not for anyone in customer service.",
+   "k": "Q: 교육 워크숍은 자율 참석인가요? / A: 고객 서비스팀은 꼭 참석해야 해요.",
+   "key": "optional",
+   "keyKo": "선택적인, 자율 참석의",
+   "tip": "optional ↔ mandatory, required. 필수 여부를 부서별로 다르게 답하는 응답이 나온다.",
    "x": [
     "The shop closes at eight.",
     "Yes, I worked out this morning."
@@ -9749,19 +9749,19 @@
   },
   {
    "g": "인사·채용·교육",
-   "e": "Mr. Brooks *gave his two weeks' notice* yesterday, so we need to start looking for someone.",
-   "k": "브룩스 씨가 어제 2주 뒤 퇴사하겠다고 알려서 후임자를 찾기 시작해야 해요.",
-   "key": "give two weeks' notice",
-   "keyKo": "(2주 전에) 퇴사를 통보하다",
-   "tip": "notice 는 '공지'가 아니라 '사직 통보'의 뜻. 미국 직장의 관행 표현이다."
+   "e": "Mr. Brooks is leaving at the end of the month, so we need to *find a replacement* soon.",
+   "k": "브룩스 씨가 이달 말에 그만두니까 서둘러 후임자를 찾아야 해요.",
+   "key": "find a replacement",
+   "keyKo": "후임자를 구하다",
+   "tip": "replacement 는 '교체품' 외에 '후임자'라는 뜻. 다음에 할 일(채용 공고) 문제로 이어진다."
   },
   {
    "g": "출장·공항·교통",
-   "e": "Q: Why has our flight *been delayed*? / A: Apparently, there's a mechanical problem.",
+   "e": "Q: Why has our flight been delayed? / A: Apparently, there's *a mechanical problem*.",
    "k": "Q: 우리 비행기가 왜 지연됐어요? / A: 기계 결함이 있대요.",
-   "key": "be delayed",
-   "keyKo": "지연되다",
-   "tip": "지연 이유(기계 결함·날씨)를 묻는 문제가 단골이다. Why 질문에 시점 답은 오답.",
+   "key": "a mechanical problem",
+   "keyKo": "기계 결함",
+   "tip": "지연 이유의 단골. mechanical issue, technical difficulty 로도 나온다. Why 에 시점 답은 오답.",
    "x": [
     "About two hours ago.",
     "The flight attendant was very kind."
@@ -10109,11 +10109,11 @@
   },
   {
    "g": "출장·공항·교통",
-   "e": "The hotel is *within walking distance* of the convention center.",
-   "k": "그 호텔은 컨벤션 센터까지 걸어갈 수 있는 거리에 있어요.",
-   "key": "within walking distance",
-   "keyKo": "걸어갈 수 있는 거리에",
-   "tip": "호텔을 고른 이유(위치·접근성)를 묻는 문제로 자주 나온다."
+   "e": "We got *a group rate* at the hotel next to the convention center.",
+   "k": "컨벤션 센터 옆 호텔을 단체 요금으로 예약했어요.",
+   "key": "group rate",
+   "keyKo": "단체 요금(단체 할인가)",
+   "tip": "호텔·항공 예약 대화에서 비용을 아낀 방법을 묻는 문제의 정답 근거가 된다."
   },
   {
    "g": "식당·호텔·케이터링",
@@ -10293,10 +10293,10 @@
   },
   {
    "g": "식당·호텔·케이터링",
-   "e": "Q: I'll have the lemon tart for dessert, please. / A: Sorry, we've *run out of* that today. How about the cheesecake?",
+   "e": "Q: I'll have the lemon tart for dessert, please. / A: Sorry, *we're all out of* that today. How about the cheesecake?",
    "k": "Q: 디저트는 레몬 타르트로 할게요. / A: 죄송하지만 오늘은 다 떨어졌어요. 치즈케이크는 어떠세요?",
-   "key": "run out of",
-   "keyKo": "~이 다 떨어지다",
+   "key": "be all out of",
+   "keyKo": "~이 다 떨어지다(품절이다)",
    "tip": "품절을 알리고 대안을 권하는 응답. sold out, out of stock 과 같은 맥락.",
    "x": [
     "Yes, the desserts were great.",
@@ -10437,11 +10437,11 @@
   },
   {
    "g": "식당·호텔·케이터링",
-   "e": "Since you're a rewards member, we've *upgraded* you *to* a suite at no extra charge.",
-   "k": "리워드 회원이셔서 추가 요금 없이 스위트룸으로 업그레이드해 드렸어요.",
-   "key": "upgrade ~ to",
-   "keyKo": "~을 (상위 등급으로) 올려 주다",
-   "tip": "'왜 업그레이드를 받았나' 문제의 단서는 회원 자격(rewards member)."
+   "e": "Every room *is equipped with* a coffee maker and a mini fridge.",
+   "k": "모든 객실에는 커피 메이커와 소형 냉장고가 갖춰져 있어요.",
+   "key": "be equipped with",
+   "keyKo": "~을 갖추고 있다",
+   "tip": "객실·시설에 무엇이 있는지 묻는 문제의 단서. 들은 시설명이 그대로 정답에 나온다."
   },
   {
    "g": "식당·호텔·케이터링",
@@ -10573,11 +10573,11 @@
   },
   {
    "g": "부동산·시설·공사",
-   "e": "Q: Is the new location close to the subway? / A: Yes, it's *within walking distance* of two stations.",
-   "k": "Q: 새 지점은 지하철역에서 가까워요? / A: 네, 역 두 곳까지 걸어갈 수 있는 거리예요.",
-   "key": "within walking distance (of)",
-   "keyKo": "(~까지) 걸어갈 수 있는 거리에",
-   "tip": "close 를 '닫다'로 받은 오답(The store closes ~)이 유사 발음 함정.",
+   "e": "Q: Is the new location close to the subway? / A: Yes, it's just *steps from* Central Station.",
+   "k": "Q: 새 지점은 지하철역에서 가까워요? / A: 네, 센트럴역에서 몇 걸음 안 되는 거리예요.",
+   "key": "steps from ~",
+   "keyKo": "~에서 아주 가까운(몇 걸음 거리)",
+   "tip": "부동산 대화·광고의 위치 장점 표현. close 를 '닫다'로 받은 오답(closes)이 함정.",
    "x": [
     "The store closes at nine.",
     "I took the subway this morning."
@@ -10605,11 +10605,11 @@
   },
   {
    "g": "부동산·시설·공사",
-   "e": "Q: The elevator's *out of order* again. / A: Then let's take the stairs. We're only going to the third floor.",
-   "k": "Q: 엘리베이터가 또 고장 났어요. / A: 그럼 계단으로 가요. 3층까지만 가면 되잖아요.",
-   "key": "out of order",
-   "keyKo": "고장 난",
-   "tip": "order 를 '주문·순서'로 받은 오답이 단골 함정.",
+   "e": "Q: The elevator's out of order again. / A: Maintenance *is aware of* it. A technician's coming at two.",
+   "k": "Q: 엘리베이터가 또 고장 났어요. / A: 관리팀도 알고 있어요. 2시에 기사가 온대요.",
+   "key": "be aware of ~",
+   "keyKo": "~을 알고 있다",
+   "tip": "문제 제기에 '이미 알고 조치 중'이라고 답하는 정답. order(주문·순서) 오답 함정 주의.",
    "x": [
     "I already placed the order.",
     "Yes, in alphabetical order."
@@ -10789,11 +10789,11 @@
   },
   {
    "g": "부동산·시설·공사",
-   "e": "The project's *ahead of schedule*, so the new wing should open in May.",
-   "k": "프로젝트가 예정보다 앞서 진행되고 있어서 신관은 5월에 문을 열 거예요.",
-   "key": "ahead of schedule",
-   "keyKo": "예정보다 앞서",
-   "tip": "behind schedule(예정보다 늦은)과 반대. 진행 상황 문제에 단골로 나온다."
+   "e": "The new wing is *nearing completion* and should open in May.",
+   "k": "신관이 완공을 앞두고 있어서 5월에 문을 열 예정이에요.",
+   "key": "near completion",
+   "keyKo": "완공(완료)이 가까워지다",
+   "tip": "공사 진행 상황 문제의 정답 근거. almost finished, nearly done 으로 패러프레이즈된다."
   },
   {
    "g": "부동산·시설·공사",
@@ -10981,11 +10981,11 @@
   },
   {
    "g": "주문·배송·재고",
-   "e": "Q: Can I reorder the same printer model I bought last year? / A: Unfortunately, that model's been *discontinued*.",
+   "e": "Q: Can I *reorder* the same printer model I bought last year? / A: Unfortunately, that model's been discontinued.",
    "k": "Q: 작년에 샀던 프린터와 같은 모델로 다시 주문할 수 있나요? / A: 아쉽게도 그 모델은 단종됐어요.",
-   "key": "be discontinued",
-   "keyKo": "단종되다",
-   "tip": "단종 → 후속 모델 권유로 이어지는 대화가 많다. model 을 '모델(사람)'로 받은 오답 주의.",
+   "key": "reorder",
+   "keyKo": "재주문하다, 다시 주문하다",
+   "tip": "재주문 요청에 '단종'으로 답하는 흐름. model 을 '모델(사람)'로 받은 오답 주의.",
    "x": [
     "She's a fashion model.",
     "Last year was really busy."
@@ -11093,11 +11093,11 @@
   },
   {
    "g": "주문·배송·재고",
-   "e": "I'm afraid there's been a *mix-up* with your order.",
-   "k": "죄송하지만 고객님 주문에 착오가 있었어요.",
-   "key": "mix-up",
-   "keyKo": "착오, 혼동",
-   "tip": "mix-up = mistake. 주문이 뒤바뀐 상황을 알리는 첫마디로 자주 나온다."
+   "e": "I'm afraid we *sent you the wrong item* by mistake.",
+   "k": "죄송하지만 저희가 실수로 다른 상품을 보내 드렸어요.",
+   "key": "send the wrong item",
+   "keyKo": "다른(잘못된) 상품을 보내다",
+   "tip": "배송 오류 → 교환·반품 안내로 이어진다. wrong item, incorrect order 가 단서."
   },
   {
    "g": "주문·배송·재고",
@@ -11453,11 +11453,11 @@
   },
   {
    "g": "병원·은행·예약",
-   "e": "Your card *expires* next month, so we'll mail you a new one.",
-   "k": "고객님 카드가 다음 달에 만료돼서 새 카드를 우편으로 보내 드릴게요.",
-   "key": "expire",
-   "keyKo": "(기한이) 만료되다",
-   "tip": "expiration date(유효 기간)도 함께 알아 둔다."
+   "e": "When your new card arrives, call the number on the back to *activate* it.",
+   "k": "새 카드가 도착하면 뒷면에 있는 번호로 전화해서 카드를 활성화하세요.",
+   "key": "activate (a card)",
+   "keyKo": "(카드를) 활성화하다, 사용 등록하다",
+   "tip": "새 카드를 받은 뒤 할 일을 묻는 문제. activate ↔ deactivate(정지하다)."
   },
   {
    "g": "병원·은행·예약",
@@ -11613,11 +11613,11 @@
   },
   {
    "g": "Part 4 안내·방송",
-   "e": "Passengers *bound for* Springfield should change trains at Central Station.",
+   "e": "Passengers bound for Springfield should *change trains* at Central Station.",
    "k": "스프링필드행 승객께서는 센트럴역에서 열차를 갈아타시기 바랍니다.",
-   "key": "bound for ~",
-   "keyKo": "~행의, ~로 향하는",
-   "tip": "bound for = heading to. 목적지와 환승역을 묻는 문제의 단서다."
+   "key": "change trains",
+   "keyKo": "열차를 갈아타다",
+   "tip": "change trains 는 transfer 로 패러프레이즈된다. 환승역을 묻는 문제의 정답 근거다."
   },
   {
    "g": "Part 4 안내·방송",
@@ -11669,11 +11669,11 @@
   },
   {
    "g": "Part 4 전화 메시지",
-   "e": "If this is a medical emergency, please *hang up* and dial 911.",
+   "e": "If this is a *medical emergency*, please hang up and dial 911.",
    "k": "응급 상황이시면 전화를 끊고 911로 연락하십시오.",
-   "key": "hang up",
-   "keyKo": "전화를 끊다",
-   "tip": "병원 자동 응답 안내. hang up(끊다)과 hold on(기다리다)을 구분한다."
+   "key": "medical emergency",
+   "keyKo": "의료 응급 상황",
+   "tip": "병원 자동 응답의 첫 안내. 응급 시 할 일(전화를 끊고 911에 연락)이 문제로 나온다."
   },
   {
    "g": "Part 4 전화 메시지",
@@ -11709,11 +11709,11 @@
   },
   {
    "g": "Part 4 전화 메시지",
-   "e": "I'll be *out of the office* until Monday, June 3, with limited access to email.",
+   "e": "I'll be out of the office until Monday, June 3, *with limited access to* email.",
    "k": "6월 3일 월요일까지 부재중이며 이메일 확인이 어렵습니다.",
-   "key": "out of the office",
-   "keyKo": "부재중인, 사무실에 없는",
-   "tip": "부재 안내 메시지. 복귀 날짜와 대신 연락할 사람이 문제로 나온다."
+   "key": "with limited access to ~",
+   "keyKo": "~을 제대로 이용하기 어려운",
+   "tip": "부재 안내 메시지. 이메일 확인이 어렵다는 말이 '급하면 다른 연락처로'라는 뜻이 된다."
   },
   {
    "g": "Part 4 전화 메시지",
@@ -11749,19 +11749,19 @@
   },
   {
    "g": "Part 4 전화 메시지",
-   "e": "*I'd appreciate it if* you could look over the draft before our call tomorrow.",
-   "k": "내일 통화 전에 초안을 검토해 주시면 감사하겠습니다.",
-   "key": "I'd appreciate it if ~",
-   "keyKo": "~해 주시면 감사하겠습니다",
-   "tip": "정중한 요청. 청자가 해야 할 일(초안 검토) 문제의 정답 근거다."
+   "e": "I'd like to *get your feedback on* the draft before our call tomorrow.",
+   "k": "내일 통화 전에 초안에 대한 의견을 듣고 싶습니다.",
+   "key": "get one's feedback on ~",
+   "keyKo": "~에 대한 의견을 받다",
+   "tip": "청자에게 요청하는 일(초안 검토 후 의견 주기) 문제의 정답 근거. input, comments 로 바뀐다."
   },
   {
    "g": "Part 4 전화 메시지",
-   "e": "*There's been a mix-up with* your hotel booking, so please give me a call when you can.",
-   "k": "호텔 예약에 착오가 생겼으니 가능하실 때 전화 주시기 바랍니다.",
-   "key": "There's been a mix-up (with ~)",
-   "keyKo": "(~에) 착오가 생기다",
-   "tip": "문제점을 묻는 문제의 정답. mix-up은 error, mistake로 바뀐다."
+   "e": "*There seems to be a problem with* your hotel booking, so please give me a call when you can.",
+   "k": "호텔 예약에 문제가 있는 것 같으니 가능하실 때 전화 주시기 바랍니다.",
+   "key": "There seems to be a problem with ~",
+   "keyKo": "~에 문제가 있는 것 같습니다",
+   "tip": "전화 메시지의 용건. 문제점을 묻는 문제의 정답 근거로, issue, error 로 바뀐다."
   },
   {
    "g": "Part 4 전화 메시지",
@@ -11925,11 +11925,11 @@
   },
   {
    "g": "Part 4 라디오·뉴스·교통",
-   "e": "It's *bumper-to-bumper* on the expressway all the way to the airport.",
-   "k": "고속도로는 공항까지 내내 차들이 꼬리에 꼬리를 물고 있습니다.",
-   "key": "bumper-to-bumper",
-   "keyKo": "차가 꽉 막힌, 꼬리에 꼬리를 문",
-   "tip": "heavy traffic, congestion으로 패러프레이즈된다."
+   "e": "Traffic is *crawling* along Route 9 because of an accident near Exit 12.",
+   "k": "12번 출구 근처 사고로 9번 도로는 차량이 거북이 운행 중입니다.",
+   "key": "crawl",
+   "keyKo": "(차량이) 기어가듯 느리게 움직이다",
+   "tip": "slow traffic, congestion 으로 바뀌어 정답에 나온다. 원인(accident)도 자주 묻는다."
   },
   {
    "g": "Part 4 라디오·뉴스·교통",
@@ -12021,11 +12021,11 @@
   },
   {
    "g": "Part 4 라디오·뉴스·교통",
-   "e": "Longtime CEO Harold Brenner will *step down* at the end of the year.",
-   "k": "오랫동안 CEO를 맡아 온 해럴드 브레너가 연말에 물러납니다.",
-   "key": "step down",
-   "keyKo": "(직위에서) 물러나다, 사임하다",
-   "tip": "resign, retire로 패러프레이즈된다. 후임자 소개가 이어진다."
+   "e": "Brenner Foods *has named* Linda Marsh *as* its new chief executive officer.",
+   "k": "브레너 푸즈가 린다 마시를 새 최고경영자로 임명했습니다.",
+   "key": "name A as B",
+   "keyKo": "A를 B로 임명하다",
+   "tip": "인사 뉴스의 단골. appoint A as B 로 패러프레이즈된다. 새 직책을 묻는 문제가 나온다."
   },
   {
    "g": "Part 4 라디오·뉴스·교통",
@@ -12037,11 +12037,11 @@
   },
   {
    "g": "Part 4 라디오·뉴스·교통",
-   "e": "Repairs to the Oak Street Bridge were completed *ahead of schedule*.",
-   "k": "오크 스트리트 다리 보수 공사가 예정보다 일찍 끝났습니다.",
-   "key": "ahead of schedule",
-   "keyKo": "예정보다 일찍",
-   "tip": "behind schedule(일정보다 늦은)의 반대말. 둘을 구분한다."
+   "e": "Traffic on the Oak Street Bridge is *back to normal* after three months of repairs.",
+   "k": "석 달간의 보수 공사를 마친 오크 스트리트 다리의 교통이 정상화되었습니다.",
+   "key": "back to normal",
+   "keyKo": "정상으로 돌아온",
+   "tip": "교통 방송의 현황 안내. 공사 기간(석 달)과 현재 상태를 묻는 문제가 나온다."
   },
   {
    "g": "Part 4 라디오·뉴스·교통",
@@ -12101,11 +12101,11 @@
   },
   {
    "g": "Part 4 라디오·뉴스·교통",
-   "e": "A *power outage* left about 3,000 homes in Westfield without electricity last night.",
-   "k": "어젯밤 정전으로 웨스트필드 지역 약 3천 가구에 전기가 끊겼습니다.",
-   "key": "power outage",
-   "keyKo": "정전",
-   "tip": "blackout, loss of power로 패러프레이즈된다."
+   "e": "Crews are working to *restore power* to about 3,000 homes in Westfield.",
+   "k": "작업반이 웨스트필드 약 3천 가구의 전력을 복구하기 위해 작업하고 있습니다.",
+   "key": "restore power",
+   "keyKo": "전력을 복구하다",
+   "tip": "정전 뉴스의 단골 표현. restore 는 '복구하다'. 피해 가구 수 숫자도 출제된다."
   },
   {
    "g": "Part 4 라디오·뉴스·교통",
@@ -12149,11 +12149,11 @@
   },
   {
    "g": "Part 4 투어·견학",
-   "e": "The area behind the red line is *off-limits* to visitors.",
-   "k": "빨간 선 너머 구역은 방문객 출입이 금지되어 있습니다.",
-   "key": "off-limits",
-   "keyKo": "출입 금지의",
-   "tip": "restricted area, staff only로 패러프레이즈된다."
+   "e": "The area behind the red line is for *authorized personnel only*.",
+   "k": "빨간 선 너머 구역은 허가받은 직원만 출입할 수 있습니다.",
+   "key": "authorized personnel only",
+   "keyKo": "관계자 외 출입 금지",
+   "tip": "견학 중 출입 제한 안내. staff only, restricted area 로 패러프레이즈된다."
   },
   {
    "g": "Part 4 투어·견학",
@@ -12421,11 +12421,11 @@
   },
   {
    "g": "Part 4 연설·소개·시상",
-   "e": "After thirty-two years with the company, Martin Hughes will *step down* as CEO at the end of the month.",
-   "k": "32년간 회사에 몸담아 온 마틴 휴스 씨가 이달 말 CEO 자리에서 물러납니다.",
-   "key": "step down",
-   "keyKo": "(직위에서) 물러나다, 사임하다",
-   "tip": "step down = retire / resign. 은퇴 시점(이달 말)을 묻는 문제 대비"
+   "e": "Martin Hughes, who *has served as* CEO for thirty-two years, will retire at the end of the month.",
+   "k": "32년간 CEO로 재직해 온 마틴 휴스 씨가 이달 말 은퇴합니다.",
+   "key": "serve as ~",
+   "keyKo": "~으로 재직하다, ~의 역할을 맡다",
+   "tip": "은퇴·소개 연설의 단골. 재직 기간(32년)과 은퇴 시점을 묻는 문제가 나온다"
   },
   {
    "g": "Part 4 연설·소개·시상",
@@ -12445,11 +12445,11 @@
   },
   {
    "g": "Part 4 연설·소개·시상",
-   "e": "I'm pleased to announce that Daniel Osei *has been promoted to* regional sales director.",
-   "k": "다니엘 오세이 씨가 지역 영업 이사로 승진했음을 알려 드리게 되어 기쁩니다.",
-   "key": "be promoted to",
-   "keyKo": "~으로 승진하다",
-   "tip": "승진 후 직책을 묻는 문제의 정답 단서. to 뒤를 놓치지 말 것"
+   "e": "I'm pleased to announce that Daniel Osei will *oversee* our new regional sales team.",
+   "k": "다니엘 오세이 씨가 새 지역 영업팀을 총괄하게 되었음을 알려 드리게 되어 기쁩니다.",
+   "key": "oversee",
+   "keyKo": "총괄하다, 감독하다",
+   "tip": "be in charge of, supervise 로 패러프레이즈된다. 그가 맡을 업무를 묻는 문제의 정답 근거"
   },
   {
    "g": "Part 4 연설·소개·시상",
@@ -12661,11 +12661,11 @@
   },
   {
    "g": "Part 4 광고·홍보",
-   "e": "Our gym features *state-of-the-art* equipment and certified personal trainers.",
+   "e": "Our gym features state-of-the-art equipment and *certified* personal trainers.",
    "k": "저희 체육관은 최첨단 장비와 자격증을 갖춘 개인 트레이너를 갖추고 있습니다.",
-   "key": "state-of-the-art",
-   "keyKo": "최첨단의",
-   "tip": "업체의 장점을 묻는 문제. state-of-the-art = modern, latest"
+   "key": "certified",
+   "keyKo": "자격증을 갖춘, 공인된",
+   "tip": "업체의 장점을 묻는 문제. certified 는 qualified, licensed 로 패러프레이즈된다"
   },
   {
    "g": "Part 4 광고·홍보",
@@ -12805,11 +12805,11 @@
   },
   {
    "g": "Part 4 광고·홍보",
-   "e": "*Sign up for our newsletter* to receive special offers right in your inbox.",
-   "k": "뉴스레터를 신청하시고 특별 혜택을 메일함으로 바로 받아 보세요.",
-   "key": "sign up for a newsletter",
-   "keyKo": "뉴스레터를 신청하다",
-   "tip": "청자에게 권하는 일 문제. 뉴스레터를 받으면 얻는 혜택도 함께 확인"
+   "e": "*Subscribe to* our newsletter to receive special offers right in your inbox.",
+   "k": "뉴스레터를 구독하시고 특별 혜택을 메일함으로 바로 받아 보세요.",
+   "key": "subscribe to ~",
+   "keyKo": "~을 구독하다",
+   "tip": "청자에게 권하는 일 문제. 구독하면 얻는 혜택(특별 할인)도 함께 확인"
   },
   {
    "g": "Part 4 광고·홍보",
@@ -12861,11 +12861,11 @@
   },
   {
    "g": "시각 자료 연계",
-   "e": "Our booth is *right next to* the information desk, so it's easy to find.",
-   "k": "저희 부스는 안내 데스크 바로 옆이라 찾기 쉽습니다.",
-   "key": "right next to ~",
-   "keyKo": "~ 바로 옆에",
-   "tip": "평면도 문제: 안내 데스크 옆 부스 번호를 찾는다. 기준 위치부터 확인"
+   "e": "Our booth is *just to the left of* the information desk, so it's easy to find.",
+   "k": "저희 부스는 안내 데스크 바로 왼쪽이라 찾기 쉽습니다.",
+   "key": "to the left of ~",
+   "keyKo": "~의 왼쪽에",
+   "tip": "평면도 문제: 기준(안내 데스크)의 왼쪽 부스 번호를 찾는다. left/right 혼동 주의"
   },
   {
    "g": "시각 자료 연계",
@@ -12885,11 +12885,11 @@
   },
   {
    "g": "시각 자료 연계",
-   "e": "The supply closet is *at the end of the hall*, past the restrooms.",
-   "k": "비품실은 화장실을 지나 복도 끝에 있어요.",
-   "key": "at the end of the hall",
-   "keyKo": "복도 끝에",
-   "tip": "past = ~을 지나서. 평면도에서 화장실 다음, 맨 끝 방을 고른다"
+   "e": "The supply closet is the last door on the right, *just past* the restrooms.",
+   "k": "비품실은 화장실을 막 지나서 오른쪽 마지막 문이에요.",
+   "key": "just past ~",
+   "keyKo": "~을 막 지나서",
+   "tip": "평면도 문제: 기준(화장실)을 지난 바로 다음 방을 고른다. past 는 '~을 지나서'"
   },
   {
    "g": "시각 자료 연계",
@@ -12901,18 +12901,18 @@
   },
   {
    "g": "시각 자료 연계",
-   "e": "Q: When is Mr. Ito's workshop? / A: It was moved to the session *right after lunch*.",
-   "k": "Q: 이토 씨의 워크숍은 언제예요? / A: 점심 바로 다음 세션으로 옮겨졌어요.",
-   "key": "right after lunch",
-   "keyKo": "점심 직후에",
-   "tip": "일정표에서 점심 다음 칸의 시각이 정답. 원래 시간은 함정",
+   "e": "Q: When is Mr. Ito's workshop? / A: They *swapped* it *with* Ms. Lee's session.",
+   "k": "Q: 이토 씨의 워크숍은 언제예요? / A: 리 씨 세션과 시간을 맞바꿨어요.",
+   "key": "swap A with B",
+   "keyKo": "A를 B와 맞바꾸다",
+   "tip": "일정표 문제: 원래 시간이 아니라 리 씨 세션의 시간이 정답이 된다",
    "x": [
     "In the main auditorium.",
-    "No, I didn't eat lunch yet."
+    "Yes, I really enjoyed the workshop."
    ],
    "xk": [
     "대강당에서요.",
-    "아니요, 아직 점심을 안 먹었어요."
+    "네, 워크숍 정말 좋았어요."
    ]
   },
   {
@@ -13093,11 +13093,11 @@
   },
   {
    "g": "시각 자료 연계",
-   "e": "Q: Where should I park for the job fair? / A: Use the lot *within walking distance of* the hall.",
-   "k": "Q: 채용 박람회 때 어디에 주차하면 돼요? / A: 행사장까지 걸어갈 수 있는 주차장을 이용하세요.",
-   "key": "within walking distance of",
-   "keyKo": "~까지 걸어갈 수 있는 거리에",
-   "tip": "지도 문제: 행사장과 가장 가까운 주차장 이름을 고른다",
+   "e": "Q: Where should I park for the job fair? / A: Use the lot *on the north side of* the hall.",
+   "k": "Q: 채용 박람회 때 어디에 주차하면 돼요? / A: 행사장 북쪽에 있는 주차장을 이용하세요.",
+   "key": "on the north side of ~",
+   "keyKo": "~의 북쪽에",
+   "tip": "지도 문제: 방위(north, south) 표현으로 주차장 위치를 찾는다",
    "x": [
     "Yes, the job fair is this week.",
     "Around two hundred applicants."
