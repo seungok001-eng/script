@@ -1,198 +1,413 @@
 {
-"lc/001.mp3": {
+"lc/001-a.mp3": {
 "src": "kokoro",
-"text": "Q: When is the report due? / A: Ms. Kim is still reviewing it.",
-"voice": "bm_george+af_heart"
+"text": "Ms. Kim is still reviewing it.",
+"voice": "af_heart"
 },
-"lc/002.mp3": {
+"lc/001-q.mp3": {
 "src": "kokoro",
-"text": "Q: Who's going to lead the training session? / A: It hasn't been decided yet.",
-"voice": "bm_george+af_heart"
+"text": "When is the report due?",
+"voice": "bm_george"
 },
-"lc/003.mp3": {
+"lc/001-x1.mp3": {
 "src": "kokoro",
-"text": "Q: Where should I put these boxes? / A: Let me ask the office manager.",
-"voice": "af_heart+am_michael"
+"text": "In the conference room.",
+"voice": "af_heart"
 },
-"lc/004.mp3": {
+"lc/001-x2.mp3": {
 "src": "kokoro",
-"text": "Q: Did you send the invoice to the client? / A: I thought you did.",
-"voice": "am_michael+bf_emma"
+"text": "Yes, I reported it.",
+"voice": "af_heart"
 },
-"lc/005.mp3": {
+"lc/002-a.mp3": {
 "src": "kokoro",
-"text": "Q: How much will the roof repairs cost? / A: We're still waiting for an estimate.",
-"voice": "af_heart+am_michael"
+"text": "It hasn't been decided yet.",
+"voice": "af_heart"
 },
-"lc/006.mp3": {
+"lc/002-q.mp3": {
 "src": "kokoro",
-"text": "Q: Why isn't the printer working? / A: Didn't you get the email about the maintenance?",
-"voice": "af_bella+bm_george"
+"text": "Who's going to lead the training session?",
+"voice": "bm_george"
 },
-"lc/007.mp3": {
+"lc/002-x1.mp3": {
 "src": "kokoro",
-"text": "Q: Should we hire more staff or pay overtime? / A: That depends on the budget.",
-"voice": "bf_emma+am_michael"
+"text": "The train leaves at noon.",
+"voice": "af_heart"
 },
-"lc/008.mp3": {
+"lc/002-x2.mp3": {
 "src": "kokoro",
-"text": "Q: Which hotel are we staying at in Chicago? / A: Check the itinerary I sent you.",
-"voice": "bf_emma+am_michael"
+"text": "It was very informative.",
+"voice": "af_heart"
 },
-"lc/009.mp3": {
+"lc/003-a.mp3": {
 "src": "kokoro",
-"text": "Q: Is the new scheduling software easy to use? / A: I haven't had a chance to try it yet.",
-"voice": "bf_emma+am_michael"
+"text": "Let me ask the office manager.",
+"voice": "am_michael"
 },
-"lc/010.mp3": {
+"lc/003-q.mp3": {
 "src": "kokoro",
-"text": "Q: When does the product launch take place? / A: It's been postponed indefinitely.",
-"voice": "bm_george+af_heart"
+"text": "Where should I put these boxes?",
+"voice": "af_heart"
 },
-"lc/011.mp3": {
+"lc/003-x1.mp3": {
 "src": "kokoro",
-"text": "Q: Who's handling the Anderson account now? / A: Jason would know.",
-"voice": "bm_george+af_heart"
+"text": "About ten boxes.",
+"voice": "am_michael"
 },
-"lc/012.mp3": {
+"lc/003-x2.mp3": {
 "src": "kokoro",
-"text": "Q: Can you give me a ride to the airport tomorrow? / A: My car is in the shop.",
-"voice": "af_heart+am_michael"
+"text": "Yes, I put them away.",
+"voice": "am_michael"
 },
-"lc/013.mp3": {
+"lc/004-a.mp3": {
 "src": "kokoro",
-"text": "Q: Have the new brochures arrived? / A: I'll check with the front desk.",
-"voice": "bf_emma+am_michael"
+"text": "I thought you did.",
+"voice": "bf_emma"
 },
-"lc/014.mp3": {
+"lc/004-q.mp3": {
 "src": "kokoro",
-"text": "Q: Should I make copies of the agenda? / A: Haven't you heard? The meeting was called off.",
-"voice": "am_michael+bf_emma"
+"text": "Did you send the invoice to the client?",
+"voice": "am_michael"
 },
-"lc/015.mp3": {
+"lc/004-x1.mp3": {
 "src": "kokoro",
-"text": "Q: Are you going to the company picnic on Saturday? / A: I have other plans.",
-"voice": "bm_george+af_heart"
+"text": "The client is based in Seattle.",
+"voice": "bf_emma"
 },
-"lc/016.mp3": {
+"lc/004-x2.mp3": {
 "src": "kokoro",
-"text": "Q: Excuse me, where's the nearest post office? / A: Sorry, I'm new here myself.",
-"voice": "af_heart+am_michael"
+"text": "Fifty dollars for shipping.",
+"voice": "bf_emma"
 },
-"lc/017.mp3": {
+"lc/005-a.mp3": {
 "src": "kokoro",
-"text": "Q: Would you like a window seat or an aisle seat? / A: Either is fine.",
-"voice": "bf_emma+am_michael"
+"text": "We're still waiting for an estimate.",
+"voice": "am_michael"
 },
-"lc/018.mp3": {
+"lc/005-q.mp3": {
 "src": "kokoro",
-"text": "Q: Shouldn't the technician be here by now? / A: He just called to say he's stuck in traffic.",
-"voice": "af_heart+am_michael"
+"text": "How much will the roof repairs cost?",
+"voice": "af_heart"
 },
-"lc/019.mp3": {
+"lc/005-x1.mp3": {
 "src": "kokoro",
-"text": "Q: How did the client like our proposal? / A: We haven't heard back from them yet.",
-"voice": "bf_emma+am_michael"
+"text": "On the top floor.",
+"voice": "am_michael"
 },
-"lc/020.mp3": {
+"lc/005-x2.mp3": {
 "src": "kokoro",
-"text": "Q: Do you know where the spare keys are? / A: Try the top drawer.",
-"voice": "af_heart+am_michael"
+"text": "They repaired it last week.",
+"voice": "am_michael"
+},
+"lc/006-a.mp3": {
+"src": "kokoro",
+"text": "Didn't you get the email about the maintenance?",
+"voice": "bm_george"
+},
+"lc/006-q.mp3": {
+"src": "kokoro",
+"text": "Why isn't the printer working?",
+"voice": "af_bella"
+},
+"lc/006-x1.mp3": {
+"src": "kokoro",
+"text": "I printed twenty copies.",
+"voice": "bm_george"
+},
+"lc/006-x2.mp3": {
+"src": "kokoro",
+"text": "He's working from home today.",
+"voice": "bm_george"
+},
+"lc/007-a.mp3": {
+"src": "kokoro",
+"text": "That depends on the budget.",
+"voice": "am_michael"
+},
+"lc/007-q.mp3": {
+"src": "kokoro",
+"text": "Should we hire more staff or pay overtime?",
+"voice": "bf_emma"
+},
+"lc/007-x1.mp3": {
+"src": "kokoro",
+"text": "She was hired last year.",
+"voice": "am_michael"
+},
+"lc/007-x2.mp3": {
+"src": "kokoro",
+"text": "I paid with a credit card.",
+"voice": "am_michael"
+},
+"lc/008-a.mp3": {
+"src": "kokoro",
+"text": "Check the itinerary I sent you.",
+"voice": "am_michael"
+},
+"lc/008-q.mp3": {
+"src": "kokoro",
+"text": "Which hotel are we staying at in Chicago?",
+"voice": "bf_emma"
+},
+"lc/008-x1.mp3": {
+"src": "kokoro",
+"text": "For three nights.",
+"voice": "am_michael"
+},
+"lc/008-x2.mp3": {
+"src": "kokoro",
+"text": "Yes, I've been to Chicago.",
+"voice": "am_michael"
+},
+"lc/009-a.mp3": {
+"src": "kokoro",
+"text": "I haven't had a chance to try it yet.",
+"voice": "am_michael"
+},
+"lc/009-q.mp3": {
+"src": "kokoro",
+"text": "Is the new scheduling software easy to use?",
+"voice": "bf_emma"
+},
+"lc/009-x1.mp3": {
+"src": "kokoro",
+"text": "It's scheduled for Monday.",
+"voice": "am_michael"
+},
+"lc/009-x2.mp3": {
+"src": "kokoro",
+"text": "He's a new employee.",
+"voice": "am_michael"
+},
+"lc/010-a.mp3": {
+"src": "kokoro",
+"text": "It's been postponed indefinitely.",
+"voice": "af_heart"
+},
+"lc/010-q.mp3": {
+"src": "kokoro",
+"text": "When does the product launch take place?",
+"voice": "bm_george"
+},
+"lc/010-x1.mp3": {
+"src": "kokoro",
+"text": "At the company headquarters.",
+"voice": "af_heart"
+},
+"lc/010-x2.mp3": {
+"src": "kokoro",
+"text": "We had lunch at noon.",
+"voice": "af_heart"
+},
+"lc/011-a.mp3": {
+"src": "kokoro",
+"text": "Jason would know.",
+"voice": "af_heart"
+},
+"lc/011-q.mp3": {
+"src": "kokoro",
+"text": "Who's handling the Anderson account now?",
+"voice": "bm_george"
+},
+"lc/011-x1.mp3": {
+"src": "kokoro",
+"text": "I opened a bank account.",
+"voice": "af_heart"
+},
+"lc/011-x2.mp3": {
+"src": "kokoro",
+"text": "Handle it with care.",
+"voice": "af_heart"
+},
+"lc/012-a.mp3": {
+"src": "kokoro",
+"text": "My car is in the shop.",
+"voice": "am_michael"
+},
+"lc/012-q.mp3": {
+"src": "kokoro",
+"text": "Can you give me a ride to the airport tomorrow?",
+"voice": "af_heart"
+},
+"lc/012-x1.mp3": {
+"src": "kokoro",
+"text": "The flight was delayed.",
+"voice": "am_michael"
+},
+"lc/012-x2.mp3": {
+"src": "kokoro",
+"text": "I gave it to her yesterday.",
+"voice": "am_michael"
+},
+"lc/013-a.mp3": {
+"src": "kokoro",
+"text": "I'll check with the front desk.",
+"voice": "am_michael"
+},
+"lc/013-q.mp3": {
+"src": "kokoro",
+"text": "Have the new brochures arrived?",
+"voice": "bf_emma"
+},
+"lc/013-x1.mp3": {
+"src": "kokoro",
+"text": "I'll arrive around nine.",
+"voice": "am_michael"
+},
+"lc/013-x2.mp3": {
+"src": "kokoro",
+"text": "Twenty pages, in full color.",
+"voice": "am_michael"
+},
+"lc/014-a.mp3": {
+"src": "kokoro",
+"text": "Haven't you heard? The meeting was called off.",
+"voice": "bf_emma"
+},
+"lc/014-q.mp3": {
+"src": "kokoro",
+"text": "Should I make copies of the agenda?",
+"voice": "am_michael"
+},
+"lc/014-x1.mp3": {
+"src": "kokoro",
+"text": "The coffee machine is broken.",
+"voice": "bf_emma"
+},
+"lc/014-x2.mp3": {
+"src": "kokoro",
+"text": "Yes, it's on the agenda.",
+"voice": "bf_emma"
+},
+"lc/015-a.mp3": {
+"src": "kokoro",
+"text": "I have other plans.",
+"voice": "af_heart"
+},
+"lc/015-q.mp3": {
+"src": "kokoro",
+"text": "Are you going to the company picnic on Saturday?",
+"voice": "bm_george"
+},
+"lc/015-x1.mp3": {
+"src": "kokoro",
+"text": "The picture is on the wall.",
+"voice": "af_heart"
+},
+"lc/015-x2.mp3": {
+"src": "kokoro",
+"text": "The company moved last year.",
+"voice": "af_heart"
+},
+"lc/016-a.mp3": {
+"src": "kokoro",
+"text": "Sorry, I'm new here myself.",
+"voice": "am_michael"
+},
+"lc/016-q.mp3": {
+"src": "kokoro",
+"text": "Excuse me, where's the nearest post office?",
+"voice": "af_heart"
+},
+"lc/016-x1.mp3": {
+"src": "kokoro",
+"text": "I posted it online.",
+"voice": "am_michael"
+},
+"lc/016-x2.mp3": {
+"src": "kokoro",
+"text": "It closes at five.",
+"voice": "am_michael"
+},
+"lc/017-a.mp3": {
+"src": "kokoro",
+"text": "Either is fine.",
+"voice": "am_michael"
+},
+"lc/017-q.mp3": {
+"src": "kokoro",
+"text": "Would you like a window seat or an aisle seat?",
+"voice": "bf_emma"
+},
+"lc/017-x1.mp3": {
+"src": "kokoro",
+"text": "The window is open.",
+"voice": "am_michael"
+},
+"lc/017-x2.mp3": {
+"src": "kokoro",
+"text": "Yes, I'll see you there.",
+"voice": "am_michael"
+},
+"lc/018-a.mp3": {
+"src": "kokoro",
+"text": "He just called to say he's stuck in traffic.",
+"voice": "am_michael"
+},
+"lc/018-q.mp3": {
+"src": "kokoro",
+"text": "Shouldn't the technician be here by now?",
+"voice": "af_heart"
+},
+"lc/018-x1.mp3": {
+"src": "kokoro",
+"text": "It's a technical problem.",
+"voice": "am_michael"
+},
+"lc/018-x2.mp3": {
+"src": "kokoro",
+"text": "I'll be there by noon.",
+"voice": "am_michael"
+},
+"lc/019-a.mp3": {
+"src": "kokoro",
+"text": "We haven't heard back from them yet.",
+"voice": "am_michael"
+},
+"lc/019-q.mp3": {
+"src": "kokoro",
+"text": "How did the client like our proposal?",
+"voice": "bf_emma"
+},
+"lc/019-x1.mp3": {
+"src": "kokoro",
+"text": "I proposed a toast.",
+"voice": "am_michael"
 },
 "lc/021.mp3": {
 "src": "kokoro",
 "text": "Would you mind closing the window? It's a little cold in here.",
 "voice": "af_heart"
 },
-"lc/022.mp3": {
-"src": "kokoro",
-"text": "Q: Would you mind if I borrowed your stapler? / A: Not at all. It's on my desk.",
-"voice": "am_michael+bf_emma"
-},
 "lc/023.mp3": {
 "src": "kokoro",
 "text": "Why don't we take a short break before the next session?",
 "voice": "af_bella"
-},
-"lc/024.mp3": {
-"src": "kokoro",
-"text": "Q: Why don't we order lunch for the whole team? / A: Sounds good to me.",
-"voice": "af_heart+am_michael"
 },
 "lc/025.mp3": {
 "src": "kokoro",
 "text": "Could you send me the updated figures by noon?",
 "voice": "af_heart"
 },
-"lc/026.mp3": {
-"src": "kokoro",
-"text": "Q: Could someone call the caterer to confirm the order? / A: Sure, I'll take care of it.",
-"voice": "bm_george+af_heart"
-},
-"lc/027.mp3": {
-"src": "kokoro",
-"text": "Q: Can you cover my shift on Friday? / A: I'm afraid I can't. I'll be out of town.",
-"voice": "af_heart+am_michael"
-},
 "lc/028.mp3": {
 "src": "kokoro",
 "text": "How about meeting at the café across the street?",
 "voice": "am_michael"
-},
-"lc/029.mp3": {
-"src": "kokoro",
-"text": "Q: Should we take a taxi to the convention center? / A: I'd rather walk; it's not far.",
-"voice": "bm_george+af_heart"
 },
 "lc/030.mp3": {
 "src": "kokoro",
 "text": "Would you like me to make copies of the agenda?",
 "voice": "bf_emma"
 },
-"lc/031.mp3": {
-"src": "kokoro",
-"text": "Q: Do you want me to pick you up at the station? / A: That would be great, thanks.",
-"voice": "af_heart+am_michael"
-},
-"lc/032.mp3": {
-"src": "kokoro",
-"text": "Q: Would you like some help with those boxes? / A: Thanks, but I can manage.",
-"voice": "af_bella+bm_george"
-},
 "lc/033.mp3": {
 "src": "kokoro",
 "text": "Let me know if you need anything else for the presentation.",
 "voice": "af_heart"
 },
-"lc/034.mp3": {
-"src": "kokoro",
-"text": "Q: Is it all right if I leave a little early today? / A: Go ahead.",
-"voice": "bf_emma+am_michael"
-},
-"lc/035.mp3": {
-"src": "kokoro",
-"text": "Q: Could you show the new intern around the office? / A: I'd be happy to.",
-"voice": "af_bella+bm_george"
-},
 "lc/036.mp3": {
 "src": "kokoro",
 "text": "Can I get you something to drink while you wait?",
 "voice": "bm_george"
-},
-"lc/037.mp3": {
-"src": "kokoro",
-"text": "Q: The client wants the contract revised by three o'clock. / A: I'm on it.",
-"voice": "bm_george+af_heart"
-},
-"lc/038.mp3": {
-"src": "kokoro",
-"text": "Q: Would you like to join us for dinner tonight? / A: I'd love to, but I have to finish this report.",
-"voice": "af_heart+am_michael"
-},
-"lc/039.mp3": {
-"src": "kokoro",
-"text": "Q: Should I call a repair technician? / A: I don't think that's necessary.",
-"voice": "am_michael+bf_emma"
 },
 "lc/040.mp3": {
 "src": "kokoro",
@@ -363,11 +578,6 @@
 "src": "kokoro",
 "text": "I'm sorry, but I think you have the wrong number.",
 "voice": "af_bella"
-},
-"lc/074.mp3": {
-"src": "kokoro",
-"text": "Q: Hello, may I speak with Laura Kim? / A: Speaking. How can I help you?",
-"voice": "am_michael+bf_emma"
 },
 "lc/075.mp3": {
 "src": "kokoro",
@@ -569,11 +779,6 @@
 "text": "Are you being helped, sir? I'd be glad to show you our new models.",
 "voice": "af_heart"
 },
-"lc/115.mp3": {
-"src": "kokoro",
-"text": "Q: Can I help you find something? / A: No, thanks. I'm just looking.",
-"voice": "am_michael+bf_emma"
-},
 "lc/116.mp3": {
 "src": "kokoro",
 "text": "Breakfast is complimentary for all hotel guests.",
@@ -599,30 +804,10 @@
 "text": "I'd like to make a reservation for four at seven tonight.",
 "voice": "af_heart"
 },
-"lc/121.mp3": {
-"src": "kokoro",
-"text": "Q: Shouldn't we check the budget before ordering new laptops? / A: That's a good point.",
-"voice": "af_heart+am_michael"
-},
-"lc/122.mp3": {
-"src": "kokoro",
-"text": "Q: Is there any way you could finish the report by Friday? / A: I'll see what I can do.",
-"voice": "bf_emma+am_michael"
-},
-"lc/123.mp3": {
-"src": "kokoro",
-"text": "Q: This has been a really long week. / A: You can say that again.",
-"voice": "af_heart+am_michael"
-},
 "lc/124.mp3": {
 "src": "kokoro",
 "text": "I'd love to give you the day off, but it's not my call. You'll need to ask Mr. Chen.",
 "voice": "bm_george"
-},
-"lc/125.mp3": {
-"src": "kokoro",
-"text": "Q: We should really update our website. / A: I couldn't agree more.",
-"voice": "am_michael+bf_emma"
 },
 "lc/126.mp3": {
 "src": "kokoro",
@@ -644,60 +829,15 @@
 "text": "That sounds great, but we're on a tight budget this quarter.",
 "voice": "am_michael"
 },
-"lc/130.mp3": {
-"src": "kokoro",
-"text": "Q: Did you know the office is moving next month? / A: Really? That's news to me.",
-"voice": "bm_george+af_heart"
-},
-"lc/131.mp3": {
-"src": "kokoro",
-"text": "Q: Do you think the shipment will arrive by Monday? / A: I wouldn't count on it.",
-"voice": "bm_george+af_heart"
-},
-"lc/132.mp3": {
-"src": "kokoro",
-"text": "Q: The traffic downtown is getting worse every day. / A: Tell me about it. It took me an hour to get here.",
-"voice": "af_bella+bm_george"
-},
-"lc/133.mp3": {
-"src": "kokoro",
-"text": "Q: What do you think about offering flexible hours? / A: I'm all for it.",
-"voice": "bf_emma+am_michael"
-},
 "lc/134.mp3": {
 "src": "kokoro",
 "text": "I'd like to help, but it's out of my hands now. Legal has the final say.",
 "voice": "am_michael"
 },
-"lc/135.mp3": {
-"src": "kokoro",
-"text": "Q: Do you remember a client named Ellen Wade? / A: Hmm, the name rings a bell.",
-"voice": "af_heart+am_michael"
-},
-"lc/136.mp3": {
-"src": "kokoro",
-"text": "Q: Should we book a restaurant for after the conference? / A: Let's play it by ear.",
-"voice": "af_bella+bm_george"
-},
 "lc/137.mp3": {
 "src": "kokoro",
 "text": "It's a generous offer, but let me sleep on it.",
 "voice": "af_heart"
-},
-"lc/138.mp3": {
-"src": "kokoro",
-"text": "Q: Let's ask the interns to handle the client presentation. / A: Hmm, I'm not sure that's a good idea.",
-"voice": "bm_george+af_heart"
-},
-"lc/139.mp3": {
-"src": "kokoro",
-"text": "Q: Do you want to try the new Thai place for lunch? / A: Why not?",
-"voice": "bm_george+af_heart"
-},
-"lc/140.mp3": {
-"src": "kokoro",
-"text": "Q: A few of us are going to the trade show on Friday. / A: Count me in.",
-"voice": "bm_george+af_heart"
 },
 "lc/141.mp3": {
 "src": "kokoro",
