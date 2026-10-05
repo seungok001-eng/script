@@ -15,7 +15,7 @@ function demoState(today, words) {
   const S = {
     v: 1,
     profile: { target: 800, examDate: null, daily: 40, start: today - 20 },
-    settings: { theme: "light", autoWord: false, autoEx: false, rate: 1, showKo: true, readKo: true, hideMeaning: false, sfx: false, remind: true, remindAt: "21:00" },
+    settings: { theme: "light", sfx: false, autoWord: false, autoEx: false, rate: 1, showKo: true, readKo: true, hideMeaning: false, sfx: false, remind: true, remindAt: "21:00" },
     words: {}, log: {}, tests: {}, premium: false,
   };
   const d = new Date((today + 30) * 86400000);
@@ -44,7 +44,7 @@ const SHOTS = [
   { name: "05-part5", cap: "Part 5 실전 문제\n3,600개", sub: "정답 이유와 오답 함정 해설", go: async (p) => { await p.goto(BASE + "#/day/3"); await p.waitForTimeout(300); await p.click('[data-mode="part5"]'); await p.waitForTimeout(250); const n = await p.$$eval("[data-pick]", (els) => els.length); await p.click('[data-pick="0"]'); } },
   { name: "06-days", cap: "90일 3단계 코스\n기본 · 심화 · 실전", sub: "토익 30개 주제를 3번 넓혀 가며", hash: "#/days" },
   { name: "07-stats", cap: "시험일에 맞춘\n진도 관리", sub: "학습 달력 · 난이도별 진도 · 정답률", hash: "#/stats" },
-  { name: "08-dark", cap: "밤에도 눈 편하게\n다크 모드", sub: "PC · 태블릿 · 폰 어디서나", hash: "#/home", dark: true },
+  { name: "08-lc", cap: "LC 빈출 표현 870개\n실전 응답 퀴즈까지", sub: "질문 듣고 (A)(B)(C) 고르기 · 오답 함정 해설", go: async (p) => { await p.goto(BASE + "#/lc"); await p.waitForTimeout(300); await p.click('[data-part="2"]'); await p.waitForTimeout(200); await p.click('[data-lcq="resp"]'); await p.waitForTimeout(400); await p.click('[data-pick="0"]'); await p.waitForTimeout(300); await p.evaluate(() => window.scrollTo(0, 0)); } },
 ];
 
 const SIZES = [
@@ -53,6 +53,8 @@ const SIZES = [
 ];
 
 const browser = await chromium.launch();
+// 액자 합성은 배율 1 로 — 앱 화면용 컨텍스트(배율 3)에서 만들면 결과가 3배 크기가 되어 스토어 규격을 벗어난다
+const frameCtx = await browser.newContext({ deviceScaleFactor: 1 });
 for (const sz of SIZES) {
   fs.mkdirSync(path.join(OUT, sz.dir), { recursive: true });
   const ctx = await browser.newContext({ viewport: { width: sz.vw, height: sz.vh }, deviceScaleFactor: 3, isMobile: true, hasTouch: true, locale: "ko-KR" });
@@ -67,6 +69,9 @@ for (const sz of SIZES) {
     // 화면마다 새 페이지: 앱이 시작하기 전에 상태를 넣는다 (첫 화면 샷은 빈 상태)
     const p = await ctx.newPage();
     p.setDefaultTimeout(8000);
+    // 인사말이 찍는 시각에 따라 달라지지 않게 오늘 오전 9시로 고정
+    const nine = new Date(); nine.setHours(9, 0, 0, 0);
+    await p.clock.setFixedTime(nine);
     await p.addInitScript(([x, seed]) => {
       if (sessionStorage.getItem("seeded")) return;
       sessionStorage.setItem("seeded", "1");
@@ -82,7 +87,7 @@ for (const sz of SIZES) {
     await p.evaluate(() => { const t = document.getElementById("toast"); if (t) t.innerHTML = ""; });
     const shot = await p.screenshot({ type: "png" });
     // 액자 합성: 브랜드 배경 + 문구 + 둥근 모서리 화면
-    const frame = await ctx.newPage();
+    const frame = await frameCtx.newPage();
     await frame.setViewportSize({ width: sz.W, height: sz.H });
     const pad = Math.round(sz.W * 0.09);
     const shotW = sz.W - pad * 2;
