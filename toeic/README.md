@@ -100,7 +100,7 @@ npm run assets                              # (아이콘을 바꿨을 때) asset
 - 테스트용 APK: `toeic/**`를 푸시하면 GitHub Actions(`.github/workflows/toeic-android.yml`)가 디버그 APK를 빌드해 Releases의 `toeic-test` 프리릴리스에 올린다.
 - 개인정보: 모든 기록은 기기 안(localStorage)에만 저장되고 서버로 보내지 않습니다 → 스토어 "데이터 수집 없음" 신고 가능. (광고·분석 SDK를 넣으면 다시 확인)
 - 상표: "TOEIC"은 ETS의 등록 상표입니다. 앱 이름·아이콘에 ETS 로고를 쓰지 말고, 설정 화면의 "ETS와 관련 없음" 문구를 유지하세요.
-- 앱 크기: 음성 포함 약 120~150MB. Google Play 기본 모듈 크기 제한에 가까우므로, 출시 전 Play Console에서 크기를 확인하고 필요하면 음성(app/audio)을 Play Asset Delivery(install-time 팩)로 분리하거나 비트레이트를 낮춘다(build_audio.py 의 -b:a 값). App Store는 문제없음.
+- 앱 크기: 음성 포함 약 165MB (음성 133MB: 단어·예문 97MB + LC 36MB). Google Play 기본 모듈 크기 제한에 가까우므로, 출시 전 Play Console에서 크기를 확인하고 필요하면 음성(app/audio)을 Play Asset Delivery(install-time 팩)로 분리하거나 비트레이트를 낮춘다(build_audio.py 의 -b:a 값). App Store는 문제없음.
 
 ### 유료화
 
