@@ -204,3 +204,66 @@ test("패러프레이징: 정답은 그 단어의 para[0], 보기 4개 중복 �
   assert.equal(q.options[q.answer], "free");
   assert.ok(!q.options.includes("at no cost"), "같은 단어의 다른 동의어는 오답 보기로 쓰지 않는다");
 });
+
+// ───────────── LC 실전 퀴즈 ─────────────
+const LC = [
+  { id: "lc-1", g: "A", part: 2, e: "Q: When is the report due? / A: Ms. Kim is *still reviewing* it.", k: "Q: 보고서 마감이 언제예요? / A: 김 씨가 아직 검토 중이에요.", x: ["In the conference room.", "Yes, I reported it."], xk: ["회의실에서요.", "네, 제가 보고했어요."] },
+  { id: "lc-2", g: "B", part: 4, e: "Please *proceed to* gate 12.", k: "12번 게이트로 가 주십시오." },
+  { id: "lc-3", g: "B", part: 4, e: "*Admission is free* for children.", k: "어린이는 입장료가 무료입니다." },
+  { id: "lc-4", g: "C", part: 4, e: "You've *reached* the clinic.", k: "병원에 전화하셨습니다." },
+  { id: "lc-5", g: "C", part: 4, e: "We're *running a promotion* this week.", k: "이번 주에 판촉 행사를 합니다." },
+  { id: "lc-6", g: "A", part: 2, e: "Q: Who's leading it? / A: *It hasn't been decided.*", k: "Q: 누가 진행해요? / A: 아직 안 정해졌어요." },
+];
+
+test("splitDialog: Q/A 한 줄을 나누고, 대화가 아니면 null", () => {
+  assert.deepEqual(C.splitDialog("Q: Hi? / A: Fine."), { q: "Hi?", a: "Fine." });
+  assert.equal(C.splitDialog("Please proceed to gate 12."), null);
+  assert.equal(C.canRespond(LC[0]), true);
+  assert.equal(C.canRespond(LC[5]), false); // 오답 보기가 없으면 응답 퀴즈에 안 나온다
+  assert.equal(C.canRespond(LC[1]), false);
+});
+
+test("makeResponse: 보기 3개 중 정답 하나, 정답 해석·오답 해석이 짝지어진다", () => {
+  for (let s = 1; s < 20; s++) {
+    const q = C.makeResponse(LC[0], C.rng(s));
+    assert.equal(q.prompt, "When is the report due?");
+    assert.equal(q.promptKo, "보고서 마감이 언제예요?");
+    assert.equal(q.options.length, 3);
+    assert.equal(q.options[q.answer].t, "Ms. Kim is still reviewing it.");
+    assert.equal(q.options[q.answer].f, "a");
+    assert.equal(q.options[q.answer].k, "김 씨가 아직 검토 중이에요.");
+    const x1 = q.options.find((o: any) => o.f === "x1");
+    assert.equal(x1.t, "In the conference room.");
+    assert.equal(x1.k, "회의실에서요.");
+  }
+});
+
+test("makeLcMeaning: 해석 4개가 서로 다르고 정답이 들어 있으며 대화 해석은 오답으로 안 쓴다", () => {
+  for (let s = 1; s < 20; s++) {
+    const q = C.makeLcMeaning(LC[1], LC, C.rng(s));
+    assert.equal(q.options.length, 4);
+    assert.equal(new Set(q.options).size, 4);
+    assert.equal(q.options[q.answer], LC[1].k);
+    assert.ok(q.options.every((o: string) => !o.startsWith("Q:")));
+    assert.equal(q.prompt, "Please proceed to gate 12.");
+  }
+});
+
+test("lcPick: 틀린 것 → 안 푼 것 → 오래전에 맞힌 것 순서", () => {
+  const states = { "lc-2": { ok: 1, ng: 0, last: 10 }, "lc-3": { ok: 1, ng: 1, last: 12, wrong: true }, "lc-4": { ok: 2, ng: 0, last: 5 } };
+  const items = LC.slice(1, 5);
+  for (let s = 1; s < 10; s++) {
+    const ids = C.lcPick(items, states, 4, C.rng(s)).map((x: any) => x.id);
+    assert.deepEqual(ids, ["lc-3", "lc-5", "lc-4", "lc-2"]);
+  }
+  assert.equal(C.lcPick(items, {}, 2, C.rng(1)).length, 2);
+});
+
+test("lcRecord / lcSummary: 맞힘·틀림 기록과 요약", () => {
+  let s = C.lcRecord(undefined, false, 100);
+  assert.deepEqual(s, { ok: 0, ng: 1, last: 100, wrong: true });
+  s = C.lcRecord(s, true, 101);
+  assert.deepEqual(s, { ok: 1, ng: 1, last: 101, wrong: false });
+  const sum = C.lcSummary(LC, { "lc-1": s, "lc-2": { ok: 0, ng: 2, last: 1, wrong: true } });
+  assert.deepEqual(sum, { total: 6, seen: 2, wrong: 1, accuracy: 25 });
+});

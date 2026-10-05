@@ -30,10 +30,11 @@
   const DEFAULT_STATE = () => ({
     v: 1,
     profile: null, // { target, examDate, daily, start }
-    settings: { theme: "system", autoWord: true, autoEx: false, rate: 1, showKo: true, readKo: true, hideMeaning: false, sfx: true, remind: false, remindAt: "21:00" },
+    settings: { theme: "system", autoWord: true, autoEx: false, rate: 1, showKo: true, readKo: true, hideMeaning: false, sfx: true, remind: false, remindAt: "21:00", lcScript: false },
     words: {},
     log: {},
     tests: {},
+    lc: {}, // LC 퀴즈 기록 { "lc-12": { ok, ng, last, wrong } }
     premium: false,
   });
   let S = load();
@@ -86,8 +87,15 @@
     const ts = (src && src.tests) || {};
     for (const k of Object.keys(ts)) {
       const dn = +k;
-      if (!(dn >= 1 && dn <= 30) || !ts[k]) continue;
+      if (!(dn >= 1 && dn <= D.days.length) || !ts[k]) continue;
       d.tests[dn] = { best: num(ts[k].best, 0, 0, 100), last: num(ts[k].last, 0, 0, 100), at: num(ts[k].at, 0, 0, 1e6) };
+    }
+    const lcIds = new Set((D.lc || []).map((p) => p.id));
+    const ls = (src && src.lc) || {};
+    for (const id of Object.keys(ls)) {
+      if (!lcIds.has(id) || !ls[id] || typeof ls[id] !== "object") continue;
+      d.lc[id] = { ok: num(ls[id].ok, 0, 0, 1e6), ng: num(ls[id].ng, 0, 0, 1e6), last: num(ls[id].last, 0, 0, 1e6) };
+      if (ls[id].wrong) d.lc[id].wrong = true;
     }
     d.premium = !!(src && src.premium);
     return d;
@@ -636,7 +644,7 @@
         <div class="grid2">
           <a class="tile" href="#/part1"><span class="tico c-green">${ico("camera")}</span><b>Part 1 사진 표현</b><span>사진 묘사 필수 ${D.part1.length}문장</span></a>
           <a class="tile" href="#/conf"><span class="tico c-gold">${ico("split")}</span><b>Part 5 혼동 어휘</b><span>헷갈리는 단어 ${D.conf.length}세트</span></a>
-          ${(D.lc || []).length ? `<a class="tile" href="#/lc"><span class="tico c-purple">${ico("ear")}</span><b>LC 빈출 표현</b><span>Part 2~4 표현 ${D.lc.length}개</span></a>` : ""}
+          ${(D.lc || []).length ? `<a class="tile" href="#/lc"><span class="tico c-purple">${ico("ear")}</span><b>LC 빈출 표현</b><span>Part 2~4 표현 ${D.lc.length}개 · 실전 퀴즈</span></a>` : ""}
           <button class="tile" data-go="listen"><span class="tico c-blue">${ico("headphones")}</span><b>듣기 모드</b><span>출퇴근길 자동 재생</span></button>
           <button class="tile" data-go="part5"><span class="tico c-purple">${ico("trophy")}</span><b>Part 5 실전 20제</b><span>배운 단어로 실전 문제</span></button>
           <button class="tile" data-go="para"><span class="tico c-orange">${ico("swap")}</span><b>Part 7 동의어 20제</b><span>문맥 속 바꿔 쓰기</span></button>
@@ -912,6 +920,7 @@
     if (session.kind === "quiz") return vQuiz();
     if (session.kind === "listen") return vListen();
     if (session.kind === "conf") return vQuiz();
+    if (session.kind === "lcq") return vLcQuiz();
   }
   function vCard() {
     const s = session;
@@ -1432,6 +1441,23 @@
       list = words.map((w) => wordItem(w)).join("");
       actions = `<button class="btn block" data-quiz>${ico("zap")}방금 외운 단어 퀴즈로 확인</button><button class="btn ghost block" style="margin-top:10px" data-home>처음 화면으로</button>`;
       s._words = words;
+    } else if (s.kind === "lcq") {
+      const ok = s.results.filter((r) => r.ok).length;
+      const total = s.results.length;
+      const score = Math.round((ok / total) * 100);
+      hero = `<div class="result-hero"><div class="score" style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--accent)" : "var(--bad)"}">${score}<small>점</small></div><div class="msg">${score === 100 ? "완벽해요!" : score >= 80 ? "훌륭해요!" : score >= 50 ? "조금만 더 하면 돼요" : "표현을 듣고 다시 풀어 봐요"}</div><p class="muted">${s.title} · ${total}문제 중 ${ok}개 정답</p></div>`;
+      const wrong = s.results.filter((r) => !r.ok).map((r) => r.q.item);
+      s._lcWrong = wrong;
+      list = wrong.map((p) => {
+        const d = C.splitDialog(p.e);
+        const dk = d && C.splitDialog(p.k);
+        return `<div class="witem" style="align-items:flex-start;cursor:default"><div class="wbody"><div class="ex-en en">${d ? `<div><span class="muted">Q</span> ${hl(d.q)}</div><div><span class="muted">A</span> ${hl(d.a)}</div>` : hl(p.e)}</div>
+          <div class="ex-ko" style="margin-top:3px">${dk ? `${esc(dk.q)}<br>${esc(dk.a)}` : esc(p.k)}</div>
+          <div class="small" style="margin-top:6px"><span class="badge pos en">${esc(p.key)}</span> <span class="muted">${esc(p.keyKo)}</span></div></div>
+          <button class="play" data-lsay="${p.id}" aria-label="듣기">${ico("vol")}</button></div>`;
+      }).join("");
+      actions = `${wrong.length ? `<button class="btn block" data-lcwrong>${ico("repeat")}틀린 문제 다시 풀기 (${wrong.length})</button>` : ""}<button class="btn ${wrong.length ? "ghost" : ""} block" style="margin-top:10px" data-lcnext>${ico("zap")}새 문제 ${LCQ_N}개 더 풀기</button><button class="btn ghost block" style="margin-top:10px" data-home>LC 표현 목록으로</button>`;
+      if (score >= 80 && total >= 5) setTimeout(confetti, 100);
     } else {
       const ok = s.results.filter((r) => r.ok).length;
       const total = s.results.length;
@@ -1456,6 +1482,11 @@
     if (q) q.addEventListener("click", () => startQuiz(s._words, "mix", { title: "확인 퀴즈" }));
     const c = $app.querySelector("[data-card]");
     if (c) c.addEventListener("click", () => startCard(s._words, { title: "틀린 단어 복습" }));
+    const lw = $app.querySelector("[data-lcwrong]");
+    if (lw) lw.addEventListener("click", () => startLcQuiz(s.type, s._lcWrong));
+    const ln = $app.querySelector("[data-lcnext]");
+    if (ln) ln.addEventListener("click", () => startLcQuiz(s.type, s.src));
+    $app.querySelectorAll("[data-lsay]").forEach((b) => b.addEventListener("click", () => sayExpr(s._lcWrong.find((p) => p.id === b.dataset.lsay), b)));
     const rt = $app.querySelector("[data-retry]");
     if (rt) rt.addEventListener("click", () => {
       if (s.kind === "conf") startConfQuiz(s.qs.map((x) => x.conf));
@@ -1498,54 +1529,228 @@
 
   // ═════════════ Part 1 ═════════════
   // Part 1 사진 표현 / LC 빈출 표현 — 같은 목록 화면을 쓴다
+  const LC_TIPS = {
+    2: `<b>Part 2 요령</b> 질문에 직접 답하지 않는 <b>우회 응답</b>이 정답인 경우가 많아요. "글쎄요", "~에게 물어보세요", "아직 정해지지 않았어요" 같은 답을 놓치지 마세요. 질문의 단어를 그대로 반복하는 보기는 함정일 때가 많아요.`,
+    3: `<b>Part 3 요령</b> 대화를 듣기 전에 문제를 먼저 읽어 두세요. 정답은 대화의 표현을 <b>다른 말로 바꿔</b> 나오고, 마지막 부분의 '다음에 할 일'·'요청 사항'이 자주 출제돼요.`,
+    4: `<b>Part 4 요령</b> 첫 문장에서 <b>담화 종류</b>(안내·광고·메시지·방송)와 장소를 잡으면 절반은 풀려요. <span class="en">Please ~ / Make sure ~</span> 뒤의 요청 사항을 놓치지 마세요.`,
+  };
   const EXPR = {
     part1: { title: "Part 1 사진 표현", sub: () => `사진 묘사 문제에 그대로 나오는 문장 ${D.part1.length}개`, list: () => D.part1,
-      tip: `<b>핵심 함정</b> 사람이 없는 사진에서 <span class="en">is being + p.p.</span>(지금 ~되는 중)는 대부분 오답! 사물의 상태는 <span class="en">is/are + p.p.</span>, <span class="en">has been + p.p.</span>로 말해요.` },
+      tip: () => `<b>핵심 함정</b> 사람이 없는 사진에서 <span class="en">is being + p.p.</span>(지금 ~되는 중)는 대부분 오답! 사물의 상태는 <span class="en">is/are + p.p.</span>, <span class="en">has been + p.p.</span>로 말해요.` },
     lc: { title: "LC 빈출 표현", sub: () => `Part 2~4 대화·방송에 자주 나오는 표현 ${(D.lc || []).length}개`, list: () => D.lc || [],
-      tip: `<b>Part 2 요령</b> 질문에 직접 답하지 않는 <b>우회 응답</b>이 정답인 경우가 많아요. "글쎄요", "~에게 물어보세요", "아직 정해지지 않았어요" 같은 답을 놓치지 마세요.` },
+      tip: () => LC_TIPS[ui.lcPart] || LC_TIPS[2] },
   };
+  // LC 음성: 대화는 질문(lc/NNN-q) → 쉼 → 대답(lc/NNN-a), 한 사람의 말은 lc/NNN.mp3. Part 1 은 p.au 가 파일 경로
+  const lcRel = (p, tail) => (p.au ? `lc/${p.id.slice(3).padStart(3, "0")}${tail ? "-" + tail : ""}.mp3` : null);
+  let exprSeq = 0;
+  async function sayExpr(p, btn) {
+    const my = ++exprSeq;
+    const text = C.plainEx(p.e);
+    if (p.id.startsWith("p1-")) return Sound.play(p.au || null, text, { btn });
+    const d = C.splitDialog(text);
+    if (!d) return Sound.play(lcRel(p, ""), text, { btn });
+    const ok = await Sound.play(lcRel(p, "q"), d.q, { btn });
+    if (!ok || my !== exprSeq) return false;
+    const t = Sound.current();
+    await wait(450);
+    if (my !== exprSeq || t !== Sound.current()) return false;
+    return Sound.play(lcRel(p, "a"), d.a, { btn });
+  }
+  const EXPR_PAGE = 60;
   function vPart1() { vExpr("part1"); }
   function vLc() { vExpr("lc"); }
   function vExpr(kind) {
     const cfg = EXPR[kind];
     const all = cfg.list();
-    const groups = Array.from(new Set(all.map((p) => p.g)));
+    const isLc = kind === "lc";
     if (!ui.exprG) ui.exprG = {};
-    const g = groups.includes(ui.exprG[kind]) ? ui.exprG[kind] : "all";
-    const list = all.filter((p) => g === "all" || p.g === g);
+    if (!ui.exprMore) ui.exprMore = {};
+    // LC: Part 탭(전체/2/3/4) → 그 Part 의 그룹 칩. 그룹 순서는 데이터의 lcGroups 순서
+    const part = isLc && [2, 3, 4].includes(ui.lcPart) ? ui.lcPart : 0;
+    const order = isLc ? (D.lcGroups || []).map((x) => x.g) : [];
+    let groups = Array.from(new Set(all.filter((p) => !part || p.part === part).map((p) => p.g)));
+    if (order.length) groups.sort((a, b) => order.indexOf(a) - order.indexOf(b));
+    const wrongN = isLc ? all.filter((p) => S.lc[p.id] && S.lc[p.id].wrong).length : 0;
+    let g = groups.includes(ui.exprG[kind]) || (ui.exprG[kind] === "wrong" && wrongN) ? ui.exprG[kind] : "all";
+    let list = all.filter((p) => (!part || p.part === part) && (g === "all" || (g === "wrong" ? S.lc[p.id] && S.lc[p.id].wrong : p.g === g)));
+    if (order.length) list = list.slice().sort((a, b) => order.indexOf(a.g) - order.indexOf(b.g));
+    const shown = list.slice(0, Math.max(EXPR_PAGE, ui.exprMore[kind] || 0));
     const showKo = ui.exprKo !== false;
     const line = (p) => {
-      const isDialog = /^Q:/.test(p.e) && p.e.includes(" / A:");
-      const en = isDialog ? p.e.split(" / ").map((x) => `<div>${hl(x)}</div>`).join("") : hl(p.e);
-      const ko = isDialog ? p.k.split(" / ").map((x) => `<div>${esc(x)}</div>`).join("") : esc(p.k);
+      const d = C.splitDialog(p.e);
+      const dk = d && C.splitDialog(p.k);
+      const en = d ? `<div><span class="muted">Q</span> ${hl(d.q)}</div><div><span class="muted">A</span> ${hl(d.a)}</div>` : hl(p.e);
+      const ko = dk ? `<div>${esc(dk.q)}</div><div>${esc(dk.a)}</div>` : esc(p.k);
+      const rec = isLc && S.lc[p.id];
       return `<div class="witem" style="align-items:flex-start;cursor:default"><div class="wbody">
         <div class="ex-en en" style="font-size:16px">${en}</div>${showKo ? `<div class="ex-ko" style="margin-top:3px">${ko}</div>` : ""}
-        <div class="small" style="margin-top:6px"><span class="badge pos en">${esc(p.key)}</span> <span class="muted">${esc(p.keyKo)}</span></div>
+        <div class="small" style="margin-top:6px"><span class="badge pos en">${esc(p.key)}</span> <span class="muted">${esc(p.keyKo)}</span>${rec ? ` <span class="badge ${rec.wrong ? "bad" : "ok"}">${rec.wrong ? "틀림" : "맞힘"}</span>` : ""}</div>
         ${p.tip ? `<div class="small" style="margin-top:6px;color:var(--text-2)">💡 ${esc(p.tip)}</div>` : ""}</div>
         <button class="play" data-p1="${p.id}" aria-label="듣기">${ico("vol")}</button></div>`;
     };
+    let quiz = "";
+    if (isLc) {
+      const sum = C.lcSummary(all, S.lc);
+      const nResp = list.filter(C.canRespond).length;
+      const nMean = list.filter((p) => !C.splitDialog(p.e)).length;
+      quiz = `<div class="grid2" style="margin-bottom:12px">
+          <button class="tile" data-lcq="resp" ${nResp ? "" : "disabled"}><span class="tico c-purple">${ico("ear")}</span><b>Part 2 응답 고르기</b><span>질문 듣고 3개 중 고르기 · ${nResp}문항</span></button>
+          <button class="tile" data-lcq="lcm" ${nMean ? "" : "disabled"}><span class="tico c-orange">${ico("headphones")}</span><b>듣고 해석 고르기</b><span>Part 3·4 문장 · ${nMean}문항</span></button>
+        </div>
+        <div class="small muted" style="margin:-2px 2px 12px">${sum.seen ? `푼 표현 ${sum.seen}/${sum.total} · 정답률 ${sum.accuracy}%${sum.wrong ? ` · 틀린 표현 ${sum.wrong}개` : ""}` : "아래에서 Part·주제를 고르면 그 범위로 퀴즈가 나와요"}</div>
+        <div class="seg" style="margin-bottom:10px">${[[0, "전체"], [2, "Part 2"], [3, "Part 3"], [4, "Part 4"]].map(([v, t]) => `<button class="${part === v ? "on" : ""}" data-part="${v}">${t}</button>`).join("")}</div>`;
+    }
     const body = `${topBar(cfg.title, { back: true, sub: cfg.sub() })}
-      <div class="tip-box" style="margin-bottom:14px">${cfg.tip}</div>
+      ${quiz}
+      <div class="tip-box" style="margin-bottom:14px">${cfg.tip()}</div>
       <div class="row" style="margin-bottom:12px"><button class="btn sm" data-p1play>${ico("headphones")}이 목록 연속 듣기</button><span class="spacer"></span><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>
-      <div class="chips scroll" style="margin-bottom:12px"><button class="chip ${g === "all" ? "on" : ""}" data-g="all">전체</button>${groups.map((x) => `<button class="chip ${g === x ? "on" : ""}" data-g="${esc(x)}">${esc(x)}</button>`).join("")}</div>
-      <div class="wlist">${list.map(line).join("")}</div>`;
+      <div class="chips scroll" style="margin-bottom:12px"><button class="chip ${g === "all" ? "on" : ""}" data-g="all">전체 ${list.length && g === "all" ? list.length : ""}</button>${wrongN ? `<button class="chip ${g === "wrong" ? "on" : ""}" data-g="wrong">틀린 표현 ${wrongN}</button>` : ""}${groups.map((x) => `<button class="chip ${g === x ? "on" : ""}" data-g="${esc(x)}">${esc(x)}</button>`).join("")}</div>
+      <div class="wlist">${shown.map(line).join("")}</div>
+      ${list.length > shown.length ? `<button class="btn ghost block" data-more style="margin-top:12px">더 보기 (${list.length - shown.length}개 남음)</button>` : ""}`;
     shell(kind, body);
-    $app.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => { ui.exprG[kind] = b.dataset.g; vExpr(kind); }));
+    const rerender = () => { ui.exprMore[kind] = 0; vExpr(kind); };
+    $app.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => { ui.exprG[kind] = b.dataset.g; rerender(); }));
+    $app.querySelectorAll("[data-part]").forEach((b) => b.addEventListener("click", () => { ui.lcPart = +b.dataset.part; ui.exprG[kind] = "all"; rerender(); }));
     $app.querySelector("[data-ko]").addEventListener("click", () => { ui.exprKo = !showKo; vExpr(kind); });
+    const more = $app.querySelector("[data-more]");
+    if (more) more.addEventListener("click", () => { const y = window.scrollY; ui.exprMore[kind] = shown.length + EXPR_PAGE; vExpr(kind); window.scrollTo(0, y); });
+    $app.querySelectorAll("[data-lcq]").forEach((b) => b.addEventListener("click", () => startLcQuiz(b.dataset.lcq, list)));
     const byId = new Map(all.map((p) => [p.id, p]));
-    const say = (p, b) => Sound.play(p.au || null, C.plainEx(p.e).replace(/^Q:\s*/, "").replace(/\s*\/\s*A:\s*/, " ... "), { btn: b });
-    $app.querySelectorAll("[data-p1]").forEach((b) => b.addEventListener("click", () => { seqId += 1; say(byId.get(b.dataset.p1), b); }));
+    $app.querySelectorAll("[data-p1]").forEach((b) => b.addEventListener("click", () => { seqId += 1; sayExpr(byId.get(b.dataset.p1), b); }));
     $app.querySelector("[data-p1play]").addEventListener("click", async () => {
       const btns = Array.from($app.querySelectorAll("[data-p1]"));
       const my = ++seqId;
       for (const b of btns) {
         if (my !== seqId || !document.body.contains(b)) break;
         b.scrollIntoView({ block: "center", behavior: "smooth" });
-        await say(byId.get(b.dataset.p1), b);
+        await sayExpr(byId.get(b.dataset.p1), b);
         if (my !== seqId) break;
         await wait(900);
       }
     });
+  }
+
+  // ═════════════ LC 실전 퀴즈 ═════════════
+  // resp: Part 2 응답 고르기 (질문 → 보기 3개를 차례로 들려준다) · lcm: Part 3·4 문장을 듣고 해석 고르기
+  const LCQ_N = 20;
+  function startLcQuiz(type, items) {
+    let src = items.filter(type === "resp" ? C.canRespond : (p) => !C.splitDialog(p.e));
+    const everything = (D.lc || []).filter(type === "resp" ? C.canRespond : (p) => !C.splitDialog(p.e));
+    if (src.length < 4) src = everything;
+    if (!src.length) return toast("문제를 만들 표현이 없어요");
+    const picked = C.lcPick(src, S.lc, LCQ_N);
+    const pool = everything.length >= 8 ? everything : D.lc;
+    const qs = picked.map((p) => (type === "resp" ? C.makeResponse(p) : C.makeLcMeaning(p, pool)));
+    session = { kind: "lcq", type, title: type === "resp" ? "Part 2 응답 고르기" : "듣고 해석 고르기", qs, src, i: 0, answered: null, results: [], from: location.hash };
+    enterStudy();
+  }
+  let lcqSeq = 0;
+  // 문제 음성: resp 는 질문 → (A) → (B) → (C), lcm 은 문장 하나. 재생 중인 보기를 표시한다
+  async function playLcq(q, only) {
+    const my = ++lcqSeq;
+    const p = q.item;
+    const replay = $app.querySelector("[data-replay]");
+    if (q.type === "lcm") return Sound.play(lcRel(p, ""), q.prompt, { btn: replay });
+    if (only == null) {
+      const ok = await Sound.play(lcRel(p, "q"), q.prompt, { btn: replay });
+      if (!ok || my !== lcqSeq) return;
+    }
+    const opts = only == null ? q.options.map((o, i) => i) : [only];
+    for (const i of opts) {
+      const t = Sound.current();
+      if (only == null) await wait(650);
+      if (my !== lcqSeq || t !== Sound.current() || !session || session.qs[session.i] !== q) return;
+      const btn = $app.querySelector(`[data-pick="${i}"]`);
+      if (btn) btn.classList.add("playing");
+      await Sound.play(lcRel(p, q.options[i].f), q.options[i].t, {});
+      if (btn) btn.classList.remove("playing");
+      if (my !== lcqSeq) return;
+    }
+  }
+  function vLcQuiz() {
+    const s = session;
+    const q = s.qs[s.i];
+    const p = q.item;
+    const ans = s.answered;
+    const script = S.settings.lcScript || !!ans;
+    const L = "ABCD";
+    let qhtml;
+    if (q.type === "resp") {
+      qhtml = `<button class="play lg" data-replay style="margin:14px auto 0;width:76px;height:76px" aria-label="다시 듣기">${ico("vol")}</button>
+        ${script ? `<div class="qs en" style="margin-top:12px">${esc(q.prompt)}</div>${ans ? `<div class="qsub">${esc(q.promptKo)}</div>` : ""}` : `<div class="small muted" style="margin-top:10px">질문과 보기 (A)(B)(C)를 듣고 알맞은 응답을 고르세요</div>`}`;
+    } else {
+      qhtml = `<button class="play lg" data-replay style="margin:14px auto 0;width:76px;height:76px" aria-label="다시 듣기">${ico("vol")}</button>
+        ${script ? `<div class="qs en" style="margin-top:12px">${ans ? hl(p.e) : esc(q.prompt)}</div>` : `<div class="small muted" style="margin-top:10px">문장을 듣고 알맞은 해석을 고르세요</div>`}`;
+    }
+    const opts = `<div class="opts">${q.options.map((o, i) => {
+      let cls = "";
+      if (ans) cls = i === q.answer ? "right" : i === ans.pick ? "wrong" : "dim";
+      if (q.type === "resp") {
+        const txt = script ? `<span class="en">${esc(o.t)}</span>${ans && o.k ? `<span class="small muted" style="display:block;font-weight:500;margin-top:2px">${esc(o.k)}</span>` : ""}` : `<span class="muted">보기 ${L[i]}</span>`;
+        return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${L[i]}</span><span style="flex:1">${txt}</span>${ans ? `<span class="play sm" data-say="${i}" role="button" aria-label="보기 ${L[i]} 듣기">${ico("vol")}</span>` : ""}</button>`;
+      }
+      return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${i + 1}</span><span>${esc(o)}</span></button>`;
+    }).join("")}</div>`;
+    let fb = "";
+    if (ans) {
+      fb = `<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? "정답이에요!" : "틀렸어요"}</b>
+        ${q.type === "lcm" ? `<div>${esc(p.k)}</div>` : ""}
+        <div style="margin-top:6px"><b class="en">${esc(p.key)}</b> ${esc(p.keyKo)}</div>
+        ${p.tip ? `<div style="margin-top:6px;color:var(--text-2)">💡 ${esc(p.tip)}</div>` : ""}</div>`;
+    }
+    const label = q.type === "resp" ? "Part 2 · 질문에 알맞은 응답은?" : `Part ${p.part === 4 ? 4 : 3} · 들은 문장의 뜻은?`;
+    $app.innerHTML = `<div class="study">${studyTop(s.i, s.qs.length)}
+      <div class="quiz-q"><div class="qk">${label}</div>${qhtml}</div>
+      ${opts}${fb}
+      <div class="study-foot">${ans ? `<button class="btn block" data-next>${s.i + 1 >= s.qs.length ? "결과 보기" : "다음 문제"}</button>` : `<button class="btn ghost block" data-script>${S.settings.lcScript ? "스크립트 숨기고 듣기만" : "스크립트 보면서 풀기"}</button>`}
+      <div class="kbd-hint"><kbd>1</kbd>~<kbd>${q.options.length}</kbd> 선택 · <kbd>R</kbd> 다시 듣기 · <kbd>Enter</kbd> 다음</div></div></div>`;
+    bindExit();
+    const pick = (i) => {
+      if (s.answered || i >= q.options.length) return;
+      lcqSeq += 1;
+      Sound.stop();
+      const ok = i === q.answer;
+      s.answered = { pick: i, ok };
+      s.results.push({ q, ok });
+      S.lc[p.id] = C.lcRecord(S.lc[p.id], ok, today());
+      const l = logToday();
+      l.q += 1;
+      if (ok) l.ok += 1;
+      (ok ? Sfx.ok : Sfx.bad)();
+      vibrate(ok ? 8 : [20, 40, 20]);
+      save();
+      vLcQuiz();
+      if (q.type === "resp") sayExpr(p, $app.querySelector("[data-replay]"));
+    };
+    const next = () => {
+      if (!s.answered) return;
+      lcqSeq += 1;
+      s.i += 1;
+      s.answered = null;
+      if (s.i >= s.qs.length) return finishSession();
+      vLcQuiz();
+    };
+    $app.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", (e) => {
+      if (e.target.closest("[data-say]")) return;
+      pick(+b.dataset.pick);
+    }));
+    $app.querySelectorAll("[data-say]").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); playLcq(q, +b.dataset.say); }));
+    // 정답 표시 뒤에는 보기 버튼이 disabled 라 클릭이 안 온다 — 보기 안의 작은 재생 버튼은 부모 대신 직접 받는다
+    $app.querySelectorAll(".opt[disabled] [data-say]").forEach((b) => { b.parentElement.removeAttribute("disabled"); b.parentElement.style.cursor = "default"; });
+    const nx = $app.querySelector("[data-next]");
+    if (nx) nx.addEventListener("click", next);
+    const sc = $app.querySelector("[data-script]");
+    if (sc) sc.addEventListener("click", () => { S.settings.lcScript = !S.settings.lcScript; save(); lcqSeq += 1; vLcQuiz(); });
+    $app.querySelector("[data-replay]").addEventListener("click", () => (ans && q.type === "resp" ? sayExpr(p, $app.querySelector("[data-replay]")) : playLcq(q)));
+    if (!ans) setTimeout(() => { if (session === s && s.qs[s.i] === q && !s.answered) playLcq(q); }, 250);
+    keyHandler = (e) => {
+      if (e.key === "Escape") return askExit();
+      if (onControl(e)) return;
+      if (s.answered && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); return next(); }
+      if (!s.answered && /^[1-4]$/.test(e.key)) pick(+e.key - 1);
+      if (!s.answered && /^[abcABC]$/.test(e.key) && q.type === "resp") pick("abc".indexOf(e.key.toLowerCase()));
+      if (e.key === "r" || e.key === "R") $app.querySelector("[data-replay]").click();
+    };
   }
 
   // ═════════════ 혼동 어휘 ═════════════

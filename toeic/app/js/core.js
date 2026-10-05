@@ -407,6 +407,75 @@
     out.accuracy = out.ok + out.ng ? Math.round((out.ok / (out.ok + out.ng)) * 100) : null;
     return out;
   }
+  // ───────────── LC 실전 퀴즈 ─────────────
+  // "Q: 질문 / A: 대답" 한 줄을 질문과 대답으로 나눈다 (해석 k 도 같은 형식)
+  function splitDialog(s) {
+    const m = /^Q: (.+?) \/ A: (.+)$/.exec(s || "");
+    return m ? { q: m[1].trim(), a: m[2].trim() } : null;
+  }
+  function canRespond(item) {
+    return !!(splitDialog(item.e) && Array.isArray(item.x) && item.x.length === 2);
+  }
+  // Part 2 응답 고르기: 질문을 듣고 보기 3개(정답 + 그 문항 전용 오답 2개) 중 고르기. f 는 음성 파일 꼬리(a/x1/x2)
+  function makeResponse(item, rand) {
+    const d = splitDialog(plainEx(item.e));
+    const dk = splitDialog(item.k) || { q: "", a: "" };
+    const xk = item.xk || [];
+    const opts = shuffle([
+      { t: d.a, k: dk.a, f: "a" },
+      { t: item.x[0], k: xk[0] || "", f: "x1" },
+      { t: item.x[1], k: xk[1] || "", f: "x2" },
+    ], rand || Math.random);
+    return { type: "resp", item, prompt: d.q, promptKo: dk.q, options: opts, answer: opts.findIndex((o) => o.f === "a") };
+  }
+  // Part 3·4 듣고 해석 고르기: 한 사람의 말을 듣고 한국어 해석 4개 중 고르기 (같은 Part 의 다른 문장 해석이 오답)
+  function makeLcMeaning(item, all, rand) {
+    const r = rand || Math.random;
+    const cands = all.filter((x) => x.id !== item.id && !splitDialog(x.e) && x.k !== item.k);
+    const same = shuffle(cands.filter((x) => x.part === item.part && x.g !== item.g), r);
+    const near = shuffle(cands.filter((x) => x.g === item.g), r);
+    const ds = [];
+    for (const x of near.slice(0, 1).concat(same, shuffle(cands, r))) {
+      if (!ds.includes(x.k)) ds.push(x.k);
+      if (ds.length >= 3) break;
+    }
+    const opts = shuffle([item.k].concat(ds), r);
+    return { type: "lcm", item, prompt: plainEx(item.e), options: opts, answer: opts.indexOf(item.k) };
+  }
+  // 출제 순서: 지난번에 틀린 것 → 안 푼 것 → 맞힌 것(오래전에 푼 것부터). 같은 순위 안에서는 무작위
+  function lcPick(items, states, n, rand) {
+    const rank = (it) => {
+      const s = states[it.id];
+      if (!s) return [1, 0];
+      return s.wrong ? [0, 0] : [2, s.last || 0];
+    };
+    return shuffle(items, rand || Math.random)
+      .map((it, i) => ({ it, i, r: rank(it) }))
+      .sort((a, b) => a.r[0] - b.r[0] || a.r[1] - b.r[1] || a.i - b.i)
+      .slice(0, n)
+      .map((x) => x.it);
+  }
+  function lcRecord(state, ok, today) {
+    const s = Object.assign({ ok: 0, ng: 0, last: 0 }, state || {});
+    if (ok) s.ok += 1;
+    else s.ng += 1;
+    s.last = today;
+    s.wrong = !ok;
+    return s;
+  }
+  function lcSummary(items, states) {
+    let seen = 0, wrong = 0, ok = 0, ng = 0;
+    for (const it of items) {
+      const s = states[it.id];
+      if (!s) continue;
+      seen += 1;
+      if (s.wrong) wrong += 1;
+      ok += s.ok || 0;
+      ng += s.ng || 0;
+    }
+    return { total: items.length, seen, wrong, accuracy: ok + ng ? Math.round((ok / (ok + ng)) * 100) : null };
+  }
+
   // 지금 속도로 범위를 다 보는 날 (최근 7일 새 단어 평균)
   function projectFinish(pool, states, log, today, daily, start) {
     // 최근 7일(시작한 지 7일이 안 됐으면 시작일부터) 하루 평균 새 단어 수
@@ -425,7 +494,8 @@
     INTERVALS, MASTER_BOX, newState, grade, applyQuiz, markKnown, status, isDue,
     todayPlan, streak,
     rng, shuffle, meaningText, distractors, starred, cloze, plainEx, makeQuestion, makeTest,
-    canParaphrase, makeParaphrase, placementSample, placementScore, estimateKnown, recommendSkip,
+    canParaphrase, makeParaphrase, placementSample,
+    splitDialog, canRespond, makeResponse, makeLcMeaning, lcPick, lcRecord, lcSummary, placementScore, estimateKnown, recommendSkip,
     normEn, checkSpelling, editDistance, spellHint,
     search, summarize, projectFinish, clamp,
   };

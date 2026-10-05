@@ -40,16 +40,34 @@ const ans = await p.evaluate(() => { const q = document.querySelectorAll("[data-
 await p.click('[data-pick="0"]'); await p.goBack(); await p.waitForTimeout(1300);
 ok(await p.$(".tabbar"), "quiz timer did not overwrite page");
 // 5) 설정 화면 레이아웃 (가로 스크롤 없음)
-for (const r of ["#/settings", "#/review", "#/stats", "#/home", "#/days", "#/part1", "#/conf", "#/search"]) {
+for (const r of ["#/settings", "#/review", "#/stats", "#/home", "#/days", "#/part1", "#/conf", "#/search", "#/lc"]) {
   await p.goto(base + r); await p.waitForTimeout(250);
   const w = await p.evaluate(() => document.documentElement.scrollWidth);
   ok(w <= 390, `no h-scroll ${r}: ${w}`);
 }
 await p.goto(base + "#/settings"); await p.waitForTimeout(250); await p.screenshot({ path: out + "settings.png", fullPage: true });
 await p.goto(base + "#/review"); await p.waitForTimeout(250); await p.screenshot({ path: out + "review.png", fullPage: true });
+// 5-1) LC 실전 퀴즈: Part 2 탭 → 응답 고르기 → 답하면 스크립트·해석이 보이고 기록이 남는다 → 다음 문제
+await p.goto(base + "#/lc"); await p.waitForTimeout(250);
+await p.click('[data-part="2"]'); await p.waitForTimeout(150);
+await p.click('[data-lcq="resp"]'); await p.waitForTimeout(300);
+ok(p.url().includes("#/study") && (await p.$$("[data-pick]")).length === 3, "lc resp quiz 3 options");
+ok(!(await p.$(".quiz-q .qs")), "lc resp script hidden by default");
+await p.click('[data-pick="1"]'); await p.waitForTimeout(250);
+ok(await p.$(".feedback") && await p.$(".quiz-q .qs"), "lc resp feedback + script shown");
+const lcRec = await p.evaluate(() => Object.keys(window.__vocafit.state.lc).length);
+ok(lcRec === 1, "lc record saved " + lcRec);
+await p.click("[data-next]"); await p.waitForTimeout(200);
+ok((await p.textContent(".cnt")).startsWith("2"), "lc next question");
+await p.goBack(); await p.waitForTimeout(300);
+ok(p.url().endsWith("#/lc"), "exit lc quiz → lc: " + p.url());
+await p.click('[data-part="4"]'); await p.waitForTimeout(150);
+await p.click('[data-lcq="lcm"]'); await p.waitForTimeout(300);
+ok((await p.$$("[data-pick]")).length === 4, "lc meaning quiz 4 options");
+await p.goBack(); await p.waitForTimeout(200);
 // 6) 조작된 저장값 정리
-const st = await p.evaluate(() => window.__vocafit.sanitize({ profile: { target: "<img src=x onerror=alert(1)>", daily: "9999", examDate: "x" }, words: { "01-01": { b: 99, n: "3" }, "zz": {} }, tests: { "5": { best: "<b>" } }, settings: { theme: "<x>", rate: 5, autoWord: "yes" }, premium: true }));
-ok(st.profile.target === 800 && st.profile.daily === 200 && st.words["01-01"].b === 6 && st.words["01-01"].n === 3 && !st.words.zz && st.tests[5].best === 0 && st.settings.theme === "system" && st.settings.rate === 1 && st.settings.autoWord === true, "sanitize " + JSON.stringify(st));
+const st = await p.evaluate(() => window.__vocafit.sanitize({ profile: { target: "<img src=x onerror=alert(1)>", daily: "9999", examDate: "x" }, words: { "01-01": { b: 99, n: "3" }, "zz": {} }, tests: { "5": { best: "<b>" }, "75": { best: 90, last: 90, at: 1 } }, lc: { "lc-1": { ok: "2", ng: 1, wrong: 1 }, "lc-99999": { ok: 1 } }, settings: { theme: "<x>", rate: 5, autoWord: "yes" }, premium: true }));
+ok(st.profile.target === 800 && st.profile.daily === 200 && st.words["01-01"].b === 6 && st.words["01-01"].n === 3 && !st.words.zz && st.tests[5].best === 0 && st.tests[75].best === 90 && st.lc["lc-1"].ok === 2 && st.lc["lc-1"].wrong === true && !st.lc["lc-99999"] && st.settings.theme === "system" && st.settings.rate === 1 && st.settings.autoWord === true, "sanitize " + JSON.stringify(st));
 await b.close();
 // 7) 데스크톱: 마우스 드래그 스와이프가 카드를 뒤집지 않고 한 번만 채점 / Enter 키 버튼
 const b2 = await chromium.launch();

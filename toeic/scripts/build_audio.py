@@ -59,17 +59,33 @@ def load_entries():
             extras = json.load(open(ex, encoding="utf-8"))
             for i, it in enumerate(extras.get("part1", []), 1):
                 sents.append((f"p1/{i:03d}.mp3", plain(it["e"]), voice_for(f"p1-{i}")))
-            # LC 표현: "Q: … / A: …" 대화는 묻는 사람·답하는 사람 목소리를 다르게
-            for i, it in enumerate(extras.get("lc", []), 1):
-                text = plain(it["e"])
-                v = voice_for(f"lc-{i}")
-                if text.startswith("Q:") and " / A:" in text:
-                    other = {"af_heart": "am_michael", "af_bella": "bm_george", "am_michael": "bf_emma", "bf_emma": "am_michael", "bm_george": "af_heart"}[v]
-                    v = f"{v}+{other}"
-                sents.append((f"lc/{i:03d}.mp3", text, v))
+            for rel, text, v in lc_jobs(extras.get("lc", [])):
+                sents.append((rel, text, v))
         except Exception:
             pass
     return words, sents
+
+
+OTHER = {"af_heart": "am_michael", "af_bella": "bm_george", "am_michael": "bf_emma", "bf_emma": "am_michael", "bm_george": "af_heart"}
+
+
+def lc_jobs(items):
+    """LC 표현 음성 목록. "Q: … / A: …" 대화는 질문(-q)·정답(-a)·오답(-x1, -x2)을 따로 만든다.
+    앱이 질문 → 쉼 → 대답 순서로 이어 재생하고, Part 2 응답 고르기 퀴즈는 질문과 보기 3개를 따로 들려준다.
+    보기 3개는 모두 답하는 사람 목소리 하나로 읽어 목소리로 정답이 드러나지 않게 한다."""
+    out = []
+    for i, it in enumerate(items, 1):
+        text = plain(it["e"])
+        v = voice_for(f"lc-{i}")
+        if text.startswith("Q: ") and " / A: " in text:
+            q, a = text[3:].split(" / A: ", 1)
+            out.append((f"lc/{i:03d}-q.mp3", q.strip(), v))
+            out.append((f"lc/{i:03d}-a.mp3", a.strip(), OTHER[v]))
+            for j, x in enumerate(it.get("x", [])[:2], 1):
+                out.append((f"lc/{i:03d}-x{j}.mp3", plain(x), OTHER[v]))
+        else:
+            out.append((f"lc/{i:03d}.mp3", text, v))
+    return out
 
 
 _k = None
@@ -103,17 +119,8 @@ def synth(job):
     out = os.path.join(AUDIO, rel)
     os.makedirs(os.path.dirname(out), exist_ok=True)
     import numpy as np
-    if "+" in voice:  # 두 사람 대화: Q 와 A 를 각각 만들어 사이에 쉼을 둔다
-        v1, v2 = voice.split("+")
-        q, a = text.split(" / A:", 1)
-        parts = []
-        for t, v in ((q[2:].strip(), v1), (a.strip(), v2)):
-            smp, sr = kokoro().create(t, voice=v, speed=1.0, lang="en-gb" if v.startswith("b") else "en-us")
-            parts.append(np.asarray(smp, dtype=np.float32))
-        samples = np.concatenate([parts[0], np.zeros(int(0.6 * sr), dtype=np.float32), parts[1]])
-    else:
-        lang = "en-gb" if voice.startswith("b") else "en-us"
-        samples, sr = kokoro().create(text, voice=voice, speed=0.95 if rel.startswith("w/") else 1.0, lang=lang)
+    lang = "en-gb" if voice.startswith("b") else "en-us"
+    samples, sr = kokoro().create(text, voice=voice, speed=0.95 if rel.startswith("w/") else 1.0, lang=lang)
     # 앞뒤 무음 정리 + 짧은 여백
     a = np.asarray(samples, dtype=np.float32)
     nz = np.where(np.abs(a) > 0.01)[0]
@@ -161,6 +168,15 @@ def main():
                     jobs.append((rel, w, WORD_VOICE))
         print(f"단어 {len(words)}개 · 기존 음성 재사용 {reused}개")
     if a.sentences:
+        # LC 표현은 번호·형식이 바뀌면 옛 파일이 남는다 — 이 앱 음성 폴더(app/audio/lc) 안의 쓰지 않는 파일만 지운다
+        want_lc = {rel for rel, _, _ in sents if rel.startswith("lc/")}
+        lc_dir = os.path.join(AUDIO, "lc")
+        if want_lc and os.path.isdir(lc_dir):
+            for f in os.listdir(lc_dir):
+                if f.endswith(".mp3") and f"lc/{f}" not in want_lc:
+                    os.remove(os.path.join(lc_dir, f))
+        for rel in [r for r in man if want_lc and r.startswith("lc/") and r not in want_lc]:
+            del man[rel]
         for rel, text, voice in sents:
             want = {"text": text, "src": "kokoro", "voice": voice}
             if man.get(rel) != want or not os.path.exists(os.path.join(AUDIO, rel)):

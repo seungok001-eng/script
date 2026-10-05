@@ -549,3 +549,12 @@ mark { background: none; color: var(--brand); font-weight: 800; }
 .task > .ico { color: var(--text-3); }
 .grade2 .btn { height: 60px; flex-direction: column; gap: 0; font-size: 15px; }
 .grade2 .btn small { font-size: 11px; font-weight: 600; opacity: 0.75; }
+
+/* LC 실전 퀴즈 */
+.badge.ok { background: var(--ok-soft); color: var(--ok); }
+.badge.bad { background: var(--bad-soft); color: var(--bad); }
+.play.sm { width: 32px; height: 32px; }
+.play.sm .ico { width: 16px; height: 16px; }
+.opt.playing { border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
+.opt.playing .on { background: var(--brand); color: #fff; }
+.tile[disabled] { opacity: 0.5; pointer-events: none; }
