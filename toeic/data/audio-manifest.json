@@ -4064,6 +4064,256 @@
 "text": "Yes, I got an award.",
 "voice": "bm_george"
 },
+"lc/289-a.mp3": {
+"src": "kokoro",
+"text": "Something big enough for a monitor.",
+"voice": "am_michael"
+},
+"lc/289-q.mp3": {
+"src": "kokoro",
+"text": "What size box do you need?",
+"voice": "af_heart"
+},
+"lc/289-x1.mp3": {
+"src": "kokoro",
+"text": "Yes, I need one.",
+"voice": "am_michael"
+},
+"lc/289-x2.mp3": {
+"src": "kokoro",
+"text": "It's in the storage room.",
+"voice": "am_michael"
+},
+"lc/290-a.mp3": {
+"src": "kokoro",
+"text": "Anytime after Wednesday.",
+"voice": "am_michael"
+},
+"lc/290-q.mp3": {
+"src": "kokoro",
+"text": "Which day works best for the interview?",
+"voice": "af_heart"
+},
+"lc/290-x1.mp3": {
+"src": "kokoro",
+"text": "She works in human resources.",
+"voice": "am_michael"
+},
+"lc/290-x2.mp3": {
+"src": "kokoro",
+"text": "For the sales manager position.",
+"voice": "am_michael"
+},
+"lc/291-a.mp3": {
+"src": "kokoro",
+"text": "It won't connect to my laptop.",
+"voice": "bf_emma"
+},
+"lc/291-q.mp3": {
+"src": "kokoro",
+"text": "What's wrong with the projector?",
+"voice": "am_michael"
+},
+"lc/291-x1.mp3": {
+"src": "kokoro",
+"text": "The projects are going well.",
+"voice": "bf_emma"
+},
+"lc/291-x2.mp3": {
+"src": "kokoro",
+"text": "Yes, it's the wrong room.",
+"voice": "bf_emma"
+},
+"lc/292-a.mp3": {
+"src": "kokoro",
+"text": "I've always loved drawing buildings.",
+"voice": "am_michael"
+},
+"lc/292-q.mp3": {
+"src": "kokoro",
+"text": "What made you decide to become an architect?",
+"voice": "af_heart"
+},
+"lc/292-x1.mp3": {
+"src": "kokoro",
+"text": "It was designed by a local firm.",
+"voice": "am_michael"
+},
+"lc/292-x2.mp3": {
+"src": "kokoro",
+"text": "I decided on Friday.",
+"voice": "am_michael"
+},
+"lc/293-a.mp3": {
+"src": "kokoro",
+"text": "They were all taken, so we're using the lounge.",
+"voice": "am_michael"
+},
+"lc/293-q.mp3": {
+"src": "kokoro",
+"text": "Which conference room did you book for Thursday?",
+"voice": "af_heart"
+},
+"lc/293-x1.mp3": {
+"src": "kokoro",
+"text": "I've read that book.",
+"voice": "am_michael"
+},
+"lc/293-x2.mp3": {
+"src": "kokoro",
+"text": "On Thursday at two.",
+"voice": "am_michael"
+},
+"lc/294-a.mp3": {
+"src": "kokoro",
+"text": "They're due by the 25th.",
+"voice": "am_michael"
+},
+"lc/294-q.mp3": {
+"src": "kokoro",
+"text": "What's the deadline for submitting expense reports?",
+"voice": "af_heart"
+},
+"lc/294-x1.mp3": {
+"src": "kokoro",
+"text": "About four hundred dollars.",
+"voice": "am_michael"
+},
+"lc/294-x2.mp3": {
+"src": "kokoro",
+"text": "Yes, it's a firm deadline.",
+"voice": "am_michael"
+},
+"lc/295-a.mp3": {
+"src": "kokoro",
+"text": "The one closer to my office.",
+"voice": "am_michael"
+},
+"lc/295-q.mp3": {
+"src": "kokoro",
+"text": "Which apartment did you decide on?",
+"voice": "bf_emma"
+},
+"lc/295-x1.mp3": {
+"src": "kokoro",
+"text": "Yes, I decided yesterday.",
+"voice": "am_michael"
+},
+"lc/295-x2.mp3": {
+"src": "kokoro",
+"text": "The rent is due Friday.",
+"voice": "am_michael"
+},
+"lc/296-a.mp3": {
+"src": "kokoro",
+"text": "Maintenance has been notified.",
+"voice": "am_michael"
+},
+"lc/296-q.mp3": {
+"src": "kokoro",
+"text": "What should we do about the leaking faucet?",
+"voice": "bf_emma"
+},
+"lc/296-x1.mp3": {
+"src": "kokoro",
+"text": "It's under the kitchen sink.",
+"voice": "am_michael"
+},
+"lc/296-x2.mp3": {
+"src": "kokoro",
+"text": "Yes, it's leaking.",
+"voice": "am_michael"
+},
+"lc/297-a.mp3": {
+"src": "kokoro",
+"text": "Avoid downtown at this time of day.",
+"voice": "am_michael"
+},
+"lc/297-q.mp3": {
+"src": "kokoro",
+"text": "What's the quickest route to the airport?",
+"voice": "af_heart"
+},
+"lc/297-x1.mp3": {
+"src": "kokoro",
+"text": "The flight's at noon.",
+"voice": "am_michael"
+},
+"lc/297-x2.mp3": {
+"src": "kokoro",
+"text": "About forty dollars by taxi.",
+"voice": "am_michael"
+},
+"lc/298-a.mp3": {
+"src": "kokoro",
+"text": "I'm here for a sales conference.",
+"voice": "af_heart"
+},
+"lc/298-q.mp3": {
+"src": "kokoro",
+"text": "What brings you to Chicago?",
+"voice": "bm_george"
+},
+"lc/298-x1.mp3": {
+"src": "kokoro",
+"text": "I'll bring it tomorrow.",
+"voice": "af_heart"
+},
+"lc/298-x2.mp3": {
+"src": "kokoro",
+"text": "Since last Tuesday.",
+"voice": "af_heart"
+},
+"lc/299-a.mp3": {
+"src": "kokoro",
+"text": "Something that matches our logo.",
+"voice": "af_heart"
+},
+"lc/299-q.mp3": {
+"src": "kokoro",
+"text": "Which color would you like for the brochure cover?",
+"voice": "bm_george"
+},
+"lc/299-x1.mp3": {
+"src": "kokoro",
+"text": "Five hundred copies.",
+"voice": "af_heart"
+},
+"lc/299-x2.mp3": {
+"src": "kokoro",
+"text": "I covered it for you.",
+"voice": "af_heart"
+},
+"lc/300-a.mp3": {
+"src": "kokoro",
+"text": "It's Mr. Vargas's last day before retiring.",
+"voice": "bm_george"
+},
+"lc/300-q.mp3": {
+"src": "kokoro",
+"text": "What's the occasion for the cake in the break room?",
+"voice": "af_bella"
+},
+"lc/300-x1.mp3": {
+"src": "kokoro",
+"text": "Occasionally, I bake.",
+"voice": "bm_george"
+},
+"lc/300-x2.mp3": {
+"src": "kokoro",
+"text": "Cut it into twelve pieces.",
+"voice": "bm_george"
+},
+"lc/301-q.mp3": {
+"src": "kokoro",
+"text": "Do you have this jacket in a larger size?",
+"voice": "af_heart"
+},
+"lc/301-x1.mp3": {
+"src": "kokoro",
+"text": "It's a large company.",
+"voice": "am_michael"
+},
 "p1/001.mp3": {
 "src": "kokoro",
 "text": "Some files are stacked on the desk.",

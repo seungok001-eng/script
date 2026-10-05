@@ -2955,11 +2955,11 @@
    "keyKo": "전혀요 (→ 괜찮아요, 수락)",
    "tip": "Would you mind 질문에 'Yes, I would.'라고 하면 '싫다'는 거절이 된다.",
    "x": [
-    "She borrowed it last week.",
+    "I'll mail the letters today.",
     "It staples up to fifty pages."
    ],
    "xk": [
-    "그녀가 지난주에 빌려 갔어요.",
+    "오늘 편지들을 부칠게요.",
     "50장까지 찍을 수 있어요."
    ]
   },
@@ -3963,11 +3963,11 @@
    "keyKo": "처음 듣는 얘기다 → 몰랐다, 놀랐다",
    "tip": "news를 듣고 신문·뉴스 관련 보기를 고르면 오답이다.",
    "x": [
-    "I read the news this morning.",
+    "Next month is fine with me.",
     "It moved very quickly."
    ],
    "xk": [
-    "오늘 아침에 뉴스를 읽었어요.",
+    "저는 다음 달 괜찮아요.",
     "그건 아주 빨리 움직였어요."
    ]
   },
@@ -6268,11 +6268,11 @@
    "tip": "What 질문에 시간이나 위치로 답하는 오답을 거르세요.",
    "x": [
     "On Monday at ten.",
-    "It's on the table."
+    "Yes, I'll be there."
    ],
    "xk": [
     "월요일 10시에요.",
-    "테이블 위에 있어요."
+    "네, 갈게요."
    ]
   },
   {
@@ -7259,11 +7259,11 @@
    "keyKo": "~을 기다리다",
    "tip": "회의가 늦어지는 이유로 답한 정답. schedule 반복 오답 주의.",
    "x": [
-    "The schedule is on the wall.",
+    "I scheduled a dental appointment.",
     "For about an hour."
    ],
    "xk": [
-    "일정표는 벽에 있어요.",
+    "치과 예약을 잡았어요.",
     "한 시간 정도요."
    ]
   },
@@ -7515,11 +7515,11 @@
    "keyKo": "가능하면 둘 다요",
    "tip": "'둘 다'를 고르는 응답. 이유를 덧붙이는 경우가 많다.",
    "x": [
-    "She sent it yesterday.",
+    "Report to the front desk.",
     "The printer is on the third floor."
    ],
    "xk": [
-    "그녀가 어제 보냈어요.",
+    "안내 데스크로 오세요.",
     "프린터는 3층에 있어요."
    ]
   },
@@ -8862,7 +8862,7 @@
   {
    "g": "쇼핑·서비스 대화",
    "e": "Q: Would you like this *gift-wrapped*? / A: Yes, please. It's for my sister's birthday.",
-   "k": "Q: 이거 선물 포장해 드릴까요? / A: 네, 부탁해요. 언니 생일 선물이에요.",
+   "k": "Q: 이거 선물 포장해 드릴까요? / A: 네, 부탁해요. 여동생 생일 선물이에요.",
    "key": "gift-wrap",
    "keyKo": "선물 포장하다",
    "tip": "포장 서비스는 무료/유료 여부가 세부 사항 문제로 나오기도 한다.",
@@ -11284,11 +11284,11 @@
    "tip": "freeze 는 '얼리다'가 아니라 카드·계좌를 '정지하다'. block 도 같은 뜻.",
    "x": [
     "It's freezing outside today.",
-    "Yes, I found it on the table."
+    "I bought a new jacket at the mall."
    ],
    "xk": [
     "오늘 밖이 엄청 추워요.",
-    "네, 테이블 위에서 찾았어요."
+    "쇼핑몰에서 새 재킷을 샀어요."
    ]
   },
   {
