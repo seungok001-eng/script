@@ -36,3 +36,4 @@ next-env.d.ts
 
 /toeic/release-*.apk
 /toeic/dist
+__pycache__/
