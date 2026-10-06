@@ -117,7 +117,7 @@
     const pr = (src && src.pr) || {};
     for (const sec of ["lc", "rc"]) if (Array.isArray(pr[sec])) d.pr[sec] = pr[sec].slice(-120).map((x) => (x ? 1 : 0));
     const mk = (src && src.mock) || {};
-    for (const k of Object.keys(mk)) if (/^\d{1,2}$/.test(k) && mk[k]) d.mock[k] = { lc: num(mk[k].lc, 5, 5, 495), rc: num(mk[k].rc, 5, 5, 495), total: num(mk[k].total, 10, 10, 990), best: num(mk[k].best, 10, 10, 990), at: num(mk[k].at, 0, 0, 1e6) };
+    for (const k of Object.keys(mk)) if (/^\d{1,2}$/.test(k) && mk[k]) { const total = num(mk[k].total, 10, 10, 990); d.mock[k] = { lc: num(mk[k].lc, 5, 5, 495), rc: num(mk[k].rc, 5, 5, 495), total, best: num(mk[k].best, 10, 10, 990), at: num(mk[k].at, 0, 0, 1e6), n: num(mk[k].n, 1, 1, 999), first: num(mk[k].first, total, 10, 990) }; }
     const mr = src && src.mockRun;
     if (mr && /^\d{1,2}$/.test(String(mr.n)) && Array.isArray(mr.picks)) {
       d.mockRun = { n: +mr.n, i: num(mr.i, 0, 0, 500), picks: mr.picks.slice(0, 500).map((a) => (Array.isArray(a) ? a.slice(0, 10).map((x) => (Number.isInteger(x) && x >= 0 && x <= 3 ? x : null)) : [])), rcUsed: mr.rcUsed == null ? null : num(mr.rcUsed, 0, 0, 1e8), at: num(mr.at, 0, 0, 1e6) };
@@ -2512,17 +2512,17 @@
       const run = S.mockRun && S.mockRun.n === m.n ? S.mockRun : null;
       const runInfo = run ? `<div class="tip-box" style="margin-top:10px;font-size:14px">풀던 모의고사가 있어요 · ${run.picks.flat().filter((x) => x != null).length}문제 답함${run.rcUsed != null ? ` · RC 남은 시간 ${Math.max(0, RC_MIN - Math.floor(run.rcUsed / 60000))}분` : ""}</div><div class="row" style="gap:8px;margin-top:10px"><button class="btn block" data-resume="${m.n}" style="flex:2">이어서 풀기</button><button class="btn ghost" data-mock="${m.n}" style="flex:1">처음부터</button></div>` : "";
       if (run) return `<div class="card" style="margin-top:10px"><div class="row"><div class="spacer"><b style="font-size:17px">하프 모의고사 ${m.n}회</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${RC_MIN}분)</div></div></div>${runInfo}</div>`;
-      return `<div class="card" style="margin-top:10px"><div class="row"><div class="spacer"><b style="font-size:17px">하프 모의고사 ${m.n}회</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${RC_MIN}분)</div></div>${rec ? `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.total}</b><div class="small muted">LC ${rec.lc} · RC ${rec.rc}</div></div>` : ""}</div>
+      return `<div class="card" style="margin-top:10px"><div class="row"><div class="spacer"><b style="font-size:17px">하프 모의고사 ${m.n}회</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${RC_MIN}분)</div></div>${rec ? (rec.n > 1 ? `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.first}</b><div class="small muted">첫 응시 · 재응시 ${rec.total}점 (${rec.n}회째)</div></div>` : `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.total}</b><div class="small muted">LC ${rec.lc} · RC ${rec.rc}</div></div>`) : ""}</div>
         <button class="btn ${rec ? "ghost" : ""} block" style="margin-top:10px" data-mock="${m.n}">${rec ? "다시 응시하기" : "응시하기"}</button></div>`;
     };
     const body = `${topBar("하프 모의고사", { back: true, sub: `실제 시험의 절반 분량 · Part ${(PR.p1 || []).length >= 12 ? 1 : 2}~7` })}
-      <div class="tip-box">실제 시험처럼 <b>해설 없이</b> 끝까지 풀고, 마지막에 <b>LC·RC 예상 점수</b>와 파트별 정답률, 전체 해설을 보여 드려요. LC 음성은 한 번만 재생돼요(실전 모드). Part 1(사진)은 포함되지 않아요.</div>
+      <div class="tip-box">실제 시험처럼 <b>해설 없이</b> 끝까지 풀고, 마지막에 <b>LC·RC 예상 점수</b>와 파트별 정답률, 전체 해설을 보여 드려요. LC 음성은 한 번만 재생돼요(실전 모드). 점수는 <b>첫 응시</b>가 기준이고, 다시 풀면 '재응시'로 따로 표시돼요.${(PR.p1 || []).length >= 12 ? "" : " Part 1(사진)은 아직 포함되지 않아요."}</div>
       ${mocks.map(card).join("")}`;
     shell("practice", body);
     $app.querySelectorAll("[data-resume]").forEach((b) => b.addEventListener("click", () => startMock(mocks.find((x) => x.n === +b.dataset.resume), true)));
     $app.querySelectorAll("[data-mock]").forEach((b) => b.addEventListener("click", () => {
       const m = mocks.find((x) => x.n === +b.dataset.mock);
-      modal(`<h3>하프 모의고사 ${m.n}회</h3><p class="muted">LC → RC 순서로 진행하고, 해설은 끝난 뒤에 보여 드려요. 중간에 나가도 답안이 저장돼서 이어서 풀 수 있어요${S.mockRun && S.mockRun.n === m.n ? " (처음부터 시작하면 풀던 답안은 지워져요)" : ""}. 조용한 곳에서 이어폰을 끼고 시작하세요.</p>
+      modal(`<h3>하프 모의고사 ${m.n}회</h3><p class="muted">LC → RC 순서로 진행하고, 해설은 끝난 뒤에 보여 드려요. 중간에 나가도 답안이 저장돼서 이어서 풀 수 있어요${S.mockRun && S.mockRun.n === m.n ? " (처음부터 시작하면 풀던 답안은 지워져요)" : ""}. 조용한 곳에서 이어폰을 끼고 시작하세요.</p>${S.mock[m.n] ? `<div class="tip-box" style="font-size:14px">이미 푼 모의고사예요 (첫 응시 ${S.mock[m.n].first || S.mock[m.n].total}점). 다시 풀면 <b>재응시</b>로 표시되고 예상 점수에는 반영되지 않아요.</div>` : ""}
         <div class="row" style="margin-top:14px;gap:8px"><button class="btn ghost" data-close style="flex:1">취소</button><button class="btn" data-go-mock style="flex:1">시작</button></div>`, (box) => {
         box.querySelector("[data-go-mock]").addEventListener("click", () => { closeModal(); delete S.mockRun; startMock(m); });
       });
@@ -2640,6 +2640,8 @@
     stopLines();
     const stat = { lc: [0, 0], rc: [0, 0] };
     const parts = {};
+    // 재응시: 이미 본 문제라 점수가 부풀려진다 → 예상 점수·유형별 정답률에는 넣지 않고 학습량(오늘 푼 문제 수)만 센다
+    const prev = S.mock[s.m.n];
     s.pages.forEach((p, pi) => pageQs(p).forEach((q, qi) => {
       const ans = p.part === "p2" ? p.q.answer : q.a;
       const ok = s.picks[pi][qi] === ans;
@@ -2649,12 +2651,14 @@
       parts[p.part] = parts[p.part] || [0, 0];
       parts[p.part][1] += 1;
       if (ok) parts[p.part][0] += 1;
-      recordAnswer(sec, `${p.part}:${p.part === "p2" ? "응답" : q.type || q.kind || "어휘"}`, ok);
+      if (!prev) recordAnswer(sec, `${p.part}:${p.part === "p2" ? "응답" : q.type || q.kind || "어휘"}`, ok);
+      else { const l = logToday(); l.q += 1; if (ok) l.ok += 1; }
     }));
     const est = C.estimateTotal(stat.lc[0] / Math.max(1, stat.lc[1]), stat.rc[0] / Math.max(1, stat.rc[1]));
-    const prev = S.mock[s.m.n];
-    S.mock[s.m.n] = Object.assign({}, est, { at: today(), best: Math.max(est.total, (prev && prev.best) || 0) });
-    s.result = { est, stat, parts };
+    const attempt = prev ? (prev.n || 1) + 1 : 1;
+    const first = prev ? prev.first || prev.total : est.total;
+    S.mock[s.m.n] = Object.assign({}, est, { at: today(), best: Math.max(est.total, (prev && prev.best) || 0), n: attempt, first });
+    s.result = { est, stat, parts, attempt, first };
     logToday().prac = true;
     markDone();
     save(true);
@@ -2662,9 +2666,11 @@
     vResult();
   }
   function mockResultHtml(s) {
-    const { est, stat, parts } = s.result;
+    const { est, stat, parts, attempt, first } = s.result;
     const gap = target() - est.total;
-    const hero = `<div class="result-hero"><div class="eyebrow muted">예상 점수 (추정)</div><div class="score" style="color:var(--brand)">${est.total}<small>점</small></div><div class="msg">LC ${est.lc} · RC ${est.rc}</div><p class="muted">LC ${stat.lc[0]}/${stat.lc[1]} · RC ${stat.rc[0]}/${stat.rc[1]} 정답</p>
+    const retake = attempt > 1;
+    const hero = `<div class="result-hero">${retake ? `<span class="badge bad" style="margin-bottom:6px">재응시 · ${attempt}회째</span>` : ""}<div class="eyebrow muted">${retake ? "다시 푼 점수 (참고용)" : "예상 점수 (추정)"}</div><div class="score" style="color:var(--brand)">${est.total}<small>점</small></div><div class="msg">LC ${est.lc} · RC ${est.rc}</div><p class="muted">LC ${stat.lc[0]}/${stat.lc[1]} · RC ${stat.rc[0]}/${stat.rc[1]} 정답</p>
+      ${retake ? `<div class="tip-box" style="margin-top:12px;text-align:left"><b>이미 풀어 본 문제라 실제보다 높게 나올 수 있어요.</b> 첫 응시 점수 <b>${first}점</b>이 더 정확한 기준이에요. 이번 결과는 예상 점수와 약점 분석에 넣지 않았어요. 틀린 문제 해설을 다시 보는 복습용으로 활용하세요.</div>` : ""}
       <div class="tip-box" style="margin-top:12px;text-align:left">${gap <= 0 ? `<b>목표 ${target()}점 달성 수준이에요!</b> 남은 모의고사로 실력을 굳히고, 틀린 문제 해설을 꼭 보세요.` : `<b>목표 ${target()}점까지 약 ${gap}점</b> ${est.lc < est.rc ? "LC" : "RC"}가 상대적으로 약해요. 아래 파트별 정답률에서 낮은 파트부터 연습하세요.`}</div></div>`;
     const rows = Object.keys(parts).map((k) => { const [o, n] = parts[k]; const pct = Math.round((o / n) * 100); return `<div class="weak"><div class="spacer"><b>${PART_LABEL[k]}</b><div class="small muted">${o}/${n}</div></div><div class="wbar"><i style="width:${pct}%;background:${pct >= 80 ? "var(--ok)" : pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${pct}%</b></div>`; }).join("");
     return { hero, rows };

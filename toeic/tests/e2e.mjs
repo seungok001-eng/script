@@ -104,6 +104,21 @@ const mock = await p.evaluate(() => window.__vocafit.state.mock[1]);
 ok(mock && mock.total >= 10 && mock.total <= 990, "mock submitted " + JSON.stringify(mock));
 await p.click("[data-mrev]"); await p.waitForTimeout(300);
 ok(await p.$(".feedback"), "mock review shows explanations");
+// 재응시: '재응시' 표시 · 첫 응시 점수 유지 · 예상 점수용 기록(pr)은 늘지 않는다
+const prBefore = await p.evaluate(() => (window.__vocafit.state.pr.lc || []).length + (window.__vocafit.state.pr.rc || []).length);
+await p.goto(base + "#/mock"); await p.waitForTimeout(300);
+await p.click('[data-mock="1"]'); await p.waitForTimeout(150);
+ok((await p.textContent("#modal")).includes("재응시"), "retake note in start modal");
+await p.click("[data-go-mock]"); await p.waitForTimeout(300);
+for (let k = 0; k < 200 && !(await p.$(".result-hero")); k++) {
+  const conf = await p.$('#modal [data-r="1"]'); if (conf) { await conf.click(); await p.waitForTimeout(150); continue; }
+  await p.click("[data-next]"); await p.waitForTimeout(40);
+}
+ok((await p.textContent(".result-hero")).includes("재응시"), "retake result marked");
+const m2 = await p.evaluate(() => window.__vocafit.state.mock[1]);
+ok(m2.n === 2 && m2.first === mock.total, "retake keeps first score " + JSON.stringify(m2));
+const prAfter = await p.evaluate(() => (window.__vocafit.state.pr.lc || []).length + (window.__vocafit.state.pr.rc || []).length);
+ok(prAfter === prBefore, `retake not counted in predicted score ${prBefore} → ${prAfter}`);
 await p.goto(base + "#/home"); await p.waitForTimeout(200);
 // 6) 조작된 저장값 정리
 const st = await p.evaluate(() => window.__vocafit.sanitize({ profile: { target: "<img src=x onerror=alert(1)>", daily: "9999", examDate: "x" }, words: { "01-01": { b: 99, n: "3" }, "zz": {} }, tests: { "5": { best: "<b>" }, "75": { best: 90, last: 90, at: 1 } }, lc: { "lc-1": { ok: "2", ng: 1, wrong: 1 }, "lc-99999": { ok: 1 } }, settings: { theme: "<x>", rate: 5, autoWord: "yes" }, premium: true }));
