@@ -87,12 +87,7 @@ const lc = (extras.lc || []).map((p, i) => {
 const lcGroups = (extras.lcGroups || []).map((g) => ({ g: g.g, part: g.part }));
 const conf = (extras.confusables || []).map((c, i) => ({ id: `cf-${i + 1}`, words: c.words, point: c.point, q: c.q }));
 
-const out = { version: new Date().toISOString().slice(0, 10), days, words, part1, lc, lcGroups, conf };
-const js = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_DATA=" + JSON.stringify(out) + ";\n";
-fs.writeFileSync(path.join(ROOT, "app/js/data.js"), js);
-const withAu = words.filter((w) => w.au).length;
-const withEx = words.filter((w) => w.exAu).length;
-console.log(`단어 ${words.length}개 (데이터 없음 ${missing}) · 단어 음성 ${withAu} · 예문 음성 ${withEx} · Part1 ${part1.length} (음성 ${part1.filter((p) => p.au).length}) · LC ${lc.length} (음성 ${lc.filter((p) => p.au).length} · 응답 퀴즈 ${lc.filter((p) => p.x).length}) · 혼동어 ${conf.length} · ${(js.length / 1024).toFixed(0)}KB`);
+const version = new Date().toISOString().slice(0, 10);
 
 // ── 실전 문제 (data/practice/*.json → app/js/practice.js, 실전 화면에서 처음 쓸 때 불러온다) ──
 const PDIR = path.join(ROOT, "data/practice");
@@ -144,17 +139,29 @@ if (enough) {
   const p2 = take(resp, 12, 18);
   const vocab = words.filter((w) => w.tier <= 2 && w.q);
   const p5w = take(vocab, 6, 19);
-  // Part 1: 사진이 12장 이상 들어오면 회마다 3문제 (실제 6문제의 절반)
-  const p1 = pr.p1.length >= 12 ? take(pr.p1, 3, 20) : null;
+  // Part 1: 회마다 3문제 (실제 6문제의 절반). 사진이 다 들어오기 전에도 배정이 바뀌지 않게 문제 원본 전체(120개)에서 고정 시드로
+  // 고르고, 그중 사진이 있는 것만 싣는다 (사진이 12장 이상일 때). 모의고사 문제는 연습 목록에서 빠진다
+  const p1All = read(path.join(ROOT, "data/part1.json"), { items: [] }).items;
+  const p1Set = new Map(pr.p1.map((x) => [x.id, x]));
+  const p1 = pr.p1.length >= 12 ? take(p1All, 3, 20).map((xs) => xs.map((q) => p1Set.get(q.id)).filter(Boolean)) : null;
   for (let m = 0; m < MOCKS; m++) {
     if (p1) p1[m].forEach((x) => (x.mock = m + 1));
+    // Part 2 표현·Part 5 어휘 문제도 모의고사 전용: LC 표현 목록·퀴즈와 단어 화면의 Part 5 문제에서 빠진다
+    p2[m].forEach((x) => (x.mock = m + 1));
+    p5w[m].forEach((w) => { w.mq = w.q; delete w.q; });
     const mark = (xs) => xs.forEach((x) => (x.mock = m + 1));
     [p3[m], p4[m], p6[m], p7s[m], p7d[m], p7t[m], p5g[m]].forEach(mark);
     mocks.push({ n: m + 1, p1: p1 ? p1[m].map((x) => x.id) : [], p2: p2[m].map((x) => x.id), p3: p3[m].map((x) => x.id), p4: p4[m].map((x) => x.id), p5w: p5w[m].map((x) => x.id), p5g: p5g[m].map((x) => x.id),
       p6: p6[m].map((x) => x.id), p7: p7s[m].concat(p7d[m], p7t[m]).map((x) => x.id) });
   }
 }
-const practice = { version: out.version, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks };
+const out = { version, days, words, part1, lc, lcGroups, conf };
+const js = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_DATA=" + JSON.stringify(out) + ";\n";
+fs.writeFileSync(path.join(ROOT, "app/js/data.js"), js);
+const withAu = words.filter((w) => w.au).length;
+const withEx = words.filter((w) => w.exAu).length;
+console.log(`단어 ${words.length}개 (데이터 없음 ${missing}) · 단어 음성 ${withAu} · 예문 음성 ${withEx} · Part1 ${part1.length} (음성 ${part1.filter((p) => p.au).length}) · LC ${lc.length} (음성 ${lc.filter((p) => p.au).length} · 응답 퀴즈 ${lc.filter((p) => p.x).length}) · 혼동어 ${conf.length} · ${(js.length / 1024).toFixed(0)}KB`);
+const practice = { version, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks };
 const pjs = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_PRACTICE=" + JSON.stringify(practice) + ";\n";
 fs.writeFileSync(path.join(ROOT, "app/js/practice.js"), pjs);
 const nq = (xs) => xs.reduce((n, x) => n + x.qs.length, 0);

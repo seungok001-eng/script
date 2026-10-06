@@ -2,6 +2,9 @@
 (function () {
   "use strict";
   const D = window.VOCA_DATA;
+  // 하프 모의고사 전용 Part 2 표현은 LC 표현 목록·퀴즈에서 뺀다 (모의고사에서 처음 보도록). 모의고사는 D.lcAll 에서 찾는다
+  D.lcAll = D.lc || [];
+  D.lc = D.lcAll.filter((p) => !p.mock);
   const C = window.Core;
   const BRAND = { name: "보카핏 토익", short: "보카핏", en: "VocaFit TOEIC" };
   // 유료화 스위치: enabled=true 로 바꾸면 freeDays 이후 Day는 프리미엄(인앱결제 연결 지점: purchasePremium)
@@ -902,7 +905,7 @@
       ${cols ? `<div class="card blk"><div class="blk-h">빈출 표현</div>${cols}</div>` : ""}
       ${derivs ? `<div class="card blk"><div class="blk-h">파생어 · 품사 변화</div>${derivs}</div>` : ""}
       ${(w.para && w.para.length) || w.ant ? `<div class="card blk">${w.para && w.para.length ? `<div class="blk-h">Part 7 패러프레이징 (바꿔 쓰기)</div><div class="para-list">${w.para.map((p) => `<span class="en">${esc(p)}</span>`).join("")}</div>` : ""}${w.ant ? `<div class="blk-h" style="margin-top:${w.para && w.para.length ? 14 : 0}px">반의어</div><div class="en" style="font-weight:650">${esc(w.ant)}</div>` : ""}</div>` : ""}
-      ${o.noQuiz ? "" : `<div class="card blk" id="p5"><div class="blk-h">Part 5 어휘 문제</div><div class="en" style="font-size:16px;line-height:1.6">${esc(w.q.s).replace("-------", '<b style="letter-spacing:.1em">_______</b>')}</div>
+      ${o.noQuiz || !w.q ? "" : `<div class="card blk" id="p5"><div class="blk-h">Part 5 어휘 문제</div><div class="en" style="font-size:16px;line-height:1.6">${esc(w.q.s).replace("-------", '<b style="letter-spacing:.1em">_______</b>')}</div>
         <div class="opts" style="margin-top:12px">${w.q.o.map((x, i) => `<button class="opt" data-p5="${i}"><span class="on">${"ABCD"[i]}</span><span class="en">${esc(x)}</span></button>`).join("")}</div><div id="p5fb"></div></div>`}
       ${s && s.n ? `<p class="small muted" style="text-align:center;margin-top:18px">본 횟수 ${s.n}회 · 맞힘 ${s.ok} · 틀림 ${s.ng}${s.due && s.b ? ` · 다음 복습 ${fmtDate(s.due)}` : ""}</p>` : ""}`;
   }
@@ -1230,6 +1233,8 @@
   // ═════════════ 퀴즈 ═════════════
   const QUIZ_TITLES = { meaning: "알맞은 뜻은?", word: "알맞은 단어는?", listen: "듣고 알맞은 뜻 고르기", spell: "영어로 쓰세요", cloze: "빈칸에 알맞은 말은?", part5: "Part 5 · 빈칸에 알맞은 것은?", conf: "혼동 어휘 · 빈칸에 알맞은 것은?", para: "Part 7 · 문맥상 뜻이 가장 가까운 것은?" };
   function startQuiz(words, type, opt) {
+    // 모의고사 전용 Part 5 어휘 문제(w.mq)는 연습에 쓰지 않는다
+    if (type === "part5") words = words.filter((w) => w.q);
     if (!words.length) return toast("문제를 만들 단어가 없어요");
     const all = pool().length > 60 ? pool() : WORDS;
     let qs;
@@ -2482,10 +2487,10 @@
   function mockPages(m) {
     const pages = [];
     (m.p1 || []).forEach((id) => pages.push({ part: "p1", set: PR._by.get(id) }));
-    m.p2.forEach((id) => { const it = (D.lc || []).find((p) => p.id === id); if (it) pages.push({ part: "p2", item: it, q: C.makeResponse(it, C.rng(parseInt(id.slice(3), 10) * 7919 + m.n * 104729)) }); });
+    m.p2.forEach((id) => { const it = D.lcAll.find((p) => p.id === id); if (it) pages.push({ part: "p2", item: it, q: C.makeResponse(it, C.rng(parseInt(id.slice(3), 10) * 7919 + m.n * 104729)) }); });
     m.p3.forEach((id) => pages.push({ part: "p3", set: PR._by.get(id) }));
     m.p4.forEach((id) => pages.push({ part: "p4", set: PR._by.get(id) }));
-    (m.p5w || []).forEach((id) => { const w = BY_ID.get(id); if (w && w.q) pages.push({ part: "p5", word: w, q: { s: w.q.s, o: w.q.o, a: w.q.a, exp: w.q.k, type: "어휘" } }); });
+    (m.p5w || []).forEach((id) => { const w = BY_ID.get(id); const q = w && (w.mq || w.q); if (q) pages.push({ part: "p5", word: w, q: { s: q.s, o: q.o, a: q.a, exp: q.k, type: "어휘" } }); });
     (m.p5g || []).forEach((id) => { const g = PR._g.get(id); if (g) pages.push({ part: "p5", g: g.t, q: Object.assign({ type: g.t.title }, g.q) }); });
     m.p6.forEach((id) => pages.push({ part: "p6", set: PR._by.get(id) }));
     m.p7.forEach((id) => pages.push({ part: "p7", set: PR._by.get(id) }));

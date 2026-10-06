@@ -160,11 +160,24 @@ test("실제 데이터: 계획한 모든 단어 · 문제 정답 위치 · 예�
   assert.equal(new Set(data.words.map((w: { w: string }) => w.w.toLowerCase())).size, total, "표제어 중복 없음");
   for (const w of data.words) {
     assert.ok(C.starred(w.ex).length >= 1, `${w.w}: 예문 강조`);
-    assert.equal(w.q.o.length, 4, `${w.w}: 보기`);
-    assert.ok(w.q.a >= 0 && w.q.a < 4, `${w.w}: 정답`);
-    assert.ok(w.q.s.includes("-------"), `${w.w}: 빈칸`);
+    const q = w.q || w.mq; // mq: 하프 모의고사 전용 (단어 화면·연습에는 안 나옴)
+    assert.ok(!(w.q && w.mq), `${w.w}: q·mq 중 하나만`);
+    assert.equal(q.o.length, 4, `${w.w}: 보기`);
+    assert.ok(q.a >= 0 && q.a < 4, `${w.w}: 정답`);
+    assert.ok(q.s.includes("-------"), `${w.w}: 빈칸`);
   }
   assert.equal(data.days.length, plan.length);
+  // 모의고사 문항은 연습에서 빠진다: Part 2 표현(lc.mock)·Part 5 어휘(w.mq)는 모의고사 배정과 정확히 일치
+  const prSrc = fs.readFileSync(new URL("../toeic/app/js/practice.js", import.meta.url), "utf8");
+  const PR = JSON.parse(prSrc.slice(prSrc.indexOf("=") + 1).trim().replace(/;$/, ""));
+  if (PR.mocks.length) {
+    const p2 = new Set(PR.mocks.flatMap((m: any) => m.p2)), p5w = new Set(PR.mocks.flatMap((m: any) => m.p5w));
+    assert.deepEqual(new Set(data.lc.filter((p: any) => p.mock).map((p: any) => p.id)), p2);
+    assert.deepEqual(new Set(data.words.filter((w: any) => w.mq).map((w: any) => w.id)), p5w);
+    const used = new Set<string>();
+    for (const m of PR.mocks) for (const k of ["p1", "p2", "p3", "p4", "p5w", "p5g", "p6", "p7"]) for (const id of m[k] || []) { assert.ok(!used.has(id), `모의고사 문항 중복 ${id}`); used.add(id); }
+    for (const k of ["p1", "p3", "p4", "p6", "p7"]) for (const x of PR[k] || []) if (used.has(x.id)) assert.ok(x.mock, `${x.id}: 모의고사 문항은 연습에서 빠짐`);
+  }
 });
 
 test("어휘 진단: 난이도별로 고르게 뽑고, 찍기 보정 점수와 건너뛸 난이도를 계산한다", () => {

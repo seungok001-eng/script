@@ -214,6 +214,7 @@
   // type: meaning(영→한) · word(한→영) · listen(듣고 뜻) · spell(철자) · cloze(예문 빈칸) · part5
   function makeQuestion(type, word, all, rand) {
     const r = rand || Math.random;
+    if (type === "part5" && !word.q) type = "meaning"; // 모의고사 전용 문제가 있는 단어(mq)는 뜻 문제로
     if (type === "part5") {
       const q = word.q;
       return { type, word, prompt: q.s, options: q.o.slice(), answer: q.a, explain: q.k };
