@@ -15,7 +15,7 @@ function demoState(today, words) {
   const S = {
     v: 1,
     profile: { target: 800, examDate: null, daily: 40, start: today - 20 },
-    settings: { theme: "light", sfx: false, autoWord: false, autoEx: false, rate: 1, showKo: true, readKo: true, hideMeaning: false, sfx: false, remind: true, remindAt: "21:00" },
+    settings: { theme: "light", sfx: false, autoWord: false, autoEx: false, rate: 1, showKo: true, hideMeaning: false, sfx: false, remind: true, remindAt: "21:00" },
     words: {}, log: {}, tests: {}, premium: false,
   };
   const d = new Date((today + 30) * 86400000);

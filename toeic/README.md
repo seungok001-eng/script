@@ -102,7 +102,7 @@ npm run assets                              # (아이콘을 바꿨을 때) asset
 | `@capacitor/app` | 안드로이드 뒤로가기(학습 중이면 '그만할까요?', 홈이면 앱 최소화) |
 | `@capacitor/local-notifications` | 매일 학습 알림 (설정 화면에서 켜기·시간 지정) |
 | `@capacitor/filesystem` + `@capacitor/share` | 학습 기록 백업 파일 저장·공유 |
-| `@capacitor-community/text-to-speech` | 기기 TTS — 듣기 모드의 '한국어 뜻 읽어 주기', 음성 파일이 없을 때 대체 |
+| `@capacitor-community/text-to-speech` | 기기 TTS — 음성 파일이 없을 때 영어 문장 대체 재생 |
 
 체크리스트
 - 앱 ID `com.toeicfit.app`(스토어에 올린 뒤에는 못 바꿈), 이름 `토익핏` — `capacitor.config.json`, `app/js/app.js`의 `BRAND`, `manifest.webmanifest`에서 바꿀 수 있습니다.

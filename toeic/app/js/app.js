@@ -34,7 +34,7 @@
   const DEFAULT_STATE = () => ({
     v: 1,
     profile: null, // { target, examDate, daily, start }
-    settings: { theme: "system", autoWord: true, autoEx: false, rate: 1, showKo: true, readKo: true, hideMeaning: false, sfx: true, remind: false, remindAt: "21:00", lcScript: false },
+    settings: { theme: "system", autoWord: true, autoEx: false, rate: 1, showKo: true, hideMeaning: false, sfx: true, remind: false, remindAt: "21:00", lcScript: false },
     words: {},
     log: {},
     tests: {},
@@ -308,16 +308,12 @@
     el.preload = "auto";
     let token = 0;
     let pendingFin = null;
-    let koVoice = null;
     let enVoice = null;
     // 네이티브 앱: @capacitor-community/text-to-speech (기기 TTS 엔진)
     const NT = () => { const P = capPlugins(); return P && P.TextToSpeech; };
-    let nativeKo = false;
-    if (NT()) NT().getSupportedLanguages().then((r) => { nativeKo = (r.languages || []).some((l) => /^ko/i.test(l)); }).catch(() => {});
     function pickVoices() {
       if (!("speechSynthesis" in window)) return;
       const vs = speechSynthesis.getVoices();
-      koVoice = vs.find((v) => /ko(-|_)KR/i.test(v.lang)) || null;
       enVoice = vs.find((v) => /en(-|_)US/i.test(v.lang) && /Google|Samantha|Aria|Jenny|Natural/i.test(v.name)) || vs.find((v) => /en(-|_)US/i.test(v.lang)) || null;
     }
     if ("speechSynthesis" in window) {
@@ -335,16 +331,15 @@
     function tts(text, lang, my) {
       if (NT()) {
         if (my !== token) return Promise.resolve(false);
-        return NT().speak({ text, lang: lang || "en-US", rate: lang === "ko-KR" ? 1.0 : 0.95 * S.settings.rate, volume: 1, category: "playback" })
+        return NT().speak({ text, lang: lang || "en-US", rate: 0.95 * S.settings.rate, volume: 1, category: "playback" })
           .then(() => my === token, () => false);
       }
       return new Promise((res) => {
         if (!("speechSynthesis" in window) || my !== token) return res(false);
         const u = new SpeechSynthesisUtterance(text);
         u.lang = lang || "en-US";
-        if (lang === "ko-KR" && koVoice) u.voice = koVoice;
-        if (lang !== "ko-KR" && enVoice) u.voice = enVoice;
-        u.rate = lang === "ko-KR" ? 1.05 : 0.95 * S.settings.rate;
+        if (enVoice) u.voice = enVoice;
+        u.rate = 0.95 * S.settings.rate;
         let done = false;
         const fin = (ok) => { if (!done) { done = true; res(ok); } };
         u.onend = () => fin(true);
@@ -391,10 +386,8 @@
     }
     function word(w, btn) { return play(w.au ? `w/${w.id}.mp3` : null, w.w, { btn }); }
     function example(w, btn) { return play(w.exAu ? `s/${w.id}.mp3` : null, C.plainEx(w.ex), { btn }); }
-    function ko(text) { const my = token; return hasKo() ? tts(text, "ko-KR", my) : Promise.resolve(false); }
-    function hasKo() { return NT() ? nativeKo : !!koVoice; }
     function current() { return token; }
-    return { play, word, example, ko, stop, hasKo, current };
+    return { play, word, example, stop, current };
   })();
   // 효과음 (Web Audio로 짧게 만든다 — 파일 없음)
   const Sfx = (function () {
@@ -851,7 +844,7 @@
         <div class="stack-bar" style="margin-top:12px"><i style="width:${mine.length ? (sum.mastered / mine.length) * 100 : 0}%;background:var(--ok)"></i><i style="width:${mine.length ? (sum.learning / mine.length) * 100 : 0}%;background:var(--accent)"></i></div></div>
       <div class="section"><div class="section-h"><h2>학습 방법</h2></div>
         <div class="grid3">${modes.map(([k, l, ic, c]) => `<button class="tile" data-mode="${k}" style="align-items:center;text-align:center;padding:14px 8px"><span class="tico ${c}">${ico(ic)}</span><b style="font-size:13.5px">${l}</b></button>`).join("")}</div>
-        <button class="task" data-mode="listen" style="margin-top:10px"><span class="tico c-green">${ico("headphones")}</span><span class="spacer"><div class="tt">듣기 모드</div><div class="td">단어 → 뜻 → 예문 자동 재생 · 출퇴근길에</div></span>${ico("right")}</button>
+        <button class="task" data-mode="listen" style="margin-top:10px"><span class="tico c-green">${ico("headphones")}</span><span class="spacer"><div class="tt">듣기 모드</div><div class="td">단어 → 예문 자동 재생 · 출퇴근길에</div></span>${ico("right")}</button>
         <button class="task" data-mode="test" style="margin-top:10px"><span class="tico c-red">${ico("flag")}</span><span class="spacer"><div class="tt">DAY ${pad(d)} 테스트</div><div class="td">20문제 · 80점 이상이면 통과${test ? ` · 최고 ${test.best}점` : ""}</div></span>${ico("right")}</button>
       </div>
       <div class="section"><div class="section-h"><h2>단어 ${list.length}개</h2><button data-toggle-hide>${S.settings.hideMeaning ? "뜻 보이기" : "뜻 가리기"}</button></div>
@@ -1388,14 +1381,14 @@
   // ═════════════ 듣기 모드 ═════════════
   function startListen(words, opt) {
     if (!words.length) return toast("들을 단어가 없어요");
-    session = { kind: "listen", title: opt.title, list: words.slice(), i: 0, playing: false, phase: "", from: location.hash, showMean: true, withEx: true, readKo: S.settings.readKo };
+    session = { kind: "listen", title: opt.title, list: words.slice(), i: 0, playing: false, phase: "", from: location.hash, showMean: true, withEx: true };
     enterStudy();
   }
   function vListen() {
     const s = session;
     const w = s.list[s.i];
     $app.innerHTML = `<div class="study">${studyTop(s.i, s.list.length)}
-      <div class="small muted" style="text-align:center">${esc(s.title)} · 단어 → 뜻 → 예문 순서로 자동 재생</div>
+      <div class="small muted" style="text-align:center">${esc(s.title)} · 단어(두 번) → 예문 순서로 자동 재생 · 뜻은 화면으로</div>
       <div class="player"><span class="badge tier-${w.tier}">${C.TIER_NAMES[w.tier]}</span>
         <div class="pw en">${esc(w.w)}</div>${w.ipa ? `<div class="muted">${esc(w.ipa)}</div>` : ""}
         <div class="pm" style="margin-top:12px">${s.showMean ? esc(C.meaningText(w, 3)) : '<span class="muted small">뜻 가림</span>'}</div>
@@ -1405,7 +1398,6 @@
       <div class="study-foot"><div class="set-group">
         <label class="set-row"><span class="sl"><b>뜻 보기</b></span><span class="switch"><input type="checkbox" data-opt="showMean" ${s.showMean ? "checked" : ""}/><span></span></span></label>
         <label class="set-row"><span class="sl"><b>예문까지 듣기</b></span><span class="switch"><input type="checkbox" data-opt="withEx" ${s.withEx ? "checked" : ""}/><span></span></span></label>
-        <label class="set-row"><span class="sl"><b>한국어 뜻 읽어 주기</b><span>${Sound.hasKo() ? "기기의 한국어 음성으로 읽어요" : "이 기기에는 한국어 음성이 없어요"}</span></span><span class="switch"><input type="checkbox" data-opt="readKo" ${s.readKo && Sound.hasKo() ? "checked" : ""} ${Sound.hasKo() ? "" : "disabled"}/><span></span></span></label>
       </div></div></div>`;
     bindExit();
     $app.querySelector("[data-toggle]").addEventListener("click", () => { s.playing ? pauseListen() : playListen(); });
@@ -1413,7 +1405,6 @@
     $app.querySelector("[data-next]").addEventListener("click", () => { if (s.i + 1 < s.list.length) { s.i += 1; restartListen(); } });
     $app.querySelectorAll("[data-opt]").forEach((c) => c.addEventListener("change", () => {
       s[c.dataset.opt] = c.checked;
-      if (c.dataset.opt === "readKo") { S.settings.readKo = c.checked; save(); }
       vListen();
     }));
     keyHandler = (e) => {
@@ -1457,8 +1448,7 @@
       if (!alive()) break;
       await wait(400);
       if (!alive()) break;
-      if (s.readKo && Sound.hasKo()) await Sound.ko(w.m.slice(0, 2).join(", "));
-      else await wait(1200);
+      await wait(1200); // 화면의 뜻을 보며 떠올릴 시간 (한국어 음성은 읽지 않는다)
       if (!alive()) break;
       if (s.withEx) {
         await wait(400);
