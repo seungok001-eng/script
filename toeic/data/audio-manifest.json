@@ -1285,6 +1285,7 @@
 },
 "fm/fm1-p4-01-07.mp3": {
 "br": "32k",
+"say": "Please call me back at 5 5 5, 0 1 3 6 by five o'clock today so I can finalize the schedule with our crew.",
 "src": "kokoro",
 "text": "Please call me back at 555-0136 by five o'clock today so I can finalize the schedule with our crew.",
 "voice": "bf_alice"
@@ -1693,6 +1694,7 @@
 },
 "fm/fm1-p4-10-08.mp3": {
 "br": "32k",
+"say": "For more information, call the parks department at 5 5 5, 0 1 7 2.",
 "src": "kokoro",
 "text": "For more information, call the parks department at 555-0172.",
 "voice": "af_heart"
@@ -3388,6 +3390,240 @@
 "src": "kokoro",
 "text": "The first fifty people to arrive will receive a free set of grilling tools.",
 "voice": "am_liam"
+},
+"fm/fm3-p2-01-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The plant manager, I believe.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-01-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Around ten in the morning.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-01-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "It's a large factory.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-01-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Who's showing the investors around the factory tomorrow?",
+"voice": "am_liam"
+},
+"fm/fm3-p2-02-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "About two hundred miles.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-02-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I sent it yesterday.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-02-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The name's printed at the bottom of the form.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-02-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Who should I send my mileage log to?",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-03-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "A round-trip ticket, please.",
+"voice": "af_heart"
+},
+"fm/fm3-p2-03-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Every hour on the half hour.",
+"voice": "af_heart"
+},
+"fm/fm3-p2-03-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, I left early.",
+"voice": "af_heart"
+},
+"fm/fm3-p2-03-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "What time does the ferry to Bell Island leave?",
+"voice": "bm_fable"
+},
+"fm/fm3-p2-04-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, it was assigned to me.",
+"voice": "af_heart"
+},
+"fm/fm3-p2-04-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The organizers haven't sent the floor plan yet.",
+"voice": "af_heart"
+},
+"fm/fm3-p2-04-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "About two thousand visitors.",
+"voice": "af_heart"
+},
+"fm/fm3-p2-04-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Which booth number were we assigned at the expo?",
+"voice": "bm_fable"
+},
+"fm/fm3-p2-05-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "At the beginning of June.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-05-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "On the top floor.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-05-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Several kinds of flowers.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-05-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "When is the rooftop garden going to open to employees?",
+"voice": "am_liam"
+},
+"fm/fm3-p2-06-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, I heard about it.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-06-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The application form is only two pages.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-06-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "These things can take over a year.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-06-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "When are we supposed to hear back about the patent application?",
+"voice": "am_liam"
+},
+"fm/fm3-p2-07-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Every Thursday morning.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-07-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Some cardboard boxes.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-07-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Next to the loading dock.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-07-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Where are the recycling bins for cardboard?",
+"voice": "af_heart"
+},
+"fm/fm3-p2-08-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Isn't it still under warranty?",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-08-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "It lasts about eight hours.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-08-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "He placed it on the shelf.",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-08-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Where can I get my laptop's battery replaced?",
+"voice": "am_liam"
+},
+"fm/fm3-p2-09-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "In the recording studio.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-09-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Our guest had a scheduling conflict.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-09-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, every Thursday.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-09-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Why was the podcast recording moved to Thursday?",
+"voice": "bf_alice"
+},
+"fm/fm3-p2-10-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Mei is still compiling their comments.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-10-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "In recyclable paper.",
+"voice": "am_liam"
+},
+"fm/fm3-p2-10-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "How did the focus group react to the new packaging?",
+"voice": "af_heart"
 },
 "lc/001-a.mp3": {
 "br": "32k",
@@ -15409,6 +15645,7 @@
 },
 "lc/693.mp3": {
 "br": "32k",
+"say": "Please call me back at 5 5 5, 0 1 4 2 at your earliest convenience.",
 "src": "kokoro",
 "text": "Please call me back at 555-0142 at your earliest convenience.",
 "voice": "af_heart"
@@ -15463,6 +15700,7 @@
 },
 "lc/702.mp3": {
 "br": "32k",
+"say": "For urgent matters, please call our after-hours line at 5 5 5, 0 1 9 9.",
 "src": "kokoro",
 "text": "For urgent matters, please call our after-hours line at 555-0199.",
 "voice": "af_heart"
@@ -15727,6 +15965,7 @@
 },
 "lc/746.mp3": {
 "br": "32k",
+"say": "Listeners can call in with questions for our guest at 5 5 5, 0 1 8 6.",
 "src": "kokoro",
 "text": "Listeners can call in with questions for our guest at 555-0186.",
 "voice": "bf_alice"
@@ -19471,6 +19710,7 @@
 },
 "p34/p3-043-02.mp3": {
 "br": "32k",
+"say": "Hi, I'm a member of your rewards program, and I'd like to check my point balance. My member number is 4 0 7 1, 2 2 3 6.",
 "src": "kokoro",
 "text": "Hi, I'm a member of your rewards program, and I'd like to check my point balance. My member number is 4071-2236.",
 "voice": "af_heart"
@@ -20426,7 +20666,7 @@
 "p34/p3-062-04.mp3": {
 "br": "32k",
 "src": "kokoro",
-"text": "Sure, it's 4-8-1-7-7. We ordered twelve black chairs, but the ones we received are gray.",
+"text": "Sure, it's four, eight, one, seven, seven. We ordered twelve black chairs, but the ones we received are gray.",
 "voice": "bf_alice"
 },
 "p34/p3-062-05.mp3": {
@@ -21811,6 +22051,7 @@
 },
 "p34/p4-001-07.mp3": {
 "br": "32k",
+"say": "Just call me back at 5 5 5, 0 1 4 2 and let me know, and I'll have it ready for you.",
 "src": "kokoro",
 "text": "Just call me back at 555-0142 and let me know, and I'll have it ready for you.",
 "voice": "am_liam"
@@ -21985,6 +22226,7 @@
 },
 "p34/p4-005-07.mp3": {
 "br": "32k",
+"say": "Please call me back at 5 5 5, 0 1 8 7 to let me know which time works best for you.",
 "src": "kokoro",
 "text": "Please call me back at 555-0187 to let me know which time works best for you.",
 "voice": "am_liam"
@@ -23143,6 +23385,7 @@
 },
 "p34/p4-031-06.mp3": {
 "br": "32k",
+"say": "Just call 5 5 5, 0 1 4 2 to book an appointment.",
 "src": "kokoro",
 "text": "Just call 555-0142 to book an appointment.",
 "voice": "bf_alice"
@@ -23797,6 +24040,7 @@
 },
 "p34/p4-045-08.mp3": {
 "br": "32k",
+"say": "Call our box office at 5 5 5, 0 1 8 7, and our staff will help you find the package that suits your schedule.",
 "src": "kokoro",
 "text": "Call our box office at 555-0187, and our staff will help you find the package that suits your schedule.",
 "voice": "bm_fable"
