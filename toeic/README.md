@@ -27,11 +27,13 @@
 toeic/
   app/                  ← 앱 그 자체 (Capacitor webDir, 정적 호스팅 루트)
     index.html  css/app.css  js/core.js(로직)  js/app.js(화면)  js/data.js(생성됨)  js/practice.js(실전 문제, 생성됨 — 실전 화면에서 처음 불러옴)
-    audio/w/{id}.mp3 단어 · audio/s/{id}.mp3 예문 · audio/p1/NNN.mp3 Part 1 · audio/p34/<id>-NN.mp3 Part 3·4 문장 · audio/lc/NNN.mp3 LC 한 사람의 말 · NNN-q/-a/-x1/-x2.mp3 LC 대화의 질문·정답·오답
+    audio/w/{id}.mp3 단어 · audio/s/{id}.mp3 예문 · audio/p1/NNN.mp3 Part 1 · audio/p34/<id>-NN.mp3 Part 3·4 문장 · audio/p1q/<id>-N.mp3 Part 1 사진 문제 보기 · audio/lc/NNN.mp3 LC 한 사람의 말 · NNN-q/-a/-x1/-x2.mp3 LC 대화의 질문·정답·오답
+    images/p1/<id>.webp  Part 1 사진 (토익 사진 공방에서 넣음, 960×720)
     fonts/ (Pretendard 서브셋)  icons/  manifest.webmanifest  sw.js
   data/
     plan.json           90일 × 40단어 표제어 계획 (기본/심화/완성)
     days/day-XX.json    단어 원본 데이터 (SPEC.md 규격)
+    part1.json          Part 1 사진 문제 120개 (보기·정답·해석·해설 + 사진 생성 프롬프트·검수 목록)
     extras.json         Part 1 표현 · LC 표현 · 혼동 어휘
     practice/           실전 문제 원본: p3.json p4.json grammar.json p6.json p7.json (모의고사 문항은 build_data.mjs 가 고정 시드로 배정)
     ipa.json            발음기호 (CMU 사전에서 생성)
@@ -44,6 +46,9 @@ toeic/
     build_audio_packs.py (선택) 파일 수 제한이 있는 웹 호스팅용 음성 묶음(Day별 + p1 + lc) + js/audio-packs.js
     store_shots.mjs     스토어 스크린샷(액자 합성) 생성
     feature_graphic.mjs Google Play 대표 이미지(1024×500) 생성
+  tools/
+    photo-forge.cmd     토익 사진 공방 실행 (Windows) — 사용법은 tools/PHOTO-FORGE.md
+    forge/              사진 공방 (교재 공방 포크, 포트 8767). 플로우로 Part 1 사진 생성 → 검수 → app/images/p1
 ```
 
 ## 실행 (PC)
