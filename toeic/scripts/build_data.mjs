@@ -123,7 +123,7 @@ function shuffled(arr, seed) {
   for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
   return a;
 }
-const MOCKS = 4;
+const MOCKS = 5;
 const take = (list, per, seed) => { const s = shuffled(list, seed); return Array.from({ length: MOCKS }, (_, m) => s.slice(m * per, (m + 1) * per)); };
 const mocks = [];
 const enough = pr.p3.length >= 24 && pr.p4.length >= 16;

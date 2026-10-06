@@ -2249,6 +2249,906 @@
 "text": "Could you tell me where the fitting rooms are?",
 "voice": "af_heart"
 },
+"fm/fm2-p2-24-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, I trained there.",
+"voice": "am_liam"
+},
+"fm/fm2-p2-24-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Only twelve people have registered.",
+"voice": "am_liam"
+},
+"fm/fm2-p2-24-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'd like a larger size, please.",
+"voice": "am_liam"
+},
+"fm/fm2-p2-24-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Why don't we move the training to a larger room?",
+"voice": "af_heart"
+},
+"fm/fm2-p2-25-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'll be driving to work that day.",
+"voice": "am_liam"
+},
+"fm/fm2-p2-25-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The parking fee went up.",
+"voice": "am_liam"
+},
+"fm/fm2-p2-25-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I passed the exam.",
+"voice": "am_liam"
+},
+"fm/fm2-p2-25-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I was wondering if I could borrow your parking pass on Friday.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-01-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Excuse me. I'm repainting my kitchen, and I'd like a gallon of paint in this color. I brought a sample chip from another store.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-01-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Sure. Our scanner can match almost any color. It only takes a couple of minutes.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-01-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Great. Also, my kitchen walls get a lot of steam from cooking. Is there a type of paint that holds up better in kitchens?",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-01-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, I'd recommend our semi-gloss finish. It stands up well to moisture, so it's popular for kitchens and bathrooms.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-01-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That sounds perfect. How much is it?",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-01-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "It's thirty-eight dollars a gallon. But if you join our rewards program today, you'll get fifteen percent off this purchase.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-01-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Sure, why not? What do I need to do?",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-01-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Just type your name and e-mail address into this tablet while I mix your paint.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-02-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Rosa, the truck from Brennan Foods just pulled into the yard. They weren't supposed to get here until two o'clock.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-02-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That's almost three hours early. And all four dock doors are busy with the furniture shipment right now.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-02-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Hi, I'm the Brennan driver. Sorry for showing up early, but traffic was light. I have another pickup across town at one, so I can't wait around too long.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-02-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I understand. Jake, how long until door two is free?",
+"voice": "af_heart"
+},
+"fm/fm2-p3-02-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Maybe forty minutes. The crew there is almost finished.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-02-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "OK. Since this load is refrigerated, it has to go straight into cold storage. Jake, could you pull two people from the returns area to help unload once door two opens?",
+"voice": "af_heart"
+},
+"fm/fm2-p3-02-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Sure, I'll go get them now.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-02-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Thanks. I'll wait in my truck until you're ready.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-03-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Martin, have you looked at how the new check-in tablets are working out? Patients are still lining up at the front desk.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-03-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I have. A lot of our older patients aren't comfortable typing in their insurance details, so they come to the desk anyway.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-03-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That's what I was afraid of. We spent quite a bit on those tablets.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-03-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Well, I don't think the tablets themselves are the problem. It's just that nobody shows patients how to use them.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-03-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "You might be right. What if someone stood near the entrance in the mornings to walk people through the process?",
+"voice": "af_heart"
+},
+"fm/fm2-p3-03-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Our receptionists are already stretched thin.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-03-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Hmm. Then let's find out if any of our volunteers could help. I'll e-mail the volunteer coordinator this afternoon.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-04-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Thanks for showing me around, Mr. Dunn. As I mentioned on the phone, we're holding a retirement dinner for our company's founder on May tenth.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-04-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Congratulations to him. How many guests are you expecting?",
+"voice": "am_liam"
+},
+"fm/fm2-p3-04-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "We sent out a hundred invitations. Seventy people have replied so far, but I'm sure more will.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-04-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Then you should plan for the full hundred. Will you need a dance floor? If so, it takes up the space of about twenty seats.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-04-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, we've hired a jazz band, so people will definitely want to dance.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-04-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "All right. The rental fee also includes tables, linens, and a sound system for the band.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-04-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Perfect. Our budget is tight, so I'll take the smallest room that has enough space for everyone.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-04-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Sounds good. I'll draw up the contract and e-mail it to you this afternoon.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-05-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Ms. Abara, I've finished walking through your house, and I think we can list it for sale by the end of the month.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-05-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That's great news. Do you think I need to make any changes before then?",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-05-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Mostly small things. The living room would look much bigger with some of the furniture removed, and the front door could use a fresh coat of paint.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-05-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I can handle the painting myself. But where would I put the furniture? I'm living here until June.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-05-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Many of my clients rent a storage unit for a couple of months. There's one on Pine Road with reasonable rates.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-05-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Hmm, I'd rather not pay for that. My brother has a garage.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-05-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Great. Then I'd like to schedule a photographer to take pictures for the listing. How does next Wednesday sound?",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-05-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'll be at work that day, but I can leave a key with my neighbor so the photographer can get in.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-06-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Thanks for joining us, Mr. Okonkwo. Hana and I wanted to go over the cover options for your cookbook before we send it to the printer.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-06-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "My pleasure. I have to say, I liked the second design the most, the one with the photo of the market stalls.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-06-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That's our favorite as well. The only issue is that the photographer is asking for a higher fee than we expected to use that image on a cover.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-06-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "How much higher?",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-06-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "About eight hundred dollars more. That would put us over our design budget.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-06-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "One option is for Hana to recreate a similar scene as an illustration. It would keep the same feel.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-06-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I like that idea, but would it delay the release? My bookstore tour starts in October.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-06-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Not at all. I could have a draft ready by Friday.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-06-09.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Then let's go with that.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-07-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Hi, I'd like a round-trip ticket to Kestrel Island for today, please.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-07-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Sure. Will you be bringing that bicycle with you?",
+"voice": "af_heart"
+},
+"fm/fm2-p3-07-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes. I'm meeting some friends there for a cycling tour around the island.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-07-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Then you'll need to take a sailing that carries bikes. Not all of our boats do.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-07-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "OK. Our tour starts at one o'clock near the terminal on the island, so I need to get there before then.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-07-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "No problem. That'll be fifteen dollars round-trip, plus five for the bicycle.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-07-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Here's my credit card.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-07-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Thank you. And when you come back, keep in mind that the last boat that takes bikes leaves the island at six.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-08-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Neil, I was reconciling last month's accounts, and it looks like we paid Copperleaf Printing twice for the same invoice.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-08-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Really? How did that happen?",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-08-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The invoice was e-mailed to both of us, and we each entered it into the payment system. It was a little over three thousand dollars.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-08-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Oh no. I should have checked whether it had already been entered. Have you contacted Copperleaf yet?",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-08-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Not yet. I wanted to talk to you first. We could ask for a refund, or they could apply the extra payment to our next order.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-08-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "We order brochures from them every quarter, so a credit makes more sense.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-08-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Agreed. I'll call their billing department this afternoon. And going forward, maybe vendors should send invoices to just one address.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-08-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Good idea. I'll set up a shared accounts-payable inbox tomorrow.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-09-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Hi, I'm taking the intermediate Spanish class on Tuesday evenings, but I'm finding it a little too difficult. Is it possible to switch to a lower level?",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-09-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Sure. We have a beginner class on Thursdays at seven. It's the same length, eight weeks.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-09-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Thursdays work for me. Will I have to pay anything extra?",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-09-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "No, the tuition is the same, so there's no charge for switching. But you'll need a different textbook.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-09-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Oh, OK. Do you sell it here?",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-09-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "We do. It's twenty-five dollars, and students get ten percent off here at the front desk.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-09-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Great, then I'll buy one now.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-09-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Here you go. And I'll let the Thursday instructor know you'll be joining the class.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-10-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Hi, this is Paul from the IT help desk. You called about a problem in Conference Room B?",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-10-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, thanks for coming so fast. The screen keeps going black whenever I connect my laptop, and I have a video call with a client in Seoul at ten.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-10-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Let me take a look. Hmm, the cable on this table is damaged. That's probably what's causing it.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-10-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Do you have a replacement?",
+"voice": "af_heart"
+},
+"fm/fm2-p3-10-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Not with me. They're kept in the storeroom on the fifth floor, and it might take a while to find the right one.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-10-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "It's nine fifty-five.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-10-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Right. Then let's move you to Room D across the hall. Its system was upgraded last week, and it connects to any laptop wirelessly.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-10-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That would be perfect. Could you help me connect, though? I've never used a wireless setup.",
+"voice": "af_heart"
+},
+"fm/fm2-p3-10-09.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Of course. Bring your laptop, and I'll walk you through it.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-11-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Felipe, I got the shipping quotes for the pump parts going to our customer in Monterrey. I put them into a chart for you.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-11-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Thanks. Falcon Freight is the cheapest by a good margin. Can they meet our deadline?",
+"voice": "am_liam"
+},
+"fm/fm2-p3-11-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That's the problem. They need ten business days, and the customer wants the parts within a week.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-11-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "What about Norrland Cargo? Their price is pretty reasonable, too.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-11-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Remember, they're the company that damaged our shipment of valves last spring. The customer was really unhappy.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-11-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Right, I'd forgotten about that. Then let's go with whichever of the other two is less expensive.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-11-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "OK. I'll book it this morning so the parts can go out tomorrow.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-12-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Thank you for calling Horizon Travel. This is Owen.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-12-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Hi, Owen. My name is Grace Tanaka. I booked a five-day package tour to Lisbon through your agency last week.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-12-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, Ms. Tanaka, I have your booking right here. How can I help?",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-12-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'd like to stay one more night at the end of the trip. Could I add a night at the same hotel?",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-12-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Let me check. Yes, they have a room available. It'll be an extra 140 dollars, and I'll move your return flight to the following day.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-12-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Is there a fee for changing the flight?",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-12-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Normally, there's a fifty-dollar fee, but your package includes one free change.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-12-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Oh, that's good to know.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-12-09.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'll e-mail you an updated itinerary within the hour. Please check that all the details are correct.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-13-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Dr. Patel, a team from Corvale University has asked to rent time on our electron microscope next month. They'd pay by the hour.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-13-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That could bring in some useful income. But our own schedule for it is already pretty full, isn't it?",
+"voice": "am_liam"
+},
+"fm/fm2-p3-13-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "It is during the day. But nobody has booked it on Tuesday or Thursday evenings for the past few months.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-13-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That's good to know, Tomas. Would someone from our staff need to be there with them?",
+"voice": "am_liam"
+},
+"fm/fm2-p3-13-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, for safety reasons, a trained technician has to supervise every session. I could cover the evenings, as long as it counts as overtime.",
+"voice": "bm_fable"
+},
+"fm/fm2-p3-13-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That's fine. The rental fee should more than cover your extra hours.",
+"voice": "am_liam"
+},
+"fm/fm2-p3-13-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Great. Then I'll draft an agreement with the evening time slots and the hourly rate.",
+"voice": "bf_alice"
+},
+"fm/fm2-p3-13-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Good. Please send it to our legal department for review before it goes to Corvale.",
+"voice": "am_liam"
+},
+"fm/fm2-p4-01-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Good morning, passengers, and welcome aboard the Bayline Ferry to Marlow Island.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-01-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Our crossing today will take approximately forty minutes, and the water is calm, so we expect a smooth ride.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-01-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Hot and cold drinks, sandwiches, and pastries are available at the snack bar on the lower deck.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-01-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "For your safety, please remain seated while the ferry is leaving the dock.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-01-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Life jackets can be found under every seat.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-01-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Please note that passengers are not permitted on the vehicle deck during the trip.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-01-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Drivers will be asked to return to their cars about ten minutes before we arrive.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-01-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Thank you for traveling with Bayline, and enjoy the view.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-02-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Thanks for coming, everyone. Let's start by looking at the guest feedback we received last quarter.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-02-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "As you can see, the largest number of complaints was about long waits at check-in.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-02-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "We've already dealt with that by installing self-service kiosks in the lobby, and the lines have gotten much shorter.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-02-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "So today, I'd like to concentrate on the issue that came in second.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-02-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Our current equipment is over eight years old, and it simply can't handle the number of devices guests bring these days.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-02-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I've asked two companies to submit proposals for upgrading the system.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-02-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Before we choose one, I need each department head to tell me which areas of the hotel have the worst problems.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-02-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Please send me that information by Wednesday.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-03-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Planning a home improvement project this spring?",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-03-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Before you spend hundreds of dollars on tools you might use only once, stop by the new rental center at Corley Hardware.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-03-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "We rent everything from pressure washers to tile saws, by the hour, the day, or the week.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-03-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "A floor sander, for example, rents for just twenty-five dollars a day.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-03-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "That's less than a dinner for two.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-03-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "And if you're not sure how to use a tool, our staff will give you a free demonstration before you take it home.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-03-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "This month only, show your Corley Rewards card and get your second rental day free.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-03-08.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Corley Hardware, on Route 12, next to Pinewood Mall.",
+"voice": "bm_fable"
+},
+"fm/fm2-p4-04-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "In local news, the Dunmore Public Library announced today that it will stop charging late fees on overdue books beginning July first.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-04-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Library director Alan Whitcomb explained that the fees bring in very little money each year, yet they were keeping many residents from using the library at all.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-04-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Last year, the library tested the policy at two of its seven branches.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-04-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "According to Mr. Whitcomb, books at those branches were actually returned sooner on average than before.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-04-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Patrons will still have to pay for items that are lost or damaged.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-04-06.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "In addition, any fines that residents currently owe will be cleared, as long as they visit a branch before the end of June.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-04-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "For more on this and other stories, visit our Web site.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-05-01.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Hello, Mr. Castillo. This is Andrea from Pemberton Uniforms, calling about the order for your cafe staff.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-05-02.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'm happy to say that the embroidery with your cafe's logo came out beautifully.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-05-03.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "However, I'm afraid there's going to be a delay with one part of your order.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-05-04.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Our supplier ran out of the item you ordered the most of, and they won't have more until the end of the month.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-05-05.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Everything else is packed and ready to go.",
+"voice": "af_heart"
+},
+"fm/fm2-p4-05-07.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "In that case, we'll cover the shipping cost for the second delivery.",
+"voice": "af_heart"
+},
 "lc/001-a.mp3": {
 "br": "32k",
 "src": "kokoro",
