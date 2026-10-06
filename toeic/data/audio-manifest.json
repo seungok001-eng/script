@@ -12180,924 +12180,1108 @@
 "voice": "af_heart"
 },
 "lc/720.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "We still have your old address on file, so please call us to update it.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/721.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "You're listening to Morning Drive on KBNT, 98.5 FM.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/722.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Coming up next, we'll talk with local chef Maria Ortiz about her new cookbook.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/723.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "In local news, the city council has approved plans for a new public library downtown.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/724.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Drivers heading into the city should expect delays on the Lincoln Bridge this morning.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/725.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Motorists should be aware of a lane closure on Route 6 near Maple Avenue.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/726.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "If possible, take an alternate route, such as Fairmont Road.",
 "voice": "af_heart"
 },
 "lc/727.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Traffic is crawling along Route 9 because of an accident near Exit 12.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/728.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Expect heavier traffic than usual during the evening rush hour because of tonight's baseball game.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/729.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The forecast calls for sunny skies this afternoon, with a high of 75 degrees.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/730.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "There's a chance of showers later this evening, so you might want to bring an umbrella.",
-"voice": "am_michael"
-},
-"lc/731.mp3": {
-"src": "kokoro",
-"text": "Temperatures will drop below freezing overnight, so watch out for icy roads.",
-"voice": "am_michael"
-},
-"lc/732.mp3": {
-"src": "kokoro",
-"text": "A severe storm warning is in effect for the entire county until 8 p.m.",
-"voice": "bf_emma"
-},
-"lc/733.mp3": {
-"src": "kokoro",
-"text": "The rain should clear up by Saturday morning, just in time for the street festival.",
-"voice": "bm_george"
-},
-"lc/734.mp3": {
-"src": "kokoro",
-"text": "In business news, Halvorsen Motors announced plans to open a second factory in Ohio.",
-"voice": "af_bella"
-},
-"lc/735.mp3": {
-"src": "kokoro",
-"text": "The merger between Crestline Foods and Barlow Farms is expected to be finalized next month.",
-"voice": "bm_george"
-},
-"lc/736.mp3": {
-"src": "kokoro",
-"text": "Telmar Electronics has agreed to acquire the software start-up Brightpath for $40 million.",
-"voice": "am_michael"
-},
-"lc/737.mp3": {
-"src": "kokoro",
-"text": "Shares of Norvell Inc. rose 6 percent after the company reported strong quarterly earnings.",
-"voice": "af_bella"
-},
-"lc/738.mp3": {
-"src": "kokoro",
-"text": "According to a new report, home prices in the region rose 4 percent last year.",
-"voice": "am_michael"
-},
-"lc/739.mp3": {
-"src": "kokoro",
-"text": "Brenner Foods has named Linda Marsh as its new chief executive officer.",
-"voice": "af_bella"
-},
-"lc/740.mp3": {
-"src": "kokoro",
-"text": "The city will break ground on the new sports complex next month.",
-"voice": "af_bella"
-},
-"lc/741.mp3": {
-"src": "kokoro",
-"text": "Traffic on the Oak Street Bridge is back to normal after three months of repairs.",
 "voice": "af_heart"
 },
+"lc/731.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Temperatures will drop below freezing overnight, so watch out for icy roads.",
+"voice": "af_heart"
+},
+"lc/732.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "A severe storm warning is in effect for the entire county until 8 p.m.",
+"voice": "bf_alice"
+},
+"lc/733.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The rain should clear up by Saturday morning, just in time for the street festival.",
+"voice": "bm_fable"
+},
+"lc/734.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "In business news, Halvorsen Motors announced plans to open a second factory in Ohio.",
+"voice": "am_liam"
+},
+"lc/735.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The merger between Crestline Foods and Barlow Farms is expected to be finalized next month.",
+"voice": "bm_fable"
+},
+"lc/736.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Telmar Electronics has agreed to acquire the software start-up Brightpath for $40 million.",
+"voice": "af_heart"
+},
+"lc/737.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Shares of Norvell Inc. rose 6 percent after the company reported strong quarterly earnings.",
+"voice": "am_liam"
+},
+"lc/738.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "According to a new report, home prices in the region rose 4 percent last year.",
+"voice": "af_heart"
+},
+"lc/739.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Brenner Foods has named Linda Marsh as its new chief executive officer.",
+"voice": "am_liam"
+},
+"lc/740.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The city will break ground on the new sports complex next month.",
+"voice": "am_liam"
+},
+"lc/741.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Traffic on the Oak Street Bridge is back to normal after three months of repairs.",
+"voice": "am_liam"
+},
 "lc/742.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The new subway line is expected to open to riders next spring.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/743.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Let's check in with Dana Kim for an update on the morning traffic.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/744.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "That's it for the traffic report; I'll be back with another update in fifteen minutes.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/745.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "We'll be right back after these messages from our sponsors.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/746.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Listeners can call in with questions for our guest at 555-0186.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/747.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Joining us in the studio today is mystery writer Kenji Mori.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/748.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Residents are advised to conserve water until the pipe repairs are finished.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/749.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Crews are working to restore power to about 3,000 homes in Westfield.",
 "voice": "af_heart"
 },
 "lc/750.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Proceeds from Saturday's charity run will go to Riverside Children's Hospital.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/751.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Good morning, everyone. My name is Ellen, and I'll be your guide today.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/752.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Before we get started, please make sure your phones are switched to silent.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/753.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Please stay with the group at all times; the factory is large and easy to get lost in.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/754.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "For your safety, please put on the goggles and hard hats we've provided.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/755.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The area behind the red line is for authorized personnel only.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/756.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Photography is not permitted in this gallery, as the paintings are sensitive to light.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/757.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "On your left, you'll see the original city hall, built in 1885.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/758.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "This stone bridge dates back to the early 1800s.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/759.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Now let's make our way to the packaging area at the end of the hall.",
 "voice": "af_heart"
 },
 "lc/760.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Up ahead is the main assembly line, where the engines are installed.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/761.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "More than two hundred pieces of pottery are on display in this wing.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/762.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Our new exhibit on ancient Egypt opens to the public next month.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/763.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Guided tours leave from the main lobby every hour on the hour.",
 "voice": "af_heart"
 },
 "lc/764.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The tour will last about ninety minutes, including a short break.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/765.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "After lunch, you're welcome to explore the gardens at your own pace.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/766.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Please meet back here at the fountain by 2:30.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/767.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Audio guides are available in six languages at the information desk.",
 "voice": "af_heart"
 },
 "lc/768.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Hold on to your ticket, because you'll need it to re-enter the museum.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/769.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The region is renowned for its vineyards and olive groves.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/770.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "This building was originally a textile mill, but it was converted into a museum in 1998.",
 "voice": "af_heart"
 },
 "lc/771.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The west wing is closed for renovation, so we'll skip it today.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/772.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Weather permitting, we'll finish the day with a short boat ride on the lake.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/773.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "At our next stop, you'll get some hands-on experience making your own glass ornament.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/774.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Watch your head as we go down these stairs; the ceiling is quite low.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/775.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "If you look closely, you can still see the artist's signature in the corner.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/776.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Please save your questions for the end of the tour.",
 "voice": "af_heart"
 },
 "lc/777.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "At the end of the tour, you're welcome to sample some of our freshly made cheeses.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/778.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The park is home to more than 150 species of birds.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/779.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "If everyone could step this way, I'll show you where the coffee beans are roasted.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/780.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "This state-of-the-art facility can produce up to 10,000 bottles an hour.",
 "voice": "af_heart"
 },
 "lc/781.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "It's my pleasure to introduce tonight's guest speaker, Dr. Lena Okafor.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/782.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Our next speaker needs no introduction, but I'll say a few words anyway.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/783.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Without further ado, let's welcome Ms. Rivera to the stage.",
 "voice": "af_heart"
 },
 "lc/784.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Let's give Mr. Tanaka a big round of applause.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/785.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Ms. Patel is being recognized for her outstanding work on the Lakeside project.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/786.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "This plaque is presented to Mr. Hassan in recognition of twenty years of loyal service.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/787.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "I'm delighted to announce that this year's Employee of the Year is Grace Wu from accounting.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/788.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Time and again, Carlos has gone above and beyond for our clients.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/789.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Martin Hughes, who has served as CEO for thirty-two years, will retire at the end of the month.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/790.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "We're gathered here today to celebrate Janet's retirement after nearly four decades of service.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/791.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Ms. Kowalski will succeed Mr. Grant as head of the marketing department.",
 "voice": "af_heart"
 },
 "lc/792.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "I'm pleased to announce that Daniel Osei will oversee our new regional sales team.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/793.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Dr. Morales comes to us from Westbrook University, where she leads the research team.",
 "voice": "af_heart"
 },
 "lc/794.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Before we get started, I'd like to go over a few housekeeping items.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/795.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Please accept this watch as a token of our appreciation.",
 "voice": "af_heart"
 },
 "lc/796.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Ahmed was instrumental in opening our first overseas office in Singapore.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/797.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Under Ms. Lindqvist's leadership, our sales have nearly doubled.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/798.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Thanks to your hard work, we surpassed our annual sales target by fifteen percent.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/799.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "This year marks an important milestone: our fiftieth anniversary.",
 "voice": "af_heart"
 },
 "lc/800.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "I'd like to take a moment to thank the volunteers who made this event possible.",
 "voice": "af_heart"
 },
 "lc/801.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "After the presentation, we'll open the floor to questions.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/802.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Professor Nakamura will deliver this morning's keynote address on sustainable design.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/803.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "I'm thrilled to share that we've finalized our merger with Norland Systems.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/804.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "So, everyone, please raise your glasses to Mr. and Mrs. Delgado, our founders.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/805.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Throughout her career, Dr. Bose has been dedicated to improving rural healthcare.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/806.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Tonight, the Lifetime Achievement Award goes to architect Samuel Achebe.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/807.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Her research paved the way for a new generation of solar panels.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/808.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Mr. Feld is a renowned chef and the author of three best-selling cookbooks.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/809.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Refreshments will be served in the lobby immediately following the ceremony.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/810.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "On a personal note, Rachel, it's been an honor working with you.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/811.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "For a limited time, all patio furniture is thirty percent off.",
-"voice": "am_michael"
-},
-"lc/812.mp3": {
-"src": "kokoro",
-"text": "These deals won't last long, so act now!",
 "voice": "af_heart"
 },
+"lc/812.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "These deals won't last long, so act now!",
+"voice": "am_liam"
+},
 "lc/813.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Every customer who makes a purchase gets a free tote bag, while supplies last.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/814.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "This weekend only, buy one, get one free on all running shoes.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/815.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Save up to sixty percent on selected laptops and tablets.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/816.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Our annual clearance sale starts Friday, with prices slashed on last season's coats.",
 "voice": "af_heart"
 },
 "lc/817.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Join our rewards program and earn points on every purchase.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/818.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Members get exclusive access to our early-bird sale on Thursday evening.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/819.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Our gym features state-of-the-art equipment and certified personal trainers.",
 "voice": "af_heart"
 },
 "lc/820.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "If you're not completely satisfied, we offer a full thirty-day money-back guarantee.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/821.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Sign up today for a free trial, with no obligation to continue.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/822.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Every new car comes with roadside assistance at no extra cost.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/823.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Call us today for a free estimate on kitchen and bathroom remodeling.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/824.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Visit our website to browse our full menu and order online.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/825.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Hartwell's Bakery has been family-owned and operated since 1962.",
 "voice": "af_heart"
 },
 "lc/826.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "We're conveniently located just two blocks from Central Station.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/827.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Come see our newly renovated showroom, now twice the size.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/828.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Sunrise Diner is now under new management, with an all-new breakfast menu.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/829.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Starting this month, we've extended our hours and stay open until ten p.m. on weekdays.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/830.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "To celebrate our tenth anniversary, every customer gets a free dessert this week.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/831.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "We offer high-quality printing at affordable prices.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/832.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Whether you're hosting a birthday party or a business lunch, we've got you covered.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/833.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Looking for a reliable moving company? Look no further.",
 "voice": "af_heart"
 },
 "lc/834.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "We provide same-day service for most phone and computer repairs.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/835.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Mention this ad at checkout and receive an extra ten percent off.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/836.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Tired of waiting in long lines at the bank? Try our new mobile app.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/837.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Subscribe to our newsletter to receive special offers right in your inbox.",
 "voice": "af_heart"
 },
 "lc/838.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Our store carries a wide selection of organic produce and local cheeses.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/839.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "This lightweight yet durable suitcase is perfect for frequent travelers.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/840.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "First-time customers receive twenty percent off their first order.",
 "voice": "af_heart"
 },
 "lc/841-a.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Let's go with the one that's under fifteen dollars per person.",
-"voice": "am_michael"
+"voice": "bf_alice"
 },
 "lc/841-q.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Which caterer should we hire for the banquet?",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/841-x1.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Yes, the banquet was a big success.",
-"voice": "am_michael"
+"voice": "bf_alice"
 },
 "lc/841-x2.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "I'll hire two more servers.",
-"voice": "am_michael"
+"voice": "bf_alice"
 },
 "lc/842.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "We should pick the second cheapest package, since the cheapest one doesn't include a projector.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/843.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Our booth is just to the left of the information desk, so it's easy to find.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/844-a.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "It's across from the elevators on this floor.",
 "voice": "af_heart"
 },
 "lc/844-q.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Where's the new copy room?",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/844-x1.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Yes, I made twenty copies.",
 "voice": "af_heart"
 },
 "lc/844-x2.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Around three o'clock.",
 "voice": "af_heart"
 },
 "lc/845.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The supply closet is the last door on the right, just past the restrooms.",
-"voice": "am_michael"
-},
-"lc/846.mp3": {
-"src": "kokoro",
-"text": "The new branch is on the corner of Maple Avenue and Fifth Street.",
 "voice": "af_heart"
 },
+"lc/846.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The new branch is on the corner of Maple Avenue and Fifth Street.",
+"voice": "am_liam"
+},
 "lc/847-a.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "They swapped it with Ms. Lee's session.",
 "voice": "af_heart"
 },
 "lc/847-q.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "When is Mr. Ito's workshop?",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/847-x1.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "In the main auditorium.",
 "voice": "af_heart"
 },
 "lc/847-x2.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Yes, I really enjoyed the workshop.",
 "voice": "af_heart"
 },
 "lc/848.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Dr. Hall had to cancel, so Ms. Price will take the last slot of the day.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/849.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "As you can see, sales dropped sharply in March because of the store renovation.",
 "voice": "af_heart"
 },
 "lc/850.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Website traffic peaked the week we launched the ad campaign.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/851-a.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "It ranked second, just behind the mango flavor.",
-"voice": "am_michael"
+"voice": "bf_alice"
 },
 "lc/851-q.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "How did our new juice do in the survey?",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "lc/851-x1.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "I'll have the mango juice, please.",
-"voice": "am_michael"
+"voice": "bf_alice"
 },
 "lc/851-x2.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Yes, we did a survey.",
-"voice": "am_michael"
+"voice": "bf_alice"
 },
 "lc/852.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Let's set up the display in the spot closest to the main stage.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/853-a.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The only one that seats up to forty people.",
-"voice": "am_michael"
+"voice": "am_liam"
 },
 "lc/853-q.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Which room did you book for the training?",
 "voice": "af_heart"
 },
 "lc/853-x1.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The training went really well.",
-"voice": "am_michael"
+"voice": "am_liam"
 },
 "lc/853-x2.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Yes, I read that book.",
-"voice": "am_michael"
+"voice": "am_liam"
 },
 "lc/854.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "We need a room that holds at least twenty-five people, so the smaller ones won't work.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/855.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Orders over a hundred dollars qualify for the discount, so we'll get fifteen percent off.",
 "voice": "af_heart"
 },
 "lc/856-a.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Kestrel Express, since it's the only one with weekend delivery.",
-"voice": "bm_george"
+"voice": "bf_alice"
 },
 "lc/856-q.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Which delivery service did you choose?",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/856-x1.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "It was delivered on Monday.",
-"voice": "bm_george"
+"voice": "bf_alice"
 },
 "lc/856-x2.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Yes, I chose it carefully.",
-"voice": "bm_george"
+"voice": "bf_alice"
 },
 "lc/857.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The accounting office moved to the floor below us, right under this conference room.",
-"voice": "am_michael"
-},
-"lc/858.mp3": {
-"src": "kokoro",
-"text": "The coupon applies to frozen foods only, so we can't use it on the bread.",
-"voice": "af_bella"
-},
-"lc/859.mp3": {
-"src": "kokoro",
-"text": "Online sales now account for the largest share of our revenue.",
-"voice": "am_michael"
-},
-"lc/860.mp3": {
-"src": "kokoro",
-"text": "Membership numbers show a steady increase over the past four quarters.",
-"voice": "bf_emma"
-},
-"lc/861-a.mp3": {
-"src": "kokoro",
-"text": "They've doubled since the price cut in May.",
-"voice": "am_michael"
-},
-"lc/861-q.mp3": {
-"src": "kokoro",
-"text": "How are the sales of our new blender?",
-"voice": "bf_emma"
-},
-"lc/861-x1.mp3": {
-"src": "kokoro",
-"text": "I'll blend them together.",
-"voice": "am_michael"
-},
-"lc/861-x2.mp3": {
-"src": "kokoro",
-"text": "In the kitchen section.",
-"voice": "am_michael"
-},
-"lc/862.mp3": {
-"src": "kokoro",
-"text": "We fell short of our target only in the second quarter.",
-"voice": "bm_george"
-},
-"lc/863-a.mp3": {
-"src": "kokoro",
-"text": "The highest-rated one, even if it costs a bit more.",
-"voice": "bf_emma"
-},
-"lc/863-q.mp3": {
-"src": "kokoro",
-"text": "Which hotel should we recommend to the clients?",
-"voice": "am_michael"
-},
-"lc/863-x1.mp3": {
-"src": "kokoro",
-"text": "Yes, the clients arrived yesterday.",
-"voice": "bf_emma"
-},
-"lc/863-x2.mp3": {
-"src": "kokoro",
-"text": "I recommend checking out by noon.",
-"voice": "bf_emma"
-},
-"lc/864.mp3": {
-"src": "kokoro",
-"text": "The break room is two doors down from my office, on the left.",
-"voice": "bm_george"
-},
-"lc/865-a.mp3": {
-"src": "kokoro",
-"text": "Use the lot on the north side of the hall.",
-"voice": "am_michael"
-},
-"lc/865-q.mp3": {
-"src": "kokoro",
-"text": "Where should I park for the job fair?",
 "voice": "af_heart"
 },
+"lc/858.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The coupon applies to frozen foods only, so we can't use it on the bread.",
+"voice": "am_liam"
+},
+"lc/859.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Online sales now account for the largest share of our revenue.",
+"voice": "af_heart"
+},
+"lc/860.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Membership numbers show a steady increase over the past four quarters.",
+"voice": "bf_alice"
+},
+"lc/861-a.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "They've doubled since the price cut in May.",
+"voice": "am_liam"
+},
+"lc/861-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "How are the sales of our new blender?",
+"voice": "bf_alice"
+},
+"lc/861-x1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'll blend them together.",
+"voice": "am_liam"
+},
+"lc/861-x2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "In the kitchen section.",
+"voice": "am_liam"
+},
+"lc/862.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "We fell short of our target only in the second quarter.",
+"voice": "bm_fable"
+},
+"lc/863-a.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The highest-rated one, even if it costs a bit more.",
+"voice": "am_liam"
+},
+"lc/863-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Which hotel should we recommend to the clients?",
+"voice": "af_heart"
+},
+"lc/863-x1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, the clients arrived yesterday.",
+"voice": "am_liam"
+},
+"lc/863-x2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I recommend checking out by noon.",
+"voice": "am_liam"
+},
+"lc/864.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The break room is two doors down from my office, on the left.",
+"voice": "bm_fable"
+},
+"lc/865-a.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Use the lot on the north side of the hall.",
+"voice": "bf_alice"
+},
+"lc/865-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Where should I park for the job fair?",
+"voice": "am_liam"
+},
 "lc/865-x1.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Yes, the job fair is this week.",
-"voice": "am_michael"
+"voice": "bf_alice"
 },
 "lc/865-x2.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Around two hundred applicants.",
-"voice": "am_michael"
+"voice": "bf_alice"
 },
 "lc/866.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Due to a maintenance issue at Gate B12, Flight 418 will now board at the gate directly opposite.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "lc/867-a.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The earlier one, so we can set up before it opens.",
-"voice": "bm_george"
+"voice": "bf_alice"
 },
 "lc/867-q.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Which train should we take to the trade show?",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "lc/867-x1.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Yes, the show was very crowded.",
-"voice": "bm_george"
+"voice": "bf_alice"
 },
 "lc/867-x2.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "I'll take the trade-in offer.",
-"voice": "bm_george"
+"voice": "bf_alice"
 },
 "lc/868.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Since Elm Road is closed for construction, take the route along the river instead.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/869.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The bakery stall is the one in the middle, between the florist and the coffee cart.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "lc/870-a.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "I swapped with Mia, so I've got the morning shift.",
-"voice": "am_michael"
+"voice": "am_liam"
 },
 "lc/870-q.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Which shift are you taking on Saturday?",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "lc/870-x1.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Yes, I shifted the desk.",
-"voice": "am_michael"
+"voice": "am_liam"
 },
 "lc/870-x2.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "I worked there for two years.",
-"voice": "am_michael"
+"voice": "am_liam"
 },
 "p1/001.mp3": {
 "br": "32k",
