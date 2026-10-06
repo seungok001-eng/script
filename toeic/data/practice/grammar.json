@@ -314,7 +314,7 @@
    },
    {
     "h": "수량 형용사와 명사의 수",
-    "t": "each, every, another 뒤에는 셀 수 있는 명사의 단수형, several, many, a few, various, all 뒤에는 복수형, much, little 뒤에는 셀 수 없는 명사가 온다. 빈칸 뒤 명사가 단수인지 복수인지 먼저 확인하자.",
+    "t": "each, every, another 뒤에는 셀 수 있는 명사의 단수형, several, many, a few, various 뒤에는 복수형, much, little 뒤에는 셀 수 없는 명사가 온다. all은 복수 명사와 셀 수 없는 명사 모두와 쓸 수 있다. 빈칸 뒤 명사가 단수인지 복수인지 먼저 확인하자.",
     "ex": [
      {
       "en": "*Each* participant will receive a certificate.",
@@ -1150,7 +1150,7 @@
     ]
    }
   ],
-  "trap": "빈칸 뒤에 명사가 있으면 소유격, 없으면 소유대명사다. 재귀대명사는 '같은 절에서 동작하는 사람 = 목적어'일 때만 쓰므로, 동작하는 사람이 다르면 목적격을 써야 한다.",
+  "trap": "빈칸 뒤에 명사가 있으면 소유격, 없으면 소유대명사다. 목적어 자리에 재귀대명사를 쓰는 것은 '같은 절에서 동작하는 사람 = 목적어'일 때뿐이므로, 동작하는 사람이 다르면 목적격을 써야 한다.",
   "qs": [
    {
     "s": "Ms. Ibrahim will present ------- findings at the regional sales conference in Chicago next month.",
