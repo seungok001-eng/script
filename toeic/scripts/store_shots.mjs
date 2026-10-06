@@ -17,6 +17,7 @@ function demoState(today, words) {
     profile: { target: 800, examDate: null, daily: 40, start: today - 20 },
     settings: { theme: "light", sfx: false, autoWord: false, autoEx: false, rate: 1, showKo: true, hideMeaning: false, sfx: false, remind: true, remindAt: "21:00" },
     words: {}, log: {}, tests: {}, premium: false,
+    tips: { card: 1, sort: 1, quiz: 1, listen: 1, p1: 1, p2: 1, p34: 1, p67: 1, practice: 1, review: 1 }, // 스크린샷에는 첫 방문 팁을 띄우지 않는다
   };
   const d = new Date((today + 30) * 86400000);
   S.profile.examDate = d.toISOString().slice(0, 10);

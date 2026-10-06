@@ -674,3 +674,60 @@ mark.on { background: color-mix(in srgb, var(--gold) 62%, transparent); box-shad
 .opt.sline .spacer { display: flex; flex-direction: column; gap: 2px; text-align: left; }
 .opt.sline .ko { font-size: 13px; font-weight: 500; color: var(--text-2); }
 .opt.sline svg { flex: none; opacity: .55; width: 18px; height: 18px; margin-top: 2px; }
+/* 시작 미션 (홈) */
+.mission { background: var(--bg-elev); border: 1.5px solid color-mix(in srgb, var(--brand) 35%, var(--line)); border-radius: var(--r-l); padding: 16px; margin: 14px 0 4px; box-shadow: var(--shadow-1); }
+.mission.done { border-color: color-mix(in srgb, var(--ok) 45%, var(--line)); }
+.mis-h { display: flex; align-items: flex-start; gap: 10px; }
+.mis-h .eyebrow { color: var(--brand); font-size: 12px; font-weight: 800; letter-spacing: .02em; }
+.mis-h b { font-size: 17px; display: block; margin-top: 2px; }
+.mis-dots { display: flex; gap: 5px; margin-top: 8px; }
+.mis-dots i { width: 8px; height: 8px; border-radius: 50%; background: var(--line-strong); }
+.mis-dots i.on { background: var(--ok); }
+.mis-dots i.cur { background: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
+.icon-btn.sm { width: 32px; height: 32px; margin: -4px -6px 0 0; }
+.mis-list { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.mis-item { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; padding: 11px 12px; border-radius: var(--r-m); border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; cursor: pointer; }
+.mis-item:hover:not([disabled]) { border-color: var(--brand); }
+.mis-item[disabled] { cursor: default; }
+.mis-item .tt { display: block; font-weight: 700; font-size: 15px; }
+.mis-item .td { display: block; font-size: 13px; color: var(--text-3); margin-top: 1px; }
+.mis-ck { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--brand-soft); color: var(--brand); flex: none; }
+.mis-ck .ico { width: 18px; height: 18px; }
+.mis-item.done .mis-ck { background: var(--ok); color: #fff; }
+.mis-item.done .tt { color: var(--text-3); text-decoration: line-through; }
+.mission.locked .mis-item:not(.done) { opacity: .55; }
+.mis-guide { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; color: var(--text-2); text-decoration: none; }
+.mis-guide .ico { width: 16px; height: 16px; }
+/* 첫 방문 팁 */
+.coach { display: flex; gap: 10px; align-items: flex-start; background: var(--brand-soft); border: 1px solid color-mix(in srgb, var(--brand) 25%, transparent); border-radius: var(--r-m); padding: 12px 12px 12px 14px; margin: 0 0 12px; font-size: 14px; line-height: 1.55; color: var(--text); animation: coachIn .25s ease-out; }
+.coach-i { color: var(--brand); flex: none; margin-top: 1px; }
+.coach-i .ico { width: 20px; height: 20px; }
+.coach-t { flex: 1; }
+.coach-ok { flex: none; align-self: center; border: 0; background: var(--brand); color: #fff; font: inherit; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px; cursor: pointer; }
+@keyframes coachIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .coach { animation: none; } }
+/* 사용 가이드 */
+.g-h { display: flex; align-items: center; gap: 8px; font-size: 17px; margin: 0 0 10px; }
+.g-h .ico { color: var(--brand); width: 20px; height: 20px; }
+.g-card + .g-card { margin-top: 12px; }
+.g-step { display: flex; align-items: center; gap: 10px; padding: 8px 0; }
+.g-step + .g-step { border-top: 1px dashed var(--line); }
+.g-n { width: 22px; height: 22px; border-radius: 50%; background: var(--brand); color: #fff; font-size: 12px; font-weight: 800; display: grid; place-items: center; flex: none; }
+.g-grade { display: flex; flex-direction: column; gap: 8px; }
+.g-grade > div { display: flex; align-items: center; gap: 10px; }
+.g-grade .badge { min-width: 56px; text-align: center; }
+.badge.warn { background: var(--warn-soft); color: var(--warn); }
+.g-ladder { display: flex; gap: 6px; }
+.g-ladder > div { flex: 1; text-align: center; background: var(--bg-sunk); border-radius: var(--r-s); padding: 8px 2px; }
+.g-ladder b { display: block; font-size: 15px; }
+.g-ladder span { display: block; font-size: 11px; color: var(--text-3); min-height: 14px; }
+.g-tips { display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5; }
+.g-tips b { color: var(--brand); margin-right: 6px; }
+.faq-list { padding: 4px 16px; }
+.faq { border-bottom: 1px solid var(--line); }
+.faq:last-child { border-bottom: 0; }
+.faq summary { cursor: pointer; padding: 14px 0; font-weight: 700; list-style: none; display: flex; justify-content: space-between; gap: 10px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--text-3); font-weight: 600; }
+.faq[open] summary::after { content: "–"; }
+.faq > div { padding: 0 0 14px; font-size: 14px; line-height: 1.6; color: var(--text-2); }

@@ -12,8 +12,13 @@ await p.goto(base);
 await p.click("[data-next]"); await p.click('[data-score="700"]'); await p.click("[data-next]"); await p.click("[data-next]"); await p.click("[data-next]");
 await p.waitForTimeout(300);
 ok(p.url().endsWith("#/home"), "onboarding → home");
+// 0) 처음 쓰는 사람 안내: 시작 미션 1일차 3개 · 카드 화면 첫 방문 팁(한 번만)
+ok((await p.$$(".mission .mis-item")).length === 3 && (await p.textContent(".mission")).includes("1일차"), "start mission card day 1");
 // 1) 카드 3장 학습 후 새로고침해도 기록 유지
-await p.click('.hero [data-go="new"]');
+await p.click('.hero [data-go="new"]'); await p.waitForTimeout(250);
+ok(await p.$(".coach"), "card coach tip shown");
+await p.click(".coach-ok");
+ok(!(await p.$(".coach")) && (await p.evaluate(() => window.__toeicfit.state.tips.card)) === 1, "coach tip dismissed and remembered");
 for (let i = 0; i < 3; i++) { await p.click("[data-flip]"); await p.click('[data-g="2"]'); }
 const seen1 = await p.evaluate(() => Object.keys(window.__toeicfit.state.words).length);
 await p.waitForTimeout(400);
@@ -21,6 +26,11 @@ await p.reload(); await p.waitForTimeout(400);
 const seen2 = await p.evaluate(() => Object.keys(window.__toeicfit.state.words).length);
 ok(seen1 === 3 && seen2 === 3, `persist after reload ${seen1}/${seen2}`);
 ok(p.url().endsWith("#/home"), "reload on #/study → home: " + p.url());
+ok(!(await p.$(".coach")), "card tip not shown again");
+// 사용 가이드: 자주 묻는 질문 · 미션(가이드 읽기) 기록
+await p.goto(base + "#/guide"); await p.waitForTimeout(200);
+ok((await p.$$(".faq")).length >= 5 && (await p.$$(".g-card")).length >= 5, "guide page");
+ok(await p.evaluate(() => !!window.__toeicfit.state.guide.done.guide), "guide visit recorded");
 // 2) 듣기 모드 → 뒤로가기 → 세션 종료
 await p.goto(base + "#/day/1"); await p.waitForTimeout(200);
 await p.click('[data-mode="listen"]'); await p.click("[data-toggle]"); await p.waitForTimeout(300);
@@ -122,6 +132,8 @@ ok(prAfter === prBefore, `retake not counted in predicted score ${prBefore} → 
 await p.goto(base + "#/home"); await p.waitForTimeout(200);
 // 6) 조작된 저장값 정리
 const st = await p.evaluate(() => window.__toeicfit.sanitize({ profile: { target: "<img src=x onerror=alert(1)>", daily: "9999", examDate: "x" }, words: { "01-01": { b: 99, n: "3" }, "zz": {} }, tests: { "5": { best: "<b>" }, "75": { best: 90, last: 90, at: 1 } }, lc: { "lc-1": { ok: "2", ng: 1, wrong: 1 }, "lc-99999": { ok: 1 } }, settings: { theme: "<x>", rate: 5, autoWord: "yes" }, premium: true }));
+const sg = await p.evaluate(() => window.__toeicfit.sanitize({ profile: { target: 800, daily: 30 }, guide: { start: 5, done: { card: 5, "<x>": 1 }, hide: 1 }, tips: { card: 1, "a b": 1 } }));
+ok(sg.guide.start === 5 && sg.guide.done.card === 5 && !sg.guide.done["<x>"] && sg.guide.hide === true && sg.tips.card === 1 && !sg.tips["a b"], "sanitize guide/tips " + JSON.stringify(sg.guide));
 ok(st.profile.target === 800 && st.profile.daily === 200 && st.words["01-01"].b === 6 && st.words["01-01"].n === 3 && !st.words.zz && st.tests[5].best === 0 && st.tests[75].best === 90 && st.lc["lc-1"].ok === 2 && st.lc["lc-1"].wrong === true && !st.lc["lc-99999"] && st.settings.theme === "system" && st.settings.rate === 1 && st.settings.autoWord === true, "sanitize " + JSON.stringify(st));
 await b.close();
 // 7) 데스크톱: 마우스 드래그 스와이프가 카드를 뒤집지 않고 한 번만 채점 / Enter 키 버튼

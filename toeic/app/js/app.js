@@ -44,8 +44,17 @@
     qt: {}, // 문제 유형별 정답률 { "p7:추론": { ok, n } }
     pr: { lc: [], rc: [] }, // 최근 LC/RC 정오 (예상 점수)
     mock: {}, // 모의고사 { 1: { lc, rc, total, best, at } }
+    guide: null, // 시작 미션 { start, done: { 미션키: 한 날 }, hide } — 새로 시작한 사람에게만
+    tips: {}, // 한 번 본 첫 방문 팁 { card: 1, … }
     premium: false,
   });
+  // 처음 3일 시작 미션: 앱의 핵심 기능을 하루 3개씩 직접 써 보게 한다 (하루에 한 묶음씩 열림)
+  const MISSIONS = [
+    { day: 1, items: [["card", "layers", "새 단어 카드 외우기", "카드를 넘기며 오늘의 단어 익히기"], ["quiz", "zap", "오늘 단어 퀴즈 풀기", "방금 외운 단어를 바로 확인"], ["p2", "ear", "Part 2 응답 맛보기", "질문 듣고 알맞은 응답 고르기 5문제"]] },
+    { day: 2, items: [["review", "repeat", "첫 복습하기", "어제 외운 단어가 복습으로 돌아왔어요"], ["grammar", "book", "Part 5 문법 1주제", "짧은 강의를 보고 문제 풀기"], ["listen", "headphones", "듣기 모드 켜 보기", "출퇴근길에 단어·예문 자동 재생"]] },
+    { day: 3, items: [["p3", "headphones", "Part 3 대화 1세트", "문제를 먼저 읽고 대화 듣기"], ["p7", "list", "Part 7 독해 1세트", "지문에서 정답 근거 찾기"], ["remind", "bell", "학습 알림 시간 정하기", "매일 같은 시간에 습관 만들기"]] },
+  ];
+  const MISSION_KEYS = new Set(MISSIONS.flatMap((G) => G.items.map((x) => x[0])).concat(["guide"]));
   let S = load();
   function load() {
     try {
@@ -123,6 +132,13 @@
     if (mr && /^\d{1,2}$/.test(String(mr.n)) && Array.isArray(mr.picks)) {
       d.mockRun = { n: +mr.n, i: num(mr.i, 0, 0, 500), picks: mr.picks.slice(0, 500).map((a) => (Array.isArray(a) ? a.slice(0, 10).map((x) => (Number.isInteger(x) && x >= 0 && x <= 3 ? x : null)) : [])), rcUsed: mr.rcUsed == null ? null : num(mr.rcUsed, 0, 0, 1e8), at: num(mr.at, 0, 0, 1e6) };
     }
+    const gd = src && src.guide;
+    if (gd && typeof gd === "object") {
+      d.guide = { start: num(gd.start, C.dayNum(), 0, 1e6), done: {}, hide: !!gd.hide };
+      for (const k of Object.keys(gd.done || {})) if (MISSION_KEYS.has(k)) d.guide.done[k] = num(gd.done[k], 0, 0, 1e6);
+    }
+    const tp = (src && src.tips) || {};
+    for (const k of Object.keys(tp)) if (/^[a-z0-9]{1,20}$/.test(k) && tp[k]) d.tips[k] = 1;
     d.premium = !!(src && src.premium);
     return d;
   }
@@ -237,6 +253,9 @@
     upload: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5M12 3v12"/>',
     trash: '<path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/>',
     info: '<circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/>',
+    calendar: '<rect x="3" y="4.5" width="18" height="17" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/>',
+    help: '<circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4.5"/><path d="M12 18h.01"/>',
+    bell: '<path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/>',
     bulb: '<path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/>',
     flag: '<path d="M4 22V4M4 4h13l-2 4 2 4H4"/>',
     swap: '<path d="M7 4 3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="m17 20 4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/>',
@@ -473,7 +492,7 @@
     const r = route();
     document.body.classList.toggle("in-study", r.name === "study" || r.name === "onboarding");
     if (!S.profile && r.name !== "onboarding") return go("#/onboarding");
-    const views = { onboarding: vOnboarding, home: vHome, days: vDays, day: vDay, word: vWord, study: vStudy, review: vReview, part1: vPart1, conf: vConf, lc: vLc, practice: vPractice, sets: vSets, grammar: vGrammar, dict: vDict, mock: vMock, search: vSearch, stats: vStats, settings: vSettings, licenses: vLicenses, premium: vPremium };
+    const views = { onboarding: vOnboarding, home: vHome, days: vDays, day: vDay, word: vWord, study: vStudy, review: vReview, part1: vPart1, conf: vConf, lc: vLc, practice: vPractice, sets: vSets, guide: vGuide, grammar: vGrammar, dict: vDict, mock: vMock, search: vSearch, stats: vStats, settings: vSettings, licenses: vLicenses, premium: vPremium };
     const v = views[r.name] || vHome;
     v(r);
     window.scrollTo(0, 0);
@@ -495,6 +514,7 @@
         <a href="#/settings" class="side-link ${active === "settings" ? "on" : ""}">${ico("gear")}설정</a>
         <div class="side-sep"></div>
         <a href="#/search" class="side-link ${active === "search" ? "on" : ""}">${ico("search")}단어 검색</a>
+        <a href="#/guide" class="side-link ${active === "guide" ? "on" : ""}">${ico("help")}사용 가이드</a>
         <a href="#/part1" class="side-link ${active === "part1" ? "on" : ""}">${ico("camera")}Part 1 사진 표현</a>
         <a href="#/conf" class="side-link ${active === "conf" ? "on" : ""}">${ico("split")}혼동 어휘</a>
         ${(D.lc || []).length ? `<a href="#/lc" class="side-link ${active === "lc" ? "on" : ""}">${ico("ear")}LC 빈출 표현</a>` : ""}
@@ -620,6 +640,7 @@
       if (onb.step < 3) { onb.step += 1; return vOnboarding(); }
       const p = S.profile || { start: today() };
       S.profile = Object.assign(p, { target: onb.target, examDate: onb.exam || null, daily: onbDaily() });
+      if (!editing && !S.guide) S.guide = { start: today(), done: {}, hide: false };
       save(true);
       onb = { step: 0, target: 800, exam: "", daily: 0 };
       toast(editing ? "학습 계획을 바꿨어요" : "학습 계획이 준비됐어요. 화이팅!");
@@ -672,6 +693,7 @@
         </div>
         ${next ? `<button class="btn block" data-go="${next[0]}">${ico(next[1])}${next[2]}</button>` : `<a class="btn block" href="#/practice">${ico("target")}실전 문제 더 풀기</a>`}
       </section>
+      ${missionCard()}
       <div class="section"><div class="section-h"><h2>오늘 할 일</h2><span class="small muted">${fmtDate(t)}</span></div>
         <button class="task ${plan.due.length ? "" : "done"}" data-go="due"><span class="tico c-orange">${ico("repeat")}</span><span class="spacer"><div class="tt">복습하기</div><div class="td">${plan.due.length ? "잊어버리기 전에 다시 볼 단어 · 먼저 하면 기억이 오래가요" : l.rev ? `오늘 ${l.rev}개 복습 완료` : "오늘 복습할 단어가 없어요"}</div></span><span class="tn">${plan.due.length ? Math.min(plan.due.length, 100) : ico("check")}</span></button>
         <button class="task ${newDone ? "done" : ""}" data-go="new"><span class="tico c-blue">${ico("layers")}</span><span class="spacer"><div class="tt">새 단어 외우기${nextWord ? ` <span class="small muted" style="font-weight:600">DAY ${pad(nextWord.d)} · ${esc(DAY_BY.get(nextWord.d).title)}</span>` : ""}</div><div class="td">${newDone ? `오늘 ${plan.introducedToday}개 완료 · 더 하고 싶다면 단어장에서` : `카드로 뜻 확인 → 모르는 단어는 다시`}</div></span><span class="tn">${newDone ? ico("check") : plan.newWords.length}</span></button>
@@ -685,6 +707,68 @@
       </div>`;
     shell("home", body);
     $app.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => homeGo(b.dataset.go, plan, introduced)));
+    $app.querySelectorAll("[data-mis]").forEach((b) => b.addEventListener("click", () => missionGo(b.dataset.mis, plan, introduced)));
+    const mx = $app.querySelector("[data-mis-close]");
+    if (mx) mx.addEventListener("click", () => { S.guide.hide = true; save(); toast("설정 → 사용 가이드에서 다시 볼 수 있어요"); vHome(); });
+  }
+  // ── 시작 미션 ──
+  const missionItems = (G) => G.items.map((x) => (x[0] === "remind" && !Notify.available() ? ["guide", "help", "사용 가이드 읽어 보기", "학습 루틴과 복습 원리 3분 정리"] : x));
+  function mission(key) {
+    const g = S.guide;
+    if (!g || g.done[key]) return;
+    g.done[key] = today();
+    save();
+    const G = MISSIONS.find((x) => missionItems(x).some((it) => it[0] === key));
+    if (G && !g.hide && missionItems(G).every((it) => g.done[it[0]])) {
+      setTimeout(() => { toast(G.day === MISSIONS.length ? "시작 미션을 모두 끝냈어요! 🎉" : `${G.day}일차 미션 완료! 내일 ${G.day + 1}일차가 열려요`); confetti(); }, 400);
+    }
+  }
+  function missionCard() {
+    const g = S.guide;
+    if (!g || g.hide) return "";
+    const t = today();
+    if (S.settings.remind && !g.done.remind) g.done.remind = t;
+    const gi = MISSIONS.findIndex((G) => !missionItems(G).every((it) => g.done[it[0]]));
+    const head = (title, sub) => `<div class="mis-h"><div class="spacer"><div class="eyebrow">시작 미션</div><b>${title}</b>${sub ? `<div class="small muted">${sub}</div>` : ""}</div><div class="mis-dots">${MISSIONS.map((G, i) => `<i class="${i < gi || gi < 0 ? "on" : i === gi ? "cur" : ""}"></i>`).join("")}</div><button class="icon-btn sm" data-mis-close aria-label="미션 닫기">${ico("x")}</button></div>`;
+    if (gi < 0) {
+      return `<section class="mission done">${head("시작 미션 완료! 🎉", "토익핏의 핵심 기능을 모두 써 봤어요")}
+        <p class="small" style="margin:8px 0 12px">이제 <b>하프 모의고사</b>로 지금 실력을 확인해 보세요. 결과에 맞춰 약한 파트부터 연습하면 돼요.</p>
+        <button class="btn block" data-mis="mock">${ico("clock")}하프 모의고사 보러 가기</button></section>`;
+    }
+    const G = MISSIONS[gi];
+    const open = t - g.start >= gi;
+    const items = missionItems(G).map(([k, ic, title, sub]) => {
+      const done = !!g.done[k];
+      return `<button class="mis-item ${done ? "done" : ""}" data-mis="${k}" ${open && !done ? "" : "disabled"}><span class="mis-ck">${done ? ico("check") : ico(ic)}</span><span class="spacer"><span class="tt">${title}</span><span class="td">${sub}</span></span>${open && !done ? ico("right") : ""}</button>`;
+    }).join("");
+    const nDone = missionItems(G).filter((it) => g.done[it[0]]).length;
+    const sub = open ? `${nDone} / 3 완료 · 하나씩 눌러서 해 보세요` : `${G.day - 1}일차 완료! ${G.day}일차 미션은 내일 열려요`;
+    return `<section class="mission ${open ? "" : "locked"}">${head(`${G.day}일차 · ${["앱과 친해지기", "복습 습관 만들기", "실전 감각 익히기"][gi]}`, sub)}<div class="mis-list">${items}</div>
+      <a class="small mis-guide" href="#/guide">${ico("help")}처음이라 막막하다면 사용 가이드 보기</a></section>`;
+  }
+  function missionGo(k, plan, introduced) {
+    if (k === "card") return homeGo("new", plan, introduced);
+    if (k === "quiz") { if (!introduced.length) return toast("먼저 오늘의 새 단어를 카드로 외워 주세요"); return homeGo("quiz-today", plan, introduced); }
+    if (k === "p2") return startLcQuiz("resp", D.lc || [], 5);
+    if (k === "review") { if (!plan.due.length) return toast("복습할 단어가 아직 없어요. 외운 단어는 다음 날부터 복습으로 돌아와요"); return homeGo("due", plan, introduced); }
+    if (k === "grammar") return go("#/grammar");
+    if (k === "listen") return homeGo("listen", plan, introduced);
+    if (k === "p3" || k === "p7") return loadPractice().then(() => startSets(k, pickSets(practicePool(k), 1), k === "p3" ? "Part 3 대화" : "Part 7 독해")).catch(() => toast("문제를 불러오지 못했어요"));
+    if (k === "remind") return go("#/settings");
+    if (k === "guide") return go("#/guide");
+    if (k === "mock") { S.guide.hide = true; save(); return go("#/mock"); }
+  }
+  // ── 첫 방문 팁: 화면마다 한 번만, '알겠어요'를 누르면 다시 안 나온다 (가이드에서 다시 보기 가능) ──
+  function coach(key, html) {
+    if (S.tips[key]) return;
+    const page = $app.querySelector(".study-top") || $app.querySelector(".page > .top");
+    if (!page) return;
+    const el = document.createElement("div");
+    el.className = "coach";
+    el.setAttribute("role", "note");
+    el.innerHTML = `<span class="coach-i">${ico("bulb")}</span><div class="coach-t">${html}</div><button class="coach-ok" type="button">알겠어요</button>`;
+    el.querySelector("button").addEventListener("click", () => { S.tips[key] = 1; save(); el.remove(); });
+    page.insertAdjacentElement("afterend", el);
   }
   // 오늘의 실전 과제 (시험일·단어 진도·모의고사 기록 기준)
   function practiceTaskToday(P, sum, t) {
@@ -1023,6 +1107,7 @@
       gradeCard(dir > 0 ? 2 : 0);
     });
     if (!s.flipped && S.settings.autoWord) Sound.word(w);
+    coach("card", "<b>카드 학습</b> 뜻을 떠올린 뒤 카드를 눌러 확인하고 <b>모름 · 헷갈림 · 알아요</b> 중 하나를 누르세요. 답에 따라 다음 복습 날짜가 정해져요. 카드를 좌우로 밀어도 돼요.");
     keyHandler = (e) => {
       if (onControl(e) || s.animating) return;
       if (e.key === " " || e.key === "Enter") { e.preventDefault(); if (!s.flipped) flip(); }
@@ -1150,6 +1235,7 @@
     const flash = document.getElementById("flash");
     bindSwipe(flash, () => { s.animating = true; }, (dir) => { s.animating = false; if (session === s && route().name === "study") decide(dir > 0); });
     if (S.settings.autoWord && !s.peek) Sound.word(w);
+    coach("sort", "<b>아는 단어 빼기</b> 이미 아는 단어는 <b>알아요(→)</b>로 빼 두면 7일 뒤 한 번만 확인해요. 모르는 단어만 카드로 외우면 시간이 크게 줄어요.");
     keyHandler = (e) => {
       if (onControl(e) || s.animating) return;
       if (e.key === "ArrowLeft" || e.key === "1") decide(false);
@@ -1329,6 +1415,7 @@
     }
     if (!ans && q.type === "listen") setTimeout(() => Sound.word(w, $app.querySelector("[data-replay]")), 150);
     if (!ans && q.type === "meaning" && S.settings.autoWord) Sound.word(w);
+    coach("quiz", "<b>퀴즈</b> 맞힌 단어는 다음 복습이 뒤로 미뤄지고, 틀린 단어는 <b>오답노트</b>에 자동으로 모여요. 숫자 키 1~4로도 고를 수 있어요.");
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
       if (onControl(e)) return;
@@ -1407,6 +1494,7 @@
       s[c.dataset.opt] = c.checked;
       vListen();
     }));
+    coach("listen", "<b>듣기 모드</b> 단어를 두 번 들려준 뒤 예문을 읽어요. 화면의 뜻을 보며 따라 말해 보세요. <b>뜻 보기</b>를 끄면 소리만 듣고 뜻을 떠올리는 연습이 돼요.");
     keyHandler = (e) => {
       if (onControl(e)) return;
       if (e.key === " ") { e.preventDefault(); s.playing ? pauseListen() : playListen(); }
@@ -1433,6 +1521,7 @@
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
   async function playListen() {
     const s = session;
+    mission("listen");
     const run = (s.run = (s.run || 0) + 1);
     s.playing = true;
     vListen();
@@ -1477,6 +1566,13 @@
     if (["pset", "gq", "lcq", "dict"].includes(s.kind) && (s.results || []).length >= 3) logToday().prac = true;
     const count = s.kind === "card" ? s.seenIds.size : s.kind === "sort" ? 0 : s.results.length;
     if (count >= 5) markDone();
+    // 시작 미션
+    if (s.kind === "card" && s.seenIds.size >= 3) mission("card");
+    if (s.kind === "quiz" && s.results.length >= 3) mission("quiz");
+    if (s.kind === "lcq" && s.type === "resp" && s.results.length >= 3) mission("p2");
+    if (s.kind === "gq" && s.results.length >= 1) mission("grammar");
+    if (s.kind === "pset" && (s.part === "p3" || s.part === "p7")) mission(s.part);
+    if ((logToday().rev || 0) > 0) mission("review");
     if (s.type === "test" && s.day) {
       const score = Math.round((s.results.filter((r) => r.ok).length / s.results.length) * 100);
       const prev = S.tests[s.day];
@@ -1624,6 +1720,7 @@
       <div class="section"><div class="section-h"><h2>전체 범위 테스트</h2></div>
         <button class="task" data-random ${learned.length >= 4 ? "" : "disabled"}><span class="tico c-purple">${ico("shuffle")}</span><span class="spacer"><div class="tt">배운 단어 랜덤 30문제</div><div class="td">${learned.length ? `지금까지 본 ${learned.length}개 중에서` : "단어를 먼저 학습해 주세요"}</div></span>${ico("right")}</button></div>`;
     shell("review", body);
+    coach("review", "<b>복습 탭</b> 외운 단어는 1·3·7·14·30일 간격으로 이곳에 다시 나와요. 매일 <b>복습 예정</b>을 비우는 게 오래 기억하는 핵심이에요. 틀린 단어는 오답노트에 따로 모여요.");
     $app.querySelectorAll("[data-tab]").forEach((b) => b.addEventListener("click", () => { ui.reviewTab = b.dataset.tab; history.replaceState(null, "", "#/review"); vReview({ q: {} }); }));
     $app.querySelectorAll("[data-start]").forEach((b) => b.addEventListener("click", () => {
       const ws = tab === "due" ? cur.slice(0, 100) : cur.slice(0, 60);
@@ -1852,6 +1949,7 @@
     if (sc) sc.addEventListener("click", () => { S.settings.lcScript = !S.settings.lcScript; save(); lcqSeq += 1; vLcQuiz(); });
     $app.querySelector("[data-replay]").addEventListener("click", () => (ans && q.type === "resp" ? sayExpr(p, $app.querySelector("[data-replay]")) : playLcq(q)));
     if (!ans) setTimeout(() => { if (session === s && s.qs[s.i] === q && !s.answered) playLcq(q); }, 250);
+    if (q.type === "resp") coach("p2", "<b>Part 2</b> 질문 다음에 (A)(B)(C) 세 응답이 차례로 나와요. 질문에 바로 답하지 않고 <b>돌려 말하는 응답</b>('확인해 볼게요', '아직 몰라요')이 정답인 경우가 많아요.");
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
       if (onControl(e)) return;
@@ -2148,6 +2246,7 @@
         : `<div class="empty" style="padding:20px">${ico("gauge")}<b>아직 데이터가 부족해요</b>문제를 풀면 유형별 정답률과 약점을 알려 드려요</div>`}
       <p class="small muted" style="margin-top:14px">모든 문제는 이 앱에서 새로 만든 실전형 문제입니다(기출 문제 아님). 예상 점수는 최근 정답률로 계산한 참고용 추정치예요.</p>`;
     shell("practice", body);
+    coach("practice", "<b>실전 탭</b> Part별 문제와 하프 모의고사가 모여 있어요. LC·RC를 각각 30문제 이상 풀면 <b>예상 점수</b>를 알려 드려요. 처음이라면 Part 2 응답이나 Part 5 문법부터 가볍게 시작해 보세요.");
     $app.querySelectorAll("[data-pgo]").forEach((b) => b.addEventListener("click", () => {
       if (b.dataset.pgo === "p2") return startLcQuiz("resp", D.lc || []);
       if (b.dataset.pgo === "para" || b.dataset.pgo === "listen") return homeGo(b.dataset.pgo, C.todayPlan(pool(), S.words, S.profile.daily, today()), []);
@@ -2278,6 +2377,7 @@
       vPset();
       window.scrollTo(0, 0);
     });
+    coach(s.part === "p1" ? "p1" : s.part === "p3" || s.part === "p4" ? "p34" : "p67", s.part === "p1" ? "<b>Part 1</b> 사진을 먼저 보고 사람의 동작과 사물의 위치를 떠올린 뒤 네 문장을 들으세요. 문장은 채점한 뒤에 보여 드려요." : s.part === "p3" || s.part === "p4" ? "<b>Part 3·4 요령</b> 음성이 나오기 전에 <b>문제를 먼저 읽어 두세요</b>. 실제 시험에서도 쓰는 방법이에요. 다 고르고 채점하면 스크립트에 정답 근거 문장이 표시돼요." : "<b>Part 6·7 요령</b> 문제를 먼저 읽고 지문에서 근거를 찾으세요. 채점한 뒤 <b>근거 위치 보기</b>를 누르면 지문에 표시돼요.");
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
       if (onControl(e)) return;
@@ -2797,6 +2897,70 @@
   }
 
   // ═════════════ 설정 ═════════════
+  // ═════════════ 사용 가이드 ═════════════
+  function vGuide() {
+    mission("guide");
+    const step = (n, ic, cls, t, d) => `<div class="g-step"><span class="g-n">${n}</span><span class="tico ${cls}">${ico(ic)}</span><div class="spacer"><b>${t}</b><div class="small muted">${d}</div></div></div>`;
+    const faq = (q, a) => `<details class="faq"><summary>${q}</summary><div>${a}</div></details>`;
+    const body = `${topBar("사용 가이드", { back: true, sub: "3분이면 토익핏을 제대로 쓰는 법을 알 수 있어요" })}
+      <section class="card g-card">
+        <h2 class="g-h">${ico("calendar")}하루 학습 루틴</h2>
+        <p class="small muted" style="margin:0 0 10px">홈의 <b>오늘의 학습</b> 버튼이 아래 순서대로 다음 할 일을 알려 줘요. 버튼만 따라가면 돼요.</p>
+        ${step(1, "repeat", "c-orange", "복습 먼저", "어제까지 외운 단어 중 잊을 때가 된 것부터. 먼저 하면 기억이 오래가요.")}
+        ${step(2, "layers", "c-blue", "새 단어", `목표 ${target()}점에 맞춘 하루 ${S.profile.daily}개. 카드로 뜻을 확인하고 퀴즈로 마무리해요.`)}
+        ${step(3, "target", "c-green", "오늘의 실전", "목표 점수와 진도에 맞춘 Part 2~7 문제 10분. 시험 2주 전부터는 하프 모의고사가 나와요.")}
+      </section>
+      <section class="card g-card">
+        <h2 class="g-h">${ico("layers")}단어 카드 버튼의 뜻</h2>
+        <div class="g-grade"><div><span class="badge bad">모름</span><span class="small">이번 학습 안에서 다시 나오고 오답노트에 모여요</span></div><div><span class="badge warn">헷갈림</span><span class="small">복습 간격을 한 단계 줄여요 (새 단어는 내일)</span></div><div><span class="badge ok">알아요</span><span class="small">복습 간격이 점점 길어져요</span></div></div>
+        <p class="small muted" style="margin:10px 0 0">처음 보는데 이미 아는 단어는 <b>알아요</b>를 누르면 3일 뒤 한 번 확인하고 넘어가요. 카드를 오른쪽으로 밀면 알아요, 왼쪽은 모름이에요.</p>
+      </section>
+      <section class="card g-card">
+        <h2 class="g-h">${ico("repeat")}복습은 언제 나와요?</h2>
+        <div class="g-ladder">${["1일", "3일", "7일", "14일", "30일"].map((d, i) => `<div><b>${d}</b><span>${i === 0 ? "첫 복습" : i === 3 ? "암기 완료" : ""}</span></div>`).join("")}</div>
+        <p class="small muted" style="margin:10px 0 0">맞힐 때마다 다음 복습까지의 간격이 늘어나고, 틀리면 처음부터 다시 짧아져요. 14일 간격까지 올라가면 <b>암기 완료</b>로 쳐요. 틀린 단어는 <b>복습 → 오답노트</b>에 자동으로 모여요.</p>
+      </section>
+      <section class="card g-card">
+        <h2 class="g-h">${ico("gauge")}예상 점수와 하프 모의고사</h2>
+        <p class="small" style="margin:0 0 8px"><b>예상 점수</b>는 최근에 푼 LC·RC 문제(각 30문제 이상)의 정답률로 계산해요. 많이 풀수록 정확해져요.</p>
+        <p class="small" style="margin:0 0 8px"><b>하프 모의고사</b>는 실제 시험의 절반 분량이에요. LC 음성은 한 번만 나오고 RC는 시간을 재요. 모의고사 문제는 연습 문제에 나오지 않아서 처음 보는 문제로 실력을 잴 수 있어요.</p>
+        <p class="small muted" style="margin:0">같은 회차를 다시 풀면 <b>재응시</b>로 따로 표시되고 예상 점수에는 넣지 않아요. 첫 응시 점수가 기준이에요.</p>
+      </section>
+      <section class="card g-card">
+        <h2 class="g-h">${ico("target")}파트별 요령 한 줄</h2>
+        <div class="g-tips">
+          <div><b>Part 1</b> 사람 없는 사진의 'is being p.p.'(지금 ~되는 중)는 대부분 오답</div>
+          <div><b>Part 2</b> 돌려 말하는 응답('확인해 볼게요')이 정답인 경우가 많아요</div>
+          <div><b>Part 3·4</b> 음성 전에 문제를 먼저 읽어 두기</div>
+          <div><b>Part 5</b> 빈칸 앞뒤의 품사 자리부터 확인</div>
+          <div><b>Part 6</b> 문장 삽입은 앞뒤 문장과의 연결이 핵심</div>
+          <div><b>Part 7</b> 정답은 지문의 말을 다른 표현으로 바꿔 나와요</div>
+        </div>
+      </section>
+      <div class="section-h" style="margin-top:18px"><h2>자주 묻는 질문</h2></div>
+      <div class="card faq-list">
+        ${faq("하루 몇 개씩 외우는 게 좋아요?", "목표 점수와 시험일로 계산한 양이 기본이에요. 바쁘면 줄여도 되지만 <b>복습은 매일</b> 하는 게 중요해요. 설정 → 학습 계획에서 언제든 바꿀 수 있어요.")}
+        ${faq("하루를 건너뛰면 어떻게 돼요?", "밀린 복습이 다음 날 한꺼번에 나와요. 많으면 오늘은 복습만 해도 괜찮아요. 새 단어는 복습을 끝낸 뒤에 이어서 하세요.")}
+        ${faq("이미 아는 단어가 너무 많이 나와요", "설정 → <b>어휘 진단</b>을 해 보세요. 3분이면 아는 단계의 단어를 건너뛰게 해 드려요. 카드에서 바로 '알아요'를 눌러도 돼요.")}
+        ${faq("목표 점수를 바꾸면 기록이 지워지나요?", "아니요. 외운 단어와 문제 기록은 그대로이고, 앞으로 나올 단어의 범위와 난이도만 바뀌어요.")}
+        ${faq("인터넷이 없어도 되나요?", "네. 단어·음성·문제가 모두 앱 안에 들어 있어서 비행기 모드에서도 쓸 수 있어요.")}
+        ${faq("기록을 새 폰으로 옮기려면?", "설정 → <b>학습 기록 백업</b>으로 파일을 만들고, 새 폰에서 <b>백업 불러오기</b>를 하세요. 기록은 이 기기에만 저장돼요.")}
+        ${faq("실전 문제는 기출 문제인가요?", "아니요. 모든 문제는 실제 토익 형식에 맞춰 새로 만든 문제예요. 정답 근거와 해석까지 모두 들어 있어요.")}
+      </div>
+      <div class="grid2" style="margin-top:16px">
+        <button class="btn ghost" data-guide-mis>${ico("list")}시작 미션 다시 보기</button>
+        <button class="btn ghost" data-guide-tips>${ico("bulb")}화면 팁 다시 보기</button>
+      </div>`;
+    shell("settings", body);
+    $app.querySelector("[data-guide-mis]").addEventListener("click", () => {
+      if (!S.guide) S.guide = { start: today(), done: {}, hide: false };
+      S.guide.hide = false;
+      save();
+      toast("홈 화면에 시작 미션을 다시 띄웠어요");
+      go("#/home");
+    });
+    $app.querySelector("[data-guide-tips]").addEventListener("click", () => { S.tips = {}; save(); toast("화면마다 팁이 다시 한 번씩 나와요"); });
+  }
   function vSettings() {
     const p = S.profile;
     const s = S.settings;
@@ -2829,6 +2993,10 @@
         <button class="set-row" data-reset><span class="sl"><b style="color:var(--bad)">학습 기록 초기화</b><span>모든 진도와 기록을 지워요</span></span>${ico("trash")}</button>
       </div>
       ${CONFIG.premium.enabled ? `<div class="set-title">프리미엄</div><div class="set-group"><a class="set-row" href="#/premium"><span class="sl"><b>${S.premium ? "프리미엄 이용 중" : `프리미엄으로 전체 ${NDAYS}일 열기`}</b></span>${ico("crown")}</a></div>` : ""}
+      <div class="set-title">도움말</div>
+      <div class="set-group">
+        <a class="set-row" href="#/guide"><span class="sl"><b>사용 가이드</b><span>하루 학습 루틴 · 복습 원리 · 예상 점수 · 자주 묻는 질문</span></span>${ico("right")}</a>
+      </div>
       <div class="set-title">정보</div>
       <div class="set-group">
         <div class="set-row"><span class="sl"><b>버전</b></span><span class="sv">1.0.0 · 데이터 ${esc(D.version)}</span></div>
@@ -2844,6 +3012,7 @@
         const ok = await Notify.apply();
         if (s.remind && !ok) { s.remind = false; toast("알림 권한을 허용해야 알림을 받을 수 있어요"); }
         else toast(s.remind ? `매일 ${s.remindAt}에 알려 드릴게요` : "학습 알림을 껐어요");
+        if (s.remind) mission("remind");
         save();
         return vSettings();
       }
