@@ -659,7 +659,7 @@
     "qko": "리우 씨는 무엇을 하라고 요청받는가?",
     "o": [
      "Reschedule a delivery",
-     "Sharpen some tools",
+     "Contact Mr. Whitmore",
      "Visit a client's property",
      "Order additional materials"
     ],
@@ -672,7 +672,7 @@
       "s": "Jenna, could you ask the supplier to push it back to one o'clock?"
      }
     ],
-    "exp": "멘데스 씨는 리우 씨에게 석재 배송을 \"push it back to one o'clock(1시로 미뤄 달라)\"고 공급업체에 요청해 달라고 한다. \"push back → reschedule\"로 바꾼 (A)가 정답이다. 공구 날 갈기(B)는 팀 전체에 지시한 오전 업무이며, 고객 방문(C)이나 자재 추가 주문(D)은 언급되지 않았다."
+    "exp": "멘데스 씨는 리우 씨에게 석재 배송을 \"push it back to one o'clock(1시로 미뤄 달라)\"고 공급업체에 요청해 달라고 한다. \"push back → reschedule\"로 바꾼 (A)가 정답이다. 휘트모어 씨에게 연락하는 것(B)은 리우 씨가 스스로 제안했지만 멘데스 씨가 이미 어젯밤에 통화했다며 필요 없다고 했고, 고객 집 방문(C)이나 자재 추가 주문(D)은 언급되지 않았다."
    }
   ],
   "id": "p7-008"
@@ -2325,7 +2325,7 @@
     "ko": [
      "4월 6일 월요일부터 노스게이트 플라자 주차장의 바닥 재포장 및 도색 작업이 진행됩니다. 이용 가능한 주차 공간을 최대한 확보하기 위해 작업은 한 층씩 진행됩니다. [1] 각 층은 약 일주일 동안 폐쇄될 예정입니다.",
      "1층이 가장 먼저 폐쇄되고, 이어서 2층, 3층, 4층 순으로 진행됩니다. 주차장의 장애인 전용 주차 공간이 모두 1층에 있으므로, 그 주에는 2층 엘리베이터 근처에 임시 장애인 전용 주차 공간을 표시해 둡니다. [2] 주차장 입구의 표지판에 그날 폐쇄되는 층이 표시됩니다. [3]",
-     "공사 기간 동안 월 주차권을 소지한 입주사 직원은 플라자에서 동쪽으로 한 블록 떨어진 엘름우드 스트리트 노상 주차장에도 무료로 주차하실 수 있습니다. [4] 엘름우드 스트리트 주차장을 이용하는 방문객에게는 그 주차장의 일반 시간당 요금이 부과됩니다.",
+     "공사 기간 동안 월 주차권을 소지한 입주사 직원은 플라자에서 동쪽으로 한 블록 떨어진 엘름우드 스트리트 지상 주차장에도 무료로 주차하실 수 있습니다. [4] 엘름우드 스트리트 주차장을 이용하는 방문객에게는 그 주차장의 일반 시간당 요금이 부과됩니다.",
      "이번 공사로 다소 불편을 겪으실 수 있다는 점을 잘 알고 있습니다. 하지만 기존 바닥은 15년이 넘었으며, 물과 제설용 소금으로 인한 추가 손상을 막으려면 보수가 꼭 필요합니다. 문의 사항은 110호 건물 관리 사무소로 해 주십시오.",
      "노스게이트 플라자 건물 관리 사무소"
     ],
@@ -2640,13 +2640,13 @@
     ],
     "paras": [
      "I'm pleased to share that, beginning March 3, our phone support line will be available from 7:00 A.M. to 10:00 P.M. on weekdays, up from the current 8:00 A.M. to 6:00 P.M. This change responds to our recent customer survey, in which nearly a third of respondents said they had trouble reaching us outside of standard business hours.",
-     "To cover the additional hours without asking anyone to work longer days, we will move from a single shift to two overlapping shifts: an early shift from 7:00 A.M. to 3:30 P.M. and a late shift from 1:30 P.M. to 10:00 P.M. The overlap will allow both shifts to attend our weekly team meeting, which will be moved to Thursdays at 2:00 P.M.",
+     "To cover the additional hours without asking anyone to work longer days, we will move from a single shift to two overlapping shifts: an early shift from 7:00 A.M. to 3:30 P.M. and a late shift from 1:30 P.M. to 10:00 P.M. The overlap will allow both shifts to attend our weekly team meeting, which will be moved from Monday mornings to Thursdays at 2:00 P.M.",
      "We will also be adding four new support representatives, who will begin training in mid-February. Several of you have expressed interest in mentoring new hires, and I would welcome additional volunteers.",
      "Please indicate your shift preference on the form that Ji-ho Park will circulate tomorrow. We will do our best to honor everyone's first choice, but assignments will be based on seniority if too many people request the same shift."
     ],
     "ko": [
      "3월 3일부터 우리 전화 상담 서비스 운영 시간이 평일 현재 오전 8시~오후 6시에서 오전 7시~오후 10시로 늘어난다는 소식을 기쁜 마음으로 전합니다. 이번 변경은 최근 고객 설문 조사 결과에 따른 것으로, 그 조사에서 응답자의 거의 3분의 1이 일반 업무 시간 외에는 우리와 연락하기 어려웠다고 답했습니다.",
-     "누구에게도 더 긴 근무를 요구하지 않고 늘어난 시간을 감당하기 위해, 단일 교대 근무에서 시간이 겹치는 2교대 근무로 바꿉니다. 오전 7시~오후 3시 30분의 조기 근무조와 오후 1시 30분~오후 10시의 늦은 근무조입니다. 근무 시간이 겹치는 덕분에 두 근무조 모두 주간 팀 회의에 참석할 수 있으며, 회의는 목요일 오후 2시로 옮겨집니다.",
+     "누구에게도 더 긴 근무를 요구하지 않고 늘어난 시간을 감당하기 위해, 단일 교대 근무에서 시간이 겹치는 2교대 근무로 바꿉니다. 오전 7시~오후 3시 30분의 조기 근무조와 오후 1시 30분~오후 10시의 늦은 근무조입니다. 근무 시간이 겹치는 덕분에 두 근무조 모두 주간 팀 회의에 참석할 수 있으며, 회의는 월요일 오전에서 목요일 오후 2시로 옮겨집니다.",
      "또한 신규 상담원 4명을 충원하며, 이들은 2월 중순에 교육을 시작합니다. 여러분 중 몇 분이 신입 직원 멘토링에 관심을 보여 주셨는데, 자원해 주실 분이 더 있다면 환영합니다.",
      "내일 박지호 씨가 돌릴 양식에 희망 근무조를 표시해 주십시오. 모든 분의 1순위 희망을 반영하도록 최선을 다하겠지만, 같은 근무조를 신청한 사람이 너무 많으면 근속 연수에 따라 배정하겠습니다."
     ],
@@ -2689,10 +2689,10 @@
      {
       "d": 0,
       "p": 1,
-      "s": "which will be moved to Thursdays at 2:00 P.M."
+      "s": "which will be moved from Monday mornings to Thursdays at 2:00 P.M."
      }
     ],
-    "exp": "회의가 목요일로 '옮겨질 것(will be moved to Thursdays)'이라고 했으므로 지금은 목요일이 아닌 다른 요일에 열린다고 추론할 수 있다. 새 시간은 두 근무조가 겹치는 오후 2시라 저녁이 아니며, 신입 상담원이 회의를 이끈다거나 회의 시간이 줄어든다는 말은 없다."
+    "exp": "회의가 \"moved from Monday mornings to Thursdays(월요일 오전에서 목요일로 옮겨진다)\"고 했으므로 지금은 목요일이 아닌 다른 요일에 열린다는 (A)가 정답이다. 새 시간은 두 근무조가 겹치는 오후 2시라 저녁이 아니며(B), 신입 상담원이 회의를 이끈다거나(C) 회의 시간이 줄어든다는(D) 말은 없다."
    },
    {
     "q": "What does Ms. Fontaine invite some employees to do?",
@@ -2910,7 +2910,7 @@
       "s": "Because you will be relocating from St. Ellis, we will also reimburse up to $3,000 in moving expenses."
      }
     ],
-    "exp": "세인트 엘리스에서 이주해 올 것이라고 했으므로 리베라 씨는 지금 근무지인 레이크뷰가 아닌 곳에 살고 있다. relocating from St. Ellis → currently lives outside Lakeview 로 추론된다. 2차 면접을 언급했으므로 면접은 최소 두 번이었고, 근무지는 레이크뷰 사무소이다."
+    "exp": "세인트 엘리스에서 이주해 올 것이라고 했으므로 리베라 씨는 앞으로 근무할 레이크뷰가 아닌 곳에 살고 있다. relocating from St. Ellis → currently lives outside Lakeview 로 추론된다. 2차 면접을 언급했으므로 면접은 최소 두 번이었고, 근무지는 레이크뷰 사무소이다."
    },
    {
     "q": "What is NOT mentioned as a benefit of the position?",
@@ -3407,7 +3407,7 @@
       "s": "we will provide certification training to the right candidate"
      }
     ],
-    "exp": "the right candidate는 '그 자리에 알맞은 지원자', 즉 적임자를 뜻하므로 right → suitable이 정답이다. correct도 right의 흔한 뜻이지만 답이 '정확한'이라는 의미여서 사람(candidate)을 수식하는 이 문맥에는 맞지 않는다. 이처럼 가장 흔한 뜻의 보기는 동의어 문제에서 자주 나오는 함정이다."
+    "exp": "the right candidate는 '그 자리에 알맞은 지원자', 즉 적임자를 뜻하므로 right → suitable이 정답이다. correct도 right의 흔한 뜻이지만 '(답이) 정확한'이라는 의미여서 사람(candidate)을 수식하는 이 문맥에는 맞지 않는다. 이처럼 가장 흔한 뜻의 보기는 동의어 문제에서 자주 나오는 함정이다."
    }
   ],
   "id": "p7-033"
@@ -3476,8 +3476,8 @@
     "exp": "전시품과 단종 상품은 현 상태로 판매되며 반품할 수 없다고 했다. cannot be returned → not eligible for refunds(환불 대상이 아니다)로 바뀌었다. 전시품은 30~50퍼센트보다 '더 낮은' 가격이므로 정확히 30퍼센트라는 보기는 틀리고, 판매 장소도 새 전시장이 아니라 그랜트 애비뉴 매장이다."
    },
    {
-    "q": "If a customer orders a sofa for delivery on August 14, what will most likely happen?",
-    "qko": "고객이 8월 14일에 배송으로 소파를 주문한다면 어떤 일이 일어나겠는가?",
+    "q": "If a customer orders a sofa on August 14 and requests delivery, what will most likely happen?",
+    "qko": "고객이 8월 14일에 소파를 주문하고 배송을 요청한다면 어떤 일이 일어나겠는가?",
     "o": [
      "The sofa will arrive within a week.",
      "The customer will have to pick it up from the store.",
@@ -4927,7 +4927,7 @@
       "s": "Our partner, Corbin Bakery, will once again cover breakfast for all participants."
      }
     ],
-    "exp": "cover breakfast for all participants는 '참가자 전원의 아침 식사 비용을 대다'라는 뜻이므로 pay for(~의 비용을 내다)가 정답이다. cover는 '보도하다'(report on), '가리다·숨기다'(conceal)의 뜻도 있지만 빵집이 아침 식사를 '보도하거나 숨긴다'는 것은 문맥에 맞지 않고, replace(대체하다)라는 뜻은 없다."
+    "exp": "cover breakfast for all participants는 '참가자 전원의 아침 식사 비용을 대다'라는 뜻이므로 pay for(~의 비용을 내다)가 정답이다. cover는 '보도하다'(report on), '가리다·숨기다'(conceal)의 뜻도 있지만 빵집이 아침 식사를 '보도하거나 숨긴다'는 것은 문맥에 맞지 않고, replace(대신하다)는 '남의 근무를 대신 맡다(cover for)'의 뜻에 가까워 이 문맥과 맞지 않는다."
    }
   ],
   "id": "p7-046"
@@ -6564,10 +6564,10 @@
     "q": "Why did Ms. Nandakumar write the e-mail?",
     "qko": "난다쿠마르 씨는 왜 이메일을 썼는가?",
     "o": [
-     "To ask about changing her membership plan",
+     "To upgrade her membership",
      "To cancel her membership",
-     "To complain about noise",
-     "To apply for a job"
+     "To report a noise problem",
+     "To apply for a staff position"
     ],
     "a": 0,
     "type": "주제·목적",
@@ -6578,7 +6578,7 @@
       "s": "I would like to switch to the plan that would best suit our needs starting next month."
      }
     ],
-    "exp": "'I would like to switch to the plan that would best suit our needs'라고 했으므로 회원권 요금제를 바꾸려는 것이 목적이다(switch to the plan → changing her membership plan). 다른 회원을 방해하지 않을 공간이 필요하다고 했을 뿐 소음에 대해 불평한 것은 아니며, 해지가 아니라 업그레이드를 원한다."
+    "exp": "'I would like to switch to the plan that would best suit our needs'라고 했으므로 회원권 요금제를 바꾸려는 것이 목적이다. 직원이 늘어 더 큰 공간이 필요하므로 상위 요금제로 올리려는 것이다(switch to the plan that would best suit our needs → upgrade her membership). 다른 회원을 방해하지 않을 공간이 필요하다고 했을 뿐 소음 문제를 알린 것은 아니며, 해지가 아니라 업그레이드를 원한다."
    },
    {
     "q": "Which membership will Ms. Nandakumar most likely choose?",
@@ -6926,7 +6926,7 @@
      "They will be recorded.",
      "They require an extra fee.",
      "They take place after lunch.",
-     "They have a maximum number of attendees."
+     "They have limited seating."
     ],
     "a": 3,
     "type": "사실 확인",
@@ -6937,7 +6937,7 @@
       "s": "Sessions in Room 204 and Room 210 are limited to 60 participants"
      }
     ],
-    "exp": "'limited to 60 participants'는 참가 인원 상한이 있다는 뜻이다(limited to 60 participants → a maximum number of attendees). 일정표에서 204호 세션 하나는 오전 10시 30분이므로 모두 점심 이후라는 보기는 틀렸고, 등록(register)은 언급되지만 추가 요금은 나오지 않는다."
+    "exp": "'limited to 60 participants'는 참가 인원 상한이 있다는 뜻이다(limited to 60 participants → limited seating). 일정표에서 204호 세션 하나는 오전 10시 30분이므로 모두 점심 이후라는 보기는 틀렸고, 등록(register)은 언급되지만 추가 요금은 나오지 않는다."
    },
    {
     "q": "Why is Mr. Szabo concerned?",
@@ -7114,7 +7114,7 @@
     "q": "What is suggested about Whitcomb Family Mill?",
     "qko": "휘트컴 가족 제분소에 대해 암시된 것은?",
     "o": [
-     "It satisfies one of Ms. Marangoni's purchasing preferences.",
+     "It meets one of Ms. Marangoni's preferences.",
      "It recently moved closer to Hartfield.",
      "It plans to open a shop in Pemberton Mill.",
      "It began as a stall at a farmers market."
@@ -7523,7 +7523,7 @@
     "q": "What does Ms. Chowdhury want to do?",
     "qko": "차우두리 씨는 무엇을 하고 싶어 하는가?",
     "o": [
-     "Receive a reduced price for paying early",
+     "Get an early payment discount",
      "Speak with Mr. Lowry in person",
      "Return the brochures",
      "Increase the quantity of her order"
@@ -7542,7 +7542,7 @@
       "s": "Customers who pay within 10 days of the invoice date receive a 5 percent discount."
      }
     ],
-    "exp": "'pay this week so that we can take advantage of your early payment discount'라고 했으므로 일찍 지불해서 할인을 받고 싶어 한다(early payment discount → a reduced price for paying early). 송장에 따르면 발행일로부터 10일 이내 지불 시 5퍼센트 할인이다. 인쇄물은 마음에 든다고 했으므로 반품 보기는 틀렸다."
+    "exp": "'pay this week so that we can take advantage of your early payment discount'라고 했으므로 일찍 지불해서 할인을 받고 싶어 한다(take advantage of your early payment discount → get an early payment discount). 송장에 따르면 발행일로부터 10일 이내 지불 시 5퍼센트 할인이다. 인쇄물은 마음에 든다고 했으므로 반품 보기는 틀렸다."
    }
   ],
   "id": "p7-067"
@@ -8185,9 +8185,9 @@
     "q": "What must Ms. Vasquez do at least one week before her event?",
     "qko": "바스케스 씨는 행사 최소 일주일 전에 무엇을 해야 하는가?",
     "o": [
-     "Pay a deposit",
+     "Pay a deposit for the room",
      "Confirm the number of guests",
-     "Test the projector",
+     "Test the projector in the room",
      "Ask permission to serve refreshments"
     ],
     "a": 3,
@@ -8533,7 +8533,7 @@
     "o": [
      "Attend a meeting at the community center",
      "Call Mr. Pritchard's office",
-     "Submit it on the city's Web site by the end of June",
+     "Submit it online by the end of June",
      "Purchase an annual membership"
     ],
     "a": 2,
@@ -8550,7 +8550,7 @@
       "s": "Residents can suggest locations for future stations on the city's Web site through June 30."
      }
     ],
-    "exp": "편지에서 콜먼 씨는 리지뷰 주민 센터 근처에 대여소를 설치해 달라고 요청했고, 기사에 따르면 주민들은 6월 30일까지 시 웹사이트에서 대여소 위치를 제안할 수 있다(through June 30 → by the end of June). 주민 센터는 그녀가 제안한 장소일 뿐 회의가 열린다는 내용은 없다."
+    "exp": "편지에서 콜먼 씨는 리지뷰 주민 센터 근처에 대여소를 설치해 달라고 요청했고, 기사에 따르면 주민들은 6월 30일까지 시 웹사이트에서 대여소 위치를 제안할 수 있다(on the city's Web site through June 30 → online by the end of June). 주민 센터는 그녀가 제안한 장소일 뿐 회의가 열린다는 내용은 없다."
    },
    {
     "q": "What concern does Ms. Coleman express about downtown streets?",
@@ -9075,7 +9075,7 @@
     "o": [
      "On the fourth floor",
      "On the seventh floor",
-     "At home",
+     "From their homes",
      "In a conference room"
     ],
     "a": 2,
@@ -9136,7 +9136,7 @@
     "ko": [
      "베켓 씨께,",
      "앞으로의 변경 사항을 알려 주셔서 감사합니다. 아쉽기는 하지만 그 이유는 이해합니다.",
-     "저희는 청첩장과 연하장을 많이 인쇄하기 때문에 용지 구매의 대부분이 카드지입니다. 현재 가격을 적용받기 위해 카드지 200팩을 즉시 주문하고 싶습니다. 이 주문을 이달 말까지 배송받을 수 있는지 확인해 주십시오.",
+     "저희는 청첩장과 축하 카드를 많이 인쇄하기 때문에 용지 구매의 대부분이 카드지입니다. 현재 가격을 적용받기 위해 카드지 200팩을 즉시 주문하고 싶습니다. 이 주문을 이달 말까지 배송받을 수 있는지 확인해 주십시오.",
      "말씀하신 1년 계약에도 관심이 있습니다. 다만 제가 3월 10일까지 출장 중이라, 계약 조건을 논의하기 위해 3월 12일이나 13일에 통화 일정을 잡고 싶습니다.",
      "델마 인쇄 구매 담당 강현우 드림"
     ],
@@ -9182,7 +9182,7 @@
       "s": "Prices for envelopes and labels will not change."
      }
     ],
-    "exp": "'Prices for envelopes and labels will not change'에서 봉투와 라벨 가격은 그대로임을 알 수 있다. 복사용지와 카드지는 각각 8퍼센트, 12퍼센트 오르며, 연하장은 델마 인쇄가 만드는 제품이지 파인크레스트가 파는 제품이 아니다."
+    "exp": "'Prices for envelopes and labels will not change'에서 봉투와 라벨 가격은 그대로임을 알 수 있다. 복사용지와 카드지는 각각 8퍼센트, 12퍼센트 오르며, 축하 카드는 델마 인쇄가 만드는 제품이지 파인크레스트가 파는 제품이 아니다."
    },
    {
     "q": "By what percentage will the price of the product that Delmar Printing buys most increase?",

@@ -3711,7 +3711,7 @@
    {
     "sp": "M",
     "en": "You're the manager, the salesperson, and, at the end of the month, the accountant.",
-    "ko": "관리자이자 영업 사원이고, 월말이 되면 회계 담당자까지 되지요."
+    "ko": "관리자이자 영업 사원이고, 월말이 되면 회계 담당자까지 됩니다."
    },
    {
     "sp": "M",
@@ -3935,7 +3935,7 @@
    {
     "sp": "W",
     "en": "Between household chores and a noisy neighborhood, getting things done isn't always easy.",
-    "ko": "집안일에 시끄러운 동네까지, 일을 해내기가 늘 쉽지만은 않지요."
+    "ko": "집안일에 시끄러운 동네까지, 일을 해내기가 늘 쉽지만은 않습니다."
    },
    {
     "sp": "W",
@@ -4637,5 +4637,1540 @@
    }
   ],
   "id": "p4-045"
+ },
+ {
+  "part": 4,
+  "talk": "연설·소개",
+  "lv": 1,
+  "lines": [
+   {
+    "sp": "M",
+    "en": "Good morning, everyone, and welcome to the second day of the Midwest Logistics Forum.",
+    "ko": "여러분, 안녕하십니까. 중서부 물류 포럼 둘째 날에 오신 것을 환영합니다."
+   },
+   {
+    "sp": "M",
+    "en": "I'm Daniel Ferreira, and I'll be your host for this morning's sessions.",
+    "ko": "저는 대니얼 페레이라이며, 오늘 오전 세션의 진행을 맡았습니다."
+   },
+   {
+    "sp": "M",
+    "en": "It's my pleasure to introduce our keynote speaker, Dr. Helen Okafor.",
+    "ko": "기조연설자이신 헬렌 오카포 박사님을 소개하게 되어 기쁩니다."
+   },
+   {
+    "sp": "M",
+    "en": "Dr. Okafor spent fifteen years designing warehouse systems before founding her own consulting firm, Brightpath Supply Solutions.",
+    "ko": "오카포 박사님은 15년간 창고 시스템을 설계하신 뒤 컨설팅 회사인 브라이트패스 서플라이 솔루션스를 직접 설립하셨습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Last year, she published a widely read book on reducing delivery delays in rural areas.",
+    "ko": "작년에는 농촌 지역의 배송 지연을 줄이는 방법에 관한 책을 출간해 많은 독자에게 읽혔습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Today, she'll be sharing some of the practical strategies from that book.",
+    "ko": "오늘은 그 책에 담긴 실용적인 전략 몇 가지를 들려주실 예정입니다."
+   },
+   {
+    "sp": "M",
+    "en": "After her talk, copies will be available for purchase at the registration desk, and Dr. Okafor has kindly agreed to sign them.",
+    "ko": "강연이 끝난 뒤 등록 데스크에서 책을 구입하실 수 있으며, 오카포 박사님께서 흔쾌히 사인도 해 주시기로 하셨습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Please join me in giving her a warm welcome.",
+    "ko": "따뜻한 박수로 맞아 주시기 바랍니다."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "Where is the talk most likely taking place?",
+    "qko": "담화는 어디에서 이루어지고 있겠는가?",
+    "o": [
+     "At a bookstore",
+     "At an industry conference",
+     "At a company training session",
+     "At a university graduation"
+    ],
+    "a": 1,
+    "type": "화자·장소",
+    "ev": [
+     0
+    ],
+    "exp": "첫 문장 welcome to the second day of the Midwest Logistics Forum(물류 포럼 둘째 날)에서 업계 행사임을 알 수 있다 → 'an industry conference'. 책 판매와 사인이 언급되지만 장소가 서점인 것은 아니며, 사내 교육이나 졸업식이라는 단서는 없다."
+   },
+   {
+    "q": "What did Dr. Okafor do last year?",
+    "qko": "오카포 박사는 작년에 무엇을 했는가?",
+    "o": [
+     "She founded a consulting firm.",
+     "She opened a new warehouse.",
+     "She received an industry award.",
+     "She published a book."
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     4
+    ],
+    "exp": "Last year, she published a widely read book → 작년에 한 일은 책 출간이다. 컨설팅 회사 설립도 언급되지만 그 시점이 작년이라는 말은 없고, 창고를 열었다거나 상을 받았다는 내용도 없다."
+   },
+   {
+    "q": "According to the speaker, what can listeners do after the talk?",
+    "qko": "화자에 따르면, 청자들은 강연 후에 무엇을 할 수 있는가?",
+    "o": [
+     "Have a book signed",
+     "Register for a workshop",
+     "Meet with a consultant",
+     "Tour a warehouse"
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     6
+    ],
+    "exp": "copies will be available for purchase ... Dr. Okafor has kindly agreed to sign them → 강연 후 책을 사서 저자의 사인을 받을 수 있다('Have a book signed'). 등록 데스크(registration desk)가 나오지만 워크숍 등록이 아니라 책을 파는 장소로 언급된 것이다."
+   }
+  ],
+  "id": "p4-046"
+ },
+ {
+  "part": 4,
+  "talk": "연설·소개",
+  "lv": 2,
+  "lines": [
+   {
+    "sp": "W",
+    "en": "Thank you all for coming to the Harborview Hotel's annual staff appreciation dinner.",
+    "ko": "하버뷰 호텔의 연례 직원 감사 만찬에 와 주신 모든 분께 감사드립니다."
+   },
+   {
+    "sp": "W",
+    "en": "Tonight, we're presenting our Employee of the Year award to someone many of you know well, Marcus Bell from our front desk team.",
+    "ko": "오늘 밤 올해의 직원상은 여러분 중 많은 분이 잘 아시는 분, 프런트 데스크 팀의 마커스 벨 씨에게 수여합니다."
+   },
+   {
+    "sp": "W",
+    "en": "This year, Marcus trained six new receptionists and wrote a check-in guide that's now used at all four of our locations.",
+    "ko": "올해 마커스 씨는 신입 접수 직원 여섯 명을 교육했고, 체크인 안내서를 만들었는데 이 안내서는 현재 저희 네 개 지점 모두에서 쓰이고 있습니다."
+   },
+   {
+    "sp": "W",
+    "en": "He also received more positive mentions in guest reviews than any other staff member.",
+    "ko": "또한 고객 후기에서 다른 어떤 직원보다 많은 칭찬을 받았습니다."
+   },
+   {
+    "sp": "W",
+    "en": "And when our reservation system went down during the busiest weekend of the summer, Marcus checked guests in by hand for nine hours straight.",
+    "ko": "그리고 여름 중 가장 바쁜 주말에 예약 시스템이 멈췄을 때, 마커스 씨는 아홉 시간 내내 손으로 투숙객 체크인을 처리했습니다."
+   },
+   {
+    "sp": "W",
+    "en": "Believe me, that's not in the job description.",
+    "ko": "정말이지, 그건 직무 기술서에 있는 일이 아닙니다."
+   },
+   {
+    "sp": "W",
+    "en": "As a token of our appreciation, Marcus will receive an extra week of paid vacation.",
+    "ko": "감사의 표시로 마커스 씨에게는 일주일의 유급 휴가가 추가로 주어집니다."
+   },
+   {
+    "sp": "W",
+    "en": "Marcus, please come up and say a few words.",
+    "ko": "마커스 씨, 앞으로 나오셔서 한 말씀 해 주십시오."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "What did Marcus Bell create?",
+    "qko": "마커스 벨은 무엇을 만들었는가?",
+    "o": [
+     "A training video for receptionists",
+     "A system for collecting guest reviews",
+     "A guide used at several locations",
+     "A new reservation system"
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     2
+    ],
+    "exp": "wrote a check-in guide that's now used at all four of our locations → 'A guide used at several locations'. 신입 접수 직원을 교육한 것은 맞지만 교육 영상을 만들었다는 말은 없고, 고객 후기와 예약 시스템은 다른 맥락에서 나온 단어를 이용한 함정이다."
+   },
+   {
+    "q": "Why does the speaker say, \"that's not in the job description\"?",
+    "qko": "화자는 왜 \"그건 직무 기술서에 있는 일이 아닙니다\"라고 말하는가?",
+    "o": [
+     "To point out an error in a document",
+     "To stress that Mr. Bell went beyond his usual duties",
+     "To explain why a system stopped working",
+     "To suggest that job descriptions be updated"
+    ],
+    "a": 1,
+    "type": "의도 파악",
+    "ev": [
+     4,
+     5
+    ],
+    "exp": "예약 시스템이 멈췄을 때 아홉 시간 내내 손으로 체크인을 처리했다는 말 바로 뒤에 한 말이므로, 벨 씨가 본래 업무 범위를 넘어 헌신했음을 강조하려는 의도다. 문서 오류를 지적하거나 직무 기술서 수정을 제안하는 맥락이 아니며, 시스템이 멈춘 이유도 설명하지 않았다."
+   },
+   {
+    "q": "What will Mr. Bell receive?",
+    "qko": "벨 씨는 무엇을 받을 것인가?",
+    "o": [
+     "A cash bonus",
+     "A promotion",
+     "A free hotel stay",
+     "Additional paid time off"
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     6
+    ],
+    "exp": "an extra week of paid vacation(일주일의 추가 유급 휴가) → 'Additional paid time off'. 현금 보너스, 승진, 무료 숙박은 언급되지 않았다."
+   }
+  ],
+  "id": "p4-047"
+ },
+ {
+  "part": 4,
+  "talk": "연설·소개",
+  "lv": 2,
+  "lines": [
+   {
+    "sp": "M",
+    "en": "If I could have everyone's attention for a few minutes, please.",
+    "ko": "여러분, 잠시만 주목해 주시기 바랍니다."
+   },
+   {
+    "sp": "M",
+    "en": "As most of you know, today is Patricia Gomez's last day with Larkfield Engineering after twenty-six years.",
+    "ko": "대부분 아시다시피 오늘은 패트리샤 고메즈 씨가 26년간 몸담은 라크필드 엔지니어링에서 근무하는 마지막 날입니다."
+   },
+   {
+    "sp": "M",
+    "en": "Patricia joined us as a drafting assistant when we had only twelve employees, and she's retiring as our director of operations.",
+    "ko": "패트리샤 씨는 직원이 열두 명뿐이던 시절 제도 보조로 입사해 운영 이사로 은퇴하십니다."
+   },
+   {
+    "sp": "M",
+    "en": "Along the way, she led our move to the current headquarters and launched the internship program that brought many of you here.",
+    "ko": "그동안 현재 본사로의 이전을 이끌었고, 여러분 중 많은 분이 이곳에 오게 된 인턴십 프로그램도 만드셨습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Patricia tells me she plans to spend a lot of her free time sailing with her husband.",
+    "ko": "패트리샤 씨는 남편과 함께 요트를 타며 여가를 많이 보낼 계획이라고 하십니다."
+   },
+   {
+    "sp": "M",
+    "en": "But she isn't leaving us entirely. She's agreed to serve as an adviser on our bridge project in Clayton next spring.",
+    "ko": "하지만 저희를 완전히 떠나시는 것은 아닙니다. 내년 봄 클레이턴 교량 프로젝트에 자문 역할을 맡아 주시기로 하셨습니다."
+   },
+   {
+    "sp": "M",
+    "en": "To thank her, we've put together a photo album filled with messages from all of you, which I'll present to her now.",
+    "ko": "감사의 뜻으로 여러분 모두의 메시지를 담은 사진첩을 준비했으며, 지금 전해 드리겠습니다."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "What is Ms. Gomez's current position?",
+    "qko": "고메즈 씨의 현재 직책은 무엇인가?",
+    "o": [
+     "Drafting assistant",
+     "Director of operations",
+     "Internship coordinator",
+     "Human resources manager"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     2
+    ],
+    "exp": "she's retiring as our director of operations → 운영 이사로 은퇴하므로 현재 직책은 운영 이사다. drafting assistant(제도 보조)는 26년 전 입사할 때의 직책이므로 시점 혼동 함정이고, 인턴십 프로그램은 그녀가 만든 것이지 그녀의 직책이 아니다."
+   },
+   {
+    "q": "According to the speaker, what did Ms. Gomez do for the company?",
+    "qko": "화자에 따르면, 고메즈 씨는 회사를 위해 무엇을 했는가?",
+    "o": [
+     "She designed a bridge in Clayton.",
+     "She hired the company's first employees.",
+     "She started an internship program.",
+     "She opened a branch office."
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     3
+    ],
+    "exp": "launched the internship program → 'started an internship program'. 클레이턴 교량은 앞으로 자문할 프로젝트이고, 그녀는 본사 '이전'을 이끈 것이지 지사를 연 것이 아니다. 직원이 열두 명일 때 입사했다는 말만 있을 뿐 첫 직원을 채용했다는 내용은 없다."
+   },
+   {
+    "q": "What will Ms. Gomez do next spring?",
+    "qko": "고메즈 씨는 내년 봄에 무엇을 할 것인가?",
+    "o": [
+     "Advise on a construction project",
+     "Lead a training program",
+     "Move to another city",
+     "Write a book about the company"
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     5
+    ],
+    "exp": "She's agreed to serve as an adviser on our bridge project in Clayton next spring → 'Advise on a construction project'(bridge project → construction project). 다른 도시로 이사한다거나 교육 프로그램을 이끈다는 말은 없다."
+   }
+  ],
+  "id": "p4-048"
+ },
+ {
+  "part": 4,
+  "talk": "연설·소개",
+  "lv": 3,
+  "lines": [
+   {
+    "sp": "W",
+    "en": "Good evening, and thank you for joining us to celebrate Fenwick Foods' fiftieth anniversary.",
+    "ko": "안녕하십니까. 펜윅 푸즈 창립 50주년을 함께 축하해 주셔서 감사합니다."
+   },
+   {
+    "sp": "W",
+    "en": "As the timeline in your program shows, we've come a long way since our founder, Rosa Fenwick, opened a single bakery.",
+    "ko": "프로그램에 실린 연표에서 보시듯, 저희는 창업주 로사 펜윅 씨가 빵집 단 한 곳을 연 이후 먼 길을 걸어왔습니다."
+   },
+   {
+    "sp": "W",
+    "en": "Of all these milestones, the one that means the most to me is the year we first sold our products outside the country.",
+    "ko": "이 모든 이정표 가운데 제게 가장 의미 있는 것은 저희가 처음으로 해외에 제품을 판매한 해입니다."
+   },
+   {
+    "sp": "W",
+    "en": "That's because it's the year I joined the company as a sales representative.",
+    "ko": "제가 영업 사원으로 회사에 입사한 해이기 때문입니다."
+   },
+   {
+    "sp": "W",
+    "en": "Back then, our international team was just three people working out of a storage room.",
+    "ko": "당시 해외 사업팀은 창고 방 하나에서 일하던 세 명이 전부였습니다."
+   },
+   {
+    "sp": "W",
+    "en": "Today, our products are sold in eleven countries, and we employ more than two thousand people.",
+    "ko": "현재 저희 제품은 11개국에서 판매되고 있으며, 직원은 2천 명이 넘습니다."
+   },
+   {
+    "sp": "W",
+    "en": "To mark this anniversary, we're establishing a scholarship fund for students of food science, and details on how to apply will be posted on our Web site next week.",
+    "ko": "이번 창립 기념일을 맞아 식품 과학 전공 학생을 위한 장학 기금을 마련하며, 신청 방법에 관한 자세한 내용은 다음 주 저희 웹사이트에 게시됩니다."
+   },
+   {
+    "sp": "W",
+    "en": "Now, please enjoy your dinner.",
+    "ko": "그럼 저녁 식사를 즐기시기 바랍니다."
+   }
+  ],
+  "graphic": {
+   "type": "table",
+   "title": "Fenwick Foods Milestones",
+   "cols": [
+    "Year",
+    "Milestone"
+   ],
+   "rows": [
+    [
+     "1976",
+     "First bakery opens in Ashford"
+    ],
+    [
+     "1989",
+     "Frozen food line launched"
+    ],
+    [
+     "2004",
+     "Exports to Canada begin"
+    ],
+    [
+     "2015",
+     "Second factory built in Dalton"
+    ]
+   ]
+  },
+  "qs": [
+   {
+    "q": "What is the purpose of the event?",
+    "qko": "행사의 목적은 무엇인가?",
+    "o": [
+     "To celebrate a company milestone",
+     "To introduce a new product line",
+     "To honor a retiring employee",
+     "To open a new factory"
+    ],
+    "a": 0,
+    "type": "주제·목적",
+    "ev": [
+     0
+    ],
+    "exp": "celebrate Fenwick Foods' fiftieth anniversary → 'celebrate a company milestone'(창립 50주년이라는 기념비적 시점). 연표의 냉동식품 라인 출시나 제2공장 건립은 과거의 일일 뿐 이 행사의 목적이 아니며, 은퇴하는 직원에 대한 언급도 없다."
+   },
+   {
+    "q": "Look at the graphic. In what year did the speaker join the company?",
+    "qko": "시각 자료를 보시오. 화자는 몇 년에 회사에 입사했는가?",
+    "o": [
+     "1976",
+     "1989",
+     "2004",
+     "2015"
+    ],
+    "a": 2,
+    "type": "시각 자료",
+    "ev": [
+     2,
+     3
+    ],
+    "exp": "화자는 처음으로 해외에 제품을 판매한 해(the year we first sold our products outside the country)에 입사했다고 했다. 연표에서 해외 판매의 시작에 해당하는 항목은 'Exports to Canada begin'이므로 2004년이다. 1976년은 창업주가 첫 빵집을 연 해다."
+   },
+   {
+    "q": "What does the speaker say will happen next week?",
+    "qko": "화자는 다음 주에 무슨 일이 있을 것이라고 말하는가?",
+    "o": [
+     "A new factory will begin operating.",
+     "Information about a scholarship will be posted online.",
+     "Products will go on sale in more countries.",
+     "Commemorative gifts will be mailed to employees."
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     6
+    ],
+    "exp": "details on how to apply will be posted on our Web site next week → 장학금 신청 정보가 다음 주 웹사이트에 올라온다('posted online'). 11개국 판매는 현재 상황을 말한 것이고, 공장 가동이나 기념품 발송은 언급되지 않았다."
+   }
+  ],
+  "id": "p4-049"
+ },
+ {
+  "part": 4,
+  "talk": "연설·소개",
+  "lv": 1,
+  "lines": [
+   {
+    "sp": "M",
+    "en": "Welcome to Cedar Valley Medical Center, and congratulations on joining our nursing staff.",
+    "ko": "시더 밸리 의료원에 오신 것을 환영하며, 저희 간호 인력에 합류하신 것을 축하드립니다."
+   },
+   {
+    "sp": "M",
+    "en": "My name is Jonathan Pryce, and I'm the director of human resources.",
+    "ko": "저는 인사 담당 이사 조너선 프라이스입니다."
+   },
+   {
+    "sp": "M",
+    "en": "Today's orientation will run until four o'clock, and lunch will be provided in the cafeteria at noon.",
+    "ko": "오늘 오리엔테이션은 4시까지 진행되며, 정오에 구내식당에서 점심이 제공됩니다."
+   },
+   {
+    "sp": "M",
+    "en": "This morning, you'll receive your employee ID badges and take a tour of the main building.",
+    "ko": "오전에는 사원증을 받으시고 본관을 둘러보시게 됩니다."
+   },
+   {
+    "sp": "M",
+    "en": "In the afternoon, a senior nurse from each department will explain the procedures you'll follow on your units.",
+    "ko": "오후에는 각 부서의 선임 간호사가 여러분이 병동에서 따르게 될 절차를 설명해 드립니다."
+   },
+   {
+    "sp": "M",
+    "en": "Before we begin, please check that your name is spelled correctly on the sign-in sheet that's being passed around.",
+    "ko": "시작하기 전에, 지금 돌리고 있는 출석부에 여러분의 이름 철자가 맞게 적혀 있는지 확인해 주시기 바랍니다."
+   },
+   {
+    "sp": "M",
+    "en": "That's exactly how it will be printed on your badge.",
+    "ko": "그 철자 그대로 사원증에 인쇄되기 때문입니다."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "Who most likely are the listeners?",
+    "qko": "청자들은 누구이겠는가?",
+    "o": [
+     "Newly hired nurses",
+     "Hospital patients",
+     "Medical school students",
+     "Department managers"
+    ],
+    "a": 0,
+    "type": "화자·장소",
+    "ev": [
+     0
+    ],
+    "exp": "congratulations on joining our nursing staff → 간호 인력에 새로 합류한 사람들, 즉 신규 채용 간호사들이다. 부서별 선임 간호사(senior nurse)는 오후에 설명을 맡을 사람이지 청자가 아니다."
+   },
+   {
+    "q": "What will happen in the afternoon?",
+    "qko": "오후에는 무슨 일이 있을 것인가?",
+    "o": [
+     "ID badges will be handed out.",
+     "A building tour will take place.",
+     "Work procedures will be explained.",
+     "Lunch will be served."
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     4
+    ],
+    "exp": "a senior nurse ... will explain the procedures you'll follow → 'Work procedures will be explained'. 사원증 지급과 본관 투어는 오전 일정이고, 점심은 정오에 제공되므로 시점 혼동 함정이다."
+   },
+   {
+    "q": "What are the listeners asked to do?",
+    "qko": "청자들은 무엇을 하라고 요청받는가?",
+    "o": [
+     "Fill out a survey",
+     "Check the spelling of their names",
+     "Put on their ID badges",
+     "Choose a department"
+    ],
+    "a": 1,
+    "type": "요청·제안",
+    "ev": [
+     5
+    ],
+    "exp": "please check that your name is spelled correctly on the sign-in sheet → 'Check the spelling of their names'. 사원증은 아직 받지 않았으므로 착용하라는 요청은 맞지 않고, 설문 작성이나 부서 선택은 언급되지 않았다."
+   }
+  ],
+  "id": "p4-050"
+ },
+ {
+  "part": 4,
+  "talk": "연설·소개",
+  "lv": 3,
+  "lines": [
+   {
+    "sp": "W",
+    "en": "Good evening, and thank you for coming out to the Westbrook Public Library on such a rainy night.",
+    "ko": "안녕하십니까. 비가 많이 오는 밤인데도 웨스트브룩 공공 도서관을 찾아 주셔서 감사합니다."
+   },
+   {
+    "sp": "W",
+    "en": "I'm Anita Rao, and I coordinate our monthly Local Voices lecture series.",
+    "ko": "저는 월례 강연 시리즈 '로컬 보이시스'를 담당하는 애니타 라오입니다."
+   },
+   {
+    "sp": "W",
+    "en": "Tonight's guest is Samuel Okoye, an architect who has spent the last decade restoring historic buildings across our region.",
+    "ko": "오늘 밤 초대 손님은 지난 10년간 우리 지역 곳곳의 역사적 건물을 복원해 온 건축가 새뮤얼 오코예 씨입니다."
+   },
+   {
+    "sp": "W",
+    "en": "You may know his work even if you don't know his name. He led the renovation of the old train station that's now home to the Westbrook Art Center.",
+    "ko": "이름은 모르셔도 그분의 작품은 아실 겁니다. 지금 웨스트브룩 아트 센터가 자리한 옛 기차역의 개조 공사를 이끄신 분입니다."
+   },
+   {
+    "sp": "W",
+    "en": "When I first invited Samuel to speak here, he told me he'd much rather be on a scaffold than on a stage.",
+    "ko": "처음 강연을 부탁드렸을 때 새뮤얼 씨는 무대보다는 공사장 비계 위에 있는 편이 훨씬 좋다고 하셨습니다."
+   },
+   {
+    "sp": "W",
+    "en": "Well, it took three phone calls.",
+    "ko": "그래서 전화를 세 번이나 드려야 했습니다."
+   },
+   {
+    "sp": "W",
+    "en": "Samuel will speak for about forty minutes, and then we'll open the floor to questions.",
+    "ko": "새뮤얼 씨가 40분 정도 말씀하신 뒤 질문을 받겠습니다."
+   },
+   {
+    "sp": "W",
+    "en": "Since we're recording tonight's lecture for the library's Web site, please use the microphone in the aisle when asking yours.",
+    "ko": "오늘 강연은 도서관 웹사이트에 올리기 위해 녹화하고 있으니, 질문하실 때는 통로에 있는 마이크를 사용해 주십시오."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "What is Mr. Okoye known for?",
+    "qko": "오코예 씨는 무엇으로 알려져 있는가?",
+    "o": [
+     "Designing the Westbrook Public Library",
+     "Founding a local art center",
+     "Teaching courses on architecture",
+     "Renovating a former train station"
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     3
+    ],
+    "exp": "He led the renovation of the old train station → 'Renovating a former train station'. 그 역에 지금 웨스트브룩 아트 센터가 들어서 있을 뿐 그가 아트 센터를 설립했다는 말은 아니며, 도서관을 설계했다거나 강의를 한다는 내용도 없다."
+   },
+   {
+    "q": "What does the speaker imply when she says, \"it took three phone calls\"?",
+    "qko": "화자가 \"전화를 세 번이나 드려야 했습니다\"라고 말할 때 암시하는 것은 무엇인가?",
+    "o": [
+     "Mr. Okoye was difficult to reach by phone.",
+     "Mr. Okoye was initially reluctant to give a talk.",
+     "The event had to be rescheduled several times.",
+     "The library received many inquiries about the lecture."
+    ],
+    "a": 1,
+    "type": "의도 파악",
+    "ev": [
+     4,
+     5
+    ],
+    "exp": "오코예 씨가 처음 초청을 받고 '무대보다 비계 위가 훨씬 좋다'며 강연을 꺼렸다는 말 바로 뒤에 한 말이므로, 전화를 세 번이나 해서야 겨우 설득했다는 뜻이다. 전화 연결이 어려웠다는 것은 말을 글자 그대로만 받아들인 함정이고, 일정 변경이나 문의 전화는 언급되지 않았다."
+   },
+   {
+    "q": "Why are listeners asked to use a microphone?",
+    "qko": "청자들은 왜 마이크를 사용하라고 요청받는가?",
+    "o": [
+     "The room is very large.",
+     "The speaker has difficulty hearing.",
+     "The lecture is being recorded.",
+     "The event is being broadcast on the radio."
+    ],
+    "a": 2,
+    "type": "문제점·이유",
+    "ev": [
+     7
+    ],
+    "exp": "Since we're recording tonight's lecture for the library's Web site → 녹화 중이기 때문에 마이크를 써 달라고 했다. 웹사이트에 올리기 위한 녹화이지 라디오 방송이 아니며, 강연장 크기나 연사의 청력은 언급되지 않았다."
+   }
+  ],
+  "id": "p4-051"
+ },
+ {
+  "part": 4,
+  "talk": "연설·소개",
+  "lv": 2,
+  "lines": [
+   {
+    "sp": "M",
+    "en": "Good evening, and welcome to the Riverside Chamber of Commerce's annual Small Business Awards.",
+    "ko": "안녕하십니까. 리버사이드 상공회의소의 연례 소상공인 시상식에 오신 것을 환영합니다."
+   },
+   {
+    "sp": "M",
+    "en": "Our final award tonight, for Outstanding Community Service, goes to Greenleaf Cafe and its owner, Mei Lin Tan.",
+    "ko": "오늘 밤 마지막 상인 지역 사회 공헌상은 그린리프 카페와 대표 메이린 탄 씨에게 돌아갑니다."
+   },
+   {
+    "sp": "M",
+    "en": "Over the past year, Greenleaf donated more than three thousand meals to local shelters.",
+    "ko": "지난 1년 동안 그린리프는 지역 쉼터에 3천 끼가 넘는 식사를 기부했습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Ms. Tan also opened her cafe after hours to host free cooking classes for teenagers.",
+    "ko": "탄 씨는 또한 영업시간 이후에 카페를 열어 청소년을 위한 무료 요리 수업을 진행했습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Unfortunately, she couldn't be with us tonight because she's attending a family wedding overseas.",
+    "ko": "아쉽게도 탄 씨는 해외에서 열리는 가족 결혼식에 참석하느라 오늘 이 자리에 함께하지 못했습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Accepting the award on her behalf is her head chef, Robert Diaz.",
+    "ko": "탄 씨를 대신해 수석 셰프인 로버트 디아즈 씨가 상을 받겠습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Before Robert comes up, I'd like to remind everyone that photos from tonight's ceremony will be posted on the chamber's social media pages tomorrow.",
+    "ko": "로버트 씨가 나오기 전에, 오늘 시상식 사진은 내일 상공회의소 소셜 미디어 페이지에 게시된다는 점을 다시 한번 알려 드립니다."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "What is the award being given for?",
+    "qko": "상은 무엇에 대해 수여되는가?",
+    "o": [
+     "Innovative menu design",
+     "Service to the local community",
+     "Excellent customer reviews",
+     "Rapid business growth"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     1,
+     2
+    ],
+    "exp": "for Outstanding Community Service → 'Service to the local community'. 쉼터에 식사를 기부하고 무료 요리 수업을 연 것이 수상 이유로 소개된다. 메뉴 개발, 고객 후기, 사업 성장은 언급되지 않았다."
+   },
+   {
+    "q": "Why is Ms. Tan unable to attend the ceremony?",
+    "qko": "탄 씨는 왜 시상식에 참석할 수 없는가?",
+    "o": [
+     "She is teaching a cooking class.",
+     "She is not feeling well.",
+     "She is working at her cafe.",
+     "She is traveling for a family event."
+    ],
+    "a": 3,
+    "type": "문제점·이유",
+    "ev": [
+     4
+    ],
+    "exp": "attending a family wedding overseas → 'traveling for a family event'. 요리 수업은 그동안 해 온 봉사 활동으로 언급된 것이고, 몸이 아프다거나 카페에서 일하고 있다는 말은 없다."
+   },
+   {
+    "q": "According to the speaker, what will happen tomorrow?",
+    "qko": "화자에 따르면, 내일 무슨 일이 있을 것인가?",
+    "o": [
+     "Pictures will be shared online.",
+     "A new cafe will open.",
+     "Meals will be delivered to shelters.",
+     "Award winners will be interviewed."
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     6
+    ],
+    "exp": "photos ... will be posted on the chamber's social media pages tomorrow → 'Pictures will be shared online'. 쉼터 식사 기부는 지난 1년간 해 온 일이며, 새 카페 개업이나 인터뷰는 언급되지 않았다."
+   }
+  ],
+  "id": "p4-052"
+ },
+ {
+  "part": 4,
+  "talk": "연설·소개",
+  "lv": 2,
+  "lines": [
+   {
+    "sp": "W",
+    "en": "On behalf of everyone at Norvale Textiles, I'd like to welcome our visitors from Kasuga Fabrics in Osaka.",
+    "ko": "노베일 텍스타일 전 직원을 대표해 오사카의 가스가 패브릭스에서 오신 손님들을 환영합니다."
+   },
+   {
+    "sp": "W",
+    "en": "We're delighted to host you for this three-day visit as we begin our new partnership.",
+    "ko": "새로운 협력 관계를 시작하며 3일간의 방문을 맞이하게 되어 매우 기쁩니다."
+   },
+   {
+    "sp": "W",
+    "en": "As you know, our two companies will be developing a line of outdoor clothing made from recycled materials.",
+    "ko": "아시다시피 저희 두 회사는 재활용 소재로 만든 아웃도어 의류 제품군을 개발할 예정입니다."
+   },
+   {
+    "sp": "W",
+    "en": "This afternoon, our production manager, Gary Holt, will show you around our dyeing facility.",
+    "ko": "오늘 오후에는 생산 관리자 게리 홀트 씨가 염색 시설을 안내해 드립니다."
+   },
+   {
+    "sp": "W",
+    "en": "Tomorrow, you'll meet with our design team to review the first samples.",
+    "ko": "내일은 디자인팀과 만나 첫 샘플을 검토하시게 됩니다."
+   },
+   {
+    "sp": "W",
+    "en": "And on Friday, we'll wrap up your visit with a dinner cruise on the river, weather permitting.",
+    "ko": "그리고 금요일에는 날씨가 허락하면 강 위의 디너 크루즈로 방문 일정을 마무리하겠습니다."
+   },
+   {
+    "sp": "W",
+    "en": "If you need anything during your stay, my assistant, Leah Kim, can be reached at extension 214.",
+    "ko": "머무시는 동안 필요한 것이 있으시면 제 비서 리아 김 씨에게 내선 214번으로 연락하시면 됩니다."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "What will the two companies work on together?",
+    "qko": "두 회사는 함께 무엇을 할 것인가?",
+    "o": [
+     "Opening a factory in Osaka",
+     "Merging their design teams",
+     "Developing a new clothing line",
+     "Organizing a trade fair"
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     2
+    ],
+    "exp": "developing a line of outdoor clothing made from recycled materials → 'Developing a new clothing line'. 오사카는 방문객 회사의 소재지일 뿐 공장을 연다는 말은 없고, 디자인팀은 내일 만나는 것이지 두 회사의 팀을 합치는 것이 아니다."
+   },
+   {
+    "q": "What will the visitors do tomorrow?",
+    "qko": "방문객들은 내일 무엇을 할 것인가?",
+    "o": [
+     "Review some product samples",
+     "Tour a dyeing facility",
+     "Go on a dinner cruise",
+     "Meet with material suppliers"
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     4
+    ],
+    "exp": "Tomorrow, you'll meet with our design team to review the first samples → 'Review some product samples'. 염색 시설 견학은 오늘 오후, 디너 크루즈는 금요일 일정이므로 시점 혼동 함정이다."
+   },
+   {
+    "q": "Why does the speaker mention Leah Kim?",
+    "qko": "화자는 왜 리아 김을 언급하는가?",
+    "o": [
+     "She will lead a facility tour.",
+     "She designed the first samples.",
+     "She arranged a river cruise.",
+     "She can assist the visitors."
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     6
+    ],
+    "exp": "If you need anything during your stay, my assistant ... can be reached → 방문객에게 필요한 것이 있을 때 도와줄 사람으로 소개했다('She can assist the visitors'). 시설 안내는 생산 관리자 게리 홀트가 맡는다."
+   }
+  ],
+  "id": "p4-053"
+ },
+ {
+  "part": 4,
+  "talk": "워크숍·강의",
+  "lv": 2,
+  "lines": [
+   {
+    "sp": "M",
+    "en": "Welcome back from lunch, everyone.",
+    "ko": "여러분, 점심 식사 후 다시 오신 것을 환영합니다."
+   },
+   {
+    "sp": "M",
+    "en": "Before we get started, I need to make a change to this afternoon's schedule.",
+    "ko": "시작하기 전에 오늘 오후 일정을 하나 변경해야겠습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Ms. Harlow, who's leading the e-mail writing session, just called to say she's stuck in heavy traffic.",
+    "ko": "이메일 작성 세션을 맡은 할로 씨가 방금 전화로 교통 체증에 갇혀 있다고 알려 왔습니다."
+   },
+   {
+    "sp": "M",
+    "en": "She doesn't expect to get here for at least another two hours.",
+    "ko": "적어도 두 시간은 지나야 도착할 수 있을 것 같다고 합니다."
+   },
+   {
+    "sp": "M",
+    "en": "So we're going to switch her session with the one that comes right after it.",
+    "ko": "그래서 할로 씨의 세션을 바로 다음 세션과 맞바꾸겠습니다."
+   },
+   {
+    "sp": "M",
+    "en": "For now, though, we'll start with handling complaints as planned.",
+    "ko": "하지만 지금은 예정대로 불만 처리 세션부터 시작하겠습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Please take out the worksheet in the blue folder on your table, since we'll be using it throughout this session.",
+    "ko": "이번 세션 내내 사용할 테니 테이블 위 파란 폴더에 든 활동지를 꺼내 주십시오."
+   },
+   {
+    "sp": "M",
+    "en": "We'll take a short break at around two-fifty, and coffee will be available in the lobby.",
+    "ko": "2시 50분쯤 잠시 쉬는 시간을 가질 예정이며, 커피는 로비에 마련되어 있습니다."
+   }
+  ],
+  "graphic": {
+   "type": "table",
+   "title": "Customer Service Workshop: Afternoon Sessions",
+   "cols": [
+    "Time",
+    "Session"
+   ],
+   "rows": [
+    [
+     "1:00",
+     "Handling Complaints"
+    ],
+    [
+     "2:00",
+     "Phone Etiquette"
+    ],
+    [
+     "3:00",
+     "Writing Clear E-mails"
+    ],
+    [
+     "4:00",
+     "Role-Play Practice"
+    ]
+   ]
+  },
+  "qs": [
+   {
+    "q": "What problem does the speaker mention?",
+    "qko": "화자는 어떤 문제를 언급하는가?",
+    "o": [
+     "A presenter has been delayed.",
+     "Some materials are missing.",
+     "A room is not available.",
+     "A lunch order was incorrect."
+    ],
+    "a": 0,
+    "type": "문제점·이유",
+    "ev": [
+     2,
+     3
+    ],
+    "exp": "she's stuck in heavy traffic / doesn't expect to get here for at least another two hours → 강사가 늦어진다('A presenter has been delayed'). 활동지는 파란 폴더에 있다고 했고, 장소나 점심에 관한 문제는 언급되지 않았다."
+   },
+   {
+    "q": "Look at the graphic. Which session will now begin at 3:00?",
+    "qko": "시각 자료를 보시오. 이제 3시에는 어떤 세션이 시작되겠는가?",
+    "o": [
+     "Handling Complaints",
+     "Phone Etiquette",
+     "Writing Clear E-mails",
+     "Role-Play Practice"
+    ],
+    "a": 3,
+    "type": "시각 자료",
+    "ev": [
+     2,
+     4
+    ],
+    "exp": "원래 3시인 이메일 작성 세션(Writing Clear E-mails)을 바로 다음 세션과 맞바꾼다고 했다. 표에서 그다음 세션은 4시의 Role-Play Practice이므로 이제 3시에는 Role-Play Practice가 시작되고, 이메일 세션은 4시로 옮겨진다. Writing Clear E-mails는 원래 시간표만 보고 고르는 함정이다."
+   },
+   {
+    "q": "What does the speaker ask the listeners to do?",
+    "qko": "화자는 청자들에게 무엇을 하라고 요청하는가?",
+    "o": [
+     "Go to the lobby for coffee",
+     "Take out a worksheet",
+     "Sign up for a later session",
+     "Move to a different table"
+    ],
+    "a": 1,
+    "type": "요청·제안",
+    "ev": [
+     6
+    ],
+    "exp": "Please take out the worksheet in the blue folder → 'Take out a worksheet'. 로비의 커피는 2시 50분쯤 쉬는 시간에 이용할 수 있다는 안내일 뿐 지금 가라는 요청이 아니며, 세션 신청이나 자리 이동은 언급되지 않았다."
+   }
+  ],
+  "id": "p4-054"
+ },
+ {
+  "part": 4,
+  "talk": "워크숍·강의",
+  "lv": 1,
+  "lines": [
+   {
+    "sp": "W",
+    "en": "Good morning, and thanks for coming to this short training on our new expense reporting software.",
+    "ko": "안녕하십니까. 새 경비 보고 소프트웨어에 관한 짧은 교육에 와 주셔서 감사합니다."
+   },
+   {
+    "sp": "W",
+    "en": "Starting next month, all travel expenses must be submitted through this system instead of on paper forms.",
+    "ko": "다음 달부터 모든 출장비는 종이 양식 대신 이 시스템으로 제출하셔야 합니다."
+   },
+   {
+    "sp": "W",
+    "en": "First, log in with the same username and password you use for your company e-mail.",
+    "ko": "먼저 회사 이메일에 쓰시는 것과 같은 아이디와 비밀번호로 로그인하십시오."
+   },
+   {
+    "sp": "W",
+    "en": "Next, click 'New Report' and enter the dates and purpose of your trip.",
+    "ko": "다음으로 '새 보고서'를 클릭하고 출장 날짜와 목적을 입력하십시오."
+   },
+   {
+    "sp": "W",
+    "en": "Then take a photo of each receipt with your phone and upload it directly to the report.",
+    "ko": "그런 다음 휴대 전화로 영수증을 한 장씩 촬영해 보고서에 바로 올리십시오."
+   },
+   {
+    "sp": "W",
+    "en": "When you're finished, submit the report to your manager for approval.",
+    "ko": "작성을 마치면 관리자에게 보고서를 제출해 승인을 받으십시오."
+   },
+   {
+    "sp": "W",
+    "en": "Most expenses are reimbursed within five business days.",
+    "ko": "대부분의 경비는 영업일 기준 5일 이내에 환급됩니다."
+   },
+   {
+    "sp": "W",
+    "en": "Now, please open the laptops in front of you, and let's create a sample report together.",
+    "ko": "이제 앞에 있는 노트북을 열어 주십시오. 함께 연습용 보고서를 만들어 보겠습니다."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "What is the training mainly about?",
+    "qko": "교육은 주로 무엇에 관한 것인가?",
+    "o": [
+     "A new company e-mail program",
+     "An online travel booking service",
+     "A system for submitting expenses",
+     "A photo editing application"
+    ],
+    "a": 2,
+    "type": "주제·목적",
+    "ev": [
+     0,
+     1
+    ],
+    "exp": "training on our new expense reporting software → 'A system for submitting expenses'. 회사 이메일은 로그인 정보가 같다는 설명에서, 사진은 영수증을 촬영하라는 설명에서 나온 단어를 이용한 함정이다."
+   },
+   {
+    "q": "What does the speaker say about receipts?",
+    "qko": "화자는 영수증에 대해 무엇이라고 말하는가?",
+    "o": [
+     "They should be photographed and uploaded.",
+     "They must be mailed to the accounting department.",
+     "They are no longer required.",
+     "They must be signed by a manager."
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     4
+    ],
+    "exp": "take a photo of each receipt ... and upload it → 'photographed and uploaded'. 관리자는 보고서를 승인할 뿐 영수증에 서명하는 것이 아니며, 회계 부서로 우편 발송한다는 말은 없다."
+   },
+   {
+    "q": "What will the listeners most likely do next?",
+    "qko": "청자들은 다음에 무엇을 하겠는가?",
+    "o": [
+     "Log in to their e-mail accounts",
+     "Meet with their managers",
+     "Take a short break",
+     "Practice using the software"
+    ],
+    "a": 3,
+    "type": "다음 할 일",
+    "ev": [
+     7
+    ],
+    "exp": "let's create a sample report together → 함께 연습용 보고서를 만들 것이므로 'Practice using the software'. 이메일 계정과 관리자는 앞선 설명에 나온 단어를 이용한 함정이다."
+   }
+  ],
+  "id": "p4-055"
+ },
+ {
+  "part": 4,
+  "talk": "워크숍·강의",
+  "lv": 3,
+  "lines": [
+   {
+    "sp": "M",
+    "en": "Thank you for signing up for today's seminar on marketing for small businesses.",
+    "ko": "소규모 사업체를 위한 마케팅 세미나에 신청해 주셔서 감사합니다."
+   },
+   {
+    "sp": "M",
+    "en": "I know most of you run shops on tight budgets, so I won't be talking about expensive television campaigns.",
+    "ko": "여러분 대부분이 빠듯한 예산으로 가게를 운영하신다는 것을 알기에, 비싼 TV 광고 이야기는 하지 않겠습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Instead, I'll focus on one thing: getting your existing customers to bring in new ones.",
+    "ko": "대신 한 가지에 집중하겠습니다. 바로 기존 고객이 새 고객을 데려오게 하는 것입니다."
+   },
+   {
+    "sp": "M",
+    "en": "Studies show that people trust recommendations from friends far more than any advertisement.",
+    "ko": "연구에 따르면 사람들은 어떤 광고보다도 친구의 추천을 훨씬 더 신뢰합니다."
+   },
+   {
+    "sp": "M",
+    "en": "One bakery I worked with offered a free pastry to every customer who referred a friend, and its sales rose by thirty percent in six months.",
+    "ko": "제가 함께 일했던 한 제과점은 친구를 소개한 모든 고객에게 페이스트리를 무료로 주었고, 6개월 만에 매출이 30퍼센트 올랐습니다."
+   },
+   {
+    "sp": "M",
+    "en": "In a few minutes, I'll ask you to work in pairs to design a similar program for your own business.",
+    "ko": "잠시 후 두 분씩 짝을 지어 각자의 사업에 맞는 비슷한 프로그램을 설계해 보시도록 하겠습니다."
+   },
+   {
+    "sp": "M",
+    "en": "But first, write down the three things your customers praise most often, because that's where every good referral program begins.",
+    "ko": "하지만 먼저, 고객들이 가장 자주 칭찬하는 점 세 가지를 적어 보십시오. 모든 좋은 소개 프로그램은 거기서 시작되기 때문입니다."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "Who most likely are the listeners?",
+    "qko": "청자들은 누구이겠는가?",
+    "o": [
+     "Television producers",
+     "Market researchers",
+     "Professional bakers",
+     "Small business owners"
+    ],
+    "a": 3,
+    "type": "화자·장소",
+    "ev": [
+     0,
+     1
+    ],
+    "exp": "seminar on marketing for small businesses와 most of you run shops on tight budgets에서 청자는 소규모 사업체 운영자임을 알 수 있다 → 'Small business owners'. 제과점(bakery)은 화자가 함께 일했던 사례일 뿐이고, TV 광고는 다루지 않겠다고 한 주제다."
+   },
+   {
+    "q": "What is the main topic of the seminar?",
+    "qko": "세미나의 주제는 무엇인가?",
+    "o": [
+     "Reducing the cost of TV advertising",
+     "Encouraging customers to recommend a business",
+     "Designing effective store displays",
+     "Conducting customer satisfaction surveys"
+    ],
+    "a": 1,
+    "type": "주제·목적",
+    "ev": [
+     2,
+     3
+    ],
+    "exp": "getting your existing customers to bring in new ones(기존 고객이 새 고객을 데려오게 하기) → 'Encouraging customers to recommend a business'. TV 광고는 비용 때문에 다루지 않겠다고 했으므로 그 비용을 줄이는 법이 주제인 것도 아니다."
+   },
+   {
+    "q": "What does the speaker ask the listeners to do first?",
+    "qko": "화자는 청자들에게 먼저 무엇을 하라고 요청하는가?",
+    "o": [
+     "Find a partner to work with",
+     "Create a referral program",
+     "List what their customers like most",
+     "Offer a free item to customers"
+    ],
+    "a": 2,
+    "type": "요청·제안",
+    "ev": [
+     5,
+     6
+    ],
+    "exp": "But first, write down the three things your customers praise most often → 'List what their customers like most'. 짝을 지어 소개 프로그램을 설계하는 것은 그다음 활동이므로 순서 함정이고, 무료 제품 제공은 제과점 사례에 나온 내용이다."
+   }
+  ],
+  "id": "p4-056"
+ },
+ {
+  "part": 4,
+  "talk": "워크숍·강의",
+  "lv": 2,
+  "lines": [
+   {
+    "sp": "W",
+    "en": "Okay, everyone, gather around so you can all see the forklift.",
+    "ko": "자, 여러분, 지게차가 다 보이도록 가까이 모여 주십시오."
+   },
+   {
+    "sp": "W",
+    "en": "In this part of the training, I'll show you the safety check you'll need to complete at the start of every shift.",
+    "ko": "이번 교육에서는 매 근무 시작 때마다 해야 하는 안전 점검을 보여 드리겠습니다."
+   },
+   {
+    "sp": "W",
+    "en": "First, walk around the forklift and look for any leaks or damage to the tires.",
+    "ko": "먼저 지게차 주위를 돌며 새는 곳이 없는지, 타이어가 손상되지 않았는지 살펴보십시오."
+   },
+   {
+    "sp": "W",
+    "en": "Then get in the driver's seat and test the horn, the lights, and the brakes.",
+    "ko": "그런 다음 운전석에 앉아 경적, 조명, 브레이크를 시험해 보십시오."
+   },
+   {
+    "sp": "W",
+    "en": "Record the results on the checklist attached to the clipboard by the charging station.",
+    "ko": "결과는 충전소 옆 클립보드에 붙어 있는 점검표에 기록하십시오."
+   },
+   {
+    "sp": "W",
+    "en": "Last year, a driver here skipped this check and ran into a shelf because of a brake problem.",
+    "ko": "작년에 이곳의 한 운전자가 이 점검을 건너뛰었다가 브레이크 고장으로 선반에 부딪친 적이 있습니다."
+   },
+   {
+    "sp": "W",
+    "en": "That shelf held our entire stock of glassware.",
+    "ko": "그 선반에는 저희 유리 제품 재고 전부가 있었습니다."
+   },
+   {
+    "sp": "W",
+    "en": "Now, Kevin, why don't you try the check first while the rest of us watch?",
+    "ko": "자, 케빈 씨, 나머지 분들이 지켜보는 동안 먼저 점검을 해 보시겠습니까?"
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "What is the speaker mainly explaining?",
+    "qko": "화자는 주로 무엇을 설명하고 있는가?",
+    "o": [
+     "How to inspect a vehicle before using it",
+     "How to stack items on shelves",
+     "How to charge a forklift battery",
+     "How to fill out a shipping form"
+    ],
+    "a": 0,
+    "type": "주제·목적",
+    "ev": [
+     1,
+     2,
+     3
+    ],
+    "exp": "the safety check you'll need to complete at the start of every shift → 근무 시작 때 지게차(vehicle)를 점검하는 방법이다. 충전소(charging station)는 점검표가 있는 위치로 언급되었을 뿐이고, 선반 적재나 배송 서류 작성법은 설명하지 않았다."
+   },
+   {
+    "q": "Why does the speaker say, \"That shelf held our entire stock of glassware\"?",
+    "qko": "화자는 왜 \"그 선반에는 저희 유리 제품 재고 전부가 있었습니다\"라고 말하는가?",
+    "o": [
+     "To explain where some products are stored",
+     "To emphasize how serious an accident was",
+     "To ask listeners to handle items carefully",
+     "To announce that a shelf will be moved"
+    ],
+    "a": 1,
+    "type": "의도 파악",
+    "ev": [
+     5,
+     6
+    ],
+    "exp": "점검을 건너뛴 운전자가 브레이크 고장으로 선반에 부딪쳤다는 말 바로 뒤에 한 말이므로, 피해가 매우 컸음을 강조해 점검의 중요성을 일깨우려는 의도다. 제품 보관 위치를 알려 주려는 것은 말을 글자 그대로만 받아들인 함정이며, 선반 이동이나 물건 취급 요령은 언급되지 않았다."
+   },
+   {
+    "q": "What will most likely happen next?",
+    "qko": "다음에 무슨 일이 일어나겠는가?",
+    "o": [
+     "The speaker will drive the forklift.",
+     "The group will take a break.",
+     "Listeners will fill out a survey.",
+     "A trainee will perform the check."
+    ],
+    "a": 3,
+    "type": "다음 할 일",
+    "ev": [
+     7
+    ],
+    "exp": "Kevin, why don't you try the check first while the rest of us watch? → 교육생 케빈이 직접 점검을 해 볼 것이다('A trainee will perform the check'). 나머지 사람들은 지켜보기만 하며, 화자가 운전한다는 말은 없다."
+   }
+  ],
+  "id": "p4-057"
+ },
+ {
+  "part": 4,
+  "talk": "워크숍·강의",
+  "lv": 3,
+  "lines": [
+   {
+    "sp": "M",
+    "en": "Good afternoon, and welcome to the second session of our workshop for facility managers.",
+    "ko": "안녕하십니까. 시설 관리자를 위한 워크숍의 두 번째 세션에 오신 것을 환영합니다."
+   },
+   {
+    "sp": "M",
+    "en": "On the screen is a chart showing how energy is typically used in an office building.",
+    "ko": "화면에 보이는 것은 사무용 건물에서 에너지가 일반적으로 어떻게 쓰이는지 보여 주는 도표입니다."
+   },
+   {
+    "sp": "M",
+    "en": "Most people assume they should start with the largest category, but upgrading heating and cooling systems usually requires a major investment.",
+    "ko": "대부분 가장 큰 항목부터 손대야 한다고 생각하지만, 냉난방 시스템을 개선하려면 대개 큰 투자가 필요합니다."
+   },
+   {
+    "sp": "M",
+    "en": "So today, I'm going to focus on the second-largest category, since you can reduce it quickly at very little cost.",
+    "ko": "그래서 오늘은 두 번째로 큰 항목에 집중하겠습니다. 이 부분은 비용을 거의 들이지 않고도 빠르게 줄일 수 있기 때문입니다."
+   },
+   {
+    "sp": "M",
+    "en": "One of my clients in Portland made a few simple changes last spring and cut her usage in that category by a third in just two months.",
+    "ko": "포틀랜드의 제 고객 한 분은 지난봄 몇 가지를 간단히 바꿔서 단 두 달 만에 그 항목의 사용량을 3분의 1 줄였습니다."
+   },
+   {
+    "sp": "M",
+    "en": "I've put a list of the products she used in your handout, along with what each one costs.",
+    "ko": "그분이 사용한 제품 목록을 각 제품의 가격과 함께 유인물에 넣어 두었습니다."
+   },
+   {
+    "sp": "M",
+    "en": "Take a minute to look it over, and then I'll walk you through the changes one by one.",
+    "ko": "잠시 훑어보시면, 그다음에 바꾼 점들을 하나씩 설명해 드리겠습니다."
+   }
+  ],
+  "graphic": {
+   "type": "bars",
+   "title": "Typical Office Energy Use",
+   "unit": "%",
+   "items": [
+    {
+     "label": "Heating & Cooling",
+     "value": 42
+    },
+    {
+     "label": "Lighting",
+     "value": 26
+    },
+    {
+     "label": "Computers",
+     "value": 18
+    },
+    {
+     "label": "Kitchen Appliances",
+     "value": 9
+    },
+    {
+     "label": "Other",
+     "value": 5
+    }
+   ]
+  },
+  "qs": [
+   {
+    "q": "Why does the speaker say he will not focus on the largest category?",
+    "qko": "화자는 왜 가장 큰 항목에 집중하지 않겠다고 말하는가?",
+    "o": [
+     "It was covered in an earlier session.",
+     "It is already very efficient.",
+     "Improvements would be too expensive.",
+     "It changes from season to season."
+    ],
+    "a": 2,
+    "type": "문제점·이유",
+    "ev": [
+     2
+    ],
+    "exp": "upgrading heating and cooling systems usually requires a major investment(큰 투자가 필요함) → 'Improvements would be too expensive'. 이번이 두 번째 세션이라는 말은 있지만 앞 세션에서 그 항목을 다뤘다는 말은 없다."
+   },
+   {
+    "q": "Look at the graphic. Which category will the speaker mainly discuss?",
+    "qko": "시각 자료를 보시오. 화자는 주로 어떤 항목에 대해 이야기할 것인가?",
+    "o": [
+     "Heating & Cooling",
+     "Lighting",
+     "Computers",
+     "Kitchen Appliances"
+    ],
+    "a": 1,
+    "type": "시각 자료",
+    "ev": [
+     3
+    ],
+    "exp": "화자는 두 번째로 큰 항목(the second-largest category)에 집중하겠다고 했다. 그래프에서 가장 큰 항목은 Heating & Cooling(42%), 두 번째는 Lighting(26%)이므로 정답은 Lighting이다. Heating & Cooling은 비용 때문에 다루지 않겠다고 한 항목이다."
+   },
+   {
+    "q": "What is included in the handout?",
+    "qko": "유인물에는 무엇이 들어 있는가?",
+    "o": [
+     "A list of products and their prices",
+     "Contact information for a client",
+     "A printed copy of the chart",
+     "A schedule for the next session"
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     5
+    ],
+    "exp": "a list of the products she used ... along with what each one costs → 'A list of products and their prices'. 포틀랜드 고객은 사례로 언급되었을 뿐 연락처가 들어 있다는 말은 없고, 도표는 화면에 띄운 것이다."
+   }
+  ],
+  "id": "p4-058"
+ },
+ {
+  "part": 4,
+  "talk": "워크숍·강의",
+  "lv": 1,
+  "lines": [
+   {
+    "sp": "W",
+    "en": "Welcome to the Sunday baking class here at Maple Street Kitchen.",
+    "ko": "이곳 메이플 스트리트 키친의 일요일 제빵 수업에 오신 것을 환영합니다."
+   },
+   {
+    "sp": "W",
+    "en": "Today, we're making whole-wheat bread, and by the end of the class, each of you will take home your own loaf.",
+    "ko": "오늘은 통밀빵을 만들 텐데요, 수업이 끝날 때는 여러분 모두 직접 만든 빵 한 덩이를 가져가시게 됩니다."
+   },
+   {
+    "sp": "W",
+    "en": "You'll find that all the ingredients have already been measured out for you at your stations.",
+    "ko": "재료는 모두 여러분 자리에 미리 계량해 두었습니다."
+   },
+   {
+    "sp": "W",
+    "en": "The most important step is kneading the dough, so I'll demonstrate that first.",
+    "ko": "가장 중요한 단계는 반죽을 치대는 것이므로 그것부터 시범을 보여 드리겠습니다."
+   },
+   {
+    "sp": "W",
+    "en": "Make sure you knead for at least ten minutes, or your bread won't rise properly.",
+    "ko": "반드시 10분 이상 치대셔야 합니다. 그렇지 않으면 빵이 제대로 부풀지 않습니다."
+   },
+   {
+    "sp": "W",
+    "en": "While the dough rests, we'll have coffee in the dining area next door.",
+    "ko": "반죽을 숙성시키는 동안에는 옆 식사 공간에서 커피를 마시겠습니다."
+   },
+   {
+    "sp": "W",
+    "en": "Oh, and before you touch any ingredients, please wash your hands at the sink in the back.",
+    "ko": "아, 그리고 재료를 만지시기 전에 뒤쪽 싱크대에서 손을 씻어 주십시오."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "Where most likely are the listeners?",
+    "qko": "청자들은 어디에 있겠는가?",
+    "o": [
+     "At a grocery store",
+     "At a bakery's grand opening",
+     "At a coffee shop",
+     "At a cooking class"
+    ],
+    "a": 3,
+    "type": "화자·장소",
+    "ev": [
+     0
+    ],
+    "exp": "Welcome to the Sunday baking class → 제빵 수업, 즉 요리 강좌에 와 있다('At a cooking class'). 커피는 반죽을 숙성시키는 동안 마신다고 했을 뿐 커피숍이 장소인 것은 아니다."
+   },
+   {
+    "q": "According to the speaker, what is the most important step?",
+    "qko": "화자에 따르면, 가장 중요한 단계는 무엇인가?",
+    "o": [
+     "Measuring the ingredients",
+     "Kneading the dough",
+     "Heating the oven",
+     "Letting the dough rest"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     3
+    ],
+    "exp": "The most important step is kneading the dough → 'Kneading the dough'. 재료는 이미 계량되어 있다고 했고, 반죽을 숙성시키는 동안에는 커피를 마신다고만 했다."
+   },
+   {
+    "q": "What are the listeners asked to do before touching the ingredients?",
+    "qko": "청자들은 재료를 만지기 전에 무엇을 하라고 요청받는가?",
+    "o": [
+     "Put on aprons",
+     "Read a recipe",
+     "Wash their hands",
+     "Watch a video"
+    ],
+    "a": 2,
+    "type": "요청·제안",
+    "ev": [
+     6
+    ],
+    "exp": "before you touch any ingredients, please wash your hands → 'Wash their hands'. 앞치마, 레시피, 영상은 언급되지 않았다."
+   }
+  ],
+  "id": "p4-059"
+ },
+ {
+  "part": 4,
+  "talk": "워크숍·강의",
+  "lv": 2,
+  "lines": [
+   {
+    "sp": "M",
+    "en": "Thanks for coming to this workshop for new team leaders. Today's topic is giving feedback to your staff.",
+    "ko": "신임 팀장 워크숍에 와 주셔서 감사합니다. 오늘의 주제는 직원에게 피드백을 주는 방법입니다."
+   },
+   {
+    "sp": "M",
+    "en": "Many new managers wait until the annual review to discuss performance, but by then, small problems have often become big ones.",
+    "ko": "많은 신임 관리자가 연례 평가 때까지 기다렸다가 성과를 논의하는데, 그때쯤이면 작은 문제가 큰 문제로 커져 있는 경우가 많습니다."
+   },
+   {
+    "sp": "M",
+    "en": "That's why I recommend holding short one-on-one meetings every two weeks.",
+    "ko": "그래서 저는 2주마다 짧은 일대일 면담을 하시길 권합니다."
+   },
+   {
+    "sp": "M",
+    "en": "Keep them to about fifteen minutes, and always begin by asking employees what's going well for them.",
+    "ko": "면담은 15분 정도로 하시고, 항상 직원에게 잘되고 있는 일이 무엇인지 묻는 것으로 시작하십시오."
+   },
+   {
+    "sp": "M",
+    "en": "Then move on to one area for improvement. Just one, so the conversation stays focused.",
+    "ko": "그다음 개선할 점 한 가지로 넘어가십시오. 대화가 산만해지지 않도록 딱 한 가지만 다루십시오."
+   },
+   {
+    "sp": "M",
+    "en": "Later this morning, you'll practice with a partner using the scenarios printed on these cards.",
+    "ko": "오늘 오전 늦게는 이 카드에 적힌 상황을 가지고 짝과 함께 연습하시게 됩니다."
+   },
+   {
+    "sp": "M",
+    "en": "Before that, though, our HR director, Ms. Abernathy, is going to join us to explain the new review forms.",
+    "ko": "하지만 그 전에 인사 담당 이사인 애버내시 씨가 오셔서 새 평가 양식을 설명해 주실 예정입니다."
+   }
+  ],
+  "graphic": null,
+  "qs": [
+   {
+    "q": "What does the speaker recommend?",
+    "qko": "화자는 무엇을 권하는가?",
+    "o": [
+     "Holding brief meetings regularly",
+     "Moving annual reviews to an earlier date",
+     "Writing detailed performance reports",
+     "Discussing several issues in each meeting"
+    ],
+    "a": 0,
+    "type": "요청·제안",
+    "ev": [
+     2
+    ],
+    "exp": "holding short one-on-one meetings every two weeks → 'Holding brief meetings regularly'. 연례 평가까지 기다리지 말라는 것이지 평가 날짜를 앞당기라는 것이 아니며, 개선점은 한 가지만 다루라고 했으므로 여러 문제를 논의하라는 것은 반대 내용이다."
+   },
+   {
+    "q": "According to the speaker, how should the meetings begin?",
+    "qko": "화자에 따르면, 면담은 어떻게 시작해야 하는가?",
+    "o": [
+     "By reviewing a printed form",
+     "By setting goals for the next month",
+     "By pointing out an area for improvement",
+     "By asking employees what is going well"
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     3
+    ],
+    "exp": "always begin by asking employees what's going well for them → 'By asking employees what is going well'. 개선할 점은 그다음(Then)에 다루는 내용이므로 순서 함정이다."
+   },
+   {
+    "q": "What will happen next?",
+    "qko": "다음에 무슨 일이 있을 것인가?",
+    "o": [
+     "Participants will work in pairs.",
+     "The group will take a break.",
+     "A colleague will explain some forms.",
+     "Some scenario cards will be collected."
+    ],
+    "a": 2,
+    "type": "다음 할 일",
+    "ev": [
+     5,
+     6
+    ],
+    "exp": "Before that, though, our HR director ... is going to join us to explain the new review forms → 인사 담당 이사가 새 평가 양식을 설명할 것이다('A colleague will explain some forms'). 짝과 연습하는 것은 그 이후(Later this morning)이므로 순서 함정이다."
+   }
+  ],
+  "id": "p4-060"
  }
 ]
