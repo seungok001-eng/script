@@ -370,3 +370,29 @@ test("실전 데이터: 보기 4개·정답 범위·근거 위치·빈칸·id �
     });
   }
 });
+
+test("practiceTask: 초반 문법·Part 2 → 파트 순환 → 시험 2주 전 모의고사(3일마다)·2세트", () => {
+  const early = C.practiceTask({ dday: 60, seenRatio: 0.1, dayIndex: 0, mocksLeft: 4, today: 100 });
+  assert.equal(early.kind, "p5g");
+  assert.equal(early.label, "Part 5 문법 10제");
+  assert.equal(C.practiceTask({ dday: 60, seenRatio: 0.1, dayIndex: 1, mocksLeft: 4, today: 100 }).kind, "p2");
+  const mid = C.practiceTask({ dday: 40, seenRatio: 0.5, dayIndex: 0, mocksLeft: 4, today: 100 });
+  assert.equal(mid.kind, "p3");
+  assert.equal(mid.n, 1);
+  assert.equal(C.practiceTask({ dday: 10, seenRatio: 0.5, dayIndex: 0, mocksLeft: 4, today: 100 }).kind, "mock");
+  const late = C.practiceTask({ dday: 10, seenRatio: 0.5, dayIndex: 0, mocksLeft: 4, today: 100, lastMockDay: 99 });
+  assert.equal(late.kind, "p3");
+  assert.equal(late.n, 2);
+  assert.equal(late.label, "Part 3 대화 2세트");
+  assert.equal(C.practiceTask({ dday: 10, seenRatio: 0.5, dayIndex: 0, mocksLeft: 0, today: 100 }).kind, "p3");
+  assert.equal(C.practiceTask({ dday: null, seenRatio: 0.5, dayIndex: -3, mocksLeft: 4, today: 100 }).kind !== undefined, true);
+});
+
+test("levelsFor / todayProgress", () => {
+  assert.deepEqual(C.levelsFor(600), [1, 2]);
+  assert.deepEqual(C.levelsFor(800), [1, 2, 3]);
+  assert.deepEqual(C.levelsFor(900), [2, 3]);
+  assert.equal(C.todayProgress({ daily: 30, introduced: 0, reviewed: 0, due: 10, practiced: false }), 0);
+  assert.equal(C.todayProgress({ daily: 30, introduced: 30, reviewed: 10, due: 0, practiced: true }), 100);
+  assert.equal(C.todayProgress({ daily: 30, introduced: 15, reviewed: 0, due: 0, practiced: false }), 57);
+});

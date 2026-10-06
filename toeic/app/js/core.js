@@ -552,6 +552,34 @@
     return { tokens: out, ok, total: words.length, pct: words.length ? Math.round((ok / words.length) * 100) : 100 };
   }
 
+  // ───────────── 오늘의 실전 과제 ─────────────
+  // 시험일·단어 진도로 정한다: 초반엔 문법·Part 2 위주 → 이후 파트를 돌아가며 → 시험 2주 전부터 하프 모의고사(3일마다)·2세트씩
+  const PRACTICE_LABEL = { p5g: ["Part 5 문법", "제", 10, 5], p2: ["Part 2 응답", "문제", 10, 5], p3: ["Part 3 대화", "세트", 1, 4], p4: ["Part 4 담화", "세트", 1, 4], p6: ["Part 6 장문 빈칸", "지문", 1, 4], p7: ["Part 7 독해", "세트", 1, 6] };
+  function practiceTask(o) {
+    const dday = o.dday;
+    const late = dday != null && dday >= 0 && dday <= 14;
+    if (late && o.mocksLeft > 0 && (o.lastMockDay == null || o.today - o.lastMockDay >= 3)) return { kind: "mock", n: 1, label: "하프 모의고사 1회", min: 60 };
+    const early = (o.seenRatio || 0) < 0.25 && (dday == null || dday > 28);
+    const rot = early ? ["p5g", "p2", "p5g", "p3"] : ["p3", "p5g", "p7", "p4", "p6", "p2", "p7"];
+    const i = (((o.dayIndex || 0) % rot.length) + rot.length) % rot.length;
+    const kind = rot[i];
+    const [name, unit, base, perMin] = PRACTICE_LABEL[kind];
+    const n = late ? base * 2 : base;
+    const min = unit === "세트" || unit === "지문" ? n * perMin : perMin * (n / base);
+    return { kind, n, label: `${name} ${n}${unit}`, min };
+  }
+  // 목표 점수에 맞는 실전 문제 난이도
+  function levelsFor(target) {
+    return target <= 650 ? [1, 2] : target <= 800 ? [1, 2, 3] : [2, 3];
+  }
+  // 오늘 진행률: 새 단어(45%) · 복습(35%) · 실전 과제(20%)
+  function todayProgress(o) {
+    const newP = o.daily > 0 ? Math.min(1, (o.introduced || 0) / o.daily) : 1;
+    const revTotal = (o.reviewed || 0) + (o.due || 0);
+    const revP = revTotal ? (o.reviewed || 0) / revTotal : 1;
+    return Math.round((newP * 0.45 + revP * 0.35 + (o.practiced ? 0.2 : 0)) * 100);
+  }
+
   // 지금 속도로 범위를 다 보는 날 (최근 7일 새 단어 평균)
   function projectFinish(pool, states, log, today, daily, start) {
     // 최근 7일(시작한 지 7일이 안 됐으면 시작일부터) 하루 평균 새 단어 수
@@ -571,6 +599,7 @@
     todayPlan, streak,
     rng, shuffle, meaningText, distractors, starred, cloze, plainEx, makeQuestion, makeTest,
     canParaphrase, makeParaphrase, placementSample,
+    practiceTask, levelsFor, todayProgress,
     scaleScore, estimateTotal, predictScore, pushRecent, recordType, weakTypes, dictDiff,
     splitDialog, canRespond, makeResponse, makeLcMeaning, lcPick, lcRecord, lcSummary, placementScore, estimateKnown, recommendSkip,
     normEn, checkSpelling, editDistance, spellHint,

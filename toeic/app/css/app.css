@@ -55,6 +55,7 @@
     --text-2: #aab3c3;
     --text-3: #727d90;
     --brand: #5b82ff;
+    --btn-bg: #3d63e6;
     --brand-2: #7b9bff;
     --brand-soft: #1b2645;
     --ok-soft: #10291f;
@@ -78,6 +79,7 @@
   --text-2: #aab3c3;
   --text-3: #727d90;
   --brand: #5b82ff;
+  --btn-bg: #3d63e6;
   --brand-2: #7b9bff;
   --brand-soft: #1b2645;
   --ok-soft: #10291f;
@@ -199,7 +201,7 @@ svg { flex-shrink: 0; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   height: 52px; padding: 0 20px; border-radius: 14px; font-weight: 700; font-size: 16px;
-  background: var(--brand); color: var(--brand-ink); transition: transform 0.08s, background 0.15s, opacity 0.15s;
+  background: var(--btn-bg, var(--brand)); color: var(--brand-ink); transition: transform 0.08s, background 0.15s, opacity 0.15s;
   user-select: none;
 }
 .btn:hover { background: var(--brand-2); }
@@ -644,3 +646,22 @@ mark.on { background: color-mix(in srgb, var(--gold) 55%, transparent); box-shad
 .sheet { display: grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap: 6px; max-height: 50vh; overflow-y: auto; }
 .sheet-c { height: 36px; border-radius: 8px; border: 1.5px solid var(--line-strong); font-size: 13px; font-weight: 700; color: var(--text-3); }
 .sheet-c.on { background: var(--brand); border-color: var(--brand); color: #fff; }
+/* 버튼으로 만든 목록 행: 왼쪽 정렬·가로 꽉 채움 */
+button.witem { width: 100%; text-align: left; font: inherit; color: inherit; background: transparent; }
+/* 학습 화면 하단 버튼: 작은 화면에서도 항상 보이게 고정 */
+.study-foot { position: sticky; bottom: 0; z-index: 5; padding-bottom: calc(6px + var(--safe-b)); background: linear-gradient(to bottom, transparent, var(--bg) 22%); }
+/* 표: 좁은 화면에서는 줄바꿈해서 모든 열이 보이게 */
+.gfx th, .gfx td { white-space: normal; word-break: keep-all; overflow-wrap: normal; }
+@media (max-width: 440px) { .gfx table { font-size: 12.5px; } .gfx th, .gfx td { padding: 5px 6px; } }
+.sheet-c.cur { box-shadow: 0 0 0 2px var(--accent); }
+/* Part 6·7 모바일: 지문 ↔ 문제 이동 버튼 */
+.jumpbar { position: sticky; top: 0; z-index: 6; display: flex; gap: 6px; justify-content: flex-end; padding: 6px 0; background: linear-gradient(var(--bg) 70%, transparent); }
+.jumpbar button { display: inline-flex; align-items: center; gap: 4px; height: 32px; padding: 0 12px; border-radius: 16px; background: var(--bg-elev); border: 1px solid var(--line); font-size: 13px; font-weight: 700; color: var(--text-2); box-shadow: var(--shadow-1); }
+.jumpbar .ico { width: 15px; height: 15px; }
+@media (min-width: 1000px) { .jumpbar { display: none; } }
+/* 근거 표시: 선택한 문항의 근거가 더 또렷하게 */
+mark { background: color-mix(in srgb, var(--gold) 16%, transparent); }
+mark.on { background: color-mix(in srgb, var(--gold) 62%, transparent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--gold) 62%, transparent); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+/* 작은 화면 온보딩: 다음 버튼 항상 보이게 */
+.onb-foot { position: sticky; bottom: 0; background: linear-gradient(transparent, var(--bg) 25%); padding-bottom: calc(10px + var(--safe-b)); }
+@media (max-width: 380px) { .gfx { padding: 10px 8px; } .gfx table { font-size: 12px; } .gfx th, .gfx td { padding: 4px 5px; } }

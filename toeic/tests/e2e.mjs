@@ -80,6 +80,7 @@ await p.goto(base + "#/mock"); await p.waitForTimeout(300);
 await p.click('[data-mock="1"]'); await p.waitForTimeout(150); await p.click("[data-go-mock]"); await p.waitForTimeout(300);
 for (let k = 0; k < 200 && !(await p.$(".result-hero")); k++) {
   const pick = await p.$("[data-pick]"); if (pick) await pick.click();
+  const conf = await p.$('#modal [data-r="1"]'); if (conf) { await conf.click(); await p.waitForTimeout(150); continue; }
   await p.click("[data-next]"); await p.waitForTimeout(40);
 }
 const mock = await p.evaluate(() => window.__vocafit.state.mock[1]);

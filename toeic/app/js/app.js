@@ -20,7 +20,7 @@
   const COURSES = [
     { name: "기본 코스", from: 1, to: 30, desc: "주제별 필수 어휘" },
     { name: "심화 코스", from: 31, to: 60, desc: "같은 주제의 확장 어휘" },
-    { name: "실전 코스", from: 61, to: 90, desc: "LC 표현 · 고득점 어휘" },
+    { name: "완성 코스", from: 61, to: 90, desc: "LC 표현 · 고득점 어휘" },
   ];
   const POS_KO = { n: "명사", v: "동사", adj: "형용사", adv: "부사", phr: "숙어", prep: "전치사", conj: "접속사" };
   const POS_SHORT = { n: "명", v: "동", adj: "형", adv: "부", phr: "숙", prep: "전", conj: "접" };
@@ -88,6 +88,7 @@
       const l = lg[k];
       d.log[k] = { new: num(l.new, 0, 0, 1e5), rev: num(l.rev, 0, 0, 1e5), q: num(l.q, 0, 0, 1e5), ok: num(l.ok, 0, 0, 1e5), sec: num(l.sec, 0, 0, 1e6) };
       if (l.done) d.log[k].done = true;
+      if (l.prac) d.log[k].prac = true;
     }
     const ts = (src && src.tests) || {};
     for (const k of Object.keys(ts)) {
@@ -114,6 +115,10 @@
     for (const sec of ["lc", "rc"]) if (Array.isArray(pr[sec])) d.pr[sec] = pr[sec].slice(-120).map((x) => (x ? 1 : 0));
     const mk = (src && src.mock) || {};
     for (const k of Object.keys(mk)) if (/^\d{1,2}$/.test(k) && mk[k]) d.mock[k] = { lc: num(mk[k].lc, 5, 5, 495), rc: num(mk[k].rc, 5, 5, 495), total: num(mk[k].total, 10, 10, 990), best: num(mk[k].best, 10, 10, 990), at: num(mk[k].at, 0, 0, 1e6) };
+    const mr = src && src.mockRun;
+    if (mr && /^\d{1,2}$/.test(String(mr.n)) && Array.isArray(mr.picks)) {
+      d.mockRun = { n: +mr.n, i: num(mr.i, 0, 0, 500), picks: mr.picks.slice(0, 500).map((a) => (Array.isArray(a) ? a.slice(0, 10).map((x) => (Number.isInteger(x) && x >= 0 && x <= 3 ? x : null)) : [])), rcUsed: mr.rcUsed == null ? null : num(mr.rcUsed, 0, 0, 1e8), at: num(mr.at, 0, 0, 1e6) };
+    }
     d.premium = !!(src && src.premium);
     return d;
   }
@@ -558,10 +563,10 @@
         <h1 style="text-align:center">토익 단어,<br/>목표 점수만큼만 정확하게</h1>
         <p class="lead" style="text-align:center">목표 점수를 알려주시면 꼭 필요한 단어만 골라<br/>매일 학습 계획을 만들어 드려요.</p>
         <div class="feature-list">
-          <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? `${NDAYS}일 · 기본/심화/실전 코스` : "30일 주제별"} · 기본/핵심/고득점 3단계</span></div>
+          <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? `${NDAYS}일 · 기본/심화/완성 코스` : "30일 주제별"} · 기본/핵심/고득점 3단계</span></div>
           <div><span class="tico c-green">${ico("headphones")}</span><span><b>모든 단어·예문 원어민 음성</b>미국·영국 발음으로 토익 LC까지 대비</span></div>
           <div><span class="tico c-orange">${ico("repeat")}</span><span><b>잊을 때쯤 다시 나오는 복습</b>1·3·7·14·30일 간격 반복 + 오답노트</span></div>
-          <div><span class="tico c-purple">${ico("zap")}</span><span><b>Part 5 실전 문제 ${NWORDS}개</b>단어마다 출제 포인트와 해설</span></div>
+          <div><span class="tico c-purple">${ico("trophy")}</span><span><b>Part 2~7 실전 문제 · 하프 모의고사</b>정답 근거까지 보여 주는 해설 · 예상 점수</span></div>
         </div>`;
     } else if (onb.step === 1) {
       const n = onbPool();
@@ -589,7 +594,15 @@
           <div class="pl"><span>하루 새 단어</span><b>${daily}개</b></div>
           <div class="pl"><span>1회독 완료</span><b>${days}일 뒤 (${fmtDate(today() + days - 1)})</b></div>
           ${onb.exam ? `<div class="pl"><span>시험일</span><b>${fmtDate(C.parseYmd(onb.exam))} (D-${C.parseYmd(onb.exam) - today()})</b></div>` : ""}
-        </div>`;
+        </div>
+        ${(() => {
+          // 시험 전에 1회독이 안 되면 숨기지 않고 알려 준다 (쉬운 단어부터 나오므로 볼 수 있는 범위를 안내)
+          if (!onb.exam) return "";
+          const left = C.parseYmd(onb.exam) - today();
+          const cover = Math.min(n, daily * Math.max(0, left));
+          if (cover >= n) return "";
+          return `<div class="tip-box" style="margin-top:12px;background:var(--bad-soft)"><b>시험 전 1회독은 어려워요</b> 시험일까지 ${cover.toLocaleString()}개를 볼 수 있어요(쉬운 단어부터 순서대로). ${daily < 80 ? "하루 학습량을 늘리거나, " : ""}남은 시간에는 <b>실전 문제</b>로 자주 나오는 표현을 익히는 걸 추천해요.</div>`;
+        })()}`;
     }
     const foot = onb.step === 0
       ? `<button class="btn block" data-next>시작하기</button>`
@@ -639,13 +652,20 @@
     const nextWord = plan.newWords[0];
     const hour = new Date().getHours();
     const hi = hour < 6 ? "늦은 밤에도 열공 중이시네요" : hour < 12 ? "좋은 아침이에요" : hour < 18 ? "오늘도 한 걸음 더" : "오늘 하루도 수고했어요";
-    const heroTitle = plan.remaining === 0 ? "범위 1회독 완료! 복습으로 굳혀요" : newDone ? "오늘 새 단어 완료!" : `오늘의 단어 ${plan.newWords.length}개`;
-    const heroSub = nextWord ? `DAY ${pad(nextWord.d)} · ${esc(DAY_BY.get(nextWord.d).title)}` : `${hi}`;
+    const l = S.log[t] || {};
+    const task = practiceTaskToday(P, sum, t);
+    const prog = C.todayProgress({ daily: S.profile.daily, introduced: plan.introducedToday, reviewed: l.rev || 0, due: plan.due.length, practiced: !!l.prac });
+    const estMin = Math.ceil(plan.newWords.length * 0.4 + Math.min(plan.due.length, 100) * 0.15 + (l.prac ? 0 : task.min));
+    const allDone = newDone && !plan.due.length && l.prac;
+    // 오늘 할 일 순서: 복습 → 새 단어 → 오늘 단어 퀴즈 → 오늘의 실전 (잊기 전에 복습부터)
+    const next = plan.due.length ? ["due", "repeat", `복습 ${Math.min(plan.due.length, 100)}개부터 시작`] : !newDone ? ["new", "play", `새 단어 ${plan.newWords.length}개 시작`] : !l.prac ? ["prac", "target", `오늘의 실전 · ${task.label}`] : introduced.length ? ["quiz-today", "zap", "오늘 단어 퀴즈로 마무리"] : null;
+    const heroTitle = allDone ? "오늘 할 일 끝! 🎉" : plan.remaining === 0 && newDone ? "범위 1회독 완료! 복습과 실전으로" : `오늘의 학습`;
+    const heroSub = allDone ? "내일도 이어서 해요 · 더 하고 싶다면 실전 탭에서" : `예상 ${Math.max(1, estMin)}분 · ${[plan.due.length ? `복습 ${Math.min(plan.due.length, 100)}` : "", !newDone ? `새 단어 ${plan.newWords.length}` : "", !l.prac ? "실전 1" : ""].filter(Boolean).join(" · ") || "남은 과제 없음"}`;
     const body = `
       <div class="top"><h1>${hi}</h1><a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a><a class="icon-btn" href="#/settings" aria-label="설정">${ico("gear")}</a></div>
       <section class="hero">
-        <div class="ring">${ring(pct, 76, 7)}</div>
-        <div class="eyebrow">목표 ${target()}점 · ${C.scoreBand(target()).label}</div>
+        <div class="ring" aria-label="오늘 진행률 ${prog}%">${ring(prog, 76, 7)}</div>
+        <div class="eyebrow">목표 ${target()}점 · ${C.scoreBand(target()).label}${nextWord ? ` · DAY ${pad(nextWord.d)}` : ""}</div>
         <div class="big">${heroTitle}</div>
         <div class="eyebrow">${heroSub}</div>
         <div class="meta">
@@ -653,31 +673,41 @@
           <div><b>${streak}일</b>연속 학습</div>
           <div><b>${dday != null ? (dday >= 0 ? "D-" + dday : "종료") : "–"}</b>시험까지</div>
         </div>
-        ${!newDone ? `<button class="btn block" data-go="new">${ico("play")}오늘의 학습 시작</button>` : plan.due.length ? `<button class="btn block" data-go="due">${ico("repeat")}복습 ${plan.due.length}개 시작</button>` : `<button class="btn block" data-go="quiz-today" ${introduced.length ? "" : "disabled"}>${ico("zap")}오늘 단어 퀴즈</button>`}
+        ${next ? `<button class="btn block" data-go="${next[0]}">${ico(next[1])}${next[2]}</button>` : `<a class="btn block" href="#/practice">${ico("target")}실전 문제 더 풀기</a>`}
       </section>
       <div class="section"><div class="section-h"><h2>오늘 할 일</h2><span class="small muted">${fmtDate(t)}</span></div>
-        <button class="task ${newDone ? "done" : ""}" data-go="new"><span class="tico c-blue">${ico("layers")}</span><span class="spacer"><div class="tt">새 단어 외우기</div><div class="td">${newDone ? `오늘 ${plan.introducedToday}개 완료 · 더 하고 싶다면 단어장에서` : `카드로 뜻 확인 → 모르는 단어는 다시`}</div></span><span class="tn">${newDone ? ico("check") : plan.newWords.length}</span></button>
-        <button class="task ${plan.due.length ? "" : "done"}" data-go="due"><span class="tico c-orange">${ico("repeat")}</span><span class="spacer"><div class="tt">복습하기</div><div class="td">${plan.due.length ? "잊어버리기 전에 다시 볼 단어" : "오늘 복습할 단어가 없어요"}</div></span><span class="tn">${plan.due.length || ico("check")}</span></button>
+        <button class="task ${plan.due.length ? "" : "done"}" data-go="due"><span class="tico c-orange">${ico("repeat")}</span><span class="spacer"><div class="tt">복습하기</div><div class="td">${plan.due.length ? "잊어버리기 전에 다시 볼 단어 · 먼저 하면 기억이 오래가요" : l.rev ? `오늘 ${l.rev}개 복습 완료` : "오늘 복습할 단어가 없어요"}</div></span><span class="tn">${plan.due.length ? Math.min(plan.due.length, 100) : ico("check")}</span></button>
+        <button class="task ${newDone ? "done" : ""}" data-go="new"><span class="tico c-blue">${ico("layers")}</span><span class="spacer"><div class="tt">새 단어 외우기${nextWord ? ` <span class="small muted" style="font-weight:600">DAY ${pad(nextWord.d)} · ${esc(DAY_BY.get(nextWord.d).title)}</span>` : ""}</div><div class="td">${newDone ? `오늘 ${plan.introducedToday}개 완료 · 더 하고 싶다면 단어장에서` : `카드로 뜻 확인 → 모르는 단어는 다시`}</div></span><span class="tn">${newDone ? ico("check") : plan.newWords.length}</span></button>
         <button class="task ${introduced.length ? "" : "done"}" data-go="quiz-today"><span class="tico c-purple">${ico("zap")}</span><span class="spacer"><div class="tt">오늘 단어 확인 퀴즈</div><div class="td">${introduced.length ? `오늘 본 ${introduced.length}개 · 뜻/단어/예문/Part 5 섞어서` : "새 단어를 외우면 열려요"}</div></span><span class="tn">${introduced.length || "–"}</span></button>
+        <button class="task ${l.prac ? "done" : ""}" data-go="prac"><span class="tico c-green">${ico("target")}</span><span class="spacer"><div class="tt">오늘의 실전 · ${esc(task.label)}</div><div class="td">${l.prac ? "오늘 실전 완료 · 더 풀려면 실전 탭에서" : task.kind === "mock" ? "시험 2주 전 · 실전처럼 시간 재고 풀어 보세요" : `약 ${task.min}분 · 목표 ${target()}점에 맞춘 난이도`}</div></span><span class="tn">${l.prac ? ico("check") : ico("right")}</span></button>
         ${S.profile.placed ? "" : `<button class="task" data-go="place"><span class="tico c-green">${ico("gauge")}</span><span class="spacer"><div class="tt">3분 어휘 진단</div><div class="td">이미 아는 단어는 건너뛰고 필요한 단어부터</div></span><span class="tn">${ico("right")}</span></button>`}
         <button class="task ${wrong ? "" : "done"}" data-go="wrong"><span class="tico c-red">${ico("alert")}</span><span class="spacer"><div class="tt">오답노트</div><div class="td">${wrong ? "틀린 단어만 다시 풀어요" : "아직 틀린 단어가 없어요"}</div></span><span class="tn">${wrong || "–"}</span></button>
-      </div>
-      <a class="task" href="#/practice" style="margin-top:14px"><span class="tico c-purple">${ico("target")}</span><span class="spacer"><div class="tt">실전 문제 · 하프 모의고사</div><div class="td">${(() => { const pr = C.predictScore(S.pr); return pr ? `예상 점수 ${pr.total}점 (LC ${pr.lc} · RC ${pr.rc})` : "Part 2~7 실전 문제로 예상 점수 확인"; })()}</div></span>${ico("right")}</a>
-      <div class="section"><div class="section-h"><h2>토익 파트별 특훈</h2></div>
-        <div class="grid2">
-          <a class="tile" href="#/part1"><span class="tico c-green">${ico("camera")}</span><b>Part 1 사진 표현</b><span>사진 묘사 필수 ${D.part1.length}문장</span></a>
-          <a class="tile" href="#/conf"><span class="tico c-gold">${ico("split")}</span><b>Part 5 혼동 어휘</b><span>헷갈리는 단어 ${D.conf.length}세트</span></a>
-          ${(D.lc || []).length ? `<a class="tile" href="#/lc"><span class="tico c-purple">${ico("ear")}</span><b>LC 빈출 표현</b><span>Part 2~4 표현 ${D.lc.length}개 · 실전 퀴즈</span></a>` : ""}
-          <button class="tile" data-go="listen"><span class="tico c-blue">${ico("headphones")}</span><b>듣기 모드</b><span>출퇴근길 자동 재생</span></button>
-          <button class="tile" data-go="part5"><span class="tico c-purple">${ico("trophy")}</span><b>Part 5 실전 20제</b><span>배운 단어로 실전 문제</span></button>
-          <button class="tile" data-go="para"><span class="tico c-orange">${ico("swap")}</span><b>Part 7 동의어 20제</b><span>문맥 속 바꿔 쓰기</span></button>
-        </div>
       </div>
       <div class="section"><div class="section-h"><h2>진도</h2><a href="#/stats">자세히</a></div>
         <div class="card">${progressBlock(P)}</div>
       </div>`;
     shell("home", body);
     $app.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => homeGo(b.dataset.go, plan, introduced)));
+  }
+  // 오늘의 실전 과제 (시험일·단어 진도·모의고사 기록 기준)
+  function practiceTaskToday(P, sum, t) {
+    const mocks = (PR && PR.mocks ? PR.mocks.length : 4);
+    const taken = Object.keys(S.mock).length;
+    const last = Object.values(S.mock).reduce((m, r) => Math.max(m, r.at || 0), 0) || null;
+    const exam = C.parseYmd(S.profile.examDate);
+    return C.practiceTask({ dday: exam != null ? exam - t : null, seenRatio: P.length ? sum.seen / P.length : 0, dayIndex: t - (S.profile.start || t), mocksLeft: mocks - taken, lastMockDay: last, today: t });
+  }
+  function startPracticeTask(task) {
+    loadPractice().then(() => {
+      const title = `오늘의 실전 · ${task.label}`;
+      if (task.kind === "mock") return go("#/mock");
+      if (task.kind === "p2") return startLcQuiz("resp", D.lc || [], task.n);
+      if (task.kind === "p5g") {
+        const qs = PR.grammar.flatMap((x) => x.qs.filter((q) => !q.mock));
+        return startGrammarQuiz(C.lcPick(qs, S.gq, task.n), title);
+      }
+      startSets(task.kind, pickSets(practicePool(task.kind), task.n), title);
+    }).catch(() => toast("문제를 불러오지 못했어요"));
   }
   function progressBlock(P) {
     const tiers = myTiers();
@@ -708,6 +738,11 @@
       return startQuiz(introduced, "mix", { title: "오늘 단어 퀴즈" });
     }
     if (what === "place") return startPlacement();
+    if (what === "prac") {
+      const t = today();
+      if (S.log[t] && S.log[t].prac) return go("#/practice");
+      return startPracticeTask(practiceTaskToday(P, C.summarize(P, S.words), t));
+    }
     if (what === "wrong") {
       const ws = WORDS.filter((w) => st(w.id) && st(w.id).wrong);
       if (!ws.length) return toast("오답노트가 비어 있어요");
@@ -726,7 +761,7 @@
     if (what === "part5") {
       const seen = P.filter((w) => st(w.id) && st(w.id).n);
       const base = seen.length >= 10 ? seen : P.slice(0, 80);
-      return startQuiz(C.shuffle(base).slice(0, 20), "part5", { title: "Part 5 실전 20제" });
+      return startQuiz(C.shuffle(base).slice(0, 20), "part5", { title: "Part 5 어휘 20제" });
     }
   }
 
@@ -801,7 +836,7 @@
       ["listen-q", "듣고 고르기", "ear", "c-purple"],
       ["spell", "철자 쓰기", "pencil", "c-gold"],
       ["cloze", "예문 빈칸", "bulb", "c-blue"],
-      ["part5", "Part 5 실전", "trophy", "c-purple"],
+      ["part5", "Part 5 어휘", "trophy", "c-purple"],
       ["para", "Part 7 동의어", "swap", "c-orange"],
     ];
     const items = list.map((w) => wordItem(w)).join("") || `<div class="empty">${ico("search")}<b>해당하는 단어가 없어요</b>필터를 바꿔 보세요</div>`;
@@ -867,7 +902,7 @@
       ${cols ? `<div class="card blk"><div class="blk-h">빈출 표현</div>${cols}</div>` : ""}
       ${derivs ? `<div class="card blk"><div class="blk-h">파생어 · 품사 변화</div>${derivs}</div>` : ""}
       ${(w.para && w.para.length) || w.ant ? `<div class="card blk">${w.para && w.para.length ? `<div class="blk-h">Part 7 패러프레이징 (바꿔 쓰기)</div><div class="para-list">${w.para.map((p) => `<span class="en">${esc(p)}</span>`).join("")}</div>` : ""}${w.ant ? `<div class="blk-h" style="margin-top:${w.para && w.para.length ? 14 : 0}px">반의어</div><div class="en" style="font-weight:650">${esc(w.ant)}</div>` : ""}</div>` : ""}
-      ${o.noQuiz ? "" : `<div class="card blk" id="p5"><div class="blk-h">Part 5 실전 문제</div><div class="en" style="font-size:16px;line-height:1.6">${esc(w.q.s).replace("-------", '<b style="letter-spacing:.1em">_______</b>')}</div>
+      ${o.noQuiz ? "" : `<div class="card blk" id="p5"><div class="blk-h">Part 5 어휘 문제</div><div class="en" style="font-size:16px;line-height:1.6">${esc(w.q.s).replace("-------", '<b style="letter-spacing:.1em">_______</b>')}</div>
         <div class="opts" style="margin-top:12px">${w.q.o.map((x, i) => `<button class="opt" data-p5="${i}"><span class="on">${"ABCD"[i]}</span><span class="en">${esc(x)}</span></button>`).join("")}</div><div id="p5fb"></div></div>`}
       ${s && s.n ? `<p class="small muted" style="text-align:center;margin-top:18px">본 횟수 ${s.n}회 · 맞힘 ${s.ok} · 틀림 ${s.ng}${s.due && s.b ? ` · 다음 복습 ${fmtDate(s.due)}` : ""}</p>` : ""}`;
   }
@@ -917,7 +952,8 @@
   }
   function askExit() {
     if (!session || session.done) return exitStudy();
-    confirmBox("학습을 그만할까요?", "지금까지 한 내용은 저장돼요.", "그만하기").then((ok) => { if (ok) exitStudy(); });
+    const mock = session.kind === "mock";
+    confirmBox(mock ? "모의고사를 멈출까요?" : "학습을 그만할까요?", mock ? "푼 답안과 남은 시간이 저장돼요. 모의고사 화면에서 이어서 풀 수 있어요." : "지금까지 한 내용은 저장돼요.", mock ? "멈추기" : "그만하기").then((ok) => { if (ok) { if (mock && session) saveMockRun(session); exitStudy(); } });
   }
   function studyTop(cur, total) {
     const pct = total ? Math.round((cur / total) * 100) : 0;
@@ -968,7 +1004,7 @@
           ${w.tip ? `<div class="small" style="margin-top:10px;color:var(--text-2)"><b style="color:var(--warn)">출제 포인트</b> ${esc(w.tip)}</div>` : ""}</div>` : `<div class="f-hint">뜻을 떠올린 뒤 카드를 눌러 확인하세요</div>`}
       </div></div>
       <div class="study-foot">${s.flipped
-        ? `<div class="grade3"><button class="btn g-no" data-g="0">모르겠어요<small>다시 보기</small></button><button class="btn g-mid" data-g="1">헷갈려요<small>${dueLabel(C.INTERVALS[Math.max(1, ((st0 && st0.b) || 0) - 1)])}</small></button><button class="btn g-yes" data-g="2">알아요<small>${s.seenIds.has(w.id) ? "내일 복습" : dueLabel(C.INTERVALS[Math.min(((st0 && st0.b) || 0) + 1, 6)])}</small></button></div>`
+        ? `<div class="grade3"><button class="btn g-no" data-g="0">모르겠어요<small>다시 보기</small></button><button class="btn g-mid" data-g="1">헷갈려요<small>${dueLabel(C.INTERVALS[Math.max(1, ((st0 && st0.b) || 0) - 1)])}</small></button><button class="btn g-yes" data-g="2">알아요<small>${s.seenIds.has(w.id) ? "내일 복습" : !st0 || !st0.b ? dueLabel(C.INTERVALS[2]) : dueLabel(C.INTERVALS[Math.min(st0.b + 1, 6)])}</small></button></div>`
         : `<button class="btn block" data-flip>뜻 확인하기</button>`}
         <div class="kbd-hint"><kbd>Space</kbd> 뒤집기 · <kbd>1</kbd> 모름 <kbd>2</kbd> 헷갈림 <kbd>3</kbd> 알아요 · <kbd>P</kbd> 발음 <kbd>E</kbd> 예문 · 카드를 좌우로 밀어도 돼요</div></div></div>`;
     bindExit();
@@ -1037,9 +1073,13 @@
     const s = session;
     const w = s.queue[s.i];
     const t = today();
+    const prev = st(w.id);
+    // 처음 보는 단어를 바로 '알아요' 하면 3일 뒤 확인 ('헷갈려요'는 내일)
+    const brandNew = (!prev || !prev.b) && !s.seenIds.has(w.id);
     introduceIfNew(w);
     const before = st(w.id);
     let ns = C.grade(before, g, t);
+    if (g === 2 && brandNew) ns = Object.assign(ns, { b: 2, due: t + C.INTERVALS[2] });
     // 같은 세션에서 다시 나온 단어는 승급하지 않는다 (모름→알아요가 한 번에 맞힌 것보다 높아지지 않게)
     if (g === 2 && s.seenIds.has(w.id) && before) {
       const b = Math.max(1, before.b);
@@ -1228,7 +1268,7 @@
     if (q.type === "meaning") qhtml = `<div class="qw en">${esc(w.w)}</div>${w.ipa ? `<div class="muted small" style="margin-top:4px">${esc(w.ipa)}</div>` : ""}`;
     else if (q.type === "word") qhtml = `<div class="qm">${esc(q.prompt)}</div><div class="muted small" style="margin-top:6px">${POS_KO[w.pos] || ""}</div>`;
     else if (q.type === "listen") qhtml = `<button class="play lg" data-replay style="margin:18px auto 0;width:84px;height:84px" aria-label="다시 듣기">${ico("vol")}</button>${ans ? `<div class="qw en" style="font-size:26px">${esc(w.w)}</div>` : `<div class="small muted" style="margin-top:10px">버튼을 눌러 다시 들을 수 있어요</div>`}`;
-    else if (q.type === "cloze") qhtml = `<div class="qs en">${esc(q.prompt).replace(/_____/g, '<b style="color:var(--brand)">_____</b>')}</div>${S.settings.showKo ? `<div class="qsub">${esc(q.sub)}</div>` : ""}`;
+    else if (q.type === "cloze") qhtml = `<div class="qs en">${esc(q.prompt).replace(/_____/g, '<b style="color:var(--brand)">_____</b>')}</div>${S.settings.showKo && ans ? `<div class="qsub">${esc(q.sub)}</div>` : ""}`;
     else if (q.type === "part5" || q.type === "conf") qhtml = `<div class="qs en">${esc(q.prompt).replace("-------", '<b style="color:var(--brand);letter-spacing:.05em">_______</b>')}</div>`;
     else if (q.type === "para") qhtml = `<div class="qs en">${hl(w.ex)}</div><div class="qsub">표시된 <b class="en">${esc(q.key)}</b>와 바꿔 쓸 수 있는 표현은?</div>`;
     else if (q.type === "spell") qhtml = `<div class="qm">${esc(q.prompt)}</div><div class="muted small" style="margin-top:6px">${POS_KO[w.pos] || ""}${w.ex ? "" : ""}</div>`;
@@ -1438,6 +1478,7 @@
   function finishSession() {
     const s = session;
     s.done = true;
+    if (["pset", "gq", "lcq", "dict"].includes(s.kind) && (s.results || []).length >= 3) logToday().prac = true;
     const count = s.kind === "card" ? s.seenIds.size : s.kind === "sort" ? 0 : s.results.length;
     if (count >= 5) markDone();
     if (s.type === "test" && s.day) {
@@ -1482,7 +1523,8 @@
     } else if (s.kind === "mock") {
       const r = mockResultHtml(s);
       hero = r.hero;
-      actions = `<div class="card">${r.rows}</div><button class="btn block" style="margin-top:12px" data-mrev>${ico("book")}전체 해설 보기</button><button class="btn ghost block" style="margin-top:10px" data-home>모의고사 목록으로</button>`;
+      const wrongN = s.pages.reduce((n, p, pi) => n + pageQs(p).filter((q, qi) => s.picks[pi][qi] !== (p.part === "p2" ? p.q.answer : q.a)).length, 0);
+      actions = `<div class="card">${r.rows}</div><button class="btn block" style="margin-top:12px" data-mrevw ${wrongN ? "" : "disabled"}>${ico("alert")}틀린 문제 해설 (${wrongN})</button><button class="btn ghost block" style="margin-top:10px" data-mrev>${ico("book")}전체 해설 보기</button><a class="btn ghost block" style="margin-top:10px" href="#/practice" data-tohub>약점 연습하러 가기</a><button class="btn ghost block" style="margin-top:10px" data-home>모의고사 목록으로</button>`;
       list = "";
     } else if (s.kind === "dict") {
       const avg = Math.round(s.results.reduce((n, r) => n + r.pct, 0) / Math.max(1, s.results.length));
@@ -1543,7 +1585,11 @@
     const pm = $app.querySelector("[data-pmore]");
     if (pm) pm.addEventListener("click", () => startSets(s.part, pickSets(practicePool(s.part).filter((x) => !s.queue.includes(x)), s.part === "p7" ? 2 : 3), s.title));
     const mr = $app.querySelector("[data-mrev]");
-    if (mr) mr.addEventListener("click", () => { s.reviewing = 0; vMockReview(); window.scrollTo(0, 0); });
+    if (mr) mr.addEventListener("click", () => { s.wrongOnly = false; s.reviewing = 0; vMockReview(); window.scrollTo(0, 0); });
+    const mw = $app.querySelector("[data-mrevw]");
+    if (mw) mw.addEventListener("click", () => { s.wrongOnly = true; s.reviewing = mockReviewNext(s, -1, 1); vMockReview(); window.scrollTo(0, 0); });
+    const th = $app.querySelector("[data-tohub]");
+    if (th) th.addEventListener("click", (e) => { e.preventDefault(); session = null; studyPushed = false; location.replace("#/practice"); });
     const dm = $app.querySelector("[data-dmore]");
     if (dm) dm.addEventListener("click", () => { const src = dictSources(); const short = s.title.includes("짧은"); const all = short ? src.lc : src.p34.filter((x) => x.text.split(" ").length >= 6 && x.text.split(" ").length <= 22); startDict(C.shuffle(all).slice(0, 10), s.title); });
     const gw = $app.querySelector("[data-gwrong]");
@@ -1699,12 +1745,12 @@
   // ═════════════ LC 실전 퀴즈 ═════════════
   // resp: Part 2 응답 고르기 (질문 → 보기 3개를 차례로 들려준다) · lcm: Part 3·4 문장을 듣고 해석 고르기
   const LCQ_N = 20;
-  function startLcQuiz(type, items) {
+  function startLcQuiz(type, items, count) {
     let src = items.filter(type === "resp" ? C.canRespond : (p) => !C.splitDialog(p.e));
     const everything = (D.lc || []).filter(type === "resp" ? C.canRespond : (p) => !C.splitDialog(p.e));
     if (src.length < 4) src = everything;
     if (!src.length) return toast("문제를 만들 표현이 없어요");
-    const picked = C.lcPick(src, S.lc, LCQ_N);
+    const picked = C.lcPick(src, S.lc, count || LCQ_N);
     const pool = everything.length >= 8 ? everything : D.lc;
     const qs = picked.map((p) => (type === "resp" ? C.makeResponse(p) : C.makeLcMeaning(p, pool)));
     session = { kind: "lcq", type, title: type === "resp" ? "Part 2 응답 고르기" : "듣고 해석 고르기", qs, src, i: 0, answered: null, results: [], from: location.hash };
@@ -1958,7 +2004,7 @@
     const script = review ? `<div class="section-h" style="margin-top:18px"><h2>스크립트</h2><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>
       <div class="script">${set.lines.map((l, i) => `<div class="sline ${evSet.has(i) ? "ev" : ""}" data-line="${i}"><span class="spk spk-${l.sp[0]}">${SPK[l.sp] || ""}</span><div class="spacer"><div class="en">${esc(l.en)}</div>${showKo ? `<div class="ko">${esc(l.ko)}</div>` : ""}</div></div>`).join("")}</div>
       <div class="small muted" style="margin-top:6px">문장을 누르면 그 문장부터 다시 들어요 · 근거 위치 보기를 누르면 정답 근거 문장이 표시돼요</div>` : "";
-    return `${player}${graphicHtml(set.graphic)}<div class="pqs">${set.qs.map((q, j) => qBlock(q, j, st.picks[j], mode, { evBtn: true })).join("")}</div>${script}`;
+    return `${player}${graphicHtml(set.graphic)}<div class="pqs">${set.qs.map((q, j) => qBlock(q, j, st.picks[j], mode, { evBtn: true, num: st.base ? st.base + j : undefined })).join("")}</div>${script}`;
   }
   // ── Part 6 ──
   function p6Html(set, st, mode) {
@@ -1966,13 +2012,14 @@
     const showKo = ui.prKo !== false;
     const fill = (txt) => esc(txt).replace(/\{(\d)\}/g, (m, n) => {
       const j = +n - 1, q = set.qs[j];
-      if (!review) return `<span class="blank ${st.picks[j] != null ? "done" : ""}" data-jump="${j}">(${n}) ${st.picks[j] != null && q.kind !== "문장 삽입" ? esc(q.o[st.picks[j]]) : "______"}</span>`;
+      const label = st.base ? st.base + j : n;
+      if (!review) return `<span class="blank ${st.picks[j] != null ? "done" : ""}" data-jump="${j}">(${label}) ${st.picks[j] != null && q.kind !== "문장 삽입" ? esc(q.o[st.picks[j]]) : "______"}</span>`;
       const ok = st.picks[j] === q.a;
-      return `<span class="blank ${ok ? "ok" : "bad"}">(${n}) ${esc(q.o[q.a])}</span>`;
+      return `<span class="blank ${ok ? "ok" : "bad"}">(${label}) ${esc(q.o[q.a])}</span>`;
     });
     return `<div class="doc"><div class="doc-k">${esc(set.doc)}${set.title ? ` · ${esc(set.title)}` : ""}</div>${set.paras.map((p, i) => `<p class="en">${fill(p)}</p>${review && showKo ? `<p class="ko">${esc(set.ko[i])}</p>` : ""}`).join("")}</div>
       ${review ? `<div class="row" style="justify-content:flex-end;margin-top:8px"><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>` : ""}
-      <div class="pqs">${set.qs.map((q, j) => qBlock(Object.assign({}, q, { q: q.kind === "문장 삽입" ? "빈칸에 들어갈 알맞은 문장은?" : "" }), j, st.picks[j], mode, { num: `(${q.n})` })).join("")}</div>`;
+      <div class="pqs">${set.qs.map((q, j) => qBlock(Object.assign({}, q, { q: q.kind === "문장 삽입" ? "빈칸에 들어갈 알맞은 문장은?" : "" }), j, st.picks[j], mode, { num: st.base ? st.base + j : `(${q.n})` })).join("")}</div>`;
   }
   // ── Part 7 ── 근거 구절을 <mark> 로 표시
   function markEv(text, marks) {
@@ -2005,7 +2052,7 @@
       return `<div class="doc"><div class="doc-k">${set.docs.length > 1 ? `지문 ${di + 1} · ` : ""}${esc(d.doc)}${d.title ? ` · ${esc(d.title)}` : ""}</div>${(d.meta || []).length ? `<div class="doc-meta en">${d.meta.map(esc).join("<br>")}</div>` : ""}${paras}${graphicHtml(d.graphic)}</div>`;
     }).join("");
     return `<div class="p7"><div class="p7-docs">${docs}${review ? `<div class="row" style="justify-content:flex-end"><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>` : ""}</div>
-      <div class="p7-qs pqs">${set.qs.map((q, j) => qBlock(q, j, st.picks[j], mode, { evBtn: true })).join("")}</div></div>`;
+      <div class="p7-qs pqs">${set.qs.map((q, j) => qBlock(q, j, st.picks[j], mode, { evBtn: true, num: st.base ? st.base + j : undefined })).join("")}</div></div>`;
   }
   function setHtml(part, set, st, mode) {
     return part === "p6" ? p6Html(set, st, mode) : part === "p7" ? p7Html(set, st, mode) : p34Html(set, st, mode);
@@ -2061,9 +2108,17 @@
       <div class="section-h"><h2>RC 읽기</h2></div>
       <div class="grid2">
         ${tile("#/grammar", "book", "c-blue", "Part 5 문법", `${(PR.grammar || []).length}개 주제 · ${gDone}/${gTotal}문제`)}
-        ${btnTile('data-pgo="p5w"', "zap", "c-purple", "Part 5 어휘", "단어장 단어로 20제")}
+        ${btnTile('data-pgo="p5w"', "zap", "c-purple", "Part 5 어휘 20제", "외운 단어로 실전 문제")}
         ${tile("#/sets/p6", "layers", "c-orange", "Part 6 장문 빈칸", `${solved("p6")} / ${practicePool("p6").length}지문`)}
         ${tile("#/sets/p7", "list", "c-green", "Part 7 독해", `${solved("p7")} / ${practicePool("p7").length}세트`)}
+      </div>
+      <div class="section-h"><h2>표현 · 특훈</h2></div>
+      <div class="grid2">
+        ${(D.lc || []).length ? tile("#/lc", "ear", "c-purple", "LC 빈출 표현", `Part 2~4 표현 ${D.lc.length}개`) : ""}
+        ${tile("#/part1", "camera", "c-green", "Part 1 사진 표현", `사진 묘사 필수 ${D.part1.length}문장`)}
+        ${tile("#/conf", "split", "c-gold", "혼동 어휘", `헷갈리는 단어 ${D.conf.length}세트`)}
+        ${btnTile('data-pgo="para"', "swap", "c-orange", "Part 7 동의어 20제", "문맥 속 바꿔 쓰기")}
+        ${btnTile('data-pgo="listen"', "headphones", "c-blue", "단어 듣기 모드", "출퇴근길 자동 재생")}
       </div>
       <div class="section-h"><h2>약점 분석</h2><span class="small muted">5문제 이상 푼 유형</span></div>
       ${weak.length ? `<div class="card">${weak.map((w) => `<div class="weak"><div class="spacer"><b>${PART_LABEL[w.part] || w.part} · ${esc(w.type)}</b><div class="small muted">${w.ok}/${w.n} 정답</div></div><div class="wbar"><i style="width:${w.pct}%;background:${w.pct >= 80 ? "var(--ok)" : w.pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${w.pct}%</b>${["p2", "p3", "p4", "p5", "p6", "p7"].includes(w.part) ? `<button class="btn ghost sm" data-weak="${esc(w.key)}">연습</button>` : ""}</div>`).join("")}</div>`
@@ -2072,6 +2127,7 @@
     shell("practice", body);
     $app.querySelectorAll("[data-pgo]").forEach((b) => b.addEventListener("click", () => {
       if (b.dataset.pgo === "p2") return startLcQuiz("resp", D.lc || []);
+      if (b.dataset.pgo === "para" || b.dataset.pgo === "listen") return homeGo(b.dataset.pgo, C.todayPlan(pool(), S.words, S.profile.daily, today()), []);
       const P = pool();
       const seen = P.filter((w) => st(w.id) && st(w.id).n);
       startQuiz(C.shuffle(seen.length >= 20 ? seen : P.slice(0, 200)).slice(0, 20), "part5", { title: "Part 5 어휘 20제" });
@@ -2086,7 +2142,9 @@
     if (part === "p5") {
       const t = (PR.grammar || []).find((x) => x.title === type);
       if (t) return go(`#/grammar/${t.id}`);
-      return toast("Part 5 어휘는 단어 퀴즈로 연습해요");
+      const P = pool();
+      const seen = P.filter((w) => st(w.id) && st(w.id).n);
+      return startQuiz(C.shuffle(seen.length >= 20 ? seen : P.slice(0, 200)).slice(0, 20), "part5", { title: "Part 5 어휘 20제" });
     }
     const sets = practicePool(part).filter((s) => s.qs.some((q) => (q.type || q.kind) === type));
     if (!sets.length) return toast("연습할 세트가 없어요");
@@ -2095,6 +2153,9 @@
   // 안 푼 세트 → 틀린 문제가 있던 세트 → 오래전에 푼 세트 순으로 고른다
   function pickSets(sets, n) {
     const rank = (x) => { const r = S.prac[x.id]; return !r ? 0 : r.ok < r.n ? 1 : 2; };
+    const lv = C.levelsFor(target());
+    const fit = sets.filter((x) => lv.includes(x.lv));
+    if (fit.length >= n * 3) sets = fit;
     return C.shuffle(sets).sort((a, b) => rank(a) - rank(b) || ((S.prac[a.id] || {}).last || 0) - ((S.prac[b.id] || {}).last || 0)).slice(0, n);
   }
 
@@ -2113,7 +2174,7 @@
     const preview = (s) => part === "p3" || part === "p4" ? s.lines[0].en : part === "p6" ? s.paras.find((p) => p.length > 30) || s.paras[0] : s.docs[0].paras[0];
     const row = (s) => {
       const rec = S.prac[s.id];
-      return `<button class="witem" data-set="${s.id}" style="align-items:flex-start"><div class="wbody"><div class="small" style="font-weight:700;color:var(--text-2)">${esc(catOf(part, s))} · ${LV_LABEL[s.lv]}${part === "p7" ? ` · ${s.docs.map((d) => d.doc).join(" + ")}` : ""} · ${s.qs.length}문제</div><div class="wm en" style="margin-top:2px;-webkit-line-clamp:1;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden">${esc(preview(s).replace(/\{\d\}/g, "____"))}</div></div>${rec ? `<span class="badge ${rec.ok === rec.n ? "ok" : "bad"}">${rec.ok}/${rec.n}</span>` : ""}</button>`;
+      return `<button class="witem" data-set="${s.id}" style="align-items:flex-start"><div class="wbody"><div class="small" style="font-weight:700;color:var(--text-2)">${esc(catOf(part, s))} · ${LV_LABEL[s.lv]}${part === "p7" ? ` · ${s.docs.map((d) => d.doc).join(" + ")}` : ""} · ${s.qs.length}문제</div><div class="wm en" style="margin-top:2px">${esc(preview(s).replace(/\{\d\}/g, "____"))}</div></div>${rec ? `<span class="badge ${rec.ok === rec.n ? "ok" : "bad"}">${rec.ok}/${rec.n}</span>` : ""}</button>`;
     };
     const solvedN = all.filter((s) => S.prac[s.id]).length;
     const body = `${topBar(SET_TITLE[part], { back: true, sub: `${all.length}${part === "p6" ? "지문" : "세트"} · 푼 세트 ${solvedN}` })}
@@ -2145,17 +2206,24 @@
     const all = st.picks.filter((x) => x != null).length === set.qs.length;
     const nQ = s.queue.reduce((n, x) => n + x.qs.length, 0);
     const done = s.queue.slice(0, s.i).reduce((n, x) => n + x.qs.length, 0);
-    $app.innerHTML = `<div class="study ${s.part === "p7" ? "wide-study" : ""}">${studyTop(done + (st.graded ? set.qs.length : 0) - (st.graded ? 1 : 0), nQ)}
+    const answeredNow = st.graded ? set.qs.length : st.picks.filter((x) => x != null).length;
+    const jump = (s.part === "p6" || s.part === "p7") ? `<div class="jumpbar"><button data-jumpto=".doc">${ico("book")}지문</button><button data-jumpto=".pqs">${ico("list")}문제</button></div>` : "";
+    $app.innerHTML = `<div class="study ${s.part === "p7" ? "wide-study" : ""}">${studyTop(Math.max(0, done + answeredNow - 1), nQ)}${jump}
       <div class="small muted" style="margin:0 2px 8px;font-weight:700">${esc(s.title)} · ${s.i + 1}/${s.queue.length}세트</div>
       ${setHtml(s.part, set, st, mode)}
       <div class="study-foot">${st.graded ? `<button class="btn block" data-next>${s.i + 1 >= s.queue.length ? "결과 보기" : "다음 세트"}</button>` : `<button class="btn block" data-grade ${all ? "" : "disabled"}>${all ? "채점하기" : `${set.qs.length - st.picks.filter((x) => x != null).length}문제 남음`}</button>`}</div></div>`;
     bindExit();
     const rerender = () => { const y = window.scrollY; vPset(); window.scrollTo(0, y); };
     bindSetCommon(s.part, set, st, rerender);
+    $app.querySelectorAll("[data-jumpto]").forEach((b) => b.addEventListener("click", () => { const t = $app.querySelector(b.dataset.jumpto); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 60, behavior: "smooth" }); }));
     if (!st.graded) bindPicks(st, () => {
       if (s.part === "p6") return rerender();
       const g = $app.querySelector("[data-grade]");
       const n = st.picks.filter((x) => x != null).length;
+      const cnt = $app.querySelector(".study-top .cnt");
+      if (cnt) cnt.textContent = `${Math.min(done + Math.max(1, n), nQ)} / ${nQ}`;
+      const bar = $app.querySelector(".study-top .bar i");
+      if (bar) bar.style.width = `${Math.round(((done + n) / nQ) * 100)}%`;
       if (g) { g.disabled = n < set.qs.length; g.textContent = n < set.qs.length ? `${set.qs.length - n}문제 남음` : "채점하기"; }
     });
     const gb = $app.querySelector("[data-grade]");
@@ -2192,6 +2260,12 @@
       if (onControl(e)) return;
       if (st.graded && e.key === "Enter") { e.preventDefault(); return nx && nx.click(); }
       if (!st.graded && e.key === "Enter" && gb && !gb.disabled) { e.preventDefault(); return gb.click(); }
+      if (!st.graded && /^[1-4]$/.test(e.key)) {
+        const j = set.qs.findIndex((q, k) => st.picks[k] == null);
+        const btn = j >= 0 && $app.querySelector(`.pq [data-q="${j}"][data-o="${+e.key - 1}"]`);
+        if (btn) { btn.click(); const nx2 = document.getElementById(`pq-${j + 1}`); if (nx2) nx2.scrollIntoView({ block: "center", behavior: "smooth" }); }
+        return;
+      }
       if ((e.key === " " || e.key === "p") && (s.part === "p3" || s.part === "p4")) { e.preventDefault(); const pb = $app.querySelector("[data-play34]"); if (pb) pb.click(); }
     };
     // Part 3·4: 처음 열면 문제를 읽을 시간을 조금 준 뒤 자동 재생
@@ -2280,7 +2354,10 @@
     const nx = $app.querySelector("[data-next]");
     if (nx) nx.addEventListener("click", next);
     const ls = $app.querySelector("[data-lesson]");
-    if (ls) ls.addEventListener("click", (e) => { e.preventDefault(); session = null; studyPushed = false; location.replace(`#/grammar/${t.id}`); });
+    if (ls) ls.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal(`<h3>${esc(t.title)}</h3><div style="max-height:60vh;overflow-y:auto">${t.lesson.map((l) => `<div style="margin-bottom:10px"><b>${esc(l.h)}</b><p class="small" style="margin:4px 0;color:var(--text-2)">${esc(l.t)}</p>${l.ex.map((x) => `<div class="small en">${hl(x.en)}</div><div class="small muted">${esc(x.ko)}</div>`).join("")}</div>`).join("")}<div class="tip-box small"><b>함정</b> ${esc(t.trap)}</div></div><button class="btn block" data-close style="margin-top:12px">문제로 돌아가기</button>`);
+    });
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
       if (onControl(e)) return;
@@ -2399,6 +2476,9 @@
       const nLc = pages.filter((p) => secOf(p.part) === "lc").reduce((n, p) => n + pageQs(p).length, 0);
       const nRc = pages.filter((p) => secOf(p.part) === "rc").reduce((n, p) => n + pageQs(p).length, 0);
       const rec = S.mock[m.n];
+      const run = S.mockRun && S.mockRun.n === m.n ? S.mockRun : null;
+      const runInfo = run ? `<div class="tip-box" style="margin-top:10px;font-size:14px">풀던 모의고사가 있어요 · ${run.picks.flat().filter((x) => x != null).length}문제 답함${run.rcUsed != null ? ` · RC 남은 시간 ${Math.max(0, RC_MIN - Math.floor(run.rcUsed / 60000))}분` : ""}</div><div class="row" style="gap:8px;margin-top:10px"><button class="btn block" data-resume="${m.n}" style="flex:2">이어서 풀기</button><button class="btn ghost" data-mock="${m.n}" style="flex:1">처음부터</button></div>` : "";
+      if (run) return `<div class="card" style="margin-top:10px"><div class="row"><div class="spacer"><b style="font-size:17px">하프 모의고사 ${m.n}회</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${RC_MIN}분)</div></div></div>${runInfo}</div>`;
       return `<div class="card" style="margin-top:10px"><div class="row"><div class="spacer"><b style="font-size:17px">하프 모의고사 ${m.n}회</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${RC_MIN}분)</div></div>${rec ? `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.total}</b><div class="small muted">LC ${rec.lc} · RC ${rec.rc}</div></div>` : ""}</div>
         <button class="btn ${rec ? "ghost" : ""} block" style="margin-top:10px" data-mock="${m.n}">${rec ? "다시 응시하기" : "응시하기"}</button></div>`;
     };
@@ -2406,18 +2486,27 @@
       <div class="tip-box">실제 시험처럼 <b>해설 없이</b> 끝까지 풀고, 마지막에 <b>LC·RC 예상 점수</b>와 파트별 정답률, 전체 해설을 보여 드려요. LC 음성은 한 번만 재생돼요(실전 모드). Part 1(사진)은 포함되지 않아요.</div>
       ${mocks.map(card).join("")}`;
     shell("practice", body);
+    $app.querySelectorAll("[data-resume]").forEach((b) => b.addEventListener("click", () => startMock(mocks.find((x) => x.n === +b.dataset.resume), true)));
     $app.querySelectorAll("[data-mock]").forEach((b) => b.addEventListener("click", () => {
       const m = mocks.find((x) => x.n === +b.dataset.mock);
-      modal(`<h3>하프 모의고사 ${m.n}회</h3><p class="muted">LC → RC 순서로 진행해요. 시작하면 해설 없이 풀고, 중간에 나가면 기록되지 않아요. 조용한 곳에서 이어폰을 끼고 시작하세요.</p>
+      modal(`<h3>하프 모의고사 ${m.n}회</h3><p class="muted">LC → RC 순서로 진행하고, 해설은 끝난 뒤에 보여 드려요. 중간에 나가도 답안이 저장돼서 이어서 풀 수 있어요${S.mockRun && S.mockRun.n === m.n ? " (처음부터 시작하면 풀던 답안은 지워져요)" : ""}. 조용한 곳에서 이어폰을 끼고 시작하세요.</p>
         <div class="row" style="margin-top:14px;gap:8px"><button class="btn ghost" data-close style="flex:1">취소</button><button class="btn" data-go-mock style="flex:1">시작</button></div>`, (box) => {
-        box.querySelector("[data-go-mock]").addEventListener("click", () => { closeModal(); startMock(m); });
+        box.querySelector("[data-go-mock]").addEventListener("click", () => { closeModal(); delete S.mockRun; startMock(m); });
       });
     }));
   }
-  function startMock(m) {
+  function startMock(m, resume) {
     const pages = mockPages(m);
-    session = { kind: "mock", m, pages, i: 0, picks: pages.map((p) => pageQs(p).map(() => null)), played: {}, rcStart: null, from: location.hash, title: `하프 모의고사 ${m.n}회` };
+    const r = resume && S.mockRun && S.mockRun.n === m.n ? S.mockRun : null;
+    const picks = pages.map((p, pi) => pageQs(p).map((_, qi) => (r && r.picks[pi] && Number.isInteger(r.picks[pi][qi]) ? r.picks[pi][qi] : null)));
+    session = { kind: "mock", m, pages, i: r ? Math.min(r.i, pages.length - 1) : 0, picks, played: {}, heard: {}, rcStart: r && r.rcUsed != null ? Date.now() - r.rcUsed : null, from: location.hash, title: `하프 모의고사 ${m.n}회` };
+    saveMockRun(session);
     enterStudy();
+  }
+  // 진행 중인 모의고사를 저장 (전화·앱 종료 뒤 이어서 풀기)
+  function saveMockRun(s) {
+    S.mockRun = { n: s.m.n, i: s.i, picks: s.picks, rcUsed: s.rcStart ? Date.now() - s.rcStart : null, at: today() };
+    save();
   }
   function mockTimer(s) {
     if (!s.rcStart) return "";
@@ -2429,9 +2518,9 @@
     if (s.reviewing != null) return vMockReview();
     const p = s.pages[s.i];
     const sec = secOf(p.part);
-    if (sec === "rc" && !s.rcStart) s.rcStart = Date.now();
-    const st = { picks: s.picks[s.i], graded: false };
+    if (sec === "rc" && !s.rcStart) { s.rcStart = Date.now(); saveMockRun(s); }
     const firstNum = s.pages.slice(0, s.i).reduce((n, x) => n + pageQs(x).length, 0) + 1;
+    const st = { picks: s.picks[s.i], graded: false, base: firstNum };
     const total = s.pages.reduce((n, x) => n + pageQs(x).length, 0);
     let inner;
     if (p.part === "p2") {
@@ -2444,20 +2533,28 @@
       inner = `<div class="small muted" style="margin:0 2px 8px;font-weight:700">${PART_LABEL[p.part]} · ${firstNum}~${firstNum + p.set.qs.length - 1}번</div>${setHtml(p.part, p.set, st, "exam")}`;
     }
     const answered = s.picks.reduce((n, a) => n + a.filter((x) => x != null).length, 0);
+    const rcIdx = s.pages.map((pg, pi) => (secOf(pg.part) === "rc" ? pi : -1)).filter((x) => x >= 0);
+    const rcTotal = rcIdx.reduce((n, pi) => n + s.picks[pi].length, 0);
+    const rcAnswered = rcIdx.reduce((n, pi) => n + s.picks[pi].filter((x) => x != null).length, 0);
     const canPrev = s.i > 0 && sec === "rc" && secOf(s.pages[s.i - 1].part) === "rc";
     $app.innerHTML = `<div class="study ${p.part === "p7" ? "wide-study" : ""}"><div class="study-top"><button class="icon-btn back" data-exit aria-label="닫기">${ico("x")}</button><div class="bar"><i style="width:${Math.round((answered / total) * 100)}%"></i></div><span class="cnt">${sec === "rc" ? `${ico("clock")} <b data-timer>${mockTimer(s)}</b>` : "LC"}</span></div>
       ${inner}
       <div class="study-foot"><div class="row" style="gap:8px">${canPrev ? `<button class="btn ghost" data-prev style="flex:1">이전</button>` : ""}<button class="btn" data-next style="flex:2">${s.i + 1 >= s.pages.length ? "제출하기" : sec === "lc" && secOf(s.pages[s.i + 1].part) === "rc" ? "RC 시작 (37분)" : "다음"}</button></div>
-        ${sec === "rc" ? `<button class="btn ghost sm block" data-sheet style="margin-top:8px">답안지 보기 (${answered}/${total})</button>` : ""}</div></div>`;
+        ${sec === "rc" ? `<button class="btn ghost sm block" data-sheet style="margin-top:8px">답안지 보기 (RC ${rcAnswered}/${rcTotal})</button>` : ""}</div></div>`;
     $app.querySelector("[data-exit]").addEventListener("click", () => askExit());
-    $app.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", () => { st.picks[0] = +b.dataset.pick; $app.querySelectorAll("[data-pick]").forEach((x) => x.classList.toggle("sel", x === b)); }));
-    if (p.set) bindPicks(st, p.part === "p6" ? () => { const y = window.scrollY; vMockSession(); window.scrollTo(0, y); } : null);
+    $app.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", () => { if (s.submitted) return; st.picks[0] = +b.dataset.pick; $app.querySelectorAll("[data-pick]").forEach((x) => x.classList.toggle("sel", x === b)); saveMockRun(s); }));
+    if (p.set) bindPicks(st, () => { saveMockRun(s); if (p.part === "p6") { const y = window.scrollY; vMockSession(); window.scrollTo(0, y); } });
     const goPage = (i) => {
       if (s.submitted) return;
       if (s.rcStart && Date.now() - s.rcStart >= RC_MIN * 60 * 1000) { toast("시간이 끝났어요. 답안을 제출할게요"); return submitMock(); }
-      stopLines(); lcqSeq += 1; Sound.stop(); s.i = i; vMockSession(); window.scrollTo(0, 0); };
+      stopLines(); lcqSeq += 1; Sound.stop(); s.i = i; saveMockRun(s); vMockSession(); window.scrollTo(0, 0); };
+    const trySubmit = () => {
+      const left = s.picks.reduce((n, a) => n + a.filter((x) => x == null).length, 0);
+      if (!left) return submitMock();
+      confirmBox("제출할까요?", `아직 ${left}문제를 풀지 않았어요. 제출하면 안 푼 문제는 오답으로 처리돼요.`, "제출하기").then((ok) => { if (ok) submitMock(); });
+    };
     $app.querySelector("[data-next]").addEventListener("click", () => {
-      if (s.i + 1 >= s.pages.length) return submitMock();
+      if (s.i + 1 >= s.pages.length) return trySubmit();
       goPage(s.i + 1);
     });
     const pv = $app.querySelector("[data-prev]");
@@ -2465,9 +2562,10 @@
     const sh = $app.querySelector("[data-sheet]");
     if (sh) sh.addEventListener("click", () => {
       let n = 0;
-      const cells = s.pages.map((pg, pi) => pageQs(pg).map((q, qi) => { n += 1; return secOf(pg.part) === "rc" ? `<button class="sheet-c ${s.picks[pi][qi] != null ? "on" : ""}" data-pg="${pi}">${n}</button>` : ""; }).join("")).join("");
-      modal(`<h3>답안지</h3><div class="sheet">${cells}</div><button class="btn block" data-close style="margin-top:12px">닫기</button>`, (box) => {
+      const cells = s.pages.map((pg, pi) => pageQs(pg).map((q, qi) => { n += 1; return secOf(pg.part) === "rc" ? `<button class="sheet-c ${s.picks[pi][qi] != null ? "on" : ""} ${pi === s.i ? "cur" : ""}" data-pg="${pi}">${n}</button>` : ""; }).join("")).join("");
+      modal(`<h3>답안지 <span class="small muted">RC ${rcAnswered}/${rcTotal} · 남은 시간 ${mockTimer(s)}</span></h3><div class="sheet">${cells}</div><div class="row" style="gap:8px;margin-top:12px"><button class="btn ghost" data-close style="flex:1">닫기</button><button class="btn" data-submit style="flex:1">제출하기</button></div>`, (box) => {
         box.querySelectorAll("[data-pg]").forEach((b) => b.addEventListener("click", () => { closeModal(); goPage(+b.dataset.pg); }));
+        box.querySelector("[data-submit]").addEventListener("click", () => { closeModal(); trySubmit(); });
       });
     });
     // 음성: 페이지마다 한 번만 자동 재생 (실전 모드)
@@ -2493,6 +2591,7 @@
       if (session !== s || s.reviewing != null) return clearInterval(s.tick);
       const el = $app.querySelector("[data-timer]");
       if (el) el.textContent = mockTimer(s);
+      if (Math.floor((Date.now() - s.rcStart) / 1000) % 15 === 0) saveMockRun(s);
       if (s.submitted) return clearInterval(s.tick);
       if (Date.now() - s.rcStart >= RC_MIN * 60 * 1000 && !document.getElementById("modal")) { clearInterval(s.tick); toast("시간이 끝났어요. 답안을 제출할게요"); submitMock(); }
     }, 1000);
@@ -2502,6 +2601,7 @@
     const s = session;
     if (s.submitted) return;
     s.submitted = true;
+    delete S.mockRun;
     closeModal();
     clearInterval(s.tick);
     stopLines();
@@ -2522,6 +2622,7 @@
     const prev = S.mock[s.m.n];
     S.mock[s.m.n] = Object.assign({}, est, { at: today(), best: Math.max(est.total, (prev && prev.best) || 0) });
     s.result = { est, stat, parts };
+    logToday().prac = true;
     markDone();
     save(true);
     s.done = true;
@@ -2529,16 +2630,24 @@
   }
   function mockResultHtml(s) {
     const { est, stat, parts } = s.result;
-    const hero = `<div class="result-hero"><div class="eyebrow muted">예상 점수 (추정)</div><div class="score" style="color:var(--brand)">${est.total}<small>점</small></div><div class="msg">LC ${est.lc} · RC ${est.rc}</div><p class="muted">LC ${stat.lc[0]}/${stat.lc[1]} · RC ${stat.rc[0]}/${stat.rc[1]} 정답</p></div>`;
+    const gap = target() - est.total;
+    const hero = `<div class="result-hero"><div class="eyebrow muted">예상 점수 (추정)</div><div class="score" style="color:var(--brand)">${est.total}<small>점</small></div><div class="msg">LC ${est.lc} · RC ${est.rc}</div><p class="muted">LC ${stat.lc[0]}/${stat.lc[1]} · RC ${stat.rc[0]}/${stat.rc[1]} 정답</p>
+      <div class="tip-box" style="margin-top:12px;text-align:left">${gap <= 0 ? `<b>목표 ${target()}점 달성 수준이에요!</b> 남은 모의고사로 실력을 굳히고, 틀린 문제 해설을 꼭 보세요.` : `<b>목표 ${target()}점까지 약 ${gap}점</b> ${est.lc < est.rc ? "LC" : "RC"}가 상대적으로 약해요. 아래 파트별 정답률에서 낮은 파트부터 연습하세요.`}</div></div>`;
     const rows = Object.keys(parts).map((k) => { const [o, n] = parts[k]; const pct = Math.round((o / n) * 100); return `<div class="weak"><div class="spacer"><b>${PART_LABEL[k]}</b><div class="small muted">${o}/${n}</div></div><div class="wbar"><i style="width:${pct}%;background:${pct >= 80 ? "var(--ok)" : pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${pct}%</b></div>`; }).join("");
     return { hero, rows };
   }
   // 모의고사 해설: 페이지를 하나씩 리뷰 모드로
+  // 해설 페이지 이동 (틀린 문제만 보기면 다 맞힌 페이지는 건너뛴다)
+  function mockReviewNext(s, from, dir) {
+    const wrongPage = (pi) => pageQs(s.pages[pi]).some((q, qi) => s.picks[pi][qi] !== (s.pages[pi].part === "p2" ? s.pages[pi].q.answer : q.a));
+    for (let i = from + dir; i >= 0 && i < s.pages.length; i += dir) if (!s.wrongOnly || wrongPage(i)) return i;
+    return -1;
+  }
   function vMockReview() {
     const s = session;
     const pi = s.reviewing;
     const p = s.pages[pi];
-    const st = { picks: s.picks[pi], graded: true, evQ: s.evQ };
+    const st = { picks: s.picks[pi], graded: true, evQ: s.evQ, base: s.pages.slice(0, pi).reduce((n, x) => n + pageQs(x).length, 0) + 1 };
     let inner;
     if (p.part === "p2") {
       const q = { q: p.q.prompt, qko: p.q.promptKo, o: p.q.options.map((o) => o.t), a: p.q.answer, exp: `${p.item.key} = ${p.item.keyKo}${p.item.tip ? ` · ${p.item.tip}` : ""}`, type: "응답" };
@@ -2546,18 +2655,18 @@
     } else if (p.part === "p5") inner = qBlock(Object.assign({}, p.q, { q: p.q.s }), 0, st.picks[0], "review");
     else inner = setHtml(p.part, p.set, st, "review");
     $app.innerHTML = `<div class="study ${p.part === "p7" ? "wide-study" : ""}"><div class="study-top"><button class="icon-btn back" data-back-res aria-label="결과로">${ico("x")}</button><div class="bar"><i style="width:${Math.round(((pi + 1) / s.pages.length) * 100)}%"></i></div><span class="cnt">${pi + 1} / ${s.pages.length}</span></div>
-      <div class="small muted" style="margin:0 2px 8px;font-weight:700">해설 · ${PART_LABEL[p.part]}</div>${inner}
-      <div class="study-foot"><div class="row" style="gap:8px"><button class="btn ghost" data-rprev style="flex:1" ${pi ? "" : "disabled"}>이전</button><button class="btn" data-rnext style="flex:2">${pi + 1 >= s.pages.length ? "결과로" : "다음"}</button></div></div></div>`;
+      <div class="small muted" style="margin:0 2px 8px;font-weight:700">해설 · ${PART_LABEL[p.part]}${s.wrongOnly ? " · 틀린 문제만" : ""}</div>${inner}
+      <div class="study-foot"><div class="row" style="gap:8px"><button class="btn ghost" data-rprev style="flex:1" ${mockReviewNext(s, pi, -1) >= 0 ? "" : "disabled"}>이전</button><button class="btn" data-rnext style="flex:2">${mockReviewNext(s, pi, 1) < 0 ? "결과로" : "다음"}</button></div></div></div>`;
     const rerender = () => { const y = window.scrollY; s.evQ = st.evQ; vMockReview(); window.scrollTo(0, y); };
     if (p.set) bindSetCommon(p.part, p.set, st, rerender);
     if (p.part === "p2") $app.querySelector(".pq-h").insertAdjacentHTML("beforeend", ` <button class="play sm" data-p2say>${ico("vol")}</button>`);
     const ps = $app.querySelector("[data-p2say]");
     if (ps) ps.addEventListener("click", () => sayExpr(p.item, ps));
     const goR = (i) => { stopLines(); s.evQ = null; if (i >= s.pages.length || i < 0) { s.reviewing = null; return vResult(); } s.reviewing = i; vMockReview(); window.scrollTo(0, 0); };
-    $app.querySelector("[data-rprev]").addEventListener("click", () => goR(pi - 1));
-    $app.querySelector("[data-rnext]").addEventListener("click", () => goR(pi + 1));
+    $app.querySelector("[data-rprev]").addEventListener("click", () => { const i = mockReviewNext(s, pi, -1); if (i >= 0) goR(i); });
+    $app.querySelector("[data-rnext]").addEventListener("click", () => goR(mockReviewNext(s, pi, 1)));
     $app.querySelector("[data-back-res]").addEventListener("click", () => { stopLines(); s.reviewing = null; vResult(); });
-    keyHandler = (e) => { if (e.key === "ArrowRight") goR(pi + 1); if (e.key === "ArrowLeft" && pi) goR(pi - 1); if (e.key === "Escape") { stopLines(); s.reviewing = null; vResult(); } };
+    keyHandler = (e) => { if (e.key === "ArrowRight") goR(mockReviewNext(s, pi, 1)); if (e.key === "ArrowLeft") { const i = mockReviewNext(s, pi, -1); if (i >= 0) goR(i); } if (e.key === "Escape") { stopLines(); s.reviewing = null; vResult(); } };
   }
 
   // ═════════════ 혼동 어휘 ═════════════
@@ -2638,7 +2747,7 @@
       </div>
       <div class="card" style="margin-top:12px"><div class="row"><span class="tico c-blue" style="width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center">${ico("cal")}</span>
         <div class="spacer"><b>${sum.seen >= P.length ? "목표 범위 1회독 완료!" : `이 속도면 ${fmtDate(finish)}에 1회독 완료`}</b>
-        <div class="small muted">${exam != null ? (finish <= exam - 3 ? `시험(${fmtDate(exam)}) 전에 여유 있게 끝나요 👍` : `시험(${fmtDate(exam)})에 맞추려면 하루 학습량을 늘려 보세요`) : "설정에서 시험일을 정하면 맞춰서 알려 드려요"}</div></div></div></div>
+        <div class="small muted">${exam != null ? (finish <= exam - 3 ? `시험(${fmtDate(exam)}) 전에 여유 있게 끝나요 👍` : S.profile.daily >= 80 || finish > exam + 14 ? `시험(${fmtDate(exam)}) 전에는 쉬운 단어부터 보고, 실전 문제에 시간을 더 쓰세요` : `시험(${fmtDate(exam)})에 맞추려면 하루 학습량을 늘려 보세요`) : "설정에서 시험일을 정하면 맞춰서 알려 드려요"}</div></div></div></div>
       <div class="section"><div class="section-h"><h2>난이도별 진도</h2></div><div class="card">${progressBlock(P)}</div></div>
       <div class="section"><div class="section-h"><h2>최근 7일</h2></div><div class="card"><svg class="chart-7" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="최근 7일 학습량">${bars}</svg>
         <div class="legend"><span><i style="background:var(--brand)"></i>새 단어</span><span><i style="background:var(--accent)"></i>복습</span></div></div></div>
@@ -2792,7 +2901,7 @@
       <div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">${NDAYS}일 전체 코스 열기</h2><p class="muted">Day ${CONFIG.premium.freeDays + 1}~${NDAYS} · ${NWORDS}개 단어와 문제 전부</p></div>
       <div class="card"><div class="feature-list">
         <div><span class="tico c-blue">${ico("book")}</span><span><b>단어 ${NWORDS}개 + 예문 음성</b>고득점 단어까지 전부</span></div>
-        <div><span class="tico c-purple">${ico("trophy")}</span><span><b>Part 5 실전 문제 ${NWORDS}개</b>단어마다 해설</span></div>
+        <div><span class="tico c-purple">${ico("trophy")}</span><span><b>Part 5 어휘 문제 ${NWORDS}개</b>단어마다 해설</span></div>
         <div><span class="tico c-green">${ico("headphones")}</span><span><b>듣기 모드 · Part 1 · 혼동 어휘</b></span></div></div></div>
       <button class="price-card on" style="margin-top:14px"><span class="spacer"><b>${CONFIG.premium.price}</b><div class="small muted">${CONFIG.premium.priceNote}</div></span>${ico("check")}</button>
       <button class="btn block" style="margin-top:14px" data-buy>${S.premium ? "이용 중" : "구매하기"}</button>
