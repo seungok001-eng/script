@@ -68,7 +68,25 @@ def load_entries():
             pass
     for rel, text, v in p34_jobs():
         sents.append((rel, text, v))
+    for rel, text, v in p1q_jobs():
+        sents.append((rel, text, v))
     return words, sents
+
+
+def p1q_jobs():
+    """Part 1 사진 문제: 보기 문장 4개를 따로 (p1q/<id>-N.mp3). 사진(app/images/p1/<id>.webp)이 들어온 문제만.
+    한 문제의 네 문장은 같은 목소리 (실제 시험처럼 한 사람이 읽는다)."""
+    f = os.path.join(ROOT, "data", "part1.json")
+    if not os.path.exists(f):
+        return []
+    out = []
+    for q in json.load(open(f, encoding="utf-8"))["items"]:
+        if not os.path.exists(os.path.join(ROOT, "app", "images", "p1", f"{q['id']}.webp")):
+            continue
+        v = voice_for(q["id"])
+        for i, o in enumerate(q["o"]):
+            out.append((f"p1q/{q['id']}-{i}.mp3", plain(o), v))
+    return out
 
 
 # Part 3·4: 문장마다 따로 (p34/<id>-NN.mp3). 세트마다 여자·남자 목소리를 고정 배정 —
@@ -214,6 +232,14 @@ def main():
                     os.remove(os.path.join(p34_dir, f))
             for rel in [r for r in man if r.startswith("p34/") and r not in want_p34]:
                 del man[rel]
+        want_p1q = {rel for rel, _, _ in sents if rel.startswith("p1q/")}
+        p1q_dir = os.path.join(AUDIO, "p1q")
+        if os.path.isdir(p1q_dir):
+            for f in os.listdir(p1q_dir):
+                if f.endswith(".mp3") and f"p1q/{f}" not in want_p1q:
+                    os.remove(os.path.join(p1q_dir, f))
+        for rel in [r for r in man if r.startswith("p1q/") and r not in want_p1q]:
+            del man[rel]
         for rel, text, voice in sents:
             want = {"text": text, "src": "kokoro", "voice": voice, "br": BITRATE}
             if man.get(rel) != want or not os.path.exists(os.path.join(AUDIO, rel)):

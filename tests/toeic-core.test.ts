@@ -396,3 +396,22 @@ test("levelsFor / todayProgress", () => {
   assert.equal(C.todayProgress({ daily: 30, introduced: 30, reviewed: 10, due: 0, practiced: true }), 100);
   assert.equal(C.todayProgress({ daily: 30, introduced: 15, reviewed: 0, due: 0, practiced: false }), 57);
 });
+
+test("Part 1 사진 문제: 보기 4개·정답·해석·해설에 정답 문자·프롬프트 규칙", () => {
+  const p = new URL("../toeic/data/part1.json", import.meta.url);
+  if (!fs.existsSync(p)) return;
+  const items = JSON.parse(fs.readFileSync(p, "utf8")).items;
+  const ids = new Set<string>();
+  for (const q of items) {
+    assert.ok(/^p1-\d{3}$/.test(q.id) && !ids.has(q.id), `${q.id} id`);
+    ids.add(q.id);
+    assert.ok(["single", "multi", "scene"].includes(q.type) && [1, 2, 3].includes(q.lv), `${q.id} 유형·난이도`);
+    assert.ok(q.o.length === 4 && new Set(q.o.map((x: string) => x.toLowerCase())).size === 4 && q.o.every((x: string) => !/^\([A-D]\)/.test(x)), `${q.id} 보기`);
+    assert.ok(Number.isInteger(q.a) && q.a >= 0 && q.a <= 3, `${q.id} 정답`);
+    assert.ok(q.ko.length === 4 && q.ko.every((k: string, i: number) => k.startsWith(`(${"ABCD"[i]})`)), `${q.id} 해석`);
+    assert.ok(q.exp.includes(`(${"ABCD"[q.a]})`), `${q.id} 해설이 정답 문자를 가리킴`);
+    assert.ok(q.prompt.startsWith("Photorealistic candid photograph") && /No readable text/.test(q.prompt), `${q.id} 프롬프트`);
+    if (q.type === "scene") assert.ok(/No people anywhere in the image/.test(q.prompt), `${q.id} 사람 없음`);
+    assert.ok(q.must.length >= 2 && q.must_not.length >= 2, `${q.id} 검수 목록`);
+  }
+});

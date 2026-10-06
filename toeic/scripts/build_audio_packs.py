@@ -13,11 +13,11 @@ out = sys.argv[1]
 os.makedirs(os.path.join(out, "audio"), exist_ok=True)
 os.makedirs(os.path.join(out, "js"), exist_ok=True)
 groups = {}
-for sub in ("w", "s", "p1", "lc", "p34"):
+for sub in ("w", "s", "p1", "lc", "p34", "p1q"):
     d = os.path.join(AUDIO, sub)
     for f in (sorted(os.listdir(d)) if os.path.isdir(d) else []):
         if f.endswith(".mp3"):
-            key = "p1" if sub == "p1" else f"lc{int(f[:3]) // 100}" if sub == "lc" else f"{f[:2]}x{int(f[3:6]) // 30}" if sub == "p34" else f[:2]  # LC 는 100개, Part 3·4 는 30세트씩 묶음
+            key = "p1" if sub == "p1" else "p1q" if sub == "p1q" else f"lc{int(f[:3]) // 100}" if sub == "lc" else f"{f[:2]}x{int(f[3:6]) // 30}" if sub == "p34" else f[:2]  # LC 는 100개, Part 3·4 는 30세트씩 묶음
             groups.setdefault(key, []).append(f"{sub}/{f}")
 index = {}
 for key, rels in groups.items():

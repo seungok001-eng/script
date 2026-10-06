@@ -1886,13 +1886,13 @@
   function prIndex() {
     if (PR && !PR._by) {
       PR._by = new Map();
-      for (const k of ["p3", "p4", "p6", "p7"]) (PR[k] || []).forEach((x) => PR._by.set(x.id, x));
+      for (const k of ["p1", "p3", "p4", "p6", "p7"]) (PR[k] || []).forEach((x) => PR._by.set(x.id, x));
       PR._g = new Map();
       (PR.grammar || []).forEach((t) => t.qs.forEach((q) => PR._g.set(q.id, { q, t })));
     }
     return PR;
   }
-  const PART_LABEL = { p2: "Part 2", p3: "Part 3", p4: "Part 4", p5: "Part 5", p6: "Part 6", p7: "Part 7" };
+  const PART_LABEL = { p1: "Part 1", p2: "Part 2", p3: "Part 3", p4: "Part 4", p5: "Part 5", p6: "Part 6", p7: "Part 7" };
   const LV_LABEL = { 1: "쉬움", 2: "보통", 3: "어려움" };
   const LETTERS = "ABCD";
   // 실전 화면 공통: 데이터가 없으면 불러온 뒤 다시 그린다
@@ -1912,7 +1912,7 @@
     l.q += 1;
     if (ok) l.ok += 1;
   }
-  const secOf = (part) => (part === "p2" || part === "p3" || part === "p4" ? "lc" : "rc");
+  const secOf = (part) => (part === "p1" || part === "p2" || part === "p3" || part === "p4" ? "lc" : "rc");
   const practicePool = (part) => (PR[part] || []).filter((x) => !x.mock);
 
   // ── 그래픽(표·막대그래프·목록) ──
@@ -1954,7 +1954,7 @@
   }
 
   // ── Part 3·4: 문장 단위 음성 재생 (현재 문장 표시, 문장 눌러 다시 듣기) ──
-  const lineRel = (set, i) => (set.au ? `p34/${set.id}-${String(i + 1).padStart(2, "0")}.mp3` : null);
+  const lineRel = (set, i) => (!set.au ? null : set.part === 1 ? `p1q/${set.id}-${i}.mp3` : `p34/${set.id}-${String(i + 1).padStart(2, "0")}.mp3`);
   let lineSeq = 0;
   let linePlaying = false;
   const playBtn = (on) => { const b = $app.querySelector("[data-play34]"); if (b) { b.classList.toggle("playing", on); b.innerHTML = ico(on ? "pause" : "play"); } };
@@ -1966,8 +1966,8 @@
     let heard = false;
     for (let i = from || 0; i < set.lines.length; i++) {
       if (my !== lineSeq || !session) return heard;
-      $app.querySelectorAll(".sline.now").forEach((x) => x.classList.remove("now"));
-      const el = $app.querySelector(`.sline[data-line="${i}"]`);
+      $app.querySelectorAll(".sline.now, [data-pline].now").forEach((x) => x.classList.remove("now"));
+      const el = $app.querySelector(`.sline[data-line="${i}"], [data-pline="${i}"]`);
       if (el) { el.classList.add("now"); if (o.follow) el.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
       const prog = $app.querySelector(".lp-prog");
       if (prog) prog.textContent = `${i + 1} / ${set.lines.length}`;
@@ -1977,12 +1977,13 @@
       if (ok === true) heard = true;
       else break; // 재생이 막히거나 실패하면 멈춘다 (다음 문장을 이어서 틀지 않는다)
       // 쉐도잉: 문장 길이만큼 멈춰 따라 말할 시간을 준다
-      await wait(o.shadow ? Math.min(9000, Math.max(1500, (Date.now() - t0) * 1.2)) : 350);
+      // Part 1 은 실제 시험처럼 보기 사이를 조금 길게 띄운다
+      await wait(o.shadow ? Math.min(9000, Math.max(1500, (Date.now() - t0) * 1.2)) : set.part === 1 ? 900 : 350);
       if (o.once) break;
     }
     if (my !== lineSeq) return heard;
     linePlaying = false;
-    $app.querySelectorAll(".sline.now").forEach((x) => x.classList.remove("now"));
+    $app.querySelectorAll(".sline.now, [data-pline].now").forEach((x) => x.classList.remove("now"));
     playBtn(false);
     if (o.onEnd) o.onEnd();
     return heard;
@@ -1994,6 +1995,24 @@
     playBtn(false);
   }
   const SPK = { W: "여", M: "남", W2: "여2", M2: "남2" };
+  // ── Part 1: 사진 + 보기 4문장 (풀 때는 듣기만, 채점 뒤 문장·해석·함정) ──
+  function p1Html(set, st, mode) {
+    const review = mode === "review";
+    const showKo = ui.prKo !== false;
+    const q = set.qs[0];
+    const pick = st.picks[0];
+    const photo = `<div class="p1photo"><img src="${esc(set.img)}" alt="Part 1 사진${st.base ? ` ${st.base}번` : ""}" data-zoom></div>`;
+    const player = `<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${st.base ? `${st.base}번 · ` : ""}사진을 가장 잘 묘사한 문장은?</b><div class="small muted">${esc(set.kind || "")} · ${LV_LABEL[set.lv] || ""} · <span class="lp-prog">보기 4문장</span></div></div></div>`;
+    if (!review) {
+      return `${photo}${player}<div class="pq" id="pq-0"><div class="opts">${q.o.map((x, i) => `<button class="opt sm ${pick === i ? "sel" : ""}" data-q="0" data-o="${i}" data-pline="${i}"><span class="on">${LETTERS[i]}</span><span class="muted">보기 ${LETTERS[i]}</span></button>`).join("")}</div></div>
+        <div class="small muted" style="margin-top:6px">(A)~(D) 네 문장을 듣고 사진과 맞는 것을 고르세요. 문장은 채점 뒤에 보여 드려요.</div>`;
+    }
+    const ok = pick === q.a;
+    const lines = q.o.map((x, i) => `<div class="opt sm sline ${i === q.a ? "right" : i === pick ? "wrong" : "dim"}" data-line="${i}" role="button"><span class="on">${LETTERS[i]}</span><span class="spacer"><span class="en">${esc(x)}</span>${showKo ? `<span class="ko">${esc(q.ko[i])}</span>` : ""}</span>${ico("vol")}</div>`).join("");
+    return `${photo}${player}<div class="pq" id="pq-0"><div class="opts">${lines}</div>
+      <div class="feedback ${ok ? "ok" : "bad"}"><b class="t">${ok ? "정답" : pick == null ? `정답 ${LETTERS[q.a]} (풀지 않음)` : `오답 · 정답 ${LETTERS[q.a]}`}</b>${q.type ? `<span class="badge pos" style="margin-left:6px">함정: ${esc(q.type)}</span>` : ""}<div style="margin-top:6px">${esc(q.exp || "")}</div></div></div>
+      <div class="row" style="justify-content:space-between;margin-top:8px"><span class="small muted">문장을 누르면 그 문장만 다시 들어요</span><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>`;
+  }
   function p34Html(set, st, mode) {
     const review = mode === "review";
     const showKo = ui.prKo !== false;
@@ -2055,7 +2074,7 @@
       <div class="p7-qs pqs">${set.qs.map((q, j) => qBlock(q, j, st.picks[j], mode, { evBtn: true, num: st.base ? st.base + j : undefined })).join("")}</div></div>`;
   }
   function setHtml(part, set, st, mode) {
-    return part === "p6" ? p6Html(set, st, mode) : part === "p7" ? p7Html(set, st, mode) : p34Html(set, st, mode);
+    return part === "p1" ? p1Html(set, st, mode) : part === "p6" ? p6Html(set, st, mode) : part === "p7" ? p7Html(set, st, mode) : p34Html(set, st, mode);
   }
   function bindSetCommon(part, set, st, rerender) {
     const ko = $app.querySelector("[data-ko]");
@@ -2071,6 +2090,13 @@
       const t = document.getElementById(`pq-${b.dataset.jump}`);
       if (t) t.scrollIntoView({ block: "center", behavior: "smooth" });
     }));
+    if (part === "p1") {
+      const pb = $app.querySelector("[data-play34]");
+      if (pb) pb.addEventListener("click", () => (pb.classList.contains("playing") ? stopLines() : playLines(set, 0)));
+      $app.querySelectorAll(".sline").forEach((el) => el.addEventListener("click", () => playLines(set, +el.dataset.line, { once: true })));
+      const im = $app.querySelector("[data-zoom]");
+      if (im) im.addEventListener("click", () => modal(`<img src="${esc(set.img)}" alt="" style="width:100%;border-radius:10px;display:block"><button class="btn ghost block" data-close style="margin-top:10px">닫기</button>`));
+    }
     if (part === "p3" || part === "p4") {
       const pb = $app.querySelector("[data-play34]");
       if (pb) pb.addEventListener("click", () => (pb.classList.contains("playing") ? stopLines() : playLines(set, 0, { follow: false })));
@@ -2091,7 +2117,7 @@
     const weak = C.weakTypes(S.qt).slice(0, 5);
     const gTotal = (PR.grammar || []).reduce((n, t) => n + t.qs.filter((q) => !q.mock).length, 0);
     const gDone = Object.keys(S.gq).filter((k) => PR._g.has(k)).length;
-    const body = `${topBar("실전 문제", { sub: "Part 2~7 · 하프 모의고사 · 예상 점수" })}
+    const body = `${topBar("실전 문제", { sub: `Part ${(PR.p1 || []).length ? 1 : 2}~7 · 하프 모의고사 · 예상 점수` })}
       <section class="score-card">
         <div class="eyebrow">예상 점수 (추정)</div>
         ${pred ? `<div class="big">${pred.total}<small>점</small></div><div class="meta"><div><b>${pred.lc}</b>LC</div><div><b>${pred.rc}</b>RC</div><div><b>${pred.nLc + pred.nRc}</b>최근 문제</div></div>`
@@ -2100,6 +2126,7 @@
       </section>
       <div class="section-h"><h2>LC 듣기</h2></div>
       <div class="grid2">
+        ${practicePool("p1").length ? tile("#/sets/p1", "camera", "c-gold", "Part 1 사진 묘사", `${solved("p1")} / ${practicePool("p1").length}문제`) : ""}
         ${btnTile('data-pgo="p2"', "ear", "c-purple", "Part 2 응답", `질문 듣고 3지선다 · ${(D.lc || []).filter(C.canRespond).length}문항`)}
         ${tile("#/sets/p3", "headphones", "c-blue", "Part 3 대화", `${solved("p3")} / ${practicePool("p3").length}세트`)}
         ${tile("#/sets/p4", "vol", "c-green", "Part 4 담화", `${solved("p4")} / ${practicePool("p4").length}세트`)}
@@ -2121,7 +2148,7 @@
         ${btnTile('data-pgo="listen"', "headphones", "c-blue", "단어 듣기 모드", "출퇴근길 자동 재생")}
       </div>
       <div class="section-h"><h2>약점 분석</h2><span class="small muted">5문제 이상 푼 유형</span></div>
-      ${weak.length ? `<div class="card">${weak.map((w) => `<div class="weak"><div class="spacer"><b>${PART_LABEL[w.part] || w.part} · ${esc(w.type)}</b><div class="small muted">${w.ok}/${w.n} 정답</div></div><div class="wbar"><i style="width:${w.pct}%;background:${w.pct >= 80 ? "var(--ok)" : w.pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${w.pct}%</b>${["p2", "p3", "p4", "p5", "p6", "p7"].includes(w.part) ? `<button class="btn ghost sm" data-weak="${esc(w.key)}">연습</button>` : ""}</div>`).join("")}</div>`
+      ${weak.length ? `<div class="card">${weak.map((w) => `<div class="weak"><div class="spacer"><b>${PART_LABEL[w.part] || w.part} · ${esc(w.type)}</b><div class="small muted">${w.ok}/${w.n} 정답</div></div><div class="wbar"><i style="width:${w.pct}%;background:${w.pct >= 80 ? "var(--ok)" : w.pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${w.pct}%</b>${["p1", "p2", "p3", "p4", "p5", "p6", "p7"].includes(w.part) ? `<button class="btn ghost sm" data-weak="${esc(w.key)}">연습</button>` : ""}</div>`).join("")}</div>`
         : `<div class="empty" style="padding:20px">${ico("gauge")}<b>아직 데이터가 부족해요</b>문제를 풀면 유형별 정답률과 약점을 알려 드려요</div>`}
       <p class="small muted" style="margin-top:14px">모든 문제는 이 앱에서 새로 만든 실전형 문제입니다(기출 문제 아님). 예상 점수는 최근 정답률로 계산한 참고용 추정치예요.</p>`;
     shell("practice", body);
@@ -2160,26 +2187,26 @@
   }
 
   // ═════════════ 세트 목록 (Part 3·4·6·7) ═════════════
-  const SET_TITLE = { p3: "Part 3 대화", p4: "Part 4 담화", p6: "Part 6 장문 빈칸", p7: "Part 7 독해" };
-  const catOf = (part, s) => (part === "p3" ? s.topic : part === "p4" ? s.talk : part === "p6" ? s.doc : { single: "단일 지문", double: "이중 지문", triple: "삼중 지문" }[s.kind]);
+  const SET_TITLE = { p1: "Part 1 사진 묘사", p3: "Part 3 대화", p4: "Part 4 담화", p6: "Part 6 장문 빈칸", p7: "Part 7 독해" };
+  const catOf = (part, s) => (part === "p1" ? s.kind : part === "p3" ? s.topic : part === "p4" ? s.talk : part === "p6" ? s.doc : { single: "단일 지문", double: "이중 지문", triple: "삼중 지문" }[s.kind]);
   function vSets(r) {
     if (!needPractice(r)) return;
-    const part = ["p3", "p4", "p6", "p7"].includes(r.arg) ? r.arg : "p3";
+    const part = ["p1", "p3", "p4", "p6", "p7"].includes(r.arg) && (r.arg !== "p1" || (PR.p1 || []).length) ? r.arg : "p3";
     const all = practicePool(part);
     if (!ui.setF) ui.setF = {};
     const f = ui.setF[part] || { cat: "all", lv: 0 };
     const cats = Array.from(new Set(all.map((s) => catOf(part, s))));
     const list = all.filter((s) => (f.cat === "all" || (f.cat === "new" ? !S.prac[s.id] : f.cat === "wrong" ? S.prac[s.id] && S.prac[s.id].ok < S.prac[s.id].n : catOf(part, s) === f.cat)) && (!f.lv || s.lv === f.lv));
-    const desc = { p3: "대화를 듣기 전에 문제를 먼저 읽어 두세요. 채점 후 스크립트에서 정답 근거 문장을 보여 드려요.", p4: "첫 문장에서 담화 종류와 장소를 잡으세요. 채점 후 문장마다 다시 듣고 따라 말할 수 있어요.", p6: "빈칸 앞뒤만 보지 말고 문맥(시제·흐름)을 보세요. 문장 삽입은 앞뒤 문장과의 연결이 핵심이에요.", p7: "문제를 먼저 읽고 지문에서 근거를 찾으세요. 채점 후 근거 문장을 지문에 표시해 드려요." }[part];
-    const preview = (s) => part === "p3" || part === "p4" ? s.lines[0].en : part === "p6" ? s.paras.find((p) => p.length > 30) || s.paras[0] : s.docs[0].paras[0];
+    const desc = { p1: "사진을 먼저 보고 사람의 동작·사물의 상태·위치를 미리 떠올리세요. 사람이 없는 사진에서 'is being p.p.'(지금 ~되는 중)는 거의 항상 오답이에요.", p3: "대화를 듣기 전에 문제를 먼저 읽어 두세요. 채점 후 스크립트에서 정답 근거 문장을 보여 드려요.", p4: "첫 문장에서 담화 종류와 장소를 잡으세요. 채점 후 문장마다 다시 듣고 따라 말할 수 있어요.", p6: "빈칸 앞뒤만 보지 말고 문맥(시제·흐름)을 보세요. 문장 삽입은 앞뒤 문장과의 연결이 핵심이에요.", p7: "문제를 먼저 읽고 지문에서 근거를 찾으세요. 채점 후 근거 문장을 지문에 표시해 드려요." }[part];
+    const preview = (s) => part === "p1" ? s.setting : part === "p3" || part === "p4" ? s.lines[0].en : part === "p6" ? s.paras.find((p) => p.length > 30) || s.paras[0] : s.docs[0].paras[0];
     const row = (s) => {
       const rec = S.prac[s.id];
-      return `<button class="witem" data-set="${s.id}" style="align-items:flex-start"><div class="wbody"><div class="small" style="font-weight:700;color:var(--text-2)">${esc(catOf(part, s))} · ${LV_LABEL[s.lv]}${part === "p7" ? ` · ${s.docs.map((d) => d.doc).join(" + ")}` : ""} · ${s.qs.length}문제</div><div class="wm en" style="margin-top:2px">${esc(preview(s).replace(/\{\d\}/g, "____"))}</div></div>${rec ? `<span class="badge ${rec.ok === rec.n ? "ok" : "bad"}">${rec.ok}/${rec.n}</span>` : ""}</button>`;
+      return `<button class="witem" data-set="${s.id}" style="align-items:flex-start">${part === "p1" ? `<img class="p1thumb" src="${esc(s.img)}" alt="" loading="lazy">` : ""}<div class="wbody"><div class="small" style="font-weight:700;color:var(--text-2)">${esc(catOf(part, s))} · ${LV_LABEL[s.lv]}${part === "p7" ? ` · ${s.docs.map((d) => d.doc).join(" + ")}` : ""} · ${s.qs.length}문제</div><div class="wm en" style="margin-top:2px">${esc(preview(s).replace(/\{\d\}/g, "____"))}</div></div>${rec ? `<span class="badge ${rec.ok === rec.n ? "ok" : "bad"}">${rec.ok}/${rec.n}</span>` : ""}</button>`;
     };
     const solvedN = all.filter((s) => S.prac[s.id]).length;
-    const body = `${topBar(SET_TITLE[part], { back: true, sub: `${all.length}${part === "p6" ? "지문" : "세트"} · 푼 세트 ${solvedN}` })}
+    const body = `${topBar(SET_TITLE[part], { back: true, sub: part === "p1" ? `${all.length}문제 · 푼 문제 ${solvedN}` : `${all.length}${part === "p6" ? "지문" : "세트"} · 푼 세트 ${solvedN}` })}
       <div class="tip-box" style="margin-bottom:12px">${desc}</div>
-      <button class="btn block" data-run style="margin-bottom:12px" ${list.length ? "" : "disabled"}>${ico("play")}${part === "p7" ? "2세트" : "3세트"} 이어 풀기</button>
+      <button class="btn block" data-run style="margin-bottom:12px" ${list.length ? "" : "disabled"}>${ico("play")}${part === "p1" ? "6문제" : part === "p7" ? "2세트" : "3세트"} 이어 풀기</button>
       <div class="seg" style="margin-bottom:10px">${[[0, "전체"], [1, "쉬움"], [2, "보통"], [3, "어려움"]].map(([v, t]) => `<button class="${f.lv === v ? "on" : ""}" data-lv="${v}">${t}</button>`).join("")}</div>
       <div class="chips scroll" style="margin-bottom:12px">${[["all", "전체"], ["new", "안 푼 것"], ["wrong", "틀린 것"]].concat(cats.map((c) => [c, c])).map(([v, t]) => `<button class="chip ${f.cat === v ? "on" : ""}" data-cat="${esc(v)}">${esc(t)}</button>`).join("")}</div>
       ${list.length ? `<div class="wlist">${list.map(row).join("")}</div>` : `<div class="empty">${ico("check")}<b>조건에 맞는 세트가 없어요</b></div>`}`;
@@ -2189,7 +2216,7 @@
     $app.querySelectorAll("[data-cat]").forEach((b) => b.addEventListener("click", () => set({ cat: b.dataset.cat })));
     $app.querySelectorAll("[data-set]").forEach((b) => b.addEventListener("click", () => startSets(part, [PR._by.get(b.dataset.set)], SET_TITLE[part])));
     const run = $app.querySelector("[data-run]");
-    if (run) run.addEventListener("click", () => startSets(part, pickSets(list, part === "p7" ? 2 : 3), SET_TITLE[part]));
+    if (run) run.addEventListener("click", () => startSets(part, pickSets(list, part === "p1" ? 6 : part === "p7" ? 2 : 3), SET_TITLE[part]));
   }
 
   // ═════════════ 세트 풀기 (연습 모드: 풀기 → 채점 → 해설·스크립트) ═════════════
@@ -2209,9 +2236,9 @@
     const answeredNow = st.graded ? set.qs.length : st.picks.filter((x) => x != null).length;
     const jump = (s.part === "p6" || s.part === "p7") ? `<div class="jumpbar"><button data-jumpto=".doc">${ico("book")}지문</button><button data-jumpto=".pqs">${ico("list")}문제</button></div>` : "";
     $app.innerHTML = `<div class="study ${s.part === "p7" ? "wide-study" : ""}">${studyTop(Math.max(0, done + answeredNow - 1), nQ)}${jump}
-      <div class="small muted" style="margin:0 2px 8px;font-weight:700">${esc(s.title)} · ${s.i + 1}/${s.queue.length}세트</div>
+      <div class="small muted" style="margin:0 2px 8px;font-weight:700">${esc(s.title)} · ${s.i + 1}/${s.queue.length}${s.part === "p1" ? "문제" : "세트"}</div>
       ${setHtml(s.part, set, st, mode)}
-      <div class="study-foot">${st.graded ? `<button class="btn block" data-next>${s.i + 1 >= s.queue.length ? "결과 보기" : "다음 세트"}</button>` : `<button class="btn block" data-grade ${all ? "" : "disabled"}>${all ? "채점하기" : `${set.qs.length - st.picks.filter((x) => x != null).length}문제 남음`}</button>`}</div></div>`;
+      <div class="study-foot">${st.graded ? `<button class="btn block" data-next>${s.i + 1 >= s.queue.length ? "결과 보기" : s.part === "p1" ? "다음 문제" : "다음 세트"}</button>` : `<button class="btn block" data-grade ${all ? "" : "disabled"}>${all ? "채점하기" : `${set.qs.length - st.picks.filter((x) => x != null).length}문제 남음`}</button>`}</div></div>`;
     bindExit();
     const rerender = () => { const y = window.scrollY; vPset(); window.scrollTo(0, y); };
     bindSetCommon(s.part, set, st, rerender);
@@ -2266,12 +2293,12 @@
         if (btn) { btn.click(); const nx2 = document.getElementById(`pq-${j + 1}`); if (nx2) nx2.scrollIntoView({ block: "center", behavior: "smooth" }); }
         return;
       }
-      if ((e.key === " " || e.key === "p") && (s.part === "p3" || s.part === "p4")) { e.preventDefault(); const pb = $app.querySelector("[data-play34]"); if (pb) pb.click(); }
+      if ((e.key === " " || e.key === "p") && (s.part === "p1" || s.part === "p3" || s.part === "p4")) { e.preventDefault(); const pb = $app.querySelector("[data-play34]"); if (pb) pb.click(); }
     };
     // Part 3·4: 처음 열면 문제를 읽을 시간을 조금 준 뒤 자동 재생
-    if (!st.graded && (s.part === "p3" || s.part === "p4") && !st.autoplayed) {
+    if (!st.graded && (s.part === "p1" || s.part === "p3" || s.part === "p4") && !st.autoplayed) {
       st.autoplayed = true;
-      setTimeout(() => { if (session === s && s.queue[s.i] === set && !st.graded) playLines(set, 0); }, 1500);
+      setTimeout(() => { if (session === s && s.queue[s.i] === set && !st.graded) playLines(set, 0); }, s.part === "p1" ? 900 : 1500);
     }
   }
   function psetResultHtml(s) {
@@ -2454,6 +2481,7 @@
   const RC_MIN = 37;
   function mockPages(m) {
     const pages = [];
+    (m.p1 || []).forEach((id) => pages.push({ part: "p1", set: PR._by.get(id) }));
     m.p2.forEach((id) => { const it = (D.lc || []).find((p) => p.id === id); if (it) pages.push({ part: "p2", item: it, q: C.makeResponse(it, C.rng(parseInt(id.slice(3), 10) * 7919 + m.n * 104729)) }); });
     m.p3.forEach((id) => pages.push({ part: "p3", set: PR._by.get(id) }));
     m.p4.forEach((id) => pages.push({ part: "p4", set: PR._by.get(id) }));
@@ -2482,7 +2510,7 @@
       return `<div class="card" style="margin-top:10px"><div class="row"><div class="spacer"><b style="font-size:17px">하프 모의고사 ${m.n}회</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${RC_MIN}분)</div></div>${rec ? `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.total}</b><div class="small muted">LC ${rec.lc} · RC ${rec.rc}</div></div>` : ""}</div>
         <button class="btn ${rec ? "ghost" : ""} block" style="margin-top:10px" data-mock="${m.n}">${rec ? "다시 응시하기" : "응시하기"}</button></div>`;
     };
-    const body = `${topBar("하프 모의고사", { back: true, sub: "실제 시험의 절반 분량 · Part 2~7" })}
+    const body = `${topBar("하프 모의고사", { back: true, sub: `실제 시험의 절반 분량 · Part ${(PR.p1 || []).length >= 12 ? 1 : 2}~7` })}
       <div class="tip-box">실제 시험처럼 <b>해설 없이</b> 끝까지 풀고, 마지막에 <b>LC·RC 예상 점수</b>와 파트별 정답률, 전체 해설을 보여 드려요. LC 음성은 한 번만 재생돼요(실전 모드). Part 1(사진)은 포함되지 않아요.</div>
       ${mocks.map(card).join("")}`;
     shell("practice", body);

@@ -76,8 +76,25 @@ ok((await p.$$(".sline")).length >= 6 && (await p.$$(".feedback")).length === 3,
 const prac = await p.evaluate(() => Object.keys(window.__vocafit.state.prac).length);
 ok(prac === 1, "p3 record " + prac);
 await p.goBack(); await p.waitForTimeout(300);
+// Part 1 (사진이 들어온 문제가 있을 때): 6문제 이어 풀기 → 채점마다 문장 4개·해설 → 결과
+const hasP1 = await p.evaluate(() => (window.VOCA_PRACTICE.p1 || []).length);
+if (hasP1) {
+  await p.goto(base + "#/sets/p1"); await p.waitForTimeout(300);
+  ok(await p.$(".p1thumb"), "p1 list thumbnails");
+  await p.click("[data-run]"); await p.waitForTimeout(300);
+  for (let k = 0; k < 6; k++) {
+    ok(await p.$(".p1photo img"), "p1 photo shown " + k);
+    ok((await p.$$(".pq [data-pline]")).length === 4 && !(await p.$(".pq .en")), "p1 options hidden before grading " + k);
+    await p.click('.pq [data-q="0"][data-o="1"]'); await p.click("[data-grade]"); await p.waitForTimeout(150);
+    ok((await p.$$(".opt.sline .en")).length === 4 && (await p.$$(".feedback")).length === 1, "p1 graded shows 4 statements " + k);
+    await p.click("[data-next]"); await p.waitForTimeout(150);
+  }
+  ok(await p.$(".result-hero"), "p1 result");
+  await p.goto(base + "#/home"); await p.waitForTimeout(200);
+}
 await p.goto(base + "#/mock"); await p.waitForTimeout(300);
 await p.click('[data-mock="1"]'); await p.waitForTimeout(150); await p.click("[data-go-mock]"); await p.waitForTimeout(300);
+if (hasP1 >= 12) ok(await p.$(".p1photo img"), "mock starts with Part 1 photo");
 for (let k = 0; k < 200 && !(await p.$(".result-hero")); k++) {
   const pick = await p.$("[data-pick]"); if (pick) await pick.click();
   const conf = await p.$('#modal [data-r="1"]'); if (conf) { await conf.click(); await p.waitForTimeout(150); continue; }
