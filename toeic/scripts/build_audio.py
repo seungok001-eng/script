@@ -183,13 +183,26 @@ def kokoro():
     return _k
 
 
+# 전화번호·번호(555-0142, 4071-2236)는 TTS 가 큰 수나 빼기로 읽지 않게 숫자 하나씩 읽힌다. 화면 글자는 그대로
+_DIGITS = re.compile(r"\b\d+(?:-\d+)+\b")
+
+
+def speakable(text):
+    def say(m):
+        gs = m.group(0).split("-")
+        if all(re.fullmatch(r"(19|20)\d\d", g) for g in gs):
+            return " to ".join(gs)  # 연도 범위 2025-2026 → "2025 to 2026"
+        return ", ".join(" ".join(g) for g in gs)
+    return _DIGITS.sub(say, text)
+
+
 def synth(job):
     rel, text, voice = job
     out = os.path.join(AUDIO, rel)
     os.makedirs(os.path.dirname(out), exist_ok=True)
     import numpy as np
     lang = "en-gb" if voice.startswith("b") else "en-us"
-    samples, sr = kokoro().create(text, voice=voice, speed=0.95 if rel.startswith("w/") else 1.0, lang=lang)
+    samples, sr = kokoro().create(speakable(text), voice=voice, speed=0.95 if rel.startswith("w/") else 1.0, lang=lang)
     # 앞뒤 무음 정리 + 짧은 여백
     a = np.asarray(samples, dtype=np.float32)
     nz = np.where(np.abs(a) > 0.01)[0]
@@ -270,10 +283,12 @@ def main():
             del man[rel]
         for rel, text, voice in sents:
             want = {"text": text, "src": "kokoro", "voice": voice, "br": BITRATE}
+            if speakable(text) != text:
+                want["say"] = speakable(text)
             if man.get(rel) != want or not os.path.exists(os.path.join(AUDIO, rel)):
                 jobs.append((rel, text, voice))
     print(f"새로 만들 음성 {len(jobs)}개")
-    meta = {rel: {"text": t, "src": "kokoro", "voice": v, "br": BITRATE} for rel, t, v in jobs}
+    meta = {rel: dict({"text": t, "src": "kokoro", "voice": v, "br": BITRATE}, **({"say": speakable(t)} if speakable(t) != t else {})) for rel, t, v in jobs}
     done = 0
     with ProcessPoolExecutor(max_workers=a.workers) as ex:
         futs = [ex.submit(synth, j) for j in jobs]
