@@ -1,0 +1,3884 @@
+{
+ "items": [
+  {
+   "id": "p1-001",
+   "type": "single",
+   "setting": "사무실",
+   "lv": 1,
+   "scene": "40대 여성이 사무실 책상에 앉아 두 손을 노트북 키보드에 올리고 화면을 보며 타이핑하고 있다. 책상에는 노트북과 덮인 공책뿐이며 컵이나 전화기는 없고, 서랍은 모두 닫혀 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A Korean woman in her forties with shoulder-length black hair and a navy cardigan sits alone at a tidy office desk, both hands on the keyboard of an open laptop, typing and looking at the screen. The desk holds only the laptop and a closed notebook. There are no cups, mugs, or bottles anywhere, no telephone on the desk or in her hands, and all desk drawers are closed. She wears no headset or earphones. Medium shot from the side; the other desks in the background are empty. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman seated at a desk",
+    "both hands on the laptop keyboard",
+    "laptop open, she looks at the screen"
+   ],
+   "must_not": [
+    "any cup, mug or bottle",
+    "a phone, headset or earphones",
+    "an open drawer or papers in her hands"
+   ],
+   "o": [
+    "A woman is drinking from a coffee mug.",
+    "A woman is typing on a laptop keyboard.",
+    "A woman is talking on the phone at her desk.",
+    "A woman is putting some papers into a drawer."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 여자가 머그잔으로 커피를 마시고 있다.",
+    "(B) 여자가 노트북 키보드로 타이핑하고 있다.",
+    "(C) 여자가 책상에서 전화 통화를 하고 있다.",
+    "(D) 여자가 서랍에 서류를 넣고 있다."
+   ],
+   "exp": "여자가 두 손을 노트북 키보드에 올리고 타이핑하는 중이므로 (B)가 정답이다. 책상에 컵이나 전화기가 없으므로 (A)(C)는 오답이고, 서랍이 모두 닫혀 있고 손에 서류도 없으므로 (D)도 틀리다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-002",
+   "type": "single",
+   "setting": "사무실",
+   "lv": 2,
+   "scene": "30대 남성이 복사실에서 복사기 앞에 몸을 약간 숙이고, 열린 용지함에 흰 종이 묶음을 두 손으로 넣고 있다. 주변에 공구, 스테이플러, 상자는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A Black man in his thirties wearing a light blue shirt and gray trousers stands alone in an office copy room, bending slightly in front of a large photocopier. The machine's paper drawer is pulled open, and he is placing a thick stack of blank white paper into it with both hands. The copier lid is closed. There are no tools, no screwdriver, no stapler, and no cardboard boxes anywhere in the room. Medium-wide shot showing his upper body and the machine. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man standing in front of a photocopier",
+    "paper drawer pulled open",
+    "both hands placing a stack of paper into the drawer"
+   ],
+   "must_not": [
+    "a screwdriver or any tool",
+    "a stapler",
+    "a cardboard box"
+   ],
+   "o": [
+    "A man is repairing a machine with a screwdriver.",
+    "A man is stapling a stack of documents together.",
+    "A man is carrying a box down a hallway.",
+    "A man is loading paper into a copy machine."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 남자가 드라이버로 기계를 수리하고 있다.",
+    "(B) 남자가 서류를 스테이플러로 철하고 있다.",
+    "(C) 남자가 복도에서 상자를 나르고 있다.",
+    "(D) 남자가 복사기에 종이를 넣고 있다."
+   ],
+   "exp": "남자가 열린 용지함에 종이 묶음을 넣고 있으므로 (D)가 정답이다. 복사기 앞에 몸을 숙이고 있어 수리하는 것처럼 보일 수 있지만 공구가 없으므로 (A)는 오답이며, 스테이플러나 상자도 사진에 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-003",
+   "type": "single",
+   "setting": "회의실",
+   "lv": 1,
+   "scene": "젊은 여성이 작은 회의실 벽의 화이트보드 앞에 서서 오른손에 든 마커로 상자와 화살표로 된 도표를 그리고 있다. 왼손은 비어 있고, 지우개나 프로젝터 스크린은 없으며 의자는 탁자에 가지런히 넣어져 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A young Hispanic woman in a white blouse stands alone in a small meeting room, facing a large whiteboard mounted on the wall. Her right hand presses a blue marker against the board as she draws a simple flowchart of boxes and arrows with no words. Her left hand hangs empty at her side. There is no eraser or cloth anywhere and no projector screen. The chairs around the table behind her are neatly tucked in, and she is not touching them. Shot from her right side so her right hand and the marker are clearly visible. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman facing a whiteboard",
+    "marker in her right hand touching the board",
+    "simple diagram drawn on the board"
+   ],
+   "must_not": [
+    "an eraser or cloth",
+    "a projector screen",
+    "her hands on any chair"
+   ],
+   "o": [
+    "A woman is drawing a diagram on a whiteboard.",
+    "A woman is wiping the whiteboard with an eraser.",
+    "A woman is pointing at a screen on the wall.",
+    "A woman is arranging some chairs around a table."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 여자가 화이트보드에 도표를 그리고 있다.",
+    "(B) 여자가 지우개로 화이트보드를 닦고 있다.",
+    "(C) 여자가 벽에 있는 스크린을 가리키고 있다.",
+    "(D) 여자가 탁자 주위에 의자를 정리하고 있다."
+   ],
+   "exp": "여자가 마커를 화이트보드에 대고 상자와 화살표로 된 도표를 그리고 있으므로 (A)가 정답이다. 손에 지우개가 없어 (B)는 오답이고, 스크린은 사진에 없으며 의자는 이미 정리되어 있고 여자가 만지고 있지 않으므로 (C)(D)도 틀리다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-004",
+   "type": "single",
+   "setting": "강의실·세미나실",
+   "lv": 2,
+   "scene": "60대 남성 강사가 빈 강의실 앞쪽 연단 옆에 서서 왼팔을 뻗어 스크린에 투사된 막대그래프를 가리키고 있다. 연단의 마이크는 만지지 않고, 오른손은 비어 있으며 객석은 모두 비어 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A gray-haired white man in his sixties wearing a tweed jacket stands beside a wooden podium at the front of an empty lecture room. With his left arm fully extended, he points at a large projection screen showing a simple colorful bar chart with no words or numbers. A small microphone is fixed to the podium, and his hands are away from it. His right hand is empty, with no papers. There is no chalkboard. All the rows of seats facing him are empty. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man with arm extended toward the screen",
+    "bar chart projected on the screen",
+    "microphone on the podium, untouched"
+   ],
+   "must_not": [
+    "a chalkboard or chalk",
+    "papers in his hands",
+    "his hand on the microphone"
+   ],
+   "o": [
+    "A man is writing on a chalkboard at the front.",
+    "A man is pointing at a chart on a screen.",
+    "A man is handing out some papers to students.",
+    "A man is adjusting a microphone on the podium."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 남자가 앞쪽 칠판에 글씨를 쓰고 있다.",
+    "(B) 남자가 스크린의 도표를 가리키고 있다.",
+    "(C) 남자가 학생들에게 종이를 나눠 주고 있다.",
+    "(D) 남자가 연단의 마이크를 조정하고 있다."
+   ],
+   "exp": "남자가 팔을 뻗어 스크린에 투사된 막대그래프를 가리키고 있으므로 (B)가 정답이다. 연단에 마이크가 보이지만 손을 대고 있지 않으므로 (D)는 오답이고, 칠판과 종이, 학생은 사진에 없으므로 (A)(C)도 틀리다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-005",
+   "type": "single",
+   "setting": "강의실·세미나실",
+   "lv": 1,
+   "scene": "젊은 여성이 밝은 세미나실 책상에 앉아 고개를 숙이고 오른손에 든 펜으로 스프링 공책에 필기하고 있다. 책가방은 지퍼가 잠긴 채 의자 옆 바닥에 놓여 있고, 책상에 노트북은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A young East Asian woman with a ponytail, wearing a green sweater, sits at a desk in a bright seminar room. She is writing in an open spiral notebook with a pen in her right hand, her head bent toward the page, and her left hand rests flat on the notebook. Her backpack sits zipped and closed on the floor beside her chair, untouched. There is no laptop on the desk. Neither hand is raised. The other desks around her are empty. Medium shot from slightly in front. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman seated, writing with a pen",
+    "open notebook on the desk",
+    "closed backpack on the floor"
+   ],
+   "must_not": [
+    "a laptop",
+    "a raised hand",
+    "her hands touching the backpack"
+   ],
+   "o": [
+    "A woman is raising her hand in a classroom.",
+    "A woman is closing a laptop on her desk.",
+    "A woman is writing in a notebook at a desk.",
+    "A woman is putting her books into a backpack."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 여자가 교실에서 손을 들고 있다.",
+    "(B) 여자가 책상 위의 노트북을 닫고 있다.",
+    "(C) 여자가 책상에서 공책에 필기하고 있다.",
+    "(D) 여자가 책가방에 책을 넣고 있다."
+   ],
+   "exp": "여자가 펜으로 공책에 쓰고 있으므로 (C)가 정답이다. 두 손 모두 공책 위에 있어 손을 들고 있지 않고, 책상에 노트북이 없으며, 가방은 닫힌 채 바닥에 놓여 있으므로 (A)(B)(D)는 모두 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-006",
+   "type": "single",
+   "setting": "도서관",
+   "lv": 1,
+   "scene": "20대 남성이 도서관 서가 사이 통로에 서서 어깨 높이의 선반에서 오른손으로 양장본 책을 반쯤 꺼내고 있다. 사다리, 북카트, 테이블은 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A South Asian man in his twenties wearing a maroon hoodie and jeans stands alone in a library aisle between tall wooden bookshelves. His right hand is pulling a hardcover book halfway out of a shelf at shoulder height while he looks at it. His left hand hangs empty at his side. There is no ladder, no book cart, and no table or chairs in view, and the floor is clear. Medium-wide shot from the end of the aisle. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man standing between bookshelves",
+    "right hand pulling a book out of a shelf"
+   ],
+   "must_not": [
+    "a ladder",
+    "a book cart",
+    "a table or chairs"
+   ],
+   "o": [
+    "A man is reading a book at a long table.",
+    "A man is stacking some books on a cart.",
+    "A man is climbing a ladder to reach a shelf.",
+    "A man is pulling a book from a shelf."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 남자가 긴 테이블에서 책을 읽고 있다.",
+    "(B) 남자가 카트에 책을 쌓고 있다.",
+    "(C) 남자가 선반에 닿으려고 사다리를 오르고 있다.",
+    "(D) 남자가 선반에서 책을 꺼내고 있다."
+   ],
+   "exp": "남자가 서가 앞에 서서 선반에서 책을 꺼내고 있으므로 (D)가 정답이다. 테이블, 카트, 사다리는 사진에 없으므로 (A)(B)(C)는 모두 오답이다.",
+   "trap": "없는 사물"
+  },
+  {
+   "id": "p1-007",
+   "type": "single",
+   "setting": "도서관",
+   "lv": 2,
+   "scene": "중년 여성 사서가 책이 가득 실린 나무 북카트를 두 손으로 밀며 서가 사이 통로를 걸어가고 있다. 손에 책을 들고 있지 않고 컴퓨터는 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A middle-aged Black woman librarian with short curly hair, wearing a beige cardigan, walks alone down a library aisle between bookshelves, pushing a wooden book cart loaded with books. Both of her hands grip the cart's handle bar. She is not holding any book and is not touching the shelves or the books on the cart. There are no computers or desks in view. The floor is clean carpet. Medium-wide shot from the front at a slight angle. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman walking while pushing a book cart",
+    "both hands on the cart handle",
+    "books loaded on the cart"
+   ],
+   "must_not": [
+    "a book in her hand or her hand on a shelf",
+    "her hand lifting books off the cart",
+    "a computer"
+   ],
+   "o": [
+    "A woman is pushing a cart between bookshelves.",
+    "A woman is placing a book on a shelf.",
+    "A woman is sitting at a computer terminal.",
+    "A woman is unloading some books from a cart."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 여자가 서가 사이로 카트를 밀고 있다.",
+    "(B) 여자가 선반에 책을 꽂고 있다.",
+    "(C) 여자가 컴퓨터 단말기 앞에 앉아 있다.",
+    "(D) 여자가 카트에서 책을 내리고 있다."
+   ],
+   "exp": "여자가 두 손으로 손잡이를 잡고 북카트를 밀고 있으므로 (A)가 정답이다. 카트에 책이 실려 있어 (B)(D)가 그럴듯하지만 여자는 책을 만지고 있지 않으며, 컴퓨터는 사진에 없으므로 (C)도 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-008",
+   "type": "single",
+   "setting": "실험실",
+   "lv": 3,
+   "scene": "30대 여성 연구원이 흰 가운, 보안경, 파란 장갑을 착용한 채 실험대 앞에 서서 오른손에 든 파란 액체 시험관을 눈높이로 들고 살펴보고 있다. 왼손은 실험대에 놓여 있고, 무언가를 붓고 있지 않으며 개수대는 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A white woman in her thirties with her hair tied back, wearing a white lab coat, clear safety goggles already over her eyes, and blue gloves, stands at a laboratory bench. Her right hand holds a single test tube of blue liquid upright at eye level, and she is studying it closely. Her left hand rests flat on the bench, far from her face. Nothing is being poured, and she holds no beaker. There is no sink in view. A rack of empty test tubes sits on the bench behind her. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "safety goggles worn over her eyes",
+    "test tube held up at eye level",
+    "she is looking at the test tube"
+   ],
+   "must_not": [
+    "a hand touching the goggles",
+    "liquid being poured or a beaker in her hand",
+    "a sink"
+   ],
+   "o": [
+    "A woman is putting on a pair of safety goggles.",
+    "A woman is pouring some liquid into a beaker.",
+    "A woman is rinsing some glassware in a sink.",
+    "A woman is looking closely at a test tube."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 여자가 보안경을 착용하는 중이다.",
+    "(B) 여자가 비커에 액체를 붓고 있다.",
+    "(C) 여자가 개수대에서 유리 기구를 헹구고 있다.",
+    "(D) 여자가 시험관을 자세히 살펴보고 있다."
+   ],
+   "exp": "여자가 시험관을 눈높이로 들고 들여다보고 있으므로 (D)가 정답이다. 보안경은 이미 착용한(is wearing) 상태이고 손을 대고 있지 않으므로, 쓰는 동작을 뜻하는 putting on 의 (A)는 오답이다. 액체를 붓거나 개수대에서 헹구는 모습도 없으므로 (B)(C)도 틀리다.",
+   "trap": "상태 혼동"
+  },
+  {
+   "id": "p1-009",
+   "type": "single",
+   "setting": "실험실",
+   "lv": 1,
+   "scene": "40대 남성 연구원이 흰 가운을 입고 실험대 의자에 앉아 몸을 앞으로 숙여 현미경 접안렌즈를 들여다보고 있다. 두 손은 초점 손잡이에 있고 장갑은 끼지 않았으며, 실험대에 클립보드나 종이는 없고 뒤쪽 냉장고 문은 닫혀 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A Hispanic man in his forties with a short beard, wearing a white lab coat, sits alone on a stool at a laboratory bench, leaning forward and looking into the eyepieces of a microscope. Both of his bare hands are on the microscope's focus knobs. There are no gloves, no clipboard, no pen, and no paper anywhere on the bench. A white refrigerator with its door firmly closed stands against the far wall. Medium shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man looking into a microscope",
+    "both hands on the microscope"
+   ],
+   "must_not": [
+    "a clipboard, pen or paper",
+    "gloves on or in his hands",
+    "an open refrigerator door"
+   ],
+   "o": [
+    "A man is writing some notes on a clipboard.",
+    "A man is looking into a microscope at a bench.",
+    "A man is putting on a pair of rubber gloves.",
+    "A man is opening the door of a refrigerator."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 남자가 클립보드에 메모를 하고 있다.",
+    "(B) 남자가 실험대에서 현미경을 들여다보고 있다.",
+    "(C) 남자가 고무장갑을 끼는 중이다.",
+    "(D) 남자가 냉장고 문을 열고 있다."
+   ],
+   "exp": "남자가 현미경 접안렌즈를 들여다보고 있으므로 (B)가 정답이다. 두 손이 현미경에 있어 필기하거나 장갑을 끼는 동작이 아니고, 냉장고 문은 닫혀 있으므로 (A)(C)(D)는 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-010",
+   "type": "single",
+   "setting": "병원 로비",
+   "lv": 2,
+   "scene": "백발의 노신사가 병원 대기실 의자에 앉아 무릎 위 클립보드의 서류를 펜으로 작성하고 있다. 전화기나 잡지는 없고, 뒤쪽 접수대에는 아무도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An older white man with white hair and glasses, wearing a brown jacket, sits on a padded chair in a bright hospital waiting area. A clipboard with a blank form rests on his knee, and he is writing on the form with a pen in his right hand. There is no phone in his hands or near his ear, and no magazines anywhere. The reception counter in the background is empty, and no one else is in the lobby. Medium shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man seated in a waiting area",
+    "clipboard with a form on his knee",
+    "pen on the form"
+   ],
+   "must_not": [
+    "a phone",
+    "a magazine",
+    "anyone standing at the reception counter"
+   ],
+   "o": [
+    "A man is filling out a form on a clipboard.",
+    "A man is standing at the reception counter.",
+    "A man is reading a magazine in the lobby.",
+    "A man is talking on his phone in a waiting room."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 남자가 클립보드에 있는 서류를 작성하고 있다.",
+    "(B) 남자가 접수대에 서 있다.",
+    "(C) 남자가 로비에서 잡지를 읽고 있다.",
+    "(D) 남자가 대기실에서 전화 통화를 하고 있다."
+   ],
+   "exp": "남자가 앉아서 클립보드의 서류에 펜으로 기입하고 있으므로 (A)가 정답이다. 남자는 앉아 있고 접수대는 뒤쪽에 비어 있으므로 (B)는 오답이며, 잡지와 전화기는 사진에 없으므로 (C)(D)도 틀리다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-011",
+   "type": "single",
+   "setting": "병원 로비",
+   "lv": 3,
+   "scene": "하늘색 근무복을 입은 젊은 여성 간호사가 빈 휠체어의 손잡이를 두 손으로 잡고 병원 로비를 가로질러 밀고 있다. 휠체어는 펼쳐진 상태이며 좌석은 비어 있고, 유리 출입문은 닫혀 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A young Black female nurse in light blue scrubs walks across a spacious hospital lobby, pushing an empty wheelchair in front of her with both hands on its handles. The wheelchair is fully unfolded and its seat is empty. The glass entrance doors far behind her are closed, and she is nowhere near them. No other people are in the lobby. Polished floor, potted plants, daylight from tall windows. Medium-wide shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "nurse walking and pushing a wheelchair",
+    "both hands on the wheelchair handles",
+    "wheelchair unfolded with an empty seat"
+   ],
+   "must_not": [
+    "anyone sitting in the wheelchair",
+    "the wheelchair being folded",
+    "a hand on a door or an open door"
+   ],
+   "o": [
+    "A woman is sitting in a wheelchair in a lobby.",
+    "A wheelchair is being folded up by a nurse.",
+    "A woman is pushing a wheelchair across a lobby.",
+    "A woman is holding the entrance door open."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 여자가 로비에서 휠체어에 앉아 있다.",
+    "(B) 간호사가 휠체어를 접고 있다.",
+    "(C) 여자가 로비를 가로질러 휠체어를 밀고 있다.",
+    "(D) 여자가 출입문을 잡아 열어 두고 있다."
+   ],
+   "exp": "간호사가 빈 휠체어를 밀며 로비를 지나가고 있으므로 (C)가 정답이다. 휠체어에는 아무도 앉아 있지 않아 (A)는 오답이고, 휠체어는 펼쳐진 채 밀리고 있으므로 접히는 중이라는 (B)도 틀리다. 출입문은 멀리 닫혀 있어 (D)도 오답이다.",
+   "trap": "주어 혼동"
+  },
+  {
+   "id": "p1-012",
+   "type": "single",
+   "setting": "호텔 로비",
+   "lv": 3,
+   "scene": "30대 여성이 호텔 로비에서 트렌치코트를 입는 중이다. 오른팔은 소매에 들어가 있고 왼팔을 다른 소매에 반쯤 넣고 있으며, 옆에 세워 둔 여행 가방 손잡이는 잡고 있지 않다. 멀리 보이는 프런트 데스크에는 아무도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A Southeast Asian woman in her thirties stands in a hotel lobby, in the middle of putting on a tan trench coat: her right arm is already in one sleeve and her left arm is halfway into the other sleeve. A closed black suitcase stands upright beside her, and she is not touching its handle. She wears no sunglasses and no hat. The front desk is visible far behind her with no one standing at it. Marble floor, warm lighting. Medium-wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "right arm in one sleeve, left arm halfway into the other sleeve",
+    "suitcase standing beside her, untouched"
+   ],
+   "must_not": [
+    "sunglasses or a hat",
+    "her hand on the suitcase handle",
+    "anyone at the front desk"
+   ],
+   "o": [
+    "A woman is putting on her coat in a lobby.",
+    "A woman is removing her sunglasses in a lobby.",
+    "A woman is pulling her suitcase across the lobby.",
+    "A woman is checking in at the front desk."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 여자가 로비에서 코트를 입고 있는 중이다.",
+    "(B) 여자가 로비에서 선글라스를 벗고 있다.",
+    "(C) 여자가 로비를 가로질러 여행 가방을 끌고 있다.",
+    "(D) 여자가 프런트 데스크에서 체크인하고 있다."
+   ],
+   "exp": "여자가 코트 소매에 팔을 넣으며 입는 동작을 하고 있으므로 (A)가 정답이다. putting on 은 입는 동작, wearing 은 입고 있는 상태임을 구분해야 한다. 가방은 옆에 세워져 있을 뿐 끌고 있지 않고, 선글라스는 없으며 프런트 데스크와는 떨어져 있으므로 (B)(C)(D)는 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-013",
+   "type": "multi",
+   "setting": "사무실",
+   "lv": 2,
+   "scene": "사무실에서 30대 남성이 의자 팔걸이에 손을 올린 채 앉아 있고, 50대 여성이 옆에 서서 몸을 기울여 남성의 컴퓨터 모니터를 오른손으로 가리키고 있다. 두 사람은 서로 손을 잡고 있지 않다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In an open-plan office, a seated Asian man in his thirties wearing a white shirt sits at his desk with both hands resting on the armrests of his chair, away from the keyboard. A standing white woman in her fifties, wearing a dark blazer, leans beside him and points at his computer monitor with her right hand. The monitor shows a simple line graph with no words. The two people are not touching each other. A window with closed blinds is behind them. Medium shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man seated, hands on the armrests",
+    "woman standing, pointing at the monitor"
+   ],
+   "must_not": [
+    "the man's hands on the keyboard",
+    "the two people shaking hands",
+    "the man standing"
+   ],
+   "o": [
+    "The two people are shaking hands across a desk.",
+    "The man is typing on a keyboard at his desk.",
+    "The woman is pointing at a computer monitor.",
+    "Both people are standing next to a window."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 두 사람이 책상 너머로 악수하고 있다.",
+    "(B) 남자가 책상에서 키보드로 타이핑하고 있다.",
+    "(C) 여자가 컴퓨터 모니터를 가리키고 있다.",
+    "(D) 두 사람 모두 창문 옆에 서 있다."
+   ],
+   "exp": "서 있는 여자가 모니터를 손으로 가리키고 있으므로 (C)가 정답이다. 남자의 손은 의자 팔걸이에 있어 타이핑하고 있지 않으므로 (B)는 오답이며, 남자는 앉아 있으므로 둘 다 서 있다는 (D)도 틀리다. 두 사람이 서로 닿아 있지 않으므로 악수한다는 (A)도 오답이다.",
+   "trap": "주어 혼동"
+  },
+  {
+   "id": "p1-014",
+   "type": "multi",
+   "setting": "회의실",
+   "lv": 1,
+   "scene": "남녀 네 명의 직원이 회의실의 타원형 탁자에 둘러앉아 이야기하고 있다. 탁자에는 공책, 펜, 닫힌 노트북만 있고 음식은 없으며, 서 있는 사람은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Four office workers of different ages and ethnicities, two men and two women in business casual clothes, are all seated on chairs around an oval conference table in a meeting room, talking. Open notebooks, pens, and closed laptops are on the table. There is no food, no plates, and no drinks. Nobody is standing. A blank projector screen hangs on the far wall with no one near it. The door is closed. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "everyone seated around one table",
+    "notebooks and laptops on the table"
+   ],
+   "must_not": [
+    "anyone standing",
+    "food, plates or drinks",
+    "anyone at the door or near the screen"
+   ],
+   "o": [
+    "Some people are standing in front of a screen.",
+    "Some people are seated around a conference table.",
+    "Some people are walking out of a meeting room.",
+    "Some people are having lunch at a table."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 사람들이 스크린 앞에 서 있다.",
+    "(B) 사람들이 회의용 탁자에 둘러앉아 있다.",
+    "(C) 사람들이 회의실에서 걸어 나가고 있다.",
+    "(D) 사람들이 탁자에서 점심을 먹고 있다."
+   ],
+   "exp": "네 사람이 모두 탁자 주위에 앉아 있으므로 (B)가 정답이다. 서 있거나 나가는 사람이 없으므로 (A)(C)는 오답이고, 탁자에 음식이 없으므로 (D)도 틀리다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-015",
+   "type": "multi",
+   "setting": "회의실",
+   "lv": 3,
+   "scene": "회의실에서 정장 차림의 남성과 여성이 탁자를 사이에 두고 마주 서서 웃으며 악수하고 있다. 탁자에는 유리 물병과 빈 잔 두 개가 손대지 않은 채 놓여 있고, 의자는 탁자에 넣어져 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a meeting room, a Black man in a gray suit and a Middle Eastern woman in a navy suit stand on opposite sides of a conference table and shake hands across it, smiling. Their free hands are empty, and no business cards are visible anywhere. A glass water pitcher and two empty glasses stand untouched on the table. The chairs around the table are pushed in, and none are stacked. No one else is in the room. Medium-wide shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two people shaking hands across a table",
+    "pitcher and empty glasses on the table, untouched"
+   ],
+   "must_not": [
+    "business cards",
+    "anyone holding the pitcher or a glass",
+    "stacked chairs or anyone moving chairs"
+   ],
+   "o": [
+    "Two people are exchanging business cards at a table.",
+    "One of the people is pouring water into a glass.",
+    "Some chairs are being stacked against the wall.",
+    "Two people are shaking hands across a table."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 두 사람이 탁자에서 명함을 교환하고 있다.",
+    "(B) 한 사람이 잔에 물을 따르고 있다.",
+    "(C) 의자들이 벽 쪽에 쌓이고 있는 중이다.",
+    "(D) 두 사람이 탁자 너머로 악수하고 있다."
+   ],
+   "exp": "두 사람이 탁자를 사이에 두고 악수하고 있으므로 (D)가 정답이다. 탁자에 물병과 잔이 있지만 아무도 들고 있지 않아 (B)는 오답이고, 명함도 보이지 않아 (A)도 틀리다. 의자는 탁자에 넣어져 있고 누가 쌓는 중도 아니므로 is being stacked 의 (C)도 틀리다.",
+   "trap": "없는 사물"
+  },
+  {
+   "id": "p1-016",
+   "type": "multi",
+   "setting": "강의실·세미나실",
+   "lv": 2,
+   "scene": "작은 세미나실에서 40대 여성 강사가 책상 줄 옆에 서서 앉아 있는 젊은 남성에게 종이 한 장을 건네고 있다. 다른 학생 두 명은 이미 받은 종이를 내려다보고 있으며, 손을 든 사람은 없고 화이트보드는 비어 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a small seminar room, a female instructor in her forties with short hair, wearing a gray blazer, stands beside a row of desks holding a small stack of papers in her left hand and hands one sheet with her right hand to a seated young man. Two other seated students, a woman and a man, already have papers on their desks and are looking down at them. All students keep their hands on their desks, and no hands are raised. The whiteboard behind her is blank, and she holds no marker. Everyone except the instructor is seated. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "instructor standing with a stack of papers, handing a sheet to a seated student",
+    "papers on the other students' desks"
+   ],
+   "must_not": [
+    "a raised hand",
+    "a marker in the instructor's hand or writing on the board",
+    "any student standing"
+   ],
+   "o": [
+    "The instructor is handing out papers to the students.",
+    "Some of the students are raising their hands.",
+    "The instructor is writing something on the whiteboard.",
+    "The students are getting up from their seats."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 강사가 학생들에게 종이를 나눠 주고 있다.",
+    "(B) 학생 몇 명이 손을 들고 있다.",
+    "(C) 강사가 화이트보드에 무언가를 쓰고 있다.",
+    "(D) 학생들이 자리에서 일어나고 있다."
+   ],
+   "exp": "강사가 앉아 있는 학생에게 종이를 건네며 나눠 주고 있으므로 (A)가 정답이다. 학생들의 손은 책상 위에 있고 모두 앉아 있으므로 (B)(D)는 오답이며, 화이트보드는 비어 있고 강사는 마커를 들고 있지 않아 (C)도 틀리다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-017",
+   "type": "multi",
+   "setting": "도서관",
+   "lv": 2,
+   "scene": "대학생 두 명이 도서관의 긴 나무 탁자 같은 쪽에 나란히 앉아 각자 펼친 교재를 읽고 있다. 맞은편 의자는 비어 있고, 책을 옮기거나 꽂는 사람은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Two university students, a young white woman and a young Black man, sit side by side on the same side of a long wooden library table, both reading open textbooks laid flat in front of them. Their hands rest on their books. The chairs on the opposite side of the table are all empty. No one is standing, carrying books, or touching a shelf. Tall bookshelves fill the background. Medium-wide shot taken from across the table. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two people seated side by side on the same side of the table",
+    "empty chairs on the opposite side"
+   ],
+   "must_not": [
+    "anyone sitting across the table from them",
+    "anyone standing or touching a shelf",
+    "anyone carrying books"
+   ],
+   "o": [
+    "Two people are sitting across from each other at a table.",
+    "One of the people is placing a book on a shelf.",
+    "Two people are sitting next to each other at a table.",
+    "They are carrying some books to the front desk."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 두 사람이 탁자에 마주 보고 앉아 있다.",
+    "(B) 한 사람이 선반에 책을 꽂고 있다.",
+    "(C) 두 사람이 탁자에 나란히 앉아 있다.",
+    "(D) 두 사람이 책을 안내 데스크로 옮기고 있다."
+   ],
+   "exp": "두 사람이 탁자의 같은 쪽에 나란히 앉아 있으므로 (C)가 정답이다. across from each other 는 마주 보고 앉은 것이므로 (A)는 위치를 틀리게 묘사한 오답이다. 둘 다 앉아서 책을 읽고 있어 (B)(D)도 틀리다.",
+   "trap": "위치 혼동"
+  },
+  {
+   "id": "p1-018",
+   "type": "multi",
+   "setting": "실험실",
+   "lv": 2,
+   "scene": "실험실에서 흰 가운과 보안경을 착용한 연구원 두 명이 실험대 앞에 서 있다. 젊은 여성은 비커의 초록색 액체를 플라스크에 붓고 있고, 나이 든 남성은 클립보드를 들고 지켜보고 있다. 현미경과 개수대는 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a bright laboratory, two researchers in buttoned white lab coats and safety glasses stand at a bench. A young East Asian woman holds a glass beaker and pours clear green liquid into a conical flask on the bench. Beside her, an older South Asian man holds a clipboard with both hands and watches her. Both keep their lab coats on. There are no microscopes on the bench and no sink in view. Medium shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman pouring liquid from a beaker into a flask",
+    "man holding a clipboard and watching"
+   ],
+   "must_not": [
+    "a microscope",
+    "a sink or anyone washing hands",
+    "anyone removing a lab coat"
+   ],
+   "o": [
+    "Both of the workers are looking into microscopes.",
+    "One of the workers is pouring liquid into a flask.",
+    "One of the workers is washing her hands at a sink.",
+    "The workers are taking off their lab coats."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 두 직원 모두 현미경을 들여다보고 있다.",
+    "(B) 직원 한 명이 플라스크에 액체를 붓고 있다.",
+    "(C) 직원 한 명이 개수대에서 손을 씻고 있다.",
+    "(D) 직원들이 실험 가운을 벗고 있다."
+   ],
+   "exp": "여자 연구원이 비커의 액체를 플라스크에 붓고 있으므로 (B)가 정답이다. 현미경과 개수대는 사진에 없으므로 (A)(C)는 오답이고, 두 사람 모두 가운을 입고 있는 상태이지 벗는 중이 아니므로 (D)도 틀리다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-019",
+   "type": "multi",
+   "setting": "병원 로비",
+   "lv": 1,
+   "scene": "병원 접수대에서 헤드셋을 낀 젊은 남성 접수원이 데스크 뒤에 앉아, 앞에 서 있는 나이 든 여성과 마주 보고 이야기하고 있다. 뒤쪽 대기석은 모두 비어 있고 휠체어나 다른 사람은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. At a hospital reception counter, a young male receptionist in a dark polo shirt, wearing a headset, sits behind the counter and talks with an older Hispanic woman who stands in front of it with a handbag on her shoulder. They are facing each other. The rows of waiting-room chairs behind her are completely empty. There are no wheelchairs, no nurses, and no other people in the lobby. Bright, clean lobby with a potted plant. Medium-wide shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman standing at the counter facing the receptionist",
+    "receptionist behind the counter",
+    "empty waiting chairs"
+   ],
+   "must_not": [
+    "anyone sitting in the waiting chairs",
+    "a wheelchair",
+    "a nurse or medical equipment"
+   ],
+   "o": [
+    "A woman is talking to a receptionist at a counter.",
+    "Some people are sitting in the waiting area.",
+    "A man is pushing a wheelchair through the lobby.",
+    "A nurse is checking a patient's blood pressure."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 여자가 접수대에서 접수원과 이야기하고 있다.",
+    "(B) 사람들이 대기 구역에 앉아 있다.",
+    "(C) 남자가 로비에서 휠체어를 밀고 있다.",
+    "(D) 간호사가 환자의 혈압을 재고 있다."
+   ],
+   "exp": "여자가 접수대 앞에 서서 접수원과 이야기하고 있으므로 (A)가 정답이다. 대기석은 모두 비어 있어 (B)는 오답이고, 휠체어와 간호사는 사진에 없으므로 (C)(D)도 틀리다.",
+   "trap": "없는 사물"
+  },
+  {
+   "id": "p1-020",
+   "type": "multi",
+   "setting": "호텔 로비",
+   "lv": 2,
+   "scene": "호텔 로비에서 빨간 제복을 입은 벨보이가 회색 여행 가방을 두 손으로 들어 이미 가방 하나가 실린 짐 카트에 올리고 있다. 손님은 몇 걸음 떨어져 주머니에 손을 넣고 지켜보고 있으며, 소파는 비어 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a hotel lobby, a bellhop in a dark red uniform and cap lifts a gray suitcase with both hands and sets it onto a brass luggage cart that already holds one bag. A guest, a white man in a casual jacket, stands a few steps away with his hands in his pockets, watching. No one is pushing the cart. The sofas in the background are empty, and there are no mops or cleaning equipment. Medium-wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "bellhop lifting a suitcase onto the cart",
+    "guest standing with hands in pockets"
+   ],
+   "must_not": [
+    "anyone pushing the cart",
+    "a mop or cleaning equipment",
+    "anyone sitting on the sofas"
+   ],
+   "o": [
+    "The guest is pushing a luggage cart through the lobby.",
+    "A hotel worker is putting a suitcase on a cart.",
+    "A hotel worker is mopping the lobby floor.",
+    "Some people are relaxing on a sofa in the lobby."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 손님이 로비에서 짐 카트를 밀고 있다.",
+    "(B) 호텔 직원이 카트에 여행 가방을 올리고 있다.",
+    "(C) 호텔 직원이 로비 바닥을 대걸레로 닦고 있다.",
+    "(D) 사람들이 로비 소파에서 쉬고 있다."
+   ],
+   "exp": "직원(벨보이)이 여행 가방을 들어 짐 카트에 올리고 있으므로 (B)가 정답이다. 손님은 주머니에 손을 넣고 서 있을 뿐 카트를 밀고 있지 않아 (A)는 주어를 혼동한 오답이다. 대걸레는 없고 소파는 비어 있어 (C)(D)도 틀리다.",
+   "trap": "주어 혼동"
+  },
+  {
+   "id": "p1-021",
+   "type": "multi",
+   "setting": "호텔 로비",
+   "lv": 3,
+   "scene": "호텔 프런트 데스크 앞에서 키 큰 남성이 왼쪽 팔뚝을 카운터에 기댄 채 이야기하고, 카운터 안쪽의 여성 직원은 모니터를 보며 키보드로 입력하고 있다. 건네는 물건은 없고, 짐이나 계단은 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. At a hotel front desk, a tall Black man in a navy sweater stands in front of the counter, leaning on it with his left forearm while he talks. Behind the counter, a young East Asian female clerk in a white blouse types on a computer keyboard, looking at her monitor. The man's hands are not on any keyboard, and nothing is being handed over between them. There is no luggage anywhere in view and no staircase. Medium shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man leaning his forearm on the counter",
+    "clerk behind the counter typing"
+   ],
+   "must_not": [
+    "a key card or anything passed between them",
+    "the man's hands on a keyboard",
+    "luggage or stairs"
+   ],
+   "o": [
+    "The woman is handing a room key to the man.",
+    "The man is typing on a computer keyboard.",
+    "Some suitcases are being carried up the stairs.",
+    "The man is leaning on the counter with one arm."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 여자가 남자에게 객실 열쇠를 건네고 있다.",
+    "(B) 남자가 컴퓨터 키보드로 입력하고 있다.",
+    "(C) 여행 가방들이 계단 위로 옮겨지고 있다.",
+    "(D) 남자가 한쪽 팔로 카운터에 기대어 있다."
+   ],
+   "exp": "남자가 팔뚝을 카운터에 걸치고 기대어 있으므로 (D)가 정답이다. 키보드로 입력하는 사람은 카운터 안의 여자이므로 (B)는 주어를 바꾼 오답이고, 건네는 열쇠도 보이지 않아 (A)도 오답이다. 짐이나 계단도 없어 is being carried 의 (C)도 틀리다.",
+   "trap": "주어 혼동"
+  },
+  {
+   "id": "p1-022",
+   "type": "scene",
+   "setting": "사무실",
+   "lv": 3,
+   "scene": "퇴근 후 빈 사무실에 흰 책상 두 줄이 있고 모니터는 꺼져 있다. 사무용 의자는 모두 책상 밑으로 가지런히 밀어 넣어져 있고, 창 블라인드는 끝까지 내려져 있으며 책상 위에 상자는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An empty open-plan office after work hours. Two rows of white desks with dark monitors that are switched off. Every office chair has been pushed neatly under its desk, standing upright on its wheels; none are stacked. The window blinds along the far wall are fully lowered and closed. The desks are clear except for monitors and keyboards, and there are no boxes anywhere in the room. Soft evening light. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "every chair pushed under a desk",
+    "blinds fully lowered"
+   ],
+   "must_not": [
+    "stacked chairs",
+    "raised blinds",
+    "boxes on the desks or floor"
+   ],
+   "o": [
+    "Some chairs are being stacked in the corner.",
+    "The window blinds have been pulled all the way up.",
+    "Some chairs have been pushed under the desks.",
+    "Some boxes have been piled on top of the desks."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 의자들이 구석에 쌓이고 있는 중이다.",
+    "(B) 창 블라인드가 끝까지 올려져 있다.",
+    "(C) 의자들이 책상 밑으로 밀어 넣어져 있다.",
+    "(D) 상자들이 책상 위에 쌓여 있다."
+   ],
+   "exp": "의자들이 모두 책상 밑에 밀어 넣어진 상태이므로 현재완료 수동태의 (C)가 정답이다. 사람이 없는 사진에서 is being stacked(지금 쌓는 중)는 성립하지 않으므로 (A)는 오답이고, 블라인드는 내려져 있으며 상자도 없으므로 (B)(D)도 틀리다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-023",
+   "type": "scene",
+   "setting": "사무실",
+   "lv": 2,
+   "scene": "나무 책상 하나를 약간 위에서 본 장면이다. 책상 오른쪽 앞 모서리에 색색의 서류철 다섯 개가 가지런히 쌓여 있고, 가운데에 열린 노트북, 왼쪽에 작은 화분이 있다. 서랍은 모두 닫혀 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A close, slightly elevated view of a single wooden office desk. A neat stack of five colored paper folders sits on the front right corner of the desk. An open laptop, its screen showing a plain blue background, sits in the center, and a small potted green plant sits on the left, with no watering can nearby. All desk drawers are fully closed. An office chair is pushed in, upright. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "stack of folders on the desk corner",
+    "laptop open with its screen lit",
+    "all drawers closed"
+   ],
+   "must_not": [
+    "a closed laptop",
+    "a watering can or water",
+    "an open drawer"
+   ],
+   "o": [
+    "A laptop computer has been shut on the desk.",
+    "A potted plant is being watered on the desk.",
+    "Some folders are stacked on the corner of a desk.",
+    "One of the desk drawers has been left open."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 책상 위의 노트북이 닫혀 있다.",
+    "(B) 책상 위의 화분에 물을 주고 있는 중이다.",
+    "(C) 서류철들이 책상 모서리에 쌓여 있다.",
+    "(D) 책상 서랍 하나가 열린 채로 있다."
+   ],
+   "exp": "서류철이 책상 모서리에 쌓여 있으므로 (C)가 정답이다. 화분은 있지만 사람이 없으니 물을 주는 중(is being watered)일 수 없어 (B)는 오답이다. 노트북은 열려 있고 서랍은 모두 닫혀 있으므로 (A)(D)도 틀리다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-024",
+   "type": "scene",
+   "setting": "회의실",
+   "lv": 2,
+   "scene": "회의 준비가 끝난 빈 회의실이다. 긴 탁자에 의자 여덟 개가 가지런히 넣어져 있고, 의자마다 앞에 빈 유리잔이 놓여 있다. 탁자 가운데에 물병이 있고, 벽의 프로젝터 스크린은 내려져 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An empty conference room prepared for a meeting. A long table with eight chairs evenly placed around it, all pushed in. In front of each chair, an empty drinking glass stands on a white napkin. A glass water pitcher sits in the middle of the table, still and untouched. A white projector screen is pulled down, blank, on the far wall. No chairs are stacked anywhere. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "an empty glass in front of each chair",
+    "projector screen pulled down",
+    "chairs around the table"
+   ],
+   "must_not": [
+    "water being poured",
+    "stacked chairs",
+    "a rolled-up screen"
+   ],
+   "o": [
+    "Some glasses are being filled with water from a pitcher.",
+    "Some glasses have been set out on a table.",
+    "Some chairs have been stacked against a wall.",
+    "The projector screen has been rolled up to the ceiling."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 유리잔에 물병의 물이 채워지고 있는 중이다.",
+    "(B) 탁자 위에 유리잔들이 놓여 있다.",
+    "(C) 의자들이 벽에 쌓여 있다.",
+    "(D) 프로젝터 스크린이 천장까지 말려 올라가 있다."
+   ],
+   "exp": "의자마다 앞에 유리잔이 놓여 있으므로 (B)가 정답이다. 물병이 있어도 사람이 없으므로 잔에 물을 채우는 중(are being filled)이라는 (A)는 오답이다. 의자는 탁자 주위에 있고 스크린은 내려져 있으므로 (C)(D)도 틀리다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-025",
+   "type": "scene",
+   "setting": "강의실·세미나실",
+   "lv": 2,
+   "scene": "뒤쪽에서 본 빈 교실이다. 학생 책상 스무 개가 앞쪽 화이트보드를 향해 반듯하게 줄지어 있고, 화이트보드는 깨끗하며 책상 위에는 아무것도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An empty classroom seen from the back. Twenty individual student desks are arranged in neat straight rows, all facing a large whiteboard at the front. The whiteboard is clean and blank, and an eraser rests still on its ledge. The desktops are completely bare, with no notebooks, papers, or bags. Large windows on the left let in daylight. Clean gray floor. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "desks in straight rows facing the whiteboard",
+    "bare desktops"
+   ],
+   "must_not": [
+    "desks in a circle",
+    "anyone wiping the board",
+    "notebooks or papers on the desks"
+   ],
+   "o": [
+    "The desks have been arranged in a circle.",
+    "The whiteboard is being wiped clean with an eraser.",
+    "Some notebooks have been left on the desks.",
+    "The desks have been set up in straight rows."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 책상들이 원형으로 배치되어 있다.",
+    "(B) 화이트보드를 지우개로 깨끗이 닦고 있는 중이다.",
+    "(C) 책상 위에 공책들이 놓여 있다.",
+    "(D) 책상들이 반듯하게 줄지어 배치되어 있다."
+   ],
+   "exp": "책상들이 앞을 향해 일렬로 배치되어 있으므로 (D)가 정답이다. 화이트보드가 깨끗하지만 사람이 없으므로 닦는 중(is being wiped)이라는 (B)는 오답이다. 책상은 원형이 아니고 위에 공책도 없으므로 (A)(C)도 틀리다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-026",
+   "type": "scene",
+   "setting": "도서관",
+   "lv": 2,
+   "scene": "책이 가득 꽂힌 키 큰 서가 두 개 사이 통로 한가운데에 책 스무 권가량이 실린 북카트가 세워져 있다. 바닥은 깨끗하고 사다리는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A quiet library aisle between two tall wooden bookshelves full of books. A metal book cart loaded with about twenty books stands parked and still in the middle of the aisle. The floor is clean, with no books lying on it. There is no ladder anywhere. Soft daylight comes from a window at the end of the aisle. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "book cart with books parked in the aisle",
+    "clean floor"
+   ],
+   "must_not": [
+    "books on the floor",
+    "a ladder",
+    "books in mid-motion or a hand"
+   ],
+   "o": [
+    "A cart full of books has been left in an aisle.",
+    "Books are being put back on the shelves.",
+    "Some books are lying on the floor in the aisle.",
+    "A ladder is leaning against one of the bookshelves."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 책이 가득 실린 카트가 통로에 놓여 있다.",
+    "(B) 책들이 선반에 다시 꽂히고 있는 중이다.",
+    "(C) 책 몇 권이 통로 바닥에 놓여 있다.",
+    "(D) 사다리가 서가 하나에 기대어 있다."
+   ],
+   "exp": "책을 실은 카트가 통로에 세워져 있으므로 (A)가 정답이다. 카트와 서가가 있어 정리 중인 것처럼 보이지만 사람이 없으므로 (B)의 are being put back 은 오답이다. 바닥에 떨어진 책과 사다리는 없으므로 (C)(D)도 틀리다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-027",
+   "type": "scene",
+   "setting": "실험실",
+   "lv": 2,
+   "scene": "창가의 깨끗한 실험대 위에 보라색 액체가 든 시험관 여섯 개가 플라스틱 받침대에 나란히 꽂혀 있다. 옆에는 덮개 없는 현미경과 빈 비커 두 개가 있고, 실험대 아래 수납장 문은 모두 닫혀 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A clean laboratory bench by a window. A plastic rack holds six test tubes of purple liquid, standing upright in a row. Next to the rack are an uncovered microscope and two empty glass beakers. Nothing is being poured, and no liquid is moving. The metal cabinet doors under the bench are all firmly closed. Bright, tidy, modern lab. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "six test tubes standing in a rack",
+    "uncovered microscope",
+    "closed cabinet doors"
+   ],
+   "must_not": [
+    "liquid being poured",
+    "a cloth or cover over the microscope",
+    "an open cabinet door"
+   ],
+   "o": [
+    "Some liquid is being poured into a beaker.",
+    "A microscope has been covered with a cloth.",
+    "Some of the cabinet doors have been left open.",
+    "Some test tubes have been placed in a rack."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 비커에 액체가 부어지고 있는 중이다.",
+    "(B) 현미경이 천으로 덮여 있다.",
+    "(C) 수납장 문 몇 개가 열린 채로 있다.",
+    "(D) 시험관들이 받침대에 꽂혀 있다."
+   ],
+   "exp": "시험관들이 받침대에 꽂혀 있으므로 (D)가 정답이다. 비커가 있지만 아무도 없으니 액체를 붓는 중(is being poured)일 수 없어 (A)는 오답이다. 현미경은 덮여 있지 않고 수납장 문은 닫혀 있으므로 (B)(C)도 틀리다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-028",
+   "type": "scene",
+   "setting": "병원 로비",
+   "lv": 1,
+   "scene": "빈 병원 대기실에 파란 의자들이 연한 색 벽을 따라 한 줄로 놓여 있고 모두 비어 있다. 줄 끝의 낮은 탁자에 잡지가 가지런히 쌓여 있고, 구석의 화분은 똑바로 서 있으며 바닥은 깨끗하다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An empty hospital waiting area. A long row of blue padded chairs is lined up against a pale wall, and every seat is empty. A small low table at the end of the row holds a neat pile of magazines with plain covers. A tall potted plant stands upright in the corner. The floor is clean and shiny, with nothing lying on it. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "row of empty chairs along the wall",
+    "upright potted plant",
+    "magazines neatly piled on a table"
+   ],
+   "must_not": [
+    "anyone in the chairs",
+    "a fallen plant",
+    "magazines on the floor"
+   ],
+   "o": [
+    "Some patients are waiting in the seating area.",
+    "Some chairs are lined up along a wall.",
+    "A potted plant has fallen over in a corner.",
+    "Some magazines are lying all over the floor."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 환자들이 대기 구역에서 기다리고 있다.",
+    "(B) 의자들이 벽을 따라 줄지어 있다.",
+    "(C) 구석의 화분이 넘어져 있다.",
+    "(D) 잡지들이 바닥 여기저기에 흩어져 있다."
+   ],
+   "exp": "의자들이 벽을 따라 한 줄로 놓여 있으므로 (B)가 정답이다. 사람이 없으므로 (A)는 오답이고, 화분은 똑바로 서 있으며 잡지는 탁자 위에 쌓여 있으므로 (C)(D)도 틀리다.",
+   "trap": "상태 혼동"
+  },
+  {
+   "id": "p1-029",
+   "type": "scene",
+   "setting": "호텔 로비",
+   "lv": 3,
+   "scene": "호텔 로비 유리 출입문 근처에 여행 가방 세 개와 더플백이 실린 짐 카트가 대리석 바닥에 멈춰 서 있다. 옆의 가죽 소파는 비어 있고, 엘리베이터는 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A hotel lobby near the glass entrance doors. A brass luggage cart loaded with three suitcases and a duffel bag stands parked and still on the marble floor. A leather sofa nearby is completely empty, with no bags on it. There is no elevator in view. Warm interior lighting and potted palms. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "cart loaded with suitcases, standing still",
+    "empty sofa"
+   ],
+   "must_not": [
+    "motion blur or any sign the cart is moving",
+    "an elevator",
+    "bags on the sofa"
+   ],
+   "o": [
+    "Some suitcases have been loaded onto a cart.",
+    "Some luggage is being wheeled through a lobby.",
+    "A cart has been parked next to an elevator.",
+    "Some bags have been piled on a sofa."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 여행 가방들이 카트에 실려 있다.",
+    "(B) 짐이 로비를 지나 운반되고 있는 중이다.",
+    "(C) 카트가 엘리베이터 옆에 세워져 있다.",
+    "(D) 가방들이 소파 위에 쌓여 있다."
+   ],
+   "exp": "여행 가방들이 카트에 실려 있으므로 (A)가 정답이다. 카트가 있지만 미는 사람이 없어 운반되는 중(is being wheeled)이 아니므로 (B)는 오답이다. 카트는 출입문 근처에 있고 엘리베이터는 보이지 않으며, 소파는 비어 있으므로 (C)(D)도 틀리다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-030",
+   "type": "scene",
+   "setting": "호텔 로비",
+   "lv": 1,
+   "scene": "호텔 로비의 아늑한 휴게 공간이다. 쿠션 세 개가 놓인 베이지색 소파 앞에 낮은 나무 탁자가 있고, 탁자 가운데에 흰 꽃이 꽂힌 유리 꽃병이 있다. 무늬 있는 러그가 탁자 아래에 평평하게 깔려 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A cozy seating area in a hotel lobby. A beige sofa with three neatly arranged cushions resting against its back faces a low wooden coffee table. In the center of the table stands a glass vase of fresh white flowers. A patterned rug lies completely flat under the table. There are no magazines on the sofa, and no cushions on the floor. Warm afternoon light. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "vase of flowers in the center of the table",
+    "rug lying flat",
+    "cushions on the sofa"
+   ],
+   "must_not": [
+    "cushions on the floor",
+    "a rolled or folded rug",
+    "magazines on the sofa"
+   ],
+   "o": [
+    "Some cushions are lying on the floor by the sofa.",
+    "A rug is being rolled up in the lobby.",
+    "A vase of flowers has been placed on a table.",
+    "Some magazines are spread out on the sofa."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 쿠션 몇 개가 소파 옆 바닥에 놓여 있다.",
+    "(B) 로비에서 러그를 말고 있는 중이다.",
+    "(C) 꽃병이 탁자 위에 놓여 있다.",
+    "(D) 소파 위에 잡지들이 펼쳐져 있다."
+   ],
+   "exp": "탁자 가운데에 꽃병이 놓여 있으므로 (C)가 정답이다. 쿠션은 소파 위에 있어 (A)는 오답이고, 러그는 평평하게 깔려 있고 사람도 없으므로 is being rolled up 의 (B)도 틀리다. 소파에 잡지는 없어 (D)도 오답이다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-031",
+   "type": "single",
+   "setting": "공사장",
+   "lv": 1,
+   "scene": "공사장 흙길에서 안전모를 쓴 남자가 벽돌을 실은 외바퀴 손수레를 두 손으로 밀고 간다. 사다리, 삽, 트럭은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A middle-aged man in an orange safety vest and a white hard hat on his head pushes a wheelbarrow full of red bricks forward along a dirt path at a construction site, both hands gripping the handles. The hard hat stays on his head. He is not holding a shovel. No ladders, no trucks or vehicles anywhere in the scene. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man pushing a wheelbarrow with both hands",
+    "hard hat worn on his head",
+    "dirt path at a construction site"
+   ],
+   "must_not": [
+    "no ladder",
+    "no shovel",
+    "no truck or vehicle",
+    "hard hat not in his hand"
+   ],
+   "o": [
+    "A worker is climbing a ladder against a wall.",
+    "A worker is taking off his hard hat by a fence.",
+    "A worker is pushing a wheelbarrow along a dirt path.",
+    "A worker is shoveling gravel into the back of a truck."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 한 작업자가 벽에 기대 놓은 사다리를 오르고 있다.",
+    "(B) 한 작업자가 울타리 옆에서 안전모를 벗고 있다.",
+    "(C) 한 작업자가 흙길을 따라 외바퀴 손수레를 밀고 있다.",
+    "(D) 한 작업자가 트럭 짐칸에 자갈을 삽으로 퍼 넣고 있다."
+   ],
+   "exp": "남자가 두 손으로 손수레 손잡이를 잡고 흙길을 따라 밀고 있으므로 (C)가 정답이다. 사진에 사다리와 트럭은 없고(A, D), 안전모는 머리에 쓰고 있으므로 벗는 동작(B)도 틀리다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-032",
+   "type": "scene",
+   "setting": "공사장",
+   "lv": 3,
+   "scene": "사람이 없는 공사장 바닥에 긴 회색 금속 파이프가 나무 받침 위에 가지런히 쌓여 있다. 뒤쪽 타워크레인은 멈춰 있고 갈고리에는 아무것도 매달려 있지 않다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An empty construction site on a quiet morning. In the foreground, a neat pile of long gray metal pipes lies stacked horizontally on wooden blocks on the dirt ground. In the background, a tall tower crane stands still, its hook hanging empty with nothing attached. A partly built concrete building behind it. No trucks or vehicles, no wet concrete, no wooden molds. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "metal pipes stacked on the ground",
+    "crane hook hanging empty"
+   ],
+   "must_not": [
+    "no people",
+    "no truck",
+    "nothing hanging from the crane hook",
+    "no concrete being poured"
+   ],
+   "o": [
+    "Some metal pipes have been stacked on the ground.",
+    "Some metal pipes are being loaded onto a truck.",
+    "A crane is lifting a load above a building.",
+    "Some workers are pouring concrete into a wooden frame."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 금속 파이프 몇 개가 바닥에 쌓여 있다.",
+    "(B) 금속 파이프 몇 개가 트럭에 실리고 있다.",
+    "(C) 크레인이 건물 위로 짐을 들어 올리고 있다.",
+    "(D) 작업자 몇 명이 나무 틀에 콘크리트를 붓고 있다."
+   ],
+   "exp": "파이프가 이미 바닥에 쌓여 있는 상태이므로 현재완료 수동태인 (A)가 정답이다. (B)의 are being loaded는 지금 누군가 싣고 있다는 뜻이라 사람도 트럭도 없는 사진에서는 틀리다. 크레인 갈고리는 비어 있고(C) 작업자도 없다(D).",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-033",
+   "type": "multi",
+   "setting": "공사장",
+   "lv": 1,
+   "scene": "공사장에서 안전모를 쓴 두 작업자가 나란히 서서 커다란 설계 도면의 양끝을 하나씩 잡고 내려다보고 있다. 목재나 중장비는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Two construction workers, a Black woman and an older white man, both in hard hats and yellow safety vests, stand side by side at a construction site. Each holds one edge of a large unrolled blueprint sheet covered in blue line drawings, and both look down at it. They are not carrying any lumber. Their hands stay on the paper, not touching each other. No bulldozers or heavy vehicles anywhere. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two workers holding a large blueprint together",
+    "both looking down at the blueprint"
+   ],
+   "must_not": [
+    "no lumber or planks carried",
+    "no bulldozer or heavy vehicle",
+    "no handshake"
+   ],
+   "o": [
+    "Two workers are carrying a long wooden plank.",
+    "One of the workers is driving a small bulldozer.",
+    "The workers are shaking hands near a fence.",
+    "Two workers are examining a large sheet of plans."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 두 작업자가 긴 나무 판자를 나르고 있다.",
+    "(B) 작업자 중 한 명이 소형 불도저를 운전하고 있다.",
+    "(C) 작업자들이 울타리 근처에서 악수를 하고 있다.",
+    "(D) 두 작업자가 커다란 도면을 살펴보고 있다."
+   ],
+   "exp": "두 사람이 도면 양끝을 잡고 함께 내려다보고 있으므로 (D)가 정답이다. 두 사람이 함께 무언가를 들고 있다는 점 때문에 (A)를 고르기 쉽지만 들고 있는 것은 판자가 아니라 종이 도면이다. 불도저(B)나 악수하는 모습(C)은 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-034",
+   "type": "single",
+   "setting": "공사장",
+   "lv": 2,
+   "scene": "젊은 남자가 반쯤 쌓은 낮은 벽돌담 옆에 한쪽 무릎을 꿇고 앉아, 오른손으로 벽돌을 올리고 왼손에는 흙손을 들고 있다. 사다리, 빗자루, 수건은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Outdoors at a construction site, a young Hispanic man in a gray T-shirt, work gloves and a hard hat kneels on one knee beside a half-built low brick wall. He places a red brick on top of the wall with his right hand and holds a trowel in his left hand. There is no ladder in the scene and no broom. He is not holding a towel, and nothing touches his face. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man kneeling on one knee",
+    "placing a brick on a low wall",
+    "trowel in his other hand"
+   ],
+   "must_not": [
+    "no ladder",
+    "no broom",
+    "no towel near his face"
+   ],
+   "o": [
+    "A man is sweeping dust off the sidewalk.",
+    "A man is laying bricks while kneeling on the ground.",
+    "A man is standing on a ladder by the wall.",
+    "A man is wiping his face with a towel."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 한 남자가 인도의 먼지를 쓸고 있다.",
+    "(B) 한 남자가 바닥에 무릎을 꿇은 채 벽돌을 쌓고 있다.",
+    "(C) 한 남자가 벽 옆의 사다리 위에 서 있다.",
+    "(D) 한 남자가 수건으로 얼굴을 닦고 있다."
+   ],
+   "exp": "남자가 무릎을 꿇고 담 위에 벽돌을 올리고 있으므로 (B)가 정답이다. (C)는 사진 속 벽(wall)을 이용한 함정이지만 사다리는 없고 남자는 무릎을 꿇고 있다. 빗자루(A)와 수건(D)도 보이지 않는다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-035",
+   "type": "scene",
+   "setting": "공사장",
+   "lv": 2,
+   "scene": "공사장 옆 인도 가장자리에 주황색 교통 콘 여러 개가 일정한 간격으로 한 줄로 세워져 있다. 뒤쪽 임시 철제 울타리는 이미 다 설치되어 있고 사람과 차량은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A city sidewalk beside a construction site. Several orange traffic cones stand upright in a straight row, evenly spaced along the edge of the sidewalk. None of the cones is stacked on another. Behind them is a finished temporary metal fence with every panel already in place, and no tools or loose fence panels nearby. No trucks or vehicles. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "several cones standing upright in a straight row",
+    "fence fully installed"
+   ],
+   "must_not": [
+    "no people",
+    "no stacked cones",
+    "no truck",
+    "no loose fence panels or tools"
+   ],
+   "o": [
+    "A fence is being put up along the sidewalk.",
+    "Some traffic cones have been placed in a row.",
+    "Some traffic cones are piled up next to a truck.",
+    "A worker is directing traffic on the street."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 인도를 따라 울타리가 설치되고 있다.",
+    "(B) 교통 콘 몇 개가 한 줄로 놓여 있다.",
+    "(C) 교통 콘 몇 개가 트럭 옆에 쌓여 있다.",
+    "(D) 한 작업자가 길에서 교통정리를 하고 있다."
+   ],
+   "exp": "교통 콘이 일렬로 놓여 있는 상태이므로 (B)가 정답이다. 울타리는 이미 완성되어 있고 설치하는 사람도 없으므로 is being put up을 쓴 (A)는 틀리다. 콘은 겹쳐 쌓여 있지 않고 트럭도 없으며(C), 사람이 없으므로 (D)도 오답이다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-036",
+   "type": "single",
+   "setting": "공장·창고",
+   "lv": 1,
+   "scene": "높은 선반이 늘어선 창고 통로에서 안전조끼를 입은 중년 여성이 노란 지게차 운전석에 앉아 두 손으로 핸들을 잡고 운전하고 있다. 클립보드, 계단, 빗자루는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a large warehouse with tall metal shelving racks. A middle-aged East Asian woman in a high-visibility vest and a hard hat sits in the driver's seat of a yellow forklift, both hands on the steering wheel, driving it down the aisle. The forks carry one wooden pallet of brown boxes. She is not holding a pen or a clipboard. No staircase is visible, and there are no brooms. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman seated in a forklift",
+    "both hands on the steering wheel"
+   ],
+   "must_not": [
+    "no clipboard or pen",
+    "no staircase",
+    "no broom"
+   ],
+   "o": [
+    "A woman is climbing up a metal staircase.",
+    "A woman is writing on a clipboard near some shelves.",
+    "A woman is sweeping the floor of a warehouse.",
+    "A woman is driving a forklift in a warehouse."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 한 여자가 금속 계단을 올라가고 있다.",
+    "(B) 한 여자가 선반 근처에서 클립보드에 뭔가를 적고 있다.",
+    "(C) 한 여자가 창고 바닥을 쓸고 있다.",
+    "(D) 한 여자가 창고에서 지게차를 운전하고 있다."
+   ],
+   "exp": "여자가 지게차 운전석에 앉아 핸들을 잡고 있으므로 (D)가 정답이다. (B)는 사진 속 선반을 이용했지만 여자는 클립보드를 들고 있지 않다. 계단(A)과 빗자루(C)는 사진에 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-037",
+   "type": "single",
+   "setting": "공장·창고",
+   "lv": 3,
+   "scene": "병 공장의 컨베이어 벨트 옆에서 보안경을 이미 쓴 남자가 유리병 하나를 눈높이로 들어 자세히 살펴보고 있다. 손은 안경에 닿아 있지 않고, 공구나 상자는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a clean bottling factory, a South Asian man in a white lab coat, blue gloves and clear safety glasses already on his face stands beside a moving conveyor belt lined with clear glass bottles. He holds one bottle up at eye level with both hands, looking closely at it. His hands are away from his glasses. No wrenches or tools in sight. No cardboard boxes anywhere. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man holding a bottle up and looking at it",
+    "safety glasses already on his face",
+    "conveyor belt with bottles"
+   ],
+   "must_not": [
+    "hands not touching his glasses",
+    "no wrench or tools",
+    "no cardboard boxes"
+   ],
+   "o": [
+    "A man is examining a bottle near a conveyor belt.",
+    "A man is putting on a pair of safety glasses.",
+    "A man is repairing a machine with a wrench.",
+    "A man is packing bottles into a cardboard box."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 한 남자가 컨베이어 벨트 근처에서 병을 살펴보고 있다.",
+    "(B) 한 남자가 보안경을 쓰는 중이다.",
+    "(C) 한 남자가 렌치로 기계를 고치고 있다.",
+    "(D) 한 남자가 병을 종이 상자에 포장하고 있다."
+   ],
+   "exp": "남자가 병을 눈높이로 들고 자세히 보고 있으므로 (A)가 정답이다. 보안경은 이미 쓰고 있는 상태(wearing)이며, 쓰는 동작(putting on)을 나타내는 (B)는 대표적인 함정이다. 렌치(C)와 종이 상자(D)는 보이지 않는다.",
+   "trap": "상태 혼동"
+  },
+  {
+   "id": "p1-038",
+   "type": "multi",
+   "setting": "공장·창고",
+   "lv": 1,
+   "scene": "창고 통로에서 두 작업자가 봉인된 큰 종이 상자의 양끝을 하나씩 허리 높이로 잡고 함께 걸으며 나르고 있다. 테이프, 손수레, 위로 뻗은 손은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a warehouse aisle with metal shelves on both sides. Two workers, a young Black man and a middle-aged white woman in gray work shirts and gloves, walk together, each holding one end of a large sealed cardboard box at waist height and carrying it between them. Their arms stay at waist level, not reaching toward the shelves. No tape dispensers. No hand trucks or carts anywhere. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two workers carrying one large box together",
+    "box held at waist height"
+   ],
+   "must_not": [
+    "no tape or tape dispenser",
+    "no hand truck or cart",
+    "no one reaching up to a shelf"
+   ],
+   "o": [
+    "Two people are taping a box closed on a table.",
+    "One of the people is pushing a hand truck.",
+    "Two people are carrying a large box together.",
+    "Two people are reaching for boxes on a high shelf."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 두 사람이 탁자 위에서 상자를 테이프로 봉하고 있다.",
+    "(B) 두 사람 중 한 명이 손수레를 밀고 있다.",
+    "(C) 두 사람이 큰 상자를 함께 나르고 있다.",
+    "(D) 두 사람이 높은 선반의 상자에 손을 뻗고 있다."
+   ],
+   "exp": "두 사람이 상자 양끝을 잡고 함께 옮기고 있으므로 (C)가 정답이다. 상자는 이미 봉해져 있어 테이프 작업(A)은 없고, 손수레(B)도 없다. 선반은 있지만 손을 위로 뻗고 있지 않으므로 (D)도 틀리다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-039",
+   "type": "scene",
+   "setting": "공장·창고",
+   "lv": 2,
+   "scene": "사람이 없는 창고 통로 양쪽 선반에 닫힌 종이 상자들이 가지런히 정리되어 있다. 통로 끝의 지게차는 포크를 바닥까지 내린 채 아무것도 싣지 않고 서 있고, 바닥에는 상자가 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An empty warehouse aisle. Tall metal shelves line both sides, and every shelf is neatly filled with closed brown cardboard boxes lined up in rows. At the end of the aisle, a yellow forklift is parked with its forks lowered flat to the floor, carrying nothing, its seat empty. The concrete floor is clean and clear, with no boxes on it. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "boxes neatly arranged on every shelf",
+    "parked forklift with empty lowered forks"
+   ],
+   "must_not": [
+    "no people",
+    "nothing on the forklift forks",
+    "no boxes on the floor",
+    "no empty shelves"
+   ],
+   "o": [
+    "Some boxes are being lifted by a forklift.",
+    "Some boxes have fallen and are scattered on the floor.",
+    "The shelves in the aisle are completely empty.",
+    "Some boxes have been arranged on metal shelves."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 상자 몇 개가 지게차로 들어 올려지고 있다.",
+    "(B) 상자 몇 개가 떨어져 바닥에 흩어져 있다.",
+    "(C) 통로의 선반들이 완전히 비어 있다.",
+    "(D) 상자 몇 개가 금속 선반에 정리되어 있다."
+   ],
+   "exp": "선반마다 상자가 정리되어 있으므로 (D)가 정답이다. 지게차는 있지만 포크가 비어 있고 운전자도 없으므로 is being lifted를 쓴 (A)는 틀리다. 바닥에는 상자가 없고(B) 선반은 가득 차 있다(C).",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-040",
+   "type": "single",
+   "setting": "작업장(목공·수리)",
+   "lv": 1,
+   "scene": "목공소 작업대 앞에서 회색 수염의 남자가 왼손으로 나무 판자를 잡고 오른손에 든 사포 블록으로 문지르고 있다. 톱, 페인트, 의자는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a small woodworking shop, an older white man with a gray beard, wearing a canvas apron, stands at a workbench. He rubs a flat wooden board with a sanding block in his right hand while his left hand holds the board steady. A little sawdust on the bench. There is no saw in his hands and no power saw. No paint cans or brushes. No chairs in the room. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man rubbing a board with a sanding block",
+    "other hand holding the board"
+   ],
+   "must_not": [
+    "no saw",
+    "no paint or brushes",
+    "no chair"
+   ],
+   "o": [
+    "A man is sanding a wooden board on a workbench.",
+    "A man is cutting a board with a saw.",
+    "A man is hanging some tools on a wall.",
+    "A man is painting a wooden chair in a workshop."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 한 남자가 작업대 위에서 나무 판자를 사포질하고 있다.",
+    "(B) 한 남자가 톱으로 판자를 자르고 있다.",
+    "(C) 한 남자가 벽에 공구를 걸고 있다.",
+    "(D) 한 남자가 작업장에서 나무 의자에 페인트를 칠하고 있다."
+   ],
+   "exp": "남자가 사포 블록으로 판자를 문지르고 있으므로 (A)가 정답이다. 판자를 다루고 있지만 톱질(B)은 아니며, 두 손이 모두 판자 위에 있어 공구를 거는 동작(C)도 아니다. 페인트와 의자(D)는 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-041",
+   "type": "single",
+   "setting": "작업장(목공·수리)",
+   "lv": 2,
+   "scene": "자전거 수리점 한가운데 수리용 거치대에 자전거가 바닥에서 떠 있게 고정되어 있다. 앞치마를 두른 젊은 여성이 한 손으로 앞바퀴를 잡고 다른 손의 작은 렌치로 바퀴 중심부를 조이고 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a bicycle repair workshop, a bicycle is clamped in a metal repair stand in the middle of the room, its wheels off the floor and not touching any wall. A young woman with curly hair, wearing a dark work apron, stands beside it, holding the front wheel with one hand and turning a small wrench on the wheel hub with the other. No air pump anywhere. No one is sitting on the bicycle. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "bicycle held in a repair stand",
+    "woman's hands on the front wheel with a wrench"
+   ],
+   "must_not": [
+    "no air pump",
+    "bicycle not leaning against a wall",
+    "no one riding or sitting on the bicycle"
+   ],
+   "o": [
+    "A woman is riding a bicycle out of a shop.",
+    "A woman is pumping air into a tire.",
+    "A woman is repairing the wheel of a bicycle.",
+    "A woman is leaning a bicycle against a wall."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 한 여자가 자전거를 타고 가게를 나가고 있다.",
+    "(B) 한 여자가 타이어에 바람을 넣고 있다.",
+    "(C) 한 여자가 자전거 바퀴를 수리하고 있다.",
+    "(D) 한 여자가 자전거를 벽에 기대 놓고 있다."
+   ],
+   "exp": "여자가 거치대에 고정된 자전거의 앞바퀴를 렌치로 손보고 있으므로 (C)가 정답이다. 바퀴를 만지고 있어 (B)를 고르기 쉽지만 공기 펌프는 없다. 자전거는 거치대에 걸려 있어 벽에 기대 있지 않고(D) 타고 있는 사람도 없다(A).",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-042",
+   "type": "multi",
+   "setting": "작업장(목공·수리)",
+   "lv": 3,
+   "scene": "목공소 긴 작업대 위에 소나무 판자 하나가 놓여 있다. 젊은 남자는 두 손으로 줄자를 판자 위로 펴서 길이를 재고, 옆의 여자는 팔짱을 낀 채 지켜보고 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a bright carpentry workshop, two workers stand at a long workbench with a single pine board lying on it. A young Asian man in a plaid shirt stretches a yellow tape measure along the board with both hands. A middle-aged Black woman in overalls stands beside him with her arms folded, watching. She is not holding any tool. No drills anywhere. No boards are leaning against the walls. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man measuring the board with a tape measure",
+    "woman standing with arms folded"
+   ],
+   "must_not": [
+    "woman not holding a tape measure or tool",
+    "no drill",
+    "no boards leaning against the wall"
+   ],
+   "o": [
+    "Both of the workers are measuring the same board.",
+    "One of the workers is measuring a wooden board.",
+    "One of the workers is drilling a hole in the board.",
+    "The workers are stacking boards against the wall."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 두 작업자 모두 같은 판자의 길이를 재고 있다.",
+    "(B) 작업자 중 한 명이 나무 판자의 길이를 재고 있다.",
+    "(C) 작업자 중 한 명이 판자에 드릴로 구멍을 뚫고 있다.",
+    "(D) 작업자들이 판자를 벽에 기대어 쌓고 있다."
+   ],
+   "exp": "남자 한 명만 줄자로 판자를 재고 있으므로 (B)가 정답이다. 여자는 팔짱을 끼고 지켜보기만 하므로 주어를 Both로 바꾼 (A)는 틀리다. 드릴(C)은 없고, 판자는 작업대 위에 하나만 놓여 있다(D).",
+   "trap": "주어 혼동"
+  },
+  {
+   "id": "p1-043",
+   "type": "scene",
+   "setting": "작업장(목공·수리)",
+   "lv": 2,
+   "scene": "사람이 없는 수리 작업장 벽의 타공판에 망치, 렌치, 펜치, 드라이버가 고리에 가지런히 걸려 있다. 아래 작업대는 깨끗이 비어 있고 서랍은 모두 닫혀 있으며 바닥에는 아무것도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A tidy corner of a repair workshop. On the wall, a pegboard holds hammers, wrenches, pliers and screwdrivers hanging neatly from hooks. Below it, a wooden workbench has a completely clean, empty surface with no sawdust and no scraps. All of the workbench drawers are closed. There is no toolbox on the floor; the floor is bare and swept. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "tools hanging on a wall pegboard",
+    "clean, empty workbench surface"
+   ],
+   "must_not": [
+    "no people",
+    "no open drawers",
+    "no toolbox on the floor",
+    "no sawdust or scraps on the bench"
+   ],
+   "o": [
+    "Some tools are hanging on a board above a workbench.",
+    "Some tools are being put away in a drawer.",
+    "A toolbox has been left open on the floor.",
+    "The workbench is covered with sawdust and scraps."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 작업대 위쪽 판에 공구 몇 개가 걸려 있다.",
+    "(B) 공구 몇 개가 서랍에 정리되어 넣어지고 있다.",
+    "(C) 공구함 하나가 바닥에 열린 채로 놓여 있다.",
+    "(D) 작업대가 톱밥과 나무 조각으로 덮여 있다."
+   ],
+   "exp": "벽의 타공판에 공구가 걸려 있으므로 (A)가 정답이다. 사람이 없고 서랍도 모두 닫혀 있으므로 is being put away를 쓴 (B)는 틀리다. 바닥에 공구함은 없고(C) 작업대 위는 깨끗하다(D).",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-044",
+   "type": "single",
+   "setting": "주차장",
+   "lv": 1,
+   "scene": "야외 주차장에서 중년 여성이 은색 승용차의 열린 트렁크 앞에 서서 두 손으로 종이 장바구니를 들어 트렁크에 넣고 있다. 차 문은 모두 닫혀 있고 쇼핑 카트는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An outdoor parking lot on a sunny afternoon. A middle-aged Latina woman in a light jacket stands at the open trunk of a silver sedan, lifting a paper grocery bag with both hands and placing it into the trunk. All of the car doors are closed. No shopping carts anywhere. She is not holding a cloth, sponge or hose. Other parked cars in the background, with no other people anywhere. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman placing a bag into an open car trunk",
+    "car doors closed"
+   ],
+   "must_not": [
+    "no open car door",
+    "no shopping cart",
+    "no cloth, sponge or hose",
+    "no other people in the scene"
+   ],
+   "o": [
+    "A woman is getting into the driver's seat.",
+    "A woman is pushing a shopping cart across the lot.",
+    "A woman is putting a bag into the trunk of a car.",
+    "A woman is washing the windows of a car."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 한 여자가 운전석에 타고 있다.",
+    "(B) 한 여자가 주차장을 가로질러 쇼핑 카트를 밀고 있다.",
+    "(C) 한 여자가 자동차 트렁크에 가방을 넣고 있다.",
+    "(D) 한 여자가 자동차 창문을 닦고 있다."
+   ],
+   "exp": "여자가 열린 트렁크에 장바구니를 넣고 있으므로 (C)가 정답이다. 차 문은 닫혀 있어 운전석에 타는 동작(A)이 아니고, 쇼핑 카트(B)나 세차 도구(D)도 보이지 않는다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-045",
+   "type": "multi",
+   "setting": "주차장",
+   "lv": 2,
+   "scene": "실내 주차장의 파란 승용차 옆에 정장 차림의 나이 든 남자와 재킷을 입은 젊은 여자가 마주 보고 서서 이야기하고 있다. 둘 다 차에 손대지 않고 열쇠도 들고 있지 않다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An indoor parking garage with concrete pillars and rows of parked cars. Two coworkers, an older Black man in a suit and a young white woman in a blazer, stand still facing each other beside a parked dark blue sedan, talking; she gestures with one open hand. Neither touches the car, and no one holds keys. No one is walking, and no other people are in view. No vans, no boxes, and no elevator in view. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two people standing face to face talking",
+    "parked car beside them"
+   ],
+   "must_not": [
+    "no hand on a car door and no keys",
+    "no boxes or van",
+    "no elevator and no one walking"
+   ],
+   "o": [
+    "Two people are loading some boxes into a van.",
+    "One of the people is unlocking a car door.",
+    "Two people are walking toward an elevator in the garage.",
+    "Two people are having a conversation beside a parked car."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 두 사람이 승합차에 상자를 싣고 있다.",
+    "(B) 두 사람 중 한 명이 차 문을 열쇠로 열고 있다.",
+    "(C) 두 사람이 주차장 안의 엘리베이터 쪽으로 걸어가고 있다.",
+    "(D) 두 사람이 주차된 차 옆에서 대화를 나누고 있다."
+   ],
+   "exp": "두 사람이 차 옆에 마주 서서 이야기하고 있으므로 (D)가 정답이다. 차 바로 옆에 있지만 아무도 차 문을 만지거나 열쇠를 들고 있지 않아 (B)는 틀리다. 상자와 승합차(A), 엘리베이터(C)는 보이지 않는다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-046",
+   "type": "scene",
+   "setting": "주차장",
+   "lv": 2,
+   "scene": "맑은 여름날 사람이 없는 야외 주차장에 여러 색의 승용차 여섯 대가 한 줄로 나란히 주차되어 있다. 줄 끝 두 칸은 비어 있고, 모든 차는 주차선 안에 반듯하게 서 있으며 바닥은 마른 아스팔트다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An outdoor parking lot on a clear summer day. Six cars of different colors are parked side by side in one row of marked spaces, all facing the same direction, each car neatly centered inside its own space between the painted lines. Two empty parking spaces at the end of the row are clearly unoccupied. Dry gray asphalt, no snow, no puddles. All cars are stationary. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "cars parked side by side in one row",
+    "two empty spaces at the end",
+    "each car inside its own space"
+   ],
+   "must_not": [
+    "no people",
+    "no car straddling two spaces",
+    "no snow",
+    "not every space filled"
+   ],
+   "o": [
+    "A car is parked across two parking spaces.",
+    "Several cars have been parked side by side in a lot.",
+    "Every parking space in the lot is occupied.",
+    "The pavement in the lot is covered with snow."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 차 한 대가 주차 공간 두 칸에 걸쳐 주차되어 있다.",
+    "(B) 주차장에 여러 대의 차가 나란히 주차되어 있다.",
+    "(C) 주차장의 모든 주차 공간이 차 있다.",
+    "(D) 주차장 바닥이 눈으로 덮여 있다."
+   ],
+   "exp": "여러 대의 차가 한 줄로 나란히 주차되어 있으므로 (B)가 정답이다. 모든 차가 각자 한 칸 안에 주차되어 있어 (A)는 틀리고, 줄 끝에 빈칸이 두 개 있으므로 (C)도 틀리다. 바닥은 마른 아스팔트이며 눈은 없다(D).",
+   "trap": "상태 혼동"
+  },
+  {
+   "id": "p1-047",
+   "type": "scene",
+   "setting": "주차장",
+   "lv": 2,
+   "scene": "사람이 없는 주차장 한쪽 벽돌 벽 옆 거치대에 자전거 여러 대가 앞바퀴를 꽂은 채 나란히 세워져 있다. 넘어진 자전거나 벽에 걸린 자전거는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A corner of a parking lot beside a plain brick wall. Several bicycles stand upright in a metal bike rack, front wheels slotted into the rack, parked side by side. No bicycle is lying on the ground. No bicycles hang from hooks, and the wall above them is bare. A few parked cars in the background, empty. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "several bicycles standing upright in a rack",
+    "bare brick wall"
+   ],
+   "must_not": [
+    "no people or riders",
+    "no bicycle lying on the ground",
+    "no bicycles hanging on hooks"
+   ],
+   "o": [
+    "Some bicycles are being ridden through a parking lot.",
+    "A bicycle is lying on its side on the ground.",
+    "Some bicycles are hanging from hooks on the wall.",
+    "Some bicycles are parked in a rack near a wall."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 자전거 몇 대가 주차장을 지나 달리고 있다.",
+    "(B) 자전거 한 대가 땅에 옆으로 쓰러져 있다.",
+    "(C) 자전거 몇 대가 벽의 고리에 걸려 있다.",
+    "(D) 벽 근처 거치대에 자전거 몇 대가 세워져 있다."
+   ],
+   "exp": "자전거가 벽 옆 거치대에 세워져 있으므로 (D)가 정답이다. 사람이 없으므로 누군가 타고 있다는 뜻의 are being ridden을 쓴 (A)는 틀리다. 쓰러진 자전거(B)나 벽에 걸린 자전거(C)는 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-048",
+   "type": "single",
+   "setting": "부두·항구",
+   "lv": 2,
+   "scene": "작은 항구의 나무 부두에서 남자가 두 발을 부두에 딛고 쪼그려 앉아 굵은 밧줄을 쇠 계류 기둥에 감아 묶고 있다. 밧줄은 옆에 떠 있는 빈 소형 어선으로 이어진다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A wooden dock in a small harbor on an overcast morning. A weathered middle-aged man in a navy jacket and rubber boots crouches on the dock, both hands wrapping a thick rope around a short iron mooring post. The rope runs to a small white fishing boat floating beside the dock, with no one aboard. Both of his feet are firmly on the dock. He holds no fishing rod. No oars anywhere. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man wrapping a rope around a mooring post",
+    "both feet on the dock",
+    "empty boat beside the dock"
+   ],
+   "must_not": [
+    "no fishing rod",
+    "man not stepping onto the boat",
+    "no oars or rowing"
+   ],
+   "o": [
+    "A man is tying a rope to a post on the dock.",
+    "A man is fishing from the edge of a pier.",
+    "A man is rowing a small boat across the harbor.",
+    "A man is stepping onto a boat from the dock."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 한 남자가 부두의 기둥에 밧줄을 묶고 있다.",
+    "(B) 한 남자가 부두 끝에서 낚시를 하고 있다.",
+    "(C) 한 남자가 작은 배를 저어 항구를 건너고 있다.",
+    "(D) 한 남자가 부두에서 배로 올라타고 있다."
+   ],
+   "exp": "남자가 부두의 계류 기둥에 밧줄을 감아 묶고 있으므로 (A)가 정답이다. 배가 바로 옆에 있지만 남자는 두 발을 부두에 딛고 있어 배에 오르는 (D)는 틀리다. 낚싯대(B)와 노(C)는 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-049",
+   "type": "single",
+   "setting": "부두·항구",
+   "lv": 1,
+   "scene": "항구 산책로에서 베이지색 코트를 입은 젊은 여성이 금속 난간에 두 팔을 걸치고 기대어 정박한 요트들을 바라보고 있다. 손에는 아무것도 없고 짐가방이나 벤치는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A seaside harbor promenade on a mild day. A young South Asian woman in a beige coat stands with her forearms resting on a metal railing, leaning against it and looking out at sailboats moored in the water. Her hands are empty, with no phone or camera. No suitcase or luggage. No benches nearby; she is standing, not sitting. No ferries at the pier. She is the only person in view. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman leaning her forearms on a railing",
+    "boats in the water beyond"
+   ],
+   "must_not": [
+    "no phone or camera in her hands",
+    "no suitcase",
+    "no bench and not sitting",
+    "no other people in view"
+   ],
+   "o": [
+    "A woman is boarding a ferry with a suitcase.",
+    "A woman is leaning against a railing by the water.",
+    "A woman is taking a photo of some boats.",
+    "A woman is sitting on a bench facing the harbor."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 한 여자가 여행 가방을 들고 여객선에 타고 있다.",
+    "(B) 한 여자가 물가의 난간에 기대어 있다.",
+    "(C) 한 여자가 배 몇 척의 사진을 찍고 있다.",
+    "(D) 한 여자가 항구를 향한 벤치에 앉아 있다."
+   ],
+   "exp": "여자가 난간에 팔을 걸치고 기대어 있으므로 (B)가 정답이다. 배를 바라보고 있지만 손에 카메라나 휴대폰이 없어 (C)는 틀리다. 여자는 서 있으며 벤치(D)나 여행 가방(A)은 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-050",
+   "type": "multi",
+   "setting": "부두·항구",
+   "lv": 2,
+   "scene": "항구 근처 바다 위 작은 파란 어선 갑판 가장자리에서 노란 방수복을 입은 어부 두 명이 나란히 서서 젖은 초록색 그물을 두 손으로 잡고 물에서 끌어올리고 있다. 조타실에는 아무도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. On the deck of a small blue fishing boat at sea near a harbor. Two fishermen in yellow waterproof overalls, one young and one older with a gray beard, stand side by side at the edge of the deck. Both grip a wet green fishing net with both hands, pulling it up out of the water. No one is in the cabin or at the steering wheel. No paint cans or brushes. No market stalls. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two fishermen pulling a net out of the water",
+    "both at the edge of the deck"
+   ],
+   "must_not": [
+    "no one at the steering wheel",
+    "no paint or brushes",
+    "no market stall"
+   ],
+   "o": [
+    "Some fishermen are selling fish at a market stall.",
+    "Some fishermen are painting the side of a boat.",
+    "Two fishermen are pulling a net out of the water.",
+    "One of the fishermen is steering the boat from a cabin."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 어부 몇 명이 시장 좌판에서 생선을 팔고 있다.",
+    "(B) 어부 몇 명이 배의 옆면을 페인트칠하고 있다.",
+    "(C) 어부 두 명이 물에서 그물을 끌어올리고 있다.",
+    "(D) 어부 중 한 명이 조타실에서 배를 조종하고 있다."
+   ],
+   "exp": "두 어부가 함께 그물을 물 밖으로 끌어올리고 있으므로 (C)가 정답이다. 두 사람 모두 갑판 가장자리에 있고 조타실은 비어 있어 (D)는 틀리다. 시장 좌판(A)이나 페인트칠(B)도 보이지 않는다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-051",
+   "type": "multi",
+   "setting": "부두·항구",
+   "lv": 3,
+   "scene": "맑은 날 여객선 터미널에 큰 흰색 여객선이 부두에 단단히 붙어 정박해 있고 승선 경사로가 내려져 있다. 배낭과 여행 가방을 든 승객들이 줄지어 경사로를 걸어 올라 배에 타고 있다. 위층 갑판은 비어 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A ferry terminal on a sunny day. A large white ferry is docked firmly against the pier with its loading ramp lowered onto the pier. A line of passengers of different ages, some with backpacks and rolling bags, walks up the ramp onto the ferry. The ferry's upper deck is empty, with no seated passengers. The water is calm, with no wake behind the ferry, and no one is in the water. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "passengers walking up a ramp onto a ferry",
+    "ferry docked with ramp lowered"
+   ],
+   "must_not": [
+    "no gap between ferry and pier, no wake",
+    "no seated passengers on the upper deck",
+    "no one in the water"
+   ],
+   "o": [
+    "Some passengers are walking up a ramp onto a ferry.",
+    "A ferry is pulling away from the dock.",
+    "Some passengers are seated on the upper deck.",
+    "Some people are swimming in the water near the pier."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 승객 몇 명이 경사로를 걸어 올라 여객선에 타고 있다.",
+    "(B) 여객선 한 척이 부두에서 떠나고 있다.",
+    "(C) 승객 몇 명이 위층 갑판에 앉아 있다.",
+    "(D) 사람 몇 명이 부두 근처 물에서 수영하고 있다."
+   ],
+   "exp": "승객들이 내려진 경사로를 걸어 배에 오르고 있으므로 (A)가 정답이다. 배는 경사로를 내린 채 부두에 붙어 있으므로 떠나는 중이라는 (B)는 상태를 잘못 묘사했다. 위층 갑판은 비어 있고(C) 물속에 사람도 없다(D).",
+   "trap": "상태 혼동"
+  },
+  {
+   "id": "p1-052",
+   "type": "scene",
+   "setting": "부두·항구",
+   "lv": 3,
+   "scene": "이른 아침 사람이 없는 컨테이너 항구에 여러 색의 컨테이너가 3~4단으로 쌓여 있다. 대형 화물선은 굵은 밧줄로 부두에 묶여 정박해 있고, 위의 갠트리 크레인은 아무것도 매달지 않은 채 멈춰 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A container port in the early morning. Rows of colorful steel shipping containers are stacked three and four high on the paved dock. A large cargo ship is moored alongside the quay, tied with thick ropes and not moving, with no wake in the water. A gantry crane above stands motionless, its lifting arm empty with no container hanging from it. No small boats and no wooden piers. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "containers stacked several high on the dock",
+    "crane with nothing hanging from it",
+    "ship tied to the quay"
+   ],
+   "must_not": [
+    "no people",
+    "no container hanging from the crane",
+    "no wake behind the ship",
+    "no small boats or wooden pier"
+   ],
+   "o": [
+    "Some containers are being lifted onto a ship.",
+    "A cargo ship is sailing out of the harbor.",
+    "Some boats are tied up along a wooden pier.",
+    "Some shipping containers have been stacked at a port."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 컨테이너 몇 개가 배 위로 들어 올려지고 있다.",
+    "(B) 화물선 한 척이 항구를 빠져나가고 있다.",
+    "(C) 배 몇 척이 나무 부두를 따라 묶여 있다.",
+    "(D) 항구에 선적용 컨테이너 몇 개가 쌓여 있다."
+   ],
+   "exp": "컨테이너가 부두에 여러 단으로 쌓여 있는 상태이므로 (D)가 정답이다. 크레인에는 아무것도 매달려 있지 않으므로 is being lifted를 쓴 (A)는 틀리다. 화물선은 밧줄로 묶여 정박해 있으므로 출항 중이라는 (B)도 오답이고, 나무 부두와 작은 배(C)는 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-053",
+   "type": "single",
+   "setting": "정비소",
+   "lv": 1,
+   "scene": "정비소 안에서 파란 작업복을 입은 정비사가 보닛이 열린 빨간 차 앞에 서서 엔진 위로 몸을 숙이고 오른손에 렌치를 들고 있다. 바닥의 타이어나 세면대는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a car repair garage. A middle-aged Black mechanic in blue coveralls stands at the front of a red car with its hood raised, bending forward over the engine and holding a wrench in his right hand. He is on his feet, not lying under the car. No loose tires on the floor near him. No sink anywhere in view. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "mechanic bending over an open engine",
+    "car hood raised"
+   ],
+   "must_not": [
+    "mechanic not lying under the car",
+    "no loose tire on the floor",
+    "no sink"
+   ],
+   "o": [
+    "A mechanic is rolling a tire across the floor.",
+    "A mechanic is washing his hands at a sink.",
+    "A mechanic is leaning over the engine of a car.",
+    "A mechanic is lying on his back under a car."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 정비사가 바닥에서 타이어를 굴리고 있다.",
+    "(B) 정비사가 세면대에서 손을 씻고 있다.",
+    "(C) 정비사가 차 엔진 위로 몸을 숙이고 있다.",
+    "(D) 정비사가 차 밑에 등을 대고 누워 있다."
+   ],
+   "exp": "정비사가 보닛을 연 차의 엔진 위로 몸을 숙이고 있으므로 (C)가 정답이다. 차를 정비하는 장면이지만 차 밑에 누워 있지 않으므로 (D)는 틀리다. 굴러가는 타이어(A)와 세면대(B)는 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-054",
+   "type": "single",
+   "setting": "정비소",
+   "lv": 3,
+   "scene": "밝은 정비소에서 흰색 승용차가 리프트에 높이 들려 있다. 회색 작업복을 입은 젊은 여성 정비사가 차 바로 아래에 똑바로 서서 손전등을 들고 차 밑면을 올려다보고 있다. 바퀴는 모두 달려 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a bright auto repair shop. A white sedan is raised high on a hydraulic lift, about two meters above the floor. A young East Asian female mechanic in gray coveralls stands upright directly under the car, looking up at its underside and holding a flashlight. All four wheels are attached to the car, and there are no loose tires anywhere. No one sits inside any car, and no other vehicles are present. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "car raised high on a lift",
+    "mechanic standing upright beneath it",
+    "all four wheels attached"
+   ],
+   "must_not": [
+    "mechanic not lying down",
+    "no loose tires",
+    "no one in a car, no moving vehicles"
+   ],
+   "o": [
+    "A mechanic is lying on a creeper under a car.",
+    "A mechanic is standing beneath a car on a lift.",
+    "A car is being driven out of the garage.",
+    "A mechanic is changing a tire beside a car."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 정비사가 차 밑에서 정비용 눕는 판에 누워 있다.",
+    "(B) 정비사가 리프트에 올려진 차 아래에 서 있다.",
+    "(C) 누군가 차 한 대를 몰고 정비소 밖으로 나가고 있다.",
+    "(D) 정비사가 차 옆에서 타이어를 교체하고 있다."
+   ],
+   "exp": "차가 리프트에 들려 있고 정비사가 그 아래에 서서 올려다보고 있으므로 (B)가 정답이다. 차 밑에 있다는 위치는 같지만 누워 있지 않으므로 (A)는 틀리다. 차는 리프트 위에 떠 있어 운전되는 중일 수 없고(C), 바퀴가 모두 달려 있어 타이어 교체(D)도 아니다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-055",
+   "type": "multi",
+   "setting": "정비소",
+   "lv": 2,
+   "scene": "정비소 입구 앞에서 백발의 남자 정비사가 파란 SUV 앞바퀴 옆에 쪼그려 앉아 손가락으로 타이어를 가리키고, 옆에 선 젊은 남자 고객이 그것을 내려다보고 있다. 공기 주입기나 계산대는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In front of an open auto repair garage bay. A gray-haired male mechanic in navy coveralls crouches beside the front wheel of a parked blue SUV, pointing at the tire with one finger, while a young male customer in a sweater stands next to him looking down at it. Neither of them pushes or touches the car body. No air pump or hose. No counter or cash register in view. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "mechanic pointing at a tire",
+    "customer looking at the tire"
+   ],
+   "must_not": [
+    "no one pushing the car",
+    "no air pump or hose",
+    "no counter or payment"
+   ],
+   "o": [
+    "A mechanic is pointing at a car tire for a customer.",
+    "A customer is paying for repairs at a counter.",
+    "The two men are pushing a car into the garage.",
+    "A mechanic is pumping air into a flat tire."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 정비사가 고객에게 자동차 타이어를 가리키고 있다.",
+    "(B) 고객이 계산대에서 수리비를 지불하고 있다.",
+    "(C) 두 남자가 차를 정비소 안으로 밀고 있다.",
+    "(D) 정비사가 바람 빠진 타이어에 공기를 넣고 있다."
+   ],
+   "exp": "정비사가 손가락으로 타이어를 가리키며 고객에게 보여 주고 있으므로 (A)가 정답이다. 타이어 옆에 있다는 점에서 (D)를 고르기 쉽지만 공기 주입 장비는 없다. 계산대(B)는 보이지 않고, 두 사람 모두 차를 밀고 있지 않다(C).",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-056",
+   "type": "scene",
+   "setting": "정비소",
+   "lv": 2,
+   "scene": "사람이 없는 조용한 정비소 뒷벽에 검은 타이어들이 네 개씩 가지런히 쌓여 있다. 옆의 2주식 리프트는 팔이 바닥까지 내려간 채 비어 있고, 바닥에는 공구가 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A quiet auto repair shop. Against the back wall, several black tires are piled in neat stacks of four, standing still. Next to them is an empty two-post car lift with its arms lowered to the floor and no car on it. The concrete floor is clean, with no tools lying on it. No vehicles inside the shop. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "tires stacked against the back wall",
+    "empty car lift with no car"
+   ],
+   "must_not": [
+    "no people",
+    "no tire rolling or lying loose",
+    "no car on the lift",
+    "no tools on the floor"
+   ],
+   "o": [
+    "Some tires are being rolled across the floor.",
+    "Some tires have been stacked against a wall.",
+    "A car has been raised high on a lift.",
+    "Some tools have been left scattered on the floor."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 타이어 몇 개가 바닥을 가로질러 굴려지고 있다.",
+    "(B) 타이어 몇 개가 벽에 기대어 쌓여 있다.",
+    "(C) 차 한 대가 리프트에 높이 올려져 있다.",
+    "(D) 공구 몇 개가 바닥에 흩어진 채 놓여 있다."
+   ],
+   "exp": "타이어가 벽에 붙어 쌓여 있으므로 (B)가 정답이다. 사람이 없어 타이어를 굴리는 사람도 없으므로 are being rolled를 쓴 (A)는 틀리다. 리프트는 있지만 차가 없고(C), 바닥에 공구도 없다(D).",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-057",
+   "type": "single",
+   "setting": "물류 하역장",
+   "lv": 2,
+   "scene": "창고 뒤 하역장에서 젊은 남자가 상자 세 개를 실은 두 바퀴 손수레를 뒤로 기울여 콘크리트 바닥 위로 밀고 간다. 뒤에 서 있는 배송 트럭의 뒷문은 활짝 열려 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. At a loading dock behind a warehouse. A young bearded man in a gray hoodie and work gloves tilts back a two-wheeled hand truck stacked with three cardboard boxes and pushes it across the concrete dock. Behind him, the rear doors of a parked delivery truck are wide open, and he is several steps away from them. He holds no scanner or phone. No shelves nearby. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man pushing a hand truck loaded with boxes",
+    "truck rear doors wide open"
+   ],
+   "must_not": [
+    "man not touching the truck doors",
+    "no scanner or phone",
+    "no shelves"
+   ],
+   "o": [
+    "A man is closing the rear doors of a truck.",
+    "A man is lifting a box onto a high shelf.",
+    "A man is scanning a package with a handheld device.",
+    "A man is wheeling a hand truck loaded with boxes."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 한 남자가 트럭 뒷문을 닫고 있다.",
+    "(B) 한 남자가 상자를 높은 선반 위로 들어 올리고 있다.",
+    "(C) 한 남자가 휴대용 기기로 소포를 스캔하고 있다.",
+    "(D) 한 남자가 상자를 실은 손수레를 밀고 가고 있다."
+   ],
+   "exp": "남자가 상자를 실은 손수레를 밀고 있으므로 (D)가 정답이다. 뒤에 트럭이 있지만 뒷문은 활짝 열려 있고 남자는 문을 만지지 않으므로 (A)는 틀리다. 선반(B)과 스캐너(C)는 보이지 않는다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-058",
+   "type": "multi",
+   "setting": "물류 하역장",
+   "lv": 1,
+   "scene": "창고 하역장에 배송 트럭이 뒷문을 연 채 붙어 있다. 트럭 안의 작업자가 상자를 아래로 건네고, 하역장에 선 다른 작업자가 두 손을 뻗어 받고 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A warehouse loading dock with a delivery truck backed up to it, rear doors open. Two workers in high-visibility vests: one stands inside the truck handing a cardboard box down, and the other stands on the dock reaching up to take it with both hands. More boxes are visible inside the truck. Both are standing. No plastic wrap, and no food or drinks anywhere. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "one worker handing a box out of the truck",
+    "other worker receiving it on the dock"
+   ],
+   "must_not": [
+    "no one sitting",
+    "no plastic wrap",
+    "no food or drinks"
+   ],
+   "o": [
+    "Some workers are sitting on the edge of a dock.",
+    "Some workers are wrapping a pallet in plastic film.",
+    "Some workers are unloading boxes from a truck.",
+    "Some workers are eating lunch beside a truck."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 작업자 몇 명이 하역장 가장자리에 앉아 있다.",
+    "(B) 작업자 몇 명이 팔레트를 비닐 랩으로 감싸고 있다.",
+    "(C) 작업자 몇 명이 트럭에서 상자를 내리고 있다.",
+    "(D) 작업자 몇 명이 트럭 옆에서 점심을 먹고 있다."
+   ],
+   "exp": "트럭 안의 작업자가 상자를 건네고 다른 작업자가 받고 있으므로 (C)가 정답이다. 두 사람 모두 서 있어 (A)는 틀리고, 비닐 랩(B)이나 음식(D)은 보이지 않는다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-059",
+   "type": "multi",
+   "setting": "물류 하역장",
+   "lv": 3,
+   "scene": "물류 센터 하역장에서 안전모를 쓴 중년 남자가 상자 팔레트를 실은 지게차를 운전하고 있다. 앞쪽에는 안전조끼를 입은 젊은 여자가 가만히 서서 클립보드에 펜으로 적고 있으며, 두 사람은 몇 미터 떨어져 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A loading dock at a distribution center. A middle-aged Hispanic man in a hard hat drives a yellow forklift carrying a pallet of boxes. In the foreground, a young woman in a safety vest stands still on the dock, holding a clipboard in one hand and writing on it with a pen in the other. There is only one forklift in the scene. No one is climbing into the parked truck. The two people are several meters apart, and no other people are in view. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman standing and writing on a clipboard",
+    "man driving the only forklift"
+   ],
+   "must_not": [
+    "only one forklift",
+    "no one climbing into the truck",
+    "the two people not touching",
+    "no other people in view"
+   ],
+   "o": [
+    "One of the workers is writing on a clipboard.",
+    "Both of the workers are driving forklifts on the dock.",
+    "One of the workers is climbing into a truck.",
+    "The workers are shaking hands next to a forklift."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 작업자 중 한 명이 클립보드에 뭔가를 적고 있다.",
+    "(B) 두 작업자 모두 하역장에서 지게차를 운전하고 있다.",
+    "(C) 작업자 중 한 명이 트럭에 올라타고 있다.",
+    "(D) 작업자들이 지게차 옆에서 악수하고 있다."
+   ],
+   "exp": "여자 작업자가 서서 클립보드에 적고 있으므로 (A)가 정답이다. 지게차를 운전하는 사람은 남자 한 명뿐이므로 주어를 Both로 바꾼 (B)는 틀리다. 트럭에 오르는 사람(C)도 없고, 두 사람은 떨어져 있어 악수하지 않는다(D).",
+   "trap": "주어 혼동"
+  },
+  {
+   "id": "p1-060",
+   "type": "scene",
+   "setting": "물류 하역장",
+   "lv": 3,
+   "scene": "사람이 없는 창고 실내 하역장 바닥에 팔레트 네 개가 놓여 있고, 각 팔레트의 상자 더미는 투명 비닐 랩으로 이미 완전히 감싸여 있다. 뒤쪽 셔터식 도크 문 세 개는 모두 닫혀 있고 트럭은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An indoor loading dock area of a warehouse. Four wooden pallets sit on the concrete floor, each holding a stack of brown boxes already fully wrapped in clear plastic film. There are no loose rolls of plastic film and no wrapping machines. Behind them, three roll-up dock doors are all completely closed. No trucks visible. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "pallets of boxes fully wrapped in clear plastic",
+    "all dock doors closed"
+   ],
+   "must_not": [
+    "no people",
+    "no plastic film rolls or wrapping machine",
+    "no open dock doors",
+    "no truck"
+   ],
+   "o": [
+    "Some pallets are being wrapped in plastic film.",
+    "All of the loading dock doors are wide open.",
+    "Some boxes on pallets have been wrapped in plastic.",
+    "A truck is backed up to the loading dock."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 팔레트 몇 개가 비닐 랩으로 감싸지고 있다.",
+    "(B) 하역장 문이 모두 활짝 열려 있다.",
+    "(C) 팔레트 위의 상자들이 비닐로 감싸여 있다.",
+    "(D) 트럭 한 대가 하역장에 후진하여 대어져 있다."
+   ],
+   "exp": "팔레트 위 상자들이 이미 비닐로 감싸인 상태이므로 현재완료 수동태인 (C)가 정답이다. (A)의 are being wrapped는 지금 포장하는 중이라는 뜻이라 사람도 포장 장비도 없는 사진에서는 틀리다. 도크 문은 모두 닫혀 있고(B) 트럭도 없다(D).",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-061",
+   "type": "single",
+   "setting": "옷 가게",
+   "lv": 1,
+   "scene": "밝은 옷 가게에서 여자 점원이 진열 테이블 앞에 서서 회색 스웨터를 두 손으로 개고 있다. 테이블에는 개어 놓은 스웨터가 쌓여 있고 뒤쪽에 셔츠가 걸린 행거가 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a bright clothing store. A young East Asian woman clerk in a plain navy shirt stands behind a wooden display table, folding a gray knit sweater laid flat on the tabletop with both hands. Several neatly folded sweaters are stacked on the table beside her. Racks of hanging shirts stand in the background, well behind her. She is not trying anything on, she holds no hanger, and there is no cash register, card, or money visible. Medium-distance shot showing her upper body and the table. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman folding a gray sweater flat on the tabletop with both hands",
+    "folded sweaters stacked on the table"
+   ],
+   "must_not": [
+    "no jacket being put on",
+    "no hanger in her hands",
+    "no register, card, or money"
+   ],
+   "o": [
+    "A woman is folding a sweater on a table.",
+    "A woman is trying on a jacket in a store.",
+    "A woman is hanging a shirt on a rack.",
+    "A woman is paying for some clothes at a counter."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 여자가 테이블 위에서 스웨터를 개고 있다.",
+    "(B) 여자가 매장에서 재킷을 입어 보고 있다.",
+    "(C) 여자가 행거에 셔츠를 걸고 있다.",
+    "(D) 여자가 계산대에서 옷값을 지불하고 있다."
+   ],
+   "exp": "여자가 진열 테이블 앞에서 두 손으로 스웨터를 개고 있으므로 (A)가 정답이다. 뒤쪽에 셔츠가 걸린 행거가 보이지만 셔츠를 거는 동작은 없으므로 (C)는 사진 속 사물을 이용한 동작 혼동 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-062",
+   "type": "single",
+   "setting": "전자제품 매장",
+   "lv": 2,
+   "scene": "전자제품 매장에서 중년 남자가 노트북이 진열된 긴 카운터 앞에 서서 한 노트북 쪽으로 몸을 숙이고 화면을 살펴보고 있다. 한 손은 터치패드 위에 있고 노트북에는 보안 케이블이 연결되어 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside an electronics store. A middle-aged Black man in a casual sweater stands at a long display counter lined with open laptops. He leans slightly toward one open laptop, one hand resting on its trackpad, looking closely at the screen. The laptops are attached to the counter with short security cables. His other hand rests on the edge of the counter. He carries no bag and no box. The screens show colorful abstract images. Medium-distance shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man leaning toward an open laptop, looking at the screen",
+    "his hand on the laptop trackpad",
+    "several laptops on a display counter"
+   ],
+   "must_not": [
+    "no bag or box held by the man",
+    "other hand resting on the counter, not near any wall plug"
+   ],
+   "o": [
+    "A man is putting a laptop into his bag.",
+    "A man is plugging a cable into the wall.",
+    "A man is examining a laptop on a display counter.",
+    "A man is carrying a box out of the store."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 남자가 노트북을 가방에 넣고 있다.",
+    "(B) 남자가 벽에 케이블을 꽂고 있다.",
+    "(C) 남자가 진열대 위의 노트북을 살펴보고 있다.",
+    "(D) 남자가 상자를 들고 매장 밖으로 나가고 있다."
+   ],
+   "exp": "남자가 진열대의 노트북 화면을 가까이 들여다보며 터치패드에 손을 올리고 있으므로 (C)가 정답이다. 노트북에 보안 케이블이 연결되어 있지만 벽에 케이블을 꽂는 동작은 없으므로 (B)는 오답이고, 가방이나 상자도 보이지 않는다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-063",
+   "type": "single",
+   "setting": "서점",
+   "lv": 2,
+   "scene": "서점의 높은 책장 앞에서 여자가 바닥에 선 채 한 팔을 위로 뻗어 맨 위 선반의 책을 잡고 있다. 사다리나 발판은 없고 바닥에 놓인 책도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a quiet bookstore with wooden bookcases about two meters tall. A woman in her thirties with curly brown hair, wearing jeans and a green cardigan, stands flat on the floor and stretches one arm high, her hand gripping the top of a book on the highest shelf, just within her reach. Her other arm hangs empty at her side. There is no ladder or step stool anywhere. No books are on the floor. No chairs or armchairs are visible. Full-body shot from a few meters away. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman standing on the floor with one arm raised to the top shelf",
+    "her hand on a book on the highest shelf"
+   ],
+   "must_not": [
+    "no ladder or step stool",
+    "no armchair",
+    "no books on the floor"
+   ],
+   "o": [
+    "A woman is reading a book in an armchair.",
+    "A woman is reaching for a book on a top shelf.",
+    "A woman is stacking some books on the floor.",
+    "A woman is climbing a ladder in a bookstore."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 여자가 안락의자에 앉아 책을 읽고 있다.",
+    "(B) 여자가 맨 위 선반의 책을 향해 손을 뻗고 있다.",
+    "(C) 여자가 바닥에 책을 쌓고 있다.",
+    "(D) 여자가 서점에서 사다리를 올라가고 있다."
+   ],
+   "exp": "여자가 바닥에 선 채로 팔을 뻗어 맨 위 선반의 책을 잡으려 하고 있으므로 (B)가 정답이다. 높은 선반 때문에 떠올리기 쉬운 사다리는 사진에 없으므로 (D)는 없는 사물을 이용한 오답이다.",
+   "trap": "없는 사물"
+  },
+  {
+   "id": "p1-064",
+   "type": "single",
+   "setting": "카페",
+   "lv": 1,
+   "scene": "작은 커피숍 카운터 안에서 앞치마를 두른 바리스타가 한 손에 우유 피처, 다른 손에 커피잔을 들고 우유를 붓고 있다. 옆에 에스프레소 머신이 있고 손님은 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Behind the counter of a small coffee shop. A young barista with a short beard, wearing a dark apron over a white T-shirt, holds a small metal milk pitcher in one hand and a white coffee cup in the other, pouring steamed milk into the cup. An espresso machine stands beside him. The counter in front of him is empty, and there are no customers anywhere in the shot. He holds no cloth, and he is not touching a coffee grinder. Medium-distance shot from across the counter. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "barista pouring milk from a pitcher into a cup",
+    "espresso machine beside him"
+   ],
+   "must_not": [
+    "no customers",
+    "no cloth in his hand",
+    "no hand on a coffee grinder"
+   ],
+   "o": [
+    "A barista is wiping the counter with a cloth.",
+    "A barista is handing a cup to a customer.",
+    "A barista is grinding some coffee beans at the counter.",
+    "A barista is pouring milk into a coffee cup."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 바리스타가 행주로 카운터를 닦고 있다.",
+    "(B) 바리스타가 손님에게 컵을 건네고 있다.",
+    "(C) 바리스타가 카운터에서 커피 원두를 갈고 있다.",
+    "(D) 바리스타가 커피잔에 우유를 붓고 있다."
+   ],
+   "exp": "바리스타가 한 손에 우유 피처를, 다른 손에 컵을 들고 우유를 붓고 있으므로 (D)가 정답이다. 사진에 손님이 없으므로 (B)는 오답이고, 행주로 닦거나 원두를 가는 모습도 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-065",
+   "type": "single",
+   "setting": "식당",
+   "lv": 2,
+   "scene": "점심시간의 식당에서 흰 셔츠에 검은 앞치마를 두른 남자 종업원이 양손에 파스타 접시를 하나씩 들고 빈 테이블 사이를 걸어가고 있다. 주변 테이블에는 냅킨과 유리잔이 세팅되어 있고 손님은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a casual restaurant at lunchtime. A male server in his forties, wearing a white shirt and black apron, walks between empty tables, carrying a full plate of pasta in each hand at waist height and looking straight ahead. Neither hand holds a water pitcher, notepad, or menu. The tables around him are already set with napkins and empty glasses, and no diners are seated anywhere near him. Shot from a few meters away, showing his whole body in motion. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "server walking with a full plate in each hand",
+    "set tables with napkins and glasses around him"
+   ],
+   "must_not": [
+    "no pitcher, notepad, or menu in his hands",
+    "no diners at nearby tables"
+   ],
+   "o": [
+    "A server is carrying two plates of food.",
+    "A server is taking an order at a table.",
+    "A server is pouring water into a glass.",
+    "A server is placing menus on a table."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 종업원이 음식이 담긴 접시 두 개를 나르고 있다.",
+    "(B) 종업원이 테이블에서 주문을 받고 있다.",
+    "(C) 종업원이 유리잔에 물을 따르고 있다.",
+    "(D) 종업원이 테이블에 메뉴판을 놓고 있다."
+   ],
+   "exp": "종업원이 양손에 음식이 담긴 접시를 하나씩 들고 걸어가고 있으므로 (A)가 정답이다. 테이블에 유리잔이 놓여 있지만 물을 따르는 동작은 없으므로 (C)는 오답이며, 주문을 받거나 메뉴판을 놓는 모습도 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-066",
+   "type": "single",
+   "setting": "주방",
+   "lv": 1,
+   "scene": "밝은 가정집 주방에서 회색 머리의 남자가 조리대 앞에 서서 나무 도마 위의 당근을 칼로 썰고 있다. 싱크대 물은 잠겨 있고 레인지 위에는 냄비가 없으며 냉장고 문은 닫혀 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a bright home kitchen. A man in his fifties with gray hair, wearing a blue checked shirt with rolled-up sleeves, stands at the counter facing a wooden cutting board, holding a knife and slicing a carrot. Small piles of chopped vegetables lie on the board. The sink faucet is off and the sink is dry. The stove behind him is off with no pots on it, and the refrigerator door is closed. Medium-distance shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man slicing a carrot with a knife",
+    "chopped vegetables on a wooden board"
+   ],
+   "must_not": [
+    "no running water or hands in the sink",
+    "no pot on the stove",
+    "refrigerator door closed"
+   ],
+   "o": [
+    "A man is washing vegetables in the sink.",
+    "A man is stirring a pot on the stove.",
+    "A man is cutting vegetables on a wooden board.",
+    "A man is opening the door of the refrigerator."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 남자가 싱크대에서 채소를 씻고 있다.",
+    "(B) 남자가 레인지 위의 냄비를 젓고 있다.",
+    "(C) 남자가 나무 도마 위에서 채소를 썰고 있다.",
+    "(D) 남자가 냉장고 문을 열고 있다."
+   ],
+   "exp": "남자가 칼을 들고 나무 도마 위에서 당근을 썰고 있으므로 (C)가 정답이다. 싱크대, 레인지, 냉장고가 사진에 보이지만 각각을 사용하는 동작은 없으므로 나머지는 모두 동작 혼동 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-067",
+   "type": "single",
+   "setting": "시장",
+   "lv": 2,
+   "scene": "야외 시장 과일 가판대 앞에서 빨간 재킷을 입은 여자가 사과 더미에서 사과 하나를 집어 들고 바라보고 있다. 쇼핑 카트와 저울은 없고 여자는 상자를 들고 있지 않다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. At an outdoor fruit stand in a market. A Latina woman in her forties, wearing a red jacket with a cloth tote bag on her shoulder, stands in front of open wooden crates of apples and oranges. She is picking up one red apple from the pile with one hand and looking at it. There is no shopping cart and no weighing scale anywhere in the image. She is not lifting any crate. Medium-distance shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman holding a red apple she picked from the display",
+    "open crates of apples and oranges"
+   ],
+   "must_not": [
+    "no shopping cart",
+    "no weighing scale",
+    "she is not lifting a crate"
+   ],
+   "o": [
+    "A woman is pushing a shopping cart through the market.",
+    "A woman is picking up an apple from a display.",
+    "A woman is weighing some fruit on a scale.",
+    "A woman is carrying a crate of fruit."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 여자가 시장에서 쇼핑 카트를 밀고 있다.",
+    "(B) 여자가 진열대에서 사과 하나를 집어 들고 있다.",
+    "(C) 여자가 저울에 과일 무게를 달고 있다.",
+    "(D) 여자가 과일 상자를 나르고 있다."
+   ],
+   "exp": "여자가 진열된 사과 더미에서 사과 하나를 집어 들고 있으므로 (B)가 정답이다. 시장에서 흔히 볼 수 있는 쇼핑 카트나 저울은 사진에 없으므로 (A)와 (C)는 없는 사물을 이용한 오답이다.",
+   "trap": "없는 사물"
+  },
+  {
+   "id": "p1-068",
+   "type": "single",
+   "setting": "빵집",
+   "lv": 3,
+   "scene": "빵집 뒤편 주방에서 흰 조리복을 입은 제빵사가 이미 양손에 오븐 장갑을 낀 채 열린 오븐에서 노릇한 빵이 담긴 쟁반을 꺼내고 있다. 옆 조리대에는 반죽이나 빵칼이 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In the back kitchen of a small bakery. A South Asian baker in his thirties, wearing a white chef jacket and thick oven mitts already on both hands, pulls a metal tray of golden bread rolls out of an open commercial oven, holding the tray with both hands. The steel counter beside him is bare, with no dough, rolling pin, or bread knife on it. Medium-distance shot from the side, showing the open oven and the tray. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "baker pulling a tray of rolls out of an open oven",
+    "oven mitts already worn on both hands"
+   ],
+   "must_not": [
+    "no dough or rolling pin",
+    "no bread knife or sliced bread",
+    "not pulling mitts onto his hands"
+   ],
+   "o": [
+    "A baker is rolling out dough on a counter.",
+    "A baker is putting on a pair of oven mitts.",
+    "A baker is slicing a loaf of bread.",
+    "A baker is removing a tray from an oven."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 제빵사가 조리대 위에서 반죽을 밀고 있다.",
+    "(B) 제빵사가 오븐 장갑을 끼는 중이다.",
+    "(C) 제빵사가 빵 한 덩이를 자르고 있다.",
+    "(D) 제빵사가 오븐에서 쟁반을 꺼내고 있다."
+   ],
+   "exp": "제빵사가 두 손으로 열린 오븐에서 빵 쟁반을 꺼내고 있으므로 (D)가 정답이다. 오븐 장갑은 이미 낀 상태(wearing)일 뿐 지금 끼는 동작(putting on)이 아니므로 (B)는 상태와 동작을 혼동시키는 함정이다.",
+   "trap": "상태 혼동"
+  },
+  {
+   "id": "p1-069",
+   "type": "single",
+   "setting": "계산대",
+   "lv": 1,
+   "scene": "슈퍼마켓 계산대에서 초록 셔츠를 입은 여자 계산원이 우유팩을 계산대에 내장된 바코드 스캐너 위에 대고 스캔하고 있다. 금전 서랍은 닫혀 있고 전화기나 펼쳐진 장바구니 봉투는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. At a supermarket checkout counter. A young female cashier with a ponytail, wearing a plain green polo shirt, holds a carton of milk over a flat glass barcode scanner built into the counter, scanning it. The cash drawer is closed, and there is no phone anywhere near her. No shopping bags are open on the counter. A few grocery items wait on the conveyor belt. No customer is visible in the frame. Medium-distance shot from the customer side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "cashier holding a milk carton over the scanner",
+    "groceries waiting on the conveyor belt"
+   ],
+   "must_not": [
+    "cash drawer closed, no money in her hands",
+    "no open shopping bags",
+    "no phone"
+   ],
+   "o": [
+    "A cashier is scanning an item at the checkout.",
+    "A cashier is counting money from the register.",
+    "A cashier is putting groceries into a bag.",
+    "A cashier is talking on a phone at the counter."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 계산원이 계산대에서 상품을 스캔하고 있다.",
+    "(B) 계산원이 금전 등록기에서 꺼낸 돈을 세고 있다.",
+    "(C) 계산원이 식료품을 봉투에 담고 있다.",
+    "(D) 계산원이 계산대에서 전화 통화를 하고 있다."
+   ],
+   "exp": "계산원이 우유팩을 바코드 스캐너 위에 대고 있으므로 (A)가 정답이다. 금전 서랍은 닫혀 있고 봉투나 전화기도 보이지 않으므로 나머지 보기는 계산대에서 연상되는 동작을 이용한 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-070",
+   "type": "single",
+   "setting": "호텔 객실",
+   "lv": 2,
+   "scene": "깔끔한 호텔 객실에서 회색 유니폼을 입은 객실 청소원이 침대 옆에 서서 흰 시트의 두 귀퉁이를 잡고 매트리스 위로 펼치고 있다. 커튼은 이미 열려 있고 청소기나 수건은 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a neat hotel room with large windows. A housekeeper in her fifties, wearing a gray uniform dress, stands beside a bed with her back to the window, holding a white sheet by two corners with both hands and spreading it out in the air over the bare mattress. The curtains are already open and hanging still, and nobody touches them. There is no vacuum cleaner in the room, and she holds no towels. Wide shot showing the whole bed. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "housekeeper holding a white sheet by two corners",
+    "sheet spread in the air over the mattress"
+   ],
+   "must_not": [
+    "no vacuum cleaner",
+    "her hands not on the curtains",
+    "no towels in her hands"
+   ],
+   "o": [
+    "A housekeeper is vacuuming the carpet near the bed.",
+    "A housekeeper is spreading a sheet over a bed.",
+    "A housekeeper is opening the curtains by the window.",
+    "A housekeeper is hanging towels in the bathroom."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 객실 청소원이 침대 근처 카펫을 청소기로 밀고 있다.",
+    "(B) 객실 청소원이 침대 위로 시트를 펼치고 있다.",
+    "(C) 객실 청소원이 창가의 커튼을 열고 있다.",
+    "(D) 객실 청소원이 욕실에 수건을 걸고 있다."
+   ],
+   "exp": "청소원이 시트의 양 귀퉁이를 잡고 침대 위로 펼치고 있으므로 (B)가 정답이다. 커튼은 이미 열려 있을 뿐 지금 여는 동작이 아니므로 (C)는 오답이고, 청소기나 수건은 사진에 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-071",
+   "type": "single",
+   "setting": "호텔 객실",
+   "lv": 3,
+   "scene": "아침의 호텔 객실에서 하늘색 셔츠를 입은 남자가 정돈된 침대 가장자리에 앉아 몸을 숙이고 한쪽 구두끈을 묶고 있다. 침대 위 옆자리에 정장 재킷이 놓여 있고 닫힌 여행 가방이 문 옆에 세워져 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a hotel room in the morning. A man in his thirties, wearing a light blue shirt and gray trousers, sits on the edge of a neatly made bed, bending forward with both hands on the laces of the shoe on his right foot, tying them. A dark suit jacket lies flat on the bed beside him, not worn. A closed suitcase stands upright by the door, far from him. He is not touching the jacket, the bedding, or the suitcase. Medium-distance shot from the front side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man seated on the bed edge, bending to tie his shoe",
+    "suit jacket lying flat on the bed"
+   ],
+   "must_not": [
+    "jacket not on his body or in his hands",
+    "suitcase closed and untouched",
+    "hands not on the bedding"
+   ],
+   "o": [
+    "A man is putting on a jacket by the bed.",
+    "A man is making the bed in a hotel room.",
+    "A man is tying his shoe while seated on a bed.",
+    "A man is packing clothes into a suitcase."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 남자가 침대 옆에서 재킷을 입는 중이다.",
+    "(B) 남자가 호텔 객실에서 침대를 정리하고 있다.",
+    "(C) 남자가 침대에 앉아 신발 끈을 묶고 있다.",
+    "(D) 남자가 여행 가방에 옷을 싸고 있다."
+   ],
+   "exp": "남자가 침대 가장자리에 앉아 몸을 숙이고 신발 끈을 묶고 있으므로 (C)가 정답이다. 재킷은 침대 위에 놓여 있을 뿐 지금 입는 동작(putting on)이 아니므로 (A)는 오답이고, 여행 가방은 닫힌 채 문 옆에 있으므로 (D)도 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-072",
+   "type": "single",
+   "setting": "전자제품 매장",
+   "lv": 2,
+   "scene": "전자제품 매장의 헤드폰 진열대 앞에서 노란 스웨터를 입은 젊은 여자가 큰 헤드폰을 머리에 쓰고 두 손을 이어컵에 가볍게 댄 채 음악을 듣고 있다. 열린 상자, TV, 점원은 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In an electronics store, at a headphone display table. A young woman with short black hair, wearing a yellow sweater, stands at the table with a pair of large over-ear headphones on her head, both hands lightly touching the ear cups, eyes closed, listening. Other headphones sit on small stands on the table. There are no boxes on the table, no televisions near her, and no store clerk in the image. Medium-distance shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "headphones worn on the woman's head",
+    "other headphones on stands on the table"
+   ],
+   "must_not": [
+    "no boxes",
+    "no television near her",
+    "no clerk or second person"
+   ],
+   "o": [
+    "A woman is taking headphones out of a box.",
+    "A woman is adjusting a television screen on a wall.",
+    "A woman is handing headphones to a clerk.",
+    "A woman is wearing headphones at a display table."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 여자가 상자에서 헤드폰을 꺼내고 있다.",
+    "(B) 여자가 벽에 걸린 텔레비전 화면을 조정하고 있다.",
+    "(C) 여자가 점원에게 헤드폰을 건네고 있다.",
+    "(D) 여자가 진열 테이블에서 헤드폰을 쓰고 있다."
+   ],
+   "exp": "여자가 진열 테이블 앞에서 헤드폰을 머리에 쓰고 있으므로 (D)가 정답이다. 사진에 상자, 텔레비전, 점원이 없으므로 (A), (B), (C)는 모두 없는 사물을 이용한 오답이다.",
+   "trap": "없는 사물"
+  },
+  {
+   "id": "p1-073",
+   "type": "multi",
+   "setting": "카페",
+   "lv": 2,
+   "scene": "아늑한 카페 창가의 작은 원형 테이블에 두 여자가 마주 앉아 웃으며 이야기하고 있다. 테이블 위 커피잔 두 개는 놓여 있기만 하고 아무도 잔을 들고 있지 않으며 메뉴판도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a cozy cafe by a window. Two women in their twenties, one Black with braided hair and one white with a blond bob, sit facing each other at a small round table, talking and smiling, their hands resting flat on the table. Two coffee cups sit on the table in front of them, and neither woman is holding or lifting a cup. There is no menu on the table. Nobody is standing at the counter in the background. Medium-distance shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two women seated facing each other at a small table",
+    "two cups resting on the table"
+   ],
+   "must_not": [
+    "neither woman holding or lifting a cup",
+    "no menu",
+    "no one standing in line"
+   ],
+   "o": [
+    "Two women are seated across from each other.",
+    "The women are standing in line at the counter.",
+    "One of the women is drinking from a cup.",
+    "The women are looking at a menu together."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 두 여자가 서로 마주 보고 앉아 있다.",
+    "(B) 여자들이 카운터 앞에 줄을 서 있다.",
+    "(C) 여자들 중 한 명이 컵으로 음료를 마시고 있다.",
+    "(D) 여자들이 함께 메뉴판을 보고 있다."
+   ],
+   "exp": "두 여자가 작은 테이블에 마주 앉아 있으므로 (A)가 정답이다. 테이블에 커피잔이 있지만 아무도 잔을 들고 마시지 않으므로 (C)는 사진 속 사물을 이용한 동작 혼동 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-074",
+   "type": "multi",
+   "setting": "식당",
+   "lv": 1,
+   "scene": "패밀리 레스토랑에서 노부부가 메뉴판을 펼쳐 들고 앉아 있고, 젊은 남자 종업원이 테이블 옆에 서서 메모장에 주문을 적고 있다. 테이블에는 물잔과 냅킨만 있고 음식은 없으며 외투는 의자 등받이에 걸려 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a family restaurant. An older couple sits at a table, each holding an open menu, and the woman points at her menu. A young male server stands beside their table, holding a small notepad and pen, writing down their order. The table has only glasses of water, napkins, and cutlery, with no food and no plates. Their coats hang on the backs of their chairs, and the couple stays seated. Medium-distance shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "server standing at the table writing on a notepad",
+    "seated couple holding open menus"
+   ],
+   "must_not": [
+    "no food or plates on the table",
+    "coats hanging on chairs, not being put on"
+   ],
+   "o": [
+    "The diners are enjoying their meals at the table.",
+    "A server is clearing plates from the table.",
+    "A server is taking an order from some diners.",
+    "The diners are putting on their coats to leave."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 손님들이 테이블에서 식사를 즐기고 있다.",
+    "(B) 종업원이 테이블에서 접시를 치우고 있다.",
+    "(C) 종업원이 손님들에게서 주문을 받고 있다.",
+    "(D) 손님들이 나가려고 외투를 입는 중이다."
+   ],
+   "exp": "종업원이 메모장을 들고 메뉴판을 보는 손님들의 주문을 받고 있으므로 (C)가 정답이다. 테이블에 음식이나 접시가 없으므로 (A)와 (B)는 오답이고, 외투는 의자에 걸려 있을 뿐 입고 있지 않다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-075",
+   "type": "multi",
+   "setting": "계산대",
+   "lv": 1,
+   "scene": "옷 가게 계산대에서 갈색 재킷을 입은 중년 남자 손님이 카드를 내밀고, 젊은 여자 계산원이 손을 뻗어 받으려 하고 있다. 두 사람 사이 카운터에 개어 놓은 셔츠가 있고 쇼핑백과 카트는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. At a clothing store checkout counter. A middle-aged man in a brown jacket stands at the counter, holding out a payment card toward a young female cashier, who reaches out to take it. One folded shirt lies flat on the counter between them, and neither person is touching it. There is no shopping bag and no shopping cart anywhere in the image. Medium-distance side view showing both people from the waist up. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man holding out a card to the cashier",
+    "cashier reaching to take the card"
+   ],
+   "must_not": [
+    "no shopping bag",
+    "no shopping cart",
+    "nobody folding or touching the shirt"
+   ],
+   "o": [
+    "The cashier is putting a shirt into a bag.",
+    "A customer is handing a card to a cashier.",
+    "The customer is pushing a cart out the door.",
+    "Both people are folding clothes at the counter."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 계산원이 셔츠를 봉투에 넣고 있다.",
+    "(B) 손님이 계산원에게 카드를 건네고 있다.",
+    "(C) 손님이 카트를 밀고 문밖으로 나가고 있다.",
+    "(D) 두 사람이 계산대에서 옷을 개고 있다."
+   ],
+   "exp": "남자 손님이 계산원에게 카드를 내밀고 계산원이 받으려 하고 있으므로 (B)가 정답이다. 카운터 위 셔츠는 놓여 있기만 하고 봉투나 카트는 없으므로 (A), (C), (D)는 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-076",
+   "type": "multi",
+   "setting": "시장",
+   "lv": 2,
+   "scene": "야외 시장 채소 가판대에서 앞치마를 두른 나이 든 상인이 채소가 가득 든 종이봉투를 두 손으로 건네고, 젊은 여자 손님이 두 손을 뻗어 받고 있다. 앞쪽 바구니에는 토마토와 피망이 이미 정돈되어 있고 저울과 트럭은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. At an outdoor vegetable stall in a market. An older vendor with a gray mustache, wearing a canvas apron, stands behind the stall and hands a full paper bag of vegetables across the counter with both hands to a young woman customer, who reaches out with both hands to take it. Baskets of tomatoes and peppers are already neatly arranged at the front of the stall. There is no scale and no truck in the image. Medium-distance shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "vendor handing a paper bag to the customer with both hands",
+    "customer reaching out to take the bag"
+   ],
+   "must_not": [
+    "no scale",
+    "no truck or boxes being unloaded",
+    "vendor's hands not in the baskets"
+   ],
+   "o": [
+    "The customer is weighing vegetables on a scale.",
+    "Some people are unloading boxes from a truck.",
+    "The vendor is arranging some vegetables in baskets.",
+    "The vendor is handing a bag to a customer."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 손님이 저울에 채소 무게를 달고 있다.",
+    "(B) 몇몇 사람들이 트럭에서 상자를 내리고 있다.",
+    "(C) 상인이 바구니에 채소를 정리하고 있다.",
+    "(D) 상인이 손님에게 봉투를 건네고 있다."
+   ],
+   "exp": "상인이 채소가 든 봉투를 손님에게 건네고 손님이 받고 있으므로 (D)가 정답이다. 바구니의 채소는 이미 정돈된 상태일 뿐 상인이 정리하는 중이 아니므로 (C)는 오답이고, 저울과 트럭은 사진에 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-077",
+   "type": "multi",
+   "setting": "주방",
+   "lv": 3,
+   "scene": "스테인리스 식당 주방에서 요리사 두 명이 나란히 일하고 있다. 왼쪽의 키 큰 남자는 국자로 큰 냄비를 젓고, 오른쪽 여자는 집게로 흰 접시에 음식을 담고 있다. 오븐 문은 닫혀 있고 싱크대 근처에는 아무도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a stainless steel restaurant kitchen. Two cooks in white jackets and aprons work side by side. On the left, a tall man stirs a large steel pot on the stove with a long ladle. On the right, a woman with her hair tied back arranges food on a white plate with tongs, looking down at the plate. The man is not touching any plate, and the oven doors below the stove are closed. The sink is empty and neither cook is near it. Medium-distance shot showing both cooks. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man stirring a large pot with a ladle",
+    "woman plating food with tongs"
+   ],
+   "must_not": [
+    "man not touching any plate",
+    "oven doors closed",
+    "nobody at the sink"
+   ],
+   "o": [
+    "One of the cooks is stirring a large pot.",
+    "Both of the cooks are arranging food on plates.",
+    "One of the cooks is opening an oven door.",
+    "Both cooks are washing dishes at the sink."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 요리사 중 한 명이 큰 냄비를 젓고 있다.",
+    "(B) 요리사 두 명 모두 접시에 음식을 담고 있다.",
+    "(C) 요리사 중 한 명이 오븐 문을 열고 있다.",
+    "(D) 요리사 두 명 모두 싱크대에서 설거지를 하고 있다."
+   ],
+   "exp": "왼쪽 요리사가 국자로 큰 냄비를 젓고 있으므로 (A)가 정답이다. 접시에 음식을 담는 사람은 오른쪽 요리사 한 명뿐이므로 Both 를 쓴 (B)는 주어를 혼동시키는 함정이다.",
+   "trap": "주어 혼동"
+  },
+  {
+   "id": "p1-078",
+   "type": "multi",
+   "setting": "옷 가게",
+   "lv": 2,
+   "scene": "옷 가게에서 젊은 남자 두 명이 긴 옷걸이 행거 앞에 나란히 서서 한 손으로 옷걸이를 넘기며 셔츠를 고르고 있다. 쇼핑백은 없고 점원도 보이지 않으며 뒤쪽 카운터는 비어 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a clothing store. Two young men, one East Asian and one Middle Eastern, stand side by side at a long clothing rack, each sliding hangers aside with one hand and looking at the shirts. Neither carries a shopping bag. Both wear their own sneakers, and there are no shoe boxes or benches nearby. No store clerk is visible, and the counter in the background is empty. Medium-distance shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two men looking through shirts on a rack",
+    "their hands moving hangers"
+   ],
+   "must_not": [
+    "no shopping bags",
+    "no shoes being tried on",
+    "no clerk at the counter"
+   ],
+   "o": [
+    "Some shoppers are trying on shoes in a store.",
+    "A clerk is folding shirts at a counter.",
+    "Some shoppers are looking through clothes on a rack.",
+    "Some shoppers are leaving the store with bags."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 손님들이 매장에서 신발을 신어 보고 있다.",
+    "(B) 점원이 카운터에서 셔츠를 개고 있다.",
+    "(C) 손님들이 행거에 걸린 옷을 살펴보고 있다.",
+    "(D) 손님들이 쇼핑백을 들고 매장을 나가고 있다."
+   ],
+   "exp": "두 남자가 행거의 옷걸이를 넘기며 옷을 살펴보고 있으므로 (C)가 정답이다. 카운터에는 점원이 없고 손님들은 쇼핑백도 들고 있지 않으므로 (B)와 (D)는 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-079",
+   "type": "multi",
+   "setting": "서점",
+   "lv": 1,
+   "scene": "서점의 독서 공간에서 젊은 남자와 나이 든 여자가 긴 나무 테이블 양 끝에 앉아 각자 책을 펼쳐 들고 읽고 있다. 테이블 위에 공책이나 펜은 없고 계산 줄도 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In the reading area of a bookstore. A young man and an older woman sit at opposite ends of a long wooden table, each holding an open book with both hands and reading silently. There are no notebooks or pens on the table. Bookcases line the wall behind them. Both people stay seated, and there is no checkout counter or line of people in view. Medium-distance shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two people seated at a long table",
+    "each holding an open book and reading"
+   ],
+   "must_not": [
+    "no notebook or pen",
+    "nobody standing at the shelves",
+    "no checkout line"
+   ],
+   "o": [
+    "The people are returning books to the shelves.",
+    "Two people are reading books at a long table.",
+    "One of the people is writing in a notebook.",
+    "The people are waiting in line to pay."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 사람들이 책을 서가에 다시 꽂고 있다.",
+    "(B) 두 사람이 긴 테이블에서 책을 읽고 있다.",
+    "(C) 사람들 중 한 명이 공책에 무언가를 쓰고 있다.",
+    "(D) 사람들이 계산하려고 줄을 서 있다."
+   ],
+   "exp": "두 사람이 긴 테이블에 앉아 각자 책을 읽고 있으므로 (B)가 정답이다. 두 사람 모두 앉아 있으므로 (A)와 (D)는 오답이고, 테이블에 공책이 없으므로 (C)도 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-080",
+   "type": "multi",
+   "setting": "빵집",
+   "lv": 2,
+   "scene": "작은 빵집에서 회색 머리의 여자 손님이 페이스트리가 가득한 유리 진열장 앞에 서서 크루아상 줄을 손가락으로 가리키고 있다. 진열장 뒤 젊은 남자 점원은 카운터에 손을 얹은 채 그쪽을 보고 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a small bakery. A gray-haired woman customer stands in front of a glass display case full of pastries, pointing at a row of croissants inside the case. Her other hand holds her purse strap. Behind the case, a young male clerk in a white apron stands with both hands resting on the counter, looking where she points. Nobody holds a cake box, cloth, or tongs, and the customer does not touch any pastry. Medium-distance shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "customer pointing at pastries in the display case",
+    "clerk behind the case with hands on the counter"
+   ],
+   "must_not": [
+    "no cake box",
+    "no cloth wiping the glass",
+    "customer not touching any pastry"
+   ],
+   "o": [
+    "A clerk is putting a cake into a box.",
+    "A customer is taking a pastry off a tray.",
+    "A clerk is wiping the glass of the display case.",
+    "A customer is pointing at some pastries in a display case."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 점원이 케이크를 상자에 넣고 있다.",
+    "(B) 손님이 쟁반에서 페이스트리를 집고 있다.",
+    "(C) 점원이 진열장 유리를 닦고 있다.",
+    "(D) 손님이 진열장 안의 페이스트리를 가리키고 있다."
+   ],
+   "exp": "여자 손님이 진열장 안의 크루아상을 가리키고 있으므로 (D)가 정답이다. 손님은 빵을 만지지 않고 점원은 카운터에 손을 얹고 있을 뿐이므로 (B)와 (C)는 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-081",
+   "type": "multi",
+   "setting": "호텔 객실",
+   "lv": 3,
+   "scene": "아침 호텔 객실에서 흰 블라우스를 입은 여자가 창가에 서서 두 손으로 커튼을 열고 있다. 방 건너편에서는 회색 스웨터를 입은 남자가 안락의자에 앉아 태블릿을 보고 있다. 침대는 정돈되어 비어 있고 여행 가방은 닫힌 채 벽에 세워져 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. In a hotel room in the morning. A woman in a white blouse stands at the window, pulling the two curtain panels apart toward the sides with both hands as bright sunlight streams in through the widening gap. Across the room, a man in a gray sweater sits in an armchair, looking at a tablet in his lap, far from the window. The bed is neatly made and nobody sits on it. Two closed suitcases stand against the wall, and nobody touches them. Wide shot showing both people. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman pulling the curtains open with both hands",
+    "man seated in an armchair away from the window"
+   ],
+   "must_not": [
+    "man not touching the curtains",
+    "nobody sitting on the bed",
+    "nobody holding a suitcase"
+   ],
+   "o": [
+    "A man is opening the curtains by the window.",
+    "A woman is opening the curtains by the window.",
+    "The two people are sitting together on the bed.",
+    "A man is carrying a suitcase into the room."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 남자가 창가의 커튼을 열고 있다.",
+    "(B) 여자가 창가의 커튼을 열고 있다.",
+    "(C) 두 사람이 침대에 함께 앉아 있다.",
+    "(D) 남자가 여행 가방을 방 안으로 옮기고 있다."
+   ],
+   "exp": "창가에서 커튼을 열고 있는 사람은 여자이므로 (B)가 정답이다. 남자는 안락의자에 앉아 태블릿을 보고 있으므로 같은 동작에 주어만 바꾼 (A)는 주어 혼동 함정이다.",
+   "trap": "주어 혼동"
+  },
+  {
+   "id": "p1-082",
+   "type": "scene",
+   "setting": "식당",
+   "lv": 2,
+   "scene": "개점 전 빈 식당에 여러 테이블이 흰 접시, 냅킨, 식기, 와인잔으로 세팅되어 있다. 의자는 모두 바닥에 놓인 채 테이블 아래로 들어가 있고 사람은 아무도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Interior of an empty restaurant before opening. Several square tables are fully set, each with white plates, folded napkins, cutlery, and empty wine glasses arranged neatly. All the wooden chairs stand on the floor, tucked under the tables, and no chairs are on top of any table. Large windows let in soft daylight. No people anywhere in the image, no hands, and no staff. Wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "tables set with plates, napkins, cutlery, and glasses",
+    "chairs on the floor tucked under the tables"
+   ],
+   "must_not": [
+    "no people or hands placing items",
+    "no chairs on top of tables",
+    "nobody seated by the window"
+   ],
+   "o": [
+    "Tables have been set with plates and glasses.",
+    "Some tables are being set for a meal.",
+    "Some chairs have been stacked on the tables.",
+    "Some diners are seated at a table near the window."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 테이블에 접시와 유리잔이 세팅되어 있다.",
+    "(B) 몇몇 테이블이 식사를 위해 세팅되고 있는 중이다.",
+    "(C) 의자 몇 개가 테이블 위에 쌓여 있다.",
+    "(D) 몇몇 손님들이 창가 테이블에 앉아 있다."
+   ],
+   "exp": "테이블이 이미 접시와 유리잔으로 세팅된 상태이므로 (A)가 정답이다. 사진에 사람이 없어 지금 세팅하는 중이라는 진행 수동태(are being set)의 (B)는 오답이며, 의자는 테이블 위가 아니라 바닥에 있다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-083",
+   "type": "scene",
+   "setting": "카페",
+   "lv": 3,
+   "scene": "영업이 끝난 작은 카페에서 나무 의자들이 뒤집힌 채 각 테이블 위에 올려져 있다. 타일 바닥은 마른 상태이고 대걸레나 양동이는 없으며 뒤쪽 카운터에는 컵이 하나도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Interior of a small cafe after closing time. Wooden chairs have been turned upside down and placed seat-down on top of each square table, their legs pointing up. No chairs are piled in any corner. The tiled floor is dry and clean, with no mop or bucket anywhere. The counter in the back is completely clear, with no cups or dishes on it. Evening light through the windows. No people anywhere in the image. Wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "chairs upside down on top of the tables",
+    "clear counter with no cups"
+   ],
+   "must_not": [
+    "no people",
+    "no mop, bucket, or wet floor",
+    "no cups on the counter"
+   ],
+   "o": [
+    "Some chairs are being stacked in a corner.",
+    "The floor of the cafe is being mopped.",
+    "Some chairs have been placed upside down on tables.",
+    "Some cups have been left on the counter."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 의자 몇 개가 구석에 쌓이고 있는 중이다.",
+    "(B) 카페 바닥이 걸레질되고 있는 중이다.",
+    "(C) 의자 몇 개가 테이블 위에 거꾸로 올려져 있다.",
+    "(D) 컵 몇 개가 카운터 위에 남겨져 있다."
+   ],
+   "exp": "의자들이 거꾸로 뒤집혀 테이블 위에 올려진 상태이므로 (C)가 정답이다. 사람이 없는 사진이므로 누군가 지금 쌓거나 걸레질하는 중이라는 진행 수동태의 (A)와 (B)는 오답이고, 카운터는 비어 있다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-084",
+   "type": "scene",
+   "setting": "빵집",
+   "lv": 2,
+   "scene": "빵집 벽면의 나무 선반 위 바구니마다 식빵, 바게트, 둥근 롤빵이 담겨 진열되어 있다. 바구니는 모두 선반 위에 있고 앞쪽 유리 진열장은 페이스트리로 가득하며 빵칼이나 도마는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a bakery shop. Wooden shelves along the wall hold woven baskets filled with loaves of bread, baguettes, and round rolls. Every basket sits on a shelf, and no baskets are on the floor. In front, a glass display case is completely full of pastries. No bread knife or cutting board is visible, and no bread has been cut. No people anywhere in the image. Warm morning light. Medium-wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "baskets of bread on wall shelves",
+    "display case full of pastries"
+   ],
+   "must_not": [
+    "no people, knife, or cutting board",
+    "no baskets on the floor",
+    "display case not empty"
+   ],
+   "o": [
+    "Some loaves are being sliced on a board.",
+    "Loaves of bread are displayed in baskets on shelves.",
+    "A glass display case has been left empty.",
+    "Some baskets have been stacked on the floor."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 빵 몇 덩이가 도마 위에서 잘리고 있는 중이다.",
+    "(B) 빵들이 선반 위 바구니에 담겨 진열되어 있다.",
+    "(C) 유리 진열장 하나가 비어 있다.",
+    "(D) 바구니 몇 개가 바닥에 쌓여 있다."
+   ],
+   "exp": "선반 위 바구니마다 빵이 담겨 진열되어 있으므로 (B)가 정답이다. 사람도 도마도 없으므로 진행 수동태의 (A)는 오답이고, 진열장은 가득 차 있으며 바구니는 바닥이 아니라 선반 위에 있다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-085",
+   "type": "scene",
+   "setting": "시장",
+   "lv": 2,
+   "scene": "아침의 야외 시장 가판대에 사과, 오렌지, 배가 담긴 나무 상자들이 비스듬한 테이블 위에 가지런히 놓여 있다. 줄무늬 차양이 가판대 위로 활짝 펼쳐져 있고 트럭이나 사람은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An outdoor market stall in the morning. Wooden crates filled with apples, oranges, and pears are arranged in neat rows on a slanted wooden table. A striped canvas awning is fully extended over the stall, casting shade on the fruit. There is no truck or vehicle nearby, and no shopping baskets or bags are visible. No people anywhere in the image. Medium-wide shot from the front. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "crates of fruit in neat rows on the table",
+    "awning fully extended over the stall"
+   ],
+   "must_not": [
+    "no people",
+    "no truck or vehicle",
+    "awning not rolled up"
+   ],
+   "o": [
+    "Some crates are being loaded onto a truck.",
+    "A shopper is filling a basket with fruit.",
+    "The awning over the stall has been rolled up.",
+    "Fruit has been arranged in crates at a stall."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 상자 몇 개가 트럭에 실리고 있는 중이다.",
+    "(B) 쇼핑객이 바구니에 과일을 담고 있다.",
+    "(C) 가판대 위의 차양이 말려 올라가 있다.",
+    "(D) 과일이 가판대의 상자들에 정리되어 있다."
+   ],
+   "exp": "과일이 상자에 담겨 가판대 위에 가지런히 놓여 있으므로 (D)가 정답이다. 트럭과 사람이 없으므로 진행 수동태의 (A)와 (B)는 오답이고, 차양은 말려 있지 않고 활짝 펼쳐져 있다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-086",
+   "type": "scene",
+   "setting": "호텔 객실",
+   "lv": 3,
+   "scene": "깔끔한 호텔 객실의 침대가 흰 이불로 정돈되어 있고, 침대 발치에 흰 목욕 수건 두 장이 네모나게 개어져 놓여 있다. 커튼은 활짝 열려 도시 풍경이 보이고 바닥에 여행 가방은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A tidy hotel room. The bed is neatly made with a smooth white duvet, and two white bath towels, folded into neat squares, have been placed at the foot of the bed. The curtains are pulled wide open, showing a sunny city view. A lamp stands upright on the nightstand. There is no suitcase anywhere in the room. No people anywhere in the image, no hands. Wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "neatly made bed",
+    "two folded towels at the foot of the bed",
+    "curtains wide open"
+   ],
+   "must_not": [
+    "no people or hands",
+    "curtains not closed",
+    "no suitcase"
+   ],
+   "o": [
+    "The bed is being made for a guest.",
+    "The curtains have been closed for the night.",
+    "Some folded towels have been placed on the bed.",
+    "A suitcase is lying open on the floor."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 손님을 위해 침대가 정리되고 있는 중이다.",
+    "(B) 밤이 되어 커튼이 쳐져 있다.",
+    "(C) 개어 놓은 수건 몇 장이 침대 위에 놓여 있다.",
+    "(D) 여행 가방 하나가 바닥에 열린 채 놓여 있다."
+   ],
+   "exp": "개어 놓은 수건이 침대 발치에 놓여 있으므로 (C)가 정답이다. 침대는 이미 정돈된 상태이고 사람이 없으므로 지금 정리 중이라는 (A)는 is being p.p. 함정이며, 커튼은 열려 있고 여행 가방은 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-087",
+   "type": "scene",
+   "setting": "주방",
+   "lv": 2,
+   "scene": "깨끗한 가정집 주방 조리대 위쪽 벽의 금속 레일 고리에 구리와 스테인리스 냄비 여러 개가 걸려 있다. 위쪽 수납장 문은 모두 닫혀 있고 레인지와 싱크대는 비어 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A clean home kitchen. Several copper and steel pots hang from hooks on a metal rail mounted on the wall above the counter. All the upper cabinet doors are closed. The stove top is clean and empty, with nothing on it. The sink is empty and dry, with no dishes or pots inside. No people anywhere in the image. Medium-wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "pots hanging from hooks above the counter",
+    "closed cabinet doors"
+   ],
+   "must_not": [
+    "no people",
+    "sink empty",
+    "nothing on the stove"
+   ],
+   "o": [
+    "Some pots are hanging on a rail above the counter.",
+    "Some pots are being washed in the sink.",
+    "The doors of the cabinets have been left open.",
+    "Some dishes are stacked on top of the stove."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 냄비 몇 개가 조리대 위쪽 레일에 걸려 있다.",
+    "(B) 냄비 몇 개가 싱크대에서 씻기고 있는 중이다.",
+    "(C) 수납장 문들이 열린 채로 있다.",
+    "(D) 접시 몇 개가 레인지 위에 쌓여 있다."
+   ],
+   "exp": "냄비들이 조리대 위쪽 레일에 걸려 있으므로 (A)가 정답이다. 사람이 없고 싱크대가 비어 있으므로 진행 수동태의 (B)는 오답이며, 수납장 문은 닫혀 있고 레인지 위에는 아무것도 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-088",
+   "type": "scene",
+   "setting": "전자제품 매장",
+   "lv": 3,
+   "scene": "전자제품 매장의 흰 벽에 평면 TV 여섯 대가 두 줄로 나란히 걸려 있고, 모두 켜진 채 같은 산 풍경을 보여 주고 있다. 벽 앞 통로는 깨끗하고 상자, 사다리, 공구는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside an electronics store. Six flat-screen televisions are mounted in two even rows on a white wall, all switched on and showing the same colorful mountain landscape. The aisle in front of the wall is clear, with a polished floor and no boxes. No ladders, tools, or loose cables are visible. No people anywhere in the image. Medium-wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "several televisions mounted in rows on the wall",
+    "all screens on, showing a landscape"
+   ],
+   "must_not": [
+    "no people, ladder, or tools",
+    "no boxes in the aisle",
+    "no screen turned off"
+   ],
+   "o": [
+    "Some televisions are being installed on a wall.",
+    "Some boxes are piled up in the aisle.",
+    "All of the screens have been turned off.",
+    "Several televisions have been mounted on a wall."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 텔레비전 몇 대가 벽에 설치되고 있는 중이다.",
+    "(B) 상자 몇 개가 통로에 쌓여 있다.",
+    "(C) 모든 화면이 꺼져 있다.",
+    "(D) 텔레비전 여러 대가 벽에 걸려 있다."
+   ],
+   "exp": "텔레비전 여러 대가 이미 벽에 걸려 있으므로 (D)가 정답이다. 사람이나 공구가 없으므로 지금 설치 중이라는 (A)는 is being p.p. 함정이고, 화면은 모두 켜져 있으며 통로에 상자도 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-089",
+   "type": "scene",
+   "setting": "서점",
+   "lv": 1,
+   "scene": "서점 중앙의 낮은 나무 진열 테이블 위에 새 책들이 여러 더미로 가지런히 쌓여 있다. 벽면 책장은 책으로 가득 차 있고 사다리나 바닥에 떨어진 책은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a bookstore. A low wooden display table in the center holds several neat stacks of new books. Tall bookcases full of books line the walls, with every shelf filled. There is no ladder anywhere, and no books lie on the floor. No people anywhere in the image, no hands. Soft daylight. Medium-wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "neat stacks of books on a display table",
+    "full bookcases along the walls"
+   ],
+   "must_not": [
+    "no people or hands",
+    "no ladder",
+    "no books on the floor"
+   ],
+   "o": [
+    "Some books are being put on the shelves.",
+    "Books have been stacked on a display table.",
+    "A ladder is leaning against one of the bookcases.",
+    "Some books have fallen off the shelves onto the floor."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 책 몇 권이 서가에 꽂히고 있는 중이다.",
+    "(B) 책들이 진열 테이블 위에 쌓여 있다.",
+    "(C) 사다리 하나가 책장 중 하나에 기대어 있다.",
+    "(D) 책 몇 권이 선반에서 바닥으로 떨어져 있다."
+   ],
+   "exp": "진열 테이블 위에 책들이 쌓여 있으므로 (B)가 정답이다. 사람이 없으므로 진행 수동태의 (A)는 오답이고, 사다리와 바닥에 떨어진 책은 사진에 없다.",
+   "trap": "없는 사물"
+  },
+  {
+   "id": "p1-090",
+   "type": "scene",
+   "setting": "계산대",
+   "lv": 1,
+   "scene": "손님이 없는 슈퍼마켓 계산대의 검은 컨베이어 벨트가 완전히 비어 있다. 계산대 끝 바로 옆 바닥에 빨간 플라스틱 장바구니가 쌓여 있고 카트나 봉투는 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A supermarket checkout lane with no customers. The black conveyor belt is completely empty. A stack of red plastic shopping baskets sits on the floor right next to the end of the checkout counter. The cash register is closed. There are no shopping carts and no grocery bags anywhere in the image. No people anywhere in the image. Medium-wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "empty conveyor belt",
+    "stack of red baskets next to the counter"
+   ],
+   "must_not": [
+    "no people or bags",
+    "no items on the belt",
+    "no shopping carts"
+   ],
+   "o": [
+    "Some groceries are being bagged at the register.",
+    "A conveyor belt is covered with grocery items.",
+    "Some shopping baskets are stacked next to a counter.",
+    "Some carts are lined up by the entrance."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 식료품 몇 개가 계산대에서 봉투에 담기고 있는 중이다.",
+    "(B) 컨베이어 벨트가 식료품으로 덮여 있다.",
+    "(C) 장바구니 몇 개가 계산대 옆에 쌓여 있다.",
+    "(D) 카트 몇 대가 입구 옆에 줄지어 있다."
+   ],
+   "exp": "계산대 바로 옆에 장바구니가 쌓여 있으므로 (C)가 정답이다. 컨베이어 벨트는 비어 있고 사람과 카트도 없으므로 (A), (B), (D)는 모두 오답이다.",
+   "trap": "없는 사물"
+  },
+  {
+   "id": "p1-091",
+   "type": "single",
+   "setting": "공항",
+   "lv": 1,
+   "scene": "공항 터미널 안에서 젊은 여성이 바퀴 달린 여행 가방의 손잡이를 잡고 끌며 걸어가고 있다. 주변에 수하물 카트나 체크인 카운터는 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A young Black woman in a beige trench coat walks through a bright, spacious airport terminal hall, pulling a black rolling suitcase behind her by its extended handle. She is mid-stride, seen from the side at medium distance. The suitcase rolls on the floor on its wheels. There is no luggage cart anywhere and no check-in counter nearby. She wears only a small shoulder bag; she has no backpack. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman walking and pulling a rolling suitcase by its handle",
+    "suitcase on the floor on its wheels",
+    "airport terminal interior"
+   ],
+   "must_not": [
+    "no luggage cart",
+    "woman is not at a counter",
+    "no backpack anywhere"
+   ],
+   "o": [
+    "A woman is pulling a suitcase through a terminal.",
+    "A woman is lifting her suitcase onto a cart.",
+    "A woman is checking in at an airline counter.",
+    "A woman is putting a backpack on her shoulders."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 한 여성이 터미널에서 여행 가방을 끌고 가고 있다.",
+    "(B) 한 여성이 여행 가방을 카트에 들어 올리고 있다.",
+    "(C) 한 여성이 항공사 카운터에서 탑승 수속을 하고 있다.",
+    "(D) 한 여성이 배낭을 어깨에 메는 중이다."
+   ],
+   "exp": "여성이 손잡이를 잡고 바퀴 달린 가방을 끌며 걸어가고 있으므로 (A) pulling a suitcase 가 정답이다. 사진에 카트·카운터·배낭이 없으므로 나머지는 모두 없는 사물이나 다른 동작을 묘사한 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-092",
+   "type": "single",
+   "setting": "기차역",
+   "lv": 1,
+   "scene": "야외 기차 승강장의 벤치에 나이 든 남성이 혼자 앉아 종이컵을 무릎 위에 들고 선로 쪽을 바라보고 있다. 승강장에 열차는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An older East Asian man in a gray jacket sits alone on a metal bench on an outdoor train platform, holding a paper coffee cup with both hands on his lap and looking down the empty tracks. No train is at the platform. There are no ticket machines in view. There is no broom anywhere, and no one else is on the platform. Medium distance, side view. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man sitting on a bench on a platform",
+    "empty railway tracks beside the platform"
+   ],
+   "must_not": [
+    "no train at the platform",
+    "no ticket machine",
+    "no broom"
+   ],
+   "o": [
+    "A man is boarding a train at the platform.",
+    "A man is buying a ticket from a machine.",
+    "A man is seated on a bench near the tracks.",
+    "A man is sweeping the platform with a broom."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 한 남성이 승강장에서 열차에 탑승하고 있다.",
+    "(B) 한 남성이 기계에서 표를 사고 있다.",
+    "(C) 한 남성이 선로 근처 벤치에 앉아 있다.",
+    "(D) 한 남성이 빗자루로 승강장을 쓸고 있다."
+   ],
+   "exp": "남성이 승강장 벤치에 앉아 있으므로 (C) is seated on a bench 가 정답이다. 열차·발권기·빗자루는 사진에 없으므로 boarding, buying, sweeping 은 모두 오답이다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-093",
+   "type": "single",
+   "setting": "버스 정류장",
+   "lv": 3,
+   "scene": "버스 정류장 유리 쉼터 옆에 여성이 서서 휴대전화 화면을 내려다보고 있다. 쉼터 안 벤치는 비어 있고 도로에 버스는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A Hispanic woman in her thirties with a ponytail, wearing a navy blazer, stands upright on a city sidewalk beside a glass bus shelter, holding a smartphone in one hand and looking down at its screen. She is standing outside the shelter, not sitting; the bench inside the shelter is empty. The shelter walls are clear glass with no maps or posters. No bus is in the street. Medium distance. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman standing next to a bus shelter",
+    "woman looking down at a phone in her hand"
+   ],
+   "must_not": [
+    "woman is not sitting",
+    "no bus in the street",
+    "no map or poster on the shelter"
+   ],
+   "o": [
+    "A woman is getting off a bus at the curb.",
+    "A woman is looking at her phone at a bus stop.",
+    "A woman is sitting on a bench in a shelter.",
+    "A woman is studying a map posted on a wall."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 한 여성이 연석 쪽에서 버스에서 내리고 있다.",
+    "(B) 한 여성이 버스 정류장에서 휴대전화를 보고 있다.",
+    "(C) 한 여성이 쉼터 안 벤치에 앉아 있다.",
+    "(D) 한 여성이 벽에 붙은 지도를 살펴보고 있다."
+   ],
+   "exp": "여성은 쉼터 밖에 서서 휴대전화를 보고 있으므로 (B)가 정답이다. 쉼터와 벤치가 보여 (C) sitting on a bench 가 그럴듯하지만 벤치는 비어 있고, 버스와 지도는 사진에 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-094",
+   "type": "single",
+   "setting": "거리·횡단보도",
+   "lv": 1,
+   "scene": "도심 도로의 횡단보도 한가운데를 서류 가방을 든 중년 남성이 걸어서 건너고 있다. 차들은 정지선 뒤에 멈춰 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A middle-aged white man in a light blue shirt and dark trousers walks across a wide city street on a white-striped crosswalk, carrying a leather briefcase in one hand. He is in the middle of the crosswalk, mid-stride. Cars wait behind the stop line. His free hand hangs at his side; he is not raising an arm. No taxis are visible, and no police officer or traffic worker is present. He is upright, not bending down. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man walking on a striped crosswalk",
+    "man carrying a briefcase",
+    "cars stopped behind the line"
+   ],
+   "must_not": [
+    "man is not raising an arm",
+    "no police officer or traffic worker",
+    "man is not bending down"
+   ],
+   "o": [
+    "A man is waving to stop a taxi.",
+    "A man is tying his shoe at the curb.",
+    "A man is directing traffic at an intersection.",
+    "A man is walking across a street at a crosswalk."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 한 남성이 택시를 세우려고 손을 흔들고 있다.",
+    "(B) 한 남성이 연석에서 신발 끈을 묶고 있다.",
+    "(C) 한 남성이 교차로에서 교통 정리를 하고 있다.",
+    "(D) 한 남성이 횡단보도에서 길을 건너고 있다."
+   ],
+   "exp": "남성이 횡단보도 위를 걸어서 건너고 있으므로 (D) walking across a street 가 정답이다. 손을 들거나 몸을 숙이는 동작이 없으므로 택시를 부르거나 신발 끈을 묶는다는 문장은 틀리고, 교통 정리하는 사람도 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-095",
+   "type": "single",
+   "setting": "공원·호숫가",
+   "lv": 1,
+   "scene": "공원 호숫가의 포장된 산책로를 젊은 여성이 조깅하고 있다. 호수에는 보트가 없고 뒤쪽 벤치는 비어 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A young East Asian woman in a gray T-shirt and black running leggings jogs along a paved path beside a calm lake in a green park, mid-stride with her arms bent, seen from the side. Her hands are empty. The lake surface is empty with no boats. There are no birds near her. An empty wooden bench stands beside the path behind her. Medium distance. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman jogging on a path",
+    "lake next to the path"
+   ],
+   "must_not": [
+    "no boats on the lake",
+    "no birds near the woman",
+    "no one sitting on the bench"
+   ],
+   "o": [
+    "A woman is rowing a boat across the lake.",
+    "A woman is feeding some birds by the water.",
+    "A woman is jogging on a path beside a lake.",
+    "A woman is resting on a wooden bench."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 한 여성이 호수를 가로질러 보트를 젓고 있다.",
+    "(B) 한 여성이 물가에서 새들에게 먹이를 주고 있다.",
+    "(C) 한 여성이 호숫가 길을 따라 조깅하고 있다.",
+    "(D) 한 여성이 나무 벤치에서 쉬고 있다."
+   ],
+   "exp": "여성이 호숫가 길을 달리고 있으므로 (C) jogging 이 정답이다. 벤치는 있지만 비어 있어 resting on a bench 는 오답이고, 보트와 새는 사진에 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-096",
+   "type": "single",
+   "setting": "해변",
+   "lv": 2,
+   "scene": "젊은 남성이 서핑보드를 한쪽 팔에 끼고 해변의 젖은 모래 위를 걸어가고 있다. 파라솔이나 수건은 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A tanned young man in dark swim shorts and a short-sleeved rash guard walks along a sandy beach near the water's edge, carrying a white surfboard under one arm. He is walking on the sand, not in the water. Small waves roll in behind him with no swimmers. There are no beach umbrellas and no towels anywhere on the sand. Full body visible, medium distance. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man walking on sand",
+    "surfboard held under one arm",
+    "sea in the background"
+   ],
+   "must_not": [
+    "man is not in the water",
+    "no beach umbrella",
+    "no towel on the sand"
+   ],
+   "o": [
+    "A man is carrying a surfboard along the shore.",
+    "A man is swimming out past the waves.",
+    "A man is setting up a beach umbrella.",
+    "A man is lying on a towel in the sand."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 한 남성이 해변을 따라 서핑보드를 들고 가고 있다.",
+    "(B) 한 남성이 파도 너머로 헤엄쳐 나가고 있다.",
+    "(C) 한 남성이 해변 파라솔을 설치하고 있다.",
+    "(D) 한 남성이 모래 위 수건에 누워 있다."
+   ],
+   "exp": "남성이 서핑보드를 팔에 끼고 물가 모래 위를 걷고 있으므로 (A) carrying a surfboard 가 정답이다. 물속에 있지 않으므로 swimming 은 틀리고, 파라솔과 수건은 사진에 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-097",
+   "type": "single",
+   "setting": "정원",
+   "lv": 2,
+   "scene": "여성이 원예 장갑을 끼고 화단 옆 잔디에 무릎을 꿇은 채 모종삽으로 꽃 모종을 심고 있다. 잔디 위에는 물이 나오지 않는 호스가 감겨 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A woman in her fifties with shoulder-length brown hair, wearing a denim shirt and green gardening gloves, kneels on the grass beside a flower bed, holding a small trowel and setting a young flowering plant into the soil. A coiled green garden hose lies on the lawn a few steps away; she is not holding it and no water is coming out. There is no wheelbarrow, and she has no hedge shears. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman kneeling next to a flower bed",
+    "woman holding a small trowel",
+    "gardening gloves on her hands"
+   ],
+   "must_not": [
+    "hose is not in her hands and no water flows",
+    "no wheelbarrow",
+    "no hedge shears"
+   ],
+   "o": [
+    "A woman is watering plants with a hose.",
+    "A woman is pushing a wheelbarrow across the lawn.",
+    "A woman is trimming a hedge with shears.",
+    "A woman is kneeling beside a flower bed."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 한 여성이 호스로 식물에 물을 주고 있다.",
+    "(B) 한 여성이 잔디밭을 가로질러 손수레를 밀고 있다.",
+    "(C) 한 여성이 가위로 산울타리를 다듬고 있다.",
+    "(D) 한 여성이 화단 옆에 무릎을 꿇고 있다."
+   ],
+   "exp": "여성이 화단 옆에 무릎을 꿇고 모종을 심고 있으므로 (D) kneeling beside a flower bed 가 정답이다. 호스는 바닥에 감겨 있을 뿐 사용 중이 아니어서 watering 은 오답이고, 손수레와 전지가위는 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-098",
+   "type": "single",
+   "setting": "정원",
+   "lv": 1,
+   "scene": "밀짚모자를 쓴 노인이 돌 테라스에 서서 물뿌리개를 기울여 화분에 물을 주고 있다. 갈퀴나 삽은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An elderly South Asian man in a checked shirt and a straw hat stands on a flat stone patio, tilting a metal watering can over a row of clay pots with green plants; a stream of water pours from the spout onto the plants. He holds only the watering can. The pots sit on the ground. There is no rake, no shovel, and no steps anywhere. No fallen leaves on the ground. Medium distance. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man tilting a watering can",
+    "water pouring onto potted plants"
+   ],
+   "must_not": [
+    "no rake or shovel",
+    "no steps or stairs",
+    "man is not carrying a pot"
+   ],
+   "o": [
+    "A man is raking leaves on the lawn.",
+    "A man is watering some potted plants on a patio.",
+    "A man is digging a hole with a shovel.",
+    "A man is carrying a flowerpot up some steps."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 한 남성이 잔디밭에서 낙엽을 갈퀴로 모으고 있다.",
+    "(B) 한 남성이 테라스에서 화분 식물에 물을 주고 있다.",
+    "(C) 한 남성이 삽으로 구덩이를 파고 있다.",
+    "(D) 한 남성이 화분을 들고 계단을 올라가고 있다."
+   ],
+   "exp": "남성이 물뿌리개로 화분에 물을 붓고 있으므로 (B) watering some potted plants 가 정답이다. 갈퀴·삽·계단이 사진에 없으므로 나머지 동작은 모두 일어나지 않는다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-099",
+   "type": "single",
+   "setting": "자전거 거치대",
+   "lv": 2,
+   "scene": "젊은 여성이 인도의 자전거 거치대 옆에 쪼그려 앉아 U자형 자물쇠로 자전거를 거치대에 묶고 있다. 헬멧은 없고 바퀴는 멀쩡하다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A young woman with curly red hair, wearing a green jacket and jeans, crouches beside a metal bicycle rack on a city sidewalk, fastening a black U-shaped lock around the frame of her blue bicycle and the rack. The bicycle is parked and standing still. She has no helmet on her head or in her hands. Both tires are fully inflated, and there are no tools or pumps nearby. Medium distance. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman crouching beside a bicycle rack",
+    "U-shaped lock around the bike frame and the rack"
+   ],
+   "must_not": [
+    "no helmet anywhere",
+    "no one riding a bicycle",
+    "no tools or pump"
+   ],
+   "o": [
+    "A woman is locking her bicycle to a rack.",
+    "A woman is riding her bicycle down the street.",
+    "A woman is putting on a bicycle helmet.",
+    "A woman is fixing a flat tire on the sidewalk."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 한 여성이 자전거를 거치대에 자물쇠로 묶고 있다.",
+    "(B) 한 여성이 길을 따라 자전거를 타고 가고 있다.",
+    "(C) 한 여성이 자전거 헬멧을 쓰는 중이다.",
+    "(D) 한 여성이 인도에서 바람 빠진 타이어를 고치고 있다."
+   ],
+   "exp": "여성이 U자 자물쇠를 자전거 프레임과 거치대에 걸고 있으므로 (A) locking her bicycle 이 정답이다. 쪼그려 앉은 자세 때문에 타이어를 고친다고 착각하기 쉽지만 공구나 펌프가 없고, 헬멧도 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-100",
+   "type": "single",
+   "setting": "야외 카페·광장",
+   "lv": 1,
+   "scene": "야외 카페 테라스에서 앞치마를 두른 젊은 남성 직원이 행주로 둥근 테이블을 닦고 있다. 손님은 없고 파라솔은 이미 펼쳐져 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A young man in a black apron and white shirt bends over a round metal table on an outdoor cafe patio, wiping the tabletop with a cloth in his right hand. All the other tables are empty; there are no customers. The chairs stand normally on the ground, not stacked. Large patio umbrellas are already open above the tables, and he is not touching them. Medium distance. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man in an apron wiping a table with a cloth",
+    "outdoor cafe patio with tables"
+   ],
+   "must_not": [
+    "no customers",
+    "chairs are not stacked",
+    "man is not touching an umbrella"
+   ],
+   "o": [
+    "A man is taking an order from a customer.",
+    "A man is opening a large umbrella over a table.",
+    "A man is wiping off a table on a patio.",
+    "A man is stacking some chairs against a wall."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 한 남성이 손님에게서 주문을 받고 있다.",
+    "(B) 한 남성이 테이블 위로 큰 파라솔을 펼치고 있다.",
+    "(C) 한 남성이 테라스에서 테이블을 닦고 있다.",
+    "(D) 한 남성이 벽에 의자들을 쌓고 있다."
+   ],
+   "exp": "직원이 행주로 테이블을 닦고 있으므로 (C) wiping off a table 이 정답이다. 손님이 없으므로 주문을 받을 수 없고, 파라솔은 이미 펼쳐져 있으며 의자도 쌓여 있지 않다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-101",
+   "type": "single",
+   "setting": "계단·에스컬레이터",
+   "lv": 3,
+   "scene": "지하철역에서 정장 차림의 여성이 올라가는 에스컬레이터에 가만히 서서 오른손으로 손잡이를 잡고 있다. 옆에 계단이나 엘리베이터는 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A businesswoman in her forties with a short black bob, wearing a gray suit, rides an upward escalator in a bright modern subway station, standing still on one step with her right hand gripping the black rubber handrail. She faces toward the top, seen from the side at medium distance. She is not walking. No staircase or elevator is visible. She carries only a small handbag on her shoulder, no boxes. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "woman standing on an escalator",
+    "her hand gripping the handrail"
+   ],
+   "must_not": [
+    "no staircase",
+    "no elevator",
+    "no box in her hands"
+   ],
+   "o": [
+    "A woman is walking down a flight of stairs.",
+    "A woman is carrying a box up the escalator.",
+    "A woman is waiting in front of an elevator.",
+    "A woman is holding onto the handrail of an escalator."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 한 여성이 계단을 걸어 내려가고 있다.",
+    "(B) 한 여성이 상자를 들고 에스컬레이터를 올라가고 있다.",
+    "(C) 한 여성이 엘리베이터 앞에서 기다리고 있다.",
+    "(D) 한 여성이 에스컬레이터 손잡이를 잡고 있다."
+   ],
+   "exp": "여성이 에스컬레이터에 서서 손잡이를 잡고 있으므로 (D)가 정답이다. 에스컬레이터를 계단(stairs)으로 혼동하게 하는 (A)가 함정이지만 사진에 계단은 없고, 상자와 엘리베이터도 없다.",
+   "trap": "위치 혼동"
+  },
+  {
+   "id": "p1-102",
+   "type": "single",
+   "setting": "계단·에스컬레이터",
+   "lv": 2,
+   "scene": "공공건물 앞 넓은 돌계단에 젊은 남성이 앉아 몸을 숙이고 두 손으로 운동화 끈을 묶고 있다. 계단 옆 난간에는 손을 대고 있지 않다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A young Black man in a navy hoodie and running shoes sits on the wide stone steps outside a public building, leaning forward and tying the laces of one shoe with both hands. A metal railing runs along the side of the steps a short distance away, and he is not touching it. He is sitting still. There is no broom anywhere, and no other people are on the steps. Medium distance. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man sitting on outdoor steps",
+    "both hands on his shoelaces"
+   ],
+   "must_not": [
+    "man is not touching the railing",
+    "no broom",
+    "nobody running on the steps"
+   ],
+   "o": [
+    "A man is running up a flight of stairs.",
+    "A man is tying his shoe on some outdoor steps.",
+    "A man is sweeping the steps with a broom.",
+    "A man is leaning against a metal railing."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 한 남성이 계단을 뛰어 올라가고 있다.",
+    "(B) 한 남성이 야외 계단에서 신발 끈을 묶고 있다.",
+    "(C) 한 남성이 빗자루로 계단을 쓸고 있다.",
+    "(D) 한 남성이 금속 난간에 기대어 있다."
+   ],
+   "exp": "남성이 계단에 앉아 두 손으로 신발 끈을 묶고 있으므로 (B)가 정답이다. 난간은 사진에 있지만 남성이 기대고 있지 않으며, 뛰거나 빗자루질하는 동작도 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-103",
+   "type": "multi",
+   "setting": "공항",
+   "lv": 2,
+   "scene": "공항 출발 라운지의 통유리창 앞에 여행객 세 명이 나란히 서서 활주로에 서 있는 비행기를 바라보고 있다. 짐은 발밑에 놓여 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Three travelers of different ages and ethnicities stand side by side at a tall floor-to-ceiling window in an airport departure lounge, looking out at a passenger airplane parked on the tarmac. They are seen from behind at a slight angle. Their carry-on bags rest on the floor beside them. Nobody is walking toward the plane or on a boarding bridge. There is no check-in counter, no luggage scale, and no line of people. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "three people standing at a large window",
+    "parked airplane visible outside"
+   ],
+   "must_not": [
+    "nobody boarding the plane",
+    "no luggage scale or counter",
+    "people are not in a queue"
+   ],
+   "o": [
+    "Some travelers are boarding an airplane at the gate.",
+    "One of the travelers is weighing a suitcase.",
+    "Some travelers are looking out a large window.",
+    "Some travelers are standing in line at a counter."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 여행객 몇 명이 탑승구에서 비행기에 탑승하고 있다.",
+    "(B) 여행객 중 한 명이 여행 가방의 무게를 재고 있다.",
+    "(C) 여행객 몇 명이 큰 창밖을 내다보고 있다.",
+    "(D) 여행객 몇 명이 카운터 앞에 줄을 서 있다."
+   ],
+   "exp": "세 사람이 통유리창 앞에 서서 밖을 내다보고 있으므로 (C) looking out a large window 가 정답이다. 비행기는 밖에 세워져 있을 뿐 탑승 중이 아니고, 저울이나 카운터 앞 줄도 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-104",
+   "type": "multi",
+   "setting": "버스 정류장",
+   "lv": 2,
+   "scene": "출근 차림의 남녀 네 명이 버스 정류장 표지 기둥 옆 인도에 한 줄로 서 있다. 쉼터나 벤치는 없고 도로에 버스도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Four commuters, men and women of different ethnicities in office clothes, stand in a single-file line on a city sidewalk next to a bus stop pole topped with a small sign showing only a bus pictogram, all facing the same direction down the street. No bus is in the street. There is no shelter and no bench at this stop. The weather is clear and dry; nobody holds an umbrella. Medium-wide shot. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "four people standing in a single line",
+    "bus stop pole with a bus pictogram sign on the sidewalk"
+   ],
+   "must_not": [
+    "no bus",
+    "no bench",
+    "no umbrella"
+   ],
+   "o": [
+    "Some people are standing in a line at a bus stop.",
+    "Some people are getting on a bus at the stop.",
+    "Some people are sitting on a bench in a shelter.",
+    "One of the men is opening an umbrella."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 몇몇 사람들이 버스 정류장에 줄을 서 있다.",
+    "(B) 몇몇 사람들이 정류장에서 버스에 오르고 있다.",
+    "(C) 몇몇 사람들이 쉼터 안 벤치에 앉아 있다.",
+    "(D) 남자들 중 한 명이 우산을 펴고 있다."
+   ],
+   "exp": "네 사람이 정류장 기둥 옆에 한 줄로 서 있으므로 (A) standing in a line 이 정답이다. 버스가 아직 오지 않아 getting on a bus 는 틀리고, 벤치와 우산은 사진에 없다.",
+   "trap": "없는 사물"
+  },
+  {
+   "id": "p1-105",
+   "type": "multi",
+   "setting": "거리·횡단보도",
+   "lv": 1,
+   "scene": "도심 교차로의 횡단보도를 여러 보행자가 양방향으로 건너고 있다. 차들은 정지선 뒤에 서 있고 교통경찰은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Several pedestrians of various ages and ethnicities walk across a white-striped crosswalk at a busy downtown intersection, some heading left and some heading right. Cars are stopped behind the white line, waiting; all traffic in view is stopped and no vehicle is moving through the intersection. No police officer or traffic worker is present. Nobody is riding a bicycle; there are no bicycles in the scene. Medium-wide shot from the sidewalk corner. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "several people walking on a crosswalk",
+    "cars stopped behind the line"
+   ],
+   "must_not": [
+    "no vehicle moving through the intersection",
+    "no police officer",
+    "no bicycles"
+   ],
+   "o": [
+    "Some cars are driving through the busy intersection.",
+    "A police officer is directing traffic in the street.",
+    "Some people are riding bicycles across the street.",
+    "Some pedestrians are crossing the street at a crosswalk."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 차 몇 대가 붐비는 교차로를 지나가고 있다.",
+    "(B) 경찰관 한 명이 도로에서 교통 정리를 하고 있다.",
+    "(C) 몇몇 사람들이 자전거를 타고 길을 건너고 있다.",
+    "(D) 몇몇 보행자들이 횡단보도에서 길을 건너고 있다."
+   ],
+   "exp": "여러 사람이 횡단보도를 걸어서 건너고 있으므로 (D)가 정답이다. 차들은 정지선 뒤에 멈춰 있어 (A) driving through 는 틀리고, 경찰관과 자전거는 사진에 없다.",
+   "trap": "상태 혼동"
+  },
+  {
+   "id": "p1-106",
+   "type": "multi",
+   "setting": "공원·호숫가",
+   "lv": 1,
+   "scene": "노부부가 호수를 향한 공원 나무 벤치에 나란히 앉아 있고, 여성이 물 쪽을 가리키고 있다. 호수에 보트는 없고 개나 돗자리도 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An older couple, a white-haired man and a gray-haired woman, sit side by side on a wooden park bench facing a calm lake, seen from behind at a slight angle. The woman points toward the water while the man looks. The lake has no boats. There is no dog and no ball anywhere. They sit on the bench, not on the grass, and no blanket is visible. Medium distance. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two people sitting on one bench",
+    "bench facing a lake"
+   ],
+   "must_not": [
+    "no boats",
+    "no dog or ball",
+    "no blanket"
+   ],
+   "o": [
+    "Two people are rowing a boat on the lake.",
+    "Two people are sitting on a bench facing a lake.",
+    "A woman is throwing a ball for a dog.",
+    "Two people are spreading a blanket on the grass."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 두 사람이 호수에서 보트를 젓고 있다.",
+    "(B) 두 사람이 호수를 향한 벤치에 앉아 있다.",
+    "(C) 한 여성이 개에게 공을 던져 주고 있다.",
+    "(D) 두 사람이 잔디 위에 담요를 펼치고 있다."
+   ],
+   "exp": "두 사람이 호수를 바라보는 벤치에 나란히 앉아 있으므로 (B) sitting on a bench 가 정답이다. 여성이 손을 뻗고 있어 공을 던진다고 착각할 수 있지만 개와 공은 없고, 보트와 담요도 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-107",
+   "type": "multi",
+   "setting": "해변",
+   "lv": 2,
+   "scene": "해변에서 남녀가 줄무늬 파라솔을 세우고 있다. 남성은 기둥을 모래에 박고 여성은 펼쳐진 덮개를 붙잡고 있으며, 접힌 수건은 가방 위에 그대로 놓여 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A man and a woman in their thirties set up a large striped beach umbrella on a sandy beach. The man pushes the umbrella pole down into the sand with both hands while the woman holds the open canopy steady above him. A stack of folded towels sits untouched on a beach bag beside them. There is no cooler. Neither of them is in the water, and the sea behind them has no swimmers. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "man pushing an umbrella pole into the sand",
+    "woman holding the open umbrella canopy"
+   ],
+   "must_not": [
+    "nobody in the water",
+    "towels untouched on the bag",
+    "no cooler"
+   ],
+   "o": [
+    "Two people are swimming close to the shore.",
+    "The woman is folding some towels beside a bag.",
+    "They are carrying a cooler across the sand.",
+    "Two people are setting up a beach umbrella."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 두 사람이 해안 가까이에서 수영하고 있다.",
+    "(B) 여성이 가방 옆에서 수건을 개고 있다.",
+    "(C) 그들이 모래사장을 가로질러 아이스박스를 나르고 있다.",
+    "(D) 두 사람이 해변 파라솔을 설치하고 있다."
+   ],
+   "exp": "두 사람이 함께 파라솔 기둥을 박고 덮개를 붙잡고 있으므로 (D) setting up a beach umbrella 가 정답이다. 수건은 이미 개어진 채 놓여 있을 뿐 개는 중이 아니며, 물속에 있는 사람이나 아이스박스는 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-108",
+   "type": "multi",
+   "setting": "정원",
+   "lv": 3,
+   "scene": "넓은 정원에서 작업자 두 명이 일하고 있다. 왼쪽 남성은 삽으로 화단을 파고, 오른쪽 여성은 흙이 담긴 손수레를 밀며 자갈길을 걷고 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Two landscape workers in green work shirts and boots are in a large garden. On the left, a bearded man digs into a flower bed with a long-handled shovel, one foot on the blade. On the right, a woman with a ponytail pushes a wheelbarrow full of soil along a gravel path; her hands are on the wheelbarrow handles. There is only one shovel in the scene. No lawnmower is visible, and there is no tree or root ball near them. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "one worker digging with a shovel",
+    "other worker pushing a wheelbarrow"
+   ],
+   "must_not": [
+    "only one shovel, the woman holds no shovel",
+    "no lawnmower",
+    "no tree being planted"
+   ],
+   "o": [
+    "One of the workers is pushing a wheelbarrow.",
+    "Both of the workers are digging with shovels.",
+    "One of the workers is mowing the lawn.",
+    "The workers are planting a small tree together."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 작업자 중 한 명이 손수레를 밀고 있다.",
+    "(B) 두 작업자 모두 삽으로 땅을 파고 있다.",
+    "(C) 작업자 중 한 명이 잔디를 깎고 있다.",
+    "(D) 작업자들이 함께 작은 나무를 심고 있다."
+   ],
+   "exp": "오른쪽 작업자가 손수레를 밀고 있으므로 (A) One of the workers is pushing a wheelbarrow 가 정답이다. 삽질은 한 명만 하고 있어 Both 로 시작하는 문장은 주어 범위가 틀린 오답이며, 잔디 깎는 기계와 나무는 없다.",
+   "trap": "주어 혼동"
+  },
+  {
+   "id": "p1-109",
+   "type": "multi",
+   "setting": "자전거 거치대",
+   "lv": 2,
+   "scene": "인도의 자전거 거치대 옆에서 남녀가 각자 자전거를 끌어 앞바퀴를 거치대 칸에 밀어 넣고 있다. 주변에 차나 공구는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Two young adults, a man in a gray hoodie and a woman in a red jacket, stand on a city sidewalk beside a metal bicycle rack, each rolling the front wheel of their own bicycle into a slot of the rack. Both are walking beside their bikes, not riding them. No car is nearby. No pump or tools are visible, and all tires are fully inflated. Medium distance. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "two people pushing bicycles into a rack",
+    "both standing on the ground, not riding"
+   ],
+   "must_not": [
+    "nobody riding a bike",
+    "no pump",
+    "no car nearby"
+   ],
+   "o": [
+    "Two people are riding their bicycles on a trail.",
+    "The woman is pumping air into a tire.",
+    "They are loading their bicycles onto a car.",
+    "Two people are parking their bicycles in a rack."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 두 사람이 산책로에서 자전거를 타고 있다.",
+    "(B) 여성이 타이어에 바람을 넣고 있다.",
+    "(C) 그들이 자전거를 차에 싣고 있다.",
+    "(D) 두 사람이 자전거를 거치대에 세우고 있다."
+   ],
+   "exp": "두 사람이 자전거 앞바퀴를 거치대에 밀어 넣고 있으므로 (D) parking their bicycles 가 정답이다. 자전거에 올라타 있지 않아 riding 은 틀리고, 펌프와 자동차는 사진에 없다.",
+   "trap": "동작 혼동"
+  },
+  {
+   "id": "p1-110",
+   "type": "multi",
+   "setting": "야외 카페·광장",
+   "lv": 2,
+   "scene": "광장의 야외 카페 테라스에서 앞치마를 두른 여성 종업원이 쟁반에서 아이스커피 두 잔을 꺼내 테이블에 내려놓고 있다. 앉아 있는 손님 두 명은 서로 대화 중이다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. On a sunny outdoor cafe terrace in a town square, a female server in a black apron sets two glasses of iced coffee on a small round table, taking them from a tray in her other hand. Two seated customers, a man and a woman, are chatting with each other. There are no menus on the table, and nobody is holding papers. The server has no cloth. No cash register or counter is visible. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "server setting glasses on a table",
+    "tray in the server's hand",
+    "two seated customers"
+   ],
+   "must_not": [
+    "no menus",
+    "no cloth in the server's hand",
+    "no register or counter"
+   ],
+   "o": [
+    "The customers are looking at some paper menus.",
+    "A server is wiping the table with a cloth.",
+    "A server is placing some drinks on a table.",
+    "The customers are paying for their drinks at a counter."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 손님들이 종이 메뉴판을 보고 있다.",
+    "(B) 종업원이 행주로 테이블을 닦고 있다.",
+    "(C) 종업원이 테이블에 음료를 내려놓고 있다.",
+    "(D) 손님들이 카운터에서 음료값을 계산하고 있다."
+   ],
+   "exp": "종업원이 쟁반에서 음료를 꺼내 테이블에 놓고 있으므로 (C) placing drinks on a table 이 정답이다. 메뉴판과 행주가 없고 손님들은 앉아서 대화 중이므로 나머지 문장은 모두 틀리다.",
+   "trap": "주어 혼동"
+  },
+  {
+   "id": "p1-111",
+   "type": "multi",
+   "setting": "계단·에스컬레이터",
+   "lv": 1,
+   "scene": "밝은 쇼핑몰에서 여러 쇼핑객이 긴 에스컬레이터의 각기 다른 칸에 서서 이동하고 있다. 계단·엘리베이터·수리 작업자는 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Several shoppers of different ages ride a long escalator in a bright shopping mall, each standing on a separate step, some holding shopping bags. The escalator is running normally. There are no stairs and no elevator visible in the frame. No workers, tools, or repair barriers are near the escalator. Medium-wide shot from the side. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "several people standing on an escalator",
+    "shopping mall interior"
+   ],
+   "must_not": [
+    "no stairs",
+    "no elevator",
+    "no repair worker or barrier"
+   ],
+   "o": [
+    "Some people are climbing a flight of stairs.",
+    "Some people are riding an escalator in a building.",
+    "A worker is repairing the escalator with some tools.",
+    "Some people are waiting in front of an elevator."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 몇몇 사람들이 계단을 올라가고 있다.",
+    "(B) 몇몇 사람들이 건물 안에서 에스컬레이터를 타고 있다.",
+    "(C) 작업자 한 명이 공구로 에스컬레이터를 수리하고 있다.",
+    "(D) 몇몇 사람들이 엘리베이터 앞에서 기다리고 있다."
+   ],
+   "exp": "사람들이 에스컬레이터에 서서 이동하고 있으므로 (B) riding an escalator 가 정답이다. 계단(stairs)과 엘리베이터는 사진에 없고, 수리하는 작업자도 없다.",
+   "trap": "위치 혼동"
+  },
+  {
+   "id": "p1-112",
+   "type": "scene",
+   "setting": "공항",
+   "lv": 3,
+   "scene": "사람이 없는 공항 출발 라운지에 연결된 좌석들이 여러 줄로 놓여 있다. 창밖 게이트에는 비행기가 세워져 있고 좌석 위에 짐은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An empty airport departure lounge with several long rows of connected black seats, all unoccupied and neatly aligned. A large window behind the seats shows a passenger airplane parked at the gate, stationary on the ground; no other aircraft is in the sky or on a runway. The seats are clean and bare; there are no bags or luggage on or near them, and no cleaning cart, mop, or bucket anywhere. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "rows of empty connected seats",
+    "parked airplane seen through the window"
+   ],
+   "must_not": [
+    "no cleaning equipment",
+    "no airplane in the air or taking off",
+    "no bags on the seats"
+   ],
+   "o": [
+    "Some seats are being cleaned in a lounge.",
+    "An airplane is taking off from a runway.",
+    "Some bags have been left on the seats.",
+    "Some seats are arranged in rows in a waiting area."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 라운지에서 좌석들이 청소되고 있다.",
+    "(B) 비행기 한 대가 활주로에서 이륙하고 있다.",
+    "(C) 좌석 위에 가방 몇 개가 놓여 있다.",
+    "(D) 대기 구역에 좌석들이 여러 줄로 배열되어 있다."
+   ],
+   "exp": "좌석들이 여러 줄로 놓여 있으므로 (D) are arranged in rows 가 정답이다. 사람이 없는 사진에서 are being cleaned(지금 청소되는 중)는 오답이고, 비행기는 게이트에 서 있으며 좌석 위에 가방도 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-113",
+   "type": "scene",
+   "setting": "기차역",
+   "lv": 2,
+   "scene": "아무도 없는 야외 승강장 옆에 은색 통근 열차가 문을 닫은 채 정차해 있다. 벤치는 완성된 상태로 고정되어 있고 선로에 눈은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An empty outdoor train platform on a clear summer day. A silver commuter train is stopped alongside the platform with its doors closed. The platform is completely empty. A few metal benches along the platform are fully assembled and bolted down; there are no tools, boxes, or construction materials. The tracks and platform are dry and clear, with no snow. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "train stopped beside the platform",
+    "empty platform with benches"
+   ],
+   "must_not": [
+    "no passengers",
+    "no tools or construction materials",
+    "no snow"
+   ],
+   "o": [
+    "Some passengers are waiting on the train platform.",
+    "A train is stopped next to a platform.",
+    "Some benches are being installed on the platform.",
+    "The tracks along the platform are covered with snow."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 승객 몇 명이 기차 승강장에서 기다리고 있다.",
+    "(B) 열차 한 대가 승강장 옆에 정차해 있다.",
+    "(C) 승강장에 벤치들이 설치되고 있다.",
+    "(D) 승강장을 따라 난 선로가 눈으로 덮여 있다."
+   ],
+   "exp": "열차가 승강장 옆에 서 있으므로 (B) A train is stopped next to a platform 이 정답이다. 승강장에 사람이 없어 승객이 기다린다는 문장과 벤치가 설치되는 중이라는 수동태 진행형은 틀리고, 선로에 눈도 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-114",
+   "type": "scene",
+   "setting": "자전거 거치대",
+   "lv": 2,
+   "scene": "도심 인도의 금속 거치대에 자전거 여섯 대가 나란히 세워져 있다. 쓰러진 자전거나 가로등에 기대 놓인 자전거는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A row of six bicycles parked side by side in a metal bicycle rack on a city sidewalk, each standing upright with its front wheel in the rack. All six bicycles stand upright inside the rack and nothing lies on the pavement. There is no lamppost near the rack, and no bicycle stands apart from it. There are no tools, pumps, or repair stands anywhere. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "six bicycles standing upright in a rack",
+    "city sidewalk"
+   ],
+   "must_not": [
+    "no fallen bicycle",
+    "no bicycle leaning on a lamppost",
+    "no tools or repair stand"
+   ],
+   "o": [
+    "Some bicycles are being repaired on the sidewalk.",
+    "A bicycle is leaning against a lamppost nearby.",
+    "Some bicycles have been parked in a rack.",
+    "A bicycle has fallen over on the pavement."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 인도에서 자전거 몇 대가 수리되고 있다.",
+    "(B) 자전거 한 대가 근처 가로등에 기대어 있다.",
+    "(C) 자전거 몇 대가 거치대에 세워져 있다.",
+    "(D) 자전거 한 대가 보도 위에 쓰러져 있다."
+   ],
+   "exp": "자전거들이 거치대에 세워져 있으므로 (C) have been parked in a rack 이 정답이다. 사람이 없으므로 are being repaired 는 오답이고, 가로등에 기대거나 쓰러진 자전거도 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-115",
+   "type": "scene",
+   "setting": "정원",
+   "lv": 3,
+   "scene": "조용한 뒷마당 정원의 화단 옆 잔디 위에 초록색 호스가 감겨 있고 물은 나오지 않는다. 삽은 나무 울타리에 기대어 있고 빈 손수레가 옆에 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A quiet backyard garden with a neat flower bed of red and yellow flowers. A green garden hose lies neatly coiled on the grass beside the bed; it is dry and no water is flowing. No sprinklers are running. A shovel stands upright, leaning against a wooden fence, and an empty wheelbarrow sits on the grass nearby. There are no flowerpots and no shelves. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "coiled hose on the grass",
+    "shovel leaning against the fence",
+    "empty wheelbarrow"
+   ],
+   "must_not": [
+    "no water spraying",
+    "no shovel in the wheelbarrow",
+    "no flowerpots or shelves"
+   ],
+   "o": [
+    "A hose has been coiled up on the grass.",
+    "Some flowers are being watered in a garden.",
+    "A shovel has been left lying in a wheelbarrow.",
+    "Some flowerpots have been stacked on a wooden shelf."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 호스가 잔디 위에 감겨 있다.",
+    "(B) 정원에서 꽃들에 물이 뿌려지고 있다.",
+    "(C) 삽 한 자루가 손수레 안에 놓여 있다.",
+    "(D) 화분 몇 개가 나무 선반 위에 쌓여 있다."
+   ],
+   "exp": "호스가 잔디 위에 둥글게 감겨 있으므로 (A) has been coiled up 이 정답이다. 물이 나오지 않고 사람도 없어 are being watered 는 오답이며, 삽은 손수레 안이 아니라 울타리에 기대어 있다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-116",
+   "type": "scene",
+   "setting": "공원·호숫가",
+   "lv": 2,
+   "scene": "잔잔한 호수에 나무 보트 몇 척이 밧줄로 작은 나무 선착장에 묶여 떠 있다. 노는 보트 안에 놓여 있고 다리는 보이지 않는다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Several wooden rowboats float on calm water, each tied with a rope to a small wooden dock on a lake. Their oars rest inside the boats, not in the water. All the boats are in the water; none has been pulled up onto the shore. There is no bridge anywhere over the lake. The surface is still and quiet. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "rowboats tied to a dock with ropes",
+    "oars resting inside the boats"
+   ],
+   "must_not": [
+    "no one rowing",
+    "no bridge",
+    "no boats on the shore"
+   ],
+   "o": [
+    "Some boats are being rowed across the lake.",
+    "A bridge has been built across the lake.",
+    "Some boats have been pulled onto the shore.",
+    "Some rowboats have been tied to a wooden dock."
+   ],
+   "a": 3,
+   "ko": [
+    "(A) 보트 몇 척이 호수를 가로질러 저어지고 있다.",
+    "(B) 호수를 가로질러 다리가 놓여 있다.",
+    "(C) 보트 몇 척이 물가로 끌어올려져 있다.",
+    "(D) 나무 선착장에 보트 몇 척이 묶여 있다."
+   ],
+   "exp": "보트들이 밧줄로 선착장에 묶여 있으므로 (D) have been tied to a wooden dock 이 정답이다. 사람이 없으므로 are being rowed 는 오답이고, 보트는 모두 물 위에 있으며 다리는 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-117",
+   "type": "scene",
+   "setting": "해변",
+   "lv": 2,
+   "scene": "화창한 모래사장에 파란 파라솔이 한 줄로 펼쳐져 있고 각 파라솔 아래에 빈 흰색 선베드가 바다를 향해 놓여 있다. 수건은 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A row of open blue beach umbrellas on a sunny sandy beach, with one empty white lounge chair set up under each umbrella, all facing the sea. The chairs are unfolded and evenly spaced on the sand, not stacked. The umbrellas are fully open and still. There are no towels on the chairs or on the sand. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "row of open umbrellas",
+    "one unfolded lounge chair under each umbrella"
+   ],
+   "must_not": [
+    "no stacked chairs",
+    "no towels",
+    "umbrellas fully open, not half open"
+   ],
+   "o": [
+    "Some umbrellas are being opened on the beach.",
+    "Some lounge chairs have been set up under umbrellas.",
+    "Some lounge chairs are stacked near the water.",
+    "Some towels have been spread out on the sand."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 해변에서 파라솔 몇 개가 펼쳐지고 있다.",
+    "(B) 파라솔 아래에 선베드 몇 개가 설치되어 있다.",
+    "(C) 물가 근처에 선베드 몇 개가 쌓여 있다.",
+    "(D) 모래 위에 수건 몇 장이 펼쳐져 있다."
+   ],
+   "exp": "파라솔마다 아래에 선베드가 놓여 있으므로 (B) have been set up under umbrellas 가 정답이다. 파라솔은 이미 펼쳐진 상태이고 사람이 없으므로 are being opened 는 오답이며, 쌓인 의자와 수건은 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-118",
+   "type": "scene",
+   "setting": "야외 카페·광장",
+   "lv": 3,
+   "scene": "개점 전 이른 아침, 광장의 야외 카페 테라스 테이블마다 금속 의자 두 개가 거꾸로 올려져 있다. 파라솔은 접혀 묶여 있다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. An outdoor cafe terrace on a town square early in the morning before opening. On every square table, two metal chairs have been placed upside down on the tabletop, their legs pointing up. The patio umbrellas are closed and tied shut. The terrace is completely empty, with no cups or plates on the tables. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "chairs upside down on every table",
+    "closed patio umbrellas"
+   ],
+   "must_not": [
+    "no open umbrellas",
+    "no customers",
+    "no one handling chairs"
+   ],
+   "o": [
+    "Some chairs are being stacked on the tables.",
+    "Some umbrellas have been opened above the tables.",
+    "Some chairs have been placed upside down on the tables.",
+    "Some customers are seated at the tables on the terrace."
+   ],
+   "a": 2,
+   "ko": [
+    "(A) 의자 몇 개가 테이블 위에 쌓이고 있다.",
+    "(B) 테이블 위로 파라솔 몇 개가 펼쳐져 있다.",
+    "(C) 의자 몇 개가 테이블 위에 거꾸로 올려져 있다.",
+    "(D) 손님 몇 명이 테라스의 테이블에 앉아 있다."
+   ],
+   "exp": "의자들이 테이블 위에 거꾸로 올려진 상태이므로 (C) have been placed upside down 이 정답이다. 의자를 올리는 사람이 없으므로 are being stacked 는 오답이고, 파라솔은 접혀 있으며 손님도 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-119",
+   "type": "scene",
+   "setting": "야외 카페·광장",
+   "lv": 2,
+   "scene": "화창한 날 넓은 광장 한가운데에 둥근 돌 분수가 있고 물이 위로 뿜어져 나오고 있다. 분수 둘레에 나무 벤치들이 놓여 있고 새는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A wide paved town plaza on a sunny day with a round stone fountain in the center; water sprays upward and splashes into a full basin. Several wooden benches stand around the fountain at a distance. The benches are clean and finished, with no paint cans, brushes, or drop cloths nearby. There are no birds anywhere. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "water spraying from a fountain",
+    "basin full of water",
+    "benches around the plaza"
+   ],
+   "must_not": [
+    "no painting supplies",
+    "fountain is not dry",
+    "no birds"
+   ],
+   "o": [
+    "Water is spraying from a fountain in a plaza.",
+    "Some benches are being painted near a fountain.",
+    "The basin of the fountain has been drained of water.",
+    "Some birds are drinking water from the fountain."
+   ],
+   "a": 0,
+   "ko": [
+    "(A) 광장의 분수에서 물이 뿜어져 나오고 있다.",
+    "(B) 분수 근처에서 벤치 몇 개가 칠해지고 있다.",
+    "(C) 분수대 수조의 물이 빠져 있다.",
+    "(D) 새 몇 마리가 분수에서 물을 마시고 있다."
+   ],
+   "exp": "분수에서 물이 위로 뿜어져 나오고 있으므로 (A)가 정답이다. 사람이 없으므로 are being painted 는 오답이고, 분수에는 물이 가득하며 새도 없다.",
+   "trap": "is being p.p."
+  },
+  {
+   "id": "p1-120",
+   "type": "scene",
+   "setting": "계단·에스컬레이터",
+   "lv": 3,
+   "scene": "건물 입구로 이어지는 넓은 야외 콘크리트 계단의 오른쪽에 금속 난간이 아래부터 위까지 설치되어 있다. 화분 두 개는 계단 아래에만 있고 에스컬레이터는 없다.",
+   "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. A wide outdoor concrete staircase leading up to a building entrance, with a metal handrail running along the right side from bottom to top; the left side has no railing. Two large potted plants sit on the ground at the foot of the stairs only; the steps themselves are bare. The stairs are clean, with no broom and no leaves. There is no escalator anywhere. No people anywhere in the image. No readable text, no logos, no signs with words, no watermarks.",
+   "must": [
+    "handrail along the right side only",
+    "two potted plants at the bottom only"
+   ],
+   "must_not": [
+    "no plants on the steps",
+    "no broom",
+    "no escalator"
+   ],
+   "o": [
+    "The stairs are being swept with a broom.",
+    "A railing runs along one side of the stairs.",
+    "A potted plant has been placed on each step.",
+    "An escalator has been installed beside the staircase."
+   ],
+   "a": 1,
+   "ko": [
+    "(A) 계단이 빗자루로 쓸리고 있다.",
+    "(B) 계단 한쪽을 따라 난간이 설치되어 있다.",
+    "(C) 계단마다 화분이 하나씩 놓여 있다.",
+    "(D) 계단 옆에 에스컬레이터가 설치되어 있다."
+   ],
+   "exp": "계단 오른쪽을 따라 난간이 이어져 있으므로 (B)가 정답이다. 사람이 없어 (A) are being swept 는 오답이고, 화분은 계단 아래에만 있어 (C)도 틀리며 에스컬레이터는 없다.",
+   "trap": "is being p.p."
+  }
+ ]
+}
