@@ -155,13 +155,28 @@ if (enough) {
       p6: p6[m].map((x) => x.id), p7: p7s[m].concat(p7d[m], p7t[m]).map((x) => x.id) });
   }
 }
+// 첫 실력 진단 20문제 (LC 10 · RC 10): 모의고사에 안 쓰인 보통 난이도 문항을 고정 시드로 골라 연습에서 뺀다
+let diag = null;
+if (mocks.length) {
+  const free = (xs) => xs.filter((x) => !x.mock);
+  const pickLv = (xs, n, seed, lv) => { const f = free(xs); const m = f.filter((x) => x.lv === lv); return shuffled(m.length >= n ? m : f, seed).slice(0, n); };
+  const resp = free(lc.filter((p) => /^Q: /.test(plain(p.e)) && p.x));
+  const d2 = shuffled(resp, 31).slice(0, 4);
+  const d3 = pickLv(pr.p3, 1, 32, 2), d4 = pickLv(pr.p4, 1, 33, 2);
+  const d7 = shuffled(free(pr.p7).filter((x) => x.kind === "single" && x.qs.length === 4 && x.lv === 2), 34).slice(0, 1);
+  const gq = shuffled(pr.grammar.flatMap((t) => t.qs.filter((q) => !q.mock && q.lv === 2)), 35).slice(0, 3);
+  const dw = shuffled(words.filter((w) => w.tier === 2 && w.q), 36).slice(0, 3);
+  [d2, d3, d4, d7, gq].forEach((xs) => xs.forEach((x) => (x.mock = "d")));
+  dw.forEach((w) => { w.mq = w.q; delete w.q; });
+  diag = { n: "d", p1: [], p2: d2.map((x) => x.id), p3: d3.map((x) => x.id), p4: d4.map((x) => x.id), p5w: dw.map((x) => x.id), p5g: gq.map((x) => x.id), p6: [], p7: d7.map((x) => x.id) };
+}
 const out = { version, days, words, part1, lc, lcGroups, conf };
 const js = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_DATA=" + JSON.stringify(out) + ";\n";
 fs.writeFileSync(path.join(ROOT, "app/js/data.js"), js);
 const withAu = words.filter((w) => w.au).length;
 const withEx = words.filter((w) => w.exAu).length;
 console.log(`단어 ${words.length}개 (데이터 없음 ${missing}) · 단어 음성 ${withAu} · 예문 음성 ${withEx} · Part1 ${part1.length} (음성 ${part1.filter((p) => p.au).length}) · LC ${lc.length} (음성 ${lc.filter((p) => p.au).length} · 응답 퀴즈 ${lc.filter((p) => p.x).length}) · 혼동어 ${conf.length} · ${(js.length / 1024).toFixed(0)}KB`);
-const practice = { version, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks };
+const practice = { version, diag, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks };
 const pjs = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_PRACTICE=" + JSON.stringify(practice) + ";\n";
 fs.writeFileSync(path.join(ROOT, "app/js/practice.js"), pjs);
 const nq = (xs) => xs.reduce((n, x) => n + x.qs.length, 0);

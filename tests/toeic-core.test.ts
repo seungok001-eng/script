@@ -171,11 +171,12 @@ test("실제 데이터: 계획한 모든 단어 · 문제 정답 위치 · 예�
   const prSrc = fs.readFileSync(new URL("../toeic/app/js/practice.js", import.meta.url), "utf8");
   const PR = JSON.parse(prSrc.slice(prSrc.indexOf("=") + 1).trim().replace(/;$/, ""));
   if (PR.mocks.length) {
-    const p2 = new Set(PR.mocks.flatMap((m: any) => m.p2)), p5w = new Set(PR.mocks.flatMap((m: any) => m.p5w));
+    const sets = PR.mocks.concat(PR.diag ? [PR.diag] : []);
+    const p2 = new Set(sets.flatMap((m: any) => m.p2)), p5w = new Set(sets.flatMap((m: any) => m.p5w));
     assert.deepEqual(new Set(data.lc.filter((p: any) => p.mock).map((p: any) => p.id)), p2);
     assert.deepEqual(new Set(data.words.filter((w: any) => w.mq).map((w: any) => w.id)), p5w);
     const used = new Set<string>();
-    for (const m of PR.mocks) for (const k of ["p1", "p2", "p3", "p4", "p5w", "p5g", "p6", "p7"]) for (const id of m[k] || []) { assert.ok(!used.has(id), `모의고사 문항 중복 ${id}`); used.add(id); }
+    for (const m of sets) for (const k of ["p1", "p2", "p3", "p4", "p5w", "p5g", "p6", "p7"]) for (const id of m[k] || []) { assert.ok(!used.has(id), `모의고사 문항 중복 ${id}`); used.add(id); }
     for (const k of ["p1", "p3", "p4", "p6", "p7"]) for (const x of PR[k] || []) if (used.has(x.id)) assert.ok(x.mock, `${x.id}: 모의고사 문항은 연습에서 빠짐`);
   }
 });

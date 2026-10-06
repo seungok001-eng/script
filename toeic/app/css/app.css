@@ -731,3 +731,19 @@ mark.on { background: color-mix(in srgb, var(--gold) 62%, transparent); box-shad
 .faq summary::after { content: "+"; color: var(--text-3); font-weight: 600; }
 .faq[open] summary::after { content: "–"; }
 .faq > div { padding: 0 0 14px; font-size: 14px; line-height: 1.6; color: var(--text-2); }
+/* 실력 진단 · 결제 제안 */
+.diag-steps { display: flex; flex-direction: column; gap: 14px; }
+.diag-steps > div { display: flex; gap: 12px; align-items: center; }
+.diag-steps > div > span:last-child { display: flex; flex-direction: column; }
+.diag-gap { margin-top: 12px; display: inline-block; background: var(--brand-soft); color: var(--brand-2); border-radius: 999px; padding: 8px 16px; font-size: 15px; }
+.diag-gap.ok { background: var(--ok-soft); color: var(--ok); }
+.diag-plan { margin-top: 4px; display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
+.diag-plan > div { display: flex; gap: 8px; align-items: flex-start; line-height: 1.5; }
+.diag-plan .pi { flex: none; margin-top: 2px; }
+.diag-plan .pi .ico { width: 18px; height: 18px; color: var(--brand); }
+.offer { margin-top: 14px; border: 2px solid var(--brand); border-radius: var(--r-l); padding: 18px 16px 16px; background: linear-gradient(180deg, var(--brand-soft), var(--bg-elev) 55%); }
+.offer-h { display: flex; align-items: center; gap: 8px; font-size: 17px; margin-bottom: 10px; }
+.offer-h .ico { color: var(--accent); }
+.offer-list { list-style: none; padding: 0; margin: 0 0 14px; display: flex; flex-direction: column; gap: 7px; font-size: 14.5px; }
+.offer-list li { padding-left: 22px; position: relative; }
+.offer-list li::before { content: "✓"; position: absolute; left: 2px; color: var(--ok); font-weight: 800; }

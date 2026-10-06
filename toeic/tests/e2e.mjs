@@ -10,8 +10,10 @@ p.on("pageerror", (e) => errors.push("pageerror " + e.message));
 p.on("console", (m) => { if (m.type() === "error") errors.push("console " + m.text()); });
 await p.goto(base);
 await p.click("[data-next]"); await p.click('[data-score="700"]'); await p.click("[data-next]"); await p.click("[data-next]"); await p.click("[data-next]");
-await p.waitForTimeout(300);
-ok(p.url().endsWith("#/home"), "onboarding → home");
+await p.waitForTimeout(1200);
+ok(p.url().endsWith("#/diag") && (await p.$("[data-diag-go]")), "onboarding → diagnostic intro: " + p.url());
+await p.click("[data-diag-later]"); await p.waitForTimeout(300);
+ok(p.url().endsWith("#/home"), "diagnostic later → home");
 // 0) 처음 쓰는 사람 안내: 시작 미션 1일차 3개 · 카드 화면 첫 방문 팁(한 번만)
 ok((await p.$$(".mission .mis-item")).length === 3 && (await p.textContent(".mission")).includes("1일차"), "start mission card day 1");
 // 1) 카드 3장 학습 후 새로고침해도 기록 유지
@@ -130,6 +132,39 @@ ok(m2.n === 2 && m2.first === mock.total, "retake keeps first score " + JSON.str
 const prAfter = await p.evaluate(() => (window.__toeicfit.state.pr.lc || []).length + (window.__toeicfit.state.pr.rc || []).length);
 ok(prAfter === prBefore, `retake not counted in predicted score ${prBefore} → ${prAfter}`);
 await p.goto(base + "#/home"); await p.waitForTimeout(200);
+// 5-3) 유료화(결제 화면 강제 켜기): 첫 실력 진단 → 결과 + 결제 제안 · Day 4 잠김 · 파트별 2번째 세트 잠김
+{
+  const c2 = await b.newContext({ viewport: { width: 390, height: 844 } });
+  const q = await c2.newPage();
+  q.on("pageerror", (e) => errors.push("pageerror(pay) " + e.message));
+  await q.goto(base); await q.evaluate(() => localStorage.setItem("toeicfit.paywall", "1")); await q.reload();
+  await q.click("[data-next]"); await q.click('[data-score="800"]'); await q.click("[data-next]"); await q.click("[data-next]"); await q.click("[data-next]");
+  await q.waitForTimeout(1200);
+  await q.click("[data-diag-go]"); await q.waitForTimeout(400);
+  for (let k = 0; k < 60 && !(await q.$(".result-hero")); k++) {
+    const conf = await q.$('#modal [data-r="1"]'); if (conf) { await conf.click(); await q.waitForTimeout(150); continue; }
+    const o = await q.$(".pq [data-o]"); if (o) await o.click();
+    await q.click("[data-next]"); await q.waitForTimeout(40);
+  }
+  const hero = await q.textContent(".result-hero");
+  ok(/진단 20문제/.test(hero), "diagnostic result shown");
+  const buy = await q.textContent("[data-buy]"), free = await q.textContent("[data-free]");
+  ok(buy.includes("전체 열기") && buy.includes("출시 할인") && free.includes("무료로 3일 먼저 써 보기"), `offer buttons: ${buy} / ${free}`);
+  ok(await q.evaluate(() => !!window.__toeicfit.state.diag && !window.__toeicfit.state.mock.d), "diag stored separately from mocks");
+  await q.click("[data-free]"); await q.waitForTimeout(300);
+  ok(q.url().endsWith("#/home") && !(await q.$('[data-go="diag"]')), "free trial → home, diagnostic task gone");
+  await q.goto(base + "#/day/4"); await q.waitForTimeout(300);
+  ok(q.url().includes("#/premium") && (await q.textContent(".paywall-hero")).includes("Day 1~3"), "Day 4 locked → paywall: " + q.url());
+  await q.goto(base + "#/sets/p4"); await q.waitForTimeout(800);
+  await q.click("[data-set]"); await q.waitForTimeout(300);
+  for (let j = 0; j < 3; j++) await q.click(`.pq [data-q="${j}"][data-o="0"]`);
+  await q.click("[data-grade]"); await q.waitForTimeout(200);
+  await q.goto(base + "#/sets/p4"); await q.waitForTimeout(300);
+  const second = await q.$$("[data-set]");
+  await second[second.length - 1].click(); await q.waitForTimeout(300);
+  ok(q.url().includes("#/premium?from=set"), "second Part 4 set → paywall: " + q.url());
+  await c2.close();
+}
 // 6) 조작된 저장값 정리
 const st = await p.evaluate(() => window.__toeicfit.sanitize({ profile: { target: "<img src=x onerror=alert(1)>", daily: "9999", examDate: "x" }, words: { "01-01": { b: 99, n: "3" }, "zz": {} }, tests: { "5": { best: "<b>" }, "75": { best: 90, last: 90, at: 1 } }, lc: { "lc-1": { ok: "2", ng: 1, wrong: 1 }, "lc-99999": { ok: 1 } }, settings: { theme: "<x>", rate: 5, autoWord: "yes" }, premium: true }));
 const sg = await p.evaluate(() => window.__toeicfit.sanitize({ profile: { target: 800, daily: 30 }, guide: { start: 5, done: { card: 5, "<x>": 1 }, hide: 1 }, tips: { card: 1, "a b": 1 } }));
@@ -142,6 +177,7 @@ const p2 = await (await b2.newContext({ viewport: { width: 1280, height: 860 } }
 p2.on("pageerror", (e) => errors.push("d pageerror " + e.message));
 await p2.goto(base);
 await p2.click("[data-next]"); await p2.click("[data-next]"); await p2.click("[data-next]"); await p2.click("[data-next]");
+await p2.click("[data-diag-later]"); await p2.waitForTimeout(300);
 await p2.click('.hero [data-go="new"]'); await p2.waitForTimeout(200);
 const box = await (await p2.$("#flash")).boundingBox();
 await p2.mouse.move(box.x + box.width / 2, box.y + 100); await p2.mouse.down();
