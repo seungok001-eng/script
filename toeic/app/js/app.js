@@ -2352,7 +2352,7 @@
   const RC_MIN = 37;
   function mockPages(m) {
     const pages = [];
-    m.p2.forEach((id) => { const it = (D.lc || []).find((p) => p.id === id); if (it) pages.push({ part: "p2", item: it, q: C.makeResponse(it, C.rng(id.length * 31 + m.n)) }); });
+    m.p2.forEach((id) => { const it = (D.lc || []).find((p) => p.id === id); if (it) pages.push({ part: "p2", item: it, q: C.makeResponse(it, C.rng(parseInt(id.slice(3), 10) * 7919 + m.n * 104729)) }); });
     m.p3.forEach((id) => pages.push({ part: "p3", set: PR._by.get(id) }));
     m.p4.forEach((id) => pages.push({ part: "p4", set: PR._by.get(id) }));
     (m.p5w || []).forEach((id) => { const w = BY_ID.get(id); if (w && w.q) pages.push({ part: "p5", word: w, q: { s: w.q.s, o: w.q.o, a: w.q.a, exp: w.q.k, type: "어휘" } }); });
