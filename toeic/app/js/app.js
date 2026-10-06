@@ -659,6 +659,7 @@
         ${S.profile.placed ? "" : `<button class="task" data-go="place"><span class="tico c-green">${ico("gauge")}</span><span class="spacer"><div class="tt">3분 어휘 진단</div><div class="td">이미 아는 단어는 건너뛰고 필요한 단어부터</div></span><span class="tn">${ico("right")}</span></button>`}
         <button class="task ${wrong ? "" : "done"}" data-go="wrong"><span class="tico c-red">${ico("alert")}</span><span class="spacer"><div class="tt">오답노트</div><div class="td">${wrong ? "틀린 단어만 다시 풀어요" : "아직 틀린 단어가 없어요"}</div></span><span class="tn">${wrong || "–"}</span></button>
       </div>
+      <a class="task" href="#/practice" style="margin-top:14px"><span class="tico c-purple">${ico("target")}</span><span class="spacer"><div class="tt">실전 문제 · 하프 모의고사</div><div class="td">${(() => { const pr = C.predictScore(S.pr); return pr ? `예상 점수 ${pr.total}점 (LC ${pr.lc} · RC ${pr.rc})` : "Part 2~7 실전 문제로 예상 점수 확인"; })()}</div></span>${ico("right")}</a>
       <div class="section"><div class="section-h"><h2>토익 파트별 특훈</h2></div>
         <div class="grid2">
           <a class="tile" href="#/part1"><span class="tico c-green">${ico("camera")}</span><b>Part 1 사진 표현</b><span>사진 묘사 필수 ${D.part1.length}문장</span></a>

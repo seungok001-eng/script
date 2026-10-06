@@ -15,6 +15,9 @@
 | 학습 모드 | 카드 암기(스와이프·키보드, 모르는 단어 회차 재출), 뜻 고르기, 단어 고르기, 듣고 고르기, 철자 쓰기(힌트), 예문 빈칸, Part 5 실전, **Part 7 동의어(패러프레이징) 퀴즈**, 듣기 모드(출퇴근용 자동 재생: 단어→한국어 뜻→예문), Day 테스트(80점 통과) |
 | 복습 | 라이트너 간격 반복(1·3·7·14·30·60일), 오늘 할 일(새 단어/복습/확인 퀴즈/오답노트), 오답노트 자동 수집·자동 해제, ★ 중요 단어 |
 | 특훈 | Part 1 사진 묘사 필수 120문장(진행형 수동태 함정 포함), **LC Part 2~4 빈출 표현 870개**(29개 주제 — Part 2 질문 유형별 · Part 3 상황별 · Part 4 담화 유형별, 대화는 두 목소리) + **LC 실전 퀴즈**(Part 2 응답 고르기: 질문과 보기 (A)(B)(C)를 듣고 고르기, 문항마다 토익식 오답 2개 · Part 3·4 듣고 해석 고르기 · 틀린 문제 다시 풀기), Part 5 혼동 어휘 60세트 + 퀴즈, Part 7 동의어 20제 |
+| **실전 문제** | Part 3 대화 90세트 · Part 4 담화 60세트(문장마다 원어민 음성, 3인 대화·의도 파악·시각 자료 포함) · Part 5 문법 30개 주제 강의 + 450문제 · Part 6 장문 빈칸 48지문 · Part 7 독해 100세트(단일·이중·삼중, 채팅·양식·송장 포함). 채점 후 **정답 근거 문장 강조**, 지문·스크립트 전체 해석, 문장 단위 다시 듣기·따라 말하기 |
+| 모의고사·예상 점수 | 하프 모의고사 4회(LC는 한 번만 재생, RC 37분 타이머, 답안지) → LC·RC 예상 점수, 파트별 정답률, 전체 해설. 최근 LC·RC 정답률로 상시 예상 점수, 문제 유형별 약점 분석(예: Part 7 추론 55%) → 바로 연습 |
+| 받아쓰기 | LC 표현·Part 3·4 문장을 듣고 쓰면 단어 단위로 채점(빠진 단어 표시), 천천히 듣기·따라 말하기 |
 | 통계 | 암기 완료/학습/정답률/연속 학습일, 난이도별 진도, 최근 7일 그래프, 4주 학습 달력, 시험일 대비 1회독 예상일, Day 테스트 현황 |
 | 기타 | 단어 검색(영어·한국어·파생어), 다크 모드, 재생 속도, 백업/복원(JSON), 오프라인(PWA), PC 사이드바 레이아웃 + 단축키 |
 
@@ -23,13 +26,14 @@
 ```
 toeic/
   app/                  ← 앱 그 자체 (Capacitor webDir, 정적 호스팅 루트)
-    index.html  css/app.css  js/core.js(로직)  js/app.js(화면)  js/data.js(생성됨)
-    audio/w/{id}.mp3 단어 · audio/s/{id}.mp3 예문 · audio/p1/NNN.mp3 Part 1 · audio/lc/NNN.mp3 LC 한 사람의 말 · NNN-q/-a/-x1/-x2.mp3 LC 대화의 질문·정답·오답
+    index.html  css/app.css  js/core.js(로직)  js/app.js(화면)  js/data.js(생성됨)  js/practice.js(실전 문제, 생성됨 — 실전 화면에서 처음 불러옴)
+    audio/w/{id}.mp3 단어 · audio/s/{id}.mp3 예문 · audio/p1/NNN.mp3 Part 1 · audio/p34/<id>-NN.mp3 Part 3·4 문장 · audio/lc/NNN.mp3 LC 한 사람의 말 · NNN-q/-a/-x1/-x2.mp3 LC 대화의 질문·정답·오답
     fonts/ (Pretendard 서브셋)  icons/  manifest.webmanifest  sw.js
   data/
     plan.json           90일 × 40단어 표제어 계획 (기본/심화/실전)
     days/day-XX.json    단어 원본 데이터 (SPEC.md 규격)
     extras.json         Part 1 표현 · LC 표현 · 혼동 어휘
+    practice/           실전 문제 원본: p3.json p4.json grammar.json p6.json p7.json (모의고사 문항은 build_data.mjs 가 고정 시드로 배정)
     ipa.json            발음기호 (CMU 사전에서 생성)
     audio-manifest.json 음성 파일 ↔ 문장·목소리 기록
   scripts/
@@ -39,6 +43,7 @@ toeic/
     build_data.mjs      app/js/data.js 생성
     build_audio_packs.py (선택) 파일 수 제한이 있는 웹 호스팅용 음성 묶음(Day별 + p1 + lc) + js/audio-packs.js
     store_shots.mjs     스토어 스크린샷(액자 합성) 생성
+    feature_graphic.mjs Google Play 대표 이미지(1024×500) 생성
 ```
 
 ## 실행 (PC)
