@@ -80,7 +80,7 @@ for (const sz of SIZES) {
       if (sessionStorage.getItem("seeded")) return;
       sessionStorage.setItem("seeded", "1");
       localStorage.clear();
-      if (seed) localStorage.setItem("vocafit.v1", JSON.stringify(x));
+      if (seed) localStorage.setItem("toeicfit.v1", JSON.stringify(x));
     }, [st, s.name !== "01-target"]);
     try {
       await p.goto(BASE + (s.hash || "#/home"));

@@ -1,4 +1,4 @@
-# 보카핏 토익 (VocaFit TOEIC)
+# 토익핏 (ToeicFit)
 
 성인 토익 수험생용 **목표 점수 맞춤 토익 단어장** 앱입니다. 빌드 도구 없는 정적 웹앱이라 PC 브라우저에서 바로 돌아가고,
 같은 파일을 Capacitor로 감싸 **Google Play / App Store** 앱으로 출시합니다.
@@ -44,6 +44,7 @@ toeic/
     build_audio.py      음성 생성(Kokoro-82M 합성, 바뀐 문장만)
     build_data.mjs      app/js/data.js 생성
     build_audio_packs.py (선택) 파일 수 제한이 있는 웹 호스팅용 음성 묶음(Day별 + p1 + lc) + js/audio-packs.js
+    make_icons.mjs      아이콘·스플래시 원본 생성 (파란 그라데이션 + "T." 로고)
     store_shots.mjs     스토어 스크린샷(액자 합성) 생성
     feature_graphic.mjs Google Play 대표 이미지(1024×500) 생성
   tools/
@@ -90,6 +91,7 @@ npm install
 npx cap sync                                # app/ 변경 사항을 android/ios 로 복사 (웹 파일을 고칠 때마다)
 npx cap open android                        # Android Studio(JDK 21) → Build > Generate Signed Bundle (AAB)
 npx cap open ios                            # Xcode 16+(맥) → Signing 팀 선택 → Product > Archive → 업로드
+node scripts/make_icons.mjs                 # (아이콘을 바꿨을 때) 앱 아이콘 SVG → app/icons·assets 원본
 npm run assets                              # (아이콘을 바꿨을 때) assets/*.png → 네이티브 아이콘·스플래시 재생성
 ```
 
@@ -103,7 +105,7 @@ npm run assets                              # (아이콘을 바꿨을 때) asset
 | `@capacitor-community/text-to-speech` | 기기 TTS — 듣기 모드의 '한국어 뜻 읽어 주기', 음성 파일이 없을 때 대체 |
 
 체크리스트
-- 앱 ID `com.vocafit.toeic`, 이름 `보카핏 토익` — `capacitor.config.json`, `app/js/app.js`의 `BRAND`, `manifest.webmanifest`에서 바꿀 수 있습니다.
+- 앱 ID `com.toeicfit.app`(스토어에 올린 뒤에는 못 바꿈), 이름 `토익핏` — `capacitor.config.json`, `app/js/app.js`의 `BRAND`, `manifest.webmanifest`에서 바꿀 수 있습니다.
 - 아이콘: `app/icons/icon-1024.png`(스토어용, 꽉 찬 사각), `icon-maskable-512.png`(안드로이드 적응형). 스플래시는 `@capacitor/assets`로 생성 권장.
 - 스크린샷: `store/screenshots/`에 완성본(iOS 1290×2796 · Android 1080×1920) 8장. `node scripts/store_shots.mjs`로 다시 생성.
 - 개인정보처리방침 URL: `PRIVACY.md` (공개 저장소의 GitHub 주소를 그대로 스토어에 입력 가능)
@@ -121,7 +123,7 @@ const CONFIG = { premium: { enabled: false, freeDays: 5, price: "₩9,900", pric
 ```
 
 `enabled: true`로 바꾸면 Day 6~30이 잠기고 프리미엄 화면이 열립니다. 결제는 네이티브 쪽에서
-`window.VocafitIAP = { purchase: async () => true/false }`를 주입하면 연결됩니다
+`window.ToeicfitIAP = { purchase: async () => true/false }`를 주입하면 연결됩니다
 (예: RevenueCat Capacitor 플러그인 `@revenuecat/purchases-capacitor`로 구매 후 true 반환).
 
 ## 라이선스

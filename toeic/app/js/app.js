@@ -1,4 +1,4 @@
-/* 보카핏 토익 — 화면 (바닐라 JS, 빌드 없음). 로직은 core.js, 데이터는 data.js */
+/* 토익핏 — 화면 (바닐라 JS, 빌드 없음). 로직은 core.js, 데이터는 data.js */
 (function () {
   "use strict";
   const D = window.VOCA_DATA;
@@ -6,10 +6,11 @@
   D.lcAll = D.lc || [];
   D.lc = D.lcAll.filter((p) => !p.mock);
   const C = window.Core;
-  const BRAND = { name: "보카핏 토익", short: "보카핏", en: "VocaFit TOEIC" };
+  const BRAND = { name: "토익핏", short: "토익핏", en: "ToeicFit" };
   // 유료화 스위치: enabled=true 로 바꾸면 freeDays 이후 Day는 프리미엄(인앱결제 연결 지점: purchasePremium)
   const CONFIG = { premium: { enabled: false, freeDays: 5, price: "₩9,900", priceNote: "평생 이용 · 1회 결제" } };
-  const STORE_KEY = "vocafit.v1";
+  const STORE_KEY = "toeicfit.v1";
+  const OLD_KEY = "vocafit.v1"; // 이름을 바꾸기 전(보카핏) 웹 미리보기 기록을 한 번 옮겨 온다
 
   const WORDS = D.words;
   const BY_ID = new Map(WORDS.map((w) => [w.id, w]));
@@ -48,7 +49,7 @@
   let S = load();
   function load() {
     try {
-      const raw = localStorage.getItem(STORE_KEY);
+      const raw = localStorage.getItem(STORE_KEY) || localStorage.getItem(OLD_KEY);
       if (raw) return sanitize(JSON.parse(raw));
     } catch (e) { /* 저장소를 못 쓰면 새로 시작 */ }
     return DEFAULT_STATE();
@@ -248,7 +249,7 @@
     return `<svg class="ico star ${on ? "on" : ""}" viewBox="0 0 24 24" fill="${on ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true">${I.star}</svg>`;
   }
   function logoSvg(size) {
-    return `<svg width="${size}" height="${size}" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b82ff"/><stop offset="1" stop-color="#1a3bb8"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#lg)"/><path d="M17 20h9l6 18 6-18h9L36 46h-8z" fill="#fff"/><circle cx="47" cy="46" r="4" fill="#ffb648"/></svg>`;
+    return `<svg width="${size}" height="${size}" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b82ff"/><stop offset="1" stop-color="#1a3bb8"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#lg)"/><path d="M16 18h32v8H36v20h-8V26H16z" fill="#fff"/><circle cx="43.5" cy="42" r="4" fill="#ffb648"/></svg>`;
   }
 
   // ═════════════ 토스트 / 모달 ═════════════
@@ -563,8 +564,8 @@
     let body = "";
     if (onb.step === 0) {
       body = `<div class="welcome-art">${logoSvg(88)}</div>
-        <h1 style="text-align:center">토익 단어,<br/>목표 점수만큼만 정확하게</h1>
-        <p class="lead" style="text-align:center">목표 점수를 알려주시면 꼭 필요한 단어만 골라<br/>매일 학습 계획을 만들어 드려요.</p>
+        <h1 style="text-align:center">토익,<br/>목표 점수만큼만 정확하게</h1>
+        <p class="lead" style="text-align:center">목표 점수를 알려주시면 꼭 필요한 단어와 실전 문제를<br/>골라 매일 학습 계획을 만들어 드려요.</p>
         <div class="feature-list">
           <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? `${NDAYS}일 · 기본/심화/완성 코스` : "30일 주제별"} · 기본/핵심/고득점 3단계</span></div>
           <div><span class="tico c-green">${ico("headphones")}</span><span><b>모든 단어·예문 원어민 음성</b>미국·영국 발음으로 토익 LC까지 대비</span></div>
@@ -2884,13 +2885,13 @@
     else document.documentElement.setAttribute("data-theme", t);
   }
   async function exportData() {
-    const json = JSON.stringify({ app: "vocafit-toeic", exportedAt: new Date().toISOString(), state: S });
-    const name = `vocafit-toeic-backup-${C.ymd(today())}.json`;
+    const json = JSON.stringify({ app: "toeicfit", exportedAt: new Date().toISOString(), state: S });
+    const name = `toeicfit-backup-${C.ymd(today())}.json`;
     const P = capPlugins();
     if (P && P.Filesystem && P.Share) {
       try {
         const r = await P.Filesystem.writeFile({ path: name, data: json, directory: "CACHE", encoding: "utf8" });
-        await P.Share.share({ title: "보카핏 토익 백업", text: "학습 기록 백업 파일", url: r.uri, dialogTitle: "백업 파일 저장·보내기" });
+        await P.Share.share({ title: "토익핏 백업", text: "학습 기록 백업 파일", url: r.uri, dialogTitle: "백업 파일 저장·보내기" });
         toast("백업 파일을 만들었어요");
       } catch (e) {
         if (!/cancel/i.test(String(e && e.message))) toast("백업 파일을 만들지 못했어요");
@@ -2912,7 +2913,7 @@
     rd.onload = async () => {
       try {
         const j = JSON.parse(rd.result);
-        if (j.app !== "vocafit-toeic" || !j.state || !j.state.words) throw new Error("bad");
+        if ((j.app !== "toeicfit" && j.app !== "vocafit-toeic") || !j.state || !j.state.words) throw new Error("bad");
         if (!(await confirmBox("백업을 불러올까요?", "지금 기기의 학습 기록을 백업 파일 내용으로 바꿔요.", "불러오기"))) return;
         const keepPremium = S.premium; // 구매 여부는 백업 파일로 바꿀 수 없다
         S = sanitize(j.state);
@@ -2951,8 +2952,8 @@
   }
   async function restorePremium() {
     try {
-      if (window.VocafitIAP && window.VocafitIAP.restore) {
-        const ok = await window.VocafitIAP.restore();
+      if (window.ToeicfitIAP && window.ToeicfitIAP.restore) {
+        const ok = await window.ToeicfitIAP.restore();
         S.premium = !!ok;
         save(true);
         toast(ok ? "구매 내역을 복원했어요" : "복원할 구매 내역이 없어요");
@@ -2960,11 +2961,11 @@
       } else toast("스토어 앱에서 복원할 수 있어요");
     } catch (e) { toast("구매 내역을 확인하지 못했어요"); }
   }
-  // 인앱결제 연결 지점: 네이티브 앱에서 window.VocafitIAP.purchase() 가 있으면 사용
+  // 인앱결제 연결 지점: 네이티브 앱에서 window.ToeicfitIAP.purchase() 가 있으면 사용
   async function purchasePremium() {
     try {
-      if (window.VocafitIAP && window.VocafitIAP.purchase) {
-        const ok = await window.VocafitIAP.purchase();
+      if (window.ToeicfitIAP && window.ToeicfitIAP.purchase) {
+        const ok = await window.ToeicfitIAP.purchase();
         if (ok) { S.premium = true; save(true); toast("프리미엄이 열렸어요!"); return go("#/days"); }
       } else toast("스토어 앱에서 구매할 수 있어요");
     } catch (e) { toast("결제를 완료하지 못했어요"); }
@@ -2994,6 +2995,6 @@
     });
   })();
   // 개발·테스트용 훅
-  window.__vocafit = { get state() { return S; }, Core: C, render, sanitize };
+  window.__toeicfit = { get state() { return S; }, Core: C, render, sanitize };
   render();
 })();

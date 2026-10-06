@@ -1,6 +1,6 @@
 const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
 const base = process.env.BASE_URL || "http://localhost:8765/index.html";
-const out = (process.env.SHOT_DIR || "/tmp/") + "vocafit-";
+const out = (process.env.SHOT_DIR || "/tmp/") + "toeicfit-";
 const errors = [], fails = [];
 const ok = (c, m) => { if (!c) fails.push(m); };
 const b = await chromium.launch();
@@ -15,10 +15,10 @@ ok(p.url().endsWith("#/home"), "onboarding → home");
 // 1) 카드 3장 학습 후 새로고침해도 기록 유지
 await p.click('.hero [data-go="new"]');
 for (let i = 0; i < 3; i++) { await p.click("[data-flip]"); await p.click('[data-g="2"]'); }
-const seen1 = await p.evaluate(() => Object.keys(window.__vocafit.state.words).length);
+const seen1 = await p.evaluate(() => Object.keys(window.__toeicfit.state.words).length);
 await p.waitForTimeout(400);
 await p.reload(); await p.waitForTimeout(400);
-const seen2 = await p.evaluate(() => Object.keys(window.__vocafit.state.words).length);
+const seen2 = await p.evaluate(() => Object.keys(window.__toeicfit.state.words).length);
 ok(seen1 === 3 && seen2 === 3, `persist after reload ${seen1}/${seen2}`);
 ok(p.url().endsWith("#/home"), "reload on #/study → home: " + p.url());
 // 2) 듣기 모드 → 뒤로가기 → 세션 종료
@@ -55,7 +55,7 @@ ok(p.url().includes("#/study") && (await p.$$("[data-pick]")).length === 3, "lc 
 ok(!(await p.$(".quiz-q .qs")), "lc resp script hidden by default");
 await p.click('[data-pick="1"]'); await p.waitForTimeout(250);
 ok(await p.$(".feedback") && await p.$(".quiz-q .qs"), "lc resp feedback + script shown");
-const lcRec = await p.evaluate(() => Object.keys(window.__vocafit.state.lc).length);
+const lcRec = await p.evaluate(() => Object.keys(window.__toeicfit.state.lc).length);
 ok(lcRec === 1, "lc record saved " + lcRec);
 await p.click("[data-next]"); await p.waitForTimeout(200);
 ok((await p.textContent(".cnt")).startsWith("2"), "lc next question");
@@ -73,7 +73,7 @@ await p.click("[data-set]"); await p.waitForTimeout(300);
 for (let j = 0; j < 3; j++) await p.click(`.pq [data-q="${j}"][data-o="0"]`);
 await p.click("[data-grade]"); await p.waitForTimeout(300);
 ok((await p.$$(".sline")).length >= 6 && (await p.$$(".feedback")).length === 3, "p3 graded with script");
-const prac = await p.evaluate(() => Object.keys(window.__vocafit.state.prac).length);
+const prac = await p.evaluate(() => Object.keys(window.__toeicfit.state.prac).length);
 ok(prac === 1, "p3 record " + prac);
 await p.goBack(); await p.waitForTimeout(300);
 // Part 1 (사진이 들어온 문제가 있을 때): 6문제 이어 풀기 → 채점마다 문장 4개·해설 → 결과
@@ -100,12 +100,12 @@ for (let k = 0; k < 200 && !(await p.$(".result-hero")); k++) {
   const conf = await p.$('#modal [data-r="1"]'); if (conf) { await conf.click(); await p.waitForTimeout(150); continue; }
   await p.click("[data-next]"); await p.waitForTimeout(40);
 }
-const mock = await p.evaluate(() => window.__vocafit.state.mock[1]);
+const mock = await p.evaluate(() => window.__toeicfit.state.mock[1]);
 ok(mock && mock.total >= 10 && mock.total <= 990, "mock submitted " + JSON.stringify(mock));
 await p.click("[data-mrev]"); await p.waitForTimeout(300);
 ok(await p.$(".feedback"), "mock review shows explanations");
 // 재응시: '재응시' 표시 · 첫 응시 점수 유지 · 예상 점수용 기록(pr)은 늘지 않는다
-const prBefore = await p.evaluate(() => (window.__vocafit.state.pr.lc || []).length + (window.__vocafit.state.pr.rc || []).length);
+const prBefore = await p.evaluate(() => (window.__toeicfit.state.pr.lc || []).length + (window.__toeicfit.state.pr.rc || []).length);
 await p.goto(base + "#/mock"); await p.waitForTimeout(300);
 await p.click('[data-mock="1"]'); await p.waitForTimeout(150);
 ok((await p.textContent("#modal")).includes("재응시"), "retake note in start modal");
@@ -115,13 +115,13 @@ for (let k = 0; k < 200 && !(await p.$(".result-hero")); k++) {
   await p.click("[data-next]"); await p.waitForTimeout(40);
 }
 ok((await p.textContent(".result-hero")).includes("재응시"), "retake result marked");
-const m2 = await p.evaluate(() => window.__vocafit.state.mock[1]);
+const m2 = await p.evaluate(() => window.__toeicfit.state.mock[1]);
 ok(m2.n === 2 && m2.first === mock.total, "retake keeps first score " + JSON.stringify(m2));
-const prAfter = await p.evaluate(() => (window.__vocafit.state.pr.lc || []).length + (window.__vocafit.state.pr.rc || []).length);
+const prAfter = await p.evaluate(() => (window.__toeicfit.state.pr.lc || []).length + (window.__toeicfit.state.pr.rc || []).length);
 ok(prAfter === prBefore, `retake not counted in predicted score ${prBefore} → ${prAfter}`);
 await p.goto(base + "#/home"); await p.waitForTimeout(200);
 // 6) 조작된 저장값 정리
-const st = await p.evaluate(() => window.__vocafit.sanitize({ profile: { target: "<img src=x onerror=alert(1)>", daily: "9999", examDate: "x" }, words: { "01-01": { b: 99, n: "3" }, "zz": {} }, tests: { "5": { best: "<b>" }, "75": { best: 90, last: 90, at: 1 } }, lc: { "lc-1": { ok: "2", ng: 1, wrong: 1 }, "lc-99999": { ok: 1 } }, settings: { theme: "<x>", rate: 5, autoWord: "yes" }, premium: true }));
+const st = await p.evaluate(() => window.__toeicfit.sanitize({ profile: { target: "<img src=x onerror=alert(1)>", daily: "9999", examDate: "x" }, words: { "01-01": { b: 99, n: "3" }, "zz": {} }, tests: { "5": { best: "<b>" }, "75": { best: 90, last: 90, at: 1 } }, lc: { "lc-1": { ok: "2", ng: 1, wrong: 1 }, "lc-99999": { ok: 1 } }, settings: { theme: "<x>", rate: 5, autoWord: "yes" }, premium: true }));
 ok(st.profile.target === 800 && st.profile.daily === 200 && st.words["01-01"].b === 6 && st.words["01-01"].n === 3 && !st.words.zz && st.tests[5].best === 0 && st.tests[75].best === 90 && st.lc["lc-1"].ok === 2 && st.lc["lc-1"].wrong === true && !st.lc["lc-99999"] && st.settings.theme === "system" && st.settings.rate === 1 && st.settings.autoWord === true, "sanitize " + JSON.stringify(st));
 await b.close();
 // 7) 데스크톱: 마우스 드래그 스와이프가 카드를 뒤집지 않고 한 번만 채점 / Enter 키 버튼
@@ -135,7 +135,7 @@ const box = await (await p2.$("#flash")).boundingBox();
 await p2.mouse.move(box.x + box.width / 2, box.y + 100); await p2.mouse.down();
 await p2.mouse.move(box.x + box.width / 2 + 200, box.y + 100, { steps: 8 }); await p2.mouse.up();
 await p2.waitForTimeout(500);
-const after = await p2.evaluate(() => ({ n: Object.keys(window.__vocafit.state.words).length, cnt: document.querySelector(".cnt").textContent }));
+const after = await p2.evaluate(() => ({ n: Object.keys(window.__toeicfit.state.words).length, cnt: document.querySelector(".cnt").textContent }));
 ok(after.n === 1 && after.cnt.startsWith("2"), "swipe graded once " + JSON.stringify(after));
 await p2.keyboard.press("Space"); await p2.waitForTimeout(150);
 await p2.focus('[data-g="0"]'); await p2.keyboard.press("Enter"); await p2.waitForTimeout(200);

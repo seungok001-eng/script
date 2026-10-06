@@ -1,9 +1,9 @@
-# 보카핏 토익 개인정보 처리방침
+# 토익핏 개인정보 처리방침
 
 시행일: 2026년 10월 4일
 
 ## 1. 수집하는 개인정보
-보카핏 토익(이하 "앱")은 회원가입이 없으며, 이름·이메일·전화번호·위치 등 어떤 개인정보도 수집하거나 외부 서버로 전송하지 않습니다.
+토익핏(이하 "앱")은 회원가입이 없으며, 이름·이메일·전화번호·위치 등 어떤 개인정보도 수집하거나 외부 서버로 전송하지 않습니다.
 
 ## 2. 기기에 저장되는 정보
 목표 점수, 시험일, 학습 기록(단어별 복습 단계·정답 수), 설정은 사용자의 기기 안(앱 저장소)에만 저장됩니다. 앱을 삭제하거나 설정 > 학습 기록 초기화를 누르면 지워집니다. 백업 파일은 사용자가 직접 저장·관리합니다.
@@ -19,11 +19,11 @@
 
 ---
 
-# VocaFit TOEIC Privacy Policy (English)
+# ToeicFit Privacy Policy (English)
 
 Effective date: October 4, 2026
 
-VocaFit TOEIC ("the app") has no accounts and does not collect, store on servers, or transmit any personal information (name, email, phone number, location, etc.).
+ToeicFit ("the app") has no accounts and does not collect, store on servers, or transmit any personal information (name, email, phone number, location, etc.).
 
 Your target score, exam date, study history and settings are stored only on your device. Deleting the app or using Settings > Reset study history removes them. Backup files are saved and managed by you.
 

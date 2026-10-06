@@ -1,8 +1,8 @@
 {
-  "name": "vocafit-toeic",
+  "name": "toeicfit",
   "version": "1.0.0",
   "private": true,
-  "description": "보카핏 토익 — 목표 점수 맞춤 토익 단어장 (Android/iOS/PC)",
+  "description": "토익핏 — 목표 점수 맞춤 토익 단어·실전·모의고사 (Android/iOS/PC)",
   "scripts": {
     "build:data": "node scripts/build_data.mjs",
     "validate": "python3 scripts/validate_day.py",

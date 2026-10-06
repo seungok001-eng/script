@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>보카핏 토익</title>
+  <title>토익핏</title>
   <meta name="description" content="목표 점수에 맞춘 토익 영단어 3,600개 · 원어민 음성 · 간격 반복 복습 · Part 2~7 실전 문제 · 하프 모의고사 · 예상 점수" />
   <meta name="theme-color" content="#2b59f0" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="보카핏 토익" />
+  <meta name="apple-mobile-web-app-title" content="토익핏" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="icons/icon-180.png" />
@@ -19,7 +19,7 @@
   <script>
     // 첫 화면 깜빡임 방지: 저장된 테마를 먼저 적용
     try {
-      var t = JSON.parse(localStorage.getItem("vocafit.v1") || "{}").settings;
+      var t = JSON.parse((localStorage.getItem("toeicfit.v1") || localStorage.getItem("vocafit.v1")) || "{}").settings;
       if (t && t.theme && t.theme !== "system") document.documentElement.setAttribute("data-theme", t.theme);
     } catch (e) {}
   </script>

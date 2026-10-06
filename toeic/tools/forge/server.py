@@ -1,4 +1,4 @@
-# 토익 사진 공방(forge) — 보카핏 토익 Part 1 사진을 Google Flow 로 만들고 검수해 앱(app/images/p1)에 넣는 로컬 프로그램.
+# 토익 사진 공방(forge) — 토익핏 Part 1 사진을 Google Flow 로 만들고 검수해 앱(app/images/p1)에 넣는 로컬 프로그램.
 # 실행: python tools/forge/server.py   (또는 toeic\tools\photo-forge.cmd)  → 크롬 http://localhost:8767
 # 파닉스 교재 공방(phonics/tools/forge/server.py)을 복사해 고친 것. 원본 저장소는 건드리지 않는다.
 # 추가 설치 없음 (파이썬 표준 라이브러리 + PIL·numpy·scipy).

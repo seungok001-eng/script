@@ -1,4 +1,4 @@
-package com.vocafit.toeic;
+package com.toeicfit.app;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -23,7 +23,7 @@ await p.setContent(`<html><head><style>
   .a { right: 230px; top: 46px; transform: rotate(-5deg); }
   .b { right: 40px; top: 96px; transform: rotate(4deg); }
 </style></head><body>
-  <div class="l"><div class="brand"><img src="${img("app/icons/icon-512.png")}">보카핏 토익</div>
+  <div class="l"><div class="brand"><img src="${img("app/icons/icon-512.png")}">토익핏</div>
     <h1>목표 점수 맞춤<br>토익 단어 + 실전 문제</h1>
     <div class="sub">단어 3,600 · LC 표현 870 · Part 2~7 실전 문제<br>원어민 음성 · 하프 모의고사 · 예상 점수</div></div>
   <div class="ph a"><img id="s1"></div><div class="ph b"><img id="s2"></div>
