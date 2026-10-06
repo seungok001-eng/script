@@ -9785,5 +9785,3969 @@
    }
   ],
   "id": "p7-080"
+ },
+ {
+  "kind": "triple",
+  "lv": 1,
+  "docs": [
+   {
+    "doc": "광고",
+    "title": "Pinecrest Office Supply",
+    "paras": [
+     "Spring Savings Event: April 1-30",
+     "Stock up for the busy season! All printer paper is 10 percent off this month, and orders over $150 qualify for free next-day delivery anywhere in Dalton County. Smaller orders are delivered for a flat fee of $12.",
+     "New customers can take an extra 15 percent off their first order by entering the code NEWDESK at checkout. Please note that custom-printed items, such as notepads and envelopes with your company logo, take five business days to produce."
+    ],
+    "ko": [
+     "봄맞이 할인 행사: 4월 1일~30일",
+     "바쁜 시즌에 대비해 넉넉히 준비해 두십시오! 이번 달에는 모든 프린터 용지를 10퍼센트 할인해 드리며, 150달러가 넘는 주문은 돌턴 카운티 어디든 다음 날 무료로 배송해 드립니다. 그보다 적은 금액의 주문은 12달러의 고정 요금으로 배송됩니다.",
+     "신규 고객은 결제 시 코드 NEWDESK를 입력하면 첫 주문에서 15퍼센트를 추가로 할인받으실 수 있습니다. 회사 로고가 들어간 메모장, 봉투 등 맞춤 인쇄 제품은 제작에 영업일 기준 5일이 걸린다는 점에 유의해 주십시오."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "양식",
+    "title": "Pinecrest Office Supply - Order Form",
+    "meta": [
+     "Order No. 30562",
+     "Order Date: April 8"
+    ],
+    "paras": [
+     "Customer: Harlow Dental Clinic (contact: Mia Torres, office manager)",
+     "Discount code: NEWDESK",
+     "Special instructions: Please print our clinic logo on the notepads."
+    ],
+    "ko": [
+     "고객: 할로 치과 (담당자: 미아 토레스, 사무장)",
+     "할인 코드: NEWDESK",
+     "특별 요청 사항: 메모장에 저희 병원 로고를 인쇄해 주십시오."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Items Ordered",
+     "cols": [
+      "Item",
+      "Qty",
+      "Amount"
+     ],
+     "rows": [
+      [
+       "Printer paper (case of 10 reams)",
+       "3",
+       "$114.00"
+      ],
+      [
+       "Black ink cartridge",
+       "2",
+       "$46.00"
+      ],
+      [
+       "Notepad with logo (pack of 50)",
+       "4",
+       "$36.00"
+      ],
+      [
+       "Subtotal",
+       "",
+       "$196.00"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: orders@pinecrestsupply.example",
+     "From: mtorres@harlowdental.example",
+     "Date: April 9",
+     "Subject: Order No. 30562"
+    ],
+    "paras": [
+     "Hello,",
+     "I placed an order with your company for the first time yesterday. The paper and ink cartridges arrived this morning, but the notepads were not in the box. Could you tell me when they will be sent? We need them for a staff meeting next Wednesday.",
+     "Also, my receipt shows a $12 delivery charge. I don't think this is correct, so please check it and let me know.",
+     "Mia Torres"
+    ],
+    "ko": [
+     "안녕하세요.",
+     "어제 귀사에 처음으로 주문했습니다. 용지와 잉크 카트리지는 오늘 아침에 도착했는데, 메모장은 상자에 들어 있지 않았습니다. 메모장이 언제 발송되는지 알려 주시겠습니까? 다음 주 수요일 직원 회의에 필요합니다.",
+     "또한 영수증에 12달러의 배송료가 표시되어 있습니다. 이 금액이 맞지 않는 것 같으니 확인 후 알려 주십시오.",
+     "미아 토레스"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is offered to first-time customers?",
+    "qko": "첫 구매 고객에게 무엇이 제공되는가?",
+    "o": [
+     "Free custom printing",
+     "A sample pack of paper",
+     "Same-day delivery",
+     "An additional discount"
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 2,
+      "s": "New customers can take an extra 15 percent off their first order"
+     }
+    ],
+    "exp": "광고의 'New customers can take an extra 15 percent off their first order' → An additional discount(추가 할인)로 바뀌었다. 무료 배송은 150달러 초과 주문의 혜택이고 그것도 당일이 아니라 다음 날(next-day) 배송이므로 Same-day delivery는 오답이다. 맞춤 인쇄를 무료로 해 준다는 말은 없다."
+   },
+   {
+    "q": "Who is Ms. Torres?",
+    "qko": "토레스 씨는 누구인가?",
+    "o": [
+     "An office manager at a clinic",
+     "A dentist opening a new office",
+     "A sales representative",
+     "A delivery driver"
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 1,
+      "p": 0,
+      "s": "contact: Mia Torres, office manager"
+     }
+    ],
+    "exp": "주문서 고객란의 'Harlow Dental Clinic (contact: Mia Torres, office manager)'에서 토레스 씨가 치과의 사무장임을 알 수 있다 → An office manager at a clinic. Dental에서 연상되는 치과의사(dentist)는 함정이며, 그녀는 물품을 주문한 고객이므로 영업 사원이나 배송 기사도 아니다."
+   },
+   {
+    "q": "Why most likely were the notepads missing from the delivery?",
+    "qko": "메모장이 배송품에서 빠진 이유는 무엇이겠는가?",
+    "o": [
+     "They take extra time to produce.",
+     "They were out of stock at the warehouse.",
+     "Ms. Torres forgot to include them in her order.",
+     "They were sent to the wrong address."
+    ],
+    "a": 0,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "the notepads were not in the box"
+     },
+     {
+      "d": 1,
+      "p": 2,
+      "s": "Please print our clinic logo on the notepads."
+     },
+     {
+      "d": 0,
+      "p": 2,
+      "s": "custom-printed items, such as notepads and envelopes with your company logo, take five business days to produce"
+     }
+    ],
+    "exp": "이메일에서 메모장이 오지 않았다고 했는데(the notepads were not in the box), 주문서를 보면 이 메모장은 병원 로고를 인쇄해 달라고 한 맞춤 제품이다. 광고에 따르면 로고가 들어간 맞춤 인쇄 제품은 제작에 영업일 5일이 걸리므로, 아직 제작 중이라 함께 오지 않은 것이다 → They take extra time to produce. 주문서에 메모장이 분명히 들어 있으므로 '주문에 넣는 것을 잊었다'는 오답이고, 재고 부족이나 주소 오류는 언급되지 않았다."
+   },
+   {
+    "q": "What is suggested about the $12 charge?",
+    "qko": "12달러 요금에 대해 무엇이 암시되는가?",
+    "o": [
+     "It covers the cost of printing a logo.",
+     "It is charged only to new customers.",
+     "It will be added to every future order.",
+     "It should not have been applied."
+    ],
+    "a": 3,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "my receipt shows a $12 delivery charge"
+     },
+     {
+      "d": 0,
+      "p": 1,
+      "s": "orders over $150 qualify for free next-day delivery"
+     }
+    ],
+    "exp": "주문서의 소계는 196달러로(신규 고객 15퍼센트 할인을 적용해도 약 167달러), 광고에 따르면 150달러가 넘는 주문은 무료 배송 대상이다(orders over $150 qualify for free next-day delivery). 따라서 이메일에서 말한 12달러 배송료는 부과되지 말았어야 할 요금이다 → It should not have been applied. 12달러는 로고 인쇄비가 아니라 소액 주문에 붙는 배송료(a flat fee of $12)이며, 신규 고객에게만 부과된다는 말도 없다."
+   },
+   {
+    "q": "According to the e-mail, what will take place next Wednesday?",
+    "qko": "이메일에 따르면, 다음 주 수요일에 무슨 일이 있는가?",
+    "o": [
+     "A product launch",
+     "A staff meeting",
+     "A sale at Pinecrest Office Supply",
+     "An office relocation"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "We need them for a staff meeting next Wednesday"
+     }
+    ],
+    "exp": "'We need them for a staff meeting next Wednesday' → 다음 주 수요일에 직원 회의(A staff meeting)가 있다. 할인 행사는 4월 한 달 내내 진행되므로 특정 날짜의 일이 아니며, 제품 출시나 사무실 이전은 언급되지 않았다."
+   }
+  ],
+  "id": "p7-081"
+ },
+ {
+  "kind": "triple",
+  "lv": 2,
+  "docs": [
+   {
+    "doc": "광고",
+    "title": "Now Hiring: Front Desk Supervisor",
+    "paras": [
+     "The Larkspur Hotel in downtown Millford is seeking an experienced front desk supervisor to lead a team of eight guest service agents. Responsibilities include training new staff, preparing weekly work schedules, and handling guest complaints.",
+     "Applicants must have at least two years of hotel experience. The ability to speak Spanish is a plus. To apply, e-mail a resume and cover letter to Dana Whitfield at careers@larkspurhotel.example by May 8. Interviews will take place the week of May 18."
+    ],
+    "ko": [
+     "밀포드 시내의 라크스퍼 호텔에서 고객 서비스 직원 8명으로 구성된 팀을 이끌 경력직 프런트 데스크 관리자를 모집합니다. 업무에는 신입 직원 교육, 주간 근무표 작성, 고객 불만 처리가 포함됩니다.",
+     "지원자는 최소 2년의 호텔 근무 경력이 있어야 합니다. 스페인어 구사 능력은 우대합니다. 지원하시려면 5월 8일까지 이력서와 자기소개서를 데이나 휘트필드(careers@larkspurhotel.example)에게 이메일로 보내 주십시오. 면접은 5월 18일이 있는 주에 진행됩니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Kevin Osei <kosei@mailbox.example>",
+     "From: Dana Whitfield <dwhitfield@larkspurhotel.example>",
+     "Date: May 12",
+     "Subject: Interview invitation"
+    ],
+    "paras": [
+     "Dear Mr. Osei,",
+     "Thank you for applying for the front desk supervisor position. We were impressed by your four years at the Bayfront Inn, and we would like to invite you for an interview. You will meet with me and with our general manager, Luis Ferreira.",
+     "In your cover letter, you mentioned that you can only come in before noon because of your current job. Please choose one of the open times on the attached schedule and reply by May 14. Please note that Mr. Ferreira will be away at a conference on May 21, so the time listed for that day has been canceled.",
+     "Dana Whitfield, Human Resources Manager"
+    ],
+    "ko": [
+     "오세이 씨께,",
+     "프런트 데스크 관리자 직에 지원해 주셔서 감사합니다. 베이프런트 인에서 4년간 근무하신 경력이 인상적이어서 면접에 모시고자 합니다. 면접에서는 저와 저희 총지배인 루이스 페레이라를 만나시게 됩니다.",
+     "자기소개서에서 현재 직장 때문에 정오 전에만 오실 수 있다고 하셨습니다. 첨부한 일정표에서 비어 있는 시간 중 하나를 골라 5월 14일까지 회신해 주십시오. 페레이라 씨가 5월 21일에 학회 참석으로 자리를 비우므로 그날로 표시된 시간은 취소되었다는 점에 유의해 주십시오.",
+     "인사부장 데이나 휘트필드 드림"
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "일정표",
+    "title": "Front Desk Supervisor Interviews - Week of May 18",
+    "paras": [
+     "Each interview lasts about 45 minutes. Times marked \"Reserved\" are no longer available."
+    ],
+    "ko": [
+     "면접은 각각 약 45분간 진행됩니다. 'Reserved(예약됨)'로 표시된 시간은 더 이상 선택할 수 없습니다."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Interview Times",
+     "cols": [
+      "Date",
+      "Time",
+      "Status"
+     ],
+     "rows": [
+      [
+       "Mon, May 18",
+       "10:00 A.M.",
+       "Reserved"
+      ],
+      [
+       "Tue, May 19",
+       "9:30 A.M.",
+       "Reserved"
+      ],
+      [
+       "Tue, May 19",
+       "2:00 P.M.",
+       "Open"
+      ],
+      [
+       "Wed, May 20",
+       "11:00 A.M.",
+       "Open"
+      ],
+      [
+       "Thu, May 21",
+       "9:00 A.M.",
+       "Open"
+      ],
+      [
+       "Fri, May 22",
+       "3:30 P.M.",
+       "Open"
+      ]
+     ]
+    }
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is NOT mentioned as a duty of the advertised position?",
+    "qko": "광고된 직책의 업무로 언급되지 않은 것은?",
+    "o": [
+     "Ordering supplies for the front desk",
+     "Training new employees",
+     "Creating work schedules",
+     "Responding to guest complaints"
+    ],
+    "a": 0,
+    "type": "사실 확인",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "training new staff, preparing weekly work schedules, and handling guest complaints"
+     }
+    ],
+    "exp": "구인 광고의 'training new staff, preparing weekly work schedules, and handling guest complaints'에서 신입 교육(Training new employees), 근무표 작성(Creating work schedules), 불만 처리(Responding to guest complaints)가 각각 확인된다. 비품 주문(Ordering supplies)은 어디에도 언급되지 않았으므로 정답이다."
+   },
+   {
+    "q": "In the job posting, the word \"lead\" in paragraph 1, line 2, is closest in meaning to",
+    "qko": "구인 광고에서 첫 번째 단락 2행의 단어 \"lead\"와 의미가 가장 가까운 것은?",
+    "o": [
+     "follow",
+     "cause",
+     "connect",
+     "manage"
+    ],
+    "a": 3,
+    "type": "동의어",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "to lead a team of eight guest service agents"
+     }
+    ],
+    "exp": "'lead a team of eight guest service agents'는 직원 8명으로 이루어진 팀을 '이끌다, 관리하다'라는 뜻이므로 manage가 정답이다. lead to(~으로 이어지다)에서 연상되는 cause는 문맥에 맞지 않고, follow(따르다)는 오히려 반대 의미다."
+   },
+   {
+    "q": "What is indicated about Mr. Osei?",
+    "qko": "오세이 씨에 대해 알 수 있는 것은?",
+    "o": [
+     "He speaks Spanish fluently.",
+     "He currently works for the Larkspur Hotel.",
+     "He submitted his application after the deadline.",
+     "He has more hotel experience than the job requires."
+    ],
+    "a": 3,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "We were impressed by your four years at the Bayfront Inn"
+     },
+     {
+      "d": 0,
+      "p": 1,
+      "s": "Applicants must have at least two years of hotel experience"
+     }
+    ],
+    "exp": "광고는 최소 2년의 호텔 경력을 요구하는데(at least two years of hotel experience), 이메일에 따르면 오세이 씨는 베이프런트 인에서 4년간 일했다(your four years at the Bayfront Inn). 즉 요구 조건보다 경력이 많다. 스페인어는 우대 사항으로만 언급되었을 뿐 그가 스페인어를 하는지는 알 수 없고, 그가 일한 곳은 라크스퍼 호텔이 아니라 베이프런트 인이다."
+   },
+   {
+    "q": "What is Mr. Osei asked to do by May 14?",
+    "qko": "오세이 씨는 5월 14일까지 무엇을 하라고 요청받는가?",
+    "o": [
+     "Select an interview time",
+     "Send a list of references",
+     "Complete a training course",
+     "Submit a cover letter"
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "Please choose one of the open times on the attached schedule and reply by May 14"
+     }
+    ],
+    "exp": "'Please choose one of the open times on the attached schedule and reply by May 14' → Select an interview time(면접 시간 선택). 자기소개서는 이미 제출한 것으로 이메일에서 언급되었으므로(In your cover letter, you mentioned) 오답이고, 추천인 명단이나 교육 과정 이야기는 없다."
+   },
+   {
+    "q": "When will Mr. Osei most likely have his interview?",
+    "qko": "오세이 씨는 언제 면접을 보겠는가?",
+    "o": [
+     "On May 19",
+     "On May 20",
+     "On May 21",
+     "On May 22"
+    ],
+    "a": 1,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "you can only come in before noon"
+     },
+     {
+      "d": 1,
+      "p": 2,
+      "s": "the time listed for that day has been canceled"
+     },
+     {
+      "d": 2,
+      "p": 0,
+      "s": "Times marked \"Reserved\" are no longer available."
+     }
+    ],
+    "exp": "이메일에서 오세이 씨는 정오 전에만 올 수 있고(only come in before noon), 5월 21일 시간은 취소되었다고 했다. 일정표에서 예약되지 않은(Open) 시간 중 오전은 5월 20일 오전 11시와 5월 21일 오전 9시뿐인데, 21일은 취소되었으므로 5월 20일이 답이다. 5월 19일과 22일의 빈 시간은 오후라서 맞지 않고, 19일 오전 9시 30분은 이미 예약되었다."
+   }
+  ],
+  "id": "p7-082"
+ },
+ {
+  "kind": "triple",
+  "lv": 2,
+  "docs": [
+   {
+    "doc": "기사",
+    "title": "Greenway Cycles Opens Second Shop",
+    "paras": [
+     "BRENTON (March 16) - Greenway Cycles, a fixture on Elm Road for over a decade, opened its second location on Harbor Street last Saturday. Owner Ray Castillo said the larger space will allow the business to offer something customers have requested for years: hands-on repair classes.",
+     "All classes will be held at the new shop, which also includes a cafe and an indoor bike-fitting area. The Elm Road store will continue to sell bicycles and accessories, but starting April 1, all repairs will be handled on Harbor Street."
+    ],
+    "ko": [
+     "브렌턴(3월 16일) - 10년 넘게 엘름 로의 터줏대감이었던 그린웨이 사이클스가 지난 토요일 하버 가에 두 번째 매장을 열었다. 소유주 레이 카스티요는 더 넓어진 공간 덕분에 고객들이 수년간 요청해 온 실습형 수리 강좌를 제공할 수 있게 되었다고 말했다.",
+     "모든 강좌는 새 매장에서 열리며, 이곳에는 카페와 실내 자전거 피팅 공간도 있다. 엘름 로 매장은 계속해서 자전거와 액세서리를 판매하지만, 4월 1일부터 모든 수리는 하버 가 매장에서 처리된다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: classes@greenwaycycles.example",
+     "From: Priya Nair <pnair@mailbox.example>",
+     "Date: March 20",
+     "Subject: Class inquiry"
+    ],
+    "paras": [
+     "Hello,",
+     "I read about your new repair classes in the Brenton Herald, and I'm interested in the one that covers basic maintenance. I ride my bike to work every day, so I'd like to learn to keep it in good condition myself.",
+     "I work until 6:00 P.M. on weekdays, and I'll be visiting family on most weekends this spring. Also, I've been a member of the Greenway Riders Club since last summer. Does that membership apply to classes?",
+     "Priya Nair"
+    ],
+    "ko": [
+     "안녕하세요.",
+     "브렌턴 헤럴드에서 새로운 수리 강좌에 관한 기사를 읽었는데, 기본 정비를 다루는 강좌에 관심이 있습니다. 매일 자전거로 출근하기 때문에 자전거 상태를 직접 잘 관리하는 법을 배우고 싶습니다.",
+     "저는 평일에는 오후 6시까지 일하고, 올봄에는 주말 대부분 가족을 방문할 예정입니다. 그리고 저는 지난여름부터 그린웨이 라이더스 클럽 회원입니다. 그 회원 자격이 강좌에도 적용되나요?",
+     "프리야 나이르"
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "웹페이지",
+    "title": "Greenway Cycles - Spring Repair Classes",
+    "paras": [
+     "Basic Maintenance ($40): Learn to clean, adjust, and lubricate your bike. Offered Saturdays at 9:00 A.M. and Thursdays at 7:00 P.M.",
+     "Flat Tire Repair ($25): Fix a flat in under ten minutes. Offered Tuesdays at 5:00 P.M.",
+     "Wheel Building ($65): An advanced course for experienced riders. Offered Sundays at 1:00 P.M.",
+     "Members of the Greenway Riders Club receive 20 percent off all class fees. Each class is limited to eight students."
+    ],
+    "ko": [
+     "기본 정비(40달러): 자전거를 청소하고, 조정하고, 윤활유를 바르는 법을 배웁니다. 토요일 오전 9시와 목요일 오후 7시에 개설됩니다.",
+     "펑크 수리(25달러): 10분 안에 펑크 난 타이어를 고치는 법을 배웁니다. 화요일 오후 5시에 개설됩니다.",
+     "휠 조립(65달러): 숙련된 라이더를 위한 고급 과정입니다. 일요일 오후 1시에 개설됩니다.",
+     "그린웨이 라이더스 클럽 회원은 모든 강좌 수강료를 20퍼센트 할인받습니다. 강좌마다 수강 인원은 8명으로 제한됩니다."
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is the article mainly about?",
+    "qko": "기사는 주로 무엇에 관한 것인가?",
+    "o": [
+     "The opening of a new store location",
+     "The retirement of a shop owner",
+     "A cycling race in Brenton",
+     "The closure of a store on Elm Road"
+    ],
+    "a": 0,
+    "type": "주제·목적",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "opened its second location on Harbor Street last Saturday"
+     }
+    ],
+    "exp": "기사 첫 문장의 'opened its second location on Harbor Street' → The opening of a new store location(새 매장 개점). 엘름 로 매장은 문을 닫는 것이 아니라 판매를 계속하고(will continue to sell bicycles and accessories) 수리만 하버 가로 옮기므로 폐점은 오답이다."
+   },
+   {
+    "q": "According to the article, what will change on April 1?",
+    "qko": "기사에 따르면, 4월 1일에 무엇이 바뀌는가?",
+    "o": [
+     "Classes will begin at the Elm Road store.",
+     "A cafe will open inside the Elm Road store.",
+     "Bicycle prices will be reduced.",
+     "Repairs will no longer be done on Elm Road."
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "starting April 1, all repairs will be handled on Harbor Street"
+     }
+    ],
+    "exp": "'starting April 1, all repairs will be handled on Harbor Street' → 4월 1일부터 수리는 모두 하버 가에서 하므로 엘름 로에서는 더 이상 수리를 하지 않는다. 강좌와 카페는 엘름 로가 아니라 새 매장(하버 가)에 있으므로 장소를 바꾼 오답이고, 가격 인하는 언급되지 않았다."
+   },
+   {
+    "q": "When will Ms. Nair most likely take a class?",
+    "qko": "나이르 씨는 언제 강좌를 듣겠는가?",
+    "o": [
+     "On a Saturday morning",
+     "On a Tuesday afternoon",
+     "On a Sunday afternoon",
+     "On a Thursday evening"
+    ],
+    "a": 3,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "I'm interested in the one that covers basic maintenance"
+     },
+     {
+      "d": 1,
+      "p": 2,
+      "s": "I work until 6:00 P.M. on weekdays"
+     },
+     {
+      "d": 2,
+      "p": 0,
+      "s": "Offered Saturdays at 9:00 A.M. and Thursdays at 7:00 P.M."
+     }
+    ],
+    "exp": "나이르 씨는 기본 정비 강좌를 원하고, 평일에는 오후 6시까지 일하며 주말에는 대부분 집을 비운다. 웹페이지에 따르면 기본 정비 강좌는 토요일 오전 9시와 목요일 오후 7시에 열리므로, 그녀가 들을 수 있는 시간은 목요일 저녁이다. 화요일 오후 5시는 펑크 수리 강좌이면서 근무 시간이고, 일요일 오후는 고급 과정인 휠 조립 강좌다."
+   },
+   {
+    "q": "How much will Ms. Nair most likely pay for her class?",
+    "qko": "나이르 씨는 강좌 수강료로 얼마를 내겠는가?",
+    "o": [
+     "$20",
+     "$25",
+     "$32",
+     "$40"
+    ],
+    "a": 2,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "I've been a member of the Greenway Riders Club since last summer"
+     },
+     {
+      "d": 2,
+      "p": 0,
+      "s": "Basic Maintenance ($40)"
+     },
+     {
+      "d": 2,
+      "p": 3,
+      "s": "Members of the Greenway Riders Club receive 20 percent off all class fees"
+     }
+    ],
+    "exp": "기본 정비 강좌는 40달러이고, 웹페이지에 따르면 라이더스 클럽 회원은 수강료를 20퍼센트 할인받는다. 이메일에서 나이르 씨는 지난여름부터 클럽 회원이라고 했으므로 40달러의 80퍼센트인 32달러를 낸다. 25달러는 펑크 수리 강좌 요금이고, 40달러는 할인을 적용하지 않은 금액이다."
+   },
+   {
+    "q": "Where will Ms. Nair's class most likely be held?",
+    "qko": "나이르 씨의 강좌는 어디에서 열리겠는가?",
+    "o": [
+     "At the Harbor Street shop",
+     "At the Elm Road store",
+     "At a community center",
+     "At the Brenton Herald office"
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "All classes will be held at the new shop"
+     },
+     {
+      "d": 0,
+      "p": 0,
+      "s": "opened its second location on Harbor Street"
+     }
+    ],
+    "exp": "기사에서 'All classes will be held at the new shop'이라고 했고, 새 매장은 하버 가에 있다(its second location on Harbor Street). 따라서 강좌는 하버 가 매장에서 열린다. 엘름 로는 기존 매장이고, 브렌턴 헤럴드는 나이르 씨가 기사를 읽은 신문일 뿐이다."
+   }
+  ],
+  "id": "p7-083"
+ },
+ {
+  "kind": "triple",
+  "lv": 1,
+  "docs": [
+   {
+    "doc": "공지",
+    "title": "Elevator Upgrade at Corliss Tower",
+    "paras": [
+     "Beginning Monday, October 12, the passenger elevators at Corliss Tower will be upgraded one at a time. The elevator being worked on will be out of service from 8:00 A.M. to 5:00 P.M. on its scheduled days.",
+     "Tenants expecting large deliveries should use the freight elevator at the back of the building. To reserve it, please call the management office at 555-0137 at least one day in advance. We apologize for any inconvenience."
+    ],
+    "ko": [
+     "10월 12일 월요일부터 코어리스 타워의 승객용 엘리베이터를 한 대씩 차례로 개보수합니다. 공사 중인 엘리베이터는 예정된 날 오전 8시부터 오후 5시까지 운행하지 않습니다.",
+     "대형 배송품을 받으실 입주사는 건물 뒤편의 화물용 엘리베이터를 이용하시기 바랍니다. 예약하시려면 최소 하루 전에 관리사무소(555-0137)로 전화해 주십시오. 불편을 드려 죄송합니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "일정표",
+    "title": "Elevator Work Schedule",
+    "paras": [
+     "Note: The freight elevator will be closed all day on October 19 for its annual safety inspection.",
+     "Questions about this schedule may be directed to the management office."
+    ],
+    "ko": [
+     "참고: 화물용 엘리베이터는 연례 안전 점검으로 10월 19일 하루 종일 운행하지 않습니다.",
+     "이 일정에 관한 문의는 관리사무소로 해 주십시오."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Elevator Work Schedule",
+     "cols": [
+      "Date",
+      "Out of Service"
+     ],
+     "rows": [
+      [
+       "Oct. 12-13",
+       "Passenger Elevator 1"
+      ],
+      [
+       "Oct. 14-15",
+       "Passenger Elevator 2"
+      ],
+      [
+       "Oct. 16",
+       "Passenger Elevator 3"
+      ],
+      [
+       "Oct. 19",
+       "Freight Elevator"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "문자 메시지",
+    "paras": [
+     "Lena Park [9:12 A.M.]: Our new printers are being delivered on Monday the 19th. I'm going to reserve the freight elevator for that morning.",
+     "Omar Haddad [9:14 A.M.]: Have you looked at the building's schedule? I think something is happening with that elevator on the 19th.",
+     "Lena Park [9:16 A.M.]: Oh, you're right. That changes things.",
+     "Omar Haddad [9:17 A.M.]: Could the supplier come on Tuesday instead?",
+     "Lena Park [9:19 A.M.]: I'll call them right now and ask."
+    ],
+    "ko": [
+     "레나 박 [오전 9:12]: 새 프린터가 19일 월요일에 배송돼요. 그날 오전으로 화물용 엘리베이터를 예약하려고요.",
+     "오마르 하다드 [오전 9:14]: 건물 일정표 보셨어요? 19일에 그 엘리베이터에 무슨 일이 있는 것 같던데요.",
+     "레나 박 [오전 9:16]: 아, 맞네요. 그럼 계획을 바꿔야겠어요.",
+     "오마르 하다드 [오전 9:17]: 공급업체가 대신 화요일에 와 줄 수 있을까요?",
+     "레나 박 [오전 9:19]: 지금 바로 전화해서 물어볼게요."
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is the purpose of the notice?",
+    "qko": "공지의 목적은 무엇인가?",
+    "o": [
+     "To introduce a new management office",
+     "To announce upcoming elevator work",
+     "To explain a change in building hours",
+     "To request feedback from tenants"
+    ],
+    "a": 1,
+    "type": "주제·목적",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "the passenger elevators at Corliss Tower will be upgraded one at a time"
+     }
+    ],
+    "exp": "공지 첫 문장 'the passenger elevators ... will be upgraded one at a time' → 예정된 엘리베이터 공사를 알리는 것이 목적이다(To announce upcoming elevator work). 관리사무소는 예약 연락처로만 언급되었고, 건물 운영 시간 변경이나 의견 요청은 없다."
+   },
+   {
+    "q": "According to the notice, how can tenants reserve the freight elevator?",
+    "qko": "공지에 따르면, 입주사는 화물용 엘리베이터를 어떻게 예약할 수 있는가?",
+    "o": [
+     "By calling the management office a day ahead",
+     "By filling out a form in the lobby",
+     "By paying a reservation fee",
+     "By e-mailing the building owner"
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "please call the management office at 555-0137 at least one day in advance"
+     }
+    ],
+    "exp": "'please call the management office at 555-0137 at least one day in advance' → 최소 하루 전에 관리사무소에 전화한다(By calling the management office a day ahead). 양식 작성, 예약비, 이메일은 언급되지 않았다."
+   },
+   {
+    "q": "At 9:16 A.M., what does Ms. Park most likely mean when she writes, \"That changes things\"?",
+    "qko": "오전 9시 16분에 박 씨가 \"That changes things\"라고 쓴 의도는 무엇이겠는가?",
+    "o": [
+     "She wants to order different printers.",
+     "She thinks the building schedule is wrong.",
+     "She needs to move to a different office.",
+     "She cannot follow her original plan."
+    ],
+    "a": 3,
+    "type": "의도 파악",
+    "ev": [
+     {
+      "d": 2,
+      "p": 0,
+      "s": "I'm going to reserve the freight elevator for that morning"
+     },
+     {
+      "d": 2,
+      "p": 2,
+      "s": "That changes things"
+     },
+     {
+      "d": 1,
+      "p": 0,
+      "s": "The freight elevator will be closed all day on October 19"
+     }
+    ],
+    "exp": "박 씨는 19일 오전에 화물용 엘리베이터를 예약하려 했는데, 일정표를 확인해 보니 그날 화물용 엘리베이터가 하루 종일 운행하지 않는다. 그래서 'That changes things(그럼 사정이 달라지네요)'라고 한 것은 원래 계획대로 할 수 없다는 뜻이다. 'you're right'라고 일정표 내용을 인정했으므로 일정표가 틀렸다는 보기는 오답이다."
+   },
+   {
+    "q": "What problem does Ms. Park have?",
+    "qko": "박 씨에게는 어떤 문제가 있는가?",
+    "o": [
+     "Her printers arrived damaged.",
+     "An elevator she needs will be closed on her delivery day.",
+     "The management office did not return her call.",
+     "The passenger elevators are too small for her printers."
+    ],
+    "a": 1,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 2,
+      "p": 0,
+      "s": "Our new printers are being delivered on Monday the 19th"
+     },
+     {
+      "d": 1,
+      "p": 0,
+      "s": "The freight elevator will be closed all day on October 19 for its annual safety inspection"
+     }
+    ],
+    "exp": "문자 메시지에서 프린터는 19일에 배송될 예정이고(delivered on Monday the 19th), 일정표에 따르면 화물용 엘리베이터는 10월 19일에 안전 점검으로 하루 종일 운행하지 않는다. 즉 배송일에 필요한 엘리베이터를 쓸 수 없는 것이 문제다. 프린터는 아직 도착하지 않았으므로 파손은 오답이고, 관리사무소에 전화했다는 내용도 없다."
+   },
+   {
+    "q": "What will Ms. Park most likely do next?",
+    "qko": "박 씨는 다음에 무엇을 하겠는가?",
+    "o": [
+     "Contact a supplier",
+     "Visit the management office",
+     "Reserve a passenger elevator",
+     "Check the lobby notice board"
+    ],
+    "a": 0,
+    "type": "추론",
+    "ev": [
+     {
+      "d": 2,
+      "p": 3,
+      "s": "Could the supplier come on Tuesday instead?"
+     },
+     {
+      "d": 2,
+      "p": 4,
+      "s": "I'll call them right now and ask."
+     }
+    ],
+    "exp": "하다드 씨가 공급업체가 화요일에 와 줄 수 있는지 묻자 박 씨는 'I'll call them right now and ask'라고 답했다 → 공급업체에 연락할 것이다(Contact a supplier). 관리사무소 전화는 공지에 나온 예약 방법일 뿐 박 씨가 지금 하려는 일이 아니다."
+   }
+  ],
+  "id": "p7-084"
+ },
+ {
+  "kind": "triple",
+  "lv": 2,
+  "docs": [
+   {
+    "doc": "송장",
+    "title": "Brightline Printing - Invoice",
+    "meta": [
+     "Invoice No. BP-2291",
+     "Date: June 3",
+     "Bill to: Calloway Event Group, attn. Jonah Reyes"
+    ],
+    "paras": [
+     "Total amount due: $500.00, including a rush production fee of $45.00.",
+     "Payment is due within 30 days of the invoice date. For questions, contact Teresa Lin at billing@brightline.example."
+    ],
+    "ko": [
+     "청구 총액: 500달러(긴급 제작비 45달러 포함)",
+     "대금은 송장 발행일로부터 30일 이내에 지불해야 합니다. 문의 사항은 테레사 린(billing@brightline.example)에게 연락해 주십시오."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Order Details",
+     "cols": [
+      "Item",
+      "Quantity",
+      "Amount"
+     ],
+     "rows": [
+      [
+       "Tri-fold brochures",
+       "500",
+       "$210.00"
+      ],
+      [
+       "Event posters (matte finish)",
+       "150",
+       "$180.00"
+      ],
+      [
+       "Business cards",
+       "1,000",
+       "$65.00"
+      ],
+      [
+       "Rush production fee",
+       "-",
+       "$45.00"
+      ],
+      [
+       "Total",
+       "",
+       "$500.00"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Teresa Lin <billing@brightline.example>",
+     "From: Jonah Reyes <jreyes@callowayevents.example>",
+     "Date: June 5",
+     "Subject: Invoice BP-2291"
+    ],
+    "paras": [
+     "Dear Ms. Lin,",
+     "We received our order yesterday, and the brochures and business cards look excellent. However, the posters were printed on glossy paper instead of the matte paper we asked for. Under the bright lights at our venue, the glare makes them hard to read.",
+     "In addition, I was surprised to see a rush fee on the invoice. When I placed the order, your sales representative told me that the standard ten-day turnaround would be fine for our event on June 20. Could you please look into both issues?",
+     "Jonah Reyes"
+    ],
+    "ko": [
+     "린 씨께,",
+     "어제 주문품을 받았는데, 브로슈어와 명함은 아주 훌륭합니다. 하지만 포스터가 저희가 요청한 무광 용지가 아니라 유광 용지에 인쇄되었습니다. 행사장의 밝은 조명 아래에서는 빛이 반사되어 글자가 잘 읽히지 않습니다.",
+     "또한 송장에 긴급 제작비가 있어서 놀랐습니다. 주문할 때 귀사 영업 담당자가 6월 20일 저희 행사에는 일반 제작 기간인 10일이면 충분하다고 했습니다. 두 가지 문제를 모두 확인해 주시겠습니까?",
+     "조나 레예스"
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Jonah Reyes <jreyes@callowayevents.example>",
+     "From: Teresa Lin <billing@brightline.example>",
+     "Date: June 6",
+     "Subject: RE: Invoice BP-2291"
+    ],
+    "paras": [
+     "Dear Mr. Reyes,",
+     "I apologize for both errors. We will reprint all of the posters on the correct paper at no cost to you, and they will be delivered by June 12. You do not need to return the original ones.",
+     "I have also removed the rush fee and attached a corrected invoice. As a thank-you for your patience, we would like to offer you 15 percent off your next order with us.",
+     "Teresa Lin, Billing Department"
+    ],
+    "ko": [
+     "레예스 씨께,",
+     "두 가지 실수 모두 사과드립니다. 포스터 전량을 올바른 용지로 무료로 다시 인쇄해 6월 12일까지 배송해 드리겠습니다. 기존 포스터는 반납하지 않으셔도 됩니다.",
+     "또한 긴급 제작비를 삭제하고 수정된 송장을 첨부했습니다. 기다려 주신 데 대한 감사의 표시로 다음 주문 시 15퍼센트 할인을 제공해 드리고자 합니다.",
+     "청구 부서 테레사 린 드림"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "Why did Mr. Reyes write to Ms. Lin?",
+    "qko": "레예스 씨는 왜 린 씨에게 이메일을 썼는가?",
+    "o": [
+     "To place an additional order",
+     "To request a price estimate",
+     "To change a delivery address",
+     "To report problems with an order"
+    ],
+    "a": 3,
+    "type": "주제·목적",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "the posters were printed on glossy paper instead of the matte paper we asked for"
+     },
+     {
+      "d": 1,
+      "p": 2,
+      "s": "Could you please look into both issues?"
+     }
+    ],
+    "exp": "레예스 씨는 포스터 용지가 잘못되었고(printed on glossy paper instead of the matte paper) 긴급 제작비가 잘못 청구되었다며 'Could you please look into both issues?'라고 했다 → 주문의 문제를 알리려고(To report problems with an order). 추가 주문, 견적 요청, 주소 변경은 언급되지 않았다."
+   },
+   {
+    "q": "What problem does Mr. Reyes mention about the posters?",
+    "qko": "레예스 씨는 포스터에 대해 어떤 문제를 언급하는가?",
+    "o": [
+     "They were delivered to the wrong venue.",
+     "They are difficult to read under bright light.",
+     "They contain spelling errors.",
+     "They are smaller than expected."
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Under the bright lights at our venue, the glare makes them hard to read"
+     }
+    ],
+    "exp": "'Under the bright lights at our venue, the glare makes them hard to read' → 밝은 조명 아래에서 읽기 어렵다(difficult to read under bright light). venue(행사장)라는 단어를 이용한 '엉뚱한 장소로 배송'은 함정이며, 철자 오류나 크기 문제는 언급되지 않았다."
+   },
+   {
+    "q": "How much will Calloway Event Group most likely pay for its order?",
+    "qko": "캘러웨이 이벤트 그룹은 주문 대금으로 얼마를 내겠는가?",
+    "o": [
+     "$320.00",
+     "$425.00",
+     "$455.00",
+     "$500.00"
+    ],
+    "a": 2,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Total amount due: $500.00, including a rush production fee of $45.00."
+     },
+     {
+      "d": 2,
+      "p": 2,
+      "s": "I have also removed the rush fee"
+     }
+    ],
+    "exp": "송장 총액은 긴급 제작비 45달러를 포함한 500달러이고, 린 씨는 답장에서 긴급 제작비를 삭제했다고 했다(I have also removed the rush fee). 따라서 500 - 45 = 455달러를 낸다. 15퍼센트 할인은 다음 주문에 적용되므로 425달러는 오답이고, 포스터를 무료로 다시 인쇄해 준다는 것이지 포스터 대금(180달러)을 빼 준다는 말은 없으므로 320달러도 오답이다."
+   },
+   {
+    "q": "What can be concluded about the reprinted posters?",
+    "qko": "다시 인쇄한 포스터에 대해 무엇을 알 수 있는가?",
+    "o": [
+     "They will be printed on glossy paper.",
+     "They must be paid for in advance.",
+     "They will arrive before Calloway's event.",
+     "They will be picked up by Mr. Reyes."
+    ],
+    "a": 2,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "they will be delivered by June 12"
+     },
+     {
+      "d": 1,
+      "p": 2,
+      "s": "our event on June 20"
+     }
+    ],
+    "exp": "린 씨는 다시 인쇄한 포스터를 6월 12일까지 배송하겠다고 했고(delivered by June 12), 레예스 씨의 이메일에 따르면 행사는 6월 20일이다(our event on June 20). 따라서 포스터는 행사 전에 도착한다. 새 포스터는 올바른 용지, 즉 무광 용지로 인쇄되며 비용도 무료(at no cost to you)이므로 나머지 보기는 오답이다."
+   },
+   {
+    "q": "What does Ms. Lin offer Mr. Reyes?",
+    "qko": "린 씨는 레예스 씨에게 무엇을 제안하는가?",
+    "o": [
+     "A refund for the business cards",
+     "A discount on a future purchase",
+     "Free delivery on all orders",
+     "A meeting with a sales representative"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "we would like to offer you 15 percent off your next order with us"
+     }
+    ],
+    "exp": "'15 percent off your next order' → A discount on a future purchase(다음 구매 할인). 명함은 훌륭하다고 했으므로 환불 대상이 아니며, 무료 배송이나 영업 담당자와의 면담은 제안되지 않았다."
+   }
+  ],
+  "id": "p7-085"
+ },
+ {
+  "kind": "triple",
+  "lv": 3,
+  "docs": [
+   {
+    "doc": "리뷰",
+    "title": "Halvorsen Inn - Guest Review",
+    "paras": [
+     "Posted by Carla M. on September 20 - Rating: 4 out of 5",
+     "My husband and I spent three nights in a Garden Suite earlier this month. The room was spotless, and the breakfast was the best part of our trip, especially the homemade bread.",
+     "My only disappointment was the shuttle. The inn's web page promised a free airport shuttle every day, but when we asked for a ride on Sunday morning, the front desk told us it did not run that day. We ended up taking a taxi, which cost us $48."
+    ],
+    "ko": [
+     "9월 20일 칼라 M. 작성 - 평점: 5점 만점에 4점",
+     "남편과 저는 이달 초에 가든 스위트에서 3박을 했습니다. 객실은 티끌 하나 없이 깨끗했고, 아침 식사는 이번 여행에서 가장 좋았던 점이었는데, 특히 직접 구운 빵이 일품이었습니다.",
+     "유일하게 실망스러웠던 것은 셔틀이었습니다. 숙소 웹페이지에는 매일 무료 공항 셔틀을 운행한다고 나와 있었는데, 일요일 아침에 태워 달라고 하자 프런트에서 그날은 운행하지 않는다고 했습니다. 결국 택시를 탔고, 요금이 48달러 들었습니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "웹페이지",
+    "title": "Halvorsen Inn - Rooms and Amenities",
+    "paras": [
+     "Harbor View Room: queen bed, harbor view, $149 per night",
+     "Garden Suite: king bed, private patio, $189 per night",
+     "All stays include a full breakfast served from 7:00 to 10:00 A.M. Free airport shuttle service is available Monday through Saturday, 6:00 A.M. to 9:00 P.M.",
+     "Page last updated: September 22"
+    ],
+    "ko": [
+     "하버 뷰 룸: 퀸 침대, 항구 전망, 1박 149달러",
+     "가든 스위트: 킹 침대, 전용 테라스, 1박 189달러",
+     "모든 숙박에는 오전 7시부터 10시까지 제공되는 정식 아침 식사가 포함됩니다. 무료 공항 셔틀은 월요일부터 토요일까지 오전 6시부터 오후 9시까지 이용하실 수 있습니다.",
+     "페이지 최종 수정일: 9월 22일"
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Carla Mendes <cmendes@mailbox.example>",
+     "From: Martin Halvorsen <martin@halvorseninn.example>",
+     "Date: September 23",
+     "Subject: Your recent stay"
+    ],
+    "paras": [
+     "Dear Ms. Mendes,",
+     "Thank you for your kind words about our rooms and breakfast. You are correct that our web page listed the shuttle as a daily service. We reduced the service to six days a week in August, but the page was not changed until yesterday. I am sorry for the confusion this caused.",
+     "I would like to reimburse you for your taxi fare. If you send a copy of your receipt to this address, I will arrange the payment right away. I hope you will give us another chance to host you.",
+     "Martin Halvorsen, Owner"
+    ],
+    "ko": [
+     "멘데스 씨께,",
+     "저희 객실과 아침 식사에 대해 좋은 말씀을 해 주셔서 감사합니다. 말씀하신 대로 저희 웹페이지에는 셔틀이 매일 운행하는 것으로 나와 있었습니다. 8월에 운행을 주 6일로 줄였는데, 페이지는 어제에서야 수정되었습니다. 이로 인해 혼란을 드려 죄송합니다.",
+     "택시 요금을 돌려 드리고 싶습니다. 영수증 사본을 이 주소로 보내 주시면 바로 지급해 드리겠습니다. 다시 한번 저희가 모실 기회를 주시기 바랍니다.",
+     "소유주 마틴 할보르센 드림"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "In the review, the word \"spotless\" in paragraph 2, line 1, is closest in meaning to",
+    "qko": "리뷰에서 두 번째 단락 1행의 단어 \"spotless\"와 의미가 가장 가까운 것은?",
+    "o": [
+     "very clean",
+     "perfectly quiet",
+     "newly built",
+     "well lit"
+    ],
+    "a": 0,
+    "type": "동의어",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "The room was spotless"
+     }
+    ],
+    "exp": "'The room was spotless'의 spotless는 '얼룩(spot) 하나 없는', 즉 '아주 깨끗한'이라는 뜻이므로 very clean이 정답이다. 조용함(quiet), 새로 지음(newly built), 밝은 조명(well lit)은 객실 칭찬에 어울릴 법하지만 spotless의 뜻과는 관계없다."
+   },
+   {
+    "q": "How much did Ms. Mendes most likely pay per night for her room?",
+    "qko": "멘데스 씨는 객실 요금으로 1박에 얼마를 냈겠는가?",
+    "o": [
+     "$149",
+     "$169",
+     "$189",
+     "$209"
+    ],
+    "a": 2,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "spent three nights in a Garden Suite"
+     },
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Garden Suite: king bed, private patio, $189 per night"
+     }
+    ],
+    "exp": "리뷰에서 멘데스 씨는 가든 스위트에 묵었다고 했고(three nights in a Garden Suite), 웹페이지에 따르면 가든 스위트는 1박에 189달러다. 149달러는 하버 뷰 룸의 요금이므로 객실 종류를 혼동하게 하는 함정이다."
+   },
+   {
+    "q": "What is indicated about the inn's web page?",
+    "qko": "숙소의 웹페이지에 대해 알 수 있는 것은?",
+    "o": [
+     "It was revised after Ms. Mendes posted her review.",
+     "It now lists a lower price for Garden Suites.",
+     "It was updated before Ms. Mendes's stay.",
+     "It no longer mentions the airport shuttle."
+    ],
+    "a": 0,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Posted by Carla M. on September 20"
+     },
+     {
+      "d": 1,
+      "p": 3,
+      "s": "Page last updated: September 22"
+     }
+    ],
+    "exp": "리뷰는 9월 20일에 게시되었고(Posted ... on September 20), 웹페이지의 최종 수정일은 9월 22일이다(Page last updated: September 22). 즉 웹페이지는 리뷰가 올라온 뒤에 수정되었다. 멘데스 씨가 묵은 이달 초에는 아직 '매일 운행'으로 나와 있었으므로 숙박 전에 수정되었다는 보기는 반대이며, 셔틀 안내는 지금도 웹페이지에 있다(Free airport shuttle service is available Monday through Saturday)."
+   },
+   {
+    "q": "What does Mr. Halvorsen ask Ms. Mendes to send?",
+    "qko": "할보르센 씨는 멘데스 씨에게 무엇을 보내 달라고 하는가?",
+    "o": [
+     "An updated review",
+     "Her travel dates",
+     "A photo of the room",
+     "A copy of a receipt"
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "If you send a copy of your receipt to this address"
+     }
+    ],
+    "exp": "'If you send a copy of your receipt to this address, I will arrange the payment' → 택시 영수증 사본(A copy of a receipt)을 보내 달라고 했다. 할보르센 씨는 다시 묵어 달라고(give us another chance to host you) 했을 뿐 리뷰 수정을 요청하지 않았다."
+   },
+   {
+    "q": "According to the e-mail, what did the inn do in August?",
+    "qko": "이메일에 따르면, 숙소는 8월에 무엇을 했는가?",
+    "o": [
+     "It began serving homemade bread.",
+     "It added more Garden Suites.",
+     "It cut back its shuttle service.",
+     "It raised its room rates."
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "We reduced the service to six days a week in August"
+     }
+    ],
+    "exp": "'We reduced the service to six days a week in August' → 8월에 셔틀 운행을 주 6일로 줄였다(cut back its shuttle service). 직접 구운 빵은 리뷰에서 칭찬한 아침 식사 내용일 뿐 8월에 시작했다는 말은 없고, 객실 추가나 요금 인상도 언급되지 않았다."
+   }
+  ],
+  "id": "p7-086"
+ },
+ {
+  "kind": "triple",
+  "lv": 2,
+  "docs": [
+   {
+    "doc": "일정표",
+    "title": "Carver County Small Business Expo - Saturday, November 7",
+    "paras": [
+     "Carver Convention Center. Workshops are limited to 40 participants each and require advance registration. Lunch is served in the Atrium from 12:00 to 1:00 P.M. for Premium ticket holders."
+    ],
+    "ko": [
+     "카버 컨벤션 센터. 워크숍은 각각 40명으로 인원이 제한되며 사전 등록이 필요합니다. 프리미엄 입장권 소지자에게는 낮 12시부터 오후 1시까지 아트리움에서 점심이 제공됩니다."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Program",
+     "cols": [
+      "Time",
+      "Session",
+      "Location"
+     ],
+     "rows": [
+      [
+       "9:00 A.M.",
+       "Keynote: Growing Your Business Online (Nadia Brooks)",
+       "Hall A"
+      ],
+      [
+       "10:30 A.M.",
+       "Workshop: Bookkeeping Basics",
+       "Room 101"
+      ],
+      [
+       "10:30 A.M.",
+       "Workshop: Social Media Marketing",
+       "Room 102"
+      ],
+      [
+       "1:30 P.M.",
+       "Panel: Financing Your Expansion",
+       "Hall A"
+      ],
+      [
+       "3:30 P.M.",
+       "Networking Reception",
+       "Atrium"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "양식",
+    "title": "Expo Registration Form",
+    "paras": [
+     "Name: Grace Liu | Business: Liu Floral Design",
+     "Ticket type: Premium ($60) | Workshop choice: Social Media Marketing",
+     "Payment method: credit card | Amount paid: $60.00",
+     "How did you hear about the expo? Chamber of Commerce newsletter | Submitted: October 28"
+    ],
+    "ko": [
+     "이름: 그레이스 리우 | 업체: 리우 플로럴 디자인",
+     "입장권 종류: 프리미엄(60달러) | 워크숍 선택: 소셜 미디어 마케팅",
+     "결제 수단: 신용카드 | 결제 금액: 60달러",
+     "박람회를 어떻게 알게 되셨습니까? 상공회의소 소식지 | 제출일: 10월 28일"
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Ticket Options",
+     "cols": [
+      "Ticket",
+      "Price",
+      "Includes"
+     ],
+     "rows": [
+      [
+       "Standard",
+       "$35",
+       "All sessions"
+      ],
+      [
+       "Premium",
+       "$60",
+       "All sessions, lunch"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Grace Liu <grace@liufloral.example>",
+     "From: Ken Ito <kito@carverexpo.example>",
+     "Date: November 2",
+     "Subject: Your registration"
+    ],
+    "paras": [
+     "Dear Ms. Liu,",
+     "Thank you for registering for the expo. Unfortunately, the workshop you selected filled up before your form arrived, so we have placed you in the other workshop being held at the same time. If you would prefer a partial refund instead, please let me know by November 4.",
+     "Please also note a change to the program. Because of a travel delay, Nadia Brooks will now speak in the afternoon, switching places with the panel discussion. All locations remain the same.",
+     "Ken Ito, Expo Coordinator"
+    ],
+    "ko": [
+     "리우 씨께,",
+     "박람회에 등록해 주셔서 감사합니다. 안타깝게도 선택하신 워크숍은 신청서가 도착하기 전에 정원이 차서, 같은 시간에 열리는 다른 워크숍에 배정해 드렸습니다. 대신 일부 환불을 원하시면 11월 4일까지 알려 주십시오.",
+     "프로그램 변경 사항도 참고해 주십시오. 이동 일정이 지연되어 나디아 브룩스 씨가 오후에 강연하게 되었으며, 패널 토론과 시간을 맞바꿉니다. 장소는 모두 그대로입니다.",
+     "박람회 진행 담당 켄 이토 드림"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "According to the program, what is true about the workshops?",
+    "qko": "프로그램에 따르면, 워크숍에 대해 사실인 것은?",
+    "o": [
+     "They are open only to Premium ticket holders.",
+     "They take place in the Atrium.",
+     "They are led by Nadia Brooks.",
+     "The number of participants is limited."
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Workshops are limited to 40 participants each and require advance registration"
+     }
+    ],
+    "exp": "'Workshops are limited to 40 participants each' → 참가 인원이 제한된다(The number of participants is limited). 입장권 옵션 표를 보면 두 입장권 모두 모든 세션(All sessions)이 포함되므로 프리미엄 전용이 아니고, 아트리움은 점심과 리셉션 장소다. 브룩스 씨는 기조연설자다."
+   },
+   {
+    "q": "What kind of business does Ms. Liu most likely run?",
+    "qko": "리우 씨는 어떤 종류의 업체를 운영하겠는가?",
+    "o": [
+     "A bookkeeping service",
+     "A flower shop",
+     "A marketing agency",
+     "A catering company"
+    ],
+    "a": 1,
+    "type": "추론",
+    "ev": [
+     {
+      "d": 1,
+      "p": 0,
+      "s": "Business: Liu Floral Design"
+     }
+    ],
+    "exp": "등록 양식의 'Business: Liu Floral Design'에서 floral(꽃의)이라는 단어로 보아 꽃집(A flower shop)을 운영한다고 볼 수 있다. 회계(bookkeeping)와 마케팅은 워크숍 주제에서 따온 함정이고, 출장 요리는 박람회 점심에서 연상되는 오답이다."
+   },
+   {
+    "q": "Which session will Ms. Liu most likely attend at 10:30 A.M.?",
+    "qko": "리우 씨는 오전 10시 30분에 어느 세션에 참석하겠는가?",
+    "o": [
+     "Social Media Marketing",
+     "Bookkeeping Basics",
+     "Financing Your Expansion",
+     "Growing Your Business Online"
+    ],
+    "a": 1,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Workshop choice: Social Media Marketing"
+     },
+     {
+      "d": 2,
+      "p": 1,
+      "s": "we have placed you in the other workshop being held at the same time"
+     }
+    ],
+    "exp": "양식에서 리우 씨는 소셜 미디어 마케팅 워크숍을 골랐지만, 이메일에 따르면 정원이 차서 같은 시간에 열리는 다른 워크숍에 배정되었다. 프로그램 표에서 같은 10시 30분에 열리는 다른 워크숍은 '회계 기초(Bookkeeping Basics)'다. 원래 고른 Social Media Marketing은 마감되었으므로 오답이고, 나머지 두 세션은 워크숍이 아니다."
+   },
+   {
+    "q": "What is indicated about Ms. Liu?",
+    "qko": "리우 씨에 대해 알 수 있는 것은?",
+    "o": [
+     "She will be served lunch at the expo.",
+     "She will give a talk at the expo.",
+     "She registered after the deadline.",
+     "She has requested a refund."
+    ],
+    "a": 0,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Ticket type: Premium ($60)"
+     },
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Lunch is served in the Atrium from 12:00 to 1:00 P.M. for Premium ticket holders"
+     }
+    ],
+    "exp": "양식에서 리우 씨의 입장권은 프리미엄이고(Ticket type: Premium), 프로그램에 따르면 프리미엄 입장권 소지자에게는 점심이 제공된다. 따라서 그녀는 박람회에서 점심을 먹게 된다. 환불은 원하면 11월 4일까지 알려 달라는 안내였을 뿐 그녀가 요청한 것이 아니며, 등록 마감일은 언급되지 않았다."
+   },
+   {
+    "q": "What change to the program does Mr. Ito mention?",
+    "qko": "이토 씨는 프로그램의 어떤 변경 사항을 언급하는가?",
+    "o": [
+     "A speaker's talk has been moved to a later time.",
+     "A workshop will be held in a different room.",
+     "The reception has been canceled.",
+     "The panel discussion will be shortened."
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "Nadia Brooks will now speak in the afternoon, switching places with the panel discussion"
+     }
+    ],
+    "exp": "'Nadia Brooks will now speak in the afternoon, switching places with the panel discussion' → 오전 9시 기조연설이 오후로 옮겨졌다(moved to a later time). 'All locations remain the same'이라고 했으므로 장소 변경은 오답이고, 리셉션 취소나 패널 토론 단축은 언급되지 않았다."
+   }
+  ],
+  "id": "p7-087"
+ },
+ {
+  "kind": "triple",
+  "lv": 3,
+  "docs": [
+   {
+    "doc": "광고",
+    "title": "Fernwood Farms Weekly Produce Boxes",
+    "paras": [
+     "Enjoy fresh, locally grown vegetables and fruit delivered to your door every week. Everything in our boxes is picked within 24 hours of delivery.",
+     "Choose the size that suits your household: the Small Box ($25) serves one to two people, and the Family Box ($40) serves up to four. Our Harvest Plus Box ($55) contains the same produce as the Family Box, plus a dozen eggs and a loaf of fresh bread.",
+     "We deliver on Tuesdays to addresses north of the Linden River and on Thursdays to addresses south of it. Need a break? You can skip any week by notifying us at least 48 hours before your delivery day."
+    ],
+    "ko": [
+     "지역에서 재배한 신선한 채소와 과일을 매주 댁 앞까지 배달받으십시오. 상자에 담긴 모든 농산물은 배송 24시간 이내에 수확한 것입니다.",
+     "가구에 맞는 크기를 고르십시오. 스몰 박스(25달러)는 1~2인용, 패밀리 박스(40달러)는 최대 4인용입니다. 하베스트 플러스 박스(55달러)에는 패밀리 박스와 같은 농산물에 달걀 12개와 갓 구운 빵 한 덩이가 더해집니다.",
+     "린든 강 북쪽 지역은 화요일에, 남쪽 지역은 목요일에 배달합니다. 잠시 쉬고 싶으신가요? 배달일 최소 48시간 전에 알려 주시면 어느 주든 건너뛰실 수 있습니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "양식",
+    "title": "Fernwood Farms Subscription Form",
+    "paras": [
+     "Name: Daniel Okafor | Address: 82 Ridge Lane, Corbett",
+     "Delivery day: Thursday | Start date: June 4",
+     "Delivery notes: Please leave the box on the back porch if no one answers the door."
+    ],
+    "ko": [
+     "이름: 대니얼 오카포 | 주소: 코벳 리지 레인 82번지",
+     "배달 요일: 목요일 | 시작일: 6월 4일",
+     "배달 메모: 아무도 나오지 않으면 상자를 뒷문 현관에 두고 가 주십시오."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Weekly Order",
+     "cols": [
+      "Selection",
+      "Price per Week"
+     ],
+     "rows": [
+      [
+       "Family Box",
+       "$40.00"
+      ],
+      [
+       "Add-on: Wildflower honey (1 jar)",
+       "$6.00"
+      ],
+      [
+       "Weekly total",
+       "$46.00"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: service@fernwoodfarms.example",
+     "From: Daniel Okafor <dokafor@mailbox.example>",
+     "Date: July 6",
+     "Subject: My subscription"
+    ],
+    "paras": [
+     "Hello,",
+     "We've really enjoyed our boxes since June, but we've been buying eggs and bread at the store every week. It would be easier to get everything from you, so please switch us to the box that includes them. Please also stop adding the honey to my order.",
+     "One more thing: we will be traveling from July 20 to 26, so we won't need a delivery that week. Thank you.",
+     "Daniel Okafor"
+    ],
+    "ko": [
+     "안녕하세요.",
+     "6월부터 상자를 정말 잘 받아 보고 있는데, 달걀과 빵은 매주 가게에서 따로 사고 있습니다. 모두 귀사에서 받는 편이 편할 것 같으니 그것들이 포함된 상자로 바꿔 주십시오. 그리고 제 주문에 꿀은 더 이상 넣지 말아 주십시오.",
+     "한 가지 더 말씀드리면, 저희는 7월 20일부터 26일까지 여행을 가기 때문에 그 주에는 배달이 필요 없습니다. 감사합니다.",
+     "대니얼 오카포"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "In the advertisement, the word \"picked\" in paragraph 1, line 2, is closest in meaning to",
+    "qko": "광고에서 첫 번째 단락 2행의 단어 \"picked\"와 의미가 가장 가까운 것은?",
+    "o": [
+     "selected",
+     "packed",
+     "harvested",
+     "ordered"
+    ],
+    "a": 2,
+    "type": "동의어",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Everything in our boxes is picked within 24 hours of delivery"
+     }
+    ],
+    "exp": "'Everything in our boxes is picked within 24 hours of delivery'의 picked는 농작물을 '따다, 수확하다'라는 뜻이므로 harvested가 정답이다. pick의 다른 뜻인 '고르다'에 해당하는 selected는 이 문맥에 맞지 않는 함정이고, packed(포장된)와 ordered(주문된)도 뜻이 다르다."
+   },
+   {
+    "q": "What is suggested about Mr. Okafor?",
+    "qko": "오카포 씨에 대해 암시되는 것은?",
+    "o": [
+     "He lives south of the Linden River.",
+     "He has skipped a delivery before.",
+     "He works at a local bakery.",
+     "He first subscribed in July."
+    ],
+    "a": 0,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Delivery day: Thursday"
+     },
+     {
+      "d": 0,
+      "p": 2,
+      "s": "on Thursdays to addresses south of it"
+     }
+    ],
+    "exp": "양식에서 오카포 씨의 배달 요일은 목요일이고(Delivery day: Thursday), 광고에 따르면 목요일 배달은 린든 강 남쪽 주소 대상이다(on Thursdays to addresses south of it). 따라서 그는 강 남쪽에 산다. 구독 시작일은 6월 4일이므로 7월에 처음 구독했다는 보기는 오답이고, 배달을 건너뛴 적이 있다는 내용은 없다."
+   },
+   {
+    "q": "How much will Mr. Okafor pay per week after the change he requests?",
+    "qko": "오카포 씨가 요청한 변경 후 주당 금액은 얼마이겠는가?",
+    "o": [
+     "$40",
+     "$46",
+     "$55",
+     "$61"
+    ],
+    "a": 2,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "please switch us to the box that includes them"
+     },
+     {
+      "d": 2,
+      "p": 1,
+      "s": "Please also stop adding the honey to my order."
+     },
+     {
+      "d": 0,
+      "p": 1,
+      "s": "Our Harvest Plus Box ($55) contains the same produce as the Family Box, plus a dozen eggs and a loaf of fresh bread"
+     }
+    ],
+    "exp": "오카포 씨는 달걀과 빵이 포함된 상자로 바꾸고 꿀은 빼 달라고 했다. 광고에 따르면 달걀과 빵이 들어 있는 상자는 55달러짜리 하베스트 플러스 박스이고, 주문표의 꿀(6달러)은 빠지므로 주당 55달러를 낸다. 61달러는 꿀을 계속 추가할 때의 금액이고, 46달러는 현재 주당 금액(Weekly total)이다."
+   },
+   {
+    "q": "Why does Mr. Okafor want to change his subscription?",
+    "qko": "오카포 씨는 왜 구독을 변경하려 하는가?",
+    "o": [
+     "To feed more people in his household",
+     "To reduce his weekly spending",
+     "To receive deliveries on a different day",
+     "To stop buying some groceries at a store"
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "but we've been buying eggs and bread at the store every week"
+     },
+     {
+      "d": 2,
+      "p": 1,
+      "s": "It would be easier to get everything from you"
+     }
+    ],
+    "exp": "'we've been buying eggs and bread at the store every week. It would be easier to get everything from you' → 가게에서 따로 사던 식료품을 더 이상 사지 않으려는 것이다(To stop buying some groceries at a store). 상자를 바꾸면 주당 금액이 오히려 오르므로(46달러 → 55달러) 지출을 줄이려는 것이 아니고, 가족 수가 늘었다거나 배달 요일을 바꾸고 싶다는 말은 없다."
+   },
+   {
+    "q": "What does Mr. Okafor say about the week of July 20?",
+    "qko": "오카포 씨는 7월 20일이 있는 주에 대해 무엇이라고 말하는가?",
+    "o": [
+     "He will move to a new address.",
+     "He will have guests staying with him.",
+     "He will start a new job.",
+     "He will be away on a trip."
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "we will be traveling from July 20 to 26, so we won't need a delivery that week"
+     }
+    ],
+    "exp": "'we will be traveling from July 20 to 26' → 여행으로 집을 비운다(He will be away on a trip). 그래서 그 주에는 배달이 필요 없다고 했다. 이사, 손님, 새 직장 이야기는 없다."
+   }
+  ],
+  "id": "p7-088"
+ },
+ {
+  "kind": "triple",
+  "lv": 1,
+  "docs": [
+   {
+    "doc": "광고",
+    "title": "Summer Lifeguards Wanted",
+    "paras": [
+     "Westbrook Community Pool is hiring lifeguards for the summer season, June 6 to August 30. Applicants must be at least 18 years old, hold a current lifeguard certificate, and be available to work weekends.",
+     "Pay starts at $17 per hour. Apply online at westbrookpool.example by May 15. All new staff must attend a training session on June 1."
+    ],
+    "ko": [
+     "웨스트브룩 커뮤니티 수영장에서 6월 6일부터 8월 30일까지 여름 시즌 동안 근무할 안전 요원을 모집합니다. 지원자는 만 18세 이상이어야 하고, 유효한 안전 요원 자격증이 있어야 하며, 주말 근무가 가능해야 합니다.",
+     "시급은 17달러부터 시작합니다. 5월 15일까지 westbrookpool.example에서 온라인으로 지원하십시오. 모든 신규 직원은 6월 1일 교육에 반드시 참석해야 합니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Sofia Ruiz <sruiz@mailbox.example>",
+     "From: Brenda Cole <bcole@westbrookpool.example>",
+     "Date: May 28",
+     "Subject: Welcome to the team"
+    ],
+    "paras": [
+     "Hi Sofia,",
+     "Welcome aboard! Your shifts for the first full week are shown on the attached schedule. As you asked, I have traded your Wednesday shift for Tyler's shift on Friday. The schedule was made before this change, so please keep that in mind.",
+     "Before your first shift, please stop by the front office to pick up your uniform and locker key. And don't forget the training session on June 1 at 9:00 A.M.",
+     "Brenda Cole, Pool Manager"
+    ],
+    "ko": [
+     "소피아 씨, 안녕하세요.",
+     "합류를 환영합니다! 첫 주 근무 시간은 첨부한 근무표에 나와 있습니다. 요청하신 대로 수요일 근무를 금요일 타일러 씨의 근무와 바꿨습니다. 근무표는 이 변경 전에 만든 것이니 참고해 주십시오.",
+     "첫 근무 전에 사무실에 들러 유니폼과 사물함 열쇠를 받아 가십시오. 그리고 6월 1일 오전 9시 교육도 잊지 마십시오.",
+     "수영장 관리자 브렌다 콜"
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "일정표",
+    "title": "Lifeguard Schedule: June 8-13",
+    "paras": [
+     "Shift times for June 8-13 are listed below. Any changes must be approved by the pool manager."
+    ],
+    "ko": [
+     "6월 8일~13일 근무 시간은 아래와 같습니다. 모든 변경은 수영장 관리자의 승인을 받아야 합니다."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Lifeguard Schedule",
+     "cols": [
+      "Day",
+      "Sofia Ruiz",
+      "Tyler Grant"
+     ],
+     "rows": [
+      [
+       "Mon, June 8",
+       "10 A.M.-2 P.M.",
+       "2-6 P.M."
+      ],
+      [
+       "Wed, June 10",
+       "2-6 P.M.",
+       "Off"
+      ],
+      [
+       "Fri, June 12",
+       "Off",
+       "4-8 P.M."
+      ],
+      [
+       "Sat, June 13",
+       "8 A.M.-12 P.M.",
+       "12-4 P.M."
+      ]
+     ]
+    }
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is a requirement for the advertised job?",
+    "qko": "광고된 일자리의 자격 요건은 무엇인가?",
+    "o": [
+     "Having a college degree",
+     "Being able to work on weekends",
+     "Owning a car",
+     "Having coaching experience"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "be available to work weekends"
+     }
+    ],
+    "exp": "'be available to work weekends' → 주말 근무 가능(Being able to work on weekends). 나이(18세 이상)와 자격증도 요건이지만 보기에 없고, 학위, 자동차, 코치 경험은 언급되지 않았다."
+   },
+   {
+    "q": "What is the main purpose of the e-mail?",
+    "qko": "이메일의 주된 목적은 무엇인가?",
+    "o": [
+     "To announce a job opening",
+     "To cancel a training session",
+     "To welcome a new employee",
+     "To request a certificate"
+    ],
+    "a": 2,
+    "type": "주제·목적",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Welcome aboard!"
+     }
+    ],
+    "exp": "이메일은 'Welcome aboard!'로 시작해 첫 주 근무표, 유니폼 수령, 교육 일정을 안내한다 → 신규 직원을 환영하고 안내하는 것이 목적이다(To welcome a new employee). 교육은 취소가 아니라 잊지 말라고(don't forget) 상기시킨 것이다."
+   },
+   {
+    "q": "When will Ms. Ruiz work on Friday, June 12?",
+    "qko": "루이즈 씨는 6월 12일 금요일에 언제 근무하는가?",
+    "o": [
+     "From 8 A.M. to 12 P.M.",
+     "From 10 A.M. to 2 P.M.",
+     "From 2 P.M. to 6 P.M.",
+     "From 4 P.M. to 8 P.M."
+    ],
+    "a": 3,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "I have traded your Wednesday shift for Tyler's shift on Friday"
+     },
+     {
+      "d": 2,
+      "p": 0,
+      "s": "Shift times for June 8-13 are listed below."
+     }
+    ],
+    "exp": "이메일에서 콜 씨는 루이즈 씨의 수요일 근무를 금요일 타일러 씨의 근무와 바꿨다고 했다. 근무표에서 금요일 타일러 씨의 근무 시간은 오후 4시~8시이므로 루이즈 씨는 그 시간에 일한다. 오후 2시~6시는 원래 루이즈 씨의 수요일 근무 시간이므로 혼동하면 안 된다."
+   },
+   {
+    "q": "What does Ms. Cole ask Ms. Ruiz to do before her first shift?",
+    "qko": "콜 씨는 루이즈 씨에게 첫 근무 전에 무엇을 하라고 요청하는가?",
+    "o": [
+     "Renew her certificate",
+     "Pick up some items at the office",
+     "Complete an online form",
+     "Meet with Tyler"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "please stop by the front office to pick up your uniform and locker key"
+     }
+    ],
+    "exp": "'please stop by the front office to pick up your uniform and locker key' → 사무실에서 물품(유니폼과 사물함 열쇠)을 받아 가라는 것이다(Pick up some items at the office). 타일러 씨는 근무를 바꾼 동료로만 언급되었고, 만나라는 말은 없다."
+   },
+   {
+    "q": "What is indicated about the training session?",
+    "qko": "교육에 대해 알 수 있는 것은?",
+    "o": [
+     "It will be led by Tyler Grant.",
+     "It takes place on a weekend.",
+     "It is held online.",
+     "It is required for all new staff."
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "All new staff must attend a training session on June 1"
+     },
+     {
+      "d": 1,
+      "p": 2,
+      "s": "don't forget the training session on June 1 at 9:00 A.M."
+     }
+    ],
+    "exp": "광고의 'All new staff must attend a training session on June 1' → 모든 신규 직원에게 필수다(required for all new staff). online은 지원 방법(Apply online)에 나온 단어를 이용한 함정이고, 진행자가 누구인지는 나오지 않는다."
+   }
+  ],
+  "id": "p7-089"
+ },
+ {
+  "kind": "triple",
+  "lv": 3,
+  "docs": [
+   {
+    "doc": "기사",
+    "title": "Tavio Recalls Wireless Earbuds",
+    "paras": [
+     "Tavio Electronics announced on Monday that it is recalling about 40,000 SoundPod X2 wireless earbud sets sold between January and March. The company said the charging case in some units can overheat if it is left plugged in for long periods.",
+     "No injuries have been reported. \"We are taking this step as a precaution,\" said spokesperson Elena Vos. Customers are asked to stop using the case immediately and visit the company's web site to find out whether their device is affected."
+    ],
+    "ko": [
+     "타비오 일렉트로닉스는 월요일, 1월에서 3월 사이에 판매된 사운드포드 X2 무선 이어폰 약 4만 세트를 리콜한다고 발표했다. 회사 측은 일부 제품의 충전 케이스를 장시간 전원에 연결해 두면 과열될 수 있다고 밝혔다.",
+     "부상 사례는 보고되지 않았다. 대변인 엘레나 보스는 \"예방 차원에서 이번 조치를 취하는 것\"이라고 말했다. 고객들은 즉시 케이스 사용을 중단하고 회사 웹사이트를 방문해 자신의 기기가 해당되는지 확인하라는 요청을 받았다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: support@tavio.example",
+     "From: Hiroshi Tanaka <htanaka@mailbox.example>",
+     "Date: April 15",
+     "Subject: SoundPod X2 recall"
+    ],
+    "paras": [
+     "To whom it may concern,",
+     "I read about the recall in the news. I bought a set of SoundPod X2 earbuds in February at Delmont Electronics, a store near my office, and the serial number on the charging case starts with K8.",
+     "I use the earbuds every day on my commute, so I would rather have a new case than get my money back. Please let me know what I need to do.",
+     "Hiroshi Tanaka"
+    ],
+    "ko": [
+     "담당자께,",
+     "뉴스에서 리콜 소식을 읽었습니다. 저는 2월에 사무실 근처 매장인 델몬트 일렉트로닉스에서 사운드포드 X2 이어폰을 샀고, 충전 케이스의 일련번호는 K8로 시작합니다.",
+     "출퇴근길에 매일 이어폰을 사용하기 때문에 환불보다는 새 케이스를 받고 싶습니다. 어떻게 해야 하는지 알려 주십시오.",
+     "히로시 다나카"
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "웹페이지",
+    "title": "SoundPod X2 Charging Case Recall - FAQ",
+    "paras": [
+     "Which products are affected? Charging cases with serial numbers beginning with K7 or K8. The earbuds themselves are not affected.",
+     "What are my options? You may choose a free replacement case or a full refund. Replacement cases ship within two weeks, and refunds are issued within ten business days.",
+     "How do I make a request? Complete the online form. If you bought your product from a store other than Tavio, you must also upload a copy of your receipt."
+    ],
+    "ko": [
+     "어떤 제품이 해당됩니까? 일련번호가 K7 또는 K8로 시작하는 충전 케이스입니다. 이어폰 자체는 해당되지 않습니다.",
+     "어떤 선택지가 있습니까? 무료 교체용 케이스와 전액 환불 중에서 선택하실 수 있습니다. 교체용 케이스는 2주 이내에 발송되며, 환불은 영업일 기준 10일 이내에 처리됩니다.",
+     "요청은 어떻게 합니까? 온라인 양식을 작성해 주십시오. 타비오가 아닌 다른 매장에서 제품을 구입하셨다면 영수증 사본도 업로드해야 합니다."
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What problem with the SoundPod X2 is mentioned in the article?",
+    "qko": "기사에서 사운드포드 X2의 어떤 문제가 언급되는가?",
+    "o": [
+     "Its battery runs out quickly.",
+     "It has caused injuries to users.",
+     "Part of it can become too hot.",
+     "It does not connect to some phones."
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "the charging case in some units can overheat"
+     }
+    ],
+    "exp": "'the charging case in some units can overheat' → 제품의 일부(충전 케이스)가 지나치게 뜨거워질 수 있다(Part of it can become too hot). 'No injuries have been reported'라고 했으므로 부상을 일으켰다는 보기는 반대 내용이고, 배터리 지속 시간이나 연결 문제는 언급되지 않았다."
+   },
+   {
+    "q": "In the article, the word \"step\" in paragraph 2, line 1, is closest in meaning to",
+    "qko": "기사에서 두 번째 단락 1행의 단어 \"step\"과 의미가 가장 가까운 것은?",
+    "o": [
+     "action",
+     "stair",
+     "pace",
+     "footprint"
+    ],
+    "a": 0,
+    "type": "동의어",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "We are taking this step as a precaution"
+     }
+    ],
+    "exp": "'We are taking this step as a precaution'의 step은 '조치'라는 뜻이므로 action이 정답이다(take a step = 조치를 취하다). stair(계단), pace(걸음 속도), footprint(발자국)는 step의 다른 뜻에서 연상되는 함정이다."
+   },
+   {
+    "q": "What is indicated about Mr. Tanaka's charging case?",
+    "qko": "다나카 씨의 충전 케이스에 대해 알 수 있는 것은?",
+    "o": [
+     "It is included in the recall.",
+     "It was purchased directly from Tavio.",
+     "It was bought before January.",
+     "It has stopped working."
+    ],
+    "a": 0,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "the serial number on the charging case starts with K8"
+     },
+     {
+      "d": 2,
+      "p": 0,
+      "s": "Charging cases with serial numbers beginning with K7 or K8"
+     }
+    ],
+    "exp": "다나카 씨의 케이스 일련번호는 K8로 시작하고, 웹페이지에 따르면 K7 또는 K8로 시작하는 충전 케이스가 리콜 대상이다. 따라서 그의 케이스는 리콜에 포함된다. 그는 타비오가 아니라 델몬트 일렉트로닉스에서 2월에 샀으므로 타비오에서 직접 샀다거나 1월 이전에 샀다는 보기는 오답이고, 고장 났다는 말은 없다."
+   },
+   {
+    "q": "What will Mr. Tanaka most likely be required to do?",
+    "qko": "다나카 씨는 무엇을 해야 하겠는가?",
+    "o": [
+     "Return his earbuds to Delmont Electronics",
+     "Visit a Tavio service center",
+     "Pay a shipping fee",
+     "Upload a copy of his receipt"
+    ],
+    "a": 3,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "at Delmont Electronics, a store near my office"
+     },
+     {
+      "d": 2,
+      "p": 2,
+      "s": "If you bought your product from a store other than Tavio, you must also upload a copy of your receipt"
+     }
+    ],
+    "exp": "다나카 씨는 타비오가 아닌 델몬트 일렉트로닉스라는 매장에서 제품을 샀다. 웹페이지에 따르면 타비오가 아닌 매장에서 구입한 경우 영수증 사본을 업로드해야 하므로(you must also upload a copy of your receipt) 정답이다. 구입한 매장에 반품하거나 서비스 센터를 방문하라는 안내는 없고, 교체용 케이스는 무료(free replacement case)다."
+   },
+   {
+    "q": "According to the web page, what is true about refunds?",
+    "qko": "웹페이지에 따르면, 환불에 대해 사실인 것은?",
+    "o": [
+     "They are available only for earbuds.",
+     "They require a visit to a store.",
+     "They are issued within ten business days.",
+     "They are given as store credit."
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "refunds are issued within ten business days"
+     }
+    ],
+    "exp": "'refunds are issued within ten business days' → 영업일 기준 10일 이내에 처리된다. 리콜 대상은 이어폰이 아니라 충전 케이스이며(The earbuds themselves are not affected), 매장 방문이나 적립금 지급은 언급되지 않았다. 환불은 전액 환불(a full refund)이다."
+   }
+  ],
+  "id": "p7-090"
+ },
+ {
+  "kind": "triple",
+  "lv": 2,
+  "docs": [
+   {
+    "doc": "공지",
+    "title": "Road Closures for the Lakeview Half Marathon",
+    "paras": [
+     "The Lakeview Half Marathon will take place on Sunday, May 3. Several downtown streets will be closed to traffic while runners are on the course. Vehicles parked along the route after 5:00 A.M. will be towed.",
+     "Each street will reopen as soon as the last runners have passed and the area has been cleaned. Updates will be posted throughout the day at lakeviewcity.example/marathon."
+    ],
+    "ko": [
+     "레이크뷰 하프 마라톤이 5월 3일 일요일에 열립니다. 주자들이 코스를 달리는 동안 시내 도로 여러 곳의 차량 통행이 통제됩니다. 오전 5시 이후 코스를 따라 주차된 차량은 견인됩니다.",
+     "각 도로는 마지막 주자들이 지나가고 정리가 끝나는 대로 통행이 재개됩니다. 최신 정보는 하루 종일 lakeviewcity.example/marathon에 게시됩니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "일정표",
+    "title": "Planned Closure Times - Sunday, May 3",
+    "paras": [
+     "Times are estimates and may change depending on race conditions."
+    ],
+    "ko": [
+     "시간은 예상치이며 경기 상황에 따라 바뀔 수 있습니다."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Planned Closure Times",
+     "cols": [
+      "Street",
+      "Closed",
+      "Expected to Reopen"
+     ],
+     "rows": [
+      [
+       "Shore Drive",
+       "6:00 A.M.",
+       "9:00 A.M."
+      ],
+      [
+       "Main Street",
+       "6:30 A.M.",
+       "9:30 A.M."
+      ],
+      [
+       "Oak Avenue",
+       "7:00 A.M.",
+       "12:30 P.M."
+      ],
+      [
+       "Bridge Road",
+       "7:30 A.M.",
+       "1:00 P.M."
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "문자 메시지",
+    "paras": [
+     "Marcus Bell [8:02 A.M.]: Hi Jin. I'm about to load the van for the brunch at the Harbor Club. I'll take Oak Avenue as usual.",
+     "Jin Choi [8:04 A.M.]: Not today, I'm afraid. Have you seen the city's notice about the race?",
+     "Marcus Bell [8:05 A.M.]: I completely forgot about that! The guests arrive at 11:30.",
+     "Jin Choi [8:07 A.M.]: Main Street is your best option, then. It opens again a lot earlier.",
+     "Marcus Bell [8:09 A.M.]: OK. I'll head out as soon as it reopens."
+    ],
+    "ko": [
+     "마커스 벨 [오전 8:02]: 안녕하세요, 진 씨. 하버 클럽 브런치에 쓸 짐을 이제 밴에 실으려고요. 평소처럼 오크 가로 갈게요.",
+     "진 최 [오전 8:04]: 오늘은 안 될 것 같아요. 마라톤 관련 시 공지 보셨어요?",
+     "마커스 벨 [오전 8:05]: 완전히 잊고 있었네요! 손님들은 11시 30분에 도착해요.",
+     "진 최 [오전 8:07]: 그럼 메인 가가 제일 나아요. 거기가 훨씬 일찍 다시 열려요.",
+     "마커스 벨 [오전 8:09]: 알겠어요. 다시 열리는 대로 바로 출발할게요."
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is the purpose of the notice?",
+    "qko": "공지의 목적은 무엇인가?",
+    "o": [
+     "To inform the public about road closures",
+     "To recruit volunteers for a race",
+     "To announce a change in a race route",
+     "To introduce a new parking garage"
+    ],
+    "a": 0,
+    "type": "주제·목적",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Several downtown streets will be closed to traffic while runners are on the course"
+     }
+    ],
+    "exp": "'Several downtown streets will be closed to traffic' → 마라톤 당일의 도로 통제를 알리는 것이 목적이다(To inform the public about road closures). 코스 변경이나 자원봉사자 모집은 언급되지 않았고, 주차 관련 내용은 견인 경고뿐이다."
+   },
+   {
+    "q": "According to the notice, what will happen to vehicles parked on the route after 5:00 A.M.?",
+    "qko": "공지에 따르면, 오전 5시 이후 코스에 주차된 차량은 어떻게 되는가?",
+    "o": [
+     "They will receive a warning.",
+     "They will be allowed to stay until noon.",
+     "They will be charged a parking fee.",
+     "They will be removed."
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Vehicles parked along the route after 5:00 A.M. will be towed"
+     }
+    ],
+    "exp": "'Vehicles parked along the route after 5:00 A.M. will be towed' → 견인된다(towed), 즉 치워진다(removed). 경고만 준다거나 정오까지 허용한다거나 주차 요금을 부과한다는 내용은 없다."
+   },
+   {
+    "q": "At 8:04 A.M., what does Ms. Choi most likely mean when she writes, \"Not today, I'm afraid\"?",
+    "qko": "오전 8시 4분에 최 씨가 \"Not today, I'm afraid\"라고 쓴 의도는 무엇이겠는가?",
+    "o": [
+     "The brunch has been postponed.",
+     "Mr. Bell will not be able to use his usual route.",
+     "The van is not available this morning.",
+     "She cannot help Mr. Bell load the van."
+    ],
+    "a": 1,
+    "type": "의도 파악",
+    "ev": [
+     {
+      "d": 2,
+      "p": 0,
+      "s": "I'll take Oak Avenue as usual."
+     },
+     {
+      "d": 2,
+      "p": 1,
+      "s": "Not today, I'm afraid. Have you seen the city's notice about the race?"
+     }
+    ],
+    "exp": "벨 씨가 평소처럼 오크 가로 가겠다고 하자(I'll take Oak Avenue as usual) 최 씨가 'Not today, I'm afraid'라고 답하며 마라톤 공지를 언급했다. 즉 오늘은 도로 통제 때문에 평소 다니던 길을 이용할 수 없다는 뜻이다. 브런치 연기나 밴 사용 문제는 언급되지 않았다."
+   },
+   {
+    "q": "When will Mr. Bell most likely leave for the Harbor Club?",
+    "qko": "벨 씨는 언제 하버 클럽으로 출발하겠는가?",
+    "o": [
+     "At about 9:00 A.M.",
+     "At about 9:30 A.M.",
+     "At about 11:30 A.M.",
+     "At about 12:30 P.M."
+    ],
+    "a": 1,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 2,
+      "p": 3,
+      "s": "Main Street is your best option, then"
+     },
+     {
+      "d": 2,
+      "p": 4,
+      "s": "I'll head out as soon as it reopens"
+     },
+     {
+      "d": 1,
+      "p": 0,
+      "s": "Times are estimates and may change depending on race conditions."
+     }
+    ],
+    "exp": "최 씨가 메인 가로 가라고 하자(Main Street is your best option) 벨 씨는 다시 열리는 대로 출발하겠다고 했다(as soon as it reopens). 일정표에서 메인 가의 통행 재개 예상 시각은 오전 9시 30분이다. 오전 9시는 쇼어 드라이브, 오후 12시 30분은 오크 가의 재개 시각이고, 11시 30분은 손님 도착 시각이다."
+   },
+   {
+    "q": "What kind of business does Mr. Bell most likely work for?",
+    "qko": "벨 씨는 어떤 업체에서 일하겠는가?",
+    "o": [
+     "A taxi service",
+     "A sports equipment store",
+     "A catering company",
+     "A towing company"
+    ],
+    "a": 2,
+    "type": "추론",
+    "ev": [
+     {
+      "d": 2,
+      "p": 0,
+      "s": "I'm about to load the van for the brunch at the Harbor Club"
+     }
+    ],
+    "exp": "벨 씨는 하버 클럽에서 열리는 브런치를 위해 밴에 짐을 싣고(load the van for the brunch), 손님 도착 전에 가야 한다. 따라서 음식을 준비해 배달하는 출장 요리 업체(A catering company)에서 일한다고 볼 수 있다. 견인(towing)은 공지에 나온 단어를 이용한 함정이다."
+   }
+  ],
+  "id": "p7-091"
+ },
+ {
+  "kind": "triple",
+  "lv": 1,
+  "docs": [
+   {
+    "doc": "송장",
+    "title": "Clearview Window Cleaning - Invoice",
+    "meta": [
+     "Invoice No. 7714",
+     "Date: August 14",
+     "Customer: Rosemary's Bistro, 45 Canal Street"
+    ],
+    "paras": [
+     "Service date: August 12. Total due: $310.00. Payment is due by August 28. A late fee of $15 applies to payments received after the due date.",
+     "Thank you for choosing Clearview Window Cleaning!"
+    ],
+    "ko": [
+     "서비스 날짜: 8월 12일. 청구 금액: 310달러. 대금은 8월 28일까지 지불해야 합니다. 기한 후에 입금되면 15달러의 연체료가 부과됩니다.",
+     "클리어뷰 창문 청소를 이용해 주셔서 감사합니다!"
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Services",
+     "cols": [
+      "Service",
+      "Amount"
+     ],
+     "rows": [
+      [
+       "Exterior windows (ground floor)",
+       "$120.00"
+      ],
+      [
+       "Interior windows",
+       "$95.00"
+      ],
+      [
+       "Skylight cleaning",
+       "$95.00"
+      ],
+      [
+       "Total",
+       "$310.00"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: billing@clearviewclean.example",
+     "From: Rosemary Diaz <rosemary@rosemarysbistro.example>",
+     "Date: August 15",
+     "Subject: Invoice 7714"
+    ],
+    "paras": [
+     "Hello,",
+     "Your team did a wonderful job on our windows on Wednesday. However, it started raining heavily before they could reach the skylight, so they left without cleaning it. The invoice I received still includes a charge for that service.",
+     "Could you please send me a corrected invoice? I would also like to schedule the skylight cleaning for another day, preferably a Monday, when the bistro is closed.",
+     "Rosemary Diaz, Owner"
+    ],
+    "ko": [
+     "안녕하세요.",
+     "수요일에 귀사 직원들이 저희 창문을 훌륭하게 청소해 주었습니다. 하지만 천창 작업을 하기 전에 비가 많이 내리기 시작해서 천창은 청소하지 못하고 돌아갔습니다. 그런데 제가 받은 송장에는 그 서비스 요금이 여전히 포함되어 있습니다.",
+     "수정된 송장을 보내 주시겠습니까? 그리고 천창 청소를 다른 날로 잡고 싶은데, 가능하면 식당이 쉬는 월요일이면 좋겠습니다.",
+     "식당 주인 로즈메리 디아스"
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Rosemary Diaz <rosemary@rosemarysbistro.example>",
+     "From: Paul Becker <billing@clearviewclean.example>",
+     "Date: August 16",
+     "Subject: RE: Invoice 7714"
+    ],
+    "paras": [
+     "Dear Ms. Diaz,",
+     "Thank you for letting us know, and I'm glad you were pleased with our work. I have removed the skylight charge, and a new invoice is attached. Our crew can return on Monday, August 24, at 9:00 A.M. to clean the skylight. You will be billed for it after the work is done.",
+     "Please reply to confirm whether that time works for you.",
+     "Paul Becker, Office Manager"
+    ],
+    "ko": [
+     "디아스 씨께,",
+     "알려 주셔서 감사드리며, 작업에 만족하셨다니 기쁩니다. 천창 요금을 삭제했고 새 송장을 첨부했습니다. 저희 작업팀이 8월 24일 월요일 오전 9시에 다시 방문해 천창을 청소할 수 있습니다. 해당 요금은 작업이 끝난 후에 청구됩니다.",
+     "그 시간이 괜찮으신지 회신으로 확인해 주십시오.",
+     "사무장 폴 베커 드림"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "According to the invoice, what will happen if a payment is late?",
+    "qko": "송장에 따르면, 대금 지불이 늦으면 어떻게 되는가?",
+    "o": [
+     "Future services will be suspended.",
+     "A discount will no longer apply.",
+     "The customer will receive a phone call.",
+     "An extra charge will be added."
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "A late fee of $15 applies to payments received after the due date"
+     }
+    ],
+    "exp": "'A late fee of $15 applies to payments received after the due date' → 연체료 15달러가 추가된다(An extra charge will be added). 서비스 중단, 할인 취소, 전화 연락은 언급되지 않았다."
+   },
+   {
+    "q": "Why was the skylight not cleaned?",
+    "qko": "천창은 왜 청소되지 않았는가?",
+    "o": [
+     "The crew ran out of time.",
+     "The bistro was closed.",
+     "The weather was bad.",
+     "The equipment was broken."
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "it started raining heavily before they could reach the skylight"
+     }
+    ],
+    "exp": "'it started raining heavily before they could reach the skylight' → 비가 많이 와서, 즉 날씨가 나빠서(The weather was bad) 청소하지 못했다. 식당이 쉬는 날(closed)은 다시 청소할 날짜와 관련해 나온 말이므로 오답이다."
+   },
+   {
+    "q": "What will be the amount on the new invoice?",
+    "qko": "새 송장의 금액은 얼마이겠는가?",
+    "o": [
+     "$95.00",
+     "$120.00",
+     "$215.00",
+     "$310.00"
+    ],
+    "a": 2,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "I have removed the skylight charge"
+     },
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Total due: $310.00"
+     }
+    ],
+    "exp": "베커 씨는 천창 요금을 삭제했다고 했다(I have removed the skylight charge). 기존 송장 총액은 310달러이고 표에서 천창 청소(Skylight cleaning) 요금은 95달러이므로, 새 송장 금액은 310 - 95 = 215달러다. 95달러는 삭제된 천창 요금 자체이고, 310달러는 수정 전 금액이다."
+   },
+   {
+    "q": "What is suggested about the date Mr. Becker proposes?",
+    "qko": "베커 씨가 제안한 날짜에 대해 암시되는 것은?",
+    "o": [
+     "It falls on a day when the bistro is closed.",
+     "It is after the payment due date.",
+     "It was chosen because of the weather forecast.",
+     "It is the same day as the original service."
+    ],
+    "a": 0,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "preferably a Monday, when the bistro is closed"
+     },
+     {
+      "d": 2,
+      "p": 1,
+      "s": "Our crew can return on Monday, August 24, at 9:00 A.M."
+     }
+    ],
+    "exp": "디아스 씨는 식당이 쉬는 월요일(a Monday, when the bistro is closed)을 원했고, 베커 씨가 제안한 날짜는 8월 24일 월요일이다. 따라서 식당 휴무일에 해당한다. 지불 기한은 8월 28일이므로 24일은 기한 이후가 아니며, 원래 서비스 날짜는 8월 12일이다."
+   },
+   {
+    "q": "What does Mr. Becker ask Ms. Diaz to do?",
+    "qko": "베커 씨는 디아스 씨에게 무엇을 해 달라고 하는가?",
+    "o": [
+     "Pay the original invoice",
+     "Confirm an appointment time",
+     "Send photos of the skylight",
+     "Call the office"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "Please reply to confirm whether that time works for you."
+     }
+    ],
+    "exp": "'Please reply to confirm whether that time works for you' → 제안한 방문 시간이 괜찮은지 확인해 달라는 것이다(Confirm an appointment time). 원래 송장은 수정되었으므로 그대로 지불하라는 말은 없고, 전화가 아니라 회신(reply)을 요청했다."
+   }
+  ],
+  "id": "p7-092"
+ },
+ {
+  "kind": "triple",
+  "lv": 2,
+  "docs": [
+   {
+    "doc": "리뷰",
+    "title": "SwiftMove Moving Services - Customer Review",
+    "paras": [
+     "Posted by Anthony R. on March 9 - Rating: 3 out of 5",
+     "I hired SwiftMove for my move from Riverside to Glenwood last week, and I chose the package that included packing. The crew arrived on time and packed everything carefully. Not a single dish was broken.",
+     "However, I had assumed that unpacking was included as well, and I was disappointed when the crew left dozens of boxes in my new living room. The descriptions on the company's web site could be clearer."
+    ],
+    "ko": [
+     "3월 9일 앤서니 R. 작성 - 평점: 5점 만점에 3점",
+     "지난주 리버사이드에서 글렌우드로 이사할 때 스위프트무브를 이용했고, 포장이 포함된 패키지를 선택했습니다. 작업팀은 제시간에 도착해 모든 물건을 꼼꼼하게 포장했습니다. 접시 하나 깨지지 않았습니다.",
+     "그런데 저는 짐 풀기도 포함되어 있다고 생각했기 때문에, 작업팀이 새집 거실에 상자 수십 개를 두고 떠났을 때 실망했습니다. 회사 웹사이트의 설명이 더 명확하면 좋겠습니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "웹페이지",
+    "title": "SwiftMove - Our Packages",
+    "paras": [
+     "Basic ($450): Loading, transport, and unloading of all items.",
+     "Standard ($700): Everything in Basic, plus professional packing with our own boxes and materials.",
+     "Premium ($950): Everything in Standard, plus unpacking and the removal of all empty boxes.",
+     "Prices are for local moves of up to 30 miles. Customers may upgrade their package up to 48 hours before moving day."
+    ],
+    "ko": [
+     "베이직(450달러): 모든 물품의 상차, 운송, 하차.",
+     "스탠더드(700달러): 베이직의 모든 서비스에 더해 자사 상자와 자재를 이용한 전문 포장.",
+     "프리미엄(950달러): 스탠더드의 모든 서비스에 더해 짐 풀기와 빈 상자 전량 수거.",
+     "가격은 30마일 이내 지역 이사 기준입니다. 고객은 이삿날 48시간 전까지 패키지를 업그레이드할 수 있습니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Anthony Russo <arusso@mailbox.example>",
+     "From: Natalie Grant <ngrant@swiftmove.example>",
+     "Date: March 10",
+     "Subject: Your review"
+    ],
+    "paras": [
+     "Dear Mr. Russo,",
+     "Thank you for taking the time to review SwiftMove. I'm pleased to hear that your belongings arrived safely, and I'm sorry that our package descriptions were not clear enough. Based on your feedback, we are rewriting them so that customers can easily see what each package includes.",
+     "In the meantime, I would be happy to send a crew to unpack your boxes and take them away. Normally, this would cost the difference in price between your package and the one that includes unpacking, but we will charge you only half of that amount. Please call me at 555-0183 to arrange a time.",
+     "Natalie Grant, Customer Care Manager"
+    ],
+    "ko": [
+     "러소 씨께,",
+     "시간을 내어 스위프트무브에 대한 후기를 남겨 주셔서 감사합니다. 고객님의 짐이 안전하게 도착했다니 기쁘고, 저희 패키지 설명이 충분히 명확하지 않았던 점은 죄송합니다. 고객님의 의견을 바탕으로, 각 패키지에 무엇이 포함되는지 고객들이 쉽게 알 수 있도록 설명을 새로 쓰고 있습니다.",
+     "그동안 작업팀을 보내 상자를 풀고 수거해 드리고자 합니다. 보통은 고객님의 패키지와 짐 풀기가 포함된 패키지의 가격 차이만큼 비용이 들지만, 그 금액의 절반만 받겠습니다. 시간을 정하시려면 555-0183으로 전화해 주십시오.",
+     "고객 관리 매니저 나탈리 그랜트 드림"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What did Mr. Russo like about the service?",
+    "qko": "러소 씨는 서비스의 어떤 점이 마음에 들었는가?",
+    "o": [
+     "His items were packed with care.",
+     "The price was lower than he expected.",
+     "The move was finished early.",
+     "The crew helped him arrange furniture."
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "The crew arrived on time and packed everything carefully"
+     }
+    ],
+    "exp": "'packed everything carefully. Not a single dish was broken' → 물건을 꼼꼼하게 포장했다(His items were packed with care). 작업팀이 제시간에(on time) 도착했다고 했을 뿐 일찍 끝났다는 말은 없고, 가격이나 가구 배치 이야기도 없다."
+   },
+   {
+    "q": "How much did Mr. Russo most likely pay for his move?",
+    "qko": "러소 씨는 이사 비용으로 얼마를 냈겠는가?",
+    "o": [
+     "$450",
+     "$700",
+     "$950",
+     "$1,150"
+    ],
+    "a": 1,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "I chose the package that included packing"
+     },
+     {
+      "d": 0,
+      "p": 2,
+      "s": "I had assumed that unpacking was included as well"
+     },
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Standard ($700): Everything in Basic, plus professional packing"
+     },
+     {
+      "d": 1,
+      "p": 2,
+      "s": "Premium ($950): Everything in Standard, plus unpacking"
+     }
+    ],
+    "exp": "러소 씨는 포장이 포함된 패키지를 골랐지만 짐 풀기는 포함되지 않았다고 했다. 웹페이지에서 포장이 포함된 것은 스탠더드(700달러)와 프리미엄(950달러)인데, 프리미엄에는 짐 풀기(unpacking)까지 들어 있으므로 그가 고른 것은 스탠더드, 즉 700달러다. 450달러인 베이직에는 포장이 없다."
+   },
+   {
+    "q": "According to Ms. Grant, what is SwiftMove doing?",
+    "qko": "그랜트 씨에 따르면, 스위프트무브는 무엇을 하고 있는가?",
+    "o": [
+     "Hiring additional movers",
+     "Lowering the prices of all packages",
+     "Revising the information about its packages",
+     "Offering free boxes to new customers"
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "we are rewriting them so that customers can easily see what each package includes"
+     }
+    ],
+    "exp": "'we are rewriting them(패키지 설명) so that customers can easily see what each package includes' → 패키지 정보를 고쳐 쓰고 있다(Revising the information about its packages). 비용 할인은 러소 씨 한 사람에게 제안한 것일 뿐 모든 패키지 가격을 내리는 것이 아니다."
+   },
+   {
+    "q": "How much would Mr. Russo pay for the service Ms. Grant offers?",
+    "qko": "러소 씨는 그랜트 씨가 제안한 서비스에 얼마를 내겠는가?",
+    "o": [
+     "$125",
+     "$250",
+     "$475",
+     "$950"
+    ],
+    "a": 0,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "Normally, this would cost the difference in price between your package and the one that includes unpacking, but we will charge you only half of that amount"
+     },
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Standard ($700)"
+     },
+     {
+      "d": 1,
+      "p": 2,
+      "s": "Premium ($950)"
+     }
+    ],
+    "exp": "그랜트 씨는 러소 씨의 패키지(스탠더드, 700달러)와 짐 풀기가 포함된 패키지(프리미엄, 950달러)의 가격 차이인 250달러의 절반만 받겠다고 했다. 따라서 125달러다. 250달러는 할인 전 가격 차이이고, 475달러는 프리미엄 가격의 절반이다."
+   },
+   {
+    "q": "What is indicated about SwiftMove's prices?",
+    "qko": "스위프트무브의 가격에 대해 알 수 있는 것은?",
+    "o": [
+     "They include a storage fee.",
+     "They are lower on weekdays.",
+     "They can be paid in installments.",
+     "They apply to moves within a certain distance."
+    ],
+    "a": 3,
+    "type": "사실 확인",
+    "ev": [
+     {
+      "d": 1,
+      "p": 3,
+      "s": "Prices are for local moves of up to 30 miles"
+     }
+    ],
+    "exp": "'Prices are for local moves of up to 30 miles' → 가격은 일정 거리(30마일) 이내의 이사에 적용된다. 보관료, 평일 할인, 할부 결제는 언급되지 않았다. 48시간은 패키지 업그레이드 기한이다."
+   }
+  ],
+  "id": "p7-093"
+ },
+ {
+  "kind": "triple",
+  "lv": 1,
+  "docs": [
+   {
+    "doc": "일정표",
+    "title": "Maple Grove Community Garden - Spring Workshop Day, Saturday, April 18",
+    "paras": [
+     "All workshops take place in the garden greenhouse. Admission for the full day is free for garden members and $10 for nonmembers. Please bring your own gloves."
+    ],
+    "ko": [
+     "모든 워크숍은 정원 온실에서 열립니다. 하루 전체 입장료는 정원 회원은 무료, 비회원은 10달러입니다. 장갑은 각자 지참해 주십시오."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Workshops",
+     "cols": [
+      "Time",
+      "Workshop",
+      "Instructor"
+     ],
+     "rows": [
+      [
+       "9:00 A.M.",
+       "Starting Seeds Indoors",
+       "Helen Park"
+      ],
+      [
+       "10:30 A.M.",
+       "Composting Made Easy",
+       "Raj Mehta"
+      ],
+      [
+       "1:00 P.M.",
+       "Growing Herbs in Small Spaces",
+       "Helen Park"
+      ],
+      [
+       "2:30 P.M.",
+       "Natural Pest Control",
+       "Owen Brooks"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "양식",
+    "title": "Workshop Day Registration",
+    "paras": [
+     "Name: Laura Kim | E-mail: lkim@mailbox.example | Phone: 555-0129",
+     "Garden member? No",
+     "Comments: I live in an apartment and would like to learn ways to grow plants on my balcony.",
+     "How did you hear about Workshop Day? A flyer at the public library"
+    ],
+    "ko": [
+     "이름: 로라 김 | 이메일: lkim@mailbox.example | 전화: 555-0129",
+     "정원 회원 여부: 아니요",
+     "의견: 저는 아파트에 살고 있어서 발코니에서 식물을 기르는 방법을 배우고 싶습니다.",
+     "워크숍 데이를 어떻게 알게 되셨습니까? 공공 도서관의 전단"
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Workshops Selected",
+     "cols": [
+      "Workshop",
+      "Time"
+     ],
+     "rows": [
+      [
+       "Composting Made Easy",
+       "10:30 A.M."
+      ],
+      [
+       "Natural Pest Control",
+       "2:30 P.M."
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Laura Kim <lkim@mailbox.example>",
+     "From: Helen Park <hpark@maplegrovegarden.example>",
+     "Date: April 10",
+     "Subject: Your registration"
+    ],
+    "paras": [
+     "Dear Ms. Kim,",
+     "Thank you for signing up for Workshop Day. I read the comment on your form, and I think you would enjoy my afternoon session, which covers exactly that topic. There is still space if you would like to add it.",
+     "Also, Mr. Brooks has asked me to let participants know that his session will end 15 minutes early so that he can catch a flight. Please pay your fee at the welcome table when you arrive.",
+     "Helen Park, Workshop Coordinator"
+    ],
+    "ko": [
+     "김 씨께,",
+     "워크숍 데이에 신청해 주셔서 감사합니다. 신청서에 남기신 의견을 읽어 보니, 바로 그 주제를 다루는 제 오후 강좌가 마음에 드실 것 같습니다. 추가하고 싶으시면 아직 자리가 있습니다.",
+     "그리고 브룩스 씨가 비행기 시간에 맞추기 위해 강좌를 15분 일찍 마친다는 점을 참가자들에게 알려 달라고 부탁했습니다. 도착하시면 안내 데스크에서 참가비를 내 주십시오.",
+     "워크숍 진행 담당 헬렌 박 드림"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What are participants asked to bring?",
+    "qko": "참가자들은 무엇을 가져오라고 요청받는가?",
+    "o": [
+     "Seeds",
+     "Gloves",
+     "Flowerpots",
+     "Notebooks"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Please bring your own gloves"
+     }
+    ],
+    "exp": "'Please bring your own gloves' → 장갑(Gloves)을 각자 가져와야 한다. 씨앗(Seeds)은 워크숍 제목(Starting Seeds Indoors)에서 따온 함정이며, 화분이나 공책은 언급되지 않았다."
+   },
+   {
+    "q": "What is indicated about Ms. Kim?",
+    "qko": "김 씨에 대해 알 수 있는 것은?",
+    "o": [
+     "She is a member of the garden.",
+     "She lives in an apartment.",
+     "She teaches a workshop.",
+     "She owns a flower shop."
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "I live in an apartment"
+     },
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Garden member? No"
+     }
+    ],
+    "exp": "양식의 의견란 'I live in an apartment' → 그녀는 아파트에 산다. 회원 여부에는 'No'라고 답했으므로 정원 회원이라는 보기는 반대 내용이고, 워크숍 강사는 박 씨, 메타 씨, 브룩스 씨다."
+   },
+   {
+    "q": "Which workshop does Ms. Park recommend to Ms. Kim?",
+    "qko": "박 씨는 김 씨에게 어느 워크숍을 추천하는가?",
+    "o": [
+     "Starting Seeds Indoors",
+     "Composting Made Easy",
+     "Natural Pest Control",
+     "Growing Herbs in Small Spaces"
+    ],
+    "a": 3,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "would like to learn ways to grow plants on my balcony"
+     },
+     {
+      "d": 2,
+      "p": 1,
+      "s": "I think you would enjoy my afternoon session, which covers exactly that topic"
+     }
+    ],
+    "exp": "김 씨는 발코니에서 식물을 기르는 법을 배우고 싶다고 했고, 박 씨는 바로 그 주제를 다루는 자신의 오후 강좌를 추천했다. 일정표에서 헬렌 박 씨의 오후 강좌는 1시의 '좁은 공간에서 허브 기르기(Growing Herbs in Small Spaces)'다. Starting Seeds Indoors도 박 씨의 강좌지만 오전 9시에 열리고, 나머지 두 강좌는 김 씨가 이미 신청한 것이다."
+   },
+   {
+    "q": "How much will Ms. Kim most likely pay at the welcome table?",
+    "qko": "김 씨는 안내 데스크에서 얼마를 내겠는가?",
+    "o": [
+     "Nothing",
+     "$5",
+     "$10",
+     "$20"
+    ],
+    "a": 2,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Garden member? No"
+     },
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Admission for the full day is free for garden members and $10 for nonmembers"
+     }
+    ],
+    "exp": "양식에서 김 씨는 정원 회원이 아니라고 했고(Garden member? No), 일정표에 따르면 비회원의 하루 전체 입장료는 10달러다. 입장료는 워크숍 수와 관계없이 하루 단위(for the full day)이므로 20달러는 오답이고, 무료는 회원에게만 해당한다."
+   },
+   {
+    "q": "According to the e-mail, what will Mr. Brooks do on April 18?",
+    "qko": "이메일에 따르면, 브룩스 씨는 4월 18일에 무엇을 하는가?",
+    "o": [
+     "Teach two workshops",
+     "Collect fees at the welcome table",
+     "End his workshop ahead of schedule",
+     "Give a tour of the greenhouse"
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "his session will end 15 minutes early so that he can catch a flight"
+     }
+    ],
+    "exp": "'his session will end 15 minutes early' → 강좌를 예정보다 일찍 마친다(End his workshop ahead of schedule). 강좌를 두 개 맡은 사람은 헬렌 박 씨이고, 참가비는 안내 데스크에서 내라고만 했을 뿐 브룩스 씨가 받는다는 말은 없다."
+   }
+  ],
+  "id": "p7-094"
+ },
+ {
+  "kind": "triple",
+  "lv": 2,
+  "docs": [
+   {
+    "doc": "광고",
+    "title": "Inkwell Custom Apparel",
+    "paras": [
+     "Make your next company event stand out with T-shirts featuring your logo! We print on high-quality cotton shirts available in 12 colors.",
+     "Prices: one-color design, $9 per shirt; two-color design, $11 per shirt; full-color design, $14 per shirt. Orders of 100 shirts or more receive a 10 percent discount.",
+     "Standard orders are ready in 14 days. Need them sooner? Our express service delivers in 4 days for an additional $50."
+    ],
+    "ko": [
+     "로고가 들어간 티셔츠로 다음 회사 행사를 돋보이게 하십시오! 12가지 색상의 고품질 면 셔츠에 인쇄해 드립니다.",
+     "가격: 1도 디자인 셔츠당 9달러, 2도 디자인 셔츠당 11달러, 풀컬러 디자인 셔츠당 14달러. 100장 이상 주문 시 10퍼센트 할인됩니다.",
+     "일반 주문은 14일 후에 준비됩니다. 더 빨리 필요하신가요? 급행 서비스를 이용하시면 50달러를 추가로 내고 4일 만에 받으실 수 있습니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "양식",
+    "title": "Inkwell Custom Apparel - Order Form",
+    "paras": [
+     "Customer: Ostrander Engineering (contact: Ben Waller) | Event date: September 19",
+     "Design: company logo in two colors (navy and orange) | Shirt color: white",
+     "Order date: September 1 | Service: Standard",
+     "Delivery address: 210 Kessler Road, Suite 4, Dalton"
+    ],
+    "ko": [
+     "고객: 오스트랜더 엔지니어링(담당자: 벤 월러) | 행사 날짜: 9월 19일",
+     "디자인: 2도(남색, 주황색) 회사 로고 | 셔츠 색상: 흰색",
+     "주문 날짜: 9월 1일 | 서비스: 일반",
+     "배송 주소: 돌턴 케슬러 로 210번지 4호"
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Quantities",
+     "cols": [
+      "Size",
+      "Quantity"
+     ],
+     "rows": [
+      [
+       "Small",
+       "20"
+      ],
+      [
+       "Medium",
+       "35"
+      ],
+      [
+       "Large",
+       "30"
+      ],
+      [
+       "X-Large",
+       "15"
+      ],
+      [
+       "Total",
+       "100"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: orders@inkwellapparel.example",
+     "From: Ben Waller <bwaller@ostrander.example>",
+     "Date: September 3",
+     "Subject: Order for Ostrander Engineering"
+    ],
+    "paras": [
+     "Hello,",
+     "I submitted an order form on September 1 for T-shirts for our company picnic. Since then, eight more employees have signed up, so please add eight shirts in size Large.",
+     "Also, our picnic has been moved up by one week because of the weather forecast, so we will need the shirts sooner than planned. Please change my order to whatever service will get them to us in time.",
+     "Ben Waller"
+    ],
+    "ko": [
+     "안녕하세요.",
+     "9월 1일에 회사 야유회용 티셔츠 주문서를 제출했습니다. 그 뒤로 직원 8명이 더 신청해서, 라지 사이즈 셔츠 8장을 추가해 주십시오.",
+     "또한 일기 예보 때문에 야유회가 일주일 앞당겨져서 예정보다 일찍 셔츠가 필요합니다. 제때 받을 수 있는 서비스로 주문을 변경해 주십시오.",
+     "벤 월러"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is mentioned about Inkwell Custom Apparel?",
+    "qko": "잉크웰 커스텀 어패럴에 대해 언급된 것은?",
+    "o": [
+     "It specializes in sports uniforms.",
+     "It provides free delivery.",
+     "It has been in business for 12 years.",
+     "It offers shirts in many colors."
+    ],
+    "a": 3,
+    "type": "사실 확인",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "We print on high-quality cotton shirts available in 12 colors"
+     }
+    ],
+    "exp": "'shirts available in 12 colors' → 다양한 색상의 셔츠를 제공한다(offers shirts in many colors). 숫자 12를 이용한 '12년간 영업'은 함정이며, 스포츠 유니폼 전문이나 무료 배송은 언급되지 않았다. 급행 서비스는 오히려 50달러가 추가된다."
+   },
+   {
+    "q": "How much per shirt will Ostrander Engineering be charged before any discount?",
+    "qko": "오스트랜더 엔지니어링은 할인 전 셔츠 한 장당 얼마를 청구받겠는가?",
+    "o": [
+     "$9",
+     "$11",
+     "$12",
+     "$14"
+    ],
+    "a": 1,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "company logo in two colors"
+     },
+     {
+      "d": 0,
+      "p": 1,
+      "s": "two-color design, $11 per shirt"
+     }
+    ],
+    "exp": "주문서에서 디자인은 2도 회사 로고이고(company logo in two colors), 광고에 따르면 2도 디자인은 셔츠 한 장에 11달러다. 9달러는 1도, 14달러는 풀컬러 디자인 가격이다."
+   },
+   {
+    "q": "Why did Mr. Waller write the e-mail?",
+    "qko": "월러 씨는 왜 이메일을 썼는가?",
+    "o": [
+     "To complain about a late delivery",
+     "To ask for a price estimate",
+     "To make changes to an order",
+     "To cancel a company picnic"
+    ],
+    "a": 2,
+    "type": "주제·목적",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "please add eight shirts in size Large"
+     },
+     {
+      "d": 2,
+      "p": 2,
+      "s": "Please change my order to whatever service will get them to us in time."
+     }
+    ],
+    "exp": "월러 씨는 라지 사이즈 8장을 추가하고(please add eight shirts) 서비스를 바꿔 달라고(Please change my order) 했다 → 주문을 변경하려는 것이다(To make changes to an order). 야유회는 취소가 아니라 앞당겨졌고(moved up), 아직 배송 전이므로 배송 지연 불만도 아니다."
+   },
+   {
+    "q": "What is suggested about Ostrander Engineering's order?",
+    "qko": "오스트랜더 엔지니어링의 주문에 대해 암시되는 것은?",
+    "o": [
+     "It will require the express service.",
+     "It will no longer qualify for a discount.",
+     "It will be printed in full color.",
+     "It will be delivered on September 19."
+    ],
+    "a": 0,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 0,
+      "s": "Event date: September 19"
+     },
+     {
+      "d": 2,
+      "p": 2,
+      "s": "our picnic has been moved up by one week"
+     },
+     {
+      "d": 0,
+      "p": 2,
+      "s": "Standard orders are ready in 14 days"
+     }
+    ],
+    "exp": "주문서의 행사 날짜는 9월 19일인데 이메일에서 일주일 앞당겨졌다고 했으므로 새 행사일은 9월 12일이다. 광고에 따르면 일반 주문은 14일이 걸려 9월 1일에 주문해도 15일에야 준비되므로, 4일 만에 받는 급행 서비스가 필요하다. 수량은 100장에서 108장으로 늘어 여전히 10퍼센트 할인 대상이므로 할인을 못 받게 된다는 보기는 오답이다."
+   },
+   {
+    "q": "According to the e-mail, why was the date of the picnic changed?",
+    "qko": "이메일에 따르면, 야유회 날짜는 왜 변경되었는가?",
+    "o": [
+     "Because more employees signed up",
+     "Because of the expected weather",
+     "Because the venue was unavailable",
+     "Because the shirts would be late"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "our picnic has been moved up by one week because of the weather forecast"
+     }
+    ],
+    "exp": "'moved up by one week because of the weather forecast' → 예상되는 날씨(일기 예보) 때문이다(Because of the expected weather). 직원 8명 추가 신청은 셔츠 수량을 늘린 이유일 뿐 날짜 변경의 이유가 아니다."
+   }
+  ],
+  "id": "p7-095"
+ },
+ {
+  "kind": "triple",
+  "lv": 3,
+  "docs": [
+   {
+    "doc": "광고",
+    "title": "Marketing Analyst - Calder & Wynn Foods",
+    "paras": [
+     "Calder & Wynn Foods, a fast-growing maker of packaged snacks, is looking for a marketing analyst to join its team in Portland. The analyst will study sales data, track competitors' products, and present findings to the product development department.",
+     "Candidates should have a degree in business or statistics and at least three years of related experience. Experience with consumer surveys is highly desirable. After a six-month training period, employees in this position may work from home two days a week."
+    ],
+    "ko": [
+     "빠르게 성장하는 포장 과자 제조업체 콜더 앤 윈 푸즈에서 포틀랜드 팀에 합류할 마케팅 분석가를 찾습니다. 분석가는 판매 데이터를 연구하고, 경쟁사 제품을 추적하며, 분석 결과를 제품 개발 부서에 발표하게 됩니다.",
+     "지원자는 경영학 또는 통계학 학위와 최소 3년의 관련 경력이 있어야 합니다. 소비자 설문 조사 경험이 있으면 크게 우대합니다. 6개월의 수습 기간이 지나면 이 직책의 직원은 주 2일 재택근무를 할 수 있습니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Samuel Pryce <spryce@mailbox.example>",
+     "From: Gloria Abernathy <gabernathy@calderwynn.example>",
+     "Date: October 2",
+     "Subject: Interview day on October 14"
+    ],
+    "paras": [
+     "Dear Mr. Pryce,",
+     "We are pleased to invite you to an interview day at our Portland headquarters on October 14. The attached agenda lists your sessions. Please note that the data analysis exercise lasts 90 minutes and that a laptop will be provided.",
+     "For your presentation, please prepare a ten-minute talk on a snack product you think we should develop. Since you mentioned your work on consumer surveys at Brightfield Research, feel free to draw on that experience. Your travel expenses from Denver will be reimbursed, so please keep all of your receipts and give them to me at our final meeting.",
+     "Gloria Abernathy, Human Resources Manager"
+    ],
+    "ko": [
+     "프라이스 씨께,",
+     "10월 14일 포틀랜드 본사에서 열리는 면접일에 귀하를 초대하게 되어 기쁩니다. 첨부한 일정표에 귀하의 일정이 나와 있습니다. 데이터 분석 과제는 90분간 진행되며 노트북은 제공된다는 점을 참고해 주십시오.",
+     "발표를 위해서는 저희가 개발해야 한다고 생각하는 과자 제품에 관해 10분 분량의 발표를 준비해 주십시오. 브라이트필드 리서치에서 소비자 설문 조사 업무를 하셨다고 하셨으니 그 경험을 활용하셔도 좋습니다. 덴버에서 오시는 교통비는 환급해 드리므로, 영수증을 모두 보관하셨다가 마지막 면담 때 제게 주십시오.",
+     "인사부장 글로리아 애버내시 드림"
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "일정표",
+    "title": "Interview Day Agenda - October 14",
+    "paras": [
+     "Please check in at the main reception desk by 10:45 A.M. Your day will end with a meeting with Human Resources, where you can ask questions about salary and benefits."
+    ],
+    "ko": [
+     "오전 10시 45분까지 본관 안내 데스크에서 도착 확인을 해 주십시오. 하루 일정은 인사부와의 면담으로 마무리되며, 이때 급여와 복리 후생에 관해 질문하실 수 있습니다."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Agenda",
+     "cols": [
+      "Time",
+      "Session",
+      "Room"
+     ],
+     "rows": [
+      [
+       "11:00 A.M.",
+       "Interview with Ines Moreau, Marketing Director",
+       "4B"
+      ],
+      [
+       "12:00 P.M.",
+       "Lunch with the marketing team",
+       "Cafeteria"
+      ],
+      [
+       "1:30 P.M.",
+       "Data analysis exercise",
+       "2A"
+      ],
+      [
+       "3:00 P.M.",
+       "Presentation to product development",
+       "4B"
+      ],
+      [
+       "4:00 P.M.",
+       "Meeting with Gloria Abernathy, HR Manager",
+       "1C"
+      ]
+     ]
+    }
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is NOT listed as a responsibility of the marketing analyst?",
+    "qko": "마케팅 분석가의 업무로 나와 있지 않은 것은?",
+    "o": [
+     "Supervising a sales team",
+     "Analyzing sales figures",
+     "Keeping an eye on rival products",
+     "Sharing results with another department"
+    ],
+    "a": 0,
+    "type": "사실 확인",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "The analyst will study sales data, track competitors' products, and present findings to the product development department"
+     }
+    ],
+    "exp": "광고의 'study sales data(판매 데이터 연구) → Analyzing sales figures', 'track competitors' products(경쟁사 제품 추적) → Keeping an eye on rival products', 'present findings to the product development department(제품 개발 부서에 결과 발표) → Sharing results with another department'로 각각 확인된다. 영업팀 관리(Supervising a sales team)는 언급되지 않았으므로 정답이다. 판매(sales)라는 단어만 겹치는 함정이다."
+   },
+   {
+    "q": "In the job posting, the word \"track\" in paragraph 1, line 3, is closest in meaning to",
+    "qko": "구인 광고에서 첫 번째 단락 3행의 단어 \"track\"과 의미가 가장 가까운 것은?",
+    "o": [
+     "monitor",
+     "race",
+     "transport",
+     "order"
+    ],
+    "a": 0,
+    "type": "동의어",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "track competitors' products"
+     }
+    ],
+    "exp": "'track competitors' products'의 track은 경쟁사 제품을 '추적하다, 계속 지켜보다'라는 뜻이므로 monitor가 정답이다. 명사 track(경주로)에서 연상되는 race는 함정이며, transport(운송하다)와 order(주문하다)도 문맥에 맞지 않는다."
+   },
+   {
+    "q": "What is suggested about Mr. Pryce?",
+    "qko": "프라이스 씨에 대해 암시되는 것은?",
+    "o": [
+     "He currently lives in Portland.",
+     "He has experience that the company especially values.",
+     "He has worked for Calder & Wynn Foods before.",
+     "He has a degree in statistics."
+    ],
+    "a": 1,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "Since you mentioned your work on consumer surveys at Brightfield Research"
+     },
+     {
+      "d": 0,
+      "p": 1,
+      "s": "Experience with consumer surveys is highly desirable"
+     }
+    ],
+    "exp": "이메일에 따르면 프라이스 씨는 브라이트필드 리서치에서 소비자 설문 조사 업무를 했고, 광고에서는 소비자 설문 조사 경험을 크게 우대한다고 했다(highly desirable). 즉 회사가 특히 중시하는 경험을 갖추고 있다. 그는 덴버에서 오므로(travel expenses from Denver) 포틀랜드에 산다는 보기는 오답이고, 학위 전공은 알 수 없다."
+   },
+   {
+    "q": "According to the e-mail, what should Mr. Pryce prepare?",
+    "qko": "이메일에 따르면, 프라이스 씨는 무엇을 준비해야 하는가?",
+    "o": [
+     "A written report on competitors",
+     "A copy of his university diploma",
+     "A brief talk proposing a new product",
+     "A list of his previous employers"
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "please prepare a ten-minute talk on a snack product you think we should develop"
+     }
+    ],
+    "exp": "'prepare a ten-minute talk on a snack product you think we should develop' → 새 제품을 제안하는 짧은 발표(A brief talk proposing a new product)를 준비해야 한다. 경쟁사 분석은 입사 후 업무로 광고에 나온 내용이고, 보고서를 써 오라는 말은 없다."
+   },
+   {
+    "q": "At what time will Mr. Pryce most likely hand over his receipts?",
+    "qko": "프라이스 씨는 몇 시에 영수증을 건네겠는가?",
+    "o": [
+     "At 11:00 A.M.",
+     "At 12:00 P.M.",
+     "At 3:00 P.M.",
+     "At 4:00 P.M."
+    ],
+    "a": 3,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "please keep all of your receipts and give them to me at our final meeting"
+     },
+     {
+      "d": 2,
+      "p": 0,
+      "s": "Your day will end with a meeting with Human Resources"
+     }
+    ],
+    "exp": "애버내시 씨는 영수증을 마지막 면담 때 자신에게 달라고 했다(give them to me at our final meeting). 일정표에 따르면 하루 일정은 인사부와의 면담으로 끝나며, 표에서 인사부장 애버내시 씨와의 면담은 오후 4시다. 오전 11시는 마케팅 이사 면접, 오후 3시는 제품 개발 부서 대상 발표 시간이다."
+   }
+  ],
+  "id": "p7-096"
+ },
+ {
+  "kind": "triple",
+  "lv": 1,
+  "docs": [
+   {
+    "doc": "기사",
+    "title": "New Ferry to Link Port Ellis and Sandy Point",
+    "paras": [
+     "PORT ELLIS (June 2) - Bayline Ferries will launch a new route between Port Ellis and Sandy Point on June 15. The trip will take just 35 minutes, compared with more than an hour by car around the bay.",
+     "Ferries will run every 90 minutes from 6:30 A.M. to 8:00 P.M. Bicycles will be allowed on board, and a ten-ride pass will be available for regular commuters."
+    ],
+    "ko": [
+     "포트 엘리스(6월 2일) - 베이라인 페리가 6월 15일 포트 엘리스와 샌디 포인트를 잇는 새 노선을 개설한다. 만을 돌아 차로 가면 한 시간 넘게 걸리는 데 비해, 페리로는 35분밖에 걸리지 않는다.",
+     "페리는 오전 6시 30분부터 오후 8시까지 90분 간격으로 운항한다. 자전거를 싣고 탈 수 있으며, 정기 통근자를 위한 10회 승선권도 판매된다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Felix Grant <fgrant@harmonco.example>",
+     "From: Nora Blake <nblake@harmonco.example>",
+     "Date: June 17",
+     "Subject: Friday's meeting"
+    ],
+    "paras": [
+     "Hi Felix,",
+     "I'm going to try the new ferry to get to Friday's meeting at our Sandy Point office. I'll bring my bicycle so that I can ride from the terminal to the office.",
+     "Since I'll be going to Sandy Point twice a week from now on, I'm planning to buy a ten-ride pass on Friday. I'll let you know how the trip goes.",
+     "Nora"
+    ],
+    "ko": [
+     "펠릭스 씨, 안녕하세요.",
+     "금요일 샌디 포인트 사무소 회의에 새 페리를 타고 가 보려고 합니다. 터미널에서 사무소까지 자전거를 타고 갈 수 있도록 자전거를 가져가겠습니다.",
+     "앞으로 샌디 포인트에 일주일에 두 번씩 가게 되어서 금요일에 10회 승선권을 살 계획입니다. 가 보고 어땠는지 알려 드리겠습니다.",
+     "노라"
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "웹페이지",
+    "title": "Bayline Ferries - Fares and Information",
+    "paras": [
+     "One-way adult ticket: $8. Ten-ride pass: $64 (valid for 60 days).",
+     "Bicycles: $3 per trip. Ten-ride pass holders may bring a bicycle at no extra charge.",
+     "Tickets and passes can be purchased online or at the terminal. Please arrive at least 10 minutes before departure."
+    ],
+    "ko": [
+     "성인 편도 승선권: 8달러. 10회 승선권: 64달러(60일간 유효).",
+     "자전거: 1회당 3달러. 10회 승선권 소지자는 추가 요금 없이 자전거를 가지고 탈 수 있습니다.",
+     "승선권과 정기권은 온라인이나 터미널에서 구입하실 수 있습니다. 출발 최소 10분 전까지 도착해 주십시오."
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is the article mainly about?",
+    "qko": "기사는 주로 무엇에 관한 것인가?",
+    "o": [
+     "A new ferry service",
+     "A road construction project",
+     "The opening of a bicycle shop",
+     "An increase in ferry fares"
+    ],
+    "a": 0,
+    "type": "주제·목적",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Bayline Ferries will launch a new route between Port Ellis and Sandy Point on June 15"
+     }
+    ],
+    "exp": "기사 첫 문장 'Bayline Ferries will launch a new route' → 새 페리 노선 개설(A new ferry service)에 관한 기사다. 자동차(by car)와 자전거(Bicycles)는 비교나 부가 정보로 나온 단어일 뿐이며, 요금 인상은 언급되지 않았다."
+   },
+   {
+    "q": "According to the article, what is an advantage of the ferry?",
+    "qko": "기사에 따르면, 페리의 장점은 무엇인가?",
+    "o": [
+     "It costs less than parking downtown.",
+     "It runs 24 hours a day.",
+     "It offers free meals on board.",
+     "It takes less time than driving."
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "The trip will take just 35 minutes, compared with more than an hour by car around the bay"
+     }
+    ],
+    "exp": "'just 35 minutes, compared with more than an hour by car' → 차로 가는 것보다 시간이 덜 걸린다(takes less time than driving). 운항 시간은 오전 6시 30분부터 오후 8시까지이므로 24시간 운항은 오답이다."
+   },
+   {
+    "q": "Why will Ms. Blake bring her bicycle?",
+    "qko": "블레이크 씨는 왜 자전거를 가져가는가?",
+    "o": [
+     "To take part in a race",
+     "To have it repaired in Sandy Point",
+     "To ride from the terminal to her office",
+     "To lend it to Mr. Grant"
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "I'll bring my bicycle so that I can ride from the terminal to the office"
+     }
+    ],
+    "exp": "'I'll bring my bicycle so that I can ride from the terminal to the office' → 터미널에서 사무소까지 타고 가기 위해서다. 경주, 수리, 빌려주기는 언급되지 않았다."
+   },
+   {
+    "q": "What is suggested about Ms. Blake's bicycle?",
+    "qko": "블레이크 씨의 자전거에 대해 암시되는 것은?",
+    "o": [
+     "It must be reserved online in advance.",
+     "It will cost $3 each way for the rest of the year.",
+     "It is too large to bring on the ferry.",
+     "She will not need to pay a separate fee for it."
+    ],
+    "a": 3,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 2,
+      "s": "I'm planning to buy a ten-ride pass on Friday"
+     },
+     {
+      "d": 2,
+      "p": 1,
+      "s": "Ten-ride pass holders may bring a bicycle at no extra charge"
+     }
+    ],
+    "exp": "블레이크 씨는 금요일에 10회 승선권을 살 계획이고, 웹페이지에 따르면 10회 승선권 소지자는 추가 요금 없이 자전거를 가지고 탈 수 있다(at no extra charge). 따라서 자전거 요금을 따로 내지 않아도 된다. 1회 3달러는 승선권이 없는 경우의 요금이며, 사전 예약 규정은 없다."
+   },
+   {
+    "q": "According to the web page, how long is a ten-ride pass valid?",
+    "qko": "웹페이지에 따르면, 10회 승선권의 유효 기간은 얼마인가?",
+    "o": [
+     "10 days",
+     "35 days",
+     "60 days",
+     "90 days"
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 0,
+      "s": "Ten-ride pass: $64 (valid for 60 days)"
+     }
+    ],
+    "exp": "'Ten-ride pass: $64 (valid for 60 days)' → 60일간 유효하다. 35는 페리 소요 시간(35분), 90은 운항 간격(90분), 10은 승선 횟수와 출발 전 도착 시간(10분)에서 따온 함정이다."
+   }
+  ],
+  "id": "p7-097"
+ },
+ {
+  "kind": "triple",
+  "lv": 2,
+  "docs": [
+   {
+    "doc": "공지",
+    "title": "Office Move to the Halston Building",
+    "paras": [
+     "As announced last month, Ferro Insurance will move to new offices in the Halston Building on Grove Street. Departments will move in stages over two weekends so that normal business can continue. Moving crates will be delivered to each department two days before its moving date.",
+     "Employees must pack the items on their desks and label each crate with their name and new room number. IT staff will disconnect and set up all computers, so please do not pack any computer equipment yourself."
+    ],
+    "ko": [
+     "지난달 공지한 대로 페로 보험은 그로브 가의 홀스턴 빌딩 내 새 사무실로 이전합니다. 정상 업무가 계속될 수 있도록 부서별로 두 번의 주말에 걸쳐 단계적으로 이전합니다. 이삿짐 상자는 각 부서의 이전 날짜 이틀 전에 배달됩니다.",
+     "직원들은 책상 위 물품을 직접 포장하고 각 상자에 이름과 새 방 번호를 적어야 합니다. 모든 컴퓨터는 IT 직원이 분리하고 설치하므로 컴퓨터 장비는 직접 포장하지 마십시오."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "일정표",
+    "title": "Moving Schedule",
+    "paras": [
+     "New room numbers will be sent by e-mail one week before each move.",
+     "All departments should be fully unpacked by the Monday after their move."
+    ],
+    "ko": [
+     "새 방 번호는 각 이전 일주일 전에 이메일로 발송됩니다.",
+     "모든 부서는 이전 후 첫 월요일까지 짐 정리를 마쳐야 합니다."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Moving Schedule",
+     "cols": [
+      "Department",
+      "Moving Date",
+      "New Floor"
+     ],
+     "rows": [
+      [
+       "Accounting",
+       "Saturday, March 7",
+       "3rd floor"
+      ],
+      [
+       "Human Resources",
+       "Sunday, March 8",
+       "3rd floor"
+      ],
+      [
+       "Claims",
+       "Saturday, March 14",
+       "5th floor"
+      ],
+      [
+       "Customer Service",
+       "Sunday, March 15",
+       "2nd floor"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "문자 메시지",
+    "paras": [
+     "Gina Lowe [4:10 P.M.]: Hi Raymond. The crates for our department just arrived. Have you gotten your new room number yet?",
+     "Raymond Ortiz [4:12 P.M.]: Yes, 512. All of us in Claims will be on the same floor, so we'll still be close to each other.",
+     "Gina Lowe [4:13 P.M.]: Great. Should I put my monitor in a crate too?",
+     "Raymond Ortiz [4:14 P.M.]: I wouldn't. Leave that for the tech team.",
+     "Gina Lowe [4:15 P.M.]: Got it. I'll start packing my files tomorrow morning."
+    ],
+    "ko": [
+     "지나 로 [오후 4:10]: 안녕하세요, 레이먼드 씨. 우리 부서 이삿짐 상자가 방금 도착했어요. 새 방 번호 받으셨어요?",
+     "레이먼드 오티즈 [오후 4:12]: 네, 512호예요. 보상팀은 모두 같은 층이라 계속 가까이 있게 될 거예요.",
+     "지나 로 [오후 4:13]: 잘됐네요. 제 모니터도 상자에 넣어야 할까요?",
+     "레이먼드 오티즈 [오후 4:14]: 저라면 안 그러겠어요. 그건 기술팀에 맡기세요.",
+     "지나 로 [오후 4:15]: 알겠어요. 내일 아침부터 서류를 싸기 시작할게요."
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is the purpose of the notice?",
+    "qko": "공지의 목적은 무엇인가?",
+    "o": [
+     "To announce the purchase of a building",
+     "To explain how an office move will be carried out",
+     "To introduce new IT staff",
+     "To ask employees to choose their offices"
+    ],
+    "a": 1,
+    "type": "주제·목적",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Departments will move in stages over two weekends so that normal business can continue"
+     }
+    ],
+    "exp": "공지는 부서별 단계적 이전 방식(move in stages over two weekends), 상자 배달 시점, 포장 방법을 안내한다 → 사무실 이전을 어떻게 진행할지 설명하는 것이 목적이다. 건물 매입이나 신규 IT 직원 소개는 없고, 방 번호는 직원이 고르는 것이 아니라 이메일로 통보된다."
+   },
+   {
+    "q": "What are employees instructed to do?",
+    "qko": "직원들은 무엇을 하라고 지시받는가?",
+    "o": [
+     "Disconnect their own computers",
+     "Order moving supplies",
+     "Mark their crates with certain information",
+     "Work from home on moving day"
+    ],
+    "a": 2,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "label each crate with their name and new room number"
+     }
+    ],
+    "exp": "'label each crate with their name and new room number' → 상자에 특정 정보(이름과 새 방 번호)를 표시해야 한다(Mark their crates with certain information). 컴퓨터는 IT 직원이 분리하므로(IT staff will disconnect) 직접 분리하라는 보기는 반대 내용이다."
+   },
+   {
+    "q": "At 4:14 P.M., what does Mr. Ortiz most likely mean when he writes, \"I wouldn't\"?",
+    "qko": "오후 4시 14분에 오티즈 씨가 \"I wouldn't\"라고 쓴 의도는 무엇이겠는가?",
+    "o": [
+     "He does not want to change offices.",
+     "He has not received his room number.",
+     "Ms. Lowe should not start packing yet.",
+     "Ms. Lowe should not pack her monitor."
+    ],
+    "a": 3,
+    "type": "의도 파악",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "Should I put my monitor in a crate too?"
+     },
+     {
+      "d": 2,
+      "p": 3,
+      "s": "I wouldn't. Leave that for the tech team."
+     },
+     {
+      "d": 0,
+      "p": 1,
+      "s": "please do not pack any computer equipment yourself"
+     }
+    ],
+    "exp": "로 씨가 모니터도 상자에 넣어야 하는지 묻자 오티즈 씨가 'I wouldn't(저라면 안 넣겠어요)'라며 기술팀에 맡기라고 했다. 공지에서도 컴퓨터 장비는 직접 포장하지 말라고 했으므로, 모니터를 포장하지 말라는 뜻이다. 그는 이미 방 번호(512)를 받았고, 서류 포장 자체를 말린 것은 아니다."
+   },
+   {
+    "q": "On what date were the text messages most likely sent?",
+    "qko": "문자 메시지는 언제 보낸 것이겠는가?",
+    "o": [
+     "March 5",
+     "March 12",
+     "March 13",
+     "March 14"
+    ],
+    "a": 1,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 2,
+      "p": 0,
+      "s": "The crates for our department just arrived"
+     },
+     {
+      "d": 2,
+      "p": 1,
+      "s": "All of us in Claims will be on the same floor"
+     },
+     {
+      "d": 0,
+      "p": 0,
+      "s": "Moving crates will be delivered to each department two days before its moving date"
+     }
+    ],
+    "exp": "오티즈 씨의 말(All of us in Claims)로 보아 두 사람은 보상(Claims) 부서이고, 일정표에서 보상 부서의 이전 날짜는 3월 14일 토요일이다. 공지에 따르면 이삿짐 상자는 이전 이틀 전에 배달되므로, 상자가 방금 도착했다는 메시지는 3월 12일에 보낸 것이다. 3월 5일은 회계 부서(3월 7일 이전)의 상자 배달일이고, 3월 14일은 이전 당일이다."
+   },
+   {
+    "q": "What does Ms. Lowe plan to do tomorrow morning?",
+    "qko": "로 씨는 내일 아침에 무엇을 할 계획인가?",
+    "o": [
+     "Visit the Halston Building",
+     "Set up her new computer",
+     "Send her room number to IT",
+     "Begin packing documents"
+    ],
+    "a": 3,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 4,
+      "s": "I'll start packing my files tomorrow morning"
+     }
+    ],
+    "exp": "'I'll start packing my files tomorrow morning' → 서류를 싸기 시작한다(Begin packing documents). 컴퓨터 설치는 IT 직원이 하는 일이고, 새 건물 방문은 언급되지 않았다."
+   }
+  ],
+  "id": "p7-098"
+ },
+ {
+  "kind": "triple",
+  "lv": 2,
+  "docs": [
+   {
+    "doc": "송장",
+    "title": "Lakeside Conference Center - Invoice",
+    "meta": [
+     "Invoice No. LC-0457",
+     "Date: November 2",
+     "Client: Norvale Pharmaceuticals (attn. Alicia Brandt)",
+     "Event: Regional Sales Meeting, October 29"
+    ],
+    "paras": [
+     "Total due: $3,180.00. Payment is due by December 2. A 3 percent discount applies if payment is received within 10 days of the invoice date."
+    ],
+    "ko": [
+     "청구 금액: 3,180달러. 대금은 12월 2일까지 지불해야 합니다. 송장 발행일로부터 10일 이내에 입금되면 3퍼센트 할인이 적용됩니다."
+    ],
+    "graphic": {
+     "type": "table",
+     "title": "Charges",
+     "cols": [
+      "Description",
+      "Quantity",
+      "Amount"
+     ],
+     "rows": [
+      [
+       "Meeting room rental (full day)",
+       "1",
+       "$900.00"
+      ],
+      [
+       "Lunch buffet ($32 per person)",
+       "60",
+       "$1,920.00"
+      ],
+      [
+       "Projector and sound system",
+       "1",
+       "$360.00"
+      ],
+      [
+       "Total",
+       "",
+       "$3,180.00"
+      ]
+     ]
+    }
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Peter Novak <events@lakesidecc.example>",
+     "From: Alicia Brandt <abrandt@norvale.example>",
+     "Date: November 4",
+     "Subject: Invoice LC-0457"
+    ],
+    "paras": [
+     "Dear Mr. Novak,",
+     "Thank you for hosting our sales meeting last week. Everything went smoothly. However, I noticed that we were charged for 60 lunches. On October 26, I e-mailed your office to lower the number to 48 because several staff members could not attend, and I received a confirmation the same day.",
+     "Could you please send a revised invoice? We would like to pay as soon as possible so that we receive the early-payment discount.",
+     "Alicia Brandt"
+    ],
+    "ko": [
+     "노박 씨께,",
+     "지난주 저희 영업 회의를 진행해 주셔서 감사합니다. 모든 것이 순조로웠습니다. 그런데 점심 60인분이 청구된 것을 발견했습니다. 10월 26일에 직원 몇 명이 참석하지 못하게 되어 인원을 48명으로 줄여 달라고 귀사에 이메일을 보냈고, 같은 날 확인 답장도 받았습니다.",
+     "수정된 송장을 보내 주시겠습니까? 조기 납부 할인을 받을 수 있도록 최대한 빨리 지불하고 싶습니다.",
+     "얼리샤 브랜트"
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Alicia Brandt <abrandt@norvale.example>",
+     "From: Peter Novak <events@lakesidecc.example>",
+     "Date: November 5",
+     "Subject: RE: Invoice LC-0457"
+    ],
+    "paras": [
+     "Dear Ms. Brandt,",
+     "You are absolutely right, and I apologize for the mistake. Our catering team prepared lunch for the correct number of guests, but the billing department was working from the original order. A revised invoice is attached.",
+     "Because of the delay this has caused, we will extend your early-payment discount period until November 19. We look forward to hosting Norvale again.",
+     "Peter Novak, Events Manager"
+    ],
+    "ko": [
+     "브랜트 씨께,",
+     "말씀하신 내용이 전적으로 맞으며, 실수에 대해 사과드립니다. 저희 케이터링팀은 정확한 인원수에 맞춰 점심을 준비했지만, 청구 부서가 최초 주문서를 기준으로 작업했습니다. 수정된 송장을 첨부합니다.",
+     "이 일로 지연이 생긴 만큼 조기 납부 할인 기간을 11월 19일까지 연장해 드리겠습니다. 노베일을 다시 모실 수 있기를 바랍니다.",
+     "행사 담당 매니저 피터 노박 드림"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "What is the purpose of Ms. Brandt's e-mail?",
+    "qko": "브랜트 씨가 보낸 이메일의 목적은 무엇인가?",
+    "o": [
+     "To book a room for another event",
+     "To complain about the food",
+     "To point out a billing error",
+     "To request audio equipment"
+    ],
+    "a": 2,
+    "type": "주제·목적",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "I noticed that we were charged for 60 lunches"
+     },
+     {
+      "d": 1,
+      "p": 2,
+      "s": "Could you please send a revised invoice?"
+     }
+    ],
+    "exp": "브랜트 씨는 48인분으로 줄였는데 60인분이 청구되었다며(we were charged for 60 lunches) 수정된 송장을 요청했다 → 청구 오류를 지적하려는 것이다(To point out a billing error). 'Everything went smoothly'라고 했으므로 음식 불만은 오답이다."
+   },
+   {
+    "q": "What will be the charge for lunch on the revised invoice?",
+    "qko": "수정된 송장의 점심 요금은 얼마이겠는가?",
+    "o": [
+     "$384.00",
+     "$1,536.00",
+     "$1,600.00",
+     "$1,920.00"
+    ],
+    "a": 1,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "I e-mailed your office to lower the number to 48"
+     },
+     {
+      "d": 2,
+      "p": 1,
+      "s": "A revised invoice is attached."
+     }
+    ],
+    "exp": "브랜트 씨는 점심 인원을 48명으로 줄였고, 노박 씨는 이를 인정하고 수정된 송장을 보냈다. 송장 표에 따르면 점심 뷔페는 1인당 32달러이므로 48 × 32 = 1,536달러다. 1,920달러는 60인분의 원래 금액이고, 384달러는 줄어든 12인분의 금액이다."
+   },
+   {
+    "q": "According to Mr. Novak, why did the error occur?",
+    "qko": "노박 씨에 따르면, 오류는 왜 발생했는가?",
+    "o": [
+     "The caterers prepared extra meals.",
+     "Billing used outdated order information.",
+     "Ms. Brandt's e-mail was never received.",
+     "The meeting lasted longer than planned."
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "the billing department was working from the original order"
+     }
+    ],
+    "exp": "'the billing department was working from the original order' → 청구 부서가 예전 주문 정보를 사용했다(Billing used outdated order information). 케이터링팀은 정확한 인원에 맞춰 준비했다고(prepared lunch for the correct number of guests) 했고, 브랜트 씨는 확인 답장까지 받았으므로 이메일이 전달되지 않았다는 보기도 오답이다."
+   },
+   {
+    "q": "By what date must Norvale Pharmaceuticals pay in order to receive a 3 percent discount?",
+    "qko": "노베일 제약이 3퍼센트 할인을 받으려면 언제까지 지불해야 하는가?",
+    "o": [
+     "November 5",
+     "November 12",
+     "November 19",
+     "December 2"
+    ],
+    "a": 2,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 0,
+      "p": 0,
+      "s": "A 3 percent discount applies if payment is received within 10 days of the invoice date"
+     },
+     {
+      "d": 2,
+      "p": 2,
+      "s": "we will extend your early-payment discount period until November 19"
+     }
+    ],
+    "exp": "송장에 따르면 3퍼센트 할인은 조기 납부 할인으로, 원래는 발행일(11월 2일)로부터 10일 이내, 즉 11월 12일까지였다. 노박 씨가 답장에서 조기 납부 할인 기간을 11월 19일까지 연장했으므로 정답은 11월 19일이다. 11월 12일은 연장 전 기한이고, 12월 2일은 할인 없이 내야 하는 최종 지불 기한이다."
+   },
+   {
+    "q": "What did Ms. Brandt do on October 26?",
+    "qko": "브랜트 씨는 10월 26일에 무엇을 했는가?",
+    "o": [
+     "She changed the size of a meal order.",
+     "She visited the conference center.",
+     "She paid part of the bill.",
+     "She canceled the sales meeting."
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 1,
+      "p": 1,
+      "s": "On October 26, I e-mailed your office to lower the number to 48"
+     }
+    ],
+    "exp": "'On October 26, I e-mailed your office to lower the number to 48' → 점심 주문 인원을 바꿨다(changed the size of a meal order). 회의는 취소되지 않고 10월 29일에 순조롭게 열렸으며(Everything went smoothly), 일부 지불이나 방문은 언급되지 않았다."
+   }
+  ],
+  "id": "p7-099"
+ },
+ {
+  "kind": "triple",
+  "lv": 3,
+  "docs": [
+   {
+    "doc": "리뷰",
+    "title": "Olivetta Trattoria - Diner Review",
+    "paras": [
+     "Posted by Dev K. on May 11 - Rating: 4 out of 5",
+     "My partner and I celebrated our anniversary at Olivetta last Friday and ordered the chef's tasting menu. The handmade pasta course was outstanding, and our server, Marco, explained every dish with real enthusiasm.",
+     "The only letdown was dessert. The online menu listed a lemon tart, which was the main reason I chose this restaurant, but we were served chocolate cake instead without any explanation. It was good, but it wasn't what I had been looking forward to."
+    ],
+    "ko": [
+     "5월 11일 데브 K. 작성 - 평점: 5점 만점에 4점",
+     "지난 금요일 파트너와 저는 올리베타에서 기념일을 축하하며 셰프의 테이스팅 메뉴를 주문했습니다. 수제 파스타 코스가 훌륭했고, 담당 서버인 마르코는 모든 요리를 정말 열정적으로 설명해 주었습니다.",
+     "유일하게 아쉬웠던 것은 디저트였습니다. 온라인 메뉴에는 레몬 타르트가 있었고, 그것이 제가 이 식당을 고른 주된 이유였는데, 아무 설명 없이 초콜릿 케이크가 대신 나왔습니다. 맛은 좋았지만 제가 기대하던 것은 아니었습니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "웹페이지",
+    "title": "Olivetta Trattoria - Chef's Tasting Menu",
+    "paras": [
+     "Five courses for $85 per person, changing with the seasons. Current menu (April 15 - May 31):",
+     "Spring greens salad / Asparagus soup / Handmade ricotta ravioli / Grilled sea bass / Lemon tart with fresh berries",
+     "Please note: Dishes may be substituted when an ingredient is unavailable. Wine pairings are available for an additional $40 per person."
+    ],
+    "ko": [
+     "1인당 85달러의 5코스로, 계절에 따라 바뀝니다. 현재 메뉴(4월 15일~5월 31일):",
+     "봄 채소 샐러드 / 아스파라거스 수프 / 수제 리코타 라비올리 / 농어구이 / 신선한 베리를 곁들인 레몬 타르트",
+     "참고: 재료를 구할 수 없을 때는 요리가 대체될 수 있습니다. 와인 페어링은 1인당 40달러를 추가하면 이용하실 수 있습니다."
+    ],
+    "graphic": null
+   },
+   {
+    "doc": "이메일",
+    "meta": [
+     "To: Dev Kapoor <dkapoor@mailbox.example>",
+     "From: Lucia Ferrante <lucia@olivetta.example>",
+     "Date: May 12",
+     "Subject: Your anniversary dinner"
+    ],
+    "paras": [
+     "Dear Mr. Kapoor,",
+     "Thank you for choosing Olivetta for your celebration and for your kind comments about our pasta and about Marco. I am sorry about the dessert. Our berry supplier was unable to make a delivery that day, so the chef had to make a last-minute change. Our staff should have told you about it before the meal was served.",
+     "I have shared your comments with our team. I would also like to invite you and your partner back for dessert and coffee on us. Please mention this e-mail when you make a reservation.",
+     "Lucia Ferrante, Owner"
+    ],
+    "ko": [
+     "카푸어 씨께,",
+     "기념일 축하 자리로 올리베타를 선택해 주시고 저희 파스타와 마르코에 대해 좋은 말씀을 해 주셔서 감사합니다. 디저트에 대해서는 죄송합니다. 그날 베리 공급업체가 배송을 하지 못해서 셰프가 급히 메뉴를 바꿔야 했습니다. 식사가 나가기 전에 저희 직원이 그 사실을 말씀드렸어야 했습니다.",
+     "남겨 주신 의견은 직원들과 공유했습니다. 또한 두 분을 다시 모셔서 디저트와 커피를 무료로 대접하고 싶습니다. 예약하실 때 이 이메일을 언급해 주십시오.",
+     "소유주 루치아 페란테 드림"
+    ],
+    "graphic": null
+   }
+  ],
+  "qs": [
+   {
+    "q": "In the review, the word \"letdown\" in paragraph 3, line 1, is closest in meaning to",
+    "qko": "리뷰에서 세 번째 단락 1행의 단어 \"letdown\"과 의미가 가장 가까운 것은?",
+    "o": [
+     "decrease",
+     "delay",
+     "disappointment",
+     "release"
+    ],
+    "a": 2,
+    "type": "동의어",
+    "ev": [
+     {
+      "d": 0,
+      "p": 2,
+      "s": "The only letdown was dessert"
+     }
+    ],
+    "exp": "'The only letdown was dessert'의 letdown은 '실망(스러운 것)'이라는 뜻이므로 disappointment가 정답이다. 뒤에 이어지는 '기대하던 것이 아니었다(it wasn't what I had been looking forward to)'에서도 확인된다. down에서 연상되는 decrease(감소)는 함정이다."
+   },
+   {
+    "q": "Why was the lemon tart most likely not served?",
+    "qko": "레몬 타르트가 나오지 않은 이유는 무엇이겠는가?",
+    "o": [
+     "It had been removed from the seasonal menu.",
+     "A key ingredient was unavailable.",
+     "The kitchen ran out of lemons.",
+     "Mr. Kapoor ordered a different dessert."
+    ],
+    "a": 1,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "Our berry supplier was unable to make a delivery that day"
+     },
+     {
+      "d": 1,
+      "p": 1,
+      "s": "Lemon tart with fresh berries"
+     }
+    ],
+    "exp": "페란테 씨는 그날 베리 공급업체가 배송을 하지 못했다고 했고, 웹페이지 메뉴에서 레몬 타르트는 '신선한 베리를 곁들인(with fresh berries)' 디저트다. 즉 타르트에 필요한 핵심 재료를 구할 수 없었다. 부족했던 것은 레몬이 아니라 베리이며, 현재 메뉴 기간(4월 15일~5월 31일) 중이므로 메뉴에서 빠졌다는 보기도 오답이다."
+   },
+   {
+    "q": "How much did Dev K. most likely pay for the tasting menus, not including any drinks?",
+    "qko": "데브 K.는 음료를 제외하고 테이스팅 메뉴에 얼마를 냈겠는가?",
+    "o": [
+     "$85",
+     "$125",
+     "$170",
+     "$250"
+    ],
+    "a": 2,
+    "type": "연계",
+    "ev": [
+     {
+      "d": 0,
+      "p": 1,
+      "s": "My partner and I celebrated our anniversary at Olivetta last Friday and ordered the chef's tasting menu"
+     },
+     {
+      "d": 1,
+      "p": 0,
+      "s": "Five courses for $85 per person"
+     }
+    ],
+    "exp": "리뷰에서 데브 K.는 파트너와 둘이 테이스팅 메뉴를 먹었고, 웹페이지에 따르면 테이스팅 메뉴는 1인당 85달러다. 따라서 2 × 85 = 170달러다. 125달러는 1인분에 와인 페어링(40달러)을 더한 금액이고, 250달러는 두 사람 모두 와인 페어링을 추가했을 때의 금액이다."
+   },
+   {
+    "q": "According to Ms. Ferrante, what mistake did the staff make?",
+    "qko": "페란테 씨에 따르면, 직원들은 어떤 실수를 했는가?",
+    "o": [
+     "They did not explain a menu change.",
+     "They served the wrong main course.",
+     "They lost a reservation.",
+     "They brought the bill too early."
+    ],
+    "a": 0,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 1,
+      "s": "Our staff should have told you about it before the meal was served"
+     }
+    ],
+    "exp": "'Our staff should have told you about it before the meal was served' → 직원들이 메뉴 변경을 미리 설명하지 않은 것이 실수다(They did not explain a menu change). 리뷰의 'without any explanation'과도 일치한다. 메인 요리 오류, 예약 분실, 계산서 문제는 언급되지 않았다."
+   },
+   {
+    "q": "What does Ms. Ferrante offer Mr. Kapoor?",
+    "qko": "페란테 씨는 카푸어 씨에게 무엇을 제안하는가?",
+    "o": [
+     "A discount on wine pairings",
+     "A complimentary dessert and coffee",
+     "A free tasting menu",
+     "A private cooking lesson"
+    ],
+    "a": 1,
+    "type": "세부 사항",
+    "ev": [
+     {
+      "d": 2,
+      "p": 2,
+      "s": "I would also like to invite you and your partner back for dessert and coffee on us"
+     }
+    ],
+    "exp": "'dessert and coffee on us'에서 on us는 '저희가 내겠다', 즉 무료라는 뜻이다 → A complimentary dessert and coffee. 테이스팅 메뉴 전체를 무료로 주는 것이 아니며, 와인 페어링 할인이나 요리 수업은 제안되지 않았다."
+   }
+  ],
+  "id": "p7-100"
  }
 ]
