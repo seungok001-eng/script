@@ -93,3 +93,55 @@ fs.writeFileSync(path.join(ROOT, "app/js/data.js"), js);
 const withAu = words.filter((w) => w.au).length;
 const withEx = words.filter((w) => w.exAu).length;
 console.log(`단어 ${words.length}개 (데이터 없음 ${missing}) · 단어 음성 ${withAu} · 예문 음성 ${withEx} · Part1 ${part1.length} (음성 ${part1.filter((p) => p.au).length}) · LC ${lc.length} (음성 ${lc.filter((p) => p.au).length} · 응답 퀴즈 ${lc.filter((p) => p.x).length}) · 혼동어 ${conf.length} · ${(js.length / 1024).toFixed(0)}KB`);
+
+// ── 실전 문제 (data/practice/*.json → app/js/practice.js, 실전 화면에서 처음 쓸 때 불러온다) ──
+const PDIR = path.join(ROOT, "data/practice");
+const pr = {};
+for (const k of ["p3", "p4", "grammar", "p6", "p7"]) pr[k] = read(path.join(PDIR, `${k}.json`), []);
+// Part 3·4 문장 음성: audio/p34/<id>-NN.mp3 (문장마다 따로 — 문장 단위 다시 듣기·현재 문장 표시)
+for (const set of pr.p3.concat(pr.p4)) {
+  const rels = set.lines.map((l, i) => [`p34/${set.id}-${String(i + 1).padStart(2, "0")}.mp3`, l.en]);
+  if (rels.length && rels.every(([rel, t]) => fresh(rel, t))) {
+    set.au = 1;
+    set.vo = Object.fromEntries(set.lines.map((l, i) => [l.sp, voiceOf(rels[i][0])]));
+  }
+}
+// 하프 모의고사 4회: 문항을 고정 시드로 미리 떼어 둔다 (연습 목록에서는 빠짐)
+function seeded(seed) {
+  let t = seed >>> 0;
+  return () => { t += 0x6d2b79f5; let r = Math.imul(t ^ (t >>> 15), 1 | t); r ^= r + Math.imul(r ^ (r >>> 7), 61 | r); return ((r ^ (r >>> 14)) >>> 0) / 4294967296; };
+}
+function shuffled(arr, seed) {
+  const a = arr.slice(), rnd = seeded(seed);
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+const MOCKS = 4;
+const take = (list, per, seed) => { const s = shuffled(list, seed); return Array.from({ length: MOCKS }, (_, m) => s.slice(m * per, (m + 1) * per)); };
+const mocks = [];
+const enough = pr.p3.length >= 24 && pr.p4.length >= 16;
+if (enough) {
+  const p3 = take(pr.p3, 6, 11), p4 = take(pr.p4, 4, 12);
+  const p6 = take(pr.p6, 2, 13);
+  const p7s = take(pr.p7.filter((x) => x.kind === "single"), 3, 14);
+  const p7d = take(pr.p7.filter((x) => x.kind === "double"), 1, 15);
+  const p7t = take(pr.p7.filter((x) => x.kind === "triple"), 1, 16);
+  // 문법: 주제마다 마지막 문항 위주로 10문항씩
+  const gqs = pr.grammar.flatMap((t) => t.qs.slice(-2));
+  const p5g = take(gqs, 10, 17);
+  const resp = lc.filter((p) => /^Q: /.test(plain(p.e)) && p.x);
+  const p2 = take(resp, 12, 18);
+  const vocab = words.filter((w) => w.tier <= 2 && w.q);
+  const p5w = take(vocab, 6, 19);
+  for (let m = 0; m < MOCKS; m++) {
+    const mark = (xs) => xs.forEach((x) => (x.mock = m + 1));
+    [p3[m], p4[m], p6[m], p7s[m], p7d[m], p7t[m], p5g[m]].forEach(mark);
+    mocks.push({ n: m + 1, p2: p2[m].map((x) => x.id), p3: p3[m].map((x) => x.id), p4: p4[m].map((x) => x.id), p5w: p5w[m].map((x) => x.id), p5g: p5g[m].map((x) => x.id),
+      p6: p6[m].map((x) => x.id), p7: p7s[m].concat(p7d[m], p7t[m]).map((x) => x.id) });
+  }
+}
+const practice = { version: out.version, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks };
+const pjs = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_PRACTICE=" + JSON.stringify(practice) + ";\n";
+fs.writeFileSync(path.join(ROOT, "app/js/practice.js"), pjs);
+const nq = (xs) => xs.reduce((n, x) => n + x.qs.length, 0);
+console.log(`실전: Part 3 ${pr.p3.length}세트 · Part 4 ${pr.p4.length}세트 (음성 ${pr.p3.concat(pr.p4).filter((x) => x.au).length}) · 문법 ${pr.grammar.length}주제 ${nq(pr.grammar)}문제 · Part 6 ${pr.p6.length} · Part 7 ${pr.p7.length}세트 ${nq(pr.p7)}문제 · 모의고사 ${mocks.length}회 · ${(pjs.length / 1024).toFixed(0)}KB`);

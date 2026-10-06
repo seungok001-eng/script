@@ -290,3 +290,51 @@ test("LC 데이터: 그룹·Part 규칙, 대화 오답 보기, 표현 중복 없
   }
   assert.ok(ex.lc.filter(C.canRespond).length >= 400);
 });
+
+// ───────────── 실전 문제 · 점수 추정 ─────────────
+test("scaleScore: 0→5, 1→495, 단조 증가, 5점 단위, RC 가 LC 보다 짜다", () => {
+  assert.equal(C.scaleScore(0, "lc"), 5);
+  assert.equal(C.scaleScore(1, "rc"), 495);
+  let prev = 0;
+  for (let r = 0; r <= 1.0001; r += 0.05) {
+    const v = C.scaleScore(r, "lc");
+    assert.ok(v >= prev && v % 5 === 0, `${r} → ${v}`);
+    prev = v;
+    assert.ok(C.scaleScore(r, "rc") <= v);
+  }
+  assert.equal(C.scaleScore(2, "lc"), 495);
+  assert.equal(C.scaleScore(-1, "lc"), 5);
+  assert.deepEqual(C.estimateTotal(0.8, 0.8), { lc: 395, rc: 365, total: 760 });
+});
+
+test("predictScore: LC·RC 각각 n 개가 쌓여야 예상 점수를 낸다", () => {
+  const ones = (k: number, ok: number) => Array.from({ length: k }, (_, i) => (i < ok ? 1 : 0));
+  assert.equal(C.predictScore({ lc: ones(29, 29), rc: ones(40, 30) }), null);
+  const p = C.predictScore({ lc: ones(30, 24), rc: ones(40, 32) });
+  assert.equal(p.lc, 395);
+  assert.equal(p.rc, 365);
+  assert.equal(p.total, 760);
+  assert.equal(C.pushRecent(ones(120, 120), false).length, 120);
+  assert.equal(C.pushRecent([], true)[0], 1);
+});
+
+test("recordType / weakTypes: 5문제 이상 푼 유형을 정답률 낮은 순으로", () => {
+  const qt: any = {};
+  for (let i = 0; i < 6; i++) C.recordType(qt, "p7:추론", i < 2);
+  for (let i = 0; i < 5; i++) C.recordType(qt, "p3:세부 사항", i < 4);
+  for (let i = 0; i < 3; i++) C.recordType(qt, "p6:문장 삽입", false);
+  const w = C.weakTypes(qt);
+  assert.deepEqual(w.map((x: any) => x.key), ["p7:추론", "p3:세부 사항"]);
+  assert.equal(w[0].pct, 33);
+  assert.equal(w[0].type, "추론");
+  assert.equal(w[0].part, "p7");
+});
+
+test("dictDiff: 대소문자·문장부호·아포스트로피 무시, 빠진 단어 표시", () => {
+  const r = C.dictDiff("I'll send it by Friday.", "ill send by friday");
+  assert.deepEqual(r.tokens.map((t: any) => t.st), ["ok", "ok", "miss", "ok", "ok"]);
+  assert.equal(r.pct, 80);
+  assert.equal(C.dictDiff("The *meeting* starts at 9.", "the meeting starts at 9").pct, 100);
+  assert.equal(C.dictDiff("Hello there", "").pct, 0);
+  assert.equal(C.dictDiff("Please call me back.", "please call back me").ok, 3);
+});

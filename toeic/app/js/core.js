@@ -476,6 +476,82 @@
     return { total: items.length, seen, wrong, accuracy: ok + ng ? Math.round((ok / (ok + ng)) * 100) : null };
   }
 
+  // ───────────── 실전 문제 (Part 3~7 · 모의고사) ─────────────
+  // 정답 비율(0~1) → 토익 환산 점수 추정 (LC/RC 각 5~495, 5점 단위). 공개된 환산 경향을 단순화한 근사치라 '예상'으로만 쓴다
+  const SCORE_TABLE = {
+    lc: [[0, 5], [0.2, 60], [0.3, 110], [0.4, 165], [0.5, 225], [0.6, 285], [0.7, 340], [0.8, 395], [0.9, 450], [0.95, 475], [1, 495]],
+    rc: [[0, 5], [0.2, 50], [0.3, 95], [0.4, 145], [0.5, 200], [0.6, 255], [0.7, 310], [0.8, 365], [0.9, 425], [0.95, 460], [1, 495]],
+  };
+  function scaleScore(ratio, sec) {
+    const t = SCORE_TABLE[sec];
+    const r = clamp(Number(ratio) || 0, 0, 1);
+    for (let i = 1; i < t.length; i++) {
+      if (r <= t[i][0]) {
+        const [x0, y0] = t[i - 1], [x1, y1] = t[i];
+        return Math.round((y0 + ((r - x0) / (x1 - x0)) * (y1 - y0)) / 5) * 5;
+      }
+    }
+    return 495;
+  }
+  function estimateTotal(lcRatio, rcRatio) {
+    const lc = scaleScore(lcRatio, "lc"), rc = scaleScore(rcRatio, "rc");
+    return { lc, rc, total: lc + rc };
+  }
+  // 최근 결과(1/0 배열)로 예상 점수. LC·RC 각각 최소 n 개가 쌓여야 낸다
+  function predictScore(pr, n) {
+    const need = n || 30;
+    const lc = (pr && pr.lc) || [], rc = (pr && pr.rc) || [];
+    if (lc.length < need || rc.length < need) return null;
+    const avg = (a) => a.reduce((x, y) => x + y, 0) / a.length;
+    return Object.assign(estimateTotal(avg(lc), avg(rc)), { nLc: lc.length, nRc: rc.length });
+  }
+  function pushRecent(arr, ok, max) {
+    const a = (arr || []).concat(ok ? 1 : 0);
+    return a.slice(-(max || 120));
+  }
+  // 문제 유형별 정답률 기록 ("p7:추론" → { ok, n })
+  function recordType(qt, key, ok) {
+    const o = Object.assign({ ok: 0, n: 0 }, qt[key] || {});
+    o.n += 1;
+    if (ok) o.ok += 1;
+    qt[key] = o;
+    return o;
+  }
+  // 약점: 5문제 이상 푼 유형 중 정답률이 낮은 순
+  function weakTypes(qt, minN) {
+    const m = minN || 5;
+    return Object.keys(qt || {})
+      .map((k) => { const [part, type] = k.split(":"); const o = qt[k]; return { key: k, part, type, ok: o.ok, n: o.n, pct: Math.round((o.ok / o.n) * 100) }; })
+      .filter((x) => x.n >= m)
+      .sort((a, b) => a.pct - b.pct || b.n - a.n);
+  }
+  // 받아쓰기 채점: 단어 단위 LCS 로 맞은 단어·빠진 단어·틀린 단어를 표시한다
+  function dictTokens(s) {
+    return (s || "").replace(/\*/g, "").split(/\s+/).filter(Boolean);
+  }
+  function dictWordKey(w) {
+    return w.toLowerCase().replace(/[^a-z0-9$%]/g, ""); // 아포스트로피·문장부호는 무시 (I'll = ill)
+  }
+  function dictDiff(expected, given) {
+    const E = dictTokens(expected), G = dictTokens(given);
+    const ek = E.map(dictWordKey), gk = G.map(dictWordKey);
+    const L = Array.from({ length: E.length + 1 }, () => new Array(G.length + 1).fill(0));
+    for (let i = E.length - 1; i >= 0; i--)
+      for (let j = G.length - 1; j >= 0; j--)
+        L[i][j] = ek[i] && ek[i] === gk[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+    const out = [];
+    let i = 0, j = 0;
+    while (i < E.length) {
+      if (!ek[i]) { out.push({ w: E[i], st: "ok" }); i++; continue; }
+      if (j < G.length && ek[i] === gk[j]) { out.push({ w: E[i], st: "ok" }); i++; j++; }
+      else if (j < G.length && L[i][j + 1] >= L[i + 1][j]) j++;
+      else { out.push({ w: E[i], st: "miss" }); i++; }
+    }
+    const words = out.filter((x) => dictWordKey(x.w));
+    const ok = words.filter((x) => x.st === "ok").length;
+    return { tokens: out, ok, total: words.length, pct: words.length ? Math.round((ok / words.length) * 100) : 100 };
+  }
+
   // 지금 속도로 범위를 다 보는 날 (최근 7일 새 단어 평균)
   function projectFinish(pool, states, log, today, daily, start) {
     // 최근 7일(시작한 지 7일이 안 됐으면 시작일부터) 하루 평균 새 단어 수
@@ -495,6 +571,7 @@
     todayPlan, streak,
     rng, shuffle, meaningText, distractors, starred, cloze, plainEx, makeQuestion, makeTest,
     canParaphrase, makeParaphrase, placementSample,
+    scaleScore, estimateTotal, predictScore, pushRecent, recordType, weakTypes, dictDiff,
     splitDialog, canRespond, makeResponse, makeLcMeaning, lcPick, lcRecord, lcSummary, placementScore, estimateKnown, recommendSkip,
     normEn, checkSpelling, editDistance, spellHint,
     search, summarize, projectFinish, clamp,
