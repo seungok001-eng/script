@@ -33,6 +33,10 @@ function demoState(today, words) {
     S.log[today - 20 + k] = { new: 30 + ((k * 7) % 15), rev: 20 + ((k * 11) % 40), q: 25 + (k % 9), ok: 22 + (k % 7), sec: 1500, done: true };
   }
   [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].forEach((day, i) => { S.tests[day] = { best: [92, 88, 85, 95, 80, 76, 90, 84, 100, 72, 88, 91, 86, 79, 94][i], last: 80, at: today - 15 + i }; });
+  // 실전 문제 기록: 예상 점수 · 약점 분석 · 모의고사
+  S.pr = { lc: Array.from({ length: 60 }, (_, i) => (i % 5 === 0 ? 0 : 1)), rc: Array.from({ length: 60 }, (_, i) => (i % 4 === 0 ? 0 : 1)) };
+  S.qt = { "p7:추론": { ok: 7, n: 12 }, "p6:문장 삽입": { ok: 6, n: 10 }, "p3:의도 파악": { ok: 5, n: 8 }, "p5:관계대명사": { ok: 10, n: 13 }, "p4:시각 자료": { ok: 7, n: 9 } };
+  S.mock = { 1: { lc: 395, rc: 360, total: 755, best: 755, at: today - 2 } };
   return S;
 }
 
@@ -40,10 +44,10 @@ const SHOTS = [
   { name: "01-target", cap: "목표 점수만 고르면\n학습 계획 끝", sub: "650점 1,070개 · 800점 2,551개 · 900점 3,600개", go: async (p) => { await p.click("[data-next]"); await p.click('[data-score="800"]'); } },
   { name: "02-home", cap: "오늘 할 일이\n한눈에", sub: "새 단어 · 복습 · 확인 퀴즈 · 오답노트", hash: "#/home" },
   { name: "03-card", cap: "예문과 출제 포인트까지\n카드 한 장에", sub: "모든 단어·예문 원어민 음성", go: async (p) => { await p.goto(BASE + "#/day/2"); await p.waitForTimeout(300); await p.click('[data-mode="card"]'); await p.waitForTimeout(250); await p.click("[data-flip]"); } },
-  { name: "04-word", cap: "파생어 · 패러프레이징\nPart 5 문제까지", sub: "단어마다 토익 출제 포인트", hash: "#/word/01-15" },
-  { name: "05-part5", cap: "Part 5 실전 문제\n3,600개", sub: "정답 이유와 오답 함정 해설", go: async (p) => { await p.goto(BASE + "#/day/3"); await p.waitForTimeout(300); await p.click('[data-mode="part5"]'); await p.waitForTimeout(250); const n = await p.$$eval("[data-pick]", (els) => els.length); await p.click('[data-pick="0"]'); } },
+  { name: "04-p3", cap: "Part 3·4 실전 문제\n정답 근거 문장까지", sub: "150세트 · 문장마다 원어민 음성 · 전체 해석", go: async (p) => { await p.goto(BASE + "#/sets/p3"); await p.waitForTimeout(1200); await p.click("[data-set]"); await p.waitForTimeout(400); for (let j = 0; j < 3; j++) await p.click(`.pq [data-q="${j}"][data-o="${j === 1 ? 3 : 0}"]`); await p.click("[data-grade]"); await p.waitForTimeout(400); const t = await p.$(".script"); if (t) await t.evaluate((el) => window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY - 70)); } },
+  { name: "05-p7", cap: "Part 5·6·7 독해\n해설과 근거 표시", sub: "문법 450문제 · 장문 48지문 · 독해 100세트", go: async (p) => { await p.goto(BASE + "#/sets/p7"); await p.waitForTimeout(1200); await p.click('[data-cat="이중 지문"]'); await p.waitForTimeout(300); await p.click("[data-set]"); await p.waitForTimeout(400); const n = await p.$$eval(".pq", (x) => x.length); for (let j = 0; j < n; j++) await p.click(`.pq [data-q="${j}"][data-o="1"]`); await p.click("[data-grade]"); await p.waitForTimeout(500); const m = await p.$("mark.on"); if (m) await m.evaluate((el) => window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY - 160)); } },
   { name: "06-days", cap: "90일 3단계 코스\n기본 · 심화 · 실전", sub: "토익 30개 주제를 3번 넓혀 가며", hash: "#/days" },
-  { name: "07-stats", cap: "시험일에 맞춘\n진도 관리", sub: "학습 달력 · 난이도별 진도 · 정답률", hash: "#/stats" },
+  { name: "07-practice", cap: "하프 모의고사로\n예상 점수 확인", sub: "LC·RC 예상 점수 · 문제 유형별 약점 분석", hash: "#/practice" },
   { name: "08-lc", cap: "LC 빈출 표현 870개\n실전 응답 퀴즈까지", sub: "질문 듣고 (A)(B)(C) 고르기 · 오답 함정 해설", go: async (p) => { await p.goto(BASE + "#/lc"); await p.waitForTimeout(300); await p.click('[data-part="2"]'); await p.waitForTimeout(200); await p.click('[data-lcq="resp"]'); await p.waitForTimeout(400); await p.click('[data-pick="0"]'); await p.waitForTimeout(300); await p.evaluate(() => window.scrollTo(0, 0)); } },
 ];
 
