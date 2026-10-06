@@ -747,3 +747,9 @@ mark.on { background: color-mix(in srgb, var(--gold) 62%, transparent); box-shad
 .offer-list { list-style: none; padding: 0; margin: 0 0 14px; display: flex; flex-direction: column; gap: 7px; font-size: 14.5px; }
 .offer-list li { padding-left: 22px; position: relative; }
 .offer-list li::before { content: "✓"; position: absolute; left: 2px; color: var(--ok); font-weight: 800; }
+/* 시간 압박 훈련 */
+.qtimer { position: relative; height: 26px; border-radius: 999px; background: var(--bg-sunk); overflow: hidden; margin: 0 0 12px; }
+.qtimer i { position: absolute; inset: 0 auto 0 0; background: color-mix(in srgb, var(--brand) 22%, transparent); transition: width .2s linear; }
+.qtimer i.warn { background: color-mix(in srgb, var(--bad) 30%, transparent); }
+.qtimer span { position: relative; display: block; text-align: center; font-size: 13px; font-weight: 800; line-height: 26px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.qtimer.off span { color: var(--text-3); font-weight: 600; }

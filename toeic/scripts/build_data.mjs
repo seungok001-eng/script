@@ -110,6 +110,7 @@ pr.p1 = read(path.join(ROOT, "data/part1.json"), { items: [] }).items
       lines: q.o.map((en) => ({ en })), qs: [{ o: q.o, ko: q.ko.map((k) => k.replace(/^\([A-D]\)\s*/, "")), a: q.a, exp: q.exp, type: q.trap }] };
     const rels = q.o.map((en, i) => [`p1q/${q.id}-${i}.mp3`, plain(en)]);
     if (rels.every(([rel, t]) => fresh(rel, t))) set.au = 1;
+    if (q.fm) set.mock = `f${q.fm}`; // 정규 모의고사 전용 사진 (연습 목록에서 빠진다)
     return set;
   });
 // 하프 모의고사 4회: 문항을 고정 시드로 미리 떼어 둔다 (연습 목록에서는 빠짐)
@@ -141,7 +142,7 @@ if (enough) {
   const p5w = take(vocab, 6, 19);
   // Part 1: 회마다 3문제 (실제 6문제의 절반). 사진이 다 들어오기 전에도 배정이 바뀌지 않게 문제 원본 전체(120개)에서 고정 시드로
   // 고르고, 그중 사진이 있는 것만 싣는다 (사진이 12장 이상일 때). 모의고사 문제는 연습 목록에서 빠진다
-  const p1All = read(path.join(ROOT, "data/part1.json"), { items: [] }).items;
+  const p1All = read(path.join(ROOT, "data/part1.json"), { items: [] }).items.filter((q) => !q.fm);
   const p1Set = new Map(pr.p1.map((x) => [x.id, x]));
   const p1 = pr.p1.length >= 12 ? take(p1All, 3, 20).map((xs) => xs.map((q) => p1Set.get(q.id)).filter(Boolean)) : null;
   for (let m = 0; m < MOCKS; m++) {
@@ -176,8 +177,24 @@ fs.writeFileSync(path.join(ROOT, "app/js/data.js"), js);
 const withAu = words.filter((w) => w.au).length;
 const withEx = words.filter((w) => w.exAu).length;
 console.log(`단어 ${words.length}개 (데이터 없음 ${missing}) · 단어 음성 ${withAu} · 예문 음성 ${withEx} · Part1 ${part1.length} (음성 ${part1.filter((p) => p.au).length}) · LC ${lc.length} (음성 ${lc.filter((p) => p.au).length} · 응답 퀴즈 ${lc.filter((p) => p.x).length}) · 혼동어 ${conf.length} · ${(js.length / 1024).toFixed(0)}KB`);
-const practice = { version, diag, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks };
+// 정규 모의고사 2회 (200문제 · LC 45분 · RC 75분): data/fullmock.json. 음성은 audio/fm/
+const full = read(path.join(ROOT, "data/fullmock.json"), { mocks: [] }).mocks.map((m) => {
+  const p2 = m.p2.map((it) => {
+    const o = { id: it.id, q: it.q, qko: it.qko, o: it.o, ok: it.ok, a: it.a, exp: it.exp, type: it.type };
+    if ([[`fm/${it.id}-q.mp3`, it.q]].concat(it.o.map((t, i) => [`fm/${it.id}-${i}.mp3`, t])).every(([rel, t]) => fresh(rel, plain(t)))) o.au = 1;
+    return o;
+  });
+  const lc = (sets) => sets.map((set) => {
+    const rels = set.lines.map((l, i) => [`fm/${set.id}-${String(i + 1).padStart(2, "0")}.mp3`, l.en]);
+    const o = Object.assign({}, set, { fm: 1 });
+    if (rels.every(([rel, t]) => fresh(rel, t))) { o.au = 1; o.vo = Object.fromEntries(set.lines.map((l, i) => [l.sp, voiceOf(rels[i][0])])); }
+    return o;
+  });
+  return { n: m.n, p1: m.p1.filter((id) => pr.p1.some((x) => x.id === id)), p2, p3: lc(m.p3), p4: lc(m.p4), p5: m.p5, p6: m.p6, p7: m.p7 };
+});
+const practice = { version, diag, full, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks };
 const pjs = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_PRACTICE=" + JSON.stringify(practice) + ";\n";
 fs.writeFileSync(path.join(ROOT, "app/js/practice.js"), pjs);
 const nq = (xs) => xs.reduce((n, x) => n + x.qs.length, 0);
+console.log(`정규 모의고사 ${full.length}회 (음성 Part 2 ${full.reduce((n, m) => n + m.p2.filter((x) => x.au).length, 0)}/${full.reduce((n, m) => n + m.p2.length, 0)} · Part 3·4 ${full.reduce((n, m) => n + m.p3.concat(m.p4).filter((x) => x.au).length, 0)}/${full.reduce((n, m) => n + m.p3.length + m.p4.length, 0)} · 사진 ${full.reduce((n, m) => n + m.p1.length, 0)}/12)`);
 console.log(`실전: Part 1 ${pr.p1.length}문제 (음성 ${pr.p1.filter((x) => x.au).length}) · Part 3 ${pr.p3.length}세트 · Part 4 ${pr.p4.length}세트 (음성 ${pr.p3.concat(pr.p4).filter((x) => x.au).length}) · 문법 ${pr.grammar.length}주제 ${nq(pr.grammar)}문제 · Part 6 ${pr.p6.length} · Part 7 ${pr.p7.length}세트 ${nq(pr.p7)}문제 · 모의고사 ${mocks.length}회 · ${(pjs.length / 1024).toFixed(0)}KB`);

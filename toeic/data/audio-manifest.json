@@ -1,4 +1,604 @@
 {
+"fm/fm1-p2-01-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "By the end of the month.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-01-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, it was submitted on time.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-01-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Dr. Harlow has offered to do it.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-01-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Who's going to review the grant proposal before we submit it?",
+"voice": "af_heart"
+},
+"fm/fm1-p2-02-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Just press the button twice.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-02-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I was away from my desk too.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-02-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "No, I'll leave at five.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-02-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Who left a voice message for me while I was out?",
+"voice": "am_liam"
+},
+"fm/fm1-p2-03-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The ceremony starts at seven.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-03-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Ask Priya. She's on the planning committee.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-03-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "A trophy for the best design.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-03-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Who's in charge of booking the venue for the awards ceremony?",
+"voice": "am_liam"
+},
+"fm/fm1-p2-04-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "In Conference Hall B.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-04-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Workplace safety regulations.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-04-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "About sixty people signed up.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-04-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "What's the topic of this afternoon's seminar?",
+"voice": "af_heart"
+},
+"fm/fm1-p2-05-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The parking lot behind the building.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-05-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "We haven't opened all the bids yet.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-05-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "It was lower than last year's price.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-05-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Which vendor submitted the lowest bid for the paving work?",
+"voice": "bm_fable"
+},
+"fm/fm1-p2-06-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "She seemed well prepared.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-06-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I think it starts at nine.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-06-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "We interviewed four people last week.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-06-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "What did you think of the candidate we interviewed this morning?",
+"voice": "bm_fable"
+},
+"fm/fm1-p2-07-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Facilities hasn't finalized the plan.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-07-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "A team of six designers.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-07-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, they're moving next week.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-07-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Which floor is the design team moving to?",
+"voice": "bm_fable"
+},
+"fm/fm1-p2-08-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "In the lot next to the gym.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-08-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Forty dollars a month.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-08-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "They'll be handed out on Monday.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-08-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "When do we get the new parking permits?",
+"voice": "am_liam"
+},
+"fm/fm1-p2-09-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "They were mostly positive.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-09-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Your manager will send you a time slot.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-09-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "In the main conference room.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-09-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "When are the annual performance reviews taking place?",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-10-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Not until the legal team signs off.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-10-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Most of the staff support it.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-10-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "At the head office in Denver.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-10-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "When should we announce the merger to the staff?",
+"voice": "af_heart"
+},
+"fm/fm1-p2-11-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "It's only valid until six.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-11-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "At the security desk in the lobby.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-11-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'll visit them next week.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-11-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Where can I pick up my visitor's badge?",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-12-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "A demonstration of our new blender.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-12-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Ms. Ruiz has been keeping track of them.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-12-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, the samples are free.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-12-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Where are the samples for tomorrow's product demonstration?",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-13-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Right by the main entrance.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-13-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Registration closes at noon.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-13-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "It folds up easily.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-13-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Where should we set up the registration table?",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-14-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "They're about five feet tall.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-14-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "An aisle seat, please.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-14-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The new shipment hasn't come in yet.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-14-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Why are the shelves in aisle five empty?",
+"voice": "am_liam"
+},
+"fm/fm1-p2-15-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Twelve issues a year.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-15-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "He didn't say.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-15-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'll renew mine online.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-15-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Why did Mr. Delgado cancel his subscription?",
+"voice": "af_heart"
+},
+"fm/fm1-p2-16-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Has she turned in the equipment request form?",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-16-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "One with a larger screen.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-16-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "No, she hasn't met the team.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-16-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Why hasn't the new hire received her laptop yet?",
+"voice": "am_liam"
+},
+"fm/fm1-p2-17-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The fair runs for three days.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-17-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "They're printed in full color.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-17-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "At least three boxes.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-17-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "How many brochures should we bring to the trade fair?",
+"voice": "af_heart"
+},
+"fm/fm1-p2-18-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Turn left at the next corner.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-18-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Better than we'd hoped.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-18-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Tickets are fifty dollars each.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-18-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "How was the turnout at last night's fundraiser?",
+"voice": "am_liam"
+},
+"fm/fm1-p2-19-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Talk to your supervisor first.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-19-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "For about two weeks.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-19-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Last month was really busy.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-19-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "How do I request time off for next month?",
+"voice": "am_liam"
+},
+"fm/fm1-p2-20-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Did you check the style guide on the shared drive?",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-20-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The report is due on Friday.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-20-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I referred him to you.",
+"voice": "bf_alice"
+},
+"fm/fm1-p2-20-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "How should I format the references in this report?",
+"voice": "am_liam"
+},
+"fm/fm1-p2-21-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The painters are still working in there.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-21-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Let's take a short break.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-21-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, I opened the file.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-21-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Is the new break room open yet?",
+"voice": "bm_fable"
+},
+"fm/fm1-p2-22-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "He leased a car last year.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-22-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The view looks great.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-22-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'm reading it as we speak.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-22-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Did you get a chance to look over the lease agreement?",
+"voice": "af_heart"
+},
+"fm/fm1-p2-23-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Yes, but on a reduced schedule.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-23-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The holiday party was fun.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-23-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I go running every weekend.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-23-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Will the shuttle bus be running over the holiday weekend?",
+"voice": "af_heart"
+},
+"fm/fm1-p2-24-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The lab results came back.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-24-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Only when the machines are running.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-24-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "I'll get you a glass of water.",
+"voice": "am_liam"
+},
+"fm/fm1-p2-24-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Do we have to wear safety glasses in the lab?",
+"voice": "af_heart"
+},
+"fm/fm1-p2-25-0.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The campaign was a big success.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-25-1.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Next year's conference is in Chicago.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-25-2.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The board votes on it Thursday.",
+"voice": "af_heart"
+},
+"fm/fm1-p2-25-q.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Has next year's marketing budget been approved?",
+"voice": "bm_fable"
+},
 "lc/001-a.mp3": {
 "br": "32k",
 "src": "kokoro",

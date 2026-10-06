@@ -70,7 +70,29 @@ def load_entries():
         sents.append((rel, text, v))
     for rel, text, v in p1q_jobs():
         sents.append((rel, text, v))
+    for rel, text, v in fm_jobs():
+        sents.append((rel, text, v))
     return words, sents
+
+
+def fm_jobs():
+    """정규 모의고사(data/fullmock.json): Part 2 질문(-q)·보기(-0,-1,-2), Part 3·4 문장(-NN). 모두 fm/ 아래.
+    Part 2 보기 세 개는 답하는 사람 목소리 하나로 읽어 목소리로 정답이 드러나지 않게 한다."""
+    f = os.path.join(ROOT, "data", "fullmock.json")
+    if not os.path.exists(f):
+        return []
+    out = []
+    for m in json.load(open(f, encoding="utf-8"))["mocks"]:
+        for it in m["p2"]:
+            v = voice_for(it["id"])
+            out.append((f"fm/{it['id']}-q.mp3", plain(it["q"]), v))
+            for i, o in enumerate(it["o"]):
+                out.append((f"fm/{it['id']}-{i}.mp3", plain(o), OTHER[v]))
+        for st in m["p3"] + m["p4"]:
+            vo = p34_voices(st["id"])
+            for i, ln in enumerate(st["lines"], 1):
+                out.append((f"fm/{st['id']}-{i:02d}.mp3", plain(ln["en"]), vo[ln["sp"]]))
+    return out
 
 
 def p1q_jobs():
@@ -232,6 +254,12 @@ def main():
                     os.remove(os.path.join(p34_dir, f))
             for rel in [r for r in man if r.startswith("p34/") and r not in want_p34]:
                 del man[rel]
+        want_fm = {rel for rel, _, _ in sents if rel.startswith("fm/")}
+        fm_dir = os.path.join(AUDIO, "fm")
+        if want_fm and os.path.isdir(fm_dir):
+            for f in os.listdir(fm_dir):
+                if f.endswith(".mp3") and f"fm/{f}" not in want_fm:
+                    os.remove(os.path.join(fm_dir, f))
         want_p1q = {rel for rel, _, _ in sents if rel.startswith("p1q/")}
         p1q_dir = os.path.join(AUDIO, "p1q")
         if os.path.isdir(p1q_dir):

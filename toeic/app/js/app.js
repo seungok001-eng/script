@@ -131,10 +131,10 @@
     const pr = (src && src.pr) || {};
     for (const sec of ["lc", "rc"]) if (Array.isArray(pr[sec])) d.pr[sec] = pr[sec].slice(-120).map((x) => (x ? 1 : 0));
     const mk = (src && src.mock) || {};
-    for (const k of Object.keys(mk)) if (/^\d{1,2}$/.test(k) && mk[k]) { const total = num(mk[k].total, 10, 10, 990); d.mock[k] = { lc: num(mk[k].lc, 5, 5, 495), rc: num(mk[k].rc, 5, 5, 495), total, best: num(mk[k].best, 10, 10, 990), at: num(mk[k].at, 0, 0, 1e6), n: num(mk[k].n, 1, 1, 999), first: num(mk[k].first, total, 10, 990) }; }
+    for (const k of Object.keys(mk)) if (/^(\d{1,2}|f\d)$/.test(k) && mk[k]) { const total = num(mk[k].total, 10, 10, 990); d.mock[k] = { lc: num(mk[k].lc, 5, 5, 495), rc: num(mk[k].rc, 5, 5, 495), total, best: num(mk[k].best, 10, 10, 990), at: num(mk[k].at, 0, 0, 1e6), n: num(mk[k].n, 1, 1, 999), first: num(mk[k].first, total, 10, 990) }; }
     const mr = src && src.mockRun;
-    if (mr && /^\d{1,2}$/.test(String(mr.n)) && Array.isArray(mr.picks)) {
-      d.mockRun = { n: +mr.n, i: num(mr.i, 0, 0, 500), picks: mr.picks.slice(0, 500).map((a) => (Array.isArray(a) ? a.slice(0, 10).map((x) => (Number.isInteger(x) && x >= 0 && x <= 3 ? x : null)) : [])), rcUsed: mr.rcUsed == null ? null : num(mr.rcUsed, 0, 0, 1e8), at: num(mr.at, 0, 0, 1e6) };
+    if (mr && /^(\d{1,2}|f\d)$/.test(String(mr.n)) && Array.isArray(mr.picks)) {
+      d.mockRun = { n: /^f/.test(String(mr.n)) ? String(mr.n) : +mr.n, i: num(mr.i, 0, 0, 500), picks: mr.picks.slice(0, 500).map((a) => (Array.isArray(a) ? a.slice(0, 10).map((x) => (Number.isInteger(x) && x >= 0 && x <= 3 ? x : null)) : [])), rcUsed: mr.rcUsed == null ? null : num(mr.rcUsed, 0, 0, 1e8), at: num(mr.at, 0, 0, 1e6) };
     }
     const gd = src && src.guide;
     if (gd && typeof gd === "object") {
@@ -789,7 +789,7 @@
   // 오늘의 실전 과제 (시험일·단어 진도·모의고사 기록 기준)
   function practiceTaskToday(P, sum, t) {
     const mocks = (PR && PR.mocks ? PR.mocks.length : 4);
-    const taken = Object.keys(S.mock).length;
+    const taken = Object.keys(S.mock).filter((k) => /^\d+$/.test(k)).length;
     const last = Object.values(S.mock).reduce((m, r) => Math.max(m, r.at || 0), 0) || null;
     const exam = C.parseYmd(S.profile.examDate);
     return C.practiceTask({ dday: exam != null ? exam - t : null, seenRatio: P.length ? sum.seen / P.length : 0, dayIndex: t - (S.profile.start || t), mocksLeft: mocks - taken, lastMockDay: last, today: t });
@@ -1775,7 +1775,7 @@
       tip: () => LC_TIPS[ui.lcPart] || LC_TIPS[2] },
   };
   // LC 음성: 대화는 질문(lc/NNN-q) → 쉼 → 대답(lc/NNN-a), 한 사람의 말은 lc/NNN.mp3. Part 1 은 p.au 가 파일 경로
-  const lcRel = (p, tail) => (p.au ? `lc/${p.id.slice(3).padStart(3, "0")}${tail ? "-" + tail : ""}.mp3` : null);
+  const lcRel = (p, tail) => (!p.au ? null : p.fm ? `fm/${p.id}-${tail}.mp3` : `lc/${p.id.slice(3).padStart(3, "0")}${tail ? "-" + tail : ""}.mp3`);
   let exprSeq = 0;
   async function sayExpr(p, btn) {
     const my = ++exprSeq;
@@ -2078,7 +2078,7 @@
   }
 
   // ── Part 3·4: 문장 단위 음성 재생 (현재 문장 표시, 문장 눌러 다시 듣기) ──
-  const lineRel = (set, i) => (!set.au ? null : set.part === 1 ? `p1q/${set.id}-${i}.mp3` : `p34/${set.id}-${String(i + 1).padStart(2, "0")}.mp3`);
+  const lineRel = (set, i) => (!set.au ? null : set.part === 1 ? `p1q/${set.id}-${i}.mp3` : `${set.fm ? "fm" : "p34"}/${set.id}-${String(i + 1).padStart(2, "0")}.mp3`);
   let lineSeq = 0;
   let linePlaying = false;
   const playBtn = (on) => { const b = $app.querySelector("[data-play34]"); if (b) { b.classList.toggle("playing", on); b.innerHTML = ico(on ? "pause" : "play"); } };
@@ -2247,7 +2247,7 @@
         ${pred ? `<div class="big">${pred.total}<small>점</small></div><div class="meta"><div><b>${pred.lc}</b>LC</div><div><b>${pred.rc}</b>RC</div><div><b>${pred.nLc + pred.nRc}</b>최근 문제</div></div>`
           : S.diag ? `<div class="big">${S.diag.total}<small>점</small></div><div class="meta"><div><b>${S.diag.lc}</b>LC</div><div><b>${S.diag.rc}</b>RC</div><div><b>진단</b>20문제 기준</div></div><div class="small" style="opacity:.85;margin-top:8px">LC·RC 각 30문제를 풀면 더 정확한 예상 점수로 바뀌어요 (지금 ${Math.min(nLc, 30)}/30 · ${Math.min(nRc, 30)}/30)</div>`
           : `<div class="big" style="font-size:22px">LC·RC 각 30문제를 풀면<br>예상 점수를 알려 드려요</div><div class="meta"><div><b>${Math.min(nLc, 30)}/30</b>LC</div><div><b>${Math.min(nRc, 30)}/30</b>RC</div></div>`}
-        <a class="btn block" href="#/mock" style="margin-top:14px">${ico("clock")}하프 모의고사 (${(PR.mocks || []).length}회)</a>
+        <a class="btn block" href="#/mock" style="margin-top:14px">${ico("clock")}모의고사 (${(PR.full || []).length ? `정규 ${PR.full.length}회 · ` : ""}하프 ${(PR.mocks || []).length}회)</a>
       </section>
       <div class="section-h"><h2>LC 듣기</h2></div>
       <div class="grid2">
@@ -2332,7 +2332,8 @@
     const solvedN = all.filter((s) => S.prac[s.id]).length;
     const body = `${topBar(SET_TITLE[part], { back: true, sub: part === "p1" ? `${all.length}문제 · 푼 문제 ${solvedN}` : `${all.length}${part === "p6" ? "지문" : "세트"} · 푼 세트 ${solvedN}` })}
       <div class="tip-box" style="margin-bottom:12px">${desc}</div>
-      <button class="btn block" data-run style="margin-bottom:12px" ${list.length ? "" : "disabled"}>${ico("play")}${part === "p1" ? "6문제" : part === "p7" ? "2세트" : "3세트"} 이어 풀기</button>
+      <button class="btn block" data-run style="margin-bottom:${part === "p6" || part === "p7" ? 8 : 12}px" ${list.length ? "" : "disabled"}>${ico("play")}${part === "p1" ? "6문제" : part === "p7" ? "2세트" : "3세트"} 이어 풀기</button>
+      ${part === "p6" || part === "p7" ? `<button class="btn ghost block" data-run-timed style="margin-bottom:12px" ${list.length ? "" : "disabled"}>${ico("clock")}실전 시간으로 풀기 · ${part === "p6" ? "지문당 2분" : "문항당 1분"}${locked() ? ` ${ico("lock")}` : ""}</button>` : ""}
       <div class="seg" style="margin-bottom:10px">${[[0, "전체"], [1, "쉬움"], [2, "보통"], [3, "어려움"]].map(([v, t]) => `<button class="${f.lv === v ? "on" : ""}" data-lv="${v}">${t}</button>`).join("")}</div>
       <div class="chips scroll" style="margin-bottom:12px">${[["all", "전체"], ["new", "안 푼 것"], ["wrong", "틀린 것"]].concat(cats.map((c) => [c, c])).map(([v, t]) => `<button class="chip ${f.cat === v ? "on" : ""}" data-cat="${esc(v)}">${esc(t)}</button>`).join("")}</div>
       ${list.length ? `<div class="wlist">${list.map(row).join("")}</div>` : `<div class="empty">${ico("check")}<b>조건에 맞는 세트가 없어요</b></div>`}`;
@@ -2343,17 +2344,23 @@
     $app.querySelectorAll("[data-set]").forEach((b) => b.addEventListener("click", () => startSets(part, [PR._by.get(b.dataset.set)], SET_TITLE[part])));
     const run = $app.querySelector("[data-run]");
     if (run) run.addEventListener("click", () => startSets(part, pickSets(list, part === "p1" ? 6 : part === "p7" ? 2 : 3), SET_TITLE[part]));
+    const tr = $app.querySelector("[data-run-timed]");
+    if (tr) tr.addEventListener("click", () => startSets(part, pickSets(list, part === "p7" ? 3 : 4), `${SET_TITLE[part]} · 실전 시간`, { timed: true }));
   }
 
   // ═════════════ 세트 풀기 (연습 모드: 풀기 → 채점 → 해설·스크립트) ═════════════
-  function startSets(part, sets, title) {
+  // 실전 시간: Part 6 지문당 2분 · Part 7 문항당 1분 (실제 시험 RC 75분 배분 기준)
+  const SET_SEC = (part, set) => (part === "p6" ? 120 : part === "p7" ? set.qs.length * 60 : 0);
+  function startSets(part, sets, title, opt) {
     if (!sets.length) return toast("풀 세트가 없어요");
+    const timed = !!(opt && opt.timed);
+    if (timed && locked()) return paywall("timed");
     // 무료: 파트마다 처음 1세트 (이미 푼 세트를 다시 푸는 건 괜찮다)
     if (locked() && sets.some((x) => !S.prac[x.id])) {
       if (practicePool(part).some((x) => S.prac[x.id])) return paywall("set");
       sets = sets.filter((x) => !S.prac[x.id]).slice(0, 1);
     }
-    session = { kind: "pset", part, title, queue: sets, i: 0, st: { picks: [], graded: false, evQ: null }, results: [], from: location.hash };
+    session = { kind: "pset", part, title, queue: sets, i: 0, st: { picks: [], graded: false, evQ: null }, results: [], from: location.hash, timed };
     enterStudy();
   }
   function vPset() {
@@ -2365,8 +2372,12 @@
     const nQ = s.queue.reduce((n, x) => n + x.qs.length, 0);
     const done = s.queue.slice(0, s.i).reduce((n, x) => n + x.qs.length, 0);
     const answeredNow = st.graded ? set.qs.length : st.picks.filter((x) => x != null).length;
+    const limit = s.timed ? SET_SEC(s.part, set) : 0;
+    if (limit && !st.graded && !st.t0) st.t0 = Date.now();
+    const mmss = (sec) => `${Math.floor(sec / 60)}:${String(Math.max(0, sec) % 60).padStart(2, "0")}`;
+    const timerHtml = limit ? `<div class="qtimer ${st.graded ? "off" : ""}"><i data-tbar style="width:${st.graded ? 0 : 100}%"></i><span data-tleft>${st.graded ? `제한 ${mmss(limit)} 중 ${mmss(st.used || 0)} 사용${st.late ? " · 시간 초과" : ""}` : mmss(limit)}</span></div>` : "";
     const jump = (s.part === "p6" || s.part === "p7") ? `<div class="jumpbar"><button data-jumpto=".doc">${ico("book")}지문</button><button data-jumpto=".pqs">${ico("list")}문제</button></div>` : "";
-    $app.innerHTML = `<div class="study ${s.part === "p7" ? "wide-study" : ""}">${studyTop(Math.max(0, done + answeredNow - 1), nQ)}${jump}
+    $app.innerHTML = `<div class="study ${s.part === "p7" ? "wide-study" : ""}">${studyTop(Math.max(0, done + answeredNow - 1), nQ)}${timerHtml}${jump}
       <div class="small muted" style="margin:0 2px 8px;font-weight:700">${esc(s.title)} · ${s.i + 1}/${s.queue.length}${s.part === "p1" ? "문제" : "세트"}</div>
       ${setHtml(s.part, set, st, mode)}
       <div class="study-foot">${st.graded ? `<button class="btn block" data-next>${s.i + 1 >= s.queue.length ? "결과 보기" : s.part === "p1" ? "다음 문제" : "다음 세트"}</button>` : `<button class="btn block" data-grade ${all ? "" : "disabled"}>${all ? "채점하기" : `${set.qs.length - st.picks.filter((x) => x != null).length}문제 남음`}</button>`}</div></div>`;
@@ -2385,8 +2396,11 @@
       if (g) { g.disabled = n < set.qs.length; g.textContent = n < set.qs.length ? `${set.qs.length - n}문제 남음` : "채점하기"; }
     });
     const gb = $app.querySelector("[data-grade]");
+    clearInterval(s.tick);
     if (gb) gb.addEventListener("click", () => {
       stopLines();
+      clearInterval(s.tick);
+      if (limit) st.used = Math.round((Date.now() - st.t0) / 1000);
       st.graded = true;
       let ok = 0;
       set.qs.forEach((q, j) => {
@@ -2427,6 +2441,18 @@
       }
       if ((e.key === " " || e.key === "p") && (s.part === "p1" || s.part === "p3" || s.part === "p4")) { e.preventDefault(); const pb = $app.querySelector("[data-play34]"); if (pb) pb.click(); }
     };
+    if (limit && !st.graded && gb) {
+      const tick = () => {
+        if (session !== s || s.queue[s.i] !== set || st.graded) return clearInterval(s.tick);
+        const left = limit - (Date.now() - st.t0) / 1000;
+        const bar = $app.querySelector("[data-tbar]"), tl = $app.querySelector("[data-tleft]");
+        if (bar) { bar.style.width = `${Math.max(0, (left / limit) * 100)}%`; bar.classList.toggle("warn", left <= 30); }
+        if (tl) tl.textContent = mmss(Math.ceil(left));
+        if (left <= 0) { clearInterval(s.tick); st.late = true; toast("시간이 끝났어요. 채점할게요"); gb.disabled = false; gb.click(); }
+      };
+      s.tick = setInterval(tick, 500);
+      tick();
+    }
     // Part 3·4: 처음 열면 문제를 읽을 시간을 조금 준 뒤 자동 재생
     if (!st.graded && (s.part === "p1" || s.part === "p3" || s.part === "p4") && !st.autoplayed) {
       st.autoplayed = true;
@@ -2452,12 +2478,19 @@
     const prog = (t) => { const qs = t.qs.filter((q) => !q.mock); const done = qs.filter((q) => S.gq[q.id]); return { n: qs.length, done: done.length, ok: done.filter((q) => !S.gq[q.id].wrong).length }; };
     const body = `${topBar("Part 5 문법", { back: true, sub: `${PR.grammar.length}개 주제 · 핵심 강의 + 실전 문제` })}
       <button class="btn block" data-mix style="margin-bottom:6px">${ico("shuffle")}문법 랜덤 20제</button>
+      <button class="btn ghost block" data-timed style="margin-bottom:6px">${ico("clock")}시간 압박 20제 · 문항당 20초${locked() ? ` ${ico("lock")}` : ""}</button>
       <button class="btn ghost block" data-wrong style="margin-bottom:14px">${ico("repeat")}틀린 문법 문제 다시 (${Object.keys(S.gq).filter((k) => S.gq[k].wrong && PR._g.has(k)).length})</button>
       ${cats.map((c) => `<div class="section-h"><h2>${esc(c)}</h2></div><div class="wlist">${PR.grammar.filter((t) => t.cat === c).map((t) => { const p = prog(t); return `<a class="witem" href="#/grammar/${t.id}"><div class="wbody"><div class="ww" style="font-size:16px">${esc(t.title)}</div><div class="wm">${p.done ? `${p.done}/${p.n}문제 · 정답 ${p.ok}` : `${p.n}문제`}</div></div>${p.done === p.n && p.n ? `<span class="badge ok">완료</span>` : ""}${ico("right")}</a>`; }).join("")}</div>`).join("")}`;
     shell("practice", body);
     $app.querySelector("[data-mix]").addEventListener("click", () => {
       const qs = PR.grammar.flatMap((t) => t.qs.filter((q) => !q.mock));
       startGrammarQuiz(C.lcPick(qs, Object.fromEntries(Object.entries(S.gq)), 20), "문법 랜덤 20제");
+    });
+    // 시간 압박 훈련: 실제 시험의 Part 5 속도(문항당 약 20초)
+    $app.querySelector("[data-timed]").addEventListener("click", () => {
+      if (locked()) return paywall("timed");
+      const qs = PR.grammar.flatMap((t) => t.qs.filter((q) => !q.mock));
+      startGrammarQuiz(C.shuffle(qs).slice(0, 20), "Part 5 시간 압박 20제", { timed: 20 });
     });
     $app.querySelector("[data-wrong]").addEventListener("click", () => {
       const qs = PR.grammar.flatMap((t) => t.qs.filter((q) => S.gq[q.id] && S.gq[q.id].wrong));
@@ -2482,7 +2515,7 @@
     shell("practice", body);
     $app.querySelector("[data-start]").addEventListener("click", () => startGrammarQuiz(C.shuffle(qs), t.title));
   }
-  function startGrammarQuiz(qs, title) {
+  function startGrammarQuiz(qs, title, opt) {
     if (locked()) {
       const ft = freeGrammarTopic() || (qs[0] && PR._g.get(qs[0].id) && PR._g.get(qs[0].id).t.id);
       const mine = qs.filter((q) => PR._g.get(q.id) && PR._g.get(q.id).t.id === ft);
@@ -2490,7 +2523,7 @@
       qs = mine;
     }
     if (!qs.length) return toast("문제가 없어요");
-    session = { kind: "gq", title, qs, i: 0, answered: null, results: [], from: location.hash };
+    session = { kind: "gq", title, qs, i: 0, answered: null, results: [], from: location.hash, timed: (opt && opt.timed) || 0 };
     enterStudy();
   }
   function vGq() {
@@ -2503,16 +2536,19 @@
       if (ans) cls = i === q.a ? "right" : i === ans.pick ? "wrong" : "dim";
       return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${LETTERS[i]}</span><span class="en">${esc(o)}</span></button>`;
     }).join("");
-    $app.innerHTML = `<div class="study">${studyTop(s.i, s.qs.length)}
+    const timer = s.timed ? `<div class="qtimer ${ans ? "off" : ""}"><i data-tbar style="width:${ans ? 0 : 100}%"></i><span data-tleft>${ans ? (ans.late ? "시간 초과" : `${ans.sec}초`) : `${s.timed}초`}</span></div>` : "";
+    $app.innerHTML = `<div class="study">${studyTop(s.i, s.qs.length)}${timer}
       <div class="quiz-q"><div class="qk">Part 5 · ${esc(t.title)}${q.lv ? ` · ${LV_LABEL[q.lv]}` : ""}</div><div class="qs en">${esc(q.s).replace("-------", '<b style="color:var(--brand);letter-spacing:.05em">_______</b>')}</div></div>
       <div class="opts">${opts}</div>
-      ${ans ? `<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? "정답이에요!" : `틀렸어요 · 정답 ${LETTERS[q.a]}`}</b>${esc(q.exp)}<div style="margin-top:8px"><a href="#/grammar/${t.id}" class="small" data-lesson>${ico("book")} '${esc(t.title)}' 강의 보기</a></div></div>` : ""}
+      ${ans ? `<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? "정답이에요!" : ans.late ? `시간 초과 · 정답 ${LETTERS[q.a]}` : `틀렸어요 · 정답 ${LETTERS[q.a]}`}</b>${esc(q.exp)}<div style="margin-top:8px"><a href="#/grammar/${t.id}" class="small" data-lesson>${ico("book")} '${esc(t.title)}' 강의 보기</a></div></div>` : ""}
       <div class="study-foot">${ans ? `<button class="btn block" data-next>${s.i + 1 >= s.qs.length ? "결과 보기" : "다음 문제"}</button>` : ""}<div class="kbd-hint"><kbd>1</kbd>~<kbd>4</kbd> 선택 · <kbd>Enter</kbd> 다음</div></div></div>`;
     bindExit();
+    clearInterval(s.tick);
     const pick = (i) => {
       if (s.answered) return;
+      clearInterval(s.tick);
       const ok = i === q.a;
-      s.answered = { pick: i, ok };
+      s.answered = { pick: i, ok, late: i < 0, sec: s.qStart ? Math.min(s.timed || 999, Math.round((Date.now() - s.qStart) / 1000)) : 0 };
       s.results.push({ q, ok });
       S.gq[q.id] = C.lcRecord(S.gq[q.id], ok, today());
       recordAnswer("rc", `p5:${t.title}`, ok);
@@ -2520,7 +2556,20 @@
       save();
       vGq();
     };
-    const next = () => { if (!s.answered) return; s.i += 1; s.answered = null; if (s.i >= s.qs.length) return finishSession(); vGq(); };
+    const next = () => { if (!s.answered) return; s.i += 1; s.answered = null; s.qStart = 0; if (s.i >= s.qs.length) return finishSession(); vGq(); };
+    if (s.timed && !ans) {
+      if (!s.qStart) s.qStart = Date.now();
+      const tick = () => {
+        if (session !== s || s.qs[s.i] !== q || s.answered) return clearInterval(s.tick);
+        const left = s.timed - (Date.now() - s.qStart) / 1000;
+        const bar = $app.querySelector("[data-tbar]"), tl = $app.querySelector("[data-tleft]");
+        if (bar) { bar.style.width = `${Math.max(0, (left / s.timed) * 100)}%`; bar.classList.toggle("warn", left <= 5); }
+        if (tl) tl.textContent = `${Math.max(0, Math.ceil(left))}초`;
+        if (left <= 0) { toast("시간 초과! 정답을 확인하세요"); pick(-1); }
+      };
+      s.tick = setInterval(tick, 200);
+      tick();
+    }
     $app.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", () => pick(+b.dataset.pick)));
     const nx = $app.querySelector("[data-next]");
     if (nx) nx.addEventListener("click", next);
@@ -2624,7 +2673,24 @@
   // ═════════════ 하프 모의고사 ═════════════
   // LC(Part 2·3·4) → RC(Part 5·6·7). 풀 때는 해설 없이, 끝나면 예상 점수·파트별 분석·전체 해설
   const RC_MIN = 37;
+  // 정규 모의고사: 문항이 PR.full 안에 통째로 있다 (연습 문제와 겹치지 않음)
+  function fullPages(F) {
+    const pages = [];
+    F.p1.forEach((id) => pages.push({ part: "p1", set: PR._by.get(id) }));
+    F.p2.forEach((it) => {
+      const item = { id: it.id, au: it.au, fm: 1 };
+      pages.push({ part: "p2", fm: true, item, q: { type: "resp", item, prompt: it.q, promptKo: it.qko, options: it.o.map((t, i) => ({ t, k: it.ok[i], f: String(i) })), answer: it.a, exp: it.exp, ptype: it.type } });
+    });
+    F.p3.forEach((set) => pages.push({ part: "p3", set }));
+    F.p4.forEach((set) => pages.push({ part: "p4", set }));
+    F.p5.forEach((q) => pages.push({ part: "p5", q: { s: q.s, o: q.o, a: q.a, exp: q.exp, type: q.type } }));
+    F.p6.forEach((set) => pages.push({ part: "p6", set }));
+    F.p7.forEach((set) => pages.push({ part: "p7", set }));
+    return pages.filter((p) => !("set" in p) || p.set);
+  }
+  const fullMocks = () => (PR.full || []).map((F, i) => ({ n: `f${i + 1}`, full: F, title: `정규 모의고사 ${i + 1}회`, rcMin: 75 }));
   function mockPages(m) {
+    if (m.full) return fullPages(m.full);
     const pages = [];
     (m.p1 || []).forEach((id) => pages.push({ part: "p1", set: PR._by.get(id) }));
     m.p2.forEach((id) => { const it = D.lcAll.find((p) => p.id === id); if (it) pages.push({ part: "p2", item: it, q: C.makeResponse(it, C.rng(parseInt(id.slice(3), 10) * 7919 + m.n * 104729)) }); });
@@ -2643,33 +2709,41 @@
   const pageQs = (p) => (p.set ? p.set.qs : [p.q]);
   function vMock(r) {
     if (!needPractice(r)) return;
-    const mocks = PR.mocks || [];
+    const halves = PR.mocks || [];
+    const fulls = fullMocks();
+    const all = halves.concat(fulls);
+    const titleOf = (m) => m.title || `하프 모의고사 ${m.n}회`;
     const card = (m) => {
       const pages = mockPages(m);
       const nLc = pages.filter((p) => secOf(p.part) === "lc").reduce((n, p) => n + pageQs(p).length, 0);
       const nRc = pages.filter((p) => secOf(p.part) === "rc").reduce((n, p) => n + pageQs(p).length, 0);
+      const rcMin = m.rcMin || RC_MIN;
       const rec = S.mock[m.n];
       const run = S.mockRun && S.mockRun.n === m.n ? S.mockRun : null;
-      const runInfo = run ? `<div class="tip-box" style="margin-top:10px;font-size:14px">풀던 모의고사가 있어요 · ${run.picks.flat().filter((x) => x != null).length}문제 답함${run.rcUsed != null ? ` · RC 남은 시간 ${Math.max(0, RC_MIN - Math.floor(run.rcUsed / 60000))}분` : ""}</div><div class="row" style="gap:8px;margin-top:10px"><button class="btn block" data-resume="${m.n}" style="flex:2">이어서 풀기</button><button class="btn ghost" data-mock="${m.n}" style="flex:1">처음부터</button></div>` : "";
-      if (run) return `<div class="card" style="margin-top:10px"><div class="row"><div class="spacer"><b style="font-size:17px">하프 모의고사 ${m.n}회</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${RC_MIN}분)</div></div></div>${runInfo}</div>`;
-      return `<div class="card" style="margin-top:10px"><div class="row"><div class="spacer"><b style="font-size:17px">하프 모의고사 ${m.n}회</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${RC_MIN}분)</div></div>${rec ? (rec.n > 1 ? `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.first}</b><div class="small muted">첫 응시 · 재응시 ${rec.total}점 (${rec.n}회째)</div></div>` : `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.total}</b><div class="small muted">LC ${rec.lc} · RC ${rec.rc}</div></div>`) : ""}</div>
-        ${locked() && m.n > 1 ? `<a class="btn ghost block" style="margin-top:10px" href="#/premium?from=mock">${ico("lock")}전체 열기로 응시하기</a>` : `<button class="btn ${rec ? "ghost" : ""} block" style="margin-top:10px" data-mock="${m.n}">${rec ? "다시 응시하기" : "응시하기"}</button>`}</div>`;
+      const lockedHere = locked() && (m.full || m.n > 1);
+      const head = `<div class="row"><div class="spacer"><b style="font-size:17px">${titleOf(m)}</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${rcMin}분)</div></div>${!run && rec ? (rec.n > 1 ? `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.first}</b><div class="small muted">첫 응시 · 재응시 ${rec.total}점 (${rec.n}회째)</div></div>` : `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.total}</b><div class="small muted">LC ${rec.lc} · RC ${rec.rc}</div></div>`) : ""}</div>`;
+      if (run) return `<div class="card" style="margin-top:10px">${head}<div class="tip-box" style="margin-top:10px;font-size:14px">풀던 모의고사가 있어요 · ${run.picks.flat().filter((x) => x != null).length}문제 답함${run.rcUsed != null ? ` · RC 남은 시간 ${Math.max(0, rcMin - Math.floor(run.rcUsed / 60000))}분` : ""}</div><div class="row" style="gap:8px;margin-top:10px"><button class="btn block" data-resume="${m.n}" style="flex:2">이어서 풀기</button><button class="btn ghost" data-mock="${m.n}" style="flex:1">처음부터</button></div></div>`;
+      return `<div class="card" style="margin-top:10px">${head}
+        ${lockedHere ? `<a class="btn ghost block" style="margin-top:10px" href="#/premium?from=${m.full ? "full" : "mock"}">${ico("lock")}전체 열기로 응시하기</a>` : `<button class="btn ${rec ? "ghost" : ""} block" style="margin-top:10px" data-mock="${m.n}">${rec ? "다시 응시하기" : "응시하기"}</button>`}</div>`;
     };
-    const body = `${topBar("하프 모의고사", { back: true, sub: `실제 시험의 절반 분량 · Part ${(PR.p1 || []).length >= 12 ? 1 : 2}~7` })}
-      <div class="tip-box">실제 시험처럼 <b>해설 없이</b> 끝까지 풀고, 마지막에 <b>LC·RC 예상 점수</b>와 파트별 정답률, 전체 해설을 보여 드려요. LC 음성은 한 번만 재생돼요(실전 모드). 점수는 <b>첫 응시</b>가 기준이고, 다시 풀면 '재응시'로 따로 표시돼요.${(PR.p1 || []).length >= 12 ? "" : " Part 1(사진)은 아직 포함되지 않아요."}</div>
-      ${mocks.map(card).join("")}`;
+    const body = `${topBar("모의고사", { back: true, sub: `${fulls.length ? `정규 ${fulls.length}회 · ` : ""}하프 ${halves.length}회 · 예상 점수` })}
+      <div class="tip-box">실제 시험처럼 <b>해설 없이</b> 끝까지 풀고, 마지막에 <b>LC·RC 예상 점수</b>와 파트별 정답률, 전체 해설을 보여 드려요. LC 음성은 한 번만 재생돼요(실전 모드). 점수는 <b>첫 응시</b>가 기준이고, 다시 풀면 '재응시'로 따로 표시돼요. 모의고사 문제는 연습 문제에 나오지 않아요.</div>
+      ${fulls.length ? `<div class="section-h" style="margin-top:18px"><h2>정규 모의고사</h2><span class="small muted">실제 시험과 같은 200문제 · 약 2시간</span></div>${fulls.map(card).join("")}` : ""}
+      <div class="section-h" style="margin-top:18px"><h2>하프 모의고사</h2><span class="small muted">절반 분량 · 약 1시간</span></div>
+      ${halves.map(card).join("")}`;
     shell("practice", body);
-    $app.querySelectorAll("[data-resume]").forEach((b) => b.addEventListener("click", () => startMock(mocks.find((x) => x.n === +b.dataset.resume), true)));
+    const find = (k) => all.find((x) => String(x.n) === k);
+    $app.querySelectorAll("[data-resume]").forEach((b) => b.addEventListener("click", () => startMock(find(b.dataset.resume), true)));
     $app.querySelectorAll("[data-mock]").forEach((b) => b.addEventListener("click", () => {
-      const m = mocks.find((x) => x.n === +b.dataset.mock);
-      modal(`<h3>하프 모의고사 ${m.n}회</h3><p class="muted">LC → RC 순서로 진행하고, 해설은 끝난 뒤에 보여 드려요. 중간에 나가도 답안이 저장돼서 이어서 풀 수 있어요${S.mockRun && S.mockRun.n === m.n ? " (처음부터 시작하면 풀던 답안은 지워져요)" : ""}. 조용한 곳에서 이어폰을 끼고 시작하세요.</p>${S.mock[m.n] ? `<div class="tip-box" style="font-size:14px">이미 푼 모의고사예요 (첫 응시 ${S.mock[m.n].first || S.mock[m.n].total}점). 다시 풀면 <b>재응시</b>로 표시되고 예상 점수에는 반영되지 않아요.</div>` : ""}
+      const m = find(b.dataset.mock);
+      modal(`<h3>${titleOf(m)}</h3><p class="muted">LC → RC 순서로 진행하고, 해설은 끝난 뒤에 보여 드려요.${m.full ? " LC 약 45분 · RC 75분으로 실제 시험과 같아요. 2시간을 비워 두고 시작하세요." : ""} 중간에 나가도 답안이 저장돼서 이어서 풀 수 있어요${S.mockRun && S.mockRun.n === m.n ? " (처음부터 시작하면 풀던 답안은 지워져요)" : ""}. 조용한 곳에서 이어폰을 끼고 시작하세요.</p>${S.mock[m.n] ? `<div class="tip-box" style="font-size:14px">이미 푼 모의고사예요 (첫 응시 ${S.mock[m.n].first || S.mock[m.n].total}점). 다시 풀면 <b>재응시</b>로 표시되고 예상 점수에는 반영되지 않아요.</div>` : ""}
         <div class="row" style="margin-top:14px;gap:8px"><button class="btn ghost" data-close style="flex:1">취소</button><button class="btn" data-go-mock style="flex:1">시작</button></div>`, (box) => {
         box.querySelector("[data-go-mock]").addEventListener("click", () => { closeModal(); delete S.mockRun; startMock(m); });
       });
     }));
   }
   function startMock(m, resume) {
-    if (locked() && !m.diag && m.n !== 1) return paywall("mock");
+    if (locked() && !m.diag && (m.full || m.n !== 1)) return paywall(m.full ? "full" : "mock");
     const pages = mockPages(m);
     const r = resume && S.mockRun && S.mockRun.n === m.n ? S.mockRun : null;
     const picks = pages.map((p, pi) => pageQs(p).map((_, qi) => (r && r.picks[pi] && Number.isInteger(r.picks[pi][qi]) ? r.picks[pi][qi] : null)));
@@ -2890,7 +2964,7 @@
     const st = { picks: s.picks[pi], graded: true, evQ: s.evQ, base: s.pages.slice(0, pi).reduce((n, x) => n + pageQs(x).length, 0) + 1 };
     let inner;
     if (p.part === "p2") {
-      const q = { q: p.q.prompt, qko: p.q.promptKo, o: p.q.options.map((o) => o.t), a: p.q.answer, exp: `${p.item.key} = ${p.item.keyKo}${p.item.tip ? ` · ${p.item.tip}` : ""}`, type: "응답" };
+      const q = { q: p.q.prompt, qko: p.q.promptKo, o: p.q.options.map((o) => o.t), a: p.q.answer, exp: p.fm ? p.q.exp : `${p.item.key} = ${p.item.keyKo}${p.item.tip ? ` · ${p.item.tip}` : ""}`, type: p.fm ? p.q.ptype : "응답" };
       inner = qBlock(q, 0, st.picks[0], "review");
     } else if (p.part === "p5") inner = qBlock(Object.assign({}, p.q, { q: p.q.s }), 0, st.picks[0], "review");
     else inner = setHtml(p.part, p.set, st, "review");
@@ -2901,7 +2975,7 @@
     if (p.set) bindSetCommon(p.part, p.set, st, rerender);
     if (p.part === "p2") $app.querySelector(".pq-h").insertAdjacentHTML("beforeend", ` <button class="play sm" data-p2say>${ico("vol")}</button>`);
     const ps = $app.querySelector("[data-p2say]");
-    if (ps) ps.addEventListener("click", () => sayExpr(p.item, ps));
+    if (ps) ps.addEventListener("click", () => (p.fm ? playLcq(p.q, null, () => session === s && s.reviewing === pi) : sayExpr(p.item, ps)));
     const goR = (i) => { stopLines(); s.evQ = null; if (i >= s.pages.length || i < 0) { s.reviewing = null; return vResult(); } s.reviewing = i; vMockReview(); window.scrollTo(0, 0); };
     $app.querySelector("[data-rprev]").addEventListener("click", () => { const i = mockReviewNext(s, pi, -1); if (i >= 0) goR(i); });
     $app.querySelector("[data-rnext]").addEventListener("click", () => goR(mockReviewNext(s, pi, 1)));

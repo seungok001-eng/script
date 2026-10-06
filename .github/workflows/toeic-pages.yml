@@ -1,0 +1,41 @@
+# 토익핏 — 개인정보 처리방침 웹 페이지 (GitHub Pages)
+# 처음 한 번: 저장소 Settings → Pages → Build and deployment → Source 를 "GitHub Actions" 로.
+# 주소: https://<계정>.github.io/<저장소>/privacy.html  (Play Console '개인정보처리방침' 칸에 넣는다)
+name: toeic-pages
+
+on:
+  push:
+    paths:
+      - "toeic/app/privacy.html"
+      - "toeic/site/**"
+      - ".github/workflows/toeic-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: toeic-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: 페이지 모으기
+        run: |
+          mkdir -p _site
+          cp toeic/site/* _site/
+          cp toeic/app/privacy.html _site/privacy.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

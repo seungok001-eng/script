@@ -132,6 +132,33 @@ ok(m2.n === 2 && m2.first === mock.total, "retake keeps first score " + JSON.str
 const prAfter = await p.evaluate(() => (window.__toeicfit.state.pr.lc || []).length + (window.__toeicfit.state.pr.rc || []).length);
 ok(prAfter === prBefore, `retake not counted in predicted score ${prBefore} → ${prAfter}`);
 await p.goto(base + "#/home"); await p.waitForTimeout(200);
+// 시간 압박 훈련: Part 5 20초 타이머 · Part 7 실전 시간
+await p.goto(base + "#/grammar"); await p.waitForTimeout(300);
+await p.click("[data-timed]"); await p.waitForTimeout(300);
+ok(await p.$(".qtimer [data-tleft]"), "Part 5 timed quiz shows timer");
+await p.click('[data-pick="0"]'); await p.waitForTimeout(150);
+ok(await p.$(".qtimer.off"), "timer stops after answering");
+await p.goto(base + "#/sets/p7"); await p.waitForTimeout(300);
+await p.click("[data-run-timed]"); await p.waitForTimeout(300);
+ok(/\d:\d\d/.test(await p.textContent(".qtimer")), "Part 7 timed set shows mm:ss");
+await p.goto(base + "#/home"); await p.waitForTimeout(200);
+// 정규 모의고사 1회 (200문제): 끝까지 넘겨 제출 → 점수 저장(f1) · 해설에 Part 2 해설
+if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
+  await p.goto(base + "#/mock"); await p.waitForTimeout(300);
+  ok((await p.textContent(".page")).includes("정규 모의고사 1회"), "full mock listed");
+  await p.click('[data-mock="f1"]'); await p.waitForTimeout(150); await p.click("[data-go-mock]"); await p.waitForTimeout(300);
+  ok((await p.textContent(".study-foot")).length > 0, "full mock started");
+  for (let k = 0; k < 400 && !(await p.$(".result-hero")); k++) {
+    const conf = await p.$('#modal [data-r="1"]'); if (conf) { await conf.click(); await p.waitForTimeout(150); continue; }
+    await p.click("[data-next]"); await p.waitForTimeout(15);
+  }
+  const f1 = await p.evaluate(() => window.__toeicfit.state.mock.f1);
+  ok(f1 && f1.total >= 10, "full mock scored " + JSON.stringify(f1));
+  ok((await p.textContent(".result-hero")).includes("예상 점수"), "full mock result");
+  await p.click("[data-mrev]"); await p.waitForTimeout(200);
+  ok((await p.textContent(".feedback")).length > 20, "full mock review explanation");
+  await p.goto(base + "#/home"); await p.waitForTimeout(200);
+}
 // 5-3) 유료화(결제 화면 강제 켜기): 첫 실력 진단 → 결과 + 결제 제안 · Day 4 잠김 · 파트별 2번째 세트 잠김
 {
   const c2 = await b.newContext({ viewport: { width: 390, height: 844 } });

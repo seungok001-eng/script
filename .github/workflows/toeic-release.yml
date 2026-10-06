@@ -1,0 +1,97 @@
+# 토익핏 — Google Play 출시용 서명된 AAB 빌드 (수동 실행)
+# Actions → toeic-release-aab → Run workflow → 버전 이름(예: 1.0.1) 입력.
+# 필요한 저장소 비밀값(Settings → Secrets and variables → Actions):
+#   TOEICFIT_KEYSTORE_BASE64   업로드 키(.jks)를 base64 로 바꾼 글자
+#   TOEICFIT_KEYSTORE_PASSWORD 키 저장소 비밀번호
+#   TOEICFIT_KEY_ALIAS         키 별칭 (예: toeicfit)
+#   TOEICFIT_KEY_PASSWORD      키 비밀번호
+# 결과: 실행 화면 아래 Artifacts → toeicfit-release-aab (zip 안의 .aab 를 Play Console 에 올린다)
+name: toeic-release-aab
+
+on:
+  workflow_dispatch:
+    inputs:
+      version_name:
+        description: "버전 이름 (예: 1.0.0)"
+        required: true
+        default: "1.0.0"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    defaults:
+      run:
+        working-directory: toeic
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 서명 비밀값 확인
+        env:
+          KS: ${{ secrets.TOEICFIT_KEYSTORE_BASE64 }}
+          KP: ${{ secrets.TOEICFIT_KEYSTORE_PASSWORD }}
+          KA: ${{ secrets.TOEICFIT_KEY_ALIAS }}
+          KK: ${{ secrets.TOEICFIT_KEY_PASSWORD }}
+        run: |
+          missing=""
+          [ -n "$KS" ] || missing="$missing TOEICFIT_KEYSTORE_BASE64"
+          [ -n "$KP" ] || missing="$missing TOEICFIT_KEYSTORE_PASSWORD"
+          [ -n "$KA" ] || missing="$missing TOEICFIT_KEY_ALIAS"
+          [ -n "$KK" ] || missing="$missing TOEICFIT_KEY_PASSWORD"
+          if [ -n "$missing" ]; then echo "::error::저장소 비밀값이 없습니다:$missing (toeic/RELEASE.md 참고)"; exit 1; fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: 안드로이드 SDK 준비
+        run: |
+          SDKM="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          [ -x "$SDKM" ] || SDKM="$(ls -d $ANDROID_HOME/cmdline-tools/*/bin/sdkmanager | tail -1)"
+          yes | "$SDKM" --licenses > /dev/null || true
+          "$SDKM" "platforms;android-36" "build-tools;36.0.0" "platform-tools" > /dev/null
+
+      - name: 의존성 설치
+        run: npm ci
+
+      - name: 웹 파일을 안드로이드 프로젝트로 복사
+        run: npx cap sync android
+
+      - name: 서명된 AAB 빌드
+        working-directory: toeic/android
+        env:
+          KS_B64: ${{ secrets.TOEICFIT_KEYSTORE_BASE64 }}
+          TOEICFIT_KEYSTORE_PASSWORD: ${{ secrets.TOEICFIT_KEYSTORE_PASSWORD }}
+          TOEICFIT_KEY_ALIAS: ${{ secrets.TOEICFIT_KEY_ALIAS }}
+          TOEICFIT_KEY_PASSWORD: ${{ secrets.TOEICFIT_KEY_PASSWORD }}
+          TOEICFIT_VERSION_NAME: ${{ inputs.version_name }}
+          TOEICFIT_VERSION_CODE: ${{ github.run_number }}
+        run: |
+          echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/upload.jks"
+          export TOEICFIT_KEYSTORE="$RUNNER_TEMP/upload.jks"
+          chmod +x gradlew
+          ./gradlew bundleRelease --no-daemon
+          rm -f "$RUNNER_TEMP/upload.jks"
+
+      - name: 파일 이름 정리 · 크기 확인
+        run: |
+          mkdir -p dist
+          cp android/app/build/outputs/bundle/release/app-release.aab "dist/toeicfit-${{ inputs.version_name }}-${{ github.run_number }}.aab"
+          ls -la dist
+          SIZE=$(stat -c %s dist/*.aab)
+          echo "AAB 크기: $((SIZE / 1024 / 1024)) MB"
+          if [ "$SIZE" -gt 209715200 ]; then echo "::warning::AAB 가 200MB 를 넘습니다. Play Asset Delivery 로 음성을 나눠야 합니다."; fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: toeicfit-release-aab
+          path: toeic/dist/*.aab
+          retention-days: 7
