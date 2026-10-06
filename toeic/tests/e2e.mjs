@@ -40,7 +40,7 @@ const ans = await p.evaluate(() => { const q = document.querySelectorAll("[data-
 await p.click('[data-pick="0"]'); await p.goBack(); await p.waitForTimeout(1300);
 ok(await p.$(".tabbar"), "quiz timer did not overwrite page");
 // 5) 설정 화면 레이아웃 (가로 스크롤 없음)
-for (const r of ["#/settings", "#/review", "#/stats", "#/home", "#/days", "#/part1", "#/conf", "#/search", "#/lc"]) {
+for (const r of ["#/settings", "#/review", "#/stats", "#/home", "#/days", "#/part1", "#/conf", "#/search", "#/lc", "#/practice", "#/grammar", "#/mock", "#/dict"]) {
   await p.goto(base + r); await p.waitForTimeout(250);
   const w = await p.evaluate(() => document.documentElement.scrollWidth);
   ok(w <= 390, `no h-scroll ${r}: ${w}`);
@@ -65,6 +65,28 @@ await p.click('[data-part="4"]'); await p.waitForTimeout(150);
 await p.click('[data-lcq="lcm"]'); await p.waitForTimeout(300);
 ok((await p.$$("[data-pick]")).length === 4, "lc meaning quiz 4 options");
 await p.goBack(); await p.waitForTimeout(200);
+// 5-2) 실전: 허브 → Part 3 세트 풀기·채점(스크립트·근거) → 하프 모의고사 끝까지 제출 → 예상 점수
+await p.goto(base + "#/practice"); await p.waitForTimeout(1500);
+ok(await p.$('a[href="#/sets/p3"]'), "practice hub loaded");
+await p.goto(base + "#/sets/p3"); await p.waitForTimeout(300);
+await p.click("[data-set]"); await p.waitForTimeout(300);
+for (let j = 0; j < 3; j++) await p.click(`.pq [data-q="${j}"][data-o="0"]`);
+await p.click("[data-grade]"); await p.waitForTimeout(300);
+ok((await p.$$(".sline")).length >= 6 && (await p.$$(".feedback")).length === 3, "p3 graded with script");
+const prac = await p.evaluate(() => Object.keys(window.__vocafit.state.prac).length);
+ok(prac === 1, "p3 record " + prac);
+await p.goBack(); await p.waitForTimeout(300);
+await p.goto(base + "#/mock"); await p.waitForTimeout(300);
+await p.click('[data-mock="1"]'); await p.waitForTimeout(150); await p.click("[data-go-mock]"); await p.waitForTimeout(300);
+for (let k = 0; k < 200 && !(await p.$(".result-hero")); k++) {
+  const pick = await p.$("[data-pick]"); if (pick) await pick.click();
+  await p.click("[data-next]"); await p.waitForTimeout(40);
+}
+const mock = await p.evaluate(() => window.__vocafit.state.mock[1]);
+ok(mock && mock.total >= 10 && mock.total <= 990, "mock submitted " + JSON.stringify(mock));
+await p.click("[data-mrev]"); await p.waitForTimeout(300);
+ok(await p.$(".feedback"), "mock review shows explanations");
+await p.goto(base + "#/home"); await p.waitForTimeout(200);
 // 6) 조작된 저장값 정리
 const st = await p.evaluate(() => window.__vocafit.sanitize({ profile: { target: "<img src=x onerror=alert(1)>", daily: "9999", examDate: "x" }, words: { "01-01": { b: 99, n: "3" }, "zz": {} }, tests: { "5": { best: "<b>" }, "75": { best: 90, last: 90, at: 1 } }, lc: { "lc-1": { ok: "2", ng: 1, wrong: 1 }, "lc-99999": { ok: 1 } }, settings: { theme: "<x>", rate: 5, autoWord: "yes" }, premium: true }));
 ok(st.profile.target === 800 && st.profile.daily === 200 && st.words["01-01"].b === 6 && st.words["01-01"].n === 3 && !st.words.zz && st.tests[5].best === 0 && st.tests[75].best === 90 && st.lc["lc-1"].ok === 2 && st.lc["lc-1"].wrong === true && !st.lc["lc-99999"] && st.settings.theme === "system" && st.settings.rate === 1 && st.settings.autoWord === true, "sanitize " + JSON.stringify(st));

@@ -66,7 +66,33 @@ def load_entries():
                 sents.append((rel, text, v))
         except Exception:
             pass
+    for rel, text, v in p34_jobs():
+        sents.append((rel, text, v))
     return words, sents
+
+
+# Part 3·4: 문장마다 따로 (p34/<id>-NN.mp3). 세트마다 여자·남자 목소리를 고정 배정 —
+# 미국/영국을 섞고, 3인 대화의 같은 성별 두 사람(W·W2, M·M2)은 서로 다른 목소리로
+P34_PAIRS = [("af_heart", "am_liam"), ("bf_alice", "bm_fable"), ("af_heart", "bm_fable"), ("bf_alice", "am_liam")]
+OTHER_SEX = {"af_heart": "bf_alice", "bf_alice": "af_heart", "am_liam": "bm_fable", "bm_fable": "am_liam"}
+
+
+def p34_voices(set_id):
+    w, m = P34_PAIRS[int(hashlib.md5(set_id.encode()).hexdigest(), 16) % len(P34_PAIRS)]
+    return {"W": w, "M": m, "W2": OTHER_SEX[w], "M2": OTHER_SEX[m]}
+
+
+def p34_jobs():
+    out = []
+    for part in ("p3", "p4"):
+        f = os.path.join(ROOT, "data", "practice", f"{part}.json")
+        if not os.path.exists(f):
+            continue
+        for st in json.load(open(f, encoding="utf-8")):
+            vo = p34_voices(st["id"])
+            for i, ln in enumerate(st["lines"], 1):
+                out.append((f"p34/{st['id']}-{i:02d}.mp3", plain(ln["en"]), vo[ln["sp"]]))
+    return out
 
 
 OTHER = {"af_heart": "am_liam", "am_liam": "bf_alice", "bf_alice": "am_liam", "bm_fable": "af_heart"}  # 대화의 답하는 사람 목소리
@@ -180,6 +206,14 @@ def main():
                     os.remove(os.path.join(lc_dir, f))
         for rel in [r for r in man if want_lc and r.startswith("lc/") and r not in want_lc]:
             del man[rel]
+        want_p34 = {rel for rel, _, _ in sents if rel.startswith("p34/")}
+        p34_dir = os.path.join(AUDIO, "p34")
+        if want_p34 and os.path.isdir(p34_dir):
+            for f in os.listdir(p34_dir):
+                if f.endswith(".mp3") and f"p34/{f}" not in want_p34:
+                    os.remove(os.path.join(p34_dir, f))
+            for rel in [r for r in man if r.startswith("p34/") and r not in want_p34]:
+                del man[rel]
         for rel, text, voice in sents:
             want = {"text": text, "src": "kokoro", "voice": voice, "br": BITRATE}
             if man.get(rel) != want or not os.path.exists(os.path.join(AUDIO, rel)):

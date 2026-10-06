@@ -338,3 +338,35 @@ test("dictDiff: 대소문자·문장부호·아포스트로피 무시, 빠진 �
   assert.equal(C.dictDiff("Hello there", "").pct, 0);
   assert.equal(C.dictDiff("Please call me back.", "please call back me").ok, 3);
 });
+
+test("실전 데이터: 보기 4개·정답 범위·근거 위치·빈칸·id 중복 없음", () => {
+  const dir = new URL("../toeic/data/practice/", import.meta.url);
+  const load = (k: string) => (fs.existsSync(new URL(`${k}.json`, dir)) ? JSON.parse(fs.readFileSync(new URL(`${k}.json`, dir), "utf8")) : []);
+  const ids = new Set<string>();
+  const q4 = (q: any, tag: string) => {
+    assert.ok(Array.isArray(q.o) && q.o.length === 4 && new Set(q.o.map((x: string) => x.toLowerCase())).size === 4, `${tag} 보기`);
+    assert.ok(Number.isInteger(q.a) && q.a >= 0 && q.a <= 3, `${tag} 정답`);
+    assert.ok(typeof q.exp === "string" && q.exp.length > 10, `${tag} 해설`);
+  };
+  for (const k of ["p3", "p4"]) for (const s of load(k)) {
+    assert.ok(!ids.has(s.id)); ids.add(s.id);
+    assert.equal(s.qs.length, 3, s.id);
+    s.qs.forEach((q: any, j: number) => { q4(q, `${s.id}.${j}`); assert.ok(q.ev.every((i: number) => i >= 0 && i < s.lines.length), `${s.id}.${j} ev`); });
+  }
+  for (const t of load("grammar")) {
+    assert.ok(!ids.has(t.id)); ids.add(t.id);
+    t.qs.forEach((q: any) => { assert.equal(q.s.split("-------").length, 2, q.id); q4(q, q.id); });
+  }
+  for (const s of load("p6")) {
+    assert.ok(!ids.has(s.id)); ids.add(s.id);
+    assert.deepEqual((s.paras.join(" ").match(/\{\d\}/g) || []), ["{1}", "{2}", "{3}", "{4}"], s.id);
+    s.qs.forEach((q: any, j: number) => q4(q, `${s.id}.${j}`));
+  }
+  for (const s of load("p7")) {
+    assert.ok(!ids.has(s.id)); ids.add(s.id);
+    s.qs.forEach((q: any, j: number) => {
+      q4(q, `${s.id}.${j}`);
+      for (const e of q.ev) assert.ok(s.docs[e.d] && s.docs[e.d].paras[e.p] && s.docs[e.d].paras[e.p].includes(e.s), `${s.id}.${j} 근거`);
+    });
+  }
+});
