@@ -12114,9 +12114,10 @@
 "voice": "am_liam"
 },
 "s/02-35.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Mr. Burke took a six-month leave of absence to care for his father.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "s/02-36.mp3": {
 "br": "32k",
@@ -12125,121 +12126,145 @@
 "voice": "am_liam"
 },
 "s/02-37.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Several senior executives attended the meeting with the new investors.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "s/02-38.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The department hired two assistants to help manage the increased workload.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "s/02-39.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The mayor commended the volunteers for their efforts during the flood.",
 "voice": "af_heart"
 },
 "s/02-40.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The company reduced staff turnover by offering better training opportunities.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "s/03-01.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Mr. Doyle's first assignment was to update the client database.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "s/03-02.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The manager assigned the Henderson account to Ms. Park.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "s/03-03.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Ms. Reed is in charge of organizing the company's annual conference.",
 "voice": "af_heart"
 },
 "s/03-04.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Our customer service team handles more than 500 calls a day.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "s/03-05.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The new manager dealt with the shipping problem quickly and calmly.",
 "voice": "af_heart"
 },
 "s/03-06.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "All staff must follow the proper procedure when requesting time off.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "s/03-07.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Mr. Lee forgot to bring the documents to the client meeting.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "s/03-08.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Ms. Kato organized a farewell party for the retiring director.",
-"voice": "bf_emma"
+"voice": "bf_alice"
 },
 "s/03-09.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The receptionist will distribute name tags to visitors at the entrance.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "s/03-10.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The manager circulated the meeting agenda to all participants in advance.",
-"voice": "af_heart"
+"voice": "am_liam"
 },
 "s/03-11.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "According to the memo, the elevator will be closed for repairs on Monday.",
-"voice": "am_michael"
-},
-"s/03-12.mp3": {
-"src": "kokoro",
-"text": "Customers will be notified by e-mail when their orders have shipped.",
-"voice": "af_bella"
-},
-"s/03-13.mp3": {
-"src": "kokoro",
-"text": "The airline informed passengers that the flight would be delayed.",
-"voice": "bf_emma"
-},
-"s/03-14.mp3": {
-"src": "kokoro",
-"text": "The assistant reminded Mr. Shaw about his two o'clock appointment.",
 "voice": "af_heart"
 },
+"s/03-12.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "Customers will be notified by e-mail when their orders have shipped.",
+"voice": "am_liam"
+},
+"s/03-13.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The airline informed passengers that the flight would be delayed.",
+"voice": "bf_alice"
+},
+"s/03-14.mp3": {
+"br": "32k",
+"src": "kokoro",
+"text": "The assistant reminded Mr. Shaw about his two o'clock appointment.",
+"voice": "am_liam"
+},
 "s/03-15.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The IT department updates the security software every month.",
-"voice": "am_michael"
+"voice": "af_heart"
 },
 "s/03-16.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The editor asked the author to revise the final chapter of the manual.",
 "voice": "af_heart"
 },
 "s/03-17.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Mr. Byrne sent the first draft of the press release to his manager for review.",
 "voice": "af_heart"
 },
 "s/03-18.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The board approved the budget for the new research facility.",
-"voice": "bm_george"
+"voice": "bm_fable"
 },
 "s/03-19.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "Only the finance director can authorize payments over $10,000.",
-"voice": "af_bella"
+"voice": "am_liam"
 },
 "s/03-20.mp3": {
+"br": "32k",
 "src": "kokoro",
 "text": "The contract is not valid without the client's signature.",
 "voice": "af_heart"
