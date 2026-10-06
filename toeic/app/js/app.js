@@ -108,7 +108,8 @@
     const gq = (src && src.gq) || {};
     for (const k of Object.keys(gq)) if (idOk(k) && gq[k] && typeof gq[k] === "object") { d.gq[k] = { ok: num(gq[k].ok, 0, 0, 1e6), ng: num(gq[k].ng, 0, 0, 1e6), last: num(gq[k].last, 0, 0, 1e6) }; if (gq[k].wrong) d.gq[k].wrong = true; }
     const qt = (src && src.qt) || {};
-    for (const k of Object.keys(qt)) if (idOk(k) && qt[k] && typeof qt[k] === "object") { const n = num(qt[k].n, 0, 0, 1e6); if (n) d.qt[k] = { ok: Math.min(n, num(qt[k].ok, 0, 0, 1e6)), n }; }
+    const qtOk = (k) => typeof k === "string" && k.length <= 90 && /^p\d{1,2}:/.test(k) && !/[<>"'&]/.test(k);
+    for (const k of Object.keys(qt)) if (qtOk(k) && qt[k] && typeof qt[k] === "object") { const n = num(qt[k].n, 0, 0, 1e6); if (n) d.qt[k] = { ok: Math.min(n, num(qt[k].ok, 0, 0, 1e6)), n }; }
     const pr = (src && src.pr) || {};
     for (const sec of ["lc", "rc"]) if (Array.isArray(pr[sec])) d.pr[sec] = pr[sec].slice(-120).map((x) => (x ? 1 : 0));
     const mk = (src && src.mock) || {};
@@ -456,6 +457,8 @@
   }
   window.addEventListener("hashchange", () => {
     seqId += 1;
+    lineSeq += 1;
+    lcqSeq += 1;
     Sound.stop();
     // 뒤로가기 등으로 학습 화면을 벗어나면 진행 중이던 세션을 끝낸다 (기록은 이미 저장됨)
     if (route().name !== "study") { session = null; studyPushed = false; }
@@ -905,6 +908,8 @@
 
   // ═════════════ 학습 세션 공통 ═════════════
   function exitStudy() {
+    lineSeq += 1;
+    lcqSeq += 1;
     Sound.stop();
     session = null;
     if (studyPushed) { studyPushed = false; history.back(); }
@@ -933,7 +938,7 @@
   function vStudy() {
     if (!session) return location.replace("#/home");
     if (session.kind === "place") return vPlacement();
-    if (session.done) return vResult();
+    if (session.done) return session.kind === "mock" && session.reviewing != null ? vMockReview() : vResult();
     if (session.kind === "card") return vCard();
     if (session.kind === "sort") return vSort();
     if (session.kind === "place") return vPlacement();
@@ -1707,26 +1712,29 @@
   }
   let lcqSeq = 0;
   // 문제 음성: resp 는 질문 → (A) → (B) → (C), lcm 은 문장 하나. 재생 중인 보기를 표시한다
-  async function playLcq(q, only) {
+  // 반환: 질문 음성이 실제로 재생됐는지 (자동재생이 막히면 false — 모의고사에서 한 번 더 들을 수 있게)
+  async function playLcq(q, only, isCurrent) {
     const my = ++lcqSeq;
     const p = q.item;
+    const cur = isCurrent || (() => !!session && Array.isArray(session.qs) && session.qs[session.i] === q);
     const replay = $app.querySelector("[data-replay]");
     if (q.type === "lcm") return Sound.play(lcRel(p, ""), q.prompt, { btn: replay });
+    let heard = true;
     if (only == null) {
-      const ok = await Sound.play(lcRel(p, "q"), q.prompt, { btn: replay });
-      if (!ok || my !== lcqSeq) return;
+      heard = (await Sound.play(lcRel(p, "q"), q.prompt, { btn: replay })) === true;
+      if (my !== lcqSeq || !cur()) return heard;
     }
     const opts = only == null ? q.options.map((o, i) => i) : [only];
     for (const i of opts) {
-      const t = Sound.current();
       if (only == null) await wait(650);
-      if (my !== lcqSeq || t !== Sound.current() || !session || session.qs[session.i] !== q) return;
+      if (my !== lcqSeq || !cur()) return heard;
       const btn = $app.querySelector(`[data-pick="${i}"]`);
       if (btn) btn.classList.add("playing");
       await Sound.play(lcRel(p, q.options[i].f), q.options[i].t, {});
       if (btn) btn.classList.remove("playing");
-      if (my !== lcqSeq) return;
+      if (my !== lcqSeq) return heard;
     }
+    return heard;
   }
   function vLcQuiz() {
     const s = session;
@@ -1902,13 +1910,16 @@
   // ── Part 3·4: 문장 단위 음성 재생 (현재 문장 표시, 문장 눌러 다시 듣기) ──
   const lineRel = (set, i) => (set.au ? `p34/${set.id}-${String(i + 1).padStart(2, "0")}.mp3` : null);
   let lineSeq = 0;
+  let linePlaying = false;
+  const playBtn = (on) => { const b = $app.querySelector("[data-play34]"); if (b) { b.classList.toggle("playing", on); b.innerHTML = ico(on ? "pause" : "play"); } };
   async function playLines(set, from, opt) {
     const o = opt || {};
     const my = ++lineSeq;
-    const btn = $app.querySelector("[data-play34]");
-    if (btn) { btn.classList.add("playing"); btn.innerHTML = ico("pause"); }
+    linePlaying = true;
+    playBtn(true);
+    let heard = false;
     for (let i = from || 0; i < set.lines.length; i++) {
-      if (my !== lineSeq) return;
+      if (my !== lineSeq || !session) return heard;
       $app.querySelectorAll(".sline.now").forEach((x) => x.classList.remove("now"));
       const el = $app.querySelector(`.sline[data-line="${i}"]`);
       if (el) { el.classList.add("now"); if (o.follow) el.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
@@ -1916,22 +1927,25 @@
       if (prog) prog.textContent = `${i + 1} / ${set.lines.length}`;
       const t0 = Date.now();
       const ok = await Sound.play(lineRel(set, i), set.lines[i].en, {});
-      if (my !== lineSeq) return;
-      if (!ok && ok !== undefined && Date.now() - t0 < 50) break;
+      if (my !== lineSeq) return heard;
+      if (ok === true) heard = true;
+      else break; // 재생이 막히거나 실패하면 멈춘다 (다음 문장을 이어서 틀지 않는다)
       // 쉐도잉: 문장 길이만큼 멈춰 따라 말할 시간을 준다
       await wait(o.shadow ? Math.min(9000, Math.max(1500, (Date.now() - t0) * 1.2)) : 350);
       if (o.once) break;
     }
-    if (my !== lineSeq) return;
+    if (my !== lineSeq) return heard;
+    linePlaying = false;
     $app.querySelectorAll(".sline.now").forEach((x) => x.classList.remove("now"));
-    if (btn) { btn.classList.remove("playing"); btn.innerHTML = ico("play"); }
+    playBtn(false);
     if (o.onEnd) o.onEnd();
+    return heard;
   }
   function stopLines() {
     lineSeq += 1;
+    linePlaying = false;
     Sound.stop();
-    const btn = $app.querySelector("[data-play34]");
-    if (btn) { btn.classList.remove("playing"); btn.innerHTML = ico("play"); }
+    playBtn(false);
   }
   const SPK = { W: "여", M: "남", W2: "여2", M2: "남2" };
   function p34Html(set, st, mode) {
@@ -1940,7 +1954,7 @@
     const hiQ = st.evQ;
     const evSet = new Set(hiQ != null ? set.qs[hiQ].ev : []);
     const label = set.part === 3 ? `${esc(set.topic || "")}${set.lines.some((l) => /2$/.test(l.sp)) ? " · 3인 대화" : ""}` : esc(set.talk || "");
-    const player = `<div class="lplayer"><button class="play lg" data-play34 aria-label="재생">${ico("play")}</button><div class="spacer"><b>${set.part === 3 ? "대화" : "담화"} 듣기</b><div class="small muted">${label} · ${LV_LABEL[set.lv] || ""} · <span class="lp-prog">${set.lines.length}문장</span></div></div>${review ? `<button class="btn ghost sm" data-shadow>${ico("repeat")}따라 말하기</button>` : ""}</div>`;
+    const player = `<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${set.part === 3 ? "대화" : "담화"} 듣기</b><div class="small muted">${label} · ${LV_LABEL[set.lv] || ""} · <span class="lp-prog">${set.lines.length}문장</span></div></div>${review ? `<button class="btn ghost sm" data-shadow>${ico("repeat")}따라 말하기</button>` : ""}</div>`;
     const script = review ? `<div class="section-h" style="margin-top:18px"><h2>스크립트</h2><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>
       <div class="script">${set.lines.map((l, i) => `<div class="sline ${evSet.has(i) ? "ev" : ""}" data-line="${i}"><span class="spk spk-${l.sp[0]}">${SPK[l.sp] || ""}</span><div class="spacer"><div class="en">${esc(l.en)}</div>${showKo ? `<div class="ko">${esc(l.ko)}</div>` : ""}</div></div>`).join("")}</div>
       <div class="small muted" style="margin-top:6px">문장을 누르면 그 문장부터 다시 들어요 · 근거 위치 보기를 누르면 정답 근거 문장이 표시돼요</div>` : "";
@@ -1962,11 +1976,15 @@
   }
   // ── Part 7 ── 근거 구절을 <mark> 로 표시
   function markEv(text, marks) {
-    let html = esc(text);
-    for (const m of marks) {
-      const s = esc(m.s);
-      const i = html.indexOf(s);
-      if (i >= 0) html = html.slice(0, i) + `<mark class="${m.on ? "on" : ""}">${s}</mark>` + html.slice(i + s.length);
+    const ranges = marks.map((m) => { const i = text.indexOf(m.s); return i >= 0 ? [i, i + m.s.length, m.on] : null; }).filter(Boolean);
+    if (!ranges.length) return esc(text);
+    const cuts = Array.from(new Set([0, text.length].concat(...ranges.map((r) => [r[0], r[1]])))).sort((a, b) => a - b);
+    let html = "";
+    for (let k = 0; k < cuts.length - 1; k++) {
+      const a = cuts[k], b = cuts[k + 1];
+      const cover = ranges.filter((r) => r[0] <= a && r[1] >= b);
+      const seg = esc(text.slice(a, b));
+      html += cover.length ? `<mark class="${cover.some((r) => r[2]) ? "on" : ""}">${seg}</mark>` : seg;
     }
     return html;
   }
@@ -2025,7 +2043,7 @@
     const btnTile = (attr, icon, cls, title, sub) => `<button class="tile" ${attr}><span class="tico ${cls}">${ico(icon)}</span><b>${title}</b><span>${sub}</span></button>`;
     const weak = C.weakTypes(S.qt).slice(0, 5);
     const gTotal = (PR.grammar || []).reduce((n, t) => n + t.qs.filter((q) => !q.mock).length, 0);
-    const gDone = Object.keys(S.gq).length;
+    const gDone = Object.keys(S.gq).filter((k) => PR._g.has(k)).length;
     const body = `${topBar("실전 문제", { sub: "Part 2~7 · 하프 모의고사 · 예상 점수" })}
       <section class="score-card">
         <div class="eyebrow">예상 점수 (추정)</div>
@@ -2135,6 +2153,7 @@
     const rerender = () => { const y = window.scrollY; vPset(); window.scrollTo(0, y); };
     bindSetCommon(s.part, set, st, rerender);
     if (!st.graded) bindPicks(st, () => {
+      if (s.part === "p6") return rerender();
       const g = $app.querySelector("[data-grade]");
       const n = st.picks.filter((x) => x != null).length;
       if (g) { g.disabled = n < set.qs.length; g.textContent = n < set.qs.length ? `${set.qs.length - n}문제 남음` : "채점하기"; }
@@ -2200,7 +2219,7 @@
     const prog = (t) => { const qs = t.qs.filter((q) => !q.mock); const done = qs.filter((q) => S.gq[q.id]); return { n: qs.length, done: done.length, ok: done.filter((q) => !S.gq[q.id].wrong).length }; };
     const body = `${topBar("Part 5 문법", { back: true, sub: `${PR.grammar.length}개 주제 · 핵심 강의 + 실전 문제` })}
       <button class="btn block" data-mix style="margin-bottom:6px">${ico("shuffle")}문법 랜덤 20제</button>
-      <button class="btn ghost block" data-wrong style="margin-bottom:14px">${ico("repeat")}틀린 문법 문제 다시 (${Object.keys(S.gq).filter((k) => S.gq[k].wrong).length})</button>
+      <button class="btn ghost block" data-wrong style="margin-bottom:14px">${ico("repeat")}틀린 문법 문제 다시 (${Object.keys(S.gq).filter((k) => S.gq[k].wrong && PR._g.has(k)).length})</button>
       ${cats.map((c) => `<div class="section-h"><h2>${esc(c)}</h2></div><div class="wlist">${PR.grammar.filter((t) => t.cat === c).map((t) => { const p = prog(t); return `<a class="witem" href="#/grammar/${t.id}"><div class="wbody"><div class="ww" style="font-size:16px">${esc(t.title)}</div><div class="wm">${p.done ? `${p.done}/${p.n}문제 · 정답 ${p.ok}` : `${p.n}문제`}</div></div>${p.done === p.n && p.n ? `<span class="badge ok">완료</span>` : ""}${ico("right")}</a>`; }).join("")}</div>`).join("")}`;
     shell("practice", body);
     $app.querySelector("[data-mix]").addEventListener("click", () => {
@@ -2333,15 +2352,21 @@
     const nx = $app.querySelector("[data-next]");
     if (nx) nx.addEventListener("click", next);
     const sh = $app.querySelector("[data-shadow]");
-    if (sh) sh.addEventListener("click", async () => { await say(0.9); await wait(2500); await say(); });
+    if (sh) sh.addEventListener("click", async () => {
+      await say(0.9);
+      await wait(2500);
+      if (session === s && s.items[s.i] === it && s.res) say();
+    });
     if (input) {
       setTimeout(() => input.focus(), 50);
-      input.addEventListener("keydown", (e) => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); e.stopPropagation(); check(); } });
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); e.stopPropagation(); check(); }
+        else if (e.key === " " && (e.ctrlKey || e.metaKey)) { e.preventDefault(); e.stopPropagation(); say(); }
+      });
       setTimeout(() => { if (session === s && s.items[s.i] === it && !s.res) say(); }, 300);
     }
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
-      if (e.key === " " && e.ctrlKey) { e.preventDefault(); return say(); }
       if (onControl(e)) return;
       if (s.res && e.key === "Enter") { e.preventDefault(); next(); }
     };
@@ -2363,7 +2388,7 @@
     const p5 = pages.filter((p) => p.part === "p5");
     const mixed = C.shuffle(p5, C.rng(m.n * 7));
     let k = 0;
-    return pages.map((p) => (p.part === "p5" ? mixed[k++] : p)).filter((p) => p.set !== undefined ? !!p.set : true);
+    return pages.map((p) => (p.part === "p5" ? mixed[k++] : p)).filter((p) => !("set" in p) || p.set);
   }
   const pageQs = (p) => (p.set ? p.set.qs : [p.q]);
   function vMock(r) {
@@ -2426,8 +2451,11 @@
         ${sec === "rc" ? `<button class="btn ghost sm block" data-sheet style="margin-top:8px">답안지 보기 (${answered}/${total})</button>` : ""}</div></div>`;
     $app.querySelector("[data-exit]").addEventListener("click", () => askExit());
     $app.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", () => { st.picks[0] = +b.dataset.pick; $app.querySelectorAll("[data-pick]").forEach((x) => x.classList.toggle("sel", x === b)); }));
-    if (p.set) bindPicks(st);
-    const goPage = (i) => { stopLines(); lcqSeq += 1; Sound.stop(); s.i = i; vMockSession(); window.scrollTo(0, 0); };
+    if (p.set) bindPicks(st, p.part === "p6" ? () => { const y = window.scrollY; vMockSession(); window.scrollTo(0, y); } : null);
+    const goPage = (i) => {
+      if (s.submitted) return;
+      if (s.rcStart && Date.now() - s.rcStart >= RC_MIN * 60 * 1000) { toast("시간이 끝났어요. 답안을 제출할게요"); return submitMock(); }
+      stopLines(); lcqSeq += 1; Sound.stop(); s.i = i; vMockSession(); window.scrollTo(0, 0); };
     $app.querySelector("[data-next]").addEventListener("click", () => {
       if (s.i + 1 >= s.pages.length) return submitMock();
       goPage(s.i + 1);
@@ -2443,21 +2471,30 @@
       });
     });
     // 음성: 페이지마다 한 번만 자동 재생 (실전 모드)
+    if (!s.heard) s.heard = {};
+    const here = () => session === s && s.pages[s.i] === p && !s.submitted;
+    const playPage = async () => {
+      const ok = p.part === "p2" ? await playLcq(p.q, null, here) : await playLines(p.set, 0);
+      if (ok) s.heard[s.i] = true;
+    };
     if (sec === "lc" && !s.played[s.i]) {
       s.played[s.i] = true;
-      if (p.part === "p2") setTimeout(() => { if (session === s && s.i === s.pages.indexOf(p)) playLcq(p.q); }, 400);
-      else setTimeout(() => { if (session === s && s.pages[s.i] === p) playLines(p.set, 0); }, 1200);
+      setTimeout(() => { if (here()) playPage(); }, p.part === "p2" ? 400 : 1200);
     }
-    const rp = $app.querySelector("[data-replay]");
-    if (rp) rp.addEventListener("click", () => toast("실전 모드에서는 다시 들을 수 없어요"));
-    const pb = $app.querySelector("[data-play34]");
-    if (pb) pb.replaceWith(Object.assign(document.createElement("span"), { className: "play lg", innerHTML: ico("vol") }));
+    // 실전 모드: 한 번 들은 뒤에는 다시 듣기 없음 (자동재생이 막혀 못 들었을 때만 직접 재생)
+    const rp = $app.querySelector("[data-replay]") || $app.querySelector("[data-play34]");
+    if (rp) rp.addEventListener("click", (e) => {
+      e.stopImmediatePropagation();
+      if (s.heard[s.i]) return toast("실전 모드에서는 다시 들을 수 없어요");
+      playPage();
+    }, true);
     clearInterval(s.tick);
     if (sec === "rc") s.tick = setInterval(() => {
       if (session !== s || s.reviewing != null) return clearInterval(s.tick);
       const el = $app.querySelector("[data-timer]");
       if (el) el.textContent = mockTimer(s);
-      if (Date.now() - s.rcStart >= RC_MIN * 60 * 1000) { clearInterval(s.tick); toast("시간이 끝났어요. 답안을 제출할게요"); submitMock(); }
+      if (s.submitted) return clearInterval(s.tick);
+      if (Date.now() - s.rcStart >= RC_MIN * 60 * 1000 && !document.getElementById("modal")) { clearInterval(s.tick); toast("시간이 끝났어요. 답안을 제출할게요"); submitMock(); }
     }, 1000);
     keyHandler = (e) => { if (e.key === "Escape") return askExit(); };
   }
@@ -2465,6 +2502,7 @@
     const s = session;
     if (s.submitted) return;
     s.submitted = true;
+    closeModal();
     clearInterval(s.tick);
     stopLines();
     const stat = { lc: [0, 0], rc: [0, 0] };
@@ -2519,7 +2557,7 @@
     $app.querySelector("[data-rprev]").addEventListener("click", () => goR(pi - 1));
     $app.querySelector("[data-rnext]").addEventListener("click", () => goR(pi + 1));
     $app.querySelector("[data-back-res]").addEventListener("click", () => { stopLines(); s.reviewing = null; vResult(); });
-    keyHandler = (e) => { if (e.key === "ArrowRight") goR(pi + 1); if (e.key === "ArrowLeft" && pi) goR(pi - 1); if (e.key === "Escape") { s.reviewing = null; vResult(); } };
+    keyHandler = (e) => { if (e.key === "ArrowRight") goR(pi + 1); if (e.key === "ArrowLeft" && pi) goR(pi - 1); if (e.key === "Escape") { stopLines(); s.reviewing = null; vResult(); } };
   }
 
   // ═════════════ 혼동 어휘 ═════════════

@@ -1,7 +1,7 @@
 // 오프라인 지원 (웹/PWA). 네이티브 앱(Capacitor)은 파일이 기기 안에 있어 필요 없다.
 // 앱 화면 파일은 설치 때 미리 받고, 음성 파일은 처음 들을 때 저장해 두었다가 다음부터 오프라인 재생.
-const VERSION = "vocafit-v1";
-const SHELL = ["./", "index.html", "css/app.css", "js/core.js", "js/app.js", "js/data.js", "fonts/PretendardVariable.woff2", "icons/icon.svg", "icons/icon-192.png", "manifest.webmanifest"];
+const VERSION = "vocafit-v2";
+const SHELL = ["./", "index.html", "css/app.css", "js/core.js", "js/app.js", "js/data.js", "js/practice.js", "fonts/PretendardVariable.woff2", "icons/icon.svg", "icons/icon-192.png", "manifest.webmanifest"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
