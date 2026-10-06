@@ -8,8 +8,8 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         // 출시 빌드(.github/workflows/toeic-release.yml)가 버전을 넣는다. 로컬·테스트 빌드는 1 / 1.0.0
-        versionCode (System.getenv("TOEICFIT_VERSION_CODE") ?: "1").toInteger()
-        versionName System.getenv("TOEICFIT_VERSION_NAME") ?: "1.0.0"
+        versionCode = Integer.parseInt(System.getenv("TOEICFIT_VERSION_CODE") ?: "1")
+        versionName = System.getenv("TOEICFIT_VERSION_NAME") ?: "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
