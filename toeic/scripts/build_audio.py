@@ -23,8 +23,11 @@ MANIFEST = os.path.join(ROOT, "data", "audio-manifest.json")
 KOKORO_DIR = os.environ.get("KOKORO_DIR", "/tmp/claude-0/tts/package")
 REF = os.environ.get("REF_AUDIO_DIR", "/home/user/seungok001-eng/voca-yun")
 WORD_VOICE = "af_heart"
-# 예문 목소리: 미국 여/남, 영국 여/남 (토익 LC처럼 억양 다양화). 가중치는 품질 순.
-SENT_VOICES = ["af_heart", "af_heart", "am_michael", "bf_emma", "bm_george", "af_bella"]
+# mp3 비트레이트 (24kHz 모노). 48k 와 비교해 들어 보고 32k 로 정함 — 음성 용량 약 2/3
+BITRATE = "32k"
+# 예문 목소리: 미국 여/남, 영국 여/남 (토익 LC처럼 억양 다양화) — 미국 4 : 영국 2, 여 3 : 남 3.
+# 샘플을 들어 보고 고른 목소리: 미국 여 heart · 미국 남 liam · 영국 여 alice · 영국 남 fable
+SENT_VOICES = ["af_heart", "am_liam", "af_heart", "bf_alice", "bm_fable", "am_liam"]
 
 
 def voice_for(key):
@@ -66,7 +69,7 @@ def load_entries():
     return words, sents
 
 
-OTHER = {"af_heart": "am_michael", "af_bella": "bm_george", "am_michael": "bf_emma", "bf_emma": "am_michael", "bm_george": "af_heart"}
+OTHER = {"af_heart": "am_liam", "am_liam": "bf_alice", "bf_alice": "am_liam", "bm_fable": "af_heart"}  # 대화의 답하는 사람 목소리
 
 
 def lc_jobs(items):
@@ -129,7 +132,7 @@ def synth(job):
     pcm = (np.clip(a, -1, 1) * 32767).astype("<i2").tobytes()
     tmp = out + ".tmp.mp3"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "s16le", "-ar", str(sr), "-ac", "1", "-i", "pipe:0",
-                    "-af", "loudnorm=I=-18:TP=-1.5:LRA=11", "-ar", "24000", "-b:a", "48k", tmp],
+                    "-af", "loudnorm=I=-18:TP=-1.5:LRA=11", "-ar", "24000", "-b:a", BITRATE, tmp],
                    input=pcm, check=True)
     os.replace(tmp, out)
     return rel
@@ -163,7 +166,7 @@ def main():
                     man[rel] = want
                 reused += 1
             else:
-                want = {"text": w, "src": "kokoro", "voice": WORD_VOICE}
+                want = {"text": w, "src": "kokoro", "voice": WORD_VOICE, "br": BITRATE}
                 if man.get(rel) != want or not os.path.exists(out):
                     jobs.append((rel, w, WORD_VOICE))
         print(f"단어 {len(words)}개 · 기존 음성 재사용 {reused}개")
@@ -178,11 +181,11 @@ def main():
         for rel in [r for r in man if want_lc and r.startswith("lc/") and r not in want_lc]:
             del man[rel]
         for rel, text, voice in sents:
-            want = {"text": text, "src": "kokoro", "voice": voice}
+            want = {"text": text, "src": "kokoro", "voice": voice, "br": BITRATE}
             if man.get(rel) != want or not os.path.exists(os.path.join(AUDIO, rel)):
                 jobs.append((rel, text, voice))
     print(f"새로 만들 음성 {len(jobs)}개")
-    meta = {rel: {"text": t, "src": "kokoro", "voice": v} for rel, t, v in jobs}
+    meta = {rel: {"text": t, "src": "kokoro", "voice": v, "br": BITRATE} for rel, t, v in jobs}
     done = 0
     with ProcessPoolExecutor(max_workers=a.workers) as ex:
         futs = [ex.submit(synth, j) for j in jobs]
