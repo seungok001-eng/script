@@ -16,7 +16,10 @@
 | 복습 | 라이트너 간격 반복(1·3·7·14·30·60일), 오늘 할 일(새 단어/복습/확인 퀴즈/오답노트), 오답노트 자동 수집·자동 해제, ★ 중요 단어 |
 | 특훈 | Part 1 사진 묘사 필수 120문장(진행형 수동태 함정 포함), **LC Part 2~4 빈출 표현 870개**(29개 주제 — Part 2 질문 유형별 · Part 3 상황별 · Part 4 담화 유형별, 대화는 두 목소리) + **LC 실전 퀴즈**(Part 2 응답 고르기: 질문과 보기 (A)(B)(C)를 듣고 고르기, 문항마다 토익식 오답 2개 · Part 3·4 듣고 해석 고르기 · 틀린 문제 다시 풀기), Part 5 혼동 어휘 60세트 + 퀴즈, Part 7 동의어 20제 |
 | **실전 문제** | Part 3 대화 90세트 · Part 4 담화 60세트(문장마다 원어민 음성, 3인 대화·의도 파악·시각 자료 포함) · Part 5 문법 30개 주제 강의 + 450문제 · Part 6 장문 빈칸 48지문 · Part 7 독해 100세트(단일·이중·삼중, 채팅·양식·송장 포함). 채점 후 **정답 근거 문장 강조**, 지문·스크립트 전체 해석, 문장 단위 다시 듣기·따라 말하기 |
-| 모의고사·예상 점수 | 하프 모의고사 4회(LC는 한 번만 재생, RC 37분 타이머, 답안지) → LC·RC 예상 점수, 파트별 정답률, 전체 해설. 최근 LC·RC 정답률로 상시 예상 점수, 문제 유형별 약점 분석(예: Part 7 추론 55%) → 바로 연습 |
+| 실력 진단 | 온보딩 직후 20문제(LC 10·RC 10, 약 12분) → 예상 점수·목표까지 남은 점수·약한 파트·맞춤 계획 + 결제 제안 |
+| 모의고사·예상 점수 | **정규 모의고사 2회**(200문제, LC 약 45분·RC 75분, 연습과 겹치지 않는 전용 문항) · 하프 모의고사 4회(LC는 한 번만 재생, RC 37분 타이머, 답안지) → LC·RC 예상 점수, 파트별 정답률, 전체 해설. 최근 LC·RC 정답률로 상시 예상 점수, 문제 유형별 약점 분석(예: Part 7 추론 55%) → 바로 연습 |
+| 시간 압박 훈련 | Part 5 문항당 20초 · Part 6 지문당 2분 · Part 7 문항당 1분 타이머 |
+| 처음 쓰는 사람 | 3일 시작 미션(하루 3개씩 열림), 화면별 첫 방문 팁, 사용 가이드(#/guide) |
 | 받아쓰기 | LC 표현·Part 3·4 문장을 듣고 쓰면 단어 단위로 채점(빠진 단어 표시), 천천히 듣기·따라 말하기 |
 | 통계 | 암기 완료/학습/정답률/연속 학습일, 난이도별 진도, 최근 7일 그래프, 4주 학습 달력, 시험일 대비 1회독 예상일, Day 테스트 현황 |
 | 기타 | 단어 검색(영어·한국어·파생어), 다크 모드, 재생 속도, 백업/복원(JSON), 오프라인(PWA), PC 사이드바 레이아웃 + 단축키 |
@@ -108,7 +111,8 @@ npm run assets                              # (아이콘을 바꿨을 때) asset
 - 앱 ID `com.toeicfit.app`(스토어에 올린 뒤에는 못 바꿈), 이름 `토익핏` — `capacitor.config.json`, `app/js/app.js`의 `BRAND`, `manifest.webmanifest`에서 바꿀 수 있습니다.
 - 아이콘: `app/icons/icon-1024.png`(스토어용, 꽉 찬 사각), `icon-maskable-512.png`(안드로이드 적응형). 스플래시는 `@capacitor/assets`로 생성 권장.
 - 스크린샷: `store/screenshots/`에 완성본(iOS 1290×2796 · Android 1080×1920) 8장. `node scripts/store_shots.mjs`로 다시 생성.
-- 개인정보처리방침 URL: `PRIVACY.md` (공개 저장소의 GitHub 주소를 그대로 스토어에 입력 가능)
+- 개인정보처리방침 URL: GitHub Pages(`.github/workflows/toeic-pages.yml`) → `https://seungok001-eng.github.io/script/privacy.html`
+- 출시용 AAB: Actions → `toeic-release-aab` (저장소 비밀값의 업로드 키로 서명). 자세한 순서는 `RELEASE.md`.
 - 테스트용 APK: `toeic/**`를 푸시하면 GitHub Actions(`.github/workflows/toeic-android.yml`)가 디버그 APK를 빌드해 Releases의 `toeic-test` 프리릴리스에 올린다.
 - 개인정보: 모든 기록은 기기 안(localStorage)에만 저장되고 서버로 보내지 않습니다 → 스토어 "데이터 수집 없음" 신고 가능. (광고·분석 SDK를 넣으면 다시 확인)
 - 상표: "TOEIC"은 ETS의 등록 상표입니다. 앱 이름·아이콘에 ETS 로고를 쓰지 말고, 설정 화면의 "ETS와 관련 없음" 문구를 유지하세요.
@@ -116,15 +120,13 @@ npm run assets                              # (아이콘을 바꿨을 때) asset
 
 ### 유료화
 
-`app/js/app.js`의 `CONFIG.premium`:
+`app/js/app.js`의 `CONFIG.premium` — 한 번 결제(평생) 상품 `toeicfit_full`, 표시 가격은 스토어 값(없으면 ₩4,900).
 
-```js
-const CONFIG = { premium: { enabled: false, freeDays: 5, price: "₩9,900", priceNote: "평생 이용 · 1회 결제" } };
-```
-
-`enabled: true`로 바꾸면 Day 6~30이 잠기고 프리미엄 화면이 열립니다. 결제는 네이티브 쪽에서
-`window.ToeicfitIAP = { purchase: async () => true/false }`를 주입하면 연결됩니다
-(예: RevenueCat Capacitor 플러그인 `@revenuecat/purchases-capacitor`로 구매 후 true 반환).
+- 무료: 단어 Day 1~3 · 파트별 실전 1세트 · 문법 1주제 · LC 퀴즈·받아쓰기 1회 · 하프 모의고사 1회 · 첫 실력 진단
+- 결제 화면이 뜨는 곳: 진단 결과(첫날), Day 4, 파트별 2번째 세트, 하프 2~4회·정규 모의고사, 시간 압박 훈련
+- 결제: `@capgo/native-purchases`(Google Play Billing / StoreKit). 구매 내역은 앱 시작 때 다시 확인하고, 설정 → 구매 복원.
+- 잠금은 네이티브 앱에서만 켜진다(웹 미리보기는 열림). 웹에서 시험하려면 `localStorage.setItem("toeicfit.paywall", "1")`.
+- 출시 절차(키·테스트·상품 등록): `RELEASE.md`
 
 ## 라이선스
 

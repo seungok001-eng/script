@@ -598,7 +598,7 @@
           <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? `${NDAYS}일 · 기본/심화/완성 코스` : "30일 주제별"} · 기본/핵심/고득점 3단계</span></div>
           <div><span class="tico c-green">${ico("headphones")}</span><span><b>모든 단어·예문 원어민 음성</b>미국·영국 발음으로 토익 LC까지 대비</span></div>
           <div><span class="tico c-orange">${ico("repeat")}</span><span><b>잊을 때쯤 다시 나오는 복습</b>1·3·7·14·30일 간격 반복 + 오답노트</span></div>
-          <div><span class="tico c-purple">${ico("trophy")}</span><span><b>Part 2~7 실전 문제 · 하프 모의고사</b>정답 근거까지 보여 주는 해설 · 예상 점수</span></div>
+          <div><span class="tico c-purple">${ico("trophy")}</span><span><b>Part 1~7 실전 문제 · 정규·하프 모의고사</b>10분 실력 진단 · 정답 근거 해설 · 예상 점수</span></div>
         </div>`;
     } else if (onb.step === 1) {
       const n = onbPool();
@@ -3092,7 +3092,7 @@
         <p class="small muted" style="margin:0 0 10px">홈의 <b>오늘의 학습</b> 버튼이 아래 순서대로 다음 할 일을 알려 줘요. 버튼만 따라가면 돼요.</p>
         ${step(1, "repeat", "c-orange", "복습 먼저", "어제까지 외운 단어 중 잊을 때가 된 것부터. 먼저 하면 기억이 오래가요.")}
         ${step(2, "layers", "c-blue", "새 단어", `목표 ${target()}점에 맞춘 하루 ${S.profile.daily}개. 카드로 뜻을 확인하고 퀴즈로 마무리해요.`)}
-        ${step(3, "target", "c-green", "오늘의 실전", "목표 점수와 진도에 맞춘 Part 2~7 문제 10분. 시험 2주 전부터는 하프 모의고사가 나와요.")}
+        ${step(3, "target", "c-green", "오늘의 실전", "목표 점수와 진도에 맞춘 실전 문제 10분. 시험 2주 전부터는 하프 모의고사가 나와요.")}
       </section>
       <section class="card g-card">
         <h2 class="g-h">${ico("layers")}단어 카드 버튼의 뜻</h2>
