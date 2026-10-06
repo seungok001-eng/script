@@ -249,8 +249,8 @@
   "graphic": null,
   "qs": [
    {
-    "q": "What did the man recently learn?",
-    "qko": "남자는 최근에 무엇을 알게 되었는가?",
+    "q": "What news does the man share with Lena and Omar?",
+    "qko": "남자는 레나와 오마르에게 어떤 소식을 전하는가?",
     "o": [
      "A trade show has been postponed.",
      "A registration fee has gone up.",
@@ -3594,13 +3594,13 @@
    },
    {
     "sp": "W",
-    "en": "In that case, we could come on Friday evening instead, between six and eight. And we'll waive the delivery fee for the inconvenience.",
-    "ko": "그러시면 대신 금요일 저녁 6시에서 8시 사이에 방문할 수 있어요. 그리고 불편을 끼쳐 드렸으니 배송비는 받지 않을게요."
+    "en": "In that case, we could come on Monday evening instead, between six and eight. And we'll waive the delivery fee for the inconvenience.",
+    "ko": "그러시면 대신 월요일 저녁 6시에서 8시 사이에 방문할 수 있어요. 그리고 불편을 끼쳐 드렸으니 배송비는 받지 않을게요."
    },
    {
     "sp": "M",
-    "en": "Friday evening works for me. Thanks.",
-    "ko": "금요일 저녁이면 괜찮아요. 고마워요."
+    "en": "Monday evening works for me. Thanks.",
+    "ko": "월요일 저녁이면 괜찮아요. 고마워요."
    }
   ],
   "graphic": null,
@@ -5640,8 +5640,8 @@
   "graphic": null,
   "qs": [
    {
-    "q": "What concern does the man have about the third-floor suite?",
-    "qko": "남자는 3층 사무실에 대해 어떤 우려를 하는가?",
+    "q": "What concern does Tom have about the third-floor suite?",
+    "qko": "톰은 3층 사무실에 대해 어떤 우려를 하는가?",
     "o": [
      "It does not get enough light.",
      "It is too small for the staff.",
@@ -5897,7 +5897,7 @@
     "o": [
      "Change their tickets",
      "Print some slides",
-     "Contact a colleague",
+     "Send a message about a delay",
      "Buy some sandwiches"
     ],
     "a": 2,
@@ -5905,7 +5905,7 @@
     "ev": [
      2
     ],
-    "exp": "여자는 \"I'll send a message to Ms. Ward so she knows we'll be late\"라고 한다. 워드 씨에게 메시지를 보낸다 → 동료에게 연락한다. 샌드위치는 카페 메뉴로 언급되었을 뿐 여자가 사겠다고 한 것은 아니다."
+    "exp": "여자는 \"I'll send a message to Ms. Ward so she knows we'll be late\"라고 한다. 늦을 거라고 메시지를 보낸다 → 지연에 대해 메시지를 보낸다. 샌드위치는 카페 메뉴로 언급되었을 뿐 여자가 사겠다고 한 것은 아니고, 슬라이드는 출력이 아니라 노트북으로 검토한다."
    },
    {
     "q": "Look at the graphic. Which gate will the speakers most likely go to?",
@@ -6114,8 +6114,8 @@
     "exp": "매니저 안드레는 \"We have a midsize sedan ... you can have it for the compact price\"라고 한다. 소형차 가격으로 중형 세단 → 추가 비용 없이 더 큰 차를 제공한다. 환불이나 쿠폰은 언급되지 않았다."
    },
    {
-    "q": "Why is the man pleased about the navigation system?",
-    "qko": "남자는 내비게이션 시스템에 대해 왜 기뻐하는가?",
+    "q": "Why is Mr. Ellis pleased about the navigation system?",
+    "qko": "엘리스 씨는 내비게이션 시스템에 대해 왜 기뻐하는가?",
     "o": [
      "It shows the fastest routes downtown.",
      "It will help him avoid an extra charge.",

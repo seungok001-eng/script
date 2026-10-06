@@ -1,0 +1,2656 @@
+[
+ {
+  "title": "시간 전치사",
+  "cat": "전치사",
+  "lesson": [
+   {
+    "h": "at·on·in: 시각·날짜·월/연도",
+    "t": "시각처럼 한 시점은 at, 요일·날짜처럼 하루 단위는 on, 월·연도·계절처럼 더 긴 기간은 in을 쓴다. 그냥 '아침에'는 in the morning이지만 Monday morning처럼 특정한 날의 아침·오후는 on을 쓴다.",
+    "ex": [
+     {
+      "en": "The meeting starts *at* 9 A.M. *on* Monday.",
+      "ko": "회의는 월요일 오전 9시에 시작한다."
+     },
+     {
+      "en": "The company was founded *in* 2012.",
+      "ko": "그 회사는 2012년에 설립되었다."
+     }
+    ]
+   },
+   {
+    "h": "by vs until: 완료 기한 vs 계속",
+    "t": "by는 '~까지 (끝내다)'로 제출·완료·도착처럼 한 번에 끝나는 동작의 마감을 나타낸다. until은 '~까지 (계속)'로 remain, stay, continue, be open처럼 상태가 그 시점까지 이어질 때 쓴다.",
+    "ex": [
+     {
+      "en": "Please submit the report *by* Friday.",
+      "ko": "금요일까지 보고서를 제출해 주세요."
+     },
+     {
+      "en": "The store will remain open *until* 9 P.M.",
+      "ko": "매장은 오후 9시까지 영업합니다."
+     }
+    ]
+   },
+   {
+    "h": "for vs during: 숫자 기간 vs 특정 기간",
+    "t": "for 뒤에는 three weeks, two hours처럼 '얼마 동안'을 나타내는 숫자 기간이 오고, during 뒤에는 the conference, the holiday season처럼 '언제'인지를 나타내는 사건·기간 명사가 온다. 같은 뜻의 while은 접속사라 뒤에 '주어 + 동사'가 와야 한다.",
+    "ex": [
+     {
+      "en": "Mr. Lee will be away *for* two weeks.",
+      "ko": "이 씨는 2주 동안 자리를 비운다."
+     },
+     {
+      "en": "Phones must be turned off *during* the performance.",
+      "ko": "공연 중에는 휴대 전화를 꺼야 한다."
+     }
+    ]
+   },
+   {
+    "h": "since·over·within·in + 기간",
+    "t": "since는 '~ 이래로'라는 뜻으로 과거 시점과 함께 현재완료로 쓰고, over/for the past + 기간도 현재완료와 잘 어울린다. within은 '~ 이내에'(within 30 days), in + 기간은 '(지금부터) ~ 후에'(in two weeks)라는 뜻이다.",
+    "ex": [
+     {
+      "en": "Sales have doubled *over* the past three years.",
+      "ko": "지난 3년 동안 매출이 두 배로 늘었다."
+     },
+     {
+      "en": "Refunds are issued *within* 10 business days.",
+      "ko": "환불은 영업일 기준 10일 이내에 처리된다."
+     }
+    ]
+   },
+   {
+    "h": "from ~ through, prior to, upon",
+    "t": "from A to/through B는 기간의 시작과 끝을 함께 나타낸다. prior to는 before와 같은 뜻의 전치사이고, upon(on) + 명사/-ing는 '~하자마자, ~하면'이라는 뜻으로 Part 5에 자주 나온다.",
+    "ex": [
+     {
+      "en": "The exhibit runs *from* May 1 *through* May 31.",
+      "ko": "전시회는 5월 1일부터 5월 31일까지 열린다."
+     },
+     {
+      "en": "Payment is due *upon* receipt of the invoice.",
+      "ko": "대금은 청구서를 받는 즉시 지불해야 한다."
+     }
+    ]
+   }
+  ],
+  "trap": "'금요일까지'라는 우리말만 보고 by와 until을 고르면 틀린다. 동작이 한 번에 끝나면(submit, complete) by, 상태가 계속되면(remain, stay open) until이다. 또 for 뒤에는 숫자 기간, during 뒤에는 사건 명사가 온다.",
+  "qs": [
+   {
+    "s": "All employees must submit their expense reports ------- Friday, March 14.",
+    "o": [
+     "until",
+     "by",
+     "since",
+     "within"
+    ],
+    "a": 1,
+    "lv": 1,
+    "exp": "submit(제출하다)은 한 번에 끝나는 동작이므로 '~까지 완료'를 뜻하는 by가 알맞다. until은 remain, stay처럼 상태가 계속될 때 쓰고, since는 과거 시점과 함께 현재완료로, within은 within three days처럼 기간 명사와 함께 쓴다.",
+    "id": "g01-01"
+   },
+   {
+    "s": "The quarterly sales meeting will begin ------- 10:30 A.M. in Conference Room B.",
+    "o": [
+     "at",
+     "on",
+     "in",
+     "during"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "10:30 A.M.처럼 정확한 시각 앞에는 at을 쓴다. on은 요일·날짜, in은 월·연도·계절 앞에 쓰며, during 뒤에는 the meeting 같은 사건·기간 명사가 와야 한다.",
+    "id": "g01-02"
+   },
+   {
+    "s": "The new branch office in Lyon is scheduled to open ------- May 2.",
+    "o": [
+     "at",
+     "in",
+     "on",
+     "for"
+    ],
+    "a": 2,
+    "lv": 1,
+    "exp": "May 2처럼 특정 날짜 앞에는 on을 쓴다. 날짜 없이 'in May'라면 in이 맞지만 여기서는 일(2일)까지 있으므로 in은 쓸 수 없다. at은 시각, for는 기간 앞에 쓴다.",
+    "id": "g01-03"
+   },
+   {
+    "s": "The fitness center on the third floor will remain open ------- 10 P.M. throughout the renovation period.",
+    "o": [
+     "by",
+     "within",
+     "since",
+     "until"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "remain open은 '계속 열려 있다'는 상태이므로 그 상태가 이어지는 끝 시점을 나타내는 until이 알맞다. by는 submit, finish처럼 한 번에 끝나는 동작의 기한에 쓰고, within은 기간 명사와, since는 현재완료와 어울린다.",
+    "id": "g01-04"
+   },
+   {
+    "s": "Ms. Okafor has served as regional sales director ------- 2018, overseeing teams in four countries.",
+    "o": [
+     "since",
+     "for",
+     "during",
+     "by"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "현재완료(has served)와 과거 시점(2018)이 함께 있으므로 '~ 이래로 (지금까지)'를 뜻하는 since가 정답이다. for 뒤에는 five years 같은 기간의 길이가 와야 하고, during 2018이나 by 2018은 이미 끝난 과거를 가리켜 지금까지 이어지는 현재완료와 어울리지 않는다.",
+    "id": "g01-05"
+   },
+   {
+    "s": "Audience members are asked to silence their mobile phones ------- the keynote presentation in the main hall.",
+    "o": [
+     "during",
+     "for",
+     "while",
+     "within"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "the keynote presentation은 숫자 기간이 아니라 '기조 발표'라는 사건 명사이므로 during이 알맞다. for는 two hours처럼 숫자 기간 앞에 쓰고, while은 접속사라 뒤에 '주어 + 동사'가 와야 하며, within은 '~ 이내에'라는 기한이라 문맥에 맞지 않는다.",
+    "id": "g01-06"
+   },
+   {
+    "s": "Mr. Delgado will be out of the office ------- two weeks to attend a training program in Seoul.",
+    "o": [
+     "during",
+     "since",
+     "for",
+     "by"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "two weeks는 '얼마 동안'을 나타내는 숫자 기간이므로 for가 정답이다. during은 the holidays처럼 사건·기간 명사 앞에 쓰고, since는 과거 시점과 현재완료에, by는 완료 기한에 쓴다.",
+    "id": "g01-07"
+   },
+   {
+    "s": "Customers who are not fully satisfied may return any item ------- 30 days of purchase for a full refund.",
+    "o": [
+     "during",
+     "within",
+     "until",
+     "since"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "'구매 후 30일 이내에'라는 뜻이므로 기한의 안쪽을 나타내는 within이 알맞다. within + 기간 + of + 기준 시점(purchase)은 반품·환불 안내에 자주 나오는 표현이다. during과 until은 기한을 나타내지 못하고, since는 현재완료와 함께 쓴다.",
+    "id": "g01-08"
+   },
+   {
+    "s": "Sales of electric bicycles have risen steadily ------- the past five years, according to an industry report.",
+    "o": [
+     "since",
+     "by",
+     "at",
+     "over"
+    ],
+    "a": 3,
+    "lv": 3,
+    "exp": "the past five years는 기간이므로 현재완료(have risen)와 함께 '지난 5년에 걸쳐'를 뜻하는 over가 알맞다. since 뒤에는 2021 같은 과거 '시점'이 와야 하므로 since the past five years는 틀린 표현이다. by는 완료 기한, at은 시각 앞에 쓴다.",
+    "id": "g01-09"
+   },
+   {
+    "s": "------- receiving your application, our human resources team will contact you to schedule an interview.",
+    "o": [
+     "Since",
+     "During",
+     "Upon",
+     "Until"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "upon + -ing는 '~하자마자, ~하면'이라는 뜻으로, 지원서를 받으면 연락하겠다는 문맥에 맞는다. Since -ing는 현재완료와 써야 하는데 주절이 미래(will contact)라 맞지 않고, During 뒤에는 명사가 와야 하며, Until receiving은 '받을 때까지 연락한다'는 어색한 뜻이 된다.",
+    "id": "g01-10"
+   },
+   {
+    "s": "Please arrive at the venue at least 20 minutes ------- to the start of the workshop.",
+    "o": [
+     "before",
+     "prior",
+     "ahead",
+     "advance"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "빈칸 뒤 to와 함께 '~보다 앞서'를 뜻하는 prior to가 되어야 한다. before는 그 자체로 전치사라 뒤에 to를 붙이지 않고(before the start), ahead는 ahead of, advance는 in advance of 형태로 써야 한다.",
+    "id": "g01-11"
+   },
+   {
+    "s": "The renovated employee cafeteria on the second floor is expected to reopen ------- two weeks.",
+    "o": [
+     "at",
+     "in",
+     "since",
+     "on"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "in + 기간은 '(지금부터) ~ 후에'라는 뜻이므로 '2주 후에 다시 문을 연다'는 in two weeks가 알맞다. at은 시각, on은 날짜·요일 앞에 쓰고, since는 과거 시점과 함께 현재완료로 쓴다.",
+    "id": "g01-12"
+   },
+   {
+    "s": "Visitors may tour the historic factory floor ------- weekday mornings from 9:00 to 11:30.",
+    "o": [
+     "on",
+     "in",
+     "at",
+     "by"
+    ],
+    "a": 0,
+    "lv": 3,
+    "exp": "그냥 '아침에'는 in the morning이지만 요일이 붙은 아침(Monday mornings, weekday mornings)은 특정한 날을 가리키므로 on을 쓴다. in은 the morning처럼 하루의 일부만 말할 때, at은 시각, by는 완료 기한에 쓴다.",
+    "id": "g01-13"
+   },
+   {
+    "s": "The museum will be closed to the public ------- January 5 through January 12 for maintenance.",
+    "o": [
+     "since",
+     "by",
+     "from",
+     "until"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "빈칸 뒤 through January 12와 짝을 이루어 '1월 5일부터 12일까지'를 나타내는 from이 정답이다(from A through B). since는 현재완료와 쓰고, by와 until은 끝 시점 하나만 나타내므로 through와 함께 쓸 수 없다.",
+    "id": "g01-14"
+   },
+   {
+    "s": "The marketing team worked on the campaign ------- the summer, finishing just before the product launch in September.",
+    "o": [
+     "within",
+     "since",
+     "by",
+     "throughout"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "'여름 내내' 캠페인 작업을 했다는 뜻이므로 기간 전체를 나타내는 throughout이 알맞다. within은 within two weeks처럼 기한의 안쪽을 나타내고, since는 현재완료와, by the summer는 '여름까지 완료'라는 뜻이라 과거 시제 worked on과 어울리지 않는다.",
+    "id": "g01-15"
+   }
+  ],
+  "id": "g01"
+ },
+ {
+  "title": "장소·방향 전치사",
+  "cat": "전치사",
+  "lesson": [
+   {
+    "h": "at·on·in: 지점·표면·공간",
+    "t": "at은 특정 지점(at the front desk, at 25 Oak Street), on은 표면·층·거리(on the third floor, on Main Street), in은 둘러싸인 공간이나 도시·국가(in the lobby, in Chicago)에 쓴다. 건물의 층(floor) 앞에는 반드시 on을 쓴다는 점이 자주 출제된다.",
+    "ex": [
+     {
+      "en": "Our office is *on* the fifth floor of the Baxter Building.",
+      "ko": "저희 사무실은 백스터 빌딩 5층에 있습니다."
+     },
+     {
+      "en": "Please check in *at* the front desk.",
+      "ko": "프런트 데스크에서 체크인해 주세요."
+     }
+    ]
+   },
+   {
+    "h": "between vs among, 위치 전치사",
+    "t": "between은 둘 사이(between A and B), among은 셋 이상 사이(among the participants)에 쓴다. next to·beside(옆에), opposite·across from(맞은편에), near(가까이), behind(뒤에)도 자주 나오는 위치 전치사다.",
+    "ex": [
+     {
+      "en": "The café is *between* the bank and the post office.",
+      "ko": "카페는 은행과 우체국 사이에 있다."
+     },
+     {
+      "en": "The plan was popular *among* employees.",
+      "ko": "그 계획은 직원들 사이에서 인기가 있었다."
+     }
+    ]
+   },
+   {
+    "h": "방향·이동: through·across·along·toward",
+    "t": "through는 문·터널처럼 안을 '통과하여', across는 길·강 등을 '가로질러, 건너편에', along은 길·강을 '따라', toward는 '~ 쪽으로, ~을 향해'라는 뜻이다. toward는 make progress toward a goal처럼 목표를 향한 추상적인 방향에도 쓴다.",
+    "ex": [
+     {
+      "en": "Trucks must enter *through* the north gate.",
+      "ko": "트럭은 북문을 통해 들어와야 한다."
+     },
+     {
+      "en": "The bank is *across* the street *from* the hotel.",
+      "ko": "은행은 호텔 길 건너편에 있다."
+     }
+    ]
+   },
+   {
+    "h": "범위·분포: throughout·within·beyond·below",
+    "t": "throughout은 '~ 전역에 걸쳐'(throughout the building), within은 '~ 이내에'(within walking distance of the station), beyond는 '~ 너머에, ~을 지나'라는 뜻이다. above/below는 기준선보다 위·아래를 나타내며 온도·수치에도 쓴다.",
+    "ex": [
+     {
+      "en": "Recycling bins are placed *throughout* the office.",
+      "ko": "재활용 수거함이 사무실 곳곳에 놓여 있다."
+     },
+     {
+      "en": "The hotel is *within* walking distance of the beach.",
+      "ko": "그 호텔은 해변까지 걸어갈 수 있는 거리에 있다."
+     }
+    ]
+   }
+  ],
+  "trap": "'~ 사이에'라는 우리말만 보고 between을 고르지 말고 대상이 둘(A and B)인지 셋 이상인지 확인하자. '길 건너편'은 across the street from, '걸어갈 수 있는 거리'는 within walking distance of처럼 덩어리로 외워 두어야 한다.",
+  "qs": [
+   {
+    "s": "Our accounting department has moved to a larger office ------- the seventh floor.",
+    "o": [
+     "on",
+     "in",
+     "at",
+     "to"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "건물의 층(floor) 앞에는 on을 쓴다(on the seventh floor). in은 the lobby처럼 둘러싸인 공간, at은 the front desk처럼 특정 지점 앞에 쓰고, to는 방향을 나타내는데 이미 moved to가 앞에 있어 a larger office를 다시 층과 연결하지 못한다.",
+    "id": "g02-01"
+   },
+   {
+    "s": "Tickets for the jazz festival can be purchased ------- the box office or through our Web site.",
+    "o": [
+     "on",
+     "into",
+     "at",
+     "among"
+    ],
+    "a": 2,
+    "lv": 1,
+    "exp": "매표소(box office)처럼 특정 지점에서 무언가를 할 때는 at을 쓴다. on은 표면이나 층, into는 안으로 들어가는 이동, among은 셋 이상의 무리 사이를 나타내므로 매표소 앞에 쓸 수 없다.",
+    "id": "g02-02"
+   },
+   {
+    "s": "The new parking garage is located ------- the hotel and the convention center.",
+    "o": [
+     "among",
+     "between",
+     "through",
+     "along"
+    ],
+    "a": 1,
+    "lv": 1,
+    "exp": "빈칸 뒤에 the hotel and the convention center라는 두 대상이 and로 연결되어 있으므로 between A and B가 정답이다. among은 셋 이상의 무리 사이, through는 통과, along은 길·강을 따라 이어진 모습을 나타낸다.",
+    "id": "g02-03"
+   },
+   {
+    "s": "Ms. Lin's proposal was the most popular ------- the twelve ideas submitted to the planning committee.",
+    "o": [
+     "between",
+     "across",
+     "within",
+     "among"
+    ],
+    "a": 3,
+    "lv": 3,
+    "exp": "the twelve ideas처럼 셋 이상의 대상 가운데를 말할 때는 among을 쓴다. between은 기본적으로 두 대상 사이(between A and B)에 쓰고, across는 '가로질러, 전역에', within은 '~ 이내에'라는 뜻이라 '열두 개 아이디어 중에서'를 나타낼 수 없다.",
+    "id": "g02-04"
+   },
+   {
+    "s": "Delivery trucks must enter the warehouse ------- the rear gate on Fulton Avenue.",
+    "o": [
+     "across",
+     "along",
+     "between",
+     "through"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "출입문(gate)을 '통과하여' 들어온다는 뜻이므로 through가 알맞다. across는 길·강을 가로지를 때, along은 길을 따라갈 때 쓰고, between은 뒤에 A and B 두 대상이 와야 한다.",
+    "id": "g02-05"
+   },
+   {
+    "s": "A new bicycle path runs ------- the riverbank from city hall to the sports stadium.",
+    "o": [
+     "among",
+     "along",
+     "onto",
+     "throughout"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "자전거 도로가 강둑을 '따라' 이어진다는 뜻이므로 길·강처럼 길게 뻗은 대상과 쓰는 along이 정답이다. among은 셋 이상의 무리 사이, onto는 표면 위로의 이동, throughout은 '~ 전역에 걸쳐'라는 뜻이라 강둑을 따라 뻗은 길을 나타내지 못한다.",
+    "id": "g02-06"
+   },
+   {
+    "s": "The Harbor View Hotel is conveniently located ------- walking distance of the city's main shopping district.",
+    "o": [
+     "inside",
+     "among",
+     "within",
+     "beside"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "'~까지 걸어갈 수 있는 거리에'는 within walking distance of로 쓰는 고정 표현이다. inside는 건물 안 같은 물리적 내부, among은 셋 이상 사이, beside는 '바로 옆에'라는 뜻이라 walking distance와 함께 쓰지 않는다.",
+    "id": "g02-07"
+   },
+   {
+    "s": "Free wireless Internet access is now available ------- the entire airport terminal.",
+    "o": [
+     "throughout",
+     "among",
+     "between",
+     "along"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "the entire airport terminal(터미널 전체)과 어울려 '~ 전역에 걸쳐'를 뜻하는 throughout이 알맞다. among과 between은 여러 대상 사이를 말할 때 쓰고, along은 길처럼 긴 대상을 따라가는 모습이라 공간 전체에 퍼진 의미를 나타내지 못한다.",
+    "id": "g02-08"
+   },
+   {
+    "s": "The shipment ------- our supplier in Vietnam arrived two days earlier than expected.",
+    "o": [
+     "from",
+     "off",
+     "out",
+     "beyond"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "'베트남 공급업체로부터 온 배송품'이라는 뜻이므로 출발점·출처를 나타내는 from이 정답이다. off는 '~에서 떨어져', out은 out of 형태로 '~ 밖으로'라는 뜻이고, beyond는 '~ 너머'라서 출처를 나타낼 수 없다.",
+    "id": "g02-09"
+   },
+   {
+    "s": "The pharmacy is located directly ------- the street from the Westfield Medical Center.",
+    "o": [
+     "opposite",
+     "beside",
+     "through",
+     "across"
+    ],
+    "a": 3,
+    "lv": 3,
+    "exp": "빈칸 뒤 the street from과 함께 '~의 길 건너편에'를 뜻하는 across the street from이 되어야 한다. opposite는 opposite the medical center처럼 대상을 바로 받고, beside는 '옆에', through는 '통과하여'라는 뜻이라 the street from 구조와 맞지 않는다.",
+    "id": "g02-10"
+   },
+   {
+    "s": "Temperatures in the storage room must be kept ------- 5 degrees Celsius to protect the vaccines.",
+    "o": [
+     "between",
+     "beyond",
+     "below",
+     "among"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "백신 보관을 위해 온도를 '섭씨 5도 아래로' 유지해야 한다는 뜻이므로 기준선보다 낮음을 나타내는 below가 정답이다. between은 between 2 and 8 degrees처럼 두 값이 필요하고, beyond는 '~을 넘어서', among은 셋 이상 사이를 나타내 수치 하나와 쓰지 않는다.",
+    "id": "g02-11"
+   },
+   {
+    "s": "The company is making steady progress ------- its goal of reducing energy use by 20 percent.",
+    "o": [
+     "onto",
+     "toward",
+     "into",
+     "along"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "make progress toward + 목표는 '~을 향해 진전을 이루다'라는 뜻으로, toward는 물리적 방향뿐 아니라 목표를 향한 추상적 방향에도 쓴다. onto와 into는 '~ 위로, ~ 안으로'의 이동, along은 '~을 따라'라는 뜻이라 목표와 어울리지 않는다.",
+    "id": "g02-12"
+   },
+   {
+    "s": "Our new distribution center will allow us to ship products ------- the country within 48 hours.",
+    "o": [
+     "among",
+     "across",
+     "between",
+     "along"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "'전국 곳곳으로' 배송한다는 뜻이므로 넓은 지역 전체에 걸침을 나타내는 across가 알맞다(across the country). among과 between은 여러 대상 사이를 말할 때 쓰고, along은 도로·강처럼 길게 뻗은 대상을 따라갈 때 쓴다.",
+    "id": "g02-13"
+   },
+   {
+    "s": "The hiking trail continues ------- the visitors' center for another three kilometers before reaching the lake.",
+    "o": [
+     "among",
+     "between",
+     "beyond",
+     "within"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "등산로가 방문자 센터를 '지나 그 너머로' 3킬로미터 더 이어진다는 뜻이므로 beyond가 정답이다. among은 셋 이상 사이, between은 A and B 두 대상 사이, within은 '~ 이내에'라는 뜻이라 계속 뻗어 가는 길과 맞지 않는다.",
+    "id": "g02-14"
+   },
+   {
+    "s": "Ms. Patel's office is ------- the end of the hallway, next to the copy room.",
+    "o": [
+     "at",
+     "on",
+     "in",
+     "to"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "복도 끝처럼 한 지점을 가리킬 때는 at the end of를 쓴다. in the end는 '결국'이라는 뜻의 부사구라 장소를 나타낼 수 없고, on과 to도 the end of the hallway와 함께 위치를 나타내지 않는다.",
+    "id": "g02-15"
+   }
+  ],
+  "id": "g02"
+ },
+ {
+  "title": "기타 빈출 전치사·전치사 숙어",
+  "cat": "전치사",
+  "lesson": [
+   {
+    "h": "전치사 vs 접속사: despite·due to",
+    "t": "despite/in spite of(~에도 불구하고), because of/due to/owing to(~ 때문에)는 전치사라서 뒤에 명사(구)가 온다. 같은 뜻의 although/even though, because/since는 접속사라 뒤에 '주어 + 동사'가 온다. 빈칸 뒤가 명사구인지 절인지부터 확인하자.",
+    "ex": [
+     {
+      "en": "*Despite* the rain, the event was a success.",
+      "ko": "비가 왔는데도 행사는 성공적이었다."
+     },
+     {
+      "en": "The flight was canceled *due to* heavy fog.",
+      "ko": "짙은 안개 때문에 항공편이 취소되었다."
+     }
+    ]
+   },
+   {
+    "h": "추가·제외·대체",
+    "t": "in addition to/besides(~ 외에도), except (for)/apart from(~을 제외하고), instead of(~ 대신에)는 뒤에 명사나 동명사(-ing)를 받는다. in addition to의 to는 전치사이므로 동사원형이 아니라 -ing가 온다.",
+    "ex": [
+     {
+      "en": "*In addition to* offering free Wi-Fi, the hotel runs an airport shuttle.",
+      "ko": "그 호텔은 무료 와이파이 제공 외에도 공항 셔틀을 운행한다."
+     },
+     {
+      "en": "Everyone *except for* Mr. Cho attended.",
+      "ko": "조 씨를 제외한 모두가 참석했다."
+     }
+    ]
+   },
+   {
+    "h": "~에 관하여·~에 따라",
+    "t": "regarding/concerning/with regard to(~에 관하여), according to(~에 따르면), in accordance with(~에 따라, ~을 준수하여), in light of(~을 고려하여)는 비즈니스 문서에 자주 나온다.",
+    "ex": [
+     {
+      "en": "Please contact us with any questions *regarding* your order.",
+      "ko": "주문에 관해 궁금한 점이 있으면 연락해 주십시오."
+     },
+     {
+      "en": "*According to* the report, sales rose by 8 percent.",
+      "ko": "보고서에 따르면 매출이 8퍼센트 증가했다."
+     }
+    ]
+   },
+   {
+    "h": "수단·대리·숙어",
+    "t": "by + 무관사 명사는 수단(by e-mail, by credit card), on behalf of는 '~을 대표하여', in charge of는 '~을 책임지는', in response to는 '~에 대응하여'라는 뜻이다. be eligible for(~의 자격이 있다), ahead of schedule(예정보다 일찍)처럼 짝이 정해진 표현은 통째로 외워 두자.",
+    "ex": [
+     {
+      "en": "Mr. Ford spoke *on behalf of* the entire staff.",
+      "ko": "포드 씨가 전 직원을 대표하여 연설했다."
+     },
+     {
+      "en": "The project was finished *ahead of* schedule.",
+      "ko": "프로젝트는 예정보다 일찍 끝났다."
+     }
+    ]
+   }
+  ],
+  "trap": "despite와 although, due to와 because처럼 뜻이 같은 전치사·접속사 쌍이 보기에 함께 나온다. 뜻이 아니라 빈칸 뒤 구조(명사구인지, 주어 + 동사인지)로 골라야 한다. 또 in addition to, prior to의 to는 전치사라 뒤에 -ing가 온다.",
+  "qs": [
+   {
+    "s": "------- the heavy rain, the outdoor product launch event attracted more than 500 visitors.",
+    "o": [
+     "Although",
+     "Despite",
+     "However",
+     "Because"
+    ],
+    "a": 1,
+    "lv": 1,
+    "exp": "빈칸 뒤 the heavy rain은 명사구이고 비가 왔는데도 방문객이 많았다는 양보의 의미이므로 전치사 Despite가 정답이다. Although와 Because는 접속사라 뒤에 '주어 + 동사'가 와야 하고, However는 접속부사라 명사구를 이끌 수 없다.",
+    "id": "g03-01"
+   },
+   {
+    "s": "The flight to Denver was delayed for three hours ------- a mechanical problem with one of the engines.",
+    "o": [
+     "due to",
+     "because",
+     "since",
+     "although"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "빈칸 뒤 a mechanical problem은 명사구이므로 '~ 때문에'를 뜻하는 전치사 due to가 알맞다. because와 although는 접속사라 절이 와야 하고, since는 전치사로 쓰이면 '~ 이래로'라는 시간의 뜻이라 지연의 원인을 나타내지 못한다.",
+    "id": "g03-02"
+   },
+   {
+    "s": "------- Ms. Romero, all members of the committee have approved the proposed budget.",
+    "o": [
+     "Instead of",
+     "Because of",
+     "According to",
+     "Except for"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "'로메로 씨를 제외하고 위원 전원이 승인했다'는 뜻이므로 Except for가 정답이다. Instead of(~ 대신에), Because of(~ 때문에), According to(~에 따르면)를 넣으면 '위원 전원의 승인'과 의미가 이어지지 않는다.",
+    "id": "g03-03"
+   },
+   {
+    "s": "------- the latest customer survey, most of our clients prefer to receive updates by text message.",
+    "o": [
+     "In addition to",
+     "Regardless of",
+     "According to",
+     "On behalf of"
+    ],
+    "a": 2,
+    "lv": 1,
+    "exp": "설문 조사 결과를 근거로 고객의 선호를 전달하는 문장이므로 '~에 따르면'을 뜻하는 According to가 알맞다. In addition to(~ 외에도), Regardless of(~에 상관없이), On behalf of(~을 대표하여)는 설문 조사와 뒤 내용을 자연스럽게 연결하지 못한다.",
+    "id": "g03-04"
+   },
+   {
+    "s": "Please direct all questions ------- the new travel reimbursement policy to Mr. Kwan in the accounting department.",
+    "o": [
+     "regarding",
+     "upon",
+     "besides",
+     "except"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "'새 출장비 환급 정책에 관한 질문'이라는 뜻이므로 '~에 관하여'를 뜻하는 regarding이 정답이다. upon은 '~하자마자', besides는 '~ 외에도', except는 '~을 제외하고'라는 뜻이라 questions와 정책을 연결하지 못한다.",
+    "id": "g03-05"
+   },
+   {
+    "s": "------- providing free shipping, the online retailer offers a 10 percent discount to first-time buyers.",
+    "o": [
+     "In addition to",
+     "Moreover",
+     "Except",
+     "As well"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "무료 배송 제공 '외에도' 할인을 해 준다는 뜻이고 빈칸 뒤에 동명사구(providing ~)가 오므로 전치사 In addition to가 알맞다. Moreover는 접속부사라 동명사구를 이끌 수 없고, As well은 as well as가 되어야 하며, Except는 '제외'의 뜻이라 문맥에 맞지 않는다.",
+    "id": "g03-06"
+   },
+   {
+    "s": "Mr. Novak accepted the award ------- the entire research team, which could not attend the ceremony.",
+    "o": [
+     "in charge of",
+     "on behalf of",
+     "in spite of",
+     "by means of"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "연구팀이 시상식에 오지 못해 노박 씨가 '팀을 대표하여' 상을 받았다는 뜻이므로 on behalf of가 정답이다. in charge of는 '~을 책임지는', in spite of는 '~에도 불구하고', by means of는 '~을 수단으로'라는 뜻이라 문맥에 맞지 않는다.",
+    "id": "g03-07"
+   },
+   {
+    "s": "All payments for event registration can be made ------- credit card or bank transfer at the front desk.",
+    "o": [
+     "with",
+     "by",
+     "on",
+     "in"
+    ],
+    "a": 1,
+    "lv": 1,
+    "exp": "관사 없는 수단 명사(credit card, bank transfer) 앞에서 '~으로'를 나타내는 것은 by다. with는 with a credit card처럼 관사가 있어야 자연스럽고, on과 in은 결제 수단을 나타내지 않는다.",
+    "id": "g03-08"
+   },
+   {
+    "s": "The new safety guidelines were introduced ------- several complaints from factory workers.",
+    "o": [
+     "in addition",
+     "as a result",
+     "in order to",
+     "in response to"
+    ],
+    "a": 3,
+    "lv": 3,
+    "exp": "공장 근로자들의 불만'에 대응하여' 지침을 도입했다는 뜻으로, 빈칸 뒤 명사구를 받는 in response to가 정답이다. in addition과 as a result는 뒤에 to나 of가 없으면 명사를 받을 수 없고, in order to 뒤에는 동사원형이 와야 한다.",
+    "id": "g03-09"
+   },
+   {
+    "s": "------- the recent increase in fuel costs, the airline has decided to raise ticket prices by five percent.",
+    "o": [
+     "Even though",
+     "Whereas",
+     "As though",
+     "In light of"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "빈칸 뒤가 명사구(the recent increase in fuel costs)이므로 전치사가 필요하고, '연료비 상승을 고려하여' 요금을 올린다는 뜻의 In light of가 알맞다. Even though, Whereas, As though는 모두 접속사라 뒤에 '주어 + 동사'가 와야 한다.",
+    "id": "g03-10"
+   },
+   {
+    "s": "Mr. Ito will be ------- charge of the Tokyo office while the branch manager is on leave.",
+    "o": [
+     "on",
+     "at",
+     "in",
+     "under"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "'~을 책임지는, 담당하는'은 in charge of로 쓰는 고정 표현이다. on, at, under는 charge of와 결합해 '담당'의 뜻을 나타내지 않는다.",
+    "id": "g03-11"
+   },
+   {
+    "s": "All construction work must be carried out in accordance ------- local building regulations.",
+    "o": [
+     "to",
+     "for",
+     "with",
+     "by"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "in accordance with는 '~에 따라, ~을 준수하여'라는 뜻의 고정 표현이므로 with가 정답이다. according to와 혼동해 to를 고르기 쉽지만 accordance 뒤에는 반드시 with가 온다.",
+    "id": "g03-12"
+   },
+   {
+    "s": "------- holding the meeting in person, the director decided to conduct it by video conference.",
+    "o": [
+     "Rather",
+     "Instead of",
+     "Despite",
+     "Except"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "'대면 회의를 여는 대신 화상 회의로 진행했다'는 대체의 의미이므로 동명사를 받는 Instead of가 알맞다. Rather는 Rather than이 되어야 하고, Despite는 양보, Except는 제외의 뜻이라 문맥에 맞지 않는다.",
+    "id": "g03-13"
+   },
+   {
+    "s": "Only employees who have worked here for at least six months are eligible ------- the tuition reimbursement program.",
+    "o": [
+     "for",
+     "to",
+     "with",
+     "of"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "be eligible for + 명사는 '~의 자격이 있다'라는 뜻이다. eligible to는 eligible to apply처럼 뒤에 동사원형이 올 때 쓰므로, 명사구 the tuition reimbursement program 앞에는 for가 맞다.",
+    "id": "g03-14"
+   },
+   {
+    "s": "Thanks to the team's hard work, the factory expansion was completed two weeks ------- schedule.",
+    "o": [
+     "prior",
+     "in advance",
+     "ahead of",
+     "on top of"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "'예정보다 2주 일찍'은 ahead of schedule로 쓴다. prior는 prior to 형태로 써야 하고, in advance는 뒤에 명사를 바로 받지 못하며(in advance of), on top of는 '~에 더하여'라는 뜻이라 일정과 어울리지 않는다.",
+    "id": "g03-15"
+   }
+  ],
+  "id": "g03"
+ },
+ {
+  "title": "비교급·최상급",
+  "cat": "수식어",
+  "lesson": [
+   {
+    "h": "원급 비교: as + 원급 + as",
+    "t": "두 대상이 같은 정도일 때 as + 형용사/부사 원급 + as를 쓴다. 배수는 twice/three times + as ~ as, '가능한 한 ~하게'는 as ~ as possible이다. as와 as 사이에는 비교급·최상급이 아니라 원급이 들어간다.",
+    "ex": [
+     {
+      "en": "The new model is *as light as* a tablet.",
+      "ko": "새 모델은 태블릿만큼 가볍다."
+     },
+     {
+      "en": "Please reply *as soon as possible*.",
+      "ko": "가능한 한 빨리 답장해 주세요."
+     }
+    ]
+   },
+   {
+    "h": "비교급 + than, 비교급 강조",
+    "t": "than이 보이면 비교급(-er / more ~)을 고른다. 비교급을 강조할 때는 much, even, far, still, a lot을 쓰고 very는 쓸 수 없다. '더 적은'은 셀 수 없는 명사 앞에서 less, 셀 수 있는 명사 앞에서 fewer다.",
+    "ex": [
+     {
+      "en": "This year's profits were *much higher than* last year's.",
+      "ko": "올해 수익은 작년보다 훨씬 높았다."
+     },
+     {
+      "en": "The new design uses *less* energy *than* the old one.",
+      "ko": "새 디자인은 이전 것보다 에너지를 덜 쓴다."
+     }
+    ]
+   },
+   {
+    "h": "최상급: the + -est / most",
+    "t": "셋 이상 중 '가장 ~한'은 the + 최상급이며 뒤에 in + 장소·집단, of + 복수명사, (that) 주어 + have ever p.p.가 자주 온다. one of the + 최상급 + 복수명사(가장 ~한 것 중 하나), 최상급을 강조하는 by far(단연)도 기억하자.",
+    "ex": [
+     {
+      "en": "Glenwood is *one of the largest* employers in the region.",
+      "ko": "글렌우드는 지역에서 가장 큰 고용주 중 하나다."
+     },
+     {
+      "en": "This is *by far the best* offer we have received.",
+      "ko": "이것은 우리가 받은 제안 중 단연 최고다."
+     }
+    ]
+   },
+   {
+    "h": "the 비교급, the 비교급 / 라틴어 비교급",
+    "t": "'~할수록 더 ~하다'는 The + 비교급 ~, the + 비교급 ~으로 쓴다. superior, inferior, prior, senior, junior처럼 -or로 끝나는 라틴어 비교급은 than이 아니라 to와 함께 쓴다.",
+    "ex": [
+     {
+      "en": "*The sooner* you register, *the more* you save.",
+      "ko": "일찍 등록할수록 더 많이 절약할 수 있다."
+     },
+     {
+      "en": "The new material is *superior to* plastic in durability.",
+      "ko": "새 소재는 내구성 면에서 플라스틱보다 우수하다."
+     }
+    ]
+   }
+  ],
+  "trap": "very는 원급만 강조하므로 very faster는 틀리고 much/even/far faster가 맞다. 보기를 보기 전에 비교 단서(than, as ~ as, of the twelve, ever, the 비교급)를 먼저 찾은 뒤 원급·비교급·최상급을 고르자.",
+  "qs": [
+   {
+    "s": "The new laser printer is much ------- than the old model and uses less ink per page.",
+    "o": [
+     "fast",
+     "fastest",
+     "faster",
+     "more fast"
+    ],
+    "a": 2,
+    "lv": 1,
+    "exp": "빈칸 뒤에 than이 있고 앞에 비교급 강조 부사 much가 있으므로 비교급 faster가 정답이다. fast는 원급, fastest는 최상급이라 than과 쓸 수 없고, 1음절 형용사 fast는 more fast가 아니라 faster로 비교급을 만든다.",
+    "id": "g04-01"
+   },
+   {
+    "s": "Ridgeway Electronics is now the ------- supplier of solar panels in the region.",
+    "o": [
+     "largeness",
+     "largest",
+     "larger",
+     "largely"
+    ],
+    "a": 1,
+    "lv": 1,
+    "exp": "정관사 the와 범위를 나타내는 in the region이 있으므로 '지역에서 가장 큰'을 뜻하는 최상급 largest가 알맞다. larger는 than이나 of the two 같은 비교 대상이 필요하고, largeness는 명사, largely는 부사라 명사 supplier를 꾸밀 수 없다.",
+    "id": "g04-02"
+   },
+   {
+    "s": "Our online sales this quarter were twice as ------- as those of the previous quarter.",
+    "o": [
+     "high",
+     "higher",
+     "highest",
+     "highly"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "twice as ~ as 사이에는 원급이 들어가므로 high가 정답이다. higher와 highest는 비교급·최상급이라 as ~ as 사이에 쓸 수 없고, highly는 '매우'라는 뜻의 부사라 be동사 뒤 보어 자리에 맞지 않는다.",
+    "id": "g04-03"
+   },
+   {
+    "s": "This year's conference attracted ------- participants than any previous event in the organization's history.",
+    "o": [
+     "more",
+     "most",
+     "much",
+     "many"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "빈칸 뒤에 than이 있으므로 비교급이 필요하고, 셀 수 있는 복수명사 participants를 꾸미는 비교급은 more다(many-more-most). most는 최상급, much와 many는 원급이라 than과 쓸 수 없다.",
+    "id": "g04-04"
+   },
+   {
+    "s": "The revised proposal is ------- more detailed than the first draft submitted in May.",
+    "o": [
+     "very",
+     "so",
+     "too",
+     "even"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "비교급 more detailed를 강조하는 부사가 필요하므로 even(훨씬)이 정답이다. very, so, too는 원급을 꾸미는 말이라 비교급 앞에 쓸 수 없다.",
+    "id": "g04-05"
+   },
+   {
+    "s": "Founded in 1871, Hillcrest Savings Bank is one of the ------- financial institutions in the state.",
+    "o": [
+     "oldest",
+     "older",
+     "old",
+     "oldness"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "one of the + 최상급 + 복수명사 구조이므로 최상급 oldest가 알맞다. older는 비교급, old는 원급이라 one of the 뒤에서 '가장 ~한 것 중 하나'를 나타낼 수 없고, oldness는 명사라 형용사 자리에 올 수 없다.",
+    "id": "g04-06"
+   },
+   {
+    "s": "The ------- we receive your completed form, the sooner we can process your refund.",
+    "o": [
+     "early",
+     "earlier",
+     "earliest",
+     "earliness"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "뒤 절이 the sooner(the + 비교급)로 시작하므로 'The + 비교급 ~, the + 비교급 ~(~할수록 더 ~하다)' 구조가 되도록 비교급 earlier를 써야 한다. early는 원급, earliest는 최상급, earliness는 명사라 이 구조에 맞지 않는다.",
+    "id": "g04-07"
+   },
+   {
+    "s": "Last month's charity concert was the most successful event the foundation has ------- organized.",
+    "o": [
+     "yet",
+     "already",
+     "still",
+     "ever"
+    ],
+    "a": 3,
+    "lv": 3,
+    "exp": "최상급(the most successful) 뒤에 '(that) 주어 + have ever p.p.'를 써서 '지금까지 ~한 것 중 가장 ~한'을 나타낸다. yet은 주로 부정문·의문문에 쓰고, already와 still은 최상급 뒤에서 경험의 범위를 나타내지 못한다.",
+    "id": "g04-08"
+   },
+   {
+    "s": "The new packaging is made from ------- plastic than before, which significantly reduces waste.",
+    "o": [
+     "fewer",
+     "less",
+     "little",
+     "least"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "빈칸 뒤에 than이 있으므로 비교급이 필요하고, plastic은 셀 수 없는 명사이므로 less가 정답이다. fewer는 셀 수 있는 복수명사 앞에 쓰고, little은 원급, least는 최상급이라 than과 함께 쓸 수 없다.",
+    "id": "g04-09"
+   },
+   {
+    "s": "Mr. Santos completed the inventory check ------- than any other employee in the warehouse.",
+    "o": [
+     "most quickly",
+     "quickest",
+     "quick",
+     "more quickly"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "동사 completed를 꾸미는 부사가 필요하고 뒤에 than이 있으므로 부사의 비교급 more quickly가 정답이다. most quickly와 quickest는 최상급이라 than과 쓸 수 없고, quick은 형용사 원급이다. 'than any other + 단수명사'는 비교급으로 최상급의 의미를 나타내는 표현이다.",
+    "id": "g04-10"
+   },
+   {
+    "s": "Our newest laptop model is ------- to its predecessor in both battery life and processing speed.",
+    "o": [
+     "better",
+     "higher",
+     "superior",
+     "greater"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "빈칸 뒤에 than이 아니라 to가 있으므로 to와 함께 비교를 나타내는 라틴어 비교급 superior가 정답이다(superior to: ~보다 우수한). better, higher, greater는 일반 비교급이라 뒤에 than이 와야 한다.",
+    "id": "g04-11"
+   },
+   {
+    "s": "This is by ------- the most comprehensive guide to small-business accounting available today.",
+    "o": [
+     "much",
+     "very",
+     "far",
+     "well"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "최상급(the most comprehensive)을 강조하는 표현은 by far(단연)다. much는 주로 비교급을 강조하며 by와 결합해 최상급을 꾸미지 않고, very와 well도 by 뒤에서 최상급을 강조하지 못한다.",
+    "id": "g04-12"
+   },
+   {
+    "s": "Speakers are asked to keep their presentations as ------- as possible so that there is time for questions.",
+    "o": [
+     "briefer",
+     "briefest",
+     "brief",
+     "briefly"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "as ~ as possible 사이에는 원급이 들어가고, keep + 목적어 + 형용사(목적격 보어) 구조이므로 형용사 원급 brief가 정답이다. briefer와 briefest는 비교급·최상급이라 as ~ as 사이에 올 수 없고, briefly는 부사라 목적격 보어 자리에 맞지 않는다.",
+    "id": "g04-13"
+   },
+   {
+    "s": "Sales of the new smartphone were ------- than expected, prompting the company to increase production.",
+    "o": [
+     "stronger",
+     "strong",
+     "strongest",
+     "strongly"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "빈칸 뒤 than expected(예상보다)가 있으므로 비교급 stronger가 정답이다. strong은 원급, strongest는 최상급이라 than과 쓸 수 없고, strongly는 부사라 be동사 뒤 보어 자리에 올 수 없다.",
+    "id": "g04-14"
+   },
+   {
+    "s": "Ms. Watanabe's sales figures were the highest ------- the twelve representatives in the department.",
+    "o": [
+     "than",
+     "of",
+     "as",
+     "to"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "최상급 the highest 뒤에서 비교 범위를 나타낼 때는 of + 복수명사(of the twelve representatives)를 쓴다. than은 비교급, as는 원급 비교, to는 superior 같은 라틴어 비교급과 함께 쓴다.",
+    "id": "g04-15"
+   }
+  ],
+  "id": "g04"
+ },
+ {
+  "title": "수량 표현·한정사",
+  "cat": "수식어",
+  "lesson": [
+   {
+    "h": "each·every + 단수명사",
+    "t": "each와 every 뒤에는 단수명사와 단수동사가 온다(every employee is). each of the + 복수명사도 주어의 핵심은 each라서 단수동사를 쓴다. 단, every + 숫자 + 복수명사는 '~마다'라는 뜻이다(every six months).",
+    "ex": [
+     {
+      "en": "*Every* applicant *is* required to submit a resume.",
+      "ko": "모든 지원자는 이력서를 제출해야 한다."
+     },
+     {
+      "en": "*Each of* the rooms *has* a private balcony.",
+      "ko": "객실마다 전용 발코니가 있다."
+     }
+    ]
+   },
+   {
+    "h": "few·a few vs little·a little",
+    "t": "few/a few는 셀 수 있는 복수명사, little/a little은 셀 수 없는 명사 앞에 쓴다. a가 없으면 '거의 없는'(부정), a가 있으면 '약간 있는'(긍정)이므로 문맥이 긍정인지 부정인지도 확인해야 한다.",
+    "ex": [
+     {
+      "en": "*Few* customers complained about the change.",
+      "ko": "그 변경에 불만을 제기한 고객은 거의 없었다."
+     },
+     {
+      "en": "We have *a little* time before the meeting.",
+      "ko": "회의 전에 시간이 조금 있다."
+     }
+    ]
+   },
+   {
+    "h": "many·a number of vs much·an amount of",
+    "t": "many, several, numerous, a number of는 셀 수 있는 복수명사와, much, a great deal of, an amount of는 셀 수 없는 명사와 쓴다. a number of + 복수명사(많은 ~)는 복수동사, the number of + 복수명사(~의 수)는 number가 주어라 단수동사를 쓴다.",
+    "ex": [
+     {
+      "en": "*A number of* clients *have* asked for a discount.",
+      "ko": "많은 고객이 할인을 요청했다."
+     },
+     {
+      "en": "*The number of* visitors *has* increased.",
+      "ko": "방문객 수가 증가했다."
+     }
+    ]
+   },
+   {
+    "h": "all·most·both·neither",
+    "t": "all/most/some + (of the) + 복수명사·불가산명사를 쓰고, almost는 부사라 명사를 직접 꾸미지 못한다(almost all of the staff). both는 둘 다, either는 둘 중 하나, neither는 둘 다 아님이며, either/neither of the + 복수명사 뒤에는 단수동사를 쓴다.",
+    "ex": [
+     {
+      "en": "*Most of* the staff members work remotely on Fridays.",
+      "ko": "직원 대부분이 금요일에는 원격으로 근무한다."
+     },
+     {
+      "en": "*Neither* of the two sites *was* suitable.",
+      "ko": "두 부지 중 어느 곳도 적합하지 않았다."
+     }
+    ]
+   }
+  ],
+  "trap": "'대부분의'를 almost로 쓰는 실수가 많다. almost는 부사이므로 almost all employees처럼 all 앞에 쓰고, 명사 앞에는 most를 쓴다. every + 복수명사, little + 복수명사처럼 가산·불가산 짝이 어긋난 보기도 자주 나온다.",
+  "qs": [
+   {
+    "s": "------- employee is required to wear an identification badge while in the building.",
+    "o": [
+     "Every",
+     "All",
+     "Most",
+     "Many"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "빈칸 뒤에 단수명사 employee와 단수동사 is가 있으므로 단수명사를 꾸미는 Every가 정답이다. All, Most, Many는 all employees are처럼 복수명사와 함께 써야 한다.",
+    "id": "g05-01"
+   },
+   {
+    "s": "The hotel manager received ------- complaints about the noise from the construction site next door.",
+    "o": [
+     "much",
+     "every",
+     "several",
+     "little"
+    ],
+    "a": 2,
+    "lv": 1,
+    "exp": "빈칸 뒤 complaints는 셀 수 있는 복수명사이므로 several(몇몇의)이 알맞다. much와 little은 셀 수 없는 명사 앞에, every는 단수명사 앞에 쓴다.",
+    "id": "g05-02"
+   },
+   {
+    "s": "There is still ------- information available about the merger, so analysts are reluctant to comment.",
+    "o": [
+     "few",
+     "little",
+     "many",
+     "several"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "information은 셀 수 없는 명사이고, 분석가들이 논평을 꺼린다는 문맥상 '거의 없는'이라는 부정의 뜻이 필요하므로 little이 정답이다. few, many, several은 모두 셀 수 있는 복수명사 앞에 쓴다.",
+    "id": "g05-03"
+   },
+   {
+    "s": "Each of the new interns ------- assigned a mentor from the senior staff on the first day.",
+    "o": [
+     "are",
+     "being",
+     "have",
+     "is"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "Each of the + 복수명사에서 주어의 핵심은 each이므로 단수동사가 와야 하고, 멘토를 '배정받는' 수동의 의미이므로 is (assigned)가 정답이다. are는 복수동사, being은 문장의 동사가 될 수 없고, have assigned는 복수형인 데다 능동이라 의미가 맞지 않는다.",
+    "id": "g05-04"
+   },
+   {
+    "s": "The shuttle bus to the airport departs from the main entrance of the hotel ------- 30 minutes.",
+    "o": [
+     "each",
+     "all",
+     "every",
+     "many"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "every + 숫자 + 복수명사는 '~마다'라는 뜻이므로 '30분마다 출발한다'는 every 30 minutes가 알맞다. each는 숫자와 함께 이런 간격을 나타내지 못하고, all과 many에는 '~마다'라는 의미가 없다.",
+    "id": "g05-05"
+   },
+   {
+    "s": "------- of the staff members attended last Thursday's workshop on data security.",
+    "o": [
+     "Almost",
+     "Most",
+     "Every",
+     "Much"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "of the + 복수명사(staff members) 앞에서 '~의 대부분'을 나타내는 대명사 Most가 정답이다. Almost는 부사라 혼자 of the를 이끌 수 없고(almost all of the로 써야 함), Every는 of와 함께 쓰지 않으며, Much of는 셀 수 없는 명사에 쓴다.",
+    "id": "g05-06"
+   },
+   {
+    "s": "A ------- of customers have requested that the store extend its weekend hours.",
+    "o": [
+     "number",
+     "amount",
+     "deal",
+     "few"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "빈칸 뒤 customers는 셀 수 있는 복수명사이고 동사도 복수(have)이므로 a number of(많은)가 알맞다. an amount of와 a great deal of는 셀 수 없는 명사에 쓰고, a few는 뒤에 of 없이 명사가 바로 와야 한다(a few customers).",
+    "id": "g05-07"
+   },
+   {
+    "s": "The number of applicants for the summer internship program ------- doubled over the past two years.",
+    "o": [
+     "have",
+     "are",
+     "were",
+     "has"
+    ],
+    "a": 3,
+    "lv": 3,
+    "exp": "The number of + 복수명사는 '~의 수'라는 뜻으로 주어의 핵심이 number이므로 단수동사를 쓴다. over the past two years가 있어 현재완료가 알맞으므로 has가 정답이다. have는 복수동사이고, are/were doubled는 수동태라 의미가 맞지 않는다.",
+    "id": "g05-08"
+   },
+   {
+    "s": "Only a ------- seats remain for Friday's performance, so we recommend booking your tickets soon.",
+    "o": [
+     "few",
+     "little",
+     "many",
+     "much"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "빈칸 뒤 seats는 셀 수 있는 복수명사이고 'Only a ~'로 '몇 석만 남았다'는 뜻이므로 a few가 정답이다. a little은 셀 수 없는 명사에 쓰고, many와 much는 a와 함께 이런 형태로 쓰지 않는다.",
+    "id": "g05-09"
+   },
+   {
+    "s": "The renovation of the hotel lobby required a considerable ------- of time and money.",
+    "o": [
+     "number",
+     "many",
+     "amount",
+     "few"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "time과 money는 셀 수 없는 명사이므로 a considerable amount of(상당한 양의)가 알맞다. a number of는 셀 수 있는 복수명사에 쓰고, many와 few는 a considerable 뒤 명사 자리에 올 수 없다.",
+    "id": "g05-10"
+   },
+   {
+    "s": "------- of the two final candidates had enough management experience, so the position will be advertised again.",
+    "o": [
+     "Neither",
+     "None",
+     "Either",
+     "Both"
+    ],
+    "a": 0,
+    "lv": 3,
+    "exp": "채용 공고를 다시 낸다는 결과로 보아 두 최종 후보가 '모두 ~ 아니었다'는 뜻의 Neither가 정답이다. None은 셋 이상일 때 쓰고, Either(둘 중 하나)나 Both(둘 다)를 쓰면 경험이 충분한 후보가 있는데도 재공고를 하는 셈이 되어 논리가 맞지 않는다.",
+    "id": "g05-11"
+   },
+   {
+    "s": "Because ------- employees signed up for the evening training session, it has been canceled.",
+    "o": [
+     "little",
+     "few",
+     "a few",
+     "much"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "교육이 취소되었다는 결과로 보아 '신청한 직원이 거의 없었다'는 부정의 뜻이 필요하고, employees는 셀 수 있는 복수명사이므로 few가 정답이다. a few는 '몇 명 있었다'는 긍정의 뜻이라 취소 이유로 어색하고, little과 much는 셀 수 없는 명사에 쓴다.",
+    "id": "g05-12"
+   },
+   {
+    "s": "Please make sure that ------- piece of equipment is returned to the storage room after use.",
+    "o": [
+     "all",
+     "many",
+     "each",
+     "several"
+    ],
+    "a": 2,
+    "lv": 1,
+    "exp": "빈칸 뒤에 단수명사 piece와 단수동사 is가 있으므로 단수명사를 꾸미는 each가 정답이다. all, many, several은 복수명사와 함께 쓴다.",
+    "id": "g05-13"
+   },
+   {
+    "s": "------- the furniture in the reception area will be replaced during next month's renovation.",
+    "o": [
+     "Many",
+     "All",
+     "Every",
+     "Few"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "furniture는 셀 수 없는 명사이고 빈칸 뒤에 정관사 the가 있으므로 all the + 명사(~ 전부) 형태가 되는 All이 정답이다. Many와 Few는 셀 수 있는 복수명사에 쓰고 the 앞에 바로 올 수 없으며, Every는 단수 가산명사 앞에만 쓴다.",
+    "id": "g05-14"
+   },
+   {
+    "s": "The updated training manual contains ------- useful tips for new sales representatives.",
+    "o": [
+     "much",
+     "a great deal of",
+     "every",
+     "numerous"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "빈칸 뒤 tips는 셀 수 있는 복수명사이므로 '수많은'을 뜻하는 numerous가 알맞다. much와 a great deal of는 셀 수 없는 명사, every는 단수명사와 함께 쓴다.",
+    "id": "g05-15"
+   }
+  ],
+  "id": "g05"
+ },
+ {
+  "title": "부정대명사",
+  "cat": "수식어",
+  "lesson": [
+   {
+    "h": "one·ones vs it",
+    "t": "앞에 나온 명사와 같은 종류의 '불특정한 하나'는 one(복수는 ones), 앞에 나온 바로 그 대상은 it으로 받는다. one은 a new one, the larger one처럼 형용사의 꾸밈을 받을 수 있지만 it은 그럴 수 없다.",
+    "ex": [
+     {
+      "en": "My laptop is too old, so I need a new *one*.",
+      "ko": "노트북이 너무 오래돼서 새것이 필요하다."
+     },
+     {
+      "en": "I lost my badge, but security found *it*.",
+      "ko": "출입증을 잃어버렸는데 보안팀이 찾아 주었다."
+     }
+    ]
+   },
+   {
+    "h": "another: 또 하나",
+    "t": "another는 an + other로 '(여러 개 중) 또 다른 하나'를 뜻하며, 단수명사 앞에 쓰거나 대명사로 단독으로 쓴다. another + 숫자 + 복수명사는 '~만큼 더'(another two weeks), one after another는 '잇따라'라는 뜻이다.",
+    "ex": [
+     {
+      "en": "This room is booked, so let's find *another*.",
+      "ko": "이 방은 예약되어 있으니 다른 방을 찾아봅시다."
+     },
+     {
+      "en": "The project needs *another* three days.",
+      "ko": "그 프로젝트는 사흘이 더 필요하다."
+     }
+    ]
+   },
+   {
+    "h": "other + 복수명사, others",
+    "t": "other는 형용사로 복수명사·불가산명사 앞에 쓰고(other companies), others는 'other + 복수명사'를 대신하는 대명사다. some ~, others ~는 '어떤 사람(것)들은 ~, 다른 사람(것)들은 ~'이라는 뜻이다.",
+    "ex": [
+     {
+      "en": "Unlike *other* firms, we offer free consultations.",
+      "ko": "다른 회사들과 달리 저희는 무료 상담을 제공합니다."
+     },
+     {
+      "en": "Some staff drive to work; *others* take the train.",
+      "ko": "어떤 직원들은 차로 출근하고, 다른 직원들은 기차를 탄다."
+     }
+    ]
+   },
+   {
+    "h": "the other, the others",
+    "t": "정해진 범위 안의 '나머지'를 가리킬 때는 the를 붙인다. 둘 중 하나는 one, 나머지 하나는 the other이고, 셋 이상에서 나머지 전부는 the others(= the other + 복수명사)다.",
+    "ex": [
+     {
+      "en": "We have two offices: one in Seoul and *the other* in Busan.",
+      "ko": "사무실이 두 곳인데, 하나는 서울에, 다른 하나는 부산에 있다."
+     },
+     {
+      "en": "One file was saved, but *the others* were lost.",
+      "ko": "파일 하나는 저장됐지만 나머지는 모두 사라졌다."
+     }
+    ]
+   },
+   {
+    "h": "each other·one another",
+    "t": "each other와 one another는 '서로'라는 뜻의 대명사로 동사나 전치사의 목적어 자리에 온다. 주어 자리에는 쓰지 않는다.",
+    "ex": [
+     {
+      "en": "The two departments support *each other*.",
+      "ko": "두 부서는 서로를 지원한다."
+     }
+    ]
+   }
+  ],
+  "trap": "the가 붙으면 '정해진 범위의 나머지'라는 점을 기억하자. 둘 중 나머지 하나는 the other, 여럿 중 나머지 전부는 the others, 범위가 정해지지 않은 '또 하나'는 another다. other는 대명사로 혼자 쓰지 못하고 뒤에 명사가 와야 한다.",
+  "qs": [
+   {
+    "s": "This printer has run out of toner, so please use ------- in the copy room on the second floor.",
+    "o": [
+     "other",
+     "it",
+     "another",
+     "each other"
+    ],
+    "a": 2,
+    "lv": 1,
+    "exp": "토너가 떨어진 이 프린터 말고 '다른 프린터 한 대'를 쓰라는 뜻이므로 단수 대명사 another가 알맞다. other는 뒤에 명사가 있어야 하고, it은 토너가 떨어진 바로 그 프린터를 가리켜 논리가 맞지 않으며, each other는 '서로'라는 뜻이다.",
+    "id": "g06-01"
+   },
+   {
+    "s": "Mr. Fischer has two assistants: one handles his schedule, and ------- manages client correspondence.",
+    "o": [
+     "the other",
+     "another",
+     "other",
+     "others"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "two assistants처럼 둘로 정해진 범위에서 하나(one)를 말한 뒤 '나머지 하나'는 the other로 받는다. another는 범위가 정해지지 않은 '또 하나', other는 뒤에 명사가 필요하고, others는 복수라 단수동사 manages와 맞지 않는다.",
+    "id": "g06-02"
+   },
+   {
+    "s": "Some employees prefer to work from home, while ------- enjoy the social atmosphere of the office.",
+    "o": [
+     "others",
+     "other",
+     "the other",
+     "another"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "'어떤 직원들은 ~, 다른 직원들은 ~'이라는 some ~, others ~ 구조이고 동사도 복수(enjoy)이므로 others가 정답이다. other는 뒤에 명사가 와야 하고, the other와 another는 단수 대명사라 복수동사 enjoy와 맞지 않는다.",
+    "id": "g06-03"
+   },
+   {
+    "s": "The project deadline has been extended by ------- two weeks due to delays in receiving parts.",
+    "o": [
+     "another",
+     "other",
+     "the others",
+     "others"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "another + 숫자 + 복수명사는 '~만큼 더'라는 뜻으로 '2주 더 연장되었다'를 나타낸다. other two weeks나 others two weeks라고는 쓰지 않으며, the others는 대명사라 뒤에 명사를 둘 수 없다.",
+    "id": "g06-04"
+   },
+   {
+    "s": "Unlike ------- smartphone manufacturers, Brightline offers a five-year warranty on all of its devices.",
+    "o": [
+     "another",
+     "others",
+     "each other",
+     "other"
+    ],
+    "a": 3,
+    "lv": 1,
+    "exp": "빈칸 뒤 복수명사 manufacturers를 꾸밀 형용사가 필요하므로 other가 정답이다. another는 단수명사와 쓰고, others와 each other는 대명사라 뒤에 명사를 둘 수 없다.",
+    "id": "g06-05"
+   },
+   {
+    "s": "The old filing cabinets in the accounting office will be replaced with new ------- next month.",
+    "o": [
+     "one",
+     "it",
+     "them",
+     "ones"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "앞에 나온 복수명사 filing cabinets를 같은 종류의 다른 것으로 받으면서 형용사 new의 꾸밈을 받으므로 ones가 알맞다. one은 단수라 복수 cabinets를 받을 수 없고, it과 them은 형용사의 꾸밈을 받지 못한다.",
+    "id": "g06-06"
+   },
+   {
+    "s": "Of the three proposals submitted, one was rejected, and ------- are still under review.",
+    "o": [
+     "the other",
+     "the others",
+     "another",
+     "other"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "세 개로 정해진 범위에서 하나를 뺀 '나머지 전부(두 개)'이고 동사가 복수(are)이므로 the others가 정답이다. the other와 another는 단수 대명사이고, other는 뒤에 명사가 필요하다.",
+    "id": "g06-07"
+   },
+   {
+    "s": "Team members are encouraged to share ideas with ------- during the weekly brainstorming session.",
+    "o": [
+     "another",
+     "each other",
+     "the other",
+     "other"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "팀원들이 '서로' 아이디어를 공유한다는 뜻이므로 each other가 정답이다. another와 the other는 단수 한 명을 가리켜 팀원들끼리 주고받는 의미가 되지 않고, other는 대명사로 혼자 쓸 수 없다.",
+    "id": "g06-08"
+   },
+   {
+    "s": "This laptop bag is too small for our 15-inch models, so please order a larger -------.",
+    "o": [
+     "it",
+     "other",
+     "one",
+     "another"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "앞에 나온 laptop bag과 같은 종류의 '더 큰 것 하나'라는 뜻이고 a larger의 꾸밈을 받으므로 one이 정답이다. it은 형용사의 꾸밈을 받지 못하고, other는 대명사로 단독으로 쓰지 않으며, another는 이미 an을 포함하고 있어 a larger 뒤에 올 수 없다.",
+    "id": "g06-09"
+   },
+   {
+    "s": "The lab received two shipments of supplies this week, and ------- is expected to arrive on Friday.",
+    "o": [
+     "the other",
+     "other",
+     "another",
+     "others"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "이미 받은 두 건 외에 '한 건이 더' 온다는 뜻이므로 another가 정답이다. the other는 정해진 범위의 나머지를 뜻하는데 언급된 두 건은 이미 도착했으므로 맞지 않고, other는 단독으로 쓰지 못하며, others는 복수라 단수동사 is와 맞지 않는다.",
+    "id": "g06-10"
+   },
+   {
+    "s": "Ms. Diaz reviewed the first chapter of the report, and Mr. Kim proofread ------- sections.",
+    "o": [
+     "the other",
+     "another",
+     "the others",
+     "each other"
+    ],
+    "a": 0,
+    "lv": 3,
+    "exp": "보고서라는 정해진 범위에서 첫 장을 제외한 '나머지 부분들'이므로 복수명사 sections를 꾸미는 the other가 정답이다. another는 단수명사와 쓰고, the others와 each other는 대명사라 뒤에 명사를 둘 수 없다.",
+    "id": "g06-11"
+   },
+   {
+    "s": "The marketing team launched one successful campaign after ------- this year, boosting brand awareness significantly.",
+    "o": [
+     "other",
+     "others",
+     "another",
+     "the others"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "one after another는 '잇따라, 차례로'라는 뜻의 고정 표현이므로 another가 정답이다. other는 단독으로 쓰지 못하고, others와 the others는 이 표현에 쓰지 않는다.",
+    "id": "g06-12"
+   },
+   {
+    "s": "If you lose your security badge, you must request a new ------- from the front desk.",
+    "o": [
+     "it",
+     "other",
+     "ones",
+     "one"
+    ],
+    "a": 3,
+    "lv": 1,
+    "exp": "잃어버린 출입증과 같은 종류의 '새것 하나'를 뜻하고 a new의 꾸밈을 받으므로 one이 알맞다. it은 잃어버린 바로 그 출입증을 가리키며 형용사의 꾸밈을 받지 못하고, other는 단독으로 쓰지 않으며, ones는 복수라 a와 함께 쓸 수 없다.",
+    "id": "g06-13"
+   },
+   {
+    "s": "Customers who bought this blender also purchased ------- kitchen appliances from our spring catalog.",
+    "o": [
+     "another",
+     "other",
+     "each",
+     "every"
+    ],
+    "a": 1,
+    "lv": 1,
+    "exp": "빈칸 뒤 복수명사 appliances를 꾸며야 하므로 other가 정답이다. another, each, every는 모두 단수명사 앞에 쓴다.",
+    "id": "g06-14"
+   },
+   {
+    "s": "Ms. Ruiz left her company laptop in a taxi yesterday, but the driver returned ------- to the office this morning.",
+    "o": [
+     "one",
+     "it",
+     "another",
+     "other"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "택시에 두고 내린 '바로 그 노트북'을 돌려준 것이므로 특정 대상을 가리키는 it이 정답이다. one과 another는 같은 종류의 다른 물건을 뜻해 기사가 다른 노트북을 가져다준 의미가 되고, other는 단독으로 쓰지 못한다.",
+    "id": "g06-15"
+   }
+  ],
+  "id": "g06"
+ },
+ {
+  "title": "혼동하기 쉬운 형용사·부사",
+  "cat": "수식어",
+  "lesson": [
+   {
+    "h": "hard vs hardly",
+    "t": "hard는 형용사(어려운, 단단한)와 부사(열심히, 세게)로 모두 쓰인다. hardly는 '거의 ~ 않다'라는 부정의 뜻이라 not과 함께 쓰지 않으며, hardly any(거의 없는), hardly ever(거의 ~ 않는)로 자주 나온다.",
+    "ex": [
+     {
+      "en": "The team worked *hard* to meet the deadline.",
+      "ko": "팀은 마감을 맞추려고 열심히 일했다."
+     },
+     {
+      "en": "There were *hardly* any complaints.",
+      "ko": "불만은 거의 없었다."
+     }
+    ]
+   },
+   {
+    "h": "late vs lately",
+    "t": "late는 형용사(늦은)와 부사(늦게)로 모두 쓰이고, lately는 '최근에'라는 뜻으로 주로 현재완료와 함께 쓴다. latest는 '최신의'라는 형용사다.",
+    "ex": [
+     {
+      "en": "The train arrived 20 minutes *late*.",
+      "ko": "기차가 20분 늦게 도착했다."
+     },
+     {
+      "en": "Sales have improved *lately*.",
+      "ko": "최근 매출이 개선되었다."
+     }
+    ]
+   },
+   {
+    "h": "near/nearly, close/closely, most/mostly",
+    "t": "near는 '가까운, 가까이, ~ 가까이에'(형용사·부사·전치사), nearly는 '거의'다. close는 '가까운, 가까이', closely는 '면밀히, 밀접하게'이고, most는 '대부분(의), 가장', mostly는 '주로'라는 부사다.",
+    "ex": [
+     {
+      "en": "The project is *nearly* finished.",
+      "ko": "프로젝트가 거의 끝났다."
+     },
+     {
+      "en": "We will monitor the results *closely*.",
+      "ko": "결과를 면밀히 지켜볼 것이다."
+     }
+    ]
+   },
+   {
+    "h": "high vs highly",
+    "t": "high는 물리적 높이(높은, 높이)를 나타내는 형용사·부사이고, highly는 '매우'라는 정도 부사로 highly recommended, highly qualified, speak highly of(~을 높이 평가하다)처럼 쓴다.",
+    "ex": [
+     {
+      "en": "Ms. Ito is *highly* qualified for the role.",
+      "ko": "이토 씨는 그 직책에 필요한 자격을 충분히 갖추고 있다."
+     },
+     {
+      "en": "The balloon rose *high* into the sky.",
+      "ko": "풍선이 하늘 높이 올라갔다."
+     }
+    ]
+   },
+   {
+    "h": "-ly 형용사, short/shortly, free/freely",
+    "t": "friendly, costly, timely, likely, orderly처럼 -ly로 끝나지만 형용사인 단어가 있다. shortly는 '곧', free는 '무료로'(free of charge), freely는 '자유롭게'라는 뜻이다.",
+    "ex": [
+     {
+      "en": "Expanding overseas would be too *costly*.",
+      "ko": "해외로 확장하는 것은 비용이 너무 많이 들 것이다."
+     },
+     {
+      "en": "The results will be announced *shortly*.",
+      "ko": "결과는 곧 발표될 것이다."
+     }
+    ]
+   }
+  ],
+  "trap": "-ly가 붙으면 뜻이 완전히 달라지는 쌍(hard/hardly, late/lately, near/nearly, high/highly)은 '부사 자리니까 -ly'라고 기계적으로 고르면 틀린다. 품사뿐 아니라 문장의 의미에 맞는 단어를 골라야 한다.",
+  "qs": [
+   {
+    "s": "The marketing team worked ------- to finish the campaign materials before the product launch.",
+    "o": [
+     "hardly",
+     "hardship",
+     "hardness",
+     "hard"
+    ],
+    "a": 3,
+    "lv": 1,
+    "exp": "'제품 출시 전에 끝내려고 열심히 일했다'는 뜻이므로 '열심히'를 뜻하는 부사 hard가 정답이다. hardly는 '거의 ~ 않다'라는 부정의 뜻이라 문맥에 맞지 않고, hardship과 hardness는 명사라 동사 worked를 꾸밀 수 없다.",
+    "id": "g07-01"
+   },
+   {
+    "s": "Ms. Kowalski was ------- recommended by her former employers for her leadership skills.",
+    "o": [
+     "highly",
+     "high",
+     "higher",
+     "height"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "과거분사 recommended를 꾸며 '적극 추천받은'을 뜻하는 정도 부사 highly가 알맞다. high는 물리적 높이를 나타내고, higher는 비교급, height는 명사라 분사를 꾸밀 수 없다.",
+    "id": "g07-02"
+   },
+   {
+    "s": "There were ------- any seats left in the auditorium by the time the keynote speech began.",
+    "o": [
+     "hardly",
+     "hard",
+     "harder",
+     "hardest"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "빈칸 뒤 any와 함께 hardly any(거의 없는)를 이루어 '남은 좌석이 거의 없었다'는 뜻이 된다. hard는 '열심히, 어려운', harder와 hardest는 비교급·최상급이라 any seats를 꾸며 의미를 만들 수 없다.",
+    "id": "g07-03"
+   },
+   {
+    "s": "Sales of our organic snack line have increased significantly -------, especially among young professionals.",
+    "o": [
+     "late",
+     "later",
+     "lately",
+     "latest"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "현재완료(have increased)와 어울려 '최근에'를 뜻하는 lately가 정답이다. late는 '늦게', later는 '나중에'라는 뜻이라 현재완료와 맞지 않고, latest는 '최신의'라는 형용사다.",
+    "id": "g07-04"
+   },
+   {
+    "s": "Construction of the new terminal is ------- complete, with only the interior painting remaining.",
+    "o": [
+     "near",
+     "nearest",
+     "nearby",
+     "nearly"
+    ],
+    "a": 3,
+    "lv": 1,
+    "exp": "내부 도색만 남았다는 내용으로 보아 '거의 완료된'이라는 뜻이 필요하므로 nearly가 정답이다. near는 '가까운, 가까이', nearest는 최상급, nearby는 '근처의'라는 뜻이라 형용사 complete를 꾸며 '거의'를 나타내지 못한다.",
+    "id": "g07-05"
+   },
+   {
+    "s": "The board members agreed to monitor the company's expenses ------- over the next quarter.",
+    "o": [
+     "close",
+     "closed",
+     "closely",
+     "closing"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "동사 monitor를 꾸며 '면밀히 감시하다'를 뜻하는 부사 closely가 정답이다. close는 '가까이'라는 거리의 의미이고, closed와 closing은 분사라 '면밀히'라는 뜻을 나타내지 못한다.",
+    "id": "g07-06"
+   },
+   {
+    "s": "The express train to Portland arrived 40 minutes ------- because of track maintenance near Salem.",
+    "o": [
+     "lately",
+     "lateness",
+     "late",
+     "latest"
+    ],
+    "a": 2,
+    "lv": 1,
+    "exp": "'40분 늦게 도착했다'는 뜻이므로 '늦게'를 뜻하는 부사 late가 정답이다. lately는 '최근에'라는 뜻이고, lateness는 명사, latest는 '최신의'라는 형용사라 맞지 않는다.",
+    "id": "g07-07"
+   },
+   {
+    "s": "Replacing the entire roofing system would be too ------- for the small family-run business.",
+    "o": [
+     "costly",
+     "costs",
+     "costing",
+     "cost"
+    ],
+    "a": 0,
+    "lv": 3,
+    "exp": "be동사 뒤 보어 자리이고 too의 꾸밈을 받으므로 형용사 costly(비용이 많이 드는)가 정답이다. -ly로 끝나지만 부사가 아니라 형용사라는 점이 함정이다. costs와 cost는 동사·명사, costing은 분사라 too의 꾸밈을 받아 상태를 나타내지 못한다.",
+    "id": "g07-08"
+   },
+   {
+    "s": "The software update will be released ------- after the final round of testing is completed.",
+    "o": [
+     "shortly",
+     "short",
+     "shorter",
+     "shortage"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "after 앞에서 '곧, 직후에'를 뜻하는 부사 shortly가 알맞다(shortly after: ~ 직후에). short는 '짧은', shorter는 비교급, shortage는 '부족'이라는 명사다.",
+    "id": "g07-09"
+   },
+   {
+    "s": "The audience at the trade fair consisted ------- of industry professionals and corporate buyers.",
+    "o": [
+     "most",
+     "mostly",
+     "almost",
+     "more"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "consisted와 of 사이에서 '주로'라는 뜻으로 동사를 꾸미는 부사 mostly가 정답이다. most는 '대부분(의), 가장', almost는 '거의'라는 뜻이라 consisted of 사이에 들어가지 않고, more는 비교 대상이 없다.",
+    "id": "g07-10"
+   },
+   {
+    "s": "The new conference center is located ------- the airport, so most attendees can arrive easily.",
+    "o": [
+     "nearly",
+     "near",
+     "nearness",
+     "nearing"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "빈칸 뒤 명사 the airport를 목적어로 받아 '공항 가까이에'를 나타내는 전치사 near가 정답이다. nearly는 '거의'라는 부사, nearness는 명사, nearing은 분사라 위치를 나타낼 수 없다.",
+    "id": "g07-11"
+   },
+   {
+    "s": "Children under the age of six can attend the science exhibition ------- of charge.",
+    "o": [
+     "freely",
+     "free",
+     "freedom",
+     "freeing"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "free of charge는 '무료로'라는 뜻의 고정 표현이다. freely는 '자유롭게', freedom은 명사, freeing은 분사라 of charge와 결합하지 않는다.",
+    "id": "g07-12"
+   },
+   {
+    "s": "During the annual meeting, the CEO spoke ------- of the research team's contributions to the company's success.",
+    "o": [
+     "high",
+     "highest",
+     "highly",
+     "heighten"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "speak highly of는 '~을 높이 평가하다, 칭찬하다'라는 뜻의 표현이므로 highly가 정답이다. high는 물리적 높이를, highest는 최상급을 나타내고, heighten은 동사라 맞지 않는다.",
+    "id": "g07-13"
+   },
+   {
+    "s": "The new delivery drone can fly as ------- as 500 meters above the ground in good weather.",
+    "o": [
+     "highly",
+     "height",
+     "heighten",
+     "high"
+    ],
+    "a": 3,
+    "lv": 3,
+    "exp": "'지상 500미터 높이까지 날 수 있다'는 물리적 높이를 나타내므로 부사 high가 정답이다. highly는 '매우'라는 정도 부사라 실제 높이에 쓰지 않고, height는 명사, heighten은 동사다.",
+    "id": "g07-14"
+   },
+   {
+    "s": "Customers who make ------- payments on their accounts will be charged a fee of $25.",
+    "o": [
+     "lately",
+     "late",
+     "later",
+     "lateness"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "명사 payments를 꾸며 '기한을 넘긴(늦은) 납부'를 뜻하는 형용사 late가 정답이다. lately는 '최근에'라는 부사라 명사를 꾸밀 수 없고, later는 '나중의'라는 뜻이라 수수료 부과 이유가 되지 않으며, lateness는 명사다.",
+    "id": "g07-15"
+   }
+  ],
+  "id": "g07"
+ },
+ {
+  "title": "자동사·타동사와 문장 형식(4·5형식)",
+  "cat": "동사",
+  "lesson": [
+   {
+    "h": "자동사 + 전치사, 타동사 + 목적어",
+    "t": "자동사는 목적어를 바로 받지 못해 전치사가 필요하다(respond to, comply with, participate in, object to, account for). 반대로 discuss, attend, contact, mention, reach, approach는 타동사라 전치사 없이 목적어를 바로 받는다(discuss about X).",
+    "ex": [
+     {
+      "en": "All staff must *comply with* the dress code.",
+      "ko": "전 직원은 복장 규정을 준수해야 한다."
+     },
+     {
+      "en": "We will *discuss* the budget tomorrow.",
+      "ko": "내일 예산을 논의할 것이다."
+     }
+    ]
+   },
+   {
+    "h": "rise vs raise",
+    "t": "rise(오르다)는 자동사라 목적어가 없고(rise-rose-risen), raise(올리다, 모으다)는 타동사라 목적어가 필요하다(raise-raised-raised). 같은 방식으로 lie(놓여 있다)는 자동사, lay(놓다)는 타동사다.",
+    "ex": [
+     {
+      "en": "Prices *rose* by 4 percent.",
+      "ko": "가격이 4퍼센트 올랐다."
+     },
+     {
+      "en": "The company will *raise* salaries next year.",
+      "ko": "회사는 내년에 급여를 인상할 것이다."
+     }
+    ]
+   },
+   {
+    "h": "4형식: give 류 vs explain 류",
+    "t": "give, send, offer, award, grant, show는 '사람 + 사물' 두 목적어를 받는다. 반면 explain, describe, announce, suggest는 사람을 바로 목적어로 받지 못해 'explain + 사물 + to + 사람'으로 쓴다. inform, notify는 '사람 + of/about + 사물', provide, supply는 '사람 + with + 사물'로 쓴다.",
+    "ex": [
+     {
+      "en": "The firm *offered* Ms. Ray a full-time position.",
+      "ko": "회사는 레이 씨에게 정규직 자리를 제안했다."
+     },
+     {
+      "en": "He *explained* the process *to* the new staff.",
+      "ko": "그는 신입 직원들에게 절차를 설명했다."
+     }
+    ]
+   },
+   {
+    "h": "5형식·2형식: 보어 자리에는 형용사",
+    "t": "make, keep, find, consider + 목적어 + 형용사(목적격 보어), remain, become, seem + 형용사(주격 보어) 구조에서 보어 자리에는 부사가 올 수 없다. 수동태가 되어도 보어는 그대로 남는다(be considered essential).",
+    "ex": [
+     {
+      "en": "Most users *found* the app very *useful*.",
+      "ko": "대부분의 사용자는 그 앱이 매우 유용하다고 생각했다."
+     },
+     {
+      "en": "Prices *remained stable* all year.",
+      "ko": "가격은 일 년 내내 안정세를 유지했다."
+     }
+    ]
+   }
+  ],
+  "trap": "우리말 '~에 대해 논의하다' 때문에 discuss about을, '~에게 설명하다' 때문에 explain + 사람을 쓰는 것이 대표적인 함정이다. 동사가 목적어를 바로 받는지, 어떤 전치사와 짝을 이루는지 동사별로 외워 두자.",
+  "qs": [
+   {
+    "s": "Ms. Han will ------- the proposed merger plan with the board of directors on Thursday.",
+    "o": [
+     "talk",
+     "discuss",
+     "speak",
+     "respond"
+    ],
+    "a": 1,
+    "lv": 1,
+    "exp": "빈칸 뒤에 목적어 the proposed merger plan이 바로 오므로 타동사 discuss가 정답이다. talk와 speak는 자동사라 talk about, speak about처럼 전치사가 필요하고, respond는 respond to 형태로 쓴다.",
+    "id": "g08-01"
+   },
+   {
+    "s": "All employees must ------- with the new safety regulations by the end of the month.",
+    "o": [
+     "follow",
+     "obey",
+     "observe",
+     "comply"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "빈칸 뒤 전치사 with와 짝을 이루는 자동사 comply(준수하다)가 정답이다. follow, obey, observe는 타동사라 with 없이 목적어를 바로 받아야 한다(follow the regulations).",
+    "id": "g08-02"
+   },
+   {
+    "s": "The company plans to ------- prices by 3 percent next quarter to cover rising material costs.",
+    "o": [
+     "raise",
+     "rise",
+     "arise",
+     "rising"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "빈칸 뒤에 목적어 prices가 있으므로 '~을 올리다'라는 타동사 raise가 정답이다. rise와 arise는 자동사라 목적어를 받을 수 없고, rising은 plans to 뒤 동사원형 자리에 올 수 없다.",
+    "id": "g08-03"
+   },
+   {
+    "s": "More than 200 local businesses ------- in last year's community job fair at the city convention center.",
+    "o": [
+     "participated",
+     "attended",
+     "joined",
+     "entered"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "빈칸 뒤에 목적어 없이 전치사 in이 오므로 participate in(~에 참가하다)의 자동사 participated가 정답이다. attended, joined, entered는 타동사라 in 없이 목적어를 바로 받는다(attended the job fair).",
+    "id": "g08-04"
+   },
+   {
+    "s": "Our customer service representatives will ------- to all inquiries within 24 hours.",
+    "o": [
+     "answer",
+     "respond",
+     "handle",
+     "address"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "빈칸 뒤 전치사 to와 결합하는 자동사 respond(응답하다)가 알맞다. answer, handle, address는 타동사라 to 없이 목적어를 바로 받아야 한다(answer all inquiries).",
+    "id": "g08-05"
+   },
+   {
+    "s": "The hotel ------- its guests a complimentary breakfast throughout the holiday season.",
+    "o": [
+     "provided",
+     "explained",
+     "offered",
+     "supplied"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "빈칸 뒤에 사람(its guests)과 사물(a complimentary breakfast) 두 목적어가 이어지므로 4형식 동사 offered가 정답이다. provide와 supply는 '사람 + with + 사물'(provided its guests with ~)로 써야 하고, explain은 사람을 바로 목적어로 받지 못한다.",
+    "id": "g08-06"
+   },
+   {
+    "s": "Mr. Lambert ------- the new expense procedure to the sales staff at Monday's meeting.",
+    "o": [
+     "explained",
+     "informed",
+     "notified",
+     "advised"
+    ],
+    "a": 0,
+    "lv": 3,
+    "exp": "'사물(the new expense procedure) + to + 사람' 구조를 취하는 explained가 정답이다. inform, notify, advise는 사람을 먼저 목적어로 받아 inform the staff of the procedure처럼 써야 하므로 사물 목적어 뒤에 to + 사람이 올 수 없다.",
+    "id": "g08-07"
+   },
+   {
+    "s": "The board considers the new branch in Singapore ------- to the company's growth in Asia.",
+    "o": [
+     "essential",
+     "essentially",
+     "essence",
+     "essentials"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "consider + 목적어 + 형용사(목적격 보어) 구조로 '새 지점을 필수적이라고 여기다'라는 뜻이므로 형용사 essential이 정답이다. essentially는 부사라 보어 자리에 올 수 없고, essence와 essentials는 명사라 to the company's growth와 어울려 의미를 이루지 못한다.",
+    "id": "g08-08"
+   },
+   {
+    "s": "Most participants found the two-day leadership workshop held in Chicago last week extremely -------.",
+    "o": [
+     "informatively",
+     "informative",
+     "information",
+     "inform"
+    ],
+    "a": 1,
+    "lv": 1,
+    "exp": "find + 목적어 + 형용사 구조로 '워크숍이 매우 유익하다고 생각했다'는 뜻이므로 형용사 informative가 정답이다. informatively는 부사라 목적격 보어 자리에 올 수 없고, information은 명사, inform은 동사다.",
+    "id": "g08-09"
+   },
+   {
+    "s": "Sales figures ------- stable throughout the third quarter despite increased competition from overseas.",
+    "o": [
+     "maintained",
+     "preserved",
+     "remained",
+     "sustained"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "빈칸 뒤에 형용사 stable이 보어로 오므로 2형식 동사 remained(계속 ~한 상태이다)가 정답이다. maintained, preserved, sustained는 타동사라 목적어가 필요하고 형용사 보어를 바로 받지 못한다.",
+    "id": "g08-10"
+   },
+   {
+    "s": "The selection committee ------- Ms. Abara the Employee of the Year award for her outstanding performance.",
+    "o": [
+     "described",
+     "congratulated",
+     "awarded",
+     "recognized"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "빈칸 뒤에 사람(Ms. Abara)과 사물(the Employee of the Year award) 두 목적어가 오므로 4형식 동사 awarded가 정답이다. describe는 사람을 간접목적어로 받지 못하고, congratulate와 recognize는 목적어를 하나만 받아 congratulated her on ~처럼 써야 한다.",
+    "id": "g08-11"
+   },
+   {
+    "s": "Please ------- the reception desk if you need any assistance with your luggage.",
+    "o": [
+     "speak",
+     "contact",
+     "talk",
+     "refer"
+    ],
+    "a": 1,
+    "lv": 1,
+    "exp": "빈칸 뒤에 목적어 the reception desk가 바로 오므로 타동사 contact가 정답이다. speak와 talk는 speak to, talk to처럼 전치사가 필요하고, refer는 refer to 형태로 써야 한다.",
+    "id": "g08-12"
+   },
+   {
+    "s": "Unexpected delays at the port ------- for the late arrival of our spring merchandise.",
+    "o": [
+     "explain",
+     "cause",
+     "result",
+     "account"
+    ],
+    "a": 3,
+    "lv": 3,
+    "exp": "빈칸 뒤 전치사 for와 결합해 '~의 원인이 되다, ~을 설명하다'를 뜻하는 account for가 정답이다. explain과 cause는 타동사라 for 없이 목적어를 받고, result는 result in(~을 초래하다)이나 result from(~에서 비롯되다) 형태로 쓴다.",
+    "id": "g08-13"
+   },
+   {
+    "s": "During the interview, Mr. Yoon ------- his experience managing international sales teams.",
+    "o": [
+     "referred",
+     "talked",
+     "commented",
+     "mentioned"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "빈칸 뒤에 목적어 his experience가 바로 오므로 타동사 mentioned가 정답이다. referred는 referred to, talked는 talked about, commented는 commented on처럼 전치사가 있어야 목적어를 받을 수 있다.",
+    "id": "g08-14"
+   },
+   {
+    "s": "Several employees have ------- to the proposed changes in the company's vacation policy.",
+    "o": [
+     "opposed",
+     "disapproved",
+     "objected",
+     "rejected"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "빈칸 뒤 전치사 to와 결합해 '~에 반대하다'를 뜻하는 자동사 objected가 정답이다. opposed와 rejected는 타동사라 to 없이 목적어를 바로 받고, disapproved는 disapproved of 형태로 쓴다.",
+    "id": "g08-15"
+   }
+  ],
+  "id": "g08"
+ },
+ {
+  "title": "주요 동사 패턴(사역·지각동사, require ~ to, suggest that ~ 원형)",
+  "cat": "동사",
+  "lesson": [
+   {
+    "h": "사역동사: make·have·let + 목적어 + 동사원형",
+    "t": "make, have, let은 '목적어가 ~하게 하다'라는 뜻으로 목적격 보어에 동사원형을 쓴다. 목적어가 동작을 당하는 사물이면 have + 목적어 + p.p.(~을 ~되게 하다)를 쓴다. get은 뜻이 비슷하지만 get + 사람 + to부정사, get + 사물 + p.p.로 쓴다.",
+    "ex": [
+     {
+      "en": "The manager *let* us *leave* early.",
+      "ko": "매니저는 우리를 일찍 퇴근하게 해 주었다."
+     },
+     {
+      "en": "We *had* the printer *repaired*.",
+      "ko": "우리는 프린터를 수리받았다."
+     }
+    ]
+   },
+   {
+    "h": "help + 목적어 + (to) 동사원형",
+    "t": "help는 목적격 보어로 동사원형과 to부정사를 모두 쓸 수 있다. Part 5에서는 동사원형이 정답으로 자주 나오며, -ing나 p.p.는 쓰지 않는다.",
+    "ex": [
+     {
+      "en": "The new tool *helps* staff *track* their hours.",
+      "ko": "새 도구는 직원들이 근무 시간을 기록하는 데 도움이 된다."
+     }
+    ]
+   },
+   {
+    "h": "지각동사: see·watch·hear·notice + 목적어 + 원형/-ing",
+    "t": "지각동사는 목적격 보어로 동사원형(동작 전체) 또는 -ing(진행 중인 동작)를 쓰고, to부정사는 쓰지 않는다.",
+    "ex": [
+     {
+      "en": "I *saw* him *enter* the building.",
+      "ko": "나는 그가 건물에 들어가는 것을 보았다."
+     },
+     {
+      "en": "We *heard* the alarm *ringing*.",
+      "ko": "우리는 경보가 울리는 소리를 들었다."
+     }
+    ]
+   },
+   {
+    "h": "require·ask·allow·encourage + 목적어 + to부정사",
+    "t": "require, ask, allow, enable, encourage, expect, advise, remind는 '목적어 + to부정사'를 취하고, 수동태로 바꾸면 be required to처럼 to부정사가 바로 이어진다.",
+    "ex": [
+     {
+      "en": "The rules *require* drivers *to wear* seat belts.",
+      "ko": "규정상 운전자는 안전벨트를 착용해야 한다."
+     },
+     {
+      "en": "Staff are *encouraged to attend* the seminar.",
+      "ko": "직원들은 세미나 참석을 권장받는다."
+     }
+    ]
+   },
+   {
+    "h": "주장·요구·제안 + that + 주어 + (should) 동사원형",
+    "t": "suggest, recommend, request, insist, require, ask 뒤의 that절이나 It is essential/important/necessary that 뒤에는 주어의 인칭·시제와 관계없이 동사원형을 쓴다(should가 생략된 형태). 수동이면 be + p.p.다.",
+    "ex": [
+     {
+      "en": "The CEO *suggested* that the team *postpone* the launch.",
+      "ko": "CEO는 팀이 출시를 연기할 것을 제안했다."
+     },
+     {
+      "en": "It is *important* that every form *be* signed.",
+      "ko": "모든 서류에는 반드시 서명이 있어야 한다."
+     }
+    ]
+   }
+  ],
+  "trap": "suggest that 뒤의 주어가 3인칭 단수라고 -s를 붙이거나, 주절이 과거라고 과거형을 쓰면 틀린다. 또 사역동사 make/have/let 뒤에는 to부정사를, require/ask/allow 뒤에는 동사원형을 쓰지 않는다는 점을 구분하자.",
+  "qs": [
+   {
+    "s": "The new policy requires all visitors ------- a photo ID at the front entrance of the building.",
+    "o": [
+     "show",
+     "showing",
+     "shown",
+     "to show"
+    ],
+    "a": 3,
+    "lv": 1,
+    "exp": "require + 목적어 + to부정사 구조이므로 to show가 정답이다. require는 사역동사가 아니라서 동사원형 show를 쓸 수 없고, showing과 shown도 목적격 보어로 맞지 않는다.",
+    "id": "g09-01"
+   },
+   {
+    "s": "The sales director let the new interns ------- the meeting with an important client.",
+    "o": [
+     "attend",
+     "to attend",
+     "attending",
+     "attended"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "사역동사 let은 '목적어 + 동사원형' 구조를 취하므로 attend가 정답이다. let 뒤에는 to부정사나 -ing를 쓰지 않으며, attended는 인턴들이 '참석되는' 수동의 뜻이 되어 맞지 않는다.",
+    "id": "g09-02"
+   },
+   {
+    "s": "Ms. Lowell recommended that each department ------- its budget proposal by October 15.",
+    "o": [
+     "submits",
+     "submitted",
+     "to submit",
+     "submit"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "recommend 뒤 that절에는 should가 생략되어 주어의 인칭·시제와 관계없이 동사원형을 쓰므로 submit이 정답이다. 주어가 단수라고 submits를, 주절이 과거라고 submitted를 고르기 쉽지만 모두 틀리며, to submit은 that절의 동사가 될 수 없다.",
+    "id": "g09-03"
+   },
+   {
+    "s": "Mr. Reyes had the conference room ------- before the investors arrived for the presentation.",
+    "o": [
+     "cleans",
+     "to clean",
+     "cleaned",
+     "cleaning"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "사역동사 have의 목적어 the conference room은 청소를 '당하는' 대상이므로 have + 사물 + p.p. 구조의 cleaned가 정답이다. cleans는 문장의 동사 형태라 목적격 보어가 될 수 없고, to clean과 cleaning은 회의실이 청소를 '하는' 능동의 뜻이 되어 맞지 않는다.",
+    "id": "g09-04"
+   },
+   {
+    "s": "The new scheduling software will help managers ------- staff shifts more efficiently.",
+    "o": [
+     "organizing",
+     "organized",
+     "organize",
+     "organization"
+    ],
+    "a": 2,
+    "lv": 1,
+    "exp": "help + 목적어 + (to) 동사원형 구조이므로 동사원형 organize가 정답이다. help는 목적격 보어로 -ing나 p.p.를 쓰지 않으며, organization은 명사라 목적어 staff shifts를 받을 수 없다.",
+    "id": "g09-05"
+   },
+   {
+    "s": "Employees are encouraged ------- their ideas for improving workplace safety to the facilities manager.",
+    "o": [
+     "submitting",
+     "to submit",
+     "submit",
+     "submission"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "encourage + 목적어 + to부정사가 수동태로 바뀐 be encouraged + to부정사 구조이므로 to submit이 정답이다. 수동태가 되어도 to부정사는 그대로 남으며, submitting, submit, submission은 이 자리에 올 수 없다.",
+    "id": "g09-06"
+   },
+   {
+    "s": "It is essential that every passenger ------- seated while the seat belt sign is illuminated.",
+    "o": [
+     "remain",
+     "remains",
+     "remained",
+     "remaining"
+    ],
+    "a": 0,
+    "lv": 3,
+    "exp": "It is essential that 뒤의 that절에는 should가 생략된 동사원형을 쓰므로 remain이 정답이다. 주어 every passenger가 단수라고 remains를 고르기 쉽지만 이 구문에서는 인칭과 관계없이 원형을 쓰고, remained와 remaining도 맞지 않는다.",
+    "id": "g09-07"
+   },
+   {
+    "s": "The security guard noticed someone ------- the building through the emergency exit late last night.",
+    "o": [
+     "entering",
+     "to enter",
+     "enters",
+     "entrance"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "지각동사 notice는 '목적어 + 동사원형/-ing'를 취하므로 entering이 정답이다. 지각동사 뒤에는 to부정사를 쓰지 않고, enters는 목적격 보어 자리에 올 수 없으며, entrance는 명사다.",
+    "id": "g09-08"
+   },
+   {
+    "s": "The consultant suggested that the company ------- its online presence to reach younger customers.",
+    "o": [
+     "expands",
+     "expanding",
+     "expand",
+     "to expand"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "제안을 나타내는 suggest 뒤 that절에는 should가 생략된 동사원형을 쓰므로 expand가 정답이다. expands는 3인칭 단수 현재형이라 이 구문에서 틀리고, expanding과 to expand는 that절의 동사가 될 수 없다.",
+    "id": "g09-09"
+   },
+   {
+    "s": "The updated software allows users ------- multiple files at once from any device.",
+    "o": [
+     "uploading",
+     "upload",
+     "to upload",
+     "uploaded"
+    ],
+    "a": 2,
+    "lv": 1,
+    "exp": "allow + 목적어 + to부정사 구조이므로 to upload가 정답이다. allow는 사역동사가 아니라서 목적어 뒤에 동사원형 upload를 쓸 수 없고, uploading과 uploaded도 목적격 보어로 맞지 않는다.",
+    "id": "g09-10"
+   },
+   {
+    "s": "The marketing director made her team ------- the presentation slides three times before the pitch.",
+    "o": [
+     "to revise",
+     "revise",
+     "revising",
+     "revision"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "사역동사 make는 '목적어 + 동사원형' 구조를 취하므로 revise가 정답이다. 능동태 make 뒤에는 to부정사를 쓰지 않으며(수동태 be made to와 혼동 주의), revising과 revision도 이 자리에 맞지 않는다.",
+    "id": "g09-11"
+   },
+   {
+    "s": "Before leaving for the airport, Ms. Sato asked her assistant ------- the client meeting to next Tuesday.",
+    "o": [
+     "rescheduling",
+     "to reschedule",
+     "reschedule",
+     "rescheduled"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "ask + 목적어 + to부정사(~에게 ~해 달라고 요청하다) 구조이므로 to reschedule이 정답이다. ask는 목적격 보어로 동사원형, -ing, p.p.를 쓰지 않는다.",
+    "id": "g09-12"
+   },
+   {
+    "s": "The safety inspector requested that the damaged equipment ------- from the production floor immediately.",
+    "o": [
+     "be removed",
+     "remove",
+     "is removed",
+     "removing"
+    ],
+    "a": 0,
+    "lv": 3,
+    "exp": "request 뒤 that절에는 should가 생략된 동사원형을 쓰고, 장비는 '치워지는' 대상이므로 수동형 be removed가 정답이다. remove는 능동이라 장비가 무언가를 치우는 뜻이 되고, is removed는 원형이 아니며, removing은 동사 자리에 올 수 없다.",
+    "id": "g09-13"
+   },
+   {
+    "s": "After several phone calls, Ms. Bryant finally got the supplier ------- the shipping fees for the delayed order.",
+    "o": [
+     "waive",
+     "waiving",
+     "waived",
+     "to waive"
+    ],
+    "a": 3,
+    "lv": 3,
+    "exp": "get은 사람 목적어 뒤에 to부정사를 써서 '~가 ~하게 하다'를 나타내므로 to waive가 정답이다. make, have와 달리 get 뒤에는 동사원형을 쓰지 않으며, waived는 사물이 '~되게' 할 때(get the fees waived) 쓰는 형태다.",
+    "id": "g09-14"
+   },
+   {
+    "s": "During the factory tour, visitors watched the robots ------- car parts with remarkable speed and accuracy.",
+    "o": [
+     "to assemble",
+     "assemble",
+     "assembled",
+     "assembly"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "지각동사 watch는 '목적어 + 동사원형/-ing'를 취하므로 assemble이 정답이다. 지각동사 뒤에는 to부정사를 쓰지 않고, assembled는 로봇이 '조립되는' 수동의 뜻이 되며, assembly는 명사다.",
+    "id": "g09-15"
+   }
+  ],
+  "id": "g09"
+ },
+ {
+  "title": "가정법·도치",
+  "cat": "특수 구문",
+  "lesson": [
+   {
+    "h": "가정법 과거·과거완료",
+    "t": "현재 사실의 반대는 If + 주어 + 과거동사(be동사는 were), 주어 + would/could + 동사원형으로 쓴다. 과거 사실의 반대는 If + 주어 + had p.p., 주어 + would/could + have p.p.다. if절은 과거 일인데 주절에 now가 있으면 would + 동사원형을 쓰는 혼합 가정법이 된다.",
+    "ex": [
+     {
+      "en": "If we *had* more staff, we *could open* on Sundays.",
+      "ko": "직원이 더 있다면 일요일에도 문을 열 수 있을 텐데."
+     },
+     {
+      "en": "If the order *had arrived* on time, we *would have met* the deadline.",
+      "ko": "주문품이 제때 도착했더라면 마감을 맞췄을 것이다."
+     }
+    ]
+   },
+   {
+    "h": "가정법 미래: If ~ should, were to",
+    "t": "'혹시라도 ~하면'은 If + 주어 + should + 동사원형으로 쓰고, 주절에는 명령문이나 will이 자주 온다. 실현 가능성이 아주 낮은 가정은 If + 주어 + were to + 동사원형, 주어 + would + 동사원형으로 쓴다.",
+    "ex": [
+     {
+      "en": "If you *should* need help, please call us.",
+      "ko": "혹시 도움이 필요하시면 연락해 주십시오."
+     }
+    ]
+   },
+   {
+    "h": "if 생략 도치: Had·Should·Were + 주어",
+    "t": "가정법에서 if를 생략하면 주어와 조동사의 순서가 바뀐다. If you should ~ → Should you ~, If we had p.p. ~ → Had we p.p. ~, If it were ~ → Were it ~. Part 5에서는 문장 맨 앞 빈칸에 Should나 Had를 고르는 문제가 자주 나온다.",
+    "ex": [
+     {
+      "en": "*Should* you have any questions, please contact us.",
+      "ko": "궁금한 점이 있으시면 연락해 주십시오."
+     },
+     {
+      "en": "*Had* we known earlier, we would have changed the plan.",
+      "ko": "더 일찍 알았더라면 계획을 바꿨을 것이다."
+     }
+    ]
+   },
+   {
+    "h": "부정어·only 도치, 보어 도치",
+    "t": "Never, Rarely, Seldom, Not only, Only + 부사구가 문장 앞에 오면 '조동사(do/have/can) + 주어 + 동사' 순서로 도치된다. Attached/Enclosed/Included처럼 분사 보어가 문장 앞에 오면 동사는 뒤에 오는 주어에 수를 맞춘다.",
+    "ex": [
+     {
+      "en": "*Rarely have* we seen such strong demand.",
+      "ko": "이렇게 강한 수요는 좀처럼 본 적이 없다."
+     },
+     {
+      "en": "*Enclosed are* the documents you requested.",
+      "ko": "요청하신 서류를 동봉합니다."
+     }
+    ]
+   }
+  ],
+  "trap": "문장 맨 앞의 Should, Had, Were는 if가 생략된 가정법 도치이므로 '의무'나 '완료' 같은 원래 뜻으로 해석하면 안 된다. 도치된 문장에서는 조동사·be동사를 뒤에 오는 실제 주어에 수 일치시켜야 한다는 점도 잊지 말자.",
+  "qs": [
+   {
+    "s": "If the shipment ------- on time, we would have been able to fill all of the customer orders.",
+    "o": [
+     "had arrived",
+     "arrived",
+     "has arrived",
+     "would arrive"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "주절이 would have been able to(would + have p.p.)이므로 과거 사실의 반대를 나타내는 가정법 과거완료이고, if절에는 had p.p.가 와야 한다. arrived는 가정법 과거, has arrived는 현재완료라 주절과 맞지 않고, if절에는 would를 쓰지 않는다.",
+    "id": "g10-01"
+   },
+   {
+    "s": "------- you have any questions about your order, please contact our customer service team.",
+    "o": [
+     "Had",
+     "Were",
+     "Would",
+     "Should"
+    ],
+    "a": 3,
+    "lv": 1,
+    "exp": "If you should have any questions에서 if가 생략되어 Should가 주어 앞으로 나온 가정법 미래 도치로, 주절의 명령문(please contact)과 잘 어울린다. Had와 Were는 뒤에 동사원형 have를 받을 수 없고, Would는 if절을 대신하는 도치에 쓰지 않는다.",
+    "id": "g10-02"
+   },
+   {
+    "s": "If Mr. Patel ------- available next week, he would lead the training session himself.",
+    "o": [
+     "is",
+     "had been",
+     "will be",
+     "were"
+    ],
+    "a": 3,
+    "lv": 1,
+    "exp": "주절이 would + 동사원형(would lead)이므로 현재·미래 사실의 반대를 나타내는 가정법 과거이고, be동사는 주어와 관계없이 were를 쓴다. is와 will be는 직설법이라 would와 짝이 맞지 않고, had been은 가정법 과거완료라 주절이 would have p.p.여야 한다.",
+    "id": "g10-03"
+   },
+   {
+    "s": "------- the weather been better, the outdoor reception would have attracted many more guests.",
+    "o": [
+     "Has",
+     "Had",
+     "If",
+     "Should"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "주절이 would have attracted이므로 가정법 과거완료이고, If the weather had been better에서 if가 생략되어 Had가 주어 앞으로 나온 도치 구문이다. If를 쓰려면 had가 함께 있어야 하고(If the weather had been), Has와 Should는 been과 결합해 가정법 과거완료를 만들 수 없다.",
+    "id": "g10-04"
+   },
+   {
+    "s": "Enclosed ------- a copy of the signed rental agreement for your records.",
+    "o": [
+     "are",
+     "being",
+     "is",
+     "to be"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "분사 보어 Enclosed가 문장 앞으로 나와 주어와 동사가 도치된 구문으로, 실제 주어가 단수 a copy이므로 is가 정답이다. are는 복수 주어에 쓰고, being과 to be는 문장의 동사가 될 수 없다.",
+    "id": "g10-05"
+   },
+   {
+    "s": "Rarely ------- the company experienced such strong sales during the winter months.",
+    "o": [
+     "have",
+     "is",
+     "has",
+     "does"
+    ],
+    "a": 2,
+    "lv": 2,
+    "exp": "부정어 Rarely가 문장 앞에 와서 '조동사 + 주어 + 동사' 순서로 도치되었고, 빈칸 뒤 experienced가 과거분사이므로 현재완료 조동사 has가 정답이다. 주어 the company가 단수라 have는 수가 맞지 않고, does 뒤에는 동사원형(experience)이 와야 하며, is experienced는 수동태라 목적어 sales와 맞지 않는다.",
+    "id": "g10-06"
+   },
+   {
+    "s": "Not only ------- the new inventory system reduce costs, but it also improves order accuracy.",
+    "o": [
+     "is",
+     "has",
+     "do",
+     "does"
+    ],
+    "a": 3,
+    "lv": 2,
+    "exp": "Not only가 문장 앞에 와서 도치되었고 빈칸 뒤에 동사원형 reduce가 있으므로 조동사 does가 필요하다. 주어 the new inventory system이 단수라 do는 수가 맞지 않고, is와 has는 동사원형 reduce와 결합할 수 없다.",
+    "id": "g10-07"
+   },
+   {
+    "s": "If Ms. Nolan had accepted the job offer last year, she ------- in our London office now.",
+    "o": [
+     "would have worked",
+     "would be working",
+     "will work",
+     "had worked"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "if절은 과거(last year) 사실의 반대(had accepted)지만 주절에 now가 있어 현재 사실의 반대를 나타내므로, 혼합 가정법의 would + 동사원형(would be working)이 정답이다. would have worked는 과거 사실의 반대라 now와 어울리지 않고, will work와 had worked는 가정법 주절의 형태가 아니다.",
+    "id": "g10-08"
+   },
+   {
+    "s": "Only after the final safety inspection ------- the new building be opened to the public.",
+    "o": [
+     "is",
+     "has",
+     "can",
+     "does"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "Only + 부사구가 문장 앞에 와서 '조동사 + 주어 + 동사원형'으로 도치된 구문이고, 빈칸 뒤 be opened와 결합할 수 있는 조동사는 can이다. is, has, does는 동사원형 be와 함께 쓸 수 없다.",
+    "id": "g10-09"
+   },
+   {
+    "s": "Had the client ------- us earlier, we could have adjusted the production schedule accordingly.",
+    "o": [
+     "notified",
+     "notify",
+     "notifying",
+     "notifies"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "주절이 could have adjusted이므로 가정법 과거완료이고, if가 생략되어 Had + 주어 + p.p. 순서로 도치되었으므로 과거분사 notified가 정답이다. notify, notifying, notifies는 had 뒤에서 완료형을 만들 수 없다.",
+    "id": "g10-10"
+   },
+   {
+    "s": "Were the company ------- its prices sharply, it would likely lose many of its loyal customers.",
+    "o": [
+     "raise",
+     "to raise",
+     "raises",
+     "raised"
+    ],
+    "a": 1,
+    "lv": 3,
+    "exp": "If the company were to raise ~에서 if가 생략되어 Were가 주어 앞으로 나온 가정법 도치이므로 were 뒤에는 to raise가 와야 한다. raise와 raises는 were 뒤에 올 수 없고, raised를 쓰면 회사가 '올려지는' 수동태가 되어 목적어 its prices와 맞지 않는다.",
+    "id": "g10-11"
+   },
+   {
+    "s": "If we ------- more sales staff, we could open the store on Sundays as well.",
+    "o": [
+     "had",
+     "have had",
+     "will have",
+     "having"
+    ],
+    "a": 0,
+    "lv": 1,
+    "exp": "주절이 could + 동사원형(could open)이므로 현재 사실의 반대를 나타내는 가정법 과거이고, if절에는 과거형 had가 와야 한다. have had와 will have는 직설법이라 could와 짝이 맞지 않고, having은 동사 자리에 올 수 없다.",
+    "id": "g10-12"
+   },
+   {
+    "s": "Should the meeting run late, the remaining agenda items ------- to Thursday afternoon.",
+    "o": [
+     "were postponed",
+     "will be postponed",
+     "had been postponed",
+     "postponing"
+    ],
+    "a": 1,
+    "lv": 2,
+    "exp": "Should the meeting run late는 If the meeting should run late에서 if가 생략된 가정법 미래 도치이고, 주절에는 will(또는 명령문)이 오므로 will be postponed가 정답이다. were postponed와 had been postponed는 과거 시제라 앞으로의 일과 맞지 않고, postponing은 동사 자리에 올 수 없다.",
+    "id": "g10-13"
+   },
+   {
+    "s": "Never before ------- so many customers visited our booth at the annual home appliance trade show.",
+    "o": [
+     "has",
+     "did",
+     "have",
+     "were"
+    ],
+    "a": 2,
+    "lv": 3,
+    "exp": "부정어구 Never before가 문장 앞에 와서 도치되었고 빈칸 뒤 visited가 과거분사이므로 완료 조동사가 필요하다. 주어 so many customers가 복수이므로 have가 정답이며, has는 단수 주어에 쓰고, did 뒤에는 동사원형(visit)이 와야 하며, were visited는 수동태라 목적어 our booth와 맞지 않는다.",
+    "id": "g10-14"
+   },
+   {
+    "s": "Without the generous support of our sponsors, last year's festival ------- possible.",
+    "o": [
+     "would not have been",
+     "will not be",
+     "has not been",
+     "is not"
+    ],
+    "a": 0,
+    "lv": 2,
+    "exp": "Without ~이 '~이 없었다면'이라는 if절 역할을 하고 last year's festival은 과거의 일이므로 가정법 과거완료 주절인 would not have been이 정답이다. will not be, has not been, is not은 직설법이라 사실과 반대되는 가정을 나타내지 못한다.",
+    "id": "g10-15"
+   }
+  ],
+  "id": "g10"
+ }
+]
