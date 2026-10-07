@@ -2126,7 +2126,7 @@
     const q = set.qs[0];
     const pick = st.picks[0];
     const photo = `<div class="p1photo"><img src="${esc(set.img)}" alt="Part 1 사진${st.base ? ` ${st.base}번` : ""}" data-zoom></div>`;
-    const player = `<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${st.base ? `${st.base}번 · ` : ""}사진을 가장 잘 묘사한 문장은?</b><div class="small muted">${esc(set.kind || "")} · ${LV_LABEL[set.lv] || ""} · <span class="lp-prog">보기 4문장</span></div></div></div>`;
+    const player = `<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${st.base ? `${st.base}번 · ` : ""}사진을 가장 잘 묘사한 문장은?</b><div class="small muted">${st.base ? "" : `${LV_LABEL[set.lv] || ""} · `}<span class="lp-prog">보기 4문장</span></div></div></div>`;
     if (!review) {
       return `${photo}${player}<div class="pq" id="pq-0"><div class="opts">${q.o.map((x, i) => `<button class="opt sm ${pick === i ? "sel" : ""}" data-q="0" data-o="${i}" data-pline="${i}"><span class="on">${LETTERS[i]}</span><span class="muted">보기 ${LETTERS[i]}</span></button>`).join("")}</div></div>
         <div class="small muted" style="margin-top:6px">(A)~(D) 네 문장을 듣고 사진과 맞는 것을 고르세요. 문장은 채점 뒤에 보여 드려요.</div>`;
@@ -2327,7 +2327,7 @@
     const preview = (s) => part === "p1" ? s.setting : part === "p3" || part === "p4" ? s.lines[0].en : part === "p6" ? s.paras.find((p) => p.length > 30) || s.paras[0] : s.docs[0].paras[0];
     const row = (s) => {
       const rec = S.prac[s.id];
-      return `<button class="witem" data-set="${s.id}" style="align-items:flex-start">${part === "p1" ? `<img class="p1thumb" src="${esc(s.img)}" alt="" loading="lazy">` : ""}<div class="wbody"><div class="small" style="font-weight:700;color:var(--text-2)">${esc(catOf(part, s))} · ${LV_LABEL[s.lv]}${part === "p7" ? ` · ${s.docs.map((d) => d.doc).join(" + ")}` : ""} · ${s.qs.length}문제</div><div class="wm en" style="margin-top:2px">${esc(preview(s).replace(/\{\d\}/g, "____"))}</div></div>${rec ? `<span class="badge ${rec.ok === rec.n ? "ok" : "bad"}">${rec.ok}/${rec.n}</span>` : ""}</button>`;
+      return `<button class="witem" data-set="${s.id}" style="align-items:flex-start">${part === "p1" ? `<img class="p1thumb" src="${esc(s.img)}" alt="" loading="lazy">` : ""}<div class="wbody"><div class="small" style="font-weight:700;color:var(--text-2)">${esc(catOf(part, s))} · ${LV_LABEL[s.lv]}${part === "p7" ? ` · ${s.docs.map((d) => d.doc).join(" + ")}` : ""}${part === "p1" ? "" : ` · ${s.qs.length}문제`}</div><div class="wm en" style="margin-top:2px">${esc(preview(s).replace(/\{\d\}/g, "____"))}</div></div>${rec ? `<span class="badge ${rec.ok === rec.n ? "ok" : "bad"}">${rec.ok}/${rec.n}</span>` : ""}</button>`;
     };
     const solvedN = all.filter((s) => S.prac[s.id]).length;
     const body = `${topBar(SET_TITLE[part], { back: true, sub: part === "p1" ? `${all.length}문제 · 푼 문제 ${solvedN}` : `${all.length}${part === "p6" ? "지문" : "세트"} · 푼 세트 ${solvedN}` })}

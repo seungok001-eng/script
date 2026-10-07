@@ -102,7 +102,7 @@ for (const set of pr.p3.concat(pr.p4)) {
   }
 }
 // Part 1 사진 문제: 사진(app/images/p1/<id>.webp)이 들어온 문제만 앱에 싣는다. 보기 문장 음성은 audio/p1q/<id>-N.mp3
-const P1_KIND = { single: "한 사람", multi: "여러 사람", scene: "사람 없는 사진" };
+const P1_KIND = { single: "1인 사진", multi: "2인 이상 사진", scene: "사물·풍경 사진" };
 pr.p1 = read(path.join(ROOT, "data/part1.json"), { items: [] }).items
   .filter((q) => fs.existsSync(path.join(ROOT, "app/images/p1", `${q.id}.webp`)))
   .map((q) => {
