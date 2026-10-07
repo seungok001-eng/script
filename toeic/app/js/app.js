@@ -2751,7 +2751,7 @@
     F.p7.forEach((set) => pages.push({ part: "p7", set }));
     return pages.filter((p) => !("set" in p) || p.set);
   }
-  const fullMocks = () => (PR.full || []).map((F, i) => ({ n: `f${i + 1}`, full: F, title: T`정규 모의고사 ${i + 1}회`, rcMin: 75 }));
+  const fullMocks = () => (PR.full || []).map((F, i) => ({ n: `f${F.n || i + 1}`, full: F, title: T`정규 모의고사 ${F.n || i + 1}회`, rcMin: 75 }));
   // 하프 모의고사: 1~5회는 연습 문항에서 뗀 id 목록(PR.mocks), 6~10회는 새로 만든 문항(PR.half, 정규와 같은 형식)
   const allHalves = () => (PR.mocks || []).concat((PR.half || []).map((F) => ({ n: F.n, fdata: F, rcMin: RC_MIN })));
   function mockPages(m) {

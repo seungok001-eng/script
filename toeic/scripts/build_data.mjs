@@ -194,8 +194,14 @@ const mockOf = (m) => {
   });
   return { n: m.n, p1: m.p1.filter((id) => pr.p1.some((x) => x.id === id)), p2, p3: lc(m.p3), p4: lc(m.p4), p5: m.p5, p6: m.p6, p7: m.p7 };
 };
-const full = read(path.join(ROOT, "data/fullmock.json"), { mocks: [] }).mocks.map(mockOf);
-const half = read(path.join(ROOT, "data/halfmock.json"), { mocks: [] }).mocks.map(mockOf);
+// Part 1 사진이 아직 다 들어오지 않은 회차는 싣지 않는다 (문항 수가 모자란 모의고사가 나가지 않게)
+const ready = (ms, kind) => ms.filter((m, i, all) => {
+  const ok = mockOf(m).p1.length === m.p1.length;
+  if (!ok) console.log(`${kind} 모의고사 ${m.n}회: Part 1 사진 ${mockOf(m).p1.length}/${m.p1.length} — 사진이 다 들어올 때까지 앱에서 뺀다`);
+  return ok;
+}).map(mockOf);
+const full = ready(read(path.join(ROOT, "data/fullmock.json"), { mocks: [] }).mocks, "정규");
+const half = ready(read(path.join(ROOT, "data/halfmock.json"), { mocks: [] }).mocks, "하프");
 // 모의고사 실전 진행 안내 방송 문구 (음성은 build_audio.py 가 cue/ 에 만든다)
 const cuesRaw = read(path.join(ROOT, "data/mock-cues.json"), null);
 const cues = cuesRaw ? { dir: cuesRaw.dir, answerSec: cuesRaw.answerSec } : null;
