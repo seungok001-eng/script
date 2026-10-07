@@ -63,7 +63,7 @@
   // 유료화: 무료는 단어 Day 1~3 · 파트별 실전 1세트 · 문법 1주제 · LC/받아쓰기 1회 · 하프 모의고사 1회 · 첫 실력 진단.
   // 가격은 스토어(Play Console)에 등록한 값을 그대로 보여 준다(price 는 스토어 정보를 못 받을 때의 표시용).
   // 결제는 네이티브 앱에서만 열린다(웹 미리보기는 잠그지 않음). 테스트: localStorage "toeicfit.paywall" = "1"
-  const CONFIG = { premium: { enabled: true, freeDays: 3, price: "₩4,900", productId: "toeicfit_full", priceNote: T`한 번 결제 · 평생 이용 · 광고 없음` } };
+  const CONFIG = { premium: { enabled: true, freeDays: 3, price: "₩4,900" /* 스토어 가격을 못 읽었을 때 한국어 화면에서만 쓰는 대체 표시 */, productId: "toeicfit_full", priceNote: T`한 번 결제 · 평생 이용 · 광고 없음` } };
   const STORE_KEY = "toeicfit.v1";
   const OLD_KEY = "vocafit.v1"; // 이름을 바꾸기 전(보카핏) 웹 미리보기 기록을 한 번 옮겨 온다
 
@@ -3078,7 +3078,7 @@
         <li>하프 모의고사 <b>${PR ? allHalves().length : 4}회</b>${PR && PR.full && PR.full.length ? T` + 정규 모의고사 <b>${PR.full.length}회</b>` : ""} · 예상 점수</li>
         <li>문법 강의 30주제 · LC 표현 · 받아쓰기 무제한</li>
       </ul>
-      <button class="btn block" data-buy>${ico("crown")}전체 열기 ${esc(IAP.price || CONFIG.premium.price)} · 출시 할인</button>
+      <button class="btn block" data-buy>${ico("crown")}전체 열기 ${esc(IAP.price || (LANG === "ko" ? CONFIG.premium.price : ""))} · 출시 할인</button>
       <div class="small muted" style="text-align:center;margin-top:6px">${CONFIG.premium.priceNote}</div>
       <button class="btn ghost block" style="margin-top:10px" data-free>무료로 ${CONFIG.premium.freeDays}일 먼저 써 보기</button>
     </section>`;
