@@ -178,8 +178,12 @@
     }
     return a;
   }
+  // 뜻 나열 구분자: 일본어·중국어는 '、', 그 밖은 ', '
+  function listSep() {
+    return typeof document !== "undefined" && /^(ja|zh)/.test(document.documentElement.lang || "") ? "、" : ", ";
+  }
   function meaningText(w, n) {
-    return w.m.slice(0, n || 2).join(", ");
+    return w.m.slice(0, n || 2).join(listSep());
   }
   // 오답 보기: 같은 품사 우선, 뜻이 겹치지 않는 단어
   function distractors(word, all, k, rand, key) {
@@ -594,7 +598,7 @@
   return {
     DAY_MS, dayNum, dayToDate, ymd, parseYmd,
     TIER_NAMES, SCORE_OPTIONS, tiersFor, scoreBand, poolFor, recommendDaily,
-    INTERVALS, MASTER_BOX, newState, grade, applyQuiz, markKnown, status, isDue,
+    INTERVALS, MASTER_BOX, newState, grade, applyQuiz, markKnown, status, isDue, listSep,
     todayPlan, streak,
     rng, shuffle, meaningText, distractors, starred, cloze, plainEx, makeQuestion, makeTest,
     canParaphrase, makeParaphrase, placementSample,

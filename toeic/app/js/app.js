@@ -1046,7 +1046,7 @@
         <div class="row" style="align-items:flex-end"><div class="spacer"><div class="wd-word en">${esc(w.w)}</div>${w.ipa ? `<div class="wd-ipa">${esc(w.ipa)}</div>` : ""}</div>
           <button class="icon-btn" data-act="star" data-id="${w.id}" aria-label="중요 표시">${starIco(s && s.star)}</button>
           <button class="play lg" data-act="play-word" data-id="${w.id}" aria-label="발음 듣기">${ico("vol")}</button></div>
-        <div class="wd-mean">${w.m.map((m, i) => `${i ? '<span class="muted">, </span>' : ""}${esc(m)}`).join("")}</div>
+        <div class="wd-mean">${w.m.map((m, i) => `${i ? `<span class="muted">${C.listSep()}</span>` : ""}${esc(m)}`).join("")}</div>
       </div>
       <div class="card blk"><div class="blk-h">예문 ${w.exV ? `<span class="voice-tag">${voiceLabel(w.exV)}</span>` : ""}<span class="spacer"></span><button class="play" data-act="play-ex" data-id="${w.id}" aria-label="예문 듣기">${ico("vol")}</button></div>
         <div class="ex-en en">${hl(w.ex)}</div><div class="ex-ko">${esc(w.exKo)}</div></div>
