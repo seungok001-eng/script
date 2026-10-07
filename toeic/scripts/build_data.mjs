@@ -196,7 +196,7 @@ const mockOf = (m) => {
 };
 // Part 1 사진이 아직 다 들어오지 않은 회차는 싣지 않는다 (문항 수가 모자란 모의고사가 나가지 않게)
 const ready = (ms, kind) => ms.filter((m, i, all) => {
-  const ok = mockOf(m).p1.length === m.p1.length;
+  const ok = mockOf(m).p1.length === m.p1.length || process.env.TOEICFIT_SHOW_ALL_MOCKS === "1"; // 점검용: 사진 없이도 싣기
   if (!ok) console.log(`${kind} 모의고사 ${m.n}회: Part 1 사진 ${mockOf(m).p1.length}/${m.p1.length} — 사진이 다 들어올 때까지 앱에서 뺀다`);
   return ok;
 }).map(mockOf);
