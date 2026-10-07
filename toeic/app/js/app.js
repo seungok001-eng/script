@@ -2639,7 +2639,7 @@
     const ls = $app.querySelector("[data-lesson]");
     if (ls) ls.addEventListener("click", (e) => {
       e.preventDefault();
-      modal(T`<h3>${esc(tr(t.title))}</h3><div style="max-height:60vh;overflow-y:auto">${t.lesson.map((l) => `<div style="margin-bottom:10px"><b>${esc(l.h)}</b><p class="small" style="margin:4px 0;color:var(--text-2)">${esc(l.t)}</p>${l.ex.map((x) => `<div class="small en">${hl(x.en)}</div><div class="small muted">${esc(x.ko)}</div>`).join("")}</div>`).join("")}<div class="tip-box small"><b>함정</b> ${esc(t.trap)}</div></div><button class="btn block" data-close style="margin-top:12px">문제로 돌아가기</button>`);
+      modal(T`<h3>${esc(tr(t.title))}</h3><div style="max-height:60vh;overflow-y:auto">${t.lesson.map((l) => `<div style="margin-bottom:10px"><b>${esc(l.h)}</b><p class="small" style="margin:4px 0;color:var(--text-2)">${esc(l.t)}</p>${l.ex.map((x) => `<div class="small en">${hl(x.en)}</div>${LANG === "en" ? "" : `<div class="small muted">${esc(x.ko)}</div>`}`).join("")}</div>`).join("")}<div class="tip-box small"><b>함정</b> ${esc(t.trap)}</div></div><button class="btn block" data-close style="margin-top:12px">문제로 돌아가기</button>`);
     });
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
