@@ -2771,15 +2771,17 @@
     const firstNum = s.pages.slice(0, s.i).reduce((n, x) => n + pageQs(x).length, 0) + 1;
     const st = { picks: s.picks[s.i], graded: false, base: firstNum };
     const total = s.pages.reduce((n, x) => n + pageQs(x).length, 0);
+    const lastNum = firstNum + pageQs(p).length - 1;
+    const qhead = `<div class="qnum" data-qnum="${firstNum}"><span class="qnum-n">${firstNum === lastNum ? firstNum : `${firstNum}~${lastNum}`}<small>번</small></span><span class="qnum-t">${PART_LABEL[p.part] || p.part}<br><b>${firstNum} / ${total}</b></span></div>`;
     let inner;
     if (p.part === "p2") {
-      inner = `<div class="quiz-q"><div class="qk">Part 2 · ${firstNum}번</div><button class="play lg" data-replay style="margin:12px auto 0;width:76px;height:76px" aria-label="듣기">${ico("vol")}</button><div class="small muted" style="margin-top:8px">질문과 보기 (A)(B)(C)가 한 번 재생돼요</div></div>
+      inner = `${qhead}<div class="quiz-q"><button class="play lg" data-replay style="margin:12px auto 0;width:76px;height:76px" aria-label="듣기">${ico("vol")}</button><div class="small muted" style="margin-top:8px">질문과 보기 (A)(B)(C)가 한 번 재생돼요</div></div>
         <div class="opts">${p.q.options.map((o, i) => `<button class="opt ${st.picks[0] === i ? "sel" : ""}" data-pick="${i}"><span class="on">${LETTERS[i]}</span><span class="muted">보기 ${LETTERS[i]}</span></button>`).join("")}</div>`;
     } else if (p.part === "p5") {
-      inner = `<div class="quiz-q"><div class="qk">Part 5 · ${firstNum}번</div><div class="qs en">${esc(p.q.s).replace("-------", '<b style="color:var(--brand)">_______</b>')}</div></div>
+      inner = `${qhead}<div class="quiz-q"><div class="qs en">${esc(p.q.s).replace("-------", '<b style="color:var(--brand)">_______</b>')}</div></div>
         <div class="opts">${p.q.o.map((o, i) => `<button class="opt ${st.picks[0] === i ? "sel" : ""}" data-pick="${i}"><span class="on">${LETTERS[i]}</span><span class="en">${esc(o)}</span></button>`).join("")}</div>`;
     } else {
-      inner = `<div class="small muted" style="margin:0 2px 8px;font-weight:700">${PART_LABEL[p.part]} · ${firstNum}~${firstNum + p.set.qs.length - 1}번</div>${setHtml(p.part, p.set, st, "exam")}`;
+      inner = `${qhead}${setHtml(p.part, p.set, st, "exam")}`;
     }
     const answered = s.picks.reduce((n, a) => n + a.filter((x) => x != null).length, 0);
     const rcIdx = s.pages.map((pg, pi) => (secOf(pg.part) === "rc" ? pi : -1)).filter((x) => x >= 0);

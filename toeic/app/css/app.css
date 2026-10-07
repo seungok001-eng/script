@@ -753,3 +753,12 @@ mark.on { background: color-mix(in srgb, var(--gold) 62%, transparent); box-shad
 .qtimer i.warn { background: color-mix(in srgb, var(--bad) 30%, transparent); }
 .qtimer span { position: relative; display: block; text-align: center; font-size: 13px; font-weight: 800; line-height: 26px; color: var(--text-2); font-variant-numeric: tabular-nums; }
 .qtimer.off span { color: var(--text-3); font-weight: 600; }
+
+/* 모의고사 문항 번호: 크게, 페이지가 바뀌면 살짝 튀어나오게 (같은 화면이 이어지는 Part 2 에서 바뀐 걸 알 수 있게) */
+.qnum { display: flex; align-items: center; gap: 12px; margin: 4px 2px 12px; animation: qnumIn 0.35s ease-out; }
+.qnum-n { min-width: 64px; padding: 6px 12px; border-radius: 14px; background: var(--brand); color: #fff; font-size: 30px; font-weight: 800; line-height: 1.1; text-align: center; font-variant-numeric: tabular-nums; }
+.qnum-n small { font-size: 14px; font-weight: 700; margin-left: 2px; }
+.qnum-t { font-size: 13px; font-weight: 700; color: var(--text-2); line-height: 1.35; }
+.qnum-t b { color: var(--text-3, var(--text-2)); font-weight: 600; }
+@keyframes qnumIn { from { opacity: 0; transform: scale(0.85); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .qnum { animation: none; } }
