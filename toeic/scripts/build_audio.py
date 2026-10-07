@@ -89,8 +89,11 @@ def cue_jobs():
     for m in pr.get("mocks", []):
         walk([i for i in m.get("p1", []) if i in by], len(m.get("p2", [])),
              [by[i] for i in m["p3"] if i in by], [by[i] for i in m["p4"] if i in by])
-    for F in pr.get("full", []) + pr.get("half", []):
-        walk([i for i in F["p1"] if i in by], len(F["p2"]), F["p3"], F["p4"])
+    # 정규·하프(문항이 통째로 든 회차)는 data/ 원본에서 바로 읽는다 — Part 1 사진이 아직 없어 앱에서 빠진 회차도 미리 만든다
+    for fn in ("fullmock.json", "halfmock.json"):
+        fp = os.path.join(ROOT, "data", fn)
+        for F in (json.load(open(fp, encoding="utf-8"))["mocks"] if os.path.exists(fp) else []):
+            walk(F["p1"], len(F["p2"]), F["p3"], F["p4"])
     return [(f"cue/{cue_hash(t)}.mp3", t, cues["voice"]) for t in sorted(texts)]
 
 
