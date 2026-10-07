@@ -1978,7 +1978,7 @@
       let cls = "";
       if (ans) cls = i === q.answer ? "right" : i === ans.pick ? "wrong" : "dim";
       if (q.type === "resp") {
-        const txt = script ? `<span class="en">${esc(o.t)}</span>${ans && o.k ? `<span class="small muted" style="display:block;font-weight:500;margin-top:2px">${esc(o.k)}</span>` : ""}` : T`<span class="muted">보기 ${L[i]}</span>`;
+        const txt = script ? `<span class="en">${esc(o.t)}</span>${ans && o.k ? `<span class="small muted qsub" style="display:block;font-weight:500;margin-top:2px">${esc(o.k)}</span>` : ""}` : T`<span class="muted">보기 ${L[i]}</span>`;
         return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${L[i]}</span><span style="flex:1">${txt}</span>${ans ? T`<span class="play sm" data-say="${i}" role="button" aria-label="보기 ${L[i]} 듣기">${ico("vol")}</span>` : ""}</button>`;
       }
       return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${i + 1}</span><span>${esc(o)}</span></button>`;
@@ -2123,7 +2123,7 @@
       if (shown) cls = i === q.a ? "right" : i === pick ? "wrong" : "dim";
       return `<button class="opt sm ${cls}" data-q="${j}" data-o="${i}" ${shown ? "disabled" : ""}><span class="on">${LETTERS[i]}</span><span class="en">${esc(x)}</span></button>`;
     }).join("");
-    const head = `<div class="pq-h"><span class="pq-n">${o.num || j + 1}</span><span class="en">${esc(q.q || "")}</span></div>${shown && q.qko ? `<div class="small muted" style="margin:-2px 0 8px 44px">${esc(q.qko)}</div>` : ""}`;
+    const head = `<div class="pq-h"><span class="pq-n">${o.num || j + 1}</span><span class="en">${esc(q.q || "")}</span></div>${shown && q.qko ? `<div class="small muted qsub" style="margin:-2px 0 8px 44px">${esc(q.qko)}</div>` : ""}`;
     let fb = "";
     if (shown) {
       const ok = pick === q.a;
