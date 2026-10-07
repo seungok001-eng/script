@@ -111,6 +111,7 @@ pr.p1 = read(path.join(ROOT, "data/part1.json"), { items: [] }).items
     const rels = q.o.map((en, i) => [`p1q/${q.id}-${i}.mp3`, plain(en)]);
     if (rels.every(([rel, t]) => fresh(rel, t))) set.au = 1;
     if (q.fm) set.mock = `f${q.fm}`; // 정규 모의고사 전용 사진 (연습 목록에서 빠진다)
+    if (q.hm) set.mock = `h${q.hm}`; // 하프 모의고사 6~10회 전용 사진
     return set;
   });
 // 하프 모의고사 4회: 문항을 고정 시드로 미리 떼어 둔다 (연습 목록에서는 빠짐)
@@ -142,7 +143,7 @@ if (enough) {
   const p5w = take(vocab, 6, 19);
   // Part 1: 회마다 3문제 (실제 6문제의 절반). 사진이 다 들어오기 전에도 배정이 바뀌지 않게 문제 원본 전체(120개)에서 고정 시드로
   // 고르고, 그중 사진이 있는 것만 싣는다 (사진이 12장 이상일 때). 모의고사 문제는 연습 목록에서 빠진다
-  const p1All = read(path.join(ROOT, "data/part1.json"), { items: [] }).items.filter((q) => !q.fm);
+  const p1All = read(path.join(ROOT, "data/part1.json"), { items: [] }).items.filter((q) => !q.fm && !q.hm); // 하프 1~5회 고정 배정이 바뀌지 않게 새 모의고사 전용 사진은 뺀다
   const p1Set = new Map(pr.p1.map((x) => [x.id, x]));
   const p1 = pr.p1.length >= 12 ? take(p1All, 3, 20).map((xs) => xs.map((q) => p1Set.get(q.id)).filter(Boolean)) : null;
   for (let m = 0; m < MOCKS; m++) {
@@ -178,7 +179,8 @@ const withAu = words.filter((w) => w.au).length;
 const withEx = words.filter((w) => w.exAu).length;
 console.log(`단어 ${words.length}개 (데이터 없음 ${missing}) · 단어 음성 ${withAu} · 예문 음성 ${withEx} · Part1 ${part1.length} (음성 ${part1.filter((p) => p.au).length}) · LC ${lc.length} (음성 ${lc.filter((p) => p.au).length} · 응답 퀴즈 ${lc.filter((p) => p.x).length}) · 혼동어 ${conf.length} · ${(js.length / 1024).toFixed(0)}KB`);
 // 정규 모의고사 2회 (200문제 · LC 45분 · RC 75분): data/fullmock.json. 음성은 audio/fm/
-const full = read(path.join(ROOT, "data/fullmock.json"), { mocks: [] }).mocks.map((m) => {
+// 하프 모의고사 6~10회도 같은 형식(문항이 통째로 들어 있음): data/halfmock.json → practice.half
+const mockOf = (m) => {
   const p2 = m.p2.map((it) => {
     const o = { id: it.id, q: it.q, qko: it.qko, o: it.o, ok: it.ok, a: it.a, exp: it.exp, type: it.type };
     if ([[`fm/${it.id}-q.mp3`, it.q]].concat(it.o.map((t, i) => [`fm/${it.id}-${i}.mp3`, t])).every(([rel, t]) => fresh(rel, plain(t)))) o.au = 1;
@@ -191,11 +193,13 @@ const full = read(path.join(ROOT, "data/fullmock.json"), { mocks: [] }).mocks.ma
     return o;
   });
   return { n: m.n, p1: m.p1.filter((id) => pr.p1.some((x) => x.id === id)), p2, p3: lc(m.p3), p4: lc(m.p4), p5: m.p5, p6: m.p6, p7: m.p7 };
-});
+};
+const full = read(path.join(ROOT, "data/fullmock.json"), { mocks: [] }).mocks.map(mockOf);
+const half = read(path.join(ROOT, "data/halfmock.json"), { mocks: [] }).mocks.map(mockOf);
 // 모의고사 실전 진행 안내 방송 문구 (음성은 build_audio.py 가 cue/ 에 만든다)
 const cuesRaw = read(path.join(ROOT, "data/mock-cues.json"), null);
 const cues = cuesRaw ? { dir: cuesRaw.dir, answerSec: cuesRaw.answerSec } : null;
-const practice = { version, diag, full, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks, cues };
+const practice = { version, diag, full, half, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks, cues };
 const pjs = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_PRACTICE=" + JSON.stringify(practice) + ";\n";
 fs.writeFileSync(path.join(ROOT, "app/js/practice.js"), pjs);
 const nq = (xs) => xs.reduce((n, x) => n + x.qs.length, 0);

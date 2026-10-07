@@ -185,9 +185,9 @@
     const pr = (src && src.pr) || {};
     for (const sec of ["lc", "rc"]) if (Array.isArray(pr[sec])) d.pr[sec] = pr[sec].slice(-120).map((x) => (x ? 1 : 0));
     const mk = (src && src.mock) || {};
-    for (const k of Object.keys(mk)) if (/^(\d{1,2}|f\d)$/.test(k) && mk[k]) { const total = num(mk[k].total, 10, 10, 990); d.mock[k] = { lc: num(mk[k].lc, 5, 5, 495), rc: num(mk[k].rc, 5, 5, 495), total, best: num(mk[k].best, 10, 10, 990), at: num(mk[k].at, 0, 0, 1e6), n: num(mk[k].n, 1, 1, 999), first: num(mk[k].first, total, 10, 990) }; }
+    for (const k of Object.keys(mk)) if (/^(\d{1,2}|f\d{1,2})$/.test(k) && mk[k]) { const total = num(mk[k].total, 10, 10, 990); d.mock[k] = { lc: num(mk[k].lc, 5, 5, 495), rc: num(mk[k].rc, 5, 5, 495), total, best: num(mk[k].best, 10, 10, 990), at: num(mk[k].at, 0, 0, 1e6), n: num(mk[k].n, 1, 1, 999), first: num(mk[k].first, total, 10, 990) }; }
     const mr = src && src.mockRun;
-    if (mr && /^(\d{1,2}|f\d)$/.test(String(mr.n)) && Array.isArray(mr.picks)) {
+    if (mr && /^(\d{1,2}|f\d{1,2})$/.test(String(mr.n)) && Array.isArray(mr.picks)) {
       d.mockRun = { n: /^f/.test(String(mr.n)) ? String(mr.n) : +mr.n, i: num(mr.i, 0, 0, 500), picks: mr.picks.slice(0, 500).map((a) => (Array.isArray(a) ? a.slice(0, 10).map((x) => (Number.isInteger(x) && x >= 0 && x <= 3 ? x : null)) : [])), rcUsed: mr.rcUsed == null ? null : num(mr.rcUsed, 0, 0, 1e8), at: num(mr.at, 0, 0, 1e6), real: mr.real === true };
     }
     const gd = src && src.guide;
@@ -842,7 +842,7 @@
   }
   // 오늘의 실전 과제 (시험일·단어 진도·모의고사 기록 기준)
   function practiceTaskToday(P, sum, t) {
-    const mocks = (PR && PR.mocks ? PR.mocks.length : 4);
+    const mocks = PR ? allHalves().length : 4;
     const taken = Object.keys(S.mock).filter((k) => /^\d+$/.test(k)).length;
     const last = Object.values(S.mock).reduce((m, r) => Math.max(m, r.at || 0), 0) || null;
     const exam = C.parseYmd(S.profile.examDate);
@@ -2310,7 +2310,7 @@
         ${pred ? T`<div class="big">${pred.total}<small>점</small></div><div class="meta"><div><b>${pred.lc}</b>LC</div><div><b>${pred.rc}</b>RC</div><div><b>${pred.nLc + pred.nRc}</b>최근 문제</div></div>`
           : S.diag ? T`<div class="big">${S.diag.total}<small>점</small></div><div class="meta"><div><b>${S.diag.lc}</b>LC</div><div><b>${S.diag.rc}</b>RC</div><div><b>진단</b>20문제 기준</div></div><div class="small" style="opacity:.85;margin-top:8px">LC·RC 각 30문제를 풀면 더 정확한 예상 점수로 바뀌어요 (지금 ${Math.min(nLc, 30)}/30 · ${Math.min(nRc, 30)}/30)</div>`
           : T`<div class="big" style="font-size:22px">LC·RC 각 30문제를 풀면<br>예상 점수를 알려 드려요</div><div class="meta"><div><b>${Math.min(nLc, 30)}/30</b>LC</div><div><b>${Math.min(nRc, 30)}/30</b>RC</div></div>`}
-        <a class="btn block" href="#/mock" style="margin-top:14px">${ico("clock")}모의고사 (${(PR.full || []).length ? T`정규 ${PR.full.length}회 · ` : ""}하프 ${(PR.mocks || []).length}회)</a>
+        <a class="btn block" href="#/mock" style="margin-top:14px">${ico("clock")}모의고사 (${(PR.full || []).length ? T`정규 ${PR.full.length}회 · ` : ""}하프 ${allHalves().length}회)</a>
       </section>
       <div class="section-h"><h2>LC 듣기</h2></div>
       <div class="grid2">
@@ -2752,8 +2752,10 @@
     return pages.filter((p) => !("set" in p) || p.set);
   }
   const fullMocks = () => (PR.full || []).map((F, i) => ({ n: `f${i + 1}`, full: F, title: T`정규 모의고사 ${i + 1}회`, rcMin: 75 }));
+  // 하프 모의고사: 1~5회는 연습 문항에서 뗀 id 목록(PR.mocks), 6~10회는 새로 만든 문항(PR.half, 정규와 같은 형식)
+  const allHalves = () => (PR.mocks || []).concat((PR.half || []).map((F) => ({ n: F.n, fdata: F, rcMin: RC_MIN })));
   function mockPages(m) {
-    if (m.full) return fullPages(m.full);
+    if (m.full || m.fdata) return fullPages(m.full || m.fdata);
     const pages = [];
     (m.p1 || []).forEach((id) => pages.push({ part: "p1", set: PR._by.get(id) }));
     m.p2.forEach((id) => { const it = D.lcAll.find((p) => p.id === id); if (it) pages.push({ part: "p2", item: it, q: C.makeResponse(it, C.rng(parseInt(id.slice(3), 10) * 7919 + m.n * 104729)) }); });
@@ -2772,7 +2774,7 @@
   const pageQs = (p) => (p.set ? p.set.qs : [p.q]);
   function vMock(r) {
     if (!needPractice(r)) return;
-    const halves = PR.mocks || [];
+    const halves = allHalves();
     const fulls = fullMocks();
     const all = halves.concat(fulls);
     const titleOf = (m) => m.title || T`하프 모의고사 ${m.n}회`;
@@ -3073,7 +3075,7 @@
       <ul class="offer-list">
         <li>단어 <b>${NWORDS.toLocaleString()}개</b> 전체 · 원어민 음성 · 90일 코스</li>
         <li>Part 1~7 실전 문제 <b>전부</b> · 정답 근거 해설</li>
-        <li>하프 모의고사 <b>${(PR && PR.mocks ? PR.mocks.length : 4)}회</b>${PR && PR.full && PR.full.length ? T` + 정규 모의고사 <b>${PR.full.length}회</b>` : ""} · 예상 점수</li>
+        <li>하프 모의고사 <b>${PR ? allHalves().length : 4}회</b>${PR && PR.full && PR.full.length ? T` + 정규 모의고사 <b>${PR.full.length}회</b>` : ""} · 예상 점수</li>
         <li>문법 강의 30주제 · LC 표현 · 받아쓰기 무제한</li>
       </ul>
       <button class="btn block" data-buy>${ico("crown")}전체 열기 ${esc(IAP.price || CONFIG.premium.price)} · 출시 할인</button>

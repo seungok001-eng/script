@@ -89,7 +89,7 @@ def cue_jobs():
     for m in pr.get("mocks", []):
         walk([i for i in m.get("p1", []) if i in by], len(m.get("p2", [])),
              [by[i] for i in m["p3"] if i in by], [by[i] for i in m["p4"] if i in by])
-    for F in pr.get("full", []):
+    for F in pr.get("full", []) + pr.get("half", []):
         walk([i for i in F["p1"] if i in by], len(F["p2"]), F["p3"], F["p4"])
     return [(f"cue/{cue_hash(t)}.mp3", t, cues["voice"]) for t in sorted(texts)]
 
@@ -135,11 +135,13 @@ def load_entries():
 def fm_jobs():
     """정규 모의고사(data/fullmock.json): Part 2 질문(-q)·보기(-0,-1,-2), Part 3·4 문장(-NN). 모두 fm/ 아래.
     Part 2 보기 세 개는 답하는 사람 목소리 하나로 읽어 목소리로 정답이 드러나지 않게 한다."""
-    f = os.path.join(ROOT, "data", "fullmock.json")
-    if not os.path.exists(f):
-        return []
+    mocks = []
+    for name in ("fullmock.json", "halfmock.json"):  # 하프 6~10회도 같은 형식 (음성은 fm/ 아래)
+        f = os.path.join(ROOT, "data", name)
+        if os.path.exists(f):
+            mocks += json.load(open(f, encoding="utf-8"))["mocks"]
     out = []
-    for m in json.load(open(f, encoding="utf-8"))["mocks"]:
+    for m in mocks:
         for it in m["p2"]:
             v = voice_for(it["id"])
             out.append((f"fm/{it['id']}-q.mp3", plain(it["q"]), v))
