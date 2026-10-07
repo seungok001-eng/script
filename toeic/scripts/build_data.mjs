@@ -219,6 +219,7 @@ console.log(`실전: Part 1 ${pr.p1.length}문제 (음성 ${pr.p1.filter((x) => 
   const i18n = await import("./i18n.mjs");
   // 번역 원문에는 사진이 아직 없어 앱에서 빠진 회차·사진 문제도 넣는다 (사진이 들어오면 번역이 이미 준비돼 있게)
   const practiceAll = Object.assign({}, practice, { full: fullRaw.map((m) => mockOf(m, "f")), half: halfRaw.map((m) => mockOf(m, "h")), p1: p1Items.map(p1Set) });
+  if (process.env.TOEICFIT_DUMP_PRACTICE_ALL) fs.writeFileSync(process.env.TOEICFIT_DUMP_PRACTICE_ALL, JSON.stringify(practiceAll)); // 번역 작업용 문맥
   try { await i18n.extract({ practice: practiceAll }); } catch (e) { console.log("다국어 원문 추출 건너뜀 (npm i 로 acorn 설치 필요):", e.message); }
   i18n.build();
 }
