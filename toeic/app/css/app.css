@@ -779,3 +779,5 @@ mark.on { background: color-mix(in srgb, var(--gold) 62%, transparent); box-shad
 .realbar [data-rskip] { flex-shrink: 0; }
 .realbar [data-rskip][hidden] { display: none; }
 .pq.now-q { outline: 2px solid var(--brand); outline-offset: 6px; border-radius: 12px; }
+/* 설정: 언어 고르기 */
+.lang-sel { min-width: 150px; padding: 8px 10px; border-radius: 10px; border: 1.5px solid var(--line); background: var(--bg-elev); color: var(--text); font: inherit; font-size: 15px; }

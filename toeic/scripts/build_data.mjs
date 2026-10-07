@@ -201,3 +201,10 @@ fs.writeFileSync(path.join(ROOT, "app/js/practice.js"), pjs);
 const nq = (xs) => xs.reduce((n, x) => n + x.qs.length, 0);
 console.log(`정규 모의고사 ${full.length}회 (음성 Part 2 ${full.reduce((n, m) => n + m.p2.filter((x) => x.au).length, 0)}/${full.reduce((n, m) => n + m.p2.length, 0)} · Part 3·4 ${full.reduce((n, m) => n + m.p3.concat(m.p4).filter((x) => x.au).length, 0)}/${full.reduce((n, m) => n + m.p3.length + m.p4.length, 0)} · 사진 ${full.reduce((n, m) => n + m.p1.length, 0)}/${full.length * 6})`);
 console.log(`실전: Part 1 ${pr.p1.length}문제 (음성 ${pr.p1.filter((x) => x.au).length}) · Part 3 ${pr.p3.length}세트 · Part 4 ${pr.p4.length}세트 (음성 ${pr.p3.concat(pr.p4).filter((x) => x.au).length}) · 문법 ${pr.grammar.length}주제 ${nq(pr.grammar)}문제 · Part 6 ${pr.p6.length} · Part 7 ${pr.p7.length}세트 ${nq(pr.p7)}문제 · 모의고사 ${mocks.length}회 · ${(pjs.length / 1024).toFixed(0)}KB`);
+
+// 다국어: 번역할 원문을 다시 모으고(data/i18n/src.ko.json) 번역 파일을 앱용(app/js/l10n)으로 만든다
+{
+  const i18n = await import("./i18n.mjs");
+  try { await i18n.extract(); } catch (e) { console.log("다국어 원문 추출 건너뜀 (npm i 로 acorn 설치 필요):", e.message); }
+  i18n.build();
+}

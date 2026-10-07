@@ -371,22 +371,20 @@
   function search(words, q, limit) {
     const s = (q || "").trim().toLowerCase();
     if (!s) return [];
-    const isKo = /[가-힣]/.test(s);
+    // 영어 단어와 뜻(앱 언어로 번역된 뜻 포함)을 함께 찾는다. 한국어 검색어는 영어와 겹치지 않으니 예전과 같은 결과
+    const lo = (x) => String(x).toLowerCase();
     const scored = [];
     for (const w of words) {
       let score = 0;
-      if (isKo) {
-        if (w.m.some((m) => m === s)) score = 100;
-        else if (w.m.some((m) => m.includes(s))) score = 60;
-        else if ((w.der || []).some((d) => d.m.includes(s))) score = 20;
-      } else {
-        const ww = w.w.toLowerCase();
-        if (ww === s) score = 100;
-        else if (ww.startsWith(s)) score = 80;
-        else if (ww.includes(s)) score = 50;
-        else if ((w.der || []).some((d) => d.w.toLowerCase().startsWith(s))) score = 40;
-        else if ((w.para || []).some((p) => p.toLowerCase().includes(s))) score = 20;
-      }
+      const ww = w.w.toLowerCase();
+      if (ww === s) score = 100;
+      else if (ww.startsWith(s)) score = 80;
+      else if (ww.includes(s)) score = 50;
+      else if ((w.der || []).some((d) => d.w.toLowerCase().startsWith(s))) score = 40;
+      else if ((w.para || []).some((p) => p.toLowerCase().includes(s))) score = 20;
+      if (w.m.some((m) => lo(m) === s)) score = Math.max(score, 100);
+      else if (w.m.some((m) => lo(m).includes(s))) score = Math.max(score, 60);
+      else if ((w.der || []).some((d) => lo(d.m).includes(s))) score = Math.max(score, 20);
       if (score) scored.push([score, w]);
     }
     scored.sort((a, b) => b[0] - a[0] || a[1].w.length - b[1].w.length);

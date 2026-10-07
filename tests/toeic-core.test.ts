@@ -429,3 +429,29 @@ test("Part 1 사진 문제: 보기 4개·정답·해석·해설에 정답 문자
     assert.ok(q.must.length >= 2 && q.must_not.length >= 2, `${q.id} 검수 목록`);
   }
 });
+
+test("다국어: 번역 키(data/i18n/src.ko.json)가 데이터의 그 자리 원문을 정확히 가리킨다", () => {
+  const f = new URL("../toeic/data/i18n/src.ko.json", import.meta.url);
+  if (!fs.existsSync(f)) return;
+  const src = JSON.parse(fs.readFileSync(f, "utf8"));
+  const readJs = (rel: string) => { const s = fs.readFileSync(new URL(rel, import.meta.url), "utf8"); return JSON.parse(s.slice(s.indexOf("{"), s.lastIndexOf("}") + 1)); };
+  // app.js patchData 와 같은 길 찾기: 배열 안 id 는 #id, 없으면 순번
+  const get = (root: any, key: string) => {
+    let o = root;
+    for (const g of key.split("/")) {
+      if (o == null) return undefined;
+      o = g[0] === "#" && Array.isArray(o) ? o.find((x: any) => x && String(x.id) === g.slice(1)) : o[g];
+    }
+    return o;
+  };
+  for (const [name, rel] of [["d", "../toeic/app/js/data.js"], ["p", "../toeic/app/js/practice.js"]] as const) {
+    const root = readJs(rel);
+    const bad = Object.entries(src[name] as Record<string, string>).filter(([k, v]) => get(root, k) !== v).slice(0, 3);
+    assert.deepEqual(bad, [], `${name} 키가 원문과 다름`);
+  }
+  // 화면 문구의 {0} 자리 번호는 0 부터 빠짐없이
+  for (const k of Object.keys(src.ui)) {
+    const ns = [...k.matchAll(/\{(\d+)\}/g)].map((m) => +m[1]);
+    ns.forEach((n, i) => assert.ok(n === i || ns.includes(i), `자리 번호 ${k.slice(0, 40)}`));
+  }
+});

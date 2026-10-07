@@ -62,7 +62,7 @@ const browser = await chromium.launch();
 const frameCtx = await browser.newContext({ deviceScaleFactor: 1 });
 for (const sz of SIZES) {
   fs.mkdirSync(path.join(OUT, sz.dir), { recursive: true });
-  const ctx = await browser.newContext({ viewport: { width: sz.vw, height: sz.vh }, deviceScaleFactor: 3, isMobile: true, hasTouch: true, locale: "ko-KR" });
+  const ctx = await browser.newContext({ locale: "ko-KR", viewport: { width: sz.vw, height: sz.vh }, deviceScaleFactor: 3, isMobile: true, hasTouch: true, locale: "ko-KR" });
   const probe = await ctx.newPage();
   await probe.goto(BASE);
   const { today, words } = await probe.evaluate(() => ({ today: window.Core.dayNum(), words: window.VOCA_DATA.words.map((w) => ({ id: w.id, tier: w.tier, d: w.d })) }));

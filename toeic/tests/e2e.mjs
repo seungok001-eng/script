@@ -4,7 +4,7 @@ const out = (process.env.SHOT_DIR || "/tmp/") + "toeicfit-";
 const errors = [], fails = [];
 const ok = (c, m) => { if (!c) fails.push(m); };
 const b = await chromium.launch();
-const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+const ctx = await b.newContext({ locale: "ko-KR", viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
 const p = await ctx.newPage();
 p.on("pageerror", (e) => errors.push("pageerror " + e.message));
 p.on("console", (m) => { if (m.type() === "error") errors.push("console " + m.text()); });
@@ -175,7 +175,7 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
 }
 // 5-3) 유료화(결제 화면 강제 켜기): 첫 실력 진단 → 결과 + 결제 제안 · Day 4 잠김 · 파트별 2번째 세트 잠김
 {
-  const c2 = await b.newContext({ viewport: { width: 390, height: 844 } });
+  const c2 = await b.newContext({ locale: "ko-KR", viewport: { width: 390, height: 844 } });
   const q = await c2.newPage();
   q.on("pageerror", (e) => errors.push("pageerror(pay) " + e.message));
   await q.goto(base); await q.evaluate(() => localStorage.setItem("toeicfit.paywall", "1")); await q.reload();
@@ -214,7 +214,7 @@ ok(st.profile.target === 800 && st.profile.daily === 200 && st.words["01-01"].b 
 await b.close();
 // 7) 데스크톱: 마우스 드래그 스와이프가 카드를 뒤집지 않고 한 번만 채점 / Enter 키 버튼
 const b2 = await chromium.launch();
-const p2 = await (await b2.newContext({ viewport: { width: 1280, height: 860 } })).newPage();
+const p2 = await (await b2.newContext({ locale: "ko-KR", viewport: { width: 1280, height: 860 } })).newPage();
 p2.on("pageerror", (e) => errors.push("d pageerror " + e.message));
 await p2.goto(base);
 await p2.click("[data-next]"); await p2.click("[data-next]"); await p2.click("[data-next]"); await p2.click("[data-next]");

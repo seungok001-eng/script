@@ -28,6 +28,24 @@
   <div id="app"></div>
   <div class="toast-wrap" id="toast" role="status" aria-live="polite"></div>
   <noscript>이 앱을 사용하려면 자바스크립트를 켜 주세요.</noscript>
+  <script src="js/l10n/langs.js"></script>
+  <script>
+    // 언어: 설정에서 고른 언어 → 없으면 기기 언어 → 번역이 있는 언어만. 한국어가 아니면 번역 파일을 먼저 읽는다
+    (function () {
+      var have = (window.TOEICFIT_LANGS || []).map(function (l) { return l.code; });
+      var pick = "";
+      try { var st = JSON.parse((localStorage.getItem("toeicfit.v1") || localStorage.getItem("vocafit.v1")) || "{}").settings; if (st && st.lang) pick = st.lang; } catch (e) {}
+      if (!pick) {
+        var n = String((navigator.languages && navigator.languages[0]) || navigator.language || "ko").toLowerCase();
+        var map = [["ko", "ko"], ["ja", "ja"], ["vi", "vi"], ["zh", "zh-TW"], ["es", "es"], ["fr", "fr"], ["en", "en"]];
+        pick = "en";
+        for (var i = 0; i < map.length; i++) if (n.indexOf(map[i][0]) === 0) { pick = map[i][1]; break; }
+      }
+      if (have.indexOf(pick) < 0) pick = have.indexOf("en") >= 0 && pick !== "ko" ? "en" : "ko";
+      window.TOEICFIT_LANG = pick;
+      if (pick !== "ko") document.write('<script src="js/l10n/' + pick + '.js"><\/script>');
+    })();
+  </script>
   <script src="js/data.js"></script>
   <script src="js/core.js"></script>
   <script src="js/app.js"></script>
