@@ -2577,9 +2577,9 @@
    "scene": "옷 가게에서 젊은 남자 두 명이 셔츠가 빽빽하게 걸린 긴 행거 앞에 나란히 서서 한 손으로 옷걸이를 넘기며 셔츠를 고르고 있다. 두 사람 모두 자기 티셔츠를 입고 있고 셔츠를 몸에 대 보지 않으며, 뒤쪽 카운터는 비어 있다.",
    "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a clothing store. Two young men, one East Asian and one Middle Eastern, stand side by side at a long clothing rack crowded with shirts on hangers, each sliding hangers aside with one hand and looking at the shirts. Both wear their own plain T-shirts, and neither holds a shirt up to his body or takes one off the rack. The counter in the background is empty, with nobody standing at it. Medium-distance shot from the side, showing the rack and the distant counter. Plain, slightly flat everyday lighting, ordinary non-glamorous look, deep focus (background not blurred). No readable text, no logos, no signs with words, no watermarks.",
    "must": [
-    "two men sliding hangers on a rack full of shirts",
-    "both wearing their own T-shirts",
-    "empty counter far behind them"
+    "right man sliding hangers on a rack",
+    "left man holding one hanger, looking at it",
+    "racks full of shirts"
    ],
    "must_not": [
     "no shirt held against a body or being put on",
@@ -2599,7 +2599,7 @@
     "(C) 쇼핑객들이 행거에 걸린 옷을 살펴보고 있다.",
     "(D) 옷걸이 행거가 빈 채로 있다."
    ],
-   "exp": "두 남자가 행거의 옷걸이를 넘기며 셔츠를 살펴보고 있으므로 (C)가 정답이다. 셔츠는 행거에 걸린 채이고 두 사람은 넘겨 보기만 하므로 (A)는 틀리고, 카운터는 멀리 비어 있고 두 사람은 행거 앞에 있으므로 (B)도 틀리다. 행거에는 셔츠가 빽빽하게 걸려 있으므로 (D)도 오답이다.",
+   "exp": "오른쪽 남자는 행거의 옷걸이를 넘겨 보고 왼쪽 남자는 옷걸이 하나를 들고 살펴보며 옷을 고르고 있으므로 (C)가 정답이다. 두 사람 모두 셔츠를 몸에 걸쳐 입어 보고 있지 않으므로 (A)는 틀리고, 카운터는 멀리 비어 있고 두 사람은 행거 앞에 있으므로 (B)도 틀리다. 행거에는 셔츠가 빽빽하게 걸려 있으므로 (D)도 오답이다.",
    "trap": "위치 혼동"
   },
   {
@@ -2644,28 +2644,29 @@
    "prompt": "Photorealistic candid photograph, natural light, realistic everyday scene, 4:3 landscape. Inside a small bakery. A gray-haired woman customer stands in front of a glass display case completely full of pastries, her arm extended, pointing at a row of croissants inside the case. Her other hand holds her purse strap. Behind the case, a young male clerk in a white apron stands holding an empty paper bag open in front of him with both hands, looking where she points. The case is closed, and nobody touches any pastry. Medium-distance shot from the side. Plain, slightly flat everyday lighting, ordinary non-glamorous look, deep focus (background not blurred). No readable text, no logos, no signs with words, no watermarks.",
    "must": [
     "customer pointing at pastries in the case",
-    "clerk's hands resting on top of the case",
+    "clerk standing with both hands resting on the case",
+    "handbag on the customer's shoulder",
     "case full of pastries"
    ],
    "must_not": [
     "the clerk pointing",
-    "a hand inside the case",
+    "a bag set on the counter",
     "an empty case"
    ],
    "o": [
     "A clerk is pointing at some pastries in a display case.",
-    "A customer is taking a pastry from the case.",
+    "A customer is putting her handbag on the counter.",
     "The display case has been left empty.",
     "A customer is pointing at some pastries in a display case."
    ],
    "a": 3,
    "ko": [
     "(A) 점원이 진열장 안의 페이스트리를 가리키고 있다.",
-    "(B) 손님이 진열장에서 페이스트리를 꺼내고 있다.",
+    "(B) 손님이 카운터에 핸드백을 올려놓고 있다.",
     "(C) 진열장이 빈 채로 있다.",
     "(D) 손님이 진열장 안의 페이스트리를 가리키고 있다."
    ],
-   "exp": "손님이 팔을 뻗어 진열장 안의 크루아상을 가리키고 있으므로 (D)가 정답이다. 점원은 두 손을 진열장 위에 올려놓고 있어 가리키는 사람이 아니므로 (A)는 주어를 바꾼 오답이고, 손님은 진열장 밖에서 손가락으로 가리키기만 하고 있어 페이스트리를 꺼내지 않으므로 (B)도 틀리다. 진열장은 페이스트리로 가득 차 있으므로 (C)도 오답이다.",
+   "exp": "손님이 팔을 뻗어 진열장 안의 크루아상을 가리키고 있으므로 (D)가 정답이다. 점원은 두 손을 진열장에 짚고 서 있을 뿐 가리키지 않으므로 (A)는 주어를 바꾼 오답이고, 손님의 핸드백은 어깨에 메여 있으므로 (B)도 틀리다. 진열장은 페이스트리로 가득 차 있으므로 (C)도 오답이다.",
    "trap": "주어 혼동"
   },
   {
