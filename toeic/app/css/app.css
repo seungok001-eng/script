@@ -384,7 +384,7 @@ svg { flex-shrink: 0; }
 kbd { font-family: inherit; font-size: 11px; background: var(--bg-sunk); border: 1px solid var(--line-strong); border-bottom-width: 2px; border-radius: 5px; padding: 0 5px; }
 
 .quiz-q { text-align: center; padding: 20px 4px 8px; }
-.quiz-q .qk { font-size: 12px; font-weight: 800; color: var(--brand); letter-spacing: 0.04em; }
+.quiz-q .qk { font-size: 15px; font-weight: 800; color: var(--brand); letter-spacing: 0.04em; }
 .quiz-q .qw { font-size: 34px; font-weight: 800; letter-spacing: -0.03em; margin-top: 10px; line-height: 1.2; }
 .quiz-q .qm { font-size: 22px; font-weight: 750; margin-top: 10px; letter-spacing: -0.02em; }
 .quiz-q .qs { font-size: 18px; font-weight: 550; line-height: 1.6; margin-top: 12px; text-align: left; background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--r-l); padding: 18px; }
@@ -579,8 +579,8 @@ mark { background: none; color: var(--brand); font-weight: 800; }
 .wpct { width: 40px; text-align: right; font-variant-numeric: tabular-nums; }
 /* 문항 */
 .pqs { margin-top: 14px; display: flex; flex-direction: column; gap: 16px; }
-.pq-h { display: flex; gap: 8px; align-items: flex-start; font-weight: 700; font-size: 15.5px; line-height: 1.45; margin-bottom: 8px; }
-.pq-n { min-width: 22px; height: 22px; padding: 0 5px; border-radius: 7px; background: var(--brand-soft); color: var(--brand); font-size: 12px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.pq-h { display: flex; gap: 10px; align-items: flex-start; font-weight: 700; font-size: 15.5px; line-height: 1.45; margin-bottom: 8px; }
+.pq-n { min-width: 34px; height: 30px; padding: 0 7px; border-radius: 9px; background: var(--brand); color: #fff; font-size: 16px; font-weight: 800; font-variant-numeric: tabular-nums; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
 .opt.sm { min-height: 46px; padding: 9px 12px; font-size: 15px; gap: 10px; }
 .opt.sm .on { width: 22px; height: 22px; font-size: 12px; }
 .opt.sel { border-color: var(--brand); background: var(--brand-soft); }

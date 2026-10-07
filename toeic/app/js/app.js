@@ -2060,7 +2060,7 @@
       if (shown) cls = i === q.a ? "right" : i === pick ? "wrong" : "dim";
       return `<button class="opt sm ${cls}" data-q="${j}" data-o="${i}" ${shown ? "disabled" : ""}><span class="on">${LETTERS[i]}</span><span class="en">${esc(x)}</span></button>`;
     }).join("");
-    const head = `<div class="pq-h"><span class="pq-n">${o.num || j + 1}</span><span class="en">${esc(q.q || "")}</span></div>${shown && q.qko ? `<div class="small muted" style="margin:-2px 0 8px 30px">${esc(q.qko)}</div>` : ""}`;
+    const head = `<div class="pq-h"><span class="pq-n">${o.num || j + 1}</span><span class="en">${esc(q.q || "")}</span></div>${shown && q.qko ? `<div class="small muted" style="margin:-2px 0 8px 44px">${esc(q.qko)}</div>` : ""}`;
     let fb = "";
     if (shown) {
       const ok = pick === q.a;
@@ -2126,7 +2126,7 @@
     const q = set.qs[0];
     const pick = st.picks[0];
     const photo = `<div class="p1photo"><img src="${esc(set.img)}" alt="Part 1 사진${st.base ? ` ${st.base}번` : ""}" data-zoom></div>`;
-    const player = `<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${st.base ? `${st.base}번 · ` : ""}사진을 가장 잘 묘사한 문장은?</b><div class="small muted">${st.base ? "" : `${LV_LABEL[set.lv] || ""} · `}<span class="lp-prog">보기 4문장</span></div></div></div>`;
+    const player = `<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${st.base && mode !== "exam" ? `${st.base}번 · ` : ""}사진을 가장 잘 묘사한 문장은?</b><div class="small muted">${st.base ? "" : `${LV_LABEL[set.lv] || ""} · `}<span class="lp-prog">보기 4문장</span></div></div></div>`;
     if (!review) {
       return `${photo}${player}<div class="pq" id="pq-0"><div class="opts">${q.o.map((x, i) => `<button class="opt sm ${pick === i ? "sel" : ""}" data-q="0" data-o="${i}" data-pline="${i}"><span class="on">${LETTERS[i]}</span><span class="muted">보기 ${LETTERS[i]}</span></button>`).join("")}</div></div>
         <div class="small muted" style="margin-top:6px">(A)~(D) 네 문장을 듣고 사진과 맞는 것을 고르세요. 문장은 채점 뒤에 보여 드려요.</div>`;
@@ -2143,7 +2143,7 @@
     const hiQ = st.evQ;
     const evSet = new Set(hiQ != null ? set.qs[hiQ].ev : []);
     const label = set.part === 3 ? `${esc(set.topic || "")}${set.lines.some((l) => /2$/.test(l.sp)) ? " · 3인 대화" : ""}` : esc(set.talk || "");
-    const player = `<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${set.part === 3 ? "대화" : "담화"} 듣기</b><div class="small muted">${label} · ${LV_LABEL[set.lv] || ""} · <span class="lp-prog">${set.lines.length}문장</span></div></div>${review ? `<button class="btn ghost sm" data-shadow>${ico("repeat")}따라 말하기</button>` : ""}</div>`;
+    const player = `<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${set.part === 3 ? "대화" : "담화"} 듣기</b><div class="small muted">${mode === "exam" ? "" : `${label} · ${LV_LABEL[set.lv] || ""} · `}<span class="lp-prog">${set.lines.length}문장</span></div></div>${review ? `<button class="btn ghost sm" data-shadow>${ico("repeat")}따라 말하기</button>` : ""}</div>`;
     const script = review ? `<div class="section-h" style="margin-top:18px"><h2>스크립트</h2><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>
       <div class="script">${set.lines.map((l, i) => `<div class="sline ${evSet.has(i) ? "ev" : ""}" data-line="${i}"><span class="spk spk-${l.sp[0]}">${SPK[l.sp] || ""}</span><div class="spacer"><div class="en">${esc(l.en)}</div>${showKo ? `<div class="ko">${esc(l.ko)}</div>` : ""}</div></div>`).join("")}</div>
       <div class="small muted" style="margin-top:6px">문장을 누르면 그 문장부터 다시 들어요 · 근거 위치 보기를 누르면 정답 근거 문장이 표시돼요</div>` : "";
