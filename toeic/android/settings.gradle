@@ -1,4 +1,6 @@
 include ':app'
+// 출시 AAB: 음성 묶음 모듈 (toeic-release.yml 이 TOEICFIT_AUDIO_PACK=1 로 켠다)
+if (System.getenv('TOEICFIT_AUDIO_PACK')) include ':audio_pack'
 include ':capacitor-cordova-android-plugins'
 project(':capacitor-cordova-android-plugins').projectDir = new File('./capacitor-cordova-android-plugins/')
 

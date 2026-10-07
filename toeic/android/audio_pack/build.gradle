@@ -1,0 +1,11 @@
+// 음성(public/audio)을 Play Asset Delivery 'install-time' 묶음으로 내보낸다 — 출시 AAB 빌드에서만 쓴다 (TOEICFIT_AUDIO_PACK=1)
+// 설치할 때 앱과 함께 내려받고, 앱 안에서는 같은 경로(AssetManager public/audio/…)로 읽혀서 코드 변경이 필요 없다.
+// 기본 모듈 200MB 제한을 피하기 위한 것. src/main/assets 는 빌드 때 워크플로가 채운다 (저장소에 올리지 않는다)
+apply plugin: 'com.android.asset-pack'
+
+assetPack {
+    packName = "audio_pack"
+    dynamicDelivery {
+        deliveryType = "install-time"
+    }
+}

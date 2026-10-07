@@ -29,6 +29,10 @@ android {
             }
         }
     }
+    // 출시 AAB 에서는 음성을 install-time 묶음(:audio_pack)으로 나눈다 (기본 모듈 200MB 제한)
+    if (System.getenv("TOEICFIT_AUDIO_PACK")) {
+        assetPacks = [":audio_pack"]
+    }
     buildTypes {
         release {
             if (uploadKey) signingConfig signingConfigs.release

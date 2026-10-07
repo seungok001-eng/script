@@ -83,3 +83,50 @@ jobs:
           files: toeic/release-toeicfit-test.apk
           overwrite_files: true
 
+
+  # 출시용 AAB 구성 점검 (서명 없음): 커밋 메시지에 [aab-check] 가 있을 때만.
+  # 음성을 install-time 묶음(audio_pack)으로 나눈 AAB 를 만들어 기본 모듈 크기를 확인한다
+  aab-check:
+    if: contains(github.event.head_commit.message, '[aab-check]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    defaults:
+      run:
+        working-directory: toeic
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: 안드로이드 SDK 준비
+        run: |
+          SDKM="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          [ -x "$SDKM" ] || SDKM="$(ls -d $ANDROID_HOME/cmdline-tools/*/bin/sdkmanager | tail -1)"
+          yes | "$SDKM" --licenses > /dev/null || true
+          "$SDKM" "platforms;android-36" "build-tools;36.0.0" "platform-tools" > /dev/null
+      - run: npm ci
+      - run: npx cap sync android
+      - name: 음성을 설치 묶음(audio_pack)으로 분리
+        run: |
+          mkdir -p android/audio_pack/src/main/assets/public
+          mv android/app/src/main/assets/public/audio android/audio_pack/src/main/assets/public/audio
+      - name: 서명 없는 AAB 빌드
+        working-directory: toeic/android
+        env:
+          TOEICFIT_AUDIO_PACK: "1"
+        run: |
+          chmod +x gradlew
+          ./gradlew bundleRelease --no-daemon
+      - name: 모듈별 크기
+        run: |
+          python3 - <<'PY'
+          import zipfile
+          z = zipfile.ZipFile("android/app/build/outputs/bundle/release/app-release.aab"); s = {}
+          for i in z.infolist(): m = i.filename.split("/")[0]; s[m] = s.get(m, 0) + i.compress_size
+          for m, v in sorted(s.items()): print(f"{m}: {v / 1048576:.1f} MB")
+          if "audio_pack" not in s: print("::error::음성 묶음(audio_pack)이 AAB 에 없습니다"); raise SystemExit(1)
+          PY

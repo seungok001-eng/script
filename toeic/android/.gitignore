@@ -99,3 +99,6 @@ app/src/main/assets/public
 app/src/main/assets/capacitor.config.json
 app/src/main/assets/capacitor.plugins.json
 app/src/main/res/xml/config.xml
+
+# 출시 빌드 때 워크플로가 채우는 음성 묶음 (저장소에 올리지 않음)
+audio_pack/src/

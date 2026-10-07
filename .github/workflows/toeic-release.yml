@@ -15,6 +15,10 @@ on:
         description: "버전 이름 (예: 1.0.0)"
         required: true
         default: "1.0.0"
+      unsigned_check:
+        description: "서명 없이 구성만 확인 (Play 에 올릴 수 없는 점검용 AAB)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -30,6 +34,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: 서명 비밀값 확인
+        if: ${{ !inputs.unsigned_check }}
         env:
           KS: ${{ secrets.TOEICFIT_KEYSTORE_BASE64 }}
           KP: ${{ secrets.TOEICFIT_KEYSTORE_PASSWORD }}
@@ -65,9 +70,18 @@ jobs:
       - name: 웹 파일을 안드로이드 프로젝트로 복사
         run: npx cap sync android
 
+      # 음성(약 170MB)을 Play Asset Delivery 'install-time' 묶음으로 옮긴다 — 기본 모듈 200MB 제한.
+      # 설치할 때 함께 내려받고 앱 안 경로(public/audio/…)는 그대로라 코드 변경이 없다
+      - name: 음성을 설치 묶음(audio_pack)으로 분리
+        run: |
+          mkdir -p android/audio_pack/src/main/assets/public
+          mv android/app/src/main/assets/public/audio android/audio_pack/src/main/assets/public/audio
+          du -sh android/audio_pack/src/main/assets/public/audio android/app/src/main/assets/public
+
       - name: 서명된 AAB 빌드
         working-directory: toeic/android
         env:
+          TOEICFIT_AUDIO_PACK: "1"
           KS_B64: ${{ secrets.TOEICFIT_KEYSTORE_BASE64 }}
           TOEICFIT_KEYSTORE_PASSWORD: ${{ secrets.TOEICFIT_KEYSTORE_PASSWORD }}
           TOEICFIT_KEY_ALIAS: ${{ secrets.TOEICFIT_KEY_ALIAS }}
@@ -75,8 +89,10 @@ jobs:
           TOEICFIT_VERSION_NAME: ${{ inputs.version_name }}
           TOEICFIT_VERSION_CODE: ${{ github.run_number }}
         run: |
-          echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/upload.jks"
-          export TOEICFIT_KEYSTORE="$RUNNER_TEMP/upload.jks"
+          if [ -n "$KS_B64" ]; then
+            echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/upload.jks"
+            export TOEICFIT_KEYSTORE="$RUNNER_TEMP/upload.jks"
+          fi
           chmod +x gradlew
           ./gradlew bundleRelease --no-daemon
           rm -f "$RUNNER_TEMP/upload.jks"
@@ -86,9 +102,16 @@ jobs:
           mkdir -p dist
           cp android/app/build/outputs/bundle/release/app-release.aab "dist/toeicfit-${{ inputs.version_name }}-${{ github.run_number }}.aab"
           ls -la dist
-          SIZE=$(stat -c %s dist/*.aab)
-          echo "AAB 크기: $((SIZE / 1024 / 1024)) MB"
-          if [ "$SIZE" -gt 209715200 ]; then echo "::warning::AAB 가 200MB 를 넘습니다. Play Asset Delivery 로 음성을 나눠야 합니다."; fi
+          # Play 제한: 기본 모듈(앱) 압축 크기 200MB, install-time 묶음은 따로 (합계 4GB)
+          python3 - <<'PY'
+          import glob, zipfile
+          z = zipfile.ZipFile(glob.glob("dist/*.aab")[0]); s = {}
+          for i in z.infolist(): m = i.filename.split("/")[0]; s[m] = s.get(m, 0) + i.compress_size
+          for m, v in sorted(s.items()): print(f"{m}: {v / 1048576:.1f} MB")
+          base = s.get("base", 0)
+          if base > 150 * 1048576: print(f"::warning::기본 모듈 {base / 1048576:.0f}MB — 200MB 제한에 가깝습니다")
+          if "audio_pack" not in s: print("::error::음성 묶음(audio_pack)이 AAB 에 없습니다"); raise SystemExit(1)
+          PY
 
       - uses: actions/upload-artifact@v4
         with:
