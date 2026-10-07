@@ -446,7 +446,9 @@ test("다국어: 번역 키(data/i18n/src.ko.json)가 데이터의 그 자리 �
   };
   for (const [name, rel] of [["d", "../toeic/app/js/data.js"], ["p", "../toeic/app/js/practice.js"]] as const) {
     const root = readJs(rel);
-    const bad = Object.entries(src[name] as Record<string, string>).filter(([k, v]) => get(root, k) !== v).slice(0, 3);
+    // 사진이 아직 없어 앱에서 빠진 모의고사 회차·사진 문제는 번역 원문에만 있다 (회차·문제 자체가 없을 때만 건너뜀)
+    const hidden = (k: string) => /^(full\/#f|half\/#h|p1\/#p1-)/.test(k) && get(root, k.split("/").slice(0, 2).join("/")) === undefined;
+    const bad = Object.entries(src[name] as Record<string, string>).filter(([k, v]) => !hidden(k) && get(root, k) !== v).slice(0, 3);
     assert.deepEqual(bad, [], `${name} 키가 원문과 다름`);
   }
   // 화면 문구의 {0} 자리 번호는 0 부터 빠짐없이

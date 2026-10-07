@@ -73,10 +73,10 @@ async function uiKeys() {
   return keys;
 }
 
-export async function extract() {
+export async function extract(opt = {}) {
   const d = {}, p = {}, labels = new Set();
   walkData(readJs(path.join(ROOT, "app", "js", "data.js")), d, labels);
-  walkData(readJs(path.join(ROOT, "app", "js", "practice.js")), p, labels);
+  walkData(opt.practice || readJs(path.join(ROOT, "app", "js", "practice.js")), p, labels);
   const ui = await uiKeys();
   fs.mkdirSync(I18N, { recursive: true });
   const src = { ui, labels: [...labels].sort(), d, p };

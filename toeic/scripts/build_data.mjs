@@ -103,17 +103,17 @@ for (const set of pr.p3.concat(pr.p4)) {
 }
 // Part 1 사진 문제: 사진(app/images/p1/<id>.webp)이 들어온 문제만 앱에 싣는다. 보기 문장 음성은 audio/p1q/<id>-N.mp3
 const P1_KIND = { single: "1인 사진", multi: "2인 이상 사진", scene: "사물·풍경 사진" };
-pr.p1 = read(path.join(ROOT, "data/part1.json"), { items: [] }).items
-  .filter((q) => fs.existsSync(path.join(ROOT, "app/images/p1", `${q.id}.webp`)))
-  .map((q) => {
-    const set = { id: q.id, part: 1, lv: q.lv, kind: P1_KIND[q.type] || q.type, setting: q.setting, img: `images/p1/${q.id}.webp`,
-      lines: q.o.map((en) => ({ en })), qs: [{ o: q.o, ko: q.ko.map((k) => k.replace(/^\([A-D]\)\s*/, "")), a: q.a, exp: q.exp, type: q.trap }] };
-    const rels = q.o.map((en, i) => [`p1q/${q.id}-${i}.mp3`, plain(en)]);
-    if (rels.every(([rel, t]) => fresh(rel, t))) set.au = 1;
-    if (q.fm) set.mock = `f${q.fm}`; // 정규 모의고사 전용 사진 (연습 목록에서 빠진다)
-    if (q.hm) set.mock = `h${q.hm}`; // 하프 모의고사 6~10회 전용 사진
-    return set;
-  });
+const p1Set = (q) => {
+  const set = { id: q.id, part: 1, lv: q.lv, kind: P1_KIND[q.type] || q.type, setting: q.setting, img: `images/p1/${q.id}.webp`,
+    lines: q.o.map((en) => ({ en })), qs: [{ o: q.o, ko: q.ko.map((k) => k.replace(/^\([A-D]\)\s*/, "")), a: q.a, exp: q.exp, type: q.trap }] };
+  const rels = q.o.map((en, i) => [`p1q/${q.id}-${i}.mp3`, plain(en)]);
+  if (rels.every(([rel, t]) => fresh(rel, t))) set.au = 1;
+  if (q.fm) set.mock = `f${q.fm}`; // 정규 모의고사 전용 사진 (연습 목록에서 빠진다)
+  if (q.hm) set.mock = `h${q.hm}`; // 하프 모의고사 6~10회 전용 사진
+  return set;
+};
+const p1Items = read(path.join(ROOT, "data/part1.json"), { items: [] }).items;
+pr.p1 = p1Items.filter((q) => fs.existsSync(path.join(ROOT, "app/images/p1", `${q.id}.webp`))).map(p1Set);
 // 하프 모의고사 4회: 문항을 고정 시드로 미리 떼어 둔다 (연습 목록에서는 빠짐)
 function seeded(seed) {
   let t = seed >>> 0;
@@ -180,7 +180,7 @@ const withEx = words.filter((w) => w.exAu).length;
 console.log(`단어 ${words.length}개 (데이터 없음 ${missing}) · 단어 음성 ${withAu} · 예문 음성 ${withEx} · Part1 ${part1.length} (음성 ${part1.filter((p) => p.au).length}) · LC ${lc.length} (음성 ${lc.filter((p) => p.au).length} · 응답 퀴즈 ${lc.filter((p) => p.x).length}) · 혼동어 ${conf.length} · ${(js.length / 1024).toFixed(0)}KB`);
 // 정규 모의고사 2회 (200문제 · LC 45분 · RC 75분): data/fullmock.json. 음성은 audio/fm/
 // 하프 모의고사 6~10회도 같은 형식(문항이 통째로 들어 있음): data/halfmock.json → practice.half
-const mockOf = (m) => {
+const mockOf = (m, kind) => {
   const p2 = m.p2.map((it) => {
     const o = { id: it.id, q: it.q, qko: it.qko, o: it.o, ok: it.ok, a: it.a, exp: it.exp, type: it.type };
     if ([[`fm/${it.id}-q.mp3`, it.q]].concat(it.o.map((t, i) => [`fm/${it.id}-${i}.mp3`, t])).every(([rel, t]) => fresh(rel, plain(t)))) o.au = 1;
@@ -192,16 +192,18 @@ const mockOf = (m) => {
     if (rels.every(([rel, t]) => fresh(rel, t))) { o.au = 1; o.vo = Object.fromEntries(set.lines.map((l, i) => [l.sp, voiceOf(rels[i][0])])); }
     return o;
   });
-  return { n: m.n, p1: m.p1.filter((id) => pr.p1.some((x) => x.id === id)), p2, p3: lc(m.p3), p4: lc(m.p4), p5: m.p5, p6: m.p6, p7: m.p7 };
+  return { id: `${kind}${m.n}`, n: m.n, p1: m.p1.filter((id) => pr.p1.some((x) => x.id === id)), p2, p3: lc(m.p3), p4: lc(m.p4), p5: m.p5, p6: m.p6, p7: m.p7 };
 };
 // Part 1 사진이 아직 다 들어오지 않은 회차는 싣지 않는다 (문항 수가 모자란 모의고사가 나가지 않게)
-const ready = (ms, kind) => ms.filter((m, i, all) => {
-  const ok = mockOf(m).p1.length === m.p1.length || process.env.TOEICFIT_SHOW_ALL_MOCKS === "1"; // 점검용: 사진 없이도 싣기
-  if (!ok) console.log(`${kind} 모의고사 ${m.n}회: Part 1 사진 ${mockOf(m).p1.length}/${m.p1.length} — 사진이 다 들어올 때까지 앱에서 뺀다`);
+const ready = (ms, kind, k) => ms.filter((m) => {
+  const ok = mockOf(m, k).p1.length === m.p1.length || process.env.TOEICFIT_SHOW_ALL_MOCKS === "1"; // 점검용: 사진 없이도 싣기
+  if (!ok) console.log(`${kind} 모의고사 ${m.n}회: Part 1 사진 ${mockOf(m, k).p1.length}/${m.p1.length} — 사진이 다 들어올 때까지 앱에서 뺀다`);
   return ok;
-}).map(mockOf);
-const full = ready(read(path.join(ROOT, "data/fullmock.json"), { mocks: [] }).mocks, "정규");
-const half = ready(read(path.join(ROOT, "data/halfmock.json"), { mocks: [] }).mocks, "하프");
+}).map((m) => mockOf(m, k));
+const fullRaw = read(path.join(ROOT, "data/fullmock.json"), { mocks: [] }).mocks;
+const halfRaw = read(path.join(ROOT, "data/halfmock.json"), { mocks: [] }).mocks;
+const full = ready(fullRaw, "정규", "f");
+const half = ready(halfRaw, "하프", "h");
 // 모의고사 실전 진행 안내 방송 문구 (음성은 build_audio.py 가 cue/ 에 만든다)
 const cuesRaw = read(path.join(ROOT, "data/mock-cues.json"), null);
 const cues = cuesRaw ? { dir: cuesRaw.dir, answerSec: cuesRaw.answerSec } : null;
@@ -215,6 +217,8 @@ console.log(`실전: Part 1 ${pr.p1.length}문제 (음성 ${pr.p1.filter((x) => 
 // 다국어: 번역할 원문을 다시 모으고(data/i18n/src.ko.json) 번역 파일을 앱용(app/js/l10n)으로 만든다
 {
   const i18n = await import("./i18n.mjs");
-  try { await i18n.extract(); } catch (e) { console.log("다국어 원문 추출 건너뜀 (npm i 로 acorn 설치 필요):", e.message); }
+  // 번역 원문에는 사진이 아직 없어 앱에서 빠진 회차·사진 문제도 넣는다 (사진이 들어오면 번역이 이미 준비돼 있게)
+  const practiceAll = Object.assign({}, practice, { full: fullRaw.map((m) => mockOf(m, "f")), half: halfRaw.map((m) => mockOf(m, "h")), p1: p1Items.map(p1Set) });
+  try { await i18n.extract({ practice: practiceAll }); } catch (e) { console.log("다국어 원문 추출 건너뜀 (npm i 로 acorn 설치 필요):", e.message); }
   i18n.build();
 }
