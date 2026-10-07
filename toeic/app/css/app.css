@@ -788,3 +788,5 @@ html:lang(ja) body, html:lang(zh-TW) body { word-break: normal; line-break: stri
 html:lang(ja) body { font-family: "Pretendard", -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", "Yu Gothic", "Meiryo", system-ui, sans-serif; }
 html:lang(zh-TW) body { font-family: "Pretendard", -apple-system, "PingFang TC", "Noto Sans TC", "Noto Sans CJK TC", "Microsoft JhengHei", system-ui, sans-serif; }
 html:lang(vi) body, html:lang(es) body, html:lang(fr) body, html:lang(en) body { word-break: normal; }
+/* 영어 화면: 영어 원문의 '해석'은 같은 글을 되풀이할 뿐이라 숨긴다 (해설·뜻은 영어로 보인다) */
+html:lang(en) .ex-ko, html:lang(en) .ko, html:lang(en) .qsub, html:lang(en) [data-ko] { display: none !important; }

@@ -1443,7 +1443,7 @@
     }
     let fb = "";
     if (ans) {
-      const expl = q.type === "part5" || q.type === "conf" ? q.explain : q.type === "para" ? T`이 문맥의 ${q.key}(${C.meaningText(w, 2)}) = ${w.para.join(", ")}${S.settings.showKo ? ` · ${w.exKo}` : ""}` : "";
+      const expl = q.type === "part5" || q.type === "conf" ? q.explain : q.type === "para" ? T`이 문맥의 ${q.key}(${C.meaningText(w, 2)}) = ${w.para.join(", ")}${S.settings.showKo && LANG !== "en" ? ` · ${w.exKo}` : ""}` : "";
       const wInfo = w ? `<div style="margin-top:6px"><b class="en">${esc(w.w)}</b> ${esc(C.meaningText(w, 3))}</div>` : "";
       const confInfo = q.conf ? `<div style="margin-top:8px">${q.conf.words.map((x) => `<div><b class="en">${esc(x.w)}</b> <span class="muted">${POS_SHORT[x.pos] || ""}</span> ${esc(x.m)}</div>`).join("")}<div style="margin-top:6px;color:var(--text-2)">${esc(q.conf.point)}</div></div>` : "";
       fb = `<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? T`정답이에요!` : ans.close ? T`아깝다! 철자를 확인해 보세요` : T`틀렸어요`}</b>${expl ? esc(expl) : ""}${q.type === "spell" && !ans.ok ? T`<div style="margin-top:4px">정답: <b class="en">${esc(w.w)}</b></div>` : ""}${!ans.ok || q.type === "part5" ? wInfo : ""}${confInfo}</div>`;
@@ -3334,7 +3334,7 @@
       <div class="set-group">
         ${(window.TOEICFIT_LANGS || []).length > 1 ? `<div class="set-row"><span class="sl"><b>${T`언어`}</b><span class="small muted">Language</span></span><select class="lang-sel" data-lang><option value="" ${!s.lang ? "selected" : ""}>${T`자동 (기기 언어)`}</option>${window.TOEICFIT_LANGS.map((l) => `<option value="${l.code}" ${s.lang === l.code ? "selected" : ""}>${esc(l.name)}</option>`).join("")}</select></div>` : ""}
         <div class="set-row"><span class="sl"><b>테마</b></span><div class="seg">${[["system", T`자동`], ["light", T`밝게`], ["dark", T`어둡게`]].map(([k, l]) => `<button class="${s.theme === k ? "on" : ""}" data-theme="${k}">${l}</button>`).join("")}</div></div>
-        ${sw("showKo", T`예문 해석 보기`, T`끄면 영어 예문만 보여요`)}
+        ${LANG === "en" ? "" : sw("showKo", T`예문 해석 보기`, T`끄면 영어 예문만 보여요`)}
       </div>
       <div class="set-title">데이터</div>
       <div class="set-group">
