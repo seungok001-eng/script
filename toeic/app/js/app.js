@@ -1,16 +1,57 @@
 /* 토익핏 — 화면 (바닐라 JS, 빌드 없음). 로직은 core.js, 데이터는 data.js */
 (function () {
   "use strict";
+  // ── 다국어: 화면 글자는 T`한국어` 로 쓰고, 고른 언어의 번역(js/l10n/<lang>.js)이 있으면 바꿔 보여 준다 ──
+  // 키는 한국어 원문 (${} 자리는 {0}, {1}…). 번역이 없으면 한국어 그대로. 데이터의 분류 이름(유형·주제 등)은 tr() 로 보여 줄 때만 바꾼다
+  const L10N = window.TOEICFIT_L10N || null;
+  const LANG = (L10N && L10N.lang) || "ko";
+  const fillKey = (t, vals) => t.replace(/\{(\d+)\}/g, (m, i) => (+i < vals.length ? String(vals[+i]) : m));
+  function T(strings, ...vals) {
+    const U = L10N && L10N.ui;
+    if (U) {
+      let key = strings[0];
+      for (let i = 0; i < vals.length; i++) key += `{${i}}` + strings[i + 1];
+      if (U[key] != null) return fillKey(U[key], vals);
+    }
+    let out = strings[0];
+    for (let i = 0; i < vals.length; i++) out += String(vals[i]) + strings[i + 1];
+    return out;
+  }
+  function tr(s) {
+    if (!L10N || s == null || s === "") return s;
+    const L = L10N.labels || {}, U = L10N.ui || {};
+    if (L[s] != null) return L[s];
+    if (U[s] != null) return U[s];
+    const nums = [];
+    const k = String(s).replace(/\d+/g, (m) => { nums.push(m); return `{${nums.length - 1}}`; });
+    const t = L[k] != null ? L[k] : U[k];
+    return t != null ? fillKey(t, nums) : s;
+  }
+  // 데이터 번역 덧씌우기: 키 "words/#w-001/q/k" (배열 안 id 는 #id, 없으면 순번)
+  function patchData(root, map) {
+    if (!root || !map) return;
+    const ix = new Map();
+    const byId = (arr, id) => { let m = ix.get(arr); if (!m) { m = new Map(); arr.forEach((x) => { if (x && x.id != null) m.set(String(x.id), x); }); ix.set(arr, m); } return m.get(id); };
+    for (const k of Object.keys(map)) {
+      const segs = k.split("/");
+      let o = root;
+      for (let i = 0; i < segs.length - 1 && o; i++) { const g = segs[i]; o = g[0] === "#" && Array.isArray(o) ? byId(o, g.slice(1)) : o[g]; }
+      const last = segs[segs.length - 1];
+      if (o && typeof o[last] === "string") o[last] = map[k];
+    }
+  }
+  if (L10N && L10N.d) patchData(window.VOCA_DATA, L10N.d);
+  if (L10N) document.documentElement.lang = LANG;
   const D = window.VOCA_DATA;
   // 하프 모의고사 전용 Part 2 표현은 LC 표현 목록·퀴즈에서 뺀다 (모의고사에서 처음 보도록). 모의고사는 D.lcAll 에서 찾는다
   D.lcAll = D.lc || [];
   D.lc = D.lcAll.filter((p) => !p.mock);
   const C = window.Core;
-  const BRAND = { name: "토익핏", short: "토익핏", en: "ToeicFit" };
+  const BRAND = { name: T`토익핏`, short: T`토익핏`, en: "ToeicFit" };
   // 유료화: 무료는 단어 Day 1~3 · 파트별 실전 1세트 · 문법 1주제 · LC/받아쓰기 1회 · 하프 모의고사 1회 · 첫 실력 진단.
   // 가격은 스토어(Play Console)에 등록한 값을 그대로 보여 준다(price 는 스토어 정보를 못 받을 때의 표시용).
   // 결제는 네이티브 앱에서만 열린다(웹 미리보기는 잠그지 않음). 테스트: localStorage "toeicfit.paywall" = "1"
-  const CONFIG = { premium: { enabled: true, freeDays: 3, price: "₩4,900", productId: "toeicfit_full", priceNote: "한 번 결제 · 평생 이용 · 광고 없음" } };
+  const CONFIG = { premium: { enabled: true, freeDays: 3, price: "₩4,900", productId: "toeicfit_full", priceNote: T`한 번 결제 · 평생 이용 · 광고 없음` } };
   const STORE_KEY = "toeicfit.v1";
   const OLD_KEY = "vocafit.v1"; // 이름을 바꾸기 전(보카핏) 웹 미리보기 기록을 한 번 옮겨 온다
 
@@ -24,12 +65,12 @@
   const NWORDS = WORDS.length.toLocaleString();
   // 30일 단위 코스: 같은 30개 주제를 기본 → 심화 → 실전으로 세 번 넓혀 간다
   const COURSES = [
-    { name: "기본 코스", from: 1, to: 30, desc: "주제별 필수 어휘" },
-    { name: "심화 코스", from: 31, to: 60, desc: "같은 주제의 확장 어휘" },
-    { name: "완성 코스", from: 61, to: 90, desc: "LC 표현 · 고득점 어휘" },
+    { name: T`기본 코스`, tab: T`기본`, from: 1, to: 30, desc: T`주제별 필수 어휘` },
+    { name: T`심화 코스`, tab: T`심화`, from: 31, to: 60, desc: T`같은 주제의 확장 어휘` },
+    { name: T`완성 코스`, tab: T`완성`, from: 61, to: 90, desc: T`LC 표현 · 고득점 어휘` },
   ];
-  const POS_KO = { n: "명사", v: "동사", adj: "형용사", adv: "부사", phr: "숙어", prep: "전치사", conj: "접속사" };
-  const POS_SHORT = { n: "명", v: "동", adj: "형", adv: "부", phr: "숙", prep: "전", conj: "접" };
+  const POS_KO = { n: T`명사`, v: T`동사`, adj: T`형용사`, adv: T`부사`, phr: T`숙어`, prep: T`전치사`, conj: T`접속사` };
+  const POS_SHORT = { n: T`명`, v: T`동`, adj: T`형`, adv: T`부`, phr: T`숙`, prep: T`전`, conj: T`접` };
   const $app = document.getElementById("app");
 
   // ═════════════ 저장소 ═════════════
@@ -54,9 +95,9 @@
   });
   // 처음 3일 시작 미션: 앱의 핵심 기능을 하루 3개씩 직접 써 보게 한다 (하루에 한 묶음씩 열림)
   const MISSIONS = [
-    { day: 1, items: [["card", "layers", "새 단어 카드 외우기", "카드를 넘기며 오늘의 단어 익히기"], ["quiz", "zap", "오늘 단어 퀴즈 풀기", "방금 외운 단어를 바로 확인"], ["p2", "ear", "Part 2 응답 맛보기", "질문 듣고 알맞은 응답 고르기 5문제"]] },
-    { day: 2, items: [["review", "repeat", "첫 복습하기", "어제 외운 단어가 복습으로 돌아왔어요"], ["grammar", "book", "Part 5 문법 1주제", "짧은 강의를 보고 문제 풀기"], ["listen", "headphones", "듣기 모드 켜 보기", "출퇴근길에 단어·예문 자동 재생"]] },
-    { day: 3, items: [["p3", "headphones", "Part 3 대화 1세트", "문제를 먼저 읽고 대화 듣기"], ["p7", "list", "Part 7 독해 1세트", "지문에서 정답 근거 찾기"], ["remind", "bell", "학습 알림 시간 정하기", "매일 같은 시간에 습관 만들기"]] },
+    { day: 1, items: [["card", "layers", T`새 단어 카드 외우기`, T`카드를 넘기며 오늘의 단어 익히기`], ["quiz", "zap", T`오늘 단어 퀴즈 풀기`, T`방금 외운 단어를 바로 확인`], ["p2", "ear", T`Part 2 응답 맛보기`, T`질문 듣고 알맞은 응답 고르기 5문제`]] },
+    { day: 2, items: [["review", "repeat", T`첫 복습하기`, T`어제 외운 단어가 복습으로 돌아왔어요`], ["grammar", "book", T`Part 5 문법 1주제`, T`짧은 강의를 보고 문제 풀기`], ["listen", "headphones", T`듣기 모드 켜 보기`, T`출퇴근길에 단어·예문 자동 재생`]] },
+    { day: 3, items: [["p3", "headphones", T`Part 3 대화 1세트`, T`문제를 먼저 읽고 대화 듣기`], ["p7", "list", T`Part 7 독해 1세트`, T`지문에서 정답 근거 찾기`], ["remind", "bell", T`학습 알림 시간 정하기`, T`매일 같은 시간에 습관 만들기`]] },
   ];
   const MISSION_KEYS = new Set(MISSIONS.flatMap((G) => G.items.map((x) => x[0])).concat(["guide"]));
   let S = load();
@@ -154,7 +195,7 @@
   function save(now) {
     clearTimeout(saveTimer);
     const run = () => {
-      try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) { toast("저장 공간이 부족해 기록을 저장하지 못했어요"); }
+      try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) { toast(T`저장 공간이 부족해 기록을 저장하지 못했어요`); }
     };
     if (now) run();
     else saveTimer = setTimeout(run, 250);
@@ -211,16 +252,16 @@
   function pad(n) { return String(n).padStart(2, "0"); }
   function voiceLabel(v) {
     if (!v) return "";
-    if (v.includes("+")) return "대화";
-    const acc = v[0] === "b" ? "영국" : "미국";
-    const sex = v[1] === "m" ? "남" : "여";
+    if (v.includes("+")) return T`대화`;
+    const acc = v[0] === "b" ? T`영국` : T`미국`;
+    const sex = v[1] === "m" ? T`남` : T`여`;
     return `${acc}·${sex}`;
   }
   function fmtDate(n) {
     const d = C.dayToDate(n);
-    return `${d.getMonth() + 1}월 ${d.getDate()}일`;
+    return T`${d.getMonth() + 1}월 ${d.getDate()}일`;
   }
-  function dueLabel(days) { return days <= 1 ? "내일 복습" : `${days}일 뒤`; }
+  function dueLabel(days) { return days <= 1 ? T`내일 복습` : T`${days}일 뒤`; }
   // 버튼·입력칸에 포커스가 있을 때 Space/Enter 는 그 컨트롤의 기본 동작에 맡긴다
   function onControl(e) { return (e.key === " " || e.key === "Enter") && e.target && e.target.closest && !!e.target.closest("button,input,a,select,textarea,[role=link]"); }
   function capPlugins() { return window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform() ? window.Capacitor.Plugins : null; }
@@ -310,7 +351,7 @@
   function closeModal() { const m = document.getElementById("modal"); if (m) m.remove(); }
   function confirmBox(title, text, okLabel, danger) {
     return new Promise((res) => {
-      modal(`<h3>${esc(title)}</h3><p>${esc(text)}</p><div class="row"><button class="btn ghost" data-r="0">취소</button><button class="btn ${danger ? "danger" : ""}" data-r="1">${esc(okLabel || "확인")}</button></div>`, (m) => {
+      modal(T`<h3>${esc(title)}</h3><p>${esc(text)}</p><div class="row"><button class="btn ghost" data-r="0">취소</button><button class="btn ${danger ? "danger" : ""}" data-r="1">${esc(okLabel || T`확인`)}</button></div>`, (m) => {
         m.querySelectorAll("[data-r]").forEach((b) => b.addEventListener("click", () => { closeModal(); res(b.dataset.r === "1"); }));
       });
     });
@@ -452,7 +493,7 @@
   // ═════════════ 학습 알림 (네이티브 앱: @capacitor/local-notifications) ═════════════
   const Notify = (function () {
     const plugin = () => window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.LocalNotifications;
-    const MSGS = ["오늘의 토익 단어가 기다리고 있어요 📚", "5분만 투자해도 목표 점수에 가까워져요", "복습할 단어가 쌓이기 전에 한 번 볼까요?", "연속 학습 기록을 이어가세요 🔥"];
+    const MSGS = [T`오늘의 토익 단어가 기다리고 있어요 📚`, T`5분만 투자해도 목표 점수에 가까워져요`, T`복습할 단어가 쌓이기 전에 한 번 볼까요?`, T`연속 학습 기록을 이어가세요 🔥`];
     async function apply() {
       const LN = plugin();
       if (!LN) return false;
@@ -515,16 +556,16 @@
 
   // 공통 껍데기 (사이드바 + 하단 탭)
   const NAV = [
-    ["home", "홈", "home"],
-    ["days", "단어장", "book"],
-    ["practice", "실전", "target"],
-    ["review", "복습", "repeat"],
-    ["stats", "통계", "chart"],
+    ["home", T`홈`, "home"],
+    ["days", T`단어장`, "book"],
+    ["practice", T`실전`, "target"],
+    ["review", T`복습`, "repeat"],
+    ["stats", T`통계`, "chart"],
   ];
   function shell(active, body, wide) {
     const links = NAV.map(([k, label, ic]) => `<a href="#/${k}" class="side-link ${active === k ? "on" : ""}">${ico(ic)}${label}</a>`).join("");
     const tabs = NAV.map(([k, label, ic]) => `<a href="#/${k}" class="tab ${active === k ? "on" : ""}" aria-label="${label}">${ico(ic)}${label}</a>`).join("");
-    $app.innerHTML = `<div class="shell">
+    $app.innerHTML = T`<div class="shell">
       <nav class="side" aria-label="메뉴"><div class="side-brand">${logoSvg(30)}<span>${BRAND.name}</span></div>${links}
         <a href="#/settings" class="side-link ${active === "settings" ? "on" : ""}">${ico("gear")}설정</a>
         <div class="side-sep"></div>
@@ -532,14 +573,14 @@
         <a href="#/guide" class="side-link ${active === "guide" ? "on" : ""}">${ico("help")}사용 가이드</a>
         <a href="#/part1" class="side-link ${active === "part1" ? "on" : ""}">${ico("camera")}Part 1 사진 표현</a>
         <a href="#/conf" class="side-link ${active === "conf" ? "on" : ""}">${ico("split")}혼동 어휘</a>
-        ${(D.lc || []).length ? `<a href="#/lc" class="side-link ${active === "lc" ? "on" : ""}">${ico("ear")}LC 빈출 표현</a>` : ""}
+        ${(D.lc || []).length ? T`<a href="#/lc" class="side-link ${active === "lc" ? "on" : ""}">${ico("ear")}LC 빈출 표현</a>` : ""}
         <div class="side-foot">목표 ${target()}점 · 단어 ${pool().length}개</div></nav>
       <main class="main"><div class="page ${wide ? "wide" : ""} fade-in">${body}</div></main>
       <nav class="tabbar" aria-label="탭">${tabs}</nav></div>`;
   }
   function topBar(title, opts) {
     const o = opts || {};
-    return `<div class="top">${o.back ? `<button class="icon-btn back" data-act="back" aria-label="뒤로">${ico("left")}</button>` : ""}<h1>${title}${o.sub ? `<div class="sub">${o.sub}</div>` : ""}</h1>${o.right || ""}</div>`;
+    return `<div class="top">${o.back ? T`<button class="icon-btn back" data-act="back" aria-label="뒤로">${ico("left")}</button>` : ""}<h1>${title}${o.sub ? `<div class="sub">${o.sub}</div>` : ""}</h1>${o.right || ""}</div>`;
   }
   function back(fallback) {
     if (history.length > 1) history.back();
@@ -562,7 +603,7 @@
       S.words[id] = s;
       save();
       t.innerHTML = starIco(s.star);
-      toast(s.star ? "★ 중요 단어에 추가했어요" : "중요 단어에서 뺐어요");
+      toast(s.star ? T`★ 중요 단어에 추가했어요` : T`중요 단어에서 뺐어요`);
       return;
     }
     if (act === "open-word") return go(`#/word/${id}`);
@@ -591,11 +632,11 @@
     const steps = 4;
     let body = "";
     if (onb.step === 0) {
-      body = `<div class="welcome-art">${logoSvg(88)}</div>
+      body = T`<div class="welcome-art">${logoSvg(88)}</div>
         <h1 style="text-align:center">토익,<br/>목표 점수만큼만 정확하게</h1>
         <p class="lead" style="text-align:center">목표 점수를 알려주시면 꼭 필요한 단어와 실전 문제를<br/>골라 매일 학습 계획을 만들어 드려요.</p>
         <div class="feature-list">
-          <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? `${NDAYS}일 · 기본/심화/완성 코스` : "30일 주제별"} · 기본/핵심/고득점 3단계</span></div>
+          <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? T`${NDAYS}일 · 기본/심화/완성 코스` : T`30일 주제별`} · 기본/핵심/고득점 3단계</span></div>
           <div><span class="tico c-green">${ico("headphones")}</span><span><b>모든 단어·예문 원어민 음성</b>미국·영국 발음으로 토익 LC까지 대비</span></div>
           <div><span class="tico c-orange">${ico("repeat")}</span><span><b>잊을 때쯤 다시 나오는 복습</b>1·3·7·14·30일 간격 반복 + 오답노트</span></div>
           <div><span class="tico c-purple">${ico("trophy")}</span><span><b>Part 1~7 실전 문제 · 정규·하프 모의고사</b>10분 실력 진단 · 정답 근거 해설 · 예상 점수</span></div>
@@ -603,29 +644,29 @@
     } else if (onb.step === 1) {
       const n = onbPool();
       const band = C.scoreBand(onb.target);
-      body = `<div class="onb-step">1 / ${steps - 1}</div><h1>목표 점수가<br/>몇 점인가요?</h1><p class="lead">목표에 맞는 난이도의 단어만 학습해요. 나중에 언제든 바꿀 수 있어요.</p>
-        <div class="score-grid">${C.SCORE_OPTIONS.map((s) => `<button class="score-opt ${onb.target === s ? "on" : ""}" data-score="${s}">${s}${s === 950 ? "+" : ""}<small>${s <= 650 ? "기본" : s <= 800 ? "핵심" : "고득점"}</small></button>`).join("")}</div>
+      body = T`<div class="onb-step">1 / ${steps - 1}</div><h1>목표 점수가<br/>몇 점인가요?</h1><p class="lead">목표에 맞는 난이도의 단어만 학습해요. 나중에 언제든 바꿀 수 있어요.</p>
+        <div class="score-grid">${C.SCORE_OPTIONS.map((s) => `<button class="score-opt ${onb.target === s ? "on" : ""}" data-score="${s}">${s}${s === 950 ? "+" : ""}<small>${s <= 650 ? T`기본` : s <= 800 ? T`핵심` : T`고득점`}</small></button>`).join("")}</div>
         <div class="plan-box"><div class="pl"><span>학습 범위</span><b>${band.label}</b></div><div class="pl"><span>${band.desc}</span><b>${n.toLocaleString()}개</b></div></div>`;
     } else if (onb.step === 2) {
-      const presets = [[14, "2주 뒤"], [30, "1개월 뒤"], [60, "2개월 뒤"], [90, "3개월 뒤"]];
-      body = `<div class="onb-step">2 / ${steps - 1}</div><h1>시험은 언제인가요?</h1><p class="lead">시험일에 맞춰 하루 학습량을 계산해요. 정하지 않았다면 건너뛰어도 돼요.</p>
+      const presets = [[14, T`2주 뒤`], [30, T`1개월 뒤`], [60, T`2개월 뒤`], [90, T`3개월 뒤`]];
+      body = T`<div class="onb-step">2 / ${steps - 1}</div><h1>시험은 언제인가요?</h1><p class="lead">시험일에 맞춰 하루 학습량을 계산해요. 정하지 않았다면 건너뛰어도 돼요.</p>
         <div class="chips" style="margin-bottom:14px">${presets.map(([d, l]) => `<button class="chip ${onb.exam === C.ymd(today() + d) ? "on" : ""}" data-exam="${C.ymd(today() + d)}">${l}</button>`).join("")}<button class="chip ${!onb.exam ? "on" : ""}" data-exam="">아직 몰라요</button></div>
         <input type="date" class="field" id="examInput" value="${esc(onb.exam)}" min="${C.ymd(today() + 1)}" aria-label="시험일" />
-        ${onb.exam ? `<div class="plan-box"><div class="pl"><span>시험까지</span><b>D-${C.parseYmd(onb.exam) - today()}</b></div></div>` : ""}`;
+        ${onb.exam ? T`<div class="plan-box"><div class="pl"><span>시험까지</span><b>D-${C.parseYmd(onb.exam) - today()}</b></div></div>` : ""}`;
     } else {
       const n = onbPool();
       const rec = C.recommendDaily(n, C.parseYmd(onb.exam), today());
       const daily = onbDaily();
       const days = Math.ceil(n / daily);
       const opts = Array.from(new Set([10, 20, 30, 40, 50, 60, rec])).sort((a, b) => a - b);
-      body = `<div class="onb-step">3 / ${steps - 1}</div><h1>하루에 몇 개씩<br/>외워 볼까요?</h1><p class="lead">새 단어 기준이에요. 복습 단어는 따로 나와요.</p>
-        <div class="chips">${opts.map((d) => `<button class="chip ${daily === d ? "on" : ""}" data-daily="${d}">${d}개${d === rec ? " · 추천" : ""}</button>`).join("")}</div>
+      body = T`<div class="onb-step">3 / ${steps - 1}</div><h1>하루에 몇 개씩<br/>외워 볼까요?</h1><p class="lead">새 단어 기준이에요. 복습 단어는 따로 나와요.</p>
+        <div class="chips">${opts.map((d) => T`<button class="chip ${daily === d ? "on" : ""}" data-daily="${d}">${d}개${d === rec ? T` · 추천` : ""}</button>`).join("")}</div>
         <div class="plan-box">
           <div class="pl"><span>목표 점수</span><b>${onb.target}점</b></div>
           <div class="pl"><span>학습 단어</span><b>${n.toLocaleString()}개</b></div>
           <div class="pl"><span>하루 새 단어</span><b>${daily}개</b></div>
           <div class="pl"><span>1회독 완료</span><b>${days}일 뒤 (${fmtDate(today() + days - 1)})</b></div>
-          ${onb.exam ? `<div class="pl"><span>시험일</span><b>${fmtDate(C.parseYmd(onb.exam))} (D-${C.parseYmd(onb.exam) - today()})</b></div>` : ""}
+          ${onb.exam ? T`<div class="pl"><span>시험일</span><b>${fmtDate(C.parseYmd(onb.exam))} (D-${C.parseYmd(onb.exam) - today()})</b></div>` : ""}
         </div>
         ${(() => {
           // 시험 전에 1회독이 안 되면 숨기지 않고 알려 준다 (쉬운 단어부터 나오므로 볼 수 있는 범위를 안내)
@@ -633,12 +674,12 @@
           const left = C.parseYmd(onb.exam) - today();
           const cover = Math.min(n, daily * Math.max(0, left));
           if (cover >= n) return "";
-          return `<div class="tip-box" style="margin-top:12px;background:var(--bad-soft)"><b>시험 전 1회독은 어려워요</b> 시험일까지 ${cover.toLocaleString()}개를 볼 수 있어요(쉬운 단어부터 순서대로). ${daily < 80 ? "하루 학습량을 늘리거나, " : ""}남은 시간에는 <b>실전 문제</b>로 자주 나오는 표현을 익히는 걸 추천해요.</div>`;
+          return T`<div class="tip-box" style="margin-top:12px;background:var(--bad-soft)"><b>시험 전 1회독은 어려워요</b> 시험일까지 ${cover.toLocaleString()}개를 볼 수 있어요(쉬운 단어부터 순서대로). ${daily < 80 ? T`하루 학습량을 늘리거나, ` : ""}남은 시간에는 <b>실전 문제</b>로 자주 나오는 표현을 익히는 걸 추천해요.</div>`;
         })()}`;
     }
     const foot = onb.step === 0
-      ? `<button class="btn block" data-next>시작하기</button>`
-      : `<button class="btn ghost" data-prev style="flex:0 0 96px">${editing && onb.step === 1 ? "취소" : "이전"}</button><button class="btn" style="flex:1" data-next>${onb.step === 3 ? (editing ? "저장" : "학습 시작하기") : "다음"}</button>`;
+      ? T`<button class="btn block" data-next>시작하기</button>`
+      : `<button class="btn ghost" data-prev style="flex:0 0 96px">${editing && onb.step === 1 ? T`취소` : T`이전`}</button><button class="btn" style="flex:1" data-next>${onb.step === 3 ? (editing ? T`저장` : T`학습 시작하기`) : T`다음`}</button>`;
     $app.innerHTML = `<div class="onb fade-in">${body}<div class="onb-foot">${foot}</div></div>`;
     $app.querySelectorAll("[data-score]").forEach((b) => b.addEventListener("click", () => { onb.target = +b.dataset.score; onb.daily = 0; vOnboarding(); }));
     $app.querySelectorAll("[data-exam]").forEach((b) => b.addEventListener("click", () => { onb.exam = b.dataset.exam; onb.daily = 0; vOnboarding(); }));
@@ -658,7 +699,7 @@
       if (!editing && !S.guide) S.guide = { start: today(), done: {}, hide: false };
       save(true);
       onb = { step: 0, target: 800, exam: "", daily: 0 };
-      toast(editing ? "학습 계획을 바꿨어요" : "학습 계획이 준비됐어요. 화이팅!");
+      toast(editing ? T`학습 계획을 바꿨어요` : T`학습 계획이 준비됐어요. 화이팅!`);
       go(editing ? "#/settings" : S.diag ? "#/home" : "#/diag");
     });
   }
@@ -684,17 +725,17 @@
     const newDone = plan.newWords.length === 0;
     const nextWord = plan.newWords[0];
     const hour = new Date().getHours();
-    const hi = hour < 6 ? "늦은 밤에도 열공 중이시네요" : hour < 12 ? "좋은 아침이에요" : hour < 18 ? "오늘도 한 걸음 더" : "오늘 하루도 수고했어요";
+    const hi = hour < 6 ? T`늦은 밤에도 열공 중이시네요` : hour < 12 ? T`좋은 아침이에요` : hour < 18 ? T`오늘도 한 걸음 더` : T`오늘 하루도 수고했어요`;
     const l = S.log[t] || {};
     const task = practiceTaskToday(P, sum, t);
     const prog = C.todayProgress({ daily: S.profile.daily, introduced: plan.introducedToday, reviewed: l.rev || 0, due: plan.due.length, practiced: !!l.prac });
     const estMin = Math.ceil(plan.newWords.length * 0.4 + Math.min(plan.due.length, 100) * 0.15 + (l.prac ? 0 : task.min));
     const allDone = newDone && !plan.due.length && l.prac;
     // 오늘 할 일 순서: 복습 → 새 단어 → 오늘 단어 퀴즈 → 오늘의 실전 (잊기 전에 복습부터)
-    const next = plan.due.length ? ["due", "repeat", `복습 ${Math.min(plan.due.length, 100)}개부터 시작`] : !newDone ? ["new", "play", `새 단어 ${plan.newWords.length}개 시작`] : !l.prac ? ["prac", "target", `오늘의 실전 · ${task.label}`] : introduced.length ? ["quiz-today", "zap", "오늘 단어 퀴즈로 마무리"] : null;
-    const heroTitle = allDone ? "오늘 할 일 끝! 🎉" : plan.remaining === 0 && newDone ? "범위 1회독 완료! 복습과 실전으로" : `오늘의 학습`;
-    const heroSub = allDone ? "내일도 이어서 해요 · 더 하고 싶다면 실전 탭에서" : `예상 ${Math.max(1, estMin)}분 · ${[plan.due.length ? `복습 ${Math.min(plan.due.length, 100)}` : "", !newDone ? `새 단어 ${plan.newWords.length}` : "", !l.prac ? "실전 1" : ""].filter(Boolean).join(" · ") || "남은 과제 없음"}`;
-    const body = `
+    const next = plan.due.length ? ["due", "repeat", T`복습 ${Math.min(plan.due.length, 100)}개부터 시작`] : !newDone ? ["new", "play", T`새 단어 ${plan.newWords.length}개 시작`] : !l.prac ? ["prac", "target", T`오늘의 실전 · ${task.label}`] : introduced.length ? ["quiz-today", "zap", T`오늘 단어 퀴즈로 마무리`] : null;
+    const heroTitle = allDone ? T`오늘 할 일 끝! 🎉` : plan.remaining === 0 && newDone ? T`범위 1회독 완료! 복습과 실전으로` : T`오늘의 학습`;
+    const heroSub = allDone ? T`내일도 이어서 해요 · 더 하고 싶다면 실전 탭에서` : T`예상 ${Math.max(1, estMin)}분 · ${[plan.due.length ? T`복습 ${Math.min(plan.due.length, 100)}` : "", !newDone ? T`새 단어 ${plan.newWords.length}` : "", !l.prac ? T`실전 1` : ""].filter(Boolean).join(" · ") || T`남은 과제 없음`}`;
+    const body = T`
       <div class="top"><h1>${hi}</h1><a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a><a class="icon-btn" href="#/settings" aria-label="설정">${ico("gear")}</a></div>
       <section class="hero">
         <div class="ring" aria-label="오늘 진행률 ${prog}%">${ring(prog, 76, 7)}</div>
@@ -704,19 +745,19 @@
         <div class="meta">
           <div><b>${sum.mastered.toLocaleString()}</b>암기 완료</div>
           <div><b>${streak}일</b>연속 학습</div>
-          <div><b>${dday != null ? (dday >= 0 ? "D-" + dday : "종료") : "–"}</b>시험까지</div>
+          <div><b>${dday != null ? (dday >= 0 ? "D-" + dday : T`종료`) : "–"}</b>시험까지</div>
         </div>
-        ${next ? `<button class="btn block" data-go="${next[0]}">${ico(next[1])}${next[2]}</button>` : `<a class="btn block" href="#/practice">${ico("target")}실전 문제 더 풀기</a>`}
+        ${next ? `<button class="btn block" data-go="${next[0]}">${ico(next[1])}${next[2]}</button>` : T`<a class="btn block" href="#/practice">${ico("target")}실전 문제 더 풀기</a>`}
       </section>
       ${missionCard()}
       <div class="section"><div class="section-h"><h2>오늘 할 일</h2><span class="small muted">${fmtDate(t)}</span></div>
-        <button class="task ${plan.due.length ? "" : "done"}" data-go="due"><span class="tico c-orange">${ico("repeat")}</span><span class="spacer"><div class="tt">복습하기</div><div class="td">${plan.due.length ? "잊어버리기 전에 다시 볼 단어 · 먼저 하면 기억이 오래가요" : l.rev ? `오늘 ${l.rev}개 복습 완료` : "오늘 복습할 단어가 없어요"}</div></span><span class="tn">${plan.due.length ? Math.min(plan.due.length, 100) : ico("check")}</span></button>
-        <button class="task ${newDone ? "done" : ""}" data-go="new"><span class="tico c-blue">${ico("layers")}</span><span class="spacer"><div class="tt">새 단어 외우기${nextWord ? ` <span class="small muted" style="font-weight:600">DAY ${pad(nextWord.d)} · ${esc(DAY_BY.get(nextWord.d).title)}</span>` : ""}</div><div class="td">${newDone ? `오늘 ${plan.introducedToday}개 완료 · 더 하고 싶다면 단어장에서` : `카드로 뜻 확인 → 모르는 단어는 다시`}</div></span><span class="tn">${newDone ? ico("check") : plan.newWords.length}</span></button>
-        <button class="task ${introduced.length ? "" : "done"}" data-go="quiz-today"><span class="tico c-purple">${ico("zap")}</span><span class="spacer"><div class="tt">오늘 단어 확인 퀴즈</div><div class="td">${introduced.length ? `오늘 본 ${introduced.length}개 · 뜻/단어/예문/Part 5 섞어서` : "새 단어를 외우면 열려요"}</div></span><span class="tn">${introduced.length || "–"}</span></button>
-        <button class="task ${l.prac ? "done" : ""}" data-go="prac"><span class="tico c-green">${ico("target")}</span><span class="spacer"><div class="tt">오늘의 실전 · ${esc(task.label)}</div><div class="td">${l.prac ? "오늘 실전 완료 · 더 풀려면 실전 탭에서" : task.kind === "mock" ? "시험 2주 전 · 실전처럼 시간 재고 풀어 보세요" : `약 ${task.min}분 · 목표 ${target()}점에 맞춘 난이도`}</div></span><span class="tn">${l.prac ? ico("check") : ico("right")}</span></button>
-        ${S.diag ? "" : `<button class="task" data-go="diag"><span class="tico c-blue">${ico("gauge")}</span><span class="spacer"><div class="tt">10분 실력 진단</div><div class="td">20문제로 지금 예상 점수와 약한 파트 확인</div></span><span class="tn">${ico("right")}</span></button>`}
-        ${S.profile.placed ? "" : `<button class="task" data-go="place"><span class="tico c-green">${ico("gauge")}</span><span class="spacer"><div class="tt">3분 어휘 진단</div><div class="td">이미 아는 단어는 건너뛰고 필요한 단어부터</div></span><span class="tn">${ico("right")}</span></button>`}
-        <button class="task ${wrong ? "" : "done"}" data-go="wrong"><span class="tico c-red">${ico("alert")}</span><span class="spacer"><div class="tt">오답노트</div><div class="td">${wrong ? "틀린 단어만 다시 풀어요" : "아직 틀린 단어가 없어요"}</div></span><span class="tn">${wrong || "–"}</span></button>
+        <button class="task ${plan.due.length ? "" : "done"}" data-go="due"><span class="tico c-orange">${ico("repeat")}</span><span class="spacer"><div class="tt">복습하기</div><div class="td">${plan.due.length ? T`잊어버리기 전에 다시 볼 단어 · 먼저 하면 기억이 오래가요` : l.rev ? T`오늘 ${l.rev}개 복습 완료` : T`오늘 복습할 단어가 없어요`}</div></span><span class="tn">${plan.due.length ? Math.min(plan.due.length, 100) : ico("check")}</span></button>
+        <button class="task ${newDone ? "done" : ""}" data-go="new"><span class="tico c-blue">${ico("layers")}</span><span class="spacer"><div class="tt">새 단어 외우기${nextWord ? ` <span class="small muted" style="font-weight:600">DAY ${pad(nextWord.d)} · ${esc(DAY_BY.get(nextWord.d).title)}</span>` : ""}</div><div class="td">${newDone ? T`오늘 ${plan.introducedToday}개 완료 · 더 하고 싶다면 단어장에서` : T`카드로 뜻 확인 → 모르는 단어는 다시`}</div></span><span class="tn">${newDone ? ico("check") : plan.newWords.length}</span></button>
+        <button class="task ${introduced.length ? "" : "done"}" data-go="quiz-today"><span class="tico c-purple">${ico("zap")}</span><span class="spacer"><div class="tt">오늘 단어 확인 퀴즈</div><div class="td">${introduced.length ? T`오늘 본 ${introduced.length}개 · 뜻/단어/예문/Part 5 섞어서` : T`새 단어를 외우면 열려요`}</div></span><span class="tn">${introduced.length || "–"}</span></button>
+        <button class="task ${l.prac ? "done" : ""}" data-go="prac"><span class="tico c-green">${ico("target")}</span><span class="spacer"><div class="tt">오늘의 실전 · ${esc(task.label)}</div><div class="td">${l.prac ? T`오늘 실전 완료 · 더 풀려면 실전 탭에서` : task.kind === "mock" ? T`시험 2주 전 · 실전처럼 시간 재고 풀어 보세요` : T`약 ${task.min}분 · 목표 ${target()}점에 맞춘 난이도`}</div></span><span class="tn">${l.prac ? ico("check") : ico("right")}</span></button>
+        ${S.diag ? "" : T`<button class="task" data-go="diag"><span class="tico c-blue">${ico("gauge")}</span><span class="spacer"><div class="tt">10분 실력 진단</div><div class="td">20문제로 지금 예상 점수와 약한 파트 확인</div></span><span class="tn">${ico("right")}</span></button>`}
+        ${S.profile.placed ? "" : T`<button class="task" data-go="place"><span class="tico c-green">${ico("gauge")}</span><span class="spacer"><div class="tt">3분 어휘 진단</div><div class="td">이미 아는 단어는 건너뛰고 필요한 단어부터</div></span><span class="tn">${ico("right")}</span></button>`}
+        <button class="task ${wrong ? "" : "done"}" data-go="wrong"><span class="tico c-red">${ico("alert")}</span><span class="spacer"><div class="tt">오답노트</div><div class="td">${wrong ? T`틀린 단어만 다시 풀어요` : T`아직 틀린 단어가 없어요`}</div></span><span class="tn">${wrong || "–"}</span></button>
       </div>
       <div class="section"><div class="section-h"><h2>진도</h2><a href="#/stats">자세히</a></div>
         <div class="card">${progressBlock(P)}</div>
@@ -725,10 +766,10 @@
     $app.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => homeGo(b.dataset.go, plan, introduced)));
     $app.querySelectorAll("[data-mis]").forEach((b) => b.addEventListener("click", () => missionGo(b.dataset.mis, plan, introduced)));
     const mx = $app.querySelector("[data-mis-close]");
-    if (mx) mx.addEventListener("click", () => { S.guide.hide = true; save(); toast("설정 → 사용 가이드에서 다시 볼 수 있어요"); vHome(); });
+    if (mx) mx.addEventListener("click", () => { S.guide.hide = true; save(); toast(T`설정 → 사용 가이드에서 다시 볼 수 있어요`); vHome(); });
   }
   // ── 시작 미션 ──
-  const missionItems = (G) => G.items.map((x) => (x[0] === "remind" && !Notify.available() ? ["guide", "help", "사용 가이드 읽어 보기", "학습 루틴과 복습 원리 3분 정리"] : x));
+  const missionItems = (G) => G.items.map((x) => (x[0] === "remind" && !Notify.available() ? ["guide", "help", T`사용 가이드 읽어 보기`, T`학습 루틴과 복습 원리 3분 정리`] : x));
   function mission(key) {
     const g = S.guide;
     if (!g || g.done[key]) return;
@@ -736,7 +777,7 @@
     save();
     const G = MISSIONS.find((x) => missionItems(x).some((it) => it[0] === key));
     if (G && !g.hide && missionItems(G).every((it) => g.done[it[0]])) {
-      setTimeout(() => { toast(G.day === MISSIONS.length ? "시작 미션을 모두 끝냈어요! 🎉" : `${G.day}일차 미션 완료! 내일 ${G.day + 1}일차가 열려요`); confetti(); }, 400);
+      setTimeout(() => { toast(G.day === MISSIONS.length ? T`시작 미션을 모두 끝냈어요! 🎉` : T`${G.day}일차 미션 완료! 내일 ${G.day + 1}일차가 열려요`); confetti(); }, 400);
     }
   }
   function missionCard() {
@@ -745,9 +786,9 @@
     const t = today();
     if (S.settings.remind && !g.done.remind) g.done.remind = t;
     const gi = MISSIONS.findIndex((G) => !missionItems(G).every((it) => g.done[it[0]]));
-    const head = (title, sub) => `<div class="mis-h"><div class="spacer"><div class="eyebrow">시작 미션</div><b>${title}</b>${sub ? `<div class="small muted">${sub}</div>` : ""}</div><div class="mis-dots">${MISSIONS.map((G, i) => `<i class="${i < gi || gi < 0 ? "on" : i === gi ? "cur" : ""}"></i>`).join("")}</div><button class="icon-btn sm" data-mis-close aria-label="미션 닫기">${ico("x")}</button></div>`;
+    const head = (title, sub) => T`<div class="mis-h"><div class="spacer"><div class="eyebrow">시작 미션</div><b>${title}</b>${sub ? `<div class="small muted">${sub}</div>` : ""}</div><div class="mis-dots">${MISSIONS.map((G, i) => `<i class="${i < gi || gi < 0 ? "on" : i === gi ? "cur" : ""}"></i>`).join("")}</div><button class="icon-btn sm" data-mis-close aria-label="미션 닫기">${ico("x")}</button></div>`;
     if (gi < 0) {
-      return `<section class="mission done">${head("시작 미션 완료! 🎉", "토익핏의 핵심 기능을 모두 써 봤어요")}
+      return T`<section class="mission done">${head(T`시작 미션 완료! 🎉`, T`토익핏의 핵심 기능을 모두 써 봤어요`)}
         <p class="small" style="margin:8px 0 12px">이제 <b>하프 모의고사</b>로 지금 실력을 확인해 보세요. 결과에 맞춰 약한 파트부터 연습하면 돼요.</p>
         <button class="btn block" data-mis="mock">${ico("clock")}하프 모의고사 보러 가기</button></section>`;
     }
@@ -758,18 +799,18 @@
       return `<button class="mis-item ${done ? "done" : ""}" data-mis="${k}" ${open && !done ? "" : "disabled"}><span class="mis-ck">${done ? ico("check") : ico(ic)}</span><span class="spacer"><span class="tt">${title}</span><span class="td">${sub}</span></span>${open && !done ? ico("right") : ""}</button>`;
     }).join("");
     const nDone = missionItems(G).filter((it) => g.done[it[0]]).length;
-    const sub = open ? `${nDone} / 3 완료 · 하나씩 눌러서 해 보세요` : `${G.day - 1}일차 완료! ${G.day}일차 미션은 내일 열려요`;
-    return `<section class="mission ${open ? "" : "locked"}">${head(`${G.day}일차 · ${["앱과 친해지기", "복습 습관 만들기", "실전 감각 익히기"][gi]}`, sub)}<div class="mis-list">${items}</div>
+    const sub = open ? T`${nDone} / 3 완료 · 하나씩 눌러서 해 보세요` : T`${G.day - 1}일차 완료! ${G.day}일차 미션은 내일 열려요`;
+    return T`<section class="mission ${open ? "" : "locked"}">${head(T`${G.day}일차 · ${[T`앱과 친해지기`, T`복습 습관 만들기`, T`실전 감각 익히기`][gi]}`, sub)}<div class="mis-list">${items}</div>
       <a class="small mis-guide" href="#/guide">${ico("help")}처음이라 막막하다면 사용 가이드 보기</a></section>`;
   }
   function missionGo(k, plan, introduced) {
     if (k === "card") return homeGo("new", plan, introduced);
-    if (k === "quiz") { if (!introduced.length) return toast("먼저 오늘의 새 단어를 카드로 외워 주세요"); return homeGo("quiz-today", plan, introduced); }
+    if (k === "quiz") { if (!introduced.length) return toast(T`먼저 오늘의 새 단어를 카드로 외워 주세요`); return homeGo("quiz-today", plan, introduced); }
     if (k === "p2") return startLcQuiz("resp", D.lc || [], 5);
-    if (k === "review") { if (!plan.due.length) return toast("복습할 단어가 아직 없어요. 외운 단어는 다음 날부터 복습으로 돌아와요"); return homeGo("due", plan, introduced); }
+    if (k === "review") { if (!plan.due.length) return toast(T`복습할 단어가 아직 없어요. 외운 단어는 다음 날부터 복습으로 돌아와요`); return homeGo("due", plan, introduced); }
     if (k === "grammar") return go("#/grammar");
     if (k === "listen") return homeGo("listen", plan, introduced);
-    if (k === "p3" || k === "p7") return loadPractice().then(() => startSets(k, pickSets(practicePool(k), 1), k === "p3" ? "Part 3 대화" : "Part 7 독해")).catch(() => toast("문제를 불러오지 못했어요"));
+    if (k === "p3" || k === "p7") return loadPractice().then(() => startSets(k, pickSets(practicePool(k), 1), k === "p3" ? T`Part 3 대화` : T`Part 7 독해`)).catch(() => toast(T`문제를 불러오지 못했어요`));
     if (k === "remind") return go("#/settings");
     if (k === "guide") return go("#/guide");
     if (k === "mock") { S.guide.hide = true; save(); return go("#/mock"); }
@@ -782,7 +823,7 @@
     const el = document.createElement("div");
     el.className = "coach";
     el.setAttribute("role", "note");
-    el.innerHTML = `<span class="coach-i">${ico("bulb")}</span><div class="coach-t">${html}</div><button class="coach-ok" type="button">알겠어요</button>`;
+    el.innerHTML = T`<span class="coach-i">${ico("bulb")}</span><div class="coach-t">${html}</div><button class="coach-ok" type="button">알겠어요</button>`;
     el.querySelector("button").addEventListener("click", () => { S.tips[key] = 1; save(); el.remove(); });
     page.insertAdjacentElement("afterend", el);
   }
@@ -796,7 +837,7 @@
   }
   function startPracticeTask(task) {
     loadPractice().then(() => {
-      const title = `오늘의 실전 · ${task.label}`;
+      const title = T`오늘의 실전 · ${task.label}`;
       if (task.kind === "mock") return go("#/mock");
       if (task.kind === "p2") return startLcQuiz("resp", D.lc || [], task.n);
       if (task.kind === "p5g") {
@@ -804,7 +845,7 @@
         return startGrammarQuiz(C.lcPick(qs, S.gq, task.n), title);
       }
       startSets(task.kind, pickSets(practicePool(task.kind), task.n), title);
-    }).catch(() => toast("문제를 불러오지 못했어요"));
+    }).catch(() => toast(T`문제를 불러오지 못했어요`));
   }
   function progressBlock(P) {
     const tiers = myTiers();
@@ -813,26 +854,26 @@
       const s = C.summarize(ws, S.words);
       const m = ws.length ? (s.mastered / ws.length) * 100 : 0;
       const l = ws.length ? (s.learning / ws.length) * 100 : 0;
-      return `<div style="margin:6px 0 14px"><div class="row small" style="margin-bottom:6px"><span class="badge tier-${tier}">${C.TIER_NAMES[tier]}</span><span class="spacer"></span><span class="muted">${s.mastered} / ${ws.length} 완료</span></div>
+      return T`<div style="margin:6px 0 14px"><div class="row small" style="margin-bottom:6px"><span class="badge tier-${tier}">${C.TIER_NAMES[tier]}</span><span class="spacer"></span><span class="muted">${s.mastered} / ${ws.length} 완료</span></div>
         <div class="stack-bar"><i style="width:${m}%;background:var(--ok)"></i><i style="width:${l}%;background:var(--accent)"></i></div></div>`;
-    }).join("") + `<div class="legend"><span><i style="background:var(--ok)"></i>암기 완료</span><span><i style="background:var(--accent)"></i>학습 중</span><span><i style="background:var(--bg-sunk);border:1px solid var(--line-strong)"></i>아직 안 봄</span></div>`;
+    }).join("") + T`<div class="legend"><span><i style="background:var(--ok)"></i>암기 완료</span><span><i style="background:var(--accent)"></i>학습 중</span><span><i style="background:var(--bg-sunk);border:1px solid var(--line-strong)"></i>아직 안 봄</span></div>`;
   }
   function homeGo(what, plan, introduced) {
     const P = pool();
     if (what === "new") {
       if (!plan.newWords.length) {
-        if (plan.remaining === 0) return toast("목표 범위의 단어를 모두 봤어요! 복습과 테스트로 굳혀 보세요");
-        return toast("오늘 분량을 끝냈어요. 더 하려면 단어장에서 Day를 골라 주세요");
+        if (plan.remaining === 0) return toast(T`목표 범위의 단어를 모두 봤어요! 복습과 테스트로 굳혀 보세요`);
+        return toast(T`오늘 분량을 끝냈어요. 더 하려면 단어장에서 Day를 골라 주세요`);
       }
-      return startCard(plan.newWords, { title: "오늘의 새 단어", src: "today" });
+      return startCard(plan.newWords, { title: T`오늘의 새 단어`, src: "today" });
     }
     if (what === "due") {
-      if (!plan.due.length) return toast("오늘 복습할 단어가 없어요");
-      return startCard(plan.due.slice(0, 100), { title: "복습", src: "due" });
+      if (!plan.due.length) return toast(T`오늘 복습할 단어가 없어요`);
+      return startCard(plan.due.slice(0, 100), { title: T`복습`, src: "due" });
     }
     if (what === "quiz-today") {
-      if (!introduced.length) return toast("오늘 새 단어를 먼저 외워 주세요");
-      return startQuiz(introduced, "mix", { title: "오늘 단어 퀴즈" });
+      if (!introduced.length) return toast(T`오늘 새 단어를 먼저 외워 주세요`);
+      return startQuiz(introduced, "mix", { title: T`오늘 단어 퀴즈` });
     }
     if (what === "place") return startPlacement();
     if (what === "diag") return go("#/diag");
@@ -843,23 +884,23 @@
     }
     if (what === "wrong") {
       const ws = WORDS.filter((w) => st(w.id) && st(w.id).wrong);
-      if (!ws.length) return toast("오답노트가 비어 있어요");
-      return startQuiz(ws.slice(0, 40), "mix", { title: "오답노트", wrongNote: true });
+      if (!ws.length) return toast(T`오답노트가 비어 있어요`);
+      return startQuiz(ws.slice(0, 40), "mix", { title: T`오답노트`, wrongNote: true });
     }
     if (what === "listen") {
       const seen = P.filter((w) => st(w.id) && st(w.id).n);
       const list = plan.newWords.length ? plan.newWords : seen.length ? C.shuffle(seen).slice(0, 40) : P.slice(0, 30);
-      return startListen(list, { title: "듣기 모드" });
+      return startListen(list, { title: T`듣기 모드` });
     }
     if (what === "para") {
       const seen = P.filter((w) => st(w.id) && st(w.id).n && C.canParaphrase(w));
       const base = seen.length >= 10 ? seen : P.filter(C.canParaphrase).slice(0, 80);
-      return startQuiz(C.shuffle(base).slice(0, 20), "para", { title: "Part 7 동의어 20제" });
+      return startQuiz(C.shuffle(base).slice(0, 20), "para", { title: T`Part 7 동의어 20제` });
     }
     if (what === "part5") {
       const seen = P.filter((w) => st(w.id) && st(w.id).n);
       const base = seen.length >= 10 ? seen : P.slice(0, 80);
-      return startQuiz(C.shuffle(base).slice(0, 20), "part5", { title: "Part 5 어휘 20제" });
+      return startQuiz(C.shuffle(base).slice(0, 20), "part5", { title: T`Part 5 어휘 20제` });
     }
   }
 
@@ -876,27 +917,27 @@
       const locked = !canAccessDay(d.day);
       const done = ws.length && s.mastered === ws.length;
       const test = S.tests[d.day];
-      return `<a class="day-card ${d.day === curDay ? "cur" : ""} ${locked ? "lock" : ""}" href="#/day/${d.day}">
+      return T`<a class="day-card ${d.day === curDay ? "cur" : ""} ${locked ? "lock" : ""}" href="#/day/${d.day}">
         ${locked ? `<span class="lock-ico">${ico("lock")}</span>` : done ? `<span class="done-ico">${ico("check")}</span>` : ""}
-        <span class="dn">DAY ${pad(d.day)}${d.day === curDay ? " · 학습 중" : ""}</span>
+        <span class="dn">DAY ${pad(d.day)}${d.day === curDay ? T` · 학습 중` : ""}</span>
         <span class="dt">${esc(d.title)}</span>
         <div class="bar thin ${mpct === 100 ? "ok" : ""}"><i style="width:${pct}%"></i></div>
-        <span class="dm"><span>${s.seen}/${ws.length}개</span><span>${test ? `테스트 ${test.best}점` : ""}</span></span></a>`;
+        <span class="dm"><span>${s.seen}/${ws.length}개</span><span>${test ? T`테스트 ${test.best}점` : ""}</span></span></a>`;
     };
     const section = (title, desc, list) => `<div class="section"><div class="section-h"><h2>${title}</h2><span class="small muted">${desc}</span></div><div class="grid2 grid-days">${list.map(card).join("")}</div></div>`;
     // 코스 탭: 기본 / 심화 / 실전 (처음엔 지금 학습 중인 Day 가 있는 코스)
     const courses = COURSES.filter((c) => DAYS.some((d) => d.day >= c.from && d.day <= c.to));
     if (ui.course == null || !courses[ui.course]) ui.course = Math.max(0, courses.findIndex((c) => curDay >= c.from && curDay <= c.to));
     const cur = courses[ui.course];
-    const tabs = courses.length > 1 ? `<div class="seg" style="margin:6px 0 2px">${courses.map((c, i) => `<button class="${i === ui.course ? "on" : ""}" data-course="${i}">${c.name.replace(" 코스", "")}</button>`).join("")}</div>` : "";
+    const tabs = courses.length > 1 ? `<div class="seg" style="margin:6px 0 2px">${courses.map((c, i) => `<button class="${i === ui.course ? "on" : ""}" data-course="${i}">${c.tab}</button>`).join("")}</div>` : "";
     const cards = courses.length > 1
       ? tabs + section(cur.name, `DAY ${pad(cur.from)}~${pad(Math.min(cur.to, NDAYS))} · ${cur.desc}`, DAYS.filter((d) => d.day >= cur.from && d.day <= cur.to))
       : `<div class="grid2 grid-days">${DAYS.map(card).join("")}</div>`;
-    const body = `${topBar("단어장", { sub: `목표 ${target()}점 · ${C.scoreBand(target()).label} · ${P.length.toLocaleString()}개`, right: `<a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a>` })}
+    const body = T`${topBar(T`단어장`, { sub: T`목표 ${target()}점 · ${C.scoreBand(target()).label} · ${P.length.toLocaleString()}개`, right: T`<a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a>` })}
       <div class="chips scroll" style="margin-bottom:14px">
         <a class="chip" href="#/part1">${ico("camera")}Part 1 사진 표현</a>
         <a class="chip" href="#/conf">${ico("split")}혼동 어휘</a>
-        ${(D.lc || []).length ? `<a class="chip" href="#/lc">${ico("ear")}LC 빈출 표현</a>` : ""}
+        ${(D.lc || []).length ? T`<a class="chip" href="#/lc">${ico("ear")}LC 빈출 표현</a>` : ""}
         <a class="chip" href="#/review?tab=star">${ico("star")}중요 단어</a>
         <a class="chip" href="#/review?tab=wrong">${ico("alert")}오답노트</a>
       </div>
@@ -927,30 +968,30 @@
     const sum = C.summarize(mine, S.words);
     const test = S.tests[d];
     const modes = [
-      ["sort", "아는 단어 빼기", "check", "c-green"],
-      ["card", "카드 암기", "layers", "c-blue"],
-      ["meaning", "뜻 고르기", "list", "c-green"],
-      ["word", "단어 고르기", "shuffle", "c-orange"],
-      ["listen-q", "듣고 고르기", "ear", "c-purple"],
-      ["spell", "철자 쓰기", "pencil", "c-gold"],
-      ["cloze", "예문 빈칸", "bulb", "c-blue"],
-      ["part5", "Part 5 어휘", "trophy", "c-purple"],
-      ["para", "Part 7 동의어", "swap", "c-orange"],
+      ["sort", T`아는 단어 빼기`, "check", "c-green"],
+      ["card", T`카드 암기`, "layers", "c-blue"],
+      ["meaning", T`뜻 고르기`, "list", "c-green"],
+      ["word", T`단어 고르기`, "shuffle", "c-orange"],
+      ["listen-q", T`듣고 고르기`, "ear", "c-purple"],
+      ["spell", T`철자 쓰기`, "pencil", "c-gold"],
+      ["cloze", T`예문 빈칸`, "bulb", "c-blue"],
+      ["part5", T`Part 5 어휘`, "trophy", "c-purple"],
+      ["para", T`Part 7 동의어`, "swap", "c-orange"],
     ];
-    const items = list.map((w) => wordItem(w)).join("") || `<div class="empty">${ico("search")}<b>해당하는 단어가 없어요</b>필터를 바꿔 보세요</div>`;
+    const items = list.map((w) => wordItem(w)).join("") || T`<div class="empty">${ico("search")}<b>해당하는 단어가 없어요</b>필터를 바꿔 보세요</div>`;
     const hiddenCount = all.length - mine.length;
-    const body = `${topBar(`DAY ${pad(d)}`, { back: true, sub: esc(day.title) + " · " + esc(day.titleEn), right: `${DAY_BY.has(d - 1) ? `<a class="icon-btn" href="#/day/${d - 1}" aria-label="이전 Day">${ico("left")}</a>` : ""}${DAY_BY.has(d + 1) ? `<a class="icon-btn" href="#/day/${d + 1}" aria-label="다음 Day">${ico("right")}</a>` : ""}` })}
+    const body = T`${topBar(`DAY ${pad(d)}`, { back: true, sub: esc(day.title) + " · " + esc(day.titleEn), right: `${DAY_BY.has(d - 1) ? T`<a class="icon-btn" href="#/day/${d - 1}" aria-label="이전 Day">${ico("left")}</a>` : ""}${DAY_BY.has(d + 1) ? T`<a class="icon-btn" href="#/day/${d + 1}" aria-label="다음 Day">${ico("right")}</a>` : ""}` })}
       <div class="card"><div class="row"><div class="spacer"><div class="stat-num">${sum.mastered}<span class="muted" style="font-size:16px"> / ${mine.length}</span></div><div class="stat-lbl">암기 완료 · 학습 중 ${sum.learning}</div></div>
-        ${test ? `<div style="text-align:right"><div class="stat-num" style="color:${test.best >= 80 ? "var(--ok)" : "var(--accent)"}">${test.best}<span style="font-size:16px">점</span></div><div class="stat-lbl">테스트 최고점</div></div>` : ""}</div>
+        ${test ? T`<div style="text-align:right"><div class="stat-num" style="color:${test.best >= 80 ? "var(--ok)" : "var(--accent)"}">${test.best}<span style="font-size:16px">점</span></div><div class="stat-lbl">테스트 최고점</div></div>` : ""}</div>
         <div class="stack-bar" style="margin-top:12px"><i style="width:${mine.length ? (sum.mastered / mine.length) * 100 : 0}%;background:var(--ok)"></i><i style="width:${mine.length ? (sum.learning / mine.length) * 100 : 0}%;background:var(--accent)"></i></div></div>
       <div class="section"><div class="section-h"><h2>학습 방법</h2></div>
         <div class="grid3">${modes.map(([k, l, ic, c]) => `<button class="tile" data-mode="${k}" style="align-items:center;text-align:center;padding:14px 8px"><span class="tico ${c}">${ico(ic)}</span><b style="font-size:13.5px">${l}</b></button>`).join("")}</div>
         <button class="task" data-mode="listen" style="margin-top:10px"><span class="tico c-green">${ico("headphones")}</span><span class="spacer"><div class="tt">듣기 모드</div><div class="td">단어 → 예문 자동 재생 · 출퇴근길에</div></span>${ico("right")}</button>
-        <button class="task" data-mode="test" style="margin-top:10px"><span class="tico c-red">${ico("flag")}</span><span class="spacer"><div class="tt">DAY ${pad(d)} 테스트</div><div class="td">20문제 · 80점 이상이면 통과${test ? ` · 최고 ${test.best}점` : ""}</div></span>${ico("right")}</button>
+        <button class="task" data-mode="test" style="margin-top:10px"><span class="tico c-red">${ico("flag")}</span><span class="spacer"><div class="tt">DAY ${pad(d)} 테스트</div><div class="td">20문제 · 80점 이상이면 통과${test ? T` · 최고 ${test.best}점` : ""}</div></span>${ico("right")}</button>
       </div>
-      <div class="section"><div class="section-h"><h2>단어 ${list.length}개</h2><button data-toggle-hide>${S.settings.hideMeaning ? "뜻 보이기" : "뜻 가리기"}</button></div>
-        <div class="chips scroll" style="margin-bottom:12px">${[["all", "전체"], ["new", "안 본 단어"], ["learning", "학습 중"], ["mastered", "암기 완료"], ["star", "★ 중요"]].map(([k, l]) => `<button class="chip ${f === k ? "on" : ""}" data-filter="${k}">${l}</button>`).join("")}
-          ${hiddenCount > 0 || ui.dayAll ? `<button class="chip ${ui.dayAll ? "on" : ""}" data-all>${ui.dayAll ? "내 목표 범위만" : `목표 밖 단어 +${hiddenCount}`}</button>` : ""}</div>
+      <div class="section"><div class="section-h"><h2>단어 ${list.length}개</h2><button data-toggle-hide>${S.settings.hideMeaning ? T`뜻 보이기` : T`뜻 가리기`}</button></div>
+        <div class="chips scroll" style="margin-bottom:12px">${[["all", T`전체`], ["new", T`안 본 단어`], ["learning", T`학습 중`], ["mastered", T`암기 완료`], ["star", T`★ 중요`]].map(([k, l]) => `<button class="chip ${f === k ? "on" : ""}" data-filter="${k}">${l}</button>`).join("")}
+          ${hiddenCount > 0 || ui.dayAll ? `<button class="chip ${ui.dayAll ? "on" : ""}" data-all>${ui.dayAll ? T`내 목표 범위만` : T`목표 밖 단어 +${hiddenCount}`}</button>` : ""}</div>
         <div class="wlist">${items}</div></div>`;
     shell("days", body);
     $app.querySelectorAll("[data-filter]").forEach((b) => b.addEventListener("click", () => { ui.dayFilter = b.dataset.filter; vDay(r); }));
@@ -965,15 +1006,15 @@
       if (m === "card") return startCard(ws, { title });
       if (m === "sort") return startSort(ws.filter((w) => C.status(st(w.id)) !== "mastered"), { title });
       if (m === "listen") return startListen(ws, { title });
-      if (m === "test") return startQuiz(base, "test", { title: `DAY ${pad(d)} 테스트`, day: d });
+      if (m === "test") return startQuiz(base, "test", { title: T`DAY ${pad(d)} 테스트`, day: d });
       if (m === "listen-q") return startQuiz(ws, "listen", { title });
       startQuiz(ws, m, { title });
     }));
   }
   function wordItem(w) {
     const s = st(w.id);
-    return `<div class="witem ${S.settings.hideMeaning ? "hide-m" : ""}" data-act="open-word" data-id="${w.id}" role="link" tabindex="0" aria-label="${esc(w.w)} 상세 보기">
-      <span class="dot ${C.status(s)}" title="${{ new: "안 봄", learning: "학습 중", mastered: "암기 완료" }[C.status(s)]}"></span>
+    return T`<div class="witem ${S.settings.hideMeaning ? "hide-m" : ""}" data-act="open-word" data-id="${w.id}" role="link" tabindex="0" aria-label="${esc(w.w)} 상세 보기">
+      <span class="dot ${C.status(s)}" title="${{ new: T`안 봄`, learning: T`학습 중`, mastered: T`암기 완료` }[C.status(s)]}"></span>
       <div class="wbody"><div class="row" style="gap:8px"><span class="ww en">${esc(w.w)}</span><span class="badge tier-${w.tier}">${C.TIER_NAMES[w.tier]}</span></div>
       <div class="wm"><span class="muted">${POS_SHORT[w.pos] || ""}</span> ${esc(C.meaningText(w, 3))}</div></div>
       <button class="icon-btn" data-act="star" data-id="${w.id}" aria-label="중요 표시">${starIco(s && s.star)}</button>
@@ -986,7 +1027,7 @@
     const o = opt || {};
     const derivs = (w.der || []).map((x) => `<div class="kv"><span class="k en">${esc(x.w)}</span><span class="badge pos">${POS_KO[x.pos] || x.pos}</span><span class="v">${esc(x.m)}</span></div>`).join("");
     const cols = (w.col || []).map((x) => `<div class="kv"><span class="k en">${esc(x.e)}</span><span class="v">${esc(x.k)}</span></div>`).join("");
-    return `<div class="wd-head">
+    return T`<div class="wd-head">
         <div class="row" style="gap:6px;flex-wrap:wrap"><span class="badge tier-${w.tier}">${C.TIER_NAMES[w.tier]}</span><span class="badge pos">${POS_KO[w.pos] || w.pos}</span>${(w.parts || []).map((p) => `<span class="badge part">Part ${p}</span>`).join("")}<span class="spacer"></span>
           <span class="small muted">DAY ${pad(w.d)}</span></div>
         <div class="row" style="align-items:flex-end"><div class="spacer"><div class="wd-word en">${esc(w.w)}</div>${w.ipa ? `<div class="wd-ipa">${esc(w.ipa)}</div>` : ""}</div>
@@ -996,13 +1037,13 @@
       </div>
       <div class="card blk"><div class="blk-h">예문 ${w.exV ? `<span class="voice-tag">${voiceLabel(w.exV)}</span>` : ""}<span class="spacer"></span><button class="play" data-act="play-ex" data-id="${w.id}" aria-label="예문 듣기">${ico("vol")}</button></div>
         <div class="ex-en en">${hl(w.ex)}</div><div class="ex-ko">${esc(w.exKo)}</div></div>
-      ${w.tip ? `<div class="tip-box blk"><b>출제 포인트</b> ${esc(w.tip)}</div>` : ""}
-      ${cols ? `<div class="card blk"><div class="blk-h">빈출 표현</div>${cols}</div>` : ""}
-      ${derivs ? `<div class="card blk"><div class="blk-h">파생어 · 품사 변화</div>${derivs}</div>` : ""}
-      ${(w.para && w.para.length) || w.ant ? `<div class="card blk">${w.para && w.para.length ? `<div class="blk-h">Part 7 패러프레이징 (바꿔 쓰기)</div><div class="para-list">${w.para.map((p) => `<span class="en">${esc(p)}</span>`).join("")}</div>` : ""}${w.ant ? `<div class="blk-h" style="margin-top:${w.para && w.para.length ? 14 : 0}px">반의어</div><div class="en" style="font-weight:650">${esc(w.ant)}</div>` : ""}</div>` : ""}
-      ${o.noQuiz || !w.q ? "" : `<div class="card blk" id="p5"><div class="blk-h">Part 5 어휘 문제</div><div class="en" style="font-size:16px;line-height:1.6">${esc(w.q.s).replace("-------", '<b style="letter-spacing:.1em">_______</b>')}</div>
+      ${w.tip ? T`<div class="tip-box blk"><b>출제 포인트</b> ${esc(w.tip)}</div>` : ""}
+      ${cols ? T`<div class="card blk"><div class="blk-h">빈출 표현</div>${cols}</div>` : ""}
+      ${derivs ? T`<div class="card blk"><div class="blk-h">파생어 · 품사 변화</div>${derivs}</div>` : ""}
+      ${(w.para && w.para.length) || w.ant ? `<div class="card blk">${w.para && w.para.length ? T`<div class="blk-h">Part 7 패러프레이징 (바꿔 쓰기)</div><div class="para-list">${w.para.map((p) => `<span class="en">${esc(p)}</span>`).join("")}</div>` : ""}${w.ant ? T`<div class="blk-h" style="margin-top:${w.para && w.para.length ? 14 : 0}px">반의어</div><div class="en" style="font-weight:650">${esc(w.ant)}</div>` : ""}</div>` : ""}
+      ${o.noQuiz || !w.q ? "" : T`<div class="card blk" id="p5"><div class="blk-h">Part 5 어휘 문제</div><div class="en" style="font-size:16px;line-height:1.6">${esc(w.q.s).replace("-------", '<b style="letter-spacing:.1em">_______</b>')}</div>
         <div class="opts" style="margin-top:12px">${w.q.o.map((x, i) => `<button class="opt" data-p5="${i}"><span class="on">${"ABCD"[i]}</span><span class="en">${esc(x)}</span></button>`).join("")}</div><div id="p5fb"></div></div>`}
-      ${s && s.n ? `<p class="small muted" style="text-align:center;margin-top:18px">본 횟수 ${s.n}회 · 맞힘 ${s.ok} · 틀림 ${s.ng}${s.due && s.b ? ` · 다음 복습 ${fmtDate(s.due)}` : ""}</p>` : ""}`;
+      ${s && s.n ? T`<p class="small muted" style="text-align:center;margin-top:18px">본 횟수 ${s.n}회 · 맞힘 ${s.ok} · 틀림 ${s.ng}${s.due && s.b ? T` · 다음 복습 ${fmtDate(s.due)}` : ""}</p>` : ""}`;
   }
   function bindP5(w, root) {
     root.querySelectorAll("[data-p5]").forEach((b) => b.addEventListener("click", () => {
@@ -1016,7 +1057,7 @@
         else x.classList.add("dim");
       });
       (ok ? Sfx.ok : Sfx.bad)();
-      root.querySelector("#p5fb").innerHTML = `<div class="feedback ${ok ? "ok" : "bad"}"><b class="t">${ok ? "정답!" : `오답 · 정답 ${"ABCD"[w.q.a]}`}</b>${esc(w.q.k)}</div>`;
+      root.querySelector("#p5fb").innerHTML = `<div class="feedback ${ok ? "ok" : "bad"}"><b class="t">${ok ? T`정답!` : T`오답 · 정답 ${"ABCD"[w.q.a]}`}</b>${esc(w.q.k)}</div>`;
     }));
   }
   function vWord(r) {
@@ -1027,7 +1068,7 @@
     const i = siblings.indexOf(w);
     const prev = siblings[i - 1];
     const next = siblings[i + 1];
-    const body = `${topBar("", { back: true, right: `${prev ? `<a class="icon-btn" href="#/word/${prev.id}" aria-label="이전 단어">${ico("left")}</a>` : ""}<span class="small muted">${i + 1} / ${siblings.length}</span>${next ? `<a class="icon-btn" href="#/word/${next.id}" aria-label="다음 단어">${ico("right")}</a>` : ""}` })}${wordDetailHtml(w)}`;
+    const body = `${topBar("", { back: true, right: `${prev ? T`<a class="icon-btn" href="#/word/${prev.id}" aria-label="이전 단어">${ico("left")}</a>` : ""}<span class="small muted">${i + 1} / ${siblings.length}</span>${next ? T`<a class="icon-btn" href="#/word/${next.id}" aria-label="다음 단어">${ico("right")}</a>` : ""}` })}${wordDetailHtml(w)}`;
     shell("days", body);
     bindP5(w, $app);
     if (S.settings.autoWord) Sound.word(w);
@@ -1051,11 +1092,11 @@
   function askExit() {
     if (!session || session.done) return exitStudy();
     const mock = session.kind === "mock";
-    confirmBox(mock ? "모의고사를 멈출까요?" : "학습을 그만할까요?", mock ? "푼 답안과 남은 시간이 저장돼요. 모의고사 화면에서 이어서 풀 수 있어요." : "지금까지 한 내용은 저장돼요.", mock ? "멈추기" : "그만하기").then((ok) => { if (ok) { if (mock && session) saveMockRun(session); exitStudy(); } });
+    confirmBox(mock ? T`모의고사를 멈출까요?` : T`학습을 그만할까요?`, mock ? T`푼 답안과 남은 시간이 저장돼요. 모의고사 화면에서 이어서 풀 수 있어요.` : T`지금까지 한 내용은 저장돼요.`, mock ? T`멈추기` : T`그만하기`).then((ok) => { if (ok) { if (mock && session) saveMockRun(session); exitStudy(); } });
   }
   function studyTop(cur, total) {
     const pct = total ? Math.round((cur / total) * 100) : 0;
-    return `<div class="study-top"><button class="icon-btn back" data-exit aria-label="닫기">${ico("x")}</button><div class="bar"><i style="width:${pct}%"></i></div><span class="cnt">${Math.min(cur + 1, total)} / ${total}</span></div>`;
+    return T`<div class="study-top"><button class="icon-btn back" data-exit aria-label="닫기">${ico("x")}</button><div class="bar"><i style="width:${pct}%"></i></div><span class="cnt">${Math.min(cur + 1, total)} / ${total}</span></div>`;
   }
   function bindExit() { const b = $app.querySelector("[data-exit]"); if (b) b.addEventListener("click", askExit); }
   function introduceIfNew(w) {
@@ -1065,7 +1106,7 @@
 
   // ═════════════ 카드 암기 ═════════════
   function startCard(words, opt) {
-    if (!words.length) return toast("학습할 단어가 없어요");
+    if (!words.length) return toast(T`학습할 단어가 없어요`);
     session = { kind: "card", title: opt.title, src: opt.src, queue: words.slice(), i: 0, flipped: false, round: 1, again: [], res: { 0: 0, 1: 0, 2: 0 }, seenIds: new Set(), from: location.hash, startedAt: Date.now() };
     enterStudy();
   }
@@ -1090,20 +1131,20 @@
     const w = s.queue[s.i];
     const showKo = S.settings.showKo;
     const st0 = st(w.id);
-    $app.innerHTML = `<div class="study">${studyTop(s.i, s.queue.length)}
-      <div class="small muted" style="text-align:center">${esc(s.title)}${s.round > 1 ? ` · ${s.round}회차 (모르는 단어 다시)` : ""}</div>
+    $app.innerHTML = T`<div class="study">${studyTop(s.i, s.queue.length)}
+      <div class="small muted" style="text-align:center">${esc(s.title)}${s.round > 1 ? T` · ${s.round}회차 (모르는 단어 다시)` : ""}</div>
       <div class="flash-wrap"><div class="flash" id="flash">
         <span class="swipe-label l">모름</span><span class="swipe-label r">알아요</span>
         <div class="f-head"><span class="badge tier-${w.tier}">${C.TIER_NAMES[w.tier]}</span><span class="badge pos">${POS_KO[w.pos] || ""}</span>${!st0 || !st0.n ? '<span class="badge c-blue">NEW</span>' : ""}<span class="spacer"></span><button class="icon-btn" data-act="star" data-id="${w.id}" aria-label="중요 표시">${starIco(st0 && st0.star)}</button></div>
         <div class="f-center"><div class="f-word en">${esc(w.w)}</div>${w.ipa ? `<div class="f-ipa">${esc(w.ipa)}</div>` : ""}
           <button class="play lg" data-act="play-word" data-id="${w.id}" style="margin-top:14px" aria-label="발음 듣기">${ico("vol")}</button></div>
-        ${s.flipped ? `<div class="f-back"><div class="f-mean">${esc(C.meaningText(w, 3))}</div>
+        ${s.flipped ? T`<div class="f-back"><div class="f-mean">${esc(C.meaningText(w, 3))}</div>
           <div class="f-ex"><div class="row" style="align-items:flex-start"><div class="spacer ex-en en" style="font-size:15.5px">${hl(w.ex)}</div><button class="play" data-act="play-ex" data-id="${w.id}" aria-label="예문 듣기">${ico("vol")}</button></div>${showKo ? `<div class="ex-ko">${esc(w.exKo)}</div>` : ""}</div>
-          ${w.tip ? `<div class="small" style="margin-top:10px;color:var(--text-2)"><b style="color:var(--warn)">출제 포인트</b> ${esc(w.tip)}</div>` : ""}</div>` : `<div class="f-hint">뜻을 떠올린 뒤 카드를 눌러 확인하세요</div>`}
+          ${w.tip ? T`<div class="small" style="margin-top:10px;color:var(--text-2)"><b style="color:var(--warn)">출제 포인트</b> ${esc(w.tip)}</div>` : ""}</div>` : T`<div class="f-hint">뜻을 떠올린 뒤 카드를 눌러 확인하세요</div>`}
       </div></div>
       <div class="study-foot">${s.flipped
-        ? `<div class="grade3"><button class="btn g-no" data-g="0">모르겠어요<small>다시 보기</small></button><button class="btn g-mid" data-g="1">헷갈려요<small>${dueLabel(C.INTERVALS[Math.max(1, ((st0 && st0.b) || 0) - 1)])}</small></button><button class="btn g-yes" data-g="2">알아요<small>${s.seenIds.has(w.id) ? "내일 복습" : !st0 || !st0.b ? dueLabel(C.INTERVALS[2]) : dueLabel(C.INTERVALS[Math.min(st0.b + 1, 6)])}</small></button></div>`
-        : `<button class="btn block" data-flip>뜻 확인하기</button>`}
+        ? T`<div class="grade3"><button class="btn g-no" data-g="0">모르겠어요<small>다시 보기</small></button><button class="btn g-mid" data-g="1">헷갈려요<small>${dueLabel(C.INTERVALS[Math.max(1, ((st0 && st0.b) || 0) - 1)])}</small></button><button class="btn g-yes" data-g="2">알아요<small>${s.seenIds.has(w.id) ? T`내일 복습` : !st0 || !st0.b ? dueLabel(C.INTERVALS[2]) : dueLabel(C.INTERVALS[Math.min(st0.b + 1, 6)])}</small></button></div>`
+        : T`<button class="btn block" data-flip>뜻 확인하기</button>`}
         <div class="kbd-hint"><kbd>Space</kbd> 뒤집기 · <kbd>1</kbd> 모름 <kbd>2</kbd> 헷갈림 <kbd>3</kbd> 알아요 · <kbd>P</kbd> 발음 <kbd>E</kbd> 예문 · 카드를 좌우로 밀어도 돼요</div></div></div>`;
     bindExit();
     const flash = document.getElementById("flash");
@@ -1124,7 +1165,7 @@
       gradeCard(dir > 0 ? 2 : 0);
     });
     if (!s.flipped && S.settings.autoWord) Sound.word(w);
-    coach("card", "<b>카드 학습</b> 뜻을 떠올린 뒤 카드를 눌러 확인하고 <b>모름 · 헷갈림 · 알아요</b> 중 하나를 누르세요. 답에 따라 다음 복습 날짜가 정해져요. 카드를 좌우로 밀어도 돼요.");
+    coach("card", T`<b>카드 학습</b> 뜻을 떠올린 뒤 카드를 눌러 확인하고 <b>모름 · 헷갈림 · 알아요</b> 중 하나를 누르세요. 답에 따라 다음 복습 날짜가 정해져요. 카드를 좌우로 밀어도 돼요.`);
     keyHandler = (e) => {
       if (onControl(e) || s.animating) return;
       if (e.key === " " || e.key === "Enter") { e.preventDefault(); if (!s.flipped) flip(); }
@@ -1204,7 +1245,7 @@
         s.again = [];
         s.i = 0;
         s.round += 1;
-        toast(`모르는 단어 ${s.queue.length}개를 한 번 더 볼게요`);
+        toast(T`모르는 단어 ${s.queue.length}개를 한 번 더 볼게요`);
       } else return finishSession();
     }
     vCard();
@@ -1212,21 +1253,21 @@
 
   // ═════════════ 아는 단어 빼기 ═════════════
   function startSort(words, opt) {
-    if (!words.length) return toast("뺄 단어가 없어요 (이미 모두 암기 완료)");
+    if (!words.length) return toast(T`뺄 단어가 없어요 (이미 모두 암기 완료)`);
     session = { kind: "sort", title: opt.title, queue: words.slice(), i: 0, known: [], unknown: [] };
     enterStudy();
   }
   function vSort() {
     const s = session;
     const w = s.queue[s.i];
-    $app.innerHTML = `<div class="study">${studyTop(s.i, s.queue.length)}
+    $app.innerHTML = T`<div class="study">${studyTop(s.i, s.queue.length)}
       <div class="small muted" style="text-align:center">${esc(s.title)} · 확실히 아는 단어만 빼 두세요</div>
       <div class="flash-wrap"><div class="flash" id="flash" style="min-height:320px">
         <span class="swipe-label l">몰라요</span><span class="swipe-label r">알아요</span>
         <div class="f-head"><span class="badge tier-${w.tier}">${C.TIER_NAMES[w.tier]}</span><span class="badge pos">${POS_KO[w.pos] || ""}</span></div>
         <div class="f-center"><div class="f-word en">${esc(w.w)}</div>${w.ipa ? `<div class="f-ipa">${esc(w.ipa)}</div>` : ""}
           <button class="play lg" data-act="play-word" data-id="${w.id}" style="margin-top:14px" aria-label="발음 듣기">${ico("vol")}</button>
-          ${s.peek ? `<div class="f-mean" style="margin-top:16px">${esc(C.meaningText(w, 3))}</div>` : `<button class="btn ghost sm" data-peek style="margin-top:16px">${ico("eye")}뜻 확인</button>`}</div>
+          ${s.peek ? `<div class="f-mean" style="margin-top:16px">${esc(C.meaningText(w, 3))}</div>` : T`<button class="btn ghost sm" data-peek style="margin-top:16px">${ico("eye")}뜻 확인</button>`}</div>
       </div></div>
       <div class="study-foot"><div class="grid2 grade2"><button class="btn g-no" data-k="0">몰라요<small>학습할게요</small></button><button class="btn g-yes" data-k="1">알아요<small>빼 둘게요</small></button></div>
       <div class="kbd-hint"><kbd>←</kbd> 몰라요 · <kbd>→</kbd> 알아요 · <kbd>Space</kbd> 뜻 확인 · <kbd>P</kbd> 발음</div></div></div>`;
@@ -1252,7 +1293,7 @@
     const flash = document.getElementById("flash");
     bindSwipe(flash, () => { s.animating = true; }, (dir) => { s.animating = false; if (session === s && route().name === "study") decide(dir > 0); });
     if (S.settings.autoWord && !s.peek) Sound.word(w);
-    coach("sort", "<b>아는 단어 빼기</b> 이미 아는 단어는 <b>알아요(→)</b>로 빼 두면 7일 뒤 한 번만 확인해요. 모르는 단어만 카드로 외우면 시간이 크게 줄어요.");
+    coach("sort", T`<b>아는 단어 빼기</b> 이미 아는 단어는 <b>알아요(→)</b>로 빼 두면 7일 뒤 한 번만 확인해요. 모르는 단어만 카드로 외우면 시간이 크게 줄어요.`);
     keyHandler = (e) => {
       if (onControl(e) || s.animating) return;
       if (e.key === "ArrowLeft" || e.key === "1") decide(false);
@@ -1276,7 +1317,7 @@
     if (s.done) return vPlacementResult();
     const q = s.qs[s.i];
     const w = q.word;
-    $app.innerHTML = `<div class="study">${studyTop(s.i, s.qs.length)}
+    $app.innerHTML = T`<div class="study">${studyTop(s.i, s.qs.length)}
       <div class="small muted" style="text-align:center">어휘 진단 · 아는 만큼만 답하세요 (점수에 영향 없음)</div>
       <div class="quiz-q"><div class="qk">알맞은 뜻은?</div><div class="qw en">${esc(w.w)}</div></div>
       <div class="opts">${q.options.map((o, i) => `<button class="opt" data-pick="${i}"><span class="on">${i + 1}</span><span>${esc(o)}</span></button>`).join("")}
@@ -1305,19 +1346,19 @@
     const rec = C.recommendSkip(p).filter((t) => C.tiersFor(target()).includes(t) && t < Math.max(...C.tiersFor(target())));
     const pct = (x) => Math.round(x * 100);
     const bar = (t) => `<div style="margin:10px 0"><div class="row small" style="margin-bottom:6px"><span class="badge tier-${t}">${C.TIER_NAMES[t]}</span><span class="spacer"></span><b>${pct(p[t])}%</b></div><div class="bar"><i style="width:${pct(p[t])}%"></i></div></div>`;
-    const recText = rec.length ? `<b>${rec.map((t) => C.TIER_NAMES[t]).join("·")} 단어</b>는 이미 잘 알고 있어요. 건너뛰고 <b>${C.TIER_NAMES[rec[rec.length - 1] + 1]} 단어</b>부터 시작하면 시간을 아낄 수 있어요.` : "처음부터 차근차근 학습하는 걸 추천해요. 아는 단어는 Day 화면의 '아는 단어 빼기'로 빠르게 넘길 수 있어요.";
-    $app.innerHTML = `<div class="study"><div class="study-top"><button class="icon-btn back" data-home aria-label="닫기">${ico("x")}</button><span class="spacer"></span></div>
+    const recText = rec.length ? T`<b>${rec.map((t) => C.TIER_NAMES[t]).join("·")} 단어</b>는 이미 잘 알고 있어요. 건너뛰고 <b>${C.TIER_NAMES[rec[rec.length - 1] + 1]} 단어</b>부터 시작하면 시간을 아낄 수 있어요.` : T`처음부터 차근차근 학습하는 걸 추천해요. 아는 단어는 Day 화면의 '아는 단어 빼기'로 빠르게 넘길 수 있어요.`;
+    $app.innerHTML = T`<div class="study"><div class="study-top"><button class="icon-btn back" data-home aria-label="닫기">${ico("x")}</button><span class="spacer"></span></div>
       <div class="result-hero"><div style="display:flex;justify-content:center;color:var(--brand)">${ico("gauge", "")}</div>
         <div class="msg" style="margin-top:6px">이미 알고 있는 토익 단어</div><div class="score"><small>약 </small>${known.toLocaleString()}<small>개</small></div>
         <p class="muted small">전체 ${NWORDS}개 기준 추정 · ${s.results.length}문항</p></div>
       <div class="card">${[1, 2, 3].map(bar).join("")}</div>
       <div class="tip-box" style="margin-top:12px">${recText}</div>
-      <div style="margin-top:16px">${rec.length ? `<button class="btn block" data-apply>${ico("check")}${rec.map((t) => C.TIER_NAMES[t]).join("·")} 단어 건너뛰고 시작</button><button class="btn ghost block" style="margin-top:10px" data-keep>처음부터 학습할게요</button>` : `<button class="btn block" data-keep>학습 시작하기</button>`}</div></div>`;
+      <div style="margin-top:16px">${rec.length ? T`<button class="btn block" data-apply>${ico("check")}${rec.map((t) => C.TIER_NAMES[t]).join("·")} 단어 건너뛰고 시작</button><button class="btn ghost block" style="margin-top:10px" data-keep>처음부터 학습할게요</button>` : T`<button class="btn block" data-keep>학습 시작하기</button>`}</div></div>`;
     const finish = (skip) => {
       S.profile.placed = true;
       S.profile.skip = skip;
       save(true);
-      toast(skip.length ? `${skip.map((t) => C.TIER_NAMES[t]).join("·")} 단어를 건너뛰었어요. 설정에서 다시 포함할 수 있어요` : "진단 완료! 오늘의 단어부터 시작해요");
+      toast(skip.length ? T`${skip.map((t) => C.TIER_NAMES[t]).join("·")} 단어를 건너뛰었어요. 설정에서 다시 포함할 수 있어요` : T`진단 완료! 오늘의 단어부터 시작해요`);
       exitStudy();
     };
     const ap = $app.querySelector("[data-apply]");
@@ -1328,11 +1369,11 @@
   }
 
   // ═════════════ 퀴즈 ═════════════
-  const QUIZ_TITLES = { meaning: "알맞은 뜻은?", word: "알맞은 단어는?", listen: "듣고 알맞은 뜻 고르기", spell: "영어로 쓰세요", cloze: "빈칸에 알맞은 말은?", part5: "Part 5 · 빈칸에 알맞은 것은?", conf: "혼동 어휘 · 빈칸에 알맞은 것은?", para: "Part 7 · 문맥상 뜻이 가장 가까운 것은?" };
+  const QUIZ_TITLES = { meaning: T`알맞은 뜻은?`, word: T`알맞은 단어는?`, listen: T`듣고 알맞은 뜻 고르기`, spell: T`영어로 쓰세요`, cloze: T`빈칸에 알맞은 말은?`, part5: T`Part 5 · 빈칸에 알맞은 것은?`, conf: T`혼동 어휘 · 빈칸에 알맞은 것은?`, para: T`Part 7 · 문맥상 뜻이 가장 가까운 것은?` };
   function startQuiz(words, type, opt) {
     // 모의고사 전용 Part 5 어휘 문제(w.mq)는 연습에 쓰지 않는다
     if (type === "part5") words = words.filter((w) => w.q);
-    if (!words.length) return toast("문제를 만들 단어가 없어요");
+    if (!words.length) return toast(T`문제를 만들 단어가 없어요`);
     const all = pool().length > 60 ? pool() : WORDS;
     let qs;
     if (type === "test") qs = C.makeTest(words, all, Math.min(20, words.length));
@@ -1350,14 +1391,14 @@
       if (type === "para") ws = ws.filter(C.canParaphrase);
       qs = ws.slice(0, 30).map((w) => (type === "para" ? C.makeParaphrase(w, all) : C.makeQuestion(type, w, all)));
     }
-    if (!qs.length) return toast(type === "cloze" ? "예문 빈칸 문제를 만들 수 있는 단어가 없어요" : type === "para" ? "바꿔 쓰기 표현이 있는 단어가 없어요" : "문제를 만들 단어가 없어요");
+    if (!qs.length) return toast(type === "cloze" ? T`예문 빈칸 문제를 만들 수 있는 단어가 없어요` : type === "para" ? T`바꿔 쓰기 표현이 있는 단어가 없어요` : T`문제를 만들 단어가 없어요`);
     session = { kind: "quiz", type, title: opt.title, qs, i: 0, answered: null, results: [], day: opt.day, wrongNote: opt.wrongNote, from: location.hash, hint: 0 };
     enterStudy();
   }
   function startConfQuiz(sets) {
-    if (!sets.length) return toast("문제가 없어요");
+    if (!sets.length) return toast(T`문제가 없어요`);
     const qs = C.shuffle(sets).map((c) => ({ type: "conf", conf: c, prompt: c.q.s, options: c.q.o, answer: c.q.a, explain: c.q.k }));
-    session = { kind: "conf", type: "conf", title: "혼동 어휘 퀴즈", qs, i: 0, answered: null, results: [], from: location.hash };
+    session = { kind: "conf", type: "conf", title: T`혼동 어휘 퀴즈`, qs, i: 0, answered: null, results: [], from: location.hash };
     enterStudy();
   }
   function vQuiz() {
@@ -1369,17 +1410,17 @@
     let qhtml = "";
     if (q.type === "meaning") qhtml = `<div class="qw en">${esc(w.w)}</div>${w.ipa ? `<div class="muted small" style="margin-top:4px">${esc(w.ipa)}</div>` : ""}`;
     else if (q.type === "word") qhtml = `<div class="qm">${esc(q.prompt)}</div><div class="muted small" style="margin-top:6px">${POS_KO[w.pos] || ""}</div>`;
-    else if (q.type === "listen") qhtml = `<button class="play lg" data-replay style="margin:18px auto 0;width:84px;height:84px" aria-label="다시 듣기">${ico("vol")}</button>${ans ? `<div class="qw en" style="font-size:26px">${esc(w.w)}</div>` : `<div class="small muted" style="margin-top:10px">버튼을 눌러 다시 들을 수 있어요</div>`}`;
+    else if (q.type === "listen") qhtml = T`<button class="play lg" data-replay style="margin:18px auto 0;width:84px;height:84px" aria-label="다시 듣기">${ico("vol")}</button>${ans ? `<div class="qw en" style="font-size:26px">${esc(w.w)}</div>` : T`<div class="small muted" style="margin-top:10px">버튼을 눌러 다시 들을 수 있어요</div>`}`;
     else if (q.type === "cloze") qhtml = `<div class="qs en">${esc(q.prompt).replace(/_____/g, '<b style="color:var(--brand)">_____</b>')}</div>${S.settings.showKo && ans ? `<div class="qsub">${esc(q.sub)}</div>` : ""}`;
     else if (q.type === "part5" || q.type === "conf") qhtml = `<div class="qs en">${esc(q.prompt).replace("-------", '<b style="color:var(--brand);letter-spacing:.05em">_______</b>')}</div>`;
-    else if (q.type === "para") qhtml = `<div class="qs en">${hl(w.ex)}</div><div class="qsub">표시된 <b class="en">${esc(q.key)}</b>와 바꿔 쓸 수 있는 표현은?</div>`;
+    else if (q.type === "para") qhtml = T`<div class="qs en">${hl(w.ex)}</div><div class="qsub">표시된 <b class="en">${esc(q.key)}</b>와 바꿔 쓸 수 있는 표현은?</div>`;
     else if (q.type === "spell") qhtml = `<div class="qm">${esc(q.prompt)}</div><div class="muted small" style="margin-top:6px">${POS_KO[w.pos] || ""}${w.ex ? "" : ""}</div>`;
     let body;
     if (q.type === "spell") {
       const hint = C.spellHint(w.w, s.hint);
-      body = `<div class="spell-hint en" aria-label="힌트">${esc(hint)}</div>
+      body = T`<div class="spell-hint en" aria-label="힌트">${esc(hint)}</div>
         <input class="spell-input en ${ans ? (ans.ok ? "ok" : "bad") : ""}" id="spell" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="정답 입력" ${ans ? "disabled" : ""} value="${ans ? esc(ans.given) : ""}" />
-        ${ans ? "" : `<div class="row" style="margin-top:12px"><button class="btn ghost sm" data-hint style="flex:1">${ico("bulb")}힌트</button><button class="btn ghost sm" data-giveup style="flex:1">모르겠어요</button></div>`}`;
+        ${ans ? "" : T`<div class="row" style="margin-top:12px"><button class="btn ghost sm" data-hint style="flex:1">${ico("bulb")}힌트</button><button class="btn ghost sm" data-giveup style="flex:1">모르겠어요</button></div>`}`;
     } else {
       body = `<div class="opts">${q.options.map((o, i) => {
         let cls = "";
@@ -1389,16 +1430,16 @@
     }
     let fb = "";
     if (ans) {
-      const expl = q.type === "part5" || q.type === "conf" ? q.explain : q.type === "para" ? `이 문맥의 ${q.key}(${C.meaningText(w, 2)}) = ${w.para.join(", ")}${S.settings.showKo ? ` · ${w.exKo}` : ""}` : "";
+      const expl = q.type === "part5" || q.type === "conf" ? q.explain : q.type === "para" ? T`이 문맥의 ${q.key}(${C.meaningText(w, 2)}) = ${w.para.join(", ")}${S.settings.showKo ? ` · ${w.exKo}` : ""}` : "";
       const wInfo = w ? `<div style="margin-top:6px"><b class="en">${esc(w.w)}</b> ${esc(C.meaningText(w, 3))}</div>` : "";
       const confInfo = q.conf ? `<div style="margin-top:8px">${q.conf.words.map((x) => `<div><b class="en">${esc(x.w)}</b> <span class="muted">${POS_SHORT[x.pos] || ""}</span> ${esc(x.m)}</div>`).join("")}<div style="margin-top:6px;color:var(--text-2)">${esc(q.conf.point)}</div></div>` : "";
-      fb = `<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? "정답이에요!" : ans.close ? "아깝다! 철자를 확인해 보세요" : "틀렸어요"}</b>${expl ? esc(expl) : ""}${q.type === "spell" && !ans.ok ? `<div style="margin-top:4px">정답: <b class="en">${esc(w.w)}</b></div>` : ""}${!ans.ok || q.type === "part5" ? wInfo : ""}${confInfo}</div>`;
+      fb = `<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? T`정답이에요!` : ans.close ? T`아깝다! 철자를 확인해 보세요` : T`틀렸어요`}</b>${expl ? esc(expl) : ""}${q.type === "spell" && !ans.ok ? T`<div style="margin-top:4px">정답: <b class="en">${esc(w.w)}</b></div>` : ""}${!ans.ok || q.type === "part5" ? wInfo : ""}${confInfo}</div>`;
     }
     $app.innerHTML = `<div class="study">${studyTop(s.i, s.qs.length)}
       <div class="quiz-q"><div class="qk">${label}</div>${qhtml}</div>
       ${body}${fb}
-      <div class="study-foot">${ans ? `<button class="btn block" data-next>${s.i + 1 >= s.qs.length ? "결과 보기" : "다음 문제"}</button>` : q.type === "spell" ? `<button class="btn block" data-check>확인</button>` : ""}
-      <div class="kbd-hint">${q.type === "spell" ? "<kbd>Enter</kbd> 확인 · 다음" : "<kbd>1</kbd>~<kbd>4</kbd> 선택 · <kbd>Enter</kbd> 다음"}${w ? " · <kbd>P</kbd> 발음" : ""}</div></div></div>`;
+      <div class="study-foot">${ans ? `<button class="btn block" data-next>${s.i + 1 >= s.qs.length ? T`결과 보기` : T`다음 문제`}</button>` : q.type === "spell" ? T`<button class="btn block" data-check>확인</button>` : ""}
+      <div class="kbd-hint">${q.type === "spell" ? T`<kbd>Enter</kbd> 확인 · 다음` : T`<kbd>1</kbd>~<kbd>4</kbd> 선택 · <kbd>Enter</kbd> 다음`}${w ? T` · <kbd>P</kbd> 발음` : ""}</div></div></div>`;
     bindExit();
     const pick = (i) => {
       if (s.answered) return;
@@ -1416,7 +1457,7 @@
       if (!r.ok && r.close && !s.closeOnce) {
         s.closeOnce = true;
         input.classList.add("bad");
-        toast("거의 맞았어요! 철자를 다시 확인해 보세요");
+        toast(T`거의 맞았어요! 철자를 다시 확인해 보세요`);
         setTimeout(() => input.classList.remove("bad"), 600);
         return;
       }
@@ -1432,7 +1473,7 @@
     }
     if (!ans && q.type === "listen") setTimeout(() => Sound.word(w, $app.querySelector("[data-replay]")), 150);
     if (!ans && q.type === "meaning" && S.settings.autoWord) Sound.word(w);
-    coach("quiz", "<b>퀴즈</b> 맞힌 단어는 다음 복습이 뒤로 미뤄지고, 틀린 단어는 <b>오답노트</b>에 자동으로 모여요. 숫자 키 1~4로도 고를 수 있어요.");
+    coach("quiz", T`<b>퀴즈</b> 맞힌 단어는 다음 복습이 뒤로 미뤄지고, 틀린 단어는 <b>오답노트</b>에 자동으로 모여요. 숫자 키 1~4로도 고를 수 있어요.`);
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
       if (onControl(e)) return;
@@ -1484,20 +1525,20 @@
 
   // ═════════════ 듣기 모드 ═════════════
   function startListen(words, opt) {
-    if (!words.length) return toast("들을 단어가 없어요");
+    if (!words.length) return toast(T`들을 단어가 없어요`);
     session = { kind: "listen", title: opt.title, list: words.slice(), i: 0, playing: false, phase: "", from: location.hash, showMean: true, withEx: true };
     enterStudy();
   }
   function vListen() {
     const s = session;
     const w = s.list[s.i];
-    $app.innerHTML = `<div class="study">${studyTop(s.i, s.list.length)}
+    $app.innerHTML = T`<div class="study">${studyTop(s.i, s.list.length)}
       <div class="small muted" style="text-align:center">${esc(s.title)} · 단어(두 번) → 예문 순서로 자동 재생 · 뜻은 화면으로</div>
       <div class="player"><span class="badge tier-${w.tier}">${C.TIER_NAMES[w.tier]}</span>
         <div class="pw en">${esc(w.w)}</div>${w.ipa ? `<div class="muted">${esc(w.ipa)}</div>` : ""}
-        <div class="pm" style="margin-top:12px">${s.showMean ? esc(C.meaningText(w, 3)) : '<span class="muted small">뜻 가림</span>'}</div>
+        <div class="pm" style="margin-top:12px">${s.showMean ? esc(C.meaningText(w, 3)) : T`<span class="muted small">뜻 가림</span>`}</div>
         ${s.withEx ? `<div class="pe en">${hl(w.ex)}</div>${s.showMean && S.settings.showKo ? `<div class="ex-ko">${esc(w.exKo)}</div>` : ""}` : ""}
-        <div class="player-ctl"><button class="icon-btn" data-prev aria-label="이전">${ico("prev")}</button><button class="main-btn" data-toggle aria-label="${s.playing ? "일시정지" : "재생"}">${ico(s.playing ? "pause" : "play")}</button><button class="icon-btn" data-next aria-label="다음">${ico("next")}</button></div>
+        <div class="player-ctl"><button class="icon-btn" data-prev aria-label="이전">${ico("prev")}</button><button class="main-btn" data-toggle aria-label="${s.playing ? T`일시정지` : T`재생`}">${ico(s.playing ? "pause" : "play")}</button><button class="icon-btn" data-next aria-label="다음">${ico("next")}</button></div>
       </div>
       <div class="study-foot"><div class="set-group">
         <label class="set-row"><span class="sl"><b>뜻 보기</b></span><span class="switch"><input type="checkbox" data-opt="showMean" ${s.showMean ? "checked" : ""}/><span></span></span></label>
@@ -1511,7 +1552,7 @@
       s[c.dataset.opt] = c.checked;
       vListen();
     }));
-    coach("listen", "<b>듣기 모드</b> 단어를 두 번 들려준 뒤 예문을 읽어요. 화면의 뜻을 보며 따라 말해 보세요. <b>뜻 보기</b>를 끄면 소리만 듣고 뜻을 떠올리는 연습이 돼요.");
+    coach("listen", T`<b>듣기 모드</b> 단어를 두 번 들려준 뒤 예문을 읽어요. 화면의 뜻을 보며 따라 말해 보세요. <b>뜻 보기</b>를 끄면 소리만 듣고 뜻을 떠올리는 연습이 돼요.`);
     keyHandler = (e) => {
       if (onControl(e)) return;
       if (e.key === " ") { e.preventDefault(); s.playing ? pauseListen() : playListen(); }
@@ -1567,7 +1608,7 @@
       if (s.i + 1 >= s.list.length) {
         s.playing = false;
         markDone();
-        toast("끝까지 들었어요!");
+        toast(T`끝까지 들었어요!`);
         vListen();
         break;
       }
@@ -1614,22 +1655,22 @@
     let list = "";
     let actions = "";
     if (s.kind === "sort") {
-      hero = `<div class="result-hero"><div style="display:flex;justify-content:center">${ico("check")}</div><div class="score">${s.known.length}<small>개</small></div><div class="msg">아는 단어로 뺐어요</div><p class="muted">7일 뒤 복습에서 한 번만 확인할게요 · 학습할 단어 ${s.unknown.length}개</p></div>`;
+      hero = T`<div class="result-hero"><div style="display:flex;justify-content:center">${ico("check")}</div><div class="score">${s.known.length}<small>개</small></div><div class="msg">아는 단어로 뺐어요</div><p class="muted">7일 뒤 복습에서 한 번만 확인할게요 · 학습할 단어 ${s.unknown.length}개</p></div>`;
       s._words = s.unknown;
       list = s.unknown.map((w) => wordItem(w)).join("");
-      actions = `${s.unknown.length ? `<button class="btn block" data-card>${ico("layers")}모르는 단어 ${s.unknown.length}개 카드로 외우기</button>` : ""}<button class="btn ${s.unknown.length ? "ghost" : ""} block" style="margin-top:10px" data-home>처음 화면으로</button>`;
+      actions = T`${s.unknown.length ? T`<button class="btn block" data-card>${ico("layers")}모르는 단어 ${s.unknown.length}개 카드로 외우기</button>` : ""}<button class="btn ${s.unknown.length ? "ghost" : ""} block" style="margin-top:10px" data-home>처음 화면으로</button>`;
     } else if (s.kind === "card") {
       const total = s.res[0] + s.res[1] + s.res[2];
       const words = Array.from(s.seenIds).map((id) => BY_ID.get(id));
-      hero = `<div class="result-hero"><div style="display:flex;justify-content:center">${ico("check", "")}</div><div class="score">${total}<small>개</small></div><div class="msg">카드 학습 완료!</div><p class="muted">한 번에 안 단어 ${s.res[2]} · 헷갈림 ${s.res[1]} · 모름 ${s.res[0]}</p></div>`;
+      hero = T`<div class="result-hero"><div style="display:flex;justify-content:center">${ico("check", "")}</div><div class="score">${total}<small>개</small></div><div class="msg">카드 학습 완료!</div><p class="muted">한 번에 안 단어 ${s.res[2]} · 헷갈림 ${s.res[1]} · 모름 ${s.res[0]}</p></div>`;
       list = words.map((w) => wordItem(w)).join("");
-      actions = `<button class="btn block" data-quiz>${ico("zap")}방금 외운 단어 퀴즈로 확인</button><button class="btn ghost block" style="margin-top:10px" data-home>처음 화면으로</button>`;
+      actions = T`<button class="btn block" data-quiz>${ico("zap")}방금 외운 단어 퀴즈로 확인</button><button class="btn ghost block" style="margin-top:10px" data-home>처음 화면으로</button>`;
       s._words = words;
     } else if (s.kind === "pset") {
       const r = psetResultHtml(s);
       hero = r.hero;
       list = "";
-      actions = `${r.types}<button class="btn block" style="margin-top:12px" data-pmore>${ico("play")}${PART_LABEL[s.part]} 더 풀기</button><button class="btn ghost block" style="margin-top:10px" data-home>목록으로</button>`;
+      actions = T`${r.types}<button class="btn block" style="margin-top:12px" data-pmore>${ico("play")}${PART_LABEL[s.part]} 더 풀기</button><button class="btn ghost block" style="margin-top:10px" data-home>목록으로</button>`;
       if (r.score >= 80 && r.total >= 3) setTimeout(confetti, 100);
     } else if (s.kind === "mock" && s.m.diag) {
       const r = diagResultHtml(s);
@@ -1641,64 +1682,64 @@
       const r = mockResultHtml(s);
       hero = r.hero;
       const wrongN = s.pages.reduce((n, p, pi) => n + pageQs(p).filter((q, qi) => s.picks[pi][qi] !== (p.part === "p2" ? p.q.answer : q.a)).length, 0);
-      actions = `<div class="card">${r.rows}</div><button class="btn block" style="margin-top:12px" data-mrevw ${wrongN ? "" : "disabled"}>${ico("alert")}틀린 문제 해설 (${wrongN})</button><button class="btn ghost block" style="margin-top:10px" data-mrev>${ico("book")}전체 해설 보기</button><a class="btn ghost block" style="margin-top:10px" href="#/practice" data-tohub>약점 연습하러 가기</a><button class="btn ghost block" style="margin-top:10px" data-home>모의고사 목록으로</button>`;
+      actions = T`<div class="card">${r.rows}</div><button class="btn block" style="margin-top:12px" data-mrevw ${wrongN ? "" : "disabled"}>${ico("alert")}틀린 문제 해설 (${wrongN})</button><button class="btn ghost block" style="margin-top:10px" data-mrev>${ico("book")}전체 해설 보기</button><a class="btn ghost block" style="margin-top:10px" href="#/practice" data-tohub>약점 연습하러 가기</a><button class="btn ghost block" style="margin-top:10px" data-home>모의고사 목록으로</button>`;
       list = "";
     } else if (s.kind === "dict") {
       const avg = Math.round(s.results.reduce((n, r) => n + r.pct, 0) / Math.max(1, s.results.length));
-      hero = `<div class="result-hero"><div class="score" style="color:${avg >= 90 ? "var(--ok)" : avg >= 60 ? "var(--accent)" : "var(--bad)"}">${avg}<small>%</small></div><div class="msg">${avg >= 90 ? "귀가 트였어요!" : avg >= 60 ? "거의 다 들려요" : "천천히 다시 들어 보세요"}</div><p class="muted">${s.results.length}문장 평균 받아쓰기 정확도</p></div>`;
+      hero = T`<div class="result-hero"><div class="score" style="color:${avg >= 90 ? "var(--ok)" : avg >= 60 ? "var(--accent)" : "var(--bad)"}">${avg}<small>%</small></div><div class="msg">${avg >= 90 ? T`귀가 트였어요!` : avg >= 60 ? T`거의 다 들려요` : T`천천히 다시 들어 보세요`}</div><p class="muted">${s.results.length}문장 평균 받아쓰기 정확도</p></div>`;
       list = s.results.filter((r) => r.pct < 100).map((r) => `<div class="witem" style="cursor:default"><div class="wbody"><div class="ex-en en">${esc(r.it.text)}</div><div class="ex-ko">${esc(r.it.ko)}</div></div><span class="badge ${r.pct >= 90 ? "ok" : "bad"}">${r.pct}%</span></div>`).join("");
-      actions = `<button class="btn block" data-dmore>${ico("pencil")}10문장 더</button><button class="btn ghost block" style="margin-top:10px" data-home>처음 화면으로</button>`;
+      actions = T`<button class="btn block" data-dmore>${ico("pencil")}10문장 더</button><button class="btn ghost block" style="margin-top:10px" data-home>처음 화면으로</button>`;
     } else if (s.kind === "gq") {
       const ok = s.results.filter((r) => r.ok).length;
       const total = s.results.length;
       const score = Math.round((ok / total) * 100);
-      hero = `<div class="result-hero"><div class="score" style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--accent)" : "var(--bad)"}">${score}<small>점</small></div><div class="msg">${score === 100 ? "완벽해요!" : score >= 80 ? "훌륭해요!" : "강의를 다시 보고 틀린 문제를 풀어 보세요"}</div><p class="muted">${esc(s.title)} · ${total}문제 중 ${ok}개 정답</p></div>`;
+      hero = T`<div class="result-hero"><div class="score" style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--accent)" : "var(--bad)"}">${score}<small>점</small></div><div class="msg">${score === 100 ? T`완벽해요!` : score >= 80 ? T`훌륭해요!` : T`강의를 다시 보고 틀린 문제를 풀어 보세요`}</div><p class="muted">${esc(s.title)} · ${total}문제 중 ${ok}개 정답</p></div>`;
       const wrong = s.results.filter((r) => !r.ok);
       s._gWrong = wrong.map((r) => r.q);
       list = wrong.map((r) => `<div class="witem" style="cursor:default"><div class="wbody"><div class="ex-en en">${esc(r.q.s.replace("-------", r.q.o[r.q.a]))}</div><div class="small muted" style="margin-top:4px">${esc(r.q.exp)}</div></div></div>`).join("");
-      actions = `${wrong.length ? `<button class="btn block" data-gwrong>${ico("repeat")}틀린 문제 다시 (${wrong.length})</button>` : ""}<button class="btn ${wrong.length ? "ghost" : ""} block" style="margin-top:10px" data-home>처음 화면으로</button>`;
+      actions = T`${wrong.length ? T`<button class="btn block" data-gwrong>${ico("repeat")}틀린 문제 다시 (${wrong.length})</button>` : ""}<button class="btn ${wrong.length ? "ghost" : ""} block" style="margin-top:10px" data-home>처음 화면으로</button>`;
       if (score >= 80 && total >= 5) setTimeout(confetti, 100);
     } else if (s.kind === "lcq") {
       const ok = s.results.filter((r) => r.ok).length;
       const total = s.results.length;
       const score = Math.round((ok / total) * 100);
-      hero = `<div class="result-hero"><div class="score" style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--accent)" : "var(--bad)"}">${score}<small>점</small></div><div class="msg">${score === 100 ? "완벽해요!" : score >= 80 ? "훌륭해요!" : score >= 50 ? "조금만 더 하면 돼요" : "표현을 듣고 다시 풀어 봐요"}</div><p class="muted">${s.title} · ${total}문제 중 ${ok}개 정답</p></div>`;
+      hero = T`<div class="result-hero"><div class="score" style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--accent)" : "var(--bad)"}">${score}<small>점</small></div><div class="msg">${score === 100 ? T`완벽해요!` : score >= 80 ? T`훌륭해요!` : score >= 50 ? T`조금만 더 하면 돼요` : T`표현을 듣고 다시 풀어 봐요`}</div><p class="muted">${s.title} · ${total}문제 중 ${ok}개 정답</p></div>`;
       const wrong = s.results.filter((r) => !r.ok).map((r) => r.q.item);
       s._lcWrong = wrong;
       list = wrong.map((p) => {
         const d = C.splitDialog(p.e);
         const dk = d && C.splitDialog(p.k);
-        return `<div class="witem" style="align-items:flex-start;cursor:default"><div class="wbody"><div class="ex-en en">${d ? `<div><span class="muted">Q</span> ${hl(d.q)}</div><div><span class="muted">A</span> ${hl(d.a)}</div>` : hl(p.e)}</div>
+        return T`<div class="witem" style="align-items:flex-start;cursor:default"><div class="wbody"><div class="ex-en en">${d ? `<div><span class="muted">Q</span> ${hl(d.q)}</div><div><span class="muted">A</span> ${hl(d.a)}</div>` : hl(p.e)}</div>
           <div class="ex-ko" style="margin-top:3px">${dk ? `${esc(dk.q)}<br>${esc(dk.a)}` : esc(p.k)}</div>
           <div class="small" style="margin-top:6px"><span class="badge pos en">${esc(p.key)}</span> <span class="muted">${esc(p.keyKo)}</span></div></div>
           <button class="play" data-lsay="${p.id}" aria-label="듣기">${ico("vol")}</button></div>`;
       }).join("");
-      actions = `${wrong.length ? `<button class="btn block" data-lcwrong>${ico("repeat")}틀린 문제 다시 풀기 (${wrong.length})</button>` : ""}<button class="btn ${wrong.length ? "ghost" : ""} block" style="margin-top:10px" data-lcnext>${ico("zap")}새 문제 ${LCQ_N}개 더 풀기</button><button class="btn ghost block" style="margin-top:10px" data-home>LC 표현 목록으로</button>`;
+      actions = T`${wrong.length ? T`<button class="btn block" data-lcwrong>${ico("repeat")}틀린 문제 다시 풀기 (${wrong.length})</button>` : ""}<button class="btn ${wrong.length ? "ghost" : ""} block" style="margin-top:10px" data-lcnext>${ico("zap")}새 문제 ${LCQ_N}개 더 풀기</button><button class="btn ghost block" style="margin-top:10px" data-home>LC 표현 목록으로</button>`;
       if (score >= 80 && total >= 5) setTimeout(confetti, 100);
     } else {
       const ok = s.results.filter((r) => r.ok).length;
       const total = s.results.length;
       const score = Math.round((ok / total) * 100);
       const pass = score >= 80;
-      const msg = s.type === "test" ? (pass ? "통과! 이 Day는 자신 있게 넘어가도 돼요" : "80점 이상이면 통과예요. 틀린 단어를 복습해 보세요") : score === 100 ? "완벽해요!" : score >= 80 ? "훌륭해요!" : score >= 50 ? "조금만 더 하면 돼요" : "복습이 필요해요";
-      hero = `<div class="result-hero"><div class="score" style="color:${pass ? "var(--ok)" : score >= 50 ? "var(--accent)" : "var(--bad)"}">${score}<small>점</small></div><div class="msg">${msg}</div><p class="muted">${total}문제 중 ${ok}개 정답</p></div>`;
+      const msg = s.type === "test" ? (pass ? T`통과! 이 Day는 자신 있게 넘어가도 돼요` : T`80점 이상이면 통과예요. 틀린 단어를 복습해 보세요`) : score === 100 ? T`완벽해요!` : score >= 80 ? T`훌륭해요!` : score >= 50 ? T`조금만 더 하면 돼요` : T`복습이 필요해요`;
+      hero = T`<div class="result-hero"><div class="score" style="color:${pass ? "var(--ok)" : score >= 50 ? "var(--accent)" : "var(--bad)"}">${score}<small>점</small></div><div class="msg">${msg}</div><p class="muted">${total}문제 중 ${ok}개 정답</p></div>`;
       const wrong = s.results.filter((r) => !r.ok);
       const wrongWords = Array.from(new Set(wrong.map((r) => r.q.word).filter(Boolean)));
       s._words = wrongWords;
       list = wrong.length
         ? wrong.map((r) => (r.q.word ? wordItem(r.q.word) : `<div class="witem"><div class="wbody"><div class="ww en">${esc(r.q.conf.words.map((x) => x.w).join(" / "))}</div><div class="wm">${esc(r.q.conf.point)}</div></div></div>`)).join("")
         : "";
-      actions = `${wrongWords.length ? `<button class="btn block" data-card>${ico("layers")}틀린 단어 카드로 복습 (${wrongWords.length})</button>` : ""}<button class="btn ${wrongWords.length ? "ghost" : ""} block" style="margin-top:10px" data-retry>다시 풀기</button><button class="btn ghost block" style="margin-top:10px" data-home>처음 화면으로</button>`;
+      actions = T`${wrongWords.length ? T`<button class="btn block" data-card>${ico("layers")}틀린 단어 카드로 복습 (${wrongWords.length})</button>` : ""}<button class="btn ${wrongWords.length ? "ghost" : ""} block" style="margin-top:10px" data-retry>다시 풀기</button><button class="btn ghost block" style="margin-top:10px" data-home>처음 화면으로</button>`;
       if (pass && total >= 5) setTimeout(confetti, 100);
     }
-    $app.innerHTML = `<div class="study"><div class="study-top"><button class="icon-btn back" data-home aria-label="닫기">${ico("x")}</button><span class="spacer"></span></div>
+    $app.innerHTML = T`<div class="study"><div class="study-top"><button class="icon-btn back" data-home aria-label="닫기">${ico("x")}</button><span class="spacer"></span></div>
       ${hero}${actions}
-      ${list ? `<div class="section"><div class="section-h"><h2>${s.kind === "card" ? "학습한 단어" : s.kind === "sort" ? "학습할 단어" : "틀린 문제"}</h2></div><div class="wlist">${list}</div></div>` : ""}</div>`;
+      ${list ? `<div class="section"><div class="section-h"><h2>${s.kind === "card" ? T`학습한 단어` : s.kind === "sort" ? T`학습할 단어` : T`틀린 문제`}</h2></div><div class="wlist">${list}</div></div>` : ""}</div>`;
     $app.querySelectorAll("[data-home]").forEach((b) => b.addEventListener("click", exitStudy));
     const q = $app.querySelector("[data-quiz]");
-    if (q) q.addEventListener("click", () => startQuiz(s._words, "mix", { title: "확인 퀴즈" }));
+    if (q) q.addEventListener("click", () => startQuiz(s._words, "mix", { title: T`확인 퀴즈` }));
     const c = $app.querySelector("[data-card]");
-    if (c) c.addEventListener("click", () => startCard(s._words, { title: "틀린 단어 복습" }));
+    if (c) c.addEventListener("click", () => startCard(s._words, { title: T`틀린 단어 복습` }));
     const pm = $app.querySelector("[data-pmore]");
     if (pm) pm.addEventListener("click", () => startSets(s.part, pickSets(practicePool(s.part).filter((x) => !s.queue.includes(x)), s.part === "p7" ? 2 : 3), s.title));
     const mr = $app.querySelector("[data-mrev]");
@@ -1708,13 +1749,13 @@
     const buy = $app.querySelector("[data-buy]");
     if (buy) buy.addEventListener("click", () => purchasePremium(buy));
     const fr = $app.querySelector("[data-free]");
-    if (fr) fr.addEventListener("click", () => { session = null; studyPushed = false; location.replace("#/home"); if (locked()) setTimeout(() => toast(`Day 1~${CONFIG.premium.freeDays} 단어와 파트별 1세트를 무료로 써 보세요`), 300); });
+    if (fr) fr.addEventListener("click", () => { session = null; studyPushed = false; location.replace("#/home"); if (locked()) setTimeout(() => toast(T`Day 1~${CONFIG.premium.freeDays} 단어와 파트별 1세트를 무료로 써 보세요`), 300); });
     const th = $app.querySelector("[data-tohub]");
     if (th) th.addEventListener("click", (e) => { e.preventDefault(); session = null; studyPushed = false; location.replace("#/practice"); });
     const dm = $app.querySelector("[data-dmore]");
-    if (dm) dm.addEventListener("click", () => { const src = dictSources(); const short = s.title.includes("짧은"); const all = short ? src.lc : src.p34.filter((x) => x.text.split(" ").length >= 6 && x.text.split(" ").length <= 22); startDict(C.shuffle(all).slice(0, 10), s.title); });
+    if (dm) dm.addEventListener("click", () => { const src = dictSources(); const short = s.src === "short"; const all = short ? src.lc : src.p34.filter((x) => x.text.split(" ").length >= 6 && x.text.split(" ").length <= 22); startDict(C.shuffle(all).slice(0, 10), s.title, s.src); });
     const gw = $app.querySelector("[data-gwrong]");
-    if (gw) gw.addEventListener("click", () => startGrammarQuiz(s._gWrong, "틀린 문법 문제"));
+    if (gw) gw.addEventListener("click", () => startGrammarQuiz(s._gWrong, T`틀린 문법 문제`));
     const lw = $app.querySelector("[data-lcwrong]");
     if (lw) lw.addEventListener("click", () => startLcQuiz(s.type, s._lcWrong));
     const ln = $app.querySelector("[data-lcnext]");
@@ -1740,38 +1781,38 @@
     const tab = ui.reviewTab;
     const lists = { due, wrong, star };
     const cur = lists[tab] || due;
-    const desc = { due: "기억이 흐려질 때쯤 다시 보는 단어예요. 매일 비워 주세요.", wrong: "퀴즈·카드에서 틀린 단어가 자동으로 모여요. 다시 맞히면 빠져요.", star: "★ 표시한 단어예요." }[tab];
-    const body = `${topBar("복습")}
-      <div class="seg" style="margin-bottom:14px">${[["due", `복습 예정 ${due.length}`], ["wrong", `오답노트 ${wrong.length}`], ["star", `★ 중요 ${star.length}`]].map(([k, l]) => `<button class="${tab === k ? "on" : ""}" data-tab="${k}">${l}</button>`).join("")}</div>
+    const desc = { due: T`기억이 흐려질 때쯤 다시 보는 단어예요. 매일 비워 주세요.`, wrong: T`퀴즈·카드에서 틀린 단어가 자동으로 모여요. 다시 맞히면 빠져요.`, star: T`★ 표시한 단어예요.` }[tab];
+    const body = T`${topBar(T`복습`)}
+      <div class="seg" style="margin-bottom:14px">${[["due", T`복습 예정 ${due.length}`], ["wrong", T`오답노트 ${wrong.length}`], ["star", T`★ 중요 ${star.length}`]].map(([k, l]) => `<button class="${tab === k ? "on" : ""}" data-tab="${k}">${l}</button>`).join("")}</div>
       <p class="small muted" style="margin:0 2px 12px">${desc}</p>
-      ${cur.length ? `<div class="grid2" style="margin-bottom:14px"><button class="btn" data-start="card">${ico("layers")}카드로</button><button class="btn ghost" data-start="quiz">${ico("zap")}퀴즈로</button></div><div class="wlist">${cur.slice(0, 300).map(wordItem).join("")}</div>`
-        : `<div class="card empty">${ico(tab === "star" ? "star" : "check")}<b>${tab === "due" ? "오늘 복습 끝!" : tab === "wrong" ? "틀린 단어가 없어요" : "중요 표시한 단어가 없어요"}</b>${tab === "star" ? "단어 옆 ☆를 눌러 모아 보세요" : "새 단어를 학습하면 여기에 쌓여요"}</div>`}
+      ${cur.length ? T`<div class="grid2" style="margin-bottom:14px"><button class="btn" data-start="card">${ico("layers")}카드로</button><button class="btn ghost" data-start="quiz">${ico("zap")}퀴즈로</button></div><div class="wlist">${cur.slice(0, 300).map(wordItem).join("")}</div>`
+        : `<div class="card empty">${ico(tab === "star" ? "star" : "check")}<b>${tab === "due" ? T`오늘 복습 끝!` : tab === "wrong" ? T`틀린 단어가 없어요` : T`중요 표시한 단어가 없어요`}</b>${tab === "star" ? T`단어 옆 ☆를 눌러 모아 보세요` : T`새 단어를 학습하면 여기에 쌓여요`}</div>`}
       <div class="section"><div class="section-h"><h2>전체 범위 테스트</h2></div>
-        <button class="task" data-random ${learned.length >= 4 ? "" : "disabled"}><span class="tico c-purple">${ico("shuffle")}</span><span class="spacer"><div class="tt">배운 단어 랜덤 30문제</div><div class="td">${learned.length ? `지금까지 본 ${learned.length}개 중에서` : "단어를 먼저 학습해 주세요"}</div></span>${ico("right")}</button></div>`;
+        <button class="task" data-random ${learned.length >= 4 ? "" : "disabled"}><span class="tico c-purple">${ico("shuffle")}</span><span class="spacer"><div class="tt">배운 단어 랜덤 30문제</div><div class="td">${learned.length ? T`지금까지 본 ${learned.length}개 중에서` : T`단어를 먼저 학습해 주세요`}</div></span>${ico("right")}</button></div>`;
     shell("review", body);
-    coach("review", "<b>복습 탭</b> 외운 단어는 1·3·7·14·30일 간격으로 이곳에 다시 나와요. 매일 <b>복습 예정</b>을 비우는 게 오래 기억하는 핵심이에요. 틀린 단어는 오답노트에 따로 모여요.");
+    coach("review", T`<b>복습 탭</b> 외운 단어는 1·3·7·14·30일 간격으로 이곳에 다시 나와요. 매일 <b>복습 예정</b>을 비우는 게 오래 기억하는 핵심이에요. 틀린 단어는 오답노트에 따로 모여요.`);
     $app.querySelectorAll("[data-tab]").forEach((b) => b.addEventListener("click", () => { ui.reviewTab = b.dataset.tab; history.replaceState(null, "", "#/review"); vReview({ q: {} }); }));
     $app.querySelectorAll("[data-start]").forEach((b) => b.addEventListener("click", () => {
       const ws = tab === "due" ? cur.slice(0, 100) : cur.slice(0, 60);
-      const title = { due: "복습", wrong: "오답노트", star: "중요 단어" }[tab];
+      const title = { due: T`복습`, wrong: T`오답노트`, star: T`중요 단어` }[tab];
       if (b.dataset.start === "card") startCard(ws, { title });
       else startQuiz(ws, "mix", { title, wrongNote: tab === "wrong" });
     }));
     const rnd = $app.querySelector("[data-random]");
-    if (rnd) rnd.addEventListener("click", () => startQuiz(C.shuffle(learned).slice(0, 30), "mix", { title: "랜덤 테스트" }));
+    if (rnd) rnd.addEventListener("click", () => startQuiz(C.shuffle(learned).slice(0, 30), "mix", { title: T`랜덤 테스트` }));
   }
 
   // ═════════════ Part 1 ═════════════
   // Part 1 사진 표현 / LC 빈출 표현 — 같은 목록 화면을 쓴다
   const LC_TIPS = {
-    2: `<b>Part 2 요령</b> 질문에 직접 답하지 않는 <b>우회 응답</b>이 정답인 경우가 많아요. "글쎄요", "~에게 물어보세요", "아직 정해지지 않았어요" 같은 답을 놓치지 마세요. 질문의 단어를 그대로 반복하는 보기는 함정일 때가 많아요.`,
-    3: `<b>Part 3 요령</b> 대화를 듣기 전에 문제를 먼저 읽어 두세요. 정답은 대화의 표현을 <b>다른 말로 바꿔</b> 나오고, 마지막 부분의 '다음에 할 일'·'요청 사항'이 자주 출제돼요.`,
-    4: `<b>Part 4 요령</b> 첫 문장에서 <b>담화 종류</b>(안내·광고·메시지·방송)와 장소를 잡으면 절반은 풀려요. <span class="en">Please ~ / Make sure ~</span> 뒤의 요청 사항을 놓치지 마세요.`,
+    2: T`<b>Part 2 요령</b> 질문에 직접 답하지 않는 <b>우회 응답</b>이 정답인 경우가 많아요. "글쎄요", "~에게 물어보세요", "아직 정해지지 않았어요" 같은 답을 놓치지 마세요. 질문의 단어를 그대로 반복하는 보기는 함정일 때가 많아요.`,
+    3: T`<b>Part 3 요령</b> 대화를 듣기 전에 문제를 먼저 읽어 두세요. 정답은 대화의 표현을 <b>다른 말로 바꿔</b> 나오고, 마지막 부분의 '다음에 할 일'·'요청 사항'이 자주 출제돼요.`,
+    4: T`<b>Part 4 요령</b> 첫 문장에서 <b>담화 종류</b>(안내·광고·메시지·방송)와 장소를 잡으면 절반은 풀려요. <span class="en">Please ~ / Make sure ~</span> 뒤의 요청 사항을 놓치지 마세요.`,
   };
   const EXPR = {
-    part1: { title: "Part 1 사진 표현", sub: () => `사진 묘사 문제에 그대로 나오는 문장 ${D.part1.length}개`, list: () => D.part1,
-      tip: () => `<b>핵심 함정</b> 사람이 없는 사진에서 <span class="en">is being + p.p.</span>(지금 ~되는 중)는 대부분 오답! 사물의 상태는 <span class="en">is/are + p.p.</span>, <span class="en">has been + p.p.</span>로 말해요.` },
-    lc: { title: "LC 빈출 표현", sub: () => `Part 2~4 대화·방송에 자주 나오는 표현 ${(D.lc || []).length}개`, list: () => D.lc || [],
+    part1: { title: T`Part 1 사진 표현`, sub: () => T`사진 묘사 문제에 그대로 나오는 문장 ${D.part1.length}개`, list: () => D.part1,
+      tip: () => T`<b>핵심 함정</b> 사람이 없는 사진에서 <span class="en">is being + p.p.</span>(지금 ~되는 중)는 대부분 오답! 사물의 상태는 <span class="en">is/are + p.p.</span>, <span class="en">has been + p.p.</span>로 말해요.` },
+    lc: { title: T`LC 빈출 표현`, sub: () => T`Part 2~4 대화·방송에 자주 나오는 표현 ${(D.lc || []).length}개`, list: () => D.lc || [],
       tip: () => LC_TIPS[ui.lcPart] || LC_TIPS[2] },
   };
   // LC 음성: 대화는 질문(lc/NNN-q) → 쉼 → 대답(lc/NNN-a), 한 사람의 말은 lc/NNN.mp3. Part 1 은 p.au 가 파일 경로
@@ -1816,9 +1857,9 @@
       const en = d ? `<div><span class="muted">Q</span> ${hl(d.q)}</div><div><span class="muted">A</span> ${hl(d.a)}</div>` : hl(p.e);
       const ko = dk ? `<div>${esc(dk.q)}</div><div>${esc(dk.a)}</div>` : esc(p.k);
       const rec = isLc && S.lc[p.id];
-      return `<div class="witem" style="align-items:flex-start;cursor:default"><div class="wbody">
+      return T`<div class="witem" style="align-items:flex-start;cursor:default"><div class="wbody">
         <div class="ex-en en" style="font-size:16px">${en}</div>${showKo ? `<div class="ex-ko" style="margin-top:3px">${ko}</div>` : ""}
-        <div class="small" style="margin-top:6px"><span class="badge pos en">${esc(p.key)}</span> <span class="muted">${esc(p.keyKo)}</span>${rec ? ` <span class="badge ${rec.wrong ? "bad" : "ok"}">${rec.wrong ? "틀림" : "맞힘"}</span>` : ""}</div>
+        <div class="small" style="margin-top:6px"><span class="badge pos en">${esc(p.key)}</span> <span class="muted">${esc(p.keyKo)}</span>${rec ? ` <span class="badge ${rec.wrong ? "bad" : "ok"}">${rec.wrong ? T`틀림` : T`맞힘`}</span>` : ""}</div>
         ${p.tip ? `<div class="small" style="margin-top:6px;color:var(--text-2)">💡 ${esc(p.tip)}</div>` : ""}</div>
         <button class="play" data-p1="${p.id}" aria-label="듣기">${ico("vol")}</button></div>`;
     };
@@ -1827,20 +1868,20 @@
       const sum = C.lcSummary(all, S.lc);
       const nResp = list.filter(C.canRespond).length;
       const nMean = list.filter((p) => !C.splitDialog(p.e)).length;
-      quiz = `<div class="grid2" style="margin-bottom:12px">
+      quiz = T`<div class="grid2" style="margin-bottom:12px">
           <button class="tile" data-lcq="resp" ${nResp ? "" : "disabled"}><span class="tico c-purple">${ico("ear")}</span><b>Part 2 응답 고르기</b><span>질문 듣고 3개 중 고르기 · ${nResp}문항</span></button>
           <button class="tile" data-lcq="lcm" ${nMean ? "" : "disabled"}><span class="tico c-orange">${ico("headphones")}</span><b>듣고 해석 고르기</b><span>Part 3·4 문장 · ${nMean}문항</span></button>
         </div>
-        <div class="small muted" style="margin:-2px 2px 12px">${sum.seen ? `푼 표현 ${sum.seen}/${sum.total} · 정답률 ${sum.accuracy}%${sum.wrong ? ` · 틀린 표현 ${sum.wrong}개` : ""}` : "아래에서 Part·주제를 고르면 그 범위로 퀴즈가 나와요"}</div>
-        <div class="seg" style="margin-bottom:10px">${[[0, "전체"], [2, "Part 2"], [3, "Part 3"], [4, "Part 4"]].map(([v, t]) => `<button class="${part === v ? "on" : ""}" data-part="${v}">${t}</button>`).join("")}</div>`;
+        <div class="small muted" style="margin:-2px 2px 12px">${sum.seen ? T`푼 표현 ${sum.seen}/${sum.total} · 정답률 ${sum.accuracy}%${sum.wrong ? T` · 틀린 표현 ${sum.wrong}개` : ""}` : T`아래에서 Part·주제를 고르면 그 범위로 퀴즈가 나와요`}</div>
+        <div class="seg" style="margin-bottom:10px">${[[0, T`전체`], [2, "Part 2"], [3, "Part 3"], [4, "Part 4"]].map(([v, t]) => `<button class="${part === v ? "on" : ""}" data-part="${v}">${t}</button>`).join("")}</div>`;
     }
-    const body = `${topBar(cfg.title, { back: true, sub: cfg.sub() })}
+    const body = T`${topBar(cfg.title, { back: true, sub: cfg.sub() })}
       ${quiz}
       <div class="tip-box" style="margin-bottom:14px">${cfg.tip()}</div>
-      <div class="row" style="margin-bottom:12px"><button class="btn sm" data-p1play>${ico("headphones")}이 목록 연속 듣기</button><span class="spacer"></span><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>
-      <div class="chips scroll" style="margin-bottom:12px"><button class="chip ${g === "all" ? "on" : ""}" data-g="all">전체 ${list.length && g === "all" ? list.length : ""}</button>${wrongN ? `<button class="chip ${g === "wrong" ? "on" : ""}" data-g="wrong">틀린 표현 ${wrongN}</button>` : ""}${groups.map((x) => `<button class="chip ${g === x ? "on" : ""}" data-g="${esc(x)}">${esc(x)}</button>`).join("")}</div>
+      <div class="row" style="margin-bottom:12px"><button class="btn sm" data-p1play>${ico("headphones")}이 목록 연속 듣기</button><span class="spacer"></span><button class="btn ghost sm" data-ko>${showKo ? T`해석 가리기` : T`해석 보기`}</button></div>
+      <div class="chips scroll" style="margin-bottom:12px"><button class="chip ${g === "all" ? "on" : ""}" data-g="all">전체 ${list.length && g === "all" ? list.length : ""}</button>${wrongN ? T`<button class="chip ${g === "wrong" ? "on" : ""}" data-g="wrong">틀린 표현 ${wrongN}</button>` : ""}${groups.map((x) => `<button class="chip ${g === x ? "on" : ""}" data-g="${esc(x)}">${esc(x)}</button>`).join("")}</div>
       <div class="wlist">${shown.map(line).join("")}</div>
-      ${list.length > shown.length ? `<button class="btn ghost block" data-more style="margin-top:12px">더 보기 (${list.length - shown.length}개 남음)</button>` : ""}`;
+      ${list.length > shown.length ? T`<button class="btn ghost block" data-more style="margin-top:12px">더 보기 (${list.length - shown.length}개 남음)</button>` : ""}`;
     shell(kind, body);
     const rerender = () => { ui.exprMore[kind] = 0; vExpr(kind); };
     $app.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => { ui.exprG[kind] = b.dataset.g; rerender(); }));
@@ -1872,11 +1913,11 @@
     let src = items.filter(type === "resp" ? C.canRespond : (p) => !C.splitDialog(p.e));
     const everything = (D.lc || []).filter(type === "resp" ? C.canRespond : (p) => !C.splitDialog(p.e));
     if (src.length < 4) src = everything;
-    if (!src.length) return toast("문제를 만들 표현이 없어요");
+    if (!src.length) return toast(T`문제를 만들 표현이 없어요`);
     const picked = C.lcPick(src, S.lc, count || LCQ_N);
     const pool = everything.length >= 8 ? everything : D.lc;
     const qs = picked.map((p) => (type === "resp" ? C.makeResponse(p) : C.makeLcMeaning(p, pool)));
-    session = { kind: "lcq", type, title: type === "resp" ? "Part 2 응답 고르기" : "듣고 해석 고르기", qs, src, i: 0, answered: null, results: [], from: location.hash };
+    session = { kind: "lcq", type, title: type === "resp" ? T`Part 2 응답 고르기` : T`듣고 해석 고르기`, qs, src, i: 0, answered: null, results: [], from: location.hash };
     enterStudy();
   }
   let lcqSeq = 0;
@@ -1914,33 +1955,33 @@
     const L = "ABCD";
     let qhtml;
     if (q.type === "resp") {
-      qhtml = `<button class="play lg" data-replay style="margin:14px auto 0;width:76px;height:76px" aria-label="다시 듣기">${ico("vol")}</button>
-        ${script ? `<div class="qs en" style="margin-top:12px">${esc(q.prompt)}</div>${ans ? `<div class="qsub">${esc(q.promptKo)}</div>` : ""}` : `<div class="small muted" style="margin-top:10px">질문과 보기 (A)(B)(C)를 듣고 알맞은 응답을 고르세요</div>`}`;
+      qhtml = T`<button class="play lg" data-replay style="margin:14px auto 0;width:76px;height:76px" aria-label="다시 듣기">${ico("vol")}</button>
+        ${script ? `<div class="qs en" style="margin-top:12px">${esc(q.prompt)}</div>${ans ? `<div class="qsub">${esc(q.promptKo)}</div>` : ""}` : T`<div class="small muted" style="margin-top:10px">질문과 보기 (A)(B)(C)를 듣고 알맞은 응답을 고르세요</div>`}`;
     } else {
-      qhtml = `<button class="play lg" data-replay style="margin:14px auto 0;width:76px;height:76px" aria-label="다시 듣기">${ico("vol")}</button>
-        ${script ? `<div class="qs en" style="margin-top:12px">${ans ? hl(p.e) : esc(q.prompt)}</div>` : `<div class="small muted" style="margin-top:10px">문장을 듣고 알맞은 해석을 고르세요</div>`}`;
+      qhtml = T`<button class="play lg" data-replay style="margin:14px auto 0;width:76px;height:76px" aria-label="다시 듣기">${ico("vol")}</button>
+        ${script ? `<div class="qs en" style="margin-top:12px">${ans ? hl(p.e) : esc(q.prompt)}</div>` : T`<div class="small muted" style="margin-top:10px">문장을 듣고 알맞은 해석을 고르세요</div>`}`;
     }
     const opts = `<div class="opts">${q.options.map((o, i) => {
       let cls = "";
       if (ans) cls = i === q.answer ? "right" : i === ans.pick ? "wrong" : "dim";
       if (q.type === "resp") {
-        const txt = script ? `<span class="en">${esc(o.t)}</span>${ans && o.k ? `<span class="small muted" style="display:block;font-weight:500;margin-top:2px">${esc(o.k)}</span>` : ""}` : `<span class="muted">보기 ${L[i]}</span>`;
-        return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${L[i]}</span><span style="flex:1">${txt}</span>${ans ? `<span class="play sm" data-say="${i}" role="button" aria-label="보기 ${L[i]} 듣기">${ico("vol")}</span>` : ""}</button>`;
+        const txt = script ? `<span class="en">${esc(o.t)}</span>${ans && o.k ? `<span class="small muted" style="display:block;font-weight:500;margin-top:2px">${esc(o.k)}</span>` : ""}` : T`<span class="muted">보기 ${L[i]}</span>`;
+        return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${L[i]}</span><span style="flex:1">${txt}</span>${ans ? T`<span class="play sm" data-say="${i}" role="button" aria-label="보기 ${L[i]} 듣기">${ico("vol")}</span>` : ""}</button>`;
       }
       return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${i + 1}</span><span>${esc(o)}</span></button>`;
     }).join("")}</div>`;
     let fb = "";
     if (ans) {
-      fb = `<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? "정답이에요!" : "틀렸어요"}</b>
+      fb = `<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? T`정답이에요!` : T`틀렸어요`}</b>
         ${q.type === "lcm" ? `<div>${esc(p.k)}</div>` : ""}
         <div style="margin-top:6px"><b class="en">${esc(p.key)}</b> ${esc(p.keyKo)}</div>
         ${p.tip ? `<div style="margin-top:6px;color:var(--text-2)">💡 ${esc(p.tip)}</div>` : ""}</div>`;
     }
-    const label = q.type === "resp" ? "Part 2 · 질문에 알맞은 응답은?" : `Part ${p.part === 4 ? 4 : 3} · 들은 문장의 뜻은?`;
-    $app.innerHTML = `<div class="study">${studyTop(s.i, s.qs.length)}
+    const label = q.type === "resp" ? T`Part 2 · 질문에 알맞은 응답은?` : T`Part ${p.part === 4 ? 4 : 3} · 들은 문장의 뜻은?`;
+    $app.innerHTML = T`<div class="study">${studyTop(s.i, s.qs.length)}
       <div class="quiz-q"><div class="qk">${label}</div>${qhtml}</div>
       ${opts}${fb}
-      <div class="study-foot">${ans ? `<button class="btn block" data-next>${s.i + 1 >= s.qs.length ? "결과 보기" : "다음 문제"}</button>` : `<button class="btn ghost block" data-script>${S.settings.lcScript ? "스크립트 숨기고 듣기만" : "스크립트 보면서 풀기"}</button>`}
+      <div class="study-foot">${ans ? `<button class="btn block" data-next>${s.i + 1 >= s.qs.length ? T`결과 보기` : T`다음 문제`}</button>` : `<button class="btn ghost block" data-script>${S.settings.lcScript ? T`스크립트 숨기고 듣기만` : T`스크립트 보면서 풀기`}</button>`}
       <div class="kbd-hint"><kbd>1</kbd>~<kbd>${q.options.length}</kbd> 선택 · <kbd>R</kbd> 다시 듣기 · <kbd>Enter</kbd> 다음</div></div></div>`;
     bindExit();
     const pick = (i) => {
@@ -1979,7 +2020,7 @@
     if (sc) sc.addEventListener("click", () => { S.settings.lcScript = !S.settings.lcScript; save(); lcqSeq += 1; vLcQuiz(); });
     $app.querySelector("[data-replay]").addEventListener("click", () => (ans && q.type === "resp" ? sayExpr(p, $app.querySelector("[data-replay]")) : playLcq(q)));
     if (!ans) setTimeout(() => { if (session === s && s.qs[s.i] === q && !s.answered) playLcq(q); }, 250);
-    if (q.type === "resp") coach("p2", "<b>Part 2</b> 질문 다음에 (A)(B)(C) 세 응답이 차례로 나와요. 질문에 바로 답하지 않고 <b>돌려 말하는 응답</b>('확인해 볼게요', '아직 몰라요')이 정답인 경우가 많아요.");
+    if (q.type === "resp") coach("p2", T`<b>Part 2</b> 질문 다음에 (A)(B)(C) 세 응답이 차례로 나와요. 질문에 바로 답하지 않고 <b>돌려 말하는 응답</b>('확인해 볼게요', '아직 몰라요')이 정답인 경우가 많아요.`);
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
       if (onControl(e)) return;
@@ -2017,14 +2058,14 @@
     return PR;
   }
   const PART_LABEL = { p1: "Part 1", p2: "Part 2", p3: "Part 3", p4: "Part 4", p5: "Part 5", p6: "Part 6", p7: "Part 7" };
-  const LV_LABEL = { 1: "쉬움", 2: "보통", 3: "어려움" };
+  const LV_LABEL = { 1: T`쉬움`, 2: T`보통`, 3: T`어려움` };
   const LETTERS = "ABCD";
   // 실전 화면 공통: 데이터가 없으면 불러온 뒤 다시 그린다
   function needPractice(r, active) {
     if (PR) { prIndex(); return true; }
-    shell(active || "practice", `${topBar("실전 문제", { back: r.name !== "practice" })}<div class="empty">${ico("clock")}<b>문제를 불러오는 중…</b></div>`);
+    shell(active || "practice", T`${topBar(T`실전 문제`, { back: r.name !== "practice" })}<div class="empty">${ico("clock")}<b>문제를 불러오는 중…</b></div>`);
     loadPractice().then(() => { if (route().name === r.name) render(); }).catch(() => {
-      if (route().name === r.name) shell(active || "practice", `${topBar("실전 문제")}<div class="empty">${ico("alert")}<b>문제를 불러오지 못했어요</b>앱을 다시 열어 주세요</div>`);
+      if (route().name === r.name) shell(active || "practice", T`${topBar(T`실전 문제`)}<div class="empty">${ico("alert")}<b>문제를 불러오지 못했어요</b>앱을 다시 열어 주세요</div>`);
     });
     return false;
   }
@@ -2064,7 +2105,7 @@
     let fb = "";
     if (shown) {
       const ok = pick === q.a;
-      fb = `<div class="feedback ${ok ? "ok" : "bad"}"><b class="t">${ok ? "정답" : pick == null ? `정답 ${LETTERS[q.a]} (풀지 않음)` : `오답 · 정답 ${LETTERS[q.a]}`}</b>${q.type || q.kind ? `<span class="badge pos" style="margin-left:6px">${esc(q.type || q.kind)}</span>` : ""}<div style="margin-top:6px">${esc(q.exp || "")}</div>${o.evBtn && q.ev ? `<button class="btn ghost sm" style="margin-top:8px" data-ev="${j}">${ico("eye")}근거 위치 보기</button>` : ""}</div>`;
+      fb = `<div class="feedback ${ok ? "ok" : "bad"}"><b class="t">${ok ? T`정답` : pick == null ? T`정답 ${LETTERS[q.a]} (풀지 않음)` : T`오답 · 정답 ${LETTERS[q.a]}`}</b>${q.type || q.kind ? `<span class="badge pos" style="margin-left:6px">${esc(q.type || q.kind)}</span>` : ""}<div style="margin-top:6px">${esc(q.exp || "")}</div>${o.evBtn && q.ev ? T`<button class="btn ghost sm" style="margin-top:8px" data-ev="${j}">${ico("eye")}근거 위치 보기</button>` : ""}</div>`;
     }
     return `<div class="pq" id="pq-${j}">${head}<div class="opts">${opts}</div>${fb}</div>`;
   }
@@ -2118,33 +2159,33 @@
     Sound.stop();
     playBtn(false);
   }
-  const SPK = { W: "여", M: "남", W2: "여2", M2: "남2" };
+  const SPK = { W: T`여`, M: T`남`, W2: T`여2`, M2: T`남2` };
   // ── Part 1: 사진 + 보기 4문장 (풀 때는 듣기만, 채점 뒤 문장·해석·함정) ──
   function p1Html(set, st, mode) {
     const review = mode === "review";
     const showKo = ui.prKo !== false;
     const q = set.qs[0];
     const pick = st.picks[0];
-    const photo = `<div class="p1photo"><img src="${esc(set.img)}" alt="Part 1 사진${st.base ? ` ${st.base}번` : ""}" data-zoom></div>`;
-    const player = `<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${st.base && mode !== "exam" ? `${st.base}번 · ` : ""}사진을 가장 잘 묘사한 문장은?</b><div class="small muted">${st.base ? "" : `${LV_LABEL[set.lv] || ""} · `}<span class="lp-prog">보기 4문장</span></div></div></div>`;
+    const photo = T`<div class="p1photo"><img src="${esc(set.img)}" alt="Part 1 사진${st.base ? T` ${st.base}번` : ""}" data-zoom></div>`;
+    const player = T`<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${st.base && mode !== "exam" ? T`${st.base}번 · ` : ""}사진을 가장 잘 묘사한 문장은?</b><div class="small muted">${st.base ? "" : `${LV_LABEL[set.lv] || ""} · `}<span class="lp-prog">보기 4문장</span></div></div></div>`;
     if (!review) {
-      return `${photo}${player}<div class="pq" id="pq-0"><div class="opts">${q.o.map((x, i) => `<button class="opt sm ${pick === i ? "sel" : ""}" data-q="0" data-o="${i}" data-pline="${i}"><span class="on">${LETTERS[i]}</span><span class="muted">보기 ${LETTERS[i]}</span></button>`).join("")}</div></div>
+      return T`${photo}${player}<div class="pq" id="pq-0"><div class="opts">${q.o.map((x, i) => T`<button class="opt sm ${pick === i ? "sel" : ""}" data-q="0" data-o="${i}" data-pline="${i}"><span class="on">${LETTERS[i]}</span><span class="muted">보기 ${LETTERS[i]}</span></button>`).join("")}</div></div>
         <div class="small muted" style="margin-top:6px">(A)~(D) 네 문장을 듣고 사진과 맞는 것을 고르세요. 문장은 채점 뒤에 보여 드려요.</div>`;
     }
     const ok = pick === q.a;
     const lines = q.o.map((x, i) => `<div class="opt sm sline ${i === q.a ? "right" : i === pick ? "wrong" : "dim"}" data-line="${i}" role="button"><span class="on">${LETTERS[i]}</span><span class="spacer"><span class="en">${esc(x)}</span>${showKo ? `<span class="ko">${esc(q.ko[i])}</span>` : ""}</span>${ico("vol")}</div>`).join("");
-    return `${photo}${player}<div class="pq" id="pq-0"><div class="opts">${lines}</div>
-      <div class="feedback ${ok ? "ok" : "bad"}"><b class="t">${ok ? "정답" : pick == null ? `정답 ${LETTERS[q.a]} (풀지 않음)` : `오답 · 정답 ${LETTERS[q.a]}`}</b>${q.type ? `<span class="badge pos" style="margin-left:6px">함정: ${esc(q.type)}</span>` : ""}<div style="margin-top:6px">${esc(q.exp || "")}</div></div></div>
-      <div class="row" style="justify-content:space-between;margin-top:8px"><span class="small muted">문장을 누르면 그 문장만 다시 들어요</span><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>`;
+    return T`${photo}${player}<div class="pq" id="pq-0"><div class="opts">${lines}</div>
+      <div class="feedback ${ok ? "ok" : "bad"}"><b class="t">${ok ? T`정답` : pick == null ? T`정답 ${LETTERS[q.a]} (풀지 않음)` : T`오답 · 정답 ${LETTERS[q.a]}`}</b>${q.type ? T`<span class="badge pos" style="margin-left:6px">함정: ${esc(q.type)}</span>` : ""}<div style="margin-top:6px">${esc(q.exp || "")}</div></div></div>
+      <div class="row" style="justify-content:space-between;margin-top:8px"><span class="small muted">문장을 누르면 그 문장만 다시 들어요</span><button class="btn ghost sm" data-ko>${showKo ? T`해석 가리기` : T`해석 보기`}</button></div>`;
   }
   function p34Html(set, st, mode) {
     const review = mode === "review";
     const showKo = ui.prKo !== false;
     const hiQ = st.evQ;
     const evSet = new Set(hiQ != null ? set.qs[hiQ].ev : []);
-    const label = set.part === 3 ? `${esc(set.topic || "")}${set.lines.some((l) => /2$/.test(l.sp)) ? " · 3인 대화" : ""}` : esc(set.talk || "");
-    const player = `<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${set.part === 3 ? "대화" : "담화"} 듣기</b><div class="small muted">${mode === "exam" ? "" : `${label} · ${LV_LABEL[set.lv] || ""} · `}<span class="lp-prog">${set.lines.length}문장</span></div></div>${review ? `<button class="btn ghost sm" data-shadow>${ico("repeat")}따라 말하기</button>` : ""}</div>`;
-    const script = review ? `<div class="section-h" style="margin-top:18px"><h2>스크립트</h2><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>
+    const label = set.part === 3 ? `${esc(set.topic || "")}${set.lines.some((l) => /2$/.test(l.sp)) ? T` · 3인 대화` : ""}` : esc(set.talk || "");
+    const player = T`<div class="lplayer"><button class="play lg ${linePlaying ? "playing" : ""}" data-play34 aria-label="재생">${ico(linePlaying ? "pause" : "play")}</button><div class="spacer"><b>${set.part === 3 ? T`대화` : T`담화`} 듣기</b><div class="small muted">${mode === "exam" ? "" : `${label} · ${LV_LABEL[set.lv] || ""} · `}<span class="lp-prog">${set.lines.length}문장</span></div></div>${review ? T`<button class="btn ghost sm" data-shadow>${ico("repeat")}따라 말하기</button>` : ""}</div>`;
+    const script = review ? T`<div class="section-h" style="margin-top:18px"><h2>스크립트</h2><button class="btn ghost sm" data-ko>${showKo ? T`해석 가리기` : T`해석 보기`}</button></div>
       <div class="script">${set.lines.map((l, i) => `<div class="sline ${evSet.has(i) ? "ev" : ""}" data-line="${i}"><span class="spk spk-${l.sp[0]}">${SPK[l.sp] || ""}</span><div class="spacer"><div class="en">${esc(l.en)}</div>${showKo ? `<div class="ko">${esc(l.ko)}</div>` : ""}</div></div>`).join("")}</div>
       <div class="small muted" style="margin-top:6px">문장을 누르면 그 문장부터 다시 들어요 · 근거 위치 보기를 누르면 정답 근거 문장이 표시돼요</div>` : "";
     return `${player}${graphicHtml(set.graphic)}<div class="pqs">${set.qs.map((q, j) => qBlock(q, j, st.picks[j], mode, { evBtn: true, num: st.base ? st.base + j : undefined })).join("")}</div>${script}`;
@@ -2161,8 +2202,8 @@
       return `<span class="blank ${ok ? "ok" : "bad"}">(${label}) ${esc(q.o[q.a])}</span>`;
     });
     return `<div class="doc"><div class="doc-k">${esc(set.doc)}${set.title ? ` · ${esc(set.title)}` : ""}</div>${set.paras.map((p, i) => `<p class="en">${fill(p)}</p>${review && showKo ? `<p class="ko">${esc(set.ko[i])}</p>` : ""}`).join("")}</div>
-      ${review ? `<div class="row" style="justify-content:flex-end;margin-top:8px"><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>` : ""}
-      <div class="pqs">${set.qs.map((q, j) => qBlock(Object.assign({}, q, { q: q.kind === "문장 삽입" ? "빈칸에 들어갈 알맞은 문장은?" : "" }), j, st.picks[j], mode, { num: st.base ? st.base + j : `(${q.n})` })).join("")}</div>`;
+      ${review ? `<div class="row" style="justify-content:flex-end;margin-top:8px"><button class="btn ghost sm" data-ko>${showKo ? T`해석 가리기` : T`해석 보기`}</button></div>` : ""}
+      <div class="pqs">${set.qs.map((q, j) => qBlock(Object.assign({}, q, { q: q.kind === "문장 삽입" ? T`빈칸에 들어갈 알맞은 문장은?` : "" }), j, st.picks[j], mode, { num: st.base ? st.base + j : `(${q.n})` })).join("")}</div>`;
   }
   // ── Part 7 ── 근거 구절을 <mark> 로 표시
   function markEv(text, marks) {
@@ -2192,9 +2233,9 @@
         }
         return `<p class="en">${body}</p>${review && showKo ? `<p class="ko">${esc(d.ko[pi])}</p>` : ""}`;
       }).join("");
-      return `<div class="doc"><div class="doc-k">${set.docs.length > 1 ? `지문 ${di + 1} · ` : ""}${esc(d.doc)}${d.title ? ` · ${esc(d.title)}` : ""}</div>${(d.meta || []).length ? `<div class="doc-meta en">${d.meta.map(esc).join("<br>")}</div>` : ""}${paras}${graphicHtml(d.graphic)}</div>`;
+      return `<div class="doc"><div class="doc-k">${set.docs.length > 1 ? T`지문 ${di + 1} · ` : ""}${esc(d.doc)}${d.title ? ` · ${esc(d.title)}` : ""}</div>${(d.meta || []).length ? `<div class="doc-meta en">${d.meta.map(esc).join("<br>")}</div>` : ""}${paras}${graphicHtml(d.graphic)}</div>`;
     }).join("");
-    return `<div class="p7"><div class="p7-docs">${docs}${review ? `<div class="row" style="justify-content:flex-end"><button class="btn ghost sm" data-ko>${showKo ? "해석 가리기" : "해석 보기"}</button></div>` : ""}</div>
+    return `<div class="p7"><div class="p7-docs">${docs}${review ? `<div class="row" style="justify-content:flex-end"><button class="btn ghost sm" data-ko>${showKo ? T`해석 가리기` : T`해석 보기`}</button></div>` : ""}</div>
       <div class="p7-qs pqs">${set.qs.map((q, j) => qBlock(q, j, st.picks[j], mode, { evBtn: true, num: st.base ? st.base + j : undefined })).join("")}</div></div>`;
   }
   function setHtml(part, set, st, mode) {
@@ -2219,7 +2260,7 @@
       if (pb) pb.addEventListener("click", () => (pb.classList.contains("playing") ? stopLines() : playLines(set, 0)));
       $app.querySelectorAll(".sline").forEach((el) => el.addEventListener("click", () => playLines(set, +el.dataset.line, { once: true })));
       const im = $app.querySelector("[data-zoom]");
-      if (im) im.addEventListener("click", () => modal(`<img src="${esc(set.img)}" alt="" style="width:100%;border-radius:10px;display:block"><button class="btn ghost block" data-close style="margin-top:10px">닫기</button>`));
+      if (im) im.addEventListener("click", () => modal(T`<img src="${esc(set.img)}" alt="" style="width:100%;border-radius:10px;display:block"><button class="btn ghost block" data-close style="margin-top:10px">닫기</button>`));
     }
     if (part === "p3" || part === "p4") {
       const pb = $app.querySelector("[data-play34]");
@@ -2241,49 +2282,49 @@
     const weak = C.weakTypes(S.qt).slice(0, 5);
     const gTotal = (PR.grammar || []).reduce((n, t) => n + t.qs.filter((q) => !q.mock).length, 0);
     const gDone = Object.keys(S.gq).filter((k) => PR._g.has(k)).length;
-    const body = `${topBar("실전 문제", { sub: `Part ${(PR.p1 || []).length ? 1 : 2}~7 · 하프 모의고사 · 예상 점수` })}
+    const body = T`${topBar(T`실전 문제`, { sub: T`Part ${(PR.p1 || []).length ? 1 : 2}~7 · 하프 모의고사 · 예상 점수` })}
       <section class="score-card">
         <div class="eyebrow">예상 점수 (추정)</div>
-        ${pred ? `<div class="big">${pred.total}<small>점</small></div><div class="meta"><div><b>${pred.lc}</b>LC</div><div><b>${pred.rc}</b>RC</div><div><b>${pred.nLc + pred.nRc}</b>최근 문제</div></div>`
-          : S.diag ? `<div class="big">${S.diag.total}<small>점</small></div><div class="meta"><div><b>${S.diag.lc}</b>LC</div><div><b>${S.diag.rc}</b>RC</div><div><b>진단</b>20문제 기준</div></div><div class="small" style="opacity:.85;margin-top:8px">LC·RC 각 30문제를 풀면 더 정확한 예상 점수로 바뀌어요 (지금 ${Math.min(nLc, 30)}/30 · ${Math.min(nRc, 30)}/30)</div>`
-          : `<div class="big" style="font-size:22px">LC·RC 각 30문제를 풀면<br>예상 점수를 알려 드려요</div><div class="meta"><div><b>${Math.min(nLc, 30)}/30</b>LC</div><div><b>${Math.min(nRc, 30)}/30</b>RC</div></div>`}
-        <a class="btn block" href="#/mock" style="margin-top:14px">${ico("clock")}모의고사 (${(PR.full || []).length ? `정규 ${PR.full.length}회 · ` : ""}하프 ${(PR.mocks || []).length}회)</a>
+        ${pred ? T`<div class="big">${pred.total}<small>점</small></div><div class="meta"><div><b>${pred.lc}</b>LC</div><div><b>${pred.rc}</b>RC</div><div><b>${pred.nLc + pred.nRc}</b>최근 문제</div></div>`
+          : S.diag ? T`<div class="big">${S.diag.total}<small>점</small></div><div class="meta"><div><b>${S.diag.lc}</b>LC</div><div><b>${S.diag.rc}</b>RC</div><div><b>진단</b>20문제 기준</div></div><div class="small" style="opacity:.85;margin-top:8px">LC·RC 각 30문제를 풀면 더 정확한 예상 점수로 바뀌어요 (지금 ${Math.min(nLc, 30)}/30 · ${Math.min(nRc, 30)}/30)</div>`
+          : T`<div class="big" style="font-size:22px">LC·RC 각 30문제를 풀면<br>예상 점수를 알려 드려요</div><div class="meta"><div><b>${Math.min(nLc, 30)}/30</b>LC</div><div><b>${Math.min(nRc, 30)}/30</b>RC</div></div>`}
+        <a class="btn block" href="#/mock" style="margin-top:14px">${ico("clock")}모의고사 (${(PR.full || []).length ? T`정규 ${PR.full.length}회 · ` : ""}하프 ${(PR.mocks || []).length}회)</a>
       </section>
       <div class="section-h"><h2>LC 듣기</h2></div>
       <div class="grid2">
-        ${practicePool("p1").length ? tile("#/sets/p1", "camera", "c-gold", "Part 1 사진 묘사", `${solved("p1")} / ${practicePool("p1").length}문제`) : ""}
-        ${btnTile('data-pgo="p2"', "ear", "c-purple", "Part 2 응답", `질문 듣고 3지선다 · ${(D.lc || []).filter(C.canRespond).length}문항`)}
-        ${tile("#/sets/p3", "headphones", "c-blue", "Part 3 대화", `${solved("p3")} / ${practicePool("p3").length}세트`)}
-        ${tile("#/sets/p4", "vol", "c-green", "Part 4 담화", `${solved("p4")} / ${practicePool("p4").length}세트`)}
-        ${tile("#/dict", "pencil", "c-orange", "받아쓰기", "듣고 쓰기 · 따라 말하기")}
+        ${practicePool("p1").length ? tile("#/sets/p1", "camera", "c-gold", T`Part 1 사진 묘사`, T`${solved("p1")} / ${practicePool("p1").length}문제`) : ""}
+        ${btnTile('data-pgo="p2"', "ear", "c-purple", T`Part 2 응답`, T`질문 듣고 3지선다 · ${(D.lc || []).filter(C.canRespond).length}문항`)}
+        ${tile("#/sets/p3", "headphones", "c-blue", T`Part 3 대화`, T`${solved("p3")} / ${practicePool("p3").length}세트`)}
+        ${tile("#/sets/p4", "vol", "c-green", T`Part 4 담화`, T`${solved("p4")} / ${practicePool("p4").length}세트`)}
+        ${tile("#/dict", "pencil", "c-orange", T`받아쓰기`, T`듣고 쓰기 · 따라 말하기`)}
       </div>
       <div class="section-h"><h2>RC 읽기</h2></div>
       <div class="grid2">
-        ${tile("#/grammar", "book", "c-blue", "Part 5 문법", `${(PR.grammar || []).length}개 주제 · ${gDone}/${gTotal}문제`)}
-        ${btnTile('data-pgo="p5w"', "zap", "c-purple", "Part 5 어휘 20제", "외운 단어로 실전 문제")}
-        ${tile("#/sets/p6", "layers", "c-orange", "Part 6 장문 빈칸", `${solved("p6")} / ${practicePool("p6").length}지문`)}
-        ${tile("#/sets/p7", "list", "c-green", "Part 7 독해", `${solved("p7")} / ${practicePool("p7").length}세트`)}
+        ${tile("#/grammar", "book", "c-blue", T`Part 5 문법`, T`${(PR.grammar || []).length}개 주제 · ${gDone}/${gTotal}문제`)}
+        ${btnTile('data-pgo="p5w"', "zap", "c-purple", T`Part 5 어휘 20제`, T`외운 단어로 실전 문제`)}
+        ${tile("#/sets/p6", "layers", "c-orange", T`Part 6 장문 빈칸`, T`${solved("p6")} / ${practicePool("p6").length}지문`)}
+        ${tile("#/sets/p7", "list", "c-green", T`Part 7 독해`, T`${solved("p7")} / ${practicePool("p7").length}세트`)}
       </div>
       <div class="section-h"><h2>표현 · 특훈</h2></div>
       <div class="grid2">
-        ${(D.lc || []).length ? tile("#/lc", "ear", "c-purple", "LC 빈출 표현", `Part 2~4 표현 ${D.lc.length}개`) : ""}
-        ${tile("#/part1", "camera", "c-green", "Part 1 사진 표현", `사진 묘사 필수 ${D.part1.length}문장`)}
-        ${tile("#/conf", "split", "c-gold", "혼동 어휘", `헷갈리는 단어 ${D.conf.length}세트`)}
-        ${btnTile('data-pgo="para"', "swap", "c-orange", "Part 7 동의어 20제", "문맥 속 바꿔 쓰기")}
-        ${btnTile('data-pgo="listen"', "headphones", "c-blue", "단어 듣기 모드", "출퇴근길 자동 재생")}
+        ${(D.lc || []).length ? tile("#/lc", "ear", "c-purple", T`LC 빈출 표현`, T`Part 2~4 표현 ${D.lc.length}개`) : ""}
+        ${tile("#/part1", "camera", "c-green", T`Part 1 사진 표현`, T`사진 묘사 필수 ${D.part1.length}문장`)}
+        ${tile("#/conf", "split", "c-gold", T`혼동 어휘`, T`헷갈리는 단어 ${D.conf.length}세트`)}
+        ${btnTile('data-pgo="para"', "swap", "c-orange", T`Part 7 동의어 20제`, T`문맥 속 바꿔 쓰기`)}
+        ${btnTile('data-pgo="listen"', "headphones", "c-blue", T`단어 듣기 모드`, T`출퇴근길 자동 재생`)}
       </div>
       <div class="section-h"><h2>약점 분석</h2><span class="small muted">5문제 이상 푼 유형</span></div>
-      ${weak.length ? `<div class="card">${weak.map((w) => `<div class="weak"><div class="spacer"><b>${PART_LABEL[w.part] || w.part} · ${esc(w.type)}</b><div class="small muted">${w.ok}/${w.n} 정답</div></div><div class="wbar"><i style="width:${w.pct}%;background:${w.pct >= 80 ? "var(--ok)" : w.pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${w.pct}%</b>${["p1", "p2", "p3", "p4", "p5", "p6", "p7"].includes(w.part) ? `<button class="btn ghost sm" data-weak="${esc(w.key)}">연습</button>` : ""}</div>`).join("")}</div>`
-        : `<div class="empty" style="padding:20px">${ico("gauge")}<b>아직 데이터가 부족해요</b>문제를 풀면 유형별 정답률과 약점을 알려 드려요</div>`}
+      ${weak.length ? `<div class="card">${weak.map((w) => T`<div class="weak"><div class="spacer"><b>${PART_LABEL[w.part] || w.part} · ${esc(w.type)}</b><div class="small muted">${w.ok}/${w.n} 정답</div></div><div class="wbar"><i style="width:${w.pct}%;background:${w.pct >= 80 ? "var(--ok)" : w.pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${w.pct}%</b>${["p1", "p2", "p3", "p4", "p5", "p6", "p7"].includes(w.part) ? T`<button class="btn ghost sm" data-weak="${esc(w.key)}">연습</button>` : ""}</div>`).join("")}</div>`
+        : T`<div class="empty" style="padding:20px">${ico("gauge")}<b>아직 데이터가 부족해요</b>문제를 풀면 유형별 정답률과 약점을 알려 드려요</div>`}
       <p class="small muted" style="margin-top:14px">모든 문제는 이 앱에서 새로 만든 실전형 문제입니다(기출 문제 아님). 예상 점수는 최근 정답률로 계산한 참고용 추정치예요.</p>`;
     shell("practice", body);
-    coach("practice", "<b>실전 탭</b> Part별 문제와 하프 모의고사가 모여 있어요. LC·RC를 각각 30문제 이상 풀면 <b>예상 점수</b>를 알려 드려요. 처음이라면 Part 2 응답이나 Part 5 문법부터 가볍게 시작해 보세요.");
+    coach("practice", T`<b>실전 탭</b> Part별 문제와 하프 모의고사가 모여 있어요. LC·RC를 각각 30문제 이상 풀면 <b>예상 점수</b>를 알려 드려요. 처음이라면 Part 2 응답이나 Part 5 문법부터 가볍게 시작해 보세요.`);
     $app.querySelectorAll("[data-pgo]").forEach((b) => b.addEventListener("click", () => {
       if (b.dataset.pgo === "p2") return startLcQuiz("resp", D.lc || []);
       if (b.dataset.pgo === "para" || b.dataset.pgo === "listen") return homeGo(b.dataset.pgo, C.todayPlan(pool(), S.words, S.profile.daily, today()), []);
       const P = pool();
       const seen = P.filter((w) => st(w.id) && st(w.id).n);
-      startQuiz(C.shuffle(seen.length >= 20 ? seen : P.slice(0, 200)).slice(0, 20), "part5", { title: "Part 5 어휘 20제" });
+      startQuiz(C.shuffle(seen.length >= 20 ? seen : P.slice(0, 200)).slice(0, 20), "part5", { title: T`Part 5 어휘 20제` });
     }));
     $app.querySelectorAll("[data-weak]").forEach((b) => b.addEventListener("click", () => practiceWeak(b.dataset.weak)));
   }
@@ -2297,11 +2338,11 @@
       if (t) return go(`#/grammar/${t.id}`);
       const P = pool();
       const seen = P.filter((w) => st(w.id) && st(w.id).n);
-      return startQuiz(C.shuffle(seen.length >= 20 ? seen : P.slice(0, 200)).slice(0, 20), "part5", { title: "Part 5 어휘 20제" });
+      return startQuiz(C.shuffle(seen.length >= 20 ? seen : P.slice(0, 200)).slice(0, 20), "part5", { title: T`Part 5 어휘 20제` });
     }
     const sets = practicePool(part).filter((s) => s.qs.some((q) => (q.type || q.kind) === type));
-    if (!sets.length) return toast("연습할 세트가 없어요");
-    startSets(part, pickSets(sets, 3), `${PART_LABEL[part]} · ${type} 집중`);
+    if (!sets.length) return toast(T`연습할 세트가 없어요`);
+    startSets(part, pickSets(sets, 3), T`${PART_LABEL[part]} · ${type} 집중`);
   }
   // 안 푼 세트 → 틀린 문제가 있던 세트 → 오래전에 푼 세트 순으로 고른다
   function pickSets(sets, n) {
@@ -2313,8 +2354,8 @@
   }
 
   // ═════════════ 세트 목록 (Part 3·4·6·7) ═════════════
-  const SET_TITLE = { p1: "Part 1 사진 묘사", p3: "Part 3 대화", p4: "Part 4 담화", p6: "Part 6 장문 빈칸", p7: "Part 7 독해" };
-  const catOf = (part, s) => (part === "p1" ? s.kind : part === "p3" ? s.topic : part === "p4" ? s.talk : part === "p6" ? s.doc : { single: "단일 지문", double: "이중 지문", triple: "삼중 지문" }[s.kind]);
+  const SET_TITLE = { p1: T`Part 1 사진 묘사`, p3: T`Part 3 대화`, p4: T`Part 4 담화`, p6: T`Part 6 장문 빈칸`, p7: T`Part 7 독해` };
+  const catOf = (part, s) => (part === "p1" ? s.kind : part === "p3" ? s.topic : part === "p4" ? s.talk : part === "p6" ? s.doc : { single: T`단일 지문`, double: T`이중 지문`, triple: T`삼중 지문` }[s.kind]);
   function vSets(r) {
     if (!needPractice(r)) return;
     const part = ["p1", "p3", "p4", "p6", "p7"].includes(r.arg) && (r.arg !== "p1" || (PR.p1 || []).length) ? r.arg : "p3";
@@ -2323,20 +2364,20 @@
     const f = ui.setF[part] || { cat: "all", lv: 0 };
     const cats = Array.from(new Set(all.map((s) => catOf(part, s))));
     const list = all.filter((s) => (f.cat === "all" || (f.cat === "new" ? !S.prac[s.id] : f.cat === "wrong" ? S.prac[s.id] && S.prac[s.id].ok < S.prac[s.id].n : catOf(part, s) === f.cat)) && (!f.lv || s.lv === f.lv));
-    const desc = { p1: "사진을 먼저 보고 사람의 동작·사물의 상태·위치를 미리 떠올리세요. 사람이 없는 사진에서 'is being p.p.'(지금 ~되는 중)는 거의 항상 오답이에요.", p3: "대화를 듣기 전에 문제를 먼저 읽어 두세요. 채점 후 스크립트에서 정답 근거 문장을 보여 드려요.", p4: "첫 문장에서 담화 종류와 장소를 잡으세요. 채점 후 문장마다 다시 듣고 따라 말할 수 있어요.", p6: "빈칸 앞뒤만 보지 말고 문맥(시제·흐름)을 보세요. 문장 삽입은 앞뒤 문장과의 연결이 핵심이에요.", p7: "문제를 먼저 읽고 지문에서 근거를 찾으세요. 채점 후 근거 문장을 지문에 표시해 드려요." }[part];
+    const desc = { p1: T`사진을 먼저 보고 사람의 동작·사물의 상태·위치를 미리 떠올리세요. 사람이 없는 사진에서 'is being p.p.'(지금 ~되는 중)는 거의 항상 오답이에요.`, p3: T`대화를 듣기 전에 문제를 먼저 읽어 두세요. 채점 후 스크립트에서 정답 근거 문장을 보여 드려요.`, p4: T`첫 문장에서 담화 종류와 장소를 잡으세요. 채점 후 문장마다 다시 듣고 따라 말할 수 있어요.`, p6: T`빈칸 앞뒤만 보지 말고 문맥(시제·흐름)을 보세요. 문장 삽입은 앞뒤 문장과의 연결이 핵심이에요.`, p7: T`문제를 먼저 읽고 지문에서 근거를 찾으세요. 채점 후 근거 문장을 지문에 표시해 드려요.` }[part];
     const preview = (s) => part === "p1" ? s.setting : part === "p3" || part === "p4" ? s.lines[0].en : part === "p6" ? s.paras.find((p) => p.length > 30) || s.paras[0] : s.docs[0].paras[0];
     const row = (s) => {
       const rec = S.prac[s.id];
-      return `<button class="witem" data-set="${s.id}" style="align-items:flex-start">${part === "p1" ? `<img class="p1thumb" src="${esc(s.img)}" alt="" loading="lazy">` : ""}<div class="wbody"><div class="small" style="font-weight:700;color:var(--text-2)">${esc(catOf(part, s))} · ${LV_LABEL[s.lv]}${part === "p7" ? ` · ${s.docs.map((d) => d.doc).join(" + ")}` : ""}${part === "p1" ? "" : ` · ${s.qs.length}문제`}</div><div class="wm en" style="margin-top:2px">${esc(preview(s).replace(/\{\d\}/g, "____"))}</div></div>${rec ? `<span class="badge ${rec.ok === rec.n ? "ok" : "bad"}">${rec.ok}/${rec.n}</span>` : ""}</button>`;
+      return `<button class="witem" data-set="${s.id}" style="align-items:flex-start">${part === "p1" ? `<img class="p1thumb" src="${esc(s.img)}" alt="" loading="lazy">` : ""}<div class="wbody"><div class="small" style="font-weight:700;color:var(--text-2)">${esc(catOf(part, s))} · ${LV_LABEL[s.lv]}${part === "p7" ? ` · ${s.docs.map((d) => d.doc).join(" + ")}` : ""}${part === "p1" ? "" : T` · ${s.qs.length}문제`}</div><div class="wm en" style="margin-top:2px">${esc(preview(s).replace(/\{\d\}/g, "____"))}</div></div>${rec ? `<span class="badge ${rec.ok === rec.n ? "ok" : "bad"}">${rec.ok}/${rec.n}</span>` : ""}</button>`;
     };
     const solvedN = all.filter((s) => S.prac[s.id]).length;
-    const body = `${topBar(SET_TITLE[part], { back: true, sub: part === "p1" ? `${all.length}문제 · 푼 문제 ${solvedN}` : `${all.length}${part === "p6" ? "지문" : "세트"} · 푼 세트 ${solvedN}` })}
+    const body = T`${topBar(SET_TITLE[part], { back: true, sub: part === "p1" ? T`${all.length}문제 · 푼 문제 ${solvedN}` : T`${all.length}${part === "p6" ? T`지문` : T`세트`} · 푼 세트 ${solvedN}` })}
       <div class="tip-box" style="margin-bottom:12px">${desc}</div>
-      <button class="btn block" data-run style="margin-bottom:${part === "p6" || part === "p7" ? 8 : 12}px" ${list.length ? "" : "disabled"}>${ico("play")}${part === "p1" ? "6문제" : part === "p7" ? "2세트" : "3세트"} 이어 풀기</button>
-      ${part === "p6" || part === "p7" ? `<button class="btn ghost block" data-run-timed style="margin-bottom:12px" ${list.length ? "" : "disabled"}>${ico("clock")}실전 시간으로 풀기 · ${part === "p6" ? "지문당 2분" : "문항당 1분"}${locked() ? ` ${ico("lock")}` : ""}</button>` : ""}
-      <div class="seg" style="margin-bottom:10px">${[[0, "전체"], [1, "쉬움"], [2, "보통"], [3, "어려움"]].map(([v, t]) => `<button class="${f.lv === v ? "on" : ""}" data-lv="${v}">${t}</button>`).join("")}</div>
-      <div class="chips scroll" style="margin-bottom:12px">${[["all", "전체"], ["new", "안 푼 것"], ["wrong", "틀린 것"]].concat(cats.map((c) => [c, c])).map(([v, t]) => `<button class="chip ${f.cat === v ? "on" : ""}" data-cat="${esc(v)}">${esc(t)}</button>`).join("")}</div>
-      ${list.length ? `<div class="wlist">${list.map(row).join("")}</div>` : `<div class="empty">${ico("check")}<b>조건에 맞는 세트가 없어요</b></div>`}`;
+      <button class="btn block" data-run style="margin-bottom:${part === "p6" || part === "p7" ? 8 : 12}px" ${list.length ? "" : "disabled"}>${ico("play")}${part === "p1" ? T`6문제` : part === "p7" ? T`2세트` : T`3세트`} 이어 풀기</button>
+      ${part === "p6" || part === "p7" ? T`<button class="btn ghost block" data-run-timed style="margin-bottom:12px" ${list.length ? "" : "disabled"}>${ico("clock")}실전 시간으로 풀기 · ${part === "p6" ? T`지문당 2분` : T`문항당 1분`}${locked() ? ` ${ico("lock")}` : ""}</button>` : ""}
+      <div class="seg" style="margin-bottom:10px">${[[0, T`전체`], [1, T`쉬움`], [2, T`보통`], [3, T`어려움`]].map(([v, t]) => `<button class="${f.lv === v ? "on" : ""}" data-lv="${v}">${t}</button>`).join("")}</div>
+      <div class="chips scroll" style="margin-bottom:12px">${[["all", T`전체`], ["new", T`안 푼 것`], ["wrong", T`틀린 것`]].concat(cats.map((c) => [c, c])).map(([v, t]) => `<button class="chip ${f.cat === v ? "on" : ""}" data-cat="${esc(v)}">${esc(t)}</button>`).join("")}</div>
+      ${list.length ? `<div class="wlist">${list.map(row).join("")}</div>` : T`<div class="empty">${ico("check")}<b>조건에 맞는 세트가 없어요</b></div>`}`;
     shell("practice", body);
     const set = (patch) => { ui.setF[part] = Object.assign({}, f, patch); vSets(r); };
     $app.querySelectorAll("[data-lv]").forEach((b) => b.addEventListener("click", () => set({ lv: +b.dataset.lv })));
@@ -2345,14 +2386,14 @@
     const run = $app.querySelector("[data-run]");
     if (run) run.addEventListener("click", () => startSets(part, pickSets(list, part === "p1" ? 6 : part === "p7" ? 2 : 3), SET_TITLE[part]));
     const tr = $app.querySelector("[data-run-timed]");
-    if (tr) tr.addEventListener("click", () => startSets(part, pickSets(list, part === "p7" ? 3 : 4), `${SET_TITLE[part]} · 실전 시간`, { timed: true }));
+    if (tr) tr.addEventListener("click", () => startSets(part, pickSets(list, part === "p7" ? 3 : 4), T`${SET_TITLE[part]} · 실전 시간`, { timed: true }));
   }
 
   // ═════════════ 세트 풀기 (연습 모드: 풀기 → 채점 → 해설·스크립트) ═════════════
   // 실전 시간: Part 6 지문당 2분 · Part 7 문항당 1분 (실제 시험 RC 75분 배분 기준)
   const SET_SEC = (part, set) => (part === "p6" ? 120 : part === "p7" ? set.qs.length * 60 : 0);
   function startSets(part, sets, title, opt) {
-    if (!sets.length) return toast("풀 세트가 없어요");
+    if (!sets.length) return toast(T`풀 세트가 없어요`);
     const timed = !!(opt && opt.timed);
     if (timed && locked()) return paywall("timed");
     // 무료: 파트마다 처음 1세트 (이미 푼 세트를 다시 푸는 건 괜찮다)
@@ -2375,12 +2416,12 @@
     const limit = s.timed ? SET_SEC(s.part, set) : 0;
     if (limit && !st.graded && !st.t0) st.t0 = Date.now();
     const mmss = (sec) => `${Math.floor(sec / 60)}:${String(Math.max(0, sec) % 60).padStart(2, "0")}`;
-    const timerHtml = limit ? `<div class="qtimer ${st.graded ? "off" : ""}"><i data-tbar style="width:${st.graded ? 0 : 100}%"></i><span data-tleft>${st.graded ? `제한 ${mmss(limit)} 중 ${mmss(st.used || 0)} 사용${st.late ? " · 시간 초과" : ""}` : mmss(limit)}</span></div>` : "";
-    const jump = (s.part === "p6" || s.part === "p7") ? `<div class="jumpbar"><button data-jumpto=".doc">${ico("book")}지문</button><button data-jumpto=".pqs">${ico("list")}문제</button></div>` : "";
+    const timerHtml = limit ? `<div class="qtimer ${st.graded ? "off" : ""}"><i data-tbar style="width:${st.graded ? 0 : 100}%"></i><span data-tleft>${st.graded ? T`제한 ${mmss(limit)} 중 ${mmss(st.used || 0)} 사용${st.late ? T` · 시간 초과` : ""}` : mmss(limit)}</span></div>` : "";
+    const jump = (s.part === "p6" || s.part === "p7") ? T`<div class="jumpbar"><button data-jumpto=".doc">${ico("book")}지문</button><button data-jumpto=".pqs">${ico("list")}문제</button></div>` : "";
     $app.innerHTML = `<div class="study ${s.part === "p7" ? "wide-study" : ""}">${studyTop(Math.max(0, done + answeredNow - 1), nQ)}${timerHtml}${jump}
-      <div class="small muted" style="margin:0 2px 8px;font-weight:700">${esc(s.title)} · ${s.i + 1}/${s.queue.length}${s.part === "p1" ? "문제" : "세트"}</div>
+      <div class="small muted" style="margin:0 2px 8px;font-weight:700">${esc(s.title)} · ${s.i + 1}/${s.queue.length}${s.part === "p1" ? T`문제` : T`세트`}</div>
       ${setHtml(s.part, set, st, mode)}
-      <div class="study-foot">${st.graded ? `<button class="btn block" data-next>${s.i + 1 >= s.queue.length ? "결과 보기" : s.part === "p1" ? "다음 문제" : "다음 세트"}</button>` : `<button class="btn block" data-grade ${all ? "" : "disabled"}>${all ? "채점하기" : `${set.qs.length - st.picks.filter((x) => x != null).length}문제 남음`}</button>`}</div></div>`;
+      <div class="study-foot">${st.graded ? `<button class="btn block" data-next>${s.i + 1 >= s.queue.length ? T`결과 보기` : s.part === "p1" ? T`다음 문제` : T`다음 세트`}</button>` : `<button class="btn block" data-grade ${all ? "" : "disabled"}>${all ? T`채점하기` : T`${set.qs.length - st.picks.filter((x) => x != null).length}문제 남음`}</button>`}</div></div>`;
     bindExit();
     const rerender = () => { const y = window.scrollY; vPset(); window.scrollTo(0, y); };
     bindSetCommon(s.part, set, st, rerender);
@@ -2393,7 +2434,7 @@
       if (cnt) cnt.textContent = `${Math.min(done + Math.max(1, n), nQ)} / ${nQ}`;
       const bar = $app.querySelector(".study-top .bar i");
       if (bar) bar.style.width = `${Math.round(((done + n) / nQ) * 100)}%`;
-      if (g) { g.disabled = n < set.qs.length; g.textContent = n < set.qs.length ? `${set.qs.length - n}문제 남음` : "채점하기"; }
+      if (g) { g.disabled = n < set.qs.length; g.textContent = n < set.qs.length ? T`${set.qs.length - n}문제 남음` : T`채점하기`; }
     });
     const gb = $app.querySelector("[data-grade]");
     clearInterval(s.tick);
@@ -2427,7 +2468,7 @@
       vPset();
       window.scrollTo(0, 0);
     });
-    coach(s.part === "p1" ? "p1" : s.part === "p3" || s.part === "p4" ? "p34" : "p67", s.part === "p1" ? "<b>Part 1</b> 사진을 먼저 보고 사람의 동작과 사물의 위치를 떠올린 뒤 네 문장을 들으세요. 문장은 채점한 뒤에 보여 드려요." : s.part === "p3" || s.part === "p4" ? "<b>Part 3·4 요령</b> 음성이 나오기 전에 <b>문제를 먼저 읽어 두세요</b>. 실제 시험에서도 쓰는 방법이에요. 다 고르고 채점하면 스크립트에 정답 근거 문장이 표시돼요." : "<b>Part 6·7 요령</b> 문제를 먼저 읽고 지문에서 근거를 찾으세요. 채점한 뒤 <b>근거 위치 보기</b>를 누르면 지문에 표시돼요.");
+    coach(s.part === "p1" ? "p1" : s.part === "p3" || s.part === "p4" ? "p34" : "p67", s.part === "p1" ? T`<b>Part 1</b> 사진을 먼저 보고 사람의 동작과 사물의 위치를 떠올린 뒤 네 문장을 들으세요. 문장은 채점한 뒤에 보여 드려요.` : s.part === "p3" || s.part === "p4" ? T`<b>Part 3·4 요령</b> 음성이 나오기 전에 <b>문제를 먼저 읽어 두세요</b>. 실제 시험에서도 쓰는 방법이에요. 다 고르고 채점하면 스크립트에 정답 근거 문장이 표시돼요.` : T`<b>Part 6·7 요령</b> 문제를 먼저 읽고 지문에서 근거를 찾으세요. 채점한 뒤 <b>근거 위치 보기</b>를 누르면 지문에 표시돼요.`);
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
       if (onControl(e)) return;
@@ -2448,7 +2489,7 @@
         const bar = $app.querySelector("[data-tbar]"), tl = $app.querySelector("[data-tleft]");
         if (bar) { bar.style.width = `${Math.max(0, (left / limit) * 100)}%`; bar.classList.toggle("warn", left <= 30); }
         if (tl) tl.textContent = mmss(Math.ceil(left));
-        if (left <= 0) { clearInterval(s.tick); st.late = true; toast("시간이 끝났어요. 채점할게요"); gb.disabled = false; gb.click(); }
+        if (left <= 0) { clearInterval(s.tick); st.late = true; toast(T`시간이 끝났어요. 채점할게요`); gb.disabled = false; gb.click(); }
       };
       s.tick = setInterval(tick, 500);
       tick();
@@ -2465,7 +2506,7 @@
     const score = total ? Math.round((ok / total) * 100) : 0;
     const byType = {};
     s.results.forEach((r) => { const k = r.q.type || r.q.kind; byType[k] = byType[k] || { ok: 0, n: 0 }; byType[k].n += 1; if (r.ok) byType[k].ok += 1; });
-    const hero = `<div class="result-hero"><div class="score" style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--accent)" : "var(--bad)"}">${score}<small>점</small></div><div class="msg">${score === 100 ? "완벽해요!" : score >= 80 ? "훌륭해요!" : score >= 50 ? "조금만 더 하면 돼요" : "해설과 근거를 다시 보세요"}</div><p class="muted">${esc(s.title)} · ${total}문제 중 ${ok}개 정답</p></div>`;
+    const hero = T`<div class="result-hero"><div class="score" style="color:${score >= 80 ? "var(--ok)" : score >= 50 ? "var(--accent)" : "var(--bad)"}">${score}<small>점</small></div><div class="msg">${score === 100 ? T`완벽해요!` : score >= 80 ? T`훌륭해요!` : score >= 50 ? T`조금만 더 하면 돼요` : T`해설과 근거를 다시 보세요`}</div><p class="muted">${esc(s.title)} · ${total}문제 중 ${ok}개 정답</p></div>`;
     const types = `<div class="card">${Object.keys(byType).map((k) => `<div class="kv"><span class="k">${esc(k)}</span><span class="v">${byType[k].ok} / ${byType[k].n}</span></div>`).join("")}</div>`;
     return { hero, types, score, total };
   }
@@ -2476,26 +2517,26 @@
     if (r.arg) return vGrammarTopic(r);
     const cats = Array.from(new Set(PR.grammar.map((t) => t.cat)));
     const prog = (t) => { const qs = t.qs.filter((q) => !q.mock); const done = qs.filter((q) => S.gq[q.id]); return { n: qs.length, done: done.length, ok: done.filter((q) => !S.gq[q.id].wrong).length }; };
-    const body = `${topBar("Part 5 문법", { back: true, sub: `${PR.grammar.length}개 주제 · 핵심 강의 + 실전 문제` })}
+    const body = T`${topBar(T`Part 5 문법`, { back: true, sub: T`${PR.grammar.length}개 주제 · 핵심 강의 + 실전 문제` })}
       <button class="btn block" data-mix style="margin-bottom:6px">${ico("shuffle")}문법 랜덤 20제</button>
       <button class="btn ghost block" data-timed style="margin-bottom:6px">${ico("clock")}시간 압박 20제 · 문항당 20초${locked() ? ` ${ico("lock")}` : ""}</button>
       <button class="btn ghost block" data-wrong style="margin-bottom:14px">${ico("repeat")}틀린 문법 문제 다시 (${Object.keys(S.gq).filter((k) => S.gq[k].wrong && PR._g.has(k)).length})</button>
-      ${cats.map((c) => `<div class="section-h"><h2>${esc(c)}</h2></div><div class="wlist">${PR.grammar.filter((t) => t.cat === c).map((t) => { const p = prog(t); return `<a class="witem" href="#/grammar/${t.id}"><div class="wbody"><div class="ww" style="font-size:16px">${esc(t.title)}</div><div class="wm">${p.done ? `${p.done}/${p.n}문제 · 정답 ${p.ok}` : `${p.n}문제`}</div></div>${p.done === p.n && p.n ? `<span class="badge ok">완료</span>` : ""}${ico("right")}</a>`; }).join("")}</div>`).join("")}`;
+      ${cats.map((c) => `<div class="section-h"><h2>${esc(c)}</h2></div><div class="wlist">${PR.grammar.filter((t) => t.cat === c).map((t) => { const p = prog(t); return `<a class="witem" href="#/grammar/${t.id}"><div class="wbody"><div class="ww" style="font-size:16px">${esc(t.title)}</div><div class="wm">${p.done ? T`${p.done}/${p.n}문제 · 정답 ${p.ok}` : T`${p.n}문제`}</div></div>${p.done === p.n && p.n ? T`<span class="badge ok">완료</span>` : ""}${ico("right")}</a>`; }).join("")}</div>`).join("")}`;
     shell("practice", body);
     $app.querySelector("[data-mix]").addEventListener("click", () => {
       const qs = PR.grammar.flatMap((t) => t.qs.filter((q) => !q.mock));
-      startGrammarQuiz(C.lcPick(qs, Object.fromEntries(Object.entries(S.gq)), 20), "문법 랜덤 20제");
+      startGrammarQuiz(C.lcPick(qs, Object.fromEntries(Object.entries(S.gq)), 20), T`문법 랜덤 20제`);
     });
     // 시간 압박 훈련: 실제 시험의 Part 5 속도(문항당 약 20초)
     $app.querySelector("[data-timed]").addEventListener("click", () => {
       if (locked()) return paywall("timed");
       const qs = PR.grammar.flatMap((t) => t.qs.filter((q) => !q.mock));
-      startGrammarQuiz(C.shuffle(qs).slice(0, 20), "Part 5 시간 압박 20제", { timed: 20 });
+      startGrammarQuiz(C.shuffle(qs).slice(0, 20), T`Part 5 시간 압박 20제`, { timed: 20 });
     });
     $app.querySelector("[data-wrong]").addEventListener("click", () => {
       const qs = PR.grammar.flatMap((t) => t.qs.filter((q) => S.gq[q.id] && S.gq[q.id].wrong));
-      if (!qs.length) return toast("틀린 문법 문제가 없어요");
-      startGrammarQuiz(C.shuffle(qs).slice(0, 30), "틀린 문법 문제");
+      if (!qs.length) return toast(T`틀린 문법 문제가 없어요`);
+      startGrammarQuiz(C.shuffle(qs).slice(0, 30), T`틀린 문법 문제`);
     });
   }
   // 무료 문법 주제: 처음 문제를 푼 주제 하나
@@ -2508,7 +2549,7 @@
     if (!t) return go("#/grammar");
     if (locked() && freeGrammarTopic() && freeGrammarTopic() !== t.id) return paywall("grammar");
     const qs = t.qs.filter((q) => !q.mock);
-    const body = `${topBar(esc(t.title), { back: true, sub: `${esc(t.cat)} · 문제 ${qs.length}개` })}
+    const body = T`${topBar(esc(t.title), { back: true, sub: T`${esc(t.cat)} · 문제 ${qs.length}개` })}
       ${t.lesson.map((l, i) => `<div class="card lesson"><div class="lesson-h"><span class="pq-n">${i + 1}</span><b>${esc(l.h)}</b></div><p>${esc(l.t)}</p>${l.ex.map((e) => `<div class="lesson-ex"><div class="en">${hl(e.en)}</div><div class="ko">${esc(e.ko)}</div></div>`).join("")}</div>`).join("")}
       <div class="tip-box" style="margin-top:12px"><b>함정 주의</b> ${esc(t.trap)}</div>
       <button class="btn block" data-start style="margin-top:14px">${ico("zap")}문제 ${qs.length}개 풀기</button>`;
@@ -2522,7 +2563,7 @@
       if (!mine.length) return paywall("grammar");
       qs = mine;
     }
-    if (!qs.length) return toast("문제가 없어요");
+    if (!qs.length) return toast(T`문제가 없어요`);
     session = { kind: "gq", title, qs, i: 0, answered: null, results: [], from: location.hash, timed: (opt && opt.timed) || 0 };
     enterStudy();
   }
@@ -2536,12 +2577,12 @@
       if (ans) cls = i === q.a ? "right" : i === ans.pick ? "wrong" : "dim";
       return `<button class="opt ${cls}" data-pick="${i}" ${ans ? "disabled" : ""}><span class="on">${LETTERS[i]}</span><span class="en">${esc(o)}</span></button>`;
     }).join("");
-    const timer = s.timed ? `<div class="qtimer ${ans ? "off" : ""}"><i data-tbar style="width:${ans ? 0 : 100}%"></i><span data-tleft>${ans ? (ans.late ? "시간 초과" : `${ans.sec}초`) : `${s.timed}초`}</span></div>` : "";
-    $app.innerHTML = `<div class="study">${studyTop(s.i, s.qs.length)}${timer}
+    const timer = s.timed ? `<div class="qtimer ${ans ? "off" : ""}"><i data-tbar style="width:${ans ? 0 : 100}%"></i><span data-tleft>${ans ? (ans.late ? T`시간 초과` : T`${ans.sec}초`) : T`${s.timed}초`}</span></div>` : "";
+    $app.innerHTML = T`<div class="study">${studyTop(s.i, s.qs.length)}${timer}
       <div class="quiz-q"><div class="qk">Part 5 · ${esc(t.title)}${q.lv ? ` · ${LV_LABEL[q.lv]}` : ""}</div><div class="qs en">${esc(q.s).replace("-------", '<b style="color:var(--brand);letter-spacing:.05em">_______</b>')}</div></div>
       <div class="opts">${opts}</div>
-      ${ans ? `<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? "정답이에요!" : ans.late ? `시간 초과 · 정답 ${LETTERS[q.a]}` : `틀렸어요 · 정답 ${LETTERS[q.a]}`}</b>${esc(q.exp)}<div style="margin-top:8px"><a href="#/grammar/${t.id}" class="small" data-lesson>${ico("book")} '${esc(t.title)}' 강의 보기</a></div></div>` : ""}
-      <div class="study-foot">${ans ? `<button class="btn block" data-next>${s.i + 1 >= s.qs.length ? "결과 보기" : "다음 문제"}</button>` : ""}<div class="kbd-hint"><kbd>1</kbd>~<kbd>4</kbd> 선택 · <kbd>Enter</kbd> 다음</div></div></div>`;
+      ${ans ? T`<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? T`정답이에요!` : ans.late ? T`시간 초과 · 정답 ${LETTERS[q.a]}` : T`틀렸어요 · 정답 ${LETTERS[q.a]}`}</b>${esc(q.exp)}<div style="margin-top:8px"><a href="#/grammar/${t.id}" class="small" data-lesson>${ico("book")} '${esc(t.title)}' 강의 보기</a></div></div>` : ""}
+      <div class="study-foot">${ans ? `<button class="btn block" data-next>${s.i + 1 >= s.qs.length ? T`결과 보기` : T`다음 문제`}</button>` : ""}<div class="kbd-hint"><kbd>1</kbd>~<kbd>4</kbd> 선택 · <kbd>Enter</kbd> 다음</div></div></div>`;
     bindExit();
     clearInterval(s.tick);
     const pick = (i) => {
@@ -2564,8 +2605,8 @@
         const left = s.timed - (Date.now() - s.qStart) / 1000;
         const bar = $app.querySelector("[data-tbar]"), tl = $app.querySelector("[data-tleft]");
         if (bar) { bar.style.width = `${Math.max(0, (left / s.timed) * 100)}%`; bar.classList.toggle("warn", left <= 5); }
-        if (tl) tl.textContent = `${Math.max(0, Math.ceil(left))}초`;
-        if (left <= 0) { toast("시간 초과! 정답을 확인하세요"); pick(-1); }
+        if (tl) tl.textContent = T`${Math.max(0, Math.ceil(left))}초`;
+        if (left <= 0) { toast(T`시간 초과! 정답을 확인하세요`); pick(-1); }
       };
       s.tick = setInterval(tick, 200);
       tick();
@@ -2576,7 +2617,7 @@
     const ls = $app.querySelector("[data-lesson]");
     if (ls) ls.addEventListener("click", (e) => {
       e.preventDefault();
-      modal(`<h3>${esc(t.title)}</h3><div style="max-height:60vh;overflow-y:auto">${t.lesson.map((l) => `<div style="margin-bottom:10px"><b>${esc(l.h)}</b><p class="small" style="margin:4px 0;color:var(--text-2)">${esc(l.t)}</p>${l.ex.map((x) => `<div class="small en">${hl(x.en)}</div><div class="small muted">${esc(x.ko)}</div>`).join("")}</div>`).join("")}<div class="tip-box small"><b>함정</b> ${esc(t.trap)}</div></div><button class="btn block" data-close style="margin-top:12px">문제로 돌아가기</button>`);
+      modal(T`<h3>${esc(t.title)}</h3><div style="max-height:60vh;overflow-y:auto">${t.lesson.map((l) => `<div style="margin-bottom:10px"><b>${esc(l.h)}</b><p class="small" style="margin:4px 0;color:var(--text-2)">${esc(l.t)}</p>${l.ex.map((x) => `<div class="small en">${hl(x.en)}</div><div class="small muted">${esc(x.ko)}</div>`).join("")}</div>`).join("")}<div class="tip-box small"><b>함정</b> ${esc(t.trap)}</div></div><button class="btn block" data-close style="margin-top:12px">문제로 돌아가기</button>`);
     });
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
@@ -2600,7 +2641,7 @@
   function vDict(r) {
     if (!needPractice(r)) return;
     const src = dictSources();
-    const body = `${topBar("받아쓰기", { back: true, sub: "듣고 쓰면 들리는 단어와 안 들리는 단어가 구분돼요" })}
+    const body = T`${topBar(T`받아쓰기`, { back: true, sub: T`듣고 쓰면 들리는 단어와 안 들리는 단어가 구분돼요` })}
       <div class="tip-box" style="margin-bottom:14px"><b>이렇게 하세요</b> 문장을 듣고 들리는 대로 쓰세요. 대소문자·문장부호는 채점하지 않아요. 틀린 단어는 빨간색으로 표시되고, 따라 말하기로 입에 붙일 수 있어요.</div>
       <div class="grid2">
         <button class="tile" data-src="short"><span class="tico c-blue">${ico("ear")}</span><b>짧은 문장</b><span>LC 빈출 표현 ${src.lc.length}개 중 10문장</span></button>
@@ -2609,25 +2650,25 @@
     shell("practice", body);
     $app.querySelectorAll("[data-src]").forEach((b) => b.addEventListener("click", () => {
       const list = b.dataset.src === "short" ? src.lc : src.p34.filter((x) => x.text.split(" ").length >= 6 && x.text.split(" ").length <= 22);
-      startDict(C.shuffle(list).slice(0, 10), b.dataset.src === "short" ? "받아쓰기 · 짧은 문장" : "받아쓰기 · 긴 문장");
+      startDict(C.shuffle(list).slice(0, 10), b.dataset.src === "short" ? T`받아쓰기 · 짧은 문장` : T`받아쓰기 · 긴 문장`, b.dataset.src);
     }));
   }
-  function startDict(items, title) {
-    if (!items.length) return toast("문장이 없어요");
+  function startDict(items, title, srcKind) {
+    if (!items.length) return toast(T`문장이 없어요`);
     if (locked() && (S.freeUse.dict || 0) >= 1) return paywall("dict");
-    session = { kind: "dict", title, items, i: 0, res: null, results: [], from: location.hash };
+    session = { kind: "dict", title, src: srcKind || "short", items, i: 0, res: null, results: [], from: location.hash };
     enterStudy();
   }
   function vDictSession() {
     const s = session;
     const it = s.items[s.i];
     const res = s.res;
-    $app.innerHTML = `<div class="study">${studyTop(s.i, s.items.length)}
+    $app.innerHTML = T`<div class="study">${studyTop(s.i, s.items.length)}
       <div class="quiz-q"><div class="qk">${esc(s.title)}</div><button class="play lg" data-say style="margin:12px auto 0;width:76px;height:76px" aria-label="듣기">${ico("vol")}</button>
         <div class="row" style="justify-content:center;gap:8px;margin-top:10px"><button class="btn ghost sm" data-slow>${ico("repeat")}천천히</button></div></div>
-      ${res ? `<div class="card dict-res"><div class="en" style="font-size:18px;line-height:1.6">${res.tokens.map((t) => `<span class="${t.st === "miss" ? "miss" : ""}">${esc(t.w)}</span>`).join(" ")}</div><div class="ko" style="margin-top:6px">${esc(it.ko)}</div><div class="small muted" style="margin-top:8px">내가 쓴 문장: <span class="en">${esc(s.typed || "(비어 있음)")}</span></div><div class="row" style="margin-top:10px"><b style="font-size:20px;color:${res.pct >= 90 ? "var(--ok)" : res.pct >= 60 ? "var(--accent)" : "var(--bad)"}">${res.pct}%</b><span class="muted small" style="margin-left:6px">${res.ok}/${res.total} 단어</span><span class="spacer"></span><button class="btn ghost sm" data-shadow>${ico("repeat")}따라 말하기</button></div></div>`
-        : `<textarea id="dict-in" class="spell-input en" rows="3" style="height:auto;min-height:96px;text-align:left;font-size:17px" placeholder="들리는 대로 쓰세요" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>`}
-      <div class="study-foot">${res ? `<button class="btn block" data-next>${s.i + 1 >= s.items.length ? "결과 보기" : "다음 문장"}</button>` : `<button class="btn block" data-check>확인</button>`}<div class="kbd-hint"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> 확인 · <kbd>Ctrl</kbd>+<kbd>Space</kbd> 다시 듣기</div></div></div>`;
+      ${res ? T`<div class="card dict-res"><div class="en" style="font-size:18px;line-height:1.6">${res.tokens.map((t) => `<span class="${t.st === "miss" ? "miss" : ""}">${esc(t.w)}</span>`).join(" ")}</div><div class="ko" style="margin-top:6px">${esc(it.ko)}</div><div class="small muted" style="margin-top:8px">내가 쓴 문장: <span class="en">${esc(s.typed || T`(비어 있음)`)}</span></div><div class="row" style="margin-top:10px"><b style="font-size:20px;color:${res.pct >= 90 ? "var(--ok)" : res.pct >= 60 ? "var(--accent)" : "var(--bad)"}">${res.pct}%</b><span class="muted small" style="margin-left:6px">${res.ok}/${res.total} 단어</span><span class="spacer"></span><button class="btn ghost sm" data-shadow>${ico("repeat")}따라 말하기</button></div></div>`
+        : T`<textarea id="dict-in" class="spell-input en" rows="3" style="height:auto;min-height:96px;text-align:left;font-size:17px" placeholder="들리는 대로 쓰세요" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>`}
+      <div class="study-foot">${res ? `<button class="btn block" data-next>${s.i + 1 >= s.items.length ? T`결과 보기` : T`다음 문장`}</button>` : T`<button class="btn block" data-check>확인</button>`}<div class="kbd-hint"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> 확인 · <kbd>Ctrl</kbd>+<kbd>Space</kbd> 다시 듣기</div></div></div>`;
     bindExit();
     const say = (rate) => Sound.play(it.rel, it.text, { btn: $app.querySelector("[data-say]"), rate });
     $app.querySelector("[data-say]").addEventListener("click", () => say());
@@ -2688,7 +2729,7 @@
     F.p7.forEach((set) => pages.push({ part: "p7", set }));
     return pages.filter((p) => !("set" in p) || p.set);
   }
-  const fullMocks = () => (PR.full || []).map((F, i) => ({ n: `f${i + 1}`, full: F, title: `정규 모의고사 ${i + 1}회`, rcMin: 75 }));
+  const fullMocks = () => (PR.full || []).map((F, i) => ({ n: `f${i + 1}`, full: F, title: T`정규 모의고사 ${i + 1}회`, rcMin: 75 }));
   function mockPages(m) {
     if (m.full) return fullPages(m.full);
     const pages = [];
@@ -2696,7 +2737,7 @@
     m.p2.forEach((id) => { const it = D.lcAll.find((p) => p.id === id); if (it) pages.push({ part: "p2", item: it, q: C.makeResponse(it, C.rng(parseInt(id.slice(3), 10) * 7919 + m.n * 104729)) }); });
     m.p3.forEach((id) => pages.push({ part: "p3", set: PR._by.get(id) }));
     m.p4.forEach((id) => pages.push({ part: "p4", set: PR._by.get(id) }));
-    (m.p5w || []).forEach((id) => { const w = BY_ID.get(id); const q = w && (w.mq || w.q); if (q) pages.push({ part: "p5", word: w, q: { s: q.s, o: q.o, a: q.a, exp: q.k, type: "어휘" } }); });
+    (m.p5w || []).forEach((id) => { const w = BY_ID.get(id); const q = w && (w.mq || w.q); if (q) pages.push({ part: "p5", word: w, q: { s: q.s, o: q.o, a: q.a, exp: q.k, type: T`어휘` } }); });
     (m.p5g || []).forEach((id) => { const g = PR._g.get(id); if (g) pages.push({ part: "p5", g: g.t, q: Object.assign({ type: g.t.title }, g.q) }); });
     m.p6.forEach((id) => pages.push({ part: "p6", set: PR._by.get(id) }));
     m.p7.forEach((id) => pages.push({ part: "p7", set: PR._by.get(id) }));
@@ -2712,7 +2753,7 @@
     const halves = PR.mocks || [];
     const fulls = fullMocks();
     const all = halves.concat(fulls);
-    const titleOf = (m) => m.title || `하프 모의고사 ${m.n}회`;
+    const titleOf = (m) => m.title || T`하프 모의고사 ${m.n}회`;
     const card = (m) => {
       const pages = mockPages(m);
       const nLc = pages.filter((p) => secOf(p.part) === "lc").reduce((n, p) => n + pageQs(p).length, 0);
@@ -2721,14 +2762,14 @@
       const rec = S.mock[m.n];
       const run = S.mockRun && S.mockRun.n === m.n ? S.mockRun : null;
       const lockedHere = locked() && (m.full || m.n > 1);
-      const head = `<div class="row"><div class="spacer"><b style="font-size:17px">${titleOf(m)}</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${rcMin}분)</div></div>${!run && rec ? (rec.n > 1 ? `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.first}</b><div class="small muted">첫 응시 · 재응시 ${rec.total}점 (${rec.n}회째)</div></div>` : `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.total}</b><div class="small muted">LC ${rec.lc} · RC ${rec.rc}</div></div>`) : ""}</div>`;
-      if (run) return `<div class="card" style="margin-top:10px">${head}<div class="tip-box" style="margin-top:10px;font-size:14px">풀던 모의고사가 있어요${run.real ? " (실전 진행)" : ""} · ${run.picks.flat().filter((x) => x != null).length}문제 답함${run.rcUsed != null ? ` · RC 남은 시간 ${Math.max(0, rcMin - Math.floor(run.rcUsed / 60000))}분` : ""}</div><div class="row" style="gap:8px;margin-top:10px"><button class="btn block" data-resume="${m.n}" style="flex:2">이어서 풀기</button><button class="btn ghost" data-mock="${m.n}" style="flex:1">처음부터</button></div></div>`;
+      const head = T`<div class="row"><div class="spacer"><b style="font-size:17px">${titleOf(m)}</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${rcMin}분)</div></div>${!run && rec ? (rec.n > 1 ? T`<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.first}</b><div class="small muted">첫 응시 · 재응시 ${rec.total}점 (${rec.n}회째)</div></div>` : `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.total}</b><div class="small muted">LC ${rec.lc} · RC ${rec.rc}</div></div>`) : ""}</div>`;
+      if (run) return T`<div class="card" style="margin-top:10px">${head}<div class="tip-box" style="margin-top:10px;font-size:14px">풀던 모의고사가 있어요${run.real ? T` (실전 진행)` : ""} · ${run.picks.flat().filter((x) => x != null).length}문제 답함${run.rcUsed != null ? T` · RC 남은 시간 ${Math.max(0, rcMin - Math.floor(run.rcUsed / 60000))}분` : ""}</div><div class="row" style="gap:8px;margin-top:10px"><button class="btn block" data-resume="${m.n}" style="flex:2">이어서 풀기</button><button class="btn ghost" data-mock="${m.n}" style="flex:1">처음부터</button></div></div>`;
       return `<div class="card" style="margin-top:10px">${head}
-        ${lockedHere ? `<a class="btn ghost block" style="margin-top:10px" href="#/premium?from=${m.full ? "full" : "mock"}">${ico("lock")}전체 열기로 응시하기</a>` : `<button class="btn ${rec ? "ghost" : ""} block" style="margin-top:10px" data-mock="${m.n}">${rec ? "다시 응시하기" : "응시하기"}</button>`}</div>`;
+        ${lockedHere ? T`<a class="btn ghost block" style="margin-top:10px" href="#/premium?from=${m.full ? "full" : "mock"}">${ico("lock")}전체 열기로 응시하기</a>` : `<button class="btn ${rec ? "ghost" : ""} block" style="margin-top:10px" data-mock="${m.n}">${rec ? T`다시 응시하기` : T`응시하기`}</button>`}</div>`;
     };
-    const body = `${topBar("모의고사", { back: true, sub: `${fulls.length ? `정규 ${fulls.length}회 · ` : ""}하프 ${halves.length}회 · 예상 점수` })}
+    const body = T`${topBar(T`모의고사`, { back: true, sub: T`${fulls.length ? T`정규 ${fulls.length}회 · ` : ""}하프 ${halves.length}회 · 예상 점수` })}
       <div class="tip-box">실제 시험처럼 <b>해설 없이</b> 끝까지 풀고, 마지막에 <b>LC·RC 예상 점수</b>와 파트별 정답률, 전체 해설을 보여 드려요. LC는 <b>실전 진행</b>(시험장 방송처럼 안내 방송 → 번호 → 문제 → 답 고르는 시간 → 자동으로 다음)과 <b>내 속도로</b>(한 번 듣고 직접 넘기기) 중에서 시작할 때 고를 수 있어요. 정규 모의고사는 실전 진행이 기본이에요. 점수는 <b>첫 응시</b>가 기준이고, 다시 풀면 '재응시'로 따로 표시돼요. 모의고사 문제는 연습 문제에 나오지 않아요.</div>
-      ${fulls.length ? `<div class="section-h" style="margin-top:18px"><h2>정규 모의고사</h2><span class="small muted">실제 시험과 같은 200문제 · 약 2시간</span></div>${fulls.map(card).join("")}` : ""}
+      ${fulls.length ? T`<div class="section-h" style="margin-top:18px"><h2>정규 모의고사</h2><span class="small muted">실제 시험과 같은 200문제 · 약 2시간</span></div>${fulls.map(card).join("")}` : ""}
       <div class="section-h" style="margin-top:18px"><h2>하프 모의고사</h2><span class="small muted">절반 분량 · 약 1시간</span></div>
       ${halves.map(card).join("")}`;
     shell("practice", body);
@@ -2736,7 +2777,7 @@
     $app.querySelectorAll("[data-resume]").forEach((b) => b.addEventListener("click", () => startMock(find(b.dataset.resume), true)));
     $app.querySelectorAll("[data-mock]").forEach((b) => b.addEventListener("click", () => {
       const m = find(b.dataset.mock);
-      modal(`<h3>${titleOf(m)}</h3><p class="muted">LC → RC 순서로 진행하고, 해설은 끝난 뒤에 보여 드려요.${m.full ? " LC 약 45분 · RC 75분으로 실제 시험과 같아요. 2시간을 비워 두고 시작하세요." : ""} 중간에 나가도 답안이 저장돼서 이어서 풀 수 있어요${S.mockRun && S.mockRun.n === m.n ? " (처음부터 시작하면 풀던 답안은 지워져요)" : ""}. 조용한 곳에서 이어폰을 끼고 시작하세요.</p>${S.mock[m.n] ? `<div class="tip-box" style="font-size:14px">이미 푼 모의고사예요 (첫 응시 ${S.mock[m.n].first || S.mock[m.n].total}점). 다시 풀면 <b>재응시</b>로 표시되고 예상 점수에는 반영되지 않아요.</div>` : ""}
+      modal(T`<h3>${titleOf(m)}</h3><p class="muted">LC → RC 순서로 진행하고, 해설은 끝난 뒤에 보여 드려요.${m.full ? T` LC 약 45분 · RC 75분으로 실제 시험과 같아요. 2시간을 비워 두고 시작하세요.` : ""} 중간에 나가도 답안이 저장돼서 이어서 풀 수 있어요${S.mockRun && S.mockRun.n === m.n ? T` (처음부터 시작하면 풀던 답안은 지워져요)` : ""}. 조용한 곳에서 이어폰을 끼고 시작하세요.</p>${S.mock[m.n] ? T`<div class="tip-box" style="font-size:14px">이미 푼 모의고사예요 (첫 응시 ${S.mock[m.n].first || S.mock[m.n].total}점). 다시 풀면 <b>재응시</b>로 표시되고 예상 점수에는 반영되지 않아요.</div>` : ""}
         ${modeChoice(m)}
         <div class="row" style="margin-top:14px;gap:8px"><button class="btn ghost" data-close style="flex:1">취소</button><button class="btn" data-go-mock style="flex:1">시작</button></div>`, (box) => {
         box.querySelector("[data-go-mock]").addEventListener("click", () => {
@@ -2760,9 +2801,9 @@
   function modeChoice(m) {
     const def = m.full ? true : !!S.settings.mockReal;
     const opt = (v, on, t, d) => `<label class="mchoice"><input type="radio" name="mmode" value="${v}" ${on ? "checked" : ""}><span><b>${t}</b><small>${d}</small></span></label>`;
-    return `<div class="mchoices"><div class="small" style="font-weight:800;margin:12px 0 6px">듣기(LC) 진행 방식</div>
-      ${opt("real", def, "실전 진행 (시험장처럼)", "파트마다 영어 안내 방송이 나오고, 문항 번호를 불러 준 뒤 문제를 들려줘요. 답 고르는 시간(Part 1·2는 5초, Part 3·4는 질문마다 8초)이 지나면 <b>자동으로 다음 문제</b>로 넘어가요. 다시 듣기는 없어요.")}
-      ${opt("self", !def, "내 속도로", "문제 음성이 한 번 나오고, 답을 고른 뒤 <b>직접 '다음'</b>을 눌러 넘겨요. 처음 모의고사를 풀거나 천천히 연습할 때 좋아요.")}
+    return T`<div class="mchoices"><div class="small" style="font-weight:800;margin:12px 0 6px">듣기(LC) 진행 방식</div>
+      ${opt("real", def, T`실전 진행 (시험장처럼)`, T`파트마다 영어 안내 방송이 나오고, 문항 번호를 불러 준 뒤 문제를 들려줘요. 답 고르는 시간(Part 1·2는 5초, Part 3·4는 질문마다 8초)이 지나면 <b>자동으로 다음 문제</b>로 넘어가요. 다시 듣기는 없어요.`)}
+      ${opt("self", !def, T`내 속도로`, T`문제 음성이 한 번 나오고, 답을 고른 뒤 <b>직접 '다음'</b>을 눌러 넘겨요. 처음 모의고사를 풀거나 천천히 연습할 때 좋아요.`)}
       <div class="small muted" style="margin-top:6px">RC는 두 방식 모두 같아요 (시간 제한, 문제 사이 자유 이동). 실전 진행 중에도 급한 일이 생기면 <b>일시정지</b>할 수 있어요.</div></div>`;
   }
   let flowTok = 0;
@@ -2779,31 +2820,31 @@
     s.dirDone = s.dirDone || {};
     const dir = async (key, label) => {
       if (s.dirDone[key] || !CU.dir[key]) return;
-      stat(`${ico("vol")} ${label} 안내 방송 중`); skipBtn(true);
+      stat(T`${ico("vol")} ${label} 안내 방송 중`); skipBtn(true);
       await sayCue(CU.dir[key]);
       skipBtn(false);
       if (alive()) s.dirDone[key] = true;
     };
     const countdown = async (n, label) => {
-      for (let t = n; t > 0; t--) { if (!alive()) return false; stat(`${ico("clock")} ${label} <b class="rsec">${t}초</b>`); await wait(1000); }
+      for (let t = n; t > 0; t--) { if (!alive()) return false; stat(T`${ico("clock")} ${label} <b class="rsec">${t}초</b>`); await wait(1000); }
       return alive();
     };
-    if (s.i === 0) await dir("lc", "듣기 평가");
+    if (s.i === 0) await dir("lc", T`듣기 평가`);
     if (!alive()) return;
     if (p.part !== prev) await dir(p.part, PART_LABEL[p.part]);
     if (!alive()) return;
     if (p.part === "p1" || p.part === "p2") {
-      stat(`${ico("vol")} ${n0}번 듣는 중`);
+      stat(T`${ico("vol")} ${n0}번 듣는 중`);
       await sayCue(`Number ${n0}.`);
       if (!alive()) return;
       await wait(300);
       if (p.part === "p1") await playLines(p.set, 0); else await playLcq(p.q, null, alive);
       if (!alive()) return;
       s.heard[s.i] = true;
-      if (!(await countdown(sec(p.part, 5), "답 고르는 시간"))) return;
+      if (!(await countdown(sec(p.part, 5), T`답 고르는 시간`))) return;
     } else {
       const k = p.set.qs.length;
-      stat(`${ico("vol")} ${n0}~${n0 + k - 1}번 듣는 중`);
+      stat(T`${ico("vol")} ${n0}~${n0 + k - 1}번 듣는 중`);
       await sayCue(setIntro(n0, n0 + k - 1, p.set));
       if (!alive()) return;
       await playLines(p.set, 0);
@@ -2813,14 +2854,14 @@
         $app.querySelectorAll(".pq.now-q").forEach((x) => x.classList.remove("now-q"));
         const blk = $app.querySelector(`#pq-${j}`);
         if (blk) { blk.classList.add("now-q"); blk.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
-        stat(`${ico("vol")} ${n0 + j}번 질문`);
+        stat(T`${ico("vol")} ${n0 + j}번 질문`);
         await sayCue(`Question ${n0 + j}. ${p.set.qs[j].q}`);
         if (!alive()) return;
-        if (!(await countdown(sec("p34", 8), `${n0 + j}번 답 고르는 시간`))) return;
+        if (!(await countdown(sec("p34", 8), T`${n0 + j}번 답 고르는 시간`))) return;
       }
     }
     const nx = s.pages[s.i + 1];
-    if (nx && secOf(nx.part) === "rc" && CU.dir.end) { stat(`${ico("vol")} 듣기 평가 끝`); await sayCue(CU.dir.end); }
+    if (nx && secOf(nx.part) === "rc" && CU.dir.end) { stat(T`${ico("vol")} 듣기 평가 끝`); await sayCue(CU.dir.end); }
     if (alive() && s.goNext) s.goNext();
   }
   function startMock(m, resume, real) {
@@ -2828,7 +2869,7 @@
     const pages = mockPages(m);
     const r = resume && S.mockRun && S.mockRun.n === m.n ? S.mockRun : null;
     const picks = pages.map((p, pi) => pageQs(p).map((_, qi) => (r && r.picks[pi] && Number.isInteger(r.picks[pi][qi]) ? r.picks[pi][qi] : null)));
-    session = { kind: "mock", m, pages, i: r ? Math.min(r.i, pages.length - 1) : 0, picks, played: {}, heard: {}, rcStart: r && r.rcUsed != null ? Date.now() - r.rcUsed : null, from: location.hash, title: m.title || `하프 모의고사 ${m.n}회`, rcMin: m.rcMin || RC_MIN, real: r ? !!r.real : !!real && !m.diag };
+    session = { kind: "mock", m, pages, i: r ? Math.min(r.i, pages.length - 1) : 0, picks, played: {}, heard: {}, rcStart: r && r.rcUsed != null ? Date.now() - r.rcUsed : null, from: location.hash, title: m.title || T`하프 모의고사 ${m.n}회`, rcMin: m.rcMin || RC_MIN, real: r ? !!r.real : !!real && !m.diag };
     saveMockRun(session);
     enterStudy();
   }
@@ -2853,11 +2894,11 @@
     const st = { picks: s.picks[s.i], graded: false, base: firstNum };
     const total = s.pages.reduce((n, x) => n + pageQs(x).length, 0);
     const lastNum = firstNum + pageQs(p).length - 1;
-    const qhead = `<div class="qnum" data-qnum="${firstNum}"><span class="qnum-n">${firstNum === lastNum ? firstNum : `${firstNum}~${lastNum}`}<small>번</small></span><span class="qnum-t">${PART_LABEL[p.part] || p.part}<br><b>${firstNum} / ${total}</b></span></div>`;
+    const qhead = T`<div class="qnum" data-qnum="${firstNum}"><span class="qnum-n">${firstNum === lastNum ? firstNum : `${firstNum}~${lastNum}`}<small>번</small></span><span class="qnum-t">${PART_LABEL[p.part] || p.part}<br><b>${firstNum} / ${total}</b></span></div>`;
     let inner;
     if (p.part === "p2") {
-      inner = `${qhead}<div class="quiz-q"><button class="play lg" data-replay style="margin:12px auto 0;width:76px;height:76px" aria-label="듣기">${ico("vol")}</button><div class="small muted" style="margin-top:8px">질문과 보기 (A)(B)(C)가 한 번 재생돼요</div></div>
-        <div class="opts">${p.q.options.map((o, i) => `<button class="opt ${st.picks[0] === i ? "sel" : ""}" data-pick="${i}"><span class="on">${LETTERS[i]}</span><span class="muted">보기 ${LETTERS[i]}</span></button>`).join("")}</div>`;
+      inner = T`${qhead}<div class="quiz-q"><button class="play lg" data-replay style="margin:12px auto 0;width:76px;height:76px" aria-label="듣기">${ico("vol")}</button><div class="small muted" style="margin-top:8px">질문과 보기 (A)(B)(C)가 한 번 재생돼요</div></div>
+        <div class="opts">${p.q.options.map((o, i) => T`<button class="opt ${st.picks[0] === i ? "sel" : ""}" data-pick="${i}"><span class="on">${LETTERS[i]}</span><span class="muted">보기 ${LETTERS[i]}</span></button>`).join("")}</div>`;
     } else if (p.part === "p5") {
       inner = `${qhead}<div class="quiz-q"><div class="qs en">${esc(p.q.s).replace("-------", '<b style="color:var(--brand)">_______</b>')}</div></div>
         <div class="opts">${p.q.o.map((o, i) => `<button class="opt ${st.picks[0] === i ? "sel" : ""}" data-pick="${i}"><span class="on">${LETTERS[i]}</span><span class="en">${esc(o)}</span></button>`).join("")}</div>`;
@@ -2869,23 +2910,23 @@
     const rcTotal = rcIdx.reduce((n, pi) => n + s.picks[pi].length, 0);
     const rcAnswered = rcIdx.reduce((n, pi) => n + s.picks[pi].filter((x) => x != null).length, 0);
     const canPrev = s.i > 0 && sec === "rc" && secOf(s.pages[s.i - 1].part) === "rc";
-    $app.innerHTML = `<div class="study ${p.part === "p7" ? "wide-study" : ""}"><div class="study-top"><button class="icon-btn back" data-exit aria-label="닫기">${ico("x")}</button><div class="bar"><i style="width:${Math.round((answered / total) * 100)}%"></i></div><span class="cnt">${sec === "rc" ? `${ico("clock")} <b data-timer>${mockTimer(s)}</b>` : "LC"}</span></div>
+    $app.innerHTML = T`<div class="study ${p.part === "p7" ? "wide-study" : ""}"><div class="study-top"><button class="icon-btn back" data-exit aria-label="닫기">${ico("x")}</button><div class="bar"><i style="width:${Math.round((answered / total) * 100)}%"></i></div><span class="cnt">${sec === "rc" ? `${ico("clock")} <b data-timer>${mockTimer(s)}</b>` : "LC"}</span></div>
       ${inner}
-      ${s.real && sec === "lc" ? `<div class="study-foot"><div class="realbar"><span class="rstat" data-rstat>${s.paused ? `${ico("pause")} 일시정지됨 · '계속하기'를 누르면 이 문제부터 다시 들려줘요` : `${ico("vol")} 준비 중`}</span><button class="btn ghost sm" data-rskip hidden>안내 건너뛰기</button></div>
-        <div class="row" style="gap:8px"><button class="btn ${s.paused ? "" : "ghost"}" data-rpause style="flex:1">${ico(s.paused ? "play" : "pause")}${s.paused ? "계속하기" : "일시정지"}</button><button class="btn ghost" data-next style="flex:1">${secOf((s.pages[s.i + 1] || p).part) === "rc" && s.pages[s.i + 1] ? `RC 시작 (${s.rcMin}분)` : "다음 문제 ›"}</button></div>` : `
-      <div class="study-foot"><div class="row" style="gap:8px">${canPrev ? `<button class="btn ghost" data-prev style="flex:1">이전</button>` : ""}<button class="btn" data-next style="flex:2">${s.i + 1 >= s.pages.length ? "제출하기" : sec === "lc" && secOf(s.pages[s.i + 1].part) === "rc" ? `RC 시작 (${s.rcMin}분)` : "다음"}</button></div>`}
-        ${sec === "rc" ? `<button class="btn ghost sm block" data-sheet style="margin-top:8px">답안지 보기 (RC ${rcAnswered}/${rcTotal})</button>` : ""}</div></div>`;
+      ${s.real && sec === "lc" ? T`<div class="study-foot"><div class="realbar"><span class="rstat" data-rstat>${s.paused ? T`${ico("pause")} 일시정지됨 · '계속하기'를 누르면 이 문제부터 다시 들려줘요` : T`${ico("vol")} 준비 중`}</span><button class="btn ghost sm" data-rskip hidden>안내 건너뛰기</button></div>
+        <div class="row" style="gap:8px"><button class="btn ${s.paused ? "" : "ghost"}" data-rpause style="flex:1">${ico(s.paused ? "play" : "pause")}${s.paused ? T`계속하기` : T`일시정지`}</button><button class="btn ghost" data-next style="flex:1">${secOf((s.pages[s.i + 1] || p).part) === "rc" && s.pages[s.i + 1] ? T`RC 시작 (${s.rcMin}분)` : T`다음 문제 ›`}</button></div>` : `
+      <div class="study-foot"><div class="row" style="gap:8px">${canPrev ? T`<button class="btn ghost" data-prev style="flex:1">이전</button>` : ""}<button class="btn" data-next style="flex:2">${s.i + 1 >= s.pages.length ? T`제출하기` : sec === "lc" && secOf(s.pages[s.i + 1].part) === "rc" ? T`RC 시작 (${s.rcMin}분)` : T`다음`}</button></div>`}
+        ${sec === "rc" ? T`<button class="btn ghost sm block" data-sheet style="margin-top:8px">답안지 보기 (RC ${rcAnswered}/${rcTotal})</button>` : ""}</div></div>`;
     $app.querySelector("[data-exit]").addEventListener("click", () => askExit());
     $app.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", () => { if (s.submitted) return; st.picks[0] = +b.dataset.pick; $app.querySelectorAll("[data-pick]").forEach((x) => x.classList.toggle("sel", x === b)); saveMockRun(s); }));
     if (p.set) bindPicks(st, () => { saveMockRun(s); if (p.part === "p6") { const y = window.scrollY; vMockSession(); window.scrollTo(0, y); } });
     const goPage = (i) => {
       if (s.submitted) return;
-      if (s.rcStart && Date.now() - s.rcStart >= s.rcMin * 60 * 1000) { toast("시간이 끝났어요. 답안을 제출할게요"); return submitMock(); }
+      if (s.rcStart && Date.now() - s.rcStart >= s.rcMin * 60 * 1000) { toast(T`시간이 끝났어요. 답안을 제출할게요`); return submitMock(); }
       stopLines(); lcqSeq += 1; flowTok += 1; Sound.stop(); s.i = i; saveMockRun(s); vMockSession(); window.scrollTo(0, 0); };
     const trySubmit = () => {
       const left = s.picks.reduce((n, a) => n + a.filter((x) => x == null).length, 0);
       if (!left) return submitMock();
-      confirmBox("제출할까요?", `아직 ${left}문제를 풀지 않았어요. 제출하면 안 푼 문제는 오답으로 처리돼요.`, "제출하기").then((ok) => { if (ok) submitMock(); });
+      confirmBox(T`제출할까요?`, T`아직 ${left}문제를 풀지 않았어요. 제출하면 안 푼 문제는 오답으로 처리돼요.`, T`제출하기`).then((ok) => { if (ok) submitMock(); });
     };
     s.goNext = () => { if (s.i + 1 >= s.pages.length) return trySubmit(); goPage(s.i + 1); };
     $app.querySelector("[data-next]").addEventListener("click", () => s.goNext());
@@ -2903,7 +2944,7 @@
     if (sh) sh.addEventListener("click", () => {
       let n = 0;
       const cells = s.pages.map((pg, pi) => pageQs(pg).map((q, qi) => { n += 1; return secOf(pg.part) === "rc" ? `<button class="sheet-c ${s.picks[pi][qi] != null ? "on" : ""} ${pi === s.i ? "cur" : ""}" data-pg="${pi}">${n}</button>` : ""; }).join("")).join("");
-      modal(`<h3>답안지 <span class="small muted">RC ${rcAnswered}/${rcTotal} · 남은 시간 ${mockTimer(s)}</span></h3><div class="sheet">${cells}</div><div class="row" style="gap:8px;margin-top:12px"><button class="btn ghost" data-close style="flex:1">닫기</button><button class="btn" data-submit style="flex:1">제출하기</button></div>`, (box) => {
+      modal(T`<h3>답안지 <span class="small muted">RC ${rcAnswered}/${rcTotal} · 남은 시간 ${mockTimer(s)}</span></h3><div class="sheet">${cells}</div><div class="row" style="gap:8px;margin-top:12px"><button class="btn ghost" data-close style="flex:1">닫기</button><button class="btn" data-submit style="flex:1">제출하기</button></div>`, (box) => {
         box.querySelectorAll("[data-pg]").forEach((b) => b.addEventListener("click", () => { closeModal(); goPage(+b.dataset.pg); }));
         box.querySelector("[data-submit]").addEventListener("click", () => { closeModal(); trySubmit(); });
       });
@@ -2918,7 +2959,7 @@
     if (s.real && sec === "lc") {
       if (!s.paused && s.flowAt !== s.i) {
         s.flowAt = s.i; s.played[s.i] = true;
-        if (!s.realTold) { s.realTold = true; toast("실전 진행: 방송에 맞춰 자동으로 넘어가요"); }
+        if (!s.realTold) { s.realTold = true; toast(T`실전 진행: 방송에 맞춰 자동으로 넘어가요`); }
         setTimeout(() => { if (here() && !s.paused) realFlow(s); }, 500);
       }
     } else if (sec === "lc" && !s.played[s.i]) {
@@ -2929,8 +2970,8 @@
     const rp = $app.querySelector("[data-replay]") || $app.querySelector("[data-play34]");
     if (rp) rp.addEventListener("click", (e) => {
       e.stopImmediatePropagation();
-      if (s.real && sec === "lc") return toast("실전 진행에서는 방송에 맞춰 한 번만 들려줘요");
-      if (s.heard[s.i]) return toast("실전 모드에서는 다시 들을 수 없어요");
+      if (s.real && sec === "lc") return toast(T`실전 진행에서는 방송에 맞춰 한 번만 들려줘요`);
+      if (s.heard[s.i]) return toast(T`실전 모드에서는 다시 들을 수 없어요`);
       playPage();
     }, true);
     clearInterval(s.tick);
@@ -2940,7 +2981,7 @@
       if (el) el.textContent = mockTimer(s);
       if (Math.floor((Date.now() - s.rcStart) / 1000) % 15 === 0) saveMockRun(s);
       if (s.submitted) return clearInterval(s.tick);
-      if (Date.now() - s.rcStart >= s.rcMin * 60 * 1000 && !document.getElementById("modal")) { clearInterval(s.tick); toast("시간이 끝났어요. 답안을 제출할게요"); submitMock(); }
+      if (Date.now() - s.rcStart >= s.rcMin * 60 * 1000 && !document.getElementById("modal")) { clearInterval(s.tick); toast(T`시간이 끝났어요. 답안을 제출할게요`); submitMock(); }
     }, 1000);
     keyHandler = (e) => { if (e.key === "Escape") return askExit(); };
   }
@@ -2985,11 +3026,11 @@
     if (!needPractice(r)) return;
     if (!PR.diag) return go("#/home");
     const d = S.diag;
-    const body = `${topBar("10분 실력 진단", { back: true, sub: "20문제로 지금 실력을 알아봐요" })}
-      ${d ? `<section class="score-card"><div class="eyebrow">진단 결과 (${fmtDate(d.at)})</div><div class="big">${d.total}<small>점</small></div><div class="meta"><div><b>${d.lc}</b>LC</div><div><b>${d.rc}</b>RC</div><div><b>${Math.max(0, target() - d.total)}점</b>목표까지</div></div></section>
+    const body = `${topBar(T`10분 실력 진단`, { back: true, sub: T`20문제로 지금 실력을 알아봐요` })}
+      ${d ? T`<section class="score-card"><div class="eyebrow">진단 결과 (${fmtDate(d.at)})</div><div class="big">${d.total}<small>점</small></div><div class="meta"><div><b>${d.lc}</b>LC</div><div><b>${d.rc}</b>RC</div><div><b>${Math.max(0, target() - d.total)}점</b>목표까지</div></div></section>
         <p class="small muted" style="margin:12px 2px">진단은 한 번만 해요. 이제 실전 문제를 풀수록 예상 점수가 더 정확해지고, <b>하프 모의고사</b>로 실력을 다시 확인할 수 있어요.</p>
         <a class="btn block" href="#/mock">${ico("clock")}하프 모의고사 보러 가기</a>`
-      : `<section class="card">
+      : T`<section class="card">
         <div class="diag-steps">
           <div><span class="tico c-purple">${ico("ear")}</span><span><b>LC 10문제</b><span class="small muted">Part 2 응답 4 · Part 3 대화 3 · Part 4 담화 3 (음성은 한 번씩)</span></span></div>
           <div><span class="tico c-blue">${ico("book")}</span><span><b>RC 10문제 · 10분</b><span class="small muted">Part 5 빈칸 6 · Part 7 독해 4</span></span></div>
@@ -3000,17 +3041,17 @@
         <button class="btn ghost block" style="margin-top:10px" data-diag-later>나중에 할게요</button>`}`;
     shell("practice", body);
     const g = $app.querySelector("[data-diag-go]");
-    if (g) g.addEventListener("click", () => startMock(Object.assign({}, PR.diag, { title: "10분 실력 진단", rcMin: 10, diag: true })));
+    if (g) g.addEventListener("click", () => startMock(Object.assign({}, PR.diag, { title: T`10분 실력 진단`, rcMin: 10, diag: true })));
     const l = $app.querySelector("[data-diag-later]");
-    if (l) l.addEventListener("click", () => { toast("홈의 '10분 실력 진단'에서 언제든 할 수 있어요"); go("#/home"); });
+    if (l) l.addEventListener("click", () => { toast(T`홈의 '10분 실력 진단'에서 언제든 할 수 있어요`); go("#/home"); });
   }
   function offerHtml(lead) {
-    return `<section class="offer">
-      <div class="offer-h">${ico("crown")}<b>${lead || "토익핏 전체 열기"}</b></div>
+    return T`<section class="offer">
+      <div class="offer-h">${ico("crown")}<b>${lead || T`토익핏 전체 열기`}</b></div>
       <ul class="offer-list">
         <li>단어 <b>${NWORDS.toLocaleString()}개</b> 전체 · 원어민 음성 · 90일 코스</li>
         <li>Part 1~7 실전 문제 <b>전부</b> · 정답 근거 해설</li>
-        <li>하프 모의고사 <b>${(PR && PR.mocks ? PR.mocks.length : 4)}회</b>${PR && PR.full && PR.full.length ? ` + 정규 모의고사 <b>${PR.full.length}회</b>` : ""} · 예상 점수</li>
+        <li>하프 모의고사 <b>${(PR && PR.mocks ? PR.mocks.length : 4)}회</b>${PR && PR.full && PR.full.length ? T` + 정규 모의고사 <b>${PR.full.length}회</b>` : ""} · 예상 점수</li>
         <li>문법 강의 30주제 · LC 표현 · 받아쓰기 무제한</li>
       </ul>
       <button class="btn block" data-buy>${ico("crown")}전체 열기 ${esc(IAP.price || CONFIG.premium.price)} · 출시 할인</button>
@@ -3027,24 +3068,24 @@
     const mins = Math.round(daily * 0.35 + Math.min(daily, 60) * 0.2 + 10);
     const rate = Object.keys(parts).map((k) => [k, parts[k][0] / parts[k][1]]).sort((a, b) => a[1] - b[1]);
     const weak = rate.length && rate[0][1] < 1 ? rate[0][0] : null;
-    const hero = `<div class="result-hero"><div class="eyebrow muted">지금 실력 · 진단 20문제 기준</div><div class="score" style="color:var(--brand)">${est.total}<small>점</small></div><div class="msg">LC ${est.lc} · RC ${est.rc}</div>
-      <div class="diag-gap ${gap <= 0 ? "ok" : ""}">${gap > 0 ? `목표 <b>${target()}점</b>까지 <b>${gap}점</b> 남았어요` : `이미 목표 ${target()}점 수준이에요! 고득점 단어와 모의고사로 굳혀요`}</div></div>`;
-    const plan = `<div class="card diag-plan"><b>맞춤 학습 계획</b>
+    const hero = T`<div class="result-hero"><div class="eyebrow muted">지금 실력 · 진단 20문제 기준</div><div class="score" style="color:var(--brand)">${est.total}<small>점</small></div><div class="msg">LC ${est.lc} · RC ${est.rc}</div>
+      <div class="diag-gap ${gap <= 0 ? "ok" : ""}">${gap > 0 ? T`목표 <b>${target()}점</b>까지 <b>${gap}점</b> 남았어요` : T`이미 목표 ${target()}점 수준이에요! 고득점 단어와 모의고사로 굳혀요`}</div></div>`;
+    const plan = T`<div class="card diag-plan"><b>맞춤 학습 계획</b>
       <div><span class="pi">${ico("clock")}</span><span>하루 약 <b>${mins}분</b> · 새 단어 ${daily}개 + 복습 + 오늘의 실전</span></div>
-      ${dday != null && dday > 0 ? `<div><span class="pi">${ico("calendar")}</span><span>시험까지 <b>D-${dday}</b> · 매일 하면 목표 범위를 시험 전에 끝내요</span></div>` : ""}
-      ${weak ? `<div><span class="pi">${ico("target")}</span><span>가장 약한 파트 <b>${PART_LABEL[weak]}</b> · 오늘의 실전에서 먼저 연습해요</span></div>` : ""}
+      ${dday != null && dday > 0 ? T`<div><span class="pi">${ico("calendar")}</span><span>시험까지 <b>D-${dday}</b> · 매일 하면 목표 범위를 시험 전에 끝내요</span></div>` : ""}
+      ${weak ? T`<div><span class="pi">${ico("target")}</span><span>가장 약한 파트 <b>${PART_LABEL[weak]}</b> · 오늘의 실전에서 먼저 연습해요</span></div>` : ""}
       <div class="small muted" style="margin-top:6px">20문제로 낸 대략적인 점수예요. 실전 문제를 풀수록 예상 점수가 정확해져요.</div></div>`;
-    const tail = `<button class="btn ghost block" style="margin-top:10px" data-mrev>${ico("book")}진단 문제 해설 보기</button>`;
-    const actions = plan + (locked() ? offerHtml(gap > 0 ? `${gap}점, 토익핏으로 올려요` : "토익핏 전체 열기") + tail : `<button class="btn block" style="margin-top:12px" data-free>${ico("play")}학습 시작하기</button>` + tail);
+    const tail = T`<button class="btn ghost block" style="margin-top:10px" data-mrev>${ico("book")}진단 문제 해설 보기</button>`;
+    const actions = plan + (locked() ? offerHtml(gap > 0 ? T`${gap}점, 토익핏으로 올려요` : T`토익핏 전체 열기`) + tail : T`<button class="btn block" style="margin-top:12px" data-free>${ico("play")}학습 시작하기</button>` + tail);
     return { hero, actions };
   }
   function mockResultHtml(s) {
     const { est, stat, parts, attempt, first } = s.result;
     const gap = target() - est.total;
     const retake = attempt > 1;
-    const hero = `<div class="result-hero">${retake ? `<span class="badge bad" style="margin-bottom:6px">재응시 · ${attempt}회째</span>` : ""}<div class="eyebrow muted">${retake ? "다시 푼 점수 (참고용)" : "예상 점수 (추정)"}</div><div class="score" style="color:var(--brand)">${est.total}<small>점</small></div><div class="msg">LC ${est.lc} · RC ${est.rc}</div><p class="muted">LC ${stat.lc[0]}/${stat.lc[1]} · RC ${stat.rc[0]}/${stat.rc[1]} 정답</p>
-      ${retake ? `<div class="tip-box" style="margin-top:12px;text-align:left"><b>이미 풀어 본 문제라 실제보다 높게 나올 수 있어요.</b> 첫 응시 점수 <b>${first}점</b>이 더 정확한 기준이에요. 이번 결과는 예상 점수와 약점 분석에 넣지 않았어요. 틀린 문제 해설을 다시 보는 복습용으로 활용하세요.</div>` : ""}
-      <div class="tip-box" style="margin-top:12px;text-align:left">${gap <= 0 ? `<b>목표 ${target()}점 달성 수준이에요!</b> 남은 모의고사로 실력을 굳히고, 틀린 문제 해설을 꼭 보세요.` : `<b>목표 ${target()}점까지 약 ${gap}점</b> ${est.lc < est.rc ? "LC" : "RC"}가 상대적으로 약해요. 아래 파트별 정답률에서 낮은 파트부터 연습하세요.`}</div></div>`;
+    const hero = T`<div class="result-hero">${retake ? T`<span class="badge bad" style="margin-bottom:6px">재응시 · ${attempt}회째</span>` : ""}<div class="eyebrow muted">${retake ? T`다시 푼 점수 (참고용)` : T`예상 점수 (추정)`}</div><div class="score" style="color:var(--brand)">${est.total}<small>점</small></div><div class="msg">LC ${est.lc} · RC ${est.rc}</div><p class="muted">LC ${stat.lc[0]}/${stat.lc[1]} · RC ${stat.rc[0]}/${stat.rc[1]} 정답</p>
+      ${retake ? T`<div class="tip-box" style="margin-top:12px;text-align:left"><b>이미 풀어 본 문제라 실제보다 높게 나올 수 있어요.</b> 첫 응시 점수 <b>${first}점</b>이 더 정확한 기준이에요. 이번 결과는 예상 점수와 약점 분석에 넣지 않았어요. 틀린 문제 해설을 다시 보는 복습용으로 활용하세요.</div>` : ""}
+      <div class="tip-box" style="margin-top:12px;text-align:left">${gap <= 0 ? T`<b>목표 ${target()}점 달성 수준이에요!</b> 남은 모의고사로 실력을 굳히고, 틀린 문제 해설을 꼭 보세요.` : T`<b>목표 ${target()}점까지 약 ${gap}점</b> ${est.lc < est.rc ? "LC" : "RC"}가 상대적으로 약해요. 아래 파트별 정답률에서 낮은 파트부터 연습하세요.`}</div></div>`;
     const rows = Object.keys(parts).map((k) => { const [o, n] = parts[k]; const pct = Math.round((o / n) * 100); return `<div class="weak"><div class="spacer"><b>${PART_LABEL[k]}</b><div class="small muted">${o}/${n}</div></div><div class="wbar"><i style="width:${pct}%;background:${pct >= 80 ? "var(--ok)" : pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${pct}%</b></div>`; }).join("");
     return { hero, rows };
   }
@@ -3062,13 +3103,13 @@
     const st = { picks: s.picks[pi], graded: true, evQ: s.evQ, base: s.pages.slice(0, pi).reduce((n, x) => n + pageQs(x).length, 0) + 1 };
     let inner;
     if (p.part === "p2") {
-      const q = { q: p.q.prompt, qko: p.q.promptKo, o: p.q.options.map((o) => o.t), a: p.q.answer, exp: p.fm ? p.q.exp : `${p.item.key} = ${p.item.keyKo}${p.item.tip ? ` · ${p.item.tip}` : ""}`, type: p.fm ? p.q.ptype : "응답" };
+      const q = { q: p.q.prompt, qko: p.q.promptKo, o: p.q.options.map((o) => o.t), a: p.q.answer, exp: p.fm ? p.q.exp : `${p.item.key} = ${p.item.keyKo}${p.item.tip ? ` · ${p.item.tip}` : ""}`, type: p.fm ? p.q.ptype : T`응답` };
       inner = qBlock(q, 0, st.picks[0], "review");
     } else if (p.part === "p5") inner = qBlock(Object.assign({}, p.q, { q: p.q.s }), 0, st.picks[0], "review");
     else inner = setHtml(p.part, p.set, st, "review");
-    $app.innerHTML = `<div class="study ${p.part === "p7" ? "wide-study" : ""}"><div class="study-top"><button class="icon-btn back" data-back-res aria-label="결과로">${ico("x")}</button><div class="bar"><i style="width:${Math.round(((pi + 1) / s.pages.length) * 100)}%"></i></div><span class="cnt">${pi + 1} / ${s.pages.length}</span></div>
-      <div class="small muted" style="margin:0 2px 8px;font-weight:700">해설 · ${PART_LABEL[p.part]}${s.wrongOnly ? " · 틀린 문제만" : ""}</div>${inner}
-      <div class="study-foot"><div class="row" style="gap:8px"><button class="btn ghost" data-rprev style="flex:1" ${mockReviewNext(s, pi, -1) >= 0 ? "" : "disabled"}>이전</button><button class="btn" data-rnext style="flex:2">${mockReviewNext(s, pi, 1) < 0 ? "결과로" : "다음"}</button></div></div></div>`;
+    $app.innerHTML = T`<div class="study ${p.part === "p7" ? "wide-study" : ""}"><div class="study-top"><button class="icon-btn back" data-back-res aria-label="결과로">${ico("x")}</button><div class="bar"><i style="width:${Math.round(((pi + 1) / s.pages.length) * 100)}%"></i></div><span class="cnt">${pi + 1} / ${s.pages.length}</span></div>
+      <div class="small muted" style="margin:0 2px 8px;font-weight:700">해설 · ${PART_LABEL[p.part]}${s.wrongOnly ? T` · 틀린 문제만` : ""}</div>${inner}
+      <div class="study-foot"><div class="row" style="gap:8px"><button class="btn ghost" data-rprev style="flex:1" ${mockReviewNext(s, pi, -1) >= 0 ? "" : "disabled"}>이전</button><button class="btn" data-rnext style="flex:2">${mockReviewNext(s, pi, 1) < 0 ? T`결과로` : T`다음`}</button></div></div></div>`;
     const rerender = () => { const y = window.scrollY; s.evQ = st.evQ; vMockReview(); window.scrollTo(0, y); };
     if (p.set) bindSetCommon(p.part, p.set, st, rerender);
     if (p.part === "p2") $app.querySelector(".pq-h").insertAdjacentHTML("beforeend", ` <button class="play sm" data-p2say>${ico("vol")}</button>`);
@@ -3083,7 +3124,7 @@
 
   // ═════════════ 혼동 어휘 ═════════════
   function vConf() {
-    const body = `${topBar("혼동 어휘", { back: true, sub: "Part 5에서 자주 헷갈리는 단어 60세트" })}
+    const body = T`${topBar(T`혼동 어휘`, { back: true, sub: T`Part 5에서 자주 헷갈리는 단어 60세트` })}
       <button class="btn block" data-cq style="margin-bottom:14px">${ico("zap")}혼동 어휘 퀴즈 풀기</button>
       ${D.conf.map((c, idx) => `<div class="card" style="margin-top:10px"><div class="small muted" style="font-weight:700">${idx + 1}</div>
         ${c.words.map((x) => `<div class="kv"><span class="k en" style="min-width:110px">${esc(x.w)}</span><span class="badge pos">${POS_KO[x.pos] || x.pos}</span><span class="v">${esc(x.m)}</span></div>`).join("")}
@@ -3094,7 +3135,7 @@
 
   // ═════════════ 검색 ═════════════
   function vSearch() {
-    const body = `${topBar("단어 검색", { back: true })}
+    const body = T`${topBar(T`단어 검색`, { back: true })}
       <div class="search-box">${ico("search")}<input id="sq" type="search" placeholder="영어 또는 한국어 뜻으로 검색" value="${esc(ui.searchQ)}" autocomplete="off" autocapitalize="off" spellcheck="false" /></div>
       <div id="sres" style="margin-top:14px"></div>`;
     shell("search", body);
@@ -3103,8 +3144,8 @@
       ui.searchQ = input.value;
       const res = C.search(WORDS, input.value, 60);
       document.getElementById("sres").innerHTML = input.value.trim()
-        ? res.length ? `<div class="small muted" style="margin:0 2px 8px">${res.length}개</div><div class="wlist">${res.map(wordItem).join("")}</div>` : `<div class="empty">${ico("search")}<b>검색 결과가 없어요</b>철자를 확인하거나 다른 뜻으로 찾아보세요</div>`
-        : `<div class="empty">${ico("book")}<b>${NWORDS}개 토익 단어에서 찾아요</b>파생어·동의어·한국어 뜻으로도 검색돼요</div>`;
+        ? res.length ? T`<div class="small muted" style="margin:0 2px 8px">${res.length}개</div><div class="wlist">${res.map(wordItem).join("")}</div>` : T`<div class="empty">${ico("search")}<b>검색 결과가 없어요</b>철자를 확인하거나 다른 뜻으로 찾아보세요</div>`
+        : T`<div class="empty">${ico("book")}<b>${NWORDS}개 토익 단어에서 찾아요</b>파생어·동의어·한국어 뜻으로도 검색돼요</div>`;
     };
     input.addEventListener("input", run);
     run();
@@ -3134,7 +3175,7 @@
       const l = S.log[d];
       const n = l ? (l.new || 0) + (l.rev || 0) + (l.q || 0) : 0;
       const lv = n === 0 ? "" : n < 20 ? "l1" : n < 60 ? "l2" : "l3";
-      cells.push(`<i class="${lv} ${d === t ? "today" : ""}" title="${C.ymd(d)} · ${n}개"></i>`);
+      cells.push(T`<i class="${lv} ${d === t ? "today" : ""}" title="${C.ymd(d)} · ${n}개"></i>`);
     }
     // 최근 7일 막대
     const days7 = [];
@@ -3145,12 +3186,12 @@
       const nw = x.l.new || 0, rv = x.l.rev || 0;
       const h1 = (nw / max7) * (H - 24), h2 = (rv / max7) * (H - 24);
       const cx = 20 + i * ((W - 40) / 6);
-      const wd = ["일", "월", "화", "수", "목", "금", "토"][C.dayToDate(x.d).getDay()];
-      return `<rect x="${cx - bw / 2}" y="${H - 18 - h1}" width="${bw}" height="${h1}" rx="4" fill="var(--brand)"/><rect x="${cx - bw / 2}" y="${H - 18 - h1 - h2 - (h1 && h2 ? 2 : 0)}" width="${bw}" height="${h2}" rx="4" fill="var(--accent)"/><text x="${cx}" y="${H - 3}" text-anchor="middle" font-size="11" fill="var(--text-3)">${x.d === t ? "오늘" : wd}</text>`;
+      const wd = [T`일`, T`월`, T`화`, T`수`, T`목`, T`금`, T`토`][C.dayToDate(x.d).getDay()];
+      return `<rect x="${cx - bw / 2}" y="${H - 18 - h1}" width="${bw}" height="${h1}" rx="4" fill="var(--brand)"/><rect x="${cx - bw / 2}" y="${H - 18 - h1 - h2 - (h1 && h2 ? 2 : 0)}" width="${bw}" height="${h2}" rx="4" fill="var(--accent)"/><text x="${cx}" y="${H - 3}" text-anchor="middle" font-size="11" fill="var(--text-3)">${x.d === t ? T`오늘` : wd}</text>`;
     }).join("");
     const testsDone = Object.keys(S.tests).length;
     const passed = Object.values(S.tests).filter((x) => x.best >= 80).length;
-    const body = `${topBar("학습 통계", { sub: `목표 ${target()}점 · ${C.scoreBand(target()).label}` })}
+    const body = T`${topBar(T`학습 통계`, { sub: T`목표 ${target()}점 · ${C.scoreBand(target()).label}` })}
       <div class="grid2">
         <div class="card"><div class="stat-num">${sum.mastered.toLocaleString()}</div><div class="stat-lbl">암기 완료 / ${P.length.toLocaleString()}</div></div>
         <div class="card"><div class="stat-num">${sum.seen.toLocaleString()}</div><div class="stat-lbl">학습한 단어</div></div>
@@ -3158,23 +3199,23 @@
         <div class="card"><div class="stat-num">${sum.accuracy == null ? "–" : sum.accuracy + "%"}</div><div class="stat-lbl">정답률</div></div>
       </div>
       <div class="card" style="margin-top:12px"><div class="row"><span class="tico c-blue" style="width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center">${ico("cal")}</span>
-        <div class="spacer"><b>${sum.seen >= P.length ? "목표 범위 1회독 완료!" : `이 속도면 ${fmtDate(finish)}에 1회독 완료`}</b>
-        <div class="small muted">${exam != null ? (finish <= exam - 3 ? `시험(${fmtDate(exam)}) 전에 여유 있게 끝나요 👍` : S.profile.daily >= 80 || finish > exam + 14 ? `시험(${fmtDate(exam)}) 전에는 쉬운 단어부터 보고, 실전 문제에 시간을 더 쓰세요` : `시험(${fmtDate(exam)})에 맞추려면 하루 학습량을 늘려 보세요`) : "설정에서 시험일을 정하면 맞춰서 알려 드려요"}</div></div></div></div>
+        <div class="spacer"><b>${sum.seen >= P.length ? T`목표 범위 1회독 완료!` : T`이 속도면 ${fmtDate(finish)}에 1회독 완료`}</b>
+        <div class="small muted">${exam != null ? (finish <= exam - 3 ? T`시험(${fmtDate(exam)}) 전에 여유 있게 끝나요 👍` : S.profile.daily >= 80 || finish > exam + 14 ? T`시험(${fmtDate(exam)}) 전에는 쉬운 단어부터 보고, 실전 문제에 시간을 더 쓰세요` : T`시험(${fmtDate(exam)})에 맞추려면 하루 학습량을 늘려 보세요`) : T`설정에서 시험일을 정하면 맞춰서 알려 드려요`}</div></div></div></div>
       <div class="section"><div class="section-h"><h2>난이도별 진도</h2></div><div class="card">${progressBlock(P)}</div></div>
       <div class="section"><div class="section-h"><h2>최근 7일</h2></div><div class="card"><svg class="chart-7" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="최근 7일 학습량">${bars}</svg>
         <div class="legend"><span><i style="background:var(--brand)"></i>새 단어</span><span><i style="background:var(--accent)"></i>복습</span></div></div></div>
-      <div class="section"><div class="section-h"><h2>학습 달력 (4주)</h2></div><div class="card"><div class="heat heat-wrap">${["월", "화", "수", "목", "금", "토", "일"].map((x) => `<span class="small muted" style="text-align:center">${x}</span>`).join("")}${cells.join("")}</div></div></div>
+      <div class="section"><div class="section-h"><h2>학습 달력 (4주)</h2></div><div class="card"><div class="heat heat-wrap">${[T`월`, T`화`, T`수`, T`목`, T`금`, T`토`, T`일`].map((x) => `<span class="small muted" style="text-align:center">${x}</span>`).join("")}${cells.join("")}</div></div></div>
       ${(() => {
         const pred = C.predictScore(S.pr);
         const weak = C.weakTypes(S.qt).slice(0, 3);
         const nPr = (S.pr.lc || []).length + (S.pr.rc || []).length;
         if (!nPr) return "";
-        return `<div class="section"><div class="section-h"><h2>실전 문제</h2><a class="small" href="#/practice">실전으로 →</a></div><div class="card">
-          <div class="row"><div class="spacer"><div class="stat-num">${pred ? pred.total : "–"}<span class="muted" style="font-size:16px">${pred ? `점 (LC ${pred.lc} · RC ${pred.rc})` : ""}</span></div><div class="stat-lbl">${pred ? "예상 점수 (최근 정답률로 추정)" : "LC·RC 각 30문제를 풀면 예상 점수가 나와요"}</div></div></div>
+        return T`<div class="section"><div class="section-h"><h2>실전 문제</h2><a class="small" href="#/practice">실전으로 →</a></div><div class="card">
+          <div class="row"><div class="spacer"><div class="stat-num">${pred ? pred.total : "–"}<span class="muted" style="font-size:16px">${pred ? T`점 (LC ${pred.lc} · RC ${pred.rc})` : ""}</span></div><div class="stat-lbl">${pred ? T`예상 점수 (최근 정답률로 추정)` : T`LC·RC 각 30문제를 풀면 예상 점수가 나와요`}</div></div></div>
           ${weak.length ? `<div style="margin-top:12px">${weak.map((w) => `<div class="weak"><div class="spacer"><b>${PART_LABEL[w.part] || w.part} · ${esc(w.type)}</b></div><div class="wbar"><i style="width:${w.pct}%;background:${w.pct >= 80 ? "var(--ok)" : w.pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${w.pct}%</b></div>`).join("")}</div>` : ""}</div></div>`;
       })()}
       <div class="section"><div class="section-h"><h2>Day 테스트</h2></div><div class="card"><div class="row"><div class="spacer"><div class="stat-num">${passed}<span class="muted" style="font-size:16px"> / ${NDAYS}</span></div><div class="stat-lbl">통과한 Day (80점 이상) · 응시 ${testsDone}</div></div></div>
-        <div class="heat" style="grid-template-columns:repeat(10,1fr);margin-top:12px">${DAYS.map((d) => { const x = S.tests[d.day]; return `<a href="#/day/${d.day}" title="DAY ${d.day}${x ? ` · ${x.best}점` : ""}" style="aspect-ratio:1;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;background:${x ? (x.best >= 80 ? "var(--ok)" : "var(--accent)") : "var(--bg-sunk)"};color:${x ? "#fff" : "var(--text-3)"}">${d.day}</a>`; }).join("")}</div></div></div>`;
+        <div class="heat" style="grid-template-columns:repeat(10,1fr);margin-top:12px">${DAYS.map((d) => { const x = S.tests[d.day]; return `<a href="#/day/${d.day}" title="DAY ${d.day}${x ? T` · ${x.best}점` : ""}" style="aspect-ratio:1;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;background:${x ? (x.best >= 80 ? "var(--ok)" : "var(--accent)") : "var(--bg-sunk)"};color:${x ? "#fff" : "var(--text-3)"}">${d.day}</a>`; }).join("")}</div></div></div>`;
     shell("stats", body);
   }
 
@@ -3184,13 +3225,13 @@
     mission("guide");
     const step = (n, ic, cls, t, d) => `<div class="g-step"><span class="g-n">${n}</span><span class="tico ${cls}">${ico(ic)}</span><div class="spacer"><b>${t}</b><div class="small muted">${d}</div></div></div>`;
     const faq = (q, a) => `<details class="faq"><summary>${q}</summary><div>${a}</div></details>`;
-    const body = `${topBar("사용 가이드", { back: true, sub: "3분이면 토익핏을 제대로 쓰는 법을 알 수 있어요" })}
+    const body = T`${topBar(T`사용 가이드`, { back: true, sub: T`3분이면 토익핏을 제대로 쓰는 법을 알 수 있어요` })}
       <section class="card g-card">
         <h2 class="g-h">${ico("calendar")}하루 학습 루틴</h2>
         <p class="small muted" style="margin:0 0 10px">홈의 <b>오늘의 학습</b> 버튼이 아래 순서대로 다음 할 일을 알려 줘요. 버튼만 따라가면 돼요.</p>
-        ${step(1, "repeat", "c-orange", "복습 먼저", "어제까지 외운 단어 중 잊을 때가 된 것부터. 먼저 하면 기억이 오래가요.")}
-        ${step(2, "layers", "c-blue", "새 단어", `목표 ${target()}점에 맞춘 하루 ${S.profile.daily}개. 카드로 뜻을 확인하고 퀴즈로 마무리해요.`)}
-        ${step(3, "target", "c-green", "오늘의 실전", "목표 점수와 진도에 맞춘 실전 문제 10분. 시험 2주 전부터는 하프 모의고사가 나와요.")}
+        ${step(1, "repeat", "c-orange", T`복습 먼저`, T`어제까지 외운 단어 중 잊을 때가 된 것부터. 먼저 하면 기억이 오래가요.`)}
+        ${step(2, "layers", "c-blue", T`새 단어`, T`목표 ${target()}점에 맞춘 하루 ${S.profile.daily}개. 카드로 뜻을 확인하고 퀴즈로 마무리해요.`)}
+        ${step(3, "target", "c-green", T`오늘의 실전`, T`목표 점수와 진도에 맞춘 실전 문제 10분. 시험 2주 전부터는 하프 모의고사가 나와요.`)}
       </section>
       <section class="card g-card">
         <h2 class="g-h">${ico("layers")}단어 카드 버튼의 뜻</h2>
@@ -3199,7 +3240,7 @@
       </section>
       <section class="card g-card">
         <h2 class="g-h">${ico("repeat")}복습은 언제 나와요?</h2>
-        <div class="g-ladder">${["1일", "3일", "7일", "14일", "30일"].map((d, i) => `<div><b>${d}</b><span>${i === 0 ? "첫 복습" : i === 3 ? "암기 완료" : ""}</span></div>`).join("")}</div>
+        <div class="g-ladder">${[T`1일`, T`3일`, T`7일`, T`14일`, T`30일`].map((d, i) => `<div><b>${d}</b><span>${i === 0 ? T`첫 복습` : i === 3 ? T`암기 완료` : ""}</span></div>`).join("")}</div>
         <p class="small muted" style="margin:10px 0 0">맞힐 때마다 다음 복습까지의 간격이 늘어나고, 틀리면 처음부터 다시 짧아져요. 14일 간격까지 올라가면 <b>암기 완료</b>로 쳐요. 틀린 단어는 <b>복습 → 오답노트</b>에 자동으로 모여요.</p>
       </section>
       <section class="card g-card">
@@ -3222,14 +3263,14 @@
       </section>
       <div class="section-h" style="margin-top:18px"><h2>자주 묻는 질문</h2></div>
       <div class="card faq-list">
-        ${faq("하루 몇 개씩 외우는 게 좋아요?", "목표 점수와 시험일로 계산한 양이 기본이에요. 바쁘면 줄여도 되지만 <b>복습은 매일</b> 하는 게 중요해요. 설정 → 학습 계획에서 언제든 바꿀 수 있어요.")}
-        ${faq("하루를 건너뛰면 어떻게 돼요?", "밀린 복습이 다음 날 한꺼번에 나와요. 많으면 오늘은 복습만 해도 괜찮아요. 새 단어는 복습을 끝낸 뒤에 이어서 하세요.")}
-        ${faq("이미 아는 단어가 너무 많이 나와요", "설정 → <b>어휘 진단</b>을 해 보세요. 3분이면 아는 단계의 단어를 건너뛰게 해 드려요. 카드에서 바로 '알아요'를 눌러도 돼요.")}
-        ${faq("목표 점수를 바꾸면 기록이 지워지나요?", "아니요. 외운 단어와 문제 기록은 그대로이고, 앞으로 나올 단어의 범위와 난이도만 바뀌어요.")}
-        ${faq("인터넷이 없어도 되나요?", "네. 단어·음성·문제가 모두 앱 안에 들어 있어서 비행기 모드에서도 쓸 수 있어요.")}
-        ${faq("기록을 새 폰으로 옮기려면?", "설정 → <b>학습 기록 백업</b>으로 파일을 만들고, 새 폰에서 <b>백업 불러오기</b>를 하세요. 기록은 이 기기에만 저장돼요.")}
-        ${faq("실전 진행과 내 속도로는 뭐가 달라요?", "<b>실전 진행</b>은 실제 시험처럼 안내 방송과 번호를 들려주고, 답 고르는 시간이 지나면 저절로 다음 문제로 넘어가요. 다시 듣기가 없어서 시험장 감각을 익히기 좋아요. <b>내 속도로</b>는 문제를 한 번 들려준 뒤 직접 '다음'을 눌러 넘겨요. 시험 2~3주 전부터는 실전 진행으로 풀어 보는 걸 추천해요. 실전 진행 중에 전화가 오면 <b>일시정지</b>를 누르세요. 계속하면 그 문제부터 다시 들려줘요.")}
-        ${faq("실전 문제는 기출 문제인가요?", "아니요. 모든 문제는 실제 토익 형식에 맞춰 새로 만든 문제예요. 정답 근거와 해석까지 모두 들어 있어요.")}
+        ${faq(T`하루 몇 개씩 외우는 게 좋아요?`, T`목표 점수와 시험일로 계산한 양이 기본이에요. 바쁘면 줄여도 되지만 <b>복습은 매일</b> 하는 게 중요해요. 설정 → 학습 계획에서 언제든 바꿀 수 있어요.`)}
+        ${faq(T`하루를 건너뛰면 어떻게 돼요?`, T`밀린 복습이 다음 날 한꺼번에 나와요. 많으면 오늘은 복습만 해도 괜찮아요. 새 단어는 복습을 끝낸 뒤에 이어서 하세요.`)}
+        ${faq(T`이미 아는 단어가 너무 많이 나와요`, T`설정 → <b>어휘 진단</b>을 해 보세요. 3분이면 아는 단계의 단어를 건너뛰게 해 드려요. 카드에서 바로 '알아요'를 눌러도 돼요.`)}
+        ${faq(T`목표 점수를 바꾸면 기록이 지워지나요?`, T`아니요. 외운 단어와 문제 기록은 그대로이고, 앞으로 나올 단어의 범위와 난이도만 바뀌어요.`)}
+        ${faq(T`인터넷이 없어도 되나요?`, T`네. 단어·음성·문제가 모두 앱 안에 들어 있어서 비행기 모드에서도 쓸 수 있어요.`)}
+        ${faq(T`기록을 새 폰으로 옮기려면?`, T`설정 → <b>학습 기록 백업</b>으로 파일을 만들고, 새 폰에서 <b>백업 불러오기</b>를 하세요. 기록은 이 기기에만 저장돼요.`)}
+        ${faq(T`실전 진행과 내 속도로는 뭐가 달라요?`, T`<b>실전 진행</b>은 실제 시험처럼 안내 방송과 번호를 들려주고, 답 고르는 시간이 지나면 저절로 다음 문제로 넘어가요. 다시 듣기가 없어서 시험장 감각을 익히기 좋아요. <b>내 속도로</b>는 문제를 한 번 들려준 뒤 직접 '다음'을 눌러 넘겨요. 시험 2~3주 전부터는 실전 진행으로 풀어 보는 걸 추천해요. 실전 진행 중에 전화가 오면 <b>일시정지</b>를 누르세요. 계속하면 그 문제부터 다시 들려줘요.`)}
+        ${faq(T`실전 문제는 기출 문제인가요?`, T`아니요. 모든 문제는 실제 토익 형식에 맞춰 새로 만든 문제예요. 정답 근거와 해석까지 모두 들어 있어요.`)}
       </div>
       <div class="grid2" style="margin-top:16px">
         <button class="btn ghost" data-guide-mis>${ico("list")}시작 미션 다시 보기</button>
@@ -3240,35 +3281,35 @@
       if (!S.guide) S.guide = { start: today(), done: {}, hide: false };
       S.guide.hide = false;
       save();
-      toast("홈 화면에 시작 미션을 다시 띄웠어요");
+      toast(T`홈 화면에 시작 미션을 다시 띄웠어요`);
       go("#/home");
     });
-    $app.querySelector("[data-guide-tips]").addEventListener("click", () => { S.tips = {}; save(); toast("화면마다 팁이 다시 한 번씩 나와요"); });
+    $app.querySelector("[data-guide-tips]").addEventListener("click", () => { S.tips = {}; save(); toast(T`화면마다 팁이 다시 한 번씩 나와요`); });
   }
   function vSettings() {
     const p = S.profile;
     const s = S.settings;
     const sw = (k, label, desc) => `<label class="set-row"><span class="sl"><b>${label}</b>${desc ? `<span>${desc}</span>` : ""}</span><span class="switch"><input type="checkbox" data-set="${k}" ${s[k] ? "checked" : ""}/><span></span></span></label>`;
-    const body = `${topBar("설정")}
+    const body = T`${topBar(T`설정`)}
       <div class="set-title">학습 계획</div>
       <div class="set-group">
-        <a class="set-row" href="#/onboarding"><span class="sl"><b>목표 점수 · 시험일 · 하루 학습량</b><span>${p.target}점 · ${p.examDate ? `시험 ${fmtDate(C.parseYmd(p.examDate))}` : "시험일 미정"} · 하루 ${p.daily}개</span></span>${ico("right")}</a>
-        <button class="set-row" data-place><span class="sl"><b>어휘 진단 ${S.profile.placed ? "다시 하기" : "하기"}</b><span>${(S.profile.skip || []).length ? `지금 ${S.profile.skip.map((t) => C.TIER_NAMES[t]).join("·")} 단어를 건너뛰는 중` : "3분 테스트로 아는 단어를 건너뛰어요"}</span></span>${ico("gauge")}</button>
-        ${(S.profile.skip || []).length ? `<button class="set-row" data-unskip><span class="sl"><b>건너뛴 단어 다시 포함</b><span>${S.profile.skip.map((t) => C.TIER_NAMES[t]).join("·")} 단어를 오늘의 학습에 다시 넣어요</span></span>${ico("repeat")}</button>` : ""}
-        ${Notify.available() ? `${sw("remind", "매일 학습 알림", "정한 시간에 오늘의 단어를 알려 드려요")}
+        <a class="set-row" href="#/onboarding"><span class="sl"><b>목표 점수 · 시험일 · 하루 학습량</b><span>${p.target}점 · ${p.examDate ? T`시험 ${fmtDate(C.parseYmd(p.examDate))}` : T`시험일 미정`} · 하루 ${p.daily}개</span></span>${ico("right")}</a>
+        <button class="set-row" data-place><span class="sl"><b>어휘 진단 ${S.profile.placed ? T`다시 하기` : T`하기`}</b><span>${(S.profile.skip || []).length ? T`지금 ${S.profile.skip.map((t) => C.TIER_NAMES[t]).join("·")} 단어를 건너뛰는 중` : T`3분 테스트로 아는 단어를 건너뛰어요`}</span></span>${ico("gauge")}</button>
+        ${(S.profile.skip || []).length ? T`<button class="set-row" data-unskip><span class="sl"><b>건너뛴 단어 다시 포함</b><span>${S.profile.skip.map((t) => C.TIER_NAMES[t]).join("·")} 단어를 오늘의 학습에 다시 넣어요</span></span>${ico("repeat")}</button>` : ""}
+        ${Notify.available() ? T`${sw("remind", T`매일 학습 알림`, T`정한 시간에 오늘의 단어를 알려 드려요`)}
         <label class="set-row"><span class="sl"><b>알림 시간</b></span><input type="time" class="field" data-remind-at value="${esc(s.remindAt)}" style="width:130px;height:40px" ${s.remind ? "" : "disabled"} /></label>` : ""}
       </div>
       <div class="set-title">소리</div>
       <div class="set-group">
-        ${sw("autoWord", "단어 발음 자동 재생", "카드·상세 화면에서 단어가 나오면 바로 들려줘요")}
-        ${sw("autoEx", "예문 자동 재생", "카드를 뒤집으면 예문을 읽어 줘요")}
+        ${sw("autoWord", T`단어 발음 자동 재생`, T`카드·상세 화면에서 단어가 나오면 바로 들려줘요`)}
+        ${sw("autoEx", T`예문 자동 재생`, T`카드를 뒤집으면 예문을 읽어 줘요`)}
         <div class="set-row"><span class="sl"><b>재생 속도</b></span><div class="seg">${[0.8, 1, 1.2].map((r) => `<button class="${s.rate === r ? "on" : ""}" data-rate="${r}">${r}x</button>`).join("")}</div></div>
-        ${sw("sfx", "효과음", "정답·오답 소리")}
+        ${sw("sfx", T`효과음`, T`정답·오답 소리`)}
       </div>
       <div class="set-title">화면</div>
       <div class="set-group">
-        <div class="set-row"><span class="sl"><b>테마</b></span><div class="seg">${[["system", "자동"], ["light", "밝게"], ["dark", "어둡게"]].map(([k, l]) => `<button class="${s.theme === k ? "on" : ""}" data-theme="${k}">${l}</button>`).join("")}</div></div>
-        ${sw("showKo", "예문 해석 보기", "끄면 영어 예문만 보여요")}
+        <div class="set-row"><span class="sl"><b>테마</b></span><div class="seg">${[["system", T`자동`], ["light", T`밝게`], ["dark", T`어둡게`]].map(([k, l]) => `<button class="${s.theme === k ? "on" : ""}" data-theme="${k}">${l}</button>`).join("")}</div></div>
+        ${sw("showKo", T`예문 해석 보기`, T`끄면 영어 예문만 보여요`)}
       </div>
       <div class="set-title">데이터</div>
       <div class="set-group">
@@ -3276,7 +3317,7 @@
         <button class="set-row" data-import><span class="sl"><b>백업 불러오기</b></span>${ico("upload")}</button>
         <button class="set-row" data-reset><span class="sl"><b style="color:var(--bad)">학습 기록 초기화</b><span>모든 진도와 기록을 지워요</span></span>${ico("trash")}</button>
       </div>
-      ${CONFIG.premium.enabled ? `<div class="set-title">프리미엄</div><div class="set-group"><a class="set-row" href="#/premium"><span class="sl"><b>${S.premium ? "프리미엄 이용 중" : `프리미엄으로 전체 ${NDAYS}일 열기`}</b></span>${ico("crown")}</a></div>` : ""}
+      ${CONFIG.premium.enabled ? T`<div class="set-title">프리미엄</div><div class="set-group"><a class="set-row" href="#/premium"><span class="sl"><b>${S.premium ? T`프리미엄 이용 중` : T`프리미엄으로 전체 ${NDAYS}일 열기`}</b></span>${ico("crown")}</a></div>` : ""}
       <div class="set-title">도움말</div>
       <div class="set-group">
         <a class="set-row" href="#/guide"><span class="sl"><b>사용 가이드</b><span>하루 학습 루틴 · 복습 원리 · 예상 점수 · 자주 묻는 질문</span></span>${ico("right")}</a>
@@ -3294,8 +3335,8 @@
       s[c.dataset.set] = c.checked;
       if (c.dataset.set === "remind") {
         const ok = await Notify.apply();
-        if (s.remind && !ok) { s.remind = false; toast("알림 권한을 허용해야 알림을 받을 수 있어요"); }
-        else toast(s.remind ? `매일 ${s.remindAt}에 알려 드릴게요` : "학습 알림을 껐어요");
+        if (s.remind && !ok) { s.remind = false; toast(T`알림 권한을 허용해야 알림을 받을 수 있어요`); }
+        else toast(s.remind ? T`매일 ${s.remindAt}에 알려 드릴게요` : T`학습 알림을 껐어요`);
         if (s.remind) mission("remind");
         save();
         return vSettings();
@@ -3303,22 +3344,22 @@
       save();
     }));
     const ra = $app.querySelector("[data-remind-at]");
-    if (ra) ra.addEventListener("change", async () => { if (!ra.value) return; s.remindAt = ra.value; save(); await Notify.apply(); toast(`매일 ${s.remindAt}에 알려 드릴게요`); });
+    if (ra) ra.addEventListener("change", async () => { if (!ra.value) return; s.remindAt = ra.value; save(); await Notify.apply(); toast(T`매일 ${s.remindAt}에 알려 드릴게요`); });
     $app.querySelectorAll("[data-rate]").forEach((b) => b.addEventListener("click", () => { s.rate = +b.dataset.rate; save(); vSettings(); }));
     $app.querySelectorAll("[data-theme]").forEach((b) => b.addEventListener("click", () => { s.theme = b.dataset.theme; applyTheme(); save(); vSettings(); }));
     $app.querySelector("[data-export]").addEventListener("click", exportData);
     $app.querySelector("[data-place]").addEventListener("click", startPlacement);
     const us = $app.querySelector("[data-unskip]");
-    if (us) us.addEventListener("click", () => { S.profile.skip = []; save(true); toast("건너뛴 단어를 다시 포함했어요"); vSettings(); });
+    if (us) us.addEventListener("click", () => { S.profile.skip = []; save(true); toast(T`건너뛴 단어를 다시 포함했어요`); vSettings(); });
     const file = document.getElementById("importFile");
     $app.querySelector("[data-import]").addEventListener("click", () => file.click());
     file.addEventListener("change", () => importData(file.files[0]));
     $app.querySelector("[data-reset]").addEventListener("click", async () => {
-      if (!(await confirmBox("학습 기록을 모두 지울까요?", "진도·오답노트·통계가 모두 사라지고 되돌릴 수 없어요. 먼저 백업을 권해요.", "모두 지우기", true))) return;
+      if (!(await confirmBox(T`학습 기록을 모두 지울까요?`, T`진도·오답노트·통계가 모두 사라지고 되돌릴 수 없어요. 먼저 백업을 권해요.`, T`모두 지우기`, true))) return;
       const keep = { settings: S.settings, premium: S.premium };
       S = Object.assign(DEFAULT_STATE(), keep);
       save(true);
-      toast("초기화했어요");
+      toast(T`초기화했어요`);
       go("#/onboarding");
     });
   }
@@ -3334,10 +3375,10 @@
     if (P && P.Filesystem && P.Share) {
       try {
         const r = await P.Filesystem.writeFile({ path: name, data: json, directory: "CACHE", encoding: "utf8" });
-        await P.Share.share({ title: "토익핏 백업", text: "학습 기록 백업 파일", url: r.uri, dialogTitle: "백업 파일 저장·보내기" });
-        toast("백업 파일을 만들었어요");
+        await P.Share.share({ title: T`토익핏 백업`, text: T`학습 기록 백업 파일`, url: r.uri, dialogTitle: T`백업 파일 저장·보내기` });
+        toast(T`백업 파일을 만들었어요`);
       } catch (e) {
-        if (!/cancel/i.test(String(e && e.message))) toast("백업 파일을 만들지 못했어요");
+        if (!/cancel/i.test(String(e && e.message))) toast(T`백업 파일을 만들지 못했어요`);
       }
       return;
     }
@@ -3348,7 +3389,7 @@
     document.body.appendChild(a);
     a.click();
     setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
-    toast("백업 파일을 저장했어요");
+    toast(T`백업 파일을 저장했어요`);
   }
   function importData(f) {
     if (!f) return;
@@ -3357,22 +3398,22 @@
       try {
         const j = JSON.parse(rd.result);
         if ((j.app !== "toeicfit" && j.app !== "vocafit-toeic") || !j.state || !j.state.words) throw new Error("bad");
-        if (!(await confirmBox("백업을 불러올까요?", "지금 기기의 학습 기록을 백업 파일 내용으로 바꿔요.", "불러오기"))) return;
+        if (!(await confirmBox(T`백업을 불러올까요?`, T`지금 기기의 학습 기록을 백업 파일 내용으로 바꿔요.`, T`불러오기`))) return;
         const keepPremium = S.premium; // 구매 여부는 백업 파일로 바꿀 수 없다
         S = sanitize(j.state);
         S.premium = keepPremium;
         save(true);
         applyTheme();
-        toast("백업을 불러왔어요");
+        toast(T`백업을 불러왔어요`);
         go("#/home");
       } catch (e) {
-        toast("올바른 백업 파일이 아니에요");
+        toast(T`올바른 백업 파일이 아니에요`);
       }
     };
     rd.readAsText(f);
   }
   function vLicenses() {
-    const body = `${topBar("오픈소스 라이선스", { back: true })}
+    const body = T`${topBar(T`오픈소스 라이선스`, { back: true })}
       <div class="card"><b>CMU Pronouncing Dictionary</b><p class="small muted">발음기호 생성에 사용. Copyright (C) 1993-2015 Carnegie Mellon University. BSD 2-Clause License.</p>
       <b>Kokoro-82M</b><p class="small muted">모든 단어·예문·문장 음성 합성에 사용. Copyright hexgrad. Apache License 2.0.</p>
       <b>Pretendard</b><p class="small muted">앱 글꼴. Copyright 2021 Kil Hyung-jin. SIL Open Font License 1.1.</p>
@@ -3400,18 +3441,18 @@
       try {
         const r = await N.getPurchases({ productType: "inapp" });
         const own = ((r && r.purchases) || []).some((p) => p.productIdentifier === CONFIG.premium.productId && (p.purchaseState == null || String(p.purchaseState) === "1"));
-        if (own !== S.premium) { S.premium = own; save(true); if (announce) toast(own ? "구매 내역을 복원했어요" : "복원할 구매 내역이 없어요"); render(); }
-        else if (announce) toast(own ? "이미 전체 이용 중이에요" : "복원할 구매 내역이 없어요");
+        if (own !== S.premium) { S.premium = own; save(true); if (announce) toast(own ? T`구매 내역을 복원했어요` : T`복원할 구매 내역이 없어요`); render(); }
+        else if (announce) toast(own ? T`이미 전체 이용 중이에요` : T`복원할 구매 내역이 없어요`);
         return own;
-      } catch (e) { if (announce) toast("구매 내역을 확인하지 못했어요"); return null; }
+      } catch (e) { if (announce) toast(T`구매 내역을 확인하지 못했어요`); return null; }
     },
   };
-  const PAY_REASON = { set: "무료 체험은 파트마다 1세트까지예요", grammar: "무료 체험은 문법 1주제까지예요", lc: "무료 체험은 LC 퀴즈 1회까지예요", dict: "무료 체험은 받아쓰기 1회까지예요", mock: "무료 체험은 하프 모의고사 1회까지예요", day: `무료 체험은 Day 1~${CONFIG.premium.freeDays}까지예요`, full: "정규 모의고사는 전체 이용권에서 풀 수 있어요", timed: "시간 압박 훈련은 전체 이용권에서 쓸 수 있어요" };
+  const PAY_REASON = { set: T`무료 체험은 파트마다 1세트까지예요`, grammar: T`무료 체험은 문법 1주제까지예요`, lc: T`무료 체험은 LC 퀴즈 1회까지예요`, dict: T`무료 체험은 받아쓰기 1회까지예요`, mock: T`무료 체험은 하프 모의고사 1회까지예요`, day: T`무료 체험은 Day 1~${CONFIG.premium.freeDays}까지예요`, full: T`정규 모의고사는 전체 이용권에서 풀 수 있어요`, timed: T`시간 압박 훈련은 전체 이용권에서 쓸 수 있어요` };
   function vPremium(r) {
     const from = (r && r.q && r.q.from) || "";
-    const body = `${topBar("토익핏 전체 열기", { back: true })}
-      ${S.premium ? `<div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">전체 이용 중이에요</h2><p class="muted">모든 단어·실전 문제·모의고사를 제한 없이 쓸 수 있어요. 감사합니다!</p></div>`
-        : `<div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">${esc(PAY_REASON[from] || "토익 준비, 앱 하나로 끝까지")}</h2><p class="muted">한 번 결제로 모든 기능을 평생 이용해요</p></div>${offerHtml()}`}
+    const body = T`${topBar(T`토익핏 전체 열기`, { back: true })}
+      ${S.premium ? T`<div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">전체 이용 중이에요</h2><p class="muted">모든 단어·실전 문제·모의고사를 제한 없이 쓸 수 있어요. 감사합니다!</p></div>`
+        : T`<div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">${esc(PAY_REASON[from] || T`토익 준비, 앱 하나로 끝까지`)}</h2><p class="muted">한 번 결제로 모든 기능을 평생 이용해요</p></div>${offerHtml()}`}
       <button class="btn ghost block" style="margin-top:10px" data-restore>구매 복원</button>
       <p class="small muted" style="text-align:center;margin-top:12px">결제는 Google Play·App Store 계정으로 안전하게 처리돼요. 구독이 아니라 자동 결제가 없어요.</p>`;
     shell("settings", body);
@@ -3423,13 +3464,13 @@
   }
   async function restorePremium() {
     const N = IAP.N();
-    if (!N) return toast("구매 복원은 스토어에서 설치한 앱에서 할 수 있어요");
+    if (!N) return toast(T`구매 복원은 스토어에서 설치한 앱에서 할 수 있어요`);
     try { await N.restorePurchases(); } catch (e) { /* 안드로이드는 조회만으로 충분 */ }
     await IAP.sync(true);
   }
   async function purchasePremium(btn) {
     const N = IAP.N();
-    if (!N) return toast("결제는 스토어에서 설치한 앱에서 할 수 있어요");
+    if (!N) return toast(T`결제는 스토어에서 설치한 앱에서 할 수 있어요`);
     if (btn) btn.disabled = true;
     try {
       const t = await N.purchaseProduct({ productIdentifier: CONFIG.premium.productId, productType: "inapp" });
@@ -3438,13 +3479,13 @@
         S.premium = true;
         save(true);
         confetti();
-        toast("전체 이용권이 열렸어요! 마음껏 공부하세요");
+        toast(T`전체 이용권이 열렸어요! 마음껏 공부하세요`);
         session = null; studyPushed = false;
         location.replace("#/home");
-      } else toast("결제 승인을 기다리는 중이에요. 완료되면 자동으로 열려요");
+      } else toast(T`결제 승인을 기다리는 중이에요. 완료되면 자동으로 열려요`);
     } catch (e) {
       const msg = String((e && (e.message || e.code)) || "");
-      toast(/cancel/i.test(msg) ? "결제를 취소했어요" : "결제를 완료하지 못했어요. 잠시 뒤 다시 시도해 주세요");
+      toast(/cancel/i.test(msg) ? T`결제를 취소했어요` : T`결제를 완료하지 못했어요. 잠시 뒤 다시 시도해 주세요`);
     } finally { if (btn) btn.disabled = false; }
   }
 
