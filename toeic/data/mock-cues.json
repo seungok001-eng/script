@@ -1,0 +1,13 @@
+{
+ "_note": "모의고사 '실전 진행'의 안내 방송 문구 (실제 시험 디렉션을 베끼지 않고 새로 쓴 문장). build_data.mjs 가 practice.js 에 넣고, build_audio.py 가 Kokoro 진행자 목소리로 cue/ 음성을 만든다",
+ "voice": "am_michael",
+ "answerSec": { "p1": 5, "p2": 5, "p34": 8 },
+ "dir": {
+  "lc": "Listening Test. In this section, you will listen to a variety of spoken English and answer questions about what you hear. There are four parts, and each part begins with its own directions. Everything will be spoken only one time, so please listen carefully.",
+  "p1": "Part 1. Directions. For each question in this part, you will see a photograph and hear four statements about it. Choose the statement that best describes what you see in the photograph. The statements will be spoken only one time, and they will not be shown on the screen.",
+  "p2": "Part 2. Directions. You will hear a question or statement, followed by three responses. Choose the best response to the question or statement. The question and the responses will be spoken only one time, and they will not be shown on the screen.",
+  "p3": "Part 3. Directions. You will hear some conversations between two or more people. After each conversation, you will hear three questions about what the speakers say. Choose the best answer to each question. Some questions will ask you to look at a graphic on the screen. The conversations will be spoken only one time.",
+  "p4": "Part 4. Directions. You will hear some short talks given by a single speaker. After each talk, you will hear three questions about what the speaker says. Choose the best answer to each question. Some questions will ask you to look at a graphic on the screen. The talks will be spoken only one time.",
+  "end": "This is the end of the Listening section. You may now begin the Reading section."
+ }
+}

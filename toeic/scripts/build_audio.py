@@ -39,6 +39,61 @@ def plain(s):
     return re.sub(r"\s+", " ", s.replace("*", "")).strip()
 
 
+# 모의고사 '실전 진행' 안내 방송 (cue/<해시>.mp3): 파트 디렉션 · "Number 7." · "Questions 32 through 34 refer to ..." · "Question 32. <질문>"
+# 문구와 번호 매기기는 app.js 의 cueText/realCues 와 같아야 한다 (다르면 앱이 기기 음성으로 대신 읽는다)
+def cue_hash(text):
+    h = 5381
+    for ch in text:
+        h = (h * 33 + ord(ch)) & 0xFFFFFFFF
+    return f"{h:08x}"
+
+
+GFX_WORD = {"table": "table", "bar": "chart", "list": "list"}
+
+
+def set_intro(a, b, st):
+    if st["part"] == 3:
+        three = any(l.get("sp") in ("W2", "M2") for l in st["lines"])
+        kind = "conversation with three speakers" if three else "conversation"
+    else:
+        kind = "talk"
+    g = st.get("graphic")
+    tail = f" and {GFX_WORD.get(g.get('type'), 'graphic')}" if g else ""
+    return f"Questions {a} through {b} refer to the following {kind}{tail}."
+
+
+def cue_jobs():
+    cf = os.path.join(ROOT, "data", "mock-cues.json")
+    pf = os.path.join(ROOT, "app", "js", "practice.js")
+    if not (os.path.exists(cf) and os.path.exists(pf)):
+        return []
+    cues = json.load(open(cf, encoding="utf-8"))
+    s = open(pf, encoding="utf-8").read()
+    pr = json.loads(s[s.index("{"):s.rindex("}") + 1])
+    by = {x["id"]: x for k in ("p1", "p3", "p4") for x in pr.get(k, [])}
+    texts = set(cues["dir"].values())
+
+    def walk(p1, p2n, p3, p4):
+        n = 1
+        for _ in p1:
+            texts.add(f"Number {n}."); n += 1
+        for _ in range(p2n):
+            texts.add(f"Number {n}."); n += 1
+        for st in p3 + p4:
+            k = len(st["qs"])
+            texts.add(set_intro(n, n + k - 1, st))
+            for j, q in enumerate(st["qs"]):
+                texts.add(f"Question {n + j}. {q['q']}")
+            n += k
+
+    for m in pr.get("mocks", []):
+        walk([i for i in m.get("p1", []) if i in by], len(m.get("p2", [])),
+             [by[i] for i in m["p3"] if i in by], [by[i] for i in m["p4"] if i in by])
+    for F in pr.get("full", []):
+        walk([i for i in F["p1"] if i in by], len(F["p2"]), F["p3"], F["p4"])
+    return [(f"cue/{cue_hash(t)}.mp3", t, cues["voice"]) for t in sorted(texts)]
+
+
 def load_entries():
     plan = json.load(open(os.path.join(ROOT, "data", "plan.json"), encoding="utf-8"))
     words, sents = [], []
@@ -71,6 +126,8 @@ def load_entries():
     for rel, text, v in p1q_jobs():
         sents.append((rel, text, v))
     for rel, text, v in fm_jobs():
+        sents.append((rel, text, v))
+    for rel, text, v in cue_jobs():
         sents.append((rel, text, v))
     return words, sents
 
@@ -280,6 +337,14 @@ def main():
                 if f.endswith(".mp3") and f"p1q/{f}" not in want_p1q:
                     os.remove(os.path.join(p1q_dir, f))
         for rel in [r for r in man if r.startswith("p1q/") and r not in want_p1q]:
+            del man[rel]
+        want_cue = {rel for rel, _, _ in sents if rel.startswith("cue/")}
+        cue_dir = os.path.join(AUDIO, "cue")
+        if os.path.isdir(cue_dir):
+            for f in os.listdir(cue_dir):
+                if f.endswith(".mp3") and f"cue/{f}" not in want_cue:
+                    os.remove(os.path.join(cue_dir, f))
+        for rel in [r for r in man if r.startswith("cue/") and r not in want_cue]:
             del man[rel]
         for rel, text, voice in sents:
             want = {"text": text, "src": "kokoro", "voice": voice, "br": BITRATE}

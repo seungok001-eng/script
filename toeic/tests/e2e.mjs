@@ -132,6 +132,20 @@ ok(m2.n === 2 && m2.first === mock.total, "retake keeps first score " + JSON.str
 const prAfter = await p.evaluate(() => (window.__toeicfit.state.pr.lc || []).length + (window.__toeicfit.state.pr.rc || []).length);
 ok(prAfter === prBefore, `retake not counted in predicted score ${prBefore} → ${prAfter}`);
 await p.goto(base + "#/home"); await p.waitForTimeout(200);
+// 실전 진행: 방식 고르기 → 안내 방송 상태 막대 · 일시정지/계속 · 이어 풀기에 방식 저장
+await p.goto(base + "#/mock"); await p.waitForTimeout(300);
+await p.click('[data-mock="2"]'); await p.waitForTimeout(150);
+ok((await p.$$('#modal input[name="mmode"]')).length === 2, "mock start offers real/self progress");
+await p.click('#modal input[name="mmode"][value="real"]'); await p.click("[data-go-mock]"); await p.waitForTimeout(1200);
+ok(await p.$("[data-rstat]") && /안내 방송|듣는 중/.test(await p.textContent("[data-rstat]")), "real progress status bar");
+await p.click("[data-rpause]"); await p.waitForTimeout(200);
+ok((await p.textContent("[data-rstat]")).includes("일시정지"), "real progress paused");
+ok(await p.evaluate(() => window.__toeicfit.state.mockRun && window.__toeicfit.state.mockRun.real === true && window.__toeicfit.state.settings.mockReal === true), "real mode saved for resume and remembered");
+await p.click("[data-rpause]"); await p.waitForTimeout(800);
+ok(!(await p.textContent("[data-rstat]")).includes("일시정지"), "real progress resumed");
+await p.click("[data-exit]"); await p.waitForTimeout(200);
+const ex = await p.$('#modal [data-r="1"], #modal [data-ok]'); if (ex) await ex.click();
+await p.goto(base + "#/home"); await p.waitForTimeout(200);
 // 시간 압박 훈련: Part 5 20초 타이머 · Part 7 실전 시간
 await p.goto(base + "#/grammar"); await p.waitForTimeout(300);
 await p.click("[data-timed]"); await p.waitForTimeout(300);

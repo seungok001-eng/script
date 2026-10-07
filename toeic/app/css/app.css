@@ -762,3 +762,20 @@ mark.on { background: color-mix(in srgb, var(--gold) 62%, transparent); box-shad
 .qnum-t b { color: var(--text-3, var(--text-2)); font-weight: 600; }
 @keyframes qnumIn { from { opacity: 0; transform: scale(0.85); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .qnum { animation: none; } }
+
+/* 모의고사 시작: 듣기 진행 방식 고르기 */
+.mchoices { text-align: left; }
+.mchoice { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1.5px solid var(--line); border-radius: 12px; margin-bottom: 8px; cursor: pointer; background: var(--bg-elev); }
+.mchoice input { margin-top: 3px; accent-color: var(--brand); width: 18px; height: 18px; flex-shrink: 0; }
+.mchoice > span > b { display: block; font-size: 15px; }
+.mchoice small b { color: var(--text); }
+.mchoice small { display: block; font-size: 13px; line-height: 1.5; color: var(--text-2); margin-top: 2px; }
+.mchoice:has(input:checked) { border-color: var(--brand); background: var(--brand-soft); }
+/* 실전 진행: 지금 방송 상태 · 답 고르는 시간 */
+.realbar { display: flex; align-items: center; gap: 8px; min-height: 40px; margin-bottom: 8px; padding: 8px 12px; border-radius: 12px; background: var(--brand-soft); color: var(--brand); font-weight: 700; font-size: 14px; }
+.realbar .rstat { flex: 1; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.realbar .rstat svg { width: 18px; height: 18px; }
+.realbar .rsec { font-size: 18px; font-variant-numeric: tabular-nums; }
+.realbar [data-rskip] { flex-shrink: 0; }
+.realbar [data-rskip][hidden] { display: none; }
+.pq.now-q { outline: 2px solid var(--brand); outline-offset: 6px; border-radius: 12px; }

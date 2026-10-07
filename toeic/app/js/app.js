@@ -36,7 +36,7 @@
   const DEFAULT_STATE = () => ({
     v: 1,
     profile: null, // { target, examDate, daily, start }
-    settings: { theme: "system", autoWord: true, autoEx: false, rate: 1, showKo: true, hideMeaning: false, sfx: true, remind: false, remindAt: "21:00", lcScript: false },
+    settings: { theme: "system", autoWord: true, autoEx: false, rate: 1, showKo: true, hideMeaning: false, sfx: true, remind: false, remindAt: "21:00", lcScript: false, mockReal: false },
     words: {},
     log: {},
     tests: {},
@@ -134,7 +134,7 @@
     for (const k of Object.keys(mk)) if (/^(\d{1,2}|f\d)$/.test(k) && mk[k]) { const total = num(mk[k].total, 10, 10, 990); d.mock[k] = { lc: num(mk[k].lc, 5, 5, 495), rc: num(mk[k].rc, 5, 5, 495), total, best: num(mk[k].best, 10, 10, 990), at: num(mk[k].at, 0, 0, 1e6), n: num(mk[k].n, 1, 1, 999), first: num(mk[k].first, total, 10, 990) }; }
     const mr = src && src.mockRun;
     if (mr && /^(\d{1,2}|f\d)$/.test(String(mr.n)) && Array.isArray(mr.picks)) {
-      d.mockRun = { n: /^f/.test(String(mr.n)) ? String(mr.n) : +mr.n, i: num(mr.i, 0, 0, 500), picks: mr.picks.slice(0, 500).map((a) => (Array.isArray(a) ? a.slice(0, 10).map((x) => (Number.isInteger(x) && x >= 0 && x <= 3 ? x : null)) : [])), rcUsed: mr.rcUsed == null ? null : num(mr.rcUsed, 0, 0, 1e8), at: num(mr.at, 0, 0, 1e6) };
+      d.mockRun = { n: /^f/.test(String(mr.n)) ? String(mr.n) : +mr.n, i: num(mr.i, 0, 0, 500), picks: mr.picks.slice(0, 500).map((a) => (Array.isArray(a) ? a.slice(0, 10).map((x) => (Number.isInteger(x) && x >= 0 && x <= 3 ? x : null)) : [])), rcUsed: mr.rcUsed == null ? null : num(mr.rcUsed, 0, 0, 1e8), at: num(mr.at, 0, 0, 1e6), real: mr.real === true };
     }
     const gd = src && src.guide;
     if (gd && typeof gd === "object") {
@@ -2722,12 +2722,12 @@
       const run = S.mockRun && S.mockRun.n === m.n ? S.mockRun : null;
       const lockedHere = locked() && (m.full || m.n > 1);
       const head = `<div class="row"><div class="spacer"><b style="font-size:17px">${titleOf(m)}</b><div class="small muted">LC ${nLc}문제 · RC ${nRc}문제 (RC ${rcMin}분)</div></div>${!run && rec ? (rec.n > 1 ? `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.first}</b><div class="small muted">첫 응시 · 재응시 ${rec.total}점 (${rec.n}회째)</div></div>` : `<div style="text-align:right"><b style="font-size:20px;color:var(--brand)">${rec.total}</b><div class="small muted">LC ${rec.lc} · RC ${rec.rc}</div></div>`) : ""}</div>`;
-      if (run) return `<div class="card" style="margin-top:10px">${head}<div class="tip-box" style="margin-top:10px;font-size:14px">풀던 모의고사가 있어요 · ${run.picks.flat().filter((x) => x != null).length}문제 답함${run.rcUsed != null ? ` · RC 남은 시간 ${Math.max(0, rcMin - Math.floor(run.rcUsed / 60000))}분` : ""}</div><div class="row" style="gap:8px;margin-top:10px"><button class="btn block" data-resume="${m.n}" style="flex:2">이어서 풀기</button><button class="btn ghost" data-mock="${m.n}" style="flex:1">처음부터</button></div></div>`;
+      if (run) return `<div class="card" style="margin-top:10px">${head}<div class="tip-box" style="margin-top:10px;font-size:14px">풀던 모의고사가 있어요${run.real ? " (실전 진행)" : ""} · ${run.picks.flat().filter((x) => x != null).length}문제 답함${run.rcUsed != null ? ` · RC 남은 시간 ${Math.max(0, rcMin - Math.floor(run.rcUsed / 60000))}분` : ""}</div><div class="row" style="gap:8px;margin-top:10px"><button class="btn block" data-resume="${m.n}" style="flex:2">이어서 풀기</button><button class="btn ghost" data-mock="${m.n}" style="flex:1">처음부터</button></div></div>`;
       return `<div class="card" style="margin-top:10px">${head}
         ${lockedHere ? `<a class="btn ghost block" style="margin-top:10px" href="#/premium?from=${m.full ? "full" : "mock"}">${ico("lock")}전체 열기로 응시하기</a>` : `<button class="btn ${rec ? "ghost" : ""} block" style="margin-top:10px" data-mock="${m.n}">${rec ? "다시 응시하기" : "응시하기"}</button>`}</div>`;
     };
     const body = `${topBar("모의고사", { back: true, sub: `${fulls.length ? `정규 ${fulls.length}회 · ` : ""}하프 ${halves.length}회 · 예상 점수` })}
-      <div class="tip-box">실제 시험처럼 <b>해설 없이</b> 끝까지 풀고, 마지막에 <b>LC·RC 예상 점수</b>와 파트별 정답률, 전체 해설을 보여 드려요. LC 음성은 한 번만 재생돼요(실전 모드). 점수는 <b>첫 응시</b>가 기준이고, 다시 풀면 '재응시'로 따로 표시돼요. 모의고사 문제는 연습 문제에 나오지 않아요.</div>
+      <div class="tip-box">실제 시험처럼 <b>해설 없이</b> 끝까지 풀고, 마지막에 <b>LC·RC 예상 점수</b>와 파트별 정답률, 전체 해설을 보여 드려요. LC는 <b>실전 진행</b>(시험장 방송처럼 안내 방송 → 번호 → 문제 → 답 고르는 시간 → 자동으로 다음)과 <b>내 속도로</b>(한 번 듣고 직접 넘기기) 중에서 시작할 때 고를 수 있어요. 정규 모의고사는 실전 진행이 기본이에요. 점수는 <b>첫 응시</b>가 기준이고, 다시 풀면 '재응시'로 따로 표시돼요. 모의고사 문제는 연습 문제에 나오지 않아요.</div>
       ${fulls.length ? `<div class="section-h" style="margin-top:18px"><h2>정규 모의고사</h2><span class="small muted">실제 시험과 같은 200문제 · 약 2시간</span></div>${fulls.map(card).join("")}` : ""}
       <div class="section-h" style="margin-top:18px"><h2>하프 모의고사</h2><span class="small muted">절반 분량 · 약 1시간</span></div>
       ${halves.map(card).join("")}`;
@@ -2737,24 +2737,105 @@
     $app.querySelectorAll("[data-mock]").forEach((b) => b.addEventListener("click", () => {
       const m = find(b.dataset.mock);
       modal(`<h3>${titleOf(m)}</h3><p class="muted">LC → RC 순서로 진행하고, 해설은 끝난 뒤에 보여 드려요.${m.full ? " LC 약 45분 · RC 75분으로 실제 시험과 같아요. 2시간을 비워 두고 시작하세요." : ""} 중간에 나가도 답안이 저장돼서 이어서 풀 수 있어요${S.mockRun && S.mockRun.n === m.n ? " (처음부터 시작하면 풀던 답안은 지워져요)" : ""}. 조용한 곳에서 이어폰을 끼고 시작하세요.</p>${S.mock[m.n] ? `<div class="tip-box" style="font-size:14px">이미 푼 모의고사예요 (첫 응시 ${S.mock[m.n].first || S.mock[m.n].total}점). 다시 풀면 <b>재응시</b>로 표시되고 예상 점수에는 반영되지 않아요.</div>` : ""}
+        ${modeChoice(m)}
         <div class="row" style="margin-top:14px;gap:8px"><button class="btn ghost" data-close style="flex:1">취소</button><button class="btn" data-go-mock style="flex:1">시작</button></div>`, (box) => {
-        box.querySelector("[data-go-mock]").addEventListener("click", () => { closeModal(); delete S.mockRun; startMock(m); });
+        box.querySelector("[data-go-mock]").addEventListener("click", () => {
+          const real = (box.querySelector('input[name="mmode"]:checked') || {}).value === "real";
+          if (!m.full) { S.settings.mockReal = real; save(); }
+          closeModal(); delete S.mockRun; startMock(m, false, real);
+        });
       });
     }));
   }
-  function startMock(m, resume) {
+  // ── 실전 진행: 시험장 방송처럼 파트 안내 → 번호 → 문제 음성 → 답 고르는 시간 → 자동으로 다음 ──
+  // 안내 문구는 data/mock-cues.json, 음성은 cue/<해시>.mp3 (build_audio.py 의 cue_hash·set_intro 와 같아야 한다. 없으면 기기 음성)
+  const cueHash = (t) => { let h = 5381; for (let i = 0; i < t.length; i++) h = (h * 33 + t.charCodeAt(i)) >>> 0; return h.toString(16).padStart(8, "0"); };
+  const sayCue = (text) => Sound.play(`cue/${cueHash(text)}.mp3`, text, {});
+  const GFX_WORD = { table: "table", bar: "chart", list: "list" };
+  function setIntro(a, b, set) {
+    const kind = set.part === 3 ? (set.lines.some((l) => l.sp === "W2" || l.sp === "M2") ? "conversation with three speakers" : "conversation") : "talk";
+    return `Questions ${a} through ${b} refer to the following ${kind}${set.graphic ? ` and ${GFX_WORD[set.graphic.type] || "graphic"}` : ""}.`;
+  }
+  const firstNumOf = (s, i) => s.pages.slice(0, i).reduce((n, x) => n + pageQs(x).length, 0) + 1;
+  function modeChoice(m) {
+    const def = m.full ? true : !!S.settings.mockReal;
+    const opt = (v, on, t, d) => `<label class="mchoice"><input type="radio" name="mmode" value="${v}" ${on ? "checked" : ""}><span><b>${t}</b><small>${d}</small></span></label>`;
+    return `<div class="mchoices"><div class="small" style="font-weight:800;margin:12px 0 6px">듣기(LC) 진행 방식</div>
+      ${opt("real", def, "실전 진행 (시험장처럼)", "파트마다 영어 안내 방송이 나오고, 문항 번호를 불러 준 뒤 문제를 들려줘요. 답 고르는 시간(Part 1·2는 5초, Part 3·4는 질문마다 8초)이 지나면 <b>자동으로 다음 문제</b>로 넘어가요. 다시 듣기는 없어요.")}
+      ${opt("self", !def, "내 속도로", "문제 음성이 한 번 나오고, 답을 고른 뒤 <b>직접 '다음'</b>을 눌러 넘겨요. 처음 모의고사를 풀거나 천천히 연습할 때 좋아요.")}
+      <div class="small muted" style="margin-top:6px">RC는 두 방식 모두 같아요 (시간 제한, 문제 사이 자유 이동). 실전 진행 중에도 급한 일이 생기면 <b>일시정지</b>할 수 있어요.</div></div>`;
+  }
+  let flowTok = 0;
+  async function realFlow(s) {
+    const tok = ++flowTok;
+    const p = s.pages[s.i];
+    const alive = () => tok === flowTok && session === s && s.pages[s.i] === p && !s.submitted && !s.paused;
+    const stat = (html) => { const el = $app.querySelector("[data-rstat]"); if (el) el.innerHTML = html; };
+    const skipBtn = (on) => { const b = $app.querySelector("[data-rskip]"); if (b) b.hidden = !on; };
+    const CU = PR.cues || { dir: {}, answerSec: {} };
+    const sec = (k, d) => (CU.answerSec && CU.answerSec[k]) || d;
+    const n0 = firstNumOf(s, s.i);
+    const prev = s.i > 0 ? s.pages[s.i - 1].part : null;
+    s.dirDone = s.dirDone || {};
+    const dir = async (key, label) => {
+      if (s.dirDone[key] || !CU.dir[key]) return;
+      stat(`${ico("vol")} ${label} 안내 방송 중`); skipBtn(true);
+      await sayCue(CU.dir[key]);
+      skipBtn(false);
+      if (alive()) s.dirDone[key] = true;
+    };
+    const countdown = async (n, label) => {
+      for (let t = n; t > 0; t--) { if (!alive()) return false; stat(`${ico("clock")} ${label} <b class="rsec">${t}초</b>`); await wait(1000); }
+      return alive();
+    };
+    if (s.i === 0) await dir("lc", "듣기 평가");
+    if (!alive()) return;
+    if (p.part !== prev) await dir(p.part, PART_LABEL[p.part]);
+    if (!alive()) return;
+    if (p.part === "p1" || p.part === "p2") {
+      stat(`${ico("vol")} ${n0}번 듣는 중`);
+      await sayCue(`Number ${n0}.`);
+      if (!alive()) return;
+      await wait(300);
+      if (p.part === "p1") await playLines(p.set, 0); else await playLcq(p.q, null, alive);
+      if (!alive()) return;
+      s.heard[s.i] = true;
+      if (!(await countdown(sec(p.part, 5), "답 고르는 시간"))) return;
+    } else {
+      const k = p.set.qs.length;
+      stat(`${ico("vol")} ${n0}~${n0 + k - 1}번 듣는 중`);
+      await sayCue(setIntro(n0, n0 + k - 1, p.set));
+      if (!alive()) return;
+      await playLines(p.set, 0);
+      if (!alive()) return;
+      s.heard[s.i] = true;
+      for (let j = 0; j < k; j++) {
+        $app.querySelectorAll(".pq.now-q").forEach((x) => x.classList.remove("now-q"));
+        const blk = $app.querySelector(`#pq-${j}`);
+        if (blk) { blk.classList.add("now-q"); blk.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+        stat(`${ico("vol")} ${n0 + j}번 질문`);
+        await sayCue(`Question ${n0 + j}. ${p.set.qs[j].q}`);
+        if (!alive()) return;
+        if (!(await countdown(sec("p34", 8), `${n0 + j}번 답 고르는 시간`))) return;
+      }
+    }
+    const nx = s.pages[s.i + 1];
+    if (nx && secOf(nx.part) === "rc" && CU.dir.end) { stat(`${ico("vol")} 듣기 평가 끝`); await sayCue(CU.dir.end); }
+    if (alive() && s.goNext) s.goNext();
+  }
+  function startMock(m, resume, real) {
     if (locked() && !m.diag && (m.full || m.n !== 1)) return paywall(m.full ? "full" : "mock");
     const pages = mockPages(m);
     const r = resume && S.mockRun && S.mockRun.n === m.n ? S.mockRun : null;
     const picks = pages.map((p, pi) => pageQs(p).map((_, qi) => (r && r.picks[pi] && Number.isInteger(r.picks[pi][qi]) ? r.picks[pi][qi] : null)));
-    session = { kind: "mock", m, pages, i: r ? Math.min(r.i, pages.length - 1) : 0, picks, played: {}, heard: {}, rcStart: r && r.rcUsed != null ? Date.now() - r.rcUsed : null, from: location.hash, title: m.title || `하프 모의고사 ${m.n}회`, rcMin: m.rcMin || RC_MIN };
+    session = { kind: "mock", m, pages, i: r ? Math.min(r.i, pages.length - 1) : 0, picks, played: {}, heard: {}, rcStart: r && r.rcUsed != null ? Date.now() - r.rcUsed : null, from: location.hash, title: m.title || `하프 모의고사 ${m.n}회`, rcMin: m.rcMin || RC_MIN, real: r ? !!r.real : !!real && !m.diag };
     saveMockRun(session);
     enterStudy();
   }
   // 진행 중인 모의고사를 저장 (전화·앱 종료 뒤 이어서 풀기)
   function saveMockRun(s) {
     if (s.m.diag) return; // 진단은 짧아서 이어 풀기를 저장하지 않는다
-    S.mockRun = { n: s.m.n, i: s.i, picks: s.picks, rcUsed: s.rcStart ? Date.now() - s.rcStart : null, at: today() };
+    S.mockRun = { n: s.m.n, i: s.i, picks: s.picks, rcUsed: s.rcStart ? Date.now() - s.rcStart : null, at: today(), real: !!s.real };
     save();
   }
   function mockTimer(s) {
@@ -2790,7 +2871,9 @@
     const canPrev = s.i > 0 && sec === "rc" && secOf(s.pages[s.i - 1].part) === "rc";
     $app.innerHTML = `<div class="study ${p.part === "p7" ? "wide-study" : ""}"><div class="study-top"><button class="icon-btn back" data-exit aria-label="닫기">${ico("x")}</button><div class="bar"><i style="width:${Math.round((answered / total) * 100)}%"></i></div><span class="cnt">${sec === "rc" ? `${ico("clock")} <b data-timer>${mockTimer(s)}</b>` : "LC"}</span></div>
       ${inner}
-      <div class="study-foot"><div class="row" style="gap:8px">${canPrev ? `<button class="btn ghost" data-prev style="flex:1">이전</button>` : ""}<button class="btn" data-next style="flex:2">${s.i + 1 >= s.pages.length ? "제출하기" : sec === "lc" && secOf(s.pages[s.i + 1].part) === "rc" ? `RC 시작 (${s.rcMin}분)` : "다음"}</button></div>
+      ${s.real && sec === "lc" ? `<div class="study-foot"><div class="realbar"><span class="rstat" data-rstat>${s.paused ? `${ico("pause")} 일시정지됨 · '계속하기'를 누르면 이 문제부터 다시 들려줘요` : `${ico("vol")} 준비 중`}</span><button class="btn ghost sm" data-rskip hidden>안내 건너뛰기</button></div>
+        <div class="row" style="gap:8px"><button class="btn ${s.paused ? "" : "ghost"}" data-rpause style="flex:1">${ico(s.paused ? "play" : "pause")}${s.paused ? "계속하기" : "일시정지"}</button><button class="btn ghost" data-next style="flex:1">${secOf((s.pages[s.i + 1] || p).part) === "rc" && s.pages[s.i + 1] ? `RC 시작 (${s.rcMin}분)` : "다음 문제 ›"}</button></div>` : `
+      <div class="study-foot"><div class="row" style="gap:8px">${canPrev ? `<button class="btn ghost" data-prev style="flex:1">이전</button>` : ""}<button class="btn" data-next style="flex:2">${s.i + 1 >= s.pages.length ? "제출하기" : sec === "lc" && secOf(s.pages[s.i + 1].part) === "rc" ? `RC 시작 (${s.rcMin}분)` : "다음"}</button></div>`}
         ${sec === "rc" ? `<button class="btn ghost sm block" data-sheet style="margin-top:8px">답안지 보기 (RC ${rcAnswered}/${rcTotal})</button>` : ""}</div></div>`;
     $app.querySelector("[data-exit]").addEventListener("click", () => askExit());
     $app.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", () => { if (s.submitted) return; st.picks[0] = +b.dataset.pick; $app.querySelectorAll("[data-pick]").forEach((x) => x.classList.toggle("sel", x === b)); saveMockRun(s); }));
@@ -2798,16 +2881,22 @@
     const goPage = (i) => {
       if (s.submitted) return;
       if (s.rcStart && Date.now() - s.rcStart >= s.rcMin * 60 * 1000) { toast("시간이 끝났어요. 답안을 제출할게요"); return submitMock(); }
-      stopLines(); lcqSeq += 1; Sound.stop(); s.i = i; saveMockRun(s); vMockSession(); window.scrollTo(0, 0); };
+      stopLines(); lcqSeq += 1; flowTok += 1; Sound.stop(); s.i = i; saveMockRun(s); vMockSession(); window.scrollTo(0, 0); };
     const trySubmit = () => {
       const left = s.picks.reduce((n, a) => n + a.filter((x) => x == null).length, 0);
       if (!left) return submitMock();
       confirmBox("제출할까요?", `아직 ${left}문제를 풀지 않았어요. 제출하면 안 푼 문제는 오답으로 처리돼요.`, "제출하기").then((ok) => { if (ok) submitMock(); });
     };
-    $app.querySelector("[data-next]").addEventListener("click", () => {
-      if (s.i + 1 >= s.pages.length) return trySubmit();
-      goPage(s.i + 1);
+    s.goNext = () => { if (s.i + 1 >= s.pages.length) return trySubmit(); goPage(s.i + 1); };
+    $app.querySelector("[data-next]").addEventListener("click", () => s.goNext());
+    const rpz = $app.querySelector("[data-rpause]");
+    if (rpz) rpz.addEventListener("click", () => {
+      if (!s.paused) { s.paused = true; flowTok += 1; stopLines(); lcqSeq += 1; Sound.stop(); }
+      else { s.paused = false; s.flowAt = null; }
+      vMockSession();
     });
+    const rk = $app.querySelector("[data-rskip]");
+    if (rk) rk.addEventListener("click", () => Sound.stop());
     const pv = $app.querySelector("[data-prev]");
     if (pv) pv.addEventListener("click", () => goPage(s.i - 1));
     const sh = $app.querySelector("[data-sheet]");
@@ -2826,7 +2915,13 @@
       const ok = p.part === "p2" ? await playLcq(p.q, null, here) : await playLines(p.set, 0);
       if (ok) s.heard[s.i] = true;
     };
-    if (sec === "lc" && !s.played[s.i]) {
+    if (s.real && sec === "lc") {
+      if (!s.paused && s.flowAt !== s.i) {
+        s.flowAt = s.i; s.played[s.i] = true;
+        if (!s.realTold) { s.realTold = true; toast("실전 진행: 방송에 맞춰 자동으로 넘어가요"); }
+        setTimeout(() => { if (here() && !s.paused) realFlow(s); }, 500);
+      }
+    } else if (sec === "lc" && !s.played[s.i]) {
       s.played[s.i] = true;
       setTimeout(() => { if (here()) playPage(); }, p.part === "p2" ? 400 : 1200);
     }
@@ -2834,6 +2929,7 @@
     const rp = $app.querySelector("[data-replay]") || $app.querySelector("[data-play34]");
     if (rp) rp.addEventListener("click", (e) => {
       e.stopImmediatePropagation();
+      if (s.real && sec === "lc") return toast("실전 진행에서는 방송에 맞춰 한 번만 들려줘요");
       if (s.heard[s.i]) return toast("실전 모드에서는 다시 들을 수 없어요");
       playPage();
     }, true);
@@ -3110,6 +3206,7 @@
         <h2 class="g-h">${ico("gauge")}예상 점수와 하프 모의고사</h2>
         <p class="small" style="margin:0 0 8px"><b>예상 점수</b>는 최근에 푼 LC·RC 문제(각 30문제 이상)의 정답률로 계산해요. 많이 풀수록 정확해져요.</p>
         <p class="small" style="margin:0 0 8px"><b>하프 모의고사</b>는 실제 시험의 절반 분량이에요. LC 음성은 한 번만 나오고 RC는 시간을 재요. 모의고사 문제는 연습 문제에 나오지 않아서 처음 보는 문제로 실력을 잴 수 있어요.</p>
+        <p class="small" style="margin:0 0 8px"><b>실전 진행</b>을 고르면 시험장 방송처럼 LC가 흘러가요. 파트마다 영어 안내 방송 → "Number 7." 번호 → 문제 음성 → 답 고르는 시간(Part 1·2 5초, Part 3·4 질문마다 8초) → 자동으로 다음 문제. 정규 모의고사는 실전 진행이 기본이고, 하프 모의고사는 시작할 때 고를 수 있어요.</p>
         <p class="small muted" style="margin:0">같은 회차를 다시 풀면 <b>재응시</b>로 따로 표시되고 예상 점수에는 넣지 않아요. 첫 응시 점수가 기준이에요.</p>
       </section>
       <section class="card g-card">
@@ -3131,6 +3228,7 @@
         ${faq("목표 점수를 바꾸면 기록이 지워지나요?", "아니요. 외운 단어와 문제 기록은 그대로이고, 앞으로 나올 단어의 범위와 난이도만 바뀌어요.")}
         ${faq("인터넷이 없어도 되나요?", "네. 단어·음성·문제가 모두 앱 안에 들어 있어서 비행기 모드에서도 쓸 수 있어요.")}
         ${faq("기록을 새 폰으로 옮기려면?", "설정 → <b>학습 기록 백업</b>으로 파일을 만들고, 새 폰에서 <b>백업 불러오기</b>를 하세요. 기록은 이 기기에만 저장돼요.")}
+        ${faq("실전 진행과 내 속도로는 뭐가 달라요?", "<b>실전 진행</b>은 실제 시험처럼 안내 방송과 번호를 들려주고, 답 고르는 시간이 지나면 저절로 다음 문제로 넘어가요. 다시 듣기가 없어서 시험장 감각을 익히기 좋아요. <b>내 속도로</b>는 문제를 한 번 들려준 뒤 직접 '다음'을 눌러 넘겨요. 시험 2~3주 전부터는 실전 진행으로 풀어 보는 걸 추천해요. 실전 진행 중에 전화가 오면 <b>일시정지</b>를 누르세요. 계속하면 그 문제부터 다시 들려줘요.")}
         ${faq("실전 문제는 기출 문제인가요?", "아니요. 모든 문제는 실제 토익 형식에 맞춰 새로 만든 문제예요. 정답 근거와 해석까지 모두 들어 있어요.")}
       </div>
       <div class="grid2" style="margin-top:16px">

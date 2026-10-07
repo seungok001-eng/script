@@ -192,7 +192,10 @@ const full = read(path.join(ROOT, "data/fullmock.json"), { mocks: [] }).mocks.ma
   });
   return { n: m.n, p1: m.p1.filter((id) => pr.p1.some((x) => x.id === id)), p2, p3: lc(m.p3), p4: lc(m.p4), p5: m.p5, p6: m.p6, p7: m.p7 };
 });
-const practice = { version, diag, full, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks };
+// 모의고사 실전 진행 안내 방송 문구 (음성은 build_audio.py 가 cue/ 에 만든다)
+const cuesRaw = read(path.join(ROOT, "data/mock-cues.json"), null);
+const cues = cuesRaw ? { dir: cuesRaw.dir, answerSec: cuesRaw.answerSec } : null;
+const practice = { version, diag, full, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks, cues };
 const pjs = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_PRACTICE=" + JSON.stringify(practice) + ";\n";
 fs.writeFileSync(path.join(ROOT, "app/js/practice.js"), pjs);
 const nq = (xs) => xs.reduce((n, x) => n + x.qs.length, 0);
