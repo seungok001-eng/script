@@ -793,3 +793,13 @@ html:lang(vi) .spk, html:lang(es) .spk, html:lang(fr) .spk, html:lang(en) .spk {
 html:lang(es) .spk { min-width: 62px; }  /* Mujer·Hombre 처럼 길이가 달라도 본문 시작이 맞도록 */
 /* 영어 화면: 영어 원문의 '해석'은 같은 글을 되풀이할 뿐이라 숨긴다 (해설·뜻은 영어로 보인다) */
 html:lang(en) .ex-ko, html:lang(en) .ko, html:lang(en) .qsub, html:lang(en) [data-ko] { display: none !important; }
+/* 모의고사 성적표: 점수 추이 막대 · 다음에 할 일 */
+.trend { display: flex; align-items: flex-end; gap: 8px; height: 150px; padding-top: 18px; }
+.trend .tcol { flex: 1; min-width: 0; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 4px; }
+.trend .tcol i { display: block; width: 70%; max-width: 34px; border-radius: 6px 6px 2px 2px; background: color-mix(in srgb, var(--brand) 35%, transparent); }
+.trend .tcol.now i { background: var(--brand); }
+.trend .tv { font-size: 11.5px; font-weight: 800; color: var(--text-2); }
+.trend .tl { font-size: 10.5px; color: var(--text-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.next-steps { margin: 0; padding-left: 20px; line-height: 1.7; }
+.next-steps li + li { margin-top: 4px; }
+.weak .btn.sm { flex-shrink: 0; margin-left: 8px; }

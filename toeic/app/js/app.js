@@ -1695,7 +1695,7 @@
       const r = mockResultHtml(s);
       hero = r.hero;
       const wrongN = s.pages.reduce((n, p, pi) => n + pageQs(p).filter((q, qi) => s.picks[pi][qi] !== (p.part === "p2" ? p.q.answer : q.a)).length, 0);
-      actions = T`<div class="card">${r.rows}</div><button class="btn block" style="margin-top:12px" data-mrevw ${wrongN ? "" : "disabled"}>${ico("alert")}틀린 문제 해설 (${wrongN})</button><button class="btn ghost block" style="margin-top:10px" data-mrev>${ico("book")}전체 해설 보기</button><a class="btn ghost block" style="margin-top:10px" href="#/practice" data-tohub>약점 연습하러 가기</a><button class="btn ghost block" style="margin-top:10px" data-home>모의고사 목록으로</button>`;
+      actions = T`<div class="card">${r.rows}</div>${r.analysis}<button class="btn block" style="margin-top:16px" data-mrevw ${wrongN ? "" : "disabled"}>${ico("alert")}틀린 문제 해설 (${wrongN})</button><button class="btn ghost block" style="margin-top:10px" data-mrev>${ico("book")}전체 해설 보기</button><a class="btn ghost block" style="margin-top:10px" href="#/practice" data-tohub>약점 연습하러 가기</a><button class="btn ghost block" style="margin-top:10px" data-home>모의고사 목록으로</button>`;
       list = "";
     } else if (s.kind === "dict") {
       const avg = Math.round(s.results.reduce((n, r) => n + r.pct, 0) / Math.max(1, s.results.length));
@@ -1757,6 +1757,7 @@
     if (pm) pm.addEventListener("click", () => startSets(s.part, pickSets(practicePool(s.part).filter((x) => !s.queue.includes(x)), s.part === "p7" ? 2 : 3), s.title));
     const mr = $app.querySelector("[data-mrev]");
     if (mr) mr.addEventListener("click", () => { s.wrongOnly = false; s.reviewing = 0; vMockReview(); window.scrollTo(0, 0); });
+    if (s.kind === "mock") $app.querySelectorAll("[data-weak]").forEach((b) => b.addEventListener("click", () => { session = null; studyPushed = false; practiceWeak(b.dataset.weak); }));
     const mw = $app.querySelector("[data-mrevw]");
     if (mw) mw.addEventListener("click", () => { s.wrongOnly = true; s.reviewing = mockReviewNext(s, -1, 1); vMockReview(); window.scrollTo(0, 0); });
     const buy = $app.querySelector("[data-buy]");
@@ -2913,6 +2914,11 @@
     if (s.reviewing != null) return vMockReview();
     const p = s.pages[s.i];
     const sec = secOf(p.part);
+    // 파트별로 머문 시간 (성적표의 시간 분석용 · 이어 풀기로 돌아오면 그 뒤부터 센다)
+    const now = Date.now();
+    s.tPart = s.tPart || {};
+    if (s.curPart && s.curT) s.tPart[s.curPart] = (s.tPart[s.curPart] || 0) + (now - s.curT);
+    s.curPart = p.part; s.curT = now;
     if (sec === "rc" && !s.rcStart) { s.rcStart = Date.now(); saveMockRun(s); }
     const firstNum = s.pages.slice(0, s.i).reduce((n, x) => n + pageQs(x).length, 0) + 1;
     const st = { picks: s.picks[s.i], graded: false, base: firstNum };
@@ -3019,6 +3025,11 @@
     stopLines();
     const stat = { lc: [0, 0], rc: [0, 0] };
     const parts = {};
+    const types = {}; // 이번 회차 유형별 { "p7:추론": [맞힌 수, 문제 수] }
+    const blank = {}; // 파트별 고르지 않은 문제 수
+    s.tPart = s.tPart || {};
+    if (s.curPart && s.curT) s.tPart[s.curPart] = (s.tPart[s.curPart] || 0) + (Date.now() - s.curT);
+    s.curT = 0;
     // 재응시: 이미 본 문제라 점수가 부풀려진다 → 예상 점수·유형별 정답률에는 넣지 않고 학습량(오늘 푼 문제 수)만 센다
     const prev = s.m.diag ? null : S.mock[s.m.n];
     s.pages.forEach((p, pi) => pageQs(p).forEach((q, qi) => {
@@ -3030,6 +3041,11 @@
       parts[p.part] = parts[p.part] || [0, 0];
       parts[p.part][1] += 1;
       if (ok) parts[p.part][0] += 1;
+      const tk = `${p.part}:${p.part === "p2" ? (p.fm && p.q.ptype) || "응답" : q.type || q.kind || "어휘"}`;
+      types[tk] = types[tk] || [0, 0];
+      types[tk][1] += 1;
+      if (ok) types[tk][0] += 1;
+      if (s.picks[pi][qi] == null) blank[p.part] = (blank[p.part] || 0) + 1;
       if (!prev) recordAnswer(sec, `${p.part}:${p.part === "p2" ? "응답" : q.type || q.kind || "어휘"}`, ok);
       else { const l = logToday(); l.q += 1; if (ok) l.ok += 1; }
     }));
@@ -3037,8 +3053,9 @@
     const attempt = prev ? (prev.n || 1) + 1 : 1;
     const first = prev ? prev.first || prev.total : est.total;
     if (s.m.diag) S.diag = { lc: est.lc, rc: est.rc, total: est.total, at: today() };
-    else S.mock[s.m.n] = Object.assign({}, est, { at: today(), best: Math.max(est.total, (prev && prev.best) || 0), n: attempt, first });
-    s.result = { est, stat, parts, attempt, first };
+    else S.mock[s.m.n] = Object.assign({}, est, { at: today(), ts: (prev && prev.ts) || Date.now(), best: Math.max(est.total, (prev && prev.best) || 0), n: attempt, first, firstLc: prev ? prev.firstLc : est.lc, firstRc: prev ? prev.firstRc : est.rc });
+    const time = { rcUsed: s.rcStart ? Math.min(Date.now() - s.rcStart, s.rcMin * 60000) : 0, rcMin: s.rcMin, tPart: s.tPart };
+    s.result = { est, stat, parts, attempt, first, types, blank, time };
     logToday().prac = true;
     markDone();
     save(true);
@@ -3111,7 +3128,53 @@
       ${retake ? T`<div class="tip-box" style="margin-top:12px;text-align:left"><b>이미 풀어 본 문제라 실제보다 높게 나올 수 있어요.</b> 첫 응시 점수 <b>${first}점</b>이 더 정확한 기준이에요. 이번 결과는 예상 점수와 약점 분석에 넣지 않았어요. 틀린 문제 해설을 다시 보는 복습용으로 활용하세요.</div>` : ""}
       <div class="tip-box" style="margin-top:12px;text-align:left">${gap <= 0 ? T`<b>목표 ${target()}점 달성 수준이에요!</b> 남은 모의고사로 실력을 굳히고, 틀린 문제 해설을 꼭 보세요.` : T`<b>목표 ${target()}점까지 약 ${gap}점</b> ${est.lc < est.rc ? "LC" : "RC"}가 상대적으로 약해요. 아래 파트별 정답률에서 낮은 파트부터 연습하세요.`}</div></div>`;
     const rows = Object.keys(parts).map((k) => { const [o, n] = parts[k]; const pct = Math.round((o / n) * 100); return `<div class="weak"><div class="spacer"><b>${PART_LABEL[k]}</b><div class="small muted">${o}/${n}</div></div><div class="wbar"><i style="width:${pct}%;background:${pct >= 80 ? "var(--ok)" : pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${pct}%</b></div>`; }).join("");
-    return { hero, rows };
+    return { hero, rows, analysis: mockAnalysisHtml(s) };
+  }
+  // 권장 속도 (문제당 초): Part 5 20초 · Part 6 30초 · Part 7 약 1분
+  const RC_PACE = { p5: 20, p6: 30, p7: 60 };
+  function mockAnalysisHtml(s) {
+    const { types = {}, blank = {}, time = {}, parts } = s.result;
+    const bar = (pct) => `<div class="wbar"><i style="width:${pct}%;background:${pct >= 80 ? "var(--ok)" : pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div>`;
+    // 약점 유형: 2문제 이상 나온 유형 중 많이 틀린 순 → 정답률 낮은 순
+    const weak = Object.keys(types).map((k) => { const [o, n] = types[k]; return { k, o, n, miss: n - o, pct: Math.round((o / n) * 100) }; })
+      .filter((w) => w.n >= 2 && w.miss > 0).sort((a, b) => b.miss - a.miss || a.pct - b.pct).slice(0, 3);
+    const typeLabel = (k) => { const [part, type] = k.split(":"); return `${PART_LABEL[part] || part} · ${esc(tr(type))}`; };
+    const weakHtml = weak.length
+      ? T`<div class="section-h" style="margin-top:18px"><h2>이번 회차 약점 유형</h2><span class="small muted">많이 틀린 순</span></div><div class="card">${weak.map((w, i) => `<div class="weak"><div class="spacer"><b>${i + 1}. ${typeLabel(w.k)}</b><div class="small muted">${T`${w.n}문제 중 ${w.o}개 정답`}</div></div>${bar(w.pct)}<button class="btn sm ghost" data-weak="${esc(w.k)}">${T`집중 연습`}</button></div>`).join("")}</div>`
+      : T`<div class="tip-box" style="margin-top:14px"><b>눈에 띄는 약점 유형이 없어요.</b> 틀린 문제 해설로 실수를 확인해 보세요.</div>`;
+    // 시간 분석 (RC)
+    let timeHtml = "";
+    const rcBlank = ["p5", "p6", "p7"].filter((k) => blank[k]);
+    const blankN = rcBlank.reduce((n, k) => n + blank[k], 0);
+    const slow = [];
+    if (time.rcUsed) {
+      const mins = Math.round(time.rcUsed / 60000);
+      const rowsT = ["p5", "p6", "p7"].filter((k) => parts[k] && time.tPart && time.tPart[k]).map((k) => {
+        const per = Math.round(time.tPart[k] / 1000 / parts[k][1]);
+        const over = per > RC_PACE[k] * 1.3;
+        if (over) slow.push(k);
+        return `<div class="weak"><div class="spacer"><b>${PART_LABEL[k]}</b><div class="small muted">${T`문제당 ${per}초 · 권장 ${RC_PACE[k]}초`}</div></div>${per ? `<span class="badge ${over ? "bad" : "ok"}">${over ? T`느림` : T`적절`}</span>` : ""}</div>`;
+      }).join("");
+      timeHtml = T`<div class="section-h" style="margin-top:18px"><h2>시간 분석 (RC)</h2><span class="small muted">${mins}분 / ${time.rcMin}분 사용</span></div><div class="card">${rowsT}${blankN ? `<div class="small" style="margin-top:8px;color:var(--bad);font-weight:700">${T`고르지 못한 문제 ${blankN}개`} · ${rcBlank.map((k) => `${PART_LABEL[k]} ${blank[k]}`).join(", ")}</div>` : `<div class="small muted" style="margin-top:8px">${T`모든 문제에 답했어요`}</div>`}</div>`;
+    }
+    // 점수 추이: 첫 응시 점수 기준, 푼 순서대로 최근 8회
+    const hist = Object.keys(S.mock || {}).map((k) => Object.assign({ k }, S.mock[k])).filter((r) => r.first || r.total)
+      .sort((a, b) => (a.ts || 0) - (b.ts || 0) || String(a.at).localeCompare(String(b.at))).slice(-8);
+    let trendHtml = "";
+    if (hist.length >= 2) {
+      const name = (k) => (String(k)[0] === "f" ? T`정규 ${String(k).slice(1)}` : T`하프 ${k}`);
+      const max = 990;
+      trendHtml = T`<div class="section-h" style="margin-top:18px"><h2>점수 추이</h2><span class="small muted">첫 응시 점수</span></div><div class="card"><div class="trend">${hist.map((r) => { const v = r.first || r.total; return `<div class="tcol${r.k === s.m.n ? " now" : ""}"><span class="tv">${v}</span><i style="height:${Math.max(6, Math.round((v / max) * 72))}%"></i><span class="tl">${name(r.k)}</span></div>`; }).join("")}</div></div>`;
+    }
+    // 다음에 할 일 3가지
+    const steps = [];
+    if (weak[0]) steps.push(T`<b>${typeLabel(weak[0].k)}</b> 집중 연습 (위 버튼)`);
+    if (slow.length) steps.push(T`<b>${slow.map((k) => PART_LABEL[k]).join(", ")}</b> 속도 올리기 · 실전 탭의 시간 압박 훈련`);
+    else if (blankN) steps.push(T`시간 배분 연습 · Part 5·6을 빨리 끝내고 Part 7에 시간을 남기세요`);
+    if (weak[1]) steps.push(T`<b>${typeLabel(weak[1].k)}</b> 복습`);
+    steps.push(T`틀린 문제 해설을 보고 근거 문장 확인하기`);
+    const nextHtml = T`<div class="section-h" style="margin-top:18px"><h2>다음에 할 일</h2></div><div class="card"><ol class="next-steps">${steps.slice(0, 3).map((x) => `<li>${x}</li>`).join("")}</ol></div>`;
+    return weakHtml + timeHtml + trendHtml + nextHtml;
   }
   // 모의고사 해설: 페이지를 하나씩 리뷰 모드로
   // 해설 페이지 이동 (틀린 문제만 보기면 다 맞힌 페이지는 건너뛴다)
