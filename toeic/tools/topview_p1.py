@@ -20,7 +20,7 @@ API = "https://api.topview.ai"
 # 정확한 경로·모델 이름은 probe 로 확인한 뒤 여기 고친다.
 SUBMIT = "/v1/common_task/text2image/task/submit"
 QUERY = "/v1/common_task/text2image/task/query"
-MODEL = os.environ.get("TOPVIEW_IMAGE_MODEL", "")  # 예: GPT Image 2 / Nano Banana 2 / Seedream — probe 결과로 정한다
+MODEL = os.environ.get("TOPVIEW_IMAGE_MODEL", "nano-banana-2.1")  # 나노바나나 2.1 — 탑뷰 모델 이름 표기는 probe 로 확인 (페이지에는 nano-banana-2, nano-banana-2-lite 로 나온다)
 CUT = (1200, 900)
 APP = (960, 720)
 WEBP_Q = 78
