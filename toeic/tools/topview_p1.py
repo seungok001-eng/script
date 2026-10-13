@@ -20,7 +20,8 @@ API = "https://api.topview.ai"
 # 정확한 경로·모델 이름은 probe 로 확인한 뒤 여기 고친다.
 SUBMIT = "/v1/common_task/text2image/task/submit"
 QUERY = "/v1/common_task/text2image/task/query"
-MODEL = os.environ.get("TOPVIEW_IMAGE_MODEL", "nano-banana-2.1")  # 나노바나나 2.1 — 탑뷰 모델 이름 표기는 probe 로 확인 (페이지에는 nano-banana-2, nano-banana-2-lite 로 나온다)
+MODEL = os.environ.get("TOPVIEW_IMAGE_MODEL", "Nano Banana 2.1")  # API 가 받는 이름 그대로 (probe 로 확인)
+RES = os.environ.get("TOPVIEW_IMAGE_RES", "1K")  # 1K · 2K · 4K — 앱은 960×720 이라 1K 로 충분
 CUT = (1200, 900)
 APP = (960, 720)
 WEBP_Q = 78
@@ -43,7 +44,7 @@ def items():
 
 
 def submit(q):
-    body = {"prompt": q["prompt"], "aspectRatio": "4:3"}
+    body = {"prompt": q["prompt"], "aspectRatio": "4:3", "resolution": RES, "generateCount": int(os.environ.get("TOPVIEW_COUNT", "1"))}
     if MODEL: body["model"] = MODEL
     st, r = call("POST", SUBMIT, body)
     tid = (r.get("result") or r.get("data") or {}).get("taskId") if isinstance(r, dict) else None
