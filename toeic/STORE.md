@@ -1,5 +1,13 @@
 # 스토어 등록 자료 (초안)
 
+> **다른 언어:** `store/listings/<lang>.json` (en · ja · vi · zh-TW · es · fr, 한국어 원문은 ko.json).
+> 이름·짧은 설명·자세한 설명·App Store 부제·키워드·홍보 문구·스크린샷 문구·대표 이미지 문구·개인정보 처리방침이 들어 있다.
+> 스토어 언어 코드는 각 파일의 `store` (Play: en-US, ja-JP, vi, zh-TW, es-419, fr-FR · App Store: en-US, ja, vi, zh-Hant, es-MX, fr-FR).
+> 스크린샷: `STORE_LANG=<lang> node toeic/scripts/store_shots.mjs` → `store/screenshots/<lang>/{ios,android}` (한국어는 `store/screenshots/{ios,android}`)
+> 대표 이미지: `STORE_LANG=<lang> node toeic/scripts/feature_graphic.mjs` → `store/feature-graphic-<lang>.png`
+> 일본어·중국어는 Noto Sans JP/TC 글꼴 CSS 를 `FONT_CSS=` 로 넘겨야 제대로 나온다 (서버에 CJK 글꼴이 없을 때).
+> 개인정보 처리방침: `node toeic/scripts/build_privacy.mjs` → `app/privacy.html` 한 페이지에 7개 언어 (앱 언어 · 기기 언어로 자동 선택)
+
 > 모의고사 6~10회와 Part 1 사진 151~195는 사진이 모두 들어간 뒤 앱에 나온다. 그 전에 출시하면 '정규·하프 각 5회', 'Part 1 150장'으로 적는다.
 
 ## 앱 이름 / 부제

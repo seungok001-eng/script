@@ -1,0 +1,80 @@
+{
+ "_note": "Korean source. Counts assume mocks 6-10 and Part 1 photos 151-195 are in the app; before that use 5+5 mocks and 150 photos.",
+ "store": {
+  "play": "fr-FR",
+  "appstore": "fr-FR"
+ },
+ "appName": "ToeicFit : vocabulaire TOEIC, exercices et tests blancs",
+ "playTitle": "ToeicFit : vocabulaire TOEIC",
+ "appStoreName": "ToeicFit : vocabulaire TOEIC",
+ "subtitle": "Tests blancs et Parts 1 à 7",
+ "shortDescription": "Score estimé en 10 min ! 3 600 mots TOEIC, Parts 1 à 7 et tests blancs",
+ "promoText": "Découvrez votre score TOEIC estimé en 10 minutes. 3 600 mots, exercices des Parts 1 à 7, 10 tests blancs complets et 10 demi-tests : tout dans une seule app.",
+ "description": "Préparez le TOEIC au plus juste, selon votre score cible : vocabulaire, Parts 1 à 7, tests blancs et score estimé dans une seule app.\n\n■ Test de niveau en 10 minutes\n20 questions suffisent : score estimé, écart avec votre objectif, partie la plus faible et plan d'étude personnalisé.\n\n■ Un programme adapté à votre objectif\nIndiquez votre score cible (550 à 950+) et la date de l'examen : l'app retient les mots utiles et calcule votre rythme quotidien et votre date de fin.\n· 650 points : 1 070 mots de base\n· 700 à 800 points : 2 551 mots (base + essentiels)\n· 850 points et plus : 3 600 mots, vocabulaire avancé compris (du plus facile au plus difficile)\n\n■ 90 jours, 3 600 mots, 3 parcours : Base, Avancé, Expert\nRecrutement, réunions, marketing, contrats, comptabilité, hôtellerie, informatique, finance… Tous les thèmes phares du TOEIC, les verbes, adjectifs, adverbes et locutions des Parts 5 et 6, les verbes à particule de l'épreuve orale (fill in for, run late…) et le vocabulaire pro de la Part 7.\nChaque mot : exemple de style TOEIC traduit en français, expressions fréquentes, dérivés, reformulations Part 7 et point clé d'examen.\n\n■ Mots et exemples lus par des natifs\nLes 3 600 mots et 3 600 exemples sont enregistrés, en accents américain et britannique comme à l'examen. Dans les transports, le mode écoute enchaîne mot et exemple, le sens affiché à l'écran.\n\n■ Des révisions juste avant l'oubli\nRépétition espacée à 1, 3, 7, 14 et 30 jours. Les mots ratés rejoignent le carnet d'erreurs, puis en sortent une fois réussis.\n\n■ 3 600 questions de type Part 5\nUne question au format Part 5 par mot, avec explication : nature des mots, prépositions, mots à ne pas confondre.\n\n■ Exercices des Parts 1 à 7 et tests blancs\n· Part 3 : 90 séries de conversations · Part 4 : 60 séries d'exposés, avec dialogues à trois, questions d'intention et graphiques\n· Part 5 : 30 leçons de grammaire et 450 questions · Part 6 : 48 textes à trous · Part 7 : 100 séries de lecture (dont textes doubles et triples)\n· À la correction, la phrase justifiant la réponse est signalée dans le texte ou la transcription, avec traduction intégrale en français et reformulations expliquées\n· 10 tests blancs complets (200 questions en 2 heures, comme le jour J) et 10 demi-tests : score estimé en LC et en RC, points faibles par type de question\n· Questions des tests blancs inédites, distinctes des exercices\n· Contre-la-montre : 20 s par question en Part 5, temps réel en Parts 6 et 7\n· Part 1 : 195 photos (regardez la photo, écoutez quatre phrases)\n· Dictée et répétition à voix haute\n※ Toutes les questions sont des créations originales au format de l'examen (pas des sujets officiels).\n\n■ Test de vocabulaire en 3 minutes\n30 questions pour sauter les niveaux acquis et commencer par les mots inconnus.\n\n■ Entraînement ciblé par partie\n· Part 1 : 120 phrases clés pour décrire une photo (piège « is being + p.p. » expliqué)\n· Parts 2 à 4 : 870 expressions fréquentes en 29 thèmes (questions, situations, exposés), enregistrées à deux voix\n· Quiz d'écoute : bonne réponse parmi 3 en Part 2, bonne traduction en Parts 3 et 4, puis reprise des erreurs\n· Part 7 : quiz de synonymes (reformulations)\n· Part 5 : 60 séries de mots à ne pas confondre (affect/effect, considerable/considerate…)\n\n■ 9 modes d'apprentissage\nÉcarter les mots connus · Cartes mémoire · Choisir le sens · Choisir le mot · Écouter et choisir · Orthographe · Exemple à trous · Pratique Part 5 · Synonymes Part 7, plus un test par Day\n\n■ Et aussi\nMissions de départ, conseils à chaque écran, guide d'utilisation, statistiques et calendrier, série de jours d'étude, rappel quotidien, mode sombre, hors ligne, sauvegarde et restauration\n\n■ Prix\n3 premiers jours gratuits (Day 1 à 3 du vocabulaire, une série par partie, un demi-test blanc, test de niveau). Accès complet en paiement unique, à vie : sans abonnement, sans publicité.\n\n※ TOEIC est une marque déposée d'ETS. Cette application n'est ni affiliée à ETS ni approuvée par ETS.",
+ "keywords": "anglais,examen,entraînement,score,grammaire,flashcards,listening,reading,préparation,oral,LC,RC",
+ "featureGraphic": {
+  "brand": "ToeicFit",
+  "headline": "Vocabulaire et exercices TOEIC<br>adaptés à votre objectif",
+  "sub": "3 600 mots · 870 expressions LC · Parts 1 à 7<br>Audio natif · Tests blancs · Score estimé"
+ },
+ "shots": {
+  "01-target": {
+   "cap": "Choisissez un score,\nvotre plan est prêt",
+   "sub": "650 pts : 1 070 mots · 800 : 2 551 · 900 : 3 600"
+  },
+  "02-home": {
+   "cap": "Votre journée\nen un coup d'œil",
+   "sub": "Nouveaux mots · Révisions · Quiz · Erreurs"
+  },
+  "03-card": {
+   "cap": "Exemple et point clé\nsur une seule carte",
+   "sub": "Chaque mot et exemple lu par des natifs"
+  },
+  "04-p3": {
+   "cap": "Parts 3 et 4\nréponses justifiées",
+   "sub": "150 séries · audio natif · traduction intégrale"
+  },
+  "05-p7": {
+   "cap": "Parts 5, 6 et 7\nexpliquées, justifiées",
+   "sub": "450 questions · 48 textes · 100 séries Part 7"
+  },
+  "06-days": {
+   "cap": "90 jours, 3 parcours\nBase · Avancé · Expert",
+   "sub": "30 thèmes du TOEIC, approfondis 3 fois"
+  },
+  "07-practice": {
+   "cap": "Demi-tests blancs\net score estimé",
+   "sub": "Score LC et RC · faiblesses par type de question"
+  },
+  "08-lc": {
+   "cap": "870 expressions LC\net quiz de réponses",
+   "sub": "Écoutez, choisissez (A)(B)(C) · pièges expliqués"
+  }
+ },
+ "privacy": {
+  "title": "Politique de confidentialité de ToeicFit",
+  "effective": "Date d'entrée en vigueur : 3 octobre 2026",
+  "sections": [
+   [
+    "1. Données personnelles collectées",
+    "ToeicFit (ci-après « l'application ») ne nécessite aucune inscription et ne collecte ni ne transmet à un serveur externe aucune donnée personnelle, telle que le nom, l'adresse e-mail, le numéro de téléphone ou la localisation."
+   ],
+   [
+    "2. Informations enregistrées sur l'appareil",
+    "Le score visé, la date d'examen, l'historique d'apprentissage (étape de révision et nombre de bonnes réponses pour chaque mot) et les paramètres sont enregistrés uniquement sur l'appareil de l'utilisateur (stockage de l'application). Ils sont effacés lors de la désinstallation de l'application ou de la réinitialisation de l'historique d'apprentissage dans les Paramètres. Les fichiers de sauvegarde sont enregistrés et gérés par l'utilisateur lui-même."
+   ],
+   [
+    "3. Autorisations",
+    "Notifications : l'autorisation n'est demandée que si l'utilisateur active le « Rappel quotidien » et sert uniquement à afficher un rappel d'étude à l'heure choisie."
+   ],
+   [
+    "4. Communication à des tiers, publicité et mesure d'audience",
+    "L'application n'utilise aucun SDK publicitaire ni outil d'analyse et ne communique aucune information à des tiers. Le paiement des fonctionnalités payantes est traité par le système de paiement de Google Play ou de l'App Store ; l'application ne reçoit aucune donnée de paiement."
+   ],
+   [
+    "5. Contact",
+    "Pour toute question relative aux données personnelles, veuillez écrire à l'adresse de contact du développeur indiquée sur la fiche de l'application dans la boutique."
+   ]
+  ]
+ }
+}
