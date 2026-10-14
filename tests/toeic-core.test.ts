@@ -76,6 +76,50 @@ test("applyQuiz: 복습 시기가 아닌 정답은 상자를 올리지 않는다
   assert.equal(s4.due, t + 3);
 });
 
+test("오답노트: 처음 보는 날 '몰라요'는 넣지 않고, 이미 본 단어를 틀리면 넣는다", () => {
+  const t = 400;
+  const a = C.grade(undefined, 0, t); // 처음 본 카드에서 몰라요
+  assert.ok(!a.wrong);
+  const a2 = C.grade(a, 0, t); // 같은 날 2회차에서 또 몰라요
+  assert.ok(!a2.wrong);
+  const b = C.grade(a2, 0, t + 1); // 다음 날 복습 카드에서 몰라요
+  assert.equal(b.wrong, true);
+  assert.equal(b.cs, 0);
+  const q0 = C.applyQuiz(undefined, false, t); // 한 번도 안 본 단어를 퀴즈에서 틀림
+  assert.ok(!q0.wrong);
+  const q1 = C.applyQuiz(C.grade(undefined, 2, t), false, t); // 오늘 카드로 본 단어를 퀴즈에서 틀림
+  assert.equal(q1.wrong, true);
+});
+
+test("오답노트: 어떤 퀴즈·복습이든 2번 연속 맞히면 빠지고, 중간에 틀리면 처음부터", () => {
+  const t = 500;
+  let s = C.applyQuiz(C.grade(undefined, 2, t), false, t); // 오답노트에 들어감
+  assert.equal(s.wrong, true);
+  s = C.applyQuiz(s, true, t); // 1번 맞힘 (복습일 아님)
+  assert.equal(s.wrong, true);
+  assert.equal(s.cs, 1);
+  s = C.applyQuiz(s, false, t); // 틀리면 연속 기록이 0
+  assert.equal(s.cs, 0);
+  s = C.applyQuiz(s, true, t + 1); // 복습일 → grade 경로
+  assert.equal(s.cs, 1);
+  s = C.grade(s, 1, t + 2); // 헷갈려요도 연속을 끊는다
+  assert.equal(s.cs, 0);
+  assert.equal(s.wrong, true);
+  s = C.grade(s, 2, t + 3); // 복습 카드 알아요
+  s = C.applyQuiz(s, true, t + 3);
+  assert.ok(!s.wrong);
+  assert.ok(!("cs" in s));
+  // 예전 기록 호환: cs 없이 wrong 만 있어도 2번 맞혀야 빠진다
+  let old = { b: 1, due: t, n: 3, ok: 1, ng: 2, last: t - 1, first: t - 5, wrong: true };
+  old = C.applyQuiz(old, true, t);
+  assert.equal(old.wrong, true);
+  old = C.applyQuiz(old, true, t);
+  assert.ok(!old.wrong);
+  // 아는 단어로 빼면 오답 표시도 지운다
+  const k = C.markKnown({ b: 0, due: t, n: 2, ok: 0, ng: 2, last: t, first: t - 3, wrong: true, cs: 1 }, t);
+  assert.ok(!k.wrong && !("cs" in k));
+});
+
 test("todayPlan: 하루 분량에서 오늘 이미 본 단어를 빼고, 복습할 단어를 고른다", () => {
   const t = 300;
   const states: Record<string, unknown> = {

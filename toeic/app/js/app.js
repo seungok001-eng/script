@@ -113,6 +113,8 @@
     tips: {}, // 한 번 본 첫 방문 팁 { card: 1, … }
     diag: null, // 첫 실력 진단 결과 { lc, rc, total, at }
     freeUse: {}, // 무료 이용 횟수 { lcq, dict }
+    dayStep: {}, // Day 학습 단계 { 5: 1|2|3 } (1 = 아는 단어 빼기, 2 = 확인 퀴즈 마침)
+    cf: {}, // 혼동 어휘 세트 마지막 결과 { "cf-1": 1 | 0 }
     premium: false,
   });
   // 처음 3일 시작 미션: 앱의 핵심 기능을 하루 3개씩 직접 써 보게 한다 (하루에 한 묶음씩 열림)
@@ -160,7 +162,7 @@
       const o = { b: num(w.b, 0, 0, C.INTERVALS.length - 1), due: num(w.due, 0, 0, 1e6), n: num(w.n, 0, 0, 1e6), ok: num(w.ok, 0, 0, 1e6), ng: num(w.ng, 0, 0, 1e6), last: num(w.last, 0, 0, 1e6) };
       if (w.first != null) o.first = num(w.first, 0, 0, 1e6);
       if (w.star) o.star = true;
-      if (w.wrong) o.wrong = true;
+      if (w.wrong) { o.wrong = true; if (w.cs != null) o.cs = num(w.cs, 0, 0, 9); }
       d.words[id] = o;
     }
     const lg = (src && src.log) || {};
@@ -209,6 +211,11 @@
     if (dg && typeof dg === "object") d.diag = { lc: num(dg.lc, 5, 5, 495), rc: num(dg.rc, 5, 5, 495), total: num(dg.total, 10, 10, 990), at: num(dg.at, 0, 0, 1e6) };
     const fu = (src && src.freeUse) || {};
     for (const k of ["lcq", "dict"]) if (fu[k]) d.freeUse[k] = num(fu[k], 0, 0, 1e6);
+    const ds = (src && src.dayStep) || {};
+    for (const k of Object.keys(ds)) if (DAY_BY.has(+k) && ds[k]) d.dayStep[+k] = num(ds[k], 0, 0, 3);
+    const cf = (src && src.cf) || {};
+    const cfIds = new Set((D.conf || []).map((c) => c.id));
+    for (const k of Object.keys(cf)) if (cfIds.has(k)) d.cf[k] = cf[k] ? 1 : 0;
     const tp = (src && src.tips) || {};
     for (const k of Object.keys(tp)) if (/^[a-z0-9]{1,20}$/.test(k) && tp[k]) d.tips[k] = 1;
     d.premium = !!(src && src.premium);
@@ -877,9 +884,9 @@
       const s = C.summarize(ws, S.words);
       const m = ws.length ? (s.mastered / ws.length) * 100 : 0;
       const l = ws.length ? (s.learning / ws.length) * 100 : 0;
-      return T`<div style="margin:6px 0 14px"><div class="row small" style="margin-bottom:6px"><span class="badge tier-${tier}">${tr(C.TIER_NAMES[tier])}</span><span class="spacer"></span><span class="muted">${s.mastered} / ${ws.length} 완료</span></div>
+      return T`<div style="margin:6px 0 14px"><div class="row small" style="margin-bottom:6px"><span class="badge tier-${tier}">${tr(C.TIER_NAMES[tier])}</span><span class="spacer"></span><span class="muted">학습 ${s.seen} / ${ws.length} · 장기 기억 ${s.mastered}</span></div>
         <div class="stack-bar"><i style="width:${m}%;background:var(--ok)"></i><i style="width:${l}%;background:var(--accent)"></i></div></div>`;
-    }).join("") + T`<div class="legend"><span><i style="background:var(--ok)"></i>암기 완료</span><span><i style="background:var(--accent)"></i>학습 중</span><span><i style="background:var(--bg-sunk);border:1px solid var(--line-strong)"></i>아직 안 봄</span></div>`;
+    }).join("") + T`<div class="legend"><span><i style="background:var(--ok)"></i>장기 기억</span><span><i style="background:var(--accent)"></i>복습 중</span><span><i style="background:var(--bg-sunk);border:1px solid var(--line-strong)"></i>아직 안 봄</span></div><div class="small muted" style="margin-top:6px">복습을 2번 더 맞히면 장기 기억이 돼요</div>`;
   }
   function homeGo(what, plan, introduced) {
     const P = pool();
@@ -945,7 +952,7 @@
         <span class="dn">DAY ${pad(d.day)}${d.day === curDay ? T` · 학습 중` : ""}</span>
         <span class="dt">${esc(tr(d.title))}</span>
         <div class="bar thin ${mpct === 100 ? "ok" : ""}"><i style="width:${pct}%"></i></div>
-        <span class="dm"><span>${s.seen}/${ws.length}개</span><span>${test ? T`테스트 ${test.best}점` : ""}</span></span></a>`;
+        <span class="dm"><span>학습 ${s.seen}/${ws.length}</span>${test ? (test.best >= 80 ? T`<span class="tscore pass">통과 ${test.best}</span>` : T`<span class="tscore retry">테스트 ${test.best} · 재도전</span>`) : ""}</span></a>`;
     };
     const section = (title, desc, list) => `<div class="section"><div class="section-h"><h2>${title}</h2><span class="small muted">${desc}</span></div><div class="grid2 grid-days">${list.map(card).join("")}</div></div>`;
     // 코스 탭: 기본 / 심화 / 실전 (처음엔 지금 학습 중인 Day 가 있는 코스)
@@ -971,6 +978,39 @@
   }
 
   // ═════════════ Day 상세 ═════════════
+  // 학습 방법: [키, 이름, 아이콘, 색, 한 줄 설명]
+  const DAY_MODES = [
+    ["sort", T`아는 단어 빼기`, "check", "c-green", T`아는 단어는 빼고 7일 뒤 한 번만 확인`],
+    ["card", T`카드 암기`, "layers", "c-blue", T`뜻을 떠올리고 뒤집어 확인`],
+    ["meaning", T`뜻 고르기`, "list", "c-green", T`영어 단어 보고 알맞은 뜻 고르기`],
+    ["word", T`단어 고르기`, "shuffle", "c-orange", T`뜻 보고 알맞은 영어 단어 고르기`],
+    ["listen-q", T`듣고 고르기`, "ear", "c-purple", T`발음만 듣고 뜻 고르기`],
+    ["spell", T`철자 쓰기`, "pencil", "c-gold", T`뜻 보고 영어 철자 직접 쓰기`],
+    ["cloze", T`예문 빈칸`, "bulb", "c-blue", T`예문 속 빈칸에 들어갈 말 고르기`],
+    ["part5", T`Part 5 어휘`, "trophy", "c-purple", T`실전 Part 5 빈칸 문제로 확인`],
+    ["para", T`Part 7 동의어`, "swap", "c-orange", T`지문 속 단어를 바꿔 쓴 표현 찾기`],
+    ["test", T`DAY 테스트`, "flag", "c-red", T`20문제 · 80점 이상이면 통과`],
+  ];
+  // Day 다음 단계: 1 아는 단어 빼기 → 2 카드 암기 → 3 확인 퀴즈 → 4 DAY 테스트 → 5 통과 (다음 Day)
+  function dayStepOf(d, ws) {
+    const test = S.tests[d];
+    if (test && test.best >= 80) return 5;
+    const ds = S.dayStep[d] || 0;
+    const seen = ws.filter((w) => st(w.id) && st(w.id).n).length;
+    if (!seen && !(ds & 1)) return 1;
+    if (seen < ws.length) return 2;
+    if (!(ds & 2)) return 3;
+    return 4;
+  }
+  function dayStepDone(d, bit) { S.dayStep[d] = (S.dayStep[d] || 0) | bit; }
+  function startDayStep(d, ws, step) {
+    const fresh = ws.filter((w) => C.status(st(w.id)) === "new");
+    if (step === 1) return startSort(ws.filter((w) => C.status(st(w.id)) !== "mastered"), { title: T`DAY ${pad(d)} · 아는 단어 빼기`, day: d });
+    if (step === 2) return startCard(fresh, { title: T`DAY ${pad(d)} · 카드 암기`, day: d });
+    if (step === 3) return startQuiz(ws.filter((w) => st(w.id) && st(w.id).n), "mix", { title: T`DAY ${pad(d)} · 확인 퀴즈`, dayStep: d });
+    if (step === 4) return startQuiz(ws, "test", { title: T`DAY ${pad(d)} 테스트`, day: d });
+    return go(DAY_BY.has(d + 1) ? `#/day/${d + 1}` : "#/review");
+  }
   function vDay(r) {
     const d = +r.arg;
     const day = DAY_BY.get(d);
@@ -988,32 +1028,37 @@
       if (f === "star") return s && s.star;
       return true;
     });
-    const sum = C.summarize(mine, S.words);
+    const sw = mine.length ? mine : all;
+    const sum = C.summarize(sw, S.words);
     const test = S.tests[d];
-    const modes = [
-      ["sort", T`아는 단어 빼기`, "check", "c-green"],
-      ["card", T`카드 암기`, "layers", "c-blue"],
-      ["meaning", T`뜻 고르기`, "list", "c-green"],
-      ["word", T`단어 고르기`, "shuffle", "c-orange"],
-      ["listen-q", T`듣고 고르기`, "ear", "c-purple"],
-      ["spell", T`철자 쓰기`, "pencil", "c-gold"],
-      ["cloze", T`예문 빈칸`, "bulb", "c-blue"],
-      ["part5", T`Part 5 어휘`, "trophy", "c-purple"],
-      ["para", T`Part 7 동의어`, "swap", "c-orange"],
-    ];
+    const step = dayStepOf(d, sw);
+    const fresh = sw.length - sum.seen;
+    const nextLabel = [null,
+      [T`아는 단어 빼기`, T`이미 아는 단어는 빼고 모르는 단어만 외워요`, "check"],
+      [T`카드로 ${fresh}개 외우기`, T`뜻을 떠올리고 카드를 뒤집어 확인해요`, "layers"],
+      [T`확인 퀴즈`, T`외운 단어를 뜻·단어·예문 문제로 확인해요`, "zap"],
+      [test ? T`DAY 테스트 다시 보기` : T`DAY 테스트`, test ? T`20문제 · 80점 이상이면 통과 · 최고 ${test.best}점` : T`20문제 · 80점 이상이면 통과`, "flag"],
+      DAY_BY.has(d + 1) ? [T`DAY ${pad(d + 1)} 시작하기`, T`DAY ${pad(d)} 통과! 다음 Day로 넘어가요`, "right"] : [T`복습하러 가기`, T`마지막 Day까지 통과했어요`, "repeat"],
+    ][step];
+    const stepNames = [T`아는 단어 빼기`, T`카드 암기`, T`확인 퀴즈`, T`DAY 테스트`];
+    const stepDone = (i) => i + 1 < step || (i === 0 && sum.seen > 0);
+    const steps = stepNames.map((n, i) => `<li class="${stepDone(i) ? "done" : i + 1 === step ? "cur" : ""}"><i>${stepDone(i) ? ico("check") : i + 1}</i><span>${n}</span></li>`).join("");
     const items = list.map((w) => wordItem(w)).join("") || T`<div class="empty">${ico("search")}<b>해당하는 단어가 없어요</b>필터를 바꿔 보세요</div>`;
     const hiddenCount = all.length - mine.length;
     const body = T`${topBar(`DAY ${pad(d)}`, { back: true, sub: LANG === "ko" ? esc(day.title) + " · " + esc(day.titleEn) : esc(tr(day.title)), right: `${DAY_BY.has(d - 1) ? T`<a class="icon-btn" href="#/day/${d - 1}" aria-label="이전 Day">${ico("left")}</a>` : ""}${DAY_BY.has(d + 1) ? T`<a class="icon-btn" href="#/day/${d + 1}" aria-label="다음 Day">${ico("right")}</a>` : ""}` })}
-      <div class="card"><div class="row"><div class="spacer"><div class="stat-num">${sum.mastered}<span class="muted" style="font-size:16px"> / ${mine.length}</span></div><div class="stat-lbl">암기 완료 · 학습 중 ${sum.learning}</div></div>
-        ${test ? T`<div style="text-align:right"><div class="stat-num" style="color:${test.best >= 80 ? "var(--ok)" : "var(--accent)"}">${test.best}<span style="font-size:16px">점</span></div><div class="stat-lbl">테스트 최고점</div></div>` : ""}</div>
-        <div class="stack-bar" style="margin-top:12px"><i style="width:${mine.length ? (sum.mastered / mine.length) * 100 : 0}%;background:var(--ok)"></i><i style="width:${mine.length ? (sum.learning / mine.length) * 100 : 0}%;background:var(--accent)"></i></div></div>
-      <div class="section"><div class="section-h"><h2>학습 방법</h2></div>
-        <div class="grid3">${modes.map(([k, l, ic, c]) => `<button class="tile" data-mode="${k}" style="align-items:center;text-align:center;padding:14px 8px"><span class="tico ${c}">${ico(ic)}</span><b style="font-size:13.5px">${l}</b></button>`).join("")}</div>
+      <div class="card"><div class="row"><div class="spacer"><div class="stat-num"><span class="stat-pre">학습</span>${sum.seen}<span class="muted" style="font-size:16px"> / ${sw.length}</span></div><div class="stat-lbl">장기 기억 ${sum.mastered} · 복습 중 ${sum.learning}</div></div>
+        ${test ? T`<div style="text-align:right"><div class="stat-num" style="color:${test.best >= 80 ? "var(--ok)" : "var(--accent)"}">${test.best}<span style="font-size:16px">점</span></div><div class="stat-lbl">${test.best >= 80 ? T`테스트 통과` : T`테스트 최고점`}</div></div>` : ""}</div>
+        <div class="stack-bar" style="margin-top:12px"><i style="width:${sw.length ? (sum.mastered / sw.length) * 100 : 0}%;background:var(--ok)"></i><i style="width:${sw.length ? (sum.learning / sw.length) * 100 : 0}%;background:var(--accent)"></i></div>
+        <div class="small muted mem-note">${ico("bulb")}<span>복습을 2번 더 맞히면 장기 기억이 돼요</span></div></div>
+      <div class="section"><div class="section-h"><h2>다음 단계</h2></div>
+        <div class="card next-step"><ol class="steps">${steps}</ol>
+          <button class="btn block" data-next-step>${ico(nextLabel[2])}${nextLabel[0]}</button><div class="small muted ns-sub">${nextLabel[1]}</div></div>
         <button class="task" data-mode="listen" style="margin-top:10px"><span class="tico c-green">${ico("headphones")}</span><span class="spacer"><div class="tt">듣기 모드</div><div class="td">단어 → 예문 자동 재생 · 출퇴근길에</div></span>${ico("right")}</button>
-        <button class="task" data-mode="test" style="margin-top:10px"><span class="tico c-red">${ico("flag")}</span><span class="spacer"><div class="tt">DAY ${pad(d)} 테스트</div><div class="td">20문제 · 80점 이상이면 통과${test ? T` · 최고 ${test.best}점` : ""}</div></span>${ico("right")}</button>
+        <details class="more-modes" ${ui.dayMore ? "open" : ""}><summary><b>더 연습하기</b><span class="small muted">${DAY_MODES.length}가지 방법</span></summary>
+          <div class="mode-list">${DAY_MODES.map(([k, l, ic, c, desc]) => `<button class="mode-row" data-mode="${k}"><span class="tico ${c}">${ico(ic)}</span><span class="spacer"><b>${l}</b><span>${desc}</span></span>${ico("right")}</button>`).join("")}</div></details>
       </div>
       <div class="section"><div class="section-h"><h2>단어 ${list.length}개</h2><button data-toggle-hide>${S.settings.hideMeaning ? T`뜻 보이기` : T`뜻 가리기`}</button></div>
-        <div class="chips scroll" style="margin-bottom:12px">${[["all", T`전체`], ["new", T`안 본 단어`], ["learning", T`학습 중`], ["mastered", T`암기 완료`], ["star", T`★ 중요`]].map(([k, l]) => `<button class="chip ${f === k ? "on" : ""}" data-filter="${k}">${l}</button>`).join("")}
+        <div class="chips scroll" style="margin-bottom:12px">${[["all", T`전체`], ["new", T`안 본 단어`], ["learning", T`복습 중`], ["mastered", T`장기 기억`], ["star", T`★ 중요`]].map(([k, l]) => `<button class="chip ${f === k ? "on" : ""}" data-filter="${k}">${l}</button>`).join("")}
           ${hiddenCount > 0 || ui.dayAll ? `<button class="chip ${ui.dayAll ? "on" : ""}" data-all>${ui.dayAll ? T`내 목표 범위만` : T`목표 밖 단어 +${hiddenCount}`}</button>` : ""}</div>
         <div class="wlist">${items}</div></div>`;
     shell("days", body);
@@ -1022,12 +1067,15 @@
     if (ab) ab.addEventListener("click", () => { ui.dayAll = !ui.dayAll; vDay(r); });
     $app.querySelector("[data-toggle-hide]").addEventListener("click", () => { S.settings.hideMeaning = !S.settings.hideMeaning; save(); vDay(r); });
     $app.querySelectorAll(".witem.hide-m").forEach((el) => el.addEventListener("touchstart", () => el.classList.add("peek"), { passive: true }));
+    $app.querySelector(".more-modes").addEventListener("toggle", (e) => { ui.dayMore = e.target.open; });
+    $app.querySelector("[data-next-step]").addEventListener("click", () => startDayStep(d, sw, step));
     $app.querySelectorAll("[data-mode]").forEach((b) => b.addEventListener("click", () => {
       const ws = list.length ? list : base;
       const m = b.dataset.mode;
-      const title = `DAY ${pad(d)} · ${b.textContent.trim()}`;
-      if (m === "card") return startCard(ws, { title });
-      if (m === "sort") return startSort(ws.filter((w) => C.status(st(w.id)) !== "mastered"), { title });
+      const label = m === "listen" ? T`듣기 모드` : (DAY_MODES.find((x) => x[0] === m) || [])[1];
+      const title = `DAY ${pad(d)} · ${label}`;
+      if (m === "card") return startCard(ws, { title, day: d });
+      if (m === "sort") return startSort(ws.filter((w) => C.status(st(w.id)) !== "mastered"), { title, day: d });
       if (m === "listen") return startListen(ws, { title });
       if (m === "test") return startQuiz(base, "test", { title: T`DAY ${pad(d)} 테스트`, day: d });
       if (m === "listen-q") return startQuiz(ws, "listen", { title });
@@ -1037,7 +1085,7 @@
   function wordItem(w) {
     const s = st(w.id);
     return T`<div class="witem ${S.settings.hideMeaning ? "hide-m" : ""}" data-act="open-word" data-id="${w.id}" role="link" tabindex="0" aria-label="${esc(w.w)} 상세 보기">
-      <span class="dot ${C.status(s)}" title="${{ new: T`안 봄`, learning: T`학습 중`, mastered: T`암기 완료` }[C.status(s)]}"></span>
+      <span class="dot ${C.status(s)}" title="${{ new: T`안 봄`, learning: T`복습 중`, mastered: T`장기 기억` }[C.status(s)]}"></span>
       <div class="wbody"><div class="row" style="gap:8px"><span class="ww en">${esc(w.w)}</span><span class="badge tier-${w.tier}">${tr(C.TIER_NAMES[w.tier])}</span></div>
       <div class="wm"><span class="muted">${POS_SHORT[w.pos] || ""}</span> ${esc(C.meaningText(w, 3))}</div></div>
       <button class="icon-btn" data-act="star" data-id="${w.id}" aria-label="중요 표시">${starIco(s && s.star)}</button>
@@ -1087,17 +1135,34 @@
     const w = BY_ID.get(r.arg);
     if (!w) return go("#/days");
     if (!canAccessDay(w.d)) return go("#/premium?from=day");
-    const siblings = dayWords(w.d, true);
+    // 앞뒤 단어·번호는 Day 목록과 같게 목표 범위 안에서 센다 (범위 밖 단어를 열었으면 Day 전체)
+    const mine = dayWords(w.d);
+    const siblings = mine.includes(w) ? mine : dayWords(w.d, true);
     const i = siblings.indexOf(w);
     const prev = siblings[i - 1];
     const next = siblings[i + 1];
-    const body = `${topBar("", { back: true, right: `${prev ? T`<a class="icon-btn" href="#/word/${prev.id}" aria-label="이전 단어">${ico("left")}</a>` : ""}<span class="small muted">${i + 1} / ${siblings.length}</span>${next ? T`<a class="icon-btn" href="#/word/${next.id}" aria-label="다음 단어">${ico("right")}</a>` : ""}` })}${wordDetailHtml(w)}`;
+    const to = (x) => location.replace(`#/word/${x.id}`);
+    const nav = prev || next ? `<div class="word-nav">${prev ? T`<a class="btn ghost" href="#/word/${prev.id}" data-wnav aria-label="이전 단어 ${esc(prev.w)}">${ico("left")}<span class="en">${esc(prev.w)}</span></a>` : "<span></span>"}${next ? T`<a class="btn ghost" href="#/word/${next.id}" data-wnav aria-label="다음 단어 ${esc(next.w)}"><span class="en">${esc(next.w)}</span>${ico("right")}</a>` : "<span></span>"}</div>` : "";
+    const body = `${topBar("", { back: true, right: T`<span class="small muted">${i + 1} / ${siblings.length}</span>` })}${wordDetailHtml(w)}${nav}`;
     shell("days", body);
     bindP5(w, $app);
+    // 앞뒤 단어로 옮겨 다녀도 뒤로가기 한 번이면 목록으로 돌아가게 기록을 바꿔 쓴다
+    $app.querySelectorAll("[data-wnav]").forEach((a) => a.addEventListener("click", (e) => { e.preventDefault(); location.replace(a.getAttribute("href")); }));
+    const pg = $app.querySelector(".page");
+    let x0 = null, y0 = 0;
+    pg.addEventListener("touchstart", (e) => { const t = e.touches[0]; x0 = t.clientX; y0 = t.clientY; }, { passive: true });
+    pg.addEventListener("touchend", (e) => {
+      if (x0 == null) return;
+      const t = e.changedTouches[0], dx = t.clientX - x0, dy = t.clientY - y0;
+      x0 = null;
+      if (Math.abs(dx) < 70 || Math.abs(dy) > Math.abs(dx) * 0.6) return;
+      if (dx < 0 && next) to(next);
+      else if (dx > 0 && prev) to(prev);
+    }, { passive: true });
     if (S.settings.autoWord) Sound.word(w);
     keyHandler = (e) => {
-      if (e.key === "ArrowLeft" && prev) go(`#/word/${prev.id}`);
-      if (e.key === "ArrowRight" && next) go(`#/word/${next.id}`);
+      if (e.key === "ArrowLeft" && prev) to(prev);
+      if (e.key === "ArrowRight" && next) to(next);
       if (e.key === "p" || e.key === "P") Sound.word(w);
       if (e.key === "e" || e.key === "E") Sound.example(w);
     };
@@ -1111,6 +1176,27 @@
     session = null;
     if (studyPushed) { studyPushed = false; history.back(); }
     else location.replace("#/home");
+  }
+  // 학습을 시작한 화면 (결과 화면에서 이어서 새 학습을 시작해도 처음 화면을 기억한다)
+  function studyFrom() { return session && location.hash === "#/study" ? session.from : location.hash; }
+  // 결과 화면 '돌아가기' 버튼: 실제로 돌아갈 화면 이름
+  function backLabel(s) {
+    const h = (s && s.from) || "";
+    const m = /^#\/day\/(\d+)/.exec(h);
+    if (m) return T`DAY ${pad(+m[1])}로 돌아가기`;
+    if (/^#\/review/.test(h)) return T`복습으로 돌아가기`;
+    if (/^#\/conf/.test(h)) return T`혼동 어휘로 돌아가기`;
+    if (!h || /^#\/?(home)?$/.test(h)) return T`오늘 할 일로 돌아가기`;
+    return T`돌아가기`;
+  }
+  // 학습 화면을 닫고 다른 화면으로 (학습 기록 자리를 바꿔 써서 뒤로가기가 결과 화면으로 오지 않게)
+  function leaveStudyTo(hash) {
+    lineSeq += 1;
+    lcqSeq += 1;
+    Sound.stop();
+    session = null;
+    studyPushed = false;
+    location.replace(hash);
   }
   function askExit() {
     if (!session || session.done) return exitStudy();
@@ -1130,7 +1216,7 @@
   // ═════════════ 카드 암기 ═════════════
   function startCard(words, opt) {
     if (!words.length) return toast(T`학습할 단어가 없어요`);
-    session = { kind: "card", title: opt.title, src: opt.src, queue: words.slice(), i: 0, flipped: false, round: 1, again: [], res: { 0: 0, 1: 0, 2: 0 }, seenIds: new Set(), from: location.hash, startedAt: Date.now() };
+    session = { kind: "card", title: opt.title, src: opt.src, day: opt.day, queue: words.slice(), i: 0, flipped: false, round: 1, again: [], res: { 0: 0, 1: 0, 2: 0 }, seenIds: new Set(), from: studyFrom(), startedAt: Date.now() };
     enterStudy();
   }
   function vStudy() {
@@ -1157,18 +1243,18 @@
     $app.innerHTML = T`<div class="study">${studyTop(s.i, s.queue.length)}
       <div class="small muted" style="text-align:center">${esc(s.title)}${s.round > 1 ? T` · ${s.round}회차 (모르는 단어 다시)` : ""}</div>
       <div class="flash-wrap"><div class="flash" id="flash">
-        <span class="swipe-label l">모름</span><span class="swipe-label r">알아요</span>
+        <span class="swipe-label l">몰라요</span><span class="swipe-label r">알아요</span>
         <div class="f-head"><span class="badge tier-${w.tier}">${tr(C.TIER_NAMES[w.tier])}</span><span class="badge pos">${POS_KO[w.pos] || ""}</span>${!st0 || !st0.n ? '<span class="badge c-blue">NEW</span>' : ""}<span class="spacer"></span><button class="icon-btn" data-act="star" data-id="${w.id}" aria-label="중요 표시">${starIco(st0 && st0.star)}</button></div>
         <div class="f-center"><div class="f-word en">${esc(w.w)}</div>${w.ipa ? `<div class="f-ipa">${esc(w.ipa)}</div>` : ""}
           <button class="play lg" data-act="play-word" data-id="${w.id}" style="margin-top:14px" aria-label="발음 듣기">${ico("vol")}</button></div>
         ${s.flipped ? T`<div class="f-back"><div class="f-mean">${esc(C.meaningText(w, 3))}</div>
           <div class="f-ex"><div class="row" style="align-items:flex-start"><div class="spacer ex-en en" style="font-size:15.5px">${hl(w.ex)}</div><button class="play" data-act="play-ex" data-id="${w.id}" aria-label="예문 듣기">${ico("vol")}</button></div>${showKo ? `<div class="ex-ko">${esc(w.exKo)}</div>` : ""}</div>
-          ${w.tip ? T`<div class="small" style="margin-top:10px;color:var(--text-2)"><b style="color:var(--warn)">출제 포인트</b> ${esc(w.tip)}</div>` : ""}</div>` : T`<div class="f-hint">뜻을 떠올린 뒤 카드를 눌러 확인하세요</div>`}
+          ${w.tip ? T`<div class="small" style="margin-top:10px;color:var(--text-2)"><b style="color:var(--warn)">출제 포인트</b> ${esc(w.tip)}</div>` : ""}</div>` : T`<div class="f-hint">뜻을 떠올린 뒤 카드를 눌러 확인하세요</div>${!st0 || !st0.n ? T`<div class="f-hint sub">처음부터 알면 3일 뒤 확인</div>` : ""}`}
       </div></div>
       <div class="study-foot">${s.flipped
-        ? T`<div class="grade3"><button class="btn g-no" data-g="0">모르겠어요<small>다시 보기</small></button><button class="btn g-mid" data-g="1">헷갈려요<small>${dueLabel(C.INTERVALS[Math.max(1, ((st0 && st0.b) || 0) - 1)])}</small></button><button class="btn g-yes" data-g="2">알아요<small>${s.seenIds.has(w.id) ? T`내일 복습` : !st0 || !st0.b ? dueLabel(C.INTERVALS[2]) : dueLabel(C.INTERVALS[Math.min(st0.b + 1, 6)])}</small></button></div>`
+        ? T`<div class="grade3"><button class="btn g-no" data-g="0">몰라요<small>다시 보기</small></button><button class="btn g-mid" data-g="1">헷갈려요<small>${dueLabel(C.INTERVALS[Math.max(1, ((st0 && st0.b) || 0) - 1)])}</small></button><button class="btn g-yes" data-g="2">알아요<small>${s.seenIds.has(w.id) ? T`내일 복습` : !st0 || !st0.b ? dueLabel(C.INTERVALS[2]) : dueLabel(C.INTERVALS[Math.min(st0.b + 1, 6)])}</small></button></div>`
         : T`<button class="btn block" data-flip>뜻 확인하기</button>`}
-        <div class="kbd-hint"><kbd>Space</kbd> 뒤집기 · <kbd>1</kbd> 모름 <kbd>2</kbd> 헷갈림 <kbd>3</kbd> 알아요 · <kbd>P</kbd> 발음 <kbd>E</kbd> 예문 · 카드를 좌우로 밀어도 돼요</div></div></div>`;
+        <div class="kbd-hint"><kbd>Space</kbd> 뒤집기 · <kbd>1</kbd> 몰라요 <kbd>2</kbd> 헷갈려요 <kbd>3</kbd> 알아요 · <kbd>P</kbd> 발음 <kbd>E</kbd> 예문 · 카드를 좌우로 밀어도 돼요</div></div></div>`;
     bindExit();
     const flash = document.getElementById("flash");
     const flip = () => {
@@ -1188,7 +1274,7 @@
       gradeCard(dir > 0 ? 2 : 0);
     });
     if (!s.flipped && S.settings.autoWord) Sound.word(w);
-    coach("card", T`<b>카드 학습</b> 뜻을 떠올린 뒤 카드를 눌러 확인하고 <b>모름 · 헷갈림 · 알아요</b> 중 하나를 누르세요. 답에 따라 다음 복습 날짜가 정해져요. 카드를 좌우로 밀어도 돼요.`);
+    coach("card", T`<b>카드 학습</b> 뜻을 떠올린 뒤 카드를 눌러 확인하고 <b>몰라요 · 헷갈려요 · 알아요</b> 중 하나를 누르세요. 답에 따라 다음 복습 날짜가 정해져요. 카드를 좌우로 밀어도 돼요.`);
     keyHandler = (e) => {
       if (onControl(e) || s.animating) return;
       if (e.key === " " || e.key === "Enter") { e.preventDefault(); if (!s.flipped) flip(); }
@@ -1249,9 +1335,6 @@
       ns = Object.assign({}, before, { b, due: t + C.INTERVALS[b], n: before.n + 1, last: t });
     }
     if (before && before.star) ns.star = true;
-    // 오답노트: '알아요'로 다시 맞히면 빼 준다 (오늘 처음 틀린 경우는 남긴다)
-    if (g === 2 && before && before.wrong && s.round > 1) ns.wrong = before.wrong;
-    else if (g === 2 && before && before.wrong) ns.wrong = false;
     setSt(w.id, ns);
     const l = logToday();
     if (before && before.n) l.rev += 1;
@@ -1277,7 +1360,7 @@
   // ═════════════ 아는 단어 빼기 ═════════════
   function startSort(words, opt) {
     if (!words.length) return toast(T`뺄 단어가 없어요 (이미 모두 암기 완료)`);
-    session = { kind: "sort", title: opt.title, queue: words.slice(), i: 0, known: [], unknown: [] };
+    session = { kind: "sort", title: opt.title, day: opt.day, queue: words.slice(), i: 0, known: [], unknown: [], from: studyFrom() };
     enterStudy();
   }
   function vSort() {
@@ -1415,13 +1498,13 @@
       qs = ws.slice(0, 30).map((w) => (type === "para" ? C.makeParaphrase(w, all) : C.makeQuestion(type, w, all)));
     }
     if (!qs.length) return toast(type === "cloze" ? T`예문 빈칸 문제를 만들 수 있는 단어가 없어요` : type === "para" ? T`바꿔 쓰기 표현이 있는 단어가 없어요` : T`문제를 만들 단어가 없어요`);
-    session = { kind: "quiz", type, title: opt.title, qs, i: 0, answered: null, results: [], day: opt.day, wrongNote: opt.wrongNote, from: location.hash, hint: 0 };
+    session = { kind: "quiz", type, title: opt.title, qs, i: 0, answered: null, results: [], day: opt.day, dayStep: opt.dayStep, src: opt.src, wrongNote: opt.wrongNote, from: studyFrom(), hint: 0 };
     enterStudy();
   }
   function startConfQuiz(sets) {
     if (!sets.length) return toast(T`문제가 없어요`);
     const qs = C.shuffle(sets).map((c) => ({ type: "conf", conf: c, prompt: c.q.s, options: c.q.o, answer: c.q.a, explain: c.q.k }));
-    session = { kind: "conf", type: "conf", title: T`혼동 어휘 퀴즈`, qs, i: 0, answered: null, results: [], from: location.hash };
+    session = { kind: "conf", type: "conf", title: T`혼동 어휘 퀴즈`, qs, i: 0, answered: null, results: [], from: studyFrom() };
     enterStudy();
   }
   function vQuiz() {
@@ -1523,9 +1606,9 @@
       const before = st(w.id);
       const ns = C.applyQuiz(before, a.ok, today());
       if (before && before.star) ns.star = true;
-      if (a.ok && s.wrongNote) ns.wrong = false;
       setSt(w.id, ns);
     }
+    if (q.conf) S.cf[q.conf.id] = a.ok ? 1 : 0;
     (a.ok ? Sfx.ok : Sfx.bad)();
     vibrate(a.ok ? 8 : [20, 40, 20]);
     save();
@@ -1549,11 +1632,12 @@
   // ═════════════ 듣기 모드 ═════════════
   function startListen(words, opt) {
     if (!words.length) return toast(T`들을 단어가 없어요`);
-    session = { kind: "listen", title: opt.title, list: words.slice(), i: 0, playing: false, phase: "", from: location.hash, showMean: true, withEx: true };
+    session = { kind: "listen", title: opt.title, list: words.slice(), i: 0, playing: false, phase: "", from: studyFrom(), showMean: true, withEx: true, autoplay: true };
     enterStudy();
   }
   function vListen() {
     const s = session;
+    if (s.finished) return vListenDone();
     const w = s.list[s.i];
     $app.innerHTML = T`<div class="study">${studyTop(s.i, s.list.length)}
       <div class="small muted" style="text-align:center">${esc(s.title)} · 단어(두 번) → 예문 순서로 자동 재생 · 뜻은 화면으로</div>
@@ -1583,6 +1667,24 @@
       if (e.key === "ArrowLeft") { s.i = Math.max(0, s.i - 1); restartListen(); }
       if (e.key === "Escape") askExit();
     };
+    // 들어오자마자 재생 (버튼을 누른 동작에 이어서 시작)
+    if (s.autoplay) { s.autoplay = false; setTimeout(() => { if (session === s && !s.playing) playListen(); }, 60); }
+  }
+  // 끝까지 들었을 때: 뜻 가리고 다시 듣기 · 듣고 고르기 퀴즈
+  function vListenDone() {
+    const s = session;
+    const n = s.list.length;
+    $app.innerHTML = T`<div class="study">${studyTop(n, n)}
+      <div class="small muted" style="text-align:center">${esc(s.title)}</div>
+      <div class="result-hero"><div style="display:flex;justify-content:center">${ico("headphones", "")}</div><div class="score">${n}<small>개</small></div><div class="msg">${n}개 끝까지 들었어요!</div><p class="muted">이번엔 뜻을 가리고 들으면서 떠올려 보세요</p></div>
+      <button class="btn block" data-relisten>${ico("eye")}뜻 가리고 한 번 더 듣기</button>
+      <button class="btn ghost block" style="margin-top:10px" data-lquiz>${ico("ear")}듣고 고르기 퀴즈</button>
+      <button class="btn ghost block" style="margin-top:10px" data-home>${backLabel(s)}</button></div>`;
+    $app.querySelector("[data-exit]").addEventListener("click", exitStudy);
+    $app.querySelector("[data-relisten]").addEventListener("click", () => { s.finished = false; s.showMean = false; s.i = 0; s.autoplay = true; vListen(); });
+    $app.querySelector("[data-lquiz]").addEventListener("click", () => startQuiz(s.list, "listen", { title: T`듣고 고르기 퀴즈` }));
+    $app.querySelector("[data-home]").addEventListener("click", exitStudy);
+    keyHandler = (e) => { if (onControl(e)) return; if (e.key === "Escape") exitStudy(); };
   }
   function restartListen() {
     const s = session;
@@ -1630,8 +1732,8 @@
       if (!alive()) break;
       if (s.i + 1 >= s.list.length) {
         s.playing = false;
+        s.finished = true;
         markDone();
-        toast(T`끝까지 들었어요!`);
         vListen();
         break;
       }
@@ -1644,6 +1746,10 @@
   function finishSession() {
     const s = session;
     s.done = true;
+    const tw = document.getElementById("toast"); // '한 번 더 볼게요' 같은 진행 중 안내는 결과 화면에 남기지 않는다
+    if (tw) { clearTimeout(toastTimer); tw.innerHTML = ""; }
+    if (s.kind === "sort" && s.day) dayStepDone(s.day, 1);
+    if (s.kind === "quiz" && s.dayStep && s.results.length >= Math.min(5, s.qs.length)) dayStepDone(s.dayStep, 2);
     if (["pset", "gq", "lcq", "dict"].includes(s.kind) && (s.results || []).length >= 3) logToday().prac = true;
     const count = s.kind === "card" ? s.seenIds.size : s.kind === "sort" ? 0 : s.results.length;
     if (count >= 5) markDone();
@@ -1681,13 +1787,14 @@
       hero = T`<div class="result-hero"><div style="display:flex;justify-content:center">${ico("check")}</div><div class="score">${s.known.length}<small>개</small></div><div class="msg">아는 단어로 뺐어요</div><p class="muted">7일 뒤 복습에서 한 번만 확인할게요 · 학습할 단어 ${s.unknown.length}개</p></div>`;
       s._words = s.unknown;
       list = s.unknown.map((w) => wordItem(w)).join("");
-      actions = T`${s.unknown.length ? T`<button class="btn block" data-card>${ico("layers")}모르는 단어 ${s.unknown.length}개 카드로 외우기</button>` : ""}<button class="btn ${s.unknown.length ? "ghost" : ""} block" style="margin-top:10px" data-home>처음 화면으로</button>`;
+      actions = T`${s.unknown.length ? T`<button class="btn block" data-sortcard>${ico("layers")}모르는 단어 ${s.unknown.length}개 카드로 외우기</button>` : ""}<button class="btn ${s.unknown.length ? "ghost" : ""} block" style="margin-top:10px" data-home>${backLabel(s)}</button>`;
     } else if (s.kind === "card") {
       const total = s.res[0] + s.res[1] + s.res[2];
       const words = Array.from(s.seenIds).map((id) => BY_ID.get(id));
-      hero = T`<div class="result-hero"><div style="display:flex;justify-content:center">${ico("check", "")}</div><div class="score">${total}<small>개</small></div><div class="msg">카드 학습 완료!</div><p class="muted">한 번에 안 단어 ${s.res[2]} · 헷갈림 ${s.res[1]} · 모름 ${s.res[0]}</p></div>`;
+      hero = T`<div class="result-hero"><div style="display:flex;justify-content:center">${ico("check", "")}</div><div class="score">${total}<small>개</small></div><div class="msg">카드 학습 완료!</div><p class="muted">한 번에 안 단어 ${s.res[2]} · 헷갈려요 ${s.res[1]} · 몰라요 ${s.res[0]}</p></div>${scheduleHtml(words)}`;
       list = words.map((w) => wordItem(w)).join("");
-      actions = T`<button class="btn block" data-quiz>${ico("zap")}방금 외운 단어 퀴즈로 확인</button><button class="btn ghost block" style="margin-top:10px" data-home>처음 화면으로</button>`;
+      const more = s.src === "due" ? dueWords(today()).length : 0;
+      actions = T`${more ? T`<button class="btn block" data-moredue>${ico("repeat")}${Math.min(more, REVIEW_CHUNK)}개 더 복습하기 · 남은 ${more}개</button>` : ""}<button class="btn ${more ? "ghost" : ""} block" style="margin-top:${more ? 10 : 0}px" data-quiz>${ico("zap")}확인 퀴즈 풀기</button><button class="btn ghost block" style="margin-top:10px" data-home>${backLabel(s)}</button>`;
       s._words = words;
     } else if (s.kind === "pset") {
       const r = psetResultHtml(s);
@@ -1752,7 +1859,24 @@
       list = wrong.length
         ? wrong.map((r) => (r.q.word ? wordItem(r.q.word) : `<div class="witem"><div class="wbody"><div class="ww en">${esc(r.q.conf.words.map((x) => x.w).join(" / "))}</div><div class="wm">${esc(r.q.conf.point)}</div></div></div>`)).join("")
         : "";
-      actions = T`${wrongWords.length ? T`<button class="btn block" data-card>${ico("layers")}틀린 단어 카드로 복습 (${wrongWords.length})</button>` : ""}<button class="btn ${wrongWords.length ? "ghost" : ""} block" style="margin-top:10px" data-retry>다시 풀기</button><button class="btn ghost block" style="margin-top:10px" data-home>처음 화면으로</button>`;
+      const btn = (primary, attr, icon, label) => `<button class="btn ${primary ? "" : "ghost"} block" style="margin-top:10px" ${attr}>${icon ? ico(icon) : ""}${label}</button>`;
+      const more = s.src === "due" ? dueWords(today()).length : 0;
+      const cfWrong = s.kind === "conf" ? wrong.map((r) => r.q.conf) : [];
+      s._cfWrong = cfWrong;
+      if (s.type === "test" && s.day && pass) {
+        actions = (DAY_BY.has(s.day + 1) ? btn(true, `data-goday="${s.day + 1}"`, "right", T`DAY ${pad(s.day + 1)} 시작하기`) : btn(true, 'data-goreview', "repeat", T`복습하러 가기`))
+          + (wrongWords.length ? btn(false, "data-card", "layers", T`틀린 단어 카드로 복습 (${wrongWords.length})`) : "");
+      } else if (s.type === "test" && s.day) {
+        actions = btn(true, "data-wquiz", "zap", T`틀린 단어로 퀴즈 (${wrongWords.length})`) + btn(false, "data-retry", "repeat", T`다시 테스트`);
+      } else if (s.dayStep) {
+        actions = btn(true, `data-daytest="${s.dayStep}"`, "flag", T`DAY ${pad(s.dayStep)} 테스트 보기`) + (wrongWords.length ? btn(false, "data-card", "layers", T`틀린 단어 카드로 복습 (${wrongWords.length})`) : "");
+      } else {
+        actions = (more ? btn(true, "data-moredue", "repeat", T`${Math.min(more, REVIEW_CHUNK)}개 더 복습하기 · 남은 ${more}개`) : "")
+          + (cfWrong.length ? btn(!more, "data-cfwrong", "repeat", T`틀린 세트만 다시 (${cfWrong.length})`) : "")
+          + (wrongWords.length ? btn(!more, "data-card", "layers", T`틀린 단어 카드로 복습 (${wrongWords.length})`) : "")
+          + btn(!more && !cfWrong.length && !wrongWords.length, "data-retry", "", T`다시 풀기`);
+      }
+      actions += btn(false, "data-home", "", backLabel(s));
       if (pass && total >= 5) setTimeout(confetti, 100);
     }
     $app.innerHTML = T`<div class="study"><div class="study-top"><button class="icon-btn back" data-home aria-label="닫기">${ico("x")}</button><span class="spacer"></span></div>
@@ -1760,9 +1884,23 @@
       ${list ? `<div class="section"><div class="section-h"><h2>${s.kind === "card" ? T`학습한 단어` : s.kind === "sort" ? T`학습할 단어` : T`틀린 문제`}</h2></div><div class="wlist">${list}</div></div>` : ""}</div>`;
     $app.querySelectorAll("[data-home]").forEach((b) => b.addEventListener("click", exitStudy));
     const q = $app.querySelector("[data-quiz]");
-    if (q) q.addEventListener("click", () => startQuiz(s._words, "mix", { title: T`확인 퀴즈` }));
+    if (q) q.addEventListener("click", () => startQuiz(s._words, "mix", { title: s.day ? T`DAY ${pad(s.day)} · 확인 퀴즈` : T`확인 퀴즈`, dayStep: s.day && dayStepOf(s.day, dayWords(s.day).length ? dayWords(s.day) : dayWords(s.day, true)) === 3 ? s.day : undefined }));
     const c = $app.querySelector("[data-card]");
     if (c) c.addEventListener("click", () => startCard(s._words, { title: T`틀린 단어 복습` }));
+    const sc = $app.querySelector("[data-sortcard]");
+    if (sc) sc.addEventListener("click", () => startCard(s.unknown, { title: s.day ? T`DAY ${pad(s.day)} · 카드 암기` : T`카드 암기`, day: s.day }));
+    const wq = $app.querySelector("[data-wquiz]");
+    if (wq) wq.addEventListener("click", () => startQuiz(s._words, "mix", { title: T`DAY ${pad(s.day)} 틀린 단어 퀴즈` }));
+    const gd = $app.querySelector("[data-goday]");
+    if (gd) gd.addEventListener("click", () => leaveStudyTo(`#/day/${gd.dataset.goday}`));
+    const gr = $app.querySelector("[data-goreview]");
+    if (gr) gr.addEventListener("click", () => leaveStudyTo("#/review"));
+    const dt = $app.querySelector("[data-daytest]");
+    if (dt) dt.addEventListener("click", () => { const d = +dt.dataset.daytest; const ws = dayWords(d); startQuiz(ws.length ? ws : dayWords(d, true), "test", { title: T`DAY ${pad(d)} 테스트`, day: d }); });
+    const md = $app.querySelector("[data-moredue]");
+    if (md) md.addEventListener("click", () => startReview(s.kind === "card" ? "card" : "quiz"));
+    const cw = $app.querySelector("[data-cfwrong]");
+    if (cw) cw.addEventListener("click", () => startConfQuiz(s._cfWrong));
     const pm = $app.querySelector("[data-pmore]");
     if (pm) pm.addEventListener("click", () => startSets(s.part, pickSets(practicePool(s.part).filter((x) => !s.queue.includes(x)), s.part === "p7" ? 2 : 3), s.title));
     const mr = $app.querySelector("[data-mrev]");
@@ -1794,6 +1932,24 @@
   }
 
   // ═════════════ 복습 허브 ═════════════
+  const REVIEW_CHUNK = 20; // 복습은 20개씩 끊어서 (약 4분)
+  const reviewMin = (n) => Math.max(1, Math.round(n * 0.2));
+  // 복습 시작: 오래 밀린 단어부터 20개
+  function startReview(kind) {
+    const ws = dueWords(today()).slice(0, REVIEW_CHUNK);
+    if (!ws.length) return toast(T`오늘 복습할 단어가 없어요`);
+    if (kind === "card") startCard(ws, { title: T`복습`, src: "due" });
+    else startQuiz(ws, "mix", { title: T`복습`, src: "due" });
+  }
+  // 카드 결과: 다음 복습 일정 (내일 복습 5개 · 3일 뒤 12개)
+  function scheduleHtml(words) {
+    const t = today();
+    const cnt = new Map();
+    words.forEach((w) => { const x = st(w.id); if (x && x.n) { const k = Math.max(0, x.due - t); cnt.set(k, (cnt.get(k) || 0) + 1); } });
+    if (!cnt.size) return "";
+    const parts = [...cnt.keys()].sort((a, b) => a - b).slice(0, 3).map((k) => (k === 0 ? T`오늘 다시 ${cnt.get(k)}개` : T`${dueLabel(k)} ${cnt.get(k)}개`));
+    return T`<div class="sched">${ico("cal")}<span><b>다음 복습</b> ${parts.join(" · ")}</span></div>`;
+  }
   function vReview(r) {
     if (r.q.tab) ui.reviewTab = r.q.tab;
     const t = today();
@@ -1805,11 +1961,12 @@
     const tab = ui.reviewTab;
     const lists = { due, wrong, star };
     const cur = lists[tab] || due;
-    const desc = { due: T`기억이 흐려질 때쯤 다시 보는 단어예요. 매일 비워 주세요.`, wrong: T`퀴즈·카드에서 틀린 단어가 자동으로 모여요. 다시 맞히면 빠져요.`, star: T`★ 표시한 단어예요.` }[tab];
+    const desc = { due: T`기억이 흐려질 때쯤 다시 보는 단어예요. 오래 밀린 단어부터 20개씩 비워 주세요.`, wrong: T`퀴즈·복습에서 틀린 단어 · 2번 연속 맞히면 빠져요`, star: T`★ 표시한 단어예요.` }[tab];
+    const chunk = tab === "due" && cur.length > REVIEW_CHUNK;
     const body = T`${topBar(T`복습`)}
       <div class="seg" style="margin-bottom:14px">${[["due", T`복습 예정 ${due.length}`], ["wrong", T`오답노트 ${wrong.length}`], ["star", T`★ 중요 ${star.length}`]].map(([k, l]) => `<button class="${tab === k ? "on" : ""}" data-tab="${k}">${l}</button>`).join("")}</div>
       <p class="small muted" style="margin:0 2px 12px">${desc}</p>
-      ${cur.length ? T`<div class="grid2" style="margin-bottom:14px"><button class="btn" data-start="card">${ico("layers")}카드로</button><button class="btn ghost" data-start="quiz">${ico("zap")}퀴즈로</button></div><div class="wlist">${cur.slice(0, 300).map(wordItem).join("")}</div>`
+      ${cur.length ? T`${chunk ? T`<button class="btn block review-go" data-start="card">${ico("layers")}<span>${REVIEW_CHUNK}개 복습하기 (약 ${reviewMin(REVIEW_CHUNK)}분)<small>남은 ${cur.length}개 · 오래된 단어부터</small></span></button><button class="btn ghost block" style="margin:10px 0 14px" data-start="quiz">${ico("zap")}퀴즈로 ${REVIEW_CHUNK}개 복습</button>` : T`<div class="grid2" style="margin-bottom:14px"><button class="btn" data-start="card">${ico("layers")}카드로</button><button class="btn ghost" data-start="quiz">${ico("zap")}퀴즈로</button></div>`}<div class="wlist">${cur.slice(0, 300).map(wordItem).join("")}</div>`
         : `<div class="card empty">${ico(tab === "star" ? "star" : "check")}<b>${tab === "due" ? T`오늘 복습 끝!` : tab === "wrong" ? T`틀린 단어가 없어요` : T`중요 표시한 단어가 없어요`}</b>${tab === "star" ? T`단어 옆 ☆를 눌러 모아 보세요` : T`새 단어를 학습하면 여기에 쌓여요`}</div>`}
       <div class="section"><div class="section-h"><h2>전체 범위 테스트</h2></div>
         <button class="task" data-random ${learned.length >= 4 ? "" : "disabled"}><span class="tico c-purple">${ico("shuffle")}</span><span class="spacer"><div class="tt">배운 단어 랜덤 30문제</div><div class="td">${learned.length ? T`지금까지 본 ${learned.length}개 중에서` : T`단어를 먼저 학습해 주세요`}</div></span>${ico("right")}</button></div>`;
@@ -1817,7 +1974,8 @@
     coach("review", T`<b>복습 탭</b> 외운 단어는 1·3·7·14·30일 간격으로 이곳에 다시 나와요. 매일 <b>복습 예정</b>을 비우는 게 오래 기억하는 핵심이에요. 틀린 단어는 오답노트에 따로 모여요.`);
     $app.querySelectorAll("[data-tab]").forEach((b) => b.addEventListener("click", () => { ui.reviewTab = b.dataset.tab; history.replaceState(null, "", "#/review"); vReview({ q: {} }); }));
     $app.querySelectorAll("[data-start]").forEach((b) => b.addEventListener("click", () => {
-      const ws = tab === "due" ? cur.slice(0, 100) : cur.slice(0, 60);
+      if (tab === "due") return startReview(b.dataset.start);
+      const ws = cur.slice(0, 60);
       const title = { due: T`복습`, wrong: T`오답노트`, star: T`중요 단어` }[tab];
       if (b.dataset.start === "card") startCard(ws, { title });
       else startQuiz(ws, "mix", { title, wrongNote: tab === "wrong" });
@@ -3253,13 +3411,30 @@
 
   // ═════════════ 혼동 어휘 ═════════════
   function vConf() {
-    const body = T`${topBar(T`혼동 어휘`, { back: true, sub: T`Part 5에서 자주 헷갈리는 단어 60세트` })}
-      <button class="btn block" data-cq style="margin-bottom:14px">${ico("zap")}혼동 어휘 퀴즈 풀기</button>
-      ${D.conf.map((c, idx) => `<div class="card" style="margin-top:10px"><div class="small muted" style="font-weight:700">${idx + 1}</div>
+    const sets = D.conf;
+    const okN = sets.filter((c) => S.cf[c.id] === 1).length;
+    const wrong = sets.filter((c) => S.cf[c.id] === 0);
+    const groups = [];
+    for (let i = 0; i < sets.length; i += 10) groups.push(sets.slice(i, i + 10));
+    const firstOpen = Math.max(0, groups.findIndex((g) => g.some((c) => S.cf[c.id] !== 1)));
+    const mark = (c) => (S.cf[c.id] === 1 ? `<span class="cf-st ok" aria-label="${T`맞힘`}">${ico("check")}</span>` : S.cf[c.id] === 0 ? `<span class="cf-st bad" aria-label="${T`틀림`}">${ico("x")}</span>` : "");
+    const body = T`${topBar(T`혼동 어휘`, { back: true, sub: T`Part 5에서 자주 헷갈리는 단어 ${sets.length}세트` })}
+      <div class="card cf-sum"><div class="row"><div class="spacer"><div class="stat-num">${okN}<span class="muted" style="font-size:16px"> / ${sets.length}</span></div><div class="stat-lbl">맞힌 세트 · 틀린 세트 ${wrong.length}</div></div></div>
+        <div class="bar thin" style="margin-top:10px"><i style="width:${sets.length ? (okN / sets.length) * 100 : 0}%"></i></div></div>
+      <button class="btn block" data-cq style="margin-top:12px">${ico("zap")}혼동 어휘 퀴즈 풀기</button>
+      ${wrong.length ? T`<button class="btn ghost block" data-cqw style="margin-top:10px">${ico("repeat")}틀린 세트만 다시 (${wrong.length})</button>` : ""}
+      ${groups.map((g, gi) => {
+        const done = g.filter((c) => S.cf[c.id] === 1).length;
+        return T`<details class="cf-group" ${gi === firstOpen ? "open" : ""}><summary><b>${gi * 10 + 1}–${gi * 10 + g.length}</b><span class="small muted">맞힘 ${done} / ${g.length}</span><span class="spacer"></span><button class="btn ghost sm" data-cqg="${gi}">퀴즈</button></summary>
+        ${g.map((c, k) => `<div class="card" style="margin-top:10px"><div class="row small muted" style="font-weight:700"><span>${gi * 10 + k + 1}</span><span class="spacer"></span>${mark(c)}</div>
         ${c.words.map((x) => `<div class="kv"><span class="k en" style="min-width:110px">${esc(x.w)}</span><span class="badge pos">${POS_KO[x.pos] || x.pos}</span><span class="v">${esc(x.m)}</span></div>`).join("")}
-        <div class="tip-box" style="margin-top:10px;font-size:14px">${esc(c.point)}</div></div>`).join("")}`;
+        <div class="tip-box" style="margin-top:10px;font-size:14px">${esc(c.point)}</div></div>`).join("")}</details>`;
+      }).join("")}`;
     shell("conf", body);
-    $app.querySelector("[data-cq]").addEventListener("click", () => startConfQuiz(D.conf.slice(0, 20).length ? C.shuffle(D.conf).slice(0, 20) : []));
+    $app.querySelector("[data-cq]").addEventListener("click", () => startConfQuiz(C.shuffle(sets).slice(0, 20)));
+    const w = $app.querySelector("[data-cqw]");
+    if (w) w.addEventListener("click", () => startConfQuiz(wrong));
+    $app.querySelectorAll("[data-cqg]").forEach((b) => b.addEventListener("click", (e) => { e.preventDefault(); startConfQuiz(groups[+b.dataset.cqg]); }));
   }
 
   // ═════════════ 검색 ═════════════
@@ -3300,11 +3475,16 @@
     const firstDow = (C.dayToDate(start).getDay() + 6) % 7;
     const cells = [];
     for (let i = 0; i < firstDow; i++) cells.push('<i style="visibility:hidden"></i>');
+    const dayInfo = (d) => {
+      const l = S.log[d];
+      const w = l ? (l.new || 0) + (l.rev || 0) : 0, q = l ? l.q || 0 : 0;
+      return w || q ? T`${fmtDate(d)} · 단어 ${w} · 퀴즈 ${q}` : T`${fmtDate(d)} · 학습 기록 없음`;
+    };
     for (let d = start; d <= t; d++) {
       const l = S.log[d];
       const n = l ? (l.new || 0) + (l.rev || 0) + (l.q || 0) : 0;
       const lv = n === 0 ? "" : n < 20 ? "l1" : n < 60 ? "l2" : "l3";
-      cells.push(T`<i class="${lv} ${d === t ? "today" : ""}" title="${C.ymd(d)} · ${n}개"></i>`);
+      cells.push(`<button class="hc ${lv} ${d === t ? "today on" : ""}" data-hd="${d}" aria-label="${esc(dayInfo(d))}">${C.dayToDate(d).getDate()}</button>`);
     }
     // 최근 7일 막대
     const days7 = [];
@@ -3322,8 +3502,8 @@
     const passed = Object.values(S.tests).filter((x) => x.best >= 80).length;
     const body = T`${topBar(T`학습 통계`, { sub: T`목표 ${target()}점 · ${tr(C.scoreBand(target()).label)}` })}
       <div class="grid2">
-        <div class="card"><div class="stat-num">${sum.mastered.toLocaleString()}</div><div class="stat-lbl">암기 완료 / ${P.length.toLocaleString()}</div></div>
-        <div class="card"><div class="stat-num">${sum.seen.toLocaleString()}</div><div class="stat-lbl">학습한 단어</div></div>
+        <div class="card"><div class="stat-num">${sum.seen.toLocaleString()}<span class="muted" style="font-size:15px"> / ${P.length.toLocaleString()}</span></div><div class="stat-lbl">학습한 단어</div></div>
+        <div class="card"><div class="stat-num">${sum.mastered.toLocaleString()}</div><div class="stat-lbl">장기 기억 · 복습 중 ${sum.learning.toLocaleString()}</div></div>
         <div class="card"><div class="stat-num">${streak}<span style="font-size:16px">일</span></div><div class="stat-lbl">연속 학습 · 최고 ${best}일</div></div>
         <div class="card"><div class="stat-num">${sum.accuracy == null ? "–" : sum.accuracy + "%"}</div><div class="stat-lbl">정답률</div></div>
       </div>
@@ -3333,7 +3513,8 @@
       <div class="section"><div class="section-h"><h2>난이도별 진도</h2></div><div class="card">${progressBlock(P)}</div></div>
       <div class="section"><div class="section-h"><h2>최근 7일</h2></div><div class="card"><svg class="chart-7" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="최근 7일 학습량">${bars}</svg>
         <div class="legend"><span><i style="background:var(--brand)"></i>새 단어</span><span><i style="background:var(--accent)"></i>복습</span></div></div></div>
-      <div class="section"><div class="section-h"><h2>학습 달력 (4주)</h2></div><div class="card"><div class="heat heat-wrap">${[T`월`, T`화`, T`수`, T`목`, T`금`, T`토`, T`일`].map((x) => `<span class="small muted" style="text-align:center">${x}</span>`).join("")}${cells.join("")}</div></div></div>
+      <div class="section"><div class="section-h"><h2>학습 달력 (4주)</h2></div><div class="card"><div class="heat heat-wrap">${[T`월`, T`화`, T`수`, T`목`, T`금`, T`토`, T`일`].map((x) => `<span class="small muted" style="text-align:center">${x}</span>`).join("")}${cells.join("")}</div>
+        <div class="heat-foot"><span class="heat-info small" aria-live="polite">${dayInfo(t)}</span><span class="heat-scale small muted">적음<i></i><i class="l1"></i><i class="l2"></i><i class="l3"></i>많음</span></div></div></div>
       ${(() => {
         const pred = C.predictScore(S.pr);
         const weak = C.weakTypes(S.qt).slice(0, 3);
@@ -3344,8 +3525,15 @@
           ${weak.length ? `<div style="margin-top:12px">${weak.map((w) => `<div class="weak"><div class="spacer"><b>${PART_LABEL[w.part] || w.part} · ${esc(tr(w.type))}</b></div><div class="wbar"><i style="width:${w.pct}%;background:${w.pct >= 80 ? "var(--ok)" : w.pct >= 60 ? "var(--accent)" : "var(--bad)"}"></i></div><b class="wpct">${w.pct}%</b></div>`).join("")}</div>` : ""}</div></div>`;
       })()}
       <div class="section"><div class="section-h"><h2>Day 테스트</h2></div><div class="card"><div class="row"><div class="spacer"><div class="stat-num">${passed}<span class="muted" style="font-size:16px"> / ${NDAYS}</span></div><div class="stat-lbl">통과한 Day (80점 이상) · 응시 ${testsDone}</div></div></div>
-        <div class="heat" style="grid-template-columns:repeat(10,1fr);margin-top:12px">${DAYS.map((d) => { const x = S.tests[d.day]; return `<a href="#/day/${d.day}" title="DAY ${d.day}${x ? T` · ${x.best}점` : ""}" style="aspect-ratio:1;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;background:${x ? (x.best >= 80 ? "var(--ok)" : "var(--accent)") : "var(--bg-sunk)"};color:${x ? "#fff" : "var(--text-3)"}">${d.day}</a>`; }).join("")}</div></div></div>`;
+        <div class="heat" style="grid-template-columns:repeat(10,1fr);margin-top:12px">${DAYS.map((d) => { const x = S.tests[d.day]; const lk = !canAccessDay(d.day); return `<a href="#/day/${d.day}" class="${lk ? "dt-lock" : ""}" aria-label="DAY ${d.day}${x ? T` · ${x.best}점` : lk ? T` · 잠김` : ""}" style="aspect-ratio:1;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;background:${x ? (x.best >= 80 ? "var(--ok)" : "var(--accent)") : "var(--bg-sunk)"};color:${x ? "#fff" : "var(--text-3)"}">${lk && !x ? ico("lock") : d.day}</a>`; }).join("")}</div>
+        <div class="legend"><span><i style="background:var(--ok)"></i>통과(80+)</span><span><i style="background:var(--accent)"></i>응시</span><span><i style="background:var(--bg-sunk);border:1px solid var(--line-strong)"></i>미응시</span></div></div></div>`;
     shell("stats", body);
+    const info = $app.querySelector(".heat-info");
+    $app.querySelectorAll("[data-hd]").forEach((b) => b.addEventListener("click", () => {
+      $app.querySelectorAll("[data-hd].on").forEach((x) => x.classList.remove("on"));
+      b.classList.add("on");
+      info.textContent = dayInfo(+b.dataset.hd);
+    }));
   }
 
   // ═════════════ 설정 ═════════════

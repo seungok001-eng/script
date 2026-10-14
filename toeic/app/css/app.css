@@ -832,6 +832,84 @@ html:lang(en) .ex-ko, html:lang(en) .ko, html:lang(en) .qsub, html:lang(en) [dat
 /* ---- */
 
 /* ==== UX 개선 C: 단어 학습 ==== */
+/* Day 상세: 학습 수 · 장기 기억 설명 */
+.stat-pre { font-size: 15px; font-weight: 700; color: var(--text-3); margin-right: 6px; letter-spacing: 0; }
+.mem-note { display: flex; align-items: center; gap: 6px; margin-top: 10px; }
+.mem-note .ico { width: 15px; height: 15px; flex-shrink: 0; color: var(--warn); }
+/* Day 상세: 다음 단계 */
+.next-step { padding: 16px; }
+.steps { list-style: none; margin: 0 0 14px; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; counter-reset: none; }
+.steps li { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; font-size: 11.5px; font-weight: 650; color: var(--text-3); position: relative; line-height: 1.25; }
+.steps li::before { content: ""; position: absolute; top: 13px; left: calc(-50% + 16px); right: calc(50% + 16px); height: 2px; background: var(--line); }
+.steps li:first-child::before { display: none; }
+.steps li.done::before, .steps li.cur::before { background: var(--brand); }
+.steps li i { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-style: normal; font-weight: 800; font-size: 13px; background: var(--bg-sunk); color: var(--text-3); }
+.steps li i .ico { width: 15px; height: 15px; }
+.steps li.done i { background: var(--brand-soft); color: var(--brand); }
+.steps li.cur i { background: var(--brand); color: #fff; box-shadow: 0 0 0 4px var(--brand-soft); }
+.steps li.cur { color: var(--text); }
+.next-step .ns-sub { text-align: center; margin-top: 8px; }
+/* Day 상세: 더 연습하기 (접기) */
+.more-modes { margin-top: 10px; border: 1px solid var(--line); border-radius: var(--r-l); background: var(--bg-elev); box-shadow: var(--shadow-1); }
+.more-modes > summary { display: flex; align-items: center; gap: 8px; padding: 16px; cursor: pointer; list-style: none; font-size: 15px; }
+.more-modes > summary::-webkit-details-marker { display: none; }
+.more-modes > summary .small { margin-left: auto; }
+.more-modes > summary::after { content: ""; width: 8px; height: 8px; border-right: 2px solid var(--text-3); border-bottom: 2px solid var(--text-3); transform: rotate(45deg); margin: -4px 4px 0 6px; transition: transform 0.15s; }
+.more-modes[open] > summary::after { transform: rotate(-135deg); margin-top: 4px; }
+.mode-list { border-top: 1px solid var(--line); padding: 4px 8px 8px; }
+.mode-row { display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 8px; border-radius: 12px; text-align: left; color: var(--text); }
+.mode-row:hover { background: var(--bg-sunk); }
+.mode-row + .mode-row { border-top: 1px dashed var(--line); }
+.mode-row .tico { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.mode-row .tico .ico { width: 19px; height: 19px; }
+.mode-row b { display: block; font-size: 14.5px; font-weight: 750; }
+.mode-row .spacer span { display: block; font-size: 12.5px; color: var(--text-3); margin-top: 1px; line-height: 1.35; }
+.mode-row > .ico { width: 16px; height: 16px; color: var(--text-3); flex-shrink: 0; }
+/* Day 목록: 테스트 점수 */
+.day-card .dm { flex-wrap: wrap; gap: 2px 8px; }
+.day-card .dm > span { white-space: nowrap; }
+.day-card .tscore { font-weight: 750; }
+.day-card .tscore.pass { color: var(--ok); }
+.day-card .tscore.retry { color: var(--accent); }
+/* 단어 상세: 아래쪽 앞뒤 단어 */
+.word-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0 8px; }
+.word-nav .btn { min-width: 0; padding: 0 12px; font-size: 15px; }
+.word-nav .btn span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.word-nav .btn:first-child { justify-content: flex-start; }
+.word-nav .btn:last-child { justify-content: flex-end; }
+/* 카드: 처음 보는 단어 안내 · 결과의 다음 복습 일정 */
+.flash .f-hint.sub { margin-top: 4px; font-size: 12px; opacity: 0.85; }
+.sched { display: flex; align-items: center; gap: 10px; margin: 0 0 16px; padding: 12px 14px; border-radius: var(--r-m); background: var(--brand-soft); font-size: 14px; color: var(--text); }
+.sched .ico { width: 20px; height: 20px; color: var(--brand); flex-shrink: 0; }
+.sched b { color: var(--brand); margin-right: 4px; }
+/* 복습: 20개씩 */
+.btn.review-go { height: auto; min-height: 60px; padding: 10px 18px; }
+.btn.review-go > span { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+.btn.review-go small { font-size: 12.5px; font-weight: 600; opacity: 0.85; margin-top: 2px; }
+/* 통계: 학습 달력 */
+.heat .hc { aspect-ratio: 1; border-radius: 6px; background: var(--bg-sunk); color: var(--text-3); font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; padding: 0; }
+.heat .hc.l1 { background: color-mix(in srgb, var(--brand) 30%, var(--bg-sunk)); color: var(--text); }
+.heat .hc.l2 { background: color-mix(in srgb, var(--brand) 60%, var(--bg-sunk)); color: #fff; }
+.heat .hc.l3 { background: var(--brand); color: #fff; }
+.heat .hc.today { text-decoration: underline; text-underline-offset: 2px; }
+.heat .hc.on { outline: 2px solid var(--text); outline-offset: 1px; }
+.heat-foot { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; max-width: 420px; }
+.heat-info { font-weight: 700; color: var(--text); }
+.heat-scale { display: inline-flex; align-items: center; gap: 3px; margin-left: auto; }
+.heat-scale i { width: 11px; height: 11px; border-radius: 3px; background: var(--bg-sunk); display: inline-block; }
+.heat-scale i.l1 { background: color-mix(in srgb, var(--brand) 30%, var(--bg-sunk)); }
+.heat-scale i.l2 { background: color-mix(in srgb, var(--brand) 60%, var(--bg-sunk)); }
+.heat-scale i.l3 { background: var(--brand); }
+.heat .dt-lock .ico { width: 12px; height: 12px; opacity: 0.7; }
+/* 혼동 어휘: 세트 상태 · 10개씩 묶음 */
+.cf-st { display: inline-flex; width: 22px; height: 22px; border-radius: 50%; align-items: center; justify-content: center; }
+.cf-st .ico { width: 14px; height: 14px; }
+.cf-st.ok { background: var(--ok-soft); color: var(--ok); }
+.cf-st.bad { background: var(--bad-soft); color: var(--bad); }
+.cf-group { margin-top: 14px; }
+.cf-group > summary { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: var(--r-m); background: var(--bg-elev); border: 1px solid var(--line); cursor: pointer; list-style: none; }
+.cf-group > summary::-webkit-details-marker { display: none; }
+.cf-group[open] > summary { border-color: var(--brand); }
 /* (C 끝) */
 
 /* ---- */
