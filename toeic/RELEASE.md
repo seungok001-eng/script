@@ -36,7 +36,7 @@
   `https://seungok001-eng.github.io/script/privacy.html`
 
 ## 4. 출시 파일(AAB) 만들기
-- GitHub → Actions → `toeic-release-aab` → **Run workflow** → 버전 이름(처음은 `1.0.0`) → Run.
+- `toeic/release-version.txt` 의 버전(처음은 `1.0.0`)을 바꿔 올리면 자동으로 빌드된다. (GitHub → Actions → `toeic-release-aab` → Run workflow 로 수동 실행도 가능)
 - 10분쯤 뒤 실행 화면 아래 **Artifacts → toeicfit-release-aab** 를 내려받아 압축을 풀면 `.aab` 파일이 있습니다.
 - 버전 번호(versionCode)는 실행 번호로 자동으로 올라갑니다. 업데이트 때는 버전 이름만 `1.0.1` 처럼 올려 다시 실행하세요.
 

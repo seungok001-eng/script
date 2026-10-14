@@ -9,6 +9,10 @@
 name: toeic-release-aab
 
 on:
+  # toeic/release-version.txt 를 바꿔 올리면 그 버전으로 자동 빌드 (수동 실행 버튼은 이 파일이 기본 브랜치에 있어야 보인다)
+  push:
+    paths:
+      - "toeic/release-version.txt"
   workflow_dispatch:
     inputs:
       version_name:
@@ -32,6 +36,13 @@ jobs:
         working-directory: toeic
     steps:
       - uses: actions/checkout@v4
+
+      - name: 버전 이름 정하기
+        id: ver
+        run: |
+          V="${{ inputs.version_name }}"
+          [ -n "$V" ] || V="$(tr -d '[:space:]' < release-version.txt)"
+          echo "버전: $V"; echo "name=$V" >> "$GITHUB_OUTPUT"
 
       - name: 서명 비밀값 확인
         if: ${{ !inputs.unsigned_check }}
@@ -86,7 +97,7 @@ jobs:
           TOEICFIT_KEYSTORE_PASSWORD: ${{ secrets.TOEICFIT_KEYSTORE_PASSWORD }}
           TOEICFIT_KEY_ALIAS: ${{ secrets.TOEICFIT_KEY_ALIAS }}
           TOEICFIT_KEY_PASSWORD: ${{ secrets.TOEICFIT_KEY_PASSWORD }}
-          TOEICFIT_VERSION_NAME: ${{ inputs.version_name }}
+          TOEICFIT_VERSION_NAME: ${{ steps.ver.outputs.name }}
           TOEICFIT_VERSION_CODE: ${{ github.run_number }}
         run: |
           if [ -n "$KS_B64" ]; then
@@ -100,7 +111,7 @@ jobs:
       - name: 파일 이름 정리 · 크기 확인
         run: |
           mkdir -p dist
-          cp android/app/build/outputs/bundle/release/app-release.aab "dist/toeicfit-${{ inputs.version_name }}-${{ github.run_number }}.aab"
+          cp android/app/build/outputs/bundle/release/app-release.aab "dist/toeicfit-${{ steps.ver.outputs.name }}-${{ github.run_number }}.aab"
           ls -la dist
           # Play 제한: 기본 모듈(앱) 압축 크기 200MB, install-time 묶음은 따로 (합계 4GB)
           python3 - <<'PY'
