@@ -13,6 +13,7 @@ on:
   push:
     paths:
       - "toeic/release-version.txt"
+      - ".github/workflows/toeic-release.yml"
   workflow_dispatch:
     inputs:
       version_name:
@@ -101,8 +102,11 @@ jobs:
           TOEICFIT_VERSION_CODE: ${{ github.run_number }}
         run: |
           if [ -n "$KS_B64" ]; then
-            echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/upload.jks"
+            # 윈도우에서 복사하면 줄바꿈(\r\n)·공백이 섞여 들어온다 — 지우고 푼다
+            printf '%s' "$KS_B64" | tr -d ' \r\n\t' | base64 -d > "$RUNNER_TEMP/upload.jks"
             export TOEICFIT_KEYSTORE="$RUNNER_TEMP/upload.jks"
+            # 서명 확인용: 업로드 키 인증서 지문(공개 정보). PC 의 keytool -list -v 결과와 같아야 한다
+            keytool -list -v -keystore "$TOEICFIT_KEYSTORE" -storepass "$TOEICFIT_KEYSTORE_PASSWORD" -alias "$TOEICFIT_KEY_ALIAS" | grep -E "SHA-?256" | sed 's/^/업로드 키 /'
           fi
           chmod +x gradlew
           ./gradlew bundleRelease --no-daemon
@@ -113,6 +117,8 @@ jobs:
           mkdir -p dist
           cp android/app/build/outputs/bundle/release/app-release.aab "dist/toeicfit-${{ steps.ver.outputs.name }}-${{ github.run_number }}.aab"
           ls -la dist
+          # AAB 에 실제로 찍힌 서명의 지문 — 위 '업로드 키' 지문과 같으면 등록한 키로 서명된 것
+          keytool -printcert -jarfile dist/*.aab | grep -E "SHA-?256" | sed 's/^/AAB 서명 /' || echo "::error::AAB 서명을 읽을 수 없습니다"
           # Play 제한: 기본 모듈(앱) 압축 크기 200MB, install-time 묶음은 따로 (합계 4GB)
           python3 - <<'PY'
           import glob, zipfile
