@@ -20,3 +20,9 @@ mkdir -p "$SCRATCH" && tar -xJf toeic/tools/i18n-state/tr-state.tar.xz -C "$SCRA
 - 번역 후 앱 파일에 합치기: `python3 tr/merge_p.py <lang>...` (기존 ui·labels 는 건드리지 않는다)
 - 주의: `assemble.py` 는 out/<lang>-ui.json 만으로 ui 를 다시 만들어, 나중에 data/i18n 에 직접 넣은 사업자 정보·출시 할인 문구가 빠진다. 새로 합칠 때는 merge_p.py 를 쓴다.
 - `gram/`: 문항 작성 규칙(SPEC.md), 겹침 검사(check.py), 별도 풀이 검증(SOLVE.md · blind.py), 결과(out/)
+
+## 2026-10-14 Part 5 어휘 900 · Part 6 100 · Part 7 140세트 번역
+- 새 키 묶음: `python3 tr/rc_chunks.py` → src/p-41..52 (영어는 src-en/, 지문·문항 영어는 out/en/_prefill_rc.json), 화면 문구는 src-ui3/
+- 합치기: `python3 tr/merge_p.py <lang>...` (p-31..59 범위) · 화면 문구 out/<L>-ui3-1.json 은 src.ko.json 의 ui/labels 에 있는 키로 넣는다
+- 번역 뒤 원문 고침은 `tr/fix_src.py` 참고 (원문과 번역에 같은 고침을 적용; 키는 경로라 그대로)
+- 6개 언어 모두 100% (화면 1051 · 분류 521 · 단어 33553 · 실전 18408)
