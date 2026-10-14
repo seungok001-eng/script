@@ -211,12 +211,14 @@ const half = ready(halfRaw, "하프", "h");
 // 모의고사 실전 진행 안내 방송 문구 (음성은 build_audio.py 가 cue/ 에 만든다)
 const cuesRaw = read(path.join(ROOT, "data/mock-cues.json"), null);
 const cues = cuesRaw ? { dir: cuesRaw.dir, answerSec: cuesRaw.answerSec } : null;
-const practice = { version, diag, full, half, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, p6: pr.p6, p7: pr.p7, mocks, cues };
+// Part 5 어휘 (주제별 강의·짝 표현·문제): data/practice/vocab5.json — 모의고사·진단 배정과는 무관하다
+const vocab5 = read(path.join(PDIR, "vocab5.json"), []);
+const practice = { version, diag, full, half, p1: pr.p1, p3: pr.p3, p4: pr.p4, grammar: pr.grammar, vocab5, p6: pr.p6, p7: pr.p7, mocks, cues };
 const pjs = "/* 자동 생성 파일 — toeic/scripts/build_data.mjs 로 다시 만든다. 직접 고치지 말 것 */\nwindow.VOCA_PRACTICE=" + JSON.stringify(practice) + ";\n";
 fs.writeFileSync(path.join(ROOT, "app/js/practice.js"), pjs);
 const nq = (xs) => xs.reduce((n, x) => n + x.qs.length, 0);
 console.log(`정규 모의고사 ${full.length}회 (음성 Part 2 ${full.reduce((n, m) => n + m.p2.filter((x) => x.au).length, 0)}/${full.reduce((n, m) => n + m.p2.length, 0)} · Part 3·4 ${full.reduce((n, m) => n + m.p3.concat(m.p4).filter((x) => x.au).length, 0)}/${full.reduce((n, m) => n + m.p3.length + m.p4.length, 0)} · 사진 ${full.reduce((n, m) => n + m.p1.length, 0)}/${full.length * 6})`);
-console.log(`실전: Part 1 ${pr.p1.length}문제 (음성 ${pr.p1.filter((x) => x.au).length}) · Part 3 ${pr.p3.length}세트 · Part 4 ${pr.p4.length}세트 (음성 ${pr.p3.concat(pr.p4).filter((x) => x.au).length}) · 문법 ${pr.grammar.length}주제 ${nq(pr.grammar)}문제 · Part 6 ${pr.p6.length} · Part 7 ${pr.p7.length}세트 ${nq(pr.p7)}문제 · 모의고사 ${mocks.length}회 · ${(pjs.length / 1024).toFixed(0)}KB`);
+console.log(`실전: Part 1 ${pr.p1.length}문제 (음성 ${pr.p1.filter((x) => x.au).length}) · Part 3 ${pr.p3.length}세트 · Part 4 ${pr.p4.length}세트 (음성 ${pr.p3.concat(pr.p4).filter((x) => x.au).length}) · 문법 ${pr.grammar.length}주제 ${nq(pr.grammar)}문제 · 어휘 ${vocab5.length}주제 ${nq(vocab5)}문제 · Part 6 ${pr.p6.length} · Part 7 ${pr.p7.length}세트 ${nq(pr.p7)}문제 · 모의고사 ${mocks.length}회 · ${(pjs.length / 1024).toFixed(0)}KB`);
 
 // 다국어: 번역할 원문을 다시 모으고(data/i18n/src.ko.json) 번역 파일을 앱용(app/js/l10n)으로 만든다
 {

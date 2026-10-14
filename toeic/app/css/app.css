@@ -1125,3 +1125,35 @@ button.tl-item:active { transform: scale(0.99); }
 .dict-hint .en { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 15px; letter-spacing: .04em; line-height: 1.7; word-spacing: .2em; overflow-wrap: anywhere; }
 .btn.sm.on { background: var(--brand-soft); color: var(--brand); }
 /* (D 끝) */
+/* ==== Part 5 어휘 ==== */
+/* 빈출 짝 표현: 영어(굵게) + 뜻, 좁은 화면에서는 두 줄 */
+.colloc { padding: 4px 16px; }
+.colloc-row { display: flex; align-items: baseline; justify-content: space-between; gap: 6px 12px; flex-wrap: wrap; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.colloc-row:last-child { border-bottom: 0; }
+.colloc-row b { font-size: 15px; font-weight: 750; color: var(--text); }
+.colloc-row span { font-size: 13.5px; color: var(--text-2); text-align: right; margin-left: auto; }
+.gw-tag { font-size: 12px; font-weight: 750; color: var(--brand); margin-bottom: 4px; }
+/* Part 5 실전 30문제: 상단 남은 시간 · 문제 목록 · 이전/다음 */
+.p5clock { display: inline-flex; align-items: center; gap: 4px; height: 30px; padding: 0 10px; border-radius: 999px; background: var(--brand-soft); color: var(--brand); font-size: 14px; font-variant-numeric: tabular-nums; flex-shrink: 0; }
+.p5clock .ico { width: 15px; height: 15px; }
+.p5clock.warn { background: var(--bad-soft); color: var(--bad); }
+.p5run .study-top .cnt { min-width: 44px; }
+.p5map { margin-top: 14px; border-radius: var(--r-m); background: var(--bg-elev); border: 1px solid var(--line); }
+.p5map > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 10px 12px; font-size: 14px; font-weight: 700; color: var(--text-2); }
+.p5map > summary::-webkit-details-marker { display: none; }
+.p5map > summary .ico { width: 16px; height: 16px; }
+.p5dots { display: grid; grid-template-columns: repeat(auto-fill, minmax(36px, 1fr)); gap: 6px; padding: 0 12px 12px; }
+.p5dot { height: 34px; border-radius: 9px; background: var(--bg-sunk); color: var(--text-3); font: inherit; font-size: 13px; font-weight: 750; font-variant-numeric: tabular-nums; border: 1.5px solid transparent; }
+.p5dot.done { background: var(--brand-soft); color: var(--brand); }
+.p5dot.cur { border-color: var(--brand); }
+.p5nav { gap: 8px; }
+.p5nav .btn { flex: 1; }
+.p5nav .btn .ico { width: 16px; height: 16px; }
+.p5intro { display: flex; flex-direction: column; gap: 14px; }
+.p5intro > div { display: flex; align-items: center; gap: 12px; }
+.p5intro .tico { width: 40px; height: 40px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.p5intro .tico .ico { width: 20px; height: 20px; }
+.p5intro > div > span:last-child { display: flex; flex-direction: column; gap: 2px; }
+.p5intro + .free-line, .p5intro + .btn { margin-top: 12px; }
+.p5split .weak .btn.sm { margin-left: 4px; }
+/* (어휘 끝) */

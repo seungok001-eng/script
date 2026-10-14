@@ -496,6 +496,46 @@
     return { total: items.length, seen, wrong, accuracy: ok + ng ? Math.round((ok / (ok + ng)) * 100) : null };
   }
 
+  // ───────────── Part 5 실전 30문제 (문법 15 + 어휘 15 · 10분) ─────────────
+  // 난이도는 보통(lv2) 위주: 쉬움 30% · 보통 45% · 어려움 25%. 한 난이도가 모자라면 다른 난이도에서 채운다
+  const P5_MIX = { 1: 0.3, 2: 0.45, 3: 0.25 };
+  function pickByLevel(items, n, rand) {
+    const r = rand || Math.random;
+    const by = { 1: [], 2: [], 3: [] };
+    for (const q of shuffle(items, r)) (by[q.lv] || by[2]).push(q);
+    const want = { 1: Math.floor(n * P5_MIX[1]), 3: Math.round(n * P5_MIX[3]) };
+    want[2] = n - want[1] - want[3];
+    const out = [];
+    for (const lv of [2, 1, 3]) out.push(...by[lv].splice(0, want[lv]));
+    const rest = [2, 1, 3].flatMap((lv) => by[lv]);
+    while (out.length < n && rest.length) out.push(rest.shift());
+    return out;
+  }
+  // 문법·어휘 문제를 n개씩 골라 섞는다 → [{ q, k: "g" | "v" }]
+  function p5SetPick(gItems, vItems, n, rand) {
+    const r = rand || Math.random;
+    const g = pickByLevel(gItems, n, r).map((q) => ({ q, k: "g" }));
+    const v = pickByLevel(vItems, n, r).map((q) => ({ q, k: "v" }));
+    return shuffle(g.concat(v), r);
+  }
+  // 채점: picks[i] 가 없으면(시간이 끝나 못 푼 문제) 틀린 것으로 센다
+  function p5SetScore(items, picks) {
+    const part = { g: { ok: 0, n: 0 }, v: { ok: 0, n: 0 } };
+    let ok = 0;
+    items.forEach((it, i) => {
+      const hit = picks[i] != null && picks[i] === it.q.a;
+      const p = part[it.k] || part.g;
+      p.n += 1;
+      if (hit) { p.ok += 1; ok += 1; }
+    });
+    const pct = (x) => (x.n ? Math.round((x.ok / x.n) * 100) : 0);
+    return { ok, n: items.length, pct: pct({ ok, n: items.length }), g: Object.assign({ pct: pct(part.g) }, part.g), v: Object.assign({ pct: pct(part.v) }, part.v), blank: items.filter((_, i) => picks[i] == null).length };
+  }
+  function clock(sec) {
+    const s = Math.max(0, Math.round(sec));
+    return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+  }
+
   // ───────────── 실전 문제 (Part 3~7 · 모의고사) ─────────────
   // 정답 비율(0~1) → 토익 환산 점수 추정 (LC/RC 각 5~495, 5점 단위). 공개된 환산 경향을 단순화한 근사치라 '예상'으로만 쓴다
   const SCORE_TABLE = {
@@ -632,7 +672,7 @@
     canParaphrase, makeParaphrase, placementSample,
     practiceTask, levelsFor, todayProgress,
     scaleScore, estimateTotal, predictScore, pushRecent, recordType, weakTypes, dictDiff,
-    splitDialog, canRespond, makeResponse, makeLcMeaning, lcPick, lcRecord, lcSummary, placementScore, estimateKnown, recommendSkip,
+    splitDialog, canRespond, makeResponse, makeLcMeaning, lcPick, lcRecord, lcSummary, pickByLevel, p5SetPick, p5SetScore, clock, placementScore, estimateKnown, recommendSkip,
     normEn, checkSpelling, editDistance, spellHint,
     search, summarize, projectFinish, clamp,
   };

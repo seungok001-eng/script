@@ -234,6 +234,37 @@ ok(await p.$(".qtimer [data-tleft]"), "Part 5 timed quiz shows timer");
 await p.click('[data-pick="0"]'); await p.waitForTimeout(150);
 ok(await p.$(".qtimer.off"), "timer stops after answering");
 await p.click("[data-exit]"); await p.click('#modal [data-r="1"]'); await p.waitForTimeout(300);
+// Part 5 어휘: 유형 화면(단계·짝 표현·함정) → 문제 풀기 → S.vq 에 기록 (문법 기록과 섞이지 않음)
+if (await p.evaluate(() => (window.VOCA_PRACTICE.vocab5 || []).length)) {
+  await p.goto(base + "#/vocab5"); await p.waitForTimeout(300);
+  ok((await p.$$('.witem[href^="#/vocab5/"]')).length === (await p.evaluate(() => window.VOCA_PRACTICE.vocab5.length)) && (await p.textContent(".gprog")).includes("추천 순서") && (await p.$("[data-vmix]")) && !(await p.$("[data-vwrong]")), "vocab5 list: topics + recommended order + random 20, no wrong button yet");
+  await p.goto(base + "#/vocab5/v03"); await p.waitForTimeout(300);
+  const vt = await p.evaluate(() => ({ steps: document.querySelectorAll(".gstep").length, first: document.querySelector(".gstep").textContent, colloc: document.querySelectorAll(".colloc-row").length, trap: !!document.querySelector(".tip-box"), lessons: document.querySelectorAll(".lesson-acc").length }));
+  ok(vt.steps === 3 && vt.first.includes("1단계 · 기본 · 30문제") && vt.colloc >= 12 && vt.trap && vt.lessons === 5, "vocab topic page: steps + colloc + lessons + trap " + JSON.stringify(vt));
+  const gqN = await p.evaluate(() => Object.keys(window.__toeicfit.state.gq).length);
+  await p.click('[data-lv="1"]'); await p.waitForTimeout(300);
+  ok((await p.textContent(".qk")).includes("Part 5"), "vocab quiz started");
+  await p.click('[data-pick="0"]'); await p.waitForTimeout(150);
+  ok(await p.$(".feedback"), "vocab quiz shows feedback");
+  const vs = await p.evaluate(() => ({ vq: Object.keys(window.__toeicfit.state.vq), gq: Object.keys(window.__toeicfit.state.gq).length, qt: window.__toeicfit.state.qt["p5:어휘"] }));
+  ok(vs.vq.length === 1 && /^v03-/.test(vs.vq[0]) && vs.gq === gqN && vs.qt && vs.qt.n >= 1, "vocab answer recorded in S.vq (not S.gq) + weak type p5:어휘 " + JSON.stringify(vs));
+  await p.click("[data-exit]"); await p.click('#modal [data-r="1"]'); await p.waitForTimeout(300);
+  // Part 5 실전 30문제: 10:00 한 개 타이머 · 답해도 정답을 안 보여 줌 · 제출하면 문법/어휘 정답률
+  await p.goto(base + "#/practice"); await p.waitForTimeout(300);
+  ok((await p.$('.tile[href="#/vocab5"]')) && (await p.$('.tile[href="#/p5set"]')) && (await p.textContent(".page")).includes("외운 단어 Part 5 20제"), "hub: vocab5 + P5 set tiles, renamed word Part 5 tile");
+  await p.goto(base + "#/p5set"); await p.waitForTimeout(300);
+  await p.click("[data-p5go]"); await p.waitForTimeout(300);
+  ok((await p.textContent(".study-top .p5clock")).includes("10:00") && (await p.textContent(".cnt")).trim() === "1 / 30", "P5 set starts with 10:00 timer, 30 questions");
+  await p.click('[data-pick="1"]'); await p.waitForTimeout(100);
+  ok((await p.$(".opt.sel")) && !(await p.$(".feedback")) && !(await p.$(".opt.right")), "P5 set: no per-question feedback");
+  await p.click("[data-next]"); await p.waitForTimeout(100);
+  ok((await p.textContent(".cnt")).trim() === "2 / 30", "P5 set next question");
+  await p.click("[data-submit]"); await p.waitForTimeout(150);
+  await p.click('#modal [data-r="1"]'); await p.waitForTimeout(300);
+  const p5 = await p.evaluate(() => ({ split: document.querySelector(".p5split") && document.querySelector(".p5split").textContent, hero: document.querySelector(".result-hero").textContent, rec: window.__toeicfit.state.p5set }));
+  ok(p5.split && p5.split.includes("문법") && p5.split.includes("어휘") && /\/30/.test(p5.hero) && p5.rec.length === 1 && p5.rec[0].n === 30 && (await p.$("[data-p5again]")) && (await p.$("[data-p5wrong]")), "P5 set result: score/30 + 문법/어휘 split + recorded " + JSON.stringify(p5.rec));
+  await p.click("[data-home]"); await p.waitForTimeout(300);
+}
 await p.goto(base + "#/sets/p7"); await p.waitForTimeout(300);
 await p.click("[data-run-timed]"); await p.waitForTimeout(300);
 ok(/\d:\d\d/.test(await p.textContent(".qtimer")), "Part 7 timed set shows mm:ss");
@@ -274,7 +305,7 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   const buy = await q.textContent("[data-buy]"), free = await q.textContent("[data-free]");
   const note = await q.textContent(".offer .offer-note"), onSale = new Date().toISOString().slice(0, 10) <= "2026-12-31";
   ok(buy.includes("전체 이용권 구매") && free.includes("무료 범위로 먼저 써 보기") && (onSale ? buy.includes("₩6,900") && !buy.includes("₩9,900") && !(await q.$(".offer s")) && note.includes("출시 기념가") && note.includes("2027년 1월 1일부터 ₩9,900") : buy.includes("₩9,900") && !note.includes("출시")), `offer buttons: ${buy} / ${note} / ${free}`);
-  ok((await q.$$(".offer .cmp tbody tr")).length === 6 && (await q.textContent(".offer .cmp")).includes("Day 1~3 · 120개"), "offer: free vs full comparison table");
+  ok((await q.$$(".offer .cmp tbody tr")).length === 7 && (await q.textContent(".offer .cmp")).includes("Part 5 어휘") && (await q.textContent(".offer .cmp")).includes("Day 1~3 · 120개"), "offer: free vs full comparison table");
   ok(await q.evaluate(() => !!window.__toeicfit.state.diag && !window.__toeicfit.state.mock.d), "diag stored separately from mocks");
   await q.click("[data-free]"); await q.waitForTimeout(300);
   ok(q.url().endsWith("#/home") && !(await q.$('[data-go="diag"]')), "free trial → home, diagnostic task gone");
@@ -307,6 +338,22 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   ok((await q.evaluate(() => window.__toeicfit.state.gFree)) === "g05" && q.url().includes("#/study"), "free topic chosen and quiz started");
   await q.goto(base + "#/grammar/g07"); await q.waitForTimeout(300);
   ok((await q.textContent(".glock")).includes("전체 이용권"), "other topic questions locked with CTA");
+  // 어휘(무료): v01만 열림 · 다른 유형은 강의·짝 표현만 + 잠금 안내 · 실전 30문제 무료 1회
+  if (await q.evaluate(() => (window.VOCA_PRACTICE.vocab5 || []).length > 1)) {
+    await q.goto(base + "#/vocab5"); await q.waitForTimeout(300);
+    ok((await q.$$(".witem .badge.free")).length === 1 && (await q.$$(".witem .lock-ic")).length >= 1, "vocab list: one free topic, others locked");
+    await q.goto(base + "#/vocab5/v02"); await q.waitForTimeout(300);
+    ok((await q.textContent(".glock")).includes("이 유형의 문제는 전체 이용권") && (await q.$('.glock a[href="#/vocab5/v01"]')) && (await q.$$(".colloc-row")).length > 0, "v02 locked with CTA, colloc still shown");
+    await q.click('[data-lv="1"]'); await q.waitForTimeout(300);
+    ok(q.url().includes("#/premium?from=vocab5"), "locked vocab step → paywall: " + q.url());
+    await q.goto(base + "#/vocab5"); await q.waitForTimeout(300);
+    await q.click("[data-vmix]"); await q.waitForTimeout(300);
+    ok((await q.textContent(".cnt")).trim() === "1 / 20" && (await q.textContent(".qk")).includes(await q.evaluate(() => window.VOCA_PRACTICE.vocab5.find((t) => t.id === "v01").title)), "free vocab random 20 from v01");
+    await q.click("[data-exit]"); await q.waitForTimeout(200);
+    const qx = await q.$('#modal [data-r="1"]'); if (qx) await qx.click();
+    await q.goto(base + "#/p5set"); await q.waitForTimeout(300);
+    ok((await q.textContent("[data-p5go]")).includes("무료 1회"), "P5 set free once");
+  }
   ok(await q.evaluate(() => /^p[2-7]$/.test(window.__toeicfit.state.diag.weak || "") || window.__toeicfit.state.diag.weak === undefined), "diag weak part stored");
   // 무료: 오늘의 실전은 풀 수 있는 것만, 다 쓰면 잠김 표시 (진행률에서도 뺀다)
   await q.evaluate(() => { const S = window.__toeicfit.state; S.freeUse.lcq = 1; ["p3", "p4", "p6", "p7"].forEach((p) => { S.prac[p + "-001"] = { ok: 1, n: 1, last: 1 }; }); delete S.log[Object.keys(S.log).pop()].prac; S.guide.hide = true; });

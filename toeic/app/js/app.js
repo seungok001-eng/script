@@ -109,13 +109,15 @@
     lc: {}, // LC 퀴즈 기록 { "lc-12": { ok, ng, last, wrong } }
     prac: {}, // 실전 세트 기록 { "p3-001": { ok, n, last } }
     gq: {}, // 문법 문제 기록 { "g03-07": { ok, ng, last, wrong } }
+    vq: {}, // Part 5 어휘 문제 기록 { "v01-001": { ok, ng, last, wrong } } (문법과 따로)
+    p5set: [], // Part 5 실전 30문제 결과 [{ at, ok, n, sec }] (최근 30회)
     qt: {}, // 문제 유형별 정답률 { "p7:추론": { ok, n } }
     pr: { lc: [], rc: [] }, // 최근 LC/RC 정오 (예상 점수)
     mock: {}, // 모의고사 { 1: { lc, rc, total, best, at } }
     guide: null, // 시작 미션 { start, done: { 미션키: 한 날 }, hide } — 새로 시작한 사람에게만
     tips: {}, // 한 번 본 첫 방문 팁 { card: 1, … }
     diag: null, // 첫 실력 진단 결과 { lc, rc, total, at }
-    freeUse: {}, // 무료 이용 횟수 { lcq, dict, timed }
+    freeUse: {}, // 무료 이용 횟수 { lcq, dict, timed, p5set }
     dayStep: {}, // Day 학습 단계 { 5: 1|2|3 } (1 = 아는 단어 빼기, 2 = 확인 퀴즈 마침)
     cf: {}, // 혼동 어휘 세트 마지막 결과 { "cf-1": 1 | 0 }
     gFree: null, // 무료로 고른 문법 주제 id (기초 주제 말고 1개)
@@ -195,8 +197,11 @@
     const idOk = (k) => typeof k === "string" && /^[a-z0-9:·\- \u3131-\uD79D]{1,60}$/i.test(k);
     const pc = (src && src.prac) || {};
     for (const k of Object.keys(pc)) if (idOk(k) && pc[k] && typeof pc[k] === "object") { d.prac[k] = { ok: num(pc[k].ok, 0, 0, 20), n: num(pc[k].n, 1, 1, 20), last: num(pc[k].last, 0, 0, 1e6) }; if (Array.isArray(pc[k].p)) d.prac[k].p = pc[k].p.slice(0, 20).map((x) => (Number.isInteger(x) && x >= 0 && x <= 3 ? x : null)); }
-    const gq = (src && src.gq) || {};
-    for (const k of Object.keys(gq)) if (idOk(k) && gq[k] && typeof gq[k] === "object") { d.gq[k] = { ok: num(gq[k].ok, 0, 0, 1e6), ng: num(gq[k].ng, 0, 0, 1e6), last: num(gq[k].last, 0, 0, 1e6) }; if (gq[k].wrong) d.gq[k].wrong = true; }
+    for (const key of ["gq", "vq"]) {
+      const gq = (src && src[key]) || {};
+      for (const k of Object.keys(gq)) if (idOk(k) && gq[k] && typeof gq[k] === "object") { d[key][k] = { ok: num(gq[k].ok, 0, 0, 1e6), ng: num(gq[k].ng, 0, 0, 1e6), last: num(gq[k].last, 0, 0, 1e6) }; if (gq[k].wrong) d[key][k].wrong = true; }
+    }
+    if (src && Array.isArray(src.p5set)) d.p5set = src.p5set.filter((x) => x && typeof x === "object").slice(-30).map((x) => { const n = num(x.n, 30, 1, 100); return { at: num(x.at, 0, 0, 1e6), ok: Math.min(n, num(x.ok, 0, 0, 100)), n, sec: num(x.sec, 0, 0, 3600) }; });
     const qt = (src && src.qt) || {};
     const qtOk = (k) => typeof k === "string" && k.length <= 90 && /^p\d{1,2}:/.test(k) && !/[<>"'&]/.test(k);
     for (const k of Object.keys(qt)) if (qtOk(k) && qt[k] && typeof qt[k] === "object") { const n = num(qt[k].n, 0, 0, 1e6); if (n) d.qt[k] = { ok: Math.min(n, num(qt[k].ok, 0, 0, 1e6)), n }; }
@@ -219,7 +224,7 @@
       if (/^p[1-7]$/.test(dg.weak || "")) d.diag.weak = dg.weak;
     }
     const fu = (src && src.freeUse) || {};
-    for (const k of ["lcq", "dict", "timed"]) if (fu[k]) d.freeUse[k] = num(fu[k], 0, 0, 1e6);
+    for (const k of ["lcq", "dict", "timed", "p5set"]) if (fu[k]) d.freeUse[k] = num(fu[k], 0, 0, 1e6);
     const ds = (src && src.dayStep) || {};
     for (const k of Object.keys(ds)) if (DAY_BY.has(+k) && ds[k]) d.dayStep[+k] = num(ds[k], 0, 0, 3);
     const cf = (src && src.cf) || {};
@@ -583,7 +588,7 @@
   // 진행 중인 학습이 있는가 (한 문제라도 풀었거나 카드를 넘겼으면 뒤로가기 전에 묻는다)
   function inProgress(s) {
     if (!s || s.done || s.finished || s.kind === "listen") return false;
-    return s.kind === "mock" || (s.results && s.results.length > 0) || s.i > 0 || (s.seenIds && s.seenIds.size > 0) || s.answered != null;
+    return s.kind === "mock" || s.kind === "p5set" || (s.results && s.results.length > 0) || s.i > 0 || (s.seenIds && s.seenIds.size > 0) || s.answered != null;
   }
   let afterNav = null; // 뒤로 간 다음 이어서 할 이동 (history.back/go 는 비동기라 hashchange 에서 처리)
   function onHash() {
@@ -627,7 +632,7 @@
     document.body.classList.toggle("in-study", r.name === "study" || r.name === "onboarding");
     if (!S.profile && r.name !== "onboarding") return location.replace("#/onboarding");
     if (r.name !== "onboarding" && onb.edit) onb = { step: 0, target: 0, exam: "", daily: 0 }; // 계획 바꾸기를 뒤로가기로 나갔으면 고르던 값은 버린다
-    const views = { onboarding: vOnboarding, home: vHome, days: vDays, day: vDay, word: vWord, study: vStudy, review: vReview, part1: vPart1, conf: vConf, lc: vLc, p2: vP2, practice: vPractice, sets: vSets, guide: vGuide, diag: vDiag, grammar: vGrammar, dict: vDict, mock: vMock, search: vSearch, stats: vStats, settings: vSettings, licenses: vLicenses, premium: vPremium };
+    const views = { onboarding: vOnboarding, home: vHome, days: vDays, day: vDay, word: vWord, study: vStudy, review: vReview, part1: vPart1, conf: vConf, lc: vLc, p2: vP2, practice: vPractice, sets: vSets, guide: vGuide, diag: vDiag, grammar: vGrammar, vocab5: vVocab5, p5set: vP5Intro, dict: vDict, mock: vMock, search: vSearch, stats: vStats, settings: vSettings, licenses: vLicenses, premium: vPremium };
     const v = views[r.name] || vHome;
     v(r);
     window.scrollTo(0, 0);
@@ -1353,11 +1358,12 @@
     if (!session || session.done) return exitStudy();
     const mock = session.kind === "mock" && !session.m.diag;
     const diag = session.kind === "mock" && session.m.diag;
+    if (session.kind === "p5set") return confirmBox(T`실전 30문제를 그만할까요?`, T`제출하지 않으면 점수와 기록이 남지 않아요.`, T`그만하기`).then((ok) => { if (ok) exitStudy(); });
     confirmBox(mock ? T`모의고사를 멈출까요?` : diag ? T`진단을 그만할까요?` : T`학습을 그만할까요?`, mock ? T`푼 답안과 남은 시간이 저장돼요. 모의고사 화면에서 이어서 풀 수 있어요.` : diag ? T`진단은 저장되지 않아요. 다음에 처음부터 다시 해요.` : T`지금까지 한 내용은 저장돼요.`, mock ? T`멈추기` : T`그만하기`).then((ok) => { if (ok) { if (mock && session) saveMockRun(session); exitStudy(); } });
   }
-  function studyTop(cur, total) {
+  function studyTop(cur, total, extra) {
     const pct = total ? Math.round((cur / total) * 100) : 0;
-    return T`<div class="study-top"><button class="icon-btn back" data-exit aria-label="닫기">${ico("x")}</button><div class="bar"><i style="width:${pct}%"></i></div><span class="cnt">${Math.min(cur + 1, total)} / ${total}</span></div>`;
+    return T`<div class="study-top"><button class="icon-btn back" data-exit aria-label="닫기">${ico("x")}</button><div class="bar"><i style="width:${pct}%"></i></div><span class="cnt">${Math.min(cur + 1, total)} / ${total}</span>${extra || ""}</div>`;
   }
   function bindExit() { const b = $app.querySelector("[data-exit]"); if (b) b.addEventListener("click", askExit); }
   function introduceIfNew(w) {
@@ -1383,7 +1389,8 @@
     if (session.kind === "conf") return vQuiz();
     if (session.kind === "lcq") return vLcQuiz();
     if (session.kind === "pset") return vPset();
-    if (session.kind === "gq") return vGq();
+    if (session.kind === "gq" || session.kind === "vq") return vGq();
+    if (session.kind === "p5set") return vP5Run();
     if (session.kind === "dict") return vDictSession();
     if (session.kind === "mock") return vMockSession();
   }
@@ -1902,7 +1909,7 @@
     if (tw) { clearTimeout(toastTimer); tw.innerHTML = ""; }
     if (s.kind === "sort" && s.day) dayStepDone(s.day, 1);
     if (s.kind === "quiz" && s.dayStep && s.results.length >= Math.min(5, s.qs.length)) dayStepDone(s.dayStep, 2);
-    if (["pset", "gq", "lcq", "dict"].includes(s.kind) && (s.results || []).length >= 3) logToday().prac = true;
+    if (["pset", "gq", "vq", "p5set", "lcq", "dict"].includes(s.kind) && (s.results || []).length >= 3) logToday().prac = true;
     const count = s.kind === "card" ? s.seenIds.size : s.kind === "sort" ? 0 : s.results.length;
     if (count >= 5) markDone();
     if (s.kind === "lcq" && s.results.length && !s.trial) S.freeUse.lcq = (S.freeUse.lcq || 0) + 1;
@@ -1974,7 +1981,14 @@
       hero = T`<div class="result-hero"><div class="score" style="color:${avg >= 90 ? "var(--ok)" : avg >= 60 ? "var(--accent)" : "var(--bad)"}">${avg}<small>%</small></div><div class="msg">${avg >= 90 ? T`귀가 트였어요!` : avg >= 60 ? T`거의 다 들려요` : T`천천히 다시 들어 보세요`}</div><p class="muted">${s.results.length}문장 평균 받아쓰기 정확도</p></div>`;
       list = s.results.filter((r) => r.pct < 100).map((r) => `<div class="witem" style="cursor:default"><div class="wbody"><div class="ex-en en">${esc(r.it.text)}</div><div class="ex-ko">${esc(r.it.ko)}</div></div><span class="badge ${r.pct >= 90 ? "ok" : "bad"}">${r.pct}%</span></div>`).join("");
       actions = T`<button class="btn block" data-dmore>${ico("pencil")}10문장 더</button><button class="btn ghost block" style="margin-top:10px" data-home>처음 화면으로</button>`;
-    } else if (s.kind === "gq") {
+    } else if (s.kind === "p5set") {
+      const r = p5ResultHtml(s);
+      hero = r.hero;
+      list = r.list;
+      actions = `${r.actions}<button class="btn ghost block" style="margin-top:10px" data-home>${T`처음 화면으로`}</button>`;
+      if (s.score.pct >= 80) setTimeout(confetti, 100);
+    } else if (s.kind === "gq" || s.kind === "vq") {
+      const B = BANKS[s.kind];
       const ok = s.results.filter((r) => r.ok).length;
       const total = s.results.length;
       const score = Math.round((ok / total) * 100);
@@ -1982,16 +1996,13 @@
       const wrong = s.results.filter((r) => !r.ok);
       s._gWrong = wrong.map((r) => r.q);
       // 틀린 문제: 정답을 넣은 문장(빈칸 단어 굵게) · 내 답 ✗ → 정답 ✓ · 보기 4개
-      list = wrong.map((r) => { const q = r.q, pk = r.pick != null && r.pick >= 0 ? r.pick : null; return `<div class="witem gw-item" style="cursor:default"><div class="wbody"><div class="ex-en en">${esc(q.s).replace("-------", `<b class="gblank">${esc(q.o[q.a])}</b>`)}</div>
-        <div class="pw-ans">${pk == null ? T`<span class="bad">✗ ${r.pick < 0 ? T`시간 초과` : T`안 고름`}</span>` : T`<span class="bad">✗ 내 답 ${LETTERS[pk]} <span class="en">${esc(q.o[pk])}</span></span>`} → ${T`<span class="ok">✓ 정답 ${LETTERS[q.a]} <span class="en">${esc(q.o[q.a])}</span></span>`}</div>
-        <div class="gw-opts en">${q.o.map((o, i) => `<span class="${i === q.a ? "ok" : i === pk ? "bad" : ""}">${LETTERS[i]} ${esc(o)}</span>`).join("")}</div>
-        <div class="small muted" style="margin-top:6px">${esc(q.exp)}</div></div></div>`; }).join("");
+      list = wrong.map((r) => p5WrongHtml(r)).join("");
       // 다음 할 일: 80% 이상이면 다음 단계, 아니면 틀린 문제 다시
-      const gt = s.topic && PR.grammar.find((x) => x.id === s.topic);
-      const nextLv = gt && s.lv ? G_STEPS.find(([lv]) => lv > s.lv && gLvQs(gt, lv).length) : null;
+      const gt = s.topic && B.list().find((x) => x.id === s.topic);
+      const nextLv = gt && s.lv ? B.steps.find(([lv]) => lv > s.lv && gLvQs(gt, lv).length) : null;
       const retry = wrong.length ? T`<button class="btn ${score >= 80 && nextLv ? "ghost" : ""} block" style="margin-top:10px" data-gwrong>${ico("repeat")}틀린 ${wrong.length}문제 다시</button>` : "";
       const nextB = score >= 80 && nextLv ? T`<button class="btn block" style="margin-top:10px" data-gnextlv="${nextLv[0]}">${nextLv[0]}단계 풀기 ▶</button>` : "";
-      actions = `${score >= 80 ? nextB + retry : retry + nextB}<button class="btn ${wrong.length || nextB ? "ghost" : ""} block" style="margin-top:10px" ${s.topic ? "data-gtopic" : "data-home"}>${s.topic ? T`주제로 돌아가기` : T`처음 화면으로`}</button>`;
+      actions = `${score >= 80 ? nextB + retry : retry + nextB}<button class="btn ${wrong.length || nextB ? "ghost" : ""} block" style="margin-top:10px" ${s.topic ? "data-gtopic" : "data-home"}>${s.topic ? B.backTopic : T`처음 화면으로`}</button>`;
       if (score >= 80 && total >= 5) setTimeout(confetti, 100);
     } else if (s.kind === "lcq") {
       const ok = s.results.filter((r) => r.ok).length;
@@ -2085,11 +2096,17 @@
     const dm = $app.querySelector("[data-dmore]");
     if (dm) dm.addEventListener("click", () => { const src = dictSources(); const short = s.src === "short"; const all = short ? src.lc : src.p34.filter((x) => x.text.split(" ").length >= 6 && x.text.split(" ").length <= 22); startDict(C.shuffle(all).slice(0, 10), s.title, s.src); });
     const gw = $app.querySelector("[data-gwrong]");
-    if (gw) gw.addEventListener("click", () => startGrammarQuiz(s._gWrong, T`틀린 문법 문제`, { exact: true, topic: s.topic, lv: s.lv }));
+    const SB = BANKS[s.kind] || BANKS.gq;
+    if (gw) gw.addEventListener("click", () => startBankQuiz(SB, s._gWrong, s.wrongTitle || SB.wrongTitle, { exact: true, topic: s.topic, lv: s.lv, wrongTitle: s.wrongTitle }));
     const gtp = $app.querySelector("[data-gtopic]");
-    if (gtp) gtp.addEventListener("click", () => { lineSeq += 1; Sound.stop(); session = null; studyPushed = false; location.replace(`#/grammar/${s.topic}`); });
+    if (gtp) gtp.addEventListener("click", () => { lineSeq += 1; Sound.stop(); session = null; studyPushed = false; location.replace(`${SB.route}/${s.topic}`); });
     const gn = $app.querySelector("[data-gnextlv]");
-    if (gn) gn.addEventListener("click", () => gStepStart(PR.grammar.find((x) => x.id === s.topic), +gn.dataset.gnextlv));
+    if (gn) gn.addEventListener("click", () => bankStepStart(SB, SB.list().find((x) => x.id === s.topic), +gn.dataset.gnextlv));
+    const p5a = $app.querySelector("[data-p5again]");
+    if (p5a) p5a.addEventListener("click", startP5Set);
+    const p5w = $app.querySelector("[data-p5wrong]");
+    if (p5w) p5w.addEventListener("click", () => startBankQuiz(BANKS.gq, C.shuffle(s._p5Wrong), T`Part 5 실전 · 틀린 문제`, { exact: true, wrongTitle: T`Part 5 실전 · 틀린 문제` }));
+    $app.querySelectorAll("[data-p5part]").forEach((a) => a.addEventListener("click", (e) => { e.preventDefault(); leaveStudyTo(a.getAttribute("href")); }));
     const lw = $app.querySelector("[data-lcwrong]");
     if (lw) lw.addEventListener("click", () => startLcQuiz(s.type, s._lcWrong));
     const ln = $app.querySelector("[data-lcnext]");
@@ -2457,6 +2474,8 @@
       for (const k of ["p1", "p3", "p4", "p6", "p7"]) (PR[k] || []).forEach((x) => PR._by.set(x.id, x));
       PR._g = new Map();
       (PR.grammar || []).forEach((t) => t.qs.forEach((q) => PR._g.set(q.id, { q, t })));
+      PR._v = new Map();
+      (PR.vocab5 || []).forEach((t) => t.qs.forEach((q) => PR._v.set(q.id, { q, t })));
     }
     return PR;
   }
@@ -2748,6 +2767,10 @@
     const weak = C.weakTypes(S.qt).slice(0, 5);
     const gTotal = (PR.grammar || []).reduce((n, t) => n + t.qs.filter((q) => !q.mock).length, 0);
     const gDone = Object.keys(S.gq).filter((k) => PR._g.has(k)).length;
+    const V5 = PR.vocab5 || [];
+    const vTotal = V5.reduce((n, t) => n + t.qs.filter((q) => !q.mock).length, 0);
+    const vDone = Object.keys(S.vq).filter((k) => PR._v.has(k)).length;
+    const p5Last = (S.p5set || []).slice(-1)[0];
     const rec = practiceRec();
     const recHtml = rec ? T`<button class="rec-card" data-rec><span class="spacer"><span class="eyebrow">오늘 추천</span><b>${rec.title}</b><span class="small">${rec.sub}</span></span><span class="rec-go">${ico("play")}</span></button>` : "";
     const scoreHtml = T`<section class="score-card">
@@ -2768,7 +2791,9 @@
     const rcHtml = T`<div class="section-h"><h2>RC 읽기</h2></div>
       <div class="grid2">
         ${tile("#/grammar", "book", "c-blue", T`Part 5 문법`, L ? T`${(PR.grammar || []).length}개 주제 · 기초 4개 무료` : T`${(PR.grammar || []).length}개 주제 · ${gDone}/${gTotal}문제`)}
-        ${btnTile('data-pgo="p5w"', "zap", "c-purple", T`Part 5 어휘 20제`, T`외운 단어로 실전 문제`)}
+        ${V5.length ? tile("#/vocab5", "sparkle", "c-green", T`Part 5 어휘`, L ? T`${V5.length}개 유형 · ${vTotal}문제 · 무료 1유형` : T`${V5.length}개 유형 · ${vDone}/${vTotal}문제`) : ""}
+        ${p5Ready() ? tile("#/p5set", "clock", "c-gold", T`Part 5 실전 30문제 · 10분`, `${p5Last ? T`최근 ${p5Last.ok}/${p5Last.n}점` : T`문법 15 + 어휘 15`}${L && !p5Used() ? T` · 무료 1회` : ""}`, p5Used()) : ""}
+        ${btnTile('data-pgo="p5w"', "zap", "c-purple", T`외운 단어 Part 5 20제`, T`외운 단어로 실전 문제`)}
         ${setTile("p6", "layers", "c-orange", T`Part 6 장문 빈칸`)}
         ${setTile("p7", "list", "c-green", T`Part 7 독해`)}
         ${btnTile('data-pgo="para"', "swap", "c-orange", T`Part 7 동의어 20제`, T`문맥 속 바꿔 쓰기`)}
@@ -2827,6 +2852,8 @@
     if (part === "p5") {
       const t = (PR.grammar || []).find((x) => x.title === type);
       if (t) return go(`#/grammar/${t.id}`);
+      // 어휘 약점: Part 5 어휘 문제 은행이 있으면 거기서 20문제 (무료 체험은 무료 유형에서)
+      if (type === "어휘" && (PR.vocab5 || []).length) return startBankQuiz(BANKS.vq, C.lcPick(PR.vocab5.filter((x) => vOpen(x)).flatMap((x) => x.qs.filter((q) => !q.mock)), S.vq, 20), T`어휘 약점 20제`);
       const P = pool();
       const seen = P.filter((w) => st(w.id) && st(w.id).n);
       return startQuiz(C.shuffle(seen.length >= 20 ? seen : P.slice(0, 200)).slice(0, 20), "part5", { title: T`Part 5 어휘 20제` });
@@ -3068,15 +3095,18 @@
     window.scrollTo(0, 0);
   }
 
-  // ═════════════ Part 5 문법 ═════════════
+  // ═════════════ Part 5 문법 · 어휘 ═════════════
+  // 문법(S.gq)과 어휘(S.vq) 두 문제 은행이 주제 화면·퀴즈·결과를 같이 쓴다. 은행마다 데이터·기록·주소·문구만 다르다 (BANKS)
   // 단계별 풀기: 쉬움 → 보통 → 어려움. 한 번에 최대 15문제씩, 안 푼 문제·틀린 문제부터
   const G_STEP = 15;
   const G_STEPS = [[1, T`1단계 · 기본`, T`단서가 빈칸 바로 옆에 있는 문제`], [2, T`2단계 · 실전`, T`문장 구조를 분석해야 하는 문제`], [3, T`3단계 · 고난도`, T`함정과 긴 문장이 있는 문제`]];
+  const V_STEPS = [[1, T`1단계 · 기본`, T`자주 쓰는 단어 · 단서가 빈칸 바로 옆에`], [2, T`2단계 · 실전`, T`짝 표현과 문장 전체로 고르는 문제`], [3, T`3단계 · 고난도`, T`어려운 단어와 헷갈리는 보기`]];
   const gLvQs = (t, lv) => t.qs.filter((q) => !q.mock && (q.lv || 2) === lv);
   // 단계 기록: 푼 문제 중 맞힌 수(마지막 결과 기준). 한 번에 푸는 만큼 이상 풀고 80% 이상이면 통과
-  function gStat(xs) {
-    const done = xs.filter((q) => S.gq[q.id]);
-    const ok = done.filter((q) => !S.gq[q.id].wrong).length;
+  function gStat(xs, st) {
+    const m = st || S.gq;
+    const done = xs.filter((q) => m[q.id]);
+    const ok = done.filter((q) => !m[q.id].wrong).length;
     return { n: xs.length, done: done.length, ok, pass: done.length >= Math.min(G_STEP, xs.length) && done.length > 0 && ok / done.length >= 0.8 };
   }
   // 무료 문법: 기초 주제(b01~b04)는 모두 열림 + 목록에서 직접 고른 일반 주제 1개
@@ -3088,14 +3118,38 @@
     return k ? PR._g.get(k).t.id : null;
   }
   const gOpen = (t) => !locked() || isBasicTopic(t) || freeGrammarTopic() === t.id;
+  // 무료 어휘: 첫 유형(v01) 하나만 (고르지 않는다)
+  const vFreeId = () => { const v = (PR && PR.vocab5) || []; return ((v.find((t) => t.id === "v01") || v[0]) || {}).id || null; };
+  const vOpen = (t) => !locked() || (!!t && t.id === vFreeId());
+  // 문제 은행: kind = 세션 종류, st = 기록, idx = 문항 id → { q, t }
+  const BANKS = {
+    gq: {
+      kind: "gq", route: "#/grammar", pay: "grammar", steps: G_STEPS, canPick: true,
+      list: () => PR.grammar || [], idx: () => PR._g, st: () => S.gq, open: (t) => gOpen(t), freeId: () => freeGrammarTopic(),
+      ask: (t, fn) => gAskFree(t, fn), qt: (t) => `p5:${t.title}`,
+      wrongTitle: T`틀린 문법 문제`, backTopic: T`주제로 돌아가기`, twrong: (n) => T`<button class="btn ghost block" data-twrong style="margin-top:8px">${ico("repeat")}이 주제 틀린 문제 다시 (${n})</button>`,
+      pickCard: () => T`<div class="card glock"><b>무료로 풀 주제를 고를 수 있어요</b><p class="small muted">무료로는 문법 기초 4개 + 원하는 주제 1개를 풀 수 있어요. 강의는 어느 주제든 볼 수 있어요.</p><button class="btn block" data-gpick>${ico("check")}이 주제를 무료 주제로 쓰기</button></div>`,
+      shutCard: (ftT) => T`<div class="card glock"><b>${ico("lock")} 이 주제의 문제는 전체 이용권으로 풀 수 있어요</b><p class="small muted">아래 강의는 무료로 볼 수 있어요${ftT ? T` · 무료 주제: ${esc(tr(ftT.title))}` : ""}</p><div class="row" style="gap:8px"><a class="btn block" href="#/premium?from=grammar" style="flex:1">전체 이용권 보기</a>${ftT ? T`<a class="btn ghost block" href="#/grammar/${ftT.id}" style="flex:1">무료 주제로 가기</a>` : ""}</div></div>`,
+    },
+    vq: {
+      kind: "vq", route: "#/vocab5", pay: "vocab5", steps: V_STEPS, canPick: false,
+      list: () => (PR && PR.vocab5) || [], idx: () => PR._v, st: () => S.vq, open: (t) => vOpen(t), freeId: () => vFreeId(),
+      ask: (t, fn) => (vOpen(t) ? fn() : paywall("vocab5")), qt: () => "p5:어휘", // 약점 분석에서는 'Part 5 · 어휘' 한 줄로 모인다
+      wrongTitle: T`틀린 어휘 문제`, backTopic: T`유형으로 돌아가기`, twrong: (n) => T`<button class="btn ghost block" data-twrong style="margin-top:8px">${ico("repeat")}이 유형 틀린 문제 다시 (${n})</button>`,
+      pickCard: () => "",
+      shutCard: (ftT) => T`<div class="card glock"><b>${ico("lock")} 이 유형의 문제는 전체 이용권으로 풀 수 있어요</b><p class="small muted">아래 강의와 빈출 짝 표현은 무료로 볼 수 있어요${ftT ? T` · 무료 유형: ${esc(tr(ftT.title))}` : ""}</p><div class="row" style="gap:8px"><a class="btn block" href="#/premium?from=vocab5" style="flex:1">전체 이용권 보기</a>${ftT ? T`<a class="btn ghost block" href="#/vocab5/${ftT.id}" style="flex:1">무료 유형으로 가기</a>` : ""}</div></div>`,
+    },
+  };
+  const bankOfQ = (q) => (PR._v && PR._v.has(q.id) ? BANKS.vq : BANKS.gq);
   // 이 주제에서 다음에 풀 단계 (통과하지 않은 첫 단계)
-  const gNextLv = (t) => { const lvs = G_STEPS.map((x) => x[0]).filter((lv) => gLvQs(t, lv).length); return lvs.find((lv) => !gStat(gLvQs(t, lv)).pass) || null; };
-  function gStepStart(t, lv) {
+  const gNextLv = (t, B) => { const b = B || BANKS.gq; const lvs = b.steps.map((x) => x[0]).filter((lv) => gLvQs(t, lv).length); return lvs.find((lv) => !gStat(gLvQs(t, lv), b.st()).pass) || null; };
+  function bankStepStart(B, t, lv) {
     if (!t) return;
-    if (!gOpen(t)) return gAskFree(t, () => gStepStart(t, lv));
-    const step = G_STEPS.find((x) => x[0] === lv);
-    startGrammarQuiz(C.lcPick(gLvQs(t, lv), S.gq, G_STEP), `${tr(t.title)} · ${step[1]}`, { topic: t.id, lv });
+    if (!B.open(t)) return B.ask(t, () => bankStepStart(B, t, lv));
+    const step = B.steps.find((x) => x[0] === lv);
+    startBankQuiz(B, C.lcPick(gLvQs(t, lv), B.st(), G_STEP), `${tr(t.title)} · ${step[1]}`, { topic: t.id, lv });
   }
+  const gStepStart = (t, lv) => bankStepStart(BANKS.gq, t, lv);
   // 아직 무료 주제를 안 골랐으면 이 주제로 할지 묻고, 이미 골랐으면 결제 화면
   function gAskFree(t, then) {
     if (!locked() || gOpen(t)) return then();
@@ -3133,7 +3187,8 @@
         ${nxT ? T`<button class="btn block" data-gcont style="margin-top:12px">${ico("play")}<span class="gcont-t">이어서: ${esc(tr(nxT.title))} ${gNextLv(nxT)}단계</span> ▶</button>` : ""}</section>
       ${L ? T`<div class="free-line">${ico("lock")}<span class="spacer">무료: 문법 기초 4개 + 고른 주제 1개${ftT ? ` (${esc(tr(ftT.title))})` : T` (아직 안 고름)`}</span><a href="#/premium?from=grammar">전체 이용권</a></div>` : ""}
       <button class="btn ghost block" data-mix style="margin-bottom:6px">${ico("shuffle")}문법 랜덤 20제${L ? T` · 기초 주제에서` : ""}</button>
-      <button class="btn ghost block" data-timed style="margin-bottom:${wrongN ? 6 : 14}px">${ico(timedUsed ? "lock" : "clock")}시간 압박 20제 · 문항당 20초${L && !timedUsed ? T` · 무료 1회` : ""}</button>
+      <button class="btn ghost block" data-timed style="margin-bottom:${wrongN || p5Ready() ? 6 : 14}px">${ico(timedUsed ? "lock" : "clock")}시간 압박 20제 · 문항당 20초${L && !timedUsed ? T` · 무료 1회` : ""}</button>
+      ${p5SetBtn(wrongN ? 6 : 14)}
       ${wrongN ? T`<button class="btn ghost block" data-wrong style="margin-bottom:14px">${ico("repeat")}틀린 문법 문제 다시 (${wrongN})</button>` : ""}
       ${cats.map((c) => `${catBar(c)}<div class="wlist">${PR.grammar.filter((t) => t.cat === c).map((t) => { const p = prog(t); return `<a class="witem ${L && !gOpen(t) && ft ? "is-locked" : ""}" href="#/grammar/${t.id}"><div class="wbody"><div class="ww" style="font-size:16px">${esc(tr(t.title))}</div><div class="wm">${p.done ? T`${p.done}/${p.n}문제 · 정답 ${p.ok}` : T`${p.n}문제`}</div></div>${badge(t)}${ico("right")}</a>`; }).join("")}</div>`).join("")}`;
     shell("practice", body);
@@ -3154,44 +3209,50 @@
       startGrammarQuiz(C.shuffle(qs).slice(0, 30), T`틀린 문법 문제`, { exact: true });
     });
   }
-  function vGrammarTopic(r) {
-    const t = PR.grammar.find((x) => x.id === r.arg);
-    if (!t) return go("#/grammar");
+  function vGrammarTopic(r) { return vBankTopic(BANKS.gq, r); }
+  // 주제(유형) 화면: 단계별 문제 · 섞어서 · 틀린 문제 다시 · 핵심 강의 · (어휘) 빈출 짝 표현 · 함정
+  function vBankTopic(B, r) {
+    const t = B.list().find((x) => x.id === r.arg);
+    if (!t) return go(B.route);
+    const st = B.st();
     const qs = t.qs.filter((q) => !q.mock);
-    const open = gOpen(t);
-    const ft = freeGrammarTopic();
-    const ftT = ft && PR.grammar.find((x) => x.id === ft);
-    const canPick = locked() && !open && !ft; // 아직 무료 주제를 안 고름 → 이 주제로 고를 수 있다
-    const shut = locked() && !open && !!ft; // 다른 주제를 무료로 골랐음 → 강의만 보기
-    const wrongQs = qs.filter((q) => S.gq[q.id] && S.gq[q.id].wrong);
-    const nextLv = gNextLv(t);
-    const steps = G_STEPS.filter(([lv]) => gLvQs(t, lv).length).map(([lv, name, desc]) => {
-      const st = gStat(gLvQs(t, lv));
-      const acc = st.done ? (st.pass ? T`<span class="badge ok">통과 · ${st.ok}/${st.done}</span>` : `<span class="badge ${st.ok / st.done >= 0.8 ? "pos" : "bad"}">${T`정답 ${st.ok}/${st.done}`}</span>`) : "";
-      return `<button class="witem gstep ${lv === nextLv && !shut ? "rec" : ""}" data-lv="${lv}"><div class="wbody"><div class="ww" style="font-size:15px">${name} · ${T`${st.n}문제`}</div><div class="wm">${desc}${st.done ? T` · ${st.done}/${st.n}문제 풀었어요` : ""}</div></div>${shut ? lockIco() : acc}${ico("right")}</button>`;
+    const open = B.open(t);
+    const ft = B.freeId();
+    const ftT = ft && B.list().find((x) => x.id === ft);
+    const canPick = B.canPick && locked() && !open && !ft; // 아직 무료 주제를 안 골랐음 → 이 주제로 고를 수 있다 (문법만)
+    const shut = locked() && !open && !canPick; // 무료가 아닌 주제 → 강의만 보기
+    const wrongQs = qs.filter((q) => st[q.id] && st[q.id].wrong);
+    const nextLv = gNextLv(t, B);
+    const steps = B.steps.filter(([lv]) => gLvQs(t, lv).length).map(([lv, name, desc]) => {
+      const sx = gStat(gLvQs(t, lv), st);
+      const acc = sx.done ? (sx.pass ? T`<span class="badge ok">통과 · ${sx.ok}/${sx.done}</span>` : `<span class="badge ${sx.ok / sx.done >= 0.8 ? "pos" : "bad"}">${T`정답 ${sx.ok}/${sx.done}`}</span>`) : "";
+      return `<button class="witem gstep ${lv === nextLv && !shut ? "rec" : ""}" data-lv="${lv}"><div class="wbody"><div class="ww" style="font-size:15px">${name} · ${T`${sx.n}문제`}</div><div class="wm">${desc}${sx.done ? T` · ${sx.done}/${sx.n}문제 풀었어요` : ""}</div></div>${shut ? lockIco() : acc}${ico("right")}</button>`;
     }).join("");
-    const returning = qs.some((q) => S.gq[q.id]); // 처음 왔으면 첫 강의를 펼쳐 둔다
+    const returning = qs.some((q) => st[q.id]); // 처음 왔으면 첫 강의를 펼쳐 둔다
     const mixN = Math.min(G_STEP, qs.length);
-    const lockCard = canPick ? T`<div class="card glock"><b>무료로 풀 주제를 고를 수 있어요</b><p class="small muted">무료로는 문법 기초 4개 + 원하는 주제 1개를 풀 수 있어요. 강의는 어느 주제든 볼 수 있어요.</p><button class="btn block" data-gpick>${ico("check")}이 주제를 무료 주제로 쓰기</button></div>`
-      : shut ? T`<div class="card glock"><b>${ico("lock")} 이 주제의 문제는 전체 이용권으로 풀 수 있어요</b><p class="small muted">아래 강의는 무료로 볼 수 있어요${ftT ? T` · 무료 주제: ${esc(tr(ftT.title))}` : ""}</p><div class="row" style="gap:8px"><a class="btn block" href="#/premium?from=grammar" style="flex:1">전체 이용권 보기</a>${ftT ? T`<a class="btn ghost block" href="#/grammar/${ftT.id}" style="flex:1">무료 주제로 가기</a>` : ""}</div></div>` : "";
+    const lockCard = canPick ? B.pickCard() : shut ? B.shutCard(ftT) : "";
+    const colloc = (t.colloc || []).length ? T`<div class="section-h" style="margin-top:22px"><h2>빈출 짝 표현</h2><span class="small muted">${t.colloc.length}개</span></div>
+      <div class="card colloc">${t.colloc.map((c) => `<div class="colloc-row"><b class="en">${esc(c.en)}</b><span>${esc(c.ko)}</span></div>`).join("")}</div>` : "";
     const body = T`${topBar(esc(tr(t.title)), { back: true, sub: T`${esc(tr(t.cat))} · 문제 ${qs.length}개` })}
       ${lockCard}
       <div class="gsteps"><div class="section-h"><h2>단계별 문제</h2><span class="small muted">한 번에 최대 ${G_STEP}문제 · 안 푼 문제부터</span></div>
       <div class="wlist">${steps}</div>
       <button class="btn ${shut ? "ghost" : ""} block" data-start style="margin-top:12px">${ico(shut ? "lock" : "shuffle")}전체 섞어서 ${mixN}문제</button>
-      ${wrongQs.length && !shut ? T`<button class="btn ghost block" data-twrong style="margin-top:8px">${ico("repeat")}이 주제 틀린 문제 다시 (${wrongQs.length})</button>` : ""}</div>
+      ${wrongQs.length && !shut ? B.twrong(wrongQs.length) : ""}</div>
       <div class="section-h" style="margin-top:22px"><h2>핵심 강의</h2><span class="small muted">${t.lesson.length}개</span></div>
       ${t.lesson.map((l, i) => `<details class="card lesson lesson-acc" ${!returning && i === 0 ? "open" : ""}><summary class="lesson-h"><span class="pq-n">${i + 1}</span><b>${esc(l.h)}</b>${ico("right")}</summary><p>${esc(l.t)}</p>${l.ex.map((e) => `<div class="lesson-ex"><div class="en">${hl(e.en)}</div><div class="ko">${esc(e.ko)}</div></div>`).join("")}</details>`).join("")}
+      ${colloc}
       <div class="tip-box" style="margin-top:12px"><b>함정 주의</b> ${esc(t.trap)}</div>
       ${shut ? "" : T`<div class="gsticky" hidden><button class="btn block" data-gnext>${ico("play")}문제 풀기${nextLv ? T` · ${nextLv}단계` : ""}</button></div>`}`;
     shell("practice", body);
-    const start = (fn) => (shut ? paywall("grammar") : gAskFree(t, fn));
-    $app.querySelectorAll("[data-lv]").forEach((b) => b.addEventListener("click", () => start(() => gStepStart(t, +b.dataset.lv))));
-    $app.querySelector("[data-start]").addEventListener("click", () => start(() => startGrammarQuiz(C.lcPick(qs, S.gq, G_STEP), tr(t.title), { topic: t.id })));
+    const start = (fn) => (shut ? paywall(B.pay) : B.ask(t, fn));
+    const mix = () => startBankQuiz(B, C.lcPick(qs, st, G_STEP), tr(t.title), { topic: t.id });
+    $app.querySelectorAll("[data-lv]").forEach((b) => b.addEventListener("click", () => start(() => bankStepStart(B, t, +b.dataset.lv))));
+    $app.querySelector("[data-start]").addEventListener("click", () => start(mix));
     const tw = $app.querySelector("[data-twrong]");
-    if (tw) tw.addEventListener("click", () => start(() => startGrammarQuiz(C.shuffle(wrongQs), T`${tr(t.title)} · 틀린 문제`, { exact: true, topic: t.id })));
+    if (tw) tw.addEventListener("click", () => start(() => startBankQuiz(B, C.shuffle(wrongQs), T`${tr(t.title)} · 틀린 문제`, { exact: true, topic: t.id })));
     const gp = $app.querySelector("[data-gpick]");
-    if (gp) gp.addEventListener("click", () => gAskFree(t, () => vGrammarTopic(r)));
+    if (gp) gp.addEventListener("click", () => B.ask(t, () => vBankTopic(B, r)));
     // 강의를 읽느라 단계 버튼이 화면 밖으로 나가면 아래에 '문제 풀기' 버튼을 띄운다
     const sticky = $app.querySelector(".gsticky"), stepsEl = $app.querySelector(".gsteps");
     if (sticky && stepsEl && "IntersectionObserver" in window) {
@@ -3200,31 +3261,34 @@
         sticky.hidden = e.isIntersecting || e.boundingClientRect.top > 0;
       });
       io.observe(stepsEl);
-      sticky.querySelector("button").addEventListener("click", () => start(() => (nextLv ? gStepStart(t, nextLv) : startGrammarQuiz(C.lcPick(qs, S.gq, G_STEP), tr(t.title), { topic: t.id }))));
+      sticky.querySelector("button").addEventListener("click", () => start(() => (nextLv ? bankStepStart(B, t, nextLv) : mix())));
     }
   }
-  function startGrammarQuiz(qs, title, opt) {
+  function startGrammarQuiz(qs, title, opt) { return startBankQuiz(BANKS.gq, qs, title, opt); }
+  // 문제 풀기 (문법·어휘 공통). 문항마다 은행을 찾으므로 둘이 섞인 목록(실전 30문제 틀린 문제)도 된다
+  function startBankQuiz(B, qs, title, opt) {
     const o = opt || {};
     if (locked()) {
       if (o.timed && (S.freeUse.timed || 0) >= 1) return paywall("timed");
-      // 무료: 기초 주제 + 고른 주제 문제만. 빠진 만큼 같은 범위에서 채워 말한 문제 수를 지킨다 (틀린 문제 다시는 그대로)
-      const ok = (q) => { const g = PR._g.get(q.id); return !!g && gOpen(g.t); };
+      // 무료: 열린 주제의 문제만. 빠진 만큼 같은 범위에서 채워 말한 문제 수를 지킨다 (틀린 문제 다시는 그대로)
+      const ok = (q) => { const b = bankOfQ(q); const g = b.idx().get(q.id); return !!g && b.open(g.t); };
       const mine = qs.filter(ok);
       if (!o.exact && mine.length < qs.length) {
-        const rest = PR.grammar.filter(gOpen).flatMap((t) => t.qs.filter((q) => !q.mock && !mine.includes(q)));
-        mine.push(...C.lcPick(rest, S.gq, qs.length - mine.length));
+        const rest = B.list().filter((t) => B.open(t)).flatMap((t) => t.qs.filter((q) => !q.mock && !mine.includes(q)));
+        mine.push(...C.lcPick(rest, B.st(), qs.length - mine.length));
       }
-      if (!mine.length) return paywall("grammar");
+      if (!mine.length) return paywall(B.pay);
       qs = mine;
     }
     if (!qs.length) return toast(T`문제가 없어요`);
-    session = { kind: "gq", title, qs, i: 0, answered: null, results: [], from: location.hash, timed: o.timed || 0, topic: o.topic || null, lv: o.lv || 0 };
+    session = { kind: B.kind, title, qs, i: 0, answered: null, results: [], from: location.hash, timed: o.timed || 0, topic: o.topic || null, lv: o.lv || 0, wrongTitle: o.wrongTitle || "" };
     enterStudy();
   }
   function vGq() {
     const s = session;
     const q = s.qs[s.i];
-    const t = PR._g.get(q.id).t;
+    const B = bankOfQ(q);
+    const t = B.idx().get(q.id).t;
     const ans = s.answered;
     const opts = q.o.map((o, i) => {
       let cls = "";
@@ -3235,7 +3299,7 @@
     $app.innerHTML = T`<div class="study">${studyTop(s.i, s.qs.length)}${timer}
       <div class="quiz-q"><div class="qk">Part 5 · ${esc(tr(t.title))}${q.lv ? ` · ${LV_LABEL[q.lv]}` : ""}</div><div class="qs en">${esc(q.s).replace("-------", '<b style="color:var(--brand);letter-spacing:.05em">_______</b>')}</div></div>
       <div class="opts">${opts}</div>
-      ${ans ? T`<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? T`정답이에요!` : ans.late ? T`시간 초과 · 정답 ${LETTERS[q.a]}` : T`틀렸어요 · 정답 ${LETTERS[q.a]}`}</b>${esc(q.exp)}<div style="margin-top:8px"><a href="#/grammar/${t.id}" class="small" data-lesson>${ico("book")} '${esc(tr(t.title))}' 강의 보기</a></div></div>` : ""}
+      ${ans ? T`<div class="feedback ${ans.ok ? "ok" : "bad"}"><b class="t">${ans.ok ? T`정답이에요!` : ans.late ? T`시간 초과 · 정답 ${LETTERS[q.a]}` : T`틀렸어요 · 정답 ${LETTERS[q.a]}`}</b>${esc(q.exp)}<div style="margin-top:8px"><a href="${B.route}/${t.id}" class="small" data-lesson>${ico("book")} '${esc(tr(t.title))}' 강의 보기</a></div></div>` : ""}
       <div class="study-foot">${ans ? `<button class="btn block" data-next>${s.i + 1 >= s.qs.length ? T`결과 보기` : T`다음 문제`}</button>` : ""}<div class="kbd-hint"><kbd>1</kbd>~<kbd>4</kbd> 선택 · <kbd>Enter</kbd> 다음</div></div></div>`;
     bindExit();
     clearInterval(s.tick);
@@ -3245,8 +3309,9 @@
       const ok = i === q.a;
       s.answered = { pick: i, ok, late: i < 0, sec: s.qStart ? Math.min(s.timed || 999, Math.round((Date.now() - s.qStart) / 1000)) : 0 };
       s.results.push({ q, ok, pick: i });
-      S.gq[q.id] = C.lcRecord(S.gq[q.id], ok, today());
-      recordAnswer("rc", `p5:${t.title}`, ok);
+      const st = B.st();
+      st[q.id] = C.lcRecord(st[q.id], ok, today());
+      recordAnswer("rc", B.qt(t), ok);
       (ok ? Sfx.ok : Sfx.bad)();
       save();
       vGq();
@@ -3271,7 +3336,8 @@
     const ls = $app.querySelector("[data-lesson]");
     if (ls) ls.addEventListener("click", (e) => {
       e.preventDefault();
-      modal(T`<h3>${esc(tr(t.title))}</h3><div style="max-height:60vh;overflow-y:auto">${t.lesson.map((l) => `<div style="margin-bottom:10px"><b>${esc(l.h)}</b><p class="small" style="margin:4px 0;color:var(--text-2)">${esc(l.t)}</p>${l.ex.map((x) => `<div class="small en">${hl(x.en)}</div>${LANG === "en" ? "" : `<div class="small muted">${esc(x.ko)}</div>`}`).join("")}</div>`).join("")}<div class="tip-box small"><b>함정</b> ${esc(t.trap)}</div></div><button class="btn block" data-close style="margin-top:12px">문제로 돌아가기</button>`);
+      const cl = (t.colloc || []).length ? T`<div style="margin-bottom:10px"><b>빈출 짝 표현</b>${t.colloc.map((c) => `<div class="small"><b class="en">${esc(c.en)}</b> <span class="muted">${esc(c.ko)}</span></div>`).join("")}</div>` : "";
+      modal(T`<h3>${esc(tr(t.title))}</h3><div style="max-height:60vh;overflow-y:auto">${t.lesson.map((l) => `<div style="margin-bottom:10px"><b>${esc(l.h)}</b><p class="small" style="margin:4px 0;color:var(--text-2)">${esc(l.t)}</p>${l.ex.map((x) => `<div class="small en">${hl(x.en)}</div>${LANG === "en" ? "" : `<div class="small muted">${esc(x.ko)}</div>`}`).join("")}</div>`).join("")}${cl}<div class="tip-box small"><b>함정</b> ${esc(t.trap)}</div></div><button class="btn block" data-close style="margin-top:12px">문제로 돌아가기</button>`);
     });
     keyHandler = (e) => {
       if (e.key === "Escape") return askExit();
@@ -3279,6 +3345,187 @@
       if (s.answered && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); return next(); }
       if (!s.answered && /^[1-4]$/.test(e.key)) pick(+e.key - 1);
     };
+  }
+  // 결과 화면의 틀린 문제 한 줄: 정답을 넣은 문장(빈칸 단어 굵게) · 내 답 ✗ → 정답 ✓ · 보기 4개 · 해설
+  function p5WrongHtml(r, tag) {
+    const q = r.q, pk = r.pick != null && r.pick >= 0 ? r.pick : null;
+    return `<div class="witem gw-item" style="cursor:default"><div class="wbody">${tag ? `<div class="gw-tag">${tag}</div>` : ""}<div class="ex-en en">${esc(q.s).replace("-------", `<b class="gblank">${esc(q.o[q.a])}</b>`)}</div>
+        <div class="pw-ans">${pk == null ? T`<span class="bad">✗ ${r.pick < 0 ? T`시간 초과` : T`안 고름`}</span>` : T`<span class="bad">✗ 내 답 ${LETTERS[pk]} <span class="en">${esc(q.o[pk])}</span></span>`} → ${T`<span class="ok">✓ 정답 ${LETTERS[q.a]} <span class="en">${esc(q.o[q.a])}</span></span>`}</div>
+        <div class="gw-opts en">${q.o.map((o, i) => `<span class="${i === q.a ? "ok" : i === pk ? "bad" : ""}">${LETTERS[i]} ${esc(o)}</span>`).join("")}</div>
+        <div class="small muted" style="margin-top:6px">${esc(q.exp)}</div></div></div>`;
+  }
+
+  // ═════════════ Part 5 어휘 (유형 목록) ═════════════
+  function vVocab5(r) {
+    if (!needPractice(r)) return;
+    const B = BANKS.vq, V = B.list();
+    if (r.arg) return vBankTopic(B, r);
+    if (!V.length) return shell("practice", T`${topBar(T`Part 5 어휘`, { back: true })}<div class="empty">${ico("book")}<b>어휘 문제를 준비하고 있어요</b>곧 업데이트로 들어와요</div>`);
+    const st = S.vq, L = locked();
+    const prog = (t) => { const qs = t.qs.filter((q) => !q.mock); const done = qs.filter((q) => st[q.id]); return { n: qs.length, done: done.length, ok: done.filter((q) => !st[q.id].wrong).length }; };
+    const cats = Array.from(new Set(V.map((t) => t.cat)));
+    const fT = V.find((t) => t.id === vFreeId());
+    const wrongN = Object.keys(st).filter((k) => st[k].wrong && PR._v.has(k)).length;
+    const total = V.reduce((n, t) => n + prog(t).n, 0), doneAll = V.reduce((n, t) => n + prog(t).done, 0);
+    const nxT = V.find((t) => vOpen(t) && gNextLv(t, B));
+    const badge = (t) => {
+      const p = prog(t);
+      if (p.done === p.n && p.n) return T`<span class="badge ok">완료</span>`;
+      if (!L) return "";
+      return vOpen(t) ? T`<span class="badge free">무료</span>` : lockIco();
+    };
+    const catBar = (c) => { const ts = V.filter((t) => t.cat === c); const n = ts.reduce((a, t) => a + prog(t).n, 0), d = ts.reduce((a, t) => a + prog(t).done, 0); return `<div class="section-h gcat-h"><h2>${esc(tr(c))}</h2><span class="small muted">${d}/${n}</span></div><div class="gcat-bar"><i style="width:${n ? Math.round((d / n) * 100) : 0}%"></i></div>`; };
+    const body = T`${topBar(T`Part 5 어휘`, { back: true, sub: T`${V.length}개 유형 · 핵심 강의 + 빈출 짝 표현 + 실전 문제` })}
+      <section class="card gprog"><div class="eyebrow">추천 순서</div><b class="gprog-path">${cats.map((c) => esc(tr(c))).join(" → ")}</b>
+        <div class="gcat-bar" style="margin:10px 0 6px"><i style="width:${total ? Math.round((doneAll / total) * 100) : 0}%"></i></div><div class="small muted">${doneAll}/${total}문제 풀었어요</div>
+        ${nxT ? T`<button class="btn block" data-vcont style="margin-top:12px">${ico("play")}<span class="gcont-t">이어서: ${esc(tr(nxT.title))} ${gNextLv(nxT, B)}단계</span> ▶</button>` : ""}</section>
+      ${L ? T`<div class="free-line">${ico("lock")}<span class="spacer">무료: 1유형${fT ? ` (${esc(tr(fT.title))})` : ""}</span><a href="#/premium?from=vocab5">전체 이용권</a></div>` : ""}
+      <button class="btn ghost block" data-vmix style="margin-bottom:6px">${ico("shuffle")}어휘 랜덤 20제${L ? T` · 무료 유형에서` : ""}</button>
+      ${p5SetBtn(wrongN ? 6 : 14)}
+      ${wrongN ? T`<button class="btn ghost block" data-vwrong style="margin-bottom:14px">${ico("repeat")}틀린 어휘 문제 다시 (${wrongN})</button>` : ""}
+      ${cats.map((c) => `${catBar(c)}<div class="wlist">${V.filter((t) => t.cat === c).map((t) => { const p = prog(t); return `<a class="witem ${L && !vOpen(t) ? "is-locked" : ""}" href="#/vocab5/${t.id}"><div class="wbody"><div class="ww" style="font-size:16px">${esc(tr(t.title))}</div><div class="wm">${p.done ? T`${p.done}/${p.n}문제 · 정답 ${p.ok}` : T`${p.n}문제 · 짝 표현 ${(t.colloc || []).length}개`}</div></div>${badge(t)}${ico("right")}</a>`; }).join("")}</div>`).join("")}`;
+    shell("practice", body);
+    const vc = $app.querySelector("[data-vcont]");
+    if (vc) vc.addEventListener("click", () => bankStepStart(B, nxT, gNextLv(nxT, B)));
+    // 무료 체험: 랜덤 20제는 무료 유형에서만 뽑는다
+    $app.querySelector("[data-vmix]").addEventListener("click", () => startBankQuiz(B, C.lcPick(V.filter((t) => !L || vOpen(t)).flatMap((t) => t.qs.filter((q) => !q.mock)), st, 20), T`어휘 랜덤 20제`));
+    const wb = $app.querySelector("[data-vwrong]");
+    if (wb) wb.addEventListener("click", () => {
+      const qs = V.flatMap((t) => t.qs.filter((q) => st[q.id] && st[q.id].wrong));
+      if (!qs.length) return toast(T`틀린 어휘 문제가 없어요`);
+      startBankQuiz(B, C.shuffle(qs).slice(0, 30), T`틀린 어휘 문제`, { exact: true });
+    });
+  }
+
+  // ═════════════ Part 5 실전 30문제 (문법 15 + 어휘 15 · 10분) ═════════════
+  // 실제 시험처럼 한 번에 10분, 끝날 때까지 정답을 보여 주지 않는다. 시간이 끝나면 자동 제출(못 푼 문제는 오답)
+  const P5_N = 15, P5_SEC = 600;
+  const p5Ready = () => !!PR && (PR.vocab5 || []).length > 0 && (PR.grammar || []).length > 0;
+  const p5Used = () => locked() && (S.freeUse.p5set || 0) >= 1;
+  function p5SetBtn(mb) {
+    if (!p5Ready()) return "";
+    const used = p5Used();
+    return T`<a class="btn ghost block" href="#/p5set" data-p5btn style="margin-bottom:${mb}px">${ico(used ? "lock" : "clock")}Part 5 실전 30문제 · 10분${locked() && !used ? T` · 무료 1회` : ""}</a>`;
+  }
+  function vP5Intro(r) {
+    if (!needPractice(r)) return;
+    if (!p5Ready()) return go("#/practice");
+    const L = locked(), used = p5Used();
+    const hist = (S.p5set || []).slice().reverse();
+    const best = hist.reduce((m, x) => Math.max(m, x.ok), 0);
+    const body = T`${topBar(T`Part 5 실전 30문제`, { back: true, sub: T`문법 15 + 어휘 15 · 10분 · 실제 시험처럼` })}
+      <div class="card p5intro">
+        <div><span class="tico c-blue">${ico("clock")}</span><span><b>10분 안에 30문제</b><span class="small muted">실제 시험의 Part 5 속도 (문제당 20초)</span></span></div>
+        <div><span class="tico c-purple">${ico("eye")}</span><span><b>끝날 때까지 정답을 보여 주지 않아요</b><span class="small muted">제출하면 점수 · 문법/어휘 정답률 · 전체 해설</span></span></div>
+        <div><span class="tico c-orange">${ico("flag")}</span><span><b>시간이 끝나면 자동 제출</b><span class="small muted">못 푼 문제는 오답으로 채점해요</span></span></div>
+      </div>
+      ${L ? T`<div class="free-line">${ico("lock")}<span class="spacer">${used ? T`무료 1회를 썼어요` : T`무료 1회 · 문법 기초와 무료 어휘 유형에서 출제`}</span><a href="#/premium?from=p5set">전체 이용권</a></div>` : ""}
+      <button class="btn block" data-p5go>${ico(used ? "lock" : "play")}${hist.length ? T`다시 30문제` : T`시작하기`}${L && !used ? T` · 무료 1회` : ""}</button>
+      ${hist.length ? T`<div class="section-h" style="margin-top:22px"><h2>최근 기록</h2><span class="small muted">최고 ${best}/30</span></div>
+        <div class="card mlist">${hist.slice(0, 5).map((x) => `<div class="mrow"><span class="spacer"><b>${esc(C.ymd(x.at).slice(5).replace("-", "."))}</b><span class="small muted">${T`${C.clock(x.sec)} 사용`}</span></span><b class="mscore">${x.ok}<small>/${x.n}</small></b></div>`).join("")}</div>` : ""}`;
+    shell("practice", body);
+    $app.querySelector("[data-p5go]").addEventListener("click", startP5Set);
+  }
+  function startP5Set() {
+    if (!p5Ready()) return toast(T`문제가 없어요`);
+    if (p5Used()) return paywall("p5set");
+    const L = locked();
+    // 문법은 일반 주제(g), 무료 체험은 문법 기초(b01~b04) + 무료 어휘 유형에서
+    const flat = (ts) => ts.flatMap((t) => t.qs.filter((q) => !q.mock));
+    const g = flat(PR.grammar.filter((t) => (L ? isBasicTopic(t) : /^g/.test(t.id))));
+    const v = flat(PR.vocab5.filter((t) => vOpen(t)));
+    const items = C.p5SetPick(g, v, P5_N);
+    if (!items.length) return toast(T`문제가 없어요`);
+    const now = Date.now();
+    session = { kind: "p5set", title: T`Part 5 실전 30문제`, items, picks: items.map(() => null), i: 0, results: [], startAt: now, endAt: now + P5_SEC * 1000, from: location.hash.startsWith("#/study") ? "#/p5set" : location.hash };
+    enterStudy();
+  }
+  function vP5Run() {
+    const s = session;
+    const n = s.items.length;
+    const q = s.items[s.i].q;
+    const pick = s.picks[s.i];
+    const done = s.picks.filter((x) => x != null).length;
+    const last = s.i + 1 >= n;
+    const opts = q.o.map((o, i) => `<button class="opt ${pick === i ? "sel" : ""}" data-pick="${i}" aria-pressed="${pick === i}"><span class="on">${LETTERS[i]}</span><span class="en">${esc(o)}</span></button>`).join("");
+    const dots = s.items.map((_, i) => `<button class="p5dot ${i === s.i ? "cur" : ""} ${s.picks[i] != null ? "done" : ""}" data-jump="${i}">${i + 1}</button>`).join("");
+    const clock = `<span class="p5clock" data-p5t role="timer" aria-label="${T`남은 시간`}">${ico("clock")}<b>${C.clock((s.endAt - Date.now()) / 1000)}</b></span>`;
+    $app.innerHTML = T`<div class="study p5run">${studyTop(s.i, n, clock)}
+      <div class="quiz-q"><div class="qk">Part 5 · ${s.i + 1}번</div><div class="qs en">${esc(q.s).replace("-------", '<b style="color:var(--brand);letter-spacing:.05em">_______</b>')}</div></div>
+      <div class="opts">${opts}</div>
+      <details class="p5map" ${ui.p5map ? "open" : ""}><summary>${ico("list")}<span class="spacer">문제 목록</span><span class="small muted">${done}/${n} 풀었어요</span></summary><div class="p5dots">${dots}</div></details>
+      <div class="study-foot"><div class="row p5nav"><button class="btn ghost" data-prev ${s.i ? "" : "disabled"}>${ico("left")}이전</button><button class="btn" data-next>${last ? T`제출하기` : T`다음`}${last ? "" : ico("right")}</button></div>
+      ${last ? "" : T`<button class="btn ghost block sm" data-submit style="margin-top:8px">지금 제출하기 · ${done}/${n}</button>`}<div class="kbd-hint"><kbd>1</kbd>~<kbd>4</kbd> 선택 · <kbd>Enter</kbd> 다음 · <kbd>←</kbd> 이전</div></div></div>`;
+    bindExit();
+    const tick = () => {
+      if (session !== s || s.done) return clearInterval(s.tick);
+      const left = (s.endAt - Date.now()) / 1000;
+      const el = $app.querySelector("[data-p5t]");
+      if (el) { el.querySelector("b").textContent = C.clock(Math.ceil(left)); el.classList.toggle("warn", left <= 60); }
+      if (left <= 0) { closeModal(); p5Submit(s, true); }
+    };
+    if (!s.tick) s.tick = setInterval(tick, 250);
+    tick();
+    if (s.done) return;
+    const goTo = (i) => { s.i = Math.max(0, Math.min(n - 1, i)); vP5Run(); };
+    const choose = (i) => { s.picks[s.i] = i; vP5Run(); };
+    const ask = () => {
+      const blank = s.picks.filter((x) => x == null).length;
+      if (!blank) return p5Submit(s);
+      confirmBox(T`제출할까요?`, T`아직 안 푼 문제가 ${blank}개 있어요. 안 푼 문제는 오답으로 채점돼요.`, T`제출하기`).then((ok) => { if (ok && session === s) p5Submit(s); });
+    };
+    const next = () => (last ? ask() : goTo(s.i + 1));
+    $app.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", () => choose(+b.dataset.pick)));
+    $app.querySelectorAll("[data-jump]").forEach((b) => b.addEventListener("click", () => goTo(+b.dataset.jump)));
+    $app.querySelector("[data-next]").addEventListener("click", next);
+    $app.querySelector("[data-prev]").addEventListener("click", () => goTo(s.i - 1));
+    const sb = $app.querySelector("[data-submit]");
+    if (sb) sb.addEventListener("click", ask);
+    const mp = $app.querySelector(".p5map");
+    mp.addEventListener("toggle", () => { ui.p5map = mp.open; });
+    keyHandler = (e) => {
+      if (e.key === "Escape") return askExit();
+      if (onControl(e)) return;
+      if (/^[1-4]$/.test(e.key)) return choose(+e.key - 1);
+      if (e.key === "Enter") { e.preventDefault(); return next(); }
+      if (e.key === "ArrowLeft") return goTo(s.i - 1);
+      if (e.key === "ArrowRight" && !last) return goTo(s.i + 1);
+    };
+  }
+  // 채점·기록: 문항마다 은행 기록(S.gq · S.vq)과 유형별 정답률·예상 점수에 넣는다
+  function p5Submit(s, auto) {
+    if (s.done || session !== s) return;
+    clearInterval(s.tick);
+    s.sec = Math.min(P5_SEC, Math.round((Date.now() - s.startAt) / 1000));
+    s.auto = !!auto;
+    s.score = C.p5SetScore(s.items, s.picks);
+    s.items.forEach((it, i) => {
+      const B = it.k === "v" ? BANKS.vq : BANKS.gq;
+      const g = B.idx().get(it.q.id);
+      const ok = s.picks[i] === it.q.a;
+      const st = B.st();
+      st[it.q.id] = C.lcRecord(st[it.q.id], ok, today());
+      if (g) recordAnswer("rc", B.qt(g.t), ok);
+      s.results.push({ q: it.q, ok, pick: s.picks[i], k: it.k, t: g && g.t });
+    });
+    S.p5set = (S.p5set || []).concat({ at: today(), ok: s.score.ok, n: s.score.n, sec: s.sec }).slice(-30);
+    S.freeUse.p5set = (S.freeUse.p5set || 0) + 1;
+    finishSession();
+    if (auto) toast(T`시간이 끝나 자동으로 제출했어요`);
+  }
+  function p5ResultHtml(s) {
+    const r = s.score;
+    const col = (p) => (p >= 80 ? "var(--ok)" : p >= 60 ? "var(--accent)" : "var(--bad)");
+    const hero = T`<div class="result-hero"><div class="score" style="color:${col(r.pct)}">${r.ok}<small>/${r.n}</small></div><div class="msg">${r.pct >= 90 ? T`실전 감각이 좋아요!` : r.pct >= 70 ? T`조금만 더 하면 돼요` : T`약한 쪽 강의부터 다시 봐요`}</div><p class="muted">${T`정답률 ${r.pct}%`} · ${T`${C.clock(s.sec)} 사용`}${s.auto ? T` · 시간 종료` : ""}${r.blank ? T` · 못 푼 문제 ${r.blank}개` : ""}</p></div>`;
+    const row = (label, x, href) => T`<div class="weak"><div class="spacer"><b>${label}</b><div class="small muted">${x.ok}/${x.n} 정답</div></div><div class="wbar"><i style="width:${x.pct}%;background:${col(x.pct)}"></i></div><b class="wpct">${x.pct}%</b><a class="btn ghost sm" href="${href}" data-p5part>강의</a></div>`;
+    const weaker = r.g.pct === r.v.pct ? T`둘 다 비슷해요` : r.g.pct < r.v.pct ? T`문법이 더 약해요` : T`어휘가 더 약해요`;
+    const split = T`<div class="section-h" style="margin-top:4px"><h2>문법 vs 어휘</h2><span class="small muted">${weaker}</span></div><div class="card p5split">${row(T`문법`, r.g, "#/grammar")}${row(T`어휘`, r.v, "#/vocab5")}</div>`;
+    const wrong = s.results.filter((x) => !x.ok);
+    s._p5Wrong = wrong.map((x) => x.q);
+    const list = wrong.map((x) => p5WrongHtml(x, `${x.k === "v" ? T`어휘` : T`문법`}${x.t ? ` · ${esc(tr(x.t.title))}` : ""}`)).join("");
+    const again = T`<button class="btn block" style="margin-top:14px" data-p5again>${ico(p5Used() ? "lock" : "repeat")}다시 30문제</button>`;
+    const retry = wrong.length ? T`<button class="btn ghost block" style="margin-top:10px" data-p5wrong>${ico("alert")}틀린 문제 다시 (${wrong.length})</button>` : "";
+    return { hero, list, actions: `${split}${again}${retry}` };
   }
 
   // ═════════════ 받아쓰기 ═════════════
@@ -3772,10 +4019,12 @@
     const fd = CONFIG.premium.freeDays;
     const freeWords = WORDS.filter((w) => w.d <= fd).length;
     const g = PR && PR.grammar, nb = g ? g.filter(isBasicTopic).length : 0;
+    const v5 = (PR && PR.vocab5) || [];
     const rows = [
       [T`단어`, T`Day 1~${fd} · ${freeWords}개`, T`${NDAYS}일 · ${NWORDS}개`],
       [T`파트별 실전`, T`1세트씩`, T`전부`],
       [T`문법`, g ? T`기초 ${nb}주제 + 1주제` : T`기초 + 1주제`, g ? T`${g.length}주제 · ${g.reduce((a, t) => a + t.qs.length, 0).toLocaleString()}문제` : T`전부`],
+      ...(!PR || v5.length ? [[T`Part 5 어휘`, T`1유형`, v5.length ? T`${v5.length}유형 ${v5.reduce((a, t) => a + t.qs.length, 0).toLocaleString()}문제` : T`전부`]] : []),
       [T`모의고사`, T`하프 1회`, PR ? ((PR.full || []).length ? T`정규 ${PR.full.length}회 + 하프 ${allHalves().length}회` : T`하프 ${allHalves().length}회`) : T`정규 + 하프 전부`],
       [T`LC 퀴즈·받아쓰기`, T`1회씩`, T`무제한`],
       [T`실력 진단`, ico("check"), ico("check")],
@@ -3941,6 +4190,8 @@
   // 검색: 단어와 함께 문법 주제·기능 바로 가기도 찾는다 ("문법", "part 5", "모의고사", "받아쓰기" 등)
   const FEATURES = [
     [["문법", "grammar", "part5", "파트5", "어법"], "#/grammar", "book", T`Part 5 문법`, T`주제별 강의 + 실전 문제`],
+    [["어휘", "vocab", "콜로케이션", "collocation", "짝 표현", "part5", "파트5"], "#/vocab5", "sparkle", T`Part 5 어휘`, T`유형별 강의 + 빈출 짝 표현 + 실전 문제`],
+    [["실전 30", "30문제", "part5", "파트5", "실전", "시간"], "#/p5set", "clock", T`Part 5 실전 30문제 · 10분`, T`문법 15 + 어휘 15를 실제 시험처럼`],
     [["모의고사", "mock", "시험", "test", "하프", "정규"], "#/mock", "clock", T`모의고사`, T`하프·정규 모의고사로 예상 점수`],
     [["받아쓰기", "dictation", "딕테이션", "쉐도잉"], "#/dict", "pencil", T`받아쓰기`, T`LC 문장을 듣고 그대로 쓰기`],
     [["진단", "실력", "diagnos", "레벨"], "#/diag", "gauge", T`실력 진단 (약 12분)`, T`20문제로 예상 점수와 약한 파트 확인`],
@@ -3971,9 +4222,11 @@
       const hit = (txt) => qn.length >= 1 && txt.toLowerCase().replace(/\s+/g, "").includes(qn);
       const feats = qn.length >= 2 ? FEATURES.filter(([keys, , , label]) => keys.some((k) => k.includes(qn) || (qn.length >= 2 && qn.includes(k))) || hit(label)).slice(0, 4) : [];
       const topics = qn.length >= 2 && PR ? (PR.grammar || []).filter((t) => hit(tr(t.title)) || hit(tr(t.cat)) || hit(t.title)).slice(0, 6) : [];
+      const vtopics = qn.length >= 2 && PR ? (PR.vocab5 || []).filter((t) => hit(tr(t.title)) || hit(t.title) || (t.colloc || []).some((c) => hit(c.en))).slice(0, 6) : [];
       const link = (href, ic, t, d) => `<a class="witem s-link" href="${href}"><span class="tico c-blue">${ico(ic)}</span><div class="wbody"><div class="ww" style="font-size:16px">${t}</div><div class="wm">${d}</div></div>${ico("right")}</a>`;
       const extra = (feats.length ? T`<div class="s-h small muted">바로 가기</div><div class="wlist">${feats.map(([, h, ic, t, d]) => link(h, ic, t, d)).join("")}</div>` : "")
-        + (topics.length ? T`<div class="s-h small muted">문법 주제</div><div class="wlist">${topics.map((t) => link(`#/grammar/${t.id}`, "book", esc(tr(t.title)), T`${esc(tr(t.cat))} · 문제 ${t.qs.filter((x) => !x.mock).length}개`)).join("")}</div>` : "");
+        + (topics.length ? T`<div class="s-h small muted">문법 주제</div><div class="wlist">${topics.map((t) => link(`#/grammar/${t.id}`, "book", esc(tr(t.title)), T`${esc(tr(t.cat))} · 문제 ${t.qs.filter((x) => !x.mock).length}개`)).join("")}</div>` : "")
+        + (vtopics.length ? T`<div class="s-h small muted">Part 5 어휘 유형</div><div class="wlist">${vtopics.map((t) => link(`#/vocab5/${t.id}`, "sparkle", esc(tr(t.title)), T`짝 표현 ${(t.colloc || []).length}개 · 문제 ${t.qs.length}개`)).join("")}</div>` : "");
       document.getElementById("sres").innerHTML = q
         ? res.length || extra ? extra + (res.length ? T`<div class="s-h small muted">단어 ${res.length}개</div><div class="wlist">${res.map(wordItem).join("")}</div>` : "") : T`<div class="empty">${ico("search")}<b>검색 결과가 없어요</b>철자를 확인하거나 다른 뜻으로 찾아보세요</div>`
         : T`<div class="empty">${ico("book")}<b>${NWORDS}개 토익 단어에서 찾아요</b>파생어·동의어·한국어 뜻으로도 검색돼요. "문법", "모의고사", "받아쓰기"처럼 기능 이름도 찾을 수 있어요</div>`;
@@ -4345,7 +4598,7 @@
       } catch (e) { if (announce) toast(T`구매 내역을 확인하지 못했어요`); return null; }
     },
   };
-  const PAY_REASON = { set: T`무료 범위는 파트마다 1세트까지예요`, grammar: T`무료 범위는 문법 기초와 1주제까지예요`, lc: T`무료 범위는 LC 퀴즈 1회까지예요`, dict: T`무료 범위는 받아쓰기 1회까지예요`, mock: T`무료 범위는 하프 모의고사 1회까지예요`, day: T`무료 범위는 Day 1~${CONFIG.premium.freeDays}까지예요`, full: T`정규 모의고사는 전체 이용권에서 풀 수 있어요`, timed: T`시간 압박 훈련은 전체 이용권에서 쓸 수 있어요` };
+  const PAY_REASON = { set: T`무료 범위는 파트마다 1세트까지예요`, grammar: T`무료 범위는 문법 기초와 1주제까지예요`, lc: T`무료 범위는 LC 퀴즈 1회까지예요`, dict: T`무료 범위는 받아쓰기 1회까지예요`, mock: T`무료 범위는 하프 모의고사 1회까지예요`, day: T`무료 범위는 Day 1~${CONFIG.premium.freeDays}까지예요`, full: T`정규 모의고사는 전체 이용권에서 풀 수 있어요`, timed: T`시간 압박 훈련은 전체 이용권에서 쓸 수 있어요`, vocab5: T`무료 범위는 Part 5 어휘 1유형까지예요`, p5set: T`Part 5 실전 30문제는 무료로 1회 풀 수 있어요` };
   // 구매·가격 다시 받기 버튼은 결제 화면과 진단 결과 화면에 함께 있어서 한곳에서 받는다
   $app.addEventListener("click", (e) => {
     const t = e.target.closest("[data-buy],[data-iap-retry]");

@@ -516,3 +516,38 @@ test("다국어: 번역 키(data/i18n/src.ko.json)가 데이터의 그 자리 �
     ns.forEach((n, i) => assert.ok(n === i || ns.includes(i), `자리 번호 ${k.slice(0, 40)}`));
   }
 });
+
+test("pickByLevel: Part 5 실전 — 보통 난이도 위주로, 모자라면 다른 난이도로 채운다", () => {
+  const mk = (p: string, lv: number, n: number) => Array.from({ length: n }, (_, i) => ({ id: `${p}-${lv}-${i}`, lv, a: 0 }));
+  const items = [...mk("g", 1, 20), ...mk("g", 2, 20), ...mk("g", 3, 20)];
+  const got = C.pickByLevel(items, 15, C.rng(3));
+  const cnt = (lv: number) => got.filter((q: any) => q.lv === lv).length;
+  assert.equal(got.length, 15);
+  assert.equal(new Set(got.map((q: any) => q.id)).size, 15);
+  assert.deepEqual([cnt(1), cnt(2), cnt(3)], [4, 7, 4]);
+  assert.ok(cnt(2) >= cnt(1) && cnt(2) > cnt(3));
+  // 보통 난이도가 3개뿐이면 나머지에서 채워 15개를 지킨다
+  const few = [...mk("g", 1, 20), ...mk("g", 2, 3), ...mk("g", 3, 20)];
+  assert.equal(C.pickByLevel(few, 15, C.rng(1)).length, 15);
+  assert.equal(C.pickByLevel(mk("g", 2, 4), 15, C.rng(1)).length, 4);
+});
+
+test("p5SetPick · p5SetScore: 문법 15 + 어휘 15를 섞고, 안 푼 문제는 오답", () => {
+  const mk = (p: string, n: number) => Array.from({ length: n }, (_, i) => ({ id: `${p}${i}`, lv: (i % 3) + 1, a: i % 4 }));
+  const set = C.p5SetPick(mk("g", 60), mk("v", 60), 15, C.rng(7));
+  assert.equal(set.length, 30);
+  assert.equal(set.filter((x: any) => x.k === "g").length, 15);
+  assert.equal(set.filter((x: any) => x.k === "v").length, 15);
+  assert.ok(set.slice(0, 15).some((x: any) => x.k === "v"), "섞여 있다");
+  const picks = set.map((x: any, i: number) => (i < 10 ? x.q.a : i < 20 ? (x.q.a + 1) % 4 : null));
+  const r = C.p5SetScore(set, picks);
+  assert.equal(r.ok, 10);
+  assert.equal(r.n, 30);
+  assert.equal(r.blank, 10);
+  assert.equal(r.g.n + r.v.n, 30);
+  assert.equal(r.g.ok + r.v.ok, 10);
+  assert.equal(r.pct, 33);
+  assert.equal(C.clock(600), "10:00");
+  assert.equal(C.clock(59.4), "0:59");
+  assert.equal(C.clock(-3), "0:00");
+});
