@@ -190,7 +190,8 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   const hero = await q.textContent(".result-hero");
   ok(/진단 20문제/.test(hero), "diagnostic result shown");
   const buy = await q.textContent("[data-buy]"), free = await q.textContent("[data-free]");
-  ok(buy.includes("전체 열기") && buy.includes("출시 할인") && free.includes("무료로 3일 먼저 써 보기"), `offer buttons: ${buy} / ${free}`);
+  const note = await q.textContent(".offer .small"), onSale = new Date().toISOString().slice(0, 10) <= "2026-12-31";
+  ok(buy.includes("전체 열기") && free.includes("무료로 3일 먼저 써 보기") && (onSale ? buy.includes("₩9,900") && buy.includes("₩6,900") && note.includes("출시 할인") : buy.includes("₩9,900") && !note.includes("출시 할인")), `offer buttons: ${buy} / ${note} / ${free}`);
   ok(await q.evaluate(() => !!window.__toeicfit.state.diag && !window.__toeicfit.state.mock.d), "diag stored separately from mocks");
   await q.click("[data-free]"); await q.waitForTimeout(300);
   ok(q.url().endsWith("#/home") && !(await q.$('[data-go="diag"]')), "free trial → home, diagnostic task gone");
