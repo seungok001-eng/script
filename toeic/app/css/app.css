@@ -945,4 +945,128 @@ html:lang(en) .ex-ko, html:lang(en) .ko, html:lang(en) .qsub, html:lang(en) [dat
 /* ---- */
 
 /* ==== UX 개선 D: 실전 ==== */
+/* 무료/잠금 표시 */
+.badge.free { background: var(--ok-soft); color: var(--ok); }
+.lock-ic { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 8px; background: var(--bg-sunk); color: var(--text-3); flex-shrink: 0; }
+.lock-ic .ico { width: 14px; height: 14px; }
+.tile { position: relative; }
+.tile > .lock-ic, .tile > .tbadge { position: absolute; top: 10px; right: 10px; margin: 0; }
+.tile > .tbadge { font-size: 11px; height: 20px; color: var(--ok); }
+.witem.is-locked .wbody, .witem.is-locked .p1thumb { opacity: 0.55; }
+.set-end { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex-shrink: 0; }
+.free-line { display: flex; align-items: center; gap: 8px; padding: 10px 12px; margin-bottom: 10px; border-radius: var(--r-m); background: var(--bg-elev); border: 1px dashed var(--line-strong); font-size: 13.5px; font-weight: 650; color: var(--text-2); }
+.free-line > .ico { width: 16px; height: 16px; color: var(--text-3); flex-shrink: 0; }
+.free-line a { color: var(--brand); font-weight: 750; white-space: nowrap; }
+/* 실전 홈: 오늘 추천 · 외우기 묶음 */
+.rec-card { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; padding: 14px 14px 14px 16px; margin: 0 0 12px; border-radius: var(--r-l); background: var(--bg-elev); border: 1.5px solid color-mix(in srgb, var(--brand) 45%, var(--line)); box-shadow: var(--shadow-1); color: var(--text); }
+.rec-card .spacer { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.rec-card .eyebrow { font-size: 12px; font-weight: 800; color: var(--brand); }
+.rec-card b { font-size: 16px; font-weight: 800; letter-spacing: -0.02em; }
+.rec-card .small { color: var(--text-3); }
+.rec-go { width: 40px; height: 40px; border-radius: 50%; background: var(--brand); color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.rec-go .ico { width: 18px; height: 18px; }
+.rec-card:active { transform: scale(0.99); }
+.memo { margin: 18px 0 14px; }
+.memo > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: var(--r-m); background: var(--bg-sunk); }
+.memo > summary::-webkit-details-marker { display: none; }
+.memo > summary .spacer { display: flex; flex-direction: column; min-width: 0; }
+.memo > summary b { font-size: 16px; font-weight: 750; }
+.memo > summary > .ico { width: 18px; height: 18px; color: var(--text-3); transition: transform .15s; }
+.memo[open] > summary > .ico { transform: rotate(90deg); }
+.p2stat { display: flex; justify-content: space-around; text-align: center; padding: 14px; }
+.p2stat b { display: block; font-size: 22px; font-weight: 800; }
+.p2stat span { font-size: 12px; color: var(--text-3); }
+/* 세트 풀기: 타이머·지문/문제 이동을 같이 위에 붙인다 */
+.pset-sticky { position: sticky; top: 0; z-index: 7; background: var(--bg); padding: 4px 0 2px; margin: 0 -2px; }
+.pset-sticky .qtimer { margin-bottom: 4px; }
+.pset-sticky .jumpbar { position: static; padding: 2px 0 4px; background: none; }
+/* Part 3·4 얇은 플레이어 (연습 중 위에 붙음) */
+.lp-wrap { position: sticky; top: 0; z-index: 7; margin: 0 -4px 10px; padding: 4px 4px 0; background: var(--bg); }
+.lplayer.lp-thin { gap: 8px; padding: 8px 8px 8px 10px; border-radius: var(--r-m); }
+.lp-thin .spacer { min-width: 0; }
+.lp-thin b { font-size: 14px; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lp-thin .lp-prog { font-weight: 600; color: var(--text-3); font-size: 12.5px; margin-left: 2px; }
+.lp-thin .lp-sub { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 12px; }
+.lp-btn { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; min-width: 44px; height: 42px; padding: 0 4px; border-radius: 10px; background: var(--bg-sunk); color: var(--text-2); font-size: 13px; font-weight: 800; flex-shrink: 0; }
+.lp-btn .ico { width: 16px; height: 16px; }
+.lp-btn small { font-size: 9.5px; font-weight: 650; color: var(--text-3); line-height: 1.1; white-space: nowrap; }
+.lp-btn.rate.on { background: var(--brand-soft); color: var(--brand); }
+.lp-btn.rate.on small { color: var(--brand); }
+.lp-bar { height: 3px; margin: 4px 10px 0; border-radius: 2px; background: var(--bg-sunk); overflow: hidden; }
+.lp-bar i { display: block; height: 100%; background: var(--brand); transition: width .3s; }
+.coach.sm { font-size: 12.5px; padding: 8px 10px; margin: 0 0 10px; gap: 8px; }
+.coach.sm .coach-i .ico { width: 16px; height: 16px; }
+.coach.sm .coach-ok { padding: 4px 10px; font-size: 12px; }
+@media (max-width: 370px) { .lp-btn { min-width: 40px; } .lplayer.lp-thin .play { width: 34px; height: 34px; } }
+/* Part 7 근거: 고른 문제의 근거만 · Q 번호 · 문제로 돌아가기 */
+.evtag { display: inline-block; font-size: 10.5px; font-weight: 850; line-height: 1; padding: 3px 5px; margin-right: 4px; border-radius: 5px; background: var(--warn); color: #fff; vertical-align: 2px; font-family: inherit; letter-spacing: 0; text-decoration: none; }
+.ev-back { position: fixed; right: 16px; bottom: calc(92px + var(--safe-b)); z-index: 20; display: inline-flex; align-items: center; gap: 4px; height: 38px; padding: 0 14px 0 10px; border-radius: 19px; background: var(--text); color: var(--bg); font-size: 13.5px; font-weight: 800; box-shadow: var(--shadow-2); }
+.ev-back .ico { width: 16px; height: 16px; }
+@media (min-width: 1000px) { .ev-back { display: none; } }
+/* 결과: 틀린 문제 목록 */
+.pw-item { align-items: center; }
+.pw-item > .ico { width: 18px; height: 18px; color: var(--text-3); flex-shrink: 0; }
+.pw-ans { margin-top: 5px; font-size: 13.5px; font-weight: 700; color: var(--text-3); }
+.pw-ans .bad { color: var(--bad); }
+.pw-ans .ok { color: var(--ok); }
+.gblank { color: var(--ok); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.gw-opts { display: flex; flex-wrap: wrap; gap: 4px 6px; margin-top: 6px; }
+.gw-opts span { font-size: 13px; padding: 2px 8px; border-radius: 6px; background: var(--bg-sunk); color: var(--text-2); }
+.gw-opts span.ok { background: var(--ok-soft); color: var(--ok); font-weight: 700; }
+.gw-opts span.bad { background: var(--bad-soft); color: var(--bad); text-decoration: line-through; }
+/* 문법 목록·주제 */
+.gprog { margin-bottom: 12px; }
+.gprog .eyebrow { font-size: 12px; font-weight: 800; color: var(--brand); }
+.gprog-path { display: block; font-size: 16px; font-weight: 800; margin-top: 2px; }
+.gcont-t { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gcat-h { margin-top: 18px; margin-bottom: 6px; }
+.gcat-bar { height: 5px; border-radius: 3px; background: var(--bg-sunk); overflow: hidden; margin: 0 2px 10px; }
+.gcat-bar i { display: block; height: 100%; background: var(--ok); border-radius: 3px; }
+.glock { margin-bottom: 14px; }
+.glock > b { display: flex; align-items: center; gap: 6px; font-size: 15px; }
+.glock > b .ico { width: 16px; height: 16px; }
+.glock p { margin: 6px 0 12px; line-height: 1.5; }
+.gstep.rec { background: color-mix(in srgb, var(--brand) 6%, transparent); box-shadow: inset 3px 0 0 var(--brand); }
+.lesson-acc > summary { list-style: none; cursor: pointer; margin: 0; }
+.lesson-acc > summary::-webkit-details-marker { display: none; }
+.lesson-acc > summary b { flex: 1; }
+.lesson-acc > summary > .ico { width: 18px; height: 18px; color: var(--text-3); transition: transform .15s; flex-shrink: 0; }
+.lesson-acc[open] > summary { margin-bottom: 8px; }
+.lesson-acc[open] > summary > .ico { transform: rotate(90deg); }
+.lesson-acc { padding-top: 14px; padding-bottom: 14px; }
+.gsticky { position: fixed; left: 0; right: 0; bottom: calc(var(--nav-h) + var(--safe-b) + 10px); z-index: 25; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.gsticky .btn { box-shadow: var(--shadow-3); }
+@media (min-width: 960px) { .gsticky { left: var(--side-w); bottom: 20px; padding: 0 32px; } }
+/* 모의고사 목록 */
+.mnext { margin-top: 4px; }
+.mnext .eyebrow { font-size: 12px; font-weight: 800; color: var(--brand); }
+.mnext-t { display: block; font-size: 18px; font-weight: 800; margin: 2px 0 2px; }
+.mlist .mrow { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); color: var(--text); background: transparent; font: inherit; }
+.mlist .mrow:last-child { border-bottom: 0; }
+.mrow .spacer { display: flex; flex-direction: column; min-width: 0; }
+.mrow b { font-size: 15px; font-weight: 750; }
+.mrow > .ico { width: 16px; height: 16px; color: var(--text-3); }
+.mrow .mscore { font-size: 17px; color: var(--brand); font-variant-numeric: tabular-nums; }
+.mscore small { font-size: 12px; margin-left: 1px; }
+.mtip { margin-top: 18px; }
+.mtip > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--text-2); padding: 8px 2px; }
+.mtip > summary::-webkit-details-marker { display: none; }
+.mtip > summary .ico { width: 16px; height: 16px; }
+/* 표현 목록: 외움 표시 · 쪽 넘기기 · 연속 듣기 */
+.ex-side { display: flex; flex-direction: column; align-items: center; gap: 8px; flex-shrink: 0; }
+.exk { display: flex; flex-direction: column; align-items: center; gap: 1px; width: 46px; padding: 4px 0; border-radius: 10px; color: var(--text-3); background: var(--bg-sunk); }
+.exk .ico { width: 16px; height: 16px; }
+.exk small { font-size: 10px; font-weight: 700; white-space: nowrap; }
+.exk.on { background: var(--ok-soft); color: var(--ok); }
+.witem.is-known .ex-en { color: var(--text-2); }
+.pager { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 12px; }
+.pager .btn .ico { width: 16px; height: 16px; }
+.listen-fab { position: sticky; bottom: calc(var(--nav-h) + var(--safe-b) + 10px); z-index: 20; margin-top: 14px; }
+.listen-fab .btn { box-shadow: var(--shadow-3); }
+.listen-fab .btn.on { background: var(--text); color: var(--bg); }
+@media (min-width: 960px) { .listen-fab { bottom: 20px; } }
+/* 받아쓰기 힌트 */
+.dict-hint { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: var(--bg-sunk); text-align: left; }
+.dict-hint .en { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 15px; letter-spacing: .04em; line-height: 1.7; word-spacing: .2em; overflow-wrap: anywhere; }
+.btn.sm.on { background: var(--brand-soft); color: var(--brand); }
 /* (D 끝) */
