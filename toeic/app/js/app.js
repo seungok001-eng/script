@@ -62,7 +62,7 @@
   const BRAND = { name: T`토익핏`, short: T`토익핏`, en: "ToeicFit" };
   // 사업자 정보 (전자상거래법 표시 사항) — 사업자등록증·D-U-N-S·Play Console 과 같아야 한다
   const BIZ = {
-    name: "윤랩", ceo: "윤강희", ceoEn: "Ganghui Yun", regNo: "725-10-03366", mailOrder: "제2026-충남 천안-2290호",
+    name: "윤랩", nameEn: "YUNLAB", ceo: "윤강희", ceoEn: "Ganghui Yun", regNo: "725-10-03366", mailOrder: "제2026-충남 천안-2290호",
     addrKo: "충청남도 천안시 동남구 풍세로 933, 1002동 1805호",
     addrEn: "1805-ho, 1002-dong, 933, Pungse-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do, Republic of Korea",
     email: "seungok001@gmail.com", phone: "010-2498-5741",
@@ -3120,7 +3120,7 @@
       <button class="btn block" data-buy>${ico("crown")}${buyLabel()}</button>
       <div class="small muted" style="text-align:center;margin-top:6px">${saleNote()}${CONFIG.premium.priceNote}</div>
       <button class="btn ghost block" style="margin-top:10px" data-free>무료로 ${CONFIG.premium.freeDays}일 먼저 써 보기</button>
-    </section>` + `<p class="small muted biz-mini">${esc(BIZ.name)} · ${T`대표자`} ${esc(LANG === "ko" ? BIZ.ceo : BIZ.ceoEn)} · ${T`사업자등록번호`} ${esc(BIZ.regNo)} · ${esc(BIZ.email)}</p>`;
+    </section>` + `<p class="small muted biz-mini">${esc(LANG === "ko" ? BIZ.name : BIZ.nameEn)} · ${T`대표자`} ${esc(LANG === "ko" ? BIZ.ceo : BIZ.ceoEn)} · ${T`사업자등록번호`} ${esc(BIZ.regNo)} · ${esc(BIZ.email)}</p>`;
   }
   function diagResultHtml(s) {
     const { est, parts } = s.result;
@@ -3399,7 +3399,7 @@
     const row = (k, v) => v ? `<div class="biz-row"><span>${k}</span><span>${v}</span></div>` : "";
     const ftc = `https://www.ftc.go.kr/bizCommPop.do?wrkr_no=${BIZ.regNo.replace(/-/g, "")}`;
     return `<details class="biz"><summary>${T`사업자 정보`}</summary><div class="biz-body">
-      ${row(T`상호`, esc(BIZ.name))}${row(T`대표자`, esc(LANG === "ko" ? BIZ.ceo : BIZ.ceoEn))}${row(T`사업자등록번호`, esc(BIZ.regNo))}
+      ${row(T`상호`, esc(LANG === "ko" ? BIZ.name : `${BIZ.nameEn} (${BIZ.name})`))}${row(T`대표자`, esc(LANG === "ko" ? BIZ.ceo : BIZ.ceoEn))}${row(T`사업자등록번호`, esc(BIZ.regNo))}
       ${row(T`통신판매업 신고번호`, esc(BIZ.mailOrder))}${row(T`주소`, esc(LANG === "ko" ? BIZ.addrKo : BIZ.addrEn))}
       ${row(T`전화`, esc(LANG === "ko" ? BIZ.phone : BIZ.phone.replace(/^0/, "+82 ")))}${row(T`이메일`, `<a href="mailto:${BIZ.email}">${esc(BIZ.email)}</a>`)}
       <a class="biz-link" href="${ftc}" target="_blank" rel="noopener">${T`사업자 정보 확인`} ↗</a>
