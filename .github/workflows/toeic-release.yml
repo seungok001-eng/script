@@ -103,7 +103,11 @@ jobs:
         run: |
           if [ -n "$KS_B64" ]; then
             # 윈도우에서 복사하면 줄바꿈(\r\n)·공백이 섞여 들어온다 — 지우고 푼다
-            printf '%s' "$KS_B64" | tr -d ' \r\n\t' | base64 -d > "$RUNNER_TEMP/upload.jks"
+            # base64 글자(A-Z a-z 0-9 + / =)만 남긴다. 진단: 길이만 찍는다(내용은 찍지 않는다)
+            CLEAN="$(printf '%s' "$KS_B64" | tr -cd 'A-Za-z0-9+/=')"
+            echo "키 글자 수: 원래 ${#KS_B64} · 정리 후 ${#CLEAN} (보통 2,000~4,000자, 4의 배수여야 함: 나머지 $(( ${#CLEAN} % 4 )))"
+            printf '%s' "$CLEAN" | base64 -d > "$RUNNER_TEMP/upload.jks" || { echo "::error::TOEICFIT_KEYSTORE_BASE64 가 키 파일을 base64 로 바꾼 글자가 아닙니다. PowerShell 명령으로 다시 복사해 넣어 주세요."; exit 1; }
+            echo "키 파일 크기: $(stat -c %s "$RUNNER_TEMP/upload.jks") 바이트"
             export TOEICFIT_KEYSTORE="$RUNNER_TEMP/upload.jks"
             # 서명 확인용: 업로드 키 인증서 지문(공개 정보). PC 의 keytool -list -v 결과와 같아야 한다
             keytool -list -v -keystore "$TOEICFIT_KEYSTORE" -storepass "$TOEICFIT_KEYSTORE_PASSWORD" -alias "$TOEICFIT_KEY_ALIAS" | grep -E "SHA-?256" | sed 's/^/업로드 키 /'
