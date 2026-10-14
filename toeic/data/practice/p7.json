@@ -7346,12 +7346,12 @@
    {
     "doc": "송장",
     "paras": [
-     "Quickmark Printing - Invoice #40917 - Customer: Haverly Dental Group - Invoice date: March 3",
+     "Quickmark Printing - Invoice #40917 - Customer: Pinewhistle Garden Center - Invoice date: March 3",
      "Payment is due within 30 days. Customers who pay within 10 days of the invoice date receive a 5 percent discount.",
      "Rush processing guarantees delivery within two business days."
     ],
     "ko": [
-     "퀵마크 인쇄 - 송장 번호 40917 - 고객: 해벌리 치과 그룹 - 발행일: 3월 3일",
+     "퀵마크 인쇄 - 송장 번호 40917 - 고객: 파인휘슬 가든 센터 - 발행일: 3월 3일",
      "대금은 30일 이내에 지불해 주십시오. 송장 발행일로부터 10일 이내에 지불하시는 고객께는 5퍼센트를 할인해 드립니다.",
      "긴급 처리 시 영업일 기준 2일 이내 배송을 보장합니다."
     ],
@@ -7366,19 +7366,19 @@
      ],
      "rows": [
       [
-       "Business cards (two-sided)",
+       "Plant care tags",
        "500",
        "$0.12",
        "$60.00"
       ],
       [
-       "Appointment reminder cards",
+       "Loyalty stamp cards",
        "1,000",
        "$0.09",
        "$90.00"
       ],
       [
-       "Tri-fold brochures",
+       "Spring catalogs",
        "300",
        "$0.45",
        "$135.00"
@@ -7386,14 +7386,14 @@
       [
        "Rush processing fee",
        "1",
-       "$40.00",
-       "$40.00"
+       "$35.00",
+       "$35.00"
       ],
       [
        "Total",
        "",
        "",
-       "$325.00"
+       "$320.00"
       ]
      ]
     }
@@ -7402,23 +7402,23 @@
     "doc": "이메일",
     "meta": [
      "To: billing@quickmarkprinting.example",
-     "From: Nadia Chowdhury <nchowdhury@haverlydental.example>",
+     "From: Nadia Chowdhury <nchowdhury@pinewhistlegarden.example>",
      "Date: March 5",
      "Subject: Invoice #40917"
     ],
     "paras": [
      "Hello,",
-     "We received our order this morning, and the materials look great. However, I noticed a problem with the invoice. When I placed the order on February 24, I did not request rush processing. In fact, I told your sales representative, Ben Lowry, that we would not need the brochures until our open house on March 20.",
-     "I also noticed that we were charged for 1,000 appointment reminder cards, but the box we received contains only 500. I have attached a photo of the packing slip, which lists the correct quantity.",
+     "We received our order this morning, and the materials look great. However, I noticed a problem with the invoice. When I placed the order on February 24, I did not request rush processing. In fact, I told your sales representative, Ben Lowry, that we would not need the catalogs until our spring plant sale on March 20.",
+     "I also noticed that we were charged for 1,000 loyalty stamp cards, but the box we received contains only 500. I have attached a photo of the packing slip, which lists the correct quantity.",
      "Please send a corrected invoice at your earliest convenience. We would like to pay this week so that we can take advantage of your early payment discount.",
-     "Thank you, Nadia Chowdhury, Office Manager, Haverly Dental Group"
+     "Thank you, Nadia Chowdhury, Store Manager, Pinewhistle Garden Center"
     ],
     "ko": [
      "안녕하세요.",
-     "오늘 아침 주문품을 받았는데, 인쇄물이 아주 잘 나왔습니다. 그런데 송장에서 문제를 발견했습니다. 2월 24일에 주문할 때 저는 긴급 처리를 요청하지 않았습니다. 사실 저는 귀사 영업 담당자인 벤 로리 씨에게 3월 20일 오픈 하우스 전까지는 브로슈어가 필요 없다고 말씀드렸습니다.",
-     "또한 예약 알림 카드 1,000장 값이 청구되었는데, 받은 상자에는 500장만 들어 있습니다. 정확한 수량이 적힌 포장 명세서 사진을 첨부했습니다.",
+     "오늘 아침 주문품을 받았는데, 인쇄물이 아주 잘 나왔습니다. 그런데 송장에서 문제를 발견했습니다. 2월 24일에 주문할 때 저는 긴급 처리를 요청하지 않았습니다. 사실 저는 귀사 영업 담당자인 벤 로리 씨에게 3월 20일 봄맞이 식물 할인 행사 전까지는 카탈로그가 필요 없다고 말씀드렸습니다.",
+     "또한 스탬프 적립 카드 1,000장 값이 청구되었는데, 받은 상자에는 500장만 들어 있습니다. 정확한 수량이 적힌 포장 명세서 사진을 첨부했습니다.",
      "가능한 한 빨리 수정된 송장을 보내 주십시오. 조기 결제 할인을 받을 수 있도록 이번 주에 대금을 지불하고 싶습니다.",
-     "감사합니다. 해벌리 치과 그룹 사무장 나디아 차우두리 드림"
+     "감사합니다. 파인휘슬 가든 센터 매장 관리자 나디아 차우두리 드림"
     ],
     "graphic": null
    }
@@ -7431,7 +7431,7 @@
      "To report errors on a bill",
      "To place an additional order",
      "To change a delivery address",
-     "To cancel an open house"
+     "To cancel a sales event"
     ],
     "a": 0,
     "type": "주제·목적",
@@ -7447,16 +7447,16 @@
       "s": "Please send a corrected invoice at your earliest convenience."
      }
     ],
-    "exp": "'I noticed a problem with the invoice'라고 한 뒤 잘못 청구된 항목들을 지적하고 수정된 송장을 요청하므로, 청구서 오류를 알리는 것이 목적이다(a problem with the invoice → errors on a bill). 오픈 하우스는 브로슈어가 필요한 시점을 설명하려고 언급한 것이다."
+    "exp": "'I noticed a problem with the invoice'라고 한 뒤 잘못 청구된 항목들을 지적하고 수정된 송장을 요청하므로, 청구서 오류를 알리는 것이 목적이다(a problem with the invoice → errors on a bill). 봄맞이 식물 할인 행사는 카탈로그가 필요한 시점을 설명하려고 언급한 것이다."
    },
    {
-    "q": "What is indicated about Haverly Dental Group?",
-    "qko": "해벌리 치과 그룹에 대해 명시된 것은?",
+    "q": "What is indicated about Pinewhistle Garden Center?",
+    "qko": "파인휘슬 가든 센터에 대해 명시된 것은?",
     "o": [
      "It recently hired Mr. Lowry.",
-     "It has a new office manager.",
-     "It will hold an open house in March.",
-     "It ordered business cards last year."
+     "It has a new store manager.",
+     "It will hold a sale in March.",
+     "It ordered catalogs last year."
     ],
     "a": 2,
     "type": "사실 확인",
@@ -7464,17 +7464,17 @@
      {
       "d": 1,
       "p": 1,
-      "s": "we would not need the brochures until our open house on March 20"
+      "s": "we would not need the catalogs until our spring plant sale on March 20"
      }
     ],
-    "exp": "'our open house on March 20'에서 3월에 오픈 하우스 행사를 연다는 것을 알 수 있다. 벤 로리는 인쇄소의 영업 담당자이지 치과가 채용한 사람이 아니며, 사무장이 새로 왔다거나 작년에 명함을 주문했다는 내용은 없다."
+    "exp": "'our spring plant sale on March 20'에서 3월에 봄맞이 식물 할인 행사를 연다는 것을 알 수 있다(spring plant sale on March 20 → a sale in March). 벤 로리는 인쇄소의 영업 담당자이지 가든 센터가 채용한 사람이 아니며, 매장 관리자가 새로 왔다거나 작년에 카탈로그를 주문했다는 내용은 없다."
    },
    {
-    "q": "How much was Haverly Dental Group charged for the service that Ms. Chowdhury says she did not request?",
-    "qko": "차우두리 씨가 요청하지 않았다고 말하는 서비스에 대해 해벌리 치과 그룹은 얼마를 청구받았는가?",
+    "q": "How much was Pinewhistle Garden Center charged for the service that Ms. Chowdhury says she did not request?",
+    "qko": "차우두리 씨가 요청하지 않았다고 말하는 서비스에 대해 파인휘슬 가든 센터는 얼마를 청구받았는가?",
     "o": [
      "$135.00",
-     "$40.00",
+     "$35.00",
      "$60.00",
      "$90.00"
     ],
@@ -7492,11 +7492,11 @@
       "s": "Rush processing guarantees delivery within two business days."
      }
     ],
-    "exp": "이메일에서 차우두리 씨는 긴급 처리(rush processing)를 요청하지 않았다고 했고, 송장 표의 'Rush processing fee' 행을 보면 이 서비스 요금은 40달러이다. 135달러는 브로슈어 금액, 90달러는 예약 알림 카드 금액이다."
+    "exp": "이메일에서 차우두리 씨는 긴급 처리(rush processing)를 요청하지 않았다고 했고, 송장 표의 'Rush processing fee' 행을 보면 이 서비스 요금은 35달러이다. 135달러는 카탈로그 금액, 60달러는 식물 관리 태그 금액, 90달러는 스탬프 적립 카드 금액이다."
    },
    {
-    "q": "What should the charge for the appointment reminder cards be?",
-    "qko": "예약 알림 카드에 대한 청구 금액은 얼마여야 하는가?",
+    "q": "What should the charge for the loyalty stamp cards be?",
+    "qko": "스탬프 적립 카드에 대한 청구 금액은 얼마여야 하는가?",
     "o": [
      "$90.00",
      "$80.00",
@@ -7509,7 +7509,7 @@
      {
       "d": 1,
       "p": 2,
-      "s": "we were charged for 1,000 appointment reminder cards, but the box we received contains only 500"
+      "s": "we were charged for 1,000 loyalty stamp cards, but the box we received contains only 500"
      },
      {
       "d": 0,
@@ -7517,7 +7517,7 @@
       "s": "Quickmark Printing - Invoice #40917"
      }
     ],
-    "exp": "이메일에 따르면 실제로 받은 예약 알림 카드는 500장이고, 송장 표에서 이 카드의 단가는 0.09달러이므로 올바른 금액은 500 × 0.09 = 45달러이다. 90달러는 1,000장 기준으로 잘못 청구된 금액이고, 60달러는 명함 500장의 금액이다."
+    "exp": "이메일에 따르면 실제로 받은 스탬프 적립 카드는 500장이고, 송장 표에서 이 카드의 단가는 0.09달러이므로 올바른 금액은 500 × 0.09 = 45달러이다. 90달러는 1,000장 기준으로 잘못 청구된 금액이고, 60달러는 식물 관리 태그 500장의 금액이다."
    },
    {
     "q": "What does Ms. Chowdhury want to do?",
@@ -7525,7 +7525,7 @@
     "o": [
      "Get an early payment discount",
      "Speak with Mr. Lowry in person",
-     "Return the brochures",
+     "Return the catalogs",
      "Increase the quantity of her order"
     ],
     "a": 0,
@@ -7560,13 +7560,13 @@
      "Subject: New expense reporting system"
     ],
     "paras": [
-     "Starting Monday, November 17, all employees will submit travel and business expense reports through ClearLedger, our new online expense system. Paper forms will no longer be accepted after November 28.",
-     "With ClearLedger, you can photograph receipts with your phone and upload them directly to your report. Reports totaling less than $500 need only your manager's approval, while larger amounts must also be reviewed by the finance team.",
+     "Starting Monday, November 17, all employees will submit travel and business expense reports through TallyPoint, our new online expense system. Paper forms will no longer be accepted after November 28.",
+     "With TallyPoint, you can photograph receipts with your phone and upload them directly to your report. Reports totaling less than $500 need only your manager's approval, while larger amounts must also be reviewed by the finance team.",
      "Training sessions will be held in Conference Room C on November 12 at 10:00 A.M. and November 13 at 3:00 P.M. Employees who cannot attend may watch a recorded version on the company intranet. Please direct questions to Mi-rae Seo in the finance department."
     ],
     "ko": [
-     "11월 17일 월요일부터 모든 직원은 새 온라인 경비 시스템인 클리어레저를 통해 출장비 및 업무 경비 보고서를 제출하게 됩니다. 11월 28일 이후에는 종이 양식을 더 이상 받지 않습니다.",
-     "클리어레저를 이용하면 휴대전화로 영수증을 촬영해 보고서에 바로 올릴 수 있습니다. 총액 500달러 미만의 보고서는 관리자의 승인만 받으면 되지만, 그보다 큰 금액은 재무팀의 검토도 받아야 합니다.",
+     "11월 17일 월요일부터 모든 직원은 새 온라인 경비 시스템인 탤리포인트를 통해 출장비 및 업무 경비 보고서를 제출하게 됩니다. 11월 28일 이후에는 종이 양식을 더 이상 받지 않습니다.",
+     "탤리포인트를 이용하면 휴대전화로 영수증을 촬영해 보고서에 바로 올릴 수 있습니다. 총액 500달러 미만의 보고서는 관리자의 승인만 받으면 되지만, 그보다 큰 금액은 재무팀의 검토도 받아야 합니다.",
      "교육은 11월 12일 오전 10시와 11월 13일 오후 3시에 C 회의실에서 열립니다. 참석할 수 없는 직원은 회사 인트라넷에서 녹화본을 시청하시면 됩니다. 문의 사항은 재무부의 서미래 씨에게 해 주십시오."
     ],
     "graphic": null
@@ -7574,7 +7574,7 @@
    {
     "doc": "온라인 채팅",
     "paras": [
-     "Tomas Vega [9:12 A.M.]: Did you all see Harold's memo about ClearLedger? I still have receipts from the Chicago trip that I haven't turned in.",
+     "Tomas Vega [9:12 A.M.]: Did you all see Harold's memo about TallyPoint? I still have receipts from the Chicago trip that I haven't turned in.",
      "Aisha Bello [9:13 A.M.]: Yes. How much were your expenses?",
      "Tomas Vega [9:14 A.M.]: About $720, mostly the hotel.",
      "Aisha Bello [9:15 A.M.]: Then you'd better get it in soon. Reports that big take longer to process.",
@@ -7584,7 +7584,7 @@
      "Linda Park [9:18 A.M.]: Sure thing. I'd rather ask questions in person than watch a video."
     ],
     "ko": [
-     "토마스 베가 [오전 9:12]: 다들 클리어레저에 관한 해럴드 씨 메모 봤어요? 저 시카고 출장 영수증을 아직 안 냈거든요.",
+     "토마스 베가 [오전 9:12]: 다들 탤리포인트에 관한 해럴드 씨 메모 봤어요? 저 시카고 출장 영수증을 아직 안 냈거든요.",
      "아이샤 벨로 [오전 9:13]: 네, 봤어요. 경비가 얼마였어요?",
      "토마스 베가 [오전 9:14]: 720달러쯤이요. 대부분 호텔비예요.",
      "아이샤 벨로 [오전 9:15]: 그럼 빨리 내는 게 좋겠어요. 금액이 그렇게 크면 처리가 더 오래 걸려요.",
@@ -7612,14 +7612,14 @@
      {
       "d": 0,
       "p": 0,
-      "s": "all employees will submit travel and business expense reports through ClearLedger, our new online expense system"
+      "s": "all employees will submit travel and business expense reports through TallyPoint, our new online expense system"
      }
     ],
-    "exp": "'all employees will submit ... expense reports through ClearLedger, our new online expense system'에서 경비 보고서를 제출하는 새로운 방식을 알리는 메모임을 알 수 있다(submit expense reports through a new online system → a new way to submit expenses). 해럴드 그라임스는 메모 작성자일 뿐 새로 부임했다는 내용은 없다."
+    "exp": "'all employees will submit ... expense reports through TallyPoint, our new online expense system'에서 경비 보고서를 제출하는 새로운 방식을 알리는 메모임을 알 수 있다(submit expense reports through a new online system → a new way to submit expenses). 해럴드 그라임스는 메모 작성자일 뿐 새로 부임했다는 내용은 없다."
    },
    {
-    "q": "According to the memo, what can employees do with ClearLedger?",
-    "qko": "메모에 따르면, 직원들은 클리어레저로 무엇을 할 수 있는가?",
+    "q": "According to the memo, what can employees do with TallyPoint?",
+    "qko": "메모에 따르면, 직원들은 탤리포인트로 무엇을 할 수 있는가?",
     "o": [
      "Book business travel",
      "Submit pictures of receipts",
