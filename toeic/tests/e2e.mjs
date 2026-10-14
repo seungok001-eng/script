@@ -150,7 +150,7 @@ ok((await p.$$(".sline")).length >= 6 && (await p.$$(".feedback")).length === 3,
 const prac = await p.evaluate(() => Object.keys(window.__toeicfit.state.prac).length);
 ok(prac === 1, "p3 record " + prac);
 await p.goBack(); await p.waitForTimeout(300);
-{ const c = await p.$('#modal [data-r="1"]'); ok(!!c, "back from graded set asks to exit"); if (c) { await c.click(); await p.waitForTimeout(300); } }
+ok(!(await p.$("#modal")) && p.url().includes("#/sets/p3"), "back from graded set leaves without confirm: " + p.url());
 // 푼 세트를 누르면 해설 보기/다시 풀기 → 해설은 지난 답으로 채점된 화면
 await p.goto(base + "#/sets/p3"); await p.waitForTimeout(300);
 await p.click("[data-set]"); await p.waitForTimeout(200);
@@ -305,7 +305,7 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   const buy = await q.textContent("[data-buy]"), free = await q.textContent("[data-free]");
   const note = await q.textContent(".offer .offer-note"), onSale = new Date().toISOString().slice(0, 10) <= "2026-12-31";
   ok(buy.includes("전체 이용권 구매") && free.includes("무료 범위로 먼저 써 보기") && (onSale ? buy.includes("₩6,900") && !buy.includes("₩9,900") && !(await q.$(".offer s")) && note.includes("출시 기념가") && note.includes("2027년 1월 1일부터 ₩9,900") : buy.includes("₩9,900") && !note.includes("출시")), `offer buttons: ${buy} / ${note} / ${free}`);
-  ok((await q.$$(".offer .cmp tbody tr")).length === 7 && (await q.textContent(".offer .cmp")).includes("Part 5 어휘") && (await q.textContent(".offer .cmp")).includes("Day 1~3 · 120개"), "offer: free vs full comparison table");
+  ok((await q.$$(".offer .cmp tbody tr")).length === 8 && (await q.textContent(".offer .cmp")).includes("Part 5 어휘") && (await q.textContent(".offer .cmp")).includes("Day 1~3 · 120개"), "offer: free vs full comparison table");
   ok(await q.evaluate(() => !!window.__toeicfit.state.diag && !window.__toeicfit.state.mock.d), "diag stored separately from mocks");
   await q.click("[data-free]"); await q.waitForTimeout(300);
   ok(q.url().endsWith("#/home") && !(await q.$('[data-go="diag"]')), "free trial → home, diagnostic task gone");
@@ -320,7 +320,7 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   await q.click("[data-set]"); await q.waitForTimeout(300);
   for (let j = 0; j < 3; j++) await q.click(`.pq [data-q="${j}"][data-o="0"]`);
   await q.click("[data-grade]"); await q.waitForTimeout(200);
-  await q.click("[data-exit]"); await q.click('#modal [data-r="1"]'); await q.waitForTimeout(300);
+  await q.click("[data-exit]"); await q.waitForTimeout(300); ok(!(await q.$("#modal")), "graded set exits without confirm");
   await q.goto(base + "#/sets/p4"); await q.waitForTimeout(300);
   const second = await q.$$("[data-set]");
   await second[second.length - 1].click(); await q.waitForTimeout(300);

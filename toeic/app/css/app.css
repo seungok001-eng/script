@@ -14,7 +14,7 @@
   --line-strong: #cfd5e2;
   --text: #121826;
   --text-2: #4a5468;
-  --text-3: #8790a3;
+  --text-3: #636c80;
   --brand: #2b59f0;
   --brand-2: #1f45c9;
   --brand-soft: #e8eeff;
@@ -53,9 +53,9 @@
     --line-strong: #353f4f;
     --text: #edf1f7;
     --text-2: #aab3c3;
-    --text-3: #727d90;
+    --text-3: #8a95a8;
     --brand: #5b82ff;
-    --btn-bg: #3d63e6;
+    --btn-bg: #3d63e6; --btn-hover: #3354cc;
     --brand-2: #7b9bff;
     --brand-soft: #1b2645;
     --ok-soft: #10291f;
@@ -77,9 +77,9 @@
   --line-strong: #353f4f;
   --text: #edf1f7;
   --text-2: #aab3c3;
-  --text-3: #727d90;
+  --text-3: #8a95a8;
   --brand: #5b82ff;
-  --btn-bg: #3d63e6;
+  --btn-bg: #3d63e6; --btn-hover: #3354cc;
   --brand-2: #7b9bff;
   --brand-soft: #1b2645;
   --ok-soft: #10291f;
@@ -204,7 +204,7 @@ svg { flex-shrink: 0; }
   background: var(--btn-bg, var(--brand)); color: var(--brand-ink); transition: transform 0.08s, background 0.15s, opacity 0.15s;
   user-select: none;
 }
-.btn:hover { background: var(--brand-2); }
+.btn:hover { background: var(--btn-hover, var(--brand-2)); }
 .btn:active { transform: scale(0.98); }
 .btn:disabled { opacity: 0.45; pointer-events: none; }
 .btn.block { width: 100%; }
@@ -827,7 +827,7 @@ html:lang(en) .ex-ko, html:lang(en) .ko, html:lang(en) .qsub, html:lang(en) [dat
 .cmp th, .cmp td { padding: 7px 5px; text-align: center; border-bottom: 1px solid var(--line); vertical-align: middle; overflow-wrap: break-word; }
 .cmp tbody tr:last-child th, .cmp tbody tr:last-child td { border-bottom: 0; }
 .cmp thead th { font-size: 12.5px; font-weight: 700; color: var(--text-3); padding-top: 2px; }
-.cmp thead th:first-child { width: 27%; }
+.cmp thead th:first-child { width: 34%; }
 .cmp tbody th { text-align: left; font-weight: 650; color: var(--text-2); padding-left: 2px; }
 .cmp td { color: var(--text-3); }
 .cmp .full { color: var(--text); font-weight: 700; background: color-mix(in srgb, var(--brand) 9%, transparent); }
@@ -1157,3 +1157,50 @@ button.tl-item:active { transform: scale(0.99); }
 .p5intro + .free-line, .p5intro + .btn { margin-top: 12px; }
 .p5split .weak .btn.sm { margin-left: 4px; }
 /* (어휘 끝) */
+
+/* ───────── 3차 수정: 좁은 화면·번역 문구·대비 ───────── */
+/* 공통 아이콘 칩 (진단·가이드 등 따로 크기를 안 준 곳도 똑같이) */
+.tico { width: 40px; height: 40px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.tico .ico { width: 20px; height: 20px; }
+/* 영어 단어는 글자 중간에서 끊지 않는다 (넘칠 때만 줄바꿈) */
+.en, .ww, .wd-word, .flash .f-word, [lang="en"] { overflow-wrap: break-word; word-break: normal; }
+.cmp tbody th { overflow-wrap: normal; word-break: normal; hyphens: auto; -webkit-hyphens: auto; }
+/* 혼동 어휘: 단어·품사 한 줄, 뜻은 아래 줄 */
+.kv.cf-kv { display: block; }
+.cf-kv .cf-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.cf-kv .v { display: block; margin-top: 2px; }
+/* 약점 행: 좁은 화면에서는 이름·개수 위, 막대·%·버튼 아래 */
+.weak > .spacer { min-width: 0; }
+.section-h { flex-wrap: wrap; column-gap: 10px; row-gap: 2px; }
+@media (max-width: 480px) {
+  .weak:has(.wbar) { flex-wrap: wrap; row-gap: 6px; }
+  .weak:has(.wbar) > .spacer { flex: 1 1 100%; }
+  .weak:has(.wbar) > .wbar { flex: 1 1 auto; width: auto; min-width: 60px; }
+}
+/* 이어서: 버튼은 여러 줄까지 (긴 번역 주제 이름) */
+[data-gcont], [data-vcont] { height: auto; min-height: 52px; padding-top: 8px; padding-bottom: 8px; }
+.gcont-t { white-space: normal; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; line-height: 1.25; text-align: left; font-size: 15px; }
+/* 잠긴 주제 안내: 버튼을 세로로 */
+.glock .row { flex-direction: column; align-items: stretch; }
+.glock .row .btn { flex: none !important; width: 100%; }
+/* 온보딩: 마지막 안내 상자가 아래 버튼에 가리지 않게 */
+.onb > .tip-box:last-of-type, .onb .onb-same + .tip-box { margin-bottom: 16px; }
+/* 무료 범위 안내 줄 */
+.free-note { display: flex; align-items: center; gap: 6px; margin: 10px 2px 0; color: var(--text-2); font-weight: 650; }
+.free-note .ico, .hero-free .ico { width: 14px; height: 14px; flex-shrink: 0; }
+.hero-free { display: inline-flex; align-items: center; gap: 5px; margin: 4px 0 2px; padding: 3px 9px; border-radius: 999px; background: rgba(255, 255, 255, 0.18); font-size: 12px; font-weight: 700; position: relative; z-index: 1; }
+/* P7 근거 → 문제로 돌아가기 칩: 작게, 글을 덜 가리게 */
+.ev-back { right: 10px; height: 32px; padding: 0 10px 0 7px; font-size: 12.5px; opacity: 0.92; bottom: calc(84px + var(--safe-b)); }
+/* 근거 표시: 다크 모드에서도 읽히게 (배경은 옅게, 밑줄로 강조) */
+mark.on { background: color-mix(in srgb, var(--gold) 30%, transparent); color: var(--text); box-shadow: none; text-decoration: underline 2px; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+/* Part 3·4 플레이어: 좁은 화면에서는 버튼 글자를 숨기고 아이콘만 (aria-label 있음) */
+@media (max-width: 420px) {
+  .lp-thin .lp-btn small { display: none; }
+  .lp-thin .lp-btn { min-width: 38px; height: 38px; }
+  .lplayer.lp-thin { gap: 6px; }
+}
+/* 결제 화면: 아래 탭을 숨기고 구매 버튼을 화면 아래에 붙여 둔다 */
+.no-tabs .tabbar { display: none; }
+.no-tabs .main { padding-bottom: calc(var(--safe-b) + 16px); }
+.no-tabs .toast-wrap { bottom: calc(var(--safe-b) + 90px); }
+.no-tabs .offer [data-buybox] { position: sticky; bottom: 0; z-index: 4; margin: 0 -16px; padding: 10px 16px calc(8px + var(--safe-b)); background: linear-gradient(to bottom, transparent, var(--bg-elev) 18%); border-radius: 0 0 var(--r-l) var(--r-l); }
