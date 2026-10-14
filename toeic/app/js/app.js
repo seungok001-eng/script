@@ -63,7 +63,10 @@
   // 유료화: 무료는 단어 Day 1~3 · 파트별 실전 1세트 · 문법 1주제 · LC/받아쓰기 1회 · 하프 모의고사 1회 · 첫 실력 진단.
   // 가격은 스토어(Play Console)에 등록한 값을 그대로 보여 준다(price 는 스토어 정보를 못 받을 때의 표시용).
   // 결제는 네이티브 앱에서만 열린다(웹 미리보기는 잠그지 않음). 테스트: localStorage "toeicfit.paywall" = "1"
-  const CONFIG = { premium: { enabled: true, freeDays: 3, price: "₩4,900" /* 스토어 가격을 못 읽었을 때 한국어 화면에서만 쓰는 대체 표시 */, productId: "toeicfit_full", priceNote: T`한 번 결제 · 평생 이용 · 광고 없음` } };
+  const CONFIG = { premium: { enabled: true, freeDays: 3,
+    // 가격은 Play Console 에서 정한다. 아래는 스토어 가격을 못 읽었을 때 한국어 화면에서만 쓰는 대체 표시와, 원화 정가 표시용
+    price: "₩6,900", listPrice: "₩9,900", saleUntil: "2026-12-31", // 출시 할인: 이 날까지 정가 ₩9,900 → ₩6,900 (그다음 날 Play Console 가격을 ₩9,900 으로 바꾼다)
+    productId: "toeicfit_full", priceNote: T`한 번 결제 · 평생 이용 · 광고 없음` } };
   const STORE_KEY = "toeicfit.v1";
   const OLD_KEY = "vocafit.v1"; // 이름을 바꾸기 전(보카핏) 웹 미리보기 기록을 한 번 옮겨 온다
 
@@ -3086,17 +3089,29 @@
     const l = $app.querySelector("[data-diag-later]");
     if (l) l.addEventListener("click", () => { toast(T`홈의 '10분 실력 진단'에서 언제든 할 수 있어요`); go("#/home"); });
   }
+  // 출시 할인 중인가 (기기 날짜 기준, 마지막 날 포함)
+  function saleOn() { const d = new Date(), y = d.getFullYear(), m = String(d.getMonth() + 1).padStart(2, "0"), dd = String(d.getDate()).padStart(2, "0"); return `${y}-${m}-${dd}` <= CONFIG.premium.saleUntil; }
+  function shownPrice() { return IAP.price || (LANG === "ko" ? (saleOn() ? CONFIG.premium.price : CONFIG.premium.listPrice) : ""); }
+  // 정가와 할인 문구는 원화 가격일 때만 보여 준다 (다른 나라 정가는 앱이 알 수 없어서 할인이라고 쓰지 않는다)
+  function saleShown() { return saleOn() && /₩/.test(shownPrice()) && shownPrice() !== CONFIG.premium.listPrice; }
+  function buyLabel() { return T`전체 열기 ${(saleShown() ? `<s class="was">${esc(CONFIG.premium.listPrice)}</s> ` : "") + esc(shownPrice())}`; }
+  function saleNote() {
+    if (!saleShown()) return "";
+    const [y, m, d] = CONFIG.premium.saleUntil.split("-").map(Number);
+    const day = new Date(y, m - 1, d).toLocaleDateString(LANG, { month: "long", day: "numeric" });
+    return `<b class="sale">${T`출시 할인 · ${day}까지`}</b><br>`;
+  }
   function offerHtml(lead) {
     return T`<section class="offer">
       <div class="offer-h">${ico("crown")}<b>${lead || T`토익핏 전체 열기`}</b></div>
       <ul class="offer-list">
         <li>단어 <b>${NWORDS.toLocaleString()}개</b> 전체 · 원어민 음성 · 90일 코스</li>
         <li>Part 1~7 실전 문제 <b>전부</b> · 정답 근거 해설</li>
-        <li>하프 모의고사 <b>${PR ? allHalves().length : 4}회</b>${PR && PR.full && PR.full.length ? T` + 정규 모의고사 <b>${PR.full.length}회</b>` : ""} · 예상 점수</li>
+        <li>하프 모의고사 <b>${PR ? allHalves().length : 10}회</b>${!PR || (PR.full && PR.full.length) ? T` + 정규 모의고사 <b>${PR ? PR.full.length : 10}회</b>` : ""} · 예상 점수</li>
         <li>문법 강의 30주제 · LC 표현 · 받아쓰기 무제한</li>
       </ul>
-      <button class="btn block" data-buy>${ico("crown")}전체 열기 ${esc(IAP.price || (LANG === "ko" ? CONFIG.premium.price : ""))} · 출시 할인</button>
-      <div class="small muted" style="text-align:center;margin-top:6px">${CONFIG.premium.priceNote}</div>
+      <button class="btn block" data-buy>${ico("crown")}${buyLabel()}</button>
+      <div class="small muted" style="text-align:center;margin-top:6px">${saleNote()}${CONFIG.premium.priceNote}</div>
       <button class="btn ghost block" style="margin-top:10px" data-free>무료로 ${CONFIG.premium.freeDays}일 먼저 써 보기</button>
     </section>`;
   }

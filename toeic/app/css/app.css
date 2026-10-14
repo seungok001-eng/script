@@ -803,3 +803,7 @@ html:lang(en) .ex-ko, html:lang(en) .ko, html:lang(en) .qsub, html:lang(en) [dat
 .next-steps { margin: 0; padding-left: 20px; line-height: 1.7; }
 .next-steps li + li { margin-top: 4px; }
 .weak .btn.sm { flex-shrink: 0; margin-left: 8px; }
+
+/* 출시 할인: 정가 취소선 · 할인 기간 */
+.offer .btn .was { opacity: .7; font-weight: 600; margin-right: 2px; }
+.offer .sale { color: var(--accent, var(--brand)); font-weight: 700; }
