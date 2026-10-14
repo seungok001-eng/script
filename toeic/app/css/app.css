@@ -807,3 +807,16 @@ html:lang(en) .ex-ko, html:lang(en) .ko, html:lang(en) .qsub, html:lang(en) [dat
 /* 출시 할인: 정가 취소선 · 할인 기간 */
 .offer .btn .was { opacity: .7; font-weight: 600; margin-right: 2px; }
 .offer .sale { color: var(--accent, var(--brand)); font-weight: 700; }
+
+/* 사업자 정보 (설정 맨 아래 · 결제 화면 아래) */
+.biz { margin: 12px 0 24px; font-size: 12px; color: var(--text-3); }
+.biz summary { cursor: pointer; text-align: center; padding: 6px; list-style: none; }
+.biz summary::-webkit-details-marker { display: none; }
+.biz summary::after { content: " ▾"; }
+.biz[open] summary::after { content: " ▴"; }
+.biz-body { display: grid; gap: 4px; padding: 10px 12px; background: var(--bg-sunk); border-radius: 10px; }
+.biz-row { display: grid; grid-template-columns: minmax(6.5em, 38%) 1fr; gap: 10px; }
+.biz-row span:first-child { color: var(--text-3); }
+.biz-row span:last-child { color: var(--text-2); overflow-wrap: anywhere; }
+.biz-link { margin-top: 4px; font-size: 12px; }
+.biz-mini { text-align: center; font-size: 11px; margin-top: 8px; overflow-wrap: anywhere; }

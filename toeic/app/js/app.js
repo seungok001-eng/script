@@ -60,6 +60,13 @@
   D.lc = D.lcAll.filter((p) => !p.mock);
   const C = window.Core;
   const BRAND = { name: T`토익핏`, short: T`토익핏`, en: "ToeicFit" };
+  // 사업자 정보 (전자상거래법 표시 사항) — 사업자등록증·D-U-N-S·Play Console 과 같아야 한다
+  const BIZ = {
+    name: "윤랩", ceo: "윤강희", ceoEn: "Ganghui Yun", regNo: "725-10-03366", mailOrder: "제2026-충남 천안-2290호",
+    addrKo: "충청남도 천안시 동남구 풍세로 933, 1002동 1805호",
+    addrEn: "1805-ho, 1002-dong, 933, Pungse-ro, Dongnam-gu, Cheonan-si, Chungcheongnam-do, Republic of Korea",
+    email: "seungok001@gmail.com", phone: "010-2498-5741",
+  };
   // 유료화: 무료는 단어 Day 1~3 · 파트별 실전 1세트 · 문법 1주제 · LC/받아쓰기 1회 · 하프 모의고사 1회 · 첫 실력 진단.
   // 가격은 스토어(Play Console)에 등록한 값을 그대로 보여 준다(price 는 스토어 정보를 못 받을 때의 표시용).
   // 결제는 네이티브 앱에서만 열린다(웹 미리보기는 잠그지 않음). 테스트: localStorage "toeicfit.paywall" = "1"
@@ -3113,7 +3120,7 @@
       <button class="btn block" data-buy>${ico("crown")}${buyLabel()}</button>
       <div class="small muted" style="text-align:center;margin-top:6px">${saleNote()}${CONFIG.premium.priceNote}</div>
       <button class="btn ghost block" style="margin-top:10px" data-free>무료로 ${CONFIG.premium.freeDays}일 먼저 써 보기</button>
-    </section>`;
+    </section>` + `<p class="small muted biz-mini">${esc(BIZ.name)} · ${T`대표자`} ${esc(LANG === "ko" ? BIZ.ceo : BIZ.ceoEn)} · ${T`사업자등록번호`} ${esc(BIZ.regNo)} · ${esc(BIZ.email)}</p>`;
   }
   function diagResultHtml(s) {
     const { est, parts } = s.result;
@@ -3388,6 +3395,16 @@
     });
     $app.querySelector("[data-guide-tips]").addEventListener("click", () => { S.tips = {}; save(); toast(T`화면마다 팁이 다시 한 번씩 나와요`); });
   }
+  function bizHtml() {
+    const row = (k, v) => v ? `<div class="biz-row"><span>${k}</span><span>${v}</span></div>` : "";
+    const ftc = `https://www.ftc.go.kr/bizCommPop.do?wrkr_no=${BIZ.regNo.replace(/-/g, "")}`;
+    return `<details class="biz"><summary>${T`사업자 정보`}</summary><div class="biz-body">
+      ${row(T`상호`, esc(BIZ.name))}${row(T`대표자`, esc(LANG === "ko" ? BIZ.ceo : BIZ.ceoEn))}${row(T`사업자등록번호`, esc(BIZ.regNo))}
+      ${row(T`통신판매업 신고번호`, esc(BIZ.mailOrder))}${row(T`주소`, esc(LANG === "ko" ? BIZ.addrKo : BIZ.addrEn))}
+      ${row(T`전화`, esc(LANG === "ko" ? BIZ.phone : BIZ.phone.replace(/^0/, "+82 ")))}${row(T`이메일`, `<a href="mailto:${BIZ.email}">${esc(BIZ.email)}</a>`)}
+      <a class="biz-link" href="${ftc}" target="_blank" rel="noopener">${T`사업자 정보 확인`} ↗</a>
+    </div></details>`;
+  }
   function vSettings() {
     const p = S.profile;
     const s = S.settings;
@@ -3432,7 +3449,7 @@
         <a class="set-row" href="privacy.html" target="_blank" rel="noopener"><span class="sl"><b>개인정보 처리방침</b><span>학습 기록은 기기에만 저장돼요</span></span>${ico("right")}</a>
       </div>
       <p class="small muted" style="text-align:center;margin-top:20px">${BRAND.name} · TOEIC is a registered trademark of ETS. 이 앱은 ETS와 관련이 없습니다.</p>
-      <input type="file" id="importFile" accept="application/json,.json" hidden />`;
+      <input type="file" id="importFile" accept="application/json,.json" hidden />` + bizHtml();
     shell("settings", body);
     $app.querySelectorAll("[data-set]").forEach((c) => c.addEventListener("change", async () => {
       s[c.dataset.set] = c.checked;
