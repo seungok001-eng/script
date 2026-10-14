@@ -3,6 +3,7 @@ const base = process.env.BASE_URL || "http://localhost:8765/index.html";
 const out = (process.env.SHOT_DIR || "/tmp/") + "toeicfit-";
 const errors = [], fails = [];
 const ok = (c, m) => { if (!c) fails.push(m); };
+const textOr = async (pg, sel) => { const e = await pg.$(sel); return e ? await e.textContent() : ""; };
 const b = await chromium.launch();
 const ctx = await b.newContext({ locale: "ko-KR", viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
 const p = await ctx.newPage();
@@ -82,12 +83,32 @@ await p.goto(base + "#/practice"); await p.waitForTimeout(1500);
 ok(await p.$('a[href="#/sets/p3"]'), "practice hub loaded");
 await p.goto(base + "#/sets/p3"); await p.waitForTimeout(300);
 await p.click("[data-set]"); await p.waitForTimeout(300);
+ok(await p.$(".lp-wrap .lp-thin [data-lfirst]") && await p.$("[data-lback]") && await p.$("[data-lrate]"), "p3 thin player with restart/back/0.8x");
+ok((await p.textContent(".study-top .cnt")).trim() === "문제 0/3", "p3 counter starts at 문제 0/3: " + await p.textContent(".study-top .cnt"));
 for (let j = 0; j < 3; j++) await p.click(`.pq [data-q="${j}"][data-o="0"]`);
 await p.click("[data-grade]"); await p.waitForTimeout(300);
 ok((await p.$$(".sline")).length >= 6 && (await p.$$(".feedback")).length === 3, "p3 graded with script");
 const prac = await p.evaluate(() => Object.keys(window.__toeicfit.state.prac).length);
 ok(prac === 1, "p3 record " + prac);
 await p.goBack(); await p.waitForTimeout(300);
+// 푼 세트를 누르면 해설 보기/다시 풀기 → 해설은 지난 답으로 채점된 화면
+await p.goto(base + "#/sets/p3"); await p.waitForTimeout(300);
+await p.click("[data-set]"); await p.waitForTimeout(200);
+ok(await p.$("#modal [data-sv]") && await p.$("#modal [data-sr]"), "solved set offers review/retry");
+await p.click("#modal [data-sv]"); await p.waitForTimeout(300);
+ok((await p.$$(".feedback")).length === 3 && (await textOr(p, "[data-next]")).includes("목록으로"), "solved set review mode");
+await p.goBack(); await p.waitForTimeout(300);
+// 세트 결과: 틀린 문제 해설 다시 보기 · 틀린 문제 목록
+await p.goto(base + "#/sets/p4"); await p.waitForTimeout(300);
+await p.click("[data-run]"); await p.waitForTimeout(300);
+for (let k = 0; k < 3; k++) { for (let j = 0; j < 5; j++) { const o = await p.$(`.pq [data-q="${j}"][data-o="3"]`); if (o) await o.click(); } await p.click("[data-grade]"); await p.waitForTimeout(150); await p.click("[data-next]"); await p.waitForTimeout(150); }
+ok(await p.$(".result-hero"), "p4 3-set result");
+const pw = await p.$("[data-prevw]");
+if (pw) { ok((await p.$$("[data-pwq]")).length > 0, "set result lists wrong questions"); await pw.click(); await p.waitForTimeout(300); ok((await p.textContent(".study")).includes("틀린 문제만"), "set result → wrong review"); }
+await p.goto(base + "#/home"); await p.waitForTimeout(200);
+// Part 2 타일은 소개 화면으로
+await p.goto(base + "#/p2"); await p.waitForTimeout(200);
+ok(await p.$("[data-p2go]") && await p.$(".p2stat"), "Part 2 intro page");
 // Part 1 (사진이 들어온 문제가 있을 때): 6문제 이어 풀기 → 채점마다 문장 4개·해설 → 결과
 const hasP1 = await p.evaluate(() => (window.VOCA_PRACTICE.p1 || []).length);
 if (hasP1) {
@@ -198,6 +219,7 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   await q.goto(base + "#/day/4"); await q.waitForTimeout(300);
   ok(q.url().includes("#/premium") && (await q.textContent(".paywall-hero")).includes("Day 1~3"), "Day 4 locked → paywall: " + q.url());
   await q.goto(base + "#/sets/p4"); await q.waitForTimeout(800);
+  ok((await q.textContent(".free-line")).includes("무료 1세트") && (await q.textContent("[data-run]")).includes("무료 1세트 풀기") && (await q.$$(".witem .lock-ic")).length > 5 && (await q.$$(".witem .badge.free")).length === 1, "free/locked marks on set list");
   await q.click("[data-set]"); await q.waitForTimeout(300);
   for (let j = 0; j < 3; j++) await q.click(`.pq [data-q="${j}"][data-o="0"]`);
   await q.click("[data-grade]"); await q.waitForTimeout(200);
@@ -205,6 +227,19 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   const second = await q.$$("[data-set]");
   await second[second.length - 1].click(); await q.waitForTimeout(300);
   ok(q.url().includes("#/premium?from=set"), "second Part 4 set → paywall: " + q.url());
+  // 문법(무료): 랜덤 20제는 기초 주제에서 20문제를 채우고, 일반 주제는 직접 골라야 무료 주제가 된다
+  await q.goto(base + "#/grammar"); await q.waitForTimeout(400);
+  await q.click("[data-mix]"); await q.waitForTimeout(300);
+  const gs = await q.evaluate(() => ({ n: document.querySelector(".cnt").textContent, free: window.__toeicfit.state.gFree }));
+  ok(gs.n.trim() === "1 / 20" && gs.free === null, "free grammar random fills 20 from basics: " + JSON.stringify(gs));
+  await q.goto(base + "#/grammar/g05"); await q.waitForTimeout(300);
+  ok(q.url().endsWith("#/grammar/g05") && (await q.$$(".lesson-acc")).length > 0, "locked topic still shows lessons");
+  await q.click('[data-lv="1"]'); await q.waitForTimeout(200);
+  ok(await q.$("#modal [data-gfree]"), "pick free topic confirm");
+  await q.click("#modal [data-gfree]"); await q.waitForTimeout(300);
+  ok((await q.evaluate(() => window.__toeicfit.state.gFree)) === "g05" && q.url().includes("#/study"), "free topic chosen and quiz started");
+  await q.goto(base + "#/grammar/g07"); await q.waitForTimeout(300);
+  ok((await q.textContent(".glock")).includes("전체 이용권"), "other topic questions locked with CTA");
   await c2.close();
 }
 // 6) 조작된 저장값 정리
