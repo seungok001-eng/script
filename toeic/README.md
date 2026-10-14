@@ -92,7 +92,7 @@ BASE_URL=http://localhost:8080/index.html node toeic/tests/e2e.mjs   # 6) 화면
 cd toeic
 npm install
 npx cap sync                                # app/ 변경 사항을 android/ios 로 복사 (웹 파일을 고칠 때마다)
-npx cap open android                        # Android Studio(JDK 21) → Build > Generate Signed Bundle (AAB)
+npx cap open android                        # Android Studio(JDK 21) — 개발·디버그용. 출시 AAB는 아래 'toeic-release-aab'(음성 팩 분리)로만 만든다
 npx cap open ios                            # Xcode 16+(맥) → Signing 팀 선택 → Product > Archive → 업로드
 node scripts/make_icons.mjs                 # (아이콘을 바꿨을 때) 앱 아이콘 SVG → app/icons·assets 원본
 npm run assets                              # (아이콘을 바꿨을 때) assets/*.png → 네이티브 아이콘·스플래시 재생성
@@ -106,6 +106,7 @@ npm run assets                              # (아이콘을 바꿨을 때) asset
 | `@capacitor/local-notifications` | 매일 학습 알림 (설정 화면에서 켜기·시간 지정) |
 | `@capacitor/filesystem` + `@capacitor/share` | 학습 기록 백업 파일 저장·공유 |
 | `@capacitor-community/text-to-speech` | 기기 TTS — 음성 파일이 없을 때 영어 문장 대체 재생 |
+| `@capgo/native-purchases` | 전체 이용권 결제·구매 복원 (Google Play Billing / StoreKit) |
 
 체크리스트
 - 앱 ID `com.toeicfit.app`(스토어에 올린 뒤에는 못 바꿈), 이름 `토익핏` — `capacitor.config.json`, `app/js/app.js`의 `BRAND`, `manifest.webmanifest`에서 바꿀 수 있습니다.
@@ -114,13 +115,14 @@ npm run assets                              # (아이콘을 바꿨을 때) asset
 - 개인정보처리방침 URL: GitHub Pages(`.github/workflows/toeic-pages.yml`) → `https://seungok001-eng.github.io/script/privacy.html`
 - 출시용 AAB: Actions → `toeic-release-aab` (저장소 비밀값의 업로드 키로 서명). 자세한 순서는 `RELEASE.md`.
 - 테스트용 APK: `toeic/**`를 푸시하면 GitHub Actions(`.github/workflows/toeic-android.yml`)가 디버그 APK를 빌드해 Releases의 `toeic-test` 프리릴리스에 올린다.
-- 개인정보: 모든 기록은 기기 안(localStorage)에만 저장되고 서버로 보내지 않습니다 → 스토어 "데이터 수집 없음" 신고 가능. (광고·분석 SDK를 넣으면 다시 확인)
+- 개인정보: 모든 기록은 기기 안(localStorage)에만 저장되고 서버로 보내지 않습니다 → 스토어 "데이터 수집 없음" 신고 가능. (광고·분석 SDK를 넣으면 다시 확인) 안드로이드 자동 백업(사용자 본인 Google 계정)은 켜 두어 기기를 바꿔도 기록이 이어지며, 개인정보처리방침에 이 내용을 적어 두었다.
+- 알림: 매일 학습 알림은 정확한 시각이 필요 없어 `SCHEDULE_EXACT_ALARM` 권한을 매니페스트에서 뺐다.
 - 상표: "TOEIC"은 ETS의 등록 상표입니다. 앱 이름·아이콘에 ETS 로고를 쓰지 말고, 설정 화면의 "ETS와 관련 없음" 문구를 유지하세요.
-- 앱 크기: 약 175MB (음성 32kbps 모노: 단어 18 · 예문 69 · LC 표현 25 · Part 3·4 25 · 정규 모의고사 5회 21MB · Part 1 약 7MB, Part 1 사진 150장 12MB) — Google Play 기본 모듈 한도(200MB) 안. 더 늘리려면 음성을 Play Asset Delivery 로 나눈다.
+- 앱 크기: 약 250MB (음성 약 200MB · Part 1 사진 195장 포함). 음성은 Play Asset Delivery 설치 시 팩(`audio_pack`)으로 나눠 기본 모듈 한도(200MB) 안에 둔다 — 그래서 로컬 Android Studio 의 'Generate Signed Bundle' 로 만든 AAB 는 Play 가 거부한다(음성이 기본 모듈에 들어감). 출시 AAB 는 반드시 Actions 의 `toeic-release-aab` 로 만든다.
 
 ### 유료화
 
-`app/js/app.js`의 `CONFIG.premium` — 한 번 결제(평생) 상품 `toeicfit_full`, 표시 가격은 스토어 값(없으면 ₩4,900).
+`app/js/app.js`의 `CONFIG.premium` — 한 번 결제(평생) 상품 `toeicfit_full`, 표시 가격은 스토어 값(없으면 출시 할인가 ₩6,900, 2027-01-01부터 정가 ₩9,900 — `saleUntil`).
 
 - 무료: 단어 Day 1~3 · 파트별 실전 1세트 · 문법 1주제 · LC 퀴즈·받아쓰기 1회 · 하프 모의고사 1회 · 첫 실력 진단
 - 결제 화면이 뜨는 곳: 진단 결과(첫날), Day 4, 파트별 2번째 세트, 하프 2~4회·정규 모의고사, 시간 압박 훈련

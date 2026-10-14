@@ -37,6 +37,8 @@
 
 ## 4. 출시 파일(AAB) 만들기
 - `toeic/release-version.txt` 의 버전(처음은 `1.0.0`)을 바꿔 올리면 자동으로 빌드된다. (GitHub → Actions → `toeic-release-aab` → Run workflow 로 수동 실행도 가능)
+  - 주의: 버전을 올리는 커밋 메시지에는 `[skip ci]` 를 넣지 않는다(넣으면 빌드가 건너뛰어진다). 다른 커밋을 `[skip ci]` 로 올렸다면 출시 전에 이 방법이나 수동 실행으로 최신 커밋에서 다시 빌드한다.
+  - versionCode 는 워크플로 실행 번호(run_number)로 정해진다. 워크플로 파일 이름을 바꾸거나 새로 만들면 번호가 1부터 다시 시작하므로 그러지 않는다.
 - 10분쯤 뒤 실행 화면 아래 **Artifacts → toeicfit-release-aab** 를 내려받아 압축을 풀면 `.aab` 파일이 있습니다.
 - 버전 번호(versionCode)는 실행 번호로 자동으로 올라갑니다. 업데이트 때는 버전 이름만 `1.0.1` 처럼 올려 다시 실행하세요.
 
