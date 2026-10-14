@@ -26,3 +26,8 @@ mkdir -p "$SCRATCH" && tar -xJf toeic/tools/i18n-state/tr-state.tar.xz -C "$SCRA
 - 합치기: `python3 tr/merge_p.py <lang>...` (p-31..59 범위) · 화면 문구 out/<L>-ui3-1.json 은 src.ko.json 의 ui/labels 에 있는 키로 넣는다
 - 번역 뒤 원문 고침은 `tr/fix_src.py` 참고 (원문과 번역에 같은 고침을 적용; 키는 경로라 그대로)
 - 6개 언어 모두 100% (화면 1051 · 분류 521 · 단어 33553 · 실전 18408)
+
+## 2026-10-14 검토 수정
+- 번역 하나 고치기: `tr/setkey.py` (set_p / set_ui → 앱 파일과 out/ 작업 파일을 같이 고쳐 merge_p 를 다시 돌려도 되돌아가지 않음)
+- 영어 Part 6 해석의 {n} 빈칸 채우기: `node tr/fill_en.js data/i18n/en.json tr/out/en/*.json` (toeic/ 에서)
+- 원문을 고친 키만 다시 번역: `tr/fix_chunks.py` → src/p-53 (번호를 바꿔 쓰고, merge 는 그 묶음만)
