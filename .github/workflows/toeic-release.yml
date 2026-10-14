@@ -110,7 +110,11 @@ jobs:
             echo "키 파일 크기: $(stat -c %s "$RUNNER_TEMP/upload.jks") 바이트"
             export TOEICFIT_KEYSTORE="$RUNNER_TEMP/upload.jks"
             # 서명 확인용: 업로드 키 인증서 지문(공개 정보). PC 의 keytool -list -v 결과와 같아야 한다
-            keytool -list -v -keystore "$TOEICFIT_KEYSTORE" -storepass "$TOEICFIT_KEYSTORE_PASSWORD" -alias "$TOEICFIT_KEY_ALIAS" | grep -E "SHA-?256" | sed 's/^/업로드 키 /'
+            if ! keytool -list -v -keystore "$TOEICFIT_KEYSTORE" -storepass "$TOEICFIT_KEYSTORE_PASSWORD" -alias "$TOEICFIT_KEY_ALIAS" > "$RUNNER_TEMP/ks.txt" 2>&1; then
+              grep -iE "password|keystore|alias|exception" "$RUNNER_TEMP/ks.txt" | head -3
+              echo "::error::키 파일을 열 수 없습니다. TOEICFIT_KEYSTORE_BASE64 가 키를 글자로 바꾼 값이 맞는지, 비밀번호·별칭이 맞는지 확인해 주세요."; exit 1
+            fi
+            grep -E "SHA-?256" "$RUNNER_TEMP/ks.txt" | sed 's/^/업로드 키 /'; rm -f "$RUNNER_TEMP/ks.txt"
           fi
           chmod +x gradlew
           ./gradlew bundleRelease --no-daemon
