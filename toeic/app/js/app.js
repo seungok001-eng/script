@@ -83,13 +83,14 @@
   const DAYS = D.days.filter((d) => d.count > 0);
   const DAY_BY = new Map(DAYS.map((d) => [d.day, d]));
   const NDAYS = DAYS.length ? DAYS[DAYS.length - 1].day : 0;
-  const BASIC_DAYS = Math.min(30, NDAYS); // Day 1~30 기본 코스, 31~ 심화 코스
+  const BASIC_DAYS = Math.min(30, NDAYS); // Day 1~30 1단계 코스, 31~ 2단계 코스
   const NWORDS = WORDS.length.toLocaleString();
   // 30일 단위 코스: 같은 30개 주제를 기본 → 심화 → 실전으로 세 번 넓혀 간다
   const COURSES = [
-    { name: T`기본 코스`, tab: T`기본`, from: 1, to: 30, desc: T`주제별 필수 어휘` },
-    { name: T`심화 코스`, tab: T`심화`, from: 31, to: 60, desc: T`같은 주제의 확장 어휘` },
-    { name: T`완성 코스`, tab: T`완성`, from: 61, to: 90, desc: T`LC 표현 · 고득점 어휘` },
+    // 이름은 단계 번호로 (난이도 배지 기본·핵심·고득점과 겹치지 않게)
+    { name: T`1단계 코스`, tab: T`1단계`, from: 1, to: 30, desc: T`주제별 필수 어휘` },
+    { name: T`2단계 코스`, tab: T`2단계`, from: 31, to: 60, desc: T`같은 주제의 확장 어휘` },
+    { name: T`3단계 코스`, tab: T`3단계`, from: 61, to: 90, desc: T`LC 표현 · 고득점 어휘` },
   ];
   const POS_KO = { n: T`명사`, v: T`동사`, adj: T`형용사`, adv: T`부사`, phr: T`숙어`, prep: T`전치사`, conj: T`접속사` };
   const POS_SHORT = { n: T`명`, v: T`동`, adj: T`형`, adv: T`부`, phr: T`숙`, prep: T`전`, conj: T`접` };
@@ -176,6 +177,7 @@
       d.log[k] = { new: num(l.new, 0, 0, 1e5), rev: num(l.rev, 0, 0, 1e5), q: num(l.q, 0, 0, 1e5), ok: num(l.ok, 0, 0, 1e5), sec: num(l.sec, 0, 0, 1e6) };
       if (l.done) d.log[k].done = true;
       if (l.prac) d.log[k].prac = true;
+      if (l.quiz) d.log[k].quiz = true;
     }
     const ts = (src && src.tests) || {};
     for (const k of Object.keys(ts)) {
@@ -212,7 +214,10 @@
       for (const k of Object.keys(gd.done || {})) if (MISSION_KEYS.has(k)) d.guide.done[k] = num(gd.done[k], 0, 0, 1e6);
     }
     const dg = src && src.diag;
-    if (dg && typeof dg === "object") d.diag = { lc: num(dg.lc, 5, 5, 495), rc: num(dg.rc, 5, 5, 495), total: num(dg.total, 10, 10, 990), at: num(dg.at, 0, 0, 1e6) };
+    if (dg && typeof dg === "object") {
+      d.diag = { lc: num(dg.lc, 5, 5, 495), rc: num(dg.rc, 5, 5, 495), total: num(dg.total, 10, 10, 990), at: num(dg.at, 0, 0, 1e6) };
+      if (/^p[1-7]$/.test(dg.weak || "")) d.diag.weak = dg.weak;
+    }
     const fu = (src && src.freeUse) || {};
     for (const k of ["lcq", "dict", "timed"]) if (fu[k]) d.freeUse[k] = num(fu[k], 0, 0, 1e6);
     const ds = (src && src.dayStep) || {};
@@ -368,7 +373,9 @@
 
   // ═════════════ 토스트 / 모달 ═════════════
   let toastTimer = 0;
+  let toastAt = 0;
   function toast(msg) {
+    toastAt = Date.now();
     const w = document.getElementById("toast");
     w.innerHTML = `<div class="toast">${esc(msg)}</div>`;
     clearTimeout(toastTimer);
@@ -573,22 +580,53 @@
     (qs || "").split("&").filter(Boolean).forEach((kv) => { const [k, v] = kv.split("="); q[k] = decodeURIComponent(v || ""); });
     return { name: parts[0] || "home", arg: parts[1], q };
   }
-  window.addEventListener("hashchange", () => {
+  // 진행 중인 학습이 있는가 (한 문제라도 풀었거나 카드를 넘겼으면 뒤로가기 전에 묻는다)
+  function inProgress(s) {
+    if (!s || s.done || s.finished || s.kind === "listen") return false;
+    return s.kind === "mock" || (s.results && s.results.length > 0) || s.i > 0 || (s.seenIds && s.seenIds.size > 0) || s.answered != null;
+  }
+  let afterNav = null; // 뒤로 간 다음 이어서 할 이동 (history.back/go 는 비동기라 hashchange 에서 처리)
+  function onHash() {
+    if (afterNav) { const f = afterNav; afterNav = null; return f(); }
+    // 학습 중 뒤로가기(브라우저·안드로이드): 그냥 버리지 않고 그만할지 묻는다. 취소하면 학습 화면에 남는다
+    if (route().name !== "study" && inProgress(session)) {
+      history.pushState(null, "", "#/study");
+      studyPushed = true;
+      return askExit();
+    }
     seqId += 1;
     lineSeq += 1;
     lcqSeq += 1;
     Sound.stop();
+    // 다른 화면으로 가면 앞 화면의 토스트는 지운다 (이동 직전에 띄운 안내는 남긴다)
+    if (Date.now() - toastAt > 400) { clearTimeout(toastTimer); const tw = document.getElementById("toast"); if (tw) tw.innerHTML = ""; }
     // 뒤로가기 등으로 학습 화면을 벗어나면 진행 중이던 세션을 끝낸다 (기록은 이미 저장됨)
     if (route().name !== "study") { session = null; studyPushed = false; }
     render();
-  });
+  }
+  window.addEventListener("hashchange", onHash);
+  // 기록을 남기며 이동 (state 로 '홈에서 왔음'을 표시) / 지금 기록을 바꿔 이동 — 둘 다 hashchange 가 없어서 직접 그린다
+  function pushTo(hash, state) { history.pushState(state || null, "", hash); onHash(); }
+  function replaceTo(hash) { history.replaceState(history.state, "", hash); onHash(); }
+  // 홈으로: 홈에서 연 화면이면 뒤로(기록이 쌓이지 않게), 아니면 지금 기록을 홈으로 바꾼다
+  function toHome() {
+    if (history.state && history.state.home) history.back();
+    else location.replace("#/home");
+  }
+  // 학습 화면을 닫고 그 아래 화면 대신 다른 곳으로 (진단·온보딩에서 홈으로 갈 때 뒤로가기로 되돌아오지 않게)
+  function leaveStudyThen(f) {
+    session = null;
+    if (studyPushed) { studyPushed = false; afterNav = f; history.back(); }
+    else f();
+  }
 
   function render() {
     closeModal();
     keyHandler = null;
     const r = route();
     document.body.classList.toggle("in-study", r.name === "study" || r.name === "onboarding");
-    if (!S.profile && r.name !== "onboarding") return go("#/onboarding");
+    if (!S.profile && r.name !== "onboarding") return location.replace("#/onboarding");
+    if (r.name !== "onboarding" && onb.edit) onb = { step: 0, target: 0, exam: "", daily: 0 }; // 계획 바꾸기를 뒤로가기로 나갔으면 고르던 값은 버린다
     const views = { onboarding: vOnboarding, home: vHome, days: vDays, day: vDay, word: vWord, study: vStudy, review: vReview, part1: vPart1, conf: vConf, lc: vLc, p2: vP2, practice: vPractice, sets: vSets, guide: vGuide, diag: vDiag, grammar: vGrammar, dict: vDict, mock: vMock, search: vSearch, stats: vStats, settings: vSettings, licenses: vLicenses, premium: vPremium };
     const v = views[r.name] || vHome;
     v(r);
@@ -613,7 +651,7 @@
         <div class="side-sep"></div>
         <a href="#/search" class="side-link ${active === "search" ? "on" : ""}">${ico("search")}단어 검색</a>
         <a href="#/guide" class="side-link ${active === "guide" ? "on" : ""}">${ico("help")}사용 가이드</a>
-        <a href="#/part1" class="side-link ${active === "part1" ? "on" : ""}">${ico("camera")}Part 1 사진 표현</a>
+        <a href="#/part1" class="side-link ${active === "part1" ? "on" : ""}">${ico("camera")}Part 1 필수 문장</a>
         <a href="#/conf" class="side-link ${active === "conf" ? "on" : ""}">${ico("split")}혼동 어휘</a>
         ${(D.lc || []).length ? T`<a href="#/lc" class="side-link ${active === "lc" ? "on" : ""}">${ico("ear")}LC 빈출 표현</a>` : ""}
         <div class="side-foot">목표 ${target()}점 · 단어 ${pool().length}개</div></nav>
@@ -631,6 +669,16 @@
 
   // 전역 클릭 위임 (data-act)
   document.addEventListener("click", (e) => {
+    // 하단 탭·사이드 메뉴: 탭끼리는 기록을 바꿔 이동하고(뒤로가기가 탭을 거슬러 쌓이지 않게), 홈에서 연 탭은 뒤로가기로 홈에 온다
+    const nav = !e.metaKey && !e.ctrlKey && !e.shiftKey && e.target.closest && e.target.closest("a.tab, a.side-link");
+    if (nav) {
+      e.preventDefault();
+      const h = nav.getAttribute("href");
+      if (location.hash === h) return window.scrollTo(0, 0);
+      if (h === "#/home") return toHome();
+      if (route().name === "home") return pushTo(h, { home: 1 });
+      return replaceTo(h);
+    }
     const t = e.target.closest("[data-act]");
     if (!t) return;
     const act = t.dataset.act;
@@ -660,17 +708,31 @@
   });
 
   // ═════════════ 온보딩 ═════════════
-  let onb = { step: 0, target: 800, exam: "", daily: 0 };
-  function onbPool() { return C.poolFor(WORDS, onb.target).length; }
+  // 단계마다 기록(#/onboarding?step=N)을 남겨 뒤로가기로 앞 단계에 간다. 목표 점수는 미리 골라 두지 않는다
+  let onb = { step: 0, target: 0, exam: "", daily: 0 };
+  function onbPool() { return onb.target ? C.poolFor(WORDS, onb.target).length : 0; }
   function onbDaily() {
     const exam = C.parseYmd(onb.exam);
     return onb.daily || C.recommendDaily(onbPool(), exam, today());
   }
-  function vOnboarding() {
+  // 하루 단어 학습 예상 시간 (새 단어 + 그만큼의 복습, 5분 단위)
+  function wordMin(daily) { return Math.max(5, Math.round((daily * 0.7) / 5) * 5); }
+  // 목표 점수 → 같은 단어 범위를 쓰는 점수 구간 (예: 550~650점)
+  function sameRange(target) {
+    const k = C.tiersFor(target).join();
+    const xs = C.SCORE_OPTIONS.filter((s) => C.tiersFor(s).join() === k);
+    return [xs[0], xs[xs.length - 1]];
+  }
+  function vOnboarding(r) {
     const editing = !!S.profile;
-    if (editing && onb.step === 0) {
-      onb = { step: 1, target: S.profile.target, exam: S.profile.examDate || "", daily: S.profile.daily };
+    const base = editing ? 1 : 0;
+    const hs = r && r.q && r.q.step != null ? Math.min(3, Math.max(base, +r.q.step || 0)) : base;
+    if (editing && !onb.edit) {
+      onb = { step: 1, target: S.profile.target, exam: S.profile.examDate || "", daily: S.profile.daily, edit: true };
     }
+    if (!editing && onb.edit) onb = { step: 0, target: 0, exam: "", daily: 0 };
+    if (hs > 1 && !onb.target) return location.replace("#/onboarding"); // 새로고침 등으로 고른 값이 없으면 처음 단계로
+    onb.step = hs;
     const steps = 4;
     let body = "";
     if (onb.step === 0) {
@@ -678,17 +740,19 @@
         <h1 style="text-align:center">토익,<br/>목표 점수만큼만 정확하게</h1>
         <p class="lead" style="text-align:center">목표 점수를 알려주시면 꼭 필요한 단어와 실전 문제를<br/>골라 매일 학습 계획을 만들어 드려요.</p>
         <div class="feature-list">
-          <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? T`${NDAYS}일 · 기본/심화/완성 코스` : T`30일 주제별`} · 기본/핵심/고득점 3단계</span></div>
+          <div><span class="tico c-blue">${ico("target")}</span><span><b>목표 점수 맞춤 단어 ${NWORDS}개</b>${NDAYS > 30 ? T`${NDAYS}일 코스(30일씩 1~3단계)` : T`30일 주제별`} · 난이도 기본/핵심/고득점</span></div>
           <div><span class="tico c-green">${ico("headphones")}</span><span><b>모든 단어·예문 원어민 음성</b>미국·영국 발음으로 토익 LC까지 대비</span></div>
           <div><span class="tico c-orange">${ico("repeat")}</span><span><b>잊을 때쯤 다시 나오는 복습</b>1·3·7·14·30일 간격 반복 + 오답노트</span></div>
-          <div><span class="tico c-purple">${ico("trophy")}</span><span><b>Part 1~7 실전 문제 · 정규·하프 모의고사</b>10분 실력 진단 · 정답 근거 해설 · 예상 점수</span></div>
+          <div><span class="tico c-purple">${ico("trophy")}</span><span><b>Part 1~7 실전 문제 · 정규·하프 모의고사</b>실력 진단(약 12분) · 정답 근거 해설 · 예상 점수</span></div>
         </div>`;
     } else if (onb.step === 1) {
       const n = onbPool();
-      const band = C.scoreBand(onb.target);
+      const band = onb.target ? C.scoreBand(onb.target) : null;
+      const [lo, hi] = onb.target ? sameRange(onb.target) : [0, 0];
       body = T`<div class="onb-step">1 / ${steps - 1}</div><h1>목표 점수가<br/>몇 점인가요?</h1><p class="lead">목표에 맞는 난이도의 단어만 학습해요. 나중에 언제든 바꿀 수 있어요.</p>
-        <div class="score-grid">${C.SCORE_OPTIONS.map((s) => `<button class="score-opt ${onb.target === s ? "on" : ""}" data-score="${s}">${s}${s === 950 ? "+" : ""}<small>${s <= 650 ? T`기본` : s <= 800 ? T`핵심` : T`고득점`}</small></button>`).join("")}</div>
-        <div class="plan-box"><div class="pl"><span>학습 범위</span><b>${tr(band.label)}</b></div><div class="pl"><span>${tr(band.desc)}</span><b>${n.toLocaleString()}개</b></div></div>`;
+        <div class="score-grid">${C.SCORE_OPTIONS.map((s) => `<button class="score-opt ${onb.target === s ? "on" : ""}" data-score="${s}" aria-pressed="${onb.target === s}">${s}${s === 950 ? "+" : ""}<small>${s <= 650 ? T`기본` : s <= 800 ? T`기본+핵심` : T`+고득점`}</small></button>`).join("")}</div>
+        ${band ? T`<div class="plan-box"><div class="pl"><span>학습 범위</span><b>${tr(band.label)} ${n.toLocaleString()}개</b></div><div class="pl"><span>${tr(band.desc)}</span></div></div>
+        <p class="small muted onb-same">${lo === hi ? T`${lo}점 이상 목표는 모든 단어를 학습해요.` : T`${lo}~${hi}점은 같은 단어 ${n.toLocaleString()}개를 학습해요. 목표 점수는 남은 점수 계산과 실전 문제 난이도에 쓰여요.`}</p>` : T`<p class="small muted onb-same">목표 점수를 하나 골라 주세요. 잘 모르겠다면 700점부터 시작해도 좋아요.</p>`}`;
     } else if (onb.step === 2) {
       const presets = [[14, T`2주 뒤`], [30, T`1개월 뒤`], [60, T`2개월 뒤`], [90, T`3개월 뒤`]];
       body = T`<div class="onb-step">2 / ${steps - 1}</div><h1>시험은 언제인가요?</h1><p class="lead">시험일에 맞춰 하루 학습량을 계산해요. 정하지 않았다면 건너뛰어도 돼요.</p>
@@ -704,12 +768,14 @@
       body = T`<div class="onb-step">3 / ${steps - 1}</div><h1>하루에 몇 개씩<br/>외워 볼까요?</h1><p class="lead">새 단어 기준이에요. 복습 단어는 따로 나와요.</p>
         <div class="chips">${opts.map((d) => T`<button class="chip ${daily === d ? "on" : ""}" data-daily="${d}">${d}개${d === rec ? T` · 추천` : ""}</button>`).join("")}</div>
         <div class="plan-box">
+          <div class="pl"><span>하루 예상 시간</span><b>약 ${wordMin(daily)}분</b></div>
           <div class="pl"><span>목표 점수</span><b>${onb.target}점</b></div>
           <div class="pl"><span>학습 단어</span><b>${n.toLocaleString()}개</b></div>
           <div class="pl"><span>하루 새 단어</span><b>${daily}개</b></div>
           <div class="pl"><span>1회독 완료</span><b>${days}일 뒤 (${fmtDate(today() + days - 1)})</b></div>
           ${onb.exam ? T`<div class="pl"><span>시험일</span><b>${fmtDate(C.parseYmd(onb.exam))} (D-${C.parseYmd(onb.exam) - today()})</b></div>` : ""}
         </div>
+        <p class="small muted onb-same">${onb.exam ? T`시험일에 맞춰 시험 3일 전까지 범위를 한 번 보도록 계산했어요.` : T`시험일이 없으면 하루 20개(약 15분)를 추천해요. 복습 시간이 포함돼요.`}</p>
         ${(() => {
           // 시험 전에 1회독이 안 되면 숨기지 않고 알려 준다 (쉬운 단어부터 나오므로 볼 수 있는 범위를 안내)
           if (!onb.exam) return "";
@@ -721,28 +787,39 @@
     }
     const foot = onb.step === 0
       ? T`<button class="btn block" data-next>시작하기</button>`
-      : `<button class="btn ghost" data-prev style="flex:0 0 96px">${editing && onb.step === 1 ? T`취소` : T`이전`}</button><button class="btn" style="flex:1" data-next>${onb.step === 3 ? (editing ? T`저장` : T`학습 시작하기`) : T`다음`}</button>`;
+      : `<button class="btn ghost" data-prev style="flex:0 0 96px">${editing && onb.step === 1 ? T`취소` : T`이전`}</button><button class="btn" style="flex:1" data-next ${onb.step === 1 && !onb.target ? "disabled" : ""}>${onb.step === 3 ? (editing ? T`저장` : T`학습 시작하기`) : T`다음`}</button>`;
     $app.innerHTML = `<div class="onb fade-in">${body}<div class="onb-foot">${foot}</div></div>`;
-    $app.querySelectorAll("[data-score]").forEach((b) => b.addEventListener("click", () => { onb.target = +b.dataset.score; onb.daily = 0; vOnboarding(); }));
-    $app.querySelectorAll("[data-exam]").forEach((b) => b.addEventListener("click", () => { onb.exam = b.dataset.exam; onb.daily = 0; vOnboarding(); }));
+    const redraw = () => vOnboarding(route());
+    $app.querySelectorAll("[data-score]").forEach((b) => b.addEventListener("click", () => { onb.target = +b.dataset.score; onb.daily = 0; redraw(); }));
+    $app.querySelectorAll("[data-exam]").forEach((b) => b.addEventListener("click", () => { onb.exam = b.dataset.exam; onb.daily = 0; redraw(); }));
     const ei = document.getElementById("examInput");
-    if (ei) ei.addEventListener("change", () => { onb.exam = ei.value; onb.daily = 0; vOnboarding(); });
-    $app.querySelectorAll("[data-daily]").forEach((b) => b.addEventListener("click", () => { onb.daily = +b.dataset.daily; vOnboarding(); }));
+    if (ei) ei.addEventListener("change", () => { onb.exam = ei.value; onb.daily = 0; redraw(); });
+    $app.querySelectorAll("[data-daily]").forEach((b) => b.addEventListener("click", () => { onb.daily = +b.dataset.daily; redraw(); }));
+    // 이 화면에서 쌓은 단계 기록 수 (끝낼 때 그만큼 되돌려 온보딩 기록을 남기지 않는다)
+    const depth = () => (history.state && history.state.onb) || 0;
     const prev = $app.querySelector("[data-prev]");
     if (prev) prev.addEventListener("click", () => {
-      if (editing && onb.step === 1) { onb = { step: 0, target: 800, exam: "", daily: 0 }; return go("#/settings"); }
-      onb.step -= 1;
-      vOnboarding();
+      if (depth()) return history.back();
+      if (editing && onb.step === 1) { onb = { step: 0, target: 0, exam: "", daily: 0 }; return back("#/settings"); }
+      location.replace(onb.step - 1 > base ? `#/onboarding?step=${onb.step - 1}` : "#/onboarding");
     });
     $app.querySelector("[data-next]").addEventListener("click", () => {
-      if (onb.step < 3) { onb.step += 1; return vOnboarding(); }
+      if (onb.step < 3) {
+        if (onb.step === 1 && !onb.target) return;
+        history.pushState({ onb: depth() + 1 }, "", `#/onboarding?step=${onb.step + 1}`);
+        return redraw();
+      }
       const p = S.profile || { start: today() };
       S.profile = Object.assign(p, { target: onb.target, examDate: onb.exam || null, daily: onbDaily() });
       if (!editing && !S.guide) S.guide = { start: today(), done: {}, hide: false };
       save(true);
-      onb = { step: 0, target: 800, exam: "", daily: 0 };
+      onb = { step: 0, target: 0, exam: "", daily: 0 };
       toast(editing ? T`학습 계획을 바꿨어요` : T`학습 계획이 준비됐어요. 화이팅!`);
-      go(editing ? "#/settings" : S.diag ? "#/home" : "#/diag");
+      // 온보딩 기록을 모두 걷어 낸다: 편집은 설정 화면으로 돌아가고, 처음이면 온보딩 자리를 진단(또는 홈)으로 바꾼다
+      const k = depth();
+      const dest = editing ? null : S.diag ? "#/home" : "#/diag";
+      if (editing) { if (k) { afterNav = () => history.back(); history.go(-k); } else back("#/settings"); return; }
+      if (k) { afterNav = () => location.replace(dest); history.go(-k); } else location.replace(dest);
     });
   }
 
@@ -752,66 +829,104 @@
     const c = 2 * Math.PI * r;
     return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" role="img" aria-label="${pct}%"><circle cx="${size / 2}" cy="${size / 2}" r="${r}" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="${stroke}"/><circle cx="${size / 2}" cy="${size / 2}" r="${r}" fill="none" stroke="${color || "#fff"}" stroke-width="${stroke}" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${c * (1 - pct / 100)}" transform="rotate(-90 ${size / 2} ${size / 2})"/><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" fill="#fff" font-size="${size / 4.2}" font-weight="800">${pct}%</text></svg>`;
   }
+  // 파트 이름 뒤에 붙이는 짧은 설명 (처음 보는 사람용)
+  const PART_DESC = { p1: T`사진 보고 알맞은 묘사 고르기`, p2: T`질문 듣고 알맞은 응답 고르기`, p3: T`두 사람 이상의 대화 듣고 문제 풀기`, p4: T`안내·방송 같은 담화 듣고 문제 풀기`, p5: T`문장 빈칸에 알맞은 말 고르기`, p6: T`지문 빈칸에 알맞은 말·문장 고르기`, p7: T`지문 읽고 문제 풀기` };
+  const taskPart = (k) => (k === "p5g" ? "p5" : k);
+  const partTask = (p) => (p === "p5" ? "p5g" : p);
+  // 학습 범위 이름: 난이도 배지를 더해서 (예: 기본+핵심 2,551개)
+  function planName() { return T`${myTiers().map((x) => tr(C.TIER_NAMES[x])).join("+")} ${pool().length.toLocaleString()}개`; }
   function vHome() {
     const t = today();
     const P = pool();
-    const plan = C.todayPlan(P.filter((w) => canAccessDay(w.d)), S.words, S.profile.daily, t);
+    const PA = P.filter((w) => canAccessDay(w.d));
+    const plan = C.todayPlan(PA, S.words, S.profile.daily, t);
     plan.due = dueWords(t);
     const sum = C.summarize(P, S.words);
-    const pct = P.length ? Math.round((sum.mastered / P.length) * 100) : 0;
     const streak = C.streak(S.log, t);
     const exam = C.parseYmd(S.profile.examDate);
     const dday = exam != null ? exam - t : null;
     const wrong = WORDS.filter((w) => st(w.id) && st(w.id).wrong).length;
     const introduced = P.filter((w) => st(w.id) && st(w.id).first === t);
     const newDone = plan.newWords.length === 0;
-    const nextWord = plan.newWords[0];
     const hour = new Date().getHours();
     const hi = hour < 6 ? T`늦은 밤에도 열공 중이시네요` : hour < 12 ? T`좋은 아침이에요` : hour < 18 ? T`오늘도 한 걸음 더` : T`오늘 하루도 수고했어요`;
     const l = S.log[t] || {};
-    const task = practiceTaskToday(P, sum, t);
-    const prog = C.todayProgress({ daily: S.profile.daily, introduced: plan.introducedToday, reviewed: l.rev || 0, due: plan.due.length, practiced: !!l.prac });
-    const estMin = Math.ceil(plan.newWords.length * 0.4 + Math.min(plan.due.length, 100) * 0.15 + (l.prac ? 0 : task.min));
-    const allDone = newDone && !plan.due.length && l.prac;
-    // 오늘 할 일 순서: 복습 → 새 단어 → 오늘 단어 퀴즈 → 오늘의 실전 (잊기 전에 복습부터)
-    const next = plan.due.length ? ["due", "repeat", T`복습 ${Math.min(plan.due.length, 100)}개부터 시작`] : !newDone ? ["new", "play", T`새 단어 ${plan.newWords.length}개 시작`] : !l.prac ? ["prac", "target", T`오늘의 실전 · ${taskLabel(task)}`] : introduced.length ? ["quiz-today", "zap", T`오늘 단어 퀴즈로 마무리`] : null;
-    const heroTitle = allDone ? T`오늘 할 일 끝! 🎉` : plan.remaining === 0 && newDone ? T`범위 1회독 완료! 복습과 실전으로` : T`오늘의 학습`;
-    const heroSub = allDone ? T`내일도 이어서 해요 · 더 하고 싶다면 실전 탭에서` : T`예상 ${Math.max(1, estMin)}분 · ${[plan.due.length ? T`복습 ${Math.min(plan.due.length, 100)}` : "", !newDone ? T`새 단어 ${plan.newWords.length}` : "", !l.prac ? T`실전 1` : ""].filter(Boolean).join(" · ") || T`남은 과제 없음`}`;
+    // 무료 체험: Day 1~3 단어는 다 봤고 잠긴 단어가 남았다
+    const lockedLeft = PA.length < P.length ? P.filter((w) => !canAccessDay(w.d) && !(st(w.id) && st(w.id).n)).length : 0;
+    const freeOut = newDone && plan.remaining === 0 && lockedLeft > 0;
+    const nextDay = CONFIG.premium.freeDays + 1;
+    const ms = missionState(t, plan);
+    const task = practiceTaskToday(P, sum, t, ms);
+    const dueN = plan.due.length;
+    const chunkN = Math.min(dueN, 20); // 복습은 20개씩 끊어서
+    const prog = C.todayProgress({ daily: Math.min(S.profile.daily, plan.introducedToday + plan.newWords.length), introduced: plan.introducedToday, reviewed: l.rev || 0, due: plan.due.length, practiced: !!l.prac, noPrac: !task && !l.prac });
+    const estMin = Math.ceil(plan.newWords.length * 0.4 + Math.min(dueN, 100) * 0.15 + (l.prac || !task ? 0 : task.min));
+    const allDone = newDone && !plan.due.length && (l.prac || !task);
+    // 오늘 할 일: 복습 → 새 단어 → 오늘 단어 퀴즈 → 오늘의 실전 → (처음 며칠) 시작 미션. 지금 할 일 하나만 큰 버튼으로
+    const range = (ws) => { const ds = ws.map((w) => w.d), a = Math.min(...ds), b = Math.max(...ds); return a === b ? T`Day ${a} · ${esc(tr(DAY_BY.get(a).title))}` : T`Day ${a}~${b}에서 쉬운 단어부터`; };
+    const items = [];
+    if (plan.due.length || l.rev) items.push({ k: "due", ic: "repeat", c: "c-orange", done: !plan.due.length, tt: plan.due.length ? T`복습 ${dueN}개` : T`복습 ${l.rev}개 완료`, td: plan.due.length ? T`잊어버리기 전에 다시 보기 · 먼저 하면 기억이 오래가요` : T`오늘 복습을 모두 끝냈어요`, btn: dueN > chunkN ? T`${chunkN}개 복습하기 · 남은 ${dueN}개` : T`복습 ${dueN}개 시작` });
+    if (!newDone) items.push({ k: "new", ic: "layers", c: "c-blue", tt: T`오늘의 단어 ${plan.newWords.length}개`, td: range(plan.newWords), btn: T`새 단어 ${plan.newWords.length}개 외우기` });
+    else if (plan.introducedToday) items.push({ k: "new", ic: "layers", c: "c-blue", done: true, tt: T`오늘의 단어 ${plan.introducedToday}개 완료`, td: freeOut ? T`무료 단어를 모두 봤어요` : T`더 하고 싶다면 단어장에서` });
+    if (freeOut) items.push({ k: "lockednew", ic: "lock", lock: true, tt: T`Day ${nextDay}~${NDAYS} · 전체 이용권`, td: T`남은 단어 ${lockedLeft.toLocaleString()}개를 이어서 외워요` });
+    if (!newDone || introduced.length) items.push({ k: "quiz-today", ic: "zap", c: "c-purple", done: !!l.quiz, off: !introduced.length, tt: T`오늘 단어 퀴즈`, td: introduced.length ? T`오늘 본 ${introduced.length}개 · 뜻/단어/예문/Part 5 섞어서` : T`새 단어를 외우면 열려요`, btn: T`오늘 단어 퀴즈 풀기` });
+    if (l.prac) items.push({ k: "prac", ic: "target", c: "c-green", done: true, tt: T`오늘의 실전 완료`, td: T`더 풀려면 실전 탭에서` });
+    else if (task) items.push({ k: "prac", ic: "target", c: "c-green", tt: T`오늘의 실전 · ${esc(taskLabel(task))}`, td: task.kind === "mock" ? T`시험 2주 전 · 실전처럼 시간 재고 풀어 보세요` : T`${PART_DESC[taskPart(task.kind)]} · 약 ${task.min}분`, badge: task.mission ? T`미션` : task.weak ? T`약한 파트` : "", btn: T`오늘의 실전 시작` });
+    else items.push({ k: "lockedprac", ic: "lock", lock: true, tt: T`오늘의 실전`, td: T`전체 이용권에서 매일 새 문제` });
+    if (ms && !ms.done) ms.extra.forEach(([k, ic, tt, td]) => items.push({ k, ic, c: "c-blue", act: "mis", done: !!S.guide.done[k], tt, td, badge: T`미션`, btn: tt }));
+    const cur = items.find((x) => !x.done && !x.lock && !x.off);
+    const row = (x) => {
+      const attr = `data-${x.act || "go"}="${x.k}"`;
+      const tag = x.badge ? ` <span class="tl-badge">${x.badge}</span>` : "";
+      const text = `<span class="spacer"><span class="tt">${x.tt}${tag}</span><span class="td">${x.td}</span></span>`;
+      if (x === cur) return `<div class="tl-item cur"><div class="tl-row"><span class="tico ${x.c}">${ico(x.ic)}</span>${text}</div><button class="btn block" ${attr}>${ico("play")}${x.btn}</button></div>`;
+      return `<button class="tl-item ${x.done ? "done" : ""} ${x.lock ? "lock" : ""}" ${attr} ${x.off ? "disabled" : ""}><span class="tico ${x.done ? "c-ok" : x.lock ? "c-mute" : x.c}">${ico(x.done ? "check" : x.ic)}</span>${text}${x.done || x.off ? "" : ico("right")}</button>`;
+    };
+    const nDone = items.filter((x) => x.done).length;
+    const misHead = ms && !ms.done ? T`<div class="tl-mis"><span class="spacer"><b>시작 미션 ${ms.stage + 1}/${MISSIONS.length}단계</b> · ${MISSION_THEMES[ms.stage]}${ms.stageDone && ms.stage < MISSIONS.length - 1 ? T` · 완료! 다음 단계는 내일 열려요` : ""}</span><span class="mis-dots">${MISSIONS.map((G, i) => `<i class="${ms.doneAt[i] || (i === ms.stage && ms.stageDone) ? "on" : i === ms.stage ? "cur" : ""}"></i>`).join("")}</span><button class="icon-btn sm" data-mis-close aria-label="미션 닫기">${ico("x")}</button></div>` : "";
+    const past = ms && !ms.done && ms.past.length ? T`<details class="tl-past"><summary>지난 미션 ${ms.past.length}개 · 아직 안 해 본 기능</summary>${ms.past.map(([k, ic, tt, td]) => `<button class="tl-item" data-mis="${k}"><span class="tico c-mute">${ico(ic)}</span><span class="spacer"><span class="tt">${tt}</span><span class="td">${td}</span></span>${ico("right")}</button>`).join("")}</details>` : "";
+    const banner = !S.diag ? ["diag", T`실력 진단 (약 12분)`, T`20문제로 지금 예상 점수와 약한 파트 확인`] : !S.profile.placed ? ["place", T`3분 어휘 진단`, T`이미 아는 단어는 건너뛰고 필요한 단어부터`] : null;
+    const heroTitle = allDone && !freeOut ? T`오늘 할 일 끝! 🎉` : freeOut ? T`무료 단어 ${PA.length.toLocaleString()}개를 모두 익혔어요` : plan.remaining === 0 && newDone ? T`범위 1회독 완료! 복습과 실전으로` : T`오늘의 학습`;
+    const heroSub = allDone ? (freeOut ? T`복습과 오늘의 실전은 무료로 계속할 수 있어요` : T`내일도 이어서 해요 · 더 하고 싶다면 실전 탭에서`) : T`예상 ${Math.max(1, estMin)}분 · ${[plan.due.length ? T`복습 ${dueN}` : "", !newDone ? T`새 단어 ${plan.newWords.length}` : "", !l.prac && task ? T`실전 1` : ""].filter(Boolean).join(" · ") || T`남은 과제 없음`}`;
+    const heroBtn = freeOut ? T`<a class="btn block" href="#/premium?from=day">${ico("crown")}Day ${nextDay}부터 이어서 외우기</a>` : allDone ? T`<a class="btn block" href="#/practice">${ico("target")}실전 문제 더 풀기</a>` : "";
     const body = T`
       <div class="top"><h1>${hi}</h1><a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a><a class="icon-btn" href="#/settings" aria-label="설정">${ico("gear")}</a></div>
       <section class="hero">
         <div class="ring" aria-label="오늘 진행률 ${prog}%">${ring(prog, 76, 7)}</div>
-        <div class="eyebrow">목표 ${target()}점 · ${tr(C.scoreBand(target()).label)}${nextWord ? ` · DAY ${pad(nextWord.d)}` : ""}</div>
+        <div class="eyebrow">목표 ${target()}점 · ${planName()}</div>
         <div class="big">${heroTitle}</div>
         <div class="eyebrow">${heroSub}</div>
         <div class="meta">
-          <div><b>${sum.mastered.toLocaleString()}</b>암기 완료</div>
+          <div><b>${sum.seen.toLocaleString()}</b>학습 · 장기 기억 ${sum.mastered.toLocaleString()}</div>
           <div><b>${streak}일</b>연속 학습</div>
           <div><b>${dday != null ? (dday >= 0 ? "D-" + dday : T`종료`) : "–"}</b>시험까지</div>
         </div>
-        ${next ? `<button class="btn block" data-go="${next[0]}">${ico(next[1])}${next[2]}</button>` : T`<a class="btn block" href="#/practice">${ico("target")}실전 문제 더 풀기</a>`}
+        ${heroBtn}
       </section>
-      ${missionCard()}
-      <div class="section"><div class="section-h"><h2>오늘 할 일</h2><span class="small muted">${fmtDate(t)}</span></div>
-        <button class="task ${plan.due.length ? "" : "done"}" data-go="due"><span class="tico c-orange">${ico("repeat")}</span><span class="spacer"><div class="tt">복습하기</div><div class="td">${plan.due.length ? T`잊어버리기 전에 다시 볼 단어 · 먼저 하면 기억이 오래가요` : l.rev ? T`오늘 ${l.rev}개 복습 완료` : T`오늘 복습할 단어가 없어요`}</div></span><span class="tn">${plan.due.length ? Math.min(plan.due.length, 100) : ico("check")}</span></button>
-        <button class="task ${newDone ? "done" : ""}" data-go="new"><span class="tico c-blue">${ico("layers")}</span><span class="spacer"><div class="tt">새 단어 외우기${nextWord ? ` <span class="small muted" style="font-weight:600">DAY ${pad(nextWord.d)} · ${esc(tr(DAY_BY.get(nextWord.d).title))}</span>` : ""}</div><div class="td">${newDone ? T`오늘 ${plan.introducedToday}개 완료 · 더 하고 싶다면 단어장에서` : T`카드로 뜻 확인 → 모르는 단어는 다시`}</div></span><span class="tn">${newDone ? ico("check") : plan.newWords.length}</span></button>
-        <button class="task ${introduced.length ? "" : "done"}" data-go="quiz-today"><span class="tico c-purple">${ico("zap")}</span><span class="spacer"><div class="tt">오늘 단어 확인 퀴즈</div><div class="td">${introduced.length ? T`오늘 본 ${introduced.length}개 · 뜻/단어/예문/Part 5 섞어서` : T`새 단어를 외우면 열려요`}</div></span><span class="tn">${introduced.length || "–"}</span></button>
-        <button class="task ${l.prac ? "done" : ""}" data-go="prac"><span class="tico c-green">${ico("target")}</span><span class="spacer"><div class="tt">오늘의 실전 · ${esc(taskLabel(task))}</div><div class="td">${l.prac ? T`오늘 실전 완료 · 더 풀려면 실전 탭에서` : task.kind === "mock" ? T`시험 2주 전 · 실전처럼 시간 재고 풀어 보세요` : T`약 ${task.min}분 · 목표 ${target()}점에 맞춘 난이도`}</div></span><span class="tn">${l.prac ? ico("check") : ico("right")}</span></button>
-        ${S.diag ? "" : T`<button class="task" data-go="diag"><span class="tico c-blue">${ico("gauge")}</span><span class="spacer"><div class="tt">10분 실력 진단</div><div class="td">20문제로 지금 예상 점수와 약한 파트 확인</div></span><span class="tn">${ico("right")}</span></button>`}
-        ${S.profile.placed ? "" : T`<button class="task" data-go="place"><span class="tico c-green">${ico("gauge")}</span><span class="spacer"><div class="tt">3분 어휘 진단</div><div class="td">이미 아는 단어는 건너뛰고 필요한 단어부터</div></span><span class="tn">${ico("right")}</span></button>`}
-        <button class="task ${wrong ? "" : "done"}" data-go="wrong"><span class="tico c-red">${ico("alert")}</span><span class="spacer"><div class="tt">오답노트</div><div class="td">${wrong ? T`틀린 단어만 다시 풀어요` : T`아직 틀린 단어가 없어요`}</div></span><span class="tn">${wrong || "–"}</span></button>
-      </div>
+      ${ms && ms.done ? missionDoneCard() : ""}
+      <section class="today ${ms && !ms.done ? "with-mis" : ""}">
+        <div class="today-h"><h2>오늘 할 일</h2><span class="small muted">${fmtDate(t)} · ${nDone}/${items.length}</span></div>
+        ${misHead}
+        <div class="tl">${items.map(row).join("")}</div>
+        ${past}
+        ${ms && !ms.done ? T`<a class="small mis-guide" href="#/guide">${ico("help")}처음이라 막막하다면 사용 가이드 보기</a>` : ""}
+      </section>
+      ${banner ? `<button class="home-banner" data-go="${banner[0]}"><span class="tico ${banner[0] === "diag" ? "c-blue" : "c-green"}">${ico("gauge")}</span><span class="spacer"><b>${banner[1]}</b><span class="small muted">${banner[2]}</span></span>${ico("right")}</button>` : ""}
+      ${wrong ? T`<button class="task home-wrong" data-go="wrong"><span class="tico c-red">${ico("alert")}</span><span class="spacer"><div class="tt">오답노트</div><div class="td">퀴즈·복습에서 틀린 단어 · 2번 연속 맞히면 빠져요</div></span><span class="tn">${wrong}</span></button>` : ""}
       <div class="section"><div class="section-h"><h2>진도</h2><a href="#/stats">자세히</a></div>
         <div class="card">${progressBlock(P)}</div>
       </div>`;
     shell("home", body);
-    $app.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => homeGo(b.dataset.go, plan, introduced)));
+    $app.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => homeGo(b.dataset.go, plan, introduced, task)));
     $app.querySelectorAll("[data-mis]").forEach((b) => b.addEventListener("click", () => missionGo(b.dataset.mis, plan, introduced)));
     const mx = $app.querySelector("[data-mis-close]");
     if (mx) mx.addEventListener("click", () => { S.guide.hide = true; save(); toast(T`설정 → 사용 가이드에서 다시 볼 수 있어요`); vHome(); });
   }
-  // ── 시작 미션 ──
+  // ── 시작 미션: 처음 3일 동안 날마다 한 단계씩 열린다. 날짜가 바뀌면 다음 단계로 넘어가고, 못 한 것은 '지난 미션'으로 접는다 ──
   const missionItems = (G) => G.items.map((x) => (x[0] === "remind" && !Notify.available() ? ["guide", "help", T`사용 가이드 읽어 보기`, T`학습 루틴과 복습 원리 3분 정리`] : x));
+  const MISSION_THEMES = [T`앱과 친해지기`, T`복습 습관 만들기`, T`실전 감각 익히기`];
+  const MISSION_PRAC = { p2: "p2", grammar: "p5g", p3: "p3" }; // 그날 '오늘의 실전'으로 하는 미션
+  const MISSION_COVERED = ["card", "quiz", "review"]; // 오늘 할 일(새 단어·퀴즈·복습)이 대신하는 미션
   function mission(key) {
     const g = S.guide;
     if (!g || g.done[key]) return;
@@ -819,36 +934,40 @@
     save();
     const G = MISSIONS.find((x) => missionItems(x).some((it) => it[0] === key));
     if (G && !g.hide && missionItems(G).every((it) => g.done[it[0]])) {
-      setTimeout(() => { toast(G.day === MISSIONS.length ? T`시작 미션을 모두 끝냈어요! 🎉` : T`${G.day}일차 미션 완료! 내일 ${G.day + 1}일차가 열려요`); confetti(); }, 400);
+      setTimeout(() => { toast(G.day === MISSIONS.length ? T`시작 미션을 모두 끝냈어요! 🎉` : T`시작 미션 ${G.day}단계 완료! 다음 단계는 내일 열려요`); confetti(); }, 400);
     }
   }
-  function missionCard() {
+  function missionState(t, plan) {
     const g = S.guide;
-    if (!g || g.hide) return "";
-    const t = today();
+    if (!g || g.hide) return null;
     if (S.settings.remind && !g.done.remind) g.done.remind = t;
-    const gi = MISSIONS.findIndex((G) => !missionItems(G).every((it) => g.done[it[0]]));
-    const head = (title, sub) => T`<div class="mis-h"><div class="spacer"><div class="eyebrow">시작 미션</div><b>${title}</b>${sub ? `<div class="small muted">${sub}</div>` : ""}</div><div class="mis-dots">${MISSIONS.map((G, i) => `<i class="${i < gi || gi < 0 ? "on" : i === gi ? "cur" : ""}"></i>`).join("")}</div><button class="icon-btn sm" data-mis-close aria-label="미션 닫기">${ico("x")}</button></div>`;
-    if (gi < 0) {
-      return T`<section class="mission done">${head(T`시작 미션 완료! 🎉`, T`토익핏의 핵심 기능을 모두 써 봤어요`)}
-        <p class="small" style="margin:8px 0 12px">이제 <b>하프 모의고사</b>로 지금 실력을 확인해 보세요. 결과에 맞춰 약한 파트부터 연습하면 돼요.</p>
-        <button class="btn block" data-mis="mock">${ico("clock")}하프 모의고사 보러 가기</button></section>`;
-    }
-    const G = MISSIONS[gi];
-    const open = t - g.start >= gi;
-    const items = missionItems(G).map(([k, ic, title, sub]) => {
-      const done = !!g.done[k];
-      return `<button class="mis-item ${done ? "done" : ""}" data-mis="${k}" ${open && !done ? "" : "disabled"}><span class="mis-ck">${done ? ico("check") : ico(ic)}</span><span class="spacer"><span class="tt">${title}</span><span class="td">${sub}</span></span>${open && !done ? ico("right") : ""}</button>`;
-    }).join("");
-    const nDone = missionItems(G).filter((it) => g.done[it[0]]).length;
-    const sub = open ? T`${nDone} / 3 완료 · 하나씩 눌러서 해 보세요` : T`${G.day - 1}일차 완료! ${G.day}일차 미션은 내일 열려요`;
-    return T`<section class="mission ${open ? "" : "locked"}">${head(T`${G.day}일차 · ${[T`앱과 친해지기`, T`복습 습관 만들기`, T`실전 감각 익히기`][gi]}`, sub)}<div class="mis-list">${items}</div>
-      <a class="small mis-guide" href="#/guide">${ico("help")}처음이라 막막하다면 사용 가이드 보기</a></section>`;
+    if (MISSIONS.every((G) => missionItems(G).every((it) => g.done[it[0]]))) return { done: true };
+    const day = t - g.start;
+    if (day > MISSIONS.length + 3) return null; // 시작하고 일주일이 지나면 접는다 (가이드에서 다시 볼 수 있다)
+    const stage = Math.min(MISSIONS.length - 1, Math.max(0, day));
+    // 복습 미션은 복습할 단어가 실제로 있을 때만 보인다
+    const items = missionItems(MISSIONS[stage]).filter((it) => it[0] !== "review" || g.done.review || plan.due.length);
+    // 진단 뒤 3일은 약한 파트가 오늘의 실전이 되므로, 그동안 실전 미션은 따로 한 줄로 보여 준다
+    const weakDays = S.diag && S.diag.weak && t - S.diag.at >= 0 && t - S.diag.at <= 2;
+    const pk = weakDays ? null : items.map((it) => it[0]).find((k) => MISSION_PRAC[k] && !g.done[k]);
+    return {
+      stage,
+      prac: pk ? MISSION_PRAC[pk] : null,
+      extra: items.filter((it) => !MISSION_COVERED.includes(it[0]) && it[0] !== pk),
+      past: MISSIONS.slice(0, stage).flatMap(missionItems).filter((it) => !g.done[it[0]] && !MISSION_COVERED.includes(it[0])),
+      stageDone: items.every((it) => g.done[it[0]]),
+      doneAt: MISSIONS.map((G) => missionItems(G).every((it) => g.done[it[0]])),
+    };
+  }
+  function missionDoneCard() {
+    return T`<section class="mission done"><div class="mis-h"><div class="spacer"><div class="eyebrow">시작 미션</div><b>시작 미션 완료! 🎉</b><div class="small muted">토익핏의 핵심 기능을 모두 써 봤어요</div></div><button class="icon-btn sm" data-mis-close aria-label="미션 닫기">${ico("x")}</button></div>
+      <p class="small" style="margin:8px 0 12px">이제 <b>하프 모의고사</b>로 지금 실력을 확인해 보세요. 결과에 맞춰 약한 파트부터 연습하면 돼요.</p>
+      <button class="btn block" data-mis="mock">${ico("clock")}하프 모의고사 보러 가기</button></section>`;
   }
   function missionGo(k, plan, introduced) {
     if (k === "card") return homeGo("new", plan, introduced);
     if (k === "quiz") { if (!introduced.length) return toast(T`먼저 오늘의 새 단어를 카드로 외워 주세요`); return homeGo("quiz-today", plan, introduced); }
-    if (k === "p2") return startLcQuiz("resp", D.lc || [], 5);
+    if (k === "p2") return startLcQuiz("resp", D.lc || [], 5, { trial: true });
     if (k === "review") { if (!plan.due.length) return toast(T`복습할 단어가 아직 없어요. 외운 단어는 다음 날부터 복습으로 돌아와요`); return homeGo("due", plan, introduced); }
     if (k === "grammar") return go("#/grammar");
     if (k === "listen") return homeGo("listen", plan, introduced);
@@ -870,21 +989,31 @@
     el.querySelector("button").addEventListener("click", () => { S.tips[key] = 1; save(); el.remove(); });
     page.insertAdjacentElement("afterend", el);
   }
-  // 오늘의 실전 과제 (시험일·단어 진도·모의고사 기록 기준)
-  function practiceTaskToday(P, sum, t) {
+  // 오늘의 실전 과제 (시험일·단어 진도·모의고사 기록 기준). 무료 체험은 오늘 실제로 풀 수 있는 것만 고르고, 없으면 null
+  function practiceTaskToday(P, sum, t, ms) {
     const mocks = PR ? allHalves().length : 4;
     const taken = Object.keys(S.mock).filter((k) => /^\d+$/.test(k)).length;
     const last = Object.values(S.mock).reduce((m, r) => Math.max(m, r.at || 0), 0) || null;
     const exam = C.parseYmd(S.profile.examDate);
-    return C.practiceTask({ dday: exam != null ? exam - t : null, seenRatio: P.length ? sum.seen / P.length : 0, dayIndex: t - (S.profile.start || t), mocksLeft: mocks - taken, lastMockDay: last, today: t });
+    const free = locked();
+    const prefer = ms && !ms.done ? ms.prac : null;
+    // 무료: 문법 기초(b01~b04)는 늘 열려 있고, 세트는 파트마다 아직 안 푼 첫 세트, Part 2 는 LC 퀴즈 1회가 남았을 때만. 시작 미션 Part 2 는 무료 횟수와 따로 센다
+    const used = (part) => Object.keys(S.prac).some((k) => k.startsWith(part + "-"));
+    const allow = free ? ["p5g", "mock"].concat(["p3", "p4", "p6", "p7"].filter((p) => !used(p)), (S.freeUse.lcq || 0) < 1 || prefer === "p2" ? ["p2"] : []) : null;
+    const weak = S.diag && S.diag.weak ? partTask(S.diag.weak) : null;
+    const task = C.practiceTask({ dday: exam != null ? exam - t : null, seenRatio: P.length ? sum.seen / P.length : 0, dayIndex: t - (S.profile.start || t), mocksLeft: mocks - taken, lastMockDay: last, today: t, allow, prefer, weak, weakAt: S.diag ? S.diag.at : null, free });
+    if (task && prefer && task.kind === prefer) task.mission = true;
+    else if (task && weak && task.kind === weak && t - S.diag.at <= 2) task.weak = true;
+    return task;
   }
-  function startPracticeTask(task) {
+  function startPracticeTask(task, title0) {
     loadPractice().then(() => {
-      const title = T`오늘의 실전 · ${taskLabel(task)}`;
+      const title = title0 || T`오늘의 실전 · ${taskLabel(task)}`;
       if (task.kind === "mock") return go("#/mock");
-      if (task.kind === "p2") return startLcQuiz("resp", D.lc || [], task.n);
+      if (task.kind === "p2") return startLcQuiz("resp", D.lc || [], task.n, { trial: !!task.mission });
       if (task.kind === "p5g") {
-        const qs = PR.grammar.flatMap((x) => x.qs.filter((q) => !q.mock));
+        // 무료 체험은 늘 열려 있는 문법 기초(b01~b04)에서만
+        const qs = PR.grammar.filter((g) => !locked() || isBasicTopic(g)).flatMap((x) => x.qs.filter((q) => !q.mock));
         return startGrammarQuiz(C.lcPick(qs, S.gq, task.n), title);
       }
       startSets(task.kind, pickSets(practicePool(task.kind), task.n), title);
@@ -901,29 +1030,38 @@
         <div class="stack-bar"><i style="width:${m}%;background:var(--ok)"></i><i style="width:${l}%;background:var(--accent)"></i></div></div>`;
     }).join("") + T`<div class="legend"><span><i style="background:var(--ok)"></i>장기 기억</span><span><i style="background:var(--accent)"></i>복습 중</span><span><i style="background:var(--bg-sunk);border:1px solid var(--line-strong)"></i>아직 안 봄</span></div><div class="small muted" style="margin-top:6px">복습을 2번 더 맞히면 장기 기억이 돼요</div>`;
   }
-  function homeGo(what, plan, introduced) {
+  // 홈의 복습: 오래 밀린 단어부터 20개씩 (합칠 때 단어 학습 쪽 startReview("card") 로 바꿔도 되게 한 곳에서만 부른다)
+  function homeReview() {
+    startReview("card");
+  }
+  function homeGo(what, plan, introduced, task) {
     const P = pool();
     if (what === "new") {
       if (!plan.newWords.length) {
+        const left = P.filter((w) => !canAccessDay(w.d) && !(st(w.id) && st(w.id).n)).length;
+        if (plan.remaining === 0 && left) return toast(T`무료 Day 1~${CONFIG.premium.freeDays}을 다 봤어요. 남은 ${left.toLocaleString()}개는 전체 이용권에서 이어져요`);
         if (plan.remaining === 0) return toast(T`목표 범위의 단어를 모두 봤어요! 복습과 테스트로 굳혀 보세요`);
         return toast(T`오늘 분량을 끝냈어요. 더 하려면 단어장에서 Day를 골라 주세요`);
       }
       return startCard(plan.newWords, { title: T`오늘의 새 단어`, src: "today" });
     }
+    if (what === "lockednew") return paywall("day");
+    if (what === "lockedprac") return paywall("set");
     if (what === "due") {
-      if (!plan.due.length) return toast(T`오늘 복습할 단어가 없어요`);
-      return startCard(plan.due.slice(0, 100), { title: T`복습`, src: "due" });
+      return homeReview();
     }
     if (what === "quiz-today") {
       if (!introduced.length) return toast(T`오늘 새 단어를 먼저 외워 주세요`);
-      return startQuiz(introduced, "mix", { title: T`오늘 단어 퀴즈` });
+      startQuiz(introduced, "mix", { title: T`오늘 단어 퀴즈` });
+      if (session && session.kind === "quiz") session.todayQuiz = true;
+      return;
     }
     if (what === "place") return startPlacement();
-    if (what === "diag") return go("#/diag");
+    if (what === "diag") return pushTo("#/diag", { home: 1 });
     if (what === "prac") {
       const t = today();
       if (S.log[t] && S.log[t].prac) return go("#/practice");
-      return startPracticeTask(practiceTaskToday(P, C.summarize(P, S.words), t));
+      return startPracticeTask(task || practiceTaskToday(P, C.summarize(P, S.words), t, null));
     }
     if (what === "wrong") {
       const ws = WORDS.filter((w) => st(w.id) && st(w.id).wrong);
@@ -978,7 +1116,7 @@
       : `<div class="grid2 grid-days">${DAYS.map(card).join("")}</div>`;
     const body = T`${topBar(T`단어장`, { sub: T`목표 ${target()}점 · ${tr(C.scoreBand(target()).label)} · ${P.length.toLocaleString()}개`, right: T`<a class="icon-btn" href="#/search" aria-label="검색">${ico("search")}</a>` })}
       <div class="chips scroll" style="margin-bottom:14px">
-        <a class="chip" href="#/part1">${ico("camera")}Part 1 사진 표현</a>
+        <a class="chip" href="#/part1">${ico("camera")}Part 1 필수 문장</a>
         <a class="chip" href="#/conf">${ico("split")}혼동 어휘</a>
         ${(D.lc || []).length ? T`<a class="chip" href="#/lc">${ico("ear")}LC 빈출 표현</a>` : ""}
         <a class="chip" href="#/review?tab=star">${ico("star")}중요 단어</a>
@@ -1213,8 +1351,9 @@
   }
   function askExit() {
     if (!session || session.done) return exitStudy();
-    const mock = session.kind === "mock";
-    confirmBox(mock ? T`모의고사를 멈출까요?` : T`학습을 그만할까요?`, mock ? T`푼 답안과 남은 시간이 저장돼요. 모의고사 화면에서 이어서 풀 수 있어요.` : T`지금까지 한 내용은 저장돼요.`, mock ? T`멈추기` : T`그만하기`).then((ok) => { if (ok) { if (mock && session) saveMockRun(session); exitStudy(); } });
+    const mock = session.kind === "mock" && !session.m.diag;
+    const diag = session.kind === "mock" && session.m.diag;
+    confirmBox(mock ? T`모의고사를 멈출까요?` : diag ? T`진단을 그만할까요?` : T`학습을 그만할까요?`, mock ? T`푼 답안과 남은 시간이 저장돼요. 모의고사 화면에서 이어서 풀 수 있어요.` : diag ? T`진단은 저장되지 않아요. 다음에 처음부터 다시 해요.` : T`지금까지 한 내용은 저장돼요.`, mock ? T`멈추기` : T`그만하기`).then((ok) => { if (ok) { if (mock && session) saveMockRun(session); exitStudy(); } });
   }
   function studyTop(cur, total) {
     const pct = total ? Math.round((cur / total) * 100) : 0;
@@ -1437,7 +1576,7 @@
     const q = s.qs[s.i];
     const w = q.word;
     $app.innerHTML = T`<div class="study">${studyTop(s.i, s.qs.length)}
-      <div class="small muted" style="text-align:center">어휘 진단 · 아는 만큼만 답하세요 (점수에 영향 없음)</div>
+      <div class="small muted" style="text-align:center">3분 어휘 진단 · 아는 만큼만 답하세요 (점수에 영향 없음)</div>
       <div class="quiz-q"><div class="qk">알맞은 뜻은?</div><div class="qw en">${esc(w.w)}</div></div>
       <div class="opts">${q.options.map((o, i) => `<button class="opt" data-pick="${i}"><span class="on">${i + 1}</span><span>${esc(o)}</span></button>`).join("")}
         <button class="opt" data-skip style="justify-content:center;color:var(--text-3)">모르겠어요</button></div>
@@ -1766,7 +1905,8 @@
     if (["pset", "gq", "lcq", "dict"].includes(s.kind) && (s.results || []).length >= 3) logToday().prac = true;
     const count = s.kind === "card" ? s.seenIds.size : s.kind === "sort" ? 0 : s.results.length;
     if (count >= 5) markDone();
-    if (s.kind === "lcq" && s.results.length) S.freeUse.lcq = (S.freeUse.lcq || 0) + 1;
+    if (s.kind === "lcq" && s.results.length && !s.trial) S.freeUse.lcq = (S.freeUse.lcq || 0) + 1;
+    if (s.todayQuiz && s.results.length >= 3) logToday().quiz = true;
     if (s.kind === "dict" && s.results.length) S.freeUse.dict = (S.freeUse.dict || 0) + 1;
     if (s.kind === "gq" && s.timed && s.results.length) S.freeUse.timed = (S.freeUse.timed || 0) + 1;
     // 시작 미션
@@ -1820,6 +1960,7 @@
       const r = diagResultHtml(s);
       hero = r.hero;
       actions = r.actions;
+      s._weakTask = r.weakTask;
       list = "";
       if (s.result.est.total >= target()) setTimeout(confetti, 150);
     } else if (s.kind === "mock") {
@@ -1935,7 +2076,10 @@
     const mw = $app.querySelector("[data-mrevw]");
     if (mw) mw.addEventListener("click", () => { s.wrongOnly = true; s.reviewing = mockReviewNext(s, -1, 1); vMockReview(); window.scrollTo(0, 0); });
     const fr = $app.querySelector("[data-free]");
-    if (fr) fr.addEventListener("click", () => { session = null; studyPushed = false; location.replace("#/home"); if (locked()) setTimeout(() => toast(T`무료 범위: 단어 Day 1~${CONFIG.premium.freeDays} · 파트별 실전 1세트`), 300); });
+    // 진단 결과 → 홈: 진단 화면을 기록에서 걷어 내 뒤로가기로 진단에 돌아오지 않게
+    if (fr) fr.addEventListener("click", () => { leaveStudyThen(toHome); if (locked()) setTimeout(() => toast(T`무료 범위: 단어 Day 1~${CONFIG.premium.freeDays} · 파트별 실전 1세트`), 300); });
+    const wg = $app.querySelector("[data-weakgo]");
+    if (wg) wg.addEventListener("click", () => startPracticeTask(s._weakTask, T`약한 파트 연습 · ${taskLabel(s._weakTask)}`));
     const th = $app.querySelector("[data-tohub]");
     if (th) th.addEventListener("click", (e) => { e.preventDefault(); session = null; studyPushed = false; location.replace("#/practice"); });
     const dm = $app.querySelector("[data-dmore]");
@@ -1989,13 +2133,24 @@
     const tab = ui.reviewTab;
     const lists = { due, wrong, star };
     const cur = lists[tab] || due;
+    // 다음 복습: 복습일이 가장 가까운 날과 그날 나올 단어 수 (복습을 다 끝낸 빈 화면에서 보여 준다)
+    const nextDue = (() => {
+      let day = Infinity, n = 0;
+      for (const id of Object.keys(S.words)) {
+        const x = S.words[id];
+        if (!x.n) continue;
+        const d = Math.max(x.due, t + 1); // 오늘 처음 본 단어는 내일부터 복습에 나온다
+        if (d < day) { day = d; n = 1; } else if (d === day) n += 1;
+      }
+      return n ? { day, n } : null;
+    })();
     const desc = { due: T`기억이 흐려질 때쯤 다시 보는 단어예요. 오래 밀린 단어부터 20개씩 비워 주세요.`, wrong: T`퀴즈·복습에서 틀린 단어 · 2번 연속 맞히면 빠져요`, star: T`★ 표시한 단어예요.` }[tab];
     const chunk = tab === "due" && cur.length > REVIEW_CHUNK;
     const body = T`${topBar(T`복습`)}
       <div class="seg" style="margin-bottom:14px">${[["due", T`복습 예정 ${due.length}`], ["wrong", T`오답노트 ${wrong.length}`], ["star", T`★ 중요 ${star.length}`]].map(([k, l]) => `<button class="${tab === k ? "on" : ""}" data-tab="${k}">${l}</button>`).join("")}</div>
       <p class="small muted" style="margin:0 2px 12px">${desc}</p>
       ${cur.length ? T`${chunk ? T`<button class="btn block review-go" data-start="card">${ico("layers")}<span>${REVIEW_CHUNK}개 복습하기 (약 ${reviewMin(REVIEW_CHUNK)}분)<small>남은 ${cur.length}개 · 오래된 단어부터</small></span></button><button class="btn ghost block" style="margin:10px 0 14px" data-start="quiz">${ico("zap")}퀴즈로 ${REVIEW_CHUNK}개 복습</button>` : T`<div class="grid2" style="margin-bottom:14px"><button class="btn" data-start="card">${ico("layers")}카드로</button><button class="btn ghost" data-start="quiz">${ico("zap")}퀴즈로</button></div>`}<div class="wlist">${cur.slice(0, 300).map(wordItem).join("")}</div>`
-        : `<div class="card empty">${ico(tab === "star" ? "star" : "check")}<b>${tab === "due" ? T`오늘 복습 끝!` : tab === "wrong" ? T`틀린 단어가 없어요` : T`중요 표시한 단어가 없어요`}</b>${tab === "star" ? T`단어 옆 ☆를 눌러 모아 보세요` : T`새 단어를 학습하면 여기에 쌓여요`}</div>`}
+        : `<div class="card empty">${ico(tab === "star" ? "star" : "check")}<b>${tab === "due" ? T`오늘 복습 끝!` : tab === "wrong" ? T`틀린 단어가 없어요` : T`중요 표시한 단어가 없어요`}</b>${tab === "star" ? T`단어 옆 ☆를 눌러 모아 보세요` : tab === "due" && nextDue ? nextDue.day === t + 1 ? T`내일 복습 ${nextDue.n}개가 기다리고 있어요` : T`${fmtDate(nextDue.day)}에 복습 ${nextDue.n}개가 기다리고 있어요` : T`새 단어를 학습하면 여기에 쌓여요`}</div>`}
       <div class="section"><div class="section-h"><h2>전체 범위 테스트</h2></div>
         <button class="task" data-random ${learned.length >= 4 ? "" : "disabled"}><span class="tico c-purple">${ico("shuffle")}</span><span class="spacer"><div class="tt">배운 단어 랜덤 30문제</div><div class="td">${learned.length ? T`지금까지 본 ${learned.length}개 중에서` : T`단어를 먼저 학습해 주세요`}</div></span>${ico("right")}</button></div>`;
     shell("review", body);
@@ -2146,8 +2301,9 @@
   // ═════════════ LC 실전 퀴즈 ═════════════
   // resp: Part 2 응답 고르기 (질문 → 보기 3개를 차례로 들려준다) · lcm: Part 3·4 문장을 듣고 해석 고르기
   const LCQ_N = 20;
-  function startLcQuiz(type, items, count) {
-    if (locked() && (S.freeUse.lcq || 0) >= 1) return paywall("lc");
+  function startLcQuiz(type, items, count, opt) {
+    const trial = !!(opt && opt.trial); // 시작 미션 맛보기: 무료 LC 퀴즈 횟수와 따로 센다
+    if (locked() && !trial && (S.freeUse.lcq || 0) >= 1) return paywall("lc");
     let src = items.filter(type === "resp" ? C.canRespond : (p) => !C.splitDialog(p.e));
     const everything = (D.lc || []).filter(type === "resp" ? C.canRespond : (p) => !C.splitDialog(p.e));
     if (src.length < 4) src = everything;
@@ -2155,7 +2311,7 @@
     const picked = C.lcPick(src, S.lc, count || LCQ_N);
     const pool = everything.length >= 8 ? everything : D.lc;
     const qs = picked.map((p) => (type === "resp" ? C.makeResponse(p) : C.makeLcMeaning(p, pool)));
-    session = { kind: "lcq", type, title: type === "resp" ? T`Part 2 응답 고르기` : T`듣고 해석 고르기`, qs, src, i: 0, answered: null, results: [], from: location.hash };
+    session = { kind: "lcq", type, title: type === "resp" ? T`Part 2 응답 고르기` : T`듣고 해석 고르기`, qs, src, i: 0, answered: null, results: [], from: location.hash, trial };
     enterStudy();
   }
   let lcqSeq = 0;
@@ -3558,7 +3714,7 @@
     const est = C.estimateTotal(stat.lc[0] / Math.max(1, stat.lc[1]), stat.rc[0] / Math.max(1, stat.rc[1]));
     const attempt = prev ? (prev.n || 1) + 1 : 1;
     const first = prev ? prev.first || prev.total : est.total;
-    if (s.m.diag) S.diag = { lc: est.lc, rc: est.rc, total: est.total, at: today() };
+    if (s.m.diag) S.diag = Object.assign({ lc: est.lc, rc: est.rc, total: est.total, at: today() }, diagWeak(parts) ? { weak: diagWeak(parts) } : {});
     else S.mock[s.m.n] = Object.assign({}, est, { at: today(), ts: (prev && prev.ts) || Date.now(), best: Math.max(est.total, (prev && prev.best) || 0), n: attempt, first, firstLc: prev ? prev.firstLc : est.lc, firstRc: prev ? prev.firstRc : est.rc });
     const time = { rcUsed: s.rcStart ? Math.min(Date.now() - s.rcStart, s.rcMin * 60000) : 0, rcMin: s.rcMin, tPart: s.tPart };
     s.result = { est, stat, parts, attempt, first, types, blank, time };
@@ -3573,7 +3729,7 @@
     if (!needPractice(r)) return;
     if (!PR.diag) return go("#/home");
     const d = S.diag;
-    const body = `${topBar(T`10분 실력 진단`, { back: true, sub: T`20문제로 지금 실력을 알아봐요` })}
+    const body = `${topBar(T`실력 진단 (약 12분)`, { back: true, sub: T`20문제로 지금 실력을 알아봐요` })}
       ${d ? T`<section class="score-card"><div class="eyebrow">진단 결과 (${fmtDate(d.at)})</div><div class="big">${d.total}<small>점</small></div><div class="meta"><div><b>${d.lc}</b>LC</div><div><b>${d.rc}</b>RC</div><div><b>${Math.max(0, target() - d.total)}점</b>목표까지</div></div></section>
         <p class="small muted" style="margin:12px 2px">진단은 한 번만 해요. 이제 실전 문제를 풀수록 예상 점수가 더 정확해지고, <b>하프 모의고사</b>로 실력을 다시 확인할 수 있어요.</p>
         <a class="btn block" href="#/mock">${ico("clock")}하프 모의고사 보러 가기</a>`
@@ -3588,9 +3744,9 @@
         <button class="btn ghost block" style="margin-top:10px" data-diag-later>나중에 할게요</button>`}`;
     shell("practice", body);
     const g = $app.querySelector("[data-diag-go]");
-    if (g) g.addEventListener("click", () => startMock(Object.assign({}, PR.diag, { title: T`10분 실력 진단`, rcMin: 10, diag: true })));
+    if (g) g.addEventListener("click", () => startMock(Object.assign({}, PR.diag, { title: T`실력 진단`, rcMin: 10, diag: true })));
     const l = $app.querySelector("[data-diag-later]");
-    if (l) l.addEventListener("click", () => { toast(T`홈의 '10분 실력 진단'에서 언제든 할 수 있어요`); go("#/home"); });
+    if (l) l.addEventListener("click", () => { toast(T`홈의 '실력 진단'에서 언제든 할 수 있어요`); toHome(); });
   }
   // 출시 할인 중인가 (기기 날짜 기준, 마지막 날 포함)
   function saleOn() { const d = new Date(), y = d.getFullYear(), m = String(d.getMonth() + 1).padStart(2, "0"), dd = String(d.getDate()).padStart(2, "0"); return `${y}-${m}-${dd}` <= CONFIG.premium.saleUntil; }
@@ -3642,20 +3798,28 @@
     const exam = C.parseYmd(S.profile.examDate);
     const dday = exam != null ? exam - today() : null;
     const daily = S.profile.daily;
-    const mins = Math.round(daily * 0.35 + Math.min(daily, 60) * 0.2 + 10);
-    const rate = Object.keys(parts).map((k) => [k, parts[k][0] / parts[k][1]]).sort((a, b) => a[1] - b[1]);
-    const weak = rate.length && rate[0][1] < 1 ? rate[0][0] : null;
+    const mins = wordMin(daily) + 5;
+    const weak = diagWeak(parts);
+    // 약한 파트를 바로 연습 (무료 체험은 세트 1개)
+    const wt = weak && PRACTICE_KIND_OK(partTask(weak)) ? { kind: partTask(weak), n: weak === "p2" || weak === "p5" ? 10 : locked() ? 1 : weak === "p3" || weak === "p4" ? 3 : 2 } : null;
     const hero = T`<div class="result-hero"><div class="eyebrow muted">지금 실력 · 진단 20문제 기준</div><div class="score" style="color:var(--brand)">${est.total}<small>점</small></div><div class="msg">LC ${est.lc} · RC ${est.rc}</div>
       <div class="diag-gap ${gap <= 0 ? "ok" : ""}">${gap > 0 ? T`목표 <b>${target()}점</b>까지 <b>${gap}점</b> 남았어요` : T`이미 목표 ${target()}점 수준이에요! 고득점 단어와 모의고사로 굳혀요`}</div></div>`;
     const plan = T`<div class="card diag-plan"><b>맞춤 학습 계획</b>
       <div><span class="pi">${ico("clock")}</span><span>하루 약 <b>${mins}분</b> · 새 단어 ${daily}개 + 복습 + 오늘의 실전</span></div>
       ${dday != null && dday > 0 ? T`<div><span class="pi">${ico("calendar")}</span><span>시험까지 <b>D-${dday}</b> · 매일 하면 목표 범위를 시험 전에 끝내요</span></div>` : ""}
-      ${weak ? T`<div><span class="pi">${ico("target")}</span><span>가장 약한 파트 <b>${PART_LABEL[weak]}</b> · 오늘의 실전에서 먼저 연습해요</span></div>` : ""}
-      <div class="small muted" style="margin-top:6px">20문제로 낸 대략적인 점수예요. 실전 문제를 풀수록 예상 점수가 정확해져요.</div></div>`;
+      ${weak ? T`<div><span class="pi">${ico("target")}</span><span>가장 약한 파트 <b>${PART_LABEL[weak]}</b> (${PART_DESC[weak]}) · 앞으로 3일 동안 오늘의 실전에서 먼저 연습해요</span></div>` : ""}
+      <div class="small muted" style="margin-top:6px">20문제로 낸 대략적인 점수예요. 실전 문제를 풀수록 예상 점수가 정확해져요.</div>
+      ${wt ? T`<button class="btn ghost block" style="margin-top:12px" data-weakgo>${ico("target")}지금 ${taskLabel(wt)} 풀기</button>` : ""}</div>`;
     const tail = T`<button class="btn ghost block" style="margin-top:10px" data-mrev>${ico("book")}진단 문제 해설 보기</button>`;
     const actions = plan + (locked() ? offerHtml(gap > 0 ? T`${gap}점, 토익핏으로 올려요` : T`전체 이용권`) + tail : T`<button class="btn block" style="margin-top:12px" data-free>${ico("play")}학습 시작하기</button>` + tail);
-    return { hero, actions };
+    return { hero, actions, weakTask: wt };
   }
+  // 진단 결과에서 가장 약한 파트 (정답률이 가장 낮은 파트, 다 맞혔으면 없음)
+  function diagWeak(parts) {
+    const rate = Object.keys(parts).map((k) => [k, parts[k][0] / parts[k][1]]).sort((a, b) => a[1] - b[1]);
+    return rate.length && rate[0][1] < 1 ? rate[0][0] : null;
+  }
+  const PRACTICE_KIND_OK = (k) => ["p2", "p3", "p4", "p5g", "p6", "p7"].includes(k);
   function mockResultHtml(s) {
     const { est, stat, parts, attempt, first } = s.result;
     const gap = target() - est.total;
@@ -3774,21 +3938,49 @@
   }
 
   // ═════════════ 검색 ═════════════
+  // 검색: 단어와 함께 문법 주제·기능 바로 가기도 찾는다 ("문법", "part 5", "모의고사", "받아쓰기" 등)
+  const FEATURES = [
+    [["문법", "grammar", "part5", "파트5", "어법"], "#/grammar", "book", T`Part 5 문법`, T`주제별 강의 + 실전 문제`],
+    [["모의고사", "mock", "시험", "test", "하프", "정규"], "#/mock", "clock", T`모의고사`, T`하프·정규 모의고사로 예상 점수`],
+    [["받아쓰기", "dictation", "딕테이션", "쉐도잉"], "#/dict", "pencil", T`받아쓰기`, T`LC 문장을 듣고 그대로 쓰기`],
+    [["진단", "실력", "diagnos", "레벨"], "#/diag", "gauge", T`실력 진단 (약 12분)`, T`20문제로 예상 점수와 약한 파트 확인`],
+    [["part1", "파트1", "사진"], "#/part1", "camera", T`Part 1 필수 문장 외우기`, T`사진 묘사 필수 문장`],
+    [["part2", "파트2", "응답", "lc", "듣기", "listening"], "#/lc", "ear", T`LC 빈출 표현 · Part 2 응답`, T`질문 듣고 알맞은 응답 고르기`],
+    [["part3", "파트3", "대화"], "#/sets/p3", "headphones", T`Part 3 대화`, T`두 사람 이상의 대화 듣고 문제 풀기`],
+    [["part4", "파트4", "담화", "안내"], "#/sets/p4", "headphones", T`Part 4 담화`, T`안내·방송 같은 담화 듣고 문제 풀기`],
+    [["part6", "파트6", "장문"], "#/sets/p6", "list", T`Part 6 장문 빈칸`, T`지문 빈칸에 알맞은 말·문장 고르기`],
+    [["part7", "파트7", "독해", "reading", "rc"], "#/sets/p7", "list", T`Part 7 독해`, T`지문 읽고 문제 풀기`],
+    [["혼동", "confus", "헷갈"], "#/conf", "split", T`혼동 어휘`, T`헷갈리는 단어 세트`],
+    [["복습", "review", "오답", "중요"], "#/review", "repeat", T`복습 · 오답노트`, T`복습 예정 · 틀린 단어 · ★ 중요 단어`],
+    [["단어장", "day", "코스", "voca"], "#/days", "layers", T`단어장`, T`Day별 단어 · 1~3단계 코스`],
+    [["통계", "stats", "기록", "점수"], "#/stats", "chart", T`학습 통계`, T`예상 점수 · 학습 기록`],
+    [["가이드", "도움", "help", "사용법"], "#/guide", "help", T`사용 가이드`, T`하루 루틴 · 토익 구성 · 자주 묻는 질문`],
+    [["설정", "settings", "알림", "목표", "계획"], "#/settings", "gear", T`설정`, T`목표 점수 · 학습 계획 · 알림`],
+  ];
   function vSearch() {
     const body = T`${topBar(T`단어 검색`, { back: true })}
-      <div class="search-box">${ico("search")}<input id="sq" type="search" placeholder="영어 또는 한국어 뜻으로 검색" value="${esc(ui.searchQ)}" autocomplete="off" autocapitalize="off" spellcheck="false" /></div>
+      <div class="search-box">${ico("search")}<input id="sq" type="search" placeholder="단어·뜻·문법·기능 이름으로 검색" value="${esc(ui.searchQ)}" autocomplete="off" autocapitalize="off" spellcheck="false" /></div>
       <div id="sres" style="margin-top:14px"></div>`;
     shell("search", body);
     const input = document.getElementById("sq");
     const run = () => {
       ui.searchQ = input.value;
+      const q = input.value.trim().toLowerCase();
+      const qn = q.replace(/\s+/g, "");
       const res = C.search(WORDS, input.value, 60);
-      document.getElementById("sres").innerHTML = input.value.trim()
-        ? res.length ? T`<div class="small muted" style="margin:0 2px 8px">${res.length}개</div><div class="wlist">${res.map(wordItem).join("")}</div>` : T`<div class="empty">${ico("search")}<b>검색 결과가 없어요</b>철자를 확인하거나 다른 뜻으로 찾아보세요</div>`
-        : T`<div class="empty">${ico("book")}<b>${NWORDS}개 토익 단어에서 찾아요</b>파생어·동의어·한국어 뜻으로도 검색돼요</div>`;
+      const hit = (txt) => qn.length >= 1 && txt.toLowerCase().replace(/\s+/g, "").includes(qn);
+      const feats = qn.length >= 2 ? FEATURES.filter(([keys, , , label]) => keys.some((k) => k.includes(qn) || (qn.length >= 2 && qn.includes(k))) || hit(label)).slice(0, 4) : [];
+      const topics = qn.length >= 2 && PR ? (PR.grammar || []).filter((t) => hit(tr(t.title)) || hit(tr(t.cat)) || hit(t.title)).slice(0, 6) : [];
+      const link = (href, ic, t, d) => `<a class="witem s-link" href="${href}"><span class="tico c-blue">${ico(ic)}</span><div class="wbody"><div class="ww" style="font-size:16px">${t}</div><div class="wm">${d}</div></div>${ico("right")}</a>`;
+      const extra = (feats.length ? T`<div class="s-h small muted">바로 가기</div><div class="wlist">${feats.map(([, h, ic, t, d]) => link(h, ic, t, d)).join("")}</div>` : "")
+        + (topics.length ? T`<div class="s-h small muted">문법 주제</div><div class="wlist">${topics.map((t) => link(`#/grammar/${t.id}`, "book", esc(tr(t.title)), T`${esc(tr(t.cat))} · 문제 ${t.qs.filter((x) => !x.mock).length}개`)).join("")}</div>` : "");
+      document.getElementById("sres").innerHTML = q
+        ? res.length || extra ? extra + (res.length ? T`<div class="s-h small muted">단어 ${res.length}개</div><div class="wlist">${res.map(wordItem).join("")}</div>` : "") : T`<div class="empty">${ico("search")}<b>검색 결과가 없어요</b>철자를 확인하거나 다른 뜻으로 찾아보세요</div>`
+        : T`<div class="empty">${ico("book")}<b>${NWORDS}개 토익 단어에서 찾아요</b>파생어·동의어·한국어 뜻으로도 검색돼요. "문법", "모의고사", "받아쓰기"처럼 기능 이름도 찾을 수 있어요</div>`;
     };
     input.addEventListener("input", run);
     run();
+    if (!PR) loadPractice().then(() => { if (route().name === "search" && document.getElementById("sq") === input) run(); }).catch(() => {});
     setTimeout(() => input.focus(), 50);
   }
 
@@ -3878,13 +4070,23 @@
     mission("guide");
     const step = (n, ic, cls, t, d) => `<div class="g-step"><span class="g-n">${n}</span><span class="tico ${cls}">${ico(ic)}</span><div class="spacer"><b>${t}</b><div class="small muted">${d}</div></div></div>`;
     const faq = (q, a) => `<details class="faq"><summary>${q}</summary><div>${a}</div></details>`;
+    // 토익 구성 1분 요약: 처음 보는 사람이 파트 이름을 알 수 있게
+    const part = (p, n) => `<div class="g-part"><b>${PART_LABEL[p]}</b><span>${PART_DESC[p]}</span><em>${n}</em></div>`;
     const body = T`${topBar(T`사용 가이드`, { back: true, sub: T`3분이면 토익핏을 제대로 쓰는 법을 알 수 있어요` })}
+      <section class="card g-card g-toeic">
+        <h2 class="g-h">${ico("info")}토익 구성 1분 요약</h2>
+        <p class="small muted" style="margin:0 0 10px">LC(듣기) 100문제 45분 + RC(읽기) 100문제 75분 · 총 200문제 2시간, 990점 만점이에요.</p>
+        <div class="g-sec">LC 듣기 · 약 45분</div>
+        ${part("p1", T`6문제`)}${part("p2", T`25문제`)}${part("p3", T`39문제`)}${part("p4", T`30문제`)}
+        <div class="g-sec">RC 읽기 · 75분</div>
+        ${part("p5", T`30문제`)}${part("p6", T`16문제`)}${part("p7", T`54문제`)}
+      </section>` + T`
       <section class="card g-card">
         <h2 class="g-h">${ico("calendar")}하루 학습 루틴</h2>
-        <p class="small muted" style="margin:0 0 10px">홈의 <b>오늘의 학습</b> 버튼이 아래 순서대로 다음 할 일을 알려 줘요. 버튼만 따라가면 돼요.</p>
+        <p class="small muted" style="margin:0 0 10px">홈의 <b>오늘 할 일</b>이 아래 순서대로 지금 할 일을 큰 버튼으로 알려 줘요. 버튼만 따라가면 돼요.</p>
         ${step(1, "repeat", "c-orange", T`복습 먼저`, T`어제까지 외운 단어 중 잊을 때가 된 것부터. 먼저 하면 기억이 오래가요.`)}
-        ${step(2, "layers", "c-blue", T`새 단어`, T`목표 ${target()}점에 맞춘 하루 ${S.profile.daily}개. 카드로 뜻을 확인하고 퀴즈로 마무리해요.`)}
-        ${step(3, "target", "c-green", T`오늘의 실전`, T`목표 점수와 진도에 맞춘 실전 문제 10분. 시험 2주 전부터는 하프 모의고사가 나와요.`)}
+        ${step(2, "layers", "c-blue", T`새 단어`, T`목표 ${target()}점에 맞춘 하루 ${S.profile.daily}개. 카드로 뜻을 확인하고 오늘 단어 퀴즈로 마무리해요.`)}
+        ${step(3, "target", "c-green", T`오늘의 실전`, T`목표 점수와 진도에 맞춘 실전 문제 약 5분. 시험 2주 전부터는 하프 모의고사가 나와요.`)}
       </section>
       <section class="card g-card">
         <h2 class="g-h">${ico("layers")}단어 카드 버튼의 뜻</h2>
@@ -3918,7 +4120,7 @@
       <div class="card faq-list">
         ${faq(T`하루 몇 개씩 외우는 게 좋아요?`, T`목표 점수와 시험일로 계산한 양이 기본이에요. 바쁘면 줄여도 되지만 <b>복습은 매일</b> 하는 게 중요해요. 설정 → 학습 계획에서 언제든 바꿀 수 있어요.`)}
         ${faq(T`하루를 건너뛰면 어떻게 돼요?`, T`밀린 복습이 다음 날 한꺼번에 나와요. 많으면 오늘은 복습만 해도 괜찮아요. 새 단어는 복습을 끝낸 뒤에 이어서 하세요.`)}
-        ${faq(T`이미 아는 단어가 너무 많이 나와요`, T`설정 → <b>어휘 진단</b>을 해 보세요. 3분이면 아는 단계의 단어를 건너뛰게 해 드려요. 카드에서 바로 '알아요'를 눌러도 돼요.`)}
+        ${faq(T`이미 아는 단어가 너무 많이 나와요`, T`홈이나 설정에서 <b>3분 어휘 진단</b>을 해 보세요. 아는 단계의 단어를 건너뛰게 해 드려요. 카드에서 바로 '알아요'를 눌러도 돼요.`)}
         ${faq(T`목표 점수를 바꾸면 기록이 지워지나요?`, T`아니요. 외운 단어와 문제 기록은 그대로이고, 앞으로 나올 단어의 범위와 난이도만 바뀌어요.`)}
         ${faq(T`인터넷이 없어도 되나요?`, T`네. 단어·음성·문제가 모두 앱 안에 들어 있어서 비행기 모드에서도 쓸 수 있어요.`)}
         ${faq(T`기록을 새 폰으로 옮기려면?`, T`설정 → <b>학습 기록 백업</b>으로 파일을 만들고, 새 폰에서 <b>백업 불러오기</b>를 하세요. 기록은 이 기기에만 저장돼요.`)}
@@ -3933,6 +4135,8 @@
     $app.querySelector("[data-guide-mis]").addEventListener("click", () => {
       if (!S.guide) S.guide = { start: today(), done: {}, hide: false };
       S.guide.hide = false;
+      // 시작한 지 오래됐으면 남은 미션을 오늘부터 다시 한 단계씩 연다
+      if (today() - S.guide.start > MISSIONS.length - 1) S.guide.start = today() - Math.max(0, MISSIONS.findIndex((G) => !missionItems(G).every((it) => S.guide.done[it[0]])));
       save();
       toast(T`홈 화면에 시작 미션을 다시 띄웠어요`);
       go("#/home");
@@ -3957,7 +4161,7 @@
       <div class="set-title">학습 계획</div>
       <div class="set-group">
         <a class="set-row" href="#/onboarding"><span class="sl"><b>목표 점수 · 시험일 · 하루 학습량</b><span>${p.target}점 · ${p.examDate ? T`시험 ${fmtDate(C.parseYmd(p.examDate))}` : T`시험일 미정`} · 하루 ${p.daily}개</span></span>${ico("right")}</a>
-        <button class="set-row" data-place><span class="sl"><b>어휘 진단 ${S.profile.placed ? T`다시 하기` : T`하기`}</b><span>${(S.profile.skip || []).length ? T`지금 ${S.profile.skip.map((t) => tr(C.TIER_NAMES[t])).join("·")} 단어를 건너뛰는 중` : T`3분 테스트로 아는 단어를 건너뛰어요`}</span></span>${ico("gauge")}</button>
+        <button class="set-row" data-place><span class="sl"><b>3분 어휘 진단${S.profile.placed ? T` 다시 하기` : ""}</b><span>${(S.profile.skip || []).length ? T`지금 ${S.profile.skip.map((t) => tr(C.TIER_NAMES[t])).join("·")} 단어를 건너뛰는 중` : T`3분 테스트로 아는 단어를 건너뛰어요`}</span></span>${ico("gauge")}</button>
         ${(S.profile.skip || []).length ? T`<button class="set-row" data-unskip><span class="sl"><b>건너뛴 단어 다시 포함</b><span>${S.profile.skip.map((t) => tr(C.TIER_NAMES[t])).join("·")} 단어를 오늘의 학습에 다시 넣어요</span></span>${ico("repeat")}</button>` : ""}
         ${Notify.available() ? T`${sw("remind", T`매일 학습 알림`, T`정한 시간에 오늘의 단어를 알려 드려요`)}
         <label class="set-row"><span class="sl"><b>알림 시간</b></span><input type="time" class="field" data-remind-at value="${esc(s.remindAt)}" style="width:130px;height:40px" ${s.remind ? "" : "disabled"} /></label>` : ""}
@@ -4214,7 +4418,8 @@
       if (document.getElementById("modal")) return closeModal();
       if (session && !session.done) return askExit();
       if (session && session.done) return exitStudy();
-      if (route().name === "home" || !canGoBack) return P.App.minimizeApp ? P.App.minimizeApp() : P.App.exitApp();
+      if (route().name === "home" || (!canGoBack && route().name === "onboarding")) return P.App.minimizeApp ? P.App.minimizeApp() : P.App.exitApp();
+      if (!canGoBack) return location.replace("#/home"); // 홈이 아닌 화면에서 더 갈 곳이 없으면 홈으로
       history.back();
     });
   })();
