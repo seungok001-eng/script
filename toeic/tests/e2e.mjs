@@ -40,17 +40,36 @@ await p.goBack(); await p.waitForTimeout(3500);
 ok(p.url().endsWith("#/day/1"), "back from listen → day1: " + p.url());
 ok(await p.$(".tabbar"), "listen did not overwrite page");
 // 3) 퀴즈 나가기 후 뒤로가기 함정 없음
-await p.click('[data-mode="meaning"]'); await p.waitForTimeout(200);
+await p.evaluate(() => { const m = document.querySelector(".more-modes"); if (m) m.open = true; }); await p.click('[data-mode="meaning"]'); await p.waitForTimeout(200);
 await p.click("[data-exit]"); await p.click('[data-r="1"]'); await p.waitForTimeout(300);
 ok(p.url().endsWith("#/day/1"), "exit quiz → day1: " + p.url());
 await p.goBack(); await p.waitForTimeout(300);
 ok(!p.url().includes("study"), "back after exit not study: " + p.url());
 // 4) 정답 직후 뒤로가기 → 자동 넘김이 다른 화면을 덮지 않음
 await p.goto(base + "#/day/2"); await p.waitForTimeout(200);
-await p.click('[data-mode="meaning"]'); await p.waitForTimeout(200);
+await p.evaluate(() => { const m = document.querySelector(".more-modes"); if (m) m.open = true; }); await p.click('[data-mode="meaning"]'); await p.waitForTimeout(200);
 const ans = await p.evaluate(() => { const q = document.querySelectorAll("[data-pick]"); return q.length; });
 await p.click('[data-pick="0"]'); await p.goBack(); await p.waitForTimeout(1300);
 ok(await p.$(".tabbar"), "quiz timer did not overwrite page");
+// 4-1) Day 다음 단계: 아는 단어 빼기 → 결과의 돌아가기 이름 → 카드(처음 보는 단어 '몰라요'는 오답노트에 안 들어감)
+await p.goto(base + "#/day/3"); await p.waitForTimeout(200);
+ok((await p.textContent("[data-next-step]")).includes("아는 단어 빼기") && (await p.$$(".steps li")).length === 4, "day next step = sort");
+await p.click("[data-next-step]"); await p.waitForTimeout(200);
+for (let k = 0; k < 60 && !(await p.$(".result-hero")); k++) { await p.click('[data-k="0"]'); await p.waitForTimeout(20); }
+ok((await p.textContent('.result-hero ~ [data-home], [data-home].btn')).includes("DAY 03로 돌아가기"), "sort result back label");
+await p.click("[data-sortcard]"); await p.waitForTimeout(200);
+ok(await p.$(".f-hint.sub"), "first card hint");
+await p.click("[data-flip]"); await p.click('[data-g="0"]'); await p.waitForTimeout(100);
+ok(await p.evaluate(() => !Object.values(window.__toeicfit.state.words).some((x) => x.wrong)), "first-time 몰라요 not in wrong notebook");
+await p.click("[data-exit]"); await p.click('[data-r="1"]'); await p.waitForTimeout(300);
+ok(p.url().endsWith("#/day/3") && (await p.textContent("[data-next-step]")).includes("카드로"), "day next step = cards after sort: " + p.url());
+// 복습 20개씩: 밀린 복습이 많으면 20개 묶음 버튼
+await p.evaluate(() => { const S = window.__toeicfit.state, C = window.__toeicfit.Core, t = C.dayNum(); window.VOCA_DATA.words.slice(100, 140).forEach((w) => { S.words[w.id] = { b: 1, due: t - 2, n: 2, ok: 1, ng: 1, last: t - 3, first: t - 5 }; }); });
+await p.goto(base + "#/review"); await p.waitForTimeout(200);
+ok((await p.textContent(".review-go")).includes("20개 복습하기"), "review chunk button");
+await p.click('.review-go'); await p.waitForTimeout(200);
+ok((await p.textContent(".cnt")).endsWith("/ 20"), "review chunk of 20: " + (await p.textContent(".cnt")));
+await p.click("[data-exit]"); await p.click('[data-r="1"]'); await p.waitForTimeout(300);
 // 5) 설정 화면 레이아웃 (가로 스크롤 없음)
 for (const r of ["#/settings", "#/review", "#/stats", "#/home", "#/days", "#/part1", "#/conf", "#/search", "#/lc", "#/practice", "#/grammar", "#/mock", "#/dict"]) {
   await p.goto(base + r); await p.waitForTimeout(250);

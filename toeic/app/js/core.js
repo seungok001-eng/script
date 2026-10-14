@@ -69,39 +69,56 @@
   function newState() {
     return { b: 0, due: 0, n: 0, ok: 0, ng: 0, last: 0 };
   }
-  // g: 0 = 모르겠어요, 1 = 헷갈려요, 2 = 알아요
+  // 오답노트: 이미 본 단어(처음 보는 날이 아닌 단어)를 틀리면 넣고, 퀴즈·복습에서 2번 연속 맞히면 뺀다 (cs = 연속 정답 수)
+  const WRONG_CLEAR = 2;
+  function wrongMiss(s, seenBefore) {
+    if (seenBefore) s.wrong = true;
+    if (s.wrong) s.cs = 0;
+    else delete s.cs;
+  }
+  function wrongHit(s) {
+    if (!s.wrong) { delete s.cs; return; }
+    s.cs = (s.cs || 0) + 1;
+    if (s.cs >= WRONG_CLEAR) { delete s.wrong; delete s.cs; }
+  }
+  // g: 0 = 몰라요, 1 = 헷갈려요, 2 = 알아요. 처음 보는 날 '몰라요'는 오답노트에 넣지 않는다
   function grade(st, g, today) {
     const s = Object.assign(newState(), st || {});
+    const seenBefore = !!(st && st.n) && (st.first == null || st.first < today);
     s.n += 1;
     s.last = today;
     if (!s.first) s.first = today;
     if (g >= 2) {
       s.b = Math.min(s.b + 1, INTERVALS.length - 1);
       s.ok += 1;
+      wrongHit(s);
     } else if (g === 1) {
       s.b = Math.max(1, s.b - 1);
+      if (s.wrong) s.cs = 0;
     } else {
       s.b = 0;
       s.ng += 1;
-      s.wrong = true;
+      wrongMiss(s, seenBefore);
     }
     s.due = today + (s.b === 0 ? 0 : INTERVALS[s.b]);
     return s;
   }
-  // 퀴즈 결과 반영: 복습할 때가 된 단어를 맞히면 한 단계 올리고, 틀리면 오답노트 + 내일 다시
+  // 퀴즈 결과 반영: 복습할 때가 된 단어를 맞히면 한 단계 올리고, 틀리면 내일 다시 (이미 본 단어면 오답노트에)
   function applyQuiz(st, correct, today) {
     const s = Object.assign(newState(), st || {});
     if (correct) {
       if (s.n === 0 || s.due <= today) return grade(s, 2, today);
       s.ok += 1;
       s.last = today;
+      wrongHit(s);
       return s;
     }
+    const seenBefore = !!(st && st.n);
     s.n += 1;
     s.ng += 1;
     s.last = today;
     if (!s.first) s.first = today;
-    s.wrong = true;
+    wrongMiss(s, seenBefore);
     s.b = Math.min(s.b, 1);
     s.due = today + (s.b === 0 ? 0 : 1);
     return s;
@@ -117,6 +134,7 @@
     s.due = today + INTERVALS[3];
     if (!s.first) { s.first = today; s.known = true; }
     delete s.wrong;
+    delete s.cs;
     return s;
   }
   function status(st) {
@@ -598,7 +616,7 @@
   return {
     DAY_MS, dayNum, dayToDate, ymd, parseYmd,
     TIER_NAMES, SCORE_OPTIONS, tiersFor, scoreBand, poolFor, recommendDaily,
-    INTERVALS, MASTER_BOX, newState, grade, applyQuiz, markKnown, status, isDue, listSep,
+    INTERVALS, MASTER_BOX, WRONG_CLEAR, newState, grade, applyQuiz, markKnown, status, isDue, listSep,
     todayPlan, streak,
     rng, shuffle, meaningText, distractors, starred, cloze, plainEx, makeQuestion, makeTest,
     canParaphrase, makeParaphrase, placementSample,
