@@ -3135,7 +3135,7 @@
         <li>단어 <b>${NWORDS.toLocaleString()}개</b> 전체 · 원어민 음성 · 90일 코스</li>
         <li>Part 1~7 실전 문제 <b>전부</b> · 정답 근거 해설</li>
         <li>하프 모의고사 <b>${PR ? allHalves().length : 10}회</b>${!PR || (PR.full && PR.full.length) ? T` + 정규 모의고사 <b>${PR ? PR.full.length : 10}회</b>` : ""} · 예상 점수</li>
-        <li>문법 강의 30주제 · LC 표현 · 받아쓰기 무제한</li>
+        <li>문법 강의 34주제 · 1,500문제 · LC 표현 · 받아쓰기 무제한</li>
       </ul>
       <button class="btn block" data-buy>${ico("crown")}${buyLabel()}</button>
       <div class="small muted" style="text-align:center;margin-top:6px">${saleNote()}${CONFIG.premium.priceNote}</div>
