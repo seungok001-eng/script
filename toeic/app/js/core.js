@@ -35,15 +35,16 @@
     return [1, 2, 3];
   }
   function scoreBand(target) {
-    if (target <= 650) return { label: "기본 완성", desc: "토익 필수 기초 어휘" };
-    if (target <= 800) return { label: "핵심 완성", desc: "기본 + 실전 핵심 어휘" };
-    return { label: "고득점 완성", desc: "기본 + 핵심 + 고난도 어휘 전부" };
+    // 이름은 단어 난이도 배지(기본·핵심·고득점)를 그대로 더해 보여 준다 ('핵심 완성'처럼 코스·배지와 헷갈리지 않게)
+    if (target <= 650) return { label: "기본 단어", desc: "토익 필수 기초 어휘" };
+    if (target <= 800) return { label: "기본+핵심 단어", desc: "기본 + 실전 핵심 어휘" };
+    return { label: "기본+핵심+고득점 단어", desc: "기본 + 핵심 + 고난도 어휘 전부" };
   }
   function poolFor(words, target) {
     const tiers = tiersFor(target);
     return words.filter((w) => tiers.includes(w.tier));
   }
-  // 하루 학습량 추천: 시험일이 있으면 시험 3일 전까지 끝내도록, 없으면 목표별 기본값
+  // 하루 학습량 추천: 시험일이 있으면 시험 3일 전까지 끝내도록, 없으면 부담 없는 20개 (약 15분)
   function recommendDaily(poolSize, examDay, today) {
     if (examDay != null) {
       const left = examDay - today - 3;
@@ -51,9 +52,7 @@
       const n = Math.ceil(poolSize / left);
       return clamp(roundTo(n, 5, true), 10, 80);
     }
-    if (poolSize <= 500) return 20;
-    if (poolSize <= 900) return 30;
-    return 40;
+    return Math.min(20, poolSize);
   }
   function roundTo(n, step, up) {
     return (up ? Math.ceil(n / step) : Math.round(n / step)) * step;
@@ -558,16 +557,24 @@
   // ───────────── 오늘의 실전 과제 ─────────────
   // 시험일·단어 진도로 정한다: 초반엔 문법·Part 2 위주 → 이후 파트를 돌아가며 → 시험 2주 전부터 하프 모의고사(3일마다)·2세트씩
   const PRACTICE_LABEL = { p5g: ["Part 5 문법", "제", 10, 5], p2: ["Part 2 응답", "문제", 10, 5], p3: ["Part 3 대화", "세트", 1, 4], p4: ["Part 4 담화", "세트", 1, 4], p6: ["Part 6 장문 빈칸", "지문", 1, 4], p7: ["Part 7 독해", "세트", 1, 6] };
+  // allow: 오늘 풀 수 있는 과제만 (무료 체험) · prefer: 시작 미션 과제 · weak/weakAt: 실력 진단의 약한 파트 (진단 뒤 3일 동안 먼저)
+  // free: 무료 체험은 세트 1개씩. 풀 수 있는 과제가 없으면 null
   function practiceTask(o) {
     const dday = o.dday;
     const late = dday != null && dday >= 0 && dday <= 14;
-    if (late && o.mocksLeft > 0 && (o.lastMockDay == null || o.today - o.lastMockDay >= 3)) return { kind: "mock", n: 1, label: "하프 모의고사 1회", min: 60 };
-    const early = (o.seenRatio || 0) < 0.25 && (dday == null || dday > 28);
-    const rot = early ? ["p5g", "p2", "p5g", "p3"] : ["p3", "p5g", "p7", "p4", "p6", "p2", "p7"];
-    const i = (((o.dayIndex || 0) % rot.length) + rot.length) % rot.length;
-    const kind = rot[i];
+    const ok = (k) => !!k && (k === "mock" || !!PRACTICE_LABEL[k]) && (!o.allow || o.allow.includes(k));
+    let kind = ok(o.prefer) ? o.prefer : null;
+    if (!kind && late && ok("mock") && o.mocksLeft > 0 && (o.lastMockDay == null || o.today - o.lastMockDay >= 3)) kind = "mock";
+    if (kind === "mock") return { kind: "mock", n: 1, label: "하프 모의고사 1회", min: 60 };
+    if (!kind && ok(o.weak) && o.weakAt != null && o.today - o.weakAt >= 0 && o.today - o.weakAt <= 2) kind = o.weak;
+    if (!kind) {
+      const early = (o.seenRatio || 0) < 0.25 && (dday == null || dday > 28);
+      const rot = (early ? ["p5g", "p2", "p5g", "p3"] : ["p3", "p5g", "p7", "p4", "p6", "p2", "p7"]).filter(ok);
+      if (!rot.length) return null;
+      kind = rot[(((o.dayIndex || 0) % rot.length) + rot.length) % rot.length];
+    }
     const [name, unit, base, perMin] = PRACTICE_LABEL[kind];
-    const n = late ? base * 2 : base;
+    const n = late && !o.free ? base * 2 : base;
     const min = unit === "세트" || unit === "지문" ? n * perMin : perMin * (n / base);
     return { kind, n, label: `${name} ${n}${unit}`, min };
   }
@@ -575,12 +582,15 @@
   function levelsFor(target) {
     return target <= 650 ? [1, 2] : target <= 800 ? [1, 2, 3] : [2, 3];
   }
-  // 오늘 진행률: 새 단어(45%) · 복습(35%) · 실전 과제(20%)
+  // 오늘 진행률: 새 단어(45%) · 복습(35%) · 실전 과제(20%). 오늘 할 게 없는 항목(복습 0개, 잠긴 실전 등)은 빼고 나눈다
   function todayProgress(o) {
-    const newP = o.daily > 0 ? Math.min(1, (o.introduced || 0) / o.daily) : 1;
     const revTotal = (o.reviewed || 0) + (o.due || 0);
-    const revP = revTotal ? (o.reviewed || 0) / revTotal : 1;
-    return Math.round((newP * 0.45 + revP * 0.35 + (o.practiced ? 0.2 : 0)) * 100);
+    const parts = [];
+    if (o.daily > 0) parts.push([0.45, Math.min(1, (o.introduced || 0) / o.daily)]);
+    if (revTotal) parts.push([0.35, (o.reviewed || 0) / revTotal]);
+    if (!o.noPrac) parts.push([0.2, o.practiced ? 1 : 0]);
+    const w = parts.reduce((a, p) => a + p[0], 0);
+    return w ? Math.round((parts.reduce((a, p) => a + p[0] * p[1], 0) / w) * 100) : 100;
   }
 
   // 지금 속도로 범위를 다 보는 날 (최근 7일 새 단어 평균)

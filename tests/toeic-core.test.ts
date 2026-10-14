@@ -408,7 +408,22 @@ test("levelsFor / todayProgress", () => {
   assert.deepEqual(C.levelsFor(900), [2, 3]);
   assert.equal(C.todayProgress({ daily: 30, introduced: 0, reviewed: 0, due: 10, practiced: false }), 0);
   assert.equal(C.todayProgress({ daily: 30, introduced: 30, reviewed: 10, due: 0, practiced: true }), 100);
-  assert.equal(C.todayProgress({ daily: 30, introduced: 15, reviewed: 0, due: 0, practiced: false }), 57);
+  // 복습할 단어가 없으면 복습은 빼고 나눈다 (아무것도 안 했으면 0%)
+  assert.equal(C.todayProgress({ daily: 30, introduced: 0, reviewed: 0, due: 0, practiced: false }), 0);
+  assert.equal(C.todayProgress({ daily: 30, introduced: 15, reviewed: 0, due: 0, practiced: false }), 35);
+  assert.equal(C.todayProgress({ daily: 30, introduced: 30, reviewed: 0, due: 0, practiced: false, noPrac: true }), 100);
+  assert.equal(C.todayProgress({ daily: 0, introduced: 0, reviewed: 0, due: 0, practiced: false, noPrac: true }), 100);
+});
+
+test("practiceTask: 무료 체험은 풀 수 있는 과제만 · 시작 미션 과제 우선 · 진단 약점 파트는 3일 동안 먼저", () => {
+  const base = { dday: null, seenRatio: 0.1, dayIndex: 1, mocksLeft: 4, today: 100 };
+  assert.equal(C.practiceTask(Object.assign({}, base, { allow: ["p5g"] })).kind, "p5g");
+  assert.equal(C.practiceTask(Object.assign({}, base, { allow: [] })), null);
+  assert.equal(C.practiceTask(Object.assign({}, base, { prefer: "p3" })).kind, "p3");
+  assert.equal(C.practiceTask(Object.assign({}, base, { weak: "p7", weakAt: 99 })).kind, "p7");
+  assert.equal(C.practiceTask(Object.assign({}, base, { weak: "p7", weakAt: 90 })).kind, "p2");
+  assert.equal(C.practiceTask(Object.assign({}, base, { weak: "p7", weakAt: 99, allow: ["p5g", "p2"] })).kind, "p2");
+  assert.equal(C.practiceTask({ dday: 10, seenRatio: 0.5, dayIndex: 0, mocksLeft: 4, today: 100, lastMockDay: 99, free: true }).n, 1);
 });
 
 test("Part 1 사진 문제: 보기 4개·정답·해석·해설에 정답 문자·프롬프트 규칙", () => {
