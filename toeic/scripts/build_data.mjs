@@ -135,7 +135,8 @@ if (enough) {
   const p7d = take(pr.p7.filter((x) => x.kind === "double"), 1, 15);
   const p7t = take(pr.p7.filter((x) => x.kind === "triple"), 1, 16);
   // 문법: 주제마다 마지막 문항 위주로 10문항씩
-  const gqs = pr.grammar.flatMap((t) => t.qs.slice(-2));
+  // 원래 주제별 15문항의 마지막 2개로 고정 — 문제를 늘려도(문법 기초 주제 포함) 모의고사 1~5회 구성이 바뀌지 않게
+  const gqs = pr.grammar.filter((t) => /^g/.test(t.id)).flatMap((t) => t.qs.slice(13, 15));
   const p5g = take(gqs, 10, 17);
   const resp = lc.filter((p) => /^Q: /.test(plain(p.e)) && p.x);
   const p2 = take(resp, 12, 18);
@@ -166,7 +167,7 @@ if (mocks.length) {
   const d2 = shuffled(resp, 31).slice(0, 4);
   const d3 = pickLv(pr.p3, 1, 32, 2), d4 = pickLv(pr.p4, 1, 33, 2);
   const d7 = shuffled(free(pr.p7).filter((x) => x.kind === "single" && x.qs.length === 4 && x.lv === 2), 34).slice(0, 1);
-  const gq = shuffled(pr.grammar.flatMap((t) => t.qs.filter((q) => !q.mock && q.lv === 2)), 35).slice(0, 3);
+  const gq = shuffled(pr.grammar.filter((t) => /^g/.test(t.id)).flatMap((t) => t.qs.slice(0, 15).filter((q) => !q.mock && q.lv === 2)), 35).slice(0, 3); // 원래 15문항 안에서만 (진단 고정)
   const dw = shuffled(words.filter((w) => w.tier === 2 && w.q), 36).slice(0, 3);
   [d2, d3, d4, d7, gq].forEach((xs) => xs.forEach((x) => (x.mock = "d")));
   dw.forEach((w) => { w.mq = w.q; delete w.q; });

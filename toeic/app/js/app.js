@@ -2573,26 +2573,46 @@
     });
   }
   // 무료 문법 주제: 처음 문제를 푼 주제 하나
+  const isBasicTopic = (t) => !!t && /^b/.test(t.id); // 문법 기초: 무료 체험에서도 모두 열린다
   function freeGrammarTopic() {
-    const k = Object.keys(S.gq).find((id) => PR._g.has(id) && !PR._g.get(id).q.mock);
+    const k = Object.keys(S.gq).find((id) => PR._g.has(id) && !PR._g.get(id).q.mock && !isBasicTopic(PR._g.get(id).t));
     return k ? PR._g.get(k).t.id : null;
   }
   function vGrammarTopic(r) {
     const t = PR.grammar.find((x) => x.id === r.arg);
     if (!t) return go("#/grammar");
-    if (locked() && freeGrammarTopic() && freeGrammarTopic() !== t.id) return paywall("grammar");
+    if (locked() && !isBasicTopic(t) && freeGrammarTopic() && freeGrammarTopic() !== t.id) return paywall("grammar");
     const qs = t.qs.filter((q) => !q.mock);
+    // 단계별 풀기: 쉬움 → 보통 → 어려움. 한 번에 15문제씩, 안 푼 문제·틀린 문제부터
+    const STEP = [[1, T`1단계 · 기본`, T`단서가 빈칸 바로 옆에 있는 문제`], [2, T`2단계 · 실전`, T`문장 구조를 분석해야 하는 문제`], [3, T`3단계 · 고난도`, T`함정과 긴 문장이 있는 문제`]];
+    const lvQs = (lv) => qs.filter((q) => (q.lv || 2) === lv);
+    const stat = (xs) => ({ n: xs.length, done: xs.filter((q) => S.gq[q.id]).length, wrong: xs.filter((q) => S.gq[q.id] && S.gq[q.id].wrong).length });
+    const wrongQs = qs.filter((q) => S.gq[q.id] && S.gq[q.id].wrong);
+    const steps = STEP.filter(([lv]) => lvQs(lv).length).map(([lv, name, desc]) => {
+      const st = stat(lvQs(lv));
+      return `<button class="witem gstep" data-lv="${lv}"><div class="wbody"><div class="ww" style="font-size:15px">${name}</div><div class="wm">${desc} · ${st.done ? T`${st.done}/${st.n}문제 풀었어요` : T`${st.n}문제`}</div></div>${st.done === st.n ? T`<span class="badge ok">완료</span>` : ""}${ico("right")}</button>`;
+    }).join("");
     const body = T`${topBar(esc(tr(t.title)), { back: true, sub: T`${esc(tr(t.cat))} · 문제 ${qs.length}개` })}
       ${t.lesson.map((l, i) => `<div class="card lesson"><div class="lesson-h"><span class="pq-n">${i + 1}</span><b>${esc(l.h)}</b></div><p>${esc(l.t)}</p>${l.ex.map((e) => `<div class="lesson-ex"><div class="en">${hl(e.en)}</div><div class="ko">${esc(e.ko)}</div></div>`).join("")}</div>`).join("")}
-      <div class="tip-box" style="margin-top:12px"><b>함정 주의</b> ${esc(t.trap)}</div>
-      <button class="btn block" data-start style="margin-top:14px">${ico("zap")}문제 ${qs.length}개 풀기</button>`;
+      <div class="tip-box" style="margin-top:12px"><b>함정 주의</b> ${esc(t.trap)}</div>` + T`
+      <div class="section-h" style="margin-top:18px"><h2>단계별 문제</h2><span class="small muted">한 번에 15문제 · 안 푼 문제부터</span></div>
+      <div class="wlist">${steps}</div>
+      <button class="btn block" data-start style="margin-top:12px">${ico("shuffle")}전체 섞어서 15문제</button>
+      ${wrongQs.length ? T`<button class="btn ghost block" data-twrong style="margin-top:8px">${ico("repeat")}이 주제 틀린 문제 다시 (${wrongQs.length})</button>` : ""}`;
     shell("practice", body);
-    $app.querySelector("[data-start]").addEventListener("click", () => startGrammarQuiz(C.shuffle(qs), t.title));
+    $app.querySelectorAll("[data-lv]").forEach((b) => b.addEventListener("click", () => {
+      const lv = +b.dataset.lv;
+      startGrammarQuiz(C.lcPick(lvQs(lv), S.gq, 15), `${tr(t.title)} · ${STEP.find((x) => x[0] === lv)[1]}`);
+    }));
+    $app.querySelector("[data-start]").addEventListener("click", () => startGrammarQuiz(C.lcPick(qs, S.gq, 15), t.title));
+    const tw = $app.querySelector("[data-twrong]");
+    if (tw) tw.addEventListener("click", () => startGrammarQuiz(C.shuffle(wrongQs), T`${tr(t.title)} · 틀린 문제`));
   }
   function startGrammarQuiz(qs, title, opt) {
     if (locked()) {
-      const ft = freeGrammarTopic() || (qs[0] && PR._g.get(qs[0].id) && PR._g.get(qs[0].id).t.id);
-      const mine = qs.filter((q) => PR._g.get(q.id) && PR._g.get(q.id).t.id === ft);
+      const first = qs.find((q) => PR._g.get(q.id) && !isBasicTopic(PR._g.get(q.id).t));
+      const ft = freeGrammarTopic() || (first && PR._g.get(first.id).t.id);
+      const mine = qs.filter((q) => PR._g.get(q.id) && (PR._g.get(q.id).t.id === ft || isBasicTopic(PR._g.get(q.id).t)));
       if (!mine.length) return paywall("grammar");
       qs = mine;
     }
