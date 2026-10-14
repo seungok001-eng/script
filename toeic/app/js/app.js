@@ -94,6 +94,8 @@
   const POS_KO = { n: T`명사`, v: T`동사`, adj: T`형용사`, adv: T`부사`, phr: T`숙어`, prep: T`전치사`, conj: T`접속사` };
   const POS_SHORT = { n: T`명`, v: T`동`, adj: T`형`, adv: T`부`, phr: T`숙`, prep: T`전`, conj: T`접` };
   const $app = document.getElementById("app");
+  // 고르는 버튼 묶음(.seg): 선택 상태를 화면 읽기 프로그램에 알린다 (.on 이 바뀔 때마다 맞춘다)
+  if (window.MutationObserver) new MutationObserver(() => $app.querySelectorAll(".seg > button").forEach((b) => { const v = b.classList.contains("on") ? "true" : "false"; if (b.getAttribute("aria-pressed") !== v) b.setAttribute("aria-pressed", v); })).observe($app, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] });
 
   // ═════════════ 저장소 ═════════════
   const DEFAULT_STATE = () => ({
@@ -339,6 +341,7 @@
     flag: '<path d="M4 22V4M4 4h13l-2 4 2 4H4"/>',
     swap: '<path d="M7 4 3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="m17 20 4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/>',
     gauge: '<path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/>',
+    mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
   };
   function ico(name, cls) {
     return `<svg class="ico ${cls || ""}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${I[name] || ""}</svg>`;
@@ -516,17 +519,19 @@
   // ═════════════ 학습 알림 (네이티브 앱: @capacitor/local-notifications) ═════════════
   const Notify = (function () {
     const plugin = () => window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.LocalNotifications;
-    const MSGS = [T`오늘의 토익 단어가 기다리고 있어요 📚`, T`5분만 투자해도 목표 점수에 가까워져요`, T`복습할 단어가 쌓이기 전에 한 번 볼까요?`, T`연속 학습 기록을 이어가세요 🔥`];
-    async function apply() {
+    const MSGS = [T`오늘의 토익 단어가 기다리고 있어요 📚`, T`5분만 투자해도 목표 점수에 가까워져요`, T`복습할 단어가 쌓이기 전에 한 번 볼까요?`, T`연속 학습 기록을 이어가세요 🔥`, T`어제 본 단어, 오늘 한 번 더 보면 오래 기억나요`, T`오늘의 실전 문제도 풀어 볼까요? ✍️`, T`하루 10분이 쌓이면 점수가 달라져요`];
+    // 요일마다 다른 문구: 요일별(1=일요일~7=토요일) 알림 7개를 매주 반복한다 (1001 은 예전 매일 반복 알림)
+    const IDS = [1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008];
+    async function apply(quiet) {
       const LN = plugin();
       if (!LN) return false;
       try {
-        await LN.cancel({ notifications: [{ id: 1001 }] }).catch(() => {});
+        await LN.cancel({ notifications: IDS.map((id) => ({ id })) }).catch(() => {});
         if (!S.settings.remind) return true;
-        const perm = await LN.requestPermissions();
+        const perm = await (quiet && LN.checkPermissions ? LN.checkPermissions() : LN.requestPermissions());
         if (perm.display !== "granted") return false;
         const [h, m] = (S.settings.remindAt || "21:00").split(":").map(Number);
-        await LN.schedule({ notifications: [{ id: 1001, title: BRAND.name, body: MSGS[Math.floor(Math.random() * MSGS.length)], schedule: { on: { hour: h, minute: m }, repeats: true, allowWhileIdle: true } }] });
+        await LN.schedule({ notifications: [1, 2, 3, 4, 5, 6, 7].map((wd) => ({ id: 1001 + wd, title: BRAND.name, body: MSGS[(wd - 1) % MSGS.length], schedule: { on: { weekday: wd, hour: h, minute: m }, repeats: true, allowWhileIdle: true } })) });
         return true;
       } catch (e) { return false; }
     }
@@ -586,8 +591,9 @@
     ["stats", T`통계`, "chart"],
   ];
   function shell(active, body, wide) {
-    const links = NAV.map(([k, label, ic]) => `<a href="#/${k}" class="side-link ${active === k ? "on" : ""}">${ico(ic)}${label}</a>`).join("");
-    const tabs = NAV.map(([k, label, ic]) => `<a href="#/${k}" class="tab ${active === k ? "on" : ""}" aria-label="${label}">${ico(ic)}${label}</a>`).join("");
+    const cur = (k) => (active === k ? ' aria-current="page"' : "");
+    const links = NAV.map(([k, label, ic]) => `<a href="#/${k}" class="side-link ${active === k ? "on" : ""}"${cur(k)}>${ico(ic)}${label}</a>`).join("");
+    const tabs = NAV.map(([k, label, ic]) => `<a href="#/${k}" class="tab ${active === k ? "on" : ""}"${cur(k)}>${ico(ic)}${label}</a>`).join("");
     $app.innerHTML = T`<div class="shell">
       <nav class="side" aria-label="메뉴"><div class="side-brand">${logoSvg(30)}<span>${BRAND.name}</span></div>${links}
         <a href="#/settings" class="side-link ${active === "settings" ? "on" : ""}">${ico("gear")}설정</a>
@@ -941,7 +947,7 @@
       const done = ws.length && s.mastered === ws.length;
       const test = S.tests[d.day];
       return T`<a class="day-card ${d.day === curDay ? "cur" : ""} ${locked ? "lock" : ""}" href="#/day/${d.day}">
-        ${locked ? `<span class="lock-ico">${ico("lock")}</span>` : done ? `<span class="done-ico">${ico("check")}</span>` : ""}
+        ${locked ? `<span class="lock-ico" role="img" aria-label="${T`잠김`}">${ico("lock")}</span>` : done ? `<span class="done-ico">${ico("check")}</span>` : ""}
         <span class="dn">DAY ${pad(d.day)}${d.day === curDay ? T` · 학습 중` : ""}</span>
         <span class="dt">${esc(tr(d.title))}</span>
         <div class="bar thin ${mpct === 100 ? "ok" : ""}"><i style="width:${pct}%"></i></div>
@@ -1770,10 +1776,8 @@
     if (s.kind === "mock") $app.querySelectorAll("[data-weak]").forEach((b) => b.addEventListener("click", () => { session = null; studyPushed = false; practiceWeak(b.dataset.weak); }));
     const mw = $app.querySelector("[data-mrevw]");
     if (mw) mw.addEventListener("click", () => { s.wrongOnly = true; s.reviewing = mockReviewNext(s, -1, 1); vMockReview(); window.scrollTo(0, 0); });
-    const buy = $app.querySelector("[data-buy]");
-    if (buy) buy.addEventListener("click", () => purchasePremium(buy));
     const fr = $app.querySelector("[data-free]");
-    if (fr) fr.addEventListener("click", () => { session = null; studyPushed = false; location.replace("#/home"); if (locked()) setTimeout(() => toast(T`Day 1~${CONFIG.premium.freeDays} 단어와 파트별 1세트를 무료로 써 보세요`), 300); });
+    if (fr) fr.addEventListener("click", () => { session = null; studyPushed = false; location.replace("#/home"); if (locked()) setTimeout(() => toast(T`무료 범위: 단어 Day 1~${CONFIG.premium.freeDays} · 파트별 실전 1세트`), 300); });
     const th = $app.querySelector("[data-tohub]");
     if (th) th.addEventListener("click", (e) => { e.preventDefault(); session = null; studyPushed = false; location.replace("#/practice"); });
     const dm = $app.querySelector("[data-dmore]");
@@ -3119,27 +3123,45 @@
   // 출시 할인 중인가 (기기 날짜 기준, 마지막 날 포함)
   function saleOn() { const d = new Date(), y = d.getFullYear(), m = String(d.getMonth() + 1).padStart(2, "0"), dd = String(d.getDate()).padStart(2, "0"); return `${y}-${m}-${dd}` <= CONFIG.premium.saleUntil; }
   function shownPrice() { return IAP.price || (LANG === "ko" ? (saleOn() ? CONFIG.premium.price : CONFIG.premium.listPrice) : ""); }
-  // 정가와 할인 문구는 원화 가격일 때만 보여 준다 (다른 나라 정가는 앱이 알 수 없어서 할인이라고 쓰지 않는다)
-  function saleShown() { return saleOn() && /₩/.test(shownPrice()) && shownPrice() !== CONFIG.premium.listPrice; }
-  function buyLabel() { return T`전체 열기 ${(saleShown() ? `<s class="was">${esc(CONFIG.premium.listPrice)}</s> ` : "") + esc(shownPrice())}`; }
+  // 출시 기념가 안내는 보여 주는 가격이 할인가와 같을 때만 (스토어 가격이 다르거나 다른 나라 통화면 쓰지 않는다). 받은 적 없는 정가에 줄을 긋지 않는다
   function saleNote() {
-    if (!saleShown()) return "";
+    if (!saleOn() || shownPrice() !== CONFIG.premium.price) return "";
     const [y, m, d] = CONFIG.premium.saleUntil.split("-").map(Number);
-    const day = new Date(y, m - 1, d).toLocaleDateString(LANG, { month: "long", day: "numeric" });
-    return `<b class="sale">${T`출시 할인 · ${day}까지`}</b><br>`;
+    const day = new Date(y, m - 1, d + 1).toLocaleDateString(LANG, { year: "numeric", month: "long", day: "numeric" });
+    return `<b class="sale">${T`출시 기념가 ${esc(CONFIG.premium.price)} · ${day}부터 ${esc(CONFIG.premium.listPrice)}`}</b><br>`;
   }
-  function offerHtml(lead) {
-    return T`<section class="offer">
-      <div class="offer-h">${ico("crown")}<b>${lead || T`토익핏 전체 열기`}</b></div>
-      <ul class="offer-list">
-        <li>단어 <b>${NWORDS.toLocaleString()}개</b> 전체 · 원어민 음성 · 90일 코스</li>
-        <li>Part 1~7 실전 문제 <b>전부</b> · 정답 근거 해설</li>
-        <li>하프 모의고사 <b>${PR ? allHalves().length : 10}회</b>${!PR || (PR.full && PR.full.length) ? T` + 정규 모의고사 <b>${PR ? PR.full.length : 10}회</b>` : ""} · 예상 점수</li>
-        <li>문법 강의 34주제 · 1,500문제 · LC 표현 · 받아쓰기 무제한</li>
-      </ul>
-      <button class="btn block" data-buy>${ico("crown")}${buyLabel()}</button>
-      <div class="small muted" style="text-align:center;margin-top:6px">${saleNote()}${CONFIG.premium.priceNote}</div>
-      <button class="btn ghost block" style="margin-top:10px" data-free>무료로 ${CONFIG.premium.freeDays}일 먼저 써 보기</button>
+  // 구매 버튼: 앱에서 스토어 가격을 아직 못 받았으면 빈 가격 대신 '불러오는 중' → 실패하면 '다시 시도'
+  function buyBoxHtml() {
+    const p = shownPrice(), wait = IAP.N() && !IAP.price;
+    const btn = wait
+      ? (IAP.failed ? T`<button class="btn block" data-iap-retry>${ico("repeat")}가격을 불러오지 못했어요 · 다시 시도</button>` : T`<button class="btn block" disabled>가격 불러오는 중…</button>`)
+      : `<button class="btn block" data-buy>${ico("crown")}${p ? T`전체 이용권 구매 · ${esc(p)}` : T`전체 이용권 구매`}</button>`;
+    return `${btn}<div class="small muted offer-note">${wait ? "" : saleNote()}${CONFIG.premium.priceNote}</div>`;
+  }
+  function refreshBuyBox() { document.querySelectorAll("[data-buybox]").forEach((el) => { el.innerHTML = buyBoxHtml(); }); }
+  // 무료 vs 전체 이용권 비교 (개수는 데이터에서 센다. 실전 문제를 아직 안 읽었으면 개수 없이)
+  function compareHtml() {
+    const fd = CONFIG.premium.freeDays;
+    const freeWords = WORDS.filter((w) => w.d <= fd).length;
+    const g = PR && PR.grammar, nb = g ? g.filter(isBasicTopic).length : 0;
+    const rows = [
+      [T`단어`, T`Day 1~${fd} · ${freeWords}개`, T`${NDAYS}일 · ${NWORDS}개`],
+      [T`파트별 실전`, T`1세트씩`, T`전부`],
+      [T`문법`, g ? T`기초 ${nb}주제 + 1주제` : T`기초 + 1주제`, g ? T`${g.length}주제 · ${g.reduce((a, t) => a + t.qs.length, 0).toLocaleString()}문제` : T`전부`],
+      [T`모의고사`, T`하프 1회`, PR ? ((PR.full || []).length ? T`정규 ${PR.full.length}회 + 하프 ${allHalves().length}회` : T`하프 ${allHalves().length}회`) : T`정규 + 하프 전부`],
+      [T`LC 퀴즈·받아쓰기`, T`1회씩`, T`무제한`],
+      [T`실력 진단`, ico("check"), ico("check")],
+    ];
+    return `<table class="cmp"><thead><tr><th></th><th>${T`무료`}</th><th class="full">${T`전체 이용권`}</th></tr></thead><tbody>${rows.map(([k, a, b]) => `<tr><th scope="row">${k}</th><td>${a}</td><td class="full">${b}</td></tr>`).join("")}</tbody></table>`;
+  }
+  // from: 잠긴 기능을 눌러 들어왔으면 '계속하기', 처음 보는 제안이면 '먼저 써 보기'
+  function offerHtml(lead, from) {
+    return `<section class="offer">
+      <div class="offer-h">${ico("crown")}<b>${lead || T`전체 이용권`}</b></div>
+      ${compareHtml()}
+      <p class="small muted offer-sub">${T`모든 문제에 정답 근거 해설 · 원어민 음성 · 예상 점수`}</p>
+      <div data-buybox>${buyBoxHtml()}</div>
+      <button class="btn ghost block" style="margin-top:10px" data-free>${from ? T`무료 범위로 계속하기` : T`무료 범위로 먼저 써 보기`}</button>
     </section>` + `<p class="small muted biz-mini">${esc(LANG === "ko" ? BIZ.name : BIZ.nameEn)} · ${T`대표자`} ${esc(LANG === "ko" ? BIZ.ceo : BIZ.ceoEn)} · ${T`사업자등록번호`} ${esc(BIZ.regNo)} · ${esc(BIZ.email)}</p>`;
   }
   function diagResultHtml(s) {
@@ -3159,7 +3181,7 @@
       ${weak ? T`<div><span class="pi">${ico("target")}</span><span>가장 약한 파트 <b>${PART_LABEL[weak]}</b> · 오늘의 실전에서 먼저 연습해요</span></div>` : ""}
       <div class="small muted" style="margin-top:6px">20문제로 낸 대략적인 점수예요. 실전 문제를 풀수록 예상 점수가 정확해져요.</div></div>`;
     const tail = T`<button class="btn ghost block" style="margin-top:10px" data-mrev>${ico("book")}진단 문제 해설 보기</button>`;
-    const actions = plan + (locked() ? offerHtml(gap > 0 ? T`${gap}점, 토익핏으로 올려요` : T`토익핏 전체 열기`) + tail : T`<button class="btn block" style="margin-top:12px" data-free>${ico("play")}학습 시작하기</button>` + tail);
+    const actions = plan + (locked() ? offerHtml(gap > 0 ? T`${gap}점, 토익핏으로 올려요` : T`전체 이용권`) + tail : T`<button class="btn block" style="margin-top:12px" data-free>${ico("play")}학습 시작하기</button>` + tail);
     return { hero, actions };
   }
   function mockResultHtml(s) {
@@ -3447,20 +3469,23 @@
       </div>
       <div class="set-title">화면</div>
       <div class="set-group">
-        ${(window.TOEICFIT_LANGS || []).length > 1 ? `<div class="set-row"><span class="sl"><b>${T`언어`}</b><span class="small muted">Language</span></span><select class="lang-sel" data-lang><option value="" ${!s.lang ? "selected" : ""}>${T`자동 (기기 언어)`}</option>${window.TOEICFIT_LANGS.map((l) => `<option value="${l.code}" ${s.lang === l.code ? "selected" : ""}>${esc(l.name)}</option>`).join("")}</select></div>` : ""}
+        ${(window.TOEICFIT_LANGS || []).length > 1 ? `<div class="set-row lang-row"><span class="sl"><b>${T`언어`}</b><span class="small muted">Language</span></span><select class="lang-sel" data-lang><option value="" ${!s.lang ? "selected" : ""}>${T`자동 (기기 언어)`}</option>${window.TOEICFIT_LANGS.map((l) => `<option value="${l.code}" ${s.lang === l.code ? "selected" : ""}>${esc(l.name)}</option>`).join("")}</select></div>` : ""}
         <div class="set-row"><span class="sl"><b>테마</b></span><div class="seg">${[["system", T`자동`], ["light", T`밝게`], ["dark", T`어둡게`]].map(([k, l]) => `<button class="${s.theme === k ? "on" : ""}" data-theme="${k}">${l}</button>`).join("")}</div></div>
         ${LANG === "en" ? "" : sw("showKo", T`예문 해석 보기`, T`끄면 영어 예문만 보여요`)}
       </div>
       <div class="set-title">데이터</div>
       <div class="set-group">
-        <button class="set-row" data-export><span class="sl"><b>학습 기록 백업</b><span>파일로 저장해 다른 기기로 옮길 수 있어요</span></span>${ico("download")}</button>
-        <button class="set-row" data-import><span class="sl"><b>백업 불러오기</b></span>${ico("upload")}</button>
+        <button class="set-row" data-export><span class="sl"><b>학습 기록 백업</b><span>파일로 저장해 다른 기기로 옮길 수 있어요</span>${lastBackupHtml()}</span>${ico("download")}</button>
+        <button class="set-row" data-import><span class="sl"><b>백업 불러오기</b><span>백업 파일의 기록으로 지금 기록을 바꿔요</span></span>${ico("upload")}</button>
         <button class="set-row" data-reset><span class="sl"><b style="color:var(--bad)">학습 기록 초기화</b><span>모든 진도와 기록을 지워요</span></span>${ico("trash")}</button>
       </div>
-      ${CONFIG.premium.enabled ? T`<div class="set-title">프리미엄</div><div class="set-group"><a class="set-row" href="#/premium"><span class="sl"><b>${S.premium ? T`프리미엄 이용 중` : T`프리미엄으로 전체 ${NDAYS}일 열기`}</b></span>${ico("crown")}</a></div>` : ""}
+      <p class="small muted set-note">${ico("info")}${T`기록은 이 기기에만 저장돼요 · 앱을 지우면 기록도 지워져요`}</p>
+      ${CONFIG.premium.enabled ? T`<div class="set-title">구매</div><div class="set-group"><a class="set-row" href="#/premium"><span class="sl"><b>${S.premium ? T`전체 이용권 · 이용 중` : T`전체 이용권`}</b><span>${S.premium ? T`모든 단어·실전·모의고사가 열려 있어요` : T`모든 단어·실전·모의고사 열기`}</span></span>${ico("crown")}</a>
+        <button class="set-row" data-restore><span class="sl"><b>구매 복원</b><span>앱을 다시 설치했거나 기기를 바꿨을 때</span></span>${ico("repeat")}</button></div>` : ""}
       <div class="set-title">도움말</div>
       <div class="set-group">
         <a class="set-row" href="#/guide"><span class="sl"><b>사용 가이드</b><span>하루 학습 루틴 · 복습 원리 · 예상 점수 · 자주 묻는 질문</span></span>${ico("right")}</a>
+        <a class="set-row" href="mailto:${BIZ.email}?subject=${encodeURIComponent(T`[토익핏] 문의`)}&body=${encodeURIComponent(`\n\n---\nToeicFit 1.0.0 · ${D.version} · ${LANG}`)}"><span class="sl"><b>문의·오류 신고</b><span>${esc(BIZ.email)}</span></span>${ico("mail")}</a>
       </div>
       <div class="set-title">정보</div>
       <div class="set-group">
@@ -3490,6 +3515,8 @@
     const lg = $app.querySelector("[data-lang]");
     if (lg) lg.addEventListener("change", () => { s.lang = lg.value; save(); location.reload(); });
     $app.querySelector("[data-export]").addEventListener("click", exportData);
+    const rs = $app.querySelector("[data-restore]");
+    if (rs) rs.addEventListener("click", () => restorePremium(rs));
     $app.querySelector("[data-place]").addEventListener("click", startPlacement);
     const us = $app.querySelector("[data-unskip]");
     if (us) us.addEventListener("click", () => { S.profile.skip = []; save(true); toast(T`건너뛴 단어를 다시 포함했어요`); vSettings(); });
@@ -3510,6 +3537,17 @@
     if (t === "system") document.documentElement.removeAttribute("data-theme");
     else document.documentElement.setAttribute("data-theme", t);
   }
+  // 마지막 백업 시각 (이 기기에서 백업 파일을 만든 때 · 백업 파일에는 넣지 않는다)
+  const BACKUP_KEY = "toeicfit.lastBackup";
+  function lastBackupHtml() {
+    let t = 0;
+    try { t = +localStorage.getItem(BACKUP_KEY) || 0; } catch (e) { /* 무시 */ }
+    return `<span class="set-sub2 ${t ? "" : "warn"}">${t ? T`마지막 백업: ${new Date(t).toLocaleDateString(LANG, { year: "numeric", month: "long", day: "numeric" })}` : T`아직 백업한 적이 없어요`}</span>`;
+  }
+  function markBackup() {
+    try { localStorage.setItem(BACKUP_KEY, String(Date.now())); } catch (e) { /* 무시 */ }
+    if (route().name === "settings") vSettings();
+  }
   async function exportData() {
     const json = JSON.stringify({ app: "toeicfit", exportedAt: new Date().toISOString(), state: S });
     const name = `toeicfit-backup-${C.ymd(today())}.json`;
@@ -3518,6 +3556,7 @@
       try {
         const r = await P.Filesystem.writeFile({ path: name, data: json, directory: "CACHE", encoding: "utf8" });
         await P.Share.share({ title: T`토익핏 백업`, text: T`학습 기록 백업 파일`, url: r.uri, dialogTitle: T`백업 파일 저장·보내기` });
+        markBackup();
         toast(T`백업 파일을 만들었어요`);
       } catch (e) {
         if (!/cancel/i.test(String(e && e.message))) toast(T`백업 파일을 만들지 못했어요`);
@@ -3531,6 +3570,7 @@
     document.body.appendChild(a);
     a.click();
     setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    markBackup();
     toast(T`백업 파일을 저장했어요`);
   }
   function importData(f) {
@@ -3565,16 +3605,26 @@
   // ── 인앱결제 (@capgo/native-purchases · 한 번 결제 상품) ──
   const IAP = {
     price: null,
+    failed: false,
     N() { const P = capPlugins(); return P && P.NativePurchases; },
     async init() {
+      if (!this.N()) return;
+      await this.load();
+      await this.sync(false);
+    },
+    // 스토어 가격 (10초 안에 못 받으면 실패 → 구매 버튼이 '다시 시도'로 바뀐다)
+    async load() {
       const N = this.N();
-      if (!N) return;
+      if (!N || this.price) return;
+      this.failed = false;
+      refreshBuyBox();
       try {
-        const r = await N.getProducts({ productIdentifiers: [CONFIG.premium.productId], productType: "inapp" });
+        const r = await Promise.race([N.getProducts({ productIdentifiers: [CONFIG.premium.productId], productType: "inapp" }), new Promise((_, rej) => setTimeout(() => rej(new Error("timeout")), 10000))]);
         const pr = r && r.products && r.products[0];
         if (pr && pr.priceString) this.price = pr.priceString;
-      } catch (e) { /* 스토어 정보를 못 받으면 기본 표시 가격 */ }
-      await this.sync(false);
+      } catch (e) { /* 아래에서 실패로 표시 */ }
+      this.failed = !this.price;
+      refreshBuyBox();
     },
     // 구매 내역으로 이용권 상태를 맞춘다 (조회에 성공했을 때만 바꾼다 — 오프라인에서 잠기지 않게)
     async sync(announce) {
@@ -3589,26 +3639,36 @@
       } catch (e) { if (announce) toast(T`구매 내역을 확인하지 못했어요`); return null; }
     },
   };
-  const PAY_REASON = { set: T`무료 체험은 파트마다 1세트까지예요`, grammar: T`무료 체험은 문법 1주제까지예요`, lc: T`무료 체험은 LC 퀴즈 1회까지예요`, dict: T`무료 체험은 받아쓰기 1회까지예요`, mock: T`무료 체험은 하프 모의고사 1회까지예요`, day: T`무료 체험은 Day 1~${CONFIG.premium.freeDays}까지예요`, full: T`정규 모의고사는 전체 이용권에서 풀 수 있어요`, timed: T`시간 압박 훈련은 전체 이용권에서 쓸 수 있어요` };
+  const PAY_REASON = { set: T`무료 범위는 파트마다 1세트까지예요`, grammar: T`무료 범위는 문법 기초와 1주제까지예요`, lc: T`무료 범위는 LC 퀴즈 1회까지예요`, dict: T`무료 범위는 받아쓰기 1회까지예요`, mock: T`무료 범위는 하프 모의고사 1회까지예요`, day: T`무료 범위는 Day 1~${CONFIG.premium.freeDays}까지예요`, full: T`정규 모의고사는 전체 이용권에서 풀 수 있어요`, timed: T`시간 압박 훈련은 전체 이용권에서 쓸 수 있어요` };
+  // 구매·가격 다시 받기 버튼은 결제 화면과 진단 결과 화면에 함께 있어서 한곳에서 받는다
+  $app.addEventListener("click", (e) => {
+    const t = e.target.closest("[data-buy],[data-iap-retry]");
+    if (!t) return;
+    if (t.hasAttribute("data-buy")) purchasePremium(t);
+    else IAP.load();
+  });
   function vPremium(r) {
     const from = (r && r.q && r.q.from) || "";
-    const body = T`${topBar(T`토익핏 전체 열기`, { back: true })}
-      ${S.premium ? T`<div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">전체 이용 중이에요</h2><p class="muted">모든 단어·실전 문제·모의고사를 제한 없이 쓸 수 있어요. 감사합니다!</p></div>`
-        : T`<div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">${esc(PAY_REASON[from] || T`토익 준비, 앱 하나로 끝까지`)}</h2><p class="muted">한 번 결제로 모든 기능을 평생 이용해요</p></div>${offerHtml()}`}
+    const body = T`${topBar(T`전체 이용권`, { back: true })}
+      ${S.premium ? T`<div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">전체 이용권을 쓰고 있어요</h2><p class="muted">모든 단어·실전 문제·모의고사를 제한 없이 쓸 수 있어요. 감사합니다!</p></div>`
+        : T`<div class="paywall-hero">${ico("crown")}<h2 style="margin:10px 0 4px">${esc(PAY_REASON[from] || T`토익 준비, 앱 하나로 끝까지`)}</h2><p class="muted">한 번 결제로 모든 기능을 평생 이용해요</p></div>${offerHtml(null, from)}`}
       <button class="btn ghost block" style="margin-top:10px" data-restore>구매 복원</button>
       <p class="small muted" style="text-align:center;margin-top:12px">결제는 Google Play·App Store 계정으로 안전하게 처리돼요. 구독이 아니라 자동 결제가 없어요.</p>`;
     shell("settings", body);
-    const bb = $app.querySelector("[data-buy]");
-    if (bb) bb.addEventListener("click", () => purchasePremium(bb));
     const fr = $app.querySelector("[data-free]");
     if (fr) fr.addEventListener("click", () => back("#/home"));
-    $app.querySelector("[data-restore]").addEventListener("click", restorePremium);
+    $app.querySelector("[data-restore]").addEventListener("click", (e) => restorePremium(e.currentTarget));
+    // 비교표의 문법·모의고사 개수는 실전 데이터에서 센다 (아직 안 읽었으면 읽은 뒤 다시 그린다)
+    if (!S.premium && !PR) loadPractice().then(() => { if (route().name === "premium" && !S.premium) vPremium(route()); }).catch(() => {});
+    if (IAP.N() && !IAP.price && IAP.failed) IAP.load();
   }
-  async function restorePremium() {
+  async function restorePremium(btn) {
     const N = IAP.N();
     if (!N) return toast(T`구매 복원은 스토어에서 설치한 앱에서 할 수 있어요`);
+    if (btn) btn.disabled = true; // 여러 번 눌러 알림이 겹치지 않게
     try { await N.restorePurchases(); } catch (e) { /* 안드로이드는 조회만으로 충분 */ }
     await IAP.sync(true);
+    if (btn) btn.disabled = false;
   }
   async function purchasePremium(btn) {
     const N = IAP.N();
@@ -3634,6 +3694,7 @@
   // ═════════════ 시작 ═════════════
   applyTheme();
   IAP.init();
+  if (S.settings.remind && Notify.available()) Notify.apply(true); // 예전 매일 같은 문구 알림을 요일별 문구로 바꿔 둔다 (권한은 묻지 않음)
   if (window.matchMedia) {
     const mq = window.matchMedia("(prefers-color-scheme: dark)");
     if (mq.addEventListener) mq.addEventListener("change", () => { if (S.settings.theme === "system") render(); });

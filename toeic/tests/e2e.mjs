@@ -58,6 +58,15 @@ for (const r of ["#/settings", "#/review", "#/stats", "#/home", "#/days", "#/par
   ok(w <= 390, `no h-scroll ${r}: ${w}`);
 }
 await p.goto(base + "#/settings"); await p.waitForTimeout(250); await p.screenshot({ path: out + "settings.png", fullPage: true });
+// 설정: 구매 묶음(전체 이용권 + 구매 복원) · 문의 메일 · 백업 안내 · 접근성(탭 현재 위치, 고르는 버튼 상태)
+ok((await p.textContent(".set-group:has([data-restore])")).includes("전체 이용권") && !(await p.textContent("#app")).includes("프리미엄"), "settings: 전체 이용권 + 구매 복원 in one group");
+ok((await p.getAttribute('a[href^="mailto:"]', "href")).includes("subject=") && (await p.textContent("#app")).includes("아직 백업한 적이 없어요"), "settings: contact row + backup hint");
+ok((await p.$$('.seg button[aria-pressed="true"]')).length === 2 && (await p.$$('.seg button[aria-pressed="false"]')).length === 4, "seg aria-pressed");
+await p.click('.seg [data-theme="dark"]'); await p.waitForTimeout(150);
+ok(await p.$('.seg [data-theme="dark"][aria-pressed="true"]'), "seg aria-pressed follows selection");
+await p.click('.seg [data-theme="system"]'); await p.waitForTimeout(150);
+await p.goto(base + "#/review"); await p.waitForTimeout(250);
+ok((await p.getAttribute('.tabbar a[aria-current="page"]', "href")) === "#/review", "tabbar aria-current=page on active tab");
 await p.goto(base + "#/review"); await p.waitForTimeout(250); await p.screenshot({ path: out + "review.png", fullPage: true });
 // 5-1) LC 실전 퀴즈: Part 2 탭 → 응답 고르기 → 답하면 스크립트·해석이 보이고 기록이 남는다 → 다음 문제
 await p.goto(base + "#/lc"); await p.waitForTimeout(250);
@@ -190,13 +199,18 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   const hero = await q.textContent(".result-hero");
   ok(/진단 20문제/.test(hero), "diagnostic result shown");
   const buy = await q.textContent("[data-buy]"), free = await q.textContent("[data-free]");
-  const note = await q.textContent(".offer .small"), onSale = new Date().toISOString().slice(0, 10) <= "2026-12-31";
-  ok(buy.includes("전체 열기") && free.includes("무료로 3일 먼저 써 보기") && (onSale ? buy.includes("₩9,900") && buy.includes("₩6,900") && note.includes("출시 할인") : buy.includes("₩9,900") && !note.includes("출시 할인")), `offer buttons: ${buy} / ${note} / ${free}`);
+  const note = await q.textContent(".offer .offer-note"), onSale = new Date().toISOString().slice(0, 10) <= "2026-12-31";
+  ok(buy.includes("전체 이용권 구매") && free.includes("무료 범위로 먼저 써 보기") && (onSale ? buy.includes("₩6,900") && !buy.includes("₩9,900") && !(await q.$(".offer s")) && note.includes("출시 기념가") && note.includes("2027년 1월 1일부터 ₩9,900") : buy.includes("₩9,900") && !note.includes("출시")), `offer buttons: ${buy} / ${note} / ${free}`);
+  ok((await q.$$(".offer .cmp tbody tr")).length === 6 && (await q.textContent(".offer .cmp")).includes("Day 1~3 · 120개"), "offer: free vs full comparison table");
   ok(await q.evaluate(() => !!window.__toeicfit.state.diag && !window.__toeicfit.state.mock.d), "diag stored separately from mocks");
   await q.click("[data-free]"); await q.waitForTimeout(300);
   ok(q.url().endsWith("#/home") && !(await q.$('[data-go="diag"]')), "free trial → home, diagnostic task gone");
   await q.goto(base + "#/day/4"); await q.waitForTimeout(300);
   ok(q.url().includes("#/premium") && (await q.textContent(".paywall-hero")).includes("Day 1~3"), "Day 4 locked → paywall: " + q.url());
+  await q.waitForTimeout(800);
+  ok((await q.textContent("[data-free]")).includes("무료 범위로 계속하기") && (await q.textContent(".offer .cmp")).includes("34주제"), "paywall from lock: continue-free button + counts from data");
+  await q.goto(base + "#/days"); await q.waitForTimeout(300);
+  ok(await q.$('.day-card.lock .lock-ico[aria-label="잠김"]'), "locked day card announces 잠김");
   await q.goto(base + "#/sets/p4"); await q.waitForTimeout(800);
   await q.click("[data-set]"); await q.waitForTimeout(300);
   for (let j = 0; j < 3; j++) await q.click(`.pq [data-q="${j}"][data-o="0"]`);
@@ -206,6 +220,32 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   await second[second.length - 1].click(); await q.waitForTimeout(300);
   ok(q.url().includes("#/premium?from=set"), "second Part 4 set → paywall: " + q.url());
   await c2.close();
+}
+// 5-4) 앱(네이티브)에서 스토어 가격을 못 받으면: 빈 가격 대신 '불러오는 중' → 실패 → '다시 시도' → 가격 표시
+{
+  const c4 = await b.newContext({ locale: "ko-KR", viewport: { width: 390, height: 844 } });
+  await c4.addInitScript(() => {
+    localStorage.setItem("toeicfit.paywall", "1");
+    let n = 0;
+    window.__iapRelease = null;
+    window.Capacitor = { isNativePlatform: () => true, Plugins: { NativePurchases: {
+      getProducts: () => (++n === 1 ? new Promise((res, rej) => { window.__iapRelease = () => rej(new Error("offline")); }) : Promise.resolve({ products: [{ priceString: "₩6,900" }] })),
+      getPurchases: () => Promise.resolve({ purchases: [] }), restorePurchases: () => Promise.resolve(), purchaseProduct: () => Promise.reject(new Error("cancel")) } } };
+  });
+  const q = await c4.newPage();
+  q.on("pageerror", (e) => errors.push("pageerror(iap) " + e.message));
+  await q.goto(base);
+  await q.click("[data-next]"); await q.click("[data-next]"); await q.click("[data-next]"); await q.click("[data-next]");
+  await q.waitForTimeout(600);
+  await q.goto(base + "#/premium"); await q.waitForTimeout(300);
+  const loading = await q.$eval("[data-buybox] .btn", (x) => ({ t: x.textContent, d: x.disabled }));
+  ok(loading.d && loading.t.includes("가격 불러오는 중") && !(await q.$("[data-buy]")), "native: price loading → disabled button " + JSON.stringify(loading));
+  await q.evaluate(() => window.__iapRelease()); await q.waitForTimeout(200);
+  ok(await q.$("[data-iap-retry]"), "native: price failed → retry button");
+  await q.click("[data-iap-retry]"); await q.waitForTimeout(300);
+  const buy = await q.textContent("[data-buy]");
+  ok(buy.includes("₩6,900"), "native: retry → store price " + buy);
+  await c4.close();
 }
 // 6) 조작된 저장값 정리
 const st = await p.evaluate(() => window.__toeicfit.sanitize({ profile: { target: "<img src=x onerror=alert(1)>", daily: "9999", examDate: "x" }, words: { "01-01": { b: 99, n: "3" }, "zz": {} }, tests: { "5": { best: "<b>" }, "75": { best: 90, last: 90, at: 1 } }, lc: { "lc-1": { ok: "2", ng: 1, wrong: 1 }, "lc-99999": { ok: 1 } }, settings: { theme: "<x>", rate: 5, autoWord: "yes" }, premium: true }));

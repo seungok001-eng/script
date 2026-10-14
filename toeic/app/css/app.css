@@ -822,6 +822,36 @@ html:lang(en) .ex-ko, html:lang(en) .ko, html:lang(en) .qsub, html:lang(en) [dat
 .biz-mini { text-align: center; font-size: 11px; margin-top: 8px; overflow-wrap: anywhere; }
 
 /* ==== UX 개선 A: 결제·설정·접근성 ==== */
+/* 결제: 무료 vs 전체 이용권 비교표 */
+.cmp { width: 100%; border-collapse: collapse; font-size: 13px; margin: 2px 0 8px; table-layout: fixed; }
+.cmp th, .cmp td { padding: 7px 5px; text-align: center; border-bottom: 1px solid var(--line); vertical-align: middle; overflow-wrap: break-word; }
+.cmp tbody tr:last-child th, .cmp tbody tr:last-child td { border-bottom: 0; }
+.cmp thead th { font-size: 12.5px; font-weight: 700; color: var(--text-3); padding-top: 2px; }
+.cmp thead th:first-child { width: 27%; }
+.cmp tbody th { text-align: left; font-weight: 650; color: var(--text-2); padding-left: 2px; }
+.cmp td { color: var(--text-3); }
+.cmp .full { color: var(--text); font-weight: 700; background: color-mix(in srgb, var(--brand) 9%, transparent); }
+.cmp thead th.full { color: var(--brand); border-radius: 8px 8px 0 0; }
+.cmp tbody tr:last-child .full { border-radius: 0 0 8px 8px; }
+.cmp .ico { width: 17px; height: 17px; color: var(--ok); vertical-align: -3px; stroke-width: 3; }
+.cmp td:not(.full) .ico { color: var(--text-3); }
+.offer-sub { text-align: center; margin: 0 0 12px; }
+.offer-note { text-align: center; margin-top: 6px; }
+.offer .btn[disabled] { opacity: .6; }
+/* 설정: 마지막 백업 · 저장 위치 안내 · 언어 칸 */
+.set-row .sl .set-sub2 { display: block; margin-top: 2px; font-size: 12.5px; color: var(--text-2); font-weight: 600; }
+.set-row .sl .set-sub2.warn { color: var(--warn, var(--accent)); }
+.set-note { display: flex; gap: 6px; align-items: flex-start; margin: -2px 6px 4px; }
+.set-note .ico { width: 15px; height: 15px; flex-shrink: 0; margin-top: 1px; }
+.lang-row .sl b, .lang-row .sl span { white-space: nowrap; }
+.lang-row .sl { flex: 1 0 auto; }
+.lang-row .lang-sel { min-width: 0; max-width: 55%; flex: 0 1 auto; }
+/* 터치 영역: 고르는 버튼 40px · 아이콘만 있는 버튼 44px · 사업자 정보 열기 */
+.seg button { height: 40px; min-width: 44px; }
+.icon-btn { width: 44px; height: 44px; }
+.icon-btn.sm { width: 44px; height: 44px; margin: -10px -12px -8px 0; }
+.biz summary { padding: 12px 16px; min-height: 44px; }
+.biz-link { display: inline-block; padding: 8px 0; }
 /* (A 끝) */
 
 /* ---- */
