@@ -1909,8 +1909,9 @@
     if (tw) { clearTimeout(toastTimer); tw.innerHTML = ""; }
     if (s.kind === "sort" && s.day) dayStepDone(s.day, 1);
     if (s.kind === "quiz" && s.dayStep && s.results.length >= Math.min(5, s.qs.length)) dayStepDone(s.dayStep, 2);
-    if (["pset", "gq", "vq", "p5set", "lcq", "dict"].includes(s.kind) && (s.results || []).length >= 3) logToday().prac = true;
-    const count = s.kind === "card" ? s.seenIds.size : s.kind === "sort" ? 0 : s.results.length;
+    const nAns = s.kind === "p5set" ? s.answered || 0 : (s.results || []).length; // 실전 30문제는 실제로 답한 문제 수
+    if (["pset", "gq", "vq", "p5set", "lcq", "dict"].includes(s.kind) && nAns >= 3) logToday().prac = true;
+    const count = s.kind === "card" ? s.seenIds.size : s.kind === "sort" ? 0 : nAns;
     if (count >= 5) markDone();
     if (s.kind === "lcq" && s.results.length && !s.trial) S.freeUse.lcq = (S.freeUse.lcq || 0) + 1;
     if (s.todayQuiz && s.results.length >= 3) logToday().quiz = true;
@@ -3365,7 +3366,8 @@
     const prog = (t) => { const qs = t.qs.filter((q) => !q.mock); const done = qs.filter((q) => st[q.id]); return { n: qs.length, done: done.length, ok: done.filter((q) => !st[q.id].wrong).length }; };
     const cats = Array.from(new Set(V.map((t) => t.cat)));
     const fT = V.find((t) => t.id === vFreeId());
-    const wrongN = Object.keys(st).filter((k) => st[k].wrong && PR._v.has(k)).length;
+    // 무료 사용자는 열린 유형의 틀린 문제만 다시 풀 수 있으므로 그 수만 센다
+    const wrongN = Object.keys(st).filter((k) => st[k].wrong && PR._v.has(k) && (!L || vOpen(PR._v.get(k).t))).length;
     const total = V.reduce((n, t) => n + prog(t).n, 0), doneAll = V.reduce((n, t) => n + prog(t).done, 0);
     const nxT = V.find((t) => vOpen(t) && gNextLv(t, B));
     const badge = (t) => {
@@ -3391,7 +3393,7 @@
     $app.querySelector("[data-vmix]").addEventListener("click", () => startBankQuiz(B, C.lcPick(V.filter((t) => !L || vOpen(t)).flatMap((t) => t.qs.filter((q) => !q.mock)), st, 20), T`어휘 랜덤 20제`));
     const wb = $app.querySelector("[data-vwrong]");
     if (wb) wb.addEventListener("click", () => {
-      const qs = V.flatMap((t) => t.qs.filter((q) => st[q.id] && st[q.id].wrong));
+      const qs = V.filter((t) => !L || vOpen(t)).flatMap((t) => t.qs.filter((q) => st[q.id] && st[q.id].wrong));
       if (!qs.length) return toast(T`틀린 어휘 문제가 없어요`);
       startBankQuiz(B, C.shuffle(qs).slice(0, 30), T`틀린 어휘 문제`, { exact: true });
     });
@@ -3412,7 +3414,7 @@
     if (!p5Ready()) return go("#/practice");
     const L = locked(), used = p5Used();
     const hist = (S.p5set || []).slice().reverse();
-    const best = hist.reduce((m, x) => Math.max(m, x.ok), 0);
+    const best = hist.filter((x) => x.n === P5_N * 2).reduce((m, x) => Math.max(m, x.ok), 0); // '최고 N/30' 은 30문제를 다 채운 회차만
     const body = T`${topBar(T`Part 5 실전 30문제`, { back: true, sub: T`문법 15 + 어휘 15 · 10분 · 실제 시험처럼` })}
       <div class="card p5intro">
         <div><span class="tico c-blue">${ico("clock")}</span><span><b>10분 안에 30문제</b><span class="small muted">실제 시험의 Part 5 속도 (문제당 20초)</span></span></div>
@@ -3498,14 +3500,24 @@
     clearInterval(s.tick);
     s.sec = Math.min(P5_SEC, Math.round((Date.now() - s.startAt) / 1000));
     s.auto = !!auto;
+    s.answered = s.picks.filter((x) => x != null).length;
+    // 한 문제도 풀지 않았으면(예: 앱을 내려 둔 채 시간 종료) 채점·기록·무료 횟수 없이 처음 화면으로
+    if (!s.answered) {
+      s.done = true;
+      leaveStudyTo("#/p5set");
+      return toast(T`푼 문제가 없어 기록하지 않았어요`);
+    }
     s.score = C.p5SetScore(s.items, s.picks);
     s.items.forEach((it, i) => {
       const B = it.k === "v" ? BANKS.vq : BANKS.gq;
       const g = B.idx().get(it.q.id);
       const ok = s.picks[i] === it.q.a;
-      const st = B.st();
-      st[it.q.id] = C.lcRecord(st[it.q.id], ok, today());
-      if (g) recordAnswer("rc", B.qt(g.t), ok);
+      // 못 푼 문제는 점수에서만 오답이고, 문제별 기록·정답률·예상 점수에는 넣지 않는다 (본 적 없는 문제가 '틀린 문제'에 쌓이지 않게)
+      if (s.picks[i] != null) {
+        const st = B.st();
+        st[it.q.id] = C.lcRecord(st[it.q.id], ok, today());
+        if (g) recordAnswer("rc", B.qt(g.t), ok);
+      }
       s.results.push({ q: it.q, ok, pick: s.picks[i], k: it.k, t: g && g.t });
     });
     S.p5set = (S.p5set || []).concat({ at: today(), ok: s.score.ok, n: s.score.n, sec: s.sec }).slice(-30);

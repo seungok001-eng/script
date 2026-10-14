@@ -2553,7 +2553,7 @@
    },
    {
     "id": "v02-075",
-    "s": "The cost of the uniform will be ------- from your first paycheck in two equal installments.",
+    "s": "The cost of the uniform will be ------- from your first two paychecks in equal installments.",
     "o": [
      "deducted",
      "declined",
@@ -2562,7 +2562,7 @@
     ],
     "a": 0,
     "lv": 2,
-    "exp": "빈칸 뒤 from your first paycheck(첫 급여에서)과 어울려 '유니폼 비용이 급여에서 공제되다'라는 뜻이 되는 deducted가 정답이다. deduct A from B는 'B에서 A를 공제하다'라는 구조다. declined(감소했다, 거절되었다)는 자동사 용법이 기본이라 from your paycheck와 어울리지 않고, decreased(줄어든)와 reduced(줄어든)는 양이 줄어든다는 뜻으로 '급여에서 빼다'라는 의미가 없다. deduct from / tax deduction을 외워 두자."
+    "exp": "빈칸 뒤 from your first two paychecks(처음 두 번의 급여에서)과 어울려 '유니폼 비용이 급여에서 공제되다'라는 뜻이 되는 deducted가 정답이다. deduct A from B는 'B에서 A를 공제하다'라는 구조다. declined(감소했다, 거절되었다)는 자동사 용법이 기본이라 from your paycheck와 어울리지 않고, decreased(줄어든)와 reduced(줄어든)는 양이 줄어든다는 뜻으로 '급여에서 빼다'라는 의미가 없다. deduct from / tax deduction을 외워 두자."
    },
    {
     "id": "v02-076",
@@ -7115,11 +7115,11 @@
     "s": "Food manufacturers in the region must comply with ------- hygiene standards set by the national health agency.",
     "o": [
      "scenic",
-     "secluded",
+     "stringent",
      "stagnant",
-     "stringent"
+     "secluded"
     ],
-    "a": 3,
+    "a": 1,
     "lv": 3,
     "exp": "comply with와 hygiene standards로 보아 '엄격한' 위생 기준이라는 뜻의 stringent가 정답이다. scenic(경치 좋은)과 secluded(외딴)는 장소를 묘사하는 말이다. stagnant(침체된, 고여 있는)는 경제·물에 쓰므로 standards를 수식하지 않는다. stringent standards / stringent regulations를 strict와 함께 기억하자."
    },
@@ -9467,7 +9467,7 @@
     ],
     "a": 2,
     "lv": 2,
-    "exp": "빈칸 앞 keep과 뒤 of가 함께 '~을 기록하다, 파악하다'라는 고정 표현 keep track of를 만드는 track이 정답이다. path(길)와 trail(흔적, 오솔길)은 keep ~ of 틀에 들어가지 않는다. trace(흔적)는 lose trace of처럼 일부 쓰이지만 keep trace of는 쓰지 않는 표현이다. keep track of / keep a record of / lose track of를 함께 기억하자."
+    "exp": "빈칸 앞 keep과 뒤 of가 함께 '~을 기록하다, 파악하다'라는 고정 표현 keep track of를 만드는 track이 정답이다. path(길)와 trail(흔적, 오솔길)은 keep ~ of 틀에 들어가지 않는다. trace(흔적, 자취)도 keep ~ of 틀에는 쓰지 않는다. keep track of / keep a record of / lose track of를 함께 기억하자."
    },
    {
     "id": "v07-051",
@@ -9655,12 +9655,12 @@
     "id": "v07-065",
     "s": "Mayor Hollis will ------- a short speech at the opening ceremony of the new community center on Saturday.",
     "o": [
-     "deliver",
-     "send",
      "ship",
+     "send",
+     "deliver",
      "transfer"
     ],
-    "a": 0,
+    "a": 2,
     "lv": 2,
     "exp": "빈칸 뒤 a short speech와 짝을 이루어 '연설하다'라는 뜻이 되는 deliver가 정답이다. send(보내다)와 ship(발송하다)은 물건이나 서류를 보낼 때 쓰고, transfer(옮기다, 이체하다)는 사람이나 돈의 이동을 나타낸다. 모두 speech를 목적어로 '연설하다'라는 뜻을 만들지 못한다. deliver a speech / give a presentation / deliver results를 함께 기억하자."
    },
@@ -10263,7 +10263,7 @@
     "ko": "제공하는 데 전념하다"
    }
   ],
-  "trap": "가장 흔한 실수는 한국어 뜻만 보고 고르는 것이다. '준수하다'라는 뜻만 생각하면 comply, follow, obey, observe가 모두 정답처럼 보이지만, 빈칸 뒤에 with가 있으면 comply만 가능하다. 마찬가지로 '자격이 있다'는 eligible for와 entitled to, '책임이 있다'는 responsible for와 attributable to처럼 뜻이 비슷한 단어가 서로 다른 전치사를 취하므로, 반드시 빈칸 뒤 전치사와 짝이 맞는지 확인한 뒤 의미를 검토해야 한다. 또 be committed to -ing처럼 to가 전치사인 표현과 be reluctant to do처럼 to부정사인 표현을 혼동하지 않도록 주의하자.",
+  "trap": "가장 흔한 실수는 한국어 뜻만 보고 고르는 것이다. '준수하다'라는 뜻만 생각하면 comply, follow, obey, observe가 모두 정답처럼 보이지만, 빈칸 뒤에 with가 있으면 comply만 가능하다. 마찬가지로 '자격이 있다'는 eligible for와 entitled to, '~의 원인이다'라는 뜻의 responsible for와 attributable to처럼 뜻이 비슷한 단어가 서로 다른 전치사를 취하므로, 반드시 빈칸 뒤 전치사와 짝이 맞는지 확인한 뒤 의미를 검토해야 한다. 또 be committed to -ing처럼 to가 전치사인 표현과 be reluctant to do처럼 to부정사인 표현을 혼동하지 않도록 주의하자.",
   "qs": [
    {
     "id": "v08-001",
@@ -12430,12 +12430,12 @@
     "id": "v09-056",
     "s": "The company picnic was organized to boost employee ------- after a difficult year of restructuring.",
     "o": [
-     "morale",
+     "motive",
      "moral",
      "model",
-     "motive"
+     "morale"
     ],
-    "a": 0,
+    "a": 3,
     "lv": 2,
     "exp": "employee와 함께 '직원 사기'라는 뜻이 되어야 하므로 morale이 정답이다. moral(교훈)은 철자가 비슷하지만 이야기의 교훈이나 도덕을 뜻하고, model(모델)과 motive(동기)도 boost employee ~에 맞지 않는다. boost morale / employee morale / low morale을 외우자."
    },
