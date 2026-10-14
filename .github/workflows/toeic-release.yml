@@ -5,6 +5,9 @@
 #   TOEICFIT_KEYSTORE_PASSWORD 키 저장소 비밀번호
 #   TOEICFIT_KEY_ALIAS         키 별칭 (예: toeicfit)
 #   TOEICFIT_KEY_PASSWORD      키 비밀번호
+# TOEICFIT_KEYSTORE_BASE64 만들기(윈도우): PowerShell 에서
+#   [Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\toeicfit-key\toeicfit-upload.jks")) | Out-File -Encoding ascii -NoNewline key-base64.txt
+#   → 메모장으로 열어 전체 복사해 붙여 넣고, key-base64.txt 는 지운다
 # 결과: 실행 화면 아래 Artifacts → toeicfit-release-aab (zip 안의 .aab 를 Play Console 에 올린다)
 name: toeic-release-aab
 
