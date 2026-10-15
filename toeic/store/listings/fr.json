@@ -61,7 +61,7 @@
    ],
    [
     "2. Informations enregistrées sur l'appareil",
-    "Le score visé, la date d'examen, l'historique d'apprentissage (étape de révision et nombre de bonnes réponses pour chaque mot) et les paramètres sont enregistrés uniquement sur l'appareil de l'utilisateur (stockage de l'application). Ils sont effacés lors de la désinstallation de l'application ou via Paramètres > Réinitialiser la progression. Les fichiers de sauvegarde sont enregistrés et gérés par l'utilisateur lui-même. Si l'utilisateur a activé la sauvegarde Android (Google), le système d'exploitation peut inclure ces informations dans la sauvegarde de son propre compte Google, chiffrée et contrôlée par l'utilisateur, à laquelle le développeur n'a pas accès."
+    "Le score visé, la date d'examen, l'historique d'apprentissage (étape de révision et nombre de bonnes réponses pour chaque mot) et les paramètres sont enregistrés uniquement sur l'appareil de l'utilisateur (stockage de l'application). Ils sont effacés lors de la désinstallation de l'application ou via Paramètres > Réinitialiser la progression. Les fichiers de sauvegarde sont enregistrés et gérés par l'utilisateur lui-même. Si l'utilisateur a activé la sauvegarde Android (Google) ou iPhone (iCloud), le système d'exploitation peut inclure ces informations dans la sauvegarde de son propre compte Google ou iCloud, chiffrée et contrôlée par l'utilisateur, à laquelle le développeur n'a pas accès."
    ],
    [
     "3. Autorisations",

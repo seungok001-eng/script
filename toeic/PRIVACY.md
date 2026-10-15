@@ -8,7 +8,7 @@
 토익핏(이하 "앱")은 회원가입이 없으며, 이름·이메일·전화번호·위치 등 어떤 개인정보도 수집하거나 외부 서버로 전송하지 않습니다.
 
 ## 2. 기기에 저장되는 정보
-목표 점수, 시험일, 학습 기록(단어별 복습 단계·정답 수), 설정은 사용자의 기기 안(앱 저장소)에만 저장됩니다. 앱을 삭제하거나 설정 > 학습 기록 초기화를 누르면 지워집니다. 백업 파일은 사용자가 직접 저장·관리합니다. 사용자가 기기의 Android(Google) 백업을 켜 둔 경우 운영체제가 이 정보를 사용자 본인의 Google 계정 백업에 포함할 수 있으며, 이 백업은 암호화되어 사용자가 직접 관리하고 개발자는 접근할 수 없습니다.
+목표 점수, 시험일, 학습 기록(단어별 복습 단계·정답 수), 설정은 사용자의 기기 안(앱 저장소)에만 저장됩니다. 앱을 삭제하거나 설정 > 학습 기록 초기화를 누르면 지워집니다. 백업 파일은 사용자가 직접 저장·관리합니다. 사용자가 기기의 Android(Google) 또는 iPhone(iCloud) 백업을 켜 둔 경우 운영체제가 이 정보를 사용자 본인의 Google 계정 또는 iCloud 백업에 포함할 수 있으며, 이 백업은 암호화되어 사용자가 직접 관리하고 개발자는 접근할 수 없습니다.
 
 ## 3. 권한
 알림: 사용자가 '매일 학습 알림'을 켠 경우에만 요청하며, 정한 시간에 학습 알림을 표시하는 데만 사용합니다.
@@ -29,7 +29,7 @@ Effective date: October 14, 2026
 ToeicFit (the "App") does not require account registration and does not collect any personal information, such as names, email addresses, phone numbers or location, nor does it transmit any such information to external servers.
 
 ## 2. Information Stored on the Device
-Target score, test date, study history (review stage and number of correct answers for each word) and settings are stored solely on the user's device (in the App's local storage). This information is deleted when the App is uninstalled or when the user selects Settings > Reset Progress. Backup files are saved and managed by the user. If the user has Android (Google) backup turned on, the operating system may include this information in the user's own Google account backup, which is encrypted and controlled by the user and cannot be accessed by the developer.
+Target score, test date, study history (review stage and number of correct answers for each word) and settings are stored solely on the user's device (in the App's local storage). This information is deleted when the App is uninstalled or when the user selects Settings > Reset Progress. Backup files are saved and managed by the user. If the user has Android (Google) or iPhone (iCloud) backup turned on, the operating system may include this information in the user's own Google account or iCloud backup, which is encrypted and controlled by the user and cannot be accessed by the developer.
 
 ## 3. Permissions
 Notifications: This permission is requested only if the user turns on Daily Reminder, and it is used solely to display study reminders at the time the user has selected.

@@ -61,7 +61,7 @@
    ],
    [
     "2. Information Stored on the Device",
-    "Target score, test date, study history (review stage and number of correct answers for each word) and settings are stored solely on the user's device (in the App's local storage). This information is deleted when the App is uninstalled or when the user selects Settings > Reset Progress. Backup files are saved and managed by the user. If the user has Android (Google) backup turned on, the operating system may include this information in the user's own Google account backup, which is encrypted and controlled by the user and cannot be accessed by the developer."
+    "Target score, test date, study history (review stage and number of correct answers for each word) and settings are stored solely on the user's device (in the App's local storage). This information is deleted when the App is uninstalled or when the user selects Settings > Reset Progress. Backup files are saved and managed by the user. If the user has Android (Google) or iPhone (iCloud) backup turned on, the operating system may include this information in the user's own Google account or iCloud backup, which is encrypted and controlled by the user and cannot be accessed by the developer."
    ],
    [
     "3. Permissions",
