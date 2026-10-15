@@ -52,7 +52,7 @@ function demoState(today, words) {
 const SHOTS = [
   { name: "01-target", go: async (p) => { await p.click("[data-next]"); await p.click('[data-score="800"]'); } },
   { name: "02-home", hash: "#/home" },
-  { name: "03-card", go: async (p) => { await p.goto(BASE + "#/day/2"); await p.waitForTimeout(300); await p.click('[data-mode="card"]'); await p.waitForTimeout(250); await p.click("[data-flip]"); } },
+  { name: "03-card", go: async (p) => { await p.goto(BASE + "#/day/2"); await p.waitForTimeout(300); await p.click(".more-modes summary"); /* 카드 암기는 '더 연습하기' 안에 있다 */ await p.waitForTimeout(150); await p.click('[data-mode="card"]'); await p.waitForTimeout(250); await p.click("[data-flip]"); } },
   { name: "04-p3", go: async (p) => { await p.goto(BASE + "#/sets/p3"); await p.waitForTimeout(1200); await p.click("[data-set]"); await p.waitForTimeout(400); for (let j = 0; j < 3; j++) await p.click(`.pq [data-q="${j}"][data-o="${j === 1 ? 3 : 0}"]`); await p.click("[data-grade]"); await p.waitForTimeout(400); const t = await p.$(".script"); if (t) await t.evaluate((el) => window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY - 70)); } },
   { name: "05-p7", go: async (p) => { await p.goto(BASE + "#/sets/p7"); await p.waitForTimeout(1200); await p.locator("[data-cat]").nth(4).click(); /* 전체·안 푼 것·틀린 것·단일·이중 — 다른 언어에서는 값도 번역되므로 순서로 고른다 */ await p.waitForTimeout(300); await p.click("[data-set]"); await p.waitForTimeout(400); const n = await p.$$eval(".pq", (x) => x.length); for (let j = 0; j < n; j++) await p.click(`.pq [data-q="${j}"][data-o="1"]`); await p.click("[data-grade]"); await p.waitForTimeout(500); const m = await p.$("mark.on"); if (m) await m.evaluate((el) => window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY - 160)); } },
   { name: "06-days", hash: "#/days" },
@@ -76,7 +76,7 @@ for (const sz of SIZES) {
   const { today, words } = await probe.evaluate(() => ({ today: window.Core.dayNum(), words: window.VOCA_DATA.words.map((w) => ({ id: w.id, tier: w.tier, d: w.d })) }));
   await probe.close();
   const state = demoState(today, words);
-  for (const s of SHOTS) {
+  for (const s of SHOTS.filter((x) => !process.env.ONLY || process.env.ONLY.split(",").includes(x.name))) { // ONLY=03-card,05-p7 처럼 일부만 다시 찍기
     const st = JSON.parse(JSON.stringify(state));
     if (s.dark) st.settings.theme = "dark";
     // 화면마다 새 페이지: 앱이 시작하기 전에 상태를 넣는다 (첫 화면 샷은 빈 상태)
