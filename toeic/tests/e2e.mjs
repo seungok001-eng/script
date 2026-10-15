@@ -62,7 +62,10 @@ ok(!p.url().includes("study"), "back after exit not study: " + p.url());
 await p.goto(base + "#/day/2"); await p.waitForTimeout(200);
 await p.evaluate(() => { const m = document.querySelector(".more-modes"); if (m) m.open = true; }); await p.click('[data-mode="meaning"]'); await p.waitForTimeout(200);
 const ans = await p.evaluate(() => { const q = document.querySelectorAll("[data-pick]"); return q.length; });
-await p.click('[data-pick="0"]'); await p.goBack(); await p.waitForTimeout(300);
+await p.click('[data-pick="0"]');
+// 안 본 단어로 푸는 퀴즈는 그 단어를 조용히 '학습한 단어'에 넣지 않는다 (기록은 퀴즈 수로만)
+ok((await p.evaluate(() => Object.keys(window.__toeicfit.state.words).length)) === 3, "quiz on unseen words does not schedule them");
+await p.goBack(); await p.waitForTimeout(300);
 // 푼 문제가 있으면 뒤로가기 전에 묻는다 → 취소하면 남고, 그만하기면 나간다
 ok(p.url().includes("#/study") && (await p.$("#modal")), "back during quiz asks to exit: " + p.url());
 await p.click('#modal [data-r="0"]'); await p.waitForTimeout(200);
@@ -100,6 +103,13 @@ await p.goto(base + "#/review"); await p.waitForTimeout(200);
 ok((await p.textContent(".review-go")).includes("20개 복습하기"), "review chunk button");
 await p.click('.review-go'); await p.waitForTimeout(200);
 ok((await p.textContent(".cnt")).endsWith("/ 20"), "review chunk of 20: " + (await p.textContent(".cnt")));
+// 잊었던 단어(b=0, n≥1)를 복습에서 '알아요' → 처음 보는 단어의 +3일 보너스가 아니라 +1일 · 복습 수는 단어마다 한 번
+await p.evaluate(() => { const S = window.__toeicfit.state, t = window.__toeicfit.Core.dayNum(); const id = window.__toeicfit.state.__cur = document.querySelector(".flash [data-id]").dataset.id; S.words[id] = { b: 0, due: t, n: 2, ok: 0, ng: 2, last: t - 1, first: t - 5 }; });
+await p.click("[data-flip]"); await p.waitForTimeout(100);
+ok((await p.textContent('[data-g="2"]')).includes("내일 복습"), "forgotten word: 알아요 label says tomorrow");
+await p.click('[data-g="2"]'); await p.waitForTimeout(100);
+const fg = await p.evaluate(() => { const S = window.__toeicfit.state, t = window.__toeicfit.Core.dayNum(); const w = S.words[S.__cur]; return { b: w.b, due: w.due - t, rev: S.log[t].rev }; });
+ok(fg.b === 1 && fg.due === 1 && fg.rev === 1, "forgotten word graded +1 day and counted as one review " + JSON.stringify(fg));
 await p.click("[data-exit]"); await p.click('[data-r="1"]'); await p.waitForTimeout(300);
 // 5) 설정 화면 레이아웃 (가로 스크롤 없음)
 for (const r of ["#/settings", "#/review", "#/stats", "#/home", "#/days", "#/part1", "#/conf", "#/search", "#/lc", "#/practice", "#/grammar", "#/mock", "#/dict"]) {
@@ -140,10 +150,17 @@ await p.goBack(); await p.waitForTimeout(200);
 // 5-2) 실전: 허브 → Part 3 세트 풀기·채점(스크립트·근거) → 하프 모의고사 끝까지 제출 → 예상 점수
 await p.goto(base + "#/practice"); await p.waitForTimeout(1500);
 ok(await p.$('a[href="#/sets/p3"]'), "practice hub loaded");
+// 허브 개수: 연습 N + 모의고사 M (스토어의 전체 수와 맞게) · 단위는 '문제'
+const hubT = await p.textContent('a[href="#/sets/p3"]');
+ok(/연습 0\/59세트 \+ 모의고사 31세트/.test(hubT) && (await p.textContent('a[href="#/p2"]')).includes("연습 384문제 + 모의고사 64문제") && !(await p.textContent("#app")).includes("20제") && !/[^당]문항/.test(await p.textContent("#app")), "hub counts reconcile with store totals: " + hubT);
 await p.goto(base + "#/sets/p3"); await p.waitForTimeout(300);
 await p.click("[data-set]"); await p.waitForTimeout(300);
 ok(await p.$(".lp-wrap .lp-thin [data-lfirst]") && await p.$("[data-lback]") && await p.$("[data-lrate]"), "p3 thin player with restart/back/0.8x");
 ok((await p.textContent(".study-top .cnt")).trim() === "문제 0/3", "p3 counter starts at 문제 0/3: " + await p.textContent(".study-top .cnt"));
+// 답을 하나라도 고르면 채점 전이라도 뒤로가기에서 묻는다
+await p.click('.pq [data-q="0"][data-o="1"]'); await p.goBack(); await p.waitForTimeout(300);
+ok(await p.$("#modal") && p.url().includes("#/study"), "back with picks in an ungraded set asks first");
+await p.click('#modal [data-r="0"]'); await p.waitForTimeout(200);
 for (let j = 0; j < 3; j++) await p.click(`.pq [data-q="${j}"][data-o="0"]`);
 await p.click("[data-grade]"); await p.waitForTimeout(300);
 ok((await p.$$(".sline")).length >= 6 && (await p.$$(".feedback")).length === 3, "p3 graded with script");
@@ -162,7 +179,8 @@ await p.goBack(); await p.waitForTimeout(300);
 await p.goto(base + "#/sets/p4"); await p.waitForTimeout(300);
 await p.click("[data-run]"); await p.waitForTimeout(300);
 for (let k = 0; k < 3; k++) { for (let j = 0; j < 5; j++) { const o = await p.$(`.pq [data-q="${j}"][data-o="3"]`); if (o) await o.click(); } await p.click("[data-grade]"); await p.waitForTimeout(150); await p.click("[data-next]"); await p.waitForTimeout(150); }
-ok(await p.$(".result-hero"), "p4 3-set result");
+ok(await p.$(".result-hero") && (await p.textContent(".result-hero")).includes("정답률") && (await p.textContent(".result-hero .score")).includes("%") && !(await p.textContent(".result-hero .score")).includes("점"), "p4 3-set result shows 정답률 %");
+ok(await p.evaluate(() => { const S = window.__toeicfit.state, t = window.__toeicfit.Core.dayNum(); return S.log[t].prac === true && S.log[t].done === true; }), "practice set marks today done (streak)");
 const pw = await p.$("[data-prevw]");
 if (pw) { ok((await p.$$("[data-pwq]")).length > 0, "set result lists wrong questions"); await pw.click(); await p.waitForTimeout(300); ok((await p.textContent(".study")).includes("틀린 문제만"), "set result → wrong review"); }
 await p.goto(base + "#/home"); await p.waitForTimeout(200);
@@ -251,7 +269,7 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.vocab5 || []).length)) {
   await p.click("[data-exit]"); await p.click('#modal [data-r="1"]'); await p.waitForTimeout(300);
   // Part 5 실전 30문제: 10:00 한 개 타이머 · 답해도 정답을 안 보여 줌 · 제출하면 문법/어휘 정답률
   await p.goto(base + "#/practice"); await p.waitForTimeout(300);
-  ok((await p.$('.tile[href="#/vocab5"]')) && (await p.$('.tile[href="#/p5set"]')) && (await p.textContent(".page")).includes("외운 단어 Part 5 20제"), "hub: vocab5 + P5 set tiles, renamed word Part 5 tile");
+  ok((await p.$('.tile[href="#/vocab5"]')) && (await p.$('.tile[href="#/p5set"]')) && (await p.textContent(".page")).includes("외운 단어 Part 5 20문제"), "hub: vocab5 + P5 set tiles, renamed word Part 5 tile");
   await p.goto(base + "#/p5set"); await p.waitForTimeout(300);
   await p.click("[data-p5go]"); await p.waitForTimeout(300);
   ok((await p.textContent(".study-top .p5clock")).includes("10:00") && (await p.textContent(".cnt")).trim() === "1 / 30", "P5 set starts with 10:00 timer, 30 questions");
@@ -312,7 +330,11 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   await q.goto(base + "#/day/4"); await q.waitForTimeout(300);
   ok(q.url().includes("#/premium") && (await q.textContent(".paywall-hero")).includes("Day 1~3"), "Day 4 locked → paywall: " + q.url());
   await q.waitForTimeout(800);
-  ok((await q.textContent("[data-free]")).includes("무료 범위로 계속하기") && (await q.textContent(".offer .cmp")).includes("34주제"), "paywall from lock: continue-free button + counts from data");
+  ok((await q.textContent("[data-free]")).includes("무료 범위로 계속하기") && (await q.textContent(".offer .cmp")).includes("34주제") && (await q.textContent(".offer .cmp")).includes("기초 4주제 + 선택 1주제") && (await q.textContent(".offer .cmp")).includes("Part 5 실전·시간 압박") && (await q.textContent(".page")).includes("구독이 아니라서 자동 결제는 없어요"), "paywall from lock: continue-free button + counts from data + copy");
+  // 고정된 구매 상자가 비교표 마지막 줄을 가리지 않는다 (끝까지 내리면 표의 마지막 줄이 상자 위에 보인다)
+  await q.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight)); await q.waitForTimeout(200);
+  const cover = await q.evaluate(() => { const r = document.querySelector(".cmp tbody tr:last-child").getBoundingClientRect(), b = document.querySelector("[data-buybox]").getBoundingClientRect(); return { rb: Math.round(r.bottom), bt: Math.round(b.top) }; });
+  ok(cover.rb <= cover.bt, "buy box does not cover last comparison row " + JSON.stringify(cover));
   await q.goto(base + "#/days"); await q.waitForTimeout(300);
   ok(await q.$('.day-card.lock .lock-ico[aria-label="잠김"]'), "locked day card announces 잠김");
   await q.goto(base + "#/sets/p4"); await q.waitForTimeout(800);
@@ -331,9 +353,9 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   const gs = await q.evaluate(() => ({ n: document.querySelector(".cnt").textContent, free: window.__toeicfit.state.gFree }));
   ok(gs.n.trim() === "1 / 20" && gs.free === null, "free grammar random fills 20 from basics: " + JSON.stringify(gs));
   await q.goto(base + "#/grammar/g05"); await q.waitForTimeout(300);
-  ok(q.url().endsWith("#/grammar/g05") && (await q.$$(".lesson-acc")).length > 0, "locked topic still shows lessons");
+  ok(q.url().endsWith("#/grammar/g05") && (await q.$$(".lesson-acc")).length > 0 && (await q.$eval("[data-start]", (b) => b.classList.contains("ghost"))), "locked topic still shows lessons · 섞어서 button is ghost until free");
   await q.click('[data-lv="1"]'); await q.waitForTimeout(200);
-  ok(await q.$("#modal [data-gfree]"), "pick free topic confirm");
+  ok(await q.$("#modal [data-gfree]") && (await q.textContent("#modal")).includes("무료 주제는 한 번만 고를 수 있어요") && (await q.getAttribute("#modal .modal", "aria-labelledby")) === "modal-title", "pick free topic confirm (copy + aria-labelledby)");
   await q.click("#modal [data-gfree]"); await q.waitForTimeout(300);
   ok((await q.evaluate(() => window.__toeicfit.state.gFree)) === "g05" && q.url().includes("#/study"), "free topic chosen and quiz started");
   await q.goto(base + "#/grammar/g07"); await q.waitForTimeout(300);
@@ -359,6 +381,11 @@ if (await p.evaluate(() => (window.VOCA_PRACTICE.full || []).length)) {
   await q.evaluate(() => { const S = window.__toeicfit.state; S.freeUse.lcq = 1; ["p3", "p4", "p6", "p7"].forEach((p) => { S.prac[p + "-001"] = { ok: 1, n: 1, last: 1 }; }); delete S.log[Object.keys(S.log).pop()].prac; S.guide.hide = true; });
   await q.goto(base + "#/stats"); await q.goto(base + "#/home"); await q.waitForTimeout(300);
   ok(/Part 5 문법/.test(await q.textContent('.today [data-go="prac"]')), "free today practice falls back to free grammar basics");
+  // 무료 하프 1회를 이미 풀었고 시험이 2주 안이면 '오늘의 실전'이 잠긴 모의고사를 권하지 않는다
+  await q.evaluate(() => { const S = window.__toeicfit.state, C = window.__toeicfit.Core, t = C.dayNum(); S.profile.examDate = C.ymd(t + 10); S.mock[1] = { lc: 200, rc: 200, total: 400, best: 400, at: t - 5, n: 1, first: 400 }; });
+  await q.goto(base + "#/stats"); await q.goto(base + "#/home"); await q.waitForTimeout(300);
+  ok(!/모의고사/.test(await q.textContent('.today [data-go="prac"]')), "free user after free mock: today practice is not a locked mock: " + (await q.textContent('.today [data-go="prac"]')));
+  await q.evaluate(() => { const S = window.__toeicfit.state; S.profile.examDate = null; delete S.mock[1]; });
   // 무료 단어를 다 본 사람: '1회독 완료'가 아니라 잠긴 단어 안내
   await q.evaluate(() => { const S = window.__toeicfit.state, t = Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000); window.VOCA_DATA.words.filter((w) => w.d <= 3).forEach((w) => { S.words[w.id] = { b: 2, due: t + 3, n: 2, ok: 2, ng: 0, last: t - 2, first: t - 3 }; }); });
   await q.goto(base + "#/stats"); await q.goto(base + "#/home"); await q.waitForTimeout(300);

@@ -112,7 +112,8 @@
       wrongHit(s);
       return s;
     }
-    const seenBefore = !!(st && st.n);
+    // 오늘 처음 본 단어를 퀴즈에서 틀린 건 오답노트에 넣지 않는다 (카드의 '몰라요'와 같은 규칙)
+    const seenBefore = !!(st && st.n) && (st.first == null || st.first < today);
     s.n += 1;
     s.ng += 1;
     s.last = today;
@@ -166,10 +167,14 @@
   }
 
   // ───────────── 연속 학습일 ─────────────
+  // '하루를 했다'의 기준은 한 곳에서만: 연속 학습일·통계 달력·홈이 모두 이 함수를 쓴다
+  function dayDone(l) {
+    return !!(l && l.done);
+  }
   function streak(log, today) {
     let n = 0;
-    let d = log[today] && log[today].done ? today : today - 1;
-    while (log[d] && log[d].done) {
+    let d = dayDone(log[today]) ? today : today - 1;
+    while (dayDone(log[d])) {
       n += 1;
       d -= 1;
     }
@@ -651,6 +656,12 @@
     return w ? Math.round((parts.reduce((a, p) => a + p[0] * p[1], 0) / w) * 100) : 100;
   }
 
+  // 하루 예상 시간(분): 새 단어 1개 약 0.4분(카드·뒤집기·발음), 복습 1개 약 0.15분, 실전 과제는 과제의 분. 온보딩·홈·진단이 같은 식을 쓴다
+  function estimateMinutes(o) {
+    const m = ((o && o.new) || 0) * 0.4 + ((o && o.due) || 0) * 0.15 + ((o && o.prac) || 0);
+    return Math.max(1, Math.ceil(m));
+  }
+
   // 지금 속도로 범위를 다 보는 날 (최근 7일 새 단어 평균)
   function projectFinish(pool, states, log, today, daily, start) {
     // 최근 7일(시작한 지 7일이 안 됐으면 시작일부터) 하루 평균 새 단어 수
@@ -667,7 +678,7 @@
     DAY_MS, dayNum, dayToDate, ymd, parseYmd,
     TIER_NAMES, SCORE_OPTIONS, tiersFor, scoreBand, poolFor, recommendDaily,
     INTERVALS, MASTER_BOX, WRONG_CLEAR, newState, grade, applyQuiz, markKnown, status, isDue, listSep,
-    todayPlan, streak,
+    todayPlan, streak, dayDone, estimateMinutes,
     rng, shuffle, meaningText, distractors, starred, cloze, plainEx, makeQuestion, makeTest,
     canParaphrase, makeParaphrase, placementSample,
     practiceTask, levelsFor, todayProgress,

@@ -1164,7 +1164,9 @@ button.tl-item:active { transform: scale(0.99); }
 .tico .ico { width: 20px; height: 20px; }
 /* 영어 단어는 글자 중간에서 끊지 않는다 (넘칠 때만 줄바꿈) */
 .en, .ww, .wd-word, .flash .f-word, [lang="en"] { overflow-wrap: break-word; word-break: normal; }
-.cmp tbody th { overflow-wrap: normal; word-break: normal; hyphens: auto; -webkit-hyphens: auto; }
+.cmp tbody th { overflow-wrap: normal; hyphens: auto; -webkit-hyphens: auto; }
+/* 한국어(기본 keep-all)에서는 .ww(한국어 제목에도 쓴다)·비교표 머리글이 단어 중간에서 끊기지 않게 — 영어 표제어만 normal */
+html:lang(ko) .ww:not(.en), html:lang(ko) .cmp tbody th { word-break: keep-all; }
 /* 혼동 어휘: 단어·품사 한 줄, 뜻은 아래 줄 */
 .kv.cf-kv { display: block; }
 .cf-kv .cf-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
@@ -1204,3 +1206,27 @@ mark.on { background: color-mix(in srgb, var(--gold) 30%, transparent); color: v
 .no-tabs .main { padding-bottom: calc(var(--safe-b) + 16px); }
 .no-tabs .toast-wrap { bottom: calc(var(--safe-b) + 90px); }
 .no-tabs .offer [data-buybox] { position: sticky; bottom: 0; z-index: 4; margin: 0 -16px; padding: 10px 16px calc(8px + var(--safe-b)); background: linear-gradient(to bottom, transparent, var(--bg-elev) 18%); border-radius: 0 0 var(--r-l) var(--r-l); }
+
+/* ───────── 5차 수정: 터치 영역·접근성·결제 화면 ───────── */
+/* 터치 영역 44px: 발음 버튼·칩·고르는 버튼·'뜻 가리기'·'자세히'·강의 제목 */
+.play { width: 44px; height: 44px; }
+.play.sm { width: 44px; height: 44px; margin: -4px -2px -4px 0; }
+.chip { min-height: 44px; }
+.seg button { height: 44px; }
+.section-h a, .section-h button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 8px; margin: -12px -8px -12px 0; }
+.lesson-h { min-height: 44px; cursor: pointer; }
+/* Day 테스트 격자: 칸 44px 이상, 잠긴 Day 는 누를 수 없는 표시 */
+.dt-grid { grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)) !important; }
+.dt-grid a, .dt-grid span { aspect-ratio: 1; min-height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
+.dt-grid .dt-lock { opacity: 0.6; }
+.dt-grid .ico { width: 14px; height: 14px; }
+/* 통계 달력: 연속 학습일에 들어간 날 표시 */
+.heat .hc.hc-done { box-shadow: inset 0 0 0 2px var(--ok); }
+/* 퀴즈 보기 정답·오답: 색에만 기대지 않게 ✓ ✗ 글자를 더한다 */
+.opt.right .on::after { content: " ✓"; }
+.opt.wrong .on::after { content: " ✗"; }
+.opt.right .on, .opt.wrong .on { width: auto; min-width: 26px; padding: 0 5px; }
+/* 결제 화면: 고정된 구매 상자가 비교표 마지막 줄을 가리지 않게 (상자 높이만큼 아래 여백) */
+.no-tabs .offer .cmp { margin-bottom: 8px; }
+.no-tabs .offer [data-buybox] { margin-top: 10px; }
+.no-tabs .page { padding-bottom: calc(96px + var(--safe-b)); }

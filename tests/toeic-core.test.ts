@@ -87,13 +87,16 @@ test("오답노트: 처음 보는 날 '몰라요'는 넣지 않고, 이미 본 �
   assert.equal(b.cs, 0);
   const q0 = C.applyQuiz(undefined, false, t); // 한 번도 안 본 단어를 퀴즈에서 틀림
   assert.ok(!q0.wrong);
-  const q1 = C.applyQuiz(C.grade(undefined, 2, t), false, t); // 오늘 카드로 본 단어를 퀴즈에서 틀림
-  assert.equal(q1.wrong, true);
+  const q1 = C.applyQuiz(C.grade(undefined, 2, t), false, t); // 오늘 처음 카드로 본 단어를 퀴즈에서 틀림 → 카드의 '몰라요'와 같이 아직 오답노트 아님
+  assert.ok(!q1.wrong);
+  assert.equal(q1.ng, 1);
+  const q2 = C.applyQuiz(C.grade(undefined, 2, t - 1), false, t); // 어제 본 단어를 오늘 퀴즈에서 틀림 → 오답노트
+  assert.equal(q2.wrong, true);
 });
 
 test("오답노트: 어떤 퀴즈·복습이든 2번 연속 맞히면 빠지고, 중간에 틀리면 처음부터", () => {
   const t = 500;
-  let s = C.applyQuiz(C.grade(undefined, 2, t), false, t); // 오답노트에 들어감
+  let s = C.applyQuiz(C.grade(undefined, 2, t - 1), false, t); // 어제 본 단어를 틀림 → 오답노트에 들어감
   assert.equal(s.wrong, true);
   s = C.applyQuiz(s, true, t); // 1번 맞힘 (복습일 아님)
   assert.equal(s.wrong, true);
@@ -134,11 +137,21 @@ test("todayPlan: 하루 분량에서 오늘 이미 본 단어를 빼고, 복습�
   assert.equal(plan.remaining, SAMPLE.length - 2);
 });
 
-test("streak: 오늘 안 했어도 어제까지 이어진 연속 기록을 센다", () => {
+test("streak: 오늘 안 했어도 어제까지 이어진 연속 기록을 센다 (기준은 dayDone 한 곳)", () => {
   const log = { 10: { done: true }, 11: { done: true }, 12: { done: true }, 8: { done: true } };
   assert.equal(C.streak(log, 12), 3);
   assert.equal(C.streak(log, 13), 3);
   assert.equal(C.streak(log, 14), 0);
+  assert.equal(C.dayDone({ done: true }), true);
+  assert.equal(C.dayDone({ new: 30, rev: 20, prac: true }), false, "done 표시가 없으면 학습량이 많아도 '한 날'이 아니다");
+  assert.equal(C.dayDone(undefined), false);
+});
+
+test("estimateMinutes: 새 단어 0.4분 + 복습 0.15분 + 실전 분, 올림, 최소 1분", () => {
+  assert.equal(C.estimateMinutes({ new: 20, due: 20, prac: 5 }), 16);
+  assert.equal(C.estimateMinutes({ new: 0, due: 0, prac: 0 }), 1);
+  assert.equal(C.estimateMinutes({ new: 10 }), 4);
+  assert.equal(C.estimateMinutes({ due: 200 }), 30, "복습을 100개에서 자르지 않는다");
 });
 
 test("makeQuestion: 보기 4개, 정답 1개, 중복 없음", () => {
