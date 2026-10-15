@@ -1137,7 +1137,7 @@
         3,
         4
        ],
-       "exp": "주문이 가장 적은 지점(University, 150건)은 수리 때문이라 제외하고, 여자가 '그다음으로 낮은 지점(the branch with the next-lowest number)'이 걱정이라고 하자 남자가 그곳에서 무료 배달을 시험하자고 한다. 그래프에서 두 번째로 낮은 곳은 210건인 Airport다. University 는 수리로 문을 닫았던 지점이다."
+       "exp": "주문이 가장 적은 지점(University, 150건)은 수리 때문이라 제외하고, 여자가 '그다음으로 낮은 지점(the branch with the next-lowest number)'이 걱정이라고 하자 남자가 그곳에서 무료 배달을 시험하자고 한다. 그래프에서 두 번째로 낮은 곳은 210건인 Airport다. University는 수리로 문을 닫았던 지점이다."
       },
       {
        "q": "What does the man agree to do?",
@@ -1474,7 +1474,7 @@
         4,
         5
        ],
-       "exp": "12일까지 출장이라 5월 3일·10일 활동은 불가능하고, 5월 24일 집 수리(Maple Street)는 시공 경험이 필요해 포기한 뒤 '남은 것(the remaining one)'을 고른다. 표에서 남은 활동은 5월 17일 아이들에게 책 읽어 주기이고 장소는 Dalton Library 다. Maple Street 는 처음에 생각했던 활동의 장소다."
+       "exp": "12일까지 출장이라 5월 3일·10일 활동은 불가능하고, 5월 24일 집 수리(Maple Street)는 시공 경험이 필요해 포기한 뒤 '남은 것(the remaining one)'을 고른다. 표에서 남은 활동은 5월 17일 아이들에게 책 읽어 주기이고 장소는 Dalton Library 다. Maple Street는 처음에 생각했던 활동의 장소다."
       },
       {
        "q": "According to the woman, what will the company provide?",
@@ -2162,7 +2162,7 @@
       {
        "sp": "W",
        "en": "Visit www.greendesk.example.com to schedule a free consultation.",
-       "ko": "www.greendesk.example.com 을 방문해 무료 상담을 예약하십시오."
+       "ko": "www.greendesk.example.com을 방문해 무료 상담을 예약하십시오."
       }
      ],
      "graphic": null,
@@ -3676,7 +3676,7 @@
          "s": "my laptop won't connect to their projector"
         }
        ],
-       "exp": "오르테가 씨는 \"my laptop won't connect to their projector(노트북이 프로젝터에 연결되지 않는다)\"라고 썼다. won't connect to their projector → having trouble connecting a device 로 바뀌었다. 노트북은 가지고 왔고 없는 것은 어댑터 키트이며, 시연을 미루자거나 주소를 모른다는 말은 없다."
+       "exp": "오르테가 씨는 \"my laptop won't connect to their projector(노트북이 프로젝터에 연결되지 않는다)\"라고 썼다. won't connect to their projector → having trouble connecting a device로 바뀌었다. 노트북은 가지고 왔고 없는 것은 어댑터 키트이며, 시연을 미루자거나 주소를 모른다는 말은 없다."
       },
       {
        "q": "At 8:57 A.M., what does Ms. Castillo most likely mean when she writes, \"Say no more\"?",
@@ -3701,7 +3701,7 @@
          "s": "I'm leaving the office now, and it's only a ten-minute drive."
         }
        ],
-       "exp": "Say no more 는 '상황을 다 알겠으니 더 설명할 필요 없다'는 뜻이다. 어댑터 키트가 없고 시연이 곧 시작된다는 말에 카스티요 씨는 바로 사무실에서 출발한다고 했으므로, 빠진 어댑터를 곧 가져다주겠다는 의미다. 추가 설명을 요구하거나 시연 연기를 제안하는 말이 아니다."
+       "exp": "Say no more는 '상황을 다 알겠으니 더 설명할 필요 없다'는 뜻이다. 어댑터 키트가 없고 시연이 곧 시작된다는 말에 카스티요 씨는 바로 사무실에서 출발한다고 했으므로, 빠진 어댑터를 곧 가져다주겠다는 의미다. 추가 설명을 요구하거나 시연 연기를 제안하는 말이 아니다."
       }
      ],
      "id": "fm1-p7-01"
@@ -3746,7 +3746,7 @@
          "s": "Every visit includes a free inspection of your piano's keys and pedals."
         }
        ],
-       "exp": "모든 방문에 \"a free inspection of your piano's keys and pedals(건반과 페달 무료 점검)\"이 포함된다고 했다. inspection of keys and pedals → a check of certain piano parts 로 바뀌었다. 청소는 제공하는 서비스 중 하나일 뿐 매 방문에 포함된다는 말은 없고, 할인은 조율 서비스에 대한 것이지 향후 수리에 대한 것이 아니다."
+       "exp": "모든 방문에 \"a free inspection of your piano's keys and pedals(건반과 페달 무료 점검)\"이 포함된다고 했다. inspection of keys and pedals → a check of certain piano parts로 바뀌었다. 청소는 제공하는 서비스 중 하나일 뿐 매 방문에 포함된다는 말은 없고, 할인은 조율 서비스에 대한 것이지 향후 수리에 대한 것이 아니다."
       },
       {
        "q": "How can customers receive a discount?",
@@ -3766,7 +3766,7 @@
          "s": "Book an appointment before March 31 and receive 15 percent off any tuning service."
         }
        ],
-       "exp": "\"Book an appointment before March 31(3월 31일 전에 예약)\"하면 15퍼센트 할인을 받는다. before March 31 → before a deadline 으로 바뀌었다. 연 1회 조율은 전문가 권고일 뿐 할인 조건이 아니며, 웹사이트는 일정 예약 수단으로 언급될 뿐 온라인 결제 조건은 없다."
+       "exp": "\"Book an appointment before March 31(3월 31일 전에 예약)\"하면 15퍼센트 할인을 받는다. before March 31 → before a deadline으로 바뀌었다. 연 1회 조율은 전문가 권고일 뿐 할인 조건이 아니며, 웹사이트는 일정 예약 수단으로 언급될 뿐 온라인 결제 조건은 없다."
       }
      ],
      "id": "fm1-p7-02"
@@ -3816,7 +3816,7 @@
          "s": "every bicycle in the room must display a blue registration tag"
         }
        ],
-       "exp": "건물 관리실이 등록 제도를 도입해 모든 자전거에 등록 태그를 달아야 한다고 알리고 있다. introducing a registration system / must display a tag → a new rule for bicycle owners 로 요약된다. 보관실은 이미 있는 곳이고, 도난이 아니라 방치된 자전거가 문제이며, 자전거 출근을 권장하는 글도 아니다."
+       "exp": "건물 관리실이 등록 제도를 도입해 모든 자전거에 등록 태그를 달아야 한다고 알리고 있다. introducing a registration system / must display a tag → a new rule for bicycle owners로 요약된다. 보관실은 이미 있는 곳이고, 도난이 아니라 방치된 자전거가 문제이며, 자전거 출근을 권장하는 글도 아니다."
       },
       {
        "q": "What will happen to an untagged bicycle after May 29?",
@@ -3836,7 +3836,7 @@
          "s": "Any bicycle without a tag after May 29 will be removed and held in the building's loading area for 30 days."
         }
        ],
-       "exp": "태그 없는 자전거는 \"removed and held in the building's loading area(치워져 건물 하역장에 보관)\"된다고 했다. held in the building's loading area → moved to another area of the building 으로 바뀌었다. 30일간 보관 후 주인이 찾아갈 수 있으므로 즉시 버려지는 것이 아니며, 기부나 수수료 부과는 언급되지 않았다."
+       "exp": "태그 없는 자전거는 \"removed and held in the building's loading area(치워져 건물 하역장에 보관)\"된다고 했다. held in the building's loading area → moved to another area of the building으로 바뀌었다. 30일간 보관 후 주인이 찾아갈 수 있으므로 즉시 버려지는 것이 아니며, 기부나 수수료 부과는 언급되지 않았다."
       }
      ],
      "id": "fm1-p7-03"
@@ -3860,7 +3860,7 @@
        ],
        "ko": [
         "브라이트라인을 선택해 주셔서 감사합니다. 아래의 창문 레터링은 9월 12일에 설치되었으며, 옥외 간판은 시에서 고객님의 허가 신청을 승인하는 대로 설치될 예정임을 알려 드립니다. 옥외 간판 설치비는 그때 별도로 청구됩니다.",
-        "대금은 21일 이내에 지불하셔야 합니다. 계좌 이체로 결제하시는 고객께는 총액의 3퍼센트를 할인해 드립니다. 이 송장에 관한 문의는 billing@brightline.example 로 보내 주십시오."
+        "대금은 21일 이내에 지불하셔야 합니다. 계좌 이체로 결제하시는 고객께는 총액의 3퍼센트를 할인해 드립니다. 이 송장에 관한 문의는 billing@brightline.example로 보내 주십시오."
        ],
        "graphic": {
         "type": "table",
@@ -3925,7 +3925,7 @@
          "s": "the outdoor sign will be installed once the city approves your permit application"
         }
        ],
-       "exp": "옥외 간판은 \"will be installed once the city approves your permit application(시가 허가 신청을 승인하면 설치된다)\"고 했다. once the city approves → awaiting city approval 로 바뀌었다. 9월 12일에 설치된 것은 창문 레터링이고, 비닐(vinyl)로 된 것도 창문 레터링이며 간판은 알루미늄(aluminum)이다."
+       "exp": "옥외 간판은 \"will be installed once the city approves your permit application(시가 허가 신청을 승인하면 설치된다)\"고 했다. once the city approves → awaiting city approval로 바뀌었다. 9월 12일에 설치된 것은 창문 레터링이고, 비닐(vinyl)로 된 것도 창문 레터링이며 간판은 알루미늄(aluminum)이다."
       },
       {
        "q": "What is suggested about the total on the invoice?",
@@ -3945,7 +3945,7 @@
          "s": "The installation fee for the outdoor sign will be billed separately at that time."
         }
        ],
-       "exp": "옥외 간판 설치비는 \"billed separately at that time(나중에 별도 청구)\"된다고 했으므로 현재 총액 $2,050에는 앞으로 할 설치 작업 비용이 빠져 있다. billed separately → does not cover all the work 로 추론할 수 있다. 결제 기한이 21일 남아 있어 이미 완납된 것이 아니고, 3퍼센트 할인은 이체 시 적용될 혜택일 뿐 표의 금액에는 반영되지 않았으며, 허가 비용 항목도 없다."
+       "exp": "옥외 간판 설치비는 \"billed separately at that time(나중에 별도 청구)\"된다고 했으므로 현재 총액 $2,050에는 앞으로 할 설치 작업 비용이 빠져 있다. billed separately → does not cover all the work로 추론할 수 있다. 결제 기한이 21일 남아 있어 이미 완납된 것이 아니고, 3퍼센트 할인은 이체 시 적용될 혜택일 뿐 표의 금액에는 반영되지 않았으며, 허가 비용 항목도 없다."
       },
       {
        "q": "According to the invoice, how can Ms. Lucero reduce the amount she owes?",
@@ -3965,7 +3965,7 @@
          "s": "Customers who pay by bank transfer receive a 3 percent discount on the total."
         }
        ],
-       "exp": "\"Customers who pay by bank transfer receive a 3 percent discount(계좌 이체로 결제하면 3퍼센트 할인)\"이라고 했다. pay by bank transfer → paying with a bank transfer 가 정답이다. 21일은 결제 기한일 뿐 할인 조건이 아니고, 메뉴판 반품이나 청구 부서 문의로 금액이 줄어든다는 말은 없다."
+       "exp": "\"Customers who pay by bank transfer receive a 3 percent discount(계좌 이체로 결제하면 3퍼센트 할인)\"이라고 했다. pay by bank transfer → paying with a bank transfer가 정답이다. 21일은 결제 기한일 뿐 할인 조건이 아니고, 메뉴판 반품이나 청구 부서 문의로 금액이 줄어든다는 말은 없다."
       }
      ],
      "id": "fm1-p7-04"
@@ -4019,7 +4019,7 @@
          "s": "it will stop producing this line at the end of July, so we will be unable to fill your order after your August shipment"
         }
        ],
-       "exp": "제조사가 \"will stop producing this line(이 제품군 생산을 중단한다)\"고 해서 8월 이후 주문을 처리할 수 없다고 알리고 있다. stop producing → be discontinued 로 바뀌었다. 배송 날짜 변경, 파손, 대금 연체는 언급되지 않았다."
+       "exp": "제조사가 \"will stop producing this line(이 제품군 생산을 중단한다)\"고 해서 8월 이후 주문을 처리할 수 없다고 알리고 있다. stop producing → be discontinued로 바뀌었다. 배송 날짜 변경, 파손, 대금 연체는 언급되지 않았다."
       },
       {
        "q": "What is NOT mentioned about the Terra notebook?",
@@ -4152,7 +4152,7 @@
          "s": "Fees include clay, glazes, and firing."
         }
        ],
-       "exp": "\"Fees include clay, glazes, and firing(수강료에 점토, 유약, 소성 비용 포함)\"이라고 했다. clay, glazes → supplies used in the classes 로 바뀌었다. 주말 작업실 이용, 도구 세트, 개인 레슨은 언급되지 않았다."
+       "exp": "\"Fees include clay, glazes, and firing(수강료에 점토, 유약, 소성 비용 포함)\"이라고 했다. clay, glazes → supplies used in the classes로 바뀌었다. 주말 작업실 이용, 도구 세트, 개인 레슨은 언급되지 않았다."
       },
       {
        "q": "What is indicated about Wheel Throwing II?",
@@ -4259,7 +4259,7 @@
          "s": "A nonrefundable booking fee of $8 is charged at the time of reservation"
         }
        ],
-       "exp": "\"A nonrefundable booking fee(환불되지 않는 예약 수수료)\"라고 했으므로 nonrefundable → cannot be refunded 가 정답이다. 터미널에서 내는 것은 수수료가 아니라 운임(fare)이고, 수수료는 운임과 별도로 예약 시 부과되며, 연휴 면제는 언급되지 않았다."
+       "exp": "\"A nonrefundable booking fee(환불되지 않는 예약 수수료)\"라고 했으므로 nonrefundable → cannot be refunded가 정답이다. 터미널에서 내는 것은 수수료가 아니라 운임(fare)이고, 수수료는 운임과 별도로 예약 시 부과되며, 연휴 면제는 언급되지 않았다."
       },
       {
        "q": "What could happen to a driver who arrives at the terminal 15 minutes before departure?",
@@ -4391,7 +4391,7 @@
          "s": "At its midpoint, Karl Bergstrom in Human Resources will send out a brief survey"
         }
        ],
-       "exp": "시범 운영은 1월 27일부터 10주간이므로 중간 시점은 약 5주 뒤인 3월 초다. 그때 버그스트롬 씨가 \"send out a brief survey(간단한 설문을 보낸다)\"고 했으므로 survey → questionnaire 가 정답이다. 예외 승인은 데시무크 씨의 일이고, 채용이나 소프트웨어 업데이트는 언급되지 않았다."
+       "exp": "시범 운영은 1월 27일부터 10주간이므로 중간 시점은 약 5주 뒤인 3월 초다. 그때 버그스트롬 씨가 \"send out a brief survey(간단한 설문을 보낸다)\"고 했으므로 survey → questionnaire가 정답이다. 예외 승인은 데시무크 씨의 일이고, 채용이나 소프트웨어 업데이트는 언급되지 않았다."
       }
      ],
      "id": "fm1-p7-08"
@@ -4516,7 +4516,7 @@
          "s": "I'll put a sign by the register."
         }
        ],
-       "exp": "박 씨가 원래 시간에 오는 사람들에게 무료 커피를 주자고 하자 아마리 씨가 \"Consider it done(맡겨 달라, 그렇게 하겠다)\"이라고 답하고 계산대 옆에 안내문을 붙이겠다고 했다. 즉 free coffee → free drinks 를 준비하겠다는 뜻이다. done 이라는 단어 때문에 '이미 끝냈다'는 뜻으로 고르면 함정에 빠진다."
+       "exp": "박 씨가 원래 시간에 오는 사람들에게 무료 커피를 주자고 하자 아마리 씨가 \"Consider it done(맡겨 달라, 그렇게 하겠다)\"이라고 답하고 계산대 옆에 안내문을 붙이겠다고 했다. 즉 free coffee → free drinks를 준비하겠다는 뜻이다. done 이라는 단어 때문에 '이미 끝냈다'는 뜻으로 고르면 함정에 빠진다."
       }
      ],
      "id": "fm1-p7-09"
@@ -4603,7 +4603,7 @@
          "s": "the company intends to give priority to businesses that have never operated a full restaurant"
         }
        ],
-       "exp": "\"give priority to businesses that have never operated a full restaurant(정식 식당을 운영해 본 적 없는 업체에 우선권)\"이라고 했다. never operated → never run 으로 바뀌었다. 푸드트럭은 그런 요리사들이 현재 장사하는 방식의 예일 뿐 역사 주변에서 영업 중이라는 말은 없고, 상공회의소 회원은 선정 위원으로 언급된다."
+       "exp": "\"give priority to businesses that have never operated a full restaurant(정식 식당을 운영해 본 적 없는 업체에 우선권)\"이라고 했다. never operated → never run으로 바뀌었다. 푸드트럭은 그런 요리사들이 현재 장사하는 방식의 예일 뿐 역사 주변에서 영업 중이라는 말은 없고, 상공회의소 회원은 선정 위원으로 언급된다."
       },
       {
        "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"Those chosen will be notified by the end of November.\"",
@@ -4623,7 +4623,7 @@
          "s": "A selection committee that includes two members of the Keswick Chamber of Commerce will review them."
         }
        ],
-       "exp": "삽입 문장의 Those chosen(선정된 이들)은 앞에 선정 절차가 나와야 자연스럽다. [4] 바로 앞에서 선정 위원회가 신청서를 검토한다(A selection committee ... will review them)고 했으므로, 검토 → 선정 결과 통보로 이어진다. [1]~[3] 앞에는 신청이나 선정에 관한 내용이 없어 Those chosen 이 가리킬 대상이 없다."
+       "exp": "삽입 문장의 Those chosen(선정된 이들)은 앞에 선정 절차가 나와야 자연스럽다. [4] 바로 앞에서 선정 위원회가 신청서를 검토한다(A selection committee ... will review them)고 했으므로, 검토 → 선정 결과 통보로 이어진다. [1]~[3] 앞에는 신청이나 선정에 관한 내용이 없어 Those chosen이 가리킬 대상이 없다."
       }
      ],
      "id": "fm1-p7-10"
@@ -4745,7 +4745,7 @@
          "s": "A TaskBridge trainer will hold a two-hour session for that department in Conference Room B"
         }
        ],
-       "exp": "'A TaskBridge trainer will hold a two-hour session for that department' → 직원들이 교육에 참석한다(take part in a training session). Conference Room B 는 교육 장소이지 사무실을 옮기는 곳이 아니므로 (B)는 지문 단어를 이용한 함정이다. 재택근무나 보고서 제출은 언급되지 않았다."
+       "exp": "'A TaskBridge trainer will hold a two-hour session for that department' → 직원들이 교육에 참석한다(take part in a training session). Conference Room B는 교육 장소이지 사무실을 옮기는 곳이 아니므로 (B)는 지문 단어를 이용한 함정이다. 재택근무나 보고서 제출은 언급되지 않았다."
       },
       {
        "q": "When will the Design Department most likely begin using TaskBridge?",
@@ -4830,7 +4830,7 @@
        "ko": [
         "새로운 시장으로 진출하십니까? 링구아 브리지는 30개가 넘는 언어로 비즈니스 문서를 정확하고 전문적으로 번역해 드립니다. 저희 번역가는 모두 자격증을 보유하고 있으며 자신의 모국어로만 번역하고, 모든 프로젝트는 추가 비용 없이 두 번째 번역가의 검토를 거칩니다.",
         "1만 단어 이하 문서의 일반 작업 기간은 영업일 기준 5일입니다. 더 빨리 필요하십니까? 급행 서비스는 25퍼센트 추가 요금으로 영업일 기준 2일 이내에 납품합니다.",
-        "신규 고객은 첫 프로젝트에 10퍼센트 할인을 받습니다. 무료 견적을 받으시려면 www.linguabridge.example/quote 에 문서를 올리시거나 555-0143으로 전화해 주십시오."
+        "신규 고객은 첫 프로젝트에 10퍼센트 할인을 받습니다. 무료 견적을 받으시려면 www.linguabridge.example/quote에 문서를 올리시거나 555-0143으로 전화해 주십시오."
        ],
        "graphic": {
         "type": "table",
@@ -4928,7 +4928,7 @@
          "s": "Lingua Bridge provides accurate, professional translation of business documents"
         }
        ],
-       "exp": "이메일에서 번역할 문서는 조립·사용 설명서(assembly and operating manuals)이고, 광고의 요금표에서 Technical manuals 는 단어당 0.18달러다. 0.12달러는 일반 업무 서신, 0.15달러는 마케팅 자료, 0.20달러는 법률 계약서의 요금이다."
+       "exp": "이메일에서 번역할 문서는 조립·사용 설명서(assembly and operating manuals)이고, 광고의 요금표에서 Technical manuals는 단어당 0.18달러다. 0.12달러는 일반 업무 서신, 0.15달러는 마케팅 자료, 0.20달러는 법률 계약서의 요금이다."
       },
       {
        "q": "What is suggested about Ms. Haddad's project?",
@@ -5189,7 +5189,7 @@
          "s": "Clients may move to a different plan at any time"
         }
        ],
-       "exp": "양식의 표에서 할로웨이 리걸 파트너스가 요청한 요금제는 Premium(식물 40개)이고, 웹페이지의 요금표에서 Premium 은 식물 50개까지 월 320달러다. 180달러는 현재 쓰는 Standard 요금제, 95달러는 Starter 요금제(식물 10개까지)의 가격이므로 함정이다."
+       "exp": "양식의 표에서 할로웨이 리걸 파트너스가 요청한 요금제는 Premium(식물 40개)이고, 웹페이지의 요금표에서 Premium은 식물 50개까지 월 320달러다. 180달러는 현재 쓰는 Standard 요금제, 95달러는 Starter 요금제(식물 10개까지)의 가격이므로 함정이다."
       },
       {
        "q": "When will Holloway Legal Partners' new plan most likely begin?",
@@ -7363,7 +7363,7 @@
         4,
         5
        ],
-       "exp": "팔콘 프레이트는 배송 기간 때문에, 노를란드 카고는 파손 이력 때문에 제외되었고, 남자가 나머지 두 곳 중 더 저렴한 곳(whichever of the other two is less expensive)으로 하자고 한다. 차트에서 Apex Transport($3,100)와 Delmar Logistics($2,700) 중 더 싼 곳은 Delmar Logistics 이다. 가장 비싼 Apex 를 고르지 않도록 주의한다."
+       "exp": "팔콘 프레이트는 배송 기간 때문에, 노를란드 카고는 파손 이력 때문에 제외되었고, 남자가 나머지 두 곳 중 더 저렴한 곳(whichever of the other two is less expensive)으로 하자고 한다. 차트에서 Apex Transport($3,100)와 Delmar Logistics($2,700) 중 더 싼 곳은 Delmar Logistics 이다. 가장 비싼 Apex를 고르지 않도록 주의한다."
       }
      ],
      "id": "fm2-p3-11"
@@ -9356,7 +9356,7 @@
          "s": "Would you be able to cover my Saturday morning shift at the pharmacy?"
         }
        ],
-       "exp": "브룩스 씨는 \"cover my Saturday morning shift(토요일 오전 근무를 대신해 달라)\"고 부탁했다. cover my shift → work in his place 로 바뀌었다. 졸업식은 근무를 바꾸려는 이유일 뿐 초대하는 것이 아니고, 약국 영업시간 변경이나 근무표 요청은 언급되지 않았다."
+       "exp": "브룩스 씨는 \"cover my Saturday morning shift(토요일 오전 근무를 대신해 달라)\"고 부탁했다. cover my shift → work in his place로 바뀌었다. 졸업식은 근무를 바꾸려는 이유일 뿐 초대하는 것이 아니고, 약국 영업시간 변경이나 근무표 요청은 언급되지 않았다."
       },
       {
        "q": "At 7:49 P.M., what does Ms. Moradi most likely mean when she writes, \"Now you're talking\"?",
@@ -9583,7 +9583,7 @@
          "s": "The oil change and tire rotation were completed on time"
         }
        ],
-       "exp": "\"The oil change and tire rotation(엔진 오일 교환과 타이어 위치 교환)\"을 받았다고 했다. 이는 정기적인 차량 정비이므로 → routine vehicle maintenance. tire rotation 은 기존 타이어의 위치를 바꾸는 것이지 새 타이어 장착이 아니며, 앞유리나 도장 수리는 언급되지 않았다."
+       "exp": "\"The oil change and tire rotation(엔진 오일 교환과 타이어 위치 교환)\"을 받았다고 했다. 이는 정기적인 차량 정비이므로 → routine vehicle maintenance. tire rotation은 기존 타이어의 위치를 바꾸는 것이지 새 타이어 장착이 아니며, 앞유리나 도장 수리는 언급되지 않았다."
       },
       {
        "q": "Why did Mr. Okafor give the waiting area a low rating?",
@@ -9800,7 +9800,7 @@
          "s": "Water station volunteers should wear comfortable shoes, as they will be standing for their entire shift."
         }
        ],
-       "exp": "안내문에서 내내 서 있는 사람은 \"Water station volunteers(급수대 자원봉사자)\"라고 했고, 표에서 Water station 의 팀장은 Hector Ruiz 다. 안내문과 표를 연결해야 풀리는 문제로, 그래디는 코스 설치, 박은 등록 데스크, 데미르는 메달 배부 담당이다."
+       "exp": "안내문에서 내내 서 있는 사람은 \"Water station volunteers(급수대 자원봉사자)\"라고 했고, 표에서 Water station의 팀장은 Hector Ruiz 다. 안내문과 표를 연결해야 풀리는 문제로, 그래디는 코스 설치, 박은 등록 데스크, 데미르는 메달 배부 담당이다."
       },
       {
        "q": "What should volunteers who cannot attend do?",
@@ -10018,7 +10018,7 @@
          "s": "I'm not sure customers would be happy with that. These are sold as premium lamps."
         }
        ],
-       "exp": "파텔 씨가 어댑터를 넣자고 제안하자 오콩코 씨가 프리미엄 제품 고객이 만족하지 않을 것이라고 반대했고, 이에 \"Fair point(일리 있다)\"라고 답했다. 즉 자기 제안이 고객을 만족시키지 못할 수 있다는 지적을 받아들인 것이다. fair 를 '가격이 적정하다'로 해석하면 함정이다."
+       "exp": "파텔 씨가 어댑터를 넣자고 제안하자 오콩코 씨가 프리미엄 제품 고객이 만족하지 않을 것이라고 반대했고, 이에 \"Fair point(일리 있다)\"라고 답했다. 즉 자기 제안이 고객을 만족시키지 못할 수 있다는 지적을 받아들인 것이다. fair를 '가격이 적정하다'로 해석하면 함정이다."
       },
       {
        "q": "What will Mr. Wilk most likely do next?",
@@ -10174,9 +10174,9 @@
        ],
        "ko": [
         "마르케티 씨께,",
-        "마르케티 인테리어스의 회계 업무를 애시 앤드 코리건에 맡겨 주셔서 감사합니다. 함께 일하게 되기를 고대합니다. [1] 이 이메일에서는 앞으로 몇 주 동안 진행될 일을 안내해 드립니다.",
+        "마르케티 인테리어스의 회계 업무를 애시 앤드 코리건에 맡겨 주셔서 감사합니다. 함께 일하게 되기를 고대합니다. [1]이 이메일에서는 앞으로 몇 주 동안 진행될 일을 안내해 드립니다.",
         "먼저, 문서를 올리고 저희 팀에 메시지를 보낼 수 있는 보안 고객 포털 초대장을 받으시게 됩니다. [2] 일반 이메일은 보안이 취약하므로 재무 기록을 이메일로 보내지 마십시오. 로그인하신 후에는 지난 12개월간의 은행 거래 내역서와 급여 보고서를 올려 주십시오.",
-        "다음으로, 담당 매니저인 해나 오두야가 첫 미팅 일정을 잡기 위해 전화드릴 것입니다. [3] 이 미팅에서 오두야 매니저는 현재 장부 관리 방식을 검토하고, 과세 연도가 끝나기 전에 보완이 필요한 부분을 찾아낼 것입니다. 미팅은 보통 90분 정도 걸리며, 귀사 사무실이나 저희 사무실에서 하실 수 있습니다.",
+        "다음으로, 담당 매니저인 해나 오두야가 첫 미팅 일정을 잡기 위해 전화드릴 것입니다. [3]이 미팅에서 오두야 매니저는 현재 장부 관리 방식을 검토하고, 과세 연도가 끝나기 전에 보완이 필요한 부분을 찾아낼 것입니다. 미팅은 보통 90분 정도 걸리며, 귀사 사무실이나 저희 사무실에서 하실 수 있습니다.",
         "마지막으로, 저희 월 수수료에는 장부 관리, 급여 처리, 분기 보고서가 포함되어 있음을 알려 드립니다. [4] 연간 세금 신고서 작성은 서비스 계약서에 명시된 대로 별도로 청구됩니다.",
         "그동안 궁금한 점이 있으시면 언제든 555-0173으로 저에게 직접 전화 주십시오.",
         "줄리언 애시 드림\n애시 앤드 코리건 회계법인 대표 파트너"
@@ -10268,7 +10268,7 @@
          "s": "First, you will receive an invitation to our secure client portal, where you can upload documents and send messages to our team."
         }
        ],
-       "exp": "삽입 문장의 it 은 받은편지함(inbox)으로 오는 것, 즉 이메일로 받는 무언가를 가리킨다. [2] 바로 앞에서 \"you will receive an invitation to our secure client portal(보안 포털 초대장을 받게 된다)\"고 했으므로 invitation → it 으로 자연스럽게 이어진다. [3] 앞의 오두야 매니저는 이메일이 아니라 전화(call)로 연락하므로 받은편지함과 관계가 없고, [1]과 [4] 앞에도 받은편지함으로 올 단수 대상이 없다."
+       "exp": "삽입 문장의 it은 받은편지함(inbox)으로 오는 것, 즉 이메일로 받는 무언가를 가리킨다. [2] 바로 앞에서 \"you will receive an invitation to our secure client portal(보안 포털 초대장을 받게 된다)\"고 했으므로 invitation → it으로 자연스럽게 이어진다. [3] 앞의 오두야 매니저는 이메일이 아니라 전화(call)로 연락하므로 받은편지함과 관계가 없고, [1]과 [4] 앞에도 받은편지함으로 올 단수 대상이 없다."
       }
      ],
      "id": "fm2-p7-10"
@@ -10363,7 +10363,7 @@
          "s": "a two-story glass wing that will house the museum's collection of ship models"
         }
        ],
-       "exp": "'a glass wing that will house the museum's collection'은 별관이 소장품을 '수용하다, 들여놓다'라는 뜻이므로 contain(담다, 수용하다)이 가장 가깝다. house 를 '집'이라는 명사로 떠올려 construct(짓다)를 고르기 쉽지만, 여기서는 동사로 쓰였다."
+       "exp": "'a glass wing that will house the museum's collection'은 별관이 소장품을 '수용하다, 들여놓다'라는 뜻이므로 contain(담다, 수용하다)이 가장 가깝다. house를 '집'이라는 명사로 떠올려 construct(짓다)를 고르기 쉽지만, 여기서는 동사로 쓰였다."
       },
       {
        "q": "What does Ms. Sorensen indicate about the museum before the renovation?",
@@ -10724,7 +10724,7 @@
          "s": "The Westford City Council voted on Tuesday to turn the building into an indoor public market"
         }
        ],
-       "exp": "비어 있던 옛 화물 창고(A former rail freight depot ... stood empty)를 실내 시장으로 바꾸기로(turn the building into an indoor public market) 했다는 기사다 → 빈 건물을 시장으로 바꾸는 계획. rail 을 이용한 '기차역 개장'과 기존 야외 시장 '확장'은 함정이다."
+       "exp": "비어 있던 옛 화물 창고(A former rail freight depot ... stood empty)를 실내 시장으로 바꾸기로(turn the building into an indoor public market) 했다는 기사다 → 빈 건물을 시장으로 바꾸는 계획. rail을 이용한 '기차역 개장'과 기존 야외 시장 '확장'은 함정이다."
       },
       {
        "q": "According to the article, how will the Linden Street Market differ from the current farmers market?",
@@ -11297,7 +11297,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 1,
-     "exp": "Who 로 안내 담당자를 묻자 '공장장님'이라는 인물로 답했다(factory → plant). 'Around ten in the morning.'은 When 에 맞는 시간 응답이고, 'It's a large factory.'는 질문의 factory 를 반복한 함정이다.",
+     "exp": "Who로 안내 담당자를 묻자 '공장장님'이라는 인물로 답했다(factory → plant). 'Around ten in the morning.'은 When에 맞는 시간 응답이고, 'It's a large factory.'는 질문의 factory를 반복한 함정이다.",
      "id": "fm3-p2-01"
     },
     {
@@ -11316,7 +11316,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "받는 사람을 직접 말하지 않고 '양식 아래에 이름이 적혀 있다'며 확인 방법을 알려 주는 돌려 말하기 정답이다. 'About two hundred miles.'는 mileage 에서 연상한 거리 응답이고, 'I sent it yesterday.'는 send 를 반복하며 주체·시제를 바꾼 함정이다.",
+     "exp": "받는 사람을 직접 말하지 않고 '양식 아래에 이름이 적혀 있다'며 확인 방법을 알려 주는 돌려 말하기 정답이다. 'About two hundred miles.'는 mileage 에서 연상한 거리 응답이고, 'I sent it yesterday.'는 send를 반복하며 주체·시제를 바꾼 함정이다.",
      "id": "fm3-p2-02"
     },
     {
@@ -11335,7 +11335,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 2,
-     "exp": "What time 에 '매시 30분마다'라는 출발 시각으로 답했다(on the half hour = 매시 30분). 'A round-trip ticket, please.'는 ferry 에서 연상한 표 구매 표현이고, 'Yes, I left early.'는 의문사 질문에 Yes 로 답하며 leave 를 left 로 반복한 함정이다.",
+     "exp": "What time에 '매시 30분마다'라는 출발 시각으로 답했다(on the half hour = 매시 30분). 'A round-trip ticket, please.'는 ferry 에서 연상한 표 구매 표현이고, 'Yes, I left early.'는 의문사 질문에 Yes로 답하며 leave를 left로 반복한 함정이다.",
      "id": "fm3-p2-03"
     },
     {
@@ -11354,7 +11354,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 2,
-     "exp": "번호를 말하는 대신 '배치도가 아직 안 왔다', 즉 아직 모른다고 돌려 답한 것이 정답이다. 'Yes, it was assigned to me.'는 의문사 질문에 Yes 로 답하며 assigned 를 반복했고, 'About two thousand visitors.'는 expo 에서 연상한 방문객 수다.",
+     "exp": "번호를 말하는 대신 '배치도가 아직 안 왔다', 즉 아직 모른다고 돌려 답한 것이 정답이다. 'Yes, it was assigned to me.'는 의문사 질문에 Yes로 답하며 assigned를 반복했고, 'About two thousand visitors.'는 expo 에서 연상한 방문객 수다.",
      "id": "fm3-p2-04"
     },
     {
@@ -11373,7 +11373,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 1,
-     "exp": "When 에 '6월 초'라는 시점으로 답한 것이 정답이다. 'On the top floor.'는 rooftop 에서 연상한 장소(Where) 응답이고, 'Several kinds of flowers.'는 garden 에서 연상한 내용이다.",
+     "exp": "When에 '6월 초'라는 시점으로 답한 것이 정답이다. 'On the top floor.'는 rooftop 에서 연상한 장소(Where) 응답이고, 'Several kinds of flowers.'는 garden 에서 연상한 내용이다.",
      "id": "fm3-p2-05"
     },
     {
@@ -11392,7 +11392,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 3,
-     "exp": "정확한 날짜 대신 '1년 넘게 걸릴 수도 있다'며 오래 기다려야 한다고 돌려 답한 것이 정답이다. 'Yes, I heard about it.'은 의문사 질문에 Yes 로 답하며 hear 를 반복했고, 'The application form is only two pages.'는 application 을 반복했을 뿐 시점과 무관하다.",
+     "exp": "정확한 날짜 대신 '1년 넘게 걸릴 수도 있다'며 오래 기다려야 한다고 돌려 답한 것이 정답이다. 'Yes, I heard about it.'은 의문사 질문에 Yes로 답하며 hear를 반복했고, 'The application form is only two pages.'는 application을 반복했을 뿐 시점과 무관하다.",
      "id": "fm3-p2-06"
     },
     {
@@ -11411,7 +11411,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 1,
-     "exp": "Where 에 '하역장 옆'이라는 위치로 답한 것이 정답이다. 'Every Thursday morning.'은 수거 요일처럼 들리는 When 응답이고, 'Some cardboard boxes.'는 cardboard 를 반복한 함정이다.",
+     "exp": "Where에 '하역장 옆'이라는 위치로 답한 것이 정답이다. 'Every Thursday morning.'은 수거 요일처럼 들리는 When 응답이고, 'Some cardboard boxes.'는 cardboard를 반복한 함정이다.",
      "id": "fm3-p2-07"
     },
     {
@@ -11430,7 +11430,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 2,
-     "exp": "장소를 직접 말하지 않고 '아직 보증 기간 아니냐', 즉 제조사 보증 서비스를 받으면 된다는 뜻으로 되물은 것이 정답이다. 'It lasts about eight hours.'는 battery 에서 연상한 사용 시간이고, 'He placed it on the shelf.'는 replaced 와 발음이 비슷한 placed 를 쓴 함정이다.",
+     "exp": "장소를 직접 말하지 않고 '아직 보증 기간 아니냐', 즉 제조사 보증 서비스를 받으면 된다는 뜻으로 되물은 것이 정답이다. 'It lasts about eight hours.'는 battery 에서 연상한 사용 시간이고, 'He placed it on the shelf.'는 replaced와 발음이 비슷한 placed를 쓴 함정이다.",
      "id": "fm3-p2-08"
     },
     {
@@ -11449,7 +11449,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 2,
-     "exp": "Why 에 '게스트 일정이 겹쳐서'라는 이유로 답한 것이 정답이다. 'In the recording studio.'는 recording 을 반복한 장소 응답이고, 'Yes, every Thursday.'는 의문사 질문에 Yes 로 답하며 Thursday 를 반복했다.",
+     "exp": "Why에 '게스트 일정이 겹쳐서'라는 이유로 답한 것이 정답이다. 'In the recording studio.'는 recording을 반복한 장소 응답이고, 'Yes, every Thursday.'는 의문사 질문에 Yes로 답하며 Thursday를 반복했다.",
      "id": "fm3-p2-09"
     },
     {
@@ -11487,7 +11487,7 @@
      "a": 1,
      "type": "Yes/No",
      "lv": 2,
-     "exp": "Yes 로 신청했다고 답한 뒤 '다음 주에 짝이 정해진다'고 덧붙인 것이 정답이다. 'The sign is on the door.'는 sign up 의 sign 을 '표지판'으로 바꾼 함정이고, 'He's an experienced mentor.'는 mentor 를 반복하며 엉뚱한 사람을 가리킨다.",
+     "exp": "Yes로 신청했다고 답한 뒤 '다음 주에 짝이 정해진다'고 덧붙인 것이 정답이다. 'The sign is on the door.'는 sign up의 sign을 '표지판'으로 바꾼 함정이고, 'He's an experienced mentor.'는 mentor를 반복하며 엉뚱한 사람을 가리킨다.",
      "id": "fm3-p2-11"
     },
     {
@@ -11506,7 +11506,7 @@
      "a": 2,
      "type": "Yes/No",
      "lv": 3,
-     "exp": "Yes/No 대신 '모바일 앱으로만 결제된다', 즉 현장에서 카드를 바로 받지는 않는다고 조건을 붙여 답했다. 'About ten bikes are left.'는 bike 에서 연상한 내용이고, 'The station is on Fifth Avenue.'는 station 을 반복한 위치 응답이다.",
+     "exp": "Yes/No 대신 '모바일 앱으로만 결제된다', 즉 현장에서 카드를 바로 받지는 않는다고 조건을 붙여 답했다. 'About ten bikes are left.'는 bike 에서 연상한 내용이고, 'The station is on Fifth Avenue.'는 station을 반복한 위치 응답이다.",
      "id": "fm3-p2-12"
     },
     {
@@ -11525,7 +11525,7 @@
      "a": 2,
      "type": "Yes/No",
      "lv": 3,
-     "exp": "'번역가가 절반을 보내왔다', 즉 아직 진행 중이라고 돌려 답한 것이 정답이다. 'I took Spanish in high school.'은 Spanish 를 반복한 개인 경험으로 번역 여부와 무관하고, 'Wear safety glasses at all times.'는 safety 를 반복한 함정이다.",
+     "exp": "'번역가가 절반을 보내왔다', 즉 아직 진행 중이라고 돌려 답한 것이 정답이다. 'I took Spanish in high school.'은 Spanish를 반복한 개인 경험으로 번역 여부와 무관하고, 'Wear safety glasses at all times.'는 safety를 반복한 함정이다.",
      "id": "fm3-p2-13"
     },
     {
@@ -11544,7 +11544,7 @@
      "a": 1,
      "type": "부정·부가",
      "lv": 2,
-     "exp": "오늘 발송 예정이 아니냐는 확인에 '일주일 미뤄졌다'고 답한 것이 정답이다. 'I read it every quarter.'는 quarterly 에서 연상한 응답이고, 'Yes, I went out for lunch.'는 go out 을 went out 으로 반복하며 주체를 바꾼 함정이다.",
+     "exp": "오늘 발송 예정이 아니냐는 확인에 '일주일 미뤄졌다'고 답한 것이 정답이다. 'I read it every quarter.'는 quarterly 에서 연상한 응답이고, 'Yes, I went out for lunch.'는 go out을 went out으로 반복하며 주체를 바꾼 함정이다.",
      "id": "fm3-p2-14"
     },
     {
@@ -11563,7 +11563,7 @@
      "a": 0,
      "type": "부정·부가",
      "lv": 1,
-     "exp": "가 본 적 있냐는 부가의문문에 Yes 와 '작년에 여러 번'으로 답한 것이 정답이다. 'A branch of the library.'는 branch 를 반복했고, 'Before nine o'clock.'은 before 를 반복한 시간 응답이다.",
+     "exp": "가 본 적 있냐는 부가의문문에 Yes와 '작년에 여러 번'으로 답한 것이 정답이다. 'A branch of the library.'는 branch를 반복했고, 'Before nine o'clock.'은 before를 반복한 시간 응답이다.",
      "id": "fm3-p2-15"
     },
     {
@@ -11582,7 +11582,7 @@
      "a": 0,
      "type": "부정·부가",
      "lv": 3,
-     "exp": "'시설관리팀이 월요일에 이미 점검했다', 즉 따로 할 필요가 없다고 돌려 답했다(test → ran a check). 두 번째 보기는 generator 와 발음이 비슷한 generated 를, 세 번째 보기는 storm 과 비슷한 store 를 이용한 함정이다.",
+     "exp": "'시설관리팀이 월요일에 이미 점검했다', 즉 따로 할 필요가 없다고 돌려 답했다(test → ran a check). 두 번째 보기는 generator와 발음이 비슷한 generated를, 세 번째 보기는 storm과 비슷한 store를 이용한 함정이다.",
      "id": "fm3-p2-16"
     },
     {
@@ -11601,7 +11601,7 @@
      "a": 2,
      "type": "선택",
      "lv": 2,
-     "exp": "둘 중 무광지(matte)를 고르고 이유까지 말한 것이 정답이다. 'Yes, I printed it.'은 선택 의문문에 Yes 로 답하며 print 를 반복했고, 'About five hundred copies.'는 인쇄에서 연상한 부수다.",
+     "exp": "둘 중 무광지(matte)를 고르고 이유까지 말한 것이 정답이다. 'Yes, I printed it.'은 선택 의문문에 Yes로 답하며 print를 반복했고, 'About five hundred copies.'는 인쇄에서 연상한 부수다.",
      "id": "fm3-p2-17"
     },
     {
@@ -11620,7 +11620,7 @@
      "a": 1,
      "type": "선택",
      "lv": 2,
-     "exp": "'고기를 안 먹는다고 들었다'고 해 스테이크하우스는 안 된다, 즉 해산물 식당으로 가자는 뜻을 돌려 전했다. 'The client signed the contract.'는 client 를, 'I'll take the stairs.'는 take 를 반복했을 뿐 선택과 무관하다.",
+     "exp": "'고기를 안 먹는다고 들었다'고 해 스테이크하우스는 안 된다, 즉 해산물 식당으로 가자는 뜻을 돌려 전했다. 'The client signed the contract.'는 client를, 'I'll take the stairs.'는 take를 반복했을 뿐 선택과 무관하다.",
      "id": "fm3-p2-18"
     },
     {
@@ -11639,7 +11639,7 @@
      "a": 1,
      "type": "선택",
      "lv": 3,
-     "exp": "둘 중 하나를 고르지 않고 '둘 다 아직 권한이 없다'는 제3의 답을 한 것이 정답이다. 'A spread of sandwiches and salads.'는 spreadsheet 와 소리가 겹치는 spread 를 쓴 함정이고, 'Raj sits by the window.'는 Raj 를 반복했을 뿐이다.",
+     "exp": "둘 중 하나를 고르지 않고 '둘 다 아직 권한이 없다'는 제3의 답을 한 것이 정답이다. 'A spread of sandwiches and salads.'는 spreadsheet와 소리가 겹치는 spread를 쓴 함정이고, 'Raj sits by the window.'는 Raj를 반복했을 뿐이다.",
      "id": "fm3-p2-19"
     },
     {
@@ -11658,7 +11658,7 @@
      "a": 0,
      "type": "평서문",
      "lv": 2,
-     "exp": "노선이 바뀌어 불편하다는 말에 '당분간 지하철을 타 보라'고 대안을 제시한 것이 정답이다. 'At the bus stop on Main Street.'는 bus 에서 연상한 장소 응답이고, 'Yes, I usually do.'는 usually 를 반복한 엉뚱한 대답이다.",
+     "exp": "노선이 바뀌어 불편하다는 말에 '당분간 지하철을 타 보라'고 대안을 제시한 것이 정답이다. 'At the bus stop on Main Street.'는 bus 에서 연상한 장소 응답이고, 'Yes, I usually do.'는 usually를 반복한 엉뚱한 대답이다.",
      "id": "fm3-p2-20"
     },
     {
@@ -11677,7 +11677,7 @@
      "a": 2,
      "type": "평서문",
      "lv": 3,
-     "exp": "견적이 비싸다는 말에 '포장과 보관까지 포함돼 있다'며 비쌀 만한 이유를 들어 돌려 반박한 것이 정답이다. 'I quoted him in my article.'은 quote 를 '인용하다'라는 다른 뜻으로 쓴 함정이고, 'It's on the highest shelf.'는 high 를 highest 로 반복한 위치 응답이다.",
+     "exp": "견적이 비싸다는 말에 '포장과 보관까지 포함돼 있다'며 비쌀 만한 이유를 들어 돌려 반박한 것이 정답이다. 'I quoted him in my article.'은 quote를 '인용하다'라는 다른 뜻으로 쓴 함정이고, 'It's on the highest shelf.'는 high를 highest로 반복한 위치 응답이다.",
      "id": "fm3-p2-21"
     },
     {
@@ -11696,7 +11696,7 @@
      "a": 2,
      "type": "평서문",
      "lv": 1,
-     "exp": "의자가 편하다는 말에 '마음에 든다니 다행'이라고 호응한 것이 정답이다. 'At the furniture store.'는 의자에서 연상한 장소 응답이고, 'He's the committee chair.'는 chair 를 '위원장'이라는 다른 뜻으로 쓴 함정이다.",
+     "exp": "의자가 편하다는 말에 '마음에 든다니 다행'이라고 호응한 것이 정답이다. 'At the furniture store.'는 의자에서 연상한 장소 응답이고, 'He's the committee chair.'는 chair를 '위원장'이라는 다른 뜻으로 쓴 함정이다.",
      "id": "fm3-p2-22"
     },
     {
@@ -11715,7 +11715,7 @@
      "a": 0,
      "type": "간접·요청",
      "lv": 1,
-     "exp": "도움 요청을 'Sure'로 수락하고 잠깐 기다려 달라고 한 것이 정답이다. 'A case of bottled water.'는 case 를 '상자'라는 다른 뜻으로 반복했고, 'It seats eight people.'은 van 에서 연상한 좌석 수다.",
+     "exp": "도움 요청을 'Sure'로 수락하고 잠깐 기다려 달라고 한 것이 정답이다. 'A case of bottled water.'는 case를 '상자'라는 다른 뜻으로 반복했고, 'It seats eight people.'은 van 에서 연상한 좌석 수다.",
      "id": "fm3-p2-23"
     },
     {
@@ -11734,7 +11734,7 @@
      "a": 1,
      "type": "간접·요청",
      "lv": 3,
-     "exp": "'6시에 공항으로 떠난다'고 해 오늘 밤에는 해 줄 수 없다는 뜻을 돌려 전한 것이 정답이다. 'Most of our shareholders.'는 shareholder 를, 'It was a long letter.'는 letter 를 반복했을 뿐 요청에 대한 답이 아니다.",
+     "exp": "'6시에 공항으로 떠난다'고 해 오늘 밤에는 해 줄 수 없다는 뜻을 돌려 전한 것이 정답이다. 'Most of our shareholders.'는 shareholder를, 'It was a long letter.'는 letter를 반복했을 뿐 요청에 대한 답이 아니다.",
      "id": "fm3-p2-24"
     },
     {
@@ -11753,7 +11753,7 @@
      "a": 0,
      "type": "간접·요청",
      "lv": 2,
-     "exp": "담당자 이름 대신 '인트라넷 인사팀 페이지를 보라'고 확인 방법을 알려 준 것이 정답이다. 'Yes, I drive to work.'는 Do you know 에 Yes 로 답했지만 내용이 carpool 연상일 뿐이고, 'Four people per car.'도 carpool 에서 연상한 인원수다.",
+     "exp": "담당자 이름 대신 '인트라넷 인사팀 페이지를 보라'고 확인 방법을 알려 준 것이 정답이다. 'Yes, I drive to work.'는 Do you know에 Yes로 답했지만 내용이 carpool 연상일 뿐이고, 'Four people per car.'도 carpool 에서 연상한 인원수다.",
      "id": "fm3-p2-25"
     }
    ],
@@ -12298,7 +12298,7 @@
         5,
         6
        ],
-       "exp": "평일 내내 오므로 이용 횟수가 정해진 요금제(8회, $120)는 부족하고, 모니터를 두고 다녀야 하는데 자유석(any open desk)은 매일 저녁 치운다고 했다. 남는 것은 전용 책상과 보관 공간을 주는 Dedicated Desk 이므로 $320 이다. $210 의 Flex Desk 는 무제한이지만 자유석이라 제외된다."
+       "exp": "평일 내내 오므로 이용 횟수가 정해진 요금제(8회, $120)는 부족하고, 모니터를 두고 다녀야 하는데 자유석(any open desk)은 매일 저녁 치운다고 했다. 남는 것은 전용 책상과 보관 공간을 주는 Dedicated Desk 이므로 $320 이다. $210 의 Flex Desk는 무제한이지만 자유석이라 제외된다."
       },
       {
        "q": "What will the speakers most likely do next?",
@@ -14917,7 +14917,7 @@
          "s": "the lockbox code you sent me isn't working"
         }
        ],
-       "exp": "들라쿠르 씨는 \"the lockbox code you sent me isn't working(보내 준 열쇠 보관함 비밀번호가 안 된다)\"고 썼다. the code you sent me isn't working → A code she was given does not work 로 바뀌었다. 주소는 맞게 찾아왔고, 고객은 오히려 집을 하나 더 보고 싶어 하며, 집주인이 집에 없다는 말은 없다."
+       "exp": "들라쿠르 씨는 \"the lockbox code you sent me isn't working(보내 준 열쇠 보관함 비밀번호가 안 된다)\"고 썼다. the code you sent me isn't working → A code she was given does not work로 바뀌었다. 주소는 맞게 찾아왔고, 고객은 오히려 집을 하나 더 보고 싶어 하며, 집주인이 집에 없다는 말은 없다."
       },
       {
        "q": "At 10:16 A.M., what does Mr. Marchand most likely mean when he writes, \"Leave that to me\"?",
@@ -14987,7 +14987,7 @@
          "s": "Our fully equipped van parks right outside your door, so your knives never leave the premises."
         }
        ],
-       "exp": "\"Our fully equipped van parks right outside your door, so your knives never leave the premises(차량이 업장 앞에 주차해 칼이 업장 밖으로 나가지 않는다)\"고 했다. never leave the premises → does its work at the customer's location 으로 바뀌었다. 칼을 맡기러 가야 한다는 것은 정반대이고, 고객은 식당·호텔 같은 업체이며, 온라인은 예약 수단일 뿐 장비를 판다는 말은 없다."
+       "exp": "\"Our fully equipped van parks right outside your door, so your knives never leave the premises(차량이 업장 앞에 주차해 칼이 업장 밖으로 나가지 않는다)\"고 했다. never leave the premises → does its work at the customer's location으로 바뀌었다. 칼을 맡기러 가야 한다는 것은 정반대이고, 고객은 식당·호텔 같은 업체이며, 온라인은 예약 수단일 뿐 장비를 판다는 말은 없다."
       },
       {
        "q": "How can customers pay a lower price per knife?",
@@ -15007,7 +15007,7 @@
          "s": "Businesses that sign up for a regular monthly visit pay just $4 per knife, compared with our standard rate of $6."
         }
        ],
-       "exp": "매달 정기 방문을 신청하면 표준 요금 6달러 대신 4달러만 낸다(sign up for a regular monthly visit pay just $4)고 했다. sign up for a regular monthly visit → signing up for monthly visits 가 정답이다. 30자루는 한 시간 안에 끝나는 주문 규모일 뿐이고, 온라인 예약이나 다른 업체 소개로 할인된다는 말은 없다."
+       "exp": "매달 정기 방문을 신청하면 표준 요금 6달러 대신 4달러만 낸다(sign up for a regular monthly visit pay just $4)고 했다. sign up for a regular monthly visit → signing up for monthly visits가 정답이다. 30자루는 한 시간 안에 끝나는 주문 규모일 뿐이고, 온라인 예약이나 다른 업체 소개로 할인된다는 말은 없다."
       }
      ],
      "id": "fm3-p7-02"
@@ -15052,7 +15052,7 @@
          "s": "the two passenger elevators on the east side of the building will be taken out of service, one at a time"
         }
        ],
-       "exp": "공지는 동쪽 엘리베이터 두 대가 교체 공사로 약 3주씩 차례로 운행을 멈춘다(will be taken out of service ... approximately three weeks)는 내용이다. taken out of service for three weeks → a temporary change in elevator service 로 바뀌었다. 배송 시간 조정과 안내 데스크가 언급되지만 새 배송 업체나 보안 절차를 소개하는 글이 아니고, 고장 신고를 요청하지도 않는다."
+       "exp": "공지는 동쪽 엘리베이터 두 대가 교체 공사로 약 3주씩 차례로 운행을 멈춘다(will be taken out of service ... approximately three weeks)는 내용이다. taken out of service for three weeks → a temporary change in elevator service로 바뀌었다. 배송 시간 조정과 안내 데스크가 언급되지만 새 배송 업체나 보안 절차를 소개하는 글이 아니고, 고장 신고를 요청하지도 않는다."
       },
       {
        "q": "What are occupants who need assistance asked to do?",
@@ -15072,7 +15072,7 @@
          "s": "it must be requested in advance through the front desk"
         }
        ],
-       "exp": "도움이 필요한 사람은 화물용 엘리베이터를 쓸 수 있지만 \"it must be requested in advance through the front desk(안내 데스크를 통해 미리 요청해야 한다)\"고 했다. requested in advance through the front desk → Contact the front desk beforehand 로 바뀌었다. 계단 이용은 계단을 쓸 수 있는 사람에게 권한 것이고, 건물 뒤편에 있는 것은 화물용 엘리베이터이며, 8시 30분은 혼잡 시간대일 뿐이다."
+       "exp": "도움이 필요한 사람은 화물용 엘리베이터를 쓸 수 있지만 \"it must be requested in advance through the front desk(안내 데스크를 통해 미리 요청해야 한다)\"고 했다. requested in advance through the front desk → Contact the front desk beforehand로 바뀌었다. 계단 이용은 계단을 쓸 수 있는 사람에게 권한 것이고, 건물 뒤편에 있는 것은 화물용 엘리베이터이며, 8시 30분은 혼잡 시간대일 뿐이다."
       }
      ],
      "id": "fm3-p7-03"
@@ -15179,7 +15179,7 @@
          "s": "picked up on Monday, June 23"
         }
        ],
-       "exp": "물품은 \"picked up on Monday, June 23(6월 23일 월요일에 회수)\"된다고 했다. picked up → collected 로 바뀌었다. 5월 30일은 보증금을 낸 날, 6월 20일은 배송일, 6월 21일은 행사일이다."
+       "exp": "물품은 \"picked up on Monday, June 23(6월 23일 월요일에 회수)\"된다고 했다. picked up → collected로 바뀌었다. 5월 30일은 보증금을 낸 날, 6월 20일은 배송일, 6월 21일은 행사일이다."
       },
       {
        "q": "What is indicated about the tablecloths?",
@@ -15199,7 +15199,7 @@
          "s": "A fee of $5 will be charged for each tablecloth that is stained beyond cleaning."
         }
        ],
-       "exp": "\"A fee of $5 will be charged for each tablecloth that is stained beyond cleaning(지울 수 없을 정도로 얼룩진 식탁보는 장당 5달러)\"라고 했다. stained beyond cleaning → badly stained 로 바뀌었다. 식탁보는 세탁하지 말고(unwashed) 반납하라고 했으므로 첫 번째 보기는 반대이고, 표에 장당 9달러가 청구되어 있어 무료도 아니며, 색상 종류는 언급되지 않았다."
+       "exp": "\"A fee of $5 will be charged for each tablecloth that is stained beyond cleaning(지울 수 없을 정도로 얼룩진 식탁보는 장당 5달러)\"라고 했다. stained beyond cleaning → badly stained로 바뀌었다. 식탁보는 세탁하지 말고(unwashed) 반납하라고 했으므로 첫 번째 보기는 반대이고, 표에 장당 9달러가 청구되어 있어 무료도 아니며, 색상 종류는 언급되지 않았다."
       },
       {
        "q": "What is suggested about Ms. Quaye?",
@@ -15219,7 +15219,7 @@
          "s": "The $150 deposit you paid on May 30 has been subtracted from the total below."
         }
        ],
-       "exp": "5월 30일에 낸 보증금 150달러가 총액에서 빠졌다(The $150 deposit you paid ... has been subtracted)고 했으므로 비용 일부를 이미 냈다. deposit you paid → already paid part of the cost 로 추론할 수 있다. 물품은 업체가 배송·회수하고, 의자(64개)가 테이블(8개)보다 많으며, 식탁보는 세탁하지 말고 반납하라고 했다."
+       "exp": "5월 30일에 낸 보증금 150달러가 총액에서 빠졌다(The $150 deposit you paid ... has been subtracted)고 했으므로 비용 일부를 이미 냈다. deposit you paid → already paid part of the cost로 추론할 수 있다. 물품은 업체가 배송·회수하고, 의자(64개)가 테이블(8개)보다 많으며, 식탁보는 세탁하지 말고 반납하라고 했다."
       }
      ],
      "id": "fm3-p7-04"
@@ -15275,7 +15275,7 @@
          "s": "Your session, \"Rethinking the Last Mile,\" is scheduled for 2:15 P.M. on Thursday, October 9, in the Harborview Room."
         }
        ],
-       "exp": "이메일은 사이토 박사의 세션 일시·장소·진행 시간을 알리고 자료 제출과 숙박 안내를 하는 내용이다. Your session is scheduled for ... → details about an upcoming presentation 으로 정리된다. 이미 강연을 수락한 사람에게 보낸 글이므로 위원회 초대가 아니며, 주제 변경이나 일정 변경 이야기는 없다."
+       "exp": "이메일은 사이토 박사의 세션 일시·장소·진행 시간을 알리고 자료 제출과 숙박 안내를 하는 내용이다. Your session is scheduled for ... → details about an upcoming presentation으로 정리된다. 이미 강연을 수락한 사람에게 보낸 글이므로 위원회 초대가 아니며, 주제 변경이나 일정 변경 이야기는 없다."
       },
       {
        "q": "What is Dr. Saito asked to do by September 19?",
@@ -15295,7 +15295,7 @@
          "s": "please send your presentation slides and a short biography of no more than 100 words by September 19"
         }
        ],
-       "exp": "\"please send your presentation slides and a short biography ... by September 19\"라고 했다. send → Submit 으로 바뀌었다. 호텔은 주최 측이 이미 예약했고, 음향 점검은 기술팀이 하며, 리셉션은 강연자에게 무료로 열려 있다고만 했다."
+       "exp": "\"please send your presentation slides and a short biography ... by September 19\"라고 했다. send → Submit으로 바뀌었다. 호텔은 주최 측이 이미 예약했고, 음향 점검은 기술팀이 하며, 리셉션은 강연자에게 무료로 열려 있다고만 했다."
       },
       {
        "q": "In the e-mail, the word \"entitled\" in paragraph 3, line 1, is closest in meaning to",
@@ -15315,7 +15315,7 @@
          "s": "you are entitled to free admission to all forum events"
         }
        ],
-       "exp": "\"be entitled to free admission\"은 '무료 입장할 자격이 있다'는 뜻이므로 eligible(자격이 있는)이 가장 가깝다. entitled to → eligible for. named, titled 는 entitle 의 '제목을 붙이다' 뜻에서 연상되는 함정이고, required(요구되는)는 의무를 뜻해 의미가 다르다."
+       "exp": "\"be entitled to free admission\"은 '무료 입장할 자격이 있다'는 뜻이므로 eligible(자격이 있는)이 가장 가깝다. entitled to → eligible for. named, titled는 entitle의 '제목을 붙이다' 뜻에서 연상되는 함정이고, required(요구되는)는 의무를 뜻해 의미가 다르다."
       }
      ],
      "id": "fm3-p7-05"
@@ -15445,7 +15445,7 @@
          "s": "If you cannot bring your van on the scheduled day, contact fleet manager Oskar Berglund at extension 214 by Friday, March 13."
         }
        ],
-       "exp": "예정된 날 차량을 가져올 수 없으면 3월 13일까지 차량 관리 책임자에게 연락하라고 했다. contact ... by Friday, March 13 → must be requested by a certain date 로 바뀌었다. 차량마다 하루씩 한 번만 배정되어 있고, 정비소가 두 곳이며, 일정은 운전기사가 아니라 회사가 정한 것이다."
+       "exp": "예정된 날 차량을 가져올 수 없으면 3월 13일까지 차량 관리 책임자에게 연락하라고 했다. contact ... by Friday, March 13 → must be requested by a certain date로 바뀌었다. 차량마다 하루씩 한 번만 배정되어 있고, 정비소가 두 곳이며, 일정은 운전기사가 아니라 회사가 정한 것이다."
       }
      ],
      "id": "fm3-p7-06"
@@ -15532,7 +15532,7 @@
          "s": "Customers who pay for six months in advance receive the seventh month free."
         }
        ],
-       "exp": "6개월 치를 선불로 내면 일곱 번째 달이 무료(pay for six months in advance receive the seventh month free)라고 했다. pay for six months in advance → paying for six months at once 로 바뀌었다. 큰 보관실 대여, 지인 소개, 평일 방문은 할인 조건으로 언급되지 않았다."
+       "exp": "6개월 치를 선불로 내면 일곱 번째 달이 무료(pay for six months in advance receive the seventh month free)라고 했다. pay for six months in advance → paying for six months at once로 바뀌었다. 큰 보관실 대여, 지인 소개, 평일 방문은 할인 조건으로 언급되지 않았다."
       }
      ],
      "id": "fm3-p7-07"
@@ -15580,7 +15580,7 @@
          "s": "a sales representative came to our apartment, looked through every room"
         }
        ],
-       "exp": "영업 담당자가 아파트에 와서 방을 하나하나 살펴봤다(came to our apartment, looked through every room)고 했다. came ... looked through every room → inspected the apartment in person 으로 바뀌었다. 사과 전화를 한 사람은 매니저(the manager)이고, 이삿날 작업자들은 제시간에 왔으며, 할인 제안은 없었다."
+       "exp": "영업 담당자가 아파트에 와서 방을 하나하나 살펴봤다(came to our apartment, looked through every room)고 했다. came ... looked through every room → inspected the apartment in person으로 바뀌었다. 사과 전화를 한 사람은 매니저(the manager)이고, 이삿날 작업자들은 제시간에 왔으며, 할인 제안은 없었다."
       },
       {
        "q": "Why did the movers make a second trip?",
@@ -15600,7 +15600,7 @@
          "s": "the truck they brought was smaller than the one described in the estimate, so it could not hold everything"
         }
        ],
-       "exp": "트럭이 견적서에 적힌 것보다 작아 짐을 다 실을 수 없었다(could not hold everything)고 했다. could not hold everything → could not carry all the belongings 로 바뀌었다. 손상된 물건은 없었다(Nothing was damaged)고 했으므로 첫 번째 보기는 반대이며, 집이 준비되지 않았다거나 짐을 추가했다는 말은 없다."
+       "exp": "트럭이 견적서에 적힌 것보다 작아 짐을 다 실을 수 없었다(could not hold everything)고 했다. could not hold everything → could not carry all the belongings로 바뀌었다. 손상된 물건은 없었다(Nothing was damaged)고 했으므로 첫 번째 보기는 반대이며, 집이 준비되지 않았다거나 짐을 추가했다는 말은 없다."
       },
       {
        "q": "What is suggested about the cost of the move?",
@@ -15675,7 +15675,7 @@
          "s": "the phone number on the large banner is wrong. It shows our old Brookdale office number"
         }
        ],
-       "exp": "대형 현수막에 예전 브룩데일 사무실 전화번호가 나와 있다(It shows our old Brookdale office number)고 했다. old office number → outdated contact information 으로 바뀌었다. Brookdale office 는 번호의 출처일 뿐 배송 장소가 아니고, 엑스포 날짜 변경이나 가격 인상 이야기는 없다."
+       "exp": "대형 현수막에 예전 브룩데일 사무실 전화번호가 나와 있다(It shows our old Brookdale office number)고 했다. old office number → outdated contact information으로 바뀌었다. Brookdale office는 번호의 출처일 뿐 배송 장소가 아니고, 엑스포 날짜 변경이나 가격 인상 이야기는 없다."
       },
       {
        "q": "At 9:37 A.M., what does Ms. Kerrigan most likely mean when she writes, \"Not if it's done well\"?",
@@ -15720,7 +15720,7 @@
          "s": "We'll need the banner again for the Ravensport show next month."
         }
        ],
-       "exp": "페어베언 씨는 재인쇄를 주문하자며 다음 달 레이븐스포트 박람회에 현수막이 또 필요하다고 했다. the Ravensport show next month → a later event 로 바뀌었다. 재인쇄본은 금요일에 나오므로 목요일 개막 전에는 준비되지 않고, 가격이나 로고 이야기는 없다."
+       "exp": "페어베언 씨는 재인쇄를 주문하자며 다음 달 레이븐스포트 박람회에 현수막이 또 필요하다고 했다. the Ravensport show next month → a later event로 바뀌었다. 재인쇄본은 금요일에 나오므로 목요일 개막 전에는 준비되지 않고, 가격이나 로고 이야기는 없다."
       },
       {
        "q": "What will Mr. Vashenko most likely do next?",
@@ -15740,7 +15740,7 @@
          "s": "I'll ask the printer for the sticker this morning."
         }
        ],
-       "exp": "바셴코 씨는 마지막에 \"I'll ask the printer for the sticker this morning(오늘 오전에 인쇄소에 스티커를 요청하겠다)\"고 했다. ask the printer for the sticker → Request a sticker from the printer 로 바뀌었다. 재인쇄는 취소하지 않고 주문하기로 했으며, 브룩데일 사무실과 레이븐스포트는 대화에 나온 단어를 이용한 함정이다."
+       "exp": "바셴코 씨는 마지막에 \"I'll ask the printer for the sticker this morning(오늘 오전에 인쇄소에 스티커를 요청하겠다)\"고 했다. ask the printer for the sticker → Request a sticker from the printer로 바뀌었다. 재인쇄는 취소하지 않고 주문하기로 했으며, 브룩데일 사무실과 레이븐스포트는 대화에 나온 단어를 이용한 함정이다."
       }
      ],
      "id": "fm3-p7-09"
@@ -15787,7 +15787,7 @@
          "s": "will build a data center on the site of the former Orvale paper mill"
         }
        ],
-       "exp": "기사는 테살린 시스템스가 옛 제지 공장 부지에 데이터 센터를 짓는다(will build a data center)는 소식과 그에 따른 고용·주민 반응을 다룬다. build a data center → a plan to build a new facility 로 바뀌었다. 제지 공장은 재가동이 아니라 부지만 활용하는 것이고, 칼리지는 교육 프로그램 지원 대상으로만 나온다."
+       "exp": "기사는 테살린 시스템스가 옛 제지 공장 부지에 데이터 센터를 짓는다(will build a data center)는 소식과 그에 따른 고용·주민 반응을 다룬다. build a data center → a plan to build a new facility로 바뀌었다. 제지 공장은 재가동이 아니라 부지만 활용하는 것이고, 칼리지는 교육 프로그램 지원 대상으로만 나온다."
       },
       {
        "q": "What is indicated about the former paper mill site?",
@@ -15807,7 +15807,7 @@
          "s": "The paper mill closed eleven years ago, and the property along the Sallow River has been empty ever since."
         }
        ],
-       "exp": "공장은 11년 전에 문을 닫았고 부지는 그 이후로 비어 있었다(has been empty ever since)고 했다. eleven years → more than a decade, empty → unused 로 바뀌었다. 정화 비용 때문에 개발업체들이 단념했다고 했을 뿐 시가 정화했다는 말은 없고, 강은 샐로강 하나이며, 두 대도시 사이에 있는 것은 오베일이라는 도시다."
+       "exp": "공장은 11년 전에 문을 닫았고 부지는 그 이후로 비어 있었다(has been empty ever since)고 했다. eleven years → more than a decade, empty → unused로 바뀌었다. 정화 비용 때문에 개발업체들이 단념했다고 했을 뿐 시가 정화했다는 말은 없고, 강은 샐로강 하나이며, 두 대도시 사이에 있는 것은 오베일이라는 도시다."
       },
       {
        "q": "According to the article, what will Tessaline do to help local residents get jobs at the center?",
@@ -15827,7 +15827,7 @@
          "s": "It has also agreed to fund a two-year training program at Brandle Community College to prepare local residents for those positions."
         }
        ],
-       "exp": "테살린은 지역 주민이 그 일자리에 대비하도록 2년 과정 교육 프로그램에 자금을 대기로 했다(fund a two-year training program)고 했다. fund → Pay for 로 바뀌었다. 건설 인력 우선 채용, 채용 사무소, 주거 제공은 언급되지 않았다."
+       "exp": "테살린은 지역 주민이 그 일자리에 대비하도록 2년 과정 교육 프로그램에 자금을 대기로 했다(fund a two-year training program)고 했다. fund → Pay for로 바뀌었다. 건설 인력 우선 채용, 채용 사무소, 주거 제공은 언급되지 않았다."
       },
       {
        "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"Those living on Pell Street, which runs along the northern edge of the site, have been the most vocal.\"",
@@ -15985,7 +15985,7 @@
          "s": "Compare our packages below"
         }
        ],
-       "exp": "이메일의 조건은 보정 사진 3장 이상, 일주일 이내 전달, 그중 가장 저렴한 상품이다. 표에서 이를 충족하는 것은 Professional(3장, 5영업일, 70달러)과 Executive(5장, 3영업일, 110달러)인데 더 싼 Professional 이 답이다. Essential 은 1장·7영업일, Team Plus 는 2장이고 15명 이상이어야 해서 12명인 이 회사에 맞지 않는다."
+       "exp": "이메일의 조건은 보정 사진 3장 이상, 일주일 이내 전달, 그중 가장 저렴한 상품이다. 표에서 이를 충족하는 것은 Professional(3장, 5영업일, 70달러)과 Executive(5장, 3영업일, 110달러)인데 더 싼 Professional이 답이다. Essential은 1장·7영업일, Team Plus는 2장이고 15명 이상이어야 해서 12명인 이 회사에 맞지 않는다."
       },
       {
        "q": "What is suggested about the photo session for Verdant Advisors?",
@@ -16896,7 +16896,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 1,
-     "exp": "Who 에 '지역 화가 이네스 두아르테'라는 인물로 답한 것이 정답이다. 'Yes, it's beautiful.'은 의문사 질문에 Yes 로 답한 함정이고, 'Right by the elevators.'는 lobby 에서 연상한 위치(Where) 응답이다.",
+     "exp": "Who에 '지역 화가 이네스 두아르테'라는 인물로 답한 것이 정답이다. 'Yes, it's beautiful.'은 의문사 질문에 Yes로 답한 함정이고, 'Right by the elevators.'는 lobby 에서 연상한 위치(Where) 응답이다.",
      "id": "fm4-p2-01"
     },
     {
@@ -16915,7 +16915,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 3,
-     "exp": "사람 이름 대신 '금요일에 발표된다', 즉 아직 모른다고 돌려 답한 것이 정답이다. 'I chose the blue one.'은 chosen 을 chose 로 반복한 함정이고, 'It's held every two years.'는 summit 에서 연상한 개최 주기다.",
+     "exp": "사람 이름 대신 '금요일에 발표된다', 즉 아직 모른다고 돌려 답한 것이 정답이다. 'I chose the blue one.'은 chosen을 chose로 반복한 함정이고, 'It's held every two years.'는 summit 에서 연상한 개최 주기다.",
      "id": "fm4-p2-02"
     },
     {
@@ -16934,7 +16934,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "What 에 포함 항목(창문 세척, 카펫 청소)을 나열한 것이 정답이다. 'Yes, it's very clean.'은 의문사 질문에 Yes 로 답하며 cleaning 을 clean 으로 반복했고, 'The package arrived this morning.'은 package 를 '소포'라는 다른 뜻으로 쓴 함정이다.",
+     "exp": "What에 포함 항목(창문 세척, 카펫 청소)을 나열한 것이 정답이다. 'Yes, it's very clean.'은 의문사 질문에 Yes로 답하며 cleaning을 clean으로 반복했고, 'The package arrived this morning.'은 package를 '소포'라는 다른 뜻으로 쓴 함정이다.",
      "id": "fm4-p2-03"
     },
     {
@@ -16953,7 +16953,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 3,
-     "exp": "'다음 달에 다시 논의한다', 즉 아직 결정되지 않았다고 돌려 답한 것이 정답이다. 'A larger board room.'은 board 와 expansion(확장)에서 연상한 함정이고, 'I've never been to Lisbon.'은 Lisbon 을 반복했을 뿐 결정 내용과 무관하다.",
+     "exp": "'다음 달에 다시 논의한다', 즉 아직 결정되지 않았다고 돌려 답한 것이 정답이다. 'A larger board room.'은 board와 expansion(확장)에서 연상한 함정이고, 'I've never been to Lisbon.'은 Lisbon을 반복했을 뿐 결정 내용과 무관하다.",
      "id": "fm4-p2-04"
     },
     {
@@ -16972,7 +16972,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 1,
-     "exp": "When 에 '6월 첫째 월요일'이라는 날짜로 답한 것이 정답이다. 'Mostly business majors.'는 internship 에서 연상한 참가자 정보이고, 'Yes, it was a great summer.'는 의문사 질문에 Yes 로 답하며 summer 를 반복했다.",
+     "exp": "When에 '6월 첫째 월요일'이라는 날짜로 답한 것이 정답이다. 'Mostly business majors.'는 internship 에서 연상한 참가자 정보이고, 'Yes, it was a great summer.'는 의문사 질문에 Yes로 답하며 summer를 반복했다.",
      "id": "fm4-p2-05"
     },
     {
@@ -16991,7 +16991,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 2,
-     "exp": "장소를 정하지 않고 '부장님 의견을 물어보자'고 결정을 넘긴 것이 정답이다. 'For outstanding customer service.'는 수상 이유(Why)에 해당하고, 'Yes, we won it last year.'는 의문사 질문에 Yes 로 답하며 won 을 반복했다.",
+     "exp": "장소를 정하지 않고 '부장님 의견을 물어보자'고 결정을 넘긴 것이 정답이다. 'For outstanding customer service.'는 수상 이유(Why)에 해당하고, 'Yes, we won it last year.'는 의문사 질문에 Yes로 답하며 won을 반복했다.",
      "id": "fm4-p2-06"
     },
     {
@@ -17010,7 +17010,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 1,
-     "exp": "Where 에 '2층 시청각실'이라는 장소로 답한 것이 정답이다. 'After lunch, I think.'는 after 를 반복한 시간 응답이고, 'It projects very clearly.'는 projector 와 발음이 비슷한 projects 를 쓴 함정이다.",
+     "exp": "Where에 '2층 시청각실'이라는 장소로 답한 것이 정답이다. 'After lunch, I think.'는 after를 반복한 시간 응답이고, 'It projects very clearly.'는 projector와 발음이 비슷한 projects를 쓴 함정이다.",
      "id": "fm4-p2-07"
     },
     {
@@ -17029,7 +17029,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 2,
-     "exp": "Why 에 'To ~'로 목적(새 전시 관람객 수용)을 답한 것이 정답이다. 'Until eight o'clock on weekends.'는 hours 에서 연상한 운영 시간이고, 'The exhibit hall is upstairs.'는 museum 에서 연상한 위치 응답이다.",
+     "exp": "Why에 'To ~'로 목적(새 전시 관람객 수용)을 답한 것이 정답이다. 'Until eight o'clock on weekends.'는 hours 에서 연상한 운영 시간이고, 'The exhibit hall is upstairs.'는 museum 에서 연상한 위치 응답이다.",
      "id": "fm4-p2-08"
     },
     {
@@ -17048,7 +17048,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "기간을 단정하지 않고 '데이터 양에 따라 다르다'고 돌려 답한 것이 정답이다. 'To the new data center.'는 이전 장소(Where)에 대한 답이고, 'The servers are in the basement.'는 server 를 반복한 위치 응답이다.",
+     "exp": "기간을 단정하지 않고 '데이터 양에 따라 다르다'고 돌려 답한 것이 정답이다. 'To the new data center.'는 이전 장소(Where)에 대한 답이고, 'The servers are in the basement.'는 server를 반복한 위치 응답이다.",
      "id": "fm4-p2-09"
     },
     {
@@ -17067,7 +17067,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 3,
-     "exp": "숫자 대신 '작년 12월 수치부터 보자'고 판단 근거를 먼저 확인하자는 것이 정답이다. 'It's only temporary.'는 temporary 를 반복했고, 'Around the holidays.'는 holiday 를 반복한 시점(When) 응답이다.",
+     "exp": "숫자 대신 '작년 12월 수치부터 보자'고 판단 근거를 먼저 확인하자는 것이 정답이다. 'It's only temporary.'는 temporary를 반복했고, 'Around the holidays.'는 holiday를 반복한 시점(When) 응답이다.",
      "id": "fm4-p2-10"
     },
     {
@@ -17086,7 +17086,7 @@
      "a": 2,
      "type": "Yes/No",
      "lv": 1,
-     "exp": "Yes 로 답하고 '이미 챙겨 놨다'고 덧붙인 것이 정답이다. 'A cotton shirt, please.'는 fabric 에서 연상한 주문 표현이고, 'It met our expectations.'는 meeting 과 발음이 비슷한 met 을 쓴 함정이다.",
+     "exp": "Yes로 답하고 '이미 챙겨 놨다'고 덧붙인 것이 정답이다. 'A cotton shirt, please.'는 fabric 에서 연상한 주문 표현이고, 'It met our expectations.'는 meeting과 발음이 비슷한 met을 쓴 함정이다.",
      "id": "fm4-p2-11"
     },
     {
@@ -17105,7 +17105,7 @@
      "a": 0,
      "type": "Yes/No",
      "lv": 2,
-     "exp": "'점심 이후 이메일을 확인 못 했다', 즉 아직 모른다고 돌려 답한 것이 정답이다. 'She's a well-known photographer.'는 photographer 를, 'A new catalog every season.'은 catalog 를 반복했을 뿐 사진을 받았는지와 무관하다.",
+     "exp": "'점심 이후 이메일을 확인 못 했다', 즉 아직 모른다고 돌려 답한 것이 정답이다. 'She's a well-known photographer.'는 photographer를, 'A new catalog every season.'은 catalog를 반복했을 뿐 사진을 받았는지와 무관하다.",
      "id": "fm4-p2-12"
     },
     {
@@ -17124,7 +17124,7 @@
      "a": 0,
      "type": "Yes/No",
      "lv": 3,
-     "exp": "Yes/No 대신 '관리자가 승인해야만 된다'는 조건을 붙여 답한 것이 정답이다. 'The roof is covered in snow.'는 covered 를 '덮이다'라는 다른 뜻으로 쓴 함정이고, 'Our department moved upstairs.'는 department 를 반복했다.",
+     "exp": "Yes/No 대신 '관리자가 승인해야만 된다'는 조건을 붙여 답한 것이 정답이다. 'The roof is covered in snow.'는 covered를 '덮이다'라는 다른 뜻으로 쓴 함정이고, 'Our department moved upstairs.'는 department를 반복했다.",
      "id": "fm4-p2-13"
     },
     {
@@ -17143,7 +17143,7 @@
      "a": 2,
      "type": "부정·부가",
      "lv": 2,
-     "exp": "'제 책상 위 상자에 있다'고 해 이미 인쇄됐다는 뜻을 돌려 전한 것이 정답이다. 'My name is Paulo.'는 name 을, 'She's new to the department.'는 new 를 반복한 함정이다.",
+     "exp": "'제 책상 위 상자에 있다'고 해 이미 인쇄됐다는 뜻을 돌려 전한 것이 정답이다. 'My name is Paulo.'는 name을, 'She's new to the department.'는 new를 반복한 함정이다.",
      "id": "fm4-p2-14"
     },
     {
@@ -17162,7 +17162,7 @@
      "a": 1,
      "type": "부정·부가",
      "lv": 2,
-     "exp": "부가의문문에 Yes 로 답하고 '예매할 때 했다'고 덧붙인 것이 정답이다. 'A three-hour flight.'는 flight 를 반복했고, 'In alphabetical order.'는 ordered 의 order 를 '순서'라는 다른 뜻으로 쓴 함정이다.",
+     "exp": "부가의문문에 Yes로 답하고 '예매할 때 했다'고 덧붙인 것이 정답이다. 'A three-hour flight.'는 flight를 반복했고, 'In alphabetical order.'는 ordered의 order를 '순서'라는 다른 뜻으로 쓴 함정이다.",
      "id": "fm4-p2-15"
     },
     {
@@ -17181,7 +17181,7 @@
      "a": 1,
      "type": "부정·부가",
      "lv": 3,
-     "exp": "'덴버 지사에 급히 가게 됐다', 즉 발표하지 못한다는 뜻을 돌려 전한 것이 정답이다. 'Sales were strong last quarter.'는 sales 를 반복했고, 'The forecast calls for rain.'은 forecast 를 '일기 예보'라는 다른 뜻으로 쓴 함정이다.",
+     "exp": "'덴버 지사에 급히 가게 됐다', 즉 발표하지 못한다는 뜻을 돌려 전한 것이 정답이다. 'Sales were strong last quarter.'는 sales를 반복했고, 'The forecast calls for rain.'은 forecast를 '일기 예보'라는 다른 뜻으로 쓴 함정이다.",
      "id": "fm4-p2-16"
     },
     {
@@ -17200,7 +17200,7 @@
      "a": 0,
      "type": "선택",
      "lv": 1,
-     "exp": "둘 중 연회색을 고르고 이유를 덧붙인 것이 정답이다. 'Yes, the paint is dry.'는 선택 의문문에 Yes 로 답하며 paint 를 반복했고, 'The lobby is on the first floor.'는 lobby 를 반복한 위치 응답이다.",
+     "exp": "둘 중 연회색을 고르고 이유를 덧붙인 것이 정답이다. 'Yes, the paint is dry.'는 선택 의문문에 Yes로 답하며 paint를 반복했고, 'The lobby is on the first floor.'는 lobby를 반복한 위치 응답이다.",
      "id": "fm4-p2-17"
     },
     {
@@ -17219,7 +17219,7 @@
      "a": 2,
      "type": "선택",
      "lv": 2,
-     "exp": "'그날 주민센터 테이블은 예약이 찼다'고 해 빌릴 수 없으니 대여하자는 뜻을 돌려 전했다. 'A table for two, please.'는 식당 예약 표현으로 table 을 반복했고, 'I borrowed a book last week.'은 borrow 를 반복하며 시제·대상을 바꾼 함정이다.",
+     "exp": "'그날 주민센터 테이블은 예약이 찼다'고 해 빌릴 수 없으니 대여하자는 뜻을 돌려 전했다. 'A table for two, please.'는 식당 예약 표현으로 table을 반복했고, 'I borrowed a book last week.'은 borrow를 반복하며 시제·대상을 바꾼 함정이다.",
      "id": "fm4-p2-18"
     },
     {
@@ -17238,7 +17238,7 @@
      "a": 2,
      "type": "선택",
      "lv": 3,
-     "exp": "'행사장이 라이브 공연을 허용하지 않는다'고 해 밴드는 안 되니 녹음된 음악을 틀자는 뜻을 돌려 전했다. 'I've heard that song before.'는 music 에서 연상한 응답으로 선택과 무관하고, 'Yes, we've hired three new staff.'는 선택 의문문에 Yes 로 답하며 hire 를 '직원 채용'으로 바꾼 함정이다.",
+     "exp": "'행사장이 라이브 공연을 허용하지 않는다'고 해 밴드는 안 되니 녹음된 음악을 틀자는 뜻을 돌려 전했다. 'I've heard that song before.'는 music 에서 연상한 응답으로 선택과 무관하고, 'Yes, we've hired three new staff.'는 선택 의문문에 Yes로 답하며 hire를 '직원 채용'으로 바꾼 함정이다.",
      "id": "fm4-p2-19"
     },
     {
@@ -17257,7 +17257,7 @@
      "a": 1,
      "type": "평서문",
      "lv": 2,
-     "exp": "골고루 데워지지 않는다는 불평에 '중간에 저어 보라'고 해결책을 제시한 것이 정답이다. 'I'll take a short break.'는 break room 의 break 를 반복했고, 'It's an even number.'는 evenly 와 비슷한 even(짝수의)을 쓴 함정이다.",
+     "exp": "골고루 데워지지 않는다는 불평에 '중간에 저어 보라'고 해결책을 제시한 것이 정답이다. 'I'll take a short break.'는 break room의 break를 반복했고, 'It's an even number.'는 evenly와 비슷한 even(짝수의)을 쓴 함정이다.",
      "id": "fm4-p2-20"
     },
     {
@@ -17276,7 +17276,7 @@
      "a": 0,
      "type": "평서문",
      "lv": 3,
-     "exp": "매출 하락 소식에 '그때 웹사이트가 일주일간 다운됐었다'고 원인을 짚어 준 것이 정답이다. 'Yes, I dropped it off.'는 dropped 를 '갖다 놓다'라는 다른 뜻으로 반복했고, 'I bought it online.'은 online 을 반복했을 뿐이다.",
+     "exp": "매출 하락 소식에 '그때 웹사이트가 일주일간 다운됐었다'고 원인을 짚어 준 것이 정답이다. 'Yes, I dropped it off.'는 dropped를 '갖다 놓다'라는 다른 뜻으로 반복했고, 'I bought it online.'은 online을 반복했을 뿐이다.",
      "id": "fm4-p2-21"
     },
     {
@@ -17295,7 +17295,7 @@
      "a": 0,
      "type": "평서문",
      "lv": 2,
-     "exp": "심사를 맡게 됐다는 말에 축하하며 격려한 것이 정답이다. 'A digital camera, I think.'는 photo 에서 연상한 응답이고, 'Yes, I asked him already.'는 asked 를 반복하며 주체를 바꾼 함정이다.",
+     "exp": "심사를 맡게 됐다는 말에 축하하며 격려한 것이 정답이다. 'A digital camera, I think.'는 photo 에서 연상한 응답이고, 'Yes, I asked him already.'는 asked를 반복하며 주체를 바꾼 함정이다.",
      "id": "fm4-p2-22"
     },
     {
@@ -17314,7 +17314,7 @@
      "a": 1,
      "type": "간접·요청",
      "lv": 1,
-     "exp": "잠가 달라는 요청을 'Sure'로 수락한 것이 정답이다. 'Some paper and pens.'는 supply(비품)에서 연상한 물건이고, 'It's close to the exit.'은 closet 과 발음이 비슷한 close 를 쓴 함정이다.",
+     "exp": "잠가 달라는 요청을 'Sure'로 수락한 것이 정답이다. 'Some paper and pens.'는 supply(비품)에서 연상한 물건이고, 'It's close to the exit.'은 closet과 발음이 비슷한 close를 쓴 함정이다.",
      "id": "fm4-p2-23"
     },
     {
@@ -17333,7 +17333,7 @@
      "a": 2,
      "type": "간접·요청",
      "lv": 2,
-     "exp": "위치를 직접 말하지 않고 '충전소를 다 보여 주는 앱이 있다'며 찾는 방법을 알려 준 것이 정답이다. 'It takes about an hour to charge.'는 charging 에서 연상한 충전 시간이고, 'I'll tell him you called.'는 tell 을 반복한 함정이다.",
+     "exp": "위치를 직접 말하지 않고 '충전소를 다 보여 주는 앱이 있다'며 찾는 방법을 알려 준 것이 정답이다. 'It takes about an hour to charge.'는 charging 에서 연상한 충전 시간이고, 'I'll tell him you called.'는 tell을 반복한 함정이다.",
      "id": "fm4-p2-24"
     },
     {
@@ -17352,7 +17352,7 @@
      "a": 1,
      "type": "간접·요청",
      "lv": 3,
-     "exp": "'페헤이라 씨가 정오까지만 시간이 된다'고 해 오후로 옮기기 어렵다는 뜻을 돌려 전한 것이 정답이다. 'We're moving next month.'는 move 를 '이사하다'라는 다른 뜻으로 반복했고, 'Good afternoon, everyone.'은 afternoon 을 반복한 인사말이다.",
+     "exp": "'페헤이라 씨가 정오까지만 시간이 된다'고 해 오후로 옮기기 어렵다는 뜻을 돌려 전한 것이 정답이다. 'We're moving next month.'는 move를 '이사하다'라는 다른 뜻으로 반복했고, 'Good afternoon, everyone.'은 afternoon을 반복한 인사말이다.",
      "id": "fm4-p2-25"
     }
    ],
@@ -20494,7 +20494,7 @@
          "s": "the supplier's Web site says it's out of stock until May"
         }
        ],
-       "exp": "고객이 원하는 타일이 공급업체 웹사이트에 5월까지 품절(out of stock until May)로 나와 있다고 했다. out of stock → not currently available 로 바뀌었다. 욕실 치수를 재고 있다는 말은 크기 문제가 아니며, 고객은 공사를 취소하지 않고 비슷한 타일을 고려하겠다고 했다."
+       "exp": "고객이 원하는 타일이 공급업체 웹사이트에 5월까지 품절(out of stock until May)로 나와 있다고 했다. out of stock → not currently available로 바뀌었다. 욕실 치수를 재고 있다는 말은 크기 문제가 아니며, 고객은 공사를 취소하지 않고 비슷한 타일을 고려하겠다고 했다."
       },
       {
        "q": "At 1:09 P.M., what does Mr. Mabry most likely mean when he writes, \"I'm on it\"?",
@@ -20540,7 +20540,7 @@
        "ko": [
         "귀사는 스페인어권 국가의 고객이나 협력사와 일하십니까? 브리사 어학원은 바쁜 직장인을 위해 만든 실용 스페인어 과정을 제공합니다. 일반 어학 수업과 달리, 저희 과정은 회의 진행, 가격 협상, 업무 통화 등 직원들이 가장 자주 겪는 상황에 초점을 맞춥니다.",
         "수업은 귀사 사무실이나 온라인에서 팀에 맞는 시간에 진행됩니다. 모든 참가자가 충분히 말할 기회를 갖도록 한 그룹은 8명으로 제한됩니다. 저희 강사는 모두 5년 이상의 비즈니스 경력을 갖춘 원어민입니다.",
-        "첫 수업 전에 참가자 모두 무료로 20분간 평가를 받으며, 이를 통해 각자에게 맞는 수준의 반에 배정해 드립니다. 귀사 팀을 위한 제안서를 요청하시려면 www.brisastudio.example 을 방문하십시오."
+        "첫 수업 전에 참가자 모두 무료로 20분간 평가를 받으며, 이를 통해 각자에게 맞는 수준의 반에 배정해 드립니다. 귀사 팀을 위한 제안서를 요청하시려면 www.brisastudio.example을 방문하십시오."
        ],
        "graphic": null
       }
@@ -20564,7 +20564,7 @@
          "s": "our courses focus on the situations employees face most often, such as leading meetings, negotiating prices, and making business calls"
         }
        ],
-       "exp": "과정은 회의 진행, 가격 협상, 업무 통화처럼 직원들이 자주 겪는 상황에 초점을 맞춘다고 했다. leading meetings, negotiating prices → work-related tasks 로 정리된다. 수업은 고객사 사무실이나 온라인에서 열리고, 수준별 배정을 하므로 초보자 전용이 아니며, 현지 방문 이야기는 없다."
+       "exp": "과정은 회의 진행, 가격 협상, 업무 통화처럼 직원들이 자주 겪는 상황에 초점을 맞춘다고 했다. leading meetings, negotiating prices → work-related tasks로 정리된다. 수업은 고객사 사무실이나 온라인에서 열리고, 수준별 배정을 하므로 초보자 전용이 아니며, 현지 방문 이야기는 없다."
       },
       {
        "q": "What happens before the first class?",
@@ -20584,7 +20584,7 @@
          "s": "each participant takes a free 20-minute assessment so that we can place everyone at the right level"
         }
        ],
-       "exp": "첫 수업 전에 참가자마다 무료 20분 평가를 받아 맞는 수준에 배정된다고 했다. takes an assessment ... place everyone at the right level → are tested to determine their level 로 바뀌었다. 평가는 무료라고 했고, 등록비·교재 선택·고객 방문은 언급되지 않았다."
+       "exp": "첫 수업 전에 참가자마다 무료 20분 평가를 받아 맞는 수준에 배정된다고 했다. takes an assessment ... place everyone at the right level → are tested to determine their level로 바뀌었다. 평가는 무료라고 했고, 등록비·교재 선택·고객 방문은 언급되지 않았다."
       }
      ],
      "id": "fm4-p7-02"
@@ -20647,7 +20647,7 @@
          "s": "Valuable items such as wallets, phones, and keys will be released only after the owner shows photo identification."
         }
        ],
-       "exp": "지갑 같은 귀중품은 주인이 사진이 있는 신분증을 보여 준 후에만 돌려준다(only after the owner shows photo identification)고 했다. photo identification → photo ID 로 바뀌었다. 월요일은 목록이 게시되는 날일 뿐이고, 온라인 양식이나 수수료는 언급되지 않았다."
+       "exp": "지갑 같은 귀중품은 주인이 사진이 있는 신분증을 보여 준 후에만 돌려준다(only after the owner shows photo identification)고 했다. photo identification → photo ID로 바뀌었다. 월요일은 목록이 게시되는 날일 뿐이고, 온라인 양식이나 수수료는 언급되지 않았다."
       }
      ],
      "id": "fm4-p7-03"
@@ -20697,7 +20697,7 @@
          "s": "Instead, cars must be reserved through the Fleetly app"
         }
        ],
-       "exp": "종이 기록부 대신 앱으로 회사 차량을 예약해야 한다(cars must be reserved through the Fleetly app)는 것이 메모의 핵심이다. reserved through the app → a new way to reserve vehicles 로 바뀌었다. 차량은 기존 4대 그대로이고, 경비 보고서는 주유 영수증 제출 방법으로 잠깐 나올 뿐이며, 출장 예산 이야기는 없다."
+       "exp": "종이 기록부 대신 앱으로 회사 차량을 예약해야 한다(cars must be reserved through the Fleetly app)는 것이 메모의 핵심이다. reserved through the app → a new way to reserve vehicles로 바뀌었다. 차량은 기존 4대 그대로이고, 경비 보고서는 주유 영수증 제출 방법으로 잠깐 나올 뿐이며, 출장 예산 이야기는 없다."
       },
       {
        "q": "What are employees asked to do when they return a car?",
@@ -20717,7 +20717,7 @@
          "s": "When you return a car, please record the mileage in the app"
         }
        ],
-       "exp": "차를 반납할 때 앱에 주행 거리를 기록하라(record the mileage in the app)고 했다. record → Enter 로 바뀌었다. 열쇠는 안내 직원이 아니라 사무실 밖 상자에 넣어야 하고, 주유 영수증은 차에 두지 않고 경비 보고서와 함께 제출하며, 세차 이야기는 없다."
+       "exp": "차를 반납할 때 앱에 주행 거리를 기록하라(record the mileage in the app)고 했다. record → Enter로 바뀌었다. 열쇠는 안내 직원이 아니라 사무실 밖 상자에 넣어야 하고, 주유 영수증은 차에 두지 않고 경비 보고서와 함께 제출하며, 세차 이야기는 없다."
       }
      ],
      "id": "fm4-p7-04"
@@ -20831,7 +20831,7 @@
          "s": "Winter jackets are currently out of stock and will be shipped separately in February."
         }
        ],
-       "exp": "겨울 재킷은 재고가 없어 2월에 따로 발송된다(shipped separately in February)고 했다. 다른 품목은 10영업일 안에 받으므로 재킷이 더 늦게 도착한다. L 은 템보 씨가 고른 치수일 뿐이고, 단종이 아니라 일시 품절이며, 아직 재고가 없으므로 템보 씨가 이미 받아 갔을 수도 없다."
+       "exp": "겨울 재킷은 재고가 없어 2월에 따로 발송된다(shipped separately in February)고 했다. 다른 품목은 10영업일 안에 받으므로 재킷이 더 늦게 도착한다. L은 템보 씨가 고른 치수일 뿐이고, 단종이 아니라 일시 품절이며, 아직 재고가 없으므로 템보 씨가 이미 받아 갔을 수도 없다."
       },
       {
        "q": "Where will Mr. Tembo most likely pick up his order?",
@@ -20909,7 +20909,7 @@
          "s": "We are pleased to offer you a new three-year lease beginning February 1."
         }
        ],
-       "exp": "곧 만료되는 임대 계약을 대신할 새 3년 계약을 제안한다(offer you a new three-year lease)는 것이 편지의 목적이다. a new lease → extend a rental agreement 로 바뀌었다. 연체료 독촉, 건물 매각, 관리자 소개는 언급되지 않았다."
+       "exp": "곧 만료되는 임대 계약을 대신할 새 3년 계약을 제안한다(offer you a new three-year lease)는 것이 편지의 목적이다. a new lease → extend a rental agreement로 바뀌었다. 연체료 독촉, 건물 매각, 관리자 소개는 언급되지 않았다."
       },
       {
        "q": "What is suggested about the storeroom?",
@@ -20949,7 +20949,7 @@
          "s": "we cannot hold it for long"
         }
        ],
-       "exp": "다른 세입자들도 문의했으므로 \"we cannot hold it for long\"은 '그 공간을 오래 잡아 둘 수 없다'는 뜻이다. 따라서 reserve(따로 잡아 두다)가 가장 가깝다. grip(손에 쥐다), contain(담다), conduct(회의 등을 열다)는 hold 의 다른 뜻에서 나온 함정이다."
+       "exp": "다른 세입자들도 문의했으므로 \"we cannot hold it for long\"은 '그 공간을 오래 잡아 둘 수 없다'는 뜻이다. 따라서 reserve(따로 잡아 두다)가 가장 가깝다. grip(손에 쥐다), contain(담다), conduct(회의 등을 열다)는 hold의 다른 뜻에서 나온 함정이다."
       }
      ],
      "id": "fm4-p7-06"
@@ -20994,7 +20994,7 @@
          "s": "The Sorrel Creek Growers Cooperative opened a new cold-storage warehouse on Tuesday"
         }
        ],
-       "exp": "협동조합이 새 저온 저장 창고를 열었다(opened a new cold-storage warehouse)는 소식이 기사의 중심이다. cold-storage warehouse → a new facility for storing farm products 로 바뀌었다. 낮은 가격은 창고가 필요했던 배경일 뿐이고, 이사 임명이나 식료품 체인 진출 이야기는 없다."
+       "exp": "협동조합이 새 저온 저장 창고를 열었다(opened a new cold-storage warehouse)는 소식이 기사의 중심이다. cold-storage warehouse → a new facility for storing farm products로 바뀌었다. 낮은 가격은 창고가 필요했던 배경일 뿐이고, 이사 임명이나 식료품 체인 진출 이야기는 없다."
       },
       {
        "q": "According to Ms. Castellanos, what is one benefit of the warehouse?",
@@ -21014,7 +21014,7 @@
          "s": "our growers can wait and sell when prices are better"
         }
        ],
-       "exp": "카스테야노스 씨는 재배자들이 기다렸다가 가격이 더 좋을 때 팔 수 있다(wait and sell when prices are better)고 했다. sell when prices are better → choose a better time to sell 로 바뀌었다. 고용 확대, 수수료 인하, 조기 수확은 언급되지 않았다."
+       "exp": "카스테야노스 씨는 재배자들이 기다렸다가 가격이 더 좋을 때 팔 수 있다(wait and sell when prices are better)고 했다. sell when prices are better → choose a better time to sell로 바뀌었다. 고용 확대, 수수료 인하, 조기 수확은 언급되지 않았다."
       },
       {
        "q": "What is indicated about the warehouse?",
@@ -21034,7 +21034,7 @@
          "s": "The cooperative plans to rent any unused space to farms that are not members, beginning next spring."
         }
        ],
-       "exp": "내년 봄부터 남는 공간을 조합원이 아닌 농장에도 임대할 계획(rent any unused space to farms that are not members)이라고 했다. farms that are not members → nonmembers 로 바뀌었다. 비용은 조합원 출자금과 보조금으로 나눠 냈으므로 entirely 가 틀리고, 위치는 시 외곽(just outside Briarwood)이며, 사과 외에 감자와 양배추도 보관한다."
+       "exp": "내년 봄부터 남는 공간을 조합원이 아닌 농장에도 임대할 계획(rent any unused space to farms that are not members)이라고 했다. farms that are not members → nonmembers로 바뀌었다. 비용은 조합원 출자금과 보조금으로 나눠 냈으므로 entirely가 틀리고, 위치는 시 외곽(just outside Briarwood)이며, 사과 외에 감자와 양배추도 보관한다."
       }
      ],
      "id": "fm4-p7-07"
@@ -21092,7 +21092,7 @@
          "s": "I would like to outline what will happen and what we will need from your team"
         }
        ],
-       "exp": "고객 기록을 새 클라우드 플랫폼으로 옮기는 일정과 준비 사항을 설명하겠다(outline what will happen and what we will need)고 했다. move ... records to our cloud platform → a planned system change 로 정리된다. 보험 상품 제안이나 기록 오류 보고가 아니며, 부서장에게는 교육이 아니라 직원 명단을 요청한다."
+       "exp": "고객 기록을 새 클라우드 플랫폼으로 옮기는 일정과 준비 사항을 설명하겠다(outline what will happen and what we will need)고 했다. move ... records to our cloud platform → a planned system change로 정리된다. 보험 상품 제안이나 기록 오류 보고가 아니며, 부서장에게는 교육이 아니라 직원 명단을 요청한다."
       },
       {
        "q": "What will Morrowfield employees be unable to do after 6:00 P.M. on May 29?",
@@ -21112,7 +21112,7 @@
          "s": "your staff will be able to view records but not edit them"
         }
        ],
-       "exp": "읽기 전용 모드로 바뀌면 직원들은 기록을 볼 수는 있지만 수정할 수는 없다(view records but not edit them)고 했다. not edit → unable to make changes 로 바뀌었다. 기록 조회(Look up client information)는 가능하다고 했으므로 반대이고, 컴퓨터 로그인이나 지원팀 연락이 막힌다는 말은 없다."
+       "exp": "읽기 전용 모드로 바뀌면 직원들은 기록을 볼 수는 있지만 수정할 수는 없다(view records but not edit them)고 했다. not edit → unable to make changes로 바뀌었다. 기록 조회(Look up client information)는 가능하다고 했으므로 반대이고, 컴퓨터 로그인이나 지원팀 연락이 막힌다는 말은 없다."
       },
       {
        "q": "What are department heads asked to provide?",
@@ -21132,7 +21132,7 @@
          "s": "please ask each department head to send us a list of the employees who will need access to the new platform"
         }
        ],
-       "exp": "부서장들은 새 플랫폼 접근 권한이 필요한 직원 명단을 보내야 한다(a list of the employees who will need access)고 했다. need access → need accounts 로 바뀌었다. 임시 비밀번호는 루마코어가 직원들에게 보내는 것이고, 플랫폼 의견이나 고객 계약서는 요청하지 않았다."
+       "exp": "부서장들은 새 플랫폼 접근 권한이 필요한 직원 명단을 보내야 한다(a list of the employees who will need access)고 했다. need access → need accounts로 바뀌었다. 임시 비밀번호는 루마코어가 직원들에게 보내는 것이고, 플랫폼 의견이나 고객 계약서는 요청하지 않았다."
       },
       {
        "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"Any updates needed during this time should be written down and entered once the new system is running.\"",
@@ -21152,7 +21152,7 @@
          "s": "your staff will be able to view records but not edit them"
         }
        ],
-       "exp": "삽입 문장의 during this time 은 기록을 수정할 수 없는 기간을 가리키고, '수정 사항은 적어 두었다가 나중에 입력하라'는 대처 방법을 알려 준다. [2] 바로 앞에서 직원들이 기록을 볼 수만 있고 수정할 수 없다(not edit them)고 했으므로 자연스럽게 이어진다. [1], [3], [4] 앞에는 수정이 막히는 기간에 대한 언급이 없다."
+       "exp": "삽입 문장의 during this time은 기록을 수정할 수 없는 기간을 가리키고, '수정 사항은 적어 두었다가 나중에 입력하라'는 대처 방법을 알려 준다. [2] 바로 앞에서 직원들이 기록을 볼 수만 있고 수정할 수 없다(not edit them)고 했으므로 자연스럽게 이어진다. [1], [3], [4] 앞에는 수정이 막히는 기간에 대한 언급이 없다."
       }
      ],
      "id": "fm4-p7-08"
@@ -21277,7 +21277,7 @@
          "s": "I'll send them our three-course options"
         }
        ],
-       "exp": "하우그 씨는 \"I'll send them our three-course options(3코스 메뉴 구성을 보내겠다)\"고 했다. three-course options → Menu choices 로 바뀌었다. 하우그 씨가 협회에 확인할 것은 테라스 이용 여부이지 길 안내가 아니며, 청구서나 좌석 배치도는 언급되지 않았다."
+       "exp": "하우그 씨는 \"I'll send them our three-course options(3코스 메뉴 구성을 보내겠다)\"고 했다. three-course options → Menu choices로 바뀌었다. 하우그 씨가 협회에 확인할 것은 테라스 이용 여부이지 길 안내가 아니며, 청구서나 좌석 배치도는 언급되지 않았다."
       }
      ],
      "id": "fm4-p7-09"
@@ -21350,7 +21350,7 @@
          "s": "free outdoor screenings every Friday in July"
         }
        ],
-       "exp": "7월 매주 금요일(every Friday)에 상영한다고 했으므로 일주일에 한 번 열린다. every Friday → once a week 로 바뀌었다. 상영은 무료이고, 시작 시각은 오후 8시 45분쯤이며, 간식을 판매한다고 했으므로 음식 금지도 아니다."
+       "exp": "7월 매주 금요일(every Friday)에 상영한다고 했으므로 일주일에 한 번 열린다. every Friday → once a week로 바뀌었다. 상영은 무료이고, 시작 시각은 오후 8시 45분쯤이며, 간식을 판매한다고 했으므로 음식 금지도 아니다."
       },
       {
        "q": "What will happen if it rains?",
@@ -21584,7 +21584,7 @@
          "s": "Compare our plans below"
         }
        ],
-       "exp": "현재 Standard 의 바로 위 요금제로 핫초코가 추가되는 것은 표에서 Premium(월 229달러, 1,000잔)이고, 이는 5월에 잘못 청구된 금액 229달러와 같다. 콜드브루와 1,800잔은 Enterprise 의 내용이라 (B)·(D)는 틀리고, 12개월 계약은 신규 고객의 첫 달 무료 조건일 뿐 필수가 아니다."
+       "exp": "현재 Standard의 바로 위 요금제로 핫초코가 추가되는 것은 표에서 Premium(월 229달러, 1,000잔)이고, 이는 5월에 잘못 청구된 금액 229달러와 같다. 콜드브루와 1,800잔은 Enterprise의 내용이라 (B)·(D)는 틀리고, 12개월 계약은 신규 고객의 첫 달 무료 조건일 뿐 필수가 아니다."
       },
       {
        "q": "According to the e-mail, why does Ms. Pritchett want to change plans?",
@@ -21692,7 +21692,7 @@
          "s": "I would also be interested in carrying your next flavor once it is released"
         }
        ],
-       "exp": "식료품점 구매 담당자가 'carrying your next flavor'라고 한 것은 그 제품을 매장에 들여 '판매하다'라는 뜻이므로 selling 이 맞다. lifting(들어 올리다)·bringing(가져오다)은 carry 의 물리적 의미에 이끌린 함정이다."
+       "exp": "식료품점 구매 담당자가 'carrying your next flavor'라고 한 것은 그 제품을 매장에 들여 '판매하다'라는 뜻이므로 selling이 맞다. lifting(들어 올리다)·bringing(가져오다)은 carry의 물리적 의미에 이끌린 함정이다."
       },
       {
        "q": "Which flavor does Ms. Ondrake want to sell first?",
@@ -21979,7 +21979,7 @@
          "s": "To help our customers adjust"
         }
        ],
-       "exp": "'To help our customers adjust'는 가격 인상이라는 변화에 고객이 '적응하도록' 돕는다는 뜻이므로 adapt 가 맞다. adjust 의 '조정하다'에 이끌려 repair(수리하다)나 arrange(배열하다)를 고르지 않도록 한다."
+       "exp": "'To help our customers adjust'는 가격 인상이라는 변화에 고객이 '적응하도록' 돕는다는 뜻이므로 adapt가 맞다. adjust의 '조정하다'에 이끌려 repair(수리하다)나 arrange(배열하다)를 고르지 않도록 한다."
       }
      ],
      "id": "fm4-p7-13"
@@ -22184,7 +22184,7 @@
          "s": "the way it captured the energy of the vendors and shoppers"
         }
        ],
-       "exp": "'captured the energy of the vendors and shoppers'는 사진이 사람들의 활기를 '잘 담아 전달했다'는 뜻이므로 conveyed 가 맞다. seized(붙잡다)·won(획득하다)은 capture 의 '포획하다' 뜻에 이끌린 함정이다."
+       "exp": "'captured the energy of the vendors and shoppers'는 사진이 사람들의 활기를 '잘 담아 전달했다'는 뜻이므로 conveyed가 맞다. seized(붙잡다)·won(획득하다)은 capture의 '포획하다' 뜻에 이끌린 함정이다."
       }
      ],
      "id": "fm4-p7-14"
@@ -22432,7 +22432,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 1,
-     "exp": "Who 에 '시장님'이라는 인물로 답한 것이 정답이다. 'A bright red ribbon.'은 ribbon 을 반복했고, 'It opens at nine.'은 opening 에서 연상한 시간(When) 응답이다.",
+     "exp": "Who에 '시장님'이라는 인물로 답한 것이 정답이다. 'A bright red ribbon.'은 ribbon을 반복했고, 'It opens at nine.'은 opening 에서 연상한 시간(When) 응답이다.",
      "id": "fm5-p2-01"
     },
     {
@@ -22451,7 +22451,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 3,
-     "exp": "'그건 아바라 씨 일 아니냐'고 되물어 담당자를 알려 준 것이 정답이다. 'Yes, it's on the third floor.'는 의문사 질문에 Yes 로 답하며 floor 를 반복했고, 'Sign here, please.'는 sign 을 반복한 함정이다.",
+     "exp": "'그건 아바라 씨 일 아니냐'고 되물어 담당자를 알려 준 것이 정답이다. 'Yes, it's on the third floor.'는 의문사 질문에 Yes로 답하며 floor를 반복했고, 'Sign here, please.'는 sign을 반복한 함정이다.",
      "id": "fm5-p2-02"
     },
     {
@@ -22470,7 +22470,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 2,
-     "exp": "'의자가 모자랐다'고 해 사람이 많이 왔다는 뜻을 돌려 전한 것이 정답이다. 'It's a mystery novel.'은 book 에서 연상한 내용이고, 'Yes, I attended.'는 의문사 질문에 Yes 로 답하며 attendance 를 attended 로 바꾼 함정이다.",
+     "exp": "'의자가 모자랐다'고 해 사람이 많이 왔다는 뜻을 돌려 전한 것이 정답이다. 'It's a mystery novel.'은 book 에서 연상한 내용이고, 'Yes, I attended.'는 의문사 질문에 Yes로 답하며 attendance를 attended로 바꾼 함정이다.",
      "id": "fm5-p2-03"
     },
     {
@@ -22508,7 +22508,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 1,
-     "exp": "When 에 '오후 2시'라는 시각으로 답한 것이 정답이다. 'Fresh vegetables and fruit.'는 farmers market 에서 연상한 품목이고, 'It's close to the park.'는 close(닫다)를 '가까운'이라는 다른 뜻으로 쓴 함정이다.",
+     "exp": "When에 '오후 2시'라는 시각으로 답한 것이 정답이다. 'Fresh vegetables and fruit.'는 farmers market 에서 연상한 품목이고, 'It's close to the park.'는 close(닫다)를 '가까운'이라는 다른 뜻으로 쓴 함정이다.",
      "id": "fm5-p2-05"
     },
     {
@@ -22527,7 +22527,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 3,
-     "exp": "날짜 대신 '재고가 없어 입고 대기 중(on back order)'이라 아직 알 수 없다고 돌려 답한 것이 정답이다. 'I can lift about twenty kilos.'는 forklift 의 lift 를 이용한 함정이고, 'At the warehouse in Riverton.'은 장소(Where) 응답이다.",
+     "exp": "날짜 대신 '재고가 없어 입고 대기 중(on back order)'이라 아직 알 수 없다고 돌려 답한 것이 정답이다. 'I can lift about twenty kilos.'는 forklift의 lift를 이용한 함정이고, 'At the warehouse in Riverton.'은 장소(Where) 응답이다.",
      "id": "fm5-p2-06"
     },
     {
@@ -22546,7 +22546,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 2,
-     "exp": "학원 같은 장소 대신 '브라질에서 3년 살았다'고 해 그곳에서 익혔다는 뜻으로 답했다. 'Yes, fairly well.'은 의문사 질문에 Yes 로 답한 함정이고, 'Since I was a teenager.'는 시점(When)에 대한 응답이다.",
+     "exp": "학원 같은 장소 대신 '브라질에서 3년 살았다'고 해 그곳에서 익혔다는 뜻으로 답했다. 'Yes, fairly well.'은 의문사 질문에 Yes로 답한 함정이고, 'Since I was a teenager.'는 시점(When)에 대한 응답이다.",
      "id": "fm5-p2-07"
     },
     {
@@ -22565,7 +22565,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "Why 에 '타이어가 펑크 났다'는 이유로 답한 것이 정답이다. 'Early tomorrow morning.'은 early 를 반복한 시간(When) 응답이고, 'It's a white van.'은 van 을 반복했을 뿐이다.",
+     "exp": "Why에 '타이어가 펑크 났다'는 이유로 답한 것이 정답이다. 'Early tomorrow morning.'은 early를 반복한 시간(When) 응답이고, 'It's a white van.'은 van을 반복했을 뿐이다.",
      "id": "fm5-p2-08"
     },
     {
@@ -22584,7 +22584,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 3,
-     "exp": "'일기 예보 봤냐'고 되물어 날씨가 나빠서라는 이유를 돌려 전한 것이 정답이다. 'Up on Mount Ellery.'는 hiking 에서 연상한 장소(Where) 응답이고, 'Somebody called you earlier.'는 called off 의 call 을 '전화하다'로 반복한 함정이다.",
+     "exp": "'일기 예보 봤냐'고 되물어 날씨가 나빠서라는 이유를 돌려 전한 것이 정답이다. 'Up on Mount Ellery.'는 hiking 에서 연상한 장소(Where) 응답이고, 'Somebody called you earlier.'는 called off의 call을 '전화하다'로 반복한 함정이다.",
      "id": "fm5-p2-09"
     },
     {
@@ -22603,7 +22603,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "How do you like ~? 로 소감을 묻자 '생각보다 시끄럽다'고 답한 것이 정답이다. 'It opens at eight.'은 open 을 '문을 열다'로 반복한 함정이고, 'By bus, usually.'는 How 를 교통수단으로 오해한 응답이다.",
+     "exp": "How do you like ~? 로 소감을 묻자 '생각보다 시끄럽다'고 답한 것이 정답이다. 'It opens at eight.'은 open을 '문을 열다'로 반복한 함정이고, 'By bus, usually.'는 How를 교통수단으로 오해한 응답이다.",
      "id": "fm5-p2-10"
     },
     {
@@ -22622,7 +22622,7 @@
      "a": 0,
      "type": "Yes/No",
      "lv": 1,
-     "exp": "Yes 로 답하고 비밀번호를 알려 준 것이 정답이다. 'On the right side.'는 side 를 반복한 위치 응답이고, 'The dress code is casual.'은 code 를 '규정'이라는 다른 뜻으로 쓴 함정이다.",
+     "exp": "Yes로 답하고 비밀번호를 알려 준 것이 정답이다. 'On the right side.'는 side를 반복한 위치 응답이고, 'The dress code is casual.'은 code를 '규정'이라는 다른 뜻으로 쓴 함정이다.",
      "id": "fm5-p2-11"
     },
     {
@@ -22641,7 +22641,7 @@
      "a": 1,
      "type": "Yes/No",
      "lv": 2,
-     "exp": "'홈페이지에 공고가 있다'고 해 채용 중이며 확인할 곳을 알려 준 것이 정답이다. 'I'll tell her you stopped by.'는 teller 와 발음이 비슷한 tell 을, 'A branch fell in the storm.'은 branch 를 '나뭇가지'라는 다른 뜻으로 쓴 함정이다.",
+     "exp": "'홈페이지에 공고가 있다'고 해 채용 중이며 확인할 곳을 알려 준 것이 정답이다. 'I'll tell her you stopped by.'는 teller와 발음이 비슷한 tell을, 'A branch fell in the storm.'은 branch를 '나뭇가지'라는 다른 뜻으로 쓴 함정이다.",
      "id": "fm5-p2-12"
     },
     {
@@ -22660,7 +22660,7 @@
      "a": 1,
      "type": "Yes/No",
      "lv": 3,
-     "exp": "'계약이 내년 3월까지'라고 해 올해는 갱신할 필요가 없다는 뜻을 돌려 전한 것이 정답이다. 'Yes, my driver's license.'는 license 를 '면허'로 바꾼 함정이고, 'It's newer than mine.'은 renewed 와 비슷한 newer 를 쓴 함정이다.",
+     "exp": "'계약이 내년 3월까지'라고 해 올해는 갱신할 필요가 없다는 뜻을 돌려 전한 것이 정답이다. 'Yes, my driver's license.'는 license를 '면허'로 바꾼 함정이고, 'It's newer than mine.'은 renewed와 비슷한 newer를 쓴 함정이다.",
      "id": "fm5-p2-13"
     },
     {
@@ -22679,7 +22679,7 @@
      "a": 0,
      "type": "부정·부가",
      "lv": 2,
-     "exp": "부가의문문에 Yes 로 답하고 '하나 씨와 함께'라고 덧붙인 것이 정답이다. 'Post it on the bulletin board.'는 poster 에서 연상한 게시 지시이고, 'A signed poster.'는 poster 를 반복하고 designed 와 소리가 비슷한 signed 를 쓴 함정이다.",
+     "exp": "부가의문문에 Yes로 답하고 '하나 씨와 함께'라고 덧붙인 것이 정답이다. 'Post it on the bulletin board.'는 poster 에서 연상한 게시 지시이고, 'A signed poster.'는 poster를 반복하고 designed와 소리가 비슷한 signed를 쓴 함정이다.",
      "id": "fm5-p2-14"
     },
     {
@@ -22698,7 +22698,7 @@
      "a": 2,
      "type": "부정·부가",
      "lv": 2,
-     "exp": "'오늘 오후 전기 기사가 온다'고 해 아직 안 고쳤다는 뜻을 돌려 전한 것이 정답이다. 'Turn left at the end of the hall.'은 hallway 에서 연상한 길 안내이고, 'Yes, it's very light.'는 light 를 '가벼운'이라는 다른 뜻으로 쓴 함정이다.",
+     "exp": "'오늘 오후 전기 기사가 온다'고 해 아직 안 고쳤다는 뜻을 돌려 전한 것이 정답이다. 'Turn left at the end of the hall.'은 hallway 에서 연상한 길 안내이고, 'Yes, it's very light.'는 light를 '가벼운'이라는 다른 뜻으로 쓴 함정이다.",
      "id": "fm5-p2-15"
     },
     {
@@ -22717,7 +22717,7 @@
      "a": 2,
      "type": "부정·부가",
      "lv": 3,
-     "exp": "'거래가 보류됐다'고 해 발송되지 않았다는 뜻을 돌려 전한 것이 정답이다. 'I'd like to order the soup.'는 order 와 Foods 에서 연상한 식당 주문이고, 'Monday works for me.'는 Monday 를 반복한 일정 응답이다.",
+     "exp": "'거래가 보류됐다'고 해 발송되지 않았다는 뜻을 돌려 전한 것이 정답이다. 'I'd like to order the soup.'는 order와 Foods 에서 연상한 식당 주문이고, 'Monday works for me.'는 Monday를 반복한 일정 응답이다.",
      "id": "fm5-p2-16"
     },
     {
@@ -22736,7 +22736,7 @@
      "a": 1,
      "type": "선택",
      "lv": 1,
-     "exp": "둘 중 이메일을 고른 것이 정답이다. 'Yes, I'd like it.'은 선택 의문문에 Yes 로 답해 어느 쪽인지 알 수 없고, 'It's fifty dollars.'는 receipt 에서 연상한 금액이다.",
+     "exp": "둘 중 이메일을 고른 것이 정답이다. 'Yes, I'd like it.'은 선택 의문문에 Yes로 답해 어느 쪽인지 알 수 없고, 'It's fifty dollars.'는 receipt 에서 연상한 금액이다.",
      "id": "fm5-p2-17"
     },
     {
@@ -22755,7 +22755,7 @@
      "a": 0,
      "type": "선택",
      "lv": 2,
-     "exp": "'고객 대부분이 해외에 있다'고 해 온라인으로 하자는 뜻을 돌려 전한 것이 정답이다. 'A new product line.'은 product 를 반복했고, 'Yes, I'm online now.'는 선택 의문문에 Yes 로 답하며 online 을 반복한 함정이다.",
+     "exp": "'고객 대부분이 해외에 있다'고 해 온라인으로 하자는 뜻을 돌려 전한 것이 정답이다. 'A new product line.'은 product를 반복했고, 'Yes, I'm online now.'는 선택 의문문에 Yes로 답하며 online을 반복한 함정이다.",
      "id": "fm5-p2-18"
     },
     {
@@ -22774,7 +22774,7 @@
      "a": 0,
      "type": "선택",
      "lv": 3,
-     "exp": "둘 다 고르지 않고 '내가 검토할 때까지 그냥 두라'는 제3의 답을 한 것이 정답이다. 'I'd like an invoice, please.'는 invoice 를 반복했고, 'He filed a complaint last week.'는 file 을 '(민원을) 제기하다'라는 다른 뜻으로 쓴 함정이다.",
+     "exp": "둘 다 고르지 않고 '내가 검토할 때까지 그냥 두라'는 제3의 답을 한 것이 정답이다. 'I'd like an invoice, please.'는 invoice를 반복했고, 'He filed a complaint last week.'는 file을 '(민원을) 제기하다'라는 다른 뜻으로 쓴 함정이다.",
      "id": "fm5-p2-19"
     },
     {
@@ -22793,7 +22793,7 @@
      "a": 2,
      "type": "평서문",
      "lv": 1,
-     "exp": "스탠딩 책상을 살까 한다는 말에 '나도 써 보니 아주 좋다'고 경험을 나눈 것이 정답이다. 'The front desk is downstairs.'는 desk 를, 'The guests are still standing.'은 standing 을 반복한 함정이다.",
+     "exp": "스탠딩 책상을 살까 한다는 말에 '나도 써 보니 아주 좋다'고 경험을 나눈 것이 정답이다. 'The front desk is downstairs.'는 desk를, 'The guests are still standing.'은 standing을 반복한 함정이다.",
      "id": "fm5-p2-20"
     },
     {
@@ -22812,7 +22812,7 @@
      "a": 1,
      "type": "평서문",
      "lv": 2,
-     "exp": "주차장이 닫는다는 소식에 '그럼 기차를 타야겠다'고 대응책을 말한 것이 정답이다. 'The store closes at six.'는 closing 을 closes 로 반복한 엉뚱한 응답이고, 'He repaired it himself.'는 repairs 를 반복하며 주체·시제를 바꾼 함정이다.",
+     "exp": "주차장이 닫는다는 소식에 '그럼 기차를 타야겠다'고 대응책을 말한 것이 정답이다. 'The store closes at six.'는 closing을 closes로 반복한 엉뚱한 응답이고, 'He repaired it himself.'는 repairs를 반복하며 주체·시제를 바꾼 함정이다.",
      "id": "fm5-p2-21"
     },
     {
@@ -22831,7 +22831,7 @@
      "a": 1,
      "type": "평서문",
      "lv": 3,
-     "exp": "컵이 부족할 것 같다는 걱정에 '창고에 한 상자 더 있다'며 문제없다고 돌려 답한 것이 정답이다. 'It tasted a little sweet.'는 tasting 을 tasted 로 반복했고, 'I ordered the chicken.'은 ordered 를 식당 주문으로 바꾼 함정이다.",
+     "exp": "컵이 부족할 것 같다는 걱정에 '창고에 한 상자 더 있다'며 문제없다고 돌려 답한 것이 정답이다. 'It tasted a little sweet.'는 tasting을 tasted로 반복했고, 'I ordered the chicken.'은 ordered를 식당 주문으로 바꾼 함정이다.",
      "id": "fm5-p2-22"
     },
     {
@@ -22850,7 +22850,7 @@
      "a": 2,
      "type": "간접·요청",
      "lv": 1,
-     "exp": "엘리베이터를 잡아 달라는 요청을 수락하고 몇 층에 가는지 물은 것이 정답이다. 'She holds the company record.'는 hold 를 '(기록을) 보유하다'라는 다른 뜻으로 쓴 함정이고, 'About ten passengers.'는 elevator 에서 연상한 정원이다.",
+     "exp": "엘리베이터를 잡아 달라는 요청을 수락하고 몇 층에 가는지 물은 것이 정답이다. 'She holds the company record.'는 hold를 '(기록을) 보유하다'라는 다른 뜻으로 쓴 함정이고, 'About ten passengers.'는 elevator 에서 연상한 정원이다.",
      "id": "fm5-p2-23"
     },
     {
@@ -22869,7 +22869,7 @@
      "a": 0,
      "type": "간접·요청",
      "lv": 2,
-     "exp": "제안에 '켄지가 이미 돈을 걷고 있다'고 해 이미 그렇게 진행 중이라는 뜻을 돌려 전했다. 'I split my time between offices.'는 split 을 반복했고, 'Yes, it's gift-wrapped.'는 gift 를 반복한 함정이다.",
+     "exp": "제안에 '켄지가 이미 돈을 걷고 있다'고 해 이미 그렇게 진행 중이라는 뜻을 돌려 전했다. 'I split my time between offices.'는 split을 반복했고, 'Yes, it's gift-wrapped.'는 gift를 반복한 함정이다.",
      "id": "fm5-p2-24"
     },
     {
@@ -22888,7 +22888,7 @@
      "a": 2,
      "type": "간접·요청",
      "lv": 3,
-     "exp": "직접 알려 주는 대신 '옆면에 설명서가 붙어 있다'며 볼 곳을 알려 준 돌려 말하기 정답이다. 'I'll make some copies.'와 'It's made in Germany.'는 label maker 의 make 를 반복했을 뿐 사용법 요청과 무관하다.",
+     "exp": "직접 알려 주는 대신 '옆면에 설명서가 붙어 있다'며 볼 곳을 알려 준 돌려 말하기 정답이다. 'I'll make some copies.'와 'It's made in Germany.'는 label maker의 make를 반복했을 뿐 사용법 요청과 무관하다.",
      "id": "fm5-p2-25"
     }
    ],
@@ -23017,7 +23017,7 @@
        "ev": [
         3
        ],
-       "exp": "지금이 정오이고 2시 30분까지 도착해야 하므로 약 2시간 30분 안에 배달돼야 한다. 남자는 '제시간에 도착하는 가장 싼 서비스(the cheapest service that gets them there in time)'를 원하므로, 4시간이 걸리는 Economy($14)는 안 되고 2시간 이내인 Standard($22)가 맞다. Express·Direct 도 시간은 맞지만 더 비싸다."
+       "exp": "지금이 정오이고 2시 30분까지 도착해야 하므로 약 2시간 30분 안에 배달돼야 한다. 남자는 '제시간에 도착하는 가장 싼 서비스(the cheapest service that gets them there in time)'를 원하므로, 4시간이 걸리는 Economy($14)는 안 되고 2시간 이내인 Standard($22)가 맞다. Express·Direct도 시간은 맞지만 더 비싸다."
       }
      ],
      "id": "fm5-p3-01"
@@ -23560,7 +23560,7 @@
         4,
         5
        ],
-       "exp": "테라스는 옆 건물 때문에 햇빛이 거의 들지 않고(그늘), 식물은 1미터를 넘으면 안 된다. 표에서 Shade 이면서 1미터 미만인 것은 Dwarf Holly(0.8 m)뿐이다. Mountain Laurel 은 그늘에 맞지만 2.0 m 로 너무 크고, Lavender 는 작지만 햇빛이 필요하다."
+       "exp": "테라스는 옆 건물 때문에 햇빛이 거의 들지 않고(그늘), 식물은 1미터를 넘으면 안 된다. 표에서 Shade 이면서 1미터 미만인 것은 Dwarf Holly(0.8 m)뿐이다. Mountain Laurel은 그늘에 맞지만 2.0 m로 너무 크고, Lavender는 작지만 햇빛이 필요하다."
       },
       {
        "q": "What does the man say the store will do at no charge?",
@@ -26043,7 +26043,7 @@
          "s": "the fourth graders from Elmcrest Elementary just walked in. Their museum tour isn't supposed to start until 10:00"
         }
        ],
-       "exp": "10시에 시작할 투어의 학생들이 9시 20분에 이미 도착했다(just walked in ... isn't supposed to start until 10:00)고 했다. 이를 arrived earlier than planned 로 바꾼 보기가 정답이다. 버스는 고장이 아니라 빨리 왔고(made good time), 공룡관은 청소 중일 뿐 폐쇄된 것이 아니다."
+       "exp": "10시에 시작할 투어의 학생들이 9시 20분에 이미 도착했다(just walked in ... isn't supposed to start until 10:00)고 했다. 이를 arrived earlier than planned로 바꾼 보기가 정답이다. 버스는 고장이 아니라 빨리 왔고(made good time), 공룡관은 청소 중일 뿐 폐쇄된 것이 아니다."
       },
       {
        "q": "At 9:24 A.M., what does Ms. Nwosu most likely mean when she writes, \"Works for me\"?",
@@ -26113,7 +26113,7 @@
          "s": "lunch in our private event room"
         }
        ],
-       "exp": "팀 데이에는 전용 행사실에서의 점심 식사(lunch in our private event room)가 포함된다고 했다. lunch → a meal 로 바뀌었다. 경험은 필요 없고(No experience is necessary), 평일에만 가능하며, 신발을 포함한 장비를 모두 제공한다."
+       "exp": "팀 데이에는 전용 행사실에서의 점심 식사(lunch in our private event room)가 포함된다고 했다. lunch → a meal로 바뀌었다. 경험은 필요 없고(No experience is necessary), 평일에만 가능하며, 신발을 포함한 장비를 모두 제공한다."
       },
       {
        "q": "What will groups that book before March 31 receive?",
@@ -26133,7 +26133,7 @@
          "s": "Book before March 31, and every participant will receive a free one-month gym membership."
         }
        ],
-       "exp": "3월 31일 이전에 예약하면 참가자 전원이 한 달 무료 이용권(a free one-month gym membership)을 받는다고 했다. 이를 Free gym memberships 로 표현한 보기가 정답이다. 점심 할인, 개인 강사, 추가 등반 시간은 언급되지 않았다."
+       "exp": "3월 31일 이전에 예약하면 참가자 전원이 한 달 무료 이용권(a free one-month gym membership)을 받는다고 했다. 이를 Free gym memberships로 표현한 보기가 정답이다. 점심 할인, 개인 강사, 추가 등반 시간은 언급되지 않았다."
       }
      ],
      "id": "fm5-p7-02"
@@ -26178,7 +26178,7 @@
          "s": "will replace the electric meters at all homes and businesses in the Westvale district with new digital meters"
         }
        ],
-       "exp": "웨스트베일 지역의 전기 계량기를 새 디지털 계량기로 교체한다(replace the electric meters)는 공지다. electric meters → equipment 로 바뀌었다. 새 계량기는 무료라고 했으므로 요금 인상이 아니고, 설치 중 전기가 끊긴다는 말은 정전 신고 요청이 아니며, 기술자 채용 이야기도 없다."
+       "exp": "웨스트베일 지역의 전기 계량기를 새 디지털 계량기로 교체한다(replace the electric meters)는 공지다. electric meters → equipment로 바뀌었다. 새 계량기는 무료라고 했으므로 요금 인상이 아니고, 설치 중 전기가 끊긴다는 말은 정전 신고 요청이 아니며, 기술자 채용 이야기도 없다."
       },
       {
        "q": "What is suggested about customers whose meters are outside?",
@@ -26259,7 +26259,7 @@
          "s": "our housekeeping staff found a black leather portfolio in the desk drawer of Room 1108"
         }
        ],
-       "exp": "객실 관리 직원이 프리에토 씨가 묵은 방에서 서류철을 발견했고(found a black leather portfolio) 그것을 돌려주겠다는 내용이다. found a portfolio → a found item 으로 바뀌었다. 파손 배상이나 예약 확인이 아니며, 아직 배송 전이므로 배송 지연 사과도 아니다."
+       "exp": "객실 관리 직원이 프리에토 씨가 묵은 방에서 서류철을 발견했고(found a black leather portfolio) 그것을 돌려주겠다는 내용이다. found a portfolio → a found item으로 바뀌었다. 파손 배상이나 예약 확인이 아니며, 아직 배송 전이므로 배송 지연 사과도 아니다."
       },
       {
        "q": "What is indicated about the shipping options?",
@@ -26279,7 +26279,7 @@
          "s": "We can send it by standard mail at no cost"
         }
        ],
-       "exp": "일반 우편은 무료(by standard mail at no cost)로 보낸다고 했다. at no cost → free of charge 로 바뀌었다. 특급 택배는 이틀 걸리며 일주일 가까이 걸리는 것은 일반 우편이고, 모든 배송이 유료인 것도 아니며, 국내 배송 제한은 언급되지 않았다."
+       "exp": "일반 우편은 무료(by standard mail at no cost)로 보낸다고 했다. at no cost → free of charge로 바뀌었다. 특급 택배는 이틀 걸리며 일주일 가까이 걸리는 것은 일반 우편이고, 모든 배송이 유료인 것도 아니며, 국내 배송 제한은 언급되지 않았다."
       },
       {
        "q": "In the e-mail, the word \"preferred\" in paragraph 3, line 1, is closest in meaning to",
@@ -26299,7 +26299,7 @@
          "s": "Please reply to this e-mail with your preferred option"
         }
        ],
-       "exp": "\"your preferred option\"은 '고객이 원하는(더 좋아하는) 방법'이라는 뜻이므로 favored(선호되는)가 가장 가깝다. preferred option → favored option. required(필수의)는 의미가 다르고, advanced, earlier 는 pre- 에서 연상되는 '앞선'이라는 뜻의 함정이다."
+       "exp": "\"your preferred option\"은 '고객이 원하는(더 좋아하는) 방법'이라는 뜻이므로 favored(선호되는)가 가장 가깝다. preferred option → favored option. required(필수의)는 의미가 다르고, advanced, earlier는 pre- 에서 연상되는 '앞선'이라는 뜻의 함정이다."
       }
      ],
      "id": "fm5-p7-04"
@@ -26394,7 +26394,7 @@
          "s": "A rush fee of 25 percent of the translation cost applies to any document requested with a delivery time of less than three business days."
         }
        ],
-       "exp": "3일 미만 납기를 요청한 문서에는 긴급 요금이 붙는다고 했고, 표에서 Delivery 가 Rush 인 것은 일본어 라벨 문구뿐이다. 실제로 500단어 x 0.12달러 = 60달러에 25퍼센트가 더해져 75달러가 청구되었다. 나머지 문서는 모두 Standard 로 단어당 0.12달러만 적용되었다."
+       "exp": "3일 미만 납기를 요청한 문서에는 긴급 요금이 붙는다고 했고, 표에서 Delivery가 Rush 인 것은 일본어 라벨 문구뿐이다. 실제로 500단어 x 0.12달러 = 60달러에 25퍼센트가 더해져 75달러가 청구되었다. 나머지 문서는 모두 Standard로 단어당 0.12달러만 적용되었다."
       },
       {
        "q": "What is indicated about the German user manual?",
@@ -26414,7 +26414,7 @@
          "s": "the German version of the user manual will now be delivered on April 24 because your team sent revised source text on April 15"
         }
        ],
-       "exp": "고객 팀이 4월 15일에 수정된 원문을 보냈기 때문에(because your team sent revised source text) 독일어판 납품이 4월 24일로 늦춰졌다. sent revised source text → changes from the client 로 바뀌었다. 독일어판은 별도 송장으로 청구되므로 이번 총액에 포함되지 않고, 긴급 요금이나 번역 순서는 언급되지 않았다."
+       "exp": "고객 팀이 4월 15일에 수정된 원문을 보냈기 때문에(because your team sent revised source text) 독일어판 납품이 4월 24일로 늦춰졌다. sent revised source text → changes from the client로 바뀌었다. 독일어판은 별도 송장으로 청구되므로 이번 총액에 포함되지 않고, 긴급 요금이나 번역 순서는 언급되지 않았다."
       },
       {
        "q": "What is Mr. Klemm asked to do?",
@@ -26434,7 +26434,7 @@
          "s": "Please include the invoice number with your payment."
         }
        ],
-       "exp": "지불할 때 송장 번호를 함께 기재해 달라(include the invoice number with your payment)고 했다. invoice number → a reference number 로 바뀌었다. 수정 원문은 이미 4월 15일에 보냈고, 지불 기한은 2주가 아니라 30일이며, 독일어판 승인 요청은 없다."
+       "exp": "지불할 때 송장 번호를 함께 기재해 달라(include the invoice number with your payment)고 했다. invoice number → a reference number로 바뀌었다. 수정 원문은 이미 4월 15일에 보냈고, 지불 기한은 2주가 아니라 30일이며, 독일어판 승인 요청은 없다."
       }
      ],
      "id": "fm5-p7-05"
@@ -26501,7 +26501,7 @@
          "s": "they were concerned about increased traffic on Harbor Road"
         }
        ],
-       "exp": "반대한 두 의원은 하버 로의 교통량 증가를 우려했다(concerned about increased traffic)고 했다. were concerned about → were worried about 으로 바뀌었다. 비용 650만 달러는 언급되지만 반대 이유가 아니고, 산책로 크기나 공사 일정에 대한 이견은 없다."
+       "exp": "반대한 두 의원은 하버 로의 교통량 증가를 우려했다(concerned about increased traffic)고 했다. were concerned about → were worried about으로 바뀌었다. 비용 650만 달러는 언급되지만 반대 이유가 아니고, 산책로 크기나 공사 일정에 대한 이견은 없다."
       },
       {
        "q": "What is indicated about the construction?",
@@ -26521,7 +26521,7 @@
          "s": "Construction is expected to begin in October, after the busy summer season, and to be completed within eighteen months."
         }
        ],
-       "exp": "공사는 18개월 안에 완료될 예정(completed within eighteen months)이라고 했다. eighteen months → about a year and a half 로 바뀌었다. 공사는 여름이 끝난 10월에 시작하므로 여름 전도 아니고 이미 시작된 것도 아니며, 하버 로 폐쇄는 언급되지 않았다."
+       "exp": "공사는 18개월 안에 완료될 예정(completed within eighteen months)이라고 했다. eighteen months → about a year and a half로 바뀌었다. 공사는 여름이 끝난 10월에 시작하므로 여름 전도 아니고 이미 시작된 것도 아니며, 하버 로 폐쇄는 언급되지 않았다."
       }
      ],
      "id": "fm5-p7-06"
@@ -26614,7 +26614,7 @@
          "s": "The Registrar's Office, on the first floor, will remain open in its current location throughout the renovation."
         }
        ],
-       "exp": "학적과는 개조 기간 내내 현재 위치에서 운영된다(remain open in its current location)고 했다. remain in its current location → will not be relocated 로 바뀌었다. 학적과는 1층에 있고, 표의 이전 목록에도 없으며, 내선 번호는 어느 사무실도 바뀌지 않는다."
+       "exp": "학적과는 개조 기간 내내 현재 위치에서 운영된다(remain open in its current location)고 했다. remain in its current location → will not be relocated로 바뀌었다. 학적과는 1층에 있고, 표의 이전 목록에도 없으며, 내선 번호는 어느 사무실도 바뀌지 않는다."
       },
       {
        "q": "Where would a student most likely go in July to get advice about finding a job?",
@@ -26779,7 +26779,7 @@
          "s": "The sample jackets for tomorrow's catalog photo shoot are stuck at their distribution center in Ellison and won't arrive until Thursday afternoon."
         }
        ],
-       "exp": "내일 촬영에 쓸 견본 재킷이 목요일 오후에야 도착한다(won't arrive until Thursday afternoon)고 했다. 이를 Some products will not arrive in time 으로 바꾼 보기가 정답이다. 사진작가는 예약을 취소하지 않았고, 물류 센터는 문을 닫은 것이 아니라 물건이 그곳에 묶여 있을 뿐이다."
+       "exp": "내일 촬영에 쓸 견본 재킷이 목요일 오후에야 도착한다(won't arrive until Thursday afternoon)고 했다. 이를 Some products will not arrive in time으로 바꾼 보기가 정답이다. 사진작가는 예약을 취소하지 않았고, 물류 센터는 문을 닫은 것이 아니라 물건이 그곳에 묶여 있을 뿐이다."
       },
       {
        "q": "Why is the photo shoot unlikely to be moved to a later date?",
@@ -26799,7 +26799,7 @@
          "s": "her next opening isn't until the 28th, which is after our print deadline"
         }
        ],
-       "exp": "사진작가의 다음 가능한 날이 28일인데 이는 인쇄 마감 이후(after our print deadline)라고 했다. next opening ... after our print deadline → next free date is too late 로 바뀌었다. 모델이나 스튜디오 사정, 재킷 단종은 언급되지 않았다."
+       "exp": "사진작가의 다음 가능한 날이 28일인데 이는 인쇄 마감 이후(after our print deadline)라고 했다. next opening ... after our print deadline → next free date is too late로 바뀌었다. 모델이나 스튜디오 사정, 재킷 단종은 언급되지 않았다."
       },
       {
        "q": "At 8:53 A.M., what does Mr. Rees most likely mean when he writes, \"Would they release it to you?\"",
@@ -26844,7 +26844,7 @@
          "s": "I'll call the courier right now and find out."
         }
        ],
-       "exp": "살레 씨는 \"I'll call the courier right now(지금 바로 택배 회사에 전화하겠다)\"고 했다. call the courier → Contact a delivery company 로 바뀌었다. 엘리슨에 가겠다고 한 사람은 아리아가 씨이고, 사진작가 일정 변경은 어렵다고 했다."
+       "exp": "살레 씨는 \"I'll call the courier right now(지금 바로 택배 회사에 전화하겠다)\"고 했다. call the courier → Contact a delivery company로 바뀌었다. 엘리슨에 가겠다고 한 사람은 아리아가 씨이고, 사진작가 일정 변경은 어렵다고 했다."
       }
      ],
      "id": "fm5-p7-09"
@@ -26891,7 +26891,7 @@
          "s": "This month, however, the mill began making blankets once more under new owners Hamish and Bernadette Kelso"
         }
        ],
-       "exp": "2009년에 문을 닫은, 거의 100년 된 모직 공장이 이번 달 다시 담요를 만들기 시작했다(began making blankets once more)는 내용이다. nearly a century → long-established, began ... once more → reopening 으로 바뀌었다. 새 소유주는 창업자의 손주이지 대형 제조업체가 아니고, 염색장은 앞으로의 계획에 잠깐 나올 뿐이다."
+       "exp": "2009년에 문을 닫은, 거의 100년 된 모직 공장이 이번 달 다시 담요를 만들기 시작했다(began making blankets once more)는 내용이다. nearly a century → long-established, began ... once more → reopening으로 바뀌었다. 새 소유주는 창업자의 손주이지 대형 제조업체가 아니고, 염색장은 앞으로의 계획에 잠깐 나올 뿐이다."
       },
       {
        "q": "What is indicated about the mill's blankets?",
@@ -26911,7 +26911,7 @@
          "s": "made from wool bought from sheep farms within 50 miles of Strathmore"
         }
        ],
-       "exp": "담요는 스트래스모어 반경 50마일 이내 농장의 양모(wool bought from sheep farms within 50 miles)로 만든다. within 50 miles → nearby farms 로 바뀌었다. 주로 웹사이트에서 팔렸고, 가격 경쟁은 하지 않기로 했으며, 직조기는 원래 있던 것을 수리해 쓴다."
+       "exp": "담요는 스트래스모어 반경 50마일 이내 농장의 양모(wool bought from sheep farms within 50 miles)로 만든다. within 50 miles → nearby farms로 바뀌었다. 주로 웹사이트에서 팔렸고, 가격 경쟁은 하지 않기로 했으며, 직조기는 원래 있던 것을 수리해 쓴다."
       },
       {
        "q": "What does Ms. Kelso hope to do in the future?",
@@ -26931,7 +26931,7 @@
          "s": "the company hopes to double its staff over the next three years"
         }
        ],
-       "exp": "버나뎃 켈소는 3년 안에 직원 수를 두 배로 늘리고 싶다(double its staff)고 했다. double its staff → Hire more workers 로 바뀌었다. 매장과 방문자 센터는 기존 건물의 옛 염색장에 열 계획이므로 이전이 아니며, 양 농장 매입이나 온라인 판매 중단은 언급되지 않았다."
+       "exp": "버나뎃 켈소는 3년 안에 직원 수를 두 배로 늘리고 싶다(double its staff)고 했다. double its staff → Hire more workers로 바뀌었다. 매장과 방문자 센터는 기존 건물의 옛 염색장에 열 계획이므로 이전이 아니며, 양 농장 매입이나 온라인 판매 중단은 언급되지 않았다."
       },
       {
        "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"These veterans have been teaching the newer employees how to operate the old looms.\"",
@@ -26951,7 +26951,7 @@
          "s": "including two weavers who worked there before it closed"
         }
        ],
-       "exp": "삽입 문장의 These veterans(이 베테랑들)는 오래 일해 온 숙련자를, newer employees 는 그와 대비되는 새 직원들을 가리킨다. [4] 바로 앞에서 직원 9명 중 2명이 공장이 문을 닫기 전부터 일한 직조공(two weavers who worked there before it closed)이라고 했으므로 two weavers → These veterans 로 자연스럽게 이어진다. [1]~[3] 앞에는 직원에 대한 언급이 없고, 새 소유주인 켈소 씨 두 사람은 이 공장에서 일해 온 사람들이 아니므로 veterans 로 볼 수 없다."
+       "exp": "삽입 문장의 These veterans(이 베테랑들)는 오래 일해 온 숙련자를, newer employees는 그와 대비되는 새 직원들을 가리킨다. [4] 바로 앞에서 직원 9명 중 2명이 공장이 문을 닫기 전부터 일한 직조공(two weavers who worked there before it closed)이라고 했으므로 two weavers → These veterans로 자연스럽게 이어진다. [1]~[3] 앞에는 직원에 대한 언급이 없고, 새 소유주인 켈소 씨 두 사람은 이 공장에서 일해 온 사람들이 아니므로 veterans로 볼 수 없다."
       }
      ],
      "id": "fm5-p7-10"
@@ -27339,7 +27339,7 @@
          "s": "all 60 registration spots were claimed within four days"
         }
        ],
-       "exp": "'registration spots were claimed'는 등록 자리가 나흘 만에 '차지되었다', 즉 모두 찼다는 뜻이므로 taken 이 맞다. claim 의 다른 뜻인 '주장하다(stated)'·'요구하다(demanded)'는 문맥에 맞지 않는다."
+       "exp": "'registration spots were claimed'는 등록 자리가 나흘 만에 '차지되었다', 즉 모두 찼다는 뜻이므로 taken이 맞다. claim의 다른 뜻인 '주장하다(stated)'·'요구하다(demanded)'는 문맥에 맞지 않는다."
       }
      ],
      "id": "fm5-p7-12"
@@ -27541,7 +27541,7 @@
          "s": "Shipping and receiving will be suspended for the entire weekend"
         }
        ],
-       "exp": "'Shipping and receiving will be suspended for the entire weekend'는 주말 동안 출고·입고를 '일시 중단한다'는 뜻이므로 paused 가 맞다. hung(매달다)은 suspend 의 다른 뜻에 이끌린 함정이고, removed·excluded 는 일시적 중단의 의미가 없다."
+       "exp": "'Shipping and receiving will be suspended for the entire weekend'는 주말 동안 출고·입고를 '일시 중단한다'는 뜻이므로 paused가 맞다. hung(매달다)은 suspend의 다른 뜻에 이끌린 함정이고, removed·excluded는 일시적 중단의 의미가 없다."
       }
      ],
      "id": "fm5-p7-13"
@@ -28004,7 +28004,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 2,
-     "exp": "담당자를 직접 말하지 않고 '린드크비스트 씨가 알 것'이라며 물어볼 사람을 알려 주는 돌려 말하기 응답 (A)가 정답이다. (B)는 loyalty program 에서 연상되는 포인트 적립 내용일 뿐 담당자를 말하지 않고, (C)는 의문사 질문에 Yes 로 답한 오답이다."
+     "exp": "담당자를 직접 말하지 않고 '린드크비스트 씨가 알 것'이라며 물어볼 사람을 알려 주는 돌려 말하기 응답 (A)가 정답이다. (B)는 loyalty program 에서 연상되는 포인트 적립 내용일 뿐 담당자를 말하지 않고, (C)는 의문사 질문에 Yes로 답한 오답이다."
     },
     {
      "id": "fm6-p2-02",
@@ -28023,7 +28023,7 @@
      "a": 2,
      "type": "부정·부가",
      "lv": 1,
-     "exp": "무료 입장인지 확인하는 부가 의문문에 Yes 로 답하고 '주차비는 10달러'라는 정보를 덧붙인 (C)가 정답이다. (A)는 free 를 '(시간이) 한가한'이라는 다른 뜻으로 쓴 함정이고, (B)는 festival 을 반복하며 기간만 말해 요금 질문에 답하지 않는다."
+     "exp": "무료 입장인지 확인하는 부가 의문문에 Yes로 답하고 '주차비는 10달러'라는 정보를 덧붙인 (C)가 정답이다. (A)는 free를 '(시간이) 한가한'이라는 다른 뜻으로 쓴 함정이고, (B)는 festival을 반복하며 기간만 말해 요금 질문에 답하지 않는다."
     },
     {
      "id": "fm6-p2-03",
@@ -28061,7 +28061,7 @@
      "a": 1,
      "type": "선택",
      "lv": 3,
-     "exp": "in person 을 face-to-face 로 바꿔 '고객이 직접 만나기를 선호한다'고 답해 대면 미팅임을 알려 준 (B)가 정답이다. (A)는 video call 에서 연상되는 전화 요금(phone bill)을 말한 함정이고, (C)는 video 를 반복했지만 질문과 관계없는 내용이다."
+     "exp": "in person을 face-to-face로 바꿔 '고객이 직접 만나기를 선호한다'고 답해 대면 미팅임을 알려 준 (B)가 정답이다. (A)는 video call 에서 연상되는 전화 요금(phone bill)을 말한 함정이고, (C)는 video를 반복했지만 질문과 관계없는 내용이다."
     },
     {
      "id": "fm6-p2-05",
@@ -28080,7 +28080,7 @@
      "a": 0,
      "type": "간접·요청",
      "lv": 2,
-     "exp": "간접 의문문의 핵심은 when 이므로 '콘서트가 끝나자마자'라고 시점을 알려 준 (A)가 정답이다. (B)는 불꽃놀이를 볼 장소를 말한 Where 응답이고, (C)는 start 를 '시동이 걸리다'라는 다른 뜻으로 반복한 함정이다."
+     "exp": "간접 의문문의 핵심은 when 이므로 '콘서트가 끝나자마자'라고 시점을 알려 준 (A)가 정답이다. (B)는 불꽃놀이를 볼 장소를 말한 Where 응답이고, (C)는 start를 '시동이 걸리다'라는 다른 뜻으로 반복한 함정이다."
     },
     {
      "id": "fm6-p2-06",
@@ -28099,7 +28099,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 2,
-     "exp": "복장 규정을 묻자 '초대장에 따르면 비즈니스 캐주얼'이라고 구체적으로 답한 (B)가 정답이다. (A)는 reception 을 '환영 연회'가 아닌 '안내 데스크'라는 다른 뜻으로 반복한 함정이고, (C)는 행사에서 연상되는 시작 시각으로 When 질문에 맞는 응답이다."
+     "exp": "복장 규정을 묻자 '초대장에 따르면 비즈니스 캐주얼'이라고 구체적으로 답한 (B)가 정답이다. (A)는 reception을 '환영 연회'가 아닌 '안내 데스크'라는 다른 뜻으로 반복한 함정이고, (C)는 행사에서 연상되는 시작 시각으로 When 질문에 맞는 응답이다."
     },
     {
      "id": "fm6-p2-07",
@@ -28118,7 +28118,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 3,
-     "exp": "어떤 배송 방법인지 바로 답하지 않고 '주문 내역을 확인해 보겠다'고 돌려 답한 (B)가 정답이다. (A)는 shipping 과 소리가 비슷한 ship(배)을 쓴 함정이고, (C)는 의문사 질문에 Yes 로 답하며 chose 를 반복한 오답이다."
+     "exp": "어떤 배송 방법인지 바로 답하지 않고 '주문 내역을 확인해 보겠다'고 돌려 답한 (B)가 정답이다. (A)는 shipping과 소리가 비슷한 ship(배)을 쓴 함정이고, (C)는 의문사 질문에 Yes로 답하며 chose를 반복한 오답이다."
     },
     {
      "id": "fm6-p2-08",
@@ -28137,7 +28137,7 @@
      "a": 2,
      "type": "선택",
      "lv": 2,
-     "exp": "목요일과 금요일 중 어느 쪽도 아니라며(Neither) '방문이 연기됐다'고 알려 준 (C)가 정답이다. (A)는 방문 목적을 말한 Why 응답이고, (B)는 visit 를 반복하면서 주어와 시제를 바꾼 함정이다."
+     "exp": "목요일과 금요일 중 어느 쪽도 아니라며(Neither) '방문이 연기됐다'고 알려 준 (C)가 정답이다. (A)는 방문 목적을 말한 Why 응답이고, (B)는 visit를 반복하면서 주어와 시제를 바꾼 함정이다."
     },
     {
      "id": "fm6-p2-09",
@@ -28175,7 +28175,7 @@
      "a": 0,
      "type": "평서문",
      "lv": 2,
-     "exp": "경쟁사의 가격 인하 소식에 '우리도 가격을 재검토해야겠다'고 대응한 (A)가 정답이다. (B)는 lowered 와 같은 동사 lower 를 '내려놓다'라는 뜻으로 쓴 함정이고, (C)는 competitor 와 비슷한 competition(대회)을 쓴 오답이다."
+     "exp": "경쟁사의 가격 인하 소식에 '우리도 가격을 재검토해야겠다'고 대응한 (A)가 정답이다. (B)는 lowered와 같은 동사 lower를 '내려놓다'라는 뜻으로 쓴 함정이고, (C)는 competitor와 비슷한 competition(대회)을 쓴 오답이다."
     },
     {
      "id": "fm6-p2-11",
@@ -28232,7 +28232,7 @@
      "a": 2,
      "type": "Yes/No",
      "lv": 2,
-     "exp": "할부 결제가 가능한지 묻자 Yes 와 함께 '500달러 초과 상품'이라는 조건을 붙인 (C)가 정답이다. (A)는 installments 와 소리가 비슷한 installed 를 쓴 함정이고, (B)는 purchases 에서 연상되는 주문 이야기일 뿐 질문과 관계가 없다."
+     "exp": "할부 결제가 가능한지 묻자 Yes와 함께 '500달러 초과 상품'이라는 조건을 붙인 (C)가 정답이다. (A)는 installments와 소리가 비슷한 installed를 쓴 함정이고, (B)는 purchases 에서 연상되는 주문 이야기일 뿐 질문과 관계가 없다."
     },
     {
      "id": "fm6-p2-14",
@@ -28251,7 +28251,7 @@
      "a": 1,
      "type": "간접·요청",
      "lv": 1,
-     "exp": "현수막 다는 일을 도와 달라는 요청을 수락하고 '어디에 달지' 물은 (B)가 정답이다. (A)는 opening 을 반복하며 아직 열리지 않은 행사를 끝난 일처럼 말한 함정이고, (C)는 hang 을 hang out(놀다)으로 바꾼 함정이다."
+     "exp": "현수막 다는 일을 도와 달라는 요청을 수락하고 '어디에 달지' 물은 (B)가 정답이다. (A)는 opening을 반복하며 아직 열리지 않은 행사를 끝난 일처럼 말한 함정이고, (C)는 hang을 hang out(놀다)으로 바꾼 함정이다."
     },
     {
      "id": "fm6-p2-15",
@@ -28270,7 +28270,7 @@
      "a": 0,
      "type": "평서문",
      "lv": 2,
-     "exp": "표가 매진됐다는 말에 '공연을 한 회 더 추가하자'고 제안한 (A)가 정답이다. (B)는 performance 를 '업무 성과'라는 다른 뜻으로 반복한 함정이고, (C)는 tickets 를 반복했지만 매진된 표를 사겠다는 말이라 맞지 않는다."
+     "exp": "표가 매진됐다는 말에 '공연을 한 회 더 추가하자'고 제안한 (A)가 정답이다. (B)는 performance를 '업무 성과'라는 다른 뜻으로 반복한 함정이고, (C)는 tickets를 반복했지만 매진된 표를 사겠다는 말이라 맞지 않는다."
     },
     {
      "id": "fm6-p2-16",
@@ -28308,7 +28308,7 @@
      "a": 0,
      "type": "평서문",
      "lv": 1,
-     "exp": "손님들이 곧 도착한다는 말에 '정문에 가서 기다리겠다'고 맞이할 준비를 말한 (A)가 정답이다. (B)는 ten minutes 를 반복하며 과거의 소요 시간을 말한 함정이고, (C)는 guest 를 반복해 자신이 손님이라고 말한 함정이다."
+     "exp": "손님들이 곧 도착한다는 말에 '정문에 가서 기다리겠다'고 맞이할 준비를 말한 (A)가 정답이다. (B)는 ten minutes를 반복하며 과거의 소요 시간을 말한 함정이고, (C)는 guest를 반복해 자신이 손님이라고 말한 함정이다."
     },
     {
      "id": "fm6-p2-18",
@@ -28346,7 +28346,7 @@
      "a": 2,
      "type": "선택",
      "lv": 3,
-     "exp": "둘 중 누가 맡는지 묻자 '이번 분기에는 함께 맡고 있다'며 둘 다라고 답한 (C)가 정답이다. (A)는 account 를 '계좌'라는 뜻으로 반복한 함정이고, (B)는 선택 의문문에 Yes 로 답한 오답이다."
+     "exp": "둘 중 누가 맡는지 묻자 '이번 분기에는 함께 맡고 있다'며 둘 다라고 답한 (C)가 정답이다. (A)는 account를 '계좌'라는 뜻으로 반복한 함정이고, (B)는 선택 의문문에 Yes로 답한 오답이다."
     },
     {
      "id": "fm6-p2-20",
@@ -28561,7 +28561,7 @@
         6,
         7
        ],
-       "exp": "남자가 견적서를 자기 이메일로 받겠다고 하자, 여자는 'you could have them send it directly to me'라며 명함을 건넨다. have them send it directly to me → having a document sent directly to her. this afternoon 은 남자가 공급업체에 요청하겠다는 시점일 뿐, 여자에게 전화하라는 말은 없다."
+       "exp": "남자가 견적서를 자기 이메일로 받겠다고 하자, 여자는 'you could have them send it directly to me'라며 명함을 건넨다. have them send it directly to me → having a document sent directly to her. this afternoon은 남자가 공급업체에 요청하겠다는 시점일 뿐, 여자에게 전화하라는 말은 없다."
       }
      ]
     },
@@ -31806,7 +31806,7 @@
          "s": "will be closed while our staff install new lighting and display cases"
         }
        ],
-       "exp": "직원들이 새 조명과 진열장을 설치하는 동안 문을 닫는다고 했다. install new lighting and display cases → display area is being upgraded 로 바뀌었다. 광물 표본은 다른 박물관으로 보내는 것이 아니라 수장고에 보관될 뿐이며, 카페로 바꾸거나 개인 행사를 준비한다는 말은 없다."
+       "exp": "직원들이 새 조명과 진열장을 설치하는 동안 문을 닫는다고 했다. install new lighting and display cases → display area is being upgraded로 바뀌었다. 광물 표본은 다른 박물관으로 보내는 것이 아니라 수장고에 보관될 뿐이며, 카페로 바꾸거나 개인 행사를 준비한다는 말은 없다."
       },
       {
        "q": "What is indicated about admission during the closure?",
@@ -32606,7 +32606,7 @@
          "s": "most of the late packages had been sent with Ardmore Post's economy service"
         }
        ],
-       "exp": "삽입 문장의 its 는 앞에 나온 배송 회사를 가리켜야 하고, by contrast 는 앞 내용과 대조된다는 뜻이다. [2] 바로 앞에서 아드모어 포스트의 이코노미 서비스(economy service)가 예상보다 2~3일 더 걸린다고 했으므로, '반면 그 회사의 일반(standard) 서비스로 보낸 소포는 거의 제때 도착했다'는 문장이 자연스럽게 이어지고, 뒤의 '더 빠른 배송 방법으로 바꾸라'는 제안의 근거가 된다. [1], [3], [4] 앞에는 its 가 가리킬 배송 회사나 대조할 서비스가 없다."
+       "exp": "삽입 문장의 its는 앞에 나온 배송 회사를 가리켜야 하고, by contrast는 앞 내용과 대조된다는 뜻이다. [2] 바로 앞에서 아드모어 포스트의 이코노미 서비스(economy service)가 예상보다 2~3일 더 걸린다고 했으므로, '반면 그 회사의 일반(standard) 서비스로 보낸 소포는 거의 제때 도착했다'는 문장이 자연스럽게 이어지고, 뒤의 '더 빠른 배송 방법으로 바꾸라'는 제안의 근거가 된다. [1], [3], [4] 앞에는 its가 가리킬 배송 회사나 대조할 서비스가 없다."
       }
      ]
     },
@@ -33528,7 +33528,7 @@
          "s": "To hold these rooms"
         }
        ],
-       "exp": "'To hold these rooms'는 회의실을 다른 사람이 쓰지 못하게 '잡아 두다, 확보해 두다'라는 뜻이므로 keep 이 가장 가깝다. contain 은 '(인원을) 수용하다'라는 뜻의 hold 에 해당해 이 문맥에 맞지 않고, grip 은 '손으로 꽉 쥐다'라는 뜻이다."
+       "exp": "'To hold these rooms'는 회의실을 다른 사람이 쓰지 못하게 '잡아 두다, 확보해 두다'라는 뜻이므로 keep이 가장 가깝다. contain은 '(인원을) 수용하다'라는 뜻의 hold에 해당해 이 문맥에 맞지 않고, grip은 '손으로 꽉 쥐다'라는 뜻이다."
       }
      ]
     }
@@ -33562,7 +33562,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "미납 이유를 묻자 '청구서를 받지 못했다고 한다'고 이유를 전한 (C)가 정답이다. (A)는 회사 이름의 Furniture 를 반복한 함정이고, (B)는 invoice 를 반복했지만 미납 이유와 관계없는 내용이다."
+     "exp": "미납 이유를 묻자 '청구서를 받지 못했다고 한다'고 이유를 전한 (C)가 정답이다. (A)는 회사 이름의 Furniture를 반복한 함정이고, (B)는 invoice를 반복했지만 미납 이유와 관계없는 내용이다."
     },
     {
      "id": "fm7-p2-02",
@@ -33657,7 +33657,7 @@
      "a": 1,
      "type": "평서문",
      "lv": 3,
-     "exp": "점심을 금요일로 옮기자는 말에 '그날은 박람회에 가 있다', 즉 금요일에는 참석할 수 없다고 돌려 말한 (B)가 정답이다. (A)는 lunch 를 반복해 이미 먹은 점심 이야기를 한 함정이고, (C)는 move 를 '이사하다'라는 다른 뜻으로 반복한 함정이다."
+     "exp": "점심을 금요일로 옮기자는 말에 '그날은 박람회에 가 있다', 즉 금요일에는 참석할 수 없다고 돌려 말한 (B)가 정답이다. (A)는 lunch를 반복해 이미 먹은 점심 이야기를 한 함정이고, (C)는 move를 '이사하다'라는 다른 뜻으로 반복한 함정이다."
     },
     {
      "id": "fm7-p2-07",
@@ -33695,7 +33695,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 1,
-     "exp": "How much 질문에 금액(Twelve dollars)으로 답한 (B)가 정답이다. (A)는 delivery 와 same day 를 반복한 과거 사실 응답이고, (C)는 charge 를 '충전하다'라는 다른 뜻으로 쓴 함정이다."
+     "exp": "How much 질문에 금액(Twelve dollars)으로 답한 (B)가 정답이다. (A)는 delivery와 same day를 반복한 과거 사실 응답이고, (C)는 charge를 '충전하다'라는 다른 뜻으로 쓴 함정이다."
     },
     {
      "id": "fm7-p2-09",
@@ -33733,7 +33733,7 @@
      "a": 2,
      "type": "부정·부가",
      "lv": 3,
-     "exp": "세일이 내일 끝나는지 확인하자 No 대신 '일요일까지 연장됐다'고 바뀐 사실을 알려 준 (C)가 정답이다. (A)는 sale 을 반복했지만 종료 시점과 관계가 없고, (B)는 clearance 와 비슷한 clear 를 쓴 함정이다."
+     "exp": "세일이 내일 끝나는지 확인하자 No 대신 '일요일까지 연장됐다'고 바뀐 사실을 알려 준 (C)가 정답이다. (A)는 sale을 반복했지만 종료 시점과 관계가 없고, (B)는 clearance와 비슷한 clear를 쓴 함정이다."
     },
     {
      "id": "fm7-p2-11",
@@ -33752,7 +33752,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "몇 시에 설치를 시작할지 묻자 '전시장이 참가 업체에 7시에 열린다', 즉 7시부터 시작할 수 있다고 알려 준 (C)가 정답이다. (B)는 booth 를 반복하면서 twelve 라는 숫자로 시각처럼 들리게 만든 함정이고, (A)는 Where 질문에 어울리는 위치 응답이다."
+     "exp": "몇 시에 설치를 시작할지 묻자 '전시장이 참가 업체에 7시에 열린다', 즉 7시부터 시작할 수 있다고 알려 준 (C)가 정답이다. (B)는 booth를 반복하면서 twelve 라는 숫자로 시각처럼 들리게 만든 함정이고, (A)는 Where 질문에 어울리는 위치 응답이다."
     },
     {
      "id": "fm7-p2-12",
@@ -33790,7 +33790,7 @@
      "a": 2,
      "type": "선택",
      "lv": 1,
-     "exp": "카드와 현금 중 하나를 고르라는 질문에 신용카드를 택한 (C)가 정답이다. (A)는 선택 의문문에 Yes 로 답한 오답이고, (B)는 결제에서 연상되는 금액만 말할 뿐 결제 수단을 고르지 않았다."
+     "exp": "카드와 현금 중 하나를 고르라는 질문에 신용카드를 택한 (C)가 정답이다. (A)는 선택 의문문에 Yes로 답한 오답이고, (B)는 결제에서 연상되는 금액만 말할 뿐 결제 수단을 고르지 않았다."
     },
     {
      "id": "fm7-p2-14",
@@ -33809,7 +33809,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 1,
-     "exp": "What time 질문에 시각(At eight)으로 답한 (A)가 정답이다. (B)는 의문사 질문에 No 로 답하며 line 을 반복했고, (C)는 상담 전화에서 연상되는 자동 응답 안내일 뿐 여는 시각을 말하지 않는다."
+     "exp": "What time 질문에 시각(At eight)으로 답한 (A)가 정답이다. (B)는 의문사 질문에 No로 답하며 line을 반복했고, (C)는 상담 전화에서 연상되는 자동 응답 안내일 뿐 여는 시각을 말하지 않는다."
     },
     {
      "id": "fm7-p2-15",
@@ -33847,7 +33847,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 3,
-     "exp": "담당자를 말하는 대신 '대관료에 점심이 포함돼 있다', 즉 행사장이 식사를 제공하니 출장 음식을 따로 맡길 필요가 없다고 돌려 말한 (A)가 정답이다. (B)는 taking care of 의 care 를 반복해 작별 인사로 바꾼 함정이고, (C)는 shareholders 를 반복한 인원수 응답이다."
+     "exp": "담당자를 말하는 대신 '대관료에 점심이 포함돼 있다', 즉 행사장이 식사를 제공하니 출장 음식을 따로 맡길 필요가 없다고 돌려 말한 (A)가 정답이다. (B)는 taking care of의 care를 반복해 작별 인사로 바꾼 함정이고, (C)는 shareholders를 반복한 인원수 응답이다."
     },
     {
      "id": "fm7-p2-17",
@@ -33942,7 +33942,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 2,
-     "exp": "반품 이유를 묻자 '뚜껑이 제대로 밀폐되지 않는다'는 제품 결함으로 답한 (A)가 정답이다. (B)는 returning 을 '돌아오다'라는 다른 뜻으로 쓴 함정이고, (C)는 blender 에서 연상되는 매장 위치를 말한 오답이다."
+     "exp": "반품 이유를 묻자 '뚜껑이 제대로 밀폐되지 않는다'는 제품 결함으로 답한 (A)가 정답이다. (B)는 returning을 '돌아오다'라는 다른 뜻으로 쓴 함정이고, (C)는 blender 에서 연상되는 매장 위치를 말한 오답이다."
     },
     {
      "id": "fm7-p2-22",
@@ -33980,7 +33980,7 @@
      "a": 0,
      "type": "부정·부가",
      "lv": 2,
-     "exp": "사진사가 정오에 오기로 하지 않았느냐는 물음에 '늦는다고 전화했다'며 아직 오지 않은 이유를 알려 준 (A)가 정답이다. (B)는 photographer 에서 연상되는 photos 를 쓴 함정이고, (C)는 arrive 와 noon 을 반복하면서 주어를 '나'로 바꾼 함정이다."
+     "exp": "사진사가 정오에 오기로 하지 않았느냐는 물음에 '늦는다고 전화했다'며 아직 오지 않은 이유를 알려 준 (A)가 정답이다. (B)는 photographer 에서 연상되는 photos를 쓴 함정이고, (C)는 arrive와 noon을 반복하면서 주어를 '나'로 바꾼 함정이다."
     },
     {
      "id": "fm7-p2-24",
@@ -33999,7 +33999,7 @@
      "a": 1,
      "type": "Yes/No",
      "lv": 2,
-     "exp": "비가 오면 어떻게 되는지 묻자 '체육관으로 옮겨서 한다'고 답해 취소되지 않음을 알려 준 (B)가 정답이다. (A)는 concert 를 반복하며 과거 시제로 감상을 말한 함정이고, (C)는 go ahead 의 ahead 를 반복해 길 안내로 바꾼 함정이다."
+     "exp": "비가 오면 어떻게 되는지 묻자 '체육관으로 옮겨서 한다'고 답해 취소되지 않음을 알려 준 (B)가 정답이다. (A)는 concert를 반복하며 과거 시제로 감상을 말한 함정이고, (C)는 go ahead의 ahead를 반복해 길 안내로 바꾼 함정이다."
     },
     {
      "id": "fm7-p2-25",
@@ -34018,7 +34018,7 @@
      "a": 2,
      "type": "선택",
      "lv": 1,
-     "exp": "오전과 오후 중 고르라는 질문에 '오후가 더 좋다'고 하나를 고른 (C)가 정답이다. (A)는 선택 의문문에 Yes 로 답해 무엇을 골랐는지 알 수 없는 함정이고, (B)는 session 을 반복하며 과거 시제로 감상을 말한 함정이다."
+     "exp": "오전과 오후 중 고르라는 질문에 '오후가 더 좋다'고 하나를 고른 (C)가 정답이다. (A)는 선택 의문문에 Yes로 답해 무엇을 골랐는지 알 수 없는 함정이고, (B)는 session을 반복하며 과거 시제로 감상을 말한 함정이다."
     }
    ],
    "p3": [
@@ -35282,7 +35282,7 @@
         2,
         3
        ],
-       "exp": "여자는 상자 길이가 최소 50센티미터는 돼야 한다고 했고, 남자는 길이가 그 이상인 상자 중 가장 작은 것(the smallest box that's at least that long)을 권한다. 표에서 길이가 50센티미터 이상인 상자는 Large(50)와 Extra Large(60)이고, 그중 가장 작은 것은 Large 이다. Extra Large 도 화병이 들어가긴 하지만 가장 작은 상자가 아니고, Medium 은 길이가 40센티미터라 너무 짧다."
+       "exp": "여자는 상자 길이가 최소 50센티미터는 돼야 한다고 했고, 남자는 길이가 그 이상인 상자 중 가장 작은 것(the smallest box that's at least that long)을 권한다. 표에서 길이가 50센티미터 이상인 상자는 Large(50)와 Extra Large(60)이고, 그중 가장 작은 것은 Large 이다. Extra Large도 화병이 들어가긴 하지만 가장 작은 상자가 아니고, Medium은 길이가 40센티미터라 너무 짧다."
       },
       {
        "q": "What does the woman ask to do?",
@@ -37423,7 +37423,7 @@
          "s": "Businesses that book assessments for ten or more employees before September 30 will receive a free lunchtime workshop on healthy work habits."
         }
        ],
-       "exp": "9월 30일 이전에 직원 10명 이상의 평가를 예약하면 무료 워크숍을 받는다. book assessments for ten or more employees before September 30 → scheduling assessments for a minimum number of employees by a certain date 로 바뀌었다. 전화 상담은 누구나 무료로 받을 수 있는 별도 서비스일 뿐 워크숍의 조건이 아니며, 다른 업체 소개나 장비 구입은 조건으로 언급되지 않았다."
+       "exp": "9월 30일 이전에 직원 10명 이상의 평가를 예약하면 무료 워크숍을 받는다. book assessments for ten or more employees before September 30 → scheduling assessments for a minimum number of employees by a certain date로 바뀌었다. 전화 상담은 누구나 무료로 받을 수 있는 별도 서비스일 뿐 워크숍의 조건이 아니며, 다른 업체 소개나 장비 구입은 조건으로 언급되지 않았다."
       }
      ]
     },
@@ -37996,7 +37996,7 @@
          "s": "Recording takes place in a small studio that the company built last year in a former storage room at its offices."
         }
        ],
-       "exp": "삽입 문장의 it 은 완공(completed)될 수 있는 대상, 즉 바로 앞에 나온 스튜디오를 가리켜야 한다. [3] 바로 앞에서 회사가 작년에 \"built ... a small studio(작은 스튜디오를 만들었다)\"고 했으므로, 그 전에는 멀리 있는 임대 스튜디오까지 가야 했다는 내용이 자연스럽게 이어진다. [1], [2], [4] 앞에는 지어진 시설이 나오지 않아 it 이 가리킬 대상이 없다."
+       "exp": "삽입 문장의 it은 완공(completed)될 수 있는 대상, 즉 바로 앞에 나온 스튜디오를 가리켜야 한다. [3] 바로 앞에서 회사가 작년에 \"built ... a small studio(작은 스튜디오를 만들었다)\"고 했으므로, 그 전에는 멀리 있는 임대 스튜디오까지 가야 했다는 내용이 자연스럽게 이어진다. [1], [2], [4] 앞에는 지어진 시설이 나오지 않아 it이 가리킬 대상이 없다."
       }
      ]
     },
@@ -38030,7 +38030,7 @@
         "폴브룩 과학관 전 직원을 대표하여, 새 전시회 <다리: 우리를 잇는 공학>에 버철 엔지니어링 그룹이 보내 주신 지원에 감사드립니다. [1] 귀사가 빌려주신 다리 모형 6점과, 귀사 엔지니어들이 많은 시간을 들여 전시 설명문을 검토해 주신 덕분에 전시회가 훨씬 정확하고 흥미로워졌습니다.",
         "전시회는 3월 14일에 일반에 공개됩니다. 그에 앞서 3월 12일 저녁에 열리는 비공개 사전 관람회에 귀하와 동료분들을 10명까지 초대하고자 합니다. 초대 손님들은 누구보다 먼저 전시물을 체험하고, 전시회 수석 디자이너 클레멘트 아산테 씨의 짧은 강연도 들으실 수 있습니다. [2]",
         "논의한 대로, 버철의 이름은 귀사 모형 옆 설명판마다, 그리고 전시회 입구 안내판에 들어갑니다. [3] 저희 디자인팀이 2월 16일까지 최종본을 보내 드려 검토하시도록 하겠습니다. 의견이 있으시면 일주일 이내에 보내 주시면 감사하겠습니다.",
-        "버철에서 몇 분이 사전 관람회에 참석하실지 3월 1일까지 제 비서 도린 앳워터에게 알려 주십시오. [4] 이 성과를 함께 축하할 수 있기를 고대합니다.",
+        "버철에서 몇 분이 사전 관람회에 참석하실지 3월 1일까지 제 비서 도린 앳워터에게 알려 주십시오. [4]이 성과를 함께 축하할 수 있기를 고대합니다.",
         "관장 오귀스탱 포숑 드림"
        ],
        "graphic": null
@@ -38115,7 +38115,7 @@
          "s": "Birchall's name will appear on the label beside each of your models and on the sign at the exhibition entrance"
         }
        ],
-       "exp": "삽입 문장의 It 은 전시 기간 동안 웹사이트에 '실릴' 대상이고, also 는 앞에서 이미 다른 게재 장소가 나왔다는 뜻이다. [3] 바로 앞에서 버철의 이름이 모형 옆 설명판과 입구 안내판에 들어간다(will appear on the label ... and on the sign)고 했으므로 '웹사이트에도 실린다'가 자연스럽게 이어진다. [1], [2], [4] 앞에는 이름처럼 여러 곳에 실리는 대상이 없다."
+       "exp": "삽입 문장의 It은 전시 기간 동안 웹사이트에 '실릴' 대상이고, also는 앞에서 이미 다른 게재 장소가 나왔다는 뜻이다. [3] 바로 앞에서 버철의 이름이 모형 옆 설명판과 입구 안내판에 들어간다(will appear on the label ... and on the sign)고 했으므로 '웹사이트에도 실린다'가 자연스럽게 이어진다. [1], [2], [4] 앞에는 이름처럼 여러 곳에 실리는 대상이 없다."
       }
      ]
     },
@@ -38279,7 +38279,7 @@
          "s": "look into this matter"
         }
        ],
-       "exp": "'look into this matter'는 '이 문제를 조사하다, 살펴보다'라는 뜻이므로 investigate 가 가장 가깝다. observe 는 '관찰하다'이고, enter 는 into 를 '안으로 들어가다'로 오해하게 만드는 함정이다."
+       "exp": "'look into this matter'는 '이 문제를 조사하다, 살펴보다'라는 뜻이므로 investigate가 가장 가깝다. observe는 '관찰하다'이고, enter는 into를 '안으로 들어가다'로 오해하게 만드는 함정이다."
       }
      ]
     },
@@ -38955,7 +38955,7 @@
          "s": "Credit is issued in the form of an electronic gift card"
         }
        ],
-       "exp": "'Credit is issued in the form of an electronic gift card' 는 적립금이 전자 상품권 형태로 '지급된다'는 뜻이므로 provided(제공된)가 가장 가깝다. issue 는 '(잡지 등을) 발행하다'라는 뜻도 있지만 여기서는 published 가 맞지 않고, 전자 상품권이므로 printed(인쇄된)도 어울리지 않는다."
+       "exp": "'Credit is issued in the form of an electronic gift card'는 적립금이 전자 상품권 형태로 '지급된다'는 뜻이므로 provided(제공된)가 가장 가깝다. issue는 '(잡지 등을) 발행하다'라는 뜻도 있지만 여기서는 published가 맞지 않고, 전자 상품권이므로 printed(인쇄된)도 어울리지 않는다."
       },
       {
        "q": "What did Ms. Quintanilla most likely use to send her devices?",
@@ -39093,7 +39093,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 2,
-     "exp": "적용 시점을 묻자 '다음 분기 초'라고 시점으로 답한 (B)가 정답이다. (A)는 수수료율 수치를 연상시키는 응답이지만 언제인지 답하지 않고, (C)는 의문사 질문에 Yes 로 답하며 effect 와 비슷한 effective 를 쓴 함정이다."
+     "exp": "적용 시점을 묻자 '다음 분기 초'라고 시점으로 답한 (B)가 정답이다. (A)는 수수료율 수치를 연상시키는 응답이지만 언제인지 답하지 않고, (C)는 의문사 질문에 Yes로 답하며 effect와 비슷한 effective를 쓴 함정이다."
     },
     {
      "id": "fm8-p2-03",
@@ -39169,7 +39169,7 @@
      "a": 0,
      "type": "간접·요청",
      "lv": 3,
-     "exp": "토요일 근무를 대신해 달라는 부탁에 '이번 주말에 다른 곳에 간다'며 할 수 없음을 돌려 말한 (A)가 정답이다. (B)는 shift 를 '옮기다'라는 뜻으로, (C)는 register 를 '등록하다'라는 뜻으로 반복한 함정이다."
+     "exp": "토요일 근무를 대신해 달라는 부탁에 '이번 주말에 다른 곳에 간다'며 할 수 없음을 돌려 말한 (A)가 정답이다. (B)는 shift를 '옮기다'라는 뜻으로, (C)는 register를 '등록하다'라는 뜻으로 반복한 함정이다."
     },
     {
      "id": "fm8-p2-07",
@@ -39188,7 +39188,7 @@
      "a": 2,
      "type": "평서문",
      "lv": 3,
-     "exp": "파손된 헤드폰을 환불받고 싶어 한다는 말에 '원래 영수증을 가져왔느냐'고 환불 처리에 필요한 것을 되물은 (C)가 정답이다. (A)는 headphones 에서 연상되는 음악 감상 이야기이고, (B)는 refund 와 소리가 비슷한 fund(자금을 대다)를 쓴 함정이다."
+     "exp": "파손된 헤드폰을 환불받고 싶어 한다는 말에 '원래 영수증을 가져왔느냐'고 환불 처리에 필요한 것을 되물은 (C)가 정답이다. (A)는 headphones 에서 연상되는 음악 감상 이야기이고, (B)는 refund와 소리가 비슷한 fund(자금을 대다)를 쓴 함정이다."
     },
     {
      "id": "fm8-p2-08",
@@ -39207,7 +39207,7 @@
      "a": 1,
      "type": "평서문",
      "lv": 3,
-     "exp": "책자를 더 요청했다는 말에 '인쇄소에 추가 인쇄를 요청하겠다'고 대응한 (B)가 정답이다. (A)는 branch 를 반복한 개점 연도 응답이고, (C)는 brochure 를 반복했지만 요청에 대한 대응이 아니다."
+     "exp": "책자를 더 요청했다는 말에 '인쇄소에 추가 인쇄를 요청하겠다'고 대응한 (B)가 정답이다. (A)는 branch를 반복한 개점 연도 응답이고, (C)는 brochure를 반복했지만 요청에 대한 대응이 아니다."
     },
     {
      "id": "fm8-p2-09",
@@ -39245,7 +39245,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 3,
-     "exp": "이유를 직접 말하지 않고 '그녀가 보낸 이메일을 못 봤느냐', 즉 이메일에 이유가 나와 있다고 되묻는 (A)가 정답이다. (B)는 점심 장소를 말한 응답이고, (C)는 lunch 를 반복해 점심 메뉴를 말한 연상 함정이다."
+     "exp": "이유를 직접 말하지 않고 '그녀가 보낸 이메일을 못 봤느냐', 즉 이메일에 이유가 나와 있다고 되묻는 (A)가 정답이다. (B)는 점심 장소를 말한 응답이고, (C)는 lunch를 반복해 점심 메뉴를 말한 연상 함정이다."
     },
     {
      "id": "fm8-p2-11",
@@ -39283,7 +39283,7 @@
      "a": 0,
      "type": "부정·부가",
      "lv": 2,
-     "exp": "요청이 있었는지 확인하자 Yes 와 함께 '오늘 이메일로 보내겠다'고 처리 계획까지 말한 (A)가 정답이다. (B)는 price 와 list 를 반복한 할인율 응답이고, (C)는 list 를 반복했지만 관계없는 내용이다."
+     "exp": "요청이 있었는지 확인하자 Yes와 함께 '오늘 이메일로 보내겠다'고 처리 계획까지 말한 (A)가 정답이다. (B)는 price와 list를 반복한 할인율 응답이고, (C)는 list를 반복했지만 관계없는 내용이다."
     },
     {
      "id": "fm8-p2-13",
@@ -39321,7 +39321,7 @@
      "a": 1,
      "type": "Yes/No",
      "lv": 1,
-     "exp": "오늘 밤 파티에 가는지 묻자 Yes 로 답하고 '거기서 보자'고 덧붙인 (B)가 정답이다. (A)는 party 를 반복하면서 이미 끝난 일처럼 과거 시제로 말한 함정이고, (C)는 party 를 식당의 '일행'이라는 다른 뜻으로 쓴 함정이다."
+     "exp": "오늘 밤 파티에 가는지 묻자 Yes로 답하고 '거기서 보자'고 덧붙인 (B)가 정답이다. (A)는 party를 반복하면서 이미 끝난 일처럼 과거 시제로 말한 함정이고, (C)는 party를 식당의 '일행'이라는 다른 뜻으로 쓴 함정이다."
     },
     {
      "id": "fm8-p2-15",
@@ -39378,7 +39378,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 3,
-     "exp": "인원수를 직접 말하지 않고 '다케다 씨가 명단을 갖고 있다', 즉 그 사람에게 확인하라고 돌려 말한 (C)가 정답이다. (A)는 How long 질문에 맞는 시간 응답이고, (B)는 의문사 의문문에 Yes 로 답하며 confirmed 를 반복한 함정이다."
+     "exp": "인원수를 직접 말하지 않고 '다케다 씨가 명단을 갖고 있다', 즉 그 사람에게 확인하라고 돌려 말한 (C)가 정답이다. (A)는 How long 질문에 맞는 시간 응답이고, (B)는 의문사 의문문에 Yes로 답하며 confirmed를 반복한 함정이다."
     },
     {
      "id": "fm8-p2-18",
@@ -39416,7 +39416,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 3,
-     "exp": "기한을 직접 말하지 않고 '윤 씨가 주최 측 이메일을 전달해 주지 않았느냐', 즉 그 이메일에 기한이 나와 있다고 되물은 (C)가 정답이다. (B)는 organizers 와 비슷한 organized 를 써서 지난 행사를 평가한 함정이고, (A)는 presentation 을 반복하며 발표 주제를 말한 What 응답이다."
+     "exp": "기한을 직접 말하지 않고 '윤 씨가 주최 측 이메일을 전달해 주지 않았느냐', 즉 그 이메일에 기한이 나와 있다고 되물은 (C)가 정답이다. (B)는 organizers와 비슷한 organized를 써서 지난 행사를 평가한 함정이고, (A)는 presentation을 반복하며 발표 주제를 말한 What 응답이다."
     },
     {
      "id": "fm8-p2-20",
@@ -39454,7 +39454,7 @@
      "a": 1,
      "type": "Yes/No",
      "lv": 2,
-     "exp": "Yes/No 대신 '견적 하나를 더 기다리는 중'이라고 해 아직 확정되지 않았음을 돌려 말한 (B)가 정답이다. (A)는 sales 를 반복한 매출 이야기이고, (C)는 retreat 에서 연상되는 행사 기간을 말했을 뿐 장소 확정 여부와는 관계없다."
+     "exp": "Yes/No 대신 '견적 하나를 더 기다리는 중'이라고 해 아직 확정되지 않았음을 돌려 말한 (B)가 정답이다. (A)는 sales를 반복한 매출 이야기이고, (C)는 retreat 에서 연상되는 행사 기간을 말했을 뿐 장소 확정 여부와는 관계없다."
     },
     {
      "id": "fm8-p2-22",
@@ -39492,7 +39492,7 @@
      "a": 1,
      "type": "부정·부가",
      "lv": 2,
-     "exp": "부정 의문문이라도 사실대로 답하면 되므로 '아니요, 22일로 옮겨졌다'고 날짜를 바로잡은 (B)가 정답이다. (A)는 open 을 반복해 '열어 두다'라는 다른 뜻으로 쓴 함정이고, (C)는 twentieth 와 비슷한 twenty 로 인원수를 말한 함정이다."
+     "exp": "부정 의문문이라도 사실대로 답하면 되므로 '아니요, 22일로 옮겨졌다'고 날짜를 바로잡은 (B)가 정답이다. (A)는 open을 반복해 '열어 두다'라는 다른 뜻으로 쓴 함정이고, (C)는 twentieth와 비슷한 twenty로 인원수를 말한 함정이다."
     },
     {
      "id": "fm8-p2-24",
@@ -39511,7 +39511,7 @@
      "a": 2,
      "type": "Yes/No",
      "lv": 2,
-     "exp": "예약했는지 묻자 '깜빡했으니 지금 바로 전화하겠다'고 답한 (C)가 정답이다. (A)는 client 를 반복하면서 아직 하지 않은 점심을 이미 끝난 일처럼 말한 함정이고, (B)는 lunch 를 반복해 자기 습관을 말한 응답이다."
+     "exp": "예약했는지 묻자 '깜빡했으니 지금 바로 전화하겠다'고 답한 (C)가 정답이다. (A)는 client를 반복하면서 아직 하지 않은 점심을 이미 끝난 일처럼 말한 함정이고, (B)는 lunch를 반복해 자기 습관을 말한 응답이다."
     },
     {
      "id": "fm8-p2-25",
@@ -39530,7 +39530,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "진열대를 놓을 위치를 묻자 장소(Right by the front window)로 답한 (C)가 정답이다. (A)는 go for(~의 가격에 팔리다)를 써서 going 을 반복한 가격 응답이고, (B)는 running 과 비슷한 run 을 쓴 함정이다."
+     "exp": "진열대를 놓을 위치를 묻자 장소(Right by the front window)로 답한 (C)가 정답이다. (A)는 go for(~의 가격에 팔리다)를 써서 going을 반복한 가격 응답이고, (B)는 running과 비슷한 run을 쓴 함정이다."
     }
    ],
    "p3": [
@@ -40033,7 +40033,7 @@
         2,
         3
        ],
-       "exp": "여자가 'everyone's getting new wireless ones. They'll be on your desks Monday morning'이라고 한다. ones 는 앞에서 물은 headsets 를 가리킨다. 교육은 금요일에 업체가 진행하며 교재는 언급되지 않았고, 책상에 놓이는 것은 전화기가 아니라 헤드셋이다."
+       "exp": "여자가 'everyone's getting new wireless ones. They'll be on your desks Monday morning'이라고 한다. ones는 앞에서 물은 headsets를 가리킨다. 교육은 금요일에 업체가 진행하며 교재는 언급되지 않았고, 책상에 놓이는 것은 전화기가 아니라 헤드셋이다."
       },
       {
        "q": "What does Ian say he will do?",
@@ -40320,7 +40320,7 @@
        "ev": [
         0
        ],
-       "exp": "남자가 개의 예방 접종 때문에 예약을 하려고 전화했다(make an appointment for my dog, due for his yearly vaccinations)고 말한다. 이미 있는 예약을 바꾸는 것이 아니라 새로 잡으려는 것이므로 To change an appointment time 은 오답이다."
+       "exp": "남자가 개의 예방 접종 때문에 예약을 하려고 전화했다(make an appointment for my dog, due for his yearly vaccinations)고 말한다. 이미 있는 예약을 바꾸는 것이 아니라 새로 잡으려는 것이므로 To change an appointment time은 오답이다."
       },
       {
        "q": "What does the woman say about Sunday?",
@@ -43300,7 +43300,7 @@
          "s": "he had one sewing machine and a single employee"
         }
        ],
-       "exp": "삽입 문장의 That employee(그 직원)는 앞에 직원 한 명이 먼저 언급되어야 가리킬 대상이 생긴다. [1] 바로 앞에서 로베르토 리차르디가 1966년에 가게를 열 때 \"a single employee(직원 한 명)\"가 있었다고 했으므로, 그 직원이 41년 동안 일했다는 내용이 자연스럽게 이어진다. [2]와 [3] 앞은 니나 리차르디의 경영과 온라인 서비스 이야기이고, [4] 앞의 craftspeople(장인들)은 여러 명이라 That employee 와 맞지 않는다."
+       "exp": "삽입 문장의 That employee(그 직원)는 앞에 직원 한 명이 먼저 언급되어야 가리킬 대상이 생긴다. [1] 바로 앞에서 로베르토 리차르디가 1966년에 가게를 열 때 \"a single employee(직원 한 명)\"가 있었다고 했으므로, 그 직원이 41년 동안 일했다는 내용이 자연스럽게 이어진다. [2]와 [3] 앞은 니나 리차르디의 경영과 온라인 서비스 이야기이고, [4] 앞의 craftspeople(장인들)은 여러 명이라 That employee와 맞지 않는다."
       }
      ]
     },
@@ -44569,7 +44569,7 @@
      "a": 1,
      "type": "Yes/No",
      "lv": 2,
-     "exp": "서명 여부를 묻자 '변호사와 검토 중', 즉 아직 서명하지 않았다고 돌려 답한 (B)가 정답이다. (A)는 sign 을 반복한 함정이고, (C)는 Yes 로 시작하지만 renewal 과 비슷한 renewed 로 여권 이야기를 하는 엉뚱한 응답이다."
+     "exp": "서명 여부를 묻자 '변호사와 검토 중', 즉 아직 서명하지 않았다고 돌려 답한 (B)가 정답이다. (A)는 sign을 반복한 함정이고, (C)는 Yes로 시작하지만 renewal과 비슷한 renewed로 여권 이야기를 하는 엉뚱한 응답이다."
     },
     {
      "id": "fm9-p2-03",
@@ -44626,7 +44626,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 1,
-     "exp": "Who 질문에 사람 이름(Jamal Hughes)과 시작 시점으로 답한 (B)가 정답이다. (A)는 territory 를 반복했지만 누가 맡는지는 말하지 않고, (C)는 take over(넘겨받다)를 take ... over to(~에 가져가다)라는 다른 뜻으로 쓴 함정이다."
+     "exp": "Who 질문에 사람 이름(Jamal Hughes)과 시작 시점으로 답한 (B)가 정답이다. (A)는 territory를 반복했지만 누가 맡는지는 말하지 않고, (C)는 take over(넘겨받다)를 take ... over to(~에 가져가다)라는 다른 뜻으로 쓴 함정이다."
     },
     {
      "id": "fm9-p2-06",
@@ -44645,7 +44645,7 @@
      "a": 0,
      "type": "Yes/No",
      "lv": 2,
-     "exp": "짐머 씨가 함께 가는지 묻자 '그날 저녁 다른 일정이 있다', 즉 오지 않는다고 답한 (A)가 정답이다. (B)는 opening 을 opens 로 반복해 영업 시간을 말한 함정이고, (C)는 joining 을 join 으로 반복해 줄을 서라는 엉뚱한 안내를 한 함정이다."
+     "exp": "짐머 씨가 함께 가는지 묻자 '그날 저녁 다른 일정이 있다', 즉 오지 않는다고 답한 (A)가 정답이다. (B)는 opening을 opens로 반복해 영업 시간을 말한 함정이고, (C)는 joining을 join으로 반복해 줄을 서라는 엉뚱한 안내를 한 함정이다."
     },
     {
      "id": "fm9-p2-07",
@@ -44664,7 +44664,7 @@
      "a": 1,
      "type": "부정·부가",
      "lv": 1,
-     "exp": "초대장을 곧 보내야 하지 않느냐는 말에 '어제 이미 우편으로 보냈다'고 답한 (B)가 정답이다. (A)는 invitations 에서 연상되는 초대 수락의 말이고, (C)는 send 를 반복해 안부 인사로 바꾼 함정이다."
+     "exp": "초대장을 곧 보내야 하지 않느냐는 말에 '어제 이미 우편으로 보냈다'고 답한 (B)가 정답이다. (A)는 invitations 에서 연상되는 초대 수락의 말이고, (C)는 send를 반복해 안부 인사로 바꾼 함정이다."
     },
     {
      "id": "fm9-p2-08",
@@ -44683,7 +44683,7 @@
      "a": 0,
      "type": "선택",
      "lv": 2,
-     "exp": "버스와 승합차 중 '다섯 명이면 승합차로 충분하다'며 승합차를 고른 (A)가 정답이다. (B)는 fair 를 반복해 개장 시각을 말한 When 응답이고, (C)는 job 을 반복해 자기 구직 이야기를 한 함정이다."
+     "exp": "버스와 승합차 중 '다섯 명이면 승합차로 충분하다'며 승합차를 고른 (A)가 정답이다. (B)는 fair를 반복해 개장 시각을 말한 When 응답이고, (C)는 job을 반복해 자기 구직 이야기를 한 함정이다."
     },
     {
      "id": "fm9-p2-09",
@@ -44721,7 +44721,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 2,
-     "exp": "날짜를 말하는 대신 '아직 일정이 잡히지 않았다'고 돌려 말한 (B)가 정답이다. (A)는 board 에서 연상되는 boardroom 으로 장소를 말한 Where 응답이고, (C)는 의문사 의문문에 Yes 로 답하며 board 를 반복한 함정이다."
+     "exp": "날짜를 말하는 대신 '아직 일정이 잡히지 않았다'고 돌려 말한 (B)가 정답이다. (A)는 board 에서 연상되는 boardroom으로 장소를 말한 Where 응답이고, (C)는 의문사 의문문에 Yes로 답하며 board를 반복한 함정이다."
     },
     {
      "id": "fm9-p2-11",
@@ -44740,7 +44740,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 1,
-     "exp": "Which band 로 어떤 밴드인지 묻자 '투손에서 온 재즈 그룹'이라고 답한 (B)가 정답이다. (A)는 street 를 반복하며 장소를 말한 Where 응답이고, (C)는 playing 을 play 로 반복해 자기 이야기를 한 함정이다."
+     "exp": "Which band로 어떤 밴드인지 묻자 '투손에서 온 재즈 그룹'이라고 답한 (B)가 정답이다. (A)는 street를 반복하며 장소를 말한 Where 응답이고, (C)는 playing을 play로 반복해 자기 이야기를 한 함정이다."
     },
     {
      "id": "fm9-p2-12",
@@ -44759,7 +44759,7 @@
      "a": 2,
      "type": "간접·요청",
      "lv": 2,
-     "exp": "간접 의문문의 핵심은 when 이므로 출시 시기(early March)를 알려 준 (C)가 정답이다. (A)는 launch 와 소리가 비슷한 lunch 를 쓴 함정이고, (B)는 line 을 '줄'이라는 뜻으로 반복한 오답이다."
+     "exp": "간접 의문문의 핵심은 when 이므로 출시 시기(early March)를 알려 준 (C)가 정답이다. (A)는 launch와 소리가 비슷한 lunch를 쓴 함정이고, (B)는 line을 '줄'이라는 뜻으로 반복한 오답이다."
     },
     {
      "id": "fm9-p2-13",
@@ -44816,7 +44816,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 1,
-     "exp": "가격을 묻는 질문에 금액(Forty-five dollars)으로 답한 (B)가 정답이다. (A)는 선물 바구니 구성품을 말할 뿐 가격이 없고, (C)는 basket 을 반복한 장소 응답이다."
+     "exp": "가격을 묻는 질문에 금액(Forty-five dollars)으로 답한 (B)가 정답이다. (A)는 선물 바구니 구성품을 말할 뿐 가격이 없고, (C)는 basket을 반복한 장소 응답이다."
     },
     {
      "id": "fm9-p2-16",
@@ -44892,7 +44892,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 1,
-     "exp": "When 으로 개막 시점을 묻자 '다음 달 14일'이라는 날짜로 답한 (A)가 정답이다. (B)는 Where 질문에 어울리는 장소 응답이고, (C)는 의문사 의문문에 Yes 로 답하면서 show 를 반복하고 시제까지 과거로 바꾼 함정이다."
+     "exp": "When으로 개막 시점을 묻자 '다음 달 14일'이라는 날짜로 답한 (A)가 정답이다. (B)는 Where 질문에 어울리는 장소 응답이고, (C)는 의문사 의문문에 Yes로 답하면서 show를 반복하고 시제까지 과거로 바꾼 함정이다."
     },
     {
      "id": "fm9-p2-20",
@@ -44987,7 +44987,7 @@
      "a": 2,
      "type": "Yes/No",
      "lv": 3,
-     "exp": "무료 배송을 아직 하는지 묻자 Yes 를 생략하고 '이번 달 말까지만'이라고 조건을 붙여 답한 (C)가 정답이다. (A)는 fifty 를 반복한 수량 응답이고, (B)는 delivery 와 비슷한 delivered 를 쓴 특정 배달 이야기일 뿐 정책에 대한 답이 아니다."
+     "exp": "무료 배송을 아직 하는지 묻자 Yes를 생략하고 '이번 달 말까지만'이라고 조건을 붙여 답한 (C)가 정답이다. (A)는 fifty를 반복한 수량 응답이고, (B)는 delivery와 비슷한 delivered를 쓴 특정 배달 이야기일 뿐 정책에 대한 답이 아니다."
     },
     {
      "id": "fm9-p2-25",
@@ -45006,7 +45006,7 @@
      "a": 0,
      "type": "평서문",
      "lv": 1,
-     "exp": "고객이 두고 간 우산에 대해 '분실물 상자에 넣어 두겠다'고 적절한 조치를 말한 (A)가 정답이다. (B)는 checkout 과 비슷한 check out 을 쓴 함정이고, (C)는 counter 와 소리가 비슷한 counted 를 쓴 오답이다."
+     "exp": "고객이 두고 간 우산에 대해 '분실물 상자에 넣어 두겠다'고 적절한 조치를 말한 (A)가 정답이다. (B)는 checkout과 비슷한 check out을 쓴 함정이고, (C)는 counter와 소리가 비슷한 counted를 쓴 오답이다."
     }
    ],
    "p3": [
@@ -45471,7 +45471,7 @@
         0,
         1
        ],
-       "exp": "남자가 새 안경이 준비됐다는 문자를 받았다(my new glasses are ready)며 이름을 말하고, 여자가 안경을 건넨다. 맞춘 안경을 찾으러 온 것이므로 pick up an order 가 정답이다. 할인 이야기는 대화 후반에 여자가 꺼낸 것이고, 안경을 반품하려는 것도 아니다."
+       "exp": "남자가 새 안경이 준비됐다는 문자를 받았다(my new glasses are ready)며 이름을 말하고, 여자가 안경을 건넨다. 맞춘 안경을 찾으러 온 것이므로 pick up an order가 정답이다. 할인 이야기는 대화 후반에 여자가 꺼낸 것이고, 안경을 반품하려는 것도 아니다."
       },
       {
        "q": "What problem does the man mention?",
@@ -48225,7 +48225,7 @@
          "s": "the bicycle storage room on Level 1 of the parking garage will be cleared this Friday, July 17, at 4:00 P.M."
         }
        ],
-       "exp": "금요일 오후 4시에 주차장의 자전거 보관실을 비운다고 알리는 공지다. the bicycle storage room ... will be cleared → a planned clearing of a storage area 로 바뀌었다. 주차장은 이미 있는 시설이고, 자전거 도난이나 자전거 출퇴근 권장은 언급되지 않았다."
+       "exp": "금요일 오후 4시에 주차장의 자전거 보관실을 비운다고 알리는 공지다. the bicycle storage room ... will be cleared → a planned clearing of a storage area로 바뀌었다. 주차장은 이미 있는 시설이고, 자전거 도난이나 자전거 출퇴근 권장은 언급되지 않았다."
       },
       {
        "q": "What should employees do to keep their bicycles in the room?",
@@ -48367,7 +48367,7 @@
          "s": "The outdoor ice rink in Gresham Square will open for the season"
         }
        ],
-       "exp": "그레셤 광장의 야외 아이스링크가 이번 시즌 문을 연다고 알리며 운영 시간과 요금을 소개하는 광고다. open for the season → a seasonal attraction 으로 바뀌었다. 공원 폐쇄나 강사 모집은 언급되지 않았고, 겨울 의류 할인 판매 이야기도 없다."
+       "exp": "그레셤 광장의 야외 아이스링크가 이번 시즌 문을 연다고 알리며 운영 시간과 요금을 소개하는 광고다. open for the season → a seasonal attraction으로 바뀌었다. 공원 폐쇄나 강사 모집은 언급되지 않았고, 겨울 의류 할인 판매 이야기도 없다."
       },
       {
        "q": "What is included in the price of admission?",
@@ -48884,7 +48884,7 @@
          "s": "If the trial goes well, we expect to replace our entire delivery fleet within five years."
         }
        ],
-       "exp": "If the trial goes well 은 전기 밴을 시험 운행하는 '시범 운영'이 잘되면이라는 뜻이므로 test(시험)가 가장 가깝다. hearing(재판의 심리)은 법정의 trial, difficulty(시련)는 고난이라는 뜻의 trial에 해당해 문맥에 맞지 않고, journey(여정)도 의미가 다르다."
+       "exp": "If the trial goes well은 전기 밴을 시험 운행하는 '시범 운영'이 잘되면이라는 뜻이므로 test(시험)가 가장 가깝다. hearing(재판의 심리)은 법정의 trial, difficulty(시련)는 고난이라는 뜻의 trial에 해당해 문맥에 맞지 않고, journey(여정)도 의미가 다르다."
       },
       {
        "q": "What will Nordale Markets most likely do in March?",
@@ -49998,7 +49998,7 @@
      "a": 1,
      "type": "간접·요청",
      "lv": 1,
-     "exp": "간접 의문문의 핵심은 where 이므로 위치(next to the elevators)를 알려 준 (B)가 정답이다. (A)는 returns 와 비슷한 return 을 쓴 반품 기한 응답이고, (C)는 tell 을 반복하며 Yes 로만 답해 위치를 알려 주지 않는다."
+     "exp": "간접 의문문의 핵심은 where 이므로 위치(next to the elevators)를 알려 준 (B)가 정답이다. (A)는 returns와 비슷한 return을 쓴 반품 기한 응답이고, (C)는 tell을 반복하며 Yes 로만 답해 위치를 알려 주지 않는다."
     },
     {
      "id": "fm10-p2-02",
@@ -50036,7 +50036,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 2,
-     "exp": "출시가 연기된(pushed back) 이유를 묻자 '포장재 일부가 검사에서 불합격했다'고 원인을 말한 (A)가 정답이다. (B)는 pushed 와 비슷한 push 를 '누르다'라는 뜻으로 쓴 함정이고, (C)는 launch 행사 장소를 연상시키는 Where 응답이다."
+     "exp": "출시가 연기된(pushed back) 이유를 묻자 '포장재 일부가 검사에서 불합격했다'고 원인을 말한 (A)가 정답이다. (B)는 pushed와 비슷한 push를 '누르다'라는 뜻으로 쓴 함정이고, (C)는 launch 행사 장소를 연상시키는 Where 응답이다."
     },
     {
      "id": "fm10-p2-04",
@@ -50055,7 +50055,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 2,
-     "exp": "특정 요일을 바로 말하지 않고 '먼저 부서 일정표를 확인해 보겠다'고 답한 (B)가 돌려 말하는 정답이다. (A)는 works 를 worked 로 반복하며 '효과가 있었다'는 다른 뜻으로 쓴 함정이고, (C)는 team 을 반복하며 인원을 말한 응답이다."
+     "exp": "특정 요일을 바로 말하지 않고 '먼저 부서 일정표를 확인해 보겠다'고 답한 (B)가 돌려 말하는 정답이다. (A)는 works를 worked로 반복하며 '효과가 있었다'는 다른 뜻으로 쓴 함정이고, (C)는 team을 반복하며 인원을 말한 응답이다."
     },
     {
      "id": "fm10-p2-05",
@@ -50074,7 +50074,7 @@
      "a": 2,
      "type": "평서문",
      "lv": 2,
-     "exp": "로그인이 안 된다는 말에 '기술팀이 오전에 업데이트 중'이라고 원인을 알려 준 (C)가 정답이다. (A)는 log(통나무)에서 연상되는 firewood 를 쓴 함정이고, (B)는 customer database 를 풀어 말했을 뿐 문제에 대한 응답이 아니다."
+     "exp": "로그인이 안 된다는 말에 '기술팀이 오전에 업데이트 중'이라고 원인을 알려 준 (C)가 정답이다. (A)는 log(통나무)에서 연상되는 firewood를 쓴 함정이고, (B)는 customer database를 풀어 말했을 뿐 문제에 대한 응답이 아니다."
     },
     {
      "id": "fm10-p2-06",
@@ -50093,7 +50093,7 @@
      "a": 0,
      "type": "Yes/No",
      "lv": 3,
-     "exp": "게시 여부를 묻자 No 대신 '지난주에 내려졌다'고 답해 지금은 게시되어 있지 않음을 알려 준 (A)가 정답이다. (B)는 matching 을 '짝이 맞는'이라는 뜻으로 반복한 함정이고, (C)는 price 와 비슷한 prices 를 썼지만 정책 게시 여부와 관계가 없다."
+     "exp": "게시 여부를 묻자 No 대신 '지난주에 내려졌다'고 답해 지금은 게시되어 있지 않음을 알려 준 (A)가 정답이다. (B)는 matching을 '짝이 맞는'이라는 뜻으로 반복한 함정이고, (C)는 price와 비슷한 prices를 썼지만 정책 게시 여부와 관계가 없다."
     },
     {
      "id": "fm10-p2-07",
@@ -50131,7 +50131,7 @@
      "a": 1,
      "type": "간접·요청",
      "lv": 3,
-     "exp": "부탁에 바로 수락하거나 거절하지 않고 '아직 최종 수치를 못 봤다'며 발표하기 어려운 사정을 돌려 말한 (B)가 정답이다. (A)는 presenting 에서 연상되는 present(선물)를 gift 로 바꾼 함정이고, (C)는 budget 을 반복해 작년 이야기를 한 함정이다."
+     "exp": "부탁에 바로 수락하거나 거절하지 않고 '아직 최종 수치를 못 봤다'며 발표하기 어려운 사정을 돌려 말한 (B)가 정답이다. (A)는 presenting 에서 연상되는 present(선물)를 gift로 바꾼 함정이고, (C)는 budget을 반복해 작년 이야기를 한 함정이다."
     },
     {
      "id": "fm10-p2-09",
@@ -50226,7 +50226,7 @@
      "a": 0,
      "type": "선택",
      "lv": 3,
-     "exp": "둘 중 하나를 직접 고르지 않고 '그날 비 예보가 있다'고 해 실외인 안뜰보다 실내인 로비가 낫다는 뜻을 돌려 전한 (A)가 정답이다. (B)는 hold 를 반복해 '문을 잡아 주다'로 바꾼 함정이고, (C)는 welcome 을 반복한 인사말이다."
+     "exp": "둘 중 하나를 직접 고르지 않고 '그날 비 예보가 있다'고 해 실외인 안뜰보다 실내인 로비가 낫다는 뜻을 돌려 전한 (A)가 정답이다. (B)는 hold를 반복해 '문을 잡아 주다'로 바꾼 함정이고, (C)는 welcome을 반복한 인사말이다."
     },
     {
      "id": "fm10-p2-14",
@@ -50245,7 +50245,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 2,
-     "exp": "장소를 직접 말하지 않고 '교통편 담당인 휫필드 씨에게 물어보라'고 돌려 말한 (B)가 정답이다. (A)는 drop off 의 drop 을 반복해 drop by(들르다)로 바꾼 함정이고, (C)는 guests 를 반복하며 손님이 누구인지 말한 응답이다."
+     "exp": "장소를 직접 말하지 않고 '교통편 담당인 휫필드 씨에게 물어보라'고 돌려 말한 (B)가 정답이다. (A)는 drop off의 drop을 반복해 drop by(들르다)로 바꾼 함정이고, (C)는 guests를 반복하며 손님이 누구인지 말한 응답이다."
     },
     {
      "id": "fm10-p2-15",
@@ -50302,7 +50302,7 @@
      "a": 1,
      "type": "부정·부가",
      "lv": 1,
-     "exp": "만난 적이 있는지 확인하는 부가 의문문에 Yes 와 만난 자리(last week's luncheon)로 답한 (B)가 정답이다. (A)는 meet 을 반복한 함정이고, (C)는 account 를 반복해 청구서의 고객 번호(account number)를 말한 오답이다."
+     "exp": "만난 적이 있는지 확인하는 부가 의문문에 Yes와 만난 자리(last week's luncheon)로 답한 (B)가 정답이다. (A)는 meet을 반복한 함정이고, (C)는 account를 반복해 청구서의 고객 번호(account number)를 말한 오답이다."
     },
     {
      "id": "fm10-p2-18",
@@ -50340,7 +50340,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 3,
-     "exp": "만료 시점을 모른다며 '서류를 확인해 봐야 한다'고 돌려 답한 (C)가 정답이다. (A)는 contract 와 소리가 비슷한 contractor(시공업자)를 쓴 함정이고, (B)는 계약을 맺은 장소를 말할 뿐 만료 시점과 관계가 없다."
+     "exp": "만료 시점을 모른다며 '서류를 확인해 봐야 한다'고 돌려 답한 (C)가 정답이다. (A)는 contract와 소리가 비슷한 contractor(시공업자)를 쓴 함정이고, (B)는 계약을 맺은 장소를 말할 뿐 만료 시점과 관계가 없다."
     },
     {
      "id": "fm10-p2-20",
@@ -50435,7 +50435,7 @@
      "a": 0,
      "type": "간접·요청",
      "lv": 3,
-     "exp": "Why don't we 는 이유가 아니라 제안을 나타내므로, '그 공원은 올여름 공사로 닫는다'며 제안이 어렵다고 돌려 말한 (A)가 정답이다. (C)는 Why 를 이유 질문으로 착각하게 하는 Because 응답이고, (B)는 Park 를 '주차하다'라는 다른 뜻으로 반복한 함정이다."
+     "exp": "Why don't we는 이유가 아니라 제안을 나타내므로, '그 공원은 올여름 공사로 닫는다'며 제안이 어렵다고 돌려 말한 (A)가 정답이다. (C)는 Why를 이유 질문으로 착각하게 하는 Because 응답이고, (B)는 Park를 '주차하다'라는 다른 뜻으로 반복한 함정이다."
     },
     {
      "id": "fm10-p2-25",
@@ -50454,7 +50454,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "결과를 묻자 '다음 주에 다시 와 달라고 했다'며 긍정적인 반응을 전한 (C)가 정답이다. (A)는 Cosmetics 에서 연상되는 립스틱을 말할 뿐 결과가 없고, (B)는 go 를 반복해 교통수단을 말한 함정이다."
+     "exp": "결과를 묻자 '다음 주에 다시 와 달라고 했다'며 긍정적인 반응을 전한 (C)가 정답이다. (A)는 Cosmetics 에서 연상되는 립스틱을 말할 뿐 결과가 없고, (B)는 go를 반복해 교통수단을 말한 함정이다."
     }
    ],
    "p3": [
@@ -51548,7 +51548,7 @@
         1,
         3
        ],
-       "exp": "남자는 심장내과(cardiology department) 예약이 있고, 여자는 몇몇 진료과가 북관으로 옮겼다고 한다. 북관 안내도에서 Cardiology 는 5층이다. 2층은 북관으로 건너가는 연결 통로가 있는 층일 뿐이고, 3층은 로비의 옛 안내판에 적혀 있던 층이다."
+       "exp": "남자는 심장내과(cardiology department) 예약이 있고, 여자는 몇몇 진료과가 북관으로 옮겼다고 한다. 북관 안내도에서 Cardiology는 5층이다. 2층은 북관으로 건너가는 연결 통로가 있는 층일 뿐이고, 3층은 로비의 옛 안내판에 적혀 있던 층이다."
       },
       {
        "q": "What does the woman remind the man to do?",
@@ -51564,7 +51564,7 @@
        "ev": [
         5
        ],
-       "exp": "여자가 'don't forget to have your ticket stamped at the reception desk'라고 말한다. 주차권에 도장을 받는 것이므로 Have a parking ticket stamped 가 정답이다. 일찍 왔다고 말한 사람은 남자이고, 연락처 갱신이나 설문 작성은 언급되지 않았다."
+       "exp": "여자가 'don't forget to have your ticket stamped at the reception desk'라고 말한다. 주차권에 도장을 받는 것이므로 Have a parking ticket stamped가 정답이다. 일찍 왔다고 말한 사람은 남자이고, 연락처 갱신이나 설문 작성은 언급되지 않았다."
       }
      ]
     },
@@ -51690,7 +51690,7 @@
         5,
         6
        ],
-       "exp": "조건은 10기가바이트 이상, 8일 이상이고, 그중 가장 저렴한 상품을 고르기로 했다. 표에서 Basic 은 데이터가 3GB 라서, Traveler 는 기간이 7일이라서 제외되고, 남은 Plus(55달러)와 Premium(80달러) 중 더 싼 것은 Plus 다. Traveler 는 10GB 조건은 맞지만 기간이 하루 모자란다."
+       "exp": "조건은 10기가바이트 이상, 8일 이상이고, 그중 가장 저렴한 상품을 고르기로 했다. 표에서 Basic은 데이터가 3GB 라서, Traveler는 기간이 7일이라서 제외되고, 남은 Plus(55달러)와 Premium(80달러) 중 더 싼 것은 Plus 다. Traveler는 10GB 조건은 맞지만 기간이 하루 모자란다."
       },
       {
        "q": "What does the man recommend doing?",
@@ -53722,7 +53722,7 @@
          "s": "I will be working at my company's overseas office for two months"
         }
        ],
-       "exp": "허스트 씨는 두 달간 회사 해외 지사에서 근무하게 되어 클럽을 이용할 수 없다고 적었다. working at my company's overseas office → away for work 로 바뀌었다. 이사, 소속 클럽 변경, 부상은 언급되지 않았다."
+       "exp": "허스트 씨는 두 달간 회사 해외 지사에서 근무하게 되어 클럽을 이용할 수 없다고 적었다. working at my company's overseas office → away for work로 바뀌었다. 이사, 소속 클럽 변경, 부상은 언급되지 않았다."
       },
       {
        "q": "How much will Mr. Hurst most likely pay Ironwood Fitness for the month of June?",
@@ -54062,7 +54062,7 @@
          "s": "Linnet Valley Railway will switch to its winter schedule"
         }
        ],
-       "exp": "리닛 밸리 철도가 11월 9일부터 겨울철 시간표로 바뀐다는 공지다. switch to its winter schedule → Changes to a transportation service 로 요약된다. 새 역 개통이나 요금 인상은 언급되지 않았고, 주말 운행은 취소가 아니라 좌석 예약을 권장한다고만 했다."
+       "exp": "리닛 밸리 철도가 11월 9일부터 겨울철 시간표로 바뀐다는 공지다. switch to its winter schedule → Changes to a transportation service로 요약된다. 새 역 개통이나 요금 인상은 언급되지 않았고, 주말 운행은 취소가 아니라 좌석 예약을 권장한다고만 했다."
       },
       {
        "q": "How often will trains leave Garrow Station during the winter?",
@@ -54082,7 +54082,7 @@
          "s": "Trains will depart from Garrow Station every 90 minutes instead of every hour"
         }
        ],
-       "exp": "겨울에는 \"every 90 minutes instead of every hour\"라고 했으므로 90분 → every hour and a half 가 정답이다. 한 시간 간격(Every hour)은 바뀌기 전의 운행 간격이므로 시점 혼동 함정이다."
+       "exp": "겨울에는 \"every 90 minutes instead of every hour\"라고 했으므로 90분 → every hour and a half가 정답이다. 한 시간 간격(Every hour)은 바뀌기 전의 운행 간격이므로 시점 혼동 함정이다."
       },
       {
        "q": "According to the notice, how can passengers buy tickets after 7:30 P.M.?",
@@ -54441,7 +54441,7 @@
          "s": "Some employees have raised concerns about their commute"
         }
        ],
-       "exp": "raise concerns 는 '우려를 제기하다'라는 뜻이므로 문맥상 expressed(표현했다, 밝혔다)와 가장 가깝다. lifted(들어 올렸다)는 물건을 위로 올린다는 뜻이고, increased(늘렸다)는 우려가 커졌다는 뜻이 되어 맞지 않으며, grown(재배했다, 키웠다)도 문맥에 맞지 않는다."
+       "exp": "raise concerns는 '우려를 제기하다'라는 뜻이므로 문맥상 expressed(표현했다, 밝혔다)와 가장 가깝다. lifted(들어 올렸다)는 물건을 위로 올린다는 뜻이고, increased(늘렸다)는 우려가 커졌다는 뜻이 되어 맞지 않으며, grown(재배했다, 키웠다)도 문맥에 맞지 않는다."
       },
       {
        "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"The leases on both of those spaces end in December.\"",
@@ -54573,7 +54573,7 @@
          "s": "For trips lasting more than one day, we reserve a hotel room for your driver near your destination."
         }
        ],
-       "exp": "삽입 문장의 this room(이 객실)과 multiday rates(여러 날 일정 요금)는 바로 앞에 하루가 넘는 여행의 객실 이야기가 나와야 자연스럽다. [3] 앞 문장에서 하루가 넘는 여행에는 운전기사의 호텔 객실을 예약한다고 했으므로 this room 이 그 객실을 가리킨다. [1]은 차량 소개, [2]는 기본 포함 항목, [4]는 시간당 요금 이야기 뒤라 this room 이 가리킬 대상이 없다."
+       "exp": "삽입 문장의 this room(이 객실)과 multiday rates(여러 날 일정 요금)는 바로 앞에 하루가 넘는 여행의 객실 이야기가 나와야 자연스럽다. [3] 앞 문장에서 하루가 넘는 여행에는 운전기사의 호텔 객실을 예약한다고 했으므로 this room이 그 객실을 가리킨다. [1]은 차량 소개, [2]는 기본 포함 항목, [4]는 시간당 요금 이야기 뒤라 this room이 가리킬 대상이 없다."
       }
      ]
     },

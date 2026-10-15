@@ -44,7 +44,7 @@
      "a": 2,
      "type": "선택",
      "lv": 3,
-     "exp": "바로 고르지 않고 '몇 부가 필요하냐'고 되물어 수량에 따라 결정하겠다는 뜻을 보인 (C)가 정답이다. (A)는 programs 와 비슷한 programming 을 쓴 함정이고, (B)는 print 를 '정자로 쓰다'라는 다른 뜻으로 반복한 함정이다."
+     "exp": "바로 고르지 않고 '몇 부가 필요하냐'고 되물어 수량에 따라 결정하겠다는 뜻을 보인 (C)가 정답이다. (A)는 programs와 비슷한 programming을 쓴 함정이고, (B)는 print를 '정자로 쓰다'라는 다른 뜻으로 반복한 함정이다."
     },
     {
      "id": "hm6-p2-03",
@@ -101,7 +101,7 @@
      "a": 0,
      "type": "Yes/No",
      "lv": 1,
-     "exp": "번호를 남겼는지 묻자 Yes 와 함께 '이 메모지에 있다'고 답한 (A)가 정답이다. (B)는 number 를 a number of(여러)라는 표현으로 반복한 함정이고, (C)는 phone 을 반복했지만 질문과 관계없는 내용이다."
+     "exp": "번호를 남겼는지 묻자 Yes와 함께 '이 메모지에 있다'고 답한 (A)가 정답이다. (B)는 number를 a number of(여러)라는 표현으로 반복한 함정이고, (C)는 phone을 반복했지만 질문과 관계없는 내용이다."
     },
     {
      "id": "hm6-p2-06",
@@ -139,7 +139,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 1,
-     "exp": "Where 질문에 장소(the counter by the main entrance)로 답한 (A)가 정답이다. (B)는 의문사 질문에 Yes 로 답하며 online 과 order 를 반복했고, (C)는 pick up 의 pick 을 '고르다'라는 뜻으로 쓴 함정이다."
+     "exp": "Where 질문에 장소(the counter by the main entrance)로 답한 (A)가 정답이다. (B)는 의문사 질문에 Yes로 답하며 online과 order를 반복했고, (C)는 pick up의 pick을 '고르다'라는 뜻으로 쓴 함정이다."
     },
     {
      "id": "hm6-p2-08",
@@ -158,7 +158,7 @@
      "a": 2,
      "type": "간접·요청",
      "lv": 1,
-     "exp": "간접 의문문의 핵심은 where 이므로 '에스컬레이터를 바로 지나서'라고 위치를 알려 준 (C)가 정답이다. (A)는 coat 를 반복한 함정이고, (B)는 tell 을 반복해 안부 인사로 바꾼 함정이다."
+     "exp": "간접 의문문의 핵심은 where 이므로 '에스컬레이터를 바로 지나서'라고 위치를 알려 준 (C)가 정답이다. (A)는 coat를 반복한 함정이고, (B)는 tell을 반복해 안부 인사로 바꾼 함정이다."
     },
     {
      "id": "hm6-p2-09",
@@ -215,7 +215,7 @@
      "a": 2,
      "type": "Yes/No",
      "lv": 2,
-     "exp": "교체용 부품을 파는지 묻자 '필터와 유리 주전자만' 판다고 범위를 밝혀 답한 (C)가 정답이다. (A)는 coffee 와 make 를 반복한 함정이고, (B)는 sell 의 과거형 sold 를 쓴 관계없는 응답이다."
+     "exp": "교체용 부품을 파는지 묻자 '필터와 유리 주전자만' 판다고 범위를 밝혀 답한 (C)가 정답이다. (A)는 coffee와 make를 반복한 함정이고, (B)는 sell의 과거형 sold를 쓴 관계없는 응답이다."
     },
     {
      "id": "hm6-p2-12",
@@ -1821,7 +1821,7 @@
          "s": "Gilchrist Engineering will replace all employee ID badges"
         }
        ],
-       "exp": "11월 2일부터 모든 직원의 사원증을 교체한다고 알리는 공지다. replace all employee ID badges → employees will receive new identification cards 로 바뀌었다. 근무 시간 변경이나 연락처 갱신은 언급되지 않았고, 주차장은 새 사원증으로 열 수 있는 곳으로 나올 뿐 보수 공사 이야기는 없다."
+       "exp": "11월 2일부터 모든 직원의 사원증을 교체한다고 알리는 공지다. replace all employee ID badges → employees will receive new identification cards로 바뀌었다. 근무 시간 변경이나 연락처 갱신은 언급되지 않았고, 주차장은 새 사원증으로 열 수 있는 곳으로 나올 뿐 보수 공사 이야기는 없다."
       },
       {
        "q": "What is one advantage of the new badges?",
@@ -1886,7 +1886,7 @@
          "s": "Photos will be taken in Conference Room B from 9:00 A.M. to 4:00 P.M. on November 2, 3, and 4."
         }
        ],
-       "exp": "삽입 문장의 one of these days(이 날짜들 중 하루)는 바로 앞에 여러 날짜가 나와야 가리킬 대상이 생긴다. [2] 앞 문장에서 사진 촬영 날짜로 11월 2일, 3일, 4일을 제시했으므로, 부서마다 그중 하루를 배정했다는 내용이 자연스럽게 이어진다. [1] 앞은 새 사원증의 기능, [3] 앞은 11월 13일이라는 한 날짜, [4] 앞은 재발급 비용 이야기라 these days 가 가리킬 대상이 없다."
+       "exp": "삽입 문장의 one of these days(이 날짜들 중 하루)는 바로 앞에 여러 날짜가 나와야 가리킬 대상이 생긴다. [2] 앞 문장에서 사진 촬영 날짜로 11월 2일, 3일, 4일을 제시했으므로, 부서마다 그중 하루를 배정했다는 내용이 자연스럽게 이어진다. [1] 앞은 새 사원증의 기능, [3] 앞은 11월 13일이라는 한 날짜, [4] 앞은 재발급 비용 이야기라 these days가 가리킬 대상이 없다."
       }
      ]
     },
@@ -1978,7 +1978,7 @@
          "s": "The resort will also host a series of outdoor concerts"
         }
        ],
-       "exp": "host a series of outdoor concerts 는 '야외 콘서트 시리즈를 열다, 개최하다'라는 뜻이므로 hold(개최하다)가 가장 가깝다. entertain(손님을 대접하다)은 손님을 맞아 대접한다는 뜻의 host에 해당해 행사를 목적어로 쓰는 이 문맥에는 맞지 않고, own(소유하다)과 feed(먹이다)도 의미가 다르다."
+       "exp": "host a series of outdoor concerts는 '야외 콘서트 시리즈를 열다, 개최하다'라는 뜻이므로 hold(개최하다)가 가장 가깝다. entertain(손님을 대접하다)은 손님을 맞아 대접한다는 뜻의 host에 해당해 행사를 목적어로 쓰는 이 문맥에는 맞지 않고, own(소유하다)과 feed(먹이다)도 의미가 다르다."
       },
       {
        "q": "What does Ms. Ortiz suggest about businesses in Randall?",
@@ -2346,7 +2346,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 3,
-     "exp": "주소를 직접 말하지 않고 '발송 명단을 가진 코발스키 씨'를 알려 주어 그분께 확인하라고 돌려 답한 (B)가 정답이다. (A)는 free 를 반복했을 뿐 장소가 아니고, (C)는 samples 를 반복하며 무엇인지를 말한 응답이다."
+     "exp": "주소를 직접 말하지 않고 '발송 명단을 가진 코발스키 씨'를 알려 주어 그분께 확인하라고 돌려 답한 (B)가 정답이다. (A)는 free를 반복했을 뿐 장소가 아니고, (C)는 samples를 반복하며 무엇인지를 말한 응답이다."
     },
     {
      "id": "hm7-p2-03",
@@ -2403,7 +2403,7 @@
      "a": 2,
      "type": "부정·부가",
      "lv": 3,
-     "exp": "직접 예약했는지에 Yes/No 로 답하지 않고 '출장 준비는 와츠 씨가 맡고 있다', 즉 그 일은 와츠 씨에게 확인하라고 돌려 말한 (C)가 정답이다. (A)는 Yes 로 시작하지만 booked 의 book 을 '책'이라는 뜻으로 바꾼 함정이고, (B)는 conference 를 반복하며 장소를 말한 응답이다."
+     "exp": "직접 예약했는지에 Yes/No로 답하지 않고 '출장 준비는 와츠 씨가 맡고 있다', 즉 그 일은 와츠 씨에게 확인하라고 돌려 말한 (C)가 정답이다. (A)는 Yes로 시작하지만 booked의 book을 '책'이라는 뜻으로 바꾼 함정이고, (B)는 conference를 반복하며 장소를 말한 응답이다."
     },
     {
      "id": "hm7-p2-06",
@@ -2441,7 +2441,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 2,
-     "exp": "How come 은 Why 와 같이 이유를 묻는 표현이므로 '강연자가 차가 막혀 못 오고 있다'고 이유를 말한 (A)가 정답이다. (B)는 언제까지 하는지 끝나는 시각을 말해 이유를 묻는 질문에 맞지 않고, (C)는 late 를 반복해 '연체료(late fee)'라는 엉뚱한 이야기를 한 함정이다."
+     "exp": "How come은 Why와 같이 이유를 묻는 표현이므로 '강연자가 차가 막혀 못 오고 있다'고 이유를 말한 (A)가 정답이다. (B)는 언제까지 하는지 끝나는 시각을 말해 이유를 묻는 질문에 맞지 않고, (C)는 late를 반복해 '연체료(late fee)'라는 엉뚱한 이야기를 한 함정이다."
     },
     {
      "id": "hm7-p2-08",
@@ -2460,7 +2460,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 1,
-     "exp": "Who 로 연사를 소개할 사람을 묻자 '홍보 이사 서튼 씨'라는 인물로 답한 (B)가 정답이다. (A)는 Thursday 를 반복한 시간 응답으로 When 질문에 맞고, (C)는 speakers 에서 연상되는 spoke 를 써서 이미 끝난 일처럼 말한 함정이다."
+     "exp": "Who로 연사를 소개할 사람을 묻자 '홍보 이사 서튼 씨'라는 인물로 답한 (B)가 정답이다. (A)는 Thursday를 반복한 시간 응답으로 When 질문에 맞고, (C)는 speakers 에서 연상되는 spoke를 써서 이미 끝난 일처럼 말한 함정이다."
     },
     {
      "id": "hm7-p2-09",
@@ -2479,7 +2479,7 @@
      "a": 1,
      "type": "부정·부가",
      "lv": 2,
-     "exp": "감사 카드를 보내자는 제안에 '이미 인쇄소에 주문했다'고 답해 동의하며 준비가 되어 있음을 알린 (B)가 정답이다. (A)는 thank-you 에서 연상되는 감사 인사일 뿐이고, (C)는 card 를 '신용카드'라는 뜻으로 반복한 함정이다."
+     "exp": "감사 카드를 보내자는 제안에 '이미 인쇄소에 주문했다'고 답해 동의하며 준비가 되어 있음을 알린 (B)가 정답이다. (A)는 thank-you 에서 연상되는 감사 인사일 뿐이고, (C)는 card를 '신용카드'라는 뜻으로 반복한 함정이다."
     },
     {
      "id": "hm7-p2-10",
@@ -2498,7 +2498,7 @@
      "a": 1,
      "type": "의문사",
      "lv": 3,
-     "exp": "견적에 대한 반응을 묻자 '아직 읽어 보지 못했다', 즉 아직 의견이 없다고 돌려 답한 (B)가 정답이다. (A)는 의문사 질문에 No 로 답하며 revised 를 반복했고, (C)는 quote 를 '견적'이 아닌 '인용문'이라는 뜻으로 쓴 함정이다."
+     "exp": "견적에 대한 반응을 묻자 '아직 읽어 보지 못했다', 즉 아직 의견이 없다고 돌려 답한 (B)가 정답이다. (A)는 의문사 질문에 No로 답하며 revised를 반복했고, (C)는 quote를 '견적'이 아닌 '인용문'이라는 뜻으로 쓴 함정이다."
     },
     {
      "id": "hm7-p2-11",
@@ -3152,7 +3152,7 @@
         2,
         3
        ],
-       "exp": "여자는 낮에 일해서 저녁 수업이어야 하고(A 월요일 오전, D 토요일 오전 제외), 매주 화요일 저녁에는 고객을 만난다(B 제외)고 한다. 표에서 남는 저녁 수업은 목요일 오후 6시 30분의 Section C 다. Section B 는 저녁 수업이지만 화요일이라 맞지 않는다."
+       "exp": "여자는 낮에 일해서 저녁 수업이어야 하고(A 월요일 오전, D 토요일 오전 제외), 매주 화요일 저녁에는 고객을 만난다(B 제외)고 한다. 표에서 남는 저녁 수업은 목요일 오후 6시 30분의 Section C 다. Section B는 저녁 수업이지만 화요일이라 맞지 않는다."
       },
       {
        "q": "What will the woman most likely do tomorrow?",
@@ -4268,7 +4268,7 @@
          "s": "Members of the cast will lead free acting workshops for local teenagers before each performance."
         }
        ],
-       "exp": "lead free acting workshops 는 '무료 연기 워크숍을 진행하다'라는 뜻이므로 conduct(진행하다, 실시하다)가 가장 가깝다. precede(앞서다)는 앞에 선다는 뜻의 lead, cause(야기하다)는 lead to 의 뜻에 가까워 문맥에 맞지 않고, attract(끌어들이다)도 워크숍을 '진행한다'는 의미가 아니다."
+       "exp": "lead free acting workshops는 '무료 연기 워크숍을 진행하다'라는 뜻이므로 conduct(진행하다, 실시하다)가 가장 가깝다. precede(앞서다)는 앞에 선다는 뜻의 lead, cause(야기하다)는 lead to의 뜻에 가까워 문맥에 맞지 않고, attract(끌어들이다)도 워크숍을 '진행한다'는 의미가 아니다."
       },
       {
        "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"Each session will last about 90 minutes and will be limited to 25 participants.\"",
@@ -4288,7 +4288,7 @@
          "s": "Members of the cast will lead free acting workshops for local teenagers before each performance."
         }
        ],
-       "exp": "삽입 문장의 Each session(각 수업)은 앞에 수업이나 강좌가 나와야 가리킬 대상이 생긴다. [4] 바로 앞에서 출연진이 \"free acting workshops(무료 연기 워크숍)\"를 진행한다고 했으므로 워크숍의 시간과 정원을 덧붙이는 흐름이 자연스럽다. [1], [2], [3] 앞에는 순회공연 일정·장소·보조금 이야기만 있어 session 이 가리킬 대상이 없다."
+       "exp": "삽입 문장의 Each session(각 수업)은 앞에 수업이나 강좌가 나와야 가리킬 대상이 생긴다. [4] 바로 앞에서 출연진이 \"free acting workshops(무료 연기 워크숍)\"를 진행한다고 했으므로 워크숍의 시간과 정원을 덧붙이는 흐름이 자연스럽다. [1], [2], [3] 앞에는 순회공연 일정·장소·보조금 이야기만 있어 session이 가리킬 대상이 없다."
       }
      ]
     },
@@ -4419,7 +4419,7 @@
          "s": "we will hold the sessions every two weeks starting in January"
         }
        ],
-       "exp": "삽입 문장의 That 은 세션 횟수가 늘어나는 변화를 가리켜야 한다. [2] 바로 앞에서 매달 열던 세션을 1월부터 \"every two weeks(2주마다)\" 열겠다고 했으므로 '이전보다 두 배 넘게 많은 세션'이라는 말이 자연스럽게 이어지고, 뒤의 As a result, we need more presenters 와도 맞는다. [1], [3], [4] 앞에는 세션 횟수가 바뀐다는 내용이 없다."
+       "exp": "삽입 문장의 That은 세션 횟수가 늘어나는 변화를 가리켜야 한다. [2] 바로 앞에서 매달 열던 세션을 1월부터 \"every two weeks(2주마다)\" 열겠다고 했으므로 '이전보다 두 배 넘게 많은 세션'이라는 말이 자연스럽게 이어지고, 뒤의 As a result, we need more presenters 와도 맞는다. [1], [3], [4] 앞에는 세션 횟수가 바뀐다는 내용이 없다."
       }
      ]
     },
@@ -4672,7 +4672,7 @@
      "a": 1,
      "type": "평서문",
      "lv": 2,
-     "exp": "연회장이 같은 날 다른 예약을 받아 버렸다는 문제에 '그럼 빨리 다른 장소를 구해야겠다'고 대책을 말한 (B)가 정답이다. (A)는 double 과 book 을 반복해 호텔 객실 예약으로 바꾼 함정이고, (C)는 date 를 반복했을 뿐 문제 해결과 관계없다."
+     "exp": "연회장이 같은 날 다른 예약을 받아 버렸다는 문제에 '그럼 빨리 다른 장소를 구해야겠다'고 대책을 말한 (B)가 정답이다. (A)는 double과 book을 반복해 호텔 객실 예약으로 바꾼 함정이고, (C)는 date를 반복했을 뿐 문제 해결과 관계없다."
     },
     {
      "id": "hm8-p2-05",
@@ -4710,7 +4710,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 3,
-     "exp": "금액을 직접 말하지 않고 '최종 청구서가 공유 폴더에 있을 것', 즉 거기서 확인하라고 돌려 말한 (A)가 정답이다. (B)는 sales 와 last year 를 반복했지만 비용이 아니라 매출 이야기이고, (C)는 conference 에서 연상되는 체류 기간으로 How long 질문에 맞는 응답이다."
+     "exp": "금액을 직접 말하지 않고 '최종 청구서가 공유 폴더에 있을 것', 즉 거기서 확인하라고 돌려 말한 (A)가 정답이다. (B)는 sales와 last year를 반복했지만 비용이 아니라 매출 이야기이고, (C)는 conference 에서 연상되는 체류 기간으로 How long 질문에 맞는 응답이다."
     },
     {
      "id": "hm8-p2-07",
@@ -4729,7 +4729,7 @@
      "a": 1,
      "type": "간접·요청",
      "lv": 3,
-     "exp": "무료 업그레이드를 제안하자 '이미 프리미엄 요금제를 쓰고 있다', 즉 더 올려 줄 등급이 없다고 돌려 답한 (B)가 정답이다. (A)는 제안과 관계없는 장소 응답이고, (C)는 free 를 반복한 함정이다."
+     "exp": "무료 업그레이드를 제안하자 '이미 프리미엄 요금제를 쓰고 있다', 즉 더 올려 줄 등급이 없다고 돌려 답한 (B)가 정답이다. (A)는 제안과 관계없는 장소 응답이고, (C)는 free를 반복한 함정이다."
     },
     {
      "id": "hm8-p2-08",
@@ -4748,7 +4748,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 1,
-     "exp": "누구에게 연락해야 하는지 묻자 담당 부서(service department)를 알려 준 (C)가 정답이다. (A)는 보증 기간을 연상시키는 시점 응답이고, (B)는 의문사 질문에 Yes 로 답하며 repairs 를 반복한 오답이다."
+     "exp": "누구에게 연락해야 하는지 묻자 담당 부서(service department)를 알려 준 (C)가 정답이다. (A)는 보증 기간을 연상시키는 시점 응답이고, (B)는 의문사 질문에 Yes로 답하며 repairs를 반복한 오답이다."
     },
     {
      "id": "hm8-p2-09",
@@ -4767,7 +4767,7 @@
      "a": 1,
      "type": "부정·부가",
      "lv": 2,
-     "exp": "자신이 시연을 하는지 확인하자 '실은 그레이스 림이 맡고 있다'며 담당자가 바뀌었음을 알린 (B)가 정답이다. (A)는 Group 을 반복한 인원 응답이고, (C)는 product 를 반복한 위치 응답이다."
+     "exp": "자신이 시연을 하는지 확인하자 '실은 그레이스 림이 맡고 있다'며 담당자가 바뀌었음을 알린 (B)가 정답이다. (A)는 Group을 반복한 인원 응답이고, (C)는 product를 반복한 위치 응답이다."
     },
     {
      "id": "hm8-p2-10",
@@ -4805,7 +4805,7 @@
      "a": 0,
      "type": "Yes/No",
      "lv": 3,
-     "exp": "예정대로 하는지 묻자 '사토 씨 이메일을 못 봤느냐'고 되물어 그 이메일에 교육 일정 안내가 있다는 것을 돌려 알린 (A)가 정답이다. (B)는 training 을 trained 로 반복한 함정이고, (C)는 still on(예정대로인)의 on 을 '켜다'의 turn on 으로 바꾼 함정이다."
+     "exp": "예정대로 하는지 묻자 '사토 씨 이메일을 못 봤느냐'고 되물어 그 이메일에 교육 일정 안내가 있다는 것을 돌려 알린 (A)가 정답이다. (B)는 training을 trained로 반복한 함정이고, (C)는 still on(예정대로인)의 on을 '켜다'의 turn on으로 바꾼 함정이다."
     },
     {
      "id": "hm8-p2-12",
@@ -5329,7 +5329,7 @@
        "ev": [
         4
        ],
-       "exp": "에버렛(M2)이 이전 모델 12대를 주문품이 올 때까지 빌려주겠다(I could lend you those)고 한다. twelve of the previous model → some older models. 배송비를 받지 않겠다고 한 사람은 에버렛이 아니라 도미닉이므로 Waive a shipping charge 는 오답이다."
+       "exp": "에버렛(M2)이 이전 모델 12대를 주문품이 올 때까지 빌려주겠다(I could lend you those)고 한다. twelve of the previous model → some older models. 배송비를 받지 않겠다고 한 사람은 에버렛이 아니라 도미닉이므로 Waive a shipping charge는 오답이다."
       }
      ]
     },
@@ -6451,7 +6451,7 @@
          "s": "I am writing to explain the relocation support that Cordell Pharmaceuticals provides to employees who transfer to another site."
         }
        ],
-       "exp": "\"explain the relocation support ... to employees who transfer to another site(다른 사업장으로 전근하는 직원에게 주는 이전 지원을 설명)\"하려고 썼다. relocation support for employees who transfer → benefits related to a job move. Congratulations again 으로 보아 새 직책은 이미 정해진 일이므로 승진 제안이 목적이 아니고, 이삿짐 업체 목록은 회사가 보내는 것이며, 집을 샀다는 말은 없다."
+       "exp": "\"explain the relocation support ... to employees who transfer to another site(다른 사업장으로 전근하는 직원에게 주는 이전 지원을 설명)\"하려고 썼다. relocation support for employees who transfer → benefits related to a job move. Congratulations again으로 보아 새 직책은 이미 정해진 일이므로 승진 제안이 목적이 아니고, 이삿짐 업체 목록은 회사가 보내는 것이며, 집을 샀다는 말은 없다."
       },
       {
        "q": "What is indicated about the $3,000 payment?",
@@ -6491,7 +6491,7 @@
          "s": "we can also arrange furnished housing near the facility for up to 45 days"
         }
        ],
-       "exp": "we can also arrange furnished housing 은 '가구가 갖춰진 숙소를 마련해 줄 수 있다'는 뜻이므로 '준비하다, 마련하다'의 organize 가 가장 가깝다. arrange 에는 '(순서대로) 정리하다'(sort), '(꽃 등을) 꾸며 놓다'(decorate)라는 뜻도 있지만 숙소를 마련한다는 이 문맥에는 맞지 않으며, adjust(조정하다)도 어울리지 않는다."
+       "exp": "we can also arrange furnished housing은 '가구가 갖춰진 숙소를 마련해 줄 수 있다'는 뜻이므로 '준비하다, 마련하다'의 organize가 가장 가깝다. arrange 에는 '(순서대로) 정리하다'(sort), '(꽃 등을) 꾸며 놓다'(decorate)라는 뜻도 있지만 숙소를 마련한다는 이 문맥에는 맞지 않으며, adjust(조정하다)도 어울리지 않는다."
       },
       {
        "q": "What is suggested about the furnished housing?",
@@ -6848,7 +6848,7 @@
      "a": 1,
      "type": "간접·요청",
      "lv": 1,
-     "exp": "영수증 출력 요청을 Sure 로 수락한 (B)가 정답이다. (A)는 receipt 와 소리가 비슷한 recipe(요리법)를 쓴 함정이고, (C)는 customer 를 반복했지만 요청에 대한 답이 아니다."
+     "exp": "영수증 출력 요청을 Sure로 수락한 (B)가 정답이다. (A)는 receipt와 소리가 비슷한 recipe(요리법)를 쓴 함정이고, (C)는 customer를 반복했지만 요청에 대한 답이 아니다."
     },
     {
      "id": "hm9-p2-02",
@@ -6867,7 +6867,7 @@
      "a": 2,
      "type": "부정·부가",
      "lv": 3,
-     "exp": "Yes/No 대신 '두 명이 아직 참석을 확정하지 않았다'고 해 그래서 이름을 넣지 못했다는 이유를 돌려 말한 (C)가 정답이다. (A)는 speakers 를 '연사'가 아닌 '스피커(음향 기기)'로 바꾼 함정이고, (B)는 program 을 반복해 엉뚱한 프로그램을 말한 함정이다."
+     "exp": "Yes/No 대신 '두 명이 아직 참석을 확정하지 않았다'고 해 그래서 이름을 넣지 못했다는 이유를 돌려 말한 (C)가 정답이다. (A)는 speakers를 '연사'가 아닌 '스피커(음향 기기)'로 바꾼 함정이고, (B)는 program을 반복해 엉뚱한 프로그램을 말한 함정이다."
     },
     {
      "id": "hm9-p2-03",
@@ -6962,7 +6962,7 @@
      "a": 0,
      "type": "평서문",
      "lv": 3,
-     "exp": "안건을 못 찾겠다는 말에 '다나카 씨가 아직 보내지 않았다', 즉 찾을 수 없는 게 당연하다고 이유를 알려 준 (A)가 정답이다. (C)는 find 를 found 로 반복해 '유용하다고 느꼈다'는 다른 뜻으로 쓴 함정이고, (B)는 meeting 을 반복하며 어제 회의 이야기를 한 함정이다."
+     "exp": "안건을 못 찾겠다는 말에 '다나카 씨가 아직 보내지 않았다', 즉 찾을 수 없는 게 당연하다고 이유를 알려 준 (A)가 정답이다. (C)는 find를 found로 반복해 '유용하다고 느꼈다'는 다른 뜻으로 쓴 함정이고, (B)는 meeting을 반복하며 어제 회의 이야기를 한 함정이다."
     },
     {
      "id": "hm9-p2-08",
@@ -6981,7 +6981,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 1,
-     "exp": "How long 으로 소요 시간을 묻자 '한 시간 반 정도'라는 기간으로 답한 (C)가 정답이다. (A)는 tour 를 반복하며 출발 장소를 말한 Where 응답이고, (B)는 의문사 의문문에 Yes 로 답하고 take 를 반복한 함정이다."
+     "exp": "How long으로 소요 시간을 묻자 '한 시간 반 정도'라는 기간으로 답한 (C)가 정답이다. (A)는 tour를 반복하며 출발 장소를 말한 Where 응답이고, (B)는 의문사 의문문에 Yes로 답하고 take를 반복한 함정이다."
     },
     {
      "id": "hm9-p2-09",
@@ -7000,7 +7000,7 @@
      "a": 0,
      "type": "선택",
      "lv": 2,
-     "exp": "두 혜택 중 '무료 배송이 구매자를 더 끈다'며 무료 배송을 택한 (A)가 정답이다. (B)는 shipping 과 비슷한 shipped 를 쓴 함정이고, (C)는 선택 의문문에 Yes 로 답하며 customer 를 반복한 오답이다."
+     "exp": "두 혜택 중 '무료 배송이 구매자를 더 끈다'며 무료 배송을 택한 (A)가 정답이다. (B)는 shipping과 비슷한 shipped를 쓴 함정이고, (C)는 선택 의문문에 Yes로 답하며 customer를 반복한 오답이다."
     },
     {
      "id": "hm9-p2-10",
@@ -7038,7 +7038,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "Which 질문에 특정 매장(The one on Grove Street)을 짚어 답한 (C)가 정답이다. (A)는 highest 와 비슷한 higher 를 써서 매출 수준만 말할 뿐 어느 매장인지 답하지 않고, (B)는 quarter 를 '15분'이라는 뜻으로 쓴 시각 응답이다."
+     "exp": "Which 질문에 특정 매장(The one on Grove Street)을 짚어 답한 (C)가 정답이다. (A)는 highest와 비슷한 higher를 써서 매출 수준만 말할 뿐 어느 매장인지 답하지 않고, (B)는 quarter를 '15분'이라는 뜻으로 쓴 시각 응답이다."
     },
     {
      "id": "hm9-p2-12",
@@ -8747,7 +8747,7 @@
          "s": "the food bank cannot accept items in glass jars, as they break easily, or any homemade food"
         }
        ],
-       "exp": "유통기한이 지나지 않아야 하고(have not passed their expiration dates), 유리병에 든 것이나 직접 만든 음식은 받을 수 없다(cannot accept items in glass jars ... or any homemade food)고 했다. homemade food → homemade. 기부품을 종이 상자에 담아 와야 한다는 조건은 없으므로 이것이 정답이다. 지문의 boxes 는 사무실에 놓이는 수거함을 말한다."
+       "exp": "유통기한이 지나지 않아야 하고(have not passed their expiration dates), 유리병에 든 것이나 직접 만든 음식은 받을 수 없다(cannot accept items in glass jars ... or any homemade food)고 했다. homemade food → homemade. 기부품을 종이 상자에 담아 와야 한다는 조건은 없으므로 이것이 정답이다. 지문의 boxes는 사무실에 놓이는 수거함을 말한다."
       },
       {
        "q": "In the e-mail, the word \"accept\" in paragraph 2, line 3, is closest in meaning to",
@@ -8767,7 +8767,7 @@
          "s": "the food bank cannot accept items in glass jars"
         }
        ],
-       "exp": "the food bank cannot accept items in glass jars 는 '푸드뱅크가 유리병에 든 물품은 받을 수 없다'는 뜻이므로 '받다'의 take 가 가장 가깝다. accept 에는 '(사실로) 믿다'(believe), '(제안에) 동의하다'(agree)라는 뜻도 있지만 물건을 받는다는 이 문맥에는 맞지 않고, undergo(겪다)도 어울리지 않는다."
+       "exp": "the food bank cannot accept items in glass jars는 '푸드뱅크가 유리병에 든 물품은 받을 수 없다'는 뜻이므로 '받다'의 take가 가장 가깝다. accept 에는 '(사실로) 믿다'(believe), '(제안에) 동의하다'(agree)라는 뜻도 있지만 물건을 받는다는 이 문맥에는 맞지 않고, undergo(겪다)도 어울리지 않는다."
       },
       {
        "q": "What will the department that donates the most items receive?",
@@ -9087,7 +9087,7 @@
          "s": "Could someone from your sales team call me to discuss which models would fit our kitchen?"
         }
        ],
-       "exp": "'call me to discuss which models would fit our kitchen' → 식기세척기 모델에 대해 전화로 상의해 달라고 요청한다. 'fit our kitchen' 만 보고 주방 치수를 재러 방문해 달라는 보기를 고르면 안 된다. 다음 달은 교체 계획 시점일 뿐 설치를 요청한 것이 아니다."
+       "exp": "'call me to discuss which models would fit our kitchen' → 식기세척기 모델에 대해 전화로 상의해 달라고 요청한다. 'fit our kitchen'만 보고 주방 치수를 재러 방문해 달라는 보기를 고르면 안 된다. 다음 달은 교체 계획 시점일 뿐 설치를 요청한 것이 아니다."
       }
      ]
     }
@@ -9156,7 +9156,7 @@
      "a": 1,
      "type": "평서문",
      "lv": 3,
-     "exp": "일정표가 게시됐다는 말에 '내 발표가 여전히 첫날 오전이냐'고 일정을 확인하는 질문으로 반응한 (B)가 정답이다. (A)는 posted 와 비슷한 post office 를 쓴 함정이고, (C)는 regional 과 비슷한 region 을 반복한 함정이다."
+     "exp": "일정표가 게시됐다는 말에 '내 발표가 여전히 첫날 오전이냐'고 일정을 확인하는 질문으로 반응한 (B)가 정답이다. (A)는 posted와 비슷한 post office를 쓴 함정이고, (C)는 regional과 비슷한 region을 반복한 함정이다."
     },
     {
      "id": "hm10-p2-04",
@@ -9175,7 +9175,7 @@
      "a": 2,
      "type": "의문사",
      "lv": 2,
-     "exp": "둘째 날 프로그램 내용을 묻자 '주로 실습 워크숍'이라고 답한 (C)가 정답이다. (B)는 on 과 second 를 반복해 위치를 말한 Where 응답이고, (A)는 day 에서 연상되는 참석 일정을 말했을 뿐 프로그램 내용은 알려 주지 않는다."
+     "exp": "둘째 날 프로그램 내용을 묻자 '주로 실습 워크숍'이라고 답한 (C)가 정답이다. (B)는 on과 second를 반복해 위치를 말한 Where 응답이고, (A)는 day 에서 연상되는 참석 일정을 말했을 뿐 프로그램 내용은 알려 주지 않는다."
     },
     {
      "id": "hm10-p2-05",
@@ -9213,7 +9213,7 @@
      "a": 0,
      "type": "평서문",
      "lv": 2,
-     "exp": "판매 감소에 대해 '겨울이 꽤 따뜻했다'고 그럴듯한 원인을 짚은 (A)가 정답이다. (B)는 jackets 에서 연상되는 보관 장소이고, (C)는 down 을 '내려놓다'라는 뜻으로 반복한 함정이다."
+     "exp": "판매 감소에 대해 '겨울이 꽤 따뜻했다'고 그럴듯한 원인을 짚은 (A)가 정답이다. (B)는 jackets 에서 연상되는 보관 장소이고, (C)는 down을 '내려놓다'라는 뜻으로 반복한 함정이다."
     },
     {
      "id": "hm10-p2-07",
@@ -9251,7 +9251,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 2,
-     "exp": "발송 시점을 묻자 '인쇄소가 납품하는 대로'라는 조건으로 시점을 알려 준 (A)가 정답이다. (B)는 누구에게 보내는지를 말한 응답이고, (C)는 catalog 를 반복했지만 시점과 무관하다."
+     "exp": "발송 시점을 묻자 '인쇄소가 납품하는 대로'라는 조건으로 시점을 알려 준 (A)가 정답이다. (B)는 누구에게 보내는지를 말한 응답이고, (C)는 catalog를 반복했지만 시점과 무관하다."
     },
     {
      "id": "hm10-p2-09",
@@ -9289,7 +9289,7 @@
      "a": 0,
      "type": "선택",
      "lv": 2,
-     "exp": "정렬 기준을 고르라는 질문에 '지역별'을 택하고 이유까지 말한 (A)가 정답이다. (B)는 product 를 반복했지만 정렬 방식을 고르지 않았고, (C)는 선택 의문문에 Yes 로 답하며 sorted 를 반복한 오답이다."
+     "exp": "정렬 기준을 고르라는 질문에 '지역별'을 택하고 이유까지 말한 (A)가 정답이다. (B)는 product를 반복했지만 정렬 방식을 고르지 않았고, (C)는 선택 의문문에 Yes로 답하며 sorted를 반복한 오답이다."
     },
     {
      "id": "hm10-p2-11",
@@ -9308,7 +9308,7 @@
      "a": 0,
      "type": "의문사",
      "lv": 1,
-     "exp": "Where 로 장소를 묻자 '1층 커뮤니티룸'이라는 장소로 답한 (A)가 정답이다. (B)는 When 질문에 어울리는 시기 응답이고, (C)는 volunteers 를 반복하며 인원수를 말한 How many 응답이다."
+     "exp": "Where로 장소를 묻자 '1층 커뮤니티룸'이라는 장소로 답한 (A)가 정답이다. (B)는 When 질문에 어울리는 시기 응답이고, (C)는 volunteers를 반복하며 인원수를 말한 How many 응답이다."
     },
     {
      "id": "hm10-p2-12",
@@ -9948,7 +9948,7 @@
        "ev": [
         7
        ],
-       "exp": "여자가 'I can send one out on Thursday morning'이라며 목요일 오전에 손해 사정사를 보내겠다고 말한다. this morning 은 남자가 사진을 찍은 때이고, 나머지 시점은 언급되지 않았다."
+       "exp": "여자가 'I can send one out on Thursday morning'이라며 목요일 오전에 손해 사정사를 보내겠다고 말한다. this morning은 남자가 사진을 찍은 때이고, 나머지 시점은 언급되지 않았다."
       }
      ]
     }
@@ -11207,7 +11207,7 @@
          "s": "Parking at the site is limited, so we encourage guests to take the train."
         }
        ],
-       "exp": "삽입 문장은 기차역에서 부지까지 걸어서 5분이라는 내용이므로 기차 이용을 권하는 문장 뒤에 와야 한다. [3] 바로 앞에서 주차 공간이 부족하니 기차를 이용하라(take the train)고 권했고, 뒤에서 직원들이 역에서 기다리며 안내한다고 하므로 흐름이 자연스럽다. [1], [2] 는 고용 계획과 기공식 진행 순서를 다루는 부분이고, [4] 는 회신 기한 안내 뒤라서 흐름이 끊긴다."
+       "exp": "삽입 문장은 기차역에서 부지까지 걸어서 5분이라는 내용이므로 기차 이용을 권하는 문장 뒤에 와야 한다. [3] 바로 앞에서 주차 공간이 부족하니 기차를 이용하라(take the train)고 권했고, 뒤에서 직원들이 역에서 기다리며 안내한다고 하므로 흐름이 자연스럽다. [1], [2]는 고용 계획과 기공식 진행 순서를 다루는 부분이고, [4]는 회신 기한 안내 뒤라서 흐름이 끊긴다."
       }
      ]
     },
